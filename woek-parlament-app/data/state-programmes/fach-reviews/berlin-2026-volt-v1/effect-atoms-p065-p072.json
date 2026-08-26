@@ -1,0 +1,1989 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-VOLT-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "EFFECT_ATOMS",
+  "page_from": 65,
+  "page_to": 72,
+  "records": [
+    {
+      "record_id": "BE-VOLT-2026-SU-0489-A01",
+      "atom_id": "BE-VOLT-2026-SU-0489-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0489",
+      "pdf_page": 65,
+      "pdf_pages": [
+        65
+      ],
+      "source_locator": "p065:b002@85.04,121.16,512.80,229.86",
+      "source_excerpt": "Wir definieren gemeinsam mit IHK, Handwerkskammern und Branchenverbänden branchenspezifische Mindeststandards für KI- und Digitalisierungslösungen, etwa für Kassensysteme, Buchhaltung, Terminplanung, Marketing und behördliche Anträge.",
+      "source_sentence_normalized": "Wir definieren gemeinsam mit IHK, Handwerkskammern und Branchenverbänden branchenspezifische Mindeststandards für KI- und Digitalisierungslösungen, etwa für Kassensysteme, Buchhaltung, Terminplanung, Marketing und behördliche Anträge.",
+      "source_sentence_sha256": "d215eeefbae8638c439dd7d37bb532354a45b712df4f66b89ab6e324d6780e90",
+      "policy_action": "Wir definieren gemeinsam mit IHK, Handwerkskammern und Branchenverbänden branchenspezifische Mindeststandards für KI- und Digitalisierungslösungen, etwa für Kassensysteme, Buchhaltung, Terminplanung, Marketing und behördliche Anträge.",
+      "policy_action_sha256": "d215eeefbae8638c439dd7d37bb532354a45b712df4f66b89ab6e324d6780e90",
+      "source_text_sha256": "d215eeefbae8638c439dd7d37bb532354a45b712df4f66b89ab6e324d6780e90",
+      "source_parent_text_sha256": "4ca62f99354cacfe13ed015958d39d0ce843f6ca588b4a96e378e90b5a060ff7",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0489-A01 (`Wir definieren gemeinsam mit IHK, Handwerkskammern und Branchenverbänden branchenspezifische Mindeststandards für KI- und Digitalisierungslösungen, etwa für Kassensysteme, Buchhaltung, Terminplanung, Marketing und behördliche Anträge.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p065:b002@85.04,121.16,512.80,229.86"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0489-A02",
+      "atom_id": "BE-VOLT-2026-SU-0489-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0489",
+      "pdf_page": 65,
+      "pdf_pages": [
+        65
+      ],
+      "source_locator": "p065:b002@85.04,121.16,512.80,229.86",
+      "source_excerpt": "Auf einer öffentlichen Plattform listen wir Anbieter, die diese Standards erfüllen und sich zertifizieren lassen.",
+      "source_sentence_normalized": "Auf einer öffentlichen Plattform listen wir Anbieter, die diese Standards erfüllen und sich zertifizieren lassen.",
+      "source_sentence_sha256": "c0e94cf118d63fd500fe83f05d2be50e95e59659812ba38a8318fdc84dabf87a",
+      "policy_action": "Auf einer öffentlichen Plattform listen wir Anbieter, die diese Standards erfüllen und sich zertifizieren lassen.",
+      "policy_action_sha256": "c0e94cf118d63fd500fe83f05d2be50e95e59659812ba38a8318fdc84dabf87a",
+      "source_text_sha256": "c0e94cf118d63fd500fe83f05d2be50e95e59659812ba38a8318fdc84dabf87a",
+      "source_parent_text_sha256": "4ca62f99354cacfe13ed015958d39d0ce843f6ca588b4a96e378e90b5a060ff7",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0489-A02 (`Auf einer öffentlichen Plattform listen wir Anbieter, die diese Standards erfüllen und sich zertifizieren lassen.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p065:b002@85.04,121.16,512.80,229.86"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0490-A01",
+      "atom_id": "BE-VOLT-2026-SU-0490-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0490",
+      "pdf_page": 65,
+      "pdf_pages": [
+        65
+      ],
+      "source_locator": "p065:b003@85.04,238.86,512.81,299.54",
+      "source_excerpt": "Wir belohnen Betriebe, die nachweislich zertifizierte und verantwortungsvoll gestaltete digitale Prozesse einführen, durch schnellere Genehmigungen, vereinfachte Meldepflichten und bevorzugte digitale Antragswege.",
+      "source_sentence_normalized": "Wir belohnen Betriebe, die nachweislich zertifizierte und verantwortungsvoll gestaltete digitale Prozesse einführen, durch schnellere Genehmigungen, vereinfachte Meldepflichten und bevorzugte digitale Antragswege.",
+      "source_sentence_sha256": "f9ae4677ae248f909ab69f94dfbec7f33c0b4cb2507d3b666e36715874123269",
+      "policy_action": "Wir belohnen Betriebe, die nachweislich zertifizierte und verantwortungsvoll gestaltete digitale Prozesse einführen, durch schnellere Genehmigungen, vereinfachte Meldepflichten und bevorzugte digitale Antragswege.",
+      "policy_action_sha256": "f9ae4677ae248f909ab69f94dfbec7f33c0b4cb2507d3b666e36715874123269",
+      "source_text_sha256": "f9ae4677ae248f909ab69f94dfbec7f33c0b4cb2507d3b666e36715874123269",
+      "source_parent_text_sha256": "77472ee5491ebd59f89e0f40bcac9bbbf8c620680bc76d688ff0ecb61070333e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0490-A01 (`Wir belohnen Betriebe, die nachweislich zertifizierte und verantwortungsvoll gestaltete digitale Prozesse einführen, durch schnellere Genehmigungen, vereinfachte Meldepflichten und bevorzugte digitale Antragswege.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p065:b003@85.04,238.86,512.81,299.54"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0490-A02",
+      "atom_id": "BE-VOLT-2026-SU-0490-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0490",
+      "pdf_page": 65,
+      "pdf_pages": [
+        65
+      ],
+      "source_locator": "p065:b003@85.04,238.86,512.81,299.54",
+      "source_excerpt": "Wer digital arbeitet, soll auch digital behandelt werden.",
+      "source_sentence_normalized": "Wer digital arbeitet, soll auch digital behandelt werden.",
+      "source_sentence_sha256": "9710261b3b3f2f590e80121807a5e685a323f3cc8ed38e4c0431c3c7b737dc16",
+      "policy_action": "Wer digital arbeitet, soll auch digital behandelt werden.",
+      "policy_action_sha256": "9710261b3b3f2f590e80121807a5e685a323f3cc8ed38e4c0431c3c7b737dc16",
+      "source_text_sha256": "9710261b3b3f2f590e80121807a5e685a323f3cc8ed38e4c0431c3c7b737dc16",
+      "source_parent_text_sha256": "77472ee5491ebd59f89e0f40bcac9bbbf8c620680bc76d688ff0ecb61070333e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0490-A02 (`Wer digital arbeitet, soll auch digital behandelt werden.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p065:b003@85.04,238.86,512.81,299.54"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0494-A01",
+      "atom_id": "BE-VOLT-2026-SU-0494-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0494",
+      "pdf_page": 65,
+      "pdf_pages": [
+        65
+      ],
+      "source_locator": "p065:b007@85.04,474.66,512.79,567.35",
+      "source_excerpt": "Wir ermöglichen eine stark vergünstigte Finanzierung für zertifizierte KI- und Digitalisierungslösungen über die IBB (Investitionsbank Berlin).",
+      "source_sentence_normalized": "Wir ermöglichen eine stark vergünstigte Finanzierung für zertifizierte KI- und Digitalisierungslösungen über die IBB (Investitionsbank Berlin).",
+      "source_sentence_sha256": "22e7ed4d4ccf9c9c17d292bcc75130daa87af5f74e3acdee0b934a8d5ff3adb4",
+      "policy_action": "Wir ermöglichen eine stark vergünstigte Finanzierung für zertifizierte KI- und Digitalisierungslösungen über die IBB (Investitionsbank Berlin).",
+      "policy_action_sha256": "22e7ed4d4ccf9c9c17d292bcc75130daa87af5f74e3acdee0b934a8d5ff3adb4",
+      "source_text_sha256": "22e7ed4d4ccf9c9c17d292bcc75130daa87af5f74e3acdee0b934a8d5ff3adb4",
+      "source_parent_text_sha256": "2e7e9a18ea49d8bedb1cbbb87d0bf03ee6c6164740806e99970af3523f394b03",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0494-A01 (`Wir ermöglichen eine stark vergünstigte Finanzierung für zertifizierte KI- und Digitalisierungslösungen über die IBB (Investitionsbank Berlin).`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p065:b007@85.04,474.66,512.79,567.35"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0494-A02",
+      "atom_id": "BE-VOLT-2026-SU-0494-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0494",
+      "pdf_page": 65,
+      "pdf_pages": [
+        65
+      ],
+      "source_locator": "p065:b007@85.04,474.66,512.79,567.35",
+      "source_excerpt": "So entsteht ein Markt, in dem Betriebe zielgerichtet in ihren Fortschritt investieren.",
+      "source_sentence_normalized": "So entsteht ein Markt, in dem Betriebe zielgerichtet in ihren Fortschritt investieren.",
+      "source_sentence_sha256": "2403a3eac1bdc7d59e9b5994187d2e236df6233ebf3eca1594b358b19879b9fc",
+      "policy_action": "So entsteht ein Markt, in dem Betriebe zielgerichtet in ihren Fortschritt investieren.",
+      "policy_action_sha256": "2403a3eac1bdc7d59e9b5994187d2e236df6233ebf3eca1594b358b19879b9fc",
+      "source_text_sha256": "2403a3eac1bdc7d59e9b5994187d2e236df6233ebf3eca1594b358b19879b9fc",
+      "source_parent_text_sha256": "2e7e9a18ea49d8bedb1cbbb87d0bf03ee6c6164740806e99970af3523f394b03",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0494-A02 (`So entsteht ein Markt, in dem Betriebe zielgerichtet in ihren Fortschritt investieren.`) is terminally not assessable after object-level review. Review class SECURITY_JUSTICE leaves these minimum object-specific inputs unresolved: defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p065:b007@85.04,474.66,512.79,567.35"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0498-A01",
+      "atom_id": "BE-VOLT-2026-SU-0498-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0498",
+      "pdf_page": 66,
+      "pdf_pages": [
+        66
+      ],
+      "source_locator": "p066:b002@85.04,121.16,512.83,213.85",
+      "source_excerpt": "Wir starten gemeinsam mit IHK Berlin, Handwerkskammer Berlin und den Branchenverbänden eine dauerhafte, quartalsweise Veranstaltungsreihe: Die Berliner KI-Erfahrungstage.",
+      "source_sentence_normalized": "Wir starten gemeinsam mit IHK Berlin, Handwerkskammer Berlin und den Branchenverbänden eine dauerhafte, quartalsweise Veranstaltungsreihe: Die Berliner KI-Erfahrungstage.",
+      "source_sentence_sha256": "ea3cbf04aab81931b0c6f125d058442dba1ca6b8a8692f24ec479dd985e8153c",
+      "policy_action": "Wir starten gemeinsam mit IHK Berlin, Handwerkskammer Berlin und den Branchenverbänden eine dauerhafte, quartalsweise Veranstaltungsreihe: Die Berliner KI-Erfahrungstage.",
+      "policy_action_sha256": "ea3cbf04aab81931b0c6f125d058442dba1ca6b8a8692f24ec479dd985e8153c",
+      "source_text_sha256": "ea3cbf04aab81931b0c6f125d058442dba1ca6b8a8692f24ec479dd985e8153c",
+      "source_parent_text_sha256": "e03d52b07735980c67db786715709994325fd3443bb571e291b6ae39f7fc5b5d",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0498-A01 (`Wir starten gemeinsam mit IHK Berlin, Handwerkskammer Berlin und den Branchenverbänden eine dauerhafte, quartalsweise Veranstaltungsreihe: Die Berliner KI-Erfahrungstage.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p066:b002@85.04,121.16,512.83,213.85"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0499-A01",
+      "atom_id": "BE-VOLT-2026-SU-0499-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0499",
+      "pdf_page": 66,
+      "pdf_pages": [
+        66
+      ],
+      "source_locator": "p066:b003@85.04,222.86,512.80,299.54",
+      "source_excerpt": "Wir dokumentieren alle vorgestellten Praxisbeispiele und veröffentlichen sie auf einer Plattform als „Berliner KI-Erfahrungsbibliothek“, sortiert nach Branche, Unternehmensgröße und eingesetzter Lösung.",
+      "source_sentence_normalized": "Wir dokumentieren alle vorgestellten Praxisbeispiele und veröffentlichen sie auf einer Plattform als „Berliner KI-Erfahrungsbibliothek“, sortiert nach Branche, Unternehmensgröße und eingesetzter Lösung.",
+      "source_sentence_sha256": "f399563c8795be5b56b1886f6e706185a81fcda60e4d356b82f66b8ebae7a6ae",
+      "policy_action": "Wir dokumentieren alle vorgestellten Praxisbeispiele",
+      "policy_action_sha256": "f977f3d669b6009d00fa5f90c530af4e05f18bd7a58fb714fa7ba92b68333109",
+      "source_text_sha256": "f399563c8795be5b56b1886f6e706185a81fcda60e4d356b82f66b8ebae7a6ae",
+      "source_parent_text_sha256": "042d8fb8496ee447fd1b8396d67fe8f80e8d3e937500feb320113ef6e861a0e9",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0499-A01 (`Wir dokumentieren alle vorgestellten Praxisbeispiele`) is terminally not assessable after object-level review. Review class CLIMATE_ENERGY_ENVIRONMENT leaves these minimum object-specific inputs unresolved: physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p066:b003@85.04,222.86,512.80,299.54"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0499-A02",
+      "atom_id": "BE-VOLT-2026-SU-0499-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0499",
+      "pdf_page": 66,
+      "pdf_pages": [
+        66
+      ],
+      "source_locator": "p066:b003@85.04,222.86,512.80,299.54",
+      "source_excerpt": "Wir dokumentieren alle vorgestellten Praxisbeispiele und veröffentlichen sie auf einer Plattform als „Berliner KI-Erfahrungsbibliothek“, sortiert nach Branche, Unternehmensgröße und eingesetzter Lösung.",
+      "source_sentence_normalized": "Wir dokumentieren alle vorgestellten Praxisbeispiele und veröffentlichen sie auf einer Plattform als „Berliner KI-Erfahrungsbibliothek“, sortiert nach Branche, Unternehmensgröße und eingesetzter Lösung.",
+      "source_sentence_sha256": "f399563c8795be5b56b1886f6e706185a81fcda60e4d356b82f66b8ebae7a6ae",
+      "policy_action": "veröffentlichen sie auf einer Plattform als „Berliner KI-Erfahrungsbibliothek“, sortiert nach Branche, Unternehmensgröße und eingesetzter Lösung.",
+      "policy_action_sha256": "9d9897aaaadb2b9fbcdae7e3b67ec247ea2788872d913876f5b9c33d8a6ec4ef",
+      "source_text_sha256": "f399563c8795be5b56b1886f6e706185a81fcda60e4d356b82f66b8ebae7a6ae",
+      "source_parent_text_sha256": "042d8fb8496ee447fd1b8396d67fe8f80e8d3e937500feb320113ef6e861a0e9",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0499-A02 (`veröffentlichen sie auf einer Plattform als „Berliner KI-Erfahrungsbibliothek“, sortiert nach Branche, Unternehmensgröße und eingesetzter Lösung.`) is terminally not assessable after object-level review. Review class CLIMATE_ENERGY_ENVIRONMENT leaves these minimum object-specific inputs unresolved: physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p066:b003@85.04,222.86,512.80,299.54"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0503-A01",
+      "atom_id": "BE-VOLT-2026-SU-0503-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0503",
+      "pdf_page": 66,
+      "pdf_pages": [
+        66
+      ],
+      "source_locator": "p066:b007@85.04,474.66,512.81,567.35",
+      "source_excerpt": "Wir verpflichten alle Senatsverwaltungen und landeseigenen Unternehmen, ihre nicht-personenbezogenen Daten über eine zentrale Datenplattform zugänglich zu machen.",
+      "source_sentence_normalized": "Wir verpflichten alle Senatsverwaltungen und landeseigenen Unternehmen, ihre nicht-personenbezogenen Daten über eine zentrale Datenplattform zugänglich zu machen.",
+      "source_sentence_sha256": "caf6e4bd13c2d6da5b05dd45f84a8a2e18efda3c86d80167ee2151a85b39ad3e",
+      "policy_action": "Wir verpflichten alle Senatsverwaltungen und landeseigenen Unternehmen, ihre nicht-personenbezogenen Daten über eine zentrale Datenplattform zugänglich zu machen.",
+      "policy_action_sha256": "caf6e4bd13c2d6da5b05dd45f84a8a2e18efda3c86d80167ee2151a85b39ad3e",
+      "source_text_sha256": "caf6e4bd13c2d6da5b05dd45f84a8a2e18efda3c86d80167ee2151a85b39ad3e",
+      "source_parent_text_sha256": "00d0300ca24337de8f403a29be2bcea8b7d69e8f43cd334d57fc381d70bea450",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0503-A01 (`Wir verpflichten alle Senatsverwaltungen und landeseigenen Unternehmen, ihre nicht-personenbezogenen Daten über eine zentrale Datenplattform zugänglich zu machen.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p066:b007@85.04,474.66,512.81,567.35"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0503-A02",
+      "atom_id": "BE-VOLT-2026-SU-0503-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0503",
+      "pdf_page": 66,
+      "pdf_pages": [
+        66
+      ],
+      "source_locator": "p066:b007@85.04,474.66,512.81,567.35",
+      "source_excerpt": "Dabei setzen wir auf ein gestaffeltes Lizenzmodell, das Daten sowohl als öffentliches Gut (aggregierte, anonymisierte Datensätze) als auch als wirtschaftliche Einnahmequelle (kommerzielle Anwendungen, Echtzeitdaten, hochaufgelöste Datensätze) für Berlin erschließt.",
+      "source_sentence_normalized": "Dabei setzen wir auf ein gestaffeltes Lizenzmodell, das Daten sowohl als öffentliches Gut (aggregierte, anonymisierte Datensätze) als auch als wirtschaftliche Einnahmequelle (kommerzielle Anwendungen, Echtzeitdaten, hochaufgelöste Datensätze) für Berlin erschließt.",
+      "source_sentence_sha256": "ff6d38ae6eded879dcb52ed33fcad51fb473c77fe549d1a57cb68a95c942c4ae",
+      "policy_action": "Dabei setzen wir auf ein gestaffeltes Lizenzmodell, das Daten sowohl als öffentliches Gut (aggregierte, anonymisierte Datensätze) als auch als wirtschaftliche Einnahmequelle (kommerzielle Anwendungen, Echtzeitdaten, hochaufgelöste Datensätze) für Berlin erschließt.",
+      "policy_action_sha256": "ff6d38ae6eded879dcb52ed33fcad51fb473c77fe549d1a57cb68a95c942c4ae",
+      "source_text_sha256": "ff6d38ae6eded879dcb52ed33fcad51fb473c77fe549d1a57cb68a95c942c4ae",
+      "source_parent_text_sha256": "00d0300ca24337de8f403a29be2bcea8b7d69e8f43cd334d57fc381d70bea450",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0503-A02 (`Dabei setzen wir auf ein gestaffeltes Lizenzmodell, das Daten sowohl als öffentliches Gut (aggregierte, anonymisierte Datensätze) als auch als wirtschaftliche Einnahmequelle (kommerzielle Anwendungen, Echtzeitdaten, hochaufgelöste Datensätze) für Berlin erschließt.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p066:b007@85.04,474.66,512.81,567.35"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0504-A01",
+      "atom_id": "BE-VOLT-2026-SU-0504-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0504",
+      "pdf_page": 66,
+      "pdf_pages": [
+        66
+      ],
+      "source_locator": "p066:b008@85.04,576.36,512.81,701.06",
+      "source_excerpt": "Wir machen diese Datenplattform zur Grundlage für Innovation in allen Lebensbereichen: Offene Bildungsdaten ermöglichen passgenaue Lernangebote und Apps, die Eltern in Echtzeit über freie Kita-Plätze informieren.",
+      "source_sentence_normalized": "Wir machen diese Datenplattform zur Grundlage für Innovation in allen Lebensbereichen: Offene Bildungsdaten ermöglichen passgenaue Lernangebote und Apps, die Eltern in Echtzeit über freie Kita-Plätze informieren.",
+      "source_sentence_sha256": "24026b845c11b3659f7188080eac5a604e2651cc02a1825c54026fc08bb36107",
+      "policy_action": "Wir machen diese Datenplattform zur Grundlage für Innovation in allen Lebensbereichen: Offene Bildungsdaten ermöglichen passgenaue Lernangebote und Apps, die Eltern in Echtzeit über freie Kita-Plätze informieren.",
+      "policy_action_sha256": "24026b845c11b3659f7188080eac5a604e2651cc02a1825c54026fc08bb36107",
+      "source_text_sha256": "24026b845c11b3659f7188080eac5a604e2651cc02a1825c54026fc08bb36107",
+      "source_parent_text_sha256": "8ab401ba2c13dfbc6646247cb7cd81d2ccbe1572257dd1e21981dcbda7ab3ea8",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0504-A01 (`Wir machen diese Datenplattform zur Grundlage für Innovation in allen Lebensbereichen: Offene Bildungsdaten ermöglichen passgenaue Lernangebote und Apps, die Eltern in Echtzeit über freie Kita-Plätze informieren.`) is terminally not assessable after object-level review. Review class EDUCATION_CHILDREN_YOUTH leaves these minimum object-specific inputs unresolved: target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p066:b008@85.04,576.36,512.81,701.06"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0504-A02",
+      "atom_id": "BE-VOLT-2026-SU-0504-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0504",
+      "pdf_page": 66,
+      "pdf_pages": [
+        66
+      ],
+      "source_locator": "p066:b008@85.04,576.36,512.81,701.06",
+      "source_excerpt": "Offene Umweltdaten helfen Allergiker*innen, Senior*innen und Familien, ihren Alltag besser zu planen.",
+      "source_sentence_normalized": "Offene Umweltdaten helfen Allergiker*innen, Senior*innen und Familien, ihren Alltag besser zu planen.",
+      "source_sentence_sha256": "1fd81ad4b4f7c7e2180d2f939ffe3b7be54ba36813b7a99e93171f60ce20d1df",
+      "policy_action": "Offene Umweltdaten helfen Allergiker*innen, Senior*innen und Familien, ihren Alltag besser zu planen.",
+      "policy_action_sha256": "1fd81ad4b4f7c7e2180d2f939ffe3b7be54ba36813b7a99e93171f60ce20d1df",
+      "source_text_sha256": "1fd81ad4b4f7c7e2180d2f939ffe3b7be54ba36813b7a99e93171f60ce20d1df",
+      "source_parent_text_sha256": "8ab401ba2c13dfbc6646247cb7cd81d2ccbe1572257dd1e21981dcbda7ab3ea8",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0504-A02 (`Offene Umweltdaten helfen Allergiker*innen, Senior*innen und Familien, ihren Alltag besser zu planen.`) is terminally not assessable after object-level review. Review class EDUCATION_CHILDREN_YOUTH leaves these minimum object-specific inputs unresolved: target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p066:b008@85.04,576.36,512.81,701.06"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0505-A01",
+      "atom_id": "BE-VOLT-2026-SU-0505-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0505",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b001@85.04,97.17,512.82,189.85",
+      "source_excerpt": "Wir schaffen eine Berliner Plattform für Forschungsdaten, die diese Daten – wo datenschutzrechtlich möglich – für Startups, KMU und andere Forschende zugänglich macht und gleichzeitig klare Standards für sichere Nutzung, ethische Forschung und verantwortungsvolle KI-Entwicklung…",
+      "source_sentence_normalized": "Wir schaffen eine Berliner Plattform für Forschungsdaten, die diese Daten – wo datenschutzrechtlich möglich – für Startups, KMU und andere Forschende zugänglich macht und gleichzeitig klare Standards für sichere Nutzung, ethische Forschung und verantwortungsvolle KI-Entwicklung setzt.",
+      "source_sentence_sha256": "86d0c36d806e89cb0fdb270450da2ebd92c5a6bdd29a7a36aa81af7bae36daf2",
+      "policy_action": "Wir schaffen eine Berliner Plattform für Forschungsdaten, die diese Daten – wo datenschutzrechtlich möglich – für Startups, KMU und andere Forschende zugänglich macht und gleichzeitig klare Standards für sichere Nutzung, ethische Forschung und verantwortungsvolle KI-Entwicklung setzt.",
+      "policy_action_sha256": "86d0c36d806e89cb0fdb270450da2ebd92c5a6bdd29a7a36aa81af7bae36daf2",
+      "source_text_sha256": "86d0c36d806e89cb0fdb270450da2ebd92c5a6bdd29a7a36aa81af7bae36daf2",
+      "source_parent_text_sha256": "f9e02b156e779d36c1754dd860e89ed674c50398eae8f94c848b4744155bc847",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0505-A01 (`Wir schaffen eine Berliner Plattform für Forschungsdaten, die diese Daten – wo datenschutzrechtlich möglich – für Startups, KMU und andere Forschende zugänglich macht und gleichzeitig klare Standards für sichere Nutzung, ethische Forschung und verantwortungsvolle KI-Entwicklung…`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b001@85.04,97.17,512.82,189.85"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0505-A02",
+      "atom_id": "BE-VOLT-2026-SU-0505-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0505",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b001@85.04,97.17,512.82,189.85",
+      "source_excerpt": "So erhalten Unternehmen, die auf Berliner Forschungsdaten aufbauen, Zugang zu einem Innovationsvorsprung, den andere Städte erst aufholen müssen.",
+      "source_sentence_normalized": "So erhalten Unternehmen, die auf Berliner Forschungsdaten aufbauen, Zugang zu einem Innovationsvorsprung, den andere Städte erst aufholen müssen.",
+      "source_sentence_sha256": "474127926dfded040316da97b5f8b35323b5c5b47044dc8b7c50a5c27efd8f16",
+      "policy_action": "So erhalten Unternehmen, die auf Berliner Forschungsdaten aufbauen, Zugang zu einem Innovationsvorsprung, den andere Städte erst aufholen müssen.",
+      "policy_action_sha256": "474127926dfded040316da97b5f8b35323b5c5b47044dc8b7c50a5c27efd8f16",
+      "source_text_sha256": "474127926dfded040316da97b5f8b35323b5c5b47044dc8b7c50a5c27efd8f16",
+      "source_parent_text_sha256": "f9e02b156e779d36c1754dd860e89ed674c50398eae8f94c848b4744155bc847",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "HOUSING_LAND_USE",
+      "missing_review_inputs": [
+        "units_tenure_price_location_and_timing",
+        "planning_approval_and_competence_route",
+        "capital_and_operating_finance",
+        "eligible_or_affected_households",
+        "housing_market_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "HOUSING_LAND_USE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0505-A02 (`So erhalten Unternehmen, die auf Berliner Forschungsdaten aufbauen, Zugang zu einem Innovationsvorsprung, den andere Städte erst aufholen müssen.`) is terminally not assessable after object-level review. Review class HOUSING_LAND_USE leaves these minimum object-specific inputs unresolved: units_tenure_price_location_and_timing, planning_approval_and_competence_route, capital_and_operating_finance, eligible_or_affected_households, housing_market_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b001@85.04,97.17,512.82,189.85"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0510-A01",
+      "atom_id": "BE-VOLT-2026-SU-0510-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0510",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b006@85.04,450.27,512.81,558.96",
+      "source_excerpt": "Bereits heute bleiben rund 45.000 Stellen unbesetzt, bis 2035 müssen über 530.000 Arbeitsplätze neu besetzt werden, und ohne entschlossenes Handeln könnten über 163.000 Stellen dauerhaft unbesetzt bleiben.",
+      "source_sentence_normalized": "Bereits heute bleiben rund 45.000 Stellen unbesetzt, bis 2035 müssen über 530.000 Arbeitsplätze neu besetzt werden, und ohne entschlossenes Handeln könnten über 163.000 Stellen dauerhaft unbesetzt bleiben.",
+      "source_sentence_sha256": "048315d2c59397ac71d2a55035343256cdafb7b025df899f69711436d2b2e19f",
+      "policy_action": "Bereits heute bleiben rund 45.000 Stellen unbesetzt, bis 2035 müssen über 530.000 Arbeitsplätze neu besetzt werden, und ohne entschlossenes Handeln könnten über 163.000 Stellen dauerhaft unbesetzt bleiben.",
+      "policy_action_sha256": "048315d2c59397ac71d2a55035343256cdafb7b025df899f69711436d2b2e19f",
+      "source_text_sha256": "048315d2c59397ac71d2a55035343256cdafb7b025df899f69711436d2b2e19f",
+      "source_parent_text_sha256": "92c5bf978089e6f6f6344bd72e87e99e35a46149615d8b5dfb2cefe028ed1aad",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SERVICE_PROGRAMME",
+      "missing_review_inputs": [
+        "eligibility_coverage_and_service_dose",
+        "delivery_actor_capacity_and_access",
+        "finance_duration_and_timeline",
+        "affected_group_and_service_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SERVICE_PROGRAMME_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0510-A01 (`Bereits heute bleiben rund 45.000 Stellen unbesetzt, bis 2035 müssen über 530.000 Arbeitsplätze neu besetzt werden, und ohne entschlossenes Handeln könnten über 163.000 Stellen dauerhaft unbesetzt bleiben.`) is terminally not assessable after object-level review. Review class SERVICE_PROGRAMME leaves these minimum object-specific inputs unresolved: eligibility_coverage_and_service_dose, delivery_actor_capacity_and_access, finance_duration_and_timeline, affected_group_and_service_baseline, counterfactual_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b006@85.04,450.27,512.81,558.96"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0510-A02",
+      "atom_id": "BE-VOLT-2026-SU-0510-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0510",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b006@85.04,450.27,512.81,558.96",
+      "source_excerpt": "Der Mangel trifft nicht nur Hightech-Unternehmen: Im ÖPNV, in Krankenhäusern, Kitas und im Handwerk fehlen Menschen, die die Stadt am Laufen halten.",
+      "source_sentence_normalized": "Der Mangel trifft nicht nur Hightech-Unternehmen: Im ÖPNV, in Krankenhäusern, Kitas und im Handwerk fehlen Menschen, die die Stadt am Laufen halten.",
+      "source_sentence_sha256": "41fc5dd4839e29b0aa78ebb53ff4bdb723900b6b8491203f3984e7dd4cacf89e",
+      "policy_action": "Der Mangel trifft nicht nur Hightech-Unternehmen: Im ÖPNV, in Krankenhäusern, Kitas und im Handwerk fehlen Menschen, die die Stadt am Laufen halten.",
+      "policy_action_sha256": "41fc5dd4839e29b0aa78ebb53ff4bdb723900b6b8491203f3984e7dd4cacf89e",
+      "source_text_sha256": "41fc5dd4839e29b0aa78ebb53ff4bdb723900b6b8491203f3984e7dd4cacf89e",
+      "source_parent_text_sha256": "92c5bf978089e6f6f6344bd72e87e99e35a46149615d8b5dfb2cefe028ed1aad",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0510-A02 (`Der Mangel trifft nicht nur Hightech-Unternehmen: Im ÖPNV, in Krankenhäusern, Kitas und im Handwerk fehlen Menschen, die die Stadt am Laufen halten.`) is terminally not assessable after object-level review. Review class EDUCATION_CHILDREN_YOUTH leaves these minimum object-specific inputs unresolved: target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b006@85.04,450.27,512.81,558.96"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0511-A01",
+      "atom_id": "BE-VOLT-2026-SU-0511-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0511",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b007@85.04,567.97,512.81,660.65",
+      "source_excerpt": "Wir gehen den Fachkräftemangel aktiv an.",
+      "source_sentence_normalized": "Wir gehen den Fachkräftemangel aktiv an.",
+      "source_sentence_sha256": "367a7530f54b4eaaf5d3410ff483ca7edee62c3ff13f13195f0f143b7b86c067",
+      "policy_action": "Wir gehen den Fachkräftemangel aktiv an.",
+      "policy_action_sha256": "367a7530f54b4eaaf5d3410ff483ca7edee62c3ff13f13195f0f143b7b86c067",
+      "source_text_sha256": "367a7530f54b4eaaf5d3410ff483ca7edee62c3ff13f13195f0f143b7b86c067",
+      "source_parent_text_sha256": "0b0a339b71dc5442fe0e12e71e88fbf683fe15c0670fc12bd9f0c29991cf3814",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "STAFFING_WORKFORCE",
+      "missing_review_inputs": [
+        "role_fte_qualification_and_allocation",
+        "recruitment_and_retention_feasibility",
+        "recurring_finance_and_timeline",
+        "service_or_workforce_baseline",
+        "affected_users_or_workers_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "STAFFING_WORKFORCE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0511-A01 (`Wir gehen den Fachkräftemangel aktiv an.`) is terminally not assessable after object-level review. Review class STAFFING_WORKFORCE leaves these minimum object-specific inputs unresolved: role_fte_qualification_and_allocation, recruitment_and_retention_feasibility, recurring_finance_and_timeline, service_or_workforce_baseline, affected_users_or_workers_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b007@85.04,567.97,512.81,660.65"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0511-A02",
+      "atom_id": "BE-VOLT-2026-SU-0511-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0511",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b007@85.04,567.97,512.81,660.65",
+      "source_excerpt": "Wir schaffen eine schnelle, digitale Einwanderungsbehörde, die Fachkräfte willkommen heißt.",
+      "source_sentence_normalized": "Wir schaffen eine schnelle, digitale Einwanderungsbehörde, die Fachkräfte willkommen heißt.",
+      "source_sentence_sha256": "67800944b9437e1e91197d46322fc5ed8f023922fed5edd4c6ae71bb45dc15a4",
+      "policy_action": "Wir schaffen eine schnelle, digitale Einwanderungsbehörde, die Fachkräfte willkommen heißt.",
+      "policy_action_sha256": "67800944b9437e1e91197d46322fc5ed8f023922fed5edd4c6ae71bb45dc15a4",
+      "source_text_sha256": "67800944b9437e1e91197d46322fc5ed8f023922fed5edd4c6ae71bb45dc15a4",
+      "source_parent_text_sha256": "0b0a339b71dc5442fe0e12e71e88fbf683fe15c0670fc12bd9f0c29991cf3814",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0511-A02 (`Wir schaffen eine schnelle, digitale Einwanderungsbehörde, die Fachkräfte willkommen heißt.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b007@85.04,567.97,512.81,660.65"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0511-A03",
+      "atom_id": "BE-VOLT-2026-SU-0511-A03",
+      "source_unit_id": "BE-VOLT-2026-SU-0511",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b007@85.04,567.97,512.81,660.65",
+      "source_excerpt": "Wir setzen ein konsequentes Anerkennungssystem für ausländische Qualifikationen um und schaffen ein echtes Welcome Center als zentralen Anlaufpunkt.",
+      "source_sentence_normalized": "Wir setzen ein konsequentes Anerkennungssystem für ausländische Qualifikationen um und schaffen ein echtes Welcome Center als zentralen Anlaufpunkt.",
+      "source_sentence_sha256": "c6cfbabbe497540eaaefeb9dda844c8d9585dbf97f5859380a8041fd4955f44f",
+      "policy_action": "Wir setzen ein konsequentes Anerkennungssystem für ausländische Qualifikationen um",
+      "policy_action_sha256": "9caebb56599f6b33b440fafd5a0ec6448496239929ec855b87f36f5a5352aaa5",
+      "source_text_sha256": "c6cfbabbe497540eaaefeb9dda844c8d9585dbf97f5859380a8041fd4955f44f",
+      "source_parent_text_sha256": "0b0a339b71dc5442fe0e12e71e88fbf683fe15c0670fc12bd9f0c29991cf3814",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0511-A03 (`Wir setzen ein konsequentes Anerkennungssystem für ausländische Qualifikationen um`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b007@85.04,567.97,512.81,660.65"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0511-A04",
+      "atom_id": "BE-VOLT-2026-SU-0511-A04",
+      "source_unit_id": "BE-VOLT-2026-SU-0511",
+      "pdf_page": 67,
+      "pdf_pages": [
+        67
+      ],
+      "source_locator": "p067:b007@85.04,567.97,512.81,660.65",
+      "source_excerpt": "Wir setzen ein konsequentes Anerkennungssystem für ausländische Qualifikationen um und schaffen ein echtes Welcome Center als zentralen Anlaufpunkt.",
+      "source_sentence_normalized": "Wir setzen ein konsequentes Anerkennungssystem für ausländische Qualifikationen um und schaffen ein echtes Welcome Center als zentralen Anlaufpunkt.",
+      "source_sentence_sha256": "c6cfbabbe497540eaaefeb9dda844c8d9585dbf97f5859380a8041fd4955f44f",
+      "policy_action": "schaffen ein echtes Welcome Center als zentralen Anlaufpunkt.",
+      "policy_action_sha256": "f47067f51d47176f83515d9c9af95193ae795945dbe03a4d43f748e87755720f",
+      "source_text_sha256": "c6cfbabbe497540eaaefeb9dda844c8d9585dbf97f5859380a8041fd4955f44f",
+      "source_parent_text_sha256": "0b0a339b71dc5442fe0e12e71e88fbf683fe15c0670fc12bd9f0c29991cf3814",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0511-A04 (`schaffen ein echtes Welcome Center als zentralen Anlaufpunkt.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p067:b007@85.04,567.97,512.81,660.65"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0513-A01",
+      "atom_id": "BE-VOLT-2026-SU-0513-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0513",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68
+      ],
+      "source_locator": "p068:b002@85.04,121.41,512.79,198.09",
+      "source_excerpt": "Wir modernisieren das Landesamt für Einwanderung (LEA).",
+      "source_sentence_normalized": "Wir modernisieren das Landesamt für Einwanderung (LEA).",
+      "source_sentence_sha256": "cfb9e7deab1e90c1c7732c137d72d3f443513229441faf32daa768c46d00703e",
+      "policy_action": "Wir modernisieren das Landesamt für Einwanderung (LEA).",
+      "policy_action_sha256": "cfb9e7deab1e90c1c7732c137d72d3f443513229441faf32daa768c46d00703e",
+      "source_text_sha256": "cfb9e7deab1e90c1c7732c137d72d3f443513229441faf32daa768c46d00703e",
+      "source_parent_text_sha256": "de848d3b5034aafb1c90241754d34d65c56953a6aa60c48982dee1947e33804d",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0513-A01 (`Wir modernisieren das Landesamt für Einwanderung (LEA).`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b002@85.04,121.41,512.79,198.09"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0513-A02",
+      "atom_id": "BE-VOLT-2026-SU-0513-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0513",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68
+      ],
+      "source_locator": "p068:b002@85.04,121.41,512.79,198.09",
+      "source_excerpt": "Wir schaffen vollständig digitale Antragsverfahren und verstärken die Fachkräfte-Referate B1–B4 kurzfristig gezielt, um Engpässen schnell entgegenzuwirken.",
+      "source_sentence_normalized": "Wir schaffen vollständig digitale Antragsverfahren und verstärken die Fachkräfte-Referate B1–B4 kurzfristig gezielt, um Engpässen schnell entgegenzuwirken.",
+      "source_sentence_sha256": "41a6344ab73e171cb5ae8bf36863d7e0fa8820e39bbb7f7d698cde9c14e80b85",
+      "policy_action": "Wir schaffen vollständig digitale Antragsverfahren und verstärken die Fachkräfte-Referate B1–B4 kurzfristig gezielt, um Engpässen schnell entgegenzuwirken.",
+      "policy_action_sha256": "41a6344ab73e171cb5ae8bf36863d7e0fa8820e39bbb7f7d698cde9c14e80b85",
+      "source_text_sha256": "41a6344ab73e171cb5ae8bf36863d7e0fa8820e39bbb7f7d698cde9c14e80b85",
+      "source_parent_text_sha256": "de848d3b5034aafb1c90241754d34d65c56953a6aa60c48982dee1947e33804d",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0513-A02 (`Wir schaffen vollständig digitale Antragsverfahren und verstärken die Fachkräfte-Referate B1–B4 kurzfristig gezielt, um Engpässen schnell entgegenzuwirken.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b002@85.04,121.41,512.79,198.09"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0513-A03",
+      "atom_id": "BE-VOLT-2026-SU-0513-A03",
+      "source_unit_id": "BE-VOLT-2026-SU-0513",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68
+      ],
+      "source_locator": "p068:b002@85.04,121.41,512.79,198.09",
+      "source_excerpt": "So halbieren wir die Bearbeitungszeiten innerhalb einer Legislaturperiode und beschleunigen den Zugang zum Berliner Arbeitsmarkt für ausländische Talente.",
+      "source_sentence_normalized": "So halbieren wir die Bearbeitungszeiten innerhalb einer Legislaturperiode und beschleunigen den Zugang zum Berliner Arbeitsmarkt für ausländische Talente.",
+      "source_sentence_sha256": "0ddc92311cb2d1ae623e5d3338e3774c7f972ba1fd8331a735c37a29f61c05af",
+      "policy_action": "So halbieren wir die Bearbeitungszeiten innerhalb einer Legislaturperiode",
+      "policy_action_sha256": "a54302b5ceecaf0ecdcb23a3c8f631cad63f575d64e4479dd7a5d1da05086e56",
+      "source_text_sha256": "0ddc92311cb2d1ae623e5d3338e3774c7f972ba1fd8331a735c37a29f61c05af",
+      "source_parent_text_sha256": "de848d3b5034aafb1c90241754d34d65c56953a6aa60c48982dee1947e33804d",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0513-A03 (`So halbieren wir die Bearbeitungszeiten innerhalb einer Legislaturperiode`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b002@85.04,121.41,512.79,198.09"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0513-A04",
+      "atom_id": "BE-VOLT-2026-SU-0513-A04",
+      "source_unit_id": "BE-VOLT-2026-SU-0513",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68
+      ],
+      "source_locator": "p068:b002@85.04,121.41,512.79,198.09",
+      "source_excerpt": "So halbieren wir die Bearbeitungszeiten innerhalb einer Legislaturperiode und beschleunigen den Zugang zum Berliner Arbeitsmarkt für ausländische Talente.",
+      "source_sentence_normalized": "So halbieren wir die Bearbeitungszeiten innerhalb einer Legislaturperiode und beschleunigen den Zugang zum Berliner Arbeitsmarkt für ausländische Talente.",
+      "source_sentence_sha256": "0ddc92311cb2d1ae623e5d3338e3774c7f972ba1fd8331a735c37a29f61c05af",
+      "policy_action": "beschleunigen den Zugang zum Berliner Arbeitsmarkt für ausländische Talente.",
+      "policy_action_sha256": "9e96942f9344275fb863507c0f502b971e267dc588c02b52a0856dddfc7eed0a",
+      "source_text_sha256": "0ddc92311cb2d1ae623e5d3338e3774c7f972ba1fd8331a735c37a29f61c05af",
+      "source_parent_text_sha256": "de848d3b5034aafb1c90241754d34d65c56953a6aa60c48982dee1947e33804d",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0513-A04 (`beschleunigen den Zugang zum Berliner Arbeitsmarkt für ausländische Talente.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b002@85.04,121.41,512.79,198.09"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0517-A01",
+      "atom_id": "BE-VOLT-2026-SU-0517-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0517",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68
+      ],
+      "source_locator": "p068:b006@85.04,404.04,512.79,496.73",
+      "source_excerpt": "Wir schaffen digitale Schnittstellen zwischen LEA, Kammern und Betrieben.",
+      "source_sentence_normalized": "Wir schaffen digitale Schnittstellen zwischen LEA, Kammern und Betrieben.",
+      "source_sentence_sha256": "dd87083c9a7ec100c7cc0fb7acc47344ef107b844b42752252b6aac0e362e100",
+      "policy_action": "Wir schaffen digitale Schnittstellen zwischen LEA, Kammern und Betrieben.",
+      "policy_action_sha256": "dd87083c9a7ec100c7cc0fb7acc47344ef107b844b42752252b6aac0e362e100",
+      "source_text_sha256": "dd87083c9a7ec100c7cc0fb7acc47344ef107b844b42752252b6aac0e362e100",
+      "source_parent_text_sha256": "695a0169ec3f051d4dec3cf7c66c9d0fae3795608c90e889b4c2035e14a1c309",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "DIGITAL_DATA_AI_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0517-A01 (`Wir schaffen digitale Schnittstellen zwischen LEA, Kammern und Betrieben.`) is terminally not assessable after object-level review. Review class DIGITAL_DATA_AI leaves these minimum object-specific inputs unresolved: functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b006@85.04,404.04,512.79,496.73"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0517-A02",
+      "atom_id": "BE-VOLT-2026-SU-0517-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0517",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68
+      ],
+      "source_locator": "p068:b006@85.04,404.04,512.79,496.73",
+      "source_excerpt": "Wir etablieren verbindliche Bearbeitungsfristen für Mangelberufe in Pflege, IT und Handwerk.",
+      "source_sentence_normalized": "Wir etablieren verbindliche Bearbeitungsfristen für Mangelberufe in Pflege, IT und Handwerk.",
+      "source_sentence_sha256": "4de940cdb7b95bb20cc9341347d8b9e44d823edf70b4567503f8f3084a951261",
+      "policy_action": "Wir etablieren verbindliche Bearbeitungsfristen für Mangelberufe in Pflege, IT und Handwerk.",
+      "policy_action_sha256": "4de940cdb7b95bb20cc9341347d8b9e44d823edf70b4567503f8f3084a951261",
+      "source_text_sha256": "4de940cdb7b95bb20cc9341347d8b9e44d823edf70b4567503f8f3084a951261",
+      "source_parent_text_sha256": "695a0169ec3f051d4dec3cf7c66c9d0fae3795608c90e889b4c2035e14a1c309",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "HEALTH_CARE",
+      "missing_review_inputs": [
+        "eligible_population_and_service_scope",
+        "workforce_capacity_and_delivery_actor",
+        "financing_and_timeline",
+        "care_access_or_health_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "HEALTH_CARE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0517-A02 (`Wir etablieren verbindliche Bearbeitungsfristen für Mangelberufe in Pflege, IT und Handwerk.`) is terminally not assessable after object-level review. Review class HEALTH_CARE leaves these minimum object-specific inputs unresolved: eligible_population_and_service_scope, workforce_capacity_and_delivery_actor, financing_and_timeline, care_access_or_health_baseline, counterfactual_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b006@85.04,404.04,512.79,496.73"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0517-A03",
+      "atom_id": "BE-VOLT-2026-SU-0517-A03",
+      "source_unit_id": "BE-VOLT-2026-SU-0517",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68
+      ],
+      "source_locator": "p068:b006@85.04,404.04,512.79,496.73",
+      "source_excerpt": "Wir schaffen den „Integrationspass Arbeit”.",
+      "source_sentence_normalized": "Wir schaffen den „Integrationspass Arbeit”.",
+      "source_sentence_sha256": "cbc50a52973d9ee1b9db90417fa9c0c9587343702e4bd3a3a0bcbca66443fd4a",
+      "policy_action": "Wir schaffen den „Integrationspass Arbeit”.",
+      "policy_action_sha256": "cbc50a52973d9ee1b9db90417fa9c0c9587343702e4bd3a3a0bcbca66443fd4a",
+      "source_text_sha256": "cbc50a52973d9ee1b9db90417fa9c0c9587343702e4bd3a3a0bcbca66443fd4a",
+      "source_parent_text_sha256": "695a0169ec3f051d4dec3cf7c66c9d0fae3795608c90e889b4c2035e14a1c309",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "MIGRATION_INTEGRATION",
+      "missing_review_inputs": [
+        "legal_status_group_and_eligibility",
+        "land_federal_or_eu_competence_route",
+        "service_enforcement_or_admission_capacity",
+        "rights_and_distribution_safeguards",
+        "integration_or_procedure_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "MIGRATION_INTEGRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0517-A03 (`Wir schaffen den „Integrationspass Arbeit”.`) is terminally not assessable after object-level review. Review class MIGRATION_INTEGRATION leaves these minimum object-specific inputs unresolved: legal_status_group_and_eligibility, land_federal_or_eu_competence_route, service_enforcement_or_admission_capacity, rights_and_distribution_safeguards, integration_or_procedure_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b006@85.04,404.04,512.79,496.73"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0521-A01",
+      "atom_id": "BE-VOLT-2026-SU-0521-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0521",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68,
+        69
+      ],
+      "source_locator": "p068:b010@85.04,657.88,512.81,718.55;p069:b001@85.04,97.17,512.79,125.83",
+      "source_excerpt": "Wir bauen den bestehenden Business Immigration Service zu einem echten Welcome Center aus.",
+      "source_sentence_normalized": "Wir bauen den bestehenden Business Immigration Service zu einem echten Welcome Center aus.",
+      "source_sentence_sha256": "1be8cc8c34d3406e6d1531914b6750d73af6ac369ff33b2c3034328168824aee",
+      "policy_action": "Wir bauen den bestehenden Business Immigration Service zu einem echten Welcome Center aus.",
+      "policy_action_sha256": "1be8cc8c34d3406e6d1531914b6750d73af6ac369ff33b2c3034328168824aee",
+      "source_text_sha256": "1be8cc8c34d3406e6d1531914b6750d73af6ac369ff33b2c3034328168824aee",
+      "source_parent_text_sha256": "e08af66bfeda31b7a9f7b9de215aa42d2cfbc879b8e096b527dcff03bae5c38d",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "MIGRATION_INTEGRATION",
+      "missing_review_inputs": [
+        "legal_status_group_and_eligibility",
+        "land_federal_or_eu_competence_route",
+        "service_enforcement_or_admission_capacity",
+        "rights_and_distribution_safeguards",
+        "integration_or_procedure_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "MIGRATION_INTEGRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0521-A01 (`Wir bauen den bestehenden Business Immigration Service zu einem echten Welcome Center aus.`) is terminally not assessable after object-level review. Review class MIGRATION_INTEGRATION leaves these minimum object-specific inputs unresolved: legal_status_group_and_eligibility, land_federal_or_eu_competence_route, service_enforcement_or_admission_capacity, rights_and_distribution_safeguards, integration_or_procedure_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b010@85.04,657.88,512.81,718.55;p069:b001@85.04,97.17,512.79,125.83"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0521-A02",
+      "atom_id": "BE-VOLT-2026-SU-0521-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0521",
+      "pdf_page": 68,
+      "pdf_pages": [
+        68,
+        69
+      ],
+      "source_locator": "p068:b010@85.04,657.88,512.81,718.55;p069:b001@85.04,97.17,512.79,125.83",
+      "source_excerpt": "Hier bündeln wir Behördengänge und bewährte Berliner Programme: Arrivo Berlin für Beratung und Vermittlung, InVork für Handwerker aus dem Ausland und TalentsBridge als EU-weites Vorbereitungsprogramm, das Fachkräfte bereits im Herkunftsland fachlich und sprachlich auf Berlin vor…",
+      "source_sentence_normalized": "Hier bündeln wir Behördengänge und bewährte Berliner Programme: Arrivo Berlin für Beratung und Vermittlung, InVork für Handwerker aus dem Ausland und TalentsBridge als EU-weites Vorbereitungsprogramm, das Fachkräfte bereits im Herkunftsland fachlich und sprachlich auf Berlin vorbereitet und direkt mit Unternehmen vernetzt.",
+      "source_sentence_sha256": "0e88eb3492d7dac8490788559dc903f8b2bd1962b24bfb42fa67d2282bdac879",
+      "policy_action": "Hier bündeln wir Behördengänge und bewährte Berliner Programme: Arrivo Berlin für Beratung und Vermittlung, InVork für Handwerker aus dem Ausland und TalentsBridge als EU-weites Vorbereitungsprogramm, das Fachkräfte bereits im Herkunftsland fachlich und sprachlich auf Berlin vorbereitet und direkt mit Unternehmen vernetzt.",
+      "policy_action_sha256": "0e88eb3492d7dac8490788559dc903f8b2bd1962b24bfb42fa67d2282bdac879",
+      "source_text_sha256": "0e88eb3492d7dac8490788559dc903f8b2bd1962b24bfb42fa67d2282bdac879",
+      "source_parent_text_sha256": "e08af66bfeda31b7a9f7b9de215aa42d2cfbc879b8e096b527dcff03bae5c38d",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "STAFFING_WORKFORCE",
+      "missing_review_inputs": [
+        "role_fte_qualification_and_allocation",
+        "recruitment_and_retention_feasibility",
+        "recurring_finance_and_timeline",
+        "service_or_workforce_baseline",
+        "affected_users_or_workers_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "STAFFING_WORKFORCE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0521-A02 (`Hier bündeln wir Behördengänge und bewährte Berliner Programme: Arrivo Berlin für Beratung und Vermittlung, InVork für Handwerker aus dem Ausland und TalentsBridge als EU-weites Vorbereitungsprogramm, das Fachkräfte bereits im Herkunftsland fachlich und sprachlich auf Berlin vor…`) is terminally not assessable after object-level review. Review class STAFFING_WORKFORCE leaves these minimum object-specific inputs unresolved: role_fte_qualification_and_allocation, recruitment_and_retention_feasibility, recurring_finance_and_timeline, service_or_workforce_baseline, affected_users_or_workers_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p068:b010@85.04,657.88,512.81,718.55;p069:b001@85.04,97.17,512.79,125.83"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0525-A01",
+      "atom_id": "BE-VOLT-2026-SU-0525-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0525",
+      "pdf_page": 69,
+      "pdf_pages": [
+        69
+      ],
+      "source_locator": "p069:b005@85.04,322.67,512.79,367.34",
+      "source_excerpt": "Wir fördern Werkswohnungen und Azubiwerke für Mangelberufe bei landeseigenen Wohnungsbaugesellschaften, priorisieren Kita-Plätze für Fachkräfte in kritischen Sektoren und stärken Erasmus+ im dualen Ausbildungssystem.",
+      "source_sentence_normalized": "Wir fördern Werkswohnungen und Azubiwerke für Mangelberufe bei landeseigenen Wohnungsbaugesellschaften, priorisieren Kita-Plätze für Fachkräfte in kritischen Sektoren und stärken Erasmus+ im dualen Ausbildungssystem.",
+      "source_sentence_sha256": "a220f908938b8b95c26fdc82e68cbdbc008131a8bb6fe6ff82008575835958f4",
+      "policy_action": "Wir fördern Werkswohnungen und Azubiwerke für Mangelberufe bei landeseigenen Wohnungsbaugesellschaften, priorisieren Kita-Plätze für Fachkräfte in kritischen Sektoren",
+      "policy_action_sha256": "4986f085d1c4f055fe9b6b9abc7ad0bbbfdf98d4c3c3015b68c50325525c0c9e",
+      "source_text_sha256": "a220f908938b8b95c26fdc82e68cbdbc008131a8bb6fe6ff82008575835958f4",
+      "source_parent_text_sha256": "a220f908938b8b95c26fdc82e68cbdbc008131a8bb6fe6ff82008575835958f4",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0525-A01 (`Wir fördern Werkswohnungen und Azubiwerke für Mangelberufe bei landeseigenen Wohnungsbaugesellschaften, priorisieren Kita-Plätze für Fachkräfte in kritischen Sektoren`) is terminally not assessable after object-level review. Review class EDUCATION_CHILDREN_YOUTH leaves these minimum object-specific inputs unresolved: target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p069:b005@85.04,322.67,512.79,367.34"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0525-A02",
+      "atom_id": "BE-VOLT-2026-SU-0525-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0525",
+      "pdf_page": 69,
+      "pdf_pages": [
+        69
+      ],
+      "source_locator": "p069:b005@85.04,322.67,512.79,367.34",
+      "source_excerpt": "Wir fördern Werkswohnungen und Azubiwerke für Mangelberufe bei landeseigenen Wohnungsbaugesellschaften, priorisieren Kita-Plätze für Fachkräfte in kritischen Sektoren und stärken Erasmus+ im dualen Ausbildungssystem.",
+      "source_sentence_normalized": "Wir fördern Werkswohnungen und Azubiwerke für Mangelberufe bei landeseigenen Wohnungsbaugesellschaften, priorisieren Kita-Plätze für Fachkräfte in kritischen Sektoren und stärken Erasmus+ im dualen Ausbildungssystem.",
+      "source_sentence_sha256": "a220f908938b8b95c26fdc82e68cbdbc008131a8bb6fe6ff82008575835958f4",
+      "policy_action": "stärken Erasmus+ im dualen Ausbildungssystem.",
+      "policy_action_sha256": "22d69100ce4a3358da20d41920aa0aa67c7061fea9ee622dece625dc4bd70950",
+      "source_text_sha256": "a220f908938b8b95c26fdc82e68cbdbc008131a8bb6fe6ff82008575835958f4",
+      "source_parent_text_sha256": "a220f908938b8b95c26fdc82e68cbdbc008131a8bb6fe6ff82008575835958f4",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0525-A02 (`stärken Erasmus+ im dualen Ausbildungssystem.`) is terminally not assessable after object-level review. Review class EDUCATION_CHILDREN_YOUTH leaves these minimum object-specific inputs unresolved: target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p069:b005@85.04,322.67,512.79,367.34"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0529-A01",
+      "atom_id": "BE-VOLT-2026-SU-0529-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0529",
+      "pdf_page": 69,
+      "pdf_pages": [
+        69
+      ],
+      "source_locator": "p069:b009@85.04,559.30,512.80,700.00",
+      "source_excerpt": "Wir schaffen gezielte Qualifizierungsprogramme für Berliner Jobsuchende und Quereinsteiger*innen in den Bereichen, in denen die Berliner Wirtschaft am stärksten wächst, wie Digitalwirtschaft und Klimatechnologien.",
+      "source_sentence_normalized": "Wir schaffen gezielte Qualifizierungsprogramme für Berliner Jobsuchende und Quereinsteiger*innen in den Bereichen, in denen die Berliner Wirtschaft am stärksten wächst, wie Digitalwirtschaft und Klimatechnologien.",
+      "source_sentence_sha256": "d2082ba5c7aa75844d2bf240014b77bb5fcfb81f387b63d4f7dc0c3fe4abd750",
+      "policy_action": "Wir schaffen gezielte Qualifizierungsprogramme für Berliner Jobsuchende und Quereinsteiger*innen in den Bereichen, in denen die Berliner Wirtschaft am stärksten wächst, wie Digitalwirtschaft und Klimatechnologien.",
+      "policy_action_sha256": "d2082ba5c7aa75844d2bf240014b77bb5fcfb81f387b63d4f7dc0c3fe4abd750",
+      "source_text_sha256": "d2082ba5c7aa75844d2bf240014b77bb5fcfb81f387b63d4f7dc0c3fe4abd750",
+      "source_parent_text_sha256": "7c9181b13a52cfa5b5709608701508e1e1cea6ebaae50e487e4f454073fb16dd",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0529-A01 (`Wir schaffen gezielte Qualifizierungsprogramme für Berliner Jobsuchende und Quereinsteiger*innen in den Bereichen, in denen die Berliner Wirtschaft am stärksten wächst, wie Digitalwirtschaft und Klimatechnologien.`) is terminally not assessable after object-level review. Review class CLIMATE_ENERGY_ENVIRONMENT leaves these minimum object-specific inputs unresolved: physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p069:b009@85.04,559.30,512.80,700.00"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0529-A02",
+      "atom_id": "BE-VOLT-2026-SU-0529-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0529",
+      "pdf_page": 69,
+      "pdf_pages": [
+        69
+      ],
+      "source_locator": "p069:b009@85.04,559.30,512.80,700.00",
+      "source_excerpt": "Gemeinsam mit IHK, Jobcentern und Berliner Tech-Unternehmen entwickeln wir kompakte, praxisnahe Formate, die den Einstieg in diese Branchen ermöglichen, auch ohne klassischen Studienabschluss.",
+      "source_sentence_normalized": "Gemeinsam mit IHK, Jobcentern und Berliner Tech-Unternehmen entwickeln wir kompakte, praxisnahe Formate, die den Einstieg in diese Branchen ermöglichen, auch ohne klassischen Studienabschluss.",
+      "source_sentence_sha256": "660c31ab061faae2c4cec5439bb4bb936bcf19fe7916462bb63f7a3c7fa81c64",
+      "policy_action": "Gemeinsam mit IHK, Jobcentern und Berliner Tech-Unternehmen entwickeln wir kompakte, praxisnahe Formate, die den Einstieg in diese Branchen ermöglichen, auch ohne klassischen Studienabschluss.",
+      "policy_action_sha256": "660c31ab061faae2c4cec5439bb4bb936bcf19fe7916462bb63f7a3c7fa81c64",
+      "source_text_sha256": "660c31ab061faae2c4cec5439bb4bb936bcf19fe7916462bb63f7a3c7fa81c64",
+      "source_parent_text_sha256": "7c9181b13a52cfa5b5709608701508e1e1cea6ebaae50e487e4f454073fb16dd",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0529-A02 (`Gemeinsam mit IHK, Jobcentern und Berliner Tech-Unternehmen entwickeln wir kompakte, praxisnahe Formate, die den Einstieg in diese Branchen ermöglichen, auch ohne klassischen Studienabschluss.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p069:b009@85.04,559.30,512.80,700.00"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0529-A03",
+      "atom_id": "BE-VOLT-2026-SU-0529-A03",
+      "source_unit_id": "BE-VOLT-2026-SU-0529",
+      "pdf_page": 69,
+      "pdf_pages": [
+        69
+      ],
+      "source_locator": "p069:b009@85.04,559.30,512.80,700.00",
+      "source_excerpt": "Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden, halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt und sichern so ihren wichtigen Erfahrungsschatz.",
+      "source_sentence_normalized": "Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden, halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt und sichern so ihren wichtigen Erfahrungsschatz.",
+      "source_sentence_sha256": "18f596a974e71e14e2056d32bcffab63d85c356f6e803dde97f723ade84f3c5d",
+      "policy_action": "Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden",
+      "policy_action_sha256": "4e51f13d2f952f6340fa3058d9513373a4fd7e86b7742f96ec58a4c7018d0be5",
+      "source_text_sha256": "18f596a974e71e14e2056d32bcffab63d85c356f6e803dde97f723ade84f3c5d",
+      "source_parent_text_sha256": "7c9181b13a52cfa5b5709608701508e1e1cea6ebaae50e487e4f454073fb16dd",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "STAFFING_WORKFORCE",
+      "missing_review_inputs": [
+        "role_fte_qualification_and_allocation",
+        "recruitment_and_retention_feasibility",
+        "recurring_finance_and_timeline",
+        "service_or_workforce_baseline",
+        "affected_users_or_workers_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "STAFFING_WORKFORCE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0529-A03 (`Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden`) is terminally not assessable after object-level review. Review class STAFFING_WORKFORCE leaves these minimum object-specific inputs unresolved: role_fte_qualification_and_allocation, recruitment_and_retention_feasibility, recurring_finance_and_timeline, service_or_workforce_baseline, affected_users_or_workers_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p069:b009@85.04,559.30,512.80,700.00"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0529-A04",
+      "atom_id": "BE-VOLT-2026-SU-0529-A04",
+      "source_unit_id": "BE-VOLT-2026-SU-0529",
+      "pdf_page": 69,
+      "pdf_pages": [
+        69
+      ],
+      "source_locator": "p069:b009@85.04,559.30,512.80,700.00",
+      "source_excerpt": "Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden, halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt und sichern so ihren wichtigen Erfahrungsschatz.",
+      "source_sentence_normalized": "Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden, halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt und sichern so ihren wichtigen Erfahrungsschatz.",
+      "source_sentence_sha256": "18f596a974e71e14e2056d32bcffab63d85c356f6e803dde97f723ade84f3c5d",
+      "policy_action": "halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt",
+      "policy_action_sha256": "71abde2124e63b72fa0214b8348defbfa4e242e4d77b6c7441f854eed587103c",
+      "source_text_sha256": "18f596a974e71e14e2056d32bcffab63d85c356f6e803dde97f723ade84f3c5d",
+      "source_parent_text_sha256": "7c9181b13a52cfa5b5709608701508e1e1cea6ebaae50e487e4f454073fb16dd",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SERVICE_PROGRAMME",
+      "missing_review_inputs": [
+        "eligibility_coverage_and_service_dose",
+        "delivery_actor_capacity_and_access",
+        "finance_duration_and_timeline",
+        "affected_group_and_service_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SERVICE_PROGRAMME_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0529-A04 (`halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt`) is terminally not assessable after object-level review. Review class SERVICE_PROGRAMME leaves these minimum object-specific inputs unresolved: eligibility_coverage_and_service_dose, delivery_actor_capacity_and_access, finance_duration_and_timeline, affected_group_and_service_baseline, counterfactual_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p069:b009@85.04,559.30,512.80,700.00"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0529-A05",
+      "atom_id": "BE-VOLT-2026-SU-0529-A05",
+      "source_unit_id": "BE-VOLT-2026-SU-0529",
+      "pdf_page": 69,
+      "pdf_pages": [
+        69
+      ],
+      "source_locator": "p069:b009@85.04,559.30,512.80,700.00",
+      "source_excerpt": "Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden, halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt und sichern so ihren wichtigen Erfahrungsschatz.",
+      "source_sentence_normalized": "Dabei denken wir auch erfahrene Fachkräfte mit: Statt sie mit Abfindungen in Altersteilzeit oder Frührente zu verabschieden, halten wir sie durch kontinuierliche Qualifizierungsangebote im Arbeitsmarkt und sichern so ihren wichtigen Erfahrungsschatz.",
+      "source_sentence_sha256": "18f596a974e71e14e2056d32bcffab63d85c356f6e803dde97f723ade84f3c5d",
+      "policy_action": "sichern so ihren wichtigen Erfahrungsschatz.",
+      "policy_action_sha256": "048442b0a9ab3f1784e1a5d4da57f116089f58e42a5bca91e2fcfaaae98b0679",
+      "source_text_sha256": "18f596a974e71e14e2056d32bcffab63d85c356f6e803dde97f723ade84f3c5d",
+      "source_parent_text_sha256": "7c9181b13a52cfa5b5709608701508e1e1cea6ebaae50e487e4f454073fb16dd",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0529-A05 (`sichern so ihren wichtigen Erfahrungsschatz.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p069:b009@85.04,559.30,512.80,700.00"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0532-A01",
+      "atom_id": "BE-VOLT-2026-SU-0532-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0532",
+      "pdf_page": 70,
+      "pdf_pages": [
+        70
+      ],
+      "source_locator": "p070:b003@85.04,211.60,512.80,288.28",
+      "source_excerpt": "Wir lassen niemanden zurück: Wir schaffen einfache Beschäftigungsangebote, um Menschen nach und nach aus der Langzeitarbeitslosigkeit zu holen, sowie modulare Qualifizierungsangebote, die einen praktikablen Einstieg in einen neuen Berufsweg bieten.",
+      "source_sentence_normalized": "Wir lassen niemanden zurück: Wir schaffen einfache Beschäftigungsangebote, um Menschen nach und nach aus der Langzeitarbeitslosigkeit zu holen, sowie modulare Qualifizierungsangebote, die einen praktikablen Einstieg in einen neuen Berufsweg bieten.",
+      "source_sentence_sha256": "f492d1ca6889241709b94b3d0d40b8ad6b3a23b2e2564ce89f0289f44a41f25c",
+      "policy_action": "Wir lassen niemanden zurück: Wir schaffen einfache Beschäftigungsangebote, um Menschen nach und nach aus der Langzeitarbeitslosigkeit zu holen, sowie modulare Qualifizierungsangebote, die einen praktikablen Einstieg in einen neuen Berufsweg bieten.",
+      "policy_action_sha256": "f492d1ca6889241709b94b3d0d40b8ad6b3a23b2e2564ce89f0289f44a41f25c",
+      "source_text_sha256": "f492d1ca6889241709b94b3d0d40b8ad6b3a23b2e2564ce89f0289f44a41f25c",
+      "source_parent_text_sha256": "0f481fe3160edb0e7a6024d7a4aa5b1c0dca37328374871c87aa3dd9a4525d6a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SERVICE_PROGRAMME",
+      "missing_review_inputs": [
+        "eligibility_coverage_and_service_dose",
+        "delivery_actor_capacity_and_access",
+        "finance_duration_and_timeline",
+        "affected_group_and_service_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SERVICE_PROGRAMME_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0532-A01 (`Wir lassen niemanden zurück: Wir schaffen einfache Beschäftigungsangebote, um Menschen nach und nach aus der Langzeitarbeitslosigkeit zu holen, sowie modulare Qualifizierungsangebote, die einen praktikablen Einstieg in einen neuen Berufsweg bieten.`) is terminally not assessable after object-level review. Review class SERVICE_PROGRAMME leaves these minimum object-specific inputs unresolved: eligibility_coverage_and_service_dose, delivery_actor_capacity_and_access, finance_duration_and_timeline, affected_group_and_service_baseline, counterfactual_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p070:b003@85.04,211.60,512.80,288.28"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0532-A02",
+      "atom_id": "BE-VOLT-2026-SU-0532-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0532",
+      "pdf_page": 70,
+      "pdf_pages": [
+        70
+      ],
+      "source_locator": "p070:b003@85.04,211.60,512.80,288.28",
+      "source_excerpt": "Außerdem stärken wir gezielt junge Arbeitslose mit konkreten Chancen und Orientierungsangeboten.",
+      "source_sentence_normalized": "Außerdem stärken wir gezielt junge Arbeitslose mit konkreten Chancen und Orientierungsangeboten.",
+      "source_sentence_sha256": "15424fd1ef3cd0e6a76a30ad6d01f78884294ae5aa09538b408ea40319a38ffb",
+      "policy_action": "Außerdem stärken wir gezielt junge Arbeitslose mit konkreten Chancen und Orientierungsangeboten.",
+      "policy_action_sha256": "15424fd1ef3cd0e6a76a30ad6d01f78884294ae5aa09538b408ea40319a38ffb",
+      "source_text_sha256": "15424fd1ef3cd0e6a76a30ad6d01f78884294ae5aa09538b408ea40319a38ffb",
+      "source_parent_text_sha256": "0f481fe3160edb0e7a6024d7a4aa5b1c0dca37328374871c87aa3dd9a4525d6a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0532-A02 (`Außerdem stärken wir gezielt junge Arbeitslose mit konkreten Chancen und Orientierungsangeboten.`) is terminally not assessable after object-level review. Review class CLIMATE_ENERGY_ENVIRONMENT leaves these minimum object-specific inputs unresolved: physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p070:b003@85.04,211.60,512.80,288.28"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0534-A01",
+      "atom_id": "BE-VOLT-2026-SU-0534-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0534",
+      "pdf_page": 70,
+      "pdf_pages": [
+        70
+      ],
+      "source_locator": "p070:b005@85.04,331.06,512.81,391.74",
+      "source_excerpt": "Wir fördern Stellen für Langzeitarbeitslose dort, wo echter Bedarf besteht: in der sozialen Infrastruktur, im Quartiersmanagement, in Grünpflege und lokalen Dienstleistungen.",
+      "source_sentence_normalized": "Wir fördern Stellen für Langzeitarbeitslose dort, wo echter Bedarf besteht: in der sozialen Infrastruktur, im Quartiersmanagement, in Grünpflege und lokalen Dienstleistungen.",
+      "source_sentence_sha256": "9db7e2b3211ba792554f9f80c2cf284ff6ae47129fe11a47d1024b426a873a43",
+      "policy_action": "Wir fördern Stellen für Langzeitarbeitslose dort, wo echter Bedarf besteht: in der sozialen Infrastruktur, im Quartiersmanagement, in Grünpflege und lokalen Dienstleistungen.",
+      "policy_action_sha256": "9db7e2b3211ba792554f9f80c2cf284ff6ae47129fe11a47d1024b426a873a43",
+      "source_text_sha256": "9db7e2b3211ba792554f9f80c2cf284ff6ae47129fe11a47d1024b426a873a43",
+      "source_parent_text_sha256": "e0f910d96fb495a2b28e832778771e07908c1f7d40cf246044e327c94b45a955",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "HEALTH_CARE",
+      "missing_review_inputs": [
+        "eligible_population_and_service_scope",
+        "workforce_capacity_and_delivery_actor",
+        "financing_and_timeline",
+        "care_access_or_health_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "HEALTH_CARE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0534-A01 (`Wir fördern Stellen für Langzeitarbeitslose dort, wo echter Bedarf besteht: in der sozialen Infrastruktur, im Quartiersmanagement, in Grünpflege und lokalen Dienstleistungen.`) is terminally not assessable after object-level review. Review class HEALTH_CARE leaves these minimum object-specific inputs unresolved: eligible_population_and_service_scope, workforce_capacity_and_delivery_actor, financing_and_timeline, care_access_or_health_baseline, counterfactual_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p070:b005@85.04,331.06,512.81,391.74"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0534-A02",
+      "atom_id": "BE-VOLT-2026-SU-0534-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0534",
+      "pdf_page": 70,
+      "pdf_pages": [
+        70
+      ],
+      "source_locator": "p070:b005@85.04,331.06,512.81,391.74",
+      "source_excerpt": "Dafür schöpfen wir die verfügbaren Mittel des Sozialen Arbeitsmarkts (§16i SGB II) vollständig aus und ergänzen sie gezielt durch Landesmittel.",
+      "source_sentence_normalized": "Dafür schöpfen wir die verfügbaren Mittel des Sozialen Arbeitsmarkts (§16i SGB II) vollständig aus und ergänzen sie gezielt durch Landesmittel.",
+      "source_sentence_sha256": "8825a836fcacbbc8a9ff9287b46ed312d9fb0c6d441a9a806f17856f0a98b1f6",
+      "policy_action": "Dafür schöpfen wir die verfügbaren Mittel des Sozialen Arbeitsmarkts (§16i SGB II) vollständig aus und ergänzen sie gezielt durch Landesmittel.",
+      "policy_action_sha256": "8825a836fcacbbc8a9ff9287b46ed312d9fb0c6d441a9a806f17856f0a98b1f6",
+      "source_text_sha256": "8825a836fcacbbc8a9ff9287b46ed312d9fb0c6d441a9a806f17856f0a98b1f6",
+      "source_parent_text_sha256": "e0f910d96fb495a2b28e832778771e07908c1f7d40cf246044e327c94b45a955",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0534-A02 (`Dafür schöpfen wir die verfügbaren Mittel des Sozialen Arbeitsmarkts (§16i SGB II) vollständig aus und ergänzen sie gezielt durch Landesmittel.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p070:b005@85.04,331.06,512.81,391.74"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0538-A01",
+      "atom_id": "BE-VOLT-2026-SU-0538-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0538",
+      "pdf_page": 70,
+      "pdf_pages": [
+        70
+      ],
+      "source_locator": "p070:b009@85.04,552.89,512.82,693.59",
+      "source_excerpt": "Wir fördern modulare Teilqualifikationen, die sich an individuellen Lebenssituationen orientieren und schrittweise zu einem anerkannten Abschluss führen.",
+      "source_sentence_normalized": "Wir fördern modulare Teilqualifikationen, die sich an individuellen Lebenssituationen orientieren und schrittweise zu einem anerkannten Abschluss führen.",
+      "source_sentence_sha256": "1f595f58c8f12c26de7451f3d15b3dd781cc7b7a8aff6b9a698a756a80a4539b",
+      "policy_action": "Wir fördern modulare Teilqualifikationen, die sich an individuellen Lebenssituationen orientieren und schrittweise zu einem anerkannten Abschluss führen.",
+      "policy_action_sha256": "1f595f58c8f12c26de7451f3d15b3dd781cc7b7a8aff6b9a698a756a80a4539b",
+      "source_text_sha256": "1f595f58c8f12c26de7451f3d15b3dd781cc7b7a8aff6b9a698a756a80a4539b",
+      "source_parent_text_sha256": "6e5525649cf22e5145f15ea0ab938bcd7496dc705ff4665ee40fe0d6d7a00d9a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0538-A01 (`Wir fördern modulare Teilqualifikationen, die sich an individuellen Lebenssituationen orientieren und schrittweise zu einem anerkannten Abschluss führen.`) is terminally not assessable after object-level review. Review class CLIMATE_ENERGY_ENVIRONMENT leaves these minimum object-specific inputs unresolved: physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p070:b009@85.04,552.89,512.82,693.59"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0538-A02",
+      "atom_id": "BE-VOLT-2026-SU-0538-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0538",
+      "pdf_page": 70,
+      "pdf_pages": [
+        70
+      ],
+      "source_locator": "p070:b009@85.04,552.89,512.82,693.59",
+      "source_excerpt": "Wir setzen uns dafür ein, dass Jobcenter das Instrument MY·TQ aktiv einsetzen und bewerben – auch in der Variante „TQplus“ mit integriertem Sprachtraining für Menschen mit Migrationshintergrund.",
+      "source_sentence_normalized": "Wir setzen uns dafür ein, dass Jobcenter das Instrument MY·TQ aktiv einsetzen und bewerben – auch in der Variante „TQplus“ mit integriertem Sprachtraining für Menschen mit Migrationshintergrund.",
+      "source_sentence_sha256": "e33db0359faaefad470d9920fc15f14abde56f850e994834494b510878b836bd",
+      "policy_action": "Wir setzen uns dafür ein, dass Jobcenter das Instrument MY·TQ aktiv einsetzen und bewerben – auch in der Variante „TQplus“ mit integriertem Sprachtraining für Menschen mit Migrationshintergrund.",
+      "policy_action_sha256": "e33db0359faaefad470d9920fc15f14abde56f850e994834494b510878b836bd",
+      "source_text_sha256": "e33db0359faaefad470d9920fc15f14abde56f850e994834494b510878b836bd",
+      "source_parent_text_sha256": "6e5525649cf22e5145f15ea0ab938bcd7496dc705ff4665ee40fe0d6d7a00d9a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "MIGRATION_INTEGRATION",
+      "missing_review_inputs": [
+        "legal_status_group_and_eligibility",
+        "land_federal_or_eu_competence_route",
+        "service_enforcement_or_admission_capacity",
+        "rights_and_distribution_safeguards",
+        "integration_or_procedure_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "MIGRATION_INTEGRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0538-A02 (`Wir setzen uns dafür ein, dass Jobcenter das Instrument MY·TQ aktiv einsetzen und bewerben – auch in der Variante „TQplus“ mit integriertem Sprachtraining für Menschen mit Migrationshintergrund.`) is terminally not assessable after object-level review. Review class MIGRATION_INTEGRATION leaves these minimum object-specific inputs unresolved: legal_status_group_and_eligibility, land_federal_or_eu_competence_route, service_enforcement_or_admission_capacity, rights_and_distribution_safeguards, integration_or_procedure_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p070:b009@85.04,552.89,512.82,693.59"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0540-A01",
+      "atom_id": "BE-VOLT-2026-SU-0540-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0540",
+      "pdf_page": 71,
+      "pdf_pages": [
+        71
+      ],
+      "source_locator": "p071:b002@85.04,121.16,512.82,277.87",
+      "source_excerpt": "Wir fördern Berliner Trägerschaften, die nach dem Vorbild des Münchner Vereins Joblinge arbeiten und sechsmonatige Programme, Coaching, Praxiserfahrung in Betrieben und persönliches Mentoring verbinden.",
+      "source_sentence_normalized": "Wir fördern Berliner Trägerschaften, die nach dem Vorbild des Münchner Vereins Joblinge arbeiten und sechsmonatige Programme, Coaching, Praxiserfahrung in Betrieben und persönliches Mentoring verbinden.",
+      "source_sentence_sha256": "386d9867230f1901df5d4fb4cb97d5c3ac54eb95357286b3fe1ac5fdb4094062",
+      "policy_action": "Wir fördern Berliner Trägerschaften, die nach dem Vorbild des Münchner Vereins Joblinge arbeiten und sechsmonatige Programme, Coaching, Praxiserfahrung in Betrieben und persönliches Mentoring verbinden.",
+      "policy_action_sha256": "386d9867230f1901df5d4fb4cb97d5c3ac54eb95357286b3fe1ac5fdb4094062",
+      "source_text_sha256": "386d9867230f1901df5d4fb4cb97d5c3ac54eb95357286b3fe1ac5fdb4094062",
+      "source_parent_text_sha256": "8cfaff7bc02b566a379a2226df5722f4e9de7fa72d910ef5222d1bc76184455a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SERVICE_PROGRAMME",
+      "missing_review_inputs": [
+        "eligibility_coverage_and_service_dose",
+        "delivery_actor_capacity_and_access",
+        "finance_duration_and_timeline",
+        "affected_group_and_service_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SERVICE_PROGRAMME_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0540-A01 (`Wir fördern Berliner Trägerschaften, die nach dem Vorbild des Münchner Vereins Joblinge arbeiten und sechsmonatige Programme, Coaching, Praxiserfahrung in Betrieben und persönliches Mentoring verbinden.`) is terminally not assessable after object-level review. Review class SERVICE_PROGRAMME leaves these minimum object-specific inputs unresolved: eligibility_coverage_and_service_dose, delivery_actor_capacity_and_access, finance_duration_and_timeline, affected_group_and_service_baseline, counterfactual_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p071:b002@85.04,121.16,512.82,277.87"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0540-A02",
+      "atom_id": "BE-VOLT-2026-SU-0540-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0540",
+      "pdf_page": 71,
+      "pdf_pages": [
+        71
+      ],
+      "source_locator": "p071:b002@85.04,121.16,512.82,277.87",
+      "source_excerpt": "Wir ergänzen das Programm für junge Geflüchtete und Menschen mit Migrationshintergrund mit berufsbezogener Sprachförderung, analog zum Joblinge-„Kompass“-Ansatz.",
+      "source_sentence_normalized": "Wir ergänzen das Programm für junge Geflüchtete und Menschen mit Migrationshintergrund mit berufsbezogener Sprachförderung, analog zum Joblinge-„Kompass“-Ansatz.",
+      "source_sentence_sha256": "922b8ff9e643396d7e25f770ff3f6285a70641eb865b9cb4ff636c049321e082",
+      "policy_action": "Wir ergänzen das Programm für junge Geflüchtete und Menschen mit Migrationshintergrund mit berufsbezogener Sprachförderung, analog zum Joblinge-„Kompass“-Ansatz.",
+      "policy_action_sha256": "922b8ff9e643396d7e25f770ff3f6285a70641eb865b9cb4ff636c049321e082",
+      "source_text_sha256": "922b8ff9e643396d7e25f770ff3f6285a70641eb865b9cb4ff636c049321e082",
+      "source_parent_text_sha256": "8cfaff7bc02b566a379a2226df5722f4e9de7fa72d910ef5222d1bc76184455a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "MIGRATION_INTEGRATION",
+      "missing_review_inputs": [
+        "legal_status_group_and_eligibility",
+        "land_federal_or_eu_competence_route",
+        "service_enforcement_or_admission_capacity",
+        "rights_and_distribution_safeguards",
+        "integration_or_procedure_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "MIGRATION_INTEGRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0540-A02 (`Wir ergänzen das Programm für junge Geflüchtete und Menschen mit Migrationshintergrund mit berufsbezogener Sprachförderung, analog zum Joblinge-„Kompass“-Ansatz.`) is terminally not assessable after object-level review. Review class MIGRATION_INTEGRATION leaves these minimum object-specific inputs unresolved: legal_status_group_and_eligibility, land_federal_or_eu_competence_route, service_enforcement_or_admission_capacity, rights_and_distribution_safeguards, integration_or_procedure_baseline_and_counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p071:b002@85.04,121.16,512.82,277.87"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0540-A03",
+      "atom_id": "BE-VOLT-2026-SU-0540-A03",
+      "source_unit_id": "BE-VOLT-2026-SU-0540",
+      "pdf_page": 71,
+      "pdf_pages": [
+        71
+      ],
+      "source_locator": "p071:b002@85.04,121.16,512.82,277.87",
+      "source_excerpt": "Wir schaffen eine Berliner Ausbildungsgarantie nach Wiener Vorbild: Wer keinen betrieblichen Ausbildungsplatz findet, fällt so nicht durchs Raster, sondern bekommt einen garantierten Platz in einer überbetrieblichen Lehrwerkstatt.",
+      "source_sentence_normalized": "Wir schaffen eine Berliner Ausbildungsgarantie nach Wiener Vorbild: Wer keinen betrieblichen Ausbildungsplatz findet, fällt so nicht durchs Raster, sondern bekommt einen garantierten Platz in einer überbetrieblichen Lehrwerkstatt.",
+      "source_sentence_sha256": "558efd9df93b3966f803fc3461ac991706cbcadeab53ffcf656f99c5e0d16c06",
+      "policy_action": "Wir schaffen eine Berliner Ausbildungsgarantie nach Wiener Vorbild: Wer keinen betrieblichen Ausbildungsplatz findet, fällt so nicht durchs Raster, sondern bekommt einen garantierten Platz in einer überbetrieblichen Lehrwerkstatt.",
+      "policy_action_sha256": "558efd9df93b3966f803fc3461ac991706cbcadeab53ffcf656f99c5e0d16c06",
+      "source_text_sha256": "558efd9df93b3966f803fc3461ac991706cbcadeab53ffcf656f99c5e0d16c06",
+      "source_parent_text_sha256": "8cfaff7bc02b566a379a2226df5722f4e9de7fa72d910ef5222d1bc76184455a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0540-A03 (`Wir schaffen eine Berliner Ausbildungsgarantie nach Wiener Vorbild: Wer keinen betrieblichen Ausbildungsplatz findet, fällt so nicht durchs Raster, sondern bekommt einen garantierten Platz in einer überbetrieblichen Lehrwerkstatt.`) is terminally not assessable after object-level review. Review class EDUCATION_CHILDREN_YOUTH leaves these minimum object-specific inputs unresolved: target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p071:b002@85.04,121.16,512.82,277.87"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "WOEK-BE-GRUENE-2026-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "shared_residual_path": "data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
+    "party": "BÜNDNIS 90/DIE GRÜNEN",
+    "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+    "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2"
+  },
+  "input": {
+    "ledger_manifest_path": "data/state-programmes/fach-reviews/berlin-2026-gruene-v1/manifest.json",
+    "ledger_id": "WOEK-BE-GRUENE-2026-FULL-PROGRAMME-REVIEW-V1",
+    "logical_descriptor_sha256": "b1e15d8a65cdeb099abdf28bc47ecbdf14e3bdc1bfea59eb9a75bc78979f98b8"
+  },
+  "precondition": {
+    "source_register_path": "data/state-programmes/current-source-registers/berlin-2026-v2.json",
+    "source_register_sha256": "29f088e153613129cedaba91f4e6eb2da0f9554f8a0961a065a849328eadc36c",
+    "expected_page_count": 256,
+    "require_ledger_validation_pass": true
+  },
+  "overlay": {
+    "source_object_review_status": "SOURCE_OBJECT_REVIEW_COMPLETE",
+    "programme_analysis_complete": true,
+    "programme_terminal_basis": "ALL_EFFECT_ATOMS_TERMINATED_OR_CONTEXT_REVIEWED_UNDER_DELEGATED_PROTOCOL",
+    "reviewed_page_count": 256,
+    "source_unit_count": 354,
+    "effect_atom_count": 4119,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 4119,
+    "genuine_fach_review_required_count": 0,
+    "explicit_fach_available_for_public_effect_projection": false,
+    "effect_credit_allowed": false,
+    "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL"
+  },
+  "apply_contract": {
+    "match_keys": [
+      "party",
+      "artifact_id",
+      "artifact_sha256"
+    ],
+    "preserve_all_other_programmes": true,
+    "remove_only_exact_matching_gruene_page_envelopes_after_validation": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "consumer_must_preserve_existing_explicit_fach": true,
+    "consumer_must_not_materialize_missing_fach_fields": true
+  },
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "materiality_synthesized": false,
+    "dns_mapping_synthesized": false,
+    "recommendation_synthesized": false,
+    "party_score_created": false,
+    "vercel_build_triggered": false
+  },
+  "descriptor_sha256": "0e358c9a3084fd03909e99666a70e501531ecebcb4b6d8239b4e9ddf34ca1fdd"
+}

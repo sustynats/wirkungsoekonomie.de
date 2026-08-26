@@ -1,0 +1,2757 @@
+{
+  "format": "SHARDED_JSON_LEDGER_V1",
+  "ledger_metadata": {
+    "schema_version": "1.0.0",
+    "ledger_id": "WOEK-BE-GRUENE-2026-FULL-PROGRAMME-REVIEW-V1",
+    "jurisdiction": "berlin",
+    "election": "agh-2026-be",
+    "party": "BÜNDNIS 90/DIE GRÜNEN",
+    "artifact": {
+      "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+      "title": "Politik ändern. Berlin bleiben. Wahlprogramm zur Abgeordnetenhauswahl 2026",
+      "url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf",
+      "sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+      "byte_length": 2212991,
+      "page_count": 256,
+      "media_type": "application/pdf",
+      "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+      "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME"
+    },
+    "source_register": {
+      "path": "data/state-programmes/current-source-registers/berlin-2026-v2.json",
+      "sha256": "29f088e153613129cedaba91f4e6eb2da0f9554f8a0961a065a849328eadc36c",
+      "base_main_commit": "76e885da27574b1c1d8cd3cbcf6cf6083bceee63"
+    },
+    "provenance": {
+      "provenance_id": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    "review_inventory": [
+      {
+        "source": "GitHub issue #240 latest residual controller and linked completed work",
+        "result": "NO_EXACT_SOURCE_BOUND_GRUENE_FINAL_PDF_ATOMIC_FACH_RECORD"
+      },
+      {
+        "source": "data/states/berlin/approved-review-2026-08-18.md",
+        "sha256": "6a7c7eb890b57f7b2d5b3ce0d461468d79febb7397e2930a28217f42374ed9f2",
+        "result": "SIX_THEME_NON_EXHAUSTIVE_REVIEW_NOT_BYTE_EXACT_OBJECT_BOUND"
+      },
+      {
+        "source": "data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
+        "sha256": "ac531ff8f32d0256acbb62dc92a16c225a05c3f929c497089b69938d8a04e8c1",
+        "result": "256_PAGE_ENVELOPE_RESIDUAL_ONLY_NO_EXPLICIT_GRUENE_ATOMIC_FACH"
+      }
+    ],
+    "zero_approval_basis": "Every available approved Berlin stock record was inventoried. None binds the complete required Fach field set to an exact atom in this byte-exact 256-page GRUENE artifact. No EXPLICIT_FACH_APPROVED record is therefore reused or created; this is an exact stock-inventory result, not a party-, keyword- or missing-evidence-only downgrade rule.",
+    "segmentation_contract": {
+      "extractor": "Poppler pdftotext -layout, exact physical-page isolation and deterministic line-break dehyphenation",
+      "page_order": "PDF physical page order 1..256",
+      "source_unit_rule": "Exact running-header/footer removal; blank-line paragraph boundaries; cross-page continuation only where prior programme text lacks terminal punctuation and the next physical page starts without a heading/list marker.",
+      "atom_rule": "Every non-structural programme source unit is preserved whole; terminal-punctuation/semicolon claims, explicit new-subject coordinations and coordinated independent action verbs receive separate source-bound atom IDs (0..n atoms per source unit).",
+      "classification_rule": "Cover, title, contents, chapter dividers, structural headings, blank/imprint/back-cover objects are terminal NON_EFFECT_CONTEXT; all other programme wording, including every dark-green Zukunftsprojekte box, is conservatively EFFECT_BEARING and atomized without assigning impact direction.",
+      "excerpt_rule": "Whitespace-normalized exact PDF text-layer excerpt, maximum 280 Unicode code points; full source identities pinned by SHA-256.",
+      "visual_review": "ALL_256_PHYSICAL_PAGES_RENDERED_WITH_POPPLER_AND_REVIEWED_IN_22_CONTACT_SHEETS; DARK_GREEN_ZUKUNFTSPROJEKTE_BOXES, CHAPTER_DIVIDERS, BLANK_LAYOUT_PAGE_254, IMPRINT, FOOTERS AND CROSS_PAGE_CONTINUATIONS_INCLUDED."
+    },
+    "field_policy": {
+      "reviewed_not_assessable": "Every RNAA atom carries an object-quoted exact reason, review class and finite missing-input list. Unsupported Fach fields are absent and MUST NOT be synthesized.",
+      "missing_evidence_is_neutral": false,
+      "programme_claim_is_outcome_evidence": false,
+      "party_wide_judgement_available": false
+    },
+    "constraints": {
+      "impact_direction_synthesized": false,
+      "evidence_level_synthesized": false,
+      "problem_review_synthesized": false,
+      "goal_review_synthesized": false,
+      "dns_mapping_synthesized": false,
+      "sdg_mapping_synthesized": false,
+      "recommendation_synthesized": false,
+      "party_score_created": false,
+      "vercel_build_triggered": false
+    },
+    "review_class_requirements": {
+      "EXTERNAL_COMPETENCE_ADVOCACY": [
+        "requested_external_instrument",
+        "competent_decision_maker_and_legal_route",
+        "adoption_and_implementation_path",
+        "operational_affected_group_or_system",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "LEGAL_REGULATORY_ENFORCEMENT": [
+        "exact_legal_or_regulatory_change",
+        "competence_and_higher_law_boundary",
+        "regulated_entities_exemptions_and_safeguards",
+        "enforcement_and_delivery_design",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "TAX_FEE_PRICE_INSTRUMENT": [
+        "tax_fee_or_price_base_rate_and_exemptions",
+        "competence_and_legal_basis",
+        "incidence_and_distribution_scope",
+        "revenue_use_or_financing_interaction",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "PUBLIC_FINANCE_FUNDING": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "HOUSING_LAND_USE": [
+        "units_tenure_price_location_and_timing",
+        "planning_approval_and_competence_route",
+        "capital_and_operating_finance",
+        "eligible_or_affected_households",
+        "housing_market_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "TRANSPORT_MOBILITY": [
+        "network_or_service_scope_quantity_and_timing",
+        "capital_operating_finance_and_delivery_capacity",
+        "affected_users_and_accessibility",
+        "demand_safety_and_emissions_baseline",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "CLIMATE_ENERGY_ENVIRONMENT": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "HEALTH_CARE": [
+        "eligible_population_and_service_scope",
+        "workforce_capacity_and_delivery_actor",
+        "financing_and_timeline",
+        "care_access_or_health_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "EDUCATION_CHILDREN_YOUTH": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "SECURITY_JUSTICE": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "MIGRATION_INTEGRATION": [
+        "legal_status_group_and_eligibility",
+        "land_federal_or_eu_competence_route",
+        "service_enforcement_or_admission_capacity",
+        "rights_and_distribution_safeguards",
+        "integration_or_procedure_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "EQUALITY_ANTIDISCRIMINATION": [
+        "protected_or_affected_group_scope",
+        "exact_instrument_and_enforcement_path",
+        "competence_rights_and_due_process_boundary",
+        "implementation_capacity_and_timeline",
+        "discrimination_participation_or_pay_baseline",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "DIGITAL_DATA_AI": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "STAFFING_WORKFORCE": [
+        "role_fte_qualification_and_allocation",
+        "recruitment_and_retention_feasibility",
+        "recurring_finance_and_timeline",
+        "service_or_workforce_baseline",
+        "affected_users_or_workers_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "INFRASTRUCTURE_CAPACITY": [
+        "asset_scope_location_quantity_and_timing",
+        "capital_operating_finance_and_additionality",
+        "planning_procurement_and_delivery_capacity",
+        "affected_users_or_system",
+        "capacity_condition_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "SERVICE_PROGRAMME": [
+        "eligibility_coverage_and_service_dose",
+        "delivery_actor_capacity_and_access",
+        "finance_duration_and_timeline",
+        "affected_group_and_service_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "CULTURE_SPORT_EVENT": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "GOVERNANCE_PROCESS": [
+        "defined_decision_output_and_trigger",
+        "responsible_actor_and_competence",
+        "implementation_timeline_and_resources",
+        "operational_affected_system",
+        "process_performance_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "TARGET_OR_ASPIRATION": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "GENERAL_POLICY_INSTRUMENT": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ]
+    },
+    "pages": [
+      {
+        "pdf_page": 1,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "6007896977750c2b824244d226aea44409ca328641369cf8bd5fedf52765181a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 2,
+        "visual_reviewed": true,
+        "source_unit_count": 0,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "page_status": "VISUAL_NON_EFFECT_OR_BLANK_PAGE_REVIEWED"
+      },
+      {
+        "pdf_page": 3,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "faf19d44aa4e2157b5c8b021017307a401d4140fc878cd11331a64be836879fc",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 4,
+        "visual_reviewed": true,
+        "source_unit_count": 6,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "bbeb2cdeaca765b48113401835ce8ae6e88cf125dc2ac88285b967ea1d9246ba",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 5,
+        "visual_reviewed": true,
+        "source_unit_count": 5,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "d0bded8b4d99e15b5a697dfd4144f2c3cc8d39bb8153cfea1fcda84ad66303e3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 6,
+        "visual_reviewed": true,
+        "source_unit_count": 0,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "page_status": "VISUAL_NON_EFFECT_OR_BLANK_PAGE_REVIEWED"
+      },
+      {
+        "pdf_page": 7,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 8,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "cbc252cec5c8d9954bacee9b59bdb3c51e1a344b9a8948ab2a87002af27eb355",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 9,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "22c0acae3e41058d7bbf6a71ee95a9fd528956eb1d41a8cbe6bd1c93ecc95765",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 10,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "e37ecce6bc64551172f4dbe622756700eebe6412dda19941cee1bda2b8cd8e2d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 11,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "b75b4d5db61f25cc4579ad67c94d57d216f5a36f5db4258c4702f7636d366f47",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 12,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "fcdf1dbcaa9452a83e66a1518fea6b7f9726e857f6422ac84fe8c7436934a25a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 13,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "bce91e79feb9b30766a799d9c60d2bec985037c562014ad797ecac933b6e9a7c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 14,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "59234a8970d52981c3fca623433a304ef21b50f82a5457f0fdf2a1827a4e08c3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 15,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 17,
+        "normalized_page_sha256": "2409241cea09f9c33bb00b9eb3b2488ef73e777cf33741eed0bbbf9de7f36269",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 16,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "18559ba53f3b6f0e930429a1f20601e356a9e98c4866538f4f98df0ed7b250fa",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 17,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "a079a3a513b5acfc197c86ef2553b2cf467afec5f48b3f1ba760c2590fdf31c9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 18,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "bd4bad55c73815f3c477322a2288c505aafefe6ae4f139c8babde6262329be6a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 19,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 17,
+        "normalized_page_sha256": "41920ca11aa0dac3d29d15104d15e15ca5bbe3e9e0f8887dc9d0d25020b9a85c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 20,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 48,
+        "normalized_page_sha256": "9c438143e4de10bab1780b2d568096029a8790ed2fa43d395b0eb8ea47556788",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 21,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "f0fa4997b0e306712629ced05f114356760f332c685ef62bf53b310ef99787b4",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 22,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "ad036b26f2a21f0f74f4ba5df1c733218fc56e68860254cd981f0584fe981b69",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 23,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "e9950c3b5d9fd1184e01b3dd16963a8449e65fb1760f3fc712d8065468a07d27",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 24,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 48,
+        "normalized_page_sha256": "aa95e70c924c15866708c7eb8b22fc9c27c144c6e70a1192888d14ced5f254ab",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 25,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "4d8819d87706de6bb6ddf8a4aac18aa0b7626f1f1a92723a4a9e06562e3331e7",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 26,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "9f156fe3adea1d10c0b4a8cbc6e15a5ae4f828e512bc16fe80a5fbb8a8e7e5fd",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 27,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 34,
+        "normalized_page_sha256": "2bf5ecd6115e96081f873de942d65e54c9bcded09b783772022cec96839a7b01",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 28,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 36,
+        "normalized_page_sha256": "0668331d646f7fcc73ab28ef00e44e593e6eb19a88713f549a0a24989267b04b",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 29,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "00a88518be16a0c70d2b846494cd15b7371bb99e0d2c15b2cb617b386de0917d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 30,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "40e55596aff0044a86e9dbc34cc9ad615658eb9a6c7c30e730ee59a8af4eebed",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 31,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "3074ea9b4aaabeee4b2671e6c829e9332f09386afaa7d336e8a19c09be1e4aae",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 32,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "f6f841f06bcc77ddabd62d895ef8c40cce969f0e0b6645c53d57e58d8932788d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 33,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "4b83763c827cd2b0a74c01aa2f0c169b00fb12dafd4be1f432069cea6a933688",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 34,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 28,
+        "normalized_page_sha256": "1d7f85ffb187d4aa436baf1066a436d72e569aeb2495cc1cd8ee0d9eb75ced1f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 35,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "a745e6eaa4340e729966637c847f91dbe0b94f6290d7d6798b54777d41e86383",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 36,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 47,
+        "normalized_page_sha256": "476a53d5ea3964629f3d3153d42ceaf02c614a893818fab676cd4145177debe2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 37,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 39,
+        "normalized_page_sha256": "53ecf6d22f4ea8fad020005243ab23587aa5c48a89e50da592cd778cba7407cf",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 38,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "bbf05f9380a29a705fa398eb33d87d833941776d8d72e786f6acb07bfbe963d5",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 39,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 40,
+        "normalized_page_sha256": "88ce5e2221a5aafe07fd6ddce1bf5d4e270bc91d7bfe831334dbc5886a587856",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 40,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 38,
+        "normalized_page_sha256": "37c4dea1438d9a3ba7da9770f782a5e76f622f026ab8f224a960b263849c8b28",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 41,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 9,
+        "normalized_page_sha256": "8d4c69e426f0b2888ff8d5739d5c1005e58be40c5733f4fb8ac5dc9cf00d74db",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 42,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "6fec5c495cf6f8ff3f7552b7eefd92ad3e57b4a79f09ad3324bfa9f84059ba3f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 43,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "721073725f5455c6e5d6763a0c0c2fa870e0f0bd3895f9bc5d60c09f42cd3c93",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 44,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "9ac4a32ddb9044f0760ff1d2326bb6fc78f2973382e13842c84456ea0ee34ae5",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 45,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "08b9ee5be9bedfcc850d0ee3a84a2784c0264077e877bd9d69e764ecb50642c7",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 46,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "6578d087122bb5cdb31b7255fb2f49d8ca75afdd8f9b38b1017a9021bc087082",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 47,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 34,
+        "normalized_page_sha256": "9cca6fbf7267786efb068a6af866822524d3e2ce46179385a315e18db88f792c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 48,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "70d5992a867d8ca23a96de8d738c60068e3a4f41af451262a8a350241c6cacb3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 49,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "14198bdb6768415623c391019ad56c38be452ed7595254b606c780eae4493bf3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 50,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "1c16c31ddc50eec9e5e05141903438058d5cc1e60528e1d010304820822f123f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 51,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "76b170a47ba57d19bd8f97f31b2b8bc0a04747815b8f7450455efaeb33af7d75",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 52,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 15,
+        "normalized_page_sha256": "a424e899d2df0d53a3f2e5d22bf4af92bc423e79eb293f44ea266d24498c44c3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 53,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "de8e0575dc127e392183176b3aedbd1b04e80c963038fb4016c81aad022bacc7",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 54,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "d92c3bd8a2250c2d51857278e3ba2283bb9d67423b7bc55f91ccffc781308c92",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 55,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "5aced2b457a89961ec11fd5fca61db118719d730f1a11a3b1f7f6c81159b7323",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 56,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 36,
+        "normalized_page_sha256": "0632ce81d61e432a4b5b0cdc1e1042270741580d1df08da8a72b5811611ae01c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 57,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 38,
+        "normalized_page_sha256": "6d68c655412b194682cec75034c64642a565dc64a55b40396655fc29c25bb248",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 58,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 35,
+        "normalized_page_sha256": "e81302f6d178484e68286457d32ae0091b230e54f91b836766a245b52842093e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 59,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 42,
+        "normalized_page_sha256": "181de375353fa58e48cbd83306cde177857b1f7ac83a6e44d6669120fcfe4162",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 60,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 28,
+        "normalized_page_sha256": "11293018f2470d720ab8beb75d7a8f5747486f20c11b09a04f73ef31477d9ea2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 61,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 43,
+        "normalized_page_sha256": "33bb13e60b7fc1cc7b2f0dc938c6bce640d2b8d16b98e0f01779553f1bddea6c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 62,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 40,
+        "normalized_page_sha256": "e4a0088c960e1476b31f17511e7002c0d5aa506eb651fa5d9a3e4f774ab32778",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 63,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 33,
+        "normalized_page_sha256": "609280594329509c37de315d96fba682cd7fc1d1732c1398d046d96f98bf68e9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 64,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 38,
+        "normalized_page_sha256": "8a9d6fe42b421e38c49a6e71f5ea8e3783647c829890bd1a5df4be13f7ae224e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 65,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 51,
+        "normalized_page_sha256": "2cefa0c1889ca36b17e139afda95bcde2e5bc1975337696ddc072ee344a9daad",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 66,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "f1e57ad07c112e856e3c3f2ef08ff08485bba06352c7b78beb646856e7d7e44f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 67,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "79c9eea808cf9def7edf53f109da0b4e61a6702746bc8824f7bd62f572ffff4a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 68,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "8cbc615bd23ad7d5f952783edd1459300eb17d0754f4500772b084c302d821e0",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 69,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "67d328eb42078a8c293e01167d8f7f592df410574e7b2492c380043b0b7171c3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 70,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "cfaf2ca8b647bda2a8f779c493090db27dbc9f0c8aa4a9c362742235e5edb036",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 71,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 34,
+        "normalized_page_sha256": "69f60734ba40e6bc08c8013c0aee2cd80b382d679c5d1d201c1de0221292a62d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 72,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "87ac21e4c47e10e490813452c24e10c6689eb684cffb1bff38ee3052b5016942",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 73,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 17,
+        "normalized_page_sha256": "4e5f77f0be6d16602f87b94602dfd03466ee61860510c453e27ed6d27704ae8e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 74,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "21b11aec9e3d502af8c853379872d8e4a68d5eb14c83a1a315aff94b370ef990",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 75,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "0e645b39944dc9278fe95dce4b2fa5de5aebffc28bc8fbf949a54eee2b5cc7ce",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 76,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 8,
+        "normalized_page_sha256": "bc9542ad759e1fcffb3514a603415ccad977df832cf691a137216407bcfe982f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 77,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 12,
+        "normalized_page_sha256": "3b785dd29dc7fedac87290528c5a339763cb318406705f0836bf259e73b1438a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 78,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "ba4f9174cab110e6366632d9b2208413209a84f09b4ddf79da8ec83c8f9ed6c8",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 79,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "53dfda900c64488e0b7d361eb929344405dccf282c5ff41f6ee7652a3f949c37",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 80,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 64,
+        "normalized_page_sha256": "ab427d316cc90cf38fbda578b0dac1225b9f3522541df8cf74c4a4ca3b54644f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 81,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 66,
+        "normalized_page_sha256": "f1958f8a8c6deed2bb313a2c3754681c47b7d63d6ee9301e89ec08b45f9e16a2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 82,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "ba99a8932d2af17ff1006241934f2e511a0f32b55fb4b2da52509b9701776c69",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 83,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 43,
+        "normalized_page_sha256": "41824366b5a7d607cd54ebec6f69af95dfcfc5d0a5f8f0a391964c800fccbdec",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 84,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 49,
+        "normalized_page_sha256": "64b48a1c5ce1aa06e90b40e52958971c767203ee61da2069b30e715304e13a41",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 85,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 46,
+        "normalized_page_sha256": "8e3741a2093d0b5231861a4682384cb126742a6657545ec71cb19540f5a9a62a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 86,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 68,
+        "normalized_page_sha256": "7ba7673b2f388fed45539b3960d0dc5fe435d805749e430a1df988e71ed50d76",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 87,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "46e7d4e81840e64266fc8cc86a834d799a3047ff054a357db3fb4ac458eeb355",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 88,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "4c37d162e161107fe90eda20a3542ec2079de07e865a558c4b0d9e9639e38f71",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 89,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "3287f53b4116a1dd24b259e04c92949cce7b2248b7db7d7c967471191b90e437",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 90,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 61,
+        "normalized_page_sha256": "788e639ce3c0f0ce81e14533d944987739c186598082a573acf39dfbf515351d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 91,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 33,
+        "normalized_page_sha256": "ae59d67d0ee83b8db77caf7e3561fd72dd1b6aa73f7de6737a68b71595def1c2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 92,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "61d78b0f78cb0c5b0ae2a6f6f6c374739766b0d87815140ddb180b849bc02cdf",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 93,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "7cff17ae8f7439de118fc33a37652c21221ff3a2abd1e952bcae2c74de151b0b",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 94,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 38,
+        "normalized_page_sha256": "57a0f56fa6c67160038109acf0459123b27c9e0f6a9a78f52c5316dd9a7ccf3e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 95,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 28,
+        "normalized_page_sha256": "15aeaf8b5dabcc123ee9d705a5a512eb6ff138e6251caa3a33131288f8d7c79e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 96,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "2c2fee8a572431e3455093605d899898025a8730c109b2f6bc087745c0affc73",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 97,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "1790128d5c561fbe450e7051749c556522ee52eef422e834eb5e993f5c53b465",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 98,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 45,
+        "normalized_page_sha256": "9e3da0165be1e441f4b848940169cc12240096fd24f57fa14f00a67a4bad0a95",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 99,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "8c674e2265ae38de4ed94cd22210da73f6be52620a96b67ab1aa3b3b682734d3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 100,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "958030bb71ca775b23cd8509370ef60e27badf08b473bb21633e426a2d873b13",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 101,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "d82292986aa5ac57e8773a56ed60a456447388d59debba69cd4312eaa5f6a3bd",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 102,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 38,
+        "normalized_page_sha256": "2e2b2d237f459b4a1289dcae93d43efd27276d2815fab25e418e1c90210d0179",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 103,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "c3d5a59dde61a47e0e34f29419b8720481471d2cc446a4aeabfb9a9303de29c6",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 104,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "f3b88d3e3d2d72b849ae5375a5de6ddbe2b97248f0e5dfd552ffb39c6860bab4",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 105,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 45,
+        "normalized_page_sha256": "2fe64aea700d13c36da2c15cf9bf0a39433a7cf4c82f108b605e9b4e6dfe8768",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 106,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 33,
+        "normalized_page_sha256": "304c6ed7d1c39ef5bfd84349f9a31cd2a820e1b8194cfc2d10b1f80911bba1c1",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 107,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "2f48b105e26a12ca850bfb0a037cf5bc06ebf08c9c0056edafeb4017650ea094",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 108,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 14,
+        "normalized_page_sha256": "e2e5d995c5f7025cb5ed88b5deb5b72ee08df895acc1e03c6fde4f45cf9148f6",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 109,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "4397e3916f6a984584ad7af24a6182b9e751d68083889f33408c5896249603f5",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 110,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 39,
+        "normalized_page_sha256": "d8cea9370f6741c469bcb6cb1b1f611c3f97a8fa634d4bb2a23cc19d6ad555df",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 111,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "d43415c8cd622c1f6b09f9b2c2800acff999777993ed54ac12cecc7661f9e7b2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 112,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 32,
+        "normalized_page_sha256": "9fa37612bff68e8ce7034c290d11dfff24ee3d108c72e0250dc9f9c1307a38c4",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 113,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "6d2b3cbde4e95e14bb79acb49b6369882dbcae5bede74b24688bba9acf315dd9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 114,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "3c5843e35f889069e1a845c9aab8d5e21760e33b24ab0749c94138977ee29e65",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 115,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 50,
+        "normalized_page_sha256": "7abf385cb9a1f09b5131d4263d0c9a67681cf11ab3a10b1db4c5405b3dbc7b46",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 116,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "8372902304f77bfdb8ead26818afd9cdbfcd1f71363bfb417d48d159241f8b74",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 117,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "9b8399725dfa3ef642bb17a0965acbcde6154effbb55c205e043c3d0b098417e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 118,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 28,
+        "normalized_page_sha256": "a52dd56af813ea11b00af33147208d7065ceb3d4af0d660798bbf3b82351681f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 119,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "6707147836f5dafa558d3d3e5c0ce4d273dca6a8d503e45b60923b90278f61f7",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 120,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "216c2378355c6e52b74fa7791f0d0da2010a7005cae059002101fdbd00a7eb3e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 121,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "a57ea7ea9de90569d83b4996c88831d4c529c1c559f0b8e222a46d4613d214da",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 122,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "fb09517969948c1d0ea2a6ac35ff8d8b839ab155300f74fe3cc7a25fb28d616e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 123,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 44,
+        "normalized_page_sha256": "27be5ee1d097d7b3f97ecdd8ff6b0849bcc5877a9b68110b3874a98546819430",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 124,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "a218dcea46adef731f7195285a921df77b77991ada5ee2fbb0a5b46dbea43899",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 125,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "6272f78bcb60f64d641fe55c19e3ff2c654ebfdaf9ad6e0fc69b3f886c214f57",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 126,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 14,
+        "normalized_page_sha256": "5f41c16a6594037d7cb4227dde253281d580757e02670a21da532dbf76c18593",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 127,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "2a450b8000dc0bf7ae9f297c1feaf67fa658be68cb550ee877fe1b0d333966eb",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 128,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "1927633e80d193b7cc714431eb3d27ea168df8b91f06de3eb29f04176d48fc7c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 129,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "c13117ead55d692bf222dc90ad6e1758018311b37f41c1d3e22d6c6fdbe31f37",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 130,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "8cd59097b8279cf4cea22bd33bb3d2ea8fc2af7da7b1abf9d8c1bd0211f2cceb",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 131,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 30,
+        "normalized_page_sha256": "f12854ad3da807e4ea26bc6f59dded13748a10fd495b2c2c9373070cb2578098",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 132,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 33,
+        "normalized_page_sha256": "4cbc23b423b51deffaf9cd1299cdacc596909d988cb6e5749607f5807668af2b",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 133,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "7c7b27bd50b834b83cf14bde91307e4108e3b11bab2d1a20e3921aa27f76cd4c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 134,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "d7275f41cb8cc45d351a1d957d3687f0a08ed8a75642930e7fb2f971c20cd4ee",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 135,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "6e889cd1573a90565bc50bb089623ada7e9ac080ad297bd1aeec3324d3b4d795",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 136,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "0478258bcc422c143b0bc1381b29963f473ace5f31f978d27b9b47eecf80c402",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 137,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "34b43e8832b6b65a1c05bcce509626886869395d8f6b6cec98863e45139b45df",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 138,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "6837406f59ab70ae4ee9e31584cea960b7e596f33cb81c212f996492c93f9c56",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 139,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 15,
+        "normalized_page_sha256": "26e625e8b50bb5aa00c0986aefbae45ef11f1329f3142fc0753c63880e199b8a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 140,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "861d7eedce282512feaae52ec350586f3e211830cdcdee020891be71e5f37741",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 141,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "449aaeb9d5311d070f63d7ccfd271f5a12d77acd5843d3144a214ec5245314d1",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 142,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 15,
+        "normalized_page_sha256": "001fdf60cf7f03d2a9e6d1f6882358faafd0ec5f75a4a0fb6f1a4fb8711ed16f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 143,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 30,
+        "normalized_page_sha256": "4dcf87bfe6549f6471d3a6b4d662872b9512320a449c5688c13e82ad49e9d9bf",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 144,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "81b19c81fa0ba3eb7de07e4b886d4f76b8872d516ed6c121649ec185564e9c76",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 145,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "02618d8aa870a059b1b3279ffeb8d43af8cca96803cd2bfcbbb18cbdf63293af",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 146,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 39,
+        "normalized_page_sha256": "05183065ae14d674242c2039a0ad70f3be28abd858787d7a97c64d44cf923174",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 147,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "8c21bdc09a13848decaaebc43b24a044f72d1241ea1dc0f5e74cfebe61ae0380",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 148,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 38,
+        "normalized_page_sha256": "58bb8f711983618bf8faccd4e1810bea6f1884cefe008fc5fef8e758fde7d8d3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 149,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "8339832fa3cbdc4f245105963f2bd86072d04b442c0ccd4442acf157cd44eb4d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 150,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 38,
+        "normalized_page_sha256": "4629f40cdd32fe44fded762bbc8483f45309253de3c063b268779e402c4620f7",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 151,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "5c052a4dfd4e49779a93531f906754f9d66a3bc8120fad65a682ba36a92f9353",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 152,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 30,
+        "normalized_page_sha256": "5a49d22811f253fd4a5f9b5ba4ce002c1221fad15f70c2b48ee6ad5a21f80c0c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 153,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "ed773001989b7968303567e8bb5d15c510528e4f088c9406e5e519a978f3e3ef",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 154,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "8e17e771ed0fee7699552db7fba7741f47bc4a370f588d347a396f597b7ae11d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 155,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "632df630e6decff140dc697c43d656612d407bb4d646fc76935b16bc8e2fcf95",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 156,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "bba74ed6a646b7101e172675dc11a01857621e6909693606b3487032383c1bf2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 157,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "aa98a8037b74658c99e7db89bfdd73c736215088356990d095cc04e231a7b42c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 158,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "636191026f62f1dff983a18260b0f2397f9ed85033f7804a6561920635ef2691",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 159,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "d2f6f9961f75ffd9d91f022abb5cf32ef5ce52101e42528bb426db10386ea227",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 160,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 32,
+        "normalized_page_sha256": "9ab6a6804a94debe50034129c0094bedb8f93af050dce701198be29e2394ad90",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 161,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "f152e6bd4478b82e1612ae155ba1aba791d13e0477b0ed9b0aa9cfdb50e5ac6f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 162,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "96036b6b2b0472fbc810d5d30d70dd73cdd177b10a68368fc2d1340d63d31e8d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 163,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 14,
+        "normalized_page_sha256": "af9f45f6e35040bfe02a9a286c7fdeb9e82b7023b6de783bc7ec33d40d2427ab",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 164,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "51c572c4494ee649115ac173aae64d104d773e3eaa045b1d5ce4734483641b5b",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 165,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "56d0b75da88fe22e922296fc28325a564a9990955e975f2d7ff3dd25c3a9cfa2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 166,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 15,
+        "normalized_page_sha256": "2c941ec730e844704b61fcac1d81df25c0b72d5dd1555a0c752b5742e4e76124",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 167,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "add3bb165a61f025aeef3834002379b209a961400e1477fb3e6757ba8e6ab73b",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 168,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "f21883316e7fd634bc52d43ee8bbe327110577b53a6da81b19b3203bc956a266",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 169,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 30,
+        "normalized_page_sha256": "ba423813dff03aed00872ebb0f539e4339ea2c5adda31a75d8cefd69b2c8b2f9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 170,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 28,
+        "normalized_page_sha256": "4e7eef3259150b931ffca53860c36f1d346a1b7b05a42c9dde9780e9f44dabd9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 171,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "bea3baecd306a5294a2f11b52c285885ea5b5f8419a0c73d5790ae198392be95",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 172,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "bf96826ab630492fa9d63d7afb33d37e5f0b09343a0aa12377f1543d3278ece3",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 173,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 14,
+        "normalized_page_sha256": "d507910c220376821da196899d73158f7c6a7d638c615fd70df78529e9d0a14e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 174,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "f5aaf35816872d76355c90bd41f94bb262fa81bcdbfa0749ded9ab60f39a66d9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 175,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 5,
+        "normalized_page_sha256": "3a41189b98b7af5ee937c435d5ef97d8f15bce8c1e23da06032c52552b5ccef6",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 176,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 9,
+        "normalized_page_sha256": "0bfd741cabe5bd011ec30cf3ae3775231821c10f41af3c626b9808ccf7d67d9d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 177,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 13,
+        "normalized_page_sha256": "d60acfa837c2bd59435c8dac82485c700e0cadf637c472daa0bd197be17bad6f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 178,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "cf6821d5681cf190ab1e7850a4863c351acbe5637b1d44c3c8bf70fc34f7201f",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 179,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "a7211d0a729b41224c57336ce36473de9b4dd3a5bc319f04c55222ccdb356ce8",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 180,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "ac3f34b54673c78f0b470d983cee12ecb16926fd07cb7aeca1ba75c285fb286c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 181,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "110d393269540fc200c03e76bdf2e445f16a517538066fe278fcfbe791949387",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 182,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 37,
+        "normalized_page_sha256": "49a94fa76161e9e944fdc6170d22d5750b9cda57fbbdf5a65a2b42a1c44e1164",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 183,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 34,
+        "normalized_page_sha256": "88744d013e436e690910410bbb91f09281e42ebb350ba12423e7ff615ecb7a00",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 184,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 33,
+        "normalized_page_sha256": "369915b2d0274f1ec65f5a12ec169ad3278798b3f72a60ad796281908a86fb26",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 185,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 34,
+        "normalized_page_sha256": "74914a65d6de8268b387f0dd8c08d9af95002b13362f06624527ab38f2460740",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 186,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "4cdec8115b7f5460241b83ccae7d6f7a593b9673b4bc60a011c163c8222c9ae2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 187,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "2e756a2c6050a7f38aadbe79455dba5ef98eebe97d696153718b445614c2089d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 188,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 48,
+        "normalized_page_sha256": "46bd77b54fa7fe37e97a58bd658c996b09038f32c77e1aa2c2544818c509a493",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 189,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 48,
+        "normalized_page_sha256": "06ba30bc1f6ef0185b720f7f400024643da6c662e805ba32b99036db736b18b2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 190,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "75fdb0ee7101678cce1e02ca9cd0b2dc224c509e2c110abeaf65307c4545159c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 191,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 30,
+        "normalized_page_sha256": "23309f9ae0e50c70e1102ee9b50882270d0a66605f94ae048065e19081c2862b",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 192,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 30,
+        "normalized_page_sha256": "01156f8c6799e56d7deddba2fbc3564d1919ecb326afc2c2a66155c8df8f786a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 193,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 39,
+        "normalized_page_sha256": "8d4fb31219ecf05056eefa716828b93ce91f2a0f60b58a27ecc6b706be46e515",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 194,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "b6c41b3cd1c2d0afbab2d4d712e0d4498e23346dc562592b011e080878181271",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 195,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 36,
+        "normalized_page_sha256": "178709274a58aba38b94a104bbf758edbf89c69260a66c3494683be4dfd97263",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 196,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 33,
+        "normalized_page_sha256": "6d73e8c052ecb355ace5ca3880f40b6b39fee2b68b2312b9538f61242340cfbe",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 197,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "b2a8cddaa6381d9d4c639e91f07306b8b6a2326ebbb3b67bebaa9635fc7bb4e5",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 198,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 22,
+        "normalized_page_sha256": "31e2019df132aaf8e3beb9cbb8f2b6750f8f1091a60c250ec8c35d20632ba458",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 199,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "10e7fa278b7483c0b48ab594bcba630dd3cb9704f0124316a632f2e2a64df531",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 200,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 26,
+        "normalized_page_sha256": "c785c09a96888dd4e1179d6790833a07e25107f2db3fa031ccc5d2d27ef0a105",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 201,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 14,
+        "normalized_page_sha256": "f1a5ff62391b2e7768d7bb03910f481e8eeb0302236e912251b2b85247d1a51e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 202,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "0b54ec4af501984a6e83ec74becf56a5bdd24fca68abd58a7599c9e095b30d7d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 203,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "8bd6ea9685167011727d732403e0eae20a82f3ffc34f7b6304f8f4ea6a29026c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 204,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 15,
+        "normalized_page_sha256": "cf637f9cc87e60a362145b38bdd4da834ac610b78476385f4fe8f081ae8b8208",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 205,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "a0533d7b329c6d3fcdb130003c7bf770672fcc2d8417f7a78082c82b099c22af",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 206,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "86e975b7972bc3f12ffe5c75b21e2b44f09b2118306466e4ac33eca86e80b1d4",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 207,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "ec523dd1bf14b6d14fe10de20bcc0d1e6443b5e154847ca5a63ab36277a27418",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 208,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 21,
+        "normalized_page_sha256": "ead7b61ad9dfedecfd76c1dcb0111d0bb00ec091746e47d253a431306c2bf9b5",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 209,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 30,
+        "normalized_page_sha256": "239466889937a479b85339068e40ae49df0efb2b0e384b027988b16dfaa77427",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 210,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "5a14655a827a609fbd4b0a7c53d31b002efaa60135a728ad63a638182cdb8050",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 211,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "d392b8de4d0f61f9b7cd16509dc68e1905c70ef126119c69e24f775e5922de4a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 212,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "1295fb6474955bc9194e457a26b44c0bd9becf8cb25dc2ed7b9f2d081626a962",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 213,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 32,
+        "normalized_page_sha256": "f654b6851c593266a3c9d30191b22e7282b8531f9bb2c47d2929787f9653481a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 214,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "3854632f5b11f47e52883f82c8a4662af3712589056c441b371ae7a06291c9db",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 215,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "a631a5d26b32755cd0d0ced9e6c50a9f29078d3040b83b1fea437b8822655af2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 216,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "10797f1fc83bf89cf8dce5ab55e7ea1aa75ad9a7a26ab71e7918273f0a15f2d0",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 217,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 41,
+        "normalized_page_sha256": "f852dab37dde15496ee498628bce90c629428b6b4ad1fb97762c902c538cbf40",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 218,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "5b06a6324ddfb2e393dd77cd99b61995353857a86e3c0cdd0a6397fc42bb44a1",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 219,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "01d08d524a7d80379abbcc9444b0022bb74a8367176bf7cb550b1ae3dd7c3bd9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 220,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 12,
+        "normalized_page_sha256": "84f6d93d4cb56ae358adca22969df30ad2aea4c12009aa30a1435ae92a26763d",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 221,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 12,
+        "normalized_page_sha256": "db2cfec11ebae1923796e074d107b248201199b1565727e0325838715f25d7ba",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 222,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "d182271a69039238bfe755b633930411cd5255e1a9881136765adea3c78497c4",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 223,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "c8f96a1bdb34a9fe9ac0dd9dbfd0b8723dc9e3872265976e5e155cf6c8e63baf",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 224,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 36,
+        "normalized_page_sha256": "523c1969ce9500d67242092999bedd61a1dd1ea3a08c07c49092a19c60e7c8d1",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 225,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 42,
+        "normalized_page_sha256": "0368c050cb2cfcc59467413b016281d97a775d6ccacd3654c47d6770c532f682",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 226,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "63b50800c4cf7cb6ecf662cbbcb9ed93f71914214a51acce7c0ed504732fe1bf",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 227,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 46,
+        "normalized_page_sha256": "0da16c07edbacdcc911e1953f4a27b39b833ebd1bdead5b02236baef5427071a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 228,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 29,
+        "normalized_page_sha256": "c93659d86746fbdb79e4e5cbd155674a11b0a21ea31ed1935095780045921e99",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 229,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "b9890988d973f03cfbafe068d2514870b789af8835d851dc985f867483667a7e",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 230,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "b13d2d19bf951f45056a615336171c10a1d281ac3baff78093c8a640e534fad9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 231,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "abc39891bb169ebf4491a26ad4727bc1312838dc21675c12d1e22fae7ffeb8a2",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 232,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "86bbbd714b6f3444c91ba4fa890c5b2686c91daf3842ce93de37eff6fec436dc",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 233,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 25,
+        "normalized_page_sha256": "3b048620ae4753d1b8c52831ee0cd5932dba5290982c4cfd7ffc3f6ff6af5d72",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 234,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 20,
+        "normalized_page_sha256": "cf6d0a6022c7a3dd3db06c43b305bf1ec5a3e7add3769caf42e53e85a65c4315",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 235,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 31,
+        "normalized_page_sha256": "c550e00ebed7cc00b8d5d454b058a727e112f64b537ef547e9040181d47191d6",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 236,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 24,
+        "normalized_page_sha256": "2d42e30d8b87207df36b093bf7b9dc91faa87e7aa7c8713087004258c4ec51bf",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 237,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 36,
+        "normalized_page_sha256": "703670dd10e679e454c737bb0c4672f82269a56b6bc7e35eb6592e926e0fd34c",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 238,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "956271a3bb90cd412f8dc9d9f3e7c331257efda8e4b7b549a6c491d9d93e2900",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 239,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 18,
+        "normalized_page_sha256": "02ad0fb89a0416667bc7d5e14919f89fa654ec74d996895f7305d2c7dc80cf45",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 240,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "4fc1f0d9e883164e0b77615178377f106325cb403f9e31f1236b785b84287376",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 241,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "2d2f4b095e9b6a2f59314976f6a125361fe69ea9a7388c09393891be1da7d587",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 242,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 16,
+        "normalized_page_sha256": "105da6aa5b5dddfefa6b41dce981c21b66e7c050a806327411fcef18348445b8",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 243,
+        "visual_reviewed": true,
+        "source_unit_count": 3,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "c7804664cdcd7fb407c8aed33823c4d299ca2384f4a1d20f12beea3deb9b1f7b",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 244,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 19,
+        "normalized_page_sha256": "eb6ecb4bb7cd08c51ebaf1c579e1a0d9f0ac11635ebc35c180e5bbf36b5ee7bb",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 245,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 27,
+        "normalized_page_sha256": "add2ff499f7db2fbebfce876e111782cccc7ab0e5469af246deeeaf8f4d74960",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 246,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 32,
+        "normalized_page_sha256": "85ddb627161299ea6b81fce386c66a06aecbb40e2302c7c7031b0432ddfd1514",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 247,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 32,
+        "normalized_page_sha256": "75798cbbdc8a4e1662c12f69f07b5baf9209a89e666f1022f9ee503b8354b98a",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 248,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 23,
+        "normalized_page_sha256": "96f2346c08c1d4c050f054b1be9f220471ce928c49ddf2e79f985ed54a4d6d76",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 249,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 28,
+        "normalized_page_sha256": "d056fc6f44c7604f8c171a6cb7a243e29ef6eb555bd78b683630fe8c017a84e9",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 250,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 28,
+        "normalized_page_sha256": "6f2e2d355405efa158e4e8b75efb45a2fb54ae88fe43fc126cd370fa3a160de8",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 251,
+        "visual_reviewed": true,
+        "source_unit_count": 0,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "page_status": "VISUAL_NON_EFFECT_OR_BLANK_PAGE_REVIEWED"
+      },
+      {
+        "pdf_page": 252,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 11,
+        "normalized_page_sha256": "81325076b1aab41e3d2c13a1dba97913cd90444a7e632c397f61c90d59226586",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 253,
+        "visual_reviewed": true,
+        "source_unit_count": 2,
+        "effect_atom_count": 10,
+        "normalized_page_sha256": "6ddcff3eb4ca30df1f626aa532bf9cb1120e241fcb1996df64297be1cd291b12",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 254,
+        "visual_reviewed": true,
+        "source_unit_count": 0,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "page_status": "VISUAL_NON_EFFECT_OR_BLANK_PAGE_REVIEWED"
+      },
+      {
+        "pdf_page": 255,
+        "visual_reviewed": true,
+        "source_unit_count": 5,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "6142abece1ee526519d0716ebf81fe60e82bd4a4e1be6099ca954465a59b3902",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      },
+      {
+        "pdf_page": 256,
+        "visual_reviewed": true,
+        "source_unit_count": 1,
+        "effect_atom_count": 0,
+        "normalized_page_sha256": "254a32a43de77a012d775c38d82323f536ffdf83eebbfbf6a065698c5ede8fd7",
+        "page_status": "SOURCE_UNITS_CLASSIFIED"
+      }
+    ],
+    "coverage": {
+      "expected_page_count": 256,
+      "reviewed_page_count": 256,
+      "unaccounted_pages": 0,
+      "source_unit_count": 354,
+      "effect_bearing_source_unit_count": 327,
+      "non_effect_context_source_unit_count": 27,
+      "multi_page_source_unit_count": 143,
+      "multi_atom_source_unit_count": 324,
+      "effect_atom_count": 4119,
+      "explicit_fach_approved_count": 0,
+      "reviewed_not_assessable_count": 4119,
+      "non_effect_context_reviewed_count": 27,
+      "unclassified_source_units": 0,
+      "unterminated_effect_atoms": 0,
+      "source_conflicts_without_status": 0,
+      "all_approved_atoms_have_required_fach_fields": true,
+      "all_effect_bearing_atoms_terminal": true,
+      "coverage_manifest_pass": true,
+      "reused_explicit_fach_record_count": 0,
+      "genuine_fach_review_required_count": 0,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "review_class_counts": {
+        "EXTERNAL_COMPETENCE_ADVOCACY": 89,
+        "LEGAL_REGULATORY_ENFORCEMENT": 187,
+        "TAX_FEE_PRICE_INSTRUMENT": 57,
+        "PUBLIC_FINANCE_FUNDING": 33,
+        "HOUSING_LAND_USE": 280,
+        "TRANSPORT_MOBILITY": 235,
+        "CLIMATE_ENERGY_ENVIRONMENT": 441,
+        "HEALTH_CARE": 84,
+        "EDUCATION_CHILDREN_YOUTH": 215,
+        "SECURITY_JUSTICE": 253,
+        "MIGRATION_INTEGRATION": 140,
+        "EQUALITY_ANTIDISCRIMINATION": 180,
+        "DIGITAL_DATA_AI": 360,
+        "STAFFING_WORKFORCE": 235,
+        "INFRASTRUCTURE_CAPACITY": 289,
+        "SERVICE_PROGRAMME": 259,
+        "CULTURE_SPORT_EVENT": 129,
+        "GOVERNANCE_PROCESS": 227,
+        "TARGET_OR_ASPIRATION": 128,
+        "GENERAL_POLICY_INSTRUMENT": 298
+      }
+    }
+  },
+  "source_unit_shards": [
+    {
+      "path": "source-units-p001-p010.json",
+      "page_from": 1,
+      "page_to": 10,
+      "record_count": 20,
+      "file_sha256": "cbd7add17827437057ed336a4bb97194bcf65275113e227f07822e61a7fe8932",
+      "byte_length": 30815
+    },
+    {
+      "path": "source-units-p011-p020.json",
+      "page_from": 11,
+      "page_to": 20,
+      "record_count": 14,
+      "file_sha256": "84a92df453e93a929a63f2727bbdff1fa242f849fc0eb21c29ab8dc4d3985f84",
+      "byte_length": 27917
+    },
+    {
+      "path": "source-units-p021-p030.json",
+      "page_from": 21,
+      "page_to": 30,
+      "record_count": 15,
+      "file_sha256": "823c4a40180be0bb3bf7540d308c3f9204dc2c8a0f4f60efdd15b28e3161bff5",
+      "byte_length": 29084
+    },
+    {
+      "path": "source-units-p031-p040.json",
+      "page_from": 31,
+      "page_to": 40,
+      "record_count": 11,
+      "file_sha256": "16952522a1f4d1aff0d33af3df64b270de8c7de72434751b880f04098176aac2",
+      "byte_length": 22481
+    },
+    {
+      "path": "source-units-p041-p050.json",
+      "page_from": 41,
+      "page_to": 50,
+      "record_count": 13,
+      "file_sha256": "ffb80dde0492908fa899c13dc0d4c597a559a067c9700cc6f1b41f8773a12b81",
+      "byte_length": 23983
+    },
+    {
+      "path": "source-units-p051-p060.json",
+      "page_from": 51,
+      "page_to": 60,
+      "record_count": 14,
+      "file_sha256": "a1866211ede10f849afcc64176a387d4a438838321496da9d24301416ce7154c",
+      "byte_length": 26598
+    },
+    {
+      "path": "source-units-p061-p070.json",
+      "page_from": 61,
+      "page_to": 70,
+      "record_count": 15,
+      "file_sha256": "79a951b2adf2ed1e694031bb935440276396243517a2d2d820258f89fed6b5fd",
+      "byte_length": 28915
+    },
+    {
+      "path": "source-units-p071-p080.json",
+      "page_from": 71,
+      "page_to": 80,
+      "record_count": 15,
+      "file_sha256": "5a2390134127aad7a5ca90e291b1b670f9f37bfbb9aaeed18c9f837bbfe5686a",
+      "byte_length": 28548
+    },
+    {
+      "path": "source-units-p081-p090.json",
+      "page_from": 81,
+      "page_to": 90,
+      "record_count": 10,
+      "file_sha256": "613531ceaed8f481f5fa4e9ddacf38b92535bf71d971605a4c0ad9228f67e9b0",
+      "byte_length": 22448
+    },
+    {
+      "path": "source-units-p091-p100.json",
+      "page_from": 91,
+      "page_to": 100,
+      "record_count": 11,
+      "file_sha256": "6bd111b8b0825bc3759769f3bfb480882011f61cbb2631b113d7e7c066d55905",
+      "byte_length": 21969
+    },
+    {
+      "path": "source-units-p101-p110.json",
+      "page_from": 101,
+      "page_to": 110,
+      "record_count": 14,
+      "file_sha256": "48ae8b1b85631e18b5f62b321dd4f2ba0648dc22587285604f911121e50acd2d",
+      "byte_length": 27353
+    },
+    {
+      "path": "source-units-p111-p120.json",
+      "page_from": 111,
+      "page_to": 120,
+      "record_count": 11,
+      "file_sha256": "5829400eebd1797b66a29549776de44f19e7a8bb41cb29036ac2523e9ecd22a6",
+      "byte_length": 22002
+    },
+    {
+      "path": "source-units-p121-p130.json",
+      "page_from": 121,
+      "page_to": 130,
+      "record_count": 13,
+      "file_sha256": "445ca56e0b2fe77fa0ba91ed4c84416ffbe15e7b93ce53d91c7bac09c5f129c3",
+      "byte_length": 24218
+    },
+    {
+      "path": "source-units-p131-p140.json",
+      "page_from": 131,
+      "page_to": 140,
+      "record_count": 12,
+      "file_sha256": "3ab5b37b9435119d6c3458d4f946481dd5df0fa4009892675d5eace9c2259abf",
+      "byte_length": 23481
+    },
+    {
+      "path": "source-units-p141-p150.json",
+      "page_from": 141,
+      "page_to": 150,
+      "record_count": 14,
+      "file_sha256": "a3911e10c9898615e7fd1140462c2f16b46288ecaa97c4c1f92346624387e7af",
+      "byte_length": 27168
+    },
+    {
+      "path": "source-units-p151-p160.json",
+      "page_from": 151,
+      "page_to": 160,
+      "record_count": 19,
+      "file_sha256": "decc2d5750d9c9541e5e1afe6dffde3af2422a56f279bd01fa4e6fe762dd4dba",
+      "byte_length": 34406
+    },
+    {
+      "path": "source-units-p161-p170.json",
+      "page_from": 161,
+      "page_to": 170,
+      "record_count": 14,
+      "file_sha256": "9230b0a74482979d88addb28d307db4d4169d228c2639ef9acd00741bd015069",
+      "byte_length": 25882
+    },
+    {
+      "path": "source-units-p171-p180.json",
+      "page_from": 171,
+      "page_to": 180,
+      "record_count": 14,
+      "file_sha256": "fc1bf0d004811a40eb77367c43dc9d9090330086a5b55ac5eb312eb88b139f58",
+      "byte_length": 24584
+    },
+    {
+      "path": "source-units-p181-p190.json",
+      "page_from": 181,
+      "page_to": 190,
+      "record_count": 10,
+      "file_sha256": "40497cb0b792e82e636fec2dcbde6d18d465ff0ede5383f37f5018efe594c304",
+      "byte_length": 20773
+    },
+    {
+      "path": "source-units-p191-p200.json",
+      "page_from": 191,
+      "page_to": 200,
+      "record_count": 13,
+      "file_sha256": "ba50da99af376c81f9d502dc3408fef30d0ba0375d2eb335944dabc3f8302f9d",
+      "byte_length": 25013
+    },
+    {
+      "path": "source-units-p201-p210.json",
+      "page_from": 201,
+      "page_to": 210,
+      "record_count": 16,
+      "file_sha256": "81143ad15958aa5450d9e022c65e78f36b216cafb46327b5f9aa0ddb71712cef",
+      "byte_length": 29817
+    },
+    {
+      "path": "source-units-p211-p220.json",
+      "page_from": 211,
+      "page_to": 220,
+      "record_count": 14,
+      "file_sha256": "c71d2b8df875523737e8ce231fd9780a66cc363bb82c85f259ef99bab57e89f0",
+      "byte_length": 26149
+    },
+    {
+      "path": "source-units-p221-p230.json",
+      "page_from": 221,
+      "page_to": 230,
+      "record_count": 12,
+      "file_sha256": "81c03081355e7afc7ee56da751b72e7c90b2a024ec48ea1db7c1081e02c47b5e",
+      "byte_length": 22233
+    },
+    {
+      "path": "source-units-p231-p240.json",
+      "page_from": 231,
+      "page_to": 240,
+      "record_count": 15,
+      "file_sha256": "e5247c9df96b994172ea9f6c1aca2dc2f78069908b65faf84e8d5f1e2cbca3f2",
+      "byte_length": 27389
+    },
+    {
+      "path": "source-units-p241-p250.json",
+      "page_from": 241,
+      "page_to": 250,
+      "record_count": 16,
+      "file_sha256": "28dacf7f117f44da15a9e88614bbbf62526bc2c2f97363be0aa194844d46fb08",
+      "byte_length": 29405
+    },
+    {
+      "path": "source-units-p251-p256.json",
+      "page_from": 251,
+      "page_to": 256,
+      "record_count": 9,
+      "file_sha256": "b852a697380407d497b8ddf69d6c057b0f15c02cc8786d537e0dfa59bdd5b9fd",
+      "byte_length": 12597
+    }
+  ],
+  "effect_atom_shards": [
+    {
+      "path": "effect-atoms-p001-p010.json",
+      "page_from": 1,
+      "page_to": 10,
+      "record_count": 67,
+      "file_sha256": "0f7a8b875d77c282eaa1f5bce96803c428c42843a545f6c521ecea5c5bd7e524",
+      "byte_length": 174116
+    },
+    {
+      "path": "effect-atoms-p011-p020.json",
+      "page_from": 11,
+      "page_to": 20,
+      "record_count": 204,
+      "file_sha256": "2302e8dada1377f0cd8e1649c8ba9e98914ea9d634165b75423dbe375776152e",
+      "byte_length": 543060
+    },
+    {
+      "path": "effect-atoms-p021-p030.json",
+      "page_from": 21,
+      "page_to": 30,
+      "record_count": 195,
+      "file_sha256": "34530efa2d316756fe4f37149c78e385f264001f25cdb190d104000a36405e3c",
+      "byte_length": 510451
+    },
+    {
+      "path": "effect-atoms-p031-p040.json",
+      "page_from": 31,
+      "page_to": 40,
+      "record_count": 170,
+      "file_sha256": "3a640af84499b16451a0159c482fac29a8b89daf2b74eb9e7b312f010d71da04",
+      "byte_length": 448524
+    },
+    {
+      "path": "effect-atoms-p041-p050.json",
+      "page_from": 41,
+      "page_to": 50,
+      "record_count": 147,
+      "file_sha256": "98135a8a867d675065421f2b46669fae2d75d3d91fcc6c92273282b634e0c54d",
+      "byte_length": 389460
+    },
+    {
+      "path": "effect-atoms-p051-p060.json",
+      "page_from": 51,
+      "page_to": 60,
+      "record_count": 167,
+      "file_sha256": "bf38e9e7010dc79810482609a5e166067f549c8888544fb5975477b47cfbe13f",
+      "byte_length": 449004
+    },
+    {
+      "path": "effect-atoms-p061-p070.json",
+      "page_from": 61,
+      "page_to": 70,
+      "record_count": 191,
+      "file_sha256": "05c0fb722ac2c6796eaf8f91ebed9d251b0ace03e5b9342d99651922fa5d3137",
+      "byte_length": 502562
+    },
+    {
+      "path": "effect-atoms-p071-p080.json",
+      "page_from": 71,
+      "page_to": 80,
+      "record_count": 194,
+      "file_sha256": "952bfc11d4d330f68d3cce97ce9a1c40dd84df18c5d5614f46cb0d9ccc3e6d6b",
+      "byte_length": 503050
+    },
+    {
+      "path": "effect-atoms-p081-p090.json",
+      "page_from": 81,
+      "page_to": 90,
+      "record_count": 207,
+      "file_sha256": "f5a3a9554254c658cc1cf8b90e2ac6e231c3cba8da363ecb6a86540b40c32f45",
+      "byte_length": 548680
+    },
+    {
+      "path": "effect-atoms-p091-p100.json",
+      "page_from": 91,
+      "page_to": 100,
+      "record_count": 157,
+      "file_sha256": "7785293176ee0e5319a330deb9aa6b535b3f23511dfd3c0847245ed865f8a742",
+      "byte_length": 423576
+    },
+    {
+      "path": "effect-atoms-p101-p110.json",
+      "page_from": 101,
+      "page_to": 110,
+      "record_count": 186,
+      "file_sha256": "5eca380f505fd0f12e743122b3e64007a550801da4e4cfc9ddf49b71899fbc44",
+      "byte_length": 501801
+    },
+    {
+      "path": "effect-atoms-p111-p120.json",
+      "page_from": 111,
+      "page_to": 120,
+      "record_count": 156,
+      "file_sha256": "b9e2be03d0b1b2be1de12c2e96dddf452e3f8a1b5a3bae7dfaab898c4022bc5e",
+      "byte_length": 422258
+    },
+    {
+      "path": "effect-atoms-p121-p130.json",
+      "page_from": 121,
+      "page_to": 130,
+      "record_count": 153,
+      "file_sha256": "249251b6b7bb33713a491faf0c5d9a9343e727dbd24312a6845f194e36611ce7",
+      "byte_length": 407978
+    },
+    {
+      "path": "effect-atoms-p131-p140.json",
+      "page_from": 131,
+      "page_to": 140,
+      "record_count": 159,
+      "file_sha256": "f6b74dff8d4b7a34d3ecc69518fb30ba13e8107baf67853ed8d153b945219375",
+      "byte_length": 440362
+    },
+    {
+      "path": "effect-atoms-p141-p150.json",
+      "page_from": 141,
+      "page_to": 150,
+      "record_count": 181,
+      "file_sha256": "03e659f0529ebd4a193c56f72bb89890138e1521a5b60844c78236a7887c6db4",
+      "byte_length": 484181
+    },
+    {
+      "path": "effect-atoms-p151-p160.json",
+      "page_from": 151,
+      "page_to": 160,
+      "record_count": 181,
+      "file_sha256": "5f7476d9724ab3a35b34e8cccceecd7d992f9f68d20af86dff9bc47091eb1781",
+      "byte_length": 483650
+    },
+    {
+      "path": "effect-atoms-p161-p170.json",
+      "page_from": 161,
+      "page_to": 170,
+      "record_count": 146,
+      "file_sha256": "f3c74b8a2f943a1233ad68780a2c3f539da812ab178ed3119276d8375cd5bf94",
+      "byte_length": 404466
+    },
+    {
+      "path": "effect-atoms-p171-p180.json",
+      "page_from": 171,
+      "page_to": 180,
+      "record_count": 127,
+      "file_sha256": "be2dc55c6f7f4f7a280248bd5978dd611488861da96f52c717d12d77c66b6da0",
+      "byte_length": 340655
+    },
+    {
+      "path": "effect-atoms-p181-p190.json",
+      "page_from": 181,
+      "page_to": 190,
+      "record_count": 162,
+      "file_sha256": "f7696643bf1b849648388b4e98f21f8c23d5f5e8266f994637e8cffd658bc86b",
+      "byte_length": 442091
+    },
+    {
+      "path": "effect-atoms-p191-p200.json",
+      "page_from": 191,
+      "page_to": 200,
+      "record_count": 165,
+      "file_sha256": "bd7ba7be77944d816527d088439343207cb6245a92c4bd4071f569542cac56db",
+      "byte_length": 451119
+    },
+    {
+      "path": "effect-atoms-p201-p210.json",
+      "page_from": 201,
+      "page_to": 210,
+      "record_count": 177,
+      "file_sha256": "916f28c6b2e837412645a07fab12fbfeefa6db3e9a48ad1b9dfbb7bd7511ef61",
+      "byte_length": 472628
+    },
+    {
+      "path": "effect-atoms-p211-p220.json",
+      "page_from": 211,
+      "page_to": 220,
+      "record_count": 153,
+      "file_sha256": "16c8d79329772f90079da034c2f7f5053f4902b560df23ca413b06ddb3217aae",
+      "byte_length": 405407
+    },
+    {
+      "path": "effect-atoms-p221-p230.json",
+      "page_from": 221,
+      "page_to": 230,
+      "record_count": 138,
+      "file_sha256": "7b10e25e8946949a7356963e981f2a5643e4b07f8d8e6610042a63f70789f814",
+      "byte_length": 376036
+    },
+    {
+      "path": "effect-atoms-p231-p240.json",
+      "page_from": 231,
+      "page_to": 240,
+      "record_count": 149,
+      "file_sha256": "0b7eded9ea609c19e8d14ea8f065a7899354f3d20fe268918400313ee2c6622f",
+      "byte_length": 410227
+    },
+    {
+      "path": "effect-atoms-p241-p250.json",
+      "page_from": 241,
+      "page_to": 250,
+      "record_count": 166,
+      "file_sha256": "7e1547db3566be4bf3c471c9f4b8b7d0deb862c0c4b1723ff3f838311c81eb29",
+      "byte_length": 443216
+    },
+    {
+      "path": "effect-atoms-p251-p256.json",
+      "page_from": 251,
+      "page_to": 256,
+      "record_count": 21,
+      "file_sha256": "b80d2e2f55a3b0485c32353320ca687a24e52c51942653eba379bfe7958d440d",
+      "byte_length": 56342
+    }
+  ],
+  "logical_descriptor_sha256": "b1e15d8a65cdeb099abdf28bc47ecbdf14e3bdc1bfea59eb9a75bc78979f98b8",
+  "manifest_sha256": "7baa340a57ccb93664c039a875cdbac5d467e1ca03ba2152b5722f286135b7e5"
+}

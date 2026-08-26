@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "BE-2026-VOLT-FACH-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "jurisdiction": "berlin",
+    "party": "Volt",
+    "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+    "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1"
+  },
+  "input": {
+    "ledger_manifest": "data/state-programmes/fach-reviews/berlin-2026-volt-v1/manifest.json",
+    "logical_descriptor_sha256": "4c48b0c547c559b6e7402505939806f3de4f4fc134495151114b877434b573a9"
+  },
+  "overlay": {
+    "reviewed_page_count": 113,
+    "source_unit_count": 858,
+    "effect_atom_count": 1096,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 1096,
+    "partial_explicit_fach_stock_overlap_atom_count": 2,
+    "programme_source_object_review_complete": true,
+    "programme_analysis_terminal_under_delegated_protocol": true,
+    "effect_credit_allowed": false
+  },
+  "apply_contract": {
+    "preserve_all_other_programmes": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "setwise_consumer_required": true
+  },
+  "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+  "generated_at": "2026-08-26",
+  "descriptor_sha256": "6b921b35e4f5d6a9f19ed114c307b3a19cee615de6099aa708a33392cb358974"
+}

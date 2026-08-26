@@ -1,0 +1,568 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-VOLT-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "EFFECT_ATOMS",
+  "page_from": 1,
+  "page_to": 8,
+  "records": [
+    {
+      "record_id": "BE-VOLT-2026-SU-0006-A01",
+      "atom_id": "BE-VOLT-2026-SU-0006-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0006",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b007@86.46,551.67,340.32,564.68",
+      "source_excerpt": "Was Berlin jetzt braucht, ist eine mutige Vision.",
+      "source_sentence_normalized": "Was Berlin jetzt braucht, ist eine mutige Vision.",
+      "source_sentence_sha256": "7adef9b59c1553a0cbf05bafb26d5a4dd569978051c0c0436ba10aeae621fcb8",
+      "policy_action": "Was Berlin jetzt braucht, ist eine mutige Vision.",
+      "policy_action_sha256": "7adef9b59c1553a0cbf05bafb26d5a4dd569978051c0c0436ba10aeae621fcb8",
+      "source_text_sha256": "7adef9b59c1553a0cbf05bafb26d5a4dd569978051c0c0436ba10aeae621fcb8",
+      "source_parent_text_sha256": "7adef9b59c1553a0cbf05bafb26d5a4dd569978051c0c0436ba10aeae621fcb8",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TARGET_OR_ASPIRATION",
+      "missing_review_inputs": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TARGET_OR_ASPIRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0006-A01 (`Was Berlin jetzt braucht, ist eine mutige Vision.`) is terminally not assessable after object-level review. Review class TARGET_OR_ASPIRATION leaves these minimum object-specific inputs unresolved: implementing_policy_instrument, operational_affected_group_or_system, baseline_indicator_and_target_value, causal_mechanism_and_time_horizon, competence_and_delivery_path, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p002:b007@86.46,551.67,340.32,564.68"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0007-A01",
+      "atom_id": "BE-VOLT-2026-SU-0007-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0007",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b008@94.96,573.34,444.70,586.00",
+      "source_excerpt": "Eine Vision, wie Berlin wieder zur Vorreiterin im Herzen Europas wird.",
+      "source_sentence_normalized": "Eine Vision, wie Berlin wieder zur Vorreiterin im Herzen Europas wird.",
+      "source_sentence_sha256": "cd21f9608663309e4c73b520bed22c0135cc6330dad125108816ac06099916e5",
+      "policy_action": "Eine Vision, wie Berlin wieder zur Vorreiterin im Herzen Europas wird.",
+      "policy_action_sha256": "cd21f9608663309e4c73b520bed22c0135cc6330dad125108816ac06099916e5",
+      "source_text_sha256": "cd21f9608663309e4c73b520bed22c0135cc6330dad125108816ac06099916e5",
+      "source_parent_text_sha256": "cd21f9608663309e4c73b520bed22c0135cc6330dad125108816ac06099916e5",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TARGET_OR_ASPIRATION",
+      "missing_review_inputs": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TARGET_OR_ASPIRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0007-A01 (`Eine Vision, wie Berlin wieder zur Vorreiterin im Herzen Europas wird.`) is terminally not assessable after object-level review. Review class TARGET_OR_ASPIRATION leaves these minimum object-specific inputs unresolved: implementing_policy_instrument, operational_affected_group_or_system, baseline_indicator_and_target_value, causal_mechanism_and_time_horizon, competence_and_delivery_path, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p002:b008@94.96,573.34,444.70,586.00"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0008-A01",
+      "atom_id": "BE-VOLT-2026-SU-0008-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0008",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b009@94.96,595.01,514.21,623.67",
+      "source_excerpt": "Eine Vision, wie sich die großen Herausforderungen dieser Stadt auch global lösen lassen.",
+      "source_sentence_normalized": "Eine Vision, wie sich die großen Herausforderungen dieser Stadt auch global lösen lassen.",
+      "source_sentence_sha256": "e76535c5cea32f815a0a2162ceb3d716d24002fc5e8e234a9a75731a95157386",
+      "policy_action": "Eine Vision, wie sich die großen Herausforderungen dieser Stadt auch global lösen lassen.",
+      "policy_action_sha256": "e76535c5cea32f815a0a2162ceb3d716d24002fc5e8e234a9a75731a95157386",
+      "source_text_sha256": "e76535c5cea32f815a0a2162ceb3d716d24002fc5e8e234a9a75731a95157386",
+      "source_parent_text_sha256": "e76535c5cea32f815a0a2162ceb3d716d24002fc5e8e234a9a75731a95157386",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TARGET_OR_ASPIRATION",
+      "missing_review_inputs": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TARGET_OR_ASPIRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0008-A01 (`Eine Vision, wie sich die großen Herausforderungen dieser Stadt auch global lösen lassen.`) is terminally not assessable after object-level review. Review class TARGET_OR_ASPIRATION leaves these minimum object-specific inputs unresolved: implementing_policy_instrument, operational_affected_group_or_system, baseline_indicator_and_target_value, causal_mechanism_and_time_horizon, competence_and_delivery_path, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p002:b009@94.96,595.01,514.21,623.67"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0009-A01",
+      "atom_id": "BE-VOLT-2026-SU-0009-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0009",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b010@94.96,632.68,514.22,661.35",
+      "source_excerpt": "Eine Vision für eine Politik, die unsere Zukunft gestaltet, statt die Gegenwart zu verwalten.",
+      "source_sentence_normalized": "Eine Vision für eine Politik, die unsere Zukunft gestaltet, statt die Gegenwart zu verwalten.",
+      "source_sentence_sha256": "4c6a9c579ee8b7513974129093800022fad1ca0753a99e1d438afa44f5ca307a",
+      "policy_action": "Eine Vision für eine Politik, die unsere Zukunft gestaltet, statt die Gegenwart zu verwalten.",
+      "policy_action_sha256": "4c6a9c579ee8b7513974129093800022fad1ca0753a99e1d438afa44f5ca307a",
+      "source_text_sha256": "4c6a9c579ee8b7513974129093800022fad1ca0753a99e1d438afa44f5ca307a",
+      "source_parent_text_sha256": "4c6a9c579ee8b7513974129093800022fad1ca0753a99e1d438afa44f5ca307a",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TARGET_OR_ASPIRATION",
+      "missing_review_inputs": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TARGET_OR_ASPIRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0009-A01 (`Eine Vision für eine Politik, die unsere Zukunft gestaltet, statt die Gegenwart zu verwalten.`) is terminally not assessable after object-level review. Review class TARGET_OR_ASPIRATION leaves these minimum object-specific inputs unresolved: implementing_policy_instrument, operational_affected_group_or_system, baseline_indicator_and_target_value, causal_mechanism_and_time_horizon, competence_and_delivery_path, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p002:b010@94.96,632.68,514.22,661.35"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0010-A01",
+      "atom_id": "BE-VOLT-2026-SU-0010-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0010",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b011@86.46,670.36,514.15,699.02",
+      "source_excerpt": "Damit Berlin ein Ort wird, an dem alle die gleichen Chancen bekommen, Zusammenhalt zählt und Zukunft möglich ist.",
+      "source_sentence_normalized": "Damit Berlin ein Ort wird, an dem alle die gleichen Chancen bekommen, Zusammenhalt zählt und Zukunft möglich ist.",
+      "source_sentence_sha256": "ec63307dba8ea8ba37eda9001894d08e41a2f910ad2a1ffd3b323d92d9fd8715",
+      "policy_action": "Damit Berlin ein Ort wird, an dem alle die gleichen Chancen bekommen, Zusammenhalt zählt und Zukunft möglich ist.",
+      "policy_action_sha256": "ec63307dba8ea8ba37eda9001894d08e41a2f910ad2a1ffd3b323d92d9fd8715",
+      "source_text_sha256": "ec63307dba8ea8ba37eda9001894d08e41a2f910ad2a1ffd3b323d92d9fd8715",
+      "source_parent_text_sha256": "ec63307dba8ea8ba37eda9001894d08e41a2f910ad2a1ffd3b323d92d9fd8715",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0010-A01 (`Damit Berlin ein Ort wird, an dem alle die gleichen Chancen bekommen, Zusammenhalt zählt und Zukunft möglich ist.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p002:b011@86.46,670.36,514.15,699.02"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0011-A01",
+      "atom_id": "BE-VOLT-2026-SU-0011-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0011",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b001@85.04,97.17,512.82,189.85",
+      "source_excerpt": "Wir bringen diese Vision mit: pragmatisch, progressiv und europäisch.",
+      "source_sentence_normalized": "Wir bringen diese Vision mit: pragmatisch, progressiv und europäisch.",
+      "source_sentence_sha256": "c9e2547675e54e1ce673e40a30f6a5bc981e2be58238df4ea74642547e82d184",
+      "policy_action": "Wir bringen diese Vision mit: pragmatisch, progressiv und europäisch.",
+      "policy_action_sha256": "c9e2547675e54e1ce673e40a30f6a5bc981e2be58238df4ea74642547e82d184",
+      "source_text_sha256": "c9e2547675e54e1ce673e40a30f6a5bc981e2be58238df4ea74642547e82d184",
+      "source_parent_text_sha256": "0b13528cb823cf538d4a346c85b26d77a61b89a1edd5d7a4c67e873ab22e2c3e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TARGET_OR_ASPIRATION",
+      "missing_review_inputs": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TARGET_OR_ASPIRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0011-A01 (`Wir bringen diese Vision mit: pragmatisch, progressiv und europäisch.`) is terminally not assessable after object-level review. Review class TARGET_OR_ASPIRATION leaves these minimum object-specific inputs unresolved: implementing_policy_instrument, operational_affected_group_or_system, baseline_indicator_and_target_value, causal_mechanism_and_time_horizon, competence_and_delivery_path, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b001@85.04,97.17,512.82,189.85"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0011-A02",
+      "atom_id": "BE-VOLT-2026-SU-0011-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0011",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b001@85.04,97.17,512.82,189.85",
+      "source_excerpt": "Wir messen die Wirkung unserer Maßnahmen und passen an, was nicht die gewünschten Ergebnisse bringt.",
+      "source_sentence_normalized": "Wir messen die Wirkung unserer Maßnahmen und passen an, was nicht die gewünschten Ergebnisse bringt.",
+      "source_sentence_sha256": "35fe1380aaa5ad18992a30f733f9bde907dae92bd37b39a5d8ae4ba77713ac01",
+      "policy_action": "Wir messen die Wirkung unserer Maßnahmen",
+      "policy_action_sha256": "b88843f718dea5f13318353dd397773ec66331ecdc677f9c5d660c1f2a022c96",
+      "source_text_sha256": "35fe1380aaa5ad18992a30f733f9bde907dae92bd37b39a5d8ae4ba77713ac01",
+      "source_parent_text_sha256": "0b13528cb823cf538d4a346c85b26d77a61b89a1edd5d7a4c67e873ab22e2c3e",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0011-A02 (`Wir messen die Wirkung unserer Maßnahmen`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b001@85.04,97.17,512.82,189.85"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0011-A03",
+      "atom_id": "BE-VOLT-2026-SU-0011-A03",
+      "source_unit_id": "BE-VOLT-2026-SU-0011",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b001@85.04,97.17,512.82,189.85",
+      "source_excerpt": "Wir messen die Wirkung unserer Maßnahmen und passen an, was nicht die gewünschten Ergebnisse bringt.",
+      "source_sentence_normalized": "Wir messen die Wirkung unserer Maßnahmen und passen an, was nicht die gewünschten Ergebnisse bringt.",
+      "source_sentence_sha256": "35fe1380aaa5ad18992a30f733f9bde907dae92bd37b39a5d8ae4ba77713ac01",
+      "policy_action": "passen an, was nicht die gewünschten Ergebnisse bringt.",
+      "policy_action_sha256": "a7655f8f593209e45a8b55cee516fdadd62b045b9f85186c7ea75a956d283f95",
+      "source_text_sha256": "35fe1380aaa5ad18992a30f733f9bde907dae92bd37b39a5d8ae4ba77713ac01",
+      "source_parent_text_sha256": "0b13528cb823cf538d4a346c85b26d77a61b89a1edd5d7a4c67e873ab22e2c3e",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0011-A03 (`passen an, was nicht die gewünschten Ergebnisse bringt.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b001@85.04,97.17,512.82,189.85"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0012-A01",
+      "atom_id": "BE-VOLT-2026-SU-0012-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0012",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b002@85.04,198.86,512.81,355.57",
+      "source_excerpt": "Ein Berlin, das Innovationen hervorbringt, Gründungen fördert und Klimaschutz zum Wirtschaftsfaktor macht, um Generationengerechtigkeit zu sichern.",
+      "source_sentence_normalized": "Ein Berlin, das Innovationen hervorbringt, Gründungen fördert und Klimaschutz zum Wirtschaftsfaktor macht, um Generationengerechtigkeit zu sichern.",
+      "source_sentence_sha256": "b13f8da7c9438ce01b95d691b7a77d1ac022cfaa53c42fb3b13e9fc9d1c021c3",
+      "policy_action": "Ein Berlin, das Innovationen hervorbringt, Gründungen fördert und Klimaschutz zum Wirtschaftsfaktor macht, um Generationengerechtigkeit zu sichern.",
+      "policy_action_sha256": "b13f8da7c9438ce01b95d691b7a77d1ac022cfaa53c42fb3b13e9fc9d1c021c3",
+      "source_text_sha256": "b13f8da7c9438ce01b95d691b7a77d1ac022cfaa53c42fb3b13e9fc9d1c021c3",
+      "source_parent_text_sha256": "f1d9c71dd1078dedeae2d8af0e6d1c729454a166f2b0ee99db743281714227d3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0012-A01 (`Ein Berlin, das Innovationen hervorbringt, Gründungen fördert und Klimaschutz zum Wirtschaftsfaktor macht, um Generationengerechtigkeit zu sichern.`) is terminally not assessable after object-level review. Review class CLIMATE_ENERGY_ENVIRONMENT leaves these minimum object-specific inputs unresolved: physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b002@85.04,198.86,512.81,355.57"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0012-A02",
+      "atom_id": "BE-VOLT-2026-SU-0012-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0012",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b002@85.04,198.86,512.81,355.57",
+      "source_excerpt": "Bildung muss entlang des gesamten Lebenswegs funktionieren: von verlässlichen Kitas über leistungsfähige Schulen bis zu einer europäisch vernetzten Wissenschaftslandschaft und attraktiven Ausbildungsplätzen.",
+      "source_sentence_normalized": "Bildung muss entlang des gesamten Lebenswegs funktionieren: von verlässlichen Kitas über leistungsfähige Schulen bis zu einer europäisch vernetzten Wissenschaftslandschaft und attraktiven Ausbildungsplätzen.",
+      "source_sentence_sha256": "5a6a3ff0af294cf64c100ff437f45ef6e6495404150d856be566bb445809788e",
+      "policy_action": "Bildung muss entlang des gesamten Lebenswegs funktionieren: von verlässlichen Kitas über leistungsfähige Schulen bis zu einer europäisch vernetzten Wissenschaftslandschaft und attraktiven Ausbildungsplätzen.",
+      "policy_action_sha256": "5a6a3ff0af294cf64c100ff437f45ef6e6495404150d856be566bb445809788e",
+      "source_text_sha256": "5a6a3ff0af294cf64c100ff437f45ef6e6495404150d856be566bb445809788e",
+      "source_parent_text_sha256": "f1d9c71dd1078dedeae2d8af0e6d1c729454a166f2b0ee99db743281714227d3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0012-A02 (`Bildung muss entlang des gesamten Lebenswegs funktionieren: von verlässlichen Kitas über leistungsfähige Schulen bis zu einer europäisch vernetzten Wissenschaftslandschaft und attraktiven Ausbildungsplätzen.`) is terminally not assessable after object-level review. Review class EDUCATION_CHILDREN_YOUTH leaves these minimum object-specific inputs unresolved: target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b002@85.04,198.86,512.81,355.57"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0013-A01",
+      "atom_id": "BE-VOLT-2026-SU-0013-A01",
+      "source_unit_id": "BE-VOLT-2026-SU-0013",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b003@85.04,364.58,512.76,409.25",
+      "source_excerpt": "Berlin braucht mehr als nur kleine Korrekturen am Status quo.",
+      "source_sentence_normalized": "Berlin braucht mehr als nur kleine Korrekturen am Status quo.",
+      "source_sentence_sha256": "416774dd088370b802cd123a95674f5358e684f6d2d41d182081ed4929715758",
+      "policy_action": "Berlin braucht mehr als nur kleine Korrekturen am Status quo.",
+      "policy_action_sha256": "416774dd088370b802cd123a95674f5358e684f6d2d41d182081ed4929715758",
+      "source_text_sha256": "416774dd088370b802cd123a95674f5358e684f6d2d41d182081ed4929715758",
+      "source_parent_text_sha256": "906068d15ace69ed0c1deb32e41141b68290cee97be2db1a060d451838b1e822",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0013-A01 (`Berlin braucht mehr als nur kleine Korrekturen am Status quo.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b003@85.04,364.58,512.76,409.25"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0013-A02",
+      "atom_id": "BE-VOLT-2026-SU-0013-A02",
+      "source_unit_id": "BE-VOLT-2026-SU-0013",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b003@85.04,364.58,512.76,409.25",
+      "source_excerpt": "Was wir brauchen, ist eine Vision und die Kraft, diese umzusetzen.",
+      "source_sentence_normalized": "Was wir brauchen, ist eine Vision und die Kraft, diese umzusetzen.",
+      "source_sentence_sha256": "67e0f77bb5b475ffd3208848349494c398dfb101d37fcedc863be6d9adb9f9c0",
+      "policy_action": "Was wir brauchen, ist eine Vision und die Kraft, diese umzusetzen.",
+      "policy_action_sha256": "67e0f77bb5b475ffd3208848349494c398dfb101d37fcedc863be6d9adb9f9c0",
+      "source_text_sha256": "67e0f77bb5b475ffd3208848349494c398dfb101d37fcedc863be6d9adb9f9c0",
+      "source_parent_text_sha256": "906068d15ace69ed0c1deb32e41141b68290cee97be2db1a060d451838b1e822",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TARGET_OR_ASPIRATION",
+      "missing_review_inputs": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TARGET_OR_ASPIRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0013-A02 (`Was wir brauchen, ist eine Vision und die Kraft, diese umzusetzen.`) is terminally not assessable after object-level review. Review class TARGET_OR_ASPIRATION leaves these minimum object-specific inputs unresolved: implementing_policy_instrument, operational_affected_group_or_system, baseline_indicator_and_target_value, causal_mechanism_and_time_horizon, competence_and_delivery_path, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b003@85.04,364.58,512.76,409.25"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-VOLT-2026-SU-0013-A03",
+      "atom_id": "BE-VOLT-2026-SU-0013-A03",
+      "source_unit_id": "BE-VOLT-2026-SU-0013",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b003@85.04,364.58,512.76,409.25",
+      "source_excerpt": "Wir machen eine bessere Zukunft wählbar.",
+      "source_sentence_normalized": "Wir machen eine bessere Zukunft wählbar.",
+      "source_sentence_sha256": "06ac5f15fd7405123bf93d36438b95973612d0bc4b110905485739e57b28bea4",
+      "policy_action": "Wir machen eine bessere Zukunft wählbar.",
+      "policy_action_sha256": "06ac5f15fd7405123bf93d36438b95973612d0bc4b110905485739e57b28bea4",
+      "source_text_sha256": "06ac5f15fd7405123bf93d36438b95973612d0bc4b110905485739e57b28bea4",
+      "source_parent_text_sha256": "906068d15ace69ed0c1deb32e41141b68290cee97be2db1a060d451838b1e822",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-VOLT-2026-SU-0013-A03 (`Wir machen eine bessere Zukunft wählbar.`) is terminally not assessable after object-level review. Review class GENERAL_POLICY_INSTRUMENT leaves these minimum object-specific inputs unresolved: operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Without those inputs, the delegated protocol's competence, mechanism, state-change, evidence, materiality, uncertainty and reality-check chain cannot be completed without inventing Fach beyond the pinned programme object.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+          "artifact_sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+          "locator": "p003:b003@85.04,364.58,512.76,409.25"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

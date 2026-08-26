@@ -1,0 +1,869 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-AFD-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "SOURCE_UNITS",
+  "page_from": 1,
+  "page_to": 8,
+  "records": [
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0001",
+      "pdf_page": 1,
+      "pdf_pages": [
+        1
+      ],
+      "source_locator": "p001:b001@37.28,250.75,305.12,590.37",
+      "source_excerpt": "PROGRAMM DER AfD BERLIN für die Wahlen am 20. September 2026 BERLIN. STARK. MACHEN.",
+      "source_text_normalized": "PROGRAMM DER AfD BERLIN für die Wahlen am 20. September 2026 BERLIN. STARK. MACHEN.",
+      "source_text_sha256": "e223c6c910b0d677aed1b5eb6436068a750a832a931b55143e56b8a1932bbd7f",
+      "source_visual_role": "SECTION_COVER",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0002",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b002@65.57,67.43,158.39,82.01",
+      "source_excerpt": "LIEBE BERLINER,",
+      "source_text_normalized": "LIEBE BERLINER,",
+      "source_text_sha256": "3eb3db7df3b0bc9f58f11433191e9b5dd82802c698caef09d9eae30f59304b43",
+      "source_visual_role": "HEADING",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0003",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b003@64.92,90.42,380.79,145.75;p002:b004@65.27,154.61,380.78,220.66;p002:b005@64.92,229.51,380.75,274.16;p002:b006@65.28,283.01,380.81,370.46;p002:b007@64.91,379.31,379.67,423.96;p002:b008@65.12,432.81,380.80,477.45",
+      "source_excerpt": "Berlin ist nicht irgendeine Stadt. Berlin ist das Zentrum Europas. Berlin ist die deutsche Hauptstadt mit einer großen und wechselvollen Geschichte. Aber Berlin ist auch eine Stadt, von deren Fassaden nicht nur der Glanz der Vergangenheit bröckelt, ihr Zustand ist geradezu bedro…",
+      "source_text_normalized": "Berlin ist nicht irgendeine Stadt. Berlin ist das Zentrum Europas. Berlin ist die deutsche Hauptstadt mit einer großen und wechselvollen Geschichte. Aber Berlin ist auch eine Stadt, von deren Fassaden nicht nur der Glanz der Vergangenheit bröckelt, ihr Zustand ist geradezu bedrohlich. Berlin ist eine Stadt im Niedergang. Es ist allerhöchste Zeit, diesen Verfall aufzuhalten. Wir müssen unsere Stadt wieder stark machen. Damit das gelingt, braucht Berlin dringend eine politische, wirtschaftliche und soziale Wende. Es braucht einen Neuanfang, damit Berlin wieder zu einer florierenden und sozialen Metropole mit hoher Lebensqualität wird, deren Glanz weit über die nationalen Grenzen hinausstrahlt. Dafür stehen wir als AfD mit diesem Wahlprogramm ein. Es ist unser Kompass für ein starkes Berlin und den dringend notwendigen Wandel. In diesem Programm setzen wir klare Prioritäten. Wir bekennen uns zu der mit dieser Aufgabe verbundenen Verantwortung und sind bereit, diese zu übernehmen. Im Zentrum unserer Politik stehen die Berliner mit ihren Familien. Wir machen Politik für all diejenigen, die hier leben, arbeiten und Steuern zahlen. Sie haben ein Recht darauf, dass ihre Stadt sauber und sicher ist. Sie haben ein Recht auf funktionierende U- und S-Bahnen sowie auf Straßen ohne Schlaglöcher und ohne Dauerbaustellen, die kilometerlange Staus produzieren. Sie haben ein Recht auf eine funktionierende Verwaltung und auf gut ausgestattete Schulen, die wieder dem Bildungsanspruch einer Wissensgesellschaft gerecht werden. Wir werden dafür sorgen, dass Berliner wieder bezahlbare Wohnungen finden. Bei der Vergabe landeseigener und geförderter Wohnungen erhalten sie Vorrang vor allen anderen Bewerbern. Wohnungen sind keine Asylunterkünfte, Wohnungen sind das Zuhause von Berlinern, die gerne hier leben. Wir wollen die unhaltbaren Zustände in unserer Stadt beenden und sie zu einer der lebenswertesten Metropolen Europas machen. Wir treten dafür an, dass die Berliner wieder stolz sein können auf ihre Stadt. Wir reden nicht, sondern handeln im Interesse der Bürger. Für die Berliner. Für unsere Stadt.",
+      "source_text_sha256": "311b87ff5daa39d33815caa8458b845ccd3559131f15dbc1728b7287294bfb2b",
+      "source_visual_role": "BODY",
+      "contains_explicit_list_marker": false,
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-AFD-2026-SU-0003-A01",
+        "BE-AFD-2026-SU-0003-A02",
+        "BE-AFD-2026-SU-0003-A03",
+        "BE-AFD-2026-SU-0003-A04",
+        "BE-AFD-2026-SU-0003-A05",
+        "BE-AFD-2026-SU-0003-A06",
+        "BE-AFD-2026-SU-0003-A07",
+        "BE-AFD-2026-SU-0003-A08",
+        "BE-AFD-2026-SU-0003-A09",
+        "BE-AFD-2026-SU-0003-A10",
+        "BE-AFD-2026-SU-0003-A11"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0004",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b009@65.21,484.91,185.54,499.13",
+      "source_excerpt": "BERLIN. STARK. MACHEN.",
+      "source_text_normalized": "BERLIN. STARK. MACHEN.",
+      "source_text_sha256": "1e03803b163a2ea1fccf792c13383d3608d1380a1adaaa31d4187dc9fbeb0e40",
+      "source_visual_role": "HEADING",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0005",
+      "pdf_page": 2,
+      "pdf_pages": [
+        2
+      ],
+      "source_locator": "p002:b010@65.28,507.72,119.92,520.26;p002:b011@65.28,529.02,292.95,563.05",
+      "source_excerpt": "Herzlich Ihre Dr. Kristin Brinker Landesvorsitzende und Kandidatin für das Amt des Regierenden Bürgermeisterkandidatin",
+      "source_text_normalized": "Herzlich Ihre Dr. Kristin Brinker Landesvorsitzende und Kandidatin für das Amt des Regierenden Bürgermeisterkandidatin",
+      "source_text_sha256": "de1cbb0cf5c0641f25b955b3401f1476fb9dc9fe72aee0b90b434774d177619a",
+      "source_visual_role": "BODY",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0006",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b001@60.24,68.67,202.80,95.19",
+      "source_excerpt": "Inhaltsverzeichnis",
+      "source_text_normalized": "Inhaltsverzeichnis",
+      "source_text_sha256": "a86956017d11697159c89dea60f4cbbfc8d6bb47066c8e09ff37168116dbb368",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0007",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b002@59.06,117.09,143.32,130.17",
+      "source_excerpt": "1. Bauen & Wohnen",
+      "source_text_normalized": "1. Bauen & Wohnen",
+      "source_text_sha256": "f63c963cbf6e76a2ed14f08f36a0a3d66f2d24db4fc775d29f76797256e6efce",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0008",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b003@365.48,117.09,371.33,130.17",
+      "source_excerpt": "4",
+      "source_text_normalized": "4",
+      "source_text_sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0009",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b004@59.39,141.09,244.67,154.17",
+      "source_excerpt": "2. Innere Sicherheit, Justiz & Datenschutz",
+      "source_text_normalized": "2. Innere Sicherheit, Justiz & Datenschutz",
+      "source_text_sha256": "ff408054521625531b718b33a8468edfbee62f2a6cb1ffe75efe69945d665fca",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0010",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b005@362.14,141.09,371.18,154.17",
+      "source_excerpt": "12",
+      "source_text_normalized": "12",
+      "source_text_sha256": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0011",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b006@59.35,165.09,256.79,178.17",
+      "source_excerpt": "3. Zuwanderung, Asyl & Staatsangehörigkeit",
+      "source_text_normalized": "3. Zuwanderung, Asyl & Staatsangehörigkeit",
+      "source_text_sha256": "ddae57c1f7b4c8003a63c1674fb3f5d95a655dfa5884cf313cf946cf0b216a29",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0012",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b007@360.16,165.09,371.18,178.17",
+      "source_excerpt": "22",
+      "source_text_normalized": "22",
+      "source_text_sha256": "785f3ec7eb32f30b90cd0fcf3657d388b5ff4297f2f9716ff66e9b69c05ddd09",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0013",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b008@59.12,189.09,145.54,202.17",
+      "source_excerpt": "4. Schule & Bildung",
+      "source_text_normalized": "4. Schule & Bildung",
+      "source_text_sha256": "696f91b2731d016615d81a1732e50d9fafac4929e947b41bcc5a178f794e2c16",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0014",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b009@359.81,189.09,370.80,202.17",
+      "source_excerpt": "30",
+      "source_text_normalized": "30",
+      "source_text_sha256": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0015",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b010@59.70,213.09,250.79,226.17",
+      "source_excerpt": "5. Hochschulen, Wissenschaft & Forschung",
+      "source_text_normalized": "5. Hochschulen, Wissenschaft & Forschung",
+      "source_text_sha256": "4e62f29e22691b7ff821258990bd3aa153687c9daeefa0815996434932127b7e",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0016",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b011@360.17,213.09,370.81,226.17",
+      "source_excerpt": "38",
+      "source_text_normalized": "38",
+      "source_text_sha256": "aea92132c4cbeb263e6ac2bf6c183b5d81737f179f21efdc5863739672f0f470",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0017",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b012@59.70,237.09,107.89,250.17",
+      "source_excerpt": "6. Verkehr",
+      "source_text_normalized": "6. Verkehr",
+      "source_text_sha256": "0f5dd72549193f53b32318d2705a8dea8361d898eac825021b314c5daaaa61d1",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0018",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b013@357.72,237.09,370.86,250.17",
+      "source_excerpt": "46",
+      "source_text_normalized": "46",
+      "source_text_sha256": "25fc0e7096fc653718202dc30b0c580b8ab87eac11a700cba03a7c021bc35b0c",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0019",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b014@59.12,261.09,164.71,274.17",
+      "source_excerpt": "7. Wirtschaft & Soziales",
+      "source_text_normalized": "7. Wirtschaft & Soziales",
+      "source_text_sha256": "ea52dedc62d5db85f006dd2bea1fb691a6467f57c311ee0f23ffa4b06f259cea",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0020",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b015@360.37,261.09,371.18,274.17",
+      "source_excerpt": "52",
+      "source_text_normalized": "52",
+      "source_text_sha256": "41cfc0d1f2d127b04555b7246d84019b4d27710a3f3aff6e7764375b1e06e05d",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0021",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b016@59.66,285.09,168.87,298.17",
+      "source_excerpt": "8. Alle Energie für Berlin",
+      "source_text_normalized": "8. Alle Energie für Berlin",
+      "source_text_sha256": "b6417434459b76856c8453d4b028e301a007053f5f3cbf219d66511bfdf04b63",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0022",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b017@360.38,285.09,373.18,298.17",
+      "source_excerpt": "62",
+      "source_text_normalized": "62",
+      "source_text_sha256": "81b8a03f97e8787c53fe1a86bda042b6f0de9b0ec9c09357e107c99ba4d6948a",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0023",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b018@59.62,309.09,180.40,322.17",
+      "source_excerpt": "9. Kinder, Jugend & Familie",
+      "source_text_normalized": "9. Kinder, Jugend & Familie",
+      "source_text_sha256": "16e21663b9a18e53d2d552d2750d6e1570b5c57fef7f5a260321293d200f7778",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0024",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b019@360.28,309.09,370.86,322.17",
+      "source_excerpt": "66",
+      "source_text_normalized": "66",
+      "source_text_sha256": "3ada92f28b4ceda38562ebf047c6ff05400d4c572352a1142eedfef67d21e662",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0025",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b020@59.07,333.09,101.66,346.17",
+      "source_excerpt": "10. Sport",
+      "source_text_normalized": "10. Sport",
+      "source_text_sha256": "a03edbb0dd007489aa1455abb42acea7e51264f6bac41d5ba13cf733e3f841c9",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0026",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b021@358.69,333.09,370.86,346.17",
+      "source_excerpt": "76",
+      "source_text_normalized": "76",
+      "source_text_sha256": "f74efabef12ea619e30b79bddef89cffa9dda494761681ca862cff2871a85980",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0027",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b022@59.07,357.09,124.80,370.17",
+      "source_excerpt": "11. Gesundheit",
+      "source_text_normalized": "11. Gesundheit",
+      "source_text_sha256": "c66a72f0973da0107b5bd7596d02a1b7c4918f6a91e77a00beb801c8fa0e008c",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0028",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b023@358.34,357.09,371.18,370.17",
+      "source_excerpt": "82",
+      "source_text_normalized": "82",
+      "source_text_sha256": "a46e37632fa6ca51a13fe39a567b3c23b28c2f47d8af6be9bd63e030e214ba38",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0029",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b024@59.07,381.09,234.21,394.17",
+      "source_excerpt": "12. Demokratie und Rechtsstaatlichkeit",
+      "source_text_normalized": "12. Demokratie und Rechtsstaatlichkeit",
+      "source_text_sha256": "d272c65d8edd353030d5e526677fffef5429802d18a1824b44d27593b9b005d5",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0030",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b025@357.85,381.09,370.80,394.17",
+      "source_excerpt": "90",
+      "source_text_normalized": "90",
+      "source_text_sha256": "69f59c273b6e669ac32a6dd5e1b2cb63333d8b004f9696447aee2d422ce63763",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0031",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b026@59.07,405.09,143.61,418.17",
+      "source_excerpt": "13. Natur & Umwelt",
+      "source_text_normalized": "13. Natur & Umwelt",
+      "source_text_sha256": "5befd8ac7861acb506c936501566131d130344ee9f9118d2c52815386d08b40c",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0032",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b027@360.31,405.09,370.87,418.17",
+      "source_excerpt": "96",
+      "source_text_normalized": "96",
+      "source_text_sha256": "7b1a278f5abe8e9da907fc9c29dfd432d60dc76e17b0fabab659d2a508bc65c4",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0033",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b028@59.07,429.09,271.74,442.17",
+      "source_excerpt": "14. Kunst, Kultur, Medien und Erinnerungspolitik",
+      "source_text_normalized": "14. Kunst, Kultur, Medien und Erinnerungspolitik",
+      "source_text_sha256": "4da5b8a6cac321ac4e018799122ff4618bdb0cec3ed2c08d9bb35075dd31a834",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0034",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b029@356.28,429.09,371.34,442.17",
+      "source_excerpt": "104",
+      "source_text_normalized": "104",
+      "source_text_sha256": "5ef6fdf32513aa7cd11f72beccf132b9224d33f271471fff402742887a171edf",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0035",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b030@59.07,453.09,165.91,466.17",
+      "source_excerpt": "15. Haushalt & Finanzen",
+      "source_text_normalized": "15. Haushalt & Finanzen",
+      "source_text_sha256": "40058bebffea6220f99cdc203dfd8dd60059fbe484c65e70b6da76cbbf6991da",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0036",
+      "pdf_page": 3,
+      "pdf_pages": [
+        3
+      ],
+      "source_locator": "p003:b031@358.37,453.09,371.34,466.17",
+      "source_excerpt": "114",
+      "source_text_normalized": "114",
+      "source_text_sha256": "9f1f9dce319c4700ef28ec8c53bd3cc8e6abe64c68385479ab89215806a5bdd6",
+      "source_visual_role": "TABLE_OF_CONTENTS",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0037",
+      "pdf_page": 4,
+      "pdf_pages": [
+        4
+      ],
+      "source_locator": "p004:b001@58.31,34.95,378.71,222.83",
+      "source_excerpt": "BAUEN & WOHNEN",
+      "source_text_normalized": "BAUEN & WOHNEN",
+      "source_text_sha256": "805f1062a60c3f93252052105f37664a470f6e36ff495eecb70013c743f0f430",
+      "source_visual_role": "SECTION_COVER",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0038",
+      "pdf_page": 5,
+      "pdf_pages": [
+        5
+      ],
+      "source_locator": "p005:b001@66.11,70.67,190.73,97.19",
+      "source_excerpt": "Bauen & Wohnen",
+      "source_text_normalized": "Bauen & Wohnen",
+      "source_text_sha256": "f49f1f54e4824c0b906a92508337695fbf142f0b446591fbb8ac74ce56f530f0",
+      "source_visual_role": "HEADING",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0039",
+      "pdf_page": 5,
+      "pdf_pages": [
+        5
+      ],
+      "source_locator": "p005:b002@65.58,117.03,291.09,130.28",
+      "source_excerpt": "MEHR BEZAHLBARER WOHNRAUM FüR BERLIN",
+      "source_text_normalized": "MEHR BEZAHLBARER WOHNRAUM FüR BERLIN",
+      "source_text_sha256": "aece924e5260b02bab3ceca85e169d574e3b404f9c9894c765c570663320c5c5",
+      "source_visual_role": "HEADING",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0040",
+      "pdf_page": 5,
+      "pdf_pages": [
+        5
+      ],
+      "source_locator": "p005:b003@64.08,141.19,381.76,348.75",
+      "source_excerpt": "In den vergangenen Jahren hat sich die Lage auf dem Berliner Wohnungsmarkt weiter verschärft. Der durch die unkontrollierte Migrationspolitik verursachte Bevölkerungszuwachs hat bei gleichzeitiger Erschwerung des Neubaus die Angebotsmieten auf ein Allzeithoch getrieben und den B…",
+      "source_text_normalized": "In den vergangenen Jahren hat sich die Lage auf dem Berliner Wohnungsmarkt weiter verschärft. Der durch die unkontrollierte Migrationspolitik verursachte Bevölkerungszuwachs hat bei gleichzeitiger Erschwerung des Neubaus die Angebotsmieten auf ein Allzeithoch getrieben und den Bedarf an Sozialwohnungen vervielfacht. Als Folge der daraus resultierenden großen Unterschiede zwischen Bestands- und Angebotsmieten und eines zu geringen Wohnungsangebots verbleiben die Berliner in ihren Wohnungen und ziehen selbst bei verändertem Wohnungsbedarf kaum noch um: Der Wohnungsmarkt ist „eingefroren“. Auch der seit 2023 amtierende schwarz-rote Senat ist mit seinen Bemühungen um den Wohnungsbau weitgehend gescheitert. Es ist ihm nicht gelungen, eine durchgreifende Reduzierung von Bauvorschriften und Überregulierungen anzustoßen, um dadurch ein positives Klima für private Investitionen in den Neubau sowie die Bestandserhaltung zu schaffen. Nicht zuletzt deshalb fehlt vor allem für Gering- und Mittelverdiener bezahlbarer Wohnraum. Vorrang für Einheimische – unsere Forderungen,",
+      "source_text_sha256": "4cccda2d4f11ff4d5d79f64a0b513b201914209c98ddc86c159aeebe6fecaa4f",
+      "source_visual_role": "BODY",
+      "contains_explicit_list_marker": false,
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-AFD-2026-SU-0040-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0041",
+      "pdf_page": 5,
+      "pdf_pages": [
+        5
+      ],
+      "source_locator": "p005:b004@65.16,345.94,363.25,362.75",
+      "source_excerpt": "um Wohnen für Berliner wieder bezahlbar zu machen:",
+      "source_text_normalized": "um Wohnen für Berliner wieder bezahlbar zu machen:",
+      "source_text_sha256": "0fc480004bf1c6c09caa91b02b5a278c2141830f228f79c76e57f012ef890be7",
+      "source_visual_role": "HEADING",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0042",
+      "pdf_page": 5,
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "source_locator": "p005:b005@64.98,369.03,254.28,382.28;p005:b006@65.03,381.03,380.90,562.12;p006:b001@59.52,69.19,372.62,94.12;p006:b002@59.30,105.03,375.04,178.12;p006:b003@59.04,189.03,375.88,334.12;p006:b004@59.11,345.03,373.89,430.12;p006:b005@59.12,441.03,373.99,526.12;p006:b006@59.40,537.03,372.64,562.12;p007:b001@64.98,69.19,381.77,202.12;p007:b002@65.18,213.03,379.82,310.12;p007:b003@64.54,321.19,381.76,406.12;p007:b004@65.13,417.03,379.81,562.12;p008:b001@59.04,69.19,373.95,154.12;p008:b002@59.26,165.03,373.93,274.12;p008:b003@58.67,285.03,375.02,418.12;p008:b004@59.45,417.19,373.04,442.12;p008:b005@59.11,453.03,375.86,562.12;p009:b001@64.91,69.19,379.83,178.12;p009:b002@64.99,189.03,381.75,298.12;p009:b003@65.00,309.19,381.78,370.12;p009:b004@65.07,381.03,381.81,538.12;p010:b001@59.04,69.03,373.95,190.12",
+      "source_excerpt": "Vorrang für Einheimische – faire und sozial gerechte Vergabe von gefördertem Wohnraum In Berlin wächst seit Jahren die Kluft zwischen dem, was Berliner mit langjährigem Lebens- und Arbeitsmittelpunkt für unsere Stadt leisten, und ihren Chancen, bezahlbaren Wohnraum zu finden. Wi…",
+      "source_text_normalized": "Vorrang für Einheimische – faire und sozial gerechte Vergabe von gefördertem Wohnraum In Berlin wächst seit Jahren die Kluft zwischen dem, was Berliner mit langjährigem Lebens- und Arbeitsmittelpunkt für unsere Stadt leisten, und ihren Chancen, bezahlbaren Wohnraum zu finden. Wir treten deshalb dafür ein, dass Berliner, die hier geboren sind oder seit vielen Jahren in unserer Stadt leben, bei der Vergabe von gefördertem Wohnraum vorrangig berücksichtigt werden. Dies betrifft Mietwohnungen ebenso wie Bestände der landeseigenen Wohnungsunternehmen, die veräußert werden sollen. Wer hier arbeitet, Steuern zahlt und sein Leben aufgebaut hat, darf nicht länger benachteiligt werden. Die Vergabe von gefördertem Wohnraum muss deshalb in einem transparenten, fairen und überprüfbaren Verfahren in erster Linie den Berlinern zugutekommen. Hierzu werden wir ein Punktesystem einführen, das die Wohnsitzdauer mit sozialen Kriterien wie Einkommenshöhe, Kinderzahl, Pflegeverantwortung und Tätigkeit in systemrelevanten Bereichen (Polizei, Feuerwehr, Kran- kenversorgung, Pflege, Kinderbetreuung, Nahverkehr, Müllabfuhr u. a. m.) kombiniert. Schaffung von Wohnraum für Einheimische Die bereits jetzt bestehenden gesetzlichen Möglichkeiten für die Schaffung von Wohnraum bevorzugt für Einheimische wollen wir konsequent nutzen. Dazu ist das Modell der kooperativen Baulandentwicklung dahingehend anzupassen, dass der geschaffene Wohnraum grundsätzlich bevorzugt Einheimischen nach dem Punktesystem zur Verfügung gestellt wird. Mehr Mietwohnungen durch weniger Regulierung – private Investitionen erleichtern Die beste Mietpreisbremse ist ein ausreichendes Wohnungsangebot. Deshalb wollen wir alle Hindernisse beseitigen, die das Angebot von Mietwohnungen einschränken. Die private Wohnungswirtschaft, der größte Anbieter von Mietwohnungen in Berlin, soll durch ein investitionsfreundliches Klima dazu ermutigt werden, wieder mehr in den Bau von Mietwohnungen zu investieren. Wir lehnen planwirtschaftliche Instrumente und die Enteignung von Wohnungsunternehmen strikt ab, da durch sie nicht nur keine einzige neue Wohnung entsteht, sondern darüber hinaus Unternehmen ebenso wie private Vermieter von Investitionen in den Neubau und in den Bestandserhalt abgeschreckt werden. Sozialer Wohnungsbau: Mietzuschüsse statt ewiger Wartezeiten – Subjektförderung statt Objektförderung Wir wollen die Bürger nicht auf den Bau neuer Sozialwohnungen vertrösten, sondern ihnen durch die Gewährung von Mietzuschüssen ermöglichen, selbst eine Wohnung auf dem freien Markt zu mieten. Wir setzen uns deshalb für eine Ergänzung des Wohngeldes um Mietzuschüsse für Inhaber eines Wohnberechtigungsscheins (WBS) ein. Fehlbelegungsabgabe wieder einführen Wissenschaftliche Untersuchungen zeigen, dass mehr als die Hälfte der Mieter von Sozialwohnungen nicht (mehr) sozial bedürftig ist. Um die Belegung dieser Wohnungen sozial gerecht zu gestalten, wollen wir die Fehlbelegungsabgabe wieder einführen. Um den Missbrauch zu verhindern, setzen wir uns für ein generelles Verbot der Untervermietung von Sozialwohnungen ein. Milieuschutz begrenzen Die Ausweisung von Wohnvierteln als Milieuschutzgebiete (§ 172 BauGB) dient dem Zweck, die Zusammensetzung der bestehenden Wohnbevölkerung zu erhalten, ist aber auch mit erheblichen Nebenwirkungen verbunden. So stehen bauliche Veränderungen unter Genehmigungsvorbehalt mit der Folge, dass nicht kontinuierlich in die Verbesserung des Wohnraumes investiert wird. Dies steht im Gegensatz zu der Notwendigkeit, auf die Alterung der Gesellschaft mit entsprechenden Anpassungen des Wohnungsbestandes zu reagieren. Nicht zuletzt unterbleibt in Milieuschutzgebieten auch eine weitere Neubautätigkeit. Wir streben eine Gesetzesänderung an, so dass bauliche Veränderungen und Neubautätigkeit leichter durchgeführt werden können. Unser Ziel ist darüber hinaus, dass Mieter leichter zu Eigentümern werden können. Sonderbaurecht für Berliner § 246 BauGB enthält umfassende Sonderregelungen für die Errichtung von Unterkünften für „Flüchtlinge“ und „Asylbegehrende“. Dies führt zu einer städtebaurechtlichen Privilegierung der Belange von ausländischen Personengruppen, die sich in Deutschland aufhalten und weder Staatsbürger von EU-Mitgliedstaaten sind noch über anderweitige Rechte zum dauernden Aufenthalt verfügen. Die Belange der einheimischen Bevölkerung werden demgegenüber vernachlässigt. Wir setzen uns deshalb für eine Neufassung des § 246 BauGB mit dem Ziel ein, ein Sonderbaurecht speziell für Einheimische in angespannten Wohnungsmärkten zu schaffen. Damit soll auch für diese Personengruppe eine erleichterte und schnell realisierbare Schaffung von Wohnraum ermöglicht werden. Hierzu sollen insbesondere Ausnahmen und Befreiungen nach § 31 BauGB Abs. 1 und 2 erleichtert sowie die Änderung von Bebauungsplänen im vereinfachten Verfahren nach § 13 BauGB ermöglicht werden. Weniger Wohnnebenkosten durch transparente Heizkostenabrechnungen für Mieter Die infolge der gescheiterten „Energiewende“ und steuerlicher Belastungen stark gestiegenen Preise für Strom, Gas und Heizöl wirken sich auch auf die Kosten der Fernwärmeversorgung aus. Dies hat nicht nur für Mieter der landeseigenen Wohnungsgesellschaften zu teilweise drastischen Nachzahlungen geführt, ohne dass die hierfür ursächlichen Faktoren aus den Betriebskostenabrechnungen nachvollziehbar sind – insbesondere bei der Wärmeversorgung durch sogenanntes Wärme-Contracting. Wir werden uns daher dafür einsetzen, dass in den Heizkostenabrechnungen künftig sämtliche Kostenfaktoren für die Mieter transparent offengelegt werden müssen, um so einen Kostenvergleich zwischen verschiedenen Anbietern zu ermöglichen. Darüber hinaus werden wir die landeseigenen Wohnungsunternehmen verpflichten, den Einkauf der von Ihnen bezogenen Energieträger unabhängig von kurzfristigen Schwankungen der Börsenpreise zu gestalten. Verstöße gegen diese Verpflichtung werden wir durch eine gesetzliche Deckelung von Nachforderungen sanktionieren. Für unklare Abrechnungen werden wir eine Umkehr der Beweislast einführen. Weniger Wohnnebenkosten durch Abschaffung der Grundsteuer Längst sind die Nebenkosten einer Immobilie zur „zweiten Miete“ geworden. Dies trifft insbesondere auf die Grundsteuer zu, denn sie muss nicht nur von den Immobilieneigentümern selbst, sondern als Nebenkostenumlage auch von den Mietern gezahlt werden. Zur dauerhaften Entlastung von Eigentümern und Mietern fordern wir, dass sich das Land Berlin im Bundesrat für eine vollständige Abschaffung der Grundsteuer und einen Ausgleich des finanziellen Ausfalls bei den Kommunen durch den Bund einsetzt. Genossenschaften stärker fördern Wohnungsbaugenossenschaften gewährleisten neben dem Wohneigentum die beste Form günstigen und hochwertigen Wohnens. Da durch das Genossenschaftsmodell jeder Mieter auch Miteigentümer ist, haben Genossenschaften ein Eigeninteresse an der Erhaltung ihrer Bestände und der Sicherung tragbarer Mieten. Wir werden durch die verstärkte Förderung des Genossenschaftswesens mehr Bürgern zu genossenschaftlichem Wohnraum verhelfen. Dazu werden wir die Genossenschaften bei der Vergabe landeseigener Baugrundstücke bevorzugen. Dies gilt besonders für solche Genossenschaften, die bereits über lange Zeit ihre Verlässlichkeit unter Beweis gestellt haben. Auch für den Fall der Privatisierung öffentlicher Wohnungsbestände sollen Genossenschaften bevorzugt werden. Mehr Wohneigentum für die Berliner – Art. 28 der Berliner Verfassung ernst nehmen Wohneigentum schützt vor Altersarmut, Gentrifizierung und Mietsteigerungen. Wer im Ruhestand in seiner abbezahlten Wohnung lebt, steigert durch den Wegfall von Mietzahlungen sein verfügbares Einkommen spürbar. Angesichts der desolaten Lage der gesetzlichen Rente wird deshalb die Bildung von Wohneigentum immer wichtiger. Anders als in der EU, wo ca. 70 % der Bürger über Wohneigentum verfügen, sind dies in Berlin gerade einmal 15 %. Nach einer Studie der EZB ist die geringe Wohnei- gentumsquote die maßgebliche Ursache dafür, dass die Deutschen von allen EU-Bürgern das geringste Haushaltsvermögen haben. Italiener und Franzosen zum Beispiel sind zwei bis dreimal vermögender als die Deutschen. Weil die Berliner Politik die Bürger glauben machen will, eine geringe Wohneigentumsquote sei gut, soll nach dem Willen des Senats Berlin eine Mieterstadt bleiben. Diese Politik verhindert indessen die Bildung von Vermögen und widerspricht damit Art. 28 Abs. 1 der Berliner Verfassung, der den Senat zur Förderung der Bildung von Wohneigentum verpflichtet. Förderung der Wohneigentumsbildung durch öffentliche Bürgschaften und die Abschaffung der Grunderwerbssteuer für selbstgenutztes Wohneigentum Wir werden Art. 28 Abs. 1 der Berliner Verfassung wieder mit Leben erfüllen, indem wir die Bürger mit eigenkapitalersetzenden Bürgschaften beim Eigentumserwerb unterstützen. Wer über ein ausreichendes Einkommen zur Bedienung eines Wohnungskredits verfügt, diesen aber wegen fehlenden Eigenkapitals von den Banken nicht erhält, soll eine öffentliche Bürgschaft für die Finanzierung seiner Wohnung erhalten. Ergänzend zur Gewährung öffentlicher Bürgschaften für den Erwerb von Wohneigentum werden wir die Grunderwerbsteuer für einheimische Ersterwerber selbstgenutzten Wohneigentums vollständig abschaffen, dafür aber eine Grunderwerbsteuer in Höhe von 20 % für außerhalb des EU- Raums ansässige Investoren einführen. Beschleunigung der Baugenehmigungsverfahren durch Bürokratieabbau Damit Bauen in Berlin wieder schneller geht, werden wir die umfangreichen Regelungen der Berliner Bauordnung entschlacken und weiter vereinfachen. So kann etwa im Falle eines genehmigten Neubaus auf die Abrissgenehmigung für die Vorbebauung verzichtet werden. Darüber hinaus werden wir uns dafür einsetzen, die aktuellen energetischen Baustandards bei der Gebäudedämmung auf das Niveau der frühen 2000er-Jahre zurückzusetzen, da die damit verbundenen Kosten sowie der bürokratische Aufwand in keinem Verhältnis zu dem damit erzielbaren energetischen Effizienzgewinn stehen. Die Einführung zusätzlicher landesrechtlicher Verpflichtungen, wie die Nachrüstung von Fotovoltaikanlagen, lehnen wir strikt ab. Schutz von Kleingärten Der Erhalt der innerstädtischen Kleingartenanlagen ist für die Berliner AfD ein zentrales landespolitisches Anliegen. Hierfür wollen wir die im Flächennutzungsplan ausgewiesenen Grünflächen/Kleingartenanlagen der Schutzkategorie 2 nach dem Kleingartenentwicklungsplan langfristig erhalten und durch festgesetzte Bebauungspläne weiter sichern. Ebenso wollen wir die Berliner Wochenendsiedlungen wirksam sichern. Aufgrund der wachsenden sozialen Not streben wir an, für Wochenendsiedler ein Dauerwohnrecht – zeitlich begrenzt auf zunächst 20 Jahre – auszugestalten.",
+      "source_text_sha256": "828b54cefe8b8343a6340c41764c0fd65c2feb5ca39ab8c46e7482d916902dc1",
+      "source_visual_role": "BODY",
+      "contains_explicit_list_marker": false,
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-AFD-2026-SU-0042-A01",
+        "BE-AFD-2026-SU-0042-A02",
+        "BE-AFD-2026-SU-0042-A03",
+        "BE-AFD-2026-SU-0042-A04",
+        "BE-AFD-2026-SU-0042-A05",
+        "BE-AFD-2026-SU-0042-A06",
+        "BE-AFD-2026-SU-0042-A07",
+        "BE-AFD-2026-SU-0042-A08",
+        "BE-AFD-2026-SU-0042-A09",
+        "BE-AFD-2026-SU-0042-A10",
+        "BE-AFD-2026-SU-0042-A11",
+        "BE-AFD-2026-SU-0042-A12",
+        "BE-AFD-2026-SU-0042-A13",
+        "BE-AFD-2026-SU-0042-A14",
+        "BE-AFD-2026-SU-0042-A15",
+        "BE-AFD-2026-SU-0042-A16",
+        "BE-AFD-2026-SU-0042-A17",
+        "BE-AFD-2026-SU-0042-A18",
+        "BE-AFD-2026-SU-0042-A19",
+        "BE-AFD-2026-SU-0042-A20",
+        "BE-AFD-2026-SU-0042-A21",
+        "BE-AFD-2026-SU-0042-A22",
+        "BE-AFD-2026-SU-0042-A23",
+        "BE-AFD-2026-SU-0042-A24",
+        "BE-AFD-2026-SU-0042-A25",
+        "BE-AFD-2026-SU-0042-A26",
+        "BE-AFD-2026-SU-0042-A27",
+        "BE-AFD-2026-SU-0042-A28",
+        "BE-AFD-2026-SU-0042-A29",
+        "BE-AFD-2026-SU-0042-A30",
+        "BE-AFD-2026-SU-0042-A31",
+        "BE-AFD-2026-SU-0042-A32",
+        "BE-AFD-2026-SU-0042-A33",
+        "BE-AFD-2026-SU-0042-A34",
+        "BE-AFD-2026-SU-0042-A35",
+        "BE-AFD-2026-SU-0042-A36",
+        "BE-AFD-2026-SU-0042-A37",
+        "BE-AFD-2026-SU-0042-A38",
+        "BE-AFD-2026-SU-0042-A39",
+        "BE-AFD-2026-SU-0042-A40",
+        "BE-AFD-2026-SU-0042-A41",
+        "BE-AFD-2026-SU-0042-A42"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

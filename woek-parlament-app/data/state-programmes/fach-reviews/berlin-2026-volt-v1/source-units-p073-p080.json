@@ -1,0 +1,1300 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-VOLT-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "SOURCE_UNITS",
+  "page_from": 73,
+  "page_to": 80,
+  "records": [
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0545",
+      "pdf_page": 73,
+      "pdf_pages": [
+        73
+      ],
+      "source_locator": "p073:b001@85.04,97.17,512.79,157.84",
+      "source_excerpt": "Berlin ist eine Stadt, in der Menschen mit unterschiedlichen Hintergründen zusammenleben, füreinander einstehen und Neues aufbauen. Hier engagieren sich Nachbar*innen, Sportvereine verbinden ganze Kieze und Menschen leben jeden Tag aufs Neue eine offene Gesellschaft. Dieses Zusa…",
+      "source_text_normalized": "Berlin ist eine Stadt, in der Menschen mit unterschiedlichen Hintergründen zusammenleben, füreinander einstehen und Neues aufbauen. Hier engagieren sich Nachbar*innen, Sportvereine verbinden ganze Kieze und Menschen leben jeden Tag aufs Neue eine offene Gesellschaft. Dieses Zusammenleben ist Berlins große Stärke.",
+      "source_text_sha256": "df3a4ba73fa631f03ca8c0ea388a37801f5d164ecaacf9b34fbce948353abb17",
+      "source_visual_role": "BODY",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0546",
+      "pdf_page": 73,
+      "pdf_pages": [
+        73
+      ],
+      "source_locator": "p073:b002@85.04,166.85,512.80,243.53",
+      "source_excerpt": "Und doch zeigen sich die Lücken im Alltag. Menschen fühlen sich im öffentlichen Raum unsicher, kommen nur schwer an Gesundheitsversorgung oder erleben zunehmend Einsamkeit und soziale Spannungen im Alltag. Krisen wie die Pandemie, Hitzesommer oder Angriffe auf kritische Infrastr…",
+      "source_text_normalized": "Und doch zeigen sich die Lücken im Alltag. Menschen fühlen sich im öffentlichen Raum unsicher, kommen nur schwer an Gesundheitsversorgung oder erleben zunehmend Einsamkeit und soziale Spannungen im Alltag. Krisen wie die Pandemie, Hitzesommer oder Angriffe auf kritische Infrastruktur zeigen, wie verletzlich eine moderne Großstadt sein kann, wenn ihre Strukturen nicht vorbereitet sind.",
+      "source_text_sha256": "6ac04e8858c3a7d964101b63e31b02f1c9c6cf99db9c26b74a7276d99203ecf6",
+      "source_visual_role": "BODY",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0547",
+      "pdf_page": 73,
+      "pdf_pages": [
+        73
+      ],
+      "source_locator": "p073:b003@85.04,252.54,512.80,329.22",
+      "source_excerpt": "Staatlicher Schutz und Freiheit sind kein Widerspruch. Eine Stadt, die ihre Menschen wirklich schützt, gibt ihnen etwas zurück: den Raum, das eigene Leben selbstbestimmt zu gestalten. Schutz bedeutet deshalb mehr als Polizeipräsenz. Es geht um sichere Straßen und digitale Räume,…",
+      "source_text_normalized": "Staatlicher Schutz und Freiheit sind kein Widerspruch. Eine Stadt, die ihre Menschen wirklich schützt, gibt ihnen etwas zurück: den Raum, das eigene Leben selbstbestimmt zu gestalten. Schutz bedeutet deshalb mehr als Polizeipräsenz. Es geht um sichere Straßen und digitale Räume, schnelle Hilfe im Notfall, erreichbare Gesundheitsversorgung und Kieze, in denen Menschen sich zugehörig fühlen.",
+      "source_text_sha256": "0d10b1a2e0854834e07a70aebc9f639e7dfbe2f9933bd6d8c0174db790c30440",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0547-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0548",
+      "pdf_page": 73,
+      "pdf_pages": [
+        73
+      ],
+      "source_locator": "p073:b004@85.04,338.23,512.79,414.91",
+      "source_excerpt": "Berlin schützt, wenn Prävention früh ansetzt, Opfer schnell wirksame Unterstützung erhalten und alle sich im öffentlichen Raum sicher fühlen. Dafür braucht es eine gut ausgebildete Polizei, interdisziplinäre Teams und spezialisierte Schutzangebote – besonders für Kinder und Mens…",
+      "source_text_normalized": "Berlin schützt, wenn Prävention früh ansetzt, Opfer schnell wirksame Unterstützung erhalten und alle sich im öffentlichen Raum sicher fühlen. Dafür braucht es eine gut ausgebildete Polizei, interdisziplinäre Teams und spezialisierte Schutzangebote – besonders für Kinder und Menschen mit Diskriminierungserfahrungen. So schaffen wir eine Sicherheitspolitik, die die Freiheit aller schützt.",
+      "source_text_sha256": "73751ba716204cba71d8d44516c685df3f12cdc895c90d684e814eb1a4d8288c",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0548-A01",
+        "BE-VOLT-2026-SU-0548-A02",
+        "BE-VOLT-2026-SU-0548-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0549",
+      "pdf_page": 73,
+      "pdf_pages": [
+        73
+      ],
+      "source_locator": "p073:b005@85.04,423.92,512.81,468.59",
+      "source_excerpt": "Berlin schützt, wenn der Staat auch in Krisen handlungsfähig bleibt. Dafür braucht es eine krisenfeste Infrastruktur und eine Bevölkerung, die auf schnelle Hilfe vertrauen kann. So schaffen wir eine Stadt, die vorbereitet ist, bevor Krisen entstehen.",
+      "source_text_normalized": "Berlin schützt, wenn der Staat auch in Krisen handlungsfähig bleibt. Dafür braucht es eine krisenfeste Infrastruktur und eine Bevölkerung, die auf schnelle Hilfe vertrauen kann. So schaffen wir eine Stadt, die vorbereitet ist, bevor Krisen entstehen.",
+      "source_text_sha256": "d75ac55a63e3af2ab426f82a8b3f3562febb6a62896a4374d042678429fb5e7c",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0549-A01",
+        "BE-VOLT-2026-SU-0549-A02",
+        "BE-VOLT-2026-SU-0549-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0550",
+      "pdf_page": 73,
+      "pdf_pages": [
+        73
+      ],
+      "source_locator": "p073:b006@85.04,477.60,512.79,554.28",
+      "source_excerpt": "Berlin schützt, wenn Menschen bei Krankheit, Unfall oder Pflegebedürftigkeit schnell und wohnortnah Hilfe finden. Dafür braucht es Gesundheitszentren im Kiez, gezielte Unterstützung für verschiedene Betroffenengruppen und eine Stadtentwicklung, die Gesundheit von Anfang an mitde…",
+      "source_text_normalized": "Berlin schützt, wenn Menschen bei Krankheit, Unfall oder Pflegebedürftigkeit schnell und wohnortnah Hilfe finden. Dafür braucht es Gesundheitszentren im Kiez, gezielte Unterstützung für verschiedene Betroffenengruppen und eine Stadtentwicklung, die Gesundheit von Anfang an mitdenkt. So schaffen wir eine Versorgung, die alle erreicht.",
+      "source_text_sha256": "ed8b07087296d2a5895816fb6f87d45e90e62a631e2499db5c8d504ec535526e",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0550-A01",
+        "BE-VOLT-2026-SU-0550-A02",
+        "BE-VOLT-2026-SU-0550-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0551",
+      "pdf_page": 73,
+      "pdf_pages": [
+        73
+      ],
+      "source_locator": "p073:b007@85.04,563.29,512.79,623.97",
+      "source_excerpt": "Berlin schützt, wenn Menschen einander begegnen, füreinander eintreten und gemeinsam gestalten. Dafür braucht es Orte der Begegnung in jedem Kiez und Sportund Bewegungsangebote, die wirklich für alle offen sind. So schaffen wir ein Berlin, das verbindet statt trennt und in dem a…",
+      "source_text_normalized": "Berlin schützt, wenn Menschen einander begegnen, füreinander eintreten und gemeinsam gestalten. Dafür braucht es Orte der Begegnung in jedem Kiez und Sportund Bewegungsangebote, die wirklich für alle offen sind. So schaffen wir ein Berlin, das verbindet statt trennt und in dem aus Vielfalt ein echtes Miteinander wird.",
+      "source_text_sha256": "705013e82f6ce96c62ae672f3d65dea8592783bb52f046dbb18aaf69523a1b04",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0551-A01",
+        "BE-VOLT-2026-SU-0551-A02",
+        "BE-VOLT-2026-SU-0551-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0552",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b001@85.04,96.24,468.33,134.36",
+      "source_excerpt": "BERLIN SCHÜTZT: MIT PRÄVENTION, MODERNER POLIZEI UND KRISENVORSORGE",
+      "source_text_normalized": "BERLIN SCHÜTZT: MIT PRÄVENTION, MODERNER POLIZEI UND KRISENVORSORGE",
+      "source_text_sha256": "1c2d063ad96aa0c28634b1d132444336f50df99442704b2f664df39d6cdf4a46",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0553",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b002@85.04,141.92,512.80,250.61",
+      "source_excerpt": "Berlins Sicherheitslage hat sich in mehreren Bereichen verschlechtert. Die Zahl der Körperverletzungen steigt. Gewalt in Partnerschaften und Familien, Übergriffe durch Jugendgruppen, Angriffe auf Polizeikräfte und auf queere Personen nehmen zu und die Aufklärungsquote liegt unte…",
+      "source_text_normalized": "Berlins Sicherheitslage hat sich in mehreren Bereichen verschlechtert. Die Zahl der Körperverletzungen steigt. Gewalt in Partnerschaften und Familien, Übergriffe durch Jugendgruppen, Angriffe auf Polizeikräfte und auf queere Personen nehmen zu und die Aufklärungsquote liegt unter 50 %. Polizei und Rettungsdienste arbeiten unter hohem Druck: Krankenstände, Überstunden und zu wenig Personal prägen den Alltag. Hinzu kommt: Berlin ist kaum krisenfest. Einsatzbereite Schutzräume fehlen, die Infrastruktur ist anfällig.",
+      "source_text_sha256": "49404c4a7c865e05beb6fec0c87679949309534e56949afbad0add0cb012862b",
+      "source_visual_role": "BODY",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0554",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b003@85.04,259.62,512.78,320.29",
+      "source_excerpt": "Wir setzen auf Sicherheitspolitik, die wirkt: wirksame Prävention, entschlossene Strafverfolgung, sichere öffentliche Räume und verlässlichen Opferschutz. Gleichzeitig machen wir Berlin krisenfest, mit einsatzbereiter Notfallinfrastruktur und einer Bevölkerung, die auf schnelle…",
+      "source_text_normalized": "Wir setzen auf Sicherheitspolitik, die wirkt: wirksame Prävention, entschlossene Strafverfolgung, sichere öffentliche Räume und verlässlichen Opferschutz. Gleichzeitig machen wir Berlin krisenfest, mit einsatzbereiter Notfallinfrastruktur und einer Bevölkerung, die auf schnelle Hilfe vertrauen kann.",
+      "source_text_sha256": "0bb319496c302c12f5e4ee8272a4e4b54b71496e840937dd248c7aeeb1769199",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0554-A01",
+        "BE-VOLT-2026-SU-0554-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0555",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b004@85.04,338.51,396.34,355.07",
+      "source_excerpt": "Jetzt früh handeln und Kriminalität vorbeugen",
+      "source_text_normalized": "Jetzt früh handeln und Kriminalität vorbeugen",
+      "source_text_sha256": "1400db9b56250956f66575aa7a1c2e47c0a36500ac9fb1da19ac8423a873e977",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0556",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b005@85.04,363.06,512.80,455.75",
+      "source_excerpt": "Wir unterstützen gefährdete oder bereits straffällige Jugendliche, um frühzeitig Eskalation und so Kriminalität zu verhindern, statt sie nur zu bekämpfen. Dafür stärken wir Schulen, Streetwork und Jugendhilfe sowie die Zusammenarbeit mit Polizei und Ordnungsdiensten. Wir fördern…",
+      "source_text_normalized": "Wir unterstützen gefährdete oder bereits straffällige Jugendliche, um frühzeitig Eskalation und so Kriminalität zu verhindern, statt sie nur zu bekämpfen. Dafür stärken wir Schulen, Streetwork und Jugendhilfe sowie die Zusammenarbeit mit Polizei und Ordnungsdiensten. Wir fördern gezielt Männer in sozialen und psychologischen Berufen, um als Vorbilder straffällige männliche Jugendliche zu unterstützen und alternative Wege aufzuzeigen.",
+      "source_text_sha256": "dfbd0ec77a8e2377b4475ad1e5464bc193e30da30cab7c7e4e486ff7865c48fc",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0556-A01",
+        "BE-VOLT-2026-SU-0556-A02",
+        "BE-VOLT-2026-SU-0556-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0557",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b006@85.04,464.76,512.80,509.43",
+      "source_excerpt": "Wir bauen Aussteigerprogramme und Resozialisierungsmaßnahmen aus. Diese verringern Rückfälle in Radikalisierung, Sucht- oder psychische Krisen und erleichtern die Wiedereingliederung.",
+      "source_text_normalized": "Wir bauen Aussteigerprogramme und Resozialisierungsmaßnahmen aus. Diese verringern Rückfälle in Radikalisierung, Sucht- oder psychische Krisen und erleichtern die Wiedereingliederung.",
+      "source_text_sha256": "7eb24ca86bd13cbcf193f644507314b9182c27acdb1b9fc10bea5daee2e33a24",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0557-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0558",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b007@85.04,518.44,512.80,627.13",
+      "source_excerpt": "Wir setzen die Berliner Landesstrategie für queere Sicherheit und gegen Queerfeindlichkeit sowie die Landeskonzeption gegen Rechtsextremismus, Rassismus und Antisemitismus konsequent um und entwickeln sie insbesondere im Bereich Prävention weiter. Dabei stärken wir früh ansetzen…",
+      "source_text_normalized": "Wir setzen die Berliner Landesstrategie für queere Sicherheit und gegen Queerfeindlichkeit sowie die Landeskonzeption gegen Rechtsextremismus, Rassismus und Antisemitismus konsequent um und entwickeln sie insbesondere im Bereich Prävention weiter. Dabei stärken wir früh ansetzende Unterstützungsund Präventionsangebote in Bezirken und digitalen Räumen, um Diskriminierung, Hass im Netz und Gewaltentwicklung bereits im Vorfeld wirksam zu begegnen und Versorgungslücken im Alltag zu schließen.",
+      "source_text_sha256": "974119c8e47b623aff10d3eaae0b2e6b66ba8a82708199c3711aa136e4c118af",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0558-A01",
+        "BE-VOLT-2026-SU-0558-A02",
+        "BE-VOLT-2026-SU-0558-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0559",
+      "pdf_page": 74,
+      "pdf_pages": [
+        74
+      ],
+      "source_locator": "p074:b008@85.04,636.14,512.79,728.82",
+      "source_excerpt": "Wir stärken Innovation im Kinderschutz-System, indem wir Flexibudgets der Jugendämter ausbauen, um unbürokratisch lokale, präventive Projekte zu ermöglichen. Diese werden wissenschaftlich begleitet und anhand klarer Wirkungskriterien, wie dem Rückgang kindeswohlgefährdender Erei…",
+      "source_text_normalized": "Wir stärken Innovation im Kinderschutz-System, indem wir Flexibudgets der Jugendämter ausbauen, um unbürokratisch lokale, präventive Projekte zu ermöglichen. Diese werden wissenschaftlich begleitet und anhand klarer Wirkungskriterien, wie dem Rückgang kindeswohlgefährdender Ereignisse und der Stabilisierung von Familien, evaluiert. Erfolgreiche Ansätze werden langfristig finanziert und berlinweit übertragen, sodass aus lokalen Lösungen verlässliche Standards entstehen.",
+      "source_text_sha256": "c83ba139bb5ce7cc81924b9ec5b4379c576f18f5d5f4d9bb406881445824db23",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0559-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0560",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b001@99.21,130.76,184.45,147.46",
+      "source_excerpt": "Best Practice",
+      "source_text_normalized": "Best Practice",
+      "source_text_sha256": "4e0bdb796a00047169d9da17d6a5b49cce67761e1caf4eaf6d1f9bdbc91233c9",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0561",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b002@99.21,157.48,498.38,238.99",
+      "source_excerpt": "Vereinigtes Königreich (Multi Agency Safeguarding Hubs, MASH): In behördenübergreifenden Kinderschutzteams werden Informationen von Jugendhilfe, Polizei, Schulen und Gesundheitsdiensten an einer zentralen Stelle gebündelt. Risiken werden gemeinsam bewertet und Maßnahmen abgestim…",
+      "source_text_normalized": "Vereinigtes Königreich (Multi Agency Safeguarding Hubs, MASH): In behördenübergreifenden Kinderschutzteams werden Informationen von Jugendhilfe, Polizei, Schulen und Gesundheitsdiensten an einer zentralen Stelle gebündelt. Risiken werden gemeinsam bewertet und Maßnahmen abgestimmt eingeleitet. Dadurch entstehen schnellere, koordinierte Entscheidungen und weniger Informationsverluste im Kinderschutz.",
+      "source_text_sha256": "c5cfdbb895f9e57ae68865735275d0ed8d0d7a39c6f2c80e05dc2fab1796e7f1",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0562",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b003@85.04,274.44,290.49,291.00",
+      "source_excerpt": "Jetzt Opfer gezielter schützen",
+      "source_text_normalized": "Jetzt Opfer gezielter schützen",
+      "source_text_sha256": "ddf651c7092168fdf4c19c2d517daac81bae3cad998c926b348fee3a36d042f7",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0563",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b004@85.04,299.00,512.80,391.68",
+      "source_excerpt": "Wir stärken den sofortigen Schutz von Opfern. Wir bauen regionale Anlaufstellen aus, die insbesondere Opfern extremistischer, rassistischer und anti-queerer Gewalt psychologische Betreuung, Rechtsberatung und Soforthilfe bieten. Berlin zeigt mit LSBTQIA* Kontaktpersonen in der S…",
+      "source_text_normalized": "Wir stärken den sofortigen Schutz von Opfern. Wir bauen regionale Anlaufstellen aus, die insbesondere Opfern extremistischer, rassistischer und anti-queerer Gewalt psychologische Betreuung, Rechtsberatung und Soforthilfe bieten. Berlin zeigt mit LSBTQIA* Kontaktpersonen in der Staatsanwaltschaft bereits, dass Angebote zur Aufklärung in der Community und zur Sensibilisierung des Personals gemacht werden konnten.",
+      "source_text_sha256": "753319e375d753fa34da31bcb21371d462d6e85382660e137325b77fb22bc212",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0563-A01",
+        "BE-VOLT-2026-SU-0563-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0564",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b005@85.04,400.69,512.79,509.38",
+      "source_excerpt": "Wir schützen Frauen*, die häusliche Gewalt erlebt haben, vor weiterer Gewalt. Dafür verpflichten wir Täter*innen, eine Fußfessel zu tragen, die dazu führt, dass Täter*innen sich ihren Opfern nicht unbemerkt nähern können. Wir bauen die Frauenhaus- Infrastruktur in Berlin bedarfs…",
+      "source_text_normalized": "Wir schützen Frauen*, die häusliche Gewalt erlebt haben, vor weiterer Gewalt. Dafür verpflichten wir Täter*innen, eine Fußfessel zu tragen, die dazu führt, dass Täter*innen sich ihren Opfern nicht unbemerkt nähern können. Wir bauen die Frauenhaus- Infrastruktur in Berlin bedarfsgerecht aus und schaffen mindestens 330 zusätzliche Frauenhausbetten, um die Vorgaben der Istanbul-Konvention vollständig zu erfüllen und allen schutzbedürftigen Frauen* und ihren Kindern in Berlin eine sichere Zuflucht zu ermöglichen.",
+      "source_text_sha256": "85d3a82d35e146fd2d328024f56dc619d9388b6e3dabe759e0b436d420bed306",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0564-A01",
+        "BE-VOLT-2026-SU-0564-A02",
+        "BE-VOLT-2026-SU-0564-A03",
+        "BE-VOLT-2026-SU-0564-A04"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0565",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b006@85.04,518.39,512.78,611.08",
+      "source_excerpt": "Wir bekämpfen digitale sexuelle Gewalt als eigenständige Form von Gewalt. Wir sichern die dauerhafte öffentliche Finanzierung bestehender Beratungsangebote wie HateAid und LARA Berlin, damit Betroffene ohne Wartezeiten rechtliche Erstberatung, Löschungsunterstützung und psycholo…",
+      "source_text_normalized": "Wir bekämpfen digitale sexuelle Gewalt als eigenständige Form von Gewalt. Wir sichern die dauerhafte öffentliche Finanzierung bestehender Beratungsangebote wie HateAid und LARA Berlin, damit Betroffene ohne Wartezeiten rechtliche Erstberatung, Löschungsunterstützung und psychologische Begleitung erhalten. Innerhalb des LKA richten wir eine spezialisierte Ermittlungsgruppe für digitale sexuelle Gewalt gegen Personen ein.",
+      "source_text_sha256": "809aee4da5e45aff42037b0d5c43b037efdcdb2d635c32330df3bb5ae036b7f7",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0565-A01",
+        "BE-VOLT-2026-SU-0565-A02",
+        "BE-VOLT-2026-SU-0565-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0566",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b007@85.04,620.09,512.79,680.76",
+      "source_excerpt": "Wir verbessern die Zusammenarbeit der Behörden, um Stalking und Gewalt früh zu erkennen und weitere Taten zu verhindern. Dazu setzen wir das bereits verabschiedete „Rahmenkonzept zum Gefährdungsmanagement und zur Durchführung multiinstitutioneller Fallkonferenzen” konsequent um.",
+      "source_text_normalized": "Wir verbessern die Zusammenarbeit der Behörden, um Stalking und Gewalt früh zu erkennen und weitere Taten zu verhindern. Dazu setzen wir das bereits verabschiedete „Rahmenkonzept zum Gefährdungsmanagement und zur Durchführung multiinstitutioneller Fallkonferenzen” konsequent um.",
+      "source_text_sha256": "7c521d3281056be8fec701e8cc67877c32a171c6d84f38590ec882c16788c477",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0566-A01",
+        "BE-VOLT-2026-SU-0566-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0567",
+      "pdf_page": 75,
+      "pdf_pages": [
+        75
+      ],
+      "source_locator": "p075:b008@85.04,689.77,512.79,750.45",
+      "source_excerpt": "Wir erfassen Kinder in Haushalten mit häuslicher Gewalt systematisch als Betroffene und melden sie verpflichtend an die Jugendämter. Digitale, datenschutzkonforme Meldewege sorgen dafür, dass relevante Informationen schnell und zuverlässig ankommen.",
+      "source_text_normalized": "Wir erfassen Kinder in Haushalten mit häuslicher Gewalt systematisch als Betroffene und melden sie verpflichtend an die Jugendämter. Digitale, datenschutzkonforme Meldewege sorgen dafür, dass relevante Informationen schnell und zuverlässig ankommen.",
+      "source_text_sha256": "10c522248236f46d6b207bb8b4fc695f013d1319a9fcabd7db1f9c0a2c811309",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0567-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0568",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b001@85.04,97.17,512.81,221.86",
+      "source_excerpt": "Wir stärken und reorganisieren die Regionalen Sozialpädagogischen Dienste der Jugendämter: Kinderschutz wird klar von allgemeinen Beratungs- und Unterstützungsaufgaben getrennt und in spezialisierten, interdisziplinären Teams gebündelt. Diese Spezialisierung erhöht die fachliche…",
+      "source_text_normalized": "Wir stärken und reorganisieren die Regionalen Sozialpädagogischen Dienste der Jugendämter: Kinderschutz wird klar von allgemeinen Beratungs- und Unterstützungsaufgaben getrennt und in spezialisierten, interdisziplinären Teams gebündelt. Diese Spezialisierung erhöht die fachliche Qualität, beschleunigt Entscheidungen und verbessert die Gefährdungseinschätzung. So entsteht mehr Raum für Beratung, Beziehungsarbeit und nachhaltige Stabilisierung von Familien. Wir bauen den Ansatz des Childhood-Hauses an der Charité zur Versorgung minderjähriger Gewaltopfer an weiteren Standorten aus.",
+      "source_text_sha256": "839b0e658b2839970aa647f215e17a6eab19aa3816314a1aa825c1991df24622",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0568-A01",
+        "BE-VOLT-2026-SU-0568-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0569",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b002@85.04,230.87,512.80,275.54",
+      "source_excerpt": "Wir bauen die Kapazitäten in Krisen- und stationären Einrichtungen bedarfsgerecht aus. Jedes Kind muss im Notfall schnell einen sicheren und passenden Platz erhalten, möglichst wohnortnah, um soziale Bindungen und schulische Stabilität zu erhalten.",
+      "source_text_normalized": "Wir bauen die Kapazitäten in Krisen- und stationären Einrichtungen bedarfsgerecht aus. Jedes Kind muss im Notfall schnell einen sicheren und passenden Platz erhalten, möglichst wohnortnah, um soziale Bindungen und schulische Stabilität zu erhalten.",
+      "source_text_sha256": "90194f4da9fd680bc9a11df08efa9f64c8aea23f80bd2ad10608dd5a08282d03",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0569-A01",
+        "BE-VOLT-2026-SU-0569-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0570",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b003@99.21,296.43,184.45,313.13",
+      "source_excerpt": "Best Practice",
+      "source_text_normalized": "Best Practice",
+      "source_text_sha256": "4e0bdb796a00047169d9da17d6a5b49cce67761e1caf4eaf6d1f9bdbc91233c9",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0571",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b004@99.21,323.14,498.41,390.65",
+      "source_excerpt": "Spanien (Fußfessel): Spanien verpflichtet verurteilte Täter häuslicher Gewalt zum Tragen einer elektronischen Fußfessel, die bei Annäherung an das Opfer automatisch Alarm schlägt und ein Eingreifen der Behörden auslöst. Seit Einführung der Fußfessel hat kein einziger Femizid wäh…",
+      "source_text_normalized": "Spanien (Fußfessel): Spanien verpflichtet verurteilte Täter häuslicher Gewalt zum Tragen einer elektronischen Fußfessel, die bei Annäherung an das Opfer automatisch Alarm schlägt und ein Eingreifen der Behörden auslöst. Seit Einführung der Fußfessel hat kein einziger Femizid während der Überwachung stattgefunden, im Schnitt sind pro Jahr zwischen 4.500 und 4.800 Fußfesseln im Einsatz.",
+      "source_text_sha256": "da80f44abc5d570a5192a9ce48dda14129c15f78503e79dd82bf174f13ddf844",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0572",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b005@99.21,407.14,498.41,488.65",
+      "source_excerpt": "Großbritannien (MARACs): MARACs (Multi-Behörden-Risikobeurteilungskonferenzen) sind Treffen, bei denen Fachleute aus Polizei, Gesundheitswesen, Wohnungswesen, Kinderschutz und anderen Behörden zusammenarbeiten, um Opfer häuslicher Gewalt mit dem höchsten Risiko zu schützen. Bis…",
+      "source_text_normalized": "Großbritannien (MARACs): MARACs (Multi-Behörden-Risikobeurteilungskonferenzen) sind Treffen, bei denen Fachleute aus Polizei, Gesundheitswesen, Wohnungswesen, Kinderschutz und anderen Behörden zusammenarbeiten, um Opfer häuslicher Gewalt mit dem höchsten Risiko zu schützen. Bis zu 60 % der Opfer berichten nach einer MARAC-Intervention von keiner weiteren Gewalt. Für jedes ausgegebene £1 werden schätzungsweise £6 an öffentlichen Geldern eingespart.",
+      "source_text_sha256": "df87bdd11812c0d9ca0d77493b7cd8d5ccfd19a879f96f282769c21daadbdfe8",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0573",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b006@99.21,505.14,498.36,572.65",
+      "source_excerpt": "Island und Schweden (Barnahus-Modell): Das Barnahus-Modell vereint Polizei, Justiz, Jugendhilfe und Medizin unter einem Dach, um kindgerechte Verfahren bei Gewaltund Missbrauchsfällen zu ermöglichen. Kinder werden nur einmal befragt und erhalten parallel medizinische und psychol…",
+      "source_text_normalized": "Island und Schweden (Barnahus-Modell): Das Barnahus-Modell vereint Polizei, Justiz, Jugendhilfe und Medizin unter einem Dach, um kindgerechte Verfahren bei Gewaltund Missbrauchsfällen zu ermöglichen. Kinder werden nur einmal befragt und erhalten parallel medizinische und psychologische Unterstützung. Das reduziert Belastungen und verbessert Aufklärung und Schutz deutlich.",
+      "source_text_sha256": "8f1b17a813f963e710dfe9e7d44ed67199a94540ec3e7d9158f4abb68b0f2fc7",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0574",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b007@85.04,608.11,423.24,624.67",
+      "source_excerpt": "Jetzt Polizei und Justiz stärken und modernisieren",
+      "source_text_normalized": "Jetzt Polizei und Justiz stärken und modernisieren",
+      "source_text_sha256": "2f170faf15e781ba313e40e24ca3b87497fe3a768f209f2cf923350b6cd31d81",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0575",
+      "pdf_page": 76,
+      "pdf_pages": [
+        76
+      ],
+      "source_locator": "p076:b008@85.04,632.67,512.78,709.35",
+      "source_excerpt": "Wir verbessern die personelle Ausstattung der Polizei und der Justiz, um eine höhere Streifendichte und die konsequente Verfolgung und Bestrafung von Straftaten zu gewährleisten. Wir setzen auf eine sinnvolle Aufgabenverteilung zwischen Polizei und Ordnungsdiensten, damit Polizi…",
+      "source_text_normalized": "Wir verbessern die personelle Ausstattung der Polizei und der Justiz, um eine höhere Streifendichte und die konsequente Verfolgung und Bestrafung von Straftaten zu gewährleisten. Wir setzen auf eine sinnvolle Aufgabenverteilung zwischen Polizei und Ordnungsdiensten, damit Polizist*innen sich auf ihre Kernaufgaben konzentrieren können.",
+      "source_text_sha256": "9bc254383c68c8497d6db18739f73e426f30640375c1832e896dfbee6da16eb8",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0575-A01",
+        "BE-VOLT-2026-SU-0575-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0576",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b001@85.04,97.17,512.80,157.84",
+      "source_excerpt": "Wir setzen moderne Software ein und verändern die regionalen Zuständigkeiten für Polizeiabschnitte, damit Reaktionszeiten messbar sinken. Auch vernetzen wir Leitstellen digital, erkennen so Engpässe früher und setzen die Polizei gezielt dort ein, wo sie gebraucht wird.",
+      "source_text_normalized": "Wir setzen moderne Software ein und verändern die regionalen Zuständigkeiten für Polizeiabschnitte, damit Reaktionszeiten messbar sinken. Auch vernetzen wir Leitstellen digital, erkennen so Engpässe früher und setzen die Polizei gezielt dort ein, wo sie gebraucht wird.",
+      "source_text_sha256": "efeec70f267a1b9d1caba573398b03b48c8987d92cd3a23ac3cfe2cb7834ecf4",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0576-A01",
+        "BE-VOLT-2026-SU-0576-A02",
+        "BE-VOLT-2026-SU-0576-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0577",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b002@85.04,166.85,512.78,275.54",
+      "source_excerpt": "Wir modernisieren die Polizei mit digitalen Tools, die im Alltag helfen: die E-Akte, die digitale Erfassung von Parkverstößen sowie der Einsatz von KI beim Verfassen von Einsatzberichten. Gleichzeitig gelten für KI klare Datenschutzregeln, kurze Speicherfristen, keine biometrisc…",
+      "source_text_normalized": "Wir modernisieren die Polizei mit digitalen Tools, die im Alltag helfen: die E-Akte, die digitale Erfassung von Parkverstößen sowie der Einsatz von KI beim Verfassen von Einsatzberichten. Gleichzeitig gelten für KI klare Datenschutzregeln, kurze Speicherfristen, keine biometrische Echtzeit-Überwachung und immer menschliche Kontrolle. So erhöhen wir Effizienz und Erfolgswahrscheinlichkeit von Strafverfolgung und schützen zugleich die Grundrechte der Berliner*innen, verhindern Diskriminierung und wahren Transparenz in den Entscheidungsprozessen.",
+      "source_text_sha256": "87370ad58545cc1b1b965e2b6e285b2b6a228c38fb2764ae2b390f1297209388",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0577-A01",
+        "BE-VOLT-2026-SU-0577-A02",
+        "BE-VOLT-2026-SU-0577-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0578",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b003@99.21,296.43,184.45,313.13",
+      "source_excerpt": "Best Practice",
+      "source_text_normalized": "Best Practice",
+      "source_text_sha256": "4e0bdb796a00047169d9da17d6a5b49cce67761e1caf4eaf6d1f9bdbc91233c9",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0579",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b004@99.21,323.14,498.38,362.65",
+      "source_excerpt": "Frankfurt am Main (klare Aufgabentrennung): Frankfurt am Main hat die Aufgaben zwischen Polizei und Ordnungsamt klarer getrennt und das Ordnungsamt personell gestärkt, wodurch die Polizei gezielter für ihre Kernaufgaben eingesetzt werden kann.",
+      "source_text_normalized": "Frankfurt am Main (klare Aufgabentrennung): Frankfurt am Main hat die Aufgaben zwischen Polizei und Ordnungsamt klarer getrennt und das Ordnungsamt personell gestärkt, wodurch die Polizei gezielter für ihre Kernaufgaben eingesetzt werden kann.",
+      "source_text_sha256": "2899acf811d19445de63ce1222e6d4e25a0df3fbe02d1e673ef9c40e8d0819a0",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0580",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b005@85.04,398.11,464.88,414.67",
+      "source_excerpt": "Jetzt Ausbildung verbessern und Verantwortung stärken",
+      "source_text_normalized": "Jetzt Ausbildung verbessern und Verantwortung stärken",
+      "source_text_sha256": "c8ed53c2dc18bb5204cf7ab13e983963d6ca49f1960a6e8569b0a18bb498784b",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0581",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b006@85.04,422.67,512.80,499.35",
+      "source_excerpt": "Wir schaffen bessere Auswahlverfahren, kleinere Ausbildungsgruppen und verpflichtende Weiterbildungen und heben so das Niveau der Polizeiausbildung nachhaltig an. Kooperationen mit externen Einrichtungen, Mentoringprogramme, Wertevermittlung und unabhängige Qualitätssicherung er…",
+      "source_text_normalized": "Wir schaffen bessere Auswahlverfahren, kleinere Ausbildungsgruppen und verpflichtende Weiterbildungen und heben so das Niveau der Polizeiausbildung nachhaltig an. Kooperationen mit externen Einrichtungen, Mentoringprogramme, Wertevermittlung und unabhängige Qualitätssicherung erhöhen den Ausbildungsstandard.",
+      "source_text_sha256": "74d590b17c2de87ff44e52e29a612124fe39e70846482d13218396eab67d0f42",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0581-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0582",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b007@85.04,508.36,512.83,569.03",
+      "source_excerpt": "Wir verpflichten Polizist*innen zu regelmäßigen Schulungen über Rechtsextremismus, Sexismus, Rassismus und Diskriminierung. Wir trainieren Polizist*innen im Umgang mit besonders vulnerablen Gruppen, wie Personen mit psychischen Erkrankungen oder Sprachbarrieren. So vermeiden wir…",
+      "source_text_normalized": "Wir verpflichten Polizist*innen zu regelmäßigen Schulungen über Rechtsextremismus, Sexismus, Rassismus und Diskriminierung. Wir trainieren Polizist*innen im Umgang mit besonders vulnerablen Gruppen, wie Personen mit psychischen Erkrankungen oder Sprachbarrieren. So vermeiden wir ungewollte und unnötige Konflikteskalationen.",
+      "source_text_sha256": "837ed5dac730e12ffa7c1e93fff0033abd8e942a7b16d900f03d828485668b9a",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0582-A01",
+        "BE-VOLT-2026-SU-0582-A02",
+        "BE-VOLT-2026-SU-0582-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0583",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b008@85.04,578.04,512.77,606.71",
+      "source_excerpt": "Wir verankern das Recht auf sexuelle Selbstbestimmung und das Sexualstrafrecht als Bestandteil der Jurist*innenausbildung in Berlin.",
+      "source_text_normalized": "Wir verankern das Recht auf sexuelle Selbstbestimmung und das Sexualstrafrecht als Bestandteil der Jurist*innenausbildung in Berlin.",
+      "source_text_sha256": "19277079d666f4b4466a8149082f7fcb95059650aa8ebfe8f373e540a0b51160",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0583-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0584",
+      "pdf_page": 77,
+      "pdf_pages": [
+        77
+      ],
+      "source_locator": "p077:b009@85.04,615.72,512.79,676.39",
+      "source_excerpt": "Wir stärken den „Bürger- und Polizeibeauftragten des Landes Berlin” als anonyme Meldestelle, indem er Zugang zu Ermittlungsakten und eigene Ermittlungskompetenzen erhält. So können rechtsextreme, queer-feindliche, rassistische oder sexistische Äußerungen im Dienst aufgedeckt und…",
+      "source_text_normalized": "Wir stärken den „Bürger- und Polizeibeauftragten des Landes Berlin” als anonyme Meldestelle, indem er Zugang zu Ermittlungsakten und eigene Ermittlungskompetenzen erhält. So können rechtsextreme, queer-feindliche, rassistische oder sexistische Äußerungen im Dienst aufgedeckt und sanktioniert werden.",
+      "source_text_sha256": "ad32c92ff1d85f7b1064f61f0aadd9f82c779ece15489a498ba2d501c4592ac5",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0584-A01",
+        "BE-VOLT-2026-SU-0584-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0585",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b001@85.04,97.17,512.78,173.85",
+      "source_excerpt": "Wir geben eine Studie in Auftrag, die gruppenbezogene Menschenfeindlichkeit, mögliches Racial Profiling und Extremismus in Berlin untersucht. Diese Studie wertet dafür regelmäßig Polizeidaten aus und erfasst stichprobenartig, wie Personenkontrollen durchgeführt werden. Basierend…",
+      "source_text_normalized": "Wir geben eine Studie in Auftrag, die gruppenbezogene Menschenfeindlichkeit, mögliches Racial Profiling und Extremismus in Berlin untersucht. Diese Studie wertet dafür regelmäßig Polizeidaten aus und erfasst stichprobenartig, wie Personenkontrollen durchgeführt werden. Basierend auf der Studie leiten wir konkrete Maßnahmen ab.",
+      "source_text_sha256": "b52a427a1af74c57f9574608e9fda2c7ca7f3dbf1bb22552e3711695bff046f5",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0585-A01",
+        "BE-VOLT-2026-SU-0585-A02",
+        "BE-VOLT-2026-SU-0585-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0586",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b002@85.04,192.09,372.66,208.65",
+      "source_excerpt": "Jetzt öffentliche Räume sicherer gestalten",
+      "source_text_normalized": "Jetzt öffentliche Räume sicherer gestalten",
+      "source_text_sha256": "3cbc4ffc7c1dd78356cb48f18c96852d5e4f2149b3d1838b1c7b8cbb6bb04fc5",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0587",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b003@85.04,216.64,512.82,261.31",
+      "source_excerpt": "Wir erarbeiten ein Konzept, das es allen Menschen ermöglicht, sich in Grün- und Bewegungsräumen sowie im öffentlichen Raum sicher zu fühlen, etwa durch bessere Beleuchtung und Begrünung.",
+      "source_text_normalized": "Wir erarbeiten ein Konzept, das es allen Menschen ermöglicht, sich in Grün- und Bewegungsräumen sowie im öffentlichen Raum sicher zu fühlen, etwa durch bessere Beleuchtung und Begrünung.",
+      "source_text_sha256": "55ebc7e8ff2390654be45d5128887f5dca6b87cd31ec7c1ff583cc68882c41cc",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0587-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0588",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b004@85.04,270.32,512.80,314.99",
+      "source_excerpt": "Wir führen niedrigschwellige digitale Meldesysteme ein, über die Bürger*innen unsichere Orte anonym markieren können und über Aufklärungsquoten und verhängte Bußgelder informiert werden.",
+      "source_text_normalized": "Wir führen niedrigschwellige digitale Meldesysteme ein, über die Bürger*innen unsichere Orte anonym markieren können und über Aufklärungsquoten und verhängte Bußgelder informiert werden.",
+      "source_text_sha256": "c1b2da44f8561c60bc70409b51495e82db1279d11c2a984c5533881b27a9b387",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0588-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0589",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b005@85.04,324.00,512.81,384.68",
+      "source_excerpt": "Wir stehen dem Einsatz von Bodycams in Berlin positiv gegenüber, da dies die Transparenz erhöht und deeskalierend wirkt. Jedoch verpflichten wir Beamt*innen, die Kamera bei Einsätzen anzuschalten, statten alle eingesetzten Kräfte mit Kameras aus und stellen sicher, dass Einsatzb…",
+      "source_text_normalized": "Wir stehen dem Einsatz von Bodycams in Berlin positiv gegenüber, da dies die Transparenz erhöht und deeskalierend wirkt. Jedoch verpflichten wir Beamt*innen, die Kamera bei Einsätzen anzuschalten, statten alle eingesetzten Kräfte mit Kameras aus und stellen sicher, dass Einsatzbeamte die Daten nicht selbst löschen können.",
+      "source_text_sha256": "49295109a9bc47bffd9d0dfd0b26380890127e79b74a87997bbfb737b6fe85f3",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0589-A01",
+        "BE-VOLT-2026-SU-0589-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0590",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b006@85.04,393.69,512.79,438.36",
+      "source_excerpt": "Wir setzen für Ermittlungssoftware auf europäische Unternehmen. Sie sind datenschutzfreundlich und vermeiden teure Abhängigkeiten. Unser Grundsatz: Öffentliche Sicherheit braucht europäische digitale Souveränität.",
+      "source_text_normalized": "Wir setzen für Ermittlungssoftware auf europäische Unternehmen. Sie sind datenschutzfreundlich und vermeiden teure Abhängigkeiten. Unser Grundsatz: Öffentliche Sicherheit braucht europäische digitale Souveränität.",
+      "source_text_sha256": "d1d74c0453ebb7b078cdd4e1025683b741e4fabe68019a656b96b087bb7a18ef",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0590-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0591",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b007@85.04,447.37,512.80,508.04",
+      "source_excerpt": "Wir setzen uns für ein umfassendes Böllerverbot im Privatbereich ein. Es schützt Einsatzkräfte, reduziert Verletzungsrisiken im öffentlichen Raum und entlastet gleichzeitig Tiere. Wir ergänzen das Verbot durch Aufklärungskampagnen und unterstützen die Einsatzkonzepte von Feuerwe…",
+      "source_text_normalized": "Wir setzen uns für ein umfassendes Böllerverbot im Privatbereich ein. Es schützt Einsatzkräfte, reduziert Verletzungsrisiken im öffentlichen Raum und entlastet gleichzeitig Tiere. Wir ergänzen das Verbot durch Aufklärungskampagnen und unterstützen die Einsatzkonzepte von Feuerwehr, Rettungsdiensten und Polizei.",
+      "source_text_sha256": "4f9e08d383f6c8ca2fea798573733ecc0ad8929879d2dc9535ca74ce9a3564ea",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0591-A01",
+        "BE-VOLT-2026-SU-0591-A02",
+        "BE-VOLT-2026-SU-0591-A03"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0592",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b008@85.04,526.24,462.13,542.80",
+      "source_excerpt": "Jetzt Organisierte Kriminalität entschlossen bekämpfen",
+      "source_text_normalized": "Jetzt Organisierte Kriminalität entschlossen bekämpfen",
+      "source_text_sha256": "8e87bc097c812c3f86b9aebfca5cf57138bb4612ed2e5ab0a645d0250e0e016a",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0593",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b009@85.04,550.80,512.82,627.48",
+      "source_excerpt": "Wir entwickeln die polizeilichen Entscheidungsunterstützungssysteme, wie »Radar« des Bundeskriminalamts, im Land Berlin weiter, um die Bevölkerung besser vor organisierter Kriminalität zu schützen. Wir bekämpfen die Netzwerke der kriminellen Systeme als Ganzes. Wir arbeiten dafü…",
+      "source_text_normalized": "Wir entwickeln die polizeilichen Entscheidungsunterstützungssysteme, wie »Radar« des Bundeskriminalamts, im Land Berlin weiter, um die Bevölkerung besser vor organisierter Kriminalität zu schützen. Wir bekämpfen die Netzwerke der kriminellen Systeme als Ganzes. Wir arbeiten dafür mit europäischen und internationalen Behörden und Partnern zusammen.",
+      "source_text_sha256": "02d8623c81f1931f734c7419bd5ae8678e40d028c30bf6105c2feec22fb59f36",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0593-A01",
+        "BE-VOLT-2026-SU-0593-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0594",
+      "pdf_page": 78,
+      "pdf_pages": [
+        78
+      ],
+      "source_locator": "p078:b010@85.04,636.49,512.79,681.16",
+      "source_excerpt": "Wir verhindern, dass sich organisierte Kriminalität in Berlin hinter verschleierten Vermögen versteckt. Wir setzen uns deshalb auf Bundesebene dafür ein, die Beweislastumkehr einzuführen.",
+      "source_text_normalized": "Wir verhindern, dass sich organisierte Kriminalität in Berlin hinter verschleierten Vermögen versteckt. Wir setzen uns deshalb auf Bundesebene dafür ein, die Beweislastumkehr einzuführen.",
+      "source_text_sha256": "f7b9825845e4c78faa3f19ad72d7f66d55912eea7064e6c1764ad0992d761af1",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0594-A01",
+        "BE-VOLT-2026-SU-0594-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0595",
+      "pdf_page": 79,
+      "pdf_pages": [
+        79
+      ],
+      "source_locator": "p079:b001@85.04,97.17,512.80,157.84",
+      "source_excerpt": "Wir bauen die Kapazitäten zur Bekämpfung von Finanzkriminalität in Berlin gezielt aus. Wir ermöglichen deutlich mehr spezialisiertes Personal, schnelle Meldungen des Zolls an die lokale Polizei, moderne Datenanalyse-Technik, eine einheitliche, leistungsfähige IT-Infrastruktur un…",
+      "source_text_normalized": "Wir bauen die Kapazitäten zur Bekämpfung von Finanzkriminalität in Berlin gezielt aus. Wir ermöglichen deutlich mehr spezialisiertes Personal, schnelle Meldungen des Zolls an die lokale Polizei, moderne Datenanalyse-Technik, eine einheitliche, leistungsfähige IT-Infrastruktur und klare Kompetenzen für komplexe Fälle und Steuerbetrug.",
+      "source_text_sha256": "534d1203bed9e926d92684a3ba81a0efca1a63a5a1bc8da49a180202c779127a",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0595-A01",
+        "BE-VOLT-2026-SU-0595-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0596",
+      "pdf_page": 79,
+      "pdf_pages": [
+        79
+      ],
+      "source_locator": "p079:b002@99.21,178.76,184.45,195.46",
+      "source_excerpt": "Best Practice",
+      "source_text_normalized": "Best Practice",
+      "source_text_sha256": "4e0bdb796a00047169d9da17d6a5b49cce67761e1caf4eaf6d1f9bdbc91233c9",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0597",
+      "pdf_page": 79,
+      "pdf_pages": [
+        79
+      ],
+      "source_locator": "p079:b003@99.21,205.48,498.38,258.99",
+      "source_excerpt": "Italien (Beweislastumkehr): In Italien müssen Personen, die der organisierten Kriminalität verdächtigt werden, bei deutlichem Missverhältnis zwischen legalem Einkommen und tatsächlichem Vermögen selbst nachweisen, dass ihr Vermögen legal erworben wurde. Können sie das nicht, wir…",
+      "source_text_normalized": "Italien (Beweislastumkehr): In Italien müssen Personen, die der organisierten Kriminalität verdächtigt werden, bei deutlichem Missverhältnis zwischen legalem Einkommen und tatsächlichem Vermögen selbst nachweisen, dass ihr Vermögen legal erworben wurde. Können sie das nicht, wird es eingezogen.",
+      "source_text_sha256": "15fa1c87d2ac08d7e572fcb20a76863f1260708f7705a6e725194365184e051c",
+      "source_visual_role": "BEST_PRACTICE_BOX",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0598",
+      "pdf_page": 79,
+      "pdf_pages": [
+        79
+      ],
+      "source_locator": "p079:b004@85.04,294.44,376.04,311.00",
+      "source_excerpt": "Jetzt Katastrophenschutz gezielt ausbauen",
+      "source_text_normalized": "Jetzt Katastrophenschutz gezielt ausbauen",
+      "source_text_sha256": "494949d5080757f5be12090669c0be8dd6d00516d5cfcd5f25b92cd1b4255aed",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0599",
+      "pdf_page": 79,
+      "pdf_pages": [
+        79
+      ],
+      "source_locator": "p079:b005@85.04,319.00,512.79,363.67",
+      "source_excerpt": "Wir setzen uns für ein europäisches und smartes Frühwarnsystem und ein gut durchdachtes, Berlin-spezifisches Schutzkonzept unter Einbeziehung aller wichtigen Behörden ein.",
+      "source_text_normalized": "Wir setzen uns für ein europäisches und smartes Frühwarnsystem und ein gut durchdachtes, Berlin-spezifisches Schutzkonzept unter Einbeziehung aller wichtigen Behörden ein.",
+      "source_text_sha256": "8c7ecb94051e2852a91e9985ebe0693bb41691bd2cf40186503122e703693bde",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0599-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0600",
+      "pdf_page": 79,
+      "pdf_pages": [
+        79
+      ],
+      "source_locator": "p079:b006@85.04,372.68,512.79,497.37",
+      "source_excerpt": "Wir schaffen eine krisensichere Verwaltung. Wir bauen die Infrastruktur für den Katastrophenfall weiter aus, z. B. mit Schutz- und Vorratsräumen, flächendeckendem Cell-Broadcast und mit stärkerer Einbindung in die Zivilschutz-Sicherheitsarchitektur von Ländern, Bund und EU. Das…",
+      "source_text_normalized": "Wir schaffen eine krisensichere Verwaltung. Wir bauen die Infrastruktur für den Katastrophenfall weiter aus, z. B. mit Schutz- und Vorratsräumen, flächendeckendem Cell-Broadcast und mit stärkerer Einbindung in die Zivilschutz-Sicherheitsarchitektur von Ländern, Bund und EU. Das gewährleisten wir mit der flexiblen Einsatzbereitschaft der Katastrophenschutz-Leuchttürme in allen zwölf Bezirken. Außerdem organisieren wir regelmäßig gemeinsame Übungen für die verschiedenen Einsatzkräfte und die Bevölkerung. Wir schützen besonders vulnerable Gruppen, wie pflegebedürftige Menschen, mit einem inklusiven Katastrophenschutzmanagement.",
+      "source_text_sha256": "871de61ac56754aae67b6c5541171d6994d6fbd3f757584178f3c017b4434b4b",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0600-A01",
+        "BE-VOLT-2026-SU-0600-A02",
+        "BE-VOLT-2026-SU-0600-A03",
+        "BE-VOLT-2026-SU-0600-A04",
+        "BE-VOLT-2026-SU-0600-A05"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0601",
+      "pdf_page": 79,
+      "pdf_pages": [
+        79
+      ],
+      "source_locator": "p079:b007@85.04,506.38,512.80,615.07",
+      "source_excerpt": "Wir investieren in ein widerstandsfähiges Stromnetz, statt nur in die Kameraüberwachung von kritischer Strom-Infrastruktur. Dafür setzen wir auf allen Netzebenen das N-1-Prinzip verbindlich um, um sicherzustellen, dass das Netz auch dann funktionsfähig bleibt, wenn eine Komponen…",
+      "source_text_normalized": "Wir investieren in ein widerstandsfähiges Stromnetz, statt nur in die Kameraüberwachung von kritischer Strom-Infrastruktur. Dafür setzen wir auf allen Netzebenen das N-1-Prinzip verbindlich um, um sicherzustellen, dass das Netz auch dann funktionsfähig bleibt, wenn eine Komponente ausfällt. Zusätzlich schaffen wir Mechanismen, um Komponenten schneller zu ersetzen und die Versorgung wiederherzustellen. So verhindern wir Versorgungsausfälle nachhaltig und sichern die Infrastruktur gegenüber Unfällen, Naturereignissen und Sabotage proaktiv ab.",
+      "source_text_sha256": "a98454e293ea12024425741dd4b757c0ab96d4f9bccae78a2986911f6e568c90",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0601-A01",
+        "BE-VOLT-2026-SU-0601-A02",
+        "BE-VOLT-2026-SU-0601-A03",
+        "BE-VOLT-2026-SU-0601-A04",
+        "BE-VOLT-2026-SU-0601-A05"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0602",
+      "pdf_page": 80,
+      "pdf_pages": [
+        80
+      ],
+      "source_locator": "p080:b001@85.04,96.24,386.23,134.36",
+      "source_excerpt": "BERLIN SCHÜTZT: MIT EINER GESUNDHEITSVERSORGUNG FÜR ALLE",
+      "source_text_normalized": "BERLIN SCHÜTZT: MIT EINER GESUNDHEITSVERSORGUNG FÜR ALLE",
+      "source_text_sha256": "1d394fd51e96c1c3261dba1b59410b98588d35cc44bd630835f28c965bc15b79",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0603",
+      "pdf_page": 80,
+      "pdf_pages": [
+        80
+      ],
+      "source_locator": "p080:b002@85.04,141.92,512.80,266.61",
+      "source_excerpt": "Berlins Gesundheitssystem hat erhebliche Lücken. Rund 60.000 Berliner*innen haben keinen geregelten Zugang zur Gesundheitsversorgung und überlasten damit die Rettungsstellen. Etwa 450.000 Menschen leiden an Depressionen, Angebote für psychische Gesundheit reichen bei weitem nich…",
+      "source_text_normalized": "Berlins Gesundheitssystem hat erhebliche Lücken. Rund 60.000 Berliner*innen haben keinen geregelten Zugang zur Gesundheitsversorgung und überlasten damit die Rettungsstellen. Etwa 450.000 Menschen leiden an Depressionen, Angebote für psychische Gesundheit reichen bei weitem nicht aus. Ebenso fehlen Angebote zur spezifischen Beratung und Behandlung von postinfektiösen Erkrankungen. Rund 80 % der 212.000 Pflegebedürftigen werden von Angehörigen zu Hause versorgt, oft ohne ausreichende Unterstützung. Drogenbedingte Überdosierungen steigen. Und Lärm, Hitze und hohe Lebenshaltungskosten erhöhen das Erkrankungsrisiko zusätzlich.",
+      "source_text_sha256": "a97a1dabff74e85505c30ec17956e8659d97366a3f232f69b381417aec39378b",
+      "source_visual_role": "BODY",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0604",
+      "pdf_page": 80,
+      "pdf_pages": [
+        80
+      ],
+      "source_locator": "p080:b003@85.04,275.62,512.80,368.31",
+      "source_excerpt": "Wir machen Berlin zu einer Stadt, die Menschen mit ihren gesundheitlichen Herausforderungen wirksam erreicht. Wir schaffen mit Gesundheitszentren eine wohnortnahe Versorgung und bauen Angebote für die Behandlung psychischer Erkrankungen aus. Wir helfen pflegenden Angehörigen dur…",
+      "source_text_normalized": "Wir machen Berlin zu einer Stadt, die Menschen mit ihren gesundheitlichen Herausforderungen wirksam erreicht. Wir schaffen mit Gesundheitszentren eine wohnortnahe Versorgung und bauen Angebote für die Behandlung psychischer Erkrankungen aus. Wir helfen pflegenden Angehörigen durch mehr Unterstützung und sorgen dafür, dass Drogenkonsum sicherer wird. Mit Health in All Policies verankern wir Gesundheit als Querschnittsaufgabe in allen Politikfeldern.",
+      "source_text_sha256": "f4a248d2d67de199abdbb7fc8996d2a585ab804c2372801899414330b18a1a31",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0604-A01",
+        "BE-VOLT-2026-SU-0604-A02",
+        "BE-VOLT-2026-SU-0604-A03",
+        "BE-VOLT-2026-SU-0604-A04",
+        "BE-VOLT-2026-SU-0604-A05",
+        "BE-VOLT-2026-SU-0604-A06"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0605",
+      "pdf_page": 80,
+      "pdf_pages": [
+        80
+      ],
+      "source_locator": "p080:b004@85.04,386.51,326.20,403.07",
+      "source_excerpt": "Jetzt Gesundheitszentren ausbauen",
+      "source_text_normalized": "Jetzt Gesundheitszentren ausbauen",
+      "source_text_sha256": "03a0f0ff86f5b97708a904bb604ef0828f706edf723001624e39a08c8f3b8f72",
+      "source_visual_role": "HEADING",
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0606",
+      "pdf_page": 80,
+      "pdf_pages": [
+        80
+      ],
+      "source_locator": "p080:b005@85.04,411.06,512.78,455.73",
+      "source_excerpt": "Wir bringen Gesundheit nah an die Menschen im Kiez: mit einer Ausweitung des Landesprogramms der integrierten Gesundheitszentren (LIG), die wir vor allem in strukturschwachen Bezirken wie den Außenbezirken ansiedeln.",
+      "source_text_normalized": "Wir bringen Gesundheit nah an die Menschen im Kiez: mit einer Ausweitung des Landesprogramms der integrierten Gesundheitszentren (LIG), die wir vor allem in strukturschwachen Bezirken wie den Außenbezirken ansiedeln.",
+      "source_text_sha256": "a7136b918b07bff9fd63e54326c31639a67094c593bd5a9b9255f340cfb103d0",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0606-A01"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0607",
+      "pdf_page": 80,
+      "pdf_pages": [
+        80
+      ],
+      "source_locator": "p080:b006@85.04,464.74,512.81,637.45",
+      "source_excerpt": "Wir machen Gesundheitszentren zu niedrigschwelligen „Häusern der Hilfe“, in denen multiprofessionelle Teams unter einem Dach zusammenarbeiten. Mit diesen Teams begegnen wir Krankheiten präventiv, stärken die Gesundheitskompetenz der Bevölkerung und senken langfristig Folgekosten…",
+      "source_text_normalized": "Wir machen Gesundheitszentren zu niedrigschwelligen „Häusern der Hilfe“, in denen multiprofessionelle Teams unter einem Dach zusammenarbeiten. Mit diesen Teams begegnen wir Krankheiten präventiv, stärken die Gesundheitskompetenz der Bevölkerung und senken langfristig Folgekosten von vermeidbaren chronischen Krankheiten. Wir bringen auch Hebammen sowie psychologische Angebote in diese Zentren, um eine wohnortnahe Betreuung zu gewährleisten. Jedes Gesundheitszentrum hat einen Gesundheitskiosk für Senior*innen, mit Pflegeberatung, Therapie und sozialer Unterstützung an einem Ort. Durch ausgedehnte Öffnungszeiten der Zentren entlasten wir Rettungsstellen effektiv und gewährleisten eine Akutversorgung im Bezirk. Das Ziel ist klar: Alle Berliner*innen erhalten medizinische Versorgung in ihrer Nähe.",
+      "source_text_sha256": "986ec8c1734c063a429316e61382f09031bffcbea10c33ca7ee5ecadd25fda71",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0607-A01",
+        "BE-VOLT-2026-SU-0607-A02",
+        "BE-VOLT-2026-SU-0607-A03",
+        "BE-VOLT-2026-SU-0607-A04",
+        "BE-VOLT-2026-SU-0607-A05",
+        "BE-VOLT-2026-SU-0607-A06",
+        "BE-VOLT-2026-SU-0607-A07",
+        "BE-VOLT-2026-SU-0607-A08"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-VOLT-2026-SU-0608",
+      "pdf_page": 80,
+      "pdf_pages": [
+        80
+      ],
+      "source_locator": "p080:b007@85.04,646.46,512.81,723.14",
+      "source_excerpt": "Wir führen Gesundheitskioske und Gesundheitslots*innen zur niedrigschwelligen, mehrsprachigen Beratung und Stärkung der Gesundheitskompetenz – und das über alle Lebensphasen hinweg – in besonders benachteiligten Stadtteilen ein. Dadurch helfen wir besonders betroffenen Personen,…",
+      "source_text_normalized": "Wir führen Gesundheitskioske und Gesundheitslots*innen zur niedrigschwelligen, mehrsprachigen Beratung und Stärkung der Gesundheitskompetenz – und das über alle Lebensphasen hinweg – in besonders benachteiligten Stadtteilen ein. Dadurch helfen wir besonders betroffenen Personen, die notwendigen Kompetenzen aufzubauen, um sich bei den Themen Ernährung und Gesundheit zurechtzufinden.",
+      "source_text_sha256": "98f6bf23b3f8a3b911e37b1d01a881930e1fddc61e4ff25d184581e317ddd796",
+      "source_visual_role": "BODY",
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-VOLT-2026-SU-0608-A01",
+        "BE-VOLT-2026-SU-0608-A02"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}
