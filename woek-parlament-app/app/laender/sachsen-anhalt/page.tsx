@@ -54,7 +54,7 @@ function ProgrammeImpactCard({ party, title, href, summary }: { party: string; t
       <h3>{summary.bottom_line}</h3>
       <span className={styles.programmeTitle}>{title}</span>
     </header>
-    <p className={styles.why}>{compact(summary.why_it_matters, 250)}</p>
+    <p className={styles.why}>{compact(summary.why_it_matters, 120)}</p>
     <div className={styles.mpd} aria-label="Mensch, Planet, Demokratie">
       {(["human", "planet", "democracy"] as const).map((key) => {
         const item = summary.mpd[key];
@@ -65,10 +65,10 @@ function ProgrammeImpactCard({ party, title, href, summary }: { party: string; t
       {summary.sdg_impacts.slice(0, 4).map((item) => <span key={`${item.framework}:${item.sdg_id}`} title={item.label}><strong>{item.sdg_id}</strong><DirectionSignal value={item.direction} /></span>)}
     </div>
     <ol className={styles.paths} aria-label="Materielle Wirkpfade">
-      {summary.material_paths.slice(0, 3).map((path) => <li key={path.id}><DirectionSignal value={path.direction} /><span>{compact(path.title, 92)}</span><small>{materiality[path.materiality]}</small></li>)}
+      {summary.material_paths.slice(0, 3).map((path) => <li key={path.id}><DirectionSignal value={path.direction} /><span>{compact(path.title, 58)}</span><small>{materiality[path.materiality]}</small></li>)}
     </ol>
-    {summary.noncompensable_risks.length ? <p className={styles.noncompensation}><strong>Nichtkompensation:</strong> {compact(summary.noncompensable_risks[0].protected_interest, 105)}</p> : null}
-    <p className={styles.evidence}><strong>Evidenz:</strong> {compact(summary.evidence_summary, 150)}</p>
+    {summary.noncompensable_risks.length ? <p className={styles.noncompensation}><strong>Nichtkompensation:</strong> {compact(summary.noncompensable_risks[0].protected_interest, 72)}</p> : null}
+    <p className={styles.evidence}><strong>Wie sicher?</strong> {compact(summary.evidence_summary, 82)}</p>
     <Link className={styles.cta} href={href}>Wirkungsanalyse öffnen <span aria-hidden="true">→</span></Link>
   </article>;
 }
