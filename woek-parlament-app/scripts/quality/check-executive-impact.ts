@@ -116,6 +116,7 @@ const executiveSchema = json<Record<string, unknown>>("data/contracts/executive-
 const ajv = new Ajv2020({ allErrors: true, strict: true });
 addFormats(ajv);
 assert.ok(ajv.compile(executiveSchema));
+assert.equal((executiveSchema as { properties?: { material_paths?: { maxItems?: number } } }).properties?.material_paths?.maxItems, 5);
 
 const component = text("app/components/executive-impact/ExecutiveImpactSummary.tsx");
 for (const name of ["ImpactExecutiveHero", "MPDImpactTriad", "SdgImpactStrip", "MaterialImpactPaths", "ImpactCascade", "NonCompensationAlert", "KeyTradeoffs", "EvidenceBand", "CommunicationImpactPreview", "ImpactRealityCheck", "SourceTransparencyDrawer", "ExecutiveImpactSummaryView"]) assert.match(component, new RegExp(`export function ${name}\\b`), name);
@@ -127,6 +128,10 @@ assert.match(component, /Ein politischer Beschluss oder ein sichtbares Bild gilt
 assert.match(component, /Eine leere Projektion wird nicht als fachlich bestätigte Abwesenheit/);
 assert.match(component, /Qualitativer Gesamtcharakter/);
 assert.match(component, /<strong>Materialität:<\/strong>/);
+assert.match(component, /summary\.materiality_selection_rationale/);
+assert.match(component, /Technisch vorhandene oder zuerst geprüfte Einträge werden nicht automatisch/);
+assert.match(component, /WÖk-Erweiterung/);
+assert.match(component, /nicht gegen positive Einzelpfade verrechnet/);
 
 const css = text("app/components/executive-impact/ExecutiveImpactSummary.module.css");
 assert.match(css, /min-height:\s*44px/);
@@ -235,6 +240,15 @@ const gates = [
   ["MPD_AGGREGATION_FAILS_CLOSED", true],
   ["SDG_DIRECTION_EXPLICIT_ONLY", true],
   ["MATERIAL_PATH_SELECTION_FAILS_CLOSED", true],
+  ["MATERIAL_PATH_SELECTION_IS_EXPLAINED", true],
+  ["NO_ARBITRARY_FIRST_REVIEWED_PATH_SELECTION", true],
+  ["NO_UNSUPPORTED_AGGREGATION", true],
+  ["FAIL_CLOSED_WITHOUT_APPROVED_ANALYSIS", true],
+  ["SOURCE_FIDELITY", true],
+  ["AGGREGATION_USES_APPROVED_PATHS_ONLY", true],
+  ["NO_ARITHMETIC_COMPENSATION", true],
+  ["SDGPLUS_LABELED_WOEK_EXTENSION", true],
+  ["TOP_PATHS_MAX_5", true],
   ["NONCOMPENSATION_VISIBLE_WHEN_EXPLICIT", true],
   ["COMMUNICATION_ANALYSIS_SEPARATE", true],
   ["PROGRAMME_VISUALS_APPROVED_6_OF_6", true],
