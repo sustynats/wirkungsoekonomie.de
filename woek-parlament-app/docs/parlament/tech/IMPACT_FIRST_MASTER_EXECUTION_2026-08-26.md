@@ -16,7 +16,7 @@ wirklich externe Eingaben pro Fall vorbereitet: separate Bildbytes und das
 anschließende finale Bild-Sign-off.
 
 - Ausgangs-`main`: `186e208e9da860e1aa0391faca9c1feeae9ae3f9`
-- Browsergeprüfter Code-Commit: `0317701b6fc4ba3ffbd739f665f763ed00197599`
+- Browsergeprüfter Code-Commit: `a4ec39976f4c6c9dc7cf3752644af572b313f1cc`
 - Release-Sperre: `NO_NEW_VERCEL_BUILD=true`
 - Release-Freigabe: `PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED`
 - Route-Matrix: `data/executive-impact/route-coverage-v1.json`
