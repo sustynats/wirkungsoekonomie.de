@@ -4,7 +4,7 @@
   "title": "WÖk ExecutiveImpactSummary",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "id", "object_type", "object_id", "stage", "analysis_version", "knowledge_cutoff", "bottom_line", "editorial_summary", "key_finding", "direction_label", "overall_character", "why_it_matters", "system_boundary", "mpd", "sdg_impacts", "material_paths", "materiality_selection_status", "materiality_selection_rationale", "noncompensable_risks", "key_tradeoffs", "evidence_summary", "uncertainty_summary", "open_questions", "reality_check_indicators", "source_refs", "communication_preview", "editorial_status"],
+  "required": ["schema_version", "id", "object_type", "object_id", "stage", "analysis_version", "knowledge_cutoff", "bottom_line", "editorial_summary", "key_finding", "direction_label", "overall_character", "why_it_matters", "system_boundary", "mpd", "sdg_impacts", "material_paths", "materiality_selection_status", "materiality_selection_rationale", "noncompensable_risks", "noncompensation_status", "key_tradeoffs", "evidence_summary", "uncertainty_summary", "open_questions", "reality_check_indicators", "source_refs", "communication_preview", "editorial_status"],
   "properties": {
     "schema_version": { "const": "woek-executive-impact-summary-1.0" },
     "id": { "type": "string", "minLength": 1 },
@@ -29,6 +29,7 @@
     "materiality_selection_status": { "enum": ["APPROVED_MATERIALITY_SELECTION", "FAIL_CLOSED_NO_APPROVED_RANKING"] },
     "materiality_selection_rationale": { "type": "string", "minLength": 1 },
     "noncompensable_risks": { "type": "array", "items": { "$ref": "#/$defs/nonCompensableRisk" } },
+    "noncompensation_status": { "enum": ["APPROVED_BOUNDARIES", "REVIEWED_NONE", "NOT_AVAILABLE"] },
     "key_tradeoffs": { "type": "array", "items": { "$ref": "#/$defs/tradeoff" } },
     "evidence_summary": { "type": "string", "minLength": 1 },
     "uncertainty_summary": { "type": "string", "minLength": 1 },

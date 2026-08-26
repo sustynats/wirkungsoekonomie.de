@@ -39,6 +39,7 @@
 .heroGrid,
 .mpd,
 .paths,
+.tradeoffs,
 .evidenceGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -81,6 +82,7 @@
 
 .dimension,
 .paths article,
+.tradeoffs article,
 .sdgStrip article,
 .evidenceGrid article {
   min-width: 0;
@@ -146,6 +148,37 @@
 
 .paths {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cascade {
+  display: grid;
+  gap: .8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cascade li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: .65rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--farbe-linie, #d8d2c7);
+  border-radius: .8rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+}
+
+.cascade p {
+  display: grid;
+  gap: .25rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.cascade li > span {
+  font-size: 1.35rem;
+  font-weight: 800;
 }
 
 .openValue,
@@ -237,9 +270,19 @@
 
   .heroGrid,
   .paths,
+  .tradeoffs,
   .sdgStrip,
   .evidenceGrid {
     grid-template-columns: 1fr;
+  }
+
+  .cascade li {
+    grid-template-columns: 1fr;
+  }
+
+  .cascade li > span {
+    rotate: 90deg;
+    justify-self: start;
   }
 }
 

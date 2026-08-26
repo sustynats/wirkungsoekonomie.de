@@ -103,6 +103,7 @@ export function parliamentExecutiveImpactSummary(item: ParliamentaryCase, assess
     materiality_selection_status: "FAIL_CLOSED_NO_APPROVED_RANKING",
     materiality_selection_rationale: allFit ? `Die Fachakte enthält ${paths.length} Wirkpfade; die Executive-Ansicht zeigt die vollständige Menge ohne Ranking. Eine fachlich freigegebene Materialitätsauswahl liegt nicht vor.` : `Für ${paths.length} Wirkpfade liegt keine freigegebene Auswahl der drei bis fünf materiellsten Pfade vor; die Auswahl bleibt geschlossen.`,
     noncompensable_risks: noncompensable,
+    noncompensation_status: noncompensable.length ? "APPROVED_BOUNDARIES" : workingAct.reviewDetail ? "REVIEWED_NONE" : "NOT_AVAILABLE",
     key_tradeoffs: workingAct.risks.map((risk) => ({ title: "Risiko oder Zielkonflikt", explanation: risk, source_path_ids: sourcePathIds })),
     evidence_summary: assessment.evidenceSummary,
     uncertainty_summary: item.publicAssessment?.uncertainty ?? workingAct.editorialSummary?.evidenceBoundary ?? "Unsicherheitsgrenze in der vollständigen Fachakte dokumentiert.",

@@ -42,19 +42,14 @@ export function saxonyAnhaltExecutiveImpactSummary({
   const sdgIds = unique(reviewed.flatMap(({ commitment }) => commitment?.sdgs ?? []));
   const sdgPlusIds = unique(reviewed.flatMap(({ commitment }) => commitment?.sdgPlus ?? []));
   const allPathIds = reviewed.map(({ id }) => id);
-  const noncompensable = reviewed.filter(({ assessment }) => /nicht kompensier/i.test(assessment.directionRationale)).map(({ id, assessment }) => ({
-    protected_interest: assessment.keyFinding,
-    severity: "MATERIAL" as const,
-    reason: assessment.directionRationale,
-    source_path_ids: [id],
-  }));
-  const programmeBoundaryFinding = editorial.keyFindings.find((finding) => /nicht gegen andere Programmvorteile verrechnet/i.test(finding.text));
-  if (programmeBoundaryFinding) noncompensable.push({
-    protected_interest: programmeBoundaryFinding.label,
-    severity: "MATERIAL",
-    reason: programmeBoundaryFinding.text,
-    source_path_ids: allPathIds,
+  const noncompensable = reviewed.flatMap(({ id, commitment }) => {
+    if (commitment?.boundaryStatus !== "BLOCK") return [];
+    return commitment.boundaryConcerns.flatMap((concern, index) => {
+      const reason = commitment.boundaryRationales[index] ?? commitment.boundaryRationales[0];
+      return reason ? [{ protected_interest: concern, severity: "CRITICAL" as const, reason, source_path_ids: [id] }] : [];
+    });
   });
+  const allCentralBoundariesReviewed = reviewed.every(({ commitment }) => Boolean(commitment?.boundaryStatus));
 
   const summary = {
     schema_version: "woek-executive-impact-summary-1.0" as const,
@@ -113,6 +108,7 @@ export function saxonyAnhaltExecutiveImpactSummary({
     materiality_selection_status: "FAIL_CLOSED_NO_APPROVED_RANKING" as const,
     materiality_selection_rationale: "Gezeigt wird die unveränderte, redaktionell freigegebene Vierer-Menge der Schlüsselpfade. Da keine separate fachliche Materialitätsrangfolge vorliegt, werden diese Pfade nicht als programmweit wichtigste Folgen behauptet und ihre Materialität bleibt offen.",
     noncompensable_risks: noncompensable,
+    noncompensation_status: noncompensable.length ? "APPROVED_BOUNDARIES" as const : allCentralBoundariesReviewed ? "REVIEWED_NONE" as const : "NOT_AVAILABLE" as const,
     key_tradeoffs: editorial.keyFindings.filter((finding) => tradeoffKinds(finding.kind)).map((finding) => ({ title: finding.label, explanation: finding.text, source_path_ids: allPathIds })),
     evidence_summary: editorial.readingGuide,
     uncertainty_summary: `Die vier redaktionell nachgeprüften Schlüsselpfade weisen die Evidenzstufen ${unique(reviewed.map(({ assessment }) => assessment.evidence)).join(", ")} aus. Nicht nachgeprüfte Programmdetails bleiben fachlich offen.`,

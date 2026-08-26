@@ -100,6 +100,7 @@ export function governmentExecutiveImpactSummary(record: WoeKImpactCase, assessm
       reason: boundary.reason,
       source_path_ids: record.impact_paths.map((path) => path.path_id),
     })),
+    noncompensation_status: record.boundary_review.some((boundary) => boundary.status === "BLOCK") ? "APPROVED_BOUNDARIES" as const : record.boundary_review.length ? "REVIEWED_NONE" as const : "NOT_AVAILABLE" as const,
     key_tradeoffs: record.impact_summary.main_risk_or_tradeoff ? [{ title: "Zentraler Zielkonflikt", explanation: record.impact_summary.main_risk_or_tradeoff, source_path_ids: record.impact_paths.map((path) => path.path_id) }] : [],
     evidence_summary: assessment.evidenceSummary,
     uncertainty_summary: `${record.evidence_summary.uncertainty} ${record.evidence_summary.decision_time_evidence_boundary}`,

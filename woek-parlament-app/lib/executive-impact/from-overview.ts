@@ -50,6 +50,7 @@ export function executiveImpactFromOverview({
     materiality_selection_status: "FAIL_CLOSED_NO_APPROVED_RANKING",
     materiality_selection_rationale: "Der freigegebene Kurzbefund enthält keine quellengebundene Auswahl der drei bis fünf materiellsten Einzelpfade. Deshalb wird weder die Reihenfolge vorhandener Texte noch ein technischer Themenabgleich als Fachauswahl verwendet.",
     noncompensable_risks: [],
+    noncompensation_status: "NOT_AVAILABLE",
     key_tradeoffs: [],
     evidence_summary: assessment.evidenceSummary,
     uncertainty_summary: assessment.realityCheckSummary ?? "Eine separate freigegebene Unsicherheitsprojektion liegt nicht vor.",

@@ -61,12 +61,14 @@ addFormats(ajv);
 assert.ok(ajv.compile(executiveSchema));
 
 const component = text("app/components/executive-impact/ExecutiveImpactSummary.tsx");
-for (const name of ["ImpactExecutiveHero", "MPDImpactTriad", "SdgImpactStrip", "MaterialImpactPaths", "NonCompensationAlert", "EvidenceBand", "CommunicationImpactPreview", "ImpactRealityCheck", "SourceTransparencyDrawer", "ExecutiveImpactSummaryView"]) assert.match(component, new RegExp(`export function ${name}\\b`), name);
+for (const name of ["ImpactExecutiveHero", "MPDImpactTriad", "SdgImpactStrip", "MaterialImpactPaths", "ImpactCascade", "NonCompensationAlert", "KeyTradeoffs", "EvidenceBand", "CommunicationImpactPreview", "ImpactRealityCheck", "SourceTransparencyDrawer", "ExecutiveImpactSummaryView"]) assert.match(component, new RegExp(`export function ${name}\\b`), name);
 assert.match(component, /POSITIVE: \{ icon: "↑", label: "positiv" \}/);
 assert.match(component, /NEGATIVE: \{ icon: "↓", label: "negativ" \}/);
 assert.match(component, /OPEN: \{ icon: "○", label: "offen" \}/);
 assert.match(component, /Keine freigegebene Auswahl materieller Wirkpfade/);
 assert.match(component, /Ein politischer Beschluss oder ein sichtbares Bild gilt nicht als beobachtete Wirkung/);
+assert.match(component, /Eine leere Projektion wird nicht als fachlich bestätigte Abwesenheit/);
+assert.match(component, /Qualitativer Gesamtcharakter/);
 
 const css = text("app/components/executive-impact/ExecutiveImpactSummary.module.css");
 assert.match(css, /min-height:\s*44px/);

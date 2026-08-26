@@ -70,6 +70,7 @@ export const executiveImpactSummarySchema = z.object({
   materiality_selection_status: z.enum(["APPROVED_MATERIALITY_SELECTION", "FAIL_CLOSED_NO_APPROVED_RANKING"]),
   materiality_selection_rationale: z.string().min(1),
   noncompensable_risks: z.array(nonCompensableRiskSchema),
+  noncompensation_status: z.enum(["APPROVED_BOUNDARIES", "REVIEWED_NONE", "NOT_AVAILABLE"]),
   key_tradeoffs: z.array(z.object({ title: z.string().min(1), explanation: z.string().min(1), source_path_ids: z.array(z.string().min(1)) })),
   evidence_summary: z.string().min(1),
   uncertainty_summary: z.string().min(1),

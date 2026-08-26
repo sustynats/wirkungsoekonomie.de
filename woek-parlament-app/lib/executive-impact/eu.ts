@@ -37,6 +37,7 @@ export function euExecutiveImpactSummary(record: EuImpactRecord, editorial: Publ
     materiality_selection_status: "FAIL_CLOSED_NO_APPROVED_RANKING",
     materiality_selection_rationale: "Der veröffentlichte EU-Kurzdatensatz enthält keine freigegebene Auswahl von drei bis fünf materiellen Einzelpfaden. Technische Metadaten oder die Reihenfolge im Fachtext ersetzen keine Fachauswahl.",
     noncompensable_risks: [],
+    noncompensation_status: "NOT_AVAILABLE",
     key_tradeoffs: record.boundary_status === "BLOCK" ? [{ title: "Schutzgrenze im Fachrecord", explanation: editorial.fields.key_finding, source_path_ids: [record.impact_case_id] }] : [],
     evidence_summary: editorial.fields.evidence_summary,
     uncertainty_summary: (record.limitations ?? []).join(" · ") || "Eine separate freigegebene Unsicherheitsprojektion liegt im EU-Kurzrecord nicht vor.",
