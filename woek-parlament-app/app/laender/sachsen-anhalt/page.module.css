@@ -17,7 +17,7 @@
 .hero aside span { color: rgb(255 255 255 / 82%); font-size: .88rem; line-height: 1.45; }
 
 .programmes { scroll-margin-top: 8rem; }
-.cardGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
+.cardGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
 .programmeCard { --signal: #64748b; display: flex; min-width: 0; flex-direction: column; gap: .28rem; padding: .66rem; border: 1px solid var(--line); border-top: .32rem solid var(--signal); border-radius: var(--r-card); background: var(--paper); box-shadow: 0 .55rem 1.4rem rgb(16 27 45 / 5%); }
 .programmeCard[data-materiality="critical"] { --signal: #a33a35; }
 .programmeCard[data-materiality="high"] { --signal: #9a6a13; }
