@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "WOEK-MV-GRUENE-2026-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "jurisdiction": "mecklenburg-vorpommern",
+    "party": "BÜNDNIS 90/DIE GRÜNEN",
+    "artifact_id": "MV-LTW-2026-GRUENE-WAHLPROGRAMM",
+    "artifact_sha256": "a3ddd454f4612460ace9deb2c4789e161a37f62f0abfa9e5c12d7f9878377ee3"
+  },
+  "input": {
+    "ledger_manifest": "data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-gruene-v1/manifest.json",
+    "logical_descriptor_sha256": "5f0acb42b15a99daa29570810161294b4fb03c1987fb1b5b6081b1ae4670a69f"
+  },
+  "overlay": {
+    "reviewed_page_count": 112,
+    "source_unit_count": 1003,
+    "effect_atom_count": 976,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 976,
+    "non_effect_context_reviewed_count": 579,
+    "genuine_fach_review_required_count": 0,
+    "programme_source_object_review_complete": true,
+    "programme_analysis_terminal_under_delegated_protocol": true,
+    "effect_credit_allowed": false
+  },
+  "apply_contract": {
+    "preserve_all_other_programmes": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "consumer_must_preserve_existing_explicit_fach": true,
+    "consumer_must_not_materialize_missing_fach_fields": true
+  },
+  "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+  "generated_at": "2026-08-26",
+  "descriptor_sha256": "7237a452c73f9eb0128671d23e9d58249258b478c539566a9cb3395fbb0d6b9b"
+}
