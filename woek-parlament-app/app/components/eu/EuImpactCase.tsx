@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import { CommonTargetsComparison, ProblemGoalReview } from "@/app/components/DecisionMethodLayers";
@@ -10,6 +11,7 @@ import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { publicIndicatorLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
 import { euPublicMaturity } from "@/lib/presentation/public-maturity";
 import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
+import { euExecutiveImpactSummary } from "@/lib/executive-impact/eu";
 import { recommendationForImpactCase } from "@/lib/recommendations";
 import { decisionReviewForImpactCase } from "@/lib/decision-method";
 
@@ -26,6 +28,7 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
     evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
     realityCheckSummary: editorial.fields.reality_check_summary,
   };
+  const executiveSummary = euExecutiveImpactSummary(record, editorial, assessment);
   const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
   const maturity = euPublicMaturity(record, assessment, {
     recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
@@ -44,7 +47,7 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
   return <article className="government-impact-case" aria-labelledby={`eu-impact-${record.impact_case_id}`} data-woek-preview-card="published">
     <header>
       <Title id={`eu-impact-${record.impact_case_id}`}>{record.title}</Title>
-      <OverviewAssessment compact={compact} assessment={assessment} />
+      {compact ? <OverviewAssessment compact assessment={assessment} /> : <ExecutiveImpactSummaryView summary={executiveSummary} />}
       <PublicMaturity maturity={maturity} compact={compact} />
       {compact && <p className="eyebrow" data-woek-process-metadata>EU-WÖk-Wirkungsanalyse · {record.analysis_mode.includes("REALITY") ? "mit Beobachtungsstufe" : "Ex ante"}</p>}
       {(competence || legalFeasibility || implementationRoutes.length > 0) && <dl className="government-impact-summary">

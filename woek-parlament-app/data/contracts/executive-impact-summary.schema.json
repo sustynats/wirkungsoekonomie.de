@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://parlament.wirkungsoekonomie.de/schemas/executive-impact-summary-1.0.json",
+  "title": "WÖk ExecutiveImpactSummary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "object_type", "object_id", "stage", "analysis_version", "knowledge_cutoff", "bottom_line", "editorial_summary", "key_finding", "direction_label", "overall_character", "why_it_matters", "system_boundary", "mpd", "sdg_impacts", "material_paths", "materiality_selection_status", "materiality_selection_rationale", "noncompensable_risks", "key_tradeoffs", "evidence_summary", "uncertainty_summary", "open_questions", "reality_check_indicators", "source_refs", "communication_preview", "editorial_status"],
+  "properties": {
+    "schema_version": { "const": "woek-executive-impact-summary-1.0" },
+    "id": { "type": "string", "minLength": 1 },
+    "object_type": { "enum": ["PROGRAMME", "COMMITMENT", "LAW", "PARLIAMENT_CASE", "GOVERNMENT_ACTION", "COALITION_AGREEMENT", "JURISDICTION", "EU_CASE", "OTHER"] },
+    "object_id": { "type": "string", "minLength": 1 },
+    "stage": { "enum": ["EX_ANTE", "IMPLEMENTATION", "EX_POST"] },
+    "analysis_version": { "type": "string", "minLength": 1 },
+    "knowledge_cutoff": { "type": "string", "format": "date" },
+    "bottom_line": { "type": "string", "minLength": 1 },
+    "editorial_summary": { "type": ["string", "null"], "minLength": 1 },
+    "key_finding": { "type": ["string", "null"], "minLength": 1 },
+    "direction_label": { "type": "string", "minLength": 1 },
+    "overall_character": { "enum": ["PREDOMINANTLY_POSITIVE", "PREDOMINANTLY_NEGATIVE", "MIXED", "OPEN", "NO_SINGLE_DIRECTION"] },
+    "why_it_matters": { "type": "string", "minLength": 1 },
+    "system_boundary": { "type": "string", "minLength": 1 },
+    "mpd": {
+      "type": "object", "additionalProperties": false, "required": ["human", "planet", "democracy"],
+      "properties": { "human": { "$ref": "#/$defs/dimension" }, "planet": { "$ref": "#/$defs/dimension" }, "democracy": { "$ref": "#/$defs/dimension" } }
+    },
+    "sdg_impacts": { "type": "array", "items": { "$ref": "#/$defs/sdgImpact" } },
+    "material_paths": { "type": "array", "maxItems": 5, "items": { "$ref": "#/$defs/materialPath" } },
+    "materiality_selection_status": { "enum": ["APPROVED_MATERIALITY_SELECTION", "FAIL_CLOSED_NO_APPROVED_RANKING"] },
+    "materiality_selection_rationale": { "type": "string", "minLength": 1 },
+    "noncompensable_risks": { "type": "array", "items": { "$ref": "#/$defs/nonCompensableRisk" } },
+    "key_tradeoffs": { "type": "array", "items": { "$ref": "#/$defs/tradeoff" } },
+    "evidence_summary": { "type": "string", "minLength": 1 },
+    "uncertainty_summary": { "type": "string", "minLength": 1 },
+    "open_questions": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "reality_check_indicators": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "source_refs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sourceRef" } },
+    "communication_preview": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/communicationPreview" }] },
+    "editorial_status": { "enum": ["APPROVED", "PARTIAL", "FAIL_CLOSED"] }
+  },
+  "$defs": {
+    "direction": { "enum": ["POSITIVE", "NEGATIVE", "NEUTRAL", "AMBIVALENT", "OPEN"] },
+    "materiality": { "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL", "OPEN"] },
+    "evidence": { "enum": ["HIGH", "MEDIUM", "LOW", "NOT_ASSESSABLE"] },
+    "dimension": {
+      "type": "object", "additionalProperties": false,
+      "required": ["direction", "materiality", "evidence", "headline", "state_changes", "rationale"],
+      "properties": {
+        "direction": { "$ref": "#/$defs/direction" }, "materiality": { "$ref": "#/$defs/materiality" }, "evidence": { "$ref": "#/$defs/evidence" },
+        "headline": { "type": "string", "minLength": 1 }, "state_changes": { "type": "array", "items": { "type": "string", "minLength": 1 } }, "rationale": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sdgImpact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sdg_id", "label", "framework", "direction", "materiality", "evidence", "rationale"],
+      "properties": {
+        "sdg_id": { "type": "string", "minLength": 1 }, "label": { "type": "string", "minLength": 1 }, "framework": { "enum": ["UN_SDG", "WOEK_SDG_PLUS"] },
+        "direction": { "$ref": "#/$defs/direction" }, "materiality": { "$ref": "#/$defs/materiality" }, "evidence": { "$ref": "#/$defs/evidence" }, "rationale": { "type": "string", "minLength": 1 }
+      }
+    },
+    "materialPath": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title", "affected_group_or_system", "state_change", "mechanism", "direction", "materiality", "evidence", "effect_order", "time_horizon", "why_relevant", "source_path_ids"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 }, "title": { "type": "string", "minLength": 1 }, "affected_group_or_system": { "type": ["string", "null"], "minLength": 1 },
+        "state_change": { "type": "string", "minLength": 1 }, "mechanism": { "type": "string", "minLength": 1 }, "direction": { "$ref": "#/$defs/direction" }, "materiality": { "$ref": "#/$defs/materiality" }, "evidence": { "$ref": "#/$defs/evidence" },
+        "effect_order": { "type": ["integer", "null"], "minimum": 1, "maximum": 3 }, "time_horizon": { "enum": ["SHORT", "MEDIUM", "LONG", "MULTI_GENERATIONAL", null] },
+        "why_relevant": { "type": "string", "minLength": 1 }, "source_path_ids": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "nonCompensableRisk": {
+      "type": "object", "additionalProperties": false, "required": ["protected_interest", "severity", "reason", "source_path_ids"],
+      "properties": { "protected_interest": { "type": "string", "minLength": 1 }, "severity": { "enum": ["MATERIAL", "HIGH", "CRITICAL"] }, "reason": { "type": "string", "minLength": 1 }, "source_path_ids": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } } }
+    },
+    "tradeoff": {
+      "type": "object", "additionalProperties": false, "required": ["title", "explanation", "source_path_ids"],
+      "properties": { "title": { "type": "string", "minLength": 1 }, "explanation": { "type": "string", "minLength": 1 }, "source_path_ids": { "type": "array", "items": { "type": "string", "minLength": 1 } } }
+    },
+    "sourceRef": {
+      "type": "object", "additionalProperties": false, "required": ["id", "label", "href"],
+      "properties": { "id": { "type": "string", "minLength": 1 }, "label": { "type": "string", "minLength": 1 }, "href": { "type": "string", "anyOf": [{ "pattern": "^/" }, { "format": "uri", "pattern": "^https://" }] } }
+    },
+    "communicationPreview": {
+      "type": "object", "additionalProperties": false, "required": ["assessment_label", "summary", "evidence_summary", "noncompensation", "href"],
+      "properties": { "assessment_label": { "type": "string", "minLength": 1 }, "summary": { "type": "string", "minLength": 1 }, "evidence_summary": { "type": "string", "minLength": 1 }, "noncompensation": { "type": "string", "minLength": 1 }, "href": { "type": "string", "pattern": "^(#|/)" } }
+    }
+  }
+}

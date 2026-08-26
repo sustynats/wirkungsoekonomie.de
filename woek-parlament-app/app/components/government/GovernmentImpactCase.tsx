@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { CommonTargetsComparison, ProblemGoalReview } from "@/app/components/DecisionMethodLayers";
 import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
@@ -22,6 +23,7 @@ import { governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
 import { approvedCommonTargetLayerIdsForImpactCase, decisionReviewForImpactCase } from "@/lib/decision-method";
 import { assessmentPublicCopyContains, impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
+import { governmentExecutiveImpactSummary } from "@/lib/executive-impact/government";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
   return [...new Set(record.impact_paths.flatMap((path) => path[key] ?? []))];
@@ -236,6 +238,7 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
     evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
     realityCheckSummary: editorial.fields.reality_check_summary,
   };
+  const executiveSummary = fullRecord ? governmentExecutiveImpactSummary(fullRecord, assessment) : null;
   const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
   const maturity = governmentPublicMaturity(record, assessment, {
     recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
@@ -257,7 +260,7 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`} data-woek-preview-card="published">
       <header>
         <Title id={`impact-${record.impact_case_id}`}>{record.title}</Title>
-        <OverviewAssessment compact={compact} assessment={assessment} />
+        {compact || !executiveSummary ? <OverviewAssessment compact={compact} assessment={assessment} /> : <ExecutiveImpactSummaryView summary={executiveSummary} />}
         <PublicMaturity maturity={maturity} compact={compact} />
         {compact && <p className="eyebrow" data-woek-process-metadata>Analysephase · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>}
         {record.public_evidence_explanation && !assessmentPublicCopyContains(assessment, record.public_evidence_explanation) && <p><strong>Öffentliche Evidenzeinordnung:</strong> {humanizeSystemValue(record.public_evidence_explanation)}</p>}

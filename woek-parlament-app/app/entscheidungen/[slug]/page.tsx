@@ -11,6 +11,7 @@ import { FullReviewRecord } from "@/app/components/FullReviewRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { SamePageStateLink } from "@/app/components/SamePageNavigation";
 import { CommonTargetsComparison, ProblemGoalReview } from "@/app/components/DecisionMethodLayers";
@@ -24,6 +25,7 @@ import { recommendationForImpactCase } from "@/lib/recommendations";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { getCasePublicationSource } from "@/lib/publication/fachakten";
 import { publicParliamentSummary } from "@/lib/public-api";
+import { parliamentExecutiveImpactSummary } from "@/lib/executive-impact/parliament";
 
 export const dynamic = "force-dynamic";
 
@@ -89,6 +91,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const normativeMapping = item.publicAssessment?.normativeMapping ?? item.publicWorkingAct?.normativeMapping;
   const statuses = reviewStatuses(item);
   const overviewAssessment = parliamentaryOverviewAssessment(item);
+  const executiveSummary = overviewAssessment && item.publicWorkingAct ? parliamentExecutiveImpactSummary(item, overviewAssessment) : null;
   const editoriallyPublished = Boolean(overviewAssessment);
   const requestedView: DecisionView = decisionViews.some((view) => view.id === ansicht) ? ansicht as DecisionView : "ueberblick";
   const activeView: DecisionView = editoriallyPublished || requestedView === "quellen" ? requestedView : "ueberblick";
@@ -111,7 +114,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
         <div><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
       </header>
 
-      {overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : null}
+      {executiveSummary ? <ExecutiveImpactSummaryView summary={executiveSummary} /> : overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : null}
       <PublicMaturity maturity={publicMaturity} />
 
       <section className="sixty-second" aria-labelledby="sixty-second-title" data-woek-substantive-impact={editoriallyPublished ? "published" : undefined}><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{editoriallyPublished ? decisionFocus(item) : "WÖk-Analyse noch nicht redaktionell veröffentlicht."}</dd></div></dl></section>

@@ -19,13 +19,24 @@ test("all Sachsen-Anhalt impact visual governance gates pass", () => {
   assert.deepEqual(results.filter((result) => !result.pass), []);
 });
 
-test("six programmes have symmetric fail-closed programme and case records", () => {
+test("six programmes have approved programme visuals and symmetric fail-closed case records", () => {
   assert.equal(saxonyAnhaltImpactVisualDescriptor.records.length, 12);
   for (const sourceKey of expectedSourceKeys) {
     const records = saxonyAnhaltImpactVisualDescriptor.records.filter((record) => record.source_key === sourceKey);
     assert.deepEqual(records.map((record) => record.visual_scope).sort(), ["CASE_SCENARIO", "PROGRAM_SCENARIO"]);
-    assert.ok(records.every((record) => record.editorial_review_status === "NO_APPROVED_VISUAL_SCENARIO"));
-    assert.ok(records.every((record) => record.asset_path === null && record.visible_elements.length === 0));
+    const programme = records.find((record) => record.visual_scope === "PROGRAM_SCENARIO");
+    const caseRecord = records.find((record) => record.visual_scope === "CASE_SCENARIO");
+    assert.ok(programme && caseRecord);
+    assert.equal(programme.editorial_review_status, "APPROVED_FOR_PUBLICATION");
+    assert.equal(programme.source_fidelity_status, "PASS_APPROVED_ANALYSIS_ONLY");
+    assert.ok(programme.asset_path?.endsWith("-program-scenario-v1.webp"));
+    assert.ok(programme.alt_text?.endsWith("ist keine Prognose."));
+    assert.equal(programme.visible_elements.length, 0, "ambiguous visual candidates must remain NO_MARKER");
+    assert.ok(programme.omitted_marker_candidates.length > 0);
+    assert.equal(programme.non_visual_effects.length, 4);
+    assert.equal(caseRecord.editorial_review_status, "NO_APPROVED_VISUAL_SCENARIO");
+    assert.equal(caseRecord.asset_path, null);
+    assert.equal(caseRecord.visible_elements.length, 0);
   }
 });
 

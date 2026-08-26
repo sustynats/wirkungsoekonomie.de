@@ -48,9 +48,12 @@ export function ImpactVisualInteractive({
       >{index + 1}</button>)}
     </div>
 
-    <div className={styles.legend} aria-label="Was im Bild sichtbar ist">
+    <div className={styles.legend} aria-label="Was im Bild fachlich zugeordnet ist">
       <h3>Was im Bild sichtbar ist</h3>
-      <ol>
+      {elements.length === 0 ? <div className={styles.noMarkers}>
+        <strong>Keine Marker gesetzt</strong>
+        <p>Sichtbare Bildelemente wurden nicht mit einer fachlichen Aussage überladen: Keines ließ sich eindeutig an einen der freigegebenen Wirkpfade binden. Maßgeblich bleiben die geprüften Befunde unter dem Bild.</p>
+      </div> : <ol>
         {elements.map((element, index) => <li id={`impact-visual-legend-${element.id}`} key={element.id} data-active={element.id === active?.id ? "true" : "false"}>
           <button type="button" onClick={() => setActiveId(element.id)} aria-pressed={element.id === active?.id}>
             <span>{index + 1}</span>
@@ -68,7 +71,7 @@ export function ImpactVisualInteractive({
             <Link href={element.analysis_href}>Vollständigen Wirkpfad öffnen →</Link>
           </div> : null}
         </li>)}
-      </ol>
+      </ol>}
     </div>
   </div>;
 }

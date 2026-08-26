@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { ImpactVisualScenario } from "@/app/components/impact-visuals/ImpactVisualScenario";
+import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
 import type { SaxonyAnhaltElectionProgramme } from "@/data/sachsen-anhalt-election-programmes";
 import {
   saxonyAnhaltCommitmentEditorial,
@@ -8,7 +9,6 @@ import {
   type CommitmentEditorialAssessment,
   type ProgrammeDirection,
   type ProgrammeEvidence,
-  type ProgrammeFindingKind,
 } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
 import { saxonyAnhaltTerminalPartyBySourceKey, saxonyAnhaltTerminalRelease } from "@/data/presentation/sachsen-anhalt-terminal-release";
 import type { CompletePublicationSource as PublicationSource } from "@/lib/publication/fachakten";
@@ -20,6 +20,7 @@ import {
 } from "@/lib/presentation/sachsen-anhalt-programme-model";
 import { getCommunicationMediaImpact, type CommunicationMediaImpactRecord, type CommunicationPattern } from "@/lib/state-programmes/communication-media-impact";
 import { saxonyAnhaltImpactVisualRecord } from "@/lib/impact-visuals/records";
+import { saxonyAnhaltExecutiveImpactSummary } from "@/lib/executive-impact/sachsen-anhalt";
 import { sourceDetailHrefForUrl } from "@/lib/sources/url";
 import styles from "./ProgrammeAnalysisBlueprint.module.css";
 
@@ -75,17 +76,6 @@ function DirectionIcon({ direction }: { direction: ProgrammeDirection }) {
         ? "M5 12h5m0 0 5-5m-5 5 5 5m0-10h4m-4 10h4"
         : "M9.4 8.5a3.1 3.1 0 1 1 4.9 2.5c-1.4 1-2.3 1.5-2.3 3M12 18h.01";
   return <span className={styles.directionIcon} aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d={path} /></svg></span>;
-}
-
-function FindingIcon({ kind }: { kind: ProgrammeFindingKind }) {
-  const path = kind === "positive"
-    ? "m6 12 4 4 8-9"
-    : kind === "risk"
-      ? "M12 3 3.5 19h17L12 3Zm0 5v5m0 3h.01"
-      : kind === "tradeoff"
-        ? "M4 8h6l4 8h6M4 16h6l4-8h6"
-        : "M9.4 8.5a3.1 3.1 0 1 1 4.9 2.5c-1.4 1-2.3 1.5-2.3 3M12 18h.01";
-  return <span className={styles.signalIcon} aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d={path} /></svg></span>;
 }
 
 function CommunicationIcon() {
@@ -231,24 +221,6 @@ function assessmentFor(sourceKey: string, commitment: ProgrammeCommitment) {
   return saxonyAnhaltCommitmentEditorial(sourceKey, commitment.key) ?? fallbackAssessment(commitment);
 }
 
-function SummaryProfile({ assessments }: { assessments: CommitmentEditorialAssessment[] }) {
-  const directions: ProgrammeDirection[] = ["POSITIVE", "NEGATIVE", "AMBIVALENT", "OPEN"];
-  const counts = Object.fromEntries(directions.map((direction) => [direction, assessments.filter((item) => item.direction === direction).length])) as Record<ProgrammeDirection, number>;
-  const total = Math.max(1, assessments.length);
-  return <aside className={styles.profilePanel} aria-label="Richtungsprofil der redaktionell geprüften Schlüsselpfade">
-    <p className={styles.eyebrow}>Richtungsprofil</p>
-    <h3>Nur die nachgeprüften Schlüsselpfade</h3>
-    <p>Das Diagramm ist kein Parteiscore. Es zeigt ausschließlich die Richtungen der hier redaktionell nachgeprüften Schlüsselpfade.</p>
-    <div className={styles.barList}>
-      {directions.map((direction) => <div className={styles.barRow} key={direction}>
-        <span>{directionLabel(direction)}</span>
-        <progress className={styles.barTrack} aria-hidden="true" value={counts[direction]} max={total} />
-        <strong>{counts[direction]}</strong>
-      </div>)}
-    </div>
-  </aside>;
-}
-
 function CommitmentDetail({ sourceKey, commitment }: { sourceKey: string; commitment: ProgrammeCommitment }) {
   const assessment = assessmentFor(sourceKey, commitment);
   const sourceLocation = [commitment.page ? `Seite ${commitment.page}` : null, commitment.section].filter(Boolean).join(" · ");
@@ -373,7 +345,6 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
   if (!programmeVisual || !caseVisual) throw new Error(`Missing Sachsen-Anhalt impact visual contract for ${programme.sourceKey}`);
   const counts = summarizeStatuses(model.commitments);
   const decisionDate = formatDate(programme.decisionDate);
-  const centralAssessments = Object.values(editorial.centralAssessments);
   const byKey = new Map(model.commitments.map((commitment) => [commitment.key, commitment]));
   const central = Object.keys(editorial.centralAssessments).map((key) => byKey.get(key)).filter((item): item is ProgrammeCommitment => Boolean(item));
   const groups = new Map<string, ProgrammeCommitment[]>();
@@ -383,6 +354,7 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
   }
   const grouped = [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0], "de"));
   const reviewedCount = Object.keys(editorial.centralAssessments).length;
+  const executiveSummary = saxonyAnhaltExecutiveImpactSummary({ sourceKey: programme.sourceKey, model, editorial, communication: communicationImpact });
 
   return <div className={styles.page} data-woek-sachsen-anhalt-public="programme-blueprint-v3">
     <section className={styles.hero}>
@@ -423,29 +395,7 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
       <a href="#quellenstatus">Quellen & Fachstand</a>
     </nav>
 
-    <section id="gesamtbefund" aria-labelledby="gesamtbefund-title">
-      <div className={styles.sectionHeader}>
-        <p className={styles.eyebrow}>WÖk-Gesamtzusammenfassung</p>
-        <h2 id="gesamtbefund-title">Was prägt dieses Wahlprogramm wirkungsökonomisch?</h2>
-        <p className={styles.lead}>Die Gesamtzusammenfassung verdichtet Muster, ohne positive und negative Einzelwirkungen zu einer künstlichen Punktzahl zu verrechnen.</p>
-      </div>
-      <div className={styles.overallGrid}>
-        <article className={styles.overallPanel} data-woek-preview-assessment="published">
-          <p className={styles.eyebrow}>Gesamtbefund</p>
-          <h3>{editorial.overallLabel}</h3>
-          <p>{editorial.editorialSummary}</p>
-          <p><strong>Leseregel:</strong> {editorial.readingGuide}</p>
-        </article>
-        <SummaryProfile assessments={centralAssessments} />
-      </div>
-      <div className={styles.signalGrid}>
-        {editorial.keyFindings.map((finding) => <article className={styles.signalCard} key={finding.label}>
-          <FindingIcon kind={finding.kind} />
-          <div><p className={styles.eyebrow}>Key Finding</p><h3>{finding.label}</h3><p>{finding.text}</p></div>
-        </article>)}
-      </div>
-      <div className={styles.auditNotice}><strong>Qualitätsstatus der Altanalyse</strong><p>Der Release-1-Bestand enthält an mehreren Stellen generische Politikfeld-Templates und einzelne erkennbare Fehlzuordnungen oder Quellkollisionen. Diese Felder werden in der neuen Blaupause nicht mehr als fertige Kurzbewertung ausgegeben. Wo noch keine objektspezifische Nachprüfung vorliegt, bleibt die Richtung ausdrücklich offen.</p></div>
-    </section>
+    <ExecutiveImpactSummaryView summary={executiveSummary} />
 
     <ImpactVisualScenario record={programmeVisual} />
 

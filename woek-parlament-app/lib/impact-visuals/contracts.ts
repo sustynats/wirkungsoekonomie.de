@@ -40,6 +40,7 @@ export const impactVisualScenarioRecordSchema = z.object({
   non_visual_effects: z.array(z.string().min(1)),
   non_visual_effects_review_status: z.enum(["PENDING_APPROVAL", "REVIEWED_COMPLETE"]),
   omitted_material_effects: z.array(z.string().min(1)),
+  omitted_marker_candidates: z.array(z.string().min(1)),
   system_boundary: z.string().nullable(),
   scenario_assumptions: z.array(z.string().min(1)),
   evidence_summary: z.string().min(1),
@@ -59,6 +60,20 @@ export const impactVisualScenarioRecordSchema = z.object({
     prompt_sha256: z.string().regex(/^[a-f0-9]{64}$/),
   }).nullable(),
   asset_sha256: z.string().regex(/^[a-f0-9]{64}$/).nullable(),
+  asset_metadata: z.object({
+    mime_type: z.literal("image/webp"),
+    width: z.number().int().positive(),
+    height: z.number().int().positive(),
+    byte_size: z.number().int().positive(),
+    original_filename: z.string().min(1),
+    original_sha256: z.string().regex(/^[a-f0-9]{64}$/),
+    optimization: z.object({
+      format: z.literal("WEBP_LOSSY_Q90"),
+      full_composition_preserved: z.literal(true),
+      metadata_published: z.literal(false),
+    }),
+    integrated_at: z.string().date(),
+  }).nullable(),
   editorial_review_status: z.enum(["NO_APPROVED_VISUAL_SCENARIO", "APPROVED_FOR_PUBLICATION"]),
   source_fidelity_status: z.enum(["FAIL_CLOSED_NO_PUBLIC_ASSET", "PASS_APPROVED_ANALYSIS_ONLY"]),
   missing_approved_inputs: z.array(z.object({
