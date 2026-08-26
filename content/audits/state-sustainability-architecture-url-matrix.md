@@ -3828,8 +3828,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1021**
-- Combined matrix items (routes + extra HTML + support): **17286**
+- Tracked support text files inventoried: **1022**
+- Combined matrix items (routes + extra HTML + support): **17287**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4312,7 +4312,6 @@ Signals are review candidates, not automatic errors.
 | `tools/manifest_vercel_build_output.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | evaluation |
 | `tools/validate_afd_final_union_a43.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_berlin_current_source_register.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
-| `tools/validate_berlin_fach_content_residual.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_linke_final_union_c26.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_mv_current_source_register.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_parliament_github_golden_state.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
@@ -4323,7 +4322,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17287**
+- Combined reviewed items: **17288**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
