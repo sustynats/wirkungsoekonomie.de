@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import type { ImpactVisualScenarioRecord } from "@/lib/impact-visuals/contracts";
 import { saxonyAnhaltImpactVisualRecord } from "@/lib/impact-visuals/records";
@@ -29,7 +28,7 @@ export function ImpactVisualOverview() {
         return <article key={programme.sourceKey}>
           <p>{programme.party}</p>
           {programmeRecord.editorial_review_status === "APPROVED_FOR_PUBLICATION" && programmeRecord.asset_path && programmeRecord.alt_text
-            ? <div className={styles.overviewImage}><Image src={programmeRecord.asset_path} alt={programmeRecord.alt_text} fill sizes="(max-width: 680px) 100vw, (max-width: 980px) 50vw, 33vw" /></div>
+            ? <div className={styles.overviewImage}><img src={programmeRecord.asset_path} alt={programmeRecord.alt_text} width="1536" height="1024" loading="lazy" decoding="async" /></div>
             : null}
           <h3>2 von 2 Slots versioniert</h3>
           <ul>

@@ -1,6 +1,6 @@
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(17rem, .65fr);
+  grid-template-columns: 1fr;
   gap: clamp(1rem, 3vw, 2rem);
   align-items: center;
   margin-top: clamp(1rem, 3vw, 2.5rem);
@@ -10,7 +10,8 @@
   background: var(--navy);
 }
 .hero h1, .hero p { color: inherit; }
-.hero h1 { max-width: 18ch; }
+.hero > div { max-width: 78rem; }
+.hero h1 { max-width: 25ch; }
 .hero aside { display: grid; gap: .65rem; padding: 1.1rem; border: 1px solid rgb(255 255 255 / 24%); border-radius: var(--r-card); background: rgb(255 255 255 / 8%); }
 .hero aside strong { font-size: 1.1rem; }
 .hero aside span { color: rgb(255 255 255 / 82%); font-size: .88rem; line-height: 1.45; }
@@ -53,6 +54,9 @@
 @media (max-width: 680px) {
   .hero, .audit { grid-template-columns: 1fr; }
   .hero { width: min(100% - 1rem, var(--wrap)); padding: 1.15rem; border-radius: .85rem; }
+  .hero h1 { max-width: 18ch; font-size: clamp(2rem, 10vw, 2.55rem); }
+  .hero :global(.hero-actions) { gap: .45rem; margin-top: 1.1rem; }
+  .hero :global(.hero-actions .button) { width: auto; flex: 1 1 9.5rem; padding-inline: .65rem; }
   .cardGrid { grid-template-columns: 1fr; }
   .programmeCard { padding: .9rem; }
 }
