@@ -14,8 +14,8 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
     && record.visual_brief !== null
     && record.asset_path !== null
     && record.asset_sha256 !== null
-    && record.alt_text !== null
-    && record.visible_elements.length > 0;
+    && record.asset_metadata !== null
+    && record.alt_text !== null;
   const scopeLabel = record.visual_scope === "PROGRAM_SCENARIO" ? "Programm-Szenario" : "Case-Deep-Dive";
   const knowledgeDate = new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "Europe/Berlin" }).format(new Date(`${record.knowledge_cutoff}T12:00:00+02:00`));
 
@@ -80,8 +80,10 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
         <div><dt>Record</dt><dd>{record.id}</dd></div>
         <div><dt>Analyseversion</dt><dd>{record.analysis_version}</dd></div>
         <div><dt>Auswahlgrund</dt><dd>{record.selection_rationale}</dd></div>
-        <div><dt>Ausgewählte Wirkpfade</dt><dd>{record.selected_impact_path_ids.length > 0 ? `${record.selected_impact_path_ids.length} bereits kuratierte Schlüsselpfade; ohne Visual Brief nicht dargestellt` : "keine Auswahl freigegeben"}</dd></div>
+        <div><dt>Ausgewählte Wirkpfade</dt><dd>{record.selected_impact_path_ids.length > 0 ? `${record.selected_impact_path_ids.length} bereits kuratierte Schlüsselpfade` : "keine Auswahl freigegeben"}</dd></div>
         <div><dt>Asset</dt><dd>{record.asset_sha256 ?? "kein Asset freigegeben"}</dd></div>
+        {record.asset_metadata ? <div><dt>Bilddatei</dt><dd>{record.asset_metadata.width} × {record.asset_metadata.height} px · {record.asset_metadata.mime_type} · vollständige Komposition erhalten</dd></div> : null}
+        {record.omitted_marker_candidates.length > 0 ? <div><dt>Bewusst ohne Marker</dt><dd>{record.omitted_marker_candidates.join("; ")}</dd></div> : null}
       </dl>
       <p><Link href="/methodik#wirkungsbilder">Methode, Frame-Schutz und Korrekturweg lesen →</Link></p>
     </details>

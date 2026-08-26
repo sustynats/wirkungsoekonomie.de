@@ -197,15 +197,16 @@
 
 .imageFrame {
   position: relative;
-  min-height: clamp(18rem, 56vw, 38rem);
-  aspect-ratio: 16 / 10;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   border-radius: .8rem;
   background: var(--farbe-flaeche-warm, #f7f4ec);
 }
 
 .imageFrame img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .marker {
@@ -274,6 +275,17 @@
   border-top: 1px solid var(--farbe-linie, #d8d2c7);
 }
 
+.noMarkers {
+  padding: 1rem;
+  border: 1px dashed var(--farbe-linie, #d8d2c7);
+  border-radius: .7rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+}
+
+.noMarkers p {
+  margin: .35rem 0 0;
+}
+
 .overviewGrid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -283,6 +295,19 @@
   color: var(--farbe-text-sekundaer, #5c6168);
   font-size: .8rem;
   font-weight: 750;
+}
+
+.overviewImage {
+  position: relative;
+  min-height: 12rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: .7rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+}
+
+.overviewImage img {
+  object-fit: cover;
 }
 
 .overviewGrid ul {
@@ -371,6 +396,6 @@
   }
 
   .imageFrame {
-    min-height: 16rem;
+    aspect-ratio: 4 / 3;
   }
 }

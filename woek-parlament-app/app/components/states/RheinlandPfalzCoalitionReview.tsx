@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
 import { StateCoalitionCommitmentInventory } from "@/app/components/states/StateCoalitionCommitmentInventory";
 import {
   rheinlandPfalzCoalitionAssessment,
@@ -13,6 +14,7 @@ import {
   rheinlandPfalzCoalitionSources,
 } from "@/lib/states/rheinland-pfalz-coalition";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+import { executiveImpactFromOverview } from "@/lib/executive-impact/from-overview";
 
 function ChapterReview({ chapter }: { chapter: (typeof rheinlandPfalzCoalitionChapters)[number] }) {
   const relatedImpactCase = chapter.relatedImpactCase
@@ -42,6 +44,15 @@ function ChapterReview({ chapter }: { chapter: (typeof rheinlandPfalzCoalitionCh
 }
 
 export function RheinlandPfalzCoalitionReview() {
+  const executiveSummary = executiveImpactFromOverview({
+    id: "rheinland-pfalz-coalition-2026-2031",
+    objectType: "COALITION_AGREEMENT",
+    assessment: rheinlandPfalzCoalitionAssessment,
+    analysisVersion: "RLP-KOALITION-FACH-GAP-CLOSURE-2026-08",
+    knowledgeCutoff: "2026-08-21",
+    systemBoundary: "Ex-ante-Mandatsportfolio des Koalitionsvertrags; Koalitionszusage, Regierungshandlung, Vollzug, beobachtete Zustandsänderung und Attribution bleiben getrennte Objekte.",
+    sourceRefs: rheinlandPfalzCoalitionSources.map((source, index) => ({ id: `rlp-coalition-source-${index + 1}`, label: source.title, href: sourceDetailHrefForUrl(source.url) })),
+  });
   return <article className="government-impact-case strategy-detail coalition-review" aria-labelledby="rlp-coalition-title">
     <header>
       <p className="eyebrow">Rheinland-Pfalz · Mandatsanalyse 2026–2031</p>
@@ -81,7 +92,7 @@ export function RheinlandPfalzCoalitionReview() {
     <section aria-labelledby="rlp-impact-overview">
       <p className="eyebrow">WÖk-Wirkungsprüfung des Mandatsportfolios</p>
       <h2 id="rlp-impact-overview">Wirkungspotenziale, Risiken und entscheidende Bedingungen</h2>
-      <OverviewAssessment assessment={rheinlandPfalzCoalitionAssessment} />
+      <ExecutiveImpactSummaryView summary={executiveSummary} />
     </section>
 
     <section aria-labelledby="rlp-coverage">

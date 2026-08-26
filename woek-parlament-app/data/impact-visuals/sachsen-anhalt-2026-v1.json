@@ -1,8 +1,8 @@
 {
   "schema_version": "woek-impact-visual-scenarios-1.0",
   "manifest_id": "LTW-2026-ST-IMPACT-VISUAL-SCENARIOS-V1",
-  "manifest_sha256": "a5bdab6edece1791ce2b6cba2b2e483db1d2d07bf77853451105063eebc42351",
-  "base_main_commit": "c81fbefafb33d976137955d08edebd5284cbdced",
+  "manifest_sha256": "8c31676d89191645ca9eb2c96bf4f39ca422c3825ed23abdbbe2a18be757e5c0",
+  "base_main_commit": "9e8389cb8623109a87ba6f3563d5aabac3ba6cea",
   "source_release": {
     "manifest_id": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1",
     "manifest_path": "data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json",
@@ -52,55 +52,62 @@
         "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
         "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
       "visible_elements": [],
-      "non_visual_effects": [],
-      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "non_visual_effects": [
+        "Resilienzhebel: Investitionen in Ausbildung, Übungsinfrastruktur und Katastrophenschutz können die reale Reaktionsfähigkeit des Landes erhöhen, wenn Kapazitätsbedarf und Nutzung belegt sind.",
+        "Sicherheit ist kein Einzelscore: Mehr Personal und Befugnisse können Prävention und Aufklärung stärken, zugleich aber Freiheits-, Datenschutz- und Diskriminierungsrisiken erhöhen.",
+        "Wachstum braucht Instrumente: Vertrauen, Investitionen und Wachstum sind Zielzustände. Ohne konkrete Regel-, Finanzierungs- oder Infrastrukturhebel ist die Wirkungsrichtung nicht belastbar zu bestimmen.",
+        "Bundeskompetenz sichtbar machen: Rückführungs- und migrationsrechtliche Forderungen können nicht als reine Landesmaßnahme gelesen werden; tatsächlicher Landeshebel und Bundesrecht müssen getrennt bleiben."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Verkehrsknoten, Bus, Fahrräder und Verwaltungsorientierung: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+      ],
       "system_boundary": null,
       "scenario_assumptions": [],
-      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
-      "alt_text": null,
-      "visual_brief": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-program-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines geordneten regionalen Verkehrsknotens in Sachsen-Anhalt mit Bus, Fahrrädern, öffentlicher Infrastruktur und Verwaltungsorientierung. Das Bild visualisiert ausgewählte Wirkungspfade zu Erreichbarkeit, Infrastruktur und öffentlicher Funktionsfähigkeit und ist keine Prognose.",
+      "visual_brief": {
+        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "review_status": "APPROVED"
+      },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
-      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "REVIEWED_VISUAL_BRIEF",
-          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
-          "required_for": "BOTH"
+      "asset_sha256": "37ddd1008a733172f58843f5424e6014b0f4623d140dd13f12c93781d9b5db3e",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 407430,
+        "original_filename": "owner-provided-cdu-program-scenario-v1.png",
+        "original_sha256": "e9b6f86385b18eff50aadc9c7d54ffecdbfdf6fde8c4df99e4134ba7b1448048",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "VISIBLE_ELEMENT_MAPPING",
-          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "NON_VISUAL_EFFECT_SELECTION",
-          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "ALT_TEXT_REVIEW",
-          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "EDITORIAL_VISUAL_SIGNOFF",
-          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
-          "required_for": "BOTH"
-        }
-      ],
+        "integrated_at": "2026-08-26"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
           "date": "2026-08-25",
           "status": "FAIL_CLOSED_CREATED",
           "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
         }
       ]
     },
@@ -128,6 +135,7 @@
       "non_visual_effects": [],
       "non_visual_effects_review_status": "PENDING_APPROVAL",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
@@ -137,6 +145,7 @@
       "visual_brief": null,
       "generator_metadata": null,
       "asset_sha256": null,
+      "asset_metadata": null,
       "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
       "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
       "missing_approved_inputs": [
@@ -209,55 +218,62 @@
         "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
         "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
       "visible_elements": [],
-      "non_visual_effects": [],
-      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "non_visual_effects": [
+        "Teilhabe als früher Hebel: Ausbildungszugang und Beschäftigungsfähigkeit wirken vor späteren Sozial- und Fachkräftekosten und besitzen deshalb hohes präventives Potenzial.",
+        "Kreislauf lokal stärken: Reparaturförderung kann Produktlebensdauer und Reparaturkompetenz erhöhen, wenn tatsächliche Reparaturen und vermiedene Neuanschaffungen messbar werden.",
+        "Förderung braucht Additionalität: Öffentliche Finanzierung ist kein Wirkungsnachweis. Entscheidend ist, was zusätzlich entsteht und nach Förderende bestehen bleibt.",
+        "Regionale Wirkung messen: Strukturwandelprogramme sollten Beschäftigung, Gründungen, lokale Wertschöpfung, Flächen- und Klimaeffekte gemeinsam beobachten."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Bus, Apotheke, Versorgung und generationenübergreifende Platznutzung: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+      ],
       "system_boundary": null,
       "scenario_assumptions": [],
-      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
-      "alt_text": null,
-      "visual_brief": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-program-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines belebten Orts- oder Stadtzentrums in Sachsen-Anhalt mit öffentlichem Busverkehr, Apotheke, wohnortnaher Versorgung und Menschen verschiedener Altersgruppen. Das Bild visualisiert ausgewählte Wirkungspfade zu Daseinsvorsorge und sozialer Teilhabe und ist keine Prognose.",
+      "visual_brief": {
+        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "review_status": "APPROVED"
+      },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
-      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "REVIEWED_VISUAL_BRIEF",
-          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
-          "required_for": "BOTH"
+      "asset_sha256": "03fe2d3097b9e3ddb79fbc29a917eb2f891ec86b3185d8960fb24fb1e2fd730f",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 518256,
+        "original_filename": "owner-provided-spd-program-scenario-v1.png",
+        "original_sha256": "6190a9af3f09851d4d64e19e434470662a99ed8fe119a9ecaa8fabee8b0a9557",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "VISIBLE_ELEMENT_MAPPING",
-          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "NON_VISUAL_EFFECT_SELECTION",
-          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "ALT_TEXT_REVIEW",
-          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "EDITORIAL_VISUAL_SIGNOFF",
-          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
-          "required_for": "BOTH"
-        }
-      ],
+        "integrated_at": "2026-08-26"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
           "date": "2026-08-25",
           "status": "FAIL_CLOSED_CREATED",
           "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
         }
       ]
     },
@@ -285,6 +301,7 @@
       "non_visual_effects": [],
       "non_visual_effects_review_status": "PENDING_APPROVAL",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
@@ -294,6 +311,7 @@
       "visual_brief": null,
       "generator_metadata": null,
       "asset_sha256": null,
+      "asset_metadata": null,
       "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
       "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
       "missing_approved_inputs": [
@@ -366,55 +384,62 @@
         "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
         "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
       "visible_elements": [],
-      "non_visual_effects": [],
-      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "non_visual_effects": [
+        "Regeneration vor Reparatur: Biodiversitäts- und Waldresilienzmaßnahmen setzen früh in der Wirkungskaskade an und können spätere Schadens- und Anpassungskosten reduzieren.",
+        "Fläche ist nicht beliebig: Schutz, Landwirtschaft, Energie, Wohnen und Infrastruktur konkurrieren um Flächen; räumliche Verlagerung von Schäden muss mitgeprüft werden.",
+        "Waldbrandvorsorge: Präventive Strukturen können Feuerdynamik und Einsatzrisiken verringern, wenn sie mit Waldökologie und langfristiger Pflege verbunden werden.",
+        "Ökolandbau systemisch messen: Nicht nur Hektaranteil, sondern Nährstoff-, Biodiversitäts-, Ertrags-, Import- und Wertschöpfungswirkungen bestimmen die Netto-Wirkung."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Mobilität, Begrünung, Solar- und Windenergie: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+      ],
       "system_boundary": null,
       "scenario_assumptions": [],
-      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
-      "alt_text": null,
-      "visual_brief": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-program-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines multimodalen öffentlichen Raums in Sachsen-Anhalt mit Bus, Bahn, Rad- und Fußverkehr, Begrünung sowie sichtbarer Solar- und Windenergieinfrastruktur. Das Bild visualisiert ausgewählte Wirkungspfade zu Mobilität, öffentlichem Raum und Energie und ist keine Prognose.",
+      "visual_brief": {
+        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "review_status": "APPROVED"
+      },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
-      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "REVIEWED_VISUAL_BRIEF",
-          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
-          "required_for": "BOTH"
+      "asset_sha256": "7350d33b57190788e0a4e5d0910f2d7362a625fe84710ca6349834d85cddfe8b",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1536,
+        "height": 1024,
+        "byte_size": 533444,
+        "original_filename": "owner-provided-gruene-program-scenario-v1.png",
+        "original_sha256": "ff3a1767db99f3eb7f3ddecb3018609fe1d07556fa14bcc79e82f836442e275d",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "VISIBLE_ELEMENT_MAPPING",
-          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "NON_VISUAL_EFFECT_SELECTION",
-          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "ALT_TEXT_REVIEW",
-          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "EDITORIAL_VISUAL_SIGNOFF",
-          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
-          "required_for": "BOTH"
-        }
-      ],
+        "integrated_at": "2026-08-26"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
           "date": "2026-08-25",
           "status": "FAIL_CLOSED_CREATED",
           "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
         }
       ]
     },
@@ -442,6 +467,7 @@
       "non_visual_effects": [],
       "non_visual_effects_review_status": "PENDING_APPROVAL",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
@@ -451,6 +477,7 @@
       "visual_brief": null,
       "generator_metadata": null,
       "asset_sha256": null,
+      "asset_metadata": null,
       "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
       "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
       "missing_approved_inputs": [
@@ -523,55 +550,62 @@
         "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
         "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
       "visible_elements": [],
-      "non_visual_effects": [],
-      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "non_visual_effects": [
+        "Lokale Wirkungskapazität: Ehrenamts- und Beteiligungsinfrastruktur kann gesellschaftliche Aufgaben näher an lokale Kompetenzen und Bedarfe bringen.",
+        "Mehr Beteiligung ist nicht automatisch mehr Repräsentativität: Niedrigere Quoren erhöhen Zugänglichkeit, können aber Mobilisierungsunterschiede und Minderheitenrisiken verstärken.",
+        "Kommunale Ressourcen: Neue Fonds, Budgets und personelle Ausstattung brauchen Gegenfinanzierung und klare Kriterien, damit Beteiligung nicht von Finanzkraft abhängt.",
+        "Quellenkollision entdeckt: Mindestens ein zentraler Alt-Datensatz verbindet mehrere Programmpassagen. Dieser Pfad wird bis zur erneuten Quellenzerlegung fail-closed behandelt."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Wohnquartier, Kita, Stadtteiltreff und Versorgung: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+      ],
       "system_boundary": null,
       "scenario_assumptions": [],
-      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
-      "alt_text": null,
-      "visual_brief": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-program-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines Wohnquartiers in Sachsen-Anhalt mit Kita, Stadtteiltreff, wohnortnaher Versorgung und generationenübergreifend genutztem öffentlichem Raum. Das Bild visualisiert ausgewählte Wirkungspfade zu Wohnen, sozialer Infrastruktur und Zugänglichkeit und ist keine Prognose.",
+      "visual_brief": {
+        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "review_status": "APPROVED"
+      },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
-      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "REVIEWED_VISUAL_BRIEF",
-          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
-          "required_for": "BOTH"
+      "asset_sha256": "74ba1d23f7452cc58dd54fa36addfcadbdac22f5078fe04aadcfd0948fbec823",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1536,
+        "height": 1024,
+        "byte_size": 513434,
+        "original_filename": "owner-provided-linke-program-scenario-v1.png",
+        "original_sha256": "459194ccf3e6801c670189fc22f537b6a35754d0a2231aa11d18e0f731f67044",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "VISIBLE_ELEMENT_MAPPING",
-          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "NON_VISUAL_EFFECT_SELECTION",
-          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "ALT_TEXT_REVIEW",
-          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "EDITORIAL_VISUAL_SIGNOFF",
-          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
-          "required_for": "BOTH"
-        }
-      ],
+        "integrated_at": "2026-08-26"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
           "date": "2026-08-25",
           "status": "FAIL_CLOSED_CREATED",
           "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
         }
       ]
     },
@@ -599,6 +633,7 @@
       "non_visual_effects": [],
       "non_visual_effects_review_status": "PENDING_APPROVAL",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
@@ -608,6 +643,7 @@
       "visual_brief": null,
       "generator_metadata": null,
       "asset_sha256": null,
+      "asset_metadata": null,
       "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
       "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
       "missing_approved_inputs": [
@@ -680,55 +716,62 @@
         "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
         "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
       "visible_elements": [],
-      "non_visual_effects": [],
-      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "non_visual_effects": [
+        "Echte Wahlfreiheit: Soziale Sicherheit und zivile Alternativen können verhindern, dass wirtschaftlicher Druck berufliche Lebensentscheidungen dominiert.",
+        "Militarisierung ist kein Instrument: Ohne Definition, Zielzustand und Landeshebel kann aus der Forderung keine belastbare positive oder negative Wirkung abgeleitet werden.",
+        "Direkte Beteiligung braucht Design: Bürgerbudgets und Bürgerentscheide können Selbstwirksamkeit erhöhen, benötigen aber Repräsentativität, Minderheitenschutz und tragfähige kommunale Verfahren.",
+        "Dialog ist Vorwirkung, nicht Vollzug: Respektvolle Kommunikation kann gesellschaftlich relevant sein, ersetzt aber kein überprüfbares politisches Instrument."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Versorgung, Bus, Rathaus und regionale Wirtschaftsstruktur: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+      ],
       "system_boundary": null,
       "scenario_assumptions": [],
-      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
-      "alt_text": null,
-      "visual_brief": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-program-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines regionalen Ortszentrums in Sachsen-Anhalt mit lokaler Versorgung, öffentlichem Busverkehr, kommunaler Infrastruktur und regionalem Wirtschafts- und Industriebezug. Das Bild visualisiert ausgewählte Wirkungspfade zu Versorgung, regionaler Wirtschaft und Alltagsstabilität und ist keine Prognose.",
+      "visual_brief": {
+        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "review_status": "APPROVED"
+      },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
-      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "REVIEWED_VISUAL_BRIEF",
-          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
-          "required_for": "BOTH"
+      "asset_sha256": "2ead313d310fee8256642ddda5b8c26a8f1dfaa7ea9238c8be012fd8c70724d1",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1536,
+        "height": 1024,
+        "byte_size": 394440,
+        "original_filename": "owner-provided-bsw-program-scenario-v1.png",
+        "original_sha256": "a01b46494dd40da8082878e9a3ec45af72834f55377d57ed4978261ce0c20b37",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "VISIBLE_ELEMENT_MAPPING",
-          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "NON_VISUAL_EFFECT_SELECTION",
-          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "ALT_TEXT_REVIEW",
-          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "EDITORIAL_VISUAL_SIGNOFF",
-          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
-          "required_for": "BOTH"
-        }
-      ],
+        "integrated_at": "2026-08-26"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
           "date": "2026-08-25",
           "status": "FAIL_CLOSED_CREATED",
           "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
         }
       ]
     },
@@ -756,6 +799,7 @@
       "non_visual_effects": [],
       "non_visual_effects_review_status": "PENDING_APPROVAL",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
@@ -765,6 +809,7 @@
       "visual_brief": null,
       "generator_metadata": null,
       "asset_sha256": null,
+      "asset_metadata": null,
       "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
       "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
       "missing_approved_inputs": [
@@ -837,55 +882,62 @@
         "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
         "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
       "visible_elements": [],
-      "non_visual_effects": [],
-      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "non_visual_effects": [
+        "Frühe Bildung: Mehr qualitativ gutes Vorlesen kann Sprachentwicklung, Wortschatz und spätere Bildungsteilhabe unterstützen.",
+        "Unterstützung muss freiwillig sein: Beratung und materielle Hilfe für ungewollt Schwangere können Belastungen reduzieren, wenn Autonomie und Nichtdirektivität geschützt bleiben.",
+        "Grundrechtsgrenzen materiell: Reproduktive Gesundheit, Gleichheit, Diskriminierungsschutz und individuelle Freiheitsrechte dürfen nicht gegen andere Programmvorteile verrechnet werden.",
+        "Unbestimmte Abschaffungsforderungen: Ohne Benennung der betroffenen Instrumente ist weder Haushaltsentlastung noch gesellschaftliche Wirkung belastbar zu beurteilen."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Straßenraum, Polizei, Überwachung, Industrie und Verwaltungszugang: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+      ],
       "system_boundary": null,
       "scenario_assumptions": [],
-      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
-      "alt_text": null,
-      "visual_brief": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-program-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines städtischen Alltagsraums in Sachsen-Anhalt mit dichtem Autoverkehr, sichtbarer Polizei- und Überwachungsinfrastruktur, einer administrativen Zugangssituation sowie konventionell geprägter Industrie- und Energieinfrastruktur im Hintergrund. Das Bild visualisiert ausgewählte Wirkungspfade der WÖk-Analyse und ist keine Prognose.",
+      "visual_brief": {
+        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "review_status": "APPROVED"
+      },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
-      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "REVIEWED_VISUAL_BRIEF",
-          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
-          "required_for": "BOTH"
+      "asset_sha256": "ed6a73eeed917bf8501d5f351feaf01a206f75774d467be865675d8f1957b78a",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 186696,
+        "original_filename": "owner-provided-afd-program-scenario-v1.png",
+        "original_sha256": "accc8bd94ef8969b6f207151e761d66b7cbdc705f54f0e3a7ade7bb0e7b881f8",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "VISIBLE_ELEMENT_MAPPING",
-          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "NON_VISUAL_EFFECT_SELECTION",
-          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "ALT_TEXT_REVIEW",
-          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
-          "required_for": "BOTH"
-        },
-        {
-          "code": "EDITORIAL_VISUAL_SIGNOFF",
-          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
-          "required_for": "BOTH"
-        }
-      ],
+        "integrated_at": "2026-08-26"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
           "date": "2026-08-25",
           "status": "FAIL_CLOSED_CREATED",
           "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
         }
       ]
     },
@@ -913,6 +965,7 @@
       "non_visual_effects": [],
       "non_visual_effects_review_status": "PENDING_APPROVAL",
       "omitted_material_effects": [],
+      "omitted_marker_candidates": [],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
@@ -922,6 +975,7 @@
       "visual_brief": null,
       "generator_metadata": null,
       "asset_sha256": null,
+      "asset_metadata": null,
       "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
       "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
       "missing_approved_inputs": [

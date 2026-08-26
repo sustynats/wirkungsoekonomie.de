@@ -98,6 +98,30 @@
         "prompt_sha256": { "$ref": "#/$defs/sha256" }
       }
     },
+    "assetMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mime_type", "width", "height", "byte_size", "original_filename", "original_sha256", "optimization", "integrated_at"],
+      "properties": {
+        "mime_type": { "const": "image/webp" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "byte_size": { "type": "integer", "minimum": 1 },
+        "original_filename": { "type": "string", "minLength": 1 },
+        "original_sha256": { "$ref": "#/$defs/sha256" },
+        "optimization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["format", "full_composition_preserved", "metadata_published"],
+          "properties": {
+            "format": { "const": "WEBP_LOSSY_Q90" },
+            "full_composition_preserved": { "const": true },
+            "metadata_published": { "const": false }
+          }
+        },
+        "integrated_at": { "type": "string", "format": "date" }
+      }
+    },
     "missingApprovedInput": {
       "type": "object",
       "additionalProperties": false,
@@ -122,7 +146,7 @@
     "record": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "object_type", "object_id", "source_key", "analysis_version", "knowledge_cutoff", "stage", "visual_scope", "title", "normalized_subject", "source_statement_refs", "selected_impact_path_ids", "eligible_approved_analysis_refs", "selection_rationale", "visible_elements", "non_visual_effects", "non_visual_effects_review_status", "omitted_material_effects", "system_boundary", "scenario_assumptions", "evidence_summary", "disclaimer", "asset_path", "alt_text", "visual_brief", "generator_metadata", "asset_sha256", "editorial_review_status", "source_fidelity_status", "missing_approved_inputs", "change_history"],
+      "required": ["id", "object_type", "object_id", "source_key", "analysis_version", "knowledge_cutoff", "stage", "visual_scope", "title", "normalized_subject", "source_statement_refs", "selected_impact_path_ids", "eligible_approved_analysis_refs", "selection_rationale", "visible_elements", "non_visual_effects", "non_visual_effects_review_status", "omitted_material_effects", "omitted_marker_candidates", "system_boundary", "scenario_assumptions", "evidence_summary", "disclaimer", "asset_path", "alt_text", "visual_brief", "generator_metadata", "asset_sha256", "asset_metadata", "editorial_review_status", "source_fidelity_status", "missing_approved_inputs", "change_history"],
       "properties": {
         "id": { "type": "string", "minLength": 1 },
         "object_type": { "enum": ["PROGRAM", "COMMITMENT", "IMPACT_CASE", "GOVERNMENT_ACTION"] },
@@ -142,6 +166,7 @@
         "non_visual_effects": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "non_visual_effects_review_status": { "enum": ["PENDING_APPROVAL", "REVIEWED_COMPLETE"] },
         "omitted_material_effects": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "omitted_marker_candidates": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "system_boundary": { "type": ["string", "null"] },
         "scenario_assumptions": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "evidence_summary": { "type": "string", "minLength": 1 },
@@ -151,6 +176,7 @@
         "visual_brief": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/visualBrief" }] },
         "generator_metadata": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/generatorMetadata" }] },
         "asset_sha256": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/sha256" }] },
+        "asset_metadata": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/assetMetadata" }] },
         "editorial_review_status": { "enum": ["NO_APPROVED_VISUAL_SCENARIO", "APPROVED_FOR_PUBLICATION"] },
         "source_fidelity_status": { "enum": ["FAIL_CLOSED_NO_PUBLIC_ASSET", "PASS_APPROVED_ANALYSIS_ONLY"] },
         "missing_approved_inputs": { "type": "array", "items": { "$ref": "#/$defs/missingApprovedInput" } },

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { ExecutiveImpactSummaryView } from "@/app/components/executive-impact/ExecutiveImpactSummary";
 import { StateCoalitionCommitmentInventory } from "@/app/components/states/StateCoalitionCommitmentInventory";
 import {
   badenWuerttembergCoalitionAssessment,
@@ -14,6 +15,7 @@ import {
   badenWuerttembergCoalitionSources,
 } from "@/lib/states/baden-wuerttemberg-coalition";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+import { executiveImpactFromOverview } from "@/lib/executive-impact/from-overview";
 
 function ChapterReview({ chapter }: { chapter: (typeof badenWuerttembergCoalitionChapters)[number] }) {
   const relatedImpactCase = chapter.relatedImpactCase
@@ -56,6 +58,15 @@ function ChapterReview({ chapter }: { chapter: (typeof badenWuerttembergCoalitio
 export function BadenWuerttembergCoalitionReview() {
   const deepReviews = badenWuerttembergCoalitionChapters.filter((chapter) => chapter.maturity === "DEEP_REVIEW");
   const highMaterialityReviews = badenWuerttembergCoalitionChapters.filter((chapter) => chapter.maturity === "HIGH_MATERIALITY_REVIEW");
+  const executiveSummary = executiveImpactFromOverview({
+    id: "baden-wuerttemberg-coalition-2026-2031",
+    objectType: "COALITION_AGREEMENT",
+    assessment: badenWuerttembergCoalitionAssessment,
+    analysisVersion: "BW-KOALITION-FACH-GAP-CLOSURE-2026-08",
+    knowledgeCutoff: "2026-08-21",
+    systemBoundary: "Ex-ante-Mandatsportfolio des Koalitionsvertrags; Koalitionszusage, Regierungshandlung, Vollzug, beobachtete Zustandsänderung und Attribution bleiben getrennte Objekte.",
+    sourceRefs: badenWuerttembergCoalitionSources.map((source, index) => ({ id: `bw-coalition-source-${index + 1}`, label: source.title, href: sourceDetailHrefForUrl(source.url) })),
+  });
   return <article className="government-impact-case strategy-detail coalition-review" aria-labelledby="bw-coalition-title">
     <header>
       <p className="eyebrow">Baden-Württemberg · Mandatsanalyse 2026–2031</p>
@@ -101,7 +112,7 @@ export function BadenWuerttembergCoalitionReview() {
     <section aria-labelledby="bw-impact-overview">
       <p className="eyebrow">WÖk-Wirkungsprüfung des Mandatsportfolios</p>
       <h2 id="bw-impact-overview">Wirkungspotenziale, Risiken und entscheidende Bedingungen</h2>
-      <OverviewAssessment assessment={badenWuerttembergCoalitionAssessment} />
+      <ExecutiveImpactSummaryView summary={executiveSummary} />
     </section>
 
     <section aria-labelledby="bw-governance-review">

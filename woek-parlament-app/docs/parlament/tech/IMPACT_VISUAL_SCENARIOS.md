@@ -9,9 +9,11 @@ Die öffentliche Bezeichnung lautet **Wirkungsbild**:
 Die v1-Architektur ist portalweit wiederverwendbar. Der Sachsen-Anhalt-Pilot
 enthält zwölf versionierte Records: je ein `PROGRAM_SCENARIO` und ein
 `CASE_SCENARIO` für CDU, SPD, BÜNDNIS 90/DIE GRÜNEN, Die Linke, BSW und AfD.
-Zum Stand 25.08.2026 ist kein Bildasset freigegeben. Alle zwölf Records stehen
-deshalb bewusst auf `NO_APPROVED_VISUAL_SCENARIO`; die öffentliche UI zeigt
-keine Illustration und nennt die endlichen fehlenden Freigaben.
+Zum Stand 26.08.2026 sind die sechs `PROGRAM_SCENARIO`-Assets durch den
+owner-seitig gelieferten, fachlich-redaktionell signierten Handoff freigegeben
+und im Portal integriert. Die sechs `CASE_SCENARIO`-Records bleiben bewusst
+auf `NO_APPROVED_VISUAL_SCENARIO`, weil weder eine symmetrische Case-Auswahl
+noch Case-Assets freigegeben wurden.
 
 ## Restore-first-Befund
 
@@ -58,16 +60,52 @@ Ein freigegebener Record benötigt gleichzeitig:
 
 1. ausdrücklich ausgewählte freigegebene Wirkpfade (Programm 3–5, Case 1),
 2. einen geprüften versionierten Visual Brief,
-3. die vollständige Marker-zu-Wirkpfad-Zuordnung,
+3. für jeden verwendeten Marker eine vollständige Marker-zu-Wirkpfad-Zuordnung;
+   nicht eindeutig bindbare sichtbare Motive werden dokumentiert und erhalten
+   bewusst keinen Marker,
 4. abgeschlossene Auswahl nichtvisueller und ausgelassener materieller Folgen,
 5. Systemgrenze, Annahmen, Evidenz-/Unsicherheitsdarstellung,
 6. geprüften Alt-Text,
 7. neutrales Editorial-Sign-off,
-8. Generator-/Prompt-/Asset-Provenienz und SHA-256.
+8. verfügbare Generator-/Prompt-Provenienz sowie zwingend Asset-, Original-
+   und Handoff-Provenienz mit SHA-256. Nicht mitgelieferte Generatorparameter
+   werden nicht erfunden.
 
-Fehlt ein Feld, wird kein `<img>`/`next/image` gerendert. Eine spätere
+Fehlt ein zwingendes Feld, wird kein `<img>`/`next/image` gerendert. Eine spätere
 Freigabe ersetzt den vorhandenen Record nicht still, sondern ergänzt seine
 `change_history` und erzeugt eine neue Assetversion.
+
+## Freigegebener 6/6-Assetstand
+
+Alle sechs Dateien wurden aus den bereitgestellten PNG-Originalen mit
+`cwebp -q 90 -m 6 -metadata none` in WebP überführt. Der vollständige
+Bildausschnitt bleibt erhalten; die Descriptor-Records pinnen Originalname,
+Original-SHA, Ausgabemaße, Bytezahl und Asset-SHA.
+
+| Programm | Asset | SHA-256 |
+| --- | --- | --- |
+| CDU | `cdu-program-scenario-v1.webp` | `37ddd1008a733172f58843f5424e6014b0f4623d140dd13f12c93781d9b5db3e` |
+| SPD | `spd-program-scenario-v1.webp` | `03fe2d3097b9e3ddb79fbc29a917eb2f891ec86b3185d8960fb24fb1e2fd730f` |
+| BÜNDNIS 90/DIE GRÜNEN | `gruene-program-scenario-v1.webp` | `7350d33b57190788e0a4e5d0910f2d7362a625fe84710ca6349834d85cddfe8b` |
+| Die Linke | `linke-program-scenario-v1.webp` | `74ba1d23f7452cc58dd54fa36addfcadbdac22f5078fe04aadcfd0948fbec823` |
+| BSW | `bsw-program-scenario-v1.webp` | `2ead313d310fee8256642ddda5b8c26a8f1dfaa7ea9238c8be012fd8c70724d1` |
+| AfD | `afd-program-scenario-v1.webp` | `ed6a73eeed917bf8501d5f351feaf01a206f75774d467be865675d8f1957b78a` |
+
+Der freigegebene Handoff ist als
+`SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26`, Version
+`1.0`, SHA-256
+`3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29`
+gebunden. Die sechs Alt-Texte werden daraus unverändert übernommen.
+
+## Marker-Entscheidung
+
+Die sichtbaren Motive der sechs Bilder lassen sich nicht jeweils eindeutig
+einer der vier bereits freigegebenen Editorial-v2-Wirkpfad-IDs zuordnen.
+Deshalb ist die korrekte öffentliche Darstellung `NO_MARKER`: kein
+Wirkungspfad wird aus einem sichtbaren Motiv abgeleitet. Pro Record benennt
+`omitted_marker_candidates` den geprüften, nicht belastbar bindbaren
+Motivbereich. Das Bild bleibt Illustration eines freigegebenen
+Ex-ante-Szenarios und erzeugt keine neue Fachinformation.
 
 ## Neutraler visueller Vertrag
 

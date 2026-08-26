@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import type { ImpactVisualScenarioRecord } from "@/lib/impact-visuals/contracts";
 import { saxonyAnhaltImpactVisualRecord } from "@/lib/impact-visuals/records";
@@ -17,7 +18,7 @@ export function ImpactVisualOverview() {
     <header>
       <p className={styles.eyebrow}>Neue Erklärungsebene · fail closed</p>
       <h2 id="impact-visual-overview-title">Wirkungsbilder: Folgen erklären, politische Frames nicht illustrieren.</h2>
-      <p className="lead">Für jedes der sechs Programme sind ein Programm-Szenario und ein Case-Deep-Dive als versionierte Slots angelegt. Bilder erscheinen erst nach einem fachlich freigegebenen Visual Brief. Bis dahin zeigt das Portal den exakten Freigabestatus statt eine Zukunft aus Programmtext zu erzeugen.</p>
+      <p className="lead">Sechs fachlich und redaktionell freigegebene Programm-Szenarien visualisieren ausgewählte Wirkungspfade. Sie sind Ex-ante-Szenarien, keine Prognosen und keine zusätzliche Evidenz. Die sechs Case-Deep-Dives bleiben bis zu einer separaten Auswahl und Freigabe transparent geschlossen.</p>
     </header>
     <div className={styles.overviewGrid}>
       {saxonyAnhaltElectionProgrammes.map((programme) => {
@@ -26,6 +27,9 @@ export function ImpactVisualOverview() {
         if (!programmeRecord || !caseRecord) throw new Error(`Missing impact visual contract for ${programme.sourceKey}`);
         return <article key={programme.sourceKey}>
           <p>{programme.party}</p>
+          {programmeRecord.editorial_review_status === "APPROVED_FOR_PUBLICATION" && programmeRecord.asset_path && programmeRecord.alt_text
+            ? <div className={styles.overviewImage}><Image src={programmeRecord.asset_path} alt={programmeRecord.alt_text} fill sizes="(max-width: 680px) 100vw, (max-width: 980px) 50vw, 33vw" /></div>
+            : null}
           <h3>2 von 2 Slots versioniert</h3>
           <ul>
             <li><span>Programm-Szenario</span><strong>{publicStatus(programmeRecord)}</strong></li>

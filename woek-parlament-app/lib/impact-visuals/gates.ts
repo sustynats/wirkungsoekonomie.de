@@ -49,6 +49,7 @@ function failClosedHasNoAsset(record: ImpactVisualScenarioRecord) {
     && record.visual_brief === null
     && record.generator_metadata === null
     && record.asset_sha256 === null
+    && record.asset_metadata === null
     && record.visible_elements.length === 0
     && record.non_visual_effects_review_status === "PENDING_APPROVAL";
 }
@@ -60,9 +61,8 @@ function approvedAssetComplete(record: ImpactVisualScenarioRecord) {
     && record.visual_brief !== null
     && record.asset_path !== null
     && record.alt_text !== null
-    && record.generator_metadata !== null
     && record.asset_sha256 !== null
-    && record.visible_elements.length > 0
+    && record.asset_metadata !== null
     && record.non_visual_effects_review_status === "REVIEWED_COMPLETE"
     && record.source_fidelity_status === "PASS_APPROVED_ANALYSIS_ONLY";
 }
@@ -123,9 +123,9 @@ export function evaluateImpactVisualGates({
     { gate: "IMPACT_VISUAL_SOURCE_FIDELITY", pass: allRefsApproved && allVisibleProvenance && allApprovedOrClosed, detail: "Unknown or incomplete visual semantics fail closed." },
     { gate: "IMPACT_VISUAL_VERSION_PROVENANCE", pass: descriptorHash(descriptor) === descriptor.manifest_sha256 && records.every((record) => record.change_history.length > 0), detail: "Descriptor hash and per-record change history are complete." },
     { gate: "ALL_SIX_ST_PROGRAMS_USE_SAME_VISUAL_CONTRACT", pass: symmetricContract, detail: "Each of six programmes has exactly one programme and one case record." },
-    { gate: "ALT_TEXT_AND_MARKER_A11Y", pass: markerA11y && stylesheet.includes(":focus-visible") && stylesheet.includes("min-height: 44px"), detail: "Approved assets require alt text, unique keyboard markers and 44px targets; absent assets render no inert markers." },
+    { gate: "ALT_TEXT_AND_MARKER_A11Y", pass: markerA11y && stylesheet.includes(":focus-visible") && stylesheet.includes("min-height: 44px"), detail: "Approved assets require alt text; any approved markers are unique, keyboard-accessible 44px targets. A reviewed NO_MARKER decision renders no inert marker." },
     { gate: "IMPACT_VISUAL_MOBILE_320_360_375_390_428", pass: responsiveContract, detail: "The shared component collapses to one column and retains accessible targets across the required mobile matrix." },
     { gate: "NO_HORIZONTAL_OVERFLOW", pass: overflowContract, detail: "The component establishes min-width, clipping and single-column mobile containment." },
-    { gate: "NO_DERIVED_AUTOMATIC_BENEFIT", pass: records.every((record) => isFailClosed(record) || record.visible_elements.every((element) => record.selected_impact_path_ids.includes(element.impact_path_id))), detail: "No visible benefit can exist without an explicitly selected, approved path; current records contain no visible claims." },
+    { gate: "NO_DERIVED_AUTOMATIC_BENEFIT", pass: records.every((record) => isFailClosed(record) || record.visible_elements.every((element) => record.selected_impact_path_ids.includes(element.impact_path_id))), detail: "No visible benefit can exist without an explicitly selected, approved path; reviewed NO_MARKER records contain no visible fachliche claim." },
   ];
 }

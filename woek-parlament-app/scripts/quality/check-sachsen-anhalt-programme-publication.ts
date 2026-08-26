@@ -21,9 +21,10 @@ const root = process.cwd();
 const overviewPath = path.join(root, "app/laender/sachsen-anhalt/page.tsx");
 const routePath = path.join(root, "app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx");
 const componentPath = path.join(root, "app/components/SaxonyAnhaltProgrammeAnalysisV3.tsx");
+const executiveComponentPath = path.join(root, "app/components/executive-impact/ExecutiveImpactSummary.tsx");
 const editorialPath = path.join(root, "data/presentation/sachsen-anhalt-programme-editorial-v2.ts");
 const modelPath = path.join(root, "lib/presentation/sachsen-anhalt-programme-model.ts");
-for (const requiredPath of [overviewPath, routePath, componentPath, editorialPath, modelPath]) {
+for (const requiredPath of [overviewPath, routePath, componentPath, executiveComponentPath, editorialPath, modelPath]) {
   if (!existsSync(requiredPath)) fail(`required public presentation file is missing: ${path.relative(root, requiredPath)}`);
 }
 
@@ -57,9 +58,9 @@ if (routeSource.includes("CompletePublicationSource")) fail("raw complete-public
 const componentSource = readFileSync(componentPath, "utf8");
 for (const requiredToken of [
   "data-woek-sachsen-anhalt-public=\"programme-blueprint-v3\"",
-  "WÖk-Gesamtzusammenfassung",
+  "ExecutiveImpactSummaryView",
+  "saxonyAnhaltExecutiveImpactSummary",
   "Key Finding",
-  "Richtungsprofil",
   "Wirkungsrichtung",
   "Wirkungspotenzial",
   "Evidenz",
@@ -77,7 +78,11 @@ for (const requiredToken of [
 if (componentSource.includes("firstPotential(")) fail("programme blueprint must not use the legacy firstPotential shortcut");
 if (!componentSource.includes("saxonyAnhaltCommitmentEditorial")) fail("programme blueprint must use reviewed editorial commitment overlays");
 if (componentSource.includes("style={{")) fail("programme blueprint must not violate the production CSP with inline styles");
-if (!componentSource.includes("<progress className={styles.barTrack}")) fail("direction profile must retain a CSP-safe proportional visual");
+const executiveComponentSource = readFileSync(executiveComponentPath, "utf8");
+for (const requiredToken of ["ImpactExecutiveHero", "MPDImpactTriad", "MaterialImpactPaths", "SdgImpactStrip", "EvidenceBand", "CommunicationImpactPreview", "SourceTransparencyDrawer"]) {
+  if (!executiveComponentSource.includes(requiredToken)) fail(`shared Executive presentation does not contain ${requiredToken}`);
+}
+if (!executiveComponentSource.includes("Keine freigegebene Auswahl materieller Wirkpfade")) fail("shared Executive presentation must retain the materiality fail-closed notice");
 for (const staleClaim of ["finale Source-Unit-Parität offen", "endgültige Nenner sind noch nicht eingefroren", "endgültige Nenner ist noch nicht eingefroren"]) {
   if (componentSource.includes(staleClaim)) fail(`programme blueprint retains stale convergence claim: ${staleClaim}`);
 }
