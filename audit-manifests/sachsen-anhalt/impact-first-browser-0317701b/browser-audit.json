@@ -1,0 +1,90 @@
+{
+  "schema_version": "woek-parliament-impact-first-browser-audit-1.0",
+  "audited_at": "2026-08-26T20:57:50.436Z",
+  "tested_code_commit": "0317701b6fc4ba3ffbd739f665f763ed00197599",
+  "runtime": {
+    "mode": "LOCAL_NEXT_DEVELOPMENT_EXACT_SOURCE",
+    "base_url": "http://localhost:3025",
+    "reason": "The optimized production build and full Golden-State suite were verified separately. The exact-source browser run uses development mode for layout and interaction evidence only.",
+    "release_action": "NONE"
+  },
+  "routes": [
+    "/laender/sachsen-anhalt",
+    "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd"
+  ],
+  "viewports": [320, 360, 375, 390, 428, 1440],
+  "measurements": {
+    "desktop_overview_card_heights_px": [392, 392, 396, 396, 378, 378],
+    "desktop_target_px": {
+      "minimum": 350,
+      "maximum": 450
+    },
+    "horizontal_overflow": {
+      "320": false,
+      "360": false,
+      "375": false,
+      "390": false,
+      "428": false,
+      "1440": false
+    },
+    "programme_visual_count_on_afd_detail": 1,
+    "case_visual_count_on_afd_detail": 0
+  },
+  "five_second_test": {
+    "status": "PASS",
+    "visible_before_process_metadata": [
+      "programme-wide overall finding",
+      "impact direction and materiality",
+      "Mensch, Planet and Demokratie",
+      "strongest approved AfD democracy and system risks"
+    ]
+  },
+  "twenty_second_test": {
+    "status": "PASS",
+    "visible_before_process_metadata": [
+      "why it matters",
+      "affected systems and groups",
+      "directed SDG and SDG+ references",
+      "material paths",
+      "noncompensation and protection boundaries",
+      "evidence and uncertainty",
+      "approved programme scenario image"
+    ]
+  },
+  "runtime_diagnostics": {
+    "http_5xx": 0,
+    "application_console_errors": 0,
+    "react_runtime_or_fatal_errors": 0,
+    "development_overlay_csp_notices_excluded": 66,
+    "exclusion_rule": "Only Content-Security-Policy notices emitted by node_modules_next_dist_compiled_next-devtools_index were excluded. They concern the development overlay's attempted inline styles, not application code or React runtime execution."
+  },
+  "gates": {
+    "compact_desktop_cards": "PASS",
+    "impact_before_process": "PASS",
+    "strongest_afd_finding_first": "PASS",
+    "programme_visual_present": "PASS",
+    "mobile_matrix_complete": "PASS",
+    "no_horizontal_overflow": "PASS",
+    "no_5xx": "PASS",
+    "no_application_or_react_runtime_errors": "PASS",
+    "accessibility_and_responsive_source_gate": "PASS"
+  },
+  "screenshots": [
+    {
+      "file": "sachsen-anhalt-overview-1440.png",
+      "sha256": "0bb06145e3c9a419a42714935bff814df4f17607ff65ab42054351252cb8e3f7"
+    },
+    {
+      "file": "sachsen-anhalt-overview-390.png",
+      "sha256": "235e8963dd51ef9f060e773e2ccdc06455c30c9e35e1b454a84f624c6912d462"
+    },
+    {
+      "file": "afd-detail-1440.png",
+      "sha256": "6b06c1daa11218cef4d936df2e77715a415be2e0a2e3fbaa4a0055c9f4c4cca3"
+    },
+    {
+      "file": "afd-detail-390.png",
+      "sha256": "1996f6d63f76301c7fe43e2e8116db1d5dfe762ce078ff2bea4106d384e8551c"
+    }
+  ]
+}

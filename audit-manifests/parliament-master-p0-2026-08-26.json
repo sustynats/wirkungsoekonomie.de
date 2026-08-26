@@ -1,0 +1,597 @@
+{
+  "schema_version": "woek-parliament-master-p0-execution-matrix-1.0",
+  "generated_on": "2026-08-26",
+  "repository": "sustynats/wirkungsoekonomie.de",
+  "task_start_main": "186e208e9da860e1aa0391faca9c1feeae9ae3f9",
+  "browser_tested_code_commit": "0317701b6fc4ba3ffbd739f665f763ed00197599",
+  "governance": {
+    "editorial_protocol": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL",
+    "no_new_vercel_build": true,
+    "parliament_release_approval": "NOT_GRANTED",
+    "fach_synthesis_forbidden": true
+  },
+  "summary": {
+    "status": "GITHUB_TERMINAL_WITH_EXACT_EXTERNAL_BLOCKERS",
+    "checklist_pass": 80,
+    "checklist_not_applicable": 0,
+    "checklist_external_blocker": 0,
+    "berlin": {
+      "programmes_terminal": 12,
+      "terminal_source_objects": 22334,
+      "genuine_fach_review_required": 0,
+      "descriptor_sha256": "c8c575cf2ae580773418662603774ced5dde4056e5a04aa33317194049833e7c"
+    },
+    "mecklenburg_vorpommern": {
+      "verified_programmes_terminal": 12,
+      "reviewed_pages": 896,
+      "source_units": 8712,
+      "effect_atoms": 7494,
+      "terminal_source_objects": 11395,
+      "source_maturity_blockers": 7,
+      "descriptor_sha256": "f5c0696f9e8c10ece572f26c7188cb97fa99f35a0ce7288d00960735e2523b71"
+    },
+    "nonblocking_projections": {
+      "objects": 129,
+      "available": 63,
+      "fail_closed": 66
+    },
+    "route_families": {
+      "total": 18,
+      "pass": 6,
+      "not_applicable": 6,
+      "external_blocker": 6
+    },
+    "golden_state": {
+      "routes": "240/240",
+      "content_paths": "17033/17033",
+      "accessibility_files": 109,
+      "accessibility_findings": 0
+    }
+  },
+  "checklist": [
+    {
+      "id": "current_main_sha_recorded",
+      "requirement": "Current main loaded and SHA recorded",
+      "status": "PASS",
+      "evidence": "Task start SHA 186e208e9da860e1aa0391faca9c1feeae9ae3f9."
+    },
+    {
+      "id": "root_app_governance_read",
+      "requirement": "Root/app governance fully read",
+      "status": "PASS",
+      "evidence": "Repository AGENTS.md and woek-parlament-app/AGENTS.md applied."
+    },
+    {
+      "id": "dropbox_handoff_read",
+      "requirement": "All Dropbox handoff files fully read",
+      "status": "PASS",
+      "evidence": "MANIFEST.md and every referenced execution/governance/content contract read before implementation."
+    },
+    {
+      "id": "be_dkp",
+      "requirement": "Berlin DKP protected",
+      "status": "PASS",
+      "evidence": "Terminal reused Fach/source coverage preserved."
+    },
+    {
+      "id": "be_partei",
+      "requirement": "Berlin Die PARTEI protected",
+      "status": "PASS",
+      "evidence": "Terminal HTML source coverage preserved."
+    },
+    {
+      "id": "be_sgp",
+      "requirement": "Berlin SGP protected",
+      "status": "PASS",
+      "evidence": "Terminal reused Fach/source coverage preserved."
+    },
+    {
+      "id": "be_bsw_1_13",
+      "requirement": "Berlin BSW pages 1-13 protected",
+      "status": "PASS",
+      "evidence": "Existing reviewed coverage preserved."
+    },
+    {
+      "id": "be_bsw_14_66",
+      "requirement": "Berlin BSW pages 14-66 terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_spd",
+      "requirement": "Berlin SPD terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_cdu",
+      "requirement": "Berlin CDU terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_fdp",
+      "requirement": "Berlin FDP terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_volt",
+      "requirement": "Berlin Volt terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_tierschutz",
+      "requirement": "Berlin Tierschutzpartei terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_gruene",
+      "requirement": "Berlin GRÜNE terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_afd",
+      "requirement": "Berlin AfD terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_linke",
+      "requirement": "Berlin Linke terminal",
+      "status": "PASS",
+      "evidence": "Full programme ledger terminal."
+    },
+    {
+      "id": "be_coverage",
+      "requirement": "Berlin page/source-unit/atom coverage complete",
+      "status": "PASS",
+      "evidence": "12/12; 22,334 terminal source objects; 0 open."
+    },
+    {
+      "id": "mv_spd",
+      "requirement": "MV SPD terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_afd",
+      "requirement": "MV AfD terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_cdu",
+      "requirement": "MV CDU terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_linke",
+      "requirement": "MV Linke terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_gruene",
+      "requirement": "MV GRÜNE terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_fdp",
+      "requirement": "MV FDP terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_freie_waehler",
+      "requirement": "MV FREIE WÄHLER terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_piraten",
+      "requirement": "MV PIRATEN terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_buendnis_c",
+      "requirement": "MV Bündnis C terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_bsw",
+      "requirement": "MV BSW terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_pdf",
+      "requirement": "MV PdF terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_volt",
+      "requirement": "MV Volt terminal",
+      "status": "PASS",
+      "evidence": "Verified-final full programme ledger terminal."
+    },
+    {
+      "id": "mv_unverified",
+      "requirement": "MV seven unverified programmes correctly fail-closed or newly source-verified",
+      "status": "PASS",
+      "evidence": "Seven exact source-maturity blockers remain fail-closed."
+    },
+    {
+      "id": "mv_coverage",
+      "requirement": "MV page/source-unit/atom coverage complete",
+      "status": "PASS",
+      "evidence": "12/12 verified corpus; 896 pages, 8,712 source units, 7,494 effect atoms, 11,395 terminal objects."
+    },
+    {
+      "id": "case_cdu",
+      "requirement": "CDU ST case selection integrated",
+      "status": "PASS",
+      "evidence": "Delegated case selection bound."
+    },
+    {
+      "id": "case_spd",
+      "requirement": "SPD ST case selection integrated",
+      "status": "PASS",
+      "evidence": "Delegated case selection bound."
+    },
+    {
+      "id": "case_gruene",
+      "requirement": "GRÜNE ST case selection integrated",
+      "status": "PASS",
+      "evidence": "Delegated case selection bound."
+    },
+    {
+      "id": "case_linke",
+      "requirement": "Linke ST case selection integrated",
+      "status": "PASS",
+      "evidence": "Delegated case selection bound."
+    },
+    {
+      "id": "case_bsw",
+      "requirement": "BSW ST case selection integrated",
+      "status": "PASS",
+      "evidence": "Delegated case selection bound."
+    },
+    {
+      "id": "case_afd",
+      "requirement": "AfD ST case selection integrated",
+      "status": "PASS",
+      "evidence": "Delegated case selection bound."
+    },
+    {
+      "id": "case_briefs",
+      "requirement": "Six ST case visual briefs integrated",
+      "status": "PASS",
+      "evidence": "6/6 descriptor records."
+    },
+    {
+      "id": "case_alt",
+      "requirement": "Six ST case alt-text raw approvals integrated",
+      "status": "PASS",
+      "evidence": "6/6 raw approved alt-text handoffs."
+    },
+    {
+      "id": "case_marker",
+      "requirement": "Six ST case marker policies integrated",
+      "status": "PASS",
+      "evidence": "6/6 reviewed NO_MARKER decisions."
+    },
+    {
+      "id": "case_blockers",
+      "requirement": "Six ST case descriptors now list only real remaining image-asset blockers",
+      "status": "PASS",
+      "evidence": "Only IMAGE_ASSET and FINAL_IMAGE_SIGNOFF remain."
+    },
+    {
+      "id": "program_images",
+      "requirement": "Existing six ST PROGRAM_SCENARIO images protected",
+      "status": "PASS",
+      "evidence": "Six approved programme assets retained; never reused as Case assets."
+    },
+    {
+      "id": "projection_st",
+      "requirement": "ST 6/6 structured MPD/SDG/materiality projection processed",
+      "status": "PASS",
+      "evidence": "Six explicit source-bound executive profiles."
+    },
+    {
+      "id": "projection_government_compact",
+      "requirement": "57 compact government records processed",
+      "status": "PASS",
+      "evidence": "All 57 inventoried; absent fields remain fail-closed."
+    },
+    {
+      "id": "projection_government_deep",
+      "requirement": "Six detailed government cases processed",
+      "status": "PASS",
+      "evidence": "All six inventoried and projected only where explicit."
+    },
+    {
+      "id": "projection_government_max5",
+      "requirement": "Six-path government case max-five material selection processed",
+      "status": "PASS",
+      "evidence": "No automatic selection; exact external materiality input recorded."
+    },
+    {
+      "id": "projection_eu",
+      "requirement": "21 EU cases processed",
+      "status": "PASS",
+      "evidence": "21/21 inventoried; missing structured fields fail-closed."
+    },
+    {
+      "id": "projection_bw",
+      "requirement": "Baden-Württemberg projection processed",
+      "status": "PASS",
+      "evidence": "Document inventoried; non-approved aggregate fields fail-closed."
+    },
+    {
+      "id": "projection_rlp",
+      "requirement": "Rheinland-Pfalz projection processed",
+      "status": "PASS",
+      "evidence": "Document inventoried; non-approved aggregate fields fail-closed."
+    },
+    {
+      "id": "projection_historical",
+      "requirement": "Historical federal/coalition/Fachakte projection inventory processed",
+      "status": "PASS",
+      "evidence": "All requested historical families inventoried."
+    },
+    {
+      "id": "projection_observatory",
+      "requirement": "Wirkungsobservatorium link projection processed",
+      "status": "PASS",
+      "evidence": "Fail-closed until case-specific Fach approval."
+    },
+    {
+      "id": "route_audit",
+      "requirement": "Every public route family audited",
+      "status": "PASS",
+      "evidence": "18/18 route families accounted."
+    },
+    {
+      "id": "impact_layer",
+      "requirement": "Impact-First executive layer implemented/reused",
+      "status": "PASS",
+      "evidence": "Shared schema, adapters and renderer."
+    },
+    {
+      "id": "mpd_scan",
+      "requirement": "MPD visual scan implemented",
+      "status": "PASS",
+      "evidence": "Direction, materiality and evidence remain separate and fail-closed."
+    },
+    {
+      "id": "sdg_scan",
+      "requirement": "SDG/SDG+ direction scan implemented",
+      "status": "PASS",
+      "evidence": "Explicit directions only."
+    },
+    {
+      "id": "top_paths",
+      "requirement": "Material top paths implemented",
+      "status": "PASS",
+      "evidence": "Maximum three overview, five detail; no inferred ranking."
+    },
+    {
+      "id": "why",
+      "requirement": "Why-it-matters implemented",
+      "status": "PASS",
+      "evidence": "Visible before evidence and process metadata."
+    },
+    {
+      "id": "noncomp",
+      "requirement": "Noncompensation UI implemented",
+      "status": "PASS",
+      "evidence": "Protection boundary visible where explicit."
+    },
+    {
+      "id": "evidence",
+      "requirement": "Evidence separate from direction",
+      "status": "PASS",
+      "evidence": "Schema and UI gate."
+    },
+    {
+      "id": "communication",
+      "requirement": "Communication impact preview integrated where applicable",
+      "status": "PASS",
+      "evidence": "Separate Fach strand on Sachsen-Anhalt details."
+    },
+    {
+      "id": "generic_gate",
+      "requirement": "Generic-copy gate implemented",
+      "status": "PASS",
+      "evidence": "Automated publication gate."
+    },
+    {
+      "id": "strongest_gate",
+      "requirement": "Strongest-finding gate implemented",
+      "status": "PASS",
+      "evidence": "AfD democracy/system risks reach the first view."
+    },
+    {
+      "id": "no_score",
+      "requirement": "No party total score",
+      "status": "PASS",
+      "evidence": "No score or ranking rendered."
+    },
+    {
+      "id": "no_neutral",
+      "requirement": "No data gap rendered as neutral",
+      "status": "PASS",
+      "evidence": "Open and not-assessable are explicit."
+    },
+    {
+      "id": "mobile_320",
+      "requirement": "Mobile 320 tested",
+      "status": "PASS",
+      "evidence": "Overview and AfD detail; no overflow."
+    },
+    {
+      "id": "mobile_360",
+      "requirement": "Mobile 360 tested",
+      "status": "PASS",
+      "evidence": "Overview and AfD detail; no overflow."
+    },
+    {
+      "id": "mobile_375",
+      "requirement": "Mobile 375 tested",
+      "status": "PASS",
+      "evidence": "Overview and AfD detail; no overflow."
+    },
+    {
+      "id": "mobile_390",
+      "requirement": "Mobile 390 tested",
+      "status": "PASS",
+      "evidence": "Overview and AfD detail; screenshot evidence."
+    },
+    {
+      "id": "mobile_428",
+      "requirement": "Mobile 428 tested",
+      "status": "PASS",
+      "evidence": "Overview and AfD detail; no overflow."
+    },
+    {
+      "id": "desktop",
+      "requirement": "Desktop representative routes tested",
+      "status": "PASS",
+      "evidence": "1,440 px overview and AfD detail with screenshots."
+    },
+    {
+      "id": "a11y",
+      "requirement": "Accessibility tested",
+      "status": "PASS",
+      "evidence": "109 automated source files; 0 findings; browser structure inspected."
+    },
+    {
+      "id": "overflow",
+      "requirement": "No horizontal overflow",
+      "status": "PASS",
+      "evidence": "All twelve viewport/route cases."
+    },
+    {
+      "id": "golden_suite",
+      "requirement": "Existing full Golden-State suite green",
+      "status": "PASS",
+      "evidence": "npm run build; 240/240 routes and 17,033/17,033 content paths."
+    },
+    {
+      "id": "new_gates",
+      "requirement": "New gates green",
+      "status": "PASS",
+      "evidence": "Berlin, MV, impact-first, projections, visuals and publication gates."
+    },
+    {
+      "id": "fach_matrices",
+      "requirement": "Fach coverage matrices complete",
+      "status": "PASS",
+      "evidence": "Berlin 12/12 and MV verified 12/12 terminal, seven MV source blockers explicit."
+    },
+    {
+      "id": "route_matrix",
+      "requirement": "Route coverage matrix complete",
+      "status": "PASS",
+      "evidence": "18 route families with PASS, NOT_APPLICABLE or EXTERNAL_BLOCKER only."
+    },
+    {
+      "id": "github_terminal",
+      "requirement": "GitHub-terminal state reached under current governance",
+      "status": "PASS",
+      "evidence": "Complete fresh-main branch, commits, PR/CI/merge evidence recorded in GitHub #241 and the PR."
+    },
+    {
+      "id": "no_vercel",
+      "requirement": "NO_NEW_VERCEL_BUILD respected",
+      "status": "PASS",
+      "evidence": "No Vercel action performed."
+    },
+    {
+      "id": "no_production",
+      "requirement": "Production promotion NOT performed without owner approval",
+      "status": "PASS",
+      "evidence": "PARLIAMENT_RELEASE_APPROVAL remains NOT_GRANTED."
+    },
+    {
+      "id": "blockers",
+      "requirement": "Exact external blockers listed",
+      "status": "PASS",
+      "evidence": "See external_blockers; no vague residual."
+    }
+  ],
+  "external_blockers": [
+    {
+      "id": "st_case_visuals",
+      "status": "EXTERNAL_BLOCKER",
+      "count": 6,
+      "input": "One distinct CASE_SCENARIO image asset plus subsequent FINAL_IMAGE_SIGNOFF for each of CDU, SPD, GRÜNE, Linke, BSW and AfD.",
+      "release_blocking": true
+    },
+    {
+      "id": "mv_source_maturity",
+      "status": "EXTERNAL_BLOCKER",
+      "count": 7,
+      "input": "Verified official final programme artifact for Tierschutzpartei, Die PARTEI, ÖDP, Handwerker Partei Deutschland, KPD, Team Freiheit and WIR LEBEN DEMOKRATIE.",
+      "release_blocking": true
+    },
+    {
+      "id": "government_structured_fach",
+      "status": "EXTERNAL_BLOCKER",
+      "count": 63,
+      "input": "Object-specific explicit structured MPD/SDG/path/boundary/evidence decisions where fields are closed; includes approved max-five selection for the six-path pension object.",
+      "release_blocking": false
+    },
+    {
+      "id": "eu_structured_fach",
+      "status": "EXTERNAL_BLOCKER",
+      "count": 21,
+      "input": "Source-bound MPD, directed SDG/SDG+, material-path and noncompensation projections.",
+      "release_blocking": false
+    },
+    {
+      "id": "state_coalition_aggregates",
+      "status": "EXTERNAL_BLOCKER",
+      "count": 2,
+      "input": "Document-wide material path selection and MPD/SDG direction for Baden-Württemberg and Rheinland-Pfalz.",
+      "release_blocking": false
+    },
+    {
+      "id": "historical_structured_fach",
+      "status": "EXTERNAL_BLOCKER",
+      "input": "Object-specific structured MPD/SDG/materiality decisions for historical federal programmes, coalition objects and Fachakten.",
+      "release_blocking": false
+    },
+    {
+      "id": "observatory_linkage",
+      "status": "EXTERNAL_BLOCKER",
+      "input": "Case-specific Executive linkage with explicit Fach approval.",
+      "release_blocking": false
+    },
+    {
+      "id": "release_approval",
+      "status": "EXTERNAL_BLOCKER",
+      "input": "New explicit project-owner approval for exactly one Parliament RC under the existing minimal-artifact pipeline.",
+      "release_blocking": true
+    }
+  ],
+  "authoritative_evidence": [
+    "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json",
+    "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-v2.json",
+    "woek-parlament-app/data/executive-impact/route-coverage-v1.json",
+    "woek-parlament-app/data/executive-impact/nonblocking-projection-inventory-v1.json",
+    "audit-manifests/sachsen-anhalt/impact-first-browser-0317701b/browser-audit.json",
+    "woek-parlament-app/docs/parlament/tech/IMPACT_FIRST_MASTER_EXECUTION_2026-08-26.md"
+  ]
+}
+

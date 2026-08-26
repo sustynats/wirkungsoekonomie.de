@@ -2,85 +2,103 @@
 
 ## Ergebnis
 
-Die technische Impact-First-Architektur und die sechs freigegebenen
-Sachsen-Anhalt-Programmbilder sind GitHub-terminal vorbereitet. Eine
-Production-Veröffentlichung dieses Changesets ist nicht freigegeben, solange
-der bindende Länder-Controller Berlin und Mecklenburg-Vorpommern nicht als
-Fach-terminal ausweist.
+Der nach aktueller Governance zulässige GitHub-Zustand ist vollständig
+materialisiert. Berlin ist für alle zwölf verifizierten finalen Programme
+fachterminal. Mecklenburg-Vorpommern ist für alle zwölf verifizierten finalen
+Programme fachterminal; sieben weitere Listeneinträge bleiben bis zur
+Verifikation eines amtlichen finalen Programm-Artefakts fail-closed.
 
-Basis: `9e8389cb8623109a87ba6f3563d5aabac3ba6cea`
+Sachsen-Anhalt ist 6/6 Impact-First veröffentlicht vorbereitet: kompakte
+Programmvergleiche, Detailansichten und sechs freigegebene
+`PROGRAM_SCENARIO`-Bilder sind vollständig. Die sechs ausgewählten
+`CASE_SCENARIO`-Fälle sind inhaltlich, redaktionell und technisch bis auf zwei
+wirklich externe Eingaben pro Fall vorbereitet: separate Bildbytes und das
+anschließende finale Bild-Sign-off.
 
-Route-Matrix: `data/executive-impact/route-coverage-v1.json`
+- Ausgangs-`main`: `186e208e9da860e1aa0391faca9c1feeae9ae3f9`
+- Browsergeprüfter Code-Commit: `0317701b6fc4ba3ffbd739f665f763ed00197599`
+- Release-Sperre: `NO_NEW_VERCEL_BUILD=true`
+- Release-Freigabe: `PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED`
+- Route-Matrix: `data/executive-impact/route-coverage-v1.json`
+- Nicht blockierende Projektionen: `data/executive-impact/nonblocking-projection-inventory-v1.json`
+- Executive-Vertrag: `data/contracts/executive-impact-summary.schema.json`
+- Visual-Descriptor: `data/impact-visuals/sachsen-anhalt-2026-v1.json`
 
-Executive-Vertrag: `data/contracts/executive-impact-summary.schema.json`
-Visual-Descriptor: `data/impact-visuals/sachsen-anhalt-2026-v1.json`
+## Vollprogramm-Coverage
 
-## Master-Checkliste
+| Korpus | Status | Nachweis |
+| --- | --- | --- |
+| Berlin | PASS · 12/12 terminal | 1.293 PDF-Seiten plus Die-PARTEI-HTML; 22.334 terminale Objekte; 78 explizite Fachfreigaben/-wiederverwendungen; 19.629 exakt begründete `REVIEWED_NOT_ASSESSABLE`; 2.627 Kontexte; 0 offen; Descriptor `c8c575cf2ae580773418662603774ced5dde4056e5a04aa33317194049833e7c`. |
+| Mecklenburg-Vorpommern, verifizierter Teilkorpus | PASS · 12/12 terminal | 896 Seiten; 8.712 Source Units; 7.494 Effekt-Atome; 11.395 terminale Objekte; Descriptor `f5c0696f9e8c10ece572f26c7188cb97fa99f35a0ce7288d00960735e2523b71`. |
+| Mecklenburg-Vorpommern, sieben weitere Listeneinträge | EXTERNAL_BLOCKER | Tierschutzpartei, Die PARTEI, ÖDP, Handwerker Partei Deutschland, KPD, Team Freiheit und WIR LEBEN DEMOKRATIE benötigen jeweils zuerst ein verifiziertes amtliches finales Programm-Artefakt. Ohne Quelle keine Fachbewertung. |
+
+Die vollständigen maschinenlesbaren Matrizen liegen unter
+`data/state-programmes/fach-content-residuals/`. Kein Programmeintrag wird aus
+Parteiname, Schlagwort, Template, Score oder Quelltext technisch bewertet.
+
+## Impact-First- und P0-Korrekturstatus
 
 | Gegenstand | Status | Nachweis / Grenze |
 | --- | --- | --- |
-| Vollständiges Route-zu-Impact-Audit | PASS | Jede `page.tsx`, öffentliche `route.ts`, `sitemap.ts` und `robots.ts` ist einer geprüften Route-Familie zugeordnet. |
-| Gemeinsamer ExecutiveImpactSummary-Vertrag | PASS | Zod + JSON Schema, keine route-spezifische Parallelstruktur. |
-| Kernaussage und Relevanz vor Prozessdaten | PASS | Gemeinsame Executive-Ansicht in Sachsen-Anhalt, Parlamentsentscheidungen mit Working Act, vollständigen Regierungsakten, EU-Details und zwei Länder-Koalitionsreviews. |
-| Mensch / Planet / Demokratie | PASS_FAIL_CLOSED | Explizite Pfadzuordnungen bleiben sichtbar; eine nicht freigegebene Aggregatrichtung bleibt `OPEN`. |
-| SDG / SDG+ | PASS_FAIL_CLOSED | Nur explizite Referenzen werden gezeigt; Zielrichtung und Materialität bleiben ohne Fachfreigabe offen. |
-| Drei bis fünf materielle Pfade | PASS_FAIL_CLOSED | Vollständige Mengen bis fünf können ohne Ranking sichtbar sein; eine Top-Auswahl wird nicht technisch erzeugt. |
-| Nichtkompensation | PASS | Nur explizite `BLOCK`-/Nichtkompensationsbefunde werden hervorgehoben; keine technische Ableitung. |
-| Evidenz, Unsicherheit, Reality Check | PASS | Getrennte Bänder und ausdrücklich offener Zustand. |
-| Kommunikationswirkung | PASS | In Sachsen-Anhalt exakt aus der freigegebenen separaten Fachachse übernommen. |
-| Wirkungsbilder Sachsen-Anhalt | PASS_6_OF_6_PROGRAM | Sechs owner-seitig freigegebene Programmbilder, vollständige Asset-/Handoff-Provenienz. |
-| Wirkungsbilder Case-Deep-Dives | NOT_APPLICABLE_FAIL_CLOSED | Keine Case-Auswahl und keine Case-Assets freigegeben; sechs symmetrische Slots bleiben geschlossen. |
-| Marker | PASS_NO_MARKER | Kein sichtbares Element war eindeutig an die vier ausgewählten Pfade bindbar; keine Bild-zu-Fach-Ableitung. |
-| Keine Partei-Scores / Recommendations / DNS-Synthese | PASS | Quality-Gate und vorhandene Fachgrenzen bleiben bindend. |
-| Mobile / Responsive / Accessibility | PASS_BROWSER_AND_GATE | Semantische Überschriften, Text+Icon+Farbe, 44-px-Controls, Einspalten-Fallback und Reduced Motion; Browserprüfung bei 390 px sowie 1.440 px ohne horizontalen Überlauf oder Runtime-Fehler. |
-| Build / Tests / Source-vs-View | LOCAL_PASS | 265/265 Tests, vollständiger Produktionsbuild, 240/240 Golden-State-Routen und 17.033/17.033 Inhalts-Pfade; GitHub-Exact-Head-Ergebnisse werden im PR und in den Issues dokumentiert. |
-| Production live | EXTERNAL_BLOCKER | #241 verlangt zuerst Berlin 12/12, danach MV Fach-terminal, danach einen kombinierten Golden State und genau einen RC. |
+| Vollständiges Route-zu-Impact-Audit | PASS | 18 öffentliche Route-Familien: 6 `PASS`, 6 korrekt `NOT_APPLICABLE`, 6 mit endlichem `EXTERNAL_BLOCKER`. |
+| Kernaussage und Relevanz vor Prozessdaten | PASS | Gemeinsame Executive-Ansicht und route-spezifisch korrekte fail-closed Zustände. |
+| Sachsen-Anhalt Überblick 6/6 | PASS | Zwei-Spalten-Vergleich; Karte je 378–396 px bei 1.440 px; Gesamtbefund, MPD, höchstens drei SDG/SDG+, höchstens drei materielle Pfade, Evidenz und Schutzgrenze. |
+| Stärkster AfD-Befund | PASS | Materielle negative Systemrisiken für Demokratie, Gleichbehandlung und Zugehörigkeit stehen vor Einzelmaßnahmen und Prozessdaten. |
+| Mensch / Planet / Demokratie | PASS_FAIL_CLOSED | Nur explizit freigegebene Richtung, Materialität und Evidenz; fehlende Evidenz ist nie neutral. |
+| SDG / SDG+ | PASS_FAIL_CLOSED | Nur explizite Referenzen und Richtungen; `SDG+` bleibt als WÖk-Erweiterung bezeichnet. |
+| Materielle Pfade | PASS_FAIL_CLOSED | Drei im Überblick, höchstens fünf im Detail; keine technisch erzeugte Rangfolge. |
+| Nichtkompensation | PASS | Schutzgrenzen stehen sichtbar vor Evidenz/Prozess; positive Einzelpfade verrechnen keine kritischen Risiken. |
+| Evidenz, Unsicherheit und Reality Check | PASS | Von Wirkungsaussage und Richtung getrennt. |
+| Kommunikationswirkung | PASS | Separater Fachstrang; keine Rückprojektion in Programmanalyse. |
+| Sachsen-Anhalt Programmbilder | PASS_6_OF_6 | Sechs eigenständige freigegebene `PROGRAM_SCENARIO`-Assets mit Provenienz, Alt-Text und Grenzen. |
+| Sachsen-Anhalt Case-Deep-Dives | EXTERNAL_BLOCKER_6_OF_6 | Case-Auswahl, Brief, Pfadbindung, No-Marker-Entscheidung, nicht visualisierbare Wirkungen und Roh-Alt-Text sind vollständig; offen bleiben nur `IMAGE_ASSET` und `FINAL_IMAGE_SIGNOFF`. Programmbilder werden nie wiederverwendet. |
+| Kein Partei-Score / keine Recommendation-/DNS-Synthese | PASS | Automatisierte Fach- und UI-Gates. |
+| Mobile / Responsive | PASS_BROWSER_AND_GATE | Überblick und AfD-Detail bei 320, 360, 375, 390 und 428 px ohne horizontalen Überlauf; 1.440-px-Referenz ebenfalls ohne Überlauf. |
+| Accessibility | PASS | 109 Quellfiles automatisiert geprüft, 0 Findings; Text, Symbol und Farbe; semantische Reihenfolge und zugängliche Controls. |
+| Build / Golden State | PASS | Produktionsbuild; 240/240 Routen; 17.033/17.033 Inhalts-Pfade; Regierung 63, EU 21, Parlament 28, Recommendations 13, Common Targets 13, Länder 16; Source-vs-View ohne Verlust. |
 
-## Fachliche Inputs, die nicht technisch erzeugt werden dürfen
+## Nicht blockierende Projektionen
 
-### Unmittelbarer Länder-Releasepfad
+Alle 129 ausdrücklich verlangten Objekte wurden deterministisch verarbeitet:
+63 besitzen ausreichend explizite Quelldaten für eine Projektion, 66 bleiben
+feldgenau fail-closed. Das Inventar umfasst Sachsen-Anhalt 6, 57 kompakte und
+6 detaillierte Regierungsrecords, 21 EU-Fälle, Baden-Württemberg,
+Rheinland-Pfalz, 28 historische Parlamentsfälle, 6 Bundesprogramme, eine
+Koalitionsvereinbarung, eine Fachakte und das Wirkungsobservatorium.
 
-1. Berlin: Terminal sind DKP, Die PARTEI und SGP. BSW ist für PDF-Seiten
-   1–13 fachlich handoff-seitig fortgeschritten; der kleinste aktuelle
-   BSW-Rest ist PDF-Seiten 14–66. Zusätzlich bleiben AfD, BÜNDNIS 90/DIE
-   GRÜNEN, FDP, Tierschutzpartei, Volt, SPD, CDU und Die Linke als
-   verified-final Programme fachlich nicht terminal. Benötigt werden
-   source-bound Bewertungen der endlichen Effektobjekte; keine
-   Programmtext-Inferenz.
-2. Mecklenburg-Vorpommern: Die zwölf verified-final Quellen sind eingefroren,
-   aber die analoge finite Deep-Fach-Matrix und die expliziten Objektfreigaben
-   folgen nach Berlin. Die Source-Freeze ersetzt keine Fachanalyse.
+## Noch benötigte externe Fach- und Quelleninputs
 
-### Executive-Impact-Schichten
+1. **Sachsen-Anhalt Case-Bilder:** je CDU, SPD, GRÜNE, Linke, BSW und AfD ein
+   separates finales `CASE_SCENARIO`-Bildasset; danach je Asset ein finales
+   fachlich-redaktionelles Bild-Sign-off. Alle übrigen Case-Entscheidungen sind
+   bereits integriert.
+2. **Mecklenburg-Vorpommern Quellenreife:** je ein amtlich verifiziertes finales
+   Programm-Artefakt für Tierschutzpartei, Die PARTEI, ÖDP, Handwerker Partei
+   Deutschland, KPD, Team Freiheit und WIR LEBEN DEMOKRATIE. Erst danach ist
+   eine source-bound Fachprüfung möglich.
+3. **Regierungsbestand:** objektspezifische explizite MPD-/SDG-/SDG+-/
+   Wirkpfad-/Grenz-/Evidenzfreigaben für die noch feldweise geschlossenen
+   kompakten Records; für die sechs detaillierten Records die fehlenden
+   Aggregat- und Materialitätsentscheidungen, einschließlich einer Auswahl von
+   höchstens fünf aus sechs Pfaden bei Altersvorsorge.
+4. **EU, 21 Fälle:** source-bound MPD-, SDG-/SDG+-, materielle Wirkpfad- und
+   Nichtkompensationsprojektionen.
+5. **Baden-Württemberg und Rheinland-Pfalz:** je eine dokumentweite Auswahl
+   materieller Pfade sowie MPD-/SDG-Richtungsprojektionen; Kapitelbefunde
+   werden nicht technisch zu Gesamturteilen verrechnet.
+6. **Historische Bundesprogramme, Koalitionsobjekte und Fachakten:**
+   objektspezifische strukturierte Freigaben für fehlende MPD-, SDG- und
+   Materialitätsfelder.
+7. **Wirkungsobservatorium:** case-spezifische Executive-Verknüpfung erst nach
+   expliziter Fachfreigabe.
+8. **Release:** eine spätere ausdrückliche Owner-Freigabe für einen einzigen
+   neuen Parliament-RC. Sie ist keine Fachfreigabe und liegt derzeit nicht vor.
 
-3. Sachsen-Anhalt, je sechs Programme: separate Fachfreigabe für
-   programmweite MPD-Richtung/-Materialität/-Evidenz, SDG-Richtung und eine
-   Materialitätsauswahl bzw. -rangfolge der bereits freigegebenen Pfade.
-4. Regierung: Für 57 kompakte Fachrecords fehlen die strukturierten
-   MPD-/SDG-/SDG+-/Wirkpfad-/Grenz-/Evidenzschichten. Bei den sechs
-   Full-Schema-Records fehlen eine ausdrücklich freigegebene domänenweite
-   MPD-/SDG-Richtung und Pfadmaterialität; der Altersvorsorge-Record mit sechs
-   Pfaden benötigt zusätzlich eine freigegebene Auswahl von höchstens fünf.
-5. EU: Für 21 freigegebene Kurzrecords fehlen source-bound MPD-, SDG-/SDG+-,
-   materielle Wirkpfad- und Nichtkompensationsprojektionen.
-6. Baden-Württemberg und Rheinland-Pfalz, Koalitionsvereinbarungen: Es fehlen
-   jeweils eine dokumentweite Auswahl der materiellen Pfade sowie
-   programmweite MPD-/SDG-Richtungsprojektionen. Kapitelbefunde werden nicht
-   technisch zu einem Gesamturteil verrechnet.
-7. Historische Bundesprogramme/-vereinbarungen und Fachanalysen: Die vorhandene
-   Fachveröffentlichung bleibt sichtbar; neue MPD-/SDG-/Materialitätsfelder
-   benötigen objektspezifische Freigaben statt Schema-Backfill aus Text.
-
-### Noch nicht freigegebene visuelle Vertiefung
-
-8. Für jeden der sechs `CASE_SCENARIO`-Slots: konkrete symmetrische Case-Auswahl,
-   Case-Visual-Brief, Asset, sichtbare Elementbindung bzw. dokumentierte
-   No-Marker-Entscheidung, nichtvisualisierbare Folgen, Alt-Text und
-   redaktionelles Sign-off.
+Berlin benötigt aus diesem Auftrag keinen weiteren Fachinput. Für den
+verifizierten MV-12er-Teilkorpus ist ebenfalls kein Fachrest offen.
 
 ## Releasegrenze
 
-`NO_NEW_VERCEL_BUILD=true` bleibt gesetzt. Weder Preview noch Build,
-Deployment oder Promotion gehören zu diesem GitHub-Changeset. Erst nach den
-unter 1 und 2 genannten Fachterminals darf der bestehende minimale
-Deploymentpfad einen kombinierten RC erzeugen.
+`NO_NEW_VERCEL_BUILD=true` und
+`PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED` bleiben bindend. Dieser Auftrag
+erzeugt weder Preview noch Vercel-Build, Deployment oder Production-Promotion.
