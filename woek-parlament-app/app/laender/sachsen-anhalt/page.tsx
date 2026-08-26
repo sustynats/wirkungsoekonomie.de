@@ -51,8 +51,8 @@ function ProgrammeImpactCard({ party, title, href, summary }: { party: string; t
   return <article className={styles.programmeCard} data-woek-programme-impact-card={summary.object_id} data-materiality={summary.overall_materiality.toLowerCase()}>
     <header>
       <p>{party} · Ex-ante-Wirkungsanalyse</p>
-      <h3>{compact(summary.bottom_line, 100)}</h3>
-      <span className={styles.programmeTitle}>{title}</span>
+      <span className={styles.programmeTitle}>{compact(title, 58)}</span>
+      <h3>{compact(summary.bottom_line, 82)}</h3>
     </header>
     <div className={styles.mpd} aria-label="Mensch, Planet, Demokratie">
       {(["human", "planet", "democracy"] as const).map((key) => {
@@ -61,13 +61,13 @@ function ProgrammeImpactCard({ party, title, href, summary }: { party: string; t
       })}
     </div>
     <div className={styles.sdgStrip} aria-label="Freigegebene SDG- und SDG+-Richtungen">
-      {summary.sdg_impacts.slice(0, 4).map((item) => <span key={`${item.framework}:${item.sdg_id}`} title={item.label}><strong>{item.sdg_id}</strong><DirectionSignal value={item.direction} /></span>)}
+      {summary.sdg_impacts.slice(0, 3).map((item) => <span key={`${item.framework}:${item.sdg_id}`} title={item.label}><strong>{item.sdg_id}</strong><DirectionSignal value={item.direction} /></span>)}
     </div>
-    <ol className={styles.paths} aria-label="Materielle Wirkpfade">
-      {summary.material_paths.slice(0, 3).map((path) => <li key={path.id}><DirectionSignal value={path.direction} /><span>{compact(path.title, 58)}</span><small>{materiality[path.materiality]}</small></li>)}
-    </ol>
-    {summary.noncompensable_risks.length ? <p className={styles.noncompensation}><strong>Nichtkompensation:</strong> {compact(summary.noncompensable_risks[0].protected_interest, 72)}</p> : null}
-    <p className={styles.evidence}><strong>Wie sicher?</strong> {compact(summary.evidence_summary, 82)}</p>
+    <div className={styles.pathBlock}><strong>Warum?</strong><ol className={styles.paths} aria-label="Materielle Wirkpfade">
+      {summary.material_paths.slice(0, 3).map((path) => <li key={path.id}><DirectionSignal value={path.direction} /><span>{compact(path.title, 48)}</span><small>{materiality[path.materiality]}</small></li>)}
+    </ol></div>
+    {summary.noncompensable_risks.length ? <p className={styles.noncompensation}><strong>Schutzgrenze / Nichtkompensation:</strong> {compact(summary.noncompensable_risks[0].protected_interest, 48)}</p> : null}
+    <p className={styles.evidence}><strong>Wie sicher?</strong> {compact(summary.evidence_summary, 52)}</p>
     <Link className={styles.cta} href={href}>Wirkungsanalyse öffnen <span aria-hidden="true">→</span></Link>
   </article>;
 }
