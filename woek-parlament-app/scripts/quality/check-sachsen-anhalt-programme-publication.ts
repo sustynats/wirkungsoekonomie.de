@@ -37,7 +37,7 @@ for (const requiredToken of [
   "summary.material_paths.slice(0, 3)",
   "summary.noncompensable_risks",
   "Nichtkompensation:",
-  "Terminaler Fachstand 6/6",
+  "Terminaler Quellen- und Fachstand · 6/6",
   "Wirkungsanalyse öffnen",
 ]) {
   if (!overviewSource.includes(requiredToken)) fail(`Sachsen-Anhalt overview does not contain ${requiredToken}`);

@@ -112,7 +112,7 @@ export default async function SaxonyAnhaltPage() {
     </section>
 
     <section className={`shell section ${styles.audit}`} aria-labelledby="state-status-title">
-      <div><p className="eyebrow">Terminaler Fachstand 6/6</p><h2 id="state-status-title">Vollbestand erhalten, öffentliche Projektion source-bound.</h2><p>Alle sechs finalen Manifeste schließen Quellenlücken und Kollisionen. Prozess-, Versions- und Registerdaten bleiben in den Detailakten nachvollziehbar, stehen aber nach dem Wirkungsbefund. Der historische Release-1-Arbeitsbestand bleibt als getrennte Zähldimension erhalten.</p></div>
+      <div><p className="eyebrow">Terminaler Quellen- und Fachstand · 6/6</p><h2 id="state-status-title">Vollbestand erhalten, öffentliche Projektion source-bound.</h2><p>Alle sechs finalen Manifeste schließen Quellenlücken und Kollisionen. Prozess-, Versions- und Registerdaten bleiben in den Detailakten nachvollziehbar, stehen aber nach dem Wirkungsbefund. Der historische Release-1-Arbeitsbestand bleibt als getrennte Zähldimension erhalten.</p></div>
       <dl><div><dt>Source Units</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.source_units.toLocaleString("de-DE")}</dd></div><div><dt>Wirkungsmechanismen</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.effect_mechanisms.toLocaleString("de-DE")}</dd></div><div><dt>Programme</dt><dd>6/6 terminal</dd></div><div><dt>Programmbilder</dt><dd>6/6 freigegeben</dd></div></dl>
     </section>
 
