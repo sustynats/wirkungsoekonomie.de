@@ -13782,117 +13782,81 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "E1",
-            "direction": "POSITIVE",
-            "values": [
-              "PLANET",
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "E2",
+            "id": "MENSCH",
             "direction": "AMBIVALENT",
-            "values": [
-              "PLANET",
-              "MENSCH"
+            "source_path_ids": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
             ]
           },
           {
-            "path_id": "E3",
+            "id": "PLANET",
             "direction": "AMBIVALENT",
-            "values": [
-              "MENSCH",
-              "PLANET"
-            ]
-          },
-          {
-            "path_id": "E4",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH",
-              "PLANET"
+            "source_path_ids": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].mpd"
+          "impact_paths[].mpd",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "E1",
-            "direction": "POSITIVE",
-            "values": [
-              "SDG 7",
-              "SDG 9",
-              "SDG 13"
-            ]
-          },
-          {
-            "path_id": "E2",
+            "id": "SDG 13",
             "direction": "AMBIVALENT",
-            "values": [
-              "SDG 7",
-              "SDG 9",
-              "SDG 13"
+            "source_path_ids": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
             ]
           },
           {
-            "path_id": "E3",
+            "id": "SDG 7",
             "direction": "AMBIVALENT",
-            "values": [
-              "SDG 7",
-              "SDG 9",
-              "SDG 13"
+            "source_path_ids": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
             ]
           },
           {
-            "path_id": "E4",
-            "direction": "POSITIVE",
-            "values": [
-              "SDG 7",
-              "SDG 13"
+            "id": "SDG 9",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "E1",
+              "E2",
+              "E3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_refs"
+          "impact_paths[].sdg_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg_plus": {
         "status": "AVAILABLE",
-        "value": [
-          {
-            "path_id": "E1",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "E2",
-            "direction": "AMBIVALENT",
-            "values": []
-          },
-          {
-            "path_id": "E3",
-            "direction": "AMBIVALENT",
-            "values": []
-          },
-          {
-            "path_id": "E4",
-            "direction": "POSITIVE",
-            "values": []
-          }
-        ],
+        "value": [],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_plus_refs"
+          "impact_paths[].sdg_plus_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "evidence": {
@@ -14054,115 +14018,91 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "G1",
-            "direction": "NEGATIVE",
-            "values": [
-              "MENSCH",
-              "PLANET"
-            ]
-          },
-          {
-            "path_id": "G2",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "G3",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH",
-              "PLANET"
-            ]
-          },
-          {
-            "path_id": "G4",
+            "id": "MENSCH",
             "direction": "AMBIVALENT",
-            "values": [
-              "MENSCH",
-              "PLANET"
+            "source_path_ids": [
+              "G1",
+              "G2",
+              "G3",
+              "G4"
+            ]
+          },
+          {
+            "id": "PLANET",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "G1",
+              "G3",
+              "G4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].mpd"
+          "impact_paths[].mpd",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "G1",
-            "direction": "NEGATIVE",
-            "values": [
-              "SDG 7",
-              "SDG 11",
-              "SDG 13"
-            ]
-          },
-          {
-            "path_id": "G2",
+            "id": "SDG 10",
             "direction": "POSITIVE",
-            "values": [
-              "SDG 7",
-              "SDG 11"
+            "source_path_ids": [
+              "G3"
             ]
           },
           {
-            "path_id": "G3",
-            "direction": "POSITIVE",
-            "values": [
-              "SDG 10",
-              "SDG 11"
-            ]
-          },
-          {
-            "path_id": "G4",
+            "id": "SDG 11",
             "direction": "AMBIVALENT",
-            "values": [
-              "SDG 7",
-              "SDG 12",
-              "SDG 13"
+            "source_path_ids": [
+              "G1",
+              "G2",
+              "G3"
+            ]
+          },
+          {
+            "id": "SDG 12",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "G4"
+            ]
+          },
+          {
+            "id": "SDG 13",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "G1",
+              "G4"
+            ]
+          },
+          {
+            "id": "SDG 7",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "G1",
+              "G2",
+              "G4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_refs"
+          "impact_paths[].sdg_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg_plus": {
         "status": "AVAILABLE",
-        "value": [
-          {
-            "path_id": "G1",
-            "direction": "NEGATIVE",
-            "values": []
-          },
-          {
-            "path_id": "G2",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "G3",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "G4",
-            "direction": "AMBIVALENT",
-            "values": []
-          }
-        ],
+        "value": [],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_plus_refs"
+          "impact_paths[].sdg_plus_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "evidence": {
@@ -14323,108 +14263,66 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "K1",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "K2",
-            "direction": "NEGATIVE",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "K3",
+            "id": "MENSCH",
             "direction": "AMBIVALENT",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "K4",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH"
+            "source_path_ids": [
+              "K1",
+              "K2",
+              "K3",
+              "K4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].mpd"
+          "impact_paths[].mpd",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "K1",
+            "id": "SDG 10",
             "direction": "POSITIVE",
-            "values": [
-              "SDG 3",
-              "SDG 10"
+            "source_path_ids": [
+              "K1"
             ]
           },
           {
-            "path_id": "K2",
-            "direction": "NEGATIVE",
-            "values": [
-              "SDG 3"
-            ]
-          },
-          {
-            "path_id": "K3",
+            "id": "SDG 3",
             "direction": "AMBIVALENT",
-            "values": [
-              "SDG 3"
+            "source_path_ids": [
+              "K1",
+              "K2",
+              "K3",
+              "K4"
             ]
           },
           {
-            "path_id": "K4",
+            "id": "SDG 9",
             "direction": "POSITIVE",
-            "values": [
-              "SDG 3",
-              "SDG 9"
+            "source_path_ids": [
+              "K4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_refs"
+          "impact_paths[].sdg_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg_plus": {
         "status": "AVAILABLE",
-        "value": [
-          {
-            "path_id": "K1",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "K2",
-            "direction": "NEGATIVE",
-            "values": []
-          },
-          {
-            "path_id": "K3",
-            "direction": "AMBIVALENT",
-            "values": []
-          },
-          {
-            "path_id": "K4",
-            "direction": "POSITIVE",
-            "values": []
-          }
-        ],
+        "value": [],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_plus_refs"
+          "impact_paths[].sdg_plus_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "evidence": {
@@ -14585,128 +14483,69 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "N1",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "N2",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "N3",
-            "direction": "NEGATIVE",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "N4",
-            "direction": "NEGATIVE",
-            "values": [
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "N5",
+            "id": "MENSCH",
             "direction": "AMBIVALENT",
-            "values": [
-              "MENSCH"
+            "source_path_ids": [
+              "N1",
+              "N2",
+              "N3",
+              "N4",
+              "N5"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].mpd"
+          "impact_paths[].mpd",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "N1",
-            "direction": "POSITIVE",
-            "values": [
-              "SDG 3",
-              "SDG 9"
-            ]
-          },
-          {
-            "path_id": "N2",
-            "direction": "POSITIVE",
-            "values": [
-              "SDG 3"
-            ]
-          },
-          {
-            "path_id": "N3",
-            "direction": "NEGATIVE",
-            "values": [
-              "SDG 3",
-              "SDG 10"
-            ]
-          },
-          {
-            "path_id": "N4",
-            "direction": "NEGATIVE",
-            "values": [
-              "SDG 3"
-            ]
-          },
-          {
-            "path_id": "N5",
+            "id": "SDG 10",
             "direction": "AMBIVALENT",
-            "values": [
-              "SDG 3",
-              "SDG 10"
+            "source_path_ids": [
+              "N3",
+              "N5"
+            ]
+          },
+          {
+            "id": "SDG 3",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "N1",
+              "N2",
+              "N3",
+              "N4",
+              "N5"
+            ]
+          },
+          {
+            "id": "SDG 9",
+            "direction": "POSITIVE",
+            "source_path_ids": [
+              "N1"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_refs"
+          "impact_paths[].sdg_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg_plus": {
         "status": "AVAILABLE",
-        "value": [
-          {
-            "path_id": "N1",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "N2",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "N3",
-            "direction": "NEGATIVE",
-            "values": []
-          },
-          {
-            "path_id": "N4",
-            "direction": "NEGATIVE",
-            "values": []
-          },
-          {
-            "path_id": "N5",
-            "direction": "AMBIVALENT",
-            "values": []
-          }
-        ],
+        "value": [],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_plus_refs"
+          "impact_paths[].sdg_plus_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "evidence": {
@@ -14866,112 +14705,76 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "S1",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH"
+            "id": "MENSCH",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "S1",
+              "S2",
+              "S3",
+              "S4"
             ]
           },
           {
-            "path_id": "S2",
-            "direction": "NEGATIVE",
-            "values": [
-              "PLANET",
-              "MENSCH"
-            ]
-          },
-          {
-            "path_id": "S3",
-            "direction": "POSITIVE",
-            "values": [
-              "MENSCH",
-              "PLANET"
-            ]
-          },
-          {
-            "path_id": "S4",
-            "direction": "NEGATIVE",
-            "values": [
-              "MENSCH"
+            "id": "PLANET",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "S2",
+              "S3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].mpd"
+          "impact_paths[].mpd",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "S1",
+            "id": "SDG 13",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "S2",
+              "S3"
+            ]
+          },
+          {
+            "id": "SDG 7",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "S1",
+              "S2",
+              "S3",
+              "S4"
+            ]
+          },
+          {
+            "id": "SDG 9",
             "direction": "POSITIVE",
-            "values": [
-              "SDG 7",
-              "SDG 9"
-            ]
-          },
-          {
-            "path_id": "S2",
-            "direction": "NEGATIVE",
-            "values": [
-              "SDG 7",
-              "SDG 13"
-            ]
-          },
-          {
-            "path_id": "S3",
-            "direction": "POSITIVE",
-            "values": [
-              "SDG 7",
-              "SDG 9",
-              "SDG 13"
-            ]
-          },
-          {
-            "path_id": "S4",
-            "direction": "NEGATIVE",
-            "values": [
-              "SDG 7"
+            "source_path_ids": [
+              "S1",
+              "S3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_refs"
+          "impact_paths[].sdg_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg_plus": {
         "status": "AVAILABLE",
-        "value": [
-          {
-            "path_id": "S1",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "S2",
-            "direction": "NEGATIVE",
-            "values": []
-          },
-          {
-            "path_id": "S3",
-            "direction": "POSITIVE",
-            "values": []
-          },
-          {
-            "path_id": "S4",
-            "direction": "NEGATIVE",
-            "values": []
-          }
-        ],
+        "value": [],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].sdg_plus_refs"
+          "impact_paths[].sdg_plus_refs",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "evidence": {
@@ -15154,43 +14957,38 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Planet",
-              "Mensch"
+            "id": "Demokratie",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P2",
+              "P3"
             ]
           },
           {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Planet",
-              "Mensch",
-              "Demokratie"
+            "id": "Mensch",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3"
             ]
           },
           {
-            "path_id": "P3",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Planet",
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P4",
+            "id": "Planet",
             "direction": "AMBIVALENT",
-            "values": [
-              "Planet"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -15492,51 +15290,40 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Planet",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P5",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P5"
+            ]
+          },
+          {
+            "id": "Mensch",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -15752,41 +15539,30 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "id": "Demokratie",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "id": "Mensch",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -16001,44 +15777,39 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Planet"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
+            "source_path_ids": [
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Mensch",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -16256,42 +16027,31 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -16576,48 +16336,37 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Demokratie",
             "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
+            "source_path_ids": [
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P4",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P5",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "NEGATIVE_RISK",
+            "source_path_ids": [
+              "P3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -16896,43 +16645,38 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
+            "id": "Demokratie",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie"
+            "id": "Mensch",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P3",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "id": "Planet",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -17156,34 +16900,29 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -17429,42 +17168,37 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch",
-              "Planet"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Mensch",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P4"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -17794,43 +17528,38 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P3",
+            "id": "Planet",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie",
-              "Planet"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -18144,42 +17873,31 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -18476,33 +18194,34 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1"
             ]
           },
           {
-            "path_id": "P2",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Planet"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Planet",
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P3"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P2",
+              "P3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -18704,41 +18423,30 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P4",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -19046,45 +18754,22 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P5",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -19299,43 +18984,38 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Planet",
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Mensch",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "NEGATIVE_RISK",
+            "source_path_ids": [
+              "P3"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -19642,41 +19322,36 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P3"
             ]
           },
           {
-            "path_id": "P4",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Planet"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -19908,42 +19583,31 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -20194,42 +19858,37 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Planet"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "AMBIVALENT",
-            "values": [
-              "Planet",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Demokratie",
             "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P4",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie",
-              "Mensch"
+            "id": "Mensch",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ]
+          },
+          {
+            "id": "Planet",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P1",
+              "P2"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -20518,48 +20177,31 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "AMBIVALENT",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P5",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -20800,39 +20442,28 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P2",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Demokratie",
             "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P3"
             ]
           },
           {
-            "path_id": "P4",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch"
+            "id": "Mensch",
+            "direction": "OPEN",
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -21050,48 +20681,31 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P5",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie",
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P3",
+              "P5"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -21399,49 +21013,32 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P2",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
             ]
           },
           {
-            "path_id": "P3",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch"
-            ]
-          },
-          {
-            "path_id": "P5",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Demokratie",
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P3",
+              "P4",
+              "P5"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -21805,50 +21402,33 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
             ]
           },
           {
-            "path_id": "P2",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "NEGATIVE_RISK",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P5",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -22346,44 +21926,39 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie",
-              "Planet"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Demokratie",
-              "Mensch"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P3",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
+            "id": "Planet",
+            "direction": "AMBIVALENT",
+            "source_path_ids": [
+              "P1",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -22669,42 +22244,31 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P3",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -22984,52 +22548,41 @@
         "status": "AVAILABLE",
         "value": [
           {
-            "path_id": "P1",
+            "id": "Demokratie",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Planet",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P4",
+              "P5"
             ]
           },
           {
-            "path_id": "P2",
+            "id": "Mensch",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Planet"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
             ]
           },
           {
-            "path_id": "P3",
+            "id": "Planet",
             "direction": "AMBIVALENT",
-            "values": [
-              "Mensch",
-              "Planet"
-            ]
-          },
-          {
-            "path_id": "P4",
-            "direction": "AMBIVALENT",
-            "values": [
-              "Planet",
-              "Mensch",
-              "Demokratie"
-            ]
-          },
-          {
-            "path_id": "P5",
-            "direction": "POSITIVE_POTENTIAL",
-            "values": [
-              "Mensch",
-              "Demokratie"
+            "source_path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
             ]
           }
         ],
         "source_field_paths": [
           "impact_paths[].path_id",
           "impact_paths[].direction",
-          "impact_paths[].affected_mpd_dimensions"
+          "impact_paths[].affected_mpd_dimensions",
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6"
         ]
       },
       "sdg": {
@@ -24891,5 +24444,5 @@
       }
     }
   ],
-  "manifest_sha256": "edb524d417623f10c43023e6e9096270483b9f7b0989dda004c9e7f95993cd49"
+  "manifest_sha256": "df2c6de4c4f60ed261c2839267ef9309a4d03edbf786177ff728ca4dabb122a6"
 }

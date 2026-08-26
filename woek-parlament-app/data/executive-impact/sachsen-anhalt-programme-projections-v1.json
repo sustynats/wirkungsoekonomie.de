@@ -1,0 +1,206 @@
+{
+  "schema_version": "woek-sachsen-anhalt-programme-projections-1.0",
+  "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-DELEGATED-AGGREGATION-V1",
+  "knowledge_cutoff": "2026-08-26",
+  "aggregation_method": "AGGREGATION-AND-MATERIALITY-DECISIONS-2026-08-26",
+  "approval_provenance": {
+    "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+    "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+    "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+    "human_individual_record_review_claimed": false
+  },
+  "selection_rule": "Nichtkompensierbare Schutzgüter vor CRITICAL vor HIGH; danach Reichweite, Intensität, Dauer, Reversibilität, Systemhebel und Wirkungsraum-Diversität. Keine Auswahl nach Reihenfolge oder Partei.",
+  "programmes": [
+    {
+      "source_key": "ltw-2026-st-cdu",
+      "terminal_manifest_sha256": "40c63bd93fe17093d5ba69b82efabaee9c31d51b23a14bae05579805b24db5e2",
+      "terminal_effect_mechanisms": 736,
+      "bottom_line": "Handlungsfähigerer Staat trifft auf materielle Freiheits-, Rechts- und Zuständigkeitskonflikte",
+      "direction_label": "Materiell gemischt: Resilienzgewinne stehen Grundrechts- und Vollzugsrisiken gegenüber.",
+      "overall_character": "MIXED",
+      "overall_materiality": "HIGH",
+      "why_it_matters": "Landesnahe Investitionen können Einsatzfähigkeit erhöhen. Polizeibefugnisse und beschleunigte Rückführung berühren zugleich Datenschutz, Gleichbehandlung, Rechtsschutz und Bundeskompetenzen; diese Risiken werden nicht gegen den Resilienzpfad verrechnet.",
+      "system_boundary": "Landeskompetenz bei Polizei, Ausbildung und Katastrophenschutz; Rückführungsrecht und wesentliche Verfahrensregeln sind Bundes- beziehungsweise Mehr-Ebenen-Pfade.",
+      "mpd": {
+        "human": { "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "LOW", "headline": "Sicherheits- und Resilienzpotenzial bei gleichzeitig materiellen Freiheits- und Verteilungsrisiken", "state_changes": ["Einsatz- und Reaktionsfähigkeit kann steigen.", "Eingriffsintensität und Rechtsschutzrisiken können steigen."], "rationale": "Die Richtung folgt den expliziten IBK-, Polizei- und Rückführungspfaden; HIGH bezeichnet den stärksten feldprägenden Pfad, keinen Mittelwert.", "source_path_ids": ["ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths", "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine", "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"] },
+        "planet": { "direction": "OPEN", "materiality": "OPEN", "evidence": "NOT_ASSESSABLE", "headline": "Keine belastbare feldprägende Planet-Projektion aus den ausgewählten materiellen Pfaden", "state_changes": [], "rationale": "Der terminale Vollbestand ist quellenparitätisch, aber die für diese Executive-Auswahl geprüften Pfade tragen keine ausreichende explizite Planet-Materialitätsaggregation. Das ist keine Neutralbewertung.", "source_path_ids": ["ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths"] },
+        "democracy": { "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "LOW", "headline": "Mehr Vollzugskapazität steht stärkerer Eingriffstiefe und begrenztem Landeshebel gegenüber", "state_changes": ["Staatliche Durchsetzungsfähigkeit kann steigen.", "Datenschutz, Gleichbehandlung und Rechtsschutz können belastet werden."], "rationale": "Die Aggregation bewahrt die explizite Ambivalenz der Polizei- und Rückführungspfade; positive Kapazität kompensiert keine Grundrechtsgrenze.", "source_path_ids": ["ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine", "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"] }
+      },
+      "sdg_impacts": [
+        { "sdg_id": "SDG 11", "label": "Nachhaltige Städte und Gemeinden", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "HIGH", "evidence": "MEDIUM", "rationale": "Ausbildungs- und Übungskapazität kann kommunale und regionale Katastrophenresilienz erhöhen; Output allein ist noch kein vermiedener Schaden.", "source_path_ids": ["ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths"] },
+        { "sdg_id": "SDG 16", "label": "Frieden, Gerechtigkeit und starke Institutionen", "framework": "UN_SDG", "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "LOW", "rationale": "Vollzugskapazität kann steigen, während Eingriffsbefugnisse und Beschleunigung Rechtsschutz und Gleichbehandlung belasten können.", "source_path_ids": ["ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine", "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"] }
+      ],
+      "selected_paths": [
+        { "id": "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine", "materiality": "HIGH", "affected_group_or_system": "Bevölkerung, kontrollierte Personen, Polizei und Justiz", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Breite Reichweite und Grundrechtsnähe machen Personal- und Befugnispfad materiell; beide Instrumente bleiben getrennt." },
+        { "id": "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle", "materiality": "HIGH", "affected_group_or_system": "Betroffene Personen, Verwaltung und Rechtsschutzsystem", "effect_order": 2, "time_horizon": "MEDIUM", "why_relevant": "Beschleunigung kann Vollzug verändern, berührt aber Schutzrechte und einen überwiegend bundesrechtlichen Hebel." },
+        { "id": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths", "materiality": "HIGH", "affected_group_or_system": "Brand-, Zivil- und Katastrophenschutz", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Landesnaher Infrastruktur- und Ausbildungshebel mit großer Dauer und möglicher regionaler Sicherheitswirkung." }
+      ],
+      "noncompensable_risks": [
+        { "protected_interest": "Freiheitsrechte, Datenschutz, Gleichbehandlung und Rechtsschutz", "severity": "HIGH", "reason": "Zusätzliche Befugnisse oder pauschale Verfahrensbeschleunigung benötigen eine eigene Verhältnismäßigkeits- und Rechtsschutzprüfung; Resilienzgewinne kompensieren diese Grenze nicht.", "source_path_ids": ["ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine", "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"] }
+      ],
+      "evidence_summary": "Mechanismen zwischen Ausbildung und Einsatzfähigkeit: mittel; konkrete Befugnis-, Rückführungs- und Outcome-Wirkung: niedrig. Richtung und Evidenz bleiben getrennt.",
+      "uncertainty_summary": "Ausgestaltung, Verhältnismäßigkeit, Stellenbesetzung, Auslastung, Bundesrechtsdesign und tatsächliche Outcomes sind offen.",
+      "open_questions": ["Welche Befugnisse werden konkret geändert?", "Welche Engpässe und Auslastungsziele rechtfertigen die IBK-Investitionen?"],
+      "reality_check_indicators": ["Auslastung und Kompetenznachweise des IBK", "Beschwerden, Rechtsschutz- und Fehlerraten", "Verfahrensdauer bei gesichertem Schutzstandard"]
+    },
+    {
+      "source_key": "ltw-2026-st-spd",
+      "terminal_manifest_sha256": "337e1be9535830b6ca6f24df79440d1946f61d82bdefb70f0450e5d7bee54874",
+      "terminal_effect_mechanisms": 894,
+      "bottom_line": "Positives Teilhabe- und Transformationspotenzial – Additionalität und Umsetzung entscheiden",
+      "direction_label": "In den materiell ausgewählten Pfaden positiv; Förderwirkung bleibt an reale zusätzliche Zustandsänderung gebunden.",
+      "overall_character": "PREDOMINANTLY_POSITIVE",
+      "overall_materiality": "HIGH",
+      "why_it_matters": "Ausbildungszugang und altersgerechte Arbeit können Exklusions- und Gesundheitsfolgen früh begrenzen. Reparaturinfrastruktur stärkt Kreislauffähigkeit, bleibt im Systemmaßstab aber reichweitenabhängig.",
+      "system_boundary": "Landesförderung und Umsetzung mit Betrieben, Bildungsträgern, Kommunen und zivilgesellschaftlicher Reparaturinfrastruktur.",
+      "mpd": {
+        "human": { "direction": "POSITIVE", "materiality": "HIGH", "evidence": "MEDIUM", "headline": "Beschäftigungsfähigkeit und Ausbildungszugang können steigen", "state_changes": ["Mehr Jugendliche können in Ausbildung übergehen.", "Ältere Beschäftigte können länger gesund erwerbstätig bleiben."], "rationale": "Beide Pfade adressieren konkrete Zugang- und Arbeitsgestaltungsbarrieren; HIGH folgt Reichweite, Dauer und präventivem Systemhebel.", "source_path_ids": ["ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti", "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b"] },
+        "planet": { "direction": "POSITIVE", "materiality": "MEDIUM", "evidence": "MEDIUM", "headline": "Reparatur kann Nutzungsdauer erhöhen und Neuanschaffungen vermeiden", "state_changes": ["Produktlebensdauer und lokale Reparaturkompetenz können steigen."], "rationale": "Die Richtung ist für den konkreten Reparaturpfad freigegeben; MEDIUM begrenzt die feldweite Aussage wegen offener Reichweite und Additionalität.", "source_path_ids": ["ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen"] },
+        "democracy": { "direction": "OPEN", "materiality": "OPEN", "evidence": "NOT_ASSESSABLE", "headline": "Keine eigenständige feldprägende Demokratie-Projektion aus den ausgewählten Pfaden", "state_changes": [], "rationale": "Beteiligung in Strukturprojekten ist ein möglicher Mechanismus, aber keine hinreichend explizite programmweite Demokratie-Richtung. Fehlende Aggregation ist nicht neutral.", "source_path_ids": ["ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"] }
+      },
+      "sdg_impacts": [
+        { "sdg_id": "SDG 4", "label": "Hochwertige Bildung", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "HIGH", "evidence": "MEDIUM", "rationale": "Unterstützte Übergänge können Ausbildungszugang und spätere Teilhabe erhöhen.", "source_path_ids": ["ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b"] },
+        { "sdg_id": "SDG 8", "label": "Menschenwürdige Arbeit und Wirtschaftswachstum", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "HIGH", "evidence": "MEDIUM", "rationale": "Arbeitsgestaltung und Gesundheitsförderung können Erwerbsfähigkeit und Fachkräftebindung verbessern.", "source_path_ids": ["ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti"] },
+        { "sdg_id": "SDG 12", "label": "Nachhaltige Konsum- und Produktionsmuster", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "MEDIUM", "evidence": "MEDIUM", "rationale": "Reparatur kann Nutzungsdauern verlängern; die Systemwirkung hängt von zusätzlichen Reparaturen und vermiedenen Käufen ab.", "source_path_ids": ["ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen"] }
+      ],
+      "selected_paths": [
+        { "id": "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti", "materiality": "HIGH", "affected_group_or_system": "Ältere Beschäftigte, Betriebe und Sozialversicherung", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Präventiver Gesundheits- und Erwerbsfähigkeitspfad mit breiter Arbeitsmarkt- und Einkommenswirkung." },
+        { "id": "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b", "materiality": "HIGH", "affected_group_or_system": "Jugendliche, Betriebe und Ausbildungssystem", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Früher Zugangspfad mit langfristiger Teilhabe-, Einkommens- und Fachkräftewirkung." },
+        { "id": "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen", "materiality": "MEDIUM", "affected_group_or_system": "Haushalte, Reparaturinitiativen und Ressourcenverbrauch", "effect_order": 1, "time_horizon": "MEDIUM", "why_relevant": "Konkreter Kreislaufhebel; Reichweite und vermiedene Neuanschaffungen begrenzen die Systemaussage." }
+      ],
+      "noncompensable_risks": [],
+      "evidence_summary": "Die drei ausgewählten Mechanismen sind plausibel und mittel belegt; Programmeinführung, Reichweite und Additionalität sind noch keine beobachteten Outcomes.",
+      "uncertainty_summary": "Zugang, Qualität, Mitnahme, tatsächliche Übergänge, Reichweite und Dauerhaftigkeit nach Förderende bleiben zu prüfen.",
+      "open_questions": ["Welche zusätzlichen Übergänge und Arbeitsplatzeffekte entstehen?", "Wie viele Neuanschaffungen werden durch Reparatur tatsächlich vermieden?"],
+      "reality_check_indicators": ["Ausbildungsübergang, Abbruch und Abschluss", "Erwerbsfähigkeit und Krankenstand", "Reparaturfälle und vermiedene Neuanschaffungen"]
+    },
+    {
+      "source_key": "ltw-2026-st-gruene",
+      "terminal_manifest_sha256": "bcb003608a6fe3777ab09736505c5bb2e9f55422bb4ba0a09abe0127cf7b0577",
+      "terminal_effect_mechanisms": 1147,
+      "bottom_line": "Hohes Natur- und Resilienzpotenzial – Flächenkonflikte, Vollzug und Verlagerung bleiben materiell",
+      "direction_label": "In den prägenden Natur- und Resilienzpfaden positiv; Zielkonflikte werden nicht ausgeblendet.",
+      "overall_character": "PREDOMINANTLY_POSITIVE",
+      "overall_materiality": "CRITICAL",
+      "why_it_matters": "Biodiversität und Ökosystemfunktionen können irreversibel verloren gehen. Schutz, Waldbrandvorsorge und ökologischer Landbau wirken deshalb früh, müssen aber Flächen-, Ertrags- und Importverlagerung mitprüfen.",
+      "system_boundary": "Landesrecht, Vollzug und Förderung innerhalb von EU-/Bundesrecht; Wirkungen umfassen Flächen-, Import- und Langzeitfolgen außerhalb der Landesgrenze.",
+      "mpd": {
+        "human": { "direction": "POSITIVE", "materiality": "HIGH", "evidence": "MEDIUM", "headline": "Waldbrandvorsorge kann Menschen, Infrastruktur und Einsatzkräfte schützen", "state_changes": ["Brandexposition und Schadensausbreitung können sinken."], "rationale": "Der präventive Pfad hat hohe Intensität und Systemhebel; ökologische Nebenwirkungen bleiben Bedingung.", "source_path_ids": ["ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol"] },
+        "planet": { "direction": "POSITIVE", "materiality": "CRITICAL", "evidence": "MEDIUM", "headline": "Habitat-, Boden-, Wasser- und Biodiversitätsfunktionen können stabilisiert werden", "state_changes": ["Habitatqualität und Biodiversität können steigen oder stabilisiert werden.", "Pestizid- und Nährstoffbelastungen können sinken."], "rationale": "CRITICAL folgt der potenziellen Irreversibilität von Biodiversitätsverlusten; es ist keine Durchschnittsnote über das Programm.", "source_path_ids": ["ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se", "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts"] },
+        "democracy": { "direction": "OPEN", "materiality": "OPEN", "evidence": "NOT_ASSESSABLE", "headline": "Keine eigenständige Demokratie-Gesamtprojektion aus den ausgewählten Naturpfaden", "state_changes": [], "rationale": "Vollzug und Verfahrensqualität sind relevant, tragen hier aber keine freigegebene feldprägende Demokratie-Richtung. Das ist keine Neutralwertung.", "source_path_ids": ["ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se"] }
+      },
+      "sdg_impacts": [
+        { "sdg_id": "SDG 2", "label": "Kein Hunger / nachhaltige Landwirtschaft", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "HIGH", "evidence": "MEDIUM", "rationale": "Ökologischer Landbau kann Belastungen senken; Ertrag, Fläche, Nachfrage und Importverlagerung bleiben Systemgrenzen.", "source_path_ids": ["ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts"] },
+        { "sdg_id": "SDG 13", "label": "Maßnahmen zum Klimaschutz", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "HIGH", "evidence": "MEDIUM", "rationale": "Waldbrandvorsorge und robuste Ökosysteme können Klimaanpassungsfähigkeit stärken.", "source_path_ids": ["ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol", "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se"] },
+        { "sdg_id": "SDG 15", "label": "Leben an Land", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "CRITICAL", "evidence": "MEDIUM", "rationale": "Schutzregeln und Vollzug können nicht ersetzbare Habitat- und Artenfunktionen stabilisieren.", "source_path_ids": ["ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se"] }
+      ],
+      "selected_paths": [
+        { "id": "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se", "materiality": "CRITICAL", "affected_group_or_system": "Ökosysteme, Arten, Land- und Wassernutzende, kommende Generationen", "effect_order": 3, "time_horizon": "MULTI_GENERATIONAL", "why_relevant": "Irreversible Biodiversitäts- und Habitatverluste machen den Schutzpfad nichtkompensierbar und systemisch." },
+        { "id": "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol", "materiality": "HIGH", "affected_group_or_system": "Menschen, Ökosysteme, Infrastruktur und Einsatzkräfte", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Prävention kann großräumige Schäden begrenzen; Standortwahl und Pflege verhindern ökologische Gegenwirkung." },
+        { "id": "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts", "materiality": "HIGH", "affected_group_or_system": "Landwirtschaft, Böden, Wasser, Biodiversität und regionale Wertschöpfung", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Breiter Flächen- und Lieferkettenpfad; Umweltvorteile müssen gegen Ertrag und Verlagerung geprüft werden." }
+      ],
+      "noncompensable_risks": [
+        { "protected_interest": "Irreversible Biodiversitäts- und Habitatfunktionen", "severity": "CRITICAL", "reason": "Nicht ersetzbare ökologische Funktionen dürfen nicht durch Vorteile in anderen Politikpfaden verrechnet werden.", "source_path_ids": ["ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se"] }
+      ],
+      "evidence_summary": "Mechanismen zu Biodiversität, Landbau und Brandprävention sind mittel belegt; konkrete regionale Wirkung hängt von Vollzug, Standort, Pflege und Verlagerung ab.",
+      "uncertainty_summary": "Baseline, räumliche Zielgenauigkeit, Ertrag, Importverlagerung, Marktaufnahme und Vollzugsqualität bleiben materiell.",
+      "open_questions": ["Wie werden Schutz- und Nutzungsflächen räumlich priorisiert?", "Wie werden Import- und Flächenverlagerungen bilanziert?"],
+      "reality_check_indicators": ["Arten- und Habitatindikatoren", "Brandflächen und Ausbreitungsdynamik", "Nährstoff-, Pestizid-, Ertrags- und Importdaten"]
+    },
+    {
+      "source_key": "ltw-2026-st-linke",
+      "terminal_manifest_sha256": "307919d5a528b5fd4ef8794753c068d8ba2a83a142e538c7d3f3a201b636ccd5",
+      "terminal_effect_mechanisms": 1243,
+      "bottom_line": "Teilhabe- und Demokratiepotenzial mit materiellen Repräsentativitäts- und Finanzierungsfragen",
+      "direction_label": "Materiell gemischt: niedrigere Beteiligungshürden können Zugang erhöhen und zugleich Repräsentativität belasten.",
+      "overall_character": "MIXED",
+      "overall_materiality": "HIGH",
+      "why_it_matters": "Direkte Demokratie und lokale Engagementinfrastruktur können Selbstwirksamkeit stärken. Verfahren, Beteiligungsbreite, Minderheitenschutz und kommunale Tragfähigkeit entscheiden über die tatsächliche Richtung.",
+      "system_boundary": "Landesrechtliche Beteiligungsregeln und kommunale Umsetzung; Finanzierung, Minderheitenschutz und institutionelle Anschlussfähigkeit bleiben eigene Grenzen.",
+      "mpd": {
+        "human": { "direction": "POSITIVE", "materiality": "MEDIUM", "evidence": "MEDIUM", "headline": "Lokale Engagementkapazität und Zugang können steigen", "state_changes": ["Ehrenamtliche Infrastruktur und Zugänglichkeit können stabiler werden."], "rationale": "Der konkrete Förder- und Unterstützungshebel ist positiv; Reichweite und faire Vergabe begrenzen die Aussage.", "source_path_ids": ["ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec"] },
+        "planet": { "direction": "OPEN", "materiality": "OPEN", "evidence": "NOT_ASSESSABLE", "headline": "Keine feldprägende Planet-Projektion aus den ausgewählten Beteiligungspfaden", "state_changes": [], "rationale": "Die hier materialitätsgereihten Pfade tragen keine explizite Planet-Richtung. Fehlende Projektion ist nicht neutral.", "source_path_ids": ["ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec"] },
+        "democracy": { "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "MEDIUM", "headline": "Mehr direkter Zugang steht Repräsentativitäts- und Minderheitenschutzrisiken gegenüber", "state_changes": ["Zugang zu Abstimmungen und lokaler Mitwirkung kann steigen.", "Mobilisierungsstarke Gruppen können relativ stärker gewichtet werden."], "rationale": "Die Ambivalenz folgt dem expliziten Quorenpfad; Engagementförderung bleibt als separater positiver Pfad sichtbar.", "source_path_ids": ["ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid", "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec"] }
+      },
+      "sdg_impacts": [
+        { "sdg_id": "SDG 10", "label": "Weniger Ungleichheiten", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "MEDIUM", "evidence": "MEDIUM", "rationale": "Unterstützungsbudgets können Zugangsbarrieren zu lokalem Engagement senken, sofern Vergabe transparent und inklusiv ist.", "source_path_ids": ["ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec"] },
+        { "sdg_id": "SDG 16", "label": "Frieden, Gerechtigkeit und starke Institutionen", "framework": "UN_SDG", "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "MEDIUM", "rationale": "Niedrigere Quoren erweitern Zugang, können aber Repräsentativität und Legitimität verändern.", "source_path_ids": ["ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid"] },
+        { "sdg_id": "SDG+ Demokratie", "label": "Demokratische Selbstwirksamkeit", "framework": "WOEK_SDG_PLUS", "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "MEDIUM", "rationale": "WÖk-Erweiterung: Zugänglichkeit und lokale Kapazität steigen potenziell; Repräsentativität und Minderheitenschutz bleiben materielle Gegenpfade.", "source_path_ids": ["ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid", "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec"] }
+      ],
+      "selected_paths": [
+        { "id": "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid", "materiality": "HIGH", "affected_group_or_system": "Wahlberechtigte, Minderheiten und demokratische Institutionen", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Quoren verändern Zugang und Legitimitätsbedingungen eines landesweiten Entscheidungsverfahrens." },
+        { "id": "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec", "materiality": "MEDIUM", "affected_group_or_system": "Ehrenamtliche, Kommunen und lokale Zivilgesellschaft", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Recht, Fonds und Budgets können lokale Wirkungskapazität dauerhaft verändern; faire Vergabe bleibt Bedingung." }
+      ],
+      "noncompensable_risks": [],
+      "evidence_summary": "Direkte Verfahrens- und Fördermechanismen sind mittel belegt; tatsächliche Beteiligungsbreite, Legitimität und lokale Outcomes sind offen.",
+      "uncertainty_summary": "Quorenhöhe, Verfahrensregeln, Repräsentativität, Minderheitenschutz, Vergabe und kommunale Folgekosten entscheiden.",
+      "open_questions": ["Welche Gruppen beteiligen sich tatsächlich?", "Wie werden Minderheitenrechte und faire Mittelvergabe gesichert?"],
+      "reality_check_indicators": ["Teilnahme und soziale Repräsentativität", "Verfahrenskosten und Akzeptanz", "Zugang und Fortbestand geförderter Engagementstrukturen"]
+    },
+    {
+      "source_key": "ltw-2026-st-bsw",
+      "terminal_manifest_sha256": "df38b10505b4e560f00b5c4b771928699a5d700da933237c454ba47220f69875",
+      "terminal_effect_mechanisms": 669,
+      "bottom_line": "Teilhabe- und Freiheitsziele treffen auf hohe Konkretisierungs-, Vertrauens- und Kompetenzabhängigkeit",
+      "direction_label": "Materiell gemischt: konkrete Beteiligung kann stärken; abstrakte Zielbilder und harte Institutionenframes bleiben begrenzt belastbar.",
+      "overall_character": "MIXED",
+      "overall_materiality": "HIGH",
+      "why_it_matters": "Reale zivile Optionen und kommunale Beteiligung können Selbstwirksamkeit stärken. Unbestimmte Militarisierungsbegriffe tragen keine Wirkungsrichtung; pauschale Institutionen- und Medienframes können Vertrauen und Kompromissfähigkeit belasten.",
+      "system_boundary": "Landes- und kommunale Beteiligungshebel sind prüfbar; Verteidigungs- und Außenpolitik liegen überwiegend außerhalb unmittelbarer Landeskompetenz. Kommunikationswirkung bleibt eine separate Achse.",
+      "mpd": {
+        "human": { "direction": "POSITIVE", "materiality": "HIGH", "evidence": "LOW", "headline": "Reale zivile Bildungs-, Berufs- und Einkommensoptionen können Wahlfreiheit erhöhen", "state_changes": ["Ökonomischer Druck auf Berufswahl kann sinken."], "rationale": "Die positive Richtung gilt nur für konkrete zivile Alternativen; die Programmpassage benennt die Instrumente noch nicht vollständig.", "source_path_ids": ["ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode"] },
+        "planet": { "direction": "OPEN", "materiality": "OPEN", "evidence": "NOT_ASSESSABLE", "headline": "Keine explizite Planet-Richtung aus den ausgewählten materiellen Pfaden", "state_changes": [], "rationale": "Der Militarisierungsbegriff bündelt mögliche Flächen-, Industrie- und Infrastrukturpfade ohne trennbares Instrument; daraus wird keine Planet-Richtung abgeleitet.", "source_path_ids": ["ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden"] },
+        "democracy": { "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "LOW", "headline": "Bürgerbudgets können Selbstwirksamkeit stärken; pauschale Institutionenframes können Vertrauen schwächen", "state_changes": ["Kommunale Beteiligung kann steigen.", "Institutionen- und Medienvertrauen kann bei stabiler Resonanz sinken."], "rationale": "Maßnahmen- und Kommunikationswirkung werden getrennt gezeigt; keine Seite kompensiert die andere.", "source_path_ids": ["ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge", "BSW-CMI-C", "BSW-CMI-D"] }
+      },
+      "sdg_impacts": [
+        { "sdg_id": "SDG 8", "label": "Menschenwürdige Arbeit und Wirtschaftswachstum", "framework": "UN_SDG", "direction": "POSITIVE", "materiality": "HIGH", "evidence": "LOW", "rationale": "Zivile Ausbildungs- und Berufsoptionen können ökonomischen Wahlzwang reduzieren; konkrete Instrumente bleiben zu präzisieren.", "source_path_ids": ["ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode"] },
+        { "sdg_id": "SDG 16", "label": "Frieden, Gerechtigkeit und starke Institutionen", "framework": "UN_SDG", "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "LOW", "rationale": "Kommunale Beteiligung kann stärken; generalisierte Parteien- und Medienmisstrauensframes können pluralistische Legitimität belasten.", "source_path_ids": ["ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge", "BSW-CMI-C", "BSW-CMI-D"] },
+        { "sdg_id": "SDG+ Institutionelles Vertrauen", "label": "Institutionelles Vertrauen", "framework": "WOEK_SDG_PLUS", "direction": "AMBIVALENT", "materiality": "HIGH", "evidence": "LOW", "rationale": "WÖk-Erweiterung: Beteiligung und Kritik können Responsivität stärken; Homogenisierung politischer und medialer Akteure kann Vertrauen und gemeinsame Prüfstandards schwächen.", "source_path_ids": ["BSW-CMI-C", "BSW-CMI-D"] }
+      ],
+      "selected_paths": [
+        { "id": "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge", "materiality": "HIGH", "affected_group_or_system": "Kommunale Bevölkerung, Verwaltungen und Haushalte", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Bürgerbudgets und Quoren verändern Zugang, Ressourcenverteilung und Repräsentativität dauerhaft." },
+        { "id": "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode", "materiality": "HIGH", "affected_group_or_system": "Junge Menschen, Ausbildungs- und Arbeitsmarkt", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Reale zivile Alternativen beeinflussen Wahlfreiheit, Einkommen und langfristige Lebenspfade; Instrumente bleiben offen." }
+      ],
+      "noncompensable_risks": [
+        { "protected_interest": "Pluralistische Legitimität, Medienvertrauen und Kompromissfähigkeit", "severity": "HIGH", "reason": "Positive Beteiligungswirkung kompensiert keine eigenständige Vertrauens- oder Polarisierungsgefahr harter Institutionenframes.", "source_path_ids": ["BSW-CMI-C", "BSW-CMI-D"] }
+      ],
+      "evidence_summary": "Maßnahmenpfade: niedrig bis mittel; Kommunikationstext: hoch, Mechanismus: mittel, Reichweite/Outcome/Attribution: offen.",
+      "uncertainty_summary": "Konkrete Instrumente, kommunale Finanzierung, Repräsentativität sowie tatsächliche Reichweite und Resonanz der Kommunikation bleiben offen.",
+      "open_questions": ["Welche zivilen Unterstützungsinstrumente sind gemeint?", "Wie breit und repräsentativ werden Bürgerbudgets genutzt?", "Welche Resonanz haben die Institutionenframes?"],
+      "reality_check_indicators": ["Ausbildungs- und Berufsoptionen", "Beteiligungsbreite und Budgetwirkung", "Vertrauen, Polarisierung und Kompromissbereitschaft"]
+    },
+    {
+      "source_key": "ltw-2026-st-afd",
+      "terminal_manifest_sha256": "4223fde6b37165d56242df35d0278e77e16f55ea100d25e13607413c77fa6607",
+      "terminal_effect_mechanisms": 619,
+      "bottom_line": "Materielle negative Systemrisiken für Demokratie, Gleichbehandlung und Zugehörigkeit neben einzelnen positiven Maßnahmen",
+      "direction_label": "Materiell gemischt, aber nichtkompensierbare negative Demokratie- und Schutzgutpfade prägen die erste Ebene.",
+      "overall_character": "MIXED",
+      "overall_materiality": "CRITICAL",
+      "why_it_matters": "Die freigegebene Kommunikationsanalyse weist wiederkehrende Delegitimierungs-, Bedrohungs- und Ausgrenzungsframes mit negativer Systemrichtung aus. Reproduktive Rechte und Gleichbehandlung sind materiell berührt. Vorlesen oder freiwillige Schwangerschaftshilfe bleiben positive Einzelpfade, kompensieren diese Risiken aber nicht.",
+      "system_boundary": "Landespolitische Maßnahmen, bundesrechtlich geprägte reproduktive Rechte und eine getrennte ex-ante Kommunikationswirkungsachse; beobachtete Bevölkerungswirkung und Absicht werden nicht behauptet.",
+      "mpd": {
+        "human": { "direction": "AMBIVALENT", "materiality": "CRITICAL", "evidence": "MEDIUM", "headline": "Unterstützungspotenziale stehen körperlicher Selbstbestimmung, Gleichbehandlung und Zugehörigkeitsrisiken gegenüber", "state_changes": ["Freiwillige Hilfe kann Belastung senken.", "Autonomie, Versorgung, Gleichbehandlung und Zugehörigkeit können beeinträchtigt werden."], "rationale": "CRITICAL folgt der Grundrechts- und Schutzgutrelevanz; positive Einzelmaßnahmen werden nicht verrechnet.", "source_path_ids": ["ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac", "AFD-CMI-B", "AFD-CMI-C", "AFD-CMI-E"] },
+        "planet": { "direction": "OPEN", "materiality": "OPEN", "evidence": "NOT_ASSESSABLE", "headline": "Keine ausreichend explizite feldprägende Planet-Projektion in der freigegebenen Executive-Auswahl", "state_changes": [], "rationale": "Die stärksten freigegebenen Systembefunde dieser Auswahl betreffen Mensch und Demokratie. Aus fehlender Planet-Aggregation wird keine Neutralität abgeleitet.", "source_path_ids": ["ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac"] },
+        "democracy": { "direction": "NEGATIVE", "materiality": "CRITICAL", "evidence": "LOW", "headline": "Systemdelegitimierung und Feindnetz-Frames können Vertrauen, Pluralismus und Korrekturräume schwächen", "state_changes": ["Institutionelles Vertrauen und pluralistische Legitimität können sinken.", "Politische Bildungs- und zivilgesellschaftliche Korrekturräume können geschwächt werden."], "rationale": "Text-Evidenz ist hoch, Mechanismus mittel, Reichweite und Outcome offen; die negative Ex-ante-Richtung bleibt deshalb mit vorsichtiger Evidenz getrennt sichtbar.", "source_path_ids": ["AFD-CMI-A", "AFD-CMI-D"] }
+      },
+      "sdg_impacts": [
+        { "sdg_id": "SDG 3", "label": "Gesundheit und Wohlergehen", "framework": "UN_SDG", "direction": "AMBIVALENT", "materiality": "CRITICAL", "evidence": "MEDIUM", "rationale": "Unterstützung kann Belastung senken; reproduktive Gesundheit, Autonomie und rechtssicherer Versorgungszugang bleiben im Zielkonflikt.", "source_path_ids": ["ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac", "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs"] },
+        { "sdg_id": "SDG 10", "label": "Weniger Ungleichheiten", "framework": "UN_SDG", "direction": "NEGATIVE", "materiality": "HIGH", "evidence": "LOW", "rationale": "Kulturelle Belastungs-, Separations- und Abweichungsframes besitzen ein negatives Ex-ante-Potenzial für Gleichbehandlung, Teilhabe und Zugehörigkeit; eingetretene Wirkung wird nicht behauptet.", "source_path_ids": ["AFD-CMI-B", "AFD-CMI-C", "AFD-CMI-E"] },
+        { "sdg_id": "SDG 16", "label": "Frieden, Gerechtigkeit und starke Institutionen", "framework": "UN_SDG", "direction": "NEGATIVE", "materiality": "CRITICAL", "evidence": "LOW", "rationale": "Delegitimierungs- und Feindnetz-Frames können institutionelles Vertrauen, pluralistische Legitimität und demokratische Korrekturfähigkeit schwächen.", "source_path_ids": ["AFD-CMI-A", "AFD-CMI-D"] },
+        { "sdg_id": "SDG+ Demokratie", "label": "Demokratische Resilienz", "framework": "WOEK_SDG_PLUS", "direction": "NEGATIVE", "materiality": "CRITICAL", "evidence": "LOW", "rationale": "WÖk-Erweiterung: Bei Reichweite und Wiederholung besteht ein materielles negatives Potenzial für Kompromiss, Korrektur und pluralistische Legitimität.", "source_path_ids": ["AFD-CMI-A", "AFD-CMI-D"] }
+      ],
+      "selected_paths": [
+        { "id": "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac", "materiality": "CRITICAL", "affected_group_or_system": "Schwangere Personen, Gesundheitsversorgung und bundesrechtlicher Schutzrahmen", "effect_order": 2, "time_horizon": "LONG", "why_relevant": "Körperliche Selbstbestimmung, Gesundheit, Versorgung und Schutzpflichten sind grundrechtsnah und nicht kompensierbar." }
+      ],
+      "noncompensable_risks": [
+        { "protected_interest": "Demokratische Resilienz, pluralistische Legitimität und institutionelle Korrekturräume", "severity": "CRITICAL", "reason": "Positive Einzelmaßnahmen kompensieren kein eigenständiges negatives Systempotenzial wiederkehrender Delegitimierungs- und Feindnetz-Frames.", "source_path_ids": ["AFD-CMI-A", "AFD-CMI-D"] },
+        { "protected_interest": "Körperliche Selbstbestimmung, Gesundheit, Gleichbehandlung und Zugehörigkeit", "severity": "CRITICAL", "reason": "Grundrechts- und Schutzgutfragen werden separat ausgewiesen und nicht gegen Bildungs- oder Unterstützungsmaßnahmen verrechnet.", "source_path_ids": ["ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac", "AFD-CMI-B", "AFD-CMI-C", "AFD-CMI-E"] }
+      ],
+      "evidence_summary": "Maßnahmenpfad reproduktive Rechte: mittel; Kommunikationstext: hoch, Mechanismus: mittel, Reichweite/Outcome/Attribution: offen. Die öffentliche Evidenzvorsicht wird separat von der negativen Richtung geführt.",
+      "uncertainty_summary": "Konkretes Rechtsinstrument, Landeshebel, Reichweite, Resonanz, beobachteter Outcome und Attribution sind offen; keine Absicht oder eingetretene Bevölkerungswirkung wird behauptet.",
+      "open_questions": ["Welche konkrete Rechtsänderung ist beabsichtigt?", "Welche Reichweite und Resonanz haben die dokumentierten Frames?", "Wie verändern sich Vertrauen, Zugehörigkeit und institutionelle Nutzung tatsächlich?"],
+      "reality_check_indicators": ["Versorgungszugang, Beratung und Autonomie", "Vertrauen in Institutionen und politische Bildung", "Zugehörigkeits- und Diskriminierungserfahrungen"]
+    }
+  ]
+}

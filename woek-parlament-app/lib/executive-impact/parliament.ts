@@ -30,6 +30,7 @@ function dimension(item: ParliamentaryCase, key: "MENSCH" | "PLANET" | "DEMOKRAT
     headline: changes.length === 1 ? changes[0] : changes.length ? `${changes.length} getrennte Zustandsänderungen` : "Keine freigegebene Zuordnung",
     state_changes: changes,
     rationale: changes.length ? `Die Zustandsänderungen stammen ausschließlich aus den ausdrücklich ${key} zugeordneten Wirkpfaden dieser Fachakte. Eine domänenweite Richtung, Materialität und Evidenzaggregation ist nicht freigegeben.` : `Ein fehlender ${key}-Bezug wird nicht als neutrale Wirkung interpretiert.`,
+    source_path_ids: paths.length ? paths.map((path) => path.id) : [item.slug],
   };
 }
 
@@ -42,6 +43,7 @@ function normative(item: PublicNormativeMappingItem) {
     materiality: "OPEN" as const,
     evidence: evidence(item.evidenceStatus),
     rationale: item.rationale,
+    source_path_ids: [item.code],
   };
 }
 
@@ -95,6 +97,7 @@ export function parliamentExecutiveImpactSummary(item: ParliamentaryCase, assess
     key_finding: assessment.keyFinding,
     direction_label: assessment.directionLabel,
     overall_character: assessment.directionKind === "positive" ? "PREDOMINANTLY_POSITIVE" : assessment.directionKind === "risk" ? "PREDOMINANTLY_NEGATIVE" : assessment.directionKind === "ambivalent" ? "MIXED" : assessment.directionKind === "open" ? "OPEN" : "NO_SINGLE_DIRECTION",
+    overall_materiality: "OPEN",
     why_it_matters: assessment.impactCoreSummary,
     system_boundary: workingAct.scopeStatement,
     mpd: { human: dimension(item, "MENSCH"), planet: dimension(item, "PLANET"), democracy: dimension(item, "DEMOKRATIE") },

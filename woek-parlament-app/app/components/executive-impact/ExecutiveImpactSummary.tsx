@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { ExecutiveImpactSummary, ImpactDimensionSummary, ImpactDirection, ImpactMateriality } from "@/lib/executive-impact/contracts";
 import styles from "./ExecutiveImpactSummary.module.css";
 
@@ -58,6 +59,7 @@ export function ImpactExecutiveHero({ summary }: { summary: ExecutiveImpactSumma
     {summary.editorial_summary ? <p>{summary.editorial_summary}</p> : null}
     <p><strong>Wirkungsrichtung:</strong> {summary.direction_label}</p>
     <p><strong>Qualitativer Gesamtcharakter:</strong> {overallCharacter[summary.overall_character]}</p>
+    <p><strong>Materialität:</strong> {materiality[summary.overall_materiality]}</p>
     <div className={styles.heroGrid}>
       <article><h3>Wirkungspotenzial kompakt</h3><p>{summary.why_it_matters}</p></article>
       <article><h3>{summary.key_finding ? "Key Finding" : "Systemgrenze"}</h3><p>{summary.key_finding ?? summary.system_boundary}</p></article>
@@ -100,7 +102,7 @@ export function SdgImpactStrip({ summary }: { summary: ExecutiveImpactSummary })
 }
 
 export function MaterialImpactPaths({ summary }: { summary: ExecutiveImpactSummary }) {
-  return <section aria-labelledby={`${summary.id}-paths`}>
+  return <section id="schluesselpfade" aria-labelledby={`${summary.id}-paths`}>
     <div className={styles.sectionHeading}><p className={styles.eyebrow}>Materielle Wirkpfade</p><h2 id={`${summary.id}-paths`}>Was könnte sich konkret verändern?</h2><p>{summary.materiality_selection_rationale}</p></div>
     {summary.material_paths.length ? <div className={styles.paths}>{summary.material_paths.map((path) => <article key={path.id} data-direction={path.direction.toLowerCase()}>
       <div className={styles.pathSignal}><Direction value={path.direction} /><span>Materialität {materiality[path.materiality]}</span><span>Evidenz {evidence[path.evidence]}</span></div>
@@ -179,16 +181,17 @@ export function SourceTransparencyDrawer({ summary }: { summary: ExecutiveImpact
   return <details className={styles.sources}><summary>Analyse-, Versions- und Quellenprovenienz</summary><dl><div><dt>Analyseversion</dt><dd>{summary.analysis_version}</dd></div><div><dt>Wissensstand</dt><dd>{summary.knowledge_cutoff}</dd></div><div><dt>Editorial-Status</dt><dd>{summary.editorial_status === "APPROVED" ? "freigegeben" : summary.editorial_status === "PARTIAL" ? "teilweise freigegeben; fehlende Schichten bleiben offen" : "keine freigegebene Executive-Projektion"}</dd></div></dl><ul>{summary.source_refs.map((source) => <li key={source.id}>{source.href.startsWith("/") ? <Link href={source.href}>{source.label}</Link> : <a href={source.href} rel="noreferrer">{source.label}</a>}</li>)}</ul></details>;
 }
 
-export function ExecutiveImpactSummaryView({ summary }: { summary: ExecutiveImpactSummary }) {
+export function ExecutiveImpactSummaryView({ summary, afterEvidence }: { summary: ExecutiveImpactSummary; afterEvidence?: ReactNode }) {
   return <section className={styles.summary} id="gesamtbefund" data-woek-executive-impact={summary.editorial_status} aria-label="Executive-WÖk-Wirkungszusammenfassung">
     <ImpactExecutiveHero summary={summary} />
     <MPDImpactTriad summary={summary} />
+    <SdgImpactStrip summary={summary} />
     <MaterialImpactPaths summary={summary} />
     <ImpactCascade summary={summary} />
     <NonCompensationAlert summary={summary} />
     <KeyTradeoffs summary={summary} />
-    <SdgImpactStrip summary={summary} />
     <EvidenceBand summary={summary} />
+    {afterEvidence}
     <CommunicationImpactPreview summary={summary} />
     <ImpactRealityCheck summary={summary} />
     <SourceTransparencyDrawer summary={summary} />

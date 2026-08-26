@@ -12,18 +12,29 @@ function evidenceFor(values: string[]): ExecutiveEvidence {
   return filtered.length === 1 ? filtered[0] : "NOT_ASSESSABLE";
 }
 
+function aggregateDirection(values: Array<WoeKImpactCase["impact_paths"][number]["direction"]>): ExecutiveImpactSummary["mpd"]["human"]["direction"] {
+  const directions = new Set(values);
+  if (directions.has("OPEN")) return "OPEN";
+  if (directions.size === 1) return [...directions][0] ?? "OPEN";
+  if (directions.has("POSITIVE") && directions.has("NEGATIVE")) return "AMBIVALENT";
+  if (directions.has("AMBIVALENT")) return "AMBIVALENT";
+  if (directions.has("NEUTRAL") && directions.size > 1) return "AMBIVALENT";
+  return "OPEN";
+}
+
 function dimension(record: WoeKImpactCase, key: "MENSCH" | "PLANET" | "DEMOKRATIE"): ImpactDimensionSummary {
   const paths = record.impact_paths.filter((path) => path.mpd.includes(key));
   const changes = unique(paths.map((path) => path.state_change));
   return {
-    direction: "OPEN",
+    direction: paths.length ? aggregateDirection(paths.map((path) => path.direction)) : "OPEN",
     materiality: "OPEN",
-    evidence: "NOT_ASSESSABLE",
+    evidence: paths.length ? evidenceFor(paths.map((path) => path.evidence)) : "NOT_ASSESSABLE",
     headline: changes.length === 1 ? changes[0] : changes.length ? `${changes.length} getrennte, freigegebene Zustandsänderungen` : "Keine freigegebene Zuordnung",
     state_changes: changes,
     rationale: changes.length
-      ? "Die Zustandsänderungen stammen ausschließlich aus den diesem MPD-Bereich ausdrücklich zugeordneten Fachpfaden. Eine eigenständige domänenweite Richtung, Materialität oder Evidenzaggregation ist nicht freigegeben."
+      ? "Die Zustandsänderungen und die qualitative Richtung stammen ausschließlich aus den diesem MPD-Bereich ausdrücklich zugeordneten Fachpfaden und der freigegebenen Aggregationsregel. Eine domänenspezifische Materialität bleibt ohne Pfadmaterialität offen."
       : "Ein fehlender MPD-Bezug wird nicht als neutrale Wirkung interpretiert.",
+    source_path_ids: paths.length ? paths.map((path) => path.path_id) : [record.impact_case_id],
   };
 }
 
@@ -52,10 +63,11 @@ export function governmentExecutiveImpactSummary(record: WoeKImpactCase, assessm
       sdg_id: id,
       label: id,
       framework,
-      direction: "OPEN" as const,
+      direction: aggregateDirection(paths.map((path) => path.direction)),
       materiality: "OPEN" as const,
-      evidence: "NOT_ASSESSABLE" as const,
-      rationale: `${unique(paths.map((path) => path.state_change)).join(" · ") || "Zielbezug ohne separate Zustandsänderung"} Eine eigenständige Zielrichtung, Materialität und Evidenzaggregation ist nicht freigegeben.`,
+      evidence: evidenceFor(paths.map((path) => path.evidence)),
+      rationale: `${unique(paths.map((path) => path.state_change)).join(" · ") || "Zielbezug ohne separate Zustandsänderung"} Die qualitative Zielrichtung folgt ausschließlich den expliziten Richtungen dieser Pfade; eine zielbezogene Materialität bleibt offen.`,
+      source_path_ids: paths.length ? paths.map((path) => path.path_id) : [record.impact_case_id],
     };
   };
   const sourceUrls = unique([...record.references.official_fact_sources, ...record.references.mechanism_sources, ...record.references.post_decision_sources]);
@@ -72,6 +84,7 @@ export function governmentExecutiveImpactSummary(record: WoeKImpactCase, assessm
     key_finding: assessment.keyFinding,
     direction_label: assessment.directionLabel,
     overall_character: overallCharacter(record.impact_summary.overall_character),
+    overall_materiality: record.materiality.level,
     why_it_matters: assessment.impactCoreSummary,
     system_boundary: [record.scope.intervention, record.scope.policy_object, record.scope.competence_note].filter(Boolean).join(" · "),
     mpd: { human: dimension(record, "MENSCH"), planet: dimension(record, "PLANET"), democracy: dimension(record, "DEMOKRATIE") },

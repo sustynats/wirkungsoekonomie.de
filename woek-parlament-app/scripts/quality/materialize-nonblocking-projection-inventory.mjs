@@ -289,6 +289,18 @@ function selectedPathProjection(objectId, sourcePath, paths) {
   );
 }
 
+function aggregateDirection(values) {
+  const directions = new Set(values);
+  if (directions.has("OPEN")) return "OPEN";
+  if (directions.size === 1) return [...directions][0];
+  if (directions.has("POSITIVE") && directions.has("NEGATIVE")) {
+    return "AMBIVALENT";
+  }
+  if (directions.has("AMBIVALENT")) return "AMBIVALENT";
+  if (directions.has("NEUTRAL") && directions.size > 1) return "AMBIVALENT";
+  return "OPEN";
+}
+
 function pathMappedValues(objectId, sourcePath, paths, field, label) {
   const selection = selectedPathProjection(objectId, sourcePath, paths);
   if (selection.status !== "AVAILABLE") {
@@ -305,24 +317,30 @@ function pathMappedValues(objectId, sourcePath, paths, field, label) {
       present(path.direction) &&
       Array.isArray(path[field]),
   );
-  return allDirectional
-    ? available(
-        paths.map((path) => ({
-          path_id: path.path_id,
-          direction: path.direction,
-          values: path[field],
-        })),
+  if (!allDirectional) {
+    return unavailable(objectId, sourcePath, [
+      "impact_paths[].path_id",
+      "impact_paths[].direction",
+      `impact_paths[].${field}`,
+    ]);
+  }
+  const values = [...new Set(paths.flatMap((path) => path[field]))].sort();
+  return available(
+        values.map((value) => {
+          const boundPaths = paths.filter((path) => path[field].includes(value));
+          return {
+            id: value,
+            direction: aggregateDirection(boundPaths.map((path) => path.direction)),
+            source_path_ids: boundPaths.map((path) => path.path_id),
+          };
+        }),
         [
           "impact_paths[].path_id",
           "impact_paths[].direction",
           `impact_paths[].${field}`,
+          "AGGREGATION-AND-MATERIALITY-DECISIONS.v1.sections_5_6",
         ],
-      )
-    : unavailable(objectId, sourcePath, [
-        "impact_paths[].path_id",
-        "impact_paths[].direction",
-        `impact_paths[].${field}`,
-      ]);
+      );
 }
 
 function normativeMappingValues(

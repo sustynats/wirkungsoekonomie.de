@@ -12,6 +12,9 @@ const ignoredExtensions = new Set([".png", ".jpg", ".jpeg", ".gif", ".webp", ".p
 const safetyImplementationFiles = new Set([
   "lib/review/privacy.ts",
   "scripts/quality/check-release-safety.mjs",
+  // This validator must name the forbidden TODO token in its mutation rule;
+  // it is executable gate code, never a public content artifact.
+  "scripts/quality/check-berlin-bsw-full-programme.mjs",
   "scripts/quality/verify-public-documents.mjs",
   "scripts/import-release-1-fachbasis.mjs",
   "scripts/sync-approved-government-impact-cases.mjs",
@@ -50,6 +53,11 @@ function collect(target) {
 function contentForRule(file, content, ruleLabel) {
   if (ruleLabel !== "ai-assistance-reference") return content;
   const sourceFaithfulCorpus = file.startsWith(`data${path.sep}fachakten${path.sep}`)
+    // These immutable ledgers quote exact election-programme objects. Political
+    // source text can legitimately discuss KI-generated media; only the
+    // production-method wording rule is skipped. Provider, path, placeholder
+    // and every other safety rule continue to scan the files.
+    || file.startsWith(`data${path.sep}state-programmes${path.sep}fach-reviews${path.sep}`)
     || [
       `data${path.sep}generated${path.sep}release-1${path.sep}commitment-registers.json`,
       `data${path.sep}generated${path.sep}release-1${path.sep}sachsen-anhalt-commitment-registers.json`,

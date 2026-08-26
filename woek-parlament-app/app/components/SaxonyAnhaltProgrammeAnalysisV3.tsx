@@ -67,17 +67,6 @@ function evidenceLabel(evidence: ProgrammeEvidence) {
   }[evidence];
 }
 
-function DirectionIcon({ direction }: { direction: ProgrammeDirection }) {
-  const path = direction === "POSITIVE"
-    ? "M5 17 17 5M9 5h8v8"
-    : direction === "NEGATIVE"
-      ? "M5 7 17 19M9 19h8v-8"
-      : direction === "AMBIVALENT"
-        ? "M5 12h5m0 0 5-5m-5 5 5 5m0-10h4m-4 10h4"
-        : "M9.4 8.5a3.1 3.1 0 1 1 4.9 2.5c-1.4 1-2.3 1.5-2.3 3M12 18h.01";
-  return <span className={styles.directionIcon} aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d={path} /></svg></span>;
-}
-
 function CommunicationIcon() {
   return <span className={styles.communicationIcon} aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 6.5h16v10H9l-5 4v-14Z" /><path d="M8 10h8M8 13h5" /></svg></span>;
 }
@@ -178,10 +167,6 @@ function CommunicationImpactSection({ record }: { record: CommunicationMediaImpa
       </div>
     </details>
   </section>;
-}
-
-function DirectionBadge({ direction }: { direction: ProgrammeDirection }) {
-  return <span className={styles.badge} data-direction={direction}><DirectionIcon direction={direction} />{directionLabel(direction)}</span>;
 }
 
 function evidenceFromLegacy(commitment: ProgrammeCommitment) {
@@ -345,8 +330,6 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
   if (!programmeVisual || !caseVisual) throw new Error(`Missing Sachsen-Anhalt impact visual contract for ${programme.sourceKey}`);
   const counts = summarizeStatuses(model.commitments);
   const decisionDate = formatDate(programme.decisionDate);
-  const byKey = new Map(model.commitments.map((commitment) => [commitment.key, commitment]));
-  const central = Object.keys(editorial.centralAssessments).map((key) => byKey.get(key)).filter((item): item is ProgrammeCommitment => Boolean(item));
   const groups = new Map<string, ProgrammeCommitment[]>();
   for (const commitment of model.commitments) {
     const domain = commitment.policyDomain ?? "Weitere Themen / Zuordnung offen";
@@ -362,26 +345,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         <p className={styles.eyebrow}>Landtagswahl Sachsen-Anhalt 2026 · WÖk-Wahlprogrammanalyse</p>
         <h1>{programme.party}</h1>
         <p className={styles.lead}>{programme.title}</p>
-        <p>{editorial.impactCoreSummary}</p>
-        <div className={styles.heroActions}>
-          <a href="#gesamtbefund">Gesamtbefund</a>
-          <a href="#schluesselpfade">Schlüsselpfade</a>
-          <a href="#vollstaendige-wirkungsakte">Einzelprüfungen</a>
-        </div>
+        <p>Die Wirkungseinordnung beginnt unmittelbar mit der fachlich freigegebenen Bottom Line. Vollständigkeit, Version und Prozessnachweise folgen nach dem Wirkungsbefund.</p>
       </div>
-      <aside className={styles.heroAside} aria-label="Analyse auf einen Blick">
-        <p className={styles.eyebrow}>Auf einen Blick</p>
-        <h2>Keine Wahlempfehlung. Keine Partei-Gesamtnote.</h2>
-        <p>Bewertet werden konkrete Vorschläge, Wirkpfade, Risiken und Schutzgrenzen. Breite Programme haben regelmäßig mehrere Richtungen zugleich.</p>
-        <dl>
-          <div><dt>Autoritative Source Units</dt><dd>{terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")}</dd></div>
-          <div><dt>Quellengebundene Wirkungsmechanismen</dt><dd>{terminalParty.authoritative_effect_mechanism_count.toLocaleString("de-DE")}</dd></div>
-          <div><dt>Historischer Release-1-Arbeitsbestand</dt><dd>{model.commitmentCount.toLocaleString("de-DE")} · getrennte Zähldimension</dd></div>
-          <div><dt>Redaktionell nachgeprüfte Schlüsselpfade</dt><dd>{reviewedCount}</dd></div>
-          <div><dt>Analyseperspektive</dt><dd>Ex ante - Wirkungspotenzial, keine behauptete Ist-Wirkung</dd></div>
-          {decisionDate && <div><dt>Programmbeschluss</dt><dd>{decisionDate}</dd></div>}
-        </dl>
-      </aside>
     </section>
 
     <nav className={styles.jumpNav} aria-label="Sprungnavigation der Wahlprogrammanalyse">
@@ -395,30 +360,7 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
       <a href="#quellenstatus">Quellen & Fachstand</a>
     </nav>
 
-    <ExecutiveImpactSummaryView summary={executiveSummary} />
-
-    <ImpactVisualScenario record={programmeVisual} />
-
-    <section id="schluesselpfade" aria-labelledby="schluesselpfade-title">
-      <div className={styles.sectionHeader}>
-        <p className={styles.eyebrow}>Redaktionell nachgeprüfte Schlüsselpfade</p>
-        <h2 id="schluesselpfade-title">Richtung, Begründung und Evidenz sofort sichtbar.</h2>
-        <p>Diese Karten beantworten zuerst die Nutzerfrage: In welche Richtung könnte sich der relevante Zustand verändern - und wie belastbar ist diese Einschätzung?</p>
-      </div>
-      <div className={styles.centralGrid}>
-        {central.map((commitment) => {
-          const assessment = editorial.centralAssessments[commitment.key];
-          return <article className={styles.centralCard} key={commitment.key} data-woek-preview-card="published">
-            <div className={styles.badgeRow}><DirectionBadge direction={assessment.direction} /><span className={styles.metaChip}>{evidenceLabel(assessment.evidence)}</span></div>
-            <p className={styles.eyebrow}>Zusage {commitment.index} · {assessment.keyFinding}</p>
-            <h3>{commitment.title}</h3>
-            <p>{assessment.impactCoreSummary}</p>
-            <p><strong>Warum:</strong> {assessment.directionRationale}</p>
-            <a href={`#commitment-${commitment.index}`}>Zur Einzelprüfung →</a>
-          </article>;
-        })}
-      </div>
-    </section>
+    <ExecutiveImpactSummaryView summary={executiveSummary} afterEvidence={<ImpactVisualScenario record={programmeVisual} />} />
 
     <ImpactVisualScenario record={caseVisual} />
 
@@ -431,8 +373,19 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         <article className={styles.detailCard}><h4>Wirkungsmechanismen</h4><p><strong>{terminalParty.authoritative_effect_mechanism_count.toLocaleString("de-DE")}</strong> effekttragende Blätter · {terminalParty.non_effect_source_leaf_count.toLocaleString("de-DE")} nicht-wirkungstragende Source Leaves</p></article>
         <article className={styles.detailCard}><h4>Entscheidungsreife</h4><p>{counts.readiness.slice(0, 2).map(([status, count]) => `${count} ${publicProgrammeStatus(status)}`).join(" · ") || "offen"}</p></article>
         <article className={styles.detailCard}><h4>Schutzgrenzen</h4><p><strong>{counts.boundaries.toLocaleString("de-DE")}</strong> Zusagen mit ausgewiesener Schutzprüfung im Altbestand</p></article>
-        <article className={styles.detailCard}><h4>Editorial v2.0</h4><p><strong>{reviewedCount}</strong> Schlüsselpfade objektspezifisch nachgeprüft; übrige Richtungen fail-closed</p></article>
+        <article className={styles.detailCard}><h4>Executive-Auswahl</h4><p><strong>{executiveSummary.material_paths.length}</strong> materielle Pfade aus dem terminalen Vollbestand ausgewählt; nicht nach Reihenfolge und nicht als Parteipunktzahl</p></article>
+        <article className={styles.detailCard}><h4>Objektdetail Editorial v2.0</h4><p><strong>{reviewedCount}</strong> historische Einzelpfade besitzen zusätzlich eine objektspezifische Detailredaktion; daraus wird keine Vollprogramm-Repräsentativität abgeleitet</p></article>
       </div>
+      <aside className={styles.heroAside} aria-label="Prozess- und Versionsnachweis">
+        <p className={styles.eyebrow}>Prozessdaten nach dem Wirkungsbefund</p>
+        <dl>
+          <div><dt>Autoritative Source Units</dt><dd>{terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")}</dd></div>
+          <div><dt>Quellengebundene Wirkungsmechanismen</dt><dd>{terminalParty.authoritative_effect_mechanism_count.toLocaleString("de-DE")}</dd></div>
+          <div><dt>Historischer Release-1-Arbeitsbestand</dt><dd>{model.commitmentCount.toLocaleString("de-DE")} · getrennte Zähldimension</dd></div>
+          <div><dt>Analyseperspektive</dt><dd>Ex ante – Wirkungspotenzial, keine behauptete Ist-Wirkung</dd></div>
+          {decisionDate && <div><dt>Programmbeschluss</dt><dd>{decisionDate}</dd></div>}
+        </dl>
+      </aside>
       {model.implementationBoundary && <p className={styles.editorialSummary}><strong>Zuständigkeit:</strong> {model.implementationBoundary}</p>}
       <div className={styles.chips}>{model.policyDomains.map((domain) => <span className={styles.metaChip} key={domain}>{domain}</span>)}</div>
     </section>

@@ -20,6 +20,7 @@ on:
       - "woek-parlament-app/data/executive-impact/nonblocking-projection-inventory-v1.json"
       - "woek-parlament-app/scripts/quality/check-nonblocking-projection-inventory.mjs"
       - "woek-parlament-app/scripts/quality/materialize-nonblocking-projection-inventory.mjs"
+      - "woek-parlament-app/scripts/quality/check-impact-first-publication.ts"
       - "woek-parlament-app/tests/nonblocking-projection-inventory.test.ts"
       - "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs"
       - "tools/validate_state_official_source_adapters.py"
@@ -96,6 +97,7 @@ jobs:
       - run: npm run check:same-page-navigation
       - run: npm run check:sachsen-anhalt-publication
       - run: npm run check:executive-projections
+      - run: npm run check:impact-first-publication
       - run: npm run check:berlin-current-source
       - run: npm run check:mv-current-source
       - run: npm run check:state-publication

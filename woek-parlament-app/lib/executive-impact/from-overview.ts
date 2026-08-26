@@ -1,7 +1,7 @@
 import type { OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import { executiveImpactSummarySchema, type ExecutiveImpactSummary, type ImpactDimensionSummary } from "./contracts";
 
-function openDimension(label: string): ImpactDimensionSummary {
+function openDimension(label: string, sourceId: string): ImpactDimensionSummary {
   return {
     direction: "OPEN",
     materiality: "OPEN",
@@ -9,6 +9,7 @@ function openDimension(label: string): ImpactDimensionSummary {
     headline: `Keine freigegebene ${label}-Gesamtprojektion`,
     state_changes: [],
     rationale: `Der freigegebene Kurzbefund enthält keine eigenständige ${label}-Richtung, Materialität und Evidenz. Das Portal zeigt diese Lücke offen und leitet keine Zuordnung aus Themenwörtern ab.`,
+    source_path_ids: [sourceId],
   };
 }
 
@@ -42,9 +43,10 @@ export function executiveImpactFromOverview({
     key_finding: assessment.keyFinding,
     direction_label: assessment.directionLabel,
     overall_character: assessment.directionKind === "positive" ? "PREDOMINANTLY_POSITIVE" : assessment.directionKind === "risk" ? "PREDOMINANTLY_NEGATIVE" : assessment.directionKind === "ambivalent" ? "MIXED" : assessment.directionKind === "open" ? "OPEN" : "NO_SINGLE_DIRECTION",
+    overall_materiality: "OPEN",
     why_it_matters: assessment.impactCoreSummary,
     system_boundary: systemBoundary,
-    mpd: { human: openDimension("Mensch"), planet: openDimension("Planet"), democracy: openDimension("Demokratie") },
+    mpd: { human: openDimension("Mensch", id), planet: openDimension("Planet", id), democracy: openDimension("Demokratie", id) },
     sdg_impacts: [],
     material_paths: [],
     materiality_selection_status: "FAIL_CLOSED_NO_APPROVED_RANKING",

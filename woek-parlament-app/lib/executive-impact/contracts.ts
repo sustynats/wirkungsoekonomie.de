@@ -11,6 +11,7 @@ export const impactDimensionSummarySchema = z.object({
   headline: z.string().min(1),
   state_changes: z.array(z.string().min(1)),
   rationale: z.string().min(1),
+  source_path_ids: z.array(z.string().min(1)).min(1),
 });
 
 export const sdgImpactSchema = z.object({
@@ -21,6 +22,7 @@ export const sdgImpactSchema = z.object({
   materiality: impactMaterialitySchema,
   evidence: executiveEvidenceSchema,
   rationale: z.string().min(1),
+  source_path_ids: z.array(z.string().min(1)).min(1),
 });
 
 export const materialImpactPathSchema = z.object({
@@ -58,6 +60,7 @@ export const executiveImpactSummarySchema = z.object({
   key_finding: z.string().min(1).nullable(),
   direction_label: z.string().min(1),
   overall_character: z.enum(["PREDOMINANTLY_POSITIVE", "PREDOMINANTLY_NEGATIVE", "MIXED", "OPEN", "NO_SINGLE_DIRECTION"]),
+  overall_materiality: impactMaterialitySchema,
   why_it_matters: z.string().min(1),
   system_boundary: z.string().min(1),
   mpd: z.object({
