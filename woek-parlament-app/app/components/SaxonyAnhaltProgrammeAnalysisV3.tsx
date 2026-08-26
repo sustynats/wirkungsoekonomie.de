@@ -345,9 +345,10 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         <p className={styles.eyebrow}>Landtagswahl Sachsen-Anhalt 2026 · WÖk-Wahlprogrammanalyse</p>
         <h1>{programme.party}</h1>
         <p className={styles.lead}>{programme.title}</p>
-        <p>Die Wirkungseinordnung beginnt unmittelbar mit der fachlich freigegebenen Bottom Line. Vollständigkeit, Version und Prozessnachweise folgen nach dem Wirkungsbefund.</p>
       </div>
     </section>
+
+    <ExecutiveImpactSummaryView summary={executiveSummary} afterEvidence={<ImpactVisualScenario record={programmeVisual} />} />
 
     <nav className={styles.jumpNav} aria-label="Sprungnavigation der Wahlprogrammanalyse">
       <a href="#gesamtbefund">Gesamtzusammenfassung</a>
@@ -359,8 +360,6 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
       <a href="#vollstaendiges-zusageregister">Originalzusagen</a>
       <a href="#quellenstatus">Quellen & Fachstand</a>
     </nav>
-
-    <ExecutiveImpactSummaryView summary={executiveSummary} afterEvidence={<ImpactVisualScenario record={programmeVisual} />} />
 
     <ImpactVisualScenario record={caseVisual} />
 
