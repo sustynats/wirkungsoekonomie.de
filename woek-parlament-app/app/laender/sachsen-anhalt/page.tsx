@@ -54,13 +54,13 @@ function ProgrammeImpactCard({ party, title, href, summary }: { party: string; t
       <span className={styles.programmeTitle}>{compact(title, 58)}</span>
       <h3>{compact(summary.bottom_line, 82)}</h3>
     </header>
-    <div className={styles.mpd} aria-label="Mensch, Planet, Demokratie">
+    <div className={styles.mpd} role="group" aria-label="Mensch, Planet, Demokratie">
       {(["human", "planet", "democracy"] as const).map((key) => {
         const item = summary.mpd[key];
         return <div key={key}><span>{key === "human" ? "Mensch" : key === "planet" ? "Planet" : "Demokratie"}</span><DirectionSignal value={item.direction} /><small>{materiality[item.materiality]}</small></div>;
       })}
     </div>
-    <div className={styles.sdgStrip} aria-label="Freigegebene SDG- und SDG+-Richtungen">
+    <div className={styles.sdgStrip} role="group" aria-label="Freigegebene SDG- und SDG+-Richtungen">
       {summary.sdg_impacts.slice(0, 3).map((item) => <span key={`${item.framework}:${item.sdg_id}`} title={item.label}><strong>{item.sdg_id}</strong><DirectionSignal value={item.direction} /></span>)}
     </div>
     <div className={styles.pathBlock}><strong>Warum?</strong><ol className={styles.paths} aria-label="Materielle Wirkpfade">
@@ -113,7 +113,7 @@ export default async function SaxonyAnhaltPage() {
 
     <section className={`shell section ${styles.audit}`} aria-labelledby="state-status-title">
       <div><p className="eyebrow">Terminaler Quellen- und Fachstand · 6/6</p><h2 id="state-status-title">Vollbestand erhalten, öffentliche Projektion source-bound.</h2><p>Alle sechs finalen Manifeste schließen Quellenlücken und Kollisionen. Prozess-, Versions- und Registerdaten bleiben in den Detailakten nachvollziehbar, stehen aber nach dem Wirkungsbefund. Der historische Release-1-Arbeitsbestand bleibt als getrennte Zähldimension erhalten.</p></div>
-      <dl><div><dt>Source Units</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.source_units.toLocaleString("de-DE")}</dd></div><div><dt>Wirkungsmechanismen</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.effect_mechanisms.toLocaleString("de-DE")}</dd></div><div><dt>Programme</dt><dd>6/6 terminal</dd></div><div><dt>Programmbilder</dt><dd>6/6 freigegeben</dd></div></dl>
+      <dl><div><dt>Source Units</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.source_units.toLocaleString("de-DE")}</dd></div><div><dt>Wirkungsmechanismen</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.effect_mechanisms.toLocaleString("de-DE")}</dd></div><div><dt>Programme</dt><dd>6/6 terminal</dd></div><div><dt>Wirkungsbilder</dt><dd>12/12 freigegeben</dd></div></dl>
     </section>
 
     <section className="shell section state-reference-framework" aria-labelledby="state-reference-title">

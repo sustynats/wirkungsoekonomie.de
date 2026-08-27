@@ -1,8 +1,8 @@
 {
   "schema_version": "woek-impact-visual-scenarios-1.0",
-  "manifest_id": "LTW-2026-ST-IMPACT-VISUAL-SCENARIOS-V1",
-  "manifest_sha256": "a108d4900f8d90657de9e32f1b28e19210ad5a7ecfad74b1eacb16dd0a15ba0c",
-  "base_main_commit": "9e8389cb8623109a87ba6f3563d5aabac3ba6cea",
+  "manifest_id": "LTW-2026-ST-IMPACT-VISUAL-SCENARIOS-V2",
+  "manifest_sha256": "326b3b1369225f5f5e6b34f9d364fcfca43ec1ae3350e3752300ddccace84b4b",
+  "base_main_commit": "7e53b3a2d9f9a9e340e824b24b1e861439144959",
   "source_release": {
     "manifest_id": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1",
     "manifest_path": "data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json",
@@ -24,7 +24,7 @@
   },
   "records": [
     {
-      "id": "woek-impact-visual-st-2026-cdu-program-v1",
+      "id": "woek-impact-visual-st-2026-cdu-program-v2",
       "object_type": "PROGRAM",
       "object_id": "ltw-2026-st-cdu",
       "source_key": "ltw-2026-st-cdu",
@@ -32,6 +32,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
       "title": "Programm-Szenario · CDU Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
       "source_statement_refs": [
@@ -52,7 +54,7 @@
         "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
         "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
       "visible_elements": [],
       "case_analysis_binding": null,
       "non_visual_effects": [
@@ -64,35 +66,41 @@
       "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
       "omitted_marker_candidates": [
-        "Verkehrsknoten, Bus, Fahrräder und Verwaltungsorientierung: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
       ],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-program-scenario-v1.webp",
-      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines geordneten regionalen Verkehrsknotens in Sachsen-Anhalt mit Bus, Fahrrädern, öffentlicher Infrastruktur und Verwaltungsorientierung. Das Bild visualisiert ausgewählte Wirkungspfade zu Erreichbarkeit, Infrastruktur und öffentlicher Funktionsfähigkeit und ist keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum CDU-Wahlprogramm Sachsen-Anhalt 2026: links ein sachlicher öffentlicher Infrastruktur- und Sicherheitskontext mit Feuerwehr-Ausbildungszentrum und Ordnungsbehörde; rechts vier freigegebene Schlüsselpfade zu Katastrophenschutz, Sicherheit, Wachstumszielen und Rückführungsverfahren mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
       "visual_brief": {
-        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
-        "version": "1.0",
-        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": "37ddd1008a733172f58843f5424e6014b0f4623d140dd13f12c93781d9b5db3e",
+      "asset_sha256": "5baf10d136d280baee4febf2733249876e0abd5e6eab620dad38a4074ef3f917",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-program-scenario-v1.webp",
       "asset_metadata": {
         "mime_type": "image/webp",
-        "width": 1448,
-        "height": 1086,
-        "byte_size": 407430,
-        "original_filename": "owner-provided-cdu-program-scenario-v1.png",
-        "original_sha256": "e9b6f86385b18eff50aadc9c7d54ffecdbfdf6fde8c4df99e4134ba7b1448048",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 260918,
+        "original_filename": "sa-2026-program-cdu-wirkungsbild-v2.png",
+        "original_sha256": "76adfdabfb11bc8edcf562971e371e116c8d219f2446cbede82af245130ad658",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
         "optimization": {
           "format": "WEBP_LOSSY_Q90",
           "full_composition_preserved": true,
           "metadata_published": false
         },
-        "integrated_at": "2026-08-26"
+        "integrated_at": "2026-08-27"
       },
       "editorial_review_status": "APPROVED_FOR_PUBLICATION",
       "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
@@ -109,6 +117,12 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
         }
       ]
     },
@@ -121,6 +135,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
       "title": "Fallvertiefung · CDU Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
       "source_statement_refs": [
@@ -264,8 +280,8 @@
           "reviewed_visual_brief": "APPROVED",
           "alt_text_review": "APPROVED",
           "editorial_brief_signoff": "APPROVED",
-          "image_asset": "NOT_YET_SUPPLIED",
-          "final_image_signoff": "PENDING_ASSET"
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
         }
       },
       "non_visual_effects": [
@@ -282,7 +298,9 @@
       "omitted_material_effects": [
         "tatsächliche spätere Einsatzleistung, vermiedene Todesfälle, konkrete Schadensreduktion oder einen quantifizierten Resilienzgewinn."
       ],
-      "omitted_marker_candidates": [],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Das freigegebene Bild zeigt nur Trainings-/Übungsinfrastruktur; vermiedene Einsätze oder Schäden bleiben ausdrücklich nicht bebildert."
+      ],
       "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
       "scenario_assumptions": [
         "Umfang/Schwellenwert der Maßnahme",
@@ -293,7 +311,7 @@
       ],
       "evidence_summary": "Mehr Lehrgänge, digitale Formate und moderne Übungsinfrastruktur adressieren einen konkreten staatlichen Fähigkeitshebel. Dem stehen Bau-, Betriebs- und Opportunitätskosten gegenüber; ein großer Mitteleinsatz ist nur dann wirkungsökonomisch überzeugend, wenn Kapazitätsbedarf, Auslastung und Qualitätsgewinne belegt werden. Der alte Release-1-Wirkpfad ordnete diesen Gegenstand fälschlich als allgemeinen Bildungspfad ein und wird deshalb nicht mehr als Kurzbewertung verwendet.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-case-scenario-v1.webp",
       "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario einer sachlichen Ausbildungs- und Übungssituation im Brand- und Katastrophenschutz in Sachsen-Anhalt mit Einsatzfahrzeug, Schutzkleidung und technischer Übungsinfrastruktur. Das Bild visualisiert den institutionellen Kapazitätshebel des freigegebenen WÖk-Wirkungsfalls und ist keine Prognose tatsächlicher Einsatz- oder Schadenswirkungen.",
       "visual_brief": {
         "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
@@ -302,22 +320,30 @@
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "asset_metadata": null,
-      "editorial_review_status": "PREPARED_AWAITING_ASSET",
-      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "IMAGE_ASSET",
-          "description": "Eine separate CASE_SCENARIO-Bilddatei wurde noch nicht geliefert; das PROGRAM_SCENARIO-Asset darf nicht wiederverwendet werden.",
-          "required_for": "CASE_SCENARIO"
+      "asset_sha256": "563e6e442ec89f4bd54fcf11b391e524ff991bc6277781d98097284f85179bbf",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 285492,
+        "original_filename": "sa-2026-case-cdu-katastrophenschutz-v1.png",
+        "original_sha256": "cdaea35a2a0f05512bca47ab7b0ced9d718e62c017b13ccf1434746ceeded220",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "FINAL_IMAGE_SIGNOFF",
-          "description": "Der finale Source-Fidelity-, Frame-Schutz-, Marker- und Alt-Text-Smoke ist erst gegen die tatsächlichen Bildbytes möglich.",
-          "required_for": "CASE_SCENARIO"
-        }
-      ],
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
@@ -330,11 +356,17 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
         }
       ]
     },
     {
-      "id": "woek-impact-visual-st-2026-spd-program-v1",
+      "id": "woek-impact-visual-st-2026-spd-program-v2",
       "object_type": "PROGRAM",
       "object_id": "ltw-2026-st-spd",
       "source_key": "ltw-2026-st-spd",
@@ -342,6 +374,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
       "title": "Programm-Szenario · SPD Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
       "source_statement_refs": [
@@ -362,7 +396,7 @@
         "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
         "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
       "visible_elements": [],
       "case_analysis_binding": null,
       "non_visual_effects": [
@@ -374,35 +408,41 @@
       "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
       "omitted_marker_candidates": [
-        "Bus, Apotheke, Versorgung und generationenübergreifende Platznutzung: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
       ],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-program-scenario-v1.webp",
-      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines belebten Orts- oder Stadtzentrums in Sachsen-Anhalt mit öffentlichem Busverkehr, Apotheke, wohnortnaher Versorgung und Menschen verschiedener Altersgruppen. Das Bild visualisiert ausgewählte Wirkungspfade zu Daseinsvorsorge und sozialer Teilhabe und ist keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum SPD-Wahlprogramm Sachsen-Anhalt 2026: links ein lokaler Stadt- und Nachbarschaftskontext mit Repair-Café und Bildungs-/Begegnungsangebot; rechts vier freigegebene Schlüsselpfade zu altersgerechter Arbeit, Repair-Cafés, Ausbildungszugang und regionalen Strukturprojekten mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
       "visual_brief": {
-        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
-        "version": "1.0",
-        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": "03fe2d3097b9e3ddb79fbc29a917eb2f891ec86b3185d8960fb24fb1e2fd730f",
+      "asset_sha256": "59e69c1b07353c1edd7beff95eed209461cd227778a39115c264554444dfa18f",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-program-scenario-v1.webp",
       "asset_metadata": {
         "mime_type": "image/webp",
-        "width": 1448,
-        "height": 1086,
-        "byte_size": 518256,
-        "original_filename": "owner-provided-spd-program-scenario-v1.png",
-        "original_sha256": "6190a9af3f09851d4d64e19e434470662a99ed8fe119a9ecaa8fabee8b0a9557",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 255576,
+        "original_filename": "sa-2026-program-spd-wirkungsbild-v2.png",
+        "original_sha256": "b94bfb386590e6521a771fbece49e62d4832ec09369368f6548765e8b7ae222b",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
         "optimization": {
           "format": "WEBP_LOSSY_Q90",
           "full_composition_preserved": true,
           "metadata_published": false
         },
-        "integrated_at": "2026-08-26"
+        "integrated_at": "2026-08-27"
       },
       "editorial_review_status": "APPROVED_FOR_PUBLICATION",
       "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
@@ -419,6 +459,12 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
         }
       ]
     },
@@ -431,6 +477,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
       "title": "Fallvertiefung · SPD Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
       "source_statement_refs": [
@@ -572,8 +620,8 @@
           "reviewed_visual_brief": "APPROVED",
           "alt_text_review": "APPROVED",
           "editorial_brief_signoff": "APPROVED",
-          "image_asset": "NOT_YET_SUPPLIED",
-          "final_image_signoff": "PENDING_ASSET"
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
         }
       },
       "non_visual_effects": [
@@ -589,7 +637,9 @@
       "omitted_material_effects": [
         "automatisch vermiedenen Neukauf, exakt vermiedene Abfall-/CO2-Menge, dauerhafte Verhaltensänderung oder soziale Teilhabe als gesicherten Outcome."
       ],
-      "omitted_marker_candidates": [],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist Reparaturzugang/-handlung; Lebensdauer-, Abfall- und Ressourceneffekte bleiben textlich und evidenzgebunden."
+      ],
       "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
       "scenario_assumptions": [
         "Finanzierungsumfang und Förderkriterien",
@@ -599,8 +649,8 @@
       ],
       "evidence_summary": "Der Mechanismus ist konkret und ressourcenbezogen plausibel. Eine kleine Förderung kann lokal hohe soziale und Bildungswirkung haben, darf aber nicht mit einer flächendeckenden Kreislaufwirtschaftswirkung verwechselt werden. Messbar sein sollten Reparaturfälle, Nutzungsverlängerung, Teilnehmendenstruktur und zusätzliche Reparaturkapazität.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
-      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines Repair-Cafés in Sachsen-Anhalt mit Reparaturtisch, Werkzeug und der Instandsetzung eines Alltagsgegenstands. Das Bild visualisiert den freigegebenen Wirkungsfall zur Förderung niedrigschwelliger Reparaturmöglichkeiten; tatsächliche Lebensdauer-, Abfall- oder Ressourceneffekte werden damit nicht belegt.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-case-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines Repair-Cafés in Sachsen-Anhalt mit Reparaturtisch, Werkzeug und der Instandsetzung von Alltagsgegenständen. Das Bild visualisiert den freigegebenen Wirkungsfall zur Förderung niedrigschwelliger Reparaturmöglichkeiten; tatsächliche Lebensdauer-, Abfall- oder Ressourceneffekte werden damit nicht belegt.",
       "visual_brief": {
         "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
         "version": "1.0",
@@ -608,22 +658,30 @@
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "asset_metadata": null,
-      "editorial_review_status": "PREPARED_AWAITING_ASSET",
-      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "IMAGE_ASSET",
-          "description": "Eine separate CASE_SCENARIO-Bilddatei wurde noch nicht geliefert; das PROGRAM_SCENARIO-Asset darf nicht wiederverwendet werden.",
-          "required_for": "CASE_SCENARIO"
+      "asset_sha256": "067739482a4a0f7f6d40baeb928ccd8cc0a45cadca4904f3c880d86540cbf1b2",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 244378,
+        "original_filename": "sa-2026-case-spd-repair-cafe-v1.png",
+        "original_sha256": "38a6650e720c15b0cbcce8def90eb3246e2ed5fe91c3ebb0af3530f2ab6d2f88",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "FINAL_IMAGE_SIGNOFF",
-          "description": "Der finale Source-Fidelity-, Frame-Schutz-, Marker- und Alt-Text-Smoke ist erst gegen die tatsächlichen Bildbytes möglich.",
-          "required_for": "CASE_SCENARIO"
-        }
-      ],
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
@@ -636,11 +694,17 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
         }
       ]
     },
     {
-      "id": "woek-impact-visual-st-2026-gruene-program-v1",
+      "id": "woek-impact-visual-st-2026-gruene-program-v2",
       "object_type": "PROGRAM",
       "object_id": "ltw-2026-st-gruene",
       "source_key": "ltw-2026-st-gruene",
@@ -648,6 +712,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
       "title": "Programm-Szenario · BÜNDNIS 90/DIE GRÜNEN Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
       "source_statement_refs": [
@@ -668,7 +734,7 @@
         "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
         "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
       "visible_elements": [],
       "case_analysis_binding": null,
       "non_visual_effects": [
@@ -680,35 +746,41 @@
       "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
       "omitted_marker_candidates": [
-        "Mobilität, Begrünung, Solar- und Windenergie: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
       ],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-program-scenario-v1.webp",
-      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines multimodalen öffentlichen Raums in Sachsen-Anhalt mit Bus, Bahn, Rad- und Fußverkehr, Begrünung sowie sichtbarer Solar- und Windenergieinfrastruktur. Das Bild visualisiert ausgewählte Wirkungspfade zu Mobilität, öffentlichem Raum und Energie und ist keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum Grünen-Wahlprogramm Sachsen-Anhalt 2026: links Landwirtschaft, Biodiversitätsstrukturen und Waldsaum mit präventivem Brandschutzkorridor; rechts vier freigegebene Schlüsselpfade zu Ökolandbau, Waldbrandvorsorge, Natur- und Artenschutz sowie Wolfsmanagement mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
       "visual_brief": {
-        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
-        "version": "1.0",
-        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": "7350d33b57190788e0a4e5d0910f2d7362a625fe84710ca6349834d85cddfe8b",
+      "asset_sha256": "6d2bbe6b8d7e0c64455c1e2564e24ac4c6f4144f824b9a37774595b6ffde2221",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-program-scenario-v1.webp",
       "asset_metadata": {
         "mime_type": "image/webp",
-        "width": 1536,
-        "height": 1024,
-        "byte_size": 533444,
-        "original_filename": "owner-provided-gruene-program-scenario-v1.png",
-        "original_sha256": "ff3a1767db99f3eb7f3ddecb3018609fe1d07556fa14bcc79e82f836442e275d",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 307668,
+        "original_filename": "sa-2026-program-gruene-wirkungsbild-v2.png",
+        "original_sha256": "dab5d500fabe0acfb7741faea16d5bb990c0df802da266de1ed8f88dfff5c57b",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
         "optimization": {
           "format": "WEBP_LOSSY_Q90",
           "full_composition_preserved": true,
           "metadata_published": false
         },
-        "integrated_at": "2026-08-26"
+        "integrated_at": "2026-08-27"
       },
       "editorial_review_status": "APPROVED_FOR_PUBLICATION",
       "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
@@ -725,6 +797,12 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
         }
       ]
     },
@@ -737,6 +815,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
       "title": "Fallvertiefung · BÜNDNIS 90/DIE GRÜNEN Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
       "source_statement_refs": [
@@ -878,8 +958,8 @@
           "reviewed_visual_brief": "APPROVED",
           "alt_text_review": "APPROVED",
           "editorial_brief_signoff": "APPROVED",
-          "image_asset": "NOT_YET_SUPPLIED",
-          "final_image_signoff": "PENDING_ASSET"
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
         }
       },
       "non_visual_effects": [
@@ -895,7 +975,9 @@
       "omitted_material_effects": [
         "sicher verhinderte Waldbrände, konkrete Schadenssummen, CO2-Einsparungen oder garantierte Resilienzwirkung."
       ],
-      "omitted_marker_candidates": [],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist eine Präventionsstruktur; verhinderte Brände oder Schäden werden nicht als eingetretener Zustand markiert."
+      ],
       "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
       "scenario_assumptions": [
         "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
@@ -905,7 +987,7 @@
       ],
       "evidence_summary": "Der Mechanismus wirkt vor dem Schadenseintritt und kann dadurch Menschen, Ökosysteme, Infrastruktur und Einsatzkräfte gleichzeitig schützen. Ungeeignete Schneisen oder harte Eingriffe können jedoch Habitatfunktionen beeinträchtigen. Deshalb sind Brandrisikomodell, Standortwahl und Pflegezustand zentrale Qualitätsbedingungen.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-case-scenario-v1.webp",
       "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario einer Wald- oder Landschaftsfläche in Sachsen-Anhalt mit sachlich erkennbaren präventiven Brandschutzstrukturen. Das Bild visualisiert einen freigegebenen WÖk-Wirkungsfall zur möglichen Begrenzung von Feuerausbreitung und ist keine Prognose verhinderter Brände oder Schäden.",
       "visual_brief": {
         "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
@@ -914,22 +996,30 @@
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "asset_metadata": null,
-      "editorial_review_status": "PREPARED_AWAITING_ASSET",
-      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "IMAGE_ASSET",
-          "description": "Eine separate CASE_SCENARIO-Bilddatei wurde noch nicht geliefert; das PROGRAM_SCENARIO-Asset darf nicht wiederverwendet werden.",
-          "required_for": "CASE_SCENARIO"
+      "asset_sha256": "2a273b541db5a93e0eb0dffb60c2e82cd59a8af70e497eb772689bc87bebc6b0",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 501114,
+        "original_filename": "sa-2026-case-gruene-waldbrandpraevention-v1.png",
+        "original_sha256": "53b7ed57641a9af226bdb467012432f15d41a8702cc1ecfffd3dd9848cdf8f00",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "FINAL_IMAGE_SIGNOFF",
-          "description": "Der finale Source-Fidelity-, Frame-Schutz-, Marker- und Alt-Text-Smoke ist erst gegen die tatsächlichen Bildbytes möglich.",
-          "required_for": "CASE_SCENARIO"
-        }
-      ],
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
@@ -942,11 +1032,17 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
         }
       ]
     },
     {
-      "id": "woek-impact-visual-st-2026-linke-program-v1",
+      "id": "woek-impact-visual-st-2026-linke-program-v2",
       "object_type": "PROGRAM",
       "object_id": "ltw-2026-st-linke",
       "source_key": "ltw-2026-st-linke",
@@ -954,6 +1050,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
       "title": "Programm-Szenario · Die Linke Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
       "source_statement_refs": [
@@ -974,7 +1072,7 @@
         "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
         "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
       "visible_elements": [],
       "case_analysis_binding": null,
       "non_visual_effects": [
@@ -986,35 +1084,41 @@
       "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
       "omitted_marker_candidates": [
-        "Wohnquartier, Kita, Stadtteiltreff und Versorgung: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
       ],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-program-scenario-v1.webp",
-      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines Wohnquartiers in Sachsen-Anhalt mit Kita, Stadtteiltreff, wohnortnaher Versorgung und generationenübergreifend genutztem öffentlichem Raum. Das Bild visualisiert ausgewählte Wirkungspfade zu Wohnen, sozialer Infrastruktur und Zugänglichkeit und ist keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum Linke-Wahlprogramm Sachsen-Anhalt 2026: links ein Bürgerhaus mit Ehrenamt, lokaler Beteiligung und gemeinschaftlichen Aktivitäten; rechts vier freigegebene Schlüsselpfade zu Bevölkerungsbeteiligung, Ehrenamtsförderung, direkter Demokratie und einem wegen Quellenkollision nicht bewertbaren Pfad. Ex ante, keine Prognose.",
       "visual_brief": {
-        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
-        "version": "1.0",
-        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": "74ba1d23f7452cc58dd54fa36addfcadbdac22f5078fe04aadcfd0948fbec823",
+      "asset_sha256": "48198176bf0b656d5cce381f21347e18090719cbcad59b9b278ba29704b66ee7",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-program-scenario-v1.webp",
       "asset_metadata": {
         "mime_type": "image/webp",
-        "width": 1536,
-        "height": 1024,
-        "byte_size": 513434,
-        "original_filename": "owner-provided-linke-program-scenario-v1.png",
-        "original_sha256": "459194ccf3e6801c670189fc22f537b6a35754d0a2231aa11d18e0f731f67044",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 267174,
+        "original_filename": "sa-2026-program-linke-wirkungsbild-v2.png",
+        "original_sha256": "761049f36e2604f9128fdcc128d0544399c25f783cc4bc6b5022145b85ee6d86",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
         "optimization": {
           "format": "WEBP_LOSSY_Q90",
           "full_composition_preserved": true,
           "metadata_published": false
         },
-        "integrated_at": "2026-08-26"
+        "integrated_at": "2026-08-27"
       },
       "editorial_review_status": "APPROVED_FOR_PUBLICATION",
       "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
@@ -1031,6 +1135,12 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
         }
       ]
     },
@@ -1043,6 +1153,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
       "title": "Fallvertiefung · Die Linke Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
       "source_statement_refs": [
@@ -1174,8 +1286,8 @@
           "reviewed_visual_brief": "APPROVED",
           "alt_text_review": "APPROVED",
           "editorial_brief_signoff": "APPROVED",
-          "image_asset": "NOT_YET_SUPPLIED",
-          "final_image_signoff": "PENDING_ASSET"
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
         }
       },
       "non_visual_effects": [
@@ -1190,7 +1302,9 @@
       "omitted_material_effects": [
         "automatisch höhere Beteiligung, bessere Entscheidungen, stärkere Demokratie oder bestimmte politische Ergebnisse."
       ],
-      "omitted_marker_candidates": [],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist nur der Verfahrenszugang; Repräsentativität, Legitimität und politische Ergebnisse bleiben unbehauptet."
+      ],
       "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
       "scenario_assumptions": [
         "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
@@ -1200,7 +1314,7 @@
       ],
       "evidence_summary": "Der Effekt hängt nicht nur von der Höhe des Quorums ab, sondern von Information, Beteiligungsbreite, Verfahrensfairness, Themenzulässigkeit und Minderheitenschutz. Ein einfacher Mehr-ist-besser-Schluss wäre deshalb methodisch falsch. Zu beobachten sind Teilnahme, soziale Repräsentativität, Verfahrenskosten und spätere Akzeptanz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-case-scenario-v1.webp",
       "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines öffentlich zugänglichen Beteiligungsverfahrens in Sachsen-Anhalt mit neutralem Informations- und Eintragungsbereich. Das Bild visualisiert den freigegebenen institutionellen Wirkungsfall zu Volksinitiative, Volksbegehren oder Volksentscheid; tatsächliche Beteiligung oder politische Ergebnisse werden damit nicht vorausgesagt.",
       "visual_brief": {
         "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
@@ -1209,22 +1323,30 @@
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "asset_metadata": null,
-      "editorial_review_status": "PREPARED_AWAITING_ASSET",
-      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "IMAGE_ASSET",
-          "description": "Eine separate CASE_SCENARIO-Bilddatei wurde noch nicht geliefert; das PROGRAM_SCENARIO-Asset darf nicht wiederverwendet werden.",
-          "required_for": "CASE_SCENARIO"
+      "asset_sha256": "7fdc7a9b2a45d535896a43a576125a535d74ce417c0aeb4e26c586816a3088c6",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 165588,
+        "original_filename": "sa-2026-case-linke-direkte-demokratie-v1.png",
+        "original_sha256": "fe8286a8e1ea5e696ee7c62ae2d21915f6fb16d22e751677e03c42b89ac517b1",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "FINAL_IMAGE_SIGNOFF",
-          "description": "Der finale Source-Fidelity-, Frame-Schutz-, Marker- und Alt-Text-Smoke ist erst gegen die tatsächlichen Bildbytes möglich.",
-          "required_for": "CASE_SCENARIO"
-        }
-      ],
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
@@ -1237,11 +1359,17 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
         }
       ]
     },
     {
-      "id": "woek-impact-visual-st-2026-bsw-program-v1",
+      "id": "woek-impact-visual-st-2026-bsw-program-v2",
       "object_type": "PROGRAM",
       "object_id": "ltw-2026-st-bsw",
       "source_key": "ltw-2026-st-bsw",
@@ -1249,6 +1377,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
       "title": "Programm-Szenario · BSW Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
       "source_statement_refs": [
@@ -1269,7 +1399,7 @@
         "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
         "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
       "visible_elements": [],
       "case_analysis_binding": null,
       "non_visual_effects": [
@@ -1281,35 +1411,41 @@
       "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
       "omitted_marker_candidates": [
-        "Versorgung, Bus, Rathaus und regionale Wirtschaftsstruktur: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
       ],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-program-scenario-v1.webp",
-      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines regionalen Ortszentrums in Sachsen-Anhalt mit lokaler Versorgung, öffentlichem Busverkehr, kommunaler Infrastruktur und regionalem Wirtschafts- und Industriebezug. Das Bild visualisiert ausgewählte Wirkungspfade zu Versorgung, regionaler Wirtschaft und Alltagsstabilität und ist keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum BSW-Wahlprogramm Sachsen-Anhalt 2026: links Rathaus und öffentlicher Beteiligungsraum mit Dialog; rechts vier freigegebene Schlüsselpfade zu zivilen Wahlmöglichkeiten junger Menschen, einer unbestimmten Militarisierungsforderung, Bürgerbudgets und gesellschaftlichem Dialog mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
       "visual_brief": {
-        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
-        "version": "1.0",
-        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": "2ead313d310fee8256642ddda5b8c26a8f1dfaa7ea9238c8be012fd8c70724d1",
+      "asset_sha256": "85c88775667537c6a32095370bfde1b148baa4aedebd1b8378ca87f370051cce",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-program-scenario-v1.webp",
       "asset_metadata": {
         "mime_type": "image/webp",
-        "width": 1536,
-        "height": 1024,
-        "byte_size": 394440,
-        "original_filename": "owner-provided-bsw-program-scenario-v1.png",
-        "original_sha256": "a01b46494dd40da8082878e9a3ec45af72834f55377d57ed4978261ce0c20b37",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 248102,
+        "original_filename": "sa-2026-program-bsw-wirkungsbild-v2.png",
+        "original_sha256": "88b3e8e65c3d0896f6df8b59ea236083661d7a552cc91f740c18126cf2179277",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
         "optimization": {
           "format": "WEBP_LOSSY_Q90",
           "full_composition_preserved": true,
           "metadata_published": false
         },
-        "integrated_at": "2026-08-26"
+        "integrated_at": "2026-08-27"
       },
       "editorial_review_status": "APPROVED_FOR_PUBLICATION",
       "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
@@ -1326,6 +1462,12 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
         }
       ]
     },
@@ -1338,6 +1480,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
       "title": "Fallvertiefung · BSW Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
       "source_statement_refs": [
@@ -1480,8 +1624,8 @@
           "reviewed_visual_brief": "APPROVED",
           "alt_text_review": "APPROVED",
           "editorial_brief_signoff": "APPROVED",
-          "image_asset": "NOT_YET_SUPPLIED",
-          "final_image_signoff": "PENDING_ASSET"
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
         }
       },
       "non_visual_effects": [
@@ -1497,7 +1641,9 @@
       "omitted_material_effects": [
         "automatisch bessere Ausgaben, mehr Vertrauen, höhere kommunale Leistungsfähigkeit oder wirtschaftlichen Gewinn."
       ],
-      "omitted_marker_candidates": [],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist der Beteiligungs-/Budgetprozess; bessere Mittelverwendung, Vertrauen oder gesellschaftliche Outcomes werden nicht behauptet."
+      ],
       "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts · Kommunen / kommunale Träger",
       "scenario_assumptions": [
         "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
@@ -1507,7 +1653,7 @@
       ],
       "evidence_summary": "Der positive Hebel liegt in zugänglichen Verfahren, nicht in möglichst vielen Abstimmungen. Repräsentativität, Transparenz, Minderheitenschutz, Verwaltungsaufwand und verfügbare kommunale Mittel müssen gemeinsam beobachtet werden. Klare rechtliche Rahmenbedingungen sind daher Teil des Wirkmechanismus und nicht nur Umsetzungsdetail.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-case-scenario-v1.webp",
       "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines kommunalen Bürgerbudget- oder Beteiligungsprozesses in Sachsen-Anhalt mit sachlich dargestellten Projektvorschlägen und öffentlicher Priorisierung. Das Bild visualisiert den freigegebenen Verfahrenshebel; Qualität der Mittelverwendung, Vertrauen oder gesellschaftliche Wirkungen werden nicht als eingetretener Outcome dargestellt.",
       "visual_brief": {
         "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
@@ -1516,22 +1662,30 @@
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "asset_metadata": null,
-      "editorial_review_status": "PREPARED_AWAITING_ASSET",
-      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "IMAGE_ASSET",
-          "description": "Eine separate CASE_SCENARIO-Bilddatei wurde noch nicht geliefert; das PROGRAM_SCENARIO-Asset darf nicht wiederverwendet werden.",
-          "required_for": "CASE_SCENARIO"
+      "asset_sha256": "129370172f869eaa362f1467748813e6d2078f810b25c4a0965739108e6fe446",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 241236,
+        "original_filename": "sa-2026-case-bsw-buergerbudget-v1.png",
+        "original_sha256": "acc39dee9823e89361f6509f47cbd532c176a38623299d037bd86e48eee39047",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "FINAL_IMAGE_SIGNOFF",
-          "description": "Der finale Source-Fidelity-, Frame-Schutz-, Marker- und Alt-Text-Smoke ist erst gegen die tatsächlichen Bildbytes möglich.",
-          "required_for": "CASE_SCENARIO"
-        }
-      ],
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
@@ -1544,11 +1698,17 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
         }
       ]
     },
     {
-      "id": "woek-impact-visual-st-2026-afd-program-v1",
+      "id": "woek-impact-visual-st-2026-afd-program-v2",
       "object_type": "PROGRAM",
       "object_id": "ltw-2026-st-afd",
       "source_key": "ltw-2026-st-afd",
@@ -1556,6 +1716,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
       "title": "Programm-Szenario · Alternative für Deutschland Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
       "source_statement_refs": [
@@ -1576,7 +1738,7 @@
         "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
         "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
       ],
-      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt.",
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
       "visible_elements": [],
       "case_analysis_binding": null,
       "non_visual_effects": [
@@ -1588,35 +1750,41 @@
       "non_visual_effects_review_status": "REVIEWED_COMPLETE",
       "omitted_material_effects": [],
       "omitted_marker_candidates": [
-        "Straßenraum, Polizei, Überwachung, Industrie und Verwaltungszugang: kein eindeutiger Bezug zu den vier ausgewählten freigegebenen Wirkpfad-IDs; daher NO_MARKER."
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
       ],
       "system_boundary": null,
       "scenario_assumptions": [],
       "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-program-scenario-v1.webp",
-      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines städtischen Alltagsraums in Sachsen-Anhalt mit dichtem Autoverkehr, sichtbarer Polizei- und Überwachungsinfrastruktur, einer administrativen Zugangssituation sowie konventionell geprägter Industrie- und Energieinfrastruktur im Hintergrund. Das Bild visualisiert ausgewählte Wirkungspfade der WÖk-Analyse und ist keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum AfD-Wahlprogramm Sachsen-Anhalt 2026: links ein neutraler öffentlicher Beratungsraum als visueller Anker; rechts vier freigegebene Schlüsselpfade zu reproduktiven Schutzgütern und Selbstbestimmung, unbestimmten Abschaffungsforderungen, freiwilliger Unterstützung für Schwangere und vorschulischem Vorlesen mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
       "visual_brief": {
-        "id": "SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26",
-        "version": "1.0",
-        "content_sha256": "3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29",
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": "ed6a73eeed917bf8501d5f351feaf01a206f75774d467be865675d8f1957b78a",
+      "asset_sha256": "eaaf7725d624a9c9357c0c9517c8f7327b2a1d610439d2638f0eb3f6dbdbc101",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-program-scenario-v1.webp",
       "asset_metadata": {
         "mime_type": "image/webp",
-        "width": 1448,
-        "height": 1086,
-        "byte_size": 186696,
-        "original_filename": "owner-provided-afd-program-scenario-v1.png",
-        "original_sha256": "accc8bd94ef8969b6f207151e761d66b7cbdc705f54f0e3a7ade7bb0e7b881f8",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 174670,
+        "original_filename": "sa-2026-program-afd-wirkungsbild-v2.png",
+        "original_sha256": "67339ed576cf74b895125d518ba3fb5aabbb8897829481b4ae782685cb216299",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
         "optimization": {
           "format": "WEBP_LOSSY_Q90",
           "full_composition_preserved": true,
           "metadata_published": false
         },
-        "integrated_at": "2026-08-26"
+        "integrated_at": "2026-08-27"
       },
       "editorial_review_status": "APPROVED_FOR_PUBLICATION",
       "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
@@ -1633,6 +1801,12 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
         }
       ]
     },
@@ -1645,6 +1819,8 @@
       "knowledge_cutoff": "2026-08-23",
       "stage": "EX_ANTE",
       "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
       "title": "Fallvertiefung · Alternative für Deutschland Sachsen-Anhalt",
       "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
       "source_statement_refs": [
@@ -1786,8 +1962,8 @@
           "reviewed_visual_brief": "APPROVED",
           "alt_text_review": "APPROVED",
           "editorial_brief_signoff": "APPROVED",
-          "image_asset": "NOT_YET_SUPPLIED",
-          "final_image_signoff": "PENDING_ASSET"
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
         }
       },
       "non_visual_effects": [
@@ -1804,7 +1980,7 @@
         "welche Gleichstellungsfunktion organisatorisch entfällt oder welche Schutz- oder Teilhabewirkung daraus folgt."
       ],
       "omitted_marker_candidates": [
-        "Ein Verwaltungsraum kann weder die organisatorisch entfallende Funktion noch Schutz- oder Teilhabefolgen beweisen. Der freigegebene Wirkpfad wird deshalb ohne inhaltlichen Marker direkt unter dem späteren Bild textlich erklärt."
+        "NULL_MARKER_APPROVED: Der neutrale Verwaltungsanker bezeichnet weder eine konkrete abzuschaffende Funktion noch Gleichbehandlungs- oder Teilhabewirkungen."
       ],
       "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
       "scenario_assumptions": [
@@ -1815,7 +1991,7 @@
       ],
       "evidence_summary": "Je nach betroffenem Instrument könnten Verwaltungskosten sinken oder Gleichstellungs-, Teilhabe-, Präventions- und Schutzfunktionen entfallen. Ohne Liste der konkreten Maßnahmen wäre jede Richtung eine Spekulation. Vor einer Bewertung müssen Instrumente einzeln mit Budget, Zielgruppe und Schutzfunktion offengelegt werden.",
       "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
-      "asset_path": null,
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-case-scenario-v1.webp",
       "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines nüchternen öffentlichen Beratungs- und Verwaltungsraums in Sachsen-Anhalt. Das Bild dient als visueller Anker für den freigegebenen WÖk-Fall zur Veränderung gesellschaftspolitischer Verwaltungsfunktionen; welche Aufgaben tatsächlich entfallen oder welche Gleichbehandlungs- und Teilhabewirkungen folgen, wird ausschließlich in der textlichen Wirkungsanalyse bewertet und nicht durch das Bild behauptet.",
       "visual_brief": {
         "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
@@ -1824,22 +2000,30 @@
         "review_status": "APPROVED"
       },
       "generator_metadata": null,
-      "asset_sha256": null,
-      "asset_metadata": null,
-      "editorial_review_status": "PREPARED_AWAITING_ASSET",
-      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET",
-      "missing_approved_inputs": [
-        {
-          "code": "IMAGE_ASSET",
-          "description": "Eine separate CASE_SCENARIO-Bilddatei wurde noch nicht geliefert; das PROGRAM_SCENARIO-Asset darf nicht wiederverwendet werden.",
-          "required_for": "CASE_SCENARIO"
+      "asset_sha256": "1a6dc5da1bcc7f9aba49a22670687f069ba3d44d488ac4a7e33db9604ff2ce61",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 143734,
+        "original_filename": "sa-2026-case-afd-gesellschaftspolitische-steuerung-v1.png",
+        "original_sha256": "33310cd5fc0aadf8558edf499b3ad2e3d03e6a0714191e313ef6eb448db7b46a",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
         },
-        {
-          "code": "FINAL_IMAGE_SIGNOFF",
-          "description": "Der finale Source-Fidelity-, Frame-Schutz-, Marker- und Alt-Text-Smoke ist erst gegen die tatsächlichen Bildbytes möglich.",
-          "required_for": "CASE_SCENARIO"
-        }
-      ],
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
       "change_history": [
         {
           "version": "1.0",
@@ -1852,6 +2036,12 @@
           "date": "2026-08-26",
           "status": "APPROVED",
           "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
         }
       ]
     }
