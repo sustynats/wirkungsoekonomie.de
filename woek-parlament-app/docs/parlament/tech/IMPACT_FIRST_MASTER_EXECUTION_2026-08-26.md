@@ -1,5 +1,10 @@
 # Parliament Impact-First Masterausführung · 26.08.2026
 
+> **Wirkungsbild-Update 27.08.2026:** Der finale 12/12-Asset-Handoff ersetzt
+> ausschließlich den unten beschriebenen Bildstatus. Die später in
+> #238/#240/#241 festgestellte Berlin/MV-Fachremediation bleibt davon
+> unberührt und verhindert weiterhin jeden Parliament-Runtime-Release.
+
 ## Ergebnis
 
 Der nach aktueller Governance zulässige GitHub-Zustand ist vollständig
@@ -9,11 +14,10 @@ Programme fachterminal; sieben weitere Listeneinträge bleiben bis zur
 Verifikation eines amtlichen finalen Programm-Artefakts fail-closed.
 
 Sachsen-Anhalt ist 6/6 Impact-First veröffentlicht vorbereitet: kompakte
-Programmvergleiche, Detailansichten und sechs freigegebene
-`PROGRAM_SCENARIO`-Bilder sind vollständig. Die sechs ausgewählten
-`CASE_SCENARIO`-Fälle sind inhaltlich, redaktionell und technisch bis auf zwei
-wirklich externe Eingaben pro Fall vorbereitet: separate Bildbytes und das
-anschließende finale Bild-Sign-off.
+Programmvergleiche, Detailansichten, sechs korrigierte
+`PROGRAM_SCENARIO`-v2-Bilder und sechs getrennte `CASE_SCENARIO`-Bilder sind
+vollständig. Für alle zwölf Assets sind Hash, Alt-Text, Provenienz und finaler
+Bild-Signoff gebunden; aus dem Bild wurde keine Fachinformation erzeugt.
 
 - Ausgangs-`main`: `186e208e9da860e1aa0391faca9c1feeae9ae3f9`
 - Browsergeprüfter Code-Commit: `a4ec39976f4c6c9dc7cf3752644af572b313f1cc`
@@ -50,8 +54,8 @@ Parteiname, Schlagwort, Template, Score oder Quelltext technisch bewertet.
 | Nichtkompensation | PASS | Schutzgrenzen stehen sichtbar vor Evidenz/Prozess; positive Einzelpfade verrechnen keine kritischen Risiken. |
 | Evidenz, Unsicherheit und Reality Check | PASS | Von Wirkungsaussage und Richtung getrennt. |
 | Kommunikationswirkung | PASS | Separater Fachstrang; keine Rückprojektion in Programmanalyse. |
-| Sachsen-Anhalt Programmbilder | PASS_6_OF_6 | Sechs eigenständige freigegebene `PROGRAM_SCENARIO`-Assets mit Provenienz, Alt-Text und Grenzen. |
-| Sachsen-Anhalt Case-Deep-Dives | EXTERNAL_BLOCKER_6_OF_6 | Case-Auswahl, Brief, Pfadbindung, No-Marker-Entscheidung, nicht visualisierbare Wirkungen und Roh-Alt-Text sind vollständig; offen bleiben nur `IMAGE_ASSET` und `FINAL_IMAGE_SIGNOFF`. Programmbilder werden nie wiederverwendet. |
+| Sachsen-Anhalt Programmbilder | PASS_6_OF_6_V2 | Sechs eigenständige freigegebene `PROGRAM_SCENARIO`-v2-Assets mit unveränderten vier Editorial-v2-Pfaden, Provenienz, kanonischem Alt-Text und Aussagegrenzen; die alten v1-Dateien sind nicht mehr current public. |
+| Sachsen-Anhalt Case-Deep-Dives | PASS_6_OF_6 | Sechs getrennte Case-Assets; Case-Auswahl, Brief, Pfadbindung, No-Marker-Entscheidung, nicht visualisierbare Wirkungen, Evidenz, Unsicherheit, Alt-Text und `FINAL_IMAGE_SIGNOFF=APPROVED` sind vollständig. Programmbilder werden nie wiederverwendet. |
 | Kein Partei-Score / keine Recommendation-/DNS-Synthese | PASS | Automatisierte Fach- und UI-Gates. |
 | Mobile / Responsive | PASS_BROWSER_AND_GATE | Überblick und AfD-Detail bei 320, 360, 375, 390 und 428 px ohne horizontalen Überlauf; 1.440-px-Referenz ebenfalls ohne Überlauf. |
 | Accessibility | PASS | 109 Quellfiles automatisiert geprüft, 0 Findings; Text, Symbol und Farbe; semantische Reihenfolge und zugängliche Controls. |
@@ -68,31 +72,28 @@ Koalitionsvereinbarung, eine Fachakte und das Wirkungsobservatorium.
 
 ## Noch benötigte externe Fach- und Quelleninputs
 
-1. **Sachsen-Anhalt Case-Bilder:** je CDU, SPD, GRÜNE, Linke, BSW und AfD ein
-   separates finales `CASE_SCENARIO`-Bildasset; danach je Asset ein finales
-   fachlich-redaktionelles Bild-Sign-off. Alle übrigen Case-Entscheidungen sind
-   bereits integriert.
-2. **Mecklenburg-Vorpommern Quellenreife:** je ein amtlich verifiziertes finales
+1. **Mecklenburg-Vorpommern Quellenreife:** je ein amtlich verifiziertes finales
    Programm-Artefakt für Tierschutzpartei, Die PARTEI, ÖDP, Handwerker Partei
    Deutschland, KPD, Team Freiheit und WIR LEBEN DEMOKRATIE. Erst danach ist
    eine source-bound Fachprüfung möglich.
-3. **Regierungsbestand:** objektspezifische explizite MPD-/SDG-/SDG+-/
+2. **Regierungsbestand:** objektspezifische explizite MPD-/SDG-/SDG+-/
    Wirkpfad-/Grenz-/Evidenzfreigaben für die noch feldweise geschlossenen
    kompakten Records; für die sechs detaillierten Records die fehlenden
    Aggregat- und Materialitätsentscheidungen, einschließlich einer Auswahl von
    höchstens fünf aus sechs Pfaden bei Altersvorsorge.
-4. **EU, 21 Fälle:** source-bound MPD-, SDG-/SDG+-, materielle Wirkpfad- und
+3. **EU, 21 Fälle:** source-bound MPD-, SDG-/SDG+-, materielle Wirkpfad- und
    Nichtkompensationsprojektionen.
-5. **Baden-Württemberg und Rheinland-Pfalz:** je eine dokumentweite Auswahl
+4. **Baden-Württemberg und Rheinland-Pfalz:** je eine dokumentweite Auswahl
    materieller Pfade sowie MPD-/SDG-Richtungsprojektionen; Kapitelbefunde
    werden nicht technisch zu Gesamturteilen verrechnet.
-6. **Historische Bundesprogramme, Koalitionsobjekte und Fachakten:**
+5. **Historische Bundesprogramme, Koalitionsobjekte und Fachakten:**
    objektspezifische strukturierte Freigaben für fehlende MPD-, SDG- und
    Materialitätsfelder.
-7. **Wirkungsobservatorium:** case-spezifische Executive-Verknüpfung erst nach
+6. **Wirkungsobservatorium:** case-spezifische Executive-Verknüpfung erst nach
    expliziter Fachfreigabe.
-8. **Release:** eine spätere ausdrückliche Owner-Freigabe für einen einzigen
-   neuen Parliament-RC. Sie ist keine Fachfreigabe und liegt derzeit nicht vor.
+7. **Release:** zunächst die in #238/#240/#241 angeordnete Berlin/MV-
+   Fachremediation. Unabhängig davon bleibt ein neuer Parliament-RC ohne
+   spätere ausdrückliche Release-Freigabe gesperrt.
 
 Berlin benötigt aus diesem Auftrag keinen weiteren Fachinput. Für den
 verifizierten MV-12er-Teilkorpus ist ebenfalls kein Fachrest offen.

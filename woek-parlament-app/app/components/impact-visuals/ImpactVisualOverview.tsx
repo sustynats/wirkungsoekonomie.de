@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import type { ImpactVisualScenarioRecord } from "@/lib/impact-visuals/contracts";
 import { saxonyAnhaltImpactVisualRecord } from "@/lib/impact-visuals/records";
@@ -18,7 +19,7 @@ export function ImpactVisualOverview() {
     <header>
       <p className={styles.eyebrow}>Neue Erklärungsebene · fail closed</p>
       <h2 id="impact-visual-overview-title">Wirkungsbilder: Folgen erklären, politische Frames nicht illustrieren.</h2>
-      <p className="lead">Sechs fachlich und redaktionell freigegebene Programm-Szenarien visualisieren ausgewählte Wirkungspfade. Sie sind Ex-ante-Szenarien, keine Prognosen und keine zusätzliche Evidenz. Für alle sechs Case-Deep-Dives sind Fallauswahl, kanonische Analysebindung, Visual Brief, Aussagegrenzen und Alt-Text freigegeben; veröffentlicht werden die Case-Bilder erst nach Lieferung separater Bilddateien und finalem Bild-Signoff.</p>
+      <p className="lead">Zwölf fachlich und redaktionell freigegebene Wirkungsbilder sind gebunden: sechs analytische Programm-Zusammenfassungen und sechs getrennte Fallvertiefungen. Sie sind Ex-ante-Szenarien, keine Prognosen und keine zusätzliche Evidenz. Nichtbild-Folgen, Evidenz, Unsicherheit und die vollständige Fachanalyse bleiben führend.</p>
     </header>
     <div className={styles.overviewGrid}>
       {saxonyAnhaltElectionProgrammes.map((programme) => {
@@ -28,14 +29,14 @@ export function ImpactVisualOverview() {
         return <article key={programme.sourceKey}>
           <p>{programme.party}</p>
           {programmeRecord.editorial_review_status === "APPROVED_FOR_PUBLICATION" && programmeRecord.asset_path && programmeRecord.alt_text
-            ? <div className={styles.overviewImage}><img src={programmeRecord.asset_path} alt={programmeRecord.alt_text} width="1536" height="1024" loading="lazy" decoding="async" /></div>
+            ? <div className={styles.overviewImage} style={{ aspectRatio: `${programmeRecord.asset_metadata?.width ?? 1600} / ${programmeRecord.asset_metadata?.height ?? 1000}` }}><Image src={programmeRecord.asset_path} alt={programmeRecord.alt_text} width={programmeRecord.asset_metadata?.width ?? 1600} height={programmeRecord.asset_metadata?.height ?? 1000} loading="lazy" unoptimized /></div>
             : null}
-          <h3>2 von 2 Slots versioniert</h3>
+          <h3>2 von 2 Wirkungsbildern freigegeben</h3>
           <ul>
-            <li><span>Programm-Szenario</span><strong>{publicStatus(programmeRecord)}</strong></li>
-            <li><span>Case-Deep-Dive</span><strong>{publicStatus(caseRecord)}</strong></li>
+            <li><span>Programm v2</span><strong>{publicStatus(programmeRecord)}</strong></li>
+            <li><span>Fallvertiefung</span><strong>{publicStatus(caseRecord)}</strong></li>
           </ul>
-          <Link href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}#wirkungsbild-fallvertiefung`}>Fallbindung und verbleibende Asset-Gates öffnen →</Link>
+          <Link href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}#wirkungsbild`}>Programm- und Fall-Wirkungsbild öffnen →</Link>
         </article>;
       })}
     </div>

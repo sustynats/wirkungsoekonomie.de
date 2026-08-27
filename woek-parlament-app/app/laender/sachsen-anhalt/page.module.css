@@ -12,6 +12,10 @@
 .hero h1, .hero p { color: inherit; }
 .hero > div { max-width: 78rem; }
 .hero h1 { max-width: 25ch; }
+.hero :global(.button-primary) { color: var(--navy); border-color: var(--gold); background: var(--gold); }
+.hero :global(.button-primary:hover) { color: var(--navy); background: #e1bd6a; }
+.hero :global(.button-secondary) { color: var(--paper); border-color: rgb(255 255 255 / 68%); }
+.hero :global(.button-secondary:hover) { color: var(--paper); border-color: var(--paper); background: var(--navy-soft); }
 .hero aside { display: grid; gap: .65rem; padding: 1.1rem; border: 1px solid rgb(255 255 255 / 24%); border-radius: var(--r-card); background: rgb(255 255 255 / 8%); }
 .hero aside strong { font-size: 1.1rem; }
 .hero aside span { color: rgb(255 255 255 / 82%); font-size: .88rem; line-height: 1.45; }

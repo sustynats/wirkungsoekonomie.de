@@ -17,6 +17,7 @@ export type ImpactVisualGateName =
   | "ALL_SIX_ST_PROGRAMS_USE_SAME_VISUAL_CONTRACT"
   | "ALL_SIX_CASE_NON_ASSET_HANDOFFS_COMPLETE"
   | "CASE_ASSET_GATE_FAIL_CLOSED"
+  | "ALL_TWELVE_FINAL_IMAGE_SIGNOFFS_APPROVED"
   | "ALT_TEXT_AND_MARKER_A11Y"
   | "IMPACT_VISUAL_MOBILE_320_360_375_390_428"
   | "NO_HORIZONTAL_OVERFLOW"
@@ -94,8 +95,12 @@ function approvedAssetComplete(record: ImpactVisualScenarioRecord) {
     && record.alt_text !== null
     && record.asset_sha256 !== null
     && record.asset_metadata !== null
+    && record.final_image_signoff === "APPROVED"
+    && record.asset_metadata.asset_handoff_id === "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12"
+    && record.asset_metadata.asset_handoff_manifest_sha256 === "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3"
     && record.non_visual_effects_review_status === "REVIEWED_COMPLETE"
-    && record.source_fidelity_status === "PASS_APPROVED_ANALYSIS_ONLY";
+    && record.source_fidelity_status === "PASS_APPROVED_ANALYSIS_ONLY"
+    && record.missing_approved_inputs.length === 0;
 }
 
 export function evaluateImpactVisualGates({
@@ -139,6 +144,25 @@ export function evaluateImpactVisualGates({
   const overflowContract = stylesheet.includes("overflow: clip")
     && stylesheet.includes("min-width: 0")
     && stylesheet.includes("grid-template-columns: 1fr");
+  const programmeRecords = records.filter((record) => record.visual_scope === "PROGRAM_SCENARIO");
+  const caseRecords = records.filter((record) => record.visual_scope === "CASE_SCENARIO");
+  const allCasesFinal = caseRecords.length === expectedSourceKeys.length && caseRecords.every((record) =>
+    approvedAssetComplete(record)
+    && record.case_analysis_binding !== null
+    && record.case_analysis_binding.editorial_input_status.image_asset === "SUPPLIED"
+    && record.case_analysis_binding.editorial_input_status.final_image_signoff === "APPROVED"
+    && record.asset_path?.includes("-case-scenario-v1.webp")
+    && !record.asset_path.includes("-program-scenario-"),
+  );
+  const allProgrammesCorrected = programmeRecords.length === expectedSourceKeys.length && programmeRecords.every((record) =>
+    approvedAssetComplete(record)
+    && record.id.endsWith("-program-v2")
+    && record.asset_path?.endsWith("-program-scenario-v2.webp")
+    && record.supersedes_asset_path?.endsWith("-program-scenario-v1.webp")
+    && record.public_label === "Wirkungsbild · Programm",
+  );
+  const allFinalSignoffs = records.length === expectedSourceKeys.length * 2
+    && records.every((record) => record.final_image_signoff === "APPROVED" && record.missing_approved_inputs.length === 0);
 
   return [
     { gate: "IMPACT_VISUAL_DERIVES_FROM_APPROVED_ANALYSIS", pass: allRefsApproved && allApprovedOrClosed, detail: "Every selected/reference ID is in the existing Editorial-v2 approved set; incomplete records publish no asset." },
@@ -154,8 +178,9 @@ export function evaluateImpactVisualGates({
     { gate: "IMPACT_VISUAL_SOURCE_FIDELITY", pass: allRefsApproved && allVisibleProvenance && allApprovedOrClosed, detail: "Unknown or incomplete visual semantics fail closed." },
     { gate: "IMPACT_VISUAL_VERSION_PROVENANCE", pass: descriptorHash(descriptor) === descriptor.manifest_sha256 && records.every((record) => record.change_history.length > 0), detail: "Descriptor hash and per-record change history are complete." },
     { gate: "ALL_SIX_ST_PROGRAMS_USE_SAME_VISUAL_CONTRACT", pass: symmetricContract, detail: "Each of six programmes has exactly one programme and one case record." },
-    { gate: "ALL_SIX_CASE_NON_ASSET_HANDOFFS_COMPLETE", pass: records.filter((record) => record.visual_scope === "CASE_SCENARIO").length === expectedSourceKeys.length && records.filter((record) => record.visual_scope === "CASE_SCENARIO").every(preparedAwaitingAssetComplete), detail: "Every Case slot has the delegated selection, canonical binding, brief, non-visual review, marker decision and alt text; only the separate asset and final image sign-off remain." },
-    { gate: "CASE_ASSET_GATE_FAIL_CLOSED", pass: records.filter((record) => record.visual_scope === "CASE_SCENARIO").every((record) => record.asset_path === null && record.asset_sha256 === null && record.asset_metadata === null && record.visible_elements.length === 0), detail: "No Case image or marker is published before separate image bytes and final source-fidelity sign-off; Program assets are never used as fallback." },
+    { gate: "ALL_SIX_CASE_NON_ASSET_HANDOFFS_COMPLETE", pass: allCasesFinal, detail: "Every Case keeps its delegated selection, canonical analysis binding, non-visual effects, evidence, uncertainty, marker decision and alt text after the separate final asset was integrated." },
+    { gate: "CASE_ASSET_GATE_FAIL_CLOSED", pass: allCasesFinal && allProgrammesCorrected, detail: "Every Case uses its own signed-off asset; no Program image fallback exists, and superseded Program v1 assets are not current." },
+    { gate: "ALL_TWELVE_FINAL_IMAGE_SIGNOFFS_APPROVED", pass: allFinalSignoffs, detail: "Twelve of twelve records bind supplied bytes and FINAL_IMAGE_SIGNOFF=APPROVED with no remaining image input." },
     { gate: "ALT_TEXT_AND_MARKER_A11Y", pass: markerA11y && stylesheet.includes(":focus-visible") && stylesheet.includes("min-height: 44px"), detail: "Approved assets require alt text; any approved markers are unique, keyboard-accessible 44px targets. A reviewed NO_MARKER decision renders no inert marker." },
     { gate: "IMPACT_VISUAL_MOBILE_320_360_375_390_428", pass: responsiveContract, detail: "The shared component collapses to one column and retains accessible targets across the required mobile matrix." },
     { gate: "NO_HORIZONTAL_OVERFLOW", pass: overflowContract, detail: "The component establishes min-width, clipping and single-column mobile containment." },

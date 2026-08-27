@@ -204,31 +204,33 @@ const caseVisuals = visual.records.filter((record) => record.visual_scope === "C
 assert.equal(programmeVisuals.length, 6);
 assert.equal(caseVisuals.length, 6);
 assert.equal(programmeVisuals.filter((record) => record.editorial_review_status === "APPROVED_FOR_PUBLICATION").length, 6);
-assert.equal(caseVisuals.filter((record) => record.editorial_review_status === "PREPARED_AWAITING_ASSET").length, 6);
-for (const record of programmeVisuals) {
+assert.equal(caseVisuals.filter((record) => record.editorial_review_status === "APPROVED_FOR_PUBLICATION").length, 6);
+for (const record of visual.records) {
   assert.equal((record.visible_elements as unknown[]).length, 0, String(record.id));
   assert.ok((record.omitted_marker_candidates as unknown[]).length >= 1, String(record.id));
   assert.match(String(record.asset_sha256), /^[a-f0-9]{64}$/);
   assert.ok(record.asset_metadata);
+  assert.equal(record.final_image_signoff, "APPROVED", String(record.id));
+  assert.deepEqual(record.missing_approved_inputs, [], String(record.id));
   const assetPath = String(record.asset_path);
   assert.ok(assetPath.startsWith("/visuals/impact-scenarios/sachsen-anhalt/2026/"), String(record.id));
   assert.ok(statSync(path.join(cwd, "public", assetPath)).isFile(), String(record.id));
 }
+for (const record of programmeVisuals) {
+  assert.match(String(record.asset_path), /-program-scenario-v2\.webp$/, String(record.id));
+  assert.match(String(record.supersedes_asset_path), /-program-scenario-v1\.webp$/, String(record.id));
+}
 for (const record of caseVisuals) {
-  assert.equal(record.source_fidelity_status, "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET", String(record.id));
-  assert.equal(record.asset_path, null, String(record.id));
-  assert.equal(record.asset_sha256, null, String(record.id));
-  assert.equal(record.asset_metadata, null, String(record.id));
+  assert.equal(record.source_fidelity_status, "PASS_APPROVED_ANALYSIS_ONLY", String(record.id));
+  assert.match(String(record.asset_path), /-case-scenario-v1\.webp$/, String(record.id));
   assert.ok(record.visual_brief, String(record.id));
   assert.ok(record.alt_text, String(record.id));
   assert.ok(record.case_analysis_binding, String(record.id));
-  assert.deepEqual((record.missing_approved_inputs as Array<{ code: string }>).map((input) => input.code).sort(), ["FINAL_IMAGE_SIGNOFF", "IMAGE_ASSET"]);
+  const inputStatus = (record.case_analysis_binding as { editorial_input_status: { image_asset: string; final_image_signoff: string } }).editorial_input_status;
+  assert.equal(inputStatus.image_asset, "SUPPLIED", String(record.id));
+  assert.equal(inputStatus.final_image_signoff, "APPROVED", String(record.id));
 }
-assert.deepEqual(
-  new Set(caseVisuals.map((record) => record.asset_path).filter(Boolean)),
-  new Set(),
-  "Case slots must never reuse a Program asset",
-);
+assert.equal(new Set(visual.records.map((record) => record.asset_path)).size, 12, "Each visual slot must use its own asset");
 
 const scoreScan = [component, adapters, text("app/components/impact-visuals/ImpactVisualScenario.tsx")].join("\n");
 assert.doesNotMatch(scoreScan, /party[-_ ]?score|Parteienbewertung|Gesamtnote|Gesamtpunktzahl/i);
@@ -251,9 +253,9 @@ const gates = [
   ["TOP_PATHS_MAX_5", true],
   ["NONCOMPENSATION_VISIBLE_WHEN_EXPLICIT", true],
   ["COMMUNICATION_ANALYSIS_SEPARATE", true],
-  ["PROGRAMME_VISUALS_APPROVED_6_OF_6", true],
-  ["CASE_NON_ASSET_HANDOFFS_COMPLETE_6_OF_6", true],
-  ["CASE_ASSET_GATE_FAIL_CLOSED_6_OF_6", true],
+  ["PROGRAMME_VISUALS_V2_APPROVED_6_OF_6", true],
+  ["CASE_ASSETS_AND_SIGNOFF_APPROVED_6_OF_6", true],
+  ["IMPACT_VISUALS_FINAL_12_OF_12", true],
   ["NO_UNAPPROVED_MARKER_BINDING", true],
   ["RESPONSIVE_ACCESSIBILITY_CONTRACT", true],
   ["NO_FACH_SYNTHESIS_IN_ADAPTERS", true],

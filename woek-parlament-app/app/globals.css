@@ -692,6 +692,17 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .canonical-method-number { display: grid; width: 2.4rem; height: 2.4rem; place-items: center; border-radius: 50%; color: var(--paper); background: var(--navy); font-size: .78rem; font-weight: 850; letter-spacing: .04em; }
 .canonical-method-steps h3 { margin: .15rem 0 .45rem; font-size: clamp(1.08rem, 2vw, 1.32rem); }
 .canonical-method-steps p { margin: 0; color: var(--muted); line-height: 1.58; }
+#wirkungsrelevanz,
+#wirkungsrelevanz *,
+.canonical-method-steps li > div,
+.measurement-principles article { min-width: 0; }
+#wirkungsrelevanz h2,
+#wirkungsrelevanz h3,
+#wirkungsrelevanz p,
+#wirkungsrelevanz strong,
+#wirkungsrelevanz a,
+.canonical-method-steps h3,
+.measurement-principles h3 { overflow-wrap: anywhere; word-break: break-word; hyphens: auto; }
 .measurement-architecture { display: grid; gap: 1.25rem; margin-block: clamp(2rem, 5vw, 4rem); padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid var(--line); border-top: .25rem solid var(--gold); background: var(--paper); }
 .measurement-architecture > div:first-child { max-width: 54rem; }
 .measurement-architecture > div:first-child .eyebrow, .measurement-architecture > div:first-child h2 { margin-top: 0; }

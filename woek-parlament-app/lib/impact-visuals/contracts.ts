@@ -102,8 +102,8 @@ export const impactVisualCaseAnalysisBindingSchema = z.object({
     reviewed_visual_brief: z.literal("APPROVED"),
     alt_text_review: z.literal("APPROVED"),
     editorial_brief_signoff: z.literal("APPROVED"),
-    image_asset: z.literal("NOT_YET_SUPPLIED"),
-    final_image_signoff: z.literal("PENDING_ASSET"),
+    image_asset: z.enum(["NOT_YET_SUPPLIED", "SUPPLIED"]),
+    final_image_signoff: z.enum(["PENDING_ASSET", "APPROVED"]),
   }),
 });
 
@@ -116,6 +116,11 @@ export const impactVisualScenarioRecordSchema = z.object({
   knowledge_cutoff: z.string().date(),
   stage: z.enum(["EX_ANTE", "EX_POST"]),
   visual_scope: z.enum(["PROGRAM_SCENARIO", "CASE_SCENARIO"]),
+  public_label: z.enum(["Wirkungsbild · Programm", "Wirkungsbild · Fallvertiefung"]),
+  public_subtitle: z.enum([
+    "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
+    "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
+  ]),
   title: z.string().min(1),
   normalized_subject: z.string().min(1),
   source_statement_refs: z.array(z.string().min(1)),
@@ -147,6 +152,8 @@ export const impactVisualScenarioRecordSchema = z.object({
     prompt_sha256: z.string().regex(/^[a-f0-9]{64}$/),
   }).nullable(),
   asset_sha256: z.string().regex(/^[a-f0-9]{64}$/).nullable(),
+  final_image_signoff: z.enum(["PENDING_ASSET", "APPROVED"]),
+  supersedes_asset_path: z.string().startsWith("/visuals/impact-scenarios/").nullable(),
   asset_metadata: z.object({
     mime_type: z.literal("image/webp"),
     width: z.number().int().positive(),
@@ -154,6 +161,10 @@ export const impactVisualScenarioRecordSchema = z.object({
     byte_size: z.number().int().positive(),
     original_filename: z.string().min(1),
     original_sha256: z.string().regex(/^[a-f0-9]{64}$/),
+    asset_handoff_id: z.string().min(1),
+    asset_handoff_manifest_sha256: z.string().regex(/^[a-f0-9]{64}$/),
+    asset_handoff_archive_sha256: z.string().regex(/^[a-f0-9]{64}$/),
+    creation_provenance: z.string().min(1),
     optimization: z.object({
       format: z.literal("WEBP_LOSSY_Q90"),
       full_composition_preserved: z.literal(true),

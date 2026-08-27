@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { existsSync, readFileSync } from "node:fs";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import { saxonyAnhaltElectionProgrammes } from "../data/sachsen-anhalt-election-programmes";
@@ -27,7 +28,7 @@ test("all Sachsen-Anhalt impact visual governance gates pass", () => {
   assert.deepEqual(results.filter((result) => !result.pass), []);
 });
 
-test("six programmes keep approved visuals and six cases are prepared without publishing an asset", () => {
+test("all twelve final assets are approved, byte-bound and free of missing image inputs", () => {
   assert.equal(saxonyAnhaltImpactVisualDescriptor.records.length, 12);
   for (const sourceKey of expectedSourceKeys) {
     const records = saxonyAnhaltImpactVisualDescriptor.records.filter((record) => record.source_key === sourceKey);
@@ -35,25 +36,37 @@ test("six programmes keep approved visuals and six cases are prepared without pu
     const programme = records.find((record) => record.visual_scope === "PROGRAM_SCENARIO");
     const caseRecord = records.find((record) => record.visual_scope === "CASE_SCENARIO");
     assert.ok(programme && caseRecord);
-    assert.equal(programme.editorial_review_status, "APPROVED_FOR_PUBLICATION");
-    assert.equal(programme.source_fidelity_status, "PASS_APPROVED_ANALYSIS_ONLY");
-    assert.ok(programme.asset_path?.endsWith("-program-scenario-v1.webp"));
-    assert.ok(programme.alt_text?.endsWith("ist keine Prognose."));
-    assert.equal(programme.visible_elements.length, 0, "ambiguous visual candidates must remain NO_MARKER");
+    for (const record of records) {
+      assert.equal(record.editorial_review_status, "APPROVED_FOR_PUBLICATION");
+      assert.equal(record.source_fidelity_status, "PASS_APPROVED_ANALYSIS_ONLY");
+      assert.equal(record.final_image_signoff, "APPROVED");
+      assert.deepEqual(record.missing_approved_inputs, []);
+      assert.ok(record.asset_path);
+      assert.ok(record.asset_sha256);
+      assert.ok(record.asset_metadata);
+      assert.equal(record.asset_metadata.asset_handoff_id, "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12");
+      assert.equal(record.asset_metadata.asset_handoff_manifest_sha256, "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3");
+      const publicFile = fileURLToPath(new URL(`../public${record.asset_path}`, import.meta.url));
+      assert.equal(createHash("sha256").update(readFileSync(publicFile)).digest("hex"), record.asset_sha256);
+    }
+    assert.ok(programme.id.endsWith("-program-v2"));
+    assert.ok(programme.asset_path?.endsWith("-program-scenario-v2.webp"));
+    assert.ok(programme.supersedes_asset_path?.endsWith("-program-scenario-v1.webp"));
+    assert.equal(programme.public_label, "Wirkungsbild · Programm");
+    assert.equal(programme.visible_elements.length, 0, "approved composite path cards must not create spatial UI markers");
     assert.ok(programme.omitted_marker_candidates.length > 0);
     assert.equal(programme.non_visual_effects.length, 4);
-    assert.equal(caseRecord.editorial_review_status, "PREPARED_AWAITING_ASSET");
-    assert.equal(caseRecord.source_fidelity_status, "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET");
-    assert.equal(caseRecord.asset_path, null);
-    assert.equal(caseRecord.asset_sha256, null);
-    assert.equal(caseRecord.asset_metadata, null);
+    assert.ok(caseRecord.id.endsWith("-case-v1"));
+    assert.ok(caseRecord.asset_path?.endsWith("-case-scenario-v1.webp"));
+    assert.equal(caseRecord.supersedes_asset_path, null);
+    assert.equal(caseRecord.public_label, "Wirkungsbild · Fallvertiefung");
     assert.equal(caseRecord.visible_elements.length, 0);
     assert.ok(caseRecord.visual_brief);
-    assert.ok(caseRecord.alt_text);
     assert.ok(caseRecord.case_analysis_binding);
     assert.equal(caseRecord.non_visual_effects_review_status, "REVIEWED_COMPLETE");
     assert.ok(caseRecord.non_visual_effects.length > 0);
-    assert.deepEqual(caseRecord.missing_approved_inputs.map((input) => input.code).sort(), ["FINAL_IMAGE_SIGNOFF", "IMAGE_ASSET"]);
+    const oldProgrammeAsset = fileURLToPath(new URL(`../public${programme.supersedes_asset_path}`, import.meta.url));
+    assert.equal(existsSync(oldProgrammeAsset), false, "superseded v1 programme asset must not remain public");
   }
 });
 
@@ -79,8 +92,8 @@ test("case slots bind exactly the six delegated cases and no replacement", () =>
     assert.equal(record.case_analysis_binding?.selected_case_id, approvedCaseIds[sourceKey]);
     assert.equal(record.case_analysis_binding?.approval_provenance.approval_basis, "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26");
     assert.equal(record.case_analysis_binding?.approval_provenance.human_individual_record_review_claimed, false);
-    assert.equal(record.case_analysis_binding?.editorial_input_status.image_asset, "NOT_YET_SUPPLIED");
-    assert.equal(record.case_analysis_binding?.editorial_input_status.final_image_signoff, "PENDING_ASSET");
+    assert.equal(record.case_analysis_binding?.editorial_input_status.image_asset, "SUPPLIED");
+    assert.equal(record.case_analysis_binding?.editorial_input_status.final_image_signoff, "APPROVED");
   }
 });
 

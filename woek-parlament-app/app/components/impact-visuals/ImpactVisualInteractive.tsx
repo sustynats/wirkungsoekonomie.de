@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import type { ImpactVisualVisibleElement } from "@/lib/impact-visuals/contracts";
@@ -22,18 +23,24 @@ const evidenceLabels = {
 export function ImpactVisualInteractive({
   assetPath,
   altText,
+  assetWidth,
+  assetHeight,
   elements,
+  noMarkerText,
 }: {
   assetPath: string;
   altText: string;
+  assetWidth: number;
+  assetHeight: number;
   elements: ImpactVisualVisibleElement[];
+  noMarkerText: string;
 }) {
   const [activeId, setActiveId] = useState(elements[0]?.id ?? null);
   const active = elements.find((element) => element.id === activeId) ?? elements[0];
 
   return <div className={styles.interactive}>
-    <div className={styles.imageFrame}>
-      <img src={assetPath} alt={altText} width="1536" height="1024" loading="lazy" decoding="async" />
+    <div className={styles.imageFrame} style={{ aspectRatio: `${assetWidth} / ${assetHeight}` }}>
+      <Image src={assetPath} alt={altText} width={assetWidth} height={assetHeight} loading="lazy" unoptimized />
       {elements.map((element, index) => <button
         key={element.id}
         type="button"
@@ -47,11 +54,11 @@ export function ImpactVisualInteractive({
       >{index + 1}</button>)}
     </div>
 
-    <div className={styles.legend} aria-label="Was im Bild fachlich zugeordnet ist">
+    <div className={styles.legend} role="group" aria-label="Was im Bild fachlich zugeordnet ist">
       <h3>Was im Bild sichtbar ist</h3>
       {elements.length === 0 ? <div className={styles.noMarkers}>
-        <strong>Keine Marker gesetzt</strong>
-        <p>Sichtbare Bildelemente wurden nicht mit einer fachlichen Aussage überladen: Keines ließ sich eindeutig an einen der freigegebenen Wirkpfade binden. Maßgeblich bleiben die geprüften Befunde unter dem Bild.</p>
+        <strong>Keine räumlichen UI-Marker gesetzt</strong>
+        <p>{noMarkerText}</p>
       </div> : <ol>
         {elements.map((element, index) => <li id={`impact-visual-legend-${element.id}`} key={element.id} data-active={element.id === active?.id ? "true" : "false"}>
           <button type="button" onClick={() => setActiveId(element.id)} aria-pressed={element.id === active?.id}>
