@@ -553,6 +553,30 @@ def write_article(article: Article, header: str, footer: str) -> None:
     (ROOT / "blog" / f"{article.slug}.html").write_text(document, encoding="utf-8")
 
 
+def update_sitemap(articles: tuple[Article, ...]) -> None:
+    """Hält die kanonischen Journalrouten deterministisch in der Sitemap."""
+    sitemap_path = ROOT / "sitemap.xml"
+    if not sitemap_path.is_file():
+        raise FileNotFoundError(f"Sitemap fehlt: {sitemap_path}")
+
+    sitemap = sitemap_path.read_text(encoding="utf-8")
+    entries: list[str] = []
+    for article in articles:
+        canonical = f"https://wirkungsoekonomie.de/blog/{article.slug}.html"
+        escaped = re.escape(canonical)
+        sitemap = re.sub(
+            rf"\s*<url>\s*<loc>{escaped}</loc>\s*<lastmod>[^<]+</lastmod>\s*</url>",
+            "",
+            sitemap,
+        )
+        entries.append(
+            f"  <url><loc>{canonical}</loc><lastmod>{article.date_iso[:10]}</lastmod></url>"
+        )
+
+    sitemap = sitemap.replace("</urlset>", f"{'\n'.join(entries)}\n</urlset>")
+    sitemap_path.write_text(sitemap, encoding="utf-8")
+
+
 def main() -> None:
     for article in ARTICLES:
         if not article.source.is_file() or not article.image_source.is_file():
@@ -561,6 +585,8 @@ def main() -> None:
     for article in ARTICLES:
         write_article(article, header, footer)
         print(f"Erzeugt: blog/{article.slug}.html")
+    update_sitemap(ARTICLES)
+    print("Aktualisiert: sitemap.xml")
 
 
 if __name__ == "__main__":
