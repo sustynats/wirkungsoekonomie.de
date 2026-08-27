@@ -223,8 +223,8 @@
             "reviewed_visual_brief": { "const": "APPROVED" },
             "alt_text_review": { "const": "APPROVED" },
             "editorial_brief_signoff": { "const": "APPROVED" },
-            "image_asset": { "const": "NOT_YET_SUPPLIED" },
-            "final_image_signoff": { "const": "PENDING_ASSET" }
+            "image_asset": { "enum": ["NOT_YET_SUPPLIED", "SUPPLIED"] },
+            "final_image_signoff": { "enum": ["PENDING_ASSET", "APPROVED"] }
           }
         }
       }
@@ -243,7 +243,7 @@
     "assetMetadata": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["mime_type", "width", "height", "byte_size", "original_filename", "original_sha256", "optimization", "integrated_at"],
+      "required": ["mime_type", "width", "height", "byte_size", "original_filename", "original_sha256", "asset_handoff_id", "asset_handoff_manifest_sha256", "asset_handoff_archive_sha256", "creation_provenance", "optimization", "integrated_at"],
       "properties": {
         "mime_type": { "const": "image/webp" },
         "width": { "type": "integer", "minimum": 1 },
@@ -251,6 +251,10 @@
         "byte_size": { "type": "integer", "minimum": 1 },
         "original_filename": { "type": "string", "minLength": 1 },
         "original_sha256": { "$ref": "#/$defs/sha256" },
+        "asset_handoff_id": { "type": "string", "minLength": 1 },
+        "asset_handoff_manifest_sha256": { "$ref": "#/$defs/sha256" },
+        "asset_handoff_archive_sha256": { "$ref": "#/$defs/sha256" },
+        "creation_provenance": { "type": "string", "minLength": 1 },
         "optimization": {
           "type": "object",
           "additionalProperties": false,
@@ -288,7 +292,7 @@
     "record": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "object_type", "object_id", "source_key", "analysis_version", "knowledge_cutoff", "stage", "visual_scope", "title", "normalized_subject", "source_statement_refs", "selected_impact_path_ids", "eligible_approved_analysis_refs", "selection_rationale", "visible_elements", "case_analysis_binding", "non_visual_effects", "non_visual_effects_review_status", "omitted_material_effects", "omitted_marker_candidates", "system_boundary", "scenario_assumptions", "evidence_summary", "disclaimer", "asset_path", "alt_text", "visual_brief", "generator_metadata", "asset_sha256", "asset_metadata", "editorial_review_status", "source_fidelity_status", "missing_approved_inputs", "change_history"],
+      "required": ["id", "object_type", "object_id", "source_key", "analysis_version", "knowledge_cutoff", "stage", "visual_scope", "public_label", "public_subtitle", "title", "normalized_subject", "source_statement_refs", "selected_impact_path_ids", "eligible_approved_analysis_refs", "selection_rationale", "visible_elements", "case_analysis_binding", "non_visual_effects", "non_visual_effects_review_status", "omitted_material_effects", "omitted_marker_candidates", "system_boundary", "scenario_assumptions", "evidence_summary", "disclaimer", "asset_path", "alt_text", "visual_brief", "generator_metadata", "asset_sha256", "final_image_signoff", "supersedes_asset_path", "asset_metadata", "editorial_review_status", "source_fidelity_status", "missing_approved_inputs", "change_history"],
       "properties": {
         "id": { "type": "string", "minLength": 1 },
         "object_type": { "enum": ["PROGRAM", "COMMITMENT", "IMPACT_CASE", "GOVERNMENT_ACTION"] },
@@ -298,6 +302,8 @@
         "knowledge_cutoff": { "type": "string", "format": "date" },
         "stage": { "enum": ["EX_ANTE", "EX_POST"] },
         "visual_scope": { "enum": ["PROGRAM_SCENARIO", "CASE_SCENARIO"] },
+        "public_label": { "enum": ["Wirkungsbild · Programm", "Wirkungsbild · Fallvertiefung"] },
+        "public_subtitle": { "enum": ["Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.", "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose."] },
         "title": { "type": "string", "minLength": 1 },
         "normalized_subject": { "type": "string", "minLength": 1 },
         "source_statement_refs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
@@ -319,6 +325,8 @@
         "visual_brief": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/visualBrief" }] },
         "generator_metadata": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/generatorMetadata" }] },
         "asset_sha256": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/sha256" }] },
+        "final_image_signoff": { "enum": ["PENDING_ASSET", "APPROVED"] },
+        "supersedes_asset_path": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^/visuals/impact-scenarios/" }] },
         "asset_metadata": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/assetMetadata" }] },
         "editorial_review_status": { "enum": ["NO_APPROVED_VISUAL_SCENARIO", "PREPARED_AWAITING_ASSET", "APPROVED_FOR_PUBLICATION"] },
         "source_fidelity_status": { "enum": ["FAIL_CLOSED_NO_PUBLIC_ASSET", "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET", "PASS_APPROVED_ANALYSIS_ONLY"] },

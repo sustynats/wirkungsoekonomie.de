@@ -354,7 +354,7 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
       <a href="#gesamtbefund">Gesamtzusammenfassung</a>
       <a href="#wirkungsbild">Wirkungsbild</a>
       <a href="#schluesselpfade">Key Findings</a>
-      <a href="#wirkungsbild-fallvertiefung">Case-Deep-Dive</a>
+      <a href="#wirkungsbild-fallvertiefung">Fallvertiefung</a>
       <a href="#kommunikationswirkung">Kommunikationswirkung</a>
       <a href="#vollstaendige-wirkungsakte">Alle Einzelanalysen</a>
       <a href="#vollstaendiges-zusageregister">Originalzusagen</a>

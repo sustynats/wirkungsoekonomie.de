@@ -1,7 +1,7 @@
 {
   "schema_version": "woek-impact-first-route-coverage-1.0",
-  "generated_from_main": "186e208e9da860e1aa0391faca9c1feeae9ae3f9",
-  "audited_at": "2026-08-26",
+  "generated_from_main": "7e53b3a2d9f9a9e340e824b24b1e861439144959",
+  "audited_at": "2026-08-27",
   "rows": [
     {
       "route_family": "Parliament home and thematic discovery",
@@ -60,7 +60,7 @@
       "target": "A five-second comparison view with concrete state change, affected systems, direction, materiality and protection boundaries; full analysis one link away.",
       "canonical_data": "Terminal six-party release, delegated source-bound programme projections, Editorial v2 object bindings, communication Fach records and approved visual handoff.",
       "canonical_data_identified": true,
-      "gap": "None for the compact programme-impact function; six Case image assets remain a separate detail-route blocker.",
+      "gap": "None; programme v2 and separate Case assets are final 6/6 each, while the compact overview keeps only the programme summaries.",
       "implementation": "ProgrammeImpactCard + saxonyAnhaltExecutiveImpactSummary + ImpactVisualOverview.",
       "impact_first_implemented": true,
       "bottom_line": "REQUIRED_PASS_6_OF_6",
@@ -71,7 +71,7 @@
       "evidence": "REQUIRED_PASS_6_OF_6",
       "noncompensation": "REQUIRED_WHEN_APPLICABLE_PASS_6_OF_6",
       "communication_preview_if_applicable": "DETAIL_ROUTE",
-      "visual_if_available": "PASS_6_OF_6",
+      "visual_if_available": "PROGRAMME_V2_PASS_6_OF_6; CASE_DETAIL_PASS_6_OF_6",
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "impact-visual-scenarios + executive-impact browser matrix",
@@ -86,7 +86,7 @@
       "target": "Exact impact-first order with strongest approved findings first; programme image after evidence; communication and process metadata later.",
       "canonical_data": "Terminal source release, delegated source-bound programme projections, Editorial v2 bindings, communication-media Fach records and visual descriptor.",
       "canonical_data_identified": true,
-      "gap": "External blocker only for six separate Case-Scenario IMAGE_ASSET and FINAL_IMAGE_SIGNOFF inputs; programme analysis and six Program-Scenario images are complete.",
+      "gap": "None; PROGRAM_SCENARIO v2 and separate CASE_SCENARIO assets are final 6/6 each with byte hashes, canonical alt texts and approved sign-off.",
       "implementation": "saxonyAnhaltExecutiveImpactSummary + ExecutiveImpactSummaryView + ImpactVisualScenario.",
       "impact_first_implemented": true,
       "bottom_line": "REQUIRED_PASS_6_OF_6",
@@ -97,11 +97,11 @@
       "evidence": "REQUIRED_PASS_6_OF_6",
       "noncompensation": "REQUIRED_WHEN_APPLICABLE_PASS_6_OF_6",
       "communication_preview_if_applicable": "PASS_6_OF_6",
-      "visual_if_available": "PASS_6_OF_6_PROGRAM; CASE_FAIL_CLOSED_6_OF_6",
+      "visual_if_available": "PASS_6_OF_6_PROGRAM_V2; PASS_6_OF_6_CASE",
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "executive-impact + impact visuals + browser 320/360/375/390/428",
-      "status": "EXTERNAL_BLOCKER"
+      "status": "PASS"
     },
     {
       "route_family": "Curated state coalition agreements",

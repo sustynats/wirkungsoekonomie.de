@@ -1,4 +1,4 @@
-# Wirkungsbilder / ImpactVisualScenario v1
+# Wirkungsbilder / ImpactVisualScenario v2
 
 ## Status
 
@@ -6,14 +6,16 @@ Die öffentliche Bezeichnung lautet **Wirkungsbild**:
 
 > Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.
 
-Die v1-Architektur ist portalweit wiederverwendbar. Der Sachsen-Anhalt-Pilot
+Die schema-kompatible Architektur ist portalweit wiederverwendbar. Der Sachsen-Anhalt-Pilot
 enthält zwölf versionierte Records: je ein `PROGRAM_SCENARIO` und ein
 `CASE_SCENARIO` für CDU, SPD, BÜNDNIS 90/DIE GRÜNEN, Die Linke, BSW und AfD.
-Zum Stand 26.08.2026 sind die sechs `PROGRAM_SCENARIO`-Assets durch den
-owner-seitig gelieferten, fachlich-redaktionell signierten Handoff freigegeben
-und im Portal integriert. Die sechs `CASE_SCENARIO`-Records bleiben bewusst
-auf `NO_APPROVED_VISUAL_SCENARIO`, weil weder eine symmetrische Case-Auswahl
-noch Case-Assets freigegeben wurden.
+Zum Stand 27.08.2026 sind 12/12 Assets aus dem finalen Handoff
+`SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12` freigegeben und bytegebunden.
+`PROGRAM_SCENARIO` v2 ersetzt die sechs bisherigen, nicht hinreichend an die
+vier kanonischen Pfade gebundenen Programm-v1-Fotos. Alle sechs
+`CASE_SCENARIO`-Records verwenden getrennte Case-Dateien; `IMAGE_ASSET` und
+`FINAL_IMAGE_SIGNOFF` sind beseitigt. AfD bleibt fachlich
+`OPEN / NOT_ASSESSABLE` und verwendet weiterhin `NULL_MARKER_APPROVED`.
 
 ## Restore-first-Befund
 
@@ -32,8 +34,9 @@ Kanonische Fachbasis ist
 Sachsen-Anhalt-Golden-State-Commit
 `fefec75f09dc70db8de7880f93b4e8c6788e4461`. Programm-Slots übernehmen
 mechanisch und unverändert die jeweils vier bereits kuratierten
-Editorial-v2-Schlüsselpfad-IDs. Case-Slots dokumentieren dieselbe endliche
-Kandidatenmenge, wählen aber technisch keinen Fall aus.
+Editorial-v2-Schlüsselpfad-IDs. Case-Slots binden exakt die sechs bereits
+delegiert freigegebenen Einzelpfade; die Bildintegration ändert weder Auswahl
+noch Fachrecord.
 
 Damit gilt:
 
@@ -75,37 +78,38 @@ Fehlt ein zwingendes Feld, wird kein `<img>`/`next/image` gerendert. Eine späte
 Freigabe ersetzt den vorhandenen Record nicht still, sondern ergänzt seine
 `change_history` und erzeugt eine neue Assetversion.
 
-## Freigegebener 6/6-Assetstand
+## Freigegebener 12/12-Assetstand
 
-Alle sechs Dateien wurden aus den bereitgestellten PNG-Originalen mit
+Alle zwölf Dateien wurden aus den bereitgestellten PNG-Originalen mit
 `cwebp -q 90 -m 6 -metadata none` in WebP überführt. Der vollständige
 Bildausschnitt bleibt erhalten; die Descriptor-Records pinnen Originalname,
 Original-SHA, Ausgabemaße, Bytezahl und Asset-SHA.
 
-| Programm | Asset | SHA-256 |
+| Partei | Programm v2 · Public SHA-256 | Fallvertiefung · Public SHA-256 |
 | --- | --- | --- |
-| CDU | `cdu-program-scenario-v1.webp` | `37ddd1008a733172f58843f5424e6014b0f4623d140dd13f12c93781d9b5db3e` |
-| SPD | `spd-program-scenario-v1.webp` | `03fe2d3097b9e3ddb79fbc29a917eb2f891ec86b3185d8960fb24fb1e2fd730f` |
-| BÜNDNIS 90/DIE GRÜNEN | `gruene-program-scenario-v1.webp` | `7350d33b57190788e0a4e5d0910f2d7362a625fe84710ca6349834d85cddfe8b` |
-| Die Linke | `linke-program-scenario-v1.webp` | `74ba1d23f7452cc58dd54fa36addfcadbdac22f5078fe04aadcfd0948fbec823` |
-| BSW | `bsw-program-scenario-v1.webp` | `2ead313d310fee8256642ddda5b8c26a8f1dfaa7ea9238c8be012fd8c70724d1` |
-| AfD | `afd-program-scenario-v1.webp` | `ed6a73eeed917bf8501d5f351feaf01a206f75774d467be865675d8f1957b78a` |
+| CDU | `cdu-program-scenario-v2.webp` · `5baf10d136d280baee4febf2733249876e0abd5e6eab620dad38a4074ef3f917` | `cdu-case-scenario-v1.webp` · `563e6e442ec89f4bd54fcf11b391e524ff991bc6277781d98097284f85179bbf` |
+| SPD | `spd-program-scenario-v2.webp` · `59e69c1b07353c1edd7beff95eed209461cd227778a39115c264554444dfa18f` | `spd-case-scenario-v1.webp` · `067739482a4a0f7f6d40baeb928ccd8cc0a45cadca4904f3c880d86540cbf1b2` |
+| BÜNDNIS 90/DIE GRÜNEN | `gruene-program-scenario-v2.webp` · `6d2bbe6b8d7e0c64455c1e2564e24ac4c6f4144f824b9a37774595b6ffde2221` | `gruene-case-scenario-v1.webp` · `2a273b541db5a93e0eb0dffb60c2e82cd59a8af70e497eb772689bc87bebc6b0` |
+| Die Linke | `linke-program-scenario-v2.webp` · `48198176bf0b656d5cce381f21347e18090719cbcad59b9b278ba29704b66ee7` | `linke-case-scenario-v1.webp` · `7fdc7a9b2a45d535896a43a576125a535d74ce417c0aeb4e26c586816a3088c6` |
+| BSW | `bsw-program-scenario-v2.webp` · `85c88775667537c6a32095370bfde1b148baa4aedebd1b8378ca87f370051cce` | `bsw-case-scenario-v1.webp` · `129370172f869eaa362f1467748813e6d2078f810b25c4a0965739108e6fe446` |
+| AfD | `afd-program-scenario-v2.webp` · `eaaf7725d624a9c9357c0c9517c8f7327b2a1d610439d2638f0eb3f6dbdbc101` | `afd-case-scenario-v1.webp` · `1a6dc5da1bcc7f9aba49a22670687f069ba3d44d488ac4a7e33db9604ff2ce61` |
 
-Der freigegebene Handoff ist als
-`SACHSEN-ANHALT-WIRKUNGSBILDER-6-6-CODEX-HANDOFF-2026-08-26`, Version
-`1.0`, SHA-256
-`3840250aa566a04044d051b191ab89c672d4116a83ce330b753cf448e5066d29`
-gebunden. Die sechs Alt-Texte werden daraus unverändert übernommen.
+Der finale Handoff ist als `SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12`
+gebunden. Manifest-SHA-256:
+`ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3`;
+Archiv-SHA-256:
+`c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85`.
+Alle zwölf kanonischen Alt-Texte und Original-PNG-Hashes sind im Descriptor
+gepinnt. Die sechs alten Programm-v1-WebPs sind nicht mehr im Public-Baum.
 
 ## Marker-Entscheidung
 
-Die sichtbaren Motive der sechs Bilder lassen sich nicht jeweils eindeutig
-einer der vier bereits freigegebenen Editorial-v2-Wirkpfad-IDs zuordnen.
-Deshalb ist die korrekte öffentliche Darstellung `NO_MARKER`: kein
-Wirkungspfad wird aus einem sichtbaren Motiv abgeleitet. Pro Record benennt
-`omitted_marker_candidates` den geprüften, nicht belastbar bindbaren
-Motivbereich. Das Bild bleibt Illustration eines freigegebenen
-Ex-ante-Szenarios und erzeugt keine neue Fachinformation.
+Die Programm-v2-Composites binden ihre vier analytischen Pfadkarten exakt an
+die unveränderten Editorial-v2-IDs. Aus dem Fotoanker werden dennoch keine
+räumlichen UI-Marker abgeleitet. Die Case-Bilder zeigen ausschließlich den
+freigegebenen Struktur-/Kapazitäts-/Verfahrensanker; weitergehende Outcomes
+bleiben textlich. AfD hat explizit `NULL_MARKER_APPROVED`. Damit erzeugt kein
+Bild eine neue Fachinformation.
 
 ## Neutraler visueller Vertrag
 

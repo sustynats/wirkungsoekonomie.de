@@ -32,8 +32,8 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
     && record.alt_text !== null;
   const preparedAwaitingAsset = record.editorial_review_status === "PREPARED_AWAITING_ASSET"
     && record.case_analysis_binding !== null;
-  const scopeLabel = record.visual_scope === "PROGRAM_SCENARIO" ? "Programm-Szenario" : "Case-Deep-Dive";
   const knowledgeDate = new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "Europe/Berlin" }).format(new Date(`${record.knowledge_cutoff}T12:00:00+02:00`));
+  const noMarkerText = record.omitted_marker_candidates.join(" ") || "Die fachliche Zuordnung bleibt vollständig in der geprüften Textanalyse; aus dem Bild wird kein zusätzlicher Wirkpfad abgeleitet.";
 
   return <section
     className={styles.module}
@@ -44,18 +44,18 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
   >
     <header className={styles.header}>
       <div>
-        <p className={styles.eyebrow}>Wirkungsbild · {scopeLabel}</p>
+        <p className={styles.eyebrow}>{record.public_label}</p>
         <Heading id={`${record.id}-title`}>{record.title}</Heading>
-        <p className={styles.disclaimer}>{record.disclaimer}</p>
+        <p className={styles.disclaimer}>{record.public_subtitle}</p>
       </div>
       <dl className={styles.statusLine}>
         <div><dt>Phase</dt><dd>Ex ante</dd></div>
         <div><dt>Wissensstand</dt><dd>{knowledgeDate}</dd></div>
-        <div><dt>Bildstatus</dt><dd>{completeAsset ? "fachlich freigegeben" : preparedAwaitingAsset ? "Brief freigegeben · Bilddatei fehlt" : "noch nicht freigegeben"}</dd></div>
+        <div><dt>Bildstatus</dt><dd>{completeAsset ? "fachlich-redaktionell freigegeben" : preparedAwaitingAsset ? "Brief freigegeben · Bilddatei fehlt" : "noch nicht freigegeben"}</dd></div>
       </dl>
     </header>
 
-    {preparedAwaitingAsset ? <article className={styles.caseFinding} aria-label="Freigegebener WÖk-Fallbefund">
+    {record.case_analysis_binding ? <article className={styles.caseFinding} aria-label="Freigegebener WÖk-Fallbefund">
       <p className={styles.eyebrow}>Konkreter WÖk-Fallbefund</p>
       <h3>{record.case_analysis_binding!.key_finding}</h3>
       <p>{record.case_analysis_binding!.impact_core_summary}</p>
@@ -72,7 +72,14 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
       <li><span>3</span><div><strong>Folgen 1.–3. Ordnung</strong><small>nur quellengebundene, geprüfte Wirkungspfade</small></div></li>
     </ol>
 
-    {completeAsset ? <ImpactVisualInteractive assetPath={record.asset_path!} altText={record.alt_text!} elements={record.visible_elements} /> : <div className={styles.failClosed} role="status">
+    {completeAsset ? <ImpactVisualInteractive
+      assetPath={record.asset_path!}
+      altText={record.alt_text!}
+      assetWidth={record.asset_metadata!.width}
+      assetHeight={record.asset_metadata!.height}
+      elements={record.visible_elements}
+      noMarkerText={noMarkerText}
+    /> : <div className={styles.failClosed} role="status">
       <span aria-hidden="true">◌</span>
       <div>
         <strong>{preparedAwaitingAsset ? "Fall und Visual Brief freigegeben · Bilddatei ausstehend" : "Noch kein freigegebenes Wirkungsszenario"}</strong>
@@ -118,7 +125,12 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
           <div><dt>Nichtkompensation</dt><dd>{record.case_analysis_binding.noncompensation.length > 0 ? record.case_analysis_binding.noncompensation.map((boundary) => boundary.concern).join("; ") : "keine kanonische Grenze ausgewiesen"}</dd></div>
         </> : null}
         <div><dt>Asset</dt><dd>{record.asset_sha256 ?? "kein Asset freigegeben"}</dd></div>
-        {record.asset_metadata ? <div><dt>Bilddatei</dt><dd>{record.asset_metadata.width} × {record.asset_metadata.height} px · {record.asset_metadata.mime_type} · vollständige Komposition erhalten</dd></div> : null}
+        <div><dt>Finaler Bild-Signoff</dt><dd>{record.final_image_signoff}</dd></div>
+        {record.asset_metadata ? <>
+          <div><dt>Bilddatei</dt><dd>{record.asset_metadata.width} × {record.asset_metadata.height} px · {record.asset_metadata.mime_type} · vollständige Komposition erhalten</dd></div>
+          <div><dt>Bildprovenienz</dt><dd>{record.asset_metadata.creation_provenance}</dd></div>
+          <div><dt>Asset-Handoff</dt><dd>{record.asset_metadata.asset_handoff_id}</dd></div>
+        </> : null}
         {record.omitted_marker_candidates.length > 0 ? <div><dt>Bewusst ohne Marker</dt><dd>{record.omitted_marker_candidates.join("; ")}</dd></div> : null}
       </dl>
       <p><Link href="/methodik#wirkungsbilder">Methode, Frame-Schutz und Korrekturweg lesen →</Link></p>
