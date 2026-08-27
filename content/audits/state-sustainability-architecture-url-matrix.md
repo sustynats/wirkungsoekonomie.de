@@ -2,7 +2,7 @@
 
 - Sitemap routes: **4195**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **12070**
+- Extra tracked source HTML not in sitemap: **12071**
 - Routes with non-default #253 action: **3568**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **240**
 
@@ -3828,8 +3828,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1023**
-- Combined matrix items (routes + extra HTML + support): **17288**
+- Tracked support text files inventoried: **1025**
+- Combined matrix items (routes + extra HTML + support): **17291**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4222,6 +4222,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/import/import-sondervermoegen-svik-journal.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/import/import-stille-neubewertung-journal.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/import/import-stranded-germany-journal.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
+| `scripts/import/import-tv-duell-wirkungsoekonomische-systemanalyse.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, alternativen |
 | `scripts/import/import-verbrenner-risikomanagement-journal.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/import/import-wahlomat-methodenkritik-journal.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/import/import-wahlomat-sachsen-anhalt-journal.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
@@ -4323,7 +4324,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17289**
+- Combined reviewed items: **17292**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
