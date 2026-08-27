@@ -1,9 +1,9 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4196**
+- Sitemap routes: **4212**
 - Sitemap routes without directly resolved source HTML: **0**
 - Extra tracked source HTML not in sitemap: **12070**
-- Routes with non-default #253 action: **3568**
+- Routes with non-default #253 action: **3584**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **240**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
@@ -1509,6 +1509,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/reservekraftwerk/ | `begriffe/reservekraftwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/residual-emissions/ | `begriffe/residual-emissions/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/residuallast/ | `begriffe/residuallast/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
+| https://wirkungsoekonomie.de/begriffe/resignifikation/ | `begriffe/resignifikation/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/resilienz/ | `begriffe/resilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/resilienzarchitektur/ | `begriffe/resilienzarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/resilienzmanagement/ | `begriffe/resilienzmanagement/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
@@ -2294,6 +2295,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-1ca95602d44c/ | `quellenarchiv/wok-g-1ca95602d44c/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-1d3e8037135f/ | `quellenarchiv/wok-g-1d3e8037135f/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-1e0128063893/ | `quellenarchiv/wok-g-1e0128063893/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-1f12bae8727c/ | `quellenarchiv/wok-g-1f12bae8727c/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-1f1c800a9abb/ | `quellenarchiv/wok-g-1f1c800a9abb/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-1f830447d62a/ | `quellenarchiv/wok-g-1f830447d62a/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2086d6042d9e/ | `quellenarchiv/wok-g-2086d6042d9e/index.html` | ADD_SOURCE_LINKS | — |
@@ -2314,6 +2316,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2904309e5431/ | `quellenarchiv/wok-g-2904309e5431/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2907c862c38c/ | `quellenarchiv/wok-g-2907c862c38c/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2c454a5225c7/ | `quellenarchiv/wok-g-2c454a5225c7/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-2e0e9070a926/ | `quellenarchiv/wok-g-2e0e9070a926/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2e1669f619cd/ | `quellenarchiv/wok-g-2e1669f619cd/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-3058367e6f81/ | `quellenarchiv/wok-g-3058367e6f81/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-333439f9e599/ | `quellenarchiv/wok-g-333439f9e599/index.html` | ADD_SOURCE_LINKS | — |
@@ -2361,6 +2364,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5dad38014a73/ | `quellenarchiv/wok-g-5dad38014a73/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5f3db7ef4c8a/ | `quellenarchiv/wok-g-5f3db7ef4c8a/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5f9a4a116888/ | `quellenarchiv/wok-g-5f9a4a116888/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-606d14b40514/ | `quellenarchiv/wok-g-606d14b40514/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-619308e9bb71/ | `quellenarchiv/wok-g-619308e9bb71/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-61e066969eaa/ | `quellenarchiv/wok-g-61e066969eaa/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-640752bfc4ce/ | `quellenarchiv/wok-g-640752bfc4ce/index.html` | ADD_SOURCE_LINKS | — |
@@ -2392,6 +2396,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-7f14cc87cbda/ | `quellenarchiv/wok-g-7f14cc87cbda/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-812ae525d45f/ | `quellenarchiv/wok-g-812ae525d45f/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-81833f73c49f/ | `quellenarchiv/wok-g-81833f73c49f/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-818bd6024580/ | `quellenarchiv/wok-g-818bd6024580/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-81aa4ab8c674/ | `quellenarchiv/wok-g-81aa4ab8c674/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-81d56234c08e/ | `quellenarchiv/wok-g-81d56234c08e/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-82b11ab68ffe/ | `quellenarchiv/wok-g-82b11ab68ffe/index.html` | ADD_SOURCE_LINKS | — |
@@ -3565,6 +3570,17 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-1095/ | `quellenarchiv/wok-q-1095/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-1096/ | `quellenarchiv/wok-q-1096/index.html` | ADD_SOURCE_LINKS | evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-1097/ | `quellenarchiv/wok-q-1097/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1100/ | `quellenarchiv/wok-q-1100/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1101/ | `quellenarchiv/wok-q-1101/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1102/ | `quellenarchiv/wok-q-1102/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1103/ | `quellenarchiv/wok-q-1103/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1104/ | `quellenarchiv/wok-q-1104/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1105/ | `quellenarchiv/wok-q-1105/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1106/ | `quellenarchiv/wok-q-1106/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1107/ | `quellenarchiv/wok-q-1107/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1108/ | `quellenarchiv/wok-q-1108/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1109/ | `quellenarchiv/wok-q-1109/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1110/ | `quellenarchiv/wok-q-1110/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9029/ | `quellenarchiv/wok-q-9029/index.html` | ADD_SOURCE_LINKS | folgenabschaetzung, dns, alternativen |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9030/ | `quellenarchiv/wok-q-9030/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9031/ | `quellenarchiv/wok-q-9031/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns |
@@ -3829,7 +3845,7 @@ Signals are review candidates, not automatic errors.
 ## Recursive non-HTML publication/support surfaces
 
 - Tracked support text files inventoried: **1025**
-- Combined matrix items (routes + extra HTML + support): **17291**
+- Combined matrix items (routes + extra HTML + support): **17307**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4324,7 +4340,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17292**
+- Combined reviewed items: **17308**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
