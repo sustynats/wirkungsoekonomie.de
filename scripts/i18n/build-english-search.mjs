@@ -319,7 +319,7 @@ const html = `<!doctype html>
       </div>
     </footer>
     <script src="../../assets/js/main.js?v=20260704-en-search"></script>
-    <script src="../../assets/js/search.js?v=20260704-en-search"></script>
+    <script src="../../assets/js/search.js?v=20260827-live-index"></script>
   </body>
 </html>
 `;

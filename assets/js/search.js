@@ -17,7 +17,7 @@
   const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
   const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
   const searchPageHref = siteLocale === "en" ? "/en/search/" : "/suche.html";
-  const searchDataVersion = "20260725-submit-search";
+  const searchDataVersion = "20260827-live-index";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
@@ -1263,10 +1263,10 @@
     if (state.loading) return state.loading;
     state.loading = (async () => {
       const [index, dictionary, associations, entrypoints] = await Promise.all([
-        fetch(dataUrl("search-index.json")).then((response) => response.json()),
-        fetch(dataUrl("search-dictionary.json")).then((response) => response.json()),
-        fetch(dataUrl("search-associations.json")).then((response) => response.json()),
-        fetch(dataUrl("search-curated-entrypoints.json")).then((response) => response.json()),
+        fetch(dataUrl("search-index.json"), { cache: "no-store" }).then((response) => response.json()),
+        fetch(dataUrl("search-dictionary.json"), { cache: "no-store" }).then((response) => response.json()),
+        fetch(dataUrl("search-associations.json"), { cache: "no-store" }).then((response) => response.json()),
+        fetch(dataUrl("search-curated-entrypoints.json"), { cache: "no-store" }).then((response) => response.json()),
       ]);
       state.index = index.map((entry) => ({
         ...entry,

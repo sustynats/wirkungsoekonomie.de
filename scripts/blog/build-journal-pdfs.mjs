@@ -150,6 +150,7 @@ function printStyles() {
     @page { size: A4; margin: 17mm 16mm 19mm; }
     html, body { margin: 0; padding: 0; background: #fff; color: #20242e; }
     body { font-family: "Source Serif 4", Georgia, "Times New Roman", serif; font-size: 10.4pt; line-height: 1.58; }
+    body.pdf-longform { font-size: 10.2pt; line-height: 1.56; }
     .pdf-cover { min-height: 252mm; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; padding: 20mm 18mm 18mm; background: #0B1020; color: #F6F1E8; break-after: page; page-break-after: always; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .pdf-brand { display: flex; align-items: center; gap: 8pt; color: #D5AD55; font-family: Arial, sans-serif; font-size: 8.5pt; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
     .pdf-mark { width: 14pt; height: 14pt; border: 1.8pt solid #D5AD55; border-radius: 50%; position: relative; flex: none; }
@@ -201,6 +202,7 @@ function renderPdfHtml(entry, sourceHtml) {
   const articleDirectory = path.posix.dirname(normalizeJournalUrl(entry.url));
   const baseUrl = `https://wirkungsoekonomie.de${articleDirectory.endsWith("/") ? articleDirectory : `${articleDirectory}/`}`;
   const hasFigures = /<figure\b|<img\b/i.test(articleContent);
+  const bodyClass = stripTags(content).length > 18_000 ? "pdf-longform" : "";
 
   return `<!doctype html>
 <html lang="de">
@@ -210,7 +212,7 @@ function renderPdfHtml(entry, sourceHtml) {
     <title>${escapeHtml(title)} - Journal der Wirkungsökonomie</title>
     <style>${printStyles()}</style>
   </head>
-  <body>
+  <body class="${bodyClass}">
     <section class="pdf-cover">
       <div>
         <div class="pdf-brand"><span class="pdf-mark" aria-hidden="true"></span>Wirkungsökonomie · Journal</div>
