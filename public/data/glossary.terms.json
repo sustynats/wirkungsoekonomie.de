@@ -57,7 +57,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "§ 7 Bundeshaushaltsordnung (BHO)",
-      "priority": 2214,
+      "priority": 2225,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -3426,28 +3426,8 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "agenda-setting",
       "termId": "agenda-setting",
-      "label": "Agenda-Setting",
       "canonicalLabel": "Agenda-Setting",
-      "slug": "agenda-setting",
-      "aliases": [
-        "Agenda-Setting"
-      ],
-      "synonyms": [
-        "Agenda-Setting"
-      ],
-      "shortDefinition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
-      "short_definition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
-      "definition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
-      "longDefinition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.\n\nWas auf die Agenda kommt, wird politisch bearbeitbar; was unsichtbar bleibt, bleibt wirkungslos oder wird verdrängt.",
-      "long_definition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
-      "woekRelation": "Was auf die Agenda kommt, wird politisch bearbeitbar; was unsichtbar bleibt, bleibt wirkungslos oder wird verdrängt.",
-      "woek_einordnung": "Was auf die Agenda kommt, wird politisch bearbeitbar; was unsichtbar bleibt, bleibt wirkungslos oder wird verdrängt.",
-      "examples": [
-        "Dauerberichterstattung über Kriminalität macht Sicherheit zur Hauptfrage.",
-        "Fehlende Berichterstattung über Pflege verhindert Reformdruck."
-      ],
       "relatedTerms": [
         "framing",
         "thinktank",
@@ -3460,22 +3440,39 @@
         "politischer-vorraum",
         "salienz",
         "priming",
-        "oeffentlichkeit-als-wirkungsraum"
+        "oeffentlichkeit-als-wirkungsraum",
+        "resignifikation"
       ],
-      "related_terms": [
-        "framing",
-        "thinktank",
-        "policy-netzwerk",
-        "aufmerksamkeit",
-        "policy-entrepreneurship",
-        "astroturfing",
-        "public-affairs",
-        "propaganda",
-        "politischer-vorraum",
-        "salienz",
-        "priming",
-        "oeffentlichkeit-als-wirkungsraum"
+      "id": "agenda-setting",
+      "label": "Agenda-Setting",
+      "slug": "agenda-setting",
+      "aliases": [
+        "Agenda-Setting"
       ],
+      "synonyms": [
+        "Agenda-Setting"
+      ],
+      "status": "methodenbegriff",
+      "version": "1.0",
+      "source": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
+      "shortDefinition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
+      "hoverDefinition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
+      "definition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
+      "longDefinition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.\n\nWas auf die Agenda kommt, wird politisch bearbeitbar; was unsichtbar bleibt, bleibt wirkungslos oder wird verdrängt.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
+      "woekRelation": "Was auf die Agenda kommt, wird politisch bearbeitbar; was unsichtbar bleibt, bleibt wirkungslos oder wird verdrängt.",
+      "reviewStatus": "approved",
+      "statusNote": "",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "pageUrl": "/begriffe/agenda-setting/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
+      "sourceSection": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
+      "glossaryOrderKey": "Agenda-Setting",
+      "priority": 15,
       "officialSources": [
         "OECD Recommendation on Transparency and Integrity in Lobbying and Influence|/quellenarchiv/wok-q-0061/",
         "OECD Policy Brief Lobbying|/quellenarchiv/wok-q-0405/",
@@ -3493,6 +3490,7 @@
         "Bundeszentrale für politische Bildung: Konservatismus|/quellenarchiv/wok-q-0387/",
         "Interne WÖk-Quelle: Politik als Wirkungsraum, Parteien und Programme, Lobbyismus und Machtkonzentration|/quellenarchiv/wok-g-f25439efcf81/"
       ],
+      "curatedSources": [],
       "sourceLinks": [
         {
           "source_type": "institutional",
@@ -3594,6 +3592,37 @@
         },
         "Interne WÖk-Quelle: Politik als Wirkungsraum, Parteien und Programme, Lobbyismus und Machtkonzentration|/quellenarchiv/wok-g-f25439efcf81/"
       ],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [
+        "Nicht verwechseln mit Zensur. Agenda-Setting kann durch journalistische Auswahl, Plattformlogik, Politik oder Kampagnen entstehen."
+      ],
+      "deprecatedUsage": [],
+      "categories": [
+        "akteure-einfluss-ideologien-und-demokratische-wirkungsraeume",
+        "grundbegriff"
+      ],
+      "short_definition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
+      "long_definition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
+      "woek_einordnung": "Was auf die Agenda kommt, wird politisch bearbeitbar; was unsichtbar bleibt, bleibt wirkungslos oder wird verdrängt.",
+      "examples": [
+        "Dauerberichterstattung über Kriminalität macht Sicherheit zur Hauptfrage.",
+        "Fehlende Berichterstattung über Pflege verhindert Reformdruck."
+      ],
+      "related_terms": [
+        "framing",
+        "thinktank",
+        "policy-netzwerk",
+        "aufmerksamkeit",
+        "policy-entrepreneurship",
+        "astroturfing",
+        "public-affairs",
+        "propaganda",
+        "politischer-vorraum",
+        "salienz",
+        "priming",
+        "oeffentlichkeit-als-wirkungsraum",
+        "resignifikation"
+      ],
       "source_links": [
         {
           "source_type": "institutional",
@@ -3688,9 +3717,6 @@
       ],
       "internalLinks": [],
       "internal_links": [],
-      "categories": [
-        "akteure-einfluss-ideologien-und-demokratische-wirkungsraeume"
-      ],
       "tags": [
         "Akteure",
         "Einfluss",
@@ -3700,12 +3726,10 @@
         "Demokratie",
         "Grundgesetz"
       ],
-      "category": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
       "conceptStatus": "Methodenbegriff",
       "concept_status": "Methodenbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "methodenbegriff",
       "type": "Methodenbegriff",
       "begriffstyp": "Methodenbegriff",
       "theme": [
@@ -3801,31 +3825,15 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "version": "1.0",
       "lastReviewed": "2026-05-29",
       "last_reviewed": "2026-05-29",
       "lastUpdated": "2026-06-13",
       "updatedAt": "2026-06-13",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
-      "hoverDefinition": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.",
-      "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
-      "pageUrl": "/begriffe/agenda-setting/",
       "metaTitle": "Agenda-Setting | Glossar der Wirkungsökonomie",
       "metaDescription": "Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten. Wirkungsökonomisch eingeordnet als Methodenbegriff.",
-      "doNotConfuseWith": [
-        "Nicht verwechseln mit Zensur. Agenda-Setting kann durch journalistische Auswahl, Plattformlogik, Politik oder Kampagnen entstehen."
-      ],
-      "relatedDocuments": [],
       "preferredUsage": "",
-      "deprecatedUsage": [],
-      "glossaryOrderKey": "Agenda-Setting",
       "deepGlossarySections": [
         {
           "title": "Psychologische Effekte, Biases und Diskursverschiebung",
@@ -3860,11 +3868,6 @@
       "sourceNotes": [
         "WÖk-Glossar psychologische Effekte, Biases und Diskursverschiebung v0.1; MCS, WÖK-SM"
       ],
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
-      "dataStandardsGroup": "",
-      "priority": 15,
-      "curatedSources": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -4649,7 +4652,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2173,
+      "priority": 2184,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -5916,7 +5919,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Allmende",
-      "priority": 2234,
+      "priority": 2245,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -5990,7 +5993,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Allmendedilemma",
-      "priority": 2235,
+      "priority": 2246,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -11446,7 +11449,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Anticommons",
-      "priority": 2246,
+      "priority": 2257,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -15202,7 +15205,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Assurance Game",
-      "priority": 2251,
+      "priority": 2262,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -17460,7 +17463,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2181,
+      "priority": 2192,
       "officialSources": [
         "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-40a9d42ab436/"
       ],
@@ -22256,7 +22259,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2197,
+      "priority": 2208,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -27083,7 +27086,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Bedingte Kooperation",
-      "priority": 2262,
+      "priority": 2273,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -40607,7 +40610,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Capture",
-      "priority": 2252,
+      "priority": 2263,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -44542,7 +44545,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Chicken Game",
-      "priority": 2260,
+      "priority": 2271,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -48434,7 +48437,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2198,
+      "priority": 2209,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -63315,81 +63318,8 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "desinformation",
       "termId": "desinformation",
-      "label": "Desinformation",
       "canonicalLabel": "Desinformation",
-      "slug": "desinformation",
-      "pageUrl": "/begriffe/desinformation/",
-      "classicGlossary": true,
-      "showInCategoryGlossary": true,
-      "firstApprovedIn": "2026.1",
-      "aliases": [
-        "Desinformation",
-        "gezielte Falschinformation",
-        "Desinformation und hybride Einflussnahme",
-        "Fake News",
-        "koordinierte Täuschung",
-        "Informationsmanipulation",
-        "Desinformation als Wirkungsrisiko",
-        "Angriff auf Rückkopplung",
-        "Disinformation",
-        "Informationskrieg"
-      ],
-      "synonyms": [
-        "Desinformation",
-        "gezielte Falschinformation",
-        "Desinformation und hybride Einflussnahme",
-        "Fake News",
-        "koordinierte Täuschung",
-        "Informationsmanipulation",
-        "Desinformation als Wirkungsrisiko",
-        "Angriff auf Rückkopplung",
-        "Disinformation",
-        "Informationskrieg"
-      ],
-      "category": "Medien, Demokratie & Wirkungsrisiko",
-      "categories": [
-        "Medien, Demokratie & Wirkungsrisiko",
-        "Medien-, Öffentlichkeits- & Plattformlogik",
-        "daten-standards-regularien"
-      ],
-      "type": "Anschlussbegriff / WÖk-Präzisierung",
-      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierung",
-      "status": "woek-praegungsbegriff",
-      "conceptStatus": "professionalisiert",
-      "concept_status": "professionalisiert",
-      "publicationStatus": "published",
-      "publication_status": "published",
-      "version": "1.1",
-      "source": "Glossar-Pack 016",
-      "sourceDocument": "Glossar-Pack 016: Medien-, Öffentlichkeits- & Plattformlogik",
-      "sourceSection": "Medien, Demokratie & Wirkungsrisiko",
-      "reviewStatus": "redaktionell zu prüfen",
-      "lastUpdated": "2026-06-01",
-      "updatedAt": "2026-06-01",
-      "shortDefinition": "Desinformation ist gezielt irreführende oder falsche Information, die Vertrauen, Orientierung, demokratische Rückkopplung oder gesellschaftliche Resilienz schwächen kann.",
-      "short_definition": "Desinformation ist gezielt irreführende oder falsche Information, die Vertrauen, Orientierung, demokratische Rückkopplung oder gesellschaftliche Resilienz schwächen kann.",
-      "hoverDefinition": "Desinformation ist gezielt irreführende oder falsche Information, die Vertrauen, Orientierung, demokratische Rückkopplung oder gesellschaftliche Resilienz schwächen kann.",
-      "definition": "Desinformation bezeichnet die absichtliche Erstellung, Verbreitung oder Verstärkung falscher, irreführender oder manipulativer Informationen, um Wahrnehmung, Verhalten, Vertrauen, Institutionen, Wahlen, Märkte, Gesundheit, Sicherheit oder demokratische Entscheidungsprozesse zu beeinflussen.",
-      "longDefinition": "Desinformation bezeichnet die absichtliche Erstellung, Verbreitung oder Verstärkung falscher, irreführender oder manipulativer Informationen, um Wahrnehmung, Verhalten, Vertrauen, Institutionen, Wahlen, Märkte, Gesundheit, Sicherheit oder demokratische Entscheidungsprozesse zu beeinflussen.",
-      "long_definition": "Desinformation bezeichnet die absichtliche Erstellung, Verbreitung oder Verstärkung falscher, irreführender oder manipulativer Informationen, um Wahrnehmung, Verhalten, Vertrauen, Institutionen, Wahlen, Märkte, Gesundheit, Sicherheit oder demokratische Entscheidungsprozesse zu beeinflussen.",
-      "woekRelation": "Desinformation beschädigt die demokratische Grundlage der Wirkungsökonomie. Wirkungsmessung, Scorecards, WÖk-IDs, Wirkungsrat, Wirkungshaushalte, Wirkungssteuern und öffentliche Wirkungsberichte brauchen Vertrauen in Daten, Quellen, Verfahren und Korrekturfähigkeit. Desinformation kann diese Rückkopplung systematisch stören.",
-      "woek_einordnung": "Desinformation beschädigt die demokratische Grundlage der Wirkungsökonomie. Wirkungsmessung, Scorecards, WÖk-IDs, Wirkungsrat, Wirkungshaushalte, Wirkungssteuern und öffentliche Wirkungsberichte brauchen Vertrauen in Daten, Quellen, Verfahren und Korrekturfähigkeit. Desinformation kann diese Rückkopplung systematisch stören.",
-      "usageNote": "Die WÖk unterscheidet Misinformation, Desinformation, Malinformation, Propaganda und hybride Einflussnahme. Nicht jede falsche Aussage ist Desinformation, nicht jede harte Kritik ist Desinformation, und nicht jede abweichende Meinung ist Desinformation. Entscheidend sind Absicht, Kontext, Muster, Koordination, Täuschung und Wirkungsrisiko; Gegenmaßnahmen bedeuten keine staatliche Wahrheitsmonopol-Logik.",
-      "preferredUsage": "Die WÖk unterscheidet Misinformation, Desinformation, Malinformation, Propaganda und hybride Einflussnahme. Nicht jede falsche Aussage ist Desinformation, nicht jede harte Kritik ist Desinformation, und nicht jede abweichende Meinung ist Desinformation. Entscheidend sind Absicht, Kontext, Muster, Koordination, Täuschung und Wirkungsrisiko; Gegenmaßnahmen bedeuten keine staatliche Wahrheitsmonopol-Logik.",
-      "doNotConfuseWith": [
-        "Irrtum: falsche Annahme ohne Täuschungsabsicht.",
-        "Meinung: Werturteil, auch wenn es unbequem oder falsch begründet sein kann.",
-        "Satire: absichtlich überspitzte Darstellung, meist erkennbar als solche.",
-        "Legitime Kritik: Kritik an Regierung, Medien, Wissenschaft oder Institutionen ist demokratisch notwendig.",
-        "Zensurgrund: Maßnahmen müssen verhältnismäßig, transparent und rechtsstaatlich sein."
-      ],
-      "examples": [
-        "Eine koordinierte Kampagne verbreitet gefälschte Wahlbetrugsvideos, um Vertrauen in Wahlen zu zerstören.",
-        "Deepfake-Audios simulieren Aussagen politischer Akteure kurz vor einer Wahl.",
-        "Bot-Netzwerke verstärken Hass gegen Minderheiten und erzeugen den Eindruck gesellschaftlicher Mehrheit."
-      ],
       "relatedTerms": [
         "oeffentlichkeit-als-wirkungsraum",
         "plattformlogik-und-algorithmen",
@@ -63457,7 +63387,137 @@
         "kii",
         "lieferkettenwirkung",
         "cradle-to-cradle",
-        "paltering"
+        "paltering",
+        "resignifikation"
+      ],
+      "id": "desinformation",
+      "label": "Desinformation",
+      "slug": "desinformation",
+      "aliases": [
+        "Desinformation",
+        "gezielte Falschinformation",
+        "Desinformation und hybride Einflussnahme",
+        "Fake News",
+        "koordinierte Täuschung",
+        "Informationsmanipulation",
+        "Desinformation als Wirkungsrisiko",
+        "Angriff auf Rückkopplung",
+        "Disinformation",
+        "Informationskrieg"
+      ],
+      "synonyms": [
+        "Desinformation",
+        "gezielte Falschinformation",
+        "Desinformation und hybride Einflussnahme",
+        "Fake News",
+        "koordinierte Täuschung",
+        "Informationsmanipulation",
+        "Desinformation als Wirkungsrisiko",
+        "Angriff auf Rückkopplung",
+        "Disinformation",
+        "Informationskrieg"
+      ],
+      "status": "woek-praegungsbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 016",
+      "shortDefinition": "Desinformation ist gezielt irreführende oder falsche Information, die Vertrauen, Orientierung, demokratische Rückkopplung oder gesellschaftliche Resilienz schwächen kann.",
+      "hoverDefinition": "Desinformation ist gezielt irreführende oder falsche Information, die Vertrauen, Orientierung, demokratische Rückkopplung oder gesellschaftliche Resilienz schwächen kann.",
+      "definition": "Desinformation bezeichnet die absichtliche Erstellung, Verbreitung oder Verstärkung falscher, irreführender oder manipulativer Informationen, um Wahrnehmung, Verhalten, Vertrauen, Institutionen, Wahlen, Märkte, Gesundheit, Sicherheit oder demokratische Entscheidungsprozesse zu beeinflussen.",
+      "longDefinition": "Desinformation bezeichnet die absichtliche Erstellung, Verbreitung oder Verstärkung falscher, irreführender oder manipulativer Informationen, um Wahrnehmung, Verhalten, Vertrauen, Institutionen, Wahlen, Märkte, Gesundheit, Sicherheit oder demokratische Entscheidungsprozesse zu beeinflussen.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "woekRelation": "Desinformation beschädigt die demokratische Grundlage der Wirkungsökonomie. Wirkungsmessung, Scorecards, WÖk-IDs, Wirkungsrat, Wirkungshaushalte, Wirkungssteuern und öffentliche Wirkungsberichte brauchen Vertrauen in Daten, Quellen, Verfahren und Korrekturfähigkeit. Desinformation kann diese Rückkopplung systematisch stören.",
+      "reviewStatus": "redaktionell zu prüfen",
+      "statusNote": "",
+      "usageNote": "Die WÖk unterscheidet Misinformation, Desinformation, Malinformation, Propaganda und hybride Einflussnahme. Nicht jede falsche Aussage ist Desinformation, nicht jede harte Kritik ist Desinformation, und nicht jede abweichende Meinung ist Desinformation. Entscheidend sind Absicht, Kontext, Muster, Koordination, Täuschung und Wirkungsrisiko; Gegenmaßnahmen bedeuten keine staatliche Wahrheitsmonopol-Logik.",
+      "pageUrl": "/begriffe/desinformation/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "",
+      "category": "Medien, Demokratie & Wirkungsrisiko",
+      "sourceSection": "Medien, Demokratie & Wirkungsrisiko",
+      "glossaryOrderKey": "Desinformation",
+      "priority": 211,
+      "officialSources": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
+        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
+        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
+        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
+        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
+        "UN SDG 16|/quellenarchiv/wok-q-0545/",
+        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
+        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
+        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
+        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
+        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
+        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
+        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
+        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
+        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
+      ],
+      "curatedSources": [],
+      "sourceLinks": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
+        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
+        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
+        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
+        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
+        "UN SDG 16|/quellenarchiv/wok-q-0545/",
+        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
+        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
+        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
+        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
+        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
+        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
+        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
+        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
+        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
+      ],
+      "relatedDocuments": [
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
+        "die-neue-ordnung-des-wohlstands",
+        "systemmodell-der-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "doNotConfuseWith": [
+        "Irrtum: falsche Annahme ohne Täuschungsabsicht.",
+        "Meinung: Werturteil, auch wenn es unbequem oder falsch begründet sein kann.",
+        "Satire: absichtlich überspitzte Darstellung, meist erkennbar als solche.",
+        "Legitime Kritik: Kritik an Regierung, Medien, Wissenschaft oder Institutionen ist demokratisch notwendig.",
+        "Zensurgrund: Maßnahmen müssen verhältnismäßig, transparent und rechtsstaatlich sein."
+      ],
+      "deprecatedUsage": [],
+      "categories": [
+        "Medien, Demokratie & Wirkungsrisiko",
+        "Medien-, Öffentlichkeits- & Plattformlogik",
+        "daten-standards-regularien",
+        "grundbegriff"
+      ],
+      "firstApprovedIn": "2026.1",
+      "type": "Anschlussbegriff / WÖk-Präzisierung",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierung",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "sourceDocument": "Glossar-Pack 016: Medien-, Öffentlichkeits- & Plattformlogik",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "short_definition": "Desinformation ist gezielt irreführende oder falsche Information, die Vertrauen, Orientierung, demokratische Rückkopplung oder gesellschaftliche Resilienz schwächen kann.",
+      "long_definition": "Desinformation bezeichnet die absichtliche Erstellung, Verbreitung oder Verstärkung falscher, irreführender oder manipulativer Informationen, um Wahrnehmung, Verhalten, Vertrauen, Institutionen, Wahlen, Märkte, Gesundheit, Sicherheit oder demokratische Entscheidungsprozesse zu beeinflussen.",
+      "woek_einordnung": "Desinformation beschädigt die demokratische Grundlage der Wirkungsökonomie. Wirkungsmessung, Scorecards, WÖk-IDs, Wirkungsrat, Wirkungshaushalte, Wirkungssteuern und öffentliche Wirkungsberichte brauchen Vertrauen in Daten, Quellen, Verfahren und Korrekturfähigkeit. Desinformation kann diese Rückkopplung systematisch stören.",
+      "preferredUsage": "Die WÖk unterscheidet Misinformation, Desinformation, Malinformation, Propaganda und hybride Einflussnahme. Nicht jede falsche Aussage ist Desinformation, nicht jede harte Kritik ist Desinformation, und nicht jede abweichende Meinung ist Desinformation. Entscheidend sind Absicht, Kontext, Muster, Koordination, Täuschung und Wirkungsrisiko; Gegenmaßnahmen bedeuten keine staatliche Wahrheitsmonopol-Logik.",
+      "examples": [
+        "Eine koordinierte Kampagne verbreitet gefälschte Wahlbetrugsvideos, um Vertrauen in Wahlen zu zerstören.",
+        "Deepfake-Audios simulieren Aussagen politischer Akteure kurz vor einer Wahl.",
+        "Bot-Netzwerke verstärken Hass gegen Minderheiten und erzeugen den Eindruck gesellschaftlicher Mehrheit."
       ],
       "related_terms": [
         "oeffentlichkeit-als-wirkungsraum",
@@ -63526,37 +63586,8 @@
         "kii",
         "lieferkettenwirkung",
         "cradle-to-cradle",
-        "paltering"
-      ],
-      "relatedDocuments": [
-        {
-          "label": "Wirkungsökonomie Glossar",
-          "href": "../../glossar.html"
-        },
-        {
-          "label": "Referenz / Online-Buch",
-          "href": "../../referenz/"
-        },
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "leitbild-mensch-planet-demokratie"
-      ],
-      "sourceLinks": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
-        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
-        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
-        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
-        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
-        "UN SDG 16|/quellenarchiv/wok-q-0545/",
-        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
-        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
-        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
-        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
-        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
-        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
-        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
-        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
-        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
+        "paltering",
+        "resignifikation"
       ],
       "source_links": [
         "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026",
@@ -63574,23 +63605,6 @@
         "Reuters Institute Digital News Report|https://reutersinstitute.politics.ox.ac.uk/digital-news-report",
         "Reporters Without Borders|https://rsf.org/",
         "Freedom House: Freedom on the Net|https://freedomhouse.org/"
-      ],
-      "officialSources": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
-        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
-        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
-        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
-        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
-        "UN SDG 16|/quellenarchiv/wok-q-0545/",
-        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
-        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
-        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
-        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
-        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
-        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
-        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
-        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
-        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
       ],
       "glossary_pack": "016",
       "glossaryPack": "016",
@@ -63757,14 +63771,6 @@
           ]
         }
       ],
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "statusNote": "",
-      "dataStandardsGroup": "",
-      "glossaryOrderKey": "Desinformation",
-      "priority": 211,
-      "curatedSources": [],
-      "deprecatedUsage": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -64101,7 +64107,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Deutsche Nachhaltigkeitsstrategie (DNS)",
-      "priority": 2201,
+      "priority": 2212,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -68104,79 +68110,8 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "diskurskultur",
       "termId": "diskurskultur",
-      "label": "Diskurskultur",
       "canonicalLabel": "Diskurskultur",
-      "slug": "diskurskultur",
-      "pageUrl": "/begriffe/diskurskultur/",
-      "classicGlossary": true,
-      "showInCategoryGlossary": true,
-      "firstApprovedIn": "2026.1",
-      "aliases": [
-        "Diskurskultur",
-        "demokratische Diskurskultur",
-        "Streitkultur",
-        "Diskursfähigkeit",
-        "demokratische Kommunikationsstandards",
-        "öffentliche Streitfähigkeit",
-        "Quellenklarheit im Diskurs",
-        "Resonanzkultur",
-        "Diskurs als Wirkungsraum"
-      ],
-      "synonyms": [
-        "Diskurskultur",
-        "demokratische Diskurskultur",
-        "Streitkultur",
-        "Diskursfähigkeit",
-        "demokratische Kommunikationsstandards",
-        "öffentliche Streitfähigkeit",
-        "Quellenklarheit im Diskurs",
-        "Resonanzkultur",
-        "Diskurs als Wirkungsraum"
-      ],
-      "category": "Demokratie, Öffentlichkeit & Kultur",
-      "categories": [
-        "Demokratie, Öffentlichkeit & Kultur",
-        "Medien-, Öffentlichkeits- & Plattformlogik",
-        "daten-standards-regularien"
-      ],
-      "type": "WÖk-Präzisierungsbegriff / Demokratie- und Kommunikationsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff / Demokratie- und Kommunikationsbegriff",
-      "status": "woek-praegungsbegriff",
-      "conceptStatus": "professionalisiert",
-      "concept_status": "professionalisiert",
-      "publicationStatus": "published",
-      "publication_status": "published",
-      "version": "1.1",
-      "source": "Glossar-Pack 016",
-      "sourceDocument": "Glossar-Pack 016: Medien-, Öffentlichkeits- & Plattformlogik",
-      "sourceSection": "Demokratie, Öffentlichkeit & Kultur",
-      "reviewStatus": "redaktionell zu prüfen",
-      "lastUpdated": "2026-06-01",
-      "updatedAt": "2026-06-01",
-      "shortDefinition": "Diskurskultur beschreibt die Qualität öffentlicher Auseinandersetzung: wie eine Gesellschaft streitet, prüft, korrigiert, zuhört und trotz Konflikt demokratisch handlungsfähig bleibt.",
-      "short_definition": "Diskurskultur beschreibt die Qualität öffentlicher Auseinandersetzung: wie eine Gesellschaft streitet, prüft, korrigiert, zuhört und trotz Konflikt demokratisch handlungsfähig bleibt.",
-      "hoverDefinition": "Diskurskultur beschreibt die Qualität öffentlicher Auseinandersetzung: wie eine Gesellschaft streitet, prüft, korrigiert, zuhört und trotz Konflikt demokratisch handlungsfähig bleibt.",
-      "definition": "Diskurskultur bezeichnet die Qualität, Regeln und Praktiken öffentlicher Auseinandersetzung. Sie beschreibt, wie Menschen, Medien, Plattformen, Parteien, Institutionen, Wissenschaft, Unternehmen und Zivilgesellschaft miteinander streiten, argumentieren, widersprechen, zuhören, korrigieren und Entscheidungen vorbereiten.",
-      "longDefinition": "Diskurskultur bezeichnet die Qualität, Regeln und Praktiken öffentlicher Auseinandersetzung. Sie beschreibt, wie Menschen, Medien, Plattformen, Parteien, Institutionen, Wissenschaft, Unternehmen und Zivilgesellschaft miteinander streiten, argumentieren, widersprechen, zuhören, korrigieren und Entscheidungen vorbereiten.",
-      "long_definition": "Diskurskultur bezeichnet die Qualität, Regeln und Praktiken öffentlicher Auseinandersetzung. Sie beschreibt, wie Menschen, Medien, Plattformen, Parteien, Institutionen, Wissenschaft, Unternehmen und Zivilgesellschaft miteinander streiten, argumentieren, widersprechen, zuhören, korrigieren und Entscheidungen vorbereiten.",
-      "woekRelation": "Diskurskultur ist zentral, weil gesellschaftliche Wirkung nicht nur über Gesetze und Märkte entsteht. Sie entsteht auch darüber, ob Menschen sich noch als Teil eines gemeinsamen Korrekturraums verstehen. Gute Diskurskultur ermöglicht gemeinsames Lernen, bessere Wirkungsprüfung, Vertrauen in Daten, demokratische Resilienz und korrigierbare Politik.",
-      "woek_einordnung": "Diskurskultur ist zentral, weil gesellschaftliche Wirkung nicht nur über Gesetze und Märkte entsteht. Sie entsteht auch darüber, ob Menschen sich noch als Teil eines gemeinsamen Korrekturraums verstehen. Gute Diskurskultur ermöglicht gemeinsames Lernen, bessere Wirkungsprüfung, Vertrauen in Daten, demokratische Resilienz und korrigierbare Politik.",
-      "usageNote": "Die WÖk betrachtet Diskurskultur als Infrastruktur, nicht als bloßen Benimmkodex. Sie wirkt auf Mikroebene, Mesoebene und Makroebene. Eine gute Diskurskultur akzeptiert Konflikt, begrenzt aber die Zerstörung gemeinsamer Grundlagen: Menschenwürde, Quellenklarheit, Gewaltfreiheit, Korrekturfähigkeit und demokratische Anerkennung.",
-      "preferredUsage": "Die WÖk betrachtet Diskurskultur als Infrastruktur, nicht als bloßen Benimmkodex. Sie wirkt auf Mikroebene, Mesoebene und Makroebene. Eine gute Diskurskultur akzeptiert Konflikt, begrenzt aber die Zerstörung gemeinsamer Grundlagen: Menschenwürde, Quellenklarheit, Gewaltfreiheit, Korrekturfähigkeit und demokratische Anerkennung.",
-      "doNotConfuseWith": [
-        "Harmonie: Diskurskultur verlangt nicht, dass alle einverstanden sind.",
-        "Konsenszwang: Demokratie braucht Dissens.",
-        "Zensur: Diskurskultur beschreibt Prüfpfade und Umgangsformen, keine zentrale Meinungsverbote.",
-        "Faktencheck allein: Faktenprüfung reicht nicht, wenn Resonanzräume zerstört sind.",
-        "Moralische Reinheit: Diskurskultur bewertet nicht Menschen als moralisch gut oder schlecht."
-      ],
-      "examples": [
-        "Eine Talkshow, die nur Zuspitzung und Unterbrechung belohnt, kann Diskurskultur schwächen.",
-        "Ein Bürgerrat mit Quellenklarheit, Moderation, Betroffenenperspektiven und transparenten Ergebnissen kann Diskurskultur stärken.",
-        "Ein Medium, das Fehler sichtbar korrigiert, stärkt Vertrauen und Korrekturfähigkeit."
-      ],
       "relatedTerms": [
         "oeffentlichkeit-als-wirkungsraum",
         "plattformlogik-und-algorithmen",
@@ -68243,7 +68178,135 @@
         "wirkungscontrolling",
         "kii",
         "lieferkettenwirkung",
-        "cradle-to-cradle"
+        "cradle-to-cradle",
+        "resignifikation"
+      ],
+      "id": "diskurskultur",
+      "label": "Diskurskultur",
+      "slug": "diskurskultur",
+      "aliases": [
+        "Diskurskultur",
+        "demokratische Diskurskultur",
+        "Streitkultur",
+        "Diskursfähigkeit",
+        "demokratische Kommunikationsstandards",
+        "öffentliche Streitfähigkeit",
+        "Quellenklarheit im Diskurs",
+        "Resonanzkultur",
+        "Diskurs als Wirkungsraum"
+      ],
+      "synonyms": [
+        "Diskurskultur",
+        "demokratische Diskurskultur",
+        "Streitkultur",
+        "Diskursfähigkeit",
+        "demokratische Kommunikationsstandards",
+        "öffentliche Streitfähigkeit",
+        "Quellenklarheit im Diskurs",
+        "Resonanzkultur",
+        "Diskurs als Wirkungsraum"
+      ],
+      "status": "woek-praegungsbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 016",
+      "shortDefinition": "Diskurskultur beschreibt die Qualität öffentlicher Auseinandersetzung: wie eine Gesellschaft streitet, prüft, korrigiert, zuhört und trotz Konflikt demokratisch handlungsfähig bleibt.",
+      "hoverDefinition": "Diskurskultur beschreibt die Qualität öffentlicher Auseinandersetzung: wie eine Gesellschaft streitet, prüft, korrigiert, zuhört und trotz Konflikt demokratisch handlungsfähig bleibt.",
+      "definition": "Diskurskultur bezeichnet die Qualität, Regeln und Praktiken öffentlicher Auseinandersetzung. Sie beschreibt, wie Menschen, Medien, Plattformen, Parteien, Institutionen, Wissenschaft, Unternehmen und Zivilgesellschaft miteinander streiten, argumentieren, widersprechen, zuhören, korrigieren und Entscheidungen vorbereiten.",
+      "longDefinition": "Diskurskultur bezeichnet die Qualität, Regeln und Praktiken öffentlicher Auseinandersetzung. Sie beschreibt, wie Menschen, Medien, Plattformen, Parteien, Institutionen, Wissenschaft, Unternehmen und Zivilgesellschaft miteinander streiten, argumentieren, widersprechen, zuhören, korrigieren und Entscheidungen vorbereiten.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "woekRelation": "Diskurskultur ist zentral, weil gesellschaftliche Wirkung nicht nur über Gesetze und Märkte entsteht. Sie entsteht auch darüber, ob Menschen sich noch als Teil eines gemeinsamen Korrekturraums verstehen. Gute Diskurskultur ermöglicht gemeinsames Lernen, bessere Wirkungsprüfung, Vertrauen in Daten, demokratische Resilienz und korrigierbare Politik.",
+      "reviewStatus": "redaktionell zu prüfen",
+      "statusNote": "",
+      "usageNote": "Die WÖk betrachtet Diskurskultur als Infrastruktur, nicht als bloßen Benimmkodex. Sie wirkt auf Mikroebene, Mesoebene und Makroebene. Eine gute Diskurskultur akzeptiert Konflikt, begrenzt aber die Zerstörung gemeinsamer Grundlagen: Menschenwürde, Quellenklarheit, Gewaltfreiheit, Korrekturfähigkeit und demokratische Anerkennung.",
+      "pageUrl": "/begriffe/diskurskultur/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "",
+      "category": "Demokratie, Öffentlichkeit & Kultur",
+      "sourceSection": "Demokratie, Öffentlichkeit & Kultur",
+      "glossaryOrderKey": "Diskurskultur",
+      "priority": 228,
+      "officialSources": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
+        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
+        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
+        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
+        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
+        "UN SDG 16|/quellenarchiv/wok-q-0545/",
+        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
+        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
+        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
+        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
+        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
+        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
+        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
+        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
+        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
+      ],
+      "curatedSources": [],
+      "sourceLinks": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
+        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
+        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
+        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
+        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
+        "UN SDG 16|/quellenarchiv/wok-q-0545/",
+        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
+        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
+        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
+        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
+        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
+        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
+        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
+        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
+        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
+      ],
+      "relatedDocuments": [
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
+        "die-neue-ordnung-des-wohlstands",
+        "systemmodell-der-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "doNotConfuseWith": [
+        "Harmonie: Diskurskultur verlangt nicht, dass alle einverstanden sind.",
+        "Konsenszwang: Demokratie braucht Dissens.",
+        "Zensur: Diskurskultur beschreibt Prüfpfade und Umgangsformen, keine zentrale Meinungsverbote.",
+        "Faktencheck allein: Faktenprüfung reicht nicht, wenn Resonanzräume zerstört sind.",
+        "Moralische Reinheit: Diskurskultur bewertet nicht Menschen als moralisch gut oder schlecht."
+      ],
+      "deprecatedUsage": [],
+      "categories": [
+        "Demokratie, Öffentlichkeit & Kultur",
+        "Medien-, Öffentlichkeits- & Plattformlogik",
+        "daten-standards-regularien",
+        "grundbegriff"
+      ],
+      "firstApprovedIn": "2026.1",
+      "type": "WÖk-Präzisierungsbegriff / Demokratie- und Kommunikationsbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Demokratie- und Kommunikationsbegriff",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "sourceDocument": "Glossar-Pack 016: Medien-, Öffentlichkeits- & Plattformlogik",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "short_definition": "Diskurskultur beschreibt die Qualität öffentlicher Auseinandersetzung: wie eine Gesellschaft streitet, prüft, korrigiert, zuhört und trotz Konflikt demokratisch handlungsfähig bleibt.",
+      "long_definition": "Diskurskultur bezeichnet die Qualität, Regeln und Praktiken öffentlicher Auseinandersetzung. Sie beschreibt, wie Menschen, Medien, Plattformen, Parteien, Institutionen, Wissenschaft, Unternehmen und Zivilgesellschaft miteinander streiten, argumentieren, widersprechen, zuhören, korrigieren und Entscheidungen vorbereiten.",
+      "woek_einordnung": "Diskurskultur ist zentral, weil gesellschaftliche Wirkung nicht nur über Gesetze und Märkte entsteht. Sie entsteht auch darüber, ob Menschen sich noch als Teil eines gemeinsamen Korrekturraums verstehen. Gute Diskurskultur ermöglicht gemeinsames Lernen, bessere Wirkungsprüfung, Vertrauen in Daten, demokratische Resilienz und korrigierbare Politik.",
+      "preferredUsage": "Die WÖk betrachtet Diskurskultur als Infrastruktur, nicht als bloßen Benimmkodex. Sie wirkt auf Mikroebene, Mesoebene und Makroebene. Eine gute Diskurskultur akzeptiert Konflikt, begrenzt aber die Zerstörung gemeinsamer Grundlagen: Menschenwürde, Quellenklarheit, Gewaltfreiheit, Korrekturfähigkeit und demokratische Anerkennung.",
+      "examples": [
+        "Eine Talkshow, die nur Zuspitzung und Unterbrechung belohnt, kann Diskurskultur schwächen.",
+        "Ein Bürgerrat mit Quellenklarheit, Moderation, Betroffenenperspektiven und transparenten Ergebnissen kann Diskurskultur stärken.",
+        "Ein Medium, das Fehler sichtbar korrigiert, stärkt Vertrauen und Korrekturfähigkeit."
       ],
       "related_terms": [
         "oeffentlichkeit-als-wirkungsraum",
@@ -68311,37 +68374,8 @@
         "wirkungscontrolling",
         "kii",
         "lieferkettenwirkung",
-        "cradle-to-cradle"
-      ],
-      "relatedDocuments": [
-        {
-          "label": "Wirkungsökonomie Glossar",
-          "href": "../../glossar.html"
-        },
-        {
-          "label": "Referenz / Online-Buch",
-          "href": "../../referenz/"
-        },
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "leitbild-mensch-planet-demokratie"
-      ],
-      "sourceLinks": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
-        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
-        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
-        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
-        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
-        "UN SDG 16|/quellenarchiv/wok-q-0545/",
-        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
-        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
-        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
-        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
-        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
-        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
-        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
-        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
-        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
+        "cradle-to-cradle",
+        "resignifikation"
       ],
       "source_links": [
         "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026",
@@ -68359,23 +68393,6 @@
         "Reuters Institute Digital News Report|https://reutersinstitute.politics.ox.ac.uk/digital-news-report",
         "Reporters Without Borders|https://rsf.org/",
         "Freedom House: Freedom on the Net|https://freedomhouse.org/"
-      ],
-      "officialSources": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-333439f9e599/",
-        "Die neue Ordnung des Wohlstands: Medienqualität, öffentliche Resonanz und Öffentlichkeit als Wirkungsraum|/quellenarchiv/wok-q-0576/",
-        "Systemmodell der Wirkungsökonomie: Medien & Öffentlichkeit|/quellenarchiv/wok-g-81833f73c49f/",
-        "Leitbild Mensch, Planet und Demokratie|/quellenarchiv/wok-q-0586/",
-        "UN Sustainable Development Goals / Agenda 2030|/quellenarchiv/wok-q-0922/",
-        "UN SDG 16|/quellenarchiv/wok-q-0545/",
-        "European Commission: Digital Services Act|/quellenarchiv/wok-q-0414/",
-        "Regulation (EU) 2024/1689: AI Act|/quellenarchiv/wok-q-0191/",
-        "Regulation (EU) 2024/1083: European Media Freedom Act|/quellenarchiv/wok-q-0450/",
-        "European Commission: Code of Practice on Disinformation|/quellenarchiv/wok-q-0486/",
-        "OECD AI Principles|/quellenarchiv/wok-q-0522/",
-        "UNESCO Journalism, media and information literacy|/quellenarchiv/wok-q-0176/",
-        "Reuters Institute Digital News Report|/quellenarchiv/wok-q-0147/",
-        "Reporters Without Borders|/quellenarchiv/wok-g-efae345eebe0/",
-        "Freedom House: Freedom on the Net|/quellenarchiv/wok-q-0547/"
       ],
       "glossary_pack": "016",
       "glossaryPack": "016",
@@ -68542,14 +68559,6 @@
           ]
         }
       ],
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "statusNote": "",
-      "dataStandardsGroup": "",
-      "glossaryOrderKey": "Diskurskultur",
-      "priority": 228,
-      "curatedSources": [],
-      "deprecatedUsage": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -69059,7 +69068,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "Destatis / Deutsche Nachhaltigkeitsstrategie",
       "glossaryOrderKey": "DNS-Indikator",
-      "priority": 2207,
+      "priority": 2218,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -72841,7 +72850,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "E-Gesetzgebung",
       "glossaryOrderKey": "E-Gesetzgebung / eGFA",
-      "priority": 2206,
+      "priority": 2217,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -79410,7 +79419,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "E-Gesetzgebung / BMJV",
       "glossaryOrderKey": "Elektronische Nachhaltigkeitsprüfung (eNAP)",
-      "priority": 2205,
+      "priority": 2216,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -95196,7 +95205,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "GGO § 44 Abs. 7 / WÖk-Reality-Check",
       "glossaryOrderKey": "Ex-ante-Folgenprüfung und Reality Check",
-      "priority": 2209,
+      "priority": 2220,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -96250,7 +96259,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Externalisierungslücke",
-      "priority": 2238,
+      "priority": 2249,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -108014,52 +108023,8 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "framing",
       "termId": "framing",
-      "label": "Frame / Framing",
       "canonicalLabel": "Frame / Framing",
-      "slug": "framing",
-      "aliases": [
-        "Frame / Framing",
-        "Frame",
-        "Framing",
-        "Deutungsrahmen",
-        "Framinganalyse"
-      ],
-      "synonyms": [
-        "Frame / Framing",
-        "Frame",
-        "Framing",
-        "Deutungsrahmen",
-        "Framinganalyse"
-      ],
-      "shortDefinition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens.",
-      "definition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es geschieht durch Begriffe, Metaphern, Bilder, Zahlen, Tonalität, Wiederholung, Auswahl von Fakten, Reihenfolge der Darstellung und die Frage, welche Perspektive als selbstverständlich erscheint.",
-      "longDefinition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es strukturiert, was sichtbar wird, was nebensächlich wirkt, wem Verantwortung zugeschrieben wird und welche Lösung als plausibel erscheint.",
-      "woekRelation": "Framing ist wirkungsrelevant, weil es nicht nur beschreibt, sondern Wahrnehmung, Resonanz, Verantwortungszuschreibung und Handlungsmöglichkeiten strukturiert. Es erzeugt häufig Wirkungspotenzial, nicht automatisch nachgewiesene Wirkung.",
-      "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
-      "usageNote": "Framing ist nicht automatisch Manipulation. Aufklärendes Framing macht Zusammenhänge, blinde Flecken und Wirkpfade sichtbarer. Manipulatives Framing verengt Wirklichkeit, verdeckt Verantwortung, erzeugt Feindbilder oder verschiebt Aufmerksamkeit von relevanten Wirkungen weg.",
-      "categories": [
-        "psychologische-systemische-wirkmechanismen"
-      ],
-      "tags": [
-        "Psychologie",
-        "Kommunikation",
-        "Medienwirkung",
-        "Systemtheorie",
-        "Konstruktivismus",
-        "Resonanz",
-        "Demokratie",
-        "Wirkungspotenzial",
-        "Wirkungsrisiko",
-        "Transformation",
-        "Kybernetik",
-        "politische Sprache",
-        "Resonanzraum",
-        "Vertrauen"
-      ],
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
       "relatedTerms": [
         "reframing",
         "alarm-frame",
@@ -108086,43 +108051,94 @@
         "framing-sprache-tonalitaet",
         "wirkpfad",
         "wirkungsrisiko",
-        "gegenframe"
+        "gegenframe",
+        "resignifikation"
       ],
+      "id": "framing",
+      "label": "Frame / Framing",
+      "slug": "framing",
+      "aliases": [
+        "Frame / Framing",
+        "Frame",
+        "Framing",
+        "Deutungsrahmen",
+        "Framinganalyse"
+      ],
+      "synonyms": [
+        "Frame / Framing",
+        "Frame",
+        "Framing",
+        "Deutungsrahmen",
+        "Framinganalyse"
+      ],
+      "status": "woek-anschlussbegriff",
+      "version": "1.1",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10",
+      "shortDefinition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens.",
+      "hoverDefinition": "Setzen oder Verstärken eines Deutungsrahmens durch Sprache, Bilder, Zahlen, Tonalität oder Wiederholung.",
+      "definition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es geschieht durch Begriffe, Metaphern, Bilder, Zahlen, Tonalität, Wiederholung, Auswahl von Fakten, Reihenfolge der Darstellung und die Frage, welche Perspektive als selbstverständlich erscheint.",
+      "longDefinition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es strukturiert, was sichtbar wird, was nebensächlich wirkt, wem Verantwortung zugeschrieben wird und welche Lösung als plausibel erscheint.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "woekRelation": "Framing ist wirkungsrelevant, weil es nicht nur beschreibt, sondern Wahrnehmung, Resonanz, Verantwortungszuschreibung und Handlungsmöglichkeiten strukturiert. Es erzeugt häufig Wirkungspotenzial, nicht automatisch nachgewiesene Wirkung.",
+      "reviewStatus": "approved",
+      "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
+      "usageNote": "Framing ist nicht automatisch Manipulation. Aufklärendes Framing macht Zusammenhänge, blinde Flecken und Wirkpfade sichtbarer. Manipulatives Framing verengt Wirklichkeit, verdeckt Verantwortung, erzeugt Feindbilder oder verschiebt Aufmerksamkeit von relevanten Wirkungen weg.",
+      "pageUrl": "/begriffe/framing/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "sourceSection": "Sprache, Medien, Resonanzräume und wirkungsorientiertes Reframing",
+      "glossaryOrderKey": "Frame / Framing",
+      "priority": 400,
       "officialSources": [
         "Warum Fakten nicht reichen|/quellenarchiv/wok-q-0681/"
       ],
-      "pageUrl": "/begriffe/framing/",
-      "priority": 400,
-      "status": "woek-anschlussbegriff",
-      "version": "1.1",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Sprache, Medien, Resonanzräume und wirkungsorientiertes Reframing",
-      "hoverDefinition": "Setzen oder Verstärken eines Deutungsrahmens durch Sprache, Bilder, Zahlen, Tonalität oder Wiederholung.",
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [
+        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      ],
       "doNotConfuseWith": [
         "Frame: der Deutungsrahmen; Framing: das Setzen oder Verstärken dieses Rahmens.",
         "Wirkungsnachweis: Framing kann Wirkungspotenzial erzeugen, beweist aber noch keine eingetretene Wirkung.",
         "Manipulation: Framing kann aufklärend oder manipulativ sein; entscheidend sind Wahrheitsnähe, Kontext, Würde und Transparenz.",
         "Nicht verwechseln mit Lüge. Frames können wahrheitsfähig oder verzerrend sein; entscheidend ist Transparenz über Wirkungspotenzial."
       ],
-      "relatedDocuments": [
-        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      "deprecatedUsage": [
+        "als moralisches Etikett für Personen verwenden",
+        "mit eingetretener Wirkung gleichsetzen"
       ],
+      "categories": [
+        "psychologische-systemische-wirkmechanismen",
+        "grundbegriff"
+      ],
+      "tags": [
+        "Psychologie",
+        "Kommunikation",
+        "Medienwirkung",
+        "Systemtheorie",
+        "Konstruktivismus",
+        "Resonanz",
+        "Demokratie",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
+      ],
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "examples": [
         "Ein Bericht kann dieselbe Zahl als Kosten, Schutz, Risiko, Investition oder Folgekostenvermeidung rahmen. Die Fakten ändern sich nicht; der Bewertungsmaßstab und die Resonanzräume verändern sich.",
         "CO2-Bepreisung als „Strafe“ oder als „ehrlicher Preis“.",
         "Bürgergeld als „soziale Sicherheit“ oder als „Faulheitsprämie“."
       ],
       "preferredUsage": "Framing als Prozess der Rahmung beschreiben und zwischen Deutungsrahmen, Wirkungspotenzial, Wirkpfad und Wirkungsnachweis unterscheiden.",
-      "deprecatedUsage": [
-        "als moralisches Etikett für Personen verwenden",
-        "mit eingetretener Wirkung gleichsetzen"
-      ],
       "metaTitle": "Frame / Framing | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein Frame ist ein Deutungsrahmen, durch den Informationen verstanden, bewertet und emotional eingeordnet werden.",
-      "reviewStatus": "approved",
-      "glossaryOrderKey": "Frame / Framing",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-06-13",
       "updatedAt": "2026-06-13",
@@ -108152,7 +108168,8 @@
         "framing-sprache-tonalitaet",
         "wirkpfad",
         "wirkungsrisiko",
-        "gegenframe"
+        "gegenframe",
+        "resignifikation"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -108228,11 +108245,6 @@
       "sourceNotes": [
         "WÖk-Glossar psychologische Effekte, Biases und Diskursverschiebung v0.1; ENT, LAK, WÖK-BL"
       ],
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "dataStandardsGroup": "",
-      "curatedSources": [],
-      "sourceLinks": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -110560,7 +110572,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Freiwilligendilemma",
-      "priority": 2259,
+      "priority": 2270,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -114547,7 +114559,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Gefangenendilemma",
-      "priority": 2248,
+      "priority": 2259,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -114567,10 +114579,16 @@
       ]
     },
     {
-      "id": "gegenframe",
       "termId": "gegenframe",
-      "label": "Gegenframe",
       "canonicalLabel": "Gegenframe",
+      "relatedTerms": [
+        "frame",
+        "reframing",
+        "wirkungskommunikation",
+        "resignifikation"
+      ],
+      "id": "gegenframe",
+      "label": "Gegenframe",
       "slug": "gegenframe",
       "aliases": [
         "Gegenframe",
@@ -114580,65 +114598,62 @@
         "Gegenframe",
         "Reframing"
       ],
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "shortDefinition": "Ein Gegenframe ersetzt einen problematischen Deutungsrahmen durch eine präzisere und lösungsfähigere Einordnung.",
-      "short_definition": "Ein Gegenframe ersetzt einen problematischen Deutungsrahmen durch eine präzisere und lösungsfähigere Einordnung.",
+      "hoverDefinition": "Eine alternative Deutung, die den problematischen Frame nicht nur verneint, sondern durch einen besseren, wahreren und lösungsfähigeren Rahmen ersetzt.",
       "definition": "Ein Gegenframe ersetzt einen problematischen Deutungsrahmen durch eine präzisere und lösungsfähigere Einordnung.",
       "longDefinition": "Eine alternative Deutung, die den problematischen Frame nicht nur verneint, sondern durch einen besseren, wahreren und lösungsfähigeren Rahmen ersetzt.",
-      "long_definition": "Eine alternative Deutung, die den problematischen Frame nicht nur verneint, sondern durch einen besseren, wahreren und lösungsfähigeren Rahmen ersetzt.",
-      "hoverDefinition": "Eine alternative Deutung, die den problematischen Frame nicht nur verneint, sondern durch einen besseren, wahreren und lösungsfähigeren Rahmen ersetzt.",
-      "woekRelation": "Gegenframes stärken Handlungsfähigkeit, wenn sie reale Probleme anerkennen und in lösungsfähige Wirkungssprache übersetzen.",
-      "woek_einordnung": "Gegenframes stärken Handlungsfähigkeit, wenn sie reale Probleme anerkennen und in lösungsfähige Wirkungssprache übersetzen.",
-      "relatedTerms": [
-        "frame",
-        "reframing",
-        "wirkungskommunikation"
-      ],
-      "related_terms": [
-        "frame",
-        "reframing",
-        "wirkungskommunikation"
-      ],
-      "categories": [
-        "sprache-wirklichkeit-und-kommunikation"
-      ],
-      "tags": [
-        "Sprache",
-        "Narrative",
-        "Demokratie"
-      ],
-      "status": "anschlussbegriff",
-      "type": "Anschlussbegriff",
-      "begriffstyp": "Anschlussbegriff",
-      "category": "Sprache, Wirklichkeit und Kommunikation",
-      "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
-      "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
-      "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": [
-        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
-      ],
-      "preferredUsage": "Als Alternative zu bloßer Frame-Verneinung verwenden.",
-      "deprecatedUsage": [
-        "Gegenframe als PR-Formel ohne Wahrheitsbindung"
-      ],
-      "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03",
-      "version": "1.0",
-      "doNotConfuseWith": [],
-      "officialSources": [
-        "Wirkungsradar Kernenergie Deutschland|/quellenarchiv/wok-g-8bfd061603e2/"
-      ],
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
+      "woekRelation": "Gegenframes stärken Handlungsfähigkeit, wenn sie reale Probleme anerkennen und in lösungsfähige Wirkungssprache übersetzen.",
+      "reviewStatus": "approved",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/gegenframe/",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "sourceSection": "Sprache als politischer Wirkstoff",
       "glossaryOrderKey": "Gegenframe",
       "priority": 398,
+      "officialSources": [
+        "Wirkungsradar Kernenergie Deutschland|/quellenarchiv/wok-g-8bfd061603e2/"
+      ],
       "curatedSources": [],
       "sourceLinks": [],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [
+        "Gegenframe als PR-Formel ohne Wahrheitsbindung"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation",
+        "grundbegriff"
+      ],
+      "short_definition": "Ein Gegenframe ersetzt einen problematischen Deutungsrahmen durch eine präzisere und lösungsfähigere Einordnung.",
+      "long_definition": "Eine alternative Deutung, die den problematischen Frame nicht nur verneint, sondern durch einen besseren, wahreren und lösungsfähigeren Rahmen ersetzt.",
+      "woek_einordnung": "Gegenframes stärken Handlungsfähigkeit, wenn sie reale Probleme anerkennen und in lösungsfähige Wirkungssprache übersetzen.",
+      "related_terms": [
+        "frame",
+        "reframing",
+        "wirkungskommunikation",
+        "resignifikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
+      "preferredUsage": "Als Alternative zu bloßer Frame-Verneinung verwenden.",
+      "lastUpdated": "2026-06-03",
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -115117,7 +115132,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)",
-      "priority": 2202,
+      "priority": 2213,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -121129,7 +121144,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Gesetzesfolgenabschätzung (GFA)",
-      "priority": 2203,
+      "priority": 2214,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -148762,7 +148777,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2176,
+      "priority": 2187,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -153721,7 +153736,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2172,
+      "priority": 2183,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -154020,7 +154035,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Institutionelle Vertrauenswürdigkeit",
-      "priority": 2253,
+      "priority": 2264,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -157090,7 +157105,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Intergenerationelles Dilemma",
-      "priority": 2261,
+      "priority": 2272,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -159180,7 +159195,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2491,
+      "priority": 2502,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -168814,7 +168829,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2220,
+      "priority": 2231,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -175671,7 +175686,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2199,
+      "priority": 2210,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -176098,7 +176113,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kooperationsfähigkeit",
-      "priority": 2256,
+      "priority": 2267,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -176496,7 +176511,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kooperative Wehrhaftigkeit",
-      "priority": 2243,
+      "priority": 2254,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -176572,7 +176587,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Koordinationsdilemma",
-      "priority": 2258,
+      "priority": 2269,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -220290,7 +220305,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "BMJV Nachhaltige Gesetzgebung / GGO § 44",
       "glossaryOrderKey": "Nachhaltigkeitsprüfung des Bundes",
-      "priority": 2204,
+      "priority": 2215,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -220755,10 +220770,24 @@
       ]
     },
     {
-      "id": "narrativ",
       "termId": "narrativ",
-      "label": "Narrativ",
       "canonicalLabel": "Narrativ",
+      "relatedTerms": [
+        "konstruktives-narrativ",
+        "destruktives-narrativ",
+        "zukunftsbild",
+        "framing",
+        "resonanzraum",
+        "vertrauen",
+        "priming",
+        "sensemaking",
+        "resonanz",
+        "vertrautheitseffekt",
+        "gedaechtniskonsolidierung",
+        "resignifikation"
+      ],
+      "id": "narrativ",
+      "label": "Narrativ",
       "slug": "narrativ",
       "aliases": [
         "Narrativ"
@@ -220766,14 +220795,47 @@
       "synonyms": [
         "Narrativ"
       ],
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "source": "Journalartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
       "shortDefinition": "Ein Narrativ ist eine sinnstiftende Erzählung, die Ereignisse, Ursachen, Rollen, Ziele und Zukunftsbilder verbindet.",
+      "hoverDefinition": "Sinnstiftende Erzählung, die Ereignisse, Ursachen, Rollen und Zukunftsbilder verbindet.",
       "definition": "Narrative geben Orientierung. Sie können Komplexität integrieren oder destruktiv reduzieren. Konstruktive Narrative verbinden Gegenwart und Zukunft, eröffnen Handlungsfähigkeit und stärken Kohärenz. Destruktive Narrative arbeiten häufig mit Schuldigen, Feindbildern, Opferlogik oder Untergangsbildern.",
       "longDefinition": "Narrative geben Orientierung. Sie können Komplexität integrieren oder destruktiv reduzieren. Konstruktive Narrative verbinden Gegenwart und Zukunft, eröffnen Handlungsfähigkeit und stärken Kohärenz. Destruktive Narrative arbeiten häufig mit Schuldigen, Feindbildern, Opferlogik oder Untergangsbildern.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
       "woekRelation": "Narrative sind keine Wirkung selbst, sondern Auslöser mit Wirkungspotenzial. Sie können Vertrauen, Zugehörigkeit, Dissonanz, Polarisierung und Handlungsbereitschaft beeinflussen.",
+      "reviewStatus": "approved",
       "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
       "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
+      "pageUrl": "/begriffe/narrativ/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "glossaryOrderKey": "Narrativ",
+      "priority": 400,
+      "officialSources": [
+        "Warum Fakten nicht reichen|/quellenarchiv/wok-q-0681/"
+      ],
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [
+        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      ],
+      "doNotConfuseWith": [
+        "Wirkung",
+        "Wirkungspotenzial",
+        "Wirkungsnachweis"
+      ],
+      "deprecatedUsage": [
+        "als moralisches Etikett für Personen verwenden",
+        "mit eingetretener Wirkung gleichsetzen"
+      ],
       "categories": [
-        "psychologische-systemische-wirkmechanismen"
+        "psychologische-systemische-wirkmechanismen",
+        "grundbegriff"
       ],
       "tags": [
         "Psychologie",
@@ -220791,51 +220853,11 @@
         "Resonanzraum",
         "Vertrauen"
       ],
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
-      "relatedTerms": [
-        "konstruktives-narrativ",
-        "destruktives-narrativ",
-        "zukunftsbild",
-        "framing",
-        "resonanzraum",
-        "vertrauen",
-        "priming",
-        "sensemaking",
-        "resonanz",
-        "vertrautheitseffekt",
-        "gedaechtniskonsolidierung"
-      ],
-      "officialSources": [
-        "Warum Fakten nicht reichen|/quellenarchiv/wok-q-0681/"
-      ],
-      "pageUrl": "/begriffe/narrativ/",
-      "priority": 400,
-      "status": "woek-anschlussbegriff",
-      "version": "1.0",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "source": "Journalartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
       "sourceDocument": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
-      "sourceSection": "Psychologische und systemische Wirkmechanismen",
-      "hoverDefinition": "Sinnstiftende Erzählung, die Ereignisse, Ursachen, Rollen und Zukunftsbilder verbindet.",
-      "doNotConfuseWith": [
-        "Wirkung",
-        "Wirkungspotenzial",
-        "Wirkungsnachweis"
-      ],
-      "relatedDocuments": [
-        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
-      ],
       "examples": [],
       "preferredUsage": "Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.",
-      "deprecatedUsage": [
-        "als moralisches Etikett für Personen verwenden",
-        "mit eingetretener Wirkung gleichsetzen"
-      ],
       "metaTitle": "Narrativ | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein Narrativ ist eine sinnstiftende Erzählung, die Ereignisse, Ursachen, Rollen, Ziele und Zukunftsbilder verbindet.",
-      "reviewStatus": "approved",
-      "glossaryOrderKey": "Narrativ",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29",
@@ -220850,7 +220872,8 @@
         "sensemaking",
         "resonanz",
         "vertrautheitseffekt",
-        "gedaechtniskonsolidierung"
+        "gedaechtniskonsolidierung",
+        "resignifikation"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -220891,11 +220914,6 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "dataStandardsGroup": "",
-      "curatedSources": [],
-      "sourceLinks": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -221317,7 +221335,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2219,
+      "priority": 2230,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -222972,7 +222990,7 @@
       "category": "Grundbegriff",
       "sourceSection": "Nebenfolgen, Systemeffekte und Rückkopplung",
       "glossaryOrderKey": "Nebenwirkung",
-      "priority": 2186,
+      "priority": 2197,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -239882,7 +239900,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Objektspezifische staatliche Prüfarchitektur",
-      "priority": 2216,
+      "priority": 2227,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -239961,7 +239979,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung 2026-08-21 / #241/#253",
       "glossaryOrderKey": "Objektspezifischer staatlicher Prüfbenchmark",
-      "priority": 2212,
+      "priority": 2223,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -249380,7 +249398,7 @@
       "category": "Grundbegriff",
       "sourceSection": "Output, Outcome und Wirkung",
       "glossaryOrderKey": "Outcome",
-      "priority": 2175,
+      "priority": 2186,
       "officialSources": [
         "OECD DAC (2022): Glossary of Key Terms in Evaluation and Results-Based Management|/quellenarchiv/wok-g-3dde245df3e2/",
         "PHINEO: Grundbegriffe der Wirkungsorientierung|/quellenarchiv/wok-g-5f9a4a116888/"
@@ -249754,7 +249772,7 @@
       "category": "Grundbegriff",
       "sourceSection": "Output, Outcome und Wirkung",
       "glossaryOrderKey": "Output",
-      "priority": 2174,
+      "priority": 2185,
       "officialSources": [
         "OECD DAC (2022): Glossary of Key Terms in Evaluation and Results-Based Management|/quellenarchiv/wok-g-3dde245df3e2/",
         "PHINEO: Grundbegriffe der Wirkungsorientierung|/quellenarchiv/wok-g-5f9a4a116888/"
@@ -251514,7 +251532,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "Deutscher Bundestag / BMJV",
       "glossaryOrderKey": "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
-      "priority": 2211,
+      "priority": 2222,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -255870,7 +255888,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2228,
+      "priority": 2239,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -269963,7 +269981,7 @@
       "category": "Bewertungsbegriff",
       "sourceSection": "Vertiefung J · Vorschläge für Glossartexte",
       "glossaryOrderKey": "Preisvollständigkeit",
-      "priority": 2240,
+      "priority": 2251,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -273491,7 +273509,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2231,
+      "priority": 2242,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -276233,10 +276251,18 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "propaganda",
       "termId": "propaganda",
-      "label": "Propaganda",
       "canonicalLabel": "Propaganda",
+      "relatedTerms": [
+        "staatspropaganda",
+        "mediengleichschaltung",
+        "agenda-setting",
+        "wiedergeburtsnarrativ",
+        "informationsintegritaet",
+        "resignifikation"
+      ],
+      "id": "propaganda",
+      "label": "Propaganda",
       "slug": "propaganda",
       "aliases": [
         "Propaganda"
@@ -276244,28 +276270,27 @@
       "synonyms": [
         "Propaganda"
       ],
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Autokratien, Regimeformen und demokratische Erosion",
       "shortDefinition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
-      "short_definition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
+      "hoverDefinition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
       "definition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
       "longDefinition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.\n\nWirkungsrisiko, wenn Wahrheit, Pluralität, Urteilskraft und freie Meinungsbildung verdrängt werden.",
-      "long_definition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
       "woekRelation": "Wirkungsrisiko, wenn Wahrheit, Pluralität, Urteilskraft und freie Meinungsbildung verdrängt werden.",
-      "woek_einordnung": "Wirkungsrisiko, wenn Wahrheit, Pluralität, Urteilskraft und freie Meinungsbildung verdrängt werden.",
-      "examples": [],
-      "relatedTerms": [
-        "staatspropaganda",
-        "mediengleichschaltung",
-        "agenda-setting",
-        "wiedergeburtsnarrativ",
-        "informationsintegritaet"
-      ],
-      "related_terms": [
-        "staatspropaganda",
-        "mediengleichschaltung",
-        "agenda-setting",
-        "wiedergeburtsnarrativ",
-        "informationsintegritaet"
-      ],
+      "reviewStatus": "approved",
+      "statusNote": "",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "pageUrl": "/begriffe/propaganda/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Autokratien, Regimeformen und demokratische Erosion",
+      "sourceSection": "Autokratien, Regimeformen und demokratische Erosion",
+      "glossaryOrderKey": "Propaganda",
+      "priority": 964,
       "officialSources": [
         "Encyclopaedia Britannica: Fascism|/quellenarchiv/wok-q-0363/",
         "Bundeszentrale für politische Bildung: Faschismus|/quellenarchiv/wok-q-0399/",
@@ -276286,6 +276311,7 @@
         "Bundesverfassungsgericht Klimabeschluss 2021|/quellenarchiv/wok-q-0155/",
         "Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG|/quellenarchiv/wok-q-0643/"
       ],
+      "curatedSources": [],
       "sourceLinks": [
         {
           "source_type": "institutional",
@@ -276377,6 +276403,25 @@
           "status": "bibliographic",
           "originalUrl": "https://wirkungsoekonomie.de/blog/sprache-als-politischer-wirkstoff-rechte-narrative.html"
         }
+      ],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "autokratien-regimeformen-und-demokratische-erosion",
+        "grundbegriff"
+      ],
+      "short_definition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
+      "long_definition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
+      "woek_einordnung": "Wirkungsrisiko, wenn Wahrheit, Pluralität, Urteilskraft und freie Meinungsbildung verdrängt werden.",
+      "examples": [],
+      "related_terms": [
+        "staatspropaganda",
+        "mediengleichschaltung",
+        "agenda-setting",
+        "wiedergeburtsnarrativ",
+        "informationsintegritaet",
+        "resignifikation"
       ],
       "source_links": [
         {
@@ -276490,9 +276535,6 @@
       ],
       "internalLinks": [],
       "internal_links": [],
-      "categories": [
-        "autokratien-regimeformen-und-demokratische-erosion"
-      ],
       "tags": [
         "Autokratie",
         "Regimeform",
@@ -276502,12 +276544,10 @@
         "Propaganda",
         "Machtkonzentration"
       ],
-      "category": "Autokratien, Regimeformen und demokratische Erosion",
       "conceptStatus": "Anschlussbegriff",
       "concept_status": "Anschlussbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
       "theme": [
@@ -276562,34 +276602,15 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "version": "1.0",
       "lastReviewed": "2026-05-29",
       "last_reviewed": "2026-05-29",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Autokratien, Regimeformen und demokratische Erosion",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Autokratien, Regimeformen und demokratische Erosion",
-      "hoverDefinition": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.",
-      "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
-      "pageUrl": "/begriffe/propaganda/",
       "metaTitle": "Propaganda | Glossar der Wirkungsökonomie",
       "metaDescription": "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
       "preferredUsage": "",
-      "deprecatedUsage": [],
-      "glossaryOrderKey": "Propaganda",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
-      "dataStandardsGroup": "",
-      "priority": 964,
-      "curatedSources": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -291880,7 +291901,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2178,
+      "priority": 2189,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -298736,7 +298757,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Reparaturfähigkeit",
-      "priority": 2254,
+      "priority": 2265,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -302495,6 +302516,165 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
+      "id": "resignifikation",
+      "termId": "resignifikation",
+      "canonicalLabel": "Resignifikation / subversive Resignifikation",
+      "slug": "resignifikation",
+      "aliases": [
+        "Resignifikation / subversive Resignifikation",
+        "Resignifikation",
+        "resignifizieren",
+        "Neubesetzung von Bedeutung",
+        "semantische Umcodierung",
+        "Bedeutungsverschiebung",
+        "strategische Resignifikation",
+        "subversive Resignifikation",
+        "strategische Resignifikation des Historischen",
+        "subversive Resignifikation des Historischen"
+      ],
+      "shortDefinition": "Resignifikation bezeichnet die Veränderung oder gezielte Neubesetzung der Bedeutung eines Begriffs, Zeichens oder historischen Narrativs. Im Sinne von Volker Weiß beschreibt subversive beziehungsweise strategische Resignifikation des Historischen, wie politische Akteure historische Begriffe und Deutungen aus ihrem Zusammenhang lösen, umcodieren und als anschlussfähige Gegenwirklichkeit in den öffentlichen Diskurs zurückspielen.",
+      "hoverDefinition": "Resignifikation ist die Veränderung oder Neubesetzung von Bedeutung; bei Volker Weiß bezeichnet subversive Resignifikation besonders die strategische Umcodierung historischer Begriffe und Deutungen.",
+      "longDefinition": "Resignifikation ist zunächst ein allgemeiner sprachlicher, kultureller und politischer Vorgang: Die Bedeutung eines Wortes, Zeichens, Symbols oder Narrativs wird verändert, neu besetzt oder in einen anderen Deutungszusammenhang gestellt. Das kann offen oder schleichend, emanzipatorisch oder manipulativ, beabsichtigt oder als Ergebnis gesellschaftlicher Auseinandersetzung geschehen. Der Begriff ist daher nicht von sich aus auf extrem rechte Kommunikation festgelegt. Auch die selbstbestimmte Wiederaneignung einer abwertenden Bezeichnung durch Betroffene kann eine Resignifikation sein.\n\nVolker Weiß verwendet die Begriffe subversive beziehungsweise strategische Resignifikation des Historischen für ein Verfahren extrem rechter Geschichtspolitik. Historische Begriffe, Ereignisse und Symbole werden aus ihren Zusammenhängen gelöst, neu kombiniert oder mit vertauschten Rollen und Verantwortlichkeiten in die Gegenwart zurückgespielt. So kann eine erfundene oder umcodierte Vergangenheit als Begründungsressource für autoritäre und antidemokratische Zukunftsentwürfe dienen. Subversiv bezeichnet hier die Unterwanderung einer geteilten historischen Bedeutungsordnung; es ist kein Gütesiegel für eine emanzipatorische Wirkung.\n\nAnalytisch müssen drei Ebenen getrennt bleiben: die beobachtbare semantische Veränderung, eine belegbare strategische Absicht und die tatsächlich eingetretene Wirkung bei Menschen, Institutionen oder im öffentlichen Diskurs. Dass eine Umdeutung verbreitet oder häufig wiederholt wird, zeigt Reichweite und Wirkungspotenzial, aber noch keine Einstellungs- oder Verhaltensänderung.",
+      "woekRelation": "Wirkungsökonomisch ist Resignifikation ein möglicher Wirkmechanismus in Sprache, Geschichtspolitik und öffentlicher Kommunikation. Auslöser ist etwa eine Rede, Kampagne, Publikation oder symbolische Handlung. Als Wirkstoff im ausdrücklich nur analogen Sinn kann eine dekontextualisierte und neu codierte Begriff-Erzählung wirken. Ihr Wirkungspotenzial beziehungsweise Wirkungsrisiko entsteht über Wiederholung, affektive Aufladung, Vertrautheit, Anschlussfähigkeit, algorithmische Verstärkung und institutionelle Übernahme. Mögliche Wirkungen wären beobachtbare Veränderungen von historischem Wissen, Problemwahrnehmung, Vertrauen, demokratischen Normen, Diskursgrenzen oder Entscheidungen.\n\nDie Wirkungskette ist nicht automatisch: Aus Veröffentlichung folgt Reichweite, aus Reichweite folgt Exposition, aus Exposition kann Vertrautheit entstehen und erst weitere empirisch zu prüfende Schritte können zu veränderten Urteilen oder Handlungen führen. Gegenrede kann aufklären, zugleich aber den ursprünglichen Frame wiederholen und dessen Sichtbarkeit erhöhen. Deshalb prüft die Wirkungsökonomie Wirkpfad, Zielgruppen, Gegenrahmen, Nebenwirkungen, Zurechnung und Rückkopplung, ohne Sprache zu verbieten oder Menschen nach ihren Begriffen zu bewerten.",
+      "usageNote": "Den Begriff nicht als pauschales Etikett für jede neue Wortverwendung oder historische Neubewertung verwenden. Benennen, welche Bedeutung in welchem Kontext vorlag, wer was wie umcodiert, welche Funktion die neue Deutung erfüllen soll und welche Belege für Strategie, Verbreitung und Wirkung vorhanden sind. Historische Forschung, legitime politische Deutungskonkurrenz und manipulative Geschichtsumdeutung auseinanderhalten. Bei Aussagen über Wirkung Reichweite, Exposition, Wirkungspotenzial, beobachtete Zustandsveränderung und Zurechnung ausdrücklich trennen.",
+      "statusNote": "Anschlussbegriff aus Sprach-, Diskurs- und Geschichtstheorie. Die spezifische Fassung als subversive oder strategische Resignifikation des Historischen folgt der Analyse Volker Weiß'; Wirkpfad, Messlogik und normative Einordnung sind die Präzisierung der Wirkungsökonomie.",
+      "status": "anschlussbegriff",
+      "type": "Sprach-, Geschichts- und Diskursmechanismus",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "Weiß, Volker (2025): Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört.",
+      "sourceDocument": "Volker Weiß: Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört. Klett-Cotta, Stuttgart 2025.",
+      "sourceSection": "Strategische beziehungsweise subversive Resignifikation des Historischen",
+      "sourceProvenance": "Die spezifische Verwendung für extrem rechte Geschichtspolitik stützt sich auf Volker Weiß' Buch und die dokumentierten Besprechungen der Friedrich-Ebert-Stiftung und des Deutschlandfunks. Die allgemeine begriffliche Öffnung und die Warnung vor einer Gleichsetzung jeder Resignifikation mit rechter Strategie berücksichtigen die fachwissenschaftliche Kritik in KULT_online. Die Trennung von Auslöser, Wirkungspotenzial, Wirkungsrisiko, tatsächlicher Wirkung, Zurechnung und Rückkopplung ist die wirkungsökonomische Einordnung.",
+      "officialSources": [
+        "Weiß, Volker (2025): Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört. Klett-Cotta. Buchvorstellung der Friedrich-Ebert-Stiftung|/quellenarchiv/wok-g-2e0e9070a926/",
+        "Deutschlandfunk Kultur: Wie die extreme Rechte Geschichte umdeutet|/quellenarchiv/wok-g-818bd6024580/",
+        "KULT_online: Vergangenheitsbewältigung von rechts - Rezension und begriffliche Kritik|/quellenarchiv/wok-g-1f12bae8727c/",
+        "Institut für Demokratie und Zivilgesellschaft: Wissen schafft Demokratie 17 - Erinnerung als Praxis der Demokratie|/quellenarchiv/wok-g-606d14b40514/"
+      ],
+      "relatedTerms": [
+        "framing",
+        "gegenframe",
+        "reframing",
+        "narrativ",
+        "desinformation",
+        "propaganda",
+        "agenda-setting",
+        "wahrheitsillusionseffekt",
+        "diskurskultur",
+        "resonanzraum",
+        "wirkungsanalyse-von-sprache",
+        "wirkmechanismus",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkpfad"
+      ],
+      "doNotConfuseWith": [
+        "Framing: Ein Frame hebt bestimmte Aspekte hervor und ordnet sie; Resignifikation verändert oder besetzt die Bedeutung eines Ausdrucks, Symbols oder historischen Narrativs neu. Beides kann zusammenwirken.",
+        "Reframing: Reframing bietet bewusst einen anderen Deutungsrahmen an. Resignifikation kann darüber hinaus die Bedeutung des verwendeten Zeichens oder Begriffs selbst verschieben.",
+        "Desinformation: Desinformation arbeitet mit falschen oder irreführenden Aussagen. Resignifikation kann auch historisch richtige Fragmente verwenden und ihre Bedeutung durch Auswahl, Kombination oder Kontextverschiebung verändern.",
+        "Propaganda: Propaganda ist eine breitere organisierte Einfluss- und Mobilisierungsstrategie. Resignifikation kann darin ein einzelner Mechanismus sein.",
+        "Historische Forschung und Revision: Wissenschaftliche Neubewertung prüft Quellen, Gegenbelege und Kontexte methodisch offen. Die von Weiß kritisierte strategische Resignifikation nutzt Geschichte als politische Legitimationsressource und überschreibt oder verschiebt Zusammenhänge.",
+        "Wirkungsnachweis: Sichtbarkeit, Wiederholung, Empörung oder mediale Reichweite belegen noch keine tatsächliche Veränderung von Wissen, Haltung, Vertrauen oder Verhalten."
+      ],
+      "examples": [
+        "Die Bezeichnung des Nationalsozialismus als eigentlich linkes Projekt isoliert einzelne Wörter wie ‚sozialistisch‘ von Ideologie, Herrschaftspraxis und historischem Kontext. Die Umcodierung kann Verantwortung verschieben und demokratische Erinnerung delegitimieren; ob sie Wissen oder Einstellungen verändert, muss gesondert untersucht werden.",
+        "Begriffe wie Frieden oder Widerstand können aus ihrer historischen Verwendung gelöst und in einen nationalistischen oder autoritären Deutungsrahmen eingebaut werden. Die bloße Verwendung des Begriffs ist noch kein Beleg; entscheidend sind Kontext, Transformation, Funktion und Wirkpfad.",
+        "Eine von Diskriminierung betroffene Gruppe kann eine abwertende Fremdbezeichnung selbstbestimmt aneignen und positiv neu besetzen. Dieses emanzipatorische Beispiel zeigt, dass Resignifikation als Mechanismus nicht notwendig manipulativ oder antidemokratisch ist."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Allgemeiner Begriff und spezifische Verwendung bei Volker Weiß",
+          "body": "Resignifikation beschreibt allgemein eine Veränderung von Bedeutung. Weiß untersucht eine besondere politische Verwendung: Extrem rechte Akteure greifen historisches Material auf, lösen es aus Zusammenhängen, codieren Rollen, Begriffe oder Verantwortlichkeiten um und speisen die neue Deutung wieder in den öffentlichen Diskurs ein. Das Attribut subversiv bezeichnet dabei die Unterwanderung einer bestehenden Bedeutungs- und Erinnerungsordnung, nicht automatisch eine progressive oder emanzipatorische Qualität.",
+          "items": [
+            "Allgemeiner Mechanismus: Bedeutung wird neu ausgehandelt oder besetzt.",
+            "Spezifische Strategie: historische Deutungen werden politisch funktional umcodiert.",
+            "Normative Bewertung: ergibt sich aus Inhalt, Ziel, Verfahren und tatsächlichen Folgen, nicht aus dem Mechanismus allein."
+          ]
+        },
+        {
+          "title": "Möglicher Wirkpfad",
+          "body": "Eine Resignifikation wirkt nicht allein dadurch, dass sie formuliert wurde. Zwischen semantischer Umcodierung und gesellschaftlicher Zustandsveränderung liegen mehrere prüfbare Stufen.",
+          "items": [
+            "historisches oder semantisches Material → Auswahl und Dekontextualisierung",
+            "Umcodierung und affektive Aufladung → Wiederholung in eigenen Resonanzräumen",
+            "mediale, gegnerische oder institutionelle Anschlusskommunikation → zusätzliche Exposition",
+            "mögliche Veränderung von Verfügbarkeit, historischem Wissen, Vertrauen, Urteilen oder Entscheidungen",
+            "Beobachtung, Zurechnung und Rückkopplung → Korrektur, Gegenframe oder weitere Verstärkung"
+          ]
+        },
+        {
+          "title": "Diagnosefragen der Wirkungsökonomie",
+          "body": "Die Analyse rekonstruiert den Bedeutungs- und Wirkpfad, ohne eine kommunikative Absicht automatisch als eingetretene Wirkung zu behandeln. Sie dokumentiert Unsicherheit und Gegenhypothesen.",
+          "items": [
+            "Was bedeutete der Begriff oder das historische Ereignis im ursprünglichen Kontext?",
+            "Was wurde ausgelassen, neu kombiniert, vertauscht oder normativ umgewertet?",
+            "Wer verbreitet die neue Deutung über welche Resonanzräume und an welche Gruppen?",
+            "Welche Zustandsveränderung wäre zu erwarten, welche wurde tatsächlich beobachtet und wie belastbar ist die Zurechnung?",
+            "Welche Nebenwirkungen erzeugen Gegenrede, Faktencheck, Plattformlogik oder institutionelle Übernahme?"
+          ]
+        },
+        {
+          "title": "Demokratische Antwort ohne Sprachpolizei",
+          "body": "Demokratische Gegenwehr soll Bedeutung nicht zentral verordnen. Sie macht Quellen und Kontexte zugänglich, legt die Umcodierung offen, bietet einen sachlich tragfähigen Gegenrahmen an und beobachtet die tatsächlichen Folgen. Wo möglich, wird der irreführende Ausgangsframe nicht unnötig wiederholt. Ziel ist eine informierte, pluralistische und korrekturfähige Öffentlichkeit, nicht die Bewertung von Personen oder eine moralische Rangliste von Sprache.",
+          "items": [
+            "Kontext vor Empörung: Originalquellen, Zeitbezug und historische Verantwortung sichtbar machen.",
+            "Gegenrahmen statt bloßer Wiederholung: die demokratisch tragfähige Problemdefinition erklären.",
+            "Reichweite und Wirkung trennen: Resonanz beobachten, aber keine automatische Verhaltenswirkung behaupten."
+          ]
+        }
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "pageUrl": "/begriffe/resignifikation/",
+      "glossaryOrderKey": "Resignifikation / subversive Resignifikation",
+      "label": "Resignifikation / subversive Resignifikation",
+      "synonyms": [
+        "Resignifikation / subversive Resignifikation",
+        "Resignifikation",
+        "resignifizieren",
+        "Neubesetzung von Bedeutung",
+        "semantische Umcodierung",
+        "Bedeutungsverschiebung",
+        "strategische Resignifikation",
+        "subversive Resignifikation",
+        "strategische Resignifikation des Historischen",
+        "subversive Resignifikation des Historischen"
+      ],
+      "definition": "Resignifikation ist zunächst ein allgemeiner sprachlicher, kultureller und politischer Vorgang: Die Bedeutung eines Wortes, Zeichens, Symbols oder Narrativs wird verändert, neu besetzt oder in einen anderen Deutungszusammenhang gestellt. Das kann offen oder schleichend, emanzipatorisch oder manipulativ, beabsichtigt oder als Ergebnis gesellschaftlicher Auseinandersetzung geschehen. Der Begriff ist daher nicht von sich aus auf extrem rechte Kommunikation festgelegt. Auch die selbstbestimmte Wiederaneignung einer abwertenden Bezeichnung durch Betroffene kann eine Resignifikation sein.\n\nVolker Weiß verwendet die Begriffe subversive beziehungsweise strategische Resignifikation des Historischen für ein Verfahren extrem rechter Geschichtspolitik. Historische Begriffe, Ereignisse und Symbole werden aus ihren Zusammenhängen gelöst, neu kombiniert oder mit vertauschten Rollen und Verantwortlichkeiten in die Gegenwart zurückgespielt. So kann eine erfundene oder umcodierte Vergangenheit als Begründungsressource für autoritäre und antidemokratische Zukunftsentwürfe dienen. Subversiv bezeichnet hier die Unterwanderung einer geteilten historischen Bedeutungsordnung; es ist kein Gütesiegel für eine emanzipatorische Wirkung.\n\nAnalytisch müssen drei Ebenen getrennt bleiben: die beobachtbare semantische Veränderung, eine belegbare strategische Absicht und die tatsächlich eingetretene Wirkung bei Menschen, Institutionen oder im öffentlichen Diskurs. Dass eine Umdeutung verbreitet oder häufig wiederholt wird, zeigt Reichweite und Wirkungspotenzial, aber noch keine Einstellungs- oder Verhaltensänderung.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 2163,
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "related_terms": [
+        "framing",
+        "gegenframe",
+        "reframing",
+        "narrativ",
+        "desinformation",
+        "propaganda",
+        "agenda-setting",
+        "wahrheitsillusionseffekt",
+        "diskurskultur",
+        "resonanzraum",
+        "wirkungsanalyse-von-sprache",
+        "wirkmechanismus",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkpfad"
+      ]
+    },
+    {
       "id": "resilienz",
       "termId": "resilienz",
       "label": "Resilienz",
@@ -304055,10 +304235,51 @@
       ]
     },
     {
-      "id": "resonanzraum",
       "termId": "resonanzraum",
-      "label": "Resonanzraum",
       "canonicalLabel": "Resonanzraum",
+      "relatedTerms": [
+        "resonanz",
+        "anschlussfaehigkeit",
+        "salienz",
+        "framing",
+        "strukturdeterminiertheit",
+        "astroturfing",
+        "bestaetigungsfehler",
+        "commons-gemeingueter",
+        "emotionale-arbeit",
+        "emotionsregulation",
+        "faktenargumentation",
+        "gesellschaft",
+        "glossar-backlink-audit",
+        "gregory-bateson",
+        "identitaetsschutz",
+        "kognitive-dissonanz",
+        "lebensform",
+        "motiviertes-denken",
+        "narrativ",
+        "neuropsychologische-wirkmechanismen",
+        "oeffentlicher-raum-arendt",
+        "paul-watzlawick",
+        "resonanzarchitektur",
+        "resonanzrisiko",
+        "soziale-bewaehrtheit",
+        "sprachspiel",
+        "strukturelle-kopplung",
+        "vertrauensverschiebung",
+        "weltlosigkeit",
+        "wirklichkeitskonstruktion",
+        "wirkstoff",
+        "wirkungsblindheit",
+        "wirkungsnetz",
+        "wirkungsorientiertes-hosting",
+        "wirkungspotenzial",
+        "diskursfaehigkeit",
+        "frame",
+        "reframing",
+        "resignifikation"
+      ],
+      "id": "resonanzraum",
+      "label": "Resonanzraum",
       "slug": "resonanzraum",
       "aliases": [
         "Resonanzraum",
@@ -304158,80 +304379,45 @@
         "Botnetz",
         "koordinierte Manipulation"
       ],
+      "status": "führender-begriff",
+      "version": "1.0",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer, emotionaler oder institutioneller Raum, in dem Sprache, Bilder, Narrative, Produkte, Regeln oder Ereignisse Anschlussfähigkeit erzeugen.",
+      "hoverDefinition": "Ein Resonanzraum ist ein sozialer, medialer, emotionaler oder institutioneller Raum, in dem Impulse aufgenommen, verstärkt, blockiert oder umgedeutet werden.",
       "definition": "Resonanzräume können konstruktiv oder destruktiv sein. Sie entscheiden mit, ob Fakten integrieren, ob Narrative mobilisieren, ob Produkte Verhalten ändern oder ob politische Aussagen Vertrauen verschieben.",
       "longDefinition": "Ein Resonanzraum ist kein Nachweis eingetretener Wirkung. Er beschreibt den Raum, in dem Impulse aufgenommen, verstärkt, blockiert oder umgedeutet werden können: sozial, medial, emotional, institutionell oder ökonomisch.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
       "woekRelation": "Resonanzräume können konstruktiv oder destruktiv sein. Sie entscheiden mit, ob Fakten integrieren, Narrative mobilisieren, Produkte Verhalten ändern oder politische Aussagen Vertrauen verschieben.",
+      "reviewStatus": "approved",
       "statusNote": "Nicht mit nachgewiesener Wirkung gleichsetzen.",
       "usageNote": "Nicht mit nachgewiesener Wirkung gleichsetzen.",
-      "categories": [
-        "architekturbegriff",
-        "psychologische-systemische-wirkmechanismen"
-      ],
+      "pageUrl": "/begriffe/resonanzraum/",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
-      "relatedTerms": [
-        "resonanz",
-        "anschlussfaehigkeit",
-        "salienz",
-        "framing",
-        "strukturdeterminiertheit",
-        "astroturfing",
-        "bestaetigungsfehler",
-        "commons-gemeingueter",
-        "emotionale-arbeit",
-        "emotionsregulation",
-        "faktenargumentation",
-        "gesellschaft",
-        "glossar-backlink-audit",
-        "gregory-bateson",
-        "identitaetsschutz",
-        "kognitive-dissonanz",
-        "lebensform",
-        "motiviertes-denken",
-        "narrativ",
-        "neuropsychologische-wirkmechanismen",
-        "oeffentlicher-raum-arendt",
-        "paul-watzlawick",
-        "resonanzarchitektur",
-        "resonanzrisiko",
-        "soziale-bewaehrtheit",
-        "sprachspiel",
-        "strukturelle-kopplung",
-        "vertrauensverschiebung",
-        "weltlosigkeit",
-        "wirklichkeitskonstruktion",
-        "wirkstoff",
-        "wirkungsblindheit",
-        "wirkungsnetz",
-        "wirkungsorientiertes-hosting",
-        "wirkungspotenzial",
-        "diskursfaehigkeit",
-        "frame",
-        "reframing"
-      ],
+      "dataStandardsGroup": "",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "sourceSection": "Sprache und Medien",
+      "glossaryOrderKey": "resonanzraum",
+      "priority": 89,
       "officialSources": [
         "Warum Fakten nicht reichen|/quellenarchiv/wok-q-0681/"
       ],
-      "pageUrl": "/begriffe/resonanzraum/",
-      "priority": 89,
-      "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Sprache und Medien",
-      "hoverDefinition": "Ein Resonanzraum ist ein sozialer, medialer, emotionaler oder institutioneller Raum, in dem Impulse aufgenommen, verstärkt, blockiert oder umgedeutet werden.",
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
       "doNotConfuseWith": [
         "Wirkung",
         "Wirkungspotenzial"
       ],
-      "relatedDocuments": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "architekturbegriff",
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "examples": [],
       "preferredUsage": "Bei Medien, Sprache, Kultur und Öffentlichkeit nutzen.",
-      "deprecatedUsage": [],
-      "reviewStatus": "approved",
-      "glossaryOrderKey": "resonanzraum",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29",
@@ -304295,7 +304481,8 @@
         "wirkungspotenzial",
         "diskursfaehigkeit",
         "frame",
-        "reframing"
+        "reframing",
+        "resignifikation"
       ],
       "source_links": [],
       "internal_links": [],
@@ -304332,11 +304519,6 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "dataStandardsGroup": "",
-      "curatedSources": [],
-      "sourceLinks": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -306512,7 +306694,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Reziprozität",
-      "priority": 2263,
+      "priority": 2274,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -324313,7 +324495,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Senkenallmende",
-      "priority": 2236,
+      "priority": 2247,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -330881,7 +331063,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Soziales Dilemma",
-      "priority": 2247,
+      "priority": 2258,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -336101,7 +336283,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung auf Basis amtlicher Bundesarchitektur",
       "glossaryOrderKey": "Staatliche Nachhaltigkeitsarchitektur",
-      "priority": 2210,
+      "priority": 2221,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -336174,7 +336356,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung 2026-08-21 / #241/#253",
       "glossaryOrderKey": "Staatlicher GFA-/eNAP-Benchmark",
-      "priority": 2213,
+      "priority": 2224,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -353688,7 +353870,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Systemisch positives Summenspiel",
-      "priority": 2245,
+      "priority": 2256,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -353908,7 +354090,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Systemische Kooperation",
-      "priority": 2255,
+      "priority": 2266,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -361135,7 +361317,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2196,
+      "priority": 2207,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -369839,7 +370021,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Trittbrettfahren",
-      "priority": 2250,
+      "priority": 2261,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -376845,7 +377027,7 @@
       "category": "Bewertungsbegriff",
       "sourceSection": "Vertiefung J · Vorschläge für Glossartexte",
       "glossaryOrderKey": "Unvollständiger Preis",
-      "priority": 2239,
+      "priority": 2250,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -378657,7 +378839,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2163,
+      "priority": 2174,
       "curatedSources": [],
       "sourceLinks": [],
       "deprecatedUsage": [],
@@ -380642,7 +380824,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Verfahrensgerechtigkeit",
-      "priority": 2264,
+      "priority": 2275,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -387178,7 +387360,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Vertrauensallmende",
-      "priority": 2242,
+      "priority": 2253,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -390050,7 +390232,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
-      "priority": 2215,
+      "priority": 2226,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -402555,10 +402737,23 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "wirkmechanismus",
       "termId": "wirkmechanismus",
-      "label": "Wirkmechanismus",
       "canonicalLabel": "Wirkmechanismus",
+      "relatedTerms": [
+        "ausloeser",
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "iooi",
+        "wirkungsnachweis",
+        "wirkung",
+        "wirkpfad",
+        "wirkungstraeger",
+        "kognitive-dissonanz",
+        "resignifikation"
+      ],
+      "id": "wirkmechanismus",
+      "label": "Wirkmechanismus",
       "slug": "wirkmechanismus",
       "aliases": [
         "Wirkmechanismus",
@@ -402574,41 +402769,33 @@
         "Mechanismus des Wirkpfads",
         "Wirkungsmechanismus"
       ],
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "source": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
       "shortDefinition": "Ein Wirkmechanismus beschreibt, wie eine Wirkung entstehen soll oder entstehen kann.",
+      "hoverDefinition": "Ein Wirkmechanismus erklärt einen plausiblen Weg zur Wirkung, ist aber noch kein Wirkungsnachweis.",
       "definition": "Wirkmechanismen beschreiben die vermuteten oder empirisch untersuchten Prozesse zwischen Auslöser und Zustandsveränderung. Eine Preisänderung kann Kaufverhalten verändern, ein Algorithmus bestimmte Inhalte verstärken, eine Steuerdifferenz Lieferantenauswahl beeinflussen oder Desinformation Vertrauen schwächen.\n\nEin plausibler Mechanismus beweist nicht, dass die Wirkung in der erwarteten Stärke, Richtung oder bei den erwarteten Gruppen eintritt. Für starke Kausalaussagen braucht es passende Evidenz, eine klare Systemgrenze und die Prüfung alternativer Erklärungen.",
       "longDefinition": "Wirkmechanismen beschreiben die vermuteten oder empirisch untersuchten Prozesse zwischen Auslöser und Zustandsveränderung. Eine Preisänderung kann Kaufverhalten verändern, ein Algorithmus bestimmte Inhalte verstärken, eine Steuerdifferenz Lieferantenauswahl beeinflussen oder Desinformation Vertrauen schwächen.\n\nEin plausibler Mechanismus beweist nicht, dass die Wirkung in der erwarteten Stärke, Richtung oder bei den erwarteten Gruppen eintritt. Für starke Kausalaussagen braucht es passende Evidenz, eine klare Systemgrenze und die Prüfung alternativer Erklärungen.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
       "woekRelation": "Die WÖk macht Wirkmechanismen sichtbar, um Wirkungspotenziale und -risiken früh zu prüfen. Sie trennt den Mechanismus von der späteren Wirkungsermittlung und Wirkungsbewertung.",
+      "reviewStatus": "redaktionell konsolidiert",
       "statusNote": "",
       "usageNote": "Bei unsicherer Datenlage von plausiblem oder hypothesiertem Wirkmechanismus sprechen. Nicht aus einer Mechanismusbeschreibung auf eine eingetretene Wirkung schließen.",
-      "categories": [
-        "grundbegriff"
-      ],
+      "pageUrl": "/begriffe/wirkmechanismus/",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
-      "relatedTerms": [
-        "ausloeser",
-        "wirkstoff",
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "iooi",
-        "wirkungsnachweis",
-        "wirkung",
-        "wirkpfad",
-        "wirkungstraeger",
-        "kognitive-dissonanz"
-      ],
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "Vorwirkung und Wirkpfad",
+      "glossaryOrderKey": "Wirkmechanismus",
+      "priority": 2201,
       "officialSources": [
         "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-40a9d42ab436/"
       ],
-      "pageUrl": "/begriffe/wirkmechanismus/",
-      "priority": 2190,
-      "status": "woek-praezisierungsbegriff",
-      "version": "1.0",
-      "category": "Grundbegriff",
-      "source": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
-      "sourceDocument": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
-      "sourceSection": "Vorwirkung und Wirkpfad",
-      "hoverDefinition": "Ein Wirkmechanismus erklärt einen plausiblen Weg zur Wirkung, ist aber noch kein Wirkungsnachweis.",
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
       "doNotConfuseWith": [
         "Wirkungsnachweis: Evidenz, dass eine Veränderung eingetreten und gegebenenfalls zurechenbar ist.",
         "Wirkungspotenzial: Möglichkeit einer Veränderung.",
@@ -402616,15 +402803,16 @@
         "Wirkung",
         "Wirkstoff"
       ],
-      "relatedDocuments": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "grundbegriff"
+      ],
+      "sourceDocument": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
       "examples": [
         "Ein Energiepreis verändert über Kosten und verfügbare Alternativen Kauf- und Investitionsentscheidungen.",
         "Ein Algorithmus kann über Ranking und Wiederholung die Sichtbarkeit bestimmter Inhalte verändern."
       ],
       "preferredUsage": "Bei Kausal- und Pfadlogiken verwenden.",
-      "deprecatedUsage": [],
-      "reviewStatus": "redaktionell konsolidiert",
-      "glossaryOrderKey": "Wirkmechanismus",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
       "related_terms": [
@@ -402637,7 +402825,8 @@
         "wirkung",
         "wirkpfad",
         "wirkungstraeger",
-        "kognitive-dissonanz"
+        "kognitive-dissonanz",
+        "resignifikation"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -402678,11 +402867,6 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "dataStandardsGroup": "",
-      "curatedSources": [],
-      "sourceLinks": [],
       "autoLinkAllowed": true,
       "maxAutoLinksPerPage": 1,
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
@@ -403405,7 +403589,7 @@
         "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-40a9d42ab436/"
       ],
       "pageUrl": "/begriffe/wirkstoff/",
-      "priority": 2187,
+      "priority": 2198,
       "status": "woek-praezisierungsbegriff",
       "version": "1.0",
       "category": "Grundbegriff",
@@ -406860,7 +407044,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2184,
+      "priority": 2195,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -406882,10 +407066,17 @@
       ]
     },
     {
-      "id": "wirkungsanalyse-von-sprache",
       "termId": "wirkungsanalyse-von-sprache",
-      "label": "Wirkungsanalyse von Sprache",
       "canonicalLabel": "Wirkungsanalyse von Sprache",
+      "relatedTerms": [
+        "folgencheck",
+        "frame",
+        "sprachlicher-trigger",
+        "resonanzraum",
+        "resignifikation"
+      ],
+      "id": "wirkungsanalyse-von-sprache",
+      "label": "Wirkungsanalyse von Sprache",
       "slug": "wirkungsanalyse-von-sprache",
       "aliases": [
         "Wirkungsanalyse von Sprache",
@@ -406895,67 +407086,63 @@
         "Wirkungsanalyse von Sprache",
         "sprachliche Wirkungsanalyse"
       ],
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "shortDefinition": "Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.",
-      "short_definition": "Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.",
+      "hoverDefinition": "Wirkungsanalyse von Sprache prüft Frames, Trigger, Resonanzräume und Handlungsimpulse politischer Sprache.",
       "definition": "Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.",
       "longDefinition": "Wirkungsanalyse von Sprache fragt nicht nur, ob eine Aussage wahr ist, sondern welche Frames, Trigger, Resonanzräume und Handlungsimpulse sie erzeugt.",
-      "long_definition": "Wirkungsanalyse von Sprache fragt nicht nur, ob eine Aussage wahr ist, sondern welche Frames, Trigger, Resonanzräume und Handlungsimpulse sie erzeugt.",
-      "hoverDefinition": "Wirkungsanalyse von Sprache prüft Frames, Trigger, Resonanzräume und Handlungsimpulse politischer Sprache.",
-      "woekRelation": "Die Wirkungsanalyse von Sprache verbindet Faktencheck, Folgencheck und demokratische Gegenkommunikation.",
-      "woek_einordnung": "Die Wirkungsanalyse von Sprache verbindet Faktencheck, Folgencheck und demokratische Gegenkommunikation.",
-      "relatedTerms": [
-        "folgencheck",
-        "frame",
-        "sprachlicher-trigger",
-        "resonanzraum"
-      ],
-      "related_terms": [
-        "folgencheck",
-        "frame",
-        "sprachlicher-trigger",
-        "resonanzraum"
-      ],
-      "categories": [
-        "sprache-wirklichkeit-und-kommunikation"
-      ],
-      "tags": [
-        "Sprache",
-        "Narrative",
-        "Demokratie"
-      ],
-      "status": "anschlussbegriff",
-      "type": "Anschlussbegriff",
-      "begriffstyp": "Anschlussbegriff",
-      "category": "Sprache, Wirklichkeit und Kommunikation",
-      "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
-      "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
-      "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": [
-        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
-      ],
-      "preferredUsage": "Als Verfahren für Folgencheck politischer Sprache verwenden.",
-      "deprecatedUsage": [
-        "Wirkungsanalyse als Gesinnungsprüfung missverstehen"
-      ],
-      "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03",
-      "version": "1.0",
-      "doNotConfuseWith": [],
-      "officialSources": [
-        "Wirkungsradar Kernenergie Deutschland|/quellenarchiv/wok-g-8bfd061603e2/"
-      ],
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
+      "woekRelation": "Die Wirkungsanalyse von Sprache verbindet Faktencheck, Folgencheck und demokratische Gegenkommunikation.",
+      "reviewStatus": "approved",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/wirkungsanalyse-von-sprache/",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "sourceSection": "Sprache als politischer Wirkstoff",
       "glossaryOrderKey": "Wirkungsanalyse von Sprache",
       "priority": 1432,
+      "officialSources": [
+        "Wirkungsradar Kernenergie Deutschland|/quellenarchiv/wok-g-8bfd061603e2/"
+      ],
       "curatedSources": [],
       "sourceLinks": [],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [
+        "Wirkungsanalyse als Gesinnungsprüfung missverstehen"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation",
+        "grundbegriff"
+      ],
+      "short_definition": "Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.",
+      "long_definition": "Wirkungsanalyse von Sprache fragt nicht nur, ob eine Aussage wahr ist, sondern welche Frames, Trigger, Resonanzräume und Handlungsimpulse sie erzeugt.",
+      "woek_einordnung": "Die Wirkungsanalyse von Sprache verbindet Faktencheck, Folgencheck und demokratische Gegenkommunikation.",
+      "related_terms": [
+        "folgencheck",
+        "frame",
+        "sprachlicher-trigger",
+        "resonanzraum",
+        "resignifikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
+      "preferredUsage": "Als Verfahren für Folgencheck politischer Sprache verwenden.",
+      "lastUpdated": "2026-06-03",
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -409108,7 +409295,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2164,
+      "priority": 2175,
       "curatedSources": [],
       "sourceLinks": [],
       "deprecatedUsage": [],
@@ -410220,7 +410407,7 @@
         "OECD DAC Criteria, Impact|/quellenarchiv/wok-q-0329/"
       ],
       "pageUrl": "/begriffe/wirkungsblindheit/",
-      "priority": 2218,
+      "priority": 2229,
       "status": "approved",
       "version": "2.0",
       "category": "Grundbegriff",
@@ -413202,7 +413389,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsdilemma",
-      "priority": 2257,
+      "priority": 2268,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -420419,7 +420606,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsintegrität",
-      "priority": 2244,
+      "priority": 2255,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -423247,7 +423434,7 @@
         "United Nations: Sustainable Development Goals|/quellenarchiv/wok-q-0024/"
       ],
       "pageUrl": "/begriffe/wirkungslenkung/",
-      "priority": 2481,
+      "priority": 2492,
       "status": "approved",
       "version": "1.0",
       "category": "Steuerungsbegriff",
@@ -424033,7 +424220,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2230,
+      "priority": 2241,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -429694,7 +429881,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2494,
+      "priority": 2505,
       "officialSources": [
         "WOeK Begriffsleitfaden fuehrend v1.5|/quellenarchiv/wok-g-e6ede1ac4941/"
       ],
@@ -431142,7 +431329,7 @@
         "WOeK Begriffsleitfaden fuehrend v1.5|/quellenarchiv/wok-g-e6ede1ac4941/"
       ],
       "pageUrl": "/begriffe/wirkungsradar/",
-      "priority": 2493,
+      "priority": 2504,
       "status": "woek-praegungsbegriff",
       "version": "1.5",
       "category": "Architekturbegriff",
@@ -433054,7 +433241,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsrelevanz statt Rechtsform",
-      "priority": 2217,
+      "priority": 2228,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -436177,7 +436364,7 @@
         "Die Wirkungsökonomie als lernendes Kreislaufsystem|/quellenarchiv/wok-q-0729/"
       ],
       "pageUrl": "/begriffe/wirkungsrueckkopplung/",
-      "priority": 2472,
+      "priority": 2483,
       "status": "approved",
       "version": "1.0",
       "category": "Grundbegriff",
@@ -437492,7 +437679,7 @@
         "Product Environmental Footprint|/quellenarchiv/wok-q-0302/"
       ],
       "pageUrl": "/begriffe/wirkungssteuer/",
-      "priority": 2229,
+      "priority": 2240,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Steuern, Preise & Rückkopplung",
@@ -438031,7 +438218,7 @@
         "Product Environmental Footprint|/quellenarchiv/wok-q-0302/"
       ],
       "pageUrl": "/begriffe/wirkungssteuergesetz/",
-      "priority": 2232,
+      "priority": 2243,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Recht, Steuern & Wirkungsarchitektur",
@@ -438987,7 +439174,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungstragung",
-      "priority": 2241,
+      "priority": 2252,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -439835,7 +440022,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2177,
+      "priority": 2188,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -446841,7 +447028,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2200,
+      "priority": 2211,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -447681,7 +447868,7 @@
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
       "pageUrl": "/begriffe/wstg/",
-      "priority": 2233,
+      "priority": 2244,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Recht, Steuern & Wirkungsarchitektur",
@@ -450014,7 +450201,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung 2026-08-21",
       "glossaryOrderKey": "Zielbezug und Wirkung",
-      "priority": 2208,
+      "priority": 2219,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
