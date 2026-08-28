@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "130d94a7b4f1ab8d7c6addcd4783123d5d43fdec",
+  "audited_main_commit": "b0209e26bbc93d89070bc89e0c83df7d4ab0269f",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -42,9 +42,9 @@
       "programme_analysis_complete": 3,
       "programme_analysis_complete_parties": ["DKP", "Die PARTEI", "SGP"],
       "genuine_fach_programmes": 9,
-      "remaining_review_envelopes": 1259,
-      "remaining_exact_effect_objects_identified": 0,
-      "remaining_review_scopes": 1259,
+      "remaining_review_envelopes": 1258,
+      "remaining_exact_effect_objects_identified": 13,
+      "remaining_review_scopes": 1271,
       "remaining_exact_effect_object_count": null,
       "known_segmentation_defects": 2,
       "evidence": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
@@ -637,14 +637,14 @@
         "canonicalization_pending_programmes": [],
         "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json",
         "fach_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json",
-        "remaining_review_envelopes": 1259,
-        "remaining_exact_effect_objects_identified": 0,
-        "remaining_review_scopes": 1259,
+        "remaining_review_envelopes": 1258,
+        "remaining_exact_effect_objects_identified": 13,
+        "remaining_review_scopes": 1271,
         "remaining_exact_effect_object_count": null,
         "known_segmentation_defects": ["BE-SPD-2026-SU-0136-A01", "BE-SPD-2026-SU-0136-A03"],
         "rejected_false_terminal_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json",
-        "preserved_existing_scope": "Exact terminal Fach stock is preserved for DKP, Die PARTEI and SGP; BSW PDF pages 1-22 are terminal through the explicit issue #240 handoff chain. BSW now contributes 278 source-bound terminal records while remaining programme-open.",
-        "required_fach_action": "For the nine exact genuine_fach_programmes, supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. The residual contains 1259 bounded page review envelopes; no already segmented exact BSW child remains open after P22 closure. The overall exact effect-object count remains unknown until all page envelopes are segmented."
+        "preserved_existing_scope": "Exact terminal Fach stock is preserved for DKP, Die PARTEI and SGP; BSW PDF pages 1-22 remain terminal. P23 contributes 25 source-bound terminal original records and exposes 13 deterministic exact child review objects without synthesizing child Fach. BSW now contributes 303 terminal records while remaining programme-open.",
+        "required_fach_action": "For the nine exact genuine_fach_programmes, supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. The residual contains 1258 bounded page review envelopes plus 13 exact source-bound P23 child objects awaiting explicit WÖk Fach. The overall exact effect-object count remains unknown until all page envelopes are segmented."
       },
       {
         "id": "MV-FACH-CONTENT-RESIDUAL",
