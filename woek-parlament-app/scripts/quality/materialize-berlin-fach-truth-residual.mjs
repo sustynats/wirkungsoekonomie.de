@@ -365,6 +365,7 @@ export function buildBerlinFachTruthResidual() {
     jurisdiction: 'DE-BE',
     election: 'agh-2026-be',
     issue: 240,
+    base_main_commit: '44a57eecf44887941e504ea52723d247d2790f6a',
     source_as_of: '2026-08-28T07:56:47+02:00',
     status: 'BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12',
     controller_authority: {

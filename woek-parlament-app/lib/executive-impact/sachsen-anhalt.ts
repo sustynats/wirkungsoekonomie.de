@@ -51,7 +51,7 @@ export function saxonyAnhaltExecutiveImpactSummary({
       time_horizon: path.time_horizon,
       why_relevant: path.why_relevant,
       source_path_ids: [path.id],
-      reality_check: commitment?.primaryIndicator ?? null,
+      reality_check: commitment?.boundaryStatus !== "BLOCK" ? commitment?.primaryIndicator ?? null : null,
     };
   });
 
@@ -63,13 +63,13 @@ export function saxonyAnhaltExecutiveImpactSummary({
     stage: "EX_ANTE" as const,
     analysis_version: projectionData.analysis_version,
     knowledge_cutoff: projectionData.knowledge_cutoff,
-    bottom_line: projection.bottom_line,
+    bottom_line: editorial.overallLabel,
     editorial_summary: editorial.editorialSummary,
     key_finding: projection.why_it_matters,
     direction_label: projection.direction_label,
     overall_character: projection.overall_character,
     overall_materiality: projection.overall_materiality,
-    why_it_matters: projection.why_it_matters,
+    why_it_matters: editorial.impactCoreSummary,
     system_boundary: projection.system_boundary,
     mpd: projection.mpd,
     sdg_impacts: projection.sdg_impacts,

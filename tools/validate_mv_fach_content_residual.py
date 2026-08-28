@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
-"""Repository-level entrypoint for the independent MV full-programme validator."""
+"""Repository boundary for the current fail-closed MV Fach state."""
 
 from pathlib import Path
-import runpy
+import subprocess
 
 
-VALIDATOR = (
-    Path(__file__).resolve().parents[1]
-    / "woek-parlament-app/scripts/quality/validate-mv-combined-terminal-matrix.py"
+ROOT = Path(__file__).resolve().parents[1]
+CHECKER = ROOT / "woek-parlament-app/scripts/quality/check-mv-fach-truth-pending.mjs"
+
+process = subprocess.run(
+    ["node", str(CHECKER)],
+    cwd=ROOT / "woek-parlament-app",
+    check=False,
+    text=True,
+    capture_output=True,
 )
-
-runpy.run_path(str(VALIDATOR), run_name="__main__")
+if process.returncode:
+    raise SystemExit(process.stderr.strip() or process.stdout.strip() or "MV Fach-truth gate failed")
+print(process.stdout, end="")

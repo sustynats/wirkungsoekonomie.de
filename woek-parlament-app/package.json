@@ -31,7 +31,7 @@
     "check:berlin-current-source": "tsx scripts/quality/check-berlin-current-source.ts",
     "check:berlin-fach-residual": "node scripts/quality/check-berlin-fach-truth-residual.mjs",
     "check:mv-current-source": "tsx scripts/quality/check-mv-current-source.ts",
-    "check:mv-fach-residual": "python3 scripts/quality/validate-mv-combined-terminal-matrix.py",
+    "check:mv-fach-residual": "node scripts/quality/check-mv-fach-truth-pending.mjs",
     "check:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs",
     "monitor:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs --live",
     "check:government-identifiers": "tsx scripts/quality/check-government-identifier-shapes.ts",

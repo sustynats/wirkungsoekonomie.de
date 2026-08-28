@@ -13,7 +13,7 @@ test('Berlin Fach-truth residual preserves 3 terminal and exposes 9 open program
     terminal_source_objects: 147,
     remaining_review_envelopes: 1267,
     known_segmentation_defects: 2,
-    descriptor_sha256: '699c2f184900909cc672fc282f82e9a6e8117edbe31301d1221d08535605ffca',
+    descriptor_sha256: 'dc08e32cb508c578e937bd0cac02bc9978ac99722a823fd75d9e1f53dd32a0fe',
     gate: 'FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH',
   });
 });

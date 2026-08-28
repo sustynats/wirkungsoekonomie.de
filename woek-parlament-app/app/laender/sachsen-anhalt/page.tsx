@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ImpactVisualOverview } from "@/app/components/impact-visuals/ImpactVisualOverview";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorial } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
@@ -8,6 +9,7 @@ import { getSaxonyAnhaltPublicationSources } from "@/lib/publication/fachakten";
 import { buildSaxonyAnhaltProgrammeModel } from "@/lib/presentation/sachsen-anhalt-programme-model";
 import { getCommunicationMediaImpact } from "@/lib/state-programmes/communication-media-impact";
 import { saxonyAnhaltExecutiveImpactSummary } from "@/lib/executive-impact/sachsen-anhalt";
+import { assessmentOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 import type { ExecutiveImpactSummary, ImpactDirection } from "@/lib/executive-impact/contracts";
 import styles from "./page.module.css";
 
@@ -48,12 +50,20 @@ function DirectionSignal({ value }: { value: ImpactDirection }) {
 }
 
 function ProgrammeImpactCard({ party, title, href, summary }: { party: string; title: string; href: string; summary: ExecutiveImpactSummary }) {
+  const maturity = assessmentOnlyPublicMaturity(title, {
+    assessmentLabel: summary.bottom_line,
+    impactCoreSummary: summary.why_it_matters,
+    editorialSummary: summary.editorial_summary ?? summary.why_it_matters,
+    keyFinding: summary.key_finding ?? summary.bottom_line,
+    evidenceSummary: summary.evidence_summary,
+  });
   return <article className={styles.programmeCard} data-woek-programme-impact-card={summary.object_id} data-materiality={summary.overall_materiality.toLowerCase()}>
     <header>
-      <p>{party} · Ex-ante-Wirkungsanalyse</p>
+      <p>{party}</p>
       <span className={styles.programmeTitle}>{compact(title, 58)}</span>
       <h3>{compact(summary.bottom_line, 82)}</h3>
     </header>
+    <PublicMaturity maturity={maturity} compact />
     <div className={styles.mpd} role="group" aria-label="Mensch, Planet, Demokratie">
       {(["human", "planet", "democracy"] as const).map((key) => {
         const item = summary.mpd[key];
@@ -111,8 +121,8 @@ export default async function SaxonyAnhaltPage() {
       </div>
     </section>
 
-    <section className={`shell section ${styles.audit}`} aria-labelledby="state-status-title">
-      <div><p className="eyebrow">Terminaler Quellen- und Fachstand · 6/6</p><h2 id="state-status-title">Vollbestand erhalten, öffentliche Projektion source-bound.</h2><p>Alle sechs finalen Manifeste schließen Quellenlücken und Kollisionen. Prozess-, Versions- und Registerdaten bleiben in den Detailakten nachvollziehbar, stehen aber nach dem Wirkungsbefund. Der historische Release-1-Arbeitsbestand bleibt als getrennte Zähldimension erhalten.</p></div>
+    <section className={`shell section ${styles.audit}`} aria-labelledby="state-status-title" data-woek-process-metadata>
+      <div><p className="eyebrow">Terminaler Quellen- und Fachstand · 6/6</p><h2 id="state-status-title">Vollbestand erhalten, öffentliche Projektion source-bound.</h2><p>Alle sechs finalen Manifeste sichern volle Primärquellen-Parität und schließen Quellenlücken und Kollisionen. Prozess-, Versions- und Registerdaten bleiben in den Detailakten nachvollziehbar, stehen aber nach dem Wirkungsbefund. Der historische Release-1-Arbeitsbestand bleibt als getrennte Zähldimension erhalten.</p></div>
       <dl><div><dt>Source Units</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.source_units.toLocaleString("de-DE")}</dd></div><div><dt>Wirkungsmechanismen</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.effect_mechanisms.toLocaleString("de-DE")}</dd></div><div><dt>Programme</dt><dd>6/6 terminal</dd></div><div><dt>Wirkungsbilder</dt><dd>12/12 freigegeben</dd></div></dl>
     </section>
 

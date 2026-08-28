@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "a0f4b8ac7bd49c3c145003bb457627c897aea26a",
+  "audited_main_commit": "44a57eecf44887941e504ea52723d247d2790f6a",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -18,6 +18,8 @@
   "release_policy": {
     "github_first": true,
     "no_new_vercel_build": true,
+    "current_github_golden_readiness": "FACH_RESIDUAL_OPEN",
+    "current_github_golden_readiness_artifact": "ops/releases/parliament-current-golden-readiness-2026-08-28.json",
     "next_runtime_release_condition": "BERLIN_AND_MV_PROGRAMME_ANALYSIS_TERMINAL_THEN_SUPERSEDING_COMBINED_GITHUB_GOLDEN_STATE",
     "release_architecture_change_allowed": false
   },

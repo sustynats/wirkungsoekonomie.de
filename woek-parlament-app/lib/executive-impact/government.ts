@@ -26,13 +26,13 @@ function dimension(record: WoeKImpactCase, key: "MENSCH" | "PLANET" | "DEMOKRATI
   const paths = record.impact_paths.filter((path) => path.mpd.includes(key));
   const changes = unique(paths.map((path) => path.state_change));
   return {
-    direction: paths.length ? aggregateDirection(paths.map((path) => path.direction)) : "OPEN",
+    direction: "OPEN",
     materiality: "OPEN",
     evidence: paths.length ? evidenceFor(paths.map((path) => path.evidence)) : "NOT_ASSESSABLE",
     headline: changes.length === 1 ? changes[0] : changes.length ? `${changes.length} getrennte, freigegebene Zustandsänderungen` : "Keine freigegebene Zuordnung",
     state_changes: changes,
     rationale: changes.length
-      ? "Die Zustandsänderungen und die qualitative Richtung stammen ausschließlich aus den diesem MPD-Bereich ausdrücklich zugeordneten Fachpfaden und der freigegebenen Aggregationsregel. Eine domänenspezifische Materialität bleibt ohne Pfadmaterialität offen."
+      ? "Die Zustandsänderungen stammen ausschließlich aus den diesem MPD-Bereich ausdrücklich zugeordneten Fachpfaden. Eine domänenweite Richtung und Materialität bleiben ohne eigene fachlich freigegebene Aggregation offen."
       : "Ein fehlender MPD-Bezug wird nicht als neutrale Wirkung interpretiert.",
     source_path_ids: paths.length ? paths.map((path) => path.path_id) : [record.impact_case_id],
   };

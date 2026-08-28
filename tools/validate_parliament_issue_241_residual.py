@@ -19,6 +19,7 @@ BE_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-regist
 BE_FACH_PATH = ROOT / "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
 MV_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
 GOLDEN_PATH = ROOT / "ops/releases/parliament-github-golden-state-2026-08-23.json"
+CURRENT_READINESS_PATH = ROOT / "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
 STATE_ADAPTERS_PATH = ROOT / "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
 
 ALLOWED_STATUSES = {
@@ -54,6 +55,7 @@ def validate() -> dict:
     berlin_fach = load(BE_FACH_PATH)
     mv = load(MV_PATH)
     golden = load(GOLDEN_PATH)
+    current_readiness = load(CURRENT_READINESS_PATH)
     state_adapters = load(STATE_ADAPTERS_PATH)
 
     require(set(matrix["classification_taxonomy"]) == ALLOWED_STATUSES, "ISSUE_241_CLASSIFICATION_TAXONOMY_DRIFT")
@@ -89,6 +91,11 @@ def validate() -> dict:
     require(mv["coverage"]["canonical_artifact_count"] == 3, "ISSUE_241_MV_CANONICAL_ARTIFACT_COUNT_DRIFT")
     require(mv["coverage"]["canonical_current_source_finality_open_count"] == 1, "ISSUE_241_MV_OPEN_FINALITY_COUNT_DRIFT")
     require(golden["status"] == "COMBINED_GITHUB_GOLDEN_STATE", "ISSUE_241_COMBINED_CHECKPOINT_DRIFT")
+    require(current_readiness["status"] == "FACH_RESIDUAL_OPEN", "ISSUE_241_CURRENT_GOLDEN_FALSE_GREEN")
+    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_envelopes"] == 1267, "ISSUE_241_CURRENT_GOLDEN_BE_RESIDUAL_DRIFT")
+    require(current_readiness["blocking_lanes"]["mecklenburg_vorpommern"]["verified_final_programmes_requiring_truthful_residual"] == 12, "ISSUE_241_CURRENT_GOLDEN_MV_RESIDUAL_DRIFT")
+    require(current_readiness["combined_release_gate"]["github_golden_state_current"] is False, "ISSUE_241_CURRENT_GOLDEN_RELEASE_FALSE_GREEN")
+    require(current_readiness["combined_release_gate"]["owner_runtime_rc_request_allowed"] is False, "ISSUE_241_CURRENT_GOLDEN_RC_REQUEST_ENABLED")
     require(state_adapters["status"] == "ACTIVE_DOCUMENT_DISCOVERY_16_OF_16", "ISSUE_241_STATE_ADAPTER_STATUS_DRIFT")
     require(state_adapters["coverage"]["registered_state_count"] == 16, "ISSUE_241_STATE_ADAPTER_REGISTRY_DRIFT")
     require(state_adapters["coverage"]["active_document_discovery_adapter_count"] == 16, "ISSUE_241_STATE_ADAPTER_ACTIVE_COUNT_DRIFT")
