@@ -1,0 +1,199 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P24-P25-CHILD-CLOSURE-2026-V1",
+  "base_main_commit": "2f5d5d896eb1a8e851529a31139bfa57b00eca84",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "authoritative_markdowns": [
+    {
+      "issue_comment_id": 5457221577,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457221577",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p24-child-closure-part-1-authoritative-handoff.md",
+      "file_sha256": "3bc3da763ab8f5133294161229bad37ec10390b335f77e5e23587a9caa3aae3f"
+    },
+    {
+      "issue_comment_id": 5457228818,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457228818",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p24-child-closure-part-2-authoritative-handoff.md",
+      "file_sha256": "b2b76649c69c832f17edde79163e3aceed20919dcd183e7e413851a6b9112ae5"
+    },
+    {
+      "issue_comment_id": 5457240763,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457240763",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p25-child-closure-part-1-authoritative-handoff.md",
+      "file_sha256": "e5979a63cc7dce335ead045932145e0f9c4353057e48f1696877e99b4e293239"
+    },
+    {
+      "issue_comment_id": 5457248909,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457248909",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p25-child-closure-part-2-authoritative-handoff.md",
+      "file_sha256": "e1f7123793b7d2ea20d88a783c0d2d4d21069699cd7737fd2ff868ced5f5942e"
+    }
+  ],
+  "controller": {
+    "issue": 241,
+    "issue_comment_id": 5457255354,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5457255354"
+  },
+  "coverage": {
+    "source_exact_open_child_count": 22,
+    "closed_child_terminal_count": 22,
+    "p24_child_terminal_count": 13,
+    "p25_child_terminal_count": 9,
+    "active_terminal_review_leaf_count": 21,
+    "active_explicit_fach_approved_count": 20,
+    "active_reviewed_not_assessable_count": 1,
+    "zero_count_guard_count": 1,
+    "exact_open_child_object_count_after": 0,
+    "terminal_status_counts": {
+      "EXPLICIT_FACH_APPROVED": 20,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 1,
+      "NON_EFFECT_CONTEXT_REVIEWED": 1,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 0
+    },
+    "gate": "BE_BSW_P24_P25_EXACT_CHILD_FACH_RESIDUAL_ZERO"
+  },
+  "constraints": {
+    "fach_inferred_from_source": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "party_wide_judgement_synthesized": false
+  },
+  "child_terminal_decisions": [
+    {
+      "object_id": "BE-BSW-P24-U02-A02-C02-0706beb55deb",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "STREAMLINE_SIMPLIFY_DISABILITY_RECOGNITION_PROCEDURE"
+    },
+    {
+      "object_id": "BE-BSW-P24-U02-A03-C01-fdc54977ddd5",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "IMPROVE_WORKING_CONDITIONS"
+    },
+    {
+      "object_id": "BE-BSW-P24-U02-A03-C02-1620c28834f0",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "IMPROVE_REMUNERATION"
+    },
+    {
+      "object_id": "BE-BSW-P24-U04-A02-C01-8a39894ef2b6",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "MEDICAL_SUPPORT_ACCESS"
+    },
+    {
+      "object_id": "BE-BSW-P24-U04-A02-C02-ef3ab49d0a13",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PSYCHOTHERAPEUTIC_SUPPORT_ACCESS"
+    },
+    {
+      "object_id": "BE-BSW-P24-U04-A02-C03-bede2088b2b7",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SOCIAL_LAW_BENEFITS_SUPPORT"
+    },
+    {
+      "object_id": "BE-BSW-P24-U04-A04-C01-dc1c10b1f67d",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "OUTREACH_MEDICAL_CARE_ACCESS_HOMELESS_PEOPLE"
+    },
+    {
+      "object_id": "BE-BSW-P24-U04-A04-C02-f1f75c0199d1",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "OUTREACH_MENTAL_HEALTH_CARE_ACCESS_HOMELESS_PEOPLE"
+    },
+    {
+      "object_id": "BE-BSW-P24-U06-A03-C01-667d363fbf96",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FAMILY_FRIENDLY_WORKING_CONDITIONS"
+    },
+    {
+      "object_id": "BE-BSW-P24-U06-A03-C02-46db2e7de34a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "REFINANCE_TARIFF_BOUND_SALARIES"
+    },
+    {
+      "object_id": "BE-BSW-P24-U08-A01-C01-12e88f3b4492",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PUBLIC_HEALTH_SERVICE_PERSONNEL_CAPACITY"
+    },
+    {
+      "object_id": "BE-BSW-P24-U08-A01-C02-07f67e7a184e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PUBLIC_HEALTH_SERVICE_FINANCIAL_RESOURCES"
+    },
+    {
+      "object_id": "BE-BSW-P24-U08-A01-C03-c38af7e6fd76",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PUBLIC_HEALTH_SERVICE_ORGANISATIONAL_GOVERNANCE_CAPACITY"
+    },
+    {
+      "object_id": "BE-BSW-P25-U01-A02-C01-abe5ae8b6912",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DIGITAL_APPOINTMENT_SCHEDULING_ALLOCATION"
+    },
+    {
+      "object_id": "BE-BSW-P25-U01-A02-C02-c2ec0b49f5bf",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DIGITAL_DOCUMENTATION"
+    },
+    {
+      "object_id": "BE-BSW-P25-U01-A02-C03-40401b1e96f5",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DIGITAL_SOVEREIGNTY_INTEROPERABILITY_AND_PROCUREMENT_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "DIGITAL_SOVEREIGNTY_INTEROPERABILITY_PROCUREMENT_GUARD"
+    },
+    {
+      "object_id": "BE-BSW-P25-U03-A03-C01-faaf7c8c658e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "REJECT_STOP_BUNDESWEHR_EXERCISES_IN_HOSPITALS"
+    },
+    {
+      "object_id": "BE-BSW-P25-U03-A03-C02-f239a96bb802",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REJECT_MILITARILY_SHAPED_CIVIL_DEFENCE"
+    },
+    {
+      "object_id": "BE-BSW-P25-U03-A03-C03-c4efe285562a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "REJECT_ADDITIONAL_BUNDESWEHR_LINKED_STUDY_PLACES"
+    },
+    {
+      "object_id": "BE-BSW-P25-U03-A04-C01-c3aac15e1878",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "ADDITIONAL_INVESTMENT_CIVIL_HEALTHCARE"
+    },
+    {
+      "object_id": "BE-BSW-P25-U03-A04-C02-642fc0f268fb",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "ADDITIONAL_INVESTMENT_DISASTER_CIVIL_PROTECTION"
+    },
+    {
+      "object_id": "BE-BSW-P25-U03-A04-C03-e7c558578e1d",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "ADDITIONAL_INVESTMENT_SOCIAL_INFRASTRUCTURE"
+    }
+  ]
+}
