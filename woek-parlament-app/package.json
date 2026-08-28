@@ -29,7 +29,7 @@
     "executive-projections:materialize": "node scripts/quality/materialize-nonblocking-projection-inventory.mjs",
     "check:executive-projections": "node scripts/quality/check-nonblocking-projection-inventory.mjs && node scripts/quality/materialize-nonblocking-projection-inventory.mjs --check",
     "check:berlin-current-source": "tsx scripts/quality/check-berlin-current-source.ts",
-    "check:berlin-fach-residual": "node scripts/quality/check-berlin-combined-terminal-matrix.mjs",
+    "check:berlin-fach-residual": "node scripts/quality/check-berlin-fach-truth-residual.mjs",
     "check:mv-current-source": "tsx scripts/quality/check-mv-current-source.ts",
     "check:mv-fach-residual": "python3 scripts/quality/validate-mv-combined-terminal-matrix.py",
     "check:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs",

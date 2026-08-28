@@ -1,95 +1,44 @@
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
 import test from "node:test";
-import { fileURLToPath } from "node:url";
 
-const root = resolve(fileURLToPath(new URL("..", import.meta.url)));
-const ledger = JSON.parse(
-  readFileSync(
-    resolve(root, "data/state-programmes/fach-reviews/berlin-2026-cdu-v1.json"),
-    "utf8",
-  ),
+const historicalLedger = JSON.parse(
+  readFileSync("data/state-programmes/fach-reviews/berlin-2026-cdu-v1.json", "utf8"),
+);
+const residual = JSON.parse(
+  readFileSync("data/state-programmes/fach-content-residuals/berlin-2026-v3.json", "utf8"),
 );
 
-test("CDU accounts for all 128 physical pages", () => {
-  assert.equal(ledger.page_coverage.length, 128);
+test("CDU historical extraction remains source-inventory evidence", () => {
+  assert.equal(historicalLedger.artifact.page_count, 128);
+  assert.equal(historicalLedger.source_units.length, 2673);
+  assert.equal(historicalLedger.effect_atoms.length, 2041);
+  assert.equal(historicalLedger.records.length, 3062);
+});
+
+test("CDU current Fach truth remains exactly 128 review envelopes", () => {
+  const cdu = residual.programmes.find((programme: { party: string }) => programme.party === "CDU");
+  assert.ok(cdu);
+  assert.equal(cdu.programme_analysis_complete, false);
+  assert.equal(cdu.fach_state, "GENUINE_FACH_REVIEW_REQUIRED");
+  assert.equal(cdu.terminal_object_count, 0);
+  assert.equal(cdu.remaining_review_envelope_count, 128);
   assert.deepEqual(
-    ledger.page_coverage.map((page: { pdf_page: number }) => page.pdf_page),
+    cdu.remaining_review_envelopes.map((item: { source_locator: string }) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
     Array.from({ length: 128 }, (_, index) => index + 1),
   );
-  assert.ok(
-    ledger.page_coverage.every(
-      (page: { page_read_fully: boolean; page_coverage_pass: boolean }) =>
-        page.page_read_fully && page.page_coverage_pass,
-    ),
-  );
+  assert.ok(cdu.remaining_review_envelopes.every((item: {
+    counts_as_effect_object: boolean;
+    effect_bearing_status: string;
+    segmentation_state: string;
+  }) => item.counts_as_effect_object === false
+    && item.effect_bearing_status === "NOT_YET_CLASSIFIED"
+    && item.segmentation_state === "SEGMENTATION_REVIEW_REQUIRED"));
 });
 
-test("CDU pinned source materializes to exact reviewed cardinalities", () => {
-  assert.deepEqual(
-    {
-      total_source_units: ledger.programme_summary.total_source_units,
-      non_effect_context_units:
-        ledger.programme_summary.non_effect_context_units,
-      effect_bearing_source_units:
-        ledger.programme_summary.effect_bearing_source_units,
-      effect_atoms: ledger.programme_summary.effect_atoms,
-      records: ledger.records.length,
-    },
-    {
-      total_source_units: 2673,
-      non_effect_context_units: 1021,
-      effect_bearing_source_units: 1652,
-      effect_atoms: 2041,
-      records: 3062,
-    },
-  );
-});
-
-test("every source unit binds to zero or one-or-more atoms", () => {
-  const atomIds = new Set(
-    ledger.effect_atoms.map((atom: { atom_id: string }) => atom.atom_id),
-  );
-  for (const unit of ledger.source_units) {
-    if (unit.source_unit_class === "NON_EFFECT_CONTEXT") {
-      assert.deepEqual(unit.atom_ids, []);
-    } else {
-      assert.ok(unit.atom_ids.length > 0);
-      assert.ok(unit.atom_ids.every((atomId: string) => atomIds.has(atomId)));
-    }
-  }
-});
-
-test("every effect atom is terminal without inferred Fach", () => {
-  const effectRecords = ledger.records.filter(
-    (record: { source_unit_class: string }) =>
-      record.source_unit_class === "EFFECT_BEARING",
-  );
-  assert.equal(effectRecords.length, ledger.effect_atoms.length);
-  for (const record of effectRecords) {
-    assert.equal(
-      record.terminal_status,
-      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-    );
-    assert.equal(record.impact_direction, null);
-    assert.equal(record.evidence_level, null);
-    assert.equal(record.dns_mapping, "NOT_AVAILABLE");
-    assert.equal(record.recommendation, "NOT_AVAILABLE");
-    assert.equal(record.reviewed_exact_missing_fields.length, 1);
-  }
-  assert.equal(
-    new Set(effectRecords.map((record: { exact_reason: string }) => record.exact_reason))
-      .size,
-    effectRecords.length,
-  );
-});
-
-test("standalone CDU validator passes", () => {
-  execFileSync(
-    process.execPath,
-    [resolve(root, "scripts/quality/check-berlin-cdu-full-programme.mjs")],
-    { cwd: root, stdio: "pipe" },
-  );
+test("generic CDU RNAA records cannot establish current terminality", () => {
+  const cdu = residual.programmes.find((programme: { party: string }) => programme.party === "CDU");
+  const currentIds = new Set(cdu.terminal_objects.map((item: { object_id: string }) => item.object_id));
+  assert.ok(historicalLedger.effect_atoms.every((atom: { atom_id: string }) => !currentIds.has(atom.atom_id)));
+  assert.equal(residual.rejected_predecessor.disposition, "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY");
 });

@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "03176878969f3af44a5169fd141c4bf98a0f7061",
+  "audited_main_commit": "a0f4b8ac7bd49c3c145003bb457627c897aea26a",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -40,7 +40,10 @@
       "programme_analysis_complete": 3,
       "programme_analysis_complete_parties": ["DKP", "Die PARTEI", "SGP"],
       "genuine_fach_programmes": 9,
-      "evidence": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json"
+      "remaining_review_envelopes": 1267,
+      "remaining_exact_effect_object_count": null,
+      "known_segmentation_defects": 2,
+      "evidence": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
     },
     "mecklenburg_vorpommern": {
       "status": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
@@ -117,7 +120,7 @@
       "issue_241_refs": ["Bestaetigte Gaps/6", "F/Berlin", "DoD/prioritaere Fachluecken"],
       "title": "Berlin aktuell verfuegbare finale Programme programmspezifisch atomisieren, fachpruefen und projizieren",
       "status": "GENUINE_FACH_REVIEW_REQUIRED",
-      "evidence": ["Issue #241 comment 5386359104", "Issue #240 comments 5396796272, 5396814341 and 5396842873", "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md", "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json"],
+      "evidence": ["Issue #241 comment 5386359104", "Issue #240 comments 5396796272, 5396814341 and 5396842873", "Issue #240 authoritative DoD comment 5448629781", "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md", "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"],
       "residual": "BE-FACH-CONTENT-RESIDUAL"
     },
     {
@@ -629,9 +632,13 @@
         "genuine_fach_programmes": ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "FDP", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"],
         "canonicalization_pending_programmes": [],
         "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json",
-        "fach_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
-        "preserved_existing_scope": "Six cross-party materiality themes; BSW housing is a partial cluster, not programme-complete coverage.",
-        "required_fach_action": "For the nine exact genuine_fach_programmes, supply explicit source-bound atom-level Fach records or explicit reviewed-not-assessable reasons for every residual object in the Berlin Fach residual matrix."
+        "fach_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json",
+        "remaining_review_envelopes": 1267,
+        "remaining_exact_effect_object_count": null,
+        "known_segmentation_defects": ["BE-SPD-2026-SU-0136-A01", "BE-SPD-2026-SU-0136-A03"],
+        "rejected_false_terminal_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json",
+        "preserved_existing_scope": "Exact terminal Fach stock is preserved for DKP, Die PARTEI and SGP; BSW PDF pages 1-14 contribute 79 additional source-bound terminal objects without making BSW programme-complete. BSW page 14 is bound losslessly to issue #240 comment 5449003550.",
+        "required_fach_action": "For the nine exact genuine_fach_programmes, segment every finite page review envelope source-bound and supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. The 1267 page envelopes are bounded review scopes, not 1267 asserted effect objects; the exact effect-object count remains unknown until segmentation."
       },
       {
         "id": "MV-FACH-CONTENT-RESIDUAL",
