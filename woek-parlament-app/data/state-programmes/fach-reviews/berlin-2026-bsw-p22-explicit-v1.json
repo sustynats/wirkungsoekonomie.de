@@ -1,0 +1,686 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P22-EXPLICIT-FACH-2026-V1",
+  "jurisdiction": "DE-BE",
+  "party": "BSW",
+  "base_main_commit": "130d94a7b4f1ab8d7c6addcd4783123d5d43fdec",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "authoritative_markdown": {
+    "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+    "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+  },
+  "controller": {
+    "issue_comment_id": 5452905705,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5452905705"
+  },
+  "batches": [
+    {
+      "physical_pdf_pages": [
+        22
+      ],
+      "source_units": [
+        "U01",
+        "U02",
+        "U03",
+        "U04"
+      ],
+      "issue_comment_id": 5452887573,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+      "result": "BE_BSW_P22_U01_U04_FACH_COMPLETE_PASS_SOURCE_BOUND"
+    },
+    {
+      "physical_pdf_pages": [
+        22
+      ],
+      "source_units": [
+        "U05",
+        "U06",
+        "U07"
+      ],
+      "issue_comment_id": 5452894797,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+      "result": "BE_BSW_P22_U05_U07_FACH_COMPLETE_PASS_SOURCE_BOUND"
+    },
+    {
+      "physical_pdf_pages": [
+        22
+      ],
+      "source_units": [
+        "U08",
+        "U09"
+      ],
+      "issue_comment_id": 5452902986,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+      "result": "BE_BSW_P22_FACH_COMPLETE_PASS_SOURCE_BOUND"
+    }
+  ],
+  "coverage": {
+    "terminal_pages": [
+      22
+    ],
+    "protected_physical_scope_after_materialization": "P1-P22",
+    "next_page_review_envelope_from": 23,
+    "next_page_review_envelope_through": 66,
+    "original_source_object_count": 29,
+    "structural_heading_count": 3,
+    "deterministic_child_review_object_count": 12,
+    "total_materialized_terminal_record_count": 41,
+    "active_terminal_review_leaf_count": 24,
+    "active_explicit_fach_approved_count": 18,
+    "active_reviewed_not_assessable_count": 6,
+    "zero_count_original_record_count": 17,
+    "exact_open_child_object_count": 0,
+    "gate": "BE_BSW_P22_FACH_COMPLETE_PASS_SOURCE_BOUND"
+  },
+  "original_records": [
+    {
+      "object_id": "BE-BSW-P22-U01-a4d6359e0f28",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U01-a4d6359e0f28"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A01-c99a7b50029f",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_ACCESS_EQUITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A01-c99a7b50029f"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A02-2addf961c9d6",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROBLEM_BASELINE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A02-2addf961c9d6"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A03-70a17f93bf74",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_ACCESS_CAPACITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A03-70a17f93bf74"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A04-8ebf4ba58b7a",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+      "batch_issue_comment_id": 5452887573,
+      "replacement_child_ids": [
+        "BE-BSW-P22-U02-A04-C01-e70eb83a3530",
+        "BE-BSW-P22-U02-A04-C02-fd05adab8416"
+      ],
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A04-8ebf4ba58b7a"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A05-873288cc541d",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A05-873288cc541d"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A06-3cbf6b56ceec",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_WORKFORCE_OUTCOME_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A06-3cbf6b56ceec"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A07-0cd49822c754",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+      "batch_issue_comment_id": 5452887573,
+      "restatement_target_object_id": "BE-BSW-P22-U02-A04-C02-fd05adab8416",
+      "role": "RESTATEMENT_WITH_TARGETING_REFINEMENT_OF_U02_A04_C02",
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A07-0cd49822c754"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U03-A01-67b757f3933b",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U03-A01-67b757f3933b"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U03-A02-db47aecfbce7",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U03-A02-db47aecfbce7"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U03-A03-aa9709718601",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U03-A03-aa9709718601"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U04-A01-5702b36422c3",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U04-A01-5702b36422c3"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U05-77bd253d8b1d",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U05-77bd253d8b1d"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U06-A01-e042977c45a1",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_SYSTEM_DESIGN_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U06-A01-e042977c45a1"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U06-A02-e49235cab409",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U06-A02-e49235cab409"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U06-A03-4d1881f7bf2b",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U06-A03-4d1881f7bf2b"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A01-ac6e7aa6dd52",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A01-ac6e7aa6dd52"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A02-18b00148d452",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+      "batch_issue_comment_id": 5452894797,
+      "replacement_child_ids": [
+        "BE-BSW-P22-U07-A02-C01-6c5faa0941fb",
+        "BE-BSW-P22-U07-A02-C02-796aa3a8a27d",
+        "BE-BSW-P22-U07-A02-C03-8e3e5dd8fb6f",
+        "BE-BSW-P22-U07-A02-C04-a1fd6fa81444"
+      ],
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A02-18b00148d452"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A03-736a81fe58bc",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A03-736a81fe58bc"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A04-ad8d751e13b5",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A04-ad8d751e13b5"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A05-9e07c982e98a",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_BENCHMARK_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A05-9e07c982e98a"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A06-c73c41d01af5",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_COMPARATIVE_GOAL_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A06-c73c41d01af5"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U08-671844fbb707",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U08-671844fbb707"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A01-e7164757ad75",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROBLEM_BASELINE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE",
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A01-e7164757ad75"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A02-8b6105da4cc3",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+      "batch_issue_comment_id": 5452902986,
+      "replacement_child_ids": [
+        "BE-BSW-P22-U09-A02-C01-25aeab535330",
+        "BE-BSW-P22-U09-A02-C02-a606e2306122"
+      ],
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A02-8b6105da4cc3"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A03-6047e0632e39",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+      "batch_issue_comment_id": 5452902986,
+      "replacement_child_ids": [
+        "BE-BSW-P22-U09-A03-C01-6ca882fae06f",
+        "BE-BSW-P22-U09-A03-C02-253de880fdef"
+      ],
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A03-6047e0632e39"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A04-f002601dc899",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A04-f002601dc899"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A05-4b51e67cc6ee",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+      "batch_issue_comment_id": 5452902986,
+      "replacement_child_ids": [
+        "BE-BSW-P22-U09-A05-C01-a97604715d4a",
+        "BE-BSW-P22-U09-A05-C02-a1df4758ac6b"
+      ],
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A05-4b51e67cc6ee"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A06-627706c6a880",
+      "source_page": 22,
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF",
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A06-627706c6a880"
+      }
+    }
+  ],
+  "deterministic_children": [
+    {
+      "object_id": "BE-BSW-P22-U02-A04-C01-e70eb83a3530",
+      "parent_object_id": "BE-BSW-P22-U02-A04-8ebf4ba58b7a",
+      "source_page": 22,
+      "child_role": "ARZTSITZ_REDISTRIBUTION",
+      "source_text": "Arztsitze müssen gezielt umverteilt werden.",
+      "source_text_sha256": "e70eb83a3530ec450d1800d4f8e9b77d2d53aac24a2bbbebc2c2d06b625a4354",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; parent BE-BSW-P22-U02-A04-8ebf4ba58b7a; child ARZTSITZ_REDISTRIBUTION"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U02-A04-C02-fd05adab8416",
+      "parent_object_id": "BE-BSW-P22-U02-A04-8ebf4ba58b7a",
+      "source_page": 22,
+      "child_role": "PUBLIC_PRIMARY_CARE_CENTRES",
+      "source_text": "neue kommunale beziehungsweise öffentliche Primärversorgungszentren gegründet werden, besonders in den unterversorgten Bezirken.",
+      "source_text_sha256": "fd05adab8416b80f7c2a9cbbcab4e1ba992df0bc53ee09edc3859409665c0fd9",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452887573,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452887573; parent BE-BSW-P22-U02-A04-8ebf4ba58b7a; child PUBLIC_PRIMARY_CARE_CENTRES"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A02-C01-6c5faa0941fb",
+      "parent_object_id": "BE-BSW-P22-U07-A02-18b00148d452",
+      "source_page": 22,
+      "child_role": "BETTER_PAY",
+      "source_text": "bessere Bezahlung",
+      "source_text_sha256": "6c5faa0941fbcc946e5b9d52444f0b002ed4a0b703fb530291948af1be98db69",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child BETTER_PAY"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A02-C02-796aa3a8a27d",
+      "parent_object_id": "BE-BSW-P22-U07-A02-18b00148d452",
+      "source_page": 22,
+      "child_role": "CAREER_PATHS",
+      "source_text": "klare Aufstiegsmöglichkeiten",
+      "source_text_sha256": "796aa3a8a27dbc201c3a37095d860419737451f31f56148bfc57355ec7eb04ae",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child CAREER_PATHS"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A02-C03-8e3e5dd8fb6f",
+      "parent_object_id": "BE-BSW-P22-U07-A02-18b00148d452",
+      "source_page": 22,
+      "child_role": "MORE_RESPONSIBILITY",
+      "source_text": "mehr Verantwortung",
+      "source_text_sha256": "8e3e5dd8fb6f93101a8c68c239b5c7be55d6182ebedeab2b7468fecf15a15912",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child MORE_RESPONSIBILITY"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U07-A02-C04-a1fd6fa81444",
+      "parent_object_id": "BE-BSW-P22-U07-A02-18b00148d452",
+      "source_page": 22,
+      "child_role": "LEGAL_FRAMEWORK",
+      "source_text": "verlässliche rechtliche Rahmenbedingungen",
+      "source_text_sha256": "a1fd6fa814445e2de665655191f9de45deb2a04ba24ec7876c9154941130872c",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452894797,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child LEGAL_FRAMEWORK"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A02-C01-25aeab535330",
+      "parent_object_id": "BE-BSW-P22-U09-A02-8b6105da4cc3",
+      "source_page": 22,
+      "child_role": "INZ_NOTDIENST_LONGER_HOURS",
+      "source_text": "Wir wollen Notdienstpraxen wie die Integrierten Notfallzentren (INZ) mit längeren Öffnungszeiten ausbauen.",
+      "source_text_sha256": "25aeab5353302419703a9f0498f1136790bac1b1d06fa4a17b9ee88147b2f398",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A02-8b6105da4cc3; child INZ_NOTDIENST_LONGER_HOURS"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A02-C02-a606e2306122",
+      "parent_object_id": "BE-BSW-P22-U09-A02-8b6105da4cc3",
+      "source_page": 22,
+      "child_role": "POOL_DOCTOR_EMPLOYMENT_MODEL",
+      "source_text": "und uns für alternative Lösungen zur Beschäftigung von selbständigen Poolärzten einsetzen.",
+      "source_text_sha256": "a606e23061224fdb99427d69a5a924380992b609d61b387465fbc1edb13266e1",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A02-8b6105da4cc3; child POOL_DOCTOR_EMPLOYMENT_MODEL"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A03-C01-6ca882fae06f",
+      "parent_object_id": "BE-BSW-P22-U09-A03-6047e0632e39",
+      "source_page": 22,
+      "child_role": "STAFF_PROTECTION",
+      "source_text": "Rettungskräfte und Personal in den Rettungsstellen brauchen mehr Schutz im Einsatz.",
+      "source_text_sha256": "6ca882fae06f6103064ad1ea8bee62b7758f4c7320cf26b3a7b928b7cd1041cf",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A03-6047e0632e39; child STAFF_PROTECTION"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A03-C02-253de880fdef",
+      "parent_object_id": "BE-BSW-P22-U09-A03-6047e0632e39",
+      "source_page": 22,
+      "child_role": "TRAINING_PLACES",
+      "source_text": "Rettungskräfte und Personal in den Rettungsstellen brauchen ausreichend Ausbildungsplätze.",
+      "source_text_sha256": "253de880fdefbbd36c3fd548341649b9be6c1ae541e80ab745af552ab57e9623",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A03-6047e0632e39; child TRAINING_PLACES"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A05-C01-a97604715d4a",
+      "parent_object_id": "BE-BSW-P22-U09-A05-4b51e67cc6ee",
+      "source_page": 22,
+      "child_role": "AED_PUBLIC_ACCESS",
+      "source_text": "Berlin braucht außerdem flächendeckend Defibrillatoren.",
+      "source_text_sha256": "a97604715d4aa0f287ccd52d0ec3ed12a654c0453d10c5efb82326b8b474c33f",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A05-4b51e67cc6ee; child AED_PUBLIC_ACCESS"
+      }
+    },
+    {
+      "object_id": "BE-BSW-P22-U09-A05-C02-a1df4758ac6b",
+      "parent_object_id": "BE-BSW-P22-U09-A05-4b51e67cc6ee",
+      "source_page": 22,
+      "child_role": "AED_TRAINING",
+      "source_text": "und breit angelegte Schulungsprogramme für deren Einsatz.",
+      "source_text_sha256": "a1df4758ac6b86696d05eb8441bf8b5aaadf83f805bf33f2cfee838f994cead8",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5452902986,
+      "fach_payload": {
+        "storage": "VERBATIM_AUTHORITATIVE_MARKDOWN",
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+        "locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A05-4b51e67cc6ee; child AED_TRAINING"
+      }
+    }
+  ],
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "dns_mapping_created": false,
+    "recommendation_created": false,
+    "score_created": false,
+    "party_wide_judgement_created": false,
+    "generic_delegated_rnaa_used_for_covered_objects": false,
+    "historical_count_arithmetic_forced": false,
+    "vercel_action_triggered": false
+  }
+}

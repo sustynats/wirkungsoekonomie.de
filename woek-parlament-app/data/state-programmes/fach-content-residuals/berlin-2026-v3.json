@@ -4,8 +4,8 @@
   "jurisdiction": "DE-BE",
   "election": "agh-2026-be",
   "issue": 240,
-  "base_main_commit": "272c427673c3b1da847af5294ed744c84c2b85cd",
-  "source_as_of": "2026-08-28T12:45:41+02:00",
+  "base_main_commit": "130d94a7b4f1ab8d7c6addcd4783123d5d43fdec",
+  "source_as_of": "2026-08-28T17:08:59+02:00",
   "status": "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12",
   "controller_authority": {
     "authoritative_dod": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5448629781",
@@ -23,7 +23,7 @@
     "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
     "file_sha256": "ac531ff8f32d0256acbb62dc92a16c225a05c3f929c497089b69938d8a04e8c1",
     "descriptor_sha256": "62b7d4940491a3a1aca35a494b0ee8bbf2d3608bd871c73de2725aa7bae17cf5",
-    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW pp. 1-21 advance only through explicit issue #240 handoffs."
+    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW pp. 1-22 advance only through explicit issue #240 handoffs."
   },
   "accepted_incremental_handoffs": [
     {
@@ -98,6 +98,34 @@
         20,
         21
       ]
+    },
+    {
+      "handoff_id": "BE-BSW-P22-EXPLICIT-FACH-2026-V1",
+      "issue_comment_ids": [
+        5452887573,
+        5452894797,
+        5452902986
+      ],
+      "issue_comment_urls": [
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986"
+      ],
+      "controller_issue_comment_id": 5452905705,
+      "controller_issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5452905705",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-explicit-v1.json",
+      "file_sha256": "0c435d9e96cbb64dfc87f34e1b602b83f58c67665b46ed9d58dba502785bde4b",
+      "authoritative_markdown_path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+      "authoritative_markdown_file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb",
+      "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+      "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+      "exact_terminal_object_count": 41,
+      "active_terminal_review_leaf_count": 24,
+      "exact_open_child_object_count": 0,
+      "physical_pdf_pages": [
+        22
+      ],
+      "gate": "BE_BSW_P22_FACH_COMPLETE_PASS_SOURCE_BOUND"
     }
   ],
   "rejected_predecessor": {
@@ -195,17 +223,17 @@
       "CDU",
       "Die Linke"
     ],
-    "remaining_genuine_fach_review_required": 1260,
-    "remaining_review_scope_count": 1260,
-    "remaining_page_review_envelopes": 1260,
+    "remaining_genuine_fach_review_required": 1259,
+    "remaining_review_scope_count": 1259,
+    "remaining_page_review_envelopes": 1259,
     "remaining_exact_effect_objects_identified": 0,
     "remaining_exact_effect_object_count": null,
-    "terminal_source_objects": 305,
+    "terminal_source_objects": 346,
     "terminal_status_counts": {
-      "EXPLICIT_FACH_APPROVED": 151,
-      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 46,
-      "NON_EFFECT_CONTEXT_REVIEWED": 94,
-      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 14
+      "EXPLICIT_FACH_APPROVED": 169,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 52,
+      "NON_EFFECT_CONTEXT_REVIEWED": 105,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 20
     },
     "known_segmentation_defects": 2,
     "berlin_completion_gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH"
@@ -220,16 +248,16 @@
       "segmentation_state": "PARTIAL_TERMINAL_WITH_REVIEW_ENVELOPES_OPEN",
       "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
       "programme_analysis_complete": false,
-      "terminal_object_count": 237,
+      "terminal_object_count": 278,
       "terminal_status_counts": {
-        "EXPLICIT_FACH_APPROVED": 115,
-        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 14,
-        "NON_EFFECT_CONTEXT_REVIEWED": 94,
-        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 14
+        "EXPLICIT_FACH_APPROVED": 133,
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 20,
+        "NON_EFFECT_CONTEXT_REVIEWED": 105,
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 20
       },
-      "remaining_review_envelope_count": 45,
+      "remaining_review_envelope_count": 44,
       "remaining_exact_object_count": 0,
-      "remaining_review_scope_count": 45,
+      "remaining_review_scope_count": 44,
       "terminal_objects": [
         {
           "object_id": "BE-BSW-P01-CONTEXT",
@@ -4349,20 +4377,889 @@
           },
           "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U08-A02-51b3a97e4f48",
           "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P22-U01-a4d6359e0f28",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 1",
+          "source_excerpt": "Ärzte vor Ort und schnelle Terminvergabe",
+          "source_text_sha256": "a4d6359e0f28f6ef48b8292e4d2ead50c70999c2811488b2998fac3a98bb2e29",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U01-a4d6359e0f28",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A01-c99a7b50029f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 1 of 7",
+          "source_excerpt": "Gesundheit darf nicht von der Postleitzahl abhängen.",
+          "source_text_sha256": "c99a7b50029fcae244812a5030bf9e710f7df842e3e5b11bb7b0025c6c9c5b57",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_ACCESS_EQUITY_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A01-c99a7b50029f",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A02-2addf961c9d6",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 2 of 7",
+          "source_excerpt": "In einigen Berliner Bezirken ist die Basisversorgung durch Hausärzte und Kinderärzte in einem überaus kritischen Zustand.",
+          "source_text_sha256": "2addf961c9d6441fe2c1503b8d30c38bbf0b44c249deb97e4581d07a790b196f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_PROBLEM_BASELINE_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A02-2addf961c9d6",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A03-70a17f93bf74",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 3 of 7",
+          "source_excerpt": "Wir setzen uns für eine ausreichende Anzahl von Haus- und Kinderärzten in jedem Kiez ein.",
+          "source_text_sha256": "70a17f93bf7426d15a8ff39007582c38a3006af8ebaa64f97a84a532d3b99ad2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_ACCESS_CAPACITY_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A03-70a17f93bf74",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A04-8ebf4ba58b7a",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 4 of 7",
+          "source_excerpt": "Arztsitze müssen gezielt umverteilt und neue kommunale beziehungsweise öffentliche Primärversorgungszentren gegründet werden, besonders in den unterversorgten Bezirken.",
+          "source_text_sha256": "8ebf4ba58b7a8ae61201e07169b39b2c852fccb7a629bf8894cbe4f20755de01",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_child_ids": [
+            "BE-BSW-P22-U02-A04-C01-e70eb83a3530",
+            "BE-BSW-P22-U02-A04-C02-fd05adab8416"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A04-8ebf4ba58b7a",
+          "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A05-873288cc541d",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 5 of 7",
+          "source_excerpt": "Um den künftigen Bedarf zu decken, fordern wir eine Hausarztquote bei Studienplätzen.",
+          "source_text_sha256": "873288cc541dbedcdc768894554bf3f8e67a4b6af06d932fcba90975f3f21ebf",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A05-873288cc541d",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A06-3cbf6b56ceec",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 6 of 7",
+          "source_excerpt": "Wer Allgemeinmedizin oder Pädiatrie studiert, soll verlässlich in die Versorgung einsteigen können.",
+          "source_text_sha256": "3cbf6b56ceec1c3052835cf8f164824aacb3240524fd784bb2f16a770fc8f44a",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_WORKFORCE_OUTCOME_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A06-3cbf6b56ceec",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A07-0cd49822c754",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 7 of 7",
+          "source_excerpt": "Zusätzlich setzen wir auf neue, landeseigene Primärversorgungszentren in sozialen Brennpunkten und in von Unterversorgung bedrohten Regionen.",
+          "source_text_sha256": "0cd49822c754dc0757651e06e2110895e6301f589e54ffbd16ca2aa3acccca51",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "restatement_target_object_id": "BE-BSW-P22-U02-A04-C02-fd05adab8416",
+          "source_role": "RESTATEMENT_WITH_TARGETING_REFINEMENT_OF_U02_A04_C02",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U02-A07-0cd49822c754",
+          "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-BSW-P22-U03-A01-67b757f3933b",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 3, effect atom 1 of 3",
+          "source_excerpt": "Wir setzen uns dafür ein, dass die Terminvergabe über die Patientenservice-Nummer 116117 erfolgt, statt über kommerzielle Plattformen.",
+          "source_text_sha256": "67b757f3933b04282f913f7ec465d0fb80cb269c1844df6b77c0df04694a23a3",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U03-A01-67b757f3933b",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U03-A02-db47aecfbce7",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 3, effect atom 2 of 3",
+          "source_excerpt": "Die telefonische Erreichbarkeit der Arztpraxen muss gewährleistet werden.",
+          "source_text_sha256": "db47aecfbce73e7bc30e5ec924ab24a2f07bdc8b2b3abeee47da1165fb1776bf",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U03-A02-db47aecfbce7",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U03-A03-aa9709718601",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 3, effect atom 3 of 3",
+          "source_excerpt": "Flexible Praxisöffnungszeiten, insbesondere auch für einen zügigen Zugang zur fachärztlichen Versorgung, sollen zudem die überlasteten Notaufnahmen der Krankenhäuser entlasten.",
+          "source_text_sha256": "aa97097186015f9a81d9be052e206f9fae07d31b38c3776ede748b6b5a41751c",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U03-A03-aa9709718601",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U04-A01-5702b36422c3",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 4, effect atom 1 of 1",
+          "source_excerpt": "Für Neupatienten und insbesondere bei Akutfällen muss eine Regelung durch die Kassenärztliche Vereinigung Berlin gefunden werden, um eine Abweisung durch eine Arztpraxis zu unterbinden.",
+          "source_text_sha256": "5702b36422c32917e99b3ce9ab2a4fc7e9aec471e61075023a69e66ef9e1523a",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; exact object BE-BSW-P22-U04-A01-5702b36422c3",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U05-77bd253d8b1d",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 5",
+          "source_excerpt": "Starke Praxisteams bilden",
+          "source_text_sha256": "77bd253d8b1db3946b7fe877ebc7cb06666694fe1e31891ae33c616ab6c569e3",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U05-77bd253d8b1d",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U06-A01-e042977c45a1",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 6, effect atom 1 of 3",
+          "source_excerpt": "Die Hausarztpraxis der Zukunft ist ein Teamprojekt.",
+          "source_text_sha256": "e042977c45a102fddb4112f9ac631062f6c3ccfb17d0c9ceb1b4b9d730b4929c",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_SYSTEM_DESIGN_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U06-A01-e042977c45a1",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U06-A02-e49235cab409",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 6, effect atom 2 of 3",
+          "source_excerpt": "Wir setzen auf multiprofessionelle Strukturen, die Hausärzte entlasten und mehr Zeit für Patienten schaffen.",
+          "source_text_sha256": "e49235cab40907c5c2f5f6d311ff0a2321cce94217bbada9332269f04f4831b5",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U06-A02-e49235cab409",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U06-A03-4d1881f7bf2b",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 6, effect atom 3 of 3",
+          "source_excerpt": "Dazu gehört qualifiziertes nichtärztliches Personal, das eigenständig Hausbesuche übernimmt oder chronisch kranke und hochaltrige Menschen begleitet.",
+          "source_text_sha256": "4d1881f7bf2b3551541d43983e22e98548f6fccca8a0154ded611e59e676ce34",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U06-A03-4d1881f7bf2b",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A01-ac6e7aa6dd52",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 1 of 6",
+          "source_excerpt": "Für medizinische Fachangestellte brauchen wir eine Karriereoffensive.",
+          "source_text_sha256": "ac6e7aa6dd52788e62853a8695baa153284996b3365e1597673a3af4f142eaff",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A01-ac6e7aa6dd52",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A02-18b00148d452",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 2 of 6",
+          "source_excerpt": "Nur durch bessere Bezahlung, klare Aufstiegsmöglichkeiten, mehr Verantwortung und verlässliche rechtliche Rahmenbedingungen werden diese Berufe attraktiv.",
+          "source_text_sha256": "18b00148d452476188af9fce10049aa642a49002a969019b92d29de5b798cd64",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_child_ids": [
+            "BE-BSW-P22-U07-A02-C01-6c5faa0941fb",
+            "BE-BSW-P22-U07-A02-C02-796aa3a8a27d",
+            "BE-BSW-P22-U07-A02-C03-8e3e5dd8fb6f",
+            "BE-BSW-P22-U07-A02-C04-a1fd6fa81444"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A02-18b00148d452",
+          "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A03-736a81fe58bc",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 3 of 6",
+          "source_excerpt": "Wichtig ist auch ein professionelles Fallmanagement mit festen Ansprechpersonen für hochbetagte, chronisch kranke oder pflegebedürftige Patienten.",
+          "source_text_sha256": "736a81fe58bcf78f36f23dd0bf2b7fa838ea9b3995b94cbd50f5309a93ae5a38",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A03-736a81fe58bc",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A04-ad8d751e13b5",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 4 of 6",
+          "source_excerpt": "Bereits bestehende erfolgreiche Modellprojekte wollen wir berlinweit ausbauen.",
+          "source_text_sha256": "ad8d751e13b5ebceb047ff64ad3b62b39049314638b41c8bdfa63f0d53158f00",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A04-ad8d751e13b5",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A05-9e07c982e98a",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 5 of 6",
+          "source_excerpt": "Andere europäische Länder zeigen, wie gut solche Teams funktionieren.",
+          "source_text_sha256": "9e07c982e98a3e3670e025dac3ce66a66895db220f0dbbb0f66fa1e8b7696af0",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_BENCHMARK_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A05-9e07c982e98a",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A06-c73c41d01af5",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 6 of 6",
+          "source_excerpt": "Berlin darf hier nicht länger zurückliegen.",
+          "source_text_sha256": "c73c41d01af5a491fe07e0f65d0e277f1d431727b7c76b76660c201871c224a5",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_COMPARATIVE_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; exact object BE-BSW-P22-U07-A06-c73c41d01af5",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U08-671844fbb707",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 8",
+          "source_excerpt": "Notfallversorgung entlasten",
+          "source_text_sha256": "671844fbb707e4034d639948dfb5649b4879bf393a52b0e4f84b9f31035ee1d5",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U08-671844fbb707",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A01-e7164757ad75",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 1 of 6",
+          "source_excerpt": "Der letzte Winter hat gezeigt, wie schnell die Berliner Rettungsstellen an ihre Überlastungsgrenze kommen.",
+          "source_text_sha256": "e7164757ad75184c5aca183e0bc7167bb1fa92dbd4ab388f46a52b7b5b006856",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_PROBLEM_BASELINE_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A01-e7164757ad75",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A02-8b6105da4cc3",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 2 of 6",
+          "source_excerpt": "Wir wollen Notdienstpraxen wie die Integrierten Notfallzentren (INZ) mit längeren Öffnungszeiten ausbauen und uns für alternative Lösungen zur Beschäftigung von selbständigen Poolärzten einsetzen.",
+          "source_text_sha256": "8b6105da4cc30ae2b643b6f245f4e2a72713b2afb5ac916d4eec084dd778c6d4",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_child_ids": [
+            "BE-BSW-P22-U09-A02-C01-25aeab535330",
+            "BE-BSW-P22-U09-A02-C02-a606e2306122"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A02-8b6105da4cc3",
+          "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A03-6047e0632e39",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 3 of 6",
+          "source_excerpt": "Rettungskräfte und Personal in den Rettungsstellen brauchen mehr Schutz im Einsatz und ausreichend Ausbildungsplätze.",
+          "source_text_sha256": "6047e0632e397d897b8576a1b47dfe2be27d0bf5b21e6c07731cbe4a500f46b2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_child_ids": [
+            "BE-BSW-P22-U09-A03-C01-6ca882fae06f",
+            "BE-BSW-P22-U09-A03-C02-253de880fdef"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A03-6047e0632e39",
+          "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A04-f002601dc899",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 4 of 6",
+          "source_excerpt": "Zusätzlich werben wir für eine Berliner Notfallverfügung, die den Patientenwillen im Notfall übersichtlich und eindeutig dokumentiert.",
+          "source_text_sha256": "f002601dc89942c6433088040d7d3b9baf489279108051bc82ea06ffa3326dde",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A04-f002601dc899",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A05-4b51e67cc6ee",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 5 of 6",
+          "source_excerpt": "Berlin braucht außerdem flächendeckend Defibrillatoren und breit angelegte Schulungsprogramme für deren Einsatz.",
+          "source_text_sha256": "4b51e67cc6ee1d22ca3bb1ae142405b4cd11e3126342d0dcefa1b57f19a15896",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_child_ids": [
+            "BE-BSW-P22-U09-A05-C01-a97604715d4a",
+            "BE-BSW-P22-U09-A05-C02-a1df4758ac6b"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A05-4b51e67cc6ee",
+          "decision_kind": "P22_VERSIONED_PARENT_OR_RESTATEMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A06-627706c6a880",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 6 of 6",
+          "source_excerpt": "Hierzu dient auch eine Befähigung zur Ersten Hilfe bereits in der Grundschule.",
+          "source_text_sha256": "627706c6a880769b4d855323978a0cf65d804ca8fc3eac7fded367f73d452dd0",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; exact object BE-BSW-P22-U09-A06-627706c6a880",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A04-C01-e70eb83a3530",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 4 of 7; deterministic child clause ARZTSITZ_REDISTRIBUTION",
+          "source_excerpt": "Arztsitze müssen gezielt umverteilt werden.",
+          "source_text_sha256": "e70eb83a3530ec450d1800d4f8e9b77d2d53aac24a2bbbebc2c2d06b625a4354",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U02-A04-8ebf4ba58b7a"
+          ],
+          "child_role": "ARZTSITZ_REDISTRIBUTION",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; parent BE-BSW-P22-U02-A04-8ebf4ba58b7a; child ARZTSITZ_REDISTRIBUTION"
+        },
+        {
+          "object_id": "BE-BSW-P22-U02-A04-C02-fd05adab8416",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 2, effect atom 4 of 7; deterministic child clause PUBLIC_PRIMARY_CARE_CENTRES",
+          "source_excerpt": "neue kommunale beziehungsweise öffentliche Primärversorgungszentren gegründet werden, besonders in den unterversorgten Bezirken.",
+          "source_text_sha256": "fd05adab8416b80f7c2a9cbbcab4e1ba992df0bc53ee09edc3859409665c0fd9",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U02-A04-8ebf4ba58b7a"
+          ],
+          "child_role": "PUBLIC_PRIMARY_CARE_CENTRES",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452887573",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452887573; parent BE-BSW-P22-U02-A04-8ebf4ba58b7a; child PUBLIC_PRIMARY_CARE_CENTRES"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A02-C01-6c5faa0941fb",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 2 of 6; deterministic child clause BETTER_PAY",
+          "source_excerpt": "bessere Bezahlung",
+          "source_text_sha256": "6c5faa0941fbcc946e5b9d52444f0b002ed4a0b703fb530291948af1be98db69",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U07-A02-18b00148d452"
+          ],
+          "child_role": "BETTER_PAY",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child BETTER_PAY"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A02-C02-796aa3a8a27d",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 2 of 6; deterministic child clause CAREER_PATHS",
+          "source_excerpt": "klare Aufstiegsmöglichkeiten",
+          "source_text_sha256": "796aa3a8a27dbc201c3a37095d860419737451f31f56148bfc57355ec7eb04ae",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U07-A02-18b00148d452"
+          ],
+          "child_role": "CAREER_PATHS",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child CAREER_PATHS"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A02-C03-8e3e5dd8fb6f",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 2 of 6; deterministic child clause MORE_RESPONSIBILITY",
+          "source_excerpt": "mehr Verantwortung",
+          "source_text_sha256": "8e3e5dd8fb6f93101a8c68c239b5c7be55d6182ebedeab2b7468fecf15a15912",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U07-A02-18b00148d452"
+          ],
+          "child_role": "MORE_RESPONSIBILITY",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child MORE_RESPONSIBILITY"
+        },
+        {
+          "object_id": "BE-BSW-P22-U07-A02-C04-a1fd6fa81444",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 7, effect atom 2 of 6; deterministic child clause LEGAL_FRAMEWORK",
+          "source_excerpt": "verlässliche rechtliche Rahmenbedingungen",
+          "source_text_sha256": "a1fd6fa814445e2de665655191f9de45deb2a04ba24ec7876c9154941130872c",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U07-A02-18b00148d452"
+          ],
+          "child_role": "LEGAL_FRAMEWORK",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452894797",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452894797; parent BE-BSW-P22-U07-A02-18b00148d452; child LEGAL_FRAMEWORK"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A02-C01-25aeab535330",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 2 of 6; deterministic child clause INZ_NOTDIENST_LONGER_HOURS",
+          "source_excerpt": "Wir wollen Notdienstpraxen wie die Integrierten Notfallzentren (INZ) mit längeren Öffnungszeiten ausbauen.",
+          "source_text_sha256": "25aeab5353302419703a9f0498f1136790bac1b1d06fa4a17b9ee88147b2f398",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U09-A02-8b6105da4cc3"
+          ],
+          "child_role": "INZ_NOTDIENST_LONGER_HOURS",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A02-8b6105da4cc3; child INZ_NOTDIENST_LONGER_HOURS"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A02-C02-a606e2306122",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 2 of 6; deterministic child clause POOL_DOCTOR_EMPLOYMENT_MODEL",
+          "source_excerpt": "und uns für alternative Lösungen zur Beschäftigung von selbständigen Poolärzten einsetzen.",
+          "source_text_sha256": "a606e23061224fdb99427d69a5a924380992b609d61b387465fbc1edb13266e1",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U09-A02-8b6105da4cc3"
+          ],
+          "child_role": "POOL_DOCTOR_EMPLOYMENT_MODEL",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A02-8b6105da4cc3; child POOL_DOCTOR_EMPLOYMENT_MODEL"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A03-C01-6ca882fae06f",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 3 of 6; deterministic child clause STAFF_PROTECTION",
+          "source_excerpt": "Rettungskräfte und Personal in den Rettungsstellen brauchen mehr Schutz im Einsatz.",
+          "source_text_sha256": "6ca882fae06f6103064ad1ea8bee62b7758f4c7320cf26b3a7b928b7cd1041cf",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U09-A03-6047e0632e39"
+          ],
+          "child_role": "STAFF_PROTECTION",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A03-6047e0632e39; child STAFF_PROTECTION"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A03-C02-253de880fdef",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 3 of 6; deterministic child clause TRAINING_PLACES",
+          "source_excerpt": "Rettungskräfte und Personal in den Rettungsstellen brauchen ausreichend Ausbildungsplätze.",
+          "source_text_sha256": "253de880fdefbbd36c3fd548341649b9be6c1ae541e80ab745af552ab57e9623",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U09-A03-6047e0632e39"
+          ],
+          "child_role": "TRAINING_PLACES",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A03-6047e0632e39; child TRAINING_PLACES"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A05-C01-a97604715d4a",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 5 of 6; deterministic child clause AED_PUBLIC_ACCESS",
+          "source_excerpt": "Berlin braucht außerdem flächendeckend Defibrillatoren.",
+          "source_text_sha256": "a97604715d4aa0f287ccd52d0ec3ed12a654c0453d10c5efb82326b8b474c33f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U09-A05-4b51e67cc6ee"
+          ],
+          "child_role": "AED_PUBLIC_ACCESS",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A05-4b51e67cc6ee; child AED_PUBLIC_ACCESS"
+        },
+        {
+          "object_id": "BE-BSW-P22-U09-A05-C02-a1df4758ac6b",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 22 of 66, normalized source unit 9, effect atom 5 of 6; deterministic child clause AED_TRAINING",
+          "source_excerpt": "und breit angelegte Schulungsprogramme für deren Einsatz.",
+          "source_text_sha256": "a1df4758ac6b86696d05eb8441bf8b5aaadf83f805bf33f2cfee838f994cead8",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_SPLIT",
+          "parent_object_ids": [
+            "BE-BSW-P22-U09-A05-4b51e67cc6ee"
+          ],
+          "child_role": "AED_TRAINING",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SEGMENTATION",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452902986",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p22-authoritative-handoff.md",
+            "file_sha256": "dc917db629843f689c7674be72c2cb2697873f16d2e078f3e5ed47182731e4fb"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5452902986; parent BE-BSW-P22-U09-A05-4b51e67cc6ee; child AED_TRAINING"
         }
       ],
       "remaining_review_envelopes": [
-        {
-          "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_022",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 22 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
         {
           "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_023",
           "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
@@ -19260,5 +20157,5 @@
     "vercel_action_triggered": false
   },
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
-  "descriptor_sha256": "4a8bf2f3f57272e28c9e691176965e6748880a99f4c5d835fcdd79f4d41ada78"
+  "descriptor_sha256": "1b27e6d24526e4815451bf74158de5470d55d3459567e8b0c2fdb8f49ed18d64"
 }
