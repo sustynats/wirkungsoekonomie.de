@@ -57,9 +57,9 @@ def sha256_file(path: Path) -> str:
 
 
 def validate_boundary(matrix: dict, register: dict) -> None:
-    require(matrix.get("schema_version") == "woek-berlin-fach-content-residual-3.0", "schema drift")
+    require(matrix.get("schema_version") == "woek-berlin-fach-content-residual-3.1", "schema drift")
     require(matrix.get("matrix_id") == "BE-FACH-CONTENT-RESIDUAL-2026-V3", "matrix id drift")
-    require(matrix.get("base_main_commit") == "44a57eecf44887941e504ea52723d247d2790f6a", "base main commit drift")
+    require(matrix.get("base_main_commit") == "1a0757682e8d2365eb28218816484c2e1e13d83e", "base main commit drift")
     require(matrix.get("status") == "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12", "false terminal status")
     require(matrix.get("binding_order") == BINDING_ORDER, "binding order drift")
     require(matrix.get("execution_order_remaining") == OPEN, "execution residual drift")
@@ -103,10 +103,12 @@ def validate_boundary(matrix: dict, register: dict) -> None:
         "programme_analysis_open": 9,
         "genuine_fach_programmes": 9,
         "genuine_fach_programme_parties": OPEN,
-        "remaining_genuine_fach_review_required": 1267,
-        "remaining_page_review_envelopes": 1267,
+        "remaining_genuine_fach_review_required": 1270,
+        "remaining_review_scope_count": 1270,
+        "remaining_page_review_envelopes": 1262,
+        "remaining_exact_effect_objects_identified": 8,
         "remaining_exact_effect_object_count": None,
-        "terminal_source_objects": 147,
+        "terminal_source_objects": 266,
         "known_segmentation_defects": 2,
         "berlin_completion_gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
     }
@@ -144,8 +146,10 @@ def main() -> None:
         "matrix_id": matrix["matrix_id"],
         "programmes_terminal": 3,
         "programmes_open": 9,
-        "terminal_source_objects": 147,
-        "remaining_review_envelopes": 1267,
+        "terminal_source_objects": 266,
+        "remaining_review_envelopes": 1262,
+        "remaining_exact_objects": 8,
+        "remaining_review_scopes": 1270,
         "known_segmentation_defects": 2,
         "descriptor_sha256": matrix["descriptor_sha256"],
         "input_bound_reproduction": "PASS",
