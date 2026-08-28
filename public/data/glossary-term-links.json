@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-16T06:09:38.588Z",
+  "generatedAt": "2026-08-28T05:39:51.999Z",
   "links": {
+    "bundeshaushaltsordnung-paragraf-7": {
+      "label": "§ 7 Bundeshaushaltsordnung (BHO)",
+      "slug": "7-bundeshaushaltsordnung",
+      "url": "/begriffe/7-bundeshaushaltsordnung/",
+      "hoverDefinition": "§ 7 Absatz 2 BHO verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen. Das ist ein objektspezifischer staatlicher Prüfrahmen außerhalb einer pauschalen eNAP-Logik.",
+      "shortDefinition": "§ 7 BHO verpflichtet den Bund zu Wirtschaftlichkeit und Sparsamkeit; für alle finanzwirksamen Maßnahmen sind angemessene Wirtschaftlichkeitsuntersuchungen durchzuführen.",
+      "category": "Rechtsbegriff",
+      "synonyms": [
+        "§ 7 Bundeshaushaltsordnung (BHO)",
+        "BHO § 7",
+        "§ 7 BHO",
+        "Wirtschaftlichkeitsgebot der BHO"
+      ],
+      "relatedTerms": [
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-statt-rechtsform",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
       "slug": "fuenftes-p-planet",
@@ -427,7 +452,8 @@
         "politischer-vorraum",
         "salienz",
         "priming",
-        "oeffentlichkeit-als-wirkungsraum"
+        "oeffentlichkeit-als-wirkungsraum",
+        "resignifikation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -1256,7 +1282,8 @@
         "wirkungsresilienz",
         "vertrauen",
         "klimarisiko",
-        "exposition"
+        "exposition",
+        "klimaanpassungsmanagerin"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2721,7 +2748,8 @@
         "autokratie",
         "faschistoid",
         "macht-und-gewalt",
-        "demokratiefeindlichkeit"
+        "demokratiefeindlichkeit",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7546,7 +7574,8 @@
         "pluralismus",
         "opposition",
         "legitimitaet",
-        "liberale-demokratie"
+        "liberale-demokratie",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7794,7 +7823,8 @@
         "oeffentlichkeit",
         "informationsintegritaet",
         "medienfreiheit",
-        "deliberative-demokratie"
+        "deliberative-demokratie",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8168,7 +8198,9 @@
         "kii",
         "lieferkettenwirkung",
         "cradle-to-cradle",
-        "paltering"
+        "paltering",
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8242,6 +8274,34 @@
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "relatedObjections": []
+    },
+    "deutsche-nachhaltigkeitsstrategie": {
+      "label": "Deutsche Nachhaltigkeitsstrategie (DNS)",
+      "slug": "deutsche-nachhaltigkeitsstrategie",
+      "url": "/begriffe/deutsche-nachhaltigkeitsstrategie/",
+      "hoverDefinition": "Die DNS übersetzt die Agenda 2030 für Deutschland in Ziele, Indikatoren, Governance und Monitoring. Sie ist Referenzrahmen, nicht automatisch Kausalnachweis für einzelne Maßnahmen.",
+      "shortDefinition": "Die Deutsche Nachhaltigkeitsstrategie (DNS) ist der nationale Ziel-, Management- und Monitoringrahmen, mit dem Deutschland die Agenda 2030 und ihre 17 SDGs in eigene Ziele, Indikatoren und Governance übersetzt.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Deutsche Nachhaltigkeitsstrategie (DNS)",
+        "DNS",
+        "Deutsche Nachhaltigkeitsstrategie",
+        "Nachhaltigkeitsstrategie des Bundes"
+      ],
+      "relatedTerms": [
+        "sdg-sdgplus-referenzrahmen",
+        "sdg-plus",
+        "dns-indikator",
+        "referenzrahmen",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "dezentralisierung": {
@@ -8811,7 +8871,8 @@
         "wirkungscontrolling",
         "kii",
         "lieferkettenwirkung",
-        "cradle-to-cradle"
+        "cradle-to-cradle",
+        "resignifikation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8936,6 +8997,32 @@
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "relatedObjections": []
+    },
+    "dns-indikator": {
+      "label": "DNS-Indikator",
+      "slug": "dns-indikator",
+      "url": "/begriffe/dns-indikator/",
+      "hoverDefinition": "DNS-Indikatoren liefern Baseline-, Ziel- und Monitoringinformation. Ein Indikator ist nicht die Wirkung und beweist keine Attribution einer einzelnen Maßnahme.",
+      "shortDefinition": "Ein DNS-Indikator ist eine amtlich definierte Beobachtungsgröße, mit der der Stand und die Zielerreichung der Deutschen Nachhaltigkeitsstrategie verfolgt werden.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "DNS-Indikator",
+        "DNS-Indikatoren",
+        "Indikator der Deutschen Nachhaltigkeitsstrategie",
+        "Nachhaltigkeitsindikator der DNS"
+      ],
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "wirkungsindikator",
+        "zielbezug-vs-wirkung",
+        "baseline",
+        "wirkungsmonitoring"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "dnsh-do-no-significant-harm": {
@@ -9449,6 +9536,30 @@
         "agenda-2030",
         "sdg-plus",
         "wirkungsoekonomie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "egesetzgebung-egfa": {
+      "label": "E-Gesetzgebung / eGFA",
+      "slug": "e-gesetzgebung",
+      "url": "/begriffe/e-gesetzgebung/",
+      "hoverDefinition": "E-Gesetzgebung und eGFA digitalisieren bestehende Rechtsetzungs- und Folgenprüfungsprozesse; eNAP ist darin ein Nachhaltigkeitsprüfwerkzeug.",
+      "shortDefinition": "Die E-Gesetzgebung ist die digitale Arbeitsumgebung des Bundes für Rechtsetzung; die eGFA bildet dort Schritte der elektronischen Gesetzesfolgenabschätzung ab und bindet eNAP ein.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "E-Gesetzgebung / eGFA",
+        "E-Gesetzgebung",
+        "eGFA",
+        "elektronische Gesetzesfolgenabschätzung"
+      ],
+      "relatedTerms": [
+        "enap",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -10175,6 +10286,31 @@
       "relatedTerms": [
         "roaming-ladeinfrastruktur",
         "ladepunktbetreiber"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "enap": {
+      "label": "Elektronische Nachhaltigkeitsprüfung (eNAP)",
+      "slug": "elektronische-nachhaltigkeitspruefung",
+      "url": "/begriffe/elektronische-nachhaltigkeitspruefung/",
+      "hoverDefinition": "eNAP unterstützt die staatliche Nachhaltigkeitsprüfung. Ein eNAP-Zielbezug ist keine eigenständige Kausalitäts- oder Wirkungsvalidierung.",
+      "shortDefinition": "eNAP ist das elektronische Prüfwerkzeug des Bundes für die Nachhaltigkeitsprüfung von Regelungsvorhaben und ist in die E-Gesetzgebung beziehungsweise eGFA eingebettet.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Elektronische Nachhaltigkeitsprüfung (eNAP)",
+        "eNAP",
+        "elektronische Nachhaltigkeitsprüfung"
+      ],
+      "relatedTerms": [
+        "egesetzgebung-egfa",
+        "nachhaltigkeitspruefung-bund",
+        "gesetzesfolgenabschaetzung",
+        "deutsche-nachhaltigkeitsstrategie",
+        "state-gfa-enap-benchmark"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -12680,6 +12816,34 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "ex-ante-folgenpruefung-reality-check": {
+      "label": "Ex-ante-Folgenprüfung und Reality Check",
+      "slug": "ex-ante-folgenpruefung-und-reality-check",
+      "url": "/begriffe/ex-ante-folgenpruefung-und-reality-check/",
+      "hoverDefinition": "Vorher prüfen und später nachsehen sind verschiedene Schritte. Die GGO enthält bereits spätere Überprüfung; WÖk macht daraus eine wiederholbare, versionierte Lernschleife.",
+      "shortDefinition": "Ex-ante-Folgenprüfung schätzt mögliche Folgen vor einer Entscheidung; der Reality Check prüft später beobachtete Zustände und Evidenz gegen die ursprünglichen Annahmen und führt die Erkenntnisse in die nächste Analyseversion zurück.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Ex-ante-Folgenprüfung und Reality Check",
+        "Ex-ante-Folgenprüfung",
+        "Ex-post-Überprüfung",
+        "Reality Check",
+        "Evaluation und Reality Check"
+      ],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "wirkungsmonitoring",
+        "wirkungsrueckkopplung",
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
+        "lern-und-rueckkopplungsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "exergie": {
       "label": "Exergie",
       "slug": "exergie",
@@ -14314,7 +14478,9 @@
         "framing-sprache-tonalitaet",
         "wirkpfad",
         "wirkungsrisiko",
-        "gegenframe"
+        "gegenframe",
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15164,7 +15330,8 @@
       "relatedTerms": [
         "frame",
         "reframing",
-        "wirkungskommunikation"
+        "wirkungskommunikation",
+        "resignifikation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15220,6 +15387,34 @@
         "genossenschaft",
         "wirkungsbewertung",
         "sozialisierung-vergesellschaftung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gemeinsame-geschaeftsordnung-bundesministerien": {
+      "label": "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)",
+      "slug": "gemeinsame-geschaeftsordnung-der-bundesministerien",
+      "url": "/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/",
+      "hoverDefinition": "§ 43 GGO verlangt unter anderem Ziel, Notwendigkeit, Sachverhalt, Erkenntnisquellen und Alternativen; § 44 GGO regelt Folgen, Nebenwirkungen, Nachhaltigkeit und spätere Überprüfung.",
+      "shortDefinition": "Die GGO ist die gemeinsame Verwaltungsvorschrift für die Arbeit der Bundesministerien; §§ 43 und 44 regeln zentrale Anforderungen an Gesetzesbegründung und Gesetzesfolgenabschätzung.",
+      "category": "Rechtsbegriff",
+      "synonyms": [
+        "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)",
+        "GGO",
+        "Gemeinsame Geschäftsordnung der Bundesministerien",
+        "§ 43 GGO",
+        "§ 44 GGO"
+      ],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-reality-check"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15841,6 +16036,33 @@
       "relatedTerms": [
         "parlament",
         "verfassung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gesetzesfolgenabschaetzung": {
+      "label": "Gesetzesfolgenabschätzung (GFA)",
+      "slug": "gesetzesfolgenabschaetzung",
+      "url": "/begriffe/gesetzesfolgenabschaetzung/",
+      "hoverDefinition": "Die GFA ist eine bestehende staatliche Prüfarchitektur. Nach GGO gehören dazu Folgen, Nebenwirkungen, Nachhaltigkeit sowie - in der Begründung - Ziel, Sachverhalt und Alternativen.",
+      "shortDefinition": "Die Gesetzesfolgenabschätzung des Bundes prüft die wesentlichen voraussichtlichen Auswirkungen eines Regelungsvorhabens, einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Gesetzesfolgenabschätzung (GFA)",
+        "GFA",
+        "Gesetzesfolgenabschätzung",
+        "Folgenabschätzung von Gesetzen"
+      ],
+      "relatedTerms": [
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-reality-check",
+        "staatliche-nachhaltigkeitsarchitektur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -18531,7 +18753,8 @@
         "wirkungshaushalt",
         "naturbasierte-loesungen",
         "physical-climate-risk",
-        "quartierswirkung"
+        "quartierswirkung",
+        "klimaanpassungsmanagerin"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -21774,6 +21997,42 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "katechon": {
+      "label": "Katechon",
+      "slug": "katechon",
+      "url": "/begriffe/katechon/",
+      "hoverDefinition": "Katechon bezeichnet ein politisch-theologisches Motiv des ‚Aufhalters‘: eine Kraft, Institution oder Person, die einen drohenden Zusammenbruch, das Chaos oder den Untergang zurückhalten soll.",
+      "shortDefinition": "Katechon bezeichnet ein politisch-theologisches Motiv des Aufhaltens: Eine Kraft, Institution oder Person soll einen drohenden Zusammenbruch, das Chaos oder den Untergang zurückhalten. Der Begriff ist ein externer Anschlussbegriff und kein Wirkmechanismus der Wirkungsökonomie.",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "synonyms": [
+        "Katechon",
+        "Katechont",
+        "Aufhalter",
+        "das Aufhaltende",
+        "der Aufhaltende",
+        "politische Theologie"
+      ],
+      "relatedTerms": [
+        "narrativ",
+        "framing",
+        "resonanzraum",
+        "resonanzrisiko",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "transformationswirkung",
+        "demokratie",
+        "demokratische-oeffentlichkeit",
+        "desinformation",
+        "resignifikation",
+        "autoritarismus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "kausalitaet-und-zurechnung": {
       "label": "Kausalität und Zurechnung",
       "slug": "kausalitaet-und-zurechnung",
@@ -22453,7 +22712,47 @@
         "anpassungskapazitaet",
         "wirkungsresilienz",
         "klimawandel",
-        "klimaschutz"
+        "klimaschutz",
+        "klimaanpassungsmanagerin"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "klimaanpassungsmanagerin": {
+      "label": "Klimaanpassungsmanager:in",
+      "slug": "klimaanpassungsmanagerin",
+      "url": "/begriffe/klimaanpassungsmanagerin/",
+      "hoverDefinition": "Klimaanpassungsmanager:innen verankern Klimaanpassung strategisch in Kommunen und koordinieren Konzepte, Fachbereiche, Beteiligung und Umsetzung.",
+      "shortDefinition": "Klimaanpassungsmanager:innen koordinieren in Kommunen die Entwicklung und Umsetzung einer strategischen Anpassung an Klimafolgen und verbinden dafür Fachbereiche, Wissen, Akteure und Maßnahmen.",
+      "category": "Klima, Lebenszyklus und ökologische Wirkung",
+      "synonyms": [
+        "Klimaanpassungsmanager:in",
+        "Klimaanpassungsmanagerin",
+        "Klimaanpassungsmanager",
+        "Klimaanpassungsmanager*in",
+        "Klimawandelanpassungsmanager:in",
+        "Klimawandelanpassungsmanagerin",
+        "Klimawandelanpassungsmanager",
+        "kommunale:r Klimaanpassungsmanager:in"
+      ],
+      "relatedTerms": [
+        "klimaanpassung",
+        "klimarisiko",
+        "anpassungskapazitaet",
+        "vulnerabilitaet",
+        "exposition",
+        "klimafolgeschaeden",
+        "hitzeschutz-hitzeaktionsplan",
+        "wirkungsresilienz",
+        "wirkungsmanagement",
+        "wirkungsmonitoring",
+        "wirkpfad",
+        "wirkungszurechnung",
+        "wirkungsrueckkopplung",
+        "nichtkompensationsprinzip"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22512,7 +22811,8 @@
         "praeventionsdividende",
         "kipppunkte",
         "vorsorgeprinzip",
-        "t-sroi"
+        "t-sroi",
+        "klimaanpassungsmanagerin"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22588,7 +22888,8 @@
         "stranded-assets",
         "physical-climate-risk",
         "transformationspfad",
-        "resilienz"
+        "resilienz",
+        "klimaanpassungsmanagerin"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28650,6 +28951,32 @@
       ],
       "relatedObjections": []
     },
+    "nachhaltigkeitspruefung-bund": {
+      "label": "Nachhaltigkeitsprüfung des Bundes",
+      "slug": "nachhaltigkeitspruefung-des-bundes",
+      "url": "/begriffe/nachhaltigkeitspruefung-des-bundes/",
+      "hoverDefinition": "Seit 2009 ist die Nachhaltigkeitsprüfung in der Bundesgesetzgebung institutionell verankert; geprüft werden unter anderem betroffene SDGs sowie Ziele und Indikatoren der DNS.",
+      "shortDefinition": "Die Nachhaltigkeitsprüfung ist der Teil der Gesetzesfolgenabschätzung, in dem geprüft und dargestellt wird, ob die Wirkungen eines Regelungsvorhabens einer nachhaltigen Entwicklung entsprechen.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Nachhaltigkeitsprüfung des Bundes",
+        "Nachhaltigkeitsprüfung",
+        "Nachhaltigkeitsprüfung in der Gesetzgebung",
+        "Nachhaltigkeitsprüfung nach GGO"
+      ],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "enap",
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "zielbezug-vs-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "nachtwaechterstaat": {
       "label": "Nachtwächterstaat",
       "slug": "nachtwaechterstaat",
@@ -28722,7 +29049,9 @@
         "sensemaking",
         "resonanz",
         "vertrautheitseffekt",
-        "gedaechtniskonsolidierung"
+        "gedaechtniskonsolidierung",
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28745,6 +29074,30 @@
       "relatedTerms": [
         "innovation",
         "hannah-arendt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nationaler-wohlfahrtsindex": {
+      "label": "Nationaler Wohlfahrtsindex (NWI)",
+      "slug": "nationaler-wohlfahrtsindex",
+      "url": "/begriffe/nationaler-wohlfahrtsindex/",
+      "hoverDefinition": "Der Nationale Wohlfahrtsindex (NWI) ergänzt die BIP-Perspektive um 21 monetär bewertete Wohlfahrtskomponenten.",
+      "shortDefinition": "Der Nationale Wohlfahrtsindex (NWI) ist ein deutscher Wohlfahrtsindikator aus 21 monetär bewerteten wohlfahrtsstiftenden und wohlfahrtsmindernden Komponenten.",
+      "category": "Volkswirtschaft & neue Wohlstandsmessung",
+      "synonyms": [
+        "Nationaler Wohlfahrtsindex (NWI)",
+        "Nationaler Wohlfahrtsindex",
+        "NWI"
+      ],
+      "relatedTerms": [
+        "nwi",
+        "bip",
+        "wohlstand",
+        "wohlfahrtsstaat"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -29266,55 +29619,6 @@
           "label": "Leitbild Mensch, Planet und Demokratie",
           "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
         }
-      ],
-      "relatedObjections": []
-    },
-    "nwi": {
-      "label": "Netto-Wirkungs-Index (NWI)",
-      "slug": "nwi",
-      "url": "/begriffe/nwi/",
-      "hoverDefinition": "Der Netto-Wirkungs-Index (NWI) verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.",
-      "shortDefinition": "Der Netto-Wirkungs-Index (NWI) verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.",
-      "category": "Messbegriff",
-      "synonyms": [
-        "Netto-Wirkungs-Index (NWI)",
-        "NWI",
-        "Netto-Wirkungs-Index",
-        "Netto-Wirkungs-Index / NWI",
-        "Netto Wirkungs Index",
-        "Net Impact Index",
-        "operative Netto-Wirkungskennzahl",
-        "Wirkungsindex",
-        "WÖk-NWI",
-        "Netto-Wirkungskennzahl"
-      ],
-      "relatedTerms": [
-        "netto-wirkung",
-        "positive-netto-wirkung",
-        "t-sroi",
-        "scorecard",
-        "finalscore",
-        "wirkungscontrolling",
-        "reverse-merit-order",
-        "nichtkompensationsprinzip",
-        "datenqualitaet",
-        "wirkungsdaten",
-        "impact-controlling",
-        "key-impact-indicator",
-        "wirkungsscorecard-und-finalscore",
-        "externalitaeten-und-kostenverlagerungskarte",
-        "wirkungsportfolio",
-        "wirkungskapital-und-investitionsgate",
-        "wirkungsdashboard-und-managementcockpit",
-        "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "technische-leitlinien-wustg",
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "relatedObjections": []
     },
@@ -30774,6 +31078,58 @@
       ],
       "relatedTerms": [
         "spannungsqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "objektspezifische-staatliche-pruefarchitektur": {
+      "label": "Objektspezifische staatliche Prüfarchitektur",
+      "slug": "objektspezifische-staatliche-pruefarchitektur",
+      "url": "/begriffe/objektspezifische-staatliche-pruefarchitektur/",
+      "hoverDefinition": "GGO/GFA/eNAP, BHO/VV-BHO sowie Fachgesetze gelten nicht pauschal für dasselbe. Vor jeder WÖk-Analyse wird der tatsächlich anwendbare staatliche Prüfrahmen bestimmt.",
+      "shortDefinition": "Staatliche Folgen-, Nachhaltigkeits-, Wirtschaftlichkeits- und Berücksichtigungsprüfungen folgen unterschiedlichen Rechts- und Verfahrensrahmen je nach Entscheidungsobjekt.",
+      "category": "Architekturbegriff",
+      "synonyms": [
+        "Objektspezifische staatliche Prüfarchitektur",
+        "objektspezifischer staatlicher Prüfrahmen",
+        "staatliche Prüfrahmen nach Objekttyp",
+        "anwendbarer staatlicher Prüfrahmen"
+      ],
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "gesetzesfolgenabschaetzung",
+        "bundeshaushaltsordnung-paragraf-7",
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "wirkungsrelevanz-statt-rechtsform"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "state-assessment-benchmark": {
+      "label": "Objektspezifischer staatlicher Prüfbenchmark",
+      "slug": "state-assessment-benchmark",
+      "url": "/begriffe/state-assessment-benchmark/",
+      "hoverDefinition": "Zuerst wird der anwendbare staatliche Rahmen je Objekttyp dokumentiert; erst danach werden Konvergenz, zusätzliche WÖk-Befunde oder Abweichungen getrennt ausgewiesen.",
+      "shortDefinition": "Der objektspezifische staatliche Prüfbenchmark dokumentiert für eine konkrete staatliche Entscheidung, welche amtlichen Prüf-, Bewertungs- und Kontrollrahmen gelten und was daraus öffentlich belegt ist.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Objektspezifischer staatlicher Prüfbenchmark",
+        "staatlicher Prüfbenchmark",
+        "State Assessment Benchmark",
+        "STATE_ASSESSMENT_BENCHMARK"
+      ],
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "state-gfa-enap-benchmark",
+        "gesetzesfolgenabschaetzung",
+        "ex-ante-folgenpruefung-reality-check",
+        "zielbezug-vs-wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32398,6 +32754,31 @@
         "parlament",
         "regierung",
         "gewaltenteilung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "parlamentarischer-beirat-nachhaltige-entwicklung": {
+      "label": "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
+      "slug": "parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen",
+      "url": "/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/",
+      "hoverDefinition": "Der PBnEZ ist eine parlamentarische Kontroll- und Governance-Schicht der deutschen Nachhaltigkeitsarchitektur; er ist nicht der vorgeschlagene WÖk-Wirkungsrat.",
+      "shortDefinition": "Der PBnEZ ist ein Gremium des Deutschen Bundestages, das Nachhaltigkeit parlamentarisch begleitet und die Nachhaltigkeitsprüfung von Regelungsvorhaben kontrolliert.",
+      "category": "Demokratiebegriff",
+      "synonyms": [
+        "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
+        "PBnEZ",
+        "Parlamentarischer Beirat für nachhaltige Entwicklung",
+        "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen"
+      ],
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "wirkungsrat",
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35094,6 +35475,35 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "produkt-id": {
+      "label": "Produkt-ID",
+      "slug": "produkt-id",
+      "url": "/begriffe/produkt-id/",
+      "hoverDefinition": "Die Produkt-ID beantwortet, welches konkrete Produkt oder Objekt gemeint ist; eine WÖk-ID bezeichnet dagegen den gemessenen Wirkungsindikator.",
+      "shortDefinition": "Eine Produkt-ID identifiziert das konkrete Produkt, Modell oder andere Steuerobjekt, auf das Wirkungsdaten und Rechtsfolgen bezogen werden.",
+      "category": "Daten, Standards und Regulierung",
+      "synonyms": [
+        "Produkt-ID",
+        "Produktidentität",
+        "Objekt-ID",
+        "Produkt-/Objekt-ID"
+      ],
+      "relatedTerms": [
+        "woek-id",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsnachweiskonto",
+        "wirkungsindikator",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0"
+      ],
+      "relatedObjections": []
+    },
     "produkt-markt-wirkungs-fit": {
       "label": "Produkt-Markt-Wirkungs-Fit",
       "slug": "produkt-markt-wirkungs-fit",
@@ -35625,7 +36035,8 @@
         "mediengleichschaltung",
         "agenda-setting",
         "wiedergeburtsnarrativ",
-        "informationsintegritaet"
+        "informationsintegritaet",
+        "resignifikation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -38628,6 +39039,49 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "resignifikation": {
+      "label": "Resignifikation / subversive Resignifikation",
+      "slug": "resignifikation",
+      "url": "/begriffe/resignifikation/",
+      "hoverDefinition": "Resignifikation ist die Veränderung oder Neubesetzung von Bedeutung; bei Volker Weiß bezeichnet subversive Resignifikation besonders die strategische Umcodierung historischer Begriffe und Deutungen.",
+      "shortDefinition": "Resignifikation bezeichnet die Veränderung oder gezielte Neubesetzung der Bedeutung eines Begriffs, Zeichens oder historischen Narrativs. Im Sinne von Volker Weiß beschreibt subversive beziehungsweise strategische Resignifikation des Historischen, wie politische Akteure historische Begriffe und Deutungen aus ihrem Zusammenhang lösen, umcodieren und als anschlussfähige Gegenwirklichkeit in den öffentlichen Diskurs zurückspielen.",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "synonyms": [
+        "Resignifikation / subversive Resignifikation",
+        "Resignifikation",
+        "resignifizieren",
+        "Neubesetzung von Bedeutung",
+        "semantische Umcodierung",
+        "Bedeutungsverschiebung",
+        "strategische Resignifikation",
+        "subversive Resignifikation",
+        "strategische Resignifikation des Historischen",
+        "subversive Resignifikation des Historischen"
+      ],
+      "relatedTerms": [
+        "framing",
+        "gegenframe",
+        "reframing",
+        "narrativ",
+        "desinformation",
+        "propaganda",
+        "agenda-setting",
+        "wahrheitsillusionseffekt",
+        "diskurskultur",
+        "resonanzraum",
+        "wirkungsanalyse-von-sprache",
+        "wirkmechanismus",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkpfad",
+        "katechon"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "resilienz": {
       "label": "Resilienz",
       "slug": "resilienz",
@@ -38993,7 +39447,9 @@
         "wirkungspotenzial",
         "diskursfaehigkeit",
         "frame",
-        "reframing"
+        "reframing",
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -39017,7 +39473,8 @@
         "wirkungspotenzial",
         "alarm-frame",
         "destruktives-narrativ",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -43470,6 +43927,62 @@
       ],
       "relatedObjections": []
     },
+    "staatliche-nachhaltigkeitsarchitektur": {
+      "label": "Staatliche Nachhaltigkeitsarchitektur",
+      "slug": "staatliche-nachhaltigkeitsarchitektur",
+      "url": "/begriffe/staatliche-nachhaltigkeitsarchitektur/",
+      "hoverDefinition": "Deutschland prüft Folgen bereits - mit unterschiedlichen Verfahren je nach Entscheidungstyp. Die WÖk ersetzt sie nicht, sondern legt einen gemeinsamen materialitätsbasierten Wirkungsmaßstab darüber.",
+      "shortDefinition": "Die staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur des Bundes ist nach Entscheidungstyp verteilt: GGO/GFA/eNAP für Regelungsvorhaben, BHO/VV-BHO für finanzwirksame Maßnahmen sowie weitere objekt- und fachrechtliche Regime, soweit anwendbar.",
+      "category": "Architekturbegriff",
+      "synonyms": [
+        "Staatliche Nachhaltigkeitsarchitektur",
+        "staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur",
+        "staatliche Nachhaltigkeitsarchitektur des Bundes",
+        "Nachhaltigkeitsgovernance des Bundes"
+      ],
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "dns-indikator",
+        "parlamentarischer-beirat-nachhaltige-entwicklung",
+        "state-assessment-benchmark"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "state-gfa-enap-benchmark": {
+      "label": "Staatlicher GFA-/eNAP-Benchmark",
+      "slug": "state-gfa-enap-benchmark",
+      "url": "/begriffe/state-gfa-enap-benchmark/",
+      "hoverDefinition": "Der Benchmark trennt staatliche GFA/Nachhaltigkeitsprüfung und WÖk-Urteil. Übereinstimmung ist erlaubt; fehlende öffentliche eNAP-Dokumentation bedeutet nicht, dass keine Prüfung stattfand.",
+      "shortDefinition": "staatlicher GFA-/eNAP-Benchmark ist der WÖk-Datenlayer, der bei geeigneten Bundesregelungsvorhaben die öffentlich belegbare staatliche GFA-/Nachhaltigkeitseinschätzung getrennt von der unabhängigen WÖk-Analyse dokumentiert.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Staatlicher GFA-/eNAP-Benchmark",
+        "GFA-eNAP-Benchmark",
+        "staatlicher GFA/eNAP-Benchmark",
+        "STATE_GFA_ENAP_BENCHMARK"
+      ],
+      "relatedTerms": [
+        "state-assessment-benchmark",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "zielbezug-vs-wirkung",
+        "wirkungsanalyse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "staatsdelegitimierung": {
       "label": "Staatsdelegitimierung",
       "slug": "staatsdelegitimierung",
@@ -47477,7 +47990,7 @@
       "url": "/begriffe/transformationswirkung/",
       "hoverDefinition": "Transformationswirkung verändert nachweisbar nicht nur einen einzelnen Zustand, sondern Bedingungen künftiger Entscheidungen. Eine bloße Erwartung ist Wirkungspotenzial, keine Transformationswirkung.",
       "shortDefinition": "Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen – etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade – verändert.",
-      "category": "Grundbegriffe der Wirkungsökonomie",
+      "category": "Grundbegriff",
       "synonyms": [
         "Transformationswirkung",
         "transformative Wirkung",
@@ -50565,7 +51078,35 @@
         "anpassungskapazitaet",
         "klimarisiko",
         "wirkungsresilienz",
-        "klimaanpassung"
+        "klimaanpassung",
+        "klimaanpassungsmanagerin"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle": {
+      "label": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
+      "slug": "vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle",
+      "url": "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/",
+      "hoverDefinition": "Die VV-BHO unterscheiden Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Die Wirkungskontrolle fragt nach Ursächlichkeit und beabsichtigten wie unbeabsichtigten Wirkungen.",
+      "shortDefinition": "Die VV zu § 7 BHO konkretisieren für finanzwirksame Maßnahmen die Wirtschaftlichkeitsuntersuchung in der Planungsphase und die begleitende oder abschließende Erfolgskontrolle.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
+        "VV-BHO zu § 7",
+        "Wirtschaftlichkeitsuntersuchung des Bundes",
+        "Erfolgskontrolle nach VV-BHO",
+        "Wirkungskontrolle nach VV-BHO"
+      ],
+      "relatedTerms": [
+        "bundeshaushaltsordnung-paragraf-7",
+        "ex-ante-folgenpruefung-reality-check",
+        "attributionsforschung",
+        "wirkungsmonitoring",
+        "objektspezifische-staatliche-pruefarchitektur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -52060,7 +52601,9 @@
         "wirkung",
         "wirkpfad",
         "wirkungstraeger",
-        "kognitive-dissonanz"
+        "kognitive-dissonanz",
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -53011,7 +53554,8 @@
         "folgencheck",
         "frame",
         "sprachlicher-trigger",
-        "resonanzraum"
+        "resonanzraum",
+        "resignifikation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -53687,9 +54231,9 @@
       "label": "Wirkungsblindheit",
       "slug": "wirkungsblindheit",
       "url": "/begriffe/wirkungsblindheit/",
-      "hoverDefinition": "Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.",
-      "shortDefinition": "Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.",
-      "category": "Wirkungssprache & Systemkritik",
+      "hoverDefinition": "Wirkungsblindheit heißt nicht 'keine Prüfung'. Sie bezeichnet lückenhafte Wirkungs-, Zurechnungs- oder Rückkopplungsketten.",
+      "shortDefinition": "Wirkungsblindheit bedeutet in der WÖk nicht, dass ein System keinerlei Folgen prüft oder misst. Gemeint ist eine strukturelle Lücke, wenn relevante Zustandsveränderungen, Wirkpfade oder Unsicherheiten nicht vollständig erkannt, nicht kausal zugeordnet oder nicht wirksam in Entscheidungen, Anreize und spätere Korrektur zurückgeführt werden.",
+      "category": "Grundbegriff",
       "synonyms": [
         "Wirkungsblindheit",
         "wirkungsblind",
@@ -53702,6 +54246,12 @@
         "Aktivitätsblindheit"
       ],
       "relatedTerms": [
+        "wirkung",
+        "wirkungsrueckkopplung",
+        "gesetzesfolgenabschaetzung",
+        "staatliche-nachhaltigkeitsarchitektur",
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
         "wirkungswahrheit",
         "wirkungsbewertung",
         "wirkungslenkung",
@@ -53713,13 +54263,11 @@
         "wirkungssimulation",
         "scheinleistung",
         "blindleistung",
-        "wirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "netto-wirkung",
         "positive-netto-wirkung",
         "transformationswirkung",
-        "wirkungsrueckkopplung",
         "wirkungsgrenze",
         "wirkpfad",
         "wirkungsnetz",
@@ -56570,6 +57118,34 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "wirkungsnachweiskonto": {
+      "label": "Wirkungsnachweiskonto",
+      "slug": "wirkungsnachweiskonto",
+      "url": "/begriffe/wirkungsnachweiskonto/",
+      "hoverDefinition": "Das Wirkungsnachweiskonto dokumentiert Nachweise, Datenstände, Benchmarks, Prüfungen und Rechtsfolgen je steuerlichem Tatbestand, ohne eine moralische Gesamtbilanz zu bilden.",
+      "shortDefinition": "Das Wirkungsnachweiskonto ist eine digitale, revisionssichere Nachweis- und Versionsschicht für steuerrelevante Wirkungsdaten je Tatbestand.",
+      "category": "Steuern, Preise & Rückkopplung",
+      "synonyms": [
+        "Wirkungsnachweiskonto",
+        "Wirkungsnachweis-Konto"
+      ],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "wstg",
+        "woek-id",
+        "produkt-id",
+        "datenqualitaet",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0"
+      ],
+      "relatedObjections": []
+    },
     "wirkungsnetz": {
       "label": "Wirkungsnetz",
       "slug": "wirkungsnetz",
@@ -57705,6 +58281,7 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
+        "katechon",
         "ausloeser",
         "iooi",
         "wirkungsnachweis"
@@ -58504,6 +59081,32 @@
       ],
       "relatedObjections": []
     },
+    "wirkungsrelevanz-statt-rechtsform": {
+      "label": "Wirkungsrelevanz statt Rechtsform",
+      "slug": "wirkungsrelevanz-statt-rechtsform",
+      "url": "/begriffe/wirkungsrelevanz-statt-rechtsform/",
+      "hoverDefinition": "WÖk prüft materiell relevante Gesetze, Strategien, Programme, Förderungen, Investitionen, Beschaffung und andere Handlungen - jeweils zusätzlich zum tatsächlich geltenden staatlichen Rahmen.",
+      "shortDefinition": "Wirkungsrelevanz statt Rechtsform ist das WÖk-Prinzip, Prüfgegenstände nach möglicher materieller Zustandsveränderung und nicht allein nach ihrer rechtlichen Handlungsform auszuwählen.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Wirkungsrelevanz statt Rechtsform",
+        "Materialität statt Rechtsform",
+        "wirkungsrelevanter Prüfgegenstand",
+        "materialitätsgetriebener Prüfumfang"
+      ],
+      "relatedTerms": [
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-und-materialitaetsanalyse",
+        "wirkungsanalyse",
+        "attributionsforschung",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wirkungsrelevanz-und-materialitaetsanalyse": {
       "label": "Wirkungsrelevanz- und Materialitätsanalyse",
       "slug": "wirkungsrelevanz-und-materialitaetsanalyse",
@@ -58795,7 +59398,8 @@
         "rueckstellfaehigkeit",
         "daempfungsfaehigkeit",
         "anpassungsfaehigkeit",
-        "transformationsfaehigkeit"
+        "transformationsfaehigkeit",
+        "klimaanpassungsmanagerin"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -58999,6 +59603,7 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
+        "katechon",
         "ausloeser",
         "wirkmechanismus",
         "iooi",
@@ -59356,12 +59961,13 @@
       "label": "Wirkungssteuer",
       "slug": "wirkungssteuer",
       "url": "/begriffe/wirkungssteuer/",
-      "hoverDefinition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
-      "shortDefinition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
+      "hoverDefinition": "Wirkungssteuer 3.0 ergänzt bestehende Steuerarten um gesetzliche Wirkungsmodule; Scorecards liefern Evidenz, der Gesetzgeber bestimmt Tarife und Rechtsfolgen.",
+      "shortDefinition": "Wirkungssteuer bezeichnet eine modulare fiskalische Rückkopplungsarchitektur, die nachgewiesene oder gesetzlich modellierte Wirkung über klar bestimmte Module an bestehende Steuerarten anbindet.",
       "category": "Steuern, Preise & Rückkopplung",
       "synonyms": [
         "Wirkungssteuer",
         "Steuer nach Wirkung",
+        "Impact Tax",
         "Harmful Subsidies",
         "umweltschädliche Subventionen",
         "umweltschaedliche Subventionen",
@@ -59373,21 +59979,24 @@
         "Wirkungsabgabe",
         "Produktwirkungssteuer",
         "Wirkungsumsatzsteuer",
-        "Impact Tax",
         "Steuerung nach Wirkung",
         "Bonus-Malus-Steuerlogik"
       ],
       "relatedTerms": [
         "wstg",
+        "wirkungssteuergesetz",
+        "wirkungsnachweiskonto",
         "wustg",
         "wirkungsrueckkopplung",
+        "scorecard",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
         "haushaltsneutralitaet",
         "energiearmut",
         "mobilitaetsarmut",
         "klimagerechtigkeit",
         "cbam",
         "hebelpunkt",
-        "wirkungssteuergesetz",
         "wirkungsumsatzsteuer",
         "karl-polanyi",
         "john-maynard-keynes",
@@ -59406,7 +60015,6 @@
         "wirkungsgutschrift",
         "wirkungslenkung",
         "finalscore",
-        "reverse-merit-order",
         "produktscorecard",
         "wirkungsregister",
         "wirkungsgrenze",
@@ -59423,7 +60031,6 @@
         "wirkungsindikator",
         "benchmark",
         "archetyp",
-        "nichtkompensationsprinzip",
         "wirkungsaudit",
         "wirkungsassurance",
         "datenqualitaet",
@@ -59451,8 +60058,9 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "wstg-oktober-2025",
+        "wirkungssteuer-wstg-3-0",
         "technische-leitlinien-wustg",
+        "wstg-oktober-2025",
         "Führender Begriffsleitfaden der Wirkungsökonomie",
         "Working-Paper Wirkungssteuergesetz",
         "Technische Leitlinien WUStG",
@@ -59470,28 +60078,32 @@
       "label": "Wirkungssteuergesetz",
       "slug": "wirkungssteuergesetz",
       "url": "/begriffe/wirkungssteuergesetz/",
-      "hoverDefinition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
-      "shortDefinition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
+      "hoverDefinition": "WStG 3.0 verbindet gemeinsame Begriffe, Schutzregeln, Daten, Governance, Rechtsschutz und Evaluation; konkrete Tarife entstehen erst in gesetzlich aktivierten Einzelmodulen.",
+      "shortDefinition": "Das Wirkungssteuergesetz (WStG) 3.0 ist der vollständige Rahmengesetzentwurf für eine modulare, rechtsgebundene Wirkungsrückkopplung über bestehende Steuerarten.",
       "category": "Recht, Steuern & Wirkungsarchitektur",
       "synonyms": [
         "Wirkungssteuergesetz",
         "WStG",
         "Wirkungssteuer-Rahmengesetz",
+        "Impact Tax Act",
         "Wirkungssteuer-Gesetz",
         "Rahmengesetz der Wirkungssteuer",
         "Steuerrahmen nach Wirkung",
         "Gesetz zur Steuerung nach Wirkung",
-        "Impact Tax Act",
         "Wirkungssteuerrahmen"
       ],
       "relatedTerms": [
         "wirkungssteuer",
         "wstg",
+        "wirkungsnachweiskonto",
         "wustg",
+        "scorecard",
+        "woek-id",
+        "produkt-id",
+        "wirkungsrat",
         "wirkungsumsatzsteuer",
         "wirkungseinkommensteuer",
         "wirkungshaushalt",
-        "wirkungsrat",
         "wirkungsregister",
         "wirkungsaudit",
         "wirkungsassurance",
@@ -59516,7 +60128,6 @@
         "produktscorecard",
         "produktdaten",
         "digitaler-produktpass",
-        "woek-id",
         "wirkungsindikator",
         "benchmark",
         "archetyp",
@@ -59542,6 +60153,7 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0",
         "wstg-oktober-2025",
         "Führender Begriffsleitfaden der Wirkungsökonomie",
         "Working-Paper Wirkungssteuergesetz",
@@ -61139,6 +61751,35 @@
       ],
       "relatedObjections": []
     },
+    "nwi": {
+      "label": "WÖk-Netto-Wirkungsindex",
+      "slug": "nwi",
+      "url": "/begriffe/nwi/",
+      "hoverDefinition": "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene operative Kennzahl. Er ist nicht der Nationale Wohlfahrtsindex (NWI).",
+      "shortDefinition": "Der WÖk-Netto-Wirkungsindex verdichtet geprüfte operative Wirkungen innerhalb einer offengelegten Bewertungs- und Schutzlogik.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "WÖk-Netto-Wirkungsindex",
+        "Netto-Wirkungs-Index"
+      ],
+      "relatedTerms": [
+        "nationaler-wohlfahrtsindex",
+        "netto-wirkung",
+        "finalscore",
+        "t-sroi",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "impact-controlling"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
     "woek-ids": {
       "label": "WÖk-IDs",
       "slug": "woek-ids",
@@ -61477,9 +62118,9 @@
       "label": "WStG",
       "slug": "wstg",
       "url": "/begriffe/wstg/",
-      "hoverDefinition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
-      "shortDefinition": "WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung.",
-      "category": "Messbegriff",
+      "hoverDefinition": "WStG 3.0 ist der Entwurfsrahmen für Begriffe, Schutzregeln, Governance, Daten, Rechtsschutz, Evaluation und gesetzlich aktivierte Steuermodule.",
+      "shortDefinition": "WStG steht für Wirkungssteuergesetz 3.0, den modularen Rahmengesetzentwurf für steuerliche Wirkungsrückkopplung über bestehende Steuerarten.",
+      "category": "Recht, Steuern & Wirkungsarchitektur",
       "synonyms": [
         "WStG",
         "Wirkungssteuergesetz"
@@ -61487,13 +62128,17 @@
       "relatedTerms": [
         "wirkungssteuergesetz",
         "wirkungssteuer",
+        "wirkungsnachweiskonto",
         "wustg",
+        "scorecard",
+        "wirkungsrat",
         "soziale-marktwirtschaft"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0",
         "wstg-oktober-2025"
       ],
       "relatedObjections": []
@@ -61866,6 +62511,33 @@
         "evidenz-und-annahmenregister",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "zielbezug-vs-wirkung": {
+      "label": "Zielbezug und Wirkung",
+      "slug": "zielbezug-und-wirkung",
+      "url": "/begriffe/zielbezug-und-wirkung/",
+      "hoverDefinition": "TARGET_ALIGNMENT_NOT_CAUSALITY: Die Zuordnung zu SDG- oder DNS-Zielen ist eine Referenz, kein Nachweis, dass ein Vorhaben die gewünschte Wirkung verursacht.",
+      "shortDefinition": "Zielbezug zeigt, zu welchem Ziel oder Schutzgut ein Vorhaben fachlich gehört; Wirkung beschreibt dagegen eine tatsächliche Zustandsveränderung. Beides ist nicht dasselbe.",
+      "category": "Bewertungsbegriff",
+      "synonyms": [
+        "Zielbezug und Wirkung",
+        "Zielbezug vs. Wirkung",
+        "Target Alignment",
+        "Zielausrichtung"
+      ],
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "wirkung",
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
+        "referenzrahmen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

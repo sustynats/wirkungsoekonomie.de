@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "generatedAt": "2026-08-28T05:39:50.260Z",
   "schema": {
     "term": "canonicalLabel",
     "shortDefinition": "shortDefinition",
@@ -2951,7 +2951,8 @@
         "autokratie",
         "faschistoid",
         "macht-und-gewalt",
-        "demokratiefeindlichkeit"
+        "demokratiefeindlichkeit",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8137,7 +8138,8 @@
         "pluralismus",
         "opposition",
         "legitimitaet",
-        "liberale-demokratie"
+        "liberale-demokratie",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8405,7 +8407,8 @@
         "oeffentlichkeit",
         "informationsintegritaet",
         "medienfreiheit",
-        "deliberative-demokratie"
+        "deliberative-demokratie",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8806,7 +8809,8 @@
         "lieferkettenwirkung",
         "cradle-to-cradle",
         "paltering",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15565,7 +15569,8 @@
         "wirkpfad",
         "wirkungsrisiko",
         "gegenframe",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23633,6 +23638,44 @@
       "version": "1.0"
     },
     {
+      "id": "katechon",
+      "term": "Katechon",
+      "slug": "katechon",
+      "shortDefinition": "Katechon bezeichnet ein politisch-theologisches Motiv des Aufhaltens: Eine Kraft, Institution oder Person soll einen drohenden Zusammenbruch, das Chaos oder den Untergang zurückhalten. Der Begriff ist ein externer Anschlussbegriff und kein Wirkmechanismus der Wirkungsökonomie.",
+      "longDefinition": "Katechon geht auf die griechischen Ausdrücke κατέχον beziehungsweise κατέχων in 2 Thessalonicher 2,6–7 zurück. Sie bezeichnen dort das Aufhaltende beziehungsweise den Aufhaltenden, der das Offenbarwerden des Gesetzlosen zunächst zurückhält. Der Text benennt nicht eindeutig, wer oder was damit gemeint ist. Gerade diese Offenheit ermöglichte später unterschiedliche theologische, geschichtsphilosophische und politische Deutungen.\n\nIm 20. Jahrhundert erhielt das Motiv besonders durch Carl Schmitt politische Bedeutung. Es konnte nun für eine Macht, Institution oder Person stehen, die einen als existenziell beschriebenen Zerfall noch aufhalte. In heutigen Debatten begegnet das Motiv unter anderem dort, wo gesellschaftlicher Niedergang, Chaos oder Untergang behauptet und ein Akteur als letzte verbleibende Schutz- oder Ordnungskraft dargestellt wird. Volker Weiß hat diese gegenwärtige Wiederkehr 2026 in seiner Schrift „Katechon“ ideengeschichtlich eingeordnet.\n\nKatechon ist weder ein Synonym für Diktator, Führer, Messias oder Retter noch ein Beleg für Extremismus oder autoritäre Absicht. Ob eine Aussage dem Motiv entspricht, muss anhand ihres Zusammenhangs geprüft werden: Wird eine existenzielle Bedrohung konstruiert? Wird gewöhnliche demokratische Korrektur als unzureichend dargestellt? Wird einer Person, Bewegung oder Institution die Rolle der letzten aufhaltenden Kraft zugeschrieben? Die bloße Warnung vor einer Gefahr oder der Schutz demokratischer Institutionen genügt dafür nicht.",
+      "synonyms": [
+        "Katechon",
+        "Katechont",
+        "Aufhalter",
+        "das Aufhaltende",
+        "der Aufhaltende",
+        "politische Theologie"
+      ],
+      "relatedTerms": [
+        "narrativ",
+        "framing",
+        "resonanzraum",
+        "resonanzrisiko",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "transformationswirkung",
+        "demokratie",
+        "demokratische-oeffentlichkeit",
+        "desinformation",
+        "resignifikation",
+        "autoritarismus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "kausalitaet-und-zurechnung",
       "term": "Kausalität und Zurechnung",
       "slug": "kausalitaet-und-zurechnung",
@@ -31174,7 +31217,8 @@
         "resonanz",
         "vertrautheitseffekt",
         "gedaechtniskonsolidierung",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -41950,7 +41994,8 @@
         "wirkmechanismus",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkpfad"
+        "wirkpfad",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42340,7 +42385,8 @@
         "diskursfaehigkeit",
         "frame",
         "reframing",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42366,7 +42412,8 @@
         "wirkungspotenzial",
         "alarm-frame",
         "destruktives-narrativ",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -51657,9 +51704,9 @@
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "relatedObjections": [],
-      "category": "Grundbegriffe der Wirkungsökonomie",
-      "status": "führender-begriff",
-      "version": "1.1"
+      "category": "Grundbegriff",
+      "status": "approved",
+      "version": "1.0"
     },
     {
       "id": "transformationswirkungs-logik",
@@ -56557,7 +56604,8 @@
         "wirkpfad",
         "wirkungstraeger",
         "kognitive-dissonanz",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -62615,6 +62663,7 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
+        "katechon",
         "ausloeser",
         "iooi",
         "wirkungsnachweis"
@@ -64035,6 +64084,7 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
+        "katechon",
         "ausloeser",
         "wirkmechanismus",
         "iooi",

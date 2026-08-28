@@ -200,16 +200,9 @@ function journalBreadcrumb(file) {
 function ensureJournalBreadcrumb(file) {
   const html = fs.readFileSync(file, "utf8");
   if (!isJournalArticle(file, html)) return false;
-  const normalized = html.replace(
-    /\n[ \t]*(<nav\b[^>]*class=["'][^"']*\bjournal-breadcrumb\b[^"']*["'][^>]*>[\s\S]*?<\/nav>)/gi,
-    "$1"
-  );
-  if (/<nav\s+class=["'][^"']*\bbreadcrumb\b/i.test(normalized)) {
-    if (normalized !== html) fs.writeFileSync(file, normalized, "utf8");
-    return normalized !== html;
-  }
+  if (/<nav\s+class=["'][^"']*\bbreadcrumb\b/i.test(html)) return false;
 
-  let next = normalized.replace(
+  let next = html.replace(
     /(<(?:article|section)\b[^>]*class=["'][^"']*\bhero\b[^"']*["'][^>]*>[\s\S]*?<div\b[^>]*class=["'][^"']*\bhero-copy\b[^"']*["'][^>]*>)/i,
     `$1${journalBreadcrumb(file)}`
   );
@@ -469,10 +462,25 @@ function updateLibraryJournal(entries) {
   if (!fs.existsSync(libraryPath) || !entries.length) return;
   const current = fs.readFileSync(libraryPath, "utf8");
   const cards = entries.slice(0, 2).map(renderLibraryCard).join("\n");
-  const next = current.replace(
-    /<div class="journal-library-grid">[\s\S]*?<\/div>\s*(?=<div class="section-actions">)/,
-    `<div class="journal-library-grid">${cards}</div>\n        `
-  );
+  const section = `<section class="section section-muted" aria-labelledby="library-journal-title">
+        <div class="section-header">
+          <p class="hero-kicker">Neu im Journal</p>
+          <h2 id="library-journal-title">Aktuelle Einordnungen</h2>
+          <p>Die neuesten Journalbeiträge führen von aktuellen Fragen zu Quellen, Methoden und vertiefenden Veröffentlichungen.</p>
+        </div>
+        <div class="journal-library-grid">${cards}</div>
+        <div class="section-actions"><a class="btn btn-secondary" href="../blog.html">Zum Journal</a></div>
+      </section>`;
+  const journalSectionPattern = /<section class="section section-muted" aria-labelledby="library-journal-title">[\s\S]*?<\/section>/;
+  let next;
+  if (journalSectionPattern.test(current)) {
+    next = current.replace(journalSectionPattern, section);
+  } else {
+    next = current.replace(
+      /(<section class="hero\b[\s\S]*?<\/section>)/,
+      `$1\n      ${section}`,
+    );
+  }
   if (next !== current) fs.writeFileSync(libraryPath, next, "utf8");
 }
 

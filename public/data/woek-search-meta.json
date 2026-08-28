@@ -1,14 +1,6 @@
 {
-  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "generatedAt": "source-derived",
   "entries": {
-    "/akademie/wirkungsfinanzpolitik/": {
-      "documentType": "Lernmodul",
-      "status": "published",
-      "version": "2026.1",
-      "sectionId": "akademie-wirkungsfinanzpolitik-2026-06-11",
-      "sourceFile": "akademie/wirkungsfinanzpolitik",
-      "searchBoost": 120
-    },
     "/anwendungen/scanner.html": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -1998,7 +1990,8 @@
         "autokratie",
         "faschistoid",
         "macht-und-gewalt",
-        "demokratiefeindlichkeit"
+        "demokratiefeindlichkeit",
+        "katechon"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -5480,7 +5473,8 @@
         "pluralismus",
         "opposition",
         "legitimitaet",
-        "liberale-demokratie"
+        "liberale-demokratie",
+        "katechon"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -5649,7 +5643,8 @@
         "oeffentlichkeit",
         "informationsintegritaet",
         "medienfreiheit",
-        "deliberative-demokratie"
+        "deliberative-demokratie",
+        "katechon"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -5937,7 +5932,8 @@
         "lieferkettenwirkung",
         "cradle-to-cradle",
         "paltering",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedDocuments": [
         {
@@ -10615,7 +10611,8 @@
         "wirkpfad",
         "wirkungsrisiko",
         "gegenframe",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -15777,6 +15774,31 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/katechon/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-katechon",
+      "documentId": "katechon",
+      "relatedTerms": [
+        "narrativ",
+        "framing",
+        "resonanzraum",
+        "resonanzrisiko",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "transformationswirkung",
+        "demokratie",
+        "demokratische-oeffentlichkeit",
+        "desinformation",
+        "resignifikation",
+        "autoritarismus"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Biblischer Ursprung, politische Rezeption bei Carl Schmitt und aktuelle ideengeschichtliche Einordnung durch Volker Weiß.",
+      "searchBoost": 110
+    },
     "/begriffe/kausalitaet-und-zurechnung/": {
       "documentType": "begriff",
       "status": "approved",
@@ -20864,7 +20886,8 @@
         "resonanz",
         "vertrautheitseffekt",
         "gedaechtniskonsolidierung",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -28053,7 +28076,8 @@
         "wirkmechanismus",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkpfad"
+        "wirkpfad",
+        "katechon"
       ],
       "relatedDocuments": [],
       "sourceFile": "Volker Weiß: Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört. Klett-Cotta, Stuttgart 2025.",
@@ -28324,7 +28348,8 @@
         "diskursfaehigkeit",
         "frame",
         "reframing",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -28342,7 +28367,8 @@
         "wirkungspotenzial",
         "alarm-frame",
         "destruktives-narrativ",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "katechon"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -34477,8 +34503,8 @@
     },
     "/begriffe/transformationswirkung/": {
       "documentType": "begriff",
-      "status": "führender-begriff",
-      "version": "1.1",
+      "status": "approved",
+      "version": "1.0",
       "sectionId": "begriff-transformationswirkung",
       "documentId": "transformationswirkung",
       "relatedTerms": [
@@ -34512,7 +34538,7 @@
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "sourceFile": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
-      "searchBoost": 140
+      "searchBoost": 110
     },
     "/begriffe/transformationswirkungs-logik/": {
       "documentType": "begriff",
@@ -37886,7 +37912,8 @@
         "wirkpfad",
         "wirkungstraeger",
         "kognitive-dissonanz",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "relatedDocuments": [],
       "sourceFile": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
@@ -42212,6 +42239,7 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
+        "katechon",
         "ausloeser",
         "iooi",
         "wirkungsnachweis"
@@ -43311,6 +43339,7 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
+        "katechon",
         "ausloeser",
         "wirkmechanismus",
         "iooi",
@@ -45858,8 +45887,16 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/index.html",
-      "contentHash": "ce4e243bc928308e",
+      "contentHash": "1b8963b5d722a341",
       "sectionId": "woek-page-e6bdb60cf0627b03"
+    },
+    "/bibliothek/#library-journal-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/index.html",
+      "contentHash": "1b8963b5d722a341",
+      "sectionId": "library-journal-title"
     },
     "/bibliothek/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/": {
       "documentType": "Referenz",
@@ -153834,7 +153871,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "woek-page-f0599f46f79e7231"
     },
     "/blog.html#archiv-title": {
@@ -153842,7 +153879,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "archiv-title"
     },
     "/blog.html#beitraege-title": {
@@ -153850,7 +153887,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "beitraege-title"
     },
     "/blog.html#blog-erklaerung": {
@@ -153858,7 +153895,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "blog-erklaerung"
     },
     "/blog.html#dossiers-title": {
@@ -153866,7 +153903,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "dossiers-title"
     },
     "/blog.html#footer-newsletter-title": {
@@ -153874,7 +153911,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "footer-newsletter-title"
     },
     "/blog.html#kategorien-title": {
@@ -153882,7 +153919,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "kategorien-title"
     },
     "/blog.html#leitartikel-title": {
@@ -153890,7 +153927,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog.html",
-      "contentHash": "eaece0e9a5441686",
+      "contentHash": "1d293248e1c7ae52",
       "sectionId": "leitartikel-title"
     },
     "/blog/afd-ideologie-kann-deinen-job-kosten/": {
@@ -154020,6 +154057,14 @@
       "sourceFile": "blog/das-schachbrett-der-oeffentlichkeit.html",
       "contentHash": "f597deed25b76b5f",
       "sectionId": "woek-page-0b16c4a689857c28"
+    },
+    "/blog/demokratie-braucht-mehr-als-gute-sachpolitik.html": {
+      "documentType": "Journalartikel",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "blog/demokratie-braucht-mehr-als-gute-sachpolitik.html",
+      "contentHash": "456516bca9adf6e5",
+      "sectionId": "woek-page-6d5ca4eae572fbba"
     },
     "/blog/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.html": {
       "documentType": "Referenz",
@@ -157394,16 +157439,8 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog/was-ein-tv-duell-bewirkt.html",
-      "contentHash": "30eb2a7d890b4b06",
+      "contentHash": "3d892ea612f6ab89",
       "sectionId": "woek-page-4f3fa335c46503f8"
-    },
-    "/blog/was-ein-tv-duell-bewirkt.html#footer-newsletter-title": {
-      "documentType": "Journalartikel",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "blog/was-ein-tv-duell-bewirkt.html",
-      "contentHash": "30eb2a7d890b4b06",
-      "sectionId": "footer-newsletter-title"
     },
     "/blog/was-ist-nachhaltigkeit-wirklich.html": {
       "documentType": "Referenz",
@@ -165754,7 +165791,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "woek-page-0eb547304658805a"
     },
     "/index.html#aktuell-journal-title": {
@@ -165762,7 +165799,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "aktuell-journal-title"
     },
     "/index.html#ausgangslage-title": {
@@ -165770,7 +165807,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "ausgangslage-title"
     },
     "/index.html#footer-newsletter-title": {
@@ -165778,7 +165815,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "footer-newsletter-title"
     },
     "/index.html#in-5-minuten-title": {
@@ -165786,7 +165823,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "in-5-minuten-title"
     },
     "/index.html#journey-title": {
@@ -165794,7 +165831,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "journey-title"
     },
     "/index.html#materialitaet-statt-rechtsform-title": {
@@ -165802,7 +165839,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "materialitaet-statt-rechtsform-title"
     },
     "/index.html#parlament-info-home-title": {
@@ -165810,7 +165847,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "parlament-info-home-title"
     },
     "/index.html#related-questions-title-seite": {
@@ -165818,7 +165855,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "related-questions-title-seite"
     },
     "/index.html#staatliche-nachhaltigkeitsarchitektur-title": {
@@ -165826,7 +165863,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "staatliche-nachhaltigkeitsarchitektur-title"
     },
     "/index.html#startvideo-title": {
@@ -165834,7 +165871,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "startvideo-title"
     },
     "/index.html#ueberblickvideo-title": {
@@ -165842,7 +165879,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "ueberblickvideo-title"
     },
     "/index.html#vertrauen-title": {
@@ -165850,7 +165887,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "vertrauen-title"
     },
     "/index.html#weitere-einstiege-title": {
@@ -165858,7 +165895,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "711a54b850f93d35",
+      "contentHash": "919f635110a874fc",
       "sectionId": "weitere-einstiege-title"
     },
     "/journal/gesundheit-erzeugen-statt-krankheit-verwalten/": {
@@ -166034,7 +166071,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "25036bffe0fb1063",
+      "contentHash": "ef53a0beedfa31b9",
       "sectionId": "woek-page-06c0a37a8592ce92"
     },
     "/quellenarchiv/#footer-newsletter-title": {
@@ -166042,7 +166079,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "25036bffe0fb1063",
+      "contentHash": "ef53a0beedfa31b9",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-e-0001/": {
@@ -171749,6 +171786,70 @@
       "contentHash": "5427f0b63bca0342",
       "sectionId": "steckbrief-wok-g-752b4ba359e1"
     },
+    "/quellenarchiv/wok-g-75575fe99680/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-75575fe99680/index.html",
+      "contentHash": "fe418dddbf0fb5c1",
+      "sectionId": "woek-page-0bcb44c47e921b46"
+    },
+    "/quellenarchiv/wok-g-75575fe99680/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-75575fe99680/index.html",
+      "contentHash": "fe418dddbf0fb5c1",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-75575fe99680/#glance-wok-g-75575fe99680": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-75575fe99680/index.html",
+      "contentHash": "fe418dddbf0fb5c1",
+      "sectionId": "glance-wok-g-75575fe99680"
+    },
+    "/quellenarchiv/wok-g-75575fe99680/#steckbrief-wok-g-75575fe99680": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-75575fe99680/index.html",
+      "contentHash": "fe418dddbf0fb5c1",
+      "sectionId": "steckbrief-wok-g-75575fe99680"
+    },
+    "/quellenarchiv/wok-g-7617a00cf1b3/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-7617a00cf1b3/index.html",
+      "contentHash": "84292e6bf9c13010",
+      "sectionId": "woek-page-c2a0975148736796"
+    },
+    "/quellenarchiv/wok-g-7617a00cf1b3/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-7617a00cf1b3/index.html",
+      "contentHash": "84292e6bf9c13010",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-7617a00cf1b3/#glance-wok-g-7617a00cf1b3": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-7617a00cf1b3/index.html",
+      "contentHash": "84292e6bf9c13010",
+      "sectionId": "glance-wok-g-7617a00cf1b3"
+    },
+    "/quellenarchiv/wok-g-7617a00cf1b3/#steckbrief-wok-g-7617a00cf1b3": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-7617a00cf1b3/index.html",
+      "contentHash": "84292e6bf9c13010",
+      "sectionId": "steckbrief-wok-g-7617a00cf1b3"
+    },
     "/quellenarchiv/wok-g-76b71f16d4d4/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -172612,6 +172713,38 @@
       "sourceFile": "quellenarchiv/wok-g-887e7a9e914a/index.html",
       "contentHash": "9256bb0c0871378f",
       "sectionId": "steckbrief-wok-g-887e7a9e914a"
+    },
+    "/quellenarchiv/wok-g-890b498f39c7/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-890b498f39c7/index.html",
+      "contentHash": "1504be7b9a7a6faf",
+      "sectionId": "woek-page-75fcd05a5ea85179"
+    },
+    "/quellenarchiv/wok-g-890b498f39c7/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-890b498f39c7/index.html",
+      "contentHash": "1504be7b9a7a6faf",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-890b498f39c7/#glance-wok-g-890b498f39c7": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-890b498f39c7/index.html",
+      "contentHash": "1504be7b9a7a6faf",
+      "sectionId": "glance-wok-g-890b498f39c7"
+    },
+    "/quellenarchiv/wok-g-890b498f39c7/#steckbrief-wok-g-890b498f39c7": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-890b498f39c7/index.html",
+      "contentHash": "1504be7b9a7a6faf",
+      "sectionId": "steckbrief-wok-g-890b498f39c7"
     },
     "/quellenarchiv/wok-g-89ab564d0d90/": {
       "documentType": "Referenz",
@@ -175388,6 +175521,38 @@
       "sourceFile": "quellenarchiv/wok-g-dcf7a407de15/index.html",
       "contentHash": "b55fcde7bd01ec1a",
       "sectionId": "steckbrief-wok-g-dcf7a407de15"
+    },
+    "/quellenarchiv/wok-g-dd7fdd3fea41/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-dd7fdd3fea41/index.html",
+      "contentHash": "63020c3ae5244879",
+      "sectionId": "woek-page-1ed867e14cceff70"
+    },
+    "/quellenarchiv/wok-g-dd7fdd3fea41/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-dd7fdd3fea41/index.html",
+      "contentHash": "63020c3ae5244879",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-dd7fdd3fea41/#glance-wok-g-dd7fdd3fea41": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-dd7fdd3fea41/index.html",
+      "contentHash": "63020c3ae5244879",
+      "sectionId": "glance-wok-g-dd7fdd3fea41"
+    },
+    "/quellenarchiv/wok-g-dd7fdd3fea41/#steckbrief-wok-g-dd7fdd3fea41": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-dd7fdd3fea41/index.html",
+      "contentHash": "63020c3ae5244879",
+      "sectionId": "steckbrief-wok-g-dd7fdd3fea41"
     },
     "/quellenarchiv/wok-g-ded9edf9a96f/": {
       "documentType": "Referenz",
@@ -268947,14 +269112,6 @@
       "sourceFile": "werkzeuge/zugehoerigkeits-und-teilgabeindex/index.html",
       "contentHash": "a5d8cab9c1cb4987",
       "sectionId": "tool-orientierung-title"
-    },
-    "/wirkungsfelder/wirkungsfinanzpolitik/": {
-      "documentType": "Bereich",
-      "status": "published",
-      "version": "2026.1",
-      "sectionId": "wirkungsfeld-wirkungsfinanzpolitik-2026-06-11",
-      "sourceFile": "wirkungsfelder/wirkungsfinanzpolitik",
-      "searchBoost": 155
     }
   }
 }

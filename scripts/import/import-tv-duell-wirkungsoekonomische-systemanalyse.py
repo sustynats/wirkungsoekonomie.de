@@ -21,6 +21,8 @@ from zipfile import ZipFile
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DOCX = ROOT / "source-assets/originals/TV-Duell_Wirkungsoekonomische_Systemanalyse_2026-08-27.docx"
 SOURCE_IMAGE = ROOT / "assets/img/blog/2026-08-27-tv-duell-wirkungsoekonomische-systemanalyse.png"
+DEMOCRACY_SOURCE_DOCX = ROOT / "source-assets/originals/Demokratie_braucht_mehr_als_gute_Sachpolitik_2026-08-28.docx"
+DEMOCRACY_SOURCE_IMAGE = ROOT / "assets/img/blog/2026-08-28-demokratie-braucht-mehr-als-gute-sachpolitik.png"
 
 NS = {
     "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
@@ -94,6 +96,52 @@ ARTICLES = (
             "von analytischen Inferenzen, Wirkungspotenzialen und Wirkungsrisiken. Wo "
             "Publikumswirkungen nicht gemessen sind, werden sie nicht als eingetretene "
             "Wirkung behauptet."
+        ),
+    ),
+    Article(
+        kind="democracy_saxony_anhalt",
+        source=DEMOCRACY_SOURCE_DOCX,
+        image_source=DEMOCRACY_SOURCE_IMAGE,
+        slug="demokratie-braucht-mehr-als-gute-sachpolitik",
+        title="Demokratie braucht mehr als gute Sachpolitik",
+        subtitle=(
+            "Warum 44 parallele Autokratisierungsprozesse die einfache Protest-Erzählung "
+            "sprengen - und warum Sachsen-Anhalt am 6. September zum Testfall für "
+            "Deutschland werden könnte"
+        ),
+        description=(
+            "Warum gute Sachpolitik allein autoritäre Dynamiken nicht stoppt: eine "
+            "wirkungsökonomische Analyse von Informationsräumen, Institutionen und dem "
+            "Testfall Sachsen-Anhalt."
+        ),
+        date_label="28. August 2026",
+        date_iso="2026-08-28T08:00:00+02:00",
+        section="Demokratie, Kommunikation & Systemwirkung",
+        reading_time="14 Min.",
+        image_name="2026-08-28-demokratie-braucht-mehr-als-gute-sachpolitik.png",
+        image_alt=(
+            "Dunkle Illustration mit digitalem Kommunikationsnetz, Reichstagsgebäude "
+            "und Karte von Sachsen-Anhalt; Titel: Demokratie braucht mehr als gute Sachpolitik."
+        ),
+        tags=(
+            "Demokratie",
+            "Sachsen-Anhalt",
+            "Autokratisierung",
+            "politische Kommunikation",
+            "Resignifikation",
+            "Katechon",
+            "Resonanzraum",
+            "Wirkungspotenzial",
+            "Wirkungsrisiko",
+            "Systemwirkung",
+            "Mensch, Planet und Demokratie",
+        ),
+        status_note=(
+            "Der Beitrag trennt dokumentierte Fakten und Programmaussagen von "
+            "wissenschaftlichen Befunden, analytischen Inferenzen sowie Wirkungspotenzialen "
+            "und Wirkungsrisiken. Er bewertet keine Personen. Eine Umfrage ist kein "
+            "Wahlergebnis; beschriebene Wirkungspfade sind ohne beobachtete "
+            "Zustandsveränderung kein Wirkungsnachweis."
         ),
     ),
 )
@@ -443,6 +491,84 @@ def render_tv_duell(body: ET.Element, links: dict[str, str]) -> str:
     return "\n".join(output)
 
 
+def render_democracy_saxony_anhalt(body: ET.Element, links: dict[str, str]) -> str:
+    """Rendert den freigegebenen Beitrag samt gestuftem Quellenapparat."""
+    output: list[str] = []
+    active = False
+    source_list_open = False
+
+    def close_source_list() -> None:
+        nonlocal source_list_open
+        if source_list_open:
+            output.append("          </ol>")
+            source_list_open = False
+
+    for child in body:
+        if child.tag != W + "p":
+            continue
+        value = paragraph_text(child)
+        style = paragraph_style(child)
+        if style == "Lead":
+            active = True
+        if not active or not value:
+            continue
+
+        rendered = inline_html(child, links)
+        if value.startswith("Dazu kommt Resignifikation:"):
+            rendered = rendered.replace(
+                "Resignifikation",
+                '<a class="text-link" href="../begriffe/resignifikation/">Resignifikation</a>',
+                1,
+            )
+        if "politische Figur des Katechon" in value:
+            rendered = rendered.replace(
+                "Katechon",
+                '<a class="text-link" href="../begriffe/katechon/">Katechon</a>',
+                1,
+            )
+        if value.startswith("Wirkungsökonomisch formuliert"):
+            rendered = rendered.replace(
+                "Externalisierungslogik",
+                '<a class="text-link" href="../begriffe/externalisierung/">Externalisierungslogik</a>',
+                1,
+            )
+
+        if style == "Lead":
+            close_source_list()
+            output.append(f'          <p class="lead">{rendered}</p>')
+        elif style == "Heading1":
+            close_source_list()
+            output.append(f"          <h2>{esc(value)}</h2>")
+        elif style == "Heading2":
+            close_source_list()
+            output.append(f"          <h3>{esc(value)}</h3>")
+        elif style == "PullQuote":
+            close_source_list()
+            output.append(f"          <blockquote><p>{rendered}</p></blockquote>")
+        elif style == "Source":
+            if not source_list_open:
+                output.append('          <ol class="source-list">')
+                source_list_open = True
+            rendered = re.sub(r"^\s*\d+\.\s*", "", rendered)
+            output.append(f"            <li>{rendered}</li>")
+        elif is_list_item(child):
+            close_source_list()
+            output.append(f"          <p>{rendered}</p>")
+        else:
+            close_source_list()
+            output.append(f"          <p>{rendered}</p>")
+    close_source_list()
+    output.append(
+        "          <p><small><strong>Quellenlogik:</strong> Amtliche und parteieigene "
+        "Quellen dokumentieren Wahltermin, institutionelle Zuständigkeiten und "
+        "Programmaussagen. Externe Forschung trägt die empirischen Befunde. Die "
+        "wirkungsökonomische Einordnung unterscheidet Fakten, Wirkungspotenziale, "
+        "Wirkungsrisiken und nachgewiesene Zustandsveränderungen. Webrecherche: "
+        "28.08.2026.</small></p>"
+    )
+    return "\n".join(output)
+
+
 def site_shell() -> tuple[str, str]:
     source = (ROOT / "blog/politik-an-ihren-folgen-messen.html").read_text(encoding="utf-8")
     header_start = source.index('    <header class="site-header"')
@@ -463,6 +589,8 @@ def article_content(article: Article) -> str:
         return render_nachhaltigkeit(body, links)
     if article.kind == "enap":
         return render_enap(body, links)
+    if article.kind == "democracy_saxony_anhalt":
+        return render_democracy_saxony_anhalt(body, links)
     return render_tv_duell(body, links)
 
 
@@ -474,6 +602,28 @@ def write_article(article: Article, header: str, footer: str) -> None:
     content = article_content(article)
     canonical = f"https://wirkungsoekonomie.de/blog/{article.slug}.html"
     image_url = f"https://wirkungsoekonomie.de/assets/img/blog/{article.image_name}"
+    image_width, image_height = (
+        (1733, 907) if article.kind == "democracy_saxony_anhalt" else (1672, 941)
+    )
+    if article.kind == "democracy_saxony_anhalt":
+        related_links = (
+            '<a class="text-link" href="../begriffe/katechon/">Katechon</a>, '
+            '<a class="text-link" href="../begriffe/resignifikation/">Resignifikation</a>, '
+            '<a class="text-link" href="../begriffe/autoritarismus/">Autoritarismus</a>, '
+            '<a class="text-link" href="../begriffe/resonanzraum/">Resonanzraum</a>, '
+            '<a class="text-link" href="../begriffe/wirkungspotenzial/">Wirkungspotenzial</a>, '
+            '<a class="text-link" href="../begriffe/wirkungsrisiko/">Wirkungsrisiko</a> und '
+            '<a class="text-link" href="../begriffe/demokratie/">Demokratie</a>'
+        )
+    else:
+        related_links = (
+            '<a class="text-link" href="../begriffe/resignifikation/">Resignifikation</a>, '
+            '<a class="text-link" href="../begriffe/framing/">Frame / Framing</a>, '
+            '<a class="text-link" href="../begriffe/resonanzraum/">Resonanzraum</a>, '
+            '<a class="text-link" href="../begriffe/wirkungspotenzial/">Wirkungspotenzial</a>, '
+            '<a class="text-link" href="../begriffe/wirkungsrisiko/">Wirkungsrisiko</a> und '
+            '<a class="text-link" href="../begriffe/wirkungsrueckkopplung/">Wirkungsrückkopplung</a>'
+        )
     schema = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -539,13 +689,13 @@ def write_article(article: Article, header: str, footer: str) -> None:
           <p class="journal-pdf-download-row no-print" data-search-exclude><a class="btn btn-secondary journal-pdf-download" data-journal-pdf-download href="../assets/pdf/journal/{article.slug}.pdf" download>PDF herunterladen</a></p>
           <p class="meta">Von Natalie Weber · Begründerin der Wirkungsökonomie</p>
         </div>
-        <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{article.image_name}" width="1672" height="941" alt="{esc(article.image_alt)}" decoding="async" fetchpriority="high"></figure>
+        <figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{article.image_name}" width="{image_width}" height="{image_height}" alt="{esc(article.image_alt)}" decoding="async" fetchpriority="high"></figure>
       </article>
       <section class="article-page">
         <div class="article-body">
           <div class="status-note"><strong>Methodische Einordnung:</strong> {esc(article.status_note)}</div>
 {content}
-          <p><strong>Weiterlesen:</strong> <a class="text-link" href="../begriffe/resignifikation/">Resignifikation</a>, <a class="text-link" href="../begriffe/framing/">Frame / Framing</a>, <a class="text-link" href="../begriffe/resonanzraum/">Resonanzraum</a>, <a class="text-link" href="../begriffe/wirkungspotenzial/">Wirkungspotenzial</a>, <a class="text-link" href="../begriffe/wirkungsrisiko/">Wirkungsrisiko</a> und <a class="text-link" href="../begriffe/wirkungsrueckkopplung/">Wirkungsrückkopplung</a>.</p>
+          <p><strong>Weiterlesen:</strong> {related_links}.</p>
         </div>
       </section>
     </main>

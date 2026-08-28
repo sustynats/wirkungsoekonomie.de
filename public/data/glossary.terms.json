@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "generatedAt": "2026-08-28T05:39:50.260Z",
   "terms": [
     {
       "termId": "bundeshaushaltsordnung-paragraf-7",
@@ -57,7 +57,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "§ 7 Bundeshaushaltsordnung (BHO)",
-      "priority": 2225,
+      "priority": 2239,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -4652,7 +4652,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2184,
+      "priority": 2198,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -5919,7 +5919,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Allmende",
-      "priority": 2245,
+      "priority": 2259,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -5993,7 +5993,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Allmendedilemma",
-      "priority": 2246,
+      "priority": 2260,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -11449,7 +11449,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Anticommons",
-      "priority": 2257,
+      "priority": 2271,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -15205,7 +15205,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Assurance Game",
-      "priority": 2262,
+      "priority": 2276,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -17463,7 +17463,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2192,
+      "priority": 2206,
       "officialSources": [
         "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-40a9d42ab436/"
       ],
@@ -19990,25 +19990,8 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "autoritarismus",
       "termId": "autoritarismus",
-      "label": "Autoritarismus",
       "canonicalLabel": "Autoritarismus",
-      "slug": "autoritarismus",
-      "aliases": [
-        "Autoritarismus"
-      ],
-      "synonyms": [
-        "Autoritarismus"
-      ],
-      "shortDefinition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
-      "short_definition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
-      "definition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
-      "longDefinition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.\n\nAutoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.",
-      "long_definition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
-      "woekRelation": "Autoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.",
-      "woek_einordnung": "Autoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.",
-      "examples": [],
       "relatedTerms": [
         "faschismus",
         "demokratische-erosion",
@@ -20020,21 +20003,39 @@
         "autokratie",
         "faschistoid",
         "macht-und-gewalt",
-        "demokratiefeindlichkeit"
+        "demokratiefeindlichkeit",
+        "katechon"
       ],
-      "related_terms": [
-        "faschismus",
-        "demokratische-erosion",
-        "autoritaeres-wirkungspotenzial",
-        "totalitarismus",
-        "extremismus",
-        "fuehrerprinzip",
-        "pluralismusfeindlichkeit",
-        "autokratie",
-        "faschistoid",
-        "macht-und-gewalt",
-        "demokratiefeindlichkeit"
+      "id": "autoritarismus",
+      "label": "Autoritarismus",
+      "slug": "autoritarismus",
+      "aliases": [
+        "Autoritarismus"
       ],
+      "synonyms": [
+        "Autoritarismus"
+      ],
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
+      "shortDefinition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
+      "hoverDefinition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
+      "definition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
+      "longDefinition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.\n\nAutoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
+      "woekRelation": "Autoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.",
+      "reviewStatus": "approved",
+      "statusNote": "",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "pageUrl": "/begriffe/autoritarismus/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
+      "sourceSection": "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
+      "glossaryOrderKey": "Autoritarismus",
+      "priority": 78,
       "officialSources": [
         "OECD Recommendation on Transparency and Integrity in Lobbying and Influence|/quellenarchiv/wok-q-0061/",
         "OECD Policy Brief Lobbying|/quellenarchiv/wok-q-0405/",
@@ -20067,6 +20068,7 @@
         "Bundeszentrale für politische Bildung: Staat, Regierung, Demokratie, Rechtsstaat|/quellenarchiv/wok-q-0471/",
         "Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG|/quellenarchiv/wok-q-0643/"
       ],
+      "curatedSources": [],
       "sourceLinks": [
         {
           "source_type": "institutional",
@@ -20236,6 +20238,32 @@
           "status": "bibliographic",
           "originalUrl": "https://wirkungsoekonomie.de/blog/sprache-als-politischer-wirkstoff-rechte-narrative.html"
         }
+      ],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "akteure-einfluss-ideologien-und-demokratische-wirkungsraeume",
+        "faschismus-faschistoid-und-autoritaere-wirkungsrisiken",
+        "grundbegriff"
+      ],
+      "short_definition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
+      "long_definition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
+      "woek_einordnung": "Autoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.",
+      "examples": [],
+      "related_terms": [
+        "faschismus",
+        "demokratische-erosion",
+        "autoritaeres-wirkungspotenzial",
+        "totalitarismus",
+        "extremismus",
+        "fuehrerprinzip",
+        "pluralismusfeindlichkeit",
+        "autokratie",
+        "faschistoid",
+        "macht-und-gewalt",
+        "demokratiefeindlichkeit",
+        "katechon"
       ],
       "source_links": [
         {
@@ -20421,10 +20449,6 @@
       ],
       "internalLinks": [],
       "internal_links": [],
-      "categories": [
-        "akteure-einfluss-ideologien-und-demokratische-wirkungsraeume",
-        "faschismus-faschistoid-und-autoritaere-wirkungsrisiken"
-      ],
       "tags": [
         "Akteure",
         "Einfluss",
@@ -20441,12 +20465,10 @@
         "demokratische Erosion",
         "Wirkungsrisiko"
       ],
-      "category": "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
       "conceptStatus": "Anschlussbegriff",
       "concept_status": "Anschlussbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
       "theme": [
@@ -20546,34 +20568,15 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "version": "1.0",
       "lastReviewed": "2026-05-29",
       "last_reviewed": "2026-05-29",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
-      "hoverDefinition": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.",
-      "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
-      "pageUrl": "/begriffe/autoritarismus/",
       "metaTitle": "Autoritarismus | Glossar der Wirkungsökonomie",
       "metaDescription": "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
       "preferredUsage": "",
-      "deprecatedUsage": [],
-      "glossaryOrderKey": "Autoritarismus",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
-      "dataStandardsGroup": "",
-      "priority": 78,
-      "curatedSources": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -22259,7 +22262,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2208,
+      "priority": 2222,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -27086,7 +27089,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Bedingte Kooperation",
-      "priority": 2273,
+      "priority": 2287,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -40610,7 +40613,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Capture",
-      "priority": 2263,
+      "priority": 2277,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -44545,7 +44548,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Chicken Game",
-      "priority": 2271,
+      "priority": 2285,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -48437,7 +48440,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2209,
+      "priority": 2223,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -56308,25 +56311,8 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "demokratie",
       "termId": "demokratie",
-      "label": "Demokratie",
       "canonicalLabel": "Demokratie",
-      "slug": "demokratie",
-      "aliases": [
-        "Demokratie"
-      ],
-      "synonyms": [
-        "Demokratie"
-      ],
-      "shortDefinition": "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt.",
-      "short_definition": "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt.",
-      "definition": "Einfach gesagt: Demokratie heißt nicht nur, dass die Mehrheit entscheidet. Demokratie heißt, dass Macht begrenzt wird, Fehler korrigiert werden können und auch Minderheiten Rechte behalten. Ausführlich verbindet Demokratie Volkssouveränität, freie und faire Wahlen, Rechtsstaatlichkeit, Gewaltenteilung, Grundrechte, Minderheitenschutz, Meinungsfreiheit, Medienfreiheit, Pluralismus, Opposition, Rechenschaft und friedlichen Machtwechsel.",
-      "longDefinition": "Einfach gesagt: Demokratie heißt nicht nur, dass die Mehrheit entscheidet. Demokratie heißt, dass Macht begrenzt wird, Fehler korrigiert werden können und auch Minderheiten Rechte behalten. Ausführlich verbindet Demokratie Volkssouveränität, freie und faire Wahlen, Rechtsstaatlichkeit, Gewaltenteilung, Grundrechte, Minderheitenschutz, Meinungsfreiheit, Medienfreiheit, Pluralismus, Opposition, Rechenschaft und friedlichen Machtwechsel.",
-      "long_definition": "Einfach gesagt: Demokratie heißt nicht nur, dass die Mehrheit entscheidet. Demokratie heißt, dass Macht begrenzt wird, Fehler korrigiert werden können und auch Minderheiten Rechte behalten. Ausführlich verbindet Demokratie Volkssouveränität, freie und faire Wahlen, Rechtsstaatlichkeit, Gewaltenteilung, Grundrechte, Minderheitenschutz, Meinungsfreiheit, Medienfreiheit, Pluralismus, Opposition, Rechenschaft und friedlichen Machtwechsel.",
-      "woekRelation": "In der Wirkungsökonomie ist Demokratie eine eigene Wirkungsdimension. Demokratie ermöglicht, dass Wirkung öffentlich geprüft, kritisiert, korrigiert und legitimiert werden kann. Ohne Demokratie kann Wirkungsmessung zur Technokratie, Propaganda oder Herrschaftstechnik werden.",
-      "woek_einordnung": "In der Wirkungsökonomie ist Demokratie eine eigene Wirkungsdimension. Demokratie ermöglicht, dass Wirkung öffentlich geprüft, kritisiert, korrigiert und legitimiert werden kann. Ohne Demokratie kann Wirkungsmessung zur Technokratie, Propaganda oder Herrschaftstechnik werden.",
-      "examples": [],
       "relatedTerms": [
         "demokratiequalitaet",
         "demokratische-rueckkopplung",
@@ -56365,48 +56351,39 @@
         "pluralismus",
         "opposition",
         "legitimitaet",
-        "liberale-demokratie"
+        "liberale-demokratie",
+        "katechon"
       ],
-      "related_terms": [
-        "demokratiequalitaet",
-        "demokratische-rueckkopplung",
-        "rechtsstaatlichkeit",
-        "gewaltenteilung",
-        "grundrechte",
-        "volkssouveraenitaet",
-        "freie-und-faire-wahlen",
-        "minderheitenschutz",
-        "oeffentlichkeit",
-        "medienqualitaet",
-        "vertrauen",
-        "diskursfaehigkeit",
-        "demokratische-resilienz",
-        "demokratische-erosion",
-        "demokratieprinzip",
-        "demokratischer-sozialismus",
-        "gleichwertigkeit",
-        "handeln-arendt",
-        "hannah-arendt",
-        "macht-und-gewalt",
-        "oeffentliche-gueter",
-        "parlament",
-        "pluralitaet",
-        "politischer-liberalismus",
-        "rassismus",
-        "reale-freiheit",
-        "trickle-down-oekonomie",
-        "ueberwachungskapitalismus",
-        "urteilskraft",
-        "wirklichkeitsbindung",
-        "zivilgesellschaft",
-        "demokratische-wirkungsarchitektur",
-        "demokratische-korrekturfaehigkeit",
-        "mehrheitsprinzip",
-        "pluralismus",
-        "opposition",
-        "legitimitaet",
-        "liberale-demokratie"
+      "id": "demokratie",
+      "label": "Demokratie",
+      "slug": "demokratie",
+      "aliases": [
+        "Demokratie"
       ],
+      "synonyms": [
+        "Demokratie"
+      ],
+      "status": "woek-kernbegriff",
+      "version": "1.0",
+      "source": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "shortDefinition": "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt.",
+      "hoverDefinition": "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt.",
+      "definition": "Einfach gesagt: Demokratie heißt nicht nur, dass die Mehrheit entscheidet. Demokratie heißt, dass Macht begrenzt wird, Fehler korrigiert werden können und auch Minderheiten Rechte behalten. Ausführlich verbindet Demokratie Volkssouveränität, freie und faire Wahlen, Rechtsstaatlichkeit, Gewaltenteilung, Grundrechte, Minderheitenschutz, Meinungsfreiheit, Medienfreiheit, Pluralismus, Opposition, Rechenschaft und friedlichen Machtwechsel.",
+      "longDefinition": "Einfach gesagt: Demokratie heißt nicht nur, dass die Mehrheit entscheidet. Demokratie heißt, dass Macht begrenzt wird, Fehler korrigiert werden können und auch Minderheiten Rechte behalten. Ausführlich verbindet Demokratie Volkssouveränität, freie und faire Wahlen, Rechtsstaatlichkeit, Gewaltenteilung, Grundrechte, Minderheitenschutz, Meinungsfreiheit, Medienfreiheit, Pluralismus, Opposition, Rechenschaft und friedlichen Machtwechsel.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "woekRelation": "In der Wirkungsökonomie ist Demokratie eine eigene Wirkungsdimension. Demokratie ermöglicht, dass Wirkung öffentlich geprüft, kritisiert, korrigiert und legitimiert werden kann. Ohne Demokratie kann Wirkungsmessung zur Technokratie, Propaganda oder Herrschaftstechnik werden.",
+      "reviewStatus": "approved",
+      "statusNote": "",
+      "usageNote": "Kurzformel: Demokratie schützt die Möglichkeit, Fehler zu korrigieren.",
+      "pageUrl": "/begriffe/demokratie/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "sourceSection": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "glossaryOrderKey": "Demokratie",
+      "priority": 191,
       "officialSources": [
         "Bundeszentrale für politische Bildung: Demokratie|/quellenarchiv/wok-q-0476/",
         "Bundeszentrale für politische Bildung: Rechtsstaat, Gewaltenteilung, Parlamentarismus, Pluralismus|/quellenarchiv/wok-q-0471/",
@@ -56422,6 +56399,7 @@
         "OSCE / ODIHR: Wahlstandards|/quellenarchiv/wok-q-0333/",
         "Interne WÖk-Quellen: Demokratie als Wirkungsraum, Staat / Politik / Demokratie, Medien / Kommunikation / Öffentlichkeit, Systemmodell, Wirkungsrat, Folgencheck, Wirkung politischer Sprache|/quellenarchiv/wok-q-0643/"
       ],
+      "curatedSources": [],
       "sourceLinks": [
         {
           "source_type": "institutional",
@@ -56490,6 +56468,58 @@
           "status": "bibliographic",
           "originalUrl": "https://wirkungsoekonomie.de/blog/sprache-als-politischer-wirkstoff-rechte-narrative.html"
         }
+      ],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "demokratie-rechtsstaat-und-demokratische-wirkungsarchitektur",
+        "demokratiebegriff"
+      ],
+      "short_definition": "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt.",
+      "long_definition": "Einfach gesagt: Demokratie heißt nicht nur, dass die Mehrheit entscheidet. Demokratie heißt, dass Macht begrenzt wird, Fehler korrigiert werden können und auch Minderheiten Rechte behalten. Ausführlich verbindet Demokratie Volkssouveränität, freie und faire Wahlen, Rechtsstaatlichkeit, Gewaltenteilung, Grundrechte, Minderheitenschutz, Meinungsfreiheit, Medienfreiheit, Pluralismus, Opposition, Rechenschaft und friedlichen Machtwechsel.",
+      "woek_einordnung": "In der Wirkungsökonomie ist Demokratie eine eigene Wirkungsdimension. Demokratie ermöglicht, dass Wirkung öffentlich geprüft, kritisiert, korrigiert und legitimiert werden kann. Ohne Demokratie kann Wirkungsmessung zur Technokratie, Propaganda oder Herrschaftstechnik werden.",
+      "examples": [],
+      "related_terms": [
+        "demokratiequalitaet",
+        "demokratische-rueckkopplung",
+        "rechtsstaatlichkeit",
+        "gewaltenteilung",
+        "grundrechte",
+        "volkssouveraenitaet",
+        "freie-und-faire-wahlen",
+        "minderheitenschutz",
+        "oeffentlichkeit",
+        "medienqualitaet",
+        "vertrauen",
+        "diskursfaehigkeit",
+        "demokratische-resilienz",
+        "demokratische-erosion",
+        "demokratieprinzip",
+        "demokratischer-sozialismus",
+        "gleichwertigkeit",
+        "handeln-arendt",
+        "hannah-arendt",
+        "macht-und-gewalt",
+        "oeffentliche-gueter",
+        "parlament",
+        "pluralitaet",
+        "politischer-liberalismus",
+        "rassismus",
+        "reale-freiheit",
+        "trickle-down-oekonomie",
+        "ueberwachungskapitalismus",
+        "urteilskraft",
+        "wirklichkeitsbindung",
+        "zivilgesellschaft",
+        "demokratische-wirkungsarchitektur",
+        "demokratische-korrekturfaehigkeit",
+        "mehrheitsprinzip",
+        "pluralismus",
+        "opposition",
+        "legitimitaet",
+        "liberale-demokratie",
+        "katechon"
       ],
       "source_links": [
         {
@@ -56573,9 +56603,6 @@
       ],
       "internalLinks": [],
       "internal_links": [],
-      "categories": [
-        "demokratie-rechtsstaat-und-demokratische-wirkungsarchitektur"
-      ],
       "tags": [
         "Demokratie",
         "Rechtsstaat",
@@ -56585,12 +56612,10 @@
         "Minderheitenschutz",
         "Resilienz"
       ],
-      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
       "conceptStatus": "WÖk-Kernbegriff",
       "concept_status": "WÖk-Kernbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "woek-kernbegriff",
       "type": "WÖk-Kernbegriff",
       "begriffstyp": "WÖk-Kernbegriff",
       "theme": [
@@ -56694,34 +56719,15 @@
       "woek_klaerung": "Demokratie ist mehr als Mehrheit. Mehrheit braucht Grundrechte, Rechtsstaat, Minderheitenschutz, freie Öffentlichkeit, unabhängige Gerichte und Korrekturmöglichkeiten.",
       "blindSpot": "Wahlen allein können autoritäre Wirkung verdecken, wenn Rechte, Öffentlichkeit und Korrekturwege geschwächt werden.",
       "blind_spot": "Wahlen allein können autoritäre Wirkung verdecken, wenn Rechte, Öffentlichkeit und Korrekturwege geschwächt werden.",
-      "version": "1.0",
       "lastReviewed": "2026-05-29",
       "last_reviewed": "2026-05-29",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
-      "hoverDefinition": "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt.",
-      "statusNote": "",
-      "usageNote": "Kurzformel: Demokratie schützt die Möglichkeit, Fehler zu korrigieren.",
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
-      "pageUrl": "/begriffe/demokratie/",
       "metaTitle": "Demokratie | Glossar der Wirkungsökonomie",
       "metaDescription": "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt. Wirkungsökonomisch eingeordnet als WÖk-Kernbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
       "preferredUsage": "Kurzformel: Demokratie schützt die Möglichkeit, Fehler zu korrigieren.",
-      "deprecatedUsage": [],
-      "glossaryOrderKey": "Demokratie",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "dataStandardsGroup": "",
-      "priority": 191,
-      "curatedSources": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -59860,10 +59866,17 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "demokratische-oeffentlichkeit",
       "termId": "demokratische-oeffentlichkeit",
-      "label": "Demokratische Öffentlichkeit",
       "canonicalLabel": "Demokratische Öffentlichkeit",
+      "relatedTerms": [
+        "oeffentlichkeit",
+        "informationsintegritaet",
+        "medienfreiheit",
+        "deliberative-demokratie",
+        "katechon"
+      ],
+      "id": "demokratische-oeffentlichkeit",
+      "label": "Demokratische Öffentlichkeit",
       "slug": "demokratische-oeffentlichkeit",
       "aliases": [
         "Demokratische Öffentlichkeit"
@@ -59871,26 +59884,27 @@
       "synonyms": [
         "Demokratische Öffentlichkeit"
       ],
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
       "shortDefinition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
-      "short_definition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
+      "hoverDefinition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
       "definition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
       "longDefinition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.\n\nSie ist die kommunikative Infrastruktur demokratischer Rückkopplung.",
-      "long_definition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
       "woekRelation": "Sie ist die kommunikative Infrastruktur demokratischer Rückkopplung.",
-      "woek_einordnung": "Sie ist die kommunikative Infrastruktur demokratischer Rückkopplung.",
-      "examples": [],
-      "relatedTerms": [
-        "oeffentlichkeit",
-        "informationsintegritaet",
-        "medienfreiheit",
-        "deliberative-demokratie"
-      ],
-      "related_terms": [
-        "oeffentlichkeit",
-        "informationsintegritaet",
-        "medienfreiheit",
-        "deliberative-demokratie"
-      ],
+      "reviewStatus": "approved",
+      "statusNote": "",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "pageUrl": "/begriffe/demokratische-oeffentlichkeit/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "sourceSection": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "glossaryOrderKey": "Demokratische Öffentlichkeit",
+      "priority": 200,
       "officialSources": [
         "Bundeszentrale für politische Bildung: Demokratie|/quellenarchiv/wok-q-0476/",
         "Bundeszentrale für politische Bildung: Rechtsstaat, Gewaltenteilung, Parlamentarismus, Pluralismus|/quellenarchiv/wok-q-0471/",
@@ -59906,6 +59920,7 @@
         "OSCE / ODIHR: Wahlstandards|/quellenarchiv/wok-q-0333/",
         "Interne WÖk-Quellen: Demokratie als Wirkungsraum, Staat / Politik / Demokratie, Medien / Kommunikation / Öffentlichkeit, Systemmodell, Wirkungsrat, Folgencheck, Wirkung politischer Sprache|/quellenarchiv/wok-q-0643/"
       ],
+      "curatedSources": [],
       "sourceLinks": [
         {
           "source_type": "institutional",
@@ -59974,6 +59989,24 @@
           "status": "bibliographic",
           "originalUrl": "https://wirkungsoekonomie.de/blog/sprache-als-politischer-wirkstoff-rechte-narrative.html"
         }
+      ],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "demokratie-rechtsstaat-und-demokratische-wirkungsarchitektur",
+        "grundbegriff"
+      ],
+      "short_definition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
+      "long_definition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
+      "woek_einordnung": "Sie ist die kommunikative Infrastruktur demokratischer Rückkopplung.",
+      "examples": [],
+      "related_terms": [
+        "oeffentlichkeit",
+        "informationsintegritaet",
+        "medienfreiheit",
+        "deliberative-demokratie",
+        "katechon"
       ],
       "source_links": [
         {
@@ -60057,9 +60090,6 @@
       ],
       "internalLinks": [],
       "internal_links": [],
-      "categories": [
-        "demokratie-rechtsstaat-und-demokratische-wirkungsarchitektur"
-      ],
       "tags": [
         "Demokratie",
         "Rechtsstaat",
@@ -60069,12 +60099,10 @@
         "Minderheitenschutz",
         "Resilienz"
       ],
-      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
       "conceptStatus": "Anschlussbegriff",
       "concept_status": "Anschlussbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
       "theme": [
@@ -60178,34 +60206,15 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "version": "1.0",
       "lastReviewed": "2026-05-29",
       "last_reviewed": "2026-05-29",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
-      "hoverDefinition": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.",
-      "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
-      "pageUrl": "/begriffe/demokratische-oeffentlichkeit/",
       "metaTitle": "Demokratische Öffentlichkeit | Glossar der Wirkungsökonomie",
       "metaDescription": "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
       "preferredUsage": "",
-      "deprecatedUsage": [],
-      "glossaryOrderKey": "Demokratische Öffentlichkeit",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "vorhandene-einordnung-oder-anwendung",
-      "dataStandardsGroup": "",
-      "priority": 200,
-      "curatedSources": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -63388,7 +63397,8 @@
         "lieferkettenwirkung",
         "cradle-to-cradle",
         "paltering",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "id": "desinformation",
       "label": "Desinformation",
@@ -63587,7 +63597,8 @@
         "lieferkettenwirkung",
         "cradle-to-cradle",
         "paltering",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "source_links": [
         "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026",
@@ -64107,7 +64118,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Deutsche Nachhaltigkeitsstrategie (DNS)",
-      "priority": 2212,
+      "priority": 2226,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -69068,7 +69079,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "Destatis / Deutsche Nachhaltigkeitsstrategie",
       "glossaryOrderKey": "DNS-Indikator",
-      "priority": 2218,
+      "priority": 2232,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -72850,7 +72861,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "E-Gesetzgebung",
       "glossaryOrderKey": "E-Gesetzgebung / eGFA",
-      "priority": 2217,
+      "priority": 2231,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -79419,7 +79430,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "E-Gesetzgebung / BMJV",
       "glossaryOrderKey": "Elektronische Nachhaltigkeitsprüfung (eNAP)",
-      "priority": 2216,
+      "priority": 2230,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -95205,7 +95216,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "GGO § 44 Abs. 7 / WÖk-Reality-Check",
       "glossaryOrderKey": "Ex-ante-Folgenprüfung und Reality Check",
-      "priority": 2220,
+      "priority": 2234,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -96259,7 +96270,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Externalisierungslücke",
-      "priority": 2249,
+      "priority": 2263,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -108052,7 +108063,8 @@
         "wirkpfad",
         "wirkungsrisiko",
         "gegenframe",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "id": "framing",
       "label": "Frame / Framing",
@@ -108169,7 +108181,8 @@
         "wirkpfad",
         "wirkungsrisiko",
         "gegenframe",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -110572,7 +110585,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Freiwilligendilemma",
-      "priority": 2270,
+      "priority": 2284,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -114559,7 +114572,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Gefangenendilemma",
-      "priority": 2259,
+      "priority": 2273,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -115132,7 +115145,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)",
-      "priority": 2213,
+      "priority": 2227,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -121144,7 +121157,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Gesetzesfolgenabschätzung (GFA)",
-      "priority": 2214,
+      "priority": 2228,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -148777,7 +148790,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2187,
+      "priority": 2201,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -153736,7 +153749,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2183,
+      "priority": 2197,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -154035,7 +154048,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Institutionelle Vertrauenswürdigkeit",
-      "priority": 2264,
+      "priority": 2278,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -157105,7 +157118,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Intergenerationelles Dilemma",
-      "priority": 2272,
+      "priority": 2286,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -159195,7 +159208,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2502,
+      "priority": 2516,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -164745,6 +164758,152 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
+      "id": "katechon",
+      "termId": "katechon",
+      "canonicalLabel": "Katechon",
+      "slug": "katechon",
+      "aliases": [
+        "Katechon",
+        "Katechont",
+        "Aufhalter",
+        "das Aufhaltende",
+        "der Aufhaltende",
+        "politische Theologie"
+      ],
+      "shortDefinition": "Katechon bezeichnet ein politisch-theologisches Motiv des Aufhaltens: Eine Kraft, Institution oder Person soll einen drohenden Zusammenbruch, das Chaos oder den Untergang zurückhalten. Der Begriff ist ein externer Anschlussbegriff und kein Wirkmechanismus der Wirkungsökonomie.",
+      "hoverDefinition": "Katechon bezeichnet ein politisch-theologisches Motiv des ‚Aufhalters‘: eine Kraft, Institution oder Person, die einen drohenden Zusammenbruch, das Chaos oder den Untergang zurückhalten soll.",
+      "longDefinition": "Katechon geht auf die griechischen Ausdrücke κατέχον beziehungsweise κατέχων in 2 Thessalonicher 2,6–7 zurück. Sie bezeichnen dort das Aufhaltende beziehungsweise den Aufhaltenden, der das Offenbarwerden des Gesetzlosen zunächst zurückhält. Der Text benennt nicht eindeutig, wer oder was damit gemeint ist. Gerade diese Offenheit ermöglichte später unterschiedliche theologische, geschichtsphilosophische und politische Deutungen.\n\nIm 20. Jahrhundert erhielt das Motiv besonders durch Carl Schmitt politische Bedeutung. Es konnte nun für eine Macht, Institution oder Person stehen, die einen als existenziell beschriebenen Zerfall noch aufhalte. In heutigen Debatten begegnet das Motiv unter anderem dort, wo gesellschaftlicher Niedergang, Chaos oder Untergang behauptet und ein Akteur als letzte verbleibende Schutz- oder Ordnungskraft dargestellt wird. Volker Weiß hat diese gegenwärtige Wiederkehr 2026 in seiner Schrift „Katechon“ ideengeschichtlich eingeordnet.\n\nKatechon ist weder ein Synonym für Diktator, Führer, Messias oder Retter noch ein Beleg für Extremismus oder autoritäre Absicht. Ob eine Aussage dem Motiv entspricht, muss anhand ihres Zusammenhangs geprüft werden: Wird eine existenzielle Bedrohung konstruiert? Wird gewöhnliche demokratische Korrektur als unzureichend dargestellt? Wird einer Person, Bewegung oder Institution die Rolle der letzten aufhaltenden Kraft zugeschrieben? Die bloße Warnung vor einer Gefahr oder der Schutz demokratischer Institutionen genügt dafür nicht.",
+      "woekRelation": "Für die Wirkungsökonomie ist Katechon ein analytischer Anschlussbegriff, keine eigene Methode, Kennzahl oder bewiesene Wirkungskette. Er kann helfen, ein wiederkehrendes Narrativ zu untersuchen: drohender Zerfall oder existenzielle Bedrohung → gefährdetes Wir → gewöhnlicher Ausgleich erscheint unzureichend → ein Akteur, eine Bewegung oder Institution wird als letzte aufhaltende Kraft angeboten.\n\nVor dem Eintritt einer nachweisbaren Wirkung werden dabei nur Wirkungspotenzial, Wirkungsrisiko und ein möglicher Wirkpfad beschrieben. Zu prüfen sind etwa Bedrohungswahrnehmung, Zugehörigkeit und Feindbildung, die Verschiebung demokratischer Schwellen, die Legitimation außerordentlicher Macht sowie mögliche Wirkungen zweiter und dritter Ordnung. Reichweite, Wiederholung und Resonanz sind noch keine Wirkung. Erst eine beobachtbare Zustandsveränderung bei Menschen, Institutionen oder im öffentlichen Raum darf als Wirkung bezeichnet und muss gesondert zugerechnet werden.",
+      "usageNote": "Den Begriff nur verwenden, wenn das Motiv des Aufhaltens im konkreten Zusammenhang erkennbar ist. Nicht jede Krisenwarnung, Schutzmaßnahme oder starke Führungserzählung ist katechontisch. Ursprung, spätere Rezeption und heutige Verwendung auseinanderhalten. Bei gegenwärtigen Akteuren keine Absicht, autoritäre Wirkung oder extremistische Einordnung aus dem Wortgebrauch allein ableiten. Stattdessen Textbelege, Kontext, Resonanzraum, mögliche Wirkpfade und tatsächlich beobachtete Zustandsveränderungen getrennt dokumentieren.",
+      "statusNote": "Anschlussbegriff aus politischer Theologie und Ideengeschichte. Die Wirkungsökonomie nutzt ihn ausschließlich als analytische Brücke für die Untersuchung politischer Narrative, Wirkungspotenziale und Wirkungsrisiken.",
+      "status": "anschlussbegriff",
+      "type": "Anschlussbegriff / externer Begriff",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "2 Thessalonicher 2,6–7; Carl Schmitt: Der Nomos der Erde; Volker Weiß: Katechon (2026).",
+      "sourceDocument": "Biblischer Ursprung, politische Rezeption bei Carl Schmitt und aktuelle ideengeschichtliche Einordnung durch Volker Weiß.",
+      "sourceSection": "Politische Theologie, Ideengeschichte und demokratische Kommunikationsanalyse",
+      "sourceProvenance": "Der sprachliche und theologische Ursprung folgt 2 Thessalonicher 2,6–7. Die politische Rezeption wird über Carl Schmitts Primärtext und eine wissenschaftliche Einordnung dokumentiert. Volker Weiß' Buch belegt die aktuelle ideengeschichtliche Auseinandersetzung. Die Trennung von Wirkungspotenzial, Wirkungsrisiko, Resonanz und tatsächlicher Zustandsveränderung ist die wirkungsökonomische Einordnung.",
+      "officialSources": [
+        "Deutsche Bibelgesellschaft: 2 Thessalonicher 2,6–7|/quellenarchiv/wok-g-dd7fdd3fea41/",
+        "Schmitt, Carl: Der Nomos der Erde im Völkerrecht des Jus Publicum Europaeum. Duncker & Humblot|/quellenarchiv/wok-g-7617a00cf1b3/",
+        "Esposito, Roberto: Passage: Katechon. In: Two. Fordham University Press / Oxford Academic|/quellenarchiv/wok-g-75575fe99680/",
+        "Weiß, Volker (2026): Katechon. Klett-Cotta|/quellenarchiv/wok-g-890b498f39c7/"
+      ],
+      "relatedTerms": [
+        "narrativ",
+        "framing",
+        "resonanzraum",
+        "resonanzrisiko",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "transformationswirkung",
+        "demokratie",
+        "demokratische-oeffentlichkeit",
+        "desinformation",
+        "resignifikation",
+        "autoritarismus"
+      ],
+      "doNotConfuseWith": [
+        "Retter- oder Erlöserfigur: Der Katechon ist durch die Funktion des Aufhaltens bestimmt. Er muss weder Erlösung versprechen noch eine Person sein.",
+        "Messias: Das katechontische Motiv hält einen drohenden Endzustand zurück; es bezeichnet nicht notwendig eine heilbringende Endfigur.",
+        "Autoritarismus: Eine katechontische Erzählung kann für die Legitimation außerordentlicher Macht relevant sein, ist aber weder mit Autoritarismus gleichzusetzen noch dessen Nachweis.",
+        "Wirkmechanismus: Katechon benennt ein historisch-politisches Motiv. Ein konkreter Wirkmechanismus muss für den jeweiligen Fall gesondert beschrieben und empirisch geprüft werden.",
+        "Wirkungsnachweis: Wiederholung, Aufmerksamkeit oder öffentliche Resonanz belegen noch keine Veränderung von Wissen, Haltung, Vertrauen, Institutionen oder Verhalten."
+      ],
+      "examples": [
+        "Didaktisches Muster: Eine Gesellschaft stehe unmittelbar vor dem Zusammenbruch; nur eine bestimmte Person, Bewegung oder Institution könne ihn noch aufhalten. Ob eine konkrete Aussage tatsächlich diesem Motiv folgt, ergibt sich erst aus dem Zusammenhang.",
+        "Eine demokratische Institution kann eine verfassungswidrige Maßnahme aufhalten. Das ist nicht automatisch Katechon-Rhetorik, solange daraus keine Erzählung von existenziellem Untergang und letzter rettender Ordnungsmacht entsteht.",
+        "Eine politische Rede kann vor realen Gefahren warnen und Schutzmaßnahmen begründen. Ohne die Zuschreibung einer letzten aufhaltenden Kraft ist auch das kein ausreichender Beleg für das Katechon-Motiv."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Ursprung und offene Deutung",
+          "body": "Der Ausdruck stammt aus 2 Thessalonicher 2,6–7. Das Aufhaltende beziehungsweise der Aufhaltende verzögert dort das Offenbarwerden des Gesetzlosen. Der Text legt die Identität nicht eindeutig fest. Spätere Deutungen konnten deshalb unter anderem auf staatliche Ordnung, politische Macht, Institutionen oder Personen bezogen werden.",
+          "items": [
+            "Ursprung: neutestamentlicher Text und griechische Ausdrücke κατέχον / κατέχων.",
+            "Offenheit: Der biblische Text benennt den Träger des Aufhaltens nicht eindeutig.",
+            "Rezeption: Theologie, Geschichtsphilosophie und politische Theorie besetzen das Motiv unterschiedlich."
+          ]
+        },
+        {
+          "title": "Politische Rezeption",
+          "body": "Besonders Carl Schmitt machte das Motiv für eine politische Geschichtsdeutung anschlussfähig. Eine Ordnungsmacht kann darin als Kraft erscheinen, die Chaos oder geschichtlichen Zerfall zurückhält. Neuere Untersuchungen, darunter Volker Weiß' Buch von 2026, verfolgen die Wiederkehr solcher Denkfiguren in gegenwärtigen politischen Ideologien und Narrativen. Daraus folgt keine pauschale Gleichsetzung bestimmter Parteien, Länder oder politischer Lager mit dem Begriff.",
+          "items": [
+            "politisch-theologische Umdeutung des Aufhaltens",
+            "Verbindung von Bedrohungsdiagnose und Ordnungsversprechen",
+            "aktuelle ideengeschichtliche Analyse ohne automatische Akteursbewertung"
+          ]
+        },
+        {
+          "title": "Möglicher Wirkpfad und Prüfgrenzen",
+          "body": "Katechon beschreibt nicht selbst den kausalen Mechanismus. Für eine Wirkungsanalyse muss der konkrete Pfad rekonstruiert werden, ohne aus Reichweite oder Resonanz bereits Wirkung abzuleiten.",
+          "items": [
+            "Niedergangs- oder Untergangserzählung → wahrgenommene existenzielle Bedrohung",
+            "gefährdetes Wir und benannter Gegner → Zugehörigkeit, Abgrenzung und Resonanzrisiko",
+            "gewöhnliche demokratische Korrektur erscheint unzureichend → mögliche Verschiebung legitimer Handlungsschwellen",
+            "Akteur oder Institution als letzte aufhaltende Kraft → mögliches Potenzial zur Legitimation außerordentlicher Macht",
+            "beobachtete Zustandsveränderung und belastbare Zurechnung → erst hier liegt Wirkung im engeren Sinn vor"
+          ]
+        },
+        {
+          "title": "Diagnosefragen für demokratische Öffentlichkeit",
+          "body": "Die Analyse soll politische Sprache nicht verbieten und keine Menschen bewerten. Sie macht Annahmen, Gegenrahmen, mögliche Nebenwirkungen und empirische Grenzen sichtbar.",
+          "items": [
+            "Welche Bedrohung oder welcher Zerfall wird behauptet, und welche Belege gibt es dafür?",
+            "Wer gehört zum bedrohten Wir, wer wird als Gefahr oder Gegner markiert?",
+            "Warum sollen reguläre demokratische Verfahren nicht mehr ausreichen?",
+            "Welcher Person, Bewegung oder Institution wird die Rolle des Aufhaltens zugeschrieben?",
+            "Welche Veränderungen wurden tatsächlich beobachtet, und wie sicher sind sie der Kommunikation zurechenbar?"
+          ]
+        }
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "pageUrl": "/begriffe/katechon/",
+      "glossaryOrderKey": "Katechon",
+      "label": "Katechon",
+      "synonyms": [
+        "Katechon",
+        "Katechont",
+        "Aufhalter",
+        "das Aufhaltende",
+        "der Aufhaltende",
+        "politische Theologie"
+      ],
+      "definition": "Katechon geht auf die griechischen Ausdrücke κατέχον beziehungsweise κατέχων in 2 Thessalonicher 2,6–7 zurück. Sie bezeichnen dort das Aufhaltende beziehungsweise den Aufhaltenden, der das Offenbarwerden des Gesetzlosen zunächst zurückhält. Der Text benennt nicht eindeutig, wer oder was damit gemeint ist. Gerade diese Offenheit ermöglichte später unterschiedliche theologische, geschichtsphilosophische und politische Deutungen.\n\nIm 20. Jahrhundert erhielt das Motiv besonders durch Carl Schmitt politische Bedeutung. Es konnte nun für eine Macht, Institution oder Person stehen, die einen als existenziell beschriebenen Zerfall noch aufhalte. In heutigen Debatten begegnet das Motiv unter anderem dort, wo gesellschaftlicher Niedergang, Chaos oder Untergang behauptet und ein Akteur als letzte verbleibende Schutz- oder Ordnungskraft dargestellt wird. Volker Weiß hat diese gegenwärtige Wiederkehr 2026 in seiner Schrift „Katechon“ ideengeschichtlich eingeordnet.\n\nKatechon ist weder ein Synonym für Diktator, Führer, Messias oder Retter noch ein Beleg für Extremismus oder autoritäre Absicht. Ob eine Aussage dem Motiv entspricht, muss anhand ihres Zusammenhangs geprüft werden: Wird eine existenzielle Bedrohung konstruiert? Wird gewöhnliche demokratische Korrektur als unzureichend dargestellt? Wird einer Person, Bewegung oder Institution die Rolle der letzten aufhaltenden Kraft zugeschrieben? Die bloße Warnung vor einer Gefahr oder der Schutz demokratischer Institutionen genügt dafür nicht.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 2174,
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "related_terms": [
+        "narrativ",
+        "framing",
+        "resonanzraum",
+        "resonanzrisiko",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "transformationswirkung",
+        "demokratie",
+        "demokratische-oeffentlichkeit",
+        "desinformation",
+        "resignifikation",
+        "autoritarismus"
+      ]
+    },
+    {
       "termId": "kausalitaet-und-zurechnung",
       "canonicalLabel": "Kausalität und Zurechnung",
       "relatedTerms": [
@@ -168829,7 +168988,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2231,
+      "priority": 2245,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -175686,7 +175845,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2210,
+      "priority": 2224,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -176113,7 +176272,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kooperationsfähigkeit",
-      "priority": 2267,
+      "priority": 2281,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -176511,7 +176670,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kooperative Wehrhaftigkeit",
-      "priority": 2254,
+      "priority": 2268,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -176587,7 +176746,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Koordinationsdilemma",
-      "priority": 2269,
+      "priority": 2283,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -220305,7 +220464,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "BMJV Nachhaltige Gesetzgebung / GGO § 44",
       "glossaryOrderKey": "Nachhaltigkeitsprüfung des Bundes",
-      "priority": 2215,
+      "priority": 2229,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -220784,7 +220943,8 @@
         "resonanz",
         "vertrautheitseffekt",
         "gedaechtniskonsolidierung",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "id": "narrativ",
       "label": "Narrativ",
@@ -220873,7 +221033,8 @@
         "resonanz",
         "vertrautheitseffekt",
         "gedaechtniskonsolidierung",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -221335,7 +221496,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2230,
+      "priority": 2244,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -222990,7 +223151,7 @@
       "category": "Grundbegriff",
       "sourceSection": "Nebenfolgen, Systemeffekte und Rückkopplung",
       "glossaryOrderKey": "Nebenwirkung",
-      "priority": 2197,
+      "priority": 2211,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -239900,7 +240061,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Objektspezifische staatliche Prüfarchitektur",
-      "priority": 2227,
+      "priority": 2241,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -239979,7 +240140,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung 2026-08-21 / #241/#253",
       "glossaryOrderKey": "Objektspezifischer staatlicher Prüfbenchmark",
-      "priority": 2223,
+      "priority": 2237,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -249398,7 +249559,7 @@
       "category": "Grundbegriff",
       "sourceSection": "Output, Outcome und Wirkung",
       "glossaryOrderKey": "Outcome",
-      "priority": 2186,
+      "priority": 2200,
       "officialSources": [
         "OECD DAC (2022): Glossary of Key Terms in Evaluation and Results-Based Management|/quellenarchiv/wok-g-3dde245df3e2/",
         "PHINEO: Grundbegriffe der Wirkungsorientierung|/quellenarchiv/wok-g-5f9a4a116888/"
@@ -249772,7 +249933,7 @@
       "category": "Grundbegriff",
       "sourceSection": "Output, Outcome und Wirkung",
       "glossaryOrderKey": "Output",
-      "priority": 2185,
+      "priority": 2199,
       "officialSources": [
         "OECD DAC (2022): Glossary of Key Terms in Evaluation and Results-Based Management|/quellenarchiv/wok-g-3dde245df3e2/",
         "PHINEO: Grundbegriffe der Wirkungsorientierung|/quellenarchiv/wok-g-5f9a4a116888/"
@@ -251532,7 +251693,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "Deutscher Bundestag / BMJV",
       "glossaryOrderKey": "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
-      "priority": 2222,
+      "priority": 2236,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -255888,7 +256049,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2239,
+      "priority": 2253,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -269981,7 +270142,7 @@
       "category": "Bewertungsbegriff",
       "sourceSection": "Vertiefung J · Vorschläge für Glossartexte",
       "glossaryOrderKey": "Preisvollständigkeit",
-      "priority": 2251,
+      "priority": 2265,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -273509,7 +273670,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2242,
+      "priority": 2256,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -291901,7 +292062,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2189,
+      "priority": 2203,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -298757,7 +298918,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Reparaturfähigkeit",
-      "priority": 2265,
+      "priority": 2279,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -302516,43 +302677,8 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "resignifikation",
       "termId": "resignifikation",
       "canonicalLabel": "Resignifikation / subversive Resignifikation",
-      "slug": "resignifikation",
-      "aliases": [
-        "Resignifikation / subversive Resignifikation",
-        "Resignifikation",
-        "resignifizieren",
-        "Neubesetzung von Bedeutung",
-        "semantische Umcodierung",
-        "Bedeutungsverschiebung",
-        "strategische Resignifikation",
-        "subversive Resignifikation",
-        "strategische Resignifikation des Historischen",
-        "subversive Resignifikation des Historischen"
-      ],
-      "shortDefinition": "Resignifikation bezeichnet die Veränderung oder gezielte Neubesetzung der Bedeutung eines Begriffs, Zeichens oder historischen Narrativs. Im Sinne von Volker Weiß beschreibt subversive beziehungsweise strategische Resignifikation des Historischen, wie politische Akteure historische Begriffe und Deutungen aus ihrem Zusammenhang lösen, umcodieren und als anschlussfähige Gegenwirklichkeit in den öffentlichen Diskurs zurückspielen.",
-      "hoverDefinition": "Resignifikation ist die Veränderung oder Neubesetzung von Bedeutung; bei Volker Weiß bezeichnet subversive Resignifikation besonders die strategische Umcodierung historischer Begriffe und Deutungen.",
-      "longDefinition": "Resignifikation ist zunächst ein allgemeiner sprachlicher, kultureller und politischer Vorgang: Die Bedeutung eines Wortes, Zeichens, Symbols oder Narrativs wird verändert, neu besetzt oder in einen anderen Deutungszusammenhang gestellt. Das kann offen oder schleichend, emanzipatorisch oder manipulativ, beabsichtigt oder als Ergebnis gesellschaftlicher Auseinandersetzung geschehen. Der Begriff ist daher nicht von sich aus auf extrem rechte Kommunikation festgelegt. Auch die selbstbestimmte Wiederaneignung einer abwertenden Bezeichnung durch Betroffene kann eine Resignifikation sein.\n\nVolker Weiß verwendet die Begriffe subversive beziehungsweise strategische Resignifikation des Historischen für ein Verfahren extrem rechter Geschichtspolitik. Historische Begriffe, Ereignisse und Symbole werden aus ihren Zusammenhängen gelöst, neu kombiniert oder mit vertauschten Rollen und Verantwortlichkeiten in die Gegenwart zurückgespielt. So kann eine erfundene oder umcodierte Vergangenheit als Begründungsressource für autoritäre und antidemokratische Zukunftsentwürfe dienen. Subversiv bezeichnet hier die Unterwanderung einer geteilten historischen Bedeutungsordnung; es ist kein Gütesiegel für eine emanzipatorische Wirkung.\n\nAnalytisch müssen drei Ebenen getrennt bleiben: die beobachtbare semantische Veränderung, eine belegbare strategische Absicht und die tatsächlich eingetretene Wirkung bei Menschen, Institutionen oder im öffentlichen Diskurs. Dass eine Umdeutung verbreitet oder häufig wiederholt wird, zeigt Reichweite und Wirkungspotenzial, aber noch keine Einstellungs- oder Verhaltensänderung.",
-      "woekRelation": "Wirkungsökonomisch ist Resignifikation ein möglicher Wirkmechanismus in Sprache, Geschichtspolitik und öffentlicher Kommunikation. Auslöser ist etwa eine Rede, Kampagne, Publikation oder symbolische Handlung. Als Wirkstoff im ausdrücklich nur analogen Sinn kann eine dekontextualisierte und neu codierte Begriff-Erzählung wirken. Ihr Wirkungspotenzial beziehungsweise Wirkungsrisiko entsteht über Wiederholung, affektive Aufladung, Vertrautheit, Anschlussfähigkeit, algorithmische Verstärkung und institutionelle Übernahme. Mögliche Wirkungen wären beobachtbare Veränderungen von historischem Wissen, Problemwahrnehmung, Vertrauen, demokratischen Normen, Diskursgrenzen oder Entscheidungen.\n\nDie Wirkungskette ist nicht automatisch: Aus Veröffentlichung folgt Reichweite, aus Reichweite folgt Exposition, aus Exposition kann Vertrautheit entstehen und erst weitere empirisch zu prüfende Schritte können zu veränderten Urteilen oder Handlungen führen. Gegenrede kann aufklären, zugleich aber den ursprünglichen Frame wiederholen und dessen Sichtbarkeit erhöhen. Deshalb prüft die Wirkungsökonomie Wirkpfad, Zielgruppen, Gegenrahmen, Nebenwirkungen, Zurechnung und Rückkopplung, ohne Sprache zu verbieten oder Menschen nach ihren Begriffen zu bewerten.",
-      "usageNote": "Den Begriff nicht als pauschales Etikett für jede neue Wortverwendung oder historische Neubewertung verwenden. Benennen, welche Bedeutung in welchem Kontext vorlag, wer was wie umcodiert, welche Funktion die neue Deutung erfüllen soll und welche Belege für Strategie, Verbreitung und Wirkung vorhanden sind. Historische Forschung, legitime politische Deutungskonkurrenz und manipulative Geschichtsumdeutung auseinanderhalten. Bei Aussagen über Wirkung Reichweite, Exposition, Wirkungspotenzial, beobachtete Zustandsveränderung und Zurechnung ausdrücklich trennen.",
-      "statusNote": "Anschlussbegriff aus Sprach-, Diskurs- und Geschichtstheorie. Die spezifische Fassung als subversive oder strategische Resignifikation des Historischen folgt der Analyse Volker Weiß'; Wirkpfad, Messlogik und normative Einordnung sind die Präzisierung der Wirkungsökonomie.",
-      "status": "anschlussbegriff",
-      "type": "Sprach-, Geschichts- und Diskursmechanismus",
-      "category": "Sprache, Wirklichkeit und Kommunikation",
-      "version": "1.0",
-      "reviewStatus": "fachlich konsolidiert",
-      "source": "Weiß, Volker (2025): Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört.",
-      "sourceDocument": "Volker Weiß: Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört. Klett-Cotta, Stuttgart 2025.",
-      "sourceSection": "Strategische beziehungsweise subversive Resignifikation des Historischen",
-      "sourceProvenance": "Die spezifische Verwendung für extrem rechte Geschichtspolitik stützt sich auf Volker Weiß' Buch und die dokumentierten Besprechungen der Friedrich-Ebert-Stiftung und des Deutschlandfunks. Die allgemeine begriffliche Öffnung und die Warnung vor einer Gleichsetzung jeder Resignifikation mit rechter Strategie berücksichtigen die fachwissenschaftliche Kritik in KULT_online. Die Trennung von Auslöser, Wirkungspotenzial, Wirkungsrisiko, tatsächlicher Wirkung, Zurechnung und Rückkopplung ist die wirkungsökonomische Einordnung.",
-      "officialSources": [
-        "Weiß, Volker (2025): Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört. Klett-Cotta. Buchvorstellung der Friedrich-Ebert-Stiftung|/quellenarchiv/wok-g-2e0e9070a926/",
-        "Deutschlandfunk Kultur: Wie die extreme Rechte Geschichte umdeutet|/quellenarchiv/wok-g-818bd6024580/",
-        "KULT_online: Vergangenheitsbewältigung von rechts - Rezension und begriffliche Kritik|/quellenarchiv/wok-g-1f12bae8727c/",
-        "Institut für Demokratie und Zivilgesellschaft: Wissen schafft Demokratie 17 - Erinnerung als Praxis der Demokratie|/quellenarchiv/wok-g-606d14b40514/"
-      ],
       "relatedTerms": [
         "framing",
         "gegenframe",
@@ -302568,8 +302694,66 @@
         "wirkmechanismus",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkpfad"
+        "wirkpfad",
+        "katechon"
       ],
+      "id": "resignifikation",
+      "label": "Resignifikation / subversive Resignifikation",
+      "slug": "resignifikation",
+      "aliases": [
+        "Resignifikation / subversive Resignifikation",
+        "Resignifikation",
+        "resignifizieren",
+        "Neubesetzung von Bedeutung",
+        "semantische Umcodierung",
+        "Bedeutungsverschiebung",
+        "strategische Resignifikation",
+        "subversive Resignifikation",
+        "strategische Resignifikation des Historischen",
+        "subversive Resignifikation des Historischen"
+      ],
+      "synonyms": [
+        "Resignifikation / subversive Resignifikation",
+        "Resignifikation",
+        "resignifizieren",
+        "Neubesetzung von Bedeutung",
+        "semantische Umcodierung",
+        "Bedeutungsverschiebung",
+        "strategische Resignifikation",
+        "subversive Resignifikation",
+        "strategische Resignifikation des Historischen",
+        "subversive Resignifikation des Historischen"
+      ],
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Weiß, Volker (2025): Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört.",
+      "shortDefinition": "Resignifikation bezeichnet die Veränderung oder gezielte Neubesetzung der Bedeutung eines Begriffs, Zeichens oder historischen Narrativs. Im Sinne von Volker Weiß beschreibt subversive beziehungsweise strategische Resignifikation des Historischen, wie politische Akteure historische Begriffe und Deutungen aus ihrem Zusammenhang lösen, umcodieren und als anschlussfähige Gegenwirklichkeit in den öffentlichen Diskurs zurückspielen.",
+      "hoverDefinition": "Resignifikation ist die Veränderung oder Neubesetzung von Bedeutung; bei Volker Weiß bezeichnet subversive Resignifikation besonders die strategische Umcodierung historischer Begriffe und Deutungen.",
+      "definition": "Resignifikation ist zunächst ein allgemeiner sprachlicher, kultureller und politischer Vorgang: Die Bedeutung eines Wortes, Zeichens, Symbols oder Narrativs wird verändert, neu besetzt oder in einen anderen Deutungszusammenhang gestellt. Das kann offen oder schleichend, emanzipatorisch oder manipulativ, beabsichtigt oder als Ergebnis gesellschaftlicher Auseinandersetzung geschehen. Der Begriff ist daher nicht von sich aus auf extrem rechte Kommunikation festgelegt. Auch die selbstbestimmte Wiederaneignung einer abwertenden Bezeichnung durch Betroffene kann eine Resignifikation sein.\n\nVolker Weiß verwendet die Begriffe subversive beziehungsweise strategische Resignifikation des Historischen für ein Verfahren extrem rechter Geschichtspolitik. Historische Begriffe, Ereignisse und Symbole werden aus ihren Zusammenhängen gelöst, neu kombiniert oder mit vertauschten Rollen und Verantwortlichkeiten in die Gegenwart zurückgespielt. So kann eine erfundene oder umcodierte Vergangenheit als Begründungsressource für autoritäre und antidemokratische Zukunftsentwürfe dienen. Subversiv bezeichnet hier die Unterwanderung einer geteilten historischen Bedeutungsordnung; es ist kein Gütesiegel für eine emanzipatorische Wirkung.\n\nAnalytisch müssen drei Ebenen getrennt bleiben: die beobachtbare semantische Veränderung, eine belegbare strategische Absicht und die tatsächlich eingetretene Wirkung bei Menschen, Institutionen oder im öffentlichen Diskurs. Dass eine Umdeutung verbreitet oder häufig wiederholt wird, zeigt Reichweite und Wirkungspotenzial, aber noch keine Einstellungs- oder Verhaltensänderung.",
+      "longDefinition": "Resignifikation ist zunächst ein allgemeiner sprachlicher, kultureller und politischer Vorgang: Die Bedeutung eines Wortes, Zeichens, Symbols oder Narrativs wird verändert, neu besetzt oder in einen anderen Deutungszusammenhang gestellt. Das kann offen oder schleichend, emanzipatorisch oder manipulativ, beabsichtigt oder als Ergebnis gesellschaftlicher Auseinandersetzung geschehen. Der Begriff ist daher nicht von sich aus auf extrem rechte Kommunikation festgelegt. Auch die selbstbestimmte Wiederaneignung einer abwertenden Bezeichnung durch Betroffene kann eine Resignifikation sein.\n\nVolker Weiß verwendet die Begriffe subversive beziehungsweise strategische Resignifikation des Historischen für ein Verfahren extrem rechter Geschichtspolitik. Historische Begriffe, Ereignisse und Symbole werden aus ihren Zusammenhängen gelöst, neu kombiniert oder mit vertauschten Rollen und Verantwortlichkeiten in die Gegenwart zurückgespielt. So kann eine erfundene oder umcodierte Vergangenheit als Begründungsressource für autoritäre und antidemokratische Zukunftsentwürfe dienen. Subversiv bezeichnet hier die Unterwanderung einer geteilten historischen Bedeutungsordnung; es ist kein Gütesiegel für eine emanzipatorische Wirkung.\n\nAnalytisch müssen drei Ebenen getrennt bleiben: die beobachtbare semantische Veränderung, eine belegbare strategische Absicht und die tatsächlich eingetretene Wirkung bei Menschen, Institutionen oder im öffentlichen Diskurs. Dass eine Umdeutung verbreitet oder häufig wiederholt wird, zeigt Reichweite und Wirkungspotenzial, aber noch keine Einstellungs- oder Verhaltensänderung.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "woekRelation": "Wirkungsökonomisch ist Resignifikation ein möglicher Wirkmechanismus in Sprache, Geschichtspolitik und öffentlicher Kommunikation. Auslöser ist etwa eine Rede, Kampagne, Publikation oder symbolische Handlung. Als Wirkstoff im ausdrücklich nur analogen Sinn kann eine dekontextualisierte und neu codierte Begriff-Erzählung wirken. Ihr Wirkungspotenzial beziehungsweise Wirkungsrisiko entsteht über Wiederholung, affektive Aufladung, Vertrautheit, Anschlussfähigkeit, algorithmische Verstärkung und institutionelle Übernahme. Mögliche Wirkungen wären beobachtbare Veränderungen von historischem Wissen, Problemwahrnehmung, Vertrauen, demokratischen Normen, Diskursgrenzen oder Entscheidungen.\n\nDie Wirkungskette ist nicht automatisch: Aus Veröffentlichung folgt Reichweite, aus Reichweite folgt Exposition, aus Exposition kann Vertrautheit entstehen und erst weitere empirisch zu prüfende Schritte können zu veränderten Urteilen oder Handlungen führen. Gegenrede kann aufklären, zugleich aber den ursprünglichen Frame wiederholen und dessen Sichtbarkeit erhöhen. Deshalb prüft die Wirkungsökonomie Wirkpfad, Zielgruppen, Gegenrahmen, Nebenwirkungen, Zurechnung und Rückkopplung, ohne Sprache zu verbieten oder Menschen nach ihren Begriffen zu bewerten.",
+      "reviewStatus": "fachlich konsolidiert",
+      "statusNote": "Anschlussbegriff aus Sprach-, Diskurs- und Geschichtstheorie. Die spezifische Fassung als subversive oder strategische Resignifikation des Historischen folgt der Analyse Volker Weiß'; Wirkpfad, Messlogik und normative Einordnung sind die Präzisierung der Wirkungsökonomie.",
+      "usageNote": "Den Begriff nicht als pauschales Etikett für jede neue Wortverwendung oder historische Neubewertung verwenden. Benennen, welche Bedeutung in welchem Kontext vorlag, wer was wie umcodiert, welche Funktion die neue Deutung erfüllen soll und welche Belege für Strategie, Verbreitung und Wirkung vorhanden sind. Historische Forschung, legitime politische Deutungskonkurrenz und manipulative Geschichtsumdeutung auseinanderhalten. Bei Aussagen über Wirkung Reichweite, Exposition, Wirkungspotenzial, beobachtete Zustandsveränderung und Zurechnung ausdrücklich trennen.",
+      "pageUrl": "/begriffe/resignifikation/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "sourceSection": "Strategische beziehungsweise subversive Resignifikation des Historischen",
+      "glossaryOrderKey": "Resignifikation / subversive Resignifikation",
+      "priority": 2163,
+      "officialSources": [
+        "Weiß, Volker (2025): Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört. Klett-Cotta. Buchvorstellung der Friedrich-Ebert-Stiftung|/quellenarchiv/wok-g-2e0e9070a926/",
+        "Deutschlandfunk Kultur: Wie die extreme Rechte Geschichte umdeutet|/quellenarchiv/wok-g-818bd6024580/",
+        "KULT_online: Vergangenheitsbewältigung von rechts - Rezension und begriffliche Kritik|/quellenarchiv/wok-g-1f12bae8727c/",
+        "Institut für Demokratie und Zivilgesellschaft: Wissen schafft Demokratie 17 - Erinnerung als Praxis der Demokratie|/quellenarchiv/wok-g-606d14b40514/"
+      ],
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
       "doNotConfuseWith": [
         "Framing: Ein Frame hebt bestimmte Aspekte hervor und ordnet sie; Resignifikation verändert oder besetzt die Bedeutung eines Ausdrucks, Symbols oder historischen Narrativs neu. Beides kann zusammenwirken.",
         "Reframing: Reframing bietet bewusst einen anderen Deutungsrahmen an. Resignifikation kann darüber hinaus die Bedeutung des verwendeten Zeichens oder Begriffs selbst verschieben.",
@@ -302578,6 +302762,14 @@
         "Historische Forschung und Revision: Wissenschaftliche Neubewertung prüft Quellen, Gegenbelege und Kontexte methodisch offen. Die von Weiß kritisierte strategische Resignifikation nutzt Geschichte als politische Legitimationsressource und überschreibt oder verschiebt Zusammenhänge.",
         "Wirkungsnachweis: Sichtbarkeit, Wiederholung, Empörung oder mediale Reichweite belegen noch keine tatsächliche Veränderung von Wissen, Haltung, Vertrauen oder Verhalten."
       ],
+      "deprecatedUsage": [],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation",
+        "grundbegriff"
+      ],
+      "type": "Sprach-, Geschichts- und Diskursmechanismus",
+      "sourceDocument": "Volker Weiß: Das Deutsche Demokratische Reich. Wie die extreme Rechte Geschichte und Demokratie zerstört. Klett-Cotta, Stuttgart 2025.",
+      "sourceProvenance": "Die spezifische Verwendung für extrem rechte Geschichtspolitik stützt sich auf Volker Weiß' Buch und die dokumentierten Besprechungen der Friedrich-Ebert-Stiftung und des Deutschlandfunks. Die allgemeine begriffliche Öffnung und die Warnung vor einer Gleichsetzung jeder Resignifikation mit rechter Strategie berücksichtigen die fachwissenschaftliche Kritik in KULT_online. Die Trennung von Auslöser, Wirkungspotenzial, Wirkungsrisiko, tatsächlicher Wirkung, Zurechnung und Rückkopplung ist die wirkungsökonomische Einordnung.",
       "examples": [
         "Die Bezeichnung des Nationalsozialismus als eigentlich linkes Projekt isoliert einzelne Wörter wie ‚sozialistisch‘ von Ideologie, Herrschaftspraxis und historischem Kontext. Die Umcodierung kann Verantwortung verschieben und demokratische Erinnerung delegitimieren; ob sie Wissen oder Einstellungen verändert, muss gesondert untersucht werden.",
         "Begriffe wie Frieden oder Widerstand können aus ihrer historischen Verwendung gelöst und in einen nationalistischen oder autoritären Deutungsrahmen eingebaut werden. Die bloße Verwendung des Begriffs ist noch kein Beleg; entscheidend sind Kontext, Transformation, Funktion und Wirkpfad.",
@@ -302625,37 +302817,8 @@
           ]
         }
       ],
-      "classicGlossary": true,
       "autoLinkAllowed": true,
       "maxAutoLinksPerPage": 1,
-      "pageUrl": "/begriffe/resignifikation/",
-      "glossaryOrderKey": "Resignifikation / subversive Resignifikation",
-      "label": "Resignifikation / subversive Resignifikation",
-      "synonyms": [
-        "Resignifikation / subversive Resignifikation",
-        "Resignifikation",
-        "resignifizieren",
-        "Neubesetzung von Bedeutung",
-        "semantische Umcodierung",
-        "Bedeutungsverschiebung",
-        "strategische Resignifikation",
-        "subversive Resignifikation",
-        "strategische Resignifikation des Historischen",
-        "subversive Resignifikation des Historischen"
-      ],
-      "definition": "Resignifikation ist zunächst ein allgemeiner sprachlicher, kultureller und politischer Vorgang: Die Bedeutung eines Wortes, Zeichens, Symbols oder Narrativs wird verändert, neu besetzt oder in einen anderen Deutungszusammenhang gestellt. Das kann offen oder schleichend, emanzipatorisch oder manipulativ, beabsichtigt oder als Ergebnis gesellschaftlicher Auseinandersetzung geschehen. Der Begriff ist daher nicht von sich aus auf extrem rechte Kommunikation festgelegt. Auch die selbstbestimmte Wiederaneignung einer abwertenden Bezeichnung durch Betroffene kann eine Resignifikation sein.\n\nVolker Weiß verwendet die Begriffe subversive beziehungsweise strategische Resignifikation des Historischen für ein Verfahren extrem rechter Geschichtspolitik. Historische Begriffe, Ereignisse und Symbole werden aus ihren Zusammenhängen gelöst, neu kombiniert oder mit vertauschten Rollen und Verantwortlichkeiten in die Gegenwart zurückgespielt. So kann eine erfundene oder umcodierte Vergangenheit als Begründungsressource für autoritäre und antidemokratische Zukunftsentwürfe dienen. Subversiv bezeichnet hier die Unterwanderung einer geteilten historischen Bedeutungsordnung; es ist kein Gütesiegel für eine emanzipatorische Wirkung.\n\nAnalytisch müssen drei Ebenen getrennt bleiben: die beobachtbare semantische Veränderung, eine belegbare strategische Absicht und die tatsächlich eingetretene Wirkung bei Menschen, Institutionen oder im öffentlichen Diskurs. Dass eine Umdeutung verbreitet oder häufig wiederholt wird, zeigt Reichweite und Wirkungspotenzial, aber noch keine Einstellungs- oder Verhaltensänderung.",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "showInCategoryGlossary": false,
-      "dataStandardsGroup": "",
-      "priority": 2163,
-      "curatedSources": [],
-      "sourceLinks": [],
-      "relatedDocuments": [],
-      "deprecatedUsage": [],
-      "categories": [
-        "sprache-wirklichkeit-und-kommunikation"
-      ],
       "related_terms": [
         "framing",
         "gegenframe",
@@ -302671,7 +302834,8 @@
         "wirkmechanismus",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkpfad"
+        "wirkpfad",
+        "katechon"
       ]
     },
     {
@@ -304276,7 +304440,8 @@
         "diskursfaehigkeit",
         "frame",
         "reframing",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "id": "resonanzraum",
       "label": "Resonanzraum",
@@ -304482,7 +304647,8 @@
         "diskursfaehigkeit",
         "frame",
         "reframing",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "source_links": [],
       "internal_links": [],
@@ -304522,10 +304688,19 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
-      "id": "resonanzrisiko",
       "termId": "resonanzrisiko",
-      "label": "Resonanzrisiko",
       "canonicalLabel": "Resonanzrisiko",
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "alarm-frame",
+        "destruktives-narrativ",
+        "vertrauensverschiebung",
+        "katechon"
+      ],
+      "id": "resonanzrisiko",
+      "label": "Resonanzrisiko",
       "slug": "resonanzrisiko",
       "aliases": [
         "Resonanzrisiko"
@@ -304533,14 +304708,47 @@
       "synonyms": [
         "Resonanzrisiko"
       ],
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "source": "Journalartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
       "shortDefinition": "Resonanzrisiko beschreibt die Möglichkeit, dass ein Impuls in einem Resonanzraum negativ aufgenommen, verstärkt, verzerrt oder destabilisierend weiterverarbeitet wird.",
+      "hoverDefinition": "Resonanzrisiko beschreibt die Möglichkeit, dass ein Impuls in einem Resonanzraum negativ aufgenommen, verstärkt, verzerrt oder destabilisierend weiterverarbeitet wird.",
       "definition": "Resonanzrisiken entstehen, wenn Sprache, Bilder, Produkte, Plattformlogik, Preislogik oder politische Narrative Anschluss finden, aber in Richtung Misstrauen, Polarisierung, Scheinentlastung oder destruktive Vertrauensbindung wirken.",
       "longDefinition": "Resonanzrisiken entstehen, wenn Sprache, Bilder, Produkte, Plattformlogik, Preislogik oder politische Narrative Anschluss finden, aber in Richtung Misstrauen, Polarisierung, Scheinentlastung oder destruktive Vertrauensbindung wirken.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
       "woekRelation": "Resonanzrisiko ist noch kein eingetretener Schaden. Es beschreibt ein Wirkungsrisiko im Resonanzraum und hilft, zwischen Wirkungspotenzial, Wirkpfad und tatsächlicher Wirkung zu unterscheiden.",
+      "reviewStatus": "approved",
       "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
       "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
+      "pageUrl": "/begriffe/resonanzrisiko/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "glossaryOrderKey": "Resonanzrisiko",
+      "priority": 400,
+      "officialSources": [
+        "Warum Fakten nicht reichen|/quellenarchiv/wok-q-0681/"
+      ],
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [
+        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      ],
+      "doNotConfuseWith": [
+        "Wirkung",
+        "Wirkungspotenzial",
+        "Wirkungsnachweis"
+      ],
+      "deprecatedUsage": [
+        "als moralisches Etikett für Personen verwenden",
+        "mit eingetretener Wirkung gleichsetzen"
+      ],
       "categories": [
-        "psychologische-systemische-wirkmechanismen"
+        "psychologische-systemische-wirkmechanismen",
+        "grundbegriff"
       ],
       "tags": [
         "Psychologie",
@@ -304558,46 +304766,11 @@
         "Resonanzraum",
         "Vertrauen"
       ],
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
-      "relatedTerms": [
-        "resonanzraum",
-        "wirkungsrisiko",
-        "wirkungspotenzial",
-        "alarm-frame",
-        "destruktives-narrativ",
-        "vertrauensverschiebung"
-      ],
-      "officialSources": [
-        "Warum Fakten nicht reichen|/quellenarchiv/wok-q-0681/"
-      ],
-      "pageUrl": "/begriffe/resonanzrisiko/",
-      "priority": 400,
-      "status": "woek-anschlussbegriff",
-      "version": "1.0",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "source": "Journalartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
       "sourceDocument": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
-      "sourceSection": "Psychologische und systemische Wirkmechanismen",
-      "hoverDefinition": "Resonanzrisiko beschreibt die Möglichkeit, dass ein Impuls in einem Resonanzraum negativ aufgenommen, verstärkt, verzerrt oder destabilisierend weiterverarbeitet wird.",
-      "doNotConfuseWith": [
-        "Wirkung",
-        "Wirkungspotenzial",
-        "Wirkungsnachweis"
-      ],
-      "relatedDocuments": [
-        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
-      ],
       "examples": [],
       "preferredUsage": "Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.",
-      "deprecatedUsage": [
-        "als moralisches Etikett für Personen verwenden",
-        "mit eingetretener Wirkung gleichsetzen"
-      ],
       "metaTitle": "Resonanzrisiko | Glossar der Wirkungsökonomie",
       "metaDescription": "Resonanzrisiko beschreibt die Möglichkeit, dass ein Impuls in einem Resonanzraum negativ aufgenommen, verstärkt, verzerrt oder destabilisierend weiterverarbeitet wird.",
-      "reviewStatus": "approved",
-      "glossaryOrderKey": "Resonanzrisiko",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29",
@@ -304607,7 +304780,8 @@
         "wirkungspotenzial",
         "alarm-frame",
         "destruktives-narrativ",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "katechon"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -304648,11 +304822,6 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
-      "dataStandardsGroup": "",
-      "curatedSources": [],
-      "sourceLinks": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -306694,7 +306863,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Reziprozität",
-      "priority": 2274,
+      "priority": 2288,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -324495,7 +324664,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Senkenallmende",
-      "priority": 2247,
+      "priority": 2261,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -331063,7 +331232,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Soziales Dilemma",
-      "priority": 2258,
+      "priority": 2272,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -336283,7 +336452,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung auf Basis amtlicher Bundesarchitektur",
       "glossaryOrderKey": "Staatliche Nachhaltigkeitsarchitektur",
-      "priority": 2221,
+      "priority": 2235,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -336356,7 +336525,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung 2026-08-21 / #241/#253",
       "glossaryOrderKey": "Staatlicher GFA-/eNAP-Benchmark",
-      "priority": 2224,
+      "priority": 2238,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -353870,7 +354039,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Systemisch positives Summenspiel",
-      "priority": 2256,
+      "priority": 2270,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -354090,7 +354259,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Systemische Kooperation",
-      "priority": 2266,
+      "priority": 2280,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -361317,7 +361486,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2207,
+      "priority": 2221,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -367552,13 +367721,13 @@
         "United Nations: Sustainable Development Goals|/quellenarchiv/wok-q-0024/"
       ],
       "pageUrl": "/begriffe/transformationswirkung/",
-      "priority": 116,
-      "status": "führender-begriff",
-      "version": "1.1",
-      "category": "Grundbegriffe der Wirkungsökonomie",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "priority": 2182,
+      "status": "approved",
+      "version": "1.0",
+      "category": "Grundbegriff",
+      "source": "WÖk-Begriffsleitfaden",
       "sourceDocument": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
-      "sourceSection": "Professionalisiertes Glossar-Pack 003",
+      "sourceSection": "",
       "hoverDefinition": "Transformationswirkung verändert nachweisbar nicht nur einen einzelnen Zustand, sondern Bedingungen künftiger Entscheidungen. Eine bloße Erwartung ist Wirkungspotenzial, keine Transformationswirkung.",
       "doNotConfuseWith": [
         "Wirkungspotenzial: begründete Möglichkeit einer künftigen Veränderung, noch keine Wirkung.",
@@ -367589,7 +367758,7 @@
       "preferredUsage": "Als Bezeichnung für eine belegte strukturelle Zustandsveränderung verwenden; Erwartungen als Transformationspotenzial oder Szenario ausweisen.",
       "deprecatedUsage": [],
       "reviewStatus": "fachlich konsolidiert",
-      "glossaryOrderKey": "transformationswirkung",
+      "glossaryOrderKey": "Transformationswirkung",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-06-01",
       "conceptStatus": "WÖk-Kernbegriff",
@@ -367694,7 +367863,7 @@
         }
       ],
       "definitionDetailStatus": "vertieft",
-      "definitionDetailBasis": "explizite-langdefinition",
+      "definitionDetailBasis": "konzise-ohne-unverifizierte-ergaenzung",
       "dataStandardsGroup": "",
       "curatedSources": [],
       "sourceProvenance": "Die WÖk-Definition beschreibt die Modellverwendung; der T-SROI-Rechenstandard erklärt seine Grenzen. OECD-DAC und Agenda 2030 sind fachliche Referenzrahmen."
@@ -370021,7 +370190,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Trittbrettfahren",
-      "priority": 2261,
+      "priority": 2275,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -377027,7 +377196,7 @@
       "category": "Bewertungsbegriff",
       "sourceSection": "Vertiefung J · Vorschläge für Glossartexte",
       "glossaryOrderKey": "Unvollständiger Preis",
-      "priority": 2250,
+      "priority": 2264,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -378839,7 +379008,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2174,
+      "priority": 2188,
       "curatedSources": [],
       "sourceLinks": [],
       "deprecatedUsage": [],
@@ -380824,7 +380993,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Verfahrensgerechtigkeit",
-      "priority": 2275,
+      "priority": 2289,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -387360,7 +387529,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Vertrauensallmende",
-      "priority": 2253,
+      "priority": 2267,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -390232,7 +390401,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
-      "priority": 2226,
+      "priority": 2240,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -402750,7 +402919,8 @@
         "wirkpfad",
         "wirkungstraeger",
         "kognitive-dissonanz",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "id": "wirkmechanismus",
       "label": "Wirkmechanismus",
@@ -402789,7 +402959,7 @@
       "category": "Grundbegriff",
       "sourceSection": "Vorwirkung und Wirkpfad",
       "glossaryOrderKey": "Wirkmechanismus",
-      "priority": 2201,
+      "priority": 2215,
       "officialSources": [
         "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-40a9d42ab436/"
       ],
@@ -402826,7 +402996,8 @@
         "wirkpfad",
         "wirkungstraeger",
         "kognitive-dissonanz",
-        "resignifikation"
+        "resignifikation",
+        "katechon"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -403589,7 +403760,7 @@
         "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026|/quellenarchiv/wok-g-40a9d42ab436/"
       ],
       "pageUrl": "/begriffe/wirkstoff/",
-      "priority": 2198,
+      "priority": 2212,
       "status": "woek-praezisierungsbegriff",
       "version": "1.0",
       "category": "Grundbegriff",
@@ -407044,7 +407215,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2195,
+      "priority": 2209,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -409295,7 +409466,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2175,
+      "priority": 2189,
       "curatedSources": [],
       "sourceLinks": [],
       "deprecatedUsage": [],
@@ -410407,7 +410578,7 @@
         "OECD DAC Criteria, Impact|/quellenarchiv/wok-q-0329/"
       ],
       "pageUrl": "/begriffe/wirkungsblindheit/",
-      "priority": 2229,
+      "priority": 2243,
       "status": "approved",
       "version": "2.0",
       "category": "Grundbegriff",
@@ -413389,7 +413560,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsdilemma",
-      "priority": 2268,
+      "priority": 2282,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -420606,7 +420777,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsintegrität",
-      "priority": 2255,
+      "priority": 2269,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -423434,7 +423605,7 @@
         "United Nations: Sustainable Development Goals|/quellenarchiv/wok-q-0024/"
       ],
       "pageUrl": "/begriffe/wirkungslenkung/",
-      "priority": 2492,
+      "priority": 2506,
       "status": "approved",
       "version": "1.0",
       "category": "Steuerungsbegriff",
@@ -424220,7 +424391,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2241,
+      "priority": 2255,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -429069,6 +429240,7 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
+        "katechon",
         "ausloeser",
         "iooi",
         "wirkungsnachweis"
@@ -429255,6 +429427,7 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
+        "katechon",
         "ausloeser",
         "iooi",
         "wirkungsnachweis"
@@ -429881,7 +430054,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2505,
+      "priority": 2519,
       "officialSources": [
         "WOeK Begriffsleitfaden fuehrend v1.5|/quellenarchiv/wok-g-e6ede1ac4941/"
       ],
@@ -431329,7 +431502,7 @@
         "WOeK Begriffsleitfaden fuehrend v1.5|/quellenarchiv/wok-g-e6ede1ac4941/"
       ],
       "pageUrl": "/begriffe/wirkungsradar/",
-      "priority": 2504,
+      "priority": 2518,
       "status": "woek-praegungsbegriff",
       "version": "1.5",
       "category": "Architekturbegriff",
@@ -433241,7 +433414,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsrelevanz statt Rechtsform",
-      "priority": 2228,
+      "priority": 2242,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -435447,6 +435620,7 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
+        "katechon",
         "ausloeser",
         "wirkmechanismus",
         "iooi",
@@ -435638,6 +435812,7 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
+        "katechon",
         "ausloeser",
         "wirkmechanismus",
         "iooi",
@@ -436364,7 +436539,7 @@
         "Die Wirkungsökonomie als lernendes Kreislaufsystem|/quellenarchiv/wok-q-0729/"
       ],
       "pageUrl": "/begriffe/wirkungsrueckkopplung/",
-      "priority": 2483,
+      "priority": 2497,
       "status": "approved",
       "version": "1.0",
       "category": "Grundbegriff",
@@ -437679,7 +437854,7 @@
         "Product Environmental Footprint|/quellenarchiv/wok-q-0302/"
       ],
       "pageUrl": "/begriffe/wirkungssteuer/",
-      "priority": 2240,
+      "priority": 2254,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Steuern, Preise & Rückkopplung",
@@ -438218,7 +438393,7 @@
         "Product Environmental Footprint|/quellenarchiv/wok-q-0302/"
       ],
       "pageUrl": "/begriffe/wirkungssteuergesetz/",
-      "priority": 2243,
+      "priority": 2257,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Recht, Steuern & Wirkungsarchitektur",
@@ -439174,7 +439349,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungstragung",
-      "priority": 2252,
+      "priority": 2266,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -440022,7 +440197,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2188,
+      "priority": 2202,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -447028,7 +447203,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2211,
+      "priority": 2225,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -447868,7 +448043,7 @@
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
       "pageUrl": "/begriffe/wstg/",
-      "priority": 2244,
+      "priority": 2258,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Recht, Steuern & Wirkungsarchitektur",
@@ -450201,7 +450376,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "WÖk-Methodenpräzisierung 2026-08-21",
       "glossaryOrderKey": "Zielbezug und Wirkung",
-      "priority": 2219,
+      "priority": 2233,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
