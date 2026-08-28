@@ -1,10 +1,10 @@
 {
-  "base_main_commit": "b0209e26bbc93d89070bc89e0c83df7d4ab0269f",
+  "base_main_commit": "9ada1a33c6fca94f0bb4b5ce45fd17a9686b9d9c",
   "blocking_lanes": {
     "berlin": {
       "fach": {
-        "descriptor_sha256": "166ba55c9e841ec5f3bf1b6f8ce293190382e716da74b9ef9d673a70e56e2e85",
-        "file_sha256": "e89a614d0db20ab82979c09c7483815cbc39a35cf3dbc12ee2142501b26726f4",
+        "descriptor_sha256": "fe0a4fe47c2fef1290c00bceb93b913ed750d8df14a54ede33cf38420694bc06",
+        "file_sha256": "293f73ea1242dd1b2ece2e88b5616982cd0e09f9def4634f5b918ae9bf81ed1e",
         "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
       },
       "gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
@@ -12,9 +12,9 @@
       "programme_analysis_complete": 3,
       "programme_analysis_open": 9,
       "remaining_exact_effect_object_count": null,
-      "remaining_exact_effect_objects_identified": 13,
-      "remaining_review_envelopes": 1258,
-      "remaining_review_scopes": 1271,
+      "remaining_exact_effect_objects_identified": 22,
+      "remaining_review_envelopes": 1256,
+      "remaining_review_scopes": 1278,
       "source": {
         "descriptor_sha256": "ced556b03cd2f470ef39ac9d8da4717f301241b19e646c1123a52780820c035c",
         "file_sha256": "29f088e153613129cedaba91f4e6eb2da0f9554f8a0961a065a849328eadc36c",
@@ -63,7 +63,7 @@
     "score_synthesized": false,
     "vercel_action_triggered": false
   },
-  "descriptor_sha256": "d7584aa69bee769c475599a4f17b38f6d395361913131369007a420c0dff478b",
+  "descriptor_sha256": "7f810e030473dddcb620086066ae9a9a4a5f0a43e1e7a608f2b899772e306194",
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
   "historical_production_golden_state": {
     "disposition": "IMMUTABLE_HISTORICAL_RELEASE_EVIDENCE_NOT_CURRENT_READINESS",
