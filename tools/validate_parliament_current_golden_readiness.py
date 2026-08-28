@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
-BASE_MAIN_COMMIT = "44a57eecf44887941e504ea52723d247d2790f6a"
+BASE_MAIN_COMMIT = "1a0757682e8d2365eb28218816484c2e1e13d83e"
 
 HISTORICAL_GOLDEN = "ops/releases/parliament-github-golden-state-2026-08-23.json"
 ST_RELEASE = "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
@@ -103,6 +103,8 @@ def build() -> dict:
                 "programme_analysis_complete": berlin_fach["summary"]["programme_analysis_complete"],
                 "programme_analysis_open": berlin_fach["summary"]["programme_analysis_open"],
                 "remaining_review_envelopes": berlin_fach["summary"]["remaining_page_review_envelopes"],
+                "remaining_exact_effect_objects_identified": berlin_fach["summary"]["remaining_exact_effect_objects_identified"],
+                "remaining_review_scopes": berlin_fach["summary"]["remaining_review_scope_count"],
                 "remaining_exact_effect_object_count": berlin_fach["summary"]["remaining_exact_effect_object_count"],
                 "known_segmentation_defects": berlin_fach["summary"]["known_segmentation_defects"],
                 "gate": berlin_fach["summary"]["berlin_completion_gate"],
@@ -156,7 +158,7 @@ def validate(actual: dict, expected: dict) -> None:
     if actual["status"] != "FACH_RESIDUAL_OPEN":
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_FALSE_GREEN")
     berlin = actual["blocking_lanes"]["berlin"]
-    if (berlin["programme_analysis_complete"], berlin["programme_analysis_open"], berlin["remaining_review_envelopes"]) != (3, 9, 1267):
+    if (berlin["programme_analysis_complete"], berlin["programme_analysis_open"], berlin["remaining_review_envelopes"], berlin["remaining_exact_effect_objects_identified"], berlin["remaining_review_scopes"]) != (3, 9, 1262, 8, 1270):
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_BERLIN_TRUTH_DRIFT")
     mv = actual["blocking_lanes"]["mecklenburg_vorpommern"]
     if (mv["verified_final_programmes_requiring_truthful_residual"], mv["source_maturity_pending"]) != (12, 7):
@@ -188,6 +190,8 @@ def main() -> None:
         "berlin_programmes_terminal": actual["blocking_lanes"]["berlin"]["programme_analysis_complete"],
         "berlin_programmes_open": actual["blocking_lanes"]["berlin"]["programme_analysis_open"],
         "berlin_remaining_review_envelopes": actual["blocking_lanes"]["berlin"]["remaining_review_envelopes"],
+        "berlin_remaining_exact_effect_objects": actual["blocking_lanes"]["berlin"]["remaining_exact_effect_objects_identified"],
+        "berlin_remaining_review_scopes": actual["blocking_lanes"]["berlin"]["remaining_review_scopes"],
         "mv_programmes_requiring_truthful_residual": actual["blocking_lanes"]["mecklenburg_vorpommern"]["verified_final_programmes_requiring_truthful_residual"],
         "source_maturity_pending": actual["blocking_lanes"]["mecklenburg_vorpommern"]["source_maturity_pending"],
         "impact_visuals_approved": actual["protected_complete_lanes"]["sachsen_anhalt_impact_visuals"]["final_image_signoff_approved_count"],
