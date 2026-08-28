@@ -1,0 +1,217 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-1.0",
+  "handoff_id": "BE-BSW-P14-EXPLICIT-FACH-2026-V1",
+  "jurisdiction": "DE-BE",
+  "party": "BSW",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "physical_pdf_pages": [14],
+  "issue_comment_id": 5449003550,
+  "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5449003550",
+  "supersedes_only": "generic delegated-protocol terminal statuses from PR #313 for the 23 exact IDs enumerated here",
+  "records": [
+    {
+      "object_id": "BE-BSW-P14-U01-A01-32f04cf55937",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "DIAGNOSIS",
+      "classification_rationale": "declining quality/chancengerechtigkeit/cultural depth"
+    },
+    {
+      "object_id": "BE-BSW-P14-U01-A02-7c2e5b962681",
+      "fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "impact_direction": "OPEN",
+      "evidence_level": "NOT_ASSESSABLE",
+      "exact_reason": "This is only a direction-of-travel referring back to the preceding diagnosis; it contains no independently identifiable instrument, target population, competence path or causal mechanism. An ex-ante effect direction cannot be attributed to this atom without importing later measures."
+    },
+    {
+      "object_id": "BE-BSW-P14-U01-A03-0ee4316a55a6",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "GOAL",
+      "classification_rationale": "broad educational end-state/goal, not instrument"
+    },
+    {
+      "object_id": "BE-BSW-P14-U02-A01-5a428689fb54",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "GOAL",
+      "classification_rationale": "normative education objective, not instrument"
+    },
+    {
+      "object_id": "BE-BSW-P14-U02-A02-9d6abf35aa4a",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "verbindliche Inhalte, klare Leistungsstandards, überprüfbare Ergebnisse",
+      "impact_direction": "AMBIVALENT_POTENTIAL",
+      "evidence_level": "LOW_TO_MEDIUM / DESIGN_DEPENDENT",
+      "mechanism": "Clearer curriculum/expectations and feedback can improve instructional coherence and transparency; excessive standardisation/high-stakes measurement can narrow curriculum, induce teaching-to-test and disadvantage heterogeneous learning needs.",
+      "distribution": "Effects can differ by language background, disability/SEN, school resources and parental support.",
+      "material_risks": ["metric fixation", "curriculum narrowing", "workload", "inequitable consequences if standards are not paired with support"],
+      "reality_check": "Learning progress across domains, inequality gaps, student wellbeing, repetition/dropout and teacher workload; test scores alone are insufficient.",
+      "competence": "Primarily Berlin school/curriculum/quality governance, subject to constitutional/equal-treatment/inclusion requirements."
+    },
+    {
+      "object_id": "BE-BSW-P14-U02-A03-87d0024d8412",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "GOAL",
+      "classification_rationale": "desired learner transparency/self-assessment outcome; no independent instrument"
+    },
+    {
+      "object_id": "BE-BSW-P14-U04-A01-8a2d70e13c12",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "RATIONALE_DIAGNOSIS",
+      "classification_rationale": "rationale/diagnosis about early-childhood education"
+    },
+    {
+      "object_id": "BE-BSW-P14-U04-A02-10a1c689b60c",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "mandatory Kita attendance no later than age four",
+      "impact_direction": "AMBIVALENT_POSITIVE_POTENTIAL / HIGH_RIGHTS_AND_CAPACITY_DEPENDENCE",
+      "evidence_level": "MEDIUM_FOR_HIGH_QUALITY_EARLY_EDUCATION_BENEFIT; LOWER_FOR_MANDATE_AS_INSTRUMENT",
+      "mechanism": "Earlier/common participation can increase access to language, social and cognitive support and reduce unequal starting conditions.",
+      "material_risks": ["coercion/family autonomy", "insufficient Kita places or quality", "staffing shortages", "unsuitable provision for disability/health needs", "enforcement burden", "unequal penalties/access barriers"],
+      "noncompensation_guard": "Participation quantity cannot compensate for low process quality, safeguarding or inclusion.",
+      "reality_check": "Actual participation of previously underreached groups, process quality/staff ratios, language/development trajectories, exclusions/exemptions, family burden and later school-entry gaps.",
+      "required_safeguard": "Capacity first; transparent exemptions/accommodations and accessible high-quality provision."
+    },
+    {
+      "object_id": "BE-BSW-P14-U04-A03-d7a0917bb651",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "RATIONALE",
+      "classification_rationale": "claimed mechanism/outcome rationale child of U04-A02, not separate action",
+      "relations": [{"type": "RATIONALE_CHILD_OF", "object_id": "BE-BSW-P14-U04-A02-10a1c689b60c"}]
+    },
+    {
+      "object_id": "BE-BSW-P14-U05-A01-b35dc265d983",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "regular language diagnostics from age three",
+      "impact_direction": "POSITIVE_POTENTIAL_WITH_DIAGNOSTIC_AND_SUPPORT_GUARDS",
+      "evidence_level": "MEDIUM / IMPLEMENTATION_DEPENDENT",
+      "mechanism": "Earlier identification can trigger timely language support before school entry.",
+      "material_risks": ["screening without support capacity", "misclassification/multilingual bias", "labelling", "repeated testing burden", "data/privacy issues"],
+      "reality_check": "Diagnostic validity across languages, referral-to-support completion, waiting time, subsequent language development and false-positive/negative rates.",
+      "required_safeguard": "Diagnostics are useful only if linked to qualified support and do not become exclusion/selection proxies."
+    },
+    {
+      "object_id": "BE-BSW-P14-U05-A02-e849956a3d27",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "Stadtteilmütter/Integrationslotsen mediate family–Kita–school relationships and strengthen parental involvement",
+      "impact_direction": "POSITIVE_ACCESS_AND_NAVIGATION_POTENTIAL",
+      "evidence_level": "LOW_TO_MEDIUM / LOCAL_DELIVERY_DEPENDENT",
+      "mechanism": "Trusted outreach can reduce information/language/institutional barriers and improve take-up/continuity of support.",
+      "material_risks": ["insecure/underqualified roles", "substitution for professional services", "uneven district coverage", "unclear referral/accountability", "privacy boundaries"],
+      "distribution": "Potentially strongest for families facing language, trust, poverty or navigation barriers.",
+      "reality_check": "Reach of previously underreached families, successful referrals, sustained participation, family trust and child-support continuity; contact counts alone are output."
+    },
+    {
+      "object_id": "BE-BSW-P14-U06-A01-b97839675ab0",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "reintroduce a binding preschool phase focused on language, numeracy and social learning",
+      "impact_direction": "POSITIVE_POTENTIAL_WITH_CAPACITY_AND_RIGHTS_GUARDS",
+      "evidence_level": "MEDIUM_FOR_STRUCTURED_EARLY_LEARNING; IMPLEMENTATION_UNCERTAIN",
+      "mechanism": "Structured preparation can reduce school-entry skill gaps if high quality and targeted to actual needs.",
+      "material_risks": ["duplication with Kita/school transition structures", "curricular overformalisation", "staff/capacity pressure", "inappropriate one-size-fits-all requirements"],
+      "relations": [{"type": "DISTINCT_IMPLEMENTATION_CROSS_LINK_NO_DOUBLE_COUNT", "object_id": "BE-BSW-P14-U04-A02-10a1c689b60c"}],
+      "reality_check": "School-entry competencies, distribution gaps, attendance/reach, quality, staff burden and transition continuity."
+    },
+    {
+      "object_id": "BE-BSW-P14-U06-A02-2d642881e2ed",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "RATIONALE",
+      "classification_rationale": "normative rationale for early-childhood education, not separate action"
+    },
+    {
+      "object_id": "BE-BSW-P14-U08-A01-1b9fc3a5047f",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "GOAL",
+      "classification_rationale": "equality goal, not instrument"
+    },
+    {
+      "object_id": "BE-BSW-P14-U08-A02-aec2a6fd59e7",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "DIAGNOSIS",
+      "classification_rationale": "need/diagnosis for disadvantaged-area schools, not instrument"
+    },
+    {
+      "object_id": "BE-BSW-P14-U08-A03-72c3f94db79e",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "multi-year support programme for schools in disadvantaged locations with additional funds, training and fully qualified staff",
+      "impact_direction": "POSITIVE_DISTRIBUTIVE_POTENTIAL / HIGH_DELIVERY_DEPENDENCE",
+      "evidence_level": "MEDIUM",
+      "mechanism": "Additional targeted resources and staff capacity can improve learning/support conditions where need is concentrated.",
+      "key_condition": "Genuine additionality and needs-based allocation; funding alone is input.",
+      "material_risks": ["inability to recruit/retain qualified staff", "stigma/threshold gaming", "short programme horizon", "administrative burden", "resource displacement from other high-need schools"],
+      "reality_check": "Qualified staffing/retention, instructional/support quality, learning and participation gaps, absenteeism, school climate and distribution by need over multiple years."
+    },
+    {
+      "object_id": "BE-BSW-P14-U09-A01-f479381e73b6",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "distribution quotas at transition to primary school based on differing German-language proficiency within districts",
+      "impact_direction": "AMBIVALENT_HIGH_MATERIALITY / RIGHTS_AND_IMPLEMENTATION_SENSITIVE",
+      "evidence_level": "LOW_TO_MEDIUM / CONTEXT_DEPENDENT",
+      "mechanism": "Reducing concentration of language-support needs may improve peer mixing and distribute support demands more evenly.",
+      "material_risks": ["family-choice/nearby-school conflicts", "longer travel", "instability of peer/community ties", "administrative complexity", "proxy discrimination", "displacement rather than improvement of school quality"],
+      "protected_interest_guard": "Language proficiency must not become an ethnic/origin proxy; transparent lawful criteria, proportionality, accommodations and appeal are material.",
+      "reality_check": "Segregation indices, travel distances, family burden, allocation/appeal outcomes, school-level support resources and learning/integration outcomes."
+    },
+    {
+      "object_id": "BE-BSW-P14-U09-A02-a3baceeeb59b",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "GOAL_RATIONALE",
+      "classification_rationale": "anti-segregation goal/rationale child of U09-A01",
+      "relations": [{"type": "GOAL_RATIONALE_CHILD_OF", "object_id": "BE-BSW-P14-U09-A01-f479381e73b6"}]
+    },
+    {
+      "object_id": "BE-BSW-P14-U09-A03-b0c6c37e4816",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "students ‘nicht deutscher Herkunft’ distributed more evenly across classes in the district",
+      "impact_direction": "AMBIVALENT_HIGH_RIGHTS_RISK",
+      "evidence_level": "LOW / LEGAL_AND_DESIGN_DEPENDENT",
+      "distinct_boundary": "This is not treated as a harmless duplicate of U09-A01 because the criterion changes from language proficiency to origin.",
+      "material_risks": ["origin-based allocation can create unequal treatment/stigmatisation", "origin is not equivalent to measured language-support need"],
+      "required_fach_boundary": "No positive effect claim without a lawful, proportionate, non-discriminatory design tied to actual educational need.",
+      "relations": [{"type": "CHILD_CLARIFICATION_WITH_DISTINCT_RIGHTS_RISK", "object_id": "BE-BSW-P14-U09-A01-f479381e73b6"}],
+      "reality_check": "Actual allocation criterion, equal-treatment/legal review, appeals, distribution/travel effects and educational outcomes."
+    },
+    {
+      "object_id": "BE-BSW-P14-U09-A04-428d76856044",
+      "fach_status": "EXPLICIT_FACH_APPROVED",
+      "policy": "integrate schools more strongly into neighbourhoods, linking school, culture, neighbourhood and social services",
+      "impact_direction": "POSITIVE_COORDINATION_AND_SOCIAL_INFRASTRUCTURE_POTENTIAL",
+      "evidence_level": "LOW_TO_MEDIUM / DELIVERY_DEPENDENT",
+      "mechanism": "Easier referrals/shared spaces/relationships can reduce institutional fragmentation and improve access to support/community resources.",
+      "material_risks": ["added coordination workload", "unclear responsibility/data sharing", "uneven neighbourhood capacity", "substitution of school resources for wider social-service deficits"],
+      "reality_check": "Completed referrals/support access, participation of vulnerable groups, school staff workload, continuity of services and neighbourhood disparities; number of partnerships alone is output."
+    },
+    {
+      "object_id": "BE-BSW-P14-U10-A01-55c5bc0469a3",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "FRAMING",
+      "classification_rationale": "broad education/social-development framing"
+    },
+    {
+      "object_id": "BE-BSW-P14-U10-A02-173a6ad2f189",
+      "fach_status": "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED",
+      "context_kind": "GOAL",
+      "classification_rationale": "broad community/cohesion goal"
+    },
+    {
+      "object_id": "BE-BSW-P14-U10-A03-e1fdb0d11f03",
+      "fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "impact_direction": "OPEN",
+      "evidence_level": "NOT_ASSESSABLE",
+      "exact_reason": "The source names a desired administrative condition but no concrete administrative change, process, resource shift, accountability rule or implementation mechanism. It is therefore not sufficiently specified for an object-level effect assessment; later concrete administrative measures must be evaluated separately."
+    }
+  ],
+  "accounting": {
+    "source_atoms": 23,
+    "EXPLICIT_FACH_APPROVED": 9,
+    "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 2,
+    "NON_EFFECT_CONTEXT_OR_GOAL_REVIEWED": 12,
+    "OPEN": 0,
+    "gate": "BE_BSW_P14_FACH_COMPLETE_PASS_SOURCE_BOUND_EXPLICIT_REVIEW"
+  },
+  "constraints": {
+    "dns_mapping_created": false,
+    "recommendation_created": false,
+    "score_created": false,
+    "other_page_terminalized": false
+  }
+}

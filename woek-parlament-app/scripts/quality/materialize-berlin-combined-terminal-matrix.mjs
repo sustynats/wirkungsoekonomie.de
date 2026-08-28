@@ -507,22 +507,10 @@ export function buildBerlinCombinedTerminalMatrix() {
 }
 
 function main() {
-  const check = process.argv.includes('--check');
-  const matrix = buildBerlinCombinedTerminalMatrix();
-  const encoded = `${JSON.stringify(matrix, null, 2)}\n`;
-  if (check) {
-    assert.equal(fs.readFileSync(OUTPUT_PATH, 'utf8'), encoded, 'combined Berlin terminal matrix is not deterministic/current');
-  } else {
-    fs.writeFileSync(OUTPUT_PATH, encoded);
-  }
-  process.stdout.write(`${JSON.stringify({
-    status: 'PASS',
-    mode: check ? 'DETERMINISM_CHECK' : 'MATERIALIZE',
-    programmes: matrix.summary.programme_analysis_complete,
-    residual: matrix.summary.remaining_genuine_fach_review_required,
-    terminal_source_objects: matrix.summary.terminal_source_objects,
-    descriptor_sha256: matrix.descriptor_sha256,
-  }, null, 2)}\n`);
+  throw new Error(
+    'Historical Berlin Combined-v2 materialization is disabled: it contains a rejected false 12/12 terminal claim. ' +
+    'Use materialize-berlin-fach-truth-residual.mjs and berlin-2026-v3.json.',
+  );
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

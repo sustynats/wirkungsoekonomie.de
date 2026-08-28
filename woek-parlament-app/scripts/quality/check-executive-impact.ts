@@ -142,12 +142,13 @@ const adapters = ["sachsen-anhalt", "government", "parliament", "eu", "from-over
 assert.doesNotMatch(adapters, /directionFor\(paths\.map|materiality\(caseMateriality\)|keywords?|party identity|Parte[iy]name/i);
 const saxonyAnhaltAdapter = text("lib/executive-impact/sachsen-anhalt.ts");
 assert.match(saxonyAnhaltAdapter, /programmeProjection\(sourceKey\)/);
-assert.match(saxonyAnhaltAdapter, /bottom_line: projection\.bottom_line/);
+assert.match(saxonyAnhaltAdapter, /bottom_line: editorial\.overallLabel/);
+assert.match(saxonyAnhaltAdapter, /why_it_matters: editorial\.impactCoreSummary/);
 assert.match(saxonyAnhaltAdapter, /projection\.terminal_effect_mechanisms/);
 assert.match(saxonyAnhaltAdapter, /APPROVED_MATERIALITY_SELECTION/);
 assert.match(text("lib/executive-impact/sachsen-anhalt.ts"), /assessment_label: communication\.overview_assessment_label/);
 assert.doesNotMatch(saxonyAnhaltAdapter, /centralAssessments\)\.slice\(0,\s*[34]\)|first four|erste[nr]? vier/i);
-assert.match(text("lib/executive-impact/government.ts"), /function aggregateDirection/);
+assert.match(text("lib/executive-impact/government.ts"), /direction: "OPEN"/);
 assert.match(text("lib/executive-impact/government.ts"), /overall_materiality: record\.materiality\.level/);
 assert.match(text("lib/executive-impact/parliament.ts"), /materiality: "OPEN" as const/);
 

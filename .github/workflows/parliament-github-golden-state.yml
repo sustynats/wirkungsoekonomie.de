@@ -8,7 +8,9 @@ on:
       - "audit-manifests/sachsen-anhalt/cdu-final-convergence-freeze-v1.json"
       - "audit-manifests/sachsen-anhalt/gruene-final-union-c17.json"
       - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
       - "tools/validate_parliament_github_golden_state.py"
+      - "tools/validate_parliament_current_golden_readiness.py"
       - "tools/validate_st_six_party_terminal_release.py"
       - "tools/validate_berlin_current_source_register.py"
       - "tools/validate_mv_current_source_register.py"
@@ -19,6 +21,9 @@ on:
       - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/**"
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
+      - "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
+      - "woek-parlament-app/scripts/quality/check-berlin-fach-truth-residual.mjs"
+      - "woek-parlament-app/scripts/quality/materialize-berlin-fach-truth-residual.mjs"
       - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
       - "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
@@ -37,7 +42,9 @@ on:
       - "audit-manifests/parliament-master-p0-2026-08-26.json"
       - "audit-manifests/sachsen-anhalt/impact-first-browser-*/**"
       - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
       - "tools/validate_parliament_github_golden_state.py"
+      - "tools/validate_parliament_current_golden_readiness.py"
       - "tools/validate_state_official_source_adapters.py"
       - "tools/validate_berlin_fach_content_residual.py"
       - "tools/validate_mv_fach_content_residual.py"
@@ -87,8 +94,10 @@ jobs:
         run: python3 tools/validate_berlin_fach_content_residual.py
       - name: Validate Mecklenburg-Vorpommern full-programme terminal matrix
         run: python3 tools/validate_mv_fach_content_residual.py
-      - name: Validate combined commit-bound Golden State
+      - name: Validate immutable historical commit-bound Golden State
         run: python3 tools/validate_parliament_github_golden_state.py
+      - name: Validate current fail-closed Golden readiness
+        run: python3 tools/validate_parliament_current_golden_readiness.py
       - name: Validate 16-state official document-discovery adapters
         run: python3 tools/validate_state_official_source_adapters.py
       - name: Assert immutable validation

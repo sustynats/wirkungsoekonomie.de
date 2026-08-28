@@ -1,0 +1,102 @@
+{
+  "base_main_commit": "44a57eecf44887941e504ea52723d247d2790f6a",
+  "blocking_lanes": {
+    "berlin": {
+      "fach": {
+        "descriptor_sha256": "dc08e32cb508c578e937bd0cac02bc9978ac99722a823fd75d9e1f53dd32a0fe",
+        "file_sha256": "8bfb7e8cba3777a9f549371454b5848ed507045e4695b6242f4d1d323d857dcc",
+        "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
+      },
+      "gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
+      "known_segmentation_defects": 2,
+      "programme_analysis_complete": 3,
+      "programme_analysis_open": 9,
+      "remaining_exact_effect_object_count": null,
+      "remaining_review_envelopes": 1267,
+      "source": {
+        "descriptor_sha256": "ced556b03cd2f470ef39ac9d8da4717f301241b19e646c1123a52780820c035c",
+        "file_sha256": "29f088e153613129cedaba91f4e6eb2da0f9554f8a0961a065a849328eadc36c",
+        "path": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
+      },
+      "verified_final_programmes": 12
+    },
+    "mecklenburg_vorpommern": {
+      "current_exact_effect_object_residual": null,
+      "current_truth_matrix": "NOT_YET_MATERIALIZED_ORDERED_AFTER_BERLIN",
+      "gate": "FAIL_CLOSED_MV_FACH_TRUTH_REMEDIATION_REQUIRED_AFTER_BERLIN",
+      "rejected_false_terminal_matrix": {
+        "descriptor_sha256": "f5c0696f9e8c10ece572f26c7188cb97fa99f35a0ce7288d00960735e2523b71",
+        "disposition": "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY",
+        "file_sha256": "bb4253428a81b7d7cb1d1ed40aa51928b9d36267ebbfc9590568585260530d94",
+        "matrix_id": "MV-FACH-CONTENT-RESIDUAL-2026-V2",
+        "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-v2.json",
+        "rejected_generic_rnaa_count": 7494,
+        "rejected_verified_programmes_terminal": 12
+      },
+      "source": {
+        "descriptor_sha256": "c8d011d34c9633f791a35aee616ccb4c7b770948bfeba75b13c0fe58f1c13e95",
+        "file_sha256": "b3616b489ad21c07bb210d09bdba5c71a084bb03716a4fc4b4e6d9c02dede6e8",
+        "path": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
+      },
+      "source_maturity_pending": 7,
+      "verified_final_programmes": 12,
+      "verified_final_programmes_currently_proven_fach_terminal": 0,
+      "verified_final_programmes_requiring_truthful_residual": 12
+    }
+  },
+  "combined_release_gate": {
+    "github_golden_state_current": false,
+    "next_condition": "BERLIN_FACH_TERMINAL_THEN_MV_FACH_TERMINAL_THEN_SUPERSEDING_COMBINED_GITHUB_GOLDEN_STATE",
+    "no_new_vercel_build": true,
+    "owner_runtime_rc_request_allowed": false,
+    "parliament_release_approval": "NOT_GRANTED",
+    "vercel_build": false,
+    "vercel_deployment": false,
+    "vercel_preview": false
+  },
+  "constraints": {
+    "dns_synthesized": false,
+    "fach_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "vercel_action_triggered": false
+  },
+  "descriptor_sha256": "a5e55d39cead3b755b05067500fa512b5486073776c305bd745677a66e1deb92",
+  "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
+  "historical_production_golden_state": {
+    "disposition": "IMMUTABLE_HISTORICAL_RELEASE_EVIDENCE_NOT_CURRENT_READINESS",
+    "file_sha256": "12390141d5d3e6a5689c188f5ccafcd648e0402caec51fdf3efe2d7009a21a1d",
+    "path": "ops/releases/parliament-github-golden-state-2026-08-23.json",
+    "status": "COMBINED_GITHUB_GOLDEN_STATE"
+  },
+  "protected_complete_lanes": {
+    "sachsen_anhalt_impact_visuals": {
+      "case_scenario_count": 6,
+      "file_sha256": "0fae42247ac890865717fb33e7763fcb8dbdba346c91be6a62e9b7169a1f1fb9",
+      "final_image_signoff_approved_count": 12,
+      "manifest_sha256": "326b3b1369225f5f5e6b34f9d364fcfca43ec1ae3350e3752300ddccace84b4b",
+      "merge_commit": "a0f4b8ac7bd49c3c145003bb457627c897aea26a",
+      "path": "woek-parlament-app/data/impact-visuals/sachsen-anhalt-2026-v1.json",
+      "program_scenario_count": 6,
+      "record_count": 12,
+      "records_with_missing_approved_inputs": 0,
+      "status": "PASS_12_OF_12_ON_MAIN"
+    },
+    "sachsen_anhalt_six_party": {
+      "file_sha256": "c6d7ec4c0ad1e57ee1d5f41d7b20edc4c5b43a0c70acc7e5ea86d1aef1259b50",
+      "path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json",
+      "status": "TERMINAL_6_OF_6",
+      "terminal_party_count": 6
+    },
+    "same_page_navigation": {
+      "gate_file_sha256": "649904fcd1208dc83663b69bc5134ce88923073755487922a1478e5e1bdac87c",
+      "gate_path": "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs",
+      "issue": 282,
+      "merge_commit": "3dc36ece02fb52ba791ce4db23affc664f74f7f2",
+      "status": "PROTECTED_RELEASE_BLOCKING_REGRESSION_GATE"
+    }
+  },
+  "readiness_id": "WOEK-PARLIAMENT-CURRENT-GOLDEN-READINESS-2026-08-28",
+  "schema_version": "woek-parliament-current-golden-readiness-1.0",
+  "status": "FACH_RESIDUAL_OPEN"
+}

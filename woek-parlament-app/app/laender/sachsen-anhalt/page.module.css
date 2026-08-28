@@ -28,6 +28,12 @@
 .programmeCard header > p { margin: 0; color: var(--muted); font-size: .62rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
 .programmeCard h3 { margin: .28rem 0 0; font-size: clamp(.94rem, 1.35vw, 1.08rem); line-height: 1.13; }
 .programmeTitle { display: block; margin-top: .08rem; color: var(--muted); font-size: .66rem; line-height: 1.18; }
+.programmeCard :global(.public-maturity--compact) { padding: .35rem .5rem; }
+.programmeCard :global(.public-maturity--compact .public-maturity-icon),
+.programmeCard :global(.public-maturity--compact .public-maturity-heading .eyebrow),
+.programmeCard :global(.public-maturity--compact .public-maturity-hint) { display: none; }
+.programmeCard :global(.public-maturity--compact .public-maturity-heading) { grid-template-columns: minmax(0, 1fr); }
+.programmeCard :global(.public-maturity--compact .public-maturity-label) { font-size: .72rem; line-height: 1.2; }
 .mpd { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem; }
 .mpd div { display: grid; gap: 0; min-width: 0; padding: .27rem; border: 1px solid var(--line); border-radius: .5rem; background: var(--paper-warm); }
 .mpd div > span:first-child { color: var(--muted); font-size: .65rem; font-weight: 800; text-transform: uppercase; }
