@@ -1,0 +1,1460 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P34-P37-EXPLICIT-FACH-2026-V1",
+  "base_main_commit": "91dce3c60f90c1cab090ac9bd8ab4b3b01c704e1",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "authoritative_markdowns": [
+    {
+      "issue_comment_id": 5455124893,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5455124893",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p34-authoritative-handoff.md",
+      "file_sha256": "d756d9a73545014d4d86aeed96372de556a0389fe068c31bc19effdc617bed46"
+    },
+    {
+      "issue_comment_id": 5455153680,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5455153680",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p35-authoritative-handoff.md",
+      "file_sha256": "0d0ac6ad7d0c0402ff59ddad6107c9386c52796a727c7aa44bfbaccac0e46d52"
+    },
+    {
+      "issue_comment_id": 5455190042,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5455190042",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p36-authoritative-handoff.md",
+      "file_sha256": "cce6200d3666e06531a64c6f0f61ef775041f2707891662b50acea64c38091b8"
+    },
+    {
+      "issue_comment_id": 5455197085,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5455197085",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p37-authoritative-handoff.md",
+      "file_sha256": "f7ef696aae39482c7e5a18a4b035bd5a3786603a9cf7d4438b865cdd9b3eb838"
+    }
+  ],
+  "controller": {
+    "issue": 241,
+    "issue_comment_id": 5458291078,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5458291078"
+  },
+  "constraints": {
+    "fach_inferred_from_source": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "party_wide_judgement_synthesized": false
+  },
+  "coverage": {
+    "protected_fach_terminal_physical_scope": "P1-P33",
+    "segmented_physical_pages": [
+      34,
+      35,
+      36,
+      37
+    ],
+    "next_opaque_page_review_envelope_from": 38,
+    "next_opaque_page_review_envelope_through": 66,
+    "original_source_object_count": 69,
+    "original_terminal_record_count": 69,
+    "deterministic_terminal_record_count": 4,
+    "new_terminal_record_count": 73,
+    "active_terminal_review_leaf_count": 15,
+    "active_explicit_fach_approved_count": 10,
+    "active_reviewed_not_assessable_count": 5,
+    "versioned_parent_or_fragment_count": 14,
+    "new_exact_open_child_object_count": 19,
+    "carried_exact_open_child_object_count": 0,
+    "terminal_status_counts": {
+      "EXPLICIT_FACH_APPROVED": 10,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 5,
+      "NON_EFFECT_CONTEXT_REVIEWED": 44,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 14
+    },
+    "gate": "BE_BSW_P34_P37_CLEAN_RECORDS_TERMINAL_CHILD_FACH_PENDING"
+  },
+  "deterministic_child_contract": {
+    "id_rule": "stable structural prefix plus first 12 hex characters of SHA-256(exact UTF-8 deterministic source text)",
+    "source_span_basis": [
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+      "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT",
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    ],
+    "semantics_rule": "IDs, hashes, exact text spans/fragments and lineage are mechanical; Fach is copied only from the cited WÖk comments.",
+    "open_fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
+    "open_counts_as_effect_object": true,
+    "open_materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
+    "exact_reason": "The authoritative WÖk P34-P37 handoffs explicitly withhold child-level Fach for the deterministic policy children until exact IDs and source spans are returned to issue #240."
+  },
+  "source_objects": [
+    {
+      "object_id": "BE-BSW-P34-U01-A01-ebaf6dc518f3",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Zuwanderung und Integration Das BSW steht für eine gerechte und vernünftige Zuwanderungspolitik.",
+      "source_text_sha256": "ebaf6dc518f356ad18541fc1d134df9516486188d30dfef5bbd9ce25e8212be7"
+    },
+    {
+      "object_id": "BE-BSW-P34-U01-A02-013252e913d2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Es ist gerecht, allen deutschen Staatsbürgern unabhängig von ihrer ethnischen Herkunft und ihrer religiösen Bindung die gleichen Bildungs- und Berufschancen zu geben und die kulturelle Vielfalt unseres Landes zu stärken.",
+      "source_text_sha256": "013252e913d219adaa536be10716b2138685aaf5b0578a462edede677dafd9dd"
+    },
+    {
+      "object_id": "BE-BSW-P34-U01-A03-4a7c7a21e81f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Es ist vernünftig, die Zuwanderung nach Deutschland streng zu regulieren und rechtmäßige Asylbewerber zu Integrationsmaßnahmen zu verpflichten, die ihnen das Erlernen der sprachlichen und sozialen Rahmenbedingungen für ein gelingendes Leben in ihrer neuen Heimat ermöglichen.",
+      "source_text_sha256": "4a7c7a21e81fdae8dbca3334470ebde9857978d5b23a004b561206f7c217cecc"
+    },
+    {
+      "object_id": "BE-BSW-P34-U02-e0d8688ab58c",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 34,
+      "source_excerpt": "Das BSW verkörpert gerade in seiner Berliner Mitgliederbasis das soziale und politische Miteinander von Ost- und Westdeutschen mit deutscher Familiengeschichte und von Deutschen mit süd- und osteuropäischen, mit türkischen, persischen, ara…",
+      "source_text_sha256": "e0d8688ab58ca5eb555640d1cd379328d624d47f62ebea38dc07ec1ca78c7299"
+    },
+    {
+      "object_id": "BE-BSW-P34-U03-1f3a0804b88f",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 34,
+      "source_excerpt": "Für die Zuwanderungspolitische Wende",
+      "source_text_sha256": "1f3a0804b88ff05d69d706379a113ed4a6eda30a2fce640da7d03d55b81eaefe"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A01-390563286429",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Die bisherige Praxis der ungeregelten Zuwanderung lehnen wir grundsätzlich ab.",
+      "source_text_sha256": "390563286429c56ca6a3a3b337e78dc196409fc7022c7c49fcae3f1449f10653"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A02-4368c5f97dcb",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Ungeregelte Zuwanderung ist ungerecht und unvernünftig.",
+      "source_text_sha256": "4368c5f97dcbdd8fa1a232d7fcf9d3c3f194bf00fb5d101937f4c2649ea0bc89"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A03-d413794b7d2c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Sie überfordert die Kommunen.",
+      "source_text_sha256": "d413794b7d2cc32f7be777b26e10fff2809d830197778116aa9283acbb0c208d"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A04-dc2373a52b8c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Sie überlastet den Sozialstaat und die Justizbehörden.",
+      "source_text_sha256": "dc2373a52b8c21a372ad212adfb96264b0bacba271364328535274d83118b4a9"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A05-8d37f1dad8ed",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Sie verschärft die Notlage auf dem Wohnungsmarkt.",
+      "source_text_sha256": "8d37f1dad8ed4cafb4b860f34d2917c5f2fa5585ded126f59ef79f2605779940"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A06-58e65f30cb45",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Sie fördert Kriminalität und illegale Ausbeutungsverhältnisse.",
+      "source_text_sha256": "58e65f30cb4501356ad7aabb6f7328a8be4af8617b4097414056507bf6bc915b"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A07-63480e1a25e9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Sie führt zur Entstehung von Parallelgesellschaften, die den sozialen Zusammenhalt gefährden.",
+      "source_text_sha256": "63480e1a25e9d7ade030a4313f2c444564d8ad85d173d5f47a38f4db7805a3cb"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A08-7f596a9b4f60",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Die Praxis der ungeregelten Zuwanderung ist alles andere als human, solidarisch und ausländerfreundlich.",
+      "source_text_sha256": "7f596a9b4f607213115ab5545c69dad77d9eb4177d861521bd629d8ca13cc196"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A09-81911a5a0ca4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Sie zeugt von Verachtung und Gleichgültigkeit gegenüber Einwanderern.",
+      "source_text_sha256": "81911a5a0ca40f24c366e9b6aa4ac230901e5783bc3f0808ec4fd56228747e79"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A10-7662e1143dea",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_excerpt": "Kommt, wie ihr wollt, und seht zu, wo ihr bleibt: Das ist die Haltung privilegierter deutscher Politik-Eliten und weltferner Ideologen, die in ihrer eigenen Lebenswirklichkeit nie mit den realen Problemen der ungeregelten Zuwanderung in Be…",
+      "source_text_sha256": "7662e1143dea9611e6fdf6a6550b451278b76b0d831d7ebae614aedf5868d188"
+    },
+    {
+      "object_id": "BE-BSW-P34-U05-55f865ba7a94",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 34,
+      "source_excerpt": "Die BSW-Parlamentarier im EU-Parlament haben Anfang 2026 deshalb mit ihren Stimmen mit dafür gesorgt, dass die langjährige Blockade durch politische Mitbewerber aufgelöst werden konnte. Damit ist nun möglich, alle Asylverfahren in sicheren…",
+      "source_text_sha256": "55f865ba7a9426f8432b879b64376b1a4e0f799af10875738a347c5d168b6b9a"
+    },
+    {
+      "object_id": "BE-BSW-P34-U06-A01-1f6271cf3efe",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 34,
+      "source_text": "Wir fordern, dass die notwendigen Regelungen in Deutschland nun zügig umzusetzen sind, damit Zuwanderung künftig regelbasiert stattfindet und das menschenunwürdige Sterben auf den Fluchtrouten über das Mittelmeer und die Schlepper-Kriminalität enden.",
+      "source_text_sha256": "1f6271cf3efed96592d1ccab7b953065ef9dcbde00a9eda888614f8e9d4e364f"
+    },
+    {
+      "object_id": "BE-BSW-P34-U07-2e7a303452f4",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 34,
+      "source_excerpt": "Die Ursachen von Flucht und Vertreibung bekämpfen",
+      "source_text_sha256": "2e7a303452f49ed86591adea4515654b9a8efc8fc9d97a041ce5de8e7c7ab039"
+    },
+    {
+      "object_id": "BE-BSW-P34-U08-ff4884297f31",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 34,
+      "source_text": "Als konsequente Friedenspartei nehmen wir die geopolitischen Ursachen für Fluchtbewegungen nach Europa und Deutschland in den Blick. Alle Menschen hängen an der Heimat, in die sie geboren wurden. Krieg ist eine Hauptursache von Flucht. Durch verheerende Militäreinsätze, Regimewechsel-Provokationen und Wirtschaftsblockaden haben die USA und",
+      "source_text_sha256": "ff4884297f317a9eda3baaad86cded33ebbeb29381810a7c771b33dab35a0836"
+    },
+    {
+      "object_id": "BE-BSW-P35-U01-b28ccf18be76",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 35,
+      "source_text": "ihre europäischen Verbündeten besonders im Nahen und Mittleren Osten und in Afrika Millionen Menschen in die Flucht vor Krieg und Not getrieben. Mit den vielen Billionen, die für Rüstungsgüter verschwendet werden, könnte man die Armut in Deutschland und der Welt beseitigen und damit Fluchtursachen effektiv beseitigen.",
+      "source_text_sha256": "b28ccf18be765196d4cab2fb10033b808903f8b5c279608ac3f2c693fea7819b"
+    },
+    {
+      "object_id": "BE-BSW-P35-U02-A01-144afe534b24",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Das BSW hat sich auch deshalb gegründet, um den Widerstand gegen diesen zynischen Imperialismus, an dem die deutschen Regierungsparteien gegenwärtig mehr denn je beteiligt sind, politisch zu organisieren.",
+      "source_text_sha256": "144afe534b242e3b052865c8416ded86ca8f80f69ad4a8da1202348e045e4800"
+    },
+    {
+      "object_id": "BE-BSW-P35-U02-A02-3ae2e5e87be2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Wir durchschauen, warum rechte Überfremdungs-Demagogen und linksliberale Befürworter der ungeregelten Zuwanderung die wahren Ursachen der Fluchtbewegungen nach Europa und Deutschland nie benennen.",
+      "source_text_sha256": "3ae2e5e87be24e2ef63b45c08c76a4154bda11711449608521d4aa2fc2f650ac"
+    },
+    {
+      "object_id": "BE-BSW-P35-U02-A03-e05433797129",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Deshalb verbinden wir mit unserer Forderung nach regulierter Zuwanderung die ebenso nachdrückliche Forderung nach einer Abkopplung der deutschen und europäischen Außenpolitik von US-amerikanischer Außenpolitik.",
+      "source_text_sha256": "e05433797129e5de8548e543455c258291def9db2450c7618a8a07831320ece9"
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A01-e3b1a2fbcd1f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Die Beförderung von Kriegen in anderen Ländern, die die größte Fluchtursache darstellen, muss umgehend beendet werden.",
+      "source_text_sha256": "e3b1a2fbcd1f268cfabd09498772dd6dadc9f6324c405b37af880ffc43761c4e"
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A02-83211ee7a367",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Deutschland muss sich aktiv für die Bekämpfung von Fluchtursachen einsetzen.",
+      "source_text_sha256": "83211ee7a36778890fb28c4b124cf2047461467c6399f89a353ab2198d16023d"
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A03-6056d5b3c2a3",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Dazu gehören ein Stopp deutscher Rüstungsexporte, ein Stopp von Regimewechsel- und Wirtschaftskriegen und die Beendigung der Zerstörung und Plünderung von Wirtschafts- und Lebensgrundlagen im globalen Süden.",
+      "source_text_sha256": "6056d5b3c2a3f3af1f780f34ccfc5a65d4e4219651095e96d6af099e0a16e862"
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A04-9db2791a947f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Stattdessen setzt sich das BSW für eine aktive Entwicklungshilfe zur Bekämpfung der Fluchtursachen und der Verhinderung von Fluchtbewegungen ein.",
+      "source_text_sha256": "9db2791a947ffd9cdf8384d8710bcd0db3677884844bb4a7bbebe6d8f836616f"
+    },
+    {
+      "object_id": "BE-BSW-P35-U04-042f7b897074",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 35,
+      "source_excerpt": "Regelungen für die Zuwanderung nach Berlin verbessern",
+      "source_text_sha256": "042f7b8970745d08471fa538946d96deaafd6363255ac7d6d28f289ad5da7d73"
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A01-8bf731d9596d",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Das BSW wird sich im Berliner Abgeordnetenhaus dafür einsetzen, dass Zuwanderung streng reguliert wird.",
+      "source_text_sha256": "8bf731d9596d056ab186d4660d128859aa2aa73322116d6cb4b7b94c42b9ccc8"
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A02-4919ba04fe98",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Wer aus einem sicheren Drittstaat einreist, hat nach unserer Ansicht kein Recht auf ein Asylverfahren und auf soziale Leistungen.",
+      "source_text_sha256": "4919ba04fe9809df3aeaff567310663213bd9fa2d1c4d645e55c7e9de20ed9e5"
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A03-2437fcb67526",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Wir unterstützen Grenzkontrollen an allen deutschen Grenzen und die Zurückweisung an der Grenze, solange kein EU-weites Rückführungsabkommen existiert und solange es sich nicht um besonders schutzbedürftige Personen handelt.",
+      "source_text_sha256": "2437fcb675268a14004f92eb4d3980bae01bdfe9c49a35d07b9b9f7675614187"
+    },
+    {
+      "object_id": "BE-BSW-P35-U06-A01-3e584e14bfda",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Berlin als Hauptankunftsstadt darf mit der Bewältigung des Zustroms von Zuwanderern nicht länger allein gelassen werden.",
+      "source_text_sha256": "3e584e14bfdac20a57fa03ef4692c1fc752419d2a8fa69b5a89feef92704e10e"
+    },
+    {
+      "object_id": "BE-BSW-P35-U06-A02-bb584b44f652",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Asylbewerber müssen auch auf Unterkünfte in den anliegenden Bundesländern verteilt werden, die weit mehr Kapazitäten haben.",
+      "source_text_sha256": "bb584b44f6529a9f47742717243cca52c26bd3493e42ed1527859c58c2254793"
+    },
+    {
+      "object_id": "BE-BSW-P35-U07-A01-fec0db97a28c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Bei der Unterbringung von Asylbewerbern innerhalb Berlins müssen die Bezirke, die bislang am meisten geleistet haben, entlastet werden.",
+      "source_text_sha256": "fec0db97a28c7c9c9f0ece24f0ca1c3a1598d36d463ea9bba45054108b7c8a25"
+    },
+    {
+      "object_id": "BE-BSW-P35-U07-A02-ed76dccc6f02",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Die Verteilung der Asylbewerber darf nicht weiterhin ohne Ansehen der sozialräumlichen und demographischen Merkmale der Bezirke und der vorhandenen Infrastruktur erfolgen.",
+      "source_text_sha256": "ed76dccc6f0291457d54ee99618d8996a59be4de1f69595ac2f213c358f8b7fd"
+    },
+    {
+      "object_id": "BE-BSW-P35-U07-A03-c62ce5a5954a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Wir unterstützen die Idee, die Ansiedlung mit einem Infrastrukturzuschuss für den betroffenen Bezirk zu verbinden.",
+      "source_text_sha256": "c62ce5a5954aae4bb3e1fd461b72da740d8a77c62d64ed88757888efc9e1f2aa"
+    },
+    {
+      "object_id": "BE-BSW-P35-U08-7462813550bd",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 35,
+      "source_excerpt": "Integration in Gesellschaft und Arbeitsmarkt erleichtern",
+      "source_text_sha256": "7462813550bde8ea31e2dc9b090146cd038d0bf14b14685e3fe025aa66175282"
+    },
+    {
+      "object_id": "BE-BSW-P35-U09-A01-f3b06f224711",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Zugleich setzen wir uns für eine bessere Integration derjenigen, die über ein Aufenthaltsrecht in Deutschland verfügen, in unsere Gesellschaft und in den Arbeitsmarkt ein.",
+      "source_text_sha256": "f3b06f2247116f458a8ce42a22b94bd8581a481a4806d235bb87d862f114bb88"
+    },
+    {
+      "object_id": "BE-BSW-P35-U09-A02-1cb68b7edea5",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Die massiven Versäumnisse in der Integrationspolitik der vergangenen Jahrzehnte müssen dringend aufgearbeitet werden.",
+      "source_text_sha256": "1cb68b7edea5a6bfeaa97b96ba60f22a8a5476fff3f8932be9e1c8df8db7eac4"
+    },
+    {
+      "object_id": "BE-BSW-P35-U09-A03-007d8303f0a7",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 35,
+      "source_text": "Sowohl den Erwerb der deutschen Sprache als auch die Möglichkeit,",
+      "source_text_sha256": "007d8303f0a74ba1df8c424a78d8e913a2ec3d488b892b5213a835412d4dbe1c"
+    },
+    {
+      "object_id": "BE-BSW-P36-U01-2d6587086808",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 36,
+      "source_text": "einer Arbeitstätigkeit nachzugehen, halten wir für zwingend notwendige Voraussetzungen für eine gelingende Integration.",
+      "source_text_sha256": "2d658708680888b9eb8427754cfb72a7fed3fd6b43076af0d1bd2e575848bcac"
+    },
+    {
+      "object_id": "BE-BSW-P36-U02-A01-a09a76280950",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Wir befürworten, dass anerkannte Flüchtlinge eine an den Aufenthalt gebundene Arbeitserlaubnis erhalten, die ihnen frühzeitig eine berufliche Perspektive bietet und ihre Integration in unsere Gesellschaft ermöglicht.",
+      "source_text_sha256": "a09a76280950fd8a75bcb9e8e390e2daabcbb17b41cb7e4d9166231820d9afde"
+    },
+    {
+      "object_id": "BE-BSW-P36-U02-A02-e8049f05d2d4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Wir befürworten außerdem die erleichterte Anerkennung ausländischer Schul- und Berufsabschlüsse, wenn sie den deutschen Anforderungen entsprechen.",
+      "source_text_sha256": "e8049f05d2d40b29373dea0fa5f506bc3bd827f25fa203828dced6a8d4c0afa2"
+    },
+    {
+      "object_id": "BE-BSW-P36-U02-A03-232f19915bdf",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Bei systemrelevanten Berufen, in denen akuter Arbeitskräftemangel besteht, sollte ein beschleunigtes Verfahren ermöglicht werden.",
+      "source_text_sha256": "232f19915bdf805419db94586b25b267732df10b379147fa4a8745484f981233"
+    },
+    {
+      "object_id": "BE-BSW-P36-U03-A01-2638dbeb0f18",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Die Aufnahme von qualifizierten Fachkräften wollen wir vereinfachen und attraktiver gestalten, sofern in den Ländern, aus denen sie einwandern, kein Fachkräftemangel besteht oder durch die Abwanderung entsteht.",
+      "source_text_sha256": "2638dbeb0f1846e64ba786557ee9a31f414cc05e9249fd1e142a06033aad9af2"
+    },
+    {
+      "object_id": "BE-BSW-P36-U03-A02-f7d57520083c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Eine Abwerbung von Fachkräften ohne Rücksicht auf den dadurch möglicherweise entstehenden Mangel in den Herkunftsländern lehnen wir ab, denn sie ist kontraproduktiv und schafft Fluchtursachen.",
+      "source_text_sha256": "f7d57520083ca1d789df9cc94b4b0449f82fdafc9c77d1b9ed6978ffe359cd65"
+    },
+    {
+      "object_id": "BE-BSW-P36-U03-A03-f8320bd35fb3",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Höchste Priorität hat für uns die Umsetzung einer Ausbildungsoffensive in Deutschland, um Menschen mit und ohne Migrationshintergrund zu Fachkräften auszubilden und in den Arbeitsmarkt zu integrieren.",
+      "source_text_sha256": "f8320bd35fb36cb1ce89f81ca9ca38856929509da336a27ed1f3cee1d317f73e"
+    },
+    {
+      "object_id": "BE-BSW-P36-U04-A01-9a05993aa940",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Wir wollen, dass Zuwanderer umfassender als bisher in den Integrationskursen mit allen Aspekten des Zusammenlebens in Deutschland vertraut gemacht werden.",
+      "source_text_sha256": "9a05993aa94085811839bb1f1dda29f67c30e981e4d6b24db5411007a7bd9333"
+    },
+    {
+      "object_id": "BE-BSW-P36-U04-A02-eb81e66595d2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Rechte und Pflichten müssen deutlich herausgearbeitet und verbindlich vermittelt werden.",
+      "source_text_sha256": "eb81e66595d2cf7a344de9bf6f5518cee5cf2ba64b0ce8804799f6e0e9c2304b"
+    },
+    {
+      "object_id": "BE-BSW-P36-U05-5ca1d0be90ae",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 36,
+      "source_excerpt": "Vorschulische und schulische Integrationsmaßnahmen verbessern",
+      "source_text_sha256": "5ca1d0be90ae3b0a33c8ca4e4462539e477e28b47bf75dc49a7858d1e0fd7e97"
+    },
+    {
+      "object_id": "BE-BSW-P36-U06-A01-67f3886c039c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Wir setzen uns dafür ein, Kinder mit Zuwanderungshintergrund möglichst gleichmäßig auf Kitas und Grundschulen innerhalb eines Einzugsgebiets bzw. unmittelbar benachbarter Einzugsgebiete verteilen.",
+      "source_text_sha256": "67f3886c039ce3b78fac3848eb17fa7376a34bca2a7e7f04b5bebfcd36ecafef"
+    },
+    {
+      "object_id": "BE-BSW-P36-U06-A02-4d39a0b42181",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Der Spracherwerb im Kindesalter ist der Schlüssel zu schulischem und beruflichem Erfolg und zu gesellschaftlicher Teilhabe.",
+      "source_text_sha256": "4d39a0b42181ce20f358d5d8991f109000d90b881d15393d1640a465639db162"
+    },
+    {
+      "object_id": "BE-BSW-P36-U06-A03-9418bf6b4559",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Nur wenn Kinder ohne deutsche Sprachkenntnisse täglich mit einheimischen Kindern zusammenkommen, kann Sprache erlernt und Integration gefördert werden.",
+      "source_text_sha256": "9418bf6b4559daaf7ff69e3e71e14eff1c6bd2a402bcdc6e714b4dcf91eeea62"
+    },
+    {
+      "object_id": "BE-BSW-P36-U07-A01-0f78e7eacfff",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Wir stehen konsequent zum Grundsatz der Trennung von Staat und Religion.",
+      "source_text_sha256": "0f78e7eacfffd860593d7fff266809d18668f4148c144d72bff1782fdeb04f53"
+    },
+    {
+      "object_id": "BE-BSW-P36-U07-A02-08c2828079e3",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Religion und Weltanschauung sind Privatsache und genießen als solche den Schutz des Grundgesetzes (Art. 4 GG).",
+      "source_text_sha256": "08c2828079e3a692b73ee1ab15eea6931e9c2a443e7574ab44e4e02fe91a236d"
+    },
+    {
+      "object_id": "BE-BSW-P36-U07-A03-8c4ed99d65b2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Die aktive Verbreitung religiöser oder weltanschaulicher Lehren haben die jeweiligen Gemeinschaften selbständig und mit eigenen Mitteln außerhalb der Kernaufgaben des staatlichen Schulwesens zu organisieren.",
+      "source_text_sha256": "8c4ed99d65b21ca26e1dfaa4673a9510b887619d5bbb404fb25a9407e1d5c4b9"
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A01-457e8a16a9a4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Das gesamte Schulwesen steht unter der Aufsicht des Staates (Art. 7 Abs. 1 GG).",
+      "source_text_sha256": "457e8a16a9a4eaff12cb0e64a4693a0e0a8d1ae480741567178787feb2598ec3"
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A02-f0bc2abcf259",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "In Berlin bedeutet dies die volle Aufsicht des Landes Berlin über alle öffentlichen Schulen.",
+      "source_text_sha256": "f0bc2abcf2595dcecbfb7472af532467ab418b69b52f7777d39ece7f55800571"
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A03-a8aba87ea418",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Jeglicher bekenntnisorientierter Religions- oder Weltanschauungsunterricht – gleich welcher Gemeinschaft – darf daher nur unter strenger staatlicher Aufsicht stattfinden und muss von staatlich qualifiziertem und geprüftem Personal durchgeführt werden, dessen Qualifikation im Inland erworben oder in einem transparenten staatlichen Verfahren nachgewiesen und anerkannt ist.",
+      "source_text_sha256": "a8aba87ea4186464c9b84aa7244465d6eb8d4129cc081338ac2ebcc74f764467"
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A04-bb4674544904",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Dies schützt Kinder und Jugendliche wirksam vor einseitiger Indoktrination sowie vor Akteuren mit fachlich fragwürdiger Eignung.",
+      "source_text_sha256": "bb4674544904948657923e5e3c55b6843475583701bb74ed79aa0bae72f8e61b"
+    },
+    {
+      "object_id": "BE-BSW-P36-U09-A01-aae2cd8e0678",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Der Unterricht muss strikt im Einklang mit dem Grundgesetz, der Berliner Verfassung und den Werten einer offenen, demokratischen und säkularen Gesellschaft stehen.",
+      "source_text_sha256": "aae2cd8e067802501473c7e85731a3157e83abfdcf1ee4dff843dda379a864d5"
+    },
+    {
+      "object_id": "BE-BSW-P36-U09-A02-89ac72589831",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 36,
+      "source_text": "Jede Form von",
+      "source_text_sha256": "89ac72589831841893dcbad6df35b9631b52b46649b3301e7724bfa78a966936"
+    },
+    {
+      "object_id": "BE-BSW-P37-U01-A01-fd8ea9feb006",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 37,
+      "source_text": "Indoktrination, Fundamentalismus oder demokratiefeindlichen Einflüssen in Berliner Schulen lehnen wir ab – unabhängig von der religiösen oder weltanschaulichen Richtung.",
+      "source_text_sha256": "fd8ea9feb006fb7297652247a46e5ff438a647721e3c61295967981e3f2b07fa"
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A01-ca91cf10ffa9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 37,
+      "source_text": "Die zentrale Auseinandersetzung mit ethischen Fragen, Werten, Weltanschauungen und Religionen erfolgt im Pflichtfach Ethik/Lebenskunde.",
+      "source_text_sha256": "ca91cf10ffa9e216e35ef0e120bb8420f3009e0a8b262ac84fa9f2be0cdd02e0"
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A02-831a951bc0dd",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 37,
+      "source_text": "Dieses Fach ist personell deutlich zu stärken und interkulturell sowie werteorientiert zu profilieren.",
+      "source_text_sha256": "831a951bc0ddfb0e6beb6d2e3aa7981f8ac6c6403f4baeb2b3ed636987bb5d78"
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A03-f05c3c033f99",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 37,
+      "source_text": "Es vermittelt allen Schülerinnen und Schülern unabhängig von Herkunft oder Glauben der Eltern kritisches Denken, Toleranz und die Grundlagen einer freiheitlichen Gesellschaft.",
+      "source_text_sha256": "f05c3c033f996cba34ffe896d2c6c0cec949e3a21dfc55099384ca4029205b8d"
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A01-20864d54a611",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 37,
+      "source_text": "Vorurteile abbauen, Zusammenhalt fördern Rassistischer und ausländerfeindlicher Stimmungsmache stellen wir uns mit aller Kraft entgegen.",
+      "source_text_sha256": "20864d54a611debcfae900d4b3138e087e939afe669955bcfa0062801bb06823"
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A02-c3c48a13ed7c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 37,
+      "source_text": "Deshalb wollen wir kulturelle Begegnungen und integrative Stadtteilarbeit in den Berliner Kommunen fördern.",
+      "source_text_sha256": "c3c48a13ed7ca47715966762130d7742af73cf1af4193cbf283ea05883b3c68e"
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A03-455444779137",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 37,
+      "source_text": "Wir setzen uns für die Finanzierung von Nachbarschaftsprojekten, interkulturelle Festen und Sportvereinen ein, um Menschen mit und ohne Migrationshintergrund zusammenbringen und kulturelle Vorbehalte abzubauen.",
+      "source_text_sha256": "455444779137034fc5d062b0ccfe0eaab439fb797a914f507bd955c1638576f7"
+    }
+  ],
+  "original_records": [
+    {
+      "object_id": "BE-BSW-P34-U01-A01-ebaf6dc518f3",
+      "authoritative_terminal_fach_state": "NON_EFFECT_POLICY_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "POLICY_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P34-U01-A02-013252e913d2",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EQUAL_OPPORTUNITY_AND_DIVERSITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EQUAL_OPPORTUNITY_AND_DIVERSITY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P34-U01-A03-4a7c7a21e81f",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P34-U01-A03-C01-8fb42dccce50",
+        "BE-BSW-P34-U01-A03-C02-24666ef39b90"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P34-U02-e0d8688ab58c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTY_SELF_DESCRIPTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTY_SELF_DESCRIPTION"
+    },
+    {
+      "object_id": "BE-BSW-P34-U03-1f3a0804b88f",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A01-390563286429",
+      "authoritative_terminal_fach_state": "NON_EFFECT_POLICY_POSITION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "POLICY_POSITION"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A02-4368c5f97dcb",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_JUDGEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "NORMATIVE_JUDGEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A03-d413794b7d2c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_PROBLEM_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A04-dc2373a52b8c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_PROBLEM_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A05-8d37f1dad8ed",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_CAUSAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A06-58e65f30cb45",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_CAUSAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A07-63480e1a25e9",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_CAUSAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A08-7f596a9b4f60",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_JUDGEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "NORMATIVE_JUDGEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A09-81911a5a0ca4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTISAN_ATTRIBUTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTISAN_ATTRIBUTION"
+    },
+    {
+      "object_id": "BE-BSW-P34-U04-A10-7662e1143dea",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTISAN_ATTRIBUTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTISAN_ATTRIBUTION"
+    },
+    {
+      "object_id": "BE-BSW-P34-U05-55f865ba7a94",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_POLITICAL_PROCESS_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_POLITICAL_PROCESS_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P34-U06-A01-1f6271cf3efe",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P34-U06-A01-C01-8eb522a98d1b",
+        "BE-BSW-P34-U06-A01-C02-2e5145ec80c2",
+        "BE-BSW-P34-U06-A01-C03-a397002f69c0"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P34-U07-2e7a303452f4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P34-U08-ff4884297f31",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P34P35-U08U01-M01-b01ad56fb854"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P35-U01-b28ccf18be76",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P34P35-U08U01-M01-b01ad56fb854"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P35-U02-A01-144afe534b24",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTY_SELF_DESCRIPTION_AND_PARTISAN_ATTRIBUTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTY_SELF_DESCRIPTION_AND_PARTISAN_ATTRIBUTION"
+    },
+    {
+      "object_id": "BE-BSW-P35-U02-A02-3ae2e5e87be2",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTISAN_ATTRIBUTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTISAN_ATTRIBUTION"
+    },
+    {
+      "object_id": "BE-BSW-P35-U02-A03-e05433797129",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A01-e3b1a2fbcd1f",
+      "authoritative_terminal_fach_state": "NON_EFFECT_FOREIGN_POLICY_AND_FLIGHT_CAUSE_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FOREIGN_POLICY_AND_FLIGHT_CAUSE_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A02-83211ee7a367",
+      "authoritative_terminal_fach_state": "NON_EFFECT_POLICY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "POLICY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A03-6056d5b3c2a3",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P35-U03-A03-C01-44ae8ecadbf1",
+        "BE-BSW-P35-U03-A03-C02-fbd316ab8356",
+        "BE-BSW-P35-U03-A03-C03-8a860ca384da"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A04-9db2791a947f",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P35-U04-042f7b897074",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A01-8bf731d9596d",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A02-4919ba04fe98",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P35-U05-A02-C01-e9a3da6c8b28",
+        "BE-BSW-P35-U05-A02-C02-cf9d1a366e64"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A03-2437fcb67526",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P35-U05-A03-C01-ce8b40e2a122",
+        "BE-BSW-P35-U05-A03-C02-05f6953a9b41"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P35-U06-A01-3e584e14bfda",
+      "authoritative_terminal_fach_state": "NON_EFFECT_INTERGOVERNMENTAL_BURDEN_SHARING_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "INTERGOVERNMENTAL_BURDEN_SHARING_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P35-U06-A02-bb584b44f652",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P35-U07-A01-fec0db97a28c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SPATIAL_BURDEN_SHARING_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SPATIAL_BURDEN_SHARING_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P35-U07-A02-ed76dccc6f02",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P35-U07-A03-c62ce5a5954a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P35-U08-7462813550bd",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P35-U09-A01-f3b06f224711",
+      "authoritative_terminal_fach_state": "NON_EFFECT_INTEGRATION_AND_EMPLOYMENT_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "INTEGRATION_AND_EMPLOYMENT_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P35-U09-A02-1cb68b7edea5",
+      "authoritative_terminal_fach_state": "NON_EFFECT_ACCOUNTABILITY_AND_POLICY_REVIEW_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ACCOUNTABILITY_AND_POLICY_REVIEW_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P35-U09-A03-007d8303f0a7",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P35P36-U09U01-M01-0c7437b7a846"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P36-U01-2d6587086808",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P35P36-U09U01-M01-0c7437b7a846"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P36-U02-A01-a09a76280950",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CURRENT_LAW_RESTATEMENT_OR_UNCLEAR_ADDITIONALITY_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CURRENT_LAW_RESTATEMENT_OR_UNCLEAR_ADDITIONALITY"
+    },
+    {
+      "object_id": "BE-BSW-P36-U02-A02-e8049f05d2d4",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P36-U02-A03-232f19915bdf",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P36-U03-A01-2638dbeb0f18",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P36-U03-A02-f7d57520083c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_INTERNATIONAL_LEAKAGE_SAFEGUARD_AND_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "INTERNATIONAL_LEAKAGE_SAFEGUARD_AND_CAUSAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P36-U03-A03-f8320bd35fb3",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P36-U04-A01-9a05993aa940",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P36-U04-A02-eb81e66595d2",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CURRICULUM_SPECIFICATION_AND_RIGHTS_DUTIES_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CURRICULUM_SPECIFICATION_AND_RIGHTS_DUTIES_GUARD"
+    },
+    {
+      "object_id": "BE-BSW-P36-U05-5ca1d0be90ae",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P36-U06-A01-67f3886c039c",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P36-U06-A02-4d39a0b42181",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_CAUSAL_AND_GOAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_CAUSAL_AND_GOAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P36-U06-A03-9418bf6b4559",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRONG_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRONG_CAUSAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P36-U07-A01-0f78e7eacfff",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONSTITUTIONAL_POLICY_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONSTITUTIONAL_POLICY_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P36-U07-A02-08c2828079e3",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONSTITUTIONAL_POLICY_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONSTITUTIONAL_POLICY_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P36-U07-A03-8c4ed99d65b2",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A01-457e8a16a9a4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_LEGAL_CONTEXT_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "LEGAL_CONTEXT_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A02-f0bc2abcf259",
+      "authoritative_terminal_fach_state": "NON_EFFECT_LEGAL_CONTEXT_INTERPRETATION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "LEGAL_CONTEXT_INTERPRETATION"
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A03-a8aba87ea418",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P36-U08-A03-C01-318e137d361b",
+        "BE-BSW-P36-U08-A03-C02-16a25df52195"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A04-bb4674544904",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_SAFEGUARD_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EXPECTED_SAFEGUARD_OUTCOME_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P36-U09-A01-aae2cd8e0678",
+      "authoritative_terminal_fach_state": "NON_EFFECT_LEGAL_NORMATIVE_SAFEGUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "LEGAL_NORMATIVE_SAFEGUARD"
+    },
+    {
+      "object_id": "BE-BSW-P36-U09-A02-89ac72589831",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P36P37-U09U01-M01-ffbefb482534"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P37-U01-A01-fd8ea9feb006",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P36P37-U09U01-M01-ffbefb482534"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A01-ca91cf10ffa9",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A02-831a951bc0dd",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P37-U02-A02-C01-aba054933cc1",
+        "BE-BSW-P37-U02-A02-C02-7e4f408f03f5"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A03-f05c3c033f99",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_EDUCATIONAL_AND_COHESION_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EXPECTED_EDUCATIONAL_AND_COHESION_OUTCOME_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A01-20864d54a611",
+      "authoritative_terminal_fach_state": "NON_EFFECT_ANTI_DISCRIMINATION_AND_COHESION_POLICY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ANTI_DISCRIMINATION_AND_COHESION_POLICY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A02-c3c48a13ed7c",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A03-455444779137",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P37-U03-A03-C01-a470d3dda9ef",
+        "BE-BSW-P37-U03-A03-C02-101c6821194b",
+        "BE-BSW-P37-U03-A03-C03-e3da44214e09",
+        "BE-BSW-P37-U03-A03-C04-13fcd0525cec"
+      ]
+    }
+  ],
+  "deterministic_records": [
+    {
+      "parent_object_ids": [
+        "BE-BSW-P34-U08-ff4884297f31",
+        "BE-BSW-P35-U01-b28ccf18be76"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Als konsequente Friedenspartei nehmen wir die geopolitischen Ursachen für Fluchtbewegungen nach Europa und Deutschland in den Blick. Alle Menschen hängen an der Heimat, in die sie geboren wurden. Krieg ist eine Hauptursache von Flucht. Durch verheerende Militäreinsätze, Regimewechsel-Provokationen und Wirtschaftsblockaden haben die USA und ihre europäischen Verbündeten besonders im Nahen und Mittleren Osten und in Afrika Millionen Menschen in die Flucht vor Krieg und Not getrieben. Mit den vielen Billionen, die für Rüstungsgüter verschwendet werden, könnte man die Armut in Deutschland und der Welt beseitigen und damit Fluchtursachen effektiv beseitigen.",
+      "source_span": {
+        "start": 0,
+        "end": 661
+      },
+      "terminal_fach_state": "NON_EFFECT_GEOPOLITICAL_CAUSAL_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CROSS_PAGE_GEOPOLITICAL_CAUSAL_FRAME",
+      "object_kind": "DETERMINISTIC_CROSS_PAGE_SEMANTIC_REPLACEMENT",
+      "object_id": "BE-BSW-P34P35-U08U01-M01-b01ad56fb854",
+      "source_text_sha256": "b01ad56fb854bf2e464ec6864f7d65f2c7c820b9d1bce9f81e1bb32f65db4f9e",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U09-A03-007d8303f0a7",
+        "BE-BSW-P36-U01-2d6587086808"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Sowohl den Erwerb der deutschen Sprache als auch die Möglichkeit, einer Arbeitstätigkeit nachzugehen, halten wir für zwingend notwendige Voraussetzungen für eine gelingende Integration.",
+      "source_span": {
+        "start": 0,
+        "end": 185
+      },
+      "terminal_fach_state": "NON_EFFECT_INTEGRATION_PREREQUISITE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CROSS_PAGE_INTEGRATION_PREREQUISITE_CLAIM",
+      "object_kind": "DETERMINISTIC_CROSS_PAGE_SEMANTIC_REPLACEMENT",
+      "object_id": "BE-BSW-P35P36-U09U01-M01-0c7437b7a846",
+      "source_text_sha256": "0c7437b7a846a2d2f5774418d3e2790d3ceadc53c93c4e85ad5da8ae340fd555",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P36-U09-A02-89ac72589831",
+        "BE-BSW-P37-U01-A01-fd8ea9feb006"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Jede Form von Indoktrination, Fundamentalismus oder demokratiefeindlichen Einflüssen in Berliner Schulen lehnen wir ab – unabhängig von der religiösen oder weltanschaulichen Richtung.",
+      "source_span": {
+        "start": 0,
+        "end": 183
+      },
+      "terminal_fach_state": "NON_EFFECT_ANTI_INDOCTRINATION_AND_DEMOCRATIC_SCHOOL_SAFEGUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CROSS_PAGE_ANTI_INDOCTRINATION_AND_DEMOCRATIC_SCHOOL_SAFEGUARD",
+      "object_kind": "DETERMINISTIC_CROSS_PAGE_SEMANTIC_REPLACEMENT",
+      "object_id": "BE-BSW-P36P37-U09U01-M01-ffbefb482534",
+      "source_text_sha256": "ffbefb4825346c77d7fdb4d90b4f1e07eefdf67b27bd936b3477928b9cef6b9d",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P37-U03-A03-455444779137"
+      ],
+      "source_text": "um Menschen mit und ohne Migrationshintergrund zusammenbringen und kulturelle Vorbehalte abzubauen.",
+      "source_span": {
+        "start": 111,
+        "end": 210
+      },
+      "terminal_fach_state": "NON_EFFECT_SHARED_CONTACT_AND_PREJUDICE_REDUCTION_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SHARED_CONTACT_AND_PREJUDICE_REDUCTION_RATIONALE",
+      "object_kind": "DETERMINISTIC_SHARED_RATIONALE_REPLACEMENT",
+      "object_id": "BE-BSW-P37-U03-A03-C04-13fcd0525cec",
+      "source_text_sha256": "13fcd0525cecf02cfc03c7c4c5f9ac8a5c6fc1685cacbd70cb008b095e6d4e0f",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    }
+  ],
+  "deterministic_open_children": [
+    {
+      "parent_object_ids": [
+        "BE-BSW-P34-U01-A03-4a7c7a21e81f"
+      ],
+      "source_text": "die Zuwanderung nach Deutschland streng zu regulieren",
+      "source_span": {
+        "start": 19,
+        "end": 72
+      },
+      "child_role": "STRICT_REGULATORY_IMMIGRATION_POLICY_CLAUSE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P34-U01-A03-C01-8fb42dccce50",
+      "source_text_sha256": "8fb42dccce5092cfaa9b56b33574fe8b1dad57f8dcc1c85b4984a1d9c96e04df",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P34-U01-A03-4a7c7a21e81f"
+      ],
+      "source_text": "rechtmäßige Asylbewerber zu Integrationsmaßnahmen zu verpflichten, die ihnen das Erlernen der sprachlichen und sozialen Rahmenbedingungen für ein gelingendes Leben in ihrer neuen Heimat ermöglichen",
+      "source_span": {
+        "start": 77,
+        "end": 274
+      },
+      "child_role": "INTEGRATION_MEASURES_OBLIGATION_AND_LANGUAGE_SOCIAL_PURPOSE_CLAUSE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P34-U01-A03-C02-24666ef39b90",
+      "source_text_sha256": "24666ef39b905e399408239cbc50a3abce8f19da7f420123581743918af5f143",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P34-U06-A01-1f6271cf3efe"
+      ],
+      "source_text": "Wir fordern, dass die notwendigen Regelungen in Deutschland nun zügig umzusetzen sind",
+      "source_span": {
+        "start": 0,
+        "end": 85
+      },
+      "child_role": "FEDERAL_GERMAN_IMPLEMENTATION_DEMAND",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P34-U06-A01-C01-8eb522a98d1b",
+      "source_text_sha256": "8eb522a98d1b2ecf3197b17d321e139ff39754993a73baf7c3d9681322e42ba6",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P34-U06-A01-1f6271cf3efe"
+      ],
+      "source_text": "Zuwanderung künftig regelbasiert stattfindet",
+      "source_span": {
+        "start": 93,
+        "end": 137
+      },
+      "child_role": "RULE_BASED_IMMIGRATION_TARGET_STATE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P34-U06-A01-C02-2e5145ec80c2",
+      "source_text_sha256": "2e5145ec80c20f5d35f4c18f85a5b6fbc2f4234b8bd1c318be49b171e660c63e",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P34-U06-A01-1f6271cf3efe"
+      ],
+      "source_text": "das menschenunwürdige Sterben auf den Fluchtrouten über das Mittelmeer und die Schlepper-Kriminalität enden",
+      "source_span": {
+        "start": 142,
+        "end": 249
+      },
+      "child_role": "FLIGHT_ROUTE_DEATHS_AND_SMUGGLING_CRIME_CLAIMED_OUTCOME",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P34-U06-A01-C03-a397002f69c0",
+      "source_text_sha256": "a397002f69c03e4668d01bbd2a5c09bb68314e1861d74b483641e68eec7a8b42",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U03-A03-6056d5b3c2a3"
+      ],
+      "source_text": "ein Stopp deutscher Rüstungsexporte",
+      "source_span": {
+        "start": 13,
+        "end": 48
+      },
+      "child_role": "STOP_GERMAN_ARMS_EXPORTS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P35-U03-A03-C01-44ae8ecadbf1",
+      "source_text_sha256": "44ae8ecadbf11bae1032ec6f9a4bb00454b169b3d29e17e22352dba556c07510",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U03-A03-6056d5b3c2a3"
+      ],
+      "source_text": "ein Stopp von Regimewechsel- und Wirtschaftskriegen",
+      "source_span": {
+        "start": 50,
+        "end": 101
+      },
+      "child_role": "STOP_REGIME_CHANGE_AND_ECONOMIC_WARS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P35-U03-A03-C02-fbd316ab8356",
+      "source_text_sha256": "fbd316ab8356614fad1204390891597ed498057f4f05e81ad90dbeca029b7959",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U03-A03-6056d5b3c2a3"
+      ],
+      "source_text": "die Beendigung der Zerstörung und Plünderung von Wirtschafts- und Lebensgrundlagen im globalen Süden",
+      "source_span": {
+        "start": 106,
+        "end": 206
+      },
+      "child_role": "END_DESTRUCTION_AND_PLUNDERING_OF_GLOBAL_SOUTH_LIVELIHOODS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P35-U03-A03-C03-8a860ca384da",
+      "source_text_sha256": "8a860ca384da9153d4fda412e12ec89ff874be70bb9012c930baed5b98bece25",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U05-A02-4919ba04fe98"
+      ],
+      "source_text": "Wer aus einem sicheren Drittstaat einreist, hat nach unserer Ansicht kein Recht auf ein Asylverfahren",
+      "source_span": {
+        "start": 0,
+        "end": 101
+      },
+      "child_role": "SAFE_THIRD_COUNTRY_ASYLUM_PROCEDURE_ADMISSIBILITY_EXCLUSION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P35-U05-A02-C01-e9a3da6c8b28",
+      "source_text_sha256": "e9a3da6c8b28907bd7b8c2d4931ab6aada96fc522573c5b8229368c01c28a7ca",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U05-A02-4919ba04fe98"
+      ],
+      "source_text": "Wer aus einem sicheren Drittstaat einreist, hat nach unserer Ansicht kein Recht auf soziale Leistungen",
+      "source_segments": [
+        {
+          "start": 0,
+          "end": 79
+        },
+        {
+          "start": 106,
+          "end": 128
+        }
+      ],
+      "source_segment_joiner": " ",
+      "child_role": "SAFE_THIRD_COUNTRY_SOCIAL_BENEFIT_EXCLUSION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P35-U05-A02-C02-cf9d1a366e64",
+      "source_text_sha256": "cf9d1a366e6419f2ff17f265843418d6c5d4dda6d1d9b8e8b6a8e18ee3b77f82",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U05-A03-2437fcb67526"
+      ],
+      "source_text": "Wir unterstützen Grenzkontrollen an allen deutschen Grenzen",
+      "source_span": {
+        "start": 0,
+        "end": 59
+      },
+      "child_role": "BORDER_CONTROLS_AT_ALL_GERMAN_BORDERS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P35-U05-A03-C01-ce8b40e2a122",
+      "source_text_sha256": "ce8b40e2a12253510b6bc92c292205f04ef1c84c793b7d2faed3f80ffd4b9f66",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P35-U05-A03-2437fcb67526"
+      ],
+      "source_text": "die Zurückweisung an der Grenze, solange kein EU-weites Rückführungsabkommen existiert und solange es sich nicht um besonders schutzbedürftige Personen handelt",
+      "source_span": {
+        "start": 64,
+        "end": 223
+      },
+      "child_role": "BORDER_REJECTION_WITH_RETURN_AGREEMENT_AND_VULNERABILITY_CONDITIONS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P35-U05-A03-C02-05f6953a9b41",
+      "source_text_sha256": "05f6953a9b41f3e4fe9bb79b1db7208884c94ca0e6225ae523c997705b410be6",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P36-U08-A03-a8aba87ea418"
+      ],
+      "source_text": "Jeglicher bekenntnisorientierter Religions- oder Weltanschauungsunterricht – gleich welcher Gemeinschaft – darf daher nur unter strenger staatlicher Aufsicht stattfinden",
+      "source_span": {
+        "start": 0,
+        "end": 169
+      },
+      "child_role": "STRICT_STATE_OVERSIGHT_REQUIREMENT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P36-U08-A03-C01-318e137d361b",
+      "source_text_sha256": "318e137d361b2864ad453259319e9561c23a37781b1133d9a59a0e74d8575f59",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P36-U08-A03-a8aba87ea418"
+      ],
+      "source_text": "Jeglicher bekenntnisorientierter Religions- oder Weltanschauungsunterricht – gleich welcher Gemeinschaft – muss von staatlich qualifiziertem und geprüftem Personal durchgeführt werden, dessen Qualifikation im Inland erworben oder in einem transparenten staatlichen Verfahren nachgewiesen und anerkannt ist.",
+      "source_segments": [
+        {
+          "start": 0,
+          "end": 106
+        },
+        {
+          "start": 174,
+          "end": 373
+        }
+      ],
+      "source_segment_joiner": " ",
+      "child_role": "STATE_QUALIFIED_AND_VETTED_PERSONNEL_REQUIREMENT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P36-U08-A03-C02-16a25df52195",
+      "source_text_sha256": "16a25df52195c219ffffe5325b883a86a286deeb4fbd2ec5a541a6b25b0c1233",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P37-U02-A02-831a951bc0dd"
+      ],
+      "source_text": "Dieses Fach ist personell deutlich zu stärken",
+      "source_span": {
+        "start": 0,
+        "end": 45
+      },
+      "child_role": "SUBJECT_STAFFING_RESOURCE_INCREASE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P37-U02-A02-C01-aba054933cc1",
+      "source_text_sha256": "aba054933cc1d3323d6713e0dd381122ab830c182db8490f3d2a1e46a6c0a1ac",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P37-U02-A02-831a951bc0dd"
+      ],
+      "source_text": "Dieses Fach ist interkulturell sowie werteorientiert zu profilieren.",
+      "source_segments": [
+        {
+          "start": 0,
+          "end": 15
+        },
+        {
+          "start": 50,
+          "end": 102
+        }
+      ],
+      "source_segment_joiner": " ",
+      "child_role": "INTERCULTURAL_AND_VALUE_ORIENTED_CURRICULUM_PROFILE_CHANGE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P37-U02-A02-C02-7e4f408f03f5",
+      "source_text_sha256": "7e4f408f03f5540eab114751873f67f07deb5ace49fde695386f37dc2af97c4d",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P37-U03-A03-455444779137"
+      ],
+      "source_text": "Wir setzen uns für die Finanzierung von Nachbarschaftsprojekten ein",
+      "source_segments": [
+        {
+          "start": 0,
+          "end": 39
+        },
+        {
+          "start": 40,
+          "end": 63
+        },
+        {
+          "start": 106,
+          "end": 109
+        }
+      ],
+      "source_segment_joiner": " ",
+      "child_role": "NEIGHBOURHOOD_PROJECT_FUNDING_CHANNEL",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P37-U03-A03-C01-a470d3dda9ef",
+      "source_text_sha256": "a470d3dda9ef67548c4f1d057d6350b156bbb327efd57e1bcb51819acc45165e",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P37-U03-A03-455444779137"
+      ],
+      "source_text": "Wir setzen uns für die Finanzierung von interkulturelle Festen ein",
+      "source_segments": [
+        {
+          "start": 0,
+          "end": 39
+        },
+        {
+          "start": 65,
+          "end": 87
+        },
+        {
+          "start": 106,
+          "end": 109
+        }
+      ],
+      "source_segment_joiner": " ",
+      "child_role": "INTERCULTURAL_FESTIVAL_FUNDING_CHANNEL",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P37-U03-A03-C02-101c6821194b",
+      "source_text_sha256": "101c6821194b6f08a418e590f613453f1ba9fb47b95b6da38bcc87be3c8cfac6",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P37-U03-A03-455444779137"
+      ],
+      "source_text": "Wir setzen uns für die Finanzierung von Sportvereinen ein",
+      "source_segments": [
+        {
+          "start": 0,
+          "end": 39
+        },
+        {
+          "start": 92,
+          "end": 105
+        },
+        {
+          "start": 106,
+          "end": 109
+        }
+      ],
+      "source_segment_joiner": " ",
+      "child_role": "SPORT_CLUB_FUNDING_CHANNEL",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P37-U03-A03-C03-e3da44214e09",
+      "source_text_sha256": "e3da44214e098618e2fdde5c06f24420084ea6c70c45f7891797107abdaf539a",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    }
+  ]
+}
