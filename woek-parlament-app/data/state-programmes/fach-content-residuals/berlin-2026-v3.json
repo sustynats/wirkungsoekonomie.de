@@ -1,11 +1,11 @@
 {
-  "schema_version": "woek-berlin-fach-content-residual-3.1",
+  "schema_version": "woek-berlin-fach-content-residual-3.2",
   "matrix_id": "BE-FACH-CONTENT-RESIDUAL-2026-V3",
   "jurisdiction": "DE-BE",
   "election": "agh-2026-be",
   "issue": 240,
-  "base_main_commit": "1a0757682e8d2365eb28218816484c2e1e13d83e",
-  "source_as_of": "2026-08-28T11:48:57+02:00",
+  "base_main_commit": "272c427673c3b1da847af5294ed744c84c2b85cd",
+  "source_as_of": "2026-08-28T12:45:41+02:00",
   "status": "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12",
   "controller_authority": {
     "authoritative_dod": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5448629781",
@@ -23,7 +23,7 @@
     "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
     "file_sha256": "ac531ff8f32d0256acbb62dc92a16c225a05c3f929c497089b69938d8a04e8c1",
     "descriptor_sha256": "62b7d4940491a3a1aca35a494b0ee8bbf2d3608bd871c73de2725aa7bae17cf5",
-    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW pp. 1-19 advance only through explicit issue #240 handoffs, with eight P19 split children left openly unassessed."
+    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW pp. 1-21 advance only through explicit issue #240 handoffs."
   },
   "accepted_incremental_handoffs": [
     {
@@ -70,6 +70,34 @@
         18,
         19
       ]
+    },
+    {
+      "handoff_id": "BE-BSW-P19-CLOSURE-P21-EXPLICIT-FACH-2026-V1",
+      "issue_comment_ids": [
+        5451527622,
+        5451533796,
+        5451555353,
+        5451565159
+      ],
+      "issue_comment_urls": [
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159"
+      ],
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-explicit-v1.json",
+      "file_sha256": "1268ad95af5987f2e0e5ef07e0a983616a8a26ec728afb7ae7fcc1566d941d09",
+      "authoritative_markdown_path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+      "authoritative_markdown_file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c",
+      "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+      "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+      "exact_terminal_object_count": 39,
+      "exact_open_child_object_count": 0,
+      "physical_pdf_pages": [
+        19,
+        20,
+        21
+      ]
     }
   ],
   "rejected_predecessor": {
@@ -109,7 +137,7 @@
     "next_step": "Segment source-bound; classify context versus effect objects; consume only explicit object-level Fach or object-specific RNAA handoffs.",
     "effect_object_count_before_segmentation": null,
     "missing_effect_object_count_interpretation": "UNKNOWN_NOT_ZERO",
-    "exact_source_bound_effect_objects_already_identified": 8
+    "exact_source_bound_effect_objects_already_identified": 0
   },
   "known_segmentation_defects": [
     {
@@ -167,16 +195,16 @@
       "CDU",
       "Die Linke"
     ],
-    "remaining_genuine_fach_review_required": 1270,
-    "remaining_review_scope_count": 1270,
-    "remaining_page_review_envelopes": 1262,
-    "remaining_exact_effect_objects_identified": 8,
+    "remaining_genuine_fach_review_required": 1260,
+    "remaining_review_scope_count": 1260,
+    "remaining_page_review_envelopes": 1260,
+    "remaining_exact_effect_objects_identified": 0,
     "remaining_exact_effect_object_count": null,
-    "terminal_source_objects": 266,
+    "terminal_source_objects": 305,
     "terminal_status_counts": {
-      "EXPLICIT_FACH_APPROVED": 128,
+      "EXPLICIT_FACH_APPROVED": 151,
       "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 46,
-      "NON_EFFECT_CONTEXT_REVIEWED": 78,
+      "NON_EFFECT_CONTEXT_REVIEWED": 94,
       "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 14
     },
     "known_segmentation_defects": 2,
@@ -189,19 +217,19 @@
       "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
       "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
       "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-      "segmentation_state": "PARTIAL_TERMINAL_WITH_EXACT_OBJECTS_AND_REVIEW_ENVELOPES_OPEN",
+      "segmentation_state": "PARTIAL_TERMINAL_WITH_REVIEW_ENVELOPES_OPEN",
       "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
       "programme_analysis_complete": false,
-      "terminal_object_count": 198,
+      "terminal_object_count": 237,
       "terminal_status_counts": {
-        "EXPLICIT_FACH_APPROVED": 92,
+        "EXPLICIT_FACH_APPROVED": 115,
         "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 14,
-        "NON_EFFECT_CONTEXT_REVIEWED": 78,
+        "NON_EFFECT_CONTEXT_REVIEWED": 94,
         "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 14
       },
-      "remaining_review_envelope_count": 47,
-      "remaining_exact_object_count": 8,
-      "remaining_review_scope_count": 55,
+      "remaining_review_envelope_count": 45,
+      "remaining_exact_object_count": 0,
+      "remaining_review_scope_count": 45,
       "terminal_objects": [
         {
           "object_id": "BE-BSW-P01-CONTEXT",
@@ -3571,31 +3599,759 @@
             "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
             "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
           }
+        },
+        {
+          "object_id": "BE-BSW-P19-U01-A02-C01-992a21f6297f",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
+          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Projektfonds Kulturelle Bildung.",
+          "source_text_sha256": "992a21f6297fc5f936cb4817470af916a853a7dc2307b6dce38a712434ff85c8",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U01-A02-811d08843ce4"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U01-A02-C01-992a21f6297f",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P19-U01-A02-C02-31ad0fd27481",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
+          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Jugendkulturinitiative.",
+          "source_text_sha256": "31ad0fd274814b3e8bcc3d3bac9bdafda7d4d898566be348fc43d7776d93d27b",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U01-A02-811d08843ce4"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U01-A02-C02-31ad0fd27481",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P19-U01-A02-C03-54c77aef7b53",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
+          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Fonds für Ausstellungsvergütung Bildender Künstler.",
+          "source_text_sha256": "54c77aef7b534679d7715f9fcf435942281236888658e09462f06db9919bbb4f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U01-A02-811d08843ce4"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U01-A02-C03-54c77aef7b53",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P19-U01-A02-C04-616958496a0d",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
+          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Berliner Projektfonds Urbane Praxis.",
+          "source_text_sha256": "616958496a0d55856c855e6624e682284ff968b70a4485158c48ba4621017323",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U01-A02-811d08843ce4"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U01-A02-C04-616958496a0d",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P19-U01-A02-C05-7088dc49b909",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
+          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Arbeitsraumprogramm für Künstlerateliers.",
+          "source_text_sha256": "7088dc49b909f43e834f4f15594c33f65e6fa134621d261ea755d5520316c346",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U01-A02-811d08843ce4"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U01-A02-C05-7088dc49b909",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P19-U01-A02-C06-6796c889eec8",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
+          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Programme Draußen & Umsonst (Initiative Draußenstadt).",
+          "source_text_sha256": "6796c889eec838a6a103638ab3f6488d04c7ba48ff1e89e5ea35588cfb31cc2e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U01-A02-811d08843ce4"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U01-A02-C06-6796c889eec8",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P19-U02-A01-C01-389fbaff19ac",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 2, effect atom 1 of 1",
+          "source_excerpt": "Wir befürworten den Erhalt und die Sanierung der Berliner Stadtbibliothek und der Amerika- Gedenkbibliothek.",
+          "source_text_sha256": "389fbaff19acbea817bc4c8f60fea01194cdc38ae74c4a860f7f5f875d424246",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U02-A01-7630428800e8"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-BIBLIOTHEKEN-KOMISCHE-OPER-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U02-A01-C01-389fbaff19ac",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P19-U02-A01-C02-cc9e28e20af3",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 2, effect atom 1 of 1",
+          "source_excerpt": "Wir befürworten die zügige Sanierung der Komischen Oper ohne Belastung ihres künstlerischen Etats.",
+          "source_text_sha256": "cc9e28e20af3c18e0aa0591524ae2342c366599d8a28e9b54f4d02316f4b83da",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
+          "parent_object_ids": [
+            "BE-BSW-P19-U02-A01-7630428800e8"
+          ],
+          "repair_id": "BE-BSW-SEG-P19-BIBLIOTHEKEN-KOMISCHE-OPER-V1",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451527622; exact object BE-BSW-P19-U02-A01-C02-cc9e28e20af3",
+          "decision_kind": "P19_DETERMINISTIC_CHILD_EXPLICIT_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P20-U01-389150595ae3",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 20 of 66, normalized source unit 1",
+          "source_excerpt": "Neue Impulse für die Berliner Kulturpolitik",
+          "source_text_sha256": "389150595ae3d1f86a5d520fa5ecd2a973fe3db8decaa5896f4ed7c89af4ec9f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451533796; exact object BE-BSW-P20-U01-389150595ae3",
+          "decision_kind": "STRUCTURAL_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P20-U02-A02-3a5f681eb2bd",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 20 of 66, normalized source unit 2, effect atom 2 of 3",
+          "source_excerpt": "Städte wie Leipzig oder Hamburg haben solche Stadtkuratoren bereits erfolgreich eingesetzt.",
+          "source_text_sha256": "3a5f681eb2bdf01f049d06a5b7dda4290437475e9853ecb7a5d4e04e407fcc0e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451533796; exact object BE-BSW-P20-U02-A02-3a5f681eb2bd",
+          "decision_kind": "EVIDENTIARY_OR_BENCHMARK_CLAIM_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P20-U02-A03-edfe7a25adc3",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 20 of 66, normalized source unit 2, effect atom 3 of 3",
+          "source_excerpt": "Die Stadt Berlin eröffnet für diese Rolle ein noch viel weiter gefasstes Feld für die kuratorische Nutzung.",
+          "source_text_sha256": "edfe7a25adc32aa0298ae01e15c240f98ed4c2e42469be274f025e0b6dc46db7",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451533796; exact object BE-BSW-P20-U02-A03-edfe7a25adc3",
+          "decision_kind": "SCOPE_OR_RATIONALE_CLAIM_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P20-U02-A01-de357d5d33c6",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 20 of 66, normalized source unit 2, effect atom 1 of 3",
+          "source_excerpt": "Wir setzen einen Stadtkurator ein, der freien Künstlern und Künstlergruppen bestimmte Orte und Räume im Stadtraum zeitlich begrenzt für ihre kreativen Projekte zur Verfügung stellt.",
+          "source_text_sha256": "de357d5d33c657de70ddd3cba31b12c547d63b508681d9f13d0c70c8043f9cb0",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451533796; exact object BE-BSW-P20-U02-A01-de357d5d33c6",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P20-U03-A01-ee7f0a51385c",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 20 of 66, normalized source unit 3, effect atom 1 of 1",
+          "source_excerpt": "Wir nehmen bei kulturellen Projektförderungen digitale Entwicklungen in den Blick und unterstützen insbesondere solche Projekte, die den konstruktiven oder destruktiven Einfluss Künstlicher Intelligenz auf Kunst und Gesellschaft verhandeln.",
+          "source_text_sha256": "ee7f0a51385cfda67e0f732c04bc9264b202c7986a511fd048a34831a1d10f4d",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451533796; exact object BE-BSW-P20-U03-A01-ee7f0a51385c",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P20-U04-A01-4c41a7968338",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 20 of 66, normalized source unit 4, effect atom 1 of 1",
+          "source_excerpt": "Wir schlagen vor, dass Opern-, Konzert- und Ausstellungshäuser ihre Foyers und Eingangsbereiche auch außerhalb der Veranstaltungszeiten öffentlich zugänglich machen, als Orte der kreativen Nutzung, des Dialogs und des gemeinschaftlichen Au…",
+          "source_text_sha256": "4c41a7968338bb62be72f44996ade8567b7bfaf2f243fdfb30e8a23b4a10b6e3",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451533796; exact object BE-BSW-P20-U04-A01-4c41a7968338",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P20-U05-A01-f34fa33aa2af",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 20 of 66, normalized source unit 5, effect atom 1 of 1",
+          "source_excerpt": "Wir setzen uns grundsätzlich dafür ein, den kunstschöpferischen Aktivitäten in Berlin und den Kunsterfahrungen in Berlin möglichst viele der noch verbleibenden nichtkommerziellen Räume zu sichern.",
+          "source_text_sha256": "f34fa33aa2af30848fa2e7fe78af7b4cc94b07103e2387bb9281445cf48704e0",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451533796; exact object BE-BSW-P20-U05-A01-f34fa33aa2af",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U01-A01-94dbd608a8ca",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 1, effect atom 1 of 3",
+          "source_excerpt": "Gesundheitswesen Wir wollen das solidarische Gesundheitswesen stärken, statt es weiter kaputtzusparen.",
+          "source_text_sha256": "94dbd608a8ca5ca358a13ed90c8f71999dbb7c11a814bc3d9ada804607b0d5ba",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U01-A01-94dbd608a8ca",
+          "decision_kind": "GOAL_FRAME_OUTCOME_OR_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U01-A02-367ca8842a6f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 1, effect atom 2 of 3",
+          "source_excerpt": "Die Zwei-Klassen-Medizin muss beendet werden.",
+          "source_text_sha256": "367ca8842a6f4204fb52acf406be6704b6d06a82098c2bbbd402a440dc4868be",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U01-A02-367ca8842a6f",
+          "decision_kind": "GOAL_FRAME_OUTCOME_OR_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U01-A03-1cdb03a3d8cd",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 1, effect atom 3 of 3",
+          "source_excerpt": "Alle Menschen sollen unabhängig von Einkommen, Herkunft oder Versicherungsstatus denselben Zugang zu einer hochwertigen medizinischen Versorgung haben.",
+          "source_text_sha256": "1cdb03a3d8cdc87cfe9874236374afafac224a8aa4f843b794a53b054bca3b64",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U01-A03-1cdb03a3d8cd",
+          "decision_kind": "GOAL_FRAME_OUTCOME_OR_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U02-A03-43a26d029820",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 2, effect atom 3 of 3",
+          "source_excerpt": "Damit entlasten wir Bürger mit kleinen und mittleren Einkommen.",
+          "source_text_sha256": "43a26d02982015c7df1ff27fef822228859640561f5bc7af25fa6bcb2ac82378",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U02-A03-43a26d029820",
+          "decision_kind": "GOAL_FRAME_OUTCOME_OR_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U04-A01-ac1eec664748",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 4, effect atom 1 of 2",
+          "source_excerpt": "Das Gesundheitswesen muss sich am Bedarf der Menschen orientieren, nicht an Gewinninteressen.",
+          "source_text_sha256": "ac1eec66474860ced5ef8551cbceceea6bbb9b18273f2b3749105ee1ca115b16",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U04-A01-ac1eec664748",
+          "decision_kind": "GOAL_FRAME_OUTCOME_OR_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U04-A02-d6a0af7c56be",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 4, effect atom 2 of 2",
+          "source_excerpt": "Dafür werden wir uns im Berliner Abgeordnetenhaus einsetzen.",
+          "source_text_sha256": "d6a0af7c56bee7d8e5fbe8f25fb903e0b369ad8a9f19b54146bcbeb707ded2f1",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U04-A02-d6a0af7c56be",
+          "decision_kind": "GOAL_FRAME_OUTCOME_OR_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U05-003361897d7b",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 5",
+          "source_excerpt": "Krankenhäuser planvoll nutzen",
+          "source_text_sha256": "003361897d7b6a7af102ecbb9659d789ce97c21419d5382b0a011f0292e6c2a8",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U05-003361897d7b",
+          "decision_kind": "GOAL_FRAME_OUTCOME_OR_HEADING_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U02-A01-457e26fdf6b5",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 2, effect atom 1 of 3",
+          "source_excerpt": "Deshalb strebt das BSW eine Bürgerversicherung als einheitliches Krankenversicherungssystem an, in die alle Bürger einzahlen, auch Beamte und Besserverdiener.",
+          "source_text_sha256": "457e26fdf6b57d18ea8b9dc4b78bc079b36a32f49b6b92d38e3cc3aa66c6fb6e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U02-A01-457e26fdf6b5",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U02-A02-003a34945f58",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 2, effect atom 2 of 3",
+          "source_excerpt": "Die Beitragsbemessungsgrenze und die Grenzen für die Versicherungspflicht wollen wir anheben.",
+          "source_text_sha256": "003a34945f5817fd14c55f0e73d56ffa1add74d8926e98243df60601fa883c94",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U02-A02-003a34945f58",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U03-A01-c5fa2277a3a8",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 3, effect atom 1 of 2",
+          "source_excerpt": "Wir wollen neu verbeamteten Mitarbeitern des Landes zukünftig statt der Beihilfe einen festen Betrag als Arbeitgeberzuschuss für eine GKV auszahlen.",
+          "source_text_sha256": "c5fa2277a3a87661263264bd6808ee63a1f1aefb02c5c0ddde3451bf5eab52ae",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U03-A01-c5fa2277a3a8",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U03-A02-3f6559c4ef79",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 3, effect atom 2 of 2",
+          "source_excerpt": "Die Voraussetzungen für eine private Krankenversicherung werden für Beamte an die für Angestellte und Selbstständige angepasst.",
+          "source_text_sha256": "3f6559c4ef79d8eca03e07c3e4c600aba3aab8eb73d5d61672501e71be85e88d",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451555353; exact object BE-BSW-P21-U03-A02-3f6559c4ef79",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U06-A02-076a00782c7d",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 6, effect atom 2 of 6",
+          "source_excerpt": "Krankenhäuser sind keine Unternehmen, sondern Orte der Heilung und Pflege.",
+          "source_text_sha256": "076a00782c7d6b048e41137627e8d7b4f4ee54d9f1ad5f8294b936b0e3383875",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U06-A02-076a00782c7d",
+          "decision_kind": "NORMATIVE_GOAL_SAFEGUARD_OR_SYSTEM_CONTEXT_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U06-A04-bf32baa4052f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 6, effect atom 4 of 6",
+          "source_excerpt": "Ziel ist eine wohnortnahe, mit dem ÖPNV erreichbare und qualitativ hochwertige stationäre Versorgung.",
+          "source_text_sha256": "bf32baa4052fe2c4fcc73fe151e29f02590790031505a984cc779d67695178fe",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U06-A04-bf32baa4052f",
+          "decision_kind": "NORMATIVE_GOAL_SAFEGUARD_OR_SYSTEM_CONTEXT_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U07-A02-8ed59b29f494",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 7, effect atom 2 of 4",
+          "source_excerpt": "Im Fokus müssen die Versorgungssicherheit für alle und patientenorientierte Qualitätssteigerungen stehen.",
+          "source_text_sha256": "8ed59b29f4948ad0bb15ff551f00dbc22ace4caf19523dc547bad8d55a5f1e7b",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U07-A02-8ed59b29f494",
+          "decision_kind": "NORMATIVE_GOAL_SAFEGUARD_OR_SYSTEM_CONTEXT_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U07-A03-9d1c63d8232d",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 7, effect atom 3 of 4",
+          "source_excerpt": "Strukturanpassungen müssen mit einer Arbeitsplatzsicherung verbunden werden.",
+          "source_text_sha256": "9d1c63d8232d6beab6e33a5ba5806650c410b8d111badf19d63ac284e1a3a114",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U07-A03-9d1c63d8232d",
+          "decision_kind": "NORMATIVE_GOAL_SAFEGUARD_OR_SYSTEM_CONTEXT_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U07-A04-78804d00c6e3",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 7, effect atom 4 of 4",
+          "source_excerpt": "Dem Verlust von medizinischen Fachkräften muss entgegengewirkt werden.",
+          "source_text_sha256": "78804d00c6e3332013f1b7010abae372983591ba419c2d7f95417b9175be788a",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U07-A04-78804d00c6e3",
+          "decision_kind": "NORMATIVE_GOAL_SAFEGUARD_OR_SYSTEM_CONTEXT_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U08-A03-be0c6865e1fe",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 8, effect atom 3 of 3",
+          "source_excerpt": "Berlin soll Gesundheitsmetropole bleiben und durch eine enge Verzahnung von Versorgung, Ausbildung und Forschung weiterhin Maßstäbe setzen.",
+          "source_text_sha256": "be0c6865e1fea8031acb656a6ec5ff4e1d62d485715382ef489b135178dd5a1f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U08-A03-be0c6865e1fe",
+          "decision_kind": "NORMATIVE_GOAL_SAFEGUARD_OR_SYSTEM_CONTEXT_REVIEWED"
+        },
+        {
+          "object_id": "BE-BSW-P21-U06-A01-aabc35796bd0",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 6, effect atom 1 of 6",
+          "source_excerpt": "Die Krankenhausversorgung ist Teil der öffentlichen Daseinsvorsorge und gehört in öffentliche oder gemeinnützige Hand.",
+          "source_text_sha256": "aabc35796bd098291d8fdaad2448b455ac07a0f42f5159b4a5db248c39c981f2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U06-A01-aabc35796bd0",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U06-A03-ec847e41061d",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 6, effect atom 3 of 6",
+          "source_excerpt": "Das BSW Berlin fordert eine gemeinwohlorientierte Krankenhausplanung unter Einbeziehung der Bürgerinnen und Bürger.",
+          "source_text_sha256": "ec847e41061d3c1566e33f481eabc99b287962b816d41788df74928c5cec3495",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U06-A03-ec847e41061d",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U06-A05-45ae64385c65",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 6, effect atom 5 of 6",
+          "source_excerpt": "Die Landesförderung soll gezielt Krankenhäuser unterstützen, die soziale Begleitung, Übergangsmanagement und die Verzahnung von ambulanter und stationärer Versorgung stärken.",
+          "source_text_sha256": "45ae64385c65ef39c4488ebc135cdd529f35dd07b2790b9a63a12e909f7e1db2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U06-A05-45ae64385c65",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U06-A06-7e0b8be0a7a8",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 6, effect atom 6 of 6",
+          "source_excerpt": "Der Investitionsstau von mehreren hundert Millionen Euro muss beendet werden – das Land Berlin muss seiner gesetzlichen Pflicht zur Investitionsfinanzierung nachkommen.",
+          "source_text_sha256": "7e0b8be0a7a81841a1ff04649ebd99f7953f31544097745d778b858befc347ba",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U06-A06-7e0b8be0a7a8",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U07-A01-25d92203af45",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 7, effect atom 1 of 4",
+          "source_excerpt": "Wir werden uns dafür einsetzen, dass das Land Berlin seinen Beitrag auf Bundesebene dafür leistet, dass die Krankenhausreform zu einer Verbesserung der örtlichen Gesundheitsversorgung führt und nicht zu planlosen und politisch motivierten …",
+          "source_text_sha256": "25d92203af45125ed6e308c41216435083531aa0018479fb0da0f20c2c28a31f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U07-A01-25d92203af45",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U08-A01-76d8806af83c",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 8, effect atom 1 of 3",
+          "source_excerpt": "Wir setzen uns für einen Umbau der Krankenhausfinanzierung ein, denn die bisherige DRG- Finanzierung (nach diagnose-bezogenen Fallgruppen) hat sich nicht bewährt.",
+          "source_text_sha256": "76d8806af83c0a6a0e343dbaaf036e9f2be73a86bb9d453432d95f1cb63f46bd",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U08-A01-76d8806af83c",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
+        },
+        {
+          "object_id": "BE-BSW-P21-U08-A02-51b3a97e4f48",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 21 of 66, normalized source unit 8, effect atom 2 of 3",
+          "source_excerpt": "Berlin braucht weiterhin Gestaltungsspielräume für seine Krankenhausplanung, um regionale Besonderheiten und Versorgungsbedarfe zu berücksichtigen.",
+          "source_text_sha256": "51b3a97e4f48c954c3b8e978188365201b735eb0295ffb5e7c0f2cdae2d26407",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p19-closure-p21-authoritative-handoff.md",
+            "file_sha256": "48d4b90bf046de77931b0627688b605d15642f96dabd3236d64a1859fbabad3c"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5451565159; exact object BE-BSW-P21-U08-A02-51b3a97e4f48",
+          "decision_kind": "EXPLICIT_SOURCE_BOUND_FACH"
         }
       ],
       "remaining_review_envelopes": [
-        {
-          "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_020",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 20 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_021",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 21 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
         {
           "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_022",
           "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
@@ -4092,192 +4848,7 @@
           "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
         }
       ],
-      "remaining_review_objects": [
-        {
-          "object_id": "BE-BSW-P19-U01-A02-C01-992a21f6297f",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
-          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Projektfonds Kulturelle Bildung.",
-          "source_text_sha256": "992a21f6297fc5f936cb4817470af916a853a7dc2307b6dce38a712434ff85c8",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U01-A02-811d08843ce4"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        },
-        {
-          "object_id": "BE-BSW-P19-U01-A02-C02-31ad0fd27481",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
-          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Jugendkulturinitiative.",
-          "source_text_sha256": "31ad0fd274814b3e8bcc3d3bac9bdafda7d4d898566be348fc43d7776d93d27b",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U01-A02-811d08843ce4"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        },
-        {
-          "object_id": "BE-BSW-P19-U01-A02-C03-54c77aef7b53",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
-          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Fonds für Ausstellungsvergütung Bildender Künstler.",
-          "source_text_sha256": "54c77aef7b534679d7715f9fcf435942281236888658e09462f06db9919bbb4f",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U01-A02-811d08843ce4"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        },
-        {
-          "object_id": "BE-BSW-P19-U01-A02-C04-616958496a0d",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
-          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Berliner Projektfonds Urbane Praxis.",
-          "source_text_sha256": "616958496a0d55856c855e6624e682284ff968b70a4485158c48ba4621017323",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U01-A02-811d08843ce4"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        },
-        {
-          "object_id": "BE-BSW-P19-U01-A02-C05-7088dc49b909",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
-          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Arbeitsraumprogramm für Künstlerateliers.",
-          "source_text_sha256": "7088dc49b909f43e834f4f15594c33f65e6fa134621d261ea755d5520316c346",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U01-A02-811d08843ce4"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        },
-        {
-          "object_id": "BE-BSW-P19-U01-A02-C06-6796c889eec8",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 1, effect atom 2 of 2",
-          "source_excerpt": "Wir nehmen die Streichungen von Fördermitteln zurück: Programme Draußen & Umsonst (Initiative Draußenstadt).",
-          "source_text_sha256": "6796c889eec838a6a103638ab3f6488d04c7ba48ff1e89e5ea35588cfb31cc2e",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U01-A02-811d08843ce4"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-KULTURFOERDERPROGRAMME-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        },
-        {
-          "object_id": "BE-BSW-P19-U02-A01-C01-389fbaff19ac",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 2, effect atom 1 of 1",
-          "source_excerpt": "Wir befürworten den Erhalt und die Sanierung der Berliner Stadtbibliothek und der Amerika- Gedenkbibliothek.",
-          "source_text_sha256": "389fbaff19acbea817bc4c8f60fea01194cdc38ae74c4a860f7f5f875d424246",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U02-A01-7630428800e8"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-BIBLIOTHEKEN-KOMISCHE-OPER-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        },
-        {
-          "object_id": "BE-BSW-P19-U02-A01-C02-cc9e28e20af3",
-          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
-          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 19 of 66, normalized source unit 2, effect atom 1 of 1",
-          "source_excerpt": "Wir befürworten die zügige Sanierung der Komischen Oper ohne Belastung ihres künstlerischen Etats.",
-          "source_text_sha256": "cc9e28e20af3c18e0aa0591524ae2342c366599d8a28e9b54f4d02316f4b83da",
-          "source_state": "SOURCE_BOUND_VERIFIED",
-          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
-          "segmentation_origin": "DETERMINISTIC_PARENT_CHILD_OR_FRAGMENT_REPAIR",
-          "parent_object_ids": [
-            "BE-BSW-P19-U02-A01-7630428800e8"
-          ],
-          "repair_id": "BE-BSW-SEG-P19-BIBLIOTHEKEN-KOMISCHE-OPER-V1",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "counts_as_effect_object": true,
-          "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
-          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705",
-          "fach_handoff_snapshot": {
-            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-authoritative-handoff.md",
-            "file_sha256": "dbb9ce098e43f72a3afcce11109b49a9df3d93af555fe72a77866493bdb2ccff"
-          },
-          "exact_reason": "Deterministically segmented child. Issue #240 comment 5451044705 explicitly withholds Fach until a later object-level WÖk handoff."
-        }
-      ]
+      "remaining_review_objects": []
     },
     {
       "binding_order": 2,
@@ -18689,5 +19260,5 @@
     "vercel_action_triggered": false
   },
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
-  "descriptor_sha256": "0d6c729fd9badcd7b2830cec17c3680dcb93465340a8d7ce80cccfc55288028b"
+  "descriptor_sha256": "4a8bf2f3f57272e28c9e691176965e6748880a99f4c5d835fcdd79f4d41ada78"
 }

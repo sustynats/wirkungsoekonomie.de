@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
-BASE_MAIN_COMMIT = "1a0757682e8d2365eb28218816484c2e1e13d83e"
+BASE_MAIN_COMMIT = "272c427673c3b1da847af5294ed744c84c2b85cd"
 
 HISTORICAL_GOLDEN = "ops/releases/parliament-github-golden-state-2026-08-23.json"
 ST_RELEASE = "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
@@ -158,7 +158,7 @@ def validate(actual: dict, expected: dict) -> None:
     if actual["status"] != "FACH_RESIDUAL_OPEN":
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_FALSE_GREEN")
     berlin = actual["blocking_lanes"]["berlin"]
-    if (berlin["programme_analysis_complete"], berlin["programme_analysis_open"], berlin["remaining_review_envelopes"], berlin["remaining_exact_effect_objects_identified"], berlin["remaining_review_scopes"]) != (3, 9, 1262, 8, 1270):
+    if (berlin["programme_analysis_complete"], berlin["programme_analysis_open"], berlin["remaining_review_envelopes"], berlin["remaining_exact_effect_objects_identified"], berlin["remaining_review_scopes"]) != (3, 9, 1260, 0, 1260):
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_BERLIN_TRUTH_DRIFT")
     mv = actual["blocking_lanes"]["mecklenburg_vorpommern"]
     if (mv["verified_final_programmes_requiring_truthful_residual"], mv["source_maturity_pending"]) != (12, 7):
