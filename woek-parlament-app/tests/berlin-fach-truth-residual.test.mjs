@@ -10,12 +10,12 @@ test('Berlin Fach-truth residual preserves 3 terminal and exposes 9 open program
   assert.deepEqual(validateBerlinFachTruthResidual(loadBerlinFachTruthResidual()), {
     programmes_terminal: 3,
     programmes_open: 9,
-    terminal_source_objects: 1066,
-    remaining_review_envelopes: 1232,
+    terminal_source_objects: 1149,
+    remaining_review_envelopes: 1228,
     remaining_exact_objects: 0,
-    remaining_review_scopes: 1232,
+    remaining_review_scopes: 1228,
     known_segmentation_defects: 2,
-    descriptor_sha256: 'ee64c55f8101fbe4f81fb44e6fa79078cd1bcedf648edc501f02a372cfddc495',
+    descriptor_sha256: '903168694f37c9a8eb28c7b7332840d20750c35ce441d962ed6bbb20b7725f66',
     gate: 'FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH',
   });
 });
