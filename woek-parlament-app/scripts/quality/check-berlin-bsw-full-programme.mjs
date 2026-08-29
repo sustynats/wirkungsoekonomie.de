@@ -12,10 +12,10 @@ const bsw = residual.programmes.find((programme) => programme.party === "BSW");
 
 assert.ok(bsw, "BSW missing from current Berlin Fach-truth matrix");
 assert.equal(bsw.programme_analysis_complete, false, "BSW must remain open after rejection of generic RNAA terminals");
-assert.equal(bsw.terminal_object_count, 937, "BSW exact issue #240 terminal stock drifted");
+assert.equal(bsw.terminal_object_count, 998, "BSW exact issue #240 terminal stock drifted");
 assert.equal(bsw.remaining_review_envelope_count, 17, "BSW page-envelope residual must be physical PDF pages 50-66");
-assert.equal(bsw.remaining_exact_object_count, 61, "BSW exact child residual must include the P34-P43 finite set");
-assert.equal(bsw.remaining_review_scope_count, 78, "BSW finite residual must be 17 page envelopes plus 61 exact children");
+assert.equal(bsw.remaining_exact_object_count, 0, "BSW P34-P43 exact child residual must be closed");
+assert.equal(bsw.remaining_review_scope_count, 17, "BSW finite residual must be exactly the 17 P50-P66 page envelopes");
 assert.deepEqual(
   bsw.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
   Array.from({ length: 17 }, (_, index) => index + 50),
@@ -61,8 +61,7 @@ assert.equal(p26P29Current.filter((item) => item.counts_as_effect_object === tru
 assert.equal(p26P29Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 26, "P26-P29 explicit Fach set drifted");
 assert.equal(p26P29Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 5, "P26-P29 exact RNAA set drifted");
 assert.equal(p26P29Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 17, "P26-P29 versioned parent set drifted");
-assert.equal(bsw.remaining_review_objects.length, 61, "P34-P43 exact child residual set drifted");
-assert.ok(bsw.remaining_review_objects.every((item) => item.fach_state === "GENUINE_FACH_REVIEW_REQUIRED" && item.counts_as_effect_object === true));
+assert.equal(bsw.remaining_review_objects.length, 0, "P34-P43 exact child residual set must be zero");
 const p24P25Children = p24P25Current.filter((item) => item.object_kind === "DETERMINISTIC_SEGMENTATION_REPLACEMENT");
 assert.equal(p24P25Children.length, 23, "P24/P25 deterministic child set drifted");
 assert.equal(p24P25Children.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 20, "P24/P25 explicit child closure drifted");
@@ -72,27 +71,27 @@ assert.equal(p30P33Current.filter((item) => item.counts_as_effect_object === tru
 assert.equal(p30P33Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 20, "P30-P33 explicit Fach set drifted");
 assert.equal(p30P33Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 11, "P30-P33 exact RNAA set drifted");
 assert.equal(p30P33Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 4, "P30-P33 versioned parent set drifted");
-assert.equal(p34P37Current.length, 73, "P34-P37 terminal set drifted");
-assert.equal(p34P37Current.filter((item) => item.counts_as_effect_object === true).length, 15, "P34-P37 active terminal leaf set drifted");
-assert.equal(p34P37Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 10, "P34-P37 explicit Fach set drifted");
-assert.equal(p34P37Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 5, "P34-P37 exact RNAA set drifted");
+assert.equal(p34P37Current.length, 92, "P34-P37 terminal set drifted");
+assert.equal(p34P37Current.filter((item) => item.counts_as_effect_object === true).length, 30, "P34-P37 active terminal leaf set drifted");
+assert.equal(p34P37Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 23, "P34-P37 explicit Fach set drifted");
+assert.equal(p34P37Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 7, "P34-P37 exact RNAA set drifted");
 assert.equal(p34P37Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 14, "P34-P37 versioned parent/fragment set drifted");
-assert.equal(p38P41Current.length, 93, "P38-P41 terminal set drifted");
-assert.equal(p38P41Current.filter((item) => item.counts_as_effect_object === true).length, 30, "P38-P41 active terminal leaf set drifted");
-assert.equal(p38P41Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 18, "P38-P41 explicit Fach set drifted");
-assert.equal(p38P41Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 12, "P38-P41 exact RNAA set drifted");
+assert.equal(p38P41Current.length, 131, "P38-P41 terminal set drifted");
+assert.equal(p38P41Current.filter((item) => item.counts_as_effect_object === true).length, 68, "P38-P41 active terminal leaf set drifted");
+assert.equal(p38P41Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 47, "P38-P41 explicit Fach set drifted");
+assert.equal(p38P41Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 21, "P38-P41 exact RNAA set drifted");
 assert.equal(p38P41Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 47, "P38-P41 zero-count terminal set drifted");
 assert.equal(p38P41Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 16, "P38-P41 versioned parent/fragment set drifted");
-assert.equal(p38P41Current.filter((item) => item.parent_object_ids).length, 2, "P38-P41 deterministic terminal set drifted");
-assert.equal(bsw.remaining_review_objects.filter((item) => /-P(?:38|39|40|41)-/.test(item.object_id)).length, 38, "P38-P41 exact child residual set drifted");
-assert.equal(p42P45Current.length, 74, "P42-P45 terminal set drifted");
-assert.equal(p42P45Current.filter((item) => item.counts_as_effect_object === true).length, 29, "P42-P45 active terminal leaf set drifted");
-assert.equal(p42P45Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 20, "P42-P45 explicit Fach set drifted");
-assert.equal(p42P45Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 9, "P42-P45 exact RNAA set drifted");
-assert.equal(p42P45Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 39, "P42-P45 zero-count terminal set drifted");
+assert.equal(p38P41Current.filter((item) => item.parent_object_ids).length, 40, "P38-P41 deterministic terminal set drifted");
+assert.equal(bsw.remaining_review_objects.filter((item) => /-P(?:38|39|40|41)-/.test(item.object_id)).length, 0, "P38-P41 exact child residual must be closed");
+assert.equal(p42P45Current.length, 78, "P42-P45 terminal set drifted");
+assert.equal(p42P45Current.filter((item) => item.counts_as_effect_object === true).length, 32, "P42-P45 active terminal leaf set drifted");
+assert.equal(p42P45Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 22, "P42-P45 explicit Fach set drifted");
+assert.equal(p42P45Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 10, "P42-P45 exact RNAA set drifted");
+assert.equal(p42P45Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 40, "P42-P45 zero-count terminal set drifted");
 assert.equal(p42P45Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 6, "P42-P45 versioned parent set drifted");
-assert.equal(p42P45Current.filter((item) => item.parent_object_ids).length, 8, "P42-P45 deterministic terminal set drifted");
-assert.equal(bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id)).length, 4, "P42-P43 exact child residual set drifted");
+assert.equal(p42P45Current.filter((item) => item.parent_object_ids).length, 12, "P42-P45 deterministic terminal set drifted");
+assert.equal(bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id)).length, 0, "P42-P43 exact child residual must be closed");
 assert.equal(p46P49Current.length, 122, "P46-P49 terminal set drifted");
 assert.equal(p46P49Current.filter((item) => item.counts_as_effect_object === true).length, 53, "P46-P49 active terminal leaf set drifted");
 assert.equal(p46P49Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 36, "P46-P49 explicit Fach set drifted");

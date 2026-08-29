@@ -1,0 +1,513 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P34-P43-CHILD-CLOSURE-2026-V1",
+  "base_main_commit": "5b3bddec9b62c4d21687df8ae8acb0e6e40a403b",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "controller": {
+    "issue": 241,
+    "issue_comment_id": 5459840094,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5459840094",
+    "materialization_order": "CLOSE_EXACT_P34_P43_CHILD_SET_BEFORE_CONTINUING_P50_P66"
+  },
+  "authoritative_markdowns": [
+    {
+      "scope": "P34-P35",
+      "issue_comment_id": 5459615745,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459615745",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p34-p35-child-closure-authoritative-handoff.md",
+      "file_sha256": "48f77225b6625923a3ecc220f255c27e18eddab04d9e9078469ef088bed2e97c"
+    },
+    {
+      "scope": "P36-P37",
+      "issue_comment_id": 5459622938,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459622938",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p36-p37-child-closure-authoritative-handoff.md",
+      "file_sha256": "d88b569d834a0490aa71e99466551e500afcfe4bec7be697f7b471408075c660"
+    },
+    {
+      "scope": "P38-P39",
+      "issue_comment_id": 5459630827,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459630827",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p38-p39-child-closure-authoritative-handoff.md",
+      "file_sha256": "15775f654ce4c8b483f97c19c78ad8dcc57dcf0e55433bfc91e9848aa3ee1821"
+    },
+    {
+      "scope": "P40-P41",
+      "issue_comment_id": 5459634420,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459634420",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p40-p41-child-closure-authoritative-handoff.md",
+      "file_sha256": "811232988b84a68fa774240fe522d897500f4b41f257a4d96780e7e85af15999"
+    },
+    {
+      "scope": "P42-P43",
+      "issue_comment_id": 5459636289,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459636289",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p42-p43-child-closure-authoritative-handoff.md",
+      "file_sha256": "8c76bcee734e32c8a7531638de7519c0a26b34c15cf1164cc122a01675a437b0"
+    }
+  ],
+  "coverage": {
+    "source_exact_open_child_count": 61,
+    "closed_child_terminal_count": 61,
+    "p34_p35_child_terminal_count": 12,
+    "p36_p37_child_terminal_count": 7,
+    "p38_p39_child_terminal_count": 20,
+    "p40_p41_child_terminal_count": 18,
+    "p42_p43_child_terminal_count": 4,
+    "active_terminal_review_leaf_count": 56,
+    "active_explicit_fach_approved_count": 44,
+    "active_reviewed_not_assessable_count": 12,
+    "zero_count_guard_count": 5,
+    "exact_open_child_object_count_after": 0,
+    "terminal_status_counts": {
+      "EXPLICIT_FACH_APPROVED": 44,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 12,
+      "NON_EFFECT_CONTEXT_REVIEWED": 5,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 0
+    },
+    "gate": "BE_BSW_P34_P43_EXACT_CHILD_FACH_RESIDUAL_ZERO"
+  },
+  "child_terminal_decisions": [
+    {
+      "object_id": "BE-BSW-P34-U01-A03-C01-8fb42dccce50",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "STRICT_REGULATORY_IMMIGRATION_POLICY_CLAUSE",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P34-U01-A03-C02-24666ef39b90",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "INTEGRATION_MEASURES_OBLIGATION_AND_LANGUAGE_SOCIAL_PURPOSE_CLAUSE",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P34-U06-A01-C01-8eb522a98d1b",
+      "authoritative_terminal_fach_state": "NON_EFFECT_IMPLEMENTATION_URGENCY_RESTATEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FEDERAL_GERMAN_IMPLEMENTATION_DEMAND",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P34-U06-A01-C02-2e5145ec80c2",
+      "authoritative_terminal_fach_state": "NON_EFFECT_TARGET_STATE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RULE_BASED_IMMIGRATION_TARGET_STATE",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P34-U06-A01-C03-a397002f69c0",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_OUTCOME_AND_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FLIGHT_ROUTE_DEATHS_AND_SMUGGLING_CRIME_CLAIMED_OUTCOME",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A03-C01-44ae8ecadbf1",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "STOP_GERMAN_ARMS_EXPORTS",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A03-C02-fbd316ab8356",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "STOP_REGIME_CHANGE_AND_ECONOMIC_WARS",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P35-U03-A03-C03-8a860ca384da",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_OUTCOME_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "END_DESTRUCTION_AND_PLUNDERING_OF_GLOBAL_SOUTH_LIVELIHOODS",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A02-C01-e9a3da6c8b28",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SAFE_THIRD_COUNTRY_ASYLUM_PROCEDURE_ADMISSIBILITY_EXCLUSION",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A02-C02-cf9d1a366e64",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SAFE_THIRD_COUNTRY_SOCIAL_BENEFIT_EXCLUSION",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A03-C01-ce8b40e2a122",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "BORDER_CONTROLS_AT_ALL_GERMAN_BORDERS",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P35-U05-A03-C02-05f6953a9b41",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "BORDER_REJECTION_WITH_RETURN_AGREEMENT_AND_VULNERABILITY_CONDITIONS",
+      "issue_comment_id": 5459615745
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A03-C01-318e137d361b",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "STRICT_STATE_OVERSIGHT_REQUIREMENT",
+      "issue_comment_id": 5459622938
+    },
+    {
+      "object_id": "BE-BSW-P36-U08-A03-C02-16a25df52195",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "STATE_QUALIFIED_AND_VETTED_PERSONNEL_REQUIREMENT",
+      "issue_comment_id": 5459622938
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A02-C01-aba054933cc1",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SUBJECT_STAFFING_RESOURCE_INCREASE",
+      "issue_comment_id": 5459622938
+    },
+    {
+      "object_id": "BE-BSW-P37-U02-A02-C02-7e4f408f03f5",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "INTERCULTURAL_AND_VALUE_ORIENTED_CURRICULUM_PROFILE_CHANGE",
+      "issue_comment_id": 5459622938
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A03-C01-a470d3dda9ef",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "NEIGHBOURHOOD_PROJECT_FUNDING_CHANNEL",
+      "issue_comment_id": 5459622938
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A03-C02-101c6821194b",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "INTERCULTURAL_FESTIVAL_FUNDING_CHANNEL",
+      "issue_comment_id": 5459622938
+    },
+    {
+      "object_id": "BE-BSW-P37-U03-A03-C03-e3da44214e09",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SPORT_CLUB_FUNDING_CHANNEL",
+      "issue_comment_id": 5459622938
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A03-C01-fefc86157db8",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "INCREASED_POLICE_PRESENCE",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A03-C02-cd6ed69dd501",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "IMPROVED_POLICE_EQUIPMENT",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A03-C03-35c13b90803f",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "PREVENTION_INTERVENTION",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A04-C01-b2630e166d36",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "POLICE_AND_EMERGENCY_PERSONNEL_INCREASE",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A04-C02-8c2999a843c4",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "IMPROVED_TRAINING",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A04-C03-c45a0ad00340",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "IMPROVED_EQUIPMENT",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A04-C04-217d57a67c09",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "IMPROVED_WORKING_CONDITIONS",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A04-C05-1e99b8bd0cec",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DEESCALATION_MEASURES",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A04-C06-295752d4d0e7",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "MORE_AND_BETTER_YOUTH_WORK",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P38-U02-A04-C07-45a6c067dcf2",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DERADICALISATION_PROGRAMMES",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U04-A02-C01-50669e5fe7ea",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PROTECTIVE_CLOTHING_PORTFOLIO_ITEM",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U04-A02-C02-0a8cbf5e0507",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "ARMOURED_VEHICLES_PORTFOLIO_ITEM",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U04-A02-C03-50551942cf35",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "MODERN_IT_PORTFOLIO_ITEM",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U04-A02-C04-365ea779580e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "MOBILE_WORK_DEVICES_PORTFOLIO_ITEM",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U06-C01-036f92a23d7b",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "HIGHER_ALLOWANCES_FOR_BURDENSOME_DUTIES",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U06-C02-6ac064191e84",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "MANDATORY_EFFECTIVE_PSYCHOSOCIAL_FOLLOW_UP",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U06-C03-16cf215dc3a8",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FLEXIBLE_WORK_AND_HOME_OFFICE_MODELS",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U08-A01-C01-24173f9917c6",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FREE_POOL_AND_SPORT_FACILITY_ENTRY",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U08-A01-C02-1bc5b2122e89",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EMPLOYER_SPORT_OFFERS",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P39-U08-A01-C03-7a47a58bca3c",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "IMPROVED_DEPLOYMENT_FOOD",
+      "issue_comment_id": 5459630827
+    },
+    {
+      "object_id": "BE-BSW-P40-U02-A01-C01-b7c48aba9ca4",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DISTRICT_NETWORK_WORK_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U02-A01-C02-dd599785a59f",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DISTRICT_ANTI_VIOLENCE_TRAINING_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U02-A01-C03-5bb9a436451e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DISTRICT_PARENT_WORK_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U02-A01-C04-953287065b1b",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DISTRICT_SCHOOL_SOCIAL_WORK_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U08-A02-C01-b6526f372d2e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "CITY_LIGHTING_AND_DARK_PLACE_REMOVAL",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U08-A02-C02-bf1be399fccf",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "URBAN_DESIGN_CRIME_PREVENTION_CPTED",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U10-A02-C01-d24c9b6775fc",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "NO_RIGHT_TO_REMAIN_FOR_OFFENDERS_IN_ASYL_PROCEEDINGS",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U10-A02-C02-ef8d31450aee",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "DEPORTATION_FOR_OFFENDERS_IN_ASYL_PROCEEDINGS",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U10-A02-C03-4c3147f81e75",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPULSION_FOR_OFFENDERS_IN_ASYL_PROCEEDINGS",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U12-A02-C01-733f0d4ecffe",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "LANGUAGE_COURSE_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U12-A02-C02-b32799a43d49",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "INTEGRATION_OFFER_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U12-A02-C03-eb73b4e2e4d2",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "YOUTH_WORK_OFFER_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U14-A02-C01-a1a7e7178491",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "WOMENS_SHELTER_OFFER_AND_CAPACITY_EXPANSION",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P40-U14-A02-C02-63fefd49d916",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "MULTILINGUAL_HELP_INFORMATION_AND_SIGNPOSTING",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P41-U08-C01-759e479bf32a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SOURCE_TELECOMMUNICATIONS_SURVEILLANCE_WITH_LIMITED_SCOPE",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P41-U08-C02-b3879e512557",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "AI_USE_WITH_LIMITED_SCOPE",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P41-U11-A02-C01-71fb44887322",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PLACE_EXCLUSION_ORDERS",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P41-U11-A02-C02-3c6fce5dd3cd",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SECURITY_ZONE_CREATION_AND_USE",
+      "issue_comment_id": 5459634420
+    },
+    {
+      "object_id": "BE-BSW-P42-U10-A01-C01-ec577564221c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CAUSAL_AND_NORMATIVE_POLICY_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ENERGY_POLICY_CAUSAL_AND_NORMATIVE_FRAME",
+      "issue_comment_id": 5459636289
+    },
+    {
+      "object_id": "BE-BSW-P42-U10-A01-C02-cba35a02da9f",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "SVIK_ALLOCATION_PROPOSITION",
+      "issue_comment_id": 5459636289
+    },
+    {
+      "object_id": "BE-BSW-P43-U08-A02-C01-c0969eeb027a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FEDERAL_R_AND_D_TAX_BUNDESRAT_INITIATIVE",
+      "issue_comment_id": 5459636289
+    },
+    {
+      "object_id": "BE-BSW-P43-U08-A02-C02-5873c8de7eb7",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "BERLIN_SCIENCE_TECHNOLOGY_FUNDING_WITH_ACADEMIC_FREEDOM_SAFEGUARD",
+      "issue_comment_id": 5459636289
+    }
+  ],
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "dns_mapping_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "party_wide_judgement_synthesized": false,
+    "source_text_rewritten": false,
+    "parent_counting_reopened": false,
+    "vercel_action_triggered": false
+  }
+}

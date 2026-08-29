@@ -13,26 +13,26 @@ test("BSW Berlin preserves protected P1-14 and exact issue #240 P15-49 terminals
   );
   const bsw = residual.programmes.find((programme: { party: string }) => programme.party === "BSW");
   assert.ok(bsw);
-  assert.equal(bsw.terminal_object_count, 937);
-  assert.equal(bsw.terminal_objects.length, 937);
-  assert.equal(new Set(bsw.terminal_objects.map((item: { object_id: string }) => item.object_id)).size, 937);
+  assert.equal(bsw.terminal_object_count, 998);
+  assert.equal(bsw.terminal_objects.length, 998);
+  assert.equal(new Set(bsw.terminal_objects.map((item: { object_id: string }) => item.object_id)).size, 998);
   assert.deepEqual(bsw.terminal_status_counts, {
-    EXPLICIT_FACH_APPROVED: 310,
-    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 84,
-    NON_EFFECT_CONTEXT_REVIEWED: 429,
+    EXPLICIT_FACH_APPROVED: 354,
+    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 96,
+    NON_EFFECT_CONTEXT_REVIEWED: 434,
     SOURCE_UNIT_RECLASSIFIED_VERSIONED: 114,
   });
 });
 
-test("BSW P24/P25 and P30-P49 are closed while P34-P43 has exact children and P50-P66 stays opaque", () => {
+test("BSW P24/P25 and P30-P49 exact objects are closed while P50-P66 stays opaque", () => {
   const bsw = residual.programmes.find((programme: { party: string }) => programme.party === "BSW");
   assert.ok(bsw);
   assert.equal(bsw.programme_analysis_complete, false);
   assert.equal(bsw.fach_state, "GENUINE_FACH_REVIEW_REQUIRED");
   assert.equal(bsw.remaining_review_envelope_count, 17);
-  assert.equal(bsw.remaining_exact_object_count, 61);
-  assert.equal(bsw.remaining_review_scope_count, 78);
-  assert.equal(bsw.remaining_review_objects.length, 61);
+  assert.equal(bsw.remaining_exact_object_count, 0);
+  assert.equal(bsw.remaining_review_scope_count, 17);
+  assert.equal(bsw.remaining_review_objects.length, 0);
   assert.deepEqual(
     bsw.remaining_review_envelopes.map((item: { source_locator: string }) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
     Array.from({ length: 17 }, (_, index) => index + 50),
@@ -86,27 +86,27 @@ test("BSW P24/P25 and P30-P49 are closed while P34-P43 has exact children and P5
   assert.equal(p30P33.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 11);
   assert.equal(p30P33.filter((item: { fach_state: string }) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 4);
   const p34P37 = bsw.terminal_objects.filter((item: { object_id: string }) => /-P(?:34|35|36|37)-|-P34P35-|-P35P36-|-P36P37-/.test(item.object_id));
-  assert.equal(p34P37.length, 73);
-  assert.equal(p34P37.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 15);
-  assert.equal(p34P37.filter((item: { fach_state: string }) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 10);
-  assert.equal(p34P37.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 5);
+  assert.equal(p34P37.length, 92);
+  assert.equal(p34P37.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 30);
+  assert.equal(p34P37.filter((item: { fach_state: string }) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 23);
+  assert.equal(p34P37.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 7);
   assert.equal(p34P37.filter((item: { fach_state: string }) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 14);
   const p38P41 = bsw.terminal_objects.filter((item: { object_id: string }) => /-P(?:38|39|40|41)-|-P38P39-/.test(item.object_id));
-  assert.equal(p38P41.length, 93);
-  assert.equal(p38P41.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 30);
-  assert.equal(p38P41.filter((item: { fach_state: string }) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 18);
-  assert.equal(p38P41.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 12);
+  assert.equal(p38P41.length, 131);
+  assert.equal(p38P41.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 68);
+  assert.equal(p38P41.filter((item: { fach_state: string }) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 47);
+  assert.equal(p38P41.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 21);
   assert.equal(p38P41.filter((item: { fach_state: string }) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 47);
   assert.equal(p38P41.filter((item: { fach_state: string }) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 16);
-  assert.equal(bsw.remaining_review_objects.filter((item: { object_id: string }) => /-P(?:38|39|40|41)-/.test(item.object_id)).length, 38);
+  assert.equal(bsw.remaining_review_objects.filter((item: { object_id: string }) => /-P(?:38|39|40|41)-/.test(item.object_id)).length, 0);
   const p42P45 = bsw.terminal_objects.filter((item: { object_id: string }) => /-P(?:42|43|44|45)-/.test(item.object_id));
-  assert.equal(p42P45.length, 74);
-  assert.equal(p42P45.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 29);
-  assert.equal(p42P45.filter((item: { fach_state: string }) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 20);
-  assert.equal(p42P45.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 9);
-  assert.equal(p42P45.filter((item: { fach_state: string }) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 39);
+  assert.equal(p42P45.length, 78);
+  assert.equal(p42P45.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 32);
+  assert.equal(p42P45.filter((item: { fach_state: string }) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 22);
+  assert.equal(p42P45.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 10);
+  assert.equal(p42P45.filter((item: { fach_state: string }) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 40);
   assert.equal(p42P45.filter((item: { fach_state: string }) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 6);
-  assert.equal(bsw.remaining_review_objects.filter((item: { object_id: string }) => /-P(?:42|43)-/.test(item.object_id)).length, 4);
+  assert.equal(bsw.remaining_review_objects.filter((item: { object_id: string }) => /-P(?:42|43)-/.test(item.object_id)).length, 0);
   const p46P49 = bsw.terminal_objects.filter((item: { object_id: string }) => /-P(?:46|47|48|49)-|-P49P50-|-P50-U01-bb3d4390ad9a/.test(item.object_id));
   assert.equal(p46P49.length, 122);
   assert.equal(p46P49.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 53);
@@ -138,6 +138,6 @@ test("the former BSW atom ledger is retained only as rejected historical evidenc
   assert.equal(residual.summary.programme_analysis_complete, 3);
   assert.equal(residual.summary.programme_analysis_open, 9);
   assert.equal(residual.summary.remaining_page_review_envelopes, 1232);
-  assert.equal(residual.summary.remaining_exact_effect_objects_identified, 61);
-  assert.equal(residual.summary.remaining_review_scope_count, 1293);
+  assert.equal(residual.summary.remaining_exact_effect_objects_identified, 0);
+  assert.equal(residual.summary.remaining_review_scope_count, 1232);
 });

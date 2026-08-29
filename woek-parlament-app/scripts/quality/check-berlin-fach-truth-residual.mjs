@@ -33,7 +33,7 @@ export function validateBerlinFachTruthResidual(matrix, {
 
   assert.equal(matrix.schema_version, 'woek-berlin-fach-content-residual-3.2');
   assert.equal(matrix.matrix_id, 'BE-FACH-CONTENT-RESIDUAL-2026-V3');
-  assert.equal(matrix.base_main_commit, '7628b7e45e9e462af5cc92a5b6dcf9f9e714eae5');
+  assert.equal(matrix.base_main_commit, '5b3bddec9b62c4d21687df8ae8acb0e6e40a403b');
   assert.equal(matrix.status, 'BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12');
   assert.deepEqual(matrix.binding_order, BINDING_ORDER);
   assert.deepEqual(matrix.execution_order_remaining, OPEN_PROGRAMMES);
@@ -114,6 +114,12 @@ export function validateBerlinFachTruthResidual(matrix, {
   assert.equal(matrix.accepted_incremental_handoffs[12].exact_open_child_object_count, 0);
   assert.deepEqual(matrix.accepted_incremental_handoffs[12].physical_pdf_pages, [46, 47, 48, 49]);
   assert.equal(matrix.accepted_incremental_handoffs[12].gate, 'BE_BSW_P46_P49_FACH_COMPLETE_PASS_SOURCE_BOUND');
+  assert.deepEqual(matrix.accepted_incremental_handoffs[13].issue_comment_ids, [5459615745, 5459622938, 5459630827, 5459634420, 5459636289]);
+  assert.equal(matrix.accepted_incremental_handoffs[13].controller_issue_comment_id, 5459840094);
+  assert.equal(matrix.accepted_incremental_handoffs[13].exact_terminal_object_count, 61);
+  assert.equal(matrix.accepted_incremental_handoffs[13].exact_open_child_object_count, 0);
+  assert.deepEqual(matrix.accepted_incremental_handoffs[13].physical_pdf_pages, [34, 35, 36, 37, 38, 39, 40, 41, 42, 43]);
+  assert.equal(matrix.accepted_incremental_handoffs[13].gate, 'BE_BSW_P34_P43_EXACT_CHILD_FACH_RESIDUAL_ZERO');
   assert.equal(matrix.state_model.invariant, 'Source or segmentation closure never implies Fach terminality.');
   assert.equal(matrix.review_envelope_contract.effect_object_count_before_segmentation, null);
   assert.equal(matrix.review_envelope_contract.missing_effect_object_count_interpretation, 'UNKNOWN_NOT_ZERO');
@@ -196,11 +202,11 @@ export function validateBerlinFachTruthResidual(matrix, {
   }
 
   const bsw = matrix.programmes.find((item) => item.party === 'BSW');
-  assert.equal(bsw.terminal_object_count, 937);
+  assert.equal(bsw.terminal_object_count, 998);
   assert.deepEqual(bsw.terminal_status_counts, {
-    EXPLICIT_FACH_APPROVED: 310,
-    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 84,
-    NON_EFFECT_CONTEXT_REVIEWED: 429,
+    EXPLICIT_FACH_APPROVED: 354,
+    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 96,
+    NON_EFFECT_CONTEXT_REVIEWED: 434,
     SOURCE_UNIT_RECLASSIFIED_VERSIONED: 114,
   });
   assert.deepEqual(
@@ -316,16 +322,16 @@ export function validateBerlinFachTruthResidual(matrix, {
   }
 
   const p34P37Objects = bsw.terminal_objects.filter((item) => /-P(?:34|35|36|37)-|-P34P35-|-P35P36-|-P36P37-/.test(item.object_id));
-  assert.equal(p34P37Objects.length, 73, 'P34-P37 terminal set drift');
-  assert.equal(p34P37Objects.filter((item) => item.counts_as_effect_object === true).length, 15, 'P34-P37 active terminal leaf set drift');
-  assert.equal(p34P37Objects.filter((item) => item.fach_state === 'EXPLICIT_FACH_APPROVED').length, 10, 'P34-P37 explicit Fach set drift');
-  assert.equal(p34P37Objects.filter((item) => item.fach_state === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON').length, 5, 'P34-P37 exact RNAA set drift');
-  assert.equal(p34P37Objects.filter((item) => item.fach_state === 'NON_EFFECT_CONTEXT_REVIEWED').length, 44, 'P34-P37 zero-count terminal set drift');
+  assert.equal(p34P37Objects.length, 92, 'P34-P37 terminal set drift');
+  assert.equal(p34P37Objects.filter((item) => item.counts_as_effect_object === true).length, 30, 'P34-P37 active terminal leaf set drift');
+  assert.equal(p34P37Objects.filter((item) => item.fach_state === 'EXPLICIT_FACH_APPROVED').length, 23, 'P34-P37 explicit Fach set drift');
+  assert.equal(p34P37Objects.filter((item) => item.fach_state === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON').length, 7, 'P34-P37 exact RNAA set drift');
+  assert.equal(p34P37Objects.filter((item) => item.fach_state === 'NON_EFFECT_CONTEXT_REVIEWED').length, 48, 'P34-P37 zero-count terminal set drift');
   assert.equal(p34P37Objects.filter((item) => item.fach_state === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED').length, 14, 'P34-P37 versioned parent/fragment set drift');
   const p34P37DeterministicTerminals = p34P37Objects.filter((item) => item.parent_object_ids);
-  assert.equal(p34P37DeterministicTerminals.length, 4, 'P34-P37 deterministic terminal record set drift');
+  assert.equal(p34P37DeterministicTerminals.length, 23, 'P34-P37 deterministic terminal record set drift');
   const p34P37Open = bsw.remaining_review_objects.filter((item) => /-P(?:34|35|36|37)-/.test(item.object_id));
-  assert.equal(p34P37Open.length, 19, 'P34-P37 exact child residual set drift');
+  assert.equal(p34P37Open.length, 0, 'P34-P37 exact child residual must be closed');
   for (const child of [...p34P37DeterministicTerminals, ...p34P37Open]) {
     assert.ok(child.object_id.endsWith(child.source_text_sha256.slice(0, 12)), `${child.object_id}: P34-P37 ID/hash drift`);
     assert.equal(sha256(child.source_excerpt), child.source_text_sha256, `${child.object_id}: P34-P37 source hash drift`);
@@ -333,16 +339,16 @@ export function validateBerlinFachTruthResidual(matrix, {
   }
 
   const p38P41Objects = bsw.terminal_objects.filter((item) => /-P(?:38|39|40|41)-|-P38P39-/.test(item.object_id));
-  assert.equal(p38P41Objects.length, 93, 'P38-P41 terminal set drift');
-  assert.equal(p38P41Objects.filter((item) => item.counts_as_effect_object === true).length, 30, 'P38-P41 active terminal leaf set drift');
-  assert.equal(p38P41Objects.filter((item) => item.fach_state === 'EXPLICIT_FACH_APPROVED').length, 18, 'P38-P41 explicit Fach set drift');
-  assert.equal(p38P41Objects.filter((item) => item.fach_state === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON').length, 12, 'P38-P41 exact RNAA set drift');
+  assert.equal(p38P41Objects.length, 131, 'P38-P41 terminal set drift');
+  assert.equal(p38P41Objects.filter((item) => item.counts_as_effect_object === true).length, 68, 'P38-P41 active terminal leaf set drift');
+  assert.equal(p38P41Objects.filter((item) => item.fach_state === 'EXPLICIT_FACH_APPROVED').length, 47, 'P38-P41 explicit Fach set drift');
+  assert.equal(p38P41Objects.filter((item) => item.fach_state === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON').length, 21, 'P38-P41 exact RNAA set drift');
   assert.equal(p38P41Objects.filter((item) => item.fach_state === 'NON_EFFECT_CONTEXT_REVIEWED').length, 47, 'P38-P41 zero-count terminal set drift');
   assert.equal(p38P41Objects.filter((item) => item.fach_state === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED').length, 16, 'P38-P41 versioned parent/fragment set drift');
   const p38P41DeterministicTerminals = p38P41Objects.filter((item) => item.parent_object_ids);
-  assert.equal(p38P41DeterministicTerminals.length, 2, 'P38-P41 deterministic terminal record set drift');
+  assert.equal(p38P41DeterministicTerminals.length, 40, 'P38-P41 deterministic terminal record set drift');
   const p38P41Open = bsw.remaining_review_objects.filter((item) => /-P(?:38|39|40|41)-/.test(item.object_id));
-  assert.equal(p38P41Open.length, 38, 'P38-P41 exact child residual set drift');
+  assert.equal(p38P41Open.length, 0, 'P38-P41 exact child residual must be closed');
   for (const child of [...p38P41DeterministicTerminals, ...p38P41Open]) {
     assert.ok(child.object_id.endsWith(child.source_text_sha256.slice(0, 12)), `${child.object_id}: P38-P41 ID/hash drift`);
     assert.equal(sha256(child.source_excerpt), child.source_text_sha256, `${child.object_id}: P38-P41 source hash drift`);
@@ -357,16 +363,16 @@ export function validateBerlinFachTruthResidual(matrix, {
   }
 
   const p42P45Objects = bsw.terminal_objects.filter((item) => /-P(?:42|43|44|45)-/.test(item.object_id));
-  assert.equal(p42P45Objects.length, 74, 'P42-P45 terminal set drift');
-  assert.equal(p42P45Objects.filter((item) => item.counts_as_effect_object === true).length, 29, 'P42-P45 active terminal leaf set drift');
-  assert.equal(p42P45Objects.filter((item) => item.fach_state === 'EXPLICIT_FACH_APPROVED').length, 20, 'P42-P45 explicit Fach set drift');
-  assert.equal(p42P45Objects.filter((item) => item.fach_state === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON').length, 9, 'P42-P45 exact RNAA set drift');
-  assert.equal(p42P45Objects.filter((item) => item.fach_state === 'NON_EFFECT_CONTEXT_REVIEWED').length, 39, 'P42-P45 zero-count terminal set drift');
+  assert.equal(p42P45Objects.length, 78, 'P42-P45 terminal set drift');
+  assert.equal(p42P45Objects.filter((item) => item.counts_as_effect_object === true).length, 32, 'P42-P45 active terminal leaf set drift');
+  assert.equal(p42P45Objects.filter((item) => item.fach_state === 'EXPLICIT_FACH_APPROVED').length, 22, 'P42-P45 explicit Fach set drift');
+  assert.equal(p42P45Objects.filter((item) => item.fach_state === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON').length, 10, 'P42-P45 exact RNAA set drift');
+  assert.equal(p42P45Objects.filter((item) => item.fach_state === 'NON_EFFECT_CONTEXT_REVIEWED').length, 40, 'P42-P45 zero-count terminal set drift');
   assert.equal(p42P45Objects.filter((item) => item.fach_state === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED').length, 6, 'P42-P45 versioned parent set drift');
   const p42P45DeterministicTerminals = p42P45Objects.filter((item) => item.parent_object_ids);
-  assert.equal(p42P45DeterministicTerminals.length, 8, 'P42-P45 deterministic terminal record set drift');
+  assert.equal(p42P45DeterministicTerminals.length, 12, 'P42-P45 deterministic terminal record set drift');
   const p42P45Open = bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id));
-  assert.equal(p42P45Open.length, 4, 'P42-P43 exact child residual set drift');
+  assert.equal(p42P45Open.length, 0, 'P42-P43 exact child residual must be closed');
   for (const child of [...p42P45DeterministicTerminals, ...p42P45Open]) {
     assert.ok(child.object_id.endsWith(child.source_text_sha256.slice(0, 12)), `${child.object_id}: P42-P45 ID/hash drift`);
     assert.equal(sha256(child.source_excerpt), child.source_text_sha256, `${child.object_id}: P42-P45 source hash drift`);
@@ -421,18 +427,18 @@ export function validateBerlinFachTruthResidual(matrix, {
   assert.equal(summary.programme_analysis_open, 9);
   assert.equal(summary.genuine_fach_programmes, 9);
   assert.deepEqual(summary.genuine_fach_programme_parties, OPEN_PROGRAMMES);
-  assert.equal(summary.remaining_genuine_fach_review_required, 1293);
-  assert.equal(summary.remaining_review_scope_count, 1293);
+  assert.equal(summary.remaining_genuine_fach_review_required, 1232);
+  assert.equal(summary.remaining_review_scope_count, 1232);
   assert.equal(summary.remaining_page_review_envelopes, 1232);
-  assert.equal(summary.remaining_exact_effect_objects_identified, 61);
+  assert.equal(summary.remaining_exact_effect_objects_identified, 0);
   assert.equal(summary.remaining_exact_effect_object_count, null);
-  assert.equal(summary.terminal_source_objects, 1005);
+  assert.equal(summary.terminal_source_objects, 1066);
   assert.deepEqual(summary.terminal_status_counts, terminalCounts);
   assert.equal(summary.known_segmentation_defects, 2);
   assert.equal(summary.berlin_completion_gate, 'FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH');
-  assert.equal(terminalObjects, 1005);
+  assert.equal(terminalObjects, 1066);
   assert.equal(remainingEnvelopes, 1232);
-  assert.equal(remainingExactObjects, 61);
+  assert.equal(remainingExactObjects, 0);
 
   if (verifyInputs) {
     const expected = buildBerlinFachTruthResidual();
