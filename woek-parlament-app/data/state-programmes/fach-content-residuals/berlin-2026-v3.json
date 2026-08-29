@@ -23,7 +23,7 @@
     "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
     "file_sha256": "ac531ff8f32d0256acbb62dc92a16c225a05c3f929c497089b69938d8a04e8c1",
     "descriptor_sha256": "62b7d4940491a3a1aca35a494b0ee8bbf2d3608bd871c73de2725aa7bae17cf5",
-    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW physical P1-P53 is source-bound through explicit issue #240 handoffs, including the P49-P50 freight-diagnosis and P53-P54 outcome-claim fragment repairs; P54 remains an open physical page envelope; the exact P24/P25 and P34/P43 child residuals are zero."
+    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW physical P1-P57 is source-bound through explicit issue #240 handoffs, including the P49-P50, P53-P54 and P56-P57 fragment repairs; P58 is the next open physical page envelope; the exact segmented child residual is zero."
   },
   "accepted_incremental_handoffs": [
     {
@@ -531,6 +531,59 @@
       "gate": "BE_BSW_P50_P53_FACH_COMPLETE_PASS_SOURCE_BOUND"
     },
     {
+      "handoff_id": "BE-BSW-P54-P57-EXPLICIT-FACH-2026-V1",
+      "issue_comment_ids": [
+        5457955882,
+        5457994484,
+        5458013046,
+        5458103067
+      ],
+      "issue_comment_urls": [
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067"
+      ],
+      "controller_issue_comment_id": 5460142128,
+      "controller_issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5460142128",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-p57-explicit-v1.json",
+      "file_sha256": "18e57c72234d1e257b4029f9eb50b6314b2bd877765d2a78a41cd4e3bfaa4434",
+      "authoritative_markdown_paths": [
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md"
+      ],
+      "authoritative_markdown_file_sha256s": [
+        "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98",
+        "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72",
+        "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983",
+        "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+      ],
+      "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+      "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+      "exact_terminal_object_count": 86,
+      "active_terminal_review_leaf_count": 30,
+      "exact_open_child_object_count": 0,
+      "physical_pdf_pages": [
+        54,
+        55,
+        56,
+        57
+      ],
+      "prior_cross_page_fragment": "P54-U01 remains consumed by the P53-P54 record materialised in the prior handoff",
+      "unchanged_pre_reviewed_context": [
+        "BE-BSW-P57-U10-51b2c038907b",
+        "BE-BSW-P57-U11-c69303be48ee"
+      ],
+      "gates": [
+        "BE_BSW_P54_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_PRIOR_P53_FRAGMENT_CONSUMPTION",
+        "BE_BSW_P55_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_U05_COMPOUND_REPAIR",
+        "BE_BSW_P56_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_U11_COMPOUND_AND_P57_FRAGMENT_REPAIRS",
+        "BE_BSW_P57_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_P56_FRAGMENT_AND_U09_A05_REPAIR"
+      ]
+    },
+    {
       "handoff_id": "BE-BSW-P34-P43-CHILD-CLOSURE-2026-V1",
       "issue_comment_ids": [
         5459615745,
@@ -678,17 +731,17 @@
       "CDU",
       "Die Linke"
     ],
-    "remaining_genuine_fach_review_required": 1228,
-    "remaining_review_scope_count": 1228,
-    "remaining_page_review_envelopes": 1228,
+    "remaining_genuine_fach_review_required": 1224,
+    "remaining_review_scope_count": 1224,
+    "remaining_page_review_envelopes": 1224,
     "remaining_exact_effect_objects_identified": 0,
     "remaining_exact_effect_object_count": null,
-    "terminal_source_objects": 1149,
+    "terminal_source_objects": 1235,
     "terminal_status_counts": {
-      "EXPLICIT_FACH_APPROVED": 414,
-      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 136,
-      "NON_EFFECT_CONTEXT_REVIEWED": 478,
-      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 121
+      "EXPLICIT_FACH_APPROVED": 437,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 143,
+      "NON_EFFECT_CONTEXT_REVIEWED": 529,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 126
     },
     "known_segmentation_defects": 2,
     "berlin_completion_gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH"
@@ -703,16 +756,16 @@
       "segmentation_state": "PARTIAL_TERMINAL_WITH_REVIEW_ENVELOPES_OPEN",
       "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
       "programme_analysis_complete": false,
-      "terminal_object_count": 1081,
+      "terminal_object_count": 1167,
       "terminal_status_counts": {
-        "EXPLICIT_FACH_APPROVED": 378,
-        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 104,
-        "NON_EFFECT_CONTEXT_REVIEWED": 478,
-        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 121
+        "EXPLICIT_FACH_APPROVED": 401,
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 111,
+        "NON_EFFECT_CONTEXT_REVIEWED": 529,
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 126
       },
-      "remaining_review_envelope_count": 13,
+      "remaining_review_envelope_count": 9,
       "remaining_exact_object_count": 0,
-      "remaining_review_scope_count": 13,
+      "remaining_review_scope_count": 9,
       "terminal_objects": [
         {
           "object_id": "BE-BSW-P01-CONTEXT",
@@ -22290,6 +22343,1829 @@
           "decision_kind": "CROSS_PAGE_REALLOCATION_EXPECTED_OUTCOME_CLAIM"
         },
         {
+          "object_id": "BE-BSW-P54-U02-71a04ffac2cb",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 2",
+          "source_excerpt": "Eine gerechte Steuerpolitik für Berlin",
+          "source_text_sha256": "71a04ffac2cb359229b05287c8d9aa2dd6dc3aa6e72a38353f3c53839aeaaa1f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U02-71a04ffac2cb",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P54-U06-f6154a193610",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 6",
+          "source_excerpt": "Gewerbesteuer dem Niveau anderer Großstädte anpassen",
+          "source_text_sha256": "f6154a19361006cedb7c3822435fa874b44806fce1c03b60bef759aa5fb02cfd",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U06-f6154a193610",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P54-U09-ec438404117f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 9",
+          "source_excerpt": "Reiche Erben und Multimillionäre stärker besteuern",
+          "source_text_sha256": "ec438404117f9b2224bac514343eb0a62968ce65fb11a6fa7a0ab4a09ae47bb2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U09-ec438404117f",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P54-U03-A01-dc6129e709d1",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 3, effect atom 1 of 1",
+          "source_excerpt": "Das BSW fordert ein gerechteres Steuersystem, in dem Großkonzerne, Großerben und Superreiche keine Privilegien mehr genießen, sondern sich entsprechend ihrer Leistungsfähigkeit angemessen an der Finanzierung unseres Gemeinwesens beteiligen…",
+          "source_text_sha256": "dc6129e709d1b147d32e5c6f946e0753f2c028cb9e4012262cba979e76900893",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_TAX_POLICY_GOAL_AND_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U03-A01-dc6129e709d1",
+          "decision_kind": "DISTRIBUTIONAL_TAX_POLICY_GOAL"
+        },
+        {
+          "object_id": "BE-BSW-P54-U04-A01-86fc9687ba01",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 4, effect atom 1 of 2",
+          "source_excerpt": "Um finanzielle Spielräume für unser Gemeinwohl zu schaffen, müssen die von Lobbyisten erzielten Lücken in unserem Steuersystem geschlossen und Steuervermeidung und Steuerhinterziehung aktiv bekämpft werden.",
+          "source_text_sha256": "86fc9687ba0165d99bcbd32d31bf70af67c319ea56cdb49726cb9faffdaead7b",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U04-A01-86fc9687ba01",
+          "decision_kind": "UNSPECIFIED_TAX_LOOPHOLE_AVOIDANCE_AND_EVASION_PACKAGE"
+        },
+        {
+          "object_id": "BE-BSW-P54-U04-A02-313715ff652f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 4, effect atom 2 of 2",
+          "source_excerpt": "Bundes- und Landesrechnungshof dokumentieren regelmäßig, dass uns hohe Einnahmen durch fehlendes Personal in der Finanzverwaltung und zu seltene Prüfungen bei Großbetrieben entgehen.",
+          "source_text_sha256": "313715ff652fc3b1af6945260cdaa9d4d2d6113007a408a919d163f40a56097e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EVIDENTIARY_AND_CAUSAL_SOURCE_CLAIM_REVIEWED_WITH_PARTIAL_CURRENT_SUPPORT",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U04-A02-313715ff652f",
+          "decision_kind": "TAX_ADMINISTRATION_CAPACITY_SOURCE_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P54-U05-A01-0b1e67cac6d5",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 5, effect atom 1 of 2",
+          "source_excerpt": "Da viele Steuerarten der Bundesgesetzgebung unterliegen, kann Berlin Änderungen hier lediglich durch Bundesratsinitiativen anstoßen.",
+          "source_text_sha256": "0b1e67cac6d59142ea173dd7af106ebc21e7fb4b51a2e4514261a2c03e7b71bf",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_COMPETENCE_AND_ADVOCACY_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U05-A01-0b1e67cac6d5",
+          "decision_kind": "TAX_COMPETENCE_AND_BUNDESRAT_CONTEXT"
+        },
+        {
+          "object_id": "BE-BSW-P54-U05-A02-352fe7d76b1a",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 5, effect atom 2 of 2",
+          "source_excerpt": "Das BSW sieht nur bei der Gewerbesteuer die Möglichkeit, durch eigene landesrechtliche Regelungen erhebliche zusätzliche Einnahmen zu erzielen.",
+          "source_text_sha256": "352fe7d76b1a55b1964a19e9e2b1f907ec9905836860731e2f584b00c4497e74",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_OVERBROAD_COMPETENCE_AND_EXPECTED_REVENUE_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U05-A02-352fe7d76b1a",
+          "decision_kind": "OVERBROAD_TAX_COMPETENCE_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P54-U07-a80f189afb0e",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 7",
+          "source_excerpt": "Der von den Gemeinden selbst festzulegende Gewerbesteuer-Hebesatz beträgt in Berlin seit 1999, das heißt seit nunmehr 26 Jahren, unverändert 410 Prozent, während er in Potsdam und Hamburg bei 470 Prozent liegt, in Köln bei 475, in München …",
+          "source_text_sha256": "a80f189afb0eaf21289d84614525397c38a9152d186c59a830f3d5ee42ecc9d3",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_TAX_RATE_BASELINE_AND_COMPARATOR_SOURCE_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U07-a80f189afb0e",
+          "decision_kind": "TRADE_TAX_RATE_COMPARATOR_CONTEXT"
+        },
+        {
+          "object_id": "BE-BSW-P54-U08-A01-b87a16d8da71",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 8, effect atom 1 of 2",
+          "source_excerpt": "Das BSW setzt sich daher dafür ein, den Gewerbesteuer-Hebesatz in Berlin dem Niveau der anderen Großstädte anzupassen, allerdings höchstens auf 460 Prozent festzulegen.",
+          "source_text_sha256": "b87a16d8da71f23bdd973bde9d7fb0a1fafbb35e7abb5eab8d20cef2d59a7a09",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U08-A01-b87a16d8da71",
+          "decision_kind": "BERLIN_TRADE_TAX_MULTIPLIER_UP_TO_460"
+        },
+        {
+          "object_id": "BE-BSW-P54-U08-A02-521982dff2ea",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 8, effect atom 2 of 2",
+          "source_excerpt": "Dadurch könnten Mehreinnahmen von etwa 400 Millionen Euro jährlich erzielt werden, die durch sinnvollen Einsatz in Infrastruktur und Bildung Berlins Attraktivität für weitere Unternehmensansiedlungen deutlich erhöhen würden.",
+          "source_text_sha256": "521982dff2ea796dfce18c2a5187b3118cad1808f89d185a3db5ccaf856e665d",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_STATIC_REVENUE_SCENARIO_AND_SECOND_ORDER_OUTCOME_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U08-A02-521982dff2ea",
+          "decision_kind": "TRADE_TAX_STATIC_REVENUE_AND_ATTRACTIVENESS_SCENARIO"
+        },
+        {
+          "object_id": "BE-BSW-P54-U10-670bb94d551b",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 10",
+          "source_excerpt": "Das Grundgesetz regelt, dass die Erbschafts- und Schenkungsteuer sowie die Vermögenssteuer den Bundesländern zufließen. Durch vernünftige und sozial gerechte Reformen wären hier enorme Mehreinnahmen für das Land Berlin möglich.",
+          "source_text_sha256": "670bb94d551b542f04ea5038a7f83317874be6a4547c58e61354f11e183a5174",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_TAX_REVENUE_COMPETENCE_AND_EXPECTED_YIELD_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U10-670bb94d551b",
+          "decision_kind": "INHERITANCE_AND_WEALTH_TAX_REVENUE_CONTEXT"
+        },
+        {
+          "object_id": "BE-BSW-P54-U11-ba784252aeff",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 54 of 66, normalized source unit 11",
+          "source_excerpt": "Zahlreiche Privilegien für Erben von Multimillionen- und Milliardenvermögen haben dazu geführt, dass Erben kleinerer Vermögen in Deutschland mittlerweile mehr Erbschaftssteuer zahlen als Großerben. Aufgrund der Ausnahmen für sehr große Bet…",
+          "source_text_sha256": "ba784252aeff52ae4ddbc4ce1e384fcb5ebc7d8e6aa103de1e83ae9d80b34f3d",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_AND_TAX_EXPENDITURE_DIAGNOSIS_SOURCE_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457955882",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md",
+            "file_sha256": "68bfbaad243b077fb704c8690e85fc11a64828206235548f1c00da2767642a98"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457955882; exact object BE-BSW-P54-U11-ba784252aeff",
+          "decision_kind": "INHERITANCE_TAX_RELIEF_DIAGNOSIS"
+        },
+        {
+          "object_id": "BE-BSW-P55-U01-A01-da8a10b6eef8",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 1, effect atom 1 of 2",
+          "source_excerpt": "Wir fordern, dass sich Berlin in einer Bundesratsinitiative dafür einsetzt, dass diese Begünstigungen beendet werden.",
+          "source_text_sha256": "da8a10b6eef8d086ae1229cf70e1ce14f5c06d7f258333dd2cfd74c8daf1fad3",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U01-A01-da8a10b6eef8",
+          "decision_kind": "UNSPECIFIED_LARGE_INHERITANCE_RELIEF_REFORM"
+        },
+        {
+          "object_id": "BE-BSW-P55-U01-A02-c58245d3b4ac",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 1, effect atom 2 of 2",
+          "source_excerpt": "Wir schlagen darüber hinaus vor, dass der Steuerfreibetrag für Erbschaften und Schenkungen bei Verwandten ersten Grades auf eine Million Euro und ein übliches selbstgenutztes Wohneigentum angehoben wird und diese Freibeträge einmal im Lebe…",
+          "source_text_sha256": "c58245d3b4ac443d972fb0e3db2e6fdc81deb2fc9f196ba84c8f2f416f6e1217",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED_WITH_SCOPE_DEFINITION_GUARD",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U01-A02-c58245d3b4ac",
+          "decision_kind": "INHERITANCE_ALLOWANCE_AND_FAMILY_HOME_PACKAGE"
+        },
+        {
+          "object_id": "BE-BSW-P55-U02-A01-71248b7e908c",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 2, effect atom 1 of 4",
+          "source_excerpt": "Die Vermögenssteuer wird sogar seit 1997 gar nicht mehr erhoben, weil sich die regierenden Parteien nicht auf eine gerechte Regelung einigen können.",
+          "source_text_sha256": "71248b7e908c1d6b374ecee046eb028856edbe35fc2bda87551077ada1aa1255",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_LEGAL_HISTORY_PLUS_POLITICAL_CAUSAL_ATTRIBUTION_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U02-A01-71248b7e908c",
+          "decision_kind": "WEALTH_TAX_LEGAL_AND_POLITICAL_HISTORY"
+        },
+        {
+          "object_id": "BE-BSW-P55-U02-A02-ae5ce1f87592",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 2, effect atom 2 of 4",
+          "source_excerpt": "Sie käme den Bundesländern direkt zugute.",
+          "source_text_sha256": "ae5ce1f87592db72250b4624bd28aecb211a2a11297a3717ffc96efc44472367",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_REVENUE_ASSIGNMENT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U02-A02-ae5ce1f87592",
+          "decision_kind": "WEALTH_TAX_LAENDER_REVENUE_ASSIGNMENT"
+        },
+        {
+          "object_id": "BE-BSW-P55-U02-A03-269102bfaf17",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 2, effect atom 3 of 4",
+          "source_excerpt": "Wir fordern daher eine Bundesratsinitiative Berlins, um die Vermögenssteuer für Multimillionäre und Milliardäre schnellstmöglich zu reaktivieren.",
+          "source_text_sha256": "269102bfaf17da0ffc70d906307c2b0327c1377beea398188bba4d58d7d68d6e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_ADVOCACY_AND_PARENT_RESTATEMENT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U02-A03-269102bfaf17",
+          "decision_kind": "WEALTH_TAX_BUNDESRAT_ADVOCACY_PARENT"
+        },
+        {
+          "object_id": "BE-BSW-P55-U02-A04-0c31c531f143",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 2, effect atom 4 of 4",
+          "source_excerpt": "Wir plädieren für eine Besteuerung des Nettovermögens (abzüglich Schulden) oberhalb eines Freibetrags von fünf Millionen Euro mit einem Steuersatz von 1 Prozent, über 100 Millionen Euro 2 Prozent, über einer Milliarde Euro 3 Prozent.",
+          "source_text_sha256": "0c31c531f14359b2c126f45546a5c05e2cf1ecd8fe476e63dd79e0fd757f6e36",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U02-A04-0c31c531f143",
+          "decision_kind": "PROGRESSIVE_NET_WEALTH_TAX_SCHEDULE"
+        },
+        {
+          "object_id": "BE-BSW-P55-U03-3df906bc9542",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 3",
+          "source_excerpt": "Steuerschlupflöcher schließen",
+          "source_text_sha256": "3df906bc954244796a2d9935841ba95daf676abfd6ad19117da800f91c6df190",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U03-3df906bc9542",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P55-U04-A01-206ce780628e",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 4, effect atom 1 of 2",
+          "source_excerpt": "Wir fordern eine Bundesratsinitiative Berlins für eine strengere Begrenzung von sogenannten Share Deals.",
+          "source_text_sha256": "206ce780628ef76580031e6ad695151a40aa975b5af28db2c86a1565397531f5",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U04-A01-206ce780628e",
+          "decision_kind": "UNSPECIFIED_SHARE_DEAL_LIMITATION"
+        },
+        {
+          "object_id": "BE-BSW-P55-U04-A02-80b639d24858",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 4, effect atom 2 of 2",
+          "source_excerpt": "Damit vermeiden Wohnungskonzerne in vielen Fällen die Grunderwerbsteuer, während andere Käufer diese zahlen müssen.",
+          "source_text_sha256": "80b639d248588ef48c9e0e45ba8f3722f858a9e1c7d7d8e03568d5e0d101e4aa",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_AND_TAX_AVOIDANCE_DIAGNOSIS_SOURCE_CLAIM_REVIEWED_WITH_CURRENT_LAW_GUARD",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U04-A02-80b639d24858",
+          "decision_kind": "SHARE_DEAL_TAX_AVOIDANCE_SOURCE_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P55-U05-A01-15a1ef848011",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 5, effect atom 1 of 2",
+          "source_excerpt": "Wir wollen keine Spekulation mit Wohnungen, sondern Investitionen in Wohnungsbau fördern.",
+          "source_text_sha256": "15a1ef848011f412599c78e0f0519329f8630ff82f6d1a6ba5841a0a556d1a84",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_HOUSING_AND_TAX_POLICY_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U05-A01-15a1ef848011",
+          "decision_kind": "HOUSING_CONSTRUCTION_AND_ANTI_SPECULATION_GOAL"
+        },
+        {
+          "object_id": "BE-BSW-P55-U05-A02-d9f919eabd56",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 5, effect atom 2 of 2",
+          "source_excerpt": "Deshalb soll sich Berlin in einer Bundesratsinitiative dafür einsetzen, dass die Befreiung vermögensverwaltender Immobiliengesellschaften von der Gewerbesteuer abgeschafft und durch gezielte Fördermaßnahmen ersetzt wird.",
+          "source_text_sha256": "d9f919eabd56c7cc5888848147be4f9f78ac0de06548eac2f29d75b7ef8f4c8e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-BSW-P55-U05-A02-C01-875caaa755cf",
+            "BE-BSW-P55-U05-A02-C02-b3ca619913c5"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U05-A02-d9f919eabd56",
+          "decision_kind": "COMPOUND_PROPERTY_TAX_RELIEF_AND_SUBSIDY_PARENT"
+        },
+        {
+          "object_id": "BE-BSW-P55-U06-A01-dd0e871e218f",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 6, effect atom 1 of 2",
+          "source_excerpt": "Kapitaleinkünfte dürfen gegenüber Arbeitseinkünften nicht länger privilegiert werden, sondern sind wie alle anderen Einkünfte in der Steuererklärung offenzulegen und dem persönlichen Steuersatz zu unterwerfen.",
+          "source_text_sha256": "dd0e871e218f2bd74fe50d29558e59cc23e5ea9f0adb9aa46568421a3f22c9b8",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U06-A01-dd0e871e218f",
+          "decision_kind": "CAPITAL_INCOME_PERSONAL_TAX_RATE"
+        },
+        {
+          "object_id": "BE-BSW-P55-U06-A02-dffcdce88a1d",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 6, effect atom 2 of 2",
+          "source_excerpt": "Kursgewinne aus Wertpapieren sind weiterhin unabhängig von der Haltedauer zu besteuern und die bestehenden Einschränkungen der Verlustverrechnung aus Kapitalvermögen sind beizubehalten.",
+          "source_text_sha256": "dffcdce88a1ddaff249f5ad3e105299026b28fc4e5cdf2c7e93d68f3b396d812",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_STATUS_QUO_POLICY_GUARD_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U06-A02-dffcdce88a1d",
+          "decision_kind": "SECURITIES_GAINS_AND_LOSS_OFFSET_STATUS_QUO_GUARD"
+        },
+        {
+          "object_id": "BE-BSW-P55-U07-A01-e5d08f11946e",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 7, effect atom 1 of 2",
+          "source_excerpt": "Wir fordern darüber hinaus, dass Gewinne aus der Veräußerung vermieteter, nicht selbstgenutzter Immobilien wie alle anderen Einkünfte versteuert werden.",
+          "source_text_sha256": "e5d08f11946e7721fb6cecf6df40cbdd99a34f7d396b2f6023220030c10dbe89",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U07-A01-e5d08f11946e",
+          "decision_kind": "RENTED_PROPERTY_PRIVATE_SALE_GAIN_TAX"
+        },
+        {
+          "object_id": "BE-BSW-P55-U07-A02-f1a643ac0690",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 7, effect atom 2 of 2",
+          "source_excerpt": "Das sollte auch für Wertzuwächse beim Verkauf von Bitcoins, Kryptowährungen und Goldgeschäften gelten.",
+          "source_text_sha256": "f1a643ac0690274a398c13a6327fcf4614f5d59d4a085b5450c7ecb020ce9bd8",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED_WITH_ASSET_SCOPE_GUARD",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; exact object BE-BSW-P55-U07-A02-f1a643ac0690",
+          "decision_kind": "CRYPTO_AND_GOLD_PRIVATE_SALE_GAIN_TAX"
+        },
+        {
+          "object_id": "BE-BSW-P56-U01-5a454a999b21",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 1",
+          "source_excerpt": "Natur, Umwelt, Sauberkeit und Tierschutz Berlin ist eine Stadt voller Leben. Von den Menschen, die hier wohnen, über die Tiere, die mit uns leben, bis hin zu den Grünflächen, die unsere Luft kühlen und unsere Stadt atmen lassen.",
+          "source_text_sha256": "5a454a999b21ebe390cc1888f01787072eaf2bdacf588d85f43394c37b95bdf2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_SECTION_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U01-5a454a999b21",
+          "decision_kind": "ENVIRONMENT_SECTION_CONTEXT"
+        },
+        {
+          "object_id": "BE-BSW-P56-U02-0c2da50b5b95",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 2",
+          "source_excerpt": "Berlin braucht endlich eine Umweltpolitik mit Vernunft, sozialem Blick und Herz für die Stadt. Unsere Stadt ist nicht nur aus Beton und Straßen gemacht. Sie lebt durch ihre Bäume, ihre Parks, ihre Höfe, ihre Gärten. Doch genau diese Lebens…",
+          "source_text_sha256": "0c2da50b5b954da1296a6663fc89e290bd9034fe4dbd6e4263f9bac79d7130cf",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_MULTI_PROBLEM_AND_NORMATIVE_ENVIRONMENTAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U02-0c2da50b5b95",
+          "decision_kind": "ENVIRONMENTAL_PROBLEM_AND_NORMATIVE_FRAME"
+        },
+        {
+          "object_id": "BE-BSW-P56-U03-4b3e7f67a04f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 3",
+          "source_excerpt": "Eine Stadt, die ihre Natur verliert, verliert auch ihre Lebensqualität. Umweltschutz darf kein Projekt für Privilegierte sein, sondern muss allen zugutekommen: den Familien auf engem Raum, den älteren Menschen ohne Balkon, den Kindern, die…",
+          "source_text_sha256": "4b3e7f67a04ff482aebc158f18666b143251bc9e7bcda4a5d1c72145abe50b98",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_ENVIRONMENTAL_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U03-4b3e7f67a04f",
+          "decision_kind": "DISTRIBUTIONAL_ENVIRONMENTAL_GOAL"
+        },
+        {
+          "object_id": "BE-BSW-P56-U04-ba7e2cfc5ada",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 4",
+          "source_excerpt": "Stadtgrün, Bäume und Biodiversität stärken",
+          "source_text_sha256": "ba7e2cfc5ada38cd1d606d779e0e341d1702290f97795772bb452999dc8b0422",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U04-ba7e2cfc5ada",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P56-U10-dbfd711bcfa0",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 10",
+          "source_excerpt": "Biodiversität und nachhaltige Nutzung",
+          "source_text_sha256": "dbfd711bcfa0bb6d5eba8d9f88ecccc2be32dd903a7187d6e5b3c1df7d2a4128",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U10-dbfd711bcfa0",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P56-U05-A01-3a8b61c787f6",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 5, effect atom 1 of 3",
+          "source_excerpt": "Grünflächen sind kein Luxus, sondern Daseinsvorsorge.",
+          "source_text_sha256": "3a8b61c787f6b156741839301b5720dea4f01d522edcc385d8a567ca29493e47",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_PUBLIC_GREEN_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U05-A01-3a8b61c787f6",
+          "decision_kind": "PUBLIC_GREEN_NORMATIVE_GOAL"
+        },
+        {
+          "object_id": "BE-BSW-P56-U05-A02-d463e232667b",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 5, effect atom 2 of 3",
+          "source_excerpt": "Sie schützen die Umwelt senken die Temperaturen, speichern Wasser und sind Orte der Erholung und Begegnung.",
+          "source_text_sha256": "d463e232667bc6c9cf60d983d83cb33e0a92df19edee07af6f8f5990161baf9a",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_ECOSYSTEM_AND_SOCIAL_SERVICE_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U05-A02-d463e232667b",
+          "decision_kind": "GREEN_SPACE_ECOSYSTEM_AND_SOCIAL_OUTCOME_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P56-U05-A03-82897ddbd285",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 5, effect atom 3 of 3",
+          "source_excerpt": "Wir wollen, dass Berlin seine grüne Seele behält.",
+          "source_text_sha256": "82897ddbd2852dc1790a36ecfb1d2e6b6686f7372e88f95b260566a0b5c56ee2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_END_STATE_AND_RHETORICAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U05-A03-82897ddbd285",
+          "decision_kind": "GREEN_CITY_RHETORICAL_END_STATE"
+        },
+        {
+          "object_id": "BE-BSW-P56-U06-A01-69da8dccb525",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 6, effect atom 1 of 3",
+          "source_excerpt": "Dazu gehört: Der dauerhafte Schutz von Grünflächen und Kleingärten.",
+          "source_text_sha256": "69da8dccb525f1c71aebb5c2435db0f10d2a1560bd36546344d426ca7f4f14c5",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U06-A01-69da8dccb525",
+          "decision_kind": "UNSPECIFIED_PERMANENT_GREEN_AND_ALLOTMENT_PROTECTION"
+        },
+        {
+          "object_id": "BE-BSW-P56-U06-A02-e817079f604c",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 6, effect atom 2 of 3",
+          "source_excerpt": "Verbindliche Begrünungspflichten für Neubauten: begrünte Dächer, Fassaden und Innenhöfe sollen die Regel sein.",
+          "source_text_sha256": "e817079f604c0fdf34787705e2a4237b8beffd0ef9b05bc16855d27ed967ae24",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U06-A02-e817079f604c",
+          "decision_kind": "BINDING_NEW_BUILD_GREENING_REQUIREMENTS"
+        },
+        {
+          "object_id": "BE-BSW-P56-U06-A03-7b3df59eacdb",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 6, effect atom 3 of 3",
+          "source_excerpt": "Entsiegelung statt Versiegelung: Asphaltflächen müssen, wo immer möglich, für Regenwasser, Schatten und Leben weichen.",
+          "source_text_sha256": "7b3df59eacdbb364b1fda4d99d8842ff14e2cbee93e439cfac5d65b41c62cccc",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED_WITH_SITE_SELECTION_GUARD",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U06-A03-7b3df59eacdb",
+          "decision_kind": "DESEALING_ASPHALT_SURFACES"
+        },
+        {
+          "object_id": "BE-BSW-P56-U07-A01-26fe49e6c5a3",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 7, effect atom 1 of 5",
+          "source_excerpt": "Die zentralen Forderungen des Berliner Baumbegehrens sind inzwischen parteiübergreifend beschlossen.",
+          "source_text_sha256": "26fe49e6c5a34ed413f8efb91302e498eb3fea8a0d3e53497e1103a3d71938e0",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CURRENT_LEGAL_LIFECYCLE_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U07-A01-26fe49e6c5a3",
+          "decision_kind": "TREE_LAW_CURRENT_LIFECYCLE_CONTEXT"
+        },
+        {
+          "object_id": "BE-BSW-P56-U07-A02-0880a4351ea7",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 7, effect atom 2 of 5",
+          "source_excerpt": "Jetzt braucht Berlin mehr als gute Vorsätze: Wir wollen, dass aus diesen Beschlüssen echte Baumoffensiven werden.",
+          "source_text_sha256": "0880a4351ea7bf85f4bd87f143f298312381eaafeda635de31e894fb534d367b",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_IMPLEMENTATION_GOAL_AND_RESTATEMENT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U07-A02-0880a4351ea7",
+          "decision_kind": "TREE_OFFENSIVE_IMPLEMENTATION_GOAL"
+        },
+        {
+          "object_id": "BE-BSW-P56-U07-A03-f2cb64189027",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 7, effect atom 3 of 5",
+          "source_excerpt": "Dazu gehören eine verlässliche Finanzierung im Haushalt und klare Priorität für Neupflanzungen und Pflege.",
+          "source_text_sha256": "f2cb64189027c3aa6cc651f115c473d2c04fbb6c69358cb1fbeadcedcfc69e34",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U07-A03-f2cb64189027",
+          "decision_kind": "TREE_PLANTING_AND_CARE_FINANCING"
+        },
+        {
+          "object_id": "BE-BSW-P56-U07-A04-bc9c60f42fdd",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 7, effect atom 4 of 5",
+          "source_excerpt": "Bäume sind unsere beste Klimaanlage.",
+          "source_text_sha256": "bc9c60f42fddf33df8d97f940165be14cdaecedeccb79cc868af39a1dbff6411",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_RHETORICAL_ECOSYSTEM_SERVICE_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U07-A04-bc9c60f42fdd",
+          "decision_kind": "TREE_ECOSYSTEM_RHETORICAL_FRAME"
+        },
+        {
+          "object_id": "BE-BSW-P56-U07-A05-96a2abc8b9b8",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 7, effect atom 5 of 5",
+          "source_excerpt": "Sie senken die Hitze, reinigen die Luft, binden Feinstaub und spenden Geborgenheit in einer Stadt, die oft zu laut und zu hektisch ist.",
+          "source_text_sha256": "96a2abc8b9b8714f0f829cd3cb5036777040e7b171fcf06123c6ea50434e3a31",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_TREE_ECOSYSTEM_AND_WELLBEING_OUTCOME_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U07-A05-96a2abc8b9b8",
+          "decision_kind": "TREE_ECOSYSTEM_AND_WELLBEING_OUTCOME_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P56-U08-A01-ef852abf6e1c",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 8, effect atom 1 of 1",
+          "source_excerpt": "Das Schwammstadt-Prinzip soll Leitlinie aller Planungen werden: Regenwasser soll nicht in die Kanalisation fließen, sondern vor Ort versickern, gespeichert oder zur Bewässerung genutzt werden.",
+          "source_text_sha256": "ef852abf6e1c13eaad9d205075b66ec3fe8a45482c054e8b102ddf87c04632b4",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CURRENT_POLICY_DIRECTION_RESTATEMENT_REVIEWED_WITH_ADDITIONALITY_GUARD",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U08-A01-ef852abf6e1c",
+          "decision_kind": "SPONGE_CITY_CURRENT_POLICY_RESTATEMENT"
+        },
+        {
+          "object_id": "BE-BSW-P56-U09-A01-a8fd3c50a880",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 9, effect atom 1 of 3",
+          "source_excerpt": "Wir fordern: Mehr Trinkwasserstellen im öffentlichen Raum.",
+          "source_text_sha256": "a8fd3c50a8803a7b836c6ff02678d50cc887664170ead895ca8852541ffc840e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U09-A01-a8fd3c50a880",
+          "decision_kind": "PUBLIC_DRINKING_WATER_POINTS_EXPANSION"
+        },
+        {
+          "object_id": "BE-BSW-P56-U09-A02-0d968c9c0e2f",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 9, effect atom 2 of 3",
+          "source_excerpt": "Begrünte Plätze und Parks, die Wasser speichern und Verdunstungskühle erzeugen.",
+          "source_text_sha256": "0d968c9c0e2fdc21e5b047c2ec2e7375823b411945ac5c7bae8db9a13632ce33",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U09-A02-0d968c9c0e2f",
+          "decision_kind": "BLUE_GREEN_PUBLIC_SPACE_RETENTION_AND_COOLING"
+        },
+        {
+          "object_id": "BE-BSW-P56-U09-A03-4eac969acfa4",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 9, effect atom 3 of 3",
+          "source_excerpt": "Entsiegelung und verstärkte Regenwassernutzung im privaten, öffentlichen und gewerblichen Bereich.",
+          "source_text_sha256": "4eac969acfa44d5bb075ca55e30301093d6555c270bf32172773b1df8f1e0414",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_BROADER_SCOPE_RESTATEMENT_AND_POLICY_DIRECTION_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U09-A03-4eac969acfa4",
+          "decision_kind": "CROSS_SECTOR_DESEALING_AND_RAINWATER_SCOPE_RESTATEMENT"
+        },
+        {
+          "object_id": "BE-BSW-P56-U11-A01-bc8687a59195",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 1 of 3",
+          "source_excerpt": "Berlin kann mehr als Rasenflächen und Kiesbeete.",
+          "source_text_sha256": "bc8687a591951512a1de8a5b70cc8488843fa75924c1e87b85231cfb26429d0f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_RHETORICAL_LANDSCAPE_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U11-A01-bc8687a59195",
+          "decision_kind": "BIODIVERSITY_LANDSCAPE_RHETORICAL_FRAME"
+        },
+        {
+          "object_id": "BE-BSW-P56-U11-A02-dbffc3ebd2c7",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 2 of 3",
+          "source_excerpt": "Wir wollen Blühwiesen, Streuobstbestände, urbane Landwirtschaft und ökologische Pflege statt kahler Flächenpflege.",
+          "source_text_sha256": "dbffc3ebd2c718ac8dc7c8a6d1bfa973cad3a812d2ec5bf836cff3ed5ccf9c3b",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-BSW-P56-U11-A02-C01-b6b4679ed02a",
+            "BE-BSW-P56-U11-A02-C02-600064174ae3",
+            "BE-BSW-P56-U11-A02-C03-84d3164b7799",
+            "BE-BSW-P56-U11-A02-C04-c32372da3039"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U11-A02-dbffc3ebd2c7",
+          "decision_kind": "FOUR_DISTINCT_LAND_USE_AND_MAINTENANCE_LEVERS"
+        },
+        {
+          "object_id": "BE-BSW-P56-U11-A03-727b5dd277d1",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 3 of 3",
+          "source_excerpt": "Artenreiche Pflanzenflächen bieten Nahrung und Lebensräume für Insekten und andere Bestäuber und nur wenn diese ökologischen Kreisläufe funktionieren, bleiben unsere Grünanlagen dauerhaft",
+          "source_text_sha256": "727b5dd277d1acb45094bbb51c03a97f307591fc17c8a6edb187ad7f4071f057",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-BSW-P56P57-U11U01-M01-d009b15744c4"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; exact object BE-BSW-P56-U11-A03-727b5dd277d1",
+          "decision_kind": "P56_P57_BROKEN_SENTENCE_FRAGMENT"
+        },
+        {
+          "object_id": "BE-BSW-P57-U01-17cf2a9d63b6",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 1",
+          "source_excerpt": "gesund, widerstandsfähig und vielfältig. Biodiversität ist kein Schlagwort, sie macht die Stadt resilient und lebendig.",
+          "source_text_sha256": "17cf2a9d63b6c5f4b56d9acd305ff8d37e9a06bec6dc9712f8b63d5364e60603",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-BSW-P56P57-U11U01-M01-d009b15744c4"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U01-17cf2a9d63b6",
+          "decision_kind": "P56_P57_BROKEN_SENTENCE_FRAGMENT"
+        },
+        {
+          "object_id": "BE-BSW-P57-U02-5651286130a6",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 2",
+          "source_excerpt": "Bauwende und sozialer Umweltschutz",
+          "source_text_sha256": "5651286130a6ece4e1bec54f4b6ec8db0fb76b08397c31c941c9ac9c78ad6248",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U02-5651286130a6",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U06-583dd7066b3f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 6",
+          "source_excerpt": "Umweltschutz mit Augenmaß und sozialer Vernunft",
+          "source_text_sha256": "583dd7066b3f760ba14f5f7d9d91506107ebf73bdbec285bf6aaee46d34274ce",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U06-583dd7066b3f",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U08-c901f1e855e1",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 8",
+          "source_excerpt": "Umweltbildung – Wissen, das Zukunft schafft",
+          "source_text_sha256": "c901f1e855e123d309d0f5390eb691e2d283b09108109523032940cd88e374f2",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U08-c901f1e855e1",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U03-A01-b6de5f05466b",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 3, effect atom 1 of 2",
+          "source_excerpt": "Berlin kann bezahlbar, klimaneutral und nachhaltig bauen.",
+          "source_text_sha256": "b6de5f05466b9bbbf1e614bea63dd5e8a27492106143e6193a66d2daadeb51f8",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_MULTI_GOAL_END_STATE_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U03-A01-b6de5f05466b",
+          "decision_kind": "AFFORDABILITY_CLIMATE_AND_SUSTAINABILITY_END_STATE"
+        },
+        {
+          "object_id": "BE-BSW-P57-U03-A02-a613e111c285",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 3, effect atom 2 of 2",
+          "source_excerpt": "Wir setzen uns für eine grundlegende Bauwende ein.",
+          "source_text_sha256": "a613e111c28593d915d6baa4f27fb2dc082b4dc8929bf58d44bc56bfc5426dfd",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_BROAD_TRANSFORMATION_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U03-A02-a613e111c285",
+          "decision_kind": "CONSTRUCTION_TRANSFORMATION_GOAL"
+        },
+        {
+          "object_id": "BE-BSW-P57-U04-A01-26c8db02d668",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 4, effect atom 1 of 3",
+          "source_excerpt": "Wir fordern: Ein Landesförderprogramm für ökologischen Modulbau, vor allem im sozialen und kommunalen Wohnungsbau.",
+          "source_text_sha256": "26c8db02d668b79e5b0863394cb59835f9807e48bd76e86ba89909952adeb5c7",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U04-A01-26c8db02d668",
+          "decision_kind": "ECOLOGICAL_MODULAR_CONSTRUCTION_FUNDING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U04-A02-cf7ab731924d",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 4, effect atom 2 of 3",
+          "source_excerpt": "Förderung von Forschung an biobasierten Baustoffen.",
+          "source_text_sha256": "cf7ab731924d1b12a2f3f0762af9695027a4f9ce49c6695194d2bd94c797d2d9",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U04-A02-cf7ab731924d",
+          "decision_kind": "BIOBASED_CONSTRUCTION_MATERIAL_RESEARCH_FUNDING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U04-A03-99ff8419a303",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 4, effect atom 3 of 3",
+          "source_excerpt": "Regionale Produktion durch Genossenschaften, Handwerksbetriebe und Start-ups – für lokale Arbeitsplätze und Wertschöpfung.",
+          "source_text_sha256": "99ff8419a303921faedb7ad43e76813beda384d28e2cb4f8cf9e79972678180c",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U04-A03-99ff8419a303",
+          "decision_kind": "UNSPECIFIED_REGIONAL_PRODUCTION_ACTOR_MIX"
+        },
+        {
+          "object_id": "BE-BSW-P57-U05-0b29878d67cf",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 5",
+          "source_excerpt": "Die Bauwirtschaft verursacht fast 40 % der CO₂-Emissionen in Deutschland. Eine nachhaltige Bauwende ist daher ein Schlüssel zu Umweltschutz, sozialem Wohnungsbau und Unabhängigkeit von globalen Lieferketten.",
+          "source_text_sha256": "0b29878d67cf3edc1bc2a061b80bdafb134cb8ecdc01541de65a81249f6d4df9",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_SOURCE_CLAIM_AND_SYSTEM_RATIONALE_REVIEWED_WITH_BOUNDARY_GUARD",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U05-0b29878d67cf",
+          "decision_kind": "CONSTRUCTION_EMISSIONS_AND_SYSTEM_RATIONALE_SOURCE_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P57-U07-A01-38fd230e452f",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 7, effect atom 1 of 6",
+          "source_excerpt": "Umweltschutz darf nicht zu sozialer Spaltung führen.",
+          "source_text_sha256": "38fd230e452f1afcb411c1f2f9e830c01ecd9aba9946976a06b845542d377121",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_NONCOMPENSATION_GUARD_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U07-A01-38fd230e452f",
+          "decision_kind": "SOCIAL_DIVISION_NONCOMPENSATION_GUARD"
+        },
+        {
+          "object_id": "BE-BSW-P57-U07-A02-7852c9aca530",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 7, effect atom 2 of 6",
+          "source_excerpt": "Energetische Sanierungen dürfen nicht zur Mietervertreibung führen.",
+          "source_text_sha256": "7852c9aca53063a7fa9418e35a9fd7cc2b863f45e8fdceb686c6aabdc41996cb",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_TENANT_AFFORDABILITY_AND_ANTI_DISPLACEMENT_GUARD_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U07-A02-7852c9aca530",
+          "decision_kind": "TENANT_AFFORDABILITY_AND_ANTI_DISPLACEMENT_GUARD"
+        },
+        {
+          "object_id": "BE-BSW-P57-U07-A03-99af9f1c6d75",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 7, effect atom 3 of 6",
+          "source_excerpt": "Umweltschutz braucht keinen Zwang, sondern Akzeptanz und Mitmachen.",
+          "source_text_sha256": "99af9f1c6d75bd5fb6c9c123cdb6be2b84ec23fd5e546749e402621ad444ad46",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_GOVERNANCE_AND_ACCEPTANCE_PRINCIPLE_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U07-A03-99af9f1c6d75",
+          "decision_kind": "ENVIRONMENTAL_GOVERNANCE_AND_ACCEPTANCE_PRINCIPLE"
+        },
+        {
+          "object_id": "BE-BSW-P57-U07-A04-4177859d42b2",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 7, effect atom 4 of 6",
+          "source_excerpt": "Eine saubere, grüne Stadt ist die beste Grundlage für Lebensqualität, Gesundheit und Gemeinschaft.",
+          "source_text_sha256": "4177859d42b21b9d9807a1cf7f13e873e947f17e9291837df3343dd8126267e5",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_MULTI_OUTCOME_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U07-A04-4177859d42b2",
+          "decision_kind": "CLEAN_GREEN_CITY_MULTI_OUTCOME_RATIONALE"
+        },
+        {
+          "object_id": "BE-BSW-P57-U07-A05-c4db0579a7f0",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 7, effect atom 5 of 6",
+          "source_excerpt": "Wenn Straßen sauber sind, Bäume gepflegt und Parks belebt, wächst auch das Vertrauen in Politik und Stadt.",
+          "source_text_sha256": "c4db0579a7f0151002a3f469c01af14e69d27fd2171d26dfb8b3969465e99178",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CAUSAL_TRUST_OUTCOME_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U07-A05-c4db0579a7f0",
+          "decision_kind": "PUBLIC_SPACE_TO_TRUST_CAUSAL_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P57-U07-A06-2dd62ed45722",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 7, effect atom 6 of 6",
+          "source_excerpt": "Berlin verdient eine Umweltpolitik, die an den Menschen denkt, bevor sie neue Vorschriften erlässt – vernünftig, solidarisch und zukunftsfähig.",
+          "source_text_sha256": "2dd62ed4572277302633b1051a16f3f2ca061d6c5838103f2490e149de6566c7",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_POLICY_DESIGN_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U07-A06-2dd62ed45722",
+          "decision_kind": "PEOPLE_FIRST_ENVIRONMENTAL_POLICY_FRAME"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A01-6ddb4afbc3e5",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 1 of 8",
+          "source_excerpt": "Umweltbildung stärkt Achtsamkeit, Gesundheit und Verantwortungsbewusstsein.",
+          "source_text_sha256": "6ddb4afbc3e5b51e39cec90d476d24ca5ea702eeda5e756c690ff30f23794617",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_EDUCATIONAL_AND_HEALTH_OUTCOME_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A01-6ddb4afbc3e5",
+          "decision_kind": "ENVIRONMENTAL_EDUCATION_OUTCOME_CLAIM"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A02-0e30ef21b357",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 2 of 8",
+          "source_excerpt": "Wer Natur erlebt und versteht, sei es im Schulgarten, in Kitas, in Stadtteilzentren oder in lokalen Projekten, schützt sie auch.",
+          "source_text_sha256": "0e30ef21b357d8cbe37a516a08515a190da1927b346e8d08ae8eb7b701565eab",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_BEHAVIOURAL_CAUSAL_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A02-0e30ef21b357",
+          "decision_kind": "NATURE_LEARNING_BEHAVIOURAL_CAUSAL_RATIONALE"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A03-c13cc150ad48",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 3 of 8",
+          "source_excerpt": "Wir fördern Einrichtungen und Initiativen wie Freilandlabore, urbane Waldgärten, Umweltzentren, sowie Lernorte, die naturwissenschaftliche und praktische Umweltbildung generationenübergreifend vermitteln.",
+          "source_text_sha256": "c13cc150ad48d4a438a9a45368cbb2ff36dd71512ae06e6ec442c7bbe8e41bdd",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A03-c13cc150ad48",
+          "decision_kind": "ENVIRONMENTAL_EDUCATION_INSTITUTION_AND_LEARNING_SITE_FUNDING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A04-0d345a906026",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 4 of 8",
+          "source_excerpt": "Dafür braucht es verlässliche Strukturen und langfristige Finanzierung.",
+          "source_text_sha256": "0d345a906026c023824d063e8b0ec07dbf23761e6187bee72d5e8ae746a57542",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_DELIVERY_AND_FINANCING_GUARD_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A04-0d345a906026",
+          "decision_kind": "ENVIRONMENTAL_EDUCATION_FINANCING_GUARD"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A05-5d5da2733c91",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 5 of 8",
+          "source_excerpt": "Berlin soll Umweltbildung als öffentliche Aufgabe begreifen und dauerhaft verankern.Wir fordern: Planungssichere Förderung für Projekte, Institutionen und Multiplikatoren, die kontinuierlich Umweltbildung leisten.",
+          "source_text_sha256": "5d5da2733c91ff6fc1e672407fac16e5053221be2e98fde83c8001c0bf547da1",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-BSW-P57-U09-A05-C01-a18d21a14615",
+            "BE-BSW-P57-U09-A05-C02-2cd7ca9a9460"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A05-5d5da2733c91",
+          "decision_kind": "FUSED_ENVIRONMENTAL_EDUCATION_GOVERNANCE_AND_FUNDING_PARENT"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A06-ec9c52b5be06",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 6 of 8",
+          "source_excerpt": "Rückkehr der Umweltbildung in den regulären Unterricht, beginnend ab der ersten Klasse.",
+          "source_text_sha256": "ec9c52b5be060bf3c028a45d2afb6489f1a9888274d1a6b68913cae0b89a4050",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A06-ec9c52b5be06",
+          "decision_kind": "REGULAR_CURRICULAR_ENVIRONMENTAL_EDUCATION_FROM_GRADE_ONE"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A07-8ac037ec7699",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 7 of 8",
+          "source_excerpt": "Stärkung des Berliner Umweltbildungsnetzwerks durch Tagungen, Kooperationen und Austausch.",
+          "source_text_sha256": "8ac037ec7699b06700056b8cd507f114b5bcd95a8b704f2dce92dbb33fc19430",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A07-8ac037ec7699",
+          "decision_kind": "ENVIRONMENTAL_EDUCATION_NETWORK_STRENGTHENING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A08-297f29aacf7a",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 8 of 8",
+          "source_excerpt": "Nutzung und Ausbau digitaler Angebote wie frei verfügbare Bestimmungs- und Lern-Apps.",
+          "source_text_sha256": "297f29aacf7ab2b0bc94dac50ac0398a9829d3a73e52825a34a837e1f86b0904",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U09-A08-297f29aacf7a",
+          "decision_kind": "FREE_ENVIRONMENTAL_IDENTIFICATION_AND_LEARNING_APPS"
+        },
+        {
+          "object_id": "BE-BSW-P57-U10-51b2c038907b",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 10",
+          "source_excerpt": "Saubere Stadt – Verantwortung gemeinsam tragen",
+          "source_text_sha256": "51b2c038907b6ba91af159db4a0f194fed332302ddc9697e41317fd94861436d",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_EXISTING_TERMINAL_STOCK_REUSE",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U10-51b2c038907b",
+          "decision_kind": "PRESERVED_STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-BSW-P57-U11-c69303be48ee",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 11",
+          "source_excerpt": "Berlin hat ein Problem, das alle sehen, aber zu wenige anpacken: Die Stadt ist dreckig. Müll auf Straßen, überquellende Container, illegale Ablagerungen in Parks. Das Bild ist längst kein Einzelfall mehr, sondern Alltag. Viele Berliner sch…",
+          "source_text_sha256": "c69303be48ee98161a6cffe71fc0a6a87af87a757506e5a151b9e74b0f3291aa",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_EXISTING_TERMINAL_STOCK_REUSE",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; exact object BE-BSW-P57-U11-c69303be48ee",
+          "decision_kind": "PRESERVED_REVIEWED_DIAGNOSIS_HISTORY_RATIONALE_OR_REPETITION"
+        },
+        {
+          "object_id": "BE-BSW-P55-U05-A02-C01-875caaa755cf",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 5, effect atom 2 of 2",
+          "source_excerpt": "Deshalb soll sich Berlin in einer Bundesratsinitiative dafür einsetzen, dass die Befreiung vermögensverwaltender Immobiliengesellschaften von der Gewerbesteuer abgeschafft",
+          "source_text_sha256": "875caaa755cfbfee6af265f20ef550424cc7e8819b9f41ea01009ec52c9c9cea",
+          "source_span": {
+            "start": 0,
+            "end": 171
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P55-U05-A02-d9f919eabd56"
+          ],
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; deterministic record BE-BSW-P55-U05-A02-C01-875caaa755cf",
+          "decision_kind": "PROPERTY_COMPANY_TRADE_TAX_RELIEF_REMOVAL"
+        },
+        {
+          "object_id": "BE-BSW-P55-U05-A02-C02-b3ca619913c5",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 55 of 66, normalized source unit 5, effect atom 2 of 2",
+          "source_excerpt": "durch gezielte Fördermaßnahmen ersetzt wird.",
+          "source_text_sha256": "b3ca619913c5814b1e4f4238cc8c38b72212313a413b10943587525ee9614750",
+          "source_span": {
+            "start": 176,
+            "end": 220
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P55-U05-A02-d9f919eabd56"
+          ],
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457994484",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md",
+            "file_sha256": "2ea001f5a5b3f8d6e53f3357262e1ae798fc2af556213984f41bbd7689887e72"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5457994484; deterministic record BE-BSW-P55-U05-A02-C02-b3ca619913c5",
+          "decision_kind": "UNSPECIFIED_TARGETED_REPLACEMENT_SUPPORT"
+        },
+        {
+          "object_id": "BE-BSW-P56-U11-A02-C01-b6b4679ed02a",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 2 of 3",
+          "source_excerpt": "Blühwiesen",
+          "source_text_sha256": "b6b4679ed02a93fb08242bde332e64f849dfc5ef16d4cb826744da573b73b3f0",
+          "source_span": {
+            "start": 11,
+            "end": 21
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P56-U11-A02-dbffc3ebd2c7"
+          ],
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; deterministic record BE-BSW-P56-U11-A02-C01-b6b4679ed02a",
+          "decision_kind": "FLOWERING_MEADOWS"
+        },
+        {
+          "object_id": "BE-BSW-P56-U11-A02-C02-600064174ae3",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 2 of 3",
+          "source_excerpt": "Streuobstbestände",
+          "source_text_sha256": "600064174ae34c81d7932d5412ab889f569ef6930a1d0ba524f2c4ed891852cb",
+          "source_span": {
+            "start": 23,
+            "end": 40
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P56-U11-A02-dbffc3ebd2c7"
+          ],
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; deterministic record BE-BSW-P56-U11-A02-C02-600064174ae3",
+          "decision_kind": "ORCHARD_MEADOW_STOCKS"
+        },
+        {
+          "object_id": "BE-BSW-P56-U11-A02-C03-84d3164b7799",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 2 of 3",
+          "source_excerpt": "urbane Landwirtschaft",
+          "source_text_sha256": "84d3164b7799a40230ac6d1519307d08e5496f89980bfc2f78f5f462f2d45e08",
+          "source_span": {
+            "start": 42,
+            "end": 63
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P56-U11-A02-dbffc3ebd2c7"
+          ],
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; deterministic record BE-BSW-P56-U11-A02-C03-84d3164b7799",
+          "decision_kind": "URBAN_AGRICULTURE"
+        },
+        {
+          "object_id": "BE-BSW-P56-U11-A02-C04-c32372da3039",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 2 of 3",
+          "source_excerpt": "ökologische Pflege statt kahler Flächenpflege",
+          "source_text_sha256": "c32372da30397feaa6430cc95ecc8b89be8ecd0f7205f0516febe232471fd191",
+          "source_span": {
+            "start": 68,
+            "end": 113
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P56-U11-A02-dbffc3ebd2c7"
+          ],
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; deterministic record BE-BSW-P56-U11-A02-C04-c32372da3039",
+          "decision_kind": "ECOLOGICAL_LANDSCAPE_MAINTENANCE"
+        },
+        {
+          "object_id": "BE-BSW-P56P57-U11U01-M01-d009b15744c4",
+          "object_kind": "DETERMINISTIC_CROSS_PAGE_SEMANTIC_REPLACEMENT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 56 of 66, normalized source unit 11, effect atom 3 of 3 + BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 1",
+          "source_excerpt": "Artenreiche Pflanzenflächen bieten Nahrung und Lebensräume für Insekten und andere Bestäuber und nur wenn diese ökologischen Kreisläufe funktionieren, bleiben unsere Grünanlagen dauerhaft gesund, widerstandsfähig und vielfältig. Biodiversität ist kein Schlagwort, sie macht die Stadt resilient und lebendig.",
+          "source_text_sha256": "d009b15744c40a4319b97a6a091e93f5e66d9a8e2169ddc38ed302814b7fd21c",
+          "source_span": {
+            "start": 0,
+            "end": 307
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_CROSS_PAGE_SEMANTIC_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P56-U11-A03-727b5dd277d1",
+            "BE-BSW-P57-U01-17cf2a9d63b6"
+          ],
+          "parent_joiner": " ",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_BIODIVERSITY_ECOSYSTEM_RESILIENCE_OUTCOME_AND_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458013046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md",
+            "file_sha256": "06321ed5e5cade7835affa9a6d174f4d1cd5c4b143f94fab1fe112df1d060983"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458013046; deterministic record BE-BSW-P56P57-U11U01-M01-d009b15744c4",
+          "decision_kind": "CROSS_PAGE_BIODIVERSITY_OUTCOME_AND_RATIONALE"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A05-C01-a18d21a14615",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 5 of 8",
+          "source_excerpt": "Berlin soll Umweltbildung als öffentliche Aufgabe begreifen und dauerhaft verankern.",
+          "source_text_sha256": "a18d21a1461506bcbf88a1fa33c9e7acc1db0b89a8839a4815c26852c8356c8c",
+          "source_span": {
+            "start": 0,
+            "end": 84
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P57-U09-A05-5d5da2733c91"
+          ],
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; deterministic record BE-BSW-P57-U09-A05-C01-a18d21a14615",
+          "decision_kind": "ENVIRONMENTAL_EDUCATION_PUBLIC_TASK_INSTITUTIONALISATION_UNSPECIFIED"
+        },
+        {
+          "object_id": "BE-BSW-P57-U09-A05-C02-2cd7ca9a9460",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 57 of 66, normalized source unit 9, effect atom 5 of 8",
+          "source_excerpt": "Wir fordern: Planungssichere Förderung für Projekte, Institutionen und Multiplikatoren, die kontinuierlich Umweltbildung leisten.",
+          "source_text_sha256": "2cd7ca9a946038ecdd37394982a03f5e0e5635710289dc0cddeec2e8ec87910d",
+          "source_span": {
+            "start": 84,
+            "end": 213
+          },
+          "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-BSW-P57-U09-A05-5d5da2733c91"
+          ],
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458103067",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md",
+            "file_sha256": "882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5458103067; deterministic record BE-BSW-P57-U09-A05-C02-2cd7ca9a9460",
+          "decision_kind": "PREDICTABLE_ENVIRONMENTAL_EDUCATION_PROVIDER_FUNDING"
+        },
+        {
           "object_id": "BE-BSW-P34-U01-A03-C01-8fb42dccce50",
           "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
           "source_locator": "BE-AGH-2026-BSW-WAHLPROGRAMM, physical PDF page 34 of 66, normalized source unit 1, effect atom 3 of 3",
@@ -24300,50 +26176,6 @@
         }
       ],
       "remaining_review_envelopes": [
-        {
-          "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_054",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 54 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_055",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 55 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_056",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 56 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_057",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 57 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
         {
           "object_id": "BE-AGH-2026-BSW-WAHLPROGRAMM:PDF_PAGE_058",
           "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
@@ -38856,5 +40688,5 @@
     "vercel_action_triggered": false
   },
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
-  "descriptor_sha256": "903168694f37c9a8eb28c7b7332840d20750c35ce441d962ed6bbb20b7725f66"
+  "descriptor_sha256": "b9195c89a576deb0bb5dfbcbfcde8db1a7df4c0f6efc10516d0919a42a58da78"
 }

@@ -66,6 +66,11 @@ on:
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p51-authoritative-handoff.md"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p52-authoritative-handoff.md"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p53-authoritative-handoff.md"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-p57-explicit-v1.json"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p54-authoritative-handoff.md"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p55-authoritative-handoff.md"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p56-authoritative-handoff.md"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p34-p43-child-closure-v1.json"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p*-child-closure-authoritative-handoff.md"
       - "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md"
@@ -79,6 +84,7 @@ on:
       - "woek-parlament-app/tests/berlin-bsw-full-programme.test.ts"
       - "tools/build-berlin-bsw-p46-p49-handoff.mjs"
       - "tools/build-berlin-bsw-p50-p53-handoff.mjs"
+      - "tools/build-berlin-bsw-p54-p57-handoff.mjs"
       - "woek-parlament-app/tools/build-berlin-bsw-p34-p43-child-closure.mjs"
       - "woek-parlament-app/package.json"
       - ".github/workflows/berlin-fach-content-residual.yml"
@@ -110,6 +116,8 @@ jobs:
         run: node scripts/quality/materialize-berlin-fach-truth-residual.mjs --check
       - name: Assert deterministic BSW P50-P53 handoff
         run: node tools/build-berlin-bsw-p50-p53-handoff.mjs --check
+      - name: Assert deterministic BSW P54-P57 handoff
+        run: node tools/build-berlin-bsw-p54-p57-handoff.mjs --check
       - name: Assert deterministic BSW P34-P43 child closure handoff
         working-directory: woek-parlament-app
         run: node tools/build-berlin-bsw-p34-p43-child-closure.mjs --check
