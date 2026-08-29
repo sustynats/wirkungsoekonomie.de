@@ -158,7 +158,7 @@ def validate(actual: dict, expected: dict) -> None:
     if actual["status"] != "FACH_RESIDUAL_OPEN":
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_FALSE_GREEN")
     berlin = actual["blocking_lanes"]["berlin"]
-    if (berlin["programme_analysis_complete"], berlin["programme_analysis_open"], berlin["remaining_review_envelopes"], berlin["remaining_exact_effect_objects_identified"], berlin["remaining_review_scopes"]) != (3, 9, 1224, 0, 1224):
+    if (berlin["programme_analysis_complete"], berlin["programme_analysis_open"], berlin["remaining_review_envelopes"], berlin["remaining_exact_effect_objects_identified"], berlin["remaining_review_scopes"]) != (3, 9, 1222, 0, 1222):
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_BERLIN_TRUTH_DRIFT")
     mv = actual["blocking_lanes"]["mecklenburg_vorpommern"]
     if (mv["verified_final_programmes_requiring_truthful_residual"], mv["source_maturity_pending"]) != (12, 7):
