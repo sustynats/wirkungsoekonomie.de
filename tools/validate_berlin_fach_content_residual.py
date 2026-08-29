@@ -59,7 +59,7 @@ def sha256_file(path: Path) -> str:
 def validate_boundary(matrix: dict, register: dict) -> None:
     require(matrix.get("schema_version") == "woek-berlin-fach-content-residual-3.2", "schema drift")
     require(matrix.get("matrix_id") == "BE-FACH-CONTENT-RESIDUAL-2026-V3", "matrix id drift")
-    require(matrix.get("base_main_commit") == "57151e7529233f2a159f44e1b323b4cecf88cc09", "base main commit drift")
+    require(matrix.get("base_main_commit") == "24f811c0d2b3a858916207bbb030ee3c220f097b", "base main commit drift")
     require(matrix.get("status") == "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12", "false terminal status")
     require(matrix.get("binding_order") == BINDING_ORDER, "binding order drift")
     require(matrix.get("execution_order_remaining") == OPEN, "execution residual drift")
@@ -105,10 +105,10 @@ def validate_boundary(matrix: dict, register: dict) -> None:
         "genuine_fach_programme_parties": OPEN,
         "remaining_genuine_fach_review_required": 1297,
         "remaining_review_scope_count": 1297,
-        "remaining_page_review_envelopes": 1240,
-        "remaining_exact_effect_objects_identified": 57,
+        "remaining_page_review_envelopes": 1236,
+        "remaining_exact_effect_objects_identified": 61,
         "remaining_exact_effect_object_count": None,
-        "terminal_source_objects": 809,
+        "terminal_source_objects": 883,
         "known_segmentation_defects": 2,
         "berlin_completion_gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
     }
@@ -146,9 +146,9 @@ def main() -> None:
         "matrix_id": matrix["matrix_id"],
         "programmes_terminal": 3,
         "programmes_open": 9,
-        "terminal_source_objects": 809,
-        "remaining_review_envelopes": 1240,
-        "remaining_exact_objects": 57,
+        "terminal_source_objects": 883,
+        "remaining_review_envelopes": 1236,
+        "remaining_exact_objects": 61,
         "remaining_review_scopes": 1297,
         "known_segmentation_defects": 2,
         "descriptor_sha256": matrix["descriptor_sha256"],

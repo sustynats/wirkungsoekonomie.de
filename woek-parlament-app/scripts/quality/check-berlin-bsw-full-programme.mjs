@@ -12,13 +12,13 @@ const bsw = residual.programmes.find((programme) => programme.party === "BSW");
 
 assert.ok(bsw, "BSW missing from current Berlin Fach-truth matrix");
 assert.equal(bsw.programme_analysis_complete, false, "BSW must remain open after rejection of generic RNAA terminals");
-assert.equal(bsw.terminal_object_count, 741, "BSW exact issue #240 terminal stock drifted");
-assert.equal(bsw.remaining_review_envelope_count, 25, "BSW page-envelope residual must be physical PDF pages 42-66");
-assert.equal(bsw.remaining_exact_object_count, 57, "BSW exact child residual must be the P34-P41 finite set");
-assert.equal(bsw.remaining_review_scope_count, 82, "BSW finite residual must be 25 page envelopes plus 57 exact children");
+assert.equal(bsw.terminal_object_count, 815, "BSW exact issue #240 terminal stock drifted");
+assert.equal(bsw.remaining_review_envelope_count, 21, "BSW page-envelope residual must be physical PDF pages 46-66");
+assert.equal(bsw.remaining_exact_object_count, 61, "BSW exact child residual must include the P34-P43 finite set");
+assert.equal(bsw.remaining_review_scope_count, 82, "BSW finite residual must be 21 page envelopes plus 61 exact children");
 assert.deepEqual(
   bsw.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-  Array.from({ length: 25 }, (_, index) => index + 42),
+  Array.from({ length: 21 }, (_, index) => index + 46),
 );
 assert.ok(bsw.remaining_review_envelopes.every((item) => (
   item.counts_as_effect_object === false
@@ -43,6 +43,7 @@ const p26P29Current = bsw.terminal_objects.filter((item) => /-P(?:26|27|28|29)-|
 const p30P33Current = bsw.terminal_objects.filter((item) => /-P(?:30|31|32|33)-|-P30P31-/.test(item.object_id));
 const p34P37Current = bsw.terminal_objects.filter((item) => /-P(?:34|35|36|37)-|-P34P35-|-P35P36-|-P36P37-/.test(item.object_id));
 const p38P41Current = bsw.terminal_objects.filter((item) => /-P(?:38|39|40|41)-|-P38P39-/.test(item.object_id));
+const p42P45Current = bsw.terminal_objects.filter((item) => /-P(?:42|43|44|45)-/.test(item.object_id));
 assert.equal(explicitPage14.length, 23, "explicit page-14 handoff was not consumed exactly");
 assert.equal(explicitPages15To19.length, 119, "explicit pages-15-to-19 handoffs were not consumed exactly");
 assert.equal(explicitP19ClosureToP21.length, 39, "explicit P19-closure/P20/P21 handoffs were not consumed exactly");
@@ -59,7 +60,7 @@ assert.equal(p26P29Current.filter((item) => item.counts_as_effect_object === tru
 assert.equal(p26P29Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 26, "P26-P29 explicit Fach set drifted");
 assert.equal(p26P29Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 5, "P26-P29 exact RNAA set drifted");
 assert.equal(p26P29Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 17, "P26-P29 versioned parent set drifted");
-assert.equal(bsw.remaining_review_objects.length, 57, "P34-P41 exact child residual set drifted");
+assert.equal(bsw.remaining_review_objects.length, 61, "P34-P43 exact child residual set drifted");
 assert.ok(bsw.remaining_review_objects.every((item) => item.fach_state === "GENUINE_FACH_REVIEW_REQUIRED" && item.counts_as_effect_object === true));
 const p24P25Children = p24P25Current.filter((item) => item.object_kind === "DETERMINISTIC_SEGMENTATION_REPLACEMENT");
 assert.equal(p24P25Children.length, 23, "P24/P25 deterministic child set drifted");
@@ -83,9 +84,17 @@ assert.equal(p38P41Current.filter((item) => item.fach_state === "NON_EFFECT_CONT
 assert.equal(p38P41Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 16, "P38-P41 versioned parent/fragment set drifted");
 assert.equal(p38P41Current.filter((item) => item.parent_object_ids).length, 2, "P38-P41 deterministic terminal set drifted");
 assert.equal(bsw.remaining_review_objects.filter((item) => /-P(?:38|39|40|41)-/.test(item.object_id)).length, 38, "P38-P41 exact child residual set drifted");
+assert.equal(p42P45Current.length, 74, "P42-P45 terminal set drifted");
+assert.equal(p42P45Current.filter((item) => item.counts_as_effect_object === true).length, 29, "P42-P45 active terminal leaf set drifted");
+assert.equal(p42P45Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 20, "P42-P45 explicit Fach set drifted");
+assert.equal(p42P45Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 9, "P42-P45 exact RNAA set drifted");
+assert.equal(p42P45Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 39, "P42-P45 zero-count terminal set drifted");
+assert.equal(p42P45Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 6, "P42-P45 versioned parent set drifted");
+assert.equal(p42P45Current.filter((item) => item.parent_object_ids).length, 8, "P42-P45 deterministic terminal set drifted");
+assert.equal(bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id)).length, 4, "P42-P43 exact child residual set drifted");
 assert.ok(
-  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 41).every((atom) => !currentIds.has(atom.atom_id)),
-  "rejected BSW generic terminal outside explicit pages 14-41 leaked into current truth",
+  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 45).every((atom) => !currentIds.has(atom.atom_id)),
+  "rejected BSW generic terminal outside explicit pages 14-45 leaked into current truth",
 );
 assert.equal(residual.rejected_predecessor.disposition, "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY");
 assert.equal(residual.release_policy.no_new_vercel_build, true);
@@ -108,5 +117,7 @@ console.log(JSON.stringify({
   p34P37ExactOpenChildren: bsw.remaining_review_objects.filter((item) => /-P(?:34|35|36|37)-/.test(item.object_id)).length,
   p38P41TerminalObjects: p38P41Current.length,
   p38P41ExactOpenChildren: bsw.remaining_review_objects.filter((item) => /-P(?:38|39|40|41)-/.test(item.object_id)).length,
+  p42P45TerminalObjects: p42P45Current.length,
+  p42P43ExactOpenChildren: bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id)).length,
   programmeAnalysisComplete: bsw.programme_analysis_complete,
 }));
