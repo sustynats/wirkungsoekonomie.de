@@ -1,0 +1,1276 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P50-P53-EXPLICIT-FACH-2026-V1",
+  "base_main_commit": "cf9645c4e15a3dc759f62d51202218348d3f7707",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "controller": {
+    "issue": 241,
+    "issue_comment_id": 5459840094,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5459840094"
+  },
+  "authoritative_markdowns": [
+    {
+      "pdf_page": 50,
+      "issue": 240,
+      "issue_comment_id": 5457793475,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457793475",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p50-authoritative-handoff.md",
+      "file_sha256": "99395b853f32827f2d4ba9b45d0bb8db01f34de3b4d1041f06c6f592ea933a31"
+    },
+    {
+      "pdf_page": 51,
+      "issue": 240,
+      "issue_comment_id": 5459288728,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459288728",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p51-authoritative-handoff.md",
+      "file_sha256": "4ca514fba0f8817557e8b19b7fc6dd7655c0f9413f5b2e8a3aad98ce779ca836"
+    },
+    {
+      "pdf_page": 52,
+      "issue": 240,
+      "issue_comment_id": 5459304496,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459304496",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p52-authoritative-handoff.md",
+      "file_sha256": "e8f0e2eb3d8436bce930318c3137ad70ef0355ea73846d92820765842e034f8d"
+    },
+    {
+      "pdf_page": 53,
+      "issue": 240,
+      "issue_comment_id": 5459330996,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5459330996",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p53-authoritative-handoff.md",
+      "file_sha256": "ed8280cbbe245695f9d5d3640080f95ff2f60ed660ce4e99049d403f786385a5"
+    }
+  ],
+  "source_objects": [
+    {
+      "object_id": "BE-BSW-P50-U04-b7b5e38cba91",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 50,
+      "source_text_sha256": "b7b5e38cba9143bfb7f55cf45b1fdb683feff33b5f63f54736ec13a6612d8c7b",
+      "source_excerpt": "Das würde die touristische Attraktivität Berlins erheblich erhöhen und die schwierige Verkehrssituation über die Dahme für die Anwohner verbessern. Der Platzbedarf ist sehr gering, Konflikte mit anderen Verkehren sind in der Logik ausgesch…"
+    },
+    {
+      "object_id": "BE-BSW-P50-U05-444316dfb692",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 50,
+      "source_text_sha256": "444316dfb6921db147a997ac0ce3e6f1a8523ea9a947f1006c590910db2ca2f9",
+      "source_text": "Baustellen besser koordinieren"
+    },
+    {
+      "object_id": "BE-BSW-P50-U08-aa7c2e1f3a99",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 50,
+      "source_text_sha256": "aa7c2e1f3a99f1082fdea126aae5281a8d877adffc0ce8afb346b4b458f4979a",
+      "source_text": "Luftverkehrsstandort Berlin sichern – bezahlbare Mobilität erhalten"
+    },
+    {
+      "object_id": "BE-BSW-P52-U01-cc0ecc2c45f4",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 52,
+      "source_text_sha256": "cc0ecc2c45f40f1e83e40dab777df1cd282e5015e9fef0d66cd76083a1add399",
+      "source_text": "Finanz- und Steuerpolitik Das Land Berlin ist in einer finanziellen Krisensituation"
+    },
+    {
+      "object_id": "BE-BSW-P52-U02-70cc6c766773",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 52,
+      "source_text_sha256": "70cc6c766773aecdd2fd18280e2101a4dd2368e42c80b1034f7ea24abaa8a011",
+      "source_excerpt": "Noch nie war es so schwierig, in Berlin bezahlbaren Wohnraum zu finden. Die Infrastruktur bröckelt, Bahnen fahren nicht, Schwimmbäder und Sportstätten werden geschlossen, und bei Kultur und Bildung wird gespart. Berlin lebt seit Jahren von…"
+    },
+    {
+      "object_id": "BE-BSW-P52-U06-95b892cfc6a1",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 52,
+      "source_text_sha256": "95b892cfc6a10ecc4c0d4db37b655ed7285ffe124173927b321b4c4447bae92b",
+      "source_text": "Hochrüstung stoppen, Sozialstaat statt Militärstaat"
+    },
+    {
+      "object_id": "BE-BSW-P52-U07-2666bb212fcd",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 52,
+      "source_text_sha256": "2666bb212fcd82bd6fadc8590a5c0109cac886122acfd805eac3a2b542673690",
+      "source_excerpt": "Die politische Priorität der CDU/CSU-SPD-Regierung besteht vor allem in der massiven Aufrüstung der Bundeswehr zur konventionell stärksten Armee Europas, obwohl die NATO Russland hier bereits jetzt weit überlegen ist. Die Umsetzung des Fün…"
+    },
+    {
+      "object_id": "BE-BSW-P53-U01-1a61f5118cb8",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 53,
+      "source_text_sha256": "1a61f5118cb8559a829cb7f9aa1e49a73fb1417ad83f1eae1717d58602e16ca5",
+      "source_text": "Wer bestellt, bezahlt"
+    },
+    {
+      "object_id": "BE-BSW-P53-U02-4b618e882c97",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 53,
+      "source_text_sha256": "4b618e882c976a70895dc7dff3ca0c2ca8c9ba088dbf57a5f48f842ae70319a7",
+      "source_excerpt": "Während der Bund aber immer mehr gesetzliche Aufgaben (unter anderem Bildung/Erziehung, Soziales und Flüchtlingshilfe/Integration) auf unsere Stadt überträgt, finanziert er diese nicht kostendeckend. Das zwingt Berlin zu Kürzungen bei frei…"
+    },
+    {
+      "object_id": "BE-BSW-P53-U05-bd44b0d263cd",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 53,
+      "source_text_sha256": "bd44b0d263cd908c0a37bc0c10fbad131861fea07e72a0c087f44b95aa1b06bf",
+      "source_text": "Vereinfachung, mehr Effizienz, Verzicht auf Prestigeprojekte"
+    },
+    {
+      "object_id": "BE-BSW-P54-U01-a226a5a2869e",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 54,
+      "source_text_sha256": "a226a5a2869eab4ed95b077c6d9305afd18fcdd229760dc623608ee60e365920",
+      "source_text": "Umschichtung zugunsten dieser Bereiche verbessert die Lebensqualität breiter Bevölkerungsschichten unmittelbar."
+    },
+    {
+      "object_id": "BE-BSW-P50-U02-A01-744f6eebc313",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "744f6eebc3130ef531d14f65c36e25f3313d5a7ed4c42f1f221987bd08f1a574",
+      "source_text": "Wir unterstützen den Bund beim Ausbau und der Unterhaltung unserer Binnenwasserstraßen und befürworten eine Stärkung der BEHALA."
+    },
+    {
+      "object_id": "BE-BSW-P50-U02-A02-aa113460f360",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "aa113460f360f8b9f10798779f85346caa93f500d6b7027c365b22d359cb06f3",
+      "source_text": "Alle Güter, insbesondere Massenschüttgüter, Treibstoffe usw., die auf dem Wasserweg befördert werden können, entlasten den Straßenverkehr."
+    },
+    {
+      "object_id": "BE-BSW-P50-U02-A03-f5a68859a288",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "f5a68859a28896a14c3fd8a9a7f7e5710011c59469bc5409019c554e71ab4f84",
+      "source_excerpt": "Das Projekt „The Last Mile“ (Die letzte Meile) zeigt mit künstlerischen Mitteln, wie bei einer gewissen Wiederbelebung der ehemaligen Güterumschlagsanlagen der Eisenbahn innerhalb Berlins, auch mit Blick in die geschichtliche Vergangenheit…"
+    },
+    {
+      "object_id": "BE-BSW-P50-U02-A04-784c88d74c8d",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "784c88d74c8d523d7424e897494716ca5ac789a136767328a3b3377a6e54e4d5",
+      "source_text": "Wir unterstützen die Errichtung von Güterverteilzentren am Stadtrand bzw. in Brandenburg und wollen hier stärker mit unseren Nachbarn zusammenarbeiten."
+    },
+    {
+      "object_id": "BE-BSW-P50-U03-A01-ce20146eae6e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "ce20146eae6e376d2923ac127b3dbe4ef9d7a3abee2805f0aefd320c3850f826",
+      "source_text": "Wir erinnern uns an die Seilbahndiskussion auf dem Gelände der Gärten der Welt, die als Querverbindung noch heute eine spürbare Verbesserung in Marzahn-Hellersdorf darstellt."
+    },
+    {
+      "object_id": "BE-BSW-P50-U03-A02-083663b9a83a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "083663b9a83a2cd9de1d898886033cf03a341b3bdafbc411d8f7e6668a9b5832",
+      "source_text": "Wir befürworten, Friedrichshagen, Müggelheim, die Müggelberge, Wendenschloss und den Bahnhof Grünau zu verbinden."
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A01-cc13020452ae",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "cc13020452ae2f336d11460f1462ecefa4b4dec43edc933d023bdea67264d25c",
+      "source_text": "Zentrale Straßen- und Schienenprojekte müssen schneller und besser koordiniert umgesetzt werden."
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A02-b0512c698a0f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "b0512c698a0ff2ab5e28a5e296a12858f3824227eddc2f6a717c88e53e1aa4ca",
+      "source_text": "Wir setzen uns für eine wirksame Baustellenkoordination ein, damit nicht gleichzeitig wichtige Verbindungen gesperrt und Ausweichstrecken ebenfalls eingeschränkt werden."
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A03-dffd5fec36a4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "dffd5fec36a4992bec57c8663ca40bcf37a4e0ec3d98d2539b652b62cfd15a5e",
+      "source_text": "Baustellen müssen so organisiert sein, dass nach ihrer Einrichtung auch zügig gearbeitet wird."
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A04-61f14efc8a9c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "61f14efc8a9c911de8702f941e252022abda8c826bf93af5558a54fe0bd32b1f",
+      "source_text": "Wo dies durch Schuld des Bauträgers unterbleibt, muss dieser die Konsequenzen tragen, auch gegenüber Gewerbetreibenden, die dadurch Einbußen erleiden."
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A01-b07518ee0875",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "b07518ee0875393af7541cce284668ec33505e585799861fd8fe7a822c82ab0e",
+      "source_text": "Planungs- und Bauprozesse wollen wir straffen, ohne Bürgerbeteiligung auszuschließen."
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A02-6d96a3b07da4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "6d96a3b07da4e8af3a0d4fcc5ea56247326c0918e59ee9964ff6eecd8cb1bbc4",
+      "source_text": "Vorrang sollen die Vorhaben haben, die mit vertretbarem Aufwand den größten Nutzen für Entlastung, Sicherheit und Verkehrsfluss bringen."
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A03-2823684f6ec9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "2823684f6ec9b659469d33a017c0bb5826e38dadb9c7552ce46f7d09c0bc8919",
+      "source_text": "Dazu gehören auch die Optimierung von Ampelschaltungen, die bessere Anpassung an Umleitungen und Baustellen sowie der Ausbau zentraler Verbindungen wie der Tangentialen Verbindung Ost (TVO)."
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A04-eb173bf73c8e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "eb173bf73c8e5b682e318659b18c4d2af5cc11be128f65580c16e900f74ab057",
+      "source_text": "Die TVO ist die Verkehrsader für einen zukunftsfähigen und lebenswerten Osten."
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A05-fb65091f2e91",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "fb65091f2e91d7fa73c89a7a124babd7c73994aa81a0d857d27bd5ca24e9d46e",
+      "source_text": "Eine wachsende Stadt braucht leistungsfähige Ost-West- und Nord-Süd-Verbindungen ebenso wie bessere Querverbindungen zwischen den Bezirken."
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A06-fadc1511d631",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "fadc1511d6311ff54b2924be8eed4b2caad8f65d2bda8bb3b44eb96cdb9a4f0b",
+      "source_text": "Zur Entlastung von Anwohnern und viel befahrener Hauptverkehrsstraßen setzen wir uns für den 7,2 Kilometer Lückenschluss zwischen der Bundesstraße 1/5 und der Straße an der Wuhlheide ein."
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A07-46beff0eff03",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 50,
+      "source_text_sha256": "46beff0eff035da1bbc38b9ecf7d96fa2e9d40eedd69646b94bcaccb24219943",
+      "source_text": "Zugleich müssen die Belange der Anwohner in Sachen Lärmschutz und Feinstaubbelastung zwingend berücksichtigt werden."
+    },
+    {
+      "object_id": "BE-BSW-P51-U01-A01-d75632cf632c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 51,
+      "source_text_sha256": "d75632cf632c6bd2e86682e4e715e97261df16d64710c6831089cb2fd88559e7",
+      "source_text": "Die Schließung des Ryanair-Standortes am Flughafen Berlin Brandenburg muss politisch ernst genommen werden."
+    },
+    {
+      "object_id": "BE-BSW-P51-U01-A02-be55471feb8c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 51,
+      "source_text_sha256": "be55471feb8c430f8022f2c05872b1a6255a45126a82fbd355c1fc8933726a77",
+      "source_text": "Wir fordern, die Ursachen dieser Entscheidung umfassend offenzulegen und zu bewerten."
+    },
+    {
+      "object_id": "BE-BSW-P51-U01-A03-3ce05439f314",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 51,
+      "source_text_sha256": "3ce05439f314e2ecb972eba70e890811fe160f1e8bcc4d314fddebf54d394e10",
+      "source_text": "Hohe Abgaben, steigende Gebühren und falsche politische Rahmenbedingungen dürfen nicht dazu führen, dass sich Unternehmen aus Deutschland zurückziehen und der Standort Berlin geschwächt wird."
+    },
+    {
+      "object_id": "BE-BSW-P51-U02-A01-e4b6e182ca45",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 51,
+      "source_text_sha256": "e4b6e182ca45d37cde10cceef79a94c9b0a9552a41270ff1b9c0d7ade138b007",
+      "source_text": "Wir setzen uns dafür ein, die Wettbewerbsfähigkeit des Standortes Deutschland wiederherzustellen, den Rückgang von Flugverbindungen zu verhindern und bezahlbare Mobilität für breite Bevölkerungsschichten zu sichern."
+    },
+    {
+      "object_id": "BE-BSW-P51-U03-A01-e5f4fa2a1a56",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 51,
+      "source_text_sha256": "e5f4fa2a1a562ee8a44001af23c5995e3006c30a6372c761a396f20af0294b93",
+      "source_text": "Dafür braucht es eine industrie- und verkehrspolitische Gesamtstrategie, die wirtschaftliche Vernunft, gute Erreichbarkeit und soziale Teilhabe miteinander verbindet."
+    },
+    {
+      "object_id": "BE-BSW-P51-U03-A02-c486a100cbed",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 51,
+      "source_text_sha256": "c486a100cbedf016a08955847b24c012e05d2a5acf058cb742997310f06d53ce",
+      "source_text": "Berlin darf nicht weiter zum Verlierer einer Politik werden, die Mobilität verteuert und den Wirtschaftsstandort schwächt."
+    },
+    {
+      "object_id": "BE-BSW-P52-U03-A01-fab5a11db229",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "fab5a11db2292a5bdf50ebab3532c8752d5083ae7f4cd9d9d3cd9c557c107687",
+      "source_text": "Berlin steht vor großen finanziellen Herausforderungen: steigende Lebenshaltungskosten, wachsende soziale Ungleichheit und ein erheblicher Investitionsstau in öffentlicher Infrastruktur."
+    },
+    {
+      "object_id": "BE-BSW-P52-U03-A02-93603e849354",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "93603e849354b7aac86601769bae8eede2ae6252b91416a4ddafd7641ff48278",
+      "source_text": "Für das BSW in Berlin ist klar: Eine gerechte Finanzpolitik muss die Bedürfnisse der Mehrheit in den Mittelpunkt stellen, insbesondere, die der arbeitenden Menschen und ihrer Familien sowie der sozial benachteiligten Bevölkerungsgruppen."
+    },
+    {
+      "object_id": "BE-BSW-P52-U03-A03-5054ca811102",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "5054ca811102f14538322f78980a5a822119130818c71fb3dd5bbdcc1192acda",
+      "source_text": "Öffentliche Mittel sind begrenzt, doch die Verteilung der 45 Mrd. im Berliner Haushalt ist eine Frage politischer Prioritäten."
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A01-9a1aa9514249",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "9a1aa9514249de81d88ee0e72901fcbbad9ddacf398e065d27b08334b2794651",
+      "source_text": "Investitionen in zentrale Zukunftsbereiche wie Infrastruktur, Digitalisierung und Bildung sind unumgänglich."
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A02-af7d2bc68398",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "af7d2bc683981ad9e5f551538197f514942b0aba7c7091d61f4091516020d955",
+      "source_text": "Sie sichern langfristig soziale Stabilität, wirtschaftliche Entwicklung und den sozialen Frieden."
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A03-eb866e5e87f9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "eb866e5e87f9852370418f7a4e1783f42ebf1dc960f0343b2c82f038efe81983",
+      "source_text": "Aber Berlins Finanzlage ist sehr angespannt."
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A04-cff0e5e97afd",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "cff0e5e97afdc967f512e573a6166c1589f0600ec55f53717e2d4f5a23af0732",
+      "source_text": "Steigende Ausgaben ergeben sich insbesondere durch Kosten für Personal, Geflüchtete und die Aufwendungen für Sozialleistungen."
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A05-4c7f8607981b",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "4c7f8607981b98f025232c54827b28cf537b2b58fce53e2d3d4536d1479c44da",
+      "source_text": "Die Verschuldung pro Einwohner liegt in Berlin bei mehr als dem Doppelten des Länderdurchschnitts."
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A06-a5b0425ed95b",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "a5b0425ed95b65d9f2906dd893369c84fafc949b4a624ff3544ac236939c6972",
+      "source_text": "Und bis Ende 2027 ist im Berliner Landeshaushalt eine Neuverschuldung von ungefähr 10 Milliarden Euro vorgesehen."
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A07-a35994b85087",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "a35994b8508750422f5f6236e0061ad5661d7b5172018f721d913de721f2563c",
+      "source_text": "Dabei schränkt die steigende Zinsbelastung die Gestaltungsspielräume unserer Stadt immer mehr ein."
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A01-ba8d0e12819f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "ba8d0e12819fda2f41a202c4f6559777c9fd718170c002eb0bae11218da7a72d",
+      "source_text": "Das BSW Berlin steht für eine Finanzpolitik, die sich an sozialer Gerechtigkeit, wirtschaftlicher Vernunft und öffentlicher Daseinsvorsorge orientiert."
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A02-4edb5a82da16",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "4edb5a82da161de4c61ba9e0c470b197079ff41384a3974d7f66e53fa806bfdb",
+      "source_text": "Ziel ist es, vorhandene Mittel effizienter einzusetzen, statt einseitig auf Kürzungen oder neue Belastungen für die breite Bevölkerung zu setzen."
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A03-0e9936bea52a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "0e9936bea52a156e9e220ff8df04a8f3b09c23fb094d50de59df45e4ab73a1d5",
+      "source_text": "Öffentliche Ausgaben müssen stärker denjenigen zugutekommen, die auf Unterstützung angewiesen sind."
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A04-6fc7cfbc1ca4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 52,
+      "source_text_sha256": "6fc7cfbc1ca409c202b28ab266c1132fd1f36354f889b7b367e292566c69c6a4",
+      "source_text": "Fehlanreize und ineffiziente Subventionen müssen abgebaut werden."
+    },
+    {
+      "object_id": "BE-BSW-P53-U03-A01-7005c1666d35",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "7005c1666d35058950dd2d7d8c3c42a0bdd28df85684abc3984d16d471795bd4",
+      "source_text": "Um Berlins Handlungsfähigkeit wieder herzustellen, fordern wir klare gesetzliche Vorgaben zur vollständigen Kostenübernahme bei Aufgabenübertragungen durch den Bund."
+    },
+    {
+      "object_id": "BE-BSW-P53-U03-A02-fe7442232551",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "fe74422325516556a6c153665ea3ec6a9224080cfcf1173842e0a11f8aca2491",
+      "source_text": "Allein die Kosten für Migranten und Geflüchtete belaufen sich in diesem Jahr auf zwei Milliarden Euro, eine Milliarde Euro mehr als eingeplant."
+    },
+    {
+      "object_id": "BE-BSW-P53-U04-A01-f8f9541ecfe1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "f8f9541ecfe12bdc6fd3af4bcfa84253466b224662c8b2e0a2de5b5dbe083d07",
+      "source_text": "Wir benötigen dringend eine Finanzreform zur Entlastung der Kommunen."
+    },
+    {
+      "object_id": "BE-BSW-P53-U04-A02-5c990692eb07",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "5c990692eb077698a2b65da1899c4cb6e6b0f4ea962566654224d12676139b66",
+      "source_text": "Die Rechte der Länder im Bundesrat müssen bei Gesetzesvorlagen mit finanziellen Auswirkungen für Länder und Gemeinden gestärkt werden."
+    },
+    {
+      "object_id": "BE-BSW-P53-U04-A03-e167f10fba95",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "e167f10fba950017076849c07b40288e3424d26fad0b7a4a5290ee4ba71b0adb",
+      "source_text": "Entsprechende Bundesgesetze dürfen nicht mehr ohne Gegenfinanzierung und erst nach finanzieller Abstimmung mit den Ländern erlassen werden."
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A01-c98fb85c037a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "c98fb85c037ade66267040238b3f3b4cf9b5ab411044c8c90d48cb8db7a0060d",
+      "source_text": "Bürokratieabbau und Pauschalierungen in der Steuergesetzgebung würden personelle Ressourcen für operativ bedeutsame Bereiche freisetzen."
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A02-f218bec02860",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "f218bec02860687f3a013895e211912ca302f9c5776e88bb1fbf87b89b896639",
+      "source_text": "In den vergangenen Jahren sind die Ausgaben für externe Beratungsleistungen und ineffiziente Verwaltungsstrukturen stark gestiegen."
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A03-3034e53b9cd5",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "3034e53b9cd5f62c18c5f3bfeb22585df08bc5f970f2c303f3e1363115e2fc5a",
+      "source_text": "Hier sieht das BSW erhebliches Einsparpotenzial."
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A04-a6ca6ad2c99e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "a6ca6ad2c99ec7ea7ffa5e5ad5f8c1affce8c228e9ca2b16724073e80a567800",
+      "source_text": "Auch durch verbesserte bundeseinheitliche Abstimmung im Bereich der Digitalisierung, Priorisierung verschiedener Fachbereiche und einen effizienteren Steuervollzug könnten deutliche Mehreinnahmen generiert werden."
+    },
+    {
+      "object_id": "BE-BSW-P53-U07-A01-58c0f9bbccbe",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "58c0f9bbccbe719196758d56aa99beb6ab7fd83163d4517407cfbde308d5b4e9",
+      "source_text": "Die bisherige Wirtschaftsförderung begünstigt häufig große Unternehmen ohne ausreichende soziale Gegenleistung."
+    },
+    {
+      "object_id": "BE-BSW-P53-U07-A02-5241be2c0ea5",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "5241be2c0ea5095b63ca5edfe40075cab0039dfcdbbf37cb0b358a873f5a3ea9",
+      "source_text": "Fördermittel sollen künftig stärker an Kriterien wie Tarifbindung, faire Löhne und regionale Wertschöpfung geknüpft werden."
+    },
+    {
+      "object_id": "BE-BSW-P53-U07-A03-349b35196172",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "349b35196172b57bc70ecc3ec44157926b5f13f04e6117e20d9e4face55240f7",
+      "source_text": "Gleichzeitig können ineffektive Subventionen gestrichen und die freiwerdenden Mittel zum Beispiel in arbeitsmarktpolitische Programme für Geringqualifizierte investiert werden."
+    },
+    {
+      "object_id": "BE-BSW-P53-U08-A01-54781cef7a08",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "54781cef7a08ebf999b84c663ccd4ef0b0ed92aed7e9070384a08c85e2c5267c",
+      "source_text": "Notwendiger Bestandteil einer finanzpolitisch verantwortlichen Strategie für unsere Stadt muss auch die Effizienzsteigerung in der Berliner Verwaltung sein."
+    },
+    {
+      "object_id": "BE-BSW-P53-U08-A02-41ec9e666fd8",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "41ec9e666fd8c26e41818e12d277ddbf43d9218160bf7c60328561a6e7345dff",
+      "source_text": "So könnten Prozessoptimierung und Digitalisierung bezirklicher Dienstleistungen zu deutlichen Einsparungen führen."
+    },
+    {
+      "object_id": "BE-BSW-P53-U09-A01-93fa76750cf9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "93fa76750cf98e092542848e543404e628c05310539da1a1f689e90e2b2cf82b",
+      "source_text": "Berlin bedarf einer konsequenten Bekämpfung von Steuervermeidung."
+    },
+    {
+      "object_id": "BE-BSW-P53-U09-A02-2111bb2b256f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "2111bb2b256fa1b5655749943b915c88f51bc5659607fbfed76818787e82ef0a",
+      "source_text": "Die Berliner Finanzämter müssen dazu gestärkt und personell besser ausgestattet werden."
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A01-4af6868e9c7a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "4af6868e9c7a81e99153afdec8bc6efdaf83aa4d18b325cce6bb2b61e4d00324",
+      "source_text": "Auch der Verzicht auf unnötige Prestigeprojekte, wie beispielsweise Berlins Olympia- Bewerbung, würde den Berliner Haushalt deutlich entlasten."
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A02-892d7d2279c6",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "892d7d2279c67a1edcf9ab1343ec0b9819f4a92710424ec6acec1b8b26a8d2c9",
+      "source_text": "Für die Olympiabewerbung an sich plant man zehn Millionen Euro ein, während eine tatsächliche Ausrichtung rund 16 Milliarden Euro kosten könnte."
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A03-df2463a8b007",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "df2463a8b00775b46cf005e6dd4f35e78342bf54046879e19f9bc20909f32560",
+      "source_text": "Stattdessen sollte mehr Geld in die Sanierung vorhandener Sportstätten und die bessere Versorgung der Berliner Bevölkerung fließen."
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A04-9ef7985bba8d",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "9ef7985bba8dd83a56ce778171a12fce177e04b897eace27d8e39b18d7745a5d",
+      "source_text": "Schulen, Kitas, der soziale Wohnungsbau und der öffentliche Nahverkehr haben hier Vorrang."
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A05-8d70f09c8667",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 53,
+      "source_text_sha256": "8d70f09c86674d8da295fc294f48c21ec62d93be9dae35ea62981f3928e1e452",
+      "source_text": "Eine"
+    }
+  ],
+  "original_records": [
+    {
+      "object_id": "BE-BSW-P50-U02-A01-744f6eebc313",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_WATERWAY_BEHALA_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P50-U02-A01-C01-b6292674d6f6",
+        "BE-BSW-P50-U02-A01-C02-b0161509a7e5"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P50-U02-A02-aa113460f360",
+      "authoritative_terminal_fach_state": "NON_EFFECT_GENERIC_EXPECTED_MODE_SHIFT_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FREIGHT_MODE_SHIFT_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P50-U02-A03-f5a68859a288",
+      "authoritative_terminal_fach_state": "NON_EFFECT_BENCHMARK_OR_VISION_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ARTISTIC_FREIGHT_VISION_REFERENCE"
+    },
+    {
+      "object_id": "BE-BSW-P50-U02-A04-784c88d74c8d",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_FREIGHT_CENTRE_COOPERATION_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P50-U02-A04-C01-cf5598327a50",
+        "BE-BSW-P50-U02-A04-C02-a6c9be87c825",
+        "BE-BSW-P50-U02-A04-C03-eb66cad9c38d"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P50-U03-A01-ce20146eae6e",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RETROSPECTIVE_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "GARDENS_OF_THE_WORLD_ROPEWAY_REFERENCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P50-U03-A02-083663b9a83a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EAST_SOUTHEAST_ROPEWAY_CORRIDOR"
+    },
+    {
+      "object_id": "BE-BSW-P50-U04-b7b5e38cba91",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_AND_TECHNICAL_SOURCE_CLAIMS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ROPEWAY_EXPECTED_OUTCOME_AND_TECHNICAL_CLAIMS"
+    },
+    {
+      "object_id": "BE-BSW-P50-U05-444316dfb692",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P50-U08-aa7c2e1f3a99",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A01-cc13020452ae",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DELIVERY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TRANSPORT_PROJECT_DELIVERY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A02-b0512c698a0f",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "CONSTRUCTION_SITE_COORDINATION"
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A03-dffd5fec36a4",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "WORKSITE_DURATION_AND_DELIVERY_DISCIPLINE"
+    },
+    {
+      "object_id": "BE-BSW-P50-U06-A04-61f14efc8a9c",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "CONSTRUCTION_ACCOUNTABILITY_INSTRUMENT_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A01-b07518ee0875",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "PLANNING_STREAMLINING_DELTA_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A02-6d96a3b07da4",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "TRANSPORT_PROJECT_EFFECTIVENESS_PRIORITISATION"
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A03-2823684f6ec9",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_SIGNAL_DIVERSION_TVO_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P50-U07-A03-C01-f9459550ad20",
+        "BE-BSW-P50-U07-A03-C02-15618d21bc3c",
+        "BE-BSW-P50-U07-A03-C03-38f3111522c2"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A04-eb173bf73c8e",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_PROJECT_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TVO_NORMATIVE_PROJECT_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A05-fb65091f2e91",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SYSTEM_GOAL_AND_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "GROWING_CITY_NETWORK_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A06-fadc1511d631",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "TVO_PRECISE_7_2_KM_GAP_CLOSURE"
+    },
+    {
+      "object_id": "BE-BSW-P50-U07-A07-46beff0eff03",
+      "authoritative_terminal_fach_state": "NON_EFFECT_HEALTH_AND_PARTICIPATION_SAFEGUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TVO_HEALTH_AND_PARTICIPATION_SAFEGUARD"
+    },
+    {
+      "object_id": "BE-BSW-P51-U01-A01-d75632cf632c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CURRENT_EVENT_AND_POLICY_ATTENTION_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RYANAIR_PLANNED_BASE_CLOSURE_EVENT_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P51-U01-A02-be55471feb8c",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "INDEPENDENT_CAUSE_AND_IMPACT_TRANSPARENCY_REVIEW"
+    },
+    {
+      "object_id": "BE-BSW-P51-U01-A03-3ce05439f314",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CAUSAL_AND_COMPETITIVENESS_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "AVIATION_COST_CAUSAL_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P51-U02-A01-e4b6e182ca45",
+      "authoritative_terminal_fach_state": "NON_EFFECT_COMPOUND_TARGET_STATE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPETITIVENESS_CONNECTIVITY_AFFORDABILITY_GOALS"
+    },
+    {
+      "object_id": "BE-BSW-P51-U03-A01-e5f4fa2a1a56",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "INTEGRATED_INDUSTRY_AND_TRANSPORT_STRATEGY"
+    },
+    {
+      "object_id": "BE-BSW-P51-U03-A02-c486a100cbed",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_CAUSAL_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "BERLIN_LOSER_CAUSAL_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P52-U01-cc0ecc2c45f4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_HEADING_AND_DIAGNOSTIC_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FINANCE_AND_TAX_POLICY_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P52-U02-70cc6c766773",
+      "authoritative_terminal_fach_state": "NON_EFFECT_MULTI_DOMAIN_DIAGNOSIS_AND_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "BERLIN_INFRASTRUCTURE_AND_BUDGET_DIAGNOSIS"
+    },
+    {
+      "object_id": "BE-BSW-P52-U06-95b892cfc6a1",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "DEFENCE_AND_SOCIAL_STATE_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P52-U07-2666bb212fcd",
+      "authoritative_terminal_fach_state": "NON_EFFECT_FEDERAL_DEFENCE_FISCAL_NARRATIVE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FEDERAL_DEFENCE_FISCAL_NARRATIVE"
+    },
+    {
+      "object_id": "BE-BSW-P52-U03-A01-fab5a11db229",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROBLEM_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FISCAL_AND_SOCIAL_PROBLEM_DIAGNOSIS"
+    },
+    {
+      "object_id": "BE-BSW-P52-U03-A02-93603e849354",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_POLICY_PRINCIPLE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "DISTRIBUTIONAL_FISCAL_PRINCIPLE"
+    },
+    {
+      "object_id": "BE-BSW-P52-U03-A03-5054ca811102",
+      "authoritative_terminal_fach_state": "NON_EFFECT_BUDGET_GOVERNANCE_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "BUDGET_PRIORITY_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A01-9a1aa9514249",
+      "authoritative_terminal_fach_state": "NON_EFFECT_INVESTMENT_PRIORITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MULTI_DOMAIN_INVESTMENT_PRIORITY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A02-af7d2bc68398",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_OUTCOME_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "INVESTMENT_EXPECTED_OUTCOME_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A03-eb866e5e87f9",
+      "authoritative_terminal_fach_state": "NON_EFFECT_FISCAL_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "BERLIN_FISCAL_STRESS_DIAGNOSIS"
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A04-cff0e5e97afd",
+      "authoritative_terminal_fach_state": "NON_EFFECT_COMPOUND_EXPENDITURE_CAUSAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EXPENDITURE_CAUSAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A05-4c7f8607981b",
+      "authoritative_terminal_fach_state": "NON_EFFECT_QUANTITATIVE_BASELINE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "DEBT_PER_CAPITA_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A06-a5b0425ed95b",
+      "authoritative_terminal_fach_state": "NON_EFFECT_FISCAL_PLAN_QUANTITATIVE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PLANNED_NET_BORROWING_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P52-U04-A07-a35994b85087",
+      "authoritative_terminal_fach_state": "NON_EFFECT_FISCAL_MECHANISM_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "INTEREST_BURDEN_DIAGNOSIS"
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A01-ba8d0e12819f",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_FISCAL_PRINCIPLE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FISCAL_POLICY_PRINCIPLE"
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A02-4edb5a82da16",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EFFICIENCY_AND_DISTRIBUTION_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EFFICIENCY_AND_DISTRIBUTION_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A03-0e9936bea52a",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_TARGET_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PUBLIC_EXPENDITURE_TARGETING_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P52-U05-A04-6fc7cfbc1ca4",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "UNSPECIFIED_DISTORTION_AND_SUBSIDY_REDUCTION"
+    },
+    {
+      "object_id": "BE-BSW-P53-U01-1a61f5118cb8",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "KONNEXITAET_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P53-U05-bd44b0d263cd",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "KONNEXITAET_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P53-U02-4b618e882c97",
+      "authoritative_terminal_fach_state": "NON_EFFECT_FEDERAL_LAND_COST_ATTRIBUTION_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FEDERAL_TASK_TRANSFER_COST_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P53-U03-A01-7005c1666d35",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FULL_COST_RULE_FOR_FEDERAL_TASK_TRANSFERS"
+    },
+    {
+      "object_id": "BE-BSW-P53-U03-A02-fe7442232551",
+      "authoritative_terminal_fach_state": "NON_EFFECT_QUANTITATIVE_MIGRATION_COST_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MIGRATION_AND_REFUGEE_COST_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P53-U04-A01-f8f9541ecfe1",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "UNSPECIFIED_MUNICIPAL_FINANCE_REFORM"
+    },
+    {
+      "object_id": "BE-BSW-P53-U04-A02-5c990692eb07",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "STRONGER_LAENDER_BUNDESRAT_FISCAL_RIGHTS"
+    },
+    {
+      "object_id": "BE-BSW-P53-U04-A03-e167f10fba95",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EX_ANTE_COUNTERFINANCING_AND_LAENDER_COORDINATION"
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A01-c98fb85c037a",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "UNSPECIFIED_BUREAUCRACY_AND_TAX_LUMP_SUM_REFORM"
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A02-f218bec02860",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPENDITURE_AND_EFFICIENCY_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONSULTING_AND_ADMIN_EXPENDITURE_DIAGNOSIS"
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A03-3034e53b9cd5",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_SAVINGS_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EXPECTED_SAVINGS_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P53-U06-A04-a6ca6ad2c99e",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_DIGITAL_COORDINATION_PRIORITISATION_TAX_ENFORCEMENT_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P53-U06-A04-C01-d7916475cae0",
+        "BE-BSW-P53-U06-A04-C02-0f608b66d600",
+        "BE-BSW-P53-U06-A04-C03-6d7317946d3e"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P53-U07-A01-58c0f9bbccbe",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTION_AND_ADDITIONALITY_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ECONOMIC_SUPPORT_DISTRIBUTION_DIAGNOSIS"
+    },
+    {
+      "object_id": "BE-BSW-P53-U07-A02-5241be2c0ea5",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FAIR_WORK_AND_REGIONAL_VALUE_FUNDING_CONDITIONALITY"
+    },
+    {
+      "object_id": "BE-BSW-P53-U07-A03-349b35196172",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_SUBSIDY_CUT_AND_LABOUR_PROGRAMME_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P53-U07-A03-C01-c10dd8ca884f",
+        "BE-BSW-P53-U07-A03-C02-6fdf1a6bb18e"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P53-U08-A01-54781cef7a08",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EFFICIENCY_TARGET_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ADMINISTRATION_EFFICIENCY_TARGET"
+    },
+    {
+      "object_id": "BE-BSW-P53-U08-A02-41ec9e666fd8",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DISTRICT_SERVICE_PROCESS_OPTIMISATION_AND_DIGITALISATION"
+    },
+    {
+      "object_id": "BE-BSW-P53-U09-A01-93fa76750cf9",
+      "authoritative_terminal_fach_state": "NON_EFFECT_COMPLIANCE_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TAX_AVOIDANCE_COMPLIANCE_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P53-U09-A02-2111bb2b256f",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "TAX_OFFICE_STAFFING_AND_CAPACITY"
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A01-4af6868e9c7a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "STOP_BERLIN_OLYMPIC_BID_AND_FUTURE_SPENDING"
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A02-892d7d2279c6",
+      "authoritative_terminal_fach_state": "NON_EFFECT_QUANTITATIVE_COST_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "OLYMPIC_BID_AND_HOSTING_COST_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A03-df2463a8b007",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "REHABILITATE_EXISTING_SPORTS_FACILITIES"
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A04-9ef7985bba8d",
+      "authoritative_terminal_fach_state": "NON_EFFECT_MULTI_DOMAIN_BUDGET_PRIORITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MULTI_DOMAIN_BUDGET_PRIORITY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P53-U10-A05-8d70f09c8667",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P53_P54_BROKEN_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P53P54-U10U01-M01-5ce7b7e3bec5"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P54-U01-a226a5a2869e",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P53_P54_BROKEN_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P53P54-U10U01-M01-5ce7b7e3bec5"
+      ]
+    }
+  ],
+  "deterministic_records": [
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U02-A01-744f6eebc313"
+      ],
+      "source_text": "Wir unterstützen den Bund beim Ausbau und der Unterhaltung unserer Binnenwasserstraßen",
+      "source_span": {
+        "start": 0,
+        "end": 86
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FEDERAL_INLAND_WATERWAY_SUPPORT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U02-A01-C01-b6292674d6f6",
+      "source_text_sha256": "b6292674d6f68335757c11dcd8ca0ad6cab926bc6244014e52841e2eca197807",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U02-A01-744f6eebc313"
+      ],
+      "source_text": "befürworten eine Stärkung der BEHALA",
+      "source_span": {
+        "start": 91,
+        "end": 127
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "BEHALA_STRENGTHENING",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U02-A01-C02-b0161509a7e5",
+      "source_text_sha256": "b0161509a7e5c0e33fefefa425a557216f166b0380efaaee4294372b4df515b3",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U02-A04-784c88d74c8d"
+      ],
+      "source_text": "Errichtung von Güterverteilzentren am Stadtrand",
+      "source_span": {
+        "start": 21,
+        "end": 68
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FREIGHT_DISTRIBUTION_CENTRES_CITY_EDGE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U02-A04-C01-cf5598327a50",
+      "source_text_sha256": "cf5598327a50b22c68b386db9b52dd50901f1c7fab6273ec70ab0a81e348d459",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U02-A04-784c88d74c8d"
+      ],
+      "source_text": "Errichtung von Güterverteilzentren in Brandenburg",
+      "source_span": {
+        "start": 21,
+        "end": 88
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FREIGHT_DISTRIBUTION_CENTRES_BRANDENBURG",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U02-A04-C02-a6c9be87c825",
+      "source_text_sha256": "a6c9be87c825f876374a02d5a9c5aa5ab82ac212fb82b11acd17c96e9c7eea8e",
+      "source_span_basis": "AUTHORITATIVE_ELLIPTICAL_LIST_EXPANSION_FROM_EXACT_PARENT_SPAN",
+      "reconstruction_mode": "AUTHORITATIVE_ELLIPTICAL_LIST_EXPANSION",
+      "source_segments": [
+        {
+          "parent_object_id": "BE-BSW-P50-U02-A04-784c88d74c8d",
+          "start": 21,
+          "end": 88,
+          "source_text": "Errichtung von Güterverteilzentren am Stadtrand bzw. in Brandenburg"
+        }
+      ]
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U02-A04-784c88d74c8d"
+      ],
+      "source_text": "stärker mit unseren Nachbarn zusammenarbeiten",
+      "source_span": {
+        "start": 105,
+        "end": 150
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "FREIGHT_CENTRE_CROSS_STATE_COOPERATION_UNSPECIFIED",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U02-A04-C03-eb66cad9c38d",
+      "source_text_sha256": "eb66cad9c38d0ed29cece1c467c04a91d333e0cd4a49933a3fdd895dae3ef396",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U07-A03-2823684f6ec9"
+      ],
+      "source_text": "Optimierung von Ampelschaltungen",
+      "source_span": {
+        "start": 22,
+        "end": 54
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SIGNAL_OPTIMISATION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U07-A03-C01-f9459550ad20",
+      "source_text_sha256": "f9459550ad2073dfd89498fb4f8de21ea4e795d3827033a5d03c761c1a04541c",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U07-A03-2823684f6ec9"
+      ],
+      "source_text": "bessere Anpassung an Umleitungen und Baustellen",
+      "source_span": {
+        "start": 60,
+        "end": 107
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DIVERSION_AND_CONSTRUCTION_ADAPTATION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U07-A03-C02-15618d21bc3c",
+      "source_text_sha256": "15618d21bc3c95b3ca283f8f754326bb05d2c432bddaabd631c4b6ed48865277",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P50-U07-A03-2823684f6ec9"
+      ],
+      "source_text": "Ausbau zentraler Verbindungen wie der Tangentialen Verbindung Ost (TVO)",
+      "source_span": {
+        "start": 118,
+        "end": 189
+      },
+      "terminal_fach_state": "NON_EFFECT_RESTATEMENT_AND_GENERAL_ACTION_PARENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TVO_GENERAL_ACTION_RESTATEMENT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P50-U07-A03-C03-38f3111522c2",
+      "source_text_sha256": "38f3111522c268a41018201334fa638bf634cc092780ee5aa7e3a2398c89b79f",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P53-U06-A04-a6ca6ad2c99e"
+      ],
+      "source_text": "verbesserte bundeseinheitliche Abstimmung im Bereich der Digitalisierung",
+      "source_span": {
+        "start": 11,
+        "end": 83
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "TAX_ADMIN_DIGITAL_INTEROPERABILITY",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P53-U06-A04-C01-d7916475cae0",
+      "source_text_sha256": "d7916475cae0c78ea7845c517f97b28e42b262bc6db9dbd6a1c4ba80768afb88",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P53-U06-A04-a6ca6ad2c99e"
+      ],
+      "source_text": "Priorisierung verschiedener Fachbereiche",
+      "source_span": {
+        "start": 85,
+        "end": 125
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "TAX_ADMIN_FIELD_PRIORITISATION_UNSPECIFIED",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P53-U06-A04-C02-0f608b66d600",
+      "source_text_sha256": "0f608b66d600088c0eb779b4086992a6657477950264864d7b7e8d6b23e37906",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P53-U06-A04-a6ca6ad2c99e"
+      ],
+      "source_text": "einen effizienteren Steuervollzug",
+      "source_span": {
+        "start": 130,
+        "end": 163
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EFFICIENT_TAX_ENFORCEMENT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P53-U06-A04-C03-6d7317946d3e",
+      "source_text_sha256": "6d7317946d3e17c07a61b85ddd2bf3e19ce5d25af9256f6bc247297720755683",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P53-U07-A03-349b35196172"
+      ],
+      "source_text": "ineffektive Subventionen gestrichen",
+      "source_span": {
+        "start": 20,
+        "end": 55
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "UNSPECIFIED_SUBSIDY_CUT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P53-U07-A03-C01-c10dd8ca884f",
+      "source_text_sha256": "c10dd8ca884fa50508463cb79e4214fab18916c7869f09b36a6ecffca181c3d5",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P53-U07-A03-349b35196172"
+      ],
+      "source_text": "die freiwerdenden Mittel zum Beispiel in arbeitsmarktpolitische Programme für Geringqualifizierte investiert werden",
+      "source_span": {
+        "start": 60,
+        "end": 175
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "LOW_QUALIFICATION_LABOUR_MARKET_PROGRAMMES",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P53-U07-A03-C02-6fdf1a6bb18e",
+      "source_text_sha256": "6fdf1a6bb18ef671751775aeb8c7f426de519bbd262ec1dd435c1eacb7218cc8",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P53-U10-A05-8d70f09c8667",
+        "BE-BSW-P54-U01-a226a5a2869e"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Eine Umschichtung zugunsten dieser Bereiche verbessert die Lebensqualität breiter Bevölkerungsschichten unmittelbar.",
+      "source_span": {
+        "start": 0,
+        "end": 116
+      },
+      "terminal_fach_state": "NON_EFFECT_EXPECTED_DISTRIBUTIONAL_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CROSS_PAGE_REALLOCATION_EXPECTED_OUTCOME_CLAIM",
+      "object_kind": "DETERMINISTIC_CROSS_PAGE_SEMANTIC_REPLACEMENT",
+      "object_id": "BE-BSW-P53P54-U10U01-M01-5ce7b7e3bec5",
+      "source_text_sha256": "5ce7b7e3bec5de4b0db0af45841d9750000b4dad3db2359aeb7d97b08054af73",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    }
+  ],
+  "deterministic_open_children": [],
+  "deterministic_child_contract": {
+    "id_rule": "stable structural prefix plus first 12 hex characters of SHA-256(exact UTF-8 deterministic source text)",
+    "source_span_basis": [
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT",
+      "AUTHORITATIVE_ELLIPTICAL_LIST_EXPANSION_FROM_EXACT_PARENT_SPAN"
+    ],
+    "semantics_rule": "IDs, hashes, exact text spans and lineage are mechanical; Fach is copied only from the cited WÖk comments."
+  },
+  "coverage": {
+    "protected_fach_terminal_physical_scope": "P1-P49",
+    "segmented_physical_pages": [
+      50,
+      51,
+      52,
+      53
+    ],
+    "consumed_cross_page_fragment": "P54-U01 only; P54 page envelope remains open",
+    "next_opaque_page_review_envelope_from": 54,
+    "next_opaque_page_review_envelope_through": 66,
+    "original_source_object_count": 69,
+    "original_terminal_record_count": 69,
+    "deterministic_terminal_record_count": 14,
+    "new_terminal_record_count": 83,
+    "active_terminal_review_leaf_count": 32,
+    "active_explicit_fach_approved_count": 24,
+    "active_reviewed_not_assessable_count": 8,
+    "versioned_parent_or_fragment_count": 7,
+    "new_exact_open_child_object_count": 0,
+    "terminal_status_counts": {
+      "EXPLICIT_FACH_APPROVED": 24,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 8,
+      "NON_EFFECT_CONTEXT_REVIEWED": 44,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 7
+    },
+    "gate": "BE_BSW_P50_P53_FACH_COMPLETE_PASS_SOURCE_BOUND"
+  },
+  "constraints": {
+    "fach_inferred_from_source": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "party_wide_judgement_synthesized": false,
+    "p54_page_envelope_closed": false,
+    "vercel_action_triggered": false
+  }
+}
