@@ -12,13 +12,13 @@ const bsw = residual.programmes.find((programme) => programme.party === "BSW");
 
 assert.ok(bsw, "BSW missing from current Berlin Fach-truth matrix");
 assert.equal(bsw.programme_analysis_complete, false, "BSW must remain open after rejection of generic RNAA terminals");
-assert.equal(bsw.terminal_object_count, 815, "BSW exact issue #240 terminal stock drifted");
-assert.equal(bsw.remaining_review_envelope_count, 21, "BSW page-envelope residual must be physical PDF pages 46-66");
+assert.equal(bsw.terminal_object_count, 937, "BSW exact issue #240 terminal stock drifted");
+assert.equal(bsw.remaining_review_envelope_count, 17, "BSW page-envelope residual must be physical PDF pages 50-66");
 assert.equal(bsw.remaining_exact_object_count, 61, "BSW exact child residual must include the P34-P43 finite set");
-assert.equal(bsw.remaining_review_scope_count, 82, "BSW finite residual must be 21 page envelopes plus 61 exact children");
+assert.equal(bsw.remaining_review_scope_count, 78, "BSW finite residual must be 17 page envelopes plus 61 exact children");
 assert.deepEqual(
   bsw.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-  Array.from({ length: 21 }, (_, index) => index + 46),
+  Array.from({ length: 17 }, (_, index) => index + 50),
 );
 assert.ok(bsw.remaining_review_envelopes.every((item) => (
   item.counts_as_effect_object === false
@@ -44,6 +44,7 @@ const p30P33Current = bsw.terminal_objects.filter((item) => /-P(?:30|31|32|33)-|
 const p34P37Current = bsw.terminal_objects.filter((item) => /-P(?:34|35|36|37)-|-P34P35-|-P35P36-|-P36P37-/.test(item.object_id));
 const p38P41Current = bsw.terminal_objects.filter((item) => /-P(?:38|39|40|41)-|-P38P39-/.test(item.object_id));
 const p42P45Current = bsw.terminal_objects.filter((item) => /-P(?:42|43|44|45)-/.test(item.object_id));
+const p46P49Current = bsw.terminal_objects.filter((item) => /-P(?:46|47|48|49)-|-P49P50-|-P50-U01-bb3d4390ad9a/.test(item.object_id));
 assert.equal(explicitPage14.length, 23, "explicit page-14 handoff was not consumed exactly");
 assert.equal(explicitPages15To19.length, 119, "explicit pages-15-to-19 handoffs were not consumed exactly");
 assert.equal(explicitP19ClosureToP21.length, 39, "explicit P19-closure/P20/P21 handoffs were not consumed exactly");
@@ -92,9 +93,16 @@ assert.equal(p42P45Current.filter((item) => item.fach_state === "NON_EFFECT_CONT
 assert.equal(p42P45Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 6, "P42-P45 versioned parent set drifted");
 assert.equal(p42P45Current.filter((item) => item.parent_object_ids).length, 8, "P42-P45 deterministic terminal set drifted");
 assert.equal(bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id)).length, 4, "P42-P43 exact child residual set drifted");
+assert.equal(p46P49Current.length, 122, "P46-P49 terminal set drifted");
+assert.equal(p46P49Current.filter((item) => item.counts_as_effect_object === true).length, 53, "P46-P49 active terminal leaf set drifted");
+assert.equal(p46P49Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 36, "P46-P49 explicit Fach set drifted");
+assert.equal(p46P49Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 17, "P46-P49 exact RNAA set drifted");
+assert.equal(p46P49Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 51, "P46-P49 zero-count terminal set drifted");
+assert.equal(p46P49Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 18, "P46-P49 versioned parent/fragment set drifted");
+assert.equal(p46P49Current.filter((item) => item.parent_object_ids).length, 27, "P46-P49 deterministic terminal set drifted");
 assert.ok(
-  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 45).every((atom) => !currentIds.has(atom.atom_id)),
-  "rejected BSW generic terminal outside explicit pages 14-45 leaked into current truth",
+  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 49).every((atom) => !currentIds.has(atom.atom_id)),
+  "rejected BSW generic terminal outside explicit pages 14-49 leaked into current truth",
 );
 assert.equal(residual.rejected_predecessor.disposition, "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY");
 assert.equal(residual.release_policy.no_new_vercel_build, true);
@@ -119,5 +127,6 @@ console.log(JSON.stringify({
   p38P41ExactOpenChildren: bsw.remaining_review_objects.filter((item) => /-P(?:38|39|40|41)-/.test(item.object_id)).length,
   p42P45TerminalObjects: p42P45Current.length,
   p42P43ExactOpenChildren: bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id)).length,
+  p46P49TerminalObjects: p46P49Current.length,
   programmeAnalysisComplete: bsw.programme_analysis_complete,
 }));

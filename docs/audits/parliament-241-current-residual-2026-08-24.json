@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "24f811c0d2b3a858916207bbb030ee3c220f097b",
+  "audited_main_commit": "7628b7e45e9e462af5cc92a5b6dcf9f9e714eae5",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -42,9 +42,9 @@
       "programme_analysis_complete": 3,
       "programme_analysis_complete_parties": ["DKP", "Die PARTEI", "SGP"],
       "genuine_fach_programmes": 9,
-      "remaining_review_envelopes": 1236,
+      "remaining_review_envelopes": 1232,
       "remaining_exact_effect_objects_identified": 61,
-      "remaining_review_scopes": 1297,
+      "remaining_review_scopes": 1293,
       "remaining_exact_effect_object_count": null,
       "known_segmentation_defects": 2,
       "evidence": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
@@ -637,14 +637,14 @@
         "canonicalization_pending_programmes": [],
         "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json",
         "fach_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json",
-        "remaining_review_envelopes": 1236,
+        "remaining_review_envelopes": 1232,
         "remaining_exact_effect_objects_identified": 61,
-        "remaining_review_scopes": 1297,
+        "remaining_review_scopes": 1293,
         "remaining_exact_effect_object_count": null,
         "known_segmentation_defects": ["BE-SPD-2026-SU-0136-A01", "BE-SPD-2026-SU-0136-A03"],
         "rejected_false_terminal_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json",
-        "preserved_existing_scope": "Exact terminal Fach stock is preserved for DKP, Die PARTEI and SGP. BSW physical pages P1-P45 are protected source-bound stock; P34-P37 contribute 73 terminal records and 19 deterministic exact Fach-open children, P38-P41 contribute 93 terminal records and 38 deterministic exact Fach-open children, and P42-P45 contribute 74 terminal records plus four deterministic exact Fach-open children on P42/P43. All 22 deterministic P24/P25 child objects are Fach-terminal, and P30-P33 preserve their explicit child, alternative-design and cross-page lineage.",
-        "required_fach_action": "For the nine exact genuine_fach_programmes, supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. BSW's next opaque envelope is physical P46 and its remaining physical envelope is P46-P66; the 61 exact P34-P43 children remain fail-closed pending explicit WÖk Fach. Berlin's current residual contains 1236 bounded page review envelopes plus 61 exact already-segmented Fach-open objects. The overall exact effect-object count remains unknown until all page envelopes are segmented."
+        "preserved_existing_scope": "Exact terminal Fach stock is preserved for DKP, Die PARTEI and SGP. BSW physical pages P1-P49 are protected source-bound stock; P34-P37 contribute 73 terminal records and 19 deterministic exact Fach-open children, P38-P41 contribute 93 terminal records and 38 deterministic exact Fach-open children, P42-P45 contribute 74 terminal records plus four deterministic exact Fach-open children on P42/P43, and P46-P49 contribute 122 terminal records including 27 deterministic repairs and the P49-P50 freight-diagnosis fragment repair. All 22 deterministic P24/P25 child objects are Fach-terminal, and P30-P33 preserve their explicit child, alternative-design and cross-page lineage.",
+        "required_fach_action": "For the nine exact genuine_fach_programmes, supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. BSW's next opaque envelope is physical P50 and its remaining physical envelope is P50-P66; P50-U01 is already consumed only as the zero-count continuation of the P49 freight diagnosis. The 61 exact P34-P43 children remain fail-closed pending explicit WÖk Fach. Berlin's current residual contains 1232 bounded page review envelopes plus 61 exact already-segmented Fach-open objects. The overall exact effect-object count remains unknown until all page envelopes are segmented."
       },
       {
         "id": "MV-FACH-CONTENT-RESIDUAL",
