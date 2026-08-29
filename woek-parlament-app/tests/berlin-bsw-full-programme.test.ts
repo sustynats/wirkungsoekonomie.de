@@ -6,8 +6,9 @@ const ledger = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berli
 const residual = JSON.parse(readFileSync("data/state-programmes/fach-content-residuals/berlin-2026-v3.json", "utf8"));
 const p50P53Handoff = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berlin-2026-bsw-p50-p53-explicit-v1.json", "utf8"));
 const p54P57Handoff = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berlin-2026-bsw-p54-p57-explicit-v1.json", "utf8"));
+const p58P59Handoff = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berlin-2026-bsw-p58-p59-explicit-v1.json", "utf8"));
 
-test("BSW Berlin preserves protected P1-14 and exact issue #240 P15-57 terminals", () => {
+test("BSW Berlin preserves protected P1-14 and exact issue #240 P15-59 terminals", () => {
   assert.equal(ledger.protected_terminal_stock.length, 3);
   assert.deepEqual(
     ledger.protected_terminal_stock.map((stock: { accepted_terminal_records: unknown[] }) => stock.accepted_terminal_records.length),
@@ -15,29 +16,29 @@ test("BSW Berlin preserves protected P1-14 and exact issue #240 P15-57 terminals
   );
   const bsw = residual.programmes.find((programme: { party: string }) => programme.party === "BSW");
   assert.ok(bsw);
-  assert.equal(bsw.terminal_object_count, 1167);
-  assert.equal(bsw.terminal_objects.length, 1167);
-  assert.equal(new Set(bsw.terminal_objects.map((item: { object_id: string }) => item.object_id)).size, 1167);
+  assert.equal(bsw.terminal_object_count, 1211);
+  assert.equal(bsw.terminal_objects.length, 1211);
+  assert.equal(new Set(bsw.terminal_objects.map((item: { object_id: string }) => item.object_id)).size, 1211);
   assert.deepEqual(bsw.terminal_status_counts, {
-    EXPLICIT_FACH_APPROVED: 401,
-    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 111,
-    NON_EFFECT_CONTEXT_REVIEWED: 529,
-    SOURCE_UNIT_RECLASSIFIED_VERSIONED: 126,
+    EXPLICIT_FACH_APPROVED: 411,
+    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 115,
+    NON_EFFECT_CONTEXT_REVIEWED: 557,
+    SOURCE_UNIT_RECLASSIFIED_VERSIONED: 128,
   });
 });
 
-test("BSW P24/P25 and P30-P57 exact objects are closed while P58-P66 stays opaque", () => {
+test("BSW P24/P25 and P30-P59 exact objects are closed while P60-P66 stays opaque", () => {
   const bsw = residual.programmes.find((programme: { party: string }) => programme.party === "BSW");
   assert.ok(bsw);
   assert.equal(bsw.programme_analysis_complete, false);
   assert.equal(bsw.fach_state, "GENUINE_FACH_REVIEW_REQUIRED");
-  assert.equal(bsw.remaining_review_envelope_count, 9);
+  assert.equal(bsw.remaining_review_envelope_count, 7);
   assert.equal(bsw.remaining_exact_object_count, 0);
-  assert.equal(bsw.remaining_review_scope_count, 9);
+  assert.equal(bsw.remaining_review_scope_count, 7);
   assert.equal(bsw.remaining_review_objects.length, 0);
   assert.deepEqual(
     bsw.remaining_review_envelopes.map((item: { source_locator: string }) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-    Array.from({ length: 9 }, (_, index) => index + 58),
+    Array.from({ length: 7 }, (_, index) => index + 60),
   );
   assert.ok(bsw.remaining_review_envelopes.every((item: {
     object_kind: string;
@@ -143,6 +144,9 @@ test("BSW P24/P25 and P30-P57 exact objects are closed while P58-P66 stays opaqu
   assert.equal(p54P57.filter((item: { fach_state: string }) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 5);
   assert.equal(p54P57.filter((item: { segmentation_origin?: string }) => item.segmentation_origin?.startsWith("DETERMINISTIC_")).length, 9);
   assert.equal(p54P57Handoff.deterministic_open_children.length, 0);
+  assert.equal(p58P59Handoff.deterministic_open_children.length, 0);
+  assert.equal(p58P59Handoff.coverage.new_terminal_record_count, 44);
+  assert.equal(p58P59Handoff.coverage.active_terminal_review_leaf_count, 14);
   assert.ok(bsw.remaining_review_objects.every((item: { fach_state: string; counts_as_effect_object: boolean }) => (
     item.fach_state === "GENUINE_FACH_REVIEW_REQUIRED" && item.counts_as_effect_object === true
   )));
@@ -161,11 +165,11 @@ test("the former BSW atom ledger is retained only as rejected historical evidenc
     .filter((item: { fach_handoff?: string }) => item.fach_handoff?.endsWith("issuecomment-5449003550"));
   assert.equal(explicitlySupersededPage14.length, 23);
   assert.ok(ledger.effect_atoms
-    .filter((atom: { pdf_page: number }) => atom.pdf_page < 14 || atom.pdf_page > 57)
+    .filter((atom: { pdf_page: number }) => atom.pdf_page < 14 || atom.pdf_page > 59)
     .every((atom: { atom_id: string }) => !currentIds.has(atom.atom_id)));
   assert.equal(residual.summary.programme_analysis_complete, 3);
   assert.equal(residual.summary.programme_analysis_open, 9);
-  assert.equal(residual.summary.remaining_page_review_envelopes, 1224);
+  assert.equal(residual.summary.remaining_page_review_envelopes, 1222);
   assert.equal(residual.summary.remaining_exact_effect_objects_identified, 0);
-  assert.equal(residual.summary.remaining_review_scope_count, 1224);
+  assert.equal(residual.summary.remaining_review_scope_count, 1222);
 });
