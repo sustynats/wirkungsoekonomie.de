@@ -12,13 +12,13 @@ const bsw = residual.programmes.find((programme) => programme.party === "BSW");
 
 assert.ok(bsw, "BSW missing from current Berlin Fach-truth matrix");
 assert.equal(bsw.programme_analysis_complete, false, "BSW must remain open after rejection of generic RNAA terminals");
-assert.equal(bsw.terminal_object_count, 1081, "BSW exact issue #240 terminal stock drifted");
-assert.equal(bsw.remaining_review_envelope_count, 13, "BSW page-envelope residual must be physical PDF pages 54-66");
+assert.equal(bsw.terminal_object_count, 1167, "BSW exact issue #240 terminal stock drifted");
+assert.equal(bsw.remaining_review_envelope_count, 9, "BSW page-envelope residual must be physical PDF pages 58-66");
 assert.equal(bsw.remaining_exact_object_count, 0, "BSW P34-P43 exact child residual must be closed");
-assert.equal(bsw.remaining_review_scope_count, 13, "BSW finite residual must be exactly the 13 P54-P66 page envelopes");
+assert.equal(bsw.remaining_review_scope_count, 9, "BSW finite residual must be exactly the 9 P58-P66 page envelopes");
 assert.deepEqual(
   bsw.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-  Array.from({ length: 13 }, (_, index) => index + 54),
+  Array.from({ length: 9 }, (_, index) => index + 58),
 );
 assert.ok(bsw.remaining_review_envelopes.every((item) => (
   item.counts_as_effect_object === false
@@ -48,6 +48,10 @@ const p46P49Current = bsw.terminal_objects.filter((item) => /-P(?:46|47|48|49)-|
 const p50P53Current = bsw.terminal_objects.filter((item) => (
   item.object_id !== "BE-BSW-P50-U01-bb3d4390ad9a"
   && /-P(?:50|51|52|53)-|-P53P54-|-P54-U01-a226a5a2869e/.test(item.object_id)
+));
+const p54P57Current = bsw.terminal_objects.filter((item) => (
+  item.object_id !== "BE-BSW-P54-U01-a226a5a2869e"
+  && /-P(?:54|55|56|57)-|-P56P57-/.test(item.object_id)
 ));
 assert.equal(explicitPage14.length, 23, "explicit page-14 handoff was not consumed exactly");
 assert.equal(explicitPages15To19.length, 119, "explicit pages-15-to-19 handoffs were not consumed exactly");
@@ -110,9 +114,16 @@ assert.equal(p50P53Current.filter((item) => item.fach_state === "REVIEWED_NOT_AS
 assert.equal(p50P53Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 44, "P50-P53 zero-count terminal set drifted");
 assert.equal(p50P53Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 7, "P50-P53 versioned parent/fragment set drifted");
 assert.equal(p50P53Current.filter((item) => item.parent_object_ids).length, 14, "P50-P53 deterministic terminal set drifted");
+assert.equal(p54P57Current.length, 86, "P54-P57 terminal set drifted");
+assert.equal(p54P57Current.filter((item) => item.counts_as_effect_object === true).length, 30, "P54-P57 active terminal leaf set drifted");
+assert.equal(p54P57Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 23, "P54-P57 explicit Fach set drifted");
+assert.equal(p54P57Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 7, "P54-P57 exact RNAA set drifted");
+assert.equal(p54P57Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 51, "P54-P57 zero-count terminal set drifted");
+assert.equal(p54P57Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 5, "P54-P57 versioned parent/fragment set drifted");
+assert.equal(p54P57Current.filter((item) => item.parent_object_ids).length, 9, "P54-P57 deterministic terminal set drifted");
 assert.ok(
-  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 53).every((atom) => !currentIds.has(atom.atom_id)),
-  "rejected BSW generic terminal outside explicit pages 14-53 leaked into current truth",
+  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 57).every((atom) => !currentIds.has(atom.atom_id)),
+  "rejected BSW generic terminal outside explicit pages 14-57 leaked into current truth",
 );
 assert.equal(residual.rejected_predecessor.disposition, "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY");
 assert.equal(residual.release_policy.no_new_vercel_build, true);
@@ -139,5 +150,6 @@ console.log(JSON.stringify({
   p42P43ExactOpenChildren: bsw.remaining_review_objects.filter((item) => /-P(?:42|43)-/.test(item.object_id)).length,
   p46P49TerminalObjects: p46P49Current.length,
   p50P53TerminalObjects: p50P53Current.length,
+  p54P57TerminalObjects: p54P57Current.length,
   programmeAnalysisComplete: bsw.programme_analysis_complete,
 }));
