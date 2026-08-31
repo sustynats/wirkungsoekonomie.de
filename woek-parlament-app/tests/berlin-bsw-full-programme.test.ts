@@ -8,8 +8,9 @@ const p50P53Handoff = JSON.parse(readFileSync("data/state-programmes/fach-review
 const p54P57Handoff = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berlin-2026-bsw-p54-p57-explicit-v1.json", "utf8"));
 const p58P59Handoff = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berlin-2026-bsw-p58-p59-explicit-v1.json", "utf8"));
 const p60P63Handoff = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berlin-2026-bsw-p60-p63-explicit-v1.json", "utf8"));
+const p64P66Handoff = JSON.parse(readFileSync("data/state-programmes/fach-reviews/berlin-2026-bsw-p64-p66-explicit-v1.json", "utf8"));
 
-test("BSW Berlin preserves protected P1-14 and exact issue #240 P15-63 terminals", () => {
+test("BSW Berlin preserves protected P1-14 and exact issue #240 P15-66 terminals", () => {
   assert.equal(ledger.protected_terminal_stock.length, 3);
   assert.deepEqual(
     ledger.protected_terminal_stock.map((stock: { accepted_terminal_records: unknown[] }) => stock.accepted_terminal_records.length),
@@ -17,41 +18,27 @@ test("BSW Berlin preserves protected P1-14 and exact issue #240 P15-63 terminals
   );
   const bsw = residual.programmes.find((programme: { party: string }) => programme.party === "BSW");
   assert.ok(bsw);
-  assert.equal(bsw.terminal_object_count, 1308);
-  assert.equal(bsw.terminal_objects.length, 1308);
-  assert.equal(new Set(bsw.terminal_objects.map((item: { object_id: string }) => item.object_id)).size, 1308);
+  assert.equal(bsw.terminal_object_count, 1374);
+  assert.equal(bsw.terminal_objects.length, 1374);
+  assert.equal(new Set(bsw.terminal_objects.map((item: { object_id: string }) => item.object_id)).size, 1374);
   assert.deepEqual(bsw.terminal_status_counts, {
-    EXPLICIT_FACH_APPROVED: 423,
-    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 128,
-    NON_EFFECT_CONTEXT_REVIEWED: 624,
-    SOURCE_UNIT_RECLASSIFIED_VERSIONED: 133,
+    EXPLICIT_FACH_APPROVED: 435,
+    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 134,
+    NON_EFFECT_CONTEXT_REVIEWED: 671,
+    SOURCE_UNIT_RECLASSIFIED_VERSIONED: 134,
   });
 });
 
-test("BSW P24/P25 and P30-P63 exact objects are closed while P64-P66 stays opaque", () => {
+test("BSW P24/P25 and P30-P66 exact objects are source-bound with zero residual", () => {
   const bsw = residual.programmes.find((programme: { party: string }) => programme.party === "BSW");
   assert.ok(bsw);
-  assert.equal(bsw.programme_analysis_complete, false);
-  assert.equal(bsw.fach_state, "GENUINE_FACH_REVIEW_REQUIRED");
-  assert.equal(bsw.remaining_review_envelope_count, 3);
+  assert.equal(bsw.programme_analysis_complete, true);
+  assert.equal(bsw.fach_state, "PROGRAMME_ANALYSIS_COMPLETE");
+  assert.equal(bsw.remaining_review_envelope_count, 0);
   assert.equal(bsw.remaining_exact_object_count, 0);
-  assert.equal(bsw.remaining_review_scope_count, 3);
+  assert.equal(bsw.remaining_review_scope_count, 0);
   assert.equal(bsw.remaining_review_objects.length, 0);
-  assert.deepEqual(
-    bsw.remaining_review_envelopes.map((item: { source_locator: string }) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-    [64, 65, 66],
-  );
-  assert.ok(bsw.remaining_review_envelopes.every((item: {
-    object_kind: string;
-    segmentation_state: string;
-    fach_state: string;
-    effect_bearing_status: string;
-    counts_as_effect_object: boolean;
-  }) => item.object_kind === "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE"
-    && item.segmentation_state === "SEGMENTATION_REVIEW_REQUIRED"
-    && item.fach_state === "GENUINE_FACH_REVIEW_REQUIRED"
-    && item.effect_bearing_status === "NOT_YET_CLASSIFIED"
-    && item.counts_as_effect_object === false));
+  assert.deepEqual(bsw.remaining_review_envelopes, []);
   assert.equal(
     bsw.terminal_objects.filter((item: { object_id: string; fach_handoff?: string }) => (
       item.object_id.includes("-P19-") && item.fach_handoff?.endsWith("issuecomment-5451527622")
@@ -161,6 +148,19 @@ test("BSW P24/P25 and P30-P63 exact objects are closed while P64-P66 stays opaqu
   assert.equal(p60P63.filter((item: { fach_state: string }) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 5);
   assert.equal(p60P63.filter((item: { parent_object_ids?: string[] }) => item.parent_object_ids).length, 5);
   assert.equal(p60P63Handoff.deterministic_open_children.length, 0);
+  const p64P66Ids = new Set([
+    ...p64P66Handoff.original_records.map((item: { object_id: string }) => item.object_id),
+    ...p64P66Handoff.deterministic_records.map((item: { object_id: string }) => item.object_id),
+  ]);
+  const p64P66 = bsw.terminal_objects.filter((item: { object_id: string }) => p64P66Ids.has(item.object_id));
+  assert.equal(p64P66.length, 66);
+  assert.equal(p64P66.filter((item: { counts_as_effect_object?: boolean }) => item.counts_as_effect_object === true).length, 18);
+  assert.equal(p64P66.filter((item: { fach_state: string }) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 12);
+  assert.equal(p64P66.filter((item: { fach_state: string }) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 6);
+  assert.equal(p64P66.filter((item: { fach_state: string }) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 47);
+  assert.equal(p64P66.filter((item: { fach_state: string }) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 1);
+  assert.equal(p64P66.filter((item: { parent_object_ids?: string[] }) => item.parent_object_ids).length, 3);
+  assert.equal(p64P66Handoff.deterministic_open_children.length, 0);
   assert.ok(bsw.remaining_review_objects.every((item: { fach_state: string; counts_as_effect_object: boolean }) => (
     item.fach_state === "GENUINE_FACH_REVIEW_REQUIRED" && item.counts_as_effect_object === true
   )));
@@ -179,11 +179,11 @@ test("the former BSW atom ledger is retained only as rejected historical evidenc
     .filter((item: { fach_handoff?: string }) => item.fach_handoff?.endsWith("issuecomment-5449003550"));
   assert.equal(explicitlySupersededPage14.length, 23);
   assert.ok(ledger.effect_atoms
-    .filter((atom: { pdf_page: number }) => atom.pdf_page < 14 || atom.pdf_page > 63)
+    .filter((atom: { pdf_page: number }) => atom.pdf_page < 14 || atom.pdf_page > 66)
     .every((atom: { atom_id: string }) => !currentIds.has(atom.atom_id)));
-  assert.equal(residual.summary.programme_analysis_complete, 3);
-  assert.equal(residual.summary.programme_analysis_open, 9);
-  assert.equal(residual.summary.remaining_page_review_envelopes, 1218);
+  assert.equal(residual.summary.programme_analysis_complete, 4);
+  assert.equal(residual.summary.programme_analysis_open, 8);
+  assert.equal(residual.summary.remaining_page_review_envelopes, 1215);
   assert.equal(residual.summary.remaining_exact_effect_objects_identified, 0);
-  assert.equal(residual.summary.remaining_review_scope_count, 1218);
+  assert.equal(residual.summary.remaining_review_scope_count, 1215);
 });

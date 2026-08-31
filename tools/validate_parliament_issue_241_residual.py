@@ -78,11 +78,11 @@ def validate() -> dict:
     require(berlin["coverage"]["final_election_programme_verified_count"] == 12, "ISSUE_241_BE_FINAL_COUNT_DRIFT")
     require(berlin["coverage"]["election_source_available_canonicalization_pending_count"] == 0, "ISSUE_241_BE_CANONICALIZATION_COUNT_DRIFT")
     require(berlin["coverage"]["canonical_artifact_count"] == 12, "ISSUE_241_BE_CANONICAL_ARTIFACT_COUNT_DRIFT")
-    require(berlin_fach["summary"]["programme_analysis_complete"] == 3, "ISSUE_241_BE_FACH_TERMINAL_COUNT_DRIFT")
-    require(berlin_fach["summary"]["genuine_fach_programmes"] == 9, "ISSUE_241_BE_FACH_RESIDUAL_COUNT_DRIFT")
-    require(berlin_fach["summary"]["remaining_page_review_envelopes"] == 1218, "ISSUE_241_BE_FACH_ENVELOPE_COUNT_DRIFT")
+    require(berlin_fach["summary"]["programme_analysis_complete"] == 4, "ISSUE_241_BE_FACH_TERMINAL_COUNT_DRIFT")
+    require(berlin_fach["summary"]["genuine_fach_programmes"] == 8, "ISSUE_241_BE_FACH_RESIDUAL_COUNT_DRIFT")
+    require(berlin_fach["summary"]["remaining_page_review_envelopes"] == 1215, "ISSUE_241_BE_FACH_ENVELOPE_COUNT_DRIFT")
     require(berlin_fach["summary"]["remaining_exact_effect_objects_identified"] == 0, "ISSUE_241_BE_FACH_EXACT_OBJECT_COUNT_DRIFT")
-    require(berlin_fach["summary"]["remaining_review_scope_count"] == 1218, "ISSUE_241_BE_FACH_SCOPE_COUNT_DRIFT")
+    require(berlin_fach["summary"]["remaining_review_scope_count"] == 1215, "ISSUE_241_BE_FACH_SCOPE_COUNT_DRIFT")
     require(berlin_fach["summary"]["remaining_exact_effect_object_count"] is None, "ISSUE_241_BE_FALSE_EFFECT_OBJECT_COUNT")
     require(berlin_fach["summary"]["known_segmentation_defects"] == 2, "ISSUE_241_BE_SEGMENTATION_DEFECT_DRIFT")
     require(berlin_fach["rejected_predecessor"]["disposition"] == "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY", "ISSUE_241_BE_FALSE_TERMINAL_NOT_REJECTED")
@@ -94,9 +94,9 @@ def validate() -> dict:
     require(mv["coverage"]["canonical_current_source_finality_open_count"] == 1, "ISSUE_241_MV_OPEN_FINALITY_COUNT_DRIFT")
     require(golden["status"] == "COMBINED_GITHUB_GOLDEN_STATE", "ISSUE_241_COMBINED_CHECKPOINT_DRIFT")
     require(current_readiness["status"] == "FACH_RESIDUAL_OPEN", "ISSUE_241_CURRENT_GOLDEN_FALSE_GREEN")
-    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_envelopes"] == 1218, "ISSUE_241_CURRENT_GOLDEN_BE_RESIDUAL_DRIFT")
+    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_envelopes"] == 1215, "ISSUE_241_CURRENT_GOLDEN_BE_RESIDUAL_DRIFT")
     require(current_readiness["blocking_lanes"]["berlin"]["remaining_exact_effect_objects_identified"] == 0, "ISSUE_241_CURRENT_GOLDEN_BE_EXACT_OBJECT_DRIFT")
-    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_scopes"] == 1218, "ISSUE_241_CURRENT_GOLDEN_BE_SCOPE_DRIFT")
+    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_scopes"] == 1215, "ISSUE_241_CURRENT_GOLDEN_BE_SCOPE_DRIFT")
     require(current_readiness["blocking_lanes"]["mecklenburg_vorpommern"]["verified_final_programmes_requiring_truthful_residual"] == 12, "ISSUE_241_CURRENT_GOLDEN_MV_RESIDUAL_DRIFT")
     require(current_readiness["combined_release_gate"]["github_golden_state_current"] is False, "ISSUE_241_CURRENT_GOLDEN_RELEASE_FALSE_GREEN")
     require(current_readiness["combined_release_gate"]["owner_runtime_rc_request_allowed"] is False, "ISSUE_241_CURRENT_GOLDEN_RC_REQUEST_ENABLED")
@@ -110,13 +110,13 @@ def validate() -> dict:
     fach = matrix["finite_residuals"]["fach_review_required"]
     require([item["id"] for item in technical] == ["BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
     require(len(fach[0]["verified_final_programmes"]) == 12 and len(fach[0]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
-    require(fach[0]["programme_analysis_complete"] == ["DKP", "Die PARTEI", "SGP"], "ISSUE_241_BE_FACH_TERMINAL_SET_DRIFT")
-    require(fach[0]["genuine_fach_programmes"] == ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "FDP", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"], "ISSUE_241_BE_FACH_OPEN_SET_DRIFT")
+    require(fach[0]["programme_analysis_complete"] == ["BSW", "DKP", "Die PARTEI", "SGP"], "ISSUE_241_BE_FACH_TERMINAL_SET_DRIFT")
+    require(fach[0]["genuine_fach_programmes"] == ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "FDP", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"], "ISSUE_241_BE_FACH_OPEN_SET_DRIFT")
     require(fach[0]["canonical_artifact_register"].endswith("berlin-2026-v2.json"), "ISSUE_241_BE_FACH_ARTIFACT_REGISTER_DRIFT")
     require(fach[0]["fach_residual_matrix"].endswith("berlin-2026-v3.json"), "ISSUE_241_BE_FACH_MATRIX_DRIFT")
-    require(fach[0]["remaining_review_envelopes"] == 1218, "ISSUE_241_BE_FACH_FINITE_ENVELOPE_DRIFT")
+    require(fach[0]["remaining_review_envelopes"] == 1215, "ISSUE_241_BE_FACH_FINITE_ENVELOPE_DRIFT")
     require(fach[0]["remaining_exact_effect_objects_identified"] == 0, "ISSUE_241_BE_FACH_FINITE_EXACT_OBJECT_DRIFT")
-    require(fach[0]["remaining_review_scopes"] == 1218, "ISSUE_241_BE_FACH_FINITE_SCOPE_DRIFT")
+    require(fach[0]["remaining_review_scopes"] == 1215, "ISSUE_241_BE_FACH_FINITE_SCOPE_DRIFT")
     require(fach[0]["remaining_exact_effect_object_count"] is None, "ISSUE_241_BE_FACH_FALSE_EFFECT_TOTAL")
     require(fach[0]["known_segmentation_defects"] == ["BE-SPD-2026-SU-0136-A01", "BE-SPD-2026-SU-0136-A03"], "ISSUE_241_BE_FACH_SEGMENTATION_SET_DRIFT")
     require(fach[0]["rejected_false_terminal_matrix"].endswith("berlin-2026-v2.json"), "ISSUE_241_BE_REJECTED_MATRIX_DRIFT")
@@ -141,7 +141,7 @@ def validate() -> dict:
         "mv_technical_items": 0,
         "state_official_source_adapters": 16,
         "automatic_state_fact_projection": 0,
-        "berlin_verified_final_programmes_pending_explicit_full_fach": 9,
+        "berlin_verified_final_programmes_pending_explicit_full_fach": 8,
         "mv_verified_final_programmes_pending_explicit_full_fach": 12,
         "no_new_vercel_build": True,
     }
