@@ -12,6 +12,9 @@ on:
       - "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json"
       - "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
+      - "woek-parlament-app/data/state-programmes/source-integrity/berlin-2026-spd-canonical-parity-v1.json"
+      - "woek-parlament-app/data/state-programmes/source-integrity/berlin-2026-spd-fach-return-v1.json"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/**"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p14-explicit-v1.json"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-explicit-v1.json"
@@ -88,9 +91,11 @@ on:
       - "woek-parlament-app/scripts/quality/check-berlin-combined-terminal-matrix.mjs"
       - "woek-parlament-app/scripts/quality/materialize-berlin-combined-terminal-matrix.mjs"
       - "woek-parlament-app/scripts/quality/check-berlin-bsw-full-programme.mjs"
+      - "woek-parlament-app/scripts/quality/materialize-berlin-spd-canonical-parity.mjs"
       - "woek-parlament-app/tests/berlin-fach-truth-residual.test.mjs"
       - "woek-parlament-app/tests/berlin-combined-terminal-matrix.test.mjs"
       - "woek-parlament-app/tests/berlin-bsw-full-programme.test.ts"
+      - "woek-parlament-app/tests/berlin-spd-canonical-parity.test.mjs"
       - "tools/build-berlin-bsw-p46-p49-handoff.mjs"
       - "tools/build-berlin-bsw-p50-p53-handoff.mjs"
       - "tools/build-berlin-bsw-p54-p57-handoff.mjs"
@@ -133,12 +138,21 @@ jobs:
         run: node tools/build-berlin-bsw-p58-p59-handoff.mjs --check
       - name: Assert deterministic BSW P60-P63 handoff
         run: node tools/build-berlin-bsw-p60-p63-handoff.mjs --check
+      - name: Verify canonical-final Berlin SPD ledger parity
+        run: |
+          python3 -m pip install --disable-pip-version-check --quiet PyMuPDF==1.28.0
+          curl --fail --location --silent --show-error \
+            --output "${RUNNER_TEMP}/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf" \
+            https://spd.berlin/media/2026/08/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf
+          node woek-parlament-app/scripts/quality/materialize-berlin-spd-canonical-parity.mjs \
+            --artifact "${RUNNER_TEMP}/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf" \
+            --check
       - name: Assert deterministic BSW P34-P43 child closure handoff
         working-directory: woek-parlament-app
         run: node tools/build-berlin-bsw-p34-p43-child-closure.mjs --check
       - name: Run Berlin Fach-truth regression tests
         working-directory: woek-parlament-app
-        run: node --test tests/berlin-fach-truth-residual.test.mjs tests/berlin-combined-terminal-matrix.test.mjs
+        run: node --test tests/berlin-fach-truth-residual.test.mjs tests/berlin-combined-terminal-matrix.test.mjs tests/berlin-spd-canonical-parity.test.mjs
       - name: Validate BSW protected stock and exact residual
         working-directory: woek-parlament-app
         run: node scripts/quality/check-berlin-bsw-full-programme.mjs
