@@ -3,8 +3,8 @@
   "blocking_lanes": {
     "berlin": {
       "fach": {
-        "descriptor_sha256": "9036316de7c16523be8b881735927eda910fbf5916ef0c6cfe52be6871a9f7dc",
-        "file_sha256": "03c7b6a67e85675c72390cac806adb36d68e78857a4f78f9522209e9bb386911",
+        "descriptor_sha256": "b398e2d1ee0f9d26923cdb8b68a261b3b44f68f6e0df902cd95d9dc9caf8883c",
+        "file_sha256": "7b253a76afd827930bceb458307da522857e344abbf6cba137258291dd5d01d7",
         "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
       },
       "gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
@@ -13,8 +13,8 @@
       "programme_analysis_open": 9,
       "remaining_exact_effect_object_count": null,
       "remaining_exact_effect_objects_identified": 0,
-      "remaining_review_envelopes": 1222,
-      "remaining_review_scopes": 1222,
+      "remaining_review_envelopes": 1218,
+      "remaining_review_scopes": 1218,
       "source": {
         "descriptor_sha256": "ced556b03cd2f470ef39ac9d8da4717f301241b19e646c1123a52780820c035c",
         "file_sha256": "29f088e153613129cedaba91f4e6eb2da0f9554f8a0961a065a849328eadc36c",
@@ -63,7 +63,7 @@
     "score_synthesized": false,
     "vercel_action_triggered": false
   },
-  "descriptor_sha256": "fe18faf9163391d21d9cc55a2ac1ebdb569618ae306566b71ac621dba8ebf0ba",
+  "descriptor_sha256": "1c696954404ad4fa076b88bd06e262392adf79cf3d1cd549544669773bc65c48",
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
   "historical_production_golden_state": {
     "disposition": "IMMUTABLE_HISTORICAL_RELEASE_EVIDENCE_NOT_CURRENT_READINESS",
