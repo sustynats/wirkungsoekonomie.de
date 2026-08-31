@@ -24,9 +24,9 @@ BINDING_ORDER = [
     "BSW", "SPD", "CDU", "FDP", "Volt", "Tierschutzpartei",
     "BÜNDNIS 90/DIE GRÜNEN", "AfD", "Die Linke", "DKP", "Die PARTEI", "SGP",
 ]
-TERMINAL = ["DKP", "Die PARTEI", "SGP"]
+TERMINAL = ["BSW", "DKP", "Die PARTEI", "SGP"]
 OPEN = [
-    "AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "FDP", "Tierschutzpartei",
+    "AfD", "BÜNDNIS 90/DIE GRÜNEN", "FDP", "Tierschutzpartei",
     "Volt", "SPD", "CDU", "Die Linke",
 ]
 
@@ -60,7 +60,7 @@ def validate_boundary(matrix: dict, register: dict) -> None:
     require(matrix.get("schema_version") == "woek-berlin-fach-content-residual-3.2", "schema drift")
     require(matrix.get("matrix_id") == "BE-FACH-CONTENT-RESIDUAL-2026-V3", "matrix id drift")
     require(matrix.get("base_main_commit") == "cf9645c4e15a3dc759f62d51202218348d3f7707", "base main commit drift")
-    require(matrix.get("status") == "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12", "false terminal status")
+    require(matrix.get("status") == "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_8_OF_12", "false terminal status")
     require(matrix.get("binding_order") == BINDING_ORDER, "binding order drift")
     require(matrix.get("execution_order_remaining") == OPEN, "execution residual drift")
     require(matrix.get("descriptor_sha256") == canonical_descriptor(matrix), "descriptor mismatch")
@@ -98,19 +98,19 @@ def validate_boundary(matrix: dict, register: dict) -> None:
     expected = {
         "verified_final_programmes": 12,
         "source_ready_programmes": 12,
-        "programme_analysis_complete": 3,
+        "programme_analysis_complete": 4,
         "programme_analysis_complete_parties": TERMINAL,
-        "programme_analysis_open": 9,
-        "genuine_fach_programmes": 9,
+        "programme_analysis_open": 8,
+        "genuine_fach_programmes": 8,
         "genuine_fach_programme_parties": OPEN,
-        "remaining_genuine_fach_review_required": 1218,
-        "remaining_review_scope_count": 1218,
-        "remaining_page_review_envelopes": 1218,
+        "remaining_genuine_fach_review_required": 1215,
+        "remaining_review_scope_count": 1215,
+        "remaining_page_review_envelopes": 1215,
         "remaining_exact_effect_objects_identified": 0,
         "remaining_exact_effect_object_count": None,
-        "terminal_source_objects": 1376,
+        "terminal_source_objects": 1442,
         "known_segmentation_defects": 2,
-        "berlin_completion_gate": "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
+        "berlin_completion_gate": "FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
     }
     for key, value in expected.items():
         require(summary.get(key) == value, f"summary {key}: expected {value!r}, got {summary.get(key)!r}")
@@ -140,16 +140,16 @@ def main() -> None:
     if process.returncode:
         fail(process.stderr.strip() or process.stdout.strip() or "Node reproduction failed")
     node_result = json.loads(process.stdout)
-    require(node_result.get("gate") == "FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH", "Node gate drift")
+    require(node_result.get("gate") == "FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH", "Node gate drift")
 
     print(json.dumps({
         "matrix_id": matrix["matrix_id"],
-        "programmes_terminal": 3,
-        "programmes_open": 9,
-        "terminal_source_objects": 1376,
-        "remaining_review_envelopes": 1218,
+        "programmes_terminal": 4,
+        "programmes_open": 8,
+        "terminal_source_objects": 1442,
+        "remaining_review_envelopes": 1215,
         "remaining_exact_objects": 0,
-        "remaining_review_scopes": 1218,
+        "remaining_review_scopes": 1215,
         "known_segmentation_defects": 2,
         "descriptor_sha256": matrix["descriptor_sha256"],
         "input_bound_reproduction": "PASS",

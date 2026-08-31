@@ -6,17 +6,17 @@ import {
   validateBerlinFachTruthResidual,
 } from '../scripts/quality/check-berlin-fach-truth-residual.mjs';
 
-test('Berlin Fach-truth residual preserves 3 terminal and exposes 9 open programmes', () => {
+test('Berlin Fach-truth residual preserves 4 terminal and exposes 8 open programmes', () => {
   assert.deepEqual(validateBerlinFachTruthResidual(loadBerlinFachTruthResidual()), {
-    programmes_terminal: 3,
-    programmes_open: 9,
-    terminal_source_objects: 1376,
-    remaining_review_envelopes: 1218,
+    programmes_terminal: 4,
+    programmes_open: 8,
+    terminal_source_objects: 1442,
+    remaining_review_envelopes: 1215,
     remaining_exact_objects: 0,
-    remaining_review_scopes: 1218,
+    remaining_review_scopes: 1215,
     known_segmentation_defects: 2,
-    descriptor_sha256: 'b398e2d1ee0f9d26923cdb8b68a261b3b44f68f6e0df902cd95d9dc9caf8883c',
-    gate: 'FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH',
+    descriptor_sha256: '4e079f6aecc61ea332b6f43e198e6339578a15bd72b16bb29ddc44eaa224e775',
+    gate: 'FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH',
   });
 });
 

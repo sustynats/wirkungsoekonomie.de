@@ -34,7 +34,7 @@ export function validateBerlinFachTruthResidual(matrix, {
   assert.equal(matrix.schema_version, 'woek-berlin-fach-content-residual-3.2');
   assert.equal(matrix.matrix_id, 'BE-FACH-CONTENT-RESIDUAL-2026-V3');
   assert.equal(matrix.base_main_commit, 'cf9645c4e15a3dc759f62d51202218348d3f7707');
-  assert.equal(matrix.status, 'BERLIN_FACH_TRUTH_REMEDIATION_OPEN_9_OF_12');
+  assert.equal(matrix.status, 'BERLIN_FACH_TRUTH_REMEDIATION_OPEN_8_OF_12');
   assert.deepEqual(matrix.binding_order, BINDING_ORDER);
   assert.deepEqual(matrix.execution_order_remaining, OPEN_PROGRAMMES);
   assert.equal(matrix.rejected_predecessor.disposition, 'REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY');
@@ -159,12 +159,25 @@ export function validateBerlinFachTruthResidual(matrix, {
     'BE_BSW_P62_FACH_COMPLETE_PASS_SOURCE_BOUND_OBJECT_LEVEL',
     'BE_BSW_P63_FACH_COMPLETE_PASS_SOURCE_BOUND_OBJECT_LEVEL',
   ]);
-  assert.deepEqual(matrix.accepted_incremental_handoffs[17].issue_comment_ids, [5459615745, 5459622938, 5459630827, 5459634420, 5459636289]);
-  assert.equal(matrix.accepted_incremental_handoffs[17].controller_issue_comment_id, 5459840094);
-  assert.equal(matrix.accepted_incremental_handoffs[17].exact_terminal_object_count, 61);
+  assert.deepEqual(matrix.accepted_incremental_handoffs[17].issue_comment_ids, [5458967059, 5458972339, 5458979583, 5476662964]);
+  assert.equal(matrix.accepted_incremental_handoffs[17].controller_issue_comment_id, 5475379459);
+  assert.equal(matrix.accepted_incremental_handoffs[17].exact_terminal_object_count, 66);
+  assert.equal(matrix.accepted_incremental_handoffs[17].active_terminal_review_leaf_count, 18);
   assert.equal(matrix.accepted_incremental_handoffs[17].exact_open_child_object_count, 0);
-  assert.deepEqual(matrix.accepted_incremental_handoffs[17].physical_pdf_pages, [34, 35, 36, 37, 38, 39, 40, 41, 42, 43]);
-  assert.equal(matrix.accepted_incremental_handoffs[17].gate, 'BE_BSW_P34_P43_EXACT_CHILD_FACH_RESIDUAL_ZERO');
+  assert.deepEqual(matrix.accepted_incremental_handoffs[17].physical_pdf_pages, [64, 65, 66]);
+  assert.deepEqual(matrix.accepted_incremental_handoffs[17].gates, [
+    'BE_BSW_P64_P65_OMITTED_STRUCTURAL_HEADINGS_FACH_COMPLETE_PASS_SOURCE_BOUND_2_OF_2',
+    'BE_BSW_P64_FACH_COMPLETE_PASS_SOURCE_BOUND_OBJECT_LEVEL',
+    'BE_BSW_P65_FACH_COMPLETE_PASS_SOURCE_BOUND_ZERO_APPROVED_EFFECT_LEAVES',
+    'BE_BSW_P66_FACH_COMPLETE_PASS_SOURCE_BOUND_OBJECT_LEVEL',
+    'BE_BSW_FULL_PROGRAMME_FACH_HANDOFF_COMPLETE_PASS_SOURCE_BOUND_66_OF_66',
+  ]);
+  assert.deepEqual(matrix.accepted_incremental_handoffs[18].issue_comment_ids, [5459615745, 5459622938, 5459630827, 5459634420, 5459636289]);
+  assert.equal(matrix.accepted_incremental_handoffs[18].controller_issue_comment_id, 5459840094);
+  assert.equal(matrix.accepted_incremental_handoffs[18].exact_terminal_object_count, 61);
+  assert.equal(matrix.accepted_incremental_handoffs[18].exact_open_child_object_count, 0);
+  assert.deepEqual(matrix.accepted_incremental_handoffs[18].physical_pdf_pages, [34, 35, 36, 37, 38, 39, 40, 41, 42, 43]);
+  assert.equal(matrix.accepted_incremental_handoffs[18].gate, 'BE_BSW_P34_P43_EXACT_CHILD_FACH_RESIDUAL_ZERO');
   assert.equal(matrix.state_model.invariant, 'Source or segmentation closure never implies Fach terminality.');
   assert.equal(matrix.review_envelope_contract.effect_object_count_before_segmentation, null);
   assert.equal(matrix.review_envelope_contract.missing_effect_object_count_interpretation, 'UNKNOWN_NOT_ZERO');
@@ -247,18 +260,15 @@ export function validateBerlinFachTruthResidual(matrix, {
   }
 
   const bsw = matrix.programmes.find((item) => item.party === 'BSW');
-  assert.equal(bsw.terminal_object_count, 1308);
+  assert.equal(bsw.terminal_object_count, 1374);
   assert.deepEqual(bsw.terminal_status_counts, {
-    EXPLICIT_FACH_APPROVED: 423,
-    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 128,
-    NON_EFFECT_CONTEXT_REVIEWED: 624,
-    SOURCE_UNIT_RECLASSIFIED_VERSIONED: 133,
+    EXPLICIT_FACH_APPROVED: 435,
+    REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 134,
+    NON_EFFECT_CONTEXT_REVIEWED: 671,
+    SOURCE_UNIT_RECLASSIFIED_VERSIONED: 134,
   });
-  assert.deepEqual(
-    bsw.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-    [64, 65, 66],
-    'BSW page-envelope residual must be exactly physical PDF pages 64-66',
-  );
+  assert.deepEqual(bsw.remaining_review_envelopes, []);
+  assert.deepEqual(bsw.remaining_review_objects, []);
   const closedP19Children = [
       'BE-BSW-P19-U01-A02-C01-992a21f6297f',
       'BE-BSW-P19-U01-A02-C02-31ad0fd27481',
@@ -524,6 +534,15 @@ export function validateBerlinFachTruthResidual(matrix, {
   assert.equal(p60P63Objects.filter((item) => item.fach_state === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED').length, 5, 'P60-P63 versioned parent/fragment set drift');
   assert.equal(p60P63Objects.filter((item) => item.parent_object_ids).length, 5, 'P60-P63 deterministic terminal set drift');
 
+  const p64P66Objects = bsw.terminal_objects.filter((item) => /-P(?:64|65|66)-/.test(item.object_id));
+  assert.equal(p64P66Objects.length, 66, 'P64-P66 terminal set drift');
+  assert.equal(p64P66Objects.filter((item) => item.counts_as_effect_object === true).length, 18, 'P64-P66 active terminal leaf set drift');
+  assert.equal(p64P66Objects.filter((item) => item.fach_state === 'EXPLICIT_FACH_APPROVED').length, 12, 'P64-P66 explicit Fach set drift');
+  assert.equal(p64P66Objects.filter((item) => item.fach_state === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON').length, 6, 'P64-P66 exact RNAA set drift');
+  assert.equal(p64P66Objects.filter((item) => item.fach_state === 'NON_EFFECT_CONTEXT_REVIEWED').length, 47, 'P64-P66 zero-count terminal set drift');
+  assert.equal(p64P66Objects.filter((item) => item.fach_state === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED').length, 1, 'P64-P66 versioned parent set drift');
+  assert.equal(p64P66Objects.filter((item) => item.parent_object_ids).length, 3, 'P64-P66 deterministic terminal set drift');
+
   assert.deepEqual(
     matrix.known_segmentation_defects.map((item) => item.rejected_atom_id),
     ['BE-SPD-2026-SU-0136-A01', 'BE-SPD-2026-SU-0136-A03'],
@@ -537,22 +556,22 @@ export function validateBerlinFachTruthResidual(matrix, {
   const summary = matrix.summary;
   assert.equal(summary.verified_final_programmes, 12);
   assert.equal(summary.source_ready_programmes, 12);
-  assert.equal(summary.programme_analysis_complete, 3);
+  assert.equal(summary.programme_analysis_complete, 4);
   assert.deepEqual(summary.programme_analysis_complete_parties, TERMINAL_PROGRAMMES);
-  assert.equal(summary.programme_analysis_open, 9);
-  assert.equal(summary.genuine_fach_programmes, 9);
+  assert.equal(summary.programme_analysis_open, 8);
+  assert.equal(summary.genuine_fach_programmes, 8);
   assert.deepEqual(summary.genuine_fach_programme_parties, OPEN_PROGRAMMES);
-  assert.equal(summary.remaining_genuine_fach_review_required, 1218);
-  assert.equal(summary.remaining_review_scope_count, 1218);
-  assert.equal(summary.remaining_page_review_envelopes, 1218);
+  assert.equal(summary.remaining_genuine_fach_review_required, 1215);
+  assert.equal(summary.remaining_review_scope_count, 1215);
+  assert.equal(summary.remaining_page_review_envelopes, 1215);
   assert.equal(summary.remaining_exact_effect_objects_identified, 0);
   assert.equal(summary.remaining_exact_effect_object_count, null);
-  assert.equal(summary.terminal_source_objects, 1376);
+  assert.equal(summary.terminal_source_objects, 1442);
   assert.deepEqual(summary.terminal_status_counts, terminalCounts);
   assert.equal(summary.known_segmentation_defects, 2);
-  assert.equal(summary.berlin_completion_gate, 'FAIL_CLOSED_9_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH');
-  assert.equal(terminalObjects, 1376);
-  assert.equal(remainingEnvelopes, 1218);
+  assert.equal(summary.berlin_completion_gate, 'FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH');
+  assert.equal(terminalObjects, 1442);
+  assert.equal(remainingEnvelopes, 1215);
   assert.equal(remainingExactObjects, 0);
 
   if (verifyInputs) {
