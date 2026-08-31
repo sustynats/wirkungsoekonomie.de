@@ -30,6 +30,7 @@
     "check:executive-projections": "node scripts/quality/check-nonblocking-projection-inventory.mjs && node scripts/quality/materialize-nonblocking-projection-inventory.mjs --check",
     "check:berlin-current-source": "tsx scripts/quality/check-berlin-current-source.ts",
     "check:berlin-fach-residual": "node scripts/quality/check-berlin-fach-truth-residual.mjs",
+    "check:berlin-spd-canonical-parity": "node scripts/quality/materialize-berlin-spd-canonical-parity.mjs --check",
     "check:mv-current-source": "tsx scripts/quality/check-mv-current-source.ts",
     "check:mv-fach-residual": "node scripts/quality/check-mv-fach-truth-pending.mjs",
     "check:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs",

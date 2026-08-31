@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_id": "WOEK-BE-SPD-2026-CANONICAL-FACH-RETURN-V1",
+  "generated_at": "2026-08-31",
+  "artifact": {
+    "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+    "url": "https://spd.berlin/media/2026/08/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf",
+    "sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+    "byte_length": 663059,
+    "page_count": 66
+  },
+  "source_integrity_stop": {
+    "issue": 240,
+    "issue_comment_id": 5466605879,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5466605879"
+  },
+  "matrix": {
+    "path": "data/state-programmes/source-integrity/berlin-2026-spd-canonical-parity-v1.json",
+    "descriptor_sha256": "86d43dfa98e13bcf2048d3766a76e4cb85a2e0b01a9a7a9778e3d1d39604992b"
+  },
+  "retention_rule": "ONLY_UNCHANGED_HASH_IDENTICAL_OBJECTS_MAY_RETAIN_EXISTING_EXACT_FACH",
+  "protected_existing_fach_handoff_scope": {
+    "physical_pages": "P1-P21",
+    "cross_page_object": "BE-SPD-2026-SU-0247",
+    "technical_materialization_status": "SEPARATE_LOSSLESS_HANDOFF_MATERIALIZATION_REQUIRED"
+  },
+  "changed_or_new_canonical_objects_requiring_fach_review": [],
+  "removed_objects": [],
+  "next_unreviewed_source_order_frontier": {
+    "physical_page": 22,
+    "reason": "P22 is the next source-order Fach frontier after canonical parity; it is not a source-version return object."
+  },
+  "summary": {
+    "changed_or_new_fach_return_count": 0,
+    "removed_count": 0,
+    "source_integrity_stop_status": "CLEARED_CANONICAL_PARITY_PASS",
+    "fach_synthesis_performed": false
+  },
+  "descriptor_sha256": "5d3c436d2ed798c26c37860cdc9853d00b19cc863ee938b10fe8bf9abd4d38a4"
+}
