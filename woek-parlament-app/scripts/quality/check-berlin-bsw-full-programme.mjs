@@ -12,13 +12,13 @@ const bsw = residual.programmes.find((programme) => programme.party === "BSW");
 
 assert.ok(bsw, "BSW missing from current Berlin Fach-truth matrix");
 assert.equal(bsw.programme_analysis_complete, false, "BSW must remain open after rejection of generic RNAA terminals");
-assert.equal(bsw.terminal_object_count, 1211, "BSW exact issue #240 terminal stock drifted");
-assert.equal(bsw.remaining_review_envelope_count, 7, "BSW page-envelope residual must be physical PDF pages 60-66");
+assert.equal(bsw.terminal_object_count, 1308, "BSW exact issue #240 terminal stock drifted");
+assert.equal(bsw.remaining_review_envelope_count, 3, "BSW page-envelope residual must be physical PDF pages 64-66");
 assert.equal(bsw.remaining_exact_object_count, 0, "BSW P34-P43 exact child residual must be closed");
-assert.equal(bsw.remaining_review_scope_count, 7, "BSW finite residual must be exactly the 7 P60-P66 page envelopes");
+assert.equal(bsw.remaining_review_scope_count, 3, "BSW finite residual must be exactly the 3 P64-P66 page envelopes");
 assert.deepEqual(
   bsw.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-  Array.from({ length: 7 }, (_, index) => index + 60),
+  [64, 65, 66],
 );
 assert.ok(bsw.remaining_review_envelopes.every((item) => (
   item.counts_as_effect_object === false
@@ -54,6 +54,7 @@ const p54P57Current = bsw.terminal_objects.filter((item) => (
   && /-P(?:54|55|56|57)-|-P56P57-/.test(item.object_id)
 ));
 const p58P59Current = bsw.terminal_objects.filter((item) => /-P(?:58|59)-/.test(item.object_id));
+const p60P63Current = bsw.terminal_objects.filter((item) => /-P(?:60|61|62|63)-|-P62P63-/.test(item.object_id));
 assert.equal(explicitPage14.length, 23, "explicit page-14 handoff was not consumed exactly");
 assert.equal(explicitPages15To19.length, 119, "explicit pages-15-to-19 handoffs were not consumed exactly");
 assert.equal(explicitP19ClosureToP21.length, 39, "explicit P19-closure/P20/P21 handoffs were not consumed exactly");
@@ -129,9 +130,16 @@ assert.equal(p58P59Current.filter((item) => item.fach_state === "REVIEWED_NOT_AS
 assert.equal(p58P59Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 28, "P58-P59 zero-count terminal set drifted");
 assert.equal(p58P59Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 2, "P58-P59 versioned parent set drifted");
 assert.equal(p58P59Current.filter((item) => item.parent_object_ids).length, 4, "P58-P59 deterministic terminal set drifted");
+assert.equal(p60P63Current.length, 97, "P60-P63 terminal set drifted");
+assert.equal(p60P63Current.filter((item) => item.counts_as_effect_object === true).length, 25, "P60-P63 active terminal leaf set drifted");
+assert.equal(p60P63Current.filter((item) => item.fach_state === "EXPLICIT_FACH_APPROVED").length, 12, "P60-P63 explicit Fach set drifted");
+assert.equal(p60P63Current.filter((item) => item.fach_state === "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON").length, 13, "P60-P63 exact RNAA set drifted");
+assert.equal(p60P63Current.filter((item) => item.fach_state === "NON_EFFECT_CONTEXT_REVIEWED").length, 67, "P60-P63 zero-count terminal set drifted");
+assert.equal(p60P63Current.filter((item) => item.fach_state === "SOURCE_UNIT_RECLASSIFIED_VERSIONED").length, 5, "P60-P63 versioned parent set drifted");
+assert.equal(p60P63Current.filter((item) => item.parent_object_ids).length, 5, "P60-P63 deterministic terminal set drifted");
 assert.ok(
-  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 59).every((atom) => !currentIds.has(atom.atom_id)),
-  "rejected BSW generic terminal outside explicit pages 14-59 leaked into current truth",
+  ledger.effect_atoms.filter((atom) => atom.pdf_page < 14 || atom.pdf_page > 63).every((atom) => !currentIds.has(atom.atom_id)),
+  "rejected BSW generic terminal outside explicit pages 14-63 leaked into current truth",
 );
 assert.equal(residual.rejected_predecessor.disposition, "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY");
 assert.equal(residual.release_policy.no_new_vercel_build, true);
@@ -159,5 +167,6 @@ console.log(JSON.stringify({
   p46P49TerminalObjects: p46P49Current.length,
   p50P53TerminalObjects: p50P53Current.length,
   p54P57TerminalObjects: p54P57Current.length,
+  p60P63TerminalObjects: p60P63Current.length,
   programmeAnalysisComplete: bsw.programme_analysis_complete,
 }));
