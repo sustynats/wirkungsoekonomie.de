@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-03",
+  "policy": {
+    "user_agent": "WOek-Wirkungsticker/1.0 (+https://wirkungsoekonomie.de/news/)",
+    "max_feed_bytes": 1500000,
+    "request_timeout_ms": 18000,
+    "max_redirects": 3,
+    "max_items_per_source": 24,
+    "bootstrap_lookback_hours": 36,
+    "copying_rule": "Nur Feed-Metadaten und kurze Abstracts als Analysegrundlage verwenden. Keine Volltexte spiegeln; öffentlich eigene Kurzfassungen und Original-Links ausgeben."
+  },
+  "sources": [
+    {
+      "source_id": "bundesregierung-kompakt",
+      "name": "Bundesregierung kompakt",
+      "url": "https://www.bundesregierung.de/",
+      "feed_url": "https://www.bundesregierung.de/service/rss/breg-de/1151242/feed.xml",
+      "source_type": "official_rss",
+      "topic": "Politik",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 92,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundesregierung-presse",
+      "name": "Pressemitteilungen der Bundesregierung",
+      "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen",
+      "feed_url": "https://www.bundesregierung.de/service/rss/breg-de/1151244/feed.xml",
+      "source_type": "official_rss",
+      "topic": "Politik",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 88,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundestag-hib",
+      "name": "Deutscher Bundestag – Heute im Bundestag",
+      "url": "https://www.bundestag.de/presse/hib/",
+      "feed_url": "https://www.bundestag.de/static/appdata/includes/rss/hib.rss",
+      "source_type": "official_rss",
+      "topic": "Politik",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 96,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundestag-umwelt",
+      "name": "Deutscher Bundestag – Umwelt und Klimaschutz",
+      "url": "https://www.bundestag.de/ausschuesse/a16_umwelt",
+      "feed_url": "https://www.bundestag.de/static/appdata/includes/rss/umwelt.rss",
+      "source_type": "official_rss",
+      "topic": "Klima",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 90,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundestag-wirtschaft",
+      "name": "Deutscher Bundestag – Wirtschaft und Energie",
+      "url": "https://www.bundestag.de/ausschuesse/a09_wirtschaft",
+      "feed_url": "https://www.bundestag.de/static/appdata/includes/rss/wirtschaft.rss",
+      "source_type": "official_rss",
+      "topic": "Wirtschaft",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 90,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundesrat-mitteilungen",
+      "name": "Bundesrat – Mitteilungen",
+      "url": "https://www.bundesrat.de/DE/service-navi/rss/rss-node.html",
+      "feed_url": "https://www.bundesrat.de/SiteGlobals/Functions/RSSFeed/RSSGenerator_Announcement.xml",
+      "source_type": "official_rss",
+      "topic": "Politik",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 94,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "destatis-aktuell",
+      "name": "Statistisches Bundesamt",
+      "url": "https://www.destatis.de/",
+      "feed_url": "https://www.destatis.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/Aktuell.xml",
+      "source_type": "official_rss",
+      "topic": "Wirtschaft",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 95,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundesbank-allgemein",
+      "name": "Deutsche Bundesbank",
+      "url": "https://www.bundesbank.de/de/",
+      "feed_url": "https://www.bundesbank.de/service/rss/de/633290/feed.rss",
+      "source_type": "official_rss",
+      "topic": "Finanzen",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 84,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "ezb-presse",
+      "name": "Europäische Zentralbank",
+      "url": "https://www.ecb.europa.eu/press/html/index.de.html",
+      "feed_url": "https://www.ecb.europa.eu/rss/press.html",
+      "source_type": "official_rss",
+      "topic": "Europa",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 86,
+      "last_success": null,
+      "last_error": null
+    }
+  ]
+}

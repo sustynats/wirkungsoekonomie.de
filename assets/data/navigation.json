@@ -64,6 +64,7 @@
       "match": [
         "oeffentlicher-wirkungsraum/",
         "wirkungsradar/",
+        "news/",
         "woek-ki/",
         "app/"
       ]
@@ -475,6 +476,13 @@
           "href": "wirkungsradar/debattenkarten/",
           "match": [
             "wirkungsradar/debattenkarten/"
+          ]
+        },
+        {
+          "label": "Wirkungsticker",
+          "href": "news/",
+          "match": [
+            "news/"
           ]
         },
         {

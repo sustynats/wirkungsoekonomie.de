@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "started_at": "2026-09-02T23:04:36.208Z",
+  "berlin_slot": "manueller Lauf",
+  "feed_entries_fetched": 144,
+  "feed_entries_new": 0,
+  "feed_entries_updated": 0,
+  "feed_entries_deduplicated": 41,
+  "feed_entries_future_dated": 13,
+  "story_clusters": 0,
+  "locally_rejected": 0,
+  "ai_stories": 2,
+  "ai_calls": 0,
+  "published_stories": 0,
+  "updated_stories": 0,
+  "provider": null,
+  "model": null,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost_usd": 0,
+  "source_successes": 9,
+  "source_failures": 0,
+  "source_errors": [],
+  "quality_holds": [
+    {
+      "story_id": "wt-3c8762489a80692b",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-2be0a202001d6401",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-9e4c93f4907aaa42",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-293fa4edfc2b5a5d",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-a5be83f337b2a540",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-ab0d79d228a04a51",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-0e1ab5081b9f4045",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-a48a6799c362009d",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
+      "story_id": "wt-c15cb7a9f3b72c35",
+      "reason": "AI_DISABLED"
+    },
+    {
+      "story_id": "wt-98ff7e403362fdf9",
+      "reason": "AI_DISABLED"
+    }
+  ],
+  "budget_stage": 0,
+  "completed_at": "2026-09-02T23:04:36.623Z",
+  "pending_stories_retried": 11,
+  "monthly_spend_before_usd": 0.114345,
+  "monthly_budget_usd": 5,
+  "latest_source_timestamp": "2026-09-02T22:01:00.000Z"
+}
