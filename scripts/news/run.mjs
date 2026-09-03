@@ -136,6 +136,10 @@ function attachRelatedTickerHistory(candidates, stories) {
         story_id: story.story_id,
         title: story.title,
         summary: story.analysis?.summary || "",
+        source_published_at: (story.sources || [])
+          .map((source) => source.published_at)
+          .filter(Boolean)
+          .sort()[0] || story.first_seen,
         source_urls: (story.sources || []).map((source) => source.url).slice(0, 3),
       }));
     return { ...candidate, related_ticker_history: relatedTickerHistory };
