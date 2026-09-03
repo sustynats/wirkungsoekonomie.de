@@ -9,7 +9,7 @@ const STOPWORDS = new Set([
 ]);
 
 const TOPIC_RULES = [
-  ["Klima", /\b(klima|co2|treibhaus|emission|erneuerbar|biodivers|umwelt|naturschutz|wasser|abfall|ressourcen)\w*/i],
+  ["Klima", /\b(klima|co2|treibhaus|emission|industrieemission|erneuerbar|biodivers|umwelt|naturschutz|wasser|abfall|ressourcen)\w*/i],
   ["Energie", /\b(energie|strom|gas|wärme|waerme|wasserstoff|netz|kraftwerk|photovoltaik|windkraft)\w*/i],
   ["Arbeit", /\b(arbeit|beschäftig|beschaeftig|lohn|tarif|arbeitslos|fachkräft|fachkraeft|ausbildung)\w*/i],
   ["Soziales", /\b(sozial|armut|pflege|rente|wohnen|miete|familie|bürgergeld|buergergeld|teilhabe)\w*/i],
@@ -27,7 +27,7 @@ const TOPIC_RULES = [
 const MATERIALITY_RULES = [
   [16, "eingetretene Entscheidung oder Umsetzung", /\b(beschlossen|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|eingeführt|eingefuehrt|abgeschafft|eröffnet|eroeffnet|gestartet|stärkt|staerkt|senkt|erhöht|erhoeht)\w*/i],
   [14, "System-, Infrastruktur- oder Resilienzbezug", /\b(infrastruktur|marktstruktur|kapitalfluss|resilienz|versorgungssicherheit|kritische\s+infrastruktur|systemrelev|systemisch|transformation|kaskad|schutzgrenz)\w*/i],
-  [12, "materieller Bezug zu Mensch, Planet oder Demokratie", /\b(arbeitslos|armut|inflation|gesundheit|pflege|klima|emission|energieversorgung|gasspeicher|biodivers|bildung|schule|kind(?:er|ergeld)?|jugend|wohnen|miete|rente|migration|asyl|menschenrecht|grundrecht|transparenz|informationsfreiheit|rechtsstaat|justiz|gericht|verbraucher|rohstoff|lieferkette|landwirtschaft|ernährung|ernaehrung)\w*/i],
+  [12, "materieller Bezug zu Mensch, Planet oder Demokratie", /\b(arbeitslos|armut|inflation|gesundheit|pflege|klima|umwelt|emission|industrieemission|energieversorgung|gasspeicher|biodivers|bildung|schule|kind(?:er|ergeld)?|jugend|wohnen|miete|rente|migration|asyl|menschenrecht|grundrecht|transparenz|informationsfreiheit|rechtsstaat|justiz|gericht|verbraucher|rohstoff|lieferkette|landwirtschaft|ernährung|ernaehrung)\w*/i],
   [10, "Veränderung von Regeln, Programmen oder Vereinbarungen", /\b(?:\w*gesetz\w*|\w*verordnung\w*|richtlinie\w*|reform\w*|haushalt\w*|staatsvertrag\w*|abkommen\w*|vereinbarung\w*|programm\w*|maßnahme\w*|massnahme\w*|entwurf\w*|vorschlag\w*|umsetzung\w*|neuregelung\w*|förderung\w*|foerderung\w*)/i],
   [10, "große oder grenzüberschreitende Reichweite", /\b(milliard|bundesweit|deutschlandweit|europaweit|europäisch|europaeisch|global|international|langfrist|flächendeckend|flaechendeckend)\w*/i],
   [8, "relevanter Steuerungs- oder Sicherheitsbereich", /\b(digital|künstliche intelligenz|kuenstliche intelligenz|cyber|plattform|arbeit|sozial|wirtschaft|steuer|zins|energie|netzanschluss|handel|sanktion|verteidigung|geopolit|notlage|krise)\w*/i],
@@ -454,7 +454,7 @@ export function classifyItem(item, source = {}) {
   if (!topics.length) topics.push(source.topic || item.source_topic || "Politik");
   const dimensions = [];
   if (/\b(arbeit|sozial|gesund|bildung|wohnen|armut|menschenrecht|verbraucher|familie|pflege)\w*/i.test(text)) dimensions.push("Mensch");
-  if (/\b(klima|umwelt|energie|emission|biodivers|ressourcen|wasser|abfall|natur)\w*/i.test(text)) dimensions.push("Planet");
+  if (/\b(klima|umwelt|energie|emission|industrieemission|biodivers|ressourcen|wasser|abfall|natur)\w*/i.test(text)) dimensions.push("Planet");
   if (/\b(demokrat|wahl|parlament|recht|verfassung|medien|daten|transparenz|beteiligung|freiheit)\w*/i.test(text)) dimensions.push("Demokratie");
   const status = STATUS_RULES.find(([, pattern]) => pattern.test(text))?.[0] || "laufende Entwicklung";
   const analysisType = status === "evaluiert" || status === "erste Daten" ? "monitoring" : "ex_ante";

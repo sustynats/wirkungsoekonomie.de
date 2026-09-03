@@ -195,6 +195,15 @@ test("Format ist kein Ausschlussgrund, aber bloßer Kontext reicht nicht", () =>
   assert.ok(inquiry.score < 34);
 });
 
+test("Umweltrecht und Industrieemissionen gehen auch bei knappen Gesetzesfeeds nicht verloren", () => {
+  for (const title of ["Gesetz zur Änderung des Umwelt-Rechtsbehelfsgesetzes", "Gesetz zur Umsetzung der Richtlinie über Industrieemissionen"]) {
+    const classified = classifyItem({ title, summary: "", categories: [] }, source);
+    assert.ok(classified.score >= budgetStage(0, 5).threshold);
+    assert.ok(classified.topics.includes("Klima"));
+    assert.ok(classified.dimensions.includes("Planet"));
+  }
+});
+
 test("Neue Quellenmeldung aktualisiert eine bestehende Wirkungsakte", () => {
   const item = { ...parseFeed(feed, source)[0], title: "Klimagesetz tritt jetzt in Kraft", content_hash: "neu" };
   const existing = {
