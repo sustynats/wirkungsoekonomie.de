@@ -560,6 +560,7 @@
       let glossaryLookupPromise = null;
       let currentFeedback = null;
       let requestInFlight = false;
+      let sessionClientId = null;
       const answerResults = window.WoekAiResults.attach({
         apiBase: apiUrl.replace(/\/api\/woek-ai(?:\?.*)?$/, ""),
         render(item, shared) {
@@ -869,11 +870,13 @@
 
       function getClientId() {
         const key = "woek_app_client_id";
-        const existing = window.localStorage.getItem(key);
-        if (existing) return existing;
-        const value = `woek-${crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`}`;
-        window.localStorage.setItem(key, value);
-        return value;
+        if (sessionClientId) return sessionClientId;
+        try { sessionClientId = window.localStorage.getItem(key); } catch { /* Private browser storage may be blocked. */ }
+        if (!sessionClientId) {
+          sessionClientId = `woek-${crypto.randomUUID()}`;
+          try { window.localStorage.setItem(key, sessionClientId); } catch { /* Keep a stable session-only ID; saving reports its own error. */ }
+        }
+        return sessionClientId;
       }
 
       function setFeedbackVisible(visible) {

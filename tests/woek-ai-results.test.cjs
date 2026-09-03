@@ -36,6 +36,13 @@ test('quota failure throws without destroying previously saved answers', () => {
   disk.blocked = false;
   assert.equal(store(disk).getItems('ai_query_history')[0].id, first.id);
 });
+test('AI requests retain a session ID even when browser storage is blocked', () => {
+  const html = fs.readFileSync('woek-ki/index.html', 'utf8');
+  const fn = html.slice(html.indexOf('function getClientId()'), html.indexOf('function setFeedbackVisible('));
+  const context = { crypto, window: { get localStorage() { throw new Error('Blocked'); } } };
+  vm.runInNewContext('let sessionClientId = null; ' + fn + '; this.first = getClientId(); this.second = getClientId();', context);
+  assert.match(context.first, /^woek-/); assert.equal(context.first, context.second);
+});
 // Minimal isolated DOM adapter: tests behavior without reading any user's browser data.
 function controller({ search = '', fetchImpl, saved = [], blocked = false } = {}) {
   const elements = [];
