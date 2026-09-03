@@ -1,46 +1,33 @@
 {
   "schema_version": "1.1",
-  "started_at": "2026-09-03T12:48:02.808Z",
+  "started_at": "2026-09-03T12:59:00.680Z",
   "berlin_slot": "manueller Lauf",
-  "feed_entries_fetched": 237,
-  "feed_entries_new": 1,
+  "feed_entries_fetched": 261,
+  "feed_entries_new": 0,
   "feed_entries_updated": 0,
-  "feed_entries_backfilled": 78,
-  "feed_entries_deduplicated": 4,
-  "feed_entries_future_dated": 1,
-  "story_clusters": 70,
-  "locally_rejected": 45,
+  "feed_entries_backfilled": 0,
+  "feed_entries_deduplicated": 88,
+  "feed_entries_future_dated": 20,
+  "story_clusters": 0,
+  "locally_rejected": 0,
   "ai_stories": 8,
-  "ai_calls": 6,
-  "ai_batches_planned": 4,
-  "ai_batches_completed": 1,
+  "ai_calls": 3,
+  "ai_batches_planned": 8,
+  "ai_batches_completed": 0,
   "published_stories": 0,
-  "updated_stories": 2,
+  "updated_stories": 0,
   "retired_stories": 0,
   "reactivated_stories": 0,
-  "provider": "Oracle WOeK-KI API",
-  "model": "gpt-5.5",
-  "input_tokens": 2908,
-  "output_tokens": 1965,
-  "estimated_cost_usd": 0.07349,
-  "source_successes": 15,
-  "source_failures": 1,
+  "provider": null,
+  "model": null,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost_usd": 0,
+  "source_successes": 16,
+  "source_failures": 0,
   "source_retry_attempts": 0,
-  "source_errors": [
-    {
-      "source_id": "bundesrat-mitteilungen",
-      "error": "fetch failed"
-    }
-  ],
+  "source_errors": [],
   "quality_holds": [
-    {
-      "story_id": "wt-63b6c057c20a2143",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-acae834e3431b203",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
     {
       "story_id": "wt-9e4c93f4907aaa42",
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
@@ -128,16 +115,23 @@
     {
       "story_id": "wt-c15cb7a9f3b72c35",
       "reason": "AI_PROVIDER_UNAVAILABLE"
+    },
+    {
+      "story_id": "wt-63b6c057c20a2143",
+      "reason": "AI_PROVIDER_UNAVAILABLE"
+    },
+    {
+      "story_id": "wt-acae834e3431b203",
+      "reason": "AI_PROVIDER_UNAVAILABLE"
     }
   ],
   "budget_stage": 0,
-  "completed_at": "2026-09-03T12:54:47.895Z",
-  "pending_stories_retried": 1,
-  "monthly_spend_before_usd": 1.55646,
+  "completed_at": "2026-09-03T13:00:40.024Z",
+  "pending_stories_retried": 24,
+  "monthly_spend_before_usd": 1.62995,
   "monthly_budget_usd": 5,
-  "ai_batch_size": 2,
-  "token_source": "conservative_character_estimate",
+  "ai_batch_size": 1,
   "ai_error": "AI_PROVIDER_ERROR:429",
-  "failed_batch_offset": 2,
-  "latest_source_timestamp": "2026-09-03T12:15:00.000Z"
+  "failed_batch_offset": 0,
+  "latest_source_timestamp": "2026-09-03T13:00:00.000Z"
 }

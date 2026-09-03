@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T12:48:02.808Z",
+  "updated_at": "2026-09-03T12:59:00.680Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -1251,7 +1251,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -1710,7 +1710,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -1727,8 +1727,10 @@
             "content_hash": "b749d23ec26ae36ae17b120dc4810865fe32446386340f135d1922df291471e3"
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": true
       }
@@ -1945,7 +1947,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -2182,7 +2184,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
         "sources": [
           {
@@ -2423,7 +2425,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -2650,7 +2652,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -2667,8 +2669,10 @@
             "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2"
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": true
       }
@@ -2711,7 +2715,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
@@ -2722,7 +2726,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
@@ -2762,7 +2766,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
@@ -2773,7 +2777,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
@@ -2977,7 +2981,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -3205,7 +3209,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -3424,7 +3428,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -3650,7 +3654,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -3871,7 +3875,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -4097,7 +4101,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -4318,7 +4322,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -4539,7 +4543,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:48:02.808Z",
+        "detected_at": "2026-09-03T12:59:00.680Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -4932,7 +4936,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
@@ -4943,7 +4947,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-146cce2a1bef268e",
@@ -4984,7 +4988,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
@@ -4995,7 +4999,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-2c4b8dc5bdfc3cb3",
@@ -5035,7 +5039,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
@@ -5046,7 +5050,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-9d87c7944980e87e",
@@ -5085,7 +5089,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
@@ -5096,7 +5100,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-e28250d4074683af",
@@ -5136,7 +5140,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -5147,7 +5151,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
@@ -5187,7 +5191,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -5198,7 +5202,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-61fc84ab4a746bcd",
@@ -5238,7 +5242,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "7cb1a8efbfa9caf92894d1caf19008906e156fbdf4ea9ab5f51d5fbac002332a",
@@ -5249,7 +5253,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-295572a4057fedd7",
@@ -5289,7 +5293,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
+          "checked_at": "2026-09-03T12:59:00.680Z"
         }
       ],
       "content_hash": "cc91a6828f0cf8263ef414975a07edea24755d20482180723bfcc34fee891995",
@@ -5300,7 +5304,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:48:02.808Z"
+      "updated_at": "2026-09-03T12:59:00.680Z"
     },
     {
       "story_id": "wt-995822cc0b71a7f8",
