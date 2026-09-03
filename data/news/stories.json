@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T10:52:37.099Z",
+  "updated_at": "2026-09-03T11:02:59.364Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -397,7 +397,9 @@
       "slug": "fur-eine-verlassliche-stromversorgung-auch-in-zukunft-d386a9",
       "title": "Für eine verlässliche Stromversorgung – auch in Zukunft",
       "first_seen": "2026-09-03T11:00:00.000Z",
-      "last_updated": "2026-09-03T11:00:00.000Z",
+      "last_updated": "2026-09-03T11:02:59.364Z",
+      "published_at": "2026-09-03T11:02:59.364Z",
+      "updated_at": "2026-09-03T11:02:59.364Z",
       "topic": [
         "Energie",
         "Politik"
@@ -430,16 +432,367 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "7de199055f36ccfb4689226037982678c829ce50434175eadaddfed490632899",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "published": true,
+      "analysis_status": "veröffentlicht",
+      "current_version": 1,
+      "analysis": {
+        "story_id": "wt-52d036419dd386a9",
+        "summary": "Ein Gesetz für neue Stromkapazitäten ist laut Bundesregierung am 22. Juli in Kraft getreten. Das kann Regeln und Anreize für Versorgungssicherheit materiell verändern.",
+        "detail_summary": "Fakt ist das Inkrafttreten eines Gesetzes für neue Stromkapazitäten. Der Wirkpfad läuft über Regeln und Verbindlichkeiten für künftige Kapazitäten. Betroffen sein kann die Stromversorgung als kritische Infrastruktur. Eingetretene Wirkung ist noch nicht belegt. Wegen Systemrelevanz und möglicher Dauerfolgen ist eine Veröffentlichung sinnvoll.",
+        "why_relevant": "Stromversorgung betrifft viele Menschen, Wirtschaft und Infrastruktur; ein Gesetz zu neuen Kapazitäten kann Anreize und Resilienz verändern.",
+        "status": "in Kraft",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Versorgungssicherheit berührt Haushalte, Arbeit, Gesundheitseinrichtungen und Alltag; konkrete Effekte sind noch offen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Neue Stromkapazitäten können je nach Ausgestaltung Umwelt- und Klimapfade berühren; die Art der Kapazitäten ist nicht genannt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Energieversorgung ist öffentliche Grundinfrastruktur; demokratische Korrektur hängt von Ausgestaltung und Kontrolle ab."
+        },
+        "importance": "hoch",
+        "impact_potential": "Potenzial liegt in stabilerer Stromversorgung durch neue Kapazitätsregeln und veränderte Investitionssignale.",
+        "impact_risks": [
+          "Risiken betreffen Kostenverteilung, Fehlanreize oder langfristige Bindungen, falls Regeln ungünstig ausgestaltet sind."
+        ],
+        "mechanisms": [
+          "Gesetzliche Regeln und Verbindlichkeiten für neue Stromkapazitäten."
+        ],
+        "first_order": [
+          "Rechtsstatus ändert sich durch Inkrafttreten des Gesetzes."
+        ],
+        "second_order": [
+          "Akteure könnten Planung, Investitionen oder Beschaffung an neue Kapazitätsregeln anpassen."
+        ],
+        "third_order": [
+          "Mögliche Folgen für Versorgungssicherheit, Preise und Transformationspfade bleiben zu beobachten."
+        ],
+        "systemic_relevance": "Hoch, weil Stromversorgung eine systemrelevante Infrastruktur mit möglichen Kaskaden ist.",
+        "transformation_potential": "Relevant, sofern neue Kapazitäten die Struktur des Stromsystems dauerhaft prägen.",
+        "resilience": "Kann Resilienz stärken, wenn Kapazitäten Engpässe mindern; Beleg für tatsächliche Wirkung fehlt noch.",
+        "side_effects": [
+          "Mögliche Verteilungs- und Lock-in-Effekte sind ohne Gesetzesdetails nicht einschätzbar."
+        ],
+        "uncertainties": [
+          "Konkrete Regelungen, Kapazitätsarten, Kosten, Zeitplan und Kontrollindikatoren fehlen im gelieferten Claim."
+        ],
+        "evidence_level": "Primärquelle für Inkrafttreten und Ziel der verlässlichen Stromversorgung; keine Wirkungsdaten.",
+        "attribution": "Zurechenbar ist der Rechtsstatus; spätere Versorgungseffekte wären gesondert zu prüfen.",
+        "watch_next": [
+          "Umsetzung, Kapazitätszubau, Kostenverteilung, Versorgungslage und Evaluationsdaten beobachten."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 13 und DNS-Energieziele, soweit Stromversorgung und Klima betroffen sind."
+        ],
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T11:02:59.364Z",
+          "content_hash": "7de199055f36ccfb4689226037982678c829ce50434175eadaddfed490632899",
+          "analysis": {
+            "story_id": "wt-52d036419dd386a9",
+            "summary": "Ein Gesetz für neue Stromkapazitäten ist laut Bundesregierung am 22. Juli in Kraft getreten. Das kann Regeln und Anreize für Versorgungssicherheit materiell verändern.",
+            "detail_summary": "Fakt ist das Inkrafttreten eines Gesetzes für neue Stromkapazitäten. Der Wirkpfad läuft über Regeln und Verbindlichkeiten für künftige Kapazitäten. Betroffen sein kann die Stromversorgung als kritische Infrastruktur. Eingetretene Wirkung ist noch nicht belegt. Wegen Systemrelevanz und möglicher Dauerfolgen ist eine Veröffentlichung sinnvoll.",
+            "why_relevant": "Stromversorgung betrifft viele Menschen, Wirtschaft und Infrastruktur; ein Gesetz zu neuen Kapazitäten kann Anreize und Resilienz verändern.",
+            "status": "in Kraft",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Versorgungssicherheit berührt Haushalte, Arbeit, Gesundheitseinrichtungen und Alltag; konkrete Effekte sind noch offen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Neue Stromkapazitäten können je nach Ausgestaltung Umwelt- und Klimapfade berühren; die Art der Kapazitäten ist nicht genannt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Energieversorgung ist öffentliche Grundinfrastruktur; demokratische Korrektur hängt von Ausgestaltung und Kontrolle ab."
+            },
+            "importance": "hoch",
+            "impact_potential": "Potenzial liegt in stabilerer Stromversorgung durch neue Kapazitätsregeln und veränderte Investitionssignale.",
+            "impact_risks": [
+              "Risiken betreffen Kostenverteilung, Fehlanreize oder langfristige Bindungen, falls Regeln ungünstig ausgestaltet sind."
+            ],
+            "mechanisms": [
+              "Gesetzliche Regeln und Verbindlichkeiten für neue Stromkapazitäten."
+            ],
+            "first_order": [
+              "Rechtsstatus ändert sich durch Inkrafttreten des Gesetzes."
+            ],
+            "second_order": [
+              "Akteure könnten Planung, Investitionen oder Beschaffung an neue Kapazitätsregeln anpassen."
+            ],
+            "third_order": [
+              "Mögliche Folgen für Versorgungssicherheit, Preise und Transformationspfade bleiben zu beobachten."
+            ],
+            "systemic_relevance": "Hoch, weil Stromversorgung eine systemrelevante Infrastruktur mit möglichen Kaskaden ist.",
+            "transformation_potential": "Relevant, sofern neue Kapazitäten die Struktur des Stromsystems dauerhaft prägen.",
+            "resilience": "Kann Resilienz stärken, wenn Kapazitäten Engpässe mindern; Beleg für tatsächliche Wirkung fehlt noch.",
+            "side_effects": [
+              "Mögliche Verteilungs- und Lock-in-Effekte sind ohne Gesetzesdetails nicht einschätzbar."
+            ],
+            "uncertainties": [
+              "Konkrete Regelungen, Kapazitätsarten, Kosten, Zeitplan und Kontrollindikatoren fehlen im gelieferten Claim."
+            ],
+            "evidence_level": "Primärquelle für Inkrafttreten und Ziel der verlässlichen Stromversorgung; keine Wirkungsdaten.",
+            "attribution": "Zurechenbar ist der Rechtsstatus; spätere Versorgungseffekte wären gesondert zu prüfen.",
+            "watch_next": [
+              "Umsetzung, Kapazitätszubau, Kostenverteilung, Versorgungslage und Evaluationsdaten beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 13 und DNS-Energieziele, soweit Stromversorgung und Klima betroffen sind."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Grüne fordern modernes Bundestransparenzgesetz",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210048"
+            },
+            {
+              "title": "Für eine verlässliche Stromversorgung – auch in Zukunft",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T11:02:59.364Z",
+          "source_count": 1
+        }
+      ]
+    },
+    {
+      "story_id": "wt-acae834e3431b203",
+      "slug": "denkmal-fur-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsministe-31b203",
+      "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
+      "first_seen": "2026-09-01T08:45:00.000Z",
+      "last_updated": "2026-09-03T11:02:59.364Z",
+      "published_at": "2026-09-03T11:02:59.364Z",
+      "updated_at": "2026-09-03T11:02:59.364Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/denkmal-fuer-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsminister-weimer-zum-jahrestag-des-deutschen-ueberfalls-auf-polen-2451024",
+          "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
+          "summary": "Am 1. September 1939 überfiel das nationalsozialistische Deutschland Polen und begann damit den Zweiten Weltkrieg. Um an die Millionen Opfer der deutschen Aggression und Besatzung zu erinnern, soll im Zentrum Berlins ein dauerhafter Ort des Gedenkens entstehen: das vom Deutschen Bundestag beschlossene Denkmal für die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung in Polen 1939–1945. Derzeit läuft ein Gestaltungswettbewerb; im Dezember 2026 wird ein Preisgericht über einen Siegerentwurf beraten. Anlässlich des Jahrestages des deutschen Überfalls auf Polen sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „Der Krieg und die deutsche Besatzung brachten unermessliches Leid über Polen und seine Bevölkerung. Wir gedenken heute der Millionen Menschen, die ermordet, vertrieben und ihrer Heimat beraubt wurden. An die polnischen Opfer der deutschen Aggression zu erinnern, sind wir ihnen und ihren Nachkommen schuldig. Denn nur durch eine lebendige Erinnerung und...",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T08:45:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "b749d23ec26ae36ae17b120dc4810865fe32446386340f135d1922df291471e3"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-acae834e3431b203-claim-01",
+          "story_id": "wt-acae834e3431b203",
+          "claim": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen: Am 1. September 1939 überfiel das nationalsozialistische Deutschland Polen und begann damit den Zweiten Weltkrieg. Um an die Millionen Opfer der deutschen Aggression und Besatzung zu erinnern, soll im Zentrum Berlins ein dauerhafter Ort des Gedenkens entstehen: das vom Deutschen Bundestag beschlossene Denkmal für die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung in Polen 1939–1945. Derzeit läuft ein Gestaltungswettbewerb; im Dezember 2026 wird ein Preisgericht über einen Siegerentwurf beraten. Anlässlich des Jahrestages des deutschen Überfalls auf Polen sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „Der Krieg und die deutsche Besatzung brachten unermessliches Leid über Polen und seine Bevölkerung. Wir gede",
+          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
+          "source_id": "bundesregierung-kompakt",
+          "source_function": "official_fact_source",
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-03T11:02:59.364Z"
+        }
+      ],
+      "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
+      "published": true,
+      "analysis_status": "veröffentlicht",
+      "current_version": 1,
+      "analysis": {
+        "story_id": "wt-acae834e3431b203",
+        "summary": "Das geplante Denkmal ist eine dauerhafte Erinnerungsinfrastruktur im Zentrum Berlins. Die Relevanz liegt vor allem im demokratischen Resonanzraum.",
+        "detail_summary": "Fakt ist: Ein vom Bundestag beschlossenes Denkmal soll ab 2027 errichtet werden. Es soll an Millionen polnische Opfer deutscher Aggression und Besatzung erinnern. Der Wirkpfad liegt in öffentlicher Erinnerung, historischer Bildung und symbolischer Anerkennung. Wirkung ist ex ante nicht belegt. Materiell sind Dauerhaftigkeit und demokratischer Kontext, bei offener tatsächlicher Nutzung und Resonanz.",
+        "why_relevant": "Die neue Information betrifft dauerhafte öffentliche Infrastruktur und historisch-politische Erinnerung mit demokratischem Bezug.",
+        "status": "beschlossen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Opfergedenken, Angehörigenperspektiven und öffentliche Bildung; direkte Lebenslagenwirkung bleibt begrenzt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den gelieferten Daten ergibt sich kein wesentlicher Planet-Wirkpfad."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Das Denkmal kann Erinnerungskultur, Anerkennung und demokratische Selbstverständigung berühren."
+        },
+        "importance": "mittel",
+        "impact_potential": "Potenzial durch dauerhafte Sichtbarkeit historischer Verantwortung und niedrigschwellige öffentliche Bildungsanlässe.",
+        "impact_risks": [
+          "Symbolpolitik ohne Einbindung, Bildungskonzept oder Nutzung könnte Wirkungspotenzial begrenzen."
+        ],
+        "mechanisms": [
+          "Öffentliche Infrastruktur schafft einen wiederkehrenden Ort für Erinnerung, Lernen und diplomatische Resonanz."
+        ],
+        "first_order": [
+          "Unmittelbar entstehen Planung, Gestaltungswettbewerb und Vorbereitung eines Gedenkortes."
+        ],
+        "second_order": [
+          "Mittelfristig könnten Bildungsangebote, Besuche und öffentliche Debatten angestoßen werden."
+        ],
+        "third_order": [
+          "Langfristig kann der Ort Teil demokratischer Erinnerungskultur und internationaler Verständigung werden."
+        ],
+        "systemic_relevance": "Systemisch relevant vor allem für demokratische Kultur, Geschichtsbewusstsein und symbolische Infrastruktur.",
+        "transformation_potential": "Begrenzt-transformativ: kein Strukturumbau, aber dauerhafte Veränderung des öffentlichen Erinnerungsraums.",
+        "resilience": "Kann demokratische Resilienz stärken, wenn der Ort offen, lernorientiert und plural anschlussfähig gestaltet wird.",
+        "side_effects": [
+          "Kontroversen über Gestaltung, Deutung oder Repräsentation können Vertrauen und Akzeptanz beeinflussen."
+        ],
+        "uncertainties": [
+          "Offen sind Entwurf, Beteiligung, Finanzierung, pädagogisches Konzept, Nutzung und tatsächliche Resonanz."
+        ],
+        "evidence_level": "Primärquelle für Beschluss-, Zeit- und Wettbewerbsstand; Wirkungsevidenz liegt nicht vor.",
+        "attribution": "Spätere Wirkungen wären nur vorsichtig zurechenbar, etwa über Nutzung, Bildungspraxis und Betroffenenperspektiven.",
+        "watch_next": [
+          "Siegerentwurf, Beteiligungsprozess, Bildungsprogramm, Kostenrahmen und Nutzung nach Eröffnung beobachten."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, besonders Frieden, starke Institutionen und Bildung, nur soweit sachlich passend."
+        ],
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T11:02:59.364Z",
+          "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
+          "analysis": {
+            "story_id": "wt-acae834e3431b203",
+            "summary": "Das geplante Denkmal ist eine dauerhafte Erinnerungsinfrastruktur im Zentrum Berlins. Die Relevanz liegt vor allem im demokratischen Resonanzraum.",
+            "detail_summary": "Fakt ist: Ein vom Bundestag beschlossenes Denkmal soll ab 2027 errichtet werden. Es soll an Millionen polnische Opfer deutscher Aggression und Besatzung erinnern. Der Wirkpfad liegt in öffentlicher Erinnerung, historischer Bildung und symbolischer Anerkennung. Wirkung ist ex ante nicht belegt. Materiell sind Dauerhaftigkeit und demokratischer Kontext, bei offener tatsächlicher Nutzung und Resonanz.",
+            "why_relevant": "Die neue Information betrifft dauerhafte öffentliche Infrastruktur und historisch-politische Erinnerung mit demokratischem Bezug.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind Opfergedenken, Angehörigenperspektiven und öffentliche Bildung; direkte Lebenslagenwirkung bleibt begrenzt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Aus den gelieferten Daten ergibt sich kein wesentlicher Planet-Wirkpfad."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Das Denkmal kann Erinnerungskultur, Anerkennung und demokratische Selbstverständigung berühren."
+            },
+            "importance": "mittel",
+            "impact_potential": "Potenzial durch dauerhafte Sichtbarkeit historischer Verantwortung und niedrigschwellige öffentliche Bildungsanlässe.",
+            "impact_risks": [
+              "Symbolpolitik ohne Einbindung, Bildungskonzept oder Nutzung könnte Wirkungspotenzial begrenzen."
+            ],
+            "mechanisms": [
+              "Öffentliche Infrastruktur schafft einen wiederkehrenden Ort für Erinnerung, Lernen und diplomatische Resonanz."
+            ],
+            "first_order": [
+              "Unmittelbar entstehen Planung, Gestaltungswettbewerb und Vorbereitung eines Gedenkortes."
+            ],
+            "second_order": [
+              "Mittelfristig könnten Bildungsangebote, Besuche und öffentliche Debatten angestoßen werden."
+            ],
+            "third_order": [
+              "Langfristig kann der Ort Teil demokratischer Erinnerungskultur und internationaler Verständigung werden."
+            ],
+            "systemic_relevance": "Systemisch relevant vor allem für demokratische Kultur, Geschichtsbewusstsein und symbolische Infrastruktur.",
+            "transformation_potential": "Begrenzt-transformativ: kein Strukturumbau, aber dauerhafte Veränderung des öffentlichen Erinnerungsraums.",
+            "resilience": "Kann demokratische Resilienz stärken, wenn der Ort offen, lernorientiert und plural anschlussfähig gestaltet wird.",
+            "side_effects": [
+              "Kontroversen über Gestaltung, Deutung oder Repräsentation können Vertrauen und Akzeptanz beeinflussen."
+            ],
+            "uncertainties": [
+              "Offen sind Entwurf, Beteiligung, Finanzierung, pädagogisches Konzept, Nutzung und tatsächliche Resonanz."
+            ],
+            "evidence_level": "Primärquelle für Beschluss-, Zeit- und Wettbewerbsstand; Wirkungsevidenz liegt nicht vor.",
+            "attribution": "Spätere Wirkungen wären nur vorsichtig zurechenbar, etwa über Nutzung, Bildungspraxis und Betroffenenperspektiven.",
+            "watch_next": [
+              "Siegerentwurf, Beteiligungsprozess, Bildungsprogramm, Kostenrahmen und Nutzung nach Eröffnung beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, besonders Frieden, starke Institutionen und Bildung, nur soweit sachlich passend."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Bessere Startchancen für Kinder",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062"
+            },
+            {
+              "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/denkmal-fuer-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsminister-weimer-zum-jahrestag-des-deutschen-ueberfalls-auf-polen-2451024"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T11:02:59.364Z",
+          "source_count": 1
+        }
+      ]
     },
     {
       "story_id": "wt-7e01f9f729faff83",
@@ -1276,16 +1629,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
@@ -1325,16 +1680,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_MATERIALITY_TOO_LOW",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
@@ -3680,16 +4038,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_MATERIALITY_TOO_LOW",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-146cce2a1bef268e",
@@ -3730,16 +4091,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_MATERIALITY_TOO_LOW",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-2c4b8dc5bdfc3cb3",
@@ -3779,16 +4143,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_MATERIALITY_TOO_LOW",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-9d87c7944980e87e",
@@ -3827,16 +4194,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-4b5d0962d323432a",
@@ -3890,55 +4259,6 @@
       "updated_at": "2026-09-03T10:52:37.099Z"
     },
     {
-      "story_id": "wt-acae834e3431b203",
-      "slug": "denkmal-fur-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsministe-31b203",
-      "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
-      "first_seen": "2026-09-01T08:45:00.000Z",
-      "last_updated": "2026-09-01T08:45:00.000Z",
-      "topic": [
-        "Geopolitik",
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-kompakt",
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/denkmal-fuer-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsminister-weimer-zum-jahrestag-des-deutschen-ueberfalls-auf-polen-2451024",
-          "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
-          "summary": "Am 1. September 1939 überfiel das nationalsozialistische Deutschland Polen und begann damit den Zweiten Weltkrieg. Um an die Millionen Opfer der deutschen Aggression und Besatzung zu erinnern, soll im Zentrum Berlins ein dauerhafter Ort des Gedenkens entstehen: das vom Deutschen Bundestag beschlossene Denkmal für die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung in Polen 1939–1945. Derzeit läuft ein Gestaltungswettbewerb; im Dezember 2026 wird ein Preisgericht über einen Siegerentwurf beraten. Anlässlich des Jahrestages des deutschen Überfalls auf Polen sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „Der Krieg und die deutsche Besatzung brachten unermessliches Leid über Polen und seine Bevölkerung. Wir gedenken heute der Millionen Menschen, die ermordet, vertrieben und ihrer Heimat beraubt wurden. An die polnischen Opfer der deutschen Aggression zu erinnern, sind wir ihnen und ihren Nachkommen schuldig. Denn nur durch eine lebendige Erinnerung und...",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T08:45:00.000Z",
-          "primary_source": true,
-          "source_priority": 92,
-          "source_topic": "Politik",
-          "content_hash": "b749d23ec26ae36ae17b120dc4810865fe32446386340f135d1922df291471e3"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-acae834e3431b203-claim-01",
-          "story_id": "wt-acae834e3431b203",
-          "claim": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen: Am 1. September 1939 überfiel das nationalsozialistische Deutschland Polen und begann damit den Zweiten Weltkrieg. Um an die Millionen Opfer der deutschen Aggression und Besatzung zu erinnern, soll im Zentrum Berlins ein dauerhafter Ort des Gedenkens entstehen: das vom Deutschen Bundestag beschlossene Denkmal für die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung in Polen 1939–1945. Derzeit läuft ein Gestaltungswettbewerb; im Dezember 2026 wird ein Preisgericht über einen Siegerentwurf beraten. Anlässlich des Jahrestages des deutschen Überfalls auf Polen sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „Der Krieg und die deutsche Besatzung brachten unermessliches Leid über Polen und seine Bevölkerung. Wir gede",
-          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
-          "source_id": "bundesregierung-kompakt",
-          "source_function": "official_fact_source",
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
-        }
-      ],
-      "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
-    },
-    {
       "story_id": "wt-e28250d4074683af",
       "slug": "ruhestandler-haushalte-verfugen-im-mittel-uber-2-330-euro-pro-monat-4683af",
       "title": "Ruheständler-Haushalte verfügen im Mittel über 2 330 Euro pro Monat",
@@ -3976,7 +4296,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -3985,7 +4305,7 @@
       "quality_errors": [],
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
@@ -4025,7 +4345,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T11:02:59.364Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -4034,7 +4354,7 @@
       "quality_errors": [],
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T11:02:59.364Z"
     },
     {
       "story_id": "wt-61fc84ab4a746bcd",
