@@ -210,7 +210,8 @@ export function parseWoekPublicAssessments(raw, source) {
         entry.parliamentaryStatus ? `Parlamentarischer Stand: ${entry.parliamentaryStatus}.` : "",
         entry.versionNote || "",
       ].filter(Boolean).join(" "), 1500);
-      const parsedDate = Date.parse(`${entry.lastUpdated || ""}T12:00:00Z`);
+      const lastUpdated = sanitizeFeedText(entry.lastUpdated, 40);
+      const parsedDate = Date.parse(`${lastUpdated}T12:00:00Z`);
       const publishedAt = Number.isFinite(parsedDate) ? new Date(parsedDate).toISOString() : null;
       return [{
         source_id: source.source_id,
@@ -225,7 +226,7 @@ export function parseWoekPublicAssessments(raw, source) {
         guid: url,
         published_at: publishedAt,
         categories: [entry.kind, entry.materiality, entry.analysisStatus].map((value) => sanitizeFeedText(value, 120)).filter(Boolean),
-        content_hash: sha256(`${title}\n${summary}\n${url}`),
+        content_hash: sha256(`${title}\n${summary}\n${url}\n${lastUpdated}`),
         item_id: sha256(url),
       }];
     });

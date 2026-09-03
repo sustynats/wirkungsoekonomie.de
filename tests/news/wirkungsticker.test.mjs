@@ -112,6 +112,9 @@ test("Nur veröffentlichte und verifizierte WÖk-Parlamentsbewertungen werden ü
   assert.equal(assessment.url, "https://parlament.wirkungsoekonomie.de/entscheidungen/fall-a");
   assert.equal(assessment.published_at, "2026-09-03T12:00:00.000Z");
   assert.equal(parseFeed(raw, parliamentSource).length, 1);
+  const updated = parseWoekPublicAssessments(raw.replaceAll("2026-09-03", "2026-09-04"), parliamentSource)[0];
+  assert.equal(updated.item_id, assessment.item_id);
+  assert.notEqual(updated.content_hash, assessment.content_hash);
 });
 
 test("Deduplizierung, Ähnlichkeit und Story-Cluster sind deterministisch", () => {
