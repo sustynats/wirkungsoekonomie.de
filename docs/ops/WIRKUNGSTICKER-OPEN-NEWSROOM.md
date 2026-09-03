@@ -8,6 +8,7 @@ Stand: 3. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht 
 - Nachrichten-Abos und bezahlte Nachrichten-/Agentur-APIs: **0 EUR**. Keine Login-/Paywall-Umgehung, keine Removepaywall-Anbindung. Öffentliche RSS-Metadaten sind keine Volltextlizenz.
 - `budget.mjs`: täglicher ECB-Kurs, höchstens sieben Tage alt; konservative USD-Grenze mit 19 % Steuer- und 10 % FX-Reserve, derzeit höchstens 18,90 USD. Ohne hinreichend frischen Kurs bleibt die KI zurückgestellt, Recherche läuft weiter.
 - Oracle: eigener authentifizierter `/api/news-analysis`-Zugang, `gpt-5.4-mini`, höchstens eine laufende Anfrage, 24 Anfragen/Stunde, maximal 40.000 Zeichen Eingabe und 6.500 Ausgabetoken. Öffentliche KI-Ratenlimits werden nicht angehoben.
+- Nachrichtenmodus mit Reasoning `low` und eigenem JSON-Auftrag; kein angehängter allgemeiner Chat-Auftrag und keine sachfremden Website-Suchtreffer als Nachrichtenbeleg.
 - Dauerhaftes privates Oracle-Kostenjournal reserviert 0,25 USD vor einer Anfrage; fehlgeschlagene/unterbrochene Aufrufe behalten die Reserve. Erfolgreiche Aufrufe ohne technische Wiederholung werden mit gemeldeten Tokenzahlen abgerechnet. September-Altkosten wurden mit 3 USD einschließlich Sicherheitsreserve übernommen. Der übergeordnete bestehende API-Kostenschutz bleibt wirksam.
 - Ein festes Budget begrenzt die Zahl bearbeitbarer Kandidaten. 24 Anfragen/Stunde sind technische Spitzenkapazität, keine Zusage dauerhafter Vollauslastung oder vollständiger Berichterstattung.
 

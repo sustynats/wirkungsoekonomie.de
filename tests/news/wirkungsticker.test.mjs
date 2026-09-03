@@ -83,6 +83,14 @@ test("RSS wird normalisiert und Trackingparameter werden entfernt", () => {
   assert.match(item.summary, /verändert Regeln/);
 });
 
+test("Ziffern in einem exakten Herausgebernamen sind keine erfundene Nachrichtenmenge", () => {
+  const s = candidate(); s.sources[0].publisher = "France 24";
+  const a = validAnalysis(); a.source_summary = a.source_summary.replace("Der Bund hat", "France 24 berichtet: Der Bund hat");
+  assert.ok(!validateAnalysis(a, s).includes("AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:24"));
+  a.source_summary += " Es gibt 24 weitere Fälle.";
+  assert.ok(validateAnalysis(a, s).includes("AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:24"));
+});
+
 test("Atom, HTML-Bereinigung und DTD-Sperre funktionieren", () => {
   const atom = `<feed><entry><title>Neue Statistik</title><link href="https://example.org/stat"/><summary>&lt;b&gt;Erste Daten&lt;/b&gt;</summary><updated>2026-09-03T06:00:00Z</updated><id>x</id></entry></feed>`;
   assert.equal(parseFeed(atom, source)[0].summary, "Erste Daten");

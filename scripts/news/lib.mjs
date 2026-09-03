@@ -971,12 +971,15 @@ export function validateAnalysis(analysis, story, options = {}) {
   const sourceText = `${rawSourceText} ${story.source_summary || analysis?.source_summary || ""}`;
   const allowedNumbers = numberTokens(sourceText);
   const rawAllowedNumbers = numberTokens(rawSourceText);
+  // Numeric publisher names (France 24, rbb24) are attribution, not an
+  // unsupported quantity. Remove only the complete exact publisher name.
+  const withoutPublisherNames = (value) => story.sources.reduce((text, source) => source.publisher ? text.split(source.publisher).join("Quelle") : text, value);
   // Visuals have their own source-bound sanitizer before this gate. Their
   // internal claim IDs and ISO date components are not journalistic numbers.
   const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null }).join(" ");
-  for (const token of numberTokens(textWithoutFrameworks)) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
+  for (const token of numberTokens(withoutPublisherNames(textWithoutFrameworks))) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
   if (options.validateSourceSummaryNumbers !== false) {
-    for (const token of numberTokens(analysis?.source_summary || "")) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);
+    for (const token of numberTokens(withoutPublisherNames(analysis?.source_summary || ""))) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);
   }
   for (const token of numberTokens((analysis?.reference_frameworks || []).join(" "))) {
     if (!allowedNumbers.has(token) && token !== "2030" && !(Number(token) >= 1 && Number(token) <= 17)) errors.push(`AI_UNSUPPORTED_FRAMEWORK_NUMBER:${token}`);
