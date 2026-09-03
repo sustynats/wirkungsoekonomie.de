@@ -14,8 +14,10 @@
   const installDismiss = tools.querySelector("[data-news-install-dismiss]");
   const notificationToggle = tools.querySelector("[data-news-notification-toggle]");
   const notificationStatus = tools.querySelector("[data-news-notification-status]");
-  const refreshButton = tools.querySelector("[data-news-refresh-button]");
-  const refreshStatus = tools.querySelector("[data-news-refresh-status]");
+  const refreshButtons = Array.from(document.querySelectorAll("[data-news-refresh-button]"));
+  const refreshStatuses = Array.from(document.querySelectorAll("[data-news-refresh-status]"));
+  const refreshButton = { set disabled(value) { refreshButtons.forEach((button) => { button.disabled = value; }); } };
+  const refreshStatus = { set textContent(value) { refreshStatuses.forEach((node) => { node.textContent = value; }); } };
   const markReadButton = tools.querySelector("[data-news-mark-read]");
   const cards = Array.from(document.querySelectorAll("[data-news-card]"));
   const installDismissKey = "woek_ticker_install_dismissed_at";
@@ -171,7 +173,7 @@
   function initializeFreshnessChecks() {
     if (!cards.length) return;
     startForegroundChecks();
-    refreshButton?.addEventListener("click", () => void refreshNow());
+    refreshButtons.forEach((button) => button.addEventListener("click", () => void refreshNow()));
     window.addEventListener("focus", () => void handleForeground());
     window.addEventListener("pageshow", () => void handleForeground());
     window.addEventListener("online", () => void handleForeground());

@@ -7,9 +7,34 @@
   const status = document.querySelector("[data-news-results-status]");
   const loadMore = document.querySelector("[data-news-load-more]");
   const loadMoreWrap = document.querySelector("[data-news-load-more-wrap]");
+  const filterBar = document.querySelector(".news-filter-bar");
+  const header = document.querySelector(".site-header");
   const pageSize = 10;
   let activeFilter = "all";
   let visibleLimit = pageSize;
+
+  // Die Filterleiste klebt unterhalb des ebenfalls klebenden Site-Headers.
+  function syncHeaderOffset() {
+    if (!filterBar) return;
+    const offset = header ? Math.round(header.getBoundingClientRect().height) : 0;
+    filterBar.style.setProperty("--wt-header-offset", `${offset}px`);
+  }
+  syncHeaderOffset();
+  window.addEventListener("resize", syncHeaderOffset);
+  if ("ResizeObserver" in window && header) new ResizeObserver(syncHeaderOffset).observe(header);
+
+  // Ganze Karte klickbar, ohne verschachtelte Links: Klicks auf Text öffnen die Akte.
+  cards.forEach((card) => {
+    const href = card.dataset.newsHref;
+    if (!href) return;
+    card.addEventListener("click", (event) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (event.target.closest("a, button, summary, input, details")) return;
+      if (String(window.getSelection?.() || "").length) return;
+      window.location.href = href;
+    });
+  });
+
   if (!controls.length || !cards.length) return;
 
   function matches(card, filter) {
@@ -29,7 +54,16 @@
       && (!query || normalize(card.dataset.newsSearch).includes(query)));
     const visibleCards = new Set(matchingCards.slice(0, visibleLimit));
     cards.forEach((card) => { card.hidden = !visibleCards.has(card); });
-    controls.forEach((control) => control.setAttribute("aria-pressed", String(control.dataset.newsFilter === activeFilter)));
+    controls.forEach((control) => {
+      control.setAttribute("aria-pressed", String(control.dataset.newsFilter === activeFilter));
+      const count = control.querySelector("[data-news-filter-count]");
+      if (count && query) {
+        const filterMatches = cards.filter((card) => matches(card, control.dataset.newsFilter) && normalize(card.dataset.newsSearch).includes(query)).length;
+        count.textContent = String(filterMatches);
+      } else if (count && count.dataset.total !== undefined) {
+        count.textContent = count.dataset.total;
+      }
+    });
     if (empty) empty.hidden = matchingCards.length !== 0;
 
     const shown = Math.min(visibleLimit, matchingCards.length);
