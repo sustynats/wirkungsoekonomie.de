@@ -623,7 +623,7 @@ export function buildAnalysisPrompt(stories) {
     "Prüfe drei voneinander unabhängige Pflichtgates: (1) echte neue Information, (2) materielle Folgenrelevanz und (3) tragfähige Evidenz. Nur wenn alle drei tragen, darf publication_recommendation=true sein.",
     "Beachte review_mode: Bei historical_relevance_reassessment prüfst du, ob die damals gemeldete Quelleninformation zum angegebenen Quelldatum eine veröffentlichungswürdige Neuigkeit war. Markiere sie nicht allein deshalb als Dublette, weil existing_history dieselbe frühere Ticker-Version zeigt. related_ticker_history nennt dagegen eigenständige andere Ticker-Akten und ist auch bei einer historischen Prüfung als Dublettenvergleich zu verwenden. Vergleiche dabei source_published_at: Eine frühere Originalmeldung wird nicht durch einen erst später erschienenen Rückblick zur Dublette; umgekehrt ist ein späterer Rückblick ohne neue Information gegenüber einer früheren Akte eine Dublette. Bei new_or_updated_story muss gerade die neue Entwicklung gegenüber der Vorgeschichte materiell sein.",
     "Setze publication_recommendation nur dann auf true, wenn die NEUE Information selbst materiell ist: Sie verändert plausibel Regeln, Anreize, Kapitalflüsse, Marktstrukturen, Infrastruktur oder relevante Zustände für Mensch, Planet oder Demokratie; oder sie liefert belastbare neue Evidenz über eine solche Veränderung.",
-    "Prüfe Materialität ausdrücklich nach Zahl und Art der Betroffenen, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz und demokratischer Korrekturfähigkeit. Mindestens zwei Faktoren müssen substanziell sein oder ein einzelner Faktor muss außergewöhnlich stark sein.",
+    "Prüfe Materialität ausdrücklich nach Zahl und Art der Betroffenen, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz und demokratischer Korrekturfähigkeit. Mindestens zwei verschiedene Faktoren müssen substanziell sein oder ein einzelner Faktor muss außergewöhnlich stark sein. Resonanz und Aufmerksamkeit zählen nicht als materielle Faktoren und begründen auch keine Ausnahme.",
     "Die Publikationsform ist niemals allein ein Ausschlussgrund. Interviews, Reden oder parlamentarische Antworten dürfen erscheinen, wenn gerade darin eine materiell neue und zurechenbare Entscheidung, verbindliche Zusage, belastbare Evidenz oder erkennbare Kursänderung mit relevantem Wirkpfad mitgeteilt wird.",
     "Setze publication_recommendation=false bei bloßer Meinung, Wiederholung, Spekulation, Zeremonie, Routine-Statistik, Börsen- oder Tenderzahl, einer Frage ohne materielle neue Antwort sowie einer formalen Verfahrensmeldung ohne relevanten Wirkpfad. Der Rang der Quelle und die Aufmerksamkeit für ein Thema sind kein Relevanzbeweis.",
     "Eine Zusammenfassung bereits separat erfasster Entscheidungen ist ohne neue materielle Information keine neue Story. Vergleiche dafür ausdrücklich related_ticker_history und kennzeichne eine reine Sammel- oder Rückblicksmeldung im publication_gate als duplicate_without_new_information.",
@@ -668,7 +668,7 @@ export function buildAnalysisPrompt(stories) {
         publication_gate: {
           news_value: "binding_decision|implementation|new_evidence|material_update|substantive_commitment|context_only",
           materiality_factors: ["affected_scope", "duration"],
-          exceptional_factor: "none|affected_scope|intensity|duration|reversibility|systemic_relevance|cascades|distribution|resilience|democratic_correctability|resonance",
+          exceptional_factor: "none|affected_scope|intensity|duration|reversibility|systemic_relevance|cascades|distribution|resilience|democratic_correctability",
           evidence_basis: "primary_source_direct|primary_source_with_caveats|insufficient",
           duplicate_status: "new_story|material_update|duplicate_without_new_information",
           rationale: "string",
@@ -840,7 +840,11 @@ export function validateAnalysis(analysis, story, options = {}) {
     if (!allowedDuplicateStatus.has(publicationGate.duplicate_status)) errors.push("AI_PUBLICATION_GATE_DUPLICATE_INVALID");
     if (typeof publicationGate.rationale !== "string" || !publicationGate.rationale.trim()) errors.push("AI_PUBLICATION_GATE_RATIONALE_REQUIRED");
     if (publicationGate.news_value === "context_only") errors.push("AI_NEWS_VALUE_CONTEXT_ONLY");
-    if ((publicationGate.materiality_factors || []).length < 2 && publicationGate.exceptional_factor === "none") errors.push("AI_MATERIALITY_GATE_FAILED");
+    const substantiveFactors = new Set((Array.isArray(publicationGate.materiality_factors) ? publicationGate.materiality_factors : [])
+      .filter((factor) => allowedMaterialityFactors.has(factor) && factor !== "resonance"));
+    const substantiveException = allowedMaterialityFactors.has(publicationGate.exceptional_factor)
+      && publicationGate.exceptional_factor !== "resonance";
+    if (substantiveFactors.size < 2 && !substantiveException) errors.push("AI_MATERIALITY_GATE_FAILED");
     if (publicationGate.evidence_basis === "insufficient") errors.push("AI_EVIDENCE_INSUFFICIENT");
     if (publicationGate.duplicate_status === "duplicate_without_new_information") errors.push("AI_DUPLICATE_WITHOUT_UPDATE");
   }

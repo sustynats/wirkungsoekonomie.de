@@ -376,6 +376,22 @@ test("Längere Detailzusammenfassung wird separat geprüft", () => {
   assert.ok(validateAnalysis(analysis, candidate()).includes("AI_DETAIL_SUMMARY_LENGTH"));
 });
 
+test("Doppelte Faktoren und bloße Resonanz können Materialität nicht vortäuschen", () => {
+  for (const factors of [["duration", "duration"], ["resonance", "resonance"], ["duration", "resonance"], ["invented", "invented"]]) {
+    const analysis = validAnalysis();
+    analysis.publication_gate.materiality_factors = factors;
+    assert.ok(validateAnalysis(analysis, candidate()).includes("AI_MATERIALITY_GATE_FAILED"));
+  }
+  const resonance = validAnalysis();
+  resonance.publication_gate.materiality_factors = [];
+  resonance.publication_gate.exceptional_factor = "resonance";
+  assert.ok(validateAnalysis(resonance, candidate()).includes("AI_MATERIALITY_GATE_FAILED"));
+  const exceptional = validAnalysis();
+  exceptional.publication_gate.materiality_factors = ["intensity"];
+  exceptional.publication_gate.exceptional_factor = "intensity";
+  assert.deepEqual(validateAnalysis(exceptional, candidate()), []);
+});
+
 test("Quellenzusammenfassung bleibt lang genug und ohne WÖk-Bewertung", () => {
   const short = validAnalysis();
   short.source_summary = "Zu kurz.";
