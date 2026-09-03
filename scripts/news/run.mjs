@@ -19,6 +19,7 @@ import {
   validateAnalysis,
 } from "./lib.mjs";
 import { buildNewsSite } from "./build.mjs";
+import { sanitizeVisuals } from "./visuals.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "3.2";
@@ -259,6 +260,17 @@ export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0) {
   ));
 }
 
+export function sanitizeAnalysisVisuals(analysis, candidate, report = {}) {
+  if (!analysis || typeof analysis !== "object" || Array.isArray(analysis)) return analysis;
+  const { visuals, dropped } = sanitizeVisuals(analysis.visuals, { ...candidate, source_summary: analysis.source_summary });
+  analysis.visuals = visuals;
+  if (dropped.length) {
+    report.visuals_dropped ||= [];
+    report.visuals_dropped.push({ story_id: candidate.story_id, dropped });
+  }
+  return analysis;
+}
+
 function publishedRecord(candidate, analysis, ai, now) {
   const existing = candidate.existing_story;
   const versionNumber = Number(existing?.current_version || 0) + 1;
@@ -390,6 +402,7 @@ export async function runWirkungsticker(options = {}) {
     quality_holds: [],
     article_excerpts_fetched: 0,
     article_excerpt_failures: 0,
+    visuals_dropped: [],
     budget_stage: 0,
     completed_at: null,
   };
@@ -581,6 +594,7 @@ export async function runWirkungsticker(options = {}) {
         for (const candidate of batch) {
           const analysis = analyses.get(candidate.story_id);
           const analysisCandidate = analysisBatch.find((item) => item.story_id === candidate.story_id) || candidate;
+          if (analysis) sanitizeAnalysisVisuals(analysis, analysisCandidate, report);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
           if (errors.length) {
             if (shouldRetireAfterReassessment(candidate, errors)) {

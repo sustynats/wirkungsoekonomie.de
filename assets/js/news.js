@@ -10,8 +10,36 @@
   const filterBar = document.querySelector(".news-filter-bar");
   const header = document.querySelector(".site-header");
   const pageSize = 10;
+  const listStateKey = "woek:wirkungsticker:list-state:v1";
   let activeFilter = "all";
   let visibleLimit = pageSize;
+
+  function saveListState(card) {
+    try {
+      window.sessionStorage.setItem(listStateKey, JSON.stringify({
+        pathname: window.location.pathname,
+        activeFilter,
+        query: searchInput?.value || "",
+        visibleLimit,
+        scrollY: Math.max(0, Math.round(window.scrollY)),
+        storyId: card?.id || "",
+        savedAt: Date.now(),
+      }));
+    } catch (_error) {
+      // Private browsing or locked-down webviews may disable sessionStorage.
+    }
+  }
+
+  function readListState(targetId) {
+    if (!targetId) return null;
+    try {
+      const state = JSON.parse(window.sessionStorage.getItem(listStateKey) || "null");
+      if (!state || state.pathname !== window.location.pathname || Date.now() - Number(state.savedAt || 0) > 24 * 60 * 60 * 1000) return null;
+      return state;
+    } catch (_error) {
+      return null;
+    }
+  }
 
   // Die Filterleiste klebt unterhalb des ebenfalls klebenden Site-Headers.
   function syncHeaderOffset() {
@@ -28,7 +56,9 @@
     const href = card.dataset.newsHref;
     if (!href) return;
     card.addEventListener("click", (event) => {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (event.defaultPrevented) return;
+      saveListState(card);
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       if (event.target.closest("a, button, summary, input, details")) return;
       if (String(window.getSelection?.() || "").length) return;
       window.location.href = href;
@@ -112,9 +142,33 @@
     render({ updateUrl: false });
   });
 
+  const returnTargetId = window.location.hash.slice(1);
+  const returnCard = returnTargetId.startsWith("story-") ? cards.find((card) => card.id === returnTargetId) : null;
+  const savedState = readListState(returnTargetId);
+  if (savedState) {
+    const returnUrl = new URL(window.location.href);
+    returnUrl.hash = "";
+    window.history.replaceState({}, "", returnUrl);
+  }
   const parameters = new URL(window.location.href).searchParams;
-  const initialFilter = parameters.get("thema") || "all";
+  const initialFilter = savedState?.activeFilter || parameters.get("thema") || "all";
   activeFilter = controls.some((control) => control.dataset.newsFilter === initialFilter) ? initialFilter : "all";
-  if (searchInput) searchInput.value = parameters.get("q") || "";
-  render({ updateUrl: false });
+  if (searchInput) searchInput.value = savedState?.query ?? parameters.get("q") ?? "";
+  visibleLimit = Math.max(pageSize, Number(savedState?.visibleLimit || pageSize));
+  if (returnCard && !savedState) {
+    const cardPosition = cards.indexOf(returnCard) + 1;
+    visibleLimit = Math.max(visibleLimit, Math.ceil(cardPosition / pageSize) * pageSize);
+  }
+  render({ updateUrl: Boolean(savedState) });
+  if (returnCard) {
+    const savedCard = savedState ? cards.find((card) => card.id === savedState.storyId) : null;
+    savedCard?.classList.add("is-return-point");
+    const restorePosition = () => {
+      if (savedState && Number.isFinite(Number(savedState.scrollY))) window.scrollTo({ top: Number(savedState.scrollY), behavior: "auto" });
+      else returnCard.scrollIntoView({ block: "center" });
+    };
+    window.requestAnimationFrame(() => window.requestAnimationFrame(restorePosition));
+    window.addEventListener("load", restorePosition, { once: true });
+    window.setTimeout(restorePosition, 120);
+  }
 })();

@@ -2,6 +2,8 @@
 
 Stand: 2026-09-03 · Branch `claude/wirkungsticker-visual-ux` · Lane: Claude = Templates, CSS, Icons, Titelbildsystem; Codex = Pipeline (`lib.mjs`, `run.mjs`), Qualitätsgate, Workflows, Higgsfield-Anbindung.
 
+Status 2026-09-03: Auftrag A ist im Codex-Folgepaket umgesetzt und getestet. Auftrag B bleibt bewusst ein separater späterer Schritt.
+
 ## 1. Was Claude geändert hat (bitte nicht zurückbauen)
 
 | Bereich | Datei(en) | Kern |

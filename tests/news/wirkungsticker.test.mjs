@@ -20,7 +20,7 @@ import {
   storySimilarity,
   validateAnalysis,
 } from "../../scripts/news/lib.mjs";
-import { fetchFeedWithRetry, shouldRetryQualityGate } from "../../scripts/news/run.mjs";
+import { fetchFeedWithRetry, sanitizeAnalysisVisuals, shouldRetryQualityGate } from "../../scripts/news/run.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
@@ -251,6 +251,8 @@ test("Prompt Injection bleibt als untrusted Datenblock gekapselt", () => {
   assert.match(prompt, /Bereits erfasste Klimaregel/);
   assert.match(prompt, /source_published_at/);
   assert.match(prompt, /publication_gate/);
+  assert.match(prompt, /visuals/);
+  assert.match(prompt, /key_figures/);
 });
 
 test("SSRF-Schutz blockiert nicht erlaubte und private Hosts", async () => {
@@ -322,6 +324,28 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
   assert.ok(errors.includes("AI_EX_ANTE_CAUSAL_OVERCLAIM"));
   assert.ok(errors.includes("AI_HTML_NOT_ALLOWED"));
   assert.ok(errors.some((error) => error.startsWith("AI_UNSUPPORTED_NUMBER")));
+});
+
+test("Visual-Sanitizer entfernt unbelegte Kennzahlen vor dem Qualitätsgate und protokolliert sie", () => {
+  const story = candidate();
+  story.sources[0].article_excerpt = "Der Zuschuss beträgt 5,5 Milliarden Euro.";
+  const analysis = validAnalysis();
+  analysis.source_summary = analysis.source_summary.replace("Weitere Einzelheiten fehlen.", "Der Zuschuss beträgt 5,5 Milliarden Euro.");
+  analysis.visuals = {
+    key_figures: [
+      { label: "Zuschuss", value: "5,5", unit: "Milliarden Euro", context: "laut Primärquelle" },
+      { label: "Unbelegt", value: "99", unit: "Milliarden Euro", context: "nicht in der Quelle" },
+    ],
+  };
+  const report = {};
+  sanitizeAnalysisVisuals(analysis, story, report);
+  assert.equal(analysis.visuals.key_figures.length, 1);
+  assert.equal(analysis.visuals.key_figures[0].value, "5,5");
+  assert.deepEqual(validateAnalysis(analysis, story), []);
+  assert.equal(report.visuals_dropped[0].story_id, "wt-test");
+  assert.ok(report.visuals_dropped[0].dropped.some((reason) => reason.startsWith("KEY_FIGURE_UNSUPPORTED:99")));
+  const persistedStory = { ...story, source_summary: analysis.source_summary, sources: story.sources.map(({ article_excerpt: _articleExcerpt, ...sourceData }) => sourceData) };
+  assert.deepEqual(validateAnalysis(analysis, persistedStory, { validateSourceSummaryNumbers: false }), []);
 });
 
 test("Publikationsgate verlangt Neuigkeit, Materialität und Evidenz zugleich", () => {

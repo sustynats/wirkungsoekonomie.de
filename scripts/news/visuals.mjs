@@ -124,6 +124,7 @@ export function storySourceText(story = {}) {
   return [
     ...(story.sources || []).map((source) => `${source.title || ""} ${source.summary || ""}`),
     ...(story.claims || []).map((claim) => claim.claim || ""),
+    story.source_summary || "",
   ].join(" ");
 }
 
