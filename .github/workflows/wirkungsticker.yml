@@ -6,9 +6,8 @@ on:
     branches:
       - codex/wirkungsticker-clock
   schedule:
-    # Vier kurze Chancen je Stunde begrenzen den Verzug bei ausgelassenen GitHub-
-    # Cron-Ereignissen. Die persistente rollende Grenze schützt den Worker davor,
-    # dass verspätete Läufe mehr als vier KI-Aufrufe pro Stunde erzeugen.
+    # Kontinuierliche Erkennung, keine vier Veröffentlichungssperrzeiten.
+    # Quellenintervalle, Euro-Budget und rollende KI-Kapazität liegen im Worker.
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
@@ -29,7 +28,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -46,16 +45,18 @@ jobs:
       - name: Import, analyze and build
         if: steps.slot.outputs.should_run == 'true'
         env:
-          WOEK_NEWS_MONTHLY_AI_BUDGET_USD: "5"
-          # Ein kurzer Aufruf je Lauf; vier Laufchancen bedienen das Stundenlimit.
-          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "1"
-          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "4"
+          WOEK_NEWS_MONTHLY_AI_BUDGET_EUR: "25"
+          WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
+          WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+          # Eigene authentifizierte Nachrichten-Lane; öffentliche KI-Limits unverändert.
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "6"
+          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "24"
           # Technische Wiederholungen bleiben in der dauerhaften Stunden-Queue. So
           # verbraucht ein 503 nicht mehrere der vier reservierten Worker-Slots.
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
           # Längere Detailfassungen bleiben pro Anfrage unter dem Upstream-Zeitfenster.
           WOEK_NEWS_AI_BATCH_SIZE: "1"
-          WOEK_NEWS_AI_BATCH_DELAY_MS: "30000"
+          WOEK_NEWS_AI_BATCH_DELAY_MS: "2500"
           WOEK_NEWS_AI_TIMEOUT_MS: "120000"
         run: npm run news:run
       - name: Read public ticker outcome

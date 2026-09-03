@@ -31,10 +31,12 @@ import {
   shouldRetryQualityGate,
 } from "../../scripts/news/run.mjs";
 import { evaluateRunHealth } from "../../scripts/news/check-run-health.mjs";
+import { loadNewsRegistry } from "../../scripts/news/registry.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
   priority: 100, topic: "Politik", url: "https://example.org/news/", max_items: 10,
+  access: { status: "public", cost_usd: 0, article: "bounded_public_text" },
 };
 
 const feed = `<?xml version="1.0"?><rss><channel><item><title>Bund beschließt Klimagesetz</title><link>https://example.org/a?utm_source=x&amp;b=2</link><description><![CDATA[Das Gesetz verändert Regeln für Energie und Infrastruktur.]]></description><pubDate>Thu, 03 Sep 2026 05:00:00 GMT</pubDate><guid>a</guid></item></channel></rss>`;
@@ -144,8 +146,8 @@ test("Nur veröffentlichte und verifizierte WÖk-Parlamentsbewertungen werden ü
 });
 
 test("BMAS-Feed darf seine offizielle Artikeldomain lesen, aber keine fremde Domain", async () => {
-  const registry = JSON.parse(fs.readFileSync(new URL("../../content/news/source-registry.json", import.meta.url), "utf8"));
-  const bmas = registry.sources.find((entry) => entry.source_id === "bmas-aktuell");
+  const registry = loadNewsRegistry(fileURLToPath(new URL("../../", import.meta.url)));
+  const bmas = { ...registry.sources.find((entry) => entry.source_id === "bmas-aktuell"), enabled: true, access: { status: "public", cost_usd: 0, article: "bounded_public_text" } };
   const fetchImpl = async () => new Response(`<main>${"Offizieller Inhalt des Bundesministeriums. ".repeat(5)}</main>`, { headers: { "content-type": "text/html" } });
   const result = await fetchArticleExcerpt({ url: "https://www.bmas.de/DE/Service/Presse/Meldungen/test.html" }, bmas, { resolve_dns: false }, fetchImpl);
   assert.ok(result.excerpt.length >= 120);

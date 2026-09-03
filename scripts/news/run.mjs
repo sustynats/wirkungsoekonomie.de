@@ -20,9 +20,14 @@ import {
 } from "./lib.mjs";
 import { buildNewsSite } from "./build.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
+import { loadNewsRegistry, registryErrors } from "./registry.mjs";
+import { sourceAccess } from "./access-policy.mjs";
+import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts } from "./newsroom.mjs";
+import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
+import { datedSource } from "./source-adapters.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const RELEVANCE_FILTER_VERSION = "3.2";
+const RELEVANCE_FILTER_VERSION = "4.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
 const MAX_QUALITY_RETRIES = 3;
 const RETRYABLE_QUALITY_ERRORS = [
@@ -39,6 +44,8 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_SOURCE_SUMMARY_(?:LENGTH|PARAGRAPHS|NOT_NEUTRAL)$/,
   /^AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:/,
   /^AI_EXCESSIVE_SOURCE_SUMMARY_COPY$/,
+  /^(?:NEWS_STATUS_REQUIRED|EVENT_CLAIMS_REQUIRED|EVENT_CLAIM_INVALID|FOLLOWUPS_ARRAY_REQUIRED|FOLLOWUP_INVALID|FOLLOWUP_DATE_INVALID)$/,
+  /^(?:CLAIM_EVIDENCE_REQUIRED|CLAIM_EVIDENCE_NOT_IN_SOURCE|CLAIM_NUMBER_NOT_IN_EVIDENCE)$/,
   /^AI_DETAIL_SUMMARY_(?:INVALID|LENGTH)$/,
   /^AI_UNSUPPORTED_NUMBER:/,
   /^AI_UNSUPPORTED_FRAMEWORK_NUMBER:/,
@@ -63,6 +70,7 @@ const files = {
   stories: path.join(ROOT, "data/news/stories.json"),
   usage: path.join(ROOT, "data/news/usage.json"),
   report: path.join(ROOT, "reports/wirkungsticker-latest-run.json"),
+  newsroom: path.join(ROOT, "data/news/newsroom.json"),
 };
 
 function readJson(file) {
@@ -105,6 +113,18 @@ function sourcePublicRecord(item) {
     source_priority: item.source_priority,
     source_topic: item.source_topic,
     content_hash: item.content_hash,
+    source_item_id: item.source_item_id,
+    publisher_id: item.publisher_id,
+    publisher_kind: item.publisher_kind,
+    source_role: item.source_role,
+    language: item.language,
+    geography: item.geography,
+    research_lane: item.research_lane,
+    requires_corroboration: item.requires_corroboration,
+    source_published_at: item.source_published_at || item.published_at,
+    ingested_at: item.ingested_at,
+    provenance: item.provenance,
+    research_metadata: item.research_metadata,
   };
 }
 
@@ -164,6 +184,10 @@ function createCandidate(cluster, now, reassessment = false, fresh = false) {
     existing_story: existing || null,
     reassessment,
     fresh,
+    event_first_seen_at: existing?.event_first_seen_at || now,
+    event_detected_at: existing?.event_detected_at || now,
+    event_id: existing?.event_id || eventFingerprint(sources[0] || {}).id,
+    evidence_groups: evidenceGroups(sources),
   };
   candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
   candidate.preanalysis = preAnalyzeStory(candidate);
@@ -210,6 +234,11 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     pending_reason: reason,
     versions: existing?.versions || [],
     updated_at: now,
+    event_first_seen_at: candidate.event_first_seen_at,
+    event_detected_at: candidate.event_detected_at,
+    event_id: candidate.event_id,
+    preanalysis: candidate.preanalysis,
+    freshness: freshnessFor(candidate, now),
   };
 }
 
@@ -277,7 +306,7 @@ export function sanitizeAnalysisVisuals(analysis, candidate, report = {}) {
 function publishedRecord(candidate, analysis, ai, now) {
   const existing = candidate.existing_story;
   const versionNumber = Number(existing?.current_version || 0) + 1;
-  const { source_summary: sourceSummary, ...woekAnalysis } = analysis;
+  const { source_summary: sourceSummary, event_claims: _eventClaims, followups: newFollowups = [], ...woekAnalysis } = analysis;
   const version = {
     version: versionNumber,
     analyzed_at: now,
@@ -288,6 +317,8 @@ function publishedRecord(candidate, analysis, ai, now) {
     model: ai.model,
     mode: ai.mode,
     method_sources: ai.method_sources,
+    claims: analysis.event_claims ? persistClaimEvidence(analysis, candidate, now) : candidate.claims,
+    source_versions: candidate.sources.map((source) => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
   };
   return {
     story_id: candidate.story_id,
@@ -298,8 +329,25 @@ function publishedRecord(candidate, analysis, ai, now) {
     published_at: existing?.published_at || now,
     updated_at: now,
     topic: candidate.topic,
-    sources: candidate.sources,
-    claims: candidate.claims,
+    sources: candidate.sources.map(sourcePublicRecord),
+    claims: analysis.event_claims ? persistClaimEvidence(analysis, candidate, now) : candidate.claims,
+    event_id: candidate.event_id,
+    event_first_seen_at: candidate.event_first_seen_at,
+    event_detected_at: candidate.event_detected_at,
+    verification_started_at: candidate.verification_started_at || now,
+    publish_ready_at: now,
+    news_status: analysis.news_status || "preliminary",
+    deepening_due_at: analysis.publication_depth === "initial" ? nextDeepeningCheckpoint(now) : null,
+    evidence_groups: candidate.evidence_groups,
+    followups: [
+      ...(existing?.followups || []),
+      ...newFollowups.filter((followup) => !(existing?.followups || []).some((old) => old.claim === followup.claim && old.source_id === followup.source_id)).map(({ expected_by_evidence, ...followup }) => ({
+        ...followup, expected_by_evidence_hash: expected_by_evidence ? sha256(expected_by_evidence) : null, followup_id: `followup-${sha256(`${candidate.story_id}:${followup.claim}`).slice(0, 16)}`,
+        announced_at: candidate.sources.find((source) => source.source_id === followup.source_id)?.published_at || null,
+        follow_up_date: followup.expected_by ? new Date(Math.max(Date.parse(followup.expected_by), Date.parse(now) + 86400000)).toISOString() : new Date(Date.parse(now) + 7 * 86400000).toISOString(),
+        status: "scheduled",
+      })),
+    ],
     content_hash: candidate.content_hash,
     published: true,
     listed: true,
@@ -402,11 +450,16 @@ export async function runWirkungsticker(options = {}) {
   const runSchedule = scheduledSlot(nowDate);
   const isAutomatedRun = process.env.GITHUB_EVENT_NAME === "schedule"
     || (process.env.GITHUB_EVENT_NAME === "push" && process.env.GITHUB_REF === "refs/heads/codex/wirkungsticker-clock");
-  const registry = readJson(files.registry);
-  const state = readJson(files.state);
-  const storyStore = readJson(files.stories);
-  const usage = readJson(files.usage);
-  const enabledSources = registry.sources.filter((source) => source.enabled);
+  const registry = options.registry || loadNewsRegistry(ROOT);
+  const invalidRegistry = registryErrors(registry);
+  if (invalidRegistry.length) throw new Error(invalidRegistry.join(","));
+  const state = structuredClone(options.state || readJson(files.state));
+  const storyStore = structuredClone(options.storyStore || readJson(files.stories));
+  const usage = structuredClone(options.usage || readJson(files.usage));
+  const newsroom = options.newsroom || (fs.existsSync(files.newsroom) ? readJson(files.newsroom) : { schema_version: "1.0", source_items: {}, events: {}, event_sources: [], discovery_candidates: [] });
+  const enabledSources = registry.sources.filter((source) => source.enabled && sourceAccess(source).allowed);
+  const dueSources = enabledSources.filter((source) => sourceDue(source, state.source_status[source.source_id], now));
+  const previousSourceStatus = structuredClone(state.source_status);
   const report = {
     schema_version: "1.2",
     status: "running",
@@ -443,54 +496,66 @@ export async function runWirkungsticker(options = {}) {
     visuals_dropped: [],
     budget_stage: 0,
     completed_at: null,
+    sources_scheduled: dueSources.length,
+    sources_not_due: enabledSources.length - dueSources.length,
+    sources_not_modified: 0,
   };
 
-  const fetchResults = await mapLimit(enabledSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => {
+  const fetchResults = await mapLimit(dueSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => {
     const fetchResult = await fetchFeedWithRetry(
-      { ...source, max_items: registry.policy.max_items_per_source },
+      { ...datedSource(source, now), etag: state.source_status[source.source_id]?.etag, last_modified: state.source_status[source.source_id]?.last_modified, max_items: source.max_items || registry.policy.max_items_per_source },
       registry.policy,
       options.fetchFeedImpl || fetchFeed,
       { delayImpl: options.fetchRetryDelayImpl },
     );
     const { fetched } = fetchResult;
-    const items = parseFeed(fetched.body, { ...source, max_items: registry.policy.max_items_per_source });
+    const items = fetched.not_modified ? [] : parseFeed(fetched.body, { ...source, max_items: source.max_items || registry.policy.max_items_per_source }).map((item) => annotateSourceItem(item, source, now));
+    if (!source.allow_empty && !fetched.not_modified && !items.length && Number(state.source_status[source.source_id]?.items || 0) > 0) throw new Error("SOURCE_PARSER_DRIFT_OR_EMPTY_FEED");
     return { source, fetched, items, fetchAttempts: fetchResult.attempts };
   });
 
   const allItems = [];
   for (let index = 0; index < fetchResults.length; index += 1) {
     const result = fetchResults[index];
-    const source = enabledSources[index];
+    const source = dueSources[index];
+    const previousStatus = state.source_status[source.source_id] || {};
     if (result.status === "rejected") {
       const error = sanitizeError(result.reason);
       report.source_failures += 1;
       report.source_errors.push({ source_id: source.source_id, error });
-      state.source_status[source.source_id] = { last_error_at: now, last_error: error, last_success: state.source_status[source.source_id]?.last_success || null };
+      state.source_status[source.source_id] = { ...previousStatus, last_attempt: now, attempts: Number(previousStatus.attempts || 0) + 1, failures: Number(previousStatus.failures || 0) + 1, consecutive_failures: Number(previousStatus.consecutive_failures || 0) + 1, last_error_at: now, last_error: error, last_success: previousStatus.last_success || null };
       continue;
     }
     report.source_successes += 1;
+    if (result.value.fetched.not_modified) report.sources_not_modified += 1;
     report.source_retry_attempts += Math.max(0, Number(result.value.fetchAttempts || 1) - 1);
     report.feed_entries_fetched += result.value.items.length;
     allItems.push(...result.value.items);
     state.source_status[source.source_id] = {
+      ...previousStatus,
+      last_attempt: now,
+      attempts: Number(previousStatus.attempts || 0) + 1,
+      consecutive_failures: 0,
       last_success: now,
       last_error: null,
       feed_url: result.value.fetched.final_url,
-      items: result.value.items.length,
+      items: result.value.fetched.not_modified ? previousStatus.items : result.value.items.length,
+      latest_item: result.value.items.map((item) => item.published_at).filter(Boolean).sort().at(-1) || previousStatus.latest_item || null,
       etag: result.value.fetched.etag,
       last_modified: result.value.fetched.last_modified,
     };
   }
-  if (report.source_successes === 0) throw new Error("ALL_NEWS_SOURCES_FAILED");
+  if (dueSources.length && report.source_successes === 0) report.all_sources_failed = true;
 
   const lookbackMs = Number(registry.policy.bootstrap_lookback_hours || 36) * 60 * 60 * 1000;
   const backfillCutoff = nowDate.getTime() - RELEVANCE_BACKFILL_DAYS * 24 * 60 * 60 * 1000;
   const needsRelevanceBackfill = state.relevance_filter_version !== RELEVANCE_FILTER_VERSION;
   const futureToleranceMs = 10 * 60 * 1000;
-  const cutoff = state.last_successful_run ? Date.parse(state.last_successful_run) - 5 * 60 * 1000 : nowDate.getTime() - lookbackMs;
   const changedItems = [];
   const freshItemIds = new Set();
   for (const item of allItems) {
+    const sourceCursor = previousSourceStatus[item.source_id]?.last_success;
+    const cutoff = sourceCursor ? Date.parse(sourceCursor) - 5 * 60 * 1000 : nowDate.getTime() - lookbackMs;
     const previous = state.seen_items[item.item_id];
     const published = Date.parse(item.published_at || 0);
     if (published > nowDate.getTime() + futureToleranceMs) {
@@ -520,12 +585,18 @@ export async function runWirkungsticker(options = {}) {
       published_at: item.published_at,
       last_seen: now,
     };
+    const fingerprint = eventFingerprint(item);
+    newsroom.source_items[item.source_item_id] = { ...sourcePublicRecord(item), event_id: fingerprint.id, first_seen_at: newsroom.source_items[item.source_item_id]?.first_seen_at || now };
+    newsroom.events[fingerprint.id] = { ...fingerprint, event_detected_at: newsroom.events[fingerprint.id]?.event_detected_at || now };
   }
   const pruneBefore = nowDate.getTime() - 120 * 24 * 60 * 60 * 1000;
   for (const [id, record] of Object.entries(state.seen_items)) if (Date.parse(record.last_seen || 0) < pruneBefore) delete state.seen_items[id];
 
   const matchableStories = (storyStore.stories || [])
     .filter((story) => story.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE");
+  const scheduledFollowups = dueFollowups(matchableStories, now);
+  const dueFollowupIds = new Set(scheduledFollowups.map((followup) => followup.story_id));
+  const dueDeepeningIds = new Set(matchableStories.filter((story) => story.published && story.listed !== false && story.deepening_due_at && Date.parse(story.deepening_due_at) <= nowDate.getTime()).map((story) => story.story_id));
   const freshCandidates = clusterItems(changedItems, matchableStories, now)
     .map((cluster) => createCandidate(
       cluster,
@@ -538,12 +609,12 @@ export async function runWirkungsticker(options = {}) {
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
   const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
   const retryCandidates = (storyStore.stories || [])
-    .filter((story) => (!story.published || story.pending_update) && !freshIds.has(story.story_id))
+    .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
     .filter((story) => {
       const reason = story.pending_update?.reason || story.pending_reason;
       const qualityErrors = story.pending_update?.quality_errors || story.quality_errors || [];
       const retryCount = story.pending_update?.quality_retry_count ?? story.quality_retry_count ?? 0;
-      return retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount);
+      return dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id) || retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount);
     })
     .filter((story) => (story.pending_update?.sources || story.sources || []).some((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs))
     .map((story) => {
@@ -558,6 +629,12 @@ export async function runWirkungsticker(options = {}) {
         existing_story: story,
         reassessment: Boolean(story.pending_update?.reassessment || story.reassessment),
         fresh: Boolean(story.pending_update?.fresh || story.fresh),
+        event_id: story.event_id || eventFingerprint(sources[0] || {}).id,
+        event_first_seen_at: story.event_first_seen_at || story.first_seen,
+        event_detected_at: story.event_detected_at || story.first_seen,
+        followup_due: dueFollowupIds.has(story.story_id),
+        deepening_due: dueDeepeningIds.has(story.story_id),
+        evidence_groups: evidenceGroups(sources),
       };
       candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
       candidate.preanalysis = preAnalyzeStory(candidate);
@@ -566,19 +643,37 @@ export async function runWirkungsticker(options = {}) {
       return candidate;
     });
   const clusters = attachRelatedTickerHistory([...freshCandidates, ...retryCandidates], storyStore.stories);
+  for (const candidate of clusters) {
+    const alternativeItems = allItems.filter((item) => candidate.sources.some((source) => eventCompatibility(item, source).same_event));
+    candidate.sources = mergeSources(candidate.sources, alternativeItems);
+    candidate.claims = claimLedgerFor(candidate.sources, candidate.story_id, now);
+    candidate.evidence_groups = evidenceGroups(candidate.sources);
+    candidate.content_hash = storyContentHash(candidate);
+    candidate.currentness = { ...freshnessFor(candidate, now), checked_at: now, compared_current_feed_items: allItems.length, matching_current_feed_items: alternativeItems.length, followups_due: scheduledFollowups.filter((followup) => followup.story_id === candidate.story_id) };
+    candidate.attention_impact_gap = candidate.preanalysis.internal_relevance_score >= 48 && candidate.evidence_groups.possible_independent_origins <= 2
+      ? { status: "possible_gap_in_observed_sources", observed_origins: candidate.evidence_groups.possible_independent_origins, note: "Geringe beobachtete Quellenbreite, keine Aussage über die gesamte Medienaufmerksamkeit." } : null;
+    const event = newsroom.events[candidate.event_id] || { ...eventFingerprint(candidate.sources[0]), id: candidate.event_id, event_detected_at: candidate.event_detected_at };
+    newsroom.events[candidate.event_id] = { ...event, story_id: candidate.story_id, relevance: candidate.preanalysis, attention_impact_gap: candidate.attention_impact_gap };
+    for (const source of candidate.sources) if (source.source_item_id && newsroom.source_items[source.source_item_id]) newsroom.source_items[source.source_item_id].event_id = candidate.event_id;
+  }
   report.story_clusters = freshCandidates.length;
   report.pending_stories_retried = retryCandidates.length;
   const month = now.slice(0, 7);
-  const budget = Number(process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_USD || 5);
+  state.budget_fx = options.budgetFx || await refreshBudgetFx(state.budget_fx, now, options.fetchFxImpl || fetch);
+  const budgetPolicy = newsBudget(state.budget_fx, now, Number(process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR || 25));
+  const budget = Math.min(budgetPolicy.technical_limit_usd, Number(process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_USD || Infinity));
+  report.budget_policy = budgetPolicy;
   const spendBefore = monthlyUsage(usage, month);
   const stage = budgetStage(spendBefore, budget);
   report.budget_stage = stage.stage;
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
   const eligible = clusters
-    .filter((candidate) => (candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30) && candidate.sources.some((source) => source.primary_source))
+    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30)
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   report.locally_rejected = clusters.length - eligible.length;
+  newsroom.decisions ||= [];
+  for (const candidate of clusters.filter((candidate) => !eligible.includes(candidate))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
   const configuredMaxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
   const maxAiCallsPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
   const aiCallsInLastHour = aiRequestsInWindow(usage, now);
@@ -605,15 +700,23 @@ export async function runWirkungsticker(options = {}) {
     const sourceRegistryById = new Map(enabledSources.map((source) => [source.source_id, source]));
     for (let offset = 0; offset < selected.length; offset += aiBatchSize) {
       const batch = selected.slice(offset, offset + aiBatchSize);
+      if (spendBefore + report.estimated_cost_usd + NEWS_REQUEST_RESERVATION_USD > budget) {
+        for (const candidate of selected.slice(offset)) {
+          byId.set(candidate.story_id, pendingRecord(candidate, "AI_BUDGET_BLOCKED", now));
+          report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_BUDGET_BLOCKED" });
+        }
+        break;
+      }
       try {
         if (offset > 0) await (options.aiBatchDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(
           Number(process.env.WOEK_NEWS_AI_BATCH_DELAY_MS || 2500),
         );
         const analysisBatch = await Promise.all(batch.map(async (candidate) => {
+          candidate.verification_started_at = options.now ? now : new Date().toISOString();
           let articleSources = 0;
           const sources = await Promise.all(candidate.sources.map(async (source) => {
             const registrySource = sourceRegistryById.get(source.source_id);
-            if (!source.primary_source || !registrySource || articleSources >= 2) return source;
+            if (!registrySource || !sourceAccess(registrySource, "article").allowed || articleSources >= 3) return source;
             articleSources += 1;
             try {
               const result = await (options.fetchArticleImpl || fetchArticleExcerpt)(source, registrySource, registry.policy);
@@ -624,10 +727,12 @@ export async function runWirkungsticker(options = {}) {
               return source;
             }
           }));
-          return { ...candidate, sources };
+          const currentness = { ...candidate.currentness, ...freshnessFor(candidate, now) };
+          return { ...candidate, sources, currentness };
         }));
         const aiResult = await (options.callAiImpl || callWoekAi)(analysisBatch, {
           apiUrl: process.env.WOEK_NEWS_API_URL,
+          authToken: process.env.WOEK_NEWS_ANALYSIS_TOKEN,
           timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
           attempts: Number(process.env.WOEK_NEWS_AI_ATTEMPTS_PER_STORY || 1),
         });
@@ -635,10 +740,7 @@ export async function runWirkungsticker(options = {}) {
         report.model ||= aiResult.model;
         report.ai_calls += Number(aiResult.request_attempts || 1);
         report.ai_batches_completed += 1;
-        const estimated = estimateUsage(aiResult.prompt_chars, aiResult.answer_chars, aiResult.model, {
-          inputUsdPerMillion: Number(process.env.WOEK_NEWS_INPUT_USD_PER_MILLION || 5),
-          outputUsdPerMillion: Number(process.env.WOEK_NEWS_OUTPUT_USD_PER_MILLION || 30),
-        });
+        const estimated = costFromUsage(aiResult, estimateUsage(aiResult.prompt_chars, aiResult.answer_chars, aiResult.model, modelRates(aiResult.model)));
         report.input_tokens += estimated.input_tokens;
         report.output_tokens += estimated.output_tokens;
         report.estimated_cost_usd = Number((report.estimated_cost_usd + estimated.estimated_cost_usd).toFixed(6));
@@ -648,8 +750,22 @@ export async function runWirkungsticker(options = {}) {
           const analysis = analyses.get(candidate.story_id);
           const analysisCandidate = analysisBatch.find((item) => item.story_id === candidate.story_id) || candidate;
           if (analysis) sanitizeAnalysisVisuals(analysis, analysisCandidate, report);
+          if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
+            if (candidate.existing_story?.published && !candidate.reassessment && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
+              const { pending_update: _pendingUpdate, ...preserved } = candidate.existing_story;
+              if (candidate.deepening_due) {
+                preserved.deepening_checks = Number(preserved.deepening_checks || 0) + 1;
+                // No repeated paid rewording of unchanged evidence. Three scheduled
+                // attempts, then new source arrivals can reactivate the same case.
+                preserved.deepening_due_at = preserved.deepening_checks < 3 ? nextDeepeningCheckpoint(now) : null;
+              }
+              byId.set(candidate.story_id, { ...preserved, followups: (preserved.followups || []).map((followup) => dueFollowupIds.has(candidate.story_id) ? { ...followup, last_checked_at: now, last_check_result: "no_verified_material_update", follow_up_date: new Date(Date.parse(now) + 7 * 86400000).toISOString() } : followup) });
+              report.quality_holds.push({ story_id: candidate.story_id, reason: "NO_VERIFIED_MATERIAL_UPDATE", errors });
+              continue;
+            }
             if (shouldRetireAfterReassessment(candidate, errors)) {
               byId.set(candidate.story_id, retiredRecord(candidate, now, errors));
               report.retired_stories += 1;
@@ -662,13 +778,15 @@ export async function runWirkungsticker(options = {}) {
           }
           const wasPublished = Boolean(candidate.existing_story?.published);
           const wasListed = candidate.existing_story?.listed !== false;
-          byId.set(candidate.story_id, publishedRecord(candidate, analysis, aiResult, now));
+          byId.set(candidate.story_id, publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString()));
           report.published_stories += wasPublished ? 0 : 1;
           report.updated_stories += wasPublished ? 1 : 0;
           report.reactivated_stories += wasPublished && !wasListed ? 1 : 0;
         }
       } catch (error) {
         report.ai_calls += Number(error?.requestAttempts || 1);
+        report.estimated_cost_usd = Number((report.estimated_cost_usd + NEWS_REQUEST_RESERVATION_USD * Number(error?.requestAttempts || 1)).toFixed(6));
+        report.token_source = "includes_conservative_failed_request_reservations";
         const reason = sanitizeError(error);
         report.ai_error = reason;
         report.failed_batch_offset = offset;
@@ -703,7 +821,6 @@ export async function runWirkungsticker(options = {}) {
     report.reactivated_stories,
   ].some((count) => Number(count || 0) > 0);
   state.last_attempted_run = now;
-  if (report.status === "ok") state.last_successful_run = now;
   state.relevance_filter_version = RELEVANCE_FILTER_VERSION;
   for (const [storyId, story] of byId) {
     if (story.published || story.listed === false) continue;
@@ -718,6 +835,17 @@ export async function runWirkungsticker(options = {}) {
   }
   state.pending_story_ids = [...byId.values()].filter((story) => (!story.published && story.listed !== false) || story.pending_update).map((story) => story.story_id);
   report.pending_story_count = state.pending_story_ids.length;
+  report.source_health = registry.sources.map((source) => sourceHealth(source, state, now));
+  if (report.source_health.some((source) => ["disturbed", "stale"].includes(source.status))) report.status = "degraded";
+  if (report.status === "ok") state.last_successful_run = now;
+  report.coverage = coverageReport(enabledSources, [...byId.values()]);
+  report.freshness = [...byId.values()].filter((story) => story.listed !== false).map((story) => ({ story_id: story.story_id, published: Boolean(story.published), ...freshnessFor(story, now) }));
+  report.freshness_warnings = report.freshness.filter((story) => story.freshness_warning);
+  report.followups_due = dueFollowups([...byId.values()], now);
+  newsroom.updated_at = now;
+  newsroom.decisions = newsroom.decisions.filter((decision) => Date.parse(decision.at) >= pruneBefore).slice(-20000);
+  newsroom.event_sources = Object.values(newsroom.source_items).map((item) => ({ event_id: item.event_id, source_item_id: item.source_item_id, source_id: item.source_id, role: item.source_role }));
+  newsroom.discovery_candidates = [...new Map([...newsroom.discovery_candidates, ...discoveryCandidates(allItems, enabledSources, now)].map((candidate) => [candidate.id, candidate])).values()];
   storyStore.updated_at = now;
   storyStore.stories = [...byId.values()].sort((a, b) => Date.parse(b.last_updated || 0) - Date.parse(a.last_updated || 0));
   const latestPublishedChange = storyStore.stories
@@ -759,8 +887,10 @@ export async function runWirkungsticker(options = {}) {
     writeJson(files.stories, storyStore);
     writeJson(files.usage, usage);
     writeJson(files.report, report);
+    writeJson(files.newsroom, newsroom);
     buildNewsSite();
   }
+  options.captureState?.({ state, storyStore, usage, newsroom });
   return report;
 }
 

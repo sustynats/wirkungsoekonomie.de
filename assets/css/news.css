@@ -1887,12 +1887,14 @@
   }
 
   .wt-dims--compact .wt-dim {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
+    /* An auto track has no intrinsic width for the percentage-sized meter.
+       Put every mobile meter below its label, including non-lead cards. */
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
   }
 
   .wt-dims--compact .wt-dim__track {
-    max-width: 5.5rem;
+    max-width: 11rem;
   }
 
   .wt-track__label {
