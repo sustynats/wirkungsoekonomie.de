@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { sourceDue, annotateSourceItem, evidenceGroups, eventCompatibility, freshnessFor, sourceHealth, dueFollowups, validateNewsroomAnalysis, normalizeEvidenceExcerpts, nextDeepeningCheckpoint } from "../../scripts/news/newsroom.mjs";
+import { sourceDue, annotateSourceItem, evidenceGroups, eventCompatibility, freshnessFor, sourceHealth, dueFollowups, validateNewsroomAnalysis, normalizeEvidenceExcerpts, nextDeepeningCheckpoint, sourceEvidenceSegments, resolveEvidenceReferences } from "../../scripts/news/newsroom.mjs";
 import { newsBudget, costFromUsage, refreshBudgetFx } from "../../scripts/news/budget.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex, datedSource } from "../../scripts/news/source-adapters.mjs";
 import { runWirkungsticker } from "../../scripts/news/run.mjs";
@@ -69,6 +69,21 @@ test("long exact evidence is split without inventing text or weakening the sourc
   assert.ok(a.event_claims[0].evidence.length > 1);
   assert.equal(a.event_claims[0].evidence.map((entry) => entry.excerpt).join(" "), long);
   assert.deepEqual(validateNewsroomAnalysis(a, { sources: [{ ...item, article_excerpt: long }] }), []);
+});
+test("evidence IDs resolve only known exact source passages and only downgrade unsupported certainty", () => {
+  const media = { ...item, primary_source: false };
+  const segments = sourceEvidenceSegments(media);
+  const a = structuredClone(analysis);
+  a.news_status = "confirmed";
+  a.event_claims[0].evidence = [{ evidence_id: segments[1].evidence_id }];
+  resolveEvidenceReferences(a, { sources: [media] });
+  assert.equal(a.event_claims[0].evidence[0].excerpt, item.summary);
+  assert.equal(a.event_claims[0].status, "single_source_claim");
+  assert.equal(a.news_status, "preliminary");
+  assert.deepEqual(validateNewsroomAnalysis(a, { sources: [media] }), []);
+  a.event_claims[0].evidence = [{ evidence_id: "ev-invented" }];
+  resolveEvidenceReferences(a, { sources: [media] });
+  assert.ok(validateNewsroomAnalysis(a, { sources: [media] }).includes("CLAIM_EVIDENCE_NOT_IN_SOURCE"));
 });
 test("deepening uses the next Berlin checkpoint, never delays first publication", () => {
   assert.equal(nextDeepeningCheckpoint("2026-09-03T12:01:00Z"), "2026-09-03T14:00:00.000Z");

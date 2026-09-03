@@ -214,6 +214,36 @@ export function validateNewsroomAnalysis(analysis, story) {
   return [...new Set(errors)];
 }
 
+export function sourceEvidenceSegments(source) {
+  const passages = [String(source.title || "").slice(0, 220), String(source.summary || "").slice(0, 720), String(source.article_excerpt || "").slice(0, 5000)];
+  const excerpts = [];
+  for (const passage of passages) {
+    let remaining = passage.replace(/\s+/g, " ").trim();
+    while (remaining.length > 240) {
+      const boundary = remaining.lastIndexOf(" ", 220);
+      const end = boundary >= 12 ? boundary : 220;
+      excerpts.push(remaining.slice(0, end));
+      remaining = remaining.slice(end).trim();
+    }
+    if (remaining.length >= 12) excerpts.push(remaining);
+  }
+  return [...new Set(excerpts)].map((excerpt) => ({ evidence_id: `ev-${hash(`${source.source_id}:${source.url}:${excerpt}`)}`, excerpt }));
+}
+
+export function resolveEvidenceReferences(analysis, story) {
+  const catalog = new Map(story.sources.flatMap((source) => sourceEvidenceSegments(source).map(({ evidence_id, excerpt }) => [evidence_id, { source_id: source.source_id, url: source.url, excerpt }])));
+  for (const claim of analysis?.event_claims || []) {
+    if (!Array.isArray(claim.evidence)) continue;
+    claim.evidence = claim.evidence.map((proof) => proof && Object.keys(proof).every((key) => key === "evidence_id") && catalog.has(proof.evidence_id) ? { ...catalog.get(proof.evidence_id) } : proof);
+    // Conservatively reduce overclaimed source roles, never manufacture evidence.
+    const cited = claim.evidence.map((proof) => story.sources.find((source) => source.source_id === proof?.source_id && source.url === proof?.url)).filter(Boolean);
+    if (claim.status === "primary_source_claim" && cited.length && !cited.some((source) => source.primary_source)) claim.status = "single_source_claim";
+  }
+  if (analysis?.news_status === "confirmed" && analysis.event_claims?.some((claim) => ["single_source_claim", "uncertain_claim", "disputed_claim"].includes(claim.status))) analysis.news_status = analysis.event_claims.some((claim) => claim.status === "disputed_claim") ? "disputed" : "preliminary";
+  if (analysis?.publication_depth === "initial" && !analysis.transformation_potential?.trim()) analysis.transformation_potential = "Aus den verfügbaren Quellen noch nicht ableitbar.";
+  return analysis;
+}
+
 export function normalizeEvidenceExcerpts(analysis, story) {
   for (const claim of analysis?.event_claims || []) {
     if (!Array.isArray(claim.evidence)) continue;

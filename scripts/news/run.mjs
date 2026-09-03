@@ -22,7 +22,7 @@ import { buildNewsSite } from "./build.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { sourceAccess } from "./access-policy.mjs";
-import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts } from "./newsroom.mjs";
+import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences } from "./newsroom.mjs";
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 
@@ -751,6 +751,7 @@ export async function runWirkungsticker(options = {}) {
           const analysis = analyses.get(candidate.story_id);
           const analysisCandidate = analysisBatch.find((item) => item.story_id === candidate.story_id) || candidate;
           if (analysis) sanitizeAnalysisVisuals(analysis, analysisCandidate, report);
+          if (analysis) resolveEvidenceReferences(analysis, analysisCandidate);
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
           newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });

@@ -3,7 +3,7 @@ import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, mustRespectRobots } from "./access-policy.mjs";
-import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis } from "./newsroom.mjs";
+import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, sourceEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 
 const STOPWORDS = new Set([
@@ -674,7 +674,7 @@ export function buildAnalysisPrompt(stories) {
       publisher: source.publisher,
       title: cleanForPrompt(source.title, 220),
       abstract: cleanForPrompt(source.summary, 720),
-      article_excerpt: cleanForPrompt(source.article_excerpt, 5000),
+      evidence_segments: sourceEvidenceSegments(source),
       published_at: source.published_at,
       primary_source: source.primary_source,
       role: source.source_role || (source.primary_source ? "institutional_statement" : "journalistic_report"),
@@ -712,6 +712,7 @@ export function buildAnalysisPrompt(stories) {
     "Die wirkungsökonomische Einordnung beginnt erst in den übrigen Feldern. Antworte dort zweistufig: summary genau 2 kurze Sätze und höchstens 360 Zeichen für die Übersicht; detail_summary 5 bis 7 gehaltvolle Sätze mit 500 bis 1200 Zeichen für die Detailseite. Die Detailfassung nennt den gesicherten Sachverhalt, Relevanz, Wirkpfad, mindestens eine mögliche Folge und die Evidenzgrenze. Jede andere Zeichenkette höchstens 220 Zeichen; jedes Array genau 1 kurzer Eintrag (höchstens 180 Zeichen); einschließlich optionaler Visuals insgesamt höchstens 6300 Zeichen je Analyse.",
     "Wiederhole in Analysefeldern keine URLs, technischen Quellen-IDs oder Dokumentnummern. Übernimm materielle Zahlen nur, wenn sie im Claim oder Quellentext stehen, und behalte ihre Schreibweise bei (Zahlwort bleibt Zahlwort). Keine Einleitung und keine Wiederholung des Schemas.",
     "Ausnahme für interne Belegfelder: event_claims.evidence und followups.source_id müssen die exakten gelieferten IDs und URLs enthalten. Sie gehören nicht in den journalistischen Fließtext. Rechne diese Belegfelder nicht in das Zeichenbudget der Lesertexte ein.",
+    "Verbindliches Belegformat: Quellen enthalten evidence_segments mit unveränderlichem evidence_id und excerpt. In event_claims.evidence gib ausschließlich {evidence_id:...} mit einer tatsächlich gelieferten ID aus. Kein Zitat abschreiben, keine URLs oder IDs erfinden. Bei Bedarf mehrere Textstellen-IDs auswählen, die zusammen die konkrete Behauptung tragen. Der Server löst sie vor der Prüfung exakt auf. evidence_segments ersetzen article_excerpt als bereitgestellten Quellentext. Sämtliche Lesertexte einschließlich event_claims.claim auf Deutsch; fremdsprachige Originalbelege nicht übersetzen.",
     ...VISUALS_PROMPT_RULES,
     "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar.",
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
@@ -720,7 +721,7 @@ export function buildAnalysisPrompt(stories) {
         story_id: "string",
         news_status: "developing|preliminary|confirmed|disputed|corrected|updated",
         publication_depth: "initial|deepened",
-        event_claims: [{ claim: "zentrale Tatsachenbehauptung, eigene Formulierung", status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ source_id: "exakte ID aus input", url: "exakte Quellen-URL aus input", excerpt: "kurzer unveränderter Belegausschnitt aus input" }] }],
+        event_claims: [{ claim: "zentrale Tatsachenbehauptung, eigene deutsche Formulierung", status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "exakte ID einer passenden evidence_segments-Textstelle" }] }],
         followups: [{ claim: "nachprüfbare Zusage oder Prognose", source_id: "exakte Quellen-ID", expected_by: null, expected_by_evidence: "Nur bei expected_by: exakter kurzer Belegausschnitt zur Frist, sonst null", measurable_indicator: "Was müsste künftig beobachtet werden?" }],
         source_summary: "neutrale Zusammenfassung der Originalquelle(n), 100 bis 180 Wörter, 2 bis 3 kurze Absätze, ohne WÖk-Bewertung",
         summary: "genau 2 eigene, kurze Sätze",
