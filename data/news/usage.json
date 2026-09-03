@@ -795,6 +795,25 @@
       },
       "source_failures": 0,
       "quality_holds": 16
+    },
+    {
+      "run_id": "news-run-30236b1511ac",
+      "started_at": "2026-09-03T21:52:44.474Z",
+      "completed_at": "2026-09-03T21:52:49.448Z",
+      "berlin_slot": "Automatischer Lauf 23:00",
+      "counts": {
+        "feed_entries_fetched": 261,
+        "feed_entries_new": 7,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 88,
+        "story_clusters": 15,
+        "locally_rejected": 9,
+        "ai_stories": 0,
+        "published_stories": 0
+      },
+      "ai": null,
+      "source_failures": 0,
+      "quality_holds": 20
     }
   ]
 }

@@ -1,119 +1,129 @@
 {
   "schema_version": "1.2",
   "status": "ok",
-  "started_at": "2026-09-03T21:38:11.681Z",
+  "started_at": "2026-09-03T21:52:44.474Z",
   "berlin_slot": "Automatischer Lauf 23:00",
   "feed_entries_fetched": 261,
-  "feed_entries_new": 0,
-  "feed_entries_updated": 0,
+  "feed_entries_new": 7,
+  "feed_entries_updated": 11,
   "feed_entries_backfilled": 0,
   "feed_entries_deduplicated": 88,
-  "feed_entries_future_dated": 20,
-  "story_clusters": 0,
-  "locally_rejected": 0,
-  "ai_stories": 1,
-  "ai_calls": 1,
-  "ai_batches_planned": 1,
-  "ai_batches_completed": 1,
+  "feed_entries_future_dated": 2,
+  "story_clusters": 15,
+  "locally_rejected": 9,
+  "ai_stories": 0,
+  "ai_calls": 0,
+  "ai_batches_planned": 0,
+  "ai_batches_completed": 0,
   "published_stories": 0,
   "updated_stories": 0,
   "retired_stories": 0,
   "reactivated_stories": 0,
-  "provider": "Oracle WOeK-KI API Cache",
-  "model": "gpt-5.5",
-  "input_tokens": 4075,
-  "output_tokens": 1643,
-  "estimated_cost_usd": 0.069665,
+  "provider": null,
+  "model": null,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost_usd": 0,
   "source_successes": 16,
   "source_failures": 0,
   "source_retry_attempts": 0,
   "source_errors": [],
   "quality_holds": [
     {
+      "story_id": "wt-86b564d829882859",
+      "reason": "AI_HOURLY_CALL_LIMIT"
+    },
+    {
+      "story_id": "wt-4ac22d8ae5a4a201",
+      "reason": "AI_HOURLY_CALL_LIMIT"
+    },
+    {
+      "story_id": "wt-626f37857be657a9",
+      "reason": "AI_HOURLY_CALL_LIMIT"
+    },
+    {
+      "story_id": "wt-14f473760a419877",
+      "reason": "AI_HOURLY_CALL_LIMIT"
+    },
+    {
+      "story_id": "wt-9f67ea847179e943",
+      "reason": "AI_HOURLY_CALL_LIMIT"
+    },
+    {
+      "story_id": "wt-814b7e6990a3d0cf",
+      "reason": "AI_HOURLY_CALL_LIMIT"
+    },
+    {
       "story_id": "wt-e28250d4074683af",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-465bbe1a9e2b1911",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-7e01f9f729faff83",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-3c8762489a80692b",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-b891f102e908a573",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-c15cb7a9f3b72c35",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-63b6c057c20a2143",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-acae834e3431b203",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-9e4c93f4907aaa42",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-293fa4edfc2b5a5d",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-ab0d79d228a04a51",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-0e1ab5081b9f4045",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "AI_HOURLY_CALL_LIMIT"
     },
     {
       "story_id": "wt-a48a6799c362009d",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-9d87c7944980e87e",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_PUBLICATION_GATE_FACTORS_INVALID",
-        "AI_MATERIALITY_GATE_FAILED",
-        "AI_UNSUPPORTED_NUMBER:01"
-      ]
+      "reason": "AI_HOURLY_CALL_LIMIT"
     }
   ],
-  "article_excerpts_fetched": 1,
+  "article_excerpts_fetched": 0,
   "article_excerpt_failures": 0,
   "visuals_dropped": [],
   "budget_stage": 0,
-  "completed_at": "2026-09-03T21:38:39.202Z",
-  "pending_stories_retried": 16,
-  "monthly_spend_before_usd": 2.64583,
+  "completed_at": "2026-09-03T21:52:49.448Z",
+  "pending_stories_retried": 14,
+  "monthly_spend_before_usd": 2.715495,
   "monthly_budget_usd": 5,
   "ai_hourly_limit": 4,
-  "ai_calls_in_last_hour": 3,
-  "ai_calls_available_this_run": 1,
+  "ai_calls_in_last_hour": 4,
+  "ai_calls_available_this_run": 0,
   "ai_batch_size": 1,
-  "token_source": "conservative_character_estimate",
-  "latest_source_timestamp": "2026-09-03T16:00:00.000Z",
+  "latest_source_timestamp": "2026-09-03T22:01:00.000Z",
   "ai_calls_remaining_this_hour": 0,
   "public_changed": false,
-  "pending_story_count": 25
+  "pending_story_count": 27
 }
