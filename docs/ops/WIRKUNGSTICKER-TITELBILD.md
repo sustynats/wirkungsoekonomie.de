@@ -4,7 +4,7 @@ Ein gemeinsames WÖk-Designsystem für Titel- und Share-Bilder des Wirkungsticke
 
 Leitidee: **Nachricht verstehen → Fakten prüfen → Wirkung einordnen.** Kein Boulevard, keine Alarmoptik, keine Kampagnenkommunikation. Editorial Symbolbild = visuelle Übersetzung des Themas; Wirkungskarte = visuelle Übersetzung der Analyse.
 
-Dieser Schritt umfasst ausschließlich Designsystem, Rendering, Vorschauen und Dokumentation. Nicht enthalten und ausdrücklich noch nicht aktiv: Higgsfield-Anbindung, Bildprompts, automatische Moduswahl, Änderungen an Pipeline, Cronjobs oder bestehenden Meldungen.
+Der ursprüngliche Designschritt umfasst Designsystem, Rendering, Vorschauen und Dokumentation. Seit dem Folgepaket vom 4. September ist die automatische Pipeline ergänzt: siehe [Betrieb, Backfill und Authentifizierungsgrenzen](WIRKUNGSTICKER-TITELBILD-PIPELINE.md). Die nachstehenden Entwurfsangaben bleiben als Designvertrag erhalten.
 
 ## Speicherort und Entry Point
 

@@ -223,6 +223,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     slug: candidate.slug,
     title: candidate.title,
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
+    ...(existing?.corrections ? { corrections: existing.corrections } : {}),
     first_seen: candidate.first_seen,
     last_updated: candidate.last_updated,
     topic: candidate.topic,
@@ -355,6 +356,7 @@ function publishedRecord(candidate, analysis, ai, now) {
     content_hash: candidate.content_hash,
     published: true,
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
+    ...(existing?.corrections ? { corrections: existing.corrections } : {}),
     listed: true,
     analysis_status: "veröffentlicht",
     relevance_filter_version: RELEVANCE_FILTER_VERSION,
@@ -613,7 +615,7 @@ export async function runWirkungsticker(options = {}) {
       cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
+  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
     .filter((story) => {

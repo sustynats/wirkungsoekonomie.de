@@ -10,6 +10,7 @@ import { checkHiggsfieldAvailability, createHiggsfieldAdapter, parseCliJson, gen
 import { createTitleImagePipeline, publicTitleImage } from "../../scripts/news/title-image/pipeline.mjs";
 import { renderTitleImageFromStory } from "../../scripts/news/title-image/index.mjs";
 import { checkEditorialAsset, detectedWords } from "../../scripts/news/title-image/quality.mjs";
+import { backfillTitleImages } from "../../scripts/news/title-image/backfill.mjs";
 
 const STORY = { story_id: "wt-1234567890abcdef", title: "Neue Netzinfrastruktur", source_summary: "Die Netzagentur berichtet über ein neues Verfahren für den Ausbau der Stromnetze. Die vorgesehene Regelung betrifft die Planung und Genehmigung zusätzlicher Stromleitungen.", topic: ["Energie"], claims: [], analysis: { status: "Entwurf", analysis_type: "ex_ante", human: { relevance: "mittel" } } };
 const MODEL = { type: "image", job_type: C.model, display_name: C.model_name, params: [{ name: "aspect_ratio", enum: ["16:9"] }, { name: "resolution", enum: ["2k"] }] };
@@ -133,7 +134,7 @@ test("web-wide variant preserves semantic HTML headline without repeating title 
 });
 test("public image metadata excludes prompts, credentials, private paths and arbitrary URLs",()=>{
   const result=publicTitleImage({mode:"editorial",prompt:"secret",source_visual:{file:"/private/secret"},og:{url:"https://evil.example/x"}});
-  assert.deepEqual(Object.keys(result).sort(),["label","mode"]);
+  assert.equal(result,null);
 });
 test("OCR rejects generated labels and cannot silently pass without its checker",async()=>{
   const header="level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n";
@@ -179,4 +180,14 @@ test("editorial raster failure restarts all sizes as a coherent card",async(t)=>
   const prepare=worker(t,{raster:async(_svg,{width,height})=>{if(!renders++)throw new Error("render");return {png:png(width,height)};}});
   const result=await prepare(STORY);
   assert.equal(result.title_image.mode,"impact_card"); assert.equal(renders,4);assert.ok(result.title_image.source_visual);
+});
+test("approved backfill persists only its bounded snapshot before the runtime deadline",async(t)=>{
+  const root=temp(t);fs.mkdirSync(path.join(root,"data/news"),{recursive:true});fs.mkdirSync(path.join(root,"reports"));
+  const stories=[0,1,2].map(n=>({...STORY,story_id:`wt-1234567890abcde${n}`,published:true}));
+  const file=path.join(root,"data/news/stories.json");fs.writeFileSync(file,JSON.stringify({stories}));
+  fs.writeFileSync(path.join(root,"reports/wirkungsticker-latest-run.json"),"{}");
+  const result=await backfillTitleImages({root,limit:2,dryRun:false,maxDurationMs:0,prepare:()=>assert.fail("deadline must prevent work"),build:()=>{}});
+  const saved=JSON.parse(fs.readFileSync(file));assert.equal(result.selected,0);
+  assert.ok(saved.stories[0].title_image.retry_after);assert.ok(saved.stories[1].title_image.retry_after);assert.equal(saved.stories[2].title_image,undefined);
+  assert.equal(publicTitleImage(saved.stories[0].title_image),null);
 });

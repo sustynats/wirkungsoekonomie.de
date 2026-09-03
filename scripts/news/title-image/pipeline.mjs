@@ -24,7 +24,7 @@ export function publicTitleImage(value) {
     const file = value[key];
     if (file && typeof file.url === "string" && (file.url === FALLBACK || /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}\/wt-[a-f0-9]{16}-[a-f0-9]{16}-(?:og|wide|square)\.png$/.test(file.url))) result[key] = { url: file.url, width: SIZES[key].width, height: SIZES[key].height };
   }
-  return result;
+  return ["og", "wide", "square"].some(key => result[key]) ? result : null;
 }
 export function titleFingerprint(story, mode, sourceHash = null) {
   const input = storyToTitleInput(story, { mode, image: null });
@@ -70,7 +70,7 @@ export function createReleaseStore({ run = async (args) => (await exec("gh", arg
       if (old) {
         const expected = digest(fs.readFileSync(file));
         if (old.size !== fs.statSync(file).size) throw imageError("IMAGE_IMMUTABLE_ASSET_CONFLICT");
-        const actual = old.digest?.replace(/^sha256:/, "") || (await download(assetUrl(tag, path.basename(file)))).sha256;
+        const actual = old.digest?.replace(/^sha256:/, "") || (await download(assetUrl(tag, path.basename(file)), { minWidth: 1080 })).sha256;
         if (actual !== expected) throw imageError("IMAGE_IMMUTABLE_ASSET_CONFLICT");
         continue;
       }

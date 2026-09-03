@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { createTitleImagePipeline, publicTitleImage } from "./pipeline.mjs";
 import { buildNewsSite } from "../build.mjs";
 
-export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, prepare = null, maxDurationMs = 240000 } = {}) {
+export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, prepare = null, maxDurationMs = 240000, build = buildNewsSite } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 100) throw new Error("TITLE_IMAGE_LIMIT_INVALID");
   const file = path.join(root, "data/news/stories.json");
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
@@ -13,8 +13,17 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
   const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (renderOnly ? story.title_image : !story.title_image?.wide || story.title_image.retry_after));
   const worker = prepare || createTitleImagePipeline({ root, allowGeneration: !renderOnly, maxGenerations: limit });
   const results = []; let changed = 0;
+  const selected = candidates.slice(0, limit);
+  if (!dryRun && !renderOnly) {
+    // The user-approved snapshot survives the runner and the workstation. If
+    // this bounded batch stops, normal server-triggered runs finish one queued
+    // image at a time; no recurring paid all-history backfill is introduced.
+    const queuedAt = new Date().toISOString();
+    for (const story of selected) story.title_image = { ...story.title_image, retry_after: story.title_image?.retry_after || queuedAt };
+    fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
+  }
   const deadline = Date.now() + maxDurationMs;
-  for (const story of candidates.slice(0, limit)) {
+  for (const story of selected) {
     if (!dryRun && Date.now() >= deadline) break;
     const result = await worker(story, { dryRun, cardsOnly });
     if (dryRun) { results.push(result); continue; }
@@ -31,7 +40,7 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
     report.title_images_changed = (report.title_images_changed || 0) + changed;
     report.public_changed ||= changed > 0;
     fs.writeFileSync(reportFile, `${JSON.stringify(report, null, 2)}\n`);
-    buildNewsSite();
+    build();
   }
   return { dry_run: dryRun, candidates: candidates.length, selected: results.length, changed, results };
 }

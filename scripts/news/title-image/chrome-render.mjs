@@ -1,0 +1,60 @@
+// Screenshot our own generated SVG via the documented Chrome DevTools Protocol.
+// No npm dependency, no browser profile/session reuse, no external navigation.
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { spawn } from "node:child_process";
+import { once } from "node:events";
+
+export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), "wt-title-cdp-"));
+  let child, socket, timer;
+  const pending = new Map(); let sequence = 0;
+  try {
+    const png = await Promise.race([
+      new Promise((_, reject) => { timer = setTimeout(() => reject(new Error("CHROME_RENDER_TIMEOUT")), 30000); }),
+      (async () => {
+        child = spawn(chrome, ["--headless=new", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${directory}`, "--no-first-run", "--no-default-browser-check", "--disable-background-networking", "--disable-component-update", "--disable-dev-shm-usage", "--password-store=basic", "--use-mock-keychain", ...(process.env.WT_CHROME_NO_SANDBOX === "true" ? ["--no-sandbox"] : []), "about:blank"], { stdio: ["ignore", "ignore", "pipe"] });
+        const endpoint = await new Promise((resolve, reject) => {
+          let output = "";
+          child.on("error", reject); child.on("exit", () => reject(new Error("CHROME_EXITED")));
+          child.stderr.on("data", (data) => {
+            output = (output + data.toString()).slice(-8000);
+            const match = output.match(/DevTools listening on (ws:\/\/127\.0\.0\.1:\d+\/devtools\/browser\/[^\s]+)/);
+            if (match) resolve(match[1]);
+          });
+        });
+        socket = new WebSocket(endpoint);
+        await new Promise((resolve, reject) => { socket.addEventListener("open", resolve, { once: true }); socket.addEventListener("error", reject, { once: true }); });
+        socket.addEventListener("message", (event) => {
+          const result = JSON.parse(event.data);
+          if (!pending.has(result.id)) return;
+          const { resolve, reject } = pending.get(result.id); pending.delete(result.id);
+          result.error ? reject(new Error("CHROME_PROTOCOL_ERROR")) : resolve(result.result);
+        });
+        const send = (method, params = {}, sessionId) => new Promise((resolve, reject) => {
+          const id = ++sequence; pending.set(id, { resolve, reject }); socket.send(JSON.stringify({ id, method, params, ...(sessionId ? { sessionId } : {}) }));
+        });
+        const { targetId } = await send("Target.createTarget", { url: "about:blank" });
+        const { sessionId } = await send("Target.attachToTarget", { targetId, flatten: true });
+        const page = (method, params) => send(method, params, sessionId);
+        await page("Page.enable");
+        await page("Network.enable");
+        await page("Network.setBlockedURLs", { urls: ["http://*", "https://*", "file://*"] });
+        await page("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: scale, mobile: false });
+        const { frameTree } = await page("Page.getFrameTree");
+        await page("Page.setDocumentContent", { frameId: frameTree.frame.id, html: `<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; font-src data:; style-src 'unsafe-inline'"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}svg{display:block}</style></head><body>${svg}</body></html>` });
+        const ready = await page("Runtime.evaluate", { expression: "Promise.all([document.fonts.ready,...Array.from(document.querySelectorAll('image')).map(e=>{const i=new Image();i.src=e.href.baseVal;return i.decode()})]).then(()=>true)", awaitPromise: true, returnByValue: true });
+        if (ready.exceptionDetails || ready.result?.value !== true) throw new Error("CHROME_ASSETS_NOT_READY");
+        const shot = await page("Page.captureScreenshot", { format: "png", clip: { x: 0, y: 0, width, height, scale: 1 }, captureBeyondViewport: false });
+        return Buffer.from(shot.data, "base64");
+      })(),
+    ]);
+    return png;
+  } finally {
+    clearTimeout(timer); socket?.close();
+    for (const operation of pending.values()) operation.reject(new Error("CHROME_RENDER_CLOSED"));
+    if (child && child.exitCode === null) { const closed = once(child, "exit").catch(() => {}); child.kill("SIGKILL"); await closed; }
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+}

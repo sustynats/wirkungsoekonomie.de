@@ -6,9 +6,9 @@
 // Alle Wege schlagen sauber fehl; der Aufrufer entscheidet über den Fallback.
 
 import fs from "node:fs";
-import os from "node:os";
 import path from "node:path";
 import { execFileSync, spawnSync } from "node:child_process";
+import { chromeRender } from "./chrome-render.mjs";
 
 const CHROME_CANDIDATES = [
   process.env.WT_CHROME_BIN,
@@ -59,25 +59,6 @@ function withRsvg(svg, { width, height, scale }) {
   return execFileSync("rsvg-convert", ["-w", String(Math.round(width * scale)), "-h", String(Math.round(height * scale)), "-f", "png"], { input: svg, maxBuffer: 64 * 1024 * 1024 });
 }
 
-function withChrome(svg, { width, height, scale, chrome }) {
-  const directory = fs.mkdtempSync(path.join(os.tmpdir(), "wt-title-"));
-  const htmlFile = path.join(directory, "frame.html");
-  const pngFile = path.join(directory, "frame.png");
-  fs.writeFileSync(htmlFile, `<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}svg{display:block}</style></head><body>${svg}</body></html>`);
-  try {
-  execFileSync(chrome, [
-    "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-first-run", "--no-default-browser-check",
-    "--disable-background-networking", "--disable-component-update", "--password-store=basic", "--use-mock-keychain",
-    `--user-data-dir=${path.join(directory, "profile")}`, "--disable-dev-shm-usage",
-    ...(process.env.WT_CHROME_NO_SANDBOX === "true" ? ["--no-sandbox"] : []),
-    "--allow-file-access-from-files",
-    `--window-size=${width},${height}`, `--force-device-scale-factor=${scale}`, "--virtual-time-budget=4000",
-    `--screenshot=${pngFile}`, `file://${htmlFile}`,
-  ], { stdio: "ignore", timeout: 30000 });
-  const png = fs.readFileSync(pngFile);
-  return png;
-  } finally { fs.rmSync(directory, { recursive: true, force: true }); }
-}
 
 export async function rasterize(svg, { width, height, scale = 1, outFile = null, prefer = null, fontDirs = null } = {}) {
   const order = prefer ? [prefer, ...availableRasterizers().filter((name) => name !== prefer)] : availableRasterizers();
@@ -87,7 +68,7 @@ export async function rasterize(svg, { width, height, scale = 1, outFile = null,
       let png;
       if (name === "resvg") png = await withResvg(svg, { width, scale, fontDirs });
       else if (name === "rsvg-convert") png = withRsvg(svg, { width, height, scale });
-      else if (name === "chrome") png = withChrome(svg, { width, height, scale, chrome: findChrome() });
+      else if (name === "chrome") png = await chromeRender(svg, { width, height, scale, chrome: findChrome() });
       else continue;
       if (outFile) {
         fs.mkdirSync(path.dirname(outFile), { recursive: true });
