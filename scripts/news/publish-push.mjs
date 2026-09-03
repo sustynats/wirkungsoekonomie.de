@@ -36,6 +36,7 @@ for (let attempt = 1; attempt <= 3; attempt += 1) {
     });
     const result = await response.json().catch(() => null);
     if (!response.ok || !result?.ok) throw new Error(`NEWS_PUSH_HTTP_${response.status}`);
+    if (Number(result.failed) > 0) throw new Error(`NEWS_PUSH_DELIVERIES_PENDING_${result.failed}`);
     console.log(`News push accepted: delivered=${result.delivered}, failed=${result.failed}, removed=${result.removed}, duplicate=${result.duplicate}.`);
     process.exit(0);
   } catch (error) {
