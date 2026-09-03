@@ -90,6 +90,17 @@ const BSW_P36_P37_CHILD_CLOSURE_PATH = path.join(APP_ROOT, 'data/state-programme
 const BSW_P38_P39_CHILD_CLOSURE_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-bsw-p38-p39-child-closure-authoritative-handoff.md');
 const BSW_P40_P41_CHILD_CLOSURE_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-bsw-p40-p41-child-closure-authoritative-handoff.md');
 const BSW_P42_P43_CHILD_CLOSURE_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-bsw-p42-p43-child-closure-authoritative-handoff.md');
+const SPD_MANIFEST_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-v1/manifest.json');
+const SPD_SOURCE_UNITS_P19_P24_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p19-p24.json');
+const SPD_EFFECT_ATOMS_P19_P24_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p19-p24.json');
+const SPD_FACH_RETURN_PATH = path.join(APP_ROOT, 'data/state-programmes/source-integrity/berlin-2026-spd-fach-return-v1.json');
+const SPD_P22_HANDOFF_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-explicit-v1.json');
+const SPD_P22_MARKDOWN_PATHS = new Map([
+  [5477750046, path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md')],
+  [5477758987, path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md')],
+  [5477766107, path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-3-authoritative-handoff.md')],
+  [5483568051, path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md')],
+]);
 
 export const BINDING_ORDER = [
   'BSW',
@@ -733,6 +744,208 @@ function bswP22Materialization(bswLedger, handoff) {
   const restatement = originalTerminals.find((item) => item.object_id === 'BE-BSW-P22-U02-A07-0cd49822c754');
   assert.equal(restatement.restatement_target_object_id, 'BE-BSW-P22-U02-A04-C02-fd05adab8416');
   assert.equal(restatement.counts_as_effect_object, false);
+  return { terminals };
+}
+
+function spdP22Materialization(handoff) {
+  assert.equal(handoff.schema_version, 'woek-explicit-fach-handoff-2.0');
+  assert.equal(handoff.handoff_id, 'BE-SPD-P22-CANONICAL-EXPLICIT-FACH-2026-V1');
+  assert.equal(handoff.base_main_commit, 'd8de40a2c740ab1c3d4b41d0ccb1a7fdf65d5d76');
+  assert.equal(handoff.artifact_id, 'BE-AGH-2026-SPD-WAHLPROGRAMM');
+  assert.equal(handoff.artifact_sha256, '379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9');
+  assert.equal(handoff.artifact_byte_length, 663059);
+  assert.equal(handoff.artifact_page_count, 66);
+  assert.equal(handoff.controller.issue_comment_id, 5483571711);
+  assert.equal(handoff.controller.latest_refresh_comment_id, 5518066353);
+  assert.deepEqual(handoff.coverage, {
+    terminal_pages: [22],
+    protected_physical_scope_after_materialization: 'P1-P22',
+    next_page_review_envelope_from: 23,
+    next_page_review_envelope_through: 66,
+    original_source_object_count: 31,
+    zero_atom_source_unit_count: 9,
+    source_atom_count: 22,
+    deterministic_record_count: 5,
+    total_materialized_terminal_record_count: 36,
+    active_terminal_review_leaf_count: 18,
+    active_explicit_fach_approved_count: 16,
+    active_reviewed_not_assessable_count: 2,
+    zero_count_terminal_record_count: 18,
+    terminal_status_counts: {
+      EXPLICIT_FACH_APPROVED: 16,
+      REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 2,
+      NON_EFFECT_CONTEXT_REVIEWED: 14,
+      SOURCE_UNIT_RECLASSIFIED_VERSIONED: 4,
+    },
+    exact_open_child_object_count: 0,
+    gate: 'BE_SPD_2026_P22_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_CANONICAL_FINAL_LEDGER_REPAIR',
+  });
+  assert.ok(Object.values(handoff.constraints).every((value) => value === false));
+
+  const manifest = readJson(SPD_MANIFEST_PATH);
+  assert.equal(handoff.source_ledger.manifest_path, repoPath(SPD_MANIFEST_PATH));
+  assert.equal(handoff.source_ledger.logical_descriptor_sha256, manifest.logical_descriptor_sha256);
+  assert.equal(manifest.ledger_metadata.artifact.artifact_id, handoff.artifact_id);
+  assert.equal(manifest.ledger_metadata.artifact.sha256, handoff.artifact_sha256);
+
+  const fachReturn = readJson(SPD_FACH_RETURN_PATH);
+  assert.equal(handoff.protected_predecessor.path, repoPath(SPD_FACH_RETURN_PATH));
+  assert.equal(handoff.protected_predecessor.file_sha256, fileSha256(SPD_FACH_RETURN_PATH));
+  assert.equal(fachReturn.artifact.sha256, handoff.artifact_sha256);
+  assert.equal(fachReturn.protected_existing_fach_handoff_scope.physical_pages, 'P1-P21');
+  assert.equal(fachReturn.protected_existing_fach_handoff_scope.cross_page_object, 'BE-SPD-2026-SU-0247');
+  assert.equal(handoff.protected_predecessor.technical_scope_rule, 'P22_ONLY_DO_NOT_REOPEN_OR_REAUTHOR_PROTECTED_P1_P21_STOCK');
+
+  const snapshots = new Map(handoff.authoritative_markdowns.map((item) => [item.issue_comment_id, item]));
+  assert.deepEqual([...snapshots.keys()], [5477750046, 5477758987, 5477766107, 5483568051]);
+  for (const [commentId, markdownPath] of SPD_P22_MARKDOWN_PATHS) {
+    const snapshot = snapshots.get(commentId);
+    assert.ok(snapshot, `SPD P22 authoritative snapshot missing for ${commentId}`);
+    assert.equal(snapshot.path, repoPath(markdownPath));
+    assert.equal(snapshot.file_sha256, fileSha256(markdownPath));
+  }
+
+  const sourceUnits = readJson(SPD_SOURCE_UNITS_P19_P24_PATH).records.filter((item) => item.pdf_page === 22);
+  const effectAtoms = readJson(SPD_EFFECT_ATOMS_P19_P24_PATH).records.filter((item) => item.pdf_page === 22);
+  const ledgerById = new Map([
+    ...sourceUnits
+      .filter((item) => item.atom_ids.length === 0)
+      .map((item) => [item.source_unit_id, {
+        object_kind: 'SOURCE_UNIT',
+        source_locator: item.source_locator,
+        source_text: item.source_excerpt,
+        source_text_sha256: item.source_text_sha256,
+      }]),
+    ...effectAtoms.map((item) => [item.atom_id, {
+      object_kind: 'SOURCE_ATOM',
+      source_locator: item.source_locator,
+      source_text: item.source_excerpt,
+      source_text_sha256: item.source_text_sha256,
+    }]),
+  ]);
+  assert.equal(sourceUnits.filter((item) => item.atom_ids.length === 0).length, 9);
+  assert.equal(effectAtoms.length, 22);
+  assert.equal(ledgerById.size, 31, 'SPD P22 canonical source-object count drift');
+
+  const sourceById = new Map(handoff.source_objects.map((item) => [item.object_id, item]));
+  assert.equal(sourceById.size, 31, 'SPD P22 embedded source-object count drift');
+  assert.deepEqual([...sourceById.keys()].sort(), [...ledgerById.keys()].sort());
+  for (const source of handoff.source_objects) {
+    const frozen = ledgerById.get(source.object_id);
+    assert.ok(frozen, `${source.object_id}: canonical source missing`);
+    assert.equal(source.source_page, 22);
+    assert.equal(source.source_object_kind, frozen.object_kind);
+    assert.equal(source.source_locator, frozen.source_locator);
+    assert.equal(source.source_text, frozen.source_text);
+    assert.equal(source.source_text_sha256, frozen.source_text_sha256);
+  }
+
+  const decisionsById = new Map(handoff.original_records.map((item) => [item.object_id, item]));
+  assert.equal(decisionsById.size, 31, 'SPD P22 original decision count drift');
+  assert.deepEqual([...decisionsById.keys()].sort(), [...ledgerById.keys()].sort());
+  const allIds = new Set([
+    ...handoff.original_records.map((item) => item.object_id),
+    ...handoff.deterministic_records.map((item) => item.object_id),
+  ]);
+  assert.equal(allIds.size, 36, 'SPD P22 current object ID set drift');
+
+  const normalizeFachState = (state) => state.startsWith('NON_EFFECT_')
+    ? 'NON_EFFECT_CONTEXT_REVIEWED'
+    : state;
+  const originalTerminals = handoff.original_records.map((decision) => {
+    const source = ledgerById.get(decision.object_id);
+    const snapshot = snapshots.get(decision.batch_issue_comment_id);
+    assert.ok(snapshot, `${decision.object_id}: unknown authoritative batch`);
+    const fachState = normalizeFachState(decision.authoritative_terminal_fach_state);
+    assert.ok([
+      'EXPLICIT_FACH_APPROVED',
+      'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON',
+      'NON_EFFECT_CONTEXT_REVIEWED',
+      'SOURCE_UNIT_RECLASSIFIED_VERSIONED',
+    ].includes(fachState), `${decision.object_id}: unsupported Fach state`);
+    const active = fachState === 'EXPLICIT_FACH_APPROVED'
+      || fachState === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON';
+    assert.equal(decision.counts_as_effect_object, active, `${decision.object_id}: counting role drift`);
+    if (fachState === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED') {
+      assert.ok(decision.replacement_record_ids?.length, `${decision.object_id}: replacement lineage missing`);
+      assert.ok(decision.replacement_record_ids.every((id) => allIds.has(id)), `${decision.object_id}: replacement record missing`);
+    }
+    if (fachState === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON') {
+      assert.ok(decision.exact_reason_code);
+      assert.ok(decision.exact_reason);
+    }
+    return {
+      object_id: decision.object_id,
+      object_kind: fachState === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED'
+        ? 'SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING'
+        : fachState === 'EXPLICIT_FACH_APPROVED'
+          ? 'SOURCE_BOUND_FACH_OBJECT'
+          : fachState === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON'
+            ? 'SOURCE_BOUND_EXACT_RNAA_OBJECT'
+            : 'SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT',
+      source_locator: source.source_locator,
+      source_excerpt: source.source_text,
+      source_text_sha256: source.source_text_sha256,
+      source_state: 'SOURCE_BOUND_VERIFIED',
+      segmentation_state: fachState === 'SOURCE_UNIT_RECLASSIFIED_VERSIONED'
+        ? 'SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING'
+        : 'OBJECT_BOUNDARY_VERIFIED',
+      fach_state: fachState,
+      authoritative_terminal_fach_state: decision.authoritative_terminal_fach_state,
+      counts_as_effect_object: decision.counts_as_effect_object,
+      ...(decision.replacement_record_ids ? { replacement_record_ids: decision.replacement_record_ids } : {}),
+      ...(decision.exact_reason_code ? { exact_reason_code: decision.exact_reason_code } : {}),
+      ...(decision.exact_reason ? { exact_reason: decision.exact_reason } : {}),
+      materialization_mode: 'LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT',
+      fach_handoff: snapshot.issue_comment_url,
+      fach_handoff_snapshot: { path: snapshot.path, file_sha256: snapshot.file_sha256 },
+      fach_handoff_locator: `Issue #240 comment ${snapshot.issue_comment_id}; exact object ${decision.object_id}`,
+      decision_kind: decision.decision_kind,
+    };
+  });
+
+  const deterministicTerminals = handoff.deterministic_records.map((decision) => {
+    const snapshot = snapshots.get(decision.batch_issue_comment_id);
+    assert.ok(snapshot, `${decision.object_id}: unknown authoritative child batch`);
+    assert.equal(sha256(decision.source_text), decision.source_text_sha256, `${decision.object_id}: child text/hash drift`);
+    assert.ok(decision.object_id.endsWith(decision.source_text_sha256.slice(0, 12)), `${decision.object_id}: child ID/hash drift`);
+    assert.ok(decision.parent_object_ids.length >= 1, `${decision.object_id}: child parent missing`);
+    for (const parentId of decision.parent_object_ids) {
+      const parent = decisionsById.get(parentId);
+      assert.equal(parent?.authoritative_terminal_fach_state, 'SOURCE_UNIT_RECLASSIFIED_VERSIONED', `${decision.object_id}: parent not versioned`);
+      assert.ok(parent.replacement_record_ids.includes(decision.object_id), `${decision.object_id}: reverse parent lineage missing`);
+    }
+    const fachState = normalizeFachState(decision.terminal_fach_state);
+    const active = fachState === 'EXPLICIT_FACH_APPROVED'
+      || fachState === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON';
+    assert.equal(decision.counts_as_effect_object, active, `${decision.object_id}: deterministic counting role drift`);
+    return {
+      object_id: decision.object_id,
+      object_kind: 'DETERMINISTIC_SEGMENTATION_REPLACEMENT',
+      source_locator: decision.parent_object_ids.map((id) => ledgerById.get(id).source_locator).join(' + '),
+      source_excerpt: decision.source_text,
+      source_text_sha256: decision.source_text_sha256,
+      source_state: 'SOURCE_BOUND_VERIFIED',
+      segmentation_state: 'OBJECT_BOUNDARY_VERIFIED',
+      segmentation_origin: decision.decision_kind,
+      parent_object_ids: decision.parent_object_ids,
+      child_role: decision.child_role,
+      fach_state: fachState,
+      authoritative_terminal_fach_state: decision.terminal_fach_state,
+      counts_as_effect_object: decision.counts_as_effect_object,
+      materialization_mode: 'LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR',
+      fach_handoff: snapshot.issue_comment_url,
+      fach_handoff_snapshot: { path: snapshot.path, file_sha256: snapshot.file_sha256 },
+      fach_handoff_locator: `Issue #240 comment ${snapshot.issue_comment_id}; deterministic record ${decision.object_id}`,
+      decision_kind: decision.decision_kind,
+    };
+  });
+
+  const terminals = [...originalTerminals, ...deterministicTerminals];
+  assert.equal(terminals.length, 36);
+  assert.equal(terminals.filter((item) => item.counts_as_effect_object).length, 18);
+  assert.deepEqual(statusCounts(terminals), handoff.coverage.terminal_status_counts);
+  assert.equal(handoff.coverage.exact_open_child_object_count, 0);
   return { terminals };
 }
 
@@ -3407,6 +3620,7 @@ export function buildBerlinFachTruthResidual() {
   const bswP60P63Handoff = readJson(BSW_P60_P63_HANDOFF_PATH);
   const bswP64P66Handoff = readJson(BSW_P64_P66_HANDOFF_PATH);
   const bswP34P43ChildClosureHandoff = readJson(BSW_P34_P43_CHILD_CLOSURE_PATH);
+  const spdP22Handoff = readJson(SPD_P22_HANDOFF_PATH);
   assert.ok(descriptorValid(register), 'Berlin source-register descriptor mismatch');
   assert.ok(descriptorValid(acceptedV1), 'accepted Berlin v1 descriptor mismatch');
   assert.equal(acceptedV1.coverage_summary.programme_analysis_complete, 3);
@@ -3433,6 +3647,7 @@ export function buildBerlinFachTruthResidual() {
   const bswP64P66 = bswP64P66Materialization(bswLedger, bswP64P66Handoff);
   const bswP34P43PredecessorOpen = [...bswP34P37.openObjects, ...bswP38P41.openObjects, ...bswP42P45.openObjects];
   const bswP34P43ChildClosure = bswP34P43ChildClosureMaterialization(bswP34P43PredecessorOpen, bswP34P43ChildClosureHandoff);
+  const spdP22 = spdP22Materialization(spdP22Handoff);
   const programmes = BINDING_ORDER.map((party, index) => {
     const source = legacyByParty.get(party);
     const registered = registerByParty.get(party);
@@ -3442,12 +3657,17 @@ export function buildBerlinFachTruthResidual() {
 
     const terminalObjects = party === 'BSW'
       ? [...bswProtectedTerminals(source, bswLedger), ...bswPage14Terminals(bswLedger, bswP14Handoff), ...bswIncrement.terminals, ...bswSuccessor.terminals, ...bswP22.terminals, ...bswP24P25ChildClosure.terminals, ...bswP26P29.terminals, ...bswP30P33.terminals, ...bswP34P37.terminals, ...bswP38P41.terminals, ...bswP42P45.terminals, ...bswP46P49.terminals, ...bswP50P53.terminals, ...bswP54P57.terminals, ...bswP58P59.terminals, ...bswP60P63.terminals, ...bswP64P66.terminals, ...bswP34P43ChildClosure.closedTerminals]
+      : party === 'SPD'
+        ? spdP22.terminals
       : source.active_source_objects
         .filter((item) => item.status !== 'GENUINE_FACH_REVIEW_REQUIRED')
         .map(normalizedLegacyTerminal);
     const remaining = party === 'BSW'
       ? []
-      : source.active_source_objects.filter((item) => item.status === 'GENUINE_FACH_REVIEW_REQUIRED');
+      : source.active_source_objects.filter((item) => (
+        item.status === 'GENUINE_FACH_REVIEW_REQUIRED'
+          && (party !== 'SPD' || Number(item.source_locator.match(/PDF page (\d+)/)?.[1]) >= 23)
+      ));
     const reviewEnvelopes = remaining.map(reviewEnvelope);
     const reviewObjects = party === 'BSW' ? [...bswP24P25ChildClosure.openObjects, ...bswP34P43ChildClosure.openObjects, ...bswP46P49.openObjects, ...bswP50P53.openObjects, ...bswP54P57.openObjects, ...bswP58P59.openObjects, ...bswP60P63.openObjects, ...bswP64P66.openObjects] : [];
     const isComplete = TERMINAL_PROGRAMMES.includes(party);
@@ -3476,6 +3696,22 @@ export function buildBerlinFachTruthResidual() {
       terminal_objects: terminalObjects,
       remaining_review_envelopes: reviewEnvelopes,
       remaining_review_objects: reviewObjects,
+      ...(party === 'SPD' ? {
+        protected_fach_scope: {
+          physical_pages: 'P1-P22',
+          predecessor_physical_pages: 'P1-P21',
+          protected_cross_page_object: 'BE-SPD-2026-SU-0247',
+          p22_materialized_terminal_records: spdP22.terminals.length,
+          next_unreviewed_source_order_frontier: {
+            physical_page: 23,
+            source_unit_from: 'BE-SPD-2026-SU-0266',
+          },
+          preservation_authority: {
+            path: repoPath(SPD_FACH_RETURN_PATH),
+            file_sha256: fileSha256(SPD_FACH_RETURN_PATH),
+          },
+        },
+      } : {}),
     };
   });
 
@@ -3497,8 +3733,8 @@ export function buildBerlinFachTruthResidual() {
     jurisdiction: 'DE-BE',
     election: 'agh-2026-be',
     issue: 240,
-    base_main_commit: 'cf9645c4e15a3dc759f62d51202218348d3f7707',
-    source_as_of: '2026-08-29T08:45:00+02:00',
+    base_main_commit: 'd8de40a2c740ab1c3d4b41d0ccb1a7fdf65d5d76',
+    source_as_of: '2026-09-03T08:39:00+02:00',
     status: 'BERLIN_FACH_TRUTH_REMEDIATION_OPEN_8_OF_12',
     controller_authority: {
       authoritative_dod: 'https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5448629781',
@@ -3516,7 +3752,7 @@ export function buildBerlinFachTruthResidual() {
       path: repoPath(ACCEPTED_V1_PATH),
       file_sha256: fileSha256(ACCEPTED_V1_PATH),
       descriptor_sha256: acceptedV1.descriptor_sha256,
-      preservation_rule: 'Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW physical P1-P66 is source-bound through explicit issue #240 handoffs and the programme residual is exactly zero.',
+      preservation_rule: 'Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW physical P1-P66 is source-bound through explicit issue #240 handoffs and the programme residual is exactly zero. Berlin SPD P1-P21 plus cross-page SU0247 remain protected by the canonical parity return and are not reopened by the P22-only materialisation.',
     },
     accepted_incremental_handoffs: [
       {
@@ -3845,6 +4081,28 @@ export function buildBerlinFachTruthResidual() {
         exact_open_child_object_count: bswP34P43ChildClosure.openObjects.length,
         physical_pdf_pages: [34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
         gate: bswP34P43ChildClosureHandoff.coverage.gate,
+      },
+      {
+        handoff_id: spdP22Handoff.handoff_id,
+        issue_comment_ids: spdP22Handoff.authoritative_markdowns.map((item) => item.issue_comment_id),
+        issue_comment_urls: spdP22Handoff.authoritative_markdowns.map((item) => item.issue_comment_url),
+        controller_issue_comment_id: spdP22Handoff.controller.issue_comment_id,
+        controller_issue_comment_url: spdP22Handoff.controller.issue_comment_url,
+        latest_controller_refresh_comment_id: spdP22Handoff.controller.latest_refresh_comment_id,
+        latest_controller_refresh_comment_url: spdP22Handoff.controller.latest_refresh_comment_url,
+        path: repoPath(SPD_P22_HANDOFF_PATH),
+        file_sha256: fileSha256(SPD_P22_HANDOFF_PATH),
+        authoritative_markdown_paths: spdP22Handoff.authoritative_markdowns.map((item) => item.path),
+        authoritative_markdown_file_sha256s: spdP22Handoff.authoritative_markdowns.map((item) => item.file_sha256),
+        artifact_id: spdP22Handoff.artifact_id,
+        artifact_sha256: spdP22Handoff.artifact_sha256,
+        exact_terminal_object_count: spdP22.terminals.length,
+        active_terminal_review_leaf_count: spdP22Handoff.coverage.active_terminal_review_leaf_count,
+        exact_open_child_object_count: spdP22Handoff.coverage.exact_open_child_object_count,
+        physical_pdf_pages: spdP22Handoff.coverage.terminal_pages,
+        protected_physical_scope_after_materialization: spdP22Handoff.coverage.protected_physical_scope_after_materialization,
+        next_source_order_frontier: 'P23 / BE-SPD-2026-SU-0266+',
+        gate: spdP22Handoff.coverage.gate,
       },
     ],
     rejected_predecessor: {
