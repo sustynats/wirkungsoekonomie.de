@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
+import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 
 const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
@@ -631,8 +632,10 @@ export function buildAnalysisPrompt(stories) {
     "Wirkung ist neutral und eine tatsächliche Zustandsveränderung. Ex ante nie behaupten, eine Maßnahme bewirke bereits etwas. Output ist keine Wirkung; Zielbezug ist kein Kausalitätsbeweis.",
     "Keine Personen-, Parteien- oder moralische Rangliste. Reichweite ist nicht Wirkung. Benenne Nichtkompensation und Reverse Merit Order nur, wenn Schutzgrenzen oder Priorisierung materiell relevant sind.",
     "Erstelle source_summary als eigenständige neutrale Zusammenfassung der gelieferten Originalquelle(n): in der Regel 100 bis 180 Wörter, gegliedert in 2 bis 3 kurze Absätze mit einer Leerzeile. Gib ausschließlich wieder, was die Quelle über Ereignis, Beteiligte, Anlass, Maßnahmen, Aussagen, Zahlen, Termine, Kontext und offene Punkte mitteilt. Keine Bewertung, keine Wirkungsannahme und keine wirkungsökonomische Einordnung. Reicht das Quellenmaterial für einen Punkt nicht, benenne ihn nicht oder kennzeichne ihn vorsichtig als offen; fülle niemals mit erfundenen Angaben auf.",
-    "Die wirkungsökonomische Einordnung beginnt erst in den übrigen Feldern. Antworte dort zweistufig: summary genau 2 kurze Sätze und höchstens 360 Zeichen für die Übersicht; detail_summary 5 bis 7 gehaltvolle Sätze mit 500 bis 1200 Zeichen für die Detailseite. Die Detailfassung nennt den gesicherten Sachverhalt, Relevanz, Wirkpfad, mindestens eine mögliche Folge und die Evidenzgrenze. Jede andere Zeichenkette höchstens 220 Zeichen; jedes Array genau 1 kurzer Eintrag (höchstens 180 Zeichen); insgesamt höchstens 5600 Zeichen je Analyse.",
+    "Die wirkungsökonomische Einordnung beginnt erst in den übrigen Feldern. Antworte dort zweistufig: summary genau 2 kurze Sätze und höchstens 360 Zeichen für die Übersicht; detail_summary 5 bis 7 gehaltvolle Sätze mit 500 bis 1200 Zeichen für die Detailseite. Die Detailfassung nennt den gesicherten Sachverhalt, Relevanz, Wirkpfad, mindestens eine mögliche Folge und die Evidenzgrenze. Jede andere Zeichenkette höchstens 220 Zeichen; jedes Array genau 1 kurzer Eintrag (höchstens 180 Zeichen); einschließlich optionaler Visuals insgesamt höchstens 6300 Zeichen je Analyse.",
     "Wiederhole in Analysefeldern keine URLs, technischen Quellen-IDs oder Dokumentnummern. Übernimm materielle Zahlen nur, wenn sie im Claim oder Quellentext stehen, und behalte ihre Schreibweise bei (Zahlwort bleibt Zahlwort). Keine Einleitung und keine Wiederholung des Schemas.",
+    ...VISUALS_PROMPT_RULES,
+    "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar.",
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
     JSON.stringify({
       analyses: [{
@@ -670,6 +673,7 @@ export function buildAnalysisPrompt(stories) {
           duplicate_status: "new_story|material_update|duplicate_without_new_information",
           rationale: "string",
         },
+        visuals: VISUALS_SCHEMA,
         publication_recommendation: true,
       }],
     }),
@@ -870,19 +874,21 @@ export function validateAnalysis(analysis, story, options = {}) {
   if (/\b(person_score|party_score|personen[- ]?score|parteien[- ]?ranking|social credit)\b/i.test(text)) errors.push("AI_PERSON_SCORING_NOT_ALLOWED");
   if (analysis?.analysis_type === "ex_ante" && /\b(bewirkt|hat\s+[^.!?]{0,80}\b(?:verbessert|reduziert|erhöht)|führt\s+(?:unmittelbar\s+)?zu)\b/i.test(text)) errors.push("AI_EX_ANTE_CAUSAL_OVERCLAIM");
   if (/\b(risiko ist schaden|wirkungsrisiko ist eingetreten|zielbezug beweist|korrelation beweist)\b/i.test(text)) errors.push("AI_EPISTEMIC_CONFLATION");
-  const sourceText = story.sources.map((source) => `${source.title} ${source.summary} ${source.article_excerpt || ""}`).join(" ");
+  const rawSourceText = story.sources.map((source) => `${source.title} ${source.summary} ${source.article_excerpt || ""}`).join(" ");
+  const sourceText = `${rawSourceText} ${story.source_summary || analysis?.source_summary || ""}`;
   const allowedNumbers = numberTokens(sourceText);
+  const rawAllowedNumbers = numberTokens(rawSourceText);
   const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [] }).join(" ");
   for (const token of numberTokens(textWithoutFrameworks)) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
   if (options.validateSourceSummaryNumbers !== false) {
-    for (const token of numberTokens(analysis?.source_summary || "")) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);
+    for (const token of numberTokens(analysis?.source_summary || "")) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);
   }
   for (const token of numberTokens((analysis?.reference_frameworks || []).join(" "))) {
     if (!allowedNumbers.has(token) && token !== "2030" && !(Number(token) >= 1 && Number(token) <= 17)) errors.push(`AI_UNSUPPORTED_FRAMEWORK_NUMBER:${token}`);
   }
-  if (maxSharedWordRun(analysis?.summary || "", sourceText) >= 18) errors.push("AI_EXCESSIVE_SOURCE_COPY");
-  if (maxSharedWordRun(analysis?.source_summary || "", sourceText) >= 24) errors.push("AI_EXCESSIVE_SOURCE_SUMMARY_COPY");
-  if (maxSharedWordRun(analysis?.detail_summary || "", sourceText) >= 18) errors.push("AI_EXCESSIVE_DETAIL_SOURCE_COPY");
+  if (maxSharedWordRun(analysis?.summary || "", rawSourceText) >= 18) errors.push("AI_EXCESSIVE_SOURCE_COPY");
+  if (maxSharedWordRun(analysis?.source_summary || "", rawSourceText) >= 24) errors.push("AI_EXCESSIVE_SOURCE_SUMMARY_COPY");
+  if (maxSharedWordRun(analysis?.detail_summary || "", rawSourceText) >= 18) errors.push("AI_EXCESSIVE_DETAIL_SOURCE_COPY");
   if (text.length > 18000) errors.push("AI_ANALYSIS_TOO_LARGE");
   return [...new Set(errors)];
 }
