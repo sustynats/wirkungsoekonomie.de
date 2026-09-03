@@ -58,10 +58,10 @@
       "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://rss.dw.com/xml/rss-de-news" }
     },
     {
-      "source_id": "un-news", "publisher_id": "united-nations", "name": "UN News", "url": "https://news.un.org/en/", "feed_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "source_type": "official_rss", "publisher_kind": "institution", "research_lane": "primary", "source_role": "institutional_statement", "primary_source": true, "enabled": true, "topic": "Geopolitik", "language": "en", "geography": ["international"],
+      "source_id": "un-news", "publisher_id": "united-nations", "name": "UN News", "url": "https://news.un.org/en/", "feed_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "source_type": "official_rss", "publisher_kind": "institution", "research_lane": "primary", "source_role": "institutional_statement", "primary_source": true, "enabled": false, "topic": "Geopolitik", "language": "en", "geography": ["international"],
       "why_relevant": "Internationale Politik, humanitäre Lagen, Menschenrechte und UN-Entscheidungen, auch außerhalb des deutschen Nachrichtenschwerpunkts.",
       "editorial_context": "Institutionelle UN-Kommunikation, keine unabhängige journalistische Zweitbestätigung. Aussagen beteiligter Akteure bleiben zugeschrieben.",
-      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.un.org/en/delegate/page/un-news-outlets" }
+      "access": { "status": "pending", "cost_usd": 0, "article": "metadata_only", "note": "Der beworbene Feed fällt unter die Robots-Sperre */news/. Kein Ausweichen auf den ausdrücklich ausgenommenen Google-User-Agent; Zugang bis zur Klärung deaktiviert.", "terms_url": "https://www.un.org/en/delegate/page/un-news-outlets" }
     },
     {
       "source_id": "who-news", "publisher_id": "who", "name": "Weltgesundheitsorganisation (WHO)", "url": "https://www.who.int/", "feed_url": "https://www.who.int/rss-feeds/news-english.xml", "source_type": "official_rss", "publisher_kind": "institution", "research_lane": "primary", "source_role": "institutional_statement", "primary_source": true, "enabled": true, "topic": "Gesundheit", "language": "en", "geography": ["international"],

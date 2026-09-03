@@ -72,9 +72,20 @@ export async function respectRobots(rawUrl, policy, fetchImpl, assertSafeUrl, al
   const key = `${url.origin}:${policy.user_agent || "WOek-Wirkungsticker"}`;
   let cached = robotsCache.get(key);
   if (!cached || cached.expires < Date.now()) {
-    const robotsUrl = `${url.origin}/robots.txt`;
-    await assertSafeUrl(robotsUrl, allowedHosts, { resolveDns: policy.resolve_dns !== false });
-    const response = await fetchImpl(robotsUrl, { redirect: "error", signal: AbortSignal.timeout(Number(policy.request_timeout_ms || 18000)), headers: { "User-Agent": policy.user_agent || "WOek-Wirkungsticker", Accept: "text/plain" } });
+    let robotsUrl = `${url.origin}/robots.txt`;
+    const signal = AbortSignal.timeout(Number(policy.request_timeout_ms || 18000));
+    let response;
+    for (let redirects = 0; redirects <= 3; redirects++) {
+      await assertSafeUrl(robotsUrl, allowedHosts, { resolveDns: policy.resolve_dns !== false });
+      response = await fetchImpl(robotsUrl, { redirect: "manual", signal, headers: { "User-Agent": policy.user_agent || "WOek-Wirkungsticker", Accept: "text/plain" } });
+      if (![301, 302, 303, 307, 308].includes(response.status)) break;
+      const location = response.headers.get("location");
+      await response.body?.cancel();
+      if (!location || redirects === 3) throw new Error("ROBOTS_REDIRECT_LIMIT");
+      const next = assertDirectNewsUrl(new URL(location, robotsUrl).href);
+      if (next.origin !== url.origin) throw new Error("ROBOTS_CROSS_ORIGIN_REDIRECT");
+      robotsUrl = next.href;
+    }
     if (![200, 404, 410].includes(response.status)) throw new Error(`ROBOTS_UNAVAILABLE_${response.status}`);
     const body = response.status === 200 ? await response.text() : "";
     if (body.length > 512000) throw new Error("ROBOTS_TOO_LARGE");

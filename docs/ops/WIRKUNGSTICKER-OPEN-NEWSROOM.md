@@ -38,6 +38,7 @@ Stand: 3. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht 
 - Reuters und dpa: keine gebuchten Direktdienste. Zugeschriebene Agenturmeldungen in anderen frei verfügbaren Quellen werden als gemeinsamer Ursprung behandelt, soweit erkennbar.
 - tagesschau, ZEIT, Süddeutsche: ungeklärte kostenlose automatisierte Nutzung gesondert markiert. Andere öffentlich-rechtliche und überregionale Angebote sind separat eingerichtet.
 - Bundesrat, BMAS und WTO: Robots-Sperre wird eingehalten, nicht mit anderem User-Agent umgangen.
+- UN News: Nach der sicheren Weiterleitung von `/robots.txt` nach `/en/robots.txt` ist der Feed von `*/news/` erfasst. Zugang deshalb deaktiviert; keine Übernahme der ausdrücklich nur für Google Feedfetcher geltenden Ausnahme.
 - Greenpeace: Atom-Pfad durch robots.txt gesperrt; erlaubte öffentliche Presseübersicht mit eigenem begrenztem HTML-Metadatenadapter und fünf Sekunden Crawl-Delay. Keine Bilder.
 - WELT/BILD: kritische Beobachtung vorgesehen, Direktzugang noch nicht freigeschaltet. Apollo News und NIUS: redaktionell ausgeschlossen, Host-Sperre im Abrufschutz.
 
