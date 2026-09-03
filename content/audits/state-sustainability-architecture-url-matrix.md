@@ -1,6 +1,6 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4233**
+- Sitemap routes: **4282**
 - Sitemap routes without directly resolved source HTML: **0**
 - Extra tracked source HTML not in sitemap: **12097**
 - Routes with non-default #253 action: **3589**
@@ -3851,8 +3851,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1058**
-- Combined matrix items (routes + extra HTML + support): **17388**
+- Tracked support text files inventoried: **1065**
+- Combined matrix items (routes + extra HTML + support): **17444**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3937,6 +3937,7 @@ Signals are review candidates, not automatic errors.
 | `content/methodik/data-sources.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/methods/woems-canvas.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
 | `content/methods/woems-methoden.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
+| `content/news/media-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/podcast/wie-misst-man-etwas-das-man-nicht-sieht.txt` | support_text | CORRECT_OVERCLAIM | novelty_or_absence |
 | `content/podcast/wirkung-ist-nicht-absicht.txt` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/podcast/zwei-aepfel-ein-preis.txt` | support_text | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
@@ -4261,6 +4262,8 @@ Signals are review candidates, not automatic errors.
 | `scripts/news/backfill-source-summaries.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | novelty_or_absence |
 | `scripts/news/build.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/lib.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns, evaluation |
+| `scripts/news/newsroom.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/news/run.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/visuals.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/podcast/build-podcast-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/portal/apply-political-implementation-standard.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
@@ -4354,7 +4357,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17389**
+- Combined reviewed items: **17445**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.

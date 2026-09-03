@@ -2,24 +2,20 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateAnalysis } from "./lib.mjs";
+import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
 const fail = (message) => { throw new Error(message); };
 
-const registry = readJson("content/news/source-registry.json");
+const registry = loadNewsRegistry(ROOT);
 const state = readJson("data/news/state.json");
 const store = readJson("data/news/stories.json");
 const usage = readJson("data/news/usage.json");
 
 if (registry.schema_version !== "1.0" || !Array.isArray(registry.sources) || registry.sources.length < 5) fail("SOURCE_REGISTRY_INVALID");
-const sourceIds = registry.sources.map((source) => source.source_id);
-const feedUrls = registry.sources.map((source) => source.feed_url);
-if (new Set(sourceIds).size !== sourceIds.length || new Set(feedUrls).size !== feedUrls.length) fail("SOURCE_REGISTRY_DUPLICATES");
-for (const source of registry.sources) {
-  if (!source.source_id || !source.name || !source.primary_source || !source.enabled) fail(`SOURCE_INVALID:${source.source_id || "unknown"}`);
-  if (new URL(source.feed_url).protocol !== "https:" || new URL(source.url).protocol !== "https:") fail(`SOURCE_HTTPS_REQUIRED:${source.source_id}`);
-}
+const sourceErrors = registryErrors(registry);
+if (sourceErrors.length) fail(sourceErrors.join(","));
 if (!state.seen_items || !state.source_status || !Array.isArray(state.pending_story_ids)) fail("STATE_SCHEMA_INVALID");
 if (!Array.isArray(store.stories) || !Array.isArray(usage.runs)) fail("DATA_SCHEMA_INVALID");
 
@@ -29,8 +25,8 @@ for (const story of store.stories) {
   if (story.published && story.listed !== false) {
     const sourceSummaryWords = String(story.source_summary || "").trim().split(/\s+/).filter(Boolean).length;
     const sourceSummaryParagraphs = String(story.source_summary || "").trim().split(/\n\s*\n/).filter((paragraph) => paragraph.trim()).length;
-    if (sourceSummaryWords < 100 || sourceSummaryWords > 180 || sourceSummaryParagraphs < 2 || sourceSummaryParagraphs > 3) fail(`STORY_SOURCE_SUMMARY_INVALID:${story.story_id}:${sourceSummaryWords}:${sourceSummaryParagraphs}`);
-    const errors = validateAnalysis({ source_summary: story.source_summary, ...story.analysis }, story, { validateSourceSummaryNumbers: false });
+    if (sourceSummaryWords < (story.analysis.publication_depth === "initial" ? 60 : 100) || sourceSummaryWords > 180 || sourceSummaryParagraphs < 2 || sourceSummaryParagraphs > 3) fail(`STORY_SOURCE_SUMMARY_INVALID:${story.story_id}:${sourceSummaryWords}:${sourceSummaryParagraphs}`);
+    const errors = validateAnalysis({ source_summary: story.source_summary, ...story.analysis }, story, { validateSourceSummaryNumbers: false, persisted: true });
     if (errors.length) fail(`PUBLISHED_STORY_QUALITY_INVALID:${story.story_id}:${errors.join(",")}`);
     if (!fs.existsSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"))) fail(`STORY_PAGE_MISSING:${story.slug}`);
   }
@@ -69,7 +65,7 @@ for (const [indexPosition, story] of activeStories.entries()) {
     .replace(/&(?:#\d+|#x[\da-f]+|\w+);/gi, " ")
     .replace(/\s+/g, " ")
     .trim() || "";
-  if (renderedSummary.length < 500) fail(`NEWS_DETAIL_SUMMARY_TOO_SHORT:${story.story_id}:${renderedSummary.length}`);
+  if (renderedSummary.length < (story.analysis.publication_depth === "initial" ? 300 : 500)) fail(`NEWS_DETAIL_SUMMARY_TOO_SHORT:${story.story_id}:${renderedSummary.length}`);
   if (renderedSummary.length > 1200) fail(`NEWS_DETAIL_SUMMARY_TOO_LONG:${story.story_id}:${renderedSummary.length}`);
   const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
   const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");

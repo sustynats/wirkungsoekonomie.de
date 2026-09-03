@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-03T21:52:44.474Z",
+  "updated_at": "2026-09-03T22:07:46.243Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -138,19 +138,41 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "38be13e7c526efba264963ec9d1078d0ce535bb50daa66542756742d3cdf5f29",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_MATERIALITY_TOO_LOW",
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_MATERIALITY_GATE_FAILED",
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_UNSUPPORTED_NUMBER:09",
+        "AI_UNSUPPORTED_NUMBER:04"
+      ],
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z",
+      "listed": false,
+      "relevance_filter_version": "3.2",
+      "rejected_at": "2026-09-03T22:07:46.243Z",
+      "rejection": {
+        "at": "2026-09-03T22:07:46.243Z",
+        "filter_version": "3.2",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_MATERIALITY_TOO_LOW",
+          "AI_NEWS_VALUE_CONTEXT_ONLY",
+          "AI_MATERIALITY_GATE_FAILED",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_UNSUPPORTED_NUMBER:09",
+          "AI_UNSUPPORTED_NUMBER:04"
+        ]
+      }
     },
     {
       "story_id": "wt-4ac22d8ae5a4a201",
@@ -190,7 +212,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "0c61371aa6e2054aba891b26096aee3aa62644ea3e8ce47c87c63c1655f4dc5a",
@@ -200,9 +222,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z"
     },
     {
       "story_id": "wt-14f473760a419877",
@@ -244,7 +266,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "3f75ce78686f8d56c4a7fb13958351716ed4473a523d02fe6773fbd3392bf7e4",
@@ -254,9 +276,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z"
     },
     {
       "story_id": "wt-c45c4900b735611f",
@@ -391,7 +413,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "9d385191db5f3d9ac3bed337871184b332f04f0390079c7da371be6e9b9eb03a",
@@ -401,9 +423,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z"
     },
     {
       "story_id": "wt-9f67ea847179e943",
@@ -442,7 +464,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "84608af759731c918320003b7527fe39328f23aba4d84d906b58540c53c45c75",
@@ -452,9 +474,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z"
     },
     {
       "story_id": "wt-814b7e6990a3d0cf",
@@ -507,7 +529,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         },
         {
           "claim_id": "wt-814b7e6990a3d0cf-claim-02",
@@ -521,7 +543,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "96756c120a0968cd98a44aa1833d0894bcefd3b3760eefa065b731303106a22d",
@@ -531,9 +553,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z"
     },
     {
       "story_id": "wt-98ff7e403362fdf9",
@@ -1971,7 +1993,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -1988,7 +2010,7 @@
             "content_hash": "b749d23ec26ae36ae17b120dc4810865fe32446386340f135d1922df291471e3"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -2208,7 +2230,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -2225,7 +2247,7 @@
             "content_hash": "b1d7e1089cfee614d1a31b1d8a64192fa7326a8dc0f19be8117c2c5288782c71"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -2688,7 +2710,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -2705,7 +2727,7 @@
             "content_hash": "0c8b1c9c137ae5909954ab4b0d8fbbf85bb099215599778ff9f730776744de7f"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true,
@@ -2915,7 +2937,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -2932,7 +2954,7 @@
             "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -3279,7 +3301,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -3296,7 +3318,7 @@
             "content_hash": "16116dd2d59b78485f629f5bebf25268804ee270663de7b96bd1272d4b02246a"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true,
@@ -3508,7 +3530,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -3525,7 +3547,7 @@
             "content_hash": "172f2e3551e48f1cabca43252bc0c38cab3a386d95b590c02a1d6c6483b5de2d"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -3730,7 +3752,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -3747,7 +3769,7 @@
             "content_hash": "c138ab79244a9cc66ce141b1539903a5176ca014618d23bfb4e26117d6e9696e"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -3959,7 +3981,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -3976,7 +3998,7 @@
             "content_hash": "94823b6f34ea495e335146c43e119906b6931a453d75b9d3308372c55cccd96c"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -4183,7 +4205,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -4200,7 +4222,7 @@
             "content_hash": "65e3413f6dc37bbbccfecb7e5820747bd2106f568b1bf2ffb1f51db1adec82eb"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -4412,7 +4434,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:38:11.681Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -4636,7 +4658,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -4653,7 +4675,7 @@
             "content_hash": "e362441ae1fa1127a3cf3507d33d24def790eb08e77dced1d570c2974f62a8b7"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -4860,7 +4882,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -4877,7 +4899,7 @@
             "content_hash": "08b186c00776867d5ed5bf550ee7dcd72d35b516ee25de0393bad4822af1bad5"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true,
@@ -5087,7 +5109,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T21:52:44.474Z",
+        "detected_at": "2026-09-03T22:07:46.243Z",
         "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
         "sources": [
           {
@@ -5104,7 +5126,7 @@
             "content_hash": "f1634fbfea9a9cd88eb0dca102dd42572422ea44796f59d236d94c873cd3a55d"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -5567,7 +5589,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -5577,9 +5599,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
@@ -5619,7 +5641,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T21:52:44.474Z"
+          "checked_at": "2026-09-03T22:07:46.243Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -5629,9 +5651,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T21:52:44.474Z"
+      "updated_at": "2026-09-03T22:07:46.243Z"
     },
     {
       "story_id": "wt-61fc84ab4a746bcd",

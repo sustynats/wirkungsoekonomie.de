@@ -627,7 +627,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["src/content/docs", "blog", "journal", "news", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "quellenarchiv", "export", "werkstatt", "werkzeuge", "wirkungsfelder/gesundheit-pflege/dossiers", "anwendungen", "verstehen", "fragen", "faq", "en"]
+const contentFiles = ["src/content/docs", "blog", "journal", "news", "wirkungsticker", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "quellenarchiv", "export", "werkstatt", "werkzeuge", "wirkungsfelder/gesundheit-pflege/dossiers", "anwendungen", "verstehen", "fragen", "faq", "en"]
   .flatMap((dir) => walk(dir));
 for (const rootPage of ["index.html", "blog.html"]) {
   if (fs.existsSync(rootPage)) contentFiles.push(rootPage);
