@@ -10,7 +10,7 @@ Stand: 2026-09-03 · Branch `claude/wirkungsticker-visual-ux` · Lane: Claude = 
 | Templates | `scripts/news/build.mjs` | Übersicht: Toolbar (Suche + Aktualisieren), gruppierte Filter mit Zählern, Karten mit Quelle/Status/Metern, Meldungen direkt nach dem Hero, App- und Methodik-Block unten. Detailseite: Primärquelle als Button, Auf-einen-Blick, Abschnittsnavigation, „Worum geht es?“ (von Codex) → Faktencheck → Analyse → Einordnung (Meter) → Folgencheck (Wirkpfad-Grafik + Risiken) → Bedeutung → Offen; Quellenakte mit Herausgeber-Badges; Versionsverlauf als Zeitleiste |
 | Styles/JS | `assets/css/news.css`, `assets/js/news.js`, `assets/js/news-pwa.js` | Filterleiste klebt jetzt unterhalb des Site-Headers (vorher lag sie hinter dem sticky Header), Karten sind ganzflächig klickbar, Zähler pro Filter, „Aktualisieren“ auch in der Toolbar |
 | Tests | `tests/news/visuals.test.mjs`, `tests/news/title-image.test.mjs` | laufen in `npm run news:test` mit |
-| Titelbildsystem | `scripts/news/title-image/*`, `docs/ops/WIRKUNGSTICKER-TITELBILD.md`, `docs/ops/title-image-previews/` | zwei Modi, SVG-Renderer, Rasterizer-Adapter, Vorschauen, Doku |
+| Titelbildsystem | `scripts/news/title-image/*`, `docs/ops/WIRKUNGSTICKER-TITELBILD.md`, `scripts/news/title-image/previews/` | zwei Modi, SVG-Renderer, Rasterizer-Adapter, Vorschauen, Doku |
 
 Alle Marker, die `scripts/news/validate.mjs` prüft, sind erhalten („Methodik und Qualitätsgate“, „Fakten- &amp; Folgencheck öffnen“, „Ausgangsmeldung vom“, „WÖk-Analyse aktualisiert“, „Worum geht es?“, „Originalquelle ansehen“, Reihenfolge Quelle → Faktencheck → Analyse → Folgencheck, „Erste Ordnung – unmittelbar“, „Risiken, Gegenläufe und Prüfgrenzen“). `npm run news:test`, `news:build`, `news:validate` sind grün.
 

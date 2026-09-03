@@ -17,7 +17,7 @@ Dieser Schritt umfasst ausschließlich Designsystem, Rendering, Vorschauen und D
 | Rasterizer-Adapter SVG → PNG | `scripts/news/title-image/rasterize.mjs` |
 | Neutrale Platzhaltermotive für Vorschauen | `scripts/news/title-image/placeholders.mjs` |
 | Vorschau-Generator und Galerie | `scripts/news/title-image/preview.mjs` |
-| Vorschauen (SVG, PNG, `index.html`, `report.json`) | `docs/ops/title-image-previews/` |
+| Vorschauen (SVG, PNG, `index.html`, `report.json`) | `scripts/news/title-image/previews/` |
 | Icons und Dimensionslogik (geteilt mit den Ticker-Seiten) | `scripts/news/visuals.mjs` |
 
 Entry Points:
@@ -126,7 +126,7 @@ Landscape (`og`, `wide`):
 
 Square: `brand` 0/0/0,70/0,10 · `text` 0/0,58/1/0,42 · `label` 0,55/0,93/0,45/0,07 · `motifFocus` 0,08/0,12/0,84/0,42.
 
-Vorgabe für die spätere Bildgenerierung (aus `SAFE_AREAS.landscape.avoid`): „Wichtige Personen, Objekte und Motive rechts bzw. mittig platzieren; nichts Wichtiges im linken unteren Drittel, im linken oberen Streifen und in der rechten unteren Ecke. Keine Schrift, keine Logos, keine dokumentarische Nachstellung eines konkreten Ereignisses.“ Die Zonen liegen maschinenlesbar in `SAFE_AREAS` und in `docs/ops/title-image-previews/report.json` (`system.safeAreas`).
+Vorgabe für die spätere Bildgenerierung (aus `SAFE_AREAS.landscape.avoid`): „Wichtige Personen, Objekte und Motive rechts bzw. mittig platzieren; nichts Wichtiges im linken unteren Drittel, im linken oberen Streifen und in der rechten unteren Ecke. Keine Schrift, keine Logos, keine dokumentarische Nachstellung eines konkreten Ereignisses.“ Die Zonen liegen maschinenlesbar in `SAFE_AREAS` und in `scripts/news/title-image/previews/report.json` (`system.safeAreas`).
 
 ## Modus B: Wirkungskarte
 
@@ -156,8 +156,8 @@ Das System erwartet später pro Akte ein Feld `title_image` (z. B. `{ mode: "edi
 ## Vorschauen
 
 ```bash
-node scripts/news/title-image/preview.mjs            # schreibt docs/ops/title-image-previews/
-open docs/ops/title-image-previews/index.html
+node scripts/news/title-image/preview.mjs            # schreibt scripts/news/title-image/previews/
+open scripts/news/title-image/previews/index.html
 ```
 
 Fälle: Referenz „Stärkerer Schutz kritischer Infrastrukturen“, lange Überschrift (2–3 Zeilen), sehr kurze Überschrift, sehr lange deutsche Überschrift (Kürzung), fehlende Kategorie, fehlende Quelle und Datum, fehlende Wirkungswerte, nur eine relevante Dimension, mehrere sehr relevante Dimensionen mit unbekannter Rubrik – jeweils in beiden Modi und allen drei Größen, dazu die Smartphone-Darstellung (360 px) und der Fallback „Editorial ohne Motiv“. `report.json` listet pro Rendering Schriftgröße, Zeilenzahl, Kürzung und Warnungen.

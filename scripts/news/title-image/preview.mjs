@@ -1,7 +1,7 @@
 // Erzeugt lokale Vorschauen beider Titelbild-Modi als SVG, PNG (wenn ein
 // Rasterizer verfügbar ist) und eine Galerie zum direkten Vergleich.
 //
-//   node scripts/news/title-image/preview.mjs [--out docs/ops/title-image-previews] [--png-out <dir>]
+//   node scripts/news/title-image/preview.mjs [--out scripts/news/title-image/previews] [--png-out <dir>]
 //
 // Standard: SVG + Galerie + Report (klein, versionierbar). PNGs entstehen nur mit
 // --png-out außerhalb des Repositories, z. B. --png-out ~/Downloads/wirkungsticker-titelbilder
@@ -16,7 +16,7 @@ import { placeholderDataUri } from "./placeholders.mjs";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "../../..");
 const outArgument = process.argv.indexOf("--out");
-const OUT = path.resolve(ROOT, outArgument > -1 ? process.argv[outArgument + 1] : "docs/ops/title-image-previews");
+const OUT = path.resolve(ROOT, outArgument > -1 ? process.argv[outArgument + 1] : "scripts/news/title-image/previews");
 const pngArgument = process.argv.indexOf("--png-out");
 const PNG_OUT = pngArgument > -1 ? path.resolve(process.argv[pngArgument + 1].replace(/^~/, process.env.HOME || "")) : null;
 
