@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260903-3";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260903-4";
 const NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1";
 const NEWS_STATE_URL = "/wirkungsticker/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-wirkungsticker-updates";
@@ -34,7 +34,7 @@ self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") {
     self.skipWaiting();
   } else if (event.data?.type === "NEWS_NOTIFICATIONS_ENABLE") {
-    event.waitUntil(writeNewsState({ enabled: true, lastKnown: event.data.latest || null }));
+    event.waitUntil(writeNewsState({ enabled: true, lastKnown: event.data.latest || null, unreadCount: 0 }));
   } else if (event.data?.type === "NEWS_NOTIFICATIONS_DISABLE") {
     event.waitUntil(disableNewsNotifications());
   } else if (event.data?.type === "NEWS_MARK_SEEN") {
@@ -109,11 +109,14 @@ async function writeNewsState(state) {
 
 async function updateNewsLastKnown(latest) {
   const state = await readNewsState();
-  await writeNewsState({ ...state, lastKnown: latest });
+  await writeNewsState({ ...state, lastKnown: latest, unreadCount: 0 });
+  const notifications = await self.registration.getNotifications({ tag: NEWS_NOTIFICATION_TAG }).catch(() => []);
+  notifications.forEach((notification) => notification.close());
+  if ("clearAppBadge" in self.navigator) await self.navigator.clearAppBadge().catch(() => undefined);
 }
 
 async function disableNewsNotifications() {
-  await writeNewsState({ enabled: false, lastKnown: null });
+  await writeNewsState({ enabled: false, lastKnown: null, unreadCount: 0 });
   const notifications = await self.registration.getNotifications({ tag: NEWS_NOTIFICATION_TAG }).catch(() => []);
   notifications.forEach((notification) => notification.close());
   if ("clearAppBadge" in self.navigator) await self.navigator.clearAppBadge().catch(() => undefined);
@@ -126,20 +129,22 @@ async function checkForNewsUpdates() {
   if (!response.ok) return;
   const feed = await response.json();
   const previous = Date.parse(state.lastKnown || 0);
+  const unreadCount = Math.max(0, Number(state.unreadCount) || 0);
   const updates = (feed.items || []).filter((item) => Date.parse(item.date_modified || item.date_published || 0) > previous);
   const latest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
   if (!previous) {
-    await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : null });
+    await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : null, unreadCount: 0 });
     return;
   }
   if (!updates.length) return;
+  const totalUnread = unreadCount + updates.length;
   await self.registration.showNotification("Neue Wirkungsnachrichten", {
-    body: `${updates.length} ${updates.length === 1 ? "neue Wirkungsnachricht ist" : "neue Wirkungsnachrichten sind"} verfügbar.`,
+    body: `${totalUnread} ${totalUnread === 1 ? "ungelesene Wirkungsnachricht ist" : "ungelesene Wirkungsnachrichten sind"} verfügbar.`,
     icon: "/assets/img/brand/app-icon-192.png",
     badge: "/assets/img/brand/app-icon-192.png",
     tag: NEWS_NOTIFICATION_TAG,
     data: { url: "/wirkungsticker/?source=notification" },
   });
-  if ("setAppBadge" in self.navigator) await self.navigator.setAppBadge(updates.length).catch(() => undefined);
-  await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : state.lastKnown });
+  if ("setAppBadge" in self.navigator) await self.navigator.setAppBadge(totalUnread).catch(() => undefined);
+  await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : state.lastKnown, unreadCount: totalUnread });
 }

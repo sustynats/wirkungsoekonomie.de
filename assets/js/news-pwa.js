@@ -172,13 +172,22 @@
     if (!cards.length) return;
     startForegroundChecks();
     refreshButton?.addEventListener("click", () => void refreshNow());
-    window.addEventListener("focus", () => void checkForNews());
-    window.addEventListener("pageshow", () => void checkForNews());
-    window.addEventListener("online", () => void checkForNews());
+    window.addEventListener("focus", () => void handleForeground());
+    window.addEventListener("pageshow", () => void handleForeground());
+    window.addEventListener("online", () => void handleForeground());
     document.addEventListener("visibilitychange", () => {
-      if (document.visibilityState === "visible") void checkForNews();
+      if (document.visibilityState === "visible") void handleForeground();
     });
     registrationPromise.then((registration) => registration?.update().catch(() => undefined));
+    // Erst nach dem ersten sichtbaren Rendern quittieren: Die Karten behalten in
+    // dieser Sitzung ihr „Neu“-Label, das App-Icon springt beim Öffnen aber auf 0.
+    window.setTimeout(() => void handleForeground(), 750);
+  }
+
+  async function handleForeground() {
+    if (document.visibilityState !== "visible") return;
+    const reloaded = await checkForNews();
+    if (reloaded !== true) await acknowledgeVisibleNews();
   }
 
   async function refreshNow() {
@@ -263,6 +272,10 @@
   }
 
   async function markNewsAsSeen() {
+    await acknowledgeVisibleNews({ hideMarkers: true });
+  }
+
+  async function acknowledgeVisibleNews({ hideMarkers = false } = {}) {
     const newest = newestCardTimestamp();
     if (newest) {
       const value = new Date(newest).toISOString();
@@ -271,10 +284,12 @@
       const registration = await registrationPromise;
       registration?.active?.postMessage({ type: "NEWS_MARK_SEEN", latest: value });
     }
-    cards.forEach((card) => {
-      const badge = card.querySelector("[data-news-new-badge]");
-      if (badge) badge.hidden = true;
-    });
+    if (hideMarkers) {
+      cards.forEach((card) => {
+        const badge = card.querySelector("[data-news-new-badge]");
+        if (badge) badge.hidden = true;
+      });
+    }
     if (markReadButton) markReadButton.hidden = true;
     await updateAppBadge(0);
   }
