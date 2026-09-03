@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T11:41:11.577Z",
+  "updated_at": "2026-09-03T12:12:54.918Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -614,7 +614,45 @@
           "published_at": "2026-09-03T11:15:45.293Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
+        "sources": [
+          {
+            "source_id": "eu-kommission-presse",
+            "publisher": "Europäische Kommission – Press Corner",
+            "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
+            "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+            "summary": "European Commission Pressemitteilung Brussels, 02 Sep 2026 Die Europäische Kommission hat einen ab 2031 zur Verfügung stehenden Kapazitätsmechanismus für Deutschland nach den EU-Beihilfevorschriften geprüft und genehmigt. Mit dieser Maßnahme, deren Kosten auf 15,6 Mrd. EUR bis 35,2 Mrd. EUR geschätzt werden, soll sichergestellt werden, dass ausreichende Kapazitäten für die Erzeugung, Speicherung und den flexiblen Verbrauch von Strom vorhanden sind, sodass die Stromerzeugung die erwartete Nachfrage durchweg decken kann.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-01T22:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 94,
+            "source_topic": "Europa",
+            "content_hash": "60648a1d2214fcab950868dbcba18f279ffc7a4739248dd66702ad3dce14bd29"
+          },
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
+            "title": "Für eine verlässliche Stromversorgung – auch in Zukunft",
+            "summary": "Deutschland hat eine der verlässlichsten Stromversorgungen. Die Bundesregierung will, dass das auch in Zukunft so bleibt. Das Gesetz für neue Stromkapazitäten ist am 22. Juli in Kraft getreten. Lesen Sie hier wichtige Fragen und Antworten.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-03T11:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "276d56663726c4caada248a8ebc1b45e733f4df998078b7ead24e6621c9c883d"
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:503"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-52d036419dd386a9",
@@ -1035,7 +1073,30 @@
           "published_at": "2026-09-03T11:02:59.364Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/denkmal-fuer-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsminister-weimer-zum-jahrestag-des-deutschen-ueberfalls-auf-polen-2451024",
+            "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
+            "summary": "Am 1. September 1939 überfiel das nationalsozialistische Deutschland Polen und begann damit den Zweiten Weltkrieg. Um an die Millionen Opfer der deutschen Aggression und Besatzung zu erinnern, soll im Zentrum Berlins ein dauerhafter Ort des Gedenkens entstehen: das vom Deutschen Bundestag beschlossene Denkmal für die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung in Polen 1939–1945. Derzeit läuft ein Gestaltungswettbewerb; im Dezember 2026 wird ein Preisgericht über einen Siegerentwurf beraten. Anlässlich des Jahrestages des deutschen Überfalls auf Polen sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „Der Krieg und die deutsche Besatzung brachten unermessliches Leid über Polen und seine Bevölkerung. Wir gedenken heute der Millionen Menschen, die ermordet, vertrieben und ihrer Heimat beraubt wurden. An die polnischen Opfer der deutschen Aggression zu erinnern, sind wir ihnen und ihren Nachkommen schuldig. Denn nur durch eine lebendige Erinnerung und...",
+            "source_type": "official_rss",
+            "published_at": "2026-09-01T08:45:00.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "b749d23ec26ae36ae17b120dc4810865fe32446386340f135d1922df291471e3"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-7e01f9f729faff83",
@@ -1232,7 +1293,32 @@
           "published_at": "2026-09-03T10:52:37.099Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/neue-genomische-techniken-verbraucherwissen-2449756",
+            "title": "Neue Gentechnik-Regeln in der EU",
+            "summary": "Im Juni 2026 hat das EU-Parlament eine grundlegende Reform im Umgang mit Neuen Genomischen Techniken beschlossen. Was bedeutet die Neuregelung konkret für Verbraucherinnen und Verbraucher? Die wichtigsten Fragen und Antworten im Überblick.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-01T09:59:16.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "b1d7e1089cfee614d1a31b1d8a64192fa7326a8dc0f19be8117c2c5288782c71"
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:503"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-3f78a7bbd2a740d6",
@@ -1429,7 +1515,32 @@
           "published_at": "2026-09-03T10:52:37.099Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
+        "sources": [
+          {
+            "source_id": "eu-kommission-presse",
+            "publisher": "Europäische Kommission – Press Corner",
+            "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1779",
+            "title": "Kommission genehmigt staatliche Beihilfe Portugals in Höhe von 30 Mio. EUR für Unternehmen in Landwirtschaft, Fischerei und Aquakultur aufgrund hoher Kraftstoff- und Düngemittelpreise",
+            "summary": "European Commission Pressemitteilung Brussels, 02 Sep 2026 Die Europäische Kommission hat eine mit 30 Mio. EUR ausgestattete Beihilferegelung für Unternehmen in der Landwirtschaft, Fischerei und Aquakultur genehmigt, die mit hohen Kraftstoff- und Düngemittelpreisen konfrontiert sind.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-01T22:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 94,
+            "source_topic": "Europa",
+            "content_hash": "e58b3445d693295313a0014e2d817f0135dfad4dcff1364c178fda7b6a45157a"
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:503"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-465bbe1a9e2b1911",
@@ -1630,7 +1741,32 @@
           "published_at": "2026-09-03T10:52:37.099Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/abschaffung-gasspeicherumlage-2375074",
+            "title": "Abschaffung der Gasspeicherumlage",
+            "summary": "Die Gasspeicherumlage ist seit dem 1. Januar 2026 abgeschafft. Damit entlastet die Bundesregierung die Verbraucherinnen und Verbraucher bei den Gaspreisen um mehr als drei Milliarden Euro. Das Wichtigste im Überblick.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T08:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "0c8b1c9c137ae5909954ab4b0d8fbbf85bb099215599778ff9f730776744de7f"
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:503"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-63b6c057c20a2143",
@@ -1832,7 +1968,30 @@
           "published_at": "2026-09-03T10:52:37.099Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+            "title": "KI-Sicherheitsinstitut eröffnet",
+            "summary": "Cyberattacken, neue komplexe KI-Modelle und sich rasant entwickelnde digitale Anwendungen werfen Fragen nach Sicherheit, Verantwortung und möglichen Risiken auf. Deutschland ist vorbereitet, nun hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
+            "source_type": "official_rss",
+            "published_at": "2026-08-31T17:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-143d07abf300e106",
@@ -1872,18 +2031,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
@@ -1923,19 +2082,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
@@ -2137,7 +2295,32 @@
           "published_at": "2026-09-03T07:58:18.398Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
+            "title": "Neues Förderprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten – Staatsminister Weimer: „Gerade jetzt Orte der Erinnerung stärken“",
+            "summary": "Ab sofort können sich Gedenkstätten und Erinnerungsorte zur Aufarbeitung der NS-Terrorherrschaft und der SED-Diktatur um eine Projektförderung durch den Bund bewerben. Der Beauftragte der Bundesregierung für Kultur und Medien (BKM) stellt dafür im Rahmen der Umsetzung der neuen Gedenkstättenkonzeption insgesamt zehn Millionen Euro zur Verfügung. Zum Bewerbungsstart des neuen Förderprogramms sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „In den Gedenkstätten schlägt das Herz unserer Erinnerungskultur. Deshalb verdienen sie jede Unterstützung. Mit der Projektförderung wollen wir Gedenkstätten und Erinnerungsorten dabei helfen, ihre historischen Orte zu bewahren, neue digitale Zugänge zu schaffen und zeitgemäße Bildungs- und Vermittlungsangebote zu entwickeln. Gerade angesichts der wachsenden Herausforderungen, vor denen Gedenkstätten stehen, ist es wichtig, dass innovative Ideen und nachhaltige Projekte die notwendige Stärkung erfahren.“ Gefördert werden Projekte in dr...",
+            "source_type": "official_rss",
+            "published_at": "2026-09-03T07:06:42.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "16116dd2d59b78485f629f5bebf25268804ee270663de7b96bd1272d4b02246a"
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:503"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-3c8762489a80692b",
@@ -2340,7 +2523,30 @@
           "published_at": "2026-09-03T07:58:18.398Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
+        "sources": [
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+            "title": "Regionalnachweisregister soll abgewickelt werden",
+            "summary": "Wirtschaft und Energie/Verordnung Das bisher beim Umweltbundesamt geführte Register für Regionalnachweise soll eingestellt werden. Das geht aus einer Verordnung der Bundesregierung hervor.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T13:20:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "172f2e3551e48f1cabca43252bc0c38cab3a386d95b590c02a1d6c6483b5de2d"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-a48a6799c362009d",
@@ -2536,7 +2742,30 @@
           "published_at": "2026-09-03T07:58:18.398Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
+        "sources": [
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209824",
+            "title": "Erkennung und Behandlung von Sepsis thematisiert",
+            "summary": "Gesundheit/KleineAnfrage Erkennung und Behandlung von Sepsis in Deutschland thematisiert die Fraktion Bündnis 90/Die Grünen in einer Kleinen Anfrage.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T13:20:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "c138ab79244a9cc66ce141b1539903a5176ca014618d23bfb4e26117d6e9696e"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-293fa4edfc2b5a5d",
@@ -2739,7 +2968,30 @@
           "published_at": "2026-09-03T07:58:18.398Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
+        "sources": [
+          {
+            "source_id": "bundesbank-allgemein",
+            "publisher": "Deutsche Bundesbank",
+            "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+            "title": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde",
+            "summary": "Öl- und Gaspreise schwanken weiterhin stark. Die Finanzmärkte sind sehr volatil. Es gibt viel Unsicherheit. […] Aber der Ansatz, Entscheidungen von Sitzung zu Sitzung zu treffen, hat sich in der Vergangenheit bewährt und wird dies sicherlich auch in Zukunft tun, sagt Joachim Nagel im Interview mit der französischen Zeitung Le Monde. Im Interview spricht Nagel über die aktuelle wirtschaftliche Entwicklung in Deutschland, die Möglichkeit von Zinserhöhungen bei der nächsten EZB-Ratssitzung sowie über die Notwendigkeit gemeinsamer europäischer Lösungen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T08:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 84,
+            "source_topic": "Finanzen",
+            "content_hash": "94823b6f34ea495e335146c43e119906b6931a453d75b9d3308372c55cccd96c"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-0e1ab5081b9f4045",
@@ -2937,7 +3189,30 @@
           "published_at": "2026-09-03T07:58:18.398Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
+        "sources": [
+          {
+            "source_id": "bundesbank-allgemein",
+            "publisher": "Deutsche Bundesbank",
+            "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/ezb/mfi-zinsstatistik-fuer-den-euroraum-juli-2026-1007288",
+            "title": "MFI-Zinsstatistik für den Euroraum: Juli 2026",
+            "summary": "Der gewichtete Indikator der Kreditfinanzierungskosten für neue Kredite an Unternehmen und der entsprechende Indikator für neue Wohnungsbaukredite an private Haushalte waren mit 3,80 % bzw. 3,54 % weitgehend unverändert.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T08:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 84,
+            "source_topic": "Finanzen",
+            "content_hash": "65e3413f6dc37bbbccfecb7e5820747bd2106f568b1bf2ffb1f51db1adec82eb"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-9e4c93f4907aaa42",
@@ -3140,7 +3415,30 @@
           "published_at": "2026-09-03T07:58:18.398Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-windenergie-auf-see-gesetz-2451190",
+            "title": "Für bezahlbare Windenergie auf See",
+            "summary": "Mit dem Windenergie-auf-See-Gesetz setzt die Bundesregierung ein weiteres deutliches Signal für einen kosteneffizienten und entschlossenen Ausbau der erneuerbaren Energien. Lesen Sie hier, warum das nicht nur für die Wirtschaft eine gute Nachricht ist.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-03T07:44:36.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "880ffa7b222a2d2081fbb2fc37988dd7d4885a680519667cc78584d19d6c8f55"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-ab0d79d228a04a51",
@@ -3338,7 +3636,30 @@
           "published_at": "2026-09-03T07:49:38.699Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
+        "sources": [
+          {
+            "source_id": "bundesrat-mitteilungen",
+            "publisher": "Bundesrat – Mitteilungen",
+            "url": "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0501-0600/0504-26.html",
+            "title": "504/26 | Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen | 3. September 2026",
+            "summary": "",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T22:01:00.000Z",
+            "primary_source": true,
+            "source_priority": 94,
+            "source_topic": "Politik",
+            "content_hash": "e362441ae1fa1127a3cf3507d33d24def790eb08e77dced1d570c2974f62a8b7"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-9cca0ad92ad1a84a",
@@ -3538,7 +3859,33 @@
           "published_at": "2026-09-03T07:49:38.699Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+            "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+            "summary": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte. So werden Verbraucherinnen und Verbraucher spürbar entlastet. Langfristig werden niedrigere Steuern und ein Industriestrompreis auch die Wirtschaft unterstützen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T13:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "c9baac27652662154968b40977d601b1a1234a6c2e6c217dd2fd3f76725bef59"
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_PUBLICATION_GATE_FACTORS_INVALID",
+          "AI_MATERIALITY_GATE_FAILED"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-c15cb7a9f3b72c35",
@@ -3736,7 +4083,32 @@
           "published_at": "2026-09-03T07:44:09.616Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192",
+            "title": "Einkommensteuerreform beschlossen",
+            "summary": "Die breite Mehrheit entlasten, verfügbare Einkommen stärken und Subventionen mit Augenmaß abbauen: Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T09:29:17.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "08b186c00776867d5ed5bf550ee7dcd72d35b516ee25de0393bad4822af1bad5"
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:503"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-98ff7e403362fdf9",
@@ -3935,7 +4307,32 @@
           "published_at": "2026-09-03T07:44:09.616Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T12:12:54.918Z",
+        "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682",
+            "title": "Stärkerer Schutz kritischer Infrastrukturen",
+            "summary": "Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen, wie beispielsweise Energie, Transport und Verkehr, Gesundheit und Trinkwasser, festgelegt. Das Wichtigste im Überblick.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-02T06:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "27fba9f550908664f90807aebf4e645d4527a3c8799bd7e0070573b5f9916c20"
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_PUBLICATION_GATE_FACTORS_INVALID"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-b891f102e908a573",
@@ -4281,19 +4678,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-146cce2a1bef268e",
@@ -4334,19 +4730,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-2c4b8dc5bdfc3cb3",
@@ -4386,19 +4781,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-9d87c7944980e87e",
@@ -4437,18 +4831,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-e28250d4074683af",
@@ -4488,19 +4882,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:10:23.850Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:10:23.850Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
@@ -4540,18 +4933,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:10:23.850Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T11:10:23.850Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-61fc84ab4a746bcd",
@@ -4591,19 +4984,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "7cb1a8efbfa9caf92894d1caf19008906e156fbdf4ea9ab5f51d5fbac002332a",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-295572a4057fedd7",
@@ -4643,18 +5035,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
+          "checked_at": "2026-09-03T12:12:54.918Z"
         }
       ],
       "content_hash": "cc91a6828f0cf8263ef414975a07edea24755d20482180723bfcc34fee891995",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
+      "updated_at": "2026-09-03T12:12:54.918Z"
     },
     {
       "story_id": "wt-995822cc0b71a7f8",
