@@ -18,7 +18,7 @@ export function evaluateRunHealth(report, options = {}) {
   if (expectedAfter !== null && (!Number.isFinite(expectedAfter) || !Number.isFinite(startedAt) || startedAt < expectedAfter)) errors.push("RUN_REPORT_STALE");
   if (!options.expectedAfter && Number.isFinite(startedAt) && nowMs - startedAt > maxAgeMinutes * 60 * 1000) errors.push("RUN_REPORT_STALE");
   if (report?.ai_error) errors.push("AI_PROVIDER_DEGRADED");
-  if (Number(report?.source_successes || 0) === 0) errors.push("NO_SOURCE_SUCCEEDED");
+  if (Number(report?.source_successes || 0) === 0 && report?.sources_scheduled !== 0) errors.push("NO_SOURCE_SUCCEEDED");
   if (Number(report?.source_failures || 0) > 0) errors.push("SOURCE_COVERAGE_DEGRADED");
   if (report?.status && report.status !== "ok") errors.push("RUN_STATUS_NOT_OK");
 

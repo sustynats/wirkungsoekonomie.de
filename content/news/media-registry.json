@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-03",
+  "policy": {
+    "respect_robots": true,
+    "max_items_per_source": 60,
+    "copying_rule": "Kostenlose öffentliche Recherche. Keine Abos, bezahlten Nachrichten-APIs, Login- oder Paywall-Umgehung. Quellen mit ungeklärtem Zugang bleiben deaktiviert. Metadaten sind Recherchehinweise, kein Volltext und kein unabhängiger Faktennachweis. Eigene journalistische Synthese statt Artikelnacherzählung; keine fremden Bilder oder Volltexte speichern."
+  },
+  "public_article_sources": ["dlf-nachrichten", "dlf-wirtschaft", "dlf-wissen", "dlf-gesellschaft", "zdfheute-nachrichten", "ndr-info", "wdr-nachrichten", "mdr-nachrichten", "swr-aktuell", "rbb24-nachrichten", "hr-hessenschau", "dw-news", "taz-aktuell", "klimareporter-news"],
+  "source_overrides": {
+    "greenpeace-presse": { "feed_url": "https://presseportal.greenpeace.de/releases/", "source_type": "html_index", "html_layout": "pressroom_article_list", "access": { "status": "public", "cost_usd": 0, "article": "bounded_public_text", "html_index": true, "terms_url": "https://presseportal.greenpeace.de/releases/", "note": "Öffentliche Presseübersicht: robots.txt erlaubt diese HTML-Seiten, sperrt jedoch .atom. Deshalb nur die erlaubte Übersicht und bei Bedarf begrenzten öffentlichen Pressetext lesen. Keine Bilder übernehmen; Greenpeace-Aussagen bleiben zugeschrieben." } },
+    "wiwo-schlagzeilen": { "allowed_redirect_hosts": ["feeds.cms.wiwo.de"] },
+    "wto-news": { "enabled": false, "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "robots.txt sperrt den automatisierten Direktabruf für diesen Worker. Keine Umgehung; freie alternative Dokumente erforderlich." } },
+    "bundesrat-mitteilungen": { "enabled": false, "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Direkter automatischer Abruf derzeit durch robots.txt gesperrt. Keine Umgehung. Entscheidungen zusätzlich über Bundestag, Bundesregierung und journalistische Quellen recherchieren; dies ist keine vollständige Bundesrat-Abdeckung." } },
+    "bmas-aktuell": { "enabled": false, "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Direkter automatischer Abruf derzeit durch robots.txt gesperrt. Keine Umgehung; freie alternative Belege erforderlich." } },
+    "ezb-presse": { "geography": ["EU"], "language": "en" },
+    "eu-kommission-presse": { "geography": ["EU"], "language": "de" },
+    "umweltbundesamt-presse": { "frequency_class": "regular", "max_latest_item_age_hours": 720 }
+  },
+  "sources": [
+    {
+      "source_id": "europepmc-impact-research", "publisher_id": "europe-pmc", "name": "Europe PMC – offene Wirkungsforschung", "url": "https://europepmc.org/", "feed_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=25&query=FIRST_PDATE%3A%5B{since_date}%20TO%20{today}%5D%20AND%20OPEN_ACCESS%3AY%20AND%20%28TITLE_ABS%3Ahealth%20OR%20TITLE_ABS%3Aclimate%20OR%20TITLE_ABS%3Apollution%20OR%20TITLE_ABS%3Ainequality%29", "source_type": "europepmc_json", "publisher_kind": "research_index", "research_lane": "blindspot", "source_role": "study_metadata", "primary_source": true, "enabled": true, "allow_empty": true, "topic": "Wissenschaft", "language": "en", "geography": ["international"], "frequency_class": "slow_monitoring", "lookback_days": 3,
+      "why_relevant": "Aktive Datums- und Themensuche nach neuen frei zugänglichen Studien zu Gesundheit, Klima, Umweltbelastung und Ungleichheit, auch ohne Medienmeldung.",
+      "editorial_context": "Europe PMC ist ein Rechercheindex, nicht der Urheber aller gelisteten Studien. Abstract, Originalstudie, Peer-Review/Preprint, Methodik und Interessenkonflikte werden getrennt behandelt. Ein Abstract ersetzt keine vollständige Methodenprüfung.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://europepmc.org/RestfulWebService", "note": "Kostenlose öffentliche API; ausschließlich als Open Access ausgewiesene Treffer. Kein Zugriff auf gesperrte Studienvolltexte." }
+    },
+    {
+      "source_id": "france24-en", "publisher_id": "france24", "name": "France 24", "url": "https://www.france24.com/en/", "feed_url": "https://www.france24.com/en/rss", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Geopolitik", "language": "en", "geography": ["international"],
+      "why_relevant": "Internationale journalistische Nachrichten mit zusätzlichen Blickwinkeln auf Europa, Afrika und weltpolitische Entwicklungen.",
+      "editorial_context": "Eigene Berichte und Agenturmeldungen getrennt zählen; internationale Verbreitung ist kein zusätzlicher unabhängiger Beleg.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.france24.com/en/rss" }
+    },
+    {
+      "source_id": "euronews-en", "publisher_id": "euronews", "name": "Euronews", "url": "https://www.euronews.com/", "feed_url": "https://www.euronews.com/rss?level=theme&name=news", "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Europa", "language": "en", "geography": ["EU", "international"],
+      "why_relevant": "Europäische und internationale journalistische Nachrichten, die nationale Perspektiven ergänzen können.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.euronews.com/rss" }
+    },
+    {
+      "source_id": "wiwo-schlagzeilen", "publisher_id": "wirtschaftswoche", "name": "WirtschaftsWoche", "url": "https://www.wiwo.de/", "feed_url": "https://www.wiwo.de/contentexport/feed/rss/schlagzeilen", "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Wirtschaft", "language": "de", "geography": ["DE", "international"],
+      "why_relevant": "Wirtschaftspolitik, Unternehmensentscheidungen, Recherchen und substanzielle Interviews mit Folgen für Arbeit, Investitionen und Märkte.",
+      "editorial_context": "Kommentare, Anlageempfehlungen, Eigenwerbung und Unternehmensbehauptungen nicht mit belegten Nachrichten verwechseln. Keine Rekonstruktion von Plus-Artikeln.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.wiwo.de/" }
+    },
+    {
+      "source_id": "stern-schlagzeilen", "publisher_id": "stern", "name": "stern", "url": "https://www.stern.de/", "feed_url": "https://www.stern.de/feed/standard/all/", "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "language": "de", "geography": ["DE", "international"],
+      "why_relevant": "Gesellschaft, Politik, Recherchen und relevante Entwicklungen; Prominenz und Unterhaltung allein sind kein Nachrichtenwert für diesen Ticker.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.stern.de/sonst/rss-die-rss-feeds-von-stern-de-3516462.html" }
+    },
+    {
+      "source_id": "tagesspiegel-home", "publisher_id": "tagesspiegel", "name": "Der Tagesspiegel", "url": "https://www.tagesspiegel.de/", "feed_url": "https://www.tagesspiegel.de/contentexport/feed/home", "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Politik", "language": "de", "geography": ["DE", "Berlin"],
+      "why_relevant": "Bundespolitik, Berliner und regionale Recherche sowie wirtschaftliche und gesellschaftliche Entwicklungen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.tagesspiegel.de/" }
+    },
+    {
+      "source_id": "dw-news", "publisher_id": "deutsche-welle", "name": "Deutsche Welle", "url": "https://www.dw.com/", "feed_url": "https://rss.dw.com/xml/rss-de-news", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Geopolitik", "language": "de", "geography": ["international"],
+      "why_relevant": "International ausgerichtete journalistische Berichterstattung; erweitert den Blick über deutsche Institutionen hinaus.",
+      "editorial_context": "RSS-Metadaten als Recherchehinweis. Die gesonderte DW/dpa-Partnerschaft German News Service wird nicht als gebuchter oder freigeschalteter Zugang ausgegeben.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://rss.dw.com/xml/rss-de-news" }
+    },
+    {
+      "source_id": "un-news", "publisher_id": "united-nations", "name": "UN News", "url": "https://news.un.org/en/", "feed_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "source_type": "official_rss", "publisher_kind": "institution", "research_lane": "primary", "source_role": "institutional_statement", "primary_source": true, "enabled": false, "topic": "Geopolitik", "language": "en", "geography": ["international"],
+      "why_relevant": "Internationale Politik, humanitäre Lagen, Menschenrechte und UN-Entscheidungen, auch außerhalb des deutschen Nachrichtenschwerpunkts.",
+      "editorial_context": "Institutionelle UN-Kommunikation, keine unabhängige journalistische Zweitbestätigung. Aussagen beteiligter Akteure bleiben zugeschrieben.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "metadata_only", "note": "Der beworbene Feed fällt unter die Robots-Sperre */news/. Kein Ausweichen auf den ausdrücklich ausgenommenen Google-User-Agent; Zugang bis zur Klärung deaktiviert.", "terms_url": "https://www.un.org/en/delegate/page/un-news-outlets" }
+    },
+    {
+      "source_id": "who-news", "publisher_id": "who", "name": "Weltgesundheitsorganisation (WHO)", "url": "https://www.who.int/", "feed_url": "https://www.who.int/rss-feeds/news-english.xml", "source_type": "official_rss", "publisher_kind": "institution", "research_lane": "primary", "source_role": "institutional_statement", "primary_source": true, "enabled": true, "topic": "Gesundheit", "language": "en", "geography": ["international"],
+      "why_relevant": "Internationale Gesundheitslagen, Versorgung, Prävention, Empfehlungen und neue Gesundheitsdaten.",
+      "editorial_context": "Empfehlung, Lagebewertung, Datenbefund und tatsächlich beobachtete Veränderung müssen getrennt bleiben.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.who.int/rss-feeds" }
+    },
+    {
+      "source_id": "wto-news", "publisher_id": "wto", "name": "Welthandelsorganisation (WTO)", "url": "https://www.wto.org/", "feed_url": "https://www.wto.org/library/rss/latest_news_e.xml", "source_type": "official_rss", "publisher_kind": "institution", "research_lane": "primary", "primary_source": true, "enabled": true, "topic": "Wirtschaft", "language": "en", "geography": ["international"], "frequency_class": "regular",
+      "why_relevant": "Handelsregeln, Streitentscheidungen und internationale Handelsdaten mit möglichen grenzüberschreitenden Folgen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.wto.org/library/rss/latest_news_e.xml" }
+    },
+    {
+      "source_id": "ipcc-news", "publisher_id": "ipcc", "name": "IPCC", "url": "https://www.ipcc.ch/", "feed_url": "https://www.ipcc.ch/feed/", "source_type": "official_rss", "publisher_kind": "institution", "research_lane": "blindspot", "source_role": "research_announcement", "primary_source": true, "enabled": true, "topic": "Klima", "language": "en", "geography": ["international"], "frequency_class": "slow_monitoring",
+      "why_relevant": "Neue Sachstandsberichte und wissenschaftliche Synthesen zu Klima, Risiken und möglichen Handlungsfolgen.",
+      "editorial_context": "Eine Pressemitteilung zum Bericht ersetzt nicht dessen Methoden, Unsicherheitsangaben und eigentliche Befunde.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.ipcc.ch/" }
+    },
+    {
+      "source_id": "greenpeace-presse", "publisher_id": "greenpeace", "name": "Greenpeace Deutschland", "url": "https://presseportal.greenpeace.de/", "feed_url": "https://presseportal.greenpeace.de/press_releases.atom", "source_type": "ngo_atom", "publisher_kind": "ngo", "research_lane": "blindspot", "source_role": "advocacy_statement", "primary_source": true, "enabled": true, "topic": "Klima", "language": "de", "geography": ["DE", "international"], "frequency_class": "regular",
+      "why_relevant": "Eigene Recherchen, beauftragte Studien und Hinweise auf Umwelt- und Klimarisiken können relevante blinde Flecken aufzeigen.",
+      "editorial_context": "Greenpeace ist eine Interessenorganisation. Kampagnenaussagen sind zuzuschreiben; Studienmethoden, Auftraggeber, Originalbefunde und unabhängige Gegenprüfung sind getrennt zu prüfen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://presseportal.greenpeace.de/releases/", "note": "Öffentlich angebotenes Presse-Atom. Keine automatische Übernahme von Bildern, Kampagnenbehauptungen oder Studienvolltexten." }
+    },
+    {
+      "source_id": "tagesschau-access", "publisher_id": "tagesschau", "name": "tagesschau / ARD", "url": "https://www.tagesschau.de/", "feed_url": "https://www.tagesschau.de/index~rss2.xml", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "Politik", "geography": ["DE", "international"],
+      "why_relevant": "Zentrale öffentlich-rechtliche Nachrichtenquelle für Deutschland und internationale Entwicklungen.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "terms_url": "https://www.tagesschau.de/infoservices/rssfeeds", "note": "Der Anbieter nennt Beschränkungen für kommerzielle RSS-Nutzung. Freie Freigabe für diese automatisierte redaktionelle Nutzung noch nicht geklärt; regionale ÖR-Angebote und andere öffentliche Quellen getrennt nutzen. Kein kostenpflichtiger Vertrag." }
+    },
+    {
+      "source_id": "zeit-access", "publisher_id": "zeit", "name": "DIE ZEIT / ZEIT ONLINE", "url": "https://www.zeit.de/", "feed_url": "https://newsfeed.zeit.de/index", "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "Politik", "geography": ["DE", "international"],
+      "why_relevant": "Überregionale Nachrichten, Hintergründe und Recherchen. Bedeutung wird am einzelnen Ereignis geprüft.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "terms_url": "https://www.zeit.de/impressum/index", "note": "Vorbehalt zur kommerziellen automatisierten Auswertung prüfen. Ohne kostenlose Freigabe kein direkter Analysezugang, keine Rekonstruktion von ZEIT+-Artikeln." }
+    },
+    {
+      "source_id": "sz-access", "publisher_id": "sueddeutsche", "name": "Süddeutsche Zeitung", "url": "https://www.sueddeutsche.de/", "feed_url": "https://rss.sueddeutsche.de/rss/Topthemen", "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "Politik", "geography": ["DE", "international"],
+      "why_relevant": "Überregionale und regionale Recherchen, Politik, Wirtschaft und Gesellschaft.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "terms_url": "https://www.sueddeutsche.de/updates-rss", "note": "Der Anbieter verweist geschäftliche RSS-Nutzung an eine gesonderte Klärung. Keine kostenpflichtige Freischaltung, keine SZ+-Umgehung." }
+    },
+    {
+      "source_id": "welt-access", "publisher_id": "welt", "name": "WELT", "url": "https://www.welt.de/", "source_type": "media_discovery", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "Politik", "requires_corroboration": true,
+      "why_relevant": "Relevante Ereignisse können als Recherchehinweis dienen; zentrale Behauptungen benötigen zusätzliche, unabhängige oder primäre Belege.",
+      "editorial_context": "Vom Betreiber ausdrücklich für kritische Beobachtung vorgesehen. Das ist eine Prüfregel, keine pauschale Tatsachenbewertung jedes Artikels.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Kostenlosen direkten Metadatenzugang und Nutzungsrahmen noch verifizieren. Keine WELT+-Umgehung." }
+    },
+    {
+      "source_id": "bild-access", "publisher_id": "bild", "name": "BILD", "url": "https://www.bild.de/", "source_type": "media_discovery", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "Politik", "requires_corroboration": true,
+      "why_relevant": "Beobachtung substanzieller Nachrichtenhinweise, nicht Übernahme von Aufmerksamkeit oder Zuspitzung als Relevanznachweis.",
+      "editorial_context": "Vom Betreiber ausdrücklich für kritische Beobachtung vorgesehen; zentrale Behauptungen bedürfen weiterer Belege. Kein pauschales Urteil über jeden Beitrag.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Kostenlosen direkten Zugang noch verifizieren. Keine BILDplus-Umgehung." }
+    },
+    {
+      "source_id": "taz-aktuell", "publisher_id": "taz", "name": "taz", "url": "https://taz.de/", "feed_url": "https://taz.de/rss.xml", "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "language": "de", "geography": ["DE", "international"],
+      "why_relevant": "Recherchen, Interviews und Berichte zu Politik, Sozialem und Umwelt. Politische Perspektive ist kein pauschaler Ausschlussgrund; Evidenz und Relevanz werden je Meldung geprüft.",
+      "editorial_context": "Journalistische Perspektive und Meinung kennzeichnen; keine Gleichsetzung von Haltung und Belegqualität.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://taz.de/", "note": "Vom Anbieter auf der Startseite ausgewiesener RSS-Recherchefeed; keine Volltextübernahme." }
+    },
+    {
+      "source_id": "manager-magazin-news", "publisher_id": "manager-magazin", "name": "manager magazin", "url": "https://www.manager-magazin.de/", "feed_url": "https://www.manager-magazin.de/news/index.rss", "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Wirtschaft", "language": "de", "geography": ["DE", "international"],
+      "why_relevant": "Unternehmensentscheidungen, Recherchen und substanzielle Interviews können Arbeitsplätze, Investitionen und Marktstrukturen betreffen.",
+      "editorial_context": "Keine Rekonstruktion kostenpflichtiger Exklusivartikel. Unternehmensankündigungen und unabhängig geprüfte Tatsachen unterscheiden.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://gruppe.spiegel.de/syndication/haeufige-fragen" }
+    },
+    {
+      "source_id": "zdfheute-nachrichten", "publisher_id": "zdfheute", "name": "ZDFheute", "url": "https://www.zdfheute.de/", "feed_url": "https://www.zdfheute.de/rss/zdf/nachrichten", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Politik", "language": "de", "geography": ["DE", "international"],
+      "why_relevant": "Öffentlich-rechtliche Nachrichten aus Deutschland und der Welt; ergänzt andere Redaktionen und amtliche Quellen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.zdfheute.de/", "note": "RSS-Link auf der Anbieter-Startseite. Ausschließlich Recherchemetadaten, keine Videos, Bilder oder Artikelkopien." }
+    },
+    {
+      "source_id": "ndr-info", "publisher_id": "ndr", "name": "NDR", "url": "https://www.ndr.de/", "feed_url": "https://www.ndr.de/nachrichten/info/index~rss2.xml", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Politik", "geography": ["DE", "Norddeutschland"],
+      "why_relevant": "Regionale Vorgänge in Norddeutschland und überregionale Nachrichten; lokale Betroffenheit kann auch ohne große Medienresonanz materiell sein.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.ndr.de/nachrichten/info" }
+    },
+    {
+      "source_id": "wdr-nachrichten", "publisher_id": "wdr", "name": "WDR", "url": "https://www1.wdr.de/", "feed_url": "https://www1.wdr.de/uebersicht-100.feed", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "geography": ["DE", "Nordrhein-Westfalen"],
+      "why_relevant": "Regionale Politik, Wirtschaft, Infrastruktur und Lebensbedingungen in Nordrhein-Westfalen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www1.wdr.de/nachrichten/index.html" }
+    },
+    {
+      "source_id": "mdr-nachrichten", "publisher_id": "mdr", "name": "MDR", "url": "https://www.mdr.de/", "feed_url": "https://www.mdr.de/nachrichten/index~rss2.xml", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "geography": ["DE", "Mitteldeutschland"],
+      "why_relevant": "Regionale Entscheidungen und Recherche aus Sachsen, Sachsen-Anhalt und Thüringen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.mdr.de/nachrichten" }
+    },
+    {
+      "source_id": "swr-aktuell", "publisher_id": "swr", "name": "SWR Aktuell", "url": "https://www.swr.de/", "feed_url": "https://www.swr.de/~rss/swraktuell/index.xml", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "geography": ["DE", "Südwestdeutschland"],
+      "why_relevant": "Regionale Recherche, Wirtschafts- und Gesellschaftsnachrichten aus Baden-Württemberg und Rheinland-Pfalz.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.swr.de/swraktuell/" }
+    },
+    {
+      "source_id": "rbb24-nachrichten", "publisher_id": "rbb", "name": "rbb24", "url": "https://www.rbb24.de/", "feed_url": "https://www.rbb24.de/index.xml/feed=rss.xml", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Politik", "geography": ["DE", "Berlin-Brandenburg"],
+      "why_relevant": "Landes- und Kommunalpolitik, Wohnraum, Verkehr und Wirtschaft in Berlin und Brandenburg.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.rbb24.de/" }
+    },
+    {
+      "source_id": "hr-hessenschau", "publisher_id": "hr", "name": "hessenschau", "url": "https://www.hessenschau.de/", "feed_url": "https://www.hessenschau.de/index.rss", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "geography": ["DE", "Hessen"],
+      "why_relevant": "Regionale Entscheidungen, Finanzwirtschaft, Infrastruktur und Gesellschaft in Hessen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.hessenschau.de/rss/index.html" }
+    },
+    {
+      "source_id": "klimareporter-news", "publisher_id": "klimareporter", "name": "Klimareporter°", "url": "https://klimareporter.de/", "feed_url": "https://klimareporter.de/?format=feed&type=rss", "allowed_redirect_hosts": ["www.klimareporter.de"], "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "blindspot", "primary_source": false, "enabled": true, "topic": "Klima", "geography": ["DE", "international"], "frequency_class": "regular",
+      "why_relevant": "Fachjournalistische Klima- und Energieberichterstattung, Hintergrundanalysen und Interviews.",
+      "editorial_context": "Fachperspektive offenlegen, berichtete Fakten von Kommentar und Zukunftsannahmen unterscheiden.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://klimareporter.de/ueber-klimareporter" }
+    },
+    {
+      "source_id": "smc-research", "publisher_id": "science-media-center", "name": "Science Media Center Germany", "url": "https://www.sciencemediacenter.de/", "feed_url": "https://sciencemediacenter.de/feed.rss", "allowed_redirect_hosts": ["www.sciencemediacenter.de"], "source_type": "media_rss", "publisher_kind": "science_mediation", "research_lane": "blindspot", "source_role": "expert_context", "primary_source": false, "enabled": true, "topic": "Wissenschaft", "geography": ["DE", "international"], "frequency_class": "regular",
+      "why_relevant": "Wissenschaftlicher Kontext und Experteneinordnung zu neuen Studien, Gesundheit, Klima und Technik.",
+      "editorial_context": "Experteneinschätzung ist nicht die Originalstudie. Methode, Preprint-Status, Unsicherheit und Interessenkonflikte bleiben prüfpflichtig. Keine Embargo- oder Login-Inhalte abrufen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.sciencemediacenter.de/journalisten" }
+    },
+    {
+      "source_id": "spiegel-schlagzeilen", "publisher_id": "spiegel", "name": "DER SPIEGEL", "url": "https://www.spiegel.de/", "feed_url": "https://www.spiegel.de/schlagzeilen/tops/index.rss",
+      "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "source_role": "journalistic_report", "primary_source": false, "enabled": true, "topic": "Politik", "language": "de", "geography": ["DE", "international"], "frequency_class": "high_frequency",
+      "why_relevant": "Überregionale Berichterstattung, Recherchen und Interviews zu Politik, Wirtschaft und Gesellschaft. Entscheidend ist der einzelne belegte Vorgang, nicht die Marke.",
+      "editorial_context": "Journalistische Sekundärquelle. Agenturübernahmen und eigene Recherche werden auf Meldungsebene unterschieden; SPIEGEL+-Volltexte werden nicht abgerufen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://gruppe.spiegel.de/syndication/haeufige-fragen", "note": "RSS-Überschrift und Teaser sind laut Anbieter kostenlos nutzbar; keine Bilder. Keine Aussage über Freigabe von Volltexten." }
+    },
+    {
+      "source_id": "dlf-nachrichten", "publisher_id": "deutschlandfunk", "name": "Deutschlandfunk", "url": "https://www.deutschlandfunk.de/", "feed_url": "https://www.deutschlandfunk.de/nachrichten-100.rss",
+      "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "source_role": "journalistic_report", "primary_source": false, "enabled": true, "topic": "Politik", "language": "de", "geography": ["DE", "international"], "frequency_class": "high_frequency",
+      "why_relevant": "Öffentlich-rechtliche Nachrichten mit nationaler und internationaler Perspektive; ergänzt amtliche Ankündigungen um journalistische Einordnung.",
+      "editorial_context": "Redaktionelle Berichte, Interviews und Agenturmaterial sind getrennt zu prüfen. Ein Interview belegt eine zurechenbare Aussage, nicht automatisch ihren Inhalt.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.deutschlandfunk.de/rss-angebot-102.html", "note": "Öffentlich angebotener RSS-Recherchefeed. Kein Spiegeln von Artikeln, Sendungen oder Bildern." }
+    },
+    {
+      "source_id": "dlf-wirtschaft", "publisher_id": "deutschlandfunk", "name": "Deutschlandfunk – Wirtschaft", "url": "https://www.deutschlandfunk.de/", "feed_url": "https://www.deutschlandfunk.de/wirtschaft-106.rss",
+      "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Wirtschaft", "language": "de", "geography": ["DE", "international"], "frequency_class": "high_frequency",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.deutschlandfunk.de/rss-angebot-102.html" }
+    },
+    {
+      "source_id": "dlf-wissen", "publisher_id": "deutschlandfunk", "name": "Deutschlandfunk – Wissen", "url": "https://www.deutschlandfunk.de/", "feed_url": "https://www.deutschlandfunk.de/wissen-106.rss",
+      "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "blindspot", "primary_source": false, "enabled": true, "topic": "Wissenschaft", "language": "de", "geography": ["DE", "international"], "frequency_class": "regular",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.deutschlandfunk.de/rss-angebot-102.html" }
+    },
+    {
+      "source_id": "dlf-gesellschaft", "publisher_id": "deutschlandfunk", "name": "Deutschlandfunk – Gesellschaft", "url": "https://www.deutschlandfunk.de/", "feed_url": "https://www.deutschlandfunk.de/gesellschaft-106.rss",
+      "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "blindspot", "primary_source": false, "enabled": true, "topic": "Soziales", "language": "de", "geography": ["DE"], "frequency_class": "regular",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.deutschlandfunk.de/rss-angebot-102.html" }
+    },
+    {
+      "source_id": "utopia-news", "publisher_id": "utopia", "name": "Utopia", "url": "https://utopia.de/", "feed_url": "https://utopia.de/tag/news/feed/",
+      "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "blindspot", "source_role": "journalistic_report", "primary_source": false, "enabled": true, "topic": "Klima", "language": "de", "geography": ["DE"], "frequency_class": "regular",
+      "why_relevant": "Nachhaltigkeitsbezogene Recherchen und Nachrichten können relevante Verbraucher-, Klima- und Wirtschaftsfragen sichtbar machen.",
+      "editorial_context": "Produktratgeber, Affiliate-Angebote und Lifestyle ohne materiellen Nachrichtenwert werden nicht automatisch übernommen. Kommerzielle und redaktionelle Beiträge sind zu unterscheiden.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://utopia.de/faq/rss-feeds-abonnieren/" }
+    },
+    {
+      "source_id": "reuters-access", "publisher_id": "reuters", "name": "Reuters", "url": "https://www.reuters.com/", "source_type": "agency_api", "publisher_kind": "agency", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "International", "language": "en", "geography": ["international"],
+      "why_relevant": "Internationale Agenturberichterstattung. Frei zugängliche Berichte anderer zugelassener Quellen können Reuters als Ursprung nennen; das ist kein direkter Reuters-Zugang.",
+      "access": { "status": "no_free_access", "cost_usd": 0, "article": "disabled", "terms_url": "https://www.reutersconnect.com/plans-and-pricing", "note": "Kein kostenloser freigegebener direkter Nachrichtendienst eingerichtet. Keine Bestellung, kein Vertrag und keine bezahlte API." }
+    },
+    {
+      "source_id": "dpa-access", "publisher_id": "dpa", "name": "dpa", "url": "https://www.dpa.com/de", "source_type": "agency_api", "publisher_kind": "agency", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "Politik", "language": "de", "geography": ["DE", "international"],
+      "why_relevant": "Überregionale und regionale Agenturmeldungen. Mehrere dpa-Abdrucke gelten nicht als mehrere unabhängige Belege.",
+      "access": { "status": "no_free_access", "cost_usd": 0, "article": "disabled", "terms_url": "https://www.dpa.com/de/kontakt/support", "note": "Kein kostenloser direkter dpa-Dienst eingerichtet. Freie Originalquellen und unabhängige Berichte nutzen; keine Abonnements abschließen." }
+    },
+    {
+      "source_id": "apollo-excluded", "publisher_id": "apollo-news", "name": "Apollo News", "url": "https://apollo-news.net/", "source_type": "excluded", "publisher_kind": "media", "primary_source": false, "enabled": false,
+      "why_relevant": "Nicht Teil der Nachrichtenrecherche: ausdrücklicher redaktioneller Ausschluss durch den Betreiber.",
+      "access": { "status": "excluded", "cost_usd": 0, "article": "disabled", "note": "Nicht abrufen, auch nicht über Proxys oder Syndikationsumwege als eigene Belegquelle." }
+    },
+    {
+      "source_id": "nius-excluded", "publisher_id": "nius", "name": "NIUS", "url": "https://www.nius.de/", "source_type": "excluded", "publisher_kind": "media", "primary_source": false, "enabled": false,
+      "why_relevant": "Nicht Teil der Nachrichtenrecherche: ausdrücklicher redaktioneller Ausschluss durch den Betreiber.",
+      "access": { "status": "excluded", "cost_usd": 0, "article": "disabled", "note": "Nicht abrufen, auch nicht über Proxys oder Syndikationsumwege als eigene Belegquelle." }
+    }
+  ]
+}
