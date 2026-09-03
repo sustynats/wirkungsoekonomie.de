@@ -1,0 +1,796 @@
+{
+  "generated_at": "2026-09-03T14:58:59.596Z",
+  "rasterizers": [],
+  "cases": [
+    {
+      "id": "kritis",
+      "note": "Referenzfall",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "kritis--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "kritis--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "kritis--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "kritis--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "kritis--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "kritis--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "lang",
+      "note": "Lange Überschrift, 2–3 Zeilen",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "lang--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "lang--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "lang--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 34.2,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "lang--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "lang--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "lang--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 34.2,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "kurz",
+      "note": "Sehr kurze Überschrift",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "kurz--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 54,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "kurz--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 54,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "kurz--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 1,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "kurz--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 54,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "kurz--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 54,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "kurz--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 1,
+          "truncated": false,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "sehr-lang",
+      "note": "Sehr lange deutsche Überschrift (Kürzung erwartet)",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "sehr-lang--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "sehr-lang--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "sehr-lang--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 34.2,
+          "lines": 4,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "sehr-lang--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "sehr-lang--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 5,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "sehr-lang--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 34.2,
+          "lines": 4,
+          "truncated": true,
+          "warnings": [
+            "HEADLINE_TRUNCATED"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ohne-kategorie",
+      "note": "Fehlende Kategorie",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "ohne-kategorie--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "ohne-kategorie--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "ohne-kategorie--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "ohne-kategorie--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "ohne-kategorie--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "ohne-kategorie--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "ohne-quelle",
+      "note": "Fehlende Quelle und fehlendes Datum",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "ohne-quelle--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 47,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "ohne-quelle--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 47,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "ohne-quelle--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "ohne-quelle--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "ohne-quelle--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "ohne-quelle--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "ohne-werte",
+      "note": "Fehlende Wirkungswerte (Panel wird zum Symbol)",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "ohne-werte--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "ohne-werte--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "ohne-werte--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "ohne-werte--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 54,
+          "lines": 3,
+          "truncated": false,
+          "warnings": [
+            "IMPACT_DATA_MISSING"
+          ]
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "ohne-werte--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 54,
+          "lines": 3,
+          "truncated": false,
+          "warnings": [
+            "IMPACT_DATA_MISSING"
+          ]
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "ohne-werte--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": [
+            "IMPACT_DATA_MISSING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eine-dimension",
+      "note": "Nur eine relevante Dimension",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "eine-dimension--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "eine-dimension--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "eine-dimension--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "eine-dimension--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 4,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "eine-dimension--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 41,
+          "lines": 4,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "eine-dimension--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "alle-hoch",
+      "note": "Mehrere sehr relevante Dimensionen, Rubrik unbekannt",
+      "renders": [
+        {
+          "mode": "editorial",
+          "size": "og",
+          "svg": "alle-hoch--editorial--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "wide",
+          "svg": "alle-hoch--editorial--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "editorial",
+          "size": "square",
+          "svg": "alle-hoch--editorial--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "og",
+          "svg": "alle-hoch--impact_card--og.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "wide",
+          "svg": "alle-hoch--impact_card--wide.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 62,
+          "lines": 3,
+          "truncated": false,
+          "warnings": []
+        },
+        {
+          "mode": "impact_card",
+          "size": "square",
+          "svg": "alle-hoch--impact_card--square.svg",
+          "png": null,
+          "rasterizer": null,
+          "headlineSize": 52.2,
+          "lines": 2,
+          "truncated": false,
+          "warnings": []
+        }
+      ]
+    }
+  ],
+  "fallback": {
+    "mode": "impact_card",
+    "warnings": [
+      "EDITORIAL_IMAGE_MISSING"
+    ]
+  },
+  "system": {
+    "entry": "scripts/news/title-image/index.mjs",
+    "functions": [
+      "renderTitleImage(input, { size, fonts, fontBase })",
+      "renderTitleImageFromStory(story, { mode, image, size, fonts })",
+      "storyToTitleInput(story, overrides)"
+    ],
+    "modes": [
+      "editorial",
+      "impact_card"
+    ],
+    "sizes": {
+      "og": "1200×630 (OpenGraph, LinkedIn, X (1,91:1))",
+      "wide": "1200×675 (Website, 16:9)",
+      "square": "1080×1080 (Social, quadratisch (1:1))"
+    },
+    "safeAreas": {
+      "landscape": {
+        "brand": {
+          "x": 0,
+          "y": 0,
+          "w": 0.55,
+          "h": 0.16
+        },
+        "text": {
+          "x": 0,
+          "y": 0.46,
+          "w": 0.64,
+          "h": 0.54
+        },
+        "label": {
+          "x": 0.64,
+          "y": 0.88,
+          "w": 0.36,
+          "h": 0.12
+        },
+        "motifFocus": {
+          "x": 0.42,
+          "y": 0.1,
+          "w": 0.54,
+          "h": 0.72
+        },
+        "avoid": [
+          "linkes unteres Drittel (Text)",
+          "linker oberer Streifen (Branding)",
+          "rechte untere Ecke (Kennzeichnung)"
+        ]
+      },
+      "square": {
+        "brand": {
+          "x": 0,
+          "y": 0,
+          "w": 0.7,
+          "h": 0.1
+        },
+        "text": {
+          "x": 0,
+          "y": 0.58,
+          "w": 1,
+          "h": 0.42
+        },
+        "label": {
+          "x": 0.55,
+          "y": 0.93,
+          "w": 0.45,
+          "h": 0.07
+        },
+        "motifFocus": {
+          "x": 0.08,
+          "y": 0.12,
+          "w": 0.84,
+          "h": 0.42
+        },
+        "avoid": [
+          "untere 42 % (Text)",
+          "oberer Streifen (Branding)",
+          "rechte untere Ecke (Kennzeichnung)"
+        ]
+      }
+    },
+    "fonts": {
+      "Source Serif 4": [
+        "source-serif-4-600.woff2",
+        "source-serif-4-700.woff2"
+      ],
+      "Inter": [
+        "inter-400.woff2",
+        "inter-500.woff2",
+        "inter-600.woff2",
+        "inter-700.woff2"
+      ]
+    },
+    "palette": {
+      "navy": "#0B1020",
+      "navyDeep": "#07152C",
+      "teal": "#102D3A",
+      "greenDeep": "#174F43",
+      "green": "#2F7D5C",
+      "gold": "#C89B3C",
+      "goldLight": "#FFD27B",
+      "ivory": "#F6F1E8",
+      "white": "#FFFFFF",
+      "textMuted": "rgba(255,255,255,0.74)",
+      "textSoft": "rgba(255,255,255,0.88)",
+      "dimHuman": "#B9C7EA",
+      "dimPlanet": "#63C08F",
+      "dimDemocracy": "#E1B65C",
+      "statusGreen": "#7ED4A6"
+    }
+  }
+}

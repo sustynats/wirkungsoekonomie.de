@@ -27,3 +27,6 @@ assets/audio/podcast/*.wav
 !assets/audio/podcast/podcast-folge-008-worte-wirken.mp3
 assets/video/*.mov
 assets/video/*.wav
+
+# Titelbild-Vorschauen: PNGs nur lokal (--png-out), SVG + Galerie versioniert
+docs/ops/title-image-previews/*.png

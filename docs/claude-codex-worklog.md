@@ -7,6 +7,16 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+## 2026-09-03
+
+### Claude · Wirkungsticker: visuelle Anker, UX-Umbau, Titelbildsystem (Branch `claude/wirkungsticker-visual-ux`)
+- **Was:** Neues Modul `scripts/news/visuals.mjs` (Icons, Dimensionsmeter, Verfahrensstand, Wirkpfad-Grafik, Auf-einen-Blick, Vertrag + Sanitizer für KI-Visuals). Übersicht: Meldungen direkt nach dem Hero, Toolbar mit Suche/Aktualisieren, gruppierte Filter mit Zählern, Karten mit Quelle/Status/Metern, ganzflächig klickbar; Filterleiste klebt jetzt unter dem sticky Header (lag vorher dahinter). Detailseite: Primärquelle als Button, Auf-einen-Blick, Abschnittsnavigation, Codex-Abschnitt „Worum geht es?“ integriert, Wirkpfad als Grafik, Risiken, Bedeutung als Kacheln, Quellenakte mit Herausgeber-Badges, Versionsverlauf als Zeitleiste. Titelbildsystem `scripts/news/title-image/` mit zwei Modi (Editorial Symbolbild, Wirkungskarte), SVG-Renderer ohne Abhängigkeiten, Rasterizer-Adapter, Vorschauen in `docs/ops/title-image-previews/`.
+- **Pfade:** `scripts/news/visuals.mjs`, `scripts/news/build.mjs`, `assets/css/news.css`, `assets/js/news.js`, `assets/js/news-pwa.js`, `scripts/news/title-image/*`, `tests/news/visuals.test.mjs`, `tests/news/title-image.test.mjs`, `docs/ops/WIRKUNGSTICKER.md`, `docs/ops/WIRKUNGSTICKER-TITELBILD.md`, `docs/handoff-wirkungsticker-visuals-codex.md`.
+- **Geprüft:** `npm run news:test` (alle Tests grün), `npm run news:build`, `npm run news:validate` grün; Screenshots Desktop/Mobile lokal; Titelbild-Vorschauen in beiden Modi und drei Größen.
+- **Offen für Codex:** Auftrag A (KI-Visuals im Prompt + Sanitizer vor dem Gate) und später Auftrag B (Titelbilder, Higgsfield, Moduswahl, CI-Rasterizer) laut `docs/handoff-wirkungsticker-visuals-codex.md`. Keine Pipeline-, Workflow- oder Cron-Änderungen durch Claude.
+
+---
+
 ## 2026-08-05
 
 ### Codex · Finales PDF der kooperativen Wirkungsordnung (Release)
