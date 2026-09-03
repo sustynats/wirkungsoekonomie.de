@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T11:10:23.850Z",
+  "updated_at": "2026-09-03T11:15:45.293Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -391,6 +391,203 @@
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
       "updated_at": "2026-09-02T23:03:14.700Z"
+    },
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+      "first_seen": "2026-09-01T22:00:00.000Z",
+      "last_updated": "2026-09-03T11:15:45.293Z",
+      "published_at": "2026-09-03T11:15:45.293Z",
+      "updated_at": "2026-09-03T11:15:45.293Z",
+      "topic": [
+        "Energie",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "eu-kommission-presse",
+          "publisher": "Europäische Kommission – Press Corner",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
+          "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+          "summary": "European Commission Pressemitteilung Brussels, 02 Sep 2026 Die Europäische Kommission hat einen ab 2031 zur Verfügung stehenden Kapazitätsmechanismus für Deutschland nach den EU-Beihilfevorschriften geprüft und genehmigt. Mit dieser Maßnahme, deren Kosten auf 15,6 Mrd. EUR bis 35,2 Mrd. EUR geschätzt werden, soll sichergestellt werden, dass ausreichende Kapazitäten für die Erzeugung, Speicherung und den flexiblen Verbrauch von Strom vorhanden sind, sodass die Stromerzeugung die erwartete Nachfrage durchweg decken kann.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T22:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 94,
+          "source_topic": "Europa",
+          "content_hash": "60648a1d2214fcab950868dbcba18f279ffc7a4739248dd66702ad3dce14bd29"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4b5d0962d323432a-claim-01",
+          "story_id": "wt-4b5d0962d323432a",
+          "claim": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung: European Commission Pressemitteilung Brussels, 02 Sep 2026 Die Europäische Kommission hat einen ab 2031 zur Verfügung stehenden Kapazitätsmechanismus für Deutschland nach den EU-Beihilfevorschriften geprüft und genehmigt. Mit dieser Maßnahme, deren Kosten auf 15,6 Mrd. EUR bis 35,2 Mrd. EUR geschätzt werden, soll sichergestellt werden, dass ausreichende Kapazitäten für die Erzeugung, Speicherung und den flexiblen Verbrauch von Strom vorhanden sind, sodass die Stromerzeugung die erwartete Nachfrage durchweg decken kann.",
+          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
+          "source_id": "eu-kommission-presse",
+          "source_function": "official_fact_source",
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-03T11:15:45.293Z"
+        }
+      ],
+      "content_hash": "08bffae77489e6c8cacc926aaccda07322a8becb325fb255fe629e3615fe24a3",
+      "published": true,
+      "analysis_status": "veröffentlicht",
+      "current_version": 1,
+      "analysis": {
+        "story_id": "wt-4b5d0962d323432a",
+        "summary": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus mit 15,6 Mrd. EUR bis 35,2 Mrd. EUR genehmigt. Materiell ist vor allem der mögliche Eingriff in Versorgungssicherheit, Flexibilität und Kapitalflüsse.",
+        "detail_summary": "Fakt ist die beihilferechtliche Genehmigung eines ab 2031 verfügbaren Mechanismus. Er soll Erzeugung, Speicherung und flexiblen Stromverbrauch absichern. Ex ante liegt Wirkungspotenzial vor, aber noch keine eingetretene Wirkung. Materiell sind Systemrelevanz, Dauer, Kostenhöhe und mögliche Kaskaden im Stromsystem. Offen bleiben konkrete Ausgestaltung, Verteilungseffekte und Klimaeffekte.",
+        "why_relevant": "Die Maßnahme kann Regeln, Anreize, Infrastruktur und Kapitalflüsse im deutschen Stromsystem verändern.",
+        "status": "beschlossen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Versorgungssicherheit betrifft Haushalte, Wirtschaft und kritische Dienste; konkrete Verteilungswirkungen sind noch offen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Speicher und Flexibilität können helfen; ohne Technologiemix bleiben Emissions- und Lock-in-Risiken offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Hohe öffentliche Kosten und Marktregeln berühren Kontrolle, Transparenz und spätere Korrekturfähigkeit."
+        },
+        "importance": "hoch",
+        "impact_potential": "Potenzial liegt in sicherer Leistung, mehr Flexibilität und geordneten Investitionssignalen ab 2031.",
+        "impact_risks": [
+          "Risiko von Fehlanreizen, Überförderung, fossilem Lock-in oder ungleicher Kostenverteilung."
+        ],
+        "mechanisms": [
+          "Beihilferechtlich genehmigte Zahlungen schaffen Anreize für Erzeugung, Speicher und flexiblen Verbrauch."
+        ],
+        "first_order": [
+          "Planbare Kapazitätsvergütung kann Investitionen und Verfügbarkeit im Stromsystem beeinflussen."
+        ],
+        "second_order": [
+          "Marktpreise, Netzausbau, Speicherwirtschaft und Verbraucherlasten können indirekt betroffen sein."
+        ],
+        "third_order": [
+          "Langfristig kann die Architektur Resilienz stärken oder Pfadabhängigkeiten im Energiesystem verfestigen."
+        ],
+        "systemic_relevance": "Stromversorgung ist eine Basisinfrastruktur; Ausfälle oder Fehlsteuerung können Kaskaden auslösen.",
+        "transformation_potential": "Mittel bis hoch, wenn Flexibilität und Speicher priorisiert werden; geringer bei bloßer Absicherung alter Kapazitäten.",
+        "resilience": "Resilienzpotenzial ist substanziell, weil gesicherte Leistung und Flexibilität Engpässe abfedern können.",
+        "side_effects": [
+          "Kosten können auf Staat, Verbraucher oder Marktakteure verteilt werden; Details fehlen."
+        ],
+        "uncertainties": [
+          "Nicht belegt sind konkrete Auktionen, Technologiekriterien, Kostenwälzung, Emissionswirkung und tatsächliche Nutzung."
+        ],
+        "evidence_level": "Primärquelle zur Genehmigung; keine Wirkungsdaten zur späteren Umsetzung.",
+        "attribution": "Zurechnung späterer Wirkungen ist erst mit Umsetzung, Indikatoren und Vergleichspfad möglich.",
+        "watch_next": [
+          "Ausgestaltung der Regeln, Ausschreibungen, Technologiemix, Kostenverteilung und Versorgungslage ab 2031 beobachten."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 9, SDG 13; ergänzend DNS, soweit Energie- und Klimaziele berührt sind."
+        ],
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T11:15:45.293Z",
+          "content_hash": "08bffae77489e6c8cacc926aaccda07322a8becb325fb255fe629e3615fe24a3",
+          "analysis": {
+            "story_id": "wt-4b5d0962d323432a",
+            "summary": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus mit 15,6 Mrd. EUR bis 35,2 Mrd. EUR genehmigt. Materiell ist vor allem der mögliche Eingriff in Versorgungssicherheit, Flexibilität und Kapitalflüsse.",
+            "detail_summary": "Fakt ist die beihilferechtliche Genehmigung eines ab 2031 verfügbaren Mechanismus. Er soll Erzeugung, Speicherung und flexiblen Stromverbrauch absichern. Ex ante liegt Wirkungspotenzial vor, aber noch keine eingetretene Wirkung. Materiell sind Systemrelevanz, Dauer, Kostenhöhe und mögliche Kaskaden im Stromsystem. Offen bleiben konkrete Ausgestaltung, Verteilungseffekte und Klimaeffekte.",
+            "why_relevant": "Die Maßnahme kann Regeln, Anreize, Infrastruktur und Kapitalflüsse im deutschen Stromsystem verändern.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Versorgungssicherheit betrifft Haushalte, Wirtschaft und kritische Dienste; konkrete Verteilungswirkungen sind noch offen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Speicher und Flexibilität können helfen; ohne Technologiemix bleiben Emissions- und Lock-in-Risiken offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Hohe öffentliche Kosten und Marktregeln berühren Kontrolle, Transparenz und spätere Korrekturfähigkeit."
+            },
+            "importance": "hoch",
+            "impact_potential": "Potenzial liegt in sicherer Leistung, mehr Flexibilität und geordneten Investitionssignalen ab 2031.",
+            "impact_risks": [
+              "Risiko von Fehlanreizen, Überförderung, fossilem Lock-in oder ungleicher Kostenverteilung."
+            ],
+            "mechanisms": [
+              "Beihilferechtlich genehmigte Zahlungen schaffen Anreize für Erzeugung, Speicher und flexiblen Verbrauch."
+            ],
+            "first_order": [
+              "Planbare Kapazitätsvergütung kann Investitionen und Verfügbarkeit im Stromsystem beeinflussen."
+            ],
+            "second_order": [
+              "Marktpreise, Netzausbau, Speicherwirtschaft und Verbraucherlasten können indirekt betroffen sein."
+            ],
+            "third_order": [
+              "Langfristig kann die Architektur Resilienz stärken oder Pfadabhängigkeiten im Energiesystem verfestigen."
+            ],
+            "systemic_relevance": "Stromversorgung ist eine Basisinfrastruktur; Ausfälle oder Fehlsteuerung können Kaskaden auslösen.",
+            "transformation_potential": "Mittel bis hoch, wenn Flexibilität und Speicher priorisiert werden; geringer bei bloßer Absicherung alter Kapazitäten.",
+            "resilience": "Resilienzpotenzial ist substanziell, weil gesicherte Leistung und Flexibilität Engpässe abfedern können.",
+            "side_effects": [
+              "Kosten können auf Staat, Verbraucher oder Marktakteure verteilt werden; Details fehlen."
+            ],
+            "uncertainties": [
+              "Nicht belegt sind konkrete Auktionen, Technologiekriterien, Kostenwälzung, Emissionswirkung und tatsächliche Nutzung."
+            ],
+            "evidence_level": "Primärquelle zur Genehmigung; keine Wirkungsdaten zur späteren Umsetzung.",
+            "attribution": "Zurechnung späterer Wirkungen ist erst mit Umsetzung, Indikatoren und Vergleichspfad möglich.",
+            "watch_next": [
+              "Ausgestaltung der Regeln, Ausschreibungen, Technologiemix, Kostenverteilung und Versorgungslage ab 2031 beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 9, SDG 13; ergänzend DNS, soweit Energie- und Klimaziele berührt sind."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Europäische Kommission – Kommission genehmigt deutschen Kapazitätsmechanismus",
+              "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T11:15:45.293Z",
+          "source_count": 1
+        }
+      ]
     },
     {
       "story_id": "wt-52d036419dd386a9",
@@ -4206,57 +4403,6 @@
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
       "updated_at": "2026-09-03T11:02:59.364Z"
-    },
-    {
-      "story_id": "wt-4b5d0962d323432a",
-      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
-      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-      "first_seen": "2026-09-01T22:00:00.000Z",
-      "last_updated": "2026-09-01T22:00:00.000Z",
-      "topic": [
-        "Energie",
-        "Europa"
-      ],
-      "sources": [
-        {
-          "source_id": "eu-kommission-presse",
-          "publisher": "Europäische Kommission – Press Corner",
-          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
-          "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-          "summary": "European Commission Pressemitteilung Brussels, 02 Sep 2026 Die Europäische Kommission hat einen ab 2031 zur Verfügung stehenden Kapazitätsmechanismus für Deutschland nach den EU-Beihilfevorschriften geprüft und genehmigt. Mit dieser Maßnahme, deren Kosten auf 15,6 Mrd. EUR bis 35,2 Mrd. EUR geschätzt werden, soll sichergestellt werden, dass ausreichende Kapazitäten für die Erzeugung, Speicherung und den flexiblen Verbrauch von Strom vorhanden sind, sodass die Stromerzeugung die erwartete Nachfrage durchweg decken kann.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T22:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 94,
-          "source_topic": "Europa",
-          "content_hash": "60648a1d2214fcab950868dbcba18f279ffc7a4739248dd66702ad3dce14bd29"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-4b5d0962d323432a-claim-01",
-          "story_id": "wt-4b5d0962d323432a",
-          "claim": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung: European Commission Pressemitteilung Brussels, 02 Sep 2026 Die Europäische Kommission hat einen ab 2031 zur Verfügung stehenden Kapazitätsmechanismus für Deutschland nach den EU-Beihilfevorschriften geprüft und genehmigt. Mit dieser Maßnahme, deren Kosten auf 15,6 Mrd. EUR bis 35,2 Mrd. EUR geschätzt werden, soll sichergestellt werden, dass ausreichende Kapazitäten für die Erzeugung, Speicherung und den flexiblen Verbrauch von Strom vorhanden sind, sodass die Stromerzeugung die erwartete Nachfrage durchweg decken kann.",
-          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
-          "source_id": "eu-kommission-presse",
-          "source_function": "official_fact_source",
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
-        }
-      ],
-      "content_hash": "08bffae77489e6c8cacc926aaccda07322a8becb325fb255fe629e3615fe24a3",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_DETAIL_SUMMARY_LENGTH"
-      ],
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-03T10:52:37.099Z"
     },
     {
       "story_id": "wt-e28250d4074683af",

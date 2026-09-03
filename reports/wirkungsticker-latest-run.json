@@ -1,50 +1,39 @@
 {
   "schema_version": "1.1",
-  "started_at": "2026-09-03T11:10:23.850Z",
+  "started_at": "2026-09-03T11:15:45.293Z",
   "berlin_slot": "manueller Lauf",
-  "feed_entries_fetched": 222,
+  "feed_entries_fetched": 198,
   "feed_entries_new": 0,
   "feed_entries_updated": 0,
   "feed_entries_backfilled": 0,
-  "feed_entries_deduplicated": 84,
-  "feed_entries_future_dated": 21,
+  "feed_entries_deduplicated": 81,
+  "feed_entries_future_dated": 1,
   "story_clusters": 0,
   "locally_rejected": 0,
-  "ai_stories": 2,
+  "ai_stories": 1,
   "ai_calls": 1,
   "ai_batches_planned": 1,
   "ai_batches_completed": 1,
-  "published_stories": 0,
+  "published_stories": 1,
   "updated_stories": 0,
   "provider": "Oracle WOeK-KI API",
   "model": "gpt-5.5",
-  "input_tokens": 2561,
-  "output_tokens": 1661,
-  "estimated_cost_usd": 0.062635,
-  "source_successes": 14,
-  "source_failures": 0,
-  "source_errors": [],
-  "quality_holds": [
+  "input_tokens": 1893,
+  "output_tokens": 1016,
+  "estimated_cost_usd": 0.039945,
+  "source_successes": 13,
+  "source_failures": 1,
+  "source_errors": [
     {
-      "story_id": "wt-e28250d4074683af",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ]
-    },
-    {
-      "story_id": "wt-46e5c503d6322ccb",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ]
+      "source_id": "bundesrat-mitteilungen",
+      "error": "fetch failed"
     }
   ],
+  "quality_holds": [],
   "budget_stage": 0,
-  "completed_at": "2026-09-03T11:11:56.578Z",
-  "pending_stories_retried": 2,
-  "monthly_spend_before_usd": 1.10671,
+  "completed_at": "2026-09-03T11:16:49.393Z",
+  "pending_stories_retried": 1,
+  "monthly_spend_before_usd": 1.169345,
   "monthly_budget_usd": 5,
   "ai_batch_size": 2,
   "token_source": "conservative_character_estimate",
