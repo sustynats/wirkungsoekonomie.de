@@ -1,5 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import {
   assertSafeFeedUrl,
   budgetStage,
@@ -74,6 +76,46 @@ test("Regelbasierter Relevanzfilter priorisiert materielle Primärquellen", () =
   assert.equal(high.analysis_type, "ex_ante");
 });
 
+test("Relevanzfilter verwechselt modern und Modelle nicht mit Mode", () => {
+  const transparency = classifyItem({
+    title: "Grüne fordern modernes Bundestransparenzgesetz",
+    summary: "Ein Antrag soll Informationsfreiheit und digitale Transparenz stärken.",
+    categories: ["Digitales", "Antrag"],
+  }, source);
+  const aiSafety = classifyItem({
+    title: "KI-Sicherheitsinstitut eröffnet",
+    summary: "Das Institut prüft komplexe KI-Modelle und Cyberrisiken.",
+    categories: [],
+  }, source);
+  assert.ok(transparency.score >= 34);
+  assert.ok(aiSafety.score >= 34);
+  assert.ok(!transparency.drivers.includes("standardmäßig geringe Relevanz"));
+  assert.ok(!aiSafety.drivers.includes("standardmäßig geringe Relevanz"));
+});
+
+test("Materielle Änderungen schlagen Routineinterviews und bloße Anfragen", () => {
+  const levy = classifyItem({ title: "Abschaffung der Gasspeicherumlage", summary: "Die Umlage wird bundesweit abgeschafft.", categories: [] }, source);
+  const interview = classifyItem({ title: "Interview zu Inflation und Zinsen", summary: "Ein Gespräch über die wirtschaftliche Lage.", categories: [] }, source);
+  const inquiry = classifyItem({ title: "Sepsis thematisiert", summary: "Gesundheit/Kleine Anfrage Die Fraktion fragt nach der Behandlung.", categories: [] }, source);
+  assert.ok(levy.score >= 34);
+  assert.ok(interview.score < 34);
+  assert.ok(inquiry.score < 34);
+});
+
+test("Neue Quellenmeldung aktualisiert eine bestehende Wirkungsakte", () => {
+  const item = { ...parseFeed(feed, source)[0], title: "Klimagesetz tritt jetzt in Kraft", content_hash: "neu" };
+  const existing = {
+    story_id: "wt-existing",
+    title: "Bund beschließt Klimagesetz",
+    first_seen: "2026-08-01T00:00:00.000Z",
+    last_updated: "2026-08-01T00:00:00.000Z",
+    sources: [{ url: item.url, title: "Bund beschließt Klimagesetz", summary: "Erster Beschluss" }],
+  };
+  const [cluster] = clusterItems([item], [existing], "2026-09-03T12:00:00.000Z");
+  assert.equal(cluster.story_id, existing.story_id);
+  assert.equal(cluster.existing_story, existing);
+});
+
 test("Prompt Injection bleibt als untrusted Datenblock gekapselt", () => {
   const story = candidate();
   story.preanalysis = { internal_relevance_score: 80 };
@@ -131,9 +173,19 @@ test("Belegte Zahlen und benannte SDG-Referenznummern bleiben zulässig", () => 
 });
 
 test("Budgetstufen und Berliner Sommer-/Winterzeit sind korrekt", () => {
-  assert.deepEqual(budgetStage(0, 5), { stage: 0, threshold: 34 });
+  assert.deepEqual(budgetStage(0, 5), { stage: 0, threshold: 30 });
   assert.equal(budgetStage(4.8, 5).stage, 3);
   assert.equal(scheduledSlot(new Date("2026-01-15T06:00:00Z")).slot, "Morgenausgabe");
   assert.equal(scheduledSlot(new Date("2026-07-15T05:00:00Z")).slot, "Morgenausgabe");
   assert.equal(scheduledSlot(new Date("2026-07-15T06:00:00Z")).slot, null);
+});
+
+test("Verspätete GitHub-Zeitpläne werden nicht mehr übersprungen", () => {
+  const scheduleScript = fileURLToPath(new URL("../../scripts/news/schedule.mjs", import.meta.url));
+  const result = spawnSync(process.execPath, [scheduleScript], {
+    encoding: "utf8",
+    env: { ...process.env, GITHUB_EVENT_NAME: "schedule", WOEK_NEWS_NOW: "2026-09-03T09:19:00Z", GITHUB_OUTPUT: "" },
+  });
+  assert.equal(result.status, 0);
+  assert.equal(JSON.parse(result.stdout).should_run, "true");
 });

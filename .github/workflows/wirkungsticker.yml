@@ -2,8 +2,9 @@ name: Wirkungsticker
 
 on:
   schedule:
-    # UTC candidates for 07, 12, 16 and 20 Europe/Berlin in CET and CEST.
-    - cron: "0 5,6,10,11,14,15,18,19 * * *"
+    # Stündlich, bewusst abseits der vollen Stunde. Der Worker läuft unabhängig
+    # von GitHub-Verzögerungen und damit auch nachts ohne menschlichen Eingriff.
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +17,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 25
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -37,7 +38,7 @@ jobs:
         if: steps.slot.outputs.should_run == 'true'
         env:
           WOEK_NEWS_MONTHLY_AI_BUDGET_USD: "5"
-          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "6"
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "8"
           WOEK_NEWS_AI_BATCH_SIZE: "2"
           WOEK_NEWS_AI_TIMEOUT_MS: "120000"
         run: npm run news:run

@@ -19,6 +19,8 @@ import {
 import { buildNewsSite } from "./build.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const RELEVANCE_FILTER_VERSION = "2.0";
+const RELEVANCE_BACKFILL_DAYS = 7;
 const files = {
   registry: path.join(ROOT, "content/news/source-registry.json"),
   state: path.join(ROOT, "data/news/state.json"),
@@ -176,6 +178,15 @@ function latestSourceDate(items) {
   }, 0);
 }
 
+function queuePriority(candidate, now) {
+  const existing = candidate.existing_story;
+  const publishedUpdateBonus = existing?.published && candidate.content_hash !== existing.content_hash ? 30 : 0;
+  const queuedAt = Date.parse(existing?.pending_update?.detected_at || existing?.updated_at || candidate.first_seen || now);
+  const ageHours = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / (60 * 60 * 1000)) : 0;
+  const waitingBonus = Math.min(18, Math.floor(ageHours / 6));
+  return candidate.preanalysis.internal_relevance_score + publishedUpdateBonus + waitingBonus;
+}
+
 function sanitizeError(error) {
   const message = error instanceof Error ? error.message : String(error);
   return message.replace(/[A-Za-z0-9_-]{24,}/g, "[redacted]").slice(0, 240);
@@ -185,6 +196,8 @@ export async function runWirkungsticker(options = {}) {
   const nowDate = options.now ? new Date(options.now) : process.env.WOEK_NEWS_NOW ? new Date(process.env.WOEK_NEWS_NOW) : new Date();
   if (!Number.isFinite(nowDate.getTime())) throw new Error("INVALID_RUN_TIME");
   const now = nowDate.toISOString();
+  const runSchedule = scheduledSlot(nowDate);
+  const isAutomatedRun = process.env.GITHUB_EVENT_NAME === "schedule";
   const registry = readJson(files.registry);
   const state = readJson(files.state);
   const storyStore = readJson(files.stories);
@@ -193,10 +206,11 @@ export async function runWirkungsticker(options = {}) {
   const report = {
     schema_version: "1.1",
     started_at: now,
-    berlin_slot: scheduledSlot(nowDate).slot || "manueller Lauf",
+    berlin_slot: runSchedule.slot || (isAutomatedRun ? `Automatischer Lauf ${String(runSchedule.hourNumber).padStart(2, "0")}:00` : "manueller Lauf"),
     feed_entries_fetched: 0,
     feed_entries_new: 0,
     feed_entries_updated: 0,
+    feed_entries_backfilled: 0,
     feed_entries_deduplicated: 0,
     feed_entries_future_dated: 0,
     story_clusters: 0,
@@ -252,6 +266,9 @@ export async function runWirkungsticker(options = {}) {
   if (report.source_successes === 0) throw new Error("ALL_NEWS_SOURCES_FAILED");
 
   const lookbackMs = Number(registry.policy.bootstrap_lookback_hours || 36) * 60 * 60 * 1000;
+  const backfillCutoff = nowDate.getTime() - RELEVANCE_BACKFILL_DAYS * 24 * 60 * 60 * 1000;
+  const needsRelevanceBackfill = state.relevance_filter_version !== RELEVANCE_FILTER_VERSION;
+  const storedStoryUrls = new Set((storyStore.stories || []).flatMap((story) => (story.sources || []).map((source) => source.url)));
   const futureToleranceMs = 10 * 60 * 1000;
   const cutoff = state.last_successful_run ? Date.parse(state.last_successful_run) - 5 * 60 * 1000 : nowDate.getTime() - lookbackMs;
   const changedItems = [];
@@ -262,10 +279,14 @@ export async function runWirkungsticker(options = {}) {
       report.feed_entries_future_dated += 1;
       continue;
     }
-    if (!previous && published && published < cutoff) continue;
-    if (!previous) {
+    const backfillCandidate = needsRelevanceBackfill
+      && !storedStoryUrls.has(item.url)
+      && (!published || published >= backfillCutoff);
+    if (!previous && published && published < cutoff && !backfillCandidate) continue;
+    if (!previous || backfillCandidate) {
       changedItems.push(item);
-      report.feed_entries_new += 1;
+      if (previous) report.feed_entries_backfilled += 1;
+      else report.feed_entries_new += 1;
     } else if (previous.content_hash !== item.content_hash) {
       changedItems.push(item);
       report.feed_entries_updated += 1;
@@ -324,7 +345,7 @@ export async function runWirkungsticker(options = {}) {
   report.monthly_budget_usd = budget;
   const eligible = clusters
     .filter((candidate) => candidate.preanalysis.internal_relevance_score >= stage.threshold && candidate.sources.some((source) => source.primary_source))
-    .sort((a, b) => b.preanalysis.internal_relevance_score - a.preanalysis.internal_relevance_score || latestSourceDate(b.sources) - latestSourceDate(a.sources));
+    .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   report.locally_rejected = clusters.length - eligible.length;
   const maxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
   const selected = stage.stage >= 3 ? [] : eligible.slice(0, maxAiStories);
@@ -397,6 +418,7 @@ export async function runWirkungsticker(options = {}) {
   const currentItems = allItems.filter((item) => Date.parse(item.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
   state.last_successful_run = now;
+  state.relevance_filter_version = RELEVANCE_FILTER_VERSION;
   state.pending_story_ids = [...byId.values()].filter((story) => !story.published || story.pending_update).map((story) => story.story_id);
   storyStore.updated_at = now;
   storyStore.stories = [...byId.values()].sort((a, b) => Date.parse(b.last_updated || 0) - Date.parse(a.last_updated || 0));
@@ -408,6 +430,7 @@ export async function runWirkungsticker(options = {}) {
     counts: {
       feed_entries_fetched: report.feed_entries_fetched,
       feed_entries_new: report.feed_entries_new,
+      feed_entries_backfilled: report.feed_entries_backfilled,
       feed_entries_deduplicated: report.feed_entries_deduplicated,
       story_clusters: report.story_clusters,
       locally_rejected: report.locally_rejected,

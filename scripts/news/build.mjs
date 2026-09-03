@@ -133,7 +133,7 @@ function card(story, index) {
   ].join(" ").toLowerCase().slice(0, 2400);
   return `<article class="news-card${index === 0 ? " news-card--lead" : ""}" data-news-card data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(story.last_updated)}">
   <div class="news-card__eyebrow">
-    <span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>
+    <span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>${Number(story.current_version || 1) > 1 ? '\n    <span class="news-badge">Akte aktualisiert</span>' : ""}
     <span class="news-badge">${escapeHtml(story.analysis.status)}</span>
     <span class="news-badge">${escapeHtml(story.analysis.analysis_type === "ex_ante" ? "Ex ante" : story.analysis.analysis_type === "ex_post" ? "Ex post" : "Monitoring")}</span>
     ${high ? '<span class="news-badge news-badge--high">Hohe systemische Relevanz</span>' : ""}
