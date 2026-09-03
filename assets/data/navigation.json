@@ -479,10 +479,17 @@
           ]
         },
         {
-          "label": "Wirkungsticker",
+          "label": "Neues aus der WÖk",
           "href": "news/",
           "match": [
             "news/"
+          ]
+        },
+        {
+          "label": "Wirkungsticker",
+          "href": "news/wirkungsticker/",
+          "match": [
+            "news/wirkungsticker/"
           ]
         },
         {
@@ -623,6 +630,13 @@
     }
   ],
   "footerLegal": [
+    {
+      "label": "English",
+      "href": "en/",
+      "match": [
+        "en/"
+      ]
+    },
     {
       "label": "Journal",
       "href": "journal/",

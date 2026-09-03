@@ -142,7 +142,7 @@
           body: JSON.stringify({
             email: values.get("email"),
             consent: values.get("consent") === "on",
-            consent_source: "wirkungsoekonomie.de/",
+            consent_source: `wirkungsoekonomie.de${window.location.pathname}`,
             website: values.get("website")
           })
         });

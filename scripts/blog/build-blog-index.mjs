@@ -485,6 +485,5 @@ function updateLibraryJournal(entries) {
 }
 
 updateBlogJournal(entries);
-updateHomepageJournal(entries);
 updateLibraryJournal(entries);
 console.log(`Wrote ${entries.length} current blog entries to assets/data/blog-index.json; added ${breadcrumbUpdates.length} Journal breadcrumbs.`);

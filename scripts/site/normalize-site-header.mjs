@@ -46,23 +46,6 @@ function renderUtilityLink(base, item) {
   return `        <a class="site-utility-link site-utility-link--${escapeHtml(utilityClass(item))}" href="${base}${escapeHtml(item.href)}" data-nav-match="${escapeHtml(navMatch(item))}" data-utility-label="${escapeHtml(item.label)}"${primary}>${escapeHtml(text)}</a>`;
 }
 
-function germanSwitchHref(base, filePath) {
-  const relative = path.relative(ROOT, filePath).replace(/\\/g, "/");
-  if (relative === "en/library/index.html") return `${base}bibliothek/`;
-  if (relative === "en/tools/index.html") return `${base}werkzeuge/`;
-  if (relative === "en/app/index.html") return `${base}app/`;
-  if (relative === "en/woek-ai/index.html") return `${base}woek-ki/`;
-  if (relative === "en/my-impact-space/index.html") return `${base}mein-wirkungsraum/`;
-  return `${base}index.html`;
-}
-
-function renderLanguageSwitch(base, locale, filePath) {
-  if (locale === "en") {
-    return `        <a class="site-utility-link site-utility-link--language" href="${germanSwitchHref(base, filePath)}" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>`;
-  }
-  return `        <a class="site-utility-link site-utility-link--language" href="${base}en/" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>`;
-}
-
 function renderMainLink(base, item) {
   return `        <a href="${base}${escapeHtml(item.href)}" data-nav-match="${escapeHtml(navMatch(item))}">${escapeHtml(item.label)}</a>`;
 }
@@ -98,7 +81,6 @@ function renderHeader(base, locale = "de", filePath = "") {
   const utilityLinks = (navigation.more || [])
     .map((item) => locale === "en" ? renderEnglishUtilityLink(base, item) : renderUtilityLink(base, item))
     .join("\n");
-  const languageSwitch = renderLanguageSwitch(base, locale, filePath);
   const mainLinks = locale === "en" ? englishMainLinks(base) : (navigation.header || []).map((item) => renderMainLink(base, item)).join("\n");
   const brandHref = locale === "en" ? `${base}en/` : `${base}index.html`;
   const brandLabel = locale === "en" ? "Wirkungsökonomie English homepage" : "Wirkungsökonomie Startseite";
@@ -114,7 +96,6 @@ function renderHeader(base, locale = "de", filePath = "") {
       </a>
       <nav class="site-utility-nav" aria-label="${utilityLabel}" data-search-exclude>
 ${utilityLinks}
-${languageSwitch}
       </nav>
       <button class="nav-toggle" type="button" aria-label="${menuOpen}" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-icon" aria-hidden="true">☰</span>
@@ -124,7 +105,6 @@ ${languageSwitch}
 ${mainLinks}
         <div class="site-nav-utility" aria-label="${utilityLabel}">
 ${utilityLinks}
-${languageSwitch}
         </div>
       </nav>
     </header>`;

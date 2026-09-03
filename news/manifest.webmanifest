@@ -1,0 +1,42 @@
+{
+  "name": "Neues aus der Wirkungsökonomie",
+  "short_name": "WÖk Neues",
+  "description": "Neue Veröffentlichungen, Begriffe, Lernangebote und Funktionen der Wirkungsökonomie.",
+  "id": "/news/",
+  "start_url": "/news/?source=pwa",
+  "scope": "/news/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "background_color": "#f7f1e8",
+  "theme_color": "#10243b",
+  "lang": "de-DE",
+  "dir": "ltr",
+  "categories": ["news", "education"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/assets/img/brand/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/brand/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Neueste Meldungen",
+      "short_name": "Neu",
+      "url": "/news/"
+    },
+    {
+      "name": "Wirkungsticker",
+      "short_name": "Ticker",
+      "url": "/news/wirkungsticker/"
+    }
+  ]
+}

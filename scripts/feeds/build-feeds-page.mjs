@@ -12,6 +12,7 @@ const feedDir = "feeds";
 
 // Bevorzugte Reihenfolge; unbekannte Feeds folgen alphabetisch.
 const ORDER = [
+  "neuigkeiten.xml",
   "quellenarchiv.xml",
   "journal.xml",
   "podcast.xml",

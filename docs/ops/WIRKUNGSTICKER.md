@@ -1,6 +1,8 @@
 # Wirkungsticker: Betrieb und Architektur
 
-Der Wirkungsticker veröffentlicht unter `/news/` eine kleine Zahl quellengebundener Wirkungsnachrichten. Er nutzt keine neue Datenbank und keinen neuen KI-Anbieter: Der kanonische Zustand liegt versioniert in `data/news/`, die Analyse läuft über die bestehende Oracle-WÖk-KI (`/api/woek-ai`), die Auslieferung über den vorhandenen statischen GitHub-Pages-Build.
+Der Wirkungsticker veröffentlicht unter `/news/wirkungsticker/` eine kleine Zahl quellengebundener Wirkungsnachrichten. Die stabilen Detailadressen bleiben unter `/news/<story-slug>/`; die bisherigen Ticker-Feeds bleiben aus Kompatibilitätsgründen unter `/news/feed.xml`, `/news/feed.atom` und `/news/feed.json`. `/news/` selbst ist das Portal „Neues aus der Wirkungsökonomie“ mit einem eigenen RSS-Feed unter `/feeds/neuigkeiten.xml`.
+
+Der Ticker nutzt keine neue Datenbank und keinen neuen KI-Anbieter: Der kanonische Zustand liegt versioniert in `data/news/`, die Analyse läuft über die bestehende Oracle-WÖk-KI (`/api/woek-ai`), die Auslieferung über den vorhandenen statischen GitHub-Pages-Build.
 
 ## Datenfluss
 
@@ -8,7 +10,7 @@ Der Wirkungsticker veröffentlicht unter `/news/` eine kleine Zahl quellengebund
 2. `scripts/news/run.mjs` normalisiert URLs und Texte, dedupliziert unveränderte Einträge, bildet zeitlich und semantisch begrenzte Story-Cluster und berechnet lokal Relevanz, Themen, Dimensionen, Status und Analyseart.
 3. Nur Primärquellen-Storys oberhalb der dynamischen Budgetschwelle gehen in einem kleinen Batch an die bestehende WÖk-KI. Quelleninhalte sind als `UNTRUSTED_SOURCE_DATA` gekapselt. Die KI darf nur gelieferte Claims verwenden.
 4. Das automatische Qualitätsgate prüft Schema, Claim-Ledger, Primärquelle, Unsicherheit, Kausalitätsgrenzen, Terminologie, ungestützte Zahlen, Textübernahme, HTML und verbotene Personen-/Parteienbewertungen. Fehler schließen die Veröffentlichung aus (`fail closed`).
-5. `scripts/news/build.mjs` erzeugt Startseite, Storyseiten, RSS, Atom, JSON Feed und eine öffentliche reduzierte JSON-Datei. Frühere Storyversionen bleiben im internen versionierten Datensatz erhalten.
+5. `scripts/news/build.mjs` erzeugt die Ticker-Übersicht unter `/news/wirkungsticker/`, Storyseiten, RSS, Atom, JSON Feed und eine öffentliche reduzierte JSON-Datei. Frühere Storyversionen bleiben im internen versionierten Datensatz erhalten.
 
 ## Zeitplan und Idempotenz
 

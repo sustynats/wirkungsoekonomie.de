@@ -32,11 +32,11 @@ for (const story of store.stories) {
   }
 }
 
-for (const relative of ["news/index.html", "news/feed.xml", "news/feed.atom", "news/feed.json", "news/data/stories.json"]) {
+for (const relative of ["news/wirkungsticker/index.html", "news/feed.xml", "news/feed.atom", "news/feed.json", "news/data/stories.json"]) {
   if (!fs.existsSync(path.join(ROOT, relative))) fail(`GENERATED_FILE_MISSING:${relative}`);
 }
-const index = fs.readFileSync(path.join(ROOT, "news/index.html"), "utf8");
-if (!index.includes("https://wirkungsoekonomie.de/news/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
+const index = fs.readFileSync(path.join(ROOT, "news/wirkungsticker/index.html"), "utf8");
+if (!index.includes("https://wirkungsoekonomie.de/news/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
 const rss = fs.readFileSync(path.join(ROOT, "news/feed.xml"), "utf8");
 const atom = fs.readFileSync(path.join(ROOT, "news/feed.atom"), "utf8");
 if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");

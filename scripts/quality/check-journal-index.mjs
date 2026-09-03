@@ -79,7 +79,10 @@ if (findings.length) {
 
 const latest = entries.find((entry) => entry.status === "published");
 if (!latest) throw new Error("Kein veröffentlichter Journalartikel im Index.");
-assertLatestJournalFeature("index.html", latest);
+const homepage = read("index.html");
+if (!homepage.includes('id="neues-aus-der-wirkungsoekonomie"') || !homepage.includes('href="news/"')) {
+  throw new Error("index.html: Die Startseite enthält keine funktionsfähige Sektion ‚Neues aus der Wirkungsökonomie‘.");
+}
 assertLatestJournalFeature("blog.html", latest);
 assertLatestJournalFeature("bibliothek/index.html", latest, "journal-library-card");
 assertJournalBreadcrumbs();
