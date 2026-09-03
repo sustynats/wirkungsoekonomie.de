@@ -1,8 +1,8 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4218**
+- Sitemap routes: **4221**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **12070**
+- Extra tracked source HTML not in sitemap: **12071**
 - Routes with non-default #253 action: **3589**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **241**
 
@@ -3850,8 +3850,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1027**
-- Combined matrix items (routes + extra HTML + support): **17315**
+- Tracked support text files inventoried: **1046**
+- Combined matrix items (routes + extra HTML + support): **17338**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4221,6 +4221,7 @@ Signals are review candidates, not automatic errors.
 | `public/data/glossary-version-history.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, enap, egfa, dns, alternativen, evaluation |
 | `public/data/public-pdf-downloads.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
 | `public/data/relationship-manifest.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation |
+| `public/data/site-updates.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, enap, dns |
 | `public/data/tool-examples.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
 | `public/data/tool-landscape-2-0.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | novelty_or_absence |
 | `public/data/woek-g-curriculum.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -4256,6 +4257,8 @@ Signals are review candidates, not automatic errors.
 | `scripts/lib/method-version-indexability.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns |
 | `scripts/methods/import-woems-source.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung |
 | `scripts/natalie/build-natalie-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/news/build.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/news/lib.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns, evaluation |
 | `scripts/podcast/build-podcast-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/portal/apply-political-implementation-standard.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
 | `scripts/portal/build-business-enterprise.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -4325,6 +4328,7 @@ Signals are review candidates, not automatic errors.
 | `tools/audit_state_sustainability_architecture.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
 | `tools/audit_state_sustainability_architecture_fast.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation |
 | `tools/audit_state_sustainability_support_files.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | enap, egfa, dns |
+| `tools/build-berlin-bsw-p64-p66-handoff.mjs` | quality_or_projection_tool | NO_CHANGE_REQUIRED | evaluation |
 | `tools/build_issue_284_root_rescue_archive.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/build_nested_institut_rescue_archive.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/build_woek_document_inventory.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind |
@@ -4347,7 +4351,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17316**
+- Combined reviewed items: **17339**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.

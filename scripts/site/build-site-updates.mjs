@@ -39,12 +39,20 @@ function normalizeDate(value) {
   return null;
 }
 
+function qualifyCurrentSummary(value = "") {
+  const summary = String(value || "").trim();
+  if (summary.includes("Wie IOI, NWI und T-SROI")) {
+    return summary.replace("Wie IOI, NWI und T-SROI", "Wie IOI, die damalige WÖk-Kurzbezeichnung NWI und T-SROI");
+  }
+  return summary;
+}
+
 function updateRecord({ id, date, kind, area, title, summary, url, source, featured = false }) {
   const normalized = normalizeDate(date);
   if (!normalized || normalized.sort < YEAR_START) return null;
   return {
     id: slug(id), date: normalized.date, datePrecision: normalized.precision, sortDate: normalized.sort,
-    kind, area, areaKey: slug(area), title: String(title || "").trim(), summary: String(summary || "").trim(),
+    kind, area, areaKey: slug(area), title: String(title || "").trim(), summary: qualifyCurrentSummary(summary),
     url, source, featured: Boolean(featured),
   };
 }
