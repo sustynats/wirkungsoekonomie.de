@@ -258,7 +258,33 @@ test("Transiente Quellenfehler werden mit begrenztem Backoff erneut versucht", a
 
 test("Malformed JSON und Providerfehler veröffentlichen nichts", async () => {
   assert.throws(() => extractJsonObject("kein json"), /AI_MALFORMED_JSON/);
-  await assert.rejects(callWoekAi([candidate()], { fetchImpl: async () => new Response(JSON.stringify({ ok: false }), { status: 503, headers: { "content-type": "application/json" } }) }), /AI_PROVIDER_ERROR:503/);
+  let attempts = 0;
+  const delays = [];
+  await assert.rejects(callWoekAi([candidate()], {
+    fetchImpl: async () => {
+      attempts += 1;
+      return new Response(JSON.stringify({ ok: false }), { status: 503, headers: { "content-type": "application/json" } });
+    },
+    retryDelayImpl: async (milliseconds) => delays.push(milliseconds),
+  }), /AI_PROVIDER_ERROR:503/);
+  assert.equal(attempts, 3);
+  assert.deepEqual(delays, [12000, 24000]);
+});
+
+test("KI-Rate-Limits beachten Retry-After", async () => {
+  let attempts = 0;
+  const delays = [];
+  const answer = JSON.stringify({ analyses: [validAnalysis()] });
+  const result = await callWoekAi([candidate()], {
+    fetchImpl: async () => {
+      attempts += 1;
+      if (attempts === 1) return new Response(JSON.stringify({ ok: false }), { status: 429, headers: { "content-type": "application/json", "retry-after": "17" } });
+      return new Response(JSON.stringify({ ok: true, answer, provider: "Oracle WOeK-KI API", model: "gpt-5.5", sources: [] }), { status: 200, headers: { "content-type": "application/json" } });
+    },
+    retryDelayImpl: async (milliseconds) => delays.push(milliseconds),
+  });
+  assert.equal(result.request_attempts, 2);
+  assert.deepEqual(delays, [17000]);
 });
 
 test("Strukturierte Providerantwort wird übernommen", async () => {

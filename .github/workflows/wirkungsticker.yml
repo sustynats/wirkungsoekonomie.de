@@ -42,6 +42,7 @@ jobs:
           WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "8"
           # Längere Detailfassungen bleiben pro Anfrage unter dem Upstream-Zeitfenster.
           WOEK_NEWS_AI_BATCH_SIZE: "1"
+          WOEK_NEWS_AI_BATCH_DELAY_MS: "30000"
           WOEK_NEWS_AI_TIMEOUT_MS: "120000"
         run: npm run news:run
       - name: Build search index and validate output

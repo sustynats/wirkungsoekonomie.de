@@ -621,6 +621,17 @@ export function extractJsonObject(value) {
   }
 }
 
+function aiRetryDelayMs(response, attempt) {
+  const retryAfter = response?.headers?.get?.("retry-after");
+  if (retryAfter) {
+    const seconds = Number(retryAfter);
+    const until = Date.parse(retryAfter) - Date.now();
+    const milliseconds = Number.isFinite(seconds) ? seconds * 1000 : until;
+    if (Number.isFinite(milliseconds) && milliseconds > 0) return Math.min(120000, Math.max(1000, milliseconds));
+  }
+  return response?.status === 429 ? attempt * 30000 : attempt * 12000;
+}
+
 export async function callWoekAi(stories, options = {}) {
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
   const prompt = buildAnalysisPrompt(stories);
@@ -648,7 +659,9 @@ export async function callWoekAi(stories, options = {}) {
       payload = await response.json().catch(() => null);
       if (response.ok && payload?.ok) break;
       if (attempt < attempts && (response.status === 429 || response.status >= 500)) {
-        await new Promise((resolve) => setTimeout(resolve, attempt * 2000));
+        await (options.retryDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(
+          aiRetryDelayMs(response, attempt),
+        );
         continue;
       }
       const error = new Error(`AI_PROVIDER_ERROR:${response.status}`);
@@ -656,7 +669,7 @@ export async function callWoekAi(stories, options = {}) {
       throw error;
     } catch (error) {
       if (attempt < attempts && (error?.name === "AbortError" || error instanceof TypeError)) {
-        await new Promise((resolve) => setTimeout(resolve, attempt * 2000));
+        await (options.retryDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(attempt * 12000);
         continue;
       }
       error.requestAttempts = requestAttempts;
