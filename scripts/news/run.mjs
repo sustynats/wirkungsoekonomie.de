@@ -19,7 +19,7 @@ import {
 import { buildNewsSite } from "./build.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const RELEVANCE_FILTER_VERSION = "3.0";
+const RELEVANCE_FILTER_VERSION = "3.1";
 const RELEVANCE_BACKFILL_DAYS = 7;
 const MAX_QUALITY_RETRIES = 3;
 const RETRYABLE_QUALITY_ERRORS = [
@@ -431,7 +431,9 @@ export async function runWirkungsticker(options = {}) {
     .map((cluster) => createCandidate(
       cluster,
       now,
-      Boolean(needsRelevanceBackfill && cluster.existing_story?.published && cluster.existing_story?.listed !== false),
+      Boolean(needsRelevanceBackfill
+        && cluster.existing_story?.published
+        && cluster.existing_story?.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE"),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
   const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
