@@ -1,7 +1,90 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T12:23:56.901Z",
+  "updated_at": "2026-09-03T12:48:02.808Z",
   "stories": [
+    {
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
+      "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+      "summary": "Die Energiepreis-Story trägt als veröffentlichungswürdige Neuigkeit. Die neue Information betrifft staatliche Entlastung bei Gas- und Stromkosten.",
+      "detail_summary": "Gesichert ist aus der Primärquelle: Die Bundesregierung meldet die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Zusätzlich werden niedrigere Steuern und ein Industriestrompreis als langfristige Unterstützung der Wirtschaft genannt. Materiell ist das, weil Energiepreise Haushalte und Unternehmen direkt betreffen und über Kosten, Anreize und Kapitalflüsse weiterwirken können. Der naheliegende Wirkpfad läuft über geringere Abgaben oder Entgelte zu verfügbaren Einkommen, Produktionskosten und Nachfrage. Mögliche Folgen sind Entlastung, veränderte Verteilungseffekte und neue fiskalische oder marktliche Anschlussfragen. Offen bleibt, wie hoch die Entlastung ausfällt, wer netto gewinnt, wie finanziert wird und ob reale Preiseffekte eintreten.",
+      "why_relevant": "Energiepreise berühren Haushaltsbudgets, Unternehmensstandorte und staatliche Anreizsetzung.",
+      "topic": [
+        "Energie",
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Entlastung für Verbraucherinnen und Verbraucher bei zentralen Grundkosten."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Preis- und Industrieanreize können Energieverbrauch und Investitionen beeinflussen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Verteilungs- und Finanzierungsfragen bleiben politisch überprüfbar und erklärungspflichtig."
+        }
+      },
+      "first_seen": "2026-09-02T13:00:00.000Z",
+      "last_updated": "2026-09-03T12:48:02.808Z",
+      "version": 2,
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T13:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-98ff7e403362fdf9",
+      "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
+      "title": "Stärkerer Schutz kritischer Infrastrukturen",
+      "summary": "Die KRITIS-Story trägt als veröffentlichungswürdige Neuigkeit. Sie betrifft Mindeststandards für zentrale Infrastrukturen.",
+      "detail_summary": "Gesichert ist aus der Primärquelle: Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt. Genannt werden unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Materiell ist das, weil Ausfälle in diesen Bereichen viele Menschen treffen und Kaskaden in Versorgung, Mobilität und Gesundheit auslösen können. Der Wirkpfad liegt in verbindlicheren Schutzanforderungen für Betreiber und damit in möglicher Prävention, Vorsorge und Krisenfestigkeit. Eine mögliche Folge ist höhere Resilienz gegen Störungen, sofern Vollzug, Finanzierung und Kontrolle tragen. Offen bleiben konkrete Standards, Fristen, Zuständigkeiten, Sanktionen und die tatsächliche Umsetzungspraxis.",
+      "why_relevant": "KRITIS-Regeln betreffen Versorgungssysteme, deren Ausfall breite und kaskadierende Folgen hätte.",
+      "topic": [
+        "Energie",
+        "Gesundheit"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Gesundheit, Wasser, Verkehr und Energie sichern grundlegende Alltags- und Schutzfunktionen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Energie- und Wassersysteme können auch ökologische Folgeschäden bei Störungen berühren."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Einheitliche Standards stärken staatliche Schutzfähigkeit, brauchen aber kontrollierbaren Vollzug."
+        }
+      },
+      "first_seen": "2026-09-02T06:00:00.000Z",
+      "last_updated": "2026-09-03T12:48:02.808Z",
+      "version": 2,
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T06:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-4b5d0962d323432a",
       "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
@@ -427,48 +510,6 @@
       ]
     },
     {
-      "story_id": "wt-9cca0ad92ad1a84a",
-      "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
-      "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-      "summary": "Die Bundesregierung meldet Abschaffung der Gasspeicherumlage und Senkung der Strom-Netzentgelte. Entlastung wird behauptet, tatsächliche Verteilungs- und Klimawirkung ist nicht belegt.",
-      "detail_summary": null,
-      "why_relevant": "Energiepreise betreffen Haushalte, Unternehmen, Inflation, Industrie und Transformationsanreize.",
-      "topic": [
-        "Energie",
-        "Finanzen",
-        "Wirtschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Potenzial für finanzielle Entlastung vieler Haushalte; Verteilung nach Einkommen bleibt offen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Preissenkungen können Verbrauchsanreize verändern; Klimapfad ist ohne Ausgestaltung offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Energiepreis-Politik berührt Akzeptanz, Verteilungsgerechtigkeit und fiskalische Transparenz."
-        }
-      },
-      "first_seen": "2026-09-02T13:00:00.000Z",
-      "last_updated": "2026-09-03T07:49:38.699Z",
-      "version": 1,
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T13:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
       "story_id": "wt-c15cb7a9f3b72c35",
       "slug": "einkommensteuerreform-beschlossen-b72c35",
       "title": "Einkommensteuerreform beschlossen",
@@ -504,47 +545,6 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192",
           "source_type": "official_rss",
           "published_at": "2026-09-02T09:29:17.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-98ff7e403362fdf9",
-      "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
-      "title": "Stärkerer Schutz kritischer Infrastrukturen",
-      "summary": "Das KRITIS-Dachgesetz soll bundeseinheitliche Mindeststandards für kritische Infrastrukturen festlegen. Eine Ex-ante-Einordnung ist möglich; Wirkungsevidenz liegt nicht vor.",
-      "detail_summary": null,
-      "why_relevant": "Energie, Verkehr, Gesundheit und Trinkwasser sind Grundfunktionen mit hoher Kaskaden- und Resilienzrelevanz.",
-      "topic": [
-        "Energie",
-        "Gesundheit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "sehr hoch",
-          "rationale": "Versorgungssicherheit betrifft Gesundheit, Mobilität, Wasser und Alltag vieler Menschen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Energie- und Wassersysteme haben Umweltbezug; konkrete ökologische Effekte sind offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "KRITIS-Schutz berührt staatliche Schutzpflichten, Transparenz, Zuständigkeiten und Kontrolle."
-        }
-      },
-      "first_seen": "2026-09-02T06:00:00.000Z",
-      "last_updated": "2026-09-03T07:44:09.616Z",
-      "version": 1,
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T06:00:00.000Z",
           "primary_source": true
         }
       ]
