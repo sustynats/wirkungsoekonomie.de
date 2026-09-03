@@ -59,6 +59,16 @@ test("deepening uses the next Berlin checkpoint, never delays first publication"
   assert.equal(nextDeepeningCheckpoint("2026-09-03T12:01:00Z"), "2026-09-03T14:00:00.000Z");
   assert.equal(nextDeepeningCheckpoint("2026-12-03T20:01:00Z"), "2026-12-04T06:00:00.000Z");
 });
+test("follow-up deadlines require a real excerpt, and media do not become primary by quoting officials", () => {
+  const a = structuredClone(analysis);
+  a.followups = [{ claim: "Die Regierung will die Umsetzung abschließen.", source_id: "test", expected_by: "2026-12-01", measurable_indicator: "Abschluss der Umsetzung" }];
+  assert.ok(validateNewsroomAnalysis(a, { sources: [item] }).includes("FOLLOWUP_DATE_UNSUPPORTED"));
+  a.followups[0].expected_by = null;
+  assert.deepEqual(validateNewsroomAnalysis(a, { sources: [item] }), []);
+  assert.ok(validateNewsroomAnalysis(a, { sources: [{ ...item, primary_source: false }] }).includes("CLAIM_PRIMARY_SOURCE_MISSING"));
+  a.event_claims[0].status = "single_source_claim";
+  assert.deepEqual(validateNewsroomAnalysis(a, { sources: [{ ...item, primary_source: false }] }), []);
+});
 test("public press-room HTML records keep per-article dates and do not read images", () => {
   const html = '<li class="article__item"><img data-src="https://image.example/a.jpg"><time datetime="2026-09-02"></time><h3 class="article__title"><a href="/release/">Studie</a></h3><p class="article__paragraph-text">Neue Daten</p></li>';
   const result = parseHtmlIndex(html, { ...source, html_layout: "pressroom_article_list", access: { html_index: true } });
