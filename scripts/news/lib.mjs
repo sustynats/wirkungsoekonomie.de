@@ -566,7 +566,7 @@ export function extractJsonObject(value) {
 export async function callWoekAi(stories, options = {}) {
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
   const prompt = buildAnalysisPrompt(stories);
-  const attempts = Math.max(1, Math.min(3, Number(options.attempts || 2)));
+  const attempts = Math.max(1, Math.min(3, Number(options.attempts || 3)));
   let response;
   let payload;
   let requestAttempts = 0;
@@ -590,7 +590,7 @@ export async function callWoekAi(stories, options = {}) {
       payload = await response.json().catch(() => null);
       if (response.ok && payload?.ok) break;
       if (attempt < attempts && (response.status === 429 || response.status >= 500)) {
-        await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+        await new Promise((resolve) => setTimeout(resolve, attempt * 2000));
         continue;
       }
       const error = new Error(`AI_PROVIDER_ERROR:${response.status}`);
@@ -598,7 +598,7 @@ export async function callWoekAi(stories, options = {}) {
       throw error;
     } catch (error) {
       if (attempt < attempts && (error?.name === "AbortError" || error instanceof TypeError)) {
-        await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+        await new Promise((resolve) => setTimeout(resolve, attempt * 2000));
         continue;
       }
       error.requestAttempts = requestAttempts;

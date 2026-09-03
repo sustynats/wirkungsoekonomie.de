@@ -48,6 +48,9 @@ const EDITORIAL_REJECTION_ERRORS = new Set([
   "AI_EVIDENCE_INSUFFICIENT",
   "AI_DUPLICATE_WITHOUT_UPDATE",
 ]);
+const RETRY_COMPANION_ERRORS = new Set([
+  "AI_MATERIALITY_GATE_FAILED",
+]);
 const files = {
   registry: path.join(ROOT, "content/news/source-registry.json"),
   state: path.join(ROOT, "data/news/state.json"),
@@ -174,6 +177,23 @@ function shouldRetireAfterReassessment(candidate, errors) {
     && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error));
 }
 
+function rejectedRecord(record, now, qualityErrors) {
+  const { pending_update: _pendingUpdate, pending_reason: _pendingReason, quality_retry_count: _qualityRetryCount, reassessment: _reassessment, ...preserved } = record;
+  return {
+    ...preserved,
+    listed: false,
+    analysis_status: "nach Relevanzprüfung nicht veröffentlicht",
+    relevance_filter_version: RELEVANCE_FILTER_VERSION,
+    rejected_at: now,
+    rejection: {
+      at: now,
+      filter_version: RELEVANCE_FILTER_VERSION,
+      reason_code: "FILTER_NOT_MATERIAL",
+      quality_errors: qualityErrors,
+    },
+  };
+}
+
 function retiredRecord(candidate, now, qualityErrors) {
   const existing = candidate.existing_story;
   const { pending_update: _pendingUpdate, ...preserved } = existing;
@@ -194,11 +214,11 @@ function retiredRecord(candidate, now, qualityErrors) {
 }
 
 export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0) {
-  return reason === "QUALITY_GATE_FAILED"
-    && Number(retryCount || 0) < MAX_QUALITY_RETRIES
-    && Array.isArray(qualityErrors)
-    && qualityErrors.length > 0
-    && qualityErrors.every((error) => RETRYABLE_QUALITY_ERRORS.some((pattern) => pattern.test(error)));
+  if (reason !== "QUALITY_GATE_FAILED" || Number(retryCount || 0) >= MAX_QUALITY_RETRIES || !Array.isArray(qualityErrors) || !qualityErrors.length) return false;
+  const hasStructuralError = qualityErrors.some((error) => RETRYABLE_QUALITY_ERRORS.some((pattern) => pattern.test(error)));
+  return hasStructuralError && qualityErrors.every((error) => (
+    RETRYABLE_QUALITY_ERRORS.some((pattern) => pattern.test(error)) || RETRY_COMPANION_ERRORS.has(error)
+  ));
 }
 
 function publishedRecord(candidate, analysis, ai, now) {
@@ -474,6 +494,9 @@ export async function runWirkungsticker(options = {}) {
     for (let offset = 0; offset < selected.length; offset += aiBatchSize) {
       const batch = selected.slice(offset, offset + aiBatchSize);
       try {
+        if (offset > 0) await (options.aiBatchDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(
+          Number(process.env.WOEK_NEWS_AI_BATCH_DELAY_MS || 2500),
+        );
         const aiResult = await (options.callAiImpl || callWoekAi)(batch, {
           apiUrl: process.env.WOEK_NEWS_API_URL,
           timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
@@ -536,6 +559,17 @@ export async function runWirkungsticker(options = {}) {
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
   state.last_successful_run = now;
   state.relevance_filter_version = RELEVANCE_FILTER_VERSION;
+  for (const [storyId, story] of byId) {
+    if (story.published || story.listed === false) continue;
+    const reason = story.pending_update?.reason || story.pending_reason;
+    const qualityErrors = story.pending_update?.quality_errors || story.quality_errors || [];
+    const retryCount = story.pending_update?.quality_retry_count ?? story.quality_retry_count ?? 0;
+    if (reason === "QUALITY_GATE_FAILED"
+      && !shouldRetryQualityGate(reason, qualityErrors, retryCount)
+      && qualityErrors.some((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
+      byId.set(storyId, rejectedRecord(story, now, qualityErrors));
+    }
+  }
   state.pending_story_ids = [...byId.values()].filter((story) => (!story.published && story.listed !== false) || story.pending_update).map((story) => story.story_id);
   storyStore.updated_at = now;
   storyStore.stories = [...byId.values()].sort((a, b) => Date.parse(b.last_updated || 0) - Date.parse(a.last_updated || 0));
