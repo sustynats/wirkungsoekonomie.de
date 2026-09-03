@@ -20,15 +20,8 @@
 .updates-newsletter { border: 1px solid var(--border, #d9d4c8); border-radius: 1.25rem; background: linear-gradient(135deg, var(--navy, #0b1020), #173b55); color: #fff; padding: clamp(1.4rem, 4vw, 2.6rem); }
 .updates-newsletter .hero-kicker { color: #c9d9a2; }
 .updates-newsletter .btn-secondary { border-color: rgba(255,255,255,.5); color: #fff; }
-.updates-app-offer { align-items: center; background: #eef4ec; border: 1px solid #cdd9c9; border-radius: 1.25rem; display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr) auto; padding: 1.25rem; }
-.updates-app-offer[hidden] { display: none; }
-.updates-app-offer h2, .updates-app-offer p { margin: 0; }
-.updates-app-offer__copy { display: grid; gap: .45rem; }
-.updates-app-offer__help { grid-column: 1 / -1; }
 .updates-empty { text-align: center; padding: 2rem; }
 @media (max-width: 760px) {
   .updates-grid { grid-template-columns: 1fr; }
   .updates-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .updates-app-offer { grid-template-columns: 1fr; }
-  .updates-app-offer .btn { width: 100%; }
 }

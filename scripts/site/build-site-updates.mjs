@@ -172,17 +172,12 @@ function newsPage(updates) {
   <meta name="description" content="Alle Neuigkeiten der Wirkungsökonomie seit 2026: Veröffentlichungen, Journal, Podcast, Glossar, Akademie, Institut, Parlament und neue Funktionen.">
   <link rel="canonical" href="${SITE}/news/">
   <link rel="alternate" type="application/rss+xml" title="Neues aus der Wirkungsökonomie" href="${SITE}/feeds/neuigkeiten.xml">
-  <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#10243b">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="WÖk Neues">
-  <link rel="apple-touch-icon" href="../assets/img/brand/apple-touch-icon.png">
   <meta property="og:type" content="website"><meta property="og:locale" content="de_DE"><meta property="og:site_name" content="Wirkungsökonomie">
   <meta property="og:title" content="Neues aus der Wirkungsökonomie"><meta property="og:description" content="Veröffentlichungen, Inhalte und Funktionen chronologisch an einem Ort."><meta property="og:url" content="${SITE}/news/">
   <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/css/style.css?v=20260903-news">
-  <link rel="stylesheet" href="../assets/css/site-updates.css?v=20260903-2">
+  <link rel="stylesheet" href="../assets/css/site-updates.css?v=20260903-3">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -193,17 +188,7 @@ ${header}
     <p class="hero-kicker">Seit 2026 fortlaufend dokumentiert</p>
     <h1 class="hero-title">Neues aus der Wirkungsökonomie</h1>
     <p class="hero-subtitle">Neue Analysen, Begriffe, Veröffentlichungen, Lernangebote und Funktionen aus der Wirkungsökonomie, der Akademie, dem Institut und dem Wirkungsportal Parlament.</p>
-    <div class="updates-hero__actions"><a class="btn btn-primary" href="../feeds/neuigkeiten.xml">RSS abonnieren</a><a class="btn btn-secondary" href="wirkungsticker/">Zum Wirkungsticker</a></div>
-  </div></section>
-  <section class="section" aria-label="News-App installieren"><div class="updates-app-offer" data-news-app-offer hidden>
-    <div class="updates-app-offer__copy"><p class="hero-kicker">Direkt auf dem Smartphone</p><h2>Neues als Web-App</h2><p>Installiere die Neuigkeiten auf deinem Startbildschirm. Die aktuelle Übersicht bleibt auch bei einer kurzen Unterbrechung der Verbindung erreichbar.</p></div>
-    <button class="btn btn-primary" type="button" data-news-app-install>News-App installieren</button>
-    <p class="updates-app-offer__help" data-news-app-help tabindex="-1" hidden></p>
-  </div></section>
-  <section class="section" id="newsletter" aria-labelledby="updates-newsletter-title"><div class="updates-newsletter">
-    <p class="hero-kicker">Direkt per E-Mail</p><h2 id="updates-newsletter-title">Der Wirkungsbrief</h2>
-    <p>Neue Analysen, erklärte Begriffe und Hinweise zu Werkzeugen, Veröffentlichungen und Kursen. Nur, wenn es etwas Relevantes mitzuteilen gibt.</p>
-    <div class="updates-newsletter__actions"><button class="btn btn-primary" type="button" data-woek-newsletter-control data-newsletter-label="Wirkungsbrief abonnieren">Wirkungsbrief abonnieren</button><a class="btn btn-secondary" href="../feeds/">Alle RSS-Feeds</a></div>
+    <div class="updates-hero__actions"><a class="btn btn-primary" href="../feeds/neuigkeiten.xml">RSS abonnieren</a><a class="btn btn-secondary" href="../wirkungsticker/">Zum eigenständigen Wirkungsticker</a></div>
   </div></section>
   <section class="section section-soft" aria-labelledby="updates-list-title"><div class="section-header"><p class="hero-kicker">Chronik</p><h2 id="updates-list-title">Was neu hinzugekommen ist</h2><p>${updates.length} Einträge aus den bestehenden Veröffentlichungsregistern und der kuratierten Funktionschronik.</p></div>
     <div class="updates-control"><label class="updates-search" for="updates-search"><span>Neuigkeiten durchsuchen</span><input id="updates-search" type="search" data-update-search placeholder="Zum Beispiel Parlament, Glossar oder Value Pricing"></label>
@@ -213,10 +198,15 @@ ${header}
     <div class="updates-empty" data-update-empty hidden><p>Für diese Auswahl gibt es noch keinen Eintrag.</p></div>
     <p><button class="btn btn-secondary" type="button" data-update-more>Weitere Neuigkeiten anzeigen</button></p>
   </section>
+  <section class="section" id="newsletter" aria-labelledby="updates-newsletter-title"><div class="updates-newsletter">
+    <p class="hero-kicker">Direkt per E-Mail</p><h2 id="updates-newsletter-title">Der Wirkungsbrief</h2>
+    <p>Neue Analysen, erklärte Begriffe und Hinweise zu Werkzeugen, Veröffentlichungen und Kursen. Nur, wenn es etwas Relevantes mitzuteilen gibt.</p>
+    <div class="updates-newsletter__actions"><button class="btn btn-primary" type="button" data-woek-newsletter-control data-newsletter-label="Wirkungsbrief abonnieren">Wirkungsbrief abonnieren</button><a class="btn btn-secondary" href="../feeds/">Alle RSS-Feeds</a></div>
+  </div></section>
 </main>
 ${footer}
 <script src="../assets/js/main.js?v=20260903-news"></script>
-<script src="../assets/js/site-updates.js?v=20260903-2"></script>
+<script src="../assets/js/site-updates.js?v=20260903-3"></script>
 </body>
 </html>`;
 }

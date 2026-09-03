@@ -22,12 +22,10 @@ for (const item of data.updates) {
 const page = read("news/index.html");
 if (!page.includes("<h1 class=\"hero-title\">Neues aus der Wirkungsökonomie</h1>")) fail("SITE_UPDATES_PAGE_TITLE_MISSING");
 if (!page.includes("data-woek-newsletter-control") || !page.includes("/feeds/neuigkeiten.xml")) fail("SITE_UPDATES_SUBSCRIPTIONS_MISSING");
-if (!page.includes("href=\"wirkungsticker/\"")) fail("SITE_UPDATES_TICKER_LINK_MISSING");
-if (!page.includes('rel="manifest" href="manifest.webmanifest"') || !page.includes("data-news-app-install")) fail("SITE_UPDATES_PWA_OFFER_MISSING");
+if (!page.includes("href=\"../wirkungsticker/\"")) fail("SITE_UPDATES_TICKER_LINK_MISSING");
+if (page.includes('rel="manifest"') || page.includes("data-news-app-install")) fail("SITE_UPDATES_MUST_NOT_SHARE_TICKER_APP");
+if (page.indexOf('id="newsletter"') < page.indexOf('data-site-updates')) fail("SITE_UPDATES_NEWSLETTER_NOT_AT_BOTTOM");
 if (!read("assets/js/site-updates.js").includes("const pageSize = 10;")) fail("SITE_UPDATES_PAGE_SIZE_INVALID");
-for (const file of ["news/manifest.webmanifest", "news/sw.js", "news/offline.html"]) {
-  if (!fs.existsSync(file)) fail(`SITE_UPDATES_PWA_FILE_MISSING:${file}`);
-}
 
 const home = read("index.html");
 if (!home.includes('id="neues-aus-der-wirkungsoekonomie"') || home.includes('id="aktuell-journal"')) fail("HOMEPAGE_UPDATES_SECTION_INVALID");

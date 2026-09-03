@@ -28,30 +28,35 @@ for (const story of store.stories) {
   if (story.published) {
     const errors = validateAnalysis(story.analysis, story);
     if (errors.length) fail(`PUBLISHED_STORY_QUALITY_INVALID:${story.story_id}:${errors.join(",")}`);
-    if (!fs.existsSync(path.join(ROOT, "news", story.slug, "index.html"))) fail(`STORY_PAGE_MISSING:${story.slug}`);
+    if (!fs.existsSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"))) fail(`STORY_PAGE_MISSING:${story.slug}`);
   }
 }
 
-for (const relative of ["news/index.html", "news/wirkungsticker/index.html", "news/manifest.webmanifest", "news/sw.js", "news/offline.html", "news/feed.xml", "news/feed.atom", "news/feed.json", "news/data/stories.json"]) {
+for (const relative of ["news/index.html", "wirkungsticker/index.html", "wirkungsticker/manifest.webmanifest", "wirkungsticker/sw.js", "wirkungsticker/offline.html", "wirkungsticker/feed.xml", "wirkungsticker/feed.atom", "wirkungsticker/feed.json", "wirkungsticker/data/stories.json"]) {
   if (!fs.existsSync(path.join(ROOT, relative))) fail(`GENERATED_FILE_MISSING:${relative}`);
 }
-const index = fs.readFileSync(path.join(ROOT, "news/wirkungsticker/index.html"), "utf8");
-if (!index.includes("https://wirkungsoekonomie.de/news/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
-if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("news/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen")) fail("NEWS_APP_UI_INVALID");
+const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf8");
+if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
+if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert")) fail("NEWS_APP_UI_INVALID");
 for (const story of store.stories.filter((item) => item.published)) {
-  const detail = fs.readFileSync(path.join(ROOT, "news", story.slug, "index.html"), "utf8");
+  const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
   const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
   const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");
   if (!detail.includes("Wahrheit zuerst:") || truthAt < 0 || uncertaintyAt < 0 || truthAt > uncertaintyAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);
+  if (!detail.includes("Ausgangsmeldung vom") || !detail.includes("WÖk-Analyse:")) fail(`NEWS_SOURCE_DATE_MISSING:${story.story_id}`);
   if (!detail.includes("Erste Ordnung – unmittelbar") || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
 }
-const manifest = readJson("news/manifest.webmanifest");
-if (manifest.id !== "/news/" || manifest.scope !== "/news/" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");
-const serviceWorker = fs.readFileSync(path.join(ROOT, "news/sw.js"), "utf8");
-if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("/news/feed.json")) fail("NEWS_SERVICE_WORKER_INVALID");
-const rss = fs.readFileSync(path.join(ROOT, "news/feed.xml"), "utf8");
-const atom = fs.readFileSync(path.join(ROOT, "news/feed.atom"), "utf8");
+const manifest = readJson("wirkungsticker/manifest.webmanifest");
+if (manifest.id !== "/wirkungsticker/" || manifest.scope !== "/wirkungsticker/" || manifest.start_url !== "/wirkungsticker/?source=pwa" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");
+const serviceWorker = fs.readFileSync(path.join(ROOT, "wirkungsticker/sw.js"), "utf8");
+if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("/wirkungsticker/feed.json")) fail("NEWS_SERVICE_WORKER_INVALID");
+const rss = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.xml"), "utf8");
+const atom = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.atom"), "utf8");
 if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");
+const portal = fs.readFileSync(path.join(ROOT, "news/index.html"), "utf8");
+if (portal.includes('rel="manifest"') || portal.includes("data-news-app-install")) fail("NEWS_PORTAL_MUST_NOT_SHARE_TICKER_APP");
+const legacyIndex = fs.readFileSync(path.join(ROOT, "news/wirkungsticker/index.html"), "utf8");
+if (!legacyIndex.includes("/wirkungsticker/")) fail("NEWS_LEGACY_REDIRECT_INVALID");
 
 const sensitiveFiles = [
   "scripts/news/lib.mjs", "scripts/news/run.mjs", "scripts/news/build.mjs", "scripts/news/schedule.mjs",

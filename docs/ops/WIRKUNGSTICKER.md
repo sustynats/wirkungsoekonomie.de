@@ -1,6 +1,6 @@
 # Wirkungsticker: Betrieb und Architektur
 
-Der Wirkungsticker veröffentlicht unter `/news/wirkungsticker/` eine kleine Zahl quellengebundener Wirkungsnachrichten. Die stabilen Detailadressen bleiben unter `/news/<story-slug>/`; die bisherigen Ticker-Feeds bleiben aus Kompatibilitätsgründen unter `/news/feed.xml`, `/news/feed.atom` und `/news/feed.json`. `/news/` selbst ist das Portal „Neues aus der Wirkungsökonomie“ mit einem eigenen RSS-Feed unter `/feeds/neuigkeiten.xml`.
+Der Wirkungsticker veröffentlicht als eigenständiges Produkt unter `/wirkungsticker/` eine kleine Zahl quellengebundener Wirkungsnachrichten. Die stabilen Detailadressen liegen unter `/wirkungsticker/<story-slug>/`, die Feeds unter `/wirkungsticker/feed.xml`, `/wirkungsticker/feed.atom` und `/wirkungsticker/feed.json`. Alte Ticker-Adressen unter `/news/` leiten auf die neuen Ziele weiter oder liefern vorübergehend einen kompatiblen Feed. `/news/` selbst bleibt ausschließlich das Portal „Neues aus der Wirkungsökonomie“ mit einem eigenen RSS-Feed unter `/feeds/neuigkeiten.xml`.
 
 Der Ticker nutzt keine neue Datenbank und keinen neuen KI-Anbieter: Der kanonische Zustand liegt versioniert in `data/news/`, die Analyse läuft über die bestehende Oracle-WÖk-KI (`/api/woek-ai`), die Auslieferung über den vorhandenen statischen GitHub-Pages-Build.
 
@@ -10,7 +10,7 @@ Der Ticker nutzt keine neue Datenbank und keinen neuen KI-Anbieter: Der kanonisc
 2. `scripts/news/run.mjs` normalisiert URLs und Texte, dedupliziert unveränderte Einträge, bildet zeitlich und semantisch begrenzte Story-Cluster und berechnet lokal Relevanz, Themen, Dimensionen, Status und Analyseart.
 3. Nur Primärquellen-Storys oberhalb der dynamischen Budgetschwelle gehen in einem kleinen Batch an die bestehende WÖk-KI. Quelleninhalte sind als `UNTRUSTED_SOURCE_DATA` gekapselt. Die KI darf nur gelieferte Claims verwenden.
 4. Das automatische Qualitätsgate prüft Schema, Claim-Ledger, Primärquelle, Unsicherheit, Kausalitätsgrenzen, Terminologie, ungestützte Zahlen, Textübernahme, HTML und verbotene Personen-/Parteienbewertungen. Fehler schließen die Veröffentlichung aus (`fail closed`).
-5. `scripts/news/build.mjs` erzeugt die Ticker-Übersicht unter `/news/wirkungsticker/`, Storyseiten, RSS, Atom, JSON Feed und eine öffentliche reduzierte JSON-Datei. Frühere Storyversionen bleiben im internen versionierten Datensatz erhalten.
+5. `scripts/news/build.mjs` erzeugt die Ticker-Übersicht unter `/wirkungsticker/`, Storyseiten, RSS, Atom, JSON Feed und eine öffentliche reduzierte JSON-Datei. Frühere Storyversionen bleiben im internen versionierten Datensatz erhalten.
 
 Die Übersicht zeigt zunächst höchstens zehn Karten und lädt weitere Ergebnisse in Zehnerschritten nach. Eine lokale Suche filtert die bereits veröffentlichten Ticker-Inhalte ohne zusätzlichen Dienst; für die Suche über die gesamte Website wird derselbe Begriff an die bestehende WÖk-Suche übergeben. Die Themenfilter brechen innerhalb der verfügbaren Breite um und erzeugen keinen horizontalen Scrollbereich.
 
@@ -18,7 +18,7 @@ Jede Detailseite trennt den Faktencheck vom Folgencheck und formuliert beide als
 
 ## Installierbare Web-App und Meldungen
 
-`news/manifest.webmanifest` macht das Neuigkeitenportal unter `/news/` mitsamt dem Wirkungsticker als eigenständige Web-App installierbar. Die vorhandenen WÖk-App-Icons werden wiederverwendet; `news/sw.js` übernimmt innerhalb des klar begrenzten `/news/`-Scopes Offline-Cache, Ticker-Abgleich und optionale Meldungen. Der App-Shell-Cache umfasst Portal, Ticker-Übersicht, Feed und benötigte Styles/Skripte, sodass zuletzt geladene Inhalte auch offline erreichbar bleiben.
+`wirkungsticker/manifest.webmanifest` macht ausschließlich den Wirkungsticker als eigenständige Web-App installierbar. Die vorhandenen WÖk-App-Icons werden wiederverwendet; `wirkungsticker/sw.js` übernimmt innerhalb des klar begrenzten `/wirkungsticker/`-Scopes Offline-Cache, Ticker-Abgleich und optionale Meldungen. Das allgemeine Portal `/news/` gehört weder zum App-Scope noch zum App-Cache.
 
 Das Installationsangebot erscheint auf Smartphones, solange die App nicht installiert und die Einladung nicht für 30 Tage ausgeblendet wurde. Chromium-basierte Browser erhalten den nativen Installationsdialog; Safari erklärt den manuellen Weg über „Teilen → Zum Home-Bildschirm“.
 

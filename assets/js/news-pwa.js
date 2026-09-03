@@ -2,7 +2,7 @@
   const canRegisterServiceWorker = "serviceWorker" in navigator
     && (window.location.protocol === "https:" || window.location.hostname === "localhost");
   const registrationPromise = canRegisterServiceWorker
-    ? navigator.serviceWorker.register("/news/sw.js", { scope: "/news/" }).catch(() => null)
+    ? navigator.serviceWorker.register("/wirkungsticker/sw.js", { scope: "/wirkungsticker/" }).catch(() => null)
     : Promise.resolve(null);
 
   const tools = document.querySelector("[data-news-app-tools]");
@@ -16,11 +16,11 @@
   const notificationStatus = tools.querySelector("[data-news-notification-status]");
   const markReadButton = tools.querySelector("[data-news-mark-read]");
   const cards = Array.from(document.querySelectorAll("[data-news-card]"));
-  const installDismissKey = "woek_news_install_dismissed_at";
-  const notificationKey = "woek_news_notifications";
-  const lastSeenKey = "woek_news_last_seen";
-  const lastNotifiedKey = "woek_news_last_notified";
-  const notificationTag = "woek-news-updates";
+  const installDismissKey = "woek_ticker_install_dismissed_at";
+  const notificationKey = "woek_ticker_notifications";
+  const lastSeenKey = "woek_ticker_last_seen";
+  const lastNotifiedKey = "woek_ticker_last_notified";
+  const notificationTag = "woek-wirkungsticker-updates";
   const mobile = navigator.userAgentData?.mobile === true
     || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
     || window.matchMedia("(max-width: 760px)").matches;
@@ -195,7 +195,7 @@
 
   async function checkForNews() {
     try {
-      const response = await fetch(`/news/feed.json?check=${Date.now()}`, { cache: "no-store" });
+      const response = await fetch(`/wirkungsticker/feed.json?check=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) return;
       const feed = await response.json();
       const lastSeen = Date.parse(window.localStorage.getItem(lastSeenKey) || 0);
@@ -210,7 +210,7 @@
         icon: "/assets/img/brand/app-icon-192.png",
         badge: "/assets/img/brand/app-icon-192.png",
         tag: notificationTag,
-        data: { url: "/news/wirkungsticker/?source=notification" },
+        data: { url: "/wirkungsticker/?source=notification" },
       });
       window.localStorage.setItem(lastNotifiedKey, new Date(latest).toISOString());
     } catch {

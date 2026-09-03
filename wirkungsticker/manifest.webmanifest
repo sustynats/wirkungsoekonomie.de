@@ -1,10 +1,10 @@
 {
-  "name": "Neues aus der Wirkungsökonomie",
-  "short_name": "WÖk Neues",
-  "description": "Neuigkeiten und quellengebundene Wirkungsnachrichten der Wirkungsökonomie.",
-  "id": "/news/",
-  "start_url": "/news/?source=pwa",
-  "scope": "/news/",
+  "name": "Wirkungsticker",
+  "short_name": "Wirkungsticker",
+  "description": "Quellengebundene Wirkungsnachrichten für Mensch, Planet und Demokratie.",
+  "id": "/wirkungsticker/",
+  "start_url": "/wirkungsticker/?source=pwa",
+  "scope": "/wirkungsticker/",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui", "browser"],
   "background_color": "#f7f1e8",
@@ -36,19 +36,14 @@
   ],
   "shortcuts": [
     {
-      "name": "Neueste Meldungen",
-      "short_name": "Neu",
-      "url": "/news/"
-    },
-    {
-      "name": "Wirkungsticker",
-      "short_name": "Ticker",
-      "url": "/news/wirkungsticker/"
+      "name": "Aktuelle Wirkungsnachrichten",
+      "short_name": "Aktuell",
+      "url": "/wirkungsticker/"
     },
     {
       "name": "Hohe systemische Relevanz",
       "short_name": "Hohe Relevanz",
-      "url": "/news/wirkungsticker/?thema=high"
+      "url": "/wirkungsticker/?thema=high"
     }
   ]
 }
