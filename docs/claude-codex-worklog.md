@@ -9,6 +9,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ## 2026-09-03
 
+### Codex · Wirkungsticker: 503-Resilienz und verlässliche Aktualisierung
+- **Was:** Vier versetzte Laufchancen pro Stunde mit genau einem KI-Aufruf pro Lauf; persistentes rollendes Limit von vier Aufrufen in 60 Minuten; frische Meldungen und materielle Aktenupdates vor alten Filter-Neubewertungen. Reports unterscheiden `ok` und `degraded`, erfolgreiche und versuchte Läufe werden getrennt geführt, und der abschließende Health-Check macht 503 sowie Quellenlücken sichtbar rot, ohne Queue oder bereits erfolgreiche Teilresultate zu verlieren. Pages wird nur bei einer echten öffentlichen Story-Änderung ausgelöst; Queue-Commits allein führen nicht zu App-Neuladungen oder Releases.
+- **Pfade:** `.github/workflows/wirkungsticker.yml`, `scripts/news/run.mjs`, `scripts/news/build.mjs`, `scripts/news/check-run-health.mjs`, `tests/news/wirkungsticker.test.mjs`, `docs/ops/WIRKUNGSTICKER.md`.
+- **Geprüft:** Ticker-Tests, Generator, Validator und Health-Check; anschließend manueller Ticker-only-Release und Live-Prüfung.
+- **Offen:** Serverseitige Ursache des Oracle-503 separat anhand der Instanzdiagnose beheben. Auftrag B (Titelbildpipeline/Higgsfield) bleibt bis zur stabilen Nachrichtenversorgung zurückgestellt.
+
 ### Codex · Wirkungsticker: KI-Visuals aktiviert und mobiler Lesefluss ergänzt
 - **Was:** `VISUALS_SCHEMA` und `VISUALS_PROMPT_RULES` in den bestehenden WÖk-KI-Prompt eingebunden; `sanitizeVisuals()` läuft vor dem allgemeinen Qualitätsgate und schreibt verworfene Elemente in `report.visuals_dropped`. Detailseiten erhalten einen zweiten Teilen-Button am Seitenende, Navigation zu neuerer/nächster Meldung und Rücklinks zur Übersicht. Die Übersicht merkt Filter, Suche, Nachladeumfang und Scrollposition lokal im Sitzungsspeicher und stellt die vorige Leseposition wieder her.
 - **Pfade:** `scripts/news/lib.mjs`, `scripts/news/run.mjs`, `scripts/news/validate.mjs`, `tests/news/wirkungsticker.test.mjs`; nutzerbeauftragte Ergänzung in Claudes UX-Lane: `scripts/news/build.mjs`, `assets/js/news.js`, `assets/css/news.css`.

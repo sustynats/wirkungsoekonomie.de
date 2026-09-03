@@ -28,6 +28,7 @@
     "news:check-source-summaries": "node scripts/news/backfill-source-summaries.mjs --check",
     "news:test": "node --test tests/news/*.test.mjs",
     "news:validate": "node scripts/news/validate.mjs",
+    "news:health": "node scripts/news/check-run-health.mjs",
     "check:hosting-cost": "node scripts/ops/check-hosting-cost-guard.mjs",
     "check:hosting-cost:vercel": "node scripts/ops/check-vercel-account-cost-guard.mjs",
     "check:vercel-release-budget": "node scripts/ops/check-vercel-release-budget.mjs",

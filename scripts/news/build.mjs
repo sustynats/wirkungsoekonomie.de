@@ -467,6 +467,7 @@ function updateSitemap(stories, updatedAt, oldSlugs) {
 
 export function buildNewsSite() {
   const data = readJson(STORIES_FILE);
+  const publicationUpdatedAt = data.public_updated_at || data.updated_at;
   const stories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
   const retiredStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed === false);
   const sourceManifest = fs.existsSync(MANIFEST_FILE) ? MANIFEST_FILE : LEGACY_MANIFEST_FILE;
@@ -478,7 +479,7 @@ export function buildNewsSite() {
       fs.rmSync(path.join(LEGACY_NEWS_DIR, slug), { recursive: true, force: true });
     }
   }
-  write(path.join(TICKER_DIR, "index.html"), indexPage(stories, data.updated_at));
+  write(path.join(TICKER_DIR, "index.html"), indexPage(stories, publicationUpdatedAt));
   for (const [index, story] of stories.entries()) {
     write(path.join(TICKER_DIR, story.slug, "index.html"), storyPage(story, {
       newerStory: stories[index - 1] || null,
@@ -486,26 +487,26 @@ export function buildNewsSite() {
     }));
   }
   for (const story of retiredStories) write(path.join(TICKER_DIR, story.slug, "index.html"), retiredStoryPage(story));
-  write(path.join(TICKER_DIR, "feed.xml"), feedXml(stories, data.updated_at));
-  write(path.join(TICKER_DIR, "feed.atom"), feedXml(stories, data.updated_at, true));
+  write(path.join(TICKER_DIR, "feed.xml"), feedXml(stories, publicationUpdatedAt));
+  write(path.join(TICKER_DIR, "feed.atom"), feedXml(stories, publicationUpdatedAt, true));
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));
-  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.1", updated_at: data.updated_at, stories: stories.map(publicStory) }, null, 2));
+  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.1", updated_at: publicationUpdatedAt, stories: stories.map(publicStory) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
   write(path.join(LEGACY_NEWS_DIR, "wirkungsticker/index.html"), legacyRedirect("/wirkungsticker/"));
   for (const story of stories) write(path.join(LEGACY_NEWS_DIR, story.slug, "index.html"), legacyRedirect(`/wirkungsticker/${story.slug}/`, story.title));
   for (const story of retiredStories) write(path.join(LEGACY_NEWS_DIR, story.slug, "index.html"), legacyRedirect(`/wirkungsticker/${story.slug}/`, story.title));
-  write(path.join(LEGACY_NEWS_DIR, "feed.xml"), feedXml(stories, data.updated_at));
-  write(path.join(LEGACY_NEWS_DIR, "feed.atom"), feedXml(stories, data.updated_at, true));
+  write(path.join(LEGACY_NEWS_DIR, "feed.xml"), feedXml(stories, publicationUpdatedAt));
+  write(path.join(LEGACY_NEWS_DIR, "feed.atom"), feedXml(stories, publicationUpdatedAt, true));
   write(path.join(LEGACY_NEWS_DIR, "feed.json"), JSON.stringify({
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));
-  updateSitemap(stories, data.updated_at, oldSlugs);
+  updateSitemap(stories, publicationUpdatedAt, oldSlugs);
   console.log(`Wirkungsticker gebaut: ${stories.length} aktuelle und ${retiredStories.length} transparent archivierte Storys, RSS/Atom/JSON.`);
-  return { stories: stories.length, retired_stories: retiredStories.length, updated_at: data.updated_at };
+  return { stories: stories.length, retired_stories: retiredStories.length, updated_at: publicationUpdatedAt };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) buildNewsSite();

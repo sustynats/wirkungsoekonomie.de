@@ -2,9 +2,10 @@ name: Wirkungsticker
 
 on:
   schedule:
-    # Stündlich, bewusst abseits der vollen Stunde. Der Worker läuft unabhängig
-    # von GitHub-Verzögerungen und damit auch nachts ohne menschlichen Eingriff.
-    - cron: "17 * * * *"
+    # Vier kurze Chancen je Stunde begrenzen den Verzug bei ausgelassenen GitHub-
+    # Cron-Ereignissen. Die persistente rollende Grenze schützt den Worker davor,
+    # dass verspätete Läufe mehr als vier KI-Aufrufe pro Stunde erzeugen.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -32,6 +33,9 @@ jobs:
       - name: Select Europe/Berlin slot
         id: slot
         run: node scripts/news/schedule.mjs
+      - name: Record expected run start
+        if: steps.slot.outputs.should_run == 'true'
+        run: echo "WOEK_NEWS_EXPECTED_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
         run: npm run news:test
@@ -39,8 +43,9 @@ jobs:
         if: steps.slot.outputs.should_run == 'true'
         env:
           WOEK_NEWS_MONTHLY_AI_BUDGET_USD: "5"
-          # Vier Einzelanalysen entsprechen exakt dem reservierten Worker-Limit.
-          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "4"
+          # Ein kurzer Aufruf je Lauf; vier Laufchancen bedienen das Stundenlimit.
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "1"
+          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "4"
           # Technische Wiederholungen bleiben in der dauerhaften Stunden-Queue. So
           # verbraucht ein 503 nicht mehrere der vier reservierten Worker-Slots.
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
@@ -49,6 +54,10 @@ jobs:
           WOEK_NEWS_AI_BATCH_DELAY_MS: "30000"
           WOEK_NEWS_AI_TIMEOUT_MS: "120000"
         run: npm run news:run
+      - name: Read public ticker outcome
+        id: outcome
+        if: steps.slot.outputs.should_run == 'true'
+        run: node -e 'const fs=require("node:fs"); const report=require("./reports/wirkungsticker-latest-run.json"); fs.appendFileSync(process.env.GITHUB_OUTPUT, "public_changed=" + Boolean(report.public_changed) + "\n");'
       - name: Build search index and validate output
         if: steps.slot.outputs.should_run == 'true'
         env:
@@ -76,7 +85,10 @@ jobs:
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish the committed ticker automatically
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true' && steps.outcome.outputs.public_changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -f ticker_only=true
+      - name: Verify ticker run health
+        if: always() && steps.slot.outputs.should_run == 'true'
+        run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"

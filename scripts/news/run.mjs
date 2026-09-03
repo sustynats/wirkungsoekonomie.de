@@ -151,7 +151,7 @@ function attachRelatedTickerHistory(candidates, stories) {
   });
 }
 
-function createCandidate(cluster, now, reassessment = false) {
+function createCandidate(cluster, now, reassessment = false, fresh = false) {
   const existing = cluster.existing_story;
   const sources = mergeSources(existing?.sources, cluster.sources);
   const candidate = {
@@ -163,6 +163,7 @@ function createCandidate(cluster, now, reassessment = false) {
     sources,
     existing_story: existing || null,
     reassessment,
+    fresh,
   };
   candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
   candidate.preanalysis = preAnalyzeStory(candidate);
@@ -186,6 +187,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
         quality_errors: qualityErrors,
         quality_retry_count: qualityRetryCount,
         reassessment: Boolean(candidate.reassessment),
+        fresh: Boolean(candidate.fresh),
       },
     };
   }
@@ -204,6 +206,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     quality_errors: qualityErrors,
     quality_retry_count: qualityRetryCount,
     reassessment: Boolean(candidate.reassessment),
+    fresh: Boolean(candidate.fresh),
     pending_reason: reason,
     versions: existing?.versions || [],
     updated_at: now,
@@ -323,14 +326,30 @@ function latestSourceDate(items) {
   }, 0);
 }
 
-function queuePriority(candidate, now) {
+export function queuePriority(candidate, now) {
   const existing = candidate.existing_story;
-  const publishedUpdateBonus = existing?.published && candidate.content_hash !== existing.content_hash ? 30 : 0;
-  const reassessmentBonus = candidate.reassessment ? 50 : 0;
+  const freshBonus = candidate.fresh ? 120 : 0;
+  const publishedUpdateBonus = candidate.fresh && existing?.published && candidate.content_hash !== existing.content_hash ? 60 : 0;
+  const reassessmentPenalty = candidate.reassessment && !candidate.fresh ? -60 : 0;
   const queuedAt = Date.parse(existing?.pending_update?.detected_at || existing?.updated_at || candidate.first_seen || now);
   const ageHours = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / (60 * 60 * 1000)) : 0;
-  const waitingBonus = Math.min(18, Math.floor(ageHours / 6));
-  return candidate.preanalysis.internal_relevance_score + publishedUpdateBonus + reassessmentBonus + waitingBonus;
+  const waitingBonus = Math.min(36, Math.floor(ageHours / 6));
+  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + reassessmentPenalty + waitingBonus;
+}
+
+export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
+  const nowMs = new Date(now).getTime();
+  if (!Number.isFinite(nowMs)) throw new Error("INVALID_AI_USAGE_TIME");
+  const cutoff = nowMs - Math.max(1, Number(windowMinutes || 60)) * 60 * 1000;
+  return (usage.runs || [])
+    .filter((run) => {
+      const startedAt = Date.parse(run.started_at || 0);
+      return Number.isFinite(startedAt) && startedAt > cutoff && startedAt <= nowMs;
+    })
+    .reduce((sum, run) => {
+      const requests = Number(run.ai?.requests ?? run.counts?.ai_stories ?? 0);
+      return sum + (Number.isFinite(requests) ? Math.max(0, requests) : 0);
+    }, 0);
 }
 
 function sanitizeError(error) {
@@ -371,7 +390,8 @@ export async function runWirkungsticker(options = {}) {
   const usage = readJson(files.usage);
   const enabledSources = registry.sources.filter((source) => source.enabled);
   const report = {
-    schema_version: "1.1",
+    schema_version: "1.2",
+    status: "running",
     started_at: now,
     berlin_slot: runSchedule.slot || (isAutomatedRun ? `Automatischer Lauf ${String(runSchedule.hourNumber).padStart(2, "0")}:00` : "manueller Lauf"),
     feed_entries_fetched: 0,
@@ -451,6 +471,7 @@ export async function runWirkungsticker(options = {}) {
   const futureToleranceMs = 10 * 60 * 1000;
   const cutoff = state.last_successful_run ? Date.parse(state.last_successful_run) - 5 * 60 * 1000 : nowDate.getTime() - lookbackMs;
   const changedItems = [];
+  const freshItemIds = new Set();
   for (const item of allItems) {
     const previous = state.seen_items[item.item_id];
     const published = Date.parse(item.published_at || 0);
@@ -463,10 +484,14 @@ export async function runWirkungsticker(options = {}) {
     if (!previous || backfillCandidate) {
       changedItems.push(item);
       if (previous) report.feed_entries_backfilled += 1;
-      else report.feed_entries_new += 1;
+      else {
+        report.feed_entries_new += 1;
+        freshItemIds.add(item.item_id);
+      }
     } else if (previous.content_hash !== item.content_hash) {
       changedItems.push(item);
       report.feed_entries_updated += 1;
+      freshItemIds.add(item.item_id);
     } else {
       report.feed_entries_deduplicated += 1;
     }
@@ -490,9 +515,10 @@ export async function runWirkungsticker(options = {}) {
       Boolean(needsRelevanceBackfill
         && cluster.existing_story?.published
         && cluster.existing_story?.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE"),
+      cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
+  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => (!story.published || story.pending_update) && !freshIds.has(story.story_id))
     .filter((story) => {
@@ -513,6 +539,7 @@ export async function runWirkungsticker(options = {}) {
         sources,
         existing_story: story,
         reassessment: Boolean(story.pending_update?.reassessment || story.reassessment),
+        fresh: Boolean(story.pending_update?.fresh || story.fresh),
       };
       candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
       candidate.preanalysis = preAnalyzeStory(candidate);
@@ -534,7 +561,14 @@ export async function runWirkungsticker(options = {}) {
     .filter((candidate) => (candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold) && candidate.sources.some((source) => source.primary_source))
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   report.locally_rejected = clusters.length - eligible.length;
-  const maxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
+  const configuredMaxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
+  const maxAiCallsPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
+  const aiCallsInLastHour = aiRequestsInWindow(usage, now);
+  const remainingAiCallsThisHour = Math.max(0, maxAiCallsPerHour - aiCallsInLastHour);
+  const maxAiStories = Math.min(configuredMaxAiStories, remainingAiCallsThisHour);
+  report.ai_hourly_limit = maxAiCallsPerHour;
+  report.ai_calls_in_last_hour = aiCallsInLastHour;
+  report.ai_calls_available_this_run = remainingAiCallsThisHour;
   const selected = stage.stage >= 3 ? [] : eligible.slice(0, maxAiStories);
   const aiBatchSize = Math.max(1, Math.min(maxAiStories || 1, Number(process.env.WOEK_NEWS_AI_BATCH_SIZE || 2)));
   report.ai_stories = selected.length;
@@ -542,9 +576,10 @@ export async function runWirkungsticker(options = {}) {
   report.ai_batches_planned = Math.ceil(selected.length / aiBatchSize);
 
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
+  const deferredReason = remainingAiCallsThisHour === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
   for (const candidate of eligible.slice(maxAiStories)) {
-    byId.set(candidate.story_id, pendingRecord(candidate, "AI_BUDGET_OR_BATCH_LIMIT", now));
-    report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_BUDGET_OR_BATCH_LIMIT" });
+    byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
+    report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
   }
 
   const aiEnabled = String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
@@ -641,7 +676,16 @@ export async function runWirkungsticker(options = {}) {
   report.completed_at = new Date().toISOString();
   const currentItems = allItems.filter((item) => Date.parse(item.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
-  state.last_successful_run = now;
+  report.status = report.ai_error || report.source_failures > 0 ? "degraded" : "ok";
+  report.ai_calls_remaining_this_hour = Math.max(0, maxAiCallsPerHour - aiCallsInLastHour - report.ai_calls);
+  report.public_changed = [
+    report.published_stories,
+    report.updated_stories,
+    report.retired_stories,
+    report.reactivated_stories,
+  ].some((count) => Number(count || 0) > 0);
+  state.last_attempted_run = now;
+  if (report.status === "ok") state.last_successful_run = now;
   state.relevance_filter_version = RELEVANCE_FILTER_VERSION;
   for (const [storyId, story] of byId) {
     if (story.published || story.listed === false) continue;
@@ -655,8 +699,14 @@ export async function runWirkungsticker(options = {}) {
     }
   }
   state.pending_story_ids = [...byId.values()].filter((story) => (!story.published && story.listed !== false) || story.pending_update).map((story) => story.story_id);
+  report.pending_story_count = state.pending_story_ids.length;
   storyStore.updated_at = now;
   storyStore.stories = [...byId.values()].sort((a, b) => Date.parse(b.last_updated || 0) - Date.parse(a.last_updated || 0));
+  const latestPublishedChange = storyStore.stories
+    .filter((story) => story.published)
+    .reduce((latest, story) => Math.max(latest, Date.parse(story.updated_at || story.last_updated || story.published_at || 0) || 0), 0);
+  if (report.public_changed) storyStore.public_updated_at = now;
+  else if (!storyStore.public_updated_at) storyStore.public_updated_at = latestPublishedChange ? new Date(latestPublishedChange).toISOString() : now;
   usage.runs.push({
     run_id: `news-run-${sha256(now).slice(0, 12)}`,
     started_at: now,
@@ -673,6 +723,7 @@ export async function runWirkungsticker(options = {}) {
       published_stories: report.published_stories,
     },
     ai: report.ai_calls ? {
+      requests: report.ai_calls,
       provider: report.provider,
       model: report.model,
       input_tokens: report.input_tokens,
