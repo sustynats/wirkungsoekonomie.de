@@ -25,10 +25,17 @@ if (!Array.isArray(store.stories) || !Array.isArray(usage.runs)) fail("DATA_SCHE
 
 for (const story of store.stories) {
   if (!story.story_id || !story.slug || !Array.isArray(story.sources) || !Array.isArray(story.claims)) fail(`STORY_SCHEMA_INVALID:${story.story_id || "unknown"}`);
-  if (story.published) {
+  if (story.published && story.listed !== false) {
     const errors = validateAnalysis(story.analysis, story);
     if (errors.length) fail(`PUBLISHED_STORY_QUALITY_INVALID:${story.story_id}:${errors.join(",")}`);
     if (!fs.existsSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"))) fail(`STORY_PAGE_MISSING:${story.slug}`);
+  }
+  if (story.published && story.listed === false) {
+    if (!story.retired_at || !story.retirement?.note) fail(`RETIRED_STORY_AUDIT_MISSING:${story.story_id}`);
+    const retiredPage = path.join(ROOT, "wirkungsticker", story.slug, "index.html");
+    if (!fs.existsSync(retiredPage)) fail(`RETIRED_STORY_PAGE_MISSING:${story.slug}`);
+    const retiredHtml = fs.readFileSync(retiredPage, "utf8");
+    if (!retiredHtml.includes("Transparenzhinweis") || !retiredHtml.includes('name="robots" content="noindex,follow"')) fail(`RETIRED_STORY_PAGE_INVALID:${story.story_id}`);
   }
 }
 
@@ -37,8 +44,8 @@ for (const relative of ["news/index.html", "wirkungsticker/index.html", "wirkung
 }
 const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf8");
 if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
-if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert") || !index.includes("Push-Benachrichtigungen")) fail("NEWS_APP_UI_INVALID");
-for (const story of store.stories.filter((item) => item.published)) {
+if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen")) fail("NEWS_APP_UI_INVALID");
+for (const story of store.stories.filter((item) => item.published && item.listed !== false)) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
   const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
   const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");
@@ -50,6 +57,8 @@ const manifest = readJson("wirkungsticker/manifest.webmanifest");
 if (manifest.id !== "/wirkungsticker/" || manifest.scope !== "/wirkungsticker/" || manifest.start_url !== "/wirkungsticker/?source=pwa" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");
 const serviceWorker = fs.readFileSync(path.join(ROOT, "wirkungsticker/sw.js"), "utf8");
 if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("NEWS_NOTIFICATIONS_DISABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("showNotification") || !serviceWorker.includes("notificationclick") || !serviceWorker.includes("/wirkungsticker/feed.json")) fail("NEWS_SERVICE_WORKER_INVALID");
+const pwaScript = fs.readFileSync(path.join(ROOT, "assets/js/news-pwa.js"), "utf8");
+if (!pwaScript.includes('window.addEventListener("focus"') || !pwaScript.includes('window.addEventListener("pageshow"') || !pwaScript.includes("feedLatest > pageLatest") || !pwaScript.includes("window.location.reload()")) fail("NEWS_APP_AUTO_REFRESH_INVALID");
 const rss = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.xml"), "utf8");
 const atom = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.atom"), "utf8");
 if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");

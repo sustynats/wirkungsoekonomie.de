@@ -417,6 +417,19 @@
           "source_priority": 94,
           "source_topic": "Europa",
           "content_hash": "60648a1d2214fcab950868dbcba18f279ffc7a4739248dd66702ad3dce14bd29"
+        },
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
+          "title": "Für eine verlässliche Stromversorgung – auch in Zukunft",
+          "summary": "Deutschland hat eine der verlässlichsten Stromversorgungen. Die Bundesregierung will, dass das auch in Zukunft so bleibt. Das Gesetz für neue Stromkapazitäten ist am 22. Juli in Kraft getreten. Lesen Sie hier wichtige Fragen und Antworten.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T11:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "276d56663726c4caada248a8ebc1b45e733f4df998078b7ead24e6621c9c883d"
         }
       ],
       "claims": [
@@ -432,10 +445,24 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:15:45.293Z"
+          "checked_at": "2026-09-03T12:07:25.173Z"
+        },
+        {
+          "claim_id": "wt-4b5d0962d323432a-claim-02",
+          "story_id": "wt-4b5d0962d323432a",
+          "claim": "Für eine verlässliche Stromversorgung – auch in Zukunft: Deutschland hat eine der verlässlichsten Stromversorgungen. Die Bundesregierung will, dass das auch in Zukunft so bleibt. Das Gesetz für neue Stromkapazitäten ist am 22. Juli in Kraft getreten. Lesen Sie hier wichtige Fragen und Antworten.",
+          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
+          "source_id": "bundesregierung-kompakt",
+          "source_function": "official_fact_source",
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-03T12:07:25.173Z"
         }
       ],
-      "content_hash": "08bffae77489e6c8cacc926aaccda07322a8becb325fb255fe629e3615fe24a3",
+      "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
       "published": true,
       "analysis_status": "veröffentlicht",
       "current_version": 1,
@@ -634,7 +661,7 @@
       ],
       "content_hash": "7de199055f36ccfb4689226037982678c829ce50434175eadaddfed490632899",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "current_version": 1,
       "analysis": {
         "story_id": "wt-52d036419dd386a9",
@@ -788,7 +815,26 @@
           "published_at": "2026-09-03T11:02:59.364Z",
           "source_count": 1
         }
-      ]
+      ],
+      "listed": false,
+      "relevance_filter_version": "3.0",
+      "retired_at": "2026-09-03T12:07:25.173Z",
+      "retirement": {
+        "at": "2026-09-03T12:07:25.173Z",
+        "filter_version": "3.0",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-4b5d0962d323432a"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-4b5d0962d323432a",
+            "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+            "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung"
+          }
+        ],
+        "note": "Die Meldung beschreibt denselben deutschen Kapazitätsmechanismus wie die fortgeführte Wirkungsakte. Beide Primärquellen werden dort gemeinsam ausgewertet."
+      }
     },
     {
       "story_id": "wt-acae834e3431b203",

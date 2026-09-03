@@ -19,7 +19,7 @@ import {
 import { buildNewsSite } from "./build.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const RELEVANCE_FILTER_VERSION = "2.0";
+const RELEVANCE_FILTER_VERSION = "3.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
 const MAX_QUALITY_RETRIES = 3;
 const RETRYABLE_QUALITY_ERRORS = [
@@ -36,7 +36,18 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_DETAIL_SUMMARY_(?:INVALID|LENGTH)$/,
   /^AI_UNSUPPORTED_NUMBER:/,
   /^AI_UNSUPPORTED_FRAMEWORK_NUMBER:/,
+  /^AI_PUBLICATION_GATE_REQUIRED$/,
+  /^AI_PUBLICATION_GATE_(?:NEWS_VALUE|FACTORS|EXCEPTION|EVIDENCE|DUPLICATE)_INVALID$/,
+  /^AI_PUBLICATION_GATE_RATIONALE_REQUIRED$/,
 ];
+const EDITORIAL_REJECTION_ERRORS = new Set([
+  "AI_PUBLICATION_NOT_RECOMMENDED",
+  "AI_MATERIALITY_TOO_LOW",
+  "AI_NEWS_VALUE_CONTEXT_ONLY",
+  "AI_MATERIALITY_GATE_FAILED",
+  "AI_EVIDENCE_INSUFFICIENT",
+  "AI_DUPLICATE_WITHOUT_UPDATE",
+]);
 const files = {
   registry: path.join(ROOT, "content/news/source-registry.json"),
   state: path.join(ROOT, "data/news/state.json"),
@@ -98,7 +109,7 @@ function storyContentHash(story) {
   return sha256(story.sources.map((source) => `${source.url}:${source.content_hash}`).sort().join("\n"));
 }
 
-function createCandidate(cluster, now) {
+function createCandidate(cluster, now, reassessment = false) {
   const existing = cluster.existing_story;
   const sources = mergeSources(existing?.sources, cluster.sources);
   const candidate = {
@@ -109,6 +120,7 @@ function createCandidate(cluster, now) {
     last_updated: cluster.last_updated || now,
     sources,
     existing_story: existing || null,
+    reassessment,
   };
   candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
   candidate.preanalysis = preAnalyzeStory(candidate);
@@ -131,6 +143,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
         reason,
         quality_errors: qualityErrors,
         quality_retry_count: qualityRetryCount,
+        reassessment: Boolean(candidate.reassessment),
       },
     };
   }
@@ -148,9 +161,35 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     analysis_status: "automatische Veröffentlichung zurückgestellt",
     quality_errors: qualityErrors,
     quality_retry_count: qualityRetryCount,
+    reassessment: Boolean(candidate.reassessment),
     pending_reason: reason,
     versions: existing?.versions || [],
     updated_at: now,
+  };
+}
+
+function shouldRetireAfterReassessment(candidate, errors) {
+  return Boolean(candidate.reassessment)
+    && errors.length > 0
+    && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error));
+}
+
+function retiredRecord(candidate, now, qualityErrors) {
+  const existing = candidate.existing_story;
+  const { pending_update: _pendingUpdate, ...preserved } = existing;
+  return {
+    ...preserved,
+    listed: false,
+    analysis_status: "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
+    relevance_filter_version: RELEVANCE_FILTER_VERSION,
+    retired_at: now,
+    retirement: {
+      at: now,
+      filter_version: RELEVANCE_FILTER_VERSION,
+      reason_code: "FILTER_REASSESSMENT_NOT_MATERIAL",
+      quality_errors: qualityErrors,
+      note: "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt.",
+    },
   };
 }
 
@@ -188,7 +227,9 @@ function publishedRecord(candidate, analysis, ai, now) {
     claims: candidate.claims,
     content_hash: candidate.content_hash,
     published: true,
+    listed: true,
     analysis_status: "veröffentlicht",
+    relevance_filter_version: RELEVANCE_FILTER_VERSION,
     current_version: versionNumber,
     analysis,
     versions: [...(existing?.versions || []), version],
@@ -196,6 +237,9 @@ function publishedRecord(candidate, analysis, ai, now) {
       ...(existing?.publication_history || []),
       { version: versionNumber, published_at: now, source_count: candidate.sources.length },
     ],
+    retirement_history: existing?.retirement
+      ? [...(existing?.retirement_history || []), existing.retirement]
+      : (existing?.retirement_history || []),
   };
 }
 
@@ -209,15 +253,37 @@ function latestSourceDate(items) {
 function queuePriority(candidate, now) {
   const existing = candidate.existing_story;
   const publishedUpdateBonus = existing?.published && candidate.content_hash !== existing.content_hash ? 30 : 0;
+  const reassessmentBonus = candidate.reassessment ? 50 : 0;
   const queuedAt = Date.parse(existing?.pending_update?.detected_at || existing?.updated_at || candidate.first_seen || now);
   const ageHours = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / (60 * 60 * 1000)) : 0;
   const waitingBonus = Math.min(18, Math.floor(ageHours / 6));
-  return candidate.preanalysis.internal_relevance_score + publishedUpdateBonus + waitingBonus;
+  return candidate.preanalysis.internal_relevance_score + publishedUpdateBonus + reassessmentBonus + waitingBonus;
 }
 
 function sanitizeError(error) {
   const message = error instanceof Error ? error.message : String(error);
   return message.replace(/[A-Za-z0-9_-]{24,}/g, "[redacted]").slice(0, 240);
+}
+
+export function isRetryableFeedError(error) {
+  const message = error instanceof Error ? error.message : String(error);
+  return /fetch failed|network|socket|timed?\s*out|abort|ECONNRESET|EAI_AGAIN|FEED_HTTP_(?:408|425|429|5\d\d)/i.test(message);
+}
+
+export async function fetchFeedWithRetry(source, policy, fetchImpl = fetchFeed, options = {}) {
+  const attempts = Math.max(1, Math.min(4, Number(options.attempts || policy.fetch_attempts || 3)));
+  const delay = options.delayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds)));
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return { fetched: await fetchImpl(source, policy), attempts: attempt };
+    } catch (error) {
+      lastError = error;
+      if (attempt === attempts || !isRetryableFeedError(error)) throw error;
+      await delay(400 * (2 ** (attempt - 1)));
+    }
+  }
+  throw lastError;
 }
 
 export async function runWirkungsticker(options = {}) {
@@ -249,6 +315,8 @@ export async function runWirkungsticker(options = {}) {
     ai_batches_completed: 0,
     published_stories: 0,
     updated_stories: 0,
+    retired_stories: 0,
+    reactivated_stories: 0,
     provider: null,
     model: null,
     input_tokens: 0,
@@ -256,6 +324,7 @@ export async function runWirkungsticker(options = {}) {
     estimated_cost_usd: 0,
     source_successes: 0,
     source_failures: 0,
+    source_retry_attempts: 0,
     source_errors: [],
     quality_holds: [],
     budget_stage: 0,
@@ -263,9 +332,15 @@ export async function runWirkungsticker(options = {}) {
   };
 
   const fetchResults = await mapLimit(enabledSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => {
-    const fetched = await (options.fetchFeedImpl || fetchFeed)({ ...source, max_items: registry.policy.max_items_per_source }, registry.policy);
+    const fetchResult = await fetchFeedWithRetry(
+      { ...source, max_items: registry.policy.max_items_per_source },
+      registry.policy,
+      options.fetchFeedImpl || fetchFeed,
+      { delayImpl: options.fetchRetryDelayImpl },
+    );
+    const { fetched } = fetchResult;
     const items = parseFeed(fetched.body, { ...source, max_items: registry.policy.max_items_per_source });
-    return { source, fetched, items };
+    return { source, fetched, items, fetchAttempts: fetchResult.attempts };
   });
 
   const allItems = [];
@@ -280,6 +355,7 @@ export async function runWirkungsticker(options = {}) {
       continue;
     }
     report.source_successes += 1;
+    report.source_retry_attempts += Math.max(0, Number(result.value.fetchAttempts || 1) - 1);
     report.feed_entries_fetched += result.value.items.length;
     allItems.push(...result.value.items);
     state.source_status[source.source_id] = {
@@ -296,7 +372,6 @@ export async function runWirkungsticker(options = {}) {
   const lookbackMs = Number(registry.policy.bootstrap_lookback_hours || 36) * 60 * 60 * 1000;
   const backfillCutoff = nowDate.getTime() - RELEVANCE_BACKFILL_DAYS * 24 * 60 * 60 * 1000;
   const needsRelevanceBackfill = state.relevance_filter_version !== RELEVANCE_FILTER_VERSION;
-  const storedStoryUrls = new Set((storyStore.stories || []).flatMap((story) => (story.sources || []).map((source) => source.url)));
   const futureToleranceMs = 10 * 60 * 1000;
   const cutoff = state.last_successful_run ? Date.parse(state.last_successful_run) - 5 * 60 * 1000 : nowDate.getTime() - lookbackMs;
   const changedItems = [];
@@ -307,9 +382,7 @@ export async function runWirkungsticker(options = {}) {
       report.feed_entries_future_dated += 1;
       continue;
     }
-    const backfillCandidate = needsRelevanceBackfill
-      && !storedStoryUrls.has(item.url)
-      && (!published || published >= backfillCutoff);
+    const backfillCandidate = needsRelevanceBackfill && (!published || published >= backfillCutoff);
     if (!previous && published && published < cutoff && !backfillCandidate) continue;
     if (!previous || backfillCandidate) {
       changedItems.push(item);
@@ -332,7 +405,14 @@ export async function runWirkungsticker(options = {}) {
   const pruneBefore = nowDate.getTime() - 120 * 24 * 60 * 60 * 1000;
   for (const [id, record] of Object.entries(state.seen_items)) if (Date.parse(record.last_seen || 0) < pruneBefore) delete state.seen_items[id];
 
-  const freshCandidates = clusterItems(changedItems, storyStore.stories || [], now).map((cluster) => createCandidate(cluster, now));
+  const matchableStories = (storyStore.stories || [])
+    .filter((story) => story.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE");
+  const freshCandidates = clusterItems(changedItems, matchableStories, now)
+    .map((cluster) => createCandidate(
+      cluster,
+      now,
+      Boolean(needsRelevanceBackfill && cluster.existing_story?.published && cluster.existing_story?.listed !== false),
+    ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
   const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
   const retryCandidates = (storyStore.stories || [])
@@ -354,6 +434,7 @@ export async function runWirkungsticker(options = {}) {
         last_updated: story.pending_update?.detected_at || story.last_updated || now,
         sources,
         existing_story: story,
+        reassessment: Boolean(story.pending_update?.reassessment || story.reassessment),
       };
       candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
       candidate.preanalysis = preAnalyzeStory(candidate);
@@ -372,7 +453,7 @@ export async function runWirkungsticker(options = {}) {
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
   const eligible = clusters
-    .filter((candidate) => candidate.preanalysis.internal_relevance_score >= stage.threshold && candidate.sources.some((source) => source.primary_source))
+    .filter((candidate) => (candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold) && candidate.sources.some((source) => source.primary_source))
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   report.locally_rejected = clusters.length - eligible.length;
   const maxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
@@ -414,14 +495,22 @@ export async function runWirkungsticker(options = {}) {
           const analysis = analyses.get(candidate.story_id);
           const errors = analysis ? validateAnalysis(analysis, candidate) : ["AI_ANALYSIS_MISSING"];
           if (errors.length) {
+            if (shouldRetireAfterReassessment(candidate, errors)) {
+              byId.set(candidate.story_id, retiredRecord(candidate, now, errors));
+              report.retired_stories += 1;
+              report.quality_holds.push({ story_id: candidate.story_id, reason: "FILTER_REASSESSMENT_NOT_MATERIAL", errors });
+              continue;
+            }
             byId.set(candidate.story_id, pendingRecord(candidate, "QUALITY_GATE_FAILED", now, errors));
             report.quality_holds.push({ story_id: candidate.story_id, reason: "QUALITY_GATE_FAILED", errors });
             continue;
           }
           const wasPublished = Boolean(candidate.existing_story?.published);
+          const wasListed = candidate.existing_story?.listed !== false;
           byId.set(candidate.story_id, publishedRecord(candidate, analysis, aiResult, now));
           report.published_stories += wasPublished ? 0 : 1;
           report.updated_stories += wasPublished ? 1 : 0;
+          report.reactivated_stories += wasPublished && !wasListed ? 1 : 0;
         }
       } catch (error) {
         report.ai_calls += Number(error?.requestAttempts || 1);
@@ -447,7 +536,7 @@ export async function runWirkungsticker(options = {}) {
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
   state.last_successful_run = now;
   state.relevance_filter_version = RELEVANCE_FILTER_VERSION;
-  state.pending_story_ids = [...byId.values()].filter((story) => !story.published || story.pending_update).map((story) => story.story_id);
+  state.pending_story_ids = [...byId.values()].filter((story) => (!story.published && story.listed !== false) || story.pending_update).map((story) => story.story_id);
   storyStore.updated_at = now;
   storyStore.stories = [...byId.values()].sort((a, b) => Date.parse(b.last_updated || 0) - Date.parse(a.last_updated || 0));
   usage.runs.push({

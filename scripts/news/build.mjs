@@ -152,7 +152,7 @@ function card(story, index) {
 </article>`;
 }
 
-function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "" }) {
+function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "" }) {
   const { header, footer } = renderLayout(base);
   return `<!doctype html>
 <html lang="de">
@@ -162,6 +162,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <title>${escapeHtml(title)} | Wirkungsökonomie</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${escapeHtml(canonical)}">
+  ${robots ? `<meta name="robots" content="${escapeHtml(robots)}">` : ""}
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Wirkungsökonomie">
@@ -190,7 +191,7 @@ ${header}
 ${body}
 ${footer}
 <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260903-3"></script>
+<script src="${base}assets/js/news-pwa.js?v=20260903-4"></script>
 ${extraScript}
 </body>
 </html>`;
@@ -214,7 +215,7 @@ function indexPage(stories, updatedAt) {
     </div>
   </section>
   <section class="section"><article class="card news-principle"><p class="hero-kicker">Was hier anders ist</p><h2>Aufmerksamkeit ist kein Relevanzbeweis.</h2><p>Der Wirkungsticker bündelt Meldungen zum selben Ereignis in einer lebenden Wirkungsakte. Er trennt Fakt, Beobachtung und analytische Inferenz. Wirkungspotenzial wird nicht als eingetretene Wirkung ausgegeben, und offene Evidenz bleibt offen.</p><p class="news-method-note"><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="feed.xml">RSS</a> · <a class="text-link" href="feed.atom">Atom</a> · <a class="text-link" href="feed.json">JSON Feed</a></p></article></section>
-  <section class="section news-app-tools" data-news-app-tools hidden aria-labelledby="news-app-title"><article class="card news-app-tools__card"><div><p class="hero-kicker">Wirkungsticker für unterwegs</p><h2 id="news-app-title">Als Web-App installieren</h2><p data-news-install-copy>Lege den Wirkungsticker auf deinen Startbildschirm. Er öffnet dann wie eine eigene App und hält die zuletzt geladenen Inhalte offline bereit.</p><div class="news-app-tools__actions" data-news-install-actions><button class="btn btn-primary" type="button" data-news-install-button>Installieren</button><button class="btn btn-secondary" type="button" data-news-install-dismiss>Später</button></div></div><div class="news-notification-settings"><h3>Push-Benachrichtigungen</h3><p>Nur nach deiner Zustimmung und jederzeit wieder abschaltbar. Unterstützte Smartphones melden neue oder aktualisierte Wirkungsakten im Hintergrund und zeigen die Zahl ungelesener Meldungen am App-Icon.</p><div class="news-app-tools__actions"><button class="btn btn-secondary" type="button" data-news-notification-toggle aria-pressed="false">Push aktivieren</button><button class="btn btn-secondary" type="button" data-news-mark-read hidden>Neue als gesehen markieren</button></div><p class="news-app-status" data-news-notification-status aria-live="polite">Push-Benachrichtigungen sind aus.</p></div></article></section>
+  <section class="section news-app-tools" data-news-app-tools hidden aria-labelledby="news-app-title"><article class="card news-app-tools__card"><div><p class="hero-kicker">Wirkungsticker für unterwegs</p><h2 id="news-app-title">Als Web-App installieren</h2><p data-news-install-copy>Lege den Wirkungsticker auf deinen Startbildschirm. Er öffnet dann wie eine eigene App und hält die zuletzt geladenen Inhalte offline bereit.</p><div class="news-app-tools__actions" data-news-install-actions><button class="btn btn-primary" type="button" data-news-install-button>Installieren</button><button class="btn btn-secondary" type="button" data-news-install-dismiss>Später</button></div></div><div class="news-notification-settings"><h3>Aktualisierung und Push</h3><p>Die App prüft beim Öffnen, Zurückkehren und regelmäßig während der Nutzung automatisch auf neue oder aktualisierte Wirkungsakten. Du kannst die Prüfung auch sofort anstoßen.</p><div class="news-app-tools__actions"><button class="btn btn-primary" type="button" data-news-refresh-button>Jetzt aktualisieren</button><button class="btn btn-secondary" type="button" data-news-notification-toggle aria-pressed="false">Push aktivieren</button><button class="btn btn-secondary" type="button" data-news-mark-read hidden>Neue als gesehen markieren</button></div><p class="news-app-status" data-news-refresh-status aria-live="polite">Beim Öffnen und danach automatisch aktuell.</p><p>Push-Benachrichtigungen sind nur nach deiner Zustimmung aktiv und jederzeit wieder abschaltbar. Unterstützte Smartphones melden neue Inhalte im Hintergrund und zeigen die Zahl ungelesener Meldungen am App-Icon.</p><p class="news-app-status" data-news-notification-status aria-live="polite">Push-Benachrichtigungen sind aus.</p></div></article></section>
   <section class="section news-search" aria-labelledby="ticker-search-title"><div><p class="hero-kicker">Im Ticker suchen</p><h2 id="ticker-search-title">Wirkungsnachrichten schnell finden</h2><p>Die Suche filtert Titel, Kurzanalysen, Themen und Wirkungsdimensionen direkt auf dieser Seite.</p></div><div class="news-search__controls"><label for="ticker-search-input">Suchbegriff</label><input id="ticker-search-input" type="search" autocomplete="off" placeholder="Zum Beispiel: Energie, Arbeit, Demokratie" data-news-search-input><a class="text-link" href="../suche.html" data-news-site-search-link>Gesamte Website durchsuchen</a></div></section>
   <nav class="news-filter-bar" aria-label="Wirkungsticker filtern"><div class="news-filter-bar__inner">${filters.map(([value, label], index) => `<button class="news-filter" type="button" data-news-filter="${value}" aria-pressed="${index === 0}">${label}</button>`).join("")}</div></nav>
   <section class="section" aria-labelledby="ticker-stories-title"><div class="section-header"><p class="hero-kicker">Aktuelle Wirkungsakten</p><h2 id="ticker-stories-title">Die wichtigsten Wirkungsnachrichten seit dem letzten Update</h2><p data-news-results-status aria-live="polite">${stories.length} belastbar veröffentlichte ${stories.length === 1 ? "Story" : "Storys"}. Neue Informationen aktualisieren bestehende Akten.</p></div><div class="news-grid">${cards}</div><div class="news-empty" data-news-filter-empty hidden><p>Für diesen Filter und Suchbegriff gibt es derzeit keine veröffentlichte Story.</p></div><div class="news-load-more" data-news-load-more-wrap hidden><button class="btn btn-secondary" type="button" data-news-load-more aria-expanded="false">Weitere Meldungen laden</button></div></section>
@@ -283,6 +284,33 @@ function storyPage(story) {
   });
 }
 
+function retiredStoryPage(story) {
+  const retirement = story.retirement || {};
+  const canonicalTargets = (retirement.canonical_story_ids || []).map((storyId) => {
+    const target = retirement.canonical_stories?.find((entry) => entry.story_id === storyId);
+    return target ? `<li><a href="../${escapeHtml(target.slug)}/">${escapeHtml(target.title)}</a></li>` : "";
+  }).filter(Boolean).join("");
+  const sources = (story.sources || []).map((source) => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a></li>`).join("");
+  const body = `<main id="main-content" data-no-glossary>
+  <section class="hero news-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker">Transparenzhinweis</p><h1 class="hero-title">${escapeHtml(story.title)}</h1><p class="hero-subtitle">Diese Meldung gehört nicht mehr zur laufenden Auswahl des Wirkungstickers.</p><div class="news-hero__meta"><span>Historisch veröffentlicht: ${escapeHtml(formatDate(story.published_at))}</span><span>Erneut geprüft: ${escapeHtml(formatDate(story.retired_at || retirement.at))}</span></div></div></section>
+  <section class="section"><article class="news-story-section"><h2>Warum die Meldung nicht mehr gelistet wird</h2><p class="news-analysis-copy">${escapeHtml(retirement.note || "Die erneute Prüfung hat keinen hinreichend neuen und materiellen Nachrichtenwert für die laufende Auswahl bestätigt.")}</p><p>Die frühere Veröffentlichung wird nicht still gelöscht. Sie bleibt als transparenter historischer Stand erhalten, erscheint aber weder auf der aktuellen Übersicht noch in RSS, Atom oder JSON Feed.</p>${canonicalTargets ? `<h3>Fortgeführte Wirkungsakte</h3><ul>${canonicalTargets}</ul>` : ""}</article>
+  <article class="news-story-section"><h2>Historische Einordnung</h2><p>${escapeHtml(story.analysis?.summary || "Keine historische Kurzfassung vorhanden.")}</p><h3>Quellen des damaligen Stands</h3><ul class="news-source-list">${sources}</ul><p><a class="text-link" href="../">Zur aktuellen Auswahl</a></p></article></section>
+</main>`;
+  return pageShell({
+    title: `${story.title} – historischer Stand`,
+    description: "Transparenzhinweis zu einer nach erneuter Relevanzprüfung nicht mehr gelisteten Wirkungsnachricht.",
+    canonical: `${SITE}/wirkungsticker/${story.slug}/`,
+    base: "../../",
+    body,
+    robots: "noindex,follow",
+    feedLinks: false,
+    jsonLd: {
+      "@context": "https://schema.org", "@type": "WebPage", "@id": `${SITE}/wirkungsticker/${story.slug}/#historical`,
+      url: `${SITE}/wirkungsticker/${story.slug}/`, name: story.title, inLanguage: "de", dateModified: story.retired_at || retirement.at,
+    },
+  });
+}
+
 function feedXml(stories, updatedAt, atom = false) {
   if (atom) return `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Wirkungsticker</title><subtitle>Wirkungsnachrichten für Mensch, Planet und Demokratie</subtitle><link href="${SITE}/wirkungsticker/"/><link rel="self" href="${SITE}/wirkungsticker/feed.atom"/><id>${SITE}/wirkungsticker/</id><updated>${updatedAt || new Date(0).toISOString()}</updated>${stories.map((story) => `<entry><title>${escapeXml(story.title)}</title><link href="${SITE}/wirkungsticker/${story.slug}/"/><id>${SITE}/wirkungsticker/${story.slug}/</id><published>${story.published_at}</published><updated>${story.last_updated}</updated><summary>${escapeXml(story.analysis.summary)}</summary></entry>`).join("")}</feed>`;
@@ -339,10 +367,11 @@ function updateSitemap(stories, updatedAt, oldSlugs) {
 
 export function buildNewsSite() {
   const data = readJson(STORIES_FILE);
-  const stories = (data.stories || []).filter((story) => story.published && story.analysis).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
+  const stories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
+  const retiredStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed === false);
   const sourceManifest = fs.existsSync(MANIFEST_FILE) ? MANIFEST_FILE : LEGACY_MANIFEST_FILE;
   const oldSlugs = fs.existsSync(sourceManifest) ? readJson(sourceManifest).slugs || [] : [];
-  const currentSlugs = new Set(stories.map((story) => story.slug));
+  const currentSlugs = new Set([...stories, ...retiredStories].map((story) => story.slug));
   for (const slug of oldSlugs) {
     if (!currentSlugs.has(slug) && /^[a-z0-9-]+$/.test(slug)) {
       fs.rmSync(path.join(TICKER_DIR, slug), { recursive: true, force: true });
@@ -351,6 +380,7 @@ export function buildNewsSite() {
   }
   write(path.join(TICKER_DIR, "index.html"), indexPage(stories, data.updated_at));
   for (const story of stories) write(path.join(TICKER_DIR, story.slug, "index.html"), storyPage(story));
+  for (const story of retiredStories) write(path.join(TICKER_DIR, story.slug, "index.html"), retiredStoryPage(story));
   write(path.join(TICKER_DIR, "feed.xml"), feedXml(stories, data.updated_at));
   write(path.join(TICKER_DIR, "feed.atom"), feedXml(stories, data.updated_at, true));
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
@@ -361,6 +391,7 @@ export function buildNewsSite() {
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
   write(path.join(LEGACY_NEWS_DIR, "wirkungsticker/index.html"), legacyRedirect("/wirkungsticker/"));
   for (const story of stories) write(path.join(LEGACY_NEWS_DIR, story.slug, "index.html"), legacyRedirect(`/wirkungsticker/${story.slug}/`, story.title));
+  for (const story of retiredStories) write(path.join(LEGACY_NEWS_DIR, story.slug, "index.html"), legacyRedirect(`/wirkungsticker/${story.slug}/`, story.title));
   write(path.join(LEGACY_NEWS_DIR, "feed.xml"), feedXml(stories, data.updated_at));
   write(path.join(LEGACY_NEWS_DIR, "feed.atom"), feedXml(stories, data.updated_at, true));
   write(path.join(LEGACY_NEWS_DIR, "feed.json"), JSON.stringify({
@@ -368,8 +399,8 @@ export function buildNewsSite() {
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));
   updateSitemap(stories, data.updated_at, oldSlugs);
-  console.log(`Wirkungsticker gebaut: ${stories.length} veröffentlichte Storys, RSS/Atom/JSON.`);
-  return { stories: stories.length, updated_at: data.updated_at };
+  console.log(`Wirkungsticker gebaut: ${stories.length} aktuelle und ${retiredStories.length} transparent archivierte Storys, RSS/Atom/JSON.`);
+  return { stories: stories.length, retired_stories: retiredStories.length, updated_at: data.updated_at };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) buildNewsSite();

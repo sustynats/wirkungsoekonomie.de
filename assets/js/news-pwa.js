@@ -14,6 +14,8 @@
   const installDismiss = tools.querySelector("[data-news-install-dismiss]");
   const notificationToggle = tools.querySelector("[data-news-notification-toggle]");
   const notificationStatus = tools.querySelector("[data-news-notification-status]");
+  const refreshButton = tools.querySelector("[data-news-refresh-button]");
+  const refreshStatus = tools.querySelector("[data-news-refresh-status]");
   const markReadButton = tools.querySelector("[data-news-mark-read]");
   const cards = Array.from(document.querySelectorAll("[data-news-card]"));
   const installDismissKey = "woek_ticker_install_dismissed_at";
@@ -21,6 +23,7 @@
   const lastSeenKey = "woek_ticker_last_seen";
   const lastNotifiedKey = "woek_ticker_last_notified";
   const notificationTag = "woek-wirkungsticker-updates";
+  const autoReloadKey = "woek_ticker_last_auto_reload";
   const mobile = navigator.userAgentData?.mobile === true
     || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
     || window.matchMedia("(max-width: 760px)").matches;
@@ -34,6 +37,7 @@
   initializeInstallOffer();
   initializeNewsState();
   initializeNotifications();
+  initializeFreshnessChecks();
 
   function initializeInstallOffer() {
     if (standalone) {
@@ -160,8 +164,31 @@
   function startForegroundChecks() {
     if (newsCheckInterval) return;
     newsCheckInterval = window.setInterval(() => {
-      if (window.localStorage.getItem(notificationKey) === "enabled") void checkForNews();
-    }, 15 * 60 * 1000);
+      void checkForNews();
+    }, 5 * 60 * 1000);
+  }
+
+  function initializeFreshnessChecks() {
+    if (!cards.length) return;
+    startForegroundChecks();
+    refreshButton?.addEventListener("click", () => void refreshNow());
+    window.addEventListener("focus", () => void checkForNews());
+    window.addEventListener("pageshow", () => void checkForNews());
+    window.addEventListener("online", () => void checkForNews());
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") void checkForNews();
+    });
+    registrationPromise.then((registration) => registration?.update().catch(() => undefined));
+  }
+
+  async function refreshNow() {
+    if (refreshButton) refreshButton.disabled = true;
+    if (refreshStatus) refreshStatus.textContent = "Neue Inhalte werden geprüft …";
+    const reloaded = await checkForNews({ manual: true });
+    if (reloaded === false && refreshStatus) {
+      refreshStatus.textContent = `Auf dem neuesten Stand · geprüft ${new Intl.DateTimeFormat("de-DE", { hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
+    }
+    if (refreshButton) refreshButton.disabled = false;
   }
 
   function renderNotificationState(enabled, message = "") {
@@ -193,17 +220,31 @@
     }
   }
 
-  async function checkForNews() {
+  async function checkForNews({ manual = false } = {}) {
     try {
+      if (manual) {
+        const registration = await registrationPromise;
+        await registration?.update().catch(() => undefined);
+      }
       const response = await fetch(`/wirkungsticker/feed.json?check=${Date.now()}`, { cache: "no-store" });
-      if (!response.ok) return;
+      if (!response.ok) throw new Error("NEWS_FEED_UNAVAILABLE");
       const feed = await response.json();
+      const feedLatest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
+      const pageLatest = newestCardTimestamp();
+      if (cards.length && feedLatest > pageLatest && document.visibilityState === "visible") {
+        const lastReload = Number(window.sessionStorage.getItem(autoReloadKey) || 0);
+        if (Date.now() - lastReload > 60 * 1000) {
+          window.sessionStorage.setItem(autoReloadKey, String(Date.now()));
+          window.location.reload();
+          return true;
+        }
+      }
       const lastSeen = Date.parse(window.localStorage.getItem(lastSeenKey) || 0);
       const lastNotified = Date.parse(window.localStorage.getItem(lastNotifiedKey) || 0);
       const updates = (feed.items || []).filter((item) => Date.parse(item.date_modified || item.date_published || 0) > lastSeen);
       const latest = updates.reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
       await updateAppBadge(updates.length);
-      if (!updates.length || latest <= lastNotified || document.visibilityState === "visible") return;
+      if (!updates.length || latest <= lastNotified || document.visibilityState === "visible") return false;
       const registration = await registrationPromise;
       await registration?.showNotification("Neue Wirkungsnachrichten", {
         body: `${updates.length} ${updates.length === 1 ? "neue Wirkungsnachricht ist" : "neue Wirkungsnachrichten sind"} verfügbar.`,
@@ -213,8 +254,11 @@
         data: { url: "/wirkungsticker/?source=notification" },
       });
       window.localStorage.setItem(lastNotifiedKey, new Date(latest).toISOString());
+      return false;
     } catch {
       // Offline ist ein erwartbarer App-Zustand; die nächste Prüfung versucht es erneut.
+      if (manual && refreshStatus) refreshStatus.textContent = "Gerade offline oder nicht erreichbar. Der letzte Stand bleibt verfügbar.";
+      return null;
     }
   }
 

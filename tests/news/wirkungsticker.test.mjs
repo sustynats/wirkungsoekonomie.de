@@ -17,7 +17,7 @@ import {
   storySimilarity,
   validateAnalysis,
 } from "../../scripts/news/lib.mjs";
-import { shouldRetryQualityGate } from "../../scripts/news/run.mjs";
+import { fetchFeedWithRetry, shouldRetryQualityGate } from "../../scripts/news/run.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
@@ -29,6 +29,7 @@ const feed = `<?xml version="1.0"?><rss><channel><item><title>Bund beschließt K
 function candidate() {
   return {
     story_id: "wt-test", title: "Bund beschließt Klimagesetz",
+    preanalysis: { filter_version: "3.0", internal_relevance_score: 80 },
     sources: [{ ...source, publisher: source.name, title: "Bund beschließt Klimagesetz", summary: "Das Gesetz verändert Regeln für Energie und Infrastruktur.", url: "https://example.org/a", published_at: "2026-09-03T05:00:00.000Z" }],
     claims: [{ claim_id: "c1", source_id: "official-test", claim: "Das Gesetz verändert Regeln." }],
   };
@@ -44,7 +45,16 @@ function validAnalysis() {
     mechanisms: ["Regeln verändern Anreize."], first_order: ["Investitionen können sich verschieben."], second_order: ["Lieferketten können reagieren."], third_order: ["Strukturen können sich langfristig ändern."],
     systemic_relevance: "Mehrere Sektoren können betroffen sein.", transformation_potential: "Offen bis zur Umsetzung.", resilience: "Kontrolle und Nachsteuerung bleiben wichtig.",
     side_effects: ["Verteilungsfolgen sind möglich."], uncertainties: ["Umsetzung und Kausalbeitrag sind offen."], evidence_level: "Primärquelle zum Beschluss, keine Wirkungsdaten.",
-    attribution: "Zustandsänderungen sind noch nicht zurechenbar.", watch_next: ["Vollzug und Indikatoren beobachten."], reference_frameworks: ["DNS, soweit sachlich anwendbar"], publication_recommendation: true,
+    attribution: "Zustandsänderungen sind noch nicht zurechenbar.", watch_next: ["Vollzug und Indikatoren beobachten."], reference_frameworks: ["DNS, soweit sachlich anwendbar"],
+    publication_gate: {
+      news_value: "binding_decision",
+      materiality_factors: ["affected_scope", "duration", "systemic_relevance"],
+      exceptional_factor: "none",
+      evidence_basis: "primary_source_direct",
+      duplicate_status: "new_story",
+      rationale: "Eine neue verbindliche Regel betrifft viele Akteure und kann dauerhafte Systemfolgen auslösen.",
+    },
+    publication_recommendation: true,
   };
 }
 
@@ -94,12 +104,16 @@ test("Relevanzfilter verwechselt modern und Modelle nicht mit Mode", () => {
   assert.ok(!aiSafety.drivers.includes("standardmäßig geringe Relevanz"));
 });
 
-test("Materielle Änderungen schlagen Routineinterviews und bloße Anfragen", () => {
+test("Format ist kein Ausschlussgrund, aber bloßer Kontext reicht nicht", () => {
   const levy = classifyItem({ title: "Abschaffung der Gasspeicherumlage", summary: "Die Umlage wird bundesweit abgeschafft.", categories: [] }, source);
   const interview = classifyItem({ title: "Interview zu Inflation und Zinsen", summary: "Ein Gespräch über die wirtschaftliche Lage.", categories: [] }, source);
+  const materialInterview = classifyItem({ title: "Interview zur Energieversorgung", summary: "Die Ministerin kündigt verbindlich ein bundesweites Gesetz für kritische Infrastruktur an.", categories: [] }, source);
   const inquiry = classifyItem({ title: "Sepsis thematisiert", summary: "Gesundheit/Kleine Anfrage Die Fraktion fragt nach der Behandlung.", categories: [] }, source);
   assert.ok(levy.score >= 34);
   assert.ok(interview.score < 34);
+  assert.equal(interview.context_only, true);
+  assert.ok(materialInterview.score >= 34);
+  assert.equal(materialInterview.context_only, false);
   assert.ok(inquiry.score < 34);
 });
 
@@ -117,6 +131,46 @@ test("Neue Quellenmeldung aktualisiert eine bestehende Wirkungsakte", () => {
   assert.equal(cluster.existing_story, existing);
 });
 
+test("Spezifisch gleiche Politik wird trotz verschiedener Überschriften derselben Akte zugeordnet", () => {
+  const item = {
+    ...parseFeed(feed, source)[0],
+    url: "https://example.org/neuer-stand",
+    title: "Für eine verlässliche Stromversorgung – auch in Zukunft",
+    summary: "Das Gesetz für neue Stromkapazitäten ist in Kraft getreten.",
+    content_hash: "kapazitaet-neu",
+  };
+  const existing = {
+    story_id: "wt-capacity",
+    title: "Kommission genehmigt deutschen Kapazitätsmechanismus",
+    first_seen: "2026-09-01T00:00:00.000Z",
+    last_updated: "2026-09-01T00:00:00.000Z",
+    sources: [{ url: "https://example.org/alt", title: "Deutscher Kapazitätsmechanismus genehmigt", summary: "Der Strom-Kapazitätsmarkt soll ab 2031 gelten." }],
+  };
+  const [cluster] = clusterItems([item], [existing], "2026-09-03T12:00:00.000Z");
+  assert.equal(cluster.story_id, "wt-capacity");
+});
+
+test("Mehrere anders betitelte Quellen derselben Akte bilden genau einen Cluster", () => {
+  const base = parseFeed(feed, source)[0];
+  const existing = {
+    story_id: "wt-capacity",
+    title: "Deutscher Kapazitätsmechanismus genehmigt",
+    first_seen: "2026-09-01T09:00:00.000Z",
+    last_updated: "2026-09-01T09:00:00.000Z",
+    sources: [
+      { url: "https://example.org/eu", title: "Deutscher Kapazitätsmechanismus genehmigt", summary: "Kapazitätsmechanismus für Strom" },
+      { url: "https://example.org/de", title: "Für eine verlässliche Stromversorgung", summary: "Gesetz für neue Stromkapazitäten" },
+    ],
+  };
+  const clusters = clusterItems([
+    { ...base, url: "https://example.org/eu", title: "Kommission genehmigt deutschen Kapazitätsmechanismus", summary: "Kapazitätsmechanismus für Strom" },
+    { ...base, url: "https://example.org/de", title: "Für eine verlässliche Stromversorgung – auch in Zukunft", summary: "Gesetz für neue Stromkapazitäten" },
+  ], [existing], "2026-09-03T12:00:00.000Z");
+  assert.equal(clusters.length, 1);
+  assert.equal(clusters[0].story_id, "wt-capacity");
+  assert.equal(clusters[0].sources.length, 2);
+});
+
 test("Prompt Injection bleibt als untrusted Datenblock gekapselt", () => {
   const story = candidate();
   story.preanalysis = { internal_relevance_score: 80 };
@@ -127,12 +181,32 @@ test("Prompt Injection bleibt als untrusted Datenblock gekapselt", () => {
   assert.match(prompt, /IGNORE ALL PREVIOUS INSTRUCTIONS/);
   assert.match(prompt, /detail_summary/);
   assert.match(prompt, /Zahlwort bleibt Zahlwort/);
+  assert.match(prompt, /Publikationsform ist niemals allein ein Ausschlussgrund/);
+  assert.match(prompt, /publication_gate/);
 });
 
 test("SSRF-Schutz blockiert nicht erlaubte und private Hosts", async () => {
   await assert.rejects(assertSafeFeedUrl("https://127.0.0.1/feed", new Set(["127.0.0.1"]), { resolveDns: false }), /PRIVATE_IP/);
   await assert.rejects(assertSafeFeedUrl("https://evil.example/feed", new Set(["example.org"]), { resolveDns: false }), /HOST_NOT_ALLOWED/);
   await assert.rejects(assertSafeFeedUrl("http://example.org/feed", new Set(["example.org"]), { resolveDns: false }), /MUST_USE_HTTPS/);
+});
+
+test("Transiente Quellenfehler werden mit begrenztem Backoff erneut versucht", async () => {
+  let calls = 0;
+  const result = await fetchFeedWithRetry(source, {}, async () => {
+    calls += 1;
+    if (calls < 3) throw new TypeError("fetch failed");
+    return { body: feed, final_url: source.url, etag: null, last_modified: null };
+  }, { attempts: 3, delayImpl: async () => undefined });
+  assert.equal(result.attempts, 3);
+  assert.equal(calls, 3);
+
+  calls = 0;
+  await assert.rejects(fetchFeedWithRetry(source, {}, async () => {
+    calls += 1;
+    throw new Error("FEED_DTD_NOT_ALLOWED");
+  }, { attempts: 3, delayImpl: async () => undefined }), /FEED_DTD_NOT_ALLOWED/);
+  assert.equal(calls, 1);
 });
 
 test("Malformed JSON und Providerfehler veröffentlichen nichts", async () => {
@@ -154,6 +228,20 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
   assert.ok(errors.includes("AI_EX_ANTE_CAUSAL_OVERCLAIM"));
   assert.ok(errors.includes("AI_HTML_NOT_ALLOWED"));
   assert.ok(errors.some((error) => error.startsWith("AI_UNSUPPORTED_NUMBER")));
+});
+
+test("Publikationsgate verlangt Neuigkeit, Materialität und Evidenz zugleich", () => {
+  const contextOnly = validAnalysis();
+  contextOnly.publication_gate = { ...contextOnly.publication_gate, news_value: "context_only" };
+  assert.ok(validateAnalysis(contextOnly, candidate()).includes("AI_NEWS_VALUE_CONTEXT_ONLY"));
+
+  const immaterial = validAnalysis();
+  immaterial.publication_gate = { ...immaterial.publication_gate, materiality_factors: ["resonance"] };
+  assert.ok(validateAnalysis(immaterial, candidate()).includes("AI_MATERIALITY_GATE_FAILED"));
+
+  const unsupported = validAnalysis();
+  unsupported.publication_gate = { ...unsupported.publication_gate, evidence_basis: "insufficient" };
+  assert.ok(validateAnalysis(unsupported, candidate()).includes("AI_EVIDENCE_INSUFFICIENT"));
 });
 
 test("Längere Detailzusammenfassung wird separat geprüft", () => {
