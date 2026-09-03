@@ -79,7 +79,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
       const folder = path.join(directory, id);
       const journal = path.join(folder, "source-visual.json");
       let record = fs.existsSync(journal) ? JSON.parse(fs.readFileSync(journal, "utf8")) : null;
-      if (record?.quality_gate?.status === "rejected") throw imageError(record.quality_gate.reason);
+      if (record?.quality_gate?.version === VISUAL_GATE_VERSION && record.quality_gate.status === "rejected") throw imageError(record.quality_gate.reason);
       if (record?.file && /^source-[a-f0-9]{64}\.(png|jpg|webp)$/.test(record.file)) {
         const file = path.join(folder, record.file);
         if (fs.existsSync(file)) {

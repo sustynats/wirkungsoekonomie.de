@@ -9,7 +9,7 @@ import { inspectImage, downloadImage } from "../../scripts/news/title-image/imag
 import { checkHiggsfieldAvailability, createHiggsfieldAdapter, parseCliJson, generationResult, recoverSubmittedJob } from "../../scripts/news/title-image/higgsfield.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "../../scripts/news/title-image/pipeline.mjs";
 import { renderTitleImageFromStory } from "../../scripts/news/title-image/index.mjs";
-import { checkEditorialAsset, detectedWords } from "../../scripts/news/title-image/quality.mjs";
+import { checkEditorialAsset, detectedWords, VISUAL_GATE_VERSION } from "../../scripts/news/title-image/quality.mjs";
 import { backfillTitleImages } from "../../scripts/news/title-image/backfill.mjs";
 
 const STORY = { story_id: "wt-1234567890abcdef", title: "Neue Netzinfrastruktur", source_summary: "Die Netzagentur berichtet über ein neues Verfahren für den Ausbau der Stromnetze. Die vorgesehene Regelung betrifft die Planung und Genehmigung zusätzlicher Stromleitungen.", topic: ["Energie"], claims: [], analysis: { status: "Entwurf", analysis_type: "ex_ante", human: { relevance: "mittel" } } };
@@ -63,7 +63,7 @@ test("malformed CLI JSON and structured results are handled without URL guessing
 });
 test("Higgsfield downloads and persists one original; repeated request spends nothing", async (t) => {
   const directory = temp(t), calls = [];
-  const provider = createHiggsfieldAdapter({directory,run:mockRun(calls),download:async()=>asset(),quality:async()=>({version:"text-free-1",status:"passed"}),enabled:true});
+  const provider = createHiggsfieldAdapter({directory,run:mockRun(calls),download:async()=>asset(),quality:async()=>({version:VISUAL_GATE_VERSION,status:"passed"}),enabled:true});
   const first = await provider.generate(STORY), second = await provider.generate(STORY);
   assert.ok(Buffer.isBuffer(first.bytes)); assert.equal(second.reused,true);
   assert.equal(calls.filter((a)=>a[0]==="generate"&&a[1]==="create").length,1);
@@ -152,11 +152,28 @@ test("OCR rejects generated labels and cannot silently pass without its checker"
   assert.equal((await checkEditorialAsset("/unused",{run:async()=>({stdout:header})})).status,"passed");
 });
 
+test("ambiguous sparse OCR requires block confirmation and remains fail-closed", async()=>{
+  const header="level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n";
+  const word=(text,confidence)=>header+`5\t1\t1\t1\t1\t1\t0\t0\t100\t50\t${confidence}\t${text}\n`;
+  const calls=[];
+  assert.equal((await checkEditorialAsset("/unused",{run:async(_cmd,args)=>{calls.push(args[5]);return {stdout:args[5]==="11"?word("NEI",65.68):header};}})).status,"passed");
+  assert.deepEqual(calls,["11","6"]);
+  await assert.rejects(checkEditorialAsset("/unused",{run:async(_cmd,args)=>({stdout:args[5]==="11"?word("NEI",65.68):word("nei",64)})}),{code:"IMAGE_CONTAINS_TEXT"});
+  await assert.rejects(checkEditorialAsset("/unused",{run:async(_cmd,args)=>{if(args[5]==="6")throw new Error();return {stdout:word("NEI",65.68)};}}),{code:"IMAGE_QUALITY_CHECK_UNAVAILABLE"});
+});
+test("new OCR version rechecks an old rejection from saved bytes without another paid job",async(t)=>{
+  const directory=temp(t),calls=[];let checks=0;
+  const provider=createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls),download:async()=>asset(),quality:async()=>{checks++;return {version:VISUAL_GATE_VERSION,status:"passed"};}});
+  const original=await provider.generate(STORY),journal=path.join(directory,STORY.story_id,"source-visual.json");
+  const record=JSON.parse(fs.readFileSync(journal));record.quality_gate={version:"text-free-1",status:"rejected",reason:"IMAGE_CONTAINS_TEXT"};fs.writeFileSync(journal,JSON.stringify(record));
+  const reused=await provider.generate(STORY);assert.equal(reused.reused,true);assert.equal(reused.sha256,original.sha256);assert.equal(checks,2);
+  assert.equal(calls.filter(a=>a[1]==="create").length,1);
+});
 test("transient OCR failure retries the saved original, never another generation", async(t)=>{
   const directory=temp(t), calls=[]; let checks=0;
   const provider=createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls),download:async()=>asset(),quality:async()=>{
     if(!checks++) throw imageError("IMAGE_QUALITY_CHECK_UNAVAILABLE");
-    return {version:"text-free-1",status:"passed"};
+    return {version:VISUAL_GATE_VERSION,status:"passed"};
   }});
   await assert.rejects(provider.generate(STORY),{code:"IMAGE_QUALITY_CHECK_UNAVAILABLE"});
   assert.equal((await provider.generate(STORY)).reused,true);
