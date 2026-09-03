@@ -4,8 +4,8 @@
   "jurisdiction": "DE-BE",
   "election": "agh-2026-be",
   "issue": 240,
-  "base_main_commit": "cf9645c4e15a3dc759f62d51202218348d3f7707",
-  "source_as_of": "2026-08-29T08:45:00+02:00",
+  "base_main_commit": "d8de40a2c740ab1c3d4b41d0ccb1a7fdf65d5d76",
+  "source_as_of": "2026-09-03T08:39:00+02:00",
   "status": "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_8_OF_12",
   "controller_authority": {
     "authoritative_dod": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5448629781",
@@ -23,7 +23,7 @@
     "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
     "file_sha256": "ac531ff8f32d0256acbb62dc92a16c225a05c3f929c497089b69938d8a04e8c1",
     "descriptor_sha256": "62b7d4940491a3a1aca35a494b0ee8bbf2d3608bd871c73de2725aa7bae17cf5",
-    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW physical P1-P66 is source-bound through explicit issue #240 handoffs and the programme residual is exactly zero."
+    "preservation_rule": "Reuse only exact terminal Fach objects and finite source-bound residual scopes; BSW physical P1-P66 is source-bound through explicit issue #240 handoffs and the programme residual is exactly zero. Berlin SPD P1-P21 plus cross-page SU0247 remain protected by the canonical parity return and are not reopened by the P22-only materialisation."
   },
   "accepted_incremental_handoffs": [
     {
@@ -771,6 +771,50 @@
         43
       ],
       "gate": "BE_BSW_P34_P43_EXACT_CHILD_FACH_RESIDUAL_ZERO"
+    },
+    {
+      "handoff_id": "BE-SPD-P22-CANONICAL-EXPLICIT-FACH-2026-V1",
+      "issue_comment_ids": [
+        5477750046,
+        5477758987,
+        5477766107,
+        5483568051
+      ],
+      "issue_comment_urls": [
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477766107",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051"
+      ],
+      "controller_issue_comment_id": 5483571711,
+      "controller_issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5483571711",
+      "latest_controller_refresh_comment_id": 5518066353,
+      "latest_controller_refresh_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5518066353",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-explicit-v1.json",
+      "file_sha256": "e5c8f9d3b18aa4f055239156fd711d7a2daf021b2d25dd97ed2be60afdebce9e",
+      "authoritative_markdown_paths": [
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-3-authoritative-handoff.md",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md"
+      ],
+      "authoritative_markdown_file_sha256s": [
+        "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc",
+        "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034",
+        "38d321431d94d751b950741037066edf4a6d25f8314c748610408bb4fbcdf9af",
+        "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+      ],
+      "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+      "artifact_sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+      "exact_terminal_object_count": 36,
+      "active_terminal_review_leaf_count": 18,
+      "exact_open_child_object_count": 0,
+      "physical_pdf_pages": [
+        22
+      ],
+      "protected_physical_scope_after_materialization": "P1-P22",
+      "next_source_order_frontier": "P23 / BE-SPD-2026-SU-0266+",
+      "gate": "BE_SPD_2026_P22_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_CANONICAL_FINAL_LEDGER_REPAIR"
     }
   ],
   "rejected_predecessor": {
@@ -868,17 +912,17 @@
       "CDU",
       "Die Linke"
     ],
-    "remaining_genuine_fach_review_required": 1215,
-    "remaining_review_scope_count": 1215,
-    "remaining_page_review_envelopes": 1215,
+    "remaining_genuine_fach_review_required": 1193,
+    "remaining_review_scope_count": 1193,
+    "remaining_page_review_envelopes": 1193,
     "remaining_exact_effect_objects_identified": 0,
     "remaining_exact_effect_object_count": null,
-    "terminal_source_objects": 1442,
+    "terminal_source_objects": 1478,
     "terminal_status_counts": {
-      "EXPLICIT_FACH_APPROVED": 471,
-      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 166,
-      "NON_EFFECT_CONTEXT_REVIEWED": 671,
-      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 134
+      "EXPLICIT_FACH_APPROVED": 487,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 168,
+      "NON_EFFECT_CONTEXT_REVIEWED": 685,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 138
     },
     "known_segmentation_defects": 2,
     "berlin_completion_gate": "FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH"
@@ -30621,263 +30665,786 @@
       "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
       "artifact_sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
       "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-      "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
+      "segmentation_state": "PARTIAL_TERMINAL_WITH_REVIEW_ENVELOPES_OPEN",
       "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
       "programme_analysis_complete": false,
-      "terminal_object_count": 0,
+      "terminal_object_count": 36,
       "terminal_status_counts": {
-        "EXPLICIT_FACH_APPROVED": 0,
-        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 0,
-        "NON_EFFECT_CONTEXT_REVIEWED": 0,
-        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 0
+        "EXPLICIT_FACH_APPROVED": 16,
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 2,
+        "NON_EFFECT_CONTEXT_REVIEWED": 14,
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 4
       },
-      "remaining_review_envelope_count": 66,
+      "remaining_review_envelope_count": 44,
       "remaining_exact_object_count": 0,
-      "remaining_review_scope_count": 66,
-      "terminal_objects": [],
+      "remaining_review_scope_count": 44,
+      "terminal_objects": [
+        {
+          "object_id": "BE-SPD-2026-SU-0248",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b004@42.52,157.55,222.96,169.52",
+          "source_excerpt": "Berlin bleibt eine Mieter*innen‑Stadt.",
+          "source_text_sha256": "8c1db47c430eeb7d75b6036d2e5b627a5fb76f2d98ff1fd87581e15d2d7fa24f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0248",
+          "decision_kind": "HOUSING_MARKET_STATUS_OR_IDENTITY_FRAME"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0249",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "p022:b005@304.73,69.84,539.26,147.82",
+          "source_excerpt": "Selbstgenutztes Wohneigentum unterstützen wir trotzdem gezielt – besonders für Familien mit geringem und niedrigem Einkommen im Rahmen von privaten Neubaugebieten sowie für Mieter*innen, die bei Umwandlung bereits in der Wohnung leben.",
+          "source_text_sha256": "10a6fd8fc5d67cdb2b35ca28152c496b4eb9c511940cd93a8bea2489de417090",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "exact_reason_code": "TARGETED_HOMEOWNERSHIP_SUPPORT_INSTRUMENT_FINANCE_AND_ELIGIBILITY_UNSPECIFIED",
+          "exact_reason": "unterstützen does not specify the subsidy, financing, guarantee, land/ownership, tax or other legal instrument; amount/duration; exact eligibility thresholds; private-development delivery path; take-up/counterfactual; interaction with housing supply; or treatment of incumbent tenants on conversion. Without the lever and financing/distribution design, net direction, additionality, fiscal opportunity cost and distribution cannot be bounded without inventing policy content.",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0249",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0250",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b006@42.52,185.86,403.63,203.86",
+          "source_excerpt": "Unser Berlin wird sauber, grün und lebenswert",
+          "source_text_sha256": "95092915b5762d8d5fd222c87ca6dc2d262a0ffea434e8624481ba6344971ef3",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0250",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0251",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b007@42.52,212.74,270.83,244.86",
+          "source_excerpt": "Feministische Stadtplanung: Berlin als faire, inklusive und sorgende Stadt",
+          "source_text_sha256": "41e0efb8d505ac48c7d2afa72c2827b8ed8bae5ffa9639a54998215650d6ed1e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0251",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0252-A01",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b008@42.52,253.86,282.06,397.84",
+          "source_excerpt": "In der Stadtentwicklung orientieren wir uns an unterschiedlichen Lebensrealitäten",
+          "source_text_sha256": "a8b1317617ef559000364e9994bfed41f038b66e2a8dba1982eef7fd73d8f061",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_INCLUSIVE_PLANNING_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+            "file_sha256": "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477750046; exact object BE-SPD-2026-SU-0252-A01",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0252-A02",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b008@42.52,253.86,282.06,397.84",
+          "source_excerpt": "und gestalten Berlin als Stadt für alle.",
+          "source_text_sha256": "631cdf34d7893fc28d911bbfa7e71070dbd059fd582cfad7c0bad7dc82d3f98e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_INCLUSIVE_CITY_TARGET_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+            "file_sha256": "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477750046; exact object BE-SPD-2026-SU-0252-A02",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0252-A03",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b008@42.52,253.86,282.06,397.84",
+          "source_excerpt": "Bei Projekten werden wir Gender-Mainstreaming grundsätzlich als Standard für die Planung und Vergabe verankern, um Geschlechtergerechtigkeit aktiv umzusetzen.",
+          "source_text_sha256": "2272caa5635bc6b7ed6e70e0c3fa3d835fd0da09ec53254a220d32c47f480e4b",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+            "file_sha256": "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477750046; exact object BE-SPD-2026-SU-0252-A03",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0252-A04",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "p022:b008@42.52,253.86,282.06,397.84",
+          "source_excerpt": "Wir führen nach Vorbild der Stadt Wien eine eigene Leitstelle für „alltags- und gendergerechtes Planen",
+          "source_text_sha256": "e9217bc44ad67911086325db667732d6e95168157b13c7c55d45a1a714b393b7",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0252-A04A05-C01-41f292104329"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+            "file_sha256": "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477750046; exact object BE-SPD-2026-SU-0252-A04",
+          "decision_kind": "P22_VERSIONED_BROKEN_FRAGMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0252-A05",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "p022:b008@42.52,253.86,282.06,397.84",
+          "source_excerpt": "und Bauen“ ein",
+          "source_text_sha256": "1f52f542de99f8fab36951975ec0e14644eeae0c36c8f0b21292fa63395ae7b0",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0252-A04A05-C01-41f292104329"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+            "file_sha256": "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477750046; exact object BE-SPD-2026-SU-0252-A05",
+          "decision_kind": "P22_VERSIONED_BROKEN_FRAGMENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0252-A06",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b008@42.52,253.86,282.06,397.84",
+          "source_excerpt": "und schaffen so eine institutionelle Verankerung.",
+          "source_text_sha256": "6d348978e927abdbf857e708f978df5470ec65e387a45b1a87c3fbfdd3c33c0e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_INSTITUTIONAL_OUTCOME_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+            "file_sha256": "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477750046; exact object BE-SPD-2026-SU-0252-A06",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0253",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b009@42.52,408.55,233.48,440.67",
+          "source_excerpt": "Parks und Grünflächen schaffen Lebensqualität",
+          "source_text_sha256": "cda97d29abb17417afc4ec796b4366649eccaae8ebff45a2b4a3e93d28af2616",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0253",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0254",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b010@42.52,449.67,270.25,488.05",
+          "source_excerpt": "Parks und grüne urbane Flächen verbessern das Stadtklima, kühlen im Sommer und schaffen Lebensqualität für Mensch und Natur.",
+          "source_text_sha256": "cb9aee6c13a08c96aec7a850a7ee23aff37100f5fd2b91c977d9bb858041dc1c",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_PUBLIC_GREEN_BENEFIT_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0254",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0255-A01",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b011@42.52,497.77,288.12,522.95",
+          "source_excerpt": "Wir versetzen die Bezirksämter dauerhaft finanziell und personell in die Lage, naturnah zu pflegen.",
+          "source_text_sha256": "a54291020de72d9ee3635026aa57822805692efb4ec9c52b3212314dbe572cda",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0255-A01",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0256-A01",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b012@42.52,532.67,288.56,623.85",
+          "source_excerpt": "Parkläufer*innen sichern wir dauerhaft ab und weiten sie auf weitere Parks aus.",
+          "source_text_sha256": "78bd4222679e0ccb3c7f375fd35bd01eb003416dc982f6bade8c9e1c3c51a812",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0256-A01",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0257-A01",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b013@42.52,633.58,285.79,698.35",
+          "source_excerpt": "Deshalb schaffen wir einen neuen Berliner Volkspark dort, wo besonders viel neuer Wohnraum entsteht – im Osten der Stadt.",
+          "source_text_sha256": "c3b351895e3b20fcf89cb600c882c0f7e886f9013202aae047a9a11503a85db6",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0257-A01",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0258",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b014@42.52,709.07,208.74,724.39",
+          "source_excerpt": "Mehr Stadtbäume für Berlin",
+          "source_text_sha256": "709124eb06bd224022e1d4013d352efdea3410395ac14bfad62a31796b40849a",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0258",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0259-A01",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b015@42.52,733.39,275.72,771.77;p022:b016@304.73,211.76,542.69,276.53",
+          "source_excerpt": "Bis 2040 soll die Zahl der Stadtbäume um 70 Prozent steigen.",
+          "source_text_sha256": "e1713effbdbc29c4fd82a2139c4a1a6dbc890e64f0ef28cd8397ab815139731c",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_QUANTIFIED_STREET_TREE_TARGET_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0259-A01",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0260-A01",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b017@304.73,286.26,548.62,403.84",
+          "source_excerpt": "Altbäume mit ihrer Schattenwirkung schützen wir stärker",
+          "source_text_sha256": "748caa96eb074e65951f2036fa2baa5e175bc0b093716270d207abc0fc98c64f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0260-A01",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0260-A02",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b017@304.73,286.26,548.62,403.84",
+          "source_excerpt": "und verbessern die Pflege des Bestands.",
+          "source_text_sha256": "35fd4372efac0e839f1b01ef085b13e2343d73b67fe3fc7ea787a837e26c0a18",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0260-A02",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0260-A03",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b017@304.73,286.26,548.62,403.84",
+          "source_excerpt": "Im Hoch- und Tiefbau planen wir baumgerecht",
+          "source_text_sha256": "5fd71ddaac8d224814c489e7d6c72d91f6d2ad2472681f18a4150346ce715934",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_TREE_PRESERVATION_DESIGN_SAFEGUARD_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0260-A03",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0260-A04",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b017@304.73,286.26,548.62,403.84",
+          "source_excerpt": "und koppeln Fällgenehmigungen an den tatsächlichen Baubeginn.",
+          "source_text_sha256": "4ba53805211f1ee81f9cbed83878bbf7c6d614789baf69196177ce382e4f0799",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0260-A04",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0260-A05",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b017@304.73,286.26,548.62,403.84",
+          "source_excerpt": "Bei Baumaßnahmen werden wir baumerhaltende Planungen grundsätzlich priorisieren.",
+          "source_text_sha256": "1e1bd020e3e0f642b015b672fb416128c84940ac0e65746acf7919eb3bc57b39",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0260-A05",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0260-A06",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_locator": "p022:b017@304.73,286.26,548.62,403.84",
+          "source_excerpt": "Auch dafür passen wir die Regeln für den Straßenraum an Klimaschutz und Baumschutz an.",
+          "source_text_sha256": "0c33bd8ee679936e97004f07c30108708886c70479f9740a530def2870dfbef4",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "exact_reason_code": "STREET_SPACE_RULE_CHANGE_UNSPECIFIED",
+          "exact_reason": "No specific street-space rule, allocation delta, responsible instrument, conflict hierarchy or implementation design is identified. Street space has competing safety, accessibility, mobility, utility and public-space functions; without the concrete rule change a net object-specific direction cannot be bounded.",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0260-A06",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0261-A01",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "p022:b018@304.73,413.56,539.62,491.54",
+          "source_excerpt": "Wir erhalten Straßenbaumstandorte, bepflanzen leere Baumscheiben bis 2027",
+          "source_text_sha256": "a1b5b5a47a3423973f56fedcdf18f3715fde5626d2733cf01c3476966d34fd09",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0261-A01-C01-d188d628cc36",
+            "BE-SPD-2026-SU-0261-A01-C02-af8d634916be"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0261-A01",
+          "decision_kind": "P22_VERSIONED_COMPOUND_PARENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0261-A02",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b018@304.73,413.56,539.62,491.54",
+          "source_excerpt": "und schaffen neue Baumstandorte – im Zielbild alle 15 Meter einen.",
+          "source_text_sha256": "2310f7b9e6e8ac2df0f3f69814488ca2ff0d080c9fce938c079b44af861e735e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0261-A02",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0261-A03",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b018@304.73,413.56,539.62,491.54",
+          "source_excerpt": "Dazu stärken wir die Stadtbaumkampagne und Baumpatenschaften",
+          "source_text_sha256": "dd99590c7266ce2db419a59e631ea52f969f426e2af761bd032a41bcee3ca03d",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0261-A03",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0261-A04",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b018@304.73,413.56,539.62,491.54",
+          "source_excerpt": "und aktivieren bürgerschaftliches Engagement.",
+          "source_text_sha256": "6281956f1a7af6f86f6b40bd4fe5a01f53ca22fad9ec331b42919173a042a683",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_PARTICIPATION_OUTCOME_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; exact object BE-SPD-2026-SU-0261-A04",
+          "decision_kind": "P22_NON_EFFECT_SOURCE_ROLE"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0262",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_locator": "p022:b019@304.72,502.26,534.00,534.37",
+          "source_excerpt": "Abkühlung und grüne Erholung in den Kiezen",
+          "source_text_sha256": "1dc490cb6887167e90e239338b4d566cf0415be09c023dd11ac6c95bc497e10e",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0262",
+          "decision_kind": "STRUCTURAL_HEADING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0263-A01",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b020@304.72,543.37,554.11,621.35",
+          "source_excerpt": "Wir gestalten Plätze und Straßen so, dass Menschen dort gern verweilen und sich sicher fühlen – und dass zugleich Lebensräume für Stadtnatur und Tiere entstehen.",
+          "source_text_sha256": "e91534f02e4b2e27a088ac15efd6d06e86a07c721bd1b1aefa25163508be6854",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477766107",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-3-authoritative-handoff.md",
+            "file_sha256": "38d321431d94d751b950741037066edf4a6d25f8314c748610408bb4fbcdf9af"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477766107; exact object BE-SPD-2026-SU-0263-A01",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0264-A01",
+          "object_kind": "SOURCE_BOUND_FACH_OBJECT",
+          "source_locator": "p022:b021@304.72,631.07,505.98,682.65",
+          "source_excerpt": "Den Zugang zu Wasser verbessern wir mit Planschen und Brunnen, die die Berliner Wasserbetriebe zentral ausbauen und instandhalten.",
+          "source_text_sha256": "a41fc41da938a8530bb4cc11f42f2b0a0e63358976d7d909aa994680ec5e3d2a",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477766107",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-3-authoritative-handoff.md",
+            "file_sha256": "38d321431d94d751b950741037066edf4a6d25f8314c748610408bb4fbcdf9af"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477766107; exact object BE-SPD-2026-SU-0264-A01",
+          "decision_kind": "P22_ACTIVE_TERMINAL_REVIEW_LEAF"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0265",
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_locator": "p022:b022@304.72,692.38,555.17,770.36",
+          "source_excerpt": "Wir handeln zuerst dort, wo Hitze, Lärm, Luftbelastung, Grünmangel und soziale Belastungen zusammenkommen. Hotspots wie den Washingtonplatz und den Vorplatz am Bahnhof Gesundbrunnen entsiegeln oder begrünen wir, etwa mit einem Tiny Forest.",
+          "source_text_sha256": "d34e452e5f6a5dbb4dc2f9878aac0bafc242063dcb5670abb31c1fdc50a252a8",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "counts_as_effect_object": false,
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0265-C01-36c9f3353105",
+            "BE-SPD-2026-SU-0265-C02-f6f05f020690"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; exact object BE-SPD-2026-SU-0265",
+          "decision_kind": "P22_VERSIONED_COMPOUND_PARENT_NON_COUNTING"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0252-A04A05-C01-41f292104329",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "p022:b008@42.52,253.86,282.06,397.84 + p022:b008@42.52,253.86,282.06,397.84",
+          "source_excerpt": "Wir führen nach Vorbild der Stadt Wien eine eigene Leitstelle für „alltags- und gendergerechtes Planen und Bauen“ ein.",
+          "source_text_sha256": "41f2921043296daa59dca0ecdd02e100812192a4a98e76cfce2ed923d1cc3b8a",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_BROKEN_FRAGMENT_REPLACEMENT",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0252-A04",
+            "BE-SPD-2026-SU-0252-A05"
+          ],
+          "child_role": "DEDICATED_EVERYDAY_AND_GENDER_RESPONSIVE_PLANNING_UNIT",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477750046",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md",
+            "file_sha256": "edc154d7c23b268153d699103ca1c19acd833f318c7deade6baff9d2b4e763fc"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477750046; deterministic record BE-SPD-2026-SU-0252-A04A05-C01-41f292104329",
+          "decision_kind": "DETERMINISTIC_BROKEN_FRAGMENT_REPLACEMENT"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0261-A01-C01-d188d628cc36",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "p022:b018@304.73,413.56,539.62,491.54",
+          "source_excerpt": "Wir erhalten Straßenbaumstandorte",
+          "source_text_sha256": "d188d628cc360ab878fb3e966d22e138634cf0b892a7c92da405e3a6ccb4a30f",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_COMPOUND_CHILD",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0261-A01"
+          ],
+          "child_role": "STREET_TREE_SITE_RETENTION",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; deterministic record BE-SPD-2026-SU-0261-A01-C01-d188d628cc36",
+          "decision_kind": "DETERMINISTIC_COMPOUND_CHILD"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0261-A01-C02-af8d634916be",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "p022:b018@304.73,413.56,539.62,491.54",
+          "source_excerpt": "bepflanzen leere Baumscheiben bis 2027",
+          "source_text_sha256": "af8d634916be6d375fdd490567534e0d9ff7b0daeccb410505f7c7516f073356",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_COMPOUND_CHILD",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0261-A01"
+          ],
+          "child_role": "EMPTY_TREE_PIT_PLANTING_BY_2027",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477758987",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md",
+            "file_sha256": "75defff908d7dcf91991718af57a0d517eaf17dbd95509856fc1c623cfab4034"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5477758987; deterministic record BE-SPD-2026-SU-0261-A01-C02-af8d634916be",
+          "decision_kind": "DETERMINISTIC_COMPOUND_CHILD"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0265-C01-36c9f3353105",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "p022:b022@304.72,692.38,555.17,770.36",
+          "source_excerpt": "Wir handeln zuerst dort, wo Hitze, Lärm, Luftbelastung, Grünmangel und soziale Belastungen zusammenkommen.",
+          "source_text_sha256": "36c9f3353105bf0ff9200f4ea5b1a507e915369dc1ed6f97af1a5552238126ff",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_COMPOUND_CHILD",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0265"
+          ],
+          "child_role": "SPATIAL_EQUITY_AND_COMPOUND_RISK_TARGETING_GUARD",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_SPATIAL_EQUITY_AND_COMPOUND_RISK_TARGETING_GUARD_REVIEWED",
+          "counts_as_effect_object": false,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; deterministic record BE-SPD-2026-SU-0265-C01-36c9f3353105",
+          "decision_kind": "DETERMINISTIC_COMPOUND_CHILD"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0265-C02-f6f05f020690",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_locator": "p022:b022@304.72,692.38,555.17,770.36",
+          "source_excerpt": "Hotspots wie den Washingtonplatz und den Vorplatz am Bahnhof Gesundbrunnen entsiegeln oder begrünen wir, etwa mit einem Tiny Forest.",
+          "source_text_sha256": "f6f05f020690734508f7671e446ea8732297a5e5d08e09cbd4e698287a70f7f5",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "segmentation_origin": "DETERMINISTIC_COMPOUND_CHILD",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0265"
+          ],
+          "child_role": "HOTSPOT_DESEALING_AND_GREENING_ACTION",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "materialization_mode": "LOSSLESS_EXPLICIT_HANDOFF_AFTER_DETERMINISTIC_SOURCE_REPAIR",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5483568051",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-source-binding-repair-authoritative-handoff.md",
+            "file_sha256": "c5e00a3e28f2cebe02f7904a96ff2350cf49dee58df7931b9f5bb645799c2370"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5483568051; deterministic record BE-SPD-2026-SU-0265-C02-f6f05f020690",
+          "decision_kind": "DETERMINISTIC_COMPOUND_CHILD"
+        }
+      ],
       "remaining_review_envelopes": [
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_001",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 1 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_002",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 2 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_003",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 3 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_004",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 4 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_005",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 5 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_006",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 6 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_007",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 7 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_008",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 8 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_009",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 9 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_010",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 10 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_011",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 11 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_012",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 12 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_013",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 13 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_014",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 14 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_015",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 15 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_016",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 16 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_017",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 17 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_018",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 18 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_019",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 19 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_020",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 20 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_021",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 21 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_022",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 22 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
         {
           "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_023",
           "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
@@ -31363,7 +31930,21 @@
           "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
         }
       ],
-      "remaining_review_objects": []
+      "remaining_review_objects": [],
+      "protected_fach_scope": {
+        "physical_pages": "P1-P22",
+        "predecessor_physical_pages": "P1-P21",
+        "protected_cross_page_object": "BE-SPD-2026-SU-0247",
+        "p22_materialized_terminal_records": 36,
+        "next_unreviewed_source_order_frontier": {
+          "physical_page": 23,
+          "source_unit_from": "BE-SPD-2026-SU-0266"
+        },
+        "preservation_authority": {
+          "path": "woek-parlament-app/data/state-programmes/source-integrity/berlin-2026-spd-fach-return-v1.json",
+          "file_sha256": "a84446ee5be74b541f78f2e2c33710be848a29eba156c82904a8cac8b3cd7871"
+        }
+      }
     },
     {
       "binding_order": 3,
@@ -45024,5 +45605,5 @@
     "vercel_action_triggered": false
   },
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
-  "descriptor_sha256": "4e079f6aecc61ea332b6f43e198e6339578a15bd72b16bb29ddc44eaa224e775"
+  "descriptor_sha256": "71f869c7e96c03c01848def4e0608ef1a40b6dc8228f14c6f459a0f05ebdf3d2"
 }

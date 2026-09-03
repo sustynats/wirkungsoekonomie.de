@@ -59,7 +59,7 @@ def sha256_file(path: Path) -> str:
 def validate_boundary(matrix: dict, register: dict) -> None:
     require(matrix.get("schema_version") == "woek-berlin-fach-content-residual-3.2", "schema drift")
     require(matrix.get("matrix_id") == "BE-FACH-CONTENT-RESIDUAL-2026-V3", "matrix id drift")
-    require(matrix.get("base_main_commit") == "cf9645c4e15a3dc759f62d51202218348d3f7707", "base main commit drift")
+    require(matrix.get("base_main_commit") == "d8de40a2c740ab1c3d4b41d0ccb1a7fdf65d5d76", "base main commit drift")
     require(matrix.get("status") == "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_8_OF_12", "false terminal status")
     require(matrix.get("binding_order") == BINDING_ORDER, "binding order drift")
     require(matrix.get("execution_order_remaining") == OPEN, "execution residual drift")
@@ -103,17 +103,26 @@ def validate_boundary(matrix: dict, register: dict) -> None:
         "programme_analysis_open": 8,
         "genuine_fach_programmes": 8,
         "genuine_fach_programme_parties": OPEN,
-        "remaining_genuine_fach_review_required": 1215,
-        "remaining_review_scope_count": 1215,
-        "remaining_page_review_envelopes": 1215,
+        "remaining_genuine_fach_review_required": 1193,
+        "remaining_review_scope_count": 1193,
+        "remaining_page_review_envelopes": 1193,
         "remaining_exact_effect_objects_identified": 0,
         "remaining_exact_effect_object_count": None,
-        "terminal_source_objects": 1442,
+        "terminal_source_objects": 1478,
         "known_segmentation_defects": 2,
         "berlin_completion_gate": "FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
     }
     for key, value in expected.items():
         require(summary.get(key) == value, f"summary {key}: expected {value!r}, got {summary.get(key)!r}")
+
+    spd = next(item for item in programmes if item["party"] == "SPD")
+    require(spd.get("terminal_object_count") == 36, "SPD P22 terminal-object count drift")
+    require(spd.get("remaining_review_envelope_count") == 44, "SPD P23-P66 residual drift")
+    require(
+        spd.get("protected_fach_scope", {}).get("next_unreviewed_source_order_frontier")
+        == {"physical_page": 23, "source_unit_from": "BE-SPD-2026-SU-0266"},
+        "SPD frontier drift",
+    )
 
     require(
         matrix.get("rejected_predecessor", {}).get("disposition")
@@ -146,10 +155,10 @@ def main() -> None:
         "matrix_id": matrix["matrix_id"],
         "programmes_terminal": 4,
         "programmes_open": 8,
-        "terminal_source_objects": 1442,
-        "remaining_review_envelopes": 1215,
+        "terminal_source_objects": 1478,
+        "remaining_review_envelopes": 1193,
         "remaining_exact_objects": 0,
-        "remaining_review_scopes": 1215,
+        "remaining_review_scopes": 1193,
         "known_segmentation_defects": 2,
         "descriptor_sha256": matrix["descriptor_sha256"],
         "input_bound_reproduction": "PASS",

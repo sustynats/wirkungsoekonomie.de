@@ -15,6 +15,8 @@ on:
       - "woek-parlament-app/data/state-programmes/source-integrity/berlin-2026-spd-canonical-parity-v1.json"
       - "woek-parlament-app/data/state-programmes/source-integrity/berlin-2026-spd-fach-return-v1.json"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/**"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-*.json"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-*-authoritative-handoff.md"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p14-explicit-v1.json"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p15-p19-explicit-v1.json"
@@ -160,7 +162,7 @@ jobs:
         run: node tools/build-berlin-bsw-p34-p43-child-closure.mjs --check
       - name: Run Berlin Fach-truth regression tests
         working-directory: woek-parlament-app
-        run: node --test tests/berlin-fach-truth-residual.test.mjs tests/berlin-combined-terminal-matrix.test.mjs tests/berlin-spd-canonical-parity.test.mjs
+        run: node --test tests/berlin-fach-truth-residual.test.mjs tests/berlin-combined-terminal-matrix.test.mjs tests/berlin-spd-canonical-parity.test.mjs tests/berlin-spd-p22-materialization.test.mjs
       - name: Validate BSW protected stock and exact residual
         working-directory: woek-parlament-app
         run: node scripts/quality/check-berlin-bsw-full-programme.mjs
