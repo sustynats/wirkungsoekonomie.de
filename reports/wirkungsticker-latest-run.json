@@ -1,8 +1,8 @@
 {
   "schema_version": "1.2",
   "status": "ok",
-  "started_at": "2026-09-03T19:23:31.574Z",
-  "berlin_slot": "manueller Lauf",
+  "started_at": "2026-09-03T20:30:13.299Z",
+  "berlin_slot": "Automatischer Lauf 22:00",
   "feed_entries_fetched": 261,
   "feed_entries_new": 0,
   "feed_entries_updated": 0,
@@ -21,18 +21,14 @@
   "reactivated_stories": 0,
   "provider": "Oracle WOeK-KI API",
   "model": "gpt-5.5",
-  "input_tokens": 3449,
-  "output_tokens": 1233,
-  "estimated_cost_usd": 0.054235,
+  "input_tokens": 3574,
+  "output_tokens": 1256,
+  "estimated_cost_usd": 0.05555,
   "source_successes": 16,
   "source_failures": 0,
-  "source_retry_attempts": 1,
+  "source_retry_attempts": 0,
   "source_errors": [],
   "quality_holds": [
-    {
-      "story_id": "wt-146cce2a1bef268e",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
     {
       "story_id": "wt-2c4b8dc5bdfc3cb3",
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
@@ -62,6 +58,10 @@
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
     },
     {
+      "story_id": "wt-3c8762489a80692b",
+      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+    },
+    {
       "story_id": "wt-b891f102e908a573",
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
     },
@@ -82,10 +82,6 @@
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
     },
     {
-      "story_id": "wt-3c8762489a80692b",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
       "story_id": "wt-293fa4edfc2b5a5d",
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
     },
@@ -102,7 +98,7 @@
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
     },
     {
-      "story_id": "wt-7e9e385d272f9212",
+      "story_id": "wt-146cce2a1bef268e",
       "reason": "QUALITY_GATE_FAILED",
       "errors": [
         "AI_MATERIALITY_TOO_LOW",
@@ -119,17 +115,17 @@
   "article_excerpt_failures": 0,
   "visuals_dropped": [],
   "budget_stage": 0,
-  "completed_at": "2026-09-03T19:25:01.136Z",
-  "pending_stories_retried": 19,
-  "monthly_spend_before_usd": 2.339345,
+  "completed_at": "2026-09-03T20:31:42.508Z",
+  "pending_stories_retried": 18,
+  "monthly_spend_before_usd": 2.39358,
   "monthly_budget_usd": 5,
   "ai_hourly_limit": 4,
-  "ai_calls_in_last_hour": 3,
-  "ai_calls_available_this_run": 1,
+  "ai_calls_in_last_hour": 0,
+  "ai_calls_available_this_run": 4,
   "ai_batch_size": 1,
   "token_source": "conservative_character_estimate",
   "latest_source_timestamp": "2026-09-03T16:00:00.000Z",
-  "ai_calls_remaining_this_hour": 0,
+  "ai_calls_remaining_this_hour": 3,
   "public_changed": false,
-  "pending_story_count": 28
+  "pending_story_count": 27
 }
