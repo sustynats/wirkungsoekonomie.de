@@ -44,6 +44,15 @@ const ROUTINE_RULES = [
   [-18, "regelmäßige Finanzmarkt- oder Statistikmeldung ohne auffällige Veränderung", /\b(tägliche\s+rendite|taegliche\s+rendite|tenderergebnis|tenderverfahren|auction\s+result|reopening\s+of|mfi-zinsstatistik|weitgehend\s+unverändert|weitgehend\s+unveraendert)\b/i],
 ];
 
+// Newsroom coverage must not depend on bureaucratic wording such as "Gesetz".
+// These are review signals, never a publication decision or a truth assertion.
+const EVENT_RELEVANCE_RULES = [
+  [22, "militärische Eskalation oder humanitäre Lage", /(?:\b(?:krieg\w*|kriegs\w*|waffenstillstand\w*|luftangriff\w*|drohnenangriff\w*|raketenangriff\w*|bombard\w*|airstrikes?|ceasefire|military strikes?|missile attacks?)\b|\b(?:soldiers|troops|military|armee|streitkräfte|streitkraefte)\b.{0,90}\b(?:attack\w*|strik\w*|invad\w*|vorstoß|angriff\w*)|\b(?:iran|gaza|ukraine)\b.{0,90}\b(?:tote|getötet|attack\w*|angriff\w*|krieg\w*))/i],
+  [22, "Angriff auf Versorgung oder öffentliche Daten", /(?:\b(?:hackerangriff\w*|cyberangriff\w*|sabotage\w*|attackiert|angriff\w*)\b.{0,110}\b(?:strom\w*|umspannwerk\w*|verwaltung\w*|bürger\w*|buerger\w*|daten\w*|infrastruktur\w*)|\b(?:strom\w*|umspannwerk\w*|verwaltung\w*|infrastruktur\w*)\b.{0,110}\b(?:sabotage\w*|attack\w*|angriff\w*))/i],
+  [22, "Veränderung grundlegender Rechte", /(?:\b(?:geburtsrecht|staatsbürgerschaft|staatsbuergerschaft|birthright citizenship|constitutional right|wahlrecht|briefwahl|pressefreiheit)\b.{0,160}\b(?:stop\w*|gestoppt|abolish\w*|verweig\w*|urteil\w*|gericht\w*|court|entzieh\w*|entzug|neu\w*)|\b(?:stop\w*|gestoppt|abolish\w*|verweig\w*|blocks?|gericht\w*)\b.{0,160}\b(?:geburtsrecht|staatsbürgerschaft|staatsbuergerschaft|birthright citizenship|constitutional right|wahlrecht|pressefreiheit))/i],
+  [20, "breite Preis-, Beschäftigungs- oder Unternehmensänderung", /(?:\b(?:spritpreis\w*|benzinpreis\w*|ölpreis\w*|oelpreis\w*|arbeitslos\w*|stellenabbau|massenentlass\w*|insolvenz\w*)\b.{0,120}\b(?:rekord\w*|höchst\w*|hoechst\w*|steig\w*|gestieg\w*|sinkt|gesunk\w*|million\w*|tausend\w*)|\b(?:übernahme|uebernahme|fusion)\b.{0,180}\b(?:bank\w*|konzern\w*|tausend\w*|milliard\w*)|\b(?:bank\w*|konzern\w*|tausend\w*|milliard\w*)\b.{0,180}\b(?:übernahme|uebernahme|fusion))/i],
+];
+
 const NEWS_VALUE_RULES = [
   ["binding_decision", /\b(beschlossen|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|aufgehoben|eingeführt|eingefuehrt|abgeschafft)\w*/i],
   ["implementation", /\b(umgesetzt|vollzug|ausgezahlt|ausgeschrieben|eröffnet|eroeffnet|gestartet|nimmt\s+betrieb\s+auf|ab\s+sofort)\w*/i],
@@ -474,6 +483,13 @@ export function classifyItem(item, source = {}) {
   }
   for (const [weight, label, pattern] of MATERIALITY_RULES) {
     if (!pattern.test(text)) continue;
+    score += weight;
+    drivers.push(label);
+  }
+  for (const [weight, label, pattern] of EVENT_RELEVANCE_RULES) {
+    // JS word boundaries do not treat German umlauts as word characters.
+    const eventText = originalText.replace(/ä/gi, "ae").replace(/ö/gi, "oe").replace(/ü/gi, "ue").replace(/ß/g, "ss");
+    if (!pattern.test(eventText)) continue;
     score += weight;
     drivers.push(label);
   }

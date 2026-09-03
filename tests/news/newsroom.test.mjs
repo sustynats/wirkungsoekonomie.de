@@ -4,12 +4,27 @@ import { sourceDue, annotateSourceItem, evidenceGroups, eventCompatibility, fres
 import { newsBudget, costFromUsage, refreshBudgetFx } from "../../scripts/news/budget.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex, datedSource } from "../../scripts/news/source-adapters.mjs";
 import { runWirkungsticker } from "../../scripts/news/run.mjs";
+import { classifyItem } from "../../scripts/news/lib.mjs";
 
 const now = "2026-09-03T12:00:00.000Z";
 const source = { source_id: "test", publisher_id: "publisher", name: "Test", url: "https://example.org/", feed_url: "https://example.org/rss", enabled: true, source_type: "official_rss", primary_source: true, access: { status: "public", article: "metadata_only", cost_usd: 0 }, frequency_class: "high_frequency" };
 const item = { source_id: "test", publisher_id: "publisher", url: "https://example.org/a", title: "Bund beschließt Klimagesetz zur Energieversorgung", summary: "Neue Regeln verändern Investitionen in Energie und Infrastruktur.", primary_source: true, published_at: now };
 const proof = { source_id: item.source_id, url: item.url, excerpt: item.summary };
 const analysis = { news_status: "preliminary", event_claims: [{ claim: "Die Quelle beschreibt neue Regeln für Energie und Infrastruktur.", status: "primary_source_claim", evidence: [proof] }], followups: [] };
+
+test("material world news reaches editorial review without legislative keywords", () => {
+  for (const title of [
+    "US launches new military strikes in southern Iran",
+    "Iran: Mindestens 15 Tote nach US-Attacken",
+    "Federal judge blocks bid to abolish birthright citizenship",
+    "Trumps Vorstoß gegen US-Geburtsrecht zunächst gestoppt",
+    "Hackerangriff: Bürger-Daten könnten veröffentlicht werden",
+    "Spritpreise: Iran-Krieg treibt Benzinpreise auf Höchststand",
+    "Übernahme der Commerzbank betrifft Tausende Jobs",
+  ]) assert.ok(classifyItem({ title }).score >= 30, title);
+  assert.ok(classifyItem({ title: "Bundeskanzler telefoniert mit Staatspräsident" }).score < 30);
+  assert.ok(classifyItem({ title: "Neue Farben für beliebten Haushaltshelfer" }).score < 30);
+});
 
 test("source cadence and bounded error backoff do not skip failed sources forever", () => {
   assert.equal(sourceDue(source, { last_attempt: "2026-09-03T11:50:00Z" }, now), false);
