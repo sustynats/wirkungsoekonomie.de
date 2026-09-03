@@ -25,6 +25,8 @@ import {
   aiRequestsInWindow,
   fetchFeedWithRetry,
   queuePriority,
+  partitionAiQueue,
+  retainUsageHistory,
   sanitizeAnalysisVisuals,
   shouldRetryQualityGate,
 } from "../../scripts/news/run.mjs";
@@ -502,6 +504,29 @@ test("Rollendes Stundenlimit zählt neue und alte Nutzungsprotokolle konservativ
     ],
   };
   assert.equal(aiRequestsInWindow(usage, "2026-09-03T17:00:00.000Z"), 3);
+});
+
+test("Budget- und Kapazitätsgrenzen vertagen alle nicht bearbeiteten Kandidaten verlustfrei", () => {
+  const eligible = [
+    { ...candidate(), story_id: "high", preanalysis: { internal_relevance_score: 80 } },
+    { ...candidate(), story_id: "medium", preanalysis: { internal_relevance_score: 32 } },
+  ];
+  for (const [stage, limit] of [[budgetStage(4.8, 5), 1], [budgetStage(0, 5), 0]]) {
+    const result = partitionAiQueue(eligible, stage, limit);
+    assert.deepEqual(result.selected, []);
+    assert.deepEqual(result.deferred, eligible);
+  }
+  const constrained = partitionAiQueue(eligible, budgetStage(3.6, 5), 2);
+  assert.deepEqual(constrained.selected.map((item) => item.story_id), ["high"]);
+  assert.deepEqual(constrained.deferred.map((item) => item.story_id), ["medium"]);
+});
+
+test("Monatskosten bleiben auch nach mehr als 400 automatischen Läufen erhalten", () => {
+  const previous = Array.from({ length: 450 }, () => ({ started_at: "2026-08-31T12:00:00Z" }));
+  const current = Array.from({ length: 600 }, () => ({ started_at: "2026-09-03T12:00:00Z", ai: { estimated_cost_usd: 0.01 } }));
+  const kept = retainUsageHistory([...previous, ...current], "2026-09-03T19:00:00Z");
+  assert.equal(kept.length, 1000);
+  assert.equal(kept.filter((run) => run.started_at.startsWith("2026-09")).length, 600);
 });
 
 test("Laufgesundheit erkennt 503, Quellenlücken und veraltete Berichte", () => {
