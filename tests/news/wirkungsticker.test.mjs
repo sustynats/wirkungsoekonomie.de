@@ -20,7 +20,14 @@ import {
   storySimilarity,
   validateAnalysis,
 } from "../../scripts/news/lib.mjs";
-import { fetchFeedWithRetry, sanitizeAnalysisVisuals, shouldRetryQualityGate } from "../../scripts/news/run.mjs";
+import {
+  aiRequestsInWindow,
+  fetchFeedWithRetry,
+  queuePriority,
+  sanitizeAnalysisVisuals,
+  shouldRetryQualityGate,
+} from "../../scripts/news/run.mjs";
+import { evaluateRunHealth } from "../../scripts/news/check-run-health.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
@@ -425,4 +432,61 @@ test("Technische Qualitätsfehler werden begrenzt erneut versucht, fachliche Abl
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 3), false);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_PUBLICATION_NOT_RECOMMENDED"], 0), false);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_MATERIALITY_TOO_LOW"], 0), false);
+});
+
+test("Frische Meldungen und materielle Updates stehen vor alten Neubewertungen", () => {
+  const now = "2026-09-03T17:00:00.000Z";
+  const reassessment = {
+    ...candidate(),
+    fresh: false,
+    reassessment: true,
+    first_seen: "2026-09-01T05:00:00.000Z",
+    existing_story: { published: true, updated_at: "2026-09-01T05:00:00.000Z", content_hash: "alt" },
+    content_hash: "alt",
+  };
+  const freshNews = { ...candidate(), fresh: true, reassessment: false, first_seen: now, existing_story: null };
+  const freshUpdate = {
+    ...candidate(),
+    fresh: true,
+    reassessment: false,
+    first_seen: now,
+    existing_story: { published: true, updated_at: now, content_hash: "alt" },
+    content_hash: "neu",
+  };
+  assert.ok(queuePriority(freshNews, now) > queuePriority(reassessment, now));
+  assert.ok(queuePriority(freshUpdate, now) > queuePriority(freshNews, now));
+});
+
+test("Rollendes Stundenlimit zählt neue und alte Nutzungsprotokolle konservativ", () => {
+  const usage = {
+    runs: [
+      { started_at: "2026-09-03T16:15:01.000Z", ai: { requests: 1 }, counts: { ai_stories: 1 } },
+      { started_at: "2026-09-03T16:30:00.000Z", ai: {}, counts: { ai_stories: 2 } },
+      { started_at: "2026-09-03T15:59:59.000Z", ai: { requests: 9 }, counts: { ai_stories: 9 } },
+      { started_at: "2026-09-03T17:01:00.000Z", ai: { requests: 9 }, counts: { ai_stories: 9 } },
+    ],
+  };
+  assert.equal(aiRequestsInWindow(usage, "2026-09-03T17:00:00.000Z"), 3);
+});
+
+test("Laufgesundheit erkennt 503, Quellenlücken und veraltete Berichte", () => {
+  const healthy = {
+    status: "ok",
+    started_at: "2026-09-03T17:00:10.000Z",
+    completed_at: "2026-09-03T17:01:10.000Z",
+    source_successes: 20,
+    source_failures: 0,
+  };
+  assert.deepEqual(evaluateRunHealth(healthy, { expectedAfter: "2026-09-03T17:00:00.000Z" }), { ok: true, errors: [] });
+
+  const degraded = { ...healthy, status: "degraded", ai_error: "AI_PROVIDER_ERROR:503", source_failures: 1 };
+  const degradedHealth = evaluateRunHealth(degraded, { expectedAfter: "2026-09-03T17:00:00.000Z" });
+  assert.equal(degradedHealth.ok, false);
+  assert.ok(degradedHealth.errors.includes("AI_PROVIDER_DEGRADED"));
+  assert.ok(degradedHealth.errors.includes("SOURCE_COVERAGE_DEGRADED"));
+  assert.ok(degradedHealth.errors.includes("RUN_STATUS_NOT_OK"));
+
+  const staleHealth = evaluateRunHealth(healthy, { expectedAfter: "2026-09-03T17:00:11.000Z" });
+  assert.equal(staleHealth.ok, false);
+  assert.ok(staleHealth.errors.includes("RUN_REPORT_STALE"));
 });
