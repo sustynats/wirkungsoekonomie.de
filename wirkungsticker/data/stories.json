@@ -1,46 +1,199 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-03T13:20:22.082Z",
+  "updated_at": "2026-09-03T22:21:17.010Z",
   "stories": [
     {
-      "story_id": "wt-98ff7e403362fdf9",
-      "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
-      "title": "Stärkerer Schutz kritischer Infrastrukturen",
-      "source_summary": "Die Bundesregierung berichtet, dass das KRITIS-Dachgesetz seit März 2026 in Kraft ist und erstmals mehrere Bereiche kritischer Infrastruktur in einem gemeinsamen Rahmen zusammenführt. Genannt werden Energie, Verkehr, Finanz- und Versicherungswesen, Gesundheit, Trink- und Abwasser, Abfallentsorgung, Informationstechnik, Telekommunikation, Ernährung, Weltraum und öffentliche Verwaltung. Als kritische Anlage gilt nach der Darstellung eine Einrichtung, die für die Gesamtversorgung wesentlich ist und mehr als 500.000 Menschen versorgt.\n\nFür Betreiber sieht das Gesetz sektorübergreifende Mindeststandards für den physischen Schutz vor, darunter Notfallteams, Objektschutz, Ausfallsicherheit und Meldepflichten. Staatliche Stellen sollen Risikoanalysen bereitstellen. Die Länder können weitere Anlagen in ihrer Zuständigkeit bestimmen; Kriterien und Verfahren sollen per zustimmungspflichtiger Rechtsverordnung festgelegt werden. Eine Evaluierung ist nach zwei Jahren vorgesehen. Teile von Paragraf 14 treten laut Quelle erst am 1. Januar 2030 in Kraft.",
-      "summary": "Die Bundesregierung meldet sektorübergreifende Mindeststandards für kritische Infrastrukturen. Das ist publizierbar, weil Regeln für systemrelevante Versorgung betroffen sind.",
-      "detail_summary": "Gesichert ist nur der Primärquellen-Claim: Mit dem KRITIS-Dachgesetz sollen bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt werden. Genannt sind Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Die Relevanz liegt in der möglichen Veränderung von Schutzpflichten und Resilienzanforderungen für zentrale Versorgungssysteme. Der Wirkpfad verläuft über Standards, Prävention, Betreiberpflichten und koordinierbaren Vollzug. Eine mögliche Folge ist eine geringere Verwundbarkeit gegenüber Ausfällen, zugleich können Aufwand, Kosten und Umsetzungsunterschiede entstehen. Eingetretene Wirkung ist nicht belegt; Details zu Fristen, Kontrolle, Finanzierung und konkretem Vollzug bleiben offen.",
-      "why_relevant": "Kritische Versorgungssysteme können bei Ausfall breite Kaskaden für Alltag, Gesundheit und Sicherheit auslösen.",
+      "story_id": "wt-9812656e38b0d665",
+      "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
+      "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+      "source_summary": "Brandenburg reagiert laut Bericht auf eine Stromnetz-Sabotage nahe dem Kraftwerk Jänschwalde mit neuen Sicherheitsplänen. Innenminister Jan Redmann kündigt ein „360-Grad-Sicherheitszentrum“ an, in dem Erkenntnisse aus Verfassungsschutz, Polizei sowie Brand- und Katastrophenschutz gebündelt werden sollen.\n\nZugleich soll ein Beleihungsgesetz vorbereitet werden. Damit könnten Betreiber kritischer Infrastruktur den Schutz ihrer Anlagen selbst organisieren; bislang dürfen das laut Bericht nur Landes-, Bundespolizei und Bundeswehr. Außerdem nennt das Innenministerium weitere geplante Änderungen bei mehreren Sicherheitsgesetzen. Offene Fragen bleiben Zeitpunkt, genauer Inhalt und parlamentarischer Verlauf.",
+      "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
+      "detail_summary": "Gesichert ist zunächst die politische Reaktion auf die Sabotage an kritischer Infrastruktur: Brandenburg kündigt ein neues Sicherheitszentrum und weitere Gesetzesvorhaben an. Materiell relevant ist das, weil damit Zuständigkeiten, Schutzlogiken und mögliche Eingriffe in die Sicherung von Energieinfrastruktur verändert werden können. Der Wirkpfad läuft über zentralere Lagebilder, schnellere Koordination und neue rechtliche Befugnisse für Betreiber. Möglich sind dadurch höhere Resilienz und weniger Angriffsflächen, zugleich aber neue Abgrenzungsfragen zwischen Staat, Betreibern und Sicherheitsbehörden. Unklar bleibt, wie weit die Vorhaben tatsächlich gehen, ob sie beschlossen werden und welche Ressourcen sie binden. Belegt ist bisher nur die Ankündigung in einer einzelnen journalistischen Quelle; unabhängige Bestätigung oder amtliche Primärdokumente liegen hier nicht vor.",
+      "why_relevant": "Die Meldung betrifft den Schutz kritischer Infrastruktur und damit Regeln, Zuständigkeiten und Sicherheitsarchitektur mit möglicher Wirkung auf Versorgungssicherheit und staatliche Resilienz.",
       "topic": [
         "Energie",
-        "Gesundheit"
+        "Geopolitik",
+        "Politik"
       ],
-      "status": "beschlossen",
+      "status": "angekündigt",
       "analysis_type": "ex_ante",
       "importance": "hoch",
       "dimensions": {
         "human": {
           "relevance": "hoch",
-          "rationale": "Gesundheit, Wasser, Verkehr und Energie betreffen grundlegende Versorgung und Schutz vor Ausfällen."
+          "rationale": "Potenzielle Folgen für Versorgungssicherheit, Polizeiorganisation und den Schutz von Anlagen betreffen viele Haushalte und Betriebe indirekt."
         },
         "planet": {
           "relevance": "mittel",
-          "rationale": "Umweltbezug ist indirekt, etwa über sichere Energie- und Wasserinfrastruktur."
+          "rationale": "Über den Schutz des Stromnetzes und der Energieinfrastruktur können Ausfälle, Störungen und Folgeschäden begrenzt oder verschärft werden."
         },
         "democracy": {
           "relevance": "mittel",
-          "rationale": "Einheitliche Mindeststandards können staatliche Schutzfähigkeit und öffentliche Kontrolle stärken."
+          "rationale": "Neue Befugnisse und Gesetzesänderungen berühren demokratische Korrekturfähigkeit, Zuständigkeiten und staatliche Kontrolle."
         }
       },
-      "visuals": null,
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "haushalte"
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T16:30:00.000Z",
+      "last_updated": "2026-09-03T22:22:49.015Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-f27aeef64f1f2b4c573e",
+      "source_published_at": "2026-09-03T16:30:00.000Z",
+      "published_at": "2026-09-03T22:22:49.015Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das angekündigte Sicherheitszentrum und das Beleihungsgesetz formell beschlossen werden",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Kabinetts-, Landtags- oder Gesetzesbeschluss mit Text des Vorhabens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-11656929adb12c06",
+          "announced_at": "2026-09-03T16:30:00.000Z",
+          "follow_up_date": "2026-09-10T22:22:49.015Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:30:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-98ff7e403362fdf9",
+      "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
+      "title": "Stärkerer Schutz kritischer Infrastrukturen",
+      "source_summary": "Die Bundesregierung beschreibt das KRITIS-Dachgesetz als Rahmen für bundeseinheitliche und sektorübergreifende Mindeststandards beim Schutz kritischer Infrastrukturen. Genannt werden unter anderem Energie, Transport und Verkehr, Finanz- und Versicherungswesen, Gesundheit, Trinkwasser, Abwasser, Siedlungsabfallentsorgung, Informationstechnik und Telekommunikation, Ernährung, Weltraum sowie öffentliche Verwaltung.\n\nLaut Quelle soll das Gesetz die Widerstandsfähigkeit dieser Infrastrukturen erhöhen und den Betrieb auch bei Vorfällen sichern. Im parlamentarischen Verfahren kamen Änderungen hinzu: Länder dürfen weitere kritische Anlagen identifizieren, das Bundesinnenministerium soll Kriterien und Verfahren per Rechtsverordnung festlegen, und eine Evaluierung ist bereits in 2 Jahren vorgesehen. Das Gesetz trat am 17.03.2026 in Kraft; für Paragraf 14 Abs. 3-5 ist der 01.01.2030 genannt.",
+      "summary": "Das KRITIS-Dachgesetz setzt bundesweit Mindeststandards für den Schutz kritischer Infrastrukturen. Es ist seit März 2026 in Kraft und wird nun mit weiteren Verfahrensregeln konkretisiert.",
+      "detail_summary": "Gesichert ist vor allem der gesetzliche Rahmen: Das KRITIS-Dachgesetz legt bundesweit und sektorübergreifend Mindeststandards für den Schutz kritischer Infrastrukturen fest und ist seit März 2026 in Kraft. Materiell relevant ist das, weil der Text nicht nur einzelne Betreiber betrifft, sondern mehrere systemrelevante Sektoren und damit mögliche Folgen für Versorgungssicherheit, Ausfallschutz und Wiederanlauf von Diensten beschreibt. Der Wirkpfad liegt in einheitlicheren Schutzanforderungen, zusätzlichen Identifizierungsbefugnissen der Länder und einer angekündigten Verordnungspraxis des Innenministeriums. Mögliche Folgen sind strengere physische und organisatorische Schutzmaßnahmen sowie mehr Melde- und Abstimmungspflichten. Offen bleibt im Datensatz, wie streng die Standards praktisch ausfallen, wie schnell sie vollzogen werden und wie stark die Effekte tatsächlich sind. Die journalistischen Begleitstimmen zeigen zugleich Streit über Tempo und Umsetzungsgrad, belegen aber keine unabhängige Gegenposition zum Gesetz selbst.",
+      "why_relevant": "Die neue Information betrifft verbindliche Regeln für systemrelevante Versorgung und damit einen potenziell breiten, langlebigen Eingriff in Resilienz, Kosten und Zuständigkeiten.",
+      "topic": [
+        "Digitalisierung",
+        "Geopolitik",
+        "Energie",
+        "Gesundheit"
+      ],
+      "status": "in Kraft",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betrifft Versorgungssicherheit und Ausfallschutz in mehreren kritischen Sektoren mit möglichen Folgen für viele Menschen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekte Relevanz über Schutz von Energie-, Wasser- und Entsorgungsinfrastruktur; direkte Umweltwirkung bleibt offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Regeln, Zuständigkeiten und Verordnungsermächtigung berühren staatliche Steuerung und parlamentarische Kontrolle."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Inkrafttreten",
+            "value": "17.03.2026",
+            "unit": "Datum",
+            "context": "Seit diesem Datum gilt das Gesetz laut Quelle."
+          },
+          {
+            "label": "Evaluierung",
+            "value": "2",
+            "unit": "Jahre",
+            "context": "In 2 Jahren soll das Gesetz evaluiert werden."
+          },
+          {
+            "label": "Paragraf 14 Abs. 3-5",
+            "value": "2030",
+            "unit": "Jahr",
+            "context": "Für diese Teile nennt die Quelle einen späteren Stichtag."
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "staat",
+          "verbraucherinnen",
+          "kommunen"
+        ],
+        "timeline": [
+          {
+            "date": "2026-03-17",
+            "label": "Gesetz tritt in Kraft"
+          },
+          {
+            "date": "2030-01-01",
+            "label": "Paragraf 14 Abs. 3-5 tritt in Kraft"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
       "first_seen": "2026-09-02T06:00:00.000Z",
-      "last_updated": "2026-09-03T13:20:22.082Z",
-      "version": 3,
-      "news_status": null,
-      "event_id": null,
+      "last_updated": "2026-09-03T22:22:32.940Z",
+      "version": 4,
+      "news_status": "preliminary",
+      "event_id": "event-945d96c0f77bf403f68d",
       "source_published_at": "2026-09-02T06:00:00.000Z",
       "published_at": "2026-09-03T07:44:09.616Z",
-      "evidence_groups": null,
-      "followups": [],
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ],
+          [
+            "rbb24-nachrichten"
+          ],
+          [
+            "dlf-gesellschaft"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Welche Rechtsverordnungen, Kontrollmechanismen und Fristen folgen konkret aus dem KRITIS-Dachgesetz?",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Verordnungen, Vollzugshinweise und Umsetzungsfristen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6bdfbbc7f406546b",
+          "announced_at": "2026-09-02T06:00:00.000Z",
+          "follow_up_date": "2026-09-10T22:22:32.940Z",
+          "status": "scheduled"
+        }
+      ],
       "sources": [
         {
           "publisher": "Bundesregierung kompakt",
@@ -48,6 +201,20 @@
           "source_type": "official_rss",
           "published_at": "2026-09-02T06:00:00.000Z",
           "primary_source": true
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-kritische-infrastruktur-hacking-drohnen-sabotage-interview.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T07:05:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk – Gesellschaft",
+          "url": "https://www.deutschlandfunk.de/debatte-um-schutz-kritischer-infrastruktur-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T10:12:04.000Z",
+          "primary_source": false
         }
       ]
     },
