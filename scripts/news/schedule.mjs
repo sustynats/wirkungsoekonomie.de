@@ -6,7 +6,8 @@ if (!Number.isFinite(now.getTime())) throw new Error("INVALID_RUN_TIME");
 
 const schedule = scheduledSlot(now);
 const forced = process.env.GITHUB_EVENT_NAME === "workflow_dispatch" || process.argv.includes("--force");
-const automated = process.env.GITHUB_EVENT_NAME === "schedule";
+const automated = process.env.GITHUB_EVENT_NAME === "schedule"
+  || (process.env.GITHUB_EVENT_NAME === "push" && process.env.GITHUB_REF === "refs/heads/codex/wirkungsticker-clock");
 // GitHub darf Zeitpläne verzögert starten. Ein geplanter Lauf wird deshalb nie
 // wegen der tatsächlichen Startminute verworfen.
 const shouldRun = forced || automated || Boolean(schedule.slot);
