@@ -1,7 +1,205 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-03T22:21:17.010Z",
+  "updated_at": "2026-09-03T22:36:32.459Z",
   "stories": [
+    {
+      "story_id": "wt-a77b5d9b2935de2a",
+      "slug": "tv-im-seniorenheim-zimmer-in-dahn-keine-zusatzliche-gema-lizenz-notig-35de2a",
+      "title": "TV im Seniorenheim-Zimmer in Dahn: Keine zusätzliche GEMA-Lizenz nötig",
+      "source_summary": "Ein SWR-Bericht meldet aus Dahn in der Südwestpfalz einen Rechtsstreit um GEMA-Gebühren in einem Seniorenheim. Nach Darstellung des Beitrags hatte der Betreiber TV-Programme über das hauseigene Kabelnetz zeitgleich, vollständig und unverändert in die Zimmer weitergeleitet.\n\nDer Bericht sagt, der Bundesgerichtshof habe nun entschieden, dass dafür keine zusätzliche Lizenz nötig sei, und damit ein EuGH-Urteil bestätigt. Außerdem heißt es, die Aussage solle grundsätzlich auch für andere Seniorenheime gelten, wenn TV- und Hörfunksignale per Satellit empfangen und intern so weitergeleitet werden.",
+      "summary": "Der Bundesgerichtshof hat laut SWR die interne Weiterleitung von TV-Programmen im Seniorenheim nicht als lizenzpflichtige öffentliche Wiedergabe eingeordnet. Der Bericht sieht darin eine Entscheidung mit Bedeutung auch für andere Einrichtungen.",
+      "detail_summary": "Laut dem SWR geht es um ein Seniorenheim in Dahn, das TV-Programme über das hauseigene Kabelnetz in die Zimmer weiterleitet. Der Beitrag sagt, der Bundesgerichtshof habe dafür keine zusätzliche GEMA-Lizenz verlangt und damit ein EuGH-Urteil bestätigt. Das ist für die betroffenen Einrichtungen relevant, weil die Entscheidung die Lizenz- und Kostenfrage bei interner Signalverteilung klärt. Der mögliche Wirkpfad liegt vor allem in veränderten Gebührenforderungen und Vertragspraktiken bei vergleichbaren Heimen. Zugleich begrenzt die Quellenlage die Einordnung: Es liegt hier nur eine journalistische Darstellung vor, nicht der Primärtext des Urteils. Ob und wie stark die Entscheidung tatsächlich auf andere Fälle durchschlägt, bleibt daher noch offen.",
+      "why_relevant": "Die Meldung kann Lizenzkosten, Vertragsgestaltung und Rechtsklarheit für mehrere Seniorenheime betreffen und damit unmittelbar auf betriebliche Rahmenbedingungen wirken.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Für Bewohnerinnen und Betreiber verändert die Entscheidung die Rechtslage bei der internen TV-Versorgung; direkte Alltagsfolgen sind aber begrenzt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist aus der Meldung nicht ersichtlich."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Es handelt sich um eine höchstrichterliche Klärung von Urheberrechtsgrenzen und damit um eine rechtliche Rahmensetzung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Ort des Falls",
+            "value": "Dahn",
+            "unit": "Ort",
+            "context": "Genannter Fallort des Seniorenheims"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "aeltere"
+        ],
+        "tendency": {
+          "human": "offen",
+          "planet": "offen",
+          "democracy": "chance"
+        }
+      },
+      "first_seen": "2026-09-03T16:33:02.000Z",
+      "last_updated": "2026-09-03T22:37:15.098Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b802f916d71dbcbf3d44",
+      "source_published_at": "2026-09-03T16:33:02.000Z",
+      "published_at": "2026-09-03T22:37:15.098Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wie andere Einrichtungen ihre Lizenzpraxis nach dem Urteil anpassen.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Neue Hinweise auf geänderte Verträge, Gebührenpraxis oder Verbandsreaktionen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cb7e242fc9b7c316",
+          "announced_at": "2026-09-03T16:33:02.000Z",
+          "follow_up_date": "2026-09-10T22:37:15.098Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/rheinland-pfalz/kaiserslautern/bgh-gericht-beendet-streit-um-gema-gebuehren-in-suedwestpfalz-seniorenheim-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:33:02.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-57bcbc8dea706471",
+      "slug": "nach-angriff-auf-stromnetz-brandenburger-polizei-pruft-bekennerschreiben-706471",
+      "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
+      "source_summary": "Die Berichte sagen, dass die Polizei nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben prüft. Nach Polizeiangaben ist die Authentizität des Schreibens derzeit offen; bestätigt oder verneint werden könne sie noch nicht.\n\nDie Ermittlungen laufen weiter und werden unter anderem wegen der Bildung einer terroristischen Vereinigung geführt. Zugleich wird berichtet, dass ein Medienbericht von einem Einzeltäter spricht, der sich in dem Schreiben zu der Tat bekenne. Die polizeiliche Suche am Umspannwerk ist nach den Berichten abgeschlossen.",
+      "summary": "Die Polizei prüft nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben. Die Echtheit des Schreibens ist nach Angaben der Ermittler noch offen.",
+      "detail_summary": "Gesichert ist zunächst nur, dass nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben bei der Polizei eingegangen ist und geprüft wird. Die Polizei sagt zugleich, die Authentizität sei derzeit weder bestätigt noch verneint. Zusätzlich laufen Ermittlungen unter anderem wegen der Bildung einer terroristischen Vereinigung. Für die Einordnung ist das relevant, weil sich der Fokus damit von der bloßen Sachbeschädigung auf mögliche organisierte oder politisch motivierte Sabotage verschiebt. Der Wirkpfad läge vor allem in veränderten Sicherheitsvorkehrungen, Ermittlungsprioritäten und möglichen politischen Reaktionen zum Schutz kritischer Infrastruktur. Mögliche Folgen sind strengere Schutzmaßnahmen, zusätzliche Befugnisdebatten und eine breitere Prüfung ähnlicher Vorfälle. Welche Folgen tatsächlich eintreten, bleibt offen, weil die Echtheit des Schreibens und die Täterschaft bislang nicht belastbar belegt sind.",
+      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, mögliche koordiniere Sabotage und die öffentliche Sicherheitslage. Daraus können sich Schutzmaßnahmen, Ermittlungsprioritäten und politische Folgedebatten ergeben.",
+      "topic": [
+        "Energie",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Versorgungssicherheit, mögliche Ausfälle und der Schutz kritischer Infrastruktur."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Vorgang betrifft Energieinfrastruktur; direkte Umweltfolgen sind hier aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ermittlungen wegen Terrorverdachts und mögliche Schutzbefugnisse berühren staatliche Sicherheit und Korrekturfähigkeit."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Betroffene Anlage",
+            "value": "Umspannwerk",
+            "unit": "Ort",
+            "context": "Anlage bei Jänschwalde, zu der das Bekennerschreiben geprüft wird"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "kommunen",
+          "unternehmen",
+          "haushalte"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-03T16:08:52.000Z",
+      "last_updated": "2026-09-03T22:37:01.821Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e41b12a5a072d7faff5f",
+      "source_published_at": "2026-09-03T16:08:52.000Z",
+      "published_at": "2026-09-03T22:37:01.821Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6f87b9521d465246",
+          "announced_at": "2026-09-03T18:57:30.000Z",
+          "follow_up_date": "2026-09-10T22:37:01.821Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-nach-angriff-auf-stromnetz-16015587.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:08:52.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/brandenburg-bekennerschreiben-sprengvorrichtung-stromnetz-umspannwerk-jaenschwalde-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T17:36:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T18:57:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-9812656e38b0d665",
       "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
