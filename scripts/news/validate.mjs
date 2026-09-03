@@ -47,6 +47,8 @@ if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.in
 if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen")) fail("NEWS_APP_UI_INVALID");
 for (const story of store.stories.filter((item) => item.published && item.listed !== false)) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
+  const shareUrl = `https://wirkungsoekonomie.de/wirkungsticker/${story.slug}/`;
+  if (!detail.includes("data-news-share-button") || !detail.includes(`data-share-url="${shareUrl}"`) || !detail.includes("assets/js/news-share.js")) fail(`NEWS_SHARE_UI_INVALID:${story.story_id}`);
   const renderedSummary = detail.match(/news-story-summary[\s\S]*?<p class="news-analysis-copy">([\s\S]*?)<\/p>/)?.[1]
     ?.replace(/<[^>]*>/g, " ")
     .replace(/&(?:#\d+|#x[\da-f]+|\w+);/gi, " ")
@@ -63,7 +65,7 @@ for (const story of store.stories.filter((item) => item.published && item.listed
 const manifest = readJson("wirkungsticker/manifest.webmanifest");
 if (manifest.id !== "/wirkungsticker/" || manifest.scope !== "/wirkungsticker/" || manifest.start_url !== "/wirkungsticker/?source=pwa" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");
 const serviceWorker = fs.readFileSync(path.join(ROOT, "wirkungsticker/sw.js"), "utf8");
-if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("NEWS_NOTIFICATIONS_DISABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("showNotification") || !serviceWorker.includes("notificationclick") || !serviceWorker.includes("/wirkungsticker/feed.json")) fail("NEWS_SERVICE_WORKER_INVALID");
+if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("NEWS_NOTIFICATIONS_DISABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("showNotification") || !serviceWorker.includes("notificationclick") || !serviceWorker.includes("/wirkungsticker/feed.json") || !serviceWorker.includes("/assets/js/news-share.js")) fail("NEWS_SERVICE_WORKER_INVALID");
 const pwaScript = fs.readFileSync(path.join(ROOT, "assets/js/news-pwa.js"), "utf8");
 if (!pwaScript.includes('window.addEventListener("focus"') || !pwaScript.includes('window.addEventListener("pageshow"') || !pwaScript.includes("feedLatest > pageLatest") || !pwaScript.includes("window.location.reload()")) fail("NEWS_APP_AUTO_REFRESH_INVALID");
 const rss = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.xml"), "utf8");

@@ -208,7 +208,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260903-2">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260903-3">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -263,6 +263,8 @@ function indexPage(stories, updatedAt) {
 function storyPage(story) {
   const a = story.analysis;
   const analysisType = a.analysis_type === "ex_ante" ? "Ex ante" : a.analysis_type === "ex_post" ? "Ex post" : "Monitoring";
+  const shareUrl = `${SITE}/wirkungsticker/${story.slug}/`;
+  const shareText = `Wirkungsticker: ${a.summary}`;
   const detailSummary = expandedDetailSummary(a);
   const factStatement = String(detailSummary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
   const truthOpening = /^(fakt|gesichert|belegt)\b/i.test(factStatement)
@@ -273,7 +275,7 @@ function storyPage(story) {
   const sources = story.sources.map((source) => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><div class="news-source-meta"><span>${source.primary_source ? "Primärquelle" : "ergänzende Quelle"}</span><span>${escapeHtml(formatDate(source.published_at, { dateOnly: true }))}</span></div></li>`).join("");
   const history = [...(story.versions || [])].reverse().map((version) => `<li><strong>Version ${escapeHtml(version.version)}</strong> · ${escapeHtml(formatDate(version.analyzed_at))} · ${escapeHtml(version.analysis.analysis_type === "ex_ante" ? "Ex ante" : version.analysis.analysis_type === "ex_post" ? "Ex post" : "Monitoring")}</li>`).join("");
   const body = `<main id="main-content" data-search-content data-no-glossary>
-  <section class="hero news-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml((story.topic || []).join(" · "))}</p><h1 class="hero-title">${escapeHtml(story.title)}</h1><p class="hero-subtitle">${escapeHtml(a.summary)}</p><div class="news-hero__meta"><span>${escapeHtml(a.status)} · ${analysisType}</span><span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div></div></section>
+  <section class="hero news-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml((story.topic || []).join(" · "))}</p><h1 class="hero-title">${escapeHtml(story.title)}</h1><p class="hero-subtitle">${escapeHtml(a.summary)}</p><div class="news-hero__meta"><span>${escapeHtml(a.status)} · ${analysisType}</span><span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="news-share" data-news-share><button class="btn btn-secondary news-share__button" type="button" data-news-share-button data-share-title="${escapeHtml(story.title)}" data-share-text="${escapeHtml(shareText)}" data-share-url="${escapeHtml(shareUrl)}" aria-describedby="news-share-status-${escapeHtml(story.slug)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .18.02.35.05.52L8.91 9.1A3 3 0 0 0 7 8.42a3 3 0 1 0 1.91 5.49l6.14 3.58A3 3 0 0 0 15 18a3 3 0 1 0 .83-2.07l-6.14-3.58c.2-.55.2-1.15 0-1.7l6.14-3.58A3 3 0 0 0 18 8Z" fill="currentColor"/></svg><span>Nachricht teilen</span></button><p class="news-share__status" id="news-share-status-${escapeHtml(story.slug)}" data-news-share-status aria-live="polite"></p></div></div></section>
   <section class="section"><div class="news-story-layout"><div class="news-story-main">
     <article class="news-story-section news-story-summary"><p class="hero-kicker">Kurzüberblick</p><h2>Was passiert ist und was daraus folgen kann</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p></article>
     <article class="news-story-section news-fact-check"><p class="hero-kicker">Quellenprüfung</p><h2>Faktencheck</h2><p class="news-method-note"><strong>Wahrheit zuerst:</strong> Der belastbar bestätigte Sachverhalt steht vor Behauptungen, offenen Punkten und möglichen Folgen. So soll bloße Wiederholung keinen falschen Wahrheits­eindruck erzeugen.</p><div class="news-check-prose"><section><h3>Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Die Prüfung stützt sich auf ${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""} und ${story.claims.length} ${story.claims.length === 1 ? "tragenden, quellengebundenen Claim" : "tragende, quellengebundene Claims"}. Der Evidenzstand lautet: ${escapeHtml(a.evidence_level)}</p></section><section><h3>Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
@@ -301,6 +303,7 @@ function storyPage(story) {
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       articleSection: story.topic, citation: story.sources.map((source) => source.url),
     },
+    extraScript: '<script src="../../assets/js/news-share.js?v=20260903-1"></script>',
   });
 }
 
