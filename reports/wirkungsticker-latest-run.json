@@ -1,31 +1,31 @@
 {
   "schema_version": "1.1",
-  "started_at": "2026-09-03T12:12:54.918Z",
+  "started_at": "2026-09-03T12:23:56.901Z",
   "berlin_slot": "manueller Lauf",
   "feed_entries_fetched": 222,
-  "feed_entries_new": 2,
+  "feed_entries_new": 1,
   "feed_entries_updated": 0,
-  "feed_entries_backfilled": 80,
-  "feed_entries_deduplicated": 4,
+  "feed_entries_backfilled": 0,
+  "feed_entries_deduplicated": 85,
   "feed_entries_future_dated": 21,
-  "story_clusters": 73,
-  "locally_rejected": 47,
+  "story_clusters": 1,
+  "locally_rejected": 1,
   "ai_stories": 8,
-  "ai_calls": 4,
+  "ai_calls": 8,
   "ai_batches_planned": 4,
-  "ai_batches_completed": 1,
+  "ai_batches_completed": 4,
   "published_stories": 0,
   "updated_stories": 0,
-  "retired_stories": 0,
+  "retired_stories": 3,
   "reactivated_stories": 0,
-  "provider": "Oracle WOeK-KI API",
+  "provider": "Oracle WOeK-KI API Cache",
   "model": "gpt-5.5",
-  "input_tokens": 2747,
-  "output_tokens": 1901,
-  "estimated_cost_usd": 0.070765,
+  "input_tokens": 11805,
+  "output_tokens": 7246,
+  "estimated_cost_usd": 0.276405,
   "source_successes": 14,
   "source_failures": 0,
-  "source_retry_attempts": 1,
+  "source_retry_attempts": 2,
   "source_errors": [],
   "quality_holds": [
     {
@@ -117,37 +117,68 @@
     },
     {
       "story_id": "wt-465bbe1a9e2b1911",
-      "reason": "AI_PROVIDER_UNAVAILABLE"
+      "reason": "FILTER_REASSESSMENT_NOT_MATERIAL",
+      "errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_MATERIALITY_GATE_FAILED",
+        "AI_DUPLICATE_WITHOUT_UPDATE",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ]
     },
     {
       "story_id": "wt-3f78a7bbd2a740d6",
-      "reason": "AI_PROVIDER_UNAVAILABLE"
+      "reason": "FILTER_REASSESSMENT_NOT_MATERIAL",
+      "errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_MATERIALITY_GATE_FAILED",
+        "AI_DUPLICATE_WITHOUT_UPDATE",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ]
     },
     {
       "story_id": "wt-7e01f9f729faff83",
-      "reason": "AI_PROVIDER_UNAVAILABLE"
+      "reason": "FILTER_REASSESSMENT_NOT_MATERIAL",
+      "errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_MATERIALITY_GATE_FAILED",
+        "AI_DUPLICATE_WITHOUT_UPDATE",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ]
     },
     {
       "story_id": "wt-4b5d0962d323432a",
-      "reason": "AI_PROVIDER_UNAVAILABLE"
+      "reason": "QUALITY_GATE_FAILED",
+      "errors": [
+        "AI_PUBLICATION_GATE_FACTORS_INVALID",
+        "AI_DETAIL_SUMMARY_LENGTH"
+      ]
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
-      "reason": "AI_PROVIDER_UNAVAILABLE"
+      "reason": "QUALITY_GATE_FAILED",
+      "errors": [
+        "AI_PUBLICATION_GATE_FACTORS_INVALID",
+        "AI_MATERIALITY_GATE_FAILED"
+      ]
     },
     {
       "story_id": "wt-c15cb7a9f3b72c35",
-      "reason": "AI_PROVIDER_UNAVAILABLE"
+      "reason": "QUALITY_GATE_FAILED",
+      "errors": [
+        "AI_PUBLICATION_GATE_FACTORS_INVALID",
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_MATERIALITY_GATE_FAILED",
+        "AI_DUPLICATE_WITHOUT_UPDATE",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ]
     }
   ],
   "budget_stage": 0,
-  "completed_at": "2026-09-03T12:17:53.061Z",
-  "pending_stories_retried": 0,
-  "monthly_spend_before_usd": 1.20929,
+  "completed_at": "2026-09-03T12:33:57.170Z",
+  "pending_stories_retried": 26,
+  "monthly_spend_before_usd": 1.280055,
   "monthly_budget_usd": 5,
   "ai_batch_size": 2,
   "token_source": "conservative_character_estimate",
-  "ai_error": "AI_PROVIDER_ERROR:503",
-  "failed_batch_offset": 2,
-  "latest_source_timestamp": "2026-09-03T11:00:00.000Z"
+  "latest_source_timestamp": "2026-09-03T12:15:00.000Z"
 }
