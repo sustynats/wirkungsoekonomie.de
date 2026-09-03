@@ -39,7 +39,8 @@ jobs:
         if: steps.slot.outputs.should_run == 'true'
         env:
           WOEK_NEWS_MONTHLY_AI_BUDGET_USD: "5"
-          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "8"
+          # Vier Einzelanalysen halten auch mit Wiederholungen Abstand zum Worker-Limit.
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "4"
           # Längere Detailfassungen bleiben pro Anfrage unter dem Upstream-Zeitfenster.
           WOEK_NEWS_AI_BATCH_SIZE: "1"
           WOEK_NEWS_AI_BATCH_DELAY_MS: "30000"
