@@ -1,8 +1,8 @@
 {
   "schema_version": "1.2",
   "status": "ok",
-  "started_at": "2026-09-03T18:58:32.717Z",
-  "berlin_slot": "Abendausgabe",
+  "started_at": "2026-09-03T19:08:01.040Z",
+  "berlin_slot": "manueller Lauf",
   "feed_entries_fetched": 261,
   "feed_entries_new": 0,
   "feed_entries_updated": 0,
@@ -21,18 +21,14 @@
   "reactivated_stories": 0,
   "provider": "Oracle WOeK-KI API",
   "model": "gpt-5.5",
-  "input_tokens": 3660,
-  "output_tokens": 1495,
-  "estimated_cost_usd": 0.06315,
+  "input_tokens": 3471,
+  "output_tokens": 1174,
+  "estimated_cost_usd": 0.052575,
   "source_successes": 16,
   "source_failures": 0,
   "source_retry_attempts": 0,
   "source_errors": [],
   "quality_holds": [
-    {
-      "story_id": "wt-61fc84ab4a746bcd",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
     {
       "story_id": "wt-7e9e385d272f9212",
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
@@ -110,16 +106,16 @@
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
     },
     {
-      "story_id": "wt-295572a4057fedd7",
+      "story_id": "wt-61fc84ab4a746bcd",
       "reason": "QUALITY_GATE_FAILED",
       "errors": [
         "AI_MATERIALITY_TOO_LOW",
         "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_MATERIALITY_GATE_FAILED",
         "AI_SOURCE_SUMMARY_LENGTH",
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_UNSUPPORTED_NUMBER:01",
-        "AI_UNSUPPORTED_NUMBER:08",
-        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:28,08"
+        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:28",
+        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:2026"
       ]
     }
   ],
@@ -127,17 +123,17 @@
   "article_excerpt_failures": 1,
   "visuals_dropped": [],
   "budget_stage": 0,
-  "completed_at": "2026-09-03T18:59:48.763Z",
-  "pending_stories_retried": 21,
-  "monthly_spend_before_usd": 2.22362,
+  "completed_at": "2026-09-03T19:08:54.387Z",
+  "pending_stories_retried": 20,
+  "monthly_spend_before_usd": 2.28677,
   "monthly_budget_usd": 5,
   "ai_hourly_limit": 4,
-  "ai_calls_in_last_hour": 2,
-  "ai_calls_available_this_run": 2,
+  "ai_calls_in_last_hour": 3,
+  "ai_calls_available_this_run": 1,
   "ai_batch_size": 1,
   "token_source": "conservative_character_estimate",
   "latest_source_timestamp": "2026-09-03T16:00:00.000Z",
-  "ai_calls_remaining_this_hour": 1,
+  "ai_calls_remaining_this_hour": 0,
   "public_changed": false,
-  "pending_story_count": 30
+  "pending_story_count": 29
 }
