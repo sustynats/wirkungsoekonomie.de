@@ -64,14 +64,19 @@ function withChrome(svg, { width, height, scale, chrome }) {
   const htmlFile = path.join(directory, "frame.html");
   const pngFile = path.join(directory, "frame.png");
   fs.writeFileSync(htmlFile, `<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}svg{display:block}</style></head><body>${svg}</body></html>`);
+  try {
   execFileSync(chrome, [
     "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-first-run", "--no-default-browser-check",
+    "--disable-background-networking", "--disable-component-update", "--password-store=basic", "--use-mock-keychain",
+    `--user-data-dir=${path.join(directory, "profile")}`, "--disable-dev-shm-usage",
+    ...(process.env.WT_CHROME_NO_SANDBOX === "true" ? ["--no-sandbox"] : []),
+    "--allow-file-access-from-files",
     `--window-size=${width},${height}`, `--force-device-scale-factor=${scale}`, "--virtual-time-budget=4000",
     `--screenshot=${pngFile}`, `file://${htmlFile}`,
-  ], { stdio: "ignore", timeout: 90000 });
+  ], { stdio: "ignore", timeout: 30000 });
   const png = fs.readFileSync(pngFile);
-  fs.rmSync(directory, { recursive: true, force: true });
   return png;
+  } finally { fs.rmSync(directory, { recursive: true, force: true }); }
 }
 
 export async function rasterize(svg, { width, height, scale = 1, outFile = null, prefer = null, fontDirs = null } = {}) {

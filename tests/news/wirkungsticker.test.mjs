@@ -20,6 +20,7 @@ import {
   scheduledSlot,
   storySimilarity,
   validateAnalysis,
+  statusConsistencyErrors,
 } from "../../scripts/news/lib.mjs";
 import {
   aiRequestsInWindow,
@@ -38,6 +39,16 @@ const source = {
   priority: 100, topic: "Politik", url: "https://example.org/news/", max_items: 10,
   access: { status: "public", cost_usd: 0, article: "bounded_public_text" },
 };
+
+test("Verfahrensstand trennt Entwurf, Beschluss, geltendes Recht und Ex ante", () => {
+  assert.deepEqual(statusConsistencyErrors({status:"beschlossen",source_summary:"Das Gesetz ist seit März in Kraft. Es betrifft die Infrastruktur."}),["AI_STATUS_CONTRADICTS_IN_FORCE"]);
+  assert.deepEqual(statusConsistencyErrors({status:"in Kraft",analysis_type:"ex_ante",source_summary:"Das Gesetz ist seit März in Kraft."}),[]);
+  assert.deepEqual(statusConsistencyErrors({status:"beschlossen",source_summary:"Das Bundeskabinett hat einen Gesetzentwurf beschlossen."}),["AI_STATUS_DRAFT_NOT_FINAL"]);
+  assert.deepEqual(statusConsistencyErrors({status:"beschlossen",source_summary:"Die Bundesregierung hat einen Gesetzentwurf beschlossen."}),["AI_STATUS_DRAFT_NOT_FINAL"]);
+  assert.deepEqual(statusConsistencyErrors({status:"in Kraft",source_summary:"Das Gesetz soll im nächsten Jahr in Kraft treten."}),["AI_STATUS_FUTURE_NOT_IN_FORCE"]);
+  assert.deepEqual(statusConsistencyErrors({status:"beschlossen",source_summary:"Das Gesetz ist noch nicht in Kraft."}),[]);
+  assert.deepEqual(statusConsistencyErrors({status:"Entwurf",source_summary:"Die Bundesregierung prüft einen Entwurf.\n\nDas bisherige Gesetz ist seit März in Kraft."}),[]);
+});
 
 const feed = `<?xml version="1.0"?><rss><channel><item><title>Bund beschließt Klimagesetz</title><link>https://example.org/a?utm_source=x&amp;b=2</link><description><![CDATA[Das Gesetz verändert Regeln für Energie und Infrastruktur.]]></description><pubDate>Thu, 03 Sep 2026 05:00:00 GMT</pubDate><guid>a</guid></item></channel></rss>`;
 

@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { publicTitleImage } from "./title-image/pipeline.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -209,6 +210,7 @@ function card(story, index) {
     <span class="news-card__topic">${renderIcon(topicIcon(story.topic), "wt-icon--topic")}<span class="card-kicker">${escapeHtml((story.topic || []).slice(0, 3).join(" · "))}</span></span>
     <span class="news-card__flags"><span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>${version > 1 ? `<span class="news-badge news-badge--update">Akte aktualisiert · v${version}</span>` : ""}${high ? '<span class="news-badge news-badge--high">Hohe systemische Relevanz</span>' : ""}</span>
   </div>
+  ${publicTitleImage(story.title_image)?.wide ? `<figure class="news-title-image news-title-image--card"><img src="${escapeHtml(publicTitleImage(story.title_image).wide.url)}" alt="" width="1200" height="675" loading="${index === 0 ? "eager" : "lazy"}" decoding="async"><figcaption>${escapeHtml(publicTitleImage(story.title_image).label)}</figcaption></figure>` : ""}
   <div class="news-card__body">
     <h2><a href="${escapeHtml(href)}">${escapeHtml(story.title)}</a></h2>
     <p class="news-card__summary">${escapeHtml(a.summary)}</p>
@@ -226,7 +228,7 @@ function card(story, index) {
 </article>`;
 }
 
-function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "" }) {
+function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null }) {
   const { header, footer } = renderLayout(base);
   return `<!doctype html>
 <html lang="de">
@@ -243,7 +245,12 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
-  <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+  <meta property="og:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="${escapeHtml(titleImage ? `${title} – ${titleImage.label}` : "Wirkungsökonomie")}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
   <meta name="theme-color" content="#f7f1e8">
   <meta name="application-name" content="Wirkungsticker">
   <meta name="mobile-web-app-capable" content="yes">
@@ -257,7 +264,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260903-ux3">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260904-title1">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -265,8 +272,8 @@ ${header}
 ${renderIconSprite()}
 ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
-<script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260903-7"></script>
+<script src="${base}assets/js/main.js?v=20260904-ticker-questions"></script>
+<script src="${base}assets/js/news-pwa.js?v=20260904-push-offer"></script>
 ${extraScript}
 </body>
 </html>`;
@@ -333,6 +340,7 @@ function renderNewsroomEvidence(story) {
 }
 
 function storyPage(story, { newerStory = null, nextStory = null } = {}) {
+  const titleImage = publicTitleImage(story.title_image);
   const a = story.analysis;
   const detailSummary = expandedDetailSummary(a);
   const factStatement = String(story.source_summary || detailSummary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
@@ -359,6 +367,7 @@ function storyPage(story, { newerStory = null, nextStory = null } = {}) {
   const returnLink = `<a class="btn btn-secondary news-return-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">←</span><span>Zur Übersicht</span></a>`;
   const body = `<main id="main-content" data-search-content data-no-glossary>
   <section class="hero news-hero news-hero--story"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p><h1 class="hero-title">${escapeHtml(story.title)}</h1><div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}</div></div></section>
+  ${titleImage?.wide ? `<figure class="news-title-image news-title-image--detail"><img src="${escapeHtml(titleImage.wide.url)}" alt="${escapeHtml(titleImage.label)} zum Thema ${escapeHtml(story.title)}" width="1200" height="675" decoding="async"><figcaption>${escapeHtml(titleImage.label)} · Darstellung, kein Beleg des Ereignisses.</figcaption></figure>` : ""}
   ${renderAtAGlance(story, { formatDate })}
   ${renderNewsroomEvidence(story)}
   <nav class="wt-subnav" aria-label="Abschnitte dieser Wirkungsakte"><div class="wt-subnav__inner"><a href="#nachricht">Nachricht</a><a href="#faktencheck">Faktencheck</a><a href="#analyse">Analyse</a><a href="#einordnung">Einordnung</a><a href="#folgencheck">Folgencheck</a><a href="#bedeutung">Bedeutung</a><a href="#offen">Offene Fragen</a><a href="#quellen">Quellen</a></div></nav>
@@ -379,6 +388,7 @@ function storyPage(story, { newerStory = null, nextStory = null } = {}) {
   return pageShell({
     title: story.title,
     description: a.summary.slice(0, 158),
+    titleImage,
     canonical: `${SITE}/wirkungsticker/${story.slug}/`,
     base: "../../",
     body,
@@ -386,6 +396,7 @@ function storyPage(story, { newerStory = null, nextStory = null } = {}) {
       "@context": "https://schema.org", "@type": "AnalysisNewsArticle", "@id": `${SITE}/wirkungsticker/${story.slug}/#article`,
       url: `${SITE}/wirkungsticker/${story.slug}/`, headline: story.title, description: a.summary, abstract: story.source_summary, inLanguage: "de",
       datePublished: story.published_at, dateModified: story.last_updated,
+      ...(titleImage?.og ? { image: titleImage.og.url.startsWith("/") ? `${SITE}${titleImage.og.url}` : titleImage.og.url } : {}),
       author: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       articleSection: story.topic, citation: story.sources.map((source) => source.url),
@@ -439,6 +450,7 @@ function legacyRedirect(target, title = "Wirkungsticker") {
 function publicStory(story) {
   return {
     story_id: story.story_id,
+    title_image: publicTitleImage(story.title_image),
     slug: story.slug,
     title: story.title,
     source_summary: story.source_summary,

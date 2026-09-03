@@ -1955,3 +1955,8 @@
     transform: none;
   }
 }
+.news-title-image { margin: 0; min-width: 0; }
+.news-title-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 14px; background: #07152c; }
+.news-title-image figcaption { padding: .45rem .1rem 0; color: var(--muted, #5e6567); font-size: .75rem; line-height: 1.4; }
+.news-title-image--card { margin: .3rem 0 .6rem; }
+.news-title-image--detail { width: min(100% - 2rem, 64rem); margin: 1.5rem auto; }
