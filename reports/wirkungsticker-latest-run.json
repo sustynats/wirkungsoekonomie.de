@@ -1,84 +1,40 @@
 {
   "schema_version": "1.1",
-  "started_at": "2026-09-03T11:02:59.364Z",
+  "started_at": "2026-09-03T11:10:23.850Z",
   "berlin_slot": "manueller Lauf",
-  "feed_entries_fetched": 198,
+  "feed_entries_fetched": 222,
   "feed_entries_new": 0,
   "feed_entries_updated": 0,
   "feed_entries_backfilled": 0,
-  "feed_entries_deduplicated": 81,
-  "feed_entries_future_dated": 1,
+  "feed_entries_deduplicated": 84,
+  "feed_entries_future_dated": 21,
   "story_clusters": 0,
   "locally_rejected": 0,
-  "ai_stories": 8,
-  "ai_calls": 4,
-  "ai_batches_planned": 4,
-  "ai_batches_completed": 4,
-  "published_stories": 2,
+  "ai_stories": 2,
+  "ai_calls": 1,
+  "ai_batches_planned": 1,
+  "ai_batches_completed": 1,
+  "published_stories": 0,
   "updated_stories": 0,
   "provider": "Oracle WOeK-KI API",
   "model": "gpt-5.5",
-  "input_tokens": 8740,
-  "output_tokens": 6762,
-  "estimated_cost_usd": 0.24656,
-  "source_successes": 13,
-  "source_failures": 1,
-  "source_errors": [
-    {
-      "source_id": "bundesrat-mitteilungen",
-      "error": "fetch failed"
-    }
-  ],
+  "input_tokens": 2561,
+  "output_tokens": 1661,
+  "estimated_cost_usd": 0.062635,
+  "source_successes": 14,
+  "source_failures": 0,
+  "source_errors": [],
   "quality_holds": [
     {
       "story_id": "wt-e28250d4074683af",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
+      "reason": "QUALITY_GATE_FAILED",
+      "errors": [
+        "AI_MATERIALITY_TOO_LOW",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ]
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-143d07abf300e106",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ]
-    },
-    {
-      "story_id": "wt-2ae8fdd95aa5c1fa",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ]
-    },
-    {
-      "story_id": "wt-7e9e385d272f9212",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ]
-    },
-    {
-      "story_id": "wt-146cce2a1bef268e",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ]
-    },
-    {
-      "story_id": "wt-2c4b8dc5bdfc3cb3",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_MATERIALITY_TOO_LOW",
-        "AI_PUBLICATION_NOT_RECOMMENDED"
-      ]
-    },
-    {
-      "story_id": "wt-9d87c7944980e87e",
       "reason": "QUALITY_GATE_FAILED",
       "errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED"
@@ -86,9 +42,9 @@
     }
   ],
   "budget_stage": 0,
-  "completed_at": "2026-09-03T11:07:23.372Z",
-  "pending_stories_retried": 10,
-  "monthly_spend_before_usd": 0.86015,
+  "completed_at": "2026-09-03T11:11:56.578Z",
+  "pending_stories_retried": 2,
+  "monthly_spend_before_usd": 1.10671,
   "monthly_budget_usd": 5,
   "ai_batch_size": 2,
   "token_source": "conservative_character_estimate",

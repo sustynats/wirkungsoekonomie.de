@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T11:02:59.364Z",
+  "updated_at": "2026-09-03T11:10:23.850Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -4296,16 +4296,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T11:10:23.850Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_MATERIALITY_TOO_LOW",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T11:10:23.850Z"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
@@ -4345,16 +4348,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T11:02:59.364Z"
+          "checked_at": "2026-09-03T11:10:23.850Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-03T11:02:59.364Z"
+      "updated_at": "2026-09-03T11:10:23.850Z"
     },
     {
       "story_id": "wt-61fc84ab4a746bcd",
