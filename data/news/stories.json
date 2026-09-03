@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-03T17:17:36.673Z",
+  "updated_at": "2026-09-03T18:20:04.691Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -1828,7 +1828,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -1848,7 +1848,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Die Bundesregierung kündigt den Baubeginn für ein Denkmal an, das an die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung Polens von 1939 bis 1945 erinnern soll. Der Deutsche Bundestag hat das Vorhaben beschlossen. Als Standort ist das Gelände der früheren Kroll-Oper im Zentrum Berlins vorgesehen, in der Nähe von Bundeskanzleramt und Bundestag.\n\nNach Angaben der Quelle läuft derzeit ein Gestaltungswettbewerb. Ein Preisgericht soll im Dezember 2026 über den Siegerentwurf beraten; die Errichtung soll 2027 beginnen. Kulturstaatsminister Wolfram Weimer äußerte sich anlässlich des Jahrestags des deutschen Überfalls auf Polen zu dem Vorhaben. Am vorgesehenen Ort besteht bereits seit Juni 2025 ein temporärer Gedenkort, der auf Initiative des Deutschen Polen-Instituts eingerichtet und der Öffentlichkeit übergeben wurde. Weitere Angaben zur endgültigen Gestaltung oder zu den Baukosten nennt die Meldung nicht."
     },
@@ -2064,7 +2065,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -2081,12 +2082,11 @@
             "content_hash": "b1d7e1089cfee614d1a31b1d8a64192fa7326a8dc0f19be8117c2c5288782c71"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:503"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       }
     },
     {
@@ -2545,7 +2545,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -2562,12 +2562,11 @@
             "content_hash": "0c8b1c9c137ae5909954ab4b0d8fbbf85bb099215599778ff9f730776744de7f"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:503"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       }
     },
     {
@@ -2773,7 +2772,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -2793,7 +2792,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Die Bundesregierung meldet die Eröffnung des AI Safety and Security Institute Deutschland, kurz AISI Deutschland. Das nationale Kompetenz- und Evaluierungsinstitut wurde vom Nationalen Sicherheitsrat beschlossen und wird gemeinsam vom Bundesdigitalministerium und vom Bundesinnenministerium aufgebaut und geleitet. Es ist nach der Darstellung keine Regulierungsbehörde, sondern ein analytisch-operatives Kompetenzzentrum.\n\nAISI Deutschland soll moderne KI-Modelle, Cybersicherheit und mögliche technische Risiken untersuchen, vorhandene Analysekapazitäten bündeln und Lösungen für den sicheren Umgang mit KI-Systemen entwickeln. Vorgesehen ist Beratung für Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft. Außerdem soll das Institut mit vergleichbaren Einrichtungen im Ausland Informationen austauschen und auf gemeinsame internationale Standards hinwirken. Zur Eröffnung betonten die Minister Karsten Wildberger und Alexander Dobrindt die schnelle technische Bewertung von KI-Systemen und die internationale Zusammenarbeit. Konkrete Angaben zu Personal, Budget oder einem Zeitplan nennt der Artikel nicht."
     },
@@ -2835,18 +2835,35 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_GATE_FACTORS_INVALID",
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_MATERIALITY_GATE_FAILED",
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "fresh": false,
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z",
+      "listed": false,
+      "relevance_filter_version": "3.2",
+      "rejected_at": "2026-09-03T18:20:04.691Z",
+      "rejection": {
+        "at": "2026-09-03T18:20:04.691Z",
+        "filter_version": "3.2",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_GATE_FACTORS_INVALID",
+          "AI_NEWS_VALUE_CONTEXT_ONLY",
+          "AI_MATERIALITY_GATE_FAILED",
+          "AI_PUBLICATION_NOT_RECOMMENDED"
+        ]
+      }
     },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
@@ -2886,7 +2903,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
@@ -2895,9 +2912,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
@@ -3102,7 +3120,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -3122,7 +3140,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein neues Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur gestartet. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 insgesamt zehn Millionen Euro vorgesehen. Anträge können seit Veröffentlichung der Meldung eingereicht werden; die Bewerbungsfrist endet am 1. Oktober 2026. Über die Auswahl soll eine unabhängige Jury beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.\n\nGefördert werden Vorhaben in drei Bereichen: Erhalt historischer Orte, Digitalisierung und digitale Lebenswelten sowie Vermittlung und anwendungsbezogene Forschung. Das Programm setzt die im November 2025 beschlossene neue Gedenkstättenkonzeption um. Kulturstaatsminister Wolfram Weimer erklärte zum Start, historische Orte, digitale Zugänge und zeitgemäße Bildungsangebote sollten unterstützt werden. Die Meldung führt außerdem aus, dass die bisherige Projektförderung verdoppelt werde."
     },
@@ -3330,7 +3349,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -3350,7 +3369,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Die Bundesregierung schlägt vor, das beim Umweltbundesamt geführte Regionalnachweisregister einzustellen. Das Register dokumentiert Nachweise, mit denen Stromlieferanten gegenüber Endverbrauchern die regionale Herkunft verbrauchten Stroms aus erneuerbaren Energien bestätigen können. Nach Darstellung der Verordnung wurde das Instrument in der Praxis wenig genutzt und erreichte das beabsichtigte Ziel, die Akzeptanz für zusätzliche Anlagen erneuerbarer Energien zu fördern, nicht.\n\nAls weiteren Grund nennt die Vorlage den administrativen Aufwand der Registerführung und die Meldepflichten für Anlagenbetreiber und Energieversorgungsunternehmen. Diese stünden laut Bundesregierung nicht in einem angemessenen Verhältnis zum Nutzen. Eine europarechtliche Pflicht für Regionalnachweise bestehe nicht. Das gesonderte Herkunftsnachweisregister für Strom aus erneuerbaren Energien soll dagegen weitergeführt werden. Für die Verordnungsänderung ist nach der Bundestagsmeldung die Zustimmung des Deutschen Bundestages erforderlich; ein Abschluss dieses Verfahrens wird noch nicht berichtet."
     },
@@ -3551,7 +3571,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -3571,7 +3591,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Die Fraktion Bündnis 90/Die Grünen hat im Deutschen Bundestag eine Kleine Anfrage zur Erkennung und Behandlung von Sepsis in Deutschland gestellt. In der Anfrage wird Sepsis als lebensbedrohliche Fehlregulation der Immunantwort auf eine Infektion beschrieben, die unbehandelt zu Organversagen und Tod führen kann.\n\nDie Abgeordneten fragen die Bundesregierung, ob sie Verbesserungsmöglichkeiten bei Erkennung und Versorgung von Sepsis sieht. Außerdem verlangen sie Auskunft über Forschungsmittel, die in den vergangenen zehn Jahren für die Sepsisforschung bereitgestellt wurden. Weitere Fragen betreffen Erkenntnisse zu Behandlungsfehlern und deren Nutzung für konkrete Maßnahmen zur Patientensicherheit. Die Bundestagsmeldung gibt den Inhalt der Anfrage wieder; eine Antwort der Bundesregierung, neue Versorgungsdaten oder bereits beschlossene Maßnahmen enthält sie noch nicht."
     },
@@ -3779,7 +3800,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -3799,7 +3820,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Bundesbankpräsident Joachim Nagel äußert sich in einem Interview mit Le Monde zur Inflation, zu möglichen Zinsschritten und zur europäischen Wirtschaft. Er verweist für Juli und August auf Inflationsraten im Euroraum von 2,9 beziehungsweise 3,3 Prozent und auf das mittelfristige Ziel von 2 Prozent. Für die EZB-Ratssitzung am 10. September hält er eine Zinserhöhung für wahrscheinlich, legt sich für spätere Sitzungen wegen schwankender Energiepreise, volatiler Finanzmärkte und großer Unsicherheit aber nicht fest.\n\nNagel begründet seine Haltung mit dem Risiko, dass länger erhöhte Inflation in Lohnverhandlungen einfließt. Zugleich beschreibt er den Euroraum als widerstandsfähig und nennt für Deutschland ein stärker als erwartetes zweites Quartal, robuste Ausfuhren und eine zufriedenstellende Auftragslage im verarbeitenden Gewerbe. Auf Basis der ersten beiden Quartale erwartet er für Deutschland im laufenden Jahr rund ein Prozent Wachstum."
     },
@@ -4002,7 +4024,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -4022,7 +4044,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Die Veröffentlichung der Deutschen Bundesbank verweist auf die MFI-Zinsstatistik der Europäischen Zentralbank für Juli 2026. Im verfügbaren Kurztext werden zwei gewichtete Indikatoren für neue Kreditgeschäfte im Euroraum genannt. Der Indikator der Finanzierungskosten für neue Unternehmenskredite lag bei 3,80 Prozent. Für neue Wohnungsbaukredite an private Haushalte weist die Meldung einen entsprechenden Wert von 3,54 Prozent aus.\n\nBeide Werte waren nach Angaben der Quelle gegenüber dem vorherigen Stand weitgehend unverändert. Die Meldung beschreibt damit die Kosten neuer Bankkredite in den beiden genannten Segmenten, nicht den gesamten Bestand bereits laufender Darlehen. Weitere Einzelheiten stehen in einer verlinkten EZB-Veröffentlichung als PDF. Der auf der Bundesbank-Seite verfügbare Kurztext nennt keine Ursachen für die Entwicklung und enthält dort auch keine weitergehende Bewertung des längerfristigen Trends."
     },
@@ -4230,7 +4253,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -4250,7 +4273,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Das Bundeskabinett hat einen Gesetzentwurf zur Änderung des Windenergie-auf-See-Gesetzes beschlossen. Die bisherigen Ausbauziele für Offshore-Windenergie sollen bestehen bleiben, während Ausschreibungen, Netzanbindung und Finanzierung verändert werden. Die Bundesregierung nennt Bezahlbarkeit, Kosteneffizienz, Versorgungssicherheit und die tatsächliche Realisierung vergebener Projekte als Ziele des Entwurfs.\n\nVorgesehen ist, Netzanbindungen zu optimieren und die Regellaufzeit von Offshore-Anlagen von 25 auf 35 Jahre zu verlängern. Außerdem sollen Differenzverträge eingeführt werden: Betreiber erhalten einen abgesicherten Mindeststrompreis; darüber hinausgehende Erlöse werden abgeschöpft. Im Zuge des europäischen Net-Zero Industry Acts sollen zusätzliche Kriterien unter anderem für Cybersicherheit und Widerstandsfähigkeit gelten. Der Meeresnaturschutz bleibt laut Quelle Bestandteil der Genehmigungsverfahren. Bundeswirtschaftsministerin Katherina Reiche erklärte, die Reform solle Investitionssicherheit, realistischere Auktionen und eine bessere Nutzung der Leitungen schaffen."
     },
@@ -4453,7 +4477,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -4473,7 +4497,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Der Bundesrat führt unter der Nummer 504/26 einen Beratungsvorgang mit dem Titel „Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen“. Der Eintrag ist auf den 3. September 2026 datiert. Als federführend ist der Ausschuss mit dem Kürzel G genannt; zusätzlich weist die Seite die Kürzel AIS, Fz und K für weitere beteiligte Ausschüsse aus.\n\nDie Originalseite kündigt an, dass die Drucksachen zu diesem Vorgang noch nicht vorliegen und in Kürze veröffentlicht werden sollen. Damit dokumentiert sie bislang den Eingang und die Ausschusszuweisung der Verordnung, aber noch keine Beratungsergebnisse oder Entscheidung des Bundesrates. Auch konkrete Änderungen an Anerkennungsverfahren, betroffene Heilberufe, Fristen und Zuständigkeiten lassen sich dem derzeit veröffentlichten Eintrag noch nicht entnehmen. Diese Punkte bleiben bis zur Bereitstellung der angekündigten Drucksachen offen."
     },
@@ -4676,7 +4701,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -4696,7 +4721,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Vorgesehen sind höhere Beträge beim Kindergeld, beim Grund- und Kinderfreibetrag sowie beim Arbeitnehmer-Pauschbetrag. Der Einkommensteuertarif soll im Bereich zwischen 17.800 und 70.600 Euro abgeflacht werden. Die Maßnahmen sollen 2027 beginnen und ab 2028 vollständig gelten; das genannte Entlastungsvolumen liegt bei rund zehn Milliarden Euro pro Jahr.\n\nDas Kindergeld soll je Kind und Monat von 259 Euro auf 267 Euro im Jahr 2027 und 272 Euro im Jahr 2028 steigen. Genannt werden außerdem höhere Kinder- und Grundfreibeträge sowie ein Arbeitnehmer-Pauschbetrag von 1.430 Euro. Zur Gegenfinanzierung nennt die Quelle Änderungen am Reichensteuersatz und den Abbau einzelner Vergünstigungen. Unter anderem sollen die Absetzbarkeit von Handwerkerleistungen sinken und der Pauschsteuersatz für Minijobs steigen. Ein Rechenbeispiel beschreibt für eine Familie mit zwei Kindern ab 2028 eine jährliche Entlastung von mehr als 600 Euro."
     },
@@ -4902,7 +4928,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T17:17:36.673Z",
+        "detected_at": "2026-09-03T18:20:04.691Z",
         "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
         "sources": [
           {
@@ -4922,7 +4948,8 @@
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
-        "reassessment": true
+        "reassessment": true,
+        "fresh": false
       },
       "source_summary": "Die Bundesregierung plant, die Strom-Netzentgelte auch von 2027 bis 2029 mit einem Bundeszuschuss zu dämpfen. Für jedes dieser Jahre sollen 5,525 Milliarden Euro aus dem Klima- und Transformationsfonds an die Übertragungsnetzbetreiber fließen. Das Kabinett hat dafür Änderungen am Energiewirtschaftsgesetz beschlossen. Die Netzbetreiber sollen den Zuschuss in ihre Entgeltkalkulation einbeziehen; über die Stromlieferanten soll die Kostendämpfung Haushalte und Unternehmen erreichen.\n\nFür 2026 nennt die Quelle einen Zuschuss von 6,5 Milliarden Euro. Ein Haushalt mit 3.500 Kilowattstunden Jahresverbrauch könne dadurch rechnerisch etwa 100 Euro sparen, wobei der tatsächliche Betrag unter anderem von Netzgebiet, Verbrauch und Wohnsituation abhängt. Für 2027 liegen laut Artikel noch keine konkreten Entgeltdaten vor. Die Übertragungs- und Verteilnetzbetreiber sollen transparent machen, wie der Zuschuss die Netzentgelte verändert. Die Meldung ordnet den Zuschuss in weitere Maßnahmen wie die abgeschaffte Gasspeicherumlage und einen geplanten Industriestrompreis ein."
     },
@@ -5093,7 +5120,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
@@ -5102,9 +5129,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-146cce2a1bef268e",
@@ -5145,7 +5173,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
@@ -5154,9 +5182,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-2c4b8dc5bdfc3cb3",
@@ -5196,7 +5225,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
@@ -5205,9 +5234,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-9d87c7944980e87e",
@@ -5246,7 +5276,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
@@ -5255,9 +5285,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-e28250d4074683af",
@@ -5297,7 +5328,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -5306,9 +5337,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
@@ -5348,7 +5380,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -5357,9 +5389,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-61fc84ab4a746bcd",
@@ -5399,7 +5432,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "7cb1a8efbfa9caf92894d1caf19008906e156fbdf4ea9ab5f51d5fbac002332a",
@@ -5408,9 +5441,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-295572a4057fedd7",
@@ -5450,7 +5484,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T17:17:36.673Z"
+          "checked_at": "2026-09-03T18:20:04.691Z"
         }
       ],
       "content_hash": "cc91a6828f0cf8263ef414975a07edea24755d20482180723bfcc34fee891995",
@@ -5459,9 +5493,10 @@
       "quality_errors": [],
       "quality_retry_count": 0,
       "reassessment": false,
+      "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T17:17:36.673Z"
+      "updated_at": "2026-09-03T18:20:04.691Z"
     },
     {
       "story_id": "wt-995822cc0b71a7f8",
@@ -5523,5 +5558,6 @@
         ]
       }
     }
-  ]
+  ],
+  "public_updated_at": "2026-09-03T13:20:22.082Z"
 }
