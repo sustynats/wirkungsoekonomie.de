@@ -1,56 +1,14 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T12:59:00.680Z",
+  "updated_at": "2026-09-03T13:20:22.082Z",
   "stories": [
-    {
-      "story_id": "wt-9cca0ad92ad1a84a",
-      "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
-      "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-      "summary": "Die Energiepreis-Story trägt als veröffentlichungswürdige Neuigkeit. Die neue Information betrifft staatliche Entlastung bei Gas- und Stromkosten.",
-      "detail_summary": "Gesichert ist aus der Primärquelle: Die Bundesregierung meldet die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Zusätzlich werden niedrigere Steuern und ein Industriestrompreis als langfristige Unterstützung der Wirtschaft genannt. Materiell ist das, weil Energiepreise Haushalte und Unternehmen direkt betreffen und über Kosten, Anreize und Kapitalflüsse weiterwirken können. Der naheliegende Wirkpfad läuft über geringere Abgaben oder Entgelte zu verfügbaren Einkommen, Produktionskosten und Nachfrage. Mögliche Folgen sind Entlastung, veränderte Verteilungseffekte und neue fiskalische oder marktliche Anschlussfragen. Offen bleibt, wie hoch die Entlastung ausfällt, wer netto gewinnt, wie finanziert wird und ob reale Preiseffekte eintreten.",
-      "why_relevant": "Energiepreise berühren Haushaltsbudgets, Unternehmensstandorte und staatliche Anreizsetzung.",
-      "topic": [
-        "Energie",
-        "Finanzen",
-        "Wirtschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Entlastung für Verbraucherinnen und Verbraucher bei zentralen Grundkosten."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Preis- und Industrieanreize können Energieverbrauch und Investitionen beeinflussen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Verteilungs- und Finanzierungsfragen bleiben politisch überprüfbar und erklärungspflichtig."
-        }
-      },
-      "first_seen": "2026-09-02T13:00:00.000Z",
-      "last_updated": "2026-09-03T12:48:02.808Z",
-      "version": 2,
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T13:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
     {
       "story_id": "wt-98ff7e403362fdf9",
       "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
       "title": "Stärkerer Schutz kritischer Infrastrukturen",
-      "summary": "Die KRITIS-Story trägt als veröffentlichungswürdige Neuigkeit. Sie betrifft Mindeststandards für zentrale Infrastrukturen.",
-      "detail_summary": "Gesichert ist aus der Primärquelle: Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt. Genannt werden unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Materiell ist das, weil Ausfälle in diesen Bereichen viele Menschen treffen und Kaskaden in Versorgung, Mobilität und Gesundheit auslösen können. Der Wirkpfad liegt in verbindlicheren Schutzanforderungen für Betreiber und damit in möglicher Prävention, Vorsorge und Krisenfestigkeit. Eine mögliche Folge ist höhere Resilienz gegen Störungen, sofern Vollzug, Finanzierung und Kontrolle tragen. Offen bleiben konkrete Standards, Fristen, Zuständigkeiten, Sanktionen und die tatsächliche Umsetzungspraxis.",
-      "why_relevant": "KRITIS-Regeln betreffen Versorgungssysteme, deren Ausfall breite und kaskadierende Folgen hätte.",
+      "summary": "Die Bundesregierung meldet sektorübergreifende Mindeststandards für kritische Infrastrukturen. Das ist publizierbar, weil Regeln für systemrelevante Versorgung betroffen sind.",
+      "detail_summary": "Gesichert ist nur der Primärquellen-Claim: Mit dem KRITIS-Dachgesetz sollen bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt werden. Genannt sind Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Die Relevanz liegt in der möglichen Veränderung von Schutzpflichten und Resilienzanforderungen für zentrale Versorgungssysteme. Der Wirkpfad verläuft über Standards, Prävention, Betreiberpflichten und koordinierbaren Vollzug. Eine mögliche Folge ist eine geringere Verwundbarkeit gegenüber Ausfällen, zugleich können Aufwand, Kosten und Umsetzungsunterschiede entstehen. Eingetretene Wirkung ist nicht belegt; Details zu Fristen, Kontrolle, Finanzierung und konkretem Vollzug bleiben offen.",
+      "why_relevant": "Kritische Versorgungssysteme können bei Ausfall breite Kaskaden für Alltag, Gesundheit und Sicherheit auslösen.",
       "topic": [
         "Energie",
         "Gesundheit"
@@ -61,20 +19,20 @@
       "dimensions": {
         "human": {
           "relevance": "hoch",
-          "rationale": "Gesundheit, Wasser, Verkehr und Energie sichern grundlegende Alltags- und Schutzfunktionen."
+          "rationale": "Gesundheit, Wasser, Verkehr und Energie betreffen grundlegende Versorgung und Schutz vor Ausfällen."
         },
         "planet": {
           "relevance": "mittel",
-          "rationale": "Energie- und Wassersysteme können auch ökologische Folgeschäden bei Störungen berühren."
+          "rationale": "Umweltbezug ist indirekt, etwa über sichere Energie- und Wasserinfrastruktur."
         },
         "democracy": {
-          "relevance": "hoch",
-          "rationale": "Einheitliche Standards stärken staatliche Schutzfähigkeit, brauchen aber kontrollierbaren Vollzug."
+          "relevance": "mittel",
+          "rationale": "Einheitliche Mindeststandards können staatliche Schutzfähigkeit und öffentliche Kontrolle stärken."
         }
       },
       "first_seen": "2026-09-02T06:00:00.000Z",
-      "last_updated": "2026-09-03T12:48:02.808Z",
-      "version": 2,
+      "last_updated": "2026-09-03T13:20:22.082Z",
+      "version": 3,
       "sources": [
         {
           "publisher": "Bundesregierung kompakt",

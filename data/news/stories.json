@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03T12:59:00.680Z",
+  "updated_at": "2026-09-03T13:20:22.082Z",
   "stories": [
     {
       "story_id": "wt-d3313802dc7cf6a5",
@@ -393,6 +393,423 @@
       "updated_at": "2026-09-02T23:03:14.700Z"
     },
     {
+      "story_id": "wt-98ff7e403362fdf9",
+      "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
+      "title": "Stärkerer Schutz kritischer Infrastrukturen",
+      "first_seen": "2026-09-02T06:00:00.000Z",
+      "last_updated": "2026-09-03T13:20:22.082Z",
+      "published_at": "2026-09-03T07:44:09.616Z",
+      "updated_at": "2026-09-03T13:20:22.082Z",
+      "topic": [
+        "Energie",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682",
+          "title": "Stärkerer Schutz kritischer Infrastrukturen",
+          "summary": "Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen, wie beispielsweise Energie, Transport und Verkehr, Gesundheit und Trinkwasser, festgelegt. Das Wichtigste im Überblick.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T06:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "27fba9f550908664f90807aebf4e645d4527a3c8799bd7e0070573b5f9916c20"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-98ff7e403362fdf9-claim-01",
+          "story_id": "wt-98ff7e403362fdf9",
+          "claim": "Stärkerer Schutz kritischer Infrastrukturen: Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen, wie beispielsweise Energie, Transport und Verkehr, Gesundheit und Trinkwasser, festgelegt. Das Wichtigste im Überblick.",
+          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
+          "source_id": "bundesregierung-kompakt",
+          "source_function": "official_fact_source",
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-03T13:20:22.082Z"
+        }
+      ],
+      "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "3.2",
+      "current_version": 3,
+      "analysis": {
+        "story_id": "wt-98ff7e403362fdf9",
+        "summary": "Die Bundesregierung meldet sektorübergreifende Mindeststandards für kritische Infrastrukturen. Das ist publizierbar, weil Regeln für systemrelevante Versorgung betroffen sind.",
+        "detail_summary": "Gesichert ist nur der Primärquellen-Claim: Mit dem KRITIS-Dachgesetz sollen bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt werden. Genannt sind Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Die Relevanz liegt in der möglichen Veränderung von Schutzpflichten und Resilienzanforderungen für zentrale Versorgungssysteme. Der Wirkpfad verläuft über Standards, Prävention, Betreiberpflichten und koordinierbaren Vollzug. Eine mögliche Folge ist eine geringere Verwundbarkeit gegenüber Ausfällen, zugleich können Aufwand, Kosten und Umsetzungsunterschiede entstehen. Eingetretene Wirkung ist nicht belegt; Details zu Fristen, Kontrolle, Finanzierung und konkretem Vollzug bleiben offen.",
+        "why_relevant": "Kritische Versorgungssysteme können bei Ausfall breite Kaskaden für Alltag, Gesundheit und Sicherheit auslösen.",
+        "status": "beschlossen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Gesundheit, Wasser, Verkehr und Energie betreffen grundlegende Versorgung und Schutz vor Ausfällen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Umweltbezug ist indirekt, etwa über sichere Energie- und Wasserinfrastruktur."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Einheitliche Mindeststandards können staatliche Schutzfähigkeit und öffentliche Kontrolle stärken."
+        },
+        "importance": "hoch",
+        "impact_potential": "Hohes Schutz- und Resilienzpotenzial, wenn Standards konkret, geprüft, finanziert und vollzogen werden.",
+        "impact_risks": [
+          "Umsetzung kann teuer, ungleich oder bürokratisch werden, wenn Pflichten und Kontrolle unklar bleiben."
+        ],
+        "mechanisms": [
+          "Bundeseinheitliche Mindeststandards verändern Schutzpflichten für Betreiber kritischer Infrastruktur."
+        ],
+        "first_order": [
+          "Betreiber in genannten Sektoren müssen sich voraussichtlich an einheitlichen Schutzstandards ausrichten."
+        ],
+        "second_order": [
+          "Bessere Vorsorge kann Ausfälle und Kaskaden in Versorgungssystemen begrenzen."
+        ],
+        "third_order": [
+          "Langfristig kann höhere Infrastrukturresilienz Vertrauen in öffentliche Daseinsvorsorge stärken."
+        ],
+        "systemic_relevance": "Außergewöhnlich hoch, weil Energie, Verkehr, Gesundheit und Trinkwasser systemische Grundfunktionen tragen.",
+        "transformation_potential": "Eher strukturierend als transformativ: neue Mindeststandards können Schutzarchitektur vereinheitlichen.",
+        "resilience": "Resilienzpfad ist plausibel, aber abhängig von Standards, Investitionen, Prüfung und Durchsetzung.",
+        "side_effects": [
+          "Kosten können an Betreiber, öffentliche Hand oder Nutzer weitergegeben werden."
+        ],
+        "uncertainties": [
+          "Konkrete Standards, Fristen, Kontrolle, Finanzierung und Vollzug fehlen im Datensatz."
+        ],
+        "evidence_level": "Primärquelle mit Caveat; der Claim belegt die Regelungsabsicht, nicht die spätere Wirkung.",
+        "attribution": "Zurechenbar ist die Ankündigung beziehungsweise Festlegung im Gesetzeskontext, nicht ein Versorgungseffekt.",
+        "watch_next": [
+          "Gesetzestext, Betreiberkreis, Fristen, Aufsicht, Finanzierung und Nachweispflichten prüfen."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG mit Bezug zu Resilienz, Gesundheit, Wasser, Energie und Infrastruktur."
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_with_caveats",
+          "duplicate_status": "new_story",
+          "rationale": "Alle Gates tragen: Primärquelle, keine andere Ticker-Akte, und systemrelevante Mindeststandards für Grundversorgung."
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T07:44:09.616Z",
+          "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
+          "analysis": {
+            "story_id": "wt-98ff7e403362fdf9",
+            "summary": "Das KRITIS-Dachgesetz soll bundeseinheitliche Mindeststandards für kritische Infrastrukturen festlegen. Eine Ex-ante-Einordnung ist möglich; Wirkungsevidenz liegt nicht vor.",
+            "why_relevant": "Energie, Verkehr, Gesundheit und Trinkwasser sind Grundfunktionen mit hoher Kaskaden- und Resilienzrelevanz.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "sehr hoch",
+              "rationale": "Versorgungssicherheit betrifft Gesundheit, Mobilität, Wasser und Alltag vieler Menschen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Energie- und Wassersysteme haben Umweltbezug; konkrete ökologische Effekte sind offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "KRITIS-Schutz berührt staatliche Schutzpflichten, Transparenz, Zuständigkeiten und Kontrolle."
+            },
+            "importance": "hoch",
+            "impact_potential": "Potenzial liegt in geringerer Ausfallanfälligkeit und besserer Krisenvorsorge; tatsächliche Wirkung ist offen.",
+            "impact_risks": [
+              "Kosten, Bürokratie, unklare Zuständigkeiten oder Sicherheitslücken durch Mindeststandard-Denken."
+            ],
+            "mechanisms": [
+              "Sektorübergreifende Mindeststandards für Betreiber kritischer Infrastrukturen."
+            ],
+            "first_order": [
+              "Regelungsrahmen und Pflichten als Output, noch keine belegte Zustandsänderung."
+            ],
+            "second_order": [
+              "Mögliche bessere Prävention, Reaktion und Wiederherstellung bei Störungen."
+            ],
+            "third_order": [
+              "Mögliche Senkung von Kaskadenrisiken in Energie, Verkehr, Gesundheit und Wasser."
+            ],
+            "systemic_relevance": "Hoch, weil KRITIS-Ausfälle mehrere Lebens- und Wirtschaftsbereiche gleichzeitig treffen können.",
+            "transformation_potential": "Mittel bis hoch, falls Standards Investitionen und Governance dauerhaft verändern.",
+            "resilience": "Direkter Resilienzbezug durch Schutz, Vorsorge und sektorübergreifende Mindestanforderungen.",
+            "side_effects": [
+              "Mögliche Mehrkosten für Betreiber und Umsetzungsunterschiede zwischen Sektoren."
+            ],
+            "uncertainties": [
+              "Konkrete Standards, Fristen, Kontrolle, Finanzierung und Vollzug sind aus dem Claim nicht ersichtlich."
+            ],
+            "evidence_level": "Ein Primärquellen-Claim der Bundesregierung; vollständiger Kontext laut Metadaten zu prüfen.",
+            "attribution": "Ex ante keine Wirkung zurechenbar; nur Wirkungspotenzial entlang Schutz- und Ausfallpfaden ableitbar.",
+            "watch_next": [
+              "Gesetzestext, betroffene Betreiber, Aufsicht, Sanktionen, Umsetzungsfristen und Störungsdaten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG und DNS allgemein: Gesundheit, Wasser, Energie, Infrastruktur, Institutionen."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Einkommensteuerreform beschlossen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192"
+            },
+            {
+              "title": "Stärkerer Schutz kritischer Infrastrukturen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-03T12:48:02.808Z",
+          "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
+          "analysis": {
+            "story_id": "wt-98ff7e403362fdf9",
+            "summary": "Die KRITIS-Story trägt als veröffentlichungswürdige Neuigkeit. Sie betrifft Mindeststandards für zentrale Infrastrukturen.",
+            "detail_summary": "Gesichert ist aus der Primärquelle: Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt. Genannt werden unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Materiell ist das, weil Ausfälle in diesen Bereichen viele Menschen treffen und Kaskaden in Versorgung, Mobilität und Gesundheit auslösen können. Der Wirkpfad liegt in verbindlicheren Schutzanforderungen für Betreiber und damit in möglicher Prävention, Vorsorge und Krisenfestigkeit. Eine mögliche Folge ist höhere Resilienz gegen Störungen, sofern Vollzug, Finanzierung und Kontrolle tragen. Offen bleiben konkrete Standards, Fristen, Zuständigkeiten, Sanktionen und die tatsächliche Umsetzungspraxis.",
+            "why_relevant": "KRITIS-Regeln betreffen Versorgungssysteme, deren Ausfall breite und kaskadierende Folgen hätte.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Gesundheit, Wasser, Verkehr und Energie sichern grundlegende Alltags- und Schutzfunktionen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Energie- und Wassersysteme können auch ökologische Folgeschäden bei Störungen berühren."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Einheitliche Standards stärken staatliche Schutzfähigkeit, brauchen aber kontrollierbaren Vollzug."
+            },
+            "importance": "hoch",
+            "impact_potential": "Potenziell höhere Widerstandsfähigkeit kritischer Versorgungssysteme durch Mindeststandards.",
+            "impact_risks": [
+              "Unklare Umsetzung kann Schutzlücken, Kostenkonflikte oder Scheinsicherheit erzeugen."
+            ],
+            "mechanisms": [
+              "Mindeststandards verändern Pflichten, Investitionen und Schutzprozesse von Betreibern."
+            ],
+            "first_order": [
+              "Einheitlichere Anforderungen an KRITIS-Schutz."
+            ],
+            "second_order": [
+              "Mehr Prävention und Vorsorge in betroffenen Sektoren möglich."
+            ],
+            "third_order": [
+              "Geringere Kaskadenanfälligkeit bei Störungen ist möglich, aber nicht belegt."
+            ],
+            "systemic_relevance": "Sehr hoch, weil mehrere Grundversorgungssysteme und mögliche Kaskaden adressiert werden.",
+            "transformation_potential": "Mittel bis hoch; abhängig von Verbindlichkeit, Kontrolle und Investitionsfähigkeit.",
+            "resilience": "Die Maßnahme zielt auf Resilienz, deren tatsächliche Verbesserung erst messbar wäre.",
+            "side_effects": [
+              "Mehr Pflichten können Kosten und Umsetzungsdruck bei Betreibern erhöhen."
+            ],
+            "uncertainties": [
+              "Konkrete Standards, Fristen, Kontrolle, Finanzierung und Vollzug fehlen im Datensatz."
+            ],
+            "evidence_level": "Primärquelle belegt Regelungsanspruch; praktische Wirksamkeit bleibt offen.",
+            "attribution": "Die Festlegung der Mindeststandards ist politisch zurechenbar; spätere Resilienzgewinne nicht.",
+            "watch_next": [
+              "Ausführungsregeln, sektorale Pflichten, Aufsicht und Umsetzungskosten beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG: Gesundheit, Wasser, Infrastruktur und resiliente Institutionen."
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "cascades",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Im historischen Modus ist die Primärmeldung zu Mindeststandards selbst materiell und nicht bloß Kontext."
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526"
+            },
+            {
+              "title": "Stärkerer Schutz kritischer Infrastrukturen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-03T13:20:22.082Z",
+          "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
+          "analysis": {
+            "story_id": "wt-98ff7e403362fdf9",
+            "summary": "Die Bundesregierung meldet sektorübergreifende Mindeststandards für kritische Infrastrukturen. Das ist publizierbar, weil Regeln für systemrelevante Versorgung betroffen sind.",
+            "detail_summary": "Gesichert ist nur der Primärquellen-Claim: Mit dem KRITIS-Dachgesetz sollen bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt werden. Genannt sind Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Die Relevanz liegt in der möglichen Veränderung von Schutzpflichten und Resilienzanforderungen für zentrale Versorgungssysteme. Der Wirkpfad verläuft über Standards, Prävention, Betreiberpflichten und koordinierbaren Vollzug. Eine mögliche Folge ist eine geringere Verwundbarkeit gegenüber Ausfällen, zugleich können Aufwand, Kosten und Umsetzungsunterschiede entstehen. Eingetretene Wirkung ist nicht belegt; Details zu Fristen, Kontrolle, Finanzierung und konkretem Vollzug bleiben offen.",
+            "why_relevant": "Kritische Versorgungssysteme können bei Ausfall breite Kaskaden für Alltag, Gesundheit und Sicherheit auslösen.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Gesundheit, Wasser, Verkehr und Energie betreffen grundlegende Versorgung und Schutz vor Ausfällen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Umweltbezug ist indirekt, etwa über sichere Energie- und Wasserinfrastruktur."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Einheitliche Mindeststandards können staatliche Schutzfähigkeit und öffentliche Kontrolle stärken."
+            },
+            "importance": "hoch",
+            "impact_potential": "Hohes Schutz- und Resilienzpotenzial, wenn Standards konkret, geprüft, finanziert und vollzogen werden.",
+            "impact_risks": [
+              "Umsetzung kann teuer, ungleich oder bürokratisch werden, wenn Pflichten und Kontrolle unklar bleiben."
+            ],
+            "mechanisms": [
+              "Bundeseinheitliche Mindeststandards verändern Schutzpflichten für Betreiber kritischer Infrastruktur."
+            ],
+            "first_order": [
+              "Betreiber in genannten Sektoren müssen sich voraussichtlich an einheitlichen Schutzstandards ausrichten."
+            ],
+            "second_order": [
+              "Bessere Vorsorge kann Ausfälle und Kaskaden in Versorgungssystemen begrenzen."
+            ],
+            "third_order": [
+              "Langfristig kann höhere Infrastrukturresilienz Vertrauen in öffentliche Daseinsvorsorge stärken."
+            ],
+            "systemic_relevance": "Außergewöhnlich hoch, weil Energie, Verkehr, Gesundheit und Trinkwasser systemische Grundfunktionen tragen.",
+            "transformation_potential": "Eher strukturierend als transformativ: neue Mindeststandards können Schutzarchitektur vereinheitlichen.",
+            "resilience": "Resilienzpfad ist plausibel, aber abhängig von Standards, Investitionen, Prüfung und Durchsetzung.",
+            "side_effects": [
+              "Kosten können an Betreiber, öffentliche Hand oder Nutzer weitergegeben werden."
+            ],
+            "uncertainties": [
+              "Konkrete Standards, Fristen, Kontrolle, Finanzierung und Vollzug fehlen im Datensatz."
+            ],
+            "evidence_level": "Primärquelle mit Caveat; der Claim belegt die Regelungsabsicht, nicht die spätere Wirkung.",
+            "attribution": "Zurechenbar ist die Ankündigung beziehungsweise Festlegung im Gesetzeskontext, nicht ein Versorgungseffekt.",
+            "watch_next": [
+              "Gesetzestext, Betreiberkreis, Fristen, Aufsicht, Finanzierung und Nachweispflichten prüfen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG mit Bezug zu Resilienz, Gesundheit, Wasser, Energie und Infrastruktur."
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_with_caveats",
+              "duplicate_status": "new_story",
+              "rationale": "Alle Gates tragen: Primärquelle, keine andere Ticker-Akte, und systemrelevante Mindeststandards für Grundversorgung."
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Stärkerer Schutz kritischer Infrastrukturen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T07:44:09.616Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-03T12:48:02.808Z",
+          "source_count": 1
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-03T13:20:22.082Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
+    {
       "story_id": "wt-9cca0ad92ad1a84a",
       "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
       "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
@@ -438,9 +855,9 @@
       ],
       "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "3.1",
+      "listed": false,
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
+      "relevance_filter_version": "3.2",
       "current_version": 2,
       "analysis": {
         "story_id": "wt-9cca0ad92ad1a84a",
@@ -708,324 +1125,20 @@
           "source_count": 1
         }
       ],
-      "retirement_history": []
-    },
-    {
-      "story_id": "wt-98ff7e403362fdf9",
-      "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
-      "title": "Stärkerer Schutz kritischer Infrastrukturen",
-      "first_seen": "2026-09-02T06:00:00.000Z",
-      "last_updated": "2026-09-03T12:48:02.808Z",
-      "published_at": "2026-09-03T07:44:09.616Z",
-      "updated_at": "2026-09-03T12:48:02.808Z",
-      "topic": [
-        "Energie",
-        "Gesundheit"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-kompakt",
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682",
-          "title": "Stärkerer Schutz kritischer Infrastrukturen",
-          "summary": "Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen, wie beispielsweise Energie, Transport und Verkehr, Gesundheit und Trinkwasser, festgelegt. Das Wichtigste im Überblick.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T06:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 92,
-          "source_topic": "Politik",
-          "content_hash": "27fba9f550908664f90807aebf4e645d4527a3c8799bd7e0070573b5f9916c20"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-98ff7e403362fdf9-claim-01",
-          "story_id": "wt-98ff7e403362fdf9",
-          "claim": "Stärkerer Schutz kritischer Infrastrukturen: Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen, wie beispielsweise Energie, Transport und Verkehr, Gesundheit und Trinkwasser, festgelegt. Das Wichtigste im Überblick.",
-          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
-          "source_id": "bundesregierung-kompakt",
-          "source_function": "official_fact_source",
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
-        }
-      ],
-      "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "3.1",
-      "current_version": 2,
-      "analysis": {
-        "story_id": "wt-98ff7e403362fdf9",
-        "summary": "Die KRITIS-Story trägt als veröffentlichungswürdige Neuigkeit. Sie betrifft Mindeststandards für zentrale Infrastrukturen.",
-        "detail_summary": "Gesichert ist aus der Primärquelle: Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt. Genannt werden unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Materiell ist das, weil Ausfälle in diesen Bereichen viele Menschen treffen und Kaskaden in Versorgung, Mobilität und Gesundheit auslösen können. Der Wirkpfad liegt in verbindlicheren Schutzanforderungen für Betreiber und damit in möglicher Prävention, Vorsorge und Krisenfestigkeit. Eine mögliche Folge ist höhere Resilienz gegen Störungen, sofern Vollzug, Finanzierung und Kontrolle tragen. Offen bleiben konkrete Standards, Fristen, Zuständigkeiten, Sanktionen und die tatsächliche Umsetzungspraxis.",
-        "why_relevant": "KRITIS-Regeln betreffen Versorgungssysteme, deren Ausfall breite und kaskadierende Folgen hätte.",
-        "status": "beschlossen",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Gesundheit, Wasser, Verkehr und Energie sichern grundlegende Alltags- und Schutzfunktionen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Energie- und Wassersysteme können auch ökologische Folgeschäden bei Störungen berühren."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Einheitliche Standards stärken staatliche Schutzfähigkeit, brauchen aber kontrollierbaren Vollzug."
-        },
-        "importance": "hoch",
-        "impact_potential": "Potenziell höhere Widerstandsfähigkeit kritischer Versorgungssysteme durch Mindeststandards.",
-        "impact_risks": [
-          "Unklare Umsetzung kann Schutzlücken, Kostenkonflikte oder Scheinsicherheit erzeugen."
+      "retirement_history": [],
+      "retired_at": "2026-09-03T13:20:22.082Z",
+      "retirement": {
+        "at": "2026-09-03T13:20:22.082Z",
+        "filter_version": "3.2",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_NEWS_VALUE_CONTEXT_ONLY",
+          "AI_MATERIALITY_GATE_FAILED",
+          "AI_DUPLICATE_WITHOUT_UPDATE",
+          "AI_PUBLICATION_NOT_RECOMMENDED"
         ],
-        "mechanisms": [
-          "Mindeststandards verändern Pflichten, Investitionen und Schutzprozesse von Betreibern."
-        ],
-        "first_order": [
-          "Einheitlichere Anforderungen an KRITIS-Schutz."
-        ],
-        "second_order": [
-          "Mehr Prävention und Vorsorge in betroffenen Sektoren möglich."
-        ],
-        "third_order": [
-          "Geringere Kaskadenanfälligkeit bei Störungen ist möglich, aber nicht belegt."
-        ],
-        "systemic_relevance": "Sehr hoch, weil mehrere Grundversorgungssysteme und mögliche Kaskaden adressiert werden.",
-        "transformation_potential": "Mittel bis hoch; abhängig von Verbindlichkeit, Kontrolle und Investitionsfähigkeit.",
-        "resilience": "Die Maßnahme zielt auf Resilienz, deren tatsächliche Verbesserung erst messbar wäre.",
-        "side_effects": [
-          "Mehr Pflichten können Kosten und Umsetzungsdruck bei Betreibern erhöhen."
-        ],
-        "uncertainties": [
-          "Konkrete Standards, Fristen, Kontrolle, Finanzierung und Vollzug fehlen im Datensatz."
-        ],
-        "evidence_level": "Primärquelle belegt Regelungsanspruch; praktische Wirksamkeit bleibt offen.",
-        "attribution": "Die Festlegung der Mindeststandards ist politisch zurechenbar; spätere Resilienzgewinne nicht.",
-        "watch_next": [
-          "Ausführungsregeln, sektorale Pflichten, Aufsicht und Umsetzungskosten beobachten."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG: Gesundheit, Wasser, Infrastruktur und resiliente Institutionen."
-        ],
-        "publication_gate": {
-          "news_value": "binding_decision",
-          "materiality_factors": [
-            "systemic_relevance"
-          ],
-          "exceptional_factor": "cascades",
-          "evidence_basis": "primary_source_direct",
-          "duplicate_status": "new_story",
-          "rationale": "Im historischen Modus ist die Primärmeldung zu Mindeststandards selbst materiell und nicht bloß Kontext."
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-03T07:44:09.616Z",
-          "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
-          "analysis": {
-            "story_id": "wt-98ff7e403362fdf9",
-            "summary": "Das KRITIS-Dachgesetz soll bundeseinheitliche Mindeststandards für kritische Infrastrukturen festlegen. Eine Ex-ante-Einordnung ist möglich; Wirkungsevidenz liegt nicht vor.",
-            "why_relevant": "Energie, Verkehr, Gesundheit und Trinkwasser sind Grundfunktionen mit hoher Kaskaden- und Resilienzrelevanz.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "sehr hoch",
-              "rationale": "Versorgungssicherheit betrifft Gesundheit, Mobilität, Wasser und Alltag vieler Menschen."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Energie- und Wassersysteme haben Umweltbezug; konkrete ökologische Effekte sind offen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "KRITIS-Schutz berührt staatliche Schutzpflichten, Transparenz, Zuständigkeiten und Kontrolle."
-            },
-            "importance": "hoch",
-            "impact_potential": "Potenzial liegt in geringerer Ausfallanfälligkeit und besserer Krisenvorsorge; tatsächliche Wirkung ist offen.",
-            "impact_risks": [
-              "Kosten, Bürokratie, unklare Zuständigkeiten oder Sicherheitslücken durch Mindeststandard-Denken."
-            ],
-            "mechanisms": [
-              "Sektorübergreifende Mindeststandards für Betreiber kritischer Infrastrukturen."
-            ],
-            "first_order": [
-              "Regelungsrahmen und Pflichten als Output, noch keine belegte Zustandsänderung."
-            ],
-            "second_order": [
-              "Mögliche bessere Prävention, Reaktion und Wiederherstellung bei Störungen."
-            ],
-            "third_order": [
-              "Mögliche Senkung von Kaskadenrisiken in Energie, Verkehr, Gesundheit und Wasser."
-            ],
-            "systemic_relevance": "Hoch, weil KRITIS-Ausfälle mehrere Lebens- und Wirtschaftsbereiche gleichzeitig treffen können.",
-            "transformation_potential": "Mittel bis hoch, falls Standards Investitionen und Governance dauerhaft verändern.",
-            "resilience": "Direkter Resilienzbezug durch Schutz, Vorsorge und sektorübergreifende Mindestanforderungen.",
-            "side_effects": [
-              "Mögliche Mehrkosten für Betreiber und Umsetzungsunterschiede zwischen Sektoren."
-            ],
-            "uncertainties": [
-              "Konkrete Standards, Fristen, Kontrolle, Finanzierung und Vollzug sind aus dem Claim nicht ersichtlich."
-            ],
-            "evidence_level": "Ein Primärquellen-Claim der Bundesregierung; vollständiger Kontext laut Metadaten zu prüfen.",
-            "attribution": "Ex ante keine Wirkung zurechenbar; nur Wirkungspotenzial entlang Schutz- und Ausfallpfaden ableitbar.",
-            "watch_next": [
-              "Gesetzestext, betroffene Betreiber, Aufsicht, Sanktionen, Umsetzungsfristen und Störungsdaten."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG und DNS allgemein: Gesundheit, Wasser, Energie, Infrastruktur, Institutionen."
-            ],
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.5",
-          "mode": "woek-ai-oracle-llm",
-          "method_sources": [
-            {
-              "title": "Berichtsdaten",
-              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
-            },
-            {
-              "title": "Open Science",
-              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
-            },
-            {
-              "title": "Wirkungsdatenräume",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
-            },
-            {
-              "title": "Einkommensteuerreform beschlossen",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192"
-            },
-            {
-              "title": "Stärkerer Schutz kritischer Infrastrukturen",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682"
-            },
-            {
-              "title": "Messgrenzen und Unsicherheit",
-              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-03T12:48:02.808Z",
-          "content_hash": "250be01201a28777b80e0a60818963e777e6a6ce0306fe42f0a886a5682b3141",
-          "analysis": {
-            "story_id": "wt-98ff7e403362fdf9",
-            "summary": "Die KRITIS-Story trägt als veröffentlichungswürdige Neuigkeit. Sie betrifft Mindeststandards für zentrale Infrastrukturen.",
-            "detail_summary": "Gesichert ist aus der Primärquelle: Mit dem KRITIS-Dachgesetz werden bundeseinheitliche und sektorübergreifende Mindeststandards für kritische Infrastrukturen festgelegt. Genannt werden unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Materiell ist das, weil Ausfälle in diesen Bereichen viele Menschen treffen und Kaskaden in Versorgung, Mobilität und Gesundheit auslösen können. Der Wirkpfad liegt in verbindlicheren Schutzanforderungen für Betreiber und damit in möglicher Prävention, Vorsorge und Krisenfestigkeit. Eine mögliche Folge ist höhere Resilienz gegen Störungen, sofern Vollzug, Finanzierung und Kontrolle tragen. Offen bleiben konkrete Standards, Fristen, Zuständigkeiten, Sanktionen und die tatsächliche Umsetzungspraxis.",
-            "why_relevant": "KRITIS-Regeln betreffen Versorgungssysteme, deren Ausfall breite und kaskadierende Folgen hätte.",
-            "status": "beschlossen",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Gesundheit, Wasser, Verkehr und Energie sichern grundlegende Alltags- und Schutzfunktionen."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Energie- und Wassersysteme können auch ökologische Folgeschäden bei Störungen berühren."
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "rationale": "Einheitliche Standards stärken staatliche Schutzfähigkeit, brauchen aber kontrollierbaren Vollzug."
-            },
-            "importance": "hoch",
-            "impact_potential": "Potenziell höhere Widerstandsfähigkeit kritischer Versorgungssysteme durch Mindeststandards.",
-            "impact_risks": [
-              "Unklare Umsetzung kann Schutzlücken, Kostenkonflikte oder Scheinsicherheit erzeugen."
-            ],
-            "mechanisms": [
-              "Mindeststandards verändern Pflichten, Investitionen und Schutzprozesse von Betreibern."
-            ],
-            "first_order": [
-              "Einheitlichere Anforderungen an KRITIS-Schutz."
-            ],
-            "second_order": [
-              "Mehr Prävention und Vorsorge in betroffenen Sektoren möglich."
-            ],
-            "third_order": [
-              "Geringere Kaskadenanfälligkeit bei Störungen ist möglich, aber nicht belegt."
-            ],
-            "systemic_relevance": "Sehr hoch, weil mehrere Grundversorgungssysteme und mögliche Kaskaden adressiert werden.",
-            "transformation_potential": "Mittel bis hoch; abhängig von Verbindlichkeit, Kontrolle und Investitionsfähigkeit.",
-            "resilience": "Die Maßnahme zielt auf Resilienz, deren tatsächliche Verbesserung erst messbar wäre.",
-            "side_effects": [
-              "Mehr Pflichten können Kosten und Umsetzungsdruck bei Betreibern erhöhen."
-            ],
-            "uncertainties": [
-              "Konkrete Standards, Fristen, Kontrolle, Finanzierung und Vollzug fehlen im Datensatz."
-            ],
-            "evidence_level": "Primärquelle belegt Regelungsanspruch; praktische Wirksamkeit bleibt offen.",
-            "attribution": "Die Festlegung der Mindeststandards ist politisch zurechenbar; spätere Resilienzgewinne nicht.",
-            "watch_next": [
-              "Ausführungsregeln, sektorale Pflichten, Aufsicht und Umsetzungskosten beobachten."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG: Gesundheit, Wasser, Infrastruktur und resiliente Institutionen."
-            ],
-            "publication_gate": {
-              "news_value": "binding_decision",
-              "materiality_factors": [
-                "systemic_relevance"
-              ],
-              "exceptional_factor": "cascades",
-              "evidence_basis": "primary_source_direct",
-              "duplicate_status": "new_story",
-              "rationale": "Im historischen Modus ist die Primärmeldung zu Mindeststandards selbst materiell und nicht bloß Kontext."
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.5",
-          "mode": "woek-ai-oracle-llm",
-          "method_sources": [
-            {
-              "title": "Berichtsdaten",
-              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
-            },
-            {
-              "title": "Open Science",
-              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
-            },
-            {
-              "title": "Wirkungsdatenräume",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
-            },
-            {
-              "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526"
-            },
-            {
-              "title": "Stärkerer Schutz kritischer Infrastrukturen",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682"
-            },
-            {
-              "title": "Messgrenzen und Unsicherheit",
-              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-03T07:44:09.616Z",
-          "source_count": 1
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-03T12:48:02.808Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": []
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
+      }
     },
     {
       "story_id": "wt-4b5d0962d323432a",
@@ -1251,7 +1364,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -1281,10 +1394,8 @@
             "content_hash": "276d56663726c4caada248a8ebc1b45e733f4df998078b7ead24e6621c9c883d"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true
       }
@@ -1710,7 +1821,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -1727,10 +1838,8 @@
             "content_hash": "b749d23ec26ae36ae17b120dc4810865fe32446386340f135d1922df291471e3"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true
       }
@@ -1947,7 +2056,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -1964,10 +2073,8 @@
             "content_hash": "b1d7e1089cfee614d1a31b1d8a64192fa7326a8dc0f19be8117c2c5288782c71"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true
       }
@@ -2184,7 +2291,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
         "sources": [
           {
@@ -2201,11 +2308,12 @@
             "content_hash": "e58b3445d693295313a0014e2d817f0135dfad4dcff1364c178fda7b6a45157a"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
+          "AI_PUBLICATION_GATE_FACTORS_INVALID",
+          "AI_MATERIALITY_GATE_FAILED"
         ],
-        "quality_retry_count": 0,
+        "quality_retry_count": 1,
         "reassessment": true
       }
     },
@@ -2425,7 +2533,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -2442,11 +2550,13 @@
             "content_hash": "0c8b1c9c137ae5909954ab4b0d8fbbf85bb099215599778ff9f730776744de7f"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
+          "AI_PUBLICATION_GATE_FACTORS_INVALID",
+          "AI_MATERIALITY_GATE_FAILED",
+          "AI_SUMMARY_SENTENCE_COUNT"
         ],
-        "quality_retry_count": 0,
+        "quality_retry_count": 1,
         "reassessment": true
       }
     },
@@ -2652,7 +2762,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -2669,10 +2779,8 @@
             "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true
       }
@@ -2715,7 +2823,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
@@ -2726,7 +2834,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
@@ -2766,7 +2874,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
@@ -2777,7 +2885,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
@@ -2981,7 +3089,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -2998,10 +3106,8 @@
             "content_hash": "16116dd2d59b78485f629f5bebf25268804ee270663de7b96bd1272d4b02246a"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true
       }
@@ -3209,7 +3315,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -3428,7 +3534,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -3654,7 +3760,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -3875,7 +3981,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -4101,7 +4207,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -4322,7 +4428,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -4543,7 +4649,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-03T12:59:00.680Z",
+        "detected_at": "2026-09-03T13:20:22.082Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -4560,10 +4666,8 @@
             "content_hash": "08b186c00776867d5ed5bf550ee7dcd72d35b516ee25de0393bad4822af1bad5"
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true
       }
@@ -4767,7 +4871,30 @@
           "published_at": "2026-09-02T23:02:35.568Z",
           "source_count": 1
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-03T13:20:22.082Z",
+        "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
+        "sources": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "publisher": "Bundesregierung kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/niedrigere-netzentgelte-2382396",
+            "title": "Bundeszuschuss für niedrigere Stromkosten",
+            "summary": "Die Bundesregierung will Haushalte und Unternehmen auch in den Jahren 2027 bis 2029 bei den Energiekosten spürbar entlasten: Ein jährlicher Bundeszuschuss von gut 5,5 Milliarden Euro soll die Strom-Netzentgelte weiterhin dämpfen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-03T13:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 92,
+            "source_topic": "Politik",
+            "content_hash": "f1634fbfea9a9cd88eb0dca102dd42572422ea44796f59d236d94c873cd3a55d"
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": true
+      }
     },
     {
       "story_id": "wt-2be0a202001d6401",
@@ -4936,7 +5063,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
@@ -4947,7 +5074,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-146cce2a1bef268e",
@@ -4988,7 +5115,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
@@ -4999,7 +5126,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-2c4b8dc5bdfc3cb3",
@@ -5039,7 +5166,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
@@ -5050,7 +5177,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-9d87c7944980e87e",
@@ -5089,7 +5216,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
@@ -5100,7 +5227,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-e28250d4074683af",
@@ -5140,7 +5267,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -5151,7 +5278,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-46e5c503d6322ccb",
@@ -5191,7 +5318,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -5202,7 +5329,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-61fc84ab4a746bcd",
@@ -5242,7 +5369,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "7cb1a8efbfa9caf92894d1caf19008906e156fbdf4ea9ab5f51d5fbac002332a",
@@ -5253,7 +5380,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-295572a4057fedd7",
@@ -5293,7 +5420,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:59:00.680Z"
+          "checked_at": "2026-09-03T13:20:22.082Z"
         }
       ],
       "content_hash": "cc91a6828f0cf8263ef414975a07edea24755d20482180723bfcc34fee891995",
@@ -5304,7 +5431,7 @@
       "reassessment": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-03T12:59:00.680Z"
+      "updated_at": "2026-09-03T13:20:22.082Z"
     },
     {
       "story_id": "wt-995822cc0b71a7f8",
