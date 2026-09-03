@@ -17,6 +17,7 @@ import {
   storySimilarity,
   validateAnalysis,
 } from "../../scripts/news/lib.mjs";
+import { shouldRetryQualityGate } from "../../scripts/news/run.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
@@ -188,4 +189,12 @@ test("Verspätete GitHub-Zeitpläne werden nicht mehr übersprungen", () => {
   });
   assert.equal(result.status, 0);
   assert.equal(JSON.parse(result.stdout).should_run, "true");
+});
+
+test("Technische Qualitätsfehler werden begrenzt erneut versucht, fachliche Ablehnungen nicht", () => {
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 0), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_UNSUPPORTED_NUMBER:17"], 2), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 3), false);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_PUBLICATION_NOT_RECOMMENDED"], 0), false);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_MATERIALITY_TOO_LOW"], 0), false);
 });

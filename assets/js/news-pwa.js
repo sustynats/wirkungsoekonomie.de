@@ -167,12 +167,12 @@
   function renderNotificationState(enabled, message = "") {
     if (notificationToggle) {
       notificationToggle.setAttribute("aria-pressed", String(enabled));
-      notificationToggle.textContent = enabled ? "Benachrichtigungen deaktivieren" : "Benachrichtigungen aktivieren";
+      notificationToggle.textContent = enabled ? "Push deaktivieren" : "Push aktivieren";
     }
     if (notificationStatus) {
       notificationStatus.textContent = message || (enabled
         ? "Aktiv. Unterstützte Smartphones prüfen im Hintergrund; sonst erfolgt die Prüfung beim Öffnen der App."
-        : "Benachrichtigungen sind aus.");
+        : "Push-Benachrichtigungen sind aus.");
     }
   }
 

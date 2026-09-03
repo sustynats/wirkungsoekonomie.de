@@ -37,7 +37,7 @@ for (const relative of ["news/index.html", "wirkungsticker/index.html", "wirkung
 }
 const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf8");
 if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
-if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert")) fail("NEWS_APP_UI_INVALID");
+if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert") || !index.includes("Push-Benachrichtigungen")) fail("NEWS_APP_UI_INVALID");
 for (const story of store.stories.filter((item) => item.published)) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
   const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
@@ -49,7 +49,7 @@ for (const story of store.stories.filter((item) => item.published)) {
 const manifest = readJson("wirkungsticker/manifest.webmanifest");
 if (manifest.id !== "/wirkungsticker/" || manifest.scope !== "/wirkungsticker/" || manifest.start_url !== "/wirkungsticker/?source=pwa" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");
 const serviceWorker = fs.readFileSync(path.join(ROOT, "wirkungsticker/sw.js"), "utf8");
-if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("/wirkungsticker/feed.json")) fail("NEWS_SERVICE_WORKER_INVALID");
+if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("NEWS_NOTIFICATIONS_DISABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("showNotification") || !serviceWorker.includes("notificationclick") || !serviceWorker.includes("/wirkungsticker/feed.json")) fail("NEWS_SERVICE_WORKER_INVALID");
 const rss = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.xml"), "utf8");
 const atom = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.atom"), "utf8");
 if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");

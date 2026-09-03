@@ -21,6 +21,22 @@ import { buildNewsSite } from "./build.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "2.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
+const MAX_QUALITY_RETRIES = 3;
+const RETRYABLE_QUALITY_ERRORS = [
+  /^AI_ANALYSIS_MISSING$/,
+  /^AI_REQUIRED_STRING:/,
+  /^AI_STATUS_INVALID$/,
+  /^AI_ANALYSIS_TYPE_INVALID$/,
+  /^AI_IMPORTANCE_INVALID$/,
+  /^AI_DIMENSION_INVALID:/,
+  /^AI_ARRAY_REQUIRED:/,
+  /^AI_UNCERTAINTY_REQUIRED$/,
+  /^AI_WATCH_NEXT_REQUIRED$/,
+  /^AI_SUMMARY_SENTENCE_COUNT$/,
+  /^AI_DETAIL_SUMMARY_(?:INVALID|LENGTH)$/,
+  /^AI_UNSUPPORTED_NUMBER:/,
+  /^AI_UNSUPPORTED_FRAMEWORK_NUMBER:/,
+];
 const files = {
   registry: path.join(ROOT, "content/news/source-registry.json"),
   state: path.join(ROOT, "data/news/state.json"),
@@ -103,6 +119,8 @@ function createCandidate(cluster, now) {
 
 function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const existing = candidate.existing_story;
+  const previousQualityRetries = Number(existing?.pending_update?.quality_retry_count ?? existing?.quality_retry_count ?? 0);
+  const qualityRetryCount = previousQualityRetries + (reason === "QUALITY_GATE_FAILED" ? 1 : 0);
   if (existing?.published) {
     return {
       ...existing,
@@ -112,6 +130,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
         sources: candidate.sources,
         reason,
         quality_errors: qualityErrors,
+        quality_retry_count: qualityRetryCount,
       },
     };
   }
@@ -128,10 +147,19 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     published: false,
     analysis_status: "automatische Veröffentlichung zurückgestellt",
     quality_errors: qualityErrors,
+    quality_retry_count: qualityRetryCount,
     pending_reason: reason,
     versions: existing?.versions || [],
     updated_at: now,
   };
+}
+
+export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0) {
+  return reason === "QUALITY_GATE_FAILED"
+    && Number(retryCount || 0) < MAX_QUALITY_RETRIES
+    && Array.isArray(qualityErrors)
+    && qualityErrors.length > 0
+    && qualityErrors.every((error) => RETRYABLE_QUALITY_ERRORS.some((pattern) => pattern.test(error)));
 }
 
 function publishedRecord(candidate, analysis, ai, now) {
@@ -312,8 +340,8 @@ export async function runWirkungsticker(options = {}) {
     .filter((story) => {
       const reason = story.pending_update?.reason || story.pending_reason;
       const qualityErrors = story.pending_update?.quality_errors || story.quality_errors || [];
-      return retryableReasons.has(reason)
-        || (reason === "QUALITY_GATE_FAILED" && qualityErrors.length > 0 && qualityErrors.every((error) => error.startsWith("AI_UNSUPPORTED_NUMBER:")));
+      const retryCount = story.pending_update?.quality_retry_count ?? story.quality_retry_count ?? 0;
+      return retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount);
     })
     .filter((story) => (story.pending_update?.sources || story.sources || []).some((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs))
     .map((story) => {
