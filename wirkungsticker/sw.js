@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260903-8";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260903-9";
 const NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1";
 const NEWS_STATE_URL = "/wirkungsticker/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-wirkungsticker-updates";
@@ -45,6 +45,16 @@ self.addEventListener("message", (event) => {
 
 self.addEventListener("periodicsync", (event) => {
   if (event.tag === NEWS_NOTIFICATION_TAG) event.waitUntil(checkForNewsUpdates());
+});
+
+self.addEventListener("push", (event) => {
+  let publication = {};
+  try {
+    publication = event.data?.json?.() || {};
+  } catch {
+    publication = {};
+  }
+  event.waitUntil(checkForNewsUpdates(publication));
 });
 
 self.addEventListener("notificationclick", (event) => {
@@ -123,12 +133,18 @@ async function disableNewsNotifications() {
   if ("clearAppBadge" in self.navigator) await self.navigator.clearAppBadge().catch(() => undefined);
 }
 
-async function checkForNewsUpdates() {
+async function checkForNewsUpdates(fallbackPublication = {}) {
   const state = await readNewsState();
   if (!state.enabled) return;
-  const response = await fetch(`/wirkungsticker/feed.json?check=${Date.now()}`, { cache: "no-store" });
-  if (!response.ok) return;
-  const feed = await response.json();
+  let feed;
+  try {
+    const response = await fetch(`/wirkungsticker/feed.json?check=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error("NEWS_FEED_UNAVAILABLE");
+    feed = await response.json();
+  } catch {
+    await showFallbackPush(state, fallbackPublication);
+    return;
+  }
   const previous = Date.parse(state.lastKnown || 0);
   const unreadCount = Math.max(0, Number(state.unreadCount) || 0);
   const updates = (feed.items || []).filter((item) => Date.parse(item.date_modified || item.date_published || 0) > previous);
@@ -139,13 +155,45 @@ async function checkForNewsUpdates() {
   }
   if (!updates.length) return;
   const totalUnread = unreadCount + updates.length;
-  await self.registration.showNotification("Neue Wirkungsnachrichten", {
-    body: `${totalUnread} ${totalUnread === 1 ? "ungelesene Wirkungsnachricht ist" : "ungelesene Wirkungsnachrichten sind"} verfügbar.`,
+  const targetUrl = updates.length === 1 && updates[0]?.url
+    ? new URL(updates[0].url).pathname
+    : "/wirkungsticker/?source=notification";
+  await showNewsNotification(totalUnread, targetUrl);
+  await writeNewsState({
+    enabled: true,
+    lastKnown: latest ? new Date(latest).toISOString() : state.lastKnown,
+    unreadCount: totalUnread,
+    lastPushPublicationId: fallbackPublication.publicationId || state.lastPushPublicationId || null,
+  });
+}
+
+async function showFallbackPush(state, publication) {
+  if (!publication?.publicationId || publication.publicationId === state.lastPushPublicationId) return;
+  const totalUnread = Math.max(0, Number(state.unreadCount) || 0) + 1;
+  const targetUrl = typeof publication.url === "string" && publication.url.startsWith("https://wirkungsoekonomie.de/wirkungsticker/")
+    ? new URL(publication.url).pathname
+    : "/wirkungsticker/?source=notification";
+  await showNewsNotification(totalUnread, targetUrl, publication.title);
+  const publishedAt = Date.parse(publication.publishedAt || 0);
+  const previous = Date.parse(state.lastKnown || 0);
+  await writeNewsState({
+    ...state,
+    lastKnown: Number.isFinite(publishedAt)
+      ? new Date(Math.max(publishedAt, Number.isFinite(previous) ? previous : 0)).toISOString()
+      : state.lastKnown,
+    unreadCount: totalUnread,
+    lastPushPublicationId: publication.publicationId,
+  });
+}
+
+async function showNewsNotification(totalUnread, targetUrl, title = "") {
+  await self.registration.showNotification("Neue Wirkungsnachricht", {
+    body: title || `${totalUnread} ${totalUnread === 1 ? "ungelesene Wirkungsnachricht ist" : "ungelesene Wirkungsnachrichten sind"} verfügbar.`,
     icon: "/assets/img/brand/app-icon-192.png",
     badge: "/assets/img/brand/app-icon-192.png",
     tag: NEWS_NOTIFICATION_TAG,
-    data: { url: "/wirkungsticker/?source=notification" },
+    renotify: true,
+    data: { url: targetUrl },
   });
   if ("setAppBadge" in self.navigator) await self.navigator.setAppBadge(totalUnread).catch(() => undefined);
-  await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : state.lastKnown, unreadCount: totalUnread });
 }

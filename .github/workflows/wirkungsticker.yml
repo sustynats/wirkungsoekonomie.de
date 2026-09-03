@@ -1,6 +1,10 @@
 name: Wirkungsticker
 
 on:
+  push:
+    # Oracle-Ausfallreserve: eigener repo-begrenzter Deploy-Key, kein PAT.
+    branches:
+      - codex/wirkungsticker-clock
   schedule:
     # Vier kurze Chancen je Stunde begrenzen den Verzug bei ausgelassenen GitHub-
     # Cron-Ereignissen. Die persistente rollende Grenze schützt den Worker davor,

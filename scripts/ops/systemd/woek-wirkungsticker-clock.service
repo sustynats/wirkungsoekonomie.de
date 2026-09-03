@@ -1,0 +1,17 @@
+[Unit]
+Description=Oracle reserve clock for the headless Wirkungsticker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/local/bin/woek-wirkungsticker-clock
+TimeoutStartSec=180
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/lib/woek-wirkungsticker-clock
+UMask=0077
