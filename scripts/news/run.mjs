@@ -352,6 +352,23 @@ export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
     }, 0);
 }
 
+export function partitionAiQueue(eligible, stage, maxStories) {
+  const selected = stage.stage >= 3 ? [] : eligible
+    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold)
+    .slice(0, Math.max(0, maxStories));
+  const selectedIds = new Set(selected.map((candidate) => candidate.story_id));
+  return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
+}
+
+export function retainUsageHistory(runs, now) {
+  const month = String(now).slice(0, 7);
+  // Frequent headless runs must not erase this month's spend after 400 runs.
+  return [
+    ...runs.filter((run) => !String(run.started_at).startsWith(month)).slice(-400),
+    ...runs.filter((run) => String(run.started_at).startsWith(month)),
+  ];
+}
+
 function sanitizeError(error) {
   const message = error instanceof Error ? error.message : String(error);
   return message.replace(/[A-Za-z0-9_-]{24,}/g, "[redacted]").slice(0, 240);
@@ -558,7 +575,7 @@ export async function runWirkungsticker(options = {}) {
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
   const eligible = clusters
-    .filter((candidate) => (candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold) && candidate.sources.some((source) => source.primary_source))
+    .filter((candidate) => (candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30) && candidate.sources.some((source) => source.primary_source))
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   report.locally_rejected = clusters.length - eligible.length;
   const configuredMaxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
@@ -569,15 +586,15 @@ export async function runWirkungsticker(options = {}) {
   report.ai_hourly_limit = maxAiCallsPerHour;
   report.ai_calls_in_last_hour = aiCallsInLastHour;
   report.ai_calls_available_this_run = remainingAiCallsThisHour;
-  const selected = stage.stage >= 3 ? [] : eligible.slice(0, maxAiStories);
+  const { selected, deferred } = partitionAiQueue(eligible, stage, maxAiStories);
   const aiBatchSize = Math.max(1, Math.min(maxAiStories || 1, Number(process.env.WOEK_NEWS_AI_BATCH_SIZE || 2)));
   report.ai_stories = selected.length;
   report.ai_batch_size = aiBatchSize;
   report.ai_batches_planned = Math.ceil(selected.length / aiBatchSize);
 
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
-  const deferredReason = remainingAiCallsThisHour === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
-  for (const candidate of eligible.slice(maxAiStories)) {
+  const deferredReason = stage.stage >= 3 ? "AI_BUDGET_BLOCKED" : remainingAiCallsThisHour === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
+  for (const candidate of deferred) {
     byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
   }
@@ -734,7 +751,7 @@ export async function runWirkungsticker(options = {}) {
     source_failures: report.source_failures,
     quality_holds: report.quality_holds.length,
   });
-  usage.runs = usage.runs.slice(-400);
+  usage.runs = retainUsageHistory(usage.runs, now);
 
   if (!options.dryRun) {
     writeJson(files.state, state);

@@ -1,0 +1,11 @@
+[Unit]
+Description=Wake Wirkungsticker every 15 minutes when GitHub cron is late
+
+[Timer]
+OnCalendar=*-*-* *:05,20,35,50:00
+Persistent=true
+RandomizedDelaySec=20
+Unit=woek-wirkungsticker-clock.service
+
+[Install]
+WantedBy=timers.target

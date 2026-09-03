@@ -161,6 +161,7 @@
       "name": "Bundesministerium für Arbeit und Soziales",
       "url": "https://bmas.bund.de/",
       "feed_url": "https://bmas.bund.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml",
+      "allowed_redirect_hosts": ["www.bmas.de"],
       "source_type": "official_rss",
       "topic": "Arbeit",
       "primary_source": true,

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import fs from "node:fs";
 import {
   assertSafeFeedUrl,
   budgetStage,
@@ -24,6 +25,8 @@ import {
   aiRequestsInWindow,
   fetchFeedWithRetry,
   queuePriority,
+  partitionAiQueue,
+  retainUsageHistory,
   sanitizeAnalysisVisuals,
   shouldRetryQualityGate,
 } from "../../scripts/news/run.mjs";
@@ -140,6 +143,15 @@ test("Nur veröffentlichte und verifizierte WÖk-Parlamentsbewertungen werden ü
   assert.notEqual(updated.content_hash, assessment.content_hash);
 });
 
+test("BMAS-Feed darf seine offizielle Artikeldomain lesen, aber keine fremde Domain", async () => {
+  const registry = JSON.parse(fs.readFileSync(new URL("../../content/news/source-registry.json", import.meta.url), "utf8"));
+  const bmas = registry.sources.find((entry) => entry.source_id === "bmas-aktuell");
+  const fetchImpl = async () => new Response(`<main>${"Offizieller Inhalt des Bundesministeriums. ".repeat(5)}</main>`, { headers: { "content-type": "text/html" } });
+  const result = await fetchArticleExcerpt({ url: "https://www.bmas.de/DE/Service/Presse/Meldungen/test.html" }, bmas, { resolve_dns: false }, fetchImpl);
+  assert.ok(result.excerpt.length >= 120);
+  await assert.rejects(fetchArticleExcerpt({ url: "https://untrusted.example/article" }, bmas, { resolve_dns: false }, fetchImpl), /HOST_NOT_ALLOWED/);
+});
+
 test("Deduplizierung, Ähnlichkeit und Story-Cluster sind deterministisch", () => {
   assert.equal(canonicalizeUrl("https://EXAMPLE.org/a/?utm_campaign=x#frag"), "https://example.org/a");
   assert.ok(storySimilarity("Bund beschließt neues Klimagesetz", "Neues Klimagesetz vom Bund beschlossen") > 0.58);
@@ -183,6 +195,15 @@ test("Format ist kein Ausschlussgrund, aber bloßer Kontext reicht nicht", () =>
   assert.ok(materialInterview.score >= 34);
   assert.equal(materialInterview.context_only, false);
   assert.ok(inquiry.score < 34);
+});
+
+test("Umweltrecht und Industrieemissionen gehen auch bei knappen Gesetzesfeeds nicht verloren", () => {
+  for (const title of ["Gesetz zur Änderung des Umwelt-Rechtsbehelfsgesetzes", "Gesetz zur Umsetzung der Richtlinie über Industrieemissionen"]) {
+    const classified = classifyItem({ title, summary: "", categories: [] }, source);
+    assert.ok(classified.score >= budgetStage(0, 5).threshold);
+    assert.ok(classified.topics.includes("Klima"));
+    assert.ok(classified.dimensions.includes("Planet"));
+  }
 });
 
 test("Neue Quellenmeldung aktualisiert eine bestehende Wirkungsakte", () => {
@@ -376,6 +397,22 @@ test("Längere Detailzusammenfassung wird separat geprüft", () => {
   assert.ok(validateAnalysis(analysis, candidate()).includes("AI_DETAIL_SUMMARY_LENGTH"));
 });
 
+test("Doppelte Faktoren und bloße Resonanz können Materialität nicht vortäuschen", () => {
+  for (const factors of [["duration", "duration"], ["resonance", "resonance"], ["duration", "resonance"], ["invented", "invented"]]) {
+    const analysis = validAnalysis();
+    analysis.publication_gate.materiality_factors = factors;
+    assert.ok(validateAnalysis(analysis, candidate()).includes("AI_MATERIALITY_GATE_FAILED"));
+  }
+  const resonance = validAnalysis();
+  resonance.publication_gate.materiality_factors = [];
+  resonance.publication_gate.exceptional_factor = "resonance";
+  assert.ok(validateAnalysis(resonance, candidate()).includes("AI_MATERIALITY_GATE_FAILED"));
+  const exceptional = validAnalysis();
+  exceptional.publication_gate.materiality_factors = ["intensity"];
+  exceptional.publication_gate.exceptional_factor = "intensity";
+  assert.deepEqual(validateAnalysis(exceptional, candidate()), []);
+});
+
 test("Quellenzusammenfassung bleibt lang genug und ohne WÖk-Bewertung", () => {
   const short = validAnalysis();
   short.source_summary = "Zu kurz.";
@@ -467,6 +504,29 @@ test("Rollendes Stundenlimit zählt neue und alte Nutzungsprotokolle konservativ
     ],
   };
   assert.equal(aiRequestsInWindow(usage, "2026-09-03T17:00:00.000Z"), 3);
+});
+
+test("Budget- und Kapazitätsgrenzen vertagen alle nicht bearbeiteten Kandidaten verlustfrei", () => {
+  const eligible = [
+    { ...candidate(), story_id: "high", preanalysis: { internal_relevance_score: 80 } },
+    { ...candidate(), story_id: "medium", preanalysis: { internal_relevance_score: 32 } },
+  ];
+  for (const [stage, limit] of [[budgetStage(4.8, 5), 1], [budgetStage(0, 5), 0]]) {
+    const result = partitionAiQueue(eligible, stage, limit);
+    assert.deepEqual(result.selected, []);
+    assert.deepEqual(result.deferred, eligible);
+  }
+  const constrained = partitionAiQueue(eligible, budgetStage(3.6, 5), 2);
+  assert.deepEqual(constrained.selected.map((item) => item.story_id), ["high"]);
+  assert.deepEqual(constrained.deferred.map((item) => item.story_id), ["medium"]);
+});
+
+test("Monatskosten bleiben auch nach mehr als 400 automatischen Läufen erhalten", () => {
+  const previous = Array.from({ length: 450 }, () => ({ started_at: "2026-08-31T12:00:00Z" }));
+  const current = Array.from({ length: 600 }, () => ({ started_at: "2026-09-03T12:00:00Z", ai: { estimated_cost_usd: 0.01 } }));
+  const kept = retainUsageHistory([...previous, ...current], "2026-09-03T19:00:00Z");
+  assert.equal(kept.length, 1000);
+  assert.equal(kept.filter((run) => run.started_at.startsWith("2026-09")).length, 600);
 });
 
 test("Laufgesundheit erkennt 503, Quellenlücken und veraltete Berichte", () => {
