@@ -191,6 +191,7 @@ const aiBody = `
 
 const aiStyles = fs.readFileSync(path.join(ROOT, "woek-ki/index.html"), "utf8").match(/<style>([\s\S]*?)<\/style>/)?.[0] || "";
 const aiScript = `
+    <script src="../../assets/js/woek-ai-results.js?v=20260904"></script>
     <script>
       const form = document.querySelector("#woek-ai-form");
       const question = document.querySelector("#woek-ai-question");
@@ -205,20 +206,27 @@ const aiScript = `
       const sourceCount = document.querySelector("#woek-ai-source-count");
       const sources = document.querySelector("#woek-ai-sources");
       const apiBase = window.WOEK_API_BASE || "https://130.162.217.58.sslip.io";
+      const answerResults = window.WoekAiResults.attach({ apiBase, render(item, shared) {
+        question.value = item.question; answer.textContent = item.answer; placeholder.hidden = true;
+        mode.textContent = shared ? "Shared answer" : "Saved answer";
+        provider.textContent = item.provider || "WÖk AI"; model.textContent = item.model || "Saved snapshot";
+        renderSources(item.sources); setReady();
+      } });
       function setReady() { submit.disabled = !question.value.trim(); }
       function escapeHtml(text) { return String(text || "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]); }
       function renderSources(items) {
-        const list = Array.isArray(items) ? items : [];
+        const list = window.WoekAiResults.safeSources(items);
         sourceCount.textContent = String(list.length);
         sources.innerHTML = list.length ? list.map((item) => '<a class="woek-ai-source-card" href="' + escapeHtml(item.url || "#") + '"><span>Source</span><strong>' + escapeHtml(item.title || item.url || "Reference") + '</strong><p>' + escapeHtml(item.excerpt || item.note || "") + '</p></a>').join("") : '<p class="card-text">No sources returned.</p>';
       }
       question.addEventListener("input", setReady);
-      clearButton.addEventListener("click", () => { question.value = ""; answer.textContent = ""; placeholder.hidden = false; warning.hidden = true; mode.textContent = "Ready"; renderSources([]); setReady(); });
+      clearButton.addEventListener("click", () => { answerResults.clear(); question.value = ""; answer.textContent = ""; placeholder.hidden = false; warning.hidden = true; mode.textContent = "Ready"; renderSources([]); setReady(); });
       document.querySelectorAll(".woek-ai-example").forEach((button) => button.addEventListener("click", () => { question.value = button.textContent.trim(); setReady(); question.focus(); }));
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
         const value = question.value.trim();
         if (!value) return;
+        answerResults.begin();
         submit.disabled = true;
         mode.textContent = "Checking";
         placeholder.hidden = true;
@@ -233,6 +241,7 @@ const aiScript = `
           provider.textContent = payload.provider || "Hosted API";
           model.textContent = payload.model || "OpenAI-compatible";
           renderSources(payload.sources || payload.references || []);
+          answerResults.capture({ question: value, answer: answer.textContent, sources: payload.sources || payload.references || [], model: model.textContent, provider: provider.textContent });
         } catch (error) {
           mode.textContent = "Unavailable";
           answer.textContent = "";
@@ -243,6 +252,7 @@ const aiScript = `
         }
       });
       setReady();
+      answerResults.restore();
     </script>`;
 
 const impactSpaceBody = `
@@ -348,7 +358,7 @@ writeFile("en/woek-ai/index.html", page({
   active: "AI",
   sourceHref: "../../woek-ki/",
   body: aiBody,
-  extraHead: aiStyles,
+  extraHead: aiStyles + '<link rel="stylesheet" href="../../assets/css/woek-ai-results.css?v=20260904">',
   scripts: aiScript,
 }));
 
