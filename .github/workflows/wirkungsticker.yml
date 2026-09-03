@@ -37,7 +37,8 @@ jobs:
         if: steps.slot.outputs.should_run == 'true'
         env:
           WOEK_NEWS_MONTHLY_AI_BUDGET_USD: "5"
-          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "2"
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "6"
+          WOEK_NEWS_AI_BATCH_SIZE: "2"
           WOEK_NEWS_AI_TIMEOUT_MS: "120000"
         run: npm run news:run
       - name: Build search index and validate output

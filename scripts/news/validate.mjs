@@ -32,11 +32,23 @@ for (const story of store.stories) {
   }
 }
 
-for (const relative of ["news/wirkungsticker/index.html", "news/feed.xml", "news/feed.atom", "news/feed.json", "news/data/stories.json"]) {
+for (const relative of ["news/index.html", "news/wirkungsticker/index.html", "news/manifest.webmanifest", "news/sw.js", "news/offline.html", "news/feed.xml", "news/feed.atom", "news/feed.json", "news/data/stories.json"]) {
   if (!fs.existsSync(path.join(ROOT, relative))) fail(`GENERATED_FILE_MISSING:${relative}`);
 }
 const index = fs.readFileSync(path.join(ROOT, "news/wirkungsticker/index.html"), "utf8");
 if (!index.includes("https://wirkungsoekonomie.de/news/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
+if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("news/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen")) fail("NEWS_APP_UI_INVALID");
+for (const story of store.stories.filter((item) => item.published)) {
+  const detail = fs.readFileSync(path.join(ROOT, "news", story.slug, "index.html"), "utf8");
+  const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
+  const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");
+  if (!detail.includes("Wahrheit zuerst:") || truthAt < 0 || uncertaintyAt < 0 || truthAt > uncertaintyAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);
+  if (!detail.includes("Erste Ordnung – unmittelbar") || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
+}
+const manifest = readJson("news/manifest.webmanifest");
+if (manifest.id !== "/news/" || manifest.scope !== "/news/" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");
+const serviceWorker = fs.readFileSync(path.join(ROOT, "news/sw.js"), "utf8");
+if (!serviceWorker.includes("NEWS_NOTIFICATIONS_ENABLE") || !serviceWorker.includes("periodicsync") || !serviceWorker.includes("/news/feed.json")) fail("NEWS_SERVICE_WORKER_INVALID");
 const rss = fs.readFileSync(path.join(ROOT, "news/feed.xml"), "utf8");
 const atom = fs.readFileSync(path.join(ROOT, "news/feed.atom"), "utf8");
 if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");

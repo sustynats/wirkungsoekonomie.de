@@ -145,6 +145,81 @@
       "ai": null,
       "source_failures": 0,
       "quality_holds": 11
+    },
+    {
+      "run_id": "news-run-ac7a03c6c679",
+      "started_at": "2026-09-03T07:44:09.616Z",
+      "completed_at": "2026-09-03T07:47:32.783Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 144,
+        "feed_entries_new": 1,
+        "feed_entries_deduplicated": 39,
+        "story_clusters": 4,
+        "locally_rejected": 0,
+        "ai_stories": 6,
+        "published_stories": 2
+      },
+      "ai": {
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.5",
+        "input_tokens": 5326,
+        "output_tokens": 4328,
+        "estimated_cost_usd": 0.15647,
+        "token_source": "conservative_character_estimate"
+      },
+      "source_failures": 0,
+      "quality_holds": 10
+    },
+    {
+      "run_id": "news-run-a2a9b54a6a92",
+      "started_at": "2026-09-03T07:49:38.699Z",
+      "completed_at": "2026-09-03T07:52:41.962Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 144,
+        "feed_entries_new": 0,
+        "feed_entries_deduplicated": 43,
+        "story_clusters": 0,
+        "locally_rejected": 0,
+        "ai_stories": 6,
+        "published_stories": 2
+      },
+      "ai": {
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.5",
+        "input_tokens": 5436,
+        "output_tokens": 4335,
+        "estimated_cost_usd": 0.15723,
+        "token_source": "conservative_character_estimate"
+      },
+      "source_failures": 0,
+      "quality_holds": 4
+    },
+    {
+      "run_id": "news-run-a59d6cc77e02",
+      "started_at": "2026-09-03T07:58:18.398Z",
+      "completed_at": "2026-09-03T08:01:42.591Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 144,
+        "feed_entries_new": 0,
+        "feed_entries_deduplicated": 43,
+        "story_clusters": 0,
+        "locally_rejected": 0,
+        "ai_stories": 6,
+        "published_stories": 6
+      },
+      "ai": {
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.5",
+        "input_tokens": 6140,
+        "output_tokens": 5155,
+        "estimated_cost_usd": 0.18535,
+        "token_source": "conservative_character_estimate"
+      },
+      "source_failures": 0,
+      "quality_holds": 0
     }
   ]
 }

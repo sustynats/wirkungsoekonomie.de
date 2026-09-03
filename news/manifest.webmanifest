@@ -1,7 +1,7 @@
 {
   "name": "Neues aus der Wirkungsökonomie",
   "short_name": "WÖk Neues",
-  "description": "Neue Veröffentlichungen, Begriffe, Lernangebote und Funktionen der Wirkungsökonomie.",
+  "description": "Neuigkeiten und quellengebundene Wirkungsnachrichten der Wirkungsökonomie.",
   "id": "/news/",
   "start_url": "/news/?source=pwa",
   "scope": "/news/",
@@ -9,6 +9,7 @@
   "display_override": ["standalone", "minimal-ui", "browser"],
   "background_color": "#f7f1e8",
   "theme_color": "#10243b",
+  "orientation": "any",
   "lang": "de-DE",
   "dir": "ltr",
   "categories": ["news", "education"],
@@ -25,6 +26,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/brand/signet.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ],
   "shortcuts": [
@@ -37,6 +44,11 @@
       "name": "Wirkungsticker",
       "short_name": "Ticker",
       "url": "/news/wirkungsticker/"
+    },
+    {
+      "name": "Hohe systemische Relevanz",
+      "short_name": "Hohe Relevanz",
+      "url": "/news/wirkungsticker/?thema=high"
     }
   ]
 }

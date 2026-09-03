@@ -191,7 +191,7 @@ export async function runWirkungsticker(options = {}) {
   const usage = readJson(files.usage);
   const enabledSources = registry.sources.filter((source) => source.enabled);
   const report = {
-    schema_version: "1.0",
+    schema_version: "1.1",
     started_at: now,
     berlin_slot: scheduledSlot(nowDate).slot || "manueller Lauf",
     feed_entries_fetched: 0,
@@ -203,6 +203,8 @@ export async function runWirkungsticker(options = {}) {
     locally_rejected: 0,
     ai_stories: 0,
     ai_calls: 0,
+    ai_batches_planned: 0,
+    ai_batches_completed: 0,
     published_stories: 0,
     updated_stories: 0,
     provider: null,
@@ -286,7 +288,12 @@ export async function runWirkungsticker(options = {}) {
   const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => (!story.published || story.pending_update) && !freshIds.has(story.story_id))
-    .filter((story) => retryableReasons.has(story.pending_update?.reason || story.pending_reason))
+    .filter((story) => {
+      const reason = story.pending_update?.reason || story.pending_reason;
+      const qualityErrors = story.pending_update?.quality_errors || story.quality_errors || [];
+      return retryableReasons.has(reason)
+        || (reason === "QUALITY_GATE_FAILED" && qualityErrors.length > 0 && qualityErrors.every((error) => error.startsWith("AI_UNSUPPORTED_NUMBER:")));
+    })
     .filter((story) => (story.pending_update?.sources || story.sources || []).some((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs))
     .map((story) => {
       const sources = (story.pending_update?.sources || story.sources).filter((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
@@ -321,7 +328,10 @@ export async function runWirkungsticker(options = {}) {
   report.locally_rejected = clusters.length - eligible.length;
   const maxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
   const selected = stage.stage >= 3 ? [] : eligible.slice(0, maxAiStories);
+  const aiBatchSize = Math.max(1, Math.min(maxAiStories || 1, Number(process.env.WOEK_NEWS_AI_BATCH_SIZE || 2)));
   report.ai_stories = selected.length;
+  report.ai_batch_size = aiBatchSize;
+  report.ai_batches_planned = Math.ceil(selected.length / aiBatchSize);
 
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
   for (const candidate of eligible.slice(maxAiStories)) {
@@ -329,48 +339,51 @@ export async function runWirkungsticker(options = {}) {
     report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_BUDGET_OR_BATCH_LIMIT" });
   }
 
-  let aiResult = null;
   const aiEnabled = String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   if (selected.length && aiEnabled) {
-    try {
-      aiResult = await (options.callAiImpl || callWoekAi)(selected, {
-        apiUrl: process.env.WOEK_NEWS_API_URL,
-        timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
-      });
-      report.provider = aiResult.provider;
-      report.model = aiResult.model;
-      report.ai_calls = Number(aiResult.request_attempts || 1);
-      const estimated = estimateUsage(aiResult.prompt_chars, aiResult.answer_chars, aiResult.model, {
-        inputUsdPerMillion: Number(process.env.WOEK_NEWS_INPUT_USD_PER_MILLION || 5),
-        outputUsdPerMillion: Number(process.env.WOEK_NEWS_OUTPUT_USD_PER_MILLION || 30),
-      });
-      Object.assign(report, {
-        input_tokens: estimated.input_tokens,
-        output_tokens: estimated.output_tokens,
-        estimated_cost_usd: estimated.estimated_cost_usd,
-        token_source: estimated.token_source,
-      });
-      const analyses = new Map(aiResult.analyses.map((analysis) => [analysis.story_id, analysis]));
-      for (const candidate of selected) {
-        const analysis = analyses.get(candidate.story_id);
-        const errors = analysis ? validateAnalysis(analysis, candidate) : ["AI_ANALYSIS_MISSING"];
-        if (errors.length) {
-          byId.set(candidate.story_id, pendingRecord(candidate, "QUALITY_GATE_FAILED", now, errors));
-          report.quality_holds.push({ story_id: candidate.story_id, reason: "QUALITY_GATE_FAILED", errors });
-          continue;
+    for (let offset = 0; offset < selected.length; offset += aiBatchSize) {
+      const batch = selected.slice(offset, offset + aiBatchSize);
+      try {
+        const aiResult = await (options.callAiImpl || callWoekAi)(batch, {
+          apiUrl: process.env.WOEK_NEWS_API_URL,
+          timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
+        });
+        report.provider ||= aiResult.provider;
+        report.model ||= aiResult.model;
+        report.ai_calls += Number(aiResult.request_attempts || 1);
+        report.ai_batches_completed += 1;
+        const estimated = estimateUsage(aiResult.prompt_chars, aiResult.answer_chars, aiResult.model, {
+          inputUsdPerMillion: Number(process.env.WOEK_NEWS_INPUT_USD_PER_MILLION || 5),
+          outputUsdPerMillion: Number(process.env.WOEK_NEWS_OUTPUT_USD_PER_MILLION || 30),
+        });
+        report.input_tokens += estimated.input_tokens;
+        report.output_tokens += estimated.output_tokens;
+        report.estimated_cost_usd = Number((report.estimated_cost_usd + estimated.estimated_cost_usd).toFixed(6));
+        report.token_source = estimated.token_source;
+        const analyses = new Map(aiResult.analyses.map((analysis) => [analysis.story_id, analysis]));
+        for (const candidate of batch) {
+          const analysis = analyses.get(candidate.story_id);
+          const errors = analysis ? validateAnalysis(analysis, candidate) : ["AI_ANALYSIS_MISSING"];
+          if (errors.length) {
+            byId.set(candidate.story_id, pendingRecord(candidate, "QUALITY_GATE_FAILED", now, errors));
+            report.quality_holds.push({ story_id: candidate.story_id, reason: "QUALITY_GATE_FAILED", errors });
+            continue;
+          }
+          const wasPublished = Boolean(candidate.existing_story?.published);
+          byId.set(candidate.story_id, publishedRecord(candidate, analysis, aiResult, now));
+          report.published_stories += wasPublished ? 0 : 1;
+          report.updated_stories += wasPublished ? 1 : 0;
         }
-        const wasPublished = Boolean(candidate.existing_story?.published);
-        byId.set(candidate.story_id, publishedRecord(candidate, analysis, aiResult, now));
-        report.published_stories += wasPublished ? 0 : 1;
-        report.updated_stories += wasPublished ? 1 : 0;
-      }
-    } catch (error) {
-      report.ai_calls = Number(error?.requestAttempts || 1);
-      const reason = sanitizeError(error);
-      report.ai_error = reason;
-      for (const candidate of selected) {
-        byId.set(candidate.story_id, pendingRecord(candidate, "AI_PROVIDER_UNAVAILABLE", now, [reason]));
-        report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_PROVIDER_UNAVAILABLE" });
+      } catch (error) {
+        report.ai_calls += Number(error?.requestAttempts || 1);
+        const reason = sanitizeError(error);
+        report.ai_error = reason;
+        report.failed_batch_offset = offset;
+        for (const candidate of selected.slice(offset)) {
+          byId.set(candidate.story_id, pendingRecord(candidate, "AI_PROVIDER_UNAVAILABLE", now, [reason]));
+          report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_PROVIDER_UNAVAILABLE" });
+        }
+        break;
       }
     }
   } else {
