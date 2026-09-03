@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
 
 concurrency:
@@ -50,6 +51,7 @@ jobs:
           npm run build:search
           npm run news:validate
       - name: Commit one atomic update
+        id: commit
         if: steps.slot.outputs.should_run == 'true'
         env:
           SLOT_NAME: ${{ steps.slot.outputs.slot }}
@@ -60,8 +62,15 @@ jobs:
           git add -- data/news news wirkungsticker reports/wirkungsticker-latest-run.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json
           if git diff --cached --quiet; then
             echo "Keine neue oder geänderte Wirkungsnachricht."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "[wirkungsticker] ${SLOT_NAME} $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase origin main
           git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Publish the committed ticker automatically
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main -f ticker_only=true

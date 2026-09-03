@@ -8,6 +8,12 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      ticker_only:
+        description: Build and publish only the already committed Wirkungsticker update
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -30,9 +36,10 @@ jobs:
         id: release-mode
         env:
           COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          DISPATCH_TICKER_ONLY: ${{ inputs.ticker_only }}
         shell: bash
         run: |
-          if [[ "$GITHUB_EVENT_NAME" == "push" && "$COMMIT_MESSAGE" == *"[wirkungsticker]"* ]]; then
+          if [[ "$GITHUB_EVENT_NAME" == "push" && "$COMMIT_MESSAGE" == *"[wirkungsticker]"* ]] || [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && "$DISPATCH_TICKER_ONLY" == "true" ]]; then
             echo "ticker_only=true" >> "$GITHUB_OUTPUT"
           else
             echo "ticker_only=false" >> "$GITHUB_OUTPUT"
