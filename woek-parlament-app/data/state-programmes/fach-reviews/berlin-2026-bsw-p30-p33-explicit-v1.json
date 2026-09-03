@@ -1,0 +1,1240 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P30-P33-EXPLICIT-FACH-2026-V1",
+  "base_main_commit": "2f5d5d896eb1a8e851529a31139bfa57b00eca84",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "authoritative_markdowns": [
+    {
+      "issue_comment_id": 5454047551,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5454047551",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p30-authoritative-handoff.md",
+      "file_sha256": "d7b366360b2282d2d33d2da537b31af93bcafef7b19b2cbd64dd733d49fea135"
+    },
+    {
+      "issue_comment_id": 5454095617,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5454095617",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p31-authoritative-handoff.md",
+      "file_sha256": "5cef01307b5ff3dd156b51c5da55979553ce8e98f92efabbb37e7033f058fe12"
+    },
+    {
+      "issue_comment_id": 5454152920,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5454152920",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p32-authoritative-handoff.md",
+      "file_sha256": "d9e247f909e630ca15979199d5ecc41059390908d70a97dfa582797727532de0"
+    },
+    {
+      "issue_comment_id": 5454551001,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5454551001",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p33-authoritative-handoff.md",
+      "file_sha256": "632a48455db13e42d234bf8c795a8debb1ffd530b61b6542e7700e43f7a56c83"
+    }
+  ],
+  "controller": {
+    "issue": 241,
+    "issue_comment_id": 5457255354,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5457255354"
+  },
+  "coverage": {
+    "protected_fach_terminal_physical_scope": "P1-P33",
+    "next_opaque_page_review_envelope_from": 34,
+    "next_opaque_page_review_envelope_through": 66,
+    "physical_pdf_pages": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "original_terminal_record_count": 78,
+    "deterministic_terminal_record_count": 6,
+    "new_terminal_record_count": 84,
+    "active_terminal_review_leaf_count": 31,
+    "active_explicit_fach_approved_count": 20,
+    "active_reviewed_not_assessable_count": 11,
+    "new_exact_open_child_object_count": 0,
+    "carried_exact_open_child_object_count": 0,
+    "terminal_status_counts": {
+      "EXPLICIT_FACH_APPROVED": 20,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 11,
+      "NON_EFFECT_CONTEXT_REVIEWED": 49,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 4
+    },
+    "gate": "BE_BSW_P30_P33_FACH_COMPLETE_PASS_SOURCE_BOUND"
+  },
+  "deterministic_child_contract": {
+    "id_rule": "stable structural prefix plus first 12 hex characters of SHA-256(exact UTF-8 deterministic source text)",
+    "source_span_basis": [
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+      "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT",
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    ],
+    "semantics_rule": "IDs, hashes, exact text spans/fragments and lineage are mechanical; Fach is copied only from the cited WÖk comments."
+  },
+  "source_objects": [
+    {
+      "object_id": "BE-BSW-P30-U01-A01-d17b190b07e3",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Meinungsfreiheit, ÖRR, Gendersprache Den ÖRR demokratisch, transparent und schlanker machen!",
+      "source_text_sha256": "d17b190b07e35826654b25de0d5ac644128aa155e5865097fc0be2f4fbbf9a79"
+    },
+    {
+      "object_id": "BE-BSW-P30-U02-ec91462741eb",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 30,
+      "source_excerpt": "Der ÖRR steckt in einer Vertrauenskrise. Nirgendwo so sehr wie in Berlin und Brandenburg. Unser rbb war 2022 das Epizentrum dieser Krise, ausgelöst durch die Skandale um die damalige Intendantin Schlesinger, den Verwaltungsratsvorsitzenden…",
+      "source_text_sha256": "ec91462741eb01fa70c346a82da1e2777be57ea41612688a1ff54b7b38fa7a6a"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A01-77883df5c9e9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Wir brauchen einen ÖRR nur, wenn er sich als Plattform für Meinungsvielfalt versteht.",
+      "source_text_sha256": "77883df5c9e92f8a2a6aa5154fca673b5f462211e9bf467e719e8aa77ebccc65"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A02-ca0e26c41b8a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Alle Haushalte zahlen Beitrag, deshalb haben auch alle Haushalte ein Recht darauf, dass sie ihre Sichtweisen im Rundfunk wiederfinden.",
+      "source_text_sha256": "ca0e26c41b8a6407ebc608f0a9101efcf8d96e049bf84bb0f4519ca0d3730f2f"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A03-b701082eed6f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Diesen Anspruch löst der rbb oft nicht ein.",
+      "source_text_sha256": "b701082eed6f142678f986a4941aa89f2d7d0cd096380ae9eb3a45be0cf8bb15"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A04-5f83346503d8",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Das BSW fordert: Reform statt Betragserhöhung",
+      "source_text_sha256": "5f83346503d8bfa89fdce529581936e6836dfaf554c19eabd5f068c201af334d"
+    },
+    {
+      "object_id": "BE-BSW-P30-U04-A01-b8ff29d82a38",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Noch höhere Beiträge?",
+      "source_text_sha256": "b8ff29d82a38ba0e3d8e0b8da7245ceb3bd032b71761a7557517b1e5c765fbad"
+    },
+    {
+      "object_id": "BE-BSW-P30-U04-A02-b4b8fa8c6f1d",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Das kommt für uns nicht in Frage.",
+      "source_text_sha256": "b4b8fa8c6f1d824307d00be5df26e404b3d615d2570a06aece83c6d398c23196"
+    },
+    {
+      "object_id": "BE-BSW-P30-U04-A03-57e28a19cb31",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Durch wirtschaftlicheres Handeln statt durch höhere Beiträge können die finanziellen Spielräume vergrößert werden.",
+      "source_text_sha256": "57e28a19cb310c47bbe0ab0ddcfec3584750e73e0a55fb89869ce6613c6dd42b"
+    },
+    {
+      "object_id": "BE-BSW-P30-U05-A01-1fc0955a0d88",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Wir wollen eine Beitragsreform mit dem Ziel einer echten Entlastung der unteren und mittleren Haushaltseinkommen.",
+      "source_text_sha256": "1fc0955a0d884867a4a91515bf8eb4c77809161825db3e25ad15858e1e3fb8a3"
+    },
+    {
+      "object_id": "BE-BSW-P30-U05-A02-c1eec7535aeb",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Für sie soll der Beitrag rasch auf 10 Euro abgesenkt werden.",
+      "source_text_sha256": "c1eec7535aebf35978aa3432f350a0ac0c56321bc580cfb504ec23d1b085040f"
+    },
+    {
+      "object_id": "BE-BSW-P30-U06-A01-162d265b7191",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Wir brauchen unbedingt eine echte Verschlankung der Senderstruktur von ARD und ZDF.",
+      "source_text_sha256": "162d265b7191167e6e100ce89823379b970a53d473e6eaf36d851de6c50b5045"
+    },
+    {
+      "object_id": "BE-BSW-P30-U06-A02-b939a3b89c28",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Darüber muss, unter Einbeziehung der Beitragszahler, diskutiert werden.",
+      "source_text_sha256": "b939a3b89c28785bf1dd7bdaeddb79a26c3180eea188e74a23690f87718295b5"
+    },
+    {
+      "object_id": "BE-BSW-P30-U07-A01-3a458fb5a6b6",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Das Mindeste wäre jedoch, die überbordende und teure Verwaltung der Sendeanstalten drastisch zurückzustutzen.",
+      "source_text_sha256": "3a458fb5a6b649cafbae5c52356bbb8a03341b850c348d6597e520ff97f5caf9"
+    },
+    {
+      "object_id": "BE-BSW-P30-U07-A02-fe45488c6b16",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Brauchen wir für jede einzelne Anstalt einen Intendanten und all die vielen Direktoren und anderen Spitzenverdiener?",
+      "source_text_sha256": "fe45488c6b16e476257aa13b0eef41a1fa8ea75f5d59dfc6ddee47f2219ad7f8"
+    },
+    {
+      "object_id": "BE-BSW-P30-U07-A03-2c0077125967",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Oder ließe sich die Verwaltung der Sender nicht auch zusammenlegen, zumindest teilweise?",
+      "source_text_sha256": "2c0077125967b70ed52bc1dc32da744f2d5bb5dc29386f9d475076dac13a700f"
+    },
+    {
+      "object_id": "BE-BSW-P30-U08-A01-688e734e30a9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Als erste Maßnahme wäre die Kürzung der Gehälter in der Führungsebene der Sender angezeigt.",
+      "source_text_sha256": "688e734e30a938874090346634317f4a771dea549a7906d02c27cafefa911390"
+    },
+    {
+      "object_id": "BE-BSW-P30-U08-A02-2f89ae455b55",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Alle hochdotierten Stellen müssen auf den Prüfstand: Was davon braucht man wirklich?",
+      "source_text_sha256": "2f89ae455b556ffcf2a9cef2731c37e4775e76fdc0d07f10473fd573cedc493b"
+    },
+    {
+      "object_id": "BE-BSW-P30-U08-A03-84a5a7bd1034",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Grundsätzlich muss die Gehaltsstruktur in den Sendeanstalten an den TVÖD (Tarifvertrag des Öffentlichen Dienstes) angepasst werden.",
+      "source_text_sha256": "84a5a7bd103462c5e91ba8050e81110601175d6e2b212e9cf6760076238d927b"
+    },
+    {
+      "object_id": "BE-BSW-P30-U09-30d27cf30465",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 30,
+      "source_excerpt": "Programm: ausgewogen und regional",
+      "source_text_sha256": "30d27cf30465f9c8fbf0f4f0df59a95f71112351ac50fbf64468807e9a0bd859"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A01-ff3f36d8fbd5",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Die regionale Berichterstattung ist die Kernkompetenz des ÖRR.",
+      "source_text_sha256": "ff3f36d8fbd59022ac454f98ce84b5a9c04813e310d26a9ff33b17e8da7c865e"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A02-e805935e4472",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Sie sollte gestärkt werden.",
+      "source_text_sha256": "e805935e447239a82bf8c0ce36353570b92eebeece1ecbeac52df4805e326242"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A03-78fbfd88341f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Der rbb wehrt sich dagegen mit Händen und Füßen, zuletzt sogar gerichtlich, zum Glück erfolglos.",
+      "source_text_sha256": "78fbfd88341f7e76af6bdf7ed754cad24cf05a40f66f77463656d62597c1621a"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A04-8850e5fd3081",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Jetzt müssen die Vorgaben aus dem letzten rbb-Staatsvertrag schnell umgesetzt werden.",
+      "source_text_sha256": "8850e5fd308153b52ad12b9fd28b0be127f9a12cfed6b10362e7f0fbff8a1058"
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A01-e334663797b2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Zugänge zum öffentlich-rechtlichen Journalismus müssen verbreitert werden, zum Beispiel in dem man die Journalistenschule EMS (Electronic Media School) stärkt.",
+      "source_text_sha256": "e334663797b2df43cb7359e90609b29ab0c72f4f7360d011475c32b8d6220903"
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A02-61fb194bc250",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Übernahmegarantien für rbb-Azubis, Sozial-Stipendien für Volontariate und bezahlte Praktika könnten dazu beitragen, auch Unterprivilegierten Zugang zu ermöglichen.",
+      "source_text_sha256": "61fb194bc2506862fe46ef68fbc91ac826fa7e5afa290b513bd6cd40df2e1e58"
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A03-a20cbfd937a5",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Generell muss das Ausbildungsangebot gestärkt werden.",
+      "source_text_sha256": "a20cbfd937a59ef066f0684226bc8ae60d9a28f32d7ccbe6c95f6eb27fc637c1"
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A04-0fe6b1f98458",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 30,
+      "source_text": "Das sorgt für mehr soziale Vielfalt in den Redaktionen",
+      "source_text_sha256": "0fe6b1f98458449cc7e67af6f0000c218f5f16d6a30908776cefefed4d2fe0ea"
+    },
+    {
+      "object_id": "BE-BSW-P31-U01-A01-56f788d33d29",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "und damit für mehr Repräsentation der Bevölkerung und weniger Bubble-Effekte in den Redaktionen.",
+      "source_text_sha256": "56f788d33d29e3e646cd8932316b400a250b9405f3e7346be707e41665d3a719"
+    },
+    {
+      "object_id": "BE-BSW-P31-U02-966158ffefa9",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 31,
+      "source_excerpt": "Für einen demokratischen ÖRR",
+      "source_text_sha256": "966158ffefa9e6accf9bcafe83a977a0da1c9f8a7bf23d815179b5cc94775e7f"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A01-7b4680d168df",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Es muss freie Mitarbeit geben, um eine gewisse Flexibilität im Sender, aber auch die persönliche Entwicklung der Mitarbeiter zu gewährleisten.",
+      "source_text_sha256": "7b4680d168df11ffcaabb53b24515169747af36783f80ce4080ec649e095103c"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A02-4d9a1d012250",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Ein Rundfunk ist kein Beamtenapparat und soll auch keiner werden.",
+      "source_text_sha256": "4d9a1d0122501be60e34e18f22bc461403bdc574296b0e3b0cab1accf450a980"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A03-d2b482772d81",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Aber freie Mitarbeit sollte freiwillig und vor allem auch nicht der Regelfall sein.",
+      "source_text_sha256": "d2b482772d81c1612634543e5aaeadde536fe889489af1ae219cd07f2d64d150"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A04-20933360b450",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Wir wollen die Rechte der freien Mitarbeiter und damit auch ihre politische Unabhängigkeit stärken.",
+      "source_text_sha256": "20933360b450347f9ce30937fc5ae4c40cd73ee86bf15d24e83230f6e1c368a5"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A01-dd25fd4df8e4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Die Strukturen des ÖRR müssen demokratischer gestaltet werden.",
+      "source_text_sha256": "dd25fd4df8e412d1e1d2ccc8bd19c18690c8ae188cd7096b220a8424bd523804"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A02-f1da18a75b74",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Wir wollen echte Mitbestimmung der Beitragszahler.",
+      "source_text_sha256": "f1da18a75b748214d9db114fffb5e9e8df96407cd393b515a73fdc069ca0224f"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A03-5719ba322216",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Im Rundfunkrat des rbb sitzen die Vertreter von Parteien und Verbänden, also des politischen Mainstreams.",
+      "source_text_sha256": "5719ba322216222a6ca043c654926acaaf36d37f6db487a7dba2a242273a9586"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A04-07ba3d1c5e77",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Besser wäre es, wenn die Mitglieder stattdessen repräsentativ gelost oder von den Beitragszahlern gewählt würden, um die Breite der Bevölkerung abzubilden.",
+      "source_text_sha256": "07ba3d1c5e775a4f97c9bedfef37515a5c5e16de8fded18188a3c223605a9441"
+    },
+    {
+      "object_id": "BE-BSW-P31-U05-A01-1d8e392ad8a4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Programmbeschwerden müssen verbindlicher gestaltet werden.",
+      "source_text_sha256": "1d8e392ad8a4ddeb4c4fe1741c8200ff1a7a0e5634b1e3afd5c1693e5700f254"
+    },
+    {
+      "object_id": "BE-BSW-P31-U05-A02-a4a233daf320",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Außerdem sollte es Möglichkeiten für Programminitiativen aus der Bevölkerung geben.",
+      "source_text_sha256": "a4a233daf3206407948ae5de189cea54a5ea39cfd94c0d275c81d7e158b570b4"
+    },
+    {
+      "object_id": "BE-BSW-P31-U05-A03-fafa9e91c442",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Wir brauchen ein verbindliches, regelmäßiges und breitangelegtes Feedback-Format im rbb.",
+      "source_text_sha256": "fafa9e91c442757fc933d628ee92b525ad689e30faf9a7ebaf7dafe58ea1916b"
+    },
+    {
+      "object_id": "BE-BSW-P31-U06-A01-7a96b3420fae",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Die Drehtür zwischen Politik und Rundfunk muss endlich geschlossen werden.",
+      "source_text_sha256": "7a96b3420fae4ca725504c752bf72d64322ed1bfbc2cfcd6c5882778fea30953"
+    },
+    {
+      "object_id": "BE-BSW-P31-U06-A02-9e0a9f686325",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Zentrale Leitungspositionen beim öffentlich-rechtlichen Rundfunk sind nicht vereinbar mit (früheren oder künftigen) Tätigkeiten in Regierungspositionen, sowohl in die eine wie auch in die andere Richtung.",
+      "source_text_sha256": "9e0a9f686325d8e245bc7b3e1529ddd89481e8b482fbb8aec0145788dc9a9cbd"
+    },
+    {
+      "object_id": "BE-BSW-P31-U06-A03-416f75afc5c0",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Die nächste Reform des rbb-Staatsvertrags muss das unbedingt enthalten.",
+      "source_text_sha256": "416f75afc5c0558f809c6e7a33ff1877e3c8f020f7d1d780e8f34bbc0f0f2a23"
+    },
+    {
+      "object_id": "BE-BSW-P31-U07-A01-60c9c636a46e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Wir brauchen eine echte Transparenz über die Chefredakteure und die Chefs vom Dienst: Wer sind diese Leute, die letztlich darüber entscheiden, was wir zu sehen bekommen (und was nicht), und warum sind die auf diesen Posten?",
+      "source_text_sha256": "60c9c636a46ee72265574044fa4ddb569a57b83c5ee4d5a76a997f9d10f1e532"
+    },
+    {
+      "object_id": "BE-BSW-P31-U08-A01-2ab516fe392a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Der ÖRR soll die Völkerverständigung fördern und nicht Feindbilder aufbauen.",
+      "source_text_sha256": "2ab516fe392aace7091841c508e5a916db1ecfc6b1a019c3a1abe5bbcfc39e9c"
+    },
+    {
+      "object_id": "BE-BSW-P31-U08-A02-cff3e0bfa399",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Das gehört in die Präambel des nächsten rbb-Staatsvertrags.",
+      "source_text_sha256": "cff3e0bfa399980e1812179ae5874741f800047f83b350cd74fd3d97e3c9e987"
+    },
+    {
+      "object_id": "BE-BSW-P31-U09-63302dbbf663",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 31,
+      "source_excerpt": "Meinungsfreiheit schützen",
+      "source_text_sha256": "63302dbbf6639049d130ddb5a9ab46869c2fccdfef2f913a5bdc3153ecd3b2a3"
+    },
+    {
+      "object_id": "BE-BSW-P31-U10-A01-b3c1879f0c75",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Wir sind für die Abschaffung von Meldeportalen für strafrechtlich nicht relevante Meinungsäußerungen (Berliner Register etc.).",
+      "source_text_sha256": "b3c1879f0c7509afcc4057d9e16e20bd147b918b2f2bb224988fa7773a273dad"
+    },
+    {
+      "object_id": "BE-BSW-P31-U10-A02-aa244cacad05",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Sie stigmatisieren unliebsame Meinungsäußerungen.",
+      "source_text_sha256": "aa244cacad05657806879ee64daa3eaeaf087a0a2c1cda5010f56daa22b0a568"
+    },
+    {
+      "object_id": "BE-BSW-P31-U11-A01-b6cdb149e2f1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_text": "Eine Gesinnungsprüfung des Verfassungsschutzes für Angestellte im Öffentlichen Dienst, wie z.B. von den Grünen gefordert, lehnen wir ab.",
+      "source_text_sha256": "b6cdb149e2f1ce10de3f36a7153c1026e5e2e551a9d31609d8bad4ee5662acc8"
+    },
+    {
+      "object_id": "BE-BSW-P31-U12-A01-277f343c1077",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 31,
+      "source_excerpt": "EU-Sanktionen wie gegen den Berliner Journalisten und deutschen Staatsbürger Hüseyin Dogru, der wegen seiner Berichterstattung zu Gaza und zu Berliner palästinasolidarischen Protesten mit existenzvernichtenden Maßnahmen (Kontensperrung, Be…",
+      "source_text_sha256": "277f343c1077dd73d1fc38352c1034ced75f03a9be126c710d9b61246ab40f70"
+    },
+    {
+      "object_id": "BE-BSW-P32-U01-A01-44b5ec8ae3d1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Das BSW verurteilt die antidemokratischen Diskussionen der anderen Parteien um ein AfD- Verbot und tritt dafür ein, auf demokratischer Basis mit überzeugenderen Argumenten und besserer Politik um das Vertrauen der Wähler zu konkurrieren.",
+      "source_text_sha256": "44b5ec8ae3d12d1bbf4349d552969b46766d2852907be238fbea565a509d783d"
+    },
+    {
+      "object_id": "BE-BSW-P32-U02-cdec33c6a9c0",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 32,
+      "source_excerpt": "Direkte Demokratie – alle Berliner sollen mitbestimmen",
+      "source_text_sha256": "cdec33c6a9c0f2e70c7021c3c495d0310bff112dc974b57aee0598c510148ed9"
+    },
+    {
+      "object_id": "BE-BSW-P32-U03-A01-80183be85737",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Demokratische Teilhabe, die in der Berliner Politik in vielen Reden immer sehr hochgehalten wird – zu ihr haben nur wenige Menschen wirklich Zutritt.",
+      "source_text_sha256": "80183be85737a807674a56dcc1abd3e8001bfa81c55bbdc04419765cf0cc954c"
+    },
+    {
+      "object_id": "BE-BSW-P32-U03-A02-a59b4e24a18b",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Das wollen wir ändern und mehr direkte Demokratie in Berlin einführen.",
+      "source_text_sha256": "a59b4e24a18b2fb8d0ceebc2ef607eaf639a6943b23ac7960dce573d69a95070"
+    },
+    {
+      "object_id": "BE-BSW-P32-U04-A01-128cba46b443",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Alle Berliner sollen in unserer Stadt mitreden und mitentscheiden.",
+      "source_text_sha256": "128cba46b443fced87b1ed6790ec4d62c8571a30aaf929055bed7bb638506a6a"
+    },
+    {
+      "object_id": "BE-BSW-P32-U04-A02-bebe856b60ab",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Wir wollen die demokratische Mitbestimmung ausweiten und vereinfachen.",
+      "source_text_sha256": "bebe856b60aba75a10bcdd0e456e1f2baf2a37ae650b2b9dd1f72a78f9b08737"
+    },
+    {
+      "object_id": "BE-BSW-P32-U04-A03-48996b5d0c57",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Dazu wollen wir die verfassungsrechtliche Möglichkeit schaffen, dass regelmäßige Volksbefragungen durch den Senat oder auf Initiative des Abgeordnetenhauses, stattfinden können.",
+      "source_text_sha256": "48996b5d0c57d61c6cb14a91c628bea968fc94e9127e381d3b59fab0b72988ae"
+    },
+    {
+      "object_id": "BE-BSW-P32-U05-A01-bd484269b9a4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Alle Änderungen an der Landesverfassung müssen zwingend von der Bevölkerung abgestimmt werden.",
+      "source_text_sha256": "bd484269b9a41261d60f0aac3ea85038d8281ba9a21a16e408b7385d2b174f59"
+    },
+    {
+      "object_id": "BE-BSW-P32-U06-A01-8953bb477a4a",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Alle Gesetze, die im Abgeordnetenhaus gefasst werden, müssen der Bevölkerung zur Abstimmung vorgelegt werden, wenn innerhalb von 100 Tagen 20.000 Unterschriften für eine solche Abstimmung gesammelt werden.",
+      "source_text_sha256": "8953bb477a4ab7747dbd51814c6b84d35ce809f61fd087c93f71a4061f59fd98"
+    },
+    {
+      "object_id": "BE-BSW-P32-U07-A01-3ed4b2bacab1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Gesetze, die durch einen Volksentscheid zustande gekommen sind, können nicht durch das Abgeordnetenhaus allein geändert werden, sondern müssen der Bevölkerung erneut zur Abstimmung gestellt werden (Bsp.",
+      "source_text_sha256": "3ed4b2bacab1bc416381e62acd3b20f2a3f1e7c712df0a5aa3766c8d9b942156"
+    },
+    {
+      "object_id": "BE-BSW-P32-U07-A02-2c75d0376296",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Randbebauung Tempelhofer Feld).",
+      "source_text_sha256": "2c75d03762967d1661015a6d4ef2610e0a1352b6d496ed45fd454e1cec1108fe"
+    },
+    {
+      "object_id": "BE-BSW-P32-U08-A01-9f01b5490fbf",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Senat und Abgeordnetenhaus sollen die Möglichkeit bekommen, die Bevölkerung mit wichtigen aktuellen Fragen zu befassen (Bsp.",
+      "source_text_sha256": "9f01b5490fbfd4b98d8c464a4fb6d794167b9ba0c3a9b73e7150c3e6e62446c4"
+    },
+    {
+      "object_id": "BE-BSW-P32-U08-A02-448d6700cb20",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Bewerbung Berlins um die Ausrichtung der olympischen und paralympischen Spiele).",
+      "source_text_sha256": "448d6700cb20f948d3392a6bd8eab3b1428939b98b01a333e226ef7da75cad3d"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A01-fa6226aca9b2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Die deutsche Sprache ist keine leicht zu erlernende Sprache.",
+      "source_text_sha256": "fa6226aca9b28262d2acd33cac28f0e05d3bc7a610610161d339b73eba90f6b5"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A02-65dda0b1e5d6",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Weitere Hindernisse durch verkomplizierende Gender-Sprache hinzuzufügen, lehnt die überwiegende Zahl der Deutschen und auch der Berliner ab.",
+      "source_text_sha256": "65dda0b1e5d6b79794bb3dcc6291bf8082edef595a00040d9869dbff08796361"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A03-d5197c114281",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Dem schließen wir uns an.",
+      "source_text_sha256": "d5197c114281fdb9105bd456eb152c3185ce0a2c11c5dc81dac7b732a538a49e"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A04-64f5a77f7c87",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Es erschwert zudem die Integration von Menschen mit anderer Muttersprache, die Deutsche geworden sind oder es werden wollen.",
+      "source_text_sha256": "64f5a77f7c877fcee7f0252087f400346eed3b0fc5ca4f7dbf02005fa5924fe1"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A05-d6b7441c6a72",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Wer gendern möchte, soll dies tun, eine Pflicht lehnen wir aber ab.",
+      "source_text_sha256": "d6b7441c6a72aa306354ed6da08b7d767a49377ca0421de6a2f65f96d206b137"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A06-d5873dd30143",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Dass an Hochschulen und in studentischen Körperschaften ein De-facto-Gendersprachzwang herrscht, lehnen wir ebenfalls ab.",
+      "source_text_sha256": "d5873dd30143815b3b1a0f5e3d7482bb29f02e854d63620248c5d69640a95abf"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A07-c1f1cc4561f0",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Wir wollen, dass insbesondere Verwaltungen und Behörden sich einer Sprache bedienen, die für jeden barrierefrei und verständlich ist.",
+      "source_text_sha256": "c1f1cc4561f049b947ec4db57e215e7f0e96c178c7655dd6dad0dacefaca9df6"
+    },
+    {
+      "object_id": "BE-BSW-P32-U10-91d2b90469c0",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 32,
+      "source_excerpt": "Echter Diskriminierungsschutz statt Quoten",
+      "source_text_sha256": "91d2b90469c054942376cedc9c702b6a8ea8de466b1ee7583a5d9481a1dbdb77"
+    },
+    {
+      "object_id": "BE-BSW-P32-U11-A01-2c6520a85f9e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Einstellungen und Beförderungen im öffentlichen Dienst haben nur nach Eignung zu erfolgen, nie nach Geschlecht, Herkunft oder anderen Eigenschaften.",
+      "source_text_sha256": "2c6520a85f9e85cba529f5102ffbdd021b8e406429dc40e03859cdf5842223fa"
+    },
+    {
+      "object_id": "BE-BSW-P32-U12-A01-9fdff5a78930",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Wir wollen echten Schutz von sexuellen Minderheiten vor Gewalt und Diskriminierung.",
+      "source_text_sha256": "9fdff5a789304472d6c6bbac9d7a08308034249d36df1e2d831ba53ce5c08507"
+    },
+    {
+      "object_id": "BE-BSW-P32-U12-A02-30a57c566cd0",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 32,
+      "source_text": "Dazu gehören auch die konkrete Benennung, von welchen Personengruppen diese Gewalt ausgeht, und entsprechende Ausrichtung der Gewaltprävention.",
+      "source_text_sha256": "30a57c566cd09e3cbcee50abeeb037bf0627d24cf2d6519bd01365e4564093ee"
+    },
+    {
+      "object_id": "BE-BSW-P33-U01-A01-a661a20f41e1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 33,
+      "source_text": "Die Stelle der „Ansprechperson der Landesregierung Berlin für die Akzeptanz sexueller und geschlechtlicher Vielfalt“ hat sich nicht bewährt.",
+      "source_text_sha256": "a661a20f41e16a6387813888b53b077628c479d4738a1b66911da708304ca264"
+    },
+    {
+      "object_id": "BE-BSW-P33-U01-A02-f1e125bd511b",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 33,
+      "source_text": "Die Mittel sollten in Projekte gegen homophobe Gewalt umgelenkt werden.",
+      "source_text_sha256": "f1e125bd511bae7959a2815eb8ad5d27c0d4012f3c0e8f9e916b89da533f246f"
+    }
+  ],
+  "original_records": [
+    {
+      "object_id": "BE-BSW-P30-U01-A01-d17b190b07e3",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_AND_NORMATIVE_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_AND_NORMATIVE_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P30-U02-ec91462741eb",
+      "authoritative_terminal_fach_state": "NON_EFFECT_HISTORICAL_DIAGNOSIS_AND_PROGRAMME_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "HISTORICAL_DIAGNOSIS_AND_PROGRAMME_RATIONALE"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A01-77883df5c9e9",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PUBLIC_SERVICE_PLURALISM_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PUBLIC_SERVICE_PLURALISM_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A02-ca0e26c41b8a",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_ENTITLEMENT_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "NORMATIVE_ENTITLEMENT_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A03-b701082eed6f",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RBB_PERFORMANCE_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RBB_PERFORMANCE_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P30-U03-A04-5f83346503d8",
+      "authoritative_terminal_fach_state": "NON_EFFECT_REFORM_VS_CONTRIBUTION_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "REFORM_VS_CONTRIBUTION_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P30-U04-A01-b8ff29d82a38",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RHETORICAL_QUESTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RHETORICAL_QUESTION"
+    },
+    {
+      "object_id": "BE-BSW-P30-U04-A02-b4b8fa8c6f1d",
+      "authoritative_terminal_fach_state": "NON_EFFECT_POSITION_RESTATEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "POSITION_RESTATEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P30-U04-A03-57e28a19cb31",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EFFICIENCY_OUTCOME_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EFFICIENCY_OUTCOME_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P30-U05-A01-1fc0955a0d88",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTRIBUTION_REFORM_AND_DISTRIBUTION_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTRIBUTION_REFORM_AND_DISTRIBUTION_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P30-U05-A02-c1eec7535aeb",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P30-U06-A01-162d265b7191",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P30-U06-A02-b939a3b89c28",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTICIPATION_PROCESS_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTICIPATION_PROCESS_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P30-U07-A01-3a458fb5a6b6",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P30-U07-A02-fe45488c6b16",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RHETORICAL_OR_OPTION_QUESTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RHETORICAL_OR_OPTION_QUESTION"
+    },
+    {
+      "object_id": "BE-BSW-P30-U07-A03-2c0077125967",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RHETORICAL_OR_OPTION_QUESTION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RHETORICAL_OR_OPTION_QUESTION"
+    },
+    {
+      "object_id": "BE-BSW-P30-U08-A01-688e734e30a9",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P30-U08-A02-2f89ae455b55",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P30-U08-A03-84a5a7bd1034",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P30-U09-30d27cf30465",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A01-ff3f36d8fbd5",
+      "authoritative_terminal_fach_state": "NON_EFFECT_REGIONAL_PUBLIC_SERVICE_ROLE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "REGIONAL_PUBLIC_SERVICE_ROLE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A02-e805935e4472",
+      "authoritative_terminal_fach_state": "NON_EFFECT_REGIONALITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "REGIONALITY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A03-78fbfd88341f",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTESTED_RBB_LITIGATION_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTESTED_RBB_LITIGATION_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P30-U10-A04-8850e5fd3081",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CURRENT_LEGAL_IMPLEMENTATION_LIFECYCLE_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CURRENT_LEGAL_IMPLEMENTATION_LIFECYCLE_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A01-e334663797b2",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A02-61fb194bc250",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P30-U11-A02-C01-6c741504c32b",
+        "BE-BSW-P30-U11-A02-C02-529bf26fc435",
+        "BE-BSW-P30-U11-A02-C03-0ba181c8f983"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A03-a20cbfd937a5",
+      "authoritative_terminal_fach_state": "NON_EFFECT_TRAINING_CAPACITY_GOAL_RESTATEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TRAINING_CAPACITY_GOAL_RESTATEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P30-U11-A04-0fe6b1f98458",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P30P31-U11U01-M01-92645101377f"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P31-U01-A01-56f788d33d29",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P30P31-U11U01-M01-92645101377f"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P31-U02-966158ffefa9",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A01-7b4680d168df",
+      "authoritative_terminal_fach_state": "NON_EFFECT_WORKFORCE_MODEL_GOAL_AND_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "WORKFORCE_MODEL_GOAL_AND_RATIONALE"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A02-4d9a1d012250",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_ORGANISATIONAL_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "NORMATIVE_ORGANISATIONAL_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A03-d2b482772d81",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P31-U03-A04-20933360b450",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A01-dd25fd4df8e4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DEMOCRATIC_GOVERNANCE_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "DEMOCRATIC_GOVERNANCE_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A02-f1da18a75b74",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTRIBUTOR_PARTICIPATION_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONTRIBUTOR_PARTICIPATION_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A03-5719ba322216",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RUNDFUNKRAT_COMPOSITION_AND_PARTISAN_CHARACTERISATION_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RUNDFUNKRAT_COMPOSITION_AND_PARTISAN_CHARACTERISATION_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P31-U04-A04-07ba3d1c5e77",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "replacement_record_ids": [
+        "BE-BSW-P31-U04-A04-C01-da0e690c87e2",
+        "BE-BSW-P31-U04-A04-C02-ea2a5ce88e78"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P31-U05-A01-1d8e392ad8a4",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P31-U05-A02-a4a233daf320",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P31-U05-A03-fafa9e91c442",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P31-U06-A01-7a96b3420fae",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONFLICT_OF_INTEREST_AND_STATE_DISTANCE_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CONFLICT_OF_INTEREST_AND_STATE_DISTANCE_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P31-U06-A02-9e0a9f686325",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P31-U06-A03-416f75afc5c0",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RBB_TREATY_IMPLEMENTATION_RESTATEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RBB_TREATY_IMPLEMENTATION_RESTATEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P31-U07-A01-60c9c636a46e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P31-U08-A01-2ab516fe392a",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PUBLIC_SERVICE_MISSION_AND_EDITORIAL_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PUBLIC_SERVICE_MISSION_AND_EDITORIAL_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P31-U08-A02-cff3e0bfa399",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P31-U09-63302dbbf663",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P31-U10-A01-b3c1879f0c75",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P31-U10-A02-aa244cacad05",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STIGMATISATION_CAUSAL_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STIGMATISATION_CAUSAL_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P31-U11-A01-b6cdb149e2f1",
+      "authoritative_terminal_fach_state": "NON_EFFECT_OPPOSITION_TO_UNSPECIFIED_OTHER_PARTY_PROPOSAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "OPPOSITION_TO_UNSPECIFIED_OTHER_PARTY_PROPOSAL"
+    },
+    {
+      "object_id": "BE-BSW-P31-U12-A01-277f343c1077",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P32-U01-A01-44b5ec8ae3d1",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTY_STRATEGY_AND_OPPOSITION_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTY_STRATEGY_AND_OPPOSITION_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P32-U02-cdec33c6a9c0",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P32-U03-A01-80183be85737",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTICIPATION_ACCESS_DIAGNOSIS_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTICIPATION_ACCESS_DIAGNOSIS_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P32-U03-A02-a59b4e24a18b",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DIRECT_DEMOCRACY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "DIRECT_DEMOCRACY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P32-U04-A01-128cba46b443",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTICIPATION_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTICIPATION_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P32-U04-A02-bebe856b60ab",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SIMPLIFICATION_AND_EXPANSION_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SIMPLIFICATION_AND_EXPANSION_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P32-U04-A03-48996b5d0c57",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P32-U05-A01-bd484269b9a4",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P32-U06-A01-8953bb477a4a",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P32-U07-A01-3ed4b2bacab1",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P32-U07-A02-2c75d0376296",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXAMPLE_AND_SCOPE_ILLUSTRATION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EXAMPLE_AND_SCOPE_ILLUSTRATION"
+    },
+    {
+      "object_id": "BE-BSW-P32-U08-A01-9f01b5490fbf",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RESTATEMENT_OR_SCOPE_REFINEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RESTATEMENT_OR_SCOPE_REFINEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P32-U08-A02-448d6700cb20",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXAMPLE_AND_SCOPE_ILLUSTRATION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EXAMPLE_AND_SCOPE_ILLUSTRATION"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A01-fa6226aca9b2",
+      "authoritative_terminal_fach_state": "NON_EFFECT_LANGUAGE_DIFFICULTY_GENERAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "LANGUAGE_DIFFICULTY_GENERAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A02-65dda0b1e5d6",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PUBLIC_OPINION_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PUBLIC_OPINION_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A03-d5197c114281",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTY_POSITION_RESTATEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARTY_POSITION_RESTATEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A04-64f5a77f7c87",
+      "authoritative_terminal_fach_state": "NON_EFFECT_INTEGRATION_CAUSAL_SOURCE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "INTEGRATION_CAUSAL_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A05-d6b7441c6a72",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A06-d5873dd30143",
+      "authoritative_terminal_fach_state": "NON_EFFECT_OPPOSITION_TO_UNSPECIFIED_UNIVERSITY_STUDENT_BODY_PRACTICE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "OPPOSITION_TO_UNSPECIFIED_UNIVERSITY_STUDENT_BODY_PRACTICE"
+    },
+    {
+      "object_id": "BE-BSW-P32-U09-A07-c1f1cc4561f0",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P32-U10-91d2b90469c0",
+      "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P32-U11-A01-2c6520a85f9e",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "object_id": "BE-BSW-P32-U12-A01-9fdff5a78930",
+      "authoritative_terminal_fach_state": "NON_EFFECT_QUEER_SAFETY_AND_ANTI_DISCRIMINATION_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "QUEER_SAFETY_AND_ANTI_DISCRIMINATION_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P32-U12-A02-30a57c566cd0",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    },
+    {
+      "object_id": "BE-BSW-P33-U01-A01-a661a20f41e1",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROGRAMME_EVALUATION_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PROGRAMME_EVALUATION_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P33-U01-A02-f1e125bd511b",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "EXPLICIT_FACH_APPROVED"
+    }
+  ],
+  "deterministic_records": [
+    {
+      "parent_object_ids": [
+        "BE-BSW-P30-U11-A02-61fb194bc250"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Übernahmegarantien für rbb-Azubis",
+      "source_span": {
+        "start": 0,
+        "end": 33
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "RBB_TRAINEE_TAKEOVER_GUARANTEES",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P30-U11-A02-C01-6c741504c32b",
+      "source_text_sha256": "6c741504c32bd8fbb652f9e9e730a42d9f9656ffe2e35f42ea71a9af38351a80",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P30-U11-A02-61fb194bc250"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Sozial-Stipendien für Volontariate",
+      "source_span": {
+        "start": 35,
+        "end": 69
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SOCIAL_SCHOLARSHIPS_FOR_TRAINEESHIPS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P30-U11-A02-C02-529bf26fc435",
+      "source_text_sha256": "529bf26fc4352bb7c01c7edd2008070ed9ce0e312a1f8d2ab1c638eef091ebb4",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P30-U11-A02-61fb194bc250"
+      ],
+      "parent_joiner": " ",
+      "source_text": "bezahlte Praktika",
+      "source_span": {
+        "start": 74,
+        "end": 91
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PAID_INTERNSHIPS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P30-U11-A02-C03-0ba181c8f983",
+      "source_text_sha256": "0ba181c8f9836ed9d0c90ba49dbe4a25b20b5afe7e057d037b28646c964c16f3",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P31-U04-A04-07ba3d1c5e77"
+      ],
+      "parent_joiner": " ",
+      "source_text": "die Mitglieder stattdessen repräsentativ gelost würden, um die Breite der Bevölkerung abzubilden",
+      "source_segments": [
+        {
+          "start": 21,
+          "end": 68
+        },
+        {
+          "start": 106,
+          "end": 154
+        }
+      ],
+      "source_segment_joiner": " ",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "RUNDFUNKRAT_REPRESENTATIVE_LOTTERY",
+      "object_kind": "DETERMINISTIC_ALTERNATIVE_DESIGN_REPLACEMENT",
+      "object_id": "BE-BSW-P31-U04-A04-C01-da0e690c87e2",
+      "source_text_sha256": "da0e690c87e2cf875d4050fd15f4508ae8041250cbe4e507eae394f3500588f5",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P31-U04-A04-07ba3d1c5e77"
+      ],
+      "parent_joiner": " ",
+      "source_text": "die Mitglieder stattdessen von den Beitragszahlern gewählt würden, um die Breite der Bevölkerung abzubilden",
+      "source_segments": [
+        {
+          "start": 21,
+          "end": 47
+        },
+        {
+          "start": 74,
+          "end": 154
+        }
+      ],
+      "source_segment_joiner": " ",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "RUNDFUNKRAT_CONTRIBUTION_PAYER_ELECTION",
+      "object_kind": "DETERMINISTIC_ALTERNATIVE_DESIGN_REPLACEMENT",
+      "object_id": "BE-BSW-P31-U04-A04-C02-ea2a5ce88e78",
+      "source_text_sha256": "ea2a5ce88e78c481394477d33542c3aea24dbca9f634eddc27f50d6daf113013",
+      "source_span_basis": "UTF16_CODE_UNIT_SEGMENTS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P30-U11-A04-0fe6b1f98458",
+        "BE-BSW-P31-U01-A01-56f788d33d29"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Das sorgt für mehr soziale Vielfalt in den Redaktionen und damit für mehr Repräsentation der Bevölkerung und weniger Bubble-Effekte in den Redaktionen.",
+      "source_span": {
+        "start": 0,
+        "end": 151
+      },
+      "terminal_fach_state": "NON_EFFECT_EXPECTED_DIVERSITY_REPRESENTATION_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "EXPECTED_DIVERSITY_REPRESENTATION_OUTCOME_CLAIM",
+      "object_kind": "DETERMINISTIC_CROSS_PAGE_MERGED_SOURCE_RECORD",
+      "object_id": "BE-BSW-P30P31-U11U01-M01-92645101377f",
+      "source_text_sha256": "92645101377f6e06b0356d6a6491cb0862477e1e7954823fcf0d57be9df657e7",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    }
+  ],
+  "constraints": {
+    "fach_inferred_from_source": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "party_wide_judgement_synthesized": false
+  }
+}

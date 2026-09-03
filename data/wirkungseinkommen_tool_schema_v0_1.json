@@ -1,0 +1,20 @@
+{
+  "module": "wirkungseinkommen_automatisierungsdividende",
+  "version": "0.1",
+  "inputs": [
+    "markteinkommen",
+    "taetigkeits_score",
+    "organisations_score",
+    "datenqualitaet",
+    "automatisierungswertschoepfung",
+    "rueckkopplungssatz",
+    "sozial_wirkungsfaktor"
+  ],
+  "formulas": {
+    "wirkungseinkommen": "grunddividende + markteinkommen + wirkungsbonus - wirkungsabzug",
+    "wirkungsbonus": "bonusbasis * max(0, score) / 3 * datenqualitaet",
+    "wirkungsabzug": "abzugsbasis * abs(min(0, score)) / 3 * datenqualitaet",
+    "automatisierungsrueckkopplung": "max(0, automatisierungswertschoepfung) * rueckkopplungssatz * sozial_wirkungsfaktor"
+  },
+  "disclaimer": "Modellhafte Demonstration, keine Rechts-, Steuer- oder Sozialberatung."
+}

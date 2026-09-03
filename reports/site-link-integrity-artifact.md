@@ -1,0 +1,251 @@
+# Site Link Integrity
+Stand: generiert aus dem aktuellen Arbeitsbaum
+- HTML-Seiten: 16088
+- Interne Broken Links: 0
+- Waisenseiten ohne eingehende Links: 3891
+- Doppelte Seitentitel: 828
+## Broken Links
+## Waisenseiten
+- /afd-programm/
+- /anwendungen/
+- /ausprobieren/
+- /begriffe/6-kondratieff/
+- /begriffe/anwendungskontext-2/
+- /begriffe/biodiversitaet-2/
+- /begriffe/blindleistung-2/
+- /begriffe/c2c/
+- /begriffe/care-als-wirkleistung/
+- /begriffe/csddd-2/
+- /begriffe/csrd-2/
+- /begriffe/datenqualitaetsklasse/
+- /begriffe/demokratie-2/
+- /begriffe/diskursfaehigkeit-2/
+- /begriffe/dnsh-2/
+- /begriffe/dnsh/
+- /begriffe/dosis-2/
+- /begriffe/dosis-wirkungs-beziehung-2/
+- /begriffe/dpp-2/
+- /begriffe/dpp/
+- /begriffe/eba-esg-risikomanagement/
+- /begriffe/ecg/
+- /begriffe/efrag-2/
+- /begriffe/epd-2/
+- /begriffe/erwuenschte-wirkung-2/
+- /begriffe/esg-2/
+- /begriffe/espr-2/
+- /begriffe/esrs-2/
+- /begriffe/eu-taxonomie-2/
+- /begriffe/foerdercontrolling-2/
+- /begriffe/foerderlogik-2/
+- /begriffe/fossiler-lock-in/
+- /begriffe/frame-2/
+- /begriffe/gesellschaftliche-infrastruktur/
+- /begriffe/ghg-protocol-2/
+- /begriffe/gri-2/
+- /begriffe/h2-ready/
+- /begriffe/handlung-2/
+- /begriffe/illusory-truth-effect/
+- /begriffe/illusory-truth-effekt/
+- /begriffe/ilo-2/
+- /begriffe/ingroup-outgroup-bias/
+- /begriffe/ipbes-2/
+- /begriffe/ipcc-2/
+- /begriffe/iro-impacts-risks-opportunities/
+- /begriffe/kapital-2/
+- /begriffe/kausalitaet-zurechnung/
+- /begriffe/kommunikation-und-wirklichkeitskonstruktion/
+- /begriffe/kontraindikation-2/
+- /begriffe/lca-2/
+- /begriffe/leistung-2/
+- /begriffe/masstabskrise/
+- /begriffe/medienqualitaet-2/
+- /begriffe/motivated-reasoning/
+- /begriffe/mpd/
+- /begriffe/nace-2/
+- /begriffe/narrativ-2/
+- /begriffe/nebenwirkung-2/
+- /begriffe/negative-wirkung-2/
+- /begriffe/neoklassische-foerderlogik-2/
+- /begriffe/netto-wirkung-2/
+- /begriffe/netto-wirkungs-index/
+- /begriffe/nicht-kompensation-2/
+- /begriffe/nicht-kompensation/
+- /begriffe/normativer-massstab-2/
+- /begriffe/normativer-wert-2/
+- /begriffe/nwi-2/
+- /begriffe/oekosystemleistungen/
+- /begriffe/outcome-2/
+- /begriffe/output-2/
+- /begriffe/pai-principal-adverse-impacts/
+- /begriffe/pcf/
+- /begriffe/physisches-klimarisiko/
+- /begriffe/planet-2/
+- /begriffe/praevention-als-wirkleistung-2/
+- /begriffe/programmatik-praxis-luecke-2/
+- /begriffe/prostitution/
+- /begriffe/rebound-effekt-2/
+- /begriffe/referenzrahmen/
+- /begriffe/reparaturwohlstand-2/
+- /begriffe/resilienz-2/
+- /begriffe/reverse-merit-order-2/
+- /begriffe/rueckkopplung-2/
+- /begriffe/scheinleistung-2/
+- /begriffe/scheinwohlstand-2/
+- /begriffe/scorecards-2/
+- /begriffe/sex-work/
+- /begriffe/sfdr-2/
+- /begriffe/sozialer-infrastruktur/
+- /begriffe/synthetischer-kraftstoff/
+- /begriffe/systemischer-wert-2/
+- /begriffe/systemwirkung/
+- /begriffe/t-sroi-2/
+- /begriffe/t-sroi-3/
+- /begriffe/tiere-nicht-menschliches-leben/
+- /begriffe/tonalitaet/
+- /begriffe/transitionsrisiko/
+- /begriffe/unterlassen-2/
+- /begriffe/unternehmertypen-nach-jochen-roepke/
+- /begriffe/verlustleistung-2/
+- /begriffe/wechselwirkung-2/
+- /begriffe/westg/
+- /begriffe/who-2/
+- /begriffe/wirkleistung-2/
+- /begriffe/wirkmechanismus-2/
+- /begriffe/wirkstoff-2/
+- /begriffe/wirkung-2/
+- /begriffe/wirkung-dritter-ordnung-2/
+- /begriffe/wirkung-dritter-ordnung-3/
+- /begriffe/wirkung-erster-ordnung-2/
+- /begriffe/wirkung-erster-ordnung-3/
+- /begriffe/wirkung-zweiter-ordnung-2/
+- /begriffe/wirkung-zweiter-ordnung-3/
+- /begriffe/wirkungsanalyse-2/
+- /begriffe/wirkungsanalyse/
+- /begriffe/wirkungsarchitektur-2/
+- /begriffe/wirkungsbericht-2/
+- /begriffe/wirkungsbericht/
+- /begriffe/wirkungsblindheit-2/
+- /begriffe/wirkungscontrolling-2/
+- /begriffe/wirkungsdaten-2/
+- /begriffe/wirkungsfaehigkeit/
+- /begriffe/wirkungsgrad-2/
+- /begriffe/wirkungskennzahl/
+- /begriffe/wirkungsklasse-2/
+- /begriffe/wirkungslenkung-2/
+- /begriffe/wirkungsluecke-2/
+- /begriffe/wirkungsmanagement-2/
+- /begriffe/wirkungsmonitoring-2/
+- /begriffe/wirkungsnachweis-2/
+- /begriffe/wirkungsoekonomie-2/
+- /begriffe/wirkungsordnung/
+- /begriffe/wirkungspflicht-eigentum/
+- /begriffe/wirkungspotenzial-2/
+- /begriffe/wirkungspotenzialmanagement-2/
+- /begriffe/wirkungspraxis-2/
+- /begriffe/wirkungsprofil-2/
+- /begriffe/wirkungspruefung-2/
+- /begriffe/wirkungsrat-2/
+- /begriffe/wirkungsraum-2/
+- /begriffe/wirkungsresilienz-2/
+- /begriffe/wirkungsrisiko-2/
+- /begriffe/wirkungsrisikomanagement-2/
+- /begriffe/wirkungsrueckkopplung-2/
+- /begriffe/wirkungssimulation-2/
+- /begriffe/wirkungstraeger-2/
+- /begriffe/wirkungswahrheit-2/
+- /begriffe/wirkungswashing-2/
+- /begriffe/wirkungswohlstand-2/
+- /begriffe/wirkungswohlstand/
+- /begriffe/wirkungszeit-2/
+- /begriffe/wirkungszeit/
+- /begriffe/woek-id-2/
+- /begriffe/woek-ids-2/
+- /begriffe/wohlstand-2/
+- /begriffe/wok/
+- /begriffe/zivilgesellschaftliche-infrastruktur/
+- /bibliothek/agenda2030-sdg-esg-handout/
+- /bibliothek/apfel-t-shirt-wirkung-im-preis/
+- /bibliothek/beispiel-zange-sdg-esrs-fussnoten/
+- ... 3731 weitere
+## Doppelte Seitentitel
+- Weiterleitung: /afd-programm/, /akademie/, /anwendungen/, /ausprobieren/, /blog/, /buch/, /datenschutz/, /fa-qs-und-links/, /funktionsweise.html, /impressum/, /inhalt-und-strategie/, /leitbild/, /mitmachen/, /modell/, /natalie-weber.html, /scorecard-dashboard/, /sdg-und-sdg-plus/, /teil-i-grundlagen/, /teil-ii-methoden-and-instrumente/, /teil-iii-anwendung-and-praxis/, /teil-iv-transformation-and-zukunft/, /ueber-die-w-oek/, /ueber-die-woek/, /ueber/, /veroeffentlichungen/, /w-est-g-journal/, /wirkung-werte-journal/, /wirkungsoekonomie/
+- WÖk API · Daten: /api/, /api/v1/, /api/v1/capabilities/, /api/v1/glossary/, /api/v1/sdg-plus/, /api/v1/search/, /api/v1/wirkungsradar/
+- Archivierte Kopie - weitergeleitet: /assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0 2.html, /referenz/teil-15-internationale-ordnung-globalisierung-und-geopolitik/index 2.html, /referenz/teil-17-kritik-missverstaendnisse-und-ideologische-projektionen/index 2.html, /verstehen/index 2.html, /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html
+- DNSH / Do No Significant Harm - Weiterleitung zum Glossarbegriff DNSH – Do No Significant Harm: /begriffe/dnsh-2/, /begriffe/dnsh/
+- Nicht-Kompensation - Weiterleitung zum Glossarbegriff Nichtkompensationsprinzip: /begriffe/nicht-kompensation-2/, /begriffe/nicht-kompensation/
+- Scorecards - Weiterleitung zum Glossarbegriff Scorecard: /begriffe/scorecards-2/, /begriffe/scorecards/
+- Wirkung dritter Ordnung - Weiterleitung zum Glossarbegriff Wirkung dritter Ordnung: /begriffe/wirkung-dritter-ordnung-2/, /begriffe/wirkung-dritter-ordnung-3/
+- Wirkung erster Ordnung - Weiterleitung zum Glossarbegriff Wirkung erster Ordnung: /begriffe/wirkung-erster-ordnung-2/, /begriffe/wirkung-erster-ordnung-3/
+- Wirkung zweiter Ordnung - Weiterleitung zum Glossarbegriff Wirkung zweiter Ordnung: /begriffe/wirkung-zweiter-ordnung-2/, /begriffe/wirkung-zweiter-ordnung-3/
+- Wirkungsanalyse - Weiterleitung zum Glossarbegriff Wirkungsbewertung: /begriffe/wirkungsanalyse-2/, /begriffe/wirkungsanalyse/
+- Wirkungsbericht - Weiterleitung zum Glossarbegriff Wirkungstransparenzbericht: /begriffe/wirkungsbericht-2/, /begriffe/wirkungsbericht/
+- Wirkungswohlstand - Weiterleitung zum Glossarbegriff Neue Ordnung des Wohlstands: /begriffe/wirkungswohlstand-2/, /begriffe/wirkungswohlstand/
+- Wirkungszeit - Weiterleitung zum Glossarbegriff Zeitwirkung: /begriffe/wirkungszeit-2/, /begriffe/wirkungszeit/
+- Weiterleitung - Wirkungsökonomie: /bibliothek/agenda2030-sdg-esg-handout/, /bibliothek/apfel-t-shirt-wirkung-im-preis/, /bibliothek/beispiel-zange-sdg-esrs-fussnoten/, /bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/, /bibliothek/demokratie-schuetzen/, /bibliothek/die-neue-ordnung-des-wohlstands/, /bibliothek/energiepolitik-2026/, /bibliothek/groesster-denkfehler-klimadebatte/, /bibliothek/handbuch-wirkungskompetenz/, /bibliothek/landwirtschaft-wirkungsoekonomie/, /bibliothek/leitbild-deutschland-2030-woek/, /bibliothek/prozessarchitektur-wirkungsoekonomie/, /bibliothek/social-taxonomy-wirkungsoekonomie/, /bibliothek/t-sroi-standard-impact-controlling/, /bibliothek/wirkung-statt-kapital/, /bibliothek/wirkungseinkommensteuergesetz-westg/, /bibliothek/woek-master-items-v1-2/, /bibliothek/working-paper-wohnungsmarkt/, /blog/folgencheck-statt-faktencheck-democracy-intelligence.html, /blog/wirkungfoerderung-bildung-statt-defizitverwaltung.html, /erleben/wirkungssteuer-beispiele/, /suche/, /verstehen/regularien-standards/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/buergerbeteiligung-wirkungsdemokratie/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/lobbyismus-machtkonzentration/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/politische-wirkungspruefung/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/verwaltung-rechtsschutz-korrektur/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkung-als-rechtsprinzip/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungseinkommensteuer-westg/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungshaushalt/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsrat/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungssteuergesetz-wstg/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsumsatzsteuer-rechtsrahmen/
+- WÖk SDGs agenda2030 referenzrahmen detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-01-woek-sdgs-agenda2030-referenzrahmen-detailkonzept-v1-0/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-01-woek-sdgs-agenda2030-referenzr/
+- 7. Wirkungsökonomische Einordnung: vom Zielkatalog zur Rückkopplungsarchitektur – WÖk SDGs agenda2030 referenzrahme… | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-01-woek-sdgs-agenda2030-referenzrahmen-detailkonzept-v1-0-2/lesen/08-7-wirkungsokonomische-einordnung-vom-zielkatalog-zur-ruckkop/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-01-woek-sdgs-agenda2030-referenzr/lesen/08-7-wirkungsokonomische-einordnung-vom-zielkatalog-zur-ruckkop/
+- 12. WÖk-Mechanik: WÖk-ID, Scorecard, NWI, T-SROI und Wirkungshaushalt – WÖk SDGs agenda2030 referenzrahmen detailko… | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-01-woek-sdgs-agenda2030-referenzrahmen-detailkonzept-v1-0-2/lesen/13-12-wok-mechanik-wok-id-scorecard-nwi-t-sroi-und-wirkungshaus/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-01-woek-sdgs-agenda2030-referenzr/lesen/13-12-wok-mechanik-wok-id-scorecard-nwi-t-sroi-und-wirkungshaus/
+- WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/
+- Kurzprofil – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/00-kurzprofil/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/00-kurzprofil/
+- Inhaltsübersicht – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/01-inhaltsubersicht/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/01-inhaltsubersicht/
+- 1. Executive Summary – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/02-1-executive-summary/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/02-1-executive-summary/
+- 2. Ausgangsdiagnose: Warum die SDGs nicht vollständig ausreichen – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/03-2-ausgangsdiagnose-warum-die-sdgs-nicht-vollstandig-ausreich/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/03-2-ausgangsdiagnose-warum-die-sdgs-nicht-vollstandig-ausreich/
+- 3. Definition von SDG+ – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/04-3-definition-von-sdg/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/04-3-definition-von-sdg/
+- 4. Die sieben Kerndimensionen – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/05-4-die-sieben-kerndimensionen/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/05-4-die-sieben-kerndimensionen/
+- 5. Warum SDG+ keine offizielle UN-Kategorie ist – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/06-5-warum-sdg-keine-offizielle-un-kategorie-ist/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/06-5-warum-sdg-keine-offizielle-un-kategorie-ist/
+- 6. Wirkungsökonomische Begründung – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/07-6-wirkungsokonomische-begrundung/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/07-6-wirkungsokonomische-begrundung/
+- 7. SDG+ und Demokratie als Systemvoraussetzung – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/08-7-sdg-und-demokratie-als-systemvoraussetzung/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/08-7-sdg-und-demokratie-als-systemvoraussetzung/
+- 8. SDG+ und digitale Öffentlichkeit – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/09-8-sdg-und-digitale-offentlichkeit/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/09-8-sdg-und-digitale-offentlichkeit/
+- 9. SDG+ in WÖk-IDs, Scorecards und Portalen – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/10-9-sdg-in-wok-ids-scorecards-und-portalen/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/10-9-sdg-in-wok-ids-scorecards-und-portalen/
+- 10. Akteursgruppen und Anwendungsfälle – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/11-10-akteursgruppen-und-anwendungsfalle/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/11-10-akteursgruppen-und-anwendungsfalle/
+- 11. Messbarkeit, Datenquellen und Grenzen – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/12-11-messbarkeit-datenquellen-und-grenzen/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/12-11-messbarkeit-datenquellen-und-grenzen/
+- 12. Missbrauchsschutz: keine Meinungskontrolle, kein Social Credit – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/13-12-missbrauchsschutz-keine-meinungskontrolle-kein-social-cre/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/13-12-missbrauchsschutz-keine-meinungskontrolle-kein-social-cre/
+- Politische Anschlussfähigkeit und Umsetzungsoptionen – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/14-politische-anschlussfahigkeit-und-umsetzungsoptionen/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/14-politische-anschlussfahigkeit-und-umsetzungsoptionen/
+- 14. Website- und Portalintegration – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/15-14-website-und-portalintegration/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/15-14-website-und-portalintegration/
+- 15. Fazit – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/16-15-fazit/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/16-15-fazit/
+- Quellen und Online-Referenzen – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/17-quellen-und-online-referenzen/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/17-quellen-und-online-referenzen/
+- Website- und Portalintegration – WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/18-website-und-portalintegration/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/18-website-und-portalintegration/
+- WÖk SDG+ erweiterung detailkonzept – Onlinefassung | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/lesen/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/lesen/
+- WÖk sdg unterziele global europa deutschland detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-03-woek-sdg-unterziele-global-europa-deutschland-detailkon/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-03-woek-sdg-unterziele-global-eur/
+- Inhaltsübersicht – WÖk wirtschaft unternehmen transformation kmu tauglichkeit uebergangspfade detailkonzept 0 | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/00-inhaltsubersicht/, /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/01-inhaltsubersicht/
+- Kurzprofil – WÖk wirtschaft unternehmen transformation kmu tauglichkeit uebergangspfade detailkonzept 0 | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/00-kurzprofil/, /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/01-kurzprofil/
+- Website- und Portalintegration – WÖk wirtschaft unternehmen transformation kmu tauglichkeit uebergangspfade detailk… | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/15-website-und-portalintegration/, /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/16-website-und-portalintegration/
+- Fazit – WÖk wirtschaft unternehmen transformation kmu tauglichkeit uebergangspfade detailkonzept 0 | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/16-fazit/, /bibliothek/eintraege/download-or-document-assets-downloads-14-woek-wirtschaft-unternehmen-transformation-kmu-tauglich-2/lesen/19-fazit/
+- WÖk produkte konsum produkte als wirkungstraeger lebenszyklus detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/, /bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben/
+- WÖk produkte konsum wirkungsumsatzsteuer produktwirkungssteuer detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/, /bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun/
+- WÖk produkte konsum produktscorecards reverse merit order digitale produktpaesse detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/, /bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or/
+- WÖk produkte konsum apfelbeispiel produktwirkungsrechnung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/, /bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn/
+- WÖk produkte konsum lieferketten importlogik wirkungsvorsteuer detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/, /bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv/
+- WÖk produkte konsum konzernbeispiel csrd produktscorecard detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/, /bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec/
+- T-SROI und Impact Controlling v1.0 | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/, /bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-3/
+- SDG 8 - Menschenwürdige Arbeit und nachhaltige wirtschaftliche Entwicklung – WÖk sdg SDG+ referenzrahmen vertiefung… | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-exports-sdg-sdgplus-woek-sdg-sdgplus-referenzrahmen-vertie/lesen/09-sdg-8-menschenwurdige-arbeit-und-nachhaltige-wirtschaftliche/, /bibliothek/eintraege/download-or-document-assets-downloads-woek-sdg-sdgplus-referenzrahmen-vertiefungskonzept-lesefas-2/lesen/09-sdg-8-menschenwurdige-arbeit-und-nachhaltige-wirtschaftliche/
+- Bestands und nachlieferliste | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-16-sicherheit-resilienz-01-bestands-und-nachlieferlis/, /bibliothek/eintraege/online-version-portale-migration-vielfalt-bestands-und-nachlieferliste-index-html/
+- Sdg SDG+ block | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-16-sicherheit-resilienz-16-sdg-sdgplus-block-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-15-sdg-sdgplus-block-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-15-sdg-sdgplus-block-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-15-sdg-sdgplus-block-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-15-sdg-sdgplus-block/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-15-sdg-sdgplus-block-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-15-sdg-sdgplus-block-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-16-sdg-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-16-sdg/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-16-sdg-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-16-sdg/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-16-sdg-sdgplus-bl-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-16-sdg-sdgplus-bl/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-16-sdg-sdgplus-blo-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-16-sdg-sdgplus-blo/
+- Rang 17 digitalisierung KI: Portalstartseite und Online-Einstieg | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-00-portalstartseite-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-00-portalstartseite-pdf/
+- Rang 17 digitalisierung KI: Konzeptpapier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-01-konzeptpapier-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-01-konzeptpapier-pdf/
+- Rang 17 digitalisierung KI: Gesamtdossier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-02-gesamtdossier-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-02-gesamtdossier-pdf/
+- Detail digitale produktpaesse | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-03-detail-digitale-produktpaess-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-03-detail-digitale-produktpaess/
+- Detail wirkungsdatenraeume | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-04-detail-wirkungsdatenraeume-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-04-detail-wirkungsdatenraeume-p/
+- Detail KI governance | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-05-detail-ki-governance-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-05-detail-ki-governance-pdf/
+- Detail algorithmische fairness | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-06-detail-algorithmische-fairne-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-06-detail-algorithmische-fairne/
+- Detail digitale souveraenitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-07-detail-digitale-souveraenita-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-07-detail-digitale-souveraenita/
+- Detail cyberresilienz | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-08-detail-cyberresilienz-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-08-detail-cyberresilienz-pdf/
+- Detail plattformlogik | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-09-detail-plattformlogik-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-09-detail-plattformlogik-pdf/
+- Detail wirkungsscanner | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-10-detail-wirkungsscanner-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-10-detail-wirkungsscanner-pdf/
+- Detail interoperabilitaet register | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-11-detail-interoperabilitaet-re-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-11-detail-interoperabilitaet-re/
+- Detail audit assurance datenqualitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-12-detail-audit-assurance-daten-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-12-detail-audit-assurance-daten/
+- Quellen glossarlinks | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-17-quellen-glossarlinks-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-17-quellen-glossarlinks-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-17-quellen-glossarli-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-17-quellen-glossarli/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-17-quellen-glossarlinks-2-p/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-17-quellen-glossarlinks-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-18-quel-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-18-quel/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-18-que-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-18-que/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-18-quellen-glossa-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-18-quellen-glossa/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-18-quellen-glossar-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-18-quellen-glossar/
+- WÖk Rang17 Gesamtpaket Alle Inhalte | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-woek-rang17-gesamtpaket-alle-in-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-woek-rang17-gesamtpaket-alle-in/
+- Rang 18 wissen wissenschaft forschung: Portalstartseite und Online-Einstieg | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-00-portalstartseite-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-00-portalstartseite/
+- Rang 18 wissen wissenschaft forschung: Konzeptpapier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-01-konzeptpapier-2-p/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-01-konzeptpapier-pdf/
+- Rang 18 wissen wissenschaft forschung: Gesamtdossier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-02-gesamtdossier-2-p/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-02-gesamtdossier-pdf/
+- Detail wissenschaft als wirklichkeitspruefung | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-03-detail-wissenscha-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-03-detail-wissenscha/
+- Detail wissensrat integritaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-04-detail-wissensrat-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-04-detail-wissensrat/
+- Detail open science wissensinfrastruktur | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-05-detail-open-scien-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-05-detail-open-scien/
+- Detail forschungsbewertung wirkungsindikatoren | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-06-detail-forschungs-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-06-detail-forschungs/
+- Detail mission oriented research wirkungsinnovation | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-07-detail-mission-or-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-07-detail-mission-or/
+- Detail transdisziplinaritaet citizen science | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-08-detail-transdiszi-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-08-detail-transdiszi/
+- Detail science for policy statistik | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-09-detail-science-fo-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-09-detail-science-fo/
+- Detail forschungsdaten replikation qualitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-10-detail-forschungs-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-10-detail-forschungs/
+- Detail rechtsprechung sachverstaendige wirkungsrecht | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-11-detail-rechtsprec-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-11-detail-rechtsprec/
+- ... 748 weitere

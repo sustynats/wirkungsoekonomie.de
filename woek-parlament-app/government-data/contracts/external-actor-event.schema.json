@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/external-actor-event-1.0.schema.json",
+  "title": "WÖk ExternalActorEvent 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["external_actor_event_id", "title", "actor_names", "event_date", "source_event_ids", "government_action_status", "schema_version"],
+  "properties": {
+    "external_actor_event_id": {"type": "string"},
+    "title": {"type": "string"},
+    "actor_names": {"type": "array", "items": {"type": "string"}},
+    "event_date": {"type": ["string", "null"]},
+    "source_event_ids": {"type": "array", "items": {"type": "string"}},
+    "government_action_status": {"const": "NOT_A_GOVERNMENT_ACTION"},
+    "schema_version": {"const": "1.0"}
+  }
+}

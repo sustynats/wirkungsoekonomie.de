@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Entscheidungsseite (Beispiel) — Wirkungsportal Parlament</title>
+<link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<div class="demo-banner">Synthetischer Demonstrationsfall — dieses Vorhaben ist fiktiv. Struktur und Komponenten sind die Spezifikation; Inhalte sind Platzhalter der Redaktion (CONTENT_REQUIRED).</div>
+
+<div class="trust-band">
+  <div class="container">
+    <span><strong>Herausgegeben vom Institut für Wirkungsökonomie</strong></span>
+    <span>Analysierte Fassung: Ausschussfassung v2 (fiktiv) · Stand 14.08.2026 · <a href="#trust">Wie dieser Wirkungscheck entstanden ist</a></span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="container">
+    <a class="brand" href="index.html">Wirkungsportal Parlament
+      <small>Bundespolitik verstehen · Wirkungen prüfen · Entscheidungen rückkoppeln</small>
+    </a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#diese-woche">Anstehend</a>
+      <a href="entscheidung-beispiel.html" aria-current="page">Entscheidungen</a>
+      <a href="index.html#unabhaengigkeit">Methodik &amp; Transparenz</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Kopf der Entscheidungsseite -->
+  <section class="section" style="padding-bottom:1rem">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between">
+        <p class="kicker" style="margin:0">Bundestag · Gesetzentwurf · <span class="chip chip--demo">Synthetischer Beispielfall</span></p>
+        <div class="modus" role="group" aria-label="Ansichtsmodus">
+          <button type="button" aria-pressed="true" id="modus-public">Für alle</button>
+          <button type="button" aria-pressed="false" id="modus-parl">Für Parlament</button>
+        </div>
+      </div>
+      <h1 style="margin-top:.5rem">Verwaltungsleistungen digital beantragen</h1>
+      <p style="color:var(--muted);font-size:.9rem;margin-bottom:.4rem">Originaltitel (fiktiv): Beispielentwurf eines Gesetzes zur durchgängig digitalen Antragstellung von Verwaltungsleistungen</p>
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0 0">
+        <span class="chip chip--relevanz">Sehr hohe Wirkungsrelevanz</span>
+        <span class="chip">2. Beratung erwartet: KW 38</span>
+        <span class="rec rec--bedingungen">Wirkungslogik unter Bedingungen tragfähig</span>
+        <a class="chip" href="#warum-pruefen" style="text-decoration:none">Warum prüfen wir dieses Vorhaben?</a>
+      </div>
+      <ol class="stepper" aria-label="Parlamentarisches Verfahren">
+        <li class="done">Eingebracht</li>
+        <li class="done">1. Beratung</li>
+        <li aria-current="step">Im Ausschuss</li>
+        <li class="open">Beschlussempfehlung erwartet</li>
+        <li class="open">2./3. Beratung — noch nicht angesetzt</li>
+      </ol>
+      <p style="font-size:.78rem;color:var(--muted);margin-top:.4rem">Verfahrenswege können abweichen; Phasen werden amtlichen Quellen entnommen und nicht erfunden. Finale Abstimmungsfassung verifiziert: <strong>Nein</strong> — noch kein finales Fachvotum zur Schlussabstimmung.</p>
+    </div>
+  </section>
+
+  <!-- 60 Sekunden -->
+  <section class="section" id="sechzig" style="padding-top:.6rem">
+    <div class="container">
+      <div class="sixty">
+        <header>
+          <h2>In 60 Sekunden</h2>
+          <span class="hint">für Menschen zwischen zwei Terminen — Fachdossier weiter unten</span>
+        </header>
+        <dl>
+          <div class="cell"><dt>Was wird entschieden?</dt><dd>Ob Anträge auf Verwaltungsleistungen durchgängig digital gestellt werden können — mit Assistenz für Menschen ohne digitale Zugänge. <em>(fiktiver Fall)</em></dd></div>
+          <div class="cell"><dt>Wann?</dt><dd>2. Beratung erwartet in KW 38; Ausschussfassung v2 liegt vor.</dd></div>
+          <div class="cell"><dt>Was ändert sich unmittelbar?</dt><dd><span class="ebene ebene--fakt">Sachverhalt</span> Zuständigkeiten und Fristen für digitale Verfahren; Behörden müssen einen zweiten Zugangsweg vorhalten.</dd></div>
+          <div class="cell"><dt>Was soll erreicht werden?</dt><dd><span class="ebene ebene--fakt">Sachverhalt</span> Kürzere Bearbeitungszeiten und weniger Zugangshürden (offizielles Ziel der Vorlage).</dd></div>
+          <div class="cell"><dt>Größte Chance</dt><dd><span class="ebene ebene--analyse">Wirkungsanalyse</span> Spürbar schnellere Verfahren für einen Großteil der Anträge — wenn der Vollzug mitwächst.</dd></div>
+          <div class="cell"><dt>Größtes Risiko</dt><dd><span class="ebene ebene--analyse">Wirkungsanalyse</span> Ausschluss von Menschen ohne digitale Zugänge, falls der assistierte Zugang unterfinanziert bleibt. <span class="evid evid--gap">Rote Linie: Zugang</span></dd></div>
+          <div class="cell"><dt>Wichtigste Unsicherheit</dt><dd>Kommunale Umsetzungskapazität — hierzu fehlt belastbare aktuelle Evidenz. <span class="evid">DATA_GAP</span></dd></div>
+          <div class="cell"><dt>Zentraler Wirkpfad</dt><dd>Regeländerung → digitale Verfahren → Behörden-Praxis → Antragstellende → kürzere Wartezeiten. <a href="#wirkpfad">Pfad ansehen</a></dd></div>
+          <div class="cell cell--full"><dt>Wirkungsökonomische Empfehlung</dt><dd><span class="rec rec--bedingungen">Wirkungslogik unter Bedingungen tragfähig</span> — 1) Der Engpass ist Vollzug, nicht Recht: Kapazitätsaufbau muss mitbeschlossen werden. 2) Der assistierte Zugangsweg braucht gesicherte Finanzierung (Nichtkompensation: Zugang darf nicht gegen Tempo verrechnet werden). 3) Wirkung wäre messbar — Indikatoren und Korrekturtrigger liegen vor. <a href="#empfehlung">Vollständige Begründung</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wirkpfad -->
+  <section class="section" id="wirkpfad" style="padding-top:0">
+    <div class="container">
+      <p class="kicker">Wirkpfad</p>
+      <h2>Über welchen Weg soll Wirkung entstehen?</h2>
+      <ol class="pfad">
+        <li><strong>Politische Entscheidung</strong> Gesetz beschließt digitale Antragstellung + Assistenzweg.
+          <p class="kante"><strong>Mechanismus:</strong> Rechtspflicht · <span class="evid">Evidenz: HIGH</span></p></li>
+        <li><strong>Unmittelbare Systemänderung</strong> Fristen, Zuständigkeiten, Standards für Behörden.
+          <p class="kante"><strong>Mechanismus:</strong> Verwaltungsvollzug · <span class="evid">MEDIUM</span></p></li>
+        <li class="bruch"><strong>Umsetzung/Verhalten</strong> Behörden stellen Verfahren um; Personal wird geschult.
+          <p class="kante"><strong>Mögliche Bruchstelle:</strong> kommunale Kapazität — mehr Pflicht ändert den Engpass nicht unmittelbar. <span class="evid evid--gap">DATA_GAP</span></p></li>
+        <li><strong>Betroffene</strong> Antragstellende nutzen digitale oder assistierte Wege.
+          <p class="kante"><strong>Mechanismus:</strong> Nutzungsverhalten · <span class="evid">MODEL_ASSUMPTION</span></p></li>
+        <li><strong>Zustandsveränderung</strong> Kürzere Wartezeiten; Teilhabe bleibt gesichert — oder eben nicht.
+          <p class="kante"><strong>Messbar über:</strong> Bearbeitungsdauer, Nutzungsquoten beider Wege · <span class="evid">Indikatoren definiert</span></p></li>
+      </ol>
+      <details><summary style="font-size:.85rem;color:var(--green-dark);cursor:pointer">Textfassung des Wirkpfads (Screenreader/linear)</summary>
+        <p style="font-size:.88rem">1 Entscheidung führt per Rechtspflicht (Evidenz hoch) zu 2 geänderten Fristen und Zuständigkeiten; diese wirken über den Verwaltungsvollzug (Evidenz mittel) auf 3 die Umsetzung in Behörden — hier liegt die mögliche Bruchstelle kommunale Kapazität (Datenlücke); erst dann erreichen 4 digitale oder assistierte Wege die Antragstellenden (Modellannahme) und führen zu 5 messbaren Zustandsveränderungen (Bearbeitungsdauer, Nutzungsquoten).</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Interaktiv prüfen -->
+  <section class="section section--ivory" id="interaktiv">
+    <div class="container">
+      <p class="kicker">Interaktiv prüfen</p>
+      <h2>Was möchten Sie betrachten?</h2>
+      <p>Deterministische Sofortreaktionen aus der redaktionellen Regel-Registry — dieselben Angaben führen immer zum selben Ergebnis. Keine Punktzahl, kein Parteien-Matching, keine Speicherung.</p>
+      <div class="szenarien" role="group" aria-label="Szenario wählen">
+        <button class="szenario" aria-pressed="true" type="button"><strong>Zustimmung</strong><span>Der Entwurf wird in der Ausschussfassung beschlossen.</span></button>
+        <button class="szenario" aria-pressed="false" type="button"><strong>Status quo</strong><span>Keine Entscheidung — der heutige Zustand ist auch ein Wirkungspfad.</span></button>
+        <button class="szenario" aria-pressed="false" type="button"><strong>Änderungsoption</strong><span>Vorliegender Änderungsantrag: Stufenweise Einführung. (fiktiv)</span></button>
+      </div>
+      <div class="sofort" aria-live="polite">
+        <h4>Das verändert sich unmittelbar</h4>
+        <p style="margin:0 0 .5rem">Die Antragstellung wird als digitales Regelverfahren verankert; Behörden erhalten Umsetzungsfristen. <span class="evid">direct</span></p>
+        <h4>Daraus folgt noch nicht automatisch</h4>
+        <p style="margin:0 0 .5rem">Kürzere Bearbeitungszeiten — wenn Personal- und IT-Kapazität der Engpass sind, ändert die Rechtspflicht diesen Engpass nicht unmittelbar. <span class="evid">partial</span></p>
+        <h4>Entscheidend wird deshalb als Nächstes</h4>
+        <p style="margin:0">Ob Kapazitätsaufbau und die Finanzierung des assistierten Zugangswegs mitbeschlossen werden. <span class="evid">conditional</span></p>
+      </div>
+      <p style="font-size:.78rem;color:var(--muted);margin-top:.7rem">Prototyp-Hinweis: Im Produkt wechseln die Sofortreaktionen je Szenario aus der Registry (IMMEDIATE_FEEDBACK_RULES); hier statisch dargestellt.</p>
+    </div>
+  </section>
+
+  <!-- Dossier-Auszug: Ebenen + Claim + Quellen-Drawer -->
+  <section class="section" id="dossier">
+    <div class="container">
+      <p class="kicker">Fachdossier · Auszug</p>
+      <h2>Drei Ebenen, sichtbar getrennt</h2>
+      <div class="grid-2">
+        <div class="card">
+          <span class="ebene ebene--fakt">Sachverhalt</span>
+          <p style="font-size:.92rem;margin:0">Die Ausschussfassung v2 verpflichtet Behörden, Anträge digital entgegenzunehmen und einen assistierten Zugangsweg vorzuhalten. <em>(fiktiv, CONTENT_REQUIRED)</em></p>
+        </div>
+        <div class="card">
+          <span class="ebene ebene--analyse">Wirkungsanalyse</span>
+          <p style="font-size:.92rem;margin:0">Plausibler Hauptpfad: Verfahrensbeschleunigung. Zweitordnung: Entlastung wirkt erst nach Umstellungsaufwand; Drittordnung: Verlagerungseffekte zwischen Zugangswegen.</p>
+        </div>
+        <div class="card" style="grid-column:1/-1">
+          <span class="ebene ebene--bewertung">WÖk-Bewertung</span>
+          <p style="font-size:.92rem;margin:0">Am Referenzrahmen: stärkt Teilhabe und handlungsfähigen Staat (Mensch/Demokratie) — unter der Bedingung gesicherter Zugänge. SDG-Mapping: relevant ≠ gut; Richtung je Ziel ausgewiesen (STRENGTHENS/MIXED/UNCLEAR).</p>
+        </div>
+      </div>
+
+      <div class="claim">
+        <span class="id">CLAIM wp-demo-007 · Typ: MODEL_ASSUMPTION · Evidenz: LIMITED</span>
+        <p style="margin:.25rem 0 0"><strong>Behauptung:</strong> Die Regel verkürzt die durchschnittliche Bearbeitungsdauer spürbar.</p>
+        <details>
+          <summary>Quelle ansehen — Herleitung, Passage, Gegenquelle</summary>
+          <div class="drawer-body">
+            <dl>
+              <dt>Quelle</dt><dd>[Platzhalter: Evaluationsbericht, Institution, Jahr] — CONTENT_REQUIRED</dd>
+              <dt>Relevante Passage</dt><dd>[Zitat mit Fundstelle]</dd>
+              <dt>Evidenzklasse</dt><dd>LIMITED — Übertragbarkeit auf Bundesebene nicht gesichert.</dd>
+              <dt>Gegenquelle</dt><dd>[Platzhalter: Studie mit abweichendem Befund] — wird ausgewiesen, nicht versteckt.</dd>
+              <dt>Was würde diese Annahme kippen?</dt><dd>Belege, dass Bearbeitungsdauer primär von Personalkapazität abhängt.</dd>
+            </dl>
+          </div>
+        </details>
+      </div>
+
+      <div class="rote-linie">
+        <h3>Nicht kompensierbar: Zugang für alle</h3>
+        <p style="font-size:.92rem;margin:0">Schnellere Verfahren für viele dürfen den Ausschluss weniger nicht „aufwiegen". Verschlechtert sich der Zugang für Menschen ohne digitale Möglichkeiten, begrenzt das die Gesamtbewertung — unabhängig von allen anderen Vorteilen (Reverse Merit Order). Wo die Grenze selbst demokratische Abwägung braucht: <span class="evid">BOUNDARY_REVIEW_REQUIRED</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Empfehlung -->
+  <section class="section" id="empfehlung" style="padding-top:0">
+    <div class="container">
+      <div class="empfehlung">
+        <p class="kicker" style="margin-bottom:.2rem">Wirkungsökonomische Empfehlung</p>
+        <p style="margin:.1rem 0 .4rem"><span class="rec rec--bedingungen" style="font-size:.95rem">Wirkungslogik unter Bedingungen tragfähig</span></p>
+        <p style="font-size:.9rem;color:var(--muted)">Regelbasiert hergeleitet, redaktionell geprüft, menschlich freigegeben — nie von einer KI erzeugt. Bei verifizierter Ja/Nein-Abstimmung ergänzen wir die Übersetzung („spricht derzeit eher für Zustimmung unter den genannten Bedingungen").</p>
+        <div class="cols">
+          <div class="col"><h4>Warum?</h4><ol><li>Wirkpfad plausibel, Ziel messbar.</li><li>Engpass liegt im Vollzug — Bedingung: Kapazitätsaufbau.</li><li>Rote Linie Zugang ist absicherbar (Assistenzweg).</li></ol></div>
+          <div class="col"><h4>Was würde die Empfehlung ändern?</h4><ul><li>Evidenz, dass der assistierte Weg nicht finanziert wird → „derzeit nicht tragfähig".</li><li>Belege, dass Kapazität kein Engpass ist → „tragfähig" ohne Bedingung.</li></ul></div>
+          <div class="col"><h4>Stärkstes Gegenargument</h4><ul><li>Umstellungsaufwand bindet genau die Kapazität, die Verfahren heute schnell hält — fair geprüft in der Gegenprobe.</li></ul></div>
+          <div class="col"><h4>Was bleibt politisch?</h4><ul><li>Tempo vs. Übergangsaufwand ist eine Wertentscheidung des Parlaments — wir machen sie sichtbar, nicht überflüssig.</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Region + Werkzeuge + KI -->
+  <section class="section section--ivory">
+    <div class="container">
+      <div class="grid-2">
+        <div class="card">
+          <p class="kicker">Regionale Rückkopplung</p>
+          <h3>Was müsste im Wahlkreis beobachtbar sein?</h3>
+          <p style="font-size:.9rem">Wenn der Wirkpfad trägt: kürzere Bearbeitungszeiten in den örtlichen Behörden. <strong>Für diese Wirkungsfrage liegt derzeit keine ausreichend passende regionale Kennzahl vor.</strong> Wir zeigen keine Ersatzkennzahl, nur weil sie vorhanden ist. <span class="evid evid--gap">DATA_GAP</span></p>
+          <p style="font-size:.78rem;color:var(--muted);margin:0">Jeder künftige Regionalwert trägt: Quelle · Beobachtungszeitpunkt · tatsächliche Ebene · echt/Proxy.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Für diesen Fall besonders nützlich</p>
+          <h3>WÖk-Werkzeugkasten</h3>
+          <p style="font-size:.9rem;margin-bottom:.6rem">Vollzugsproblem erkannt → passende Instrumente aus dem Bestand (keine Neubauten):</p>
+          <p style="font-size:.9rem;margin:0">
+            <a href="https://wirkungsoekonomie.de/wirkungssteuerung/wirkungshaushalt/">Wirkungshaushalt</a> ·
+            <a href="https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/">Gesetzliche Wirkungsrückkopplung</a> ·
+            <a href="https://wirkungsoekonomie.de/werkzeuge/wirkungsdatenraeume/">Wirkungsdaten &amp; Governance</a> ·
+            <a href="https://wirkungsoekonomie.de/werkzeuge/impact-controlling/">Wirkungscontrolling</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="ki-box" style="margin-top:1.2rem" id="ki">
+        <p class="kicker" style="margin-bottom:.2rem">Freiwillige Vertiefung</p>
+        <h3>Mit der WÖK-KI weiterdenken</h3>
+        <p class="ki-note">Die KI-Auswertung verändert das veröffentlichte Fachvotum des Instituts nicht. Sie erhält nur den Fallkontext — nie Partei, Fraktion, Namen, E-Mail oder Kennungen.</p>
+        <label class="consent"><input type="checkbox" id="ki-consent"> <span>Ich möchte den Fallkontext (Thema, Ziel, Engpass, rote Linien) freiwillig an die WÖK-KI übertragen, um Gegenargumente, Datenlücken und Prüffragen zu vertiefen.</span></label>
+        <button class="btn btn--primary" id="ki-start" aria-disabled="true" type="button">Vertiefung starten</button>
+        <span style="font-size:.8rem;color:var(--muted);margin-left:.6rem">Vorschläge: stärkstes Gegenargument · schwächste Annahme · drei parlamentarische Prüffragen</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Versionen + Trust -->
+  <section class="section" id="versionen">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <p class="kicker">Änderungshistorie</p>
+          <h2>Fassungen &amp; Wirkungsänderungen</h2>
+          <ul class="versions">
+            <li class="material"><time>14.08.2026</time> Ausschussfassung v2 analysiert — Wirkungsänderung: <strong>MATERIAL</strong> (Assistenzweg ergänzt). Empfehlung aktualisiert: von „nacharbeiten" zu „unter Bedingungen tragfähig". <a href="#">Warum?</a></li>
+            <li><time>28.07.2026</time> Änderungsantrag erfasst — Wirkungsänderung: MINOR (Fristverschiebung).</li>
+            <li><time>02.07.2026</time> Entwurf v1 analysiert — Erstbewertung „Vor Entscheidung nacharbeiten".</li>
+          </ul>
+          <p style="font-size:.8rem;color:var(--muted)">Ein alter Wirkungscheck sieht nie wie eine aktuelle Analyse aus: Ältere Fassungen tragen ein Banner und bleiben zitierfähig archiviert.</p>
+        </div>
+        <div class="trust-card" id="trust">
+          <h3>Trust-Card</h3>
+          <dl>
+            <div><dt>Herausgeber</dt><dd>Institut für Wirkungsökonomie</dd></div>
+            <div><dt>Analysierte Fassung</dt><dd>Ausschussfassung v2 (fiktiv)</dd></div>
+            <div><dt>Methodik</dt><dd>WÖk-Entscheidungsstandard v1.0 <a href="#">öffentlich</a></dd></div>
+            <div><dt>Quellenstand</dt><dd>14.08.2026</dd></div>
+            <div><dt>Redaktion / Gegenprüfung</dt><dd>Redaktionskürzel · Red-Team abgeschlossen</dd></div>
+            <div><dt>Korrekturen</dt><dd>keine · <a href="#">Korrekturhistorie</a></dd></div>
+          </dl>
+          <a href="#" class="btn" style="border-color:var(--gold);color:var(--gold)">Wie dieser Wirkungscheck entstanden ist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container">
+    <div><h4>Wirkungsportal Parlament</h4>Herausgegeben vom Institut für Wirkungsökonomie.<br>Kontakt: wirkungscheck@wirkungsoekonomie.de</div>
+    <div><h4>Transparenz</h4><a href="index.html#unabhaengigkeit">Unabhängigkeit</a><br><a href="#">Methodik</a><br><a href="#warum-pruefen" id="warum-pruefen">Auswahl der Vorgänge</a><br><a href="#">Fehler melden</a></div>
+    <div><h4>Vertiefen</h4><a href="https://wirkungsoekonomie.de/begriffe/">Glossar</a><br><a href="https://akademie.wirkungsoekonomie.de">Akademie</a><br><a href="https://wirkungsoekonomie.de/quellenarchiv/">Quellenarchiv</a></div>
+    <div class="legal">Prototyp (Claude-Lane) · synthetischer Fall · keine Rechtsberatung, keine Personen- oder Parteibewertung.</div>
+  </div>
+</footer>
+
+<script>
+/* Prototyp-Interaktion (nur Demo-Zustände, keine Logik/keine Speicherung) */
+document.querySelectorAll('.szenario').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.szenario').forEach(b => b.setAttribute('aria-pressed', 'false'));
+  btn.setAttribute('aria-pressed', 'true');
+}));
+const consent = document.getElementById('ki-consent'), start = document.getElementById('ki-start');
+consent.addEventListener('change', () => start.setAttribute('aria-disabled', consent.checked ? 'false' : 'true'));
+const mp = document.getElementById('modus-public'), mparl = document.getElementById('modus-parl');
+[mp, mparl].forEach(b => b.addEventListener('click', () => {
+  mp.setAttribute('aria-pressed', b === mp); mparl.setAttribute('aria-pressed', b === mparl);
+}));
+</script>
+</body>
+</html>

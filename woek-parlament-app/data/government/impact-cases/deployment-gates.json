@@ -1,0 +1,18 @@
+{
+  "data_1_2_validation": "PASS",
+  "known_overmerge_regressions": "PASS",
+  "public_export": "PASS",
+  "fach_import": "PASS",
+  "source_vs_view": "PASS",
+  "semantic_ui": "PASS",
+  "accessibility": "PASS",
+  "build": "PASS",
+  "privacy": "PASS",
+  "background_automation": "PASS",
+  "operational_connectivity": "DEGRADED",
+  "dropbox_oauth": "FAIL_UNAUTHORIZED",
+  "discord_direct_messages": "NOT_CONFIGURED",
+  "daily_newsletter": "CONFIGURED_BLOCKED_BY_DROPBOX",
+  "updated_at": "2026-08-18T09:38:00+02:00",
+  "note": "Government Data 1.2, die technische Cloud-Automation, der Fachimport und die öffentlichen Release-Gates sind bestanden. Die laufende Übergabekette ist operativ noch eingeschränkt: Der letzte echte Cloud-Schreibversuch zu Dropbox wurde mit HTTP 401 abgewiesen; Ursache kann Token- oder Berechtigungsumfang sein. Discord-Direktnachrichten sind nicht konfiguriert. Der Tagesnewsletter ist serverseitig eingerichtet, kann neue Deployments aber erst nach erfolgreicher Dropbox-Anbindung beziehen. Nicht verifizierte Identitätsfälle bleiben im Review-Store ausgeschlossen."
+}

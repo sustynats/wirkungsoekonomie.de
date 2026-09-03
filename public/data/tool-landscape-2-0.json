@@ -1,0 +1,2213 @@
+{
+  "version": "2.0",
+  "generated_at": "2026-08-02T19:45:43.661Z",
+  "principle": "Erst Alltag, dann Begriff. Erst Nutzerfrage, dann Methode. Erst verstehen, dann ausprobieren.",
+  "public_entrypoints": [
+    {
+      "title": "Debatten-Kompass",
+      "question": "Was antworte ich, wenn ein Narrativ im Raum steht?",
+      "text": "Prüft nicht nur wahr oder falsch, sondern Behauptung, Frame, Folgencheck, Wirkpfad und konkrete Reaktion.",
+      "href": "wirkungsradar/",
+      "status": "Live",
+      "type": "Wirkungswerkzeug",
+      "canonical_url": "https://wirkungsoekonomie.de/wirkungsradar/"
+    },
+    {
+      "title": "WÖk-Kompass",
+      "question": "Wie verstehe ich Wirkung in wenigen Minuten?",
+      "text": "Erklärt Wirkung, Wirkungspotenzial, positive Netto-Wirkung, Rückkopplung und Schutzregeln alltagsnah.",
+      "href": "kompass.html",
+      "status": "Live",
+      "type": "Orientierung",
+      "canonical_url": "https://wirkungsoekonomie.de/kompass.html"
+    },
+    {
+      "title": "WÖk-Scanner",
+      "question": "Welches Werkzeug passt zu meiner Frage?",
+      "text": "Führt von Nutzerfrage und Zielgruppe zu passender Methode, Demo, Rechner oder Vertiefung.",
+      "href": "anwendungen/scanner.html",
+      "status": "Arbeitsfassung",
+      "type": "Tool-Finder",
+      "canonical_url": "https://wirkungsoekonomie.de/anwendungen/scanner.html"
+    },
+    {
+      "title": "Produktwirkung verstehen",
+      "question": "Warum ist ein billiges Produkt manchmal teuer für andere?",
+      "text": "Zeigt Scorecard, WÖk-ID, Datenqualität, Reverse Merit Order und Preisrückkopplung an einem Produktbeispiel.",
+      "href": "erleben/produktwirkungsrechner/",
+      "status": "Demo",
+      "type": "Rechner",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/produktwirkungsrechner/"
+    },
+    {
+      "title": "Medienwirkung verstehen",
+      "question": "Welche Wirkung hat Sprache auf Öffentlichkeit und Demokratie?",
+      "text": "Analysiert Quellenklarheit, Frame, Tonalität, Emotionalisierung und Resonanzrisiko ohne Wahrheitsrichter-Inszenierung.",
+      "href": "erleben/medienwirkungscheck/",
+      "status": "Demo",
+      "type": "Check",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/medienwirkungscheck/"
+    },
+    {
+      "title": "Impact Controlling",
+      "question": "Wie wird aus Daten eine bessere Entscheidung?",
+      "text": "Trennt operative Netto-Wirkung, NWI, IOI, T-SROI, Datenqualität, Audit und Lernschleife.",
+      "href": "erleben/impact-controlling-rechner/",
+      "status": "Demo",
+      "type": "Controlling",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/impact-controlling-rechner/"
+    },
+    {
+      "title": "Wohnwirkung verstehen",
+      "question": "Was macht Wohnen für Mensch, Planet und Demokratie wirksam?",
+      "text": "Bündelt Bezahlbarkeit, Gesundheit, Energie, Fläche, Teilhabe, Vertrauen und kommunale Handlungsfähigkeit.",
+      "href": "erleben/wohnwirkungsrechner/",
+      "status": "Demo",
+      "type": "Rechner",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wohnwirkungsrechner/"
+    }
+  ],
+  "counts": {
+    "tools": 113,
+    "key_features": 2,
+    "demos": 34,
+    "method_overviews": 5,
+    "labor_or_model": 13
+  },
+  "tools": [
+    {
+      "title": "Wirkung",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/wirkung/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungspotenzial",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungsrisiko",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "labor_or_model",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungsbewertung",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/wirkungsbewertung/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Netto-Wirkung",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/netto-wirkung/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Positive Netto-Wirkung",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Mensch, Planet, Demokratie",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/mensch-planet-demokratie/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "SDGs / Agenda 2030",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/sdgs/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "SDG+",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/sdg-plus/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungsraum",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/wirkungsraum/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungsgrenzen",
+      "canonical_url": null,
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Begriffsseite in Rekonstruktion",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Nichtkompensationsprinzip",
+      "canonical_url": "https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/",
+      "cluster": "A",
+      "cluster_title": "Begriffe, Zielrahmen & Bewertungslogik",
+      "type": [
+        "Methode"
+      ],
+      "status": "Live",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertungslogik",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "NACE-Mapping",
+      "canonical_url": null,
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "WÖk-ID-Register",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/woek-id-register/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Public Research",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "SDG+-Register",
+      "canonical_url": null,
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Datenquellen",
+      "canonical_url": null,
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Quellenkatalog",
+      "canonical_url": null,
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "FinalScore",
+      "canonical_url": null,
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wohnwirkungsindex / WIX-Wohn",
+      "canonical_url": "https://wirkungsoekonomie.de/wirkungsfelder/wohnen-stadt/detailkonzepte/wohnwirkungsindex-wix-wohn/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungscontrolling",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Transformationswirkung",
+      "canonical_url": null,
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "WStG",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungssteuergesetz/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "WUStG",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsumsatzsteuer/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "WEstG",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungseinkommensteuer/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungsförderung",
+      "canonical_url": null,
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungspunkte / Bonuslogik",
+      "canonical_url": null,
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungslenkung",
+      "canonical_url": null,
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungsrückkopplung",
+      "canonical_url": null,
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungskredit",
+      "canonical_url": null,
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Stranded-Asset-Check",
+      "canonical_url": null,
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Wirkungsportfolio Kapital",
+      "canonical_url": null,
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Prüf- und Versionierungslogik",
+      "canonical_url": null,
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Missbrauchsschutz",
+      "canonical_url": null,
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Anti-Greenwashing",
+      "canonical_url": null,
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Anti-Impact-Washing",
+      "canonical_url": null,
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Beschwerde-/Korrekturpfade",
+      "canonical_url": null,
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": []
+    },
+    {
+      "title": "Impact Controlling",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Managementinstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "key_feature",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "IOI",
+        "T-SROI",
+        "Scorecards",
+        "KII statt KPI"
+      ]
+    },
+    {
+      "title": "Impact-of-Investment / IOI",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/impact-of-investment/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Kennzahl",
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Impact Controlling",
+        "NWI",
+        "T-SROI"
+      ]
+    },
+    {
+      "title": "T-SROI",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/t-sroi/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Kennzahl",
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Impact Controlling",
+        "Wirkungsfonds",
+        "Transformationswirkung"
+      ]
+    },
+    {
+      "title": "Benchmarks & Archetypen",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/benchmarks-archetypen/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Scorecards",
+        "WÖk-IDs",
+        "Wirkungsrat"
+      ]
+    },
+    {
+      "title": "Reverse Merit Order",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/reverse-merit-order/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Bewertungslogik"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Scorecards",
+        "Wirkungsrat",
+        "Wirkungsumsatzsteuer"
+      ]
+    },
+    {
+      "title": "Wirkungsrat",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsrat/",
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Governance"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsregister",
+        "Wirkungsaudit",
+        "Benchmarks & Archetypen"
+      ]
+    },
+    {
+      "title": "Netto-Wirkungs-Index / NWI",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/netto-wirkungs-index/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Kennzahl"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Scorecards",
+        "WÖk-IDs",
+        "T-SROI"
+      ]
+    },
+    {
+      "title": "Scorecards",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/scorecards/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Bewertungsinstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "NWI",
+        "Benchmarks & Archetypen",
+        "Reverse Merit Order"
+      ]
+    },
+    {
+      "title": "Produktscorecards",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/produktscorecards/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Bewertungsinstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsumsatzsteuer",
+        "Digitale Produktpässe",
+        "Produktwirkungsrechner"
+      ]
+    },
+    {
+      "title": "KII statt KPI",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/kii-statt-kpi/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Managementinstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Impact Controlling",
+        "Unternehmens-Wirkungscheck",
+        "Wirkungsrisiko-Matrix"
+      ]
+    },
+    {
+      "title": "Wirkungsrisiko-Matrix",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsrisiko-matrix/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Hybrid-Risk-Radar",
+        "KI-Wirkungsrisiko-Check",
+        "Resilienz-Radar Kommune"
+      ]
+    },
+    {
+      "title": "Produktwirkungsrechner",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/produktwirkungsrechner/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Produktscorecards",
+        "Wirkungsumsatzsteuer",
+        "Reverse Merit Order"
+      ]
+    },
+    {
+      "title": "Scorecard-Dashboard",
+      "canonical_url": "https://wirkungsoekonomie.de/scorecard-dashboard.html/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Scorecards",
+        "NWI",
+        "Produktscorecards"
+      ]
+    },
+    {
+      "title": "WÖk-Scanner",
+      "canonical_url": "https://wirkungsoekonomie.de/anwendungen/scanner.html/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "key_feature",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Produktwirkungsrechner",
+        "Medienwirkungscheck",
+        "Unternehmens-Wirkungscheck"
+      ]
+    },
+    {
+      "title": "Impact-Controlling-Rechner",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/impact-controlling-rechner/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Rechner"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Impact Controlling",
+        "NWI",
+        "IOI",
+        "T-SROI"
+      ]
+    },
+    {
+      "title": "Unternehmens-Wirkungscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Impact Controlling",
+        "KII statt KPI",
+        "ESG-zu-WÖk-Mapping"
+      ]
+    },
+    {
+      "title": "Wohnwirkungsrechner WIX-Wohn",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wohnwirkungsrechner/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Sozialraum-Resilienzprofil",
+        "Wirkungshaushalt",
+        "Versicherbarkeits-/Resilienzcheck"
+      ]
+    },
+    {
+      "title": "Stranded-Asset-Check Wohnen",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wohnwirkungsrechner/stranded-asset-check/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Check"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wohnwirkungsrechner WIX-Wohn",
+        "Versicherbarkeits-/Resilienzcheck",
+        "Wirkungsrisiko-Matrix"
+      ]
+    },
+    {
+      "title": "Vermieter-Check",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wohnwirkungsrechner/vermieter-check/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Check"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wohnwirkungsrechner WIX-Wohn",
+        "Sozialraum-Resilienzprofil",
+        "Wirkungshaushalt"
+      ]
+    },
+    {
+      "title": "Wirkungsschule-Check",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wirkungsschule-check/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Check"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Bildungswirkungsindex",
+        "Schulraum-Wirkungscheck",
+        "Wirkungsportfolio"
+      ]
+    },
+    {
+      "title": "Wirkungsförderungs-Check",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wirkungsfoerderungs-check/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Check"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsschule-Check",
+        "Wirkungsportfolio",
+        "Zugehörigkeits- und Teilgabeindex"
+      ]
+    },
+    {
+      "title": "Fach-Zukunft-Modulgenerator",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/fach-zukunft-generator/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsschule-Check",
+        "Wirkungsportfolio",
+        "Open-Science-Check"
+      ]
+    },
+    {
+      "title": "Wirkungsportfolio-Generator",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wirkungsportfolio-generator/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsportfolio",
+        "Bildungswirkungsindex",
+        "Wirkungsförderungs-Check"
+      ]
+    },
+    {
+      "title": "Wirkungsportfolio",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsportfolio/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsportfolio-Generator",
+        "Wirkungsschule-Check",
+        "Scorecards"
+      ]
+    },
+    {
+      "title": "Bildungswirkungsindex / BWK",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/bildungswirkungsindex-bwk/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsschule-Check",
+        "Schulraum-Wirkungscheck",
+        "Wirkungsportfolio"
+      ]
+    },
+    {
+      "title": "Schulraum-Wirkungscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/schulraum-wirkungscheck/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Bildungswirkungsindex",
+        "Wirkungsschule-Check",
+        "Sozialraum-Resilienzprofil"
+      ]
+    },
+    {
+      "title": "Forschungs-Wirkungscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/forschungs-wirkungscheck/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Open-Science-Check",
+        "Innovations-Wirkungsportfolio",
+        "Wissensrat-/Integritätsregister"
+      ]
+    },
+    {
+      "title": "Open-Science- und Replikationscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/open-science-und-replikationscheck/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Forschungs-Wirkungscheck",
+        "Wissensrat-/Integritätsregister",
+        "Datenqualität & Assurance"
+      ]
+    },
+    {
+      "title": "WÖk-IDs",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/woek-ids/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Dateninstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Scorecards",
+        "Datenqualität & Assurance",
+        "Wirkungsdatenräume"
+      ]
+    },
+    {
+      "title": "Datenqualität & Assurance",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/datenqualitaet-assurance/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Dateninstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "WÖk-IDs",
+        "Wirkungsaudit",
+        "Digitale Produktpässe"
+      ]
+    },
+    {
+      "title": "Digitale Produktpässe",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/digitale-produktpaesse/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Dateninstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "method_overview",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": true,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Produktscorecards",
+        "Wirkungsdatenräume",
+        "Datenqualität & Assurance"
+      ]
+    },
+    {
+      "title": "Wirkungsdatenräume",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsdatenraeume/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Dateninstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "method_overview",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": true,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "WÖk-IDs",
+        "Digitale Produktpässe",
+        "Datenraum-Reifegradcheck"
+      ]
+    },
+    {
+      "title": "Digitale Produktpässe und Wirkungsdatenräume",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Daten",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Digitale Produktpässe",
+        "Wirkungsdatenräume",
+        "Produktscorecards"
+      ]
+    },
+    {
+      "title": "Datenraum-Reifegradcheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/datenraum-reifegradcheck/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsdatenräume",
+        "WÖk-IDs",
+        "Datenqualität & Assurance"
+      ]
+    },
+    {
+      "title": "Digital-Souveränitätscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/digital-souveraenitaetscheck/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Cyberresilienz-Check",
+        "Kritische-Infrastruktur-Monitor",
+        "Wirkungsdatenräume"
+      ]
+    },
+    {
+      "title": "Cyberresilienz-Check",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/cyberresilienz-check/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Check"
+      ],
+      "status": "Methodik",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Digital-Souveränitätscheck",
+        "Kritische-Infrastruktur-Monitor",
+        "Hybrid-Risk-Radar"
+      ]
+    },
+    {
+      "title": "Kritische-Infrastruktur-Monitor",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/kritische-infrastruktur-monitor/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Methodik",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Infrastruktur-Stabilitätsindex",
+        "Cyberresilienz-Check",
+        "Resilienz-Radar Kommune"
+      ]
+    },
+    {
+      "title": "Infrastruktur-Stabilitätsindex",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/infrastruktur-stabilitaetsindex/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Kritische-Infrastruktur-Monitor",
+        "Resilienz-Radar Kommune",
+        "Wirkungshaushalt"
+      ]
+    },
+    {
+      "title": "Wirkungsregister",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsregister/",
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Register",
+        "Governance"
+      ],
+      "status": "Methodik",
+      "public_position": "method_overview",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": true,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsrat",
+        "Wirkungsaudit",
+        "WÖk-IDs"
+      ]
+    },
+    {
+      "title": "Wissensrat-/Integritätsregister",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wissensrat-integritaetsregister/",
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Governance",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Open-Science-Check",
+        "Wirkungsregister",
+        "Forschungs-Wirkungscheck"
+      ]
+    },
+    {
+      "title": "Wirkungsumsatzsteuer",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsumsatzsteuer/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Produktscorecards",
+        "Reverse Merit Order",
+        "Wirkungssteuergesetz"
+      ]
+    },
+    {
+      "title": "Wirkungssteuergesetz WStG",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungssteuergesetz/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsumsatzsteuer",
+        "Wirkungseinkommensteuer",
+        "Wirkungshaushalt"
+      ]
+    },
+    {
+      "title": "Wirkungseinkommensteuer",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungseinkommensteuer/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Maschinenwertschöpfungsbeitrag",
+        "Automatisierungsdividende",
+        "Wirkungsfonds"
+      ]
+    },
+    {
+      "title": "Wirkungshaushalt",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungshaushalt/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Öffentliche Beschaffung",
+        "Wirkungsregister",
+        "Wirkungsrat"
+      ]
+    },
+    {
+      "title": "Gesundheitswirkungscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/wirkungsfelder/gesundheit-pflege/tools/gesundheitswirkungscheck/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Präventionswirkungslogik",
+        "Pflegewirkungscheck",
+        "T-SROI"
+      ]
+    },
+    {
+      "title": "Präventionswirkungslogik",
+      "canonical_url": "https://wirkungsoekonomie.de/wirkungsfelder/gesundheit-pflege/tools/praeventionswirkungsrechner/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Gesundheitswirkungscheck",
+        "Wirkungshaushalt",
+        "T-SROI"
+      ]
+    },
+    {
+      "title": "Öffentliche Beschaffung",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/oeffentliche-beschaffung/",
+      "cluster": "E",
+      "cluster_title": "Rückkopplung & Steuerung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_overview",
+      "method_bucket": "Rückkopplung",
+      "demo": false,
+      "method_overview": true,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungshaushalt",
+        "Wirkungsregister",
+        "Datenqualität & Assurance"
+      ]
+    },
+    {
+      "title": "Wirkungsaudit",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsaudit/",
+      "cluster": "G",
+      "cluster_title": "Governance, Qualitätssicherung & Lernen",
+      "type": [
+        "Governance"
+      ],
+      "status": "Methodik",
+      "public_position": "method_overview",
+      "method_bucket": "Governance",
+      "demo": false,
+      "method_overview": true,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Datenqualität & Assurance",
+        "Wirkungsregister",
+        "Wirkungsrat"
+      ]
+    },
+    {
+      "title": "Maschinenwertschöpfungsbeitrag",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/maschinenwertschoepfungsbeitrag/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Kapitalinstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Automatisierungsdividende",
+        "Wirkungseinkommensteuer",
+        "Wirkungsfonds"
+      ]
+    },
+    {
+      "title": "Automatisierungsdividende",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/automatisierungsdividende/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Kapitalinstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Maschinenwertschöpfungsbeitrag",
+        "Wirkungsfonds",
+        "Wirkungsrenten-Rechner"
+      ]
+    },
+    {
+      "title": "Automatisierungsdividenden-Rechner",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/automatisierungsdividenden-rechner/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Rechner"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Automatisierungsdividende",
+        "Wirkungsfonds",
+        "Maschinenwertschöpfungsbeitrag"
+      ]
+    },
+    {
+      "title": "Automatisierungs- und Wirkungseinkommensrechner",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/automatisierungs-wirkungseinkommensrechner/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Automatisierungsdividende",
+        "Wirkungseinkommensteuer",
+        "Wirkungsfonds"
+      ]
+    },
+    {
+      "title": "Wirkungsrenten-Rechner",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/wirkungsrenten-rechner/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Rechner"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsfonds",
+        "Automatisierungsdividende",
+        "Wirkungseinkommensteuer"
+      ]
+    },
+    {
+      "title": "Resilienz-Radar Kommune",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/resilienz-radar-kommune/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Methodik",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungshaushalt",
+        "Kritische-Infrastruktur-Monitor",
+        "Sozialraum-Resilienzprofil"
+      ]
+    },
+    {
+      "title": "Sozialraum-Resilienzprofil",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/sozialraum-resilienzprofil/",
+      "cluster": "C",
+      "cluster_title": "Bewertungsinstrumente & Kennzahlen",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Bewertung",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wohnwirkungsrechner",
+        "Resilienz-Radar Kommune",
+        "Wirkungshaushalt"
+      ]
+    },
+    {
+      "title": "Zugehörigkeits- und Teilgabeindex",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/zugehoerigkeits-und-teilgabeindex/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Sozialraum-Resilienzprofil",
+        "Integrations-Infrastruktur-Score",
+        "Wirkungsförderungs-Check"
+      ]
+    },
+    {
+      "title": "Integrations-Infrastruktur-Score",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/integrations-infrastruktur-score/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Sozialraumprofil Migration",
+        "Arbeitsmarkt-Wirkungsmonitor Migration",
+        "Diskursrisiko-Radar Migration"
+      ]
+    },
+    {
+      "title": "Kommunale Integrationsarchitektur-Check",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/kommunale-integrationsarchitektur-check/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Check"
+      ],
+      "status": "Methodik",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Integrations-Infrastruktur-Score",
+        "Sozialraumprofil Migration",
+        "Resilienz-Radar Kommune"
+      ]
+    },
+    {
+      "title": "Sozialraumprofil Migration und Vielfalt",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/sozialraumprofil-migration-vielfalt/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Integrations-Infrastruktur-Score",
+        "Kommunale Integrationsarchitektur-Check",
+        "Zugehörigkeits- und Teilgabeindex"
+      ]
+    },
+    {
+      "title": "Arbeitsmarkt-Wirkungsmonitor Migration",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/arbeitsmarkt-wirkungsmonitor-migration/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Integrations-Infrastruktur-Score",
+        "Diskursrisiko-Radar Migration",
+        "Wirkungseinkommensteuer"
+      ]
+    },
+    {
+      "title": "Wirkungsfonds",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsfonds/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Kapitalinstrument"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsfonds-Simulator",
+        "Wirkungskredit-Rechner",
+        "Kapitalwirkungscheck"
+      ]
+    },
+    {
+      "title": "Wirkungsfonds-Simulator",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsfonds-simulator/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsfonds",
+        "Automatisierungsdividende",
+        "Wirkungsrenten-Rechner"
+      ]
+    },
+    {
+      "title": "Kapitalwirkungscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/kapitalwirkungscheck/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Kapitalinstrument",
+        "Check"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Kapital",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Portfolio-Wirkungsrating",
+        "Wirkungskredit-Rechner",
+        "Wirkungsfonds"
+      ]
+    },
+    {
+      "title": "Portfolio-Wirkungsrating",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/portfolio-wirkungsrating/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Kapitalinstrument"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Kapital",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Kapitalwirkungscheck",
+        "ESG-zu-WÖk-Mapping",
+        "Wirkungsfonds"
+      ]
+    },
+    {
+      "title": "Wirkungskredit-Rechner",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/wirkungskredit-rechner/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Rechner"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Kapitalwirkungscheck",
+        "Wirkungsfonds",
+        "Datenqualität & Assurance"
+      ]
+    },
+    {
+      "title": "Versicherbarkeits-/Resilienzcheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/versicherbarkeits-resilienzcheck/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Kapitalinstrument",
+        "Check"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Kapital",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungsrisiko-Matrix",
+        "Kapitalwirkungscheck",
+        "Resilienz-Radar Kommune"
+      ]
+    },
+    {
+      "title": "ESG-zu-WÖk-Mapping",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/esg-zu-woek-mapping/",
+      "cluster": "B",
+      "cluster_title": "Datenbasis & Operationalisierung",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Daten",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "WÖk-IDs",
+        "Scorecards",
+        "Portfolio-Wirkungsrating"
+      ]
+    },
+    {
+      "title": "Innovations-Wirkungsportfolio",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/innovations-wirkungsportfolio/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Controlling",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Forschungs-Wirkungscheck",
+        "Kapitalwirkungscheck",
+        "T-SROI"
+      ]
+    },
+    {
+      "title": "Medienwirkungscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/medienwirkungscheck/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Medienwirkungscheck Demo",
+        "Sprach- und Framing-Analyse",
+        "Plattform-Wirkungscheck"
+      ]
+    },
+    {
+      "title": "Medienwirkungscheck Demo",
+      "canonical_url": "https://wirkungsoekonomie.de/erleben/medienwirkungscheck/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Medienwirkungscheck",
+        "Sprach- und Framing-Analyse",
+        "Desinformations-Risikocheck"
+      ]
+    },
+    {
+      "title": "Sprach- und Framing-Analyse",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/sprach-und-framing-analyse/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Medienwirkungscheck",
+        "Politische Wirkungsprüfung",
+        "Diskursrisiko-Radar Migration"
+      ]
+    },
+    {
+      "title": "Plattform-Wirkungscheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/plattform-wirkungscheck/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Medienwirkungscheck",
+        "Desinformations-Risikocheck",
+        "Digital-Souveränitätscheck"
+      ]
+    },
+    {
+      "title": "Desinformations-Risikocheck",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/desinformations-risikocheck/",
+      "cluster": "F",
+      "cluster_title": "Kapital, Finanzierung & Risiko",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "labor_or_model",
+      "method_bucket": "Kapital",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Medienwirkungscheck",
+        "Hybrid-Risk-Radar",
+        "Plattform-Wirkungscheck"
+      ]
+    },
+    {
+      "title": "Politische Wirkungsprüfung",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/politische-wirkungspruefung/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Wirkungshaushalt",
+        "Sprach- und Framing-Analyse",
+        "Wirkungsrat"
+      ]
+    },
+    {
+      "title": "Diskursrisiko-Radar Migration",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/diskursrisiko-radar-migration/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Methodik",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Sprach- und Framing-Analyse",
+        "Desinformations-Risikocheck",
+        "Sozialraumprofil Migration"
+      ]
+    },
+    {
+      "title": "Hybrid-Risk-Radar",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/hybrid-risk-radar/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo"
+      ],
+      "status": "Methodik",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Cyberresilienz-Check",
+        "Desinformations-Risikocheck",
+        "Kritische-Infrastruktur-Monitor"
+      ]
+    },
+    {
+      "title": "KI-Wirkungsrisiko-Check",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/ki-wirkungsrisiko-check/",
+      "cluster": "H",
+      "cluster_title": "Demos, Rechner & Anwendungschecks",
+      "type": [
+        "Demo",
+        "Check"
+      ],
+      "status": "Demo",
+      "public_position": "demo",
+      "method_bucket": "Demo",
+      "demo": true,
+      "method_overview": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Plattform-Wirkungscheck",
+        "Datenqualität & Assurance",
+        "Digital-Souveränitätscheck"
+      ]
+    }
+  ]
+}

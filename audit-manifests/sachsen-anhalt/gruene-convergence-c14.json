@@ -1,0 +1,521 @@
+{
+  "schema_version": "woek-st-gruene-convergence-component-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C14",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {
+        "id": 5378362830,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R26",
+        "updated_at": "2026-08-22T06:07:58Z",
+        "body_sha256": "ff8f88fc5cad3d0ea1ce2a599676590b6976b1d47d922d36605650c01c8fe2df"
+      },
+      {
+        "id": 5378376978,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R27",
+        "updated_at": "2026-08-22T06:10:58Z",
+        "body_sha256": "d4a7e0cbe0329025a586eab1b36a721399e36abb56c6ffdd744a6d7a3c2325ea"
+      },
+      {
+        "id": 5378383848,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R28",
+        "updated_at": "2026-08-22T06:12:41Z",
+        "body_sha256": "e8be6f6347fafbbf6fa02d4f23f31bcaebb9ff5694fe52000d5148e1f9be8131"
+      },
+      {
+        "id": 5378387854,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R29",
+        "updated_at": "2026-08-22T06:13:39Z",
+        "body_sha256": "66d7c7653715c839ae891e9441a6e86d8c5a2c9be53734c985d6afae16649b11"
+      },
+      {
+        "id": 5374230266,
+        "marker": "ST-GRUENE-A08.2",
+        "updated_at": "2026-08-21T19:18:37Z",
+        "body_sha256": "6d26ba432bab5d5e4c840a78b31c6d4911ad90a97c46ec57db287f744eaccc12"
+      },
+      {
+        "id": 5374271663,
+        "marker": "ST-GRUENE-A09.2",
+        "updated_at": "2026-08-21T19:22:54Z",
+        "body_sha256": "348db8063eb71d52b1dab50c57daa422fc826f9925e91fd589f6b41314909ef6"
+      }
+    ],
+    "required_facts": {
+      "WÖk GRÜNE RETRO-PARITY — R26": [
+        "historische Working-IDs: **`0449–0464` = 16/16**",
+        "wiederverwendete source-v2 Effektleaves: `10`",
+        "**lokale aktive Leaf-Union: `21`**"
+      ],
+      "WÖk GRÜNE RETRO-PARITY — R27": [
+        "historische Working-IDs **`0465–0487` = 23/23**",
+        "wiederverwendete source-v2 Effect-Leaves: `26`",
+        "**lokale aktive Leaf-Union: `39`**"
+      ],
+      "WÖk GRÜNE RETRO-PARITY — R28": [
+        "historische Working-IDs **`0488–0526` = 39/39**",
+        "wiederverwendete source-v2 Effect-Leaves: `26`",
+        "**lokale aktive Leaf-Union: `49`**"
+      ],
+      "WÖk GRÜNE RETRO-PARITY — R29": [
+        "historische Working-IDs **`0527–0537` = 11/11**",
+        "wiederverwendete source-v2 Effect-Leaves: `17`",
+        "**lokale aktive Leaf-Union: `22`**"
+      ]
+    },
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C13"
+  },
+  "scope": {
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "windows": [
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R26",
+      "historical_first": "0449",
+      "historical_last": "0464",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0450",
+          "0451",
+          "0452",
+          "0453",
+          "0454",
+          "0455",
+          "0457",
+          "0458",
+          "0459",
+          "0461",
+          "0463"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0449"
+        ],
+        "parent_provenance_nonleaf": [
+          "0456",
+          "0460",
+          "0462",
+          "0464"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a08-0044-schulgeldfreiheit-ausbildungsberufe",
+          "ltw-2026-st-gruene-ps-a08-0045-tarifliche-ausbildungsverguetung",
+          "ltw-2026-st-gruene-ps-a08-0046-jugendberufsagenturen-erhalt-ausbau",
+          "ltw-2026-st-gruene-ps-a08-0047-praktika-werkstatttage-ausbauen",
+          "ltw-2026-st-gruene-ps-a08-0048-laendliche-erwachsenenbildung-ausbauen",
+          "ltw-2026-st-gruene-ps-a08-0049-digitale-hybride-erwachsenenbildung",
+          "ltw-2026-st-gruene-ps-a08-0050-bildungszeit-lohnfortzahlungs-pauschale",
+          "ltw-2026-st-gruene-ps-a08-0051-bildungszeit-haertefallfonds-kursgebuehren",
+          "ltw-2026-st-gruene-ps-a08-0052-alphabetisierung-grundbildung-ausbauen",
+          "ltw-2026-st-gruene-ps-a08-0053-deutschkurse-berufsbegleitend-flexibel"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0458": [
+          "ltw-2026-st-gruene-ps-a08-0047-praktika-werkstatttage-ausbauen"
+        ],
+        "0460": [
+          "ltw-2026-st-gruene-ps-a08-0048-laendliche-erwachsenenbildung-ausbauen",
+          "ltw-2026-st-gruene-ps-a08-0049-digitale-hybride-erwachsenenbildung"
+        ],
+        "0462": [
+          "ltw-2026-st-gruene-ps-a08-0050-bildungszeit-lohnfortzahlungs-pauschale",
+          "ltw-2026-st-gruene-ps-a08-0051-bildungszeit-haertefallfonds-kursgebuehren"
+        ],
+        "0464": [
+          "ltw-2026-st-gruene-ps-a08-0053-deutschkurse-berufsbegleitend-flexibel"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 11,
+        "versioned_active_effect_leaves": 10,
+        "non_effect_source_leaves": 1,
+        "parent_provenance_nonleaves": 4,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 22,
+        "authoritative_effect_leaves": 21
+      }
+    },
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R27",
+      "historical_first": "0465",
+      "historical_last": "0487",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0465",
+          "0466",
+          "0467",
+          "0469",
+          "0471",
+          "0472",
+          "0474",
+          "0475",
+          "0476",
+          "0477",
+          "0481",
+          "0482",
+          "0484"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0468",
+          "0470",
+          "0479",
+          "0485"
+        ],
+        "parent_provenance_nonleaf": [
+          "0473",
+          "0478",
+          "0480",
+          "0483",
+          "0486",
+          "0487"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a08-0054-wissenschaftsfreiheit-hochschulautonomie-schuetzen",
+          "ltw-2026-st-gruene-ps-a08-0055-hochschul-grundfinanzierung-erhoehen",
+          "ltw-2026-st-gruene-ps-a08-0056-zukunftsvertrag-bundesmittel-voll-weiterreichen",
+          "ltw-2026-st-gruene-ps-a08-0057-reallabore-testfelder-strukturwandel",
+          "ltw-2026-st-gruene-ps-a08-0058-hochschule-baulich-digital-barrierefrei",
+          "ltw-2026-st-gruene-ps-a08-0059-studentisches-prorektorat",
+          "ltw-2026-st-gruene-ps-a08-0060-viertelparitaet-statusgruppen",
+          "ltw-2026-st-gruene-ps-a08-0061-studierendenraetekonferenz-koerperschaft",
+          "ltw-2026-st-gruene-ps-a08-0062-zweitstudiengebuehren-abschaffen",
+          "ltw-2026-st-gruene-ps-a08-0063-studentische-praktika-vergueten",
+          "ltw-2026-st-gruene-ps-a08-0064-semesterticket-preis-entkoppeln-bundesinitiative",
+          "ltw-2026-st-gruene-ps-a08-0065-tenure-track-ausbauen",
+          "ltw-2026-st-gruene-ps-a08-0066-wisszeitvg-reform-bundesinitiative",
+          "ltw-2026-st-gruene-ps-a08-0067-studierendenwerke-wohnen",
+          "ltw-2026-st-gruene-ps-a08-0068-studierendenwerke-mensen",
+          "ltw-2026-st-gruene-ps-a08-0069-studierendenwerke-kinderbetreuung",
+          "ltw-2026-st-gruene-ps-a08-0070-studierendenwerke-psychosoziale-beratung",
+          "ltw-2026-st-gruene-ps-a08-0071-department-strukturen-hochschulen",
+          "ltw-2026-st-gruene-ps-a08-0072-verbindliche-gleichstellungs-zielquoten",
+          "ltw-2026-st-gruene-ps-a08-0073-gleichstellungscontrolling",
+          "ltw-2026-st-gruene-ps-a09-0001-hochschul-investitionsprogramme-klima",
+          "ltw-2026-st-gruene-ps-a09-0002-hochschul-klimaschutzfonds",
+          "ltw-2026-st-gruene-ps-a09-0003-pakt-nachhaltige-hochschulen",
+          "ltw-2026-st-gruene-ps-a09-0004-tierversuche-reduzieren",
+          "ltw-2026-st-gruene-ps-a09-0005-tierversuchsfreie-verfahren-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0006-bundesrahmen-versuchstierforschung"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0468": [
+          "ltw-2026-st-gruene-ps-a08-0059-studentisches-prorektorat",
+          "ltw-2026-st-gruene-ps-a08-0060-viertelparitaet-statusgruppen",
+          "ltw-2026-st-gruene-ps-a08-0061-studierendenraetekonferenz-koerperschaft"
+        ],
+        "0475": [
+          "ltw-2026-st-gruene-ps-a08-0064-semesterticket-preis-entkoppeln-bundesinitiative"
+        ],
+        "0477": [
+          "ltw-2026-st-gruene-ps-a08-0065-tenure-track-ausbauen",
+          "ltw-2026-st-gruene-ps-a08-0066-wisszeitvg-reform-bundesinitiative"
+        ],
+        "0473": [
+          "ltw-2026-st-gruene-ps-a08-0067-studierendenwerke-wohnen",
+          "ltw-2026-st-gruene-ps-a08-0068-studierendenwerke-mensen",
+          "ltw-2026-st-gruene-ps-a08-0069-studierendenwerke-kinderbetreuung",
+          "ltw-2026-st-gruene-ps-a08-0070-studierendenwerke-psychosoziale-beratung"
+        ],
+        "0478": [
+          "ltw-2026-st-gruene-ps-a08-0071-department-strukturen-hochschulen"
+        ],
+        "0480": [
+          "ltw-2026-st-gruene-ps-a08-0072-verbindliche-gleichstellungs-zielquoten",
+          "ltw-2026-st-gruene-ps-a08-0073-gleichstellungscontrolling"
+        ],
+        "0483": [
+          "ltw-2026-st-gruene-ps-a09-0001-hochschul-investitionsprogramme-klima",
+          "ltw-2026-st-gruene-ps-a09-0002-hochschul-klimaschutzfonds"
+        ],
+        "0486": [
+          "ltw-2026-st-gruene-ps-a09-0004-tierversuche-reduzieren",
+          "ltw-2026-st-gruene-ps-a09-0005-tierversuchsfreie-verfahren-foerdern"
+        ],
+        "0487": [
+          "ltw-2026-st-gruene-ps-a09-0006-bundesrahmen-versuchstierforschung"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [
+        {
+          "from": "ltw-2026-st-gruene-ps-a08-0071-department-strukturen-hochschulen",
+          "relation": "DURATION_COMPONENT_DEDUPED_TO",
+          "to": "0477",
+          "count": 0
+        }
+      ],
+      "counts": {
+        "historical_active_effect_leaves": 13,
+        "versioned_active_effect_leaves": 26,
+        "non_effect_source_leaves": 4,
+        "parent_provenance_nonleaves": 6,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 43,
+        "authoritative_effect_leaves": 39
+      }
+    },
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R28",
+      "historical_first": "0488",
+      "historical_last": "0526",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0488",
+          "0489",
+          "0492",
+          "0493",
+          "0494",
+          "0495",
+          "0497",
+          "0498",
+          "0501",
+          "0502",
+          "0505",
+          "0506",
+          "0507",
+          "0508",
+          "0510",
+          "0511",
+          "0513",
+          "0514",
+          "0516",
+          "0517",
+          "0519",
+          "0520",
+          "0521"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0490",
+          "0491",
+          "0496",
+          "0500",
+          "0515",
+          "0518",
+          "0525"
+        ],
+        "parent_provenance_nonleaf": [
+          "0499",
+          "0503",
+          "0504",
+          "0509",
+          "0512",
+          "0522",
+          "0523",
+          "0524",
+          "0526"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a09-0007-kultur-barrierefreier-umbau",
+          "ltw-2026-st-gruene-ps-a09-0008-kostenloser-museumssonntag",
+          "ltw-2026-st-gruene-ps-a09-0009-theater-investitionsstau-fonds",
+          "ltw-2026-st-gruene-ps-a09-0010-kuenstlerfoerderprogramme-laendlich-raeume",
+          "ltw-2026-st-gruene-ps-a09-0011-kuenstler-arbeitsstipendien",
+          "ltw-2026-st-gruene-ps-a09-0012-kuenstlernachlaesse-oeffentlich-zugaenglich",
+          "ltw-2026-st-gruene-ps-a09-0013-arbeits-aufenthaltsstipendien-kuenstler",
+          "ltw-2026-st-gruene-ps-a09-0014-gamesfoerderung-mmf-evaluation",
+          "ltw-2026-st-gruene-ps-a09-0015-freie-szene-foerdermittel-erhoehen",
+          "ltw-2026-st-gruene-ps-a09-0016-freie-szene-mehrjaehrige-foerdervertraege",
+          "ltw-2026-st-gruene-ps-a09-0017-soziokulturelle-zentren-verlaesslich-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0018-clubfoerderprogramm-klein-mittel",
+          "ltw-2026-st-gruene-ps-a09-0019-kulturfoerderung-laendliche-verteilung",
+          "ltw-2026-st-gruene-ps-a09-0020-bibliotheken-sonntagsoeffnung",
+          "ltw-2026-st-gruene-ps-a09-0021-mobile-bibliotheken-schulkooperation",
+          "ltw-2026-st-gruene-ps-a09-0022-denkmal-eigentuemer-sanierung-unterstuetzen",
+          "ltw-2026-st-gruene-ps-a09-0023-denkmal-neue-nutzungen-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0024-kulturelle-bildung-alle-bildungsphasen",
+          "ltw-2026-st-gruene-ps-a09-0025-erinnerungskultur-institutionen-staerken",
+          "ltw-2026-st-gruene-ps-a09-0026-baukultur-bildungs-curriculum",
+          "ltw-2026-st-gruene-ps-a09-0027-baukultur-orte-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0028-kunstprojekte-schule",
+          "ltw-2026-st-gruene-ps-a09-0029-literaturaktionen-schule",
+          "ltw-2026-st-gruene-ps-a09-0030-bildungstafel-schule",
+          "ltw-2026-st-gruene-ps-a09-0031-kuenstlerstipendien-hochschulen",
+          "ltw-2026-st-gruene-ps-a09-0032-jugendkulturelle-angebote-ausbauen"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0490": [
+          "ltw-2026-st-gruene-ps-a09-0007-kultur-barrierefreier-umbau",
+          "ltw-2026-st-gruene-ps-a09-0008-kostenloser-museumssonntag"
+        ],
+        "0499": [
+          "ltw-2026-st-gruene-ps-a09-0009-theater-investitionsstau-fonds"
+        ],
+        "0503": [
+          "ltw-2026-st-gruene-ps-a09-0010-kuenstlerfoerderprogramme-laendlich-raeume",
+          "ltw-2026-st-gruene-ps-a09-0011-kuenstler-arbeitsstipendien"
+        ],
+        "0504": [
+          "ltw-2026-st-gruene-ps-a09-0014-gamesfoerderung-mmf-evaluation",
+          "ltw-2026-st-gruene-ps-a09-0015-freie-szene-foerdermittel-erhoehen",
+          "ltw-2026-st-gruene-ps-a09-0016-freie-szene-mehrjaehrige-foerdervertraege"
+        ],
+        "0506": [
+          "ltw-2026-st-gruene-ps-a09-0018-clubfoerderprogramm-klein-mittel"
+        ],
+        "0509": [
+          "ltw-2026-st-gruene-ps-a09-0019-kulturfoerderung-laendliche-verteilung"
+        ],
+        "0512": [
+          "ltw-2026-st-gruene-ps-a09-0021-mobile-bibliotheken-schulkooperation"
+        ],
+        "0522": [
+          "ltw-2026-st-gruene-ps-a09-0026-baukultur-bildungs-curriculum",
+          "ltw-2026-st-gruene-ps-a09-0027-baukultur-orte-foerdern"
+        ],
+        "0523": [
+          "ltw-2026-st-gruene-ps-a09-0028-kunstprojekte-schule",
+          "ltw-2026-st-gruene-ps-a09-0029-literaturaktionen-schule",
+          "ltw-2026-st-gruene-ps-a09-0030-bildungstafel-schule"
+        ],
+        "0524": [
+          "ltw-2026-st-gruene-ps-a09-0031-kuenstlerstipendien-hochschulen"
+        ],
+        "0526": [
+          "ltw-2026-st-gruene-ps-a09-0032-jugendkulturelle-angebote-ausbauen"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [
+        {
+          "from": "0512",
+          "relation": "CONTAINED_DENKMAL_COMPONENT_DEDUPED_TO",
+          "to": "0513",
+          "count": 0
+        }
+      ],
+      "counts": {
+        "historical_active_effect_leaves": 23,
+        "versioned_active_effect_leaves": 26,
+        "non_effect_source_leaves": 7,
+        "parent_provenance_nonleaves": 9,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 56,
+        "authoritative_effect_leaves": 49
+      }
+    },
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R29",
+      "historical_first": "0527",
+      "historical_last": "0537",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0527",
+          "0528",
+          "0530",
+          "0531",
+          "0534"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0532"
+        ],
+        "parent_provenance_nonleaf": [
+          "0529",
+          "0533",
+          "0535",
+          "0536",
+          "0537"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a09-0033-sportfoerderung-entbuerokratisieren",
+          "ltw-2026-st-gruene-ps-a09-0034-sportvereine-energiekostenhilfe",
+          "ltw-2026-st-gruene-ps-a09-0035-sportvereine-sanierungsfoerderung",
+          "ltw-2026-st-gruene-ps-a09-0036-vielfaeltiges-sportangebot",
+          "ltw-2026-st-gruene-ps-a09-0037-frei-zugaengliche-bewegungsflaechen",
+          "ltw-2026-st-gruene-ps-a09-0038-schulische-sportstaetten-oeffnen",
+          "ltw-2026-st-gruene-ps-a09-0039-sportstaetten-modernisieren-sanieren",
+          "ltw-2026-st-gruene-ps-a09-0040-trainingslager-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0041-leistungssport-akteure-gezielt-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0042-dual-career-sport-schule-ausbildung",
+          "ltw-2026-st-gruene-ps-a09-0043-trainerhochschulausbildung-mitteldeutschland",
+          "ltw-2026-st-gruene-ps-a09-0044-leistungsstuetzpunkte-erhalt-fortentwicklung",
+          "ltw-2026-st-gruene-ps-a09-0045-sportverein-schule-ganztag-kooperation",
+          "ltw-2026-st-gruene-ps-a09-0046-ehrenamtspauschale-sport-erhoehen",
+          "ltw-2026-st-gruene-ps-a09-0047-ehrenamtsanerkennung-sport",
+          "ltw-2026-st-gruene-ps-a09-0048-esport-vereine-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0049-jugendmedienschutz-staatsvertrag-reform-esport"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0529": [
+          "ltw-2026-st-gruene-ps-a09-0033-sportfoerderung-entbuerokratisieren",
+          "ltw-2026-st-gruene-ps-a09-0034-sportvereine-energiekostenhilfe",
+          "ltw-2026-st-gruene-ps-a09-0035-sportvereine-sanierungsfoerderung"
+        ],
+        "0533": [
+          "ltw-2026-st-gruene-ps-a09-0036-vielfaeltiges-sportangebot",
+          "ltw-2026-st-gruene-ps-a09-0037-frei-zugaengliche-bewegungsflaechen",
+          "ltw-2026-st-gruene-ps-a09-0038-schulische-sportstaetten-oeffnen",
+          "ltw-2026-st-gruene-ps-a09-0039-sportstaetten-modernisieren-sanieren"
+        ],
+        "0535": [
+          "ltw-2026-st-gruene-ps-a09-0040-trainingslager-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0041-leistungssport-akteure-gezielt-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0042-dual-career-sport-schule-ausbildung",
+          "ltw-2026-st-gruene-ps-a09-0043-trainerhochschulausbildung-mitteldeutschland"
+        ],
+        "0536": [
+          "ltw-2026-st-gruene-ps-a09-0045-sportverein-schule-ganztag-kooperation",
+          "ltw-2026-st-gruene-ps-a09-0046-ehrenamtspauschale-sport-erhoehen",
+          "ltw-2026-st-gruene-ps-a09-0047-ehrenamtsanerkennung-sport"
+        ],
+        "0537": [
+          "ltw-2026-st-gruene-ps-a09-0048-esport-vereine-foerdern",
+          "ltw-2026-st-gruene-ps-a09-0049-jugendmedienschutz-staatsvertrag-reform-esport"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 5,
+        "versioned_active_effect_leaves": 17,
+        "non_effect_source_leaves": 1,
+        "parent_provenance_nonleaves": 5,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 23,
+        "authoritative_effect_leaves": 22
+      }
+    }
+  ],
+  "counts": {
+    "authoritative_source_leaves": 144,
+    "authoritative_effect_leaves": 131
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R30_PLUS_AND_UNION_GATE"
+  }
+}

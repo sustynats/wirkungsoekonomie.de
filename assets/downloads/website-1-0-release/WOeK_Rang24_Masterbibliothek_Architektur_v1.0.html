@@ -1,0 +1,68 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Masterbibliothek Architektur</title></head><body><h1>Masterbibliothek Architektur</h1>
+<p>Autorin: Natalie Weber</p>
+<p>Referenz: Wirkungsökonomie</p>
+<p>Version: 1.0</p>
+<p>Stand: 25. Mai 2026</p>
+<p>Status: Öffentliche Releaseübersicht</p>
+<p>Autorin: Natalie Weber</p>
+<p>Referenz: Wirkungsökonomie</p>
+<p>Version: 1.0</p>
+<p>Status: Website-1.0-Releasepaket - Entwurf für finale Integration und QA</p>
+<p>Stand: 25. Mai 2026</p>
+<h2>Ziel</h2>
+<p>Die Masterbibliothek ist das öffentliche Wissensarchiv der Wirkungsökonomie. Sie fuehrt Website, Buch, Akademie, Dossiers, Portale, Detailkonzepte, Toolkarten, Downloads, Glossar und Quellen in einer konsistenten Struktur zusammen.</p>
+<h2>Leitprinzipien</h2>
+<p>1. Jede Datei braucht eine Onlinefassung.</p>
+<p>2. Jede Onlinefassung braucht PDF-Downloads.</p>
+<p>3. Jede Downloadkarte braucht Status, Version, Stand, Autorin und Referenz.</p>
+<p>4. Keine kurzen Grobtexte duerfen als Detailkonzept erscheinen.</p>
+<p>5. Jedes Fachportal braucht SDG-/SDG+-Block und politische Anschlussfähigkeit.</p>
+<p>6. Jedes Tool braucht Beschreibung, Nutzen, Zielgruppe, Status und Link.</p>
+<p>7. Jedes Dokument muss suchbar und filterbar sein.</p>
+<p>8. Aeltere oder überholte Versionen müssen als superseded markiert werden.</p>
+<h2>Datenmodell</h2>
+<p>Die Bibliothek verwendet drei Hauptebenen.</p>
+<h3>Ebene 1 - Portal</h3>
+<p>Ein Portal ist ein thematischer Wirkungsraum, zum Beispiel Wohnen, Arbeit, Gesundheit, Migration oder Digitalisierung. Ein Portal besitzt Startseite, Konzeptpapier, Gesamtdossier, Detailkonzepte, Downloads, Toolkarten, SDG-/SDG+-Block, politische Anschlussfähigkeit, Buchanker und Glossarlinks.</p>
+<h3>Ebene 2 - Dokument</h3>
+<p>Ein Dokument ist ein einzelner Inhalt mit klarer Fassung. Dokumenttypen sind: Portalstartseite, Konzeptpapier, Gesamtdossier, Detailkonzept, Toolkarte, SDG-/SDG+-Block, politische Anschlussfähigkeit, Quellen, Glossar, Integrationsgrundlage, Releasebericht.</p>
+<h3>Ebene 3 - Format</h3>
+<p>Ein Dokument kann mehrere Formate besitzen: Onlinefassung, PDF, HTML, Onlinefassung, JSON, XLSX oder Dokumentpaket. Für Website 1.0 sind Onlinefassung, PDF Pflicht, sofern es sich um öffentliche Fachtexte handelt.</p>
+<h2>Versionierung</h2>
+<p>Versionierung ist kein Formalismus. Sie verhindert, dass alte, kurze oder fehlerhafte Fassungen parallel zur gueltigen Fassung auftauchen. Jede Fassung erhaelt:</p>
+<ul>
+<li>Version</li>
+<li>Stand</li>
+<li>Status</li>
+<li>Autorin</li>
+<li>Referenz</li>
+<li>aktive Version ja/nein</li>
+<li>superseded durch</li>
+<li>QA-Status</li>
+</ul>
+<h2>Aktive und superseded Fassungen</h2>
+<p>Wenn mehrere Pakete desselben Rangs existieren, muss Fachteam nur die im Masterregister als aktiv markierte Fassung öffentlich prominent verlinken. Aeltere Pakete können archiviert oder als superseded markiert werden, duerfen aber nicht als gleichwertige aktuelle Fassung erscheinen.</p>
+<h2>Such- und Filterlogik</h2>
+<p>Die Fachbibliothek braucht Filter nach Rang, Thema, Dokumenttyp, Format, Status, SDG, SDG+, Zielgruppe, Toolbezug, Buchanker und Version. Die Suche muss Titel, Kurzbeschreibung, Glossarbegriffe, Portalnamen und Dokumenttypen durchsuchen.</p>
+<h2>Downloadzentrum</h2>
+<p>Das Downloadzentrum ist keine Dateiliste. Es ist eine kuratierte Bibliothek. Jede Downloadkarte muss erklaeren, was die Datei ist, wofür sie gedacht ist, welcher Status gilt und welche Onlinefassung dazu gehoert.</p>
+<h2>Onlinefassungen</h2>
+<p>Onlinefassungen sind Pflicht. Eine Website, die nur PDF-Downloads anbietet, ist für Version 1.0 nicht ausreichend. Lange Konzepte müssen online lesbar sein, mit Inhaltsverzeichnis, Ankerlinks, Druckfunktion, Querverlinkungen und mobil sauberer Darstellung.</p>
+<h2>Toolkarten-Governance</h2>
+<p>Toolkarten duerfen nicht nur Namen enthalten. Jede Toolkarte braucht:</p>
+<ul>
+<li>Beschreibung</li>
+<li>Nutzen</li>
+<li>Zielgruppe</li>
+<li>Status</li>
+<li>Demo oder Link</li>
+<li>Datenbedarf</li>
+<li>SDG-/SDG+-Bezug</li>
+<li>Schutzlogik gegen Missbrauch</li>
+</ul>
+<h2>Glossar-Governance</h2>
+<p>Der Begriffsleitfaden vom 21. Mai 2026 ist fuehrend. Aeltere Begriffsverwendungen müssen gegen ihn geprüft werden. Besonders kritisch sind Wirkung, positive Wirkung, Netto-Wirkung, SDG+, Mensch, Planet und Demokratie, Wirkungsbewertung, Wirkungspotenzial, Wirkungsrisiko, Wirkungssimulation, Wirkungswahrheit und Wirkungsarchitektur.</p>
+<h2>Quellen-Governance</h2>
+<p>Quellen müssen in öffentlichen Dokumenten als normale Quellen lesbar sein. Keine nicht öffentlichen Zitationsmarker, keine Bearbeitungsspuren, keine rohen Toolreferenzen. Externe Quellen müssen mit Titel, Institution, Jahr, URL und Abrufhinweis oder Stand angegeben werden.</p>
+<h2>Abschluss</h2>
+<p>Die Masterbibliothek ist der Ort, an dem aus einzelnen Rangpaketen eine nutzbare Website 1.0 wird. Sie sorgt für Wiederauffindbarkeit, Versionstreue, Quellenklarheit, Downloadfähigkeit und fachliche Kontrolle.</p></body></html>

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/evidence-event-2.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evidence_event_id", "event_type", "title", "concise_public_summary", "observation_date", "publication_date", "geography", "affected_state_variables", "official_source_refs", "source_function", "data_quality", "attribution_status", "linked_impact_case_ids", "relation_to_impact_case", "materiality", "what_changed_or_may_change", "publication_status"],
+  "properties": {
+    "evidence_event_id": { "type": "string", "minLength": 3 },
+    "event_type": { "type": "string", "minLength": 3 },
+    "title": { "type": "string", "minLength": 1 },
+    "concise_public_summary": { "type": "string", "minLength": 1 },
+    "observation_date": { "type": "string", "anyOf": [{ "format": "date" }, { "format": "date-time" }] },
+    "publication_date": { "type": "string", "anyOf": [{ "format": "date" }, { "format": "date-time" }] },
+    "geography": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "affected_state_variables": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "official_source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          { "type": "string", "format": "uri" },
+          { "type": "object", "additionalProperties": false, "required": ["source", "url", "claim"], "properties": { "source": { "type": "string", "minLength": 1 }, "url": { "type": "string", "format": "uri" }, "claim": { "type": "string", "minLength": 1 } } }
+        ]
+      }
+    },
+    "source_function": { "oneOf": [{ "enum": ["OUTCOME_DATA", "EVALUATION", "OFFICIAL_FACT", "CONTEXT"] }, { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 2 } }] },
+    "data_quality": { "oneOf": [{ "enum": ["HIGH", "MEDIUM", "LOW", "NOT_ASSESSABLE"] }, { "type": "object", "additionalProperties": { "type": "string" }, "required": ["measurement", "historical_comparison", "record_classification", "causal_attribution"] }] },
+    "attribution_status": { "enum": ["EXTERNAL_CONTEXT", "NO_ATTRIBUTION", "POSSIBLE_CONTRIBUTION", "PLAUSIBLE_CONTRIBUTION", "PARTIAL_ATTRIBUTION", "DIRECT_ATTRIBUTION", "OPEN"] },
+    "linked_impact_case_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "state_observation_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "relation_to_impact_case": { "oneOf": [{ "enum": ["SUPPORTS_MECHANISM", "CONTRADICTS_MECHANISM", "CHANGES_BASELINE", "CHANGES_CONTEXT", "MATERIALIZES_RISK", "MATERIALIZES_POSITIVE_POTENTIAL", "TRIGGERS_REALITY_CHECK", "AFFECTS_COUNTERFACTUAL", "AFFECTS_DISTRIBUTION", "AFFECTS_RESILIENCE", "CONTEXT_ONLY"] }, { "type": "array", "minItems": 1, "items": { "enum": ["SUPPORTS_MECHANISM", "CONTRADICTS_MECHANISM", "CHANGES_BASELINE", "CHANGES_CONTEXT", "MATERIALIZES_RISK", "MATERIALIZES_POSITIVE_POTENTIAL", "TRIGGERS_REALITY_CHECK", "AFFECTS_COUNTERFACTUAL", "AFFECTS_DISTRIBUTION", "AFFECTS_RESILIENCE", "CONTEXT_ONLY"] } }] },
+    "materiality": { "enum": ["ROUTINE_OBSERVATION", "MATERIAL", "MATERIAL_EARLY_WARNING", "HIGH", "VERY_HIGH"] },
+    "what_changed_or_may_change": { "type": "string", "minLength": 1 },
+    "publication_status": { "enum": ["INTERNAL", "FACH_REVIEW_REQUIRED", "APPROVED_PUBLIC", "APPROVED_PUBLIC_EVIDENCE", "BLOCKED"] },
+    "notes_public": { "type": ["string", "null"] }
+  }
+}

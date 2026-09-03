@@ -1,0 +1,815 @@
+# Impact-Controlling · Vorlesung 6: Wirkungsmonitoring und Wirkungsdatenräume
+
+**Track:** Impact-Controlling  
+**Kurscode:** wirkungscontrolling  
+**Vorlesungscode:** WC-V6  
+**Modul/Abschnitt:** WC  
+**Titel:** Wirkungsmonitoring und Wirkungsdatenräume  
+**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
+**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v6-monitoring-wirkungsdatenraeume.md`  
+**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v6.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v6.docx`  
+**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+
+## Lernziele
+
+Nach dieser Vorlesung kannst du:
+
+1. die Kernfrage von **Wirkungsmonitoring und Wirkungsdatenräume** in der Sprache der Wirkungsökonomie erklären.
+2. Wirkung, Wirkungspotenzial und Wirkungsrisiko im Themenfeld sauber unterscheiden.
+3. typische Verwechslungen erkennen, insbesondere Reichweite, Aktivität, Absicht oder Reporting als Wirkung auszugeben.
+4. den Bezug zu Mensch, Planet und Demokratie sowie zur positiven Netto-Wirkung herstellen.
+5. eine einfache Tabelle, Formel oder Scorecard-Logik für das Thema lesen und begründen.
+6. offene Daten-, Quellen- und Unsicherheitsfragen benennen, ohne Scheingenauigkeit zu erzeugen.
+
+## 1. Einleitung / Wirkungsfrage
+
+Diese Vorlesung übersetzt Wirkung in Daten-, Bewertungs- und Steuerungslogik. Der Schwerpunkt liegt darauf, Wirkungsmonitoring und Wirkungsdatenräume so zu strukturieren, dass Entscheidungen prüfbar, auditierbar und rückkopplungsfähig werden.
+
+Die Leitfrage lautet:
+
+> Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungsmonitoring und Wirkungsdatenräume** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
+
+Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
+
+## 2. Kernaussage
+
+**Wirkungsmonitoring und Wirkungsdatenräume** ist für die Wirkungsökonomie relevant, weil es zeigt, dass Wirkung nicht aus einem einzelnen Wunsch, Signal oder Instrument entsteht. Wirkung entsteht in Wirkpfaden: Auslöser, Wirkmechanismus, Wirkungsempfänger, Resonanzraum, Datenlage, Bewertung und Rückkopplung müssen zusammen betrachtet werden.
+
+Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verwechselt oft Oberfläche mit Wirkung. Wer dagegen Wirkpfade, Empfänger, Risiken und Rückkopplung sauber beschreibt, kann Entscheidungen verbessern.
+
+## 3. Quelltext und fachliche Grundlegung
+
+**Track / Kurscode:** wirkungscontrolling
+**Vorlesungscode:** WC-V6
+**Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
+**Voraussetzung:** WC-V5
+**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§5) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/wirkungsmonitoring`, `begriffe/wirkungsdatenraum`
+
+## 1. Einstieg / Wirkungsfrage
+
+Eine einmalige Bewertung veraltet sofort. **Wie wird Wirkung laufend beobachtet und rückkopplungsfähig – ohne in Dauer-Reporting zu ertrinken?**
+
+## 2. Video-/Audio-Vorlesung
+
+- **Titel:** Wirkung laufend beobachten – Monitoring und Datenräume
+- **Länge:** ~15 Min
+- **Kernaussage in einem Satz:** Wirkungsmonitoring macht Bewertung dauerhaft und rückkopplungsfähig; Wirkungsdatenräume teilen dafür Daten strukturiert und auditierbar.
+- **Medienquelle:** [Platzhalter]
+
+## 3. Transkript (Gerüst)
+
+**Abschnitt A – Warum Monitoring.** Wirkung verändert sich; eine Momentaufnahme reicht nicht. Monitoring beobachtet KIIs über die Zeit.
+
+**Abschnitt B – Reporting ≠ Rückkopplung, wieder.** Monitoring ist wertlos, wenn es nur berichtet. Es muss Entscheidungen auslösen.
+
+**Abschnitt C – Wirkungsdatenräume.** Strukturierte, geteilte Datenräume (organisationsübergreifend), damit Wirkung entlang von Wertschöpfungsketten nachvollziehbar wird.
+
+**Abschnitt D – Schlank halten.** Wenige aussagekräftige KIIs statt Kennzahlenflut; Fokus auf kritische Felder (V5).
+
+**Abschnitt E – Anschluss.** Monitoring speist Investitions-/Einkaufsentscheidungen (V8) und Audit (V9).
+
+## 4. Skript / Folien (Lernseite)
+
+**Wirkungsmonitoring macht Bewertung dauerhaft.** Statt einer einmaligen Scorecard beobachtet Monitoring die relevanten **KIIs über die Zeit** – so werden Trends, Verschlechterungen an kritischen Feldern und Wirkung von Maßnahmen sichtbar (Begriffsleitfaden §5). Monitoring ist die laufende Form der Wirkungsbewertung.
+
+**Ohne Rückkopplung kein Nutzen.** Auch hier gilt streng: **Reporting ≠ Rückkopplung** (Grundlagen V5). Ein Monitoring, das nur Dashboards füllt, erzeugt keine Steuerung. Es muss an Entscheidungsroutinen gekoppelt sein: Verschlechtert sich ein kritisches Feld, folgt eine Maßnahme – nicht nur ein Eintrag.
+
+**Wirkungsdatenräume teilen Daten strukturiert.** Wirkung entsteht oft über Organisationsgrenzen (Lieferketten). **Wirkungsdatenräume** ermöglichen den strukturierten, auditierbaren Austausch von Wirkungsdaten zwischen Beteiligten – auf Basis von WÖk-IDs (V3), damit Daten vergleichbar und nachvollziehbar bleiben. So wird Wirkung entlang der Wertschöpfung steuerbar, nicht nur im eigenen Haus.
+
+**Schlank statt überladen.** Gutes Monitoring nutzt **wenige, aussagekräftige KIIs** mit Fokus auf kritische Felder – keine Kennzahlenflut. Datensparsamkeit und Aussagekraft schlagen Vollständigkeit. Das hält Monitoring nutzbar und verhindert, dass wichtige Signale im Rauschen untergehen.
+
+## 5. Glossar der Kernbegriffe
+
+| Begriff | Kurzdefinition | Glossar-Seite |
+|---|---|---|
+| Wirkungsmonitoring | laufende Beobachtung der Wirkung über KIIs | `begriffe/wirkungsmonitoring` |
+| Wirkungsdatenraum | strukturierter, auditierbarer Datenaustausch | `begriffe/wirkungsdatenraum` |
+| Wirkungsrückkopplung | Rückführung in Entscheidungen | `begriffe/wirkungsrueckkopplung` |
+| KII | Key Impact Indicator | `begriffe/kii` |
+
+## 6. Verständnisfragen (Mini-Quiz)
+
+1. **Was leistet Wirkungsmonitoring?**
+   - A) Einmalige Bewertung  B) Laufende Beobachtung der KIIs über die Zeit  C) Reichweitenmessung  D) Umsatzprognose
+   - ✅ **Richtig: B**
+
+2. **Was macht Monitoring wertvoll?**
+   - A) Viele Dashboards  B) Kopplung an Entscheidungen (Rückkopplung)  C) Möglichst viele KPIs  D) Reichweite
+   - ✅ **Richtig: B**
+
+3. **Was ist ein Wirkungsdatenraum?**
+   - A) Ein Serverraum  B) Strukturierter, auditierbarer Austausch von Wirkungsdaten zwischen Beteiligten  C) Ein Berichtsformat  D) Eine Reichweitenplattform
+   - ✅ **Richtig: B**
+
+4. **Wie sollte Monitoring gestaltet sein?**
+   - A) Möglichst viele Kennzahlen  B) Wenige, aussagekräftige KIIs mit Fokus auf kritische Felder  C) Nur Umsatz  D) Nur Reichweite
+   - ✅ **Richtig: B**
+
+5. **Worauf baut der Datenaustausch auf?**
+   - A) Auf Zufall  B) Auf WÖk-IDs für Vergleichbarkeit und Nachvollziehbarkeit  C) Auf Reichweite  D) Auf Preisen
+   - ✅ **Richtig: B**
+
+6. **Gilt „Reporting ≠ Rückkopplung" auch im Monitoring?**
+   - A) Nein  B) Ja, besonders hier  C) Nur bei Audits  D) Nur extern
+   - ✅ **Richtig: B**
+
+## 7. Transferaufgabe
+
+Definiere ein schlankes **Monitoring-Set** für ein Wirkungsziel: 2–3 KIIs (Fokus kritisches Feld), Beobachtungsrhythmus und **eine Rückkopplungsregel** („Wenn KII X sich verschlechtert, dann …").
+
+## 8. Praxisbeispiel
+
+**Lieferkette im Datenraum.** Mehrere Zulieferer speisen Emissions- und Arbeitsbedingungsdaten über WÖk-IDs in einen gemeinsamen Wirkungsdatenraum. Das Monitoring erkennt früh eine Verschlechterung bei einem kritischen Lieferanten und löst eine Nachverhandlung aus – statt es erst im Jahresbericht zu bemerken.
+
+
+## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
+
+Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
+
+### Finaler Leseauftrag
+
+Dieses Skript zu **WC-V6 Wirkungsmonitoring und Wirkungsdatenräume** ist als Langformtext angelegt: Es soll nicht nur die Vorlesung begleiten, sondern als eigenstaendiges Studienmaterial funktionieren. Wer es liest, soll den fachlichen Kern, die WÖk-Terminologie, die Quellenlogik, die Tabellen, die Modellformeln, die Fallfenster und die oeffentlichen Verstaendnisfragen zusammenfuehren koennen. Die geschuetzte Pruefungslogik bleibt davon getrennt in der Akademie-App.
+
+### Abschlussmatrix fuer die Anwendung
+
+| Ebene | Anwendung in WC-V6 | Qualitaetsgrenze |
+|---|---|---|
+| Begriff | Wirkung, Wirkungspotenzial und Wirkungsrisiko werden im Kontext der Vorlesung getrennt. | keine Absicht als Wirkung ausgeben |
+| Wirkpfad | Ausloeser, Mechanismus, Wirkungsempfaenger, Zustand und Rueckkopplung werden sichtbar. | keine lineare Erfolgsgeschichte erfinden |
+| Daten | Quellen, Datenqualitaet, Unsicherheit und Aktualitaet werden benannt. | keine Scheingenauigkeit erzeugen |
+| Bewertung | SDGs, Agenda 2030, SDG+ und WÖk-Schutzlinien bilden den Referenzrahmen. | keine Durchschnittslogik gegen rote Linien |
+| Steuerung | Die Bewertung fuehrt zu Entscheidung, Budget, Prozess, Kommunikation oder Korrektur. | kein Reporting ohne Rueckkopplung |
+
+### Vertiefungsrunde 1: Lesen, pruefen, rueckkoppeln
+
+Die folgende Runde verdichtet WC-V6 nicht durch neue Schlagworte, sondern durch wiederholte Anwendung auf unterschiedliche Entscheidungsebenen. Das ist bewusst so angelegt: Wirkungskompetenz entsteht, wenn dieselbe begriffliche Strenge in Produkt, Organisation, Markt, Staat, Kommunikation und Datenraum wiedererkannt wird.
+
+**Begriffliche Schaerfung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet praezise Sprache die erste Sicherung gegen Impact-Washing ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Wirkung, Output, Reichweite und Potenzial in einem Satz zu vermischen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. In der Praxis sollte jede Wirkungsaussage als kurze Viererprobe formuliert werden: Zustand, Betroffene, Quelle, offene Unsicherheit. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Wirkpfad-Logik.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet ein Thema erst dann steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, nur die Massnahme selbst zu bewerten und die indirekten Empfaenger auszublenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Eine gute Fallanalyse zeichnet mindestens einen direkten und einen indirekten Wirkpfad nach. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Daten- und Quellenklarheit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus und Aktualitaet, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine Zahl ohne Einheit, Systemgrenze, Zeitraum oder Erhebungslogik als Beweis zu nutzen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Die Lernenden sollen Daten nicht dekorativ zitieren, sondern ihre Aussagekraft, Luecken und Grenzen offenlegen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Controlling-Team moechte einen Score bilden. Das Skript verlangt, dass Datenqualitaet, Systemgrenzen, Gewichtung, Unsicherheit und Nichtkompensation sichtbar bleiben. Ein Score darf die Diskussion nicht beenden, sondern muss bessere Fragen, Priorisierung und Rueckkopplung ermoeglichen. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Ambivalenz.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, ambivalente Befunde rhetorisch zu glaetten, damit eine eindeutige Botschaft entsteht. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Ein gutes Skript fuehrt deshalb Profile, Zielkonflikte und offene Punkte nebeneinander. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Nichtkompensation.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine arithmetische Durchschnittslogik als moralische Entlastung zu verwenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Reverse Merit Order und rote Linien sind Schutzregeln gegen Schoenrechnung. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+**Rueckkopplung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungswissen erst dann wertvoll wird, wenn es Entscheidungen veraendert, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, einen Bericht als Endpunkt zu betrachten. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Jeder Analyseblock sollte fragen, welche Routine, welcher Prozess oder welche Ressource nach der Bewertung angepasst wird. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Kommunikationsbericht nennt viele Aktivitaeten, Reichweiten und Rueckmeldungen. Die V1-Pruefung fragt, ob daraus eine belastbare Wirkungsaussage folgt. Wenn nur Kontakte, Klicks oder Zustimmung vorliegen, bleibt die Aussage im Bereich Wirkungspotenzial oder Resonanz, nicht im Bereich nachgewiesener Wirkung. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Governance.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungsbewertung Verfahren, Rechte, Transparenz und Korrektur braucht, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Bewertung als technokratische Top-down-Setzung zu verstehen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Betroffene, Datenhalter, Entscheider und Kontrollinstanzen muessen unterscheidbare Rollen behalten. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Didaktische Pruefbarkeit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet das Thema in der Akademie nicht nur erklaert, sondern in Falllogik ueberfuehrt werden muss, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, reines Auswendiglernen als Kompetenznachweis zu behandeln. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Pruefungsfragen sollen Begriffe, Anwendung und rote Linien verbinden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Transfer in Organisationen.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet WÖk-Begriffe im Alltag nur tragen, wenn sie in Routinen uebersetzt werden, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, die Verantwortung an eine Nachhaltigkeitsabteilung auszulagern. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Strategie, Einkauf, Kommunikation, Controlling und Fuehrung muessen denselben Wirkungsbegriff verwenden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Eine Organisation plant eine Massnahme und formuliert dazu eine positive Absicht. In der WÖk reicht das nicht. Fuer diese Vorlesung muss sichtbar werden, welche Zustandsveraenderung erwartet wird, welche Empfaenger direkt oder indirekt betroffen sind, welche Nebenwirkungen entstehen koennen und welche Entscheidung spaeter korrigiert wird. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Rueckfluss in den Korpus.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jedes Studienskript den Gesamtbestand schaerfen kann, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, neue Einsichten nur lokal im Skript zu belassen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Glossar, Website, Journal, Dossiers und Visuals sollen aus der Skriptarbeit lernen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+### Vertiefungsrunde 2: Lesen, pruefen, rueckkoppeln
+
+Die folgende Runde verdichtet WC-V6 nicht durch neue Schlagworte, sondern durch wiederholte Anwendung auf unterschiedliche Entscheidungsebenen. Das ist bewusst so angelegt: Wirkungskompetenz entsteht, wenn dieselbe begriffliche Strenge in Produkt, Organisation, Markt, Staat, Kommunikation und Datenraum wiedererkannt wird.
+
+**Begriffliche Schaerfung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet praezise Sprache die erste Sicherung gegen Impact-Washing ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Wirkung, Output, Reichweite und Potenzial in einem Satz zu vermischen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. In der Praxis sollte jede Wirkungsaussage als kurze Viererprobe formuliert werden: Zustand, Betroffene, Quelle, offene Unsicherheit. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Wirkpfad-Logik.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet ein Thema erst dann steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, nur die Massnahme selbst zu bewerten und die indirekten Empfaenger auszublenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Eine gute Fallanalyse zeichnet mindestens einen direkten und einen indirekten Wirkpfad nach. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Eine Fuehrungsentscheidung erzeugt zugleich Nutzen und Risiken. Die WÖk behandelt Ambivalenz nicht als Stoerung, sondern als Kern der Analyse. Positive Netto-Wirkung darf erst behauptet werden, wenn zentrale negative Wirkungen getrennt geprueft und rote Linien gewahrt sind. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Daten- und Quellenklarheit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus und Aktualitaet, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine Zahl ohne Einheit, Systemgrenze, Zeitraum oder Erhebungslogik als Beweis zu nutzen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Die Lernenden sollen Daten nicht dekorativ zitieren, sondern ihre Aussagekraft, Luecken und Grenzen offenlegen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Ambivalenz.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, ambivalente Befunde rhetorisch zu glaetten, damit eine eindeutige Botschaft entsteht. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Ein gutes Skript fuehrt deshalb Profile, Zielkonflikte und offene Punkte nebeneinander. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Nichtkompensation.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine arithmetische Durchschnittslogik als moralische Entlastung zu verwenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Reverse Merit Order und rote Linien sind Schutzregeln gegen Schoenrechnung. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Controlling-Team moechte einen Score bilden. Das Skript verlangt, dass Datenqualitaet, Systemgrenzen, Gewichtung, Unsicherheit und Nichtkompensation sichtbar bleiben. Ein Score darf die Diskussion nicht beenden, sondern muss bessere Fragen, Priorisierung und Rueckkopplung ermoeglichen. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+**Rueckkopplung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungswissen erst dann wertvoll wird, wenn es Entscheidungen veraendert, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, einen Bericht als Endpunkt zu betrachten. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Jeder Analyseblock sollte fragen, welche Routine, welcher Prozess oder welche Ressource nach der Bewertung angepasst wird. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Governance.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungsbewertung Verfahren, Rechte, Transparenz und Korrektur braucht, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Bewertung als technokratische Top-down-Setzung zu verstehen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Betroffene, Datenhalter, Entscheider und Kontrollinstanzen muessen unterscheidbare Rollen behalten. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Didaktische Pruefbarkeit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet das Thema in der Akademie nicht nur erklaert, sondern in Falllogik ueberfuehrt werden muss, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, reines Auswendiglernen als Kompetenznachweis zu behandeln. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Pruefungsfragen sollen Begriffe, Anwendung und rote Linien verbinden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Kommunikationsbericht nennt viele Aktivitaeten, Reichweiten und Rueckmeldungen. Die V1-Pruefung fragt, ob daraus eine belastbare Wirkungsaussage folgt. Wenn nur Kontakte, Klicks oder Zustimmung vorliegen, bleibt die Aussage im Bereich Wirkungspotenzial oder Resonanz, nicht im Bereich nachgewiesener Wirkung. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Transfer in Organisationen.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet WÖk-Begriffe im Alltag nur tragen, wenn sie in Routinen uebersetzt werden, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, die Verantwortung an eine Nachhaltigkeitsabteilung auszulagern. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Strategie, Einkauf, Kommunikation, Controlling und Fuehrung muessen denselben Wirkungsbegriff verwenden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Rueckfluss in den Korpus.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jedes Studienskript den Gesamtbestand schaerfen kann, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, neue Einsichten nur lokal im Skript zu belassen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Glossar, Website, Journal, Dossiers und Visuals sollen aus der Skriptarbeit lernen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+### Vertiefungsrunde 3: Lesen, pruefen, rueckkoppeln
+
+Die folgende Runde verdichtet WC-V6 nicht durch neue Schlagworte, sondern durch wiederholte Anwendung auf unterschiedliche Entscheidungsebenen. Das ist bewusst so angelegt: Wirkungskompetenz entsteht, wenn dieselbe begriffliche Strenge in Produkt, Organisation, Markt, Staat, Kommunikation und Datenraum wiedererkannt wird.
+
+**Begriffliche Schaerfung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet praezise Sprache die erste Sicherung gegen Impact-Washing ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Wirkung, Output, Reichweite und Potenzial in einem Satz zu vermischen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. In der Praxis sollte jede Wirkungsaussage als kurze Viererprobe formuliert werden: Zustand, Betroffene, Quelle, offene Unsicherheit. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Eine Organisation plant eine Massnahme und formuliert dazu eine positive Absicht. In der WÖk reicht das nicht. Fuer diese Vorlesung muss sichtbar werden, welche Zustandsveraenderung erwartet wird, welche Empfaenger direkt oder indirekt betroffen sind, welche Nebenwirkungen entstehen koennen und welche Entscheidung spaeter korrigiert wird. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Wirkpfad-Logik.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet ein Thema erst dann steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, nur die Massnahme selbst zu bewerten und die indirekten Empfaenger auszublenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Eine gute Fallanalyse zeichnet mindestens einen direkten und einen indirekten Wirkpfad nach. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Daten- und Quellenklarheit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus und Aktualitaet, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine Zahl ohne Einheit, Systemgrenze, Zeitraum oder Erhebungslogik als Beweis zu nutzen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Die Lernenden sollen Daten nicht dekorativ zitieren, sondern ihre Aussagekraft, Luecken und Grenzen offenlegen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Ambivalenz.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, ambivalente Befunde rhetorisch zu glaetten, damit eine eindeutige Botschaft entsteht. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Ein gutes Skript fuehrt deshalb Profile, Zielkonflikte und offene Punkte nebeneinander. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Eine Fuehrungsentscheidung erzeugt zugleich Nutzen und Risiken. Die WÖk behandelt Ambivalenz nicht als Stoerung, sondern als Kern der Analyse. Positive Netto-Wirkung darf erst behauptet werden, wenn zentrale negative Wirkungen getrennt geprueft und rote Linien gewahrt sind. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Nichtkompensation.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine arithmetische Durchschnittslogik als moralische Entlastung zu verwenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Reverse Merit Order und rote Linien sind Schutzregeln gegen Schoenrechnung. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+**Rueckkopplung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungswissen erst dann wertvoll wird, wenn es Entscheidungen veraendert, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, einen Bericht als Endpunkt zu betrachten. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Jeder Analyseblock sollte fragen, welche Routine, welcher Prozess oder welche Ressource nach der Bewertung angepasst wird. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Governance.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungsbewertung Verfahren, Rechte, Transparenz und Korrektur braucht, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Bewertung als technokratische Top-down-Setzung zu verstehen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Betroffene, Datenhalter, Entscheider und Kontrollinstanzen muessen unterscheidbare Rollen behalten. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Controlling-Team moechte einen Score bilden. Das Skript verlangt, dass Datenqualitaet, Systemgrenzen, Gewichtung, Unsicherheit und Nichtkompensation sichtbar bleiben. Ein Score darf die Diskussion nicht beenden, sondern muss bessere Fragen, Priorisierung und Rueckkopplung ermoeglichen. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Didaktische Pruefbarkeit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet das Thema in der Akademie nicht nur erklaert, sondern in Falllogik ueberfuehrt werden muss, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, reines Auswendiglernen als Kompetenznachweis zu behandeln. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Pruefungsfragen sollen Begriffe, Anwendung und rote Linien verbinden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Transfer in Organisationen.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet WÖk-Begriffe im Alltag nur tragen, wenn sie in Routinen uebersetzt werden, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, die Verantwortung an eine Nachhaltigkeitsabteilung auszulagern. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Strategie, Einkauf, Kommunikation, Controlling und Fuehrung muessen denselben Wirkungsbegriff verwenden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Rueckfluss in den Korpus.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jedes Studienskript den Gesamtbestand schaerfen kann, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, neue Einsichten nur lokal im Skript zu belassen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Glossar, Website, Journal, Dossiers und Visuals sollen aus der Skriptarbeit lernen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Kommunikationsbericht nennt viele Aktivitaeten, Reichweiten und Rueckmeldungen. Die V1-Pruefung fragt, ob daraus eine belastbare Wirkungsaussage folgt. Wenn nur Kontakte, Klicks oder Zustimmung vorliegen, bleibt die Aussage im Bereich Wirkungspotenzial oder Resonanz, nicht im Bereich nachgewiesener Wirkung. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+### Vertiefungsrunde 4: Lesen, pruefen, rueckkoppeln
+
+Die folgende Runde verdichtet WC-V6 nicht durch neue Schlagworte, sondern durch wiederholte Anwendung auf unterschiedliche Entscheidungsebenen. Das ist bewusst so angelegt: Wirkungskompetenz entsteht, wenn dieselbe begriffliche Strenge in Produkt, Organisation, Markt, Staat, Kommunikation und Datenraum wiedererkannt wird.
+
+**Begriffliche Schaerfung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet praezise Sprache die erste Sicherung gegen Impact-Washing ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Wirkung, Output, Reichweite und Potenzial in einem Satz zu vermischen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. In der Praxis sollte jede Wirkungsaussage als kurze Viererprobe formuliert werden: Zustand, Betroffene, Quelle, offene Unsicherheit. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Wirkpfad-Logik.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet ein Thema erst dann steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, nur die Massnahme selbst zu bewerten und die indirekten Empfaenger auszublenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Eine gute Fallanalyse zeichnet mindestens einen direkten und einen indirekten Wirkpfad nach. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Daten- und Quellenklarheit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus und Aktualitaet, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine Zahl ohne Einheit, Systemgrenze, Zeitraum oder Erhebungslogik als Beweis zu nutzen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Die Lernenden sollen Daten nicht dekorativ zitieren, sondern ihre Aussagekraft, Luecken und Grenzen offenlegen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Eine Organisation plant eine Massnahme und formuliert dazu eine positive Absicht. In der WÖk reicht das nicht. Fuer diese Vorlesung muss sichtbar werden, welche Zustandsveraenderung erwartet wird, welche Empfaenger direkt oder indirekt betroffen sind, welche Nebenwirkungen entstehen koennen und welche Entscheidung spaeter korrigiert wird. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Ambivalenz.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, ambivalente Befunde rhetorisch zu glaetten, damit eine eindeutige Botschaft entsteht. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Ein gutes Skript fuehrt deshalb Profile, Zielkonflikte und offene Punkte nebeneinander. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Nichtkompensation.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine arithmetische Durchschnittslogik als moralische Entlastung zu verwenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Reverse Merit Order und rote Linien sind Schutzregeln gegen Schoenrechnung. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+**Rueckkopplung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungswissen erst dann wertvoll wird, wenn es Entscheidungen veraendert, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, einen Bericht als Endpunkt zu betrachten. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Jeder Analyseblock sollte fragen, welche Routine, welcher Prozess oder welche Ressource nach der Bewertung angepasst wird. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Eine Fuehrungsentscheidung erzeugt zugleich Nutzen und Risiken. Die WÖk behandelt Ambivalenz nicht als Stoerung, sondern als Kern der Analyse. Positive Netto-Wirkung darf erst behauptet werden, wenn zentrale negative Wirkungen getrennt geprueft und rote Linien gewahrt sind. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Governance.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet Wirkungsbewertung Verfahren, Rechte, Transparenz und Korrektur braucht, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Bewertung als technokratische Top-down-Setzung zu verstehen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Betroffene, Datenhalter, Entscheider und Kontrollinstanzen muessen unterscheidbare Rollen behalten. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Didaktische Pruefbarkeit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet das Thema in der Akademie nicht nur erklaert, sondern in Falllogik ueberfuehrt werden muss, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, reines Auswendiglernen als Kompetenznachweis zu behandeln. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Pruefungsfragen sollen Begriffe, Anwendung und rote Linien verbinden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Transfer in Organisationen.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet WÖk-Begriffe im Alltag nur tragen, wenn sie in Routinen uebersetzt werden, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, die Verantwortung an eine Nachhaltigkeitsabteilung auszulagern. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Strategie, Einkauf, Kommunikation, Controlling und Fuehrung muessen denselben Wirkungsbegriff verwenden. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Controlling-Team moechte einen Score bilden. Das Skript verlangt, dass Datenqualitaet, Systemgrenzen, Gewichtung, Unsicherheit und Nichtkompensation sichtbar bleiben. Ein Score darf die Diskussion nicht beenden, sondern muss bessere Fragen, Priorisierung und Rueckkopplung ermoeglichen. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Rueckfluss in den Korpus.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jedes Studienskript den Gesamtbestand schaerfen kann, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, neue Einsichten nur lokal im Skript zu belassen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Glossar, Website, Journal, Dossiers und Visuals sollen aus der Skriptarbeit lernen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+### Vertiefungsrunde 5: Lesen, pruefen, rueckkoppeln
+
+Die folgende Runde verdichtet WC-V6 nicht durch neue Schlagworte, sondern durch wiederholte Anwendung auf unterschiedliche Entscheidungsebenen. Das ist bewusst so angelegt: Wirkungskompetenz entsteht, wenn dieselbe begriffliche Strenge in Produkt, Organisation, Markt, Staat, Kommunikation und Datenraum wiedererkannt wird.
+
+**Begriffliche Schaerfung.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet praezise Sprache die erste Sicherung gegen Impact-Washing ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, Wirkung, Output, Reichweite und Potenzial in einem Satz zu vermischen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. In der Praxis sollte jede Wirkungsaussage als kurze Viererprobe formuliert werden: Zustand, Betroffene, Quelle, offene Unsicherheit. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Wirkpfad-Logik.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet ein Thema erst dann steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, nur die Massnahme selbst zu bewerten und die indirekten Empfaenger auszublenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Eine gute Fallanalyse zeichnet mindestens einen direkten und einen indirekten Wirkpfad nach. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Ein Kommunikationsbericht nennt viele Aktivitaeten, Reichweiten und Rueckmeldungen. Die V1-Pruefung fragt, ob daraus eine belastbare Wirkungsaussage folgt. Wenn nur Kontakte, Klicks oder Zustimmung vorliegen, bleibt die Aussage im Bereich Wirkungspotenzial oder Resonanz, nicht im Bereich nachgewiesener Wirkung. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Daten- und Quellenklarheit.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus und Aktualitaet, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine Zahl ohne Einheit, Systemgrenze, Zeitraum oder Erhebungslogik als Beweis zu nutzen. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Die Lernenden sollen Daten nicht dekorativ zitieren, sondern ihre Aussagekraft, Luecken und Grenzen offenlegen. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Ambivalenz.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, ambivalente Befunde rhetorisch zu glaetten, damit eine eindeutige Botschaft entsteht. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Ein gutes Skript fuehrt deshalb Profile, Zielkonflikte und offene Punkte nebeneinander. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Nichtkompensation.** Fuer **Wirkungsmonitoring und Wirkungsdatenräume** bedeutet schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in Impact-Controlling ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, eine arithmetische Durchschnittslogik als moralische Entlastung zu verwenden. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. Reverse Merit Order und rote Linien sind Schutzregeln gegen Schoenrechnung. So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.
+
+**Fallfenster zur Anwendung.** Eine Organisation plant eine Massnahme und formuliert dazu eine positive Absicht. In der WÖk reicht das nicht. Fuer diese Vorlesung muss sichtbar werden, welche Zustandsveraenderung erwartet wird, welche Empfaenger direkt oder indirekt betroffen sind, welche Nebenwirkungen entstehen koennen und welche Entscheidung spaeter korrigiert wird. Bezogen auf **Wirkungsmonitoring und Wirkungsdatenräume** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.
+
+**Pruefungsnahe Transferfrage.** Formuliere zu WC-V6 eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.
+
+### V1-Abschlussnotiz
+
+Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V6. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
+
+
+## 9. Quellen / Vertiefung
+
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5
+- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
+- Glossar: `begriffe/wirkungsmonitoring`, `begriffe/wirkungsdatenraum`, `begriffe/wirkungsrueckkopplung`
+
+## 4. Wirkungsökonomische Vertiefung
+
+### 4.1 Begriffliche Präzision
+
+In dieser Vorlesung gilt die Grundregel der WÖk-Terminologie: **Wirkung ist neutral und relational.** Sie beschreibt zunächst nur eine tatsächliche Veränderung von Zuständen. Ob diese Veränderung positiv, negativ oder ambivalent ist, wird erst am Referenzrahmen bewertet. Wenn eine Zielgröße gemeint ist, sprechen wir von **positiver Netto-Wirkung**.
+
+Deshalb darf **Wirkungsmonitoring und Wirkungsdatenräume** nicht verkürzt werden auf Absicht, Aktivität, Reichweite, Symbolik oder moralische Selbstauskunft. Entscheidend bleibt: Wer oder was ist betroffen, welcher Zustand verändert sich, welcher Wirkpfad ist plausibel, welche Nebenwirkungen entstehen und welche Unsicherheit bleibt?
+
+### 4.2 Wirkpfad
+
+Ein erster Wirkpfad für diese Vorlesung lässt sich als Arbeitsmodell beschreiben:
+
+1. **Auslöser:** ein Produkt, eine Regel, eine Entscheidung, eine Kommunikation, eine Investition oder eine institutionelle Praxis.
+2. **Mechanismus:** der Zusammenhang, über den der Auslöser Verhalten, Ressourcen, Anreize, Rechte, Belastungen oder Schutz verändert.
+3. **Wirkungsempfänger:** Menschen, Ökosysteme, demokratische Öffentlichkeit, Organisationen oder künftige Generationen.
+4. **Zustandsveränderung:** beobachtbare oder plausibel belegbare Veränderung, nicht nur Output.
+5. **Bewertung:** Einordnung nach SDGs, Agenda 2030, SDG+ und WÖk-Schutzlinien.
+6. **Rückkopplung:** Anpassung von Entscheidung, Prozess, Anreiz oder Kommunikation.
+
+### 4.3 Formel-/Modellbaustein
+
+Die folgende Formel ist ein didaktisches Arbeitsmodell, kein amtlicher Bewertungsstandard:
+
+$$
+NW_{pos} = \sum_{i=1}^{n} w_i \cdot \Delta Z_i^{+} - \sum_{j=1}^{m} r_j \cdot \Delta Z_j^{-}
+$$
+
+Dabei steht $NW_{pos}$ für positive Netto-Wirkung als Zielgröße, $\Delta Z$ für Zustandsveränderungen, $w_i$ für begründete Gewichtungen positiver Wirkungen und $r_j$ für Risiken oder negative Zustandsveränderungen. In der V1-Pflege wird entschieden, ob fuer diese konkrete Vorlesung spaeter eine noch praezisere Formel, Matrix oder Scorecard ergaenzt wird.
+
+### 4.4 Tabellenbaustein
+
+| Prüffrage | Bedeutung für diese Vorlesung | Typischer Fehler | Saubere WÖk-Formulierung |
+|---|---|---|---|
+| Was ist der Auslöser? | Klärt, wodurch ein Wirkpfad beginnt. | Absicht mit Auslöser verwechseln. | "Der Auslöser ist ..., nicht die behauptete gute Absicht." |
+| Wer ist betroffen? | Bestimmt Wirkungsempfänger und Wirkungsraum. | Nur Kund:innen oder Entscheider:innen betrachten. | "Betroffen sind direkte, indirekte und stimmlose Empfänger." |
+| Was verändert sich? | Trennt Wirkung von Aktivität und Reichweite. | Output als Wirkung ausgeben. | "Wirkung liegt erst bei Zustandsveränderung vor." |
+| Welche Risiken entstehen? | Macht Nebenwirkungen und Zielkonflikte sichtbar. | Positive Wirkung behaupten und Schäden ausblenden. | "Wirkungsrisiken werden getrennt ausgewiesen." |
+| Wie wird rückgekoppelt? | Verbindet Bewertung mit Steuerung. | Reporting als Abschluss betrachten. | "Ergebnisse verändern Entscheidung und Prozess." |
+
+### 4.5 Chart-Spec
+
+```chart-spec
+slug: wirkungscontrolling-wc-v6-wirkpfad
+type: wirkpfad
+reuse_first: true
+preferred_asset: content/studienskripte/assets/wirkungscontrolling-wc-v6/wirkungscontrolling-wc-v6-wirkpfad.svg
+message: Wirkungsmonitoring und Wirkungsdatenräume wird als Wirkpfad von Auslöser über Mechanismus, Wirkungsempfänger und Zustandsveränderung bis zur Rückkopplung dargestellt.
+source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
+```
+
+> **Bildvorgabe:** Wirkpfadgrafik mit sechs Stationen: Auslöser, Mechanismus, Wirkungsempfänger, Zustandsveränderung, Bewertung, Rückkopplung. Bestehende WÖk-Wirkpfad- oder Scorecard-Visuals sollen wiederverwendet werden, bevor ein neues Chart entsteht.
+
+## 5. Verständnisfragen (Mini-Quiz)
+
+1. **Was leistet Wirkungsmonitoring?**
+   - A) Einmalige Bewertung  B) Laufende Beobachtung der KIIs über die Zeit  C) Reichweitenmessung  D) Umsatzprognose
+   - ✅ **Richtig: B**
+
+2. **Was macht Monitoring wertvoll?**
+   - A) Viele Dashboards  B) Kopplung an Entscheidungen (Rückkopplung)  C) Möglichst viele KPIs  D) Reichweite
+   - ✅ **Richtig: B**
+
+3. **Was ist ein Wirkungsdatenraum?**
+   - A) Ein Serverraum  B) Strukturierter, auditierbarer Austausch von Wirkungsdaten zwischen Beteiligten  C) Ein Berichtsformat  D) Eine Reichweitenplattform
+   - ✅ **Richtig: B**
+
+4. **Wie sollte Monitoring gestaltet sein?**
+   - A) Möglichst viele Kennzahlen  B) Wenige, aussagekräftige KIIs mit Fokus auf kritische Felder  C) Nur Umsatz  D) Nur Reichweite
+   - ✅ **Richtig: B**
+
+5. **Worauf baut der Datenaustausch auf?**
+   - A) Auf Zufall  B) Auf WÖk-IDs für Vergleichbarkeit und Nachvollziehbarkeit  C) Auf Reichweite  D) Auf Preisen
+   - ✅ **Richtig: B**
+
+6. **Gilt „Reporting ≠ Rückkopplung" auch im Monitoring?**
+   - A) Nein  B) Ja, besonders hier  C) Nur bei Audits  D) Nur extern
+   - ✅ **Richtig: B**
+
+## 6. Glossar der Kernbegriffe
+
+| Begriff | Kurzdefinition | Glossar-Seite |
+|---|---|---|
+| Wirkungsmonitoring | laufende Beobachtung der Wirkung über KIIs | `begriffe/wirkungsmonitoring` |
+| Wirkungsdatenraum | strukturierter, auditierbarer Datenaustausch | `begriffe/wirkungsdatenraum` |
+| Wirkungsrückkopplung | Rückführung in Entscheidungen | `begriffe/wirkungsrueckkopplung` |
+| KII | Key Impact Indicator | `begriffe/kii` |
+
+## 7. Tiefenskript-Erweiterung Sprint 9
+
+**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
+
+### 7.1 Leitthese
+
+Wirkungsmonitoring und Wirkungsdatenräume macht die WÖk prüfbar: Impact-Controlling übersetzt Wirkungslogik in Indikatoren, Datenqualität, Bewertungsprofile, Audits und Steuerungsentscheidungen.
+
+Die Vorlesung bleibt dabei an die Grundregel gebunden: Wirkung ist neutral und relational. Erst die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ entscheidet, ob eine Veränderung positiv, negativ oder ambivalent einzuordnen ist. Wenn eine Zielgröße gemeint ist, sprechen wir von positiver Netto-Wirkung.
+
+### 7.2 Didaktische Einordnung im Studiengang
+
+WC-V6 liegt an der Schwelle zwischen begrifflicher Grundlegung und Bewertungsarchitektur. Die Studierenden sollen nicht nur Begriffe wiedergeben, sondern an Fällen erkennen, welche Aussage schon Wirkung behauptet, welche nur Wirkungspotenzial beschreibt und wo ein Wirkungsrisiko offenliegt. Der Tiefensinn dieser Vorlesung liegt deshalb nicht in zusätzlicher Komplexität, sondern in besserer Unterscheidungsfähigkeit.
+
+Für die spätere Praxis ist entscheidend, dass jede Analyse vier Ebenen getrennt hält:
+
+1. **Beschreibung:** Was geschieht tatsächlich oder soll geschehen?
+2. **Kausalannahme:** Über welchen Mechanismus könnte daraus eine Zustandsveränderung entstehen?
+3. **Bewertung:** Welche Richtung hat diese Veränderung im Referenzrahmen?
+4. **Rückkopplung:** Welche Entscheidung, Regel, Ressource oder Kommunikation wird dadurch verändert?
+
+Wo diese Ebenen vermischt werden, entstehen typische WÖk-Fehler: Aktivität wird als Wirkung ausgegeben, Reichweite ersetzt Zustandsveränderung, gute Absicht verdeckt Nebenwirkungen oder Reporting wird mit Lernen verwechselt.
+
+### 7.3 Analysemodell
+
+| Analyseobjekt | Woran es wirkt | Typischer Fehler | Saubere WÖk-Lesart |
+|---|---|---|---|
+| Controllingebene | Funktion | Typischer Fehler | Saubere WÖk-Anwendung |
+| Kennzahl | Zustand sichtbar machen | KPI als Wirkung ausgeben | KII mit Wirkpfad und Empfänger verknüpfen |
+| Datenqualität | Aussagekraft begrenzen | Zahl ohne Quelle nutzen | Quelle, Einheit, Aktualität und Prüfstatus ausweisen |
+| Bewertung | Daten in Profil übersetzen | Score als Wahrheit behandeln | Benchmark, Archetyp und Sperrlogik offenlegen |
+| Steuerung | Entscheidung verändern | Dashboard ohne Konsequenz | CAPEX, OPEX, Einkauf, Portfolio oder Audit rückkoppeln |
+
+### 7.4 Modellformel
+
+Die folgende Formel ist ein didaktisches Denkmodell, kein amtlicher Bewertungsstandard:
+
+$
+Impact\text{-}Controlling = KII + Datenqualitaet + Bewertung + Audit + Steuerungsentscheidung
+$
+
+Die Formel zeigt die operative Kette: Erst aus Kennzahlen, Datenqualität, Bewertung, Audit und Entscheidung entsteht steuerungsfähige Wirkung.
+
+Die Formel soll gerade keine Scheingenauigkeit erzeugen. Sie zwingt dazu, die Faktoren offen zu legen, die eine Aussage tragen. In einem echten Bewertungsprozess müssten Datenquelle, Aktualität, Datenqualitätsklasse, Unsicherheitsgrad und Rückkopplungsregel ergänzt werden.
+
+### 7.5 Fallfenster
+
+**Fall 1.** Ein Dashboard zu Wirkungsmonitoring und Wirkungsdatenräume ist erst dann Impact-Controlling, wenn die Kennzahl eine Zustandsveränderung adressiert und eine Entscheidung auslöst.
+
+**Fall 2.** Ein Datensatz mit guter Optik, aber schwacher Datenqualität darf nicht als harte Steuerungsgrundlage dienen. Die WÖk verlangt Unsicherheitsausweis, Auditpfad und Korrektur.
+
+### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
+
+Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+
+1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
+2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
+3. Benenne mindestens ein Wirkungspotenzial und ein Wirkungsrisiko.
+4. Zeige, welche Quelle oder Datenart nötig wäre, um von Potenzial zu belastbarer Wirkungsaussage zu kommen.
+5. Prüfe, ob Nichtkompensation oder Reverse Merit Order einschlägig sein könnten.
+6. Formuliere eine saubere Wirkungsaussage in einem Satz: Was wissen wir, was nehmen wir an, was bleibt offen?
+
+### 7.7 Auswertung aus der lebenden Website-Referenz
+
+### Quellenanker: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume
+
+*Interne Quelle:* `referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html`
+
+Kapitel 34 hat T-SROI als Kennzahl für Transformation, Systemwirkung und langfristige Wirkungsqualität eingeführt. Damit ist die methodische Frage gestellt, wie Wirkung nicht nur als Einzelwert, sondern als Veränderung von Zuständen, Risiken und Zukunftspfaden sichtbar wird. Dieses Kapitel schließt Teil V ab und zeigt, welche technische Bedingung dafür nötig ist: Wirkungsdaten müssen verfügbar, prüfbar, verknüpfbar und entscheidungsrelevant werden.
+
+Daten allein verändern noch nichts. Sie können in Berichten stehen, in Datenbanken liegen, in Tabellen verglichen oder in Audits geprüft werden, ohne das System zu verändern. Systemkraft entsteht erst, wenn Wirkungsdaten in den Räumen verfügbar werden, in denen Entscheidungen fallen: bei Unternehmen, Lieferketten, Staat, Kapital, öffentlicher Beschaffung, Kund:innen, Forschung, Prüfstellen und späteren Wirkungsinstitutionen. Der digitale Produktpass und Wirkungsdatenräume bilden dafür die methodische Brücke.
+
+Wirkungsdaten entfalten erst dann Systemkraft, wenn sie nicht im Bericht enden, sondern in Datenräumen verfügbar, prüfbar und entscheidungsrelevant werden.
+
+### 35.1 DPP als Produktgedächtnis
+
+Der digitale Produktpass ist das Gedächtnis eines Produkts. Er speichert und verknüpft Informationen, die ein Produkt über seinen Lebenszyklus hinweg verständlich machen: Herkunft, Materialien, Energie, Wasser, Reparierbarkeit, Haltbarkeit, Kreislauffähigkeit, Lieferketten, Prüfstatus, Datenqualität und relevante Nachhaltigkeitsinformationen. Die Europäische Kommission beschreibt den Digital Product Passport als Kernelement der Ecodesign for Sustainable Products Regulation, um relevante Daten über Nachhaltigkeit, Haltbarkeit und weitere Umweltaspekte eines Produkts zu speichern und zu teilen.
+
+Für die Wirkungsökonomie ist diese technische Idee grundlegend, aber nicht ausreichend. Der DPP speichert Daten. Die WÖk-ID ordnet Wirkungsindikatoren. Benchmarks und Skalen bewerten Daten. Scorecards bündeln sie. T-SROI kann systemische Transformationswirkung erfassen. Erst diese Verbindung macht aus einem Produktpass eine Wirkungsinfrastruktur.
+
+Ein Produkt ohne Gedächtnis erscheint im Markt als isoliertes Objekt. Es hat einen Preis, eine Verpackung, ein Versprechen, eine Marke. Aber seine Wirkungen verschwinden: Rohstoffe, Energie, Arbeit, Wasser, Transport, Verpackung, Nutzung, Reparaturfähigkeit, Entsorgung, Dateninfrastruktur, Gesundheitsrisiken und Lieferketten. Der Produktpass beendet diese Amnesie. Er macht ein Produkt nicht automatisch gut, aber er macht seine relevanten Wirkungsdaten zugänglich.
+
+Damit wird Verbrauchertransparenz neu verstanden. Menschen sollen nicht am Regal selbst prüfen müssen, welche Wasserstressregion, welcher Lohnstandard, welche CO2-Bilanz, welche Kreislauffähigkeit oder welche Lieferkette hinter einem Produkt steht. Diese Arbeit gehört ins System. Kund:innen brauchen klare, geprüfte und verständliche Signale, nicht Datenüberforderung.
+
+Der DPP ist deshalb kein Marketinganhang. Er ist auch kein bloßes Etikett. Er ist ein Speicherort für prüfbare Produktwirklichkeit. In der Sprache dieses Buches: Er hält Wirkungsdaten am Produkt fest, statt sie im Bericht vom Produkt zu trennen.
+
+### 35.2 Datenräume als Infrastruktur
+
+Ein einzelner Produktpass reicht nicht. Wirkung entsteht in Ketten, Räumen und Rückkopplungen. Deshalb braucht die Wirkungsökonomie Datenräume.
+
+Ein Wirkungsdatenraum ist keine bloße Datenbank. Er ist eine Infrastruktur, in der wirkungsrelevante Daten nach gemeinsamen Regeln bereitgestellt, geteilt, geprüft, verknüpft und genutzt werden können. Die EU-Datenstrategie beschreibt gemeinsame europäische Datenräume als Rahmen, in dem Daten vertrauenswürdig und sicher ausgetauscht werden können, während Unternehmen, Verwaltungen und Einzelne Kontrolle über die von ihnen erzeugten Daten behalten. Für die Wirkungsökonomie ist dieser Gedanke anschlussfähig: Wirkungsdaten brauchen Austausch, aber auch Schutz, Rechte, Rollen und Verlässlichkeit.
+
+Datenräume verbinden Akteure, die bisher getrennt arbeiten. Unternehmen liefern Produkt- und Lieferkettendaten. Prüfstellen bestätigen Datenqualität. Öffentliche Stellen nutzen Daten für Beschaffung, Planung oder Wirkungsauswertung. Kapitalgeber lesen Wirkungsrisiken. Versicherungen erkennen Verwundbarkeiten. Kund:innen erhalten verständliche Signale. Forschung kann Muster, Engpässe und Transformationspfade auswerten. Lieferanten können ihre Wirkung verbessern, weil sie wissen, welche Daten relevant sind.
+
+Damit wird aus verstreuter Berichterstattung ein gemeinsamer Wirkungsraum. CSRD-, ESRS-, GRI-, NACE-, DPP-, ESG-, Lieferketten-, Bank-, Versicherungs-, Unternehmens- und Verwaltungsdaten können nur dann sinnvoll zusammenarbeiten, wenn sie über gemeinsame Wirkungsschlüssel verbunden werden. Die WÖk-ID ist dafür der semantische Stecker. Sie sorgt dafür, dass ein CO2-Wert, ein Wasserwert, ein Lohnwert, ein Gesundheitswert oder ein Demokratieindikator nicht nur irgendwo gespeichert ist, sondern in der richtigen Systemgrenze, Einheit, Datenqualitätsklasse und Version gelesen werden kann.
+
+Datenräume sind daher die Infrastruktur der Rückkopplung. Ohne sie bleibt Wirkung lokal, langsam und schwer vergleichbar. Mit ihnen kann Wirkung über Lieferketten, Branchen, Regionen, Kapitalflüsse, Beschaffung und Produktlebenszyklen hinweg erkennbar werden.
+
+### 35.3 Auditierbarkeit und Interoperabilität
+
+Wirkungsdaten müssen prüfbar sein. Ein Datenraum ohne Auditierbarkeit würde Vertrauen nicht stärken, sondern neue Angriffsflächen schaffen. Wer Wirkung in Entscheidungen zurückführen will, muss Datenherkunft, Datenqualität, Systemgrenzen, Aktualität, Prüfstatus, Version und Verantwortlichkeit sichtbar machen.
+
+Auditierbarkeit bedeutet: Ein Wert muss nachvollziehbar sein. Woher stammt er? Wer hat ihn erhoben? Welche Einheit gilt? Welche Grenze wurde gezogen? Ist er produktbezogen, standortbezogen, unternehmensbezogen oder lieferkettenbezogen? Wurde er geprüft? Ist er geschätzt? Welche Unsicherheit besteht? Welche Version des Indikators wurde genutzt? Welche Aktualisierung gilt? Ohne diese Angaben bleibt ein Wirkungsdatum unvollständig.
+
+Interoperabilität bedeutet: Daten müssen über Systeme hinweg zusammenarbeiten können. Ein Produktpass darf nicht nur in einem Herstellerportal funktionieren. Ein Lieferkettendatum darf nicht nur in einem einzelnen ERP-System lesbar sein. Ein Prüfstatus darf nicht nur in einem Bericht stehen. Wirkungsdaten müssen zwischen Lieferanten, Herstellern, Handel, Prüfstellen, Beschaffung, Kapital, Staat und Kund:innen verstanden werden können. Die Europäische Kommission beschreibt gemeinsame Datenräume als Verbindung relevanter Dateninfrastrukturen und Governance-Rahmen, um Datenpooling und Datenteilung zu ermöglichen.
+
+Interoperabilität ist nicht nur Technik. Sie ist auch Semantik, Governance und Verantwortung. Semantik klärt, was ein Wert bedeutet. Governance klärt, wer Daten bereitstellen, prüfen, nutzen und korrigieren darf. Verantwortung klärt, wer für Datenlücken, falsche Angaben, veraltete Werte oder unvollständige Systemgrenzen einsteht.
+
+Die Wirkungsökonomie braucht daher nicht möglichst viele Daten, sondern verlässliche Daten. Mehr Daten können Klarheit schaffen. Sie können aber auch neue Blindheit erzeugen, wenn sie unsortiert, unvergleichbar oder ungeprüft bleiben. Ein Datenraum ist nur dann wirkungsfähig, wenn er Daten nicht bloß speichert, sondern prüfbar verbindet.
+
+Das betrifft auch Datenlücken. Fehlende Daten dürfen nicht besser behandelt werden als offengelegte Risiken. Wenn ein Unternehmen keine belastbaren Lieferkettendaten liefert, entsteht keine neutrale Wirkung. Es entsteht Unsicherheit und damit Prüfbedarf. Das ist wichtig für globale Fairness. Kleine Lieferanten brauchen einfache Werkzeuge, Branchenwerte und Unterstützung. Große Akteure dürfen fehlende Daten jedoch nicht nutzen, um problematische Wirkungen unsichtbar zu halten.
+
+Auditierbarkeit und Interoperabilität sind deshalb keine technischen Nebensachen. Sie sind Vertrauensbedingungen der Wirkungsökonomie.
+
+### 35.4 Von Berichtsdaten zu Steuerungsdaten
+
+Der entscheidende Unterschied liegt zwischen Berichtsdaten und Steuerungsdaten.
+
+Berichtsdaten zeigen, was war. Steuerungsdaten verändern, was folgt.
+
+Ein Nachhaltigkeitsbericht kann Daten über Emissionen, Wasser, Arbeitsbedingungen, Governance, Lieferketten oder Risiken enthalten. Das ist wichtig. Aber solange diese Daten nur dokumentieren, verändern sie die Entscheidung nicht. Sie bleiben im Bericht, während Preise, Kapitalzugang, Beschaffung, Risiko, Management und Kundensignale weiter nach alten Logiken arbeiten.
+
+Steuerungsdaten entstehen, wenn diese Informationen entscheidungsrelevant werden. Ein Produktpass macht Daten am Produkt verfügbar. Ein Datenraum macht sie verknüpfbar. WÖk-IDs machen sie adressierbar. Benchmarks und Scorecards machen sie bewertbar. T-SROI macht systemische Transformationswirkung sichtbar. Damit können Daten in Entscheidungen zurückkehren.
+
+Diese Rückkehr kann verschiedene Adressaten haben. Unternehmen können ihre Lieferketten, Beschaffung, Produktentwicklung und Risiken besser lesen. Der Staat kann öffentliche Beschaffung, Planung und Wirkungsprüfung datenbasierter gestalten. Kapital kann Wirkungsrisiken und Transformationschancen erkennen. Versicherungen können Verwundbarkeiten besser einschätzen. Kund:innen können auf klare geprüfte Signale zugreifen. Forschung kann Systemmuster analysieren. Prüfstellen können Datenqualität sichern.
+
+Damit schließt dieses Kapitel an die systemische Logik der Wirkungslenkung an. Wirkungslenkung verlangt, dass Wirkung nicht nur sichtbar, sondern entscheidungsrelevant wird. Der digitale Produktpass und Wirkungsdatenräume sind dafür keine vollständige Lenkung. Sie sind die Datenbedingung der Lenkung.
+
+Das Kapitel schließt auch an die Risikologik der Wirkungsökonomie an. Wirkungsdaten sind Risikodaten. Wer Lieferketten, Wasserstress, Arbeitsbedingungen, Emissionen, Materialabhängigkeiten, Gesundheitsrisiken, Datenqualität oder Infrastrukturbelastung sichtbar macht, erkennt nicht nur vergangene Wirkung. Er erkennt Frühwarninformationen. Ein DPP kann zeigen, wo ein Produkt verwundbar ist. Ein Datenraum kann zeigen, wo ein System riskante Muster entwickelt. Damit werden Wirkungsdaten zur Grundlage von Resilienz.
+
+Berichtsdaten beantworten: Was wurde offengelegt?
+
+Steuerungsdaten beantworten: Welche Entscheidung muss sich dadurch verändern?
+
+Diese Verschiebung ist der Abschluss von Teil V. Wirkung wird nicht nur begrifflich definiert, normativ ausgerichtet und methodisch bewertet. Sie wird technisch anschlussfähig. Erst dadurch kann sie später in Recht, Staat, Unternehmen, Märkte, Volkswirtschaft, Gesellschaft, Öffentlichkeit, Digitalisierung und globale Ordnung übergehen.
+
+### 35.5 Abschluss von Teil V
+
+Damit ist die methodische Grundlage gelegt.
+
+Wirkung ist nun nicht mehr nur ein Begriff. Sie ist nicht nur normative Orientierung. Sie ist nicht nur ein Score. Sie kann adressiert, gemessen, verglichen, geprüft, versioniert, gespeichert und in Entscheidungen zurückgeführt werden.
+
+### Quellenanker: Kapitel 80 - Digitalisierung als Infrastruktur der Wirkungsökonomie
+
+*Interne Quelle:* `referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html`
+
+Digitalisierung wird häufig als Beschleunigung verstanden. Prozesse sollen schneller werden, Formulare elektronisch, Verwaltung online, Berichte automatisiert, Daten abrufbar, Entscheidungen effizienter. Das kann sinnvoll sein. Aber es reicht nicht. Ein schlechter Prozess wird durch Digitalisierung nicht automatisch gut. Ein Formular, das vorher Blindleistung erzeugte, erzeugt digitalisierte Blindleistung, wenn die Logik dahinter gleich bleibt. Eine digitale Verwaltung, die dieselben Daten mehrfach abfragt, ist nicht modern. Sie ist nur schneller im Fehler.
+
+Die Wirkungsökonomie braucht einen anderen Blick. Digitalisierung ist nicht Selbstzweck. Sie ist Infrastruktur der Rückkopplung. Digitale Systeme werden zum Nervensystem der Wirkungsökonomie, wenn sie Daten, Zustände, Risiken, Entscheidungen und Lernprozesse verbinden. Sie machen sichtbar, was vorher verteilt, verspätet oder unverbunden war. Sie schaffen die technische Voraussetzung dafür, dass Wirkung nicht im Bericht endet, sondern in Preise, Steuern, Kapitalzugang, Versicherbarkeit, Beschaffung, Management, öffentliche Haushalte, Rechtsschutz und demokratische Kontrolle zurückkehrt.
+
+Digitalisierung wird wirkungsökonomisch nicht daran gemessen, ob Prozesse schneller werden. Sie wird daran gemessen, ob Systeme besser wahrnehmen, rückkoppeln, lernen und demokratisch kontrollierbar bleiben.
+
+### 80.1 Digitales Nervensystem
+
+Die Wirkungsökonomie braucht digitale Infrastruktur, weil Wirkung nicht nur beschrieben, sondern rückgekoppelt werden muss. Daten müssen aus Produkten, Lieferketten, Unternehmen, öffentlichen Haushalten, Forschung, Kapitalmärkten, Versicherungen, Verwaltung und Öffentlichkeit so verbunden werden, dass Zustände erkennbar, Risiken prüfbar, Entscheidungen nachvollziehbar und Korrekturen möglich werden.
+
+Dieses digitale Nervensystem verbindet fünf Ebenen.
+
+Die erste Ebene ist Wahrnehmung. Wirkungsdaten zeigen Zustände: Emissionen, Wasserverbrauch, Energiequellen, Materialströme, Arbeitsbedingungen, Gesundheitsrisiken, Lieferkettenabhängigkeiten, Produktlebenszyklen, Gebäudewirkung, Pflegekapazitäten, Finanzierungsrisiken, Versicherbarkeit, öffentliche Beschaffung, Vertrauensindikatoren und demokratische Resonanzräume. Ohne digitale Erfassung bleiben viele dieser Zustände zu langsam, zu fragmentiert oder zu spät sichtbar.
+
+Die zweite Ebene ist Zuordnung. Daten müssen eindeutig adressierbar sein. WÖk-IDs, Produktkennungen, Unternehmensdaten, Lieferanteninformationen, Standortdaten, Materialdaten, Branchenklassifikationen, Prüfstatus und Versionen müssen miteinander verbunden werden können. Wirkung braucht Ordnung, sonst wird aus Datenmenge kein Erkenntnissystem.
+
+Die dritte Ebene ist Rückkopplung. Wirkungsdaten dürfen nicht im Bericht enden. Sie müssen in Beschaffung, Kapitalzugang, Versicherbarkeit, Management, Haushalt, Preislogik, Produktentwicklung, Lieferantensteuerung, Rechtsschutz, öffentliche Kontrolle und Wirkungslenkung zurückkehren. Erst dann werden sie Steuerungsdaten.
+
+Die vierte Ebene ist Lernfähigkeit. Ein digitales System darf nicht starr sein. Es muss neue wissenschaftliche Erkenntnisse, bessere Messmethoden, aktualisierte Benchmarks, veränderte Risiken, Fehlerkorrekturen und Evaluationen aufnehmen können. Versionierung, Audit-Trails und nachvollziehbare Änderungen sind dafür unverzichtbar.
+
+Die fünfte Ebene ist demokratische Kontrolle. Ein digitales Nervensystem darf nicht zur Black Box werden. Daten, Schnittstellen, Entscheidungspfade, Modelle, Zuständigkeiten und Beschwerdewege müssen so gebaut sein, dass Menschen, Unternehmen, Gerichte, Wissenschaft, Verwaltung und Öffentlichkeit nachvollziehen können, wie Wirkung erfasst, bewertet und genutzt wird.
+
+Damit unterscheidet sich digitale Wirkungsarchitektur von bloßer Digitalisierung. Bloße Digitalisierung fragt: Wie lässt sich ein bestehender Prozess elektronisch abbilden? Digitale Wirkungsarchitektur fragt: Welche Daten brauchen wir, damit ein System seine Wirkung erkennt, korrigiert und bessere Entscheidungen wahrscheinlicher macht?
+
+Diese Unterscheidung ist zentral. Ein digitaler Bericht ist kein digitales Nervensystem. Eine Datenbank ist kein Datenraum. Ein Dashboard ist keine Rückkopplung. Ein Algorithmus ist keine Verantwortung. Eine Plattform ist keine Öffentlichkeit. Eine KI ist kein Urteil. Die Wirkungsökonomie braucht digitale Infrastruktur, aber sie darf Verantwortung nicht an Technik abgeben.
+
+Das digitale Nervensystem muss daher auf Datenschutz, Datensicherheit, Datenqualität und Zugang beruhen. Datenschutz schützt Menschen vor Übergriff. Datensicherheit schützt Systeme vor Angriff, Manipulation und Missbrauch. Datenqualität schützt vor falscher Steuerung. Zugang schützt vor Datenmacht und Ausschluss. Diese vier Bedingungen gehören zusammen. Ohne Datenschutz wird Wirkungsdatenarchitektur zur Überwachung. Ohne Sicherheit wird sie angreifbar. Ohne Qualität wird sie falsch. Ohne Zugang wird sie zur Machtkonzentration.
+
+Digitale Infrastruktur steht außerdem nicht allein. Sie ist auf Energieinfrastruktur angewiesen. Rechenzentren, Datenräume, Register, KI-Systeme, digitale Verwaltung und Produktpässe funktionieren nur, wenn Energie sicher, sauber, bezahlbar und resilient verfügbar ist. Deshalb sind digitale Netze und erneuerbare Energiesysteme zwei Seiten derselben Wirkungsinfrastruktur: Das eine verbindet Informationen, das andere ermöglicht Betrieb. Beide dürfen nicht allein als Marktprodukte behandelt werden, wenn sie Grundbedingungen demokratischer Handlungsfähigkeit sind.
+
+Das ist besonders wichtig, weil Energie in der Wirkungsökonomie nicht nur ein Produkt ist. Sie ist das Betriebssystem moderner Gesellschaft. Strom verändert die Wirkung anderer Produkte und Infrastrukturen: Industrieprodukte, Rechenzentren, Gebäude, Mobilität, Wärmepumpen, Pflegeeinrichtungen, Schulen, Verwaltung und Datenräume. Fossile Energie folgt der Brennstofflogik: Förderung, Import, Transport, geopolitische Absicherung, Verbrennung, Emission, laufende Abhängigkeit. Erneuerbare Energie folgt stärker der Infrastrukturlogik: Sonne und Wind werden nicht gefördert, nicht importiert und nicht verbrannt. Die Kosten liegen vor allem in Anlagen, Netzen, Speichern, Steuerung, Wartung, Flächen, Material und Systemintegration. Daraus folgt keine naive Kostenlosigkeit. Aber die Grenzlogik ändert sich. Wo erneuerbare Energie lokal erzeugt, gespeichert und genutzt wird, kann ein Teil der Energieversorgung als Grundinfrastruktur organisiert werden: über kommunale Energiegesellschaften, Bürgerenergie, Genossenschaften, Wirkungsfonds, Quartiersspeicher, lokale Netze oder Gemeinwohlfinanzierung.
+
+Ein digitales Nervensystem braucht also eine materielle Grundlage: Strom, Netze, Speicher, Hardware, Rechenzentren, Kühlung, Wasser, Halbleiter, Fachkräfte, Wartung und Cyberresilienz. Digitalisierung wirkt nicht immateriell. Sie hat Energiebedarf, Ressourcenbedarf, Raumwirkung, Arbeitswirkung und Sicherheitswirkung. Eine Wirkungsökonomie darf digitale Lösungen daher nicht als automatisch sauber, effizient oder demokratisch lesen. Sie prüft auch die Wirkung der digitalen Infrastruktur selbst.
+
+Das gilt besonders für KI. KI-Systeme können Wirkungsdaten prüfen, Anomalien erkennen, Szenarien modellieren, Verwaltungsaufwand senken und Risiken früher sichtbar machen. Sie können aber auch Fehler skalieren, Diskriminierung automatisieren, Energiebedarf erhöhen, Datenmacht konzentrieren und Verantwortlichkeit verschleiern. Die Governance dieser Systeme wird später in diesem Teil vertieft. Hier gilt nur der Grundsatz: Das digitale Nervensystem darf Menschen nicht ersetzen, sondern muss ihnen bessere Wahrnehmung, bessere Prüfung und bessere Korrektur ermöglichen.
+
+Digitalisierung als Infrastruktur der Wirkungsökonomie bedeutet damit: Systeme werden wahrnehmungsfähiger. Entscheidungen werden begründbarer. Daten werden anschlussfähig. Risiken werden früher sichtbar. Wirkung wird auditierbar. Rückkopplung wird technisch möglich. Aber die normative Entscheidung bleibt demokratisch, rechtsstaatlich und menschlich verantwortet.
+
+Ein digitales Nervensystem ist stark, wenn es die Gesellschaft nicht kontrolliert, sondern ihre Korrekturfähigkeit verbessert.
+
+### 80.2 Daten als Rückkopplung
+
+Daten sind in der Wirkungsökonomie keine Verwaltungslast an sich. Sie sind Rückkopplung. Sie zeigen, ob eine Handlung die Zustände verändert, die sie verändern sollte. Sie zeigen, ob eine Maßnahme wirkt, ob ein Produkt schadet, ob ein Unternehmen resilienter wird, ob eine Lieferkette Risiken verschiebt, ob eine öffentliche Ausgabe Netto-Wirkung erzeugt, ob eine Infrastruktur stabilisiert oder ob eine Kommunikationsarchitektur Vertrauen beschädigt.
+
+Daten sind aber nur dann Rückkopplung, wenn sie in Entscheidungen zurückkehren. Ein Datensatz, der nur in einem Bericht steht, schafft Sichtbarkeit. Ein Datensatz, der Preise, Steuern, Beschaffung, Kapitalzugang, Versicherbarkeit, Management, Haushalt oder Rechtsschutz beeinflusst, schafft Steuerung.
+
+Das ist der Unterschied zwischen Berichtsdaten und Steuerungsdaten.
+
+Berichtsdaten dokumentieren. Steuerungsdaten verändern Handlungen. Berichtsdaten sagen: Das ist geschehen. Steuerungsdaten sagen zusätzlich: Daraus folgt etwas. Eine Emissionszahl wird erst dann rückkopplungsfähig, wenn sie Produktbewertung, Investitionsentscheidung, Steuerklasse, Lieferantenbewertung, Beschaffung oder Risikoprämie verändert. Ein Wasserindikator wird erst dann steuerungsfähig, wenn er Standortstrategie, Lieferkettenauswahl, Produktpreis oder Versicherbarkeit beeinflusst. Ein Pflegeindikator wird erst dann wirksam, wenn er Personalplanung, Entlastung, Prävention oder öffentliche Mittel verändert. Ein Vertrauensindikator wird erst dann relevant, wenn politische Kommunikation, Beteiligung und institutionelle Korrektur daraus lernen.
+
+Die Wirkungsökonomie braucht deshalb Daten in drei Funktionen.
+
+Erstens: Zustandsdaten. Sie beschreiben, was ist: Emissionen, Energie, Wasser, Boden, Arbeitsbedingungen, Gesundheit, Wohnen, Pflege, Bildung, Biodiversität, Diskursqualität, Vertrauen, Lieferkettenrisiken, Cyberrisiken, Kapitalflüsse. Zustandsdaten sind die empirische Grundlage.
+
+Zweitens: Veränderungsdaten. Sie zeigen, was sich bewegt: sinkt der Energiebedarf, steigt die Pflegeüberlastung, verschiebt sich Kapital in regenerative Geschäftsmodelle, verbessert sich Lieferkettenstabilität, sinkt die Wasserintensität, steigt die Versicherbarkeit, nimmt Desinformation ab, wird eine öffentliche Ausgabe wirksamer? Veränderungsdaten machen Wirkung sichtbar.
+
+Drittens: Entscheidungsdaten. Sie verbinden Zustand und Veränderung mit Handlung. Welche Beschaffung wird ausgelöst? Welche Steuerklasse folgt? Welche Risikoprämie ändert sich? Welche Investition wird erleichtert? Welche Förderlogik wird angepasst? Welche Verwaltungspraxis wird korrigiert? Welche Scorecard wird aktualisiert? Welcher Einspruch wird möglich?
+
+Erst die dritte Funktion macht Daten zu Rückkopplung.
+
+Daten als Rückkopplung verlangen auch Transparenz über Unsicherheit. Nicht jede Wirkung ist gleich messbar. Manche Daten sind direkt gemessen, andere geschätzt, andere abgeleitet, andere vorläufig. Diese Unterschiede müssen sichtbar bleiben. Eine Wirkungsarchitektur, die Schätzungen als Gewissheit ausgibt, erzeugt Scheingenauigkeit. Eine Wirkungsarchitektur, die wegen Unsicherheit nichts bewertet, erzeugt Blindheit. Die richtige Ordnung liegt dazwischen: messen, wo Messung möglich ist; schätzen, wo Schätzung notwendig ist; Unsicherheit ausweisen, wo Unsicherheit besteht; korrigieren, wenn Daten besser werden.
+
+Daten als Rückkopplung brauchen außerdem Datenqualität. Schlechte Daten lenken falsch. Unvollständige Daten können Verantwortung verschieben. Manipulierte Daten können Wirkungssimulation erzeugen. Veraltete Daten können Risiken verdecken. Datenqualität ist deshalb nicht nur technisches Detail. Sie ist Machtbegrenzung. Wer Datenqualität kontrolliert, kontrolliert Wirkungssichtbarkeit.
+
+Datenqualität umfasst Herkunft, Aktualität, Vollständigkeit, Prüfbarkeit, Vergleichbarkeit, Versionierung und Zweckbezug. Herkunft fragt: Woher kommt der Datensatz? Aktualität fragt: Ist er noch gültig? Vollständigkeit fragt: Welche Wirkungsfelder fehlen? Prüfbarkeit fragt: Kann eine unabhängige Stelle nachvollziehen, wie der Wert entstanden ist? Vergleichbarkeit fragt: Sind Einheiten, Grenzen und Standards kompatibel? Versionierung fragt: Welche Fassung gilt? Zweckbezug fragt: Wofür darf der Datensatz genutzt werden?
+
+Diese Anforderungen schützen nicht nur den Staat. Sie schützen auch Unternehmen. Ein Unternehmen, das dieselben Wirkungsdaten für jede Bank, jede Versicherung, jeden Kunden, jeden Investor und jede Behörde anders liefern muss, erlebt Datenchaos. Gemeinsame Standards senken Blindleistung. Ein gemeinsamer Wirkungsstecker ist weniger bürokratisch als Adapter für jeden Adressaten.
+
+Daten als Rückkopplung bedeuten daher nicht: mehr Daten um jeden Preis. Sie bedeuten: richtige Daten, richtige Qualität, richtige Schnittstellen, richtige Rechte, richtige Rückführung in Entscheidungen.
+
+Die Wirkungsökonomie hat kein Dateninteresse an sich. Sie hat ein Rückkopplungsinteresse.
+
+### 80.3 Interoperabilität
+
+### Quellenanker: Kapitel 81 - Wirkungsdatenräume
+
+*Interne Quelle:* `referenz/kapitel-081-wirkungsdatenraeume/index.html`
+
+Kapitel 80 hat Digitalisierung als Infrastruktur der Wirkungsökonomie beschrieben. Digitale Systeme werden wirkungsökonomisch nicht daran gemessen, ob sie Prozesse beschleunigen, sondern ob sie bessere Wahrnehmung, Rückkopplung, Lernfähigkeit und demokratische Kontrolle ermöglichen. Dieses Kapitel führt diese Logik weiter. Es erklärt den Wirkungsdatenraum als technische und institutionelle Grundlage, durch die Wirkung zwischen Wirtschaft, Staat, Wissenschaft, Kapital, Lieferketten, Produkten, Verwaltung und Öffentlichkeit nutzbar wird.
+
+Ein Wirkungsdatenraum ist kein zentraler Datenspeicher, in dem alle Informationen gesammelt werden. Er ist eine föderierte Infrastruktur aus gemeinsamen Standards, Rollen, Rechten, Schnittstellen, Prüfwegen, Datenqualitätsklassen und Zugriffsebenen. Er verbindet Daten, ohne Datenmacht zentral zu monopolisieren. Er macht Wirkung verfügbar, ohne Menschen zu bewerten. Er prüft Produkte, Unternehmen, Infrastrukturen, Kapitalflüsse, Lieferketten, öffentliche Maßnahmen und Systemzustände, nicht private Lebensführung.
+
+Wirkungsdatenräume machen Wirkung verfügbar, ohne Datenmacht zu zentralisieren. Sie schaffen die Infrastruktur, damit Wirkung geprüft, genutzt, rückgekoppelt und geschützt werden kann.
+
+### 81.1 Datenräume für Wirtschaft und Staat
+
+Wirkungsdaten entstehen längst an vielen Stellen: in Unternehmen, Lieferketten, Nachhaltigkeitsberichten, Produktpässen, Umweltproduktdeklarationen, öffentlichen Statistiken, Gebäudedaten, Versicherungsdaten, Kapitalmarktdaten, Beschaffungsdaten, Forschung, Verwaltung und Auditprozessen. Das Problem ist nicht nur, dass zu wenige Daten vorhanden wären. Das Problem ist, dass sie zu häufig in PDF-Berichten, Tabellen, Zertifikaten, Einzelgutachten, freiwilligen Angaben, Kundenfragebögen und unverbundenen Datenbanken liegen. Sie sind vorhanden, aber schwer nutzbar.
+
+Ein Wirkungsdatenraum ordnet diese Daten so, dass sie in Entscheidungen zurückkehren können. Unternehmen nutzen sie für Strategie, Beschaffung, Produktentwicklung, Lieferantenbewertung, Risikomanagement und Governance. Banken nutzen sie für Kreditprüfung, Risikopreise, Covenants und Transformationsfinanzierung. Versicherungen nutzen sie für Prämien, Deckung, Rückversicherung, Ausschlüsse und Präventionsanreize. Öffentliche Auftraggeber nutzen sie für Beschaffung. Steuerverwaltungen nutzen sie für Wirkungslenkung. Forschung nutzt sie für Evaluation. Kund:innen nutzen sie für Orientierung. Gerichte und Aufsicht nutzen sie für Prüfung, Einspruch und Rechtsschutz.
+
+Der Wirkungsdatenraum ist damit keine Berichtsbibliothek. Er ist die gemeinsame Anschlussstruktur der Wirkungsökonomie. Die V1-Fassung beschreibt ihn als Infrastruktur, die Produktpässe, Unternehmensdaten, Lieferkettendaten, öffentliche Statistiken, Gebäudedaten, Kapitaldaten, Versicherungsdaten, Beschaffungsdaten, Forschungsdaten und Wirkungsberichte verbindet.
+
+Diese Infrastruktur muss föderiert sein. Föderiert bedeutet: Daten bleiben nicht zwingend an einem zentralen Ort. Sie können bei Datenhaltern verbleiben und über standardisierte Rechte, Schnittstellen, Identitäten, Zugriffsregeln, Metadaten und Prüfpfade verbunden werden. Das verhindert zwei Gegenfehler. Der erste Fehler wäre Datenchaos: Jede Bank fragt anders, jede Versicherung anders, jeder Investor anders, jeder Kunde anders, jede Behörde anders. Der zweite Fehler wäre ein zentrales Datenmonopol: Eine Stelle kontrolliert Zugang, Auslegung, Nutzung und Macht über Wirkung.
+
+Die Wirkungsökonomie braucht weder Datenchaos noch Datenzentralismus. Sie braucht gemeinsame Standards mit verteilter Verantwortung.
+
+Der europäische Anschlussrahmen ist dafür passend. Die EU beschreibt gemeinsame europäische Datenräume als sichere und vertrauenswürdige Umgebungen für Zugriff, Austausch und Weiterverwendung von Daten; sie sollen auf gemeinsamen Dateninfrastrukturen und Governance-Rahmen beruhen und faire, transparente, verhältnismäßige sowie diskriminierungsfreie Zugangsregeln ermöglichen. Der Data Governance Act unterstützt gemeinsame europäische Datenräume in strategischen Bereichen wie Gesundheit, Umwelt, Energie, Landwirtschaft, Mobilität, Finanzen, Fertigung, öffentlicher Verwaltung und Kompetenzen. Der Data Act gilt seit dem 12. September 2025 und soll rechtliche Klarheit für Zugang und Nutzung von Daten schaffen, unter anderem im Umfeld vernetzter Produkte.
+
+Für die Wirkungsökonomie heißt das: Europäische Datenräume sind nicht nur Digitalpolitik. Sie sind Anschlussarchitektur für Wirkungssteuerung. Sie können dazu beitragen, dass Wirkung nicht in isolierten Berichtswelten bleibt, sondern in Wirtschaft, Verwaltung, Wissenschaft, Kapital, Beschaffung und Öffentlichkeit als gemeinsame Datengrundlage verfügbar wird.
+
+Datenräume für Wirtschaft und Staat müssen vier Grundsätze erfüllen. Erstens: Sie müssen dezentral nutzbar sein. Zweitens: Sie müssen gemeinsame Wirkungsschlüssel verwenden. Drittens: Sie müssen differenzierte Zugriffsebenen besitzen. Viertens: Sie müssen rechtsschutzfähig sein. Nur dann werden sie zur Infrastruktur freier und lernfähiger Wirkungssteuerung.
+
+### 81.2 Zugänge, Rechte, Rollen
+
+Ein Wirkungsdatenraum steht und fällt mit seiner Rollen- und Rechteordnung. Datenzugang darf nicht bedeuten, dass alles für alle offenliegt. Wirkungstransparenz ist nicht Entblößung. Geschäftsgeheimnisse, personenbezogene Daten, sicherheitskritische Informationen, Gesundheitsdaten, Lieferantenvereinbarungen, technische Rohdaten und sensible Standortinformationen brauchen Schutz. Gleichzeitig dürfen zentrale Wirkungsinformationen nicht in privaten Black Boxes verschwinden.
+
+Die Grundregel lautet: so offen wie nötig, so geschützt wie erforderlich, so prüfbar wie möglich.
+
+Daraus entstehen unterschiedliche Zugriffsebenen. Öffentlich sichtbar sein müssen methodische Grundinformationen: WÖk-ID, Score, Methodik, Benchmark, Datenqualitätsklasse, Prüfstatus, Version, Gültigkeit und wesentliche Wirkungsaussage. Kontrolliert öffentlich nutzbar sind aggregierte Daten, Branchenwerte, regionale Wirkungsdaten und Forschungszugänge. Vertraulich geprüft bleiben Rohdaten, Lieferantenverträge, technische Messdaten oder interne Berechnungen, wenn Prüfer, Aufsicht, Steuerverwaltung, Gerichte oder akkreditierte Stellen sie für eine Prüfung benötigen. Besonders geschützt bleiben personenbezogene Daten, echte Geschäftsgeheimnisse und sicherheitskritische Informationen.
+
+Diese Schichtung ist praktisch. Ein Verbraucher muss nicht alle Rohdaten einer Chemieproduktion sehen. Er muss aber erkennen können, ob ein Produkt in Wasser, Klima, Gesundheit oder Arbeit kritisch wirkt. Ein Wettbewerber muss keine Rezeptur erhalten. Er darf aber nicht daran gehindert werden, relevante Wirkungsrisiken zu erkennen. Eine Öffentlichkeit muss keine individuellen Gehaltsdaten kennen. Sie darf aber aggregierte Informationen über Living Wage, Pay Ratio oder Arbeitsrechtsrisiken verlangen, wenn diese für Wirkung relevant sind. Eine Kommune muss keine privaten Gesundheitsdaten offenlegen. Sie muss aber Hitzevulnerabilität, Versorgungsrisiken und Gesundheitswirkung so erfassen, dass politische Entscheidungen möglich werden.
+
+Die Rollenlogik ist ebenso wichtig. Datenhalter sind jene Akteure, die Daten erzeugen oder kontrollieren: Unternehmen, Lieferanten, Plattformen, Kommunen, Behörden, Forschungseinrichtungen, Versicherer, Banken, Gebäudeeigentümer, Energieversorger oder Register. Datennutzer sind jene, die auf Daten für Entscheidungen zugreifen: Unternehmen, Kund:innen, Kapitalgeber, Versicherungen, Beschaffungsstellen, Verwaltung, Forschung, Öffentlichkeit und Gerichte. Prüfer und Assurance-Anbieter sichern Belastbarkeit. Aufsicht und Wirkungsrat sichern Methode, Missbrauchsschutz, Standards und Weiterentwicklung. Gerichte sichern Rechtsschutz.
+
+Der Wirkungsrat darf nicht zur Einzelfall-Prüfstelle für jedes Produkt oder jedes Unternehmen werden. Das wäre administrativ falsch und institutionell riskant. Seine Aufgabe liegt in Methodensicherung: WÖk-IDs, Benchmarks, Archetypen, Prüfstandards, Konsultationen, Evaluation, Versionierung und Missbrauchsschutz. Die Einzelfallprüfung liegt bei akkreditierten Prüfern, Fachstellen, Zertifizierern, Aufsichten, Steuerverwaltung, Gerichten, Versicherungsprüfung, Kapitalmarktaufsicht und passenden Sonderstellen.
+
+Rechte müssen entlang dieser Rollen gesichert werden. Dazu gehören Zugang, Zweckbindung, Korrektur, Löschung, Portabilität, Einspruch, Transparenz und Beschwerde. Zugang bedeutet: Berechtigte Akteure können relevante Daten nutzen. Zweckbindung bedeutet: Daten werden für definierte Wirkungs-, Prüf-, Steuerungs-, Forschungs- oder Rechtsschutzzwecke verwendet. Korrektur bedeutet: Fehlerhafte Daten können berichtigt werden. Löschung bedeutet: Daten ohne legitimen Zweck oder nach Ablauf definierter Fristen werden entfernt oder anonymisiert. Portabilität bedeutet: Akteure können Daten zwischen Systemen übertragen. Einspruch bedeutet: Bewertungen, Datenquellen, Benchmarks oder Systemgrenzen können angegriffen werden. Transparenz bedeutet: Betroffene und Adressaten verstehen, welche Daten wofür genutzt werden.
+
+Diese Rechte sind keine Datenschutzdekoration. Sie verhindern, dass Wirkungsdatenräume zu Steuerungsräumen ohne Verteidigungsmöglichkeit werden. Wenn ein schlechter Wirkungswert eine Steuerklasse, einen Kreditpreis, eine Versicherung, ein Rating oder eine öffentliche Ausschreibung beeinflusst, braucht der betroffene Akteur Nachvollziehbarkeit und Korrekturmöglichkeit. Wirkungsdatenräume müssen verwaltungs- und rechtsschutzfähig sein.
+
+Wirkungsdatenräume dürfen auch keine Social-Credit-Logik erzeugen. Die Wirkungsökonomie bewertet Wirkungsträger, Strukturen, Produkte, Organisationen, Infrastrukturen, Kapitalflüsse und öffentliche Maßnahmen. Sie bewertet nicht den Wert eines Menschen. Personenbezogene Daten dürfen nur dort verarbeitet werden, wo ein klarer Rechtsgrund, ein enger Zweck, ein Schutzkonzept und eine verhältnismäßige Notwendigkeit bestehen. Die Architektur muss diesen Grundsatz technisch erzwingen, nicht nur politisch versprechen.
+
+### 81.3 Maschinenlesbarkeit
+
+Ein Wirkungsdatenraum wird erst dann steuerungsfähig, wenn seine Daten maschinenlesbar sind. Maschinenlesbarkeit bedeutet nicht, dass Maschinen entscheiden sollen. Sie bedeutet, dass Systeme Daten verlässlich verarbeiten, prüfen, vergleichen und in definierte Entscheidungen einbinden können. Ohne Maschinenlesbarkeit bleiben Wirkungsdaten langsam, teuer, fehleranfällig und abhängig von manueller Interpretation.
+
+Die WÖk-ID ist dafür der Schlüssel. Sie ist der adressierbare Wirkungsindikator, aus dem Bewertungen aufgebaut werden. Sie ist nicht der Score, nicht die ganze Bewertung und nicht die Scorecard. Sie beantwortet die Frage: Welcher Wirkungsindikator ist gemeint? Eine WÖk-ID verbindet im Regelfall Wirkungsdimension, SDG- oder SDG+-Bezug, Indikatorfamilie, Einheit, Datenquelle, Bewertungsarchetyp, Benchmark, Score-Logik, Systemgrenze, Datenqualitätsklasse, Prüfanforderung, Version und Gültigkeitszeitraum.
+
+Dadurch wird aus einem Messwert eine steuerungsfähige Information. Ein CO₂-Wert ist erst dann brauchbar, wenn klar ist, ob er produktbezogen, standortbezogen, unternehmensbezogen oder lieferkettenbezogen gilt. Ein Wasserwert ist erst dann aussagekräftig, wenn Wasserstress berücksichtigt wird. Ein Lohnwert braucht Bezug zum lokalen Living Wage, Mindestlohn, Medianlohn oder Tarifrahmen. Ein Demokratieindikator braucht Klarheit, ob er Medienfreiheit, Plattformverstärkung, Transparenz, Rechtsstaatlichkeit oder manipulative Praxis erfasst.
+
+Maschinenlesbarkeit ist deshalb mehr als Format. Sie ist Bedeutung in technischer Form.
+
+Für technische Systeme wird der Prefix WOK verwendet, weil Umlaute in Datenbanken, Schnittstellen, Registersystemen und internationalen Datenräumen problematisch sein können. Im Fließtext bleibt WÖk-ID die fachliche Schreibweise. Diese Trennung ist nicht kosmetisch. Sie trennt Sprache und technische Interoperabilität.
+
+Maschinenlesbarkeit ist die Voraussetzung für automatisierte Prüfung, Scorecards, digitale Produktpässe, Beschaffung, Steuerlogik, Kapitalzugang, Versicherungsmodelle und Risikomanagement. Ein digitales Steuersystem kann WÖk-IDs verarbeiten. Ein Beschaffungsportal kann Mindeststandards prüfen. Eine Bank kann Kreditrisiken mit Lieferketten- und Klimadaten verbinden. Eine Versicherung kann Standort- und Produktwirkung in Risikomodellen berücksichtigen. Ein Unternehmen kann Lieferantendaten in die eigene Produkt-Scorecard übernehmen. Ein digitaler Produktpass kann Produktdatenketten mit WÖk-IDs, Benchmarks und Prüfstatus verbinden.
+
+Das bedeutet nicht, dass alles automatisch berechnet werden darf. Maschinenlesbarkeit macht Prüfung schneller. Sie ersetzt keine normative Bewertung, keine demokratische Legitimation und keinen Rechtsschutz. Ein maschinenlesbarer Wert bleibt ein Wert mit Quelle, Kontext, Unsicherheit, Version und Prüfstatus. Automatisierung darf nur dort greifen, wo Datenqualität, Prüfmodell und Rechtsfolge ausreichend klar sind.
+
+Eine mögliche Prüfkaskade verhindert Über- und Untersteuerung. Ein Energieverbrauch kann automatisiert validiert werden, wenn Messdaten direkt vorliegen. Ein Living-Wage-Wert braucht Lieferkettenprüfung. Ein Demokratieindikator braucht andere Plausibilisierung. Ein KI-Audit braucht technische Prüfung. Sensible Hochrisikoindikatoren brauchen Sonderprüfung.
+
+Maschinenlesbarkeit senkt Blindleistung. Sie verhindert, dass dieselben Daten aus PDFs abgeschrieben, neu formatiert, neu interpretiert und mehrfach geprüft werden. Sie schafft gemeinsame Datenfelder, gemeinsame Prüfregeln und gemeinsame Anschlussfähigkeit. Genau darin liegt der Unterschied zwischen Bürokratie und Standardisierung: Nicht mehr Papier, sondern weniger Blindleistung im System.
+
+### 81.4 Datenintegrität
+
+Datenintegrität ist die Bedingung, damit Wirkungsdatenräume Vertrauen verdienen. Wenn Daten manipuliert, überschrieben, falsch zugeordnet, veraltet, unvollständig oder nicht prüfbar sind, wird Wirkungssteuerung gefährlich. Je stärker Daten Preise, Steuern, Beschaffung, Kreditpreise, Versicherbarkeit, Kapitalzugang oder öffentliche Bewertungen beeinflussen, desto größer wird der Anreiz, sie zu schönen.
+
+Deshalb ist Datenqualität keine rein technische Qualität. Sie ist Machtbegrenzung. Wer Datenqualität kontrolliert, kontrolliert Wirkungssichtbarkeit. Wer Wirkungsindikatoren setzt, kann Macht neu monopolisieren. Wer Wirkungsdaten manipuliert, kann Wirkung simulieren. Das Grundlagenpapier nennt Wirkungstransparenz und offene Wirkungsplattformen ausdrücklich als Chance, warnt aber zugleich vor Machtkonzentration, Wirkungssimulation und technokratischer Entkopplung.
+
+Datenintegrität umfasst Herkunft, Versionierung, Signatur, Prüfbarkeit und Manipulationsschutz.
+
+Herkunft bedeutet: Jeder relevante Wert braucht eine Quelle. Ist er gemessen, geschätzt, berechnet, übernommen, standardisiert oder plausibilisiert? Stammt er aus Primärmessung, Lieferantendaten, Branchenwert, Zertifikat, amtlicher Statistik, LCA, EPD, Audit oder wissenschaftlicher Studie? Ohne Herkunft entsteht kein Vertrauen.
+
+### Quellenanker: Wirkungsökonomie · Datenraum-Reifegradcheck · https://wirkungsoekonomie.de/werkzeuge/datenraum-reifegradcheck/ · Druckdatum: 2026-05-24
+
+*Interne Quelle:* `werkzeuge/datenraum-reifegradcheck/index.html`
+
+Reifegradcheck · Methodik
+
+Bewertet Interoperabilität, Datenqualität, Rollenrechte, Datenschutz, Audit-Trail und Rückkopplungspfad.
+
+Modellhafte Demonstration. Keine Förderentscheidung, keine Rechtsberatung, keine Auditierung und keine wissenschaftliche Begutachtung.
+
+Schutzgrenze
+
+Werkzeug unterstützt, entscheidet aber nicht.
+
+Wirkungsdaten bereiten Entscheidungen vor. Verantwortung, Prioritäten und Zumutungen bleiben menschlich, institutionell und demokratisch legitimiert.
+
+Datenraum-Reifegradcheck
+
+Eingaben
+
+Ausgaben
+
+Methodik online lesen #
+
+Datenraum-Reifegradcheck #
+
+Bewertet Interoperabilität, Datenqualität, Rollenrechte, Datenschutz, Audit-Trail und Rückkopplungspfad. #
+
+Eingaben #
+
+Beschreibung des Vorhabens
+
+Zielzustand und Wirkungsraum
+
+SDG-/SDG+-Bezug
+
+Datenquellen und Datenqualität
+
+Risiken, Nebenwirkungen und Schutzmechanismen
+
+Beteiligte Akteure und Korrekturpfade
+
+Ausgaben #
+
+Wirkungsprofil
+
+Risikoprofil
+
+Datenqualitätsklasse
+
+empfohlene Schutzmaßnahmen
+
+Verweise auf Detailkonzepte, Dossiers und Buchanker
+
+Methoden & Werkzeuge
+
+Werkzeuge in diesem Bereich #
+
+Die Werkzeuge sind Modell- und Planungshilfen. Sie ersetzen keine Förderentscheidung, Rechtsberatung, Auditierung oder wissenschaftliche Begutachtung.
+
+Check · Methodik
+
+Forschungs-Wirkungscheck
+
+Bewertet Erkenntniswirkung, Systemwirkung, Freiheitswirkung, Integrität, Replikation und Wirkungspfad eines Forschungsvorhabens.
+
+Check · Methodik
+
+Open-Science- und Replikationscheck
+
+Prüft Datenoffenheit, Methodentransparenz, Replikationsfähigkeit, Schutzgrenzen und Interessenkonflikte.
+
+Risikocheck · Methodik
+
+KI-Wirkungsrisiko-Check
+
+Bewertet KI-Systeme nach Risiko, Fairness, Erklärbarkeit, Menschenaufsicht, Manipulationsgefahr und SDG+/Demokratiebezug.
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
+
+Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
+
+- Wirkungsmonitoring und Wirkungsdatenräume als Controllingfall mit Datenfeldern, Qualitätsklassen und Entscheidungslogik weiter ausarbeiten.
+- Geschützte Prüfungslogik mit Datensatz, Rubric und CorrectAnswer separat in der App-Lane pflegen.
+- Reader/PDF sollte Tabellen, Formeln und Auditpfad für Controlling-Lektionen besonders sauber setzen.
+
+### 7.10 Kurzfazit
+
+Wirkungsmonitoring und Wirkungsdatenräume ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
+
+
+## 8. Prüfungsrelevanz
+
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+
+Für den Fragenpool sind besonders geeignet:
+
+- Begriffstrennung: Wirkung, Wirkungspotenzial, Wirkungsrisiko.
+- Anwendungsszenarien: Auslöser, Wirkpfad, Wirkungsempfänger und Rückkopplung an einem Fall.
+- Missverständnisse: Reichweite, Aktivität, Reporting oder Absicht als Wirkung auszugeben.
+- Transfer: positive Netto-Wirkung unter Nichtkompensation und, wo passend, Reverse Merit Order begründen.
+
+## 9. Quellen
+
+### Interne Quellen
+
+- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v6-monitoring-wirkungsdatenraeume.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
+- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
+
+### Externe Quellen fuer die V1-Fassung
+
+- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
+- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
+- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

@@ -1,0 +1,11 @@
+{
+  "matcher": "matchSeedClaim(report.claim)",
+  "duplicateThreshold": 0.82,
+  "publicDisplay": false,
+  "neverPublicRaw": true,
+  "reviewRules": {
+    "minderheitenschutz": "humanTopicReview",
+    "elitenverschwoerung": "conspiracyReview",
+    "toxicRawClaim": "blocked_frame_risk"
+  }
+}

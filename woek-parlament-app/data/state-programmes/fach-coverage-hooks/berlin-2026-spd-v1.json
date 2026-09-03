@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "WOEK-BE-SPD-2026-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "shared_residual_path": "data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
+    "party": "SPD",
+    "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+    "artifact_sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9"
+  },
+  "input": {
+    "ledger_manifest_path": "data/state-programmes/fach-reviews/berlin-2026-spd-v1/manifest.json",
+    "ledger_id": "WOEK-BE-SPD-2026-FULL-PROGRAMME-REVIEW-V1",
+    "logical_descriptor_sha256": "cec984d14a19663535b13af55d6bd8ffe1c61ab664c09db43162f09a9bf42de6"
+  },
+  "precondition": {
+    "source_register_path": "data/state-programmes/current-source-registers/berlin-2026-v2.json",
+    "source_register_sha256": "29f088e153613129cedaba91f4e6eb2da0f9554f8a0961a065a849328eadc36c",
+    "expected_page_count": 66,
+    "require_ledger_validation_pass": true
+  },
+  "overlay": {
+    "source_object_review_status": "SOURCE_OBJECT_REVIEW_COMPLETE",
+    "programme_analysis_complete": true,
+    "programme_terminal_basis": "ALL_EFFECT_ATOMS_TERMINATED_OR_CONTEXT_REVIEWED_UNDER_DELEGATED_PROTOCOL",
+    "reviewed_page_count": 66,
+    "source_unit_count": 766,
+    "effect_atom_count": 1276,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 1276,
+    "genuine_fach_review_required_count": 0,
+    "explicit_fach_available_for_public_effect_projection": false,
+    "effect_credit_allowed": false,
+    "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL"
+  },
+  "apply_contract": {
+    "match_keys": ["party", "artifact_id", "artifact_sha256"],
+    "preserve_all_other_programmes": true,
+    "remove_only_exact_matching_spd_page_envelopes_after_validation": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "consumer_must_preserve_existing_explicit_fach": true,
+    "consumer_must_not_materialize_missing_fach_fields": true
+  },
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "dns_mapping_synthesized": false,
+    "recommendation_synthesized": false,
+    "party_score_created": false,
+    "vercel_build_triggered": false
+  },
+  "descriptor_sha256": "f44b5e444ad9e6277f2960004ede6f4e8d1f1b7faf7fb77a23602ff0b2206720"
+}

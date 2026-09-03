@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-18",
+  "sources": [
+    {
+      "source_id": "bundeswahlleiterin-wahltermine",
+      "jurisdiction_id": "DE-ALL-STATES",
+      "institutional_role": "ELECTION_CALENDAR",
+      "name": "Die Bundeswahlleiterin - künftige Wahltermine",
+      "base_url": "https://www.bundeswahlleiterin.de/service/wahltermine.html",
+      "access_type": "HTML",
+      "adapter_status": "ACTIVE"
+    },
+    {
+      "source_id": "bund-dip",
+      "jurisdiction_id": "DE",
+      "institutional_role": "LEGISLATIVE_DEPENDENCY_LAYER",
+      "name": "Dokumentations- und Informationssystem für Parlamentsmaterialien",
+      "base_url": "https://dip.bundestag.de/",
+      "access_type": "API",
+      "adapter_status": "ACTIVE"
+    },
+    {
+      "source_id": "bund-namentliche-abstimmungen",
+      "jurisdiction_id": "DE",
+      "institutional_role": "LEGISLATIVE_DEPENDENCY_LAYER",
+      "name": "Deutscher Bundestag - namentliche Abstimmungen",
+      "base_url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung",
+      "access_type": "XLSX",
+      "adapter_status": "ACTIVE"
+    },
+    {
+      "source_id": "state-election-berlin-2026",
+      "jurisdiction_id": "DE-BE",
+      "institutional_role": "ELECTION_AUTHORITY",
+      "name": "Landeswahlleiter Berlin",
+      "base_url": "https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/",
+      "access_type": "HTML_PDF",
+      "adapter_status": "DEFINED_NOT_AUTOMATED"
+    },
+    {
+      "source_id": "state-election-mv-2026",
+      "jurisdiction_id": "DE-MV",
+      "institutional_role": "ELECTION_AUTHORITY",
+      "name": "Landeswahlleitung Mecklenburg-Vorpommern",
+      "base_url": "https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/",
+      "access_type": "HTML_PDF",
+      "adapter_status": "DEFINED_NOT_AUTOMATED"
+    },
+    {
+      "source_id": "state-election-st-2026",
+      "jurisdiction_id": "DE-ST",
+      "institutional_role": "ELECTION_AUTHORITY",
+      "name": "Landeswahlleitung Sachsen-Anhalt",
+      "base_url": "https://wahlen.sachsen-anhalt.de/",
+      "access_type": "HTML_PDF",
+      "adapter_status": "DEFINED_NOT_AUTOMATED"
+    },
+    {
+      "source_id": "eu-commission-register",
+      "jurisdiction_id": "EU",
+      "institutional_role": "EXECUTIVE_CORE",
+      "name": "Europäische Kommission - Register und Dokumente",
+      "base_url": "https://commission.europa.eu/about/service-standards-and-principles/transparency/registers-and-other-sources-information_en",
+      "access_type": "HTML_API_CANDIDATE",
+      "adapter_status": "RECONNAISSANCE"
+    },
+    {
+      "source_id": "eu-eurlex",
+      "jurisdiction_id": "EU",
+      "institutional_role": "LEGAL_ACT_REGISTER",
+      "name": "EUR-Lex",
+      "base_url": "https://eur-lex.europa.eu/",
+      "access_type": "API_XML_HTML",
+      "adapter_status": "RECONNAISSANCE"
+    },
+    {
+      "source_id": "eu-parliament-oeil",
+      "jurisdiction_id": "EU",
+      "institutional_role": "LEGISLATIVE_DEPENDENCY_LAYER",
+      "name": "Legislative Observatory des Europäischen Parlaments",
+      "base_url": "https://oeil.secure.europarl.europa.eu/oeil/home/home.do",
+      "access_type": "HTML",
+      "adapter_status": "RECONNAISSANCE"
+    }
+  ]
+}

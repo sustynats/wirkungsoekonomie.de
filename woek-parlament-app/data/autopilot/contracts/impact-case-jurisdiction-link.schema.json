@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/impact-case-jurisdiction-link-1.0.schema.json",
+  "description": "Ergänzt WÖkImpactCase 2.0.1 um Jurisdiktions- und Ebenenrelationen, ohne das führende Fachschema still zu verändern.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["impact_case_id", "jurisdiction_ids", "relations"],
+  "properties": {
+    "impact_case_id": { "type": "string", "pattern": "^WOEK-IMPACT-[A-Z0-9-]+$" },
+    "jurisdiction_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_object_id", "target_object_id", "relationship_type", "review_status"],
+        "properties": {
+          "source_object_id": { "type": "string" },
+          "target_object_id": { "type": "string" },
+          "relationship_type": { "enum": ["IMPLEMENTS", "TRANSPOSES", "EXECUTES", "CO_FINANCES", "SPECIFIES", "DERIVES_FROM", "DEPENDS_ON"] },
+          "review_status": { "enum": ["CONFIRMED", "REVIEW_REQUIRED", "REJECTED"] }
+        }
+      }
+    }
+  }
+}

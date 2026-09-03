@@ -1,0 +1,114 @@
+{
+  "method_version": "territorial-compass-beta-0.1",
+  "created_at": "2026-06-10T00:00:00+02:00",
+  "providers": [
+    {
+      "provider_id": "destatis_regionaldatenbank",
+      "scope": "LWK-DE",
+      "title": "Destatis / Regionaldatenbank",
+      "status": "prepared_not_scraped",
+      "possible_indicators": [
+        "Armutsgefährdung",
+        "Arbeitslosigkeit",
+        "Bildung",
+        "Bevölkerung",
+        "Fläche"
+      ],
+      "license_note": "Vor Import Lizenz und Nutzungsbedingungen prüfen."
+    },
+    {
+      "provider_id": "uba",
+      "scope": "LWK-DE",
+      "title": "Umweltbundesamt",
+      "status": "prepared_not_scraped",
+      "possible_indicators": [
+        "CO2-Emissionen",
+        "Luftqualität",
+        "Flächenverbrauch",
+        "Klimaanpassung"
+      ],
+      "license_note": "Nur offene, zitierfähige Daten versioniert übernehmen."
+    },
+    {
+      "provider_id": "bundeswahlleiter_landeswahlleitungen",
+      "scope": "LWK-DE",
+      "title": "Bundeswahlleiterin / Landeswahlleitungen",
+      "status": "prepared_not_scraped",
+      "possible_indicators": [
+        "Wahlbeteiligung",
+        "ungültige Stimmen",
+        "Beteiligungstrends"
+      ],
+      "license_note": "Quelle, Wahlart, Gebietsstand und Abrufdatum sichtbar speichern."
+    },
+    {
+      "provider_id": "eurostat_sdg",
+      "scope": "EWK",
+      "title": "Eurostat EU SDG Indicator Set",
+      "status": "prepared_not_scraped",
+      "possible_indicators": [
+        "Armut",
+        "Beschäftigung",
+        "Gesundheit",
+        "Bildung",
+        "Emissionen",
+        "Energie"
+      ],
+      "license_note": "Eurostat-Daten mit Tabellen-ID, Zeitstand und Abrufdatum versionieren."
+    },
+    {
+      "provider_id": "eea",
+      "scope": "EWK",
+      "title": "European Environment Agency",
+      "status": "prepared_not_scraped",
+      "possible_indicators": [
+        "Klima",
+        "Biodiversität",
+        "Luftverschmutzung",
+        "Ressourcen"
+      ],
+      "license_note": "Datensatzlizenz pro Quelle prüfen."
+    },
+    {
+      "provider_id": "un_global_sdg",
+      "scope": "WWK",
+      "title": "UN Global SDG Indicators Database",
+      "status": "prepared_not_scraped",
+      "possible_indicators": [
+        "SDG-Status",
+        "SDG-Trend",
+        "Zielabstand"
+      ],
+      "license_note": "Indikator-ID, Land, Jahr, Lizenz und Abrufdatum speichern."
+    },
+    {
+      "provider_id": "world_bank_wdi",
+      "scope": "WWK",
+      "title": "World Bank World Development Indicators",
+      "status": "prepared_not_scraped",
+      "possible_indicators": [
+        "Armut",
+        "Gesundheit",
+        "Bildung",
+        "Emissionen",
+        "Wasser",
+        "Energie"
+      ],
+      "license_note": "Keine Live-Abfrage im Seitenaufruf; Snapshots versionieren."
+    },
+    {
+      "provider_id": "sdgplus_democracy_sources",
+      "scope": "EWK/WWK",
+      "title": "SDG+ Demokratie-Proxyquellen",
+      "status": "method_review_required",
+      "possible_indicators": [
+        "Rechtsstaatlichkeit",
+        "Pressefreiheit",
+        "Korruption",
+        "Zivilgesellschaft",
+        "Vertrauen"
+      ],
+      "license_note": "V-Dem, WJP, RSF, Freedom House, Transparency International und Surveys nur nach Lizenz- und Methodikprüfung verwenden."
+    }
+  ]
+}

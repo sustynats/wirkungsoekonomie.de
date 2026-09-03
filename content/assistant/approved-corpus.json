@@ -1,0 +1,317 @@
+{
+  "metadata": {
+    "status": "published",
+    "last_updated": "2026-08-21",
+    "purpose": "Vorbereitung eines späteren RAG-gestützten WÖk-Assistenten. Der Assistent darf nur geprüfte, veröffentlichte oder ausdrücklich freigegebene Quellen nutzen.",
+    "rule": "Drafts, alte PDFs, unkontrollierte Arbeitsstände und nicht geprüfte Uploads sind nicht automatisch für den Assistenten zugelassen."
+  },
+  "sources": [
+    {
+      "source_id": "woek-begriffsleitfaden-fuehrend-v1-7",
+      "title": "WÖk-Begriffsleitfaden führend v1.7",
+      "path": "bibliothek/woek-begriffsleitfaden-fuehrend/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "published_document",
+      "document_url": "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+      "pdf_url": "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
+      "terms": [
+        "Wirkung",
+        "Wirkungspotenzial",
+        "positive Netto-Wirkung",
+        "Wirkungsrückkopplung",
+        "SDG+",
+        "IOOI",
+        "Wirkungspfad",
+        "Wirkungsradar",
+        "Wirkungsprofil im Radardiagramm",
+        "Wirkungsrelevanz statt Rechtsform",
+        "objektspezifische staatliche Prüfarchitektur",
+        "§ 7 BHO",
+        "VV-BHO",
+        "Wirkungskontrolle"
+      ],
+      "last_checked": "2026-08-21",
+      "limitations": "Führende Sprach- und Methodenreferenz. Staatliche Prüfrahmen gelten objektspezifisch; eNAP ist kein Universalverfahren. IOOI ist eine externe, optionale Results-Chain-Methode; Wirkungspfad und Wirkungsradar sind eigenständige WÖk-Begriffe. Ältere Projektdateien können frühere Begriffsverwendungen enthalten; im Zweifel gilt diese Web-/PDF-Fassung."
+    },
+    {
+      "source_id": "nachhaltigkeit-systemarchitektur-v1",
+      "title": "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.",
+      "path": "bibliothek/nachhaltigkeit-systemarchitektur/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "published_document",
+      "document_url": "https://wirkungsoekonomie.de/bibliothek/nachhaltigkeit-systemarchitektur/",
+      "pdf_url": "https://wirkungsoekonomie.de/public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf",
+      "terms": [
+        "Nachhaltigkeit",
+        "Systemarchitektur",
+        "interdependente Netto-Wirkung",
+        "Rückkopplung",
+        "Reverse Merit Order",
+        "Nichtkompensation"
+      ],
+      "last_checked": "2026-06-18",
+      "limitations": "Fachlich dichte Grundlagenquelle. Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung."
+    },
+    {
+      "source_id": "woek-kompass-questions",
+      "title": "WÖk-Kompass Fragen",
+      "path": "content/kompass/compass-questions.json",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "compass_questions",
+      "terms": [
+        "Kompass",
+        "Startfragen",
+        "Wirkungsnavigator"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Fragen sind kuratiert; keine freie Chatbot-Logik."
+    },
+    {
+      "source_id": "woek-kompass-answers",
+      "title": "WÖk-Kompass Antwortkarten",
+      "path": "content/kompass/compass-answer-templates.json",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "compass_answers",
+      "terms": [
+        "Antwortkarte",
+        "Wirkungspfad",
+        "Quellenpanel",
+        "Tiefenebenen"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Statische Antwortkarten; keine individuellen Beratungsantworten."
+    },
+    {
+      "source_id": "woek-impact-paths",
+      "title": "WÖk-Kompass Wirkungspfade",
+      "path": "content/kompass/impact-paths.json",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "impact_paths",
+      "terms": [
+        "Wirkungspfad",
+        "Rückkopplung",
+        "Wirkungslenkung"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Pfade sind Modelle und ersetzen keine empirische Einzelfallprüfung."
+    },
+    {
+      "source_id": "woek-zielgruppen-master-umsetzung",
+      "title": "Zielgruppen-Seiten nach Content-Master",
+      "path": "fuer/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "website_pages",
+      "terms": [
+        "Unternehmen",
+        "Politik",
+        "Bürger:innen",
+        "Wohnen",
+        "Investoren",
+        "Kommunen",
+        "Akademie",
+        "Journalismus",
+        "Gesundheit",
+        "Wissenschaft",
+        "Rente",
+        "Wirkungseinkommen"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Seiten erklären WÖk-Logik; sensible Modellzahlen sind keine Leistungszusage."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-arbeitspapier-2026-06-11",
+      "title": "Von der Schuldenfrage zur Wirkungsfinanzpolitik",
+      "path": "dokumente/wirkungsfinanzpolitik/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "working_paper",
+      "terms": [
+        "Wirkungsfinanzpolitik",
+        "Staatsschulden",
+        "Wirkungshaushalt",
+        "Schuldenbremse",
+        "Wirkschulden",
+        "Blindschulden",
+        "positive Netto-Wirkung",
+        "IOI",
+        "Impact of Investment",
+        "T-SROI",
+        "MMT",
+        "Public Purpose",
+        "Public Purpose Finance",
+        "Functional Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Arbeitsfassung v3 mit IOI-Erweiterung; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, Public Purpose als prüfbaren Wirkungsanspruch erläutern, IOI nicht als alleinige Entscheidungskennzahl verwenden und Webfassung/PDF als zitierfähige Fassung nennen."
+    },
+    {
+      "source_id": "woek-scanner-modes",
+      "title": "WÖk-Scanner Modus-Definitionen",
+      "path": "content/scanner/scanner-modes.json",
+      "status": "draft",
+      "allowed_for_assistant": false,
+      "source_type": "scanner_architecture",
+      "terms": [
+        "Scanner",
+        "URL-Analyse",
+        "Produktscanner",
+        "Unternehmensscanner",
+        "Wahlprogramm-Scanner"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Architekturdatei im Draft-Status; als technische Grundlage, nicht als freigegebene Theoriequelle nutzen."
+    },
+    {
+      "source_id": "woek-data-quality-levels",
+      "title": "WÖk-Datenqualitätsmodell",
+      "path": "content/data/data-quality-levels.json",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "data_governance",
+      "terms": [
+        "Datenqualität",
+        "Quellenstatus",
+        "Datenlücke",
+        "Unsicherheit"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Qualitätsstufen bewerten Datenlage, nicht Wirkung selbst."
+    },
+    {
+      "source_id": "woek-external-data-sources",
+      "title": "Externe Datenquellen-Registry",
+      "path": "content/data/external-data-sources.json",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "data_source_registry",
+      "terms": [
+        "Open Food Facts",
+        "EPREL",
+        "ESRS",
+        "GRI",
+        "Eurostat",
+        "SDG Data",
+        "Unternehmensdaten"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Registry zeigt Anschlussfähigkeit; jede konkrete API-/Datenverwendung braucht Lizenz- und Aktualitätsprüfung."
+    },
+    {
+      "source_id": "woek-evidenz",
+      "title": "Evidenzbereich",
+      "path": "evidenz/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "evidence_pages",
+      "terms": [
+        "Evidenz",
+        "Quellen",
+        "Standards",
+        "Studien"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Quellenkarten brauchen später granularere Zitier- und Versionierungslogik."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-journal-2026-06-11",
+      "title": "Nicht Schulden belasten die Zukunft - sondern Schulden ohne Wirkung",
+      "path": "blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "journal_article",
+      "terms": [
+        "Wirkungsfinanzpolitik",
+        "Staatsschulden",
+        "Wirkungshaushalt",
+        "Wirkschulden",
+        "Blindschulden",
+        "positive Netto-Wirkung",
+        "IOI",
+        "Impact of Investment",
+        "T-SROI",
+        "MMT",
+        "Public Purpose",
+        "Functional Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Journalistische Langform v3 mit IOI-Erweiterung; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, nicht als Gegner. IOI als Wirkungseffizienz und T-SROI als Transformationswirkung erklären. Bei Antworten Schutzlinie und Arbeitspapier als Vertiefung nennen."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-wirkungsfeld-2026-06-11",
+      "title": "Wirkungsfinanzpolitik",
+      "path": "wirkungsfelder/wirkungsfinanzpolitik/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "website_page",
+      "terms": [
+        "Wirkungsfinanzpolitik",
+        "öffentliche Finanzen",
+        "Wirkungshaushalt",
+        "IOI",
+        "Impact of Investment",
+        "T-SROI",
+        "Schuldenbremse",
+        "MMT",
+        "Public Purpose",
+        "Public Purpose Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Konzeptionelle Bereichsseite; ersetzt keine demokratische, haushaltsrechtliche oder finanzielle Einzelfallprüfung."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-glossarcluster-2026-06-11",
+      "title": "Öffentliche Finanzen, Schulden und Wirkung",
+      "path": "begriffe/oeffentliche-finanzen-schulden-wirkung/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "glossary_cluster",
+      "terms": [
+        "Wirkschulden",
+        "Blindschulden",
+        "Verlustschulden",
+        "Reparaturschulden",
+        "Präventionsschulden",
+        "Transformationsschulden",
+        "Zukunftsschulden",
+        "IOI",
+        "Impact of Investment",
+        "MMT",
+        "Public Purpose",
+        "Public Purpose Finance",
+        "Functional Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Begriffliche Arbeitsfassung; Begriffe müssen in konkreten Haushalts- oder Politikfällen mit Daten, Rechtsrahmen und demokratischer Entscheidung abgeglichen werden."
+    },
+    {
+      "source_id": "woek-glossar",
+      "title": "Glossar",
+      "path": "glossar.html",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "glossary",
+      "terms": [
+        "Glossar",
+        "Begriffe",
+        "Definition"
+      ],
+      "last_checked": "2026-05-22",
+      "limitations": "Glossar ist Website-Fassung; führender Begriffsleitfaden bleibt Primärlogik."
+    }
+  ],
+  "assistant_safety_rules": [
+    "Keine finale WÖk-Bewertung ohne freigegebene Daten und Methodik.",
+    "Keine Rechts-, Steuer-, Anlage-, Leistungs-, Gesundheits- oder Politikberatung.",
+    "Keine Wahlempfehlung.",
+    "Keine Personenbewertung.",
+    "Keine proprietären Scores oder kostenpflichtigen Daten ohne Lizenz.",
+    "Keine langen urheberrechtlich geschützten Texte reproduzieren.",
+    "Unsicherheit, Datenqualität und Datenlücken immer anzeigen."
+  ]
+}

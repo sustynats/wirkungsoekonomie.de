@@ -1,0 +1,220 @@
+# WÖk Reference Manifest — führende Referenzen und Versionssicherheit
+# Stand: 2026-08-14 · Quelle der Statusangaben: assets/data/library-version-registry.json
+#   (3196 Einträge; Status-Werte: führend=11, aktuell=2625, Arbeitsfassung=277, ältere Fassung=261, ersetzt=21, archiviert=1)
+#   Generator: scripts/library/build-library-versioning-stage9.mjs · Oberfläche: bibliothek/index.html + downloads.html#lesepfade
+# REGEL: Website-Bibliotheksstatus schlägt lokale Dateinamen. Bei Widersprüchen: REFERENCE_METADATA_CONFLICT dokumentieren (KNOWLEDGE_GAPS.md), nicht still harmonisieren.
+# Statushierarchie: führend > aktuell > arbeitsfassung > historisch > archiviert > ersetzt (ersetzt = nie für neue Berechnungen/Regeln/Produkte).
+
+references:
+  - reference_id: WOEK_BUCH
+    title: "Die neue Ordnung des Wohlstands. Begründung und Grundlagen der Wirkungsökonomie"
+    domain: Gesamtsystemlogik
+    status: leading
+    version: null
+    date: "2026"
+    canonical_url: "https://wirkungsoekonomie.de/buch.html"
+    online_reading: "https://wirkungsoekonomie.de/referenz/"
+    download_asset: die-neue-ordnung-des-wohlstands.pdf
+    local_repository_copy: assets/pdf/die-neue-ordnung-des-wohlstands.pdf
+    supersedes: []
+    authority_scope: [systemlogik, mensch_planet_demokratie, positive_netto_wirkung, institutionelle_gesamtarchitektur]
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEMM_2_0
+    title: "Das Wirkungsökonomische Managementmodell (WÖMM)"
+    domain: Management und Wirkungsrealisierung
+    status: leading
+    version: "2.0"
+    date: "2026-07-10"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/eintraege/woemm-2-0/lesen/"
+    download_asset: woemm-2.0-referenzfassung.pdf
+    local_repository_copy: assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf
+    supersedes: []
+    authority_scope: [wirkungskompass, systemlandkarte, managementarchitektur, wirkungsrealisierungsarchitektur, wirkungsrad, betriebssystem]
+    notes: "98 Seiten; 12 Managementfelder, 17 Managementfunktionen; Onlinefassung 69 Kapitelseiten"
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEMS_2_0
+    title: "Das Wirkungsökonomische Methodensystem (WÖMS)"
+    domain: Methoden und Anwendung
+    status: leading
+    version: "2.0"
+    date: "2026-07-10"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/lesen/"
+    download_asset: woems-2.0-referenzfassung.pdf
+    local_repository_copy: assets/downloads/grundlagen/woems-2.0-referenzfassung.pdf
+    machine_readable: [public/data/woems-methoden.json, public/data/woems-canvas.json, content/methods/woems-methods.ts]
+    supersedes: []
+    authority_scope: [kernmethoden, canvas, workshop_journeys, qualitaets_governance_realisierungs_ausbildungslogik]
+    notes: "387 Seiten; 152 Kernmethoden in 16 Kategorien (A01–P10), 56 Canvas in 14 Modulen, 20 Workshop-Journeys; API /api/v1/methods/ + /api/v1/canvases/"
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEK_BEGRIFFSLEITFADEN
+    title: "WÖk-Begriffsleitfaden führend"
+    domain: Sprache und Begriffe
+    status: leading
+    version: "1.5"
+    date: "2026-08-15"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+    download_asset: WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf
+    local_repository_copy: >
+      public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf;
+      Live-HTML: content/documents/online/woek-begriffsleitfaden-fuehrend.inc (Build: scripts/publications/build-begriffsleitfaden-v1.5.py);
+      Quell-MD: source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md (vollständige führende Fassung)
+    supersedes:
+      - {version: "1.4", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf, status: archiviert}
+      - {version: "1.3", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf, status: archiviert}
+      - {version: "1.2", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf, status: archiviert}
+      - {version: "1.1", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf, status: archiviert}
+      - {version: "1.0", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf, status: archiviert}
+    authority_scope: [begriffe, formulierung, wirkungsarchitektur, wirkpfad, wirkungsradar, resilienzsystematik, nachhaltigkeitsdefinition]
+    notes: >
+      v1.5 präzisiert die eigenständige WÖk-Wirkungsarchitektur: IOOI ist eine externe optionale Results Chain,
+      der Wirkpfad ist versioniert und evidenzsensibel, das Wirkungsradar kein Diagramm. Führende Definition:
+      „Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie."
+    last_verified: "2026-08-16"
+
+  - reference_id: WOEK_GLOSSAR
+    title: "Glossar der Wirkungsökonomie"
+    domain: Öffentliche Begriffsorientierung
+    status: leading
+    version: null
+    date: null
+    canonical_url: "https://wirkungsoekonomie.de/glossar.html"
+    download_asset: null
+    local_repository_copy: "glossar.html → begriffe/ (2281 Begriffsseiten); Daten: assets/data/glossary-lookup.json (2121 Begriffe, 2026-08-05)"
+    supersedes: []
+    authority_scope: [oeffentliche_kurzdefinitionen]
+    notes: "Nur soweit mit Begriffsleitfaden v1.5 vereinbar; öffentliche Such- und API-Exporte werden im Website-Build synchronisiert."
+    last_verified: "2026-08-14"
+
+  - reference_id: SDG_SDGPLUS_REFERENZRAHMEN
+    title: "SDG-/SDG+-Referenzrahmen (Vertiefungskonzept, Lesefassung)"
+    domain: Normativer Referenzrahmen
+    status: leading
+    version: "0.3"
+    date: null
+    canonical_url: "https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/"
+    download_asset: woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf
+    local_repository_copy: "assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf; Daten: assets/data/sdg-reference.json (24 Items: 17 offizielle SDGs + 7 SDG+)"
+    supersedes: []
+    authority_scope: [sdg_einordnung, sdgplus_einordnung, normative_wirkungsbewertung]
+    notes: "SDG+ stets als WÖk-Erweiterung ausweisen, nie als offizielle UN-Kategorie; API /api/v1/sdg-plus/"
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEK_MASTER_ITEMS
+    title: "WÖk Master Items"
+    domain: WÖk-IDs, Regeln, Benchmarks, Governance
+    status: leading
+    version: "1.4 FINAL"
+    date: "2026-08-16"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/"
+    download_asset: WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx
+    local_repository_copy: data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx
+    checksum: b70ad437dc1ab8d0b4264658346d5c10910d83309a51902e32dfe047e072ebcc
+    supersedes:
+      - {version: "1.3 (geprüft)", local: assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx, status: ersetzt}
+      - {version: "1.2 (PDF)", local: assets/pdf/woek-master-items-v1-2.pdf, status: ersetzt}
+      - {version: "1.2 (final, PDF)", local: public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf, status: aktuell, conflict: "müsste konsequent ersetzt sein → KNOWLEDGE_GAPS.md"}
+    related_not_leading:
+      - {title: "Public Research Register", version: "2.1", local: assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx, status: aktuell, note: "Forschungsvariante, 621 Items, erweiterte Spalten (MPD_Dimension, Core_Field, Archetype, NonCompensation_RedLine …) — NICHT führend"}
+    authority_scope: [woek_ids, indicator_registry, benchmark_status, governance_rules, assurance_status]
+    notes: "621 WÖk-IDs, 28 Scoring-Regeln, 48 Quellen und 11 Tabellenblätter. FINAL bezeichnet die kanonische Registerfassung, nicht die abgeschlossene Validierung jeder Schwelle."
+    last_verified: "2026-08-16 (XLSX geprüft, öffentliche Exporte und Viewer aus derselben Quelle erzeugt)"
+
+  - reference_id: T_SROI_RECHENSTANDARD
+    title: "T-SROI-Rechenstandard (Impact Controlling · Transformationsmessung, Methodenpapier)"
+    domain: T-SROI-Berechnung
+    status: leading
+    version: "1.1"
+    date: "2026-08-02"
+    canonical_url: "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/"
+    download_asset: 23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf
+    local_repository_copy: "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf; Quell-MD: docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md"
+    supersedes:
+      - {version: "1.0", local: assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.pdf, status: ersetzt}
+      - {version: "Whitepaper T-SROI (multiplikative Logik)", local: public/downloads/originals/Whitepaper-T-SROI.pdf, status: ersetzt}
+    authority_scope: [t_sroi_rechenlogik]
+    notes: >
+      Kausal begrenzte, diskontierte Netto-Nutzenrechnung mit Schutz-Gate.
+      ACHTUNG Versionslinien: docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md (2026-05-24) trägt höhere Nummer,
+      ist aber ÄLTER, nur Entwurf und NICHT führend — Nummern nie über Statusregister stellen.
+    last_verified: "2026-08-14"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ABGLEICH MIT DEM STATUSREGISTER (Prüfung 2026-08-14)
+# assets/data/library-version-registry.json enthält 11 Einträge mit status="führend".
+# Diese 11 Einträge sind 11 MANIFESTATIONEN von 8 Werken — drei Werke werden doppelt
+# geführt (Onlinefassung/Bibliotheksseite + Download-Asset). Es fehlt keine Referenz.
+# Zuordnung (registry_id → reference_id), maschinell prüfbar:
+registry_id_map:
+  WOEK_BUCH:
+    - leading-reference-buch-html                                              # HTML-Landingpage
+    - download-or-document-assets-pdf-die-neue-ordnung-des-wohlstands-pdf      # PDF-Asset
+  WOEMM_2_0:  [woemm-2-0]
+  WOEMS_2_0:  [woems-2-0]
+  WOEK_BEGRIFFSLEITFADEN:
+    - leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html  # Onlinefassung v1.5
+    - download-or-document-public-downloads-originals-woek-begriffsleitfaden…  # PDF v1.5
+  WOEK_GLOSSAR: [leading-reference-glossar-html]
+  SDG_SDGPLUS_REFERENZRAHMEN:
+    - download-or-document-assets-downloads-woek-sdg-sdgplus-referenzrahmen…   # Lesefassung v0.3 (PDF)
+    - online-version-verstehen-sdgs-sdgplus-index-html                         # führende Onlinefassung „SDGs & SDG+"
+  WOEK_MASTER_ITEMS: [download-or-document-assets-downloads-woek-register-woek-master-items-…]
+  T_SROI_RECHENSTANDARD: [download-or-document-assets-downloads-23-woek-impact-controlling-t-sro…]
+# Summe: 2+1+1+2+1+2+1+1 = 11 ✓
+
+# ─────────────────────────────────────────────────────────────────────────────
+# IMPORT-STATUS DER FÜHRENDEN INHALTE (nicht nur Metadaten) — Stand 2026-08-14
+# FULL = strukturiert maschinenlesbar im Repo · TEXT = nur Volltext/HTML/PDF · GAP = fehlt
+machine_readable_import:
+  WOEMS_2_0:
+    status: FULL
+    artefakte:
+      - {pfad: content/methods/woems-methoden.json, rolle: kanonisch, inhalt: "152 Methoden / 16 Kategorien", version: "2.0", stand: "2026-07-10", sha256: fdfb7cb2484666daa71af84caa376bf3d7c8621dc4d5b493807d505daa1c9a40}
+      - {pfad: public/data/woems-methoden.json, rolle: public-export}
+      - {pfad: public/data/woems-canvas.json, inhalt: "208 Canvas (152 Methoden-Canvas + 56 Varianten)"}
+      - {pfad: "bibliothek/eintraege/woems-2-0/lesen/", inhalt: "245 Kapitelseiten"}
+      - {pfad: api/v1/methods/index.json, inhalt: "152 Methoden (öffentlicher Snapshot)"}
+  WOEK_MASTER_ITEMS:
+    status: FULL
+    artefakte:
+      - {pfad: data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx, inhalt: "621 Items, 28 Regeln, 11 Sheets, 48 Quellen", source_hash_sha256: b70ad437dc1ab8d0b4264658346d5c10910d83309a51902e32dfe047e072ebcc}
+      - {pfad: assets/data/woek-id-register.json, version: v1.4, inhalt: "621 Items, 48 Quellen"}
+      - {pfad: assets/downloads/woek-register/v1.4/register-v1.4.json, version: v1.4, inhalt: "Öffentlicher JSON-Export nach Public-Export-Schema"}
+    offen: "Offene Schwellen, Benchmarks und Fachprüfungen bleiben im Register als Status sichtbar."
+  SDG_SDGPLUS_REFERENZRAHMEN:
+    status: FULL
+    artefakte:
+      - {pfad: assets/data/sdg-reference.json, inhalt: "24 Einträge = 17 offizielle SDGs + 7 SDG+"}
+      - {pfad: api/v1/sdg-plus/index.json, inhalt: "24"}
+      - {pfad: "verstehen/sdgs-sdgplus/", inhalt: "33 Portalseiten"}
+  WOEK_BEGRIFFSLEITFADEN:
+    status: TEXT
+    artefakte:
+      - {pfad: content/documents/online/woek-begriffsleitfaden-fuehrend.inc, inhalt: "Volltext HTML, führende Fassung v1.5", build: scripts/publications/build-begriffsleitfaden-v1.5.py}
+      - {pfad: docs/woek-knowledge/terminology.yaml, inhalt: "21 Kernbegriffe strukturiert (Claude, Erstauszug)"}
+    luecke: "Kein maschinenlesbares Mapping Leitfaden-Definition ↔ Glossar-Begriff (Glossar-Lookup 2121 Begriffe ist unabhängig gepflegt)"
+  T_SROI_RECHENSTANDARD:
+    status: TEXT
+    artefakte:
+      - {pfad: docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md, inhalt: "113 Zeilen Markdown-Quelle"}
+      - {pfad: assets/js/impact-calculations.js, inhalt: "calculateTSROI — implementierte Rechenlogik"}
+    luecke: "Parameter/Diskontsätze/Schutz-Gate nicht als Daten (JSON) hinterlegt — Rechenstandard und Code können auseinanderlaufen"
+  WOEMM_2_0:
+    status: TEXT
+    artefakte:
+      - {pfad: assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf, inhalt: "98 Seiten"}
+      - {pfad: "bibliothek/eintraege/woemm-2-0/lesen/", inhalt: "69 Kapitelseiten"}
+    luecke: "Anders als WÖMS 2.0 KEINE strukturierte Registry (Managementfelder/-funktionen, Wirkungsrad, Realisierungsarchitektur nicht maschinenlesbar) → Import-Kandidat"
+  WOEK_BUCH:
+    status: TEXT
+    artefakte: [{pfad: "referenz/", inhalt: "Online-Lesefassung, 1670 Dateien, Kapitel + Cite-Anker"}, {pfad: assets/pdf/die-neue-ordnung-des-wohlstands.pdf}]
+  WOEK_GLOSSAR:
+    status: FULL
+    artefakte: [{pfad: assets/data/glossary-lookup.json, inhalt: "2121 Begriffe (2026-08-05)"}, {pfad: api/v1/glossary/index.json, inhalt: "2092 — Snapshot-Drift, Rebuild nötig"}]
+
+# Domainbezogene Autorität (Konfliktregel): Begriff/Formulierung → Begriffsleitfaden v1.5 · öffentliche Kurzdefinition → Glossar (soweit leitfadenkonform)
+# · Gesamtsystemlogik → Buch · Management → WÖMM 2.0 · Methoden/Canvas/Journeys → WÖMS 2.0 · SDG/SDG+ → Referenzrahmen v0.3 + Onlinefassung
+# · WÖk-IDs/Regeln/Benchmarks/Prüfstatus → Master Items v1.3 · T-SROI → Rechenstandard v1.1.
+# Eine ältere Gesamtquelle überschreibt nie eine neuere fachgebietsspezifische führende Referenz.

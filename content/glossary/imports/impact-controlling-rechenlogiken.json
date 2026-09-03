@@ -1,0 +1,323 @@
+{
+  "terms": [
+    {
+      "id": "impact-controlling",
+      "termId": "impact-controlling",
+      "slug": "impact-controlling",
+      "canonicalLabel": "Impact-Controlling",
+      "shortDefinition": "Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.",
+      "longDefinition": "Impact-Controlling ist die operative Form des Wirkungscontrollings. Es übersetzt überprüfte Wirkungsdaten in Entscheidungen über Investitionen, Produkte, Beschaffung, Programme und Portfolios. Es misst nicht nur Aktivität oder Output, sondern die tatsächliche Veränderung von Zuständen und führt die Ergebnisse in Steuerung und Lernen zurück.",
+      "woekRelation": "In der Wirkungsökonomie ist Impact-Controlling keine Personenbewertung und kein Reporting-Anhang. Es macht positive Netto-Wirkung, Wirkungsrisiken, Datenlücken und Nebenwirkungen für Entscheidungen sichtbar. Nichtkompensation und Reverse Merit Order verhindern, dass kritische Schäden durch positive Einzelwerte verdeckt werden.",
+      "usageNote": "Für Management- und Investitionsentscheidungen verwenden, wenn Messung eine konkrete Rückkopplung auslöst. Reporting ohne Entscheidungsregel ist noch kein Impact-Controlling.",
+      "calculationModel": {
+        "title": "Vom Messwert zur Steuerungsentscheidung",
+        "explanation": "Impact-Controlling berechnet nicht eine einzige Universalzahl. Es verbindet geprüfte Einzelkennzahlen zu einer dokumentierten Entscheidung.",
+        "steps": [
+          "Zielzustand, Referenz, Systemgrenze, Zeitraum und Zurechnung festlegen.",
+          "KII und weitere Indikatoren mit Einheit, Datenquelle, Qualität und Unsicherheit erheben.",
+          "Wirkungen und Nebenwirkungen bewerten; bei geeigneten Fällen NWI, IOI oder T-SROI berechnen.",
+          "Wirkungsgrenzen, rote Linien, Nichtkompensation und Reverse Merit Order vor jeder Verdichtung anwenden.",
+          "Entscheidung, Prüfstatus, Version und Rückkopplungsmaßnahme dokumentieren und bei neuen Daten korrigieren."
+        ],
+        "note": "Eine Kennzahl ohne klaren Wirkpfad, Bilanzgrenze und Steuerungsfolge darf nicht als Nachweis positiver Wirkung gelten."
+      },
+      "category": "Messbegriff",
+      "type": "Steuerungssystem für Wirkung",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["wirkungscontrolling", "key-impact-indicator", "kii", "scorecard", "finalscore", "nwi", "t-sroi", "impact-of-investment", "reverse-merit-order", "nichtkompensationsprinzip"]
+    },
+    {
+      "id": "key-impact-indicator",
+      "termId": "key-impact-indicator",
+      "slug": "key-impact-indicator",
+      "canonicalLabel": "Key Impact Indicator / KII",
+      "shortDefinition": "Ein Key Impact Indicator ist eine steuerbare Beobachtungsgröße für Zustandsveränderungen, Wirkungsrisiken oder Wirkungspotenziale.",
+      "longDefinition": "Ein Key Impact Indicator (KII) ist eine zentrale Wirkungskennzahl für eine konkrete Steuerungsfrage. Er beschreibt nicht bloß, wie viel geleistet wurde, sondern welche Zustandsveränderung innerhalb einer definierten Bilanzgrenze beobachtet oder belastbar geschätzt wird. Ein KII kann gemessen oder berechnet sein; es gibt jedoch keine allgemeingültige Formel für alle KII.",
+      "woekRelation": "KII verbinden Wirkpfad, Datenqualität, Scorecard und Entscheidung. Sie ergänzen KPI: Ein KPI kann Leistung oder Effizienz zeigen; ein KII muss den Bezug zur tatsächlichen Wirkung, zu Nebenwirkungen und zur Rückkopplung offenlegen.",
+      "usageNote": "Jeden KII mit Einheit, Zähler und Nenner – soweit vorhanden –, Bezugsgröße, Ausgangswert, Zielzustand, Zeitraum, Systemgrenze, Datenquelle, Unsicherheit und Entscheidungsregel dokumentieren.",
+      "calculationModel": {
+        "title": "Kennzahlenblatt statt Scheingenauigkeit",
+        "explanation": "Ein KII erhält seine Formel aus der konkret definierten Zustandsveränderung; eine pauschale KII-Formel wäre fachlich irreführend.",
+        "steps": [
+          "Wirkpfad und zu verändernden Zustand bestimmen.",
+          "Messgröße, Einheit und – bei Verhältniskennzahlen – Zähler, Nenner und Bezugsgröße festlegen.",
+          "Ausgangswert, Zielwert, Zeitraum und Systemgrenze dokumentieren.",
+          "Datenqualität, Schätzanteil, Unsicherheit und relevante Nebenwirkungen ausweisen.",
+          "Schwelle und konkrete Steuerungsfolge festlegen; bei Grenzverletzungen eskalieren statt wegmitteln."
+        ],
+        "note": "Output, Reichweite oder ein SDG-Icon allein sind kein KII-Nachweis."
+      },
+      "category": "Messbegriff",
+      "type": "Wirkungskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["kii", "wirkungsindikator", "kpi", "wirkungscontrolling", "impact-controlling", "scorecard", "nwi", "datenqualitaet", "woek-id"]
+    },
+    {
+      "id": "kii",
+      "termId": "kii",
+      "slug": "kii",
+      "canonicalLabel": "KII",
+      "aliases": ["Key Impact Indicator"],
+      "shortDefinition": "KII steht für Key Impact Indicator: eine zentrale Wirkungskennzahl, die Zustandsveränderung statt bloßen Output sichtbar macht.",
+      "longDefinition": "KII ist die gebräuchliche Abkürzung für Key Impact Indicator. Ein KII macht eine konkrete, für Steuerung relevante Zustandsveränderung oder ein Wirkungsrisiko mess- oder berechenbar. Seine Formel folgt aus dem jeweiligen Messkonzept; deshalb braucht jeder KII ein transparentes Kennzahlenblatt statt einer bloßen Zahl.",
+      "woekRelation": "Die WÖk nutzt KII als Brücke zwischen Wirkpfad, Datenqualität, Scorecards, NWI und Entscheidungen. KII dürfen nicht isoliert optimiert werden, wenn dadurch Nebenwirkungen oder kritische Wirkungsgrenzen verdeckt würden.",
+      "usageNote": "KII als Abkürzung nur dort verwenden, wo die ausgeschriebene Kennzahl und ihre Messlogik für Leser:innen zugänglich sind.",
+      "calculationModel": {
+        "title": "Was eine berechenbare KII-Angabe enthält",
+        "explanation": "Es gibt keine Formel KII = x. Die konkrete Gleichung oder Messvorschrift ist Teil der Definition jedes einzelnen KII.",
+        "steps": [
+          "Zustand, Einheit und Wirkpfad benennen.",
+          "Bei einer Verhältniszahl Zähler, Nenner und Bezugsgröße ausweisen.",
+          "Baseline, Zeitraum, Bilanzgrenze und Datenquelle festlegen.",
+          "Qualität, Unsicherheit und Entscheidungsschwelle sichtbar machen.",
+          "Bei roten Linien die Eskalationsregel anwenden; nicht mit anderen Werten verrechnen."
+        ]
+      },
+      "category": "Messbegriff",
+      "type": "Abkürzung für Wirkungskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["key-impact-indicator", "wirkungsindikator", "wirkungscontrolling", "impact-controlling", "scorecard", "nwi", "datenqualitaet"]
+    },
+    {
+      "id": "scorecard",
+      "termId": "scorecard",
+      "slug": "scorecard",
+      "canonicalLabel": "Scorecard",
+      "shortDefinition": "Eine Scorecard oder Wirkungsscorecard ist ein transparentes Bewertungsraster, das relevante Wirkungsfelder, Indikatoren, Datenquellen, Datenqualität, Grenzen und Einzelergebnisse so verbindet, dass Entscheidungen prüfbar werden.",
+      "longDefinition": "Eine Scorecard oder Wirkungsscorecard ist ein offenes Bewertungsraster. Sie legt fest, welche Wirkungsfelder und Indikatoren für ein bestimmtes Objekt relevant sind, welche Daten dafür herangezogen werden und nach welcher Regel die Informationen eingeordnet werden. Damit wird nicht nur ein Ergebnis gezeigt, sondern der Weg dorthin: Systemgrenze, Zeitraum, Vergleichsmaßstab, Datenqualität, Annahmen, Schwellen, Einzelwerte und Prüfstatus. Eine Scorecard ist keine bloße Checkliste, keine Durchschnittsformel und keine Bewertung von Menschen.",
+      "woekRelation": "In der Wirkungsökonomie wird aus einer Scorecard erst dann ein Steuerungsinstrument, wenn sie Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order, Prüfstatus und konkrete Rückkopplung mitführt. Positive Einzelwerte dürfen kritische Schäden nicht neutralisieren; Datenlücken und Unsicherheit müssen sichtbar bleiben.",
+      "usageNote": "Scorecards nur für klar abgegrenzte und vergleichbare Gegenstände einsetzen. Bewertungsobjekt, Systemgrenze, Zeitraum, Indikatorversion, Datenqualität, Einzelwerte, Schutzgrenzen und Korrekturweg müssen lesbar bleiben.",
+      "calculationModel": {
+        "title": "So entsteht eine belastbare Scorecard",
+        "explanation": "Die Scorecard definiert den Rechenrahmen; sie ist selbst keine einfache Summenformel.",
+        "steps": [
+          "Bewertetes Objekt, Systemgrenze, Zeitraum und relevante Wirkungsfelder bestimmen.",
+          "WÖk-IDs, Indikatoren, Einheiten, Datenquellen und Benchmarks zuordnen.",
+          "Einzelscores nach der dokumentierten Skala berechnen oder begründet bewerten.",
+          "Datenqualität, Unsicherheit, fehlende Daten und rote Linien sichtbar machen.",
+          "Nichtkompensation und Reverse Merit Order anwenden, bevor ein FinalScore oder eine Steuerungsfolge abgeleitet wird."
+        ],
+        "note": "Eine arithmetische Durchschnittsnote ohne Grenzprüfung widerspricht der Schutzlogik der WÖk."
+      },
+      "category": "Messbegriff",
+      "type": "Bewertungs- und Steuerungsrahmen",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.1",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["finalscore", "wirkungsindikator", "woek-id", "benchmark", "datenqualitaet", "reverse-merit-order", "nichtkompensationsprinzip", "wirkungscontrolling"]
+    },
+    {
+      "id": "finalscore",
+      "termId": "finalscore",
+      "slug": "finalscore",
+      "canonicalLabel": "FinalScore",
+      "shortDefinition": "Der FinalScore ist die steuerungsfähige Gesamtbewertung einer Scorecard, die Einzelscores, Datenqualität, rote Linien und Reverse Merit Order zusammenführt.",
+      "longDefinition": "Der FinalScore ist das dokumentierte Ergebnis einer Scorecard für ein klar abgegrenztes Objekt und einen bestimmten Datenstand. Er verdichtet relevante Einzelbewertungen zu einer Steuerungsinformation, bleibt aber keine Durchschnittsnote und keine endgültige Wahrheit. Die Berechnung muss die schwächsten relevanten Wirkungsfelder, Datenqualität, Systemgrenzen, rote Linien und Nichtkompensation sichtbar lassen.",
+      "woekRelation": "Der FinalScore macht Entscheidungen anschlussfähig, ohne kritische Schäden zu verdecken. Reverse Merit Order und Wirkungsgrenzen begrenzen die Verdichtung: Ein schwer negatives Feld darf nicht durch positive Felder schöngerechnet werden.",
+      "usageNote": "FinalScore nur zusammen mit Scorecard, Einzelwerten, Datenqualität, Prüfstatus, Version und Begründung verwenden. Nicht als pauschales Label für Personen oder als moralische Rangliste nutzen.",
+      "calculationModel": {
+        "title": "Gesamtbewertung ohne Durchschnittsfalle",
+        "explanation": "Für den FinalScore gibt es bewusst keine allgemeine Additionsformel. Die Rechenfolge schützt davor, kritische negative Wirkung wegzumitteln.",
+        "steps": [
+          "Bewertungsobjekt, Scorecard-Version, Systemgrenze und relevante Einzelscores festlegen.",
+          "Datenqualität, Unsicherheit, Prüfstatus und fehlende Daten bewerten.",
+          "Rote Linien und Wirkungsgrenzen vor einer Verdichtung prüfen.",
+          "Nichtkompensation und Reverse Merit Order anwenden: Das schwächste relevante Feld kann die Gesamtbewertung begrenzen.",
+          "FinalScore, Klasse, Begründung, Version und ausgelöste Steuerungsfolge dokumentieren."
+        ],
+        "note": "Ein positiver Mittelwert ist kein zulässiger FinalScore, wenn eine Schutzgrenze verletzt ist."
+      },
+      "category": "Messbegriff",
+      "type": "Gesamtbewertung einer Scorecard",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["scorecard", "reverse-merit-order", "nichtkompensationsprinzip", "wirkungsgrenze", "datenqualitaet", "nwi", "wirkungscontrolling"]
+    },
+    {
+      "id": "nwi",
+      "termId": "nwi",
+      "slug": "nwi",
+      "canonicalLabel": "WÖk-Netto-Wirkungsindex",
+      "formula": {
+        "title": "Grundformel des WÖk-Netto-Wirkungsindex",
+        "expression": "WÖk-Netto-Wirkungsindex = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mtext>WÖk-Netto-Wirkungsindex</mtext><mo>=</mo><munderover><mo>∑</mo><mi>i</mi><mi>n</mi></munderover><msubsup><mi>w</mi><mi>i</mi><mo>+</mo></msubsup><msubsup><mi>ΔZ</mi><mi>i</mi><mo>+</mo></msubsup><mo>−</mo><munderover><mo>∑</mo><mi>j</mi><mi>m</mi></munderover><msubsup><mi>w</mi><mi>j</mi><mo>−</mo></msubsup><msubsup><mi>ΔZ</mi><mi>j</mi><mo>−</mo></msubsup></mrow></math>",
+        "explanation": "Die Summen beziehen sich nur auf Wirkungen innerhalb der offengelegten Systemgrenze, des Zeitraums und der Bewertungslogik. Gewichte machen Relevanz, Verteilung und Zeitbezug nachvollziehbar. Datenqualität und Unsicherheit sind Prüfmerkmale; sie multiplizieren weder positive noch negative Wirkungen.",
+        "variables": ["Positive und negative Wirkungen müssen auf derselben dokumentierten Skala bewertet werden.", "Gewichte, Zurechnung, Systemgrenze und Unsicherheit sind offen zu legen.", "G ist das Schutz-Gate: Bei G = 0 darf kein positiver WÖk-Netto-Wirkungsindex ausgewiesen werden."],
+        "note": "Die Formel ist eine Grundstruktur, keine Lizenz zum Wegrechnen: Wirkungsgrenzen, Nichtkompensation und Reverse Merit Order begrenzen den Index."
+      },
+      "shortDefinition": "Der WÖk-Netto-Wirkungsindex verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.",
+      "longDefinition": "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Seine Grundformel stellt gewichtete positive und negative Wirkungen gegenüber. Damit der Wert aussagekräftig ist, müssen Zielzustand, Referenz, Systemgrenze, Zeitraum, Zurechnung, Skala, Gewichte, Datenqualität, Unsicherheit und relevante Nebenwirkungen dokumentiert sein. Er ist nicht der Nationale Wohlfahrtsindex (NWI).",
+      "woekRelation": "Der WÖk-Netto-Wirkungsindex macht ein Wirkungsprofil auf einer dokumentierten Skala steuerungsfähig, ersetzt aber keine Schutzentscheidung. Er unterscheidet sich vom Nationalen Wohlfahrtsindex (NWI) und vom monetären T-SROI: Der WÖk-Netto-Wirkungsindex ist keine Euro-Rendite; T-SROI setzt separat belegte, diskontierte Netto-Nutzenströme in EUR ins Verhältnis zu Ressourcen in EUR.",
+      "usageNote": "Den WÖk-Netto-Wirkungsindex nur mit Wirkungsprofil, Spannbreite, Grenzprüfung und Entscheidungsinterpretation berichten. Die Kurzform NWI bezeichnet öffentlich den Nationalen Wohlfahrtsindex. Fehlende Daten und Verletzungen von Wirkungsgrenzen dürfen nicht in einen guten Indexwert umgedeutet werden.",
+      "category": "Messbegriff",
+      "type": "Operative Netto-Wirkungskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.1",
+      "reviewStatus": "fachlich begrifflich disambiguiert",
+      "relatedTerms": ["netto-wirkung", "positive-netto-wirkung", "t-sroi", "scorecard", "finalscore", "wirkungscontrolling", "reverse-merit-order", "nichtkompensationsprinzip", "datenqualitaet"]
+    },
+    {
+      "id": "t-sroi",
+      "termId": "t-sroi",
+      "slug": "t-sroi",
+      "canonicalLabel": "T-SROI – Transformational Social Return on Investment",
+      "formula": {
+        "title": "T-SROI-Grundformel und konservative Gate-Untergrenze",
+        "expression": "T-SROI = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]; PV_N^L = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) · (1 − uₜ) − Sₜ) / (1 + r)ᵗ]",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>T-SROI</mi><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><mfrac><mrow><mo>(</mo><mo>(</mo><msub><mi>B</mi><mtext>direkt,t</mtext></msub><mo>+</mo><msub><mi>B</mi><mtext>transformativ,t</mtext></msub><mo>)</mo><mo>·</mo><msub><mi>a</mi><mi>t</mi></msub><mo>·</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>d</mi><mi>t</mi></msub><mo>)</mo><mo>·</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>v</mi><mi>t</mi></msub><mo>)</mo><mo>−</mo><msub><mi>S</mi><mi>t</mi></msub><mo>)</mo></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><mrow><msub><mi>I</mi><mi>t</mi></msub><mo>+</mo><msub><mi>K</mi><mi>t</mi></msub></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>k</mi></msub><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mfrac></mrow></math>",
+        "explanation": "Bdirekt und Btransformativ sind getrennt belegte jährliche Nutzenströme in Euro derselben Preisbasis; S sind konservativ angesetzte jährliche Schäden innerhalb derselben Systemgrenze. a steht für Attribution, d für Counterfactual/Deadweight und v für Verdrängung des beanspruchten Nutzens. I und K sind Investition und inkrementelle Kosten; die heute anfallende Investition I₀ steht im Nenner bei t = 0 und wird deshalb nicht abgezinst. PV_N^L ist ausschließlich die Gate-Untergrenze: Der dokumentierte Szenarioabschlag u reduziert pro Jahr nur den bereits kausal begrenzten Nutzen, nicht S.",
+        "variables": ["Alle Terme im Zähler und Nenner sind Euro derselben Preisbasis; Punkte, Reichweite und Datenqualität gehören nicht in die Bruchrechnung.", "T ist eine ganze Zahl von Jahren mit T ≥ 1. Der Nutzenzeitraum beginnt bei t = 1; Ressourcen werden von t = 0 bis T erfasst, damit eine Anfangsinvestition I₀ eindeutig enthalten ist.", "Btransformativ ist ein separat belegter zukünftiger Nutzenstrom, kein frei wählbarer Hebel oder Multiplikator.", "S wird im Grundmodell nicht mit dem Nutzenfaktor oder mit u reduziert. Eine niedrigere Schaden-Zurechnung verlangt eine gesondert belegte Gegenfaktik und darf nicht einfach angenommen werden.", "u liegt zwischen 0 und 1 und ist ein dokumentierter konservativer Szenarioabschlag auf den beanspruchten Nutzen; PV_N^L ist keine statistische Konfidenzgrenze.", "r und rₖ, Zeitraum, Attribution, Counterfactual, Verdrängung, Systemgrenze, Unsicherheit und Sensitivitäten sind offen zu legen."],
+        "note": "T-SROI darf nur bei offenem Schutz-Gate G = 1 positiv ausgewiesen werden. Das Gate verlangt auch PV_N^L > 0. Bei roter Linie, negativem Kernprofil, unzureichender Datenqualität oder nicht positiver konservativer Untergrenze lautet das Ergebnis: blockiert oder nicht bewertbar."
+      },
+      "shortDefinition": "T-SROI ist ein modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro.",
+      "longDefinition": "T-SROI steht für Transformational Social Return on Investment. Die Kennzahl setzt diskontierte, kausal zugerechnete Netto-Nutzenströme in Euro ins Verhältnis zu diskontierten Investitions- und Zusatzkosten in Euro. Transformative Wirkung ist dabei kein Multiplikator, sondern ein separat nachzuweisender Nutzenstrom, etwa aus einer dauerhaft veränderten Infrastruktur oder Regel. Beispiel bei offenem Gate: Investition heute 1.000.000 Euro, Nettonutzen Jahr 1 600.000 Euro und Jahr 2 800.000 Euro, Diskontsatz 5 Prozent. Dann beträgt der Barwert 600.000 / 1,05 + 800.000 / 1,05² = 1.297.052,15 Euro; T-SROI = 1.297.052,15 / 1.000.000 = 1,30 : 1.",
+      "woekRelation": "T-SROI ergänzt den WÖk-Netto-Wirkungsindex und IOI, vermischt sie aber nicht: Der WÖk-Netto-Wirkungsindex ist eine skalierte Profilkennzahl, IOI ein direkter monetärer Netto-Nutzen je Ressourceneuro und T-SROI schließt einen separat belegten transformativen Nutzenstrom ein. Alle drei brauchen transparente Systemgrenzen, Datenqualität, Unsicherheit, Nichtkompensation und Reverse Merit Order.",
+      "usageNote": "Nur für Investitionen, Programme, Infrastrukturen und Portfolios verwenden, wenn Nutzen, Schäden, Kosten und Zurechnung in einer gleichen Preisbasis dokumentiert sind. Bei G = 0 keine positive Kennzahl berichten; stattdessen die Blockade und den Prüfbedarf ausweisen.",
+      "category": "Messbegriff",
+      "type": "Transformationsbezogene Investitionskennzahl",
+      "source": "WÖk-Begriffsleitfaden · T-SROI-Rechenstandard",
+      "officialSources": [
+        {"label": "OECD: Measure, Manage and Maximise Your Impact", "url": "https://www.oecd.org/en/publications/measure-manage-and-maximise-your-impact_2238c1f1-en/full-report/component-8.html", "sourceType": "Methodische Einordnung zu Attribution und Counterfactual"},
+        {"label": "Social Value International: Principle 5 – Do not overclaim", "url": "https://www.socialvalueint.org/principle-5-do-not-overclaim", "sourceType": "Methodische Schutzregel gegen Überzuschreibung"}
+      ],
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["nwi", "impact-of-investment", "wirkungsrendite", "oeffentlicher-t-sroi", "waerme-t-sroi", "transformationswirkung", "positive-netto-wirkung", "wirkungscontrolling", "nichtkompensationsprinzip"]
+    },
+    {
+      "id": "oeffentlicher-t-sroi",
+      "termId": "oeffentlicher-t-sroi",
+      "slug": "oeffentlicher-t-sroi",
+      "canonicalLabel": "Öffentlicher T-SROI",
+      "formula": {
+        "title": "Formel für öffentliche Transformationsinvestitionen",
+        "expression": "Öffentlicher T-SROI = diskontierter, kausal zugerechneter Netto-Nutzen / diskontierter klar abgegrenzter öffentlicher Mitteleinsatz",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>T-SROI</mi><mtext>öffentlich</mtext></msub><mo>=</mo><mfrac><msub><mi>TN</mi><mtext>diskontiert</mtext></msub><msub><mi>M</mi><mtext>öffentlich</mtext></msub></mfrac></mrow></math>",
+        "explanation": "Die Formel wendet dieselbe Nutzen-, Schaden-, Zurechnungs- und Diskontierungslogik auf staatliche Investitionen, Förderprogramme und Haushalte an. Der Nenner enthält nur den transparent abgegrenzten öffentlichen Mitteleinsatz und inkrementelle öffentliche Folgekosten.",
+        "note": "Ein hoher Wert ersetzt weder demokratische Haushaltsentscheidung noch Schutzgrenzen. Bei geschlossenem Gate darf kein positiver öffentlicher T-SROI erscheinen."
+      },
+      "shortDefinition": "Öffentlicher T-SROI bewertet, ob staatliche Investitionen, Förderprogramme, Haushalte oder öffentliche Schulden im Verhältnis zum öffentlichen Mitteleinsatz transformative Systemwirkung erzeugen.",
+      "longDefinition": "Öffentlicher T-SROI ist die auf öffentliche Mittel bezogene Anwendung des Transformational Social Return on Investment. Er setzt den diskontierten, kausal zugerechneten Netto-Nutzen in Euro ins Verhältnis zu einem klar abgegrenzten diskontierten öffentlichen Mitteleinsatz. Er fragt damit nicht nur nach Nutzen, sondern auch danach, ob öffentliche Mittel belastbare und belegte Beiträge zu Prävention, Infrastruktur oder Pfadveränderung schaffen.",
+      "woekRelation": "Die Kennzahl verbindet Wirkungsfinanzpolitik mit Impact-Controlling. Sie ergänzt den fiskalischen Wirkungsgrad und IOI um den spezifischen Blick auf langfristige Transformationswirkung.",
+      "usageNote": "Für öffentliche Investitionen und Programme nur mit transparenten Annahmen zu Zeitbezug, Diskontierung, Systemgrenze, Zurechnung, Datenqualität und demokratischer Kontrolle verwenden.",
+      "category": "Wirkungsfinanzpolitik",
+      "type": "Öffentliche Transformationskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["t-sroi", "fiskalischer-wirkungsgrad", "impact-of-investment", "wirkungshaushalt", "positive-netto-wirkung", "nichtkompensationsprinzip"]
+    },
+    {
+      "id": "wirkungseffizienz",
+      "termId": "wirkungseffizienz",
+      "slug": "wirkungseffizienz",
+      "canonicalLabel": "Wirkungseffizienz",
+      "formula": {
+        "title": "Verhältnisformel der Wirkungseffizienz",
+        "expression": "Wirkungsintensität_U = dokumentierte Netto-Wirkungsgröße ΔZ_U / klar benannter Ressourceneinsatz R",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>WI</mi><mi>U</mi></msub><mo>=</mo><mfrac><msub><mi>ΔZ</mi><mi>U</mi></msub><mi>R</mi></mfrac></mrow></math>",
+        "explanation": "U benennt die Wirkungsgröße und ihre Einheit, etwa Tonnen CO₂, Lebensjahre oder NWI-Punkte. Der Ressourceneinsatz R kann Kapital, Zeit, Energie, Material oder institutionelle Kapazität sein. Nur bei gleicher Einheit in Zähler und Nenner entsteht eine dimensionslose Verhältniszahl.",
+        "note": "Eine niedrige Kosten- oder Inputzahl beweist keine Wirkungseffizienz, wenn Schäden verlagert, Datenlücken verdeckt oder Wirkungsgrenzen verletzt werden. Eine qualitative Bilanz bildet keinen Quotienten."
+      },
+      "shortDefinition": "Wirkungseffizienz beschreibt eine dokumentierte Netto-Wirkungsgröße je klar benanntem Ressourceneinsatz. Die Einheit der Kennzahl muss sichtbar bleiben.",
+      "longDefinition": "Wirkungseffizienz verbindet Ressourceneffizienz mit Wirkungsbewertung. Formelhaft setzt sie eine dokumentierte Netto-Wirkungsgröße mit einer benannten Einheit durch einen klar benannten Ressourceneinsatz, etwa Kapital, Zeit, Energie, Material oder institutionelle Kapazität. Das Ergebnis ist nur dann dimensionslos, wenn Zähler und Nenner dieselbe Einheit haben; sonst wird es als Wirkungsintensität mit Einheit berichtet. Sie ist nur vergleichbar, wenn Zielgröße, Einheit, Systemgrenze, Zeitraum, Zurechnung und Datenqualität übereinstimmen.",
+      "woekRelation": "Der Begriff verhindert, dass Effizienz mit bloßem Output oder niedrigen Kosten verwechselt wird. Eine billige Lösung ist nicht wirkungseffizient, wenn sie Schäden externalisiert oder positive Netto-Wirkung verfehlt.",
+      "usageNote": "Für Vergleiche von Maßnahmen, Produkten, Beschaffung oder Programmen mit derselben Bewertungslogik verwenden. Nichtkompensation und Reverse Merit Order bleiben der Verhältniszahl vorgelagert.",
+      "category": "Messbegriff",
+      "type": "Wirkungsökonomische Verhältniskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["wirkungsoekonomischer-wirkungsgrad", "impact-of-investment", "fiskalischer-wirkungsgrad", "positive-netto-wirkung", "nichtkompensationsprinzip"]
+    },
+    {
+      "id": "wirkungsrendite",
+      "termId": "wirkungsrendite",
+      "slug": "wirkungsrendite",
+      "canonicalLabel": "Wirkungsrendite",
+      "formula": {
+        "title": "Grundformel der Netto-Wirkungsrendite",
+        "expression": "Netto-Wirkungsrendite = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert des eingesetzten Kapitals in EUR",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>r</mi><mtext>Wirkung</mtext></msub><mo>=</mo><mfrac><mrow><mi>PV</mi><mo>(</mo><msub><mi>B</mi><mi>direkt</mi></msub><mo>−</mo><mi>S</mi><mo>)</mo></mrow><mrow><mi>PV</mi><mo>(</mo><mi>K</mi><mo>)</mo></mrow></mfrac></mrow></math>",
+        "explanation": "Die Formel beschreibt eine kapitalbezogene Euro-zu-Euro-Kennzahl. NWI ist ein vorgelagertes Wirkungsprofil und Schutz-Gate; T-SROI schließt separat belegte transformative Nutzenströme ein. Keiner dieser Werte darf ohne eigene Monetarisierung als austauschbarer Zähler eingesetzt werden.",
+        "note": "Finanzrendite und Wirkungsrendite sind getrennt auszuweisen. Die Kennzahl ist keine Anlageempfehlung und kein Garantieversprechen."
+      },
+      "shortDefinition": "Wirkungsrendite beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines Kapitaleinsatzes je Kapitaleuro, getrennt von finanzieller Rendite.",
+      "longDefinition": "Wirkungsrendite beschreibt den monetären Wirkungs-Ertrag eines Kapitaleinsatzes. Als kapitalbezogene Messvariante setzt sie den Barwert eines kausal zugerechneten direkten Nettonutzens in Euro durch den Barwert des eingesetzten Kapitals in Euro derselben Preisbasis. NWI, IOI, T-SROI, vermiedene Schäden und andere Wirkungsmetriken beantworten unterschiedliche Fragen und dürfen nicht unbemerkt gleichgesetzt werden. Nicht-monetäre Wirkungen bleiben als Profil oder klar benannte Intensität sichtbar.",
+      "woekRelation": "Wirkungsrendite ergänzt Finanzrendite um die Frage nach realer Zustandsveränderung. Kapitalertrag rechtfertigt keine positive Wirkung; Grenzen, Nebenwirkungen, Datenqualität und Nichtkompensation bleiben Teil der Bewertung.",
+      "usageNote": "Immer mit der gewählten Wirkungsmetrik, Systemgrenze, Zeitraum, Datenqualität, Unsicherheit und möglicher Finanzrendite berichten. Nicht zur pauschalen Vermarktung von Finanzprodukten verwenden.",
+      "category": "Messbegriff",
+      "type": "Kapitalbezogene Wirkungskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["impact-of-investment", "t-sroi", "nwi", "kapitalrendite", "positive-netto-wirkung", "transformationswirkung", "nichtkompensationsprinzip"]
+    },
+    {
+      "id": "wirkungsrendite-oeffentlicher-ausgaben",
+      "termId": "wirkungsrendite-oeffentlicher-ausgaben",
+      "slug": "wirkungsrendite-oeffentlicher-ausgaben",
+      "canonicalLabel": "Wirkungsrendite öffentlicher Ausgaben",
+      "formula": {
+        "title": "Verhältnis öffentlicher Wirkung und Mitteleinsatz",
+        "expression": "Wirkungsrendite öffentlicher Ausgaben = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert klar abgegrenzter öffentlicher Ausgaben in EUR",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>r</mi><mtext>öffentlich</mtext></msub><mo>=</mo><mfrac><mrow><mi>PV</mi><mo>(</mo><msub><mi>B</mi><mi>direkt</mi></msub><mo>−</mo><mi>S</mi><mo>)</mo></mrow><mrow><mi>PV</mi><mo>(</mo><msub><mi>A</mi><mtext>öffentlich</mtext></msub><mo>)</mo></mrow></mfrac></mrow></math>",
+        "explanation": "Die Kennzahl vergleicht ausschließlich Eurogrößen derselben Preisbasis. Gesellschaftliche, ökologische und demokratische Wirkungsprofile bleiben zusätzlich sichtbar; sie werden nicht ohne eigene Monetarisierung zum Euro-Zähler.",
+        "note": "Sie ersetzt weder eine demokratische Haushaltsentscheidung noch die Prüfung nicht kompensierbarer Schäden."
+      },
+      "shortDefinition": "Wirkungsrendite öffentlicher Ausgaben beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines klar abgegrenzten öffentlichen Mitteleinsatzes je öffentlichem Euro.",
+      "longDefinition": "Wirkungsrendite öffentlicher Ausgaben setzt den Barwert eines kausal zugerechneten direkten Nettonutzens in Euro ins Verhältnis zu klar abgegrenzten öffentlichen Ausgaben in Euro derselben Preisbasis. Sie macht sichtbar, welcher monetarisierte direkte Gegenwert einem öffentlichen Euro innerhalb einer transparenten Bilanzgrenze gegenübersteht. Nicht-monetäre gesellschaftliche, ökologische und demokratische Wirkungen werden als Wirkungsprofil oder klar benannte Intensität separat berichtet; die Einheit und der Bewertungsrahmen müssen offenliegen.",
+      "woekRelation": "Die Kennzahl ist eng mit fiskalischem Wirkungsgrad und IOI verbunden. Der fiskalische Wirkungsgrad betont den öffentlichen Euro als Einsatz; IOI ist nicht auf öffentliche Mittel begrenzt. T-SROI ergänzt die Betrachtung um langfristige Transformationswirkung.",
+      "usageNote": "Für Haushaltspositionen, Förderungen und öffentliche Investitionen nur bei gleicher Bilanzgrenze, Zeitbezug und Bewertungslogik vergleichen. Schutzgrenzen bleiben unabhängig vom Ergebnis verbindlich.",
+      "category": "Wirkungsfinanzpolitik",
+      "type": "Öffentliche Wirkungskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["fiskalischer-wirkungsgrad", "impact-of-investment", "oeffentlicher-t-sroi", "wirkungshaushalt", "positive-netto-wirkung", "nichtkompensationsprinzip"]
+    },
+    {
+      "id": "gestehungskosten",
+      "termId": "gestehungskosten",
+      "slug": "gestehungskosten",
+      "canonicalLabel": "Gestehungskosten",
+      "formula": {
+        "title": "Grundformel der Gestehungskosten",
+        "expression": "Gestehungskosten je Einheit = abgezinste Gesamtkosten / abgezinste erzeugte oder bereitgestellte Einheiten",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>GK</mi><mo>=</mo><mfrac><msub><mi>K</mi><mtext>abgezinst</mtext></msub><msub><mi>Q</mi><mtext>abgezinst</mtext></msub></mfrac></mrow></math>",
+        "explanation": "Die Gesamtkosten umfassen innerhalb der gewählten Bilanzgrenze zum Beispiel Investition, Betrieb, Wartung, Finanzierung und Restwert. Bei Stromgestehungskosten wird dieselbe Logik als LCOE verwendet.",
+        "note": "Systemkosten, externe Umwelt-, Klima- und Gesundheitskosten sowie soziale oder demokratische Wirkungen sind nicht automatisch enthalten und müssen separat ausgewiesen werden."
+      },
+      "shortDefinition": "Gestehungskosten beschreiben die durchschnittlichen Kosten zur Herstellung oder Erzeugung einer Einheit innerhalb einer definierten Bilanzgrenze.",
+      "longDefinition": "Gestehungskosten werden als abgezinste Gesamtkosten im Verhältnis zu den abgezinsten erzeugten oder bereitgestellten Einheiten berechnet. Die Rechnung braucht eine definierte Einheit, Nutzungsdauer, Bilanzgrenze, Kostenstruktur, Finanzierung, Auslastung und einen Datenstand. In der Energiewirtschaft heißt diese Logik häufig Stromgestehungskosten oder LCOE.",
+      "woekRelation": "Gestehungskosten sind eine wichtige Eingangsgröße, aber kein Wirkungsurteil. Niedrige Kosten zeigen weder automatisch positive Netto-Wirkung noch die Berücksichtigung von Systemkosten, Verteilung, Resilienz oder externen Schäden.",
+      "usageNote": "Kosten je Einheit nur mit Einheit, Zeitraum, Bilanzgrenze, CAPEX/OPEX, Finanzierung, Auslastung, Restwert und ausgeschlossenen Kosten vergleichen. Für Wirkungsentscheidungen mit Systemkosten und Wirkungskennzahlen verbinden.",
+      "category": "Messbegriff",
+      "type": "Kostenkennzahl",
+      "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["stromgestehungskosten", "systemkosten", "capex", "opex", "wirkungseffizienz", "positive-netto-wirkung"]
+    }
+  ]
+}

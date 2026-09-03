@@ -1,0 +1,95 @@
+{
+  "manifest_id": "ST-BSW-FINAL-UNION-MANIFEST-R22",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "mode": "FINAL_SOURCE_ROLE_CONVERGENCE_NO_NEW_FACH",
+  "component_blobs": {
+    "historical_register": "43536bd8b59408b989681841ca334c8206b7d5dd",
+    "r10_role_checkpoint": "ae1a3579475e038e4eaf195dfc90a4b8d68b110e",
+    "r14_versioned_union": "4713cc15948e11c487a1ac85bd820f8c83ae6602",
+    "r18_relation_registry": "1abdd768a8d14646a881519de568c809806f013e",
+    "r20_restore_addendum": "b08128d20f23e3cd7095aa261bc0e1a28b15dee6",
+    "r20_relation_overlay": "e99b479024a5fb67339c72fb522170cbd73d2248",
+    "r21_role_closure": "509270854a36128ed2cee1bff4fe8985c6fb7ee6"
+  },
+  "historical_source_sha256": "ee2f8bb5ab2f123db74c53190e207627d504ae69382c653db71945161d833e8c",
+  "role_materialization": {
+    "historical_definition": "R10 role_by_historical_ordinal + R18/R21 0123/0187=CTX + exact R21 PEND list=KA",
+    "historical_rows": 311,
+    "historical_final_role_counts": {
+      "KA": 271,
+      "KAC": 7,
+      "SNL": 25,
+      "CTX": 8,
+      "PEND": 0
+    },
+    "historical_active_effect_leaves": 278,
+    "historical_zero_count_nonleaf_or_context": 33,
+    "historical_count_rule": {
+      "KA": 1,
+      "KAC": 1,
+      "SNL": 0,
+      "CTX": 0
+    },
+    "versioned_definition": "every exact stable ID in R14 all_versioned_ids ∪ R20 source_leaves has ACTIVE_VERSIONED_EFFECT_LEAF/count=1",
+    "r14_versioned_ids": 380,
+    "r20_restore_ids": 11,
+    "versioned_rows": 391,
+    "versioned_distinct_ids": 391,
+    "versioned_active_effect_leaves": 391,
+    "versioned_zero_count_rows": 0
+  },
+  "relation_materialization": {
+    "definition": "directed edge set is the exact expansion of every ordinal→target tuple in R18 historical_relation_targets after R20 overlay replacement/addition; SNL=SUPERSEDED_BY_CANONICAL_TARGET, KAC=HAS_CANONICAL_CHILD",
+    "relation_bearing_historical_ordinals": 32,
+    "directed_edge_count": 75,
+    "target_existence": "PASS",
+    "acyclic": "PASS",
+    "acyclic_proof": "all targets are terminal R14/R20 versioned IDs except 0162→historical 0167/0169; neither 0167 nor 0169 is relation-bearing in R21, so no directed path exceeds one edge",
+    "max_directed_path_length": 1,
+    "same_restatement_duplicate_supersedes_resolution": "R14 relation_resolutions_carried_forward + R18 historical_relation_targets + R20 overlay are authoritative; no unresolved relation remains"
+  },
+  "collision_dedupe": {
+    "method": "closed-world set-check over already source-bound R01-R09/#234 relation inventory; no source rescan, lexical inference or new Fach",
+    "r21_former_pend_relation_overlap": 0,
+    "front_p6_co2_repeat": "DUPLICATE_RELATION→A03-0020, additional_active_leaf=false",
+    "a03_p28_a04_p29_schwarzerde": "DUPLICATE_CROSS_SPAN, additional_active_leaf=false",
+    "a04_seriell_modular_pair": "RELATED_DISTINCT_MECHANISMS, both_active=true",
+    "r20_restore_leaves": "R17 explicitly established them as missing canonical atoms, therefore their materialization cannot duplicate an already represented canonical target under the closed evidence set",
+    "unresolved_semantic_collision_or_duplicate_relations": 0,
+    "status": "PASS"
+  },
+  "resolved_gap_counts": {
+    "ABSENT": 0,
+    "PARTIAL_PARENT": 0,
+    "OVERMERGED": 0,
+    "TRUNCATED": 0,
+    "RESTORE_GAP": 0
+  },
+  "active_leaf_terminal_fach_set_check": {
+    "status": "PASS",
+    "proof": "H_active is subset of existing 311/311 terminal #234 Working-Baseline; R14 IDs are exact union of already-terminal source-parity batches front+A01-A09; every R20 leaf reuses existing A04/A05 terminal-Fach locator"
+  },
+  "active_leaf_241_layer_set_check": {
+    "status": "PASS",
+    "proof": "R14 IDs inherit applicable source-bound #241 batch/object checks; every R20 leaf carries an existing A04/A05 applicable-layer locator; no new layer synthesized"
+  },
+  "authoritative_counts": {
+    "counting_method": "cardinality of collision-resolved final active-leaf set; never 311+children arithmetic",
+    "final_active_source_effect_leaf_count": 669,
+    "preserved_zero_count_nonleaf_or_context_records": 33,
+    "represented_final_role_record_universe": 702,
+    "cross_set_collision_count_after_resolution": 0
+  },
+  "completion": {
+    "PEND": 0,
+    "unresolved_source_relations": 0,
+    "authoritative_counts_frozen": true,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": "PASS",
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "PASS_FULL_PROGRAMME",
+    "PR270_must_remain_draft": true,
+    "PR270_merge_ready": false,
+    "handoff": "clean exact-current-main ST-only projection/gates; transplant frozen BSW artifacts only"
+  },
+  "canonical_manifest_payload_sha256": "df38b10505b4e560f00b5c4b771928699a5d700da933237c454ba47220f69875",
+  "hash_definition": "SHA-256 of UTF-8 canonical JSON of this manifest with canonical_manifest_payload_sha256 and hash_definition omitted; sorted keys; separators ',' ':'; ensure_ascii=false."
+}

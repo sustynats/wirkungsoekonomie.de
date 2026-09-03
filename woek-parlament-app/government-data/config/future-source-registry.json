@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "status": "INVENTORIED_NOT_BACKFILLED",
+  "sources": [
+    {"source_id":"BUNDESHAUSHALT","name":"Bundeshaushalt Soll, Einzelpläne und Titel","base_url":"https://www.bundeshaushalt.de/","planned_function":"BUDGET_DATA"},
+    {"source_id":"BMF_MONATSBERICHT","name":"BMF-Monatsberichte und Haushaltsvollzug","base_url":"https://www.bundesfinanzministerium.de/Monatsberichte/","planned_function":"BUDGET_DATA"},
+    {"source_id":"FOERDERDATENBANK","name":"Förderdatenbank Bund, Länder und EU","base_url":"https://www.foerderdatenbank.de/","planned_function":"FUNDING_RULE"},
+    {"source_id":"OEFFENTLICHER_EINKAUF","name":"Datenservice Öffentlicher Einkauf","base_url":"https://www.datenservice-oeffentlicher-einkauf.de/","planned_function":"PROCUREMENT_DATA"},
+    {"source_id":"VWV_BUND","name":"Verwaltungsvorschriften im Internet","base_url":"https://www.verwaltungsvorschriften-im-internet.de/","planned_function":"IMPLEMENTATION_RULE"},
+    {"source_id":"DESTATIS_GENESIS","name":"GENESIS-Online","base_url":"https://www-genesis.destatis.de/","planned_function":"MONITORING_DATA"},
+    {"source_id":"GOVDATA","name":"GovData","base_url":"https://www.govdata.de/","planned_function":"MONITORING_DATA"},
+    {"source_id":"UBA","name":"Umweltbundesamt","base_url":"https://www.umweltbundesamt.de/","planned_function":"MONITORING_DATA"},
+    {"source_id":"BA","name":"Bundesagentur für Arbeit Statistik","base_url":"https://statistik.arbeitsagentur.de/","planned_function":"MONITORING_DATA"},
+    {"source_id":"BUNDESBETEILIGUNGEN","name":"Beteiligungsberichte des Bundes","base_url":"https://www.bundesfinanzministerium.de/","planned_function":"STATE_OWNERSHIP_DATA"},
+    {"source_id":"LOBBYREGISTER","name":"Lobbyregister des Deutschen Bundestages","base_url":"https://www.lobbyregister.bundestag.de/","planned_function":"CONTEXT","safety_note":"Lobbykontakt ist kein Nachweis politischer Einflussnahme."}
+  ]
+}

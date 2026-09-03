@@ -1,0 +1,28 @@
+sourcePack:
+  slug: "e-fuels-retten-den-verbrenner"
+  dossier: "E-Fuels retten den Verbrenner?"
+  dataStand: "2026-06"
+  nextReviewDate: "2027-06"
+  requiredSources:
+    - "uba_emissions_inventory"
+    - "transport_environment_efuels"
+    - "iea_hydrogen"
+    - "icct_lifecycle_evs"
+  optionalSources:
+    - "debunking_handbook"
+  missingSources:
+
+  evidenceSummary:
+    secure:
+      - "Der Claim enthält einen prüfbaren wahren Kern."
+      - "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+    uncertain:
+      - "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+    contested:
+      - "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+  accountingBoundary: "lebenszyklusbezogen, zeitlich, systemisch"
+  counterposition: "E-Fuels können für Spezialfälle wichtig sein. Die Grenze ist der Pkw-Massenmarkt, weil direkter Strom meist besser wirkt."
+  doesNotClaim: "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt."
+  sourceNotes:
+    - "C-Quellen werden nur mit A- oder B-Quellen verwendet."
+    - "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."

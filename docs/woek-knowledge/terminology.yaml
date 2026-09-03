@@ -1,0 +1,119 @@
+# WÖk Terminology (maschinenlesbar) — Quelle: Begriffsleitfaden führend v1.5 (15.08.2026)
+# Volltext-Erläuterungen: TERMINOLOGY.md · Bei Konflikt gilt v1.5; Glossar nur soweit leitfadenkonform.
+meta:
+  leading_source: content/documents/online/woek-begriffsleitfaden-fuehrend.inc
+  leading_pdf: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf
+  version: "1.5"
+  date: "2026-08-15"
+  last_verified: "2026-08-15"
+
+terms:
+  - id: wirkung
+    label: Wirkung
+    definition: "Tatsächliche Veränderung von Zuständen; positiv, negativ oder neutral, immer mit Bezugspunkt."
+    source: leitfaden_v1_3_p7
+    do_not_confuse: [absicht, massnahme, geld, output, reichweite, wirkungspotenzial]
+  - id: wirkungspotenzial
+    label: Wirkungspotenzial
+    definition: "Möglichkeit, dass eine erwünschte, unerwünschte, schädliche oder ambivalente Wirkung eintreten kann; keine eingetretene Wirkung."
+    source: leitfaden_v1_3_p7
+  - id: wirkungsrisiko
+    label: Wirkungsrisiko
+    definition: "Möglichkeit, dass negative, unerwünschte oder systemisch destabilisierende Wirkung entsteht; kein eingetretener Schaden."
+    source: leitfaden_v1_3_p7
+  - id: positive-wirkung
+    label: Positive Wirkung
+    definition: "Veränderung, die auf SDGs, Agenda 2030 und SDG+ einzahlt."
+    source: leitfaden_v1_3_p7
+  - id: negative-wirkung
+    label: Negative Wirkung
+    definition: "Veränderung, die SDGs, Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört."
+    source: leitfaden_v1_3_p7
+  - id: positive-netto-wirkung
+    label: Positive Netto-Wirkung
+    definition: "Zielgröße: Aktivität stärkt Mensch, Planet und Demokratie insgesamt — unter Berücksichtigung positiver, negativer, indirekter und nicht-kompensierbarer Wirkungen."
+    source: leitfaden_v1_3_p7
+    note: "Keine einfache Addition; Nichtkompensation beachten."
+  - id: wirkpfad
+    label: Wirkpfad / Wirkungspfad
+    definition: "Beschreibt, wie aus Handlung, Produkt, Regel, Narrativ oder Kapitalfluss Wirkung entstehen kann; geeignet, solange kein vollständiger Wirkungsnachweis vorliegt."
+    source: leitfaden_v1_5_10_3
+    note: "Versionierte und evidenzsensible Pfaddarstellung. Kann einen IOOI-kompatiblen Abschnitt enthalten, ist aber nicht durch IOOI definiert und kein Kausalbeweis."
+  - id: iooi
+    label: IOOI
+    definition: "Externe, optionale Results-Chain-Methode für Input, Output, Outcome und Impact; Aktivität kann als zusätzliche Prozessstufe ergänzt werden."
+    source: leitfaden_v1_5_7_1
+    note: "IOOI ist weder Grundmodell noch notwendiger Bestandteil der Wirkungsökonomie."
+  - id: wirkungsradar
+    label: Wirkungsradar
+    definition: "WÖk-Orientierungs- und Analyseinstrument beziehungsweise Portal für Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände."
+    source: leitfaden_v1_5_10_3
+    note: "Nicht als Namen einer Spinnennetzgrafik verwenden."
+  - id: wirkungsprofil-im-radardiagramm
+    label: Wirkungsprofil im Radardiagramm
+    definition: "Grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale; größere Ausschläge bedeuten nicht automatisch bessere Wirkung."
+    source: leitfaden_v1_5_10_3
+  - id: wirkungsnetz
+    label: Wirkungsnetz
+    definition: "Verbindung mehrerer Wirkungen, Wirkungspotenziale, Resonanzräume, Rückkopplungen und Systemfolgen."
+    source: leitfaden_v1_3_p7
+  - id: wirkungsrueckkopplung
+    label: Wirkungsrückkopplung
+    definition: "Erkannte und bewertete Wirkung wird in Preise, Steuern, Kapitalzugang, Förderung, Beschaffung, Regulierung oder Entscheidungen zurückgeführt. Reporting beschreibt, Rückkopplung verändert."
+    source: leitfaden_v1_3_p7
+  - id: wirkungsgrenze
+    label: Wirkungsgrenze
+    definition: "Rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf."
+    source: leitfaden_v1_3_p7
+    examples: [Kinderarbeit, Zwangsarbeit, irreversible ökologische Schäden]
+  - id: nichtkompensationsprinzip
+    label: Nichtkompensationsprinzip
+    definition: "Gute Werte in einem Bereich dürfen schwere Schäden in einem anderen Bereich nicht verdecken."
+    source: leitfaden_v1_3_p7
+    precision_source: docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md#2.13
+  - id: reverse-merit-order
+    label: Reverse Merit Order
+    definition: "Das schwächste zentrale Wirkungsfeld begrenzt die Gesamtbewertung."
+    formula: "FinalScore = min(Kernfeldscores)"
+    core_fields: [Klima, "Ressourcen & Kreislauf", "Arbeit & Fairness", "Gesundheit & Sicherheit"]
+    source: leitfaden_v1_3_p7
+  - id: wirkungscontrolling
+    label: Wirkungscontrolling
+    definition: "Macht Wirkung messbar, überprüfbar und steuerbar."
+    source: leitfaden_v1_3_p7
+  - id: wirkungsdaten
+    label: Wirkungsdaten
+    definition: "Machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar (Primär-/geprüfte Sekundärdaten, Produkt-/Lieferkettendaten, Benchmarks, Prüfstatus)."
+    source: begriffe/wirkungsdaten
+    note: "Kein eigener §7-Eintrag im Leitfaden."
+  - id: wirkungsraum
+    label: Wirkungsraum
+    definition: "Bereich, in dem Handlung, Produkt, Entscheidung oder Kommunikation Folgen entfaltet (Lieferkette, Diskurs, Markt, Ökosystem, Demokratie)."
+    source: leitfaden_v1_3_p7
+  - id: mensch-planet-demokratie
+    label: Mensch–Planet–Demokratie
+    definition: "Die drei übergeordneten Wirkungsdimensionen; keine zusätzlichen UN-Ziele, sondern die kommunikative Ordnung, die SDGs, Agenda 2030 und SDG+ zusammenführt."
+    source: begriffe/mensch-planet-demokratie
+  - id: sdg-plus
+    label: SDG+
+    definition: "WÖk-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung."
+    source: leitfaden_v1_3_p3
+    mandatory_disclosure: "Keine offizielle UN-Kategorie — immer als WÖk-Erweiterung ausweisen."
+  - id: wirkungsrat
+    label: Wirkungsrat
+    definition: "Unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik."
+    source: leitfaden_v1_3_p7
+  - id: t-sroi
+    label: T-SROI
+    definition: "Modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro."
+    source: begriffe/t-sroi
+    leading_standard: "T-SROI-Rechenstandard v1.1 (2026-08-02); multiplikative Alt-Logik ersetzt."
+  - id: woek-id
+    label: WÖk-ID
+    definition: "Standardisierte Identifikationsnummer für einen Wirkungsindikator, ein Wirkungsfeld oder eine bewertbare Wirkungseinheit."
+    source: leitfaden_v1_3_p7
+    register: "Master Items v1.3 (621 IDs) + assets/data/woek-id-register.json"
+  - id: nachhaltigkeit
+    label: Nachhaltigkeit (führende Definition v1.3)
+    definition: "Langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie."
+    source: leitfaden_v1_3_resilienzpraezisierung

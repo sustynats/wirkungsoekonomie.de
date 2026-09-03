@@ -1,0 +1,76 @@
+{
+  "reviewed_at": "2026-08-23",
+  "default_unique_decision": {
+    "classification": "UNIQUE_LOCAL_CHANGE_REVIEW_REQUIRED",
+    "review_status": "INDIVIDUALLY_REVIEWED",
+    "reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+    "rescue": "PRIVATE_GITHUB_RELEASE_ARCHIVE"
+  },
+  "exact": {
+    "scripts/quality/audit-accessibility-baseline.mjs": {
+      "classification": "ALREADY_ON_MAIN",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "The Git blob is exactly present on root repository main at woek-parlament-app/scripts/quality/audit-accessibility-baseline.mjs."
+    },
+    "app/login/page.tsx": {
+      "classification": "SUPERSEDED",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Three-way comparison against Institut main shows the old working delta is fully contained in the current main version."
+    },
+    "app/quellen/[sourceId]/page.tsx": {
+      "classification": "SUPERSEDED",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Three-way comparison against Institut main shows the old working delta is fully contained in the current main version."
+    },
+    "app/werkstatt/page.tsx": {
+      "classification": "SUPERSEDED",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Three-way comparison against Institut main shows the old working delta is fully contained in the current main version."
+    },
+    "scripts/quality/check-no-em-dash.mjs": {
+      "classification": "SUPERSEDED",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Root repository main contains the current expanded no-em-dash quality gate; this local Institut copy is the older implementation."
+    },
+    "app/mitglieder/page 2.tsx": {
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Number-suffixed macOS/iCloud conflict copy; the canonical local page.tsx is newer and separately preserved."
+    },
+    "app/profil/page 2.tsx": {
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Number-suffixed macOS/iCloud conflict copy; the canonical local page.tsx is newer and separately preserved."
+    },
+    "app/raeume/page 2.tsx": {
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Number-suffixed macOS/iCloud conflict copy; the canonical local page.tsx is the coherent room implementation and is separately preserved."
+    },
+    "lib/institut/dashboard 2.ts": {
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Number-suffixed macOS/iCloud conflict copy; canonical dashboard.ts has 201 additional lines and its exact blob is already preserved on GitHub."
+    },
+    "lib/institut/profiles 2.ts": {
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Number-suffixed macOS/iCloud conflict copy; canonical profiles.ts is the newer implementation already preserved on GitHub."
+    },
+    "scripts/upsert-sdgplus-verfassungsquellen.mjs": {
+      "classification": "UNIQUE_LOCAL_CHANGE_REVIEW_REQUIRED",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Unique source-projection draft with substantive legal/factual text. Preserve privately for review only; it is not approved Fach, DNS or Recommendation content and must not be executed or projected by this audit.",
+      "rescue": "PRIVATE_GITHUB_RELEASE_ARCHIVE",
+      "projection_authorized": false
+    },
+    "supabase/seed/institut_quellenarchiv_intern.sql": {
+      "classification": "UNIQUE_LOCAL_CHANGE_REVIEW_REQUIRED",
+      "review_status": "INDIVIDUALLY_REVIEWED",
+      "reason": "Unique internal source seed. Preserve only in the private Institut audit release; do not publish, import or project it from this audit.",
+      "rescue": "PRIVATE_GITHUB_RELEASE_ARCHIVE",
+      "projection_authorized": false,
+      "public_distribution_authorized": false
+    }
+  }
+}

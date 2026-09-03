@@ -1,0 +1,57 @@
+name: Berlin current-source completion
+
+on:
+  pull_request:
+    paths:
+      - "tools/validate_berlin_current_source_register.py"
+      - "woek-parlament-app/app/components/StateProgrammeSourceRegister.tsx"
+      - "woek-parlament-app/app/laender/[slug]/wahl/page.tsx"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
+      - "woek-parlament-app/lib/states/public-content.ts"
+      - "woek-parlament-app/scripts/quality/check-berlin-current-source.ts"
+      - "woek-parlament-app/scripts/quality/check-state-publication.ts"
+      - "woek-parlament-app/tests/state-public-content.test.ts"
+      - "woek-parlament-app/package.json"
+      - ".github/workflows/berlin-current-source.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: berlin-current-source-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-register:
+    name: Official field, source maturity and GitHub pins
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate deterministic register and pinned source handoffs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_berlin_current_source_register.py --check-github
+
+  public-projection:
+    name: Berlin current-source public projection
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: woek-parlament-app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: woek-parlament-app/package-lock.json
+      - run: npm ci
+      - run: npm run check:berlin-current-source
+      - run: npm run check:state-publication
+      - run: npm run typecheck

@@ -1,0 +1,675 @@
+{
+  "archive": "issue-284-woek-institut-unique-source-rescue-a76080e.tar.gz",
+  "archive_sha256": "c141809e310ed17a1cc3cfc72291a130e1df57cb401b2b1a8fa2ae4b92edd370",
+  "archive_bytes": 243184,
+  "file_count": 65,
+  "logical_bytes": 1251585,
+  "secret_scan_status": "PASS",
+  "secret_findings": [],
+  "ignored_content_included": false,
+  "manifest": {
+    "artifact": "WÖK Institut old dirty worktree rescue for root issue #284",
+    "status": "NON_PRODUCTION_PRIVATE_REVIEW_ARTIFACT",
+    "source_repository": "sustynats/woek-institut-app",
+    "source_local_head": "a76080e164f4753ca08f4eca68d099c45a015fcb",
+    "source_local_branch": "feature/quellen-public-api",
+    "created_from_inventory": "nested-woek-institut-app-audit.json",
+    "file_count": 65,
+    "logical_bytes": 1251585,
+    "ignored_content_included": false,
+    "fach_projection_authorized": false,
+    "deployment_authorized": false,
+    "files": [
+      {
+        "path": ".env.example",
+        "mode": 420,
+        "bytes": 3367,
+        "sha256": "6ef01ff1c542d9fa67464b4114169460f0f70befbc369b58d3d4d820cd3ba8e8",
+        "git_blob_oid": "a159a8da483362f411e2f89f921a283fe08a730b",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/api/ki/route.ts",
+        "mode": 420,
+        "bytes": 1855,
+        "sha256": "da10e95de6e070895ecc5277cd4efaae32c5aee63b842f0ead500685ec369663",
+        "git_blob_oid": "da5e07282d28ba9b41f9acd148006c0338d7229d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/api/wirkungscheck/route.ts",
+        "mode": 420,
+        "bytes": 2159,
+        "sha256": "2bcdc7a8a4fc01a322e06e804ae4b9323ca61364fdd78b5c622fe33a89297c56",
+        "git_blob_oid": "8c305b1d6e6040e3d8352a45300829e152454430",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/bibliothek/page.tsx",
+        "mode": 420,
+        "bytes": 3920,
+        "sha256": "1e6ccb3483222b1d087e94f61f1a2fbbc1a681997765c87251909b3df0b20ecd",
+        "git_blob_oid": "af6809508d8daa6fddeb494fc460709d25a7d4ea",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/components/DiscussionPanel.tsx",
+        "mode": 420,
+        "bytes": 3581,
+        "sha256": "8c950482970082c92a1b43bdb05243864edc4963cf1ca722fa2a82930c9d6ec2",
+        "git_blob_oid": "739207dc6fc12db47579c76edd6ff858c83efc39",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/components/MemberNav.tsx",
+        "mode": 420,
+        "bytes": 2900,
+        "sha256": "e585f7727145aceb46d29b1943eaaad731bb540c18a2be6c6e973136affacda8",
+        "git_blob_oid": "4ee3c80b8f0bb7d03c769feaafcc8abe42da6b51",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/components/SiteHeader.tsx",
+        "mode": 420,
+        "bytes": 1328,
+        "sha256": "bdfab5b8885ec68b4b73211c9867e78e3188e34dab4b24baf71962421f4a4e9e",
+        "git_blob_oid": "4ad07c688a6aa9d599f32419b05bada03d863859",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/datenschutz/profile/page.tsx",
+        "mode": 420,
+        "bytes": 2156,
+        "sha256": "941d5a1532c82c9e26c078ea14ee303a244a4bd080ee41cbe27ce3cdcec78a0e",
+        "git_blob_oid": "3672a02e231eadd5629a94de5435b61d9c4b2395",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/dokumente/[documentId]/DocumentComments.tsx",
+        "mode": 420,
+        "bytes": 7053,
+        "sha256": "e9264816a8157d1184aa9bc4762d37c53e35fa13ab1d403af060da8c008a5123",
+        "git_blob_oid": "ff0e10d13037e536626e728fc30e8722c21b236b",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/dokumente/[documentId]/page.tsx",
+        "mode": 420,
+        "bytes": 6209,
+        "sha256": "090f90d1a925c997bf16b5950fcaa137f82e0736f9ed5df98fb236d6675adff9",
+        "git_blob_oid": "2468183f376b9dc368f173f3ea5c3c1e6983f830",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/forum/[threadId]/page.tsx",
+        "mode": 420,
+        "bytes": 4549,
+        "sha256": "4001add8fae083a907d5376e4677245f5983b8117cc72d10f471c66d98335d26",
+        "git_blob_oid": "f3a53e7284456eb3fc4891ddbaa383616429bae8",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/forum/actions.ts",
+        "mode": 420,
+        "bytes": 4913,
+        "sha256": "928223aab95fc36aec249b686bdcf5520004576bafe4b8bbf4578e68e1b62257",
+        "git_blob_oid": "29c0684ce2347b60c24185bf798432329d701ca8",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/forum/page.tsx",
+        "mode": 420,
+        "bytes": 6912,
+        "sha256": "a417034cf5efee264d2de877fc96b94c57164cc5f91394dbcd1752d50c3bc635",
+        "git_blob_oid": "886dc29fefec65d56d8a89a034cef9602de3001d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/globals.css",
+        "mode": 420,
+        "bytes": 23806,
+        "sha256": "cdd475727190dadd3779343e7b0bce28eecfce9a18de5804abb71d29a70cc682",
+        "git_blob_oid": "231695fd83a98bce472b3586b30535c5adaf2574",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/glossar/page.tsx",
+        "mode": 420,
+        "bytes": 5655,
+        "sha256": "61fbb7d9e779c85eae3a77c4fabce0d08596ca993301aa4cbdb726605038a0ab",
+        "git_blob_oid": "b0a711eb6a0771a0ca63ddf5aeb67cb549011ee3",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/incidents/page.tsx",
+        "mode": 420,
+        "bytes": 4356,
+        "sha256": "99d6f6f147c3da2d7c23d6c088317c15b98fab9e27f3172aa0b0f8b6a86987f1",
+        "git_blob_oid": "685d31c6315f7934a34185fe14dfa975936eb338",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/layout.tsx",
+        "mode": 420,
+        "bytes": 1732,
+        "sha256": "19222f1306c4919d16889806f809bffbf2b86309d35c69f3faaf648b3775e552",
+        "git_blob_oid": "cba49934de472f713ea6bdf13edddaa66baaa48e",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/methodik/page.tsx",
+        "mode": 420,
+        "bytes": 13261,
+        "sha256": "d822bde5bc3a9432acc165c369b01ad726bcaae9602761f0dd58b8f1843c1bc5",
+        "git_blob_oid": "787a4df5d12b74b83cf220e2e847b85ef27d2125",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/mitglieder/page.tsx",
+        "mode": 420,
+        "bytes": 5314,
+        "sha256": "900cfa371a7bc0078c9e5a6c722944998a9455a504b16591ab9f88ca708f2177",
+        "git_blob_oid": "67810772a24b396325057f3c018000fe80fb9947",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/nachrichten/[conversationId]/page.tsx",
+        "mode": 420,
+        "bytes": 2317,
+        "sha256": "ebf90e6ba6357648aa6d41c1962942e438fadbb97e59e3f52843b64eefe07c99",
+        "git_blob_oid": "b13c34a8c91919fccf00cb09ad05465fe15534f9",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/page.tsx",
+        "mode": 420,
+        "bytes": 33770,
+        "sha256": "92b24a4a2e3a3eb7cee2078a8a6c77ee3ed22217891bce66b20163c94755aa9f",
+        "git_blob_oid": "6f69818675c7746f8b7d910f099bc5eb5c75d75b",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/profil/page.tsx",
+        "mode": 420,
+        "bytes": 9601,
+        "sha256": "6eccb6c8baaace7eada04639f974e165ae043bd4c3ab90904800a337429a5fe2",
+        "git_blob_oid": "ceeda13528af4a0e916608d132199b6f40c3582d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/quellen/page.tsx",
+        "mode": 420,
+        "bytes": 9991,
+        "sha256": "29ed4d529e42377c49c53b0e02f9d14dc01a2ef1bf8f3afbbfa31a3125d990f5",
+        "git_blob_oid": "25adc95d82111956ce971b6087ebca729f9f1aa2",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/suche/page.tsx",
+        "mode": 420,
+        "bytes": 3748,
+        "sha256": "eaede727a002b139f7b1f80de94632873dd257b155bff4aa77dadb6e86c0d512",
+        "git_blob_oid": "ffd4ec582826726cdf8721f00c7b9ea475103e93",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/verwaltung/page.tsx",
+        "mode": 420,
+        "bytes": 14318,
+        "sha256": "f14740dcb9048964337fb795b17ccb11fefbd8c34e85602f85e89dacac01c3be",
+        "git_blob_oid": "80a46015a39c1459e210dc9dab1c398a6ec3d6cf",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/wirkungsboard/[boardId]/BoardCanvas.tsx",
+        "mode": 420,
+        "bytes": 15916,
+        "sha256": "9268b270aaaaa3c661407926925d14ffd3f82089de70598c2973b62333033465",
+        "git_blob_oid": "c73ba06a9918f0a8ed17d4455e185d7e0eb344c4",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/wirkungsraum/page.tsx",
+        "mode": 420,
+        "bytes": 3434,
+        "sha256": "ea7e9fd3945b3c4e7b266c70bafcdc2839e40b3e59f27ebac4244cea4e1f90bd",
+        "git_blob_oid": "c94cb5ca6fb04fa80d928a301147adfd4d2bdd6e",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/access.ts",
+        "mode": 420,
+        "bytes": 6056,
+        "sha256": "a985c5f0c4cf29abc749ebd13f9c4800e442c76f065a1ca5dbde5323e02e9413",
+        "git_blob_oid": "0f6feb3184888ab9ae668760236402144127e9e3",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/discord.ts",
+        "mode": 420,
+        "bytes": 2444,
+        "sha256": "721709ed667a277dc46064301c4cb93325c80924395c71355cec420cad840c09",
+        "git_blob_oid": "53c745f60e0561a5344a7cbd10fac977328f0fe1",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/institut/applications.ts",
+        "mode": 420,
+        "bytes": 9775,
+        "sha256": "d920036e1810bdd878b3b82b4a5a97ce2d1bb4b18bf9739aecb0c3d3f2aaa719",
+        "git_blob_oid": "11c2b15ee9dff7331b98f72e22e6648cd0532e2c",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/institut/forum.ts",
+        "mode": 420,
+        "bytes": 10655,
+        "sha256": "8823ca0db41c670393f182772f18533e746025cafd43be440d32e0a6be27148b",
+        "git_blob_oid": "5ffd5f746f7c03d472a20786b206d717f4869e52",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/institut/types.ts",
+        "mode": 420,
+        "bytes": 6662,
+        "sha256": "6e305b38ac5777bb4f7988f7aaabb28f2280e087c59633edadf10d02d057612a",
+        "git_blob_oid": "de319043934131d5814fdf6e5026e771519b11bc",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "package-lock.json",
+        "mode": 420,
+        "bytes": 205182,
+        "sha256": "4b6a71d1e20614778c07d77ac3e2b3a73ba2e5f6c2862458fe74d1980cfba3af",
+        "git_blob_oid": "0a47c4d7e7af06865c4ad051334fb149fa9f5216",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "package.json",
+        "mode": 420,
+        "bytes": 1322,
+        "sha256": "551d1688a6af33cef1e54e3ea32ed4455a642e3921ad1c57eaf7d37828e892af",
+        "git_blob_oid": "0a849acd380853388a3924a2388682f56876c627",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "scripts/run-institut-migrations.mjs",
+        "mode": 420,
+        "bytes": 2471,
+        "sha256": "8e382a0dfa07d8edc9c2c701cf8e84ff22506c7fed47629f047ebad440586932",
+        "git_blob_oid": "a8254dfea3fe351a750ccef4aa166c6f552e2ec7",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0003_boards.sql",
+        "mode": 420,
+        "bytes": 2752,
+        "sha256": "9452dad4c13e6e71e3583ff3c3bd503930138ed1f1c9ed2d2858a03360f2f94f",
+        "git_blob_oid": "48edbf4c0f404624a982bee6a4a290d43e12c0fd",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0004_applications.sql",
+        "mode": 420,
+        "bytes": 1545,
+        "sha256": "06229741fa22d0d6e607eba9d7ba5e634e07922ba2e30de4f6001e9c621dd812",
+        "git_blob_oid": "33d73629497cae256982e937cb96cf2e0e9de627",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0005_documents.sql",
+        "mode": 420,
+        "bytes": 2144,
+        "sha256": "07493a254955f767f6bc0ee886eff8e7cb903bd8edf19bee222286c571346c6e",
+        "git_blob_oid": "6f35b8646255abf37a69c82fe7b9a832c5ee986e",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0006_sources.sql",
+        "mode": 420,
+        "bytes": 1562,
+        "sha256": "8ab3952d49b07ab0e4763e5984f727ffbc99dd30555a2e3b10c6754116f9c906",
+        "git_blob_oid": "4822858b996160ad2e0fdf616d156464e3228af0",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0007_document_comments.sql",
+        "mode": 420,
+        "bytes": 1595,
+        "sha256": "ac87abee74d797c226c645df396f058bd19da1f4796841b232536657fd22c39c",
+        "git_blob_oid": "663ca22e5038becc4134e7e22a69bc7742331066",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0008_forum_structure.sql",
+        "mode": 420,
+        "bytes": 2182,
+        "sha256": "6dddbbd0569bbd76811f08651e7e0755e6de546cf1f4cd15b4f3d7829681d152",
+        "git_blob_oid": "a7e549195e1537adccced855b156f20206c01246",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0009_document_collaborators.sql",
+        "mode": 420,
+        "bytes": 1060,
+        "sha256": "20face6ceac0adf5e8e670c9af6cce7daa566192f8d66a7dd6e1dc4196912d31",
+        "git_blob_oid": "05fb54722d4ef19d065bde87a327c7770cac190d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/seed/institut_quellenarchiv.sql",
+        "mode": 420,
+        "bytes": 360881,
+        "sha256": "c8390e32a7e9ffb913ff4c8f965581ffb305fca56838aa9058f83dccdb191b65",
+        "git_blob_oid": "af1bbf0afa8175d6cdcb3fec6a3c196902107c87",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/aktuelles/page.tsx",
+        "mode": 420,
+        "bytes": 940,
+        "sha256": "f166e3bb73e3285cdb7f71d525ed51e499572c458b5ffba5cb56109158cd9a0f",
+        "git_blob_oid": "03f25a5b0b3bdf84f0030ec35affdda281afe5eb",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/api/aktuelles/rss/route.ts",
+        "mode": 420,
+        "bytes": 1023,
+        "sha256": "ef6a37119be143b38530c2e5e1fd06c19f0bef0d0ae9d87b9d42a96c8cfa7a90",
+        "git_blob_oid": "bf8b40cdc1ea14e4656439bc12d5ad93e74ab19d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/api/audio/livekit-webhook/route.ts",
+        "mode": 420,
+        "bytes": 1584,
+        "sha256": "46c8a0be290edb60a2fefc42162ffd3326b689894af28ccb749e8099f7e4f088",
+        "git_blob_oid": "10b0422554a9f4b4d123833e7159221668594906",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/api/audio/presence/route.ts",
+        "mode": 420,
+        "bytes": 669,
+        "sha256": "19d231380b08a87e45b0e446145df47736e22df419b6feb342b3039acd4e6636",
+        "git_blob_oid": "7b2ed48588b4e213f259a5d6372f278897487895",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/api/audio/rooms/[roomSlug]/route.ts",
+        "mode": 420,
+        "bytes": 4073,
+        "sha256": "1230941a32855b42d9e489d4b6ad26f010dc3c6abe8adf8c4a083d92bd092b92",
+        "git_blob_oid": "ad24a5e7494d8bc6921e5729e5f2a43f0e90026b",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/api/audio/token/route.ts",
+        "mode": 420,
+        "bytes": 1675,
+        "sha256": "1347b247a2709539d5fdeba52f88b6d0096f7dadb2782d7ece60e3f2c0bc757c",
+        "git_blob_oid": "818a3d55244d22ba468f93fbf2dae9d6fca7384c",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/components/RichTextEditor.tsx",
+        "mode": 420,
+        "bytes": 2339,
+        "sha256": "e48a63cf4c72482820c3d7f6fed54854ac64bcf714aa7dcea89901750a5dd2e2",
+        "git_blob_oid": "cc633c8f1bede3bcf5fe607d73c34f2266195735",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/intern/aktuelles/page.tsx",
+        "mode": 420,
+        "bytes": 1711,
+        "sha256": "53e7aec572bdec37215e26ffdcc6d5cf418fec795b42ad8497cd1cc4fce250e1",
+        "git_blob_oid": "1adfbf4ea84eca7797ad3f77960baa0cd5e3b15c",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/raeume/AudioRoomClient.tsx",
+        "mode": 420,
+        "bytes": 6417,
+        "sha256": "574846ae3334de9cfea43ce6a79dc270cc8bf1636cf330f957e1867a975dfc36",
+        "git_blob_oid": "ffe52144c539a08e738ce837fac0375d33cd4e91",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/raeume/page.tsx",
+        "mode": 420,
+        "bytes": 2450,
+        "sha256": "8b56d75d5eafe4e104aaa50406a76140713b55e2d4657f0c471f063167266766",
+        "git_blob_oid": "706cf75e5d0ca484106063115b5c6d3b725db39c",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/verwaltung/aktuelles/actions.ts",
+        "mode": 420,
+        "bytes": 1164,
+        "sha256": "4d1d3ab14b545ba19b3627e54136aa6c41448fc75ee77c7168336656d074807d",
+        "git_blob_oid": "0170f4d3dd332a42925d7590b3cb31fd75456730",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/verwaltung/aktuelles/page.tsx",
+        "mode": 420,
+        "bytes": 1760,
+        "sha256": "449462f059f12e56ffabb9d220a550ac165c5269e7159bf0bb9e1066e2f5926d",
+        "git_blob_oid": "57ee6f411105b919aaa5a8354528915de708566d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/verwaltung/audio/actions.ts",
+        "mode": 420,
+        "bytes": 1483,
+        "sha256": "4e406687bfbc53bd248ab92500c02d657d606c78f186080370ed37c2864191db",
+        "git_blob_oid": "f962c72e40258b115ac7828884d9d6e14530cd75",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "app/verwaltung/audio/page.tsx",
+        "mode": 420,
+        "bytes": 3709,
+        "sha256": "21547a343d18ce11f82e6f86d716d63e8a52e8480d40fdd81917d193aac9b444",
+        "git_blob_oid": "baeca5e3a22cf23d60141296a0d144a02493270d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/institut/announcements.ts",
+        "mode": 420,
+        "bytes": 1486,
+        "sha256": "911ae391c6728386d84f8e8160a4211f671afe4527dfe6ba5a2031578ee2b01d",
+        "git_blob_oid": "59105853333d84cd8471c895b1f1d2549c49876e",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/institut/audio-meetings.ts",
+        "mode": 420,
+        "bytes": 2481,
+        "sha256": "e16631c6c6ab3638e686a3a414722905c79c41865e56c76df61ac4fe4bf989aa",
+        "git_blob_oid": "c67b5e3ffa303e19e84f8321590537e7b6d22dc7",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/institut/audio.ts",
+        "mode": 420,
+        "bytes": 4590,
+        "sha256": "90a1aa86b3c91479cf2bb3dd23ad08943b4f7aa41419ce98a06c3a34ca462c0c",
+        "git_blob_oid": "3c8373aecde9f3226fed0a47f4aa0df4fb368956",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "lib/oracle.ts",
+        "mode": 420,
+        "bytes": 1128,
+        "sha256": "390894b9120870ad12c073d9d8c284b0bfd9c18d9cffc6461c3fec10eb71ee20",
+        "git_blob_oid": "b96055856ade3578c282314ffbc5c05ac8e3db15",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "scripts/upsert-sdgplus-verfassungsquellen.mjs",
+        "mode": 420,
+        "bytes": 11854,
+        "sha256": "15e85fa3183c4615713492708b4282d63208db87d09ab2df818c0bf9a4436885",
+        "git_blob_oid": "26207ab8ee43fd82265c344ec68a2a47947a9e20",
+        "review_reason": "Unique source-projection draft with substantive legal/factual text. Preserve privately for review only; it is not approved Fach, DNS or Recommendation content and must not be executed or projected by this audit.",
+        "projection_authorized": false,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0017_communication_hub.sql",
+        "mode": 420,
+        "bytes": 3189,
+        "sha256": "15408ffac085e8e74b9d2cf1ca6ae6828e35cd1a6195d9f053d3e16575dabc58",
+        "git_blob_oid": "9daf4e85ba4928752fc7e38c77018063ec9392be",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/migrations/institut_0018_audio_meetings.sql",
+        "mode": 420,
+        "bytes": 791,
+        "sha256": "18180dde636ece78567ccfd1654cb9fcb141673ffdf2eda31b03a9243a36ab0c",
+        "git_blob_oid": "5a527cd65914cb3ddfb499fd50a789aff4a1810d",
+        "review_reason": "The exact working blob is absent from current GitHub branches and pull-request commits and is not subsumed byte-for-byte by current Institut main. Preserve it in the private, exact-commit-bound issue-284 rescue archive for independent review; do not deploy or project it.",
+        "projection_authorized": null,
+        "public_distribution_authorized": null
+      },
+      {
+        "path": "supabase/seed/institut_quellenarchiv_intern.sql",
+        "mode": 420,
+        "bytes": 378660,
+        "sha256": "b99f7c262a167dbda3587296151320575ceabe555f2721592bcc8356bbb804e0",
+        "git_blob_oid": "d5a174bbb149d03df012e8d8f28a83ff070c0ed7",
+        "review_reason": "Unique internal source seed. Preserve only in the private Institut audit release; do not publish, import or project it from this audit.",
+        "projection_authorized": false,
+        "public_distribution_authorized": false
+      }
+    ]
+  }
+}

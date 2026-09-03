@@ -1,0 +1,2037 @@
+{
+  "metadata": {
+    "status": "published",
+    "last_updated": "2026-05-22",
+    "draft_exclusion_rule": "Nur Inhalte mit status published oder explicitly_approved_for_compass dürfen gerendert werden."
+  },
+  "answers": [
+    {
+      "id": "bio-apfel-guenstiger",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Ein Bio-Apfel wäre nicht automatisch günstiger, nur weil er bio ist. Er kann wirkungsökonomisch entlastet werden, wenn seine geprüfte Netto-Wirkung besser ist: etwa durch weniger Pestizide, geringere Transportemissionen, besseren Wasser- und Bodenschutz, faire Arbeit und bessere Biodiversitätswirkung.",
+          "one_sentence": "Bio allein reicht nicht; ein Produkt kann in der WÖk erst durch geprüfte positive Netto-Wirkung entlastet werden."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Ein Bio-Apfel wäre nicht automatisch günstiger, nur weil er bio ist. Er kann wirkungsökonomisch entlastet werden, wenn seine geprüfte Netto-Wirkung besser ist: etwa durch weniger Pestizide, geringere Transportemissionen, besseren Wasser- und Bodenschutz, faire Arbeit und bessere Biodiversitätswirkung. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Bio allein reicht nicht; ein Produkt kann in der WÖk erst durch geprüfte positive Netto-Wirkung entlastet werden."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Ein Bio-Apfel wäre nicht automatisch günstiger, nur weil er bio ist. Er kann wirkungsökonomisch entlastet werden, wenn seine geprüfte Netto-Wirkung besser ist: etwa durch weniger Pestizide, geringere Transportemissionen, besseren Wasser- und Bodenschutz, faire Arbeit und bessere Biodiversitätswirkung. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Bio allein reicht nicht; ein Produkt kann in der WÖk erst durch geprüfte positive Netto-Wirkung entlastet werden."
+        }
+      },
+      "impact_path_id": "bio-apfel-guenstiger",
+      "mpd": {
+        "Mensch": "Arbeit, Gesundheit und faire Produktionsbedingungen werden sichtbar.",
+        "Planet": "Boden, Wasser, Biodiversität, Pestizide und Transportemissionen werden bewertet.",
+        "Demokratie": "Transparente Daten stärken Vertrauen in Preissignale."
+      },
+      "sdg_relations": [
+        "SDG 2",
+        "SDG 6",
+        "SDG 8",
+        "SDG 12",
+        "SDG 13",
+        "SDG 15"
+      ],
+      "glossary_terms": [
+        "Wirkung",
+        "WÖk-ID",
+        "Scorecard",
+        "positive Netto-Wirkung",
+        "Reverse Merit Order",
+        "Wirkungssteuer"
+      ],
+      "related_cards": [
+        "Apfelbeispiel",
+        "Wirkungssteuer",
+        "WÖk-ID",
+        "Scorecard",
+        "Reverse Merit Order"
+      ],
+      "misunderstanding": "Bio allein ersetzt keine WÖk-Bewertung. Entscheidend ist die geprüfte positive Netto-Wirkung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        },
+        {
+          "type": "Beispiel",
+          "title": "Apfelbeispiel",
+          "url": "wissen/beispiele/",
+          "note": "zeigt produktbezogene Anwendung von Daten, WÖk-ID, Scorecard und Wirkungssteuer."
+        },
+        {
+          "type": "Methodikseite",
+          "title": "Daten, Standards und Regularien",
+          "url": "methodik/daten-standards-regularien.html",
+          "note": "ordnet Produktdaten, DPP, EPD und LCA als Datenquellen ein."
+        }
+      ]
+    },
+    {
+      "id": "desinformation-wirkung",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Desinformation wirkt nicht nur durch falsche Inhalte. Sie erzeugt Wirkungspotenziale: Misstrauen, Polarisierung, Feindbilder, sinkende Diskursfähigkeit und geschwächte demokratische Institutionen.",
+          "one_sentence": "Desinformation beschädigt nicht nur Wahrheit, sondern die gemeinsame Wirklichkeitsbasis demokratischer Entscheidungen."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Desinformation wirkt nicht nur durch falsche Inhalte. Sie erzeugt Wirkungspotenziale: Misstrauen, Polarisierung, Feindbilder, sinkende Diskursfähigkeit und geschwächte demokratische Institutionen. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Desinformation beschädigt nicht nur Wahrheit, sondern die gemeinsame Wirklichkeitsbasis demokratischer Entscheidungen."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Desinformation wirkt nicht nur durch falsche Inhalte. Sie erzeugt Wirkungspotenziale: Misstrauen, Polarisierung, Feindbilder, sinkende Diskursfähigkeit und geschwächte demokratische Institutionen. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Desinformation beschädigt nicht nur Wahrheit, sondern die gemeinsame Wirklichkeitsbasis demokratischer Entscheidungen."
+        }
+      },
+      "impact_path_id": "desinformation-wirkung",
+      "mpd": {
+        "Mensch": "Menschen können verunsichert, manipuliert oder gegeneinander aufgebracht werden.",
+        "Planet": "Klimabezogene Desinformation kann Transformationsfähigkeit schwächen.",
+        "Demokratie": "Vertrauen, Diskursfähigkeit, Medienqualität und Institutionen werden riskanter."
+      },
+      "sdg_relations": [
+        "SDG+ Medienqualität",
+        "SDG+ Diskursfähigkeit",
+        "SDG 16"
+      ],
+      "glossary_terms": [
+        "Desinformation",
+        "Wirkungspotenzial",
+        "Resonanzraum",
+        "Frame",
+        "SDG+",
+        "Wirkungsrisiko"
+      ],
+      "related_cards": [
+        "Medien & Demokratie",
+        "Wirkung politischer Sprache",
+        "SDG+"
+      ],
+      "misunderstanding": "Hier geht es um Wirkungspotenzial und Resonanzrisiko, nicht um eine automatisch nachgewiesene Einzelwirkung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        },
+        {
+          "type": "Website-Seite",
+          "title": "SDG+ Medien und Demokratie",
+          "url": "sdg-plus/medien-demokratie.html",
+          "note": "begründet demokratische Wirkungsfelder jenseits klassischer SDGs."
+        },
+        {
+          "type": "Website-Seite",
+          "title": "Wirkung politischer Sprache",
+          "url": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+          "note": "zeigt Sprache als Wirkpfad und Resonanzrisiko."
+        }
+      ]
+    },
+    {
+      "id": "woek-vs-esg",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "ESG macht Nachhaltigkeitsrisiken und Berichtsdaten sichtbar. Die Wirkungsökonomie geht weiter: Sie bewertet Wirkung am Referenzrahmen SDGs, Agenda 2030 und SDG+ und koppelt diese Bewertung in Preise, Steuern, Kapitalzugang, Beschaffung und Entscheidungen zurück.",
+          "one_sentence": "Reporting beschreibt. Wirkungsrückkopplung verändert."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "ESG macht Nachhaltigkeitsrisiken und Berichtsdaten sichtbar. Die Wirkungsökonomie geht weiter: Sie bewertet Wirkung am Referenzrahmen SDGs, Agenda 2030 und SDG+ und koppelt diese Bewertung in Preise, Steuern, Kapitalzugang, Beschaffung und Entscheidungen zurück. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Reporting beschreibt. Wirkungsrückkopplung verändert."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "ESG macht Nachhaltigkeitsrisiken und Berichtsdaten sichtbar. Die Wirkungsökonomie geht weiter: Sie bewertet Wirkung am Referenzrahmen SDGs, Agenda 2030 und SDG+ und koppelt diese Bewertung in Preise, Steuern, Kapitalzugang, Beschaffung und Entscheidungen zurück. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Reporting beschreibt. Wirkungsrückkopplung verändert."
+        }
+      },
+      "impact_path_id": "woek-vs-esg",
+      "mpd": {
+        "Mensch": "Soziale Daten werden nicht nur berichtet, sondern auf Wirkung geprüft.",
+        "Planet": "Umwelt- und Klimadaten werden in Netto-Wirkung eingeordnet.",
+        "Demokratie": "Governance wird um demokratische Wirkungsräume und SDG+ erweitert."
+      },
+      "sdg_relations": [
+        "SDG 8",
+        "SDG 12",
+        "SDG 13",
+        "SDG 16",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "ESG",
+        "CSRD",
+        "ESRS",
+        "Wirkungsbewertung",
+        "Netto-Wirkung",
+        "Wirkungsrückkopplung"
+      ],
+      "related_cards": [
+        "WÖk im Vergleich",
+        "Externe Quellen",
+        "Datenbasis und Methodik"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        },
+        {
+          "type": "Website-Seite",
+          "title": "Wirkungsökonomie im Vergleich",
+          "url": "vergleich.html",
+          "note": "grenzt WÖk von ESG, GWÖ, Donut, Wellbeing und Degrowth ab."
+        },
+        {
+          "type": "Externe Quelle",
+          "title": "CSRD / ESRS",
+          "url": "methodik/externe-quellen.html",
+          "note": "liefert Berichtsdaten und Standardanschluss, aber keine WÖk-Bewertung."
+        }
+      ]
+    },
+    {
+      "id": "wirkung-bedeutung",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Wirkung bedeutet in der WÖk eine tatsächliche Zustandsveränderung. Sie ist nicht automatisch positiv. Eine Wirkung kann Mensch, Planet oder Demokratie stärken, schwächen oder neutral bleiben. Bewertet wird sie am Referenzrahmen SDGs, Agenda 2030 und SDG+.",
+          "one_sentence": "Wirkung ist das, was sich tatsächlich verändert."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Wirkung bedeutet in der WÖk eine tatsächliche Zustandsveränderung. Sie ist nicht automatisch positiv. Eine Wirkung kann Mensch, Planet oder Demokratie stärken, schwächen oder neutral bleiben. Bewertet wird sie am Referenzrahmen SDGs, Agenda 2030 und SDG+. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Wirkung ist das, was sich tatsächlich verändert."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Wirkung bedeutet in der WÖk eine tatsächliche Zustandsveränderung. Sie ist nicht automatisch positiv. Eine Wirkung kann Mensch, Planet oder Demokratie stärken, schwächen oder neutral bleiben. Bewertet wird sie am Referenzrahmen SDGs, Agenda 2030 und SDG+. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Wirkung ist das, was sich tatsächlich verändert."
+        }
+      },
+      "impact_path_id": "wirkung-grundlogik",
+      "mpd": {
+        "Mensch": "Veränderungen an Würde, Gesundheit, Arbeit, Bildung, Sicherheit oder Teilhabe.",
+        "Planet": "Veränderungen an Klima, Wasser, Boden, Biodiversität und Ressourcen.",
+        "Demokratie": "Veränderungen an Vertrauen, Wahrheit, Rechtsstaat und Diskursfähigkeit."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+",
+        "Agenda 2030"
+      ],
+      "glossary_terms": [
+        "Wirkung",
+        "Wirkungspotenzial",
+        "Wirkungsbewertung",
+        "Referenzrahmen"
+      ],
+      "related_cards": [
+        "Glossar",
+        "Wirkungsökonomie verstehen",
+        "Methodik"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "positive-netto-wirkung",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Positive Netto-Wirkung entsteht, wenn positive und negative Wirkungen transparent bewertet werden und das Ergebnis Mensch, Planet und Demokratie stärkt. Einzelne gute Teilwirkungen dürfen schwere negative Wirkungen nicht verdecken.",
+          "one_sentence": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Positive Netto-Wirkung entsteht, wenn positive und negative Wirkungen transparent bewertet werden und das Ergebnis Mensch, Planet und Demokratie stärkt. Einzelne gute Teilwirkungen dürfen schwere negative Wirkungen nicht verdecken. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Positive Netto-Wirkung entsteht, wenn positive und negative Wirkungen transparent bewertet werden und das Ergebnis Mensch, Planet und Demokratie stärkt. Einzelne gute Teilwirkungen dürfen schwere negative Wirkungen nicht verdecken. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie."
+        }
+      },
+      "impact_path_id": "netto-wirkung",
+      "mpd": {
+        "Mensch": "Positive soziale Wirkungen und negative Belastungen werden zusammen betrachtet.",
+        "Planet": "Umweltwirkungen werden nicht isoliert, sondern im Gesamtprofil bewertet.",
+        "Demokratie": "Transparenz schützt vor Wirkungsblindheit und Wirkungswashing."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Netto-Wirkung",
+        "positive Netto-Wirkung",
+        "Reverse Merit Order",
+        "Wirkungsgrenze"
+      ],
+      "related_cards": [
+        "Scorecard",
+        "NWI",
+        "Reverse Merit Order"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "wirkungsrueckkopplung",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Wirkungsrückkopplung bedeutet: Eine Bewertung bleibt nicht im Bericht stehen, sondern wirkt in Entscheidungen zurück. Preise, Steuern, Kapitalzugang, Beschaffung oder Förderung verändern sich abhängig von geprüfter Wirkung.",
+          "one_sentence": "Wirkungsrückkopplung macht Bewertung entscheidungswirksam."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Wirkungsrückkopplung bedeutet: Eine Bewertung bleibt nicht im Bericht stehen, sondern wirkt in Entscheidungen zurück. Preise, Steuern, Kapitalzugang, Beschaffung oder Förderung verändern sich abhängig von geprüfter Wirkung. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Wirkungsrückkopplung macht Bewertung entscheidungswirksam."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Wirkungsrückkopplung bedeutet: Eine Bewertung bleibt nicht im Bericht stehen, sondern wirkt in Entscheidungen zurück. Preise, Steuern, Kapitalzugang, Beschaffung oder Förderung verändern sich abhängig von geprüfter Wirkung. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Wirkungsrückkopplung macht Bewertung entscheidungswirksam."
+        }
+      },
+      "impact_path_id": "produkt-rueckkopplung",
+      "mpd": {
+        "Mensch": "Bessere soziale Wirkung kann wirtschaftlich sichtbar werden.",
+        "Planet": "Planetare Schäden können belastet, regenerative Netto-Wirkung kann entlastet werden.",
+        "Demokratie": "Regeln und Daten machen Anreize nachvollziehbarer."
+      },
+      "sdg_relations": [
+        "SDG 8",
+        "SDG 12",
+        "SDG 13",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungsrückkopplung",
+        "Wirkungslenkung",
+        "Wirkungsarchitektur",
+        "Wirkungssteuer"
+      ],
+      "related_cards": [
+        "Workflow",
+        "Wirkungssteuer",
+        "Datenbasis"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "woek-id",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Eine WÖk-ID ist eine strukturierte Zuordnung, mit der Daten, Produktmerkmale oder Aktivitäten einem Wirkungsfeld, einer Bewertungslogik und einer Scorecard zugeordnet werden können. Sie ist kein Siegel, sondern ein Ordnungs- und Mappinginstrument.",
+          "one_sentence": "Die WÖk-ID macht Wirkungsdaten anschlussfähig."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Eine WÖk-ID ist eine strukturierte Zuordnung, mit der Daten, Produktmerkmale oder Aktivitäten einem Wirkungsfeld, einer Bewertungslogik und einer Scorecard zugeordnet werden können. Sie ist kein Siegel, sondern ein Ordnungs- und Mappinginstrument. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Die WÖk-ID macht Wirkungsdaten anschlussfähig."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Eine WÖk-ID ist eine strukturierte Zuordnung, mit der Daten, Produktmerkmale oder Aktivitäten einem Wirkungsfeld, einer Bewertungslogik und einer Scorecard zugeordnet werden können. Sie ist kein Siegel, sondern ein Ordnungs- und Mappinginstrument. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Die WÖk-ID macht Wirkungsdaten anschlussfähig."
+        }
+      },
+      "impact_path_id": "produkt-rueckkopplung",
+      "mpd": {
+        "Mensch": "Soziale Daten werden eindeutig zuordenbar.",
+        "Planet": "Produkt-, Material- und Emissionsdaten werden strukturierbar.",
+        "Demokratie": "Nachvollziehbare IDs stärken Prüfbarkeit."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "WÖk-ID",
+        "Produktdaten",
+        "Scorecard",
+        "Datenqualität"
+      ],
+      "related_cards": [
+        "DPP",
+        "Scorecard",
+        "Wirkungsdaten"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "scorecard-steuerklasse",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Aus Daten entsteht zunächst eine Scorecard. Daraus wird eine Netto-Wirkung und Wirkungsklasse. Erst daraus kann eine Steuerklasse abgeleitet werden. Schwere negative Wirkungen dürfen nicht einfach durch gute Werte an anderer Stelle ausgeglichen werden.",
+          "one_sentence": "Von der Scorecard zur Steuerklasse führt der Weg über Netto-Wirkung, Schutzregeln und Rückkopplung."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Aus Daten entsteht zunächst eine Scorecard. Daraus wird eine Netto-Wirkung und Wirkungsklasse. Erst daraus kann eine Steuerklasse abgeleitet werden. Schwere negative Wirkungen dürfen nicht einfach durch gute Werte an anderer Stelle ausgeglichen werden. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Von der Scorecard zur Steuerklasse führt der Weg über Netto-Wirkung, Schutzregeln und Rückkopplung."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Aus Daten entsteht zunächst eine Scorecard. Daraus wird eine Netto-Wirkung und Wirkungsklasse. Erst daraus kann eine Steuerklasse abgeleitet werden. Schwere negative Wirkungen dürfen nicht einfach durch gute Werte an anderer Stelle ausgeglichen werden. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Von der Scorecard zur Steuerklasse führt der Weg über Netto-Wirkung, Schutzregeln und Rückkopplung."
+        }
+      },
+      "impact_path_id": "produkt-rueckkopplung",
+      "mpd": {
+        "Mensch": "Soziale Mindestbedingungen und Risiken fließen ein.",
+        "Planet": "Umweltwerte und Grenzen werden berücksichtigt.",
+        "Demokratie": "Regelbasierte Bewertung verhindert Beliebigkeit."
+      },
+      "sdg_relations": [
+        "SDG 8",
+        "SDG 12",
+        "SDG 13",
+        "SDG 15"
+      ],
+      "glossary_terms": [
+        "Scorecard",
+        "NWI",
+        "Reverse Merit Order",
+        "Steuerklasse",
+        "Wirkungsgrenze"
+      ],
+      "related_cards": [
+        "Workflow",
+        "Scorecard-Demo",
+        "Wirkungssteuer"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "gemeinwohl-vergleich",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Gemeinwohlökonomie und WÖk teilen die Frage nach Verantwortung. Die GWÖ arbeitet stark mit Gemeinwohlbilanz und Werteorientierung. Die WÖk geht darüber hinaus, indem sie Wirkung in Datenräume, WÖk-IDs, Scorecards, Preise, Steuern, Kapitalzugang und Rückkopplung übersetzt.",
+          "one_sentence": "GWÖ bilanziert Gemeinwohl; WÖk koppelt Wirkung systemisch zurück."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Gemeinwohlökonomie und WÖk teilen die Frage nach Verantwortung. Die GWÖ arbeitet stark mit Gemeinwohlbilanz und Werteorientierung. Die WÖk geht darüber hinaus, indem sie Wirkung in Datenräume, WÖk-IDs, Scorecards, Preise, Steuern, Kapitalzugang und Rückkopplung übersetzt. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "GWÖ bilanziert Gemeinwohl; WÖk koppelt Wirkung systemisch zurück."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Gemeinwohlökonomie und WÖk teilen die Frage nach Verantwortung. Die GWÖ arbeitet stark mit Gemeinwohlbilanz und Werteorientierung. Die WÖk geht darüber hinaus, indem sie Wirkung in Datenräume, WÖk-IDs, Scorecards, Preise, Steuern, Kapitalzugang und Rückkopplung übersetzt. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "GWÖ bilanziert Gemeinwohl; WÖk koppelt Wirkung systemisch zurück."
+        }
+      },
+      "impact_path_id": "vergleich-rueckkopplung",
+      "mpd": {
+        "Mensch": "Beide betrachten soziale Verantwortung.",
+        "Planet": "Beide nehmen ökologische Grenzen ernst.",
+        "Demokratie": "WÖk macht Demokratie als eigenen Wirkungsraum stärker sichtbar."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Gemeinwohlökonomie",
+        "Wirkungsrückkopplung",
+        "Wirkungsarchitektur"
+      ],
+      "related_cards": [
+        "WÖk im Vergleich",
+        "Alternative Modelle"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "donut-vergleich",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die Donut-Ökonomie beschreibt einen Zielraum zwischen sozialem Fundament und planetaren Grenzen. Die WÖk nutzt solche Zielräume, ergänzt aber eine operative Architektur: Daten, Scorecards, WÖk-IDs, Rückkopplung, Wirkungsgrenzen und Entscheidungen.",
+          "one_sentence": "Der Donut zeigt den Zielraum; die WÖk baut die Rückkopplungslogik."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die Donut-Ökonomie beschreibt einen Zielraum zwischen sozialem Fundament und planetaren Grenzen. Die WÖk nutzt solche Zielräume, ergänzt aber eine operative Architektur: Daten, Scorecards, WÖk-IDs, Rückkopplung, Wirkungsgrenzen und Entscheidungen. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Der Donut zeigt den Zielraum; die WÖk baut die Rückkopplungslogik."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die Donut-Ökonomie beschreibt einen Zielraum zwischen sozialem Fundament und planetaren Grenzen. Die WÖk nutzt solche Zielräume, ergänzt aber eine operative Architektur: Daten, Scorecards, WÖk-IDs, Rückkopplung, Wirkungsgrenzen und Entscheidungen. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Der Donut zeigt den Zielraum; die WÖk baut die Rückkopplungslogik."
+        }
+      },
+      "impact_path_id": "vergleich-rueckkopplung",
+      "mpd": {
+        "Mensch": "Soziales Fundament ist anschlussfähig.",
+        "Planet": "Planetare Grenzen sind zentral.",
+        "Demokratie": "WÖk ergänzt demokratische Stabilität über SDG+."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+",
+        "planetare Grenzen"
+      ],
+      "glossary_terms": [
+        "Donut-Ökonomie",
+        "Wirkungsarchitektur",
+        "SDG+"
+      ],
+      "related_cards": [
+        "WÖk im Vergleich",
+        "Revival Monitor"
+      ],
+      "misunderstanding": "",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "scanner-vorbereitung",
+      "status": "published",
+      "confidence_notice": "wirkungsanalytische Einordnung, keine amtliche Bewertung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Der WÖk-Scanner ist als wirkungsökonomischer Orientierungseinstieg angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenlage, SDG-/SDG+-Bezug, Wirkungspfad, Quellen und Unsicherheit ein. Er liefert keine amtliche oder rechnerische Bewertung.",
+          "one_sentence": "Der Scanner ist ein Analysewerkzeug, keine Bewertungsmaschine."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Der WÖk-Scanner ist als wirkungsökonomischer Orientierungseinstieg angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenbedarf, Zielkonflikten und Grenzen. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "one_sentence": "Der Scanner ist ein Analysewerkzeug, keine Bewertungsmaschine."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Der WÖk-Scanner ist als wirkungsökonomischer Orientierungseinstieg angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenbedarf, Zielkonflikten und Grenzen. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "one_sentence": "Der Scanner ist ein Analysewerkzeug, keine Bewertungsmaschine."
+        }
+      },
+      "impact_path_id": "scanner-vorbereitung",
+      "mpd": {
+        "Mensch": "zeigt mögliche soziale Wirkungsfelder und Datenbedarf.",
+        "Planet": "zeigt mögliche ökologische Wirkungsfelder und Zielkonflikte.",
+        "Demokratie": "zeigt mögliche demokratische Wirkungsfelder und Resonanzrisiken."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungsanalyse",
+        "Datenbedarf",
+        "Wirkungspotenzial",
+        "Wirkungsgrenze"
+      ],
+      "related_cards": [
+        "Scanner-Modus",
+        "Wirkungsanalyse",
+        "WÖk-Kompass"
+      ],
+      "misunderstanding": "Scanner-Ergebnisse sind Ersteinschätzungen. Keine amtliche Bewertung, keine finale Steuerklasse und keine Zertifizierung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt fest, dass Wirkung neutral und relational ist; positive Wirkung liegt vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+        },
+        {
+          "type": "WÖk-Scanner",
+          "title": "WÖk-Scanner",
+          "url": "scanner.html",
+          "note": "zeigt die konzipierte Scanner-Oberfläche mit Modi, Datenqualität, Demo-Scans und Grenzen der Analyse."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "klärt zentrale Begriffe wie Wirkung, Wirkungspotenzial, Netto-Wirkung, Scorecard und Wirkungsrückkopplung."
+        }
+      ]
+    },
+    {
+      "id": "woek-kein-links-gruen",
+      "status": "published",
+      "confidence_notice": "ordnungspolitische Einordnung, keine Parteiwertung und keine Wahlempfehlung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die WÖk ist kein links-grünes Parteiprogramm, weil Markt, Eigentum, Wettbewerb, Gewinn, Kapital und dezentrale Entscheidung erhalten bleiben. Sie will keine zentrale Produktionsplanung, keine Gesinnungsprüfung und keine Personenbewertung. Sie korrigiert blinde Signale: Preise, Steuern und Kapitalflüsse sollen Wirkung besser abbilden.",
+          "one_sentence": "Die WÖk ersetzt keine Freiheit durch Kontrolle, sondern blinde Signale durch wirklichkeitsfähige Signale."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die WÖk ist kein links-grünes Parteiprogramm, weil Markt, Eigentum, Wettbewerb, Gewinn, Kapital und dezentrale Entscheidung erhalten bleiben. Sie will keine zentrale Produktionsplanung, keine Gesinnungsprüfung und keine Personenbewertung. Sie korrigiert blinde Signale: Preise, Steuern und Kapitalflüsse sollen Wirkung besser abbilden. Fachlich nutzt die WÖk SDGs, Agenda 2030 und SDG+ als Referenzrahmen und übersetzt Wirkung in Daten, Scorecards, WÖk-IDs, Reverse Merit Order und Rückkopplung.",
+          "one_sentence": "Die WÖk ersetzt keine Freiheit durch Kontrolle, sondern blinde Signale durch wirklichkeitsfähige Signale."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die WÖk ist kein links-grünes Parteiprogramm, weil Markt, Eigentum, Wettbewerb, Gewinn, Kapital und dezentrale Entscheidung erhalten bleiben. Sie will keine zentrale Produktionsplanung, keine Gesinnungsprüfung und keine Personenbewertung. Sie korrigiert blinde Signale: Preise, Steuern und Kapitalflüsse sollen Wirkung besser abbilden. Systemisch geht es um Rückkopplungen: Preise, Steuern, Kapital, Medien, öffentliche Haushalte und Institutionen sollen reale Folgen besser abbilden.",
+          "one_sentence": "Die WÖk ersetzt keine Freiheit durch Kontrolle, sondern blinde Signale durch wirklichkeitsfähige Signale."
+        }
+      },
+      "impact_path_id": "ordnung-kein-links-gruen",
+      "mpd": {
+        "Mensch": "soziale Sicherheit, faire Arbeit und Teilhabe bleiben zentrale Wirkungsräume.",
+        "Planet": "planetare Grenzen, Klima und Biodiversität werden in den Ordnungsrahmen aufgenommen.",
+        "Demokratie": "Rechtsstaat, Vertrauen, Medienqualität und demokratische Korrekturfähigkeit werden als Wirkungsräume sichtbar."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungswahrheit",
+        "Wirkungsrückkopplung",
+        "SDG+",
+        "Externalität"
+      ],
+      "related_cards": [
+        "Kein links-grünes Programm",
+        "Ordnungsupdate",
+        "WÖk in 5 Entkräftungen"
+      ],
+      "misunderstanding": "Keine Planwirtschaft, keine Gesinnungsbewertung, keine Personen-Scores und keine Wahlempfehlung.",
+      "sources": [
+        {
+          "type": "WÖk-Themenraum",
+          "title": "Warum die Wirkungsökonomie kein links-grünes Ideologieprogramm ist",
+          "url": "ordnung/kein-links-gruenes-programm.html",
+          "note": "ordnet die Wirkungsökonomie als demokratisch anschlussfähiges Ordnungsupdate ein."
+        },
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt die Unterscheidung von Wirkung, Wirkungspotenzial, Bewertung, Netto-Wirkung und Rückkopplung fest."
+        }
+      ]
+    },
+    {
+      "id": "woek-soziale-marktwirtschaft",
+      "status": "published",
+      "confidence_notice": "ordnungspolitische Einordnung, keine Parteiwertung und keine Wahlempfehlung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die WÖk bricht nicht mit der Sozialen Marktwirtschaft. Sie aktualisiert ihren Ordnungsauftrag für planetare Grenzen, digitale Öffentlichkeit, globale Lieferketten, Automatisierung und demokratische Verwundbarkeit. Aus Markt plus sozialem Ausgleich wird Markt plus soziale Sicherheit, planetare Stabilität und demokratische Korrekturfähigkeit.",
+          "one_sentence": "Die WÖk ist das Ordnungsupdate der Sozialen Marktwirtschaft."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die WÖk bricht nicht mit der Sozialen Marktwirtschaft. Sie aktualisiert ihren Ordnungsauftrag für planetare Grenzen, digitale Öffentlichkeit, globale Lieferketten, Automatisierung und demokratische Verwundbarkeit. Aus Markt plus sozialem Ausgleich wird Markt plus soziale Sicherheit, planetare Stabilität und demokratische Korrekturfähigkeit. Fachlich nutzt die WÖk SDGs, Agenda 2030 und SDG+ als Referenzrahmen und übersetzt Wirkung in Daten, Scorecards, WÖk-IDs, Reverse Merit Order und Rückkopplung.",
+          "one_sentence": "Die WÖk ist das Ordnungsupdate der Sozialen Marktwirtschaft."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die WÖk bricht nicht mit der Sozialen Marktwirtschaft. Sie aktualisiert ihren Ordnungsauftrag für planetare Grenzen, digitale Öffentlichkeit, globale Lieferketten, Automatisierung und demokratische Verwundbarkeit. Aus Markt plus sozialem Ausgleich wird Markt plus soziale Sicherheit, planetare Stabilität und demokratische Korrekturfähigkeit. Systemisch geht es um Rückkopplungen: Preise, Steuern, Kapital, Medien, öffentliche Haushalte und Institutionen sollen reale Folgen besser abbilden.",
+          "one_sentence": "Die WÖk ist das Ordnungsupdate der Sozialen Marktwirtschaft."
+        }
+      },
+      "impact_path_id": "ordnung-soziale-marktwirtschaft",
+      "mpd": {
+        "Mensch": "soziale Sicherheit, faire Arbeit und Teilhabe bleiben zentrale Wirkungsräume.",
+        "Planet": "planetare Grenzen, Klima und Biodiversität werden in den Ordnungsrahmen aufgenommen.",
+        "Demokratie": "Rechtsstaat, Vertrauen, Medienqualität und demokratische Korrekturfähigkeit werden als Wirkungsräume sichtbar."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Soziale Marktwirtschaft",
+        "Wirkungsordnung",
+        "Wirkungsrat",
+        "Reverse Merit Order"
+      ],
+      "related_cards": [
+        "Soziale Marktwirtschaft weiterdenken",
+        "Ordnung",
+        "Modell"
+      ],
+      "misunderstanding": "Keine Planwirtschaft, keine Gesinnungsbewertung, keine Personen-Scores und keine Wahlempfehlung.",
+      "sources": [
+        {
+          "type": "WÖk-Themenraum",
+          "title": "Die Soziale Marktwirtschaft weiterdenken",
+          "url": "ordnung/soziale-marktwirtschaft-weiterdenken.html",
+          "note": "ordnet die Wirkungsökonomie als demokratisch anschlussfähiges Ordnungsupdate ein."
+        },
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt die Unterscheidung von Wirkung, Wirkungspotenzial, Bewertung, Netto-Wirkung und Rückkopplung fest."
+        }
+      ]
+    },
+    {
+      "id": "demokratische-parteien-wirkung",
+      "status": "published",
+      "confidence_notice": "ordnungspolitische Einordnung, keine Parteiwertung und keine Wahlempfehlung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Demokratische Parteien müssen nicht dieselben Antworten geben. Aber sie können Programme nach demselben Wirkungsmaßstab prüfen: Welche Wirkung entsteht für Mensch, Planet und Demokratie? Die WÖk gibt keine Wahlempfehlung und bewertet keine Gesinnung. Sie zeigt Wirkungspfade, Datenlage, Zielkonflikte, Folgekosten und Rückkopplungen.",
+          "one_sentence": "Die WÖk entscheidet nicht, welche Partei recht hat; sie macht Wirkung sichtbar."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Demokratische Parteien müssen nicht dieselben Antworten geben. Aber sie können Programme nach demselben Wirkungsmaßstab prüfen: Welche Wirkung entsteht für Mensch, Planet und Demokratie? Die WÖk gibt keine Wahlempfehlung und bewertet keine Gesinnung. Sie zeigt Wirkungspfade, Datenlage, Zielkonflikte, Folgekosten und Rückkopplungen. Fachlich nutzt die WÖk SDGs, Agenda 2030 und SDG+ als Referenzrahmen und übersetzt Wirkung in Daten, Scorecards, WÖk-IDs, Reverse Merit Order und Rückkopplung.",
+          "one_sentence": "Die WÖk entscheidet nicht, welche Partei recht hat; sie macht Wirkung sichtbar."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Demokratische Parteien müssen nicht dieselben Antworten geben. Aber sie können Programme nach demselben Wirkungsmaßstab prüfen: Welche Wirkung entsteht für Mensch, Planet und Demokratie? Die WÖk gibt keine Wahlempfehlung und bewertet keine Gesinnung. Sie zeigt Wirkungspfade, Datenlage, Zielkonflikte, Folgekosten und Rückkopplungen. Systemisch geht es um Rückkopplungen: Preise, Steuern, Kapital, Medien, öffentliche Haushalte und Institutionen sollen reale Folgen besser abbilden.",
+          "one_sentence": "Die WÖk entscheidet nicht, welche Partei recht hat; sie macht Wirkung sichtbar."
+        }
+      },
+      "impact_path_id": "ordnung-demokratische-parteien",
+      "mpd": {
+        "Mensch": "soziale Sicherheit, faire Arbeit und Teilhabe bleiben zentrale Wirkungsräume.",
+        "Planet": "planetare Grenzen, Klima und Biodiversität werden in den Ordnungsrahmen aufgenommen.",
+        "Demokratie": "Rechtsstaat, Vertrauen, Medienqualität und demokratische Korrekturfähigkeit werden als Wirkungsräume sichtbar."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wahlprogramm-Scanner",
+        "Wirkungspfad",
+        "Zielkonflikt",
+        "Nicht-Kompensation"
+      ],
+      "related_cards": [
+        "Demokratische Anschlussfähigkeit",
+        "Für Politik",
+        "WÖk-Scanner"
+      ],
+      "misunderstanding": "Keine Planwirtschaft, keine Gesinnungsbewertung, keine Personen-Scores und keine Wahlempfehlung.",
+      "sources": [
+        {
+          "type": "WÖk-Themenraum",
+          "title": "Warum demokratische Parteien sich auf Wirkung einigen könnten",
+          "url": "ordnung/demokratische-anschlussfaehigkeit.html",
+          "note": "ordnet die Wirkungsökonomie als demokratisch anschlussfähiges Ordnungsupdate ein."
+        },
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "legt die Unterscheidung von Wirkung, Wirkungspotenzial, Bewertung, Netto-Wirkung und Rückkopplung fest."
+        }
+      ]
+    },
+    {
+      "id": "fuer-unternehmen",
+      "status": "published",
+      "confidence_notice": "zielgruppenspezifische Einordnung, keine Rechts-, Steuer-, Anlage- oder Leistungsberatung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Für Unternehmen wird Wirkung zur Grundlage resilienter Führung. Gewinn bleibt möglich, wird aber als Ergebnis tragfähiger Wirkung verstanden.",
+          "one_sentence": "Wirkung wird zur Management- und Resilienzfrage."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Für Unternehmen wird Wirkung zur Grundlage resilienter Führung. Gewinn bleibt möglich, wird aber als Ergebnis tragfähiger Wirkung verstanden. Fachlich geht es um Daten, Wirkungsfelder, Scorecards, Zielkonflikte, Rückkopplung und Quellenstand.",
+          "one_sentence": "Wirkung wird zur Management- und Resilienzfrage."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Für Unternehmen wird Wirkung zur Grundlage resilienter Führung. Gewinn bleibt möglich, wird aber als Ergebnis tragfähiger Wirkung verstanden. Systemisch fragt die WÖk, wie Entscheidungen in Preise, Steuern, Kapital, Haushalte, Medien oder Institutionen zurückwirken.",
+          "one_sentence": "Wirkung wird zur Management- und Resilienzfrage."
+        }
+      },
+      "impact_path_id": "zielgruppe-unternehmen",
+      "mpd": {
+        "Mensch": "soziale Sicherheit, Arbeit, Wohnen, Gesundheit und Teilhabe.",
+        "Planet": "Klima, Biodiversität, Ressourcen, Energie und Kreisläufe.",
+        "Demokratie": "Vertrauen, Transparenz, Diskursfähigkeit, Rechtsstaat und Korrekturfähigkeit."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungsorientierte Unternehmensführung",
+        "Scorecard",
+        "WÖk-ID",
+        "Wirkungsrisiko"
+      ],
+      "related_cards": [
+        "Zielgruppen-Hub",
+        "WÖk-Scanner",
+        "WÖk-Kompass"
+      ],
+      "misunderstanding": "Keine falschen Versprechen, keine ungeprüften Zahlen, keine moralische Überforderung.",
+      "sources": [
+        {
+          "type": "Zielgruppen-Seite",
+          "title": "fuer/unternehmen.html",
+          "url": "fuer/unternehmen.html",
+          "note": "zeigt den zielgruppenspezifischen Einstieg mit Status und Grenzen."
+        },
+        {
+          "type": "Regel",
+          "title": "Zahlen und Modellrechnungen",
+          "url": "docs/woek-zahlen-und-modellrechnungen-regel.md",
+          "note": "konkrete Zahlen nur mit freigegebener Modellrechnung oder offizieller Quelle."
+        }
+      ]
+    },
+    {
+      "id": "fuer-politik",
+      "status": "published",
+      "confidence_notice": "zielgruppenspezifische Einordnung, keine Rechts-, Steuer-, Anlage- oder Leistungsberatung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Für Politik und Verwaltung wird Wirkung zur Grundlage besserer Steuerung: Gesetze, Haushalte und Programme werden nach Wirkungspfaden, Datenbasis und Folgekosten geprüft.",
+          "one_sentence": "Politik plant nicht alles zentral, sondern setzt bessere Signale."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Für Politik und Verwaltung wird Wirkung zur Grundlage besserer Steuerung: Gesetze, Haushalte und Programme werden nach Wirkungspfaden, Datenbasis und Folgekosten geprüft. Fachlich geht es um Daten, Wirkungsfelder, Scorecards, Zielkonflikte, Rückkopplung und Quellenstand.",
+          "one_sentence": "Politik plant nicht alles zentral, sondern setzt bessere Signale."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Für Politik und Verwaltung wird Wirkung zur Grundlage besserer Steuerung: Gesetze, Haushalte und Programme werden nach Wirkungspfaden, Datenbasis und Folgekosten geprüft. Systemisch fragt die WÖk, wie Entscheidungen in Preise, Steuern, Kapital, Haushalte, Medien oder Institutionen zurückwirken.",
+          "one_sentence": "Politik plant nicht alles zentral, sondern setzt bessere Signale."
+        }
+      },
+      "impact_path_id": "zielgruppe-politik",
+      "mpd": {
+        "Mensch": "soziale Sicherheit, Arbeit, Wohnen, Gesundheit und Teilhabe.",
+        "Planet": "Klima, Biodiversität, Ressourcen, Energie und Kreisläufe.",
+        "Demokratie": "Vertrauen, Transparenz, Diskursfähigkeit, Rechtsstaat und Korrekturfähigkeit."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungshaushalt",
+        "Wirkungsrat",
+        "Wirkungsprüfung",
+        "SDG+"
+      ],
+      "related_cards": [
+        "Zielgruppen-Hub",
+        "WÖk-Scanner",
+        "WÖk-Kompass"
+      ],
+      "misunderstanding": "Keine falschen Versprechen, keine ungeprüften Zahlen, keine moralische Überforderung.",
+      "sources": [
+        {
+          "type": "Zielgruppen-Seite",
+          "title": "fuer/politik.html",
+          "url": "fuer/politik.html",
+          "note": "zeigt den zielgruppenspezifischen Einstieg mit Status und Grenzen."
+        },
+        {
+          "type": "Regel",
+          "title": "Zahlen und Modellrechnungen",
+          "url": "docs/woek-zahlen-und-modellrechnungen-regel.md",
+          "note": "konkrete Zahlen nur mit freigegebener Modellrechnung oder offizieller Quelle."
+        }
+      ]
+    },
+    {
+      "id": "fuer-buergerinnen",
+      "status": "published",
+      "confidence_notice": "zielgruppenspezifische Einordnung, keine Rechts-, Steuer-, Anlage- oder Leistungsberatung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Für Bürger:innen bedeutet die WÖk mehr Transparenz, ehrlichere Preise und weniger moralische Überforderung. Verantwortung wird ins System zurückgeführt.",
+          "one_sentence": "Nicht jede Person muss alles perfekt machen; das System braucht bessere Signale."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Für Bürger:innen bedeutet die WÖk mehr Transparenz, ehrlichere Preise und weniger moralische Überforderung. Verantwortung wird ins System zurückgeführt. Fachlich geht es um Daten, Wirkungsfelder, Scorecards, Zielkonflikte, Rückkopplung und Quellenstand.",
+          "one_sentence": "Nicht jede Person muss alles perfekt machen; das System braucht bessere Signale."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Für Bürger:innen bedeutet die WÖk mehr Transparenz, ehrlichere Preise und weniger moralische Überforderung. Verantwortung wird ins System zurückgeführt. Systemisch fragt die WÖk, wie Entscheidungen in Preise, Steuern, Kapital, Haushalte, Medien oder Institutionen zurückwirken.",
+          "one_sentence": "Nicht jede Person muss alles perfekt machen; das System braucht bessere Signale."
+        }
+      },
+      "impact_path_id": "zielgruppe-buerger",
+      "mpd": {
+        "Mensch": "soziale Sicherheit, Arbeit, Wohnen, Gesundheit und Teilhabe.",
+        "Planet": "Klima, Biodiversität, Ressourcen, Energie und Kreisläufe.",
+        "Demokratie": "Vertrauen, Transparenz, Diskursfähigkeit, Rechtsstaat und Korrekturfähigkeit."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungswahrheit",
+        "Produktwirkung",
+        "Desinformation",
+        "positive Netto-Wirkung"
+      ],
+      "related_cards": [
+        "Zielgruppen-Hub",
+        "WÖk-Scanner",
+        "WÖk-Kompass"
+      ],
+      "misunderstanding": "Keine falschen Versprechen, keine ungeprüften Zahlen, keine moralische Überforderung.",
+      "sources": [
+        {
+          "type": "Zielgruppen-Seite",
+          "title": "fuer/buergerinnen.html",
+          "url": "fuer/buergerinnen.html",
+          "note": "zeigt den zielgruppenspezifischen Einstieg mit Status und Grenzen."
+        },
+        {
+          "type": "Regel",
+          "title": "Zahlen und Modellrechnungen",
+          "url": "docs/woek-zahlen-und-modellrechnungen-regel.md",
+          "note": "konkrete Zahlen nur mit freigegebener Modellrechnung oder offizieller Quelle."
+        }
+      ]
+    },
+    {
+      "id": "fuer-rente-einkommen",
+      "status": "published",
+      "confidence_notice": "zielgruppenspezifische Einordnung, keine Rechts-, Steuer-, Anlage- oder Leistungsberatung",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Für Rente und Einkommen ist die WÖk ein vorsichtiger Modellraum: Automatisierung, Demografie und gesellschaftlicher Beitrag werden neu zusammengedacht, aber ohne ungeprüfte Leistungsversprechen.",
+          "one_sentence": "Rente und Einkommen brauchen Modellrechnungen, keine Fantasiezahlen."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Für Rente und Einkommen ist die WÖk ein vorsichtiger Modellraum: Automatisierung, Demografie und gesellschaftlicher Beitrag werden neu zusammengedacht, aber ohne ungeprüfte Leistungsversprechen. Fachlich geht es um Daten, Wirkungsfelder, Scorecards, Zielkonflikte, Rückkopplung und Quellenstand.",
+          "one_sentence": "Rente und Einkommen brauchen Modellrechnungen, keine Fantasiezahlen."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Für Rente und Einkommen ist die WÖk ein vorsichtiger Modellraum: Automatisierung, Demografie und gesellschaftlicher Beitrag werden neu zusammengedacht, aber ohne ungeprüfte Leistungsversprechen. Systemisch fragt die WÖk, wie Entscheidungen in Preise, Steuern, Kapital, Haushalte, Medien oder Institutionen zurückwirken.",
+          "one_sentence": "Rente und Einkommen brauchen Modellrechnungen, keine Fantasiezahlen."
+        }
+      },
+      "impact_path_id": "zielgruppe-rente-einkommen",
+      "mpd": {
+        "Mensch": "soziale Sicherheit, Arbeit, Wohnen, Gesundheit und Teilhabe.",
+        "Planet": "Klima, Biodiversität, Ressourcen, Energie und Kreisläufe.",
+        "Demokratie": "Vertrauen, Transparenz, Diskursfähigkeit, Rechtsstaat und Korrekturfähigkeit."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungseinkommen",
+        "Rente",
+        "Automatisierung",
+        "Modellrechnung"
+      ],
+      "related_cards": [
+        "Zielgruppen-Hub",
+        "WÖk-Scanner",
+        "WÖk-Kompass"
+      ],
+      "misunderstanding": "Keine falschen Versprechen, keine ungeprüften Zahlen, keine moralische Überforderung.",
+      "sources": [
+        {
+          "type": "Zielgruppen-Seite",
+          "title": "fuer/rente.html",
+          "url": "fuer/rente.html",
+          "note": "zeigt den zielgruppenspezifischen Einstieg mit Status und Grenzen."
+        },
+        {
+          "type": "Regel",
+          "title": "Zahlen und Modellrechnungen",
+          "url": "docs/woek-zahlen-und-modellrechnungen-regel.md",
+          "note": "konkrete Zahlen nur mit freigegebener Modellrechnung oder offizieller Quelle."
+        }
+      ]
+    },
+    {
+      "id": "wirkungspotenzial",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung entsteht. Es ist noch keine eingetretene Zustandsveränderung. In der WÖk wird deshalb sauber getrennt zwischen Auslöser, plausibler Wirkungsmöglichkeit, Datenlage und tatsächlich nachgewiesener Wirkung.",
+          "one_sentence": "Wirkungspotenzial ist Möglichkeit, nicht Nachweis."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung entsteht. Es ist noch keine eingetretene Zustandsveränderung. In der WÖk wird deshalb sauber getrennt zwischen Auslöser, plausibler Wirkungsmöglichkeit, Datenlage und tatsächlich nachgewiesener Wirkung. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Wirkungspotenzial ist Möglichkeit, nicht Nachweis."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung entsteht. Es ist noch keine eingetretene Zustandsveränderung. In der WÖk wird deshalb sauber getrennt zwischen Auslöser, plausibler Wirkungsmöglichkeit, Datenlage und tatsächlich nachgewiesener Wirkung. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Wirkungspotenzial ist Möglichkeit, nicht Nachweis."
+        }
+      },
+      "impact_path_id": "wirkungspotenzial-path",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDG+",
+        "Wirkungsrisiko"
+      ],
+      "glossary_terms": [
+        "Wirkungspotenzial",
+        "Wirkung",
+        "Wirkungsrisiko",
+        "Resonanzraum"
+      ],
+      "related_cards": [
+        "Wirkungspotenzial",
+        "Wirkung",
+        "Wirkungsrisiko",
+        "Resonanzraum"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "sdg-plus",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "SDG+ erweitert den Referenzrahmen der SDGs um demokratische Wirkungsräume wie Wahrheit, Vertrauen, Öffentlichkeit, Resonanzräume, Rückkopplung und institutionelle Stabilität.",
+          "one_sentence": "SDG+ macht Demokratie als Wirkungsraum sichtbar."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "SDG+ erweitert den Referenzrahmen der SDGs um demokratische Wirkungsräume wie Wahrheit, Vertrauen, Öffentlichkeit, Resonanzräume, Rückkopplung und institutionelle Stabilität. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "SDG+ macht Demokratie als Wirkungsraum sichtbar."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "SDG+ erweitert den Referenzrahmen der SDGs um demokratische Wirkungsräume wie Wahrheit, Vertrauen, Öffentlichkeit, Resonanzräume, Rückkopplung und institutionelle Stabilität. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "SDG+ macht Demokratie als Wirkungsraum sichtbar."
+        }
+      },
+      "impact_path_id": "sdg-plus-path",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDG 16",
+        "SDG+ Medienqualität"
+      ],
+      "glossary_terms": [
+        "SDG+",
+        "Demokratie",
+        "Resonanzraum",
+        "Wirkungsbewertung"
+      ],
+      "related_cards": [
+        "SDG+",
+        "Demokratie",
+        "Resonanzraum",
+        "Wirkungsbewertung"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "woek-funktionsweise",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die Wirkungsökonomie verbindet Daten, Wirkungsbewertung, Schutzregeln und Rückkopplung. Wirkung wird nicht nur berichtet, sondern in Preise, Steuern, Kapital, Beschaffung, Haushalte, Management und Lernen zurückgeführt.",
+          "one_sentence": "Daten werden zu Bewertung, Bewertung wird zu Rückkopplung."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die Wirkungsökonomie verbindet Daten, Wirkungsbewertung, Schutzregeln und Rückkopplung. Wirkung wird nicht nur berichtet, sondern in Preise, Steuern, Kapital, Beschaffung, Haushalte, Management und Lernen zurückgeführt. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Daten werden zu Bewertung, Bewertung wird zu Rückkopplung."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die Wirkungsökonomie verbindet Daten, Wirkungsbewertung, Schutzregeln und Rückkopplung. Wirkung wird nicht nur berichtet, sondern in Preise, Steuern, Kapital, Beschaffung, Haushalte, Management und Lernen zurückgeführt. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Daten werden zu Bewertung, Bewertung wird zu Rückkopplung."
+        }
+      },
+      "impact_path_id": "woek-funktionsweise-path",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "WÖk-ID",
+        "Scorecard",
+        "Reverse Merit Order",
+        "Wirkungsrückkopplung"
+      ],
+      "related_cards": [
+        "WÖk-ID",
+        "Scorecard",
+        "Reverse Merit Order",
+        "Wirkungsrückkopplung"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "woek-keine-planwirtschaft",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die WÖk ersetzt Markt, Eigentum, Wettbewerb und Gewinn nicht. Sie verändert den Kompass: Nicht Kapital allein entscheidet Richtung, sondern positive Netto-Wirkung wird sichtbar und rückgekoppelt.",
+          "one_sentence": "Markt bleibt, aber die Signale werden wirkungswahrer."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die WÖk ersetzt Markt, Eigentum, Wettbewerb und Gewinn nicht. Sie verändert den Kompass: Nicht Kapital allein entscheidet Richtung, sondern positive Netto-Wirkung wird sichtbar und rückgekoppelt. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Markt bleibt, aber die Signale werden wirkungswahrer."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die WÖk ersetzt Markt, Eigentum, Wettbewerb und Gewinn nicht. Sie verändert den Kompass: Nicht Kapital allein entscheidet Richtung, sondern positive Netto-Wirkung wird sichtbar und rückgekoppelt. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Markt bleibt, aber die Signale werden wirkungswahrer."
+        }
+      },
+      "impact_path_id": "ordnung-kein-links-gruen",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDG+",
+        "SDG 16"
+      ],
+      "glossary_terms": [
+        "Markt",
+        "positive Netto-Wirkung",
+        "Wirkungsrückkopplung"
+      ],
+      "related_cards": [
+        "Markt",
+        "positive Netto-Wirkung",
+        "Wirkungsrückkopplung"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "markt-bleibt-kompass",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die WÖk lässt Markt, Eigentum, Wettbewerb und Gewinn bestehen. Sie ordnet Kapital aber als Werkzeug ein und macht Wirkung zur Ziel- und Rückkopplungsgröße.",
+          "one_sentence": "Gewinn und Wachstum zeigen nicht, ob etwas Menschen stärkt, den Planeten schützt oder Demokratie stabilisiert."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die WÖk lässt Markt, Eigentum, Wettbewerb und Gewinn bestehen. Sie ordnet Kapital aber als Werkzeug ein und macht Wirkung zur Ziel- und Rückkopplungsgröße. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Gewinn und Wachstum zeigen nicht, ob etwas Menschen stärkt, den Planeten schützt oder Demokratie stabilisiert."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die WÖk lässt Markt, Eigentum, Wettbewerb und Gewinn bestehen. Sie ordnet Kapital aber als Werkzeug ein und macht Wirkung zur Ziel- und Rückkopplungsgröße. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Gewinn und Wachstum zeigen nicht, ob etwas Menschen stärkt, den Planeten schützt oder Demokratie stabilisiert."
+        }
+      },
+      "impact_path_id": "ordnung-soziale-marktwirtschaft",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Kapital",
+        "Wirkungskapital",
+        "positive Netto-Wirkung"
+      ],
+      "related_cards": [
+        "Kapital",
+        "Wirkungskapital",
+        "positive Netto-Wirkung"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "reverse-merit-order",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Reverse Merit Order ist die Schutzregel der WÖk: Kritische Schäden dürfen nicht durch gute Einzelwerte überdeckt werden. Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
+          "one_sentence": "Gute Einzelwerte dürfen kritische Schäden nicht schönrechnen."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Reverse Merit Order ist die Schutzregel der WÖk: Kritische Schäden dürfen nicht durch gute Einzelwerte überdeckt werden. Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Gute Einzelwerte dürfen kritische Schäden nicht schönrechnen."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Reverse Merit Order ist die Schutzregel der WÖk: Kritische Schäden dürfen nicht durch gute Einzelwerte überdeckt werden. Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Gute Einzelwerte dürfen kritische Schäden nicht schönrechnen."
+        }
+      },
+      "impact_path_id": "reverse-merit-order-path",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Reverse Merit Order",
+        "Schutzregel",
+        "Netto-Wirkung",
+        "Scorecard"
+      ],
+      "related_cards": [
+        "Reverse Merit Order",
+        "Schutzregel",
+        "Netto-Wirkung",
+        "Scorecard"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "zielgruppe-mieter",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die WÖk liest Wohnen als Wirkungsraum. Nicht nur Miete, Rendite oder Quadratmeter zählen, sondern Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe, Vertrauen und Demokratie.",
+          "one_sentence": "Wohnen ist mehr als Anlageklasse; Wohnen ist Wirkungsraum."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die WÖk liest Wohnen als Wirkungsraum. Nicht nur Miete, Rendite oder Quadratmeter zählen, sondern Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe, Vertrauen und Demokratie. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Wohnen ist mehr als Anlageklasse; Wohnen ist Wirkungsraum."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die WÖk liest Wohnen als Wirkungsraum. Nicht nur Miete, Rendite oder Quadratmeter zählen, sondern Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe, Vertrauen und Demokratie. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Wohnen ist mehr als Anlageklasse; Wohnen ist Wirkungsraum."
+        }
+      },
+      "impact_path_id": "zielgruppe-mieter-path",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDG 11",
+        "SDG 3",
+        "SDG+ Demokratie"
+      ],
+      "glossary_terms": [
+        "Wirkungsraum",
+        "Wohnen",
+        "positive Netto-Wirkung"
+      ],
+      "related_cards": [
+        "Wirkungsraum",
+        "Wohnen",
+        "positive Netto-Wirkung"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "zielgruppe-journalismus",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die WÖk ergänzt den Faktencheck um Wirkungsbewusstsein: Welche Frames, Resonanzräume und Wirkungspotenziale entstehen durch Sprache, Bildwahl, Wiederholung und Reichweite?",
+          "one_sentence": "Journalismus wird nicht aktivistischer, sondern wirkungsbewusster."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die WÖk ergänzt den Faktencheck um Wirkungsbewusstsein: Welche Frames, Resonanzräume und Wirkungspotenziale entstehen durch Sprache, Bildwahl, Wiederholung und Reichweite? Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Journalismus wird nicht aktivistischer, sondern wirkungsbewusster."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die WÖk ergänzt den Faktencheck um Wirkungsbewusstsein: Welche Frames, Resonanzräume und Wirkungspotenziale entstehen durch Sprache, Bildwahl, Wiederholung und Reichweite? Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Journalismus wird nicht aktivistischer, sondern wirkungsbewusster."
+        }
+      },
+      "impact_path_id": "journalismus-path",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDG+ Medienqualität",
+        "SDG 16"
+      ],
+      "glossary_terms": [
+        "Frame",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "SDG+"
+      ],
+      "related_cards": [
+        "Frame",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "SDG+"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "zielgruppe-investoren",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Die WÖk liest Kapital als Verstärker von Richtung. Rendite bleibt relevant, wird aber zusammen mit Wirkung, Risiko, Resilienz und Transformationsfähigkeit betrachtet.",
+          "one_sentence": "Kapital ist Werkzeug, nicht Kompass."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Die WÖk liest Kapital als Verstärker von Richtung. Rendite bleibt relevant, wird aber zusammen mit Wirkung, Risiko, Resilienz und Transformationsfähigkeit betrachtet. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Kapital ist Werkzeug, nicht Kompass."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Die WÖk liest Kapital als Verstärker von Richtung. Rendite bleibt relevant, wird aber zusammen mit Wirkung, Risiko, Resilienz und Transformationsfähigkeit betrachtet. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Kapital ist Werkzeug, nicht Kompass."
+        }
+      },
+      "impact_path_id": "investoren-path",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDG 8",
+        "SDG 12",
+        "SDG 13",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Wirkungskapital",
+        "T-SROI",
+        "Resilienz"
+      ],
+      "related_cards": [
+        "Wirkungskapital",
+        "T-SROI",
+        "Resilienz"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "scanner-funktionsweise",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Der WÖk-Scanner liefert eine wirkungsökonomische Ersteinschätzung. Er ordnet Eingabe, Datenlage, Wirkungspotenziale, Wirkungsräume, SDG-/SDG+-Bezug, Zielkonflikte, Datenlücken, Quellen und Grenzen der Analyse.",
+          "one_sentence": "Der Scanner ordnet ein; er bewertet nicht amtlich."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Der WÖk-Scanner liefert eine wirkungsökonomische Ersteinschätzung. Er ordnet Eingabe, Datenlage, Wirkungspotenziale, Wirkungsräume, SDG-/SDG+-Bezug, Zielkonflikte, Datenlücken, Quellen und Grenzen der Analyse. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Der Scanner ordnet ein; er bewertet nicht amtlich."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Der WÖk-Scanner liefert eine wirkungsökonomische Ersteinschätzung. Er ordnet Eingabe, Datenlage, Wirkungspotenziale, Wirkungsräume, SDG-/SDG+-Bezug, Zielkonflikte, Datenlücken, Quellen und Grenzen der Analyse. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Der Scanner ordnet ein; er bewertet nicht amtlich."
+        }
+      },
+      "impact_path_id": "scanner-vorbereitung",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "WÖk-Scanner",
+        "Datenqualität",
+        "Wirkungspotenzial"
+      ],
+      "related_cards": [
+        "WÖk-Scanner",
+        "Datenqualität",
+        "Wirkungspotenzial"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "daten-scorecard",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Aus Daten wird erst dann eine Scorecard, wenn sie einem Gegenstand zugeordnet, auf Qualität geprüft, Wirkungsfeldern zugeordnet und mit Schutzregeln bewertet werden.",
+          "one_sentence": "Daten werden erst durch Zuordnung und Schutzregeln steuerungsfähig."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Aus Daten wird erst dann eine Scorecard, wenn sie einem Gegenstand zugeordnet, auf Qualität geprüft, Wirkungsfeldern zugeordnet und mit Schutzregeln bewertet werden. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Daten werden erst durch Zuordnung und Schutzregeln steuerungsfähig."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Aus Daten wird erst dann eine Scorecard, wenn sie einem Gegenstand zugeordnet, auf Qualität geprüft, Wirkungsfeldern zugeordnet und mit Schutzregeln bewertet werden. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Daten werden erst durch Zuordnung und Schutzregeln steuerungsfähig."
+        }
+      },
+      "impact_path_id": "produkt-rueckkopplung",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Scorecard",
+        "WÖk-ID",
+        "Datenqualität",
+        "Reverse Merit Order"
+      ],
+      "related_cards": [
+        "Scorecard",
+        "WÖk-ID",
+        "Datenqualität",
+        "Reverse Merit Order"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "einkommen-rente-zusammenhang",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Wirkungseinkommen denkt Einkommen in der automatisierten Gesellschaft als Grunddividende, Markteinkommen und Wirkungsbonus. Wirkungsrente führt diese Logik über die Lebenszeit als Wirkungsbiografie weiter.",
+          "one_sentence": "Einkommen sichert Teilhabe heute; Wirkungsrente liest Lebenswirkung über Zeit."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Wirkungseinkommen denkt Einkommen in der automatisierten Gesellschaft als Grunddividende, Markteinkommen und Wirkungsbonus. Wirkungsrente führt diese Logik über die Lebenszeit als Wirkungsbiografie weiter. Fachlich entscheidend sind Datenqualität, Referenzrahmen, Wirkungsgrenzen und Rückkopplung.",
+          "one_sentence": "Einkommen sichert Teilhabe heute; Wirkungsrente liest Lebenswirkung über Zeit."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Wirkungseinkommen denkt Einkommen in der automatisierten Gesellschaft als Grunddividende, Markteinkommen und Wirkungsbonus. Wirkungsrente führt diese Logik über die Lebenszeit als Wirkungsbiografie weiter. Systemisch geht es darum, wie diese Logik in Preise, Kapital, Politik, Unternehmen und Lernen zurückwirkt.",
+          "one_sentence": "Einkommen sichert Teilhabe heute; Wirkungsrente liest Lebenswirkung über Zeit."
+        }
+      },
+      "impact_path_id": "zielgruppe-rente-einkommen",
+      "mpd": {
+        "Mensch": "Wirkungen auf Würde, Gesundheit, Teilhabe, Arbeit oder soziale Sicherheit werden sichtbar.",
+        "Planet": "Wirkungen auf Klima, Ressourcen, Wasser, Boden oder Biodiversität werden eingeordnet.",
+        "Demokratie": "Wirkungen auf Vertrauen, Öffentlichkeit, Recht, Institutionen und Korrekturfähigkeit werden berücksichtigt."
+      },
+      "sdg_relations": [
+        "SDG 8",
+        "SDG 10",
+        "SDG+ soziale Stabilität"
+      ],
+      "glossary_terms": [
+        "Wirkungseinkommen",
+        "Wirkungsrente",
+        "Wirkungsfonds"
+      ],
+      "related_cards": [
+        "Wirkungseinkommen",
+        "Wirkungsrente",
+        "Wirkungsfonds"
+      ],
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+          "url": "",
+          "note": "führt die verbindliche Begriffslogik der Wirkungsökonomie."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der System-, Ordnungs- und Rückkopplungslogik."
+        },
+        {
+          "type": "Glossar",
+          "title": "Glossar der Wirkungsökonomie",
+          "url": "glossar.html",
+          "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "nachhaltigkeit-woek",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Nachhaltigkeit heißt in der WÖk: Das gekoppelte System Mensch–Planet–Demokratie bleibt unter Belastung tragfähig, erhält oder erneuert seine Grundfunktionen und verlagert Schäden nicht auf andere oder in die Zukunft.",
+          "one_sentence": "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Nachhaltigkeit bezeichnet die Fähigkeit des gekoppelten Systems Mensch–Planet–Demokratie, Störungen innerhalb tragfähiger Grenzen zu verarbeiten, lebensnotwendige und demokratische Grundfunktionen durch stabilisierende, korrektive und regenerative Rückkopplungen zu erhalten oder wiederherzustellen und aus Belastungen zu lernen.",
+          "one_sentence": "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Nachhaltigkeit verlangt, dass Preise, Steuern, Kapitalflüsse, Regeln und Entscheidungen negative Wirkungen früh sichtbar machen, Puffer, Korrektur und Regeneration ermöglichen und keine Schäden räumlich, sozial oder zeitlich externalisieren.",
+          "one_sentence": "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie."
+        }
+      },
+      "impact_path_id": "nachhaltigkeit-rueckkopplung",
+      "mpd": {
+        "Mensch": "Gesundheit, Bildung, Wohnen, Arbeit, soziale Stabilität und Vertrauen werden nicht auf Verschleiß gestellt.",
+        "Planet": "Klima, Wasser, Boden, Biodiversität und Ressourcen werden als Lebensgrundlagen erhalten und regeneriert.",
+        "Demokratie": "Korrekturfähigkeit, Rechtsstaatlichkeit, Öffentlichkeit und institutionelles Vertrauen bleiben belastbar."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Nachhaltigkeit",
+        "Resilienz",
+        "positive Netto-Wirkung",
+        "Wirkungsrückkopplung",
+        "SDGs",
+        "SDG+"
+      ],
+      "related_cards": [
+        "Führender Begriffsleitfaden v1.1",
+        "Nachhaltigkeit ist Systemresilienz",
+        "Die neue Ordnung des Wohlstands"
+      ],
+      "misunderstanding": "Nachhaltigkeit ist in der WÖk kein Zusatzlabel, keine Berichtspflicht, keine ESG-Kernlogik und keine reine Umwelt- oder Verzichtsstrategie.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "Führender Begriffsleitfaden v1.1",
+          "url": "glossar.html",
+          "note": "führt Nachhaltigkeit als langfristige Wirkungsresilienz sowie die Begriffslogik von Resilienz und Wirkungsresilienz."
+        },
+        {
+          "type": "Blog / Fachtext",
+          "title": "Nachhaltigkeit ist Systemresilienz",
+          "url": "blog/systemresilienz-statt-nachhaltigkeit/",
+          "note": "aktuelle ausführliche Einordnung zu Systemgrenzen, Rückstellmechanismen, Regimeresilienz und Nicht-Externalisierung."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der Zielgröße positive Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "type": "Zeitungs-/Erklärtext",
+          "title": "Was ist Nachhaltigkeit wirklich?",
+          "url": "",
+          "note": "bürgernahe Erklärungsebene; stützt die Formel, dass Nachhaltigkeit Zukunftsfähigkeit und Vorsorge bedeutet, ersetzt aber keine WÖk-Definition."
+        }
+      ]
+    },
+    {
+      "id": "iooi-und-wirkungsoekonomie",
+      "status": "published",
+      "confidence_notice": "methodische Einordnung; IOOI strukturiert den Wirkpfad, ersetzt aber keinen Wirkungsnachweis oder normativen Maßstab",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "IOOI zeigt den Weg von Ressourcen und Aktivitäten über Leistungen zu Veränderungen: Input, Aktivität, Output, Outcome und Impact. Die Wirkungsökonomie ergänzt die Frage, ob diese Veränderung für Mensch, Planet und Demokratie positiv, negativ oder neutral ist – und was sich daraus für Entscheidungen ändern muss.", "one_sentence": "IOOI erklärt den Wirkpfad; die Wirkungsökonomie ergänzt Maßstab, Schutzregeln und Rückkopplung."},
+        "fachlich": {"label": "Fachlich", "short_answer": "IOOI ist eine Results Chain: Inputs ermöglichen Aktivitäten, diese erzeugen Outputs; Outcomes und Impacts beschreiben Veränderungsebenen. Die WÖk verbindet diesen Pfad mit Wirkmechanismen, Evidenz, Attribution, Wirkungsbewertung nach SDGs, Agenda 2030 und SDG+, Nichtkompensation und Wirkungssteuerung.", "one_sentence": "Die WÖk ordnet IOOI als Teil der Wirkungsarchitektur ein."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Eine Wirkungskette genügt nicht, wenn ihre Ergebnisse keine Regeln verändern. Die WÖk ergänzt daher Schutzgrenzen, Netto- und Transformationswirkung sowie Rückkopplung in Preise, Kapital, Beschaffung, Management, Recht und Regulation.", "one_sentence": "Wirkung wird erst steuerungsfähig, wenn Evidenz, Maßstab und Rückkopplung verbunden sind."}
+      },
+      "impact_path_id": "iooi-und-wirkungsoekonomie",
+      "mpd": {"Mensch": "Fragt, welche Menschen unter welchen Bedingungen betroffen sind.", "Planet": "Macht Umweltfolgen, Grenzen und mögliche Verlagerungen sichtbar.", "Demokratie": "Verlangt transparente Maßstäbe, Korrektur und nachvollziehbare Entscheidungen."},
+      "sdg_relations": ["SDGs", "SDG+", "SDG 16"],
+      "glossary_terms": ["IOOI", "Input", "Output", "Outcome", "Impact", "Wirkungsbewertung", "Wirkungsrückkopplung"],
+      "related_cards": ["IOOI und Wirkungsökonomie"],
+      "misunderstanding": "IOOI ist kein Nachweis dafür, dass Wirkung eingetreten ist, und die WÖk behauptet nicht, IOOI zu ersetzen.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "ordnet Wirkpfad, Evidenz, Bewertung und Rückkopplung zusammen ein."}]
+    },
+    {
+      "id": "output-ist-keine-wirkung",
+      "status": "published",
+      "confidence_notice": "begriffliche Einordnung",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "Output ist die direkte Leistung einer Aktivität, zum Beispiel ein Kurs, ein Bericht, ein Produkt oder eine erreichte Personenzahl. Wirkung beginnt erst, wenn sich bei Betroffenen oder in einem System etwas verändert.", "one_sentence": "Ein Bericht, ein Kurs oder eine Reichweite kann wichtig sein, ist aber noch keine Wirkung."},
+        "fachlich": {"label": "Fachlich", "short_answer": "In der IOOI-Logik folgt Output auf Aktivität. Outcome beschreibt eine beobachtete Veränderung; Impact eine weiterreichende Wirkungsebene. Ob eine Veränderung tatsächlich durch die Maßnahme verursacht wurde, verlangt zusätzliche Evidenz und Attribution.", "one_sentence": "Output beschreibt Leistung, Outcome eine Wirkungsebene und Attribution eine offene Prüfungsfrage."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Die WÖk prüft zusätzlich Nebenwirkungen, Verteilung, Grenzen und Rückkopplung. Eine hohe Reichweite kann etwa ein Wirkungsrisiko oder nur ein Resonanzsignal sein, nicht automatisch positive Wirkung.", "one_sentence": "Reichweite und Output dürfen nicht als Wirkungsersatz dienen."}
+      },
+      "impact_path_id": "output-ist-keine-wirkung",
+      "mpd": {"Mensch": "Veränderungen bei Betroffenen werden nicht durch Produktionszahlen ersetzt.", "Planet": "Ressourcen- und Umweltfolgen bleiben auch bei hohem Output sichtbar.", "Demokratie": "Transparente Begriffe verhindern Wirkungs- und Kommunikationswashing."},
+      "sdg_relations": ["SDG 16"],
+      "glossary_terms": ["Output", "Outcome", "Impact", "Wirkung"],
+      "related_cards": ["IOOI und Wirkungsökonomie"],
+      "misunderstanding": "Eine Outputzahl ist kein Beweis positiver Wirkung.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "trennt Leistung, Veränderung und Evidenz."}]
+    },
+    {
+      "id": "wirkungspotenzial-und-nachweis",
+      "status": "published",
+      "confidence_notice": "evidenzorientierte Einordnung",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "Wirkungspotenzial bedeutet: Etwas könnte unter bestimmten Bedingungen eine Veränderung auslösen. Ein Wirkungsnachweis zeigt dagegen mit Daten und einer nachvollziehbaren Methode, dass sich ein Zustand tatsächlich verändert hat.", "one_sentence": "Möglichkeit ist nicht Nachweis."},
+        "fachlich": {"label": "Fachlich", "short_answer": "Ein plausibler Wirkmechanismus begründet eine Hypothese. Für einen Wirkungsnachweis braucht es eine klar abgegrenzte Veränderung, Betroffene, Zeitraum, Datenqualität und eine plausible Zurechnung gegenüber dem Counterfactual.", "one_sentence": "Wirkmechanismus, Evidenz und Attribution sind getrennte Prüfschritte."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Bei Sprache und Medien ist diese Unterscheidung besonders wichtig: Reichweite, Resonanz und ein plausibler Mechanismus können Wirkungsrisiken sichtbar machen, belegen aber keine konkrete Einstellungsänderung einzelner Menschen.", "one_sentence": "Kommunikation beschreibt Wirkungspotenziale und Risiken vorsichtig, nicht als belegte Einzeleffekte."}
+      },
+      "impact_path_id": "wirkungspotenzial-und-nachweis",
+      "mpd": {"Mensch": "Schützt Betroffene vor unbelegten Wirkungsbehauptungen.", "Planet": "Trennt Umweltrisiko, Wirkungsannahme und gemessene Veränderung.", "Demokratie": "Stärkt Evidenz, Transparenz und Korrekturfähigkeit."},
+      "sdg_relations": ["SDG 16", "SDG+ Medienqualität"],
+      "glossary_terms": ["Wirkungspotenzial", "Wirkmechanismus", "Wirkungsnachweis", "Counterfactual", "Attribution"],
+      "related_cards": ["IOOI und Wirkungsökonomie"],
+      "misunderstanding": "Ein plausibler Mechanismus ist kein Beleg, dass eine Wirkung eingetreten ist.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "erklärt die Evidenzlogik."}]
+    },
+    {
+      "id": "nichtkompensation-wirkung",
+      "status": "published",
+      "confidence_notice": "normative Schutzlogik der Wirkungsökonomie",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "Viele gute Einzelwerte heben einen schweren Schaden nicht einfach auf. Wer Menschenrechte verletzt oder kritische ökologische Grenzen überschreitet, kann das nicht mit einem guten Teilwert schönrechnen.", "one_sentence": "Schwere Schäden sind kein Rabattposten."},
+        "fachlich": {"label": "Fachlich", "short_answer": "Nichtkompensation schützt vor einer rein additiven Durchschnittslogik. Die Reverse Merit Order und rote Linien verlangen, kritische negative Wirkungen getrennt zu prüfen und gegebenenfalls als Begrenzung einer Gesamtbewertung zu behandeln.", "one_sentence": "Netto-Wirkung ist keine freie Verrechnung unvergleichbarer Werte."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Die Schutzlogik verbindet Wirkungsbewertung mit Grundrechten, Grenzen, Betroffenenperspektiven und Rückkopplung. Sie entscheidet nicht über den Wert von Personen, sondern über die Zulässigkeit und Priorisierung von Handlungen, Produkten und Regeln.", "one_sentence": "Schutzregeln machen Wirkung demokratisch und begründbar steuerbar."}
+      },
+      "impact_path_id": "nichtkompensation-wirkung",
+      "mpd": {"Mensch": "Grundrechte und schwere soziale Schäden bleiben sichtbar.", "Planet": "Kritische Grenzen werden nicht durch andere Vorteile verrechnet.", "Demokratie": "Regeln und Begründungen bleiben öffentlich überprüfbar."},
+      "sdg_relations": ["SDGs", "SDG+", "SDG 16"],
+      "glossary_terms": ["Nichtkompensation", "Reverse Merit Order", "positive Netto-Wirkung", "Wirkungsbewertung"],
+      "related_cards": ["Scorecard", "Reverse Merit Order"],
+      "misunderstanding": "Nichtkompensation ist keine moralische Rangliste von Menschen und kein Social-Credit-System.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "ordnet Schutzregeln und Rückkopplung ein."}]
+    }
+  ]
+}

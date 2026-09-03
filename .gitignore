@@ -1,0 +1,29 @@
+node_modules/
+outputs/
+content/internal-documents/
+.codex-backup/
+.claude/
+.next/
+_site/
+woek-akademie-app/.next/
+__pycache__/
+.DS_Store
+
+woek-akademie-app/
+
+# Large ad-hoc media belongs in GitHub Releases. Published podcast RSS
+# enclosures are explicitly allowlisted below so they can be served with stable
+# audio/mpeg headers from the website domain.
+assets/audio/podcast/*.mp3
+assets/audio/podcast/*.m4a
+assets/audio/podcast/*.wav
+!assets/audio/podcast/podcast-folge-001-zwei-aepfel-ein-preis.mp3
+!assets/audio/podcast/podcast-folge-002-der-falsche-kompass.mp3
+!assets/audio/podcast/podcast-folge-003-nicht-alles-was-sich-bewegt.mp3
+!assets/audio/podcast/podcast-folge-004-wirkung-ist-nicht-absicht.mp3
+!assets/audio/podcast/podcast-folge-005-wie-misst-man-etwas-das-man-nicht-sieht.mp3
+!assets/audio/podcast/podcast-folge-006-der-lange-wellenschlag.mp3
+!assets/audio/podcast/podcast-folge-007-der-apfel-war-nur-der-anfang.mp3
+!assets/audio/podcast/podcast-folge-008-worte-wirken.mp3
+assets/video/*.mov
+assets/video/*.wav

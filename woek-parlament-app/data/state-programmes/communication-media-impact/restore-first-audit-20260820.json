@@ -1,0 +1,75 @@
+{
+  "schema_version": "woek-communication-media-restore-first-1.0",
+  "audit_date": "2026-08-20",
+  "scope": "Issue 236 – Kommunikations- und Medienwirkung als eigenständige Achse",
+  "sources_checked": [
+    "Git-Historie und Remote-Branches",
+    "kanonischer Fachbestand unter /WOEK",
+    "frühere Release-1-Publikationsquellen",
+    "aktuelles Schema, Renderer, Navigation, Suche und Sitemap",
+    "neueste fachliche Issue-Handoffs zu #236"
+  ],
+  "objects": [
+    {
+      "object_id": "ltw-2026-st-afd",
+      "classification_before": "HISTORICAL_APPROVED_RESTORE_REQUIRED",
+      "classification_after": "PRESENT_AND_RENDERED",
+      "note": "Historisch freigegebener passagegebundener Bestand wurde in die aktuelle öffentliche Programmroute zurückgeführt."
+    },
+    {
+      "object_id": "ltw-2026-st-bsw",
+      "classification_before": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "classification_after": "PRESENT_AND_RENDERED",
+      "note": "Materialitätsorientierter Fachreview ist als solcher sichtbar; ein späterer Vollscan bleibt ausdrücklich offen."
+    },
+    {
+      "object_id": "ltw-2026-st-cdu",
+      "classification_before": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "classification_after": "PRESENT_AND_RENDERED",
+      "note": "Freigegebene Schlüsselpassagen werden vollständig projiziert; Reichweiten- und Outcome-Nachweise bleiben offen."
+    },
+    {
+      "object_id": "ltw-2026-st-spd",
+      "classification_before": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "classification_after": "PRESENT_AND_RENDERED",
+      "note": "Freigegebene Schlüsselpassagen werden vollständig projiziert; ein Satz-für-Satz-Vollscan bleibt offen."
+    },
+    {
+      "object_id": "ltw-2026-st-gruene",
+      "classification_before": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "classification_after": "PRESENT_AND_RENDERED",
+      "note": "Der freigegebene HTML-Volltext-Review wird passagegebunden und mit seinen Evidenzgrenzen projiziert."
+    },
+    {
+      "object_id": "ltw-2026-st-linke",
+      "classification_before": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "classification_after": "PRESENT_AND_RENDERED",
+      "note": "Der freigegebene materialitätsorientierte Review wird projiziert; PDF- und Satz-für-Satz-Vollscan bleiben offen."
+    },
+    {
+      "object_id": "gebaeudeenergiegesetz-medienwirkung",
+      "classification_before": "PRESENT_AND_RENDERED",
+      "classification_after": "PRESENT_AND_RENDERED",
+      "note": "Die bestehende eigenständige Fachanalyse bleibt unverändert erhalten."
+    },
+    {
+      "object_id": "federal-programme-and-mandate-communicative-pre-effect-fragments",
+      "classification_before": "PRESENT_BUT_SCHEMA_DROPPED",
+      "classification_after": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "note": "Bestehende Commitment-Fragmente sind keine freigegebene vollständige programmweite Kommunikationswirkungsanalyse und werden nicht technisch hochgestuft."
+    },
+    {
+      "object_id": "other-state-programmes",
+      "classification_before": "GENUINELY_NOT_YET_ANALYSED",
+      "classification_after": "GENUINELY_NOT_YET_ANALYSED",
+      "note": "Im geprüften Git- und /WOEK-Bestand wurde kein freigegebener objektspezifischer Kommunikationswirkungsreview gefunden; CodeX erzeugt keinen Ersatzbefund."
+    }
+  ],
+  "invariants": {
+    "communication_impact_separate_from_measure_impact": true,
+    "no_party_score": true,
+    "no_keyword_heuristic_as_fach_judgment": true,
+    "no_codex_generated_fach_assessment": true,
+    "restore_first_completed": true
+  }
+}

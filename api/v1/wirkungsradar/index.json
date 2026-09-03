@@ -1,0 +1,337 @@
+{
+  "generatedAt": "2026-08-21T14:46:36.244Z",
+  "version": "v1",
+  "cards": {
+    "source": "api/wirkungsradar/cards/index.json",
+    "count": 13,
+    "indexUrl": "/api/wirkungsradar/cards/index.json",
+    "items": [
+      {
+        "slug": "migration-kostet-nur",
+        "claim": "Migration kostet nur.",
+        "shortJudgement": "Echter Startaufwand. Falsches Dauerurteil.",
+        "betterQuestion": "Welche Integration macht aus Startaufwand später Arbeit, Beiträge, Versorgung und demokratische Teilhabe?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/migration-kostet-nur/"
+      },
+      {
+        "slug": "deutschland-nur-zwei-prozent",
+        "claim": "Deutschland verursacht nur zwei Prozent.",
+        "shortJudgement": "Richtige Teilzahl. Falsche Entlastung.",
+        "betterQuestion": "Zählst du nur den Schornstein hier - oder auch Konsum, Lieferketten, Produkte und Standards?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/deutschland-nur-zwei-prozent/"
+      },
+      {
+        "slug": "windraeder-voegel-wald-beton-rueckbau",
+        "claim": "Windräder zerstören Natur.",
+        "shortJudgement": "Echte Prüfpflicht. Falsches Gesamturteil.",
+        "betterQuestion": "Welche Energieform schützt Natur, Klima, Gesundheit und Versorgung insgesamt am besten?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/"
+      },
+      {
+        "slug": "fusion-loest-das-energieproblem",
+        "claim": "Fusion löst bald das Energieproblem.",
+        "shortJudgement": "Forschung ja. Stromversprechen nein.",
+        "betterQuestion": "Reden wir über Forschungsertrag - oder über ein sinnvolles Stromsystem?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/fusion-loest-das-energieproblem/"
+      },
+      {
+        "slug": "schulden-machen-oder-sparen",
+        "claim": "Der Staat muss sparen wie ein Haushalt.",
+        "shortJudgement": "Echte Zinsfrage. Falsches Haushaltsbild.",
+        "betterQuestion": "Reden wir über schlechte Schulden - oder über Investitionen, die spätere Kosten senken?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/schulden-machen-oder-sparen/"
+      },
+      {
+        "slug": "e-autos-schlimmer-als-verbrenner",
+        "claim": "E-Autos sind schlimmer als Verbrenner.",
+        "shortJudgement": "Nicht perfekt. Aber besserer Pfad.",
+        "betterQuestion": "Vergleichen wir nur die Batterie - oder den ganzen Lebensweg von Öl, Produktionsstrom, Ladestrom, Luft, Wartung und Recycling?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/"
+      },
+      {
+        "slug": "e-fuels-retten-den-verbrenner",
+        "claim": "E-Fuels retten den Verbrenner.",
+        "shortJudgement": "Wertvolle Moleküle. Falscher Alltagsumweg.",
+        "betterQuestion": "Für welchen Einsatz meinst du E-Fuels: Flugzeug, Schiff, Spezialfall - oder Alltagsauto?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/e-fuels-retten-den-verbrenner/"
+      },
+      {
+        "slug": "wasserstoff-fuer-alles",
+        "claim": "Wir machen das einfach mit Wasserstoff.",
+        "shortJudgement": "Wertvoll. Deshalb nicht überall.",
+        "betterQuestion": "Wo brauchen wir Wasserstoff wirklich - und wo geht Strom direkter?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/wasserstoff-fuer-alles/"
+      },
+      {
+        "slug": "arbeit-lohnt-sich-nicht-mehr",
+        "claim": "Arbeit lohnt sich nicht mehr.",
+        "shortJudgement": "Echter Arbeitsfrust. Falscher Schuldiger.",
+        "betterQuestion": "Was muss sich ändern, damit Arbeit wirklich mehr Sicherheit und Teilhabe schafft?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/"
+      },
+      {
+        "slug": "co2-preis-oder-fossile-systemkosten",
+        "claim": "Der CO₂-Preis ist Abzocke.",
+        "shortJudgement": "Sichtbare Steuerung statt versteckte Schäden.",
+        "betterQuestion": "Zahlen wir fossile Kosten unsichtbar als Schaden - oder sichtbar und lenkend als Umbau?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/"
+      },
+      {
+        "slug": "kernenergie-wieder-in-deutschland",
+        "claim": "Kernkraft ist die einfache Lösung.",
+        "shortJudgement": "Teure Wärmelogik. Schlechter Zeitpfad.",
+        "betterQuestion": "Was liefert vor 2030 und 2035 sicher, günstig und flexibel Strom?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/kernenergie-wieder-in-deutschland/"
+      },
+      {
+        "slug": "radwege-in-peru",
+        "claim": "Für Radwege in Peru ist Geld da, aber für Deutschland nicht.",
+        "shortJudgement": "Verkürzte Empörung statt Wirkungsprüfung.",
+        "betterQuestion": "Welche Finanzierungsform, welche Wirkung, welche Rückzahlung, welcher Nutzen und welche Risiken liegen tatsächlich vor?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/radwege-in-peru/"
+      },
+      {
+        "slug": "ukraine-unterstuetzung-steuergeld",
+        "claim": "Unser Steuergeld geht in die Ukraine.",
+        "shortJudgement": "Echte Kontrolle. Falsches Verlustbild.",
+        "betterQuestion": "Was bewirkt die Unterstützung konkret - und welche Kosten würden entstehen, wenn wir nicht helfen?",
+        "status": "checked_v2_positive_examples",
+        "dataStand": "2026-06-04",
+        "url": "https://wirkungsoekonomie.de/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/"
+      }
+    ]
+  },
+  "resonance": {
+    "source": "assets/data/wirkungsradar-resonance-cards.json",
+    "count": 22,
+    "items": [
+      {
+        "slug": "klimaschutz-als-kostenproblem",
+        "title": "Klimaschutz als Kostenproblem",
+        "subtitle": "Wenn nur die Kosten der Lösung sichtbar sind, wirkt der Schaden kostenlos.",
+        "cluster": "Klima & Energie",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "deutschland-allein-ohnmacht",
+        "title": "Deutschland rettet nicht allein das Klima",
+        "subtitle": "Eine richtige Teilzahl wird zur falschen Entlastung.",
+        "cluster": "Klima & Energie",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "verbotsstaat-und-kontrollverlust",
+        "title": "Die da oben wollen uns alles verbieten“",
+        "subtitle": "Eine Regel wird zum Symbol für Kontrollverlust.",
+        "cluster": "Demokratie & Öffentlichkeit",
+        "attention": "sehr hoch",
+        "impact": "hoch",
+        "relation": "stellvertretend"
+      },
+      {
+        "slug": "migration-als-kostenblock",
+        "title": "Migration als Kostenblock",
+        "subtitle": "Ankommen kostet. Nicht-Ankommen kostet mehr.",
+        "cluster": "Migration",
+        "attention": "sehr hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "ukraine-hilfe-gegen-inland",
+        "title": "Ukraine-Hilfe gegen „unsere Leute“",
+        "subtitle": "Hilfe wird als Verlust erzählt, Stabilität als Wirkung ausgeblendet.",
+        "cluster": "Ausland & Sicherheit",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "arbeit-lohnt-sich-nicht",
+        "title": "Arbeit lohnt sich nicht mehr“",
+        "subtitle": "Echter Arbeitsfrust. Falscher Schuldiger.",
+        "cluster": "Arbeit & Sozialstaat",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "stellvertretend"
+      },
+      {
+        "slug": "schulden-sparen-zukunft",
+        "title": "Schulden, Sparen und Zukunftsinfrastruktur",
+        "subtitle": "Sparsamkeit kann vernünftig sein. Sie kann aber auch teure Unterlassung werden.",
+        "cluster": "Staat, Geld & Verantwortung",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "radwege-entwicklungshilfe-empoerung",
+        "title": "Radwege in Peru und andere Empörungsobjekte",
+        "subtitle": "Manchmal ist das Problem nicht der Radweg, sondern die verkürzte Erzählung.",
+        "cluster": "Ausland & Mobilität",
+        "attention": "hoch",
+        "impact": "mittel",
+        "relation": "überhitzt"
+      },
+      {
+        "slug": "e-auto-rohstoffe-status-quo",
+        "title": "E-Autos, Rohstoffe und der fossile Vergleich",
+        "subtitle": "Nicht perfekt ist nicht dasselbe wie schlechter.",
+        "cluster": "Mobilität & Energie",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "wundertechnik-aufschub",
+        "title": "Fusion, E-Fuels, Wasserstoff: wenn Technik zum Aufschub wird",
+        "subtitle": "Forschung ja. Ausrede nein.",
+        "cluster": "Klima & Energie",
+        "attention": "mittel bis hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "windkraft-natur-fossile-dauerfolgen",
+        "title": "Windkraft und Naturschutz",
+        "subtitle": "Echte Prüfpflicht. Falsches Gesamturteil.",
+        "cluster": "Klima & Energie",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "wohnungsmarkt-rendite-und-mangel",
+        "title": "Wohnungskrise: Neubau allein reicht nicht",
+        "subtitle": "Wir haben nicht nur ein Mengenproblem, sondern ein Wirkungsproblem.",
+        "cluster": "Wohnen & Stadt",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "passend aber oft zu flach"
+      },
+      {
+        "slug": "landwirtschaft-bauern-gegen-klima",
+        "title": "Landwirtschaft zwischen Existenzdruck und Transformation",
+        "subtitle": "Wenn Betriebe gegen Klimaschutz gestellt werden, verschwindet die Marktlogik dahinter.",
+        "cluster": "Landwirtschaft & Ernährung",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "stellvertretend"
+      },
+      {
+        "slug": "ernaehrung-kulturkampf",
+        "title": "Ernährung als Kulturkampf",
+        "subtitle": "Wenn Essen zur Identitätsschlacht wird, verschwinden Gesundheit, Klima und Preise.",
+        "cluster": "Landwirtschaft & Ernährung",
+        "attention": "mittel bis hoch",
+        "impact": "hoch",
+        "relation": "überhitzt/verzerrt"
+      },
+      {
+        "slug": "medienvertrauen-und-luegenpresse",
+        "title": "Medienvertrauen und „Lügenpresse“",
+        "subtitle": "Kritik an Medien ist nötig. Pauschale Delegitimierung zerstört Korrektur.",
+        "cluster": "Demokratie & Öffentlichkeit",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "gender-sprache-kulturkampf",
+        "title": "Gendern, Sprache und öffentliche Überhitzung",
+        "subtitle": "Ein reales Sprachthema kann eine riesige Ablenkungsdebatte werden.",
+        "cluster": "Kultur, Familie & Geschlecht",
+        "attention": "hoch",
+        "impact": "mittel",
+        "relation": "überhitzt"
+      },
+      {
+        "slug": "ki-arbeit-und-sinn",
+        "title": "KI, Arbeit und der falsche Job-Reflex",
+        "subtitle": "Die Frage ist nicht nur: Welche Jobs verschwinden? Sondern: Wie sichern wir Teilhabe, Sinn und Finanzierung?",
+        "cluster": "Digitalisierung & KI",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "unterkomplex"
+      },
+      {
+        "slug": "sicherheit-kriminalitaet-einzelfall",
+        "title": "Sicherheit, Kriminalität und Einzelfallpolitik",
+        "subtitle": "Sicherheit ist real. Aber Einzelfallwellen können Ursachen verschieben.",
+        "cluster": "Staat, Recht & Demokratie",
+        "attention": "sehr hoch",
+        "impact": "hoch",
+        "relation": "oft überhitzt/verzerrt"
+      },
+      {
+        "slug": "eu-buerokratie-und-kontrolle",
+        "title": "EU, Bürokratie und „Brüssel“",
+        "subtitle": "Manche Regeln sind wirklich schlecht. Aber nicht jede gemeinsame Regel ist Fremdbestimmung.",
+        "cluster": "Staat, Recht & Demokratie",
+        "attention": "hoch",
+        "impact": "hoch",
+        "relation": "verzerrt"
+      },
+      {
+        "slug": "pflege-gesundheit-kosten",
+        "title": "Pflege und Gesundheit als Kostenproblem",
+        "subtitle": "Wir finanzieren Krankheit oft besser als Gesundheit.",
+        "cluster": "Gesundheit & Pflege",
+        "attention": "mittel",
+        "impact": "sehr hoch",
+        "relation": "unterbelichtet"
+      },
+      {
+        "slug": "klimaanpassung-und-versicherbarkeit",
+        "title": "Klimaanpassung und Versicherbarkeit",
+        "subtitle": "Wenn Risiken nicht mehr versicherbar sind, wird die Zukunft privat unbezahlbar.",
+        "cluster": "Klima & Resilienz",
+        "attention": "zu niedrig",
+        "impact": "sehr hoch",
+        "relation": "unterbelichtet"
+      },
+      {
+        "slug": "plattformlogik-und-aufmerksamkeit",
+        "title": "Plattformlogik und öffentliche Aufmerksamkeit",
+        "subtitle": "Was klickt, ist nicht automatisch wichtig. Was wichtig ist, klickt nicht automatisch.",
+        "cluster": "Demokratie & Öffentlichkeit",
+        "attention": "strukturell hoch",
+        "impact": "sehr hoch",
+        "relation": "Ursachenthema"
+      }
+    ]
+  },
+  "existingStaticEndpoints": [
+    "/api/wirkungsradar/cards/",
+    "/api/wirkungsradar/embed/{slug}.json",
+    "/api/wirkungsradar/distribution/{slug}.json"
+  ]
+}

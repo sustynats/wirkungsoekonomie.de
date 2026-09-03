@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "woek-strategy-deep-dive-overlay-2026-08-20-batch5",
+  "sourceComments": [5361814559],
+  "records": [
+    {
+      "missionId": "WOEK-AKN-2026-M01",
+      "overview": {
+        "assessmentLabel": "Positives Service- und Produktivitätspotenzial – Inklusion und Resilienz sind Bedingungen",
+        "impactCoreSummary": "Ende-zu-Ende-Digitalisierung, Registermodernisierung und Interoperabilität können Medienbrüche, wiederholte Dateneingaben, Fehler und Bearbeitungsaufwand verringern.",
+        "editorialSummary": "Die Mission besitzt positives Service-, Zugänglichkeits- und Produktivitätspotenzial mit hartem Inklusions-, Datenqualitäts- und Resilienzvorbehalt. Eine digital sichtbare Leistung ist noch keine bessere Verwaltung: Entscheidend sind tatsächliche Durchlaufzeit, Fehlerquote, Nutzbarkeit, Barrierefreiheit und ein belastbarer Fallback.",
+        "keyFinding": "Digital verfügbar ist nicht gleich bürgernäher: Servicequalität, Barrierefreiheit und ein belastbarer Fallback entscheiden.",
+        "directionLabel": "Positives Potenzial unter Inklusions-, Datenqualitäts- und Resilienzbedingungen",
+        "directionKind": "conditional",
+        "evidenceSummary": "Vollständige erweiterte Ex-ante-Prüfung der Entwurfsmission; tatsächliche Service-Outcomes und Zurechnung sind noch nicht beobachtbar.",
+        "realityCheckSummary": "Ex ante: Durchlauf-, Abbruch- und Fehlerquoten sowie Zugänglichkeit und Zufriedenheit sind später getrennt zu beobachten."
+      },
+      "officialAnchor": "Beteiligungsfassung vom 16. Juli 2026, Mission 1: Leistungen der Verwaltung durch Digitalisierung bürgernäher, bürokratieärmer und einfacher machen.",
+      "evidenceMaturity": "Vollständige erweiterte Ex-ante-Prüfung der Entwurfsmission; tatsächliche Service-Outcomes und Zurechnung sind noch nicht beobachtbar.",
+      "problemReview": { "status": "Problem gut belegt – Reichweite begrenzen", "text": "Medienbrüche, Mehrfachdateneingaben und fragmentierte Prozesse sind ein plausibler realer Engpass. Nicht jeder Verwaltungsaufwand ist jedoch ein Digitalisierungsproblem." },
+      "goalReview": { "status": "Ziel gestützt – Zugänglichkeit und Servicequalität schützen", "text": "Zielzustand sind schnellere, einfachere, fehlerärmere und für alle zugängliche Leistungen, nicht bloß deren Online-Verfügbarkeit." },
+      "path": { "A": "Ende-zu-Ende-Digitalisierung, Once-only und Registermodernisierung.", "M": "Wiederholungen und Medienbrüche können sinken.", "deltaZ": "Zeit-, Fehler- und Ressourcenaufwand können sinken und der Zugang kann sich verbessern.", "R": "Mensch und Demokratie über staatliche Handlungsfähigkeit; Datenschutz und Recht getrennt." },
+      "qualityLayers": [
+        { "id": "material-omissions", "title": "Materielle Auslassungen", "text": "Servicespezifische Baselines, digitale Exklusion, Fehlerfortpflanzung aus Registern, Offline- und Assistenz-Fallback sowie echte Outcome- und Servicequalitätsmetriken sind erforderlich." },
+        { "id": "policy-coherence", "title": "Policy-Kohärenz", "text": "Once-only und Registermodernisierung bieten Synergien. Ein Konflikt entsteht, wenn digital first praktisch zu digital only wird oder Datenschutz und Barrierefreiheit nachgelagert werden." },
+        { "id": "delivery-feasibility", "title": "Delivery", "text": "Ressortübergreifende Interoperabilität, Registerqualität, Identität und Authentisierung, Prozessneugestaltung, Migration sowie Personal- und Kompetenzaufbau sind kritische Abhängigkeiten." },
+        { "id": "resource-financing", "title": "Ressourcen und Finanzierung", "text": "Transformations-, Migrations- und laufende Plattformkosten sind gegen vermiedene Bearbeitungs- und Fehlerkosten zu stellen. IT-Budget oder die Zahl digitalisierter Leistungen belegen keinen Nutzen." },
+        { "id": "spatial-distribution", "title": "Räumliche und soziale Verteilung", "text": "Ländliche Räume, Menschen mit geringer digitaler Kompetenz, Menschen mit Behinderungen, ältere Menschen und kleine Unternehmen sind ausdrücklich im Zugangstest zu berücksichtigen." },
+        { "id": "international-leakage", "title": "Internationale Verlagerung", "text": "Für die unmittelbare Verwaltungswirkung ist sie gering; bei Cloud-, Hardware- und IT-Lieferketten kann sie als sekundäre Ressourcen-, Energie- und Abhängigkeitswirkung materiell sein." },
+        { "id": "robustness", "title": "Robustheit", "text": "Cyber- oder Identitätsstörung, Registerfehler, Ausfall zentraler Dienste und Lastspitzen sind zu testen. Resilienz verlangt einen degradierbaren Fallback-Betrieb." },
+        { "id": "lock-in", "title": "Reversibilität und Lock-in", "text": "Proprietäre Plattform- und Schnittstellenabhängigkeit ist zu vermeiden; offene Standards, Portabilität und Datenhoheit sind Schutzbedingungen." },
+        { "id": "falsification", "title": "Was würde die Einordnung verändern?", "text": "Der Befund wird gestützt, wenn Durchlauf-, Abbruch- und Fehlerquoten sinken und Zugänglichkeit und Zufriedenheit steigen. Er wird geschwächt, wenn nur Formulare online stehen und Medienbrüche bleiben, und für Teilservices widerlegt, wenn neue digitale Hürden den Zugang netto verschlechtern." },
+        { "id": "lifecycle", "title": "Lebenslauf", "text": "Priorisierte Leistung → Prozess- und Registerneugestaltung → Rollout → Nutzung und Output → Zeit-, Fehler- und Zugangsoutcome → Reality Check und Nachsteuerung." },
+        { "id": "version", "title": "Versionsdelta", "text": "Die finale Fassung muss konkrete Leistungsmenge, Standards, Fallback, Barrierefreiheit und Outcome-Metriken gegenüber dem Entwurf nachvollziehbar machen." },
+        { "id": "coverage", "title": "Abdeckung", "text": "Vollständige erweiterte Ex-ante-Prüfung der Entwurfsmission." }
+      ],
+      "recommendationStatus": "Für diese Mission liegt kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."
+    },
+    {
+      "missionId": "WOEK-AKN-2026-M03",
+      "overview": {
+        "assessmentLabel": "Positives Resilienz- und Dekarbonisierungspotenzial – kein Autarkienachweis",
+        "impactCoreSummary": "Erneuerbare Eigenerzeugung, Speicher, Effizienz und Diversifizierung können fossile Abhängigkeit, Lebenszyklus-Emissionen und Ausfallrisiken stationärer Liegenschaften mindern.",
+        "editorialSummary": "Die Mission besitzt positives Resilienz- und Dekarbonisierungspotenzial, aber installierte Erzeugungsleistung belegt keine Autarkie. Entscheidend sind Diversifizierung, Speicher- und Redundanzdesign, reale Betriebsfähigkeit, Lebenszykluskosten sowie Flächen-, Biodiversitäts- und Lieferkettenwirkungen.",
+        "keyFinding": "Installierte Megawatt oder Anlagenzahlen belegen weder Versorgungskontinuität noch geringere Lebenszyklus-Emissionen.",
+        "directionLabel": "Positives Potenzial unter Resilienz- und Lebenszyklusbedingungen",
+        "directionKind": "conditional",
+        "evidenceSummary": "Vollständige erweiterte Ex-ante-Prüfung; genaue Verwundbarkeits- und Operationsdaten bleiben nichtöffentlich, Outcome und Zurechnung offen.",
+        "realityCheckSummary": "Ex ante: Aggregierte Versorgungskontinuität, Lebenszyklus-Emissionen, Kosten und Schutzwirkungen sind später zu prüfen."
+      },
+      "officialAnchor": "Beteiligungsfassung vom 16. Juli 2026, Mission 3: Energieversorgung der Bundeswehr mit Erneuerbaren strategisch nachhaltiger und resilienter aufstellen.",
+      "evidenceMaturity": "Vollständige erweiterte Ex-ante-Prüfung einer Sicherheitsmission; öffentliche Aussagen bleiben auf geeignete Aggregate begrenzt.",
+      "problemReview": { "status": "Problem gut belegt – nichtöffentliche Baseline begrenzt Prüfung", "text": "Energie- und Lieferkettenexposition sowie Dekarbonisierungsbedarf sind plausible Risiken. Genaue Verwundbarkeits- und Operationsdaten müssen nicht öffentlich gemacht werden." },
+      "goalReview": { "status": "Ziel gestützt – Resilienz ist nicht absolute Autarkie", "text": "Ein robuster Zielzustand ist eine diversifizierte, ausfallsichere und emissionsärmere Versorgung. Absolute Autarkie ist kein notwendiger Wirkungsmaßstab." },
+      "path": { "A": "Eigene erneuerbare Erzeugung, Speicher, Effizienz und Diversifizierung.", "M": "Einseitige Versorgungsabhängigkeiten können sinken.", "deltaZ": "Stationäre Versorgungskontinuität kann steigen und Lebenszyklus-Treibhausgasemissionen können sinken.", "R": "Resilienz und Planet; Sicherheitsrecht getrennt." },
+      "qualityLayers": [
+        { "id": "material-omissions", "title": "Materielle Auslassungen", "text": "Erforderlich sind eine öffentliche Aggregat-Baseline, Speicher- und Redundanzlogik, Lebenszyklus-Treibhausgase, kritische Rohstoffe, Flächen und Biodiversität, Wartung sowie Cyber- und Steuerungssysteme." },
+        { "id": "policy-coherence", "title": "Policy-Kohärenz", "text": "Klima- und Resilienzziele können sich verstärken. Zielkonflikte zwischen Sicherheitsanforderungen, Transparenz, Naturschutz sowie Netz- und Standortplanung bleiben offen." },
+        { "id": "delivery-feasibility", "title": "Delivery", "text": "Heterogener Gebäudebestand, Genehmigung, Netz- und Speicherintegration, Beschaffung, Wartung und Cybersicherheit sind Delivery-Abhängigkeiten; operativ sensible Details bleiben geschützt." },
+        { "id": "resource-financing", "title": "Ressourcen und Finanzierung", "text": "Investitions-, Ersatz-, Betriebs- und Lebenszykluskosten sind gegen Energiebezug sowie vermiedene Ausfall- und Versorgungsrisiken zu stellen. Ohne Standort- und Technologieportfolio ist keine Wirtschaftlichkeitsaussage belastbar." },
+        { "id": "spatial-distribution", "title": "Räumliche Verteilung", "text": "Standortgemeinden, Flächennutzung sowie Natur- und Landschaftskonflikte sind standortspezifisch zu prüfen." },
+        { "id": "international-leakage", "title": "Internationale Verlagerung", "text": "Lieferketten für Photovoltaik, Speicher, Elektronik und kritische Rohstoffe sind materiell." },
+        { "id": "robustness", "title": "Robustheit", "text": "Längere Netzstörung, Dunkelflaute, Lieferketten- und Ersatzteilengpass sowie Cyberstörung sind zu testen. Ein resilientes Portfolio benötigt mehrere Pfade statt Scheinautarkie." },
+        { "id": "lock-in", "title": "Reversibilität und Lock-in", "text": "Proprietäre Speicher- und Steuerplattformen sowie technologiespezifische Langfristbindungen sind zu vermeiden, soweit dies sicherheitlich und technisch möglich ist." },
+        { "id": "falsification", "title": "Was würde die Einordnung verändern?", "text": "Der Befund wird durch sinkende Lebenszyklus-Emissionen und nachweislich höhere Versorgungskontinuität bei vertretbaren Kosten und Schutzwirkungen gestützt, durch bloß steigende Anlagenleistung geschwächt und für Designs widerlegt, die neue zentrale Ausfall- oder erhebliche Schutzgutrisiken schaffen." },
+        { "id": "lifecycle", "title": "Lebenslauf", "text": "Strategie bis 2028 → Liegenschafts- und Portfolioentscheidungen → Beschaffung und Bau → Betrieb → aggregierte Resilienz- und Treibhausgasbeobachtung → Review." },
+        { "id": "version", "title": "Versionsdelta", "text": "In der finalen Fassung sind Zieldefinition von Resilienz und Autarkie, Lebenszyklus- und Schutzkriterien sowie Monitoringfunktion zu prüfen." },
+        { "id": "coverage", "title": "Abdeckung", "text": "Vollständige erweiterte Ex-ante-Prüfung der Sicherheitsmission; öffentliche Darstellung nur auf Aggregatniveau." }
+      ],
+      "recommendationStatus": "Für diese Mission liegt kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."
+    },
+    {
+      "missionId": "WOEK-AKN-2026-M07",
+      "overview": {
+        "assessmentLabel": "Positives Capability-Potenzial – Datenbank bleibt Infrastruktur",
+        "impactCoreSummary": "Eine kuratierte Wissensdatenbank kann Such-, Wissens- und Rechtsunsicherheit verringern und nachhaltige Kriterien leichter anwendbar machen.",
+        "editorialSummary": "Die Mission besitzt positives Capability- und Transaktionskostenpotenzial, aber die Datenbank selbst ist nur Infrastruktur und Output. Wirkung entsteht erst, wenn Ausschreibungen, Zuschläge und gelieferte Leistungen tatsächlich lebenszyklusbezogen besser werden.",
+        "keyFinding": "Datenbankaufrufe oder Nutzung belegen keine bessere Beschaffungs- oder Lebenszykluswirkung.",
+        "directionLabel": "Positives Potenzial unter Nutzungs- und Outcome-Bedingungen",
+        "directionKind": "conditional",
+        "evidenceSummary": "Vollständige erweiterte Ex-ante-Prüfung; Nutzung, Vertragsqualität und Lebenszyklus-Outcomes sind noch nicht beobachtbar.",
+        "realityCheckSummary": "Ex ante: Kriterienanwendung, Bearbeitungszeit, Vertragsperformance und Lebenszyklus-Outcomes sind später getrennt zu prüfen."
+      },
+      "officialAnchor": "Beteiligungsfassung vom 16. Juli 2026, Mission 7: Wissensdatenbank für nachhaltige öffentliche Beschaffung.",
+      "evidenceMaturity": "Vollständige erweiterte Ex-ante-Prüfung einer Capability-Mission; Nutzung und Outcomes bleiben offen.",
+      "problemReview": { "status": "Problem gut belegt", "text": "Fragmentiertes Wissen, Zeitaufwand und heterogene Anwendung sind plausible Umsetzungsengpässe." },
+      "goalReview": { "status": "Ziel gestützt – Nutzung und Outcome schützen", "text": "Ziel sind bessere Beschaffungsentscheidungen, nicht bloß eine genutzte Wissensplattform." },
+      "path": { "A": "Kuratierte Kriterien, Leitfäden und Rechtswissen.", "M": "Such- und Anwendungsfriktion können sinken.", "deltaZ": "Nachhaltigkeitskriterien können häufiger und qualitativ besser integriert werden und Lebenszyklus-, Umwelt- und Sozialwirkungen verbessern.", "R": "Mensch, Planet und Demokratie über öffentliche Beschaffung." },
+      "qualityLayers": [
+        { "id": "material-omissions", "title": "Materielle Auslassungen", "text": "Nutzungs- und Adoptionsmechanismus, Update-Governance, Produktgruppenabdeckung, Lieferantenfähigkeit, Vertrags- und Performance-Outcome sowie Anschluss an bestehende Wissensangebote sind zu klären." },
+        { "id": "policy-coherence", "title": "Policy-Kohärenz", "text": "Es braucht einen Abgleich statt einer Parallelstruktur zu bestehenden Wissenssystemen des Umweltbundesamts und der öffentlichen Beschaffung." },
+        { "id": "delivery-feasibility", "title": "Delivery", "text": "Fachliche Ownership, Rechts- und Kriterienpflege, Versionierung, Nutzbarkeit, Schulung und Anschluss an Vergabeprozesse sind entscheidend." },
+        { "id": "resource-financing", "title": "Ressourcen und Finanzierung", "text": "Aufbau und Pflege sind gegen eingesparte Recherche- und Beratungszeit zu stellen. Datenbankaufrufe sind kein Nutzenmaß." },
+        { "id": "spatial-distribution", "title": "Räumliche und betriebliche Verteilung", "text": "Eine Öffnung für Länder und Kommunen kann besonders kleinen Beschaffungsstellen helfen; Auswirkungen auf Lieferanten und kleine und mittlere Unternehmen sind zu beobachten." },
+        { "id": "international-leakage", "title": "Internationale Verlagerung", "text": "Bei beschafften Waren und Dienstleistungen ist sie hoch relevant; Kriterien müssen globale Lieferketten- und Lebenszykluswirkungen berücksichtigen." },
+        { "id": "robustness", "title": "Robustheit", "text": "Rechts- und Normänderungen, Marktinnovation und veraltete Kriterien sind zu testen. Aktualisierbarkeit ist Teil der Wirkungskette." },
+        { "id": "lock-in", "title": "Reversibilität und Lock-in", "text": "Daten- und Kriterienmodelle müssen interoperabel bleiben; Abhängigkeit von einer proprietären Wissensschicht ist zu vermeiden." },
+        { "id": "falsification", "title": "Was würde die Einordnung verändern?", "text": "Der Befund wird durch bessere Anwendung und Qualität von Kriterien, sinkende Bearbeitungszeit sowie bessere Vertrags- und Lebenszyklus-Outcomes ohne erhebliche Wettbewerbsverluste gestützt. Nutzung und Seitenaufrufe allein reichen nicht." },
+        { "id": "lifecycle", "title": "Lebenslauf", "text": "Aufbau → Governance und Inhalte → Nutzung → geänderte Vergabeunterlagen → Zuschlag und Vertrag → Leistungs- und Lebenszyklus-Outcome → Aktualisierung." },
+        { "id": "version", "title": "Versionsdelta", "text": "In der finalen Fassung sind Umfang, Betreiber- und Update-Governance sowie Interoperabilität konkret zu prüfen." },
+        { "id": "coverage", "title": "Abdeckung", "text": "Vollständige erweiterte Ex-ante-Prüfung der Capability-Mission." }
+      ],
+      "recommendationStatus": "Für diese Mission liegt kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."
+    },
+    {
+      "missionId": "WOEK-AKN-2026-M08",
+      "overview": {
+        "assessmentLabel": "Positives Marktsteuerungspotenzial – Formalismus und Plattform-Lock-in begrenzen",
+        "impactCoreSummary": "In Beschaffungsplattformen integrierte Standards und Filter können Nachhaltigkeitskriterien zum normalen Bestandteil von Auswahl und Ausschreibung machen.",
+        "editorialSummary": "Die Mission besitzt positives Marktsteuerungspotenzial mit einem direkteren Verhaltenshebel als eine Wissensdatenbank, zugleich aber hohe Formalismus-, Datenqualitäts-, Wettbewerbs- und Plattform-Lock-in-Risiken. Ein Filter oder Häkchen ist noch kein Lebenszyklus-Outcome.",
+        "keyFinding": "Ein integrierter Standard verändert nur dann Wirkung, wenn reale Ausschreibungen, Zuschläge und gelieferte Leistungen lebenszyklusbezogen besser werden.",
+        "directionLabel": "Positives Potenzial unter Lebenszyklus- und Wettbewerbsbedingungen",
+        "directionKind": "conditional",
+        "evidenceSummary": "Vollständige erweiterte Ex-ante-Prüfung; Kriteriennutzung, Wettbewerb und Lebenszyklus-Performance sind noch nicht beobachtbar.",
+        "realityCheckSummary": "Ex ante: Plattformnutzung, Zuschläge, Bieterdiversität und reale Lebenszyklus-Performance sind später zu prüfen."
+      },
+      "officialAnchor": "Beteiligungsfassung vom 16. Juli 2026, Mission 8: Nachhaltigkeitsstandards in öffentliche Beschaffungsplattformen integrieren.",
+      "evidenceMaturity": "Vollständige erweiterte Ex-ante-Prüfung einer Standard- und Plattformmission; reale Vertragsoutcomes bleiben offen.",
+      "problemReview": { "status": "Problem gut belegt", "text": "Der Entwurf benennt fehlende einheitliche Standardisierung auf öffentlichen virtuellen Einkaufsplattformen." },
+      "goalReview": { "status": "Ziel gestützt – Lebenszyklus und Wettbewerb schützen", "text": "Nachhaltigere Beschaffungsentscheidungen sind problemadäquat; Filterverfügbarkeit und formale Kriteriennutzung sind nur Zwischenschritte." },
+      "path": { "A": "Standardisierte Anforderungen und Filter als Prozessdefault.", "M": "Anwendungsfriktion kann sinken und Kriterien können konsistenter genutzt werden.", "deltaZ": "Nachfrage und Zuschläge können sich verändern und Lebenszykluswirkungen verbessern.", "R": "Mensch, Planet und Demokratie über öffentliche Beschaffung." },
+      "qualityLayers": [
+        { "id": "material-omissions", "title": "Materielle Auslassungen", "text": "Kriterienhierarchie, Nachweis und Audit, produktgruppenspezifische Ausnahmen, Update-Regeln, Interoperabilität, Schutz vor Gaming und reale Vertragsperformance sind zu klären." },
+        { "id": "policy-coherence", "title": "Policy-Kohärenz", "text": "Es bestehen Synergien mit M07, dem Blauen Engel sowie bestehenden Vergabe- und Lebenszykluskosten-Instrumenten. Doppelte oder widersprüchliche Standards sind zu vermeiden." },
+        { "id": "delivery-feasibility", "title": "Delivery", "text": "Plattformanbieter, Datenmodelle und Kataloge, Beschaffungsstellen, Lieferanten und Kriterienverantwortliche müssen versioniert zusammenspielen." },
+        { "id": "resource-financing", "title": "Ressourcen und Finanzierung", "text": "Plattform-, Integrations- und Pflegekosten sowie Lieferanten-Compliance sind gegen Prozess- und Lebenszyklusnutzen zu stellen." },
+        { "id": "spatial-distribution", "title": "Räumliche und betriebliche Verteilung", "text": "Kleine Auftraggeber und Kommunen sowie Vielfalt kleiner und mittlerer Bieter sind als eigene Outcome-Schutzgrößen zu beobachten." },
+        { "id": "international-leakage", "title": "Internationale Verlagerung", "text": "Globale Lieferketten sind materiell. Nationale nachhaltige Beschaffung darf Belastungen nicht lediglich verlagern." },
+        { "id": "robustness", "title": "Robustheit", "text": "Plattformausfall, geänderte Kriterien, Marktknappheit und strategisches Ausnutzen durch Lieferanten sind zu testen." },
+        { "id": "lock-in", "title": "Reversibilität und Lock-in", "text": "Anbieter- und Schema-Lock-in sind zu vermeiden; offene Schnittstellen und portierbare Kriterienkataloge sind zu bevorzugen." },
+        { "id": "falsification", "title": "Was würde die Einordnung verändern?", "text": "Der Befund wird gestützt, wenn Ausschreibungen, Verträge und gemessene Lebenszyklus-Performance besser werden, durch Filterverfügbarkeit ohne Nutzung geschwächt und widerlegt, wenn Wettbewerb oder Bieterdiversität ohne entsprechende Wirkungsgewinne stark sinken." },
+        { "id": "lifecycle", "title": "Lebenslauf", "text": "Kriterienkatalog → Plattformintegration → Auswahl und Ausschreibung → Bieter und Zuschlag → gelieferte Leistung → Lebenszyklus- und Audit-Outcome → Aktualisierung." },
+        { "id": "version", "title": "Versionsdelta", "text": "In der finalen Fassung sind Standardkatalog, Nachweisregeln, Plattformumfang und Update- und Governance-Modell zu prüfen." },
+        { "id": "coverage", "title": "Abdeckung", "text": "Vollständige erweiterte Ex-ante-Prüfung der Standard- und Plattformmission." }
+      ],
+      "recommendationStatus": "Für diese Mission liegt kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."
+    },
+    {
+      "missionId": "WOEK-AKN-2026-M17",
+      "overview": {
+        "assessmentLabel": "Positives Klimaresilienz- und Ökosystempotenzial – Reichweite ist noch keine Resilienz",
+        "impactCoreSummary": "Förderung und Mindestanforderungen können Bewirtschaftungsentscheidungen hin zu standortangepassten, vielfältigeren und störungsresilienteren Wäldern verändern.",
+        "editorialSummary": "Die Mission besitzt positives Klimaresilienz- und Ökosystempotenzial mit langem Wirkzeitraum und hartem Outcome-Schutz. Mehr als zwei Millionen Hektar Förderfläche zeigen Reichweite, aber noch keine höhere Resilienz, Biodiversität, Wasserfunktion oder Kohlenstoffwirkung.",
+        "keyFinding": "Förderfläche ist kein Resilienznachweis; entscheidend sind langfristige Ökosystem- und Störungsdaten gegenüber geeigneten Baselines.",
+        "directionLabel": "Positives Potenzial unter langfristigen Ökosystem- und Outcome-Bedingungen",
+        "directionKind": "conditional",
+        "evidenceSummary": "Vollständige erweiterte Ex-ante-Prüfung; biologische Wirkfristen sind lang und tatsächliche Resilienz-Outcomes noch nicht beobachtbar.",
+        "realityCheckSummary": "Ex ante: Überleben, Mortalität, Strukturvielfalt, Boden, Wasser, Biodiversität und Kohlenstoff sind langfristig gegen geeignete Baselines zu beobachten."
+      },
+      "officialAnchor": "Beteiligungsfassung vom 16. Juli 2026, Mission 17: Wälder durch klimaangepasstes Waldmanagement resilienter machen.",
+      "evidenceMaturity": "Vollständige erweiterte Ex-ante-Prüfung einer Langfristmission; tatsächliche Resilienz-Outcomes sind noch nicht beobachtbar.",
+      "problemReview": { "status": "Problem gut belegt", "text": "Der Klimawandel erhöht Dürre-, Hitze-, Schädlings- und Störungsrisiken; Standort- und Bestandsvulnerabilität bleiben heterogen." },
+      "goalReview": { "status": "Ziel gestützt – Multifunktion und langer Zeitraum schützen", "text": "Ziel sind robuste Waldökosystemfunktionen über Jahrzehnte, nicht Förderfläche allein." },
+      "path": { "A": "Förderung, Mindestanforderungen und Beratung.", "M": "Baumarten-, Struktur-, Boden- und Risikobewirtschaftung können sich verändern.", "deltaZ": "Anpassungsfähigkeit kann steigen und Schadensanfälligkeit kann sinken.", "R": "Biodiversität, Kohlenstoff, Wasser, Erholung und Forstfunktion." },
+      "qualityLayers": [
+        { "id": "material-omissions", "title": "Materielle Auslassungen", "text": "Standortspezifische Baselines und Klimaszenarien, natürliche Regeneration, Boden-, Wasser- und Biodiversitätsparameter, Permanenz sowie Wirkmonitoring jenseits eingeschriebener Fläche sind erforderlich." },
+        { "id": "policy-coherence", "title": "Policy-Kohärenz", "text": "Biodiversitäts-, Klima-, Wasser- und Holznutzungsziele sind kohärent zu prüfen. Zielkonflikte dürfen nicht über einen Wald-Gesamtscore verrechnet werden." },
+        { "id": "delivery-feasibility", "title": "Delivery", "text": "Beratungs- und Kontrollkapazität, heterogene private und kommunale Waldbesitzstrukturen sowie lange biologische Wirkfristen sind Engpässe." },
+        { "id": "resource-financing", "title": "Ressourcen und Finanzierung", "text": "Förder-, Opportunitäts- und Pflegekosten sowie vermiedene Schadens- und Wiederbewaldungskosten sind über den Lebenszyklus zu betrachten." },
+        { "id": "spatial-distribution", "title": "Räumliche Verteilung", "text": "Regionen, Standorttypen, Eigentümergrößen sowie Erholungs- und Nutzergruppen sind getrennt zu beobachten." },
+        { "id": "international-leakage", "title": "Internationale Verlagerung", "text": "Holznutzungs- und Importverlagerung sind mitzuprüfen; nationale Schutzwirkung darf erhöhten Importdruck nicht unsichtbar machen." },
+        { "id": "robustness", "title": "Robustheit", "text": "Kombinierte Dürre, Hitze, Feuer, Sturm und Schädlingsbelastung sind statt nur eines mittleren Klimaszenarios zu testen." },
+        { "id": "lock-in", "title": "Reversibilität und Lock-in", "text": "Fehlangepasste langfristige Baumarten- und Bestandsentscheidungen sind ein zentraler Lock-in. Vielfalt und adaptive Bewirtschaftung erhöhen Reversibilität." },
+        { "id": "falsification", "title": "Was würde die Einordnung verändern?", "text": "Der Befund wird durch bessere Überlebens-, Mortalitäts-, Strukturvielfalts-, Boden-, Wasser-, Biodiversitäts- und Kohlenstoffwerte gegenüber geeigneten Baselines gestützt, durch bloß steigende Förderfläche geschwächt und für Maßnahmen widerlegt, die Störungs- oder Schutzgutrisiken langfristig erhöhen." },
+        { "id": "lifecycle", "title": "Lebenslauf", "text": "Förderprogramm → Vertrags- und Praxisänderung → Bestandsstruktur → Extremereignis oder Trend → Ökosystem- und Resilienzbeobachtung → langfristiger Reality Check." },
+        { "id": "version", "title": "Versionsdelta", "text": "Die finale Fassung ist auf Kriterien, Outcome-Monitoring und die Zieldefinition wirksamer Anpassung zu prüfen." },
+        { "id": "coverage", "title": "Abdeckung", "text": "Vollständige erweiterte Ex-ante-Prüfung der Langfristmission." }
+      ],
+      "recommendationStatus": "Für diese Mission liegt kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."
+    },
+    {
+      "missionId": "WOEK-AKN-2026-M18",
+      "overview": {
+        "assessmentLabel": "Hohes Lern- und Integrationspotenzial – Skalierbarkeit bleibt offen",
+        "impactCoreSummary": "Ein ko-designtes Reallabor mit blau-grün-roter Infrastruktur kann sektorübergreifende Wasser-, Energie-, Bau-, Natur- und Gesundheitseffekte sowie reale Engpässe sichtbar machen.",
+        "editorialSummary": "Die Mission besitzt hohes Lern- und Integrationspotenzial, aber ein Reallabor ist noch kein allgemeiner Wirkungsnachweis. Der Mehrwert liegt besonders im Lernen; Skalierung benötigt externe Validität, Verteilungsprüfung und tragfähige Governance.",
+        "keyFinding": "Ein einzelner Demonstrationsstandort belegt keine bundesweite Skalierbarkeit oder dauerhafte Quartierswirkung.",
+        "directionLabel": "Hohes positives Lernpotenzial bei offener Übertragbarkeit",
+        "directionKind": "conditional",
+        "evidenceSummary": "Vollständige erweiterte Ex-ante-Prüfung; reale Pilot-Outcomes, Gegenfaktum und externe Validität bleiben offen.",
+        "realityCheckSummary": "Ex ante: Vorab definierte Zustandsmetriken, Vergleich, dauerhafte Performance und Replikation müssen später beobachtet werden."
+      },
+      "officialAnchor": "Beteiligungsfassung vom 16. Juli 2026, Mission 18: Integrierte klima-, ressourcenschonende und lebenswerte Quartiere erproben.",
+      "evidenceMaturity": "Vollständige erweiterte Ex-ante-Prüfung einer Reallabormission; reale Pilot-Outcomes und externe Validität bleiben offen.",
+      "problemReview": { "status": "Problem gut belegt", "text": "Stadtquartiere leiden bei Hitze-, Starkregen-, Ressourcen- und Infrastrukturproblemen unter sektoraler Planung." },
+      "goalReview": { "status": "Ziel gestützt – Bezahlbarkeit, Gesundheit und Transfer schützen", "text": "Integrierte, lebenswerte und ressourcenschonende Quartiere sind problemadäquat; Lernen, Verteilung und Übertragbarkeit sind Teil des Zielzustands." },
+      "path": { "A": "Ko-designtes Reallabor und blau-grün-rote Infrastruktur.", "M": "Reale Interaktionen und Engpässe können messbar und integrierte Lösungen optimiert werden.", "deltaZ": "Hitze-, Überflutungs- und Ressourcenlast können sinken und Lebensqualität kann steigen.", "R": "Mensch, Planet und kommunale Handlungsfähigkeit." },
+      "qualityLayers": [
+        { "id": "material-omissions", "title": "Materielle Auslassungen", "text": "Belastbare Baseline und Gegenfaktum, externe Validität, Verdrängung und Gentrifizierung, Lebenszyklusmaterialien, Wartungs- und Betriebsmodell sowie Skalierungsgate sind erforderlich." },
+        { "id": "policy-coherence", "title": "Policy-Kohärenz", "text": "Stadtplanung, Wasser, Energie, Wohnen, Gesundheit und Naturschutz bieten hohe Synergien; Kompetenz- und Akteursgrenzen müssen transparent bleiben." },
+        { "id": "delivery-feasibility", "title": "Delivery", "text": "Stadt, Forschung, Infrastrukturbetreiber, Eigentümer, Genehmigung, Datenzugang und dauerhafte Wartung bilden eine gemeinsame Delivery-Kette." },
+        { "id": "resource-financing", "title": "Ressourcen und Finanzierung", "text": "Pilot- und Betriebskosten sind gegen vermiedene Infrastruktur-, Klima- und Gesundheitskosten zu stellen. Kosten-Nutzen-Potenziale des Entwurfs dürfen nicht ungeprüft bundesweit verallgemeinert werden." },
+        { "id": "spatial-distribution", "title": "Räumliche und soziale Verteilung", "text": "Lokale Nutzen und Belastungen, Mieten und Verdrängung, vulnerable Hitze- und Gesundheitsgruppen sowie Übertragbarkeit auf andere Stadtstrukturen sind zu prüfen." },
+        { "id": "international-leakage", "title": "Internationale Verlagerung", "text": "In Materialien und Energie verkörperte Wirkungen sowie Lieferketten von Bau- und Techniklösungen sind mitzuprüfen." },
+        { "id": "robustness", "title": "Robustheit", "text": "Extremhitze, Starkregen, Wartungsausfall, Nutzungsverhalten und Finanzierungswechsel sind zu testen." },
+        { "id": "lock-in", "title": "Reversibilität und Lock-in", "text": "Modulare, naturbasierte und adaptive Lösungen sind zu bevorzugen. Pilottechnologie darf keine schwer korrigierbare Infrastrukturbindung erzeugen." },
+        { "id": "falsification", "title": "Was würde die Einordnung verändern?", "text": "Der Befund wird durch vorab definierte Zustandsmetriken, tragfähigen Vergleich, dauerhafte Performance und Replikation gestützt, durch Demonstrationsoutput ohne Outcome geschwächt. Ein einzelner Standort beweist keine bundesweite Skalierbarkeit." },
+        { "id": "lifecycle", "title": "Lebenslauf", "text": "Reallabor-Design → Demonstrator → Messung und Vergleich → Transferentscheidung → kommunale Anwendung → Outcome und Reality Check." },
+        { "id": "version", "title": "Versionsdelta", "text": "In der finalen Fassung sind Evaluations- und Transferdesign, Bezahlbarkeit, Verteilung und Skalierungskriterien zu prüfen." },
+        { "id": "coverage", "title": "Abdeckung", "text": "Vollständige erweiterte Ex-ante-Prüfung der Reallabormission; externe Validität bleibt offen." }
+      ],
+      "recommendationStatus": "Für diese Mission liegt kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."
+    },
+    {
+      "missionId": "WOEK-AKN-2026-M19",
+      "overview": {
+        "assessmentLabel": "Positives Nachfragepotenzial – Gegenfaktum und Selbstselektion sind kritisch",
+        "impactCoreSummary": "Arbeitgeber können Pendel- und Dienstmobilitätsanreize, Angebote und Infrastruktur verändern und so Pkw-Kilometer, Emissionen, Gesundheit und Zugang beeinflussen.",
+        "editorialSummary": "Die Mission besitzt positives, vergleichsweise reversibles Nachfrage- und Verhaltenssteuerungspotenzial mit hohem Selbstselektions- und Gegenfaktumsrisiko. Die Pro-Kopf-CO₂-Entwicklung teilnehmender Organisationen allein belegt keinen kausalen Effekt des betrieblichen Mobilitätsmanagements.",
+        "keyFinding": "Sinkende Pro-Kopf-Emissionen teilnehmender Organisationen sind ohne Vergleichsbasis kein Nachweis zusätzlicher Mobilitätswirkung.",
+        "directionLabel": "Positives Potenzial bei offener kausaler Zusatzwirkung",
+        "directionKind": "conditional",
+        "evidenceSummary": "Vollständige erweiterte Ex-ante-Prüfung; Selbstselektion, Vergleichsbasis und kausale Zusatzwirkung bleiben offen.",
+        "realityCheckSummary": "Ex ante: Pkw-Kilometer, Modal Split, Emissionen, Zugang und Gesundheit sind gegenüber einer geeigneten Vergleichsbasis zu prüfen."
+      },
+      "officialAnchor": "Beteiligungsfassung vom 16. Juli 2026, Mission 19: Betriebliches Mobilitätsmanagement institutionalisieren und fördern.",
+      "evidenceMaturity": "Vollständige erweiterte Ex-ante-Prüfung einer Nachfrage- und Verhaltensmission; Attribution bleibt offen.",
+      "problemReview": { "status": "Problem gut belegt – Heterogenität schützen", "text": "Verkehrs-Treibhausgase, Pkw-Abhängigkeit und Mobilitätskosten sind materiell; Arbeitsorte, Regionen und Schichtmodelle unterscheiden sich jedoch stark." },
+      "goalReview": { "status": "Ziel gestützt – Zugang und Gesundheit schützen", "text": "Zielzustand ist weniger emissions- und kostenintensive Mobilität bei erreichbaren Arbeitsplätzen, nicht nur geringere Abhängigkeit vom Kraftstoffpreis." },
+      "path": { "A": "Mobilitätsaudit sowie Arbeitgeberangebote, Anreize und Regeln.", "M": "Modal Split und Fahrten können sich verändern.", "deltaZ": "Pkw-Kilometer und CO₂ können sinken; Gesundheit, Zeit und Zugang können sich verbessern.", "R": "Mensch und Planet; Arbeits- und Datenschutzrecht getrennt." },
+      "qualityLayers": [
+        { "id": "material-omissions", "title": "Materielle Auslassungen", "text": "Bilanzgrenzen, Homeoffice-Rebound, induzierte Fahrten, Selbstselektion von Arbeitgebern, Zugänglichkeit für ländliche Räume und Schichtarbeit sowie eine geeignete Vergleichsgruppe sind zu klären." },
+        { "id": "policy-coherence", "title": "Policy-Kohärenz", "text": "Betriebliches Mobilitätsmanagement ergänzt ÖPNV-, Rad-, Raum- und Arbeitsortpolitik, ersetzt strukturelle Infrastruktur aber nicht." },
+        { "id": "delivery-feasibility", "title": "Delivery", "text": "Arbeitgeberkapazität, Betriebs- und Personalvertretung, Datenschutz bei Mobilitätsdaten und die Verfügbarkeit realer Alternativen sind entscheidend." },
+        { "id": "resource-financing", "title": "Ressourcen und Finanzierung", "text": "Förder-, Beratungs- und Arbeitgeberkosten sind gegen Mobilitäts-, Park-, Zeit- und Gesundheitsnutzen zu stellen. Eine pauschale Wirtschaftlichkeitsannahme ist nicht belastbar." },
+        { "id": "spatial-distribution", "title": "Räumliche und soziale Verteilung", "text": "Stadt und Land, Einkommen, Schichtarbeit, Behinderung, Sorgeverpflichtungen und ÖPNV-Erreichbarkeit sind ausdrücklich zu prüfen." },
+        { "id": "international-leakage", "title": "Internationale Verlagerung", "text": "Sekundär sind Fahrzeug-, Energie- und Mobilitätsdienst-Lebenszyklen relevant; wichtiger ist nationale Verlagerung statt tatsächlicher Vermeidung." },
+        { "id": "robustness", "title": "Robustheit", "text": "Kraftstoffpreisänderung, ÖPNV-Störung, Wetter, Verschiebung zu mobiler Arbeit und Standortwechsel sind zu testen." },
+        { "id": "lock-in", "title": "Reversibilität und Lock-in", "text": "Die Instrumente sind überwiegend reversibel; proprietäre Mobilitätsplattformen und langfristige Subventionsabhängigkeit sind zu vermeiden." },
+        { "id": "falsification", "title": "Was würde die Einordnung verändern?", "text": "Robuste Zurechnung verlangt Gegenfaktum oder vergleichbare Trends. Der Befund wird gestützt, wenn Pkw-Kilometer und CO₂ gegenüber einer geeigneten Vergleichsbasis zusätzlich sinken, durch bereits vorher sinkende Trends der Teilnehmenden geschwächt und für Maßnahmen ohne zusätzliche Mobilitätsänderung widerlegt." },
+        { "id": "lifecycle", "title": "Lebenslauf", "text": "Teilnahme und Audit → Maßnahmenmix → Nutzung und Modal Split → Pkw-Kilometer, CO₂ und Gesundheit → Gegenfaktum- und Contribution-Recheck → Anpassung." },
+        { "id": "version", "title": "Versionsdelta", "text": "In der finalen Fassung sind Messgrenze, Vergleichs- und Attributionsdesign sowie Verteilungs- und Datenschutzregeln zu prüfen." },
+        { "id": "coverage", "title": "Abdeckung", "text": "Vollständige erweiterte Ex-ante-Prüfung der Nachfrage- und Verhaltensmission; Zurechnung bleibt offen." }
+      ],
+      "recommendationStatus": "Für diese Mission liegt kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."
+    }
+  ]
+}

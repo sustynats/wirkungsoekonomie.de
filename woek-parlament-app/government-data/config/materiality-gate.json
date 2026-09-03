@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "method_version": "WOEK-GOV-MAT-1.0",
+  "classes": ["REGISTER_ONLY", "STANDARD_CHECK", "FULL_WOEK_CHECK", "URGENT_BOUNDARY_REVIEW"],
+  "reason_codes": ["RIGHTS", "RULE_OF_LAW", "DEMOCRACY", "LARGE_POPULATION", "VULNERABLE_GROUP", "HIGH_BUDGET", "LONG_TERM_FISCAL", "CLIMATE", "BIODIVERSITY", "RESOURCE", "HEALTH", "SECURITY", "CRITICAL_INFRASTRUCTURE", "DISTRIBUTION", "PATH_DEPENDENCE", "IRREVERSIBILITY", "SYSTEM_TRANSFORMATION", "HIGH_UNCERTAINTY_HIGH_HARM", "OTHER"],
+  "signals": {
+    "national_scope": "boolean|null",
+    "affected_population_explicit": "number|string|null",
+    "budget_amount_explicit": "number|string|null",
+    "legal_change": "boolean|null",
+    "constitutional_reference_explicit": "boolean|null",
+    "rights_relevance_candidate": "boolean|null",
+    "multi_ministry": "boolean|null",
+    "long_term_strategy": "boolean|null",
+    "major_infrastructure": "boolean|null",
+    "international_commitment": "boolean|null",
+    "irreversibility_candidate": "boolean|null",
+    "critical_infrastructure_candidate": "boolean|null"
+  },
+  "rules": [
+    {"rule_id": "MAT-BOUNDARY-001", "if": "credible_candidate_for_non_compensable_boundary", "then": "URGENT_BOUNDARY_REVIEW", "note": "Rights and other red-line candidates are never averaged away."},
+    {"rule_id": "MAT-SYSTEM-001", "if": "long_term_strategy OR major_infrastructure OR irreversibility_candidate OR system_transformation_candidate", "then_at_least": "FULL_WOEK_CHECK"},
+    {"rule_id": "MAT-UNCERTAINTY-001", "if": "high_uncertainty AND high_possible_harm", "then_at_least": "FULL_WOEK_CHECK", "note": "Uncertainty does not lower materiality where potential harm is large."}
+  ],
+  "prohibitions": [
+    "No fixed euro threshold without explicit calibration release.",
+    "No additive score that can compensate a non-compensable boundary.",
+    "No materiality classification before READY_FACT_LAYER.",
+    "No person-level materiality or social-credit score."
+  ]
+}

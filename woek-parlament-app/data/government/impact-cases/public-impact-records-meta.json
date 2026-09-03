@@ -1,0 +1,26 @@
+{
+  "fachrelease": "WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0",
+  "imported_at": "2026-08-18T14:40:53+02:00",
+  "impact_cases_total": 63,
+  "impact_cases_full_schema_2_0_1": 6,
+  "impact_cases_compact_source_preserved": 57,
+  "impact_cases_published": 63,
+  "impact_cases_blocked_editorial_quality": 0,
+  "fach_content_loss": 0,
+  "editorial_layer_status": "LEADING_PUBLIC_EDITORIAL_LAYER",
+  "editorial_layer_coverage": 63,
+  "editorial_layer_manifest": "GOVERNMENT-EDITORIAL-LAYER-MANIFEST-2.0-2026-08-18.json",
+  "editorial_layer_source_hashes": {
+    "GOVERNMENT-EDITORIAL-LAYER-2.0-PART-1-W1-W4-2026-08-18.jsonl": "0c40139e4b07fc78601cfc73bdc7e05614fe851e86f173325ad3b956dbee75f9",
+    "GOVERNMENT-EDITORIAL-LAYER-2.0-PART-2-W5-W8-2026-08-18.jsonl": "76ebd9d83d81b1a0049a8bbfa93b5e5effad763d698b3ccc719cac6f3d61c0c3",
+    "GOVERNMENT-EDITORIAL-LAYER-2.0-PART-3-W9-W11-2026-08-18.jsonl": "a512b48ce9c49182b3e29bdb39e50d858c4bf408e5588c9cf2cc39612f6542df",
+    "GOVERNMENT-EDITORIAL-LAYER-2.0-CORRECTIONS-2026-08-18.jsonl": "1374e6601a274faf587362cf48c15136cf7c2d4f6e1d916d01a069c2603002f2"
+  },
+  "editorial_evidence_backfill_count": 19,
+  "editorial_evidence_backfill_source_hashes": {
+    "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B01.jsonl": "031a7e67d2eba4ff3ad4b2758c317b4a4baf64cb4acc064646baa572186f7560",
+    "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B02.jsonl": "491df1f67f0d595337c3f9be7b58930345ec28a28880d8f00e843e67dbc32d0b"
+  },
+  "note": "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Nach dem fachlich freigegebenen B07-Reconciliation-Handoff bestehen alle 63 Fälle das fachliche und gerenderte redaktionelle P0-Gate. CodeX hat keine Ersatztexte oder Empfehlungen erzeugt.",
+  "b07_reconciliation_status": "ALL_10_REVIEW_CASES_APPROVED_AND_PROMOTED"
+}

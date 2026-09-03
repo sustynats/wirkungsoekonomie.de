@@ -1,0 +1,75 @@
+{
+  "schema_version": "woek-st-cdu-final-residual-binding-1.0",
+  "manifest_id": "ST-CDU-FINAL-RESIDUAL-BINDING-V1",
+  "source_pins": {
+    "issue": 234,
+    "comments": [
+      {
+        "id": 5381703252,
+        "updated_at": "2026-08-22T17:33:57Z",
+        "body_sha256": "804f4f8c937bb96cc83c144b42785656123d5d49e18c48a07a20cbd864fe38b4"
+      },
+      {
+        "id": 5383655655,
+        "updated_at": "2026-08-23T01:49:16Z",
+        "body_sha256": "329a053e4ad7e2f248fde966cf00a9113ff75b34563d461d3b02aead094b94e3"
+      },
+      {
+        "id": 5385115126,
+        "updated_at": "2026-08-23T08:42:07Z",
+        "body_sha256": "0ba3856971df07800e627425dfa640e9e58ba452ee6174a110eda9fd71cc76b4"
+      }
+    ],
+    "upstream_pr": 257,
+    "upstream_commit": "5ba3403a561f9ba3c9d337bf58ab176d16737341",
+    "upstream_manifest": {
+      "path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-final-versioned-manifest-v1.json",
+      "sha256": "132672058cd0d50fdb61b0044ef2550dda1c8e9cbfbca67c63fb4ef93dde8af9"
+    },
+    "upstream_audit": {
+      "path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-audit-v1.json",
+      "sha256": "8abcd8dc580e9a34e4e2b423066d1da3371c56c4d7ac76fe456fbd9b4cb526e8"
+    }
+  },
+  "binding": {
+    "relation": "RESTATEMENT",
+    "from_historical_ordinal": "0259",
+    "from_source_unit_id": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",
+    "from_terminal_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+    "from_semantic_role": "RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING",
+    "to_historical_ordinal": "0251",
+    "to_parent_source_unit_id": "ltw-2026-st-cdu-0251-tierschutz-besser-unterstuetzen-die-tierheime-und-tierschu",
+    "to_stable_source_unit_id": "ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-FUNDING",
+    "to_terminal_status": "EDITORIAL_V2_PLUS_APPROVED",
+    "to_impact_direction": "POSITIVE",
+    "to_evidence_level": "MEDIUM",
+    "source_history_preserved": true,
+    "independent_source_leaf_count": 0,
+    "independent_effect_leaf_count": 0
+  },
+  "remaining_blockers": [],
+  "resolved_residual": {
+    "historical_parent": "0244",
+    "source_comment_id": 5385115126,
+    "source_comment_body_sha256": "0ba3856971df07800e627425dfa640e9e58ba452ee6174a110eda9fd71cc76b4",
+    "parent_role": "PARENT_PROVENANCE_NONCOUNTING",
+    "terminal_child_records_found": 5,
+    "terminal_child_ids": [
+      "ST-CDU-PRIMARY-SPLIT-0244-REGULATION",
+      "ST-CDU-PRIMARY-SPLIT-0244-OWNERSHIP-SUBSIDY",
+      "ST-CDU-PRIMARY-SPLIT-0244-SOCIAL-HOUSING",
+      "ST-CDU-PRIMARY-SPLIT-0244-ENERGY-RETROFIT",
+      "ST-CDU-PRIMARY-SPLIT-0244-ACCESSIBILITY"
+    ],
+    "status": "RESOLVED_EXACT_SOURCE_BOUND_TERMINAL_CHILDREN"
+  },
+  "constraints": {
+    "new_fach_semantics": false,
+    "stable_ids_source_bound_by_comment": 5385115126,
+    "public_count_mutated": false,
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "score": "NOT_CREATED",
+    "denominator": "FROZEN_IN_ST_CDU_FINAL_CONVERGENCE_V1"
+  }
+}

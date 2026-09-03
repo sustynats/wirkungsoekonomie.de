@@ -1,0 +1,191 @@
+# WÖk Integration Registry (maschinenlesbar)
+# Stand: 2026-08-14 · Erhebung: Repo-Inventur origin/main (a88d2941) · Statusangaben von Codex zu verifizieren (TECHNICAL_CAPABILITY_MAP.md)
+# privacy_class: PUBLIC | INTERNAL | PERSONAL_DATA | SENSITIVE | ADMIN_ONLY
+
+integrations:
+  - integration_id: woek-core-static-api
+    system: Website (GitHub Pages)
+    purpose: Read-only-Snapshot-API der öffentlichen Website-Inhalte (kein Server)
+    base_url: https://wirkungsoekonomie.de/api/v1/
+    authentication: keine
+    available_operations:
+      - GET capabilities/   # Architekturprinzipien + Datenklassen + Grenzen
+      - GET glossary/       # aus assets/data/glossary-lookup.json
+      - GET methods/        # 152 WÖMS-Kernmethoden in 16 Kategorien (v2.0, Stand 2026-07-10, sourceSha256 fdfb7cb2…); kanonisch content/methods/woems-methoden.json → public/data/woems-methoden.json
+      - GET canvases/       # 208 Canvas (152 Methoden-Canvas + 56 Varianten), public/data/woems-canvas.json
+      - GET search/         # Metadaten zum Suchindex (assets/search/search-index.json)
+      - GET sdg-plus/       # aus assets/data/sdg-reference.json
+      - GET wirkungsradar/  # 13 Debattenkarten + Distribution-Kits + Embed-Formate
+    data_contract: statisch generiertes JSON, je Endpunkt index.json + index.html-Zwilling
+    rate_limits: keine (statisches Hosting)
+    privacy_class: PUBLIC
+    repository_adapter: scripts/api/build-core-api-manifest.mjs (npm run build:api)
+    current_status: PRODUCTION
+    owner: Website-Repo (Codex-Lane)
+    last_verified: "2026-08-14 (Code-Inventur; kein Funktionstest)"
+
+  - integration_id: woek-kern-api-oracle
+    system: WÖk-Kern-API auf Oracle-Cloud-VM
+    purpose: Dynamische Logik – KI, Faktencheck, Produktcheck, Feedback, Share-Links, Community-Auth
+    base_url: https://130.162.217.58.sslip.io
+    base_url_override: window.WOEK_API_BASE / window.WOEK_FACTCHECK_API_URL
+    authentication: keine Pflicht-Auth; optional Bearer (Discord-OAuth-Token), anonyme X-WOEK-Client-ID
+    available_operations:
+      - POST /api/factcheck          # Faktencheck/Wirkungscheck (claim, context, domain, optional Bild)
+      - POST /api/woek-ai            # „Frag die WÖk"
+      - POST /api/product-check      # Produktcheck (Wirkungsscore, SDG-Bezug, Reverse Merit Order)
+      - POST /api/feedback
+      - POST /api/share-result  |  GET /api/share-result/{id}
+      - POST /api/community/discord-token  |  GET /api/community/status
+    data_contract: JSON; Clients assets/js/faktencheck.js, woek-app.js, woek-ai-client.js, woek-community-auth-v2.js
+    privacy_class: PUBLIC (anonyme Client-ID; keine Accountpflicht)
+    current_status: PRODUCTION
+    owner: Codex-Lane (Server nicht im Website-Repo)
+    last_verified: "2026-08-14 (Client-Code-Inventur; Endpoint nicht durchgetestet)"
+
+  - integration_id: kwi-serverless
+    system: KWI-Berechnungsfunktion (api/kwi.py, Serverless-Signatur)
+    purpose: Kommunalen Wirkungsindex on demand berechnen (GET ?q=<Kommune>)
+    base_url: UNKNOWN (Runtime/Deployment-Ziel aus Repo nicht ableitbar)
+    authentication: keine; CORS *
+    repository_adapter: api/kwi.py → tools/kwi_collect.py
+    privacy_class: PUBLIC
+    current_status: UNKNOWN (Deployment nicht verifiziert)
+    last_verified: "2026-08-14 (nur Code)"
+
+  - integration_id: supabase-site-analytics
+    system: Supabase Edge Function (Projekt fganranxrdyewbjpvubx)
+    purpose: Consent-gesteuertes, datensparsames Site-Analytics (Page-Views/Klicks)
+    base_url: https://fganranxrdyewbjpvubx.supabase.co/functions/v1/site-event
+    authentication: keine im Request sichtbar (reiner Ingest)
+    data_contract: Pfad, Referrer, Session-/Visitor-ID (selbst erzeugt), Geräteinfo; sendBeacon-Fallback
+    repository_adapter: assets/js/main.js (sendSiteAnalyticsEvent)
+    privacy_class: INTERNAL (pseudonyme IDs, kein Login-Bezug)
+    current_status: PRODUCTION
+    last_verified: "2026-08-14 (Client-Code)"
+
+  - integration_id: akademie-app-api
+    system: Akademie-App (Next.js, akademie.wirkungsoekonomie.de)
+    purpose: Konto/Merkliste („Mein Wirkungsraum"), Community-Einreichungen, Redaktionsfunktionen
+    base_url: https://akademie.wirkungsoekonomie.de
+    authentication: Cookie-Session (credentials include)
+    available_operations:
+      - GET /api/me · GET/POST/DELETE /api/me/saved   # WÖk-ID-Merkliste geräteübergreifend
+      - /narrativ-einreichen/                          # Community-Narrativ-Einreichung (Linkziel)
+      - /dozentin/narrative                            # Redaktions-Queue (Redirect-Ziel von admin/)
+      - /fragen/einreichen
+    repository_adapter: assets/js/woek-wirkungsraum-account.js; Details siehe ACADEMY_CAPABILITIES.md
+    privacy_class: PERSONAL_DATA (Login-gebunden)
+    current_status: PRODUCTION
+    last_verified: "2026-08-14 (Client-Code + Live-200 der Domain)"
+
+  - integration_id: institut-quellen-api
+    system: Institut (institut.wirkungsoekonomie.de)
+    purpose: Einzige Datenquelle des Quellenarchiv-Spiegels der Website (read-only)
+    base_url: https://institut.wirkungsoekonomie.de/api/quellen
+    authentication: UNKNOWN (nur build-seitig aufgerufen)
+    data_contract: JSON-Quellenliste; eingefrorener Snapshot content/quellenarchiv/sources.json (1024 Quellen im Repo-Stand)
+    repository_adapter: scripts/quellenarchiv/build-quellenarchiv-pages.mjs (nur bei QUELLENARCHIV_FETCH=1)
+    sync: .github/workflows/quellenarchiv-sync.yml (wöchentlich Mo 04:00 UTC, öffnet Auto-PR)
+    privacy_class: PUBLIC (kuratierte Quellen)
+    current_status: PRODUCTION
+    last_verified: "2026-08-14 (Workflow + Snapshot im Repo)"
+
+  - integration_id: github-releases-cdn
+    system: GitHub Releases (Tag woek-public-assets-v2)
+    purpose: Hosting großer öffentlicher Medien/Dokumente (Audio, Video >20MB, PDF/XLSX/DOCX/ZIP) außerhalb des Pages-Artefakts
+    base_url: https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-public-assets-v2/
+    data_contract: Pfadkodierung mit Doppel-Unterstrich statt Slash; Registry assets/data/public-release-assets.json
+    repository_adapter: scripts/assets/check-release-assets.mjs (Policy-Gate)
+    privacy_class: PUBLIC
+    current_status: PRODUCTION
+    last_verified: "2026-08-14"
+
+  - integration_id: discord-community
+    system: Discord
+    purpose: Community-Login (OAuth implicit flow) + automatisches Journal-Posting
+    available_operations:
+      - OAuth https://discord.com/oauth2/authorize (client_id 1520742698615832586, redirect {origin}/app/)
+      - Webhook-Posting neuer Journal-Einträge (Cron alle 30 Min)
+    repository_adapter: assets/js/woek-community-auth-v2.js; .github/workflows/discord-journal-rss.yml + scripts/discord/publish-journal-rss.mjs (Secret DISCORD_JOURNAL_WEBHOOK_URL)
+    privacy_class: PERSONAL_DATA (OAuth-Token im localStorage)
+    current_status: PRODUCTION
+    last_verified: "2026-08-14 (Code)"
+
+  - integration_id: bundeswahlleiterin-strukturdaten
+    system: bundeswahlleiterin.de (CSV-Downloads)
+    purpose: Wahlkreis-Strukturdaten für den Wahlkreis-Wirkungscheck
+    data_contract: Build-Zeit-Import → assets/js/wahlkreis-wirkungscheck/data-2025.js (statisch, kein Laufzeit-Call)
+    repository_adapter: scripts/wahlkreis-wirkungscheck/build-district-data.mjs
+    privacy_class: PUBLIC (amtliche Strukturdaten)
+    current_status: PRODUCTION (statischer Datenstand 2025)
+    last_verified: "2026-08-14"
+
+  - integration_id: dip-bundestag
+    system: DIP / Bundestag Open Data
+    purpose: Parlamentarische Vorgänge, Drucksachen, Plenarprotokolle, Abstimmungen
+    base_url: https://dip.bundestag.de/
+    current_status: PLANNED  # NICHT implementiert – nur Registry-Eintrag content/data/external-data-sources.json (id bundestag-bundesrat, quality_level_default C)
+    gap: Kern-Lücke für das Wirkungsportal Parlament; API-Doku vor Implementierung neu prüfen
+    privacy_class: PUBLIC
+    last_verified: "2026-08-14 (Negativbefund per Code-Suche)"
+
+  - integration_id: civicrm-limesurvey-mdb-dialog
+    system: CiviCRM + LimeSurvey + eigener Analytics-Dienst (PostgreSQL)
+    purpose: Geplante Abgeordneten-Dialog-Infrastruktur (Versand, Umfragen) für den Wirkungscheck
+    current_status: PROTOTYPE  # Docker-Compose nur lokal (127.0.0.1:8081/8082), kein produktiver Betrieb
+    repository_adapter: ops/wahlkreis-wirkungscheck/ + docs/wirkungscheck/ (ANALYTICS_/EMAIL_-Architekturdokumente)
+    privacy_class: PERSONAL_DATA (bei Betrieb)
+    last_verified: "2026-08-14 (nur Doku/Compose, kein Deployment)"
+
+  - integration_id: smtp-newsletter
+    system: E-Mail/Newsletter
+    purpose: (noch) nicht vorhanden – Kontakt via mailto:, IONOS-SMTP nur als Zukunftsnotiz in ops/wahlkreis-wirkungscheck/README.md
+    current_status: PLANNED
+    privacy_class: PERSONAL_DATA (bei Betrieb)
+    last_verified: "2026-08-14 (Negativbefund)"
+
+  # ── Akademie-App-seitige Integrationen (Repo woek-akademie-app) ──────────
+  - integration_id: akademie-supabase
+    system: Supabase (Projekt fganranxrdyewbjpvubx) — geteilt mit Institut
+    purpose: System of Record der Akademie (Nutzer, Rollen, Fortschritt, Prüfungen, Einreichungen, Analytics)
+    authentication: Supabase Auth (Provider NUR Discord; LinkedIn nicht implementiert) + Service-Role serverseitig
+    data_contract: 19 Migrationen, Tabellen siehe ACADEMY_CAPABILITIES.md; keine Edge Functions in diesem Repo
+    privacy_class: PERSONAL_DATA
+    current_status: PRODUCTION
+    last_verified: "2026-08-14 (Migrationen gelesen)"
+  - integration_id: akademie-discord-api
+    system: Discord API (guilds/members)
+    purpose: Serverseitige Rollenprüfung (Bot-Token) → Akademie-Rollen student/instructor/dozent/admin
+    repository_adapter: woek-akademie-app lib/discord.ts
+    privacy_class: PERSONAL_DATA
+    current_status: PRODUCTION
+    last_verified: "2026-08-14"
+  - integration_id: akademie-hosted-llm
+    system: Together AI (Default) / OpenRouter / Fireworks — OpenAI-kompatibel
+    purpose: WÖk-KI-Beta (/api/ki-beta): RAG über gespiegelten Website-Suchindex + Hosted-LLM mit Modell-Fallback
+    repository_adapter: lib/woek-ai/hostedProvider.ts + lib/woek-ai/retrieval.ts
+    privacy_class: INTERNAL (Anfrageinhalte an LLM-Anbieter)
+    current_status: PRODUCTION (Retrieval-only ohne Key)
+    last_verified: "2026-08-14"
+  - integration_id: akademie-kwi-live
+    system: sdg-portal.de (Live-Scraping)
+    purpose: GET /api/kwi — KWI-Berechnung on demand (CORS für Hauptwebsite)
+    repository_adapter: lib/kwi/collector.ts
+    current_status: BROKEN_SUSPECTED  # Quelle lt. docs/kwi-live-api.md zum 30.06.2026 abgeschaltet → Codex verifizieren; Migration auf "Portal Nachhaltige Kommunen" nötig
+    privacy_class: PUBLIC
+    last_verified: "2026-08-14 (Code; Endpoint nicht getestet)"
+  - integration_id: akademie-oracle-feedback
+    system: WÖk-Kern-API (Oracle)
+    purpose: Qualitäts-Cockpit der Akademie pollt negativ bewertetes KI-Feedback (GET/POST /api/feedback via WOEK_ORACLE_API_URL)
+    repository_adapter: lib/review/woekFeedback.ts
+    privacy_class: INTERNAL
+    current_status: PRODUCTION
+    last_verified: "2026-08-14"
+  - integration_id: akademie-analytics-ingest
+    system: Akademie-App /api/site-event + /api/academy-event + /api/discord-analytics/ingest
+    purpose: Zweiter Analytics-Ingest (neben Supabase-Edge-Function der Website!) — anonymisiert (SHA-256), CORS-Whitelist, Vercel-Geo; Discord-Bot („Oracle") pusht Server-Metriken mit Bearer-Token
+    privacy_class: INTERNAL
+    current_status: PRODUCTION
+    conflict: "Zwei parallele site-event-Ingests (Supabase-Edge-Fn vs. Next-API-Route) — welcher ist kanonisch? → CROSSCHECK"
+    last_verified: "2026-08-14"

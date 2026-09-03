@@ -1,0 +1,110 @@
+import fs from "node:fs";
+
+const indexPath = "assets/search/search-index.json";
+const entries = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+
+const forbiddenTitle = new Set([
+  "kontakt",
+  "verstehen",
+  "referenzrahmen",
+  "kontext-werkzeuge",
+  "erleben & lernen",
+  "werkstatt",
+]);
+
+const footerCluster = [
+  "wirkung einfach erklärt",
+  "sdg-/sdg+-referenzrahmen",
+  "interaktive demos",
+  "arbeitsbibliothek",
+  "dokumentenregistry",
+];
+
+const blockedPublicFragments = [
+  "druckdatum:",
+  "welche wirkungslogik macht",
+  "pdf-fassung in produktion",
+  "pdf wird ergänzt",
+  "auszug aus der umfangreichen korrekturfassung",
+  "umfang der quellfassung: rund 0 wörter",
+  "ergänzende ergänzende",
+  "kernformel.",
+  "protectionnotice",
+  "[button:",
+  "codex-anweisung",
+  "dein browser kann diese audiodatei nicht direkt abspielen",
+];
+
+const blockedPublicPatterns = [
+  /\b(?:codex|claude)\b/i,
+  /\bci\/cd\b/i,
+  /\b(?:source[- ]hash|source[- ]version|import[- ]version|live[- ]reference|reviewstatus)\b/i,
+  /\b(?:originaldatei(?:en)?|markdown-master|word-rohfassung|vorlesung-template)\b/i,
+  /\b(?:redaktionell(?:er|en|es|em)?|intern(?:er|en|es|em)?)\s+hinweis(?:e|en)?\b/i,
+];
+
+const blockedUrlFragments = [
+  "/.claude/",
+  "/worktrees/",
+  "/Users/",
+  "/private/",
+  "file://",
+];
+
+const absoluteLocalPathPattern = /(^|\/)(?:Users|Volumes|tmp|var\/folders)\//i;
+
+const failures = [];
+
+for (const entry of entries) {
+  const title = String(entry.title || "").trim().toLowerCase();
+  const section = String(entry.section || "").trim().toLowerCase();
+  const body = String(entry.body || "").toLowerCase();
+  const url = String(entry.url || "");
+
+  for (const fragment of blockedUrlFragments) {
+    if (url.includes(fragment)) {
+      failures.push(`${url} contains local/private URL fragment "${fragment}"`);
+    }
+  }
+
+  if (absoluteLocalPathPattern.test(url)) {
+    failures.push(`${url} contains an absolute local filesystem path`);
+  }
+
+  if (forbiddenTitle.has(title) && body.length < 900) {
+    failures.push(`${url} has navigation/footer-like title "${entry.title}"`);
+  }
+
+  if (section.includes("footer") || section.includes("navigation")) {
+    failures.push(`${url} has search section "${entry.section}"`);
+  }
+
+  if (footerCluster.filter((item) => body.includes(item)).length >= 3) {
+    failures.push(`${url} contains repeated footer navigation cluster`);
+  }
+
+  if (body.includes("kontakt:") && body.includes("© 2026 natalie weber")) {
+    failures.push(`${url} contains footer contact/copyright text`);
+  }
+
+  for (const fragment of blockedPublicFragments) {
+    if (body.includes(fragment)) {
+      failures.push(`${url} contains public-language fragment "${fragment}"`);
+    }
+  }
+
+  for (const pattern of blockedPublicPatterns) {
+    if (pattern.test(`${title}\n${section}\n${body}`)) {
+      failures.push(`${url} contains editorial/technical marker ${pattern}`);
+    }
+  }
+}
+
+if (failures.length) {
+  console.error("Search index contamination detected:");
+  failures.slice(0, 30).forEach((failure) => console.error(`- ${failure}`));
+  if (failures.length > 30) console.error(`... ${failures.length - 30} more`);
+  process.exit(1);
+}
+
+console.log(`Search index contamination check passed for ${entries.length} entries.`);

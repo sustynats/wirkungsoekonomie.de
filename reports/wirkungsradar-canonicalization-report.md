@@ -1,0 +1,172 @@
+# Debatten-Kompass Kanonisierung
+
+Stand: 2026-06-11T10:08:17.886Z
+
+| Kennzahl | Wert |
+|---|---:|
+| Radar-Seiten | 661 |
+| Claim-Seiten | 280 |
+| Kanonische Narrative | 125 |
+| Dubletten / Kandidaten | 407 |
+| Zusammengeführt | 154 |
+| Synonyme | 46 |
+| Redirects | 154 |
+
+## Zusammenführungen
+
+| Von | Nach | Titel |
+|---|---|---|
+| /wirkungsradar/detail/15-minuten-stadt-oder-klimakaefig/ | /wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/ | 15-Minuten-Stadt oder Klimakäfig? |
+| /wirkungsradar/detail/afd-kleiner-mann-wohlstandsgrundlagen/ | /wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/ | Die AfD ist für den kleinen Mann da? |
+| /wirkungsradar/detail/aktienrente-loest-die-rente/ | /wirkungsradar/live/aktienrente-loest-die-rente/ | Aktienrente löst die Rente? |
+| /wirkungsradar/detail/algorithmen-sind-neutral/ | /wirkungsradar/live/algorithmen-sind-neutral/ | Algorithmen sind neutral? |
+| /wirkungsradar/detail/altparteien/ | /wirkungsradar/live/diktatur-der-altparteien/ | Altparteien? |
+| /wirkungsradar/detail/altparteiendiktatur/ | /wirkungsradar/live/diktatur-der-altparteien/ | Diktatur der Altparteien? |
+| /wirkungsradar/detail/angst-vor-afd-wahlsieg/ | /wirkungsradar/live/angst-vor-afd-wahlsieg/ | Angst vor AfD-Wahlsieg? |
+| /wirkungsradar/detail/antisemitismus-ist-importiert/ | /wirkungsradar/live/antisemitismus-ist-importiert/ | Antisemitismus ist importiert? |
+| /wirkungsradar/detail/arbeit-lohnt-sich-nicht-mehr/ | /wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/ | Arbeit lohnt sich nicht mehr? |
+| /wirkungsradar/detail/auslaender-pluendern-sozialstaat/ | /wirkungsradar/live/auslaender-pluendern-sozialstaat/ | Ausländer plündern den Sozialstaat? |
+| /wirkungsradar/detail/batterien-sind-nicht-recyclebar/ | /wirkungsradar/live/batterien-sind-nicht-recyclebar/ | „Batterien sind nicht recyclebar“ |
+| /wirkungsradar/detail/bio-kann-die-welt-nicht-ernaehren/ | /wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/ | Bio kann die Welt nicht ernähren? |
+| /wirkungsradar/detail/biodiversitaet-ist-luxusproblem/ | /wirkungsradar/live/biodiversitaet-ist-luxusproblem/ | Biodiversität ist Luxusproblem? |
+| /wirkungsradar/detail/buergergeld-macht-faul/ | /wirkungsradar/live/buergergeld-macht-faul/ | Bürgergeld macht faul? |
+| /wirkungsradar/detail/buerokratieabbau-statt-wirkung/ | /wirkungsradar/live/buerokratieabbau-statt-wirkung/ | Bürokratieabbau statt Wirkung? |
+| /wirkungsradar/detail/cancel-culture-zerstoert-debatte/ | /wirkungsradar/live/cancel-culture-zerstoert-debatte/ | Cancel Culture zerstört Debatte? |
+| /wirkungsradar/detail/co2-ist-nur-ein-spurengas/ | /wirkungsradar/live/co2-ist-nur-ein-spurengas/ | CO₂ ist nur ein Spurengas |
+| /wirkungsradar/detail/co2-preis-oder-fossile-systemkosten/ | /wirkungsradar/live/co2-preis-oder-fossile-systemkosten/ | CO₂-Preis oder fossile Systemkosten? Warum wir so oder so zahlen |
+| /wirkungsradar/detail/corona-verschwoerung-war-die-pandemie-geplant/ | /wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/ | Corona-Verschwörung? War die Pandemie geplant? |
+| /wirkungsradar/detail/cyberangriffe-sind-it-problem/ | /wirkungsradar/live/cyberangriffe-sind-it-problem/ | Cyberangriffe sind IT-Problem? |
+| /wirkungsradar/detail/das-ist-alles-gesteuert/ | /wirkungsradar/live/das-ist-alles-gesteuert/ | Das ist alles gesteuert |
+| /wirkungsradar/detail/das-ist-zensur/ | /wirkungsradar/live/das-ist-zensur/ | Das ist Zensur |
+| /wirkungsradar/detail/datenschutz-verhindert-innovation/ | /wirkungsradar/live/datenschutz-verhindert-innovation/ | Datenschutz verhindert Innovation? |
+| /wirkungsradar/detail/deepfakes-sind-nur-spass/ | /wirkungsradar/live/deepfakes-sind-nur-spass/ | Deepfakes sind nur Spaß? |
+| /wirkungsradar/detail/deutschland-hat-keine-verfassung/ | /wirkungsradar/live/deutschland-hat-keine-verfassung/ | Deutschland hat keine Verfassung? |
+| /wirkungsradar/detail/deutschland-nur-zwei-prozent/ | /wirkungsradar/live/deutschland-nur-zwei-prozent/ | „Deutschland ist nur für 2 % verantwortlich“ |
+| /wirkungsradar/detail/deutschland-schafft-sich-ab/ | /wirkungsradar/live/deutschland-schafft-sich-ab/ | Deutschland schafft sich ab? |
+| /wirkungsradar/detail/die-bauern-werden-geopfert/ | /wirkungsradar/live/die-bauern-werden-geopfert/ | Die Bauern werden geopfert? |
+| /wirkungsradar/detail/die-boesen-reichen/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Sind die Reichen schuld? |
+| /wirkungsradar/detail/die-da-oben/ | /wirkungsradar/live/die-da-oben/ | Die da oben |
+| /wirkungsradar/detail/die-wissenschaft-ist-gekauft/ | /wirkungsradar/live/die-wissenschaft-ist-gekauft/ | „Die Wissenschaft ist gekauft“ |
+| /wirkungsradar/detail/diktatur-der-altparteien/ | /wirkungsradar/live/diktatur-der-altparteien/ | Diktatur der Altparteien? |
+| /wirkungsradar/detail/e-autos-schlimmer-als-verbrenner/ | /wirkungsradar/live/e-autos-schlimmer-als-verbrenner/ | „E-Autos sind schlimmer als Verbrenner“ |
+| /wirkungsradar/detail/e-fuels-retten-den-verbrenner/ | /wirkungsradar/live/e-fuels-retten-den-verbrenner/ | E-Fuels retten den Verbrenner? |
+| /wirkungsradar/detail/e-lkw-funktionieren-nicht/ | /wirkungsradar/live/e-lkw-funktionieren-nicht/ | E-Lkw funktionieren nicht? |
+| /wirkungsradar/detail/energiewende-gescheitert/ | /wirkungsradar/live/energiewende-gescheitert/ | „Die Energiewende ist gescheitert“ |
+| /wirkungsradar/detail/entwicklungshilfe-china-indien/ | /wirkungsradar/live/entwicklungshilfe-china-indien/ | Warum Geld für China und Indien? |
+| /wirkungsradar/detail/entwicklungshilfe-warum-nicht-zuerst-deutschland/ | /wirkungsradar/live/entwicklungshilfe-warum-nicht-zuerst-deutschland/ | Entwicklungshilfe: Warum nicht zuerst Deutschland? |
+| /wirkungsradar/detail/eu-undemokratisch-deutschland-zahlt-alles/ | /wirkungsradar/live/eu-undemokratisch-deutschland-zahlt-alles/ | Deutschland zahlt für die ganze EU? |
+| /wirkungsradar/detail/fachkraeftemangel-ohne-zuwanderung/ | /wirkungsradar/live/fachkraeftemangel-ohne-zuwanderung/ | Fachkräftemangel ohne Zuwanderung lösen? |
+| /wirkungsradar/detail/faktenchecker-sind-zensur/ | /wirkungsradar/live/faktenchecker-sind-zensur/ | Faktenchecker sind Zensur? |
+| /wirkungsradar/detail/feminismus-zerstoert-familie/ | /wirkungsradar/live/feminismus-zerstoert-familie/ | Feminismus zerstört Familie? |
+| /wirkungsradar/detail/fleischverzicht-ist-ideologie/ | /wirkungsradar/live/fleischverzicht-ist-ideologie/ | Fleischverzicht ist Ideologie? |
+| /wirkungsradar/detail/fuenfzehn-minuten-stadt-klimakaefig/ | /wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/ | 15-Minuten-Stadt oder Klimakäfig? |
+| /wirkungsradar/detail/fusion-loest-das-energieproblem/ | /wirkungsradar/live/fusion-loest-das-energieproblem/ | Fusion löst das Energieproblem? |
+| /wirkungsradar/detail/gaza-zeigt-westliche-doppelmoral/ | /wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/ | Gaza zeigt westliche Doppelmoral? |
+| /wirkungsradar/detail/gender-ideologie/ | /wirkungsradar/live/gender-ideologie/ | Gender-Ideologie? |
+| /wirkungsradar/detail/genderismus/ | /wirkungsradar/live/gender-ideologie/ | Genderismus / Regenbogenkult / politische Indoktrination? |
+| /wirkungsradar/detail/heimat-gehoert-den-einheimischen/ | /wirkungsradar/live/heimat-gehoert-den-einheimischen/ | Heimat gehört den Einheimischen? |
+| /wirkungsradar/detail/heizgesetz-heizhammer-narrativ/ | /wirkungsradar/live/heizgesetz-heizhammer-narrativ/ | Heizgesetz oder Heizhammer? |
+| /wirkungsradar/detail/impfen-ist-nur-persoenliche-entscheidung/ | /wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/ | Impfen ist nur persönliche Entscheidung? |
+| /wirkungsradar/detail/integration-ist-gescheitert/ | /wirkungsradar/live/integration-ist-gescheitert/ | Integration ist gescheitert? |
+| /wirkungsradar/detail/islamismus-wird-verharmlost/ | /wirkungsradar/live/islamismus-wird-verharmlost/ | Islamismus wird verharmlost? |
+| /wirkungsradar/detail/israelkritik-wird-verboten/ | /wirkungsradar/live/israelkritik-wird-verboten/ | Israelkritik wird verboten? |
+| /wirkungsradar/detail/junge-wollen-nicht-mehr-arbeiten/ | /wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/ | Junge wollen nicht mehr arbeiten? |
+| /wirkungsradar/detail/kehrtwende-180-grad/ | /wirkungsradar/live/kehrtwende-180-grad/ | Kehrtwende um 180 Grad? |
+| /wirkungsradar/detail/kernenergie-einfache-loesung/ | /wirkungsradar/live/kernenergie-wieder-in-deutschland/ | „Kernenergie wäre die einfache Lösung“ |
+| /wirkungsradar/detail/kernenergie-wieder-in-deutschland/ | /wirkungsradar/live/kernenergie-wieder-in-deutschland/ | „Kernkraft zurück?“ |
+| /wirkungsradar/detail/ki-macht-kinder-dumm/ | /wirkungsradar/live/ki-macht-kinder-dumm/ | KI macht Kinder dumm? |
+| /wirkungsradar/detail/ki-nimmt-uns-alle-jobs/ | /wirkungsradar/live/ki-nimmt-uns-alle-jobs/ | KI nimmt uns alle Jobs? |
+| /wirkungsradar/detail/ki-regulierung-bremst-europa/ | /wirkungsradar/live/ki-regulierung-bremst-europa/ | KI-Regulierung bremst Europa? |
+| /wirkungsradar/detail/kinder-kriegen-ist-klimasuende/ | /wirkungsradar/live/kinder-kriegen-ist-klimasuende/ | Kinder kriegen ist Klimasünde? |
+| /wirkungsradar/detail/klima-hat-sich-schon-immer-veraendert/ | /wirkungsradar/live/klima-hat-sich-schon-immer-veraendert/ | Klima hat sich schon immer verändert |
+| /wirkungsradar/detail/klimadiktatur/ | /wirkungsradar/live/klimadiktatur/ | Klimadiktatur / Klimaextremismus / Klimapropaganda? |
+| /wirkungsradar/detail/klimafinanzierung-wir-zahlen-fuer-andere/ | /wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/ | Klimafinanzierung: Zahlen wir für andere? |
+| /wirkungsradar/detail/klimaflucht-ist-panikmache/ | /wirkungsradar/live/klimaflucht-ist-panikmache/ | Klimaflucht ist Panikmache? |
+| /wirkungsradar/detail/klimaschutz-deindustrialisiert-deutschland/ | /wirkungsradar/live/klimaschutz-deindustrialisiert-deutschland/ | Klimaschutz deindustrialisiert Deutschland? |
+| /wirkungsradar/detail/klimaschutz-ist-oekodiktatur/ | /wirkungsradar/live/klimaschutz-ist-oekodiktatur/ | Klimaschutz ist Ökodiktatur |
+| /wirkungsradar/detail/klimaschutz-ist-zu-teuer/ | /wirkungsradar/live/klimaschutz-ist-zu-teuer/ | Klimaschutz ist zu teuer? |
+| /wirkungsradar/detail/kriminalitaet-und-migration/ | /wirkungsradar/live/kriminalitaet-und-migration/ | Kriminalität und Migration? |
+| /wirkungsradar/detail/kultur-gender-luxusprojekte/ | /wirkungsradar/live/kultur-gender-luxusprojekte/ | Geld für Kultur und Gender statt echte Probleme? |
+| /wirkungsradar/detail/laden-dauert-viel-zu-lange/ | /wirkungsradar/live/laden-dauert-viel-zu-lange/ | Laden dauert viel zu lange? |
+| /wirkungsradar/detail/leistungstraeger-ausgepresst/ | /wirkungsradar/live/leistungstraeger-ausgepresst/ | Werden Leistungsträger ausgepresst? |
+| /wirkungsradar/detail/leistungstraeger-werden-ausgepresst/ | /wirkungsradar/live/leistungstraeger-ausgepresst/ | Werden Leistungsträger ausgepresst? |
+| /wirkungsradar/detail/linksextremismus-ist-unterschaetzt/ | /wirkungsradar/live/linksextremismus-ist-unterschaetzt/ | Linksextremismus ist unterschätzt? |
+| /wirkungsradar/detail/lobbyismus-ist-immer-korruption/ | /wirkungsradar/live/lobbyismus-ist-immer-korruption/ | Lobbyismus ist immer Korruption? |
+| /wirkungsradar/detail/long-covid-me-cfs-ist-einbildung/ | /wirkungsradar/live/long-covid-me-cfs-ist-einbildung/ | Long Covid / ME-CFS ist Einbildung? |
+| /wirkungsradar/detail/maenner-werden-benachteiligt/ | /wirkungsradar/live/maenner-werden-benachteiligt/ | Männer werden benachteiligt? |
+| /wirkungsradar/detail/mainstreammedien-luegen-alle/ | /wirkungsradar/live/mainstreammedien-luegen-alle/ | „Mainstreammedien lügen alle“ |
+| /wirkungsradar/detail/man-darf-ja-nichts-mehr-sagen/ | /wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/ | „Man darf ja nichts mehr sagen“ |
+| /wirkungsradar/detail/man-wird-doch-wohl-fragen-duerfen/ | /wirkungsradar/live/man-wird-doch-wohl-fragen-duerfen/ | Man wird doch wohl fragen dürfen |
+| /wirkungsradar/detail/masseneinwanderung/ | /wirkungsradar/live/migration-kostet-nur/ | Illegale / kulturfremde / inländerfeindliche Massenmigration? |
+| /wirkungsradar/detail/medien-zensur/ | /wirkungsradar/live/das-ist-zensur/ | Zensurbehörden / betreute Meinung / ÖRR-Frame? |
+| /wirkungsradar/detail/mehr-krankenhaeuser-bessere-versorgung/ | /wirkungsradar/live/mehr-krankenhaeuser-bessere-versorgung/ | Mehr Krankenhäuser bedeuten bessere Versorgung? |
+| /wirkungsradar/detail/migration-kostet-nur/ | /wirkungsradar/live/migration-kostet-nur/ | Migration kostet nur? |
+| /wirkungsradar/detail/migration-und-queerfeindlichkeit/ | /wirkungsradar/live/migration-und-queerfeindlichkeit/ | Migration macht Deutschland homophober? |
+| /wirkungsradar/detail/nato-hat-russland-provoziert/ | /wirkungsradar/live/nato-hat-russland-provoziert/ | NATO hat Russland provoziert? |
+| /wirkungsradar/detail/ngos-kassieren-steuergeld/ | /wirkungsradar/live/ngos-kassieren-steuergeld/ | NGOs kassieren Steuergeld? |
+| /wirkungsradar/detail/nie-eingezahlt/ | /wirkungsradar/live/nie-eingezahlt/ | Die haben nie eingezahlt? |
+| /wirkungsradar/detail/oeffentlicher-rundfunk-staatsfunk/ | /wirkungsradar/live/oeffentlicher-rundfunk-staatsfunk/ | Öffentlicher Rundfunk oder Staatsfunk? |
+| /wirkungsradar/detail/oerr-oder-staatsfunk/ | /wirkungsradar/live/oeffentlicher-rundfunk-staatsfunk/ | ÖRR oder Staatsfunk? |
+| /wirkungsradar/detail/parkplaetze-sind-freiheit/ | /wirkungsradar/live/parkplaetze-sind-freiheit/ | Parkplätze sind Freiheit? |
+| /wirkungsradar/detail/patriotismus-ist-rechts/ | /wirkungsradar/live/patriotismus-ist-rechts/ | Patriotismus ist rechts? |
+| /wirkungsradar/detail/pflege-durch-roboter-ist-unmenschlich/ | /wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/ | Pflege durch Roboter ist unmenschlich? |
+| /wirkungsradar/detail/pflege-ist-unbezahlbar/ | /wirkungsradar/live/pflege-ist-unbezahlbar/ | Pflege ist unbezahlbar? |
+| /wirkungsradar/detail/planwirtschaftliche-energiewende/ | /wirkungsradar/live/planwirtschaftliche-energiewende/ | Planwirtschaftliche Energiewende? |
+| /wirkungsradar/detail/praevention-ist-zu-teuer/ | /wirkungsradar/live/praevention-ist-zu-teuer/ | Prävention ist zu teuer? |
+| /wirkungsradar/detail/queere-sichtbarkeit-bedroht-kinder/ | /wirkungsradar/live/queere-sichtbarkeit-bedroht-kinder/ | Queere Sichtbarkeit bedroht Kinder? |
+| /wirkungsradar/detail/radwege-in-peru/ | /wirkungsradar/live/radwege-in-peru/ | Radwege in Peru - verschenktes Geld oder verkürzte Empörung? |
+| /wirkungsradar/detail/rechtsextremismus-ist-nur-protest/ | /wirkungsradar/live/rechtsextremismus-ist-nur-protest/ | Rechtsextremismus ist nur Protest? |
+| /wirkungsradar/detail/reiche-wandern-aus-wenn-man-sie-belastet/ | /wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/ | Reiche wandern aus, wenn man sie belastet? |
+| /wirkungsradar/detail/religion-gehoert-ins-private/ | /wirkungsradar/live/religion-gehoert-ins-private/ | Religion gehört ins Private? |
+| /wirkungsradar/detail/remigration/ | /wirkungsradar/live/remigration-remigrationslotsen/ | Remigration / Remigrationslotsen? |
+| /wirkungsradar/detail/remigration-remigrationslotsen/ | /wirkungsradar/live/remigration-remigrationslotsen/ | Remigration / Remigrationslotsen? |
+| /wirkungsradar/detail/rente-unbezahlbar/ | /wirkungsradar/live/rente-unbezahlbar/ | Rente ist unbezahlbar? |
+| /wirkungsradar/detail/resilienz-ist-autarkie/ | /wirkungsradar/live/resilienz-ist-autarkie/ | Resilienz ist Autarkie? |
+| /wirkungsradar/detail/schulden-machen-oder-sparen/ | /wirkungsradar/live/schulden-machen-oder-sparen/ | Schulden machen oder sparen? |
+| /wirkungsradar/detail/schuldenbremse-schuetzt-die-jugend/ | /wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/ | Schuldenbremse schützt die Jugend? |
+| /wirkungsradar/detail/sdgs-sind-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | SDGs sind Weltregierung? |
+| /wirkungsradar/detail/sdgs-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | „SDGs / Agenda 2030 sind Weltregierung“ |
+| /wirkungsradar/detail/sind-die-reichen-schuld/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Sind die Reichen schuld? |
+| /wirkungsradar/detail/social-media-ist-freie-oeffentlichkeit/ | /wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/ | Social Media ist freie Öffentlichkeit? |
+| /wirkungsradar/detail/solarstrom-ist-unzuverlaessig/ | /wirkungsradar/live/solarstrom-ist-unzuverlaessig/ | Solarstrom ist unzuverlässig? |
+| /wirkungsradar/detail/sozialschmarotzer-frame/ | /wirkungsradar/live/sozialschmarotzer-frame/ | Sozialschmarotzer? |
+| /wirkungsradar/detail/sozialtourismus-frame/ | /wirkungsradar/live/migration-kostet-nur/ | Sozialtourismus? |
+| /wirkungsradar/detail/standort-deutschland-ist-tot/ | /wirkungsradar/live/standort-deutschland-ist-tot/ | Standort Deutschland ist tot? |
+| /wirkungsradar/detail/steuerverschwendung-buerokratie/ | /wirkungsradar/live/steuerverschwendung-buerokratie/ | Der Staat verschwendet unser Geld? |
+| /wirkungsradar/detail/tempolimit-bringt-nichts/ | /wirkungsradar/live/tempolimit-bringt-nichts/ | Tempolimit bringt nichts? |
+| /wirkungsradar/detail/tradition-wird-abgeschafft/ | /wirkungsradar/live/tradition-wird-abgeschafft/ | Tradition wird abgeschafft? |
+| /wirkungsradar/detail/ukraine-unterstuetzung-steuergeld/ | /wirkungsradar/live/ukraine-unterstuetzung-steuergeld/ | Unser Steuergeld geht in die Ukraine? |
+| /wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/ | /wirkungsradar/live/verbrennerverbot-nimmt-freiheit/ | Verbrennerverbot nimmt Freiheit? |
+| /wirkungsradar/detail/verfassungsschutz-oder-regierungsschutz/ | /wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/ | Verfassungsschutz oder Regierungsschutz? |
+| /wirkungsradar/detail/verfassungsschutz-regierungsschutz/ | /wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/ | Verfassungsschutz oder Regierungsschutz? |
+| /wirkungsradar/detail/vier-tage-woche-ist-wohlstandsverwahrlosung/ | /wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/ | Vier-Tage-Woche ist Wohlstandsverwahrlosung? |
+| /wirkungsradar/detail/waermepumpe-ist-unbezahlbar/ | /wirkungsradar/live/waermepumpe-ist-unbezahlbar/ | Wärmepumpe ist unbezahlbar? |
+| /wirkungsradar/detail/waffenlieferungen-verlaengern-den-krieg/ | /wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/ | Waffenlieferungen verlängern den Krieg? |
+| /wirkungsradar/detail/wasser-ist-in-deutschland-kein-problem/ | /wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/ | Wasser ist in Deutschland kein Problem? |
+| /wirkungsradar/detail/wasserstoff-fuer-alles/ | /wirkungsradar/live/wasserstoff-fuer-alles/ | Wasserstoff für alles? |
+| /wirkungsradar/detail/westdeutsche-keine-deutschen/ | /wirkungsradar/live/westdeutsche-keine-deutschen/ | Sind Westdeutsche keine Deutschen? |
+| /wirkungsradar/detail/windraeder-voegel-wald-beton-rueckbau/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | Windräder zerstören Natur? |
+| /wirkungsradar/detail/windraeder-zerstoeren-natur/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | Windräder zerstören Natur |
+| /wirkungsradar/detail/wirkungsabwehr-dissonanzrationalisierung/ | /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ | Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren |
+| /wirkungsradar/detail/wirkungsoekonomie-planwirtschaft/ | /wirkungsradar/live/wirkungsoekonomie-planwirtschaft/ | „Wirkungsökonomie ist Planwirtschaft“ |
+| /wirkungsradar/detail/wirkungsoekonomie-social-credit/ | /wirkungsradar/live/wirkungsoekonomie-social-credit/ | „Wirkungsökonomie ist Social Credit“ |
+| /wirkungsradar/detail/wirkungsteuer-macht-alles-teurer/ | /wirkungsradar/live/wirkungsteuer-macht-alles-teurer/ | Wirkungsteuer macht alles teurer? |
+| /wirkungsradar/detail/woek-bewertet-menschen/ | /wirkungsradar/live/woek-bewertet-menschen/ | Wirkungsökonomie bewertet Menschen? |
+| /wirkungsradar/detail/wohnungsnot-wegen-migration/ | /wirkungsradar/live/wohnungsnot-wegen-migration/ | Wohnungsnot wegen Migration? |
+| /wirkungsradar/detail/wokeness-spaltet-die-gesellschaft/ | /wirkungsradar/live/wokeness-spaltet-die-gesellschaft/ | Wokeness spaltet die Gesellschaft? |
+| /wirkungsradar/detail/zu-hohe-lohnkosten-deutschland/ | /wirkungsradar/live/zu-hohe-lohnkosten-deutschland/ | Sind die Lohnkosten in Deutschland zu hoch? |
+| /wirkungsradar/live/altparteien/ | /wirkungsradar/live/diktatur-der-altparteien/ | Altparteien? |
+| /wirkungsradar/live/altparteiendiktatur/ | /wirkungsradar/live/diktatur-der-altparteien/ | Diktatur der Altparteien? |
+| /wirkungsradar/live/die-boesen-reichen/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Sind die Reichen schuld? |
+| /wirkungsradar/live/fuenfzehn-minuten-stadt-klimakaefig/ | /wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/ | 15-Minuten-Stadt oder Klimakäfig? |
+| /wirkungsradar/live/genderismus/ | /wirkungsradar/live/gender-ideologie/ | Genderismus / Regenbogenkult / politische Indoktrination? |
+| /wirkungsradar/live/kernenergie-einfache-loesung/ | /wirkungsradar/live/kernenergie-wieder-in-deutschland/ | „Kernenergie wäre die einfache Lösung“ |
+| /wirkungsradar/live/leistungstraeger-werden-ausgepresst/ | /wirkungsradar/live/leistungstraeger-ausgepresst/ | Werden Leistungsträger ausgepresst? |
+| /wirkungsradar/live/masseneinwanderung/ | /wirkungsradar/live/migration-kostet-nur/ | Illegale / kulturfremde / inländerfeindliche Massenmigration? |
+| /wirkungsradar/live/medien-zensur/ | /wirkungsradar/live/das-ist-zensur/ | Zensurbehörden / betreute Meinung / ÖRR-Frame? |
+| /wirkungsradar/live/oerr-oder-staatsfunk/ | /wirkungsradar/live/oeffentlicher-rundfunk-staatsfunk/ | ÖRR oder Staatsfunk? |
+| /wirkungsradar/live/remigration/ | /wirkungsradar/live/remigration-remigrationslotsen/ | Remigration / Remigrationslotsen? |
+| /wirkungsradar/live/sdgs-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | „SDGs / Agenda 2030 sind Weltregierung“ |
+| /wirkungsradar/live/sozialtourismus-frame/ | /wirkungsradar/live/migration-kostet-nur/ | Sozialtourismus? |
+| /wirkungsradar/live/verfassungsschutz-regierungsschutz/ | /wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/ | Verfassungsschutz oder Regierungsschutz? |
+| /wirkungsradar/live/windraeder-zerstoeren-natur/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | „Windräder zerstören die Natur“ |

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "WOEK-MV-PDF-2026-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "jurisdiction": "mecklenburg-vorpommern",
+    "party": "PdF",
+    "artifact_id": "MV-LTW-2026-PDF-WAHLPROGRAMM",
+    "artifact_sha256": "418ccadca7e8f63ae3f9b5f2ca436b2045d41e803fa44eddbbb93947b74e543b"
+  },
+  "input": {
+    "ledger_manifest": "data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-pdf-v1/manifest.json",
+    "logical_descriptor_sha256": "c7851581556efd61456068d132bb7efffcb41471b49a2f280b01afbadcce0750"
+  },
+  "overlay": {
+    "reviewed_page_count": 53,
+    "source_unit_count": 631,
+    "effect_atom_count": 376,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 376,
+    "non_effect_context_reviewed_count": 293,
+    "genuine_fach_review_required_count": 0,
+    "programme_source_object_review_complete": true,
+    "programme_analysis_terminal_under_delegated_protocol": true,
+    "effect_credit_allowed": false
+  },
+  "apply_contract": {
+    "preserve_all_other_programmes": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "consumer_must_preserve_existing_explicit_fach": true,
+    "consumer_must_not_materialize_missing_fach_fields": true
+  },
+  "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+  "generated_at": "2026-08-26",
+  "descriptor_sha256": "66c81bd1c5bdf154329392b11f379084d004970a07ef650390bd53d648a6f0c5"
+}

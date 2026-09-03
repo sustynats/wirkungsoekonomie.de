@@ -1,0 +1,114 @@
+{
+  "addendum_id": "ST-BSW-FINAL-UNION-SOURCE-LEAF-ADDENDUM-R20",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "mode": "SOURCE_BOUND_MECHANICAL_MATERIALIZATION_ONLY_NO_NEW_FACH",
+  "base_union": "content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json",
+  "authorization_pr270_comment": 5376927582,
+  "rules": {
+    "no_source_rescan": true,
+    "no_new_current_register_fach_review": true,
+    "no_new_fach_semantics": true,
+    "no_dns_synthesis": true,
+    "no_recommendation_synthesis": true,
+    "source_text_not_reinterpreted": true,
+    "stable_ids_minted_only_for_mechanisms_already_explicit_in_issue_234_r02_r03": true
+  },
+  "source_leaves": [
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0091-01-ladeinfrastruktur-flaechendeckend-ausbauen",
+      "historical_parent_ordinal": "0091",
+      "mechanism_scope": "flächendeckender Ausbau der Ladeinfrastruktur",
+      "source_locator": {"issue": 234, "comment_id": 5374163676, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R02", "parent_ordinal": "0091", "reviewed_span": "A04"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372945179, "batch": "ST-BSW-A04", "historical_parent_ordinal": "0091"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372945179, "batch_system_check": "ST-BSW-A04"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0091-02-autoindustrie-effizientere-verbrenner-synthetische-kraftstoffe-alternative-antriebe-unterstuetzen",
+      "historical_parent_ordinal": "0091",
+      "mechanism_scope": "Unterstützung der Autoindustrie bei effizienteren Verbrennern, synthetischen Kraftstoffen und alternativen Antrieben",
+      "source_locator": {"issue": 234, "comment_id": 5374163676, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R02", "parent_ordinal": "0091", "reviewed_span": "A04"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372945179, "batch": "ST-BSW-A04", "historical_parent_ordinal": "0091"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372945179, "batch_system_check": "ST-BSW-A04"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0091-03-pauschales-verbrennerverbot-ablehnen",
+      "historical_parent_ordinal": "0091",
+      "mechanism_scope": "Ablehnung eines pauschalen Verbrennerverbots",
+      "source_locator": {"issue": 234, "comment_id": 5374163676, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R02", "parent_ordinal": "0091", "reviewed_span": "A04"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372945179, "batch": "ST-BSW-A04", "historical_parent_ordinal": "0091"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372945179, "batch_system_check": "ST-BSW-A04"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0115-01-paragraph-218-stgb-perspektivisch-abschaffen-bundesadvocacy",
+      "historical_parent_ordinal": "0115",
+      "mechanism_scope": "perspektivische Abschaffung §218 StGB / Bundesgesetzgebung-Advocacy",
+      "source_locator": {"issue": 234, "comment_id": 5374163676, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R02", "parent_ordinal": "0115", "reviewed_span": "A04"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372945179, "batch": "ST-BSW-A04", "historical_parent_ordinal": "0115"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372945179, "batch_system_check": "ST-BSW-A04"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0115-02-schwangerschaftsabbruch-versorgungsauftraege-qualifizierung-wohnortnahe-angebote",
+      "historical_parent_ordinal": "0115",
+      "mechanism_scope": "Landeszugang zu Schwangerschaftsabbruch durch Versorgungsaufträge, Qualifizierung und wohnortnahe Angebote",
+      "source_locator": {"issue": 234, "comment_id": 5374163676, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R02", "parent_ordinal": "0115", "reviewed_span": "A04"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372945179, "batch": "ST-BSW-A04", "historical_parent_ordinal": "0115"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372945179, "batch_system_check": "ST-BSW-A04"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0139-01-freistellungsgesetz-privates-ehrenamt-ausweiten",
+      "historical_parent_ordinal": "0139",
+      "mechanism_scope": "Ausweitung des Freistellungsgesetzes auf privates Ehrenamt",
+      "source_locator": {"issue": 234, "comment_id": 5374183131, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R03", "parent_ordinal": "0139", "reviewed_span": "A05"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372992914, "batch": "ST-BSW-A05", "historical_parent_ordinal": "0139"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372992914, "batch_system_check": "ST-BSW-A05"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0139-02-ehrenamtspauschalen-erhoehen",
+      "historical_parent_ordinal": "0139",
+      "mechanism_scope": "Erhöhung der Ehrenamtspauschalen",
+      "source_locator": {"issue": 234, "comment_id": 5374183131, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R03", "parent_ordinal": "0139", "reviewed_span": "A05"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372992914, "batch": "ST-BSW-A05", "historical_parent_ordinal": "0139"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372992914, "batch_system_check": "ST-BSW-A05"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0139-03-ehrenamt-rentenberechnung-anerkennen",
+      "historical_parent_ordinal": "0139",
+      "mechanism_scope": "Anerkennung ehrenamtlicher Tätigkeit bei der Rentenberechnung",
+      "source_locator": {"issue": 234, "comment_id": 5374183131, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R03", "parent_ordinal": "0139", "reviewed_span": "A05"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372992914, "batch": "ST-BSW-A05", "historical_parent_ordinal": "0139"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372992914, "batch_system_check": "ST-BSW-A05"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0158-01-ehrenamtliches-engagement-foerdern",
+      "historical_parent_ordinal": "0158",
+      "mechanism_scope": "ehrenamtliches Engagement fördern",
+      "source_locator": {"issue": 234, "comment_id": 5374183131, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R03", "parent_ordinal": "0158", "reviewed_span": "A05"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372992914, "batch": "ST-BSW-A05", "historical_parent_ordinal": "0158"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372992914, "batch_system_check": "ST-BSW-A05"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0158-02-ehrenamtliches-engagement-steuerlich-entlasten",
+      "historical_parent_ordinal": "0158",
+      "mechanism_scope": "ehrenamtliches Engagement steuerlich entlasten",
+      "source_locator": {"issue": 234, "comment_id": 5374183131, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R03", "parent_ordinal": "0158", "reviewed_span": "A05"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372992914, "batch": "ST-BSW-A05", "historical_parent_ordinal": "0158"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372992914, "batch_system_check": "ST-BSW-A05"}
+    },
+    {
+      "source_unit_id": "ltw-2026-st-bsw-psr-r20-src0158-03-ehrenamtliches-engagement-professionell-begleiten",
+      "historical_parent_ordinal": "0158",
+      "mechanism_scope": "ehrenamtliches Engagement professionell begleiten",
+      "source_locator": {"issue": 234, "comment_id": 5374183131, "checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R03", "parent_ordinal": "0158", "reviewed_span": "A05"},
+      "terminal_fach_locator": {"issue": 234, "comment_id": 5372992914, "batch": "ST-BSW-A05", "historical_parent_ordinal": "0158"},
+      "applicable_241_layer_locator": {"issue": 234, "comment_id": 5372992914, "batch_system_check": "ST-BSW-A05"}
+    }
+  ],
+  "set_check": {
+    "rows": 11,
+    "distinct_ids": 11,
+    "parents": ["0091", "0115", "0139", "0158"],
+    "all_source_bound_to_existing_issue_234_r02_r03": true,
+    "all_linked_to_existing_terminal_fach_batches": true,
+    "all_linked_to_existing_applicable_batch_layer_checks": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "templates": [
+    {
+      "id": "product-hypothesis-scan",
+      "mode": "product-scanner",
+      "sections": [
+        "Produkt erkannt",
+        "Kategorie",
+        "verfügbare Daten",
+        "fehlende Daten",
+        "Datenqualität",
+        "relevante SDGs",
+        "mögliche WÖk-IDs",
+        "Wirkungspfad",
+        "Datenbedarf für echte Scorecard",
+        "keine finale Steuerklasse",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Diese Einschätzung basiert auf begrenzter Datenqualität und ist keine finale WÖk-Bewertung. Eine finale WÖk-Scorecard benötigt geprüfte Produkt-, Lieferketten- und Unternehmensdaten."
+    },
+    {
+      "id": "company-profile-scan",
+      "mode": "company-scanner",
+      "sections": [
+        "Unternehmen erkannt",
+        "Branche / mögliche NACE-Zuordnung",
+        "Geschäftsmodell grob",
+        "öffentliche Datenlage",
+        "Nachhaltigkeitsbericht / CSRD / GRI, falls verfügbar",
+        "relevante Wirkungsräume",
+        "Wirkungspotenziale",
+        "Datenlücken",
+        "mögliche WÖk-Fragen",
+        "keine finale Bewertung",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Keine finale Unternehmensbewertung. Keine Anlageberatung. Keine ESG-Rating-Ersetzung. Keine amtliche WÖk-Bewertung."
+    },
+    {
+      "id": "decision-scan",
+      "mode": "decision-scanner",
+      "sections": [
+        "Was wurde erkannt?",
+        "Welche Daten liegen vor?",
+        "Welche Daten fehlen?",
+        "Wirkungsräume",
+        "SDGs / SDG+",
+        "Wirkungspotenziale",
+        "Wirkpfad",
+        "Zielkonflikte",
+        "WÖk-Gegenfrage",
+        "Quellenpanel",
+        "Unsicherheit"
+      ],
+      "standard_notice": "Wirkungsökonomische Ersteinschätzung, keine Rechts-, Steuer-, Anlage- oder Nachhaltigkeitsberatung."
+    }
+  ]
+}

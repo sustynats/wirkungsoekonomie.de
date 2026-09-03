@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "modes": [
+    {
+      "id": "text-article-scanner",
+      "title": "Text / Artikel analysieren",
+      "mvp_phase": 1,
+      "priority": "high",
+      "inputs": [
+        "URL",
+        "kopierter Text",
+        "HTML-Auszug",
+        "PDF",
+        "Screenshot",
+        "Foto eines Artikels"
+      ],
+      "analysis_outputs": [
+        "Thema",
+        "zentrale Aussage",
+        "Frame",
+        "Narrativ",
+        "Wirkungspotenzial",
+        "Resonanzraum",
+        "SDG-/SDG+-Bezug",
+        "Wirkung auf Mensch, Planet, Demokratie",
+        "ausgeblendete Systemfragen",
+        "WÖk-Gegenfrage",
+        "Quellen- und Unsicherheitshinweis"
+      ],
+      "disclaimer": "Keine vollständige Faktenprüfung. Analyse von Frames, Narrativen, Wirkungspotenzialen und Resonanzräumen. Keine langen Texte reproduzieren.",
+      "url_fallback": "Diese Seite kann nicht automatisch gelesen werden. Bitte füge einen kurzen Textauszug ein.",
+      "status": "draft",
+      "target_group_outputs": [
+        "Frame",
+        "Wirkungspotenzial",
+        "Resonanzraum",
+        "SDG+/Demokratiebezug"
+      ]
+    },
+    {
+      "id": "political-statement-scanner",
+      "title": "Politische Aussage analysieren",
+      "mvp_phase": 1,
+      "priority": "high",
+      "inputs": [
+        "Begriff",
+        "Zitat",
+        "Slogan",
+        "kurzer Aussagen-Auszug"
+      ],
+      "analysis_outputs": [
+        "Faktenebene",
+        "Frame",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "demokratisches Risiko",
+        "SDG+-Bezug"
+      ],
+      "disclaimer": "Keine Parteibewertung und keine Gesinnungsprüfung. Analyse von Wirkungspotenzialen.",
+      "status": "draft",
+      "target_group_outputs": [
+        "Wirkungspotenzial",
+        "Datenlage",
+        "Grenzen der Analyse"
+      ]
+    },
+    {
+      "id": "website-scanner",
+      "title": "Website analysieren",
+      "mvp_phase": 1,
+      "priority": "high",
+      "inputs": [
+        "URL",
+        "HTML-Auszug",
+        "Seitentext",
+        "Screenshot"
+      ],
+      "analysis_outputs": [
+        "Website-Thema",
+        "Quellenlage",
+        "Frame / Struktur",
+        "Wirkungspotenzial",
+        "Datenlücken",
+        "WÖk-Gegenfrage"
+      ],
+      "disclaimer": "Keine automatische Live-Bewertung. Im MVP bitte kurzen Auszug einfügen.",
+      "status": "draft",
+      "target_group_outputs": [
+        "Wirkungspotenzial",
+        "Datenlage",
+        "Grenzen der Analyse"
+      ]
+    },
+    {
+      "id": "election-program-scanner",
+      "title": "Wahlprogramm-Scanner",
+      "mvp_phase": 1,
+      "priority": "high",
+      "inputs": [
+        "URL",
+        "PDF",
+        "Textauszug",
+        "Programmdokument",
+        "einzelner Abschnitt"
+      ],
+      "analysis_outputs": [
+        "zentrale politische Maßnahme",
+        "behauptetes Ziel",
+        "erwartete Wirkung laut Programm",
+        "wirkungsökonomische Prüfung",
+        "relevante SDGs / SDG+",
+        "mögliche positive Wirkung",
+        "mögliche negative Wirkung",
+        "Zielkonflikte",
+        "ausgeblendete Systemfragen",
+        "Datenbedarf",
+        "WÖk-Gegenfrage",
+        "keine Wahlempfehlung",
+        "Wirkung auf Bürger:innen",
+        "Wirkung auf Unternehmen",
+        "Wirkung auf Staatshaushalt",
+        "Wirkung auf Mensch, Planet, Demokratie"
+      ],
+      "disclaimer": "Diese Analyse ist keine Wahlempfehlung. Sie zeigt wirkungsökonomische Zusammenhänge, Wirkungspotenziale und offene Systemfragen.",
+      "url_fallback": "Diese Seite oder dieses PDF kann nicht automatisch gelesen werden. Bitte füge einen kurzen Textauszug oder Abschnitt ein.",
+      "status": "draft",
+      "target_group_outputs": [
+        "Bürger:innen",
+        "Unternehmen",
+        "Staatshaushalt",
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ]
+    },
+    {
+      "id": "company-scanner",
+      "title": "Unternehmens-Scanner",
+      "mvp_phase": 2,
+      "priority": "medium",
+      "inputs": [
+        "Unternehmensname",
+        "Website",
+        "Nachhaltigkeitsbericht",
+        "CSRD-/ESRS-Bericht",
+        "GRI-Bericht",
+        "Ticker",
+        "ISIN",
+        "LEI",
+        "Branche",
+        "Land"
+      ],
+      "analysis_outputs": [
+        "Unternehmen erkannt",
+        "Branche",
+        "Region",
+        "mögliche NACE-Zuordnung",
+        "Tätigkeitsfelder",
+        "Datenlage",
+        "Datenqualität",
+        "Wirkungsräume",
+        "Wirkungsfelder",
+        "Wirkungspfad",
+        "Datenlücken",
+        "erste Wirkungshypothese",
+        "Change-Hinweise",
+        "Wirkungsorientierte Unternehmensführung",
+        "Wirkungsrisikomanagement"
+      ],
+      "disclaimer": "Keine finale Unternehmensbewertung. Keine Anlageberatung. Keine ESG-Rating-Ersetzung. Keine amtliche WÖk-Bewertung.",
+      "status": "draft",
+      "target_group_outputs": [
+        "Wirkungsprofil",
+        "Datenlage",
+        "CSRD/ESRS/GRI",
+        "Wirkungsrisiken",
+        "Change-Hinweise",
+        "keine finale Bewertung"
+      ]
+    },
+    {
+      "id": "product-scanner",
+      "title": "Produkt-Scanner",
+      "mvp_phase": 3,
+      "priority": "medium",
+      "inputs": [
+        "Barcode / GTIN",
+        "QR-Code",
+        "Produktname",
+        "Produkt-URL",
+        "Verpackungsfoto",
+        "Zutatenliste",
+        "Energielabel",
+        "Label / Siegel"
+      ],
+      "analysis_outputs": [
+        "Produkt erkannt",
+        "Kategorie",
+        "Hersteller / Marke",
+        "verfügbare Produktdaten",
+        "relevante SDGs",
+        "mögliche WÖk-IDs",
+        "Wirkungsfelder",
+        "Datenlücken",
+        "erste Wirkungshypothese",
+        "keine finale Steuerklasse"
+      ],
+      "disclaimer": "Keine finale Steuerklasse. Keine Produktzertifizierung. Nur wirkungsökonomische Ersteinschätzung.",
+      "status": "draft"
+    },
+    {
+      "id": "decision-scanner",
+      "title": "Gesetz-/Maßnahmen-/Entscheidungs-Scanner",
+      "mvp_phase": 1,
+      "priority": "medium",
+      "inputs": [
+        "politische Maßnahme",
+        "Unternehmensentscheidung",
+        "Investition",
+        "Gesetzesvorschlag",
+        "Alltagsentscheidung"
+      ],
+      "analysis_outputs": [
+        "Auslöser",
+        "Wirkungspotenzial",
+        "betroffene Wirkungsräume",
+        "Nebenwirkungen",
+        "Zielkonflikte",
+        "Rückkopplungen",
+        "Datenbedarf",
+        "WÖk-Gegenfrage",
+        "Wirkpfad",
+        "Rückkopplung"
+      ],
+      "disclaimer": "Wirkungsökonomische Ersteinschätzung, keine Rechts-, Steuer-, Anlage- oder Nachhaltigkeitsberatung.",
+      "status": "draft"
+    },
+    {
+      "id": "photo-ocr-scanner",
+      "title": "Foto-/OCR-/Barcode-Modus",
+      "mvp_phase": 4,
+      "priority": "later",
+      "inputs": [
+        "Zeitungsartikel-Foto",
+        "Screenshot",
+        "Website-Screenshot",
+        "Wahlprogramm-Auszug",
+        "Produktverpackung",
+        "Energielabel",
+        "QR-Code",
+        "Barcode",
+        "Social-Media-Post"
+      ],
+      "analysis_outputs": [
+        "OCR-Text",
+        "Layout-Erkennung",
+        "Barcode-/QR-Erkennung",
+        "erkannte Labels",
+        "Datenlücken",
+        "Quellenhinweis"
+      ],
+      "disclaimer": "Optionale spätere Funktion. Bilder werden nur zur Analyse genutzt und nicht dauerhaft gespeichert ohne Einwilligung.",
+      "status": "planned"
+    },
+    {
+      "id": "dpp-ready-scanner",
+      "title": "DPP-ready Scanner",
+      "mvp_phase": 5,
+      "priority": "later",
+      "inputs": [
+        "Digital Product Passport",
+        "GS1 Digital Link",
+        "Produktdatenraum",
+        "DPP-API"
+      ],
+      "analysis_outputs": [
+        "DPP-Daten",
+        "WÖk-ID-Mapping",
+        "Scorecard-Hypothese",
+        "Datenqualität",
+        "Rückkopplungslogik"
+      ],
+      "disclaimer": "Perspektivische Funktion, abhängig von DPP-Verfügbarkeit und Lizenzen.",
+      "status": "planned"
+    }
+  ]
+}

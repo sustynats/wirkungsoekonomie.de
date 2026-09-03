@@ -1,0 +1,1335 @@
+{
+  "schema_version": "woek-communication-media-responsive-a11y-1.0",
+  "status": "PASS",
+  "base_url": "http://127.0.0.1:3024",
+  "breakpoints": [
+    320,
+    360,
+    375,
+    390,
+    428,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "routes": [
+    "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+    "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+    "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+    "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+    "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+    "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke"
+  ],
+  "axe_reference_route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+  "axe_breakpoints": [
+    390,
+    1440
+  ],
+  "checks": 54,
+  "results": [
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          }
+        ],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          }
+        ],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          }
+        ],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          }
+        ],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          }
+        ],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 8,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 9,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": -112,
+            "right": 18
+          }
+        ],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "layerPresent": true,
+        "overviewPresent": true,
+        "patterns": 5,
+        "evidenceCards": 5,
+        "sourceLinks": 11,
+        "summariesFocusable": true,
+        "overflow": [],
+        "rawTokens": []
+      },
+      "axeViolations": []
+    }
+  ],
+  "failures": []
+}

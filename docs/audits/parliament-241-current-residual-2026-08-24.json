@@ -1,0 +1,678 @@
+{
+  "schema_version": "woek-parliament-issue-241-current-residual-1.0",
+  "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
+  "issue": 241,
+  "audited_main_commit": "cf9645c4e15a3dc759f62d51202218348d3f7707",
+  "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
+  "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
+  "classification_taxonomy": [
+    "DONE_ON_MAIN",
+    "DONE_AND_LIVE",
+    "PRESENT_BUT_HIDDEN",
+    "RESTORE_REQUIRED",
+    "TECHNICAL_GAP",
+    "APPROVED_FACH_NOT_PROJECTED",
+    "GENUINE_FACH_REVIEW_REQUIRED",
+    "NOT_APPLICABLE"
+  ],
+  "release_policy": {
+    "github_first": true,
+    "no_new_vercel_build": true,
+    "current_github_golden_readiness": "FACH_RESIDUAL_OPEN",
+    "current_github_golden_readiness_artifact": "ops/releases/parliament-current-golden-readiness-2026-08-28.json",
+    "next_runtime_release_condition": "BERLIN_AND_MV_PROGRAMME_ANALYSIS_TERMINAL_THEN_SUPERSEDING_COMBINED_GITHUB_GOLDEN_STATE",
+    "release_architecture_change_allowed": false
+  },
+  "current_state": {
+    "sachsen_anhalt": {
+      "status": "TERMINAL_6_OF_6",
+      "authoritative_source_units": 5403,
+      "authoritative_effect_mechanisms": 5308,
+      "non_effect_source_leaves": 95,
+      "evidence": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
+    },
+    "berlin": {
+      "status": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "classified_parties": 17,
+      "verified_final_programmes": 12,
+      "canonicalization_pending": 0,
+      "byte_exact_canonical_artifacts": 12,
+      "final_programme_not_verified": 5,
+      "existing_theme_reviews": 6,
+      "programme_analysis_complete": 4,
+      "programme_analysis_complete_parties": ["BSW", "DKP", "Die PARTEI", "SGP"],
+      "genuine_fach_programmes": 8,
+      "remaining_review_envelopes": 1215,
+      "remaining_exact_effect_objects_identified": 0,
+      "remaining_review_scopes": 1215,
+      "remaining_exact_effect_object_count": null,
+      "known_segmentation_defects": 2,
+      "evidence": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
+    },
+    "mecklenburg_vorpommern": {
+      "status": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+      "classified_parties": 19,
+      "verified_final_programmes": 12,
+      "canonicalization_pending": 0,
+      "canonical_artifacts_completed_in_v2": 3,
+      "current_source_finality_open": 1,
+      "final_programme_not_verified": 7,
+      "source_unavailable_for_election_corpus": 6,
+      "existing_theme_reviews": 8,
+      "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
+    },
+    "official_state_source_adapters": {
+      "status": "ACTIVE_DOCUMENT_DISCOVERY_16_OF_16",
+      "registered_states": 16,
+      "active_document_discovery_adapters": 16,
+      "automatic_public_fact_projection": 0,
+      "automatic_fach_projection": 0,
+      "evidence": "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
+    }
+  },
+  "requirements": [
+    {
+      "id": "241-GAP-01-WAHLPROGRAMM-WIRKUNGSPOTENZIAL",
+      "issue_241_refs": ["Bestaetigte Gaps/1", "C/visible/1-8", "C/detail/1-4"],
+      "title": "Wirkungspotenzial, Gesamtbefund, Key Findings sowie Richtung und Evidenz vor Prozessmetadaten",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #235", "woek-parlament-app/app/components/StateProgrammeSourceRegister.tsx", "woek-parlament-app/scripts/quality/check-sachsen-anhalt-programme-publication.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-GAP-02-KOMMUNIKATION-MEDIEN",
+      "issue_241_refs": ["Bestaetigte Gaps/2", "B/Lifecycle/Communication-Media", "C/detail/10"],
+      "title": "Kommunikations- und Medienwirkung getrennt von Massnahmenwirkung",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #236", "woek-parlament-app/data/state-programmes/communication-media-impact/restore-first-audit-20260820.json", "woek-parlament-app/scripts/quality/check-communication-media-source-vs-view.mjs"],
+      "residual": null
+    },
+    {
+      "id": "241-GAP-03-DNS-AKTIONSPLAN",
+      "issue_241_refs": ["Bestaetigte Gaps/3", "D/1-5"],
+      "title": "Deutsche Nachhaltigkeitsstrategie 2025 und Aktionsplan 2026 als getrennte, versionierte Wirkungsfaelle",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #237", "PR #248", "woek-parlament-app/data/government/strategy-impact/aktionsplan-nachhaltigkeit-2026-missions-01-10.jsonl", "woek-parlament-app/data/government/strategy-impact/aktionsplan-nachhaltigkeit-2026-missions-11-19.jsonl"],
+      "residual": null
+    },
+    {
+      "id": "241-GAP-04-BADEN-WUERTTEMBERG",
+      "issue_241_refs": ["Bestaetigte Gaps/4", "F/Baden-Wuerttemberg"],
+      "title": "Baden-Wuerttemberg Koalitionsvertrag 2026-2031 vollstaendig und wirkungsorientiert",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #239", "PR #249", "woek-parlament-app/data/states/baden-wuerttemberg-coalition-commitments.json", "woek-parlament-app/scripts/quality/check-bw-coalition-source-vs-view.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-GAP-05-RHEINLAND-PFALZ",
+      "issue_241_refs": ["Bestaetigte Gaps/5", "F/Rheinland-Pfalz"],
+      "title": "Rheinland-Pfalz Koalitionsvertrag und neue Landesregierung 2026 vollstaendig",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #251", "PR #252", "woek-parlament-app/data/states/rheinland-pfalz-coalition-commitments.json", "woek-parlament-app/scripts/quality/check-rlp-coalition-source-vs-view.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-GAP-06-BERLIN-SOURCE-FIELD",
+      "issue_241_refs": ["Bestaetigte Gaps/6", "F/Berlin"],
+      "title": "Berlin 2026 offizielles Feld und Quellenreife wahrheitsgetreu klassifiziert",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #293", "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json", "woek-parlament-app/scripts/quality/check-berlin-current-source.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-GAP-07-BERLIN-DEEP-PROGRAMME",
+      "issue_241_refs": ["Bestaetigte Gaps/6", "F/Berlin", "DoD/prioritaere Fachluecken"],
+      "title": "Berlin aktuell verfuegbare finale Programme programmspezifisch atomisieren, fachpruefen und projizieren",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["Issue #241 comment 5386359104", "Issue #240 comments 5396796272, 5396814341 and 5396842873", "Issue #240 authoritative DoD comment 5448629781", "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md", "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"],
+      "residual": "BE-FACH-CONTENT-RESIDUAL"
+    },
+    {
+      "id": "241-GAP-08-MV-SOURCE-FIELD",
+      "issue_241_refs": ["Bestaetigte Gaps/6", "F/Mecklenburg-Vorpommern"],
+      "title": "Mecklenburg-Vorpommern 2026 offizielles Feld und Quellenreife wahrheitsgetreu klassifiziert",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #294", "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json", "woek-parlament-app/scripts/quality/check-mv-current-source.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-GAP-09-MV-DEEP-PROGRAMME",
+      "issue_241_refs": ["Bestaetigte Gaps/6", "F/Mecklenburg-Vorpommern", "DoD/prioritaere Fachluecken"],
+      "title": "MV aktuell verfuegbare finale Programme programmspezifisch atomisieren, fachpruefen und projizieren",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["Issue #241 comment 5386359104", "woek-parlament-app/data/states/mecklenburg-vorpommern/approved-review-2026-08-18.md"],
+      "residual": "MV-FACH-CONTENT-RESIDUAL"
+    },
+    {
+      "id": "241-A-01-HISTORY",
+      "issue_241_refs": ["A/Git-Historie alte Branches PRs Commits"],
+      "title": "Restore-first gegen Git-Historie und vorhandene Branches/PRs",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/autopilot/audit/2.3-remediated/CODEX-WORK-RECONCILIATION-2.3-SUMMARY.json", "Issue #284", "PR #299"],
+      "residual": null
+    },
+    {
+      "id": "241-A-02-CANONICAL-WOEK",
+      "issue_241_refs": ["A/WOEK Fachreleases Baselines Reviews Handoffs Ledgers"],
+      "title": "Restore-first gegen kanonische WOEK-Fachbestaende",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/method/fachvollstaendigkeit-b07-manifest.json", "PR #244"],
+      "residual": null
+    },
+    {
+      "id": "241-A-03-PRIOR-RUNTIME",
+      "issue_241_refs": ["A/fruehere Production Preview Staende"],
+      "title": "Semantischer Vergleich gegen akzeptierten Produktionsstand",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/method/fachvollstaendigkeit-b07-manifest.json#/semantic_diff_against_accepted_production", "ops/releases/parliament-github-golden-state-2026-08-23.json"],
+      "residual": null
+    },
+    {
+      "id": "241-A-04-CURRENT-PROJECTION",
+      "issue_241_refs": ["A/aktuelles Datenmodell Renderer Navigation Search Sitemap"],
+      "title": "Aktuelle Datenmodelle und oeffentliche Projektion in Source-vs-View-Gates einbezogen",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/content-integrity-manifest.json", ".github/workflows/parliament-github-golden-state.yml", "PR #295"],
+      "residual": null
+    },
+    {
+      "id": "241-A-05-CLASSIFICATION",
+      "issue_241_refs": ["A/Klassifikation aller Soll-Inhalte"],
+      "title": "Aktuelle #241-Soll-Inhalte in der vorgeschriebenen Residualtaxonomie klassifiziert",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["docs/audits/parliament-241-current-residual-2026-08-24.json", "tools/validate_parliament_issue_241_residual.py"],
+      "residual": null
+    },
+    {
+      "id": "241-A-06-NO-FALSE-NEVER",
+      "issue_241_refs": ["A/Nichts als nie vorhanden vor Historie und WOEK"],
+      "title": "Fehlende Inhalte bleiben Restore-/Fach-/Technikstatus statt unbelegter Nie-vorhanden-Behauptung",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/AGENTS.md", "woek-parlament-app/docs/parlament/PUBLICATION_CONTRACT.md"],
+      "residual": null
+    },
+    {
+      "id": "241-B-01-GOVERNMENT",
+      "issue_241_refs": ["B/Bundesregierung Regierungsentscheidungen Strategien Aktionsplaene"],
+      "title": "Bundesregierung, Entscheidungen, Strategien und Aktionsplaene im geprueften Releasebestand",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/method/fachvollstaendigkeit-b07-manifest.json", "woek-parlament-app/scripts/quality/check-government-source-vs-view.mjs"],
+      "residual": null
+    },
+    {
+      "id": "241-B-02-BUNDESTAG",
+      "issue_241_refs": ["B/Bundestag Entscheidungen Historie bevorstehende Entscheidungen"],
+      "title": "Bundestags-Entscheidungsfaelle, Historie und offene Entscheidungsstatus im Releasebestand",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/fachakten/release-1/parlament", "woek-parlament-app/data/generated/release-1/content-integrity.json"],
+      "residual": null
+    },
+    {
+      "id": "241-B-03-BUND-PROGRAMMES",
+      "issue_241_refs": ["B/Bundestagswahlprogramme 2025 plus Koalitionsvertrag", "DoD/prioritaere Fachluecken"],
+      "title": "Sieben Bundes-Programm-/Koalitionsdokumente mit 1.593 Zusagen auf Editorial-v2+-Tiefe",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["Issue #234", "woek-parlament-app/data/fachakten/release-1/bund"],
+      "residual": "BUND-7-DOCUMENT-EDITORIAL-RESIDUAL"
+    },
+    {
+      "id": "241-B-04-EU",
+      "issue_241_refs": ["B/EU"],
+      "title": "EU Source-vs-View und freigegebene Wirkungsfaelle",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/autopilot/audit/2.3-remediated/EU-SOURCE-VS-VIEW-2.3-FULL.json", "woek-parlament-app/scripts/quality/check-eu-source-vs-view.mjs"],
+      "residual": null
+    },
+    {
+      "id": "241-B-05-ALL-16-STATES-PUBLIC",
+      "issue_241_refs": ["B/alle 16 Laender", "F/andere Laender aktueller Lifecycle"],
+      "title": "Alle 16 Laender mit wahrheitsgetreuem Lifecycle und vorhandener Fachbasis oeffentlich",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #253", "PR #265", "woek-parlament-app/data/political-jurisdictions.json", "content/audits/state-sustainability-architecture-url-matrix.json"],
+      "residual": null
+    },
+    {
+      "id": "241-B-06-ALL-16-STATES-ADAPTERS",
+      "issue_241_refs": ["B/alle 16 Laender", "F/Regierungshandeln monitoren"],
+      "title": "Operative amtliche Source-Adapter fuer laufendes Monitoring aller 16 Laender",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json", "woek-parlament-app/scripts/run-official-state-source-adapters.mjs", ".github/workflows/state-official-source-adapters.yml"],
+      "residual": null
+    },
+    {
+      "id": "241-B-07-LANDTAG-PROGRAMMES",
+      "issue_241_refs": ["B/Landtagswahlprogramme", "F/Wahlen priorisieren"],
+      "title": "Landtagswahlprogramme nach wahrheitsgetreuem Quellen- und Fachreifestatus",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["PR #292", "PR #293", "PR #294", "Issue #240"],
+      "residual": "BE-THEN-MV-PROGRAMME-ANALYSIS-RESIDUAL"
+    },
+    {
+      "id": "241-B-08-MANDATES",
+      "issue_241_refs": ["B/Koalitions Mandatsdokumente", "B/neue Landesregierungen 2026"],
+      "title": "Aktuell freigegebene Koalitions- und Mandatsdokumente, insbesondere BW und RLP 2026",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #249", "PR #251", "woek-parlament-app/data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-BW-COALITION-2026-2031.json", "woek-parlament-app/data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-RLP-COALITION-2026-2031.json"],
+      "residual": null
+    },
+    {
+      "id": "241-B-09-IMPACT-CASES",
+      "issue_241_refs": ["B/Wirkungsfaelle", "B/Fachanalysen"],
+      "title": "Freigegebene Wirkungsfaelle und Fachanalysen verlustfrei projiziert",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/method/fachvollstaendigkeit-b07-manifest.json", "woek-parlament-app/data/government/impact-cases/fachrelease-import-audit.json"],
+      "residual": null
+    },
+    {
+      "id": "241-B-10-OBSERVATORY",
+      "issue_241_refs": ["B/Wirkungsobservatorium EvidenceEvents Reality Checks"],
+      "title": "Observatorium, Evidence Events, Outcomes und Reality-Check-Kandidaten",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/observatory/public/evidence-events.jsonl", "woek-parlament-app/data/observatory/public/reality-check-candidates.jsonl", "woek-parlament-app/data/observatory/public/outcome-series.jsonl"],
+      "residual": null
+    },
+    {
+      "id": "241-B-11-RECOMMENDATIONS",
+      "issue_241_refs": ["B/Empfehlungen Handlungsoptionen", "B/Lifecycle/Recommendation"],
+      "title": "Ausschliesslich freigegebene Empfehlungen und Handlungsoptionen projiziert",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #244", "woek-parlament-app/data/method/fachvollstaendigkeit-b07-manifest.json#/recommendations", "woek-parlament-app/data/recommendations/public/recommendations.jsonl"],
+      "residual": null
+    },
+    {
+      "id": "241-B-12-METHOD-TRANSPARENCY-DISCOVERY",
+      "issue_241_refs": ["B/Methodik Transparenz Quellen Suche Navigation Sitemap"],
+      "title": "Methodik, Transparenz, Quellen, Suche, Navigation und Sitemap",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/docs/parlament/PUBLICATION_CONTRACT.md", "woek-parlament-app/data/content-integrity-manifest.json", "PR #295"],
+      "residual": null
+    },
+    {
+      "id": "241-B-13-VOTES",
+      "issue_241_refs": ["B/Abstimmungsbilanz soweit amtlich belegt"],
+      "title": "Individualstimmen nur aus amtlicher namentlicher Abstimmung, sonst fail-closed",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/autopilot/audit/2.3-remediated/CODEX-WORK-RECONCILIATION-2.3-SUMMARY.json#/reconciled_workstreams/parliament_votes", "woek-parlament-app/lib/members/public-votes.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-B-14-LIFECYCLE-FACT-TO-VERSION",
+      "issue_241_refs": ["B/Lifecycle/Fact-Source through Version History"],
+      "title": "Lifecycle-Schichten fuer freigegebene Objekte technisch getrennt, versioniert und fail-closed",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/autopilot/contracts", "woek-parlament-app/data/recommendations/history/recommendation-versions.jsonl", "woek-parlament-app/data/observatory/public/analysis-version-updates.jsonl"],
+      "residual": null
+    },
+    {
+      "id": "241-B-15-LIFECYCLE-MISSING-FACH",
+      "issue_241_refs": ["B/Lifecycle/Problem Goal Potential Direction Mechanisms Distribution References Evidence Counterfactual"],
+      "title": "Fehlende Lifecycle-Fachschichten nicht aus Code, Keywords, Partei oder Templates erzeugen",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["woek-parlament-app/AGENTS.md", "Issue #241 comment 5386359104"],
+      "residual": "BUND-BE-MV-EXPLICIT-FACH-RESIDUALS"
+    },
+    {
+      "id": "241-C-01-QUALITY-FIRST",
+      "issue_241_refs": ["C/5-20 Sekunden sichtbare Gesamt-Potenzialeinordnung Chancen Risiken Key Findings Richtung Evidenz Unsicherheit Schutz Kompetenz Reality Check"],
+      "title": "Wirkung-first Orientierung ohne Partei-Gesamtnote und mit getrennten Statusdimensionen",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #235", "woek-parlament-app/lib/presentation/overview-assessment.ts", "woek-parlament-app/lib/presentation/public-maturity.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-C-02-PROGRESSIVE-DISCLOSURE",
+      "issue_241_refs": ["C/Detailseiten progressive disclosure/1-12"],
+      "title": "Detailreihenfolge von Sachgegenstand und Wirkung bis Lifecycle und technischer Transparenz",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/app/entscheidungen/[slug]/page.tsx", "woek-parlament-app/app/components/SamePageNavigation.tsx", "woek-parlament-app/docs/parlament/PUBLICATION_CONTRACT.md"],
+      "residual": null
+    },
+    {
+      "id": "241-D-01-DNS-DATA-FUNCTION",
+      "issue_241_refs": ["D/DNS Ziele Indikatoren Datenfunktion"],
+      "title": "DNS-Ziele und Indikatoren mit expliziter Datenfunktion statt Kausalitaetsbehauptung",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #253", "PR #265", "content/audits/state-sustainability-architecture-url-matrix.json"],
+      "residual": null
+    },
+    {
+      "id": "241-D-02-EPISTEMIC-SEPARATION",
+      "issue_241_refs": ["D/Zuordnung kein Kausalbeweis", "D/Output Outcome Beobachtung Attribution"],
+      "title": "Zielzuordnung, Output, Outcome, Beobachtung und Attribution getrennt",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/AGENTS.md", "woek-parlament-app/docs/parlament/PUBLICATION_CONTRACT.md", "PR #265"],
+      "residual": null
+    },
+    {
+      "id": "241-D-03-REFERENCE-SEPARATION",
+      "issue_241_refs": ["D/MPD SDG SDG+ Recht Staatsziele Schutzgrenzen getrennt"],
+      "title": "MPD, SDGs, WÖk-SDG+, Recht, Staatsziele und Schutzgrenzen getrennt",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #265", "woek-parlament-app/data/state-target-registers.ts", "woek-parlament-app/data/indicators/dns-official-registry.json"],
+      "residual": null
+    },
+    {
+      "id": "241-D-04-NO-ARITHMETIC-SALDO",
+      "issue_241_refs": ["D/keine arithmetische Gesamtsaldierung"],
+      "title": "Keine arithmetische Gesamtsaldierung heterogener Wirkungen",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/AGENTS.md", "woek-parlament-app/docs/parlament/PUBLICATION_CONTRACT.md"],
+      "residual": null
+    },
+    {
+      "id": "241-E-01-REUSABLE-BLUEPRINT",
+      "issue_241_refs": ["E/Sachsen-Anhalt wiederverwendbares Portalpattern"],
+      "title": "Sachsen-Anhalt als wiederverwendbares, nicht hart codiertes Portalpattern",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/lib/presentation/sachsen-anhalt-programme-model.ts", "woek-parlament-app/app/components/StateProgrammeSourceRegister.tsx", "PR #292"],
+      "residual": null
+    },
+    {
+      "id": "241-E-02-VISUAL-ANCHORS",
+      "issue_241_refs": ["E/Icons Textaequivalent", "E/visuelle Anker", "E/kleine fachliche Diagramme"],
+      "title": "Textaequivalente visuelle Anker und nicht irrefuehrende Fachvisuals",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/autopilot/audit/2.3-remediated/CODEX-UX-UI-AUDIT-2.3.md", "woek-parlament-app/data/autopilot/audit/2.3-remediated/PUBLIC-UX-RENDERED-AUDIT-2.3.json"],
+      "residual": null
+    },
+    {
+      "id": "241-E-03-ACCORDION",
+      "issue_241_refs": ["E/Accordion progressive disclosure"],
+      "title": "Deep Dives strukturiert, ohne Fachinhalt zu entfernen",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/app/components/SamePageNavigation.tsx", "woek-parlament-app/docs/parlament/PUBLICATION_CONTRACT.md"],
+      "residual": null
+    },
+    {
+      "id": "241-E-04-RESPONSIVE-A11Y",
+      "issue_241_refs": ["E/mobile 320-1440", "E/WCAG 2.2 AA Keyboard Fokus Screenreader Overflow"],
+      "title": "Responsive und Accessibility-Gates fuer aktuelle Golden-State-Routen",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["woek-parlament-app/data/autopilot/audit/2.3-remediated/VISUAL-REGRESSION-MANIFEST-2.3.json", "woek-parlament-app/data/autopilot/audit/2.3-remediated/COMMUNICATION-MEDIA-RESPONSIVE-A11Y.json", "PR #292"],
+      "residual": null
+    },
+    {
+      "id": "241-E-05-ABOVE-FOLD",
+      "issue_241_refs": ["E/Above-the-fold Gegenstand Ergebnis Unsicherheit"],
+      "title": "Gegenstand, Potenzialeinordnung und Unsicherheit frueh sichtbar",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #235", "woek-parlament-app/lib/presentation/overview-assessment.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-F-01-ST-PRIORITY",
+      "issue_241_refs": ["F/Sachsen-Anhalt 06.09.2026"],
+      "title": "Sachsen-Anhalt Wahlzyklus 6/6 terminal",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #292", "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"],
+      "residual": null
+    },
+    {
+      "id": "241-F-02-BERLIN-PRIORITY",
+      "issue_241_refs": ["F/Berlin 20.09.2026"],
+      "title": "Berlin aktuelle Quellen zuerst technisch schliessen, dann explizite Fachresiduals",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json", "tools/validate_berlin_current_source_register.py"],
+      "residual": null
+    },
+    {
+      "id": "241-F-03-MV-PRIORITY",
+      "issue_241_refs": ["F/Mecklenburg-Vorpommern 20.09.2026"],
+      "title": "MV nach Berlin technisch kanonisieren, dann explizite Fachresiduals",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json", "tools/validate_mv_current_source_register.py"],
+      "residual": null
+    },
+    {
+      "id": "241-F-04-OTHER-STATES-TRUTHFUL",
+      "issue_241_refs": ["F/andere Laender Lifecycle und Fachbestand ohne kuenstliche Vollstaendigkeit"],
+      "title": "Andere Laender zeigen vorhandenen Stand ohne Vollstaendigkeitsvortaeuschung",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #253", "PR #265", "woek-parlament-app/lib/states/public-content.ts"],
+      "residual": null
+    },
+    {
+      "id": "241-G-01-CONTENT-PATHS",
+      "issue_241_refs": ["G/required rendered unrendered content paths"],
+      "title": "Required/rendered/unrendered Content-Pfade als Gate",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/content-integrity-manifest.json", "ops/releases/parliament-github-golden-state-2026-08-23.json"],
+      "residual": null
+    },
+    {
+      "id": "241-G-02-ROUTES-DISCOVERY",
+      "issue_241_refs": ["G/required rendered missing routes", "G/navigation search sitemap targets"],
+      "title": "Pflichtrouten, Navigation, Suche und Sitemap maschinengeprueft",
+      "status": "DONE_ON_MAIN",
+      "evidence": [".github/workflows/parliament-github-golden-state.yml", "tools/validate_parliament_github_golden_state.py"],
+      "residual": null
+    },
+    {
+      "id": "241-G-03-ANALYSIS-LAYERS",
+      "issue_241_refs": ["G/analysis_layers_by_object"],
+      "title": "Analyseschichten je freigegebenem Objekt im Content-Integrity-/Source-vs-View-System",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/generated/release-1/content-integrity.json", "woek-parlament-app/data/method/fachvollstaendigkeit-b07-manifest.json"],
+      "residual": null
+    },
+    {
+      "id": "241-G-04-VERSIONS-HASHES",
+      "issue_241_refs": ["G/source_hashes fach_version renderer_version"],
+      "title": "Quellhashes, Fachversionen und Rendererbindung",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["ops/releases/parliament-github-golden-state-2026-08-23.json", "woek-parlament-app/data/content-integrity-manifest.json"],
+      "residual": null
+    },
+    {
+      "id": "241-G-05-SEMANTIC-DIFF",
+      "issue_241_refs": ["G/semantischer Diff Kandidat vs akzeptierte Production"],
+      "title": "Semantischer Verlustvergleich gegen akzeptierte Production",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/method/fachvollstaendigkeit-b07-manifest.json#/semantic_diff_against_accepted_production"],
+      "residual": null
+    },
+    {
+      "id": "241-G-06-REGRESSION-FAIL-CLOSED",
+      "issue_241_refs": ["G/Release FAIL bei Verlust oder stiller Degradation"],
+      "title": "Golden-State-Regressionen fail-closed",
+      "status": "DONE_ON_MAIN",
+      "evidence": [".github/workflows/parliament-github-golden-state.yml", "tools/validate_parliament_github_golden_state.py", "tools/validate_parliament_issue_241_residual.py"],
+      "residual": null
+    },
+    {
+      "id": "241-G-07-NEXT-COMBINED-TERMINAL",
+      "issue_241_refs": ["G/Golden State als Code", "DoD/finales Gap Golden-State Manifest"],
+      "title": "Superseding combined terminal descriptor nach Berlin und MV",
+      "status": "TECHNICAL_GAP",
+      "evidence": ["Issue #241 comment 5386359104", "ops/releases/parliament-github-golden-state-2026-08-23.json"],
+      "residual": "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"
+    },
+    {
+      "id": "241-H-01-235",
+      "issue_241_refs": ["H/1"],
+      "title": "PR #235 Merge, Production, Smoke",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #235", "Issue #233 comment 5351155424"],
+      "residual": null
+    },
+    {
+      "id": "241-H-02-B07",
+      "issue_241_refs": ["H/2"],
+      "title": "B07 Reconcile, Merge, Production, Smoke",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #244", "woek-parlament-app/data/autopilot/audit/2.3-remediated/GOLDEN-STATE-B07.json"],
+      "residual": null
+    },
+    {
+      "id": "241-H-03-236",
+      "issue_241_refs": ["H/3"],
+      "title": "Medienwirkung Restore",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #236"],
+      "residual": null
+    },
+    {
+      "id": "241-H-04-237",
+      "issue_241_refs": ["H/4"],
+      "title": "DNS und Aktionsplan",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #237", "PR #248"],
+      "residual": null
+    },
+    {
+      "id": "241-H-05-239-240",
+      "issue_241_refs": ["H/5"],
+      "title": "Laender-Fachvollstaendigkeit: abgeschlossene Teillanes und aktueller Rest",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["Issue #239", "Issue #240", "PR #292", "PR #293", "PR #294"],
+      "residual": "BE-THEN-MV-PROGRAMME-ANALYSIS-RESIDUAL"
+    },
+    {
+      "id": "241-H-06-PORTAL-REMAINDER",
+      "issue_241_refs": ["H/6"],
+      "title": "Restlicher portalweiter Gap-Closure nach prioritaeren Laendern",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["Issue #234", "Issue #241"],
+      "residual": "BUND-7-DOCUMENT-EDITORIAL-RESIDUAL"
+    },
+    {
+      "id": "241-DOD-01-RESTORE-AUDIT",
+      "issue_241_refs": ["DoD/Restore-first alle Portaldomaenen"],
+      "title": "Aktueller Restore-first- und Residual-Audit",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["docs/audits/parliament-241-current-residual-2026-08-24.json", "woek-parlament-app/data/autopilot/audit/2.3-remediated/CODEX-WORK-RECONCILIATION-2.3-SUMMARY.json"],
+      "residual": null
+    },
+    {
+      "id": "241-DOD-02-HISTORICAL-LOSSES",
+      "issue_241_refs": ["DoD/historische Verluste wiederhergestellt"],
+      "title": "Identifizierte historische Verluste des abgeschlossenen Releaseumfangs restauriert",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["Issue #236", "PR #244", "PR #249", "PR #251"],
+      "residual": null
+    },
+    {
+      "id": "241-DOD-03-PRIORITY-FACH",
+      "issue_241_refs": ["DoD/prioritaere Fachluecken geschlossen oder REVIEWED_NOT_ASSESSABLE"],
+      "title": "Berlin und MV programmspezifische Fachabdeckung",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["Issue #241 comment 5386359104"],
+      "residual": "BE-THEN-MV-PROGRAMME-ANALYSIS-RESIDUAL"
+    },
+    {
+      "id": "241-DOD-04-2026-CYCLES",
+      "issue_241_refs": ["DoD/Wahlzyklen und 2026 Neuregierungen"],
+      "title": "Prioritaere 2026-Wahlzyklen angemessen vollstaendig",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["PR #292", "PR #293", "PR #294"],
+      "residual": "BE-THEN-MV-PROGRAMME-ANALYSIS-RESIDUAL"
+    },
+    {
+      "id": "241-DOD-05-UI-DNS-A11Y",
+      "issue_241_refs": ["DoD/Wirkung-first", "DoD/DNS", "DoD/Visual UX Accessibility Responsive"],
+      "title": "Wirkung-first, DNS-Trennung und aktuelle UX/A11y-Gates",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["PR #235", "Issue #253", "PR #265", "PR #292"],
+      "residual": null
+    },
+    {
+      "id": "241-DOD-06-TESTS-GOLDEN",
+      "issue_241_refs": ["DoD/Tests Source-vs-View Golden-State PASS"],
+      "title": "Aktuell akzeptierter GitHub Golden State und Source-vs-View-Gates",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["PR #295", ".github/workflows/parliament-github-golden-state.yml"],
+      "residual": null
+    },
+    {
+      "id": "241-DOD-07-MAIN",
+      "issue_241_refs": ["DoD/alles auf main"],
+      "title": "Abgeschlossener Umfang auf main",
+      "status": "DONE_ON_MAIN",
+      "evidence": ["main@76e885da27574b1c1d8cd3cbcf6cf6083bceee63"],
+      "residual": null
+    },
+    {
+      "id": "241-DOD-08-PRODUCTION",
+      "issue_241_refs": ["DoD/Vercel Production READY", "DoD/Hauptdomain finaler Commit", "DoD/Production Smoke Runtime"],
+      "title": "Letzter akzeptierter Parliament Runtime-Stand exakt gebunden und live",
+      "status": "DONE_AND_LIVE",
+      "evidence": ["production commit 3539aae4920291f45ec03b4c297af147b9a9eb89", "PR #295"],
+      "residual": "Kein neuer Build fuer diese GitHub-Arbeit; naechste Runtime erst nach neuem kombiniertem Golden State."
+    },
+    {
+      "id": "241-DOD-09-FINAL-CLOSURE",
+      "issue_241_refs": ["DoD/finales Gap Golden-State Manifest Abschlusskommentar", "PORTAL_GAP_CLOSURE_COMPLETED_LIVE"],
+      "title": "Gesamtinitiative terminal abschliessen",
+      "status": "GENUINE_FACH_REVIEW_REQUIRED",
+      "evidence": ["Issue #241"],
+      "residual": "BLOCKED_BY_BERLIN_MV_AND_LATER_BUND_EXPLICIT_FACH"
+    },
+    {
+      "id": "241-POLICY-01-AUTOPILOT-DEPLOY-CLAUSE",
+      "issue_241_refs": ["Ziel/Human out of loop", "H/Production after every batch"],
+      "title": "Historische automatische Vercel-Deploy-Klausel unter aktueller Owner-Policy",
+      "status": "NOT_APPLICABLE",
+      "evidence": ["Current owner instruction: NO VERCEL work; NO_NEW_VERCEL_BUILD=true"],
+      "residual": null
+    }
+  ],
+  "finite_residuals": {
+    "technical": [
+      {
+        "id": "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL",
+        "order": 1,
+        "jurisdiction": "combined",
+        "items": ["superseding combined terminal GitHub descriptor"],
+        "required_action": "Create only after Berlin and MV explicit programme-Fach residuals are closed and all GitHub gates pass."
+      }
+    ],
+    "fach_review_required": [
+      {
+        "id": "BE-FACH-CONTENT-RESIDUAL",
+        "order": 1,
+        "jurisdiction": "berlin",
+        "verified_final_programmes": ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "DKP", "FDP", "Die PARTEI", "Tierschutzpartei", "SGP", "Volt", "SPD", "CDU", "Die Linke"],
+        "programme_analysis_complete": ["BSW", "DKP", "Die PARTEI", "SGP"],
+        "genuine_fach_programmes": ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "FDP", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"],
+        "canonicalization_pending_programmes": [],
+        "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json",
+        "fach_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json",
+        "remaining_review_envelopes": 1215,
+        "remaining_exact_effect_objects_identified": 0,
+        "remaining_review_scopes": 1215,
+        "remaining_exact_effect_object_count": null,
+        "known_segmentation_defects": ["BE-SPD-2026-SU-0136-A01", "BE-SPD-2026-SU-0136-A03"],
+        "rejected_false_terminal_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json",
+        "preserved_existing_scope": "Exact terminal Fach stock is preserved for BSW, DKP, Die PARTEI and SGP. BSW physical pages P1-P66 are fully source-bound. P64-P66 contribute 66 terminal records including three deterministic child records; the BSW residual is zero.",
+        "required_fach_action": "For the eight exact genuine_fach_programmes, supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. Berlin's current residual contains 1215 bounded page review envelopes and zero exact already-segmented Fach-open objects. The overall exact effect-object count remains unknown until all page envelopes are segmented."
+      },
+      {
+        "id": "MV-FACH-CONTENT-RESIDUAL",
+        "order": 2,
+        "jurisdiction": "mecklenburg-vorpommern",
+        "verified_final_programmes": ["SPD", "AfD", "CDU", "Die Linke", "BÜNDNIS 90/DIE GRÜNEN", "FDP", "FREIE WAEHLER", "PIRATEN", "Bündnis C", "BSW", "PdF", "Volt"],
+        "canonicalization_pending_programmes": [],
+        "current_source_finality_open": ["Die PARTEI"],
+        "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json",
+        "preserved_existing_scope": "Eight cross-party materiality themes plus the explicit Bündnis-C batch; neither is a full programme-by-programme corpus review.",
+        "required_fach_action": "For every final verified programme, supply explicit source-bound atom-level Fach records or explicit reviewed-not-assessable reasons."
+      },
+      {
+        "id": "BUND-7-DOCUMENT-EDITORIAL-RESIDUAL",
+        "order": 3,
+        "jurisdiction": "bund",
+        "documents": ["btw-2025-spd", "btw-2025-afd", "btw-2025-ssw", "coalition-2025-cdu-csu-spd", "btw-2025-cdu-csu", "btw-2025-linke", "btw-2025-gruene"],
+        "source_commitment_count": 1593,
+        "required_fach_action": "Complete only through explicit approved Editorial-v2+ records; never derive direction, DNS or recommendations from legacy templates."
+      }
+    ]
+  },
+  "constraints": {
+    "fach_synthesized": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "party_score_created": false,
+    "vercel_build_triggered": false,
+    "full_repository_release_upload_triggered": false
+  }
+}

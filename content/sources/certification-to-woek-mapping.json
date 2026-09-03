@@ -1,0 +1,2098 @@
+{
+  "metadata": {
+    "title": "Zertifizierungs- und Standard-Mapping zur Wirkungsökonomie",
+    "status": "draft",
+    "review_required": true,
+    "last_updated": "2026-05-22",
+    "rule": "Keine Zertifizierung ersetzt eine WÖk-Wirkungsbewertung oder positive Netto-Wirkung."
+  },
+  "mappings": [
+    {
+      "certification_id": "iso-14001",
+      "name": "ISO 14001",
+      "category": "environmental_management",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Datenqualität",
+        "Managementsystem",
+        "Audit-Hinweis",
+        "Umweltindikatoren"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 14001 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Managementsystemstandard; beweist nicht automatisch positive Wirkung."
+    },
+    {
+      "certification_id": "iso-50001",
+      "name": "ISO 50001",
+      "category": "energy_management",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Energieindikatoren",
+        "Managementsystem",
+        "Audit-Hinweis"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 50001 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Energiemanagement ist kein vollständiger Wirkungsnachweis."
+    },
+    {
+      "certification_id": "iso-45001",
+      "name": "ISO 45001",
+      "category": "occupational_health_safety",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Arbeitsschutz",
+        "Managementsystem",
+        "Audit-Hinweis"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 45001 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Arbeitsschutzsystem, keine Gesamtbewertung sozialer Wirkung."
+    },
+    {
+      "certification_id": "iso-26000",
+      "name": "ISO 26000",
+      "category": "social_responsibility",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Orientierungsrahmen",
+        "Governance-Kontext"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 26000 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Leitfaden, keine zertifizierbare WÖk-Bewertung."
+    },
+    {
+      "certification_id": "iso-14040",
+      "name": "ISO 14040",
+      "category": "life_cycle_assessment",
+      "scope": "product / process",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "LCA",
+        "Produktdaten",
+        "Umweltindikatoren"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 14040 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Methodik für Ökobilanzierung, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "iso-14044",
+      "name": "ISO 14044",
+      "category": "life_cycle_assessment",
+      "scope": "product / process",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "LCA",
+        "Produktdaten",
+        "Umweltindikatoren"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 14044 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Methodik für Ökobilanzierung, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "iso-14064",
+      "name": "ISO 14064",
+      "category": "greenhouse_gas_accounting",
+      "scope": "organisation / project",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "THG-Bilanzierung",
+        "Datenqualität"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 14064 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Emissionsbilanz, keine Bewertung aller Wirkungsräume."
+    },
+    {
+      "certification_id": "iso-14067",
+      "name": "ISO 14067",
+      "category": "product_carbon_footprint",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Product Carbon Footprint",
+        "Produktdaten"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 14067 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "CO2-Fußabdruck, kein vollständiges Wirkungsprofil."
+    },
+    {
+      "certification_id": "iso-20400",
+      "name": "ISO 20400",
+      "category": "sustainable_procurement",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Beschaffung",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 20400 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Beschaffungsleitfaden, keine Produktsteuerklasse."
+    },
+    {
+      "certification_id": "iso-31000",
+      "name": "ISO 31000",
+      "category": "risk_management",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Risikomanagement",
+        "Governance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 31000 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Risikomanagement ersetzt keine Wirkungsbewertung."
+    },
+    {
+      "certification_id": "iso-37301",
+      "name": "ISO 37301",
+      "category": "compliance_management",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Compliance",
+        "Governance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 37301 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Compliance-System, keine positive Netto-Wirkung."
+    },
+    {
+      "certification_id": "iso-37001",
+      "name": "ISO 37001",
+      "category": "anti_bribery",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Anti-Korruption",
+        "Governance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 37001 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Anti-Korruptionssystem, kein Gesamtnachweis."
+    },
+    {
+      "certification_id": "iso-9001",
+      "name": "ISO 9001",
+      "category": "quality_management",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Qualitätsmanagement",
+        "Datenqualität"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 9001 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Qualitätsmanagement, keine WÖk-Bewertung."
+    },
+    {
+      "certification_id": "iso-59000",
+      "name": "ISO 59000",
+      "category": "circular_economy",
+      "scope": "organisation / system",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Kreislaufwirtschaft",
+        "Materialflüsse"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 59000 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Kreislaufrahmen, nicht automatisch positive Netto-Wirkung."
+    },
+    {
+      "certification_id": "iso-27001",
+      "name": "ISO 27001",
+      "category": "information_security",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Informationssicherheit",
+        "Datenqualität"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 27001 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Sicherheitsmanagement, keine Demokratie-Wirkungsbewertung."
+    },
+    {
+      "certification_id": "iso-27701",
+      "name": "ISO 27701",
+      "category": "privacy_information_management",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Demokratie",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Datenschutz",
+        "Digital Governance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 27701 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Datenschutzmanagement, kein Gesamturteil."
+    },
+    {
+      "certification_id": "iso-42001",
+      "name": "ISO 42001",
+      "category": "ai_management",
+      "scope": "organisation / process",
+      "impact_spaces": [
+        "Demokratie",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "KI-Governance",
+        "Risikomanagement"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO 42001 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "KI-Managementsystem, keine automatische positive Wirkung."
+    },
+    {
+      "certification_id": "eu-ecolabel",
+      "name": "EU Ecolabel",
+      "category": "product_environmental_label",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Produktlabel",
+        "Umweltindikatoren"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "EU Ecolabel kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Umweltlabel, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "blauer-engel",
+      "name": "Blauer Engel",
+      "category": "product_environmental_label",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Produktlabel",
+        "Umweltindikatoren"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Blauer Engel kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Umweltzeichen, kein Gesamtprofil."
+    },
+    {
+      "certification_id": "nordic-swan",
+      "name": "Nordic Swan",
+      "category": "product_environmental_label",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Produktlabel",
+        "Umweltindikatoren"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Nordic Swan kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Labelsystem, Grenzen je Produktgruppe prüfen."
+    },
+    {
+      "certification_id": "cradle-to-cradle",
+      "name": "Cradle to Cradle Certified",
+      "category": "circular_product_certification",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Materialgesundheit",
+        "Kreislauf",
+        "Produktdaten"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Cradle to Cradle Certified kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Produktzertifizierung, keine WÖk-Konformität."
+    },
+    {
+      "certification_id": "epd",
+      "name": "Environmental Product Declaration / EPD",
+      "category": "environmental_product_declaration",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "LCA",
+        "EPD",
+        "Produktdaten"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Environmental Product Declaration / EPD kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Umweltdeklaration, kein vollständiges Wirkungssystem."
+    },
+    {
+      "certification_id": "pef",
+      "name": "Product Environmental Footprint / PEF",
+      "category": "environmental_footprint",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Produktdaten",
+        "LCA"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Product Environmental Footprint / PEF kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "EU-Umweltfußabdruck, keine soziale/demokratische Bewertung."
+    },
+    {
+      "certification_id": "oekobaudat",
+      "name": "ÖKOBAUDAT",
+      "category": "building_product_database",
+      "scope": "product / building",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Bauprodukte",
+        "EPD",
+        "Benchmark"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ÖKOBAUDAT kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Datenbank, keine WÖk-Bewertung."
+    },
+    {
+      "certification_id": "epeat",
+      "name": "EPEAT",
+      "category": "electronics_label",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Elektronik",
+        "Produktlabel"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "EPEAT kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Produktlabel mit begrenztem Wirkungsraum."
+    },
+    {
+      "certification_id": "energy-star",
+      "name": "Energy Star",
+      "category": "energy_label",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Energieeffizienz"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Energy Star kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Energieeffizienzlabel, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "tco-certified",
+      "name": "TCO Certified",
+      "category": "it_product_certification",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "IT-Produkte",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "TCO Certified kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "IT-Zertifizierung, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "ral-guetezeichen",
+      "name": "RAL Gütezeichen",
+      "category": "quality_label",
+      "scope": "product / process",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Nachweis",
+        "Qualität"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "RAL Gütezeichen kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Einzelfall prüfen; nicht automatisch wirkungsrelevant."
+    },
+    {
+      "certification_id": "battery-passport",
+      "name": "Battery Passport / Product Passport Initiatives",
+      "category": "product_data_infrastructure",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "DPP",
+        "Materialdaten",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Battery Passport / Product Passport Initiatives kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Dateninfrastruktur, keine Bewertung selbst."
+    },
+    {
+      "certification_id": "ghg-protocol",
+      "name": "GHG Protocol",
+      "category": "emissions_accounting",
+      "scope": "organisation / product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "THG-Bilanzierung",
+        "Scope 1-3"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "GHG Protocol kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Klimadaten, keine vollständige WÖk-Bewertung."
+    },
+    {
+      "certification_id": "cdp",
+      "name": "CDP",
+      "category": "disclosure_platform",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Offenlegung",
+        "Klima",
+        "Wasser",
+        "Wald"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "CDP kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Keine proprietären Scores kopieren."
+    },
+    {
+      "certification_id": "sbti",
+      "name": "SBTi",
+      "category": "climate_targets",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Klimaziele",
+        "Transition"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "SBTi kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Zielvalidierung, kein Nachweis eingetretener Netto-Wirkung."
+    },
+    {
+      "certification_id": "pcaf",
+      "name": "PCAF",
+      "category": "financed_emissions",
+      "scope": "finance",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "finanzierte Emissionen",
+        "Kapital"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "PCAF kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Finanzemissionen, kein Gesamtwirkungsmaß."
+    },
+    {
+      "certification_id": "pas-2060",
+      "name": "PAS 2060",
+      "category": "carbon_neutrality_claim",
+      "scope": "organisation / product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Klimaneutralitäts-Claims"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "PAS 2060 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Historisch/prüfen; Kompensation kritisch betrachten."
+    },
+    {
+      "certification_id": "iso-net-zero-guidelines",
+      "name": "ISO Net Zero Guidelines",
+      "category": "net_zero_guidance",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Net Zero",
+        "Transition"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ISO Net Zero Guidelines kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Leitlinie, keine WÖk-Bewertung."
+    },
+    {
+      "certification_id": "carbon-trust-standard",
+      "name": "Carbon Trust Standards",
+      "category": "climate_standard",
+      "scope": "organisation / product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Klimanachweis"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Carbon Trust Standards kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Einzelnachweis, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "gold-standard",
+      "name": "Gold Standard",
+      "category": "carbon_market_standard",
+      "scope": "project",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Klimaprojekte",
+        "Kompensation"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Gold Standard kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Kompensation ersetzt Nicht-Kompensation/Reverse Merit Order nicht."
+    },
+    {
+      "certification_id": "verra-vcs",
+      "name": "Verra / VCS",
+      "category": "carbon_market_standard",
+      "scope": "project",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Klimaprojekte",
+        "Kompensation"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Verra / VCS kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Kompensation kritisch; keine WÖk-Konformität."
+    },
+    {
+      "certification_id": "climate-neutral-certification",
+      "name": "Climate Neutral Certification",
+      "category": "climate_claim",
+      "scope": "organisation / product",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Klimaclaim"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Climate Neutral Certification kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Nur mit Kompensationskritik nutzen."
+    },
+    {
+      "certification_id": "transition-plan-taskforce",
+      "name": "Transition Plan Taskforce",
+      "category": "transition_planning",
+      "scope": "organisation / finance",
+      "impact_spaces": [
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Transformationspläne",
+        "Governance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Transition Plan Taskforce kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Planungsrahmen, kein Wirkungsnachweis."
+    },
+    {
+      "certification_id": "fsc",
+      "name": "FSC",
+      "category": "forestry_certification",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Wald",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "FSC kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Waldstandard, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "pefc",
+      "name": "PEFC",
+      "category": "forestry_certification",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Wald",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "PEFC kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Waldstandard, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "rainforest-alliance",
+      "name": "Rainforest Alliance",
+      "category": "agriculture_certification",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Landwirtschaft",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Rainforest Alliance kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "rspo",
+      "name": "RSPO",
+      "category": "palm_oil_certification",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Palmöl",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "RSPO kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Kontroversen und Grenzen dokumentieren."
+    },
+    {
+      "certification_id": "msc",
+      "name": "MSC",
+      "category": "seafood_certification",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Fischerei",
+        "Meer"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "MSC kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, kein vollständiges Naturprofil."
+    },
+    {
+      "certification_id": "asc",
+      "name": "ASC",
+      "category": "aquaculture_certification",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Aquakultur"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ASC kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, Grenzen prüfen."
+    },
+    {
+      "certification_id": "eu-organic",
+      "name": "Organic / EU Bio",
+      "category": "agriculture_label",
+      "scope": "product",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Landwirtschaft",
+        "Produktlabel"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Organic / EU Bio kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Bio ist kein vollständiger Wirkungsnachweis."
+    },
+    {
+      "certification_id": "naturland",
+      "name": "Naturland",
+      "category": "agriculture_label",
+      "scope": "product / farm",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Landwirtschaft",
+        "Sozialstandards"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Naturland kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, kein Gesamturteil."
+    },
+    {
+      "certification_id": "bioland",
+      "name": "Bioland",
+      "category": "agriculture_label",
+      "scope": "product / farm",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Landwirtschaft"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Bioland kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, kein Gesamturteil."
+    },
+    {
+      "certification_id": "demeter",
+      "name": "Demeter",
+      "category": "agriculture_label",
+      "scope": "product / farm",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Landwirtschaft"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Demeter kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, kein Gesamturteil."
+    },
+    {
+      "certification_id": "fairwild",
+      "name": "FairWild",
+      "category": "wild_collection_standard",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Biodiversität",
+        "Wildsammlung"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "FairWild kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Spezialstandard, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "globalgap",
+      "name": "GlobalG.A.P.",
+      "category": "agriculture_standard",
+      "scope": "product / farm",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Landwirtschaft",
+        "Lebensmittel"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "GlobalG.A.P. kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Standard, kein WÖk-Urteil."
+    },
+    {
+      "certification_id": "ipbes",
+      "name": "IPBES",
+      "category": "science_reference",
+      "scope": "system",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Biodiversität",
+        "wissenschaftliche Referenz"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "IPBES kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Wissenschaftliche Referenz, keine Zertifizierung."
+    },
+    {
+      "certification_id": "tnfd",
+      "name": "TNFD",
+      "category": "nature_risk_framework",
+      "scope": "organisation / finance",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Naturkapital",
+        "Risiko"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "TNFD kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Risikoframework, kein Label."
+    },
+    {
+      "certification_id": "fairtrade",
+      "name": "Fairtrade",
+      "category": "social_product_label",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Lieferkette",
+        "Fairness"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Fairtrade kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "sa8000",
+      "name": "SA8000",
+      "category": "social_standard",
+      "scope": "organisation / supply_chain",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Arbeitsrechte",
+        "Audit"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "SA8000 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Sozialstandard, kein Gesamtprofil."
+    },
+    {
+      "certification_id": "wrap",
+      "name": "WRAP",
+      "category": "social_compliance",
+      "scope": "organisation / supply_chain",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Textil",
+        "Arbeitsbedingungen"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "WRAP kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Auditstandard, Grenzen prüfen."
+    },
+    {
+      "certification_id": "sedex-smeta",
+      "name": "Sedex / SMETA",
+      "category": "supplier_audit",
+      "scope": "organisation / supply_chain",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Lieferantenaudit"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Sedex / SMETA kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Keine Datenbanken scrapen; Audit ist kein Wirkungsurteil."
+    },
+    {
+      "certification_id": "amfori-bsci",
+      "name": "amfori BSCI",
+      "category": "supplier_audit",
+      "scope": "organisation / supply_chain",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Arbeitsrechte",
+        "Lieferkette"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "amfori BSCI kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Audit, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "ethical-trading-initiative",
+      "name": "Ethical Trading Initiative",
+      "category": "labour_initiative",
+      "scope": "supply_chain",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Arbeitsrechte"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Ethical Trading Initiative kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Initiative, kein Gesamturteil."
+    },
+    {
+      "certification_id": "fair-wear-foundation",
+      "name": "Fair Wear Foundation",
+      "category": "textile_labour_initiative",
+      "scope": "supply_chain",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Textil",
+        "Arbeit"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Fair Wear Foundation kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Arbeitsfokus, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "gots",
+      "name": "GOTS",
+      "category": "textile_standard",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Textil",
+        "Bio",
+        "Sozialkriterien"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "GOTS kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Textilstandard, kein WÖk-Gesamturteil."
+    },
+    {
+      "certification_id": "oeko-tex-standard-100",
+      "name": "OEKO-TEX Standard 100",
+      "category": "textile_product_standard",
+      "scope": "product",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Schadstoffe",
+        "Textil"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "OEKO-TEX Standard 100 kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Schadstoffprüfung, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "oeko-tex-made-in-green",
+      "name": "OEKO-TEX Made in Green",
+      "category": "textile_traceability_label",
+      "scope": "product / supply_chain",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Textil",
+        "Rückverfolgung"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "OEKO-TEX Made in Green kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Label, kein Gesamtprofil."
+    },
+    {
+      "certification_id": "responsible-business-alliance",
+      "name": "Responsible Business Alliance",
+      "category": "industry_code",
+      "scope": "supply_chain",
+      "impact_spaces": [
+        "Mensch",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Elektronik",
+        "Arbeitsrechte"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Responsible Business Alliance kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Brancheninitiative, Grenzen prüfen."
+    },
+    {
+      "certification_id": "ilo-core-labour-standards",
+      "name": "ILO Core Labour Standards",
+      "category": "labour_rights_reference",
+      "scope": "system",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Arbeitsrechte"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ILO Core Labour Standards kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Normativer Arbeitsrechtsbezug; WÖk-Bewertung bleibt eigenständig."
+    },
+    {
+      "certification_id": "un-guiding-principles-bhr",
+      "name": "UN Guiding Principles on Business and Human Rights",
+      "category": "human_rights_reference",
+      "scope": "system",
+      "impact_spaces": [
+        "Mensch",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Menschenrechte",
+        "Sorgfalt"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "UN Guiding Principles on Business and Human Rights kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Referenzrahmen, keine Produktbewertung."
+    },
+    {
+      "certification_id": "oecd-due-diligence",
+      "name": "OECD Due Diligence Guidance",
+      "category": "due_diligence_reference",
+      "scope": "organisation / supply_chain",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Sorgfaltspflichten"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "OECD Due Diligence Guidance kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Leitfaden, kein Wirkungsurteil."
+    },
+    {
+      "certification_id": "dgnb",
+      "name": "DGNB",
+      "category": "building_certification",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Gebäude",
+        "Bau",
+        "Scorecard-Kontext"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "DGNB kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Gebäudelabel, keine WÖk-Netto-Wirkung."
+    },
+    {
+      "certification_id": "leed",
+      "name": "LEED",
+      "category": "building_certification",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Gebäude"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "LEED kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Gebäudelabel, Grenzen prüfen."
+    },
+    {
+      "certification_id": "breeam",
+      "name": "BREEAM",
+      "category": "building_certification",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Gebäude"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "BREEAM kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Gebäudelabel, Grenzen prüfen."
+    },
+    {
+      "certification_id": "well-building-standard",
+      "name": "WELL Building Standard",
+      "category": "building_health_standard",
+      "scope": "building",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Gesundheit",
+        "Innenraum"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "WELL Building Standard kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Gesundheitsfokus, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "edge",
+      "name": "EDGE",
+      "category": "building_certification",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Gebäude",
+        "Effizienz"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "EDGE kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Gebäudelabel, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "hqe",
+      "name": "HQE",
+      "category": "building_certification",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Gebäude"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "HQE kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Gebäudelabel, Grenzen prüfen."
+    },
+    {
+      "certification_id": "nabers",
+      "name": "NABERS",
+      "category": "building_performance_rating",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Gebäudeperformance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "NABERS kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Performance-Rating, keine Netto-Wirkung."
+    },
+    {
+      "certification_id": "gresb",
+      "name": "GRESB",
+      "category": "real_estate_esg_benchmark",
+      "scope": "finance / real_estate",
+      "impact_spaces": [
+        "Planet",
+        "Mensch",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Immobilienbenchmark"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "GRESB kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Keine Scores kopieren."
+    },
+    {
+      "certification_id": "eu-levels",
+      "name": "EU Level(s)",
+      "category": "building_framework",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Gebäude",
+        "Lebenszyklus"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "EU Level(s) kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Framework, kein Label im WÖk-Sinn."
+    },
+    {
+      "certification_id": "gebaeudepass-materialpass",
+      "name": "Gebäudepass / Materialpass",
+      "category": "building_material_passport",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Materialdaten",
+        "Kreislauf"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Gebäudepass / Materialpass kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Datenquelle, keine Bewertung selbst."
+    },
+    {
+      "certification_id": "energieausweis",
+      "name": "Energieausweis / nationale Gebäudestandards",
+      "category": "building_energy_certificate",
+      "scope": "building",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Energieeffizienz"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Energieausweis / nationale Gebäudestandards kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Energiehinweis, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "b-corp",
+      "name": "B Corp / B Impact Assessment",
+      "category": "company_certification",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Impact Assessment",
+        "Governance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "B Corp / B Impact Assessment kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Unternehmenszertifizierung, keine WÖk-Konformität."
+    },
+    {
+      "certification_id": "gemeinwohl-bilanz",
+      "name": "Gemeinwohl-Bilanz",
+      "category": "common_good_balance",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Vergleich",
+        "Unternehmensethik"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Gemeinwohl-Bilanz kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Methodischer Vergleichspunkt, keine WÖk-Bewertung."
+    },
+    {
+      "certification_id": "dnk",
+      "name": "DNK / Deutscher Nachhaltigkeitskodex",
+      "category": "reporting_standard",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Reporting",
+        "Transparenz"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "DNK / Deutscher Nachhaltigkeitskodex kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Berichtsrahmen, kein Wirkungsurteil."
+    },
+    {
+      "certification_id": "un-global-compact",
+      "name": "UN Global Compact",
+      "category": "principles_framework",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Prinzipien",
+        "Governance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "UN Global Compact kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Selbstverpflichtung, keine Scorecard."
+    },
+    {
+      "certification_id": "sdg-impact-standards",
+      "name": "SDG Impact Standards",
+      "category": "impact_management_standard",
+      "scope": "organisation / finance",
+      "impact_spaces": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Impact Management",
+        "SDG-Bezug"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "SDG Impact Standards kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Vergleichspunkt, WÖk-Logik bleibt eigenständig."
+    },
+    {
+      "certification_id": "iris-plus",
+      "name": "IRIS+",
+      "category": "impact_metrics_system",
+      "scope": "finance / organisation",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Impact Investing",
+        "Metriken"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "IRIS+ kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Metriksystem, keine WÖk-Netto-Wirkung."
+    },
+    {
+      "certification_id": "giin",
+      "name": "GIIN",
+      "category": "impact_investing_network",
+      "scope": "finance",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Impact Investing"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "GIIN kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Netzwerk/Methodikquelle, keine WÖk-Bewertung."
+    },
+    {
+      "certification_id": "social-value-sroi",
+      "name": "Social Value International / SROI",
+      "category": "social_value_method",
+      "scope": "organisation / project",
+      "impact_spaces": [
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "SROI",
+        "Social Value"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Social Value International / SROI kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Vergleichspunkt, nicht mit T-SROI gleichsetzen."
+    },
+    {
+      "certification_id": "cse",
+      "name": "CSE Certified Sustainable Economics",
+      "category": "company_certification",
+      "scope": "organisation",
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Unternehmenszertifizierung"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "CSE Certified Sustainable Economics kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Einzeln prüfen; keine WÖk-Konformität."
+    },
+    {
+      "certification_id": "fng-siegel",
+      "name": "FNG-Siegel",
+      "category": "finance_label",
+      "scope": "finance",
+      "impact_spaces": [
+        "Planet",
+        "Mensch",
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Finanzprodukte",
+        "ESG"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "FNG-Siegel kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Finanzlabel, keine positive Netto-Wirkung."
+    },
+    {
+      "certification_id": "luxflag",
+      "name": "LuxFLAG",
+      "category": "finance_label",
+      "scope": "finance",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Finanzprodukte"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "LuxFLAG kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Finanzlabel, Grenzen prüfen."
+    },
+    {
+      "certification_id": "eu-green-bond-standard",
+      "name": "EU Green Bond Standard",
+      "category": "green_bond_standard",
+      "scope": "finance",
+      "impact_spaces": [
+        "Planet"
+      ],
+      "woek_relevance": [
+        "Sustainable Finance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "EU Green Bond Standard kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Finanzstandard, keine Gesamtwirkung."
+    },
+    {
+      "certification_id": "icma-bond-principles",
+      "name": "ICMA Green/Social/Sustainability Bond Principles",
+      "category": "bond_guidelines",
+      "scope": "finance",
+      "impact_spaces": [
+        "Planet",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "Sustainable Finance"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "ICMA Green/Social/Sustainability Bond Principles kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Leitlinien, keine WÖk-Bewertung."
+    },
+    {
+      "certification_id": "eu-ai-act-conformity",
+      "name": "EU AI Act-Konformität",
+      "category": "digital_ai_regulation",
+      "scope": "digital / organisation",
+      "impact_spaces": [
+        "Demokratie",
+        "Mensch"
+      ],
+      "woek_relevance": [
+        "KI-Governance",
+        "Konformität"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "EU AI Act-Konformität kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Regulatorischer Kontext, Prüfrahmen im Aufbau."
+    },
+    {
+      "certification_id": "dsa-transparency-database",
+      "name": "DSA Transparency Database",
+      "category": "platform_transparency",
+      "scope": "digital / platform",
+      "impact_spaces": [
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Plattformdaten",
+        "Transparenz"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "DSA Transparency Database kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Datenquelle, keine Wirkungsbewertung."
+    },
+    {
+      "certification_id": "trusted-flaggers-disinformation-code",
+      "name": "Trusted Flaggers / Code of Practice on Disinformation",
+      "category": "platform_governance",
+      "scope": "digital / platform",
+      "impact_spaces": [
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Desinformation",
+        "Plattformregeln"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "Trusted Flaggers / Code of Practice on Disinformation kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Governance-Kontext, Grenzen dokumentieren."
+    },
+    {
+      "certification_id": "ifcn-code",
+      "name": "IFCN Code of Principles",
+      "category": "fact_checking_standard",
+      "scope": "media / organisation",
+      "impact_spaces": [
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Faktencheck",
+        "Medienqualität"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "IFCN Code of Principles kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Faktencheckstandard, keine vollständige Wirkungsanalyse."
+    },
+    {
+      "certification_id": "edmo",
+      "name": "EDMO",
+      "category": "disinformation_observatory",
+      "scope": "media / digital",
+      "impact_spaces": [
+        "Demokratie"
+      ],
+      "woek_relevance": [
+        "Desinformation",
+        "Forschung"
+      ],
+      "not_sufficient_for": [
+        "Netto-Wirkung",
+        "Produktsteuerklasse",
+        "positive Netto-Wirkung",
+        "WÖk-Konformität"
+      ],
+      "possible_woek_use": "EDMO kann als Anschlussquelle, Nachweis, Datenpunkt oder methodischer Vergleich dienen; eine WÖk-Wirkungsbewertung bleibt separat erforderlich.",
+      "limitations": "Forschungs-/Praxisquelle, kein WÖk-Urteil."
+    }
+  ]
+}

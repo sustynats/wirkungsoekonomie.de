@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.3",
+  "generated_at": "2026-08-18T10:20:00Z",
+  "reconciliation_id": "WOEK-WORK-RECONCILIATION-2.3-REMEDIATED-2026-08-18",
+  "mode": "FINAL_REMEDIATION_2_3",
+  "canonical_dropbox_root": "/WOEK",
+  "status": "PASS",
+  "audited_base_commit": "352ea238e68cda7db9e11e630e224253b25b468b",
+  "production_deployment": "DISABLED_UNTIL_WOEK_EXTERNAL_END_AUDIT",
+  "normal_writers_enabled": false,
+  "daily_newsletter_enabled": false,
+  "reconciled_workstreams": {
+    "government_data_1_2": "PASS",
+    "known_overmerge_regressions": "PASS",
+    "government_direction_semantics": "PASS",
+    "compact_record_publication_depth": "PASS_EXPLICIT_LIMITATION",
+    "source_vs_view_government": "PASS_44_OF_44",
+    "legacy_28": "PASS_EXCLUDED_UNTIL_FULL_SOURCE",
+    "parliament_daily_delivery": "PASS_COMPLETE_FAIL_CLOSED_ZERO_DELTA",
+    "parliament_votes": "PASS_NOT_PUBLISHED_UNVERIFIED_ZERO",
+    "state_adapters": "PASS_EXPLICIT_LIMITATION_0_OF_16",
+    "dropbox_cloud_writer": "PASS_CONTROLLED_TEST_ONLY",
+    "provenance_timestamps": "PASS",
+    "github_writer_freeze": "PASS"
+  },
+  "counts": {
+    "government_canonical_objects": 1931,
+    "government_public_objects": 1931,
+    "government_review_objects": 223,
+    "government_impact_records_total": 63,
+    "government_impact_records_public": 44,
+    "government_impact_records_editorial_review": 19,
+    "government_source_vs_view_records": 44,
+    "government_source_vs_view_fields": 1798,
+    "legacy_cases_excluded": 28,
+    "state_jurisdictions": 16,
+    "state_operational_adapters": 0,
+    "parliament_vote_events_published": 0,
+    "parliament_individual_votes_published": 0,
+    "recommendation_subjects": 133,
+    "recommendations_complete": 0,
+    "recommendations_backfill_required": 133
+  },
+  "open_p0_blockers_for_external_reaudit": [],
+  "open_p1_items": [
+    "19 Government-ImpactCases remain blocked for editorial evidence explanation.",
+    "133 recommendation subjects remain in the fachlich owned backfill queue; CodeX created no recommendation content.",
+    "All 16 state jurisdictions remain static initial datasets with no operational official source adapter. No monitoring claim is published."
+  ],
+  "decision": "READY_FOR_NEW_STAGING_AND_EXTERNAL_REAUDIT"
+}

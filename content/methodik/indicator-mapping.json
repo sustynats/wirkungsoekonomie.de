@@ -1,0 +1,44 @@
+[
+  {
+    "woek_id": "WOK-PLANET-KLIMA-001",
+    "name": "Treibhausgasemissionen pro Produkteinheit",
+    "impact_space": "Planet",
+    "subfield": "Klima",
+    "source_refs": ["esrs", "gri", "dpp", "product-data"],
+    "unit": "kg CO2e pro Produkteinheit",
+    "direction": "lower_is_better",
+    "data_quality_options": ["A", "B", "C", "D"],
+    "benchmark_type": "produktkategorie, Branche, regionaler Energiemix",
+    "scoring_method": "Schwellenwerte und Benchmarks übersetzen Messwerte auf -3 bis +3.",
+    "non_compensation_relevant": true,
+    "last_updated": "2026-05-21"
+  },
+  {
+    "woek_id": "WOK-MENSCH-ARBEIT-002",
+    "name": "Arbeitsunfallrate",
+    "impact_space": "Mensch",
+    "subfield": "Arbeit und Sicherheit",
+    "source_refs": ["gri", "ilo", "supply-chain-data"],
+    "unit": "Rate je Arbeitsstunden",
+    "direction": "lower_is_better",
+    "data_quality_options": ["A", "B", "C", "D", "E"],
+    "benchmark_type": "Branche, Land, Tätigkeit, Lieferkettenstufe",
+    "scoring_method": "Berichtete oder geprüfte Raten werden mit Branchen- und Risikobenchmarks verglichen.",
+    "non_compensation_relevant": true,
+    "last_updated": "2026-05-21"
+  },
+  {
+    "woek_id": "WOK-DEMO-MEDIEN-001",
+    "name": "Diskurs- und Vertrauenswirkung",
+    "impact_space": "Demokratie",
+    "subfield": "Medienqualität und Diskursfähigkeit",
+    "source_refs": ["sdg-plus", "media-analysis", "platform-data"],
+    "unit": "qualitative und quantitative Scorelogik",
+    "direction": "trust_and_discourse_strengthening_is_better",
+    "data_quality_options": ["B", "C", "D", "E"],
+    "benchmark_type": "redaktionelle Prüfung, Quellenqualität, Resonanzräume, Plattformlogik",
+    "scoring_method": "Narrative und Medienwirkungen werden nach Wirkungspotenzial, Quellenqualität und demokratischer Stabilität eingeordnet.",
+    "non_compensation_relevant": true,
+    "last_updated": "2026-05-21"
+  }
+]

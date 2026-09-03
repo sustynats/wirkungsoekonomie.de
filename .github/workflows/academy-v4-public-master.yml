@@ -1,0 +1,76 @@
+name: Academy v4 public-master and main-domain projection
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/studienskripte/v4/**'
+      - 'content/academy/academy-v4-main-domain-projection.json'
+      - 'content/academy/woek-g-curriculum-v4.json'
+      - 'content/academy/ACADEMY_V4_MAIN_DOMAIN_MANIFEST.json'
+      - 'scripts/academy/**'
+      - 'akademie.html'
+      - 'akademie/**'
+      - 'lernen/**'
+      - 'public/data/woek-g-curriculum*.json'
+      - '.github/workflows/academy-v4-public-master.yml'
+  pull_request:
+    paths:
+      - 'content/studienskripte/v4/**'
+      - 'content/academy/academy-v4-main-domain-projection.json'
+      - 'content/academy/woek-g-curriculum-v4.json'
+      - 'content/academy/ACADEMY_V4_MAIN_DOMAIN_MANIFEST.json'
+      - 'scripts/academy/**'
+      - 'akademie.html'
+      - 'akademie/**'
+      - 'lernen/**'
+      - 'public/data/woek-g-curriculum*.json'
+      - '.github/workflows/academy-v4-public-master.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-master:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact ref
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify committed source, hash, structure and privacy parity
+        run: node scripts/academy/verify-v4-public-master.mjs
+
+      - name: Build deterministic Academy v4 projection
+        run: node scripts/academy/build-curriculum-exports.mjs
+
+      - name: Verify source-vs-view, routes and public assessment metadata
+        run: node scripts/academy/verify-v4-main-domain.mjs --post-build
+
+      - name: Assert no protected assessment content entered public artifacts
+        shell: bash
+        run: |
+          if find content/studienskripte/v4 -type f -name '*.md' -print0 | xargs -0 grep -nEi '(CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)|\*\*Lösung(en)?:\*\*)'; then
+            echo 'NO_ASSESSMENT_SECRET_LEAK: FAIL'
+            exit 1
+          fi
+          echo 'NO_ASSESSMENT_SECRET_LEAK: PASS'
+
+      - name: Verify deterministic generated files
+        run: |
+          git diff --exit-code -- \
+            akademie.html akademie lernen/index.html \
+            content/academy/ACADEMY_V4_MAIN_DOMAIN_MANIFEST.json \
+            content/academy/woek-g-curriculum-v4.json \
+            public/data/woek-g-curriculum.json \
+            public/data/woek-g-curriculum-v2.0.json \
+            sitemap.xml

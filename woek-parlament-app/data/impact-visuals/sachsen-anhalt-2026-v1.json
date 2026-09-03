@@ -1,0 +1,2049 @@
+{
+  "schema_version": "woek-impact-visual-scenarios-1.0",
+  "manifest_id": "LTW-2026-ST-IMPACT-VISUAL-SCENARIOS-V2",
+  "manifest_sha256": "326b3b1369225f5f5e6b34f9d364fcfca43ec1ae3350e3752300ddccace84b4b",
+  "base_main_commit": "7e53b3a2d9f9a9e340e824b24b1e861439144959",
+  "source_release": {
+    "manifest_id": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1",
+    "manifest_path": "data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json",
+    "descriptor_sha256": "6e0cf6fce5c41734bfd3f5480e562b93aff38a759c9b57b55298d8da4ee9dcee",
+    "published_commit": "fefec75f09dc70db8de7880f93b4e8c6788e4461"
+  },
+  "generation_policy": {
+    "input_mode": "APPROVED_VISUAL_BRIEF_ONLY",
+    "raw_programme_text_allowed": false,
+    "campaign_slogan_allowed": false,
+    "party_valence_style": "PORTAL_NEUTRAL",
+    "fachdata_backpropagation_allowed": false,
+    "automatic_generation_allowed": false
+  },
+  "public_contract": {
+    "label": "Wirkungsbild",
+    "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+    "image_is_evidence": false
+  },
+  "records": [
+    {
+      "id": "woek-impact-visual-st-2026-cdu-program-v2",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-cdu",
+      "source_key": "ltw-2026-st-cdu",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
+      "title": "Programm-Szenario · CDU Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
+      "visible_elements": [],
+      "case_analysis_binding": null,
+      "non_visual_effects": [
+        "Resilienzhebel: Investitionen in Ausbildung, Übungsinfrastruktur und Katastrophenschutz können die reale Reaktionsfähigkeit des Landes erhöhen, wenn Kapazitätsbedarf und Nutzung belegt sind.",
+        "Sicherheit ist kein Einzelscore: Mehr Personal und Befugnisse können Prävention und Aufklärung stärken, zugleich aber Freiheits-, Datenschutz- und Diskriminierungsrisiken erhöhen.",
+        "Wachstum braucht Instrumente: Vertrauen, Investitionen und Wachstum sind Zielzustände. Ohne konkrete Regel-, Finanzierungs- oder Infrastrukturhebel ist die Wirkungsrichtung nicht belastbar zu bestimmen.",
+        "Bundeskompetenz sichtbar machen: Rückführungs- und migrationsrechtliche Forderungen können nicht als reine Landesmaßnahme gelesen werden; tatsächlicher Landeshebel und Bundesrecht müssen getrennt bleiben."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
+      ],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum CDU-Wahlprogramm Sachsen-Anhalt 2026: links ein sachlicher öffentlicher Infrastruktur- und Sicherheitskontext mit Feuerwehr-Ausbildungszentrum und Ordnungsbehörde; rechts vier freigegebene Schlüsselpfade zu Katastrophenschutz, Sicherheit, Wachstumszielen und Rückführungsverfahren mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
+      "visual_brief": {
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "5baf10d136d280baee4febf2733249876e0abd5e6eab620dad38a4074ef3f917",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-program-scenario-v1.webp",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 260918,
+        "original_filename": "sa-2026-program-cdu-wirkungsbild-v2.png",
+        "original_sha256": "76adfdabfb11bc8edcf562971e371e116c8d219f2446cbede82af245130ad658",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-cdu-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "source_key": "ltw-2026-st-cdu",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
+      "title": "Fallvertiefung · CDU Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "selection_rationale": "Der Pfad ist bereits Teil der endlichen freigegebenen Editorial-v2-Kandidatenmenge und bildet einen konkreten, landesnahen Resilienzhebel ab. Der Fall eignet sich als Deep Dive, weil Instrument, institutioneller Ort und potenzielle Zustandsänderung klarer visualisierbar sind als abstrakte Sicherheits- oder bundesrechtliche Forderungen.",
+      "visible_elements": [],
+      "case_analysis_binding": {
+        "approval_provenance": {
+          "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+          "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+          "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+          "human_individual_record_review_claimed": false
+        },
+        "selected_case_id": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "canonical_record_path": "data/generated/release-1/sachsen-anhalt-programme-reviews.json",
+        "canonical_editorial_path": "data/presentation/sachsen-anhalt-programme-editorial-v2.ts",
+        "decision_or_measure": "Das Institut für Brand- und Katastrophenschutz in Heyrothsberge weiterentwickeln",
+        "intended_change": "Vorgesehene Veränderung: Das Institut für Brand- und Katastrophenschutz in Heyrothsberge weiterentwickeln: Ein verlässlicher Brand- und Katastrophenschutz braucht gut ausgebildete Einsatzkräfte, moderne Technik und eine praxisnahe Ausbildung. Das IBK Heyrothsberge spielt dabei eine zentrale Rolle. Mit der Umsetzung und Fortschreibung des Zukunftskonzeptes werden wir das Lehrgangsangebot ausweiten, digitale Aus- und Fortbildungsformate anbieten und mehr als 70 Millionen Euro in die Liegenschaft investieren, unter anderem in den Neubau einer Brandsimulationsanlage und eines Zentrallagers, die Modernisierung von Unterkunftsgebäuden sowie der sogenannten Trümmerstrecke als Übungsgelände für den Zivil- und Bevölkerungsschutz.",
+        "source_statement_refs": [
+          {
+            "source_key": "ltw-2026-st-cdu",
+            "location": {
+              "page": 9,
+              "section": null
+            },
+            "source_text": "Das Institut für Brand- und Katastrophenschutz in Heyrothsberge weiterentwickeln: Ein verlässlicher Brand- und Katastrophenschutz braucht gut ausgebildete Einsatzkräfte, moderne Technik und eine praxisnahe Ausbildung. Das IBK Heyrothsberge spielt dabei eine zentrale Rolle. Mit der Umsetzung und Fortschreibung des Zukunftskonzeptes werden wir das Lehrgangsangebot ausweiten, digitale Aus- und Fortbildungsformate anbieten und mehr als 70 Millionen Euro in die Liegenschaft investieren, unter anderem in den Neubau einer Brandsimulationsanlage und eines Zentrallagers, die Modernisierung von Unterkunftsgebäuden sowie der sogenannten Trümmerstrecke als Übungsgelände für den Zivil- und Bevölkerungsschutz."
+          }
+        ],
+        "affected_group_or_system": [
+          "Kinder, Jugendliche und Eltern",
+          "Lehrkräfte und pädagogisches Personal",
+          "Kommunen und Bildungseinrichtungen"
+        ],
+        "mechanism": [
+          "Curricula, Schulstruktur, Personal, Zeit, Zugang und Lernumgebung beeinflussen Unterrichtsqualität, Förderung und Bildungswege."
+        ],
+        "potential_state_change": [
+          "Die Maßnahme kann Lernstände, Chancengerechtigkeit, Übergänge, Teilhabe und Belastung von Lernenden und Lehrkräften verändern."
+        ],
+        "key_finding": "HOHES RESILIENZPOTENZIAL",
+        "impact_core_summary": "Der Ausbau des IBK Heyrothsberge kann Ausbildungskapazität, Übungsrealität und Einsatzbereitschaft im Brand-, Zivil- und Katastrophenschutz verbessern; positiv wird der Pfad, wenn die Investitionen nachweislich Engpässe beheben und dauerhaft genutzt werden.",
+        "editorial_summary": "Mehr Lehrgänge, digitale Formate und moderne Übungsinfrastruktur adressieren einen konkreten staatlichen Fähigkeitshebel. Dem stehen Bau-, Betriebs- und Opportunitätskosten gegenüber; ein großer Mitteleinsatz ist nur dann wirkungsökonomisch überzeugend, wenn Kapazitätsbedarf, Auslastung und Qualitätsgewinne belegt werden. Der alte Release-1-Wirkpfad ordnete diesen Gegenstand fälschlich als allgemeinen Bildungspfad ein und wird deshalb nicht mehr als Kurzbewertung verwendet.",
+        "direction_rationale": "Der Mechanismus liegt unmittelbar zwischen Ausbildungskapazität und Einsatzfähigkeit; die Hauptrisiken betreffen Wirtschaftlichkeit und Überdimensionierung, nicht die Grundrichtung des Resilienzhebels.",
+        "impact_direction": "POSITIVE",
+        "evidence_level": "MEDIUM",
+        "competence_and_system_boundary": {
+          "responsible_actors": [
+            "Land Sachsen-Anhalt / zuständige Landesressorts"
+          ],
+          "competence_note": null,
+          "implementation_conditions": [
+            "Umfang/Schwellenwert der Maßnahme",
+            "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz",
+            "Rechtlich und administrativ tragfähige Umsetzung",
+            "Ausreichende Ressourcen und Vollzugskapazität",
+            "Monitoring gegenüber einer dokumentierten Baseline"
+          ]
+        },
+        "material_risks": [
+          {
+            "risk": "Strukturreformen können Ressourcen binden, ohne Unterrichtsqualität zu verbessern",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Kinder, Jugendliche und Eltern",
+              "Lehrkräfte und pädagogisches Personal",
+              "Kommunen und Bildungseinrichtungen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Unzureichende Differenzierung kann bestimmte Gruppen systematisch benachteiligen",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Kinder, Jugendliche und Eltern",
+              "Lehrkräfte und pädagogisches Personal",
+              "Kommunen und Bildungseinrichtungen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Digitale oder organisatorische Änderungen können soziale Herkunftseffekte verstärken",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Kinder, Jugendliche und Eltern",
+              "Lehrkräfte und pädagogisches Personal",
+              "Kommunen und Bildungseinrichtungen"
+            ],
+            "evidence_status": "LIMITED"
+          }
+        ],
+        "impact_orders": {
+          "first_order": "Die Maßnahme kann Lernstände, Chancengerechtigkeit, Übergänge, Teilhabe und Belastung von Lernenden und Lehrkräften verändern.",
+          "second_order": [
+            "Strukturreformen können Ressourcen binden, ohne Unterrichtsqualität zu verbessern",
+            "Unzureichende Differenzierung kann bestimmte Gruppen systematisch benachteiligen",
+            "Nutzen und Lasten können zwischen Zielgruppen, Regionen, Haushalten, Unternehmen oder Generationen unterschiedlich verteilt sein; eine Durchschnittswirkung reicht daher nicht."
+          ],
+          "third_order": "Kann langfristig Bildungswege, soziale Sortierung, Kompetenzen, Fachkräftebasis und demokratische Urteilskraft verändern.",
+          "status": "PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS"
+        },
+        "time_horizon": {
+          "short_term": "Kurzfristig sind vor allem Umstellungs-, Finanzierungs-, Verwaltungs-, Preis-, Zugangs- oder Erwartungseffekte zu beobachten.",
+          "medium_term": "Mittelfristig ist zu prüfen, ob das Instrument tatsächlich den vorgesehenen Zielzustand verändert oder primär Output/Verwaltungsaktivität erzeugt.",
+          "long_term": "Langfristig sind Pfadabhängigkeit, Nebenfolgen, Resilienz, Folgekosten und institutionelle bzw. infrastrukturelle Veränderungen zu prüfen.",
+          "intergenerational_relevance": "MATERIAL"
+        },
+        "materiality": "MATERIAL",
+        "uncertainty": [
+          "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+          "Umfang/Schwellenwert der Maßnahme",
+          "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz"
+        ],
+        "falsification_or_reality_check": {
+          "baseline_required": "Vor Inkrafttreten/Umsetzung dokumentierter Ausgangszustand, nach relevanten Gruppen und Regionen differenziert.",
+          "primary_indicator": "Lernstände, Übergänge, Abbruchquote, Teilhabe, Personalrelation, Schulwege, soziale Disparitäten",
+          "unit": "Punkte, Quoten, Relation, Kilometer/Minuten",
+          "counterfactual_required": null,
+          "earliest_review": "Nach Vorliegen erster Outcome-Daten; Output oder Mittelabfluss allein reichen nicht.",
+          "correction_trigger": "Wenn der erwartete Wirkmechanismus ausbleibt, wesentliche Schäden/Verlagerungen auftreten, Schutzgrenzen berührt werden oder Daten die ursprünglichen Annahmen widerlegen, ist Redesign, Begrenzung, Aussetzen oder Alternativpfad zu prüfen."
+        },
+        "noncompensation": [
+          {
+            "concern": "Gleichbehandlung, Zugang zu Bildung, Kindeswohl",
+            "rationale": "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind.",
+            "status": "REVIEW_REQUIRED"
+          }
+        ],
+        "marker_decision": "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+        "editorial_input_status": {
+          "approved_case_selection": "APPROVED",
+          "reviewed_visual_brief": "APPROVED",
+          "alt_text_review": "APPROVED",
+          "editorial_brief_signoff": "APPROVED",
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
+        }
+      },
+      "non_visual_effects": [
+        "Strukturreformen können Ressourcen binden, ohne Unterrichtsqualität zu verbessern",
+        "Unzureichende Differenzierung kann bestimmte Gruppen systematisch benachteiligen",
+        "Digitale oder organisatorische Änderungen können soziale Herkunftseffekte verstärken",
+        "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+        "Umfang/Schwellenwert der Maßnahme",
+        "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz",
+        "Gleichbehandlung, Zugang zu Bildung, Kindeswohl",
+        "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [
+        "tatsächliche spätere Einsatzleistung, vermiedene Todesfälle, konkrete Schadensreduktion oder einen quantifizierten Resilienzgewinn."
+      ],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Das freigegebene Bild zeigt nur Trainings-/Übungsinfrastruktur; vermiedene Einsätze oder Schäden bleiben ausdrücklich nicht bebildert."
+      ],
+      "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
+      "scenario_assumptions": [
+        "Umfang/Schwellenwert der Maßnahme",
+        "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz",
+        "Rechtlich und administrativ tragfähige Umsetzung",
+        "Ausreichende Ressourcen und Vollzugskapazität",
+        "Monitoring gegenüber einer dokumentierten Baseline"
+      ],
+      "evidence_summary": "Mehr Lehrgänge, digitale Formate und moderne Übungsinfrastruktur adressieren einen konkreten staatlichen Fähigkeitshebel. Dem stehen Bau-, Betriebs- und Opportunitätskosten gegenüber; ein großer Mitteleinsatz ist nur dann wirkungsökonomisch überzeugend, wenn Kapazitätsbedarf, Auslastung und Qualitätsgewinne belegt werden. Der alte Release-1-Wirkpfad ordnete diesen Gegenstand fälschlich als allgemeinen Bildungspfad ein und wird deshalb nicht mehr als Kurzbewertung verwendet.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/cdu-case-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario einer sachlichen Ausbildungs- und Übungssituation im Brand- und Katastrophenschutz in Sachsen-Anhalt mit Einsatzfahrzeug, Schutzkleidung und technischer Übungsinfrastruktur. Das Bild visualisiert den institutionellen Kapazitätshebel des freigegebenen WÖk-Wirkungsfalls und ist keine Prognose tatsächlicher Einsatz- oder Schadenswirkungen.",
+      "visual_brief": {
+        "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "03ded5dd30a1bfe723325b20715542e544bf60fb1a843041fe0283fe662e7caa",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "563e6e442ec89f4bd54fcf11b391e524ff991bc6277781d98097284f85179bbf",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 285492,
+        "original_filename": "sa-2026-case-cdu-katastrophenschutz-v1.png",
+        "original_sha256": "cdaea35a2a0f05512bca47ab7b0ced9d718e62c017b13ccf1434746ceeded220",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-spd-program-v2",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-spd",
+      "source_key": "ltw-2026-st-spd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
+      "title": "Programm-Szenario · SPD Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
+      "visible_elements": [],
+      "case_analysis_binding": null,
+      "non_visual_effects": [
+        "Teilhabe als früher Hebel: Ausbildungszugang und Beschäftigungsfähigkeit wirken vor späteren Sozial- und Fachkräftekosten und besitzen deshalb hohes präventives Potenzial.",
+        "Kreislauf lokal stärken: Reparaturförderung kann Produktlebensdauer und Reparaturkompetenz erhöhen, wenn tatsächliche Reparaturen und vermiedene Neuanschaffungen messbar werden.",
+        "Förderung braucht Additionalität: Öffentliche Finanzierung ist kein Wirkungsnachweis. Entscheidend ist, was zusätzlich entsteht und nach Förderende bestehen bleibt.",
+        "Regionale Wirkung messen: Strukturwandelprogramme sollten Beschäftigung, Gründungen, lokale Wertschöpfung, Flächen- und Klimaeffekte gemeinsam beobachten."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
+      ],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum SPD-Wahlprogramm Sachsen-Anhalt 2026: links ein lokaler Stadt- und Nachbarschaftskontext mit Repair-Café und Bildungs-/Begegnungsangebot; rechts vier freigegebene Schlüsselpfade zu altersgerechter Arbeit, Repair-Cafés, Ausbildungszugang und regionalen Strukturprojekten mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
+      "visual_brief": {
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "59e69c1b07353c1edd7beff95eed209461cd227778a39115c264554444dfa18f",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-program-scenario-v1.webp",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 255576,
+        "original_filename": "sa-2026-program-spd-wirkungsbild-v2.png",
+        "original_sha256": "b94bfb386590e6521a771fbece49e62d4832ec09369368f6548765e8b7ae222b",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-spd-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+      "source_key": "ltw-2026-st-spd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
+      "title": "Fallvertiefung · SPD Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "selection_rationale": "Der freigegebene Pfad ist alltagsnah, visuell eindeutig und ermöglicht eine leicht nachvollziehbare Wirkungskaskade von Förderinstrument → Reparaturmöglichkeit → mögliche längere Produktnutzung / Ressourceneffekt, ohne Outcome automatisch zu behaupten.",
+      "visible_elements": [],
+      "case_analysis_binding": {
+        "approval_provenance": {
+          "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+          "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+          "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+          "human_individual_record_review_claimed": false
+        },
+        "selected_case_id": "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "canonical_record_path": "data/generated/release-1/sachsen-anhalt-programme-reviews.json",
+        "canonical_editorial_path": "data/presentation/sachsen-anhalt-programme-editorial-v2.ts",
+        "decision_or_measure": "Repair-Cafés werden wir weiterhin finanziell unterstützen",
+        "intended_change": "Vorgesehene Veränderung: Repair-Cafés werden wir weiterhin finanziell unterstützen.",
+        "source_statement_refs": [
+          {
+            "source_key": "ltw-2026-st-spd",
+            "location": {
+              "page": 6,
+              "section": null
+            },
+            "source_text": "Repair-Cafés werden wir weiterhin finanziell unterstützen."
+          }
+        ],
+        "affected_group_or_system": [
+          "Steuer- und Transferpflichtige",
+          "öffentliche Haushalte",
+          "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+        ],
+        "mechanism": [
+          "Steuersätze, Bemessungsgrundlagen, Transfers oder Budgetregeln verändern private Anreize und die Ressourcenverteilung zwischen Staat, Haushalten und Unternehmen."
+        ],
+        "potential_state_change": [
+          "Die Maßnahme kann verfügbare Einkommen, Investitionen, Verteilung, Staatseinnahmen, Verschuldung und öffentliche Handlungskapazität verändern."
+        ],
+        "key_finding": "KREISLAUFPOTENZIAL MIT REICHWEITENGRENZE",
+        "impact_core_summary": "Die Unterstützung von Repair-Cafés kann Reparaturen erleichtern, Produktlebensdauern verlängern und lokale Reparaturkompetenz stärken; die gesamtwirtschaftliche Wirkung hängt von Reichweite, zusätzlich vermiedenen Neuanschaffungen und dauerhafter Infrastruktur ab.",
+        "editorial_summary": "Der Mechanismus ist konkret und ressourcenbezogen plausibel. Eine kleine Förderung kann lokal hohe soziale und Bildungswirkung haben, darf aber nicht mit einer flächendeckenden Kreislaufwirtschaftswirkung verwechselt werden. Messbar sein sollten Reparaturfälle, Nutzungsverlängerung, Teilnehmendenstruktur und zusätzliche Reparaturkapazität.",
+        "direction_rationale": "Reparatur ersetzt bei erfolgreicher Umsetzung Ressourcenverbrauch; materielle Gegenwirkungen sind begrenzt, Reichweite und Additionalität bleiben entscheidend.",
+        "impact_direction": "POSITIVE",
+        "evidence_level": "MEDIUM",
+        "competence_and_system_boundary": {
+          "responsible_actors": [
+            "Land Sachsen-Anhalt / zuständige Landesressorts"
+          ],
+          "competence_note": null,
+          "implementation_conditions": [
+            "Finanzierungsumfang und Förderkriterien",
+            "Rechtlich und administrativ tragfähige Umsetzung",
+            "Ausreichende Ressourcen und Vollzugskapazität",
+            "Monitoring gegenüber einer dokumentierten Baseline"
+          ]
+        },
+        "material_risks": [
+          {
+            "risk": "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Durchschnittseffekte können Verteilungsunterschiede zwischen Einkommens- und Vermögensgruppen verdecken",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          }
+        ],
+        "impact_orders": {
+          "first_order": "Die Maßnahme kann verfügbare Einkommen, Investitionen, Verteilung, Staatseinnahmen, Verschuldung und öffentliche Handlungskapazität verändern.",
+          "second_order": [
+            "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+            "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+            "Nutzen und Lasten können zwischen Zielgruppen, Regionen, Haushalten, Unternehmen oder Generationen unterschiedlich verteilt sein; eine Durchschnittswirkung reicht daher nicht."
+          ],
+          "third_order": "Kann langfristig Einnahmestrukturen, private Anreize, Verteilung, Verschuldung und staatliche Wirkungskapazität verändern.",
+          "status": "PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS"
+        },
+        "time_horizon": {
+          "short_term": "Kurzfristig sind vor allem Umstellungs-, Finanzierungs-, Verwaltungs-, Preis-, Zugangs- oder Erwartungseffekte zu beobachten.",
+          "medium_term": "Mittelfristig ist zu prüfen, ob das Instrument tatsächlich den vorgesehenen Zielzustand verändert oder primär Output/Verwaltungsaktivität erzeugt.",
+          "long_term": "Langfristig sind Pfadabhängigkeit, Nebenfolgen, Resilienz, Folgekosten und institutionelle bzw. infrastrukturelle Veränderungen zu prüfen.",
+          "intergenerational_relevance": "MATERIAL"
+        },
+        "materiality": "MATERIAL",
+        "uncertainty": [
+          "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+          "Finanzierungsumfang und Förderkriterien"
+        ],
+        "falsification_or_reality_check": {
+          "baseline_required": "Vor Inkrafttreten/Umsetzung dokumentierter Ausgangszustand, nach relevanten Gruppen und Regionen differenziert.",
+          "primary_indicator": "Nettoeinkommen nach Gruppen, Steueraufkommen, Investition/Arbeitsangebot, Verteilungskennzahlen, Zins-/Schuldendienst, Leistungsniveau",
+          "unit": "Euro, %, Quote",
+          "counterfactual_required": null,
+          "earliest_review": "Nach Vorliegen erster Outcome-Daten; Output oder Mittelabfluss allein reichen nicht.",
+          "correction_trigger": "Wenn der erwartete Wirkmechanismus ausbleibt, wesentliche Schäden/Verlagerungen auftreten, Schutzgrenzen berührt werden oder Daten die ursprünglichen Annahmen widerlegen, ist Redesign, Begrenzung, Aussetzen oder Alternativpfad zu prüfen."
+        },
+        "noncompensation": [
+          {
+            "concern": "Existenzminimum, Gleichheit, nachhaltige öffentliche Handlungsfähigkeit",
+            "rationale": "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind.",
+            "status": "NONE_IDENTIFIED"
+          }
+        ],
+        "marker_decision": "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+        "editorial_input_status": {
+          "approved_case_selection": "APPROVED",
+          "reviewed_visual_brief": "APPROVED",
+          "alt_text_review": "APPROVED",
+          "editorial_brief_signoff": "APPROVED",
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
+        }
+      },
+      "non_visual_effects": [
+        "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+        "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+        "Durchschnittseffekte können Verteilungsunterschiede zwischen Einkommens- und Vermögensgruppen verdecken",
+        "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+        "Finanzierungsumfang und Förderkriterien",
+        "Existenzminimum, Gleichheit, nachhaltige öffentliche Handlungsfähigkeit",
+        "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [
+        "automatisch vermiedenen Neukauf, exakt vermiedene Abfall-/CO2-Menge, dauerhafte Verhaltensänderung oder soziale Teilhabe als gesicherten Outcome."
+      ],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist Reparaturzugang/-handlung; Lebensdauer-, Abfall- und Ressourceneffekte bleiben textlich und evidenzgebunden."
+      ],
+      "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
+      "scenario_assumptions": [
+        "Finanzierungsumfang und Förderkriterien",
+        "Rechtlich und administrativ tragfähige Umsetzung",
+        "Ausreichende Ressourcen und Vollzugskapazität",
+        "Monitoring gegenüber einer dokumentierten Baseline"
+      ],
+      "evidence_summary": "Der Mechanismus ist konkret und ressourcenbezogen plausibel. Eine kleine Förderung kann lokal hohe soziale und Bildungswirkung haben, darf aber nicht mit einer flächendeckenden Kreislaufwirtschaftswirkung verwechselt werden. Messbar sein sollten Reparaturfälle, Nutzungsverlängerung, Teilnehmendenstruktur und zusätzliche Reparaturkapazität.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/spd-case-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines Repair-Cafés in Sachsen-Anhalt mit Reparaturtisch, Werkzeug und der Instandsetzung von Alltagsgegenständen. Das Bild visualisiert den freigegebenen Wirkungsfall zur Förderung niedrigschwelliger Reparaturmöglichkeiten; tatsächliche Lebensdauer-, Abfall- oder Ressourceneffekte werden damit nicht belegt.",
+      "visual_brief": {
+        "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "a343e1e899ebe5991b1555c741e6e5cfeb6286f247c77b055c053de127fa2896",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "067739482a4a0f7f6d40baeb928ccd8cc0a45cadca4904f3c880d86540cbf1b2",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 244378,
+        "original_filename": "sa-2026-case-spd-repair-cafe-v1.png",
+        "original_sha256": "38a6650e720c15b0cbcce8def90eb3246e2ed5fe91c3ebb0af3530f2ab6d2f88",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-gruene-program-v2",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-gruene",
+      "source_key": "ltw-2026-st-gruene",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
+      "title": "Programm-Szenario · BÜNDNIS 90/DIE GRÜNEN Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
+      "visible_elements": [],
+      "case_analysis_binding": null,
+      "non_visual_effects": [
+        "Regeneration vor Reparatur: Biodiversitäts- und Waldresilienzmaßnahmen setzen früh in der Wirkungskaskade an und können spätere Schadens- und Anpassungskosten reduzieren.",
+        "Fläche ist nicht beliebig: Schutz, Landwirtschaft, Energie, Wohnen und Infrastruktur konkurrieren um Flächen; räumliche Verlagerung von Schäden muss mitgeprüft werden.",
+        "Waldbrandvorsorge: Präventive Strukturen können Feuerdynamik und Einsatzrisiken verringern, wenn sie mit Waldökologie und langfristiger Pflege verbunden werden.",
+        "Ökolandbau systemisch messen: Nicht nur Hektaranteil, sondern Nährstoff-, Biodiversitäts-, Ertrags-, Import- und Wertschöpfungswirkungen bestimmen die Netto-Wirkung."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
+      ],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum Grünen-Wahlprogramm Sachsen-Anhalt 2026: links Landwirtschaft, Biodiversitätsstrukturen und Waldsaum mit präventivem Brandschutzkorridor; rechts vier freigegebene Schlüsselpfade zu Ökolandbau, Waldbrandvorsorge, Natur- und Artenschutz sowie Wolfsmanagement mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
+      "visual_brief": {
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "6d2bbe6b8d7e0c64455c1e2564e24ac4c6f4144f824b9a37774595b6ffde2221",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-program-scenario-v1.webp",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 307668,
+        "original_filename": "sa-2026-program-gruene-wirkungsbild-v2.png",
+        "original_sha256": "dab5d500fabe0acfb7741faea16d5bb990c0df802da266de1ed8f88dfff5c57b",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-gruene-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+      "source_key": "ltw-2026-st-gruene",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
+      "title": "Fallvertiefung · BÜNDNIS 90/DIE GRÜNEN Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "selection_rationale": "Der freigegebene Pfad macht präventive Resilienz anschaulich: Strukturen zur Begrenzung von Feuerausbreitung setzen vor dem Schaden an. Der Fall eignet sich für die WÖk-Logik ‚früher Schutz statt spätere Reparaturkosten‘, ohne behauptete Schadensvermeidung als bereits eingetreten darzustellen.",
+      "visible_elements": [],
+      "case_analysis_binding": {
+        "approval_provenance": {
+          "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+          "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+          "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+          "human_individual_record_review_claimed": false
+        },
+        "selected_case_id": "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "canonical_record_path": "data/generated/release-1/sachsen-anhalt-programme-reviews.json",
+        "canonical_editorial_path": "data/presentation/sachsen-anhalt-programme-editorial-v2.ts",
+        "decision_or_measure": "Solche Strukturen sollen die Ausbreitung von Feuer kontrollieren und Einsatzkräften ihre Arbeit …",
+        "intended_change": "Vorgesehene Veränderung: Solche Strukturen sollen die Ausbreitung von Feuer kontrollieren und Einsatzkräften ihre Arbeit erleichtern.",
+        "source_statement_refs": [
+          {
+            "source_key": "ltw-2026-st-gruene",
+            "location": {
+              "page": 14,
+              "section": "1. FÜR NATUR, KLIMA UND"
+            },
+            "source_text": "Solche Strukturen sollen die Ausbreitung von Feuer kontrollieren und Einsatzkräften ihre Arbeit erleichtern."
+          }
+        ],
+        "affected_group_or_system": [
+          "Beschäftigte und Arbeitssuchende",
+          "Familien und Care-Verantwortliche",
+          "Arbeitgeber und Sozialversicherung"
+        ],
+        "mechanism": [
+          "Leistungs-, Steuer-, Lohn-, Qualifizierungs- oder Arbeitsrechtsregeln verändern Erwerbsanreize, Verhandlungsmacht, verfügbare Einkommen und Übergänge in Beschäftigung."
+        ],
+        "potential_state_change": [
+          "Die Maßnahme kann Erwerbsbeteiligung, Einkommen, soziale Sicherheit, Arbeitsqualität, Fachkräfteverfügbarkeit oder Armutsrisiken verändern."
+        ],
+        "key_finding": "KLARER RESILIENZHEBEL",
+        "impact_core_summary": "Brandschutzstrukturen können die Ausbreitung von Wald- und Vegetationsbränden begrenzen und sichere Einsatzkorridore schaffen; positiv ist der Pfad, wenn Planung, Pflege und ökologische Nebenwirkungen standortbezogen berücksichtigt werden.",
+        "editorial_summary": "Der Mechanismus wirkt vor dem Schadenseintritt und kann dadurch Menschen, Ökosysteme, Infrastruktur und Einsatzkräfte gleichzeitig schützen. Ungeeignete Schneisen oder harte Eingriffe können jedoch Habitatfunktionen beeinträchtigen. Deshalb sind Brandrisikomodell, Standortwahl und Pflegezustand zentrale Qualitätsbedingungen.",
+        "direction_rationale": "Prävention reduziert Exposition und Schadensausbreitung, solange sie keine gleichwertigen ökologischen Schäden erzeugt.",
+        "impact_direction": "POSITIVE",
+        "evidence_level": "MEDIUM",
+        "competence_and_system_boundary": {
+          "responsible_actors": [
+            "Land Sachsen-Anhalt / zuständige Landesressorts"
+          ],
+          "competence_note": null,
+          "implementation_conditions": [
+            "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+            "Rechtlich und administrativ tragfähige Umsetzung",
+            "Ausreichende Ressourcen und Vollzugskapazität",
+            "Monitoring gegenüber einer dokumentierten Baseline"
+          ]
+        },
+        "material_risks": [
+          {
+            "risk": "Sanktions- oder Pflichtlogiken können vulnerable Personen trotz geringer tatsächlicher Arbeitsfähigkeit treffen",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Beschäftigte und Arbeitssuchende",
+              "Familien und Care-Verantwortliche",
+              "Arbeitgeber und Sozialversicherung"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Entlastungen können Mitnahmeeffekte erzeugen, wenn Zusätzlichkeit fehlt",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Beschäftigte und Arbeitssuchende",
+              "Familien und Care-Verantwortliche",
+              "Arbeitgeber und Sozialversicherung"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Kurzfristige Beschäftigungsanreize können Arbeitsqualität, Gesundheit oder Care-Verpflichtungen verdrängen",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Beschäftigte und Arbeitssuchende",
+              "Familien und Care-Verantwortliche",
+              "Arbeitgeber und Sozialversicherung"
+            ],
+            "evidence_status": "LIMITED"
+          }
+        ],
+        "impact_orders": {
+          "first_order": "Die Maßnahme kann Erwerbsbeteiligung, Einkommen, soziale Sicherheit, Arbeitsqualität, Fachkräfteverfügbarkeit oder Armutsrisiken verändern.",
+          "second_order": [
+            "Sanktions- oder Pflichtlogiken können vulnerable Personen trotz geringer tatsächlicher Arbeitsfähigkeit treffen",
+            "Entlastungen können Mitnahmeeffekte erzeugen, wenn Zusätzlichkeit fehlt",
+            "Nutzen und Lasten können zwischen Zielgruppen, Regionen, Haushalten, Unternehmen oder Generationen unterschiedlich verteilt sein; eine Durchschnittswirkung reicht daher nicht."
+          ],
+          "third_order": "Kann langfristig Erwerbsanreize, Lohn- und Arbeitsstandards, soziale Sicherung, Qualifikationspfade und Verteilung verändern.",
+          "status": "PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS"
+        },
+        "time_horizon": {
+          "short_term": "Kurzfristig sind vor allem Umstellungs-, Finanzierungs-, Verwaltungs-, Preis-, Zugangs- oder Erwartungseffekte zu beobachten.",
+          "medium_term": "Mittelfristig ist zu prüfen, ob das Instrument tatsächlich den vorgesehenen Zielzustand verändert oder primär Output/Verwaltungsaktivität erzeugt.",
+          "long_term": "Langfristig sind Pfadabhängigkeit, Nebenfolgen, Resilienz, Folgekosten und institutionelle bzw. infrastrukturelle Veränderungen zu prüfen.",
+          "intergenerational_relevance": "CONTEXT_DEPENDENT"
+        },
+        "materiality": "CONTEXT_DEPENDENT",
+        "uncertainty": [
+          "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+          "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend."
+        ],
+        "falsification_or_reality_check": {
+          "baseline_required": "Vor Inkrafttreten/Umsetzung dokumentierter Ausgangszustand, nach relevanten Gruppen und Regionen differenziert.",
+          "primary_indicator": "Erwerbstätigkeit, Übergangsquote, verfügbares Einkommen, Armutsgefährdung, Arbeitsqualität, Krankenstand, Qualifikation",
+          "unit": "Quoten, Euro, Tage",
+          "counterfactual_required": null,
+          "earliest_review": "Nach Vorliegen erster Outcome-Daten; Output oder Mittelabfluss allein reichen nicht.",
+          "correction_trigger": "Wenn der erwartete Wirkmechanismus ausbleibt, wesentliche Schäden/Verlagerungen auftreten, Schutzgrenzen berührt werden oder Daten die ursprünglichen Annahmen widerlegen, ist Redesign, Begrenzung, Aussetzen oder Alternativpfad zu prüfen."
+        },
+        "noncompensation": [
+          {
+            "concern": "Existenzminimum, Menschenwürde, Gleichbehandlung, Arbeits- und Gesundheitsschutz",
+            "rationale": "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind.",
+            "status": "NONE_IDENTIFIED"
+          }
+        ],
+        "marker_decision": "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+        "editorial_input_status": {
+          "approved_case_selection": "APPROVED",
+          "reviewed_visual_brief": "APPROVED",
+          "alt_text_review": "APPROVED",
+          "editorial_brief_signoff": "APPROVED",
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
+        }
+      },
+      "non_visual_effects": [
+        "Sanktions- oder Pflichtlogiken können vulnerable Personen trotz geringer tatsächlicher Arbeitsfähigkeit treffen",
+        "Entlastungen können Mitnahmeeffekte erzeugen, wenn Zusätzlichkeit fehlt",
+        "Kurzfristige Beschäftigungsanreize können Arbeitsqualität, Gesundheit oder Care-Verpflichtungen verdrängen",
+        "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+        "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+        "Existenzminimum, Menschenwürde, Gleichbehandlung, Arbeits- und Gesundheitsschutz",
+        "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [
+        "sicher verhinderte Waldbrände, konkrete Schadenssummen, CO2-Einsparungen oder garantierte Resilienzwirkung."
+      ],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist eine Präventionsstruktur; verhinderte Brände oder Schäden werden nicht als eingetretener Zustand markiert."
+      ],
+      "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
+      "scenario_assumptions": [
+        "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+        "Rechtlich und administrativ tragfähige Umsetzung",
+        "Ausreichende Ressourcen und Vollzugskapazität",
+        "Monitoring gegenüber einer dokumentierten Baseline"
+      ],
+      "evidence_summary": "Der Mechanismus wirkt vor dem Schadenseintritt und kann dadurch Menschen, Ökosysteme, Infrastruktur und Einsatzkräfte gleichzeitig schützen. Ungeeignete Schneisen oder harte Eingriffe können jedoch Habitatfunktionen beeinträchtigen. Deshalb sind Brandrisikomodell, Standortwahl und Pflegezustand zentrale Qualitätsbedingungen.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/gruene-case-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario einer Wald- oder Landschaftsfläche in Sachsen-Anhalt mit sachlich erkennbaren präventiven Brandschutzstrukturen. Das Bild visualisiert einen freigegebenen WÖk-Wirkungsfall zur möglichen Begrenzung von Feuerausbreitung und ist keine Prognose verhinderter Brände oder Schäden.",
+      "visual_brief": {
+        "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "e7bac488cda990e0bd56be5892edd1ccce7f9cc0f9db422517e020f0b96d2d45",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "2a273b541db5a93e0eb0dffb60c2e82cd59a8af70e497eb772689bc87bebc6b0",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 501114,
+        "original_filename": "sa-2026-case-gruene-waldbrandpraevention-v1.png",
+        "original_sha256": "53b7ed57641a9af226bdb467012432f15d41a8702cc1ecfffd3dd9848cdf8f00",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-linke-program-v2",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-linke",
+      "source_key": "ltw-2026-st-linke",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
+      "title": "Programm-Szenario · Die Linke Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
+      "visible_elements": [],
+      "case_analysis_binding": null,
+      "non_visual_effects": [
+        "Lokale Wirkungskapazität: Ehrenamts- und Beteiligungsinfrastruktur kann gesellschaftliche Aufgaben näher an lokale Kompetenzen und Bedarfe bringen.",
+        "Mehr Beteiligung ist nicht automatisch mehr Repräsentativität: Niedrigere Quoren erhöhen Zugänglichkeit, können aber Mobilisierungsunterschiede und Minderheitenrisiken verstärken.",
+        "Kommunale Ressourcen: Neue Fonds, Budgets und personelle Ausstattung brauchen Gegenfinanzierung und klare Kriterien, damit Beteiligung nicht von Finanzkraft abhängt.",
+        "Quellenkollision entdeckt: Mindestens ein zentraler Alt-Datensatz verbindet mehrere Programmpassagen. Dieser Pfad wird bis zur erneuten Quellenzerlegung fail-closed behandelt."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
+      ],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum Linke-Wahlprogramm Sachsen-Anhalt 2026: links ein Bürgerhaus mit Ehrenamt, lokaler Beteiligung und gemeinschaftlichen Aktivitäten; rechts vier freigegebene Schlüsselpfade zu Bevölkerungsbeteiligung, Ehrenamtsförderung, direkter Demokratie und einem wegen Quellenkollision nicht bewertbaren Pfad. Ex ante, keine Prognose.",
+      "visual_brief": {
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "48198176bf0b656d5cce381f21347e18090719cbcad59b9b278ba29704b66ee7",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-program-scenario-v1.webp",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 267174,
+        "original_filename": "sa-2026-program-linke-wirkungsbild-v2.png",
+        "original_sha256": "761049f36e2604f9128fdcc128d0544399c25f783cc4bc6b5022145b85ee6d86",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-linke-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+      "source_key": "ltw-2026-st-linke",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
+      "title": "Fallvertiefung · Die Linke Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "selection_rationale": "Der freigegebene Pfad bildet einen klar abgrenzbaren institutionellen Hebel demokratischer Beteiligung ab. Er ist als Case geeignet, weil die unmittelbare Zustandsänderung in Zugangs-/Verfahrenshürden liegt; weitergehende Effekte auf Beteiligung, Legitimität oder Entscheidungsergebnisse müssen als Wirkungspotenzial und nicht als Bildfakt behandelt werden.",
+      "visible_elements": [],
+      "case_analysis_binding": {
+        "approval_provenance": {
+          "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+          "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+          "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+          "human_individual_record_review_claimed": false
+        },
+        "selected_case_id": "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "canonical_record_path": "data/generated/release-1/sachsen-anhalt-programme-reviews.json",
+        "canonical_editorial_path": "data/presentation/sachsen-anhalt-programme-editorial-v2.ts",
+        "decision_or_measure": "dass bei Volksinitiativen, Volksbegehren und Volksentscheiden die Quoren zum Teil weiter abgesenkt …",
+        "intended_change": "Vorgesehene Veränderung: dass bei Volksinitiativen, Volksbegehren und Volksentscheiden die Quoren zum Teil weiter abgesenkt werden,",
+        "source_statement_refs": [
+          {
+            "source_key": "ltw-2026-st-linke",
+            "location": {
+              "page": 13,
+              "section": null
+            },
+            "source_text": "dass bei Volksinitiativen, Volksbegehren und Volksentscheiden die Quoren zum Teil weiter abgesenkt werden,"
+          }
+        ],
+        "affected_group_or_system": [
+          "betroffene Zielgruppen",
+          "zuständige Institutionen",
+          "gegebenenfalls Dritte und kommende Generationen"
+        ],
+        "mechanism": [
+          "Die angekündigte Maßnahme verändert Handlungsmöglichkeiten oder Ressourcenverteilung; der konkrete Wirkmechanismus muss am Gegenstand präzisiert werden."
+        ],
+        "potential_state_change": [
+          "Die Zusage kann Regeln, Ressourcen, Anreize oder öffentliche Leistungen verändern. Die konkrete Zustandsänderung ist ohne nähere Ausgestaltung und einen passenden Baselinevergleich offen."
+        ],
+        "key_finding": "ZUGANG VS. REPRÄSENTATIVITÄT",
+        "impact_core_summary": "Niedrigere Quoren können den Zugang zu direkter Demokratie erweitern und mehr Themen zur Abstimmung bringen, können zugleich aber kleinere mobilisierungsstarke Gruppen relativ stärker gewichten und Schutz- oder Legitimitätsfragen verschärfen.",
+        "editorial_summary": "Der Effekt hängt nicht nur von der Höhe des Quorums ab, sondern von Information, Beteiligungsbreite, Verfahrensfairness, Themenzulässigkeit und Minderheitenschutz. Ein einfacher Mehr-ist-besser-Schluss wäre deshalb methodisch falsch. Zu beobachten sind Teilnahme, soziale Repräsentativität, Verfahrenskosten und spätere Akzeptanz.",
+        "direction_rationale": "Mehr Zugänglichkeit und mögliche Repräsentativitätsrisiken wirken gleichzeitig.",
+        "impact_direction": "AMBIVALENT",
+        "evidence_level": "MEDIUM",
+        "competence_and_system_boundary": {
+          "responsible_actors": [
+            "Land Sachsen-Anhalt / zuständige Landesressorts"
+          ],
+          "competence_note": null,
+          "implementation_conditions": [
+            "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+            "Rechtlich und administrativ tragfähige Umsetzung",
+            "Ausreichende Ressourcen und Vollzugskapazität",
+            "Monitoring gegenüber einer dokumentierten Baseline"
+          ]
+        },
+        "material_risks": [
+          {
+            "risk": "Unklare Ausgestaltung kann Wirkung, Verteilung und Vollzug in unterschiedliche Richtungen verschieben",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "betroffene Zielgruppen",
+              "zuständige Institutionen",
+              "gegebenenfalls Dritte und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Ohne Baseline und Gegenfaktum ist keine belastbare Ex-ante-Quantifizierung möglich",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "betroffene Zielgruppen",
+              "zuständige Institutionen",
+              "gegebenenfalls Dritte und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          }
+        ],
+        "impact_orders": {
+          "first_order": "Die Zusage kann Regeln, Ressourcen, Anreize oder öffentliche Leistungen verändern. Die konkrete Zustandsänderung ist ohne nähere Ausgestaltung und einen passenden Baselinevergleich offen.",
+          "second_order": [
+            "Unklare Ausgestaltung kann Wirkung, Verteilung und Vollzug in unterschiedliche Richtungen verschieben",
+            "Ohne Baseline und Gegenfaktum ist keine belastbare Ex-ante-Quantifizierung möglich",
+            "Nutzen und Lasten können zwischen Zielgruppen, Regionen, Haushalten, Unternehmen oder Generationen unterschiedlich verteilt sein; eine Durchschnittswirkung reicht daher nicht."
+          ],
+          "third_order": "Kann langfristig Regeln, Ressourcenverteilung, institutionelle Routinen oder spätere Entscheidungspfade verändern; die konkrete dritte Ordnung bleibt gegenstandsspezifisch zu prüfen.",
+          "status": "PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS"
+        },
+        "time_horizon": {
+          "short_term": "Kurzfristig sind vor allem Umstellungs-, Finanzierungs-, Verwaltungs-, Preis-, Zugangs- oder Erwartungseffekte zu beobachten.",
+          "medium_term": "Mittelfristig ist zu prüfen, ob das Instrument tatsächlich den vorgesehenen Zielzustand verändert oder primär Output/Verwaltungsaktivität erzeugt.",
+          "long_term": "Langfristig sind Pfadabhängigkeit, Nebenfolgen, Resilienz, Folgekosten und institutionelle bzw. infrastrukturelle Veränderungen zu prüfen.",
+          "intergenerational_relevance": "CONTEXT_DEPENDENT"
+        },
+        "materiality": "CONTEXT_DEPENDENT",
+        "uncertainty": [
+          "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+          "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend."
+        ],
+        "falsification_or_reality_check": {
+          "baseline_required": "Vor Inkrafttreten/Umsetzung dokumentierter Ausgangszustand, nach relevanten Gruppen und Regionen differenziert.",
+          "primary_indicator": "gegenstandsspezifischer Zustandsindikator",
+          "unit": "gegenstandsspezifisch",
+          "counterfactual_required": null,
+          "earliest_review": "Nach Vorliegen erster Outcome-Daten; Output oder Mittelabfluss allein reichen nicht.",
+          "correction_trigger": "Wenn der erwartete Wirkmechanismus ausbleibt, wesentliche Schäden/Verlagerungen auftreten, Schutzgrenzen berührt werden oder Daten die ursprünglichen Annahmen widerlegen, ist Redesign, Begrenzung, Aussetzen oder Alternativpfad zu prüfen."
+        },
+        "noncompensation": [
+          {
+            "concern": "gegenstandsspezifische Grund- und Schutzrechte",
+            "rationale": "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind.",
+            "status": "NONE_IDENTIFIED"
+          }
+        ],
+        "marker_decision": "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+        "editorial_input_status": {
+          "approved_case_selection": "APPROVED",
+          "reviewed_visual_brief": "APPROVED",
+          "alt_text_review": "APPROVED",
+          "editorial_brief_signoff": "APPROVED",
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
+        }
+      },
+      "non_visual_effects": [
+        "Unklare Ausgestaltung kann Wirkung, Verteilung und Vollzug in unterschiedliche Richtungen verschieben",
+        "Ohne Baseline und Gegenfaktum ist keine belastbare Ex-ante-Quantifizierung möglich",
+        "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+        "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+        "gegenstandsspezifische Grund- und Schutzrechte",
+        "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [
+        "automatisch höhere Beteiligung, bessere Entscheidungen, stärkere Demokratie oder bestimmte politische Ergebnisse."
+      ],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist nur der Verfahrenszugang; Repräsentativität, Legitimität und politische Ergebnisse bleiben unbehauptet."
+      ],
+      "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
+      "scenario_assumptions": [
+        "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+        "Rechtlich und administrativ tragfähige Umsetzung",
+        "Ausreichende Ressourcen und Vollzugskapazität",
+        "Monitoring gegenüber einer dokumentierten Baseline"
+      ],
+      "evidence_summary": "Der Effekt hängt nicht nur von der Höhe des Quorums ab, sondern von Information, Beteiligungsbreite, Verfahrensfairness, Themenzulässigkeit und Minderheitenschutz. Ein einfacher Mehr-ist-besser-Schluss wäre deshalb methodisch falsch. Zu beobachten sind Teilnahme, soziale Repräsentativität, Verfahrenskosten und spätere Akzeptanz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/linke-case-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines öffentlich zugänglichen Beteiligungsverfahrens in Sachsen-Anhalt mit neutralem Informations- und Eintragungsbereich. Das Bild visualisiert den freigegebenen institutionellen Wirkungsfall zu Volksinitiative, Volksbegehren oder Volksentscheid; tatsächliche Beteiligung oder politische Ergebnisse werden damit nicht vorausgesagt.",
+      "visual_brief": {
+        "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "f1c95176e4c96a91e3ff69c74c72905fdbb926bbed983e6f792952710f350013",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "7fdc7a9b2a45d535896a43a576125a535d74ce417c0aeb4e26c586816a3088c6",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 165588,
+        "original_filename": "sa-2026-case-linke-direkte-demokratie-v1.png",
+        "original_sha256": "fe8286a8e1ea5e696ee7c62ae2d21915f6fb16d22e751677e03c42b89ac517b1",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-bsw-program-v2",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-bsw",
+      "source_key": "ltw-2026-st-bsw",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
+      "title": "Programm-Szenario · BSW Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
+      "visible_elements": [],
+      "case_analysis_binding": null,
+      "non_visual_effects": [
+        "Echte Wahlfreiheit: Soziale Sicherheit und zivile Alternativen können verhindern, dass wirtschaftlicher Druck berufliche Lebensentscheidungen dominiert.",
+        "Militarisierung ist kein Instrument: Ohne Definition, Zielzustand und Landeshebel kann aus der Forderung keine belastbare positive oder negative Wirkung abgeleitet werden.",
+        "Direkte Beteiligung braucht Design: Bürgerbudgets und Bürgerentscheide können Selbstwirksamkeit erhöhen, benötigen aber Repräsentativität, Minderheitenschutz und tragfähige kommunale Verfahren.",
+        "Dialog ist Vorwirkung, nicht Vollzug: Respektvolle Kommunikation kann gesellschaftlich relevant sein, ersetzt aber kein überprüfbares politisches Instrument."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
+      ],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum BSW-Wahlprogramm Sachsen-Anhalt 2026: links Rathaus und öffentlicher Beteiligungsraum mit Dialog; rechts vier freigegebene Schlüsselpfade zu zivilen Wahlmöglichkeiten junger Menschen, einer unbestimmten Militarisierungsforderung, Bürgerbudgets und gesellschaftlichem Dialog mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
+      "visual_brief": {
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "85c88775667537c6a32095370bfde1b148baa4aedebd1b8378ca87f370051cce",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-program-scenario-v1.webp",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 248102,
+        "original_filename": "sa-2026-program-bsw-wirkungsbild-v2.png",
+        "original_sha256": "88b3e8e65c3d0896f6df8b59ea236083661d7a552cc91f740c18126cf2179277",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-bsw-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+      "source_key": "ltw-2026-st-bsw",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
+      "title": "Fallvertiefung · BSW Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "selection_rationale": "Bürgerbudgets/-beteiligung bilden einen konkreten kommunalen Entscheidungshebel ab und sind visuell verständlich, ohne den Nutzen automatisch vorwegzunehmen. Der Case erlaubt eine klare Trennung zwischen Zugang/Verfahren und späterer tatsächlicher Mittelverteilung bzw. Outcome.",
+      "visible_elements": [],
+      "case_analysis_binding": {
+        "approval_provenance": {
+          "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+          "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+          "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+          "human_individual_record_review_claimed": false
+        },
+        "selected_case_id": "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "canonical_record_path": "data/generated/release-1/sachsen-anhalt-programme-reviews.json",
+        "canonical_editorial_path": "data/presentation/sachsen-anhalt-programme-editorial-v2.ts",
+        "decision_or_measure": "Auch auf kommunaler Ebene sollen Bürgerbudgets und Bürgerentscheide durch finanzielle Zuschüsse ausgebaut …",
+        "intended_change": "Vorgesehene Veränderung: Auch auf kommunaler Ebene sollen Bürgerbudgets und Bürgerentscheide durch finanzielle Zuschüsse ausgebaut und Hürden gesenkt werden. Dazu braucht es klare rechtliche Rahmenbedingungen und leicht zugängliche Strukturen, die es Menschen ermöglichen, Initiativen unkompliziert zu starten und abzustimmen.",
+        "source_statement_refs": [
+          {
+            "source_key": "ltw-2026-st-bsw",
+            "location": {
+              "page": 11,
+              "section": "2. Demokratie & Debatte"
+            },
+            "source_text": "Auch auf kommunaler Ebene sollen Bürgerbudgets und Bürgerentscheide durch finanzielle Zuschüsse ausgebaut und Hürden gesenkt werden. Dazu braucht es klare rechtliche Rahmenbedingungen und leicht zugängliche Strukturen, die es Menschen ermöglichen, Initiativen unkompliziert zu starten und abzustimmen."
+          }
+        ],
+        "affected_group_or_system": [
+          "Steuer- und Transferpflichtige",
+          "öffentliche Haushalte",
+          "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+        ],
+        "mechanism": [
+          "Steuersätze, Bemessungsgrundlagen, Transfers oder Budgetregeln verändern private Anreize und die Ressourcenverteilung zwischen Staat, Haushalten und Unternehmen."
+        ],
+        "potential_state_change": [
+          "Die Maßnahme kann verfügbare Einkommen, Investitionen, Verteilung, Staatseinnahmen, Verschuldung und öffentliche Handlungskapazität verändern."
+        ],
+        "key_finding": "MEHR TEILHABE - VERFAHRENSQUALITÄT ENTSCHEIDET",
+        "impact_core_summary": "Niedrigere Hürden und finanzierte Bürgerbudgets können kommunale Beteiligung und Selbstwirksamkeit erhöhen, können bei schwacher Beteiligungsbreite oder unklaren Regeln aber Ressourcen verzerren und mobilisierungsstarke Gruppen bevorzugen.",
+        "editorial_summary": "Der positive Hebel liegt in zugänglichen Verfahren, nicht in möglichst vielen Abstimmungen. Repräsentativität, Transparenz, Minderheitenschutz, Verwaltungsaufwand und verfügbare kommunale Mittel müssen gemeinsam beobachtet werden. Klare rechtliche Rahmenbedingungen sind daher Teil des Wirkmechanismus und nicht nur Umsetzungsdetail.",
+        "direction_rationale": "Zugangsvorteile und Repräsentativitäts-/Ressourcenrisiken bestehen gleichzeitig.",
+        "impact_direction": "AMBIVALENT",
+        "evidence_level": "MEDIUM",
+        "competence_and_system_boundary": {
+          "responsible_actors": [
+            "Land Sachsen-Anhalt / zuständige Landesressorts",
+            "Kommunen / kommunale Träger"
+          ],
+          "competence_note": null,
+          "implementation_conditions": [
+            "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+            "Rechtlich und administrativ tragfähige Umsetzung",
+            "Ausreichende Ressourcen und Vollzugskapazität",
+            "Monitoring gegenüber einer dokumentierten Baseline"
+          ]
+        },
+        "material_risks": [
+          {
+            "risk": "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Durchschnittseffekte können Verteilungsunterschiede zwischen Einkommens- und Vermögensgruppen verdecken",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          }
+        ],
+        "impact_orders": {
+          "first_order": "Die Maßnahme kann verfügbare Einkommen, Investitionen, Verteilung, Staatseinnahmen, Verschuldung und öffentliche Handlungskapazität verändern.",
+          "second_order": [
+            "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+            "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+            "Nutzen und Lasten können zwischen Zielgruppen, Regionen, Haushalten, Unternehmen oder Generationen unterschiedlich verteilt sein; eine Durchschnittswirkung reicht daher nicht."
+          ],
+          "third_order": "Kann langfristig Einnahmestrukturen, private Anreize, Verteilung, Verschuldung und staatliche Wirkungskapazität verändern.",
+          "status": "PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS"
+        },
+        "time_horizon": {
+          "short_term": "Kurzfristig sind vor allem Umstellungs-, Finanzierungs-, Verwaltungs-, Preis-, Zugangs- oder Erwartungseffekte zu beobachten.",
+          "medium_term": "Mittelfristig ist zu prüfen, ob das Instrument tatsächlich den vorgesehenen Zielzustand verändert oder primär Output/Verwaltungsaktivität erzeugt.",
+          "long_term": "Langfristig sind Pfadabhängigkeit, Nebenfolgen, Resilienz, Folgekosten und institutionelle bzw. infrastrukturelle Veränderungen zu prüfen.",
+          "intergenerational_relevance": "MATERIAL"
+        },
+        "materiality": "MATERIAL",
+        "uncertainty": [
+          "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+          "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend."
+        ],
+        "falsification_or_reality_check": {
+          "baseline_required": "Vor Inkrafttreten/Umsetzung dokumentierter Ausgangszustand, nach relevanten Gruppen und Regionen differenziert.",
+          "primary_indicator": "Nettoeinkommen nach Gruppen, Steueraufkommen, Investition/Arbeitsangebot, Verteilungskennzahlen, Zins-/Schuldendienst, Leistungsniveau",
+          "unit": "Euro, %, Quote",
+          "counterfactual_required": null,
+          "earliest_review": "Nach Vorliegen erster Outcome-Daten; Output oder Mittelabfluss allein reichen nicht.",
+          "correction_trigger": "Wenn der erwartete Wirkmechanismus ausbleibt, wesentliche Schäden/Verlagerungen auftreten, Schutzgrenzen berührt werden oder Daten die ursprünglichen Annahmen widerlegen, ist Redesign, Begrenzung, Aussetzen oder Alternativpfad zu prüfen."
+        },
+        "noncompensation": [
+          {
+            "concern": "Existenzminimum, Gleichheit, nachhaltige öffentliche Handlungsfähigkeit",
+            "rationale": "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind.",
+            "status": "NONE_IDENTIFIED"
+          }
+        ],
+        "marker_decision": "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+        "editorial_input_status": {
+          "approved_case_selection": "APPROVED",
+          "reviewed_visual_brief": "APPROVED",
+          "alt_text_review": "APPROVED",
+          "editorial_brief_signoff": "APPROVED",
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
+        }
+      },
+      "non_visual_effects": [
+        "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+        "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+        "Durchschnittseffekte können Verteilungsunterschiede zwischen Einkommens- und Vermögensgruppen verdecken",
+        "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+        "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+        "Existenzminimum, Gleichheit, nachhaltige öffentliche Handlungsfähigkeit",
+        "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [
+        "automatisch bessere Ausgaben, mehr Vertrauen, höhere kommunale Leistungsfähigkeit oder wirtschaftlichen Gewinn."
+      ],
+      "omitted_marker_candidates": [
+        "Kein räumlicher UI-Marker: Sichtbar ist der Beteiligungs-/Budgetprozess; bessere Mittelverwendung, Vertrauen oder gesellschaftliche Outcomes werden nicht behauptet."
+      ],
+      "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts · Kommunen / kommunale Träger",
+      "scenario_assumptions": [
+        "Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.",
+        "Rechtlich und administrativ tragfähige Umsetzung",
+        "Ausreichende Ressourcen und Vollzugskapazität",
+        "Monitoring gegenüber einer dokumentierten Baseline"
+      ],
+      "evidence_summary": "Der positive Hebel liegt in zugänglichen Verfahren, nicht in möglichst vielen Abstimmungen. Repräsentativität, Transparenz, Minderheitenschutz, Verwaltungsaufwand und verfügbare kommunale Mittel müssen gemeinsam beobachtet werden. Klare rechtliche Rahmenbedingungen sind daher Teil des Wirkmechanismus und nicht nur Umsetzungsdetail.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/bsw-case-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines kommunalen Bürgerbudget- oder Beteiligungsprozesses in Sachsen-Anhalt mit sachlich dargestellten Projektvorschlägen und öffentlicher Priorisierung. Das Bild visualisiert den freigegebenen Verfahrenshebel; Qualität der Mittelverwendung, Vertrauen oder gesellschaftliche Wirkungen werden nicht als eingetretener Outcome dargestellt.",
+      "visual_brief": {
+        "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "d0432dbe01c3097fcfb274ffa841238cccc8c574303c7722c5862244c6959200",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "129370172f869eaa362f1467748813e6d2078f810b25c4a0965739108e6fe446",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 241236,
+        "original_filename": "sa-2026-case-bsw-buergerbudget-v1.png",
+        "original_sha256": "acc39dee9823e89361f6509f47cbd532c176a38623299d037bd86e48eee39047",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-afd-program-v2",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-afd",
+      "source_key": "ltw-2026-st-afd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "public_label": "Wirkungsbild · Programm",
+      "public_subtitle": "Visualisierte Zusammenfassung zentraler freigegebener Wirkungspfade · Ex ante · keine Prognose.",
+      "title": "Programm-Szenario · Alternative für Deutschland Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. PROGRAM_SCENARIO v2 fasst diese Pfade analytisch zusammen; der Fotoanker erzeugt keine Fachinformation und keine räumlichen Marker.",
+      "visible_elements": [],
+      "case_analysis_binding": null,
+      "non_visual_effects": [
+        "Frühe Bildung: Mehr qualitativ gutes Vorlesen kann Sprachentwicklung, Wortschatz und spätere Bildungsteilhabe unterstützen.",
+        "Unterstützung muss freiwillig sein: Beratung und materielle Hilfe für ungewollt Schwangere können Belastungen reduzieren, wenn Autonomie und Nichtdirektivität geschützt bleiben.",
+        "Grundrechtsgrenzen materiell: Reproduktive Gesundheit, Gleichheit, Diskriminierungsschutz und individuelle Freiheitsrechte dürfen nicht gegen andere Programmvorteile verrechnet werden.",
+        "Unbestimmte Abschaffungsforderungen: Ohne Benennung der betroffenen Instrumente ist weder Haushaltsentlastung noch gesellschaftliche Wirkung belastbar zu beurteilen."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [],
+      "omitted_marker_candidates": [
+        "Die vier analytischen Pfadkarten sind im freigegebenen Composite an die kanonischen selected_impact_path_ids gebunden; aus dem Fotoanker werden keine räumlichen UI-Marker abgeleitet."
+      ],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-program-scenario-v2.webp",
+      "alt_text": "Analytisches Wirkungsbild zum AfD-Wahlprogramm Sachsen-Anhalt 2026: links ein neutraler öffentlicher Beratungsraum als visueller Anker; rechts vier freigegebene Schlüsselpfade zu reproduktiven Schutzgütern und Selbstbestimmung, unbestimmten Abschaffungsforderungen, freiwilliger Unterstützung für Schwangere und vorschulischem Vorlesen mit Richtung, Evidenz und Aussagegrenzen. Ex ante, keine Prognose.",
+      "visual_brief": {
+        "id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "version": "2.0",
+        "content_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "eaaf7725d624a9c9357c0c9517c8f7327b2a1d610439d2638f0eb3f6dbdbc101",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-program-scenario-v1.webp",
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1600,
+        "height": 1000,
+        "byte_size": 174670,
+        "original_filename": "sa-2026-program-afd-wirkungsbild-v2.png",
+        "original_sha256": "67339ed576cf74b895125d518ba3fb5aabbb8897829481b4ae782685cb216299",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "WÖk editorial composite from reviewed generated photo anchor + canonical Editorial-v2 path text; 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben."
+        },
+        {
+          "version": "2.0",
+          "date": "2026-08-27",
+          "status": "CORRECTED",
+          "note": "PROGRAM_VISUAL_SOURCE_ALIGNMENT_CORRECTION: Das bisherige PROGRAM_SCENARIO v1 ist als aktuelles Public Asset superseded. v2 bindet die unveränderten vier kanonischen Editorial-v2-Pfade als analytische Zusammenfassung, wahrt OPEN/NOT_ASSESSABLE und schreibt keine Bildinformation in Fachdata zurück."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-afd-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+      "source_key": "ltw-2026-st-afd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "public_label": "Wirkungsbild · Fallvertiefung",
+      "public_subtitle": "Visualisiertes Wirkungsszenario eines freigegebenen Einzelpfads · Ex ante · keine Prognose.",
+      "title": "Fallvertiefung · Alternative für Deutschland Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "selection_rationale": "Dieser freigegebene Pfad ist materieller als die kleineren positiven Einzelbeispiele und eignet sich deshalb als Deep Dive für die Frage, was die Abschaffung/Ersetzung institutioneller Gleichstellungsfunktionen als unmittelbare Strukturänderung bedeutet. Der Case darf weder Absicht noch tatsächliche spätere Diskriminierungsoutcomes bebildern. Er zeigt nur die institutionelle Veränderungsebene; Schutzgutfolgen bleiben textlich und evidenzgebunden.",
+      "visible_elements": [],
+      "case_analysis_binding": {
+        "approval_provenance": {
+          "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+          "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+          "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+          "human_individual_record_review_claimed": false
+        },
+        "selected_case_id": "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "canonical_record_path": "data/generated/release-1/sachsen-anhalt-programme-reviews.json",
+        "canonical_editorial_path": "data/presentation/sachsen-anhalt-programme-editorial-v2.ts",
+        "decision_or_measure": "Gesellschaftspolitische Steuerungsinstrumente, die nicht nur kostspielig sind, sondern auch verschiedene Teile unserer …",
+        "intended_change": "Vorgesehene Veränderung: Gesellschaftspolitische Steuerungsinstrumente, die nicht nur kostspielig sind, sondern auch verschiedene Teile unserer Gesellschaft gegeneinander auszuspielen versuchen, werden wir abschaffen.",
+        "source_statement_refs": [
+          {
+            "source_key": "ltw-2026-st-afd",
+            "location": {
+              "page": "Webabschnitt 1: 1 Willkommenskultur für Kinder!",
+              "section": "1 Willkommenskultur für Kinder!"
+            },
+            "source_text": "Gesellschaftspolitische Steuerungsinstrumente, die nicht nur kostspielig sind, sondern auch verschiedene Teile unserer Gesellschaft gegeneinander auszuspielen versuchen, werden wir abschaffen."
+          }
+        ],
+        "affected_group_or_system": [
+          "Steuer- und Transferpflichtige",
+          "öffentliche Haushalte",
+          "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+        ],
+        "mechanism": [
+          "Steuersätze, Bemessungsgrundlagen, Transfers oder Budgetregeln verändern private Anreize und die Ressourcenverteilung zwischen Staat, Haushalten und Unternehmen."
+        ],
+        "potential_state_change": [
+          "Die Maßnahme kann verfügbare Einkommen, Investitionen, Verteilung, Staatseinnahmen, Verschuldung und öffentliche Handlungskapazität verändern."
+        ],
+        "key_finding": "ANALYSEEINHEIT FEHLT",
+        "impact_core_summary": "Die angekündigte Abschaffung „gesellschaftspolitischer Steuerungsinstrumente“ benennt nicht, welche Gesetze, Programme, Stellen oder Förderungen betroffen wären; damit fehlen Gegenstand, Kostenbasis und Wirkmechanismus.",
+        "editorial_summary": "Je nach betroffenem Instrument könnten Verwaltungskosten sinken oder Gleichstellungs-, Teilhabe-, Präventions- und Schutzfunktionen entfallen. Ohne Liste der konkreten Maßnahmen wäre jede Richtung eine Spekulation. Vor einer Bewertung müssen Instrumente einzeln mit Budget, Zielgruppe und Schutzfunktion offengelegt werden.",
+        "direction_rationale": "Ohne konkreten Gegenstand gibt es weder belastbaren Nutzenpfad noch belastbares Risikoquantum.",
+        "impact_direction": "OPEN",
+        "evidence_level": "NOT_ASSESSABLE",
+        "competence_and_system_boundary": {
+          "responsible_actors": [
+            "Land Sachsen-Anhalt / zuständige Landesressorts"
+          ],
+          "competence_note": null,
+          "implementation_conditions": [
+            "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz",
+            "Rechtlich und administrativ tragfähige Umsetzung",
+            "Ausreichende Ressourcen und Vollzugskapazität",
+            "Monitoring gegenüber einer dokumentierten Baseline"
+          ]
+        },
+        "material_risks": [
+          {
+            "risk": "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          },
+          {
+            "risk": "Durchschnittseffekte können Verteilungsunterschiede zwischen Einkommens- und Vermögensgruppen verdecken",
+            "trigger_or_condition": "tritt insbesondere bei unklarer Ausgestaltung, unzureichendem Vollzug oder fehlender Schutzprüfung auf",
+            "affected_groups_or_goods": [
+              "Steuer- und Transferpflichtige",
+              "öffentliche Haushalte",
+              "Nutzer:innen öffentlicher Leistungen und kommende Generationen"
+            ],
+            "evidence_status": "LIMITED"
+          }
+        ],
+        "impact_orders": {
+          "first_order": "Die Maßnahme kann verfügbare Einkommen, Investitionen, Verteilung, Staatseinnahmen, Verschuldung und öffentliche Handlungskapazität verändern.",
+          "second_order": [
+            "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+            "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+            "Nutzen und Lasten können zwischen Zielgruppen, Regionen, Haushalten, Unternehmen oder Generationen unterschiedlich verteilt sein; eine Durchschnittswirkung reicht daher nicht."
+          ],
+          "third_order": "Kann langfristig Einnahmestrukturen, private Anreize, Verteilung, Verschuldung und staatliche Wirkungskapazität verändern.",
+          "status": "PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS"
+        },
+        "time_horizon": {
+          "short_term": "Kurzfristig sind vor allem Umstellungs-, Finanzierungs-, Verwaltungs-, Preis-, Zugangs- oder Erwartungseffekte zu beobachten.",
+          "medium_term": "Mittelfristig ist zu prüfen, ob das Instrument tatsächlich den vorgesehenen Zielzustand verändert oder primär Output/Verwaltungsaktivität erzeugt.",
+          "long_term": "Langfristig sind Pfadabhängigkeit, Nebenfolgen, Resilienz, Folgekosten und institutionelle bzw. infrastrukturelle Veränderungen zu prüfen.",
+          "intergenerational_relevance": "MATERIAL"
+        },
+        "materiality": "MATERIAL",
+        "uncertainty": [
+          "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+          "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz"
+        ],
+        "falsification_or_reality_check": {
+          "baseline_required": "Vor Inkrafttreten/Umsetzung dokumentierter Ausgangszustand, nach relevanten Gruppen und Regionen differenziert.",
+          "primary_indicator": "Nettoeinkommen nach Gruppen, Steueraufkommen, Investition/Arbeitsangebot, Verteilungskennzahlen, Zins-/Schuldendienst, Leistungsniveau",
+          "unit": "Euro, %, Quote",
+          "counterfactual_required": null,
+          "earliest_review": "Nach Vorliegen erster Outcome-Daten; Output oder Mittelabfluss allein reichen nicht.",
+          "correction_trigger": "Wenn der erwartete Wirkmechanismus ausbleibt, wesentliche Schäden/Verlagerungen auftreten, Schutzgrenzen berührt werden oder Daten die ursprünglichen Annahmen widerlegen, ist Redesign, Begrenzung, Aussetzen oder Alternativpfad zu prüfen."
+        },
+        "noncompensation": [
+          {
+            "concern": "Existenzminimum, Gleichheit, nachhaltige öffentliche Handlungsfähigkeit",
+            "rationale": "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind.",
+            "status": "REVIEW_REQUIRED"
+          }
+        ],
+        "marker_decision": "NULL_MARKER_APPROVED",
+        "editorial_input_status": {
+          "approved_case_selection": "APPROVED",
+          "reviewed_visual_brief": "APPROVED",
+          "alt_text_review": "APPROVED",
+          "editorial_brief_signoff": "APPROVED",
+          "image_asset": "SUPPLIED",
+          "final_image_signoff": "APPROVED"
+        }
+      },
+      "non_visual_effects": [
+        "Entlastungen ohne Gegenfinanzierung können öffentliche Leistungskapazität oder spätere Generationen belasten",
+        "Steuern können Ausweich- und Bewertungsreaktionen erzeugen",
+        "Durchschnittseffekte können Verteilungsunterschiede zwischen Einkommens- und Vermögensgruppen verdecken",
+        "Baseline, Gegenfaktum, Umsetzungsintensität, Verteilungswirkung, reale Vollzugskapazität und spätere Outcome-Daten sind aus dem Wahlprogramm allein nicht vollständig ableitbar.",
+        "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz",
+        "Existenzminimum, Gleichheit, nachhaltige öffentliche Handlungsfähigkeit",
+        "Vor einer Netto-Wirkungsverdichtung ist zu prüfen, ob materielle Schutz- oder Grundrechtsgrenzen betroffen sind."
+      ],
+      "non_visual_effects_review_status": "REVIEWED_COMPLETE",
+      "omitted_material_effects": [
+        "welche Gleichstellungsfunktion organisatorisch entfällt oder welche Schutz- oder Teilhabewirkung daraus folgt."
+      ],
+      "omitted_marker_candidates": [
+        "NULL_MARKER_APPROVED: Der neutrale Verwaltungsanker bezeichnet weder eine konkrete abzuschaffende Funktion noch Gleichbehandlungs- oder Teilhabewirkungen."
+      ],
+      "system_boundary": "Land Sachsen-Anhalt / zuständige Landesressorts",
+      "scenario_assumptions": [
+        "Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz",
+        "Rechtlich und administrativ tragfähige Umsetzung",
+        "Ausreichende Ressourcen und Vollzugskapazität",
+        "Monitoring gegenüber einer dokumentierten Baseline"
+      ],
+      "evidence_summary": "Je nach betroffenem Instrument könnten Verwaltungskosten sinken oder Gleichstellungs-, Teilhabe-, Präventions- und Schutzfunktionen entfallen. Ohne Liste der konkreten Maßnahmen wäre jede Richtung eine Spekulation. Vor einer Bewertung müssen Instrumente einzeln mit Budget, Zielgruppe und Schutzfunktion offengelegt werden.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": "/visuals/impact-scenarios/sachsen-anhalt/2026/afd-case-scenario-v1.webp",
+      "alt_text": "Fotorealistisches Ex-ante-Wirkungsszenario eines nüchternen öffentlichen Beratungs- und Verwaltungsraums in Sachsen-Anhalt. Das Bild dient als visueller Anker für den freigegebenen WÖk-Fall zur Veränderung gesellschaftspolitischer Verwaltungsfunktionen; welche Aufgaben tatsächlich entfallen oder welche Gleichbehandlungs- und Teilhabewirkungen folgen, wird ausschließlich in der textlichen Wirkungsanalyse bewertet und nicht durch das Bild behauptet.",
+      "visual_brief": {
+        "id": "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
+        "version": "1.0",
+        "content_sha256": "2235b6be4e1f3cd606abc4ebe82a7a4ba3638c45d8c0a955fd6f78326b42f059",
+        "review_status": "APPROVED"
+      },
+      "generator_metadata": null,
+      "asset_sha256": "1a6dc5da1bcc7f9aba49a22670687f069ba3d44d488ac4a7e33db9604ff2ce61",
+      "final_image_signoff": "APPROVED",
+      "supersedes_asset_path": null,
+      "asset_metadata": {
+        "mime_type": "image/webp",
+        "width": 1448,
+        "height": 1086,
+        "byte_size": 143734,
+        "original_filename": "sa-2026-case-afd-gesellschaftspolitische-steuerung-v1.png",
+        "original_sha256": "33310cd5fc0aadf8558edf499b3ad2e3d03e6a0714191e313ef6eb448db7b46a",
+        "asset_handoff_id": "SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12",
+        "asset_handoff_manifest_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+        "asset_handoff_archive_sha256": "c3364d149b465e1ce6b4951a005d5b6ec12c3a1d90595f76186ddbad7fafce85",
+        "creation_provenance": "Text-to-image generation; WÖk editorial review 2026-08-27",
+        "optimization": {
+          "format": "WEBP_LOSSY_Q90",
+          "full_composition_preserved": true,
+          "metadata_published": false
+        },
+        "integrated_at": "2026-08-27"
+      },
+      "editorial_review_status": "APPROVED_FOR_PUBLICATION",
+      "source_fidelity_status": "PASS_APPROVED_ANALYSIS_ONLY",
+      "missing_approved_inputs": [],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-26",
+          "status": "APPROVED",
+          "note": "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend."
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-27",
+          "status": "APPROVED",
+          "note": "Separates CASE_SCENARIO-Asset aus SA-2026-WIRKUNGSBILDER-FINAL-12-OF-12 byteverifiziert integriert; IMAGE_ASSET und FINAL_IMAGE_SIGNOFF sind APPROVED. Nichtbild-Folgen, Evidenz, Unsicherheit, Systemgrenze und Fallauswahl bleiben unverändert führend."
+        }
+      ]
+    }
+  ]
+}

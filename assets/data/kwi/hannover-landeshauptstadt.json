@@ -1,0 +1,2463 @@
+{
+  "schemaVersion": "kwi-beta-0.1",
+  "generatedAt": "2026-06-09T09:03:07.555888+00:00",
+  "source": {
+    "name": "SDG-Portal",
+    "url": "https://sdg-portal.de/de/",
+    "note": "HTML-Snapshot der oeffentlichen Kommune-Seite; Werte bleiben mit Quelle, Jahr und Richtung nachvollziehbar."
+  },
+  "method": {
+    "name": "Kommunaler Wirkungsindex Beta",
+    "weights": {
+      "Mensch": 0.4,
+      "Planet": 0.3,
+      "Demokratie": 0.3
+    },
+    "scoreNote": "Beta-Score: Vergleich zum Landesdurchschnitt plus Trendkorrektur, skaliert auf 0-100. Keine amtliche Statistik."
+  },
+  "municipality": {
+    "sdgPortalId": 236962,
+    "name": "Hannover, Landeshauptstadt",
+    "slug": "hannover-landeshauptstadt"
+  },
+  "summary": {
+    "kwiScore": 50.5,
+    "dimensions": {
+      "Mensch": {
+        "score": 48.7,
+        "indicatorCount": 33,
+        "availableCount": 33
+      },
+      "Planet": {
+        "score": 43.2,
+        "indicatorCount": 9,
+        "availableCount": 9
+      },
+      "Demokratie": {
+        "score": 60.3,
+        "indicatorCount": 3,
+        "availableCount": 3
+      }
+    },
+    "qualityCounts": {
+      "hoch": 28,
+      "mittel": 7,
+      "niedrig": 21
+    },
+    "indicatorCount": 56,
+    "scoredIndicatorCount": 45
+  },
+  "indicators": [
+    {
+      "id": "sdg1-sgb-ii-sgb-xii-quote",
+      "title": "SGB II-/ SGB XII-Quote (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 15.51,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 9.45,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 29.7,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Leistungsberechtigten nach SGB II) + (Anzahl der Leistungsberechtigten nach SGB XII)) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist nach dem SGB II und dem SGB XII leistungsberechtigt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 17.4
+        },
+        {
+          "year": 2014,
+          "value": 17.52
+        },
+        {
+          "year": 2016,
+          "value": 17.25
+        },
+        {
+          "year": 2017,
+          "value": 16.9
+        },
+        {
+          "year": 2018,
+          "value": 16.23
+        },
+        {
+          "year": 2019,
+          "value": 15.62
+        },
+        {
+          "year": 2020,
+          "value": 16.29
+        },
+        {
+          "year": 2021,
+          "value": 15.5
+        },
+        {
+          "year": 2022,
+          "value": 15.68
+        },
+        {
+          "year": 2023,
+          "value": 15.51
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg1-armut-kinderarmut",
+      "title": "Armut - Kinderarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 24.69,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 14.092,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 26.3,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der nicht-erwerbsfähigen Leistungsbezieher:innen unter 15 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften unter 15 Jahren)) / (Anzahl der Einwohner:innen im Alter von unter 15 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung unter 15 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Sozialgeld nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 28.45
+        },
+        {
+          "year": 2015,
+          "value": 29.021
+        },
+        {
+          "year": 2016,
+          "value": 26.91
+        },
+        {
+          "year": 2017,
+          "value": 26.25
+        },
+        {
+          "year": 2018,
+          "value": 26.72
+        },
+        {
+          "year": 2019,
+          "value": 25.9
+        },
+        {
+          "year": 2020,
+          "value": 26.2
+        },
+        {
+          "year": 2021,
+          "value": 25.15
+        },
+        {
+          "year": 2022,
+          "value": 25.59
+        },
+        {
+          "year": 2023,
+          "value": 24.69
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg1-armut-jugendarmut",
+      "title": "Armut - Jugendarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 23.35,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 12.7,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 21.1,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der Leistungsberechtigten im Alter von 15 bis 17 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften im Alter von 15 bis 17 Jahren)) / (Anzahl der Einwohner:innen im Alter von 15 bis 17 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Jugendlichen von 15 bis 17 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Leistungen nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 23.94
+        },
+        {
+          "year": 2015,
+          "value": 24.38
+        },
+        {
+          "year": 2016,
+          "value": 23.6
+        },
+        {
+          "year": 2017,
+          "value": 24.059
+        },
+        {
+          "year": 2018,
+          "value": 24.25
+        },
+        {
+          "year": 2019,
+          "value": 22.68
+        },
+        {
+          "year": 2020,
+          "value": 23.023
+        },
+        {
+          "year": 2021,
+          "value": 22.14
+        },
+        {
+          "year": 2022,
+          "value": 23.91
+        },
+        {
+          "year": 2023,
+          "value": 23.35
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg1-armut-altersarmut",
+      "title": "Armut - Altersarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 9.68,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 3.76,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Bezieher:innen von Grundsicherung im Alter ab 65 Jahren) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung erhält ab 65 Jahren Leistungen zur Grundsicherung im Alter nach SGB XII.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 7.15
+        },
+        {
+          "year": 2014,
+          "value": 7.48
+        },
+        {
+          "year": 2016,
+          "value": 7.62
+        },
+        {
+          "year": 2017,
+          "value": 7.83
+        },
+        {
+          "year": 2018,
+          "value": 7.86
+        },
+        {
+          "year": 2019,
+          "value": 7.98
+        },
+        {
+          "year": 2020,
+          "value": 8.21
+        },
+        {
+          "year": 2021,
+          "value": 8.55
+        },
+        {
+          "year": 2022,
+          "value": 9.18
+        },
+        {
+          "year": 2023,
+          "value": 9.68
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg1-wohnungslosigkeit",
+      "title": "Wohnungslosigkeit (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der untergebrachten wohnungslosen Einwohner:innen) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist wohnungslos.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg2-stickstoffueberschuss-der-landwirtschaft-kg-ha-landwirtschaftlich-genutzte-flaec",
+      "title": "Stickstoffüberschuss der Landwirtschaft (kg / ha landwirtschaftlich genutzte Fläche)",
+      "dimension": "Mensch",
+      "sdg": 2,
+      "sdgTitle": "Kein Hunger",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Universität Gießen, Umweltbundesamt",
+      "calculation": "(Stickstoffüberschuss im gleitenden Drei-Jahres-Mittel) / (Landwirtschaftlich genutzte Fläche) * 1.000",
+      "statement": "Der Stickstoffüberschuss liegt bei x kg pro Hektar landwirtschaftlich genutzter Fläche.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-hausarzt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Hausarzt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 349.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-krankenhaus-minuten",
+      "title": "Wohnungsnahe Grundversorgung - Krankenhaus (Minuten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 4.29,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2020",
+      "calculation": "Einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung",
+      "statement": "Die einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung beträgt x Minuten.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-apotheke-meter",
+      "title": "Wohnungsnahe Grundversorgung - Apotheke (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 451.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zur nächsten Apotheke",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Apotheke beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg3-personal-in-pflegediensten-personalschluessel-in-vollzeitaequivalenten",
+      "title": "Personal in Pflegediensten (Personalschlüssel in Vollzeitäquivalenten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 0.28,
+      "year": 2016,
+      "unit": "Personalschlüssel in Vollzeitäquivalenten",
+      "stateAverage": 0.12,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 98.2,
+      "quality": "niedrig",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Personal in ambulanten Pflegediensten) / ((Anzahl der ambulant Pflegebedürftigen) + (Anzahl der Pflegegeldempfänger:innen))",
+      "statement": "In ambulanten Pflegediensten sind x Beschäftigte (Vollzeitstellen) je pflegebedürftiger Person beschäftigt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.26
+        },
+        {
+          "year": 2014,
+          "value": 0.26
+        },
+        {
+          "year": 2015,
+          "value": 0.28
+        },
+        {
+          "year": 2016,
+          "value": 0.28
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg3-pflegeheimplaetze-verfuegbare-stationaere-plaetze-in-pflegeheimen-je-1-000-einwo",
+      "title": "Pflegeheimplätze (Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 74.32,
+      "year": 2016,
+      "unit": "Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre",
+      "stateAverage": 65.64,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 54.7,
+      "quality": "niedrig",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der verfügbaren voll- und teilstationären Plätze in Pflegeheimen) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 1.000",
+      "statement": "In Pflegeheimen sind x stationäre Plätze je 1.000 Einwohner:innen ab 65 Jahren vorhanden.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 74.033
+        },
+        {
+          "year": 2014,
+          "value": 74.033
+        },
+        {
+          "year": 2015,
+          "value": 74.32
+        },
+        {
+          "year": 2016,
+          "value": 74.32
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg3-luftschadstoffbelastung-g-m",
+      "title": "Luftschadstoffbelastung (µg / m³)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 7.27,
+      "year": 2023,
+      "unit": "µg / m³",
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "niedriger_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Umweltbundesamt, Bundesamt für Kartographie und Geodäsie Hinweis: Änderung der Definition und rückwirkende Anpassung der Daten: Die Feinstaubbelastung wird ab sofort mit dem maximalen Durchmesser von 2,5 μm (statt wie vormals mit 10 μm) angegeben.",
+      "calculation": "Jahresmittelwert Feinstaub (PM2,5) je Gebietseinheit",
+      "statement": "Die Konzentration von Feinstaub (PM2,5) in der Luft beträgt x µg / m³.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 14.11
+        },
+        {
+          "year": 2015,
+          "value": 11.55
+        },
+        {
+          "year": 2016,
+          "value": 11.21
+        },
+        {
+          "year": 2017,
+          "value": 10.19
+        },
+        {
+          "year": 2018,
+          "value": 10.65
+        },
+        {
+          "year": 2019,
+          "value": 9.11
+        },
+        {
+          "year": 2020,
+          "value": 7.96
+        },
+        {
+          "year": 2021,
+          "value": 9.11
+        },
+        {
+          "year": 2022,
+          "value": 8.71
+        },
+        {
+          "year": 2023,
+          "value": 7.27
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg3-vorzeitige-sterblichkeit-todesfaelle-je-1-000-einwohner-innen",
+      "title": "Vorzeitige Sterblichkeit (Todesfälle je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 2.42,
+      "year": 2023,
+      "unit": "Todesfälle je 1.000 Einwohner:innen",
+      "stateAverage": 2.68,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 54.2,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder Hinweis: Neuer Indikator - Vorzeitige Sterblichkeit wird ab sofort als gesamt für beide Geschlechter ausgewiesen. Zeitreihe rückwirkend berechnet.",
+      "calculation": "(Anzahl der Todesfälle bei Einwohner:innen im Alter von unter 70 Jahren) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Von 1.000 Personen unter 70 Jahren sind x vorzeitig verstorben.",
+      "timeseries": [
+        {
+          "year": 2018,
+          "value": 2.52
+        },
+        {
+          "year": 2019,
+          "value": 2.23
+        },
+        {
+          "year": 2020,
+          "value": 2.35
+        },
+        {
+          "year": 2021,
+          "value": 2.52
+        },
+        {
+          "year": 2022,
+          "value": 2.48
+        },
+        {
+          "year": 2023,
+          "value": 2.42
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg4-wohnungsnahe-grundversorgung-grundschule-meter",
+      "title": "Wohnungsnahe Grundversorgung - Grundschule (Meter)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 554.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz in m zur nächsten Grundschule",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Grundschule beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg4-schulabbrecherquote",
+      "title": "Schulabbrecherquote (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 3.13,
+      "year": 2021,
+      "unit": "%",
+      "stateAverage": 4.62,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 68.7,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Schulabgänger:innen allgemeinbildender Schulen ohne Hauptschulabschluss) / (Anzahl der Schulabgänger:innen allgemeinbildender Schulen insgesamt) * 100",
+      "statement": "Ein Anteil von x % der Schulabgänger:innen allgemeinbildender Schulen erreicht keinen Hauptschulabschluss.",
+      "timeseries": [
+        {
+          "year": 2017,
+          "value": 4.98
+        },
+        {
+          "year": 2018,
+          "value": 5.22
+        },
+        {
+          "year": 2019,
+          "value": 5.15
+        },
+        {
+          "year": 2021,
+          "value": 3.13
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg4-betreuung-von-kindern-unter-3-jaehrige",
+      "title": "Betreuung von Kindern - unter 3-jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 32.48,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 27.93,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 62.1,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Kinder im Alter von unter 3 Jahren in Tageseinrichtungen) / (Anzahl der Kinder im Alter von unter 3 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Kinder im Alter unter 3 Jahren wird in Tageseinrichtungen betreut.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 24.65
+        },
+        {
+          "year": 2015,
+          "value": 26.077
+        },
+        {
+          "year": 2016,
+          "value": 26.07
+        },
+        {
+          "year": 2017,
+          "value": 27.18
+        },
+        {
+          "year": 2018,
+          "value": 28.26
+        },
+        {
+          "year": 2019,
+          "value": 28.73
+        },
+        {
+          "year": 2020,
+          "value": 29.71
+        },
+        {
+          "year": 2021,
+          "value": 29.1
+        },
+        {
+          "year": 2022,
+          "value": 31.38
+        },
+        {
+          "year": 2023,
+          "value": 32.48
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg4-integrative-kindertageseinrichtungen",
+      "title": "Integrative Kindertageseinrichtungen (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der integrativen Kindertageseinrichtungen) / (Anzahl der Kindertageseinrichtungen) * 100",
+      "statement": "Ein Anteil von x % der Kindertageseinrichtungen ist integrativ.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg5-verhaeltnis-der-beschaeftigungsquoten-von-frauen-und-maennern",
+      "title": "Verhältnis der Beschäftigungsquoten von Frauen und Männern (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": 88.45,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 87.48,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 49.4,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherpflichtig beschäftigten Frauen am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Frauen im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten Männer am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Männer im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Frauenbeschäftigungsquote zur Männerbeschäftigungsquote beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 92.95
+        },
+        {
+          "year": 2015,
+          "value": 93.66
+        },
+        {
+          "year": 2016,
+          "value": 92.61
+        },
+        {
+          "year": 2017,
+          "value": 92.2
+        },
+        {
+          "year": 2018,
+          "value": 92.7
+        },
+        {
+          "year": 2019,
+          "value": 90.83
+        },
+        {
+          "year": 2020,
+          "value": 90.71
+        },
+        {
+          "year": 2021,
+          "value": 89.79
+        },
+        {
+          "year": 2022,
+          "value": 88.52
+        },
+        {
+          "year": 2023,
+          "value": 88.45
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg5-frauenanteil-im-stadtrat-gemeinderat-bzw-kreistag",
+      "title": "Frauenanteil im Stadtrat, Gemeinderat bzw. Kreistag (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der Frauen mit Mandaten im Stadtrat, Gemeinderat bzw. Kreistag) / (Anzahl der Mandate im Stadtrat, Gemeinderat bzw. Kreistag) * 100",
+      "statement": "Ein Anteil von x % der Mandate im Stadtrat, Gemeinderat bzw. Kreistag ist mit Frauen besetzt.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg6-abwasserbehandlung",
+      "title": "Abwasserbehandlung (%)",
+      "dimension": "Planet",
+      "sdg": 6,
+      "sdgTitle": "Sauberes Wasser und Sanitärversorgung",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Abwassermenge, die durch Denitrifikation und Phosphorelimination behandelt wird) / (Abwassermenge) * 100",
+      "statement": "Ein Anteil von x % des Abwassers wird mit Denitrifikation und Phosphorelimination behandelt.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg7-strom-aus-erneuerbaren-quellen-kw-je-einwohner-in",
+      "title": "Strom aus erneuerbaren Quellen (kW je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 0.17,
+      "year": 2023,
+      "unit": "kW je Einwohner:in",
+      "stateAverage": 2.56,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 25.3,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Installierte Nettonennleistung erneuerbaren Stroms aus Biomasse, solarer Strahlungsenergie, Wasser und Wind) / (Anzahl der Einwohner:innen)",
+      "statement": "Es sind erneuerbare Energieträger mit einer Nettonennleistung von insgesamt x Kilowattstunden installiert worden.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 0.053
+        },
+        {
+          "year": 2019,
+          "value": 0.19
+        },
+        {
+          "year": 2020,
+          "value": 0.2
+        },
+        {
+          "year": 2021,
+          "value": 0.2
+        },
+        {
+          "year": 2023,
+          "value": 0.17
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg7-ladesaeuleninfrastruktur-ladepunkte-je-1-000-einwohner-innen",
+      "title": "Ladesäuleninfrastruktur (Ladepunkte je 1.000 Einwohner:innen)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 2.26,
+      "year": 2023,
+      "unit": "Ladepunkte je 1.000 Einwohner:innen",
+      "stateAverage": 1.45,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 77.6,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der öffentlich zugänglichen Normal- und Schnellladepunkte ab 3,7 kW) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es gibt x öffentliche Normal- und Schnellladepunkte ab 3,7 kW je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.027
+        },
+        {
+          "year": 2015,
+          "value": 0.06
+        },
+        {
+          "year": 2016,
+          "value": 0.064
+        },
+        {
+          "year": 2017,
+          "value": 0.075
+        },
+        {
+          "year": 2018,
+          "value": 0.11
+        },
+        {
+          "year": 2019,
+          "value": 0.38
+        },
+        {
+          "year": 2020,
+          "value": 0.61
+        },
+        {
+          "year": 2021,
+          "value": 1.13
+        },
+        {
+          "year": 2022,
+          "value": 1.96
+        },
+        {
+          "year": 2023,
+          "value": 2.26
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg8-bruttoinlandsprodukt-je-einwohner-in",
+      "title": "Bruttoinlandsprodukt (€ je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 63732.7,
+      "year": 2017,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 41781.25,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 68.9,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Bruttoinlandsprodukt) / (Anzahl der Einwohner:innen)",
+      "statement": "Das Bruttoinlandprodukt je Einwohner:in beträgt x Euro.",
+      "timeseries": [
+        {
+          "year": 2016,
+          "value": 62228.68
+        },
+        {
+          "year": 2017,
+          "value": 63732.7
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg8-langzeitarbeitslosenquote",
+      "title": "Langzeitarbeitslosenquote (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 4.99,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 2.64,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 21.3,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Arbeitslosen mit Dauer der Arbeitslosigkeit > 1 Jahr) / ((Anzahl der Arbeitslosen) + (Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort)) * 100",
+      "statement": "Ein Anteil von x % der Erwerbspersonen ist länger als 1 Jahr arbeitslos.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 5.69
+        },
+        {
+          "year": 2015,
+          "value": 5.58
+        },
+        {
+          "year": 2016,
+          "value": 5.27
+        },
+        {
+          "year": 2017,
+          "value": 4.84
+        },
+        {
+          "year": 2018,
+          "value": 4.54
+        },
+        {
+          "year": 2019,
+          "value": 4.08
+        },
+        {
+          "year": 2020,
+          "value": 4.31
+        },
+        {
+          "year": 2021,
+          "value": 5.55
+        },
+        {
+          "year": 2022,
+          "value": 5.35
+        },
+        {
+          "year": 2023,
+          "value": 4.99
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-15-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 15- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 58.94,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 62.72,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 50.2,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 15 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 52.74
+        },
+        {
+          "year": 2015,
+          "value": 53.14
+        },
+        {
+          "year": 2016,
+          "value": 54.32
+        },
+        {
+          "year": 2017,
+          "value": 55.47
+        },
+        {
+          "year": 2018,
+          "value": 55.12
+        },
+        {
+          "year": 2019,
+          "value": 57.64
+        },
+        {
+          "year": 2020,
+          "value": 57.87
+        },
+        {
+          "year": 2021,
+          "value": 58.85
+        },
+        {
+          "year": 2022,
+          "value": 58.93
+        },
+        {
+          "year": 2023,
+          "value": 58.94
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-55-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 55- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 56.007,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 58.14,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 54.2,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 55 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 55 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 55 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 43.98
+        },
+        {
+          "year": 2015,
+          "value": 45.18
+        },
+        {
+          "year": 2016,
+          "value": 47.044
+        },
+        {
+          "year": 2017,
+          "value": 48.57
+        },
+        {
+          "year": 2018,
+          "value": 47.26
+        },
+        {
+          "year": 2019,
+          "value": 51.68
+        },
+        {
+          "year": 2020,
+          "value": 52.95
+        },
+        {
+          "year": 2021,
+          "value": 54.017
+        },
+        {
+          "year": 2022,
+          "value": 55.011
+        },
+        {
+          "year": 2023,
+          "value": 56.007
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg8-erwerbstaetige-aufstocker-innen",
+      "title": "Erwerbstätige Aufstocker:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 23.0,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 21.51,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 52.0,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Aktualisierung auf Bürgergeldbezieher:innen",
+      "calculation": "(Anzahl der erwerbstätigen Bürgergeld-Bezieher:innen) / (Anzahl der erwerbsfähigen Bürgergeld-Bezieher:innen) * 100",
+      "statement": "Ein Anteil von x % der erwerbsfähigen Leistungsbezieher:innen ist zusätzlich zum Bürgergeld-Bezug erwerbstätig.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 29.5
+        },
+        {
+          "year": 2015,
+          "value": 28.95
+        },
+        {
+          "year": 2016,
+          "value": 28.36
+        },
+        {
+          "year": 2017,
+          "value": 28.49
+        },
+        {
+          "year": 2018,
+          "value": 28.29
+        },
+        {
+          "year": 2019,
+          "value": 28.6
+        },
+        {
+          "year": 2020,
+          "value": 24.76
+        },
+        {
+          "year": 2021,
+          "value": 25.55
+        },
+        {
+          "year": 2022,
+          "value": 22.89
+        },
+        {
+          "year": 2023,
+          "value": 23.0
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg9-existenzgruendungen-neuerrichtungen-je-1-000-einwohner-innen",
+      "title": "Existenzgründungen (Neuerrichtungen je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 7.5,
+      "year": 2023,
+      "unit": "Neuerrichtungen je 1.000 Einwohner:innen",
+      "stateAverage": 6.73,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 55.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Neuerrichtungen von Gewerbebetrieben) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Gewerbebetriebe neu errichtet.",
+      "timeseries": [
+        {
+          "year": 2017,
+          "value": 6.99
+        },
+        {
+          "year": 2018,
+          "value": 7.1
+        },
+        {
+          "year": 2019,
+          "value": 8.35
+        },
+        {
+          "year": 2020,
+          "value": 6.59
+        },
+        {
+          "year": 2021,
+          "value": 6.76
+        },
+        {
+          "year": 2022,
+          "value": 6.66
+        },
+        {
+          "year": 2023,
+          "value": 7.5
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg9-breitbandversorgung-private-haushalte",
+      "title": "Breitbandversorgung - Private Haushalte (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 99.03,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 87.57,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 55.8,
+      "quality": "mittel",
+      "source": "Bundesministeriums für Verkehr und digitale Infrastruktur, Statistische Ämter der Länder Hinweis: Erhöhung der Bitrate - auch rückwirkend - von 50 Mbit/s auf 100 Mbit/s.",
+      "calculation": "(Anzahl der Haushalte mit Breitbandversorgung (≥ 100 Mbit/s)) / (Anzahl der Haushalte) * 100",
+      "statement": "Der Anteil der Haushalte, die eine Bandbreite von mindestens 100 Mbit/s nutzen können, beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2017,
+          "value": 93.33
+        },
+        {
+          "year": 2020,
+          "value": 98.78
+        },
+        {
+          "year": 2021,
+          "value": 98.97
+        },
+        {
+          "year": 2022,
+          "value": 99.03
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg9-hochqualifizierte-am-arbeitsort",
+      "title": "Hochqualifizierte am Arbeitsort (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 25.28,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 14.91,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 81.6,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten mit akademischen Berufsabschluss am Arbeitsort) / (Anzahl der sozialversicherungspflichtig Beschäftigten am Arbeitsort) * 100",
+      "statement": "Einen akademischen Berufsabschluss haben x % der sozialversicherungspflichtig Beschäftigten (SvB).",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 18.56
+        },
+        {
+          "year": 2015,
+          "value": 19.12
+        },
+        {
+          "year": 2016,
+          "value": 19.94
+        },
+        {
+          "year": 2017,
+          "value": 20.75
+        },
+        {
+          "year": 2018,
+          "value": 21.52
+        },
+        {
+          "year": 2019,
+          "value": 22.35
+        },
+        {
+          "year": 2020,
+          "value": 23.17
+        },
+        {
+          "year": 2021,
+          "value": 23.98
+        },
+        {
+          "year": 2022,
+          "value": 24.75
+        },
+        {
+          "year": 2023,
+          "value": 25.28
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg10-beschaeftigungsquote-auslaender-innen",
+      "title": "Beschäftigungsquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 82.27,
+      "year": 2021,
+      "unit": "%",
+      "stateAverage": 77.72,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 55.8,
+      "quality": "mittel",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherungspflichtig Beschäftigten ohne deutsche Staatsbürgerschaft am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Beschäftigungsquote von Ausländer:innen zur Beschäftigungsquote in der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 69.4
+        },
+        {
+          "year": 2014,
+          "value": 70.4
+        },
+        {
+          "year": 2015,
+          "value": 70.29
+        },
+        {
+          "year": 2016,
+          "value": 73.43
+        },
+        {
+          "year": 2017,
+          "value": 75.23
+        },
+        {
+          "year": 2019,
+          "value": 79.52
+        },
+        {
+          "year": 2020,
+          "value": 80.94
+        },
+        {
+          "year": 2021,
+          "value": 82.27
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg10-schulabbrecherquote-auslaender-innen",
+      "title": "Schulabbrecherquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 246.59,
+      "year": 2021,
+      "unit": "%",
+      "stateAverage": 374.4,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 62.7,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Schulabgänger:innen ohne deutsche Staatsbürgerschaft und ohne Hauptschulabschluss) / (Anzahl Schulabgänger:innen ohne deutsche Staatsbürgerschaft insgesamt)) / ((Anzahl Schulabgänger:innen ohne Hauptschulabschluss insgesamt) / (Anzahl Schulabgänger:innen insgesamt)) * 100",
+      "statement": "Das Verhältnis der Schulabbrecher:innenquote von Ausländer:innen zur Schulabbrecher:innenquote innerhalb der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2017,
+          "value": 256.22
+        },
+        {
+          "year": 2018,
+          "value": 277.95
+        },
+        {
+          "year": 2019,
+          "value": 328.77
+        },
+        {
+          "year": 2021,
+          "value": 246.59
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg10-einbuergerungen",
+      "title": "Einbürgerungen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 1.09,
+      "year": 2020,
+      "unit": "%",
+      "stateAverage": 1.76,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 28.7,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Einbürgerungen im jeweiligen Jahr) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft des Vorjahres) * 100",
+      "statement": "Ein Anteil von x Prozent der ausländischen Bevölkerung hat die deutsche Staatsbürgerschaft erhalten.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 1.91
+        },
+        {
+          "year": 2014,
+          "value": 1.89
+        },
+        {
+          "year": 2017,
+          "value": 1.53
+        },
+        {
+          "year": 2018,
+          "value": 1.24
+        },
+        {
+          "year": 2019,
+          "value": 1.47
+        },
+        {
+          "year": 2020,
+          "value": 1.09
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-mietpreise-m",
+      "title": "Mietpreise (€ / m²)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung Hinweis: Rückwirkende Anpassung der Zeitreihe auf Durchschnittswerte ohne Klassifizierung.",
+      "calculation": "Durchschnittliche nettokalte Angebotsmiete je m²",
+      "statement": "Die durchschnittliche Nettokaltmiete beträgt x Euro je Quadratmeter",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-wohnflaeche-m-je-einwohner-in",
+      "title": "Wohnfläche (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 41.84,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 50.27,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 55.7,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Wohnfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Je Person stehen im Durchschnitt x Quadratmeter Wohnfläche zur Verfügung.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 41.42
+        },
+        {
+          "year": 2015,
+          "value": 41.018
+        },
+        {
+          "year": 2016,
+          "value": 41.13
+        },
+        {
+          "year": 2017,
+          "value": 41.13
+        },
+        {
+          "year": 2018,
+          "value": 41.096
+        },
+        {
+          "year": 2019,
+          "value": 41.39
+        },
+        {
+          "year": 2020,
+          "value": 41.8
+        },
+        {
+          "year": 2021,
+          "value": 41.85
+        },
+        {
+          "year": 2022,
+          "value": 41.55
+        },
+        {
+          "year": 2023,
+          "value": 41.84
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-wohnungsnahe-grundversorgung-supermarkt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Supermarkt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 359.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-pkw-dichte-pkw-je-1-000-einwohner-innen",
+      "title": "PKW-Dichte (PKW je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 405.29,
+      "year": 2019,
+      "unit": "PKW je 1.000 Einwohner:innen",
+      "stateAverage": 603.41,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 61.3,
+      "quality": "niedrig",
+      "source": "Kraftfahrtbundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Personenkraftwagen) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Die PKW-Dichte liegt bei x PKW je 1.000 Einwohner:innen.",
+      "timeseries": [
+        {
+          "year": 2018,
+          "value": 402.34
+        },
+        {
+          "year": 2019,
+          "value": 405.29
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-pkw-mit-elektroantrieb",
+      "title": "PKW mit Elektroantrieb (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Kraftfahrtbundesamt Hinweis: Rückwirkende Neuberechnung der Zeitreihe: Der Indikator umfasst keine Plug-In-Hybride mehr.",
+      "calculation": "(Anzahl der zugelassenen Personenkraftwagen mit Elektroantrieb) / (Anzahl der zugelassenen Personenkraftwagen) * 100",
+      "statement": "Der Anteil zugelassener Personenkraftwagen mit Elektroantrieb an allen zugelassenen Personenkraftwagen liegt bei x %.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-verunglueckte-im-verkehr-verunglueckte-je-1-000-einwohner-innen",
+      "title": "Verunglückte im Verkehr (Verunglückte je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 6.3,
+      "year": 2023,
+      "unit": "Verunglückte je 1.000 Einwohner:innen",
+      "stateAverage": 5.12,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 42.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der verletzten oder getöteten Personen bei Verkehrsunfällen) / (Anzahl Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Personen in Verkehrsunfällen verletzt oder getötet.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 6.49
+        },
+        {
+          "year": 2014,
+          "value": 6.91
+        },
+        {
+          "year": 2015,
+          "value": 6.55
+        },
+        {
+          "year": 2016,
+          "value": 6.2
+        },
+        {
+          "year": 2017,
+          "value": 6.02
+        },
+        {
+          "year": 2018,
+          "value": 6.33
+        },
+        {
+          "year": 2020,
+          "value": 5.81
+        },
+        {
+          "year": 2021,
+          "value": 5.58
+        },
+        {
+          "year": 2022,
+          "value": 5.83
+        },
+        {
+          "year": 2023,
+          "value": 6.3
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-flaecheninanspruchnahme",
+      "title": "Flächeninanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 69.79,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 14.71,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Gesamtfläche) * 100",
+      "statement": "Der Anteil der Siedlungs- und Verkehrsfläche an der Gesamtfläche beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 68.66
+        },
+        {
+          "year": 2015,
+          "value": 68.68
+        },
+        {
+          "year": 2016,
+          "value": 69.72
+        },
+        {
+          "year": 2017,
+          "value": 69.54
+        },
+        {
+          "year": 2018,
+          "value": 69.71
+        },
+        {
+          "year": 2019,
+          "value": 69.77
+        },
+        {
+          "year": 2020,
+          "value": 69.88
+        },
+        {
+          "year": 2021,
+          "value": 69.85
+        },
+        {
+          "year": 2022,
+          "value": 69.86
+        },
+        {
+          "year": 2023,
+          "value": 69.79
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-flaechenneuinanspruchnahme",
+      "title": "Flächenneuinanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": -0.069,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 0.019,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 100.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Änderung der Siedlungs- und Verkehrsfläche im Vergleich zum Vorjahr) / (Gesamtfläche) * 100",
+      "statement": "Die prozentuale Änderungsrate von Siedlungs- und Verkehrsflächen beträgt im Vergleich zum Vorjahr x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.01
+        },
+        {
+          "year": 2015,
+          "value": 0.015
+        },
+        {
+          "year": 2016,
+          "value": 1.092
+        },
+        {
+          "year": 2017,
+          "value": -0.18
+        },
+        {
+          "year": 2018,
+          "value": 0.17
+        },
+        {
+          "year": 2019,
+          "value": 0.064
+        },
+        {
+          "year": 2020,
+          "value": 0.11
+        },
+        {
+          "year": 2021,
+          "value": -0.029
+        },
+        {
+          "year": 2022,
+          "value": 0.015
+        },
+        {
+          "year": 2023,
+          "value": -0.069
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-flaechennutzungsintensitaet-m-je-einwohner-in",
+      "title": "Flächennutzungsintensität (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 260.11,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 859.94,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 25.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "In der Kommune werden x Quadratmeter Siedlungs- und Verkehrsfläche pro Einwohner:in genutzt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 267.68
+        },
+        {
+          "year": 2015,
+          "value": 263.45
+        },
+        {
+          "year": 2016,
+          "value": 267.29
+        },
+        {
+          "year": 2017,
+          "value": 265.52
+        },
+        {
+          "year": 2018,
+          "value": 264.67
+        },
+        {
+          "year": 2019,
+          "value": 265.47
+        },
+        {
+          "year": 2020,
+          "value": 267.32
+        },
+        {
+          "year": 2021,
+          "value": 266.27
+        },
+        {
+          "year": 2022,
+          "value": 261.87
+        },
+        {
+          "year": 2023,
+          "value": 260.11
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-naherholungsflaechen-m-je-einwohner-in",
+      "title": "Naherholungsflächen (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 51.22,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 67.35,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 42.4,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Erholungsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Auf eine/n Einwohner:in kommen x m² Erholungsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 49.29
+        },
+        {
+          "year": 2015,
+          "value": 48.46
+        },
+        {
+          "year": 2016,
+          "value": 53.86
+        },
+        {
+          "year": 2017,
+          "value": 52.78
+        },
+        {
+          "year": 2018,
+          "value": 52.39
+        },
+        {
+          "year": 2019,
+          "value": 52.69
+        },
+        {
+          "year": 2020,
+          "value": 52.92
+        },
+        {
+          "year": 2021,
+          "value": 52.82
+        },
+        {
+          "year": 2022,
+          "value": 51.94
+        },
+        {
+          "year": 2023,
+          "value": 51.22
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg11-fertiggestellte-wohngebaeude-mit-erneuerbarer-heizenergie",
+      "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie (%)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 26.1,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 61.47,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 21.9,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der neu errichteten Wohngebäude mit erneuerbarer Heizenergie) / (Anzahl der neu errichteten Wohngebäude) * 100",
+      "statement": "Der Anteil fertiggestellter Wohngebäude mit erneuerbarer Heizenergie an neu errichteten Wohngebäuden beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 45.16
+        },
+        {
+          "year": 2016,
+          "value": 42.57
+        },
+        {
+          "year": 2017,
+          "value": 25.99
+        },
+        {
+          "year": 2018,
+          "value": 80.92
+        },
+        {
+          "year": 2020,
+          "value": 5.55
+        },
+        {
+          "year": 2021,
+          "value": 38.12
+        },
+        {
+          "year": 2022,
+          "value": 30.11
+        },
+        {
+          "year": 2023,
+          "value": 26.1
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg12-trinkwasserverbrauch-private-haushalte-liter-je-einwohner-in-und-tag",
+      "title": "Trinkwasserverbrauch - Private Haushalte (Liter je Einwohner:in und Tag)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": 137.54,
+      "year": 2023,
+      "unit": "Liter je Einwohner:in und Tag",
+      "stateAverage": 130.7,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 48.9,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Jährlicher Trinkwasserverbrauch (Haushalte und Kleingewerbe)) / ((Anzahl der Einwohner:innen) * (Anzahl der Tage pro Jahr))",
+      "statement": "Je Einwohner:in und Tag wurden durchschnittlich x Liter Wasser verbraucht.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 142.97
+        },
+        {
+          "year": 2014,
+          "value": 141.53
+        },
+        {
+          "year": 2015,
+          "value": 139.27
+        },
+        {
+          "year": 2016,
+          "value": 145.91
+        },
+        {
+          "year": 2017,
+          "value": 145.71
+        },
+        {
+          "year": 2018,
+          "value": 144.9
+        },
+        {
+          "year": 2022,
+          "value": 138.33
+        },
+        {
+          "year": 2023,
+          "value": 137.54
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg12-abfallmenge-t-je-einwohner-in",
+      "title": "Abfallmenge (t je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Aufkommen an Haushaltsabfällen (ohne Elektroaltgeräte)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die entsorgte Menge an Haushaltsabfällen beträgt x Tonnen je Einwohner:in.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg13-siedlungslast-im-ueberschwemmungsgebiet",
+      "title": "Siedlungslast im Überschwemmungsgebiet (%)",
+      "dimension": "Planet",
+      "sdg": 13,
+      "sdgTitle": "Maßnahmen zum Klimaschutz",
+      "value": 17.3,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 3.7,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Leibniz-Institut für Ökologische Raumentwicklung, jeweils zuständige Landesbehörden",
+      "calculation": "(Baulich geprägte Siedlungs- und Verkehrsfläche im amtlich festgesetzten Überschwemmungsgebiet) / (Fläche des festgesetzten Überschwemmungsgebietes in der Gebietseinheit) * 100",
+      "statement": "Ein Anteil von x % der Fläche des festgesetzten Überschwemmungsgebietes in der Kommune ist baulich geprägte Siedlungs- und Verkehrsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 16.8
+        },
+        {
+          "year": 2015,
+          "value": 16.8
+        },
+        {
+          "year": 2016,
+          "value": 17.0
+        },
+        {
+          "year": 2017,
+          "value": 16.9
+        },
+        {
+          "year": 2018,
+          "value": 17.0
+        },
+        {
+          "year": 2019,
+          "value": 17.0
+        },
+        {
+          "year": 2020,
+          "value": 17.0
+        },
+        {
+          "year": 2021,
+          "value": 17.5
+        },
+        {
+          "year": 2022,
+          "value": 17.5
+        },
+        {
+          "year": 2023,
+          "value": 17.3
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg14-fliessgewaesserqualitaet",
+      "title": "Fließgewässerqualität (%)",
+      "dimension": "Planet",
+      "sdg": 14,
+      "sdgTitle": "Leben unter Wasser",
+      "value": 8.25,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesanstalt für Gewässerkunde (BfG), Bundesamt für Kartographie und Geodäsie",
+      "calculation": "(Länge der Fließgewässer mit einer ökologischen Zustandsbewertung „sehr gut“ oder „gut“) / (Länge der Fließgewässer in der Gebietseinheit) * 100",
+      "statement": "Der Zustand von x % der Länge von Fließgewässern an der Gesamtfließgewässerlänge ist mit mindestens „gut“ bewertet.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg15-naturschutzflaechen",
+      "title": "Naturschutzflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 4.7,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 11.7,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 29.5,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "(Fläche Natura 2000-Gebiete, Naturschutzgebiete und Nationalparke) / (Gesamtfläche) * 100",
+      "statement": "Natura 2000-Gebiete, Naturschutzgebiete oder Nationalparks sind auf x % der Gesamtfläche der Kommune ausgewiesen.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 4.6
+        },
+        {
+          "year": 2014,
+          "value": 4.6
+        },
+        {
+          "year": 2015,
+          "value": 4.5
+        },
+        {
+          "year": 2016,
+          "value": 4.5
+        },
+        {
+          "year": 2017,
+          "value": 4.6
+        },
+        {
+          "year": 2018,
+          "value": 4.6
+        },
+        {
+          "year": 2019,
+          "value": 4.7
+        },
+        {
+          "year": 2022,
+          "value": 4.7
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg15-landschaftsqualitaet-hemerobiewert",
+      "title": "Landschaftsqualität (Hemerobiewert)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 5.23,
+      "year": 2021,
+      "unit": "Hemerobiewert",
+      "stateAverage": 4.32,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 57.2,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "Flächengewichteter Mittelwert der Hemerobiestufen 1 \"ahemerob\" (nicht kulturbeeinflusst) bis 7 \"metahemerob\" (übermäßig stark kulturbeeinflusst / Biozönose zerstört) je Gebietseinheit",
+      "statement": "Das Maß des menschlichen Eingriffes auf den Naturhaushalt der Kommune wird mit Stufe x des Hemerobieindex bewertet.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 5.27
+        },
+        {
+          "year": 2018,
+          "value": 5.21
+        },
+        {
+          "year": 2021,
+          "value": 5.23
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg15-unzerschnittene-freiraumflaechen",
+      "title": "Unzerschnittene Freiraumflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundesamt für Kartographie und Geodäsie, Leibniz-Institut für ökologische Raumentwicklung",
+      "calculation": "(Freiraumflächen (außerhalb Ortslagen) > 50 km², die nicht durch Trassen des überörtlichen Verkehrsnetzes zerschnitten sind) / (Gesamtfläche) * 100",
+      "statement": "Ein Anteil von x % der Freiraumflächen sind unzerschnitten durch Trassen des überörtlichen Verkehrsnetzes.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg16-straftaten-straftaten-je-1-000-einwohner-innen",
+      "title": "Straftaten (Straftaten je 1.000 Einwohner:innen)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundeskriminalamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der polizeilich bekanntgewordenen Straftaten) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es sind x Straftaten je 1.000 Einwohner:innen polizeilich bekannt.",
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg16-finanzmittelsaldo-je-einwohner-in",
+      "title": "Finanzmittelsaldo (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 270.0,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": -107.0,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 100.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Primärsaldo) + (Finanzsaldo) + (Investitionssaldo)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune konnte ihre gesamten Aufgaben mit einem Überschuss / Defizit in Höhe von x Euro je Einwohner:in abschließen.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": -216.0
+        },
+        {
+          "year": 2015,
+          "value": 59.0
+        },
+        {
+          "year": 2016,
+          "value": -119.0
+        },
+        {
+          "year": 2017,
+          "value": -150.0
+        },
+        {
+          "year": 2018,
+          "value": 224.0
+        },
+        {
+          "year": 2019,
+          "value": -193.0
+        },
+        {
+          "year": 2020,
+          "value": -240.0
+        },
+        {
+          "year": 2021,
+          "value": -369.0
+        },
+        {
+          "year": 2022,
+          "value": -572.0
+        },
+        {
+          "year": 2023,
+          "value": 270.0
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg16-steuereinnahmen-je-einwohner-in",
+      "title": "Steuereinnahmen (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 2301.5,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 1365.93,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 80.9,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Steuereinnahmen (= Grundsteuer A + Grundsteuer B + Gewerbesteuer + Gemeindeanteil an Einkommensteuer + Gemeindeanteil an Umsatzsteuer) gemittelt über die letzten 4 Jahre) / (Anzahl der Einwohner:innen gemittelt über die letzten 4 Jahre)",
+      "statement": "Die über die letzten 4 Jahre gemittelten Steuereinnahmen einer Kommune betragen im Durchschnitt x Euro je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 1708.54
+        },
+        {
+          "year": 2015,
+          "value": 1753.31
+        },
+        {
+          "year": 2016,
+          "value": 1772.89
+        },
+        {
+          "year": 2017,
+          "value": 1869.17
+        },
+        {
+          "year": 2018,
+          "value": 2044.96
+        },
+        {
+          "year": 2019,
+          "value": 2174.095
+        },
+        {
+          "year": 2020,
+          "value": 2164.78
+        },
+        {
+          "year": 2021,
+          "value": 2196.69
+        },
+        {
+          "year": 2022,
+          "value": 2148.92
+        },
+        {
+          "year": 2023,
+          "value": 2301.5
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg16-liquiditaetskredite-je-einwohner-in",
+      "title": "Liquiditätskredite (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 603.0,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 176.0,
+      "stateAverageLabel": "Niedersachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Liquiditäts-/Kassenkredite im Kernhaushalt) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune hat im Kernhaushalt Liquiditätskredite in Höhe von x Euro je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 197.0
+        },
+        {
+          "year": 2015,
+          "value": 42.0
+        },
+        {
+          "year": 2016,
+          "value": 100.0
+        },
+        {
+          "year": 2017,
+          "value": 114.0
+        },
+        {
+          "year": 2018,
+          "value": 159.0
+        },
+        {
+          "year": 2019,
+          "value": 46.0
+        },
+        {
+          "year": 2020,
+          "value": 214.0
+        },
+        {
+          "year": 2021,
+          "value": 445.0
+        },
+        {
+          "year": 2022,
+          "value": 947.0
+        },
+        {
+          "year": 2023,
+          "value": 603.0
+        }
+      ],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    },
+    {
+      "id": "sdg17-fuer-dieses-ziel-liegen-derzeit-keine-indikatorendaten-vor",
+      "title": "Für dieses Ziel liegen derzeit keine Indikatorendaten vor.",
+      "dimension": "Demokratie",
+      "sdg": 17,
+      "sdgTitle": "Partnerschaften zur Erreichung der Ziele",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": null,
+      "calculation": null,
+      "statement": null,
+      "timeseries": [],
+      "portalTitle": "Hannover, Landeshauptstadt"
+    }
+  ]
+}

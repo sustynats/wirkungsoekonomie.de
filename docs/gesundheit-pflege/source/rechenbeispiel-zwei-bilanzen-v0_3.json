@@ -1,0 +1,8 @@
+{
+  "title": "Vereinfachte Beispielrechnung: zwei Bilanzen, keine Mischzahl",
+  "label": "Modellwert, keine Prognose und keine medizinische Einzelfallentscheidung.",
+  "assumptions": "Preisbasis 2026, Betrachtungszeitraum ein Jahr. Die Maßnahme kostet zum Startzeitpunkt t = 0 200.000 EUR. Für t = 1 werden gegenüber einem dokumentierten Vergleichsfall 150.000 EUR Behandlungskosten und 90.000 EUR Pflegekosten vermieden; 20.000 EUR belegte Nebenwirkungs- und Verlagerungskosten bleiben im Abzug. Alle Geldwerte sind real in EUR 2026. Der Diskontsatz beträgt r = 3 %. Nicht ausreichend zurechenbare oder nicht belastbar monetarisierte Beträge werden nicht angesetzt.",
+  "monetary": "Monetäre Bilanz: B_EUR = -200.000 + (150.000 + 90.000 - 20.000) / 1,03 = +13.592,23 EUR (gerundet +13.592 EUR). Das ist ein diskontierter Modell-Geldsaldo, nicht der Wert eines Menschen und nicht der Beweis für positive Netto-Wirkung.",
+  "profile": "Nichtmonetäres Wirkungsprofil: Der Anteil der Teilnehmenden mit einem zeitnahen Versorgungszugang steigt gegenüber dem Vergleichsfall von 52 % auf 60 %; Δ Zugang = +8 Prozentpunkte. Die 1.000 erreichten Personen sind nur Reichweite. Wirkung ist die gemessene Zustandsveränderung von +8 Prozentpunkten, mit Quelle, Vergleichsfall, Zeitraum, Attribution und Unsicherheit. Diese +8 Prozentpunkte werden weder in EUR umgerechnet noch mit dem Geldsaldo verrechnet.",
+  "gate": "Schutz-Gate: Wird eine rote Linie, eine schwere Verschlechterung oder eine unvertretbare Datenlücke festgestellt, lautet das Ergebnis trotz des positiven Geldsaldos \"blockiert / nicht bewertbar\". Ein vermiedener Geldbetrag kompensiert keinen Gesundheitsschaden, keine Diskriminierung und keine Rechtsverletzung."
+}

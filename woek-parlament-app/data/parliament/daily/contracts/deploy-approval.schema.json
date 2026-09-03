@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/parliament-deploy-approval-1.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["review_id", "input_delivery_id", "input_hash", "created_at", "approved_object_ids"],
+  "properties": {
+    "review_id": { "type": "string", "minLength": 4 },
+    "input_delivery_id": { "type": "string", "minLength": 4 },
+    "input_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "approved_object_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "excluded_object_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

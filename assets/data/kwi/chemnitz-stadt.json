@@ -1,0 +1,2976 @@
+{
+  "schemaVersion": "kwi-beta-0.1",
+  "generatedAt": "2026-06-09T09:03:16.589535+00:00",
+  "source": {
+    "name": "SDG-Portal",
+    "url": "https://sdg-portal.de/de/",
+    "note": "HTML-Snapshot der oeffentlichen Kommune-Seite; Werte bleiben mit Quelle, Jahr und Richtung nachvollziehbar."
+  },
+  "method": {
+    "name": "Kommunaler Wirkungsindex Beta",
+    "weights": {
+      "Mensch": 0.4,
+      "Planet": 0.3,
+      "Demokratie": 0.3
+    },
+    "scoreNote": "Beta-Score: Vergleich zum Landesdurchschnitt plus Trendkorrektur, skaliert auf 0-100. Keine amtliche Statistik."
+  },
+  "municipality": {
+    "sdgPortalId": 255754,
+    "name": "Chemnitz, Stadt",
+    "slug": "chemnitz-stadt"
+  },
+  "summary": {
+    "kwiScore": 52.5,
+    "dimensions": {
+      "Mensch": {
+        "score": 48.7,
+        "indicatorCount": 38,
+        "availableCount": 38
+      },
+      "Planet": {
+        "score": 38.1,
+        "indicatorCount": 11,
+        "availableCount": 11
+      },
+      "Demokratie": {
+        "score": 71.8,
+        "indicatorCount": 4,
+        "availableCount": 4
+      }
+    },
+    "qualityCounts": {
+      "hoch": 38,
+      "mittel": 9,
+      "niedrig": 9
+    },
+    "indicatorCount": 56,
+    "scoredIndicatorCount": 53
+  },
+  "indicators": [
+    {
+      "id": "sdg1-sgb-ii-sgb-xii-quote",
+      "title": "SGB II-/ SGB XII-Quote (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 12.84,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 8.85,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 36.6,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Leistungsberechtigten nach SGB II) + (Anzahl der Leistungsberechtigten nach SGB XII)) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist nach dem SGB II und dem SGB XII leistungsberechtigt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 14.56
+        },
+        {
+          "year": 2015,
+          "value": 13.53
+        },
+        {
+          "year": 2016,
+          "value": 13.57
+        },
+        {
+          "year": 2017,
+          "value": 13.43
+        },
+        {
+          "year": 2018,
+          "value": 12.64
+        },
+        {
+          "year": 2019,
+          "value": 11.64
+        },
+        {
+          "year": 2020,
+          "value": 11.47
+        },
+        {
+          "year": 2021,
+          "value": 10.61
+        },
+        {
+          "year": 2022,
+          "value": 11.64
+        },
+        {
+          "year": 2023,
+          "value": 12.84
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg1-armut-kinderarmut",
+      "title": "Armut - Kinderarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 19.78,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 12.25,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 30.8,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der nicht-erwerbsfähigen Leistungsbezieher:innen unter 15 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften unter 15 Jahren)) / (Anzahl der Einwohner:innen im Alter von unter 15 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung unter 15 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Sozialgeld nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 22.35
+        },
+        {
+          "year": 2015,
+          "value": 20.67
+        },
+        {
+          "year": 2016,
+          "value": 19.67
+        },
+        {
+          "year": 2017,
+          "value": 19.036
+        },
+        {
+          "year": 2018,
+          "value": 20.2
+        },
+        {
+          "year": 2019,
+          "value": 18.48
+        },
+        {
+          "year": 2020,
+          "value": 17.5
+        },
+        {
+          "year": 2021,
+          "value": 16.008
+        },
+        {
+          "year": 2022,
+          "value": 18.009
+        },
+        {
+          "year": 2023,
+          "value": 19.78
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg1-armut-jugendarmut",
+      "title": "Armut - Jugendarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 17.17,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 10.56,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 30.1,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der Leistungsberechtigten im Alter von 15 bis 17 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften im Alter von 15 bis 17 Jahren)) / (Anzahl der Einwohner:innen im Alter von 15 bis 17 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Jugendlichen von 15 bis 17 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Leistungen nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 19.11
+        },
+        {
+          "year": 2015,
+          "value": 16.55
+        },
+        {
+          "year": 2016,
+          "value": 15.22
+        },
+        {
+          "year": 2017,
+          "value": 15.14
+        },
+        {
+          "year": 2018,
+          "value": 15.22
+        },
+        {
+          "year": 2019,
+          "value": 13.93
+        },
+        {
+          "year": 2020,
+          "value": 13.046
+        },
+        {
+          "year": 2021,
+          "value": 13.31
+        },
+        {
+          "year": 2022,
+          "value": 15.73
+        },
+        {
+          "year": 2023,
+          "value": 17.17
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg1-armut-altersarmut",
+      "title": "Armut - Altersarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 2.4,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 1.62,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 25.2,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Bezieher:innen von Grundsicherung im Alter ab 65 Jahren) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung erhält ab 65 Jahren Leistungen zur Grundsicherung im Alter nach SGB XII.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 1.72
+        },
+        {
+          "year": 2015,
+          "value": 1.7
+        },
+        {
+          "year": 2016,
+          "value": 1.55
+        },
+        {
+          "year": 2017,
+          "value": 1.58
+        },
+        {
+          "year": 2018,
+          "value": 1.59
+        },
+        {
+          "year": 2019,
+          "value": 1.59
+        },
+        {
+          "year": 2020,
+          "value": 1.57
+        },
+        {
+          "year": 2021,
+          "value": 1.68
+        },
+        {
+          "year": 2022,
+          "value": 2.19
+        },
+        {
+          "year": 2023,
+          "value": 2.4
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg1-wohnungslosigkeit",
+      "title": "Wohnungslosigkeit (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 0.11,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 0.072,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 23.5,
+      "quality": "hoch",
+      "source": "Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der untergebrachten wohnungslosen Einwohner:innen) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist wohnungslos.",
+      "timeseries": [
+        {
+          "year": 2022,
+          "value": 0.074
+        },
+        {
+          "year": 2023,
+          "value": 0.11
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg2-stickstoffueberschuss-der-landwirtschaft-kg-ha-landwirtschaftlich-genutzte-flaec",
+      "title": "Stickstoffüberschuss der Landwirtschaft (kg / ha landwirtschaftlich genutzte Fläche)",
+      "dimension": "Mensch",
+      "sdg": 2,
+      "sdgTitle": "Kein Hunger",
+      "value": 39.67,
+      "year": 2021,
+      "unit": "kg / ha landwirtschaftlich genutzte Fläche",
+      "stateAverage": 28.54,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 43.6,
+      "quality": "mittel",
+      "source": "Universität Gießen, Umweltbundesamt",
+      "calculation": "(Stickstoffüberschuss im gleitenden Drei-Jahres-Mittel) / (Landwirtschaftlich genutzte Fläche) * 1.000",
+      "statement": "Der Stickstoffüberschuss liegt bei x kg pro Hektar landwirtschaftlich genutzter Fläche.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 62.26
+        },
+        {
+          "year": 2014,
+          "value": 49.26
+        },
+        {
+          "year": 2015,
+          "value": 75.62
+        },
+        {
+          "year": 2016,
+          "value": 70.89
+        },
+        {
+          "year": 2017,
+          "value": 62.44
+        },
+        {
+          "year": 2018,
+          "value": 80.99
+        },
+        {
+          "year": 2019,
+          "value": 56.45
+        },
+        {
+          "year": 2020,
+          "value": 54.14
+        },
+        {
+          "year": 2021,
+          "value": 39.67
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-hausarzt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Hausarzt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 473.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-krankenhaus-minuten",
+      "title": "Wohnungsnahe Grundversorgung - Krankenhaus (Minuten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 7.47,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2020",
+      "calculation": "Einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung",
+      "statement": "Die einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung beträgt x Minuten.",
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-apotheke-meter",
+      "title": "Wohnungsnahe Grundversorgung - Apotheke (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 661.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zur nächsten Apotheke",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Apotheke beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg3-personal-in-pflegediensten-personalschluessel-in-vollzeitaequivalenten",
+      "title": "Personal in Pflegediensten (Personalschlüssel in Vollzeitäquivalenten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 0.11,
+      "year": 2022,
+      "unit": "Personalschlüssel in Vollzeitäquivalenten",
+      "stateAverage": 0.13,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 36.6,
+      "quality": "mittel",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Personal in ambulanten Pflegediensten) / ((Anzahl der ambulant Pflegebedürftigen) + (Anzahl der Pflegegeldempfänger:innen))",
+      "statement": "In ambulanten Pflegediensten sind x Beschäftigte (Vollzeitstellen) je pflegebedürftiger Person beschäftigt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.21
+        },
+        {
+          "year": 2014,
+          "value": 0.21
+        },
+        {
+          "year": 2015,
+          "value": 0.19
+        },
+        {
+          "year": 2016,
+          "value": 0.19
+        },
+        {
+          "year": 2017,
+          "value": 0.16
+        },
+        {
+          "year": 2018,
+          "value": 0.16
+        },
+        {
+          "year": 2019,
+          "value": 0.13
+        },
+        {
+          "year": 2020,
+          "value": 0.13
+        },
+        {
+          "year": 2021,
+          "value": 0.11
+        },
+        {
+          "year": 2022,
+          "value": 0.11
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg3-pflegeheimplaetze-verfuegbare-stationaere-plaetze-in-pflegeheimen-je-1-000-einwo",
+      "title": "Pflegeheimplätze (Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 61.72,
+      "year": 2023,
+      "unit": "Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre",
+      "stateAverage": 58.61,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 56.3,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der verfügbaren voll- und teilstationären Plätze in Pflegeheimen) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 1.000",
+      "statement": "In Pflegeheimen sind x stationäre Plätze je 1.000 Einwohner:innen ab 65 Jahren vorhanden.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 50.47
+        },
+        {
+          "year": 2015,
+          "value": 53.065
+        },
+        {
+          "year": 2016,
+          "value": 53.065
+        },
+        {
+          "year": 2017,
+          "value": 54.7
+        },
+        {
+          "year": 2018,
+          "value": 54.7
+        },
+        {
+          "year": 2019,
+          "value": 60.29
+        },
+        {
+          "year": 2020,
+          "value": 60.29
+        },
+        {
+          "year": 2021,
+          "value": 61.32
+        },
+        {
+          "year": 2022,
+          "value": 61.32
+        },
+        {
+          "year": 2023,
+          "value": 61.72
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg3-luftschadstoffbelastung-g-m",
+      "title": "Luftschadstoffbelastung (µg / m³)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 6.96,
+      "year": 2023,
+      "unit": "µg / m³",
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "niedriger_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Umweltbundesamt, Bundesamt für Kartographie und Geodäsie Hinweis: Änderung der Definition und rückwirkende Anpassung der Daten: Die Feinstaubbelastung wird ab sofort mit dem maximalen Durchmesser von 2,5 μm (statt wie vormals mit 10 μm) angegeben.",
+      "calculation": "Jahresmittelwert Feinstaub (PM2,5) je Gebietseinheit",
+      "statement": "Die Konzentration von Feinstaub (PM2,5) in der Luft beträgt x µg / m³.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 14.69
+        },
+        {
+          "year": 2015,
+          "value": 11.41
+        },
+        {
+          "year": 2016,
+          "value": 11.3
+        },
+        {
+          "year": 2017,
+          "value": 12.3
+        },
+        {
+          "year": 2018,
+          "value": 12.53
+        },
+        {
+          "year": 2019,
+          "value": 9.87
+        },
+        {
+          "year": 2020,
+          "value": 9.62
+        },
+        {
+          "year": 2021,
+          "value": 9.21
+        },
+        {
+          "year": 2022,
+          "value": 8.75
+        },
+        {
+          "year": 2023,
+          "value": 6.96
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg3-vorzeitige-sterblichkeit-todesfaelle-je-1-000-einwohner-innen",
+      "title": "Vorzeitige Sterblichkeit (Todesfälle je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 2.71,
+      "year": 2023,
+      "unit": "Todesfälle je 1.000 Einwohner:innen",
+      "stateAverage": 2.7,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 48.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder Hinweis: Neuer Indikator - Vorzeitige Sterblichkeit wird ab sofort als gesamt für beide Geschlechter ausgewiesen. Zeitreihe rückwirkend berechnet.",
+      "calculation": "(Anzahl der Todesfälle bei Einwohner:innen im Alter von unter 70 Jahren) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Von 1.000 Personen unter 70 Jahren sind x vorzeitig verstorben.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 2.54
+        },
+        {
+          "year": 2015,
+          "value": 2.54
+        },
+        {
+          "year": 2016,
+          "value": 2.65
+        },
+        {
+          "year": 2017,
+          "value": 2.69
+        },
+        {
+          "year": 2018,
+          "value": 2.72
+        },
+        {
+          "year": 2019,
+          "value": 2.7
+        },
+        {
+          "year": 2020,
+          "value": 2.87
+        },
+        {
+          "year": 2021,
+          "value": 3.003
+        },
+        {
+          "year": 2022,
+          "value": 2.72
+        },
+        {
+          "year": 2023,
+          "value": 2.71
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg4-wohnungsnahe-grundversorgung-grundschule-meter",
+      "title": "Wohnungsnahe Grundversorgung - Grundschule (Meter)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 604.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz in m zur nächsten Grundschule",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Grundschule beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg4-schulabbrecherquote",
+      "title": "Schulabbrecherquote (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 12.36,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 8.7,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 35.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Schulabgänger:innen allgemeinbildender Schulen ohne Hauptschulabschluss) / (Anzahl der Schulabgänger:innen allgemeinbildender Schulen insgesamt) * 100",
+      "statement": "Ein Anteil von x % der Schulabgänger:innen allgemeinbildender Schulen erreicht keinen Hauptschulabschluss.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 12.22
+        },
+        {
+          "year": 2015,
+          "value": 10.25
+        },
+        {
+          "year": 2016,
+          "value": 10.67
+        },
+        {
+          "year": 2017,
+          "value": 13.45
+        },
+        {
+          "year": 2018,
+          "value": 11.45
+        },
+        {
+          "year": 2019,
+          "value": 11.84
+        },
+        {
+          "year": 2020,
+          "value": 11.32
+        },
+        {
+          "year": 2021,
+          "value": 12.63
+        },
+        {
+          "year": 2022,
+          "value": 14.57
+        },
+        {
+          "year": 2023,
+          "value": 12.36
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg4-betreuung-von-kindern-unter-3-jaehrige",
+      "title": "Betreuung von Kindern - unter 3-jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 44.41,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 49.23,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 47.3,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Kinder im Alter von unter 3 Jahren in Tageseinrichtungen) / (Anzahl der Kinder im Alter von unter 3 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Kinder im Alter unter 3 Jahren wird in Tageseinrichtungen betreut.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 42.79
+        },
+        {
+          "year": 2015,
+          "value": 42.39
+        },
+        {
+          "year": 2016,
+          "value": 39.26
+        },
+        {
+          "year": 2017,
+          "value": 39.76
+        },
+        {
+          "year": 2018,
+          "value": 38.12
+        },
+        {
+          "year": 2019,
+          "value": 39.56
+        },
+        {
+          "year": 2020,
+          "value": 40.55
+        },
+        {
+          "year": 2021,
+          "value": 41.3
+        },
+        {
+          "year": 2022,
+          "value": 43.76
+        },
+        {
+          "year": 2023,
+          "value": 44.41
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg4-integrative-kindertageseinrichtungen",
+      "title": "Integrative Kindertageseinrichtungen (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 51.59,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 39.32,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 66.1,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der integrativen Kindertageseinrichtungen) / (Anzahl der Kindertageseinrichtungen) * 100",
+      "statement": "Ein Anteil von x % der Kindertageseinrichtungen ist integrativ.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 41.007
+        },
+        {
+          "year": 2014,
+          "value": 37.86
+        },
+        {
+          "year": 2015,
+          "value": 44.29
+        },
+        {
+          "year": 2016,
+          "value": 44.056
+        },
+        {
+          "year": 2017,
+          "value": 46.58
+        },
+        {
+          "year": 2018,
+          "value": 51.37
+        },
+        {
+          "year": 2019,
+          "value": 51.33
+        },
+        {
+          "year": 2020,
+          "value": 50.99
+        },
+        {
+          "year": 2021,
+          "value": 51.63
+        },
+        {
+          "year": 2022,
+          "value": 51.59
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg5-verhaeltnis-der-beschaeftigungsquoten-von-frauen-und-maennern",
+      "title": "Verhältnis der Beschäftigungsquoten von Frauen und Männern (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": 97.51,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 97.91,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 49.1,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherpflichtig beschäftigten Frauen am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Frauen im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten Männer am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Männer im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Frauenbeschäftigungsquote zur Männerbeschäftigungsquote beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 101.55
+        },
+        {
+          "year": 2015,
+          "value": 104.87
+        },
+        {
+          "year": 2016,
+          "value": 103.33
+        },
+        {
+          "year": 2017,
+          "value": 102.89
+        },
+        {
+          "year": 2018,
+          "value": 102.08
+        },
+        {
+          "year": 2019,
+          "value": 100.89
+        },
+        {
+          "year": 2020,
+          "value": 100.96
+        },
+        {
+          "year": 2021,
+          "value": 99.66
+        },
+        {
+          "year": 2022,
+          "value": 97.95
+        },
+        {
+          "year": 2023,
+          "value": 97.51
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg5-frauenanteil-im-stadtrat-gemeinderat-bzw-kreistag",
+      "title": "Frauenanteil im Stadtrat, Gemeinderat bzw. Kreistag (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": 31.15,
+      "year": 2019,
+      "unit": "%",
+      "stateAverage": 20.11,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 71.6,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der Frauen mit Mandaten im Stadtrat, Gemeinderat bzw. Kreistag) / (Anzahl der Mandate im Stadtrat, Gemeinderat bzw. Kreistag) * 100",
+      "statement": "Ein Anteil von x % der Mandate im Stadtrat, Gemeinderat bzw. Kreistag ist mit Frauen besetzt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 27.87
+        },
+        {
+          "year": 2015,
+          "value": 28.33
+        },
+        {
+          "year": 2017,
+          "value": 28.33
+        },
+        {
+          "year": 2019,
+          "value": 31.15
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg6-abwasserbehandlung",
+      "title": "Abwasserbehandlung (%)",
+      "dimension": "Planet",
+      "sdg": 6,
+      "sdgTitle": "Sauberes Wasser und Sanitärversorgung",
+      "value": 100.0,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 91.064,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 53.4,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Abwassermenge, die durch Denitrifikation und Phosphorelimination behandelt wird) / (Abwassermenge) * 100",
+      "statement": "Ein Anteil von x % des Abwassers wird mit Denitrifikation und Phosphorelimination behandelt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 100.0
+        },
+        {
+          "year": 2015,
+          "value": 100.0
+        },
+        {
+          "year": 2016,
+          "value": 100.0
+        },
+        {
+          "year": 2017,
+          "value": 100.0
+        },
+        {
+          "year": 2018,
+          "value": 100.0
+        },
+        {
+          "year": 2019,
+          "value": 100.0
+        },
+        {
+          "year": 2020,
+          "value": 100.0
+        },
+        {
+          "year": 2021,
+          "value": 100.0
+        },
+        {
+          "year": 2022,
+          "value": 100.0
+        },
+        {
+          "year": 2023,
+          "value": 100.0
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg7-strom-aus-erneuerbaren-quellen-kw-je-einwohner-in",
+      "title": "Strom aus erneuerbaren Quellen (kW je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 0.41,
+      "year": 2023,
+      "unit": "kW je Einwohner:in",
+      "stateAverage": 1.16,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 35.4,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Installierte Nettonennleistung erneuerbaren Stroms aus Biomasse, solarer Strahlungsenergie, Wasser und Wind) / (Anzahl der Einwohner:innen)",
+      "statement": "Es sind erneuerbare Energieträger mit einer Nettonennleistung von insgesamt x Kilowattstunden installiert worden.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 0.14
+        },
+        {
+          "year": 2019,
+          "value": 0.38
+        },
+        {
+          "year": 2020,
+          "value": 0.41
+        },
+        {
+          "year": 2021,
+          "value": 0.46
+        },
+        {
+          "year": 2023,
+          "value": 0.41
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg7-ladesaeuleninfrastruktur-ladepunkte-je-1-000-einwohner-innen",
+      "title": "Ladesäuleninfrastruktur (Ladepunkte je 1.000 Einwohner:innen)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 1.36,
+      "year": 2023,
+      "unit": "Ladepunkte je 1.000 Einwohner:innen",
+      "stateAverage": 1.13,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 65.1,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der öffentlich zugänglichen Normal- und Schnellladepunkte ab 3,7 kW) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es gibt x öffentliche Normal- und Schnellladepunkte ab 3,7 kW je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.037
+        },
+        {
+          "year": 2015,
+          "value": 0.072
+        },
+        {
+          "year": 2016,
+          "value": 0.12
+        },
+        {
+          "year": 2017,
+          "value": 0.17
+        },
+        {
+          "year": 2018,
+          "value": 0.26
+        },
+        {
+          "year": 2019,
+          "value": 0.55
+        },
+        {
+          "year": 2020,
+          "value": 0.66
+        },
+        {
+          "year": 2021,
+          "value": 0.89
+        },
+        {
+          "year": 2022,
+          "value": 1.042
+        },
+        {
+          "year": 2023,
+          "value": 1.36
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg8-bruttoinlandsprodukt-je-einwohner-in",
+      "title": "Bruttoinlandsprodukt (€ je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 40445.73,
+      "year": 2022,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 35791.52,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 60.4,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Bruttoinlandsprodukt) / (Anzahl der Einwohner:innen)",
+      "statement": "Das Bruttoinlandprodukt je Einwohner:in beträgt x Euro.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 31236.77
+        },
+        {
+          "year": 2014,
+          "value": 31924.63
+        },
+        {
+          "year": 2015,
+          "value": 32457.46
+        },
+        {
+          "year": 2016,
+          "value": 34325.11
+        },
+        {
+          "year": 2017,
+          "value": 34982.79
+        },
+        {
+          "year": 2018,
+          "value": 35932.93
+        },
+        {
+          "year": 2019,
+          "value": 33990.19
+        },
+        {
+          "year": 2020,
+          "value": 36816.25
+        },
+        {
+          "year": 2021,
+          "value": 38300.25
+        },
+        {
+          "year": 2022,
+          "value": 40445.73
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg8-langzeitarbeitslosenquote",
+      "title": "Langzeitarbeitslosenquote (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 3.47,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 2.62,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 44.6,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Arbeitslosen mit Dauer der Arbeitslosigkeit > 1 Jahr) / ((Anzahl der Arbeitslosen) + (Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort)) * 100",
+      "statement": "Ein Anteil von x % der Erwerbspersonen ist länger als 1 Jahr arbeitslos.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 4.93
+        },
+        {
+          "year": 2015,
+          "value": 4.62
+        },
+        {
+          "year": 2016,
+          "value": 4.3
+        },
+        {
+          "year": 2017,
+          "value": 3.42
+        },
+        {
+          "year": 2018,
+          "value": 3.074
+        },
+        {
+          "year": 2019,
+          "value": 2.62
+        },
+        {
+          "year": 2020,
+          "value": 2.83
+        },
+        {
+          "year": 2021,
+          "value": 3.81
+        },
+        {
+          "year": 2022,
+          "value": 3.4
+        },
+        {
+          "year": 2023,
+          "value": 3.47
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-15-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 15- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 62.61,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 66.75,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 49.5,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 15 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 57.74
+        },
+        {
+          "year": 2015,
+          "value": 57.5
+        },
+        {
+          "year": 2016,
+          "value": 59.68
+        },
+        {
+          "year": 2017,
+          "value": 61.14
+        },
+        {
+          "year": 2018,
+          "value": 62.27
+        },
+        {
+          "year": 2019,
+          "value": 63.31
+        },
+        {
+          "year": 2020,
+          "value": 63.44
+        },
+        {
+          "year": 2021,
+          "value": 64.58
+        },
+        {
+          "year": 2022,
+          "value": 63.25
+        },
+        {
+          "year": 2023,
+          "value": 62.61
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-55-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 55- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 62.31,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 63.88,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 54.3,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 55 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 55 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 55 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 49.48
+        },
+        {
+          "year": 2015,
+          "value": 50.7
+        },
+        {
+          "year": 2016,
+          "value": 52.77
+        },
+        {
+          "year": 2017,
+          "value": 54.72
+        },
+        {
+          "year": 2018,
+          "value": 56.8
+        },
+        {
+          "year": 2019,
+          "value": 58.4
+        },
+        {
+          "year": 2020,
+          "value": 60.009
+        },
+        {
+          "year": 2021,
+          "value": 61.32
+        },
+        {
+          "year": 2022,
+          "value": 61.7
+        },
+        {
+          "year": 2023,
+          "value": 62.31
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg8-erwerbstaetige-aufstocker-innen",
+      "title": "Erwerbstätige Aufstocker:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 17.17,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 20.18,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 63.2,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Aktualisierung auf Bürgergeldbezieher:innen",
+      "calculation": "(Anzahl der erwerbstätigen Bürgergeld-Bezieher:innen) / (Anzahl der erwerbsfähigen Bürgergeld-Bezieher:innen) * 100",
+      "statement": "Ein Anteil von x % der erwerbsfähigen Leistungsbezieher:innen ist zusätzlich zum Bürgergeld-Bezug erwerbstätig.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 35.008
+        },
+        {
+          "year": 2015,
+          "value": 33.76
+        },
+        {
+          "year": 2016,
+          "value": 29.41
+        },
+        {
+          "year": 2017,
+          "value": 27.88
+        },
+        {
+          "year": 2018,
+          "value": 27.97
+        },
+        {
+          "year": 2019,
+          "value": 27.063
+        },
+        {
+          "year": 2020,
+          "value": 25.36
+        },
+        {
+          "year": 2021,
+          "value": 25.11
+        },
+        {
+          "year": 2022,
+          "value": 19.23
+        },
+        {
+          "year": 2023,
+          "value": 17.17
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg9-existenzgruendungen-neuerrichtungen-je-1-000-einwohner-innen",
+      "title": "Existenzgründungen (Neuerrichtungen je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 5.88,
+      "year": 2023,
+      "unit": "Neuerrichtungen je 1.000 Einwohner:innen",
+      "stateAverage": 5.37,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 52.1,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Neuerrichtungen von Gewerbebetrieben) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Gewerbebetriebe neu errichtet.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 6.28
+        },
+        {
+          "year": 2015,
+          "value": 5.94
+        },
+        {
+          "year": 2016,
+          "value": 5.58
+        },
+        {
+          "year": 2017,
+          "value": 5.35
+        },
+        {
+          "year": 2018,
+          "value": 5.69
+        },
+        {
+          "year": 2019,
+          "value": 7.21
+        },
+        {
+          "year": 2020,
+          "value": 5.065
+        },
+        {
+          "year": 2021,
+          "value": 5.59
+        },
+        {
+          "year": 2022,
+          "value": 5.57
+        },
+        {
+          "year": 2023,
+          "value": 5.88
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg9-breitbandversorgung-private-haushalte",
+      "title": "Breitbandversorgung - Private Haushalte (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 88.99,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 85.94,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 55.8,
+      "quality": "mittel",
+      "source": "Bundesministeriums für Verkehr und digitale Infrastruktur, Statistische Ämter der Länder Hinweis: Erhöhung der Bitrate - auch rückwirkend - von 50 Mbit/s auf 100 Mbit/s.",
+      "calculation": "(Anzahl der Haushalte mit Breitbandversorgung (≥ 100 Mbit/s)) / (Anzahl der Haushalte) * 100",
+      "statement": "Der Anteil der Haushalte, die eine Bandbreite von mindestens 100 Mbit/s nutzen können, beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2017,
+          "value": 72.52
+        },
+        {
+          "year": 2020,
+          "value": 97.55
+        },
+        {
+          "year": 2021,
+          "value": 97.99
+        },
+        {
+          "year": 2022,
+          "value": 88.99
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg9-hochqualifizierte-am-arbeitsort",
+      "title": "Hochqualifizierte am Arbeitsort (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 21.18,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 18.75,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 57.4,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten mit akademischen Berufsabschluss am Arbeitsort) / (Anzahl der sozialversicherungspflichtig Beschäftigten am Arbeitsort) * 100",
+      "statement": "Einen akademischen Berufsabschluss haben x % der sozialversicherungspflichtig Beschäftigten (SvB).",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 18.53
+        },
+        {
+          "year": 2015,
+          "value": 18.72
+        },
+        {
+          "year": 2016,
+          "value": 19.18
+        },
+        {
+          "year": 2017,
+          "value": 19.53
+        },
+        {
+          "year": 2018,
+          "value": 19.88
+        },
+        {
+          "year": 2019,
+          "value": 20.095
+        },
+        {
+          "year": 2020,
+          "value": 20.53
+        },
+        {
+          "year": 2021,
+          "value": 20.74
+        },
+        {
+          "year": 2022,
+          "value": 20.85
+        },
+        {
+          "year": 2023,
+          "value": 21.18
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg10-beschaeftigungsquote-auslaender-innen",
+      "title": "Beschäftigungsquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 54.19,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 61.16,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 54.0,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherungspflichtig Beschäftigten ohne deutsche Staatsbürgerschaft am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Beschäftigungsquote von Ausländer:innen zur Beschäftigungsquote in der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 33.32
+        },
+        {
+          "year": 2015,
+          "value": 28.24
+        },
+        {
+          "year": 2016,
+          "value": 37.17
+        },
+        {
+          "year": 2017,
+          "value": 40.38
+        },
+        {
+          "year": 2018,
+          "value": 44.21
+        },
+        {
+          "year": 2019,
+          "value": 51.76
+        },
+        {
+          "year": 2020,
+          "value": 52.9
+        },
+        {
+          "year": 2021,
+          "value": 58.63
+        },
+        {
+          "year": 2022,
+          "value": 52.76
+        },
+        {
+          "year": 2023,
+          "value": 54.19
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg10-schulabbrecherquote-auslaender-innen",
+      "title": "Schulabbrecherquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 185.92,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 210.35,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 46.1,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Schulabgänger:innen ohne deutsche Staatsbürgerschaft und ohne Hauptschulabschluss) / (Anzahl Schulabgänger:innen ohne deutsche Staatsbürgerschaft insgesamt)) / ((Anzahl Schulabgänger:innen ohne Hauptschulabschluss insgesamt) / (Anzahl Schulabgänger:innen insgesamt)) * 100",
+      "statement": "Das Verhältnis der Schulabbrecher:innenquote von Ausländer:innen zur Schulabbrecher:innenquote innerhalb der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 125.71
+        },
+        {
+          "year": 2014,
+          "value": 154.79
+        },
+        {
+          "year": 2015,
+          "value": 176.49
+        },
+        {
+          "year": 2016,
+          "value": 126.93
+        },
+        {
+          "year": 2017,
+          "value": 180.63
+        },
+        {
+          "year": 2019,
+          "value": 184.097
+        },
+        {
+          "year": 2020,
+          "value": 214.96
+        },
+        {
+          "year": 2021,
+          "value": 172.056
+        },
+        {
+          "year": 2022,
+          "value": 190.47
+        },
+        {
+          "year": 2023,
+          "value": 185.92
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg10-einbuergerungen",
+      "title": "Einbürgerungen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 1.025,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 0.87,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 48.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Einbürgerungen im jeweiligen Jahr) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft des Vorjahres) * 100",
+      "statement": "Ein Anteil von x Prozent der ausländischen Bevölkerung hat die deutsche Staatsbürgerschaft erhalten.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 1.67
+        },
+        {
+          "year": 2015,
+          "value": 1.15
+        },
+        {
+          "year": 2016,
+          "value": 0.85
+        },
+        {
+          "year": 2017,
+          "value": 0.8
+        },
+        {
+          "year": 2018,
+          "value": 0.44
+        },
+        {
+          "year": 2019,
+          "value": 0.85
+        },
+        {
+          "year": 2020,
+          "value": 0.72
+        },
+        {
+          "year": 2021,
+          "value": 0.75
+        },
+        {
+          "year": 2022,
+          "value": 0.74
+        },
+        {
+          "year": 2023,
+          "value": 1.025
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-mietpreise-m",
+      "title": "Mietpreise (€ / m²)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 5.49,
+      "year": 2022,
+      "unit": "€ / m²",
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "niedriger_ist_besser",
+      "score": 48.0,
+      "quality": "mittel",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung Hinweis: Rückwirkende Anpassung der Zeitreihe auf Durchschnittswerte ohne Klassifizierung.",
+      "calculation": "Durchschnittliche nettokalte Angebotsmiete je m²",
+      "statement": "Die durchschnittliche Nettokaltmiete beträgt x Euro je Quadratmeter",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 5.0
+        },
+        {
+          "year": 2014,
+          "value": 5.02
+        },
+        {
+          "year": 2015,
+          "value": 5.07
+        },
+        {
+          "year": 2016,
+          "value": 5.09
+        },
+        {
+          "year": 2017,
+          "value": 5.15
+        },
+        {
+          "year": 2018,
+          "value": 5.2
+        },
+        {
+          "year": 2019,
+          "value": 5.23
+        },
+        {
+          "year": 2020,
+          "value": 5.24
+        },
+        {
+          "year": 2021,
+          "value": 5.28
+        },
+        {
+          "year": 2022,
+          "value": 5.49
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-wohnflaeche-m-je-einwohner-in",
+      "title": "Wohnfläche (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 42.11,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 43.36,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 50.7,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Wohnfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Je Person stehen im Durchschnitt x Quadratmeter Wohnfläche zur Verfügung.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 41.39
+        },
+        {
+          "year": 2015,
+          "value": 40.74
+        },
+        {
+          "year": 2016,
+          "value": 41.3
+        },
+        {
+          "year": 2017,
+          "value": 41.46
+        },
+        {
+          "year": 2018,
+          "value": 41.78
+        },
+        {
+          "year": 2019,
+          "value": 42.021
+        },
+        {
+          "year": 2020,
+          "value": 42.74
+        },
+        {
+          "year": 2021,
+          "value": 43.023
+        },
+        {
+          "year": 2022,
+          "value": 42.26
+        },
+        {
+          "year": 2023,
+          "value": 42.11
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-wohnungsnahe-grundversorgung-supermarkt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Supermarkt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 535.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-pkw-dichte-pkw-je-1-000-einwohner-innen",
+      "title": "PKW-Dichte (PKW je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 502.2,
+      "year": 2023,
+      "unit": "PKW je 1.000 Einwohner:innen",
+      "stateAverage": 533.45,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 51.7,
+      "quality": "hoch",
+      "source": "Kraftfahrtbundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Personenkraftwagen) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Die PKW-Dichte liegt bei x PKW je 1.000 Einwohner:innen.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 494.69
+        },
+        {
+          "year": 2015,
+          "value": 487.2
+        },
+        {
+          "year": 2016,
+          "value": 497.31
+        },
+        {
+          "year": 2017,
+          "value": 501.68
+        },
+        {
+          "year": 2018,
+          "value": 503.91
+        },
+        {
+          "year": 2019,
+          "value": 508.77
+        },
+        {
+          "year": 2020,
+          "value": 515.64
+        },
+        {
+          "year": 2021,
+          "value": 520.17
+        },
+        {
+          "year": 2022,
+          "value": 508.45
+        },
+        {
+          "year": 2023,
+          "value": 502.2
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-pkw-mit-elektroantrieb",
+      "title": "PKW mit Elektroantrieb (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 1.36,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 1.091,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 66.6,
+      "quality": "hoch",
+      "source": "Kraftfahrtbundesamt Hinweis: Rückwirkende Neuberechnung der Zeitreihe: Der Indikator umfasst keine Plug-In-Hybride mehr.",
+      "calculation": "(Anzahl der zugelassenen Personenkraftwagen mit Elektroantrieb) / (Anzahl der zugelassenen Personenkraftwagen) * 100",
+      "statement": "Der Anteil zugelassener Personenkraftwagen mit Elektroantrieb an allen zugelassenen Personenkraftwagen liegt bei x %.",
+      "timeseries": [
+        {
+          "year": 2020,
+          "value": 0.19
+        },
+        {
+          "year": 2021,
+          "value": 0.46
+        },
+        {
+          "year": 2022,
+          "value": 0.95
+        },
+        {
+          "year": 2023,
+          "value": 1.36
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-verunglueckte-im-verkehr-verunglueckte-je-1-000-einwohner-innen",
+      "title": "Verunglückte im Verkehr (Verunglückte je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 3.55,
+      "year": 2023,
+      "unit": "Verunglückte je 1.000 Einwohner:innen",
+      "stateAverage": 4.006,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 57.9,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der verletzten oder getöteten Personen bei Verkehrsunfällen) / (Anzahl Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Personen in Verkehrsunfällen verletzt oder getötet.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 4.41
+        },
+        {
+          "year": 2015,
+          "value": 4.23
+        },
+        {
+          "year": 2016,
+          "value": 4.63
+        },
+        {
+          "year": 2017,
+          "value": 4.16
+        },
+        {
+          "year": 2018,
+          "value": 4.16
+        },
+        {
+          "year": 2019,
+          "value": 4.62
+        },
+        {
+          "year": 2020,
+          "value": 3.32
+        },
+        {
+          "year": 2021,
+          "value": 3.43
+        },
+        {
+          "year": 2022,
+          "value": 3.46
+        },
+        {
+          "year": 2023,
+          "value": 3.55
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-flaecheninanspruchnahme",
+      "title": "Flächeninanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 45.35,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 13.92,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Gesamtfläche) * 100",
+      "statement": "Der Anteil der Siedlungs- und Verkehrsfläche an der Gesamtfläche beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 44.42
+        },
+        {
+          "year": 2015,
+          "value": 44.51
+        },
+        {
+          "year": 2016,
+          "value": 44.66
+        },
+        {
+          "year": 2017,
+          "value": 44.82
+        },
+        {
+          "year": 2018,
+          "value": 45.021
+        },
+        {
+          "year": 2019,
+          "value": 45.08
+        },
+        {
+          "year": 2020,
+          "value": 45.31
+        },
+        {
+          "year": 2021,
+          "value": 45.41
+        },
+        {
+          "year": 2022,
+          "value": 45.42
+        },
+        {
+          "year": 2023,
+          "value": 45.35
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-flaechenneuinanspruchnahme",
+      "title": "Flächenneuinanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": -0.069,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": -1.16,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 25.1,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Änderung der Siedlungs- und Verkehrsfläche im Vergleich zum Vorjahr) / (Gesamtfläche) * 100",
+      "statement": "Die prozentuale Änderungsrate von Siedlungs- und Verkehrsflächen beträgt im Vergleich zum Vorjahr x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.3
+        },
+        {
+          "year": 2015,
+          "value": 0.13
+        },
+        {
+          "year": 2016,
+          "value": 0.14
+        },
+        {
+          "year": 2017,
+          "value": 0.16
+        },
+        {
+          "year": 2018,
+          "value": 0.2
+        },
+        {
+          "year": 2019,
+          "value": 0.059
+        },
+        {
+          "year": 2020,
+          "value": 0.23
+        },
+        {
+          "year": 2021,
+          "value": 0.1
+        },
+        {
+          "year": 2022,
+          "value": 0.009
+        },
+        {
+          "year": 2023,
+          "value": -0.069
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-flaechennutzungsintensitaet-m-je-einwohner-in",
+      "title": "Flächennutzungsintensität (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 399.9,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 627.84,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 37.1,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "In der Kommune werden x Quadratmeter Siedlungs- und Verkehrsfläche pro Einwohner:in genutzt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 402.84
+        },
+        {
+          "year": 2015,
+          "value": 395.7
+        },
+        {
+          "year": 2016,
+          "value": 400.69
+        },
+        {
+          "year": 2017,
+          "value": 401.33
+        },
+        {
+          "year": 2018,
+          "value": 402.53
+        },
+        {
+          "year": 2019,
+          "value": 404.53
+        },
+        {
+          "year": 2020,
+          "value": 409.78
+        },
+        {
+          "year": 2021,
+          "value": 412.91
+        },
+        {
+          "year": 2022,
+          "value": 403.92
+        },
+        {
+          "year": 2023,
+          "value": 399.9
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-naherholungsflaechen-m-je-einwohner-in",
+      "title": "Naherholungsflächen (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 80.44,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 72.89,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 53.2,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Erholungsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Auf eine/n Einwohner:in kommen x m² Erholungsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 82.13
+        },
+        {
+          "year": 2015,
+          "value": 80.28
+        },
+        {
+          "year": 2016,
+          "value": 80.9
+        },
+        {
+          "year": 2017,
+          "value": 80.7
+        },
+        {
+          "year": 2018,
+          "value": 80.41
+        },
+        {
+          "year": 2019,
+          "value": 80.54
+        },
+        {
+          "year": 2020,
+          "value": 82.24
+        },
+        {
+          "year": 2021,
+          "value": 83.092
+        },
+        {
+          "year": 2022,
+          "value": 81.15
+        },
+        {
+          "year": 2023,
+          "value": 80.44
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg11-fertiggestellte-wohngebaeude-mit-erneuerbarer-heizenergie",
+      "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie (%)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 71.72,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 71.54,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 58.1,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der neu errichteten Wohngebäude mit erneuerbarer Heizenergie) / (Anzahl der neu errichteten Wohngebäude) * 100",
+      "statement": "Der Anteil fertiggestellter Wohngebäude mit erneuerbarer Heizenergie an neu errichteten Wohngebäuden beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 40.69
+        },
+        {
+          "year": 2015,
+          "value": 41.18
+        },
+        {
+          "year": 2016,
+          "value": 41.56
+        },
+        {
+          "year": 2017,
+          "value": 43.25
+        },
+        {
+          "year": 2018,
+          "value": 47.24
+        },
+        {
+          "year": 2019,
+          "value": 44.44
+        },
+        {
+          "year": 2020,
+          "value": 49.11
+        },
+        {
+          "year": 2021,
+          "value": 54.2
+        },
+        {
+          "year": 2022,
+          "value": 60.16
+        },
+        {
+          "year": 2023,
+          "value": 71.72
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg12-trinkwasserverbrauch-private-haushalte-liter-je-einwohner-in-und-tag",
+      "title": "Trinkwasserverbrauch - Private Haushalte (Liter je Einwohner:in und Tag)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": 102.37,
+      "year": 2023,
+      "unit": "Liter je Einwohner:in und Tag",
+      "stateAverage": 93.91,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 48.1,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Jährlicher Trinkwasserverbrauch (Haushalte und Kleingewerbe)) / ((Anzahl der Einwohner:innen) * (Anzahl der Tage pro Jahr))",
+      "statement": "Je Einwohner:in und Tag wurden durchschnittlich x Liter Wasser verbraucht.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 109.073
+        },
+        {
+          "year": 2015,
+          "value": 106.83
+        },
+        {
+          "year": 2016,
+          "value": 113.51
+        },
+        {
+          "year": 2017,
+          "value": 113.59
+        },
+        {
+          "year": 2018,
+          "value": 113.42
+        },
+        {
+          "year": 2019,
+          "value": 111.53
+        },
+        {
+          "year": 2020,
+          "value": 112.11
+        },
+        {
+          "year": 2021,
+          "value": 113.013
+        },
+        {
+          "year": 2022,
+          "value": 103.25
+        },
+        {
+          "year": 2023,
+          "value": 102.37
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg12-abfallmenge-t-je-einwohner-in",
+      "title": "Abfallmenge (t je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": 0.4,
+      "year": 2022,
+      "unit": "t je Einwohner:in",
+      "stateAverage": 0.39,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 48.0,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Aufkommen an Haushaltsabfällen (ohne Elektroaltgeräte)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die entsorgte Menge an Haushaltsabfällen beträgt x Tonnen je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.38
+        },
+        {
+          "year": 2014,
+          "value": 0.39
+        },
+        {
+          "year": 2015,
+          "value": 0.37
+        },
+        {
+          "year": 2016,
+          "value": 0.39
+        },
+        {
+          "year": 2017,
+          "value": 0.39
+        },
+        {
+          "year": 2018,
+          "value": 0.38
+        },
+        {
+          "year": 2019,
+          "value": 0.38
+        },
+        {
+          "year": 2020,
+          "value": 0.45
+        },
+        {
+          "year": 2021,
+          "value": 0.45
+        },
+        {
+          "year": 2022,
+          "value": 0.4
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg13-siedlungslast-im-ueberschwemmungsgebiet",
+      "title": "Siedlungslast im Überschwemmungsgebiet (%)",
+      "dimension": "Planet",
+      "sdg": 13,
+      "sdgTitle": "Maßnahmen zum Klimaschutz",
+      "value": 43.3,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 11.1,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Leibniz-Institut für Ökologische Raumentwicklung, jeweils zuständige Landesbehörden",
+      "calculation": "(Baulich geprägte Siedlungs- und Verkehrsfläche im amtlich festgesetzten Überschwemmungsgebiet) / (Fläche des festgesetzten Überschwemmungsgebietes in der Gebietseinheit) * 100",
+      "statement": "Ein Anteil von x % der Fläche des festgesetzten Überschwemmungsgebietes in der Kommune ist baulich geprägte Siedlungs- und Verkehrsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 44.4
+        },
+        {
+          "year": 2015,
+          "value": 44.6
+        },
+        {
+          "year": 2016,
+          "value": 44.6
+        },
+        {
+          "year": 2017,
+          "value": 44.5
+        },
+        {
+          "year": 2018,
+          "value": 44.9
+        },
+        {
+          "year": 2019,
+          "value": 44.8
+        },
+        {
+          "year": 2020,
+          "value": 44.8
+        },
+        {
+          "year": 2021,
+          "value": 44.8
+        },
+        {
+          "year": 2022,
+          "value": 43.6
+        },
+        {
+          "year": 2023,
+          "value": 43.3
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg14-fliessgewaesserqualitaet",
+      "title": "Fließgewässerqualität (%)",
+      "dimension": "Planet",
+      "sdg": 14,
+      "sdgTitle": "Leben unter Wasser",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundesanstalt für Gewässerkunde (BfG), Bundesamt für Kartographie und Geodäsie",
+      "calculation": "(Länge der Fließgewässer mit einer ökologischen Zustandsbewertung „sehr gut“ oder „gut“) / (Länge der Fließgewässer in der Gebietseinheit) * 100",
+      "statement": "Der Zustand von x % der Länge von Fließgewässern an der Gesamtfließgewässerlänge ist mit mindestens „gut“ bewertet.",
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg15-naturschutzflaechen",
+      "title": "Naturschutzflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 1.1,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 16.0,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 21.9,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "(Fläche Natura 2000-Gebiete, Naturschutzgebiete und Nationalparke) / (Gesamtfläche) * 100",
+      "statement": "Natura 2000-Gebiete, Naturschutzgebiete oder Nationalparks sind auf x % der Gesamtfläche der Kommune ausgewiesen.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.9
+        },
+        {
+          "year": 2014,
+          "value": 1.0
+        },
+        {
+          "year": 2015,
+          "value": 0.9
+        },
+        {
+          "year": 2016,
+          "value": 1.0
+        },
+        {
+          "year": 2017,
+          "value": 1.1
+        },
+        {
+          "year": 2018,
+          "value": 1.1
+        },
+        {
+          "year": 2019,
+          "value": 1.1
+        },
+        {
+          "year": 2022,
+          "value": 1.1
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg15-landschaftsqualitaet-hemerobiewert",
+      "title": "Landschaftsqualität (Hemerobiewert)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 4.94,
+      "year": 2021,
+      "unit": "Hemerobiewert",
+      "stateAverage": 4.29,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 55.4,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "Flächengewichteter Mittelwert der Hemerobiestufen 1 \"ahemerob\" (nicht kulturbeeinflusst) bis 7 \"metahemerob\" (übermäßig stark kulturbeeinflusst / Biozönose zerstört) je Gebietseinheit",
+      "statement": "Das Maß des menschlichen Eingriffes auf den Naturhaushalt der Kommune wird mit Stufe x des Hemerobieindex bewertet.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 4.92
+        },
+        {
+          "year": 2018,
+          "value": 4.92
+        },
+        {
+          "year": 2021,
+          "value": 4.94
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg15-unzerschnittene-freiraumflaechen",
+      "title": "Unzerschnittene Freiraumflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundesamt für Kartographie und Geodäsie, Leibniz-Institut für ökologische Raumentwicklung",
+      "calculation": "(Freiraumflächen (außerhalb Ortslagen) > 50 km², die nicht durch Trassen des überörtlichen Verkehrsnetzes zerschnitten sind) / (Gesamtfläche) * 100",
+      "statement": "Ein Anteil von x % der Freiraumflächen sind unzerschnitten durch Trassen des überörtlichen Verkehrsnetzes.",
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg16-straftaten-straftaten-je-1-000-einwohner-innen",
+      "title": "Straftaten (Straftaten je 1.000 Einwohner:innen)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 89.19,
+      "year": 2023,
+      "unit": "Straftaten je 1.000 Einwohner:innen",
+      "stateAverage": 72.48,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 44.9,
+      "quality": "hoch",
+      "source": "Bundeskriminalamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der polizeilich bekanntgewordenen Straftaten) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es sind x Straftaten je 1.000 Einwohner:innen polizeilich bekannt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 104.96
+        },
+        {
+          "year": 2015,
+          "value": 111.77
+        },
+        {
+          "year": 2016,
+          "value": 110.56
+        },
+        {
+          "year": 2017,
+          "value": 103.11
+        },
+        {
+          "year": 2018,
+          "value": 96.037
+        },
+        {
+          "year": 2019,
+          "value": 89.42
+        },
+        {
+          "year": 2020,
+          "value": 87.34
+        },
+        {
+          "year": 2021,
+          "value": 82.98
+        },
+        {
+          "year": 2022,
+          "value": 80.8
+        },
+        {
+          "year": 2023,
+          "value": 89.19
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg16-finanzmittelsaldo-je-einwohner-in",
+      "title": "Finanzmittelsaldo (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 228.0,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 90.0,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 100.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Primärsaldo) + (Finanzsaldo) + (Investitionssaldo)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune konnte ihre gesamten Aufgaben mit einem Überschuss / Defizit in Höhe von x Euro je Einwohner:in abschließen.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 111.0
+        },
+        {
+          "year": 2015,
+          "value": 113.0
+        },
+        {
+          "year": 2016,
+          "value": 140.0
+        },
+        {
+          "year": 2017,
+          "value": 117.0
+        },
+        {
+          "year": 2018,
+          "value": 88.0
+        },
+        {
+          "year": 2019,
+          "value": 18.0
+        },
+        {
+          "year": 2020,
+          "value": 105.0
+        },
+        {
+          "year": 2021,
+          "value": -65.0
+        },
+        {
+          "year": 2022,
+          "value": 53.0
+        },
+        {
+          "year": 2023,
+          "value": 228.0
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg16-steuereinnahmen-je-einwohner-in",
+      "title": "Steuereinnahmen (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 1109.81,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 1055.68,
+      "stateAverageLabel": "Sachsen",
+      "direction": "hoeher_ist_besser",
+      "score": 57.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Steuereinnahmen (= Grundsteuer A + Grundsteuer B + Gewerbesteuer + Gemeindeanteil an Einkommensteuer + Gemeindeanteil an Umsatzsteuer) gemittelt über die letzten 4 Jahre) / (Anzahl der Einwohner:innen gemittelt über die letzten 4 Jahre)",
+      "statement": "Die über die letzten 4 Jahre gemittelten Steuereinnahmen einer Kommune betragen im Durchschnitt x Euro je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 862.021
+        },
+        {
+          "year": 2015,
+          "value": 853.97
+        },
+        {
+          "year": 2016,
+          "value": 878.37
+        },
+        {
+          "year": 2017,
+          "value": 897.46
+        },
+        {
+          "year": 2018,
+          "value": 929.58
+        },
+        {
+          "year": 2019,
+          "value": 975.025
+        },
+        {
+          "year": 2020,
+          "value": 990.87
+        },
+        {
+          "year": 2021,
+          "value": 1024.81
+        },
+        {
+          "year": 2022,
+          "value": 1066.067
+        },
+        {
+          "year": 2023,
+          "value": 1109.81
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg16-liquiditaetskredite-je-einwohner-in",
+      "title": "Liquiditätskredite (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 0.0,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 108.0,
+      "stateAverageLabel": "Sachsen",
+      "direction": "niedriger_ist_besser",
+      "score": 85.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Liquiditäts-/Kassenkredite im Kernhaushalt) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune hat im Kernhaushalt Liquiditätskredite in Höhe von x Euro je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.0
+        },
+        {
+          "year": 2015,
+          "value": 0.0
+        },
+        {
+          "year": 2016,
+          "value": 0.0
+        },
+        {
+          "year": 2017,
+          "value": 0.0
+        },
+        {
+          "year": 2018,
+          "value": 0.0
+        },
+        {
+          "year": 2019,
+          "value": 0.0
+        },
+        {
+          "year": 2020,
+          "value": 0.0
+        },
+        {
+          "year": 2021,
+          "value": 0.0
+        },
+        {
+          "year": 2022,
+          "value": 0.0
+        },
+        {
+          "year": 2023,
+          "value": 0.0
+        }
+      ],
+      "portalTitle": "Chemnitz, Stadt"
+    },
+    {
+      "id": "sdg17-fuer-dieses-ziel-liegen-derzeit-keine-indikatorendaten-vor",
+      "title": "Für dieses Ziel liegen derzeit keine Indikatorendaten vor.",
+      "dimension": "Demokratie",
+      "sdg": 17,
+      "sdgTitle": "Partnerschaften zur Erreichung der Ziele",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": null,
+      "calculation": null,
+      "statement": null,
+      "timeseries": [],
+      "portalTitle": "Chemnitz, Stadt"
+    }
+  ]
+}

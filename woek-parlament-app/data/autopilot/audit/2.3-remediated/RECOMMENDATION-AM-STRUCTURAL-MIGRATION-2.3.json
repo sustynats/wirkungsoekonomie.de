@@ -1,0 +1,36 @@
+{
+  "schema_version": "woek-recommendation-am-structural-migration-2.3",
+  "generated_at": "2026-08-19T07:42:23.911Z",
+  "canonical_root": "/WOEK",
+  "source_path": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/GOVERNMENT-RECOMMENDATIONS-2026-08-18-AM.jsonl",
+  "source_sha256": "496666293f636b2c749f27ddb67ff328bca81121ef7559d090b4f8589b0433c3",
+  "source_records": 3,
+  "schema_valid": "3/3",
+  "structural_changes_only": [
+    "option_set schema envelope",
+    "scalar-to-single-item-array normalization",
+    "compound evidence grade to conservative MEDIUM enum",
+    "APPROVED_FOR_CODEX_INTEGRATION to APPROVED",
+    "temporal mode derived only from the source decision_date presence"
+  ],
+  "semantic_roundtrip": "PASS_3_OF_3",
+  "public_recommendation_count": 9,
+  "ledger_completed_count": 9,
+  "ledger_remaining_backlog_count": 124,
+  "dispositions": [
+    {
+      "recommendation_id": "WOEK-REC-BUND-GMODG-2026-R1",
+      "status": "STRUCTURALLY_MIGRATED_AND_IMPORTED"
+    },
+    {
+      "recommendation_id": "WOEK-REC-BUND-EEG-NETZPAKET-2026-R1",
+      "status": "STRUCTURALLY_MIGRATED_AND_IMPORTED"
+    },
+    {
+      "recommendation_id": "WOEK-REC-BUND-NOTFALLREFORM-2026-R1",
+      "status": "STRUCTURALLY_MIGRATED_AND_IMPORTED"
+    }
+  ],
+  "CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS": true,
+  "NO_HISTORY_OVERWRITTEN": true
+}

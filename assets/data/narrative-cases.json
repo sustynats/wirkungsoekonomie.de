@@ -1,0 +1,542 @@
+[
+  {
+    "id": "altparteien",
+    "title": "Altparteien",
+    "cluster": "Demokratie / Institutionen",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Altparteien",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Begriff reduziert demokratische Parteienvielfalt auf einen geschlossenen Machtblock.",
+    "mechanisms": ["Systemdelegitimierung", "Freund-Feind-Logik", "pauschale Schuldzuweisung"],
+    "resonance_spaces": ["Misstrauen", "Wut", "Protestidentität", "Feindbild"],
+    "perception_shift": {
+      "visible": ["geschlossener Machtblock", "moralische Gegnerschaft", "Protest gegen ein System"],
+      "hidden": ["konkrete Verantwortlichkeiten", "Unterschiede zwischen Parteien", "Reformfragen in Verfahren und Institutionen"]
+    },
+    "democratic_effects": ["Vertrauensverlust", "Kompromissverlust", "Polarisierung", "Delegitimierung demokratischer Konkurrenz"],
+    "system_questions": ["Welche Institutionen, Verfahren und Regeln stärken Vertrauen, ohne Kritik zu unterdrücken?"],
+    "woek_question": "Welche Verfahren, Transparenzregeln und Rechenschaftsformen stärken Vertrauen, ohne Kritik zu unterdrücken?",
+    "counterframe": "Demokratische Kritik bleibt konkret: Sie prüft Entscheidungen, Verantwortlichkeiten und Verfahren, ohne den demokratischen Wettbewerb als geschlossenen Machtblock zu rahmen.",
+    "radar": {
+      "angst": 2,
+      "wut": 4,
+      "misstrauen": 5,
+      "feindbild": 4,
+      "kontrollsehnsucht": 3,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 4,
+      "entsolidarisierung": 3
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Altparteien", "type": "narrative"},
+        {"id": "frame", "label": "Parteienpluralismus als Machtblock", "type": "mechanism"},
+        {"id": "resonanz", "label": "Misstrauen", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Gegner statt Institutionen", "type": "perception"},
+        {"id": "demokratie", "label": "Kompromissfähigkeit", "type": "democracy"},
+        {"id": "system", "label": "Reform- und Verantwortungsfragen", "type": "system"},
+        {"id": "woek", "label": "Vertrauen durch Rechenschaft", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "rahmt"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "verengt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "angst-vor-afd-wahlsieg",
+    "title": "Angst vor AfD-Wahlsieg",
+    "cluster": "Kontrolle / Freiheit",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Angst vor AfD-Wahlsieg",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame dreht demokratische Kritik in eine Opfer- und Unterdrückungserzählung.",
+    "mechanisms": ["Opferframe", "Bedrohungsumkehr", "Kritikabwehr"],
+    "resonance_spaces": ["Kränkung", "Misstrauen", "Mobilisierung", "Selbstimmunisierung"],
+    "perception_shift": {
+      "visible": ["vermeintliche Unterdrückung", "Abwehr gegen Kritik", "Bedrohung durch Gegner"],
+      "hidden": ["prüfbare Machtansprüche", "inhaltliche Kritik", "Verantwortung für eigene Aussagen"]
+    },
+    "democratic_effects": ["Diskursverengung", "Faktenresistenz", "Polarisierung", "Kritikverlust"],
+    "system_questions": ["Wie bleibt Kritik möglich, ohne dass sie als Unterdrückung oder Opferrolle umgedeutet wird?"],
+    "woek_question": "Wie bleibt Kritik möglich, ohne dass sie als Verfolgungserzählung umgedeutet wird?",
+    "counterframe": "Kritik ist kein Verbot. Demokratische Öffentlichkeit braucht überprüfbare Kritik, klare Grenzen und die Möglichkeit, Machtansprüche zu prüfen.",
+    "radar": {
+      "angst": 3,
+      "wut": 3,
+      "misstrauen": 4,
+      "feindbild": 3,
+      "kontrollsehnsucht": 2,
+      "vereinfachung": 3,
+      "autoritarismuspotenzial": 2,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 3
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Angst vor AfD-Wahlsieg", "type": "narrative"},
+        {"id": "frame", "label": "Kritik als Unterdrückung", "type": "mechanism"},
+        {"id": "resonanz", "label": "Kränkung und Mobilisierung", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Kritiker als Bedrohung", "type": "perception"},
+        {"id": "demokratie", "label": "prüfbare Kritik", "type": "democracy"},
+        {"id": "system", "label": "Macht- und Verantwortungsprüfung", "type": "system"},
+        {"id": "woek", "label": "Kritikfähigkeit ohne Opferrolle", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "dreht"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "verengt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
+  },
+  {
+    "id": "altparteiendiktatur",
+    "title": "Diktatur der Altparteien",
+    "cluster": "Demokratie / Institutionen",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Altparteiendiktatur / Diktatur der Altparteien",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Begriff verschiebt demokratische Konflikte in einen Ausnahmezustand und delegitimiert Institutionen als Herrschaftsapparat.",
+    "mechanisms": ["Systemdelegitimierung", "Ausnahmezustandsframe", "Herrschaftsframe"],
+    "resonance_spaces": ["Misstrauen", "Wut", "Ohnmacht", "Kontrollsehnsucht"],
+    "perception_shift": {
+      "visible": ["Diktaturbild", "vermeintliche Rechtlosigkeit", "radikaler Korrekturbedarf"],
+      "hidden": ["Wahlen", "Gewaltenteilung", "Rechtswege", "demokratische Korrekturmechanismen"]
+    },
+    "democratic_effects": ["Delegitimierung des Rechtsstaats", "sinkendes Wahlvertrauen", "radikale Anschlussfähigkeit", "Kompromissverlust"],
+    "system_questions": ["Welche demokratischen Korrekturmechanismen funktionieren - und wo müssen sie verbessert werden?"],
+    "woek_question": "Welche demokratischen Korrekturmechanismen funktionieren - und wo müssen sie verbessert werden?",
+    "counterframe": "Demokratische Systeme haben reale Defizite und reale Korrekturwege. Eine wirkungsorientierte Kritik benennt beides: Mängel und Verfahren ihrer Verbesserung.",
+    "radar": {
+      "angst": 3,
+      "wut": 4,
+      "misstrauen": 5,
+      "feindbild": 5,
+      "kontrollsehnsucht": 4,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 4,
+      "diskursverengung": 5,
+      "demokratierisiko": 5,
+      "entsolidarisierung": 4
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Altparteiendiktatur", "type": "narrative"},
+        {"id": "frame", "label": "Demokratie als Herrschaftsapparat", "type": "mechanism"},
+        {"id": "resonanz", "label": "Ohnmacht und Wut", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Ausnahmezustand statt Streit", "type": "perception"},
+        {"id": "demokratie", "label": "Rechtsstaat und Gewaltenteilung", "type": "democracy"},
+        {"id": "system", "label": "Korrekturwege und Kontrolle", "type": "system"},
+        {"id": "woek", "label": "wirksame demokratische Reparatur", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "delegitimiert"},
+        {"source": "frame", "target": "resonanz", "verb": "emotionalisiert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "masseneinwanderung",
+    "title": "Illegale / kulturfremde / inländerfeindliche Massenmigration",
+    "cluster": "Migration / Identität",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Illegale Masseneinwanderung",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Die Formulierung macht aus Menschen eine bedrohliche Masse und verschiebt Systemprobleme auf eine Gruppe.",
+    "mechanisms": ["Bedrohungsframe", "Massifizierung", "Sündenbocklogik"],
+    "resonance_spaces": ["Angst", "Kontrollsehnsucht", "Feindbild", "Schuldabwehr"],
+    "perception_shift": {
+      "visible": ["Masse", "Gefahr", "Kontrollverlust", "Gruppe als Ursache"],
+      "hidden": ["Wohnungsmarkt", "Verwaltungskapazität", "Arbeitsmarktregeln", "kommunale Infrastruktur"]
+    },
+    "democratic_effects": ["Entsolidarisierung", "Diskursverengung", "Minderheitenabwertung", "Radikalisierungsanschluss"],
+    "system_questions": ["Welche Regeln, Verfahren, Integrationspfade, Wohnungs-, Arbeitsmarkt- und Sicherheitsstrukturen erzeugen reale Stabilität?"],
+    "woek_question": "Welche Regeln, Verfahren, Integrationspfade, Wohnungs-, Arbeitsmarkt- und Sicherheitsstrukturen erzeugen reale Stabilität?",
+    "counterframe": "Migration ist eine reale Steuerungsfrage. Wirkung entsteht durch rechtsstaatliche Verfahren, Integration, Wohnungsbau, Arbeitsmarktregeln, Bildung, Sicherheit und kommunale Kapazität.",
+    "radar": {
+      "angst": 4,
+      "wut": 2,
+      "misstrauen": 3,
+      "feindbild": 4,
+      "kontrollsehnsucht": 5,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 4
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Massenmigration", "type": "narrative"},
+        {"id": "frame", "label": "Menschen als bedrohliche Masse", "type": "mechanism"},
+        {"id": "resonanz", "label": "Angst und Kontrollsehnsucht", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Gruppe als Ursache", "type": "perception"},
+        {"id": "demokratie", "label": "Minderheitenschutz", "type": "democracy"},
+        {"id": "system", "label": "Wohnen, Arbeit, Verwaltung, Sicherheit", "type": "system"},
+        {"id": "woek", "label": "Stabilität durch Verfahren und Infrastruktur", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "massifiziert"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "remigration",
+    "title": "Remigration / Remigrationslotsen",
+    "cluster": "Migration / Identität",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Remigration / Remigrationslotsen",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Begriff normalisiert Rückführung und Ausschluss als verwaltbare Ordnungstechnik.",
+    "mechanisms": ["Ordnungstechnik-Frame", "Ausschlussnormalisierung", "Verwaltungsästhetik"],
+    "resonance_spaces": ["Scheinsicherheit", "Kontrollsehnsucht", "Abgrenzung", "Entlastung"],
+    "perception_shift": {
+      "visible": ["technische Lösung", "Rückführung als Ordnung", "Ausschluss als Verwaltung"],
+      "hidden": ["Rechtsstaat", "Menschenwürde", "Integrationserfolge", "Folgen für Zusammenhalt"]
+    },
+    "democratic_effects": ["Normalisierung von Ausschluss", "Minderheitenschutz unter Druck", "Rechtsstaatsrisiko", "Entsolidarisierung"],
+    "system_questions": ["Welche Migrations-, Integrations- und Rückkehrpolitik schützt Rechtsstaat, Menschenwürde, Sicherheit und gesellschaftliche Stabilität zugleich?"],
+    "woek_question": "Welche Migrations-, Integrations- und Rückkehrpolitik schützt Rechtsstaat, Menschenwürde, Sicherheit und gesellschaftliche Stabilität zugleich?",
+    "counterframe": "Rechtsstaatliche Migrationspolitik unterscheidet Schutz, Aufenthalt, Integration, Rückkehr und Sicherheit präzise. Sie ersetzt keine Menschen durch Verwaltungssprache.",
+    "radar": {
+      "angst": 3,
+      "wut": 2,
+      "misstrauen": 3,
+      "feindbild": 4,
+      "kontrollsehnsucht": 5,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 4,
+      "diskursverengung": 4,
+      "demokratierisiko": 4,
+      "entsolidarisierung": 5
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Remigration", "type": "narrative"},
+        {"id": "frame", "label": "Ausschluss als Verwaltung", "type": "mechanism"},
+        {"id": "resonanz", "label": "Scheinsicherheit", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Ordnung statt Menschen", "type": "perception"},
+        {"id": "demokratie", "label": "Rechtsstaat und Menschenwürde", "type": "democracy"},
+        {"id": "system", "label": "Integration, Schutz, Rückkehr, Sicherheit", "type": "system"},
+        {"id": "woek", "label": "Stabilität ohne Entwürdigung", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "normalisiert"},
+        {"source": "frame", "target": "resonanz", "verb": "entlastet"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "belastet"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
+  },
+  {
+    "id": "kehrtwende-180-grad",
+    "title": "Kehrtwende um 180 Grad",
+    "cluster": "Kontrolle / Freiheit",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Kehrtwende um 180 Grad",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Begriff verspricht Kontrolle durch radikalen Richtungswechsel und entwertet Lernen, Übergänge und differenzierte Lösungen.",
+    "mechanisms": ["radikale Eindeutigkeit", "Kontrollversprechen", "Komplexitätsreduktion"],
+    "resonance_spaces": ["Kontrollsehnsucht", "emotionale Entlastung", "Scheinsicherheit", "Orientierung"],
+    "perception_shift": {
+      "visible": ["klarer Bruch", "einfache Richtung", "schnelle Kontrolle"],
+      "hidden": ["Übergänge", "Folgekosten", "Lernfähigkeit", "Systemrückkopplungen"]
+    },
+    "democratic_effects": ["Diskursverengung", "Lernverweigerung", "Risikoverschiebung", "Planbarkeitsillusion"],
+    "system_questions": ["Welche Veränderung löst echte Ursachen - und welche erzeugt nur das Gefühl von Kontrolle?"],
+    "woek_question": "Welche Veränderung löst echte Ursachen - und welche erzeugt nur das Gefühl von Kontrolle?",
+    "counterframe": "Nicht jede Kehrtwende ist Lösung. Entscheidend ist, welche Zustände sich verbessern, welche Risiken sinken und welche Folgekosten sichtbar bleiben.",
+    "radar": {
+      "angst": 2,
+      "wut": 3,
+      "misstrauen": 3,
+      "feindbild": 2,
+      "kontrollsehnsucht": 5,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 2
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Kehrtwende", "type": "narrative"},
+        {"id": "frame", "label": "radikale Umkehr als Lösung", "type": "mechanism"},
+        {"id": "resonanz", "label": "Kontrollsehnsucht", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Eindeutigkeit statt Lernen", "type": "perception"},
+        {"id": "demokratie", "label": "Rückkopplung und Korrektur", "type": "democracy"},
+        {"id": "system", "label": "Folgekosten und Übergänge", "type": "system"},
+        {"id": "woek", "label": "Ursachenwirksame Veränderung", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "verspricht"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verengt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "blockiert"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "planwirtschaftliche-energiewende",
+    "title": "Planwirtschaftliche Energiewende",
+    "cluster": "Klima / Energie",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Planwirtschaftliche Energiewende",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame rahmt Klimapolitik als sozialistische Kontrolle und verdeckt fossile Abhängigkeiten, Preisvolatilität und Klimafolgekosten.",
+    "mechanisms": ["Sozialismusframe", "Kontrollframe", "Freiheitsverlust-Frame"],
+    "resonance_spaces": ["Misstrauen", "Wut", "Angst vor Freiheitsverlust", "Transformationsabwehr"],
+    "perception_shift": {
+      "visible": ["Staat als Kontrolle", "Markt gegen Klimapolitik", "Transformation als Zumutung"],
+      "hidden": ["fossile Abhängigkeit", "Klimafolgekosten", "Infrastrukturbedarf", "Investitionssicherheit"]
+    },
+    "democratic_effects": ["Delegitimierung von Transformation", "Verengung der Energiefrage", "Investitionsunsicherheit", "Misstrauen gegen Risikosteuerung"],
+    "system_questions": ["Welche Markt-, Infrastruktur- und Investitionslogik senkt Energieabhängigkeit, Kostenrisiken und Klimafolgen?"],
+    "woek_question": "Welche Markt-, Infrastruktur- und Investitionslogik senkt Energieabhängigkeit, Kostenrisiken und Klimafolgen?",
+    "counterframe": "Die Systemfrage ist nicht Staat gegen Markt. Sie lautet: Welche Mischung aus Markt, Investition, Standards und Rückkopplung senkt reale Risiken?",
+    "radar": {
+      "angst": 3,
+      "wut": 3,
+      "misstrauen": 4,
+      "feindbild": 3,
+      "kontrollsehnsucht": 2,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 2,
+      "diskursverengung": 3,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 2
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Planwirtschaftliche Energiewende", "type": "narrative"},
+        {"id": "frame", "label": "Klimapolitik als Kontrolle", "type": "mechanism"},
+        {"id": "resonanz", "label": "Misstrauen gegen Transformation", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Freiheit gegen Klimaschutz", "type": "perception"},
+        {"id": "demokratie", "label": "Transformationsfähigkeit", "type": "democracy"},
+        {"id": "system", "label": "Abhängigkeit, Netze, Preise, Folgekosten", "type": "system"},
+        {"id": "woek", "label": "Marktsignale für Resilienz", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "rahmt"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
+  },
+  {
+    "id": "klimadiktatur",
+    "title": "Klimadiktatur / Klimaextremismus / Klimapropaganda",
+    "cluster": "Klima / Energie",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Klimadiktatur / Klimaextremismus / Klimapropaganda",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame macht Klimaschutz zur Freiheitsbedrohung und verschiebt wissenschaftliche Risikosteuerung in einen Kulturkampf.",
+    "mechanisms": ["Freiheitsverlust-Frame", "Wissenschaftsmisstrauen", "Kulturkampf-Frame"],
+    "resonance_spaces": ["Angst", "Misstrauen", "Wut", "Abwehr gegen Transformation"],
+    "perception_shift": {
+      "visible": ["Bevormundung", "Propaganda", "Extremismusvorwurf"],
+      "hidden": ["Klimarisiko", "Gesundheit", "Versicherungsschäden", "Anpassungskosten"]
+    },
+    "democratic_effects": ["Wissenschaftsmisstrauen", "Diskursverengung", "Risikoverdrängung", "Blockade von Vorsorge"],
+    "system_questions": ["Welche Klimapolitik schützt Freiheit, Kaufkraft, Gesundheit und Lebensgrundlagen gleichzeitig?"],
+    "woek_question": "Welche Klimapolitik schützt Freiheit, Kaufkraft, Gesundheit und Lebensgrundlagen gleichzeitig?",
+    "counterframe": "Klimapolitik ist Risikosteuerung. Die Wirkungsfrage lautet, welche Maßnahmen Freiheit, Kaufkraft, Gesundheit, Versorgungssicherheit und Lebensgrundlagen zugleich schützen.",
+    "radar": {
+      "angst": 4,
+      "wut": 3,
+      "misstrauen": 4,
+      "feindbild": 4,
+      "kontrollsehnsucht": 4,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 4,
+      "entsolidarisierung": 3
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Klimadiktatur", "type": "narrative"},
+        {"id": "frame", "label": "Klimaschutz als Freiheitsverlust", "type": "mechanism"},
+        {"id": "resonanz", "label": "Wut und Abwehr", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Wissenschaft als Propaganda", "type": "perception"},
+        {"id": "demokratie", "label": "gemeinsame Risikowahrnehmung", "type": "democracy"},
+        {"id": "system", "label": "Klimarisiko, Gesundheit, Kosten", "type": "system"},
+        {"id": "woek", "label": "Freiheit durch Risikosenkung", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "emotionalisiert"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "verengt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "genderismus",
+    "title": "Genderismus / Regenbogenkult / politische Indoktrination",
+    "cluster": "Kulturkampf / Gesellschaft",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Genderismus / Regenbogenkult / politische Indoktrination",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame macht Vielfalt und Gleichberechtigung zur Bedrohung von Familie, Kindern und Normalität.",
+    "mechanisms": ["Kulturkampf-Frame", "Normalitätsframe", "Indoktrinationsframe"],
+    "resonance_spaces": ["Kränkung", "Kontrollverlust", "Angst um Kinder", "Zugehörigkeit durch Abgrenzung"],
+    "perception_shift": {
+      "visible": ["Bedrohung von Familie", "Normalität gegen Vielfalt", "Schule als Indoktrination"],
+      "hidden": ["Minderheitenschutz", "Selbstbestimmung", "Gewaltschutz", "pädagogische Sachlichkeit"]
+    },
+    "democratic_effects": ["Minderheitenabwertung", "Diskursverengung", "Entsolidarisierung", "Kulturkampfverstärkung"],
+    "system_questions": ["Welche Familien-, Bildungs- und Gleichstellungspolitik schützt Kinder, Würde, Vielfalt und Selbstbestimmung ohne Kulturkampf?"],
+    "woek_question": "Welche Familien-, Bildungs- und Gleichstellungspolitik schützt Kinder, Würde, Vielfalt und Selbstbestimmung ohne Kulturkampf?",
+    "counterframe": "Familie, Kinder und Würde werden nicht durch Abwertung geschützt. Eine wirkungsorientierte Bildungspolitik verbindet Schutz, Selbstbestimmung, Sachlichkeit und Respekt.",
+    "radar": {
+      "angst": 3,
+      "wut": 4,
+      "misstrauen": 3,
+      "feindbild": 4,
+      "kontrollsehnsucht": 3,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 4
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Genderismus", "type": "narrative"},
+        {"id": "frame", "label": "Vielfalt als Indoktrination", "type": "mechanism"},
+        {"id": "resonanz", "label": "Angst um Kinder", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Normalität gegen Vielfalt", "type": "perception"},
+        {"id": "demokratie", "label": "Minderheitenschutz", "type": "democracy"},
+        {"id": "system", "label": "Bildung, Würde, Gewaltschutz", "type": "system"},
+        {"id": "woek", "label": "Schutz ohne Kulturkampf", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "rahmt"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
+  },
+  {
+    "id": "medien-zensur",
+    "title": "Zensurbehörden / betreute Meinung / ÖRR-Frame",
+    "cluster": "Medien / Wahrheit",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Zensurbehörden / betreute Meinung / ÖRR",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame schwächt Vertrauen in Medien und journalistische Kontrolle, indem öffentliche Wahrheitsinfrastruktur als Manipulation gerahmt wird.",
+    "mechanisms": ["Wahrheitsinfrastruktur-Angriff", "Opferframe", "Medienmisstrauen"],
+    "resonance_spaces": ["Misstrauen", "Wut", "Selbstbestätigung", "Informationsabwehr"],
+    "perception_shift": {
+      "visible": ["Zensur", "betreute Meinung", "Manipulation durch Medien"],
+      "hidden": ["Quellenprüfung", "journalistische Kontrolle", "Pluralität", "Medienfehlerkorrektur"]
+    },
+    "democratic_effects": ["Medienvertrauensverlust", "Faktenresistenz", "Wahrheitsfragmentierung", "Diskursverengung"],
+    "system_questions": ["Welche Medienordnung stärkt Quellenklarheit, Pluralität, Kritikfähigkeit und demokratische Öffentlichkeit?"],
+    "woek_question": "Welche Medienordnung stärkt Quellenklarheit, Pluralität, Kritikfähigkeit und demokratische Öffentlichkeit?",
+    "counterframe": "Medienkritik ist notwendig. Wirkungsorientierte Medienkritik prüft Quellen, Macht, Fehlerkorrektur und Pluralität, ohne jede Wahrheitsinfrastruktur als Manipulation zu delegitimieren.",
+    "radar": {
+      "angst": 3,
+      "wut": 4,
+      "misstrauen": 5,
+      "feindbild": 4,
+      "kontrollsehnsucht": 4,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 5,
+      "demokratierisiko": 5,
+      "entsolidarisierung": 3
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Zensurbehörden", "type": "narrative"},
+        {"id": "frame", "label": "Medien als Manipulation", "type": "mechanism"},
+        {"id": "resonanz", "label": "Misstrauen", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Quellenkontrolle als Zensur", "type": "perception"},
+        {"id": "demokratie", "label": "gemeinsame Wirklichkeit", "type": "democracy"},
+        {"id": "system", "label": "Quellenklarheit und Pluralität", "type": "system"},
+        {"id": "woek", "label": "Kritikfähigkeit statt Wahrheitsbruch", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "delegitimiert"},
+        {"source": "frame", "target": "resonanz", "verb": "verstärkt"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "version": "modellrechnung-v1",
+  "stand": "2026-07",
+  "hinweis": "Alle Parameter sind Modellannahmen (quelle: modellannahme-v1). Sie illustrieren die Risikologik der Wirkungsökonomie und sind keine empirischen Marktdaten, keine Prognose und keine Anlage-, Kauf- oder Rechtsberatung.",
+  "szenarien": {
+    "moderat": {
+      "label": "Moderat",
+      "beschreibung": "Folgekosten werden nur langsam und lückenhaft eingepreist. Regeln bleiben weitgehend wie heute.",
+      "faktor": 0.6
+    },
+    "mittel": {
+      "label": "Mittel",
+      "beschreibung": "Folgekosten werden schrittweise eingepreist: CO2-Preise steigen planmäßig, Effizienzanforderungen werden umgesetzt.",
+      "faktor": 1.0
+    },
+    "streng": {
+      "label": "Streng",
+      "beschreibung": "Folgekosten werden zügig und breit eingepreist: strengere Regeln, höhere Preispfade, sensiblere Märkte und Versicherer.",
+      "faktor": 1.5
+    }
+  },
+  "auto": {
+    "quelle": "modellannahme-v1",
+    "antriebe": {
+      "benzin": { "label": "Benzin", "zusatzabschlag_prozentpunkte_pro_jahr": 2.5, "mehrkosten_cent_pro_km": 2.0 },
+      "diesel": { "label": "Diesel", "zusatzabschlag_prozentpunkte_pro_jahr": 3.0, "mehrkosten_cent_pro_km": 2.4 },
+      "hybrid": { "label": "Hybrid", "zusatzabschlag_prozentpunkte_pro_jahr": 1.2, "mehrkosten_cent_pro_km": 1.0 },
+      "elektro": { "label": "Elektro", "zusatzabschlag_prozentpunkte_pro_jahr": 0.2, "mehrkosten_cent_pro_km": 0.2 }
+    },
+    "alters_daempfung": {
+      "beschreibung": "Je älter das Fahrzeug, desto geringer der verbleibende Wert, den ein Zusatzabschlag treffen kann.",
+      "ab_jahren": 10,
+      "faktor": 0.6
+    },
+    "korridor_breite": 0.35,
+    "stufen_grenzen_prozent": { "niedrig_bis": 8, "mittel_bis": 20 }
+  },
+  "haus": {
+    "quelle": "modellannahme-v1",
+    "heizung": {
+      "waermepumpe": { "label": "Wärmepumpe", "punkte": 0 },
+      "fernwaerme": { "label": "Fernwärme", "punkte": 1 },
+      "gas": { "label": "Gasheizung", "punkte": 2 },
+      "oel": { "label": "Ölheizung", "punkte": 3 }
+    },
+    "effizienzklasse": {
+      "ab": { "label": "A/B (effizient)", "punkte": 0 },
+      "cd": { "label": "C/D", "punkte": 1 },
+      "ef": { "label": "E/F", "punkte": 2 },
+      "gh": { "label": "G/H (unsaniert alt)", "punkte": 3 }
+    },
+    "sanierungsstand": {
+      "frisch": { "label": "Umfassend saniert", "punkte": 0 },
+      "teil": { "label": "Teilsaniert", "punkte": 1 },
+      "unsaniert": { "label": "Lange nichts gemacht", "punkte": 2 }
+    },
+    "wertkorridor_prozent_pro_punkt": 2.2,
+    "korridor_breite": 0.35,
+    "stufen_grenzen_punkte": { "niedrig_bis": 1.9, "mittel_bis": 3.9, "erhoeht_bis": 6.4 },
+    "hebel_texte": {
+      "heizung": "Der Heizungstausch ist dein größter Hebel: Er senkt das Strandungsrisiko dieser Modellrechnung am stärksten.",
+      "effizienzklasse": "Die Gebäudehülle ist dein größter Hebel: Dämmung und Effizienz heben die Klasse und senken das Risiko spürbar.",
+      "sanierungsstand": "Ein Sanierungsfahrplan ist dein größter Hebel: Schon geplante, schrittweise Maßnahmen verkleinern den Risiko-Korridor."
+    }
+  },
+  "unternehmen": {
+    "quelle": "modellannahme-v1",
+    "logik": "Schwächstes-Feld-Prinzip: Die schlechteste Antwort bestimmt die Risikostufe (Reverse Merit Order).",
+    "fragen": [
+      {
+        "id": "umsatzanteil",
+        "feld": "Umsatzbasis",
+        "text": "Wie viel Umsatz hängt an emissions- oder schadensintensiven Produkten und Prozessen?",
+        "antworten": [
+          { "label": "Unter 10 %", "punkte": 0 },
+          { "label": "10-30 %", "punkte": 1 },
+          { "label": "30-60 %", "punkte": 2 },
+          { "label": "Über 60 %", "punkte": 3 }
+        ]
+      },
+      {
+        "id": "inputabhaengigkeit",
+        "feld": "Abhängigkeit",
+        "text": "Wie stark hängt das Geschäftsmodell an einem einzelnen kritischen Inputpreis (Energie, Rohstoff, Vorprodukt)?",
+        "antworten": [
+          { "label": "Breit diversifiziert", "punkte": 0 },
+          { "label": "Ein Schwerpunkt, Alternativen vorhanden", "punkte": 1 },
+          { "label": "Ein dominanter Input, Wechsel schwierig", "punkte": 2 },
+          { "label": "Vollständig von einem Input abhängig", "punkte": 3 }
+        ]
+      },
+      {
+        "id": "anpassung",
+        "feld": "Anpassungsfähigkeit",
+        "text": "Wie viel Spielraum gibt es, in Umbau und Alternativen zu investieren?",
+        "antworten": [
+          { "label": "Laufende Transformation, Budget vorhanden", "punkte": 0 },
+          { "label": "Pläne vorhanden, Umsetzung beginnt", "punkte": 1 },
+          { "label": "Bewusstsein da, kaum Spielraum", "punkte": 2 },
+          { "label": "Kein Plan, kein Spielraum", "punkte": 3 }
+        ]
+      },
+      {
+        "id": "versicherbarkeit",
+        "feld": "Versicherbarkeit",
+        "text": "Wie entwickeln sich Versicherungsprämien und -bedingungen für Standorte und Betrieb?",
+        "antworten": [
+          { "label": "Stabil, keine Auffälligkeiten", "punkte": 0 },
+          { "label": "Prämien steigen spürbar", "punkte": 1 },
+          { "label": "Einzelne Risiken werden ausgeschlossen", "punkte": 2 },
+          { "label": "Deckung wurde bereits verweigert oder gekündigt", "punkte": 3 }
+        ]
+      },
+      {
+        "id": "zukunftsumsatz",
+        "feld": "Zukunftsfähige Umsätze",
+        "text": "Welcher Umsatzanteil kommt aus Angeboten, die auch unter strenger Einpreisung von Folgekosten tragfähig bleiben?",
+        "antworten": [
+          { "label": "Über 60 %", "punkte": 0 },
+          { "label": "30-60 %", "punkte": 1 },
+          { "label": "10-30 %", "punkte": 2 },
+          { "label": "Unter 10 %", "punkte": 3 }
+        ]
+      }
+    ],
+    "stufen": {
+      "0": { "label": "Niedrig", "klasse": "gruen", "text": "Kein Feld schlägt aus. Das Modell sieht aktuell keine dominante Schwachstelle." },
+      "1": { "label": "Beobachten", "klasse": "gruen", "text": "Ein Feld zeigt erste Belastung. Beobachten und im Blick behalten." },
+      "2": { "label": "Erhöht", "klasse": "gelb", "text": "Mindestens ein Feld ist deutlich belastet. Hier entsteht Strandungsrisiko, solange nichts passiert." },
+      "3": { "label": "Hoch", "klasse": "rot", "text": "Mindestens ein Feld ist kritisch. Nach der Schwächstes-Feld-Logik dominiert es das Gesamtrisiko - unabhängig von guten Werten anderswo." }
+    },
+    "szenario_verschaerfung": {
+      "beschreibung": "Im strengen Szenario rückt die Bewertung eine halbe Stufe nach oben, weil Folgekosten schneller eingepreist werden.",
+      "streng_zuschlag_punkte": 0.5
+    }
+  }
+}

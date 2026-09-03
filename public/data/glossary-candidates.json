@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-08-28T05:39:52.069Z",
+  "candidates": [
+    {
+      "candidateLabel": "Datenstandard",
+      "suggestedTermId": "datenstandard",
+      "status": "needs-human-review",
+      "sourceDocument": "methodik/datenbasis.html",
+      "sourceSection": "Datenstandards",
+      "contextExcerpt": "Standardisierte Daten können Berichtsdaten in Steuerungsdaten übersetzen.",
+      "possibleDefinition": "Ein Datenstandard legt fest, wie Informationen strukturiert, vergleichbar und maschinenlesbar erfasst werden.",
+      "relatedExistingTerms": [
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs"
+      ],
+      "risk": "Kann als reine Bürokratie missverstanden werden.",
+      "proposal": "neu aufnehmen"
+    },
+    {
+      "candidateLabel": "Stranded Assets im Gebäudebestand",
+      "suggestedTermId": "stranded-assets-gebaeudebestand",
+      "status": "needs-human-review",
+      "sourceDocument": "blog/stranded-assets-gebaeudebestand.html",
+      "sourceSection": "Wohnen",
+      "contextExcerpt": "Bestandsimmobilien können durch Energiebedarf, Sanierungsstau, Klimarisiken und Finanzierung unter Druck geraten.",
+      "possibleDefinition": "Unterbegriff für Stranded-Asset-Risiken bei bestehenden Gebäuden.",
+      "relatedExistingTerms": [
+        "stranded-assets",
+        "transitionsrisiko",
+        "versicherbarkeit"
+      ],
+      "risk": "Nicht als gesetzlicher Stichtag oder automatischer Wertverlust formulieren.",
+      "proposal": "mit bestehendem Begriff mappen"
+    }
+  ]
+}

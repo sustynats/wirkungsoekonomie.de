@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/reality-check-candidate-2.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reality_candidate_id", "triggering_evidence_event_ids", "linked_impact_case_id", "priority", "relation_types", "reason_for_recheck", "attribution_status", "required_review_questions", "publication_status"],
+  "properties": {
+    "reality_candidate_id": { "type": "string", "minLength": 3 },
+    "triggering_evidence_event_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "linked_impact_case_id": { "type": "string", "minLength": 3 },
+    "priority": { "enum": ["P0", "P1", "P2", "P3"] },
+    "relation_types": { "type": "array", "minItems": 1, "items": { "enum": ["SUPPORTS_MECHANISM", "CONTRADICTS_MECHANISM", "CHANGES_BASELINE", "CHANGES_CONTEXT", "MATERIALIZES_RISK", "MATERIALIZES_POSITIVE_POTENTIAL", "TRIGGERS_REALITY_CHECK", "AFFECTS_COUNTERFACTUAL", "AFFECTS_DISTRIBUTION", "AFFECTS_RESILIENCE", "CONTEXT_ONLY"] } },
+    "reason_for_recheck": { "type": "string", "minLength": 1 },
+    "attribution_status": { "enum": ["EXTERNAL_CONTEXT", "NO_ATTRIBUTION", "POSSIBLE_CONTRIBUTION", "PLAUSIBLE_CONTRIBUTION", "PARTIAL_ATTRIBUTION", "DIRECT_ATTRIBUTION", "OPEN"] },
+    "required_review_questions": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "publication_status": { "enum": ["APPROVED_REALITY_CHECK_CANDIDATE", "FACH_REVIEW_REQUIRED", "BLOCKED"] }
+  }
+}

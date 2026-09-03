@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "WOEK-MV-VOLT-2026-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "jurisdiction": "mecklenburg-vorpommern",
+    "party": "Volt",
+    "artifact_id": "MV-LTW-2026-VOLT-WAHLPROGRAMM",
+    "artifact_sha256": "a992f71adf0b37a633c60d9ac1e8923680e8a7e01ac428bf2e86036294e57663"
+  },
+  "input": {
+    "ledger_manifest": "data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-volt-v1/manifest.json",
+    "logical_descriptor_sha256": "d63979e30f2083f49956754f401c0f03a5a34d76bde07843ea12e39163ce5587"
+  },
+  "overlay": {
+    "reviewed_page_count": 67,
+    "source_unit_count": 578,
+    "effect_atom_count": 318,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 318,
+    "non_effect_context_reviewed_count": 311,
+    "genuine_fach_review_required_count": 0,
+    "programme_source_object_review_complete": true,
+    "programme_analysis_terminal_under_delegated_protocol": true,
+    "effect_credit_allowed": false
+  },
+  "apply_contract": {
+    "preserve_all_other_programmes": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "consumer_must_preserve_existing_explicit_fach": true,
+    "consumer_must_not_materialize_missing_fach_fields": true
+  },
+  "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+  "generated_at": "2026-08-26",
+  "descriptor_sha256": "6aacfc9f27ea9abbc7443ea8cf80d9e2b6e073ee632795f00e432351237ba570"
+}

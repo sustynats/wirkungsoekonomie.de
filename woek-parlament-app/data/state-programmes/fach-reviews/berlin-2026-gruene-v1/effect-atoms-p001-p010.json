@@ -1,0 +1,2622 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-GRUENE-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "EFFECT_ATOMS",
+  "page_from": 1,
+  "page_to": 10,
+  "records": [
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A01",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A01",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "PRÄAMBEL Niemand sagt, dass es leicht wird.",
+      "source_text_sha256": "6a2fb4797056d95a6a22721c736c68ff3f3696b8b213cfea1fbf505965bb390b",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "PRÄAMBEL Niemand sagt, dass es leicht wird.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A01 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „PRÄAMBEL Niemand sagt, dass es leicht wird.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A02",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A02",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Aber gut kann es werden.",
+      "source_text_sha256": "303bedce2bb321209135463292927d178e2d1787ccac44912580b3078b45ded3",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Aber gut kann es werden.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A02 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Aber gut kann es werden.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A03",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A03",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Und zwar richtig gut!",
+      "source_text_sha256": "e4f658dd38d836085ee64ccd11ded0b53521f20be88fc3cdad7c6e4c5a87f945",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Und zwar richtig gut!",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A03 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Und zwar richtig gut!“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A04",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A04",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Wenn wir zusammenstehen.",
+      "source_text_sha256": "5d2da56d84afc870195aae38c221c5b8d2f04008c89676f293aa05c490065787",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Wenn wir zusammenstehen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A04 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Wenn wir zusammenstehen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A05",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A05",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Wenn wir Mut haben.",
+      "source_text_sha256": "876b8fc581ea223156e1da0b89a61cff0bd939951331faae16516e1a1d06432d",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Wenn wir Mut haben.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A05 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Wenn wir Mut haben.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A06",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A06",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Und wenn wir mit Überzeugung und Leidenschaft für ein besseres Berlin kämpfen.",
+      "source_text_sha256": "55dddd76e9388debfe8e368f5967571886a297f5c41447021ebc55c9fde9ca0b",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Und wenn wir mit Überzeugung und Leidenschaft für ein besseres Berlin kämpfen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A06 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Und wenn wir mit Überzeugung und Leidenschaft für ein besseres Berlin kämpfen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A07",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A07",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Zusammen ist ein Berlin, wie wir es lieben, auch in Zukunft möglich.",
+      "source_text_sha256": "23dc3136774e85cca3c8a8c746cc2161f5dab9acef71a0de468381b9b9bc8818",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Zusammen ist ein Berlin, wie wir es lieben, auch in Zukunft möglich.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A07 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Zusammen ist ein Berlin, wie wir es lieben, auch in Zukunft möglich.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A08",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A08",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Das Berlin der Freiheit, der Weltoffenheit, der Schnauze mit Herz, der Einheit, der Vielfalt, der Gegensätze und der unzähligen Möglichkeiten.",
+      "source_text_sha256": "715f42f3198063bb9db0c9850ab8dc9e61ae9994834c865dca02193d9c209678",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Das Berlin der Freiheit, der Weltoffenheit, der Schnauze mit Herz, der Einheit, der Vielfalt, der Gegensätze und der unzähligen Möglichkeiten.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A08 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Das Berlin der Freiheit, der Weltoffenheit, der Schnauze mit Herz, der Einheit, der Vielfalt, der Gegensätze und der unzähligen Möglichkeiten.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A09",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A09",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, in dem wie in keiner anderen Stadt Ost und West zusammenwachsen – mit Konflikten und Chancen zugleich.",
+      "source_text_sha256": "4f02caa71831e4ce1856133ce34f556b0b242616975112eddc926c72c8151acd",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, in dem wie in keiner anderen Stadt Ost und West zusammenwachsen – mit Konflikten und Chancen zugleich.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A09 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, in dem wie in keiner anderen Stadt Ost und West zusammenwachsen – mit Konflikten und Chancen zugleich.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A10",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A10",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Das Berlin, das weltweit ein Anziehungspunkt ist.",
+      "source_text_sha256": "1255581b1a01235a3aba430470bfbf529d756dadbce9f85c6d4d688e7829d454",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Das Berlin, das weltweit ein Anziehungspunkt ist.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A10 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Das Berlin, das weltweit ein Anziehungspunkt ist.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A11",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A11",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Das Berlin der Clubs und der Gartenlauben, der Start-ups und Traditionsbetriebe, der Opern und Kegelbahnen, der Modeschauen und Skatvereine.",
+      "source_text_sha256": "42520ef213fcfd47b032da96052b135f4aa836ab333f990c5ce3eb3a2ff1df9c",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Das Berlin der Clubs und der Gartenlauben, der Start-ups und Traditionsbetriebe, der Opern und Kegelbahnen, der Modeschauen und Skatvereine.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A11 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Das Berlin der Clubs und der Gartenlauben, der Start-ups und Traditionsbetriebe, der Opern und Kegelbahnen, der Modeschauen und Skatvereine.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A12",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A12",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das von Kreativwirtschaft, Biotech, Robotik und Handwerk lebt.",
+      "source_text_sha256": "bef9811b637e7e703c199111a188b7b14d70babb6e72bccc5d2e44fc5c78e421",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das von Kreativwirtschaft, Biotech, Robotik und Handwerk lebt.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A12 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, das von Kreativwirtschaft, Biotech, Robotik und Handwerk lebt.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A13",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A13",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "In Berlin essen wir Döner in Paillette und gehen zum Fine Dining im Jogginganzug.",
+      "source_text_sha256": "e9455f38fd556fa35dd37b545a102ab200f0c29505402f7693724a7bfcf0788d",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "In Berlin essen wir Döner in Paillette und gehen zum Fine Dining im Jogginganzug.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A13 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „In Berlin essen wir Döner in Paillette und gehen zum Fine Dining im Jogginganzug.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A14",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A14",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Doch Berlin wird gerade immer grauer, härter und dreckiger.",
+      "source_text_sha256": "0099bcb0da823e086cfb6d45583adc13f58875b036fc16f159d569752982a467",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Doch Berlin wird gerade immer grauer, härter und dreckiger.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A14 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Doch Berlin wird gerade immer grauer, härter und dreckiger.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A15",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A15",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Wir wollen es weiter schillernd, pulsierend, vielfältig und lebenswert für alle – in allen Bezirken.",
+      "source_text_sha256": "bb63c7434bb44559af6a0877f4d2b7897f3a5c8bad276afd8296b0ece98efe0a",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Wir wollen es weiter schillernd, pulsierend, vielfältig und lebenswert für alle – in allen Bezirken.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A15 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Wir wollen es weiter schillernd, pulsierend, vielfältig und lebenswert für alle – in allen Bezirken.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A16",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A16",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Das Berlin, das wir so lieben, ist nicht selbstverständlich; es braucht unser Engagement und muss immer verteidigt werden: mit einer Million zusätzlicher Bäume, günstigen Mieten und Plätzen, auf denen man sich gerne aufhält.",
+      "source_text_sha256": "8d055388f220fa225be26933f8aed07513e2a5406ee6dbcedaa1a50773b0cac4",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Das Berlin, das wir so lieben, ist nicht selbstverständlich; es braucht unser Engagement und muss immer verteidigt werden: mit einer Million zusätzlicher Bäume, günstigen Mieten und Plätzen, auf denen man sich gerne aufhält.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A16 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Das Berlin, das wir so lieben, ist nicht selbstverständlich; es braucht unser Engagement und muss immer verteidigt werden: mit einer Million zusätzlicher Bäume, günstigen Mieten und Plätzen, auf denen man sich gerne aufhält.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A17",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A17",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Wir wollen ein Berlin mit der Sicherheit, sich ohne Angst frei bewegen und händchenhaltend über die Straßen laufen zu können, ganz egal, wen man liebt oder woran man glaubt.",
+      "source_text_sha256": "6001727450825c57cb9c26e5743cf57d21c592ff03355c21b5d2cea09d4835e0",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Wir wollen ein Berlin mit der Sicherheit, sich ohne Angst frei bewegen und händchenhaltend über die Straßen laufen zu können, ganz egal, wen man liebt oder woran man glaubt.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A17 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Wir wollen ein Berlin mit der Sicherheit, sich ohne Angst frei bewegen und händchenhaltend über die Straßen laufen zu können, ganz egal, wen man liebt oder woran man glaubt.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A18",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A18",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das resilient aufgestellt ist gegen Bedrohungen von außen und von innen, auch im digitalen Raum.",
+      "source_text_sha256": "32279e682f9e0c7818985a1860f2b292eeb719e20ecf1dce2548776fd3b15c3d",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das resilient aufgestellt ist gegen Bedrohungen von außen und von innen, auch im digitalen Raum.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A18 (DIGITAL_DATA_AI) ist an p007:u0016 exakt an „Ein Berlin, das resilient aufgestellt ist gegen Bedrohungen von außen und von innen, auch im digitalen Raum.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A19",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A19",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das pulsiert und lebt, mit Kreativen und Kulturschaffenden aus aller Welt, das bunt statt grau ist.",
+      "source_text_sha256": "9dd2ba2b4fc7bf36e6ea6b9425634909805ebd5d59ffa82f83323e24d1c71906",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das pulsiert und lebt, mit Kreativen und Kulturschaffenden aus aller Welt, das bunt statt grau ist.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A19 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, das pulsiert und lebt, mit Kreativen und Kulturschaffenden aus aller Welt, das bunt statt grau ist.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A20",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A20",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das weiter für Frauenrechte kämpft und in dem echte Gleichberechtigung möglich ist.",
+      "source_text_sha256": "1bb67d5bab61a9a7ade40f4504a8063ffe01c00b0d782aa11b6adcb4757f4246",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das weiter für Frauenrechte kämpft und in dem echte Gleichberechtigung möglich ist.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A20 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, das weiter für Frauenrechte kämpft und in dem echte Gleichberechtigung möglich ist.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A21",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A21",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das der Wissenschaft zuhört und sich für eine Migrations- und Asylpolitik der humanitären Vernunft einsetzt.",
+      "source_text_sha256": "8296ba1dfc262ea3e9663a43791bd4d4ba45fec13d61b8a74ca952a664404f78",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das der Wissenschaft zuhört und sich für eine Migrations- und Asylpolitik der humanitären Vernunft einsetzt.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A21 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, das der Wissenschaft zuhört und sich für eine Migrations- und Asylpolitik der humanitären Vernunft einsetzt.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A22",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A22",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das schon lange selbstverständlich eine Migrationsgesellschaft ist und sich den erstarkenden Rechtsextremen und dem wachsenden Antisemitismus und Rassismus in den Weg stellt.",
+      "source_text_sha256": "8a0b7113632c683d9f798409619ae2bbeca680d8a78c93cf6cc6fd9fee6acf71",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das schon lange selbstverständlich eine Migrationsgesellschaft ist und sich den erstarkenden Rechtsextremen und dem wachsenden Antisemitismus und Rassismus in den Weg stellt.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A22 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, das schon lange selbstverständlich eine Migrationsgesellschaft ist und sich den erstarkenden Rechtsextremen und dem wachsenden Antisemitismus und Rassismus in den Weg stellt.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A23",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A23",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das Diskriminierung auch dort bekämpft, wo sie strukturell wirkt: in Behörden, Bildungseinrichtungen, auf dem Wohnungs- und Arbeitsmarkt.",
+      "source_text_sha256": "8c7dc08bf9b78e6ed570d19dedd740e5ea04ae65fb8c928e2c39d57c7cfbf8b1",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das Diskriminierung auch dort bekämpft, wo sie strukturell wirkt: in Behörden, Bildungseinrichtungen, auf dem Wohnungs- und Arbeitsmarkt.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A23 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, das Diskriminierung auch dort bekämpft, wo sie strukturell wirkt: in Behörden, Bildungseinrichtungen, auf dem Wohnungs- und Arbeitsmarkt.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0016-A24",
+      "atom_id": "BE-GRUENE-2026-SU-0016-A24",
+      "source_unit_id": "BE-GRUENE-2026-SU-0016",
+      "pdf_page": 7,
+      "pdf_pages": [
+        7
+      ],
+      "source_locator": "p007:u0016",
+      "source_excerpt": "Ein Berlin, das funktioniert: in dem die S-Bahn rechtzeitig kommt, die U-Bahn in schnellem Takt fährt und jede*r sicher von A nach B kommt, egal",
+      "source_text_sha256": "ce8f0e6850769fa4fd1df3316bfdb9553f76f870daf5ec13d448547137f4f27e",
+      "source_parent_text_sha256": "2a4347d24a4e9e7cb86ecd72739efeb300f509c279da3fa54dde39ef90e4b8b2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das funktioniert: in dem die S-Bahn rechtzeitig kommt, die U-Bahn in schnellem Takt fährt und jede*r sicher von A nach B kommt, egal",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0016-A24 (GENERAL_POLICY_INSTRUMENT) ist an p007:u0016 exakt an „Ein Berlin, das funktioniert: in dem die S-Bahn rechtzeitig kommt, die U-Bahn in schnellem Takt fährt und jede*r sicher von A nach B kommt, egal“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p007:u0016"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A01",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A01",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "PRÄAMBEL ob zu Fuß, mit dem Rad oder mit dem Auto.",
+      "source_text_sha256": "f0b3e6ee8040bb87dd964d1b5b15e6b48131abfb2cd2fb12f6214ab130ad42ba",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "PRÄAMBEL ob zu Fuß, mit dem Rad oder mit dem Auto.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A01 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „PRÄAMBEL ob zu Fuß, mit dem Rad oder mit dem Auto.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A02",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A02",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Ein Berlin, in dem jedes Kind gut aufwächst und in Ruhe und mit Freude lernen kann, egal wo es wohnt, was die Eltern machen und welche Schulen es besucht.",
+      "source_text_sha256": "c2d3b50e0cf0aa60a89f6e62190301c5dfb326edd681083e1b7e7ebdc363257f",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, in dem jedes Kind gut aufwächst und in Ruhe und mit Freude lernen kann, egal wo es wohnt, was die Eltern machen und welche Schulen es besucht.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A02 (DIGITAL_DATA_AI) ist an p008:u0017 exakt an „Ein Berlin, in dem jedes Kind gut aufwächst und in Ruhe und mit Freude lernen kann, egal wo es wohnt, was die Eltern machen und welche Schulen es besucht.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A03",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A03",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Ein Berlin, in dem Wirtschaft und Wissenschaft eine wichtige Rolle spielen und in dem unsere Verwaltung in Land und Bezirken endlich digital und schnell arbeiten kann.",
+      "source_text_sha256": "97e2e2bf8b31b9e84635bdd7d85c1ce8083a60e8714070b77a375092502cd0e5",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, in dem Wirtschaft und Wissenschaft eine wichtige Rolle spielen und in dem unsere Verwaltung in Land und Bezirken endlich digital und schnell arbeiten kann.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A03 (DIGITAL_DATA_AI) ist an p008:u0017 exakt an „Ein Berlin, in dem Wirtschaft und Wissenschaft eine wichtige Rolle spielen und in dem unsere Verwaltung in Land und Bezirken endlich digital und schnell arbeiten kann.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A04",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A04",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Ein Berlin, in dem die Straßen, Plätze und Parks sauber sind und in dem es genügend Wohnungen gibt, die bezahlbar sind und klimafreundlich geheizt werden.",
+      "source_text_sha256": "e9c5fd6d7fd2c50e53d6fb9f7b275e76aa20d0b6ce983a7e6b9439b6d7487d30",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, in dem die Straßen, Plätze und Parks sauber sind und in dem es genügend Wohnungen gibt, die bezahlbar sind und klimafreundlich geheizt werden.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A04 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Ein Berlin, in dem die Straßen, Plätze und Parks sauber sind und in dem es genügend Wohnungen gibt, die bezahlbar sind und klimafreundlich geheizt werden.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A05",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A05",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Ein Berlin, in dem Bienen und Schmetterlinge fliegen, Hunde in Auslaufgebieten herumtollen und einem Füchse in Reinickendorf und Hasen in Neukölln begegnen.",
+      "source_text_sha256": "12ea215dab33ecf2f203162245fd0bde362ba946dc03772ac85aa43463933d66",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, in dem Bienen und Schmetterlinge fliegen, Hunde in Auslaufgebieten herumtollen und einem Füchse in Reinickendorf und Hasen in Neukölln begegnen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A05 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Ein Berlin, in dem Bienen und Schmetterlinge fliegen, Hunde in Auslaufgebieten herumtollen und einem Füchse in Reinickendorf und Hasen in Neukölln begegnen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A06",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A06",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Ein Berlin, in dem ein gesundes, sicheres und gutes Leben in jedem Alter trotz der Klimakrise möglich ist.",
+      "source_text_sha256": "dcbf684bb5d2350a1709b7a2e8ae32d1ef47f1eb854de87e43f005b87984ca7d",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, in dem ein gesundes, sicheres und gutes Leben in jedem Alter trotz der Klimakrise möglich ist.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A06 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Ein Berlin, in dem ein gesundes, sicheres und gutes Leben in jedem Alter trotz der Klimakrise möglich ist.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A07",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A07",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Ein Berlin, das auch in Krisen funktioniert.",
+      "source_text_sha256": "3f42d106744e32a97bff7c880a3aa52acc13ed9f3a10ac80a0cf5a55c7741d1d",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Ein Berlin, das auch in Krisen funktioniert.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A07 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Ein Berlin, das auch in Krisen funktioniert.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A08",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A08",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Doch die von der CDU geführte Regierung arbeitet am Gegenteil, indem sie alles kaputtkürzt, was wir brauchen und lieben.",
+      "source_text_sha256": "e43177806e4260273ddc594177db27e30b587e618bda010f656302abbd8b037e",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Doch die von der CDU geführte Regierung arbeitet am Gegenteil, indem sie alles kaputtkürzt, was wir brauchen und lieben.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A08 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Doch die von der CDU geführte Regierung arbeitet am Gegenteil, indem sie alles kaputtkürzt, was wir brauchen und lieben.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A09",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A09",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Es kommt jetzt darauf an, für dieses Berlin zu kämpfen.",
+      "source_text_sha256": "fe1cb026226d8ca9c4dc78c245ba274e36acdafad0a6683363203e86b3ee57af",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Es kommt jetzt darauf an, für dieses Berlin zu kämpfen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A09 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Es kommt jetzt darauf an, für dieses Berlin zu kämpfen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A10",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A10",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Die Welt ist im Umbruch: Überall sind autoritäre, rassistische, frauenfeindliche und rechte Bewegungen auf dem Vormarsch, die Ängste schüren, Freiräume bedrohen und an den Grundfesten der Demokratie rütteln.",
+      "source_text_sha256": "ddc8c8efb6cbe5563ec11e44dfd24468880ee165474a2ed987918e3708222bc3",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Die Welt ist im Umbruch: Überall sind autoritäre, rassistische, frauenfeindliche und rechte Bewegungen auf dem Vormarsch, die Ängste schüren, Freiräume bedrohen und an den Grundfesten der Demokratie rütteln.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A10 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Die Welt ist im Umbruch: Überall sind autoritäre, rassistische, frauenfeindliche und rechte Bewegungen auf dem Vormarsch, die Ängste schüren, Freiräume bedrohen und an den Grundfesten der Demokratie rütteln.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A11",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A11",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Krisen hinterlassen bei uns allen Spuren.",
+      "source_text_sha256": "48193338c5cc818bbe9a430e8c4431e416f21501030cbd808362332172e20d0c",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Krisen hinterlassen bei uns allen Spuren.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A11 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Krisen hinterlassen bei uns allen Spuren.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A12",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A12",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Aber sie dürfen uns nicht lähmen.",
+      "source_text_sha256": "fcbed26bfd7c5536eb7567cab5cb2a29c98944b8a550aabbb3785b645df58dbb",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Aber sie dürfen uns nicht lähmen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A12 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Aber sie dürfen uns nicht lähmen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A13",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A13",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Veränderungen sind möglich, die Geschichte der Europäischen Union und die Wiedervereinigung haben gezeigt, dass Dialog und Kooperation Mauern überwinden können.",
+      "source_text_sha256": "bd5e9b4643a90317dd5cfa2e9a4013e057d076b118c5c863d5c6cf874095dcff",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Veränderungen sind möglich, die Geschichte der Europäischen Union und die Wiedervereinigung haben gezeigt, dass Dialog und Kooperation Mauern überwinden können.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EXTERNAL_COMPETENCE_ADVOCACY",
+      "missing_review_inputs": [
+        "requested_external_instrument",
+        "competent_decision_maker_and_legal_route",
+        "adoption_and_implementation_path",
+        "operational_affected_group_or_system",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A13 (EXTERNAL_COMPETENCE_ADVOCACY) ist an p008:u0017 exakt an „Veränderungen sind möglich, die Geschichte der Europäischen Union und die Wiedervereinigung haben gezeigt, dass Dialog und Kooperation Mauern überwinden können.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam requested_external_instrument, competent_decision_maker_and_legal_route, adoption_and_implementation_path, operational_affected_group_or_system, baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A14",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A14",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Wir, unsere Stadt, unser Berlin, aber auch wir als BÜNDNIS 90/DIE GRÜNEN Berlin haben in schwierigen Zeiten schon immer unseren eigenen Weg gesucht, indem wir mit Realismus die Herausforderungen anerkennen, mit Kreativität neue Lösungen gemeinsam umsetzen.",
+      "source_text_sha256": "65ce6c788164e24834db18da3e80ba7b55d911446c04ee57b2ead533cfc2e18a",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Wir, unsere Stadt, unser Berlin, aber auch wir als BÜNDNIS 90/DIE GRÜNEN Berlin haben in schwierigen Zeiten schon immer unseren eigenen Weg gesucht, indem wir mit Realismus die Herausforderungen anerkennen, mit Kreativität neue Lösungen gemeinsam umsetzen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A14 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Wir, unsere Stadt, unser Berlin, aber auch wir als BÜNDNIS 90/DIE GRÜNEN Berlin haben in schwierigen Zeiten schon immer unseren eigenen Weg gesucht, indem wir mit Realismus die Herausforderungen anerkennen, mit Kreativität neue Lösungen gemeinsam umsetzen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A15",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A15",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Wir wollen von der Ratlosigkeit ins Tun kommen, um Berlin als Leuchtturm der Freiheit in einer Welt voller Umbrüche zu sichern.",
+      "source_text_sha256": "b344c54e94beec7d4efe028c241135675abe2199396b0b79c09100f0b8cb3d96",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Wir wollen von der Ratlosigkeit ins Tun kommen, um Berlin als Leuchtturm der Freiheit in einer Welt voller Umbrüche zu sichern.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A15 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Wir wollen von der Ratlosigkeit ins Tun kommen, um Berlin als Leuchtturm der Freiheit in einer Welt voller Umbrüche zu sichern.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A16",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A16",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Denn eines zeichnet uns in dieser Stadt aus: Wir sind vielleicht rau im Ton, aber wenn’s drauf ankommt, packen wir mit an.",
+      "source_text_sha256": "3d4024230038e6a09eb0a14c7576f7ee61f2004820dd560f3580f7e5a9b3cb02",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Denn eines zeichnet uns in dieser Stadt aus: Wir sind vielleicht rau im Ton, aber wenn’s drauf ankommt, packen wir mit an.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A16 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Denn eines zeichnet uns in dieser Stadt aus: Wir sind vielleicht rau im Ton, aber wenn’s drauf ankommt, packen wir mit an.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A17",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A17",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Bei dieser Wahl wird jetzt schon Geschichte geschrieben: Erstmals dürfen auch 16-Jährige in Berlin mitwählen.",
+      "source_text_sha256": "4b66f7c03cefdf174010e7deb3d73fdad6d3fb6a898fed033eab7c2fb896e6bb",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Bei dieser Wahl wird jetzt schon Geschichte geschrieben: Erstmals dürfen auch 16-Jährige in Berlin mitwählen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A17 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Bei dieser Wahl wird jetzt schon Geschichte geschrieben: Erstmals dürfen auch 16-Jährige in Berlin mitwählen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A18",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A18",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Wir haben es geschafft, das Wahlalter zu senken!",
+      "source_text_sha256": "5036968ab83d63cba51ad6ea76e0db70fd61e1a79cfdf766957fc6b920b1c7ff",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Wir haben es geschafft, das Wahlalter zu senken!",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A18 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Wir haben es geschafft, das Wahlalter zu senken!“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A19",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A19",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Politik trifft heute Entscheidungen, die vor allem Kinder und junge Menschen langfristig betreffen, daher ist es unerlässlich, dass sie mit über ihre Zukunft bestimmen dürfen.",
+      "source_text_sha256": "1f745fe9d11e41cc682a0beda994b936d2b5e37ae99ab00c6d49ff9c18e2041a",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Politik trifft heute Entscheidungen, die vor allem Kinder und junge Menschen langfristig betreffen, daher ist es unerlässlich, dass sie mit über ihre Zukunft bestimmen dürfen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A19 (DIGITAL_DATA_AI) ist an p008:u0017 exakt an „Politik trifft heute Entscheidungen, die vor allem Kinder und junge Menschen langfristig betreffen, daher ist es unerlässlich, dass sie mit über ihre Zukunft bestimmen dürfen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A20",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A20",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Berlin ist eine Stadt der Vielen.",
+      "source_text_sha256": "dea5cbf76eca8c3df911fb266209c6ef409e326e7fd8f3c427b945d345aba55a",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Berlin ist eine Stadt der Vielen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A20 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Berlin ist eine Stadt der Vielen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A21",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A21",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Wer hier lebt, arbeitet, lernt und seine Kinder großzieht, gehört dazu, unabhängig von Pass, Herkunft oder Aufenthaltsstatus.",
+      "source_text_sha256": "07f4832fe4331ba54dc2e2b043d57eda0c4f72eeda7839cf4b56f474e9887147",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Wer hier lebt, arbeitet, lernt und seine Kinder großzieht, gehört dazu, unabhängig von Pass, Herkunft oder Aufenthaltsstatus.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "DIGITAL_DATA_AI",
+      "missing_review_inputs": [
+        "functional_and_user_scope",
+        "data_governance_privacy_and_security",
+        "procurement_interoperability_and_exit_path",
+        "operating_capacity_accessibility_and_timeline",
+        "service_or_access_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A21 (DIGITAL_DATA_AI) ist an p008:u0017 exakt an „Wer hier lebt, arbeitet, lernt und seine Kinder großzieht, gehört dazu, unabhängig von Pass, Herkunft oder Aufenthaltsstatus.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam functional_and_user_scope, data_governance_privacy_and_security, procurement_interoperability_and_exit_path, operating_capacity_accessibility_and_timeline, service_or_access_baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A22",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A22",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Teilhabe und Mitbestimmung dürfen nicht vom Staatsangehörigkeitsrecht abhängen.",
+      "source_text_sha256": "bd6fde655d7327f3f68e619a031621248d930a8e3b6ff3d659081b03d942297b",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Teilhabe und Mitbestimmung dürfen nicht vom Staatsangehörigkeitsrecht abhängen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A22 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Teilhabe und Mitbestimmung dürfen nicht vom Staatsangehörigkeitsrecht abhängen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0017-A23",
+      "atom_id": "BE-GRUENE-2026-SU-0017-A23",
+      "source_unit_id": "BE-GRUENE-2026-SU-0017",
+      "pdf_page": 8,
+      "pdf_pages": [
+        8
+      ],
+      "source_locator": "p008:u0017",
+      "source_excerpt": "Es ist zugleich eine Chance für unsere Stadt, wenn Menschen in Ber-",
+      "source_text_sha256": "4b00b7356bf7bcc8ed3cf6f0019715244a9959a3cc056c7079b7f37e5cf710fe",
+      "source_parent_text_sha256": "3d1b44f3f06fc0504e1c2670d7ab5b399b7128375c9dd1bf410129331d363bd3",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Es ist zugleich eine Chance für unsere Stadt, wenn Menschen in Ber-",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0017-A23 (GENERAL_POLICY_INSTRUMENT) ist an p008:u0017 exakt an „Es ist zugleich eine Chance für unsere Stadt, wenn Menschen in Ber-“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p008:u0017"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A01",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A01",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "PRÄAMBEL lin erfolgreich Fuß fassen.",
+      "source_text_sha256": "432dd9d42a364a4ee57fe4ca382991d6d6b9a78197d8d281b6477c0ec5123d29",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "PRÄAMBEL lin erfolgreich Fuß fassen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A01 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „PRÄAMBEL lin erfolgreich Fuß fassen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A02",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A02",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Wir wollen unsere Stadt gemeinsam mit allen Berliner*innen wieder voranbringen.",
+      "source_text_sha256": "bb024a8c14a7bac3e73f7d7c994498a76794e3d1f7a0a2c92110fae73ea51ce0",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Wir wollen unsere Stadt gemeinsam mit allen Berliner*innen wieder voranbringen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A02 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Wir wollen unsere Stadt gemeinsam mit allen Berliner*innen wieder voranbringen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A03",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A03",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Deshalb machen wir Bündnisgrüne auch Politik für die, die uns nicht wählen können, weil sie noch zu jung sind, oder von der Wahl ausgeschlossen sind, weil sie keine deutsche Staatsangehörigkeit haben.",
+      "source_text_sha256": "d644226fce423725067c9d1250c46fa58c0229aec86343ebe8675a0630f92959",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Deshalb machen wir Bündnisgrüne auch Politik für die, die uns nicht wählen können, weil sie noch zu jung sind, oder von der Wahl ausgeschlossen sind, weil sie keine deutsche Staatsangehörigkeit haben.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A03 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Deshalb machen wir Bündnisgrüne auch Politik für die, die uns nicht wählen können, weil sie noch zu jung sind, oder von der Wahl ausgeschlossen sind, weil sie keine deutsche Staatsangehörigkeit haben.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A04",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A04",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Als proeuropäische Partei, die in der europäischen Parteienfamilie fest verankert ist, haben wir für die Bezirksverordnetenversammlungen die EU-Bürger*innen im Blick, denn sie dürfen hier mitstimmen.",
+      "source_text_sha256": "377397215d737275bb689840a63d7e7cb65cac455d35226e17a429174df07559",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Als proeuropäische Partei, die in der europäischen Parteienfamilie fest verankert ist, haben wir für die Bezirksverordnetenversammlungen die EU-Bürger*innen im Blick, denn sie dürfen hier mitstimmen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EXTERNAL_COMPETENCE_ADVOCACY",
+      "missing_review_inputs": [
+        "requested_external_instrument",
+        "competent_decision_maker_and_legal_route",
+        "adoption_and_implementation_path",
+        "operational_affected_group_or_system",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A04 (EXTERNAL_COMPETENCE_ADVOCACY) ist an p009:u0018 exakt an „Als proeuropäische Partei, die in der europäischen Parteienfamilie fest verankert ist, haben wir für die Bezirksverordnetenversammlungen die EU-Bürger*innen im Blick, denn sie dürfen hier mitstimmen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam requested_external_instrument, competent_decision_maker_and_legal_route, adoption_and_implementation_path, operational_affected_group_or_system, baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A05",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A05",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Berlin ist mit Herz und Seele eine europäische und internationale Metropole, die für Frieden und Freiheit steht.",
+      "source_text_sha256": "914eb9ac3178f1e4bd895d697857748c385e5c5e844c919f878e4d239574be43",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Berlin ist mit Herz und Seele eine europäische und internationale Metropole, die für Frieden und Freiheit steht.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EXTERNAL_COMPETENCE_ADVOCACY",
+      "missing_review_inputs": [
+        "requested_external_instrument",
+        "competent_decision_maker_and_legal_route",
+        "adoption_and_implementation_path",
+        "operational_affected_group_or_system",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A05 (EXTERNAL_COMPETENCE_ADVOCACY) ist an p009:u0018 exakt an „Berlin ist mit Herz und Seele eine europäische und internationale Metropole, die für Frieden und Freiheit steht.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam requested_external_instrument, competent_decision_maker_and_legal_route, adoption_and_implementation_path, operational_affected_group_or_system, baseline_and_counterfactual, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A06",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A06",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Wir stehen an der Seite der Menschen in der Ukraine, im sogenannten Nahen Osten, im Sudan, in Syrien und den vielen weiteren Konfliktherden und Kriegen und sorgen dafür, dass die, die vor Krieg und Verfolgung fliehen mussten, in Berlin eine neue Heimat finden.",
+      "source_text_sha256": "3ce011d5e58a4ee4834116165c13d72c8506497e0e6169ca6f331b047d0d9df8",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Wir stehen an der Seite der Menschen in der Ukraine, im sogenannten Nahen Osten, im Sudan, in Syrien und den vielen weiteren Konfliktherden und Kriegen und sorgen dafür, dass die, die vor Krieg und Verfolgung fliehen mussten, in Berlin eine neue Heimat finden.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A06 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Wir stehen an der Seite der Menschen in der Ukraine, im sogenannten Nahen Osten, im Sudan, in Syrien und den vielen weiteren Konfliktherden und Kriegen und sorgen dafür, dass die, die vor Krieg und Verfolgung fliehen mussten, in Berlin eine neue Heimat finden.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A07",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A07",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Die universellen und unteilbaren Menschenrechte sind Anspruch und Maßstab unserer Politik.",
+      "source_text_sha256": "2b334b112e31bd08bac91261bdbd9e5d73b5b84442ffa4037ba3f0be018f68e2",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Die universellen und unteilbaren Menschenrechte sind Anspruch und Maßstab unserer Politik.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A07 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Die universellen und unteilbaren Menschenrechte sind Anspruch und Maßstab unserer Politik.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A08",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A08",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Das ist unsere Verantwortung aus der Geschichte heraus und als Stadt der Freiheit.",
+      "source_text_sha256": "52679d4eabd6fa0500797c2475919df3ea76fa6a5a47e3f713efc83639c30e1a",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Das ist unsere Verantwortung aus der Geschichte heraus und als Stadt der Freiheit.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A08 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Das ist unsere Verantwortung aus der Geschichte heraus und als Stadt der Freiheit.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A09",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A09",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Die großen Metropolen in Europa und der Welt leben vor, wie man eine Großstadt ökologisch, sozial, weltoffen und fit für die Zukunft macht.",
+      "source_text_sha256": "48ddda60c51a297f30e86f91a2326eaf96911fac182ee5828520e00265c169aa",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Die großen Metropolen in Europa und der Welt leben vor, wie man eine Großstadt ökologisch, sozial, weltoffen und fit für die Zukunft macht.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A09 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Die großen Metropolen in Europa und der Welt leben vor, wie man eine Großstadt ökologisch, sozial, weltoffen und fit für die Zukunft macht.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A10",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A10",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Bevor die Rückschrittskoalition die Uhren zurückgedreht hat, war Berlin selbst noch führend in der Welt mit dabei.",
+      "source_text_sha256": "5d3b0f49af0932cc4466426b5b8e3dde68b936c480b190fe67b6cad5e8eb937e",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Bevor die Rückschrittskoalition die Uhren zurückgedreht hat, war Berlin selbst noch führend in der Welt mit dabei.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A10 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Bevor die Rückschrittskoalition die Uhren zurückgedreht hat, war Berlin selbst noch führend in der Welt mit dabei.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A11",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A11",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Jetzt schauen wir sehnsüchtig nach Paris, Seoul oder New York, denn sie brechen auf in eine sichere und lebenswerte Zukunft.",
+      "source_text_sha256": "e82556063ed0570506f00264071cab6e0b5fcdcfabfc128716da53d50170c2ce",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Jetzt schauen wir sehnsüchtig nach Paris, Seoul oder New York, denn sie brechen auf in eine sichere und lebenswerte Zukunft.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A11 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Jetzt schauen wir sehnsüchtig nach Paris, Seoul oder New York, denn sie brechen auf in eine sichere und lebenswerte Zukunft.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A12",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A12",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Diese Zukunft wollen wir auch für Berlin!",
+      "source_text_sha256": "cce09d35a0ad7be6a775f3bc47bc69c785790b9abf82dc7fdb236b7eefdb7eaa",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Diese Zukunft wollen wir auch für Berlin!",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A12 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Diese Zukunft wollen wir auch für Berlin!“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A13",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A13",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Bei der Wahl zum Abgeordnetenhaus und für die zwölf Bezirksverordnetenversammlungen am 20.",
+      "source_text_sha256": "b337ecc0164a05b8ee961df9ca5f6aafd09306752c71194e31527e6854d95ee8",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Bei der Wahl zum Abgeordnetenhaus und für die zwölf Bezirksverordnetenversammlungen am 20.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A13 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Bei der Wahl zum Abgeordnetenhaus und für die zwölf Bezirksverordnetenversammlungen am 20.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A14",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A14",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "September 2026 steht genau das zur Abstimmung: grün statt grau.",
+      "source_text_sha256": "c6c07d72258377823e610ce1cef8b9a4152adb458bfc51dd9a798ed2ab1551a5",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "September 2026 steht genau das zur Abstimmung: grün statt grau.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A14 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „September 2026 steht genau das zur Abstimmung: grün statt grau.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A15",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A15",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Zukunft statt Rückschritt.",
+      "source_text_sha256": "0c30b16cd0009916bf41802c73d12b2b6377e9291b5f62416effc76b33f587b0",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Zukunft statt Rückschritt.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A15 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Zukunft statt Rückschritt.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A16",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A16",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Realismus statt Symbolpolitik.",
+      "source_text_sha256": "8318f4969d51d77456c7dd5f065d41b954658665ad56b17ef15ef8e38ac6b11d",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Realismus statt Symbolpolitik.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A16 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Realismus statt Symbolpolitik.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A17",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A17",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Optimismus statt Mutlosigkeit.",
+      "source_text_sha256": "93b15e764b59d2595da917b0dcaf7f1677015e424dd1d1b5e98d83d8362f4480",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Optimismus statt Mutlosigkeit.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A17 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Optimismus statt Mutlosigkeit.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A18",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A18",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Schwarz-Rot macht eine Politik gegen die Menschen dieser Stadt, wir dagegen wollen mit den Berliner*innen gemeinsam anpacken",
+      "source_text_sha256": "aba7e1baaadfe376a4795e5ad074acf551ba17449fcc785efedd31cda02ee145",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "INDEPENDENT_COORDINATED_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Schwarz-Rot macht eine Politik gegen die Menschen dieser Stadt, wir dagegen wollen mit den Berliner*innen gemeinsam anpacken",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A18 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Schwarz-Rot macht eine Politik gegen die Menschen dieser Stadt, wir dagegen wollen mit den Berliner*innen gemeinsam anpacken“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0018-A19",
+      "atom_id": "BE-GRUENE-2026-SU-0018-A19",
+      "source_unit_id": "BE-GRUENE-2026-SU-0018",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0018",
+      "source_excerpt": "Berlin für sie lebenswerter machen.",
+      "source_text_sha256": "5f21515085dabc1c6ccdc5d73dd7c1085f1efe995cf36725bebc7c72e442c475",
+      "source_parent_text_sha256": "c33550a6e3b82a13657d8f6bd355f35e1a9f4e63404d3059dd5c07dc58219de2",
+      "atomicity_basis": "INDEPENDENT_COORDINATED_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "policy_action": "Berlin für sie lebenswerter machen.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0018-A19 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0018 exakt an „Berlin für sie lebenswerter machen.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0018"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-GRUENE-2026-SU-0019-A01",
+      "atom_id": "BE-GRUENE-2026-SU-0019-A01",
+      "source_unit_id": "BE-GRUENE-2026-SU-0019",
+      "pdf_page": 9,
+      "pdf_pages": [
+        9
+      ],
+      "source_locator": "p009:u0019",
+      "source_excerpt": "Dafür brauchen wir Sie, dafür brauchen wir dich.",
+      "source_text_sha256": "98e8a79bb411c3dfa134aadede5b2079d284946375ee84bda88dee31b94c8f22",
+      "source_parent_text_sha256": "98e8a79bb411c3dfa134aadede5b2079d284946375ee84bda88dee31b94c8f22",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "policy_action": "Dafür brauchen wir Sie, dafür brauchen wir dich.",
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason": "BE-GRUENE-2026-SU-0019-A01 (GENERAL_POLICY_INSTRUMENT) ist an p009:u0019 exakt an „Dafür brauchen wir Sie, dafür brauchen wir dich.“ gebunden. Für dieses Einzelobjekt fehlen im geprüften Artefakt gemeinsam operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Ohne genau diese objektspezifischen Prüfeingaben ist EXPLICIT_FACH_APPROVED nicht belastbar; Richtung, Evidenzstufe, Materialität, DNS, SDG/SDG+, Problem-/Goal-Review und Recommendation werden nicht aus Programmtext, Parteiidentität oder Schlagworten ergänzt.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+          "artifact_sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+          "locator": "p009:u0019"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

@@ -1,0 +1,1833 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-AFD-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "EFFECT_ATOMS",
+  "page_from": 81,
+  "page_to": 88,
+  "records": [
+    {
+      "record_id": "BE-AFD-2026-SU-0116-A01",
+      "atom_id": "BE-AFD-2026-SU-0116-A01",
+      "source_unit_id": "BE-AFD-2026-SU-0116",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86
+      ],
+      "source_locator": "p086:b003@64.91,153.19,381.77,250.12",
+      "source_excerpt": "Als Erben der christlich-abendländischen Kultur sehen wir unseren Auftrag darin, unser kulturelles Erbe zu bewahren und behutsam weiterzuentwickeln.",
+      "source_sentence_normalized": "Als Erben der christlich-abendländischen Kultur sehen wir unseren Auftrag darin, unser kulturelles Erbe zu bewahren und behutsam weiterzuentwickeln.",
+      "source_sentence_sha256": "19fba9e02babe88ebedbcd248651deb9b98d02add94e521599d77d9c7062f2bb",
+      "policy_action": "Als Erben der christlich-abendländischen Kultur sehen wir unseren Auftrag darin, unser kulturelles Erbe zu bewahren und behutsam weiterzuentwickeln.",
+      "policy_action_sha256": "19fba9e02babe88ebedbcd248651deb9b98d02add94e521599d77d9c7062f2bb",
+      "source_text_sha256": "19fba9e02babe88ebedbcd248651deb9b98d02add94e521599d77d9c7062f2bb",
+      "source_parent_text_sha256": "c6bfd981db8ed0c9255ed238df23978a081a636ecd46e7cd6362acd286697b58",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CULTURE_SPORT_EVENT",
+      "missing_review_inputs": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CULTURE_SPORT_EVENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0116-A01 (`Als Erben der christlich-abendländischen Kultur sehen wir unseren Auftrag darin, unser kulturelles Erbe zu bewahren und behutsam weiterzuentwickeln.`) is terminally not assessable after individual object-level review: this CULTURE_SPORT_EVENT object does not specify or bind programme_asset_or_event_scope_and_selection, beneficiaries_access_and_distribution, capital_operating_or_event_finance, delivery_timeline_capacity_and_externalities, participation_or_asset_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b003@64.91,153.19,381.77,250.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0116-A02",
+      "atom_id": "BE-AFD-2026-SU-0116-A02",
+      "source_unit_id": "BE-AFD-2026-SU-0116",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86
+      ],
+      "source_locator": "p086:b003@64.91,153.19,381.77,250.12",
+      "source_excerpt": "Der mangelnden Wertschätzung, ja Verachtung unserer eigenen Traditionen und Werte treten wir entschieden entgegen.",
+      "source_sentence_normalized": "Der mangelnden Wertschätzung, ja Verachtung unserer eigenen Traditionen und Werte treten wir entschieden entgegen.",
+      "source_sentence_sha256": "f8735b1433ffe1d5c95c2ce5fa04cc7e89143c781aad8d2e02cdb119de9cb919",
+      "policy_action": "Der mangelnden Wertschätzung, ja Verachtung unserer eigenen Traditionen und Werte treten wir entschieden entgegen.",
+      "policy_action_sha256": "f8735b1433ffe1d5c95c2ce5fa04cc7e89143c781aad8d2e02cdb119de9cb919",
+      "source_text_sha256": "f8735b1433ffe1d5c95c2ce5fa04cc7e89143c781aad8d2e02cdb119de9cb919",
+      "source_parent_text_sha256": "c6bfd981db8ed0c9255ed238df23978a081a636ecd46e7cd6362acd286697b58",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0116-A02 (`Der mangelnden Wertschätzung, ja Verachtung unserer eigenen Traditionen und Werte treten wir entschieden entgegen.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b003@64.91,153.19,381.77,250.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0116-A03",
+      "atom_id": "BE-AFD-2026-SU-0116-A03",
+      "source_unit_id": "BE-AFD-2026-SU-0116",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86
+      ],
+      "source_locator": "p086:b003@64.91,153.19,381.77,250.12",
+      "source_excerpt": "Wir bekennen uns zu unserer deutschen Heimat.",
+      "source_sentence_normalized": "Wir bekennen uns zu unserer deutschen Heimat.",
+      "source_sentence_sha256": "612c0a7798217a4e036f1f04c0cca78ddfe4a2ecd2b2e1291d7f4e6a70c4ca71",
+      "policy_action": "Wir bekennen uns zu unserer deutschen Heimat.",
+      "policy_action_sha256": "612c0a7798217a4e036f1f04c0cca78ddfe4a2ecd2b2e1291d7f4e6a70c4ca71",
+      "source_text_sha256": "612c0a7798217a4e036f1f04c0cca78ddfe4a2ecd2b2e1291d7f4e6a70c4ca71",
+      "source_parent_text_sha256": "c6bfd981db8ed0c9255ed238df23978a081a636ecd46e7cd6362acd286697b58",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0116-A03 (`Wir bekennen uns zu unserer deutschen Heimat.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b003@64.91,153.19,381.77,250.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A01",
+      "atom_id": "BE-AFD-2026-SU-0118-A01",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Die rechtschreibwidrige Gendersprache lehnen wir als politisches Umerziehungsprojekt ab, das darauf abzielt, die natürliche und historisch gewachsene Sprachentwicklung politisch zu manipulieren und einen ideologischen Spaltpilz in die Gesellschaft zu tragen.",
+      "source_sentence_normalized": "Die rechtschreibwidrige Gendersprache lehnen wir als politisches Umerziehungsprojekt ab, das darauf abzielt, die natürliche und historisch gewachsene Sprachentwicklung politisch zu manipulieren und einen ideologischen Spaltpilz in die Gesellschaft zu tragen.",
+      "source_sentence_sha256": "c5e8dc3fb0923374cf73343beb9f9a2c54f3cd4a5d770c44abf9a911bc625689",
+      "policy_action": "Die rechtschreibwidrige Gendersprache lehnen wir als politisches Umerziehungsprojekt ab, das darauf abzielt, die natürliche und historisch gewachsene Sprachentwicklung politisch zu manipulieren und einen ideologischen Spaltpilz in die Gesellschaft zu tragen.",
+      "policy_action_sha256": "c5e8dc3fb0923374cf73343beb9f9a2c54f3cd4a5d770c44abf9a911bc625689",
+      "source_text_sha256": "c5e8dc3fb0923374cf73343beb9f9a2c54f3cd4a5d770c44abf9a911bc625689",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EQUALITY_ANTIDISCRIMINATION",
+      "missing_review_inputs": [
+        "protected_or_affected_group_scope",
+        "exact_instrument_and_enforcement_path",
+        "competence_rights_and_due_process_boundary",
+        "implementation_capacity_and_timeline",
+        "discrimination_participation_or_pay_baseline",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EQUALITY_ANTIDISCRIMINATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A01 (`Die rechtschreibwidrige Gendersprache lehnen wir als politisches Umerziehungsprojekt ab, das darauf abzielt, die natürliche und historisch gewachsene Sprachentwicklung politisch zu manipulieren und einen ideologischen Spaltpilz in die Gesellschaft zu tragen.`) is terminally not assessable after individual object-level review: this EQUALITY_ANTIDISCRIMINATION object does not specify or bind protected_or_affected_group_scope, exact_instrument_and_enforcement_path, competence_rights_and_due_process_boundary, implementation_capacity_and_timeline, discrimination_participation_or_pay_baseline, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A02",
+      "atom_id": "BE-AFD-2026-SU-0118-A02",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Berlin als freiheitliche Kulturhauptstadt Wir stehen uneingeschränkt für die Freiheit von Kunst und Kultur.",
+      "source_sentence_normalized": "Berlin als freiheitliche Kulturhauptstadt Wir stehen uneingeschränkt für die Freiheit von Kunst und Kultur.",
+      "source_sentence_sha256": "6f597945cb06207965d62ea7e122f72df185d47fbc54818e4e7f6c61cc164bd0",
+      "policy_action": "Berlin als freiheitliche Kulturhauptstadt Wir stehen uneingeschränkt für die Freiheit von Kunst und Kultur.",
+      "policy_action_sha256": "6f597945cb06207965d62ea7e122f72df185d47fbc54818e4e7f6c61cc164bd0",
+      "source_text_sha256": "6f597945cb06207965d62ea7e122f72df185d47fbc54818e4e7f6c61cc164bd0",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CULTURE_SPORT_EVENT",
+      "missing_review_inputs": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CULTURE_SPORT_EVENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A02 (`Berlin als freiheitliche Kulturhauptstadt Wir stehen uneingeschränkt für die Freiheit von Kunst und Kultur.`) is terminally not assessable after individual object-level review: this CULTURE_SPORT_EVENT object does not specify or bind programme_asset_or_event_scope_and_selection, beneficiaries_access_and_distribution, capital_operating_or_event_finance, delivery_timeline_capacity_and_externalities, participation_or_asset_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A03",
+      "atom_id": "BE-AFD-2026-SU-0118-A03",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Der Bedrohung der künstlerischen Freiheit durch politischen und religiösen Extremismus stellen wir uns entschieden entgegen.",
+      "source_sentence_normalized": "Der Bedrohung der künstlerischen Freiheit durch politischen und religiösen Extremismus stellen wir uns entschieden entgegen.",
+      "source_sentence_sha256": "4df09cc8e959476d0a85e58bd9b3ff8bf570e89a1b3c6164d3d76dd66bcbfbc4",
+      "policy_action": "Der Bedrohung der künstlerischen Freiheit durch politischen und religiösen Extremismus stellen wir uns entschieden entgegen.",
+      "policy_action_sha256": "4df09cc8e959476d0a85e58bd9b3ff8bf570e89a1b3c6164d3d76dd66bcbfbc4",
+      "source_text_sha256": "4df09cc8e959476d0a85e58bd9b3ff8bf570e89a1b3c6164d3d76dd66bcbfbc4",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SERVICE_PROGRAMME",
+      "missing_review_inputs": [
+        "eligibility_coverage_and_service_dose",
+        "delivery_actor_capacity_and_access",
+        "finance_duration_and_timeline",
+        "affected_group_and_service_baseline",
+        "counterfactual_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SERVICE_PROGRAMME_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A03 (`Der Bedrohung der künstlerischen Freiheit durch politischen und religiösen Extremismus stellen wir uns entschieden entgegen.`) is terminally not assessable after individual object-level review: this SERVICE_PROGRAMME object does not specify or bind eligibility_coverage_and_service_dose, delivery_actor_capacity_and_access, finance_duration_and_timeline, affected_group_and_service_baseline, counterfactual_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A04",
+      "atom_id": "BE-AFD-2026-SU-0118-A04",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Gleichzeitig darf Kunst nicht selbst unter dem Deckmantel der Kunstfreiheit zu Extremismus und Gewalt aufrufen.",
+      "source_sentence_normalized": "Gleichzeitig darf Kunst nicht selbst unter dem Deckmantel der Kunstfreiheit zu Extremismus und Gewalt aufrufen.",
+      "source_sentence_sha256": "721c88a33bdd0702e8d1adb3cebd6e9e25ef785ebed6c90895231201dfcac0e3",
+      "policy_action": "Gleichzeitig darf Kunst nicht selbst unter dem Deckmantel der Kunstfreiheit zu Extremismus und Gewalt aufrufen.",
+      "policy_action_sha256": "721c88a33bdd0702e8d1adb3cebd6e9e25ef785ebed6c90895231201dfcac0e3",
+      "source_text_sha256": "721c88a33bdd0702e8d1adb3cebd6e9e25ef785ebed6c90895231201dfcac0e3",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A04 (`Gleichzeitig darf Kunst nicht selbst unter dem Deckmantel der Kunstfreiheit zu Extremismus und Gewalt aufrufen.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A05",
+      "atom_id": "BE-AFD-2026-SU-0118-A05",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Die Kulturförderung muss deshalb dazu verpflichtet werden, keine Projekte zu finanzieren, die gegen die freiheitlich-demokratische Grundordnung gerichtet sind oder Antisemitismus Vorschub leisten.",
+      "source_sentence_normalized": "Die Kulturförderung muss deshalb dazu verpflichtet werden, keine Projekte zu finanzieren, die gegen die freiheitlich-demokratische Grundordnung gerichtet sind oder Antisemitismus Vorschub leisten.",
+      "source_sentence_sha256": "6229bcb9a67ba8974619447e00651bbdd54a5c1d66f06b4fbe732d56c1523fe4",
+      "policy_action": "Die Kulturförderung muss deshalb dazu verpflichtet werden, keine Projekte zu finanzieren, die gegen die freiheitlich-demokratische Grundordnung gerichtet sind oder Antisemitismus Vorschub leisten.",
+      "policy_action_sha256": "6229bcb9a67ba8974619447e00651bbdd54a5c1d66f06b4fbe732d56c1523fe4",
+      "source_text_sha256": "6229bcb9a67ba8974619447e00651bbdd54a5c1d66f06b4fbe732d56c1523fe4",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A05 (`Die Kulturförderung muss deshalb dazu verpflichtet werden, keine Projekte zu finanzieren, die gegen die freiheitlich-demokratische Grundordnung gerichtet sind oder Antisemitismus Vorschub leisten.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A06",
+      "atom_id": "BE-AFD-2026-SU-0118-A06",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Wir treten darüber hinaus dafür ein, dass der Bund mit seinem Hauptstadtkulturfonds noch stärker in die Finanzierung von kulturellen Institutionen von nationaler Bedeutung in Berlin eingebunden wird.",
+      "source_sentence_normalized": "Wir treten darüber hinaus dafür ein, dass der Bund mit seinem Hauptstadtkulturfonds noch stärker in die Finanzierung von kulturellen Institutionen von nationaler Bedeutung in Berlin eingebunden wird.",
+      "source_sentence_sha256": "58a34b689a8c9bd95ae5ec1571691f547c7e02babdd1537d209df111b1d9db8d",
+      "policy_action": "Wir treten darüber hinaus dafür ein, dass der Bund mit seinem Hauptstadtkulturfonds noch stärker in die Finanzierung von kulturellen Institutionen von nationaler Bedeutung in Berlin eingebunden wird.",
+      "policy_action_sha256": "58a34b689a8c9bd95ae5ec1571691f547c7e02babdd1537d209df111b1d9db8d",
+      "source_text_sha256": "58a34b689a8c9bd95ae5ec1571691f547c7e02babdd1537d209df111b1d9db8d",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "PUBLIC_FINANCE_FUNDING",
+      "missing_review_inputs": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "PUBLIC_FINANCE_FUNDING_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A06 (`Wir treten darüber hinaus dafür ein, dass der Bund mit seinem Hauptstadtkulturfonds noch stärker in die Finanzierung von kulturellen Institutionen von nationaler Bedeutung in Berlin eingebunden wird.`) is terminally not assessable after individual object-level review: this PUBLIC_FINANCE_FUNDING object does not specify or bind amount_period_and_funding_source, additionality_and_opportunity_cost, allocation_and_eligibility_rules, delivery_capacity_and_timeline, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A07",
+      "atom_id": "BE-AFD-2026-SU-0118-A07",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Kulturgutschutz, Denkmalschutz und Straßennamen Wir fühlen uns dem vielgestaltigen kulturellen und geschichtlichen Erbe Berlins verpflichtet.",
+      "source_sentence_normalized": "Kulturgutschutz, Denkmalschutz und Straßennamen Wir fühlen uns dem vielgestaltigen kulturellen und geschichtlichen Erbe Berlins verpflichtet.",
+      "source_sentence_sha256": "529102a811faa307d65b97b936c344b54b2bf3d318493f2631bb99b0390fcbac",
+      "policy_action": "Kulturgutschutz, Denkmalschutz und Straßennamen Wir fühlen uns dem vielgestaltigen kulturellen und geschichtlichen Erbe Berlins verpflichtet.",
+      "policy_action_sha256": "529102a811faa307d65b97b936c344b54b2bf3d318493f2631bb99b0390fcbac",
+      "source_text_sha256": "529102a811faa307d65b97b936c344b54b2bf3d318493f2631bb99b0390fcbac",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CULTURE_SPORT_EVENT",
+      "missing_review_inputs": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CULTURE_SPORT_EVENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A07 (`Kulturgutschutz, Denkmalschutz und Straßennamen Wir fühlen uns dem vielgestaltigen kulturellen und geschichtlichen Erbe Berlins verpflichtet.`) is terminally not assessable after individual object-level review: this CULTURE_SPORT_EVENT object does not specify or bind programme_asset_or_event_scope_and_selection, beneficiaries_access_and_distribution, capital_operating_or_event_finance, delivery_timeline_capacity_and_externalities, participation_or_asset_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A08",
+      "atom_id": "BE-AFD-2026-SU-0118-A08",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Um unser reiches Erbe auch künftigen Generationen zugänglich und erlebbar zu machen, unterstützen wir den Erhalt und die Förderung der breit aufgestellten Berliner Museumslandschaft.",
+      "source_sentence_normalized": "Um unser reiches Erbe auch künftigen Generationen zugänglich und erlebbar zu machen, unterstützen wir den Erhalt und die Förderung der breit aufgestellten Berliner Museumslandschaft.",
+      "source_sentence_sha256": "0fd7bd4d6648aa77fcf50bd2c07d1ff4112d3290e0e6db0862e1d5c210af1a0b",
+      "policy_action": "Um unser reiches Erbe auch künftigen Generationen zugänglich und erlebbar zu machen, unterstützen wir den Erhalt und die Förderung der breit aufgestellten Berliner Museumslandschaft.",
+      "policy_action_sha256": "0fd7bd4d6648aa77fcf50bd2c07d1ff4112d3290e0e6db0862e1d5c210af1a0b",
+      "source_text_sha256": "0fd7bd4d6648aa77fcf50bd2c07d1ff4112d3290e0e6db0862e1d5c210af1a0b",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CULTURE_SPORT_EVENT",
+      "missing_review_inputs": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CULTURE_SPORT_EVENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A08 (`Um unser reiches Erbe auch künftigen Generationen zugänglich und erlebbar zu machen, unterstützen wir den Erhalt und die Förderung der breit aufgestellten Berliner Museumslandschaft.`) is terminally not assessable after individual object-level review: this CULTURE_SPORT_EVENT object does not specify or bind programme_asset_or_event_scope_and_selection, beneficiaries_access_and_distribution, capital_operating_or_event_finance, delivery_timeline_capacity_and_externalities, participation_or_asset_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A09",
+      "atom_id": "BE-AFD-2026-SU-0118-A09",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Um Bestände bewahren, restaurieren und erweitern zu können, muss die auskömmliche Finanzierung der Sammlungsund Erhaltungsfähigkeit von Archiven und Museen haushaltspolitisch Vorrang gegenüber der Förderung von Kulturschaffenden genießen.",
+      "source_sentence_normalized": "Um Bestände bewahren, restaurieren und erweitern zu können, muss die auskömmliche Finanzierung der Sammlungsund Erhaltungsfähigkeit von Archiven und Museen haushaltspolitisch Vorrang gegenüber der Förderung von Kulturschaffenden genießen.",
+      "source_sentence_sha256": "ca5b1ed09be6a8f2b866b12243047bda45d8e88632d1226e7de031b47afef8ca",
+      "policy_action": "Um Bestände bewahren, restaurieren, erweitern zu können, muss die auskömmliche Finanzierung der Sammlungsund Erhaltungsfähigkeit von Archiven und Museen haushaltspolitisch Vorrang gegenüber der Förderung von Kulturschaffenden genießen.",
+      "policy_action_sha256": "f33b86a2597fad323ff19e5cd3a685555fcdd770442faa35bd8587ea79491a5f",
+      "source_text_sha256": "ca5b1ed09be6a8f2b866b12243047bda45d8e88632d1226e7de031b47afef8ca",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "PUBLIC_FINANCE_FUNDING",
+      "missing_review_inputs": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "PUBLIC_FINANCE_FUNDING_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A09 (`Um Bestände bewahren, restaurieren, erweitern zu können, muss die auskömmliche Finanzierung der Sammlungsund Erhaltungsfähigkeit von Archiven und Museen haushaltspolitisch Vorrang gegenüber der Förderung von Kulturschaffenden genießen.`) is terminally not assessable after individual object-level review: this PUBLIC_FINANCE_FUNDING object does not specify or bind amount_period_and_funding_source, additionality_and_opportunity_cost, allocation_and_eligibility_rules, delivery_capacity_and_timeline, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A10",
+      "atom_id": "BE-AFD-2026-SU-0118-A10",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Die Erhaltung unseres materiellen Kulturguts benötigt traditionelle Handwerker wie Steinmetze, Stuckateure und Restauratoren, die durch moderne Technologien nur schwer ersetzt werden können.",
+      "source_sentence_normalized": "Die Erhaltung unseres materiellen Kulturguts benötigt traditionelle Handwerker wie Steinmetze, Stuckateure und Restauratoren, die durch moderne Technologien nur schwer ersetzt werden können.",
+      "source_sentence_sha256": "fc92ce882b3ca0dd9e65e0a791cffb0b957da96331ce8db18cc9174328954d9f",
+      "policy_action": "Die Erhaltung unseres materiellen Kulturguts benötigt traditionelle Handwerker wie Steinmetze, Stuckateure und Restauratoren, die durch moderne Technologien nur schwer ersetzt werden können.",
+      "policy_action_sha256": "fc92ce882b3ca0dd9e65e0a791cffb0b957da96331ce8db18cc9174328954d9f",
+      "source_text_sha256": "fc92ce882b3ca0dd9e65e0a791cffb0b957da96331ce8db18cc9174328954d9f",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CULTURE_SPORT_EVENT",
+      "missing_review_inputs": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CULTURE_SPORT_EVENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A10 (`Die Erhaltung unseres materiellen Kulturguts benötigt traditionelle Handwerker wie Steinmetze, Stuckateure und Restauratoren, die durch moderne Technologien nur schwer ersetzt werden können.`) is terminally not assessable after individual object-level review: this CULTURE_SPORT_EVENT object does not specify or bind programme_asset_or_event_scope_and_selection, beneficiaries_access_and_distribution, capital_operating_or_event_finance, delivery_timeline_capacity_and_externalities, participation_or_asset_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A11",
+      "atom_id": "BE-AFD-2026-SU-0118-A11",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Wir möchten, dass Berlin die entsprechenden Ausbildungs- und Vergabestrukturen stärkt und traditionelles Handwerk belebt.",
+      "source_sentence_normalized": "Wir möchten, dass Berlin die entsprechenden Ausbildungs- und Vergabestrukturen stärkt und traditionelles Handwerk belebt.",
+      "source_sentence_sha256": "cb097559bc26e5f89b6d01e2419ace8c0a5a862de738adf6c2ae16038a2f2050",
+      "policy_action": "Wir möchten, dass Berlin die entsprechenden Ausbildungs- und Vergabestrukturen stärkt und traditionelles Handwerk belebt.",
+      "policy_action_sha256": "cb097559bc26e5f89b6d01e2419ace8c0a5a862de738adf6c2ae16038a2f2050",
+      "source_text_sha256": "cb097559bc26e5f89b6d01e2419ace8c0a5a862de738adf6c2ae16038a2f2050",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A11 (`Wir möchten, dass Berlin die entsprechenden Ausbildungs- und Vergabestrukturen stärkt und traditionelles Handwerk belebt.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A12",
+      "atom_id": "BE-AFD-2026-SU-0118-A12",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Den deutschlandweit einzigartigen Studiengang Konservierung und Restaurierung/Grabungstechnik an der HTW Berlin, dessen Fortexistenz bedroht ist, werden wir dauerhaft sichern.",
+      "source_sentence_normalized": "Den deutschlandweit einzigartigen Studiengang Konservierung und Restaurierung/Grabungstechnik an der HTW Berlin, dessen Fortexistenz bedroht ist, werden wir dauerhaft sichern.",
+      "source_sentence_sha256": "c279c1967e3f669f5de05cfee6b07b5710c7d336744f00baf4bcf0689e39bebb",
+      "policy_action": "Den deutschlandweit einzigartigen Studiengang Konservierung und Restaurierung/Grabungstechnik an der HTW Berlin, dessen Fortexistenz bedroht ist",
+      "policy_action_sha256": "418e3888ff9d163a4078e15ca19edca107141a6060b7b4a715944ac0a585999e",
+      "source_text_sha256": "c279c1967e3f669f5de05cfee6b07b5710c7d336744f00baf4bcf0689e39bebb",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A12 (`Den deutschlandweit einzigartigen Studiengang Konservierung und Restaurierung/Grabungstechnik an der HTW Berlin, dessen Fortexistenz bedroht ist`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A13",
+      "atom_id": "BE-AFD-2026-SU-0118-A13",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Den deutschlandweit einzigartigen Studiengang Konservierung und Restaurierung/Grabungstechnik an der HTW Berlin, dessen Fortexistenz bedroht ist, werden wir dauerhaft sichern.",
+      "source_sentence_normalized": "Den deutschlandweit einzigartigen Studiengang Konservierung und Restaurierung/Grabungstechnik an der HTW Berlin, dessen Fortexistenz bedroht ist, werden wir dauerhaft sichern.",
+      "source_sentence_sha256": "c279c1967e3f669f5de05cfee6b07b5710c7d336744f00baf4bcf0689e39bebb",
+      "policy_action": "werden wir dauerhaft sichern.",
+      "policy_action_sha256": "d158f495bc477746213dc47c574e34f9fdd8648b18ab378bd9658ee9edb8c44a",
+      "source_text_sha256": "c279c1967e3f669f5de05cfee6b07b5710c7d336744f00baf4bcf0689e39bebb",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A13 (`werden wir dauerhaft sichern.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A14",
+      "atom_id": "BE-AFD-2026-SU-0118-A14",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Auch die Jugendbauhütte werden wir stärken.",
+      "source_sentence_normalized": "Auch die Jugendbauhütte werden wir stärken.",
+      "source_sentence_sha256": "26f83071b494bc3a34e8ce2170a60bc8ebdc6ebaa0d8978fb41d69d6f4f0a1bf",
+      "policy_action": "Auch die Jugendbauhütte werden wir stärken.",
+      "policy_action_sha256": "26f83071b494bc3a34e8ce2170a60bc8ebdc6ebaa0d8978fb41d69d6f4f0a1bf",
+      "source_text_sha256": "26f83071b494bc3a34e8ce2170a60bc8ebdc6ebaa0d8978fb41d69d6f4f0a1bf",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A14 (`Auch die Jugendbauhütte werden wir stärken.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A15",
+      "atom_id": "BE-AFD-2026-SU-0118-A15",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Sowohl im öffentlichen Raum als auch in den Museen müssen die Sicherheits- und Vorsichtsmaßnahmen verbessert werden.",
+      "source_sentence_normalized": "Sowohl im öffentlichen Raum als auch in den Museen müssen die Sicherheits- und Vorsichtsmaßnahmen verbessert werden.",
+      "source_sentence_sha256": "e56704df85b83a41599ec4dc3d94b890562eaeda2cc6e5f5d8a2e66481898989",
+      "policy_action": "Sowohl im öffentlichen Raum als auch in den Museen müssen die Sicherheits- und Vorsichtsmaßnahmen verbessert werden.",
+      "policy_action_sha256": "e56704df85b83a41599ec4dc3d94b890562eaeda2cc6e5f5d8a2e66481898989",
+      "source_text_sha256": "e56704df85b83a41599ec4dc3d94b890562eaeda2cc6e5f5d8a2e66481898989",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A15 (`Sowohl im öffentlichen Raum als auch in den Museen müssen die Sicherheits- und Vorsichtsmaßnahmen verbessert werden.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A16",
+      "atom_id": "BE-AFD-2026-SU-0118-A16",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Zu diesem Zweck fordern wir ein Kulturgutschutzgesetz auf Landesebene und eine bessere Regelung von Maßnahmen für Kulturgüter im Katastrophenfall.",
+      "source_sentence_normalized": "Zu diesem Zweck fordern wir ein Kulturgutschutzgesetz auf Landesebene und eine bessere Regelung von Maßnahmen für Kulturgüter im Katastrophenfall.",
+      "source_sentence_sha256": "5412585e14bc5a737f09f40084001b88781cff300ace312ce6a546cb5fc4dfb9",
+      "policy_action": "Zu diesem Zweck fordern wir ein Kulturgutschutzgesetz auf Landesebene und eine bessere Regelung von Maßnahmen für Kulturgüter im Katastrophenfall.",
+      "policy_action_sha256": "5412585e14bc5a737f09f40084001b88781cff300ace312ce6a546cb5fc4dfb9",
+      "source_text_sha256": "5412585e14bc5a737f09f40084001b88781cff300ace312ce6a546cb5fc4dfb9",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A16 (`Zu diesem Zweck fordern wir ein Kulturgutschutzgesetz auf Landesebene und eine bessere Regelung von Maßnahmen für Kulturgüter im Katastrophenfall.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A17",
+      "atom_id": "BE-AFD-2026-SU-0118-A17",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Eine undifferenziert, ahistorisch und vorwiegend ideologisch begründete Tilgung von Namensgebern für Straßen und Plätze in unseren Bezirken lehnen wir ab.",
+      "source_sentence_normalized": "Eine undifferenziert, ahistorisch und vorwiegend ideologisch begründete Tilgung von Namensgebern für Straßen und Plätze in unseren Bezirken lehnen wir ab.",
+      "source_sentence_sha256": "4dda256a669519128cc2ecc30c301fbfade843bdfee395e542599050cc1d0a2c",
+      "policy_action": "Eine undifferenziert, ahistorisch und vorwiegend ideologisch begründete Tilgung von Namensgebern für Straßen und Plätze in unseren Bezirken lehnen wir ab.",
+      "policy_action_sha256": "4dda256a669519128cc2ecc30c301fbfade843bdfee395e542599050cc1d0a2c",
+      "source_text_sha256": "4dda256a669519128cc2ecc30c301fbfade843bdfee395e542599050cc1d0a2c",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A17 (`Eine undifferenziert, ahistorisch und vorwiegend ideologisch begründete Tilgung von Namensgebern für Straßen und Plätze in unseren Bezirken lehnen wir ab.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A18",
+      "atom_id": "BE-AFD-2026-SU-0118-A18",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Ausschlaggebende Kriterien für die Benennung neuer Straßen und Plätze sollen historische und kulturelle Relevanz, gesellschaftliche Leistung und der Ortsbezug der zu ehrenden Person sein.",
+      "source_sentence_normalized": "Ausschlaggebende Kriterien für die Benennung neuer Straßen und Plätze sollen historische und kulturelle Relevanz, gesellschaftliche Leistung und der Ortsbezug der zu ehrenden Person sein.",
+      "source_sentence_sha256": "c58086c17bbde8aa91d0ca42c40d3c495642c16a8a56e3927024e44eddcad49c",
+      "policy_action": "Ausschlaggebende Kriterien für die Benennung neuer Straßen und Plätze sollen historische und kulturelle Relevanz, gesellschaftliche Leistung und der Ortsbezug der zu ehrenden Person sein.",
+      "policy_action_sha256": "c58086c17bbde8aa91d0ca42c40d3c495642c16a8a56e3927024e44eddcad49c",
+      "source_text_sha256": "c58086c17bbde8aa91d0ca42c40d3c495642c16a8a56e3927024e44eddcad49c",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CULTURE_SPORT_EVENT",
+      "missing_review_inputs": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CULTURE_SPORT_EVENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A18 (`Ausschlaggebende Kriterien für die Benennung neuer Straßen und Plätze sollen historische und kulturelle Relevanz, gesellschaftliche Leistung und der Ortsbezug der zu ehrenden Person sein.`) is terminally not assessable after individual object-level review: this CULTURE_SPORT_EVENT object does not specify or bind programme_asset_or_event_scope_and_selection, beneficiaries_access_and_distribution, capital_operating_or_event_finance, delivery_timeline_capacity_and_externalities, participation_or_asset_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A19",
+      "atom_id": "BE-AFD-2026-SU-0118-A19",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Die AfD fordert eine Erinnerungskultur, die sich nicht in Mahnmalen erschöpft, sondern durch Rückgewinnung verlorener Stadträume Identität stiftet und das historische Berlin wiedererlebbar macht, wo dies möglich ist.",
+      "source_sentence_normalized": "Die AfD fordert eine Erinnerungskultur, die sich nicht in Mahnmalen erschöpft, sondern durch Rückgewinnung verlorener Stadträume Identität stiftet und das historische Berlin wiedererlebbar macht, wo dies möglich ist.",
+      "source_sentence_sha256": "90f73081a79e6474fc82ec04fe620be8dc331b4b562c077f9cbc8c8f819712dc",
+      "policy_action": "Die AfD fordert eine Erinnerungskultur, die sich nicht in Mahnmalen erschöpft, sondern durch Rückgewinnung verlorener Stadträume Identität stiftet und das historische Berlin wiedererlebbar macht, wo dies möglich ist.",
+      "policy_action_sha256": "90f73081a79e6474fc82ec04fe620be8dc331b4b562c077f9cbc8c8f819712dc",
+      "source_text_sha256": "90f73081a79e6474fc82ec04fe620be8dc331b4b562c077f9cbc8c8f819712dc",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CULTURE_SPORT_EVENT",
+      "missing_review_inputs": [
+        "programme_asset_or_event_scope_and_selection",
+        "beneficiaries_access_and_distribution",
+        "capital_operating_or_event_finance",
+        "delivery_timeline_capacity_and_externalities",
+        "participation_or_asset_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CULTURE_SPORT_EVENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A19 (`Die AfD fordert eine Erinnerungskultur, die sich nicht in Mahnmalen erschöpft, sondern durch Rückgewinnung verlorener Stadträume Identität stiftet und das historische Berlin wiedererlebbar macht, wo dies möglich ist.`) is terminally not assessable after individual object-level review: this CULTURE_SPORT_EVENT object does not specify or bind programme_asset_or_event_scope_and_selection, beneficiaries_access_and_distribution, capital_operating_or_event_finance, delivery_timeline_capacity_and_externalities, participation_or_asset_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A20",
+      "atom_id": "BE-AFD-2026-SU-0118-A20",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Deshalb setzen wir uns für die originalgetreue Rekonstruktion stadtbildprägender Bauwerke ein.",
+      "source_sentence_normalized": "Deshalb setzen wir uns für die originalgetreue Rekonstruktion stadtbildprägender Bauwerke ein.",
+      "source_sentence_sha256": "27c54980f574c5d7b54fa499b289b0c53ad3af8f2daea9a18eb63d08076604e6",
+      "policy_action": "Deshalb setzen wir uns für die originalgetreue Rekonstruktion stadtbildprägender Bauwerke ein.",
+      "policy_action_sha256": "27c54980f574c5d7b54fa499b289b0c53ad3af8f2daea9a18eb63d08076604e6",
+      "source_text_sha256": "27c54980f574c5d7b54fa499b289b0c53ad3af8f2daea9a18eb63d08076604e6",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EQUALITY_ANTIDISCRIMINATION",
+      "missing_review_inputs": [
+        "protected_or_affected_group_scope",
+        "exact_instrument_and_enforcement_path",
+        "competence_rights_and_due_process_boundary",
+        "implementation_capacity_and_timeline",
+        "discrimination_participation_or_pay_baseline",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EQUALITY_ANTIDISCRIMINATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A20 (`Deshalb setzen wir uns für die originalgetreue Rekonstruktion stadtbildprägender Bauwerke ein.`) is terminally not assessable after individual object-level review: this EQUALITY_ANTIDISCRIMINATION object does not specify or bind protected_or_affected_group_scope, exact_instrument_and_enforcement_path, competence_rights_and_due_process_boundary, implementation_capacity_and_timeline, discrimination_participation_or_pay_baseline, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A21",
+      "atom_id": "BE-AFD-2026-SU-0118-A21",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Neptunbrunnen und Rossebändiger müssen wieder ans Schloss zurückversetzt werden, um eine originalgetreue Umgebung zu ermöglichen.",
+      "source_sentence_normalized": "Neptunbrunnen und Rossebändiger müssen wieder ans Schloss zurückversetzt werden, um eine originalgetreue Umgebung zu ermöglichen.",
+      "source_sentence_sha256": "ffcd8de99b6e5ddd5047c4fbb6be28395434fd960a2560a7c223a3a5ea411203",
+      "policy_action": "Neptunbrunnen und Rossebändiger müssen wieder ans Schloss zurückversetzt werden, um eine originalgetreue Umgebung zu ermöglichen.",
+      "policy_action_sha256": "ffcd8de99b6e5ddd5047c4fbb6be28395434fd960a2560a7c223a3a5ea411203",
+      "source_text_sha256": "ffcd8de99b6e5ddd5047c4fbb6be28395434fd960a2560a7c223a3a5ea411203",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A21 (`Neptunbrunnen und Rossebändiger müssen wieder ans Schloss zurückversetzt werden, um eine originalgetreue Umgebung zu ermöglichen.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A22",
+      "atom_id": "BE-AFD-2026-SU-0118-A22",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Auch die Wiedererrichtung des Lutherdenkmals auf originalgetreuem Sockel und der Statuen der Siegesallee (als Replik) werden wir prüfen.",
+      "source_sentence_normalized": "Auch die Wiedererrichtung des Lutherdenkmals auf originalgetreuem Sockel und der Statuen der Siegesallee (als Replik) werden wir prüfen.",
+      "source_sentence_sha256": "f7627ae734daed59bbcf16d8838b30d2af9380e821f8245d8fe7357b8ac94b69",
+      "policy_action": "Auch die Wiedererrichtung des Lutherdenkmals auf originalgetreuem Sockel und der Statuen der Siegesallee (als Replik) werden wir prüfen.",
+      "policy_action_sha256": "f7627ae734daed59bbcf16d8838b30d2af9380e821f8245d8fe7357b8ac94b69",
+      "source_text_sha256": "f7627ae734daed59bbcf16d8838b30d2af9380e821f8245d8fe7357b8ac94b69",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A22 (`Auch die Wiedererrichtung des Lutherdenkmals auf originalgetreuem Sockel und der Statuen der Siegesallee (als Replik) werden wir prüfen.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A23",
+      "atom_id": "BE-AFD-2026-SU-0118-A23",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Wir lehnen eine rein funktionale, ahistorische und ideologisch motivierte Stadtplanung ab und fordern, die Kontinuität unserer Geschichte sichtbar zu machen, statt moderne Brüche zu betonen.",
+      "source_sentence_normalized": "Wir lehnen eine rein funktionale, ahistorische und ideologisch motivierte Stadtplanung ab und fordern, die Kontinuität unserer Geschichte sichtbar zu machen, statt moderne Brüche zu betonen.",
+      "source_sentence_sha256": "54baea4c89fa58811fcc61c59e94ef9f2f448451ae42f99c74ee1d791311faba",
+      "policy_action": "Wir lehnen eine rein funktionale, ahistorische und ideologisch motivierte Stadtplanung ab",
+      "policy_action_sha256": "be61df4c3bc401b623f7c79bbc3c21c47e65b841feaf7a57ff68ef910c5e4a43",
+      "source_text_sha256": "54baea4c89fa58811fcc61c59e94ef9f2f448451ae42f99c74ee1d791311faba",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A23 (`Wir lehnen eine rein funktionale, ahistorische und ideologisch motivierte Stadtplanung ab`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A24",
+      "atom_id": "BE-AFD-2026-SU-0118-A24",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Wir lehnen eine rein funktionale, ahistorische und ideologisch motivierte Stadtplanung ab und fordern, die Kontinuität unserer Geschichte sichtbar zu machen, statt moderne Brüche zu betonen.",
+      "source_sentence_normalized": "Wir lehnen eine rein funktionale, ahistorische und ideologisch motivierte Stadtplanung ab und fordern, die Kontinuität unserer Geschichte sichtbar zu machen, statt moderne Brüche zu betonen.",
+      "source_sentence_sha256": "54baea4c89fa58811fcc61c59e94ef9f2f448451ae42f99c74ee1d791311faba",
+      "policy_action": "fordern, die Kontinuität unserer Geschichte sichtbar zu machen, statt moderne Brüche zu betonen.",
+      "policy_action_sha256": "90b9d8a3ced1b5abef86475f0d4291a942eb470566d339499ca3eb7b56591031",
+      "source_text_sha256": "54baea4c89fa58811fcc61c59e94ef9f2f448451ae42f99c74ee1d791311faba",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "COORDINATED_INDEPENDENT_ACTION_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": true,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A24 (`fordern, die Kontinuität unserer Geschichte sichtbar zu machen, statt moderne Brüche zu betonen.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A25",
+      "atom_id": "BE-AFD-2026-SU-0118-A25",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Wiederaufbauten sollen dort ermöglicht werden, wo eine belastbare historische Dokumentation vorliegt und ein städtebaulicher Mehrwert erreicht werden kann – etwa an Orten, an denen die Stadt über Jahrzehnte durch Kriegsverluste und Abbrüche städtebaulich beschädigt wurde.",
+      "source_sentence_normalized": "Wiederaufbauten sollen dort ermöglicht werden, wo eine belastbare historische Dokumentation vorliegt und ein städtebaulicher Mehrwert erreicht werden kann – etwa an Orten, an denen die Stadt über Jahrzehnte durch Kriegsverluste und Abbrüche städtebaulich beschädigt wurde.",
+      "source_sentence_sha256": "3f48585893bfcd4b6825b65673286543faa4d2bc40e8f6150d8ae00ab2ea286e",
+      "policy_action": "Wiederaufbauten sollen dort ermöglicht werden, wo eine belastbare historische Dokumentation vorliegt und ein städtebaulicher Mehrwert erreicht werden kann – etwa an Orten, an denen die Stadt über Jahrzehnte durch Kriegsverluste und Abbrüche städtebaulich beschädigt wurde.",
+      "policy_action_sha256": "3f48585893bfcd4b6825b65673286543faa4d2bc40e8f6150d8ae00ab2ea286e",
+      "source_text_sha256": "3f48585893bfcd4b6825b65673286543faa4d2bc40e8f6150d8ae00ab2ea286e",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TARGET_OR_ASPIRATION",
+      "missing_review_inputs": [
+        "implementing_policy_instrument",
+        "operational_affected_group_or_system",
+        "baseline_indicator_and_target_value",
+        "causal_mechanism_and_time_horizon",
+        "competence_and_delivery_path",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TARGET_OR_ASPIRATION_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A25 (`Wiederaufbauten sollen dort ermöglicht werden, wo eine belastbare historische Dokumentation vorliegt und ein städtebaulicher Mehrwert erreicht werden kann – etwa an Orten, an denen die Stadt über Jahrzehnte durch Kriegsverluste und Abbrüche städtebaulich beschädigt wurde.`) is terminally not assessable after individual object-level review: this TARGET_OR_ASPIRATION object does not specify or bind implementing_policy_instrument, operational_affected_group_or_system, baseline_indicator_and_target_value, causal_mechanism_and_time_horizon, competence_and_delivery_path, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A26",
+      "atom_id": "BE-AFD-2026-SU-0118-A26",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Zur Umsetzung bedeutender Kulturbauprojekte setzen wir auf innovative Finanzierungs- und Beteiligungsmodelle: privates Mäzenatentum und gezielt eingesetzte Spendengelder zur Wiederherstellung historischer Objekte und Kulturgüter.",
+      "source_sentence_normalized": "Zur Umsetzung bedeutender Kulturbauprojekte setzen wir auf innovative Finanzierungs- und Beteiligungsmodelle: privates Mäzenatentum und gezielt eingesetzte Spendengelder zur Wiederherstellung historischer Objekte und Kulturgüter.",
+      "source_sentence_sha256": "6c946239f54ee4edcefef7717e04a229ea3d7c39c8b55d475751e1d901c4b67f",
+      "policy_action": "Zur Umsetzung bedeutender Kulturbauprojekte setzen wir auf innovative Finanzierungs- und Beteiligungsmodelle: privates Mäzenatentum und gezielt eingesetzte Spendengelder zur Wiederherstellung historischer Objekte und Kulturgüter.",
+      "policy_action_sha256": "6c946239f54ee4edcefef7717e04a229ea3d7c39c8b55d475751e1d901c4b67f",
+      "source_text_sha256": "6c946239f54ee4edcefef7717e04a229ea3d7c39c8b55d475751e1d901c4b67f",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "PUBLIC_FINANCE_FUNDING",
+      "missing_review_inputs": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "PUBLIC_FINANCE_FUNDING_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A26 (`Zur Umsetzung bedeutender Kulturbauprojekte setzen wir auf innovative Finanzierungs- und Beteiligungsmodelle: privates Mäzenatentum und gezielt eingesetzte Spendengelder zur Wiederherstellung historischer Objekte und Kulturgüter.`) is terminally not assessable after individual object-level review: this PUBLIC_FINANCE_FUNDING object does not specify or bind amount_period_and_funding_source, additionality_and_opportunity_cost, allocation_and_eligibility_rules, delivery_capacity_and_timeline, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A27",
+      "atom_id": "BE-AFD-2026-SU-0118-A27",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Gemäß der Forderung des Landesmusikrates und des Runden Tisches Musikalische Bildung werden wir ein Landesprogramm „Musikalische Bildung“ entwickeln und in die Praxis umsetzen.",
+      "source_sentence_normalized": "Gemäß der Forderung des Landesmusikrates und des Runden Tisches Musikalische Bildung werden wir ein Landesprogramm „Musikalische Bildung“ entwickeln und in die Praxis umsetzen.",
+      "source_sentence_sha256": "818716ed21e14a21a5a95adc9dec16cfa8a17bf9d029015b2ef95631f6fcc7a5",
+      "policy_action": "Gemäß der Forderung des Landesmusikrates und des Runden Tisches Musikalische Bildung werden wir ein Landesprogramm „Musikalische Bildung“ entwickeln und in die Praxis umsetzen.",
+      "policy_action_sha256": "818716ed21e14a21a5a95adc9dec16cfa8a17bf9d029015b2ef95631f6fcc7a5",
+      "source_text_sha256": "818716ed21e14a21a5a95adc9dec16cfa8a17bf9d029015b2ef95631f6fcc7a5",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A27 (`Gemäß der Forderung des Landesmusikrates und des Runden Tisches Musikalische Bildung werden wir ein Landesprogramm „Musikalische Bildung“ entwickeln und in die Praxis umsetzen.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A28",
+      "atom_id": "BE-AFD-2026-SU-0118-A28",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Im Rahmen der Förderung der Kooperation von Schulen und Musikschulen werden wir im Ganztag das Konzept „JeKiMus – jedem Kind seinen Zugang zur Musik“ umsetzen.",
+      "source_sentence_normalized": "Im Rahmen der Förderung der Kooperation von Schulen und Musikschulen werden wir im Ganztag das Konzept „JeKiMus – jedem Kind seinen Zugang zur Musik“ umsetzen.",
+      "source_sentence_sha256": "b2845f2157a4d80ef78f1df86278150bab14a6a8c7c9dadec8c5fc53dffa7ada",
+      "policy_action": "Im Rahmen der Förderung der Kooperation von Schulen und Musikschulen werden wir im Ganztag das Konzept „JeKiMus – jedem Kind seinen Zugang zur Musik“ umsetzen.",
+      "policy_action_sha256": "b2845f2157a4d80ef78f1df86278150bab14a6a8c7c9dadec8c5fc53dffa7ada",
+      "source_text_sha256": "b2845f2157a4d80ef78f1df86278150bab14a6a8c7c9dadec8c5fc53dffa7ada",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A28 (`Im Rahmen der Förderung der Kooperation von Schulen und Musikschulen werden wir im Ganztag das Konzept „JeKiMus – jedem Kind seinen Zugang zur Musik“ umsetzen.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A29",
+      "atom_id": "BE-AFD-2026-SU-0118-A29",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "An den Musikschulen werden wir ein bedarfsgerechtes Angebot schaffen und die langen Wartelisten abbauen.",
+      "source_sentence_normalized": "An den Musikschulen werden wir ein bedarfsgerechtes Angebot schaffen und die langen Wartelisten abbauen.",
+      "source_sentence_sha256": "0d4993f42f5bf3fa3c2f690c2e0cfa49c49516ae906b7e3e68be8d05bb565dcf",
+      "policy_action": "An den Musikschulen werden wir ein bedarfsgerechtes Angebot schaffen und die langen Wartelisten abbauen.",
+      "policy_action_sha256": "0d4993f42f5bf3fa3c2f690c2e0cfa49c49516ae906b7e3e68be8d05bb565dcf",
+      "source_text_sha256": "0d4993f42f5bf3fa3c2f690c2e0cfa49c49516ae906b7e3e68be8d05bb565dcf",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A29 (`An den Musikschulen werden wir ein bedarfsgerechtes Angebot schaffen und die langen Wartelisten abbauen.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A30",
+      "atom_id": "BE-AFD-2026-SU-0118-A30",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Zur Konkretisierung des festgelegten Angebotsumfangs der Musikschulen werden wir ein Musikschulgesetz verabschieden und damit die Rahmenbedingungen für den Musikschulunterricht, vor allem im Hinblick auf die Raumsituation, verbessern.",
+      "source_sentence_normalized": "Zur Konkretisierung des festgelegten Angebotsumfangs der Musikschulen werden wir ein Musikschulgesetz verabschieden und damit die Rahmenbedingungen für den Musikschulunterricht, vor allem im Hinblick auf die Raumsituation, verbessern.",
+      "source_sentence_sha256": "37cdf506c80dcf368f1bdb157f60c305e19f046e265140bc475599a3cb55d000",
+      "policy_action": "Zur Konkretisierung des festgelegten Angebotsumfangs der Musikschulen werden wir ein Musikschulgesetz verabschieden und damit die Rahmenbedingungen für den Musikschulunterricht, vor allem im Hinblick auf die Raumsituation und verbessern.",
+      "policy_action_sha256": "91f140b32d8d1c1a800ca48c32a77b4b5a94620dabbc9ca064c1376d68d8e3b0",
+      "source_text_sha256": "37cdf506c80dcf368f1bdb157f60c305e19f046e265140bc475599a3cb55d000",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A30 (`Zur Konkretisierung des festgelegten Angebotsumfangs der Musikschulen werden wir ein Musikschulgesetz verabschieden und damit die Rahmenbedingungen für den Musikschulunterricht, vor allem im Hinblick auf die Raumsituation und verbessern.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A31",
+      "atom_id": "BE-AFD-2026-SU-0118-A31",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Die AfD fordert eine Erhöhung der Festanstellungsquote an Musikschulen von derzeit 24 % auf mindestens 80 % wie im Bundesdurchschnitt.",
+      "source_sentence_normalized": "Die AfD fordert eine Erhöhung der Festanstellungsquote an Musikschulen von derzeit 24 % auf mindestens 80 % wie im Bundesdurchschnitt.",
+      "source_sentence_sha256": "db71fa889f1f84e6288497f43963d2a3235f54be002eb562333625433273ed44",
+      "policy_action": "Die AfD fordert eine Erhöhung der Festanstellungsquote an Musikschulen von derzeit 24 % auf mindestens 80 % wie im Bundesdurchschnitt.",
+      "policy_action_sha256": "db71fa889f1f84e6288497f43963d2a3235f54be002eb562333625433273ed44",
+      "source_text_sha256": "db71fa889f1f84e6288497f43963d2a3235f54be002eb562333625433273ed44",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A31 (`Die AfD fordert eine Erhöhung der Festanstellungsquote an Musikschulen von derzeit 24 % auf mindestens 80 % wie im Bundesdurchschnitt.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A32",
+      "atom_id": "BE-AFD-2026-SU-0118-A32",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Bestehende Honorarverträge müssen rechtssicher in Arbeitsverträge übergeleitet werden.",
+      "source_sentence_normalized": "Bestehende Honorarverträge müssen rechtssicher in Arbeitsverträge übergeleitet werden.",
+      "source_sentence_sha256": "e394e5c7224fad194e55a8d4d1f3d181844b2a821902cc4104f82a395cda9c6f",
+      "policy_action": "Bestehende Honorarverträge müssen rechtssicher in Arbeitsverträge übergeleitet werden.",
+      "policy_action_sha256": "e394e5c7224fad194e55a8d4d1f3d181844b2a821902cc4104f82a395cda9c6f",
+      "source_text_sha256": "e394e5c7224fad194e55a8d4d1f3d181844b2a821902cc4104f82a395cda9c6f",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A32 (`Bestehende Honorarverträge müssen rechtssicher in Arbeitsverträge übergeleitet werden.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A33",
+      "atom_id": "BE-AFD-2026-SU-0118-A33",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Bei der Umwandlung von Honorarverträgen in Personalstellen müssen die jetzigen Honorarlehrkräfte vorrangig berücksichtigt werden.",
+      "source_sentence_normalized": "Bei der Umwandlung von Honorarverträgen in Personalstellen müssen die jetzigen Honorarlehrkräfte vorrangig berücksichtigt werden.",
+      "source_sentence_sha256": "02f73b0a37ebb0d686204b74c9cc7996c9f7a5ed02a1d44e9cbf1ef6031bd72e",
+      "policy_action": "Bei der Umwandlung von Honorarverträgen in Personalstellen müssen die jetzigen Honorarlehrkräfte vorrangig berücksichtigt werden.",
+      "policy_action_sha256": "02f73b0a37ebb0d686204b74c9cc7996c9f7a5ed02a1d44e9cbf1ef6031bd72e",
+      "source_text_sha256": "02f73b0a37ebb0d686204b74c9cc7996c9f7a5ed02a1d44e9cbf1ef6031bd72e",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A33 (`Bei der Umwandlung von Honorarverträgen in Personalstellen müssen die jetzigen Honorarlehrkräfte vorrangig berücksichtigt werden.`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A34",
+      "atom_id": "BE-AFD-2026-SU-0118-A34",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Dabei dürfen bei der Überleitung eines Honorarvertrages in ein Arbeitsverhältnis keine sachgrundlosen Befristungen erfolgen.",
+      "source_sentence_normalized": "Dabei dürfen bei der Überleitung eines Honorarvertrages in ein Arbeitsverhältnis keine sachgrundlosen Befristungen erfolgen.",
+      "source_sentence_sha256": "90d1ba6654a4fea0883314f31c74df713a812d1a989ce171913615fd42ff216b",
+      "policy_action": "Dabei dürfen bei der Überleitung eines Honorarvertrages in ein Arbeitsverhältnis keine sachgrundlosen Befristungen erfolgen.",
+      "policy_action_sha256": "90d1ba6654a4fea0883314f31c74df713a812d1a989ce171913615fd42ff216b",
+      "source_text_sha256": "90d1ba6654a4fea0883314f31c74df713a812d1a989ce171913615fd42ff216b",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A34 (`Dabei dürfen bei der Überleitung eines Honorarvertrages in ein Arbeitsverhältnis keine sachgrundlosen Befristungen erfolgen.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A35",
+      "atom_id": "BE-AFD-2026-SU-0118-A35",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Bei der Einstufung ist die Erfahrung als Honorarkraft zu berücksichtigen.",
+      "source_sentence_normalized": "Bei der Einstufung ist die Erfahrung als Honorarkraft zu berücksichtigen.",
+      "source_sentence_sha256": "f47da21972a623cf6aecb9727caff867e277fb3d1b6888d946b3c4c496291549",
+      "policy_action": "Bei der Einstufung ist die Erfahrung als Honorarkraft zu berücksichtigen.",
+      "policy_action_sha256": "f47da21972a623cf6aecb9727caff867e277fb3d1b6888d946b3c4c496291549",
+      "source_text_sha256": "f47da21972a623cf6aecb9727caff867e277fb3d1b6888d946b3c4c496291549",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A35 (`Bei der Einstufung ist die Erfahrung als Honorarkraft zu berücksichtigen.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0118-A36",
+      "atom_id": "BE-AFD-2026-SU-0118-A36",
+      "source_unit_id": "BE-AFD-2026-SU-0118",
+      "pdf_page": 86,
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "source_locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12",
+      "source_excerpt": "Um die Ausbildung von Musikschullehrkräften zu sichern, wollen wir in Abstimmung mit den Musikhochschulen die studienvorbereitende Ausbildung",
+      "source_sentence_normalized": "Um die Ausbildung von Musikschullehrkräften zu sichern, wollen wir in Abstimmung mit den Musikhochschulen die studienvorbereitende Ausbildung",
+      "source_sentence_sha256": "812699c3dec1a880ce9193567aabcf951c596fd60e12343a6943f73cab1dc6df",
+      "policy_action": "Um die Ausbildung von Musikschullehrkräften zu sichern, wollen wir in Abstimmung mit den Musikhochschulen die studienvorbereitende Ausbildung",
+      "policy_action_sha256": "812699c3dec1a880ce9193567aabcf951c596fd60e12343a6943f73cab1dc6df",
+      "source_text_sha256": "812699c3dec1a880ce9193567aabcf951c596fd60e12343a6943f73cab1dc6df",
+      "source_parent_text_sha256": "991859e049c092d3a16cb1b0e1ac694cb7a2dca4fab9487354496f4c5c89293c",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "EDUCATION_CHILDREN_YOUTH",
+      "missing_review_inputs": [
+        "target_cohort_and_intervention_dose",
+        "pedagogical_or_service_delivery_model",
+        "staffing_finance_and_timeline",
+        "learning_participation_or_safety_baseline",
+        "rights_and_distribution_safeguards",
+        "counterfactual_and_independent_effect_evidence"
+      ],
+      "exact_reason_code": "EDUCATION_CHILDREN_YOUTH_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0118-A36 (`Um die Ausbildung von Musikschullehrkräften zu sichern, wollen wir in Abstimmung mit den Musikhochschulen die studienvorbereitende Ausbildung`) is terminally not assessable after individual object-level review: this EDUCATION_CHILDREN_YOUTH object does not specify or bind target_cohort_and_intervention_dose, pedagogical_or_service_delivery_model, staffing_finance_and_timeline, learning_participation_or_safety_baseline, rights_and_distribution_safeguards, counterfactual_and_independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p086:b005@65.18,297.03,379.83,406.12;p086:b006@64.99,417.03,381.77,562.12;p087:b001@59.03,69.03,375.89,190.12;p087:b002@59.28,201.19,373.74,262.12;p087:b003@59.38,273.19,375.06,370.12;p087:b004@59.04,381.19,375.89,466.12;p087:b005@59.31,477.19,373.95,562.12;p088:b001@65.25,69.19,379.03,130.12;p088:b002@64.97,141.03,380.91,334.12;p088:b003@64.97,345.19,381.75,466.12;p088:b004@64.54,477.19,379.04,490.12;p088:b005@65.25,489.19,379.82,562.12;p089:b002@59.30,69.03,375.31,238.12;p089:b003@59.04,249.19,373.97,370.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

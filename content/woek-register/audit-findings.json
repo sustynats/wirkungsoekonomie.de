@@ -1,0 +1,202 @@
+[
+  {
+    "Audit_ID": "A-001",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Scorecards",
+    "Befund": "621 leere Messwertzellen erzeugten dennoch Scores bzw. Steuersätze.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Formeln geben bei leerer Eingabe keinen AutoScore aus.",
+    "Restrisiko/Nächster_Schritt": "Nutzer:innen müssen Messwert oder Assurance-Evidenz eintragen.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-002",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Archetypen",
+    "Befund": "higher_is_better_abs und lower_is_better_abs fehlten; 320 Zeilen ergaben #N/A.",
+    "Betroffene_Zeilen": 320,
+    "Korrektur_v1.3": "28 Rule_IDs ersetzen die unvollständige Archetypenliste.",
+    "Restrisiko/Nächster_Schritt": "Fachliche Kalibrierung der Regeln bleibt erforderlich.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-003",
+    "Schweregrad": "Kritisch",
+    "Bereich": "FinalScore",
+    "Befund": "Die ursprüngliche Formel übernahm bei vorhandenem Archetyp den AutoScore und ignorierte den Benchmark.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "FinalScore = Minimum aller vorhandenen Auto-, Benchmark- und Assurance-Scores.",
+    "Restrisiko/Nächster_Schritt": "Regel durch Tests und spätere Softwareimplementierung absichern.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-004",
+    "Schweregrad": "Hoch",
+    "Bereich": "Benchmarks",
+    "Befund": "Legacy-BM-Werte wurden überwiegend aus Schwellen/Defaults abgeleitet, nicht aus validierten Branchenstichproben.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Legacy-Werte archiviert; aktive BM-Felder leer und gesperrt bis Validierung.",
+    "Restrisiko/Nächster_Schritt": "72 benchmarkabhängige Items benötigen echte Referenzdaten.",
+    "Status": "Strukturell behoben"
+  },
+  {
+    "Audit_ID": "A-005",
+    "Schweregrad": "Hoch",
+    "Bereich": "NACE",
+    "Befund": "NACE-Beispiele waren nicht versioniert.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Legacy-Status und Migrationsfeld für NACE Rev. 2.1 ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Fachliches Mapping je Item durchführen.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-006",
+    "Schweregrad": "Hoch",
+    "Bereich": "Quellen",
+    "Befund": "Berichts-/Messstandards wurden teilweise wie Belege für WÖk-Grenzwerte behandelt.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Quellenfunktion und Schwellenstatus getrennt.",
+    "Restrisiko/Nächster_Schritt": "Jede WÖk-Kalibrierung empirisch oder normativ dokumentieren.",
+    "Status": "Strukturell behoben"
+  },
+  {
+    "Audit_ID": "A-007",
+    "Schweregrad": "Hoch",
+    "Bereich": "Benchmarks",
+    "Befund": "Benchmarkabhängige Regeln ohne validierte aktive Benchmarks.",
+    "Betroffene_Zeilen": 72,
+    "Korrektur_v1.3": "Kein automatischer BenchmarkScore bis Status = Aktiv.",
+    "Restrisiko/Nächster_Schritt": "Branchen-, Regions- und Technologiebenchmarks entwickeln.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-008",
+    "Schweregrad": "Hoch",
+    "Bereich": "Qualitative Regeln",
+    "Befund": "Qualitative Schwellen ohne vollständigen Kriterien- und Assurance-Katalog.",
+    "Betroffene_Zeilen": 54,
+    "Korrektur_v1.3": "Assurance-Score als eigene, nachweisgebundene Eingabe.",
+    "Restrisiko/Nächster_Schritt": "Rubrics je Indikatorfamilie beschließen.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-009",
+    "Schweregrad": "Hoch",
+    "Bereich": "Rechtsgrenzen",
+    "Befund": "10 Items nutzten Prozent-vom-Grenzwert, obwohl Definition/Einheit einen absoluten Wert suggerierten.",
+    "Betroffene_Zeilen": 10,
+    "Korrektur_v1.3": "Definition, Einheit und Berechnung auf Grenzwertquote korrigiert.",
+    "Restrisiko/Nächster_Schritt": "Konkrete Rechtsfundstelle je Messung eintragen.",
+    "Status": "Teilweise offen"
+  },
+  {
+    "Audit_ID": "A-010",
+    "Schweregrad": "Hoch",
+    "Bereich": "Schwellen",
+    "Befund": "Bei 10 Items war die Grenze zwischen −2 und −3 nicht operationalisiert.",
+    "Betroffene_Zeilen": 10,
+    "Korrektur_v1.3": "Automatik bildet nur die explizit sichere Klasse ab; Assurance kann verschärfen.",
+    "Restrisiko/Nächster_Schritt": "Fachgrenze durch Wirkungsrat festlegen.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-011",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Fachquellen",
+    "Befund": "SROI/SDG17 wurde bei 120 Items als generischer Quellenplatzhalter verwendet.",
+    "Betroffene_Zeilen": 120,
+    "Korrektur_v1.3": "Als Platzhalter gekennzeichnet; konkrete Fachquelle erforderlich.",
+    "Restrisiko/Nächster_Schritt": "Indikatorfamilien einzeln operationalisieren.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-012",
+    "Schweregrad": "Hoch",
+    "Bereich": "Reparierbarkeit",
+    "Befund": "12 Items vermischten EU- und französische Reparierbarkeitssysteme.",
+    "Betroffene_Zeilen": 12,
+    "Korrektur_v1.3": "Produktspezifischer Indexstatus und Quellen getrennt.",
+    "Restrisiko/Nächster_Schritt": "Produktgruppe, Indexsystem und Rechtsstand festlegen.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-013",
+    "Schweregrad": "Hoch",
+    "Bereich": "Lokale Daten",
+    "Befund": "Stadt/GIS war bei 9 Items kein hinreichend bestimmter Datenbeleg.",
+    "Betroffene_Zeilen": 9,
+    "Korrektur_v1.3": "Datenhalter-/Layer-/Stichtag-Pflicht ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Lokale Quellen je Anwendung eintragen.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-014",
+    "Schweregrad": "Mittel",
+    "Bereich": "Innovation",
+    "Befund": "Patentstatistik wurde bei 4 Items ohne Wirkungs- und Qualitätslogik verwendet.",
+    "Betroffene_Zeilen": 4,
+    "Korrektur_v1.3": "PATSTAT als Inputquelle, nicht als Wirkungsnachweis klassifiziert.",
+    "Restrisiko/Nächster_Schritt": "Patentqualität, Nutzung und Transformationswirkung ergänzen.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-015",
+    "Schweregrad": "Hoch",
+    "Bereich": "Biodiversität",
+    "Befund": "8 Net-Gain-Regeln waren qualitativ und nicht feldspezifisch operationalisiert.",
+    "Betroffene_Zeilen": 8,
+    "Korrektur_v1.3": "Assurance- und Kriterienpflicht ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Methodik je Ökosystem, Baseline und Dauer festlegen.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-016",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Fachlogik",
+    "Befund": "Mindestens 12 Items zeigen deutliche Schablonenabweichungen zwischen Indikatorfamilie, Item und Definition.",
+    "Betroffene_Zeilen": 12,
+    "Korrektur_v1.3": "Kritische Prüfmarkierung im Register.",
+    "Restrisiko/Nächster_Schritt": "Indikatoren fachlich neu entwerfen; keine automatische Freigabe.",
+    "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-017",
+    "Schweregrad": "Hoch",
+    "Bereich": "Terminologie",
+    "Befund": "Der Quellenkatalog verwies noch auf Begriffsleitfaden v1.0 als führende Referenz.",
+    "Betroffene_Zeilen": 1,
+    "Korrektur_v1.3": "Auf v1.5 aktualisiert.",
+    "Restrisiko/Nächster_Schritt": "Bei künftigen Leitfaden-Versionen automatischen Versionsabgleich vorsehen.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-018",
+    "Schweregrad": "Hoch",
+    "Bereich": "SDG+",
+    "Befund": "WÖk-Erweiterungen waren im Register nur durch '+' gekennzeichnet und konnten wie offizielle SDGs wirken.",
+    "Betroffene_Zeilen": 162,
+    "Korrektur_v1.3": "Explizite Kennzeichnung 'SDG+ – …' in Register und Scorecards.",
+    "Restrisiko/Nächster_Schritt": "Öffentlicher Viewer muss SDG+ als WÖk-Erweiterung erklären.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-019",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Methodiktransparenz",
+    "Befund": "Kategorische politische Richtungsbewertung und numerische Scorecard konnten ohne Zusatzdokumentation verwechselt werden.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Eigenes Transparenzblatt mit Richtung/Evidenz/Scorecard/FinalScore/Nichtkompensation ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Portal muss diese Trennung identisch darstellen.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-020",
+    "Schweregrad": "Hoch",
+    "Bereich": "Publikation",
+    "Befund": "Für öffentliche Exporte gab es noch kein festes Feld- und Herkunftsschema.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Public-Export-Schema ergänzt; kanonische Quelle bleibt 01_Item_Register.",
+    "Restrisiko/Nächster_Schritt": "Viewer und Downloads müssen aus derselben kanonischen Quelle generiert werden.",
+    "Status": "Behoben"
+  }
+]

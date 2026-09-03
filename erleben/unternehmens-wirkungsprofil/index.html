@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unternehmens-Wirkungsprofil Beta | Rechenweg, Datenqualität und Wirkung lesen</title>
+    <meta name="description" content="Das Unternehmens-Wirkungsprofil übersetzt ESG-, GRI-, CSRD- und Klimadaten in eine Wirkungs-Lesart: Rechenweg, Reverse Merit Order, Datenqualität und Rückfragen statt Blackbox.">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/erleben/unternehmens-wirkungsprofil/">
+    <meta name="search_title" content="Unternehmens-Wirkungsprofil Beta">
+    <meta name="search_description" content="UWP-100 Beta: Unternehmens-Wirkungsprofil mit Rechenweg, fiktivem Beispiel, Datenqualitätsklassen A-E und 60-Sekunden-Leselogik. Kein Finanzrating.">
+    <meta name="search_type" content="Beta-Tool">
+    <meta name="search_section" content="Erleben">
+    <meta name="search_tags" content="Unternehmens-Wirkungsprofil, UWP-100 Beta, ESG, CSRD, GRI, Datenqualität, Reverse Merit Order, Wirkung statt ESG">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="Unternehmens-Wirkungsprofil Beta">
+    <meta property="og:description" content="Vom ESG-Bericht zur Wirkungs-Lesart: Rechenweg, Beispiel, Datenqualität und Rückfragen statt Blackbox.">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/erleben/unternehmens-wirkungsprofil/">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unternehmens-Wirkungsprofil Beta">
+    <meta name="twitter:description" content="Vom ESG-Bericht zur Wirkungs-Lesart: Rechenweg, Beispiel, Datenqualität und Rückfragen statt Blackbox.">
+    <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
+    <style>
+      .uwp-hero-note,
+      .uwp-method-note {
+        border: 1px solid rgba(6, 56, 45, 0.18);
+        background: #f6fbf7;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      .uwp-hero-list {
+        display: grid;
+        gap: 0.55rem;
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .uwp-hero-list li {
+        border-left: 4px solid #06382d;
+        padding-left: 0.75rem;
+      }
+
+      .uwp-hero-list strong {
+        display: block;
+      }
+
+      .uwp-search-shell {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+        gap: 1rem;
+        align-items: end;
+      }
+
+      .uwp-field label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 0.35rem;
+      }
+
+      .uwp-field input,
+      .uwp-field select {
+        width: 100%;
+        min-height: 48px;
+        border: 1px solid #d9d0c2;
+        border-radius: 6px;
+        padding: 0.8rem 0.9rem;
+        font: inherit;
+        background: #fff;
+      }
+
+      .uwp-results {
+        display: grid;
+        gap: 0.55rem;
+        margin-top: 1rem;
+      }
+
+      .uwp-result-button {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+        padding: 0.85rem;
+        border: 1px solid #d9d0c2;
+        border-radius: 8px;
+        background: #fff;
+        color: inherit;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .uwp-result-button:hover,
+      .uwp-result-button:focus {
+        border-color: #06382d;
+        outline: 2px solid rgba(6, 56, 45, 0.12);
+      }
+
+      .uwp-result-button small,
+      .uwp-meta-grid span {
+        display: block;
+        color: #5d646b;
+      }
+
+      .uwp-profile-header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .uwp-meta-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.7rem;
+      }
+
+      .uwp-meta-grid span {
+        border: 1px solid #e2dbd0;
+        border-radius: 6px;
+        padding: 0.65rem;
+        background: #fbfaf7;
+      }
+
+      .uwp-meta-grid strong {
+        display: block;
+        color: #111827;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .uwp-score-grid.five {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+
+      .card-grid.five {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+
+      .uwp-score-card-empty .card-title {
+        font-size: clamp(1.1rem, 2vw, 1.45rem);
+      }
+
+      .uwp-chart {
+        width: 100%;
+        min-height: 260px;
+      }
+
+      .uwp-chart-label,
+      .uwp-chart-legend text {
+        font-size: 12px;
+        fill: #27323a;
+      }
+
+      .uwp-chart-empty {
+        max-width: 460px;
+        font-size: 16px;
+        fill: #27323a;
+      }
+
+      .uwp-source-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 980px;
+      }
+
+      .uwp-source-table th,
+      .uwp-source-table td {
+        border-bottom: 1px solid #e2dbd0;
+        padding: 0.75rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+      }
+
+      .uwp-lede-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+        gap: 1rem;
+        align-items: stretch;
+      }
+
+      .uwp-scale-grid {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(84px, 1fr));
+        gap: 0.55rem;
+        margin-top: 1rem;
+      }
+
+      .uwp-scale-item,
+      .uwp-process-step,
+      .uwp-reading-step {
+        border: 1px solid #e2dbd0;
+        border-radius: 8px;
+        background: #fff;
+        padding: 0.8rem;
+      }
+
+      .uwp-scale-score {
+        display: block;
+        font-size: 1.35rem;
+        font-weight: 800;
+        color: #06382d;
+      }
+
+      .uwp-process-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.85rem;
+      }
+
+      .uwp-process-step span,
+      .uwp-reading-step span {
+        display: inline-grid;
+        place-items: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 999px;
+        background: #06382d;
+        color: #fff;
+        font-weight: 800;
+      }
+
+      .uwp-mini-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 720px;
+      }
+
+      .uwp-mini-table th,
+      .uwp-mini-table td {
+        border-bottom: 1px solid #e2dbd0;
+        padding: 0.72rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .uwp-mini-table th {
+        background: #fbfaf7;
+        color: #27323a;
+      }
+
+      .uwp-score-positive {
+        color: #0f6b3f;
+        font-weight: 800;
+      }
+
+      .uwp-score-negative {
+        color: #a3341f;
+        font-weight: 800;
+      }
+
+      .uwp-score-neutral {
+        color: #5c6975;
+        font-weight: 800;
+      }
+
+      .uwp-formula {
+        display: block;
+        overflow-x: auto;
+        border: 1px solid #d9d0c2;
+        border-radius: 8px;
+        background: #111827;
+        color: #f8fafc;
+        padding: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .uwp-reading-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0.85rem;
+      }
+
+      .uwp-architecture {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.75rem;
+        align-items: stretch;
+      }
+
+      .uwp-architecture .card {
+        position: relative;
+      }
+
+      .uwp-architecture .card:not(:last-child)::after {
+        content: ">";
+        position: absolute;
+        top: 50%;
+        right: -0.58rem;
+        transform: translateY(-50%);
+        color: #06382d;
+        font-weight: 800;
+      }
+
+      details.uwp-details {
+        border: 1px solid #e2dbd0;
+        border-radius: 8px;
+        background: #fff;
+        padding: 1rem;
+      }
+
+      details.uwp-details summary {
+        cursor: pointer;
+        font-weight: 800;
+      }
+
+      @media (max-width: 920px) {
+        .uwp-search-shell,
+        .uwp-profile-header,
+        .uwp-lede-grid,
+        .uwp-process-grid,
+        .uwp-reading-grid,
+        .uwp-architecture {
+          grid-template-columns: 1fr;
+        }
+
+        .uwp-score-grid.five,
+        .card-grid.five,
+        .uwp-scale-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .uwp-architecture .card::after {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--frag-die-wok" href="../../woek-ki/" data-nav-match="woek-ki/|app/" data-utility-label="Frag die WÖk">Frag die WÖk</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        <a class="site-utility-link site-utility-link--language" href="../../en/" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/|sdg-plus/|referenzrahmen/|sdg-sdgplus/|wissen/">Verstehen</a>
+        <a href="../../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/unternehmen/impact-controlling/|fuer/buergerinnen.html|fuer/investoren.html|fuer/investoren/impact-controlling/|fuer/kommunen.html">Für wen?</a>
+        <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/|wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/">Praxis &amp; Tools</a>
+        <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Debatte &amp; Radar</a>
+        <a href="../../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
+        <a href="../../institut/" data-nav-match="institut/">Institut</a>
+        <a href="../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|quellenarchiv/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html|portale/|website-1-0-release/">Bibliothek</a>
+        <a href="../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--frag-die-wok" href="../../woek-ki/" data-nav-match="woek-ki/|app/" data-utility-label="Frag die WÖk">Frag die WÖk</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        <a class="site-utility-link site-utility-link--language" href="../../en/" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main data-pagefind-body data-uwp-tool data-universe-url="../../data/uwp/company-universe.uwp100.json">
+      <section class="hero">
+        <div>
+          <p class="hero-kicker">UWP-100 Beta · Unternehmens-Wirkungsprofil</p>
+          <h1 class="hero-title">Unternehmens-Wirkungsprofil: Wirkung statt ESG-Blackbox.</h1>
+          <p class="hero-subtitle">Diese Beta-Seite zeigt, wie Unternehmensdaten in eine Wirkungs-Lesart übersetzt werden: Was ist belegt, wo liegt Wirkungspotenzial, wo entsteht Wirkungsrisiko - und welche Daten fehlen noch?</p>
+          <ul class="uwp-hero-list" aria-label="Was das UWP leistet">
+            <li><strong>Wofür?</strong> Unternehmen nicht nach Image oder Berichtsumfang lesen, sondern nach tatsächlicher Zustandsveränderung für Mensch, Planet und Demokratie.</li>
+            <li><strong>Wie?</strong> Datenqualität prüfen, kritische Schwachfelder sichtbar machen und gute Teilwerte nicht gegen rote Linien aufrechnen.</li>
+            <li><strong>Wofür nicht?</strong> Kein Ranking, kein Finanzrating, keine Kaufempfehlung und keine moralische Bewertung von Menschen.</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#unternehmen-suchen">Unternehmen suchen</a>
+            <a class="btn btn-secondary" href="#rechenweg">Rechenweg ansehen</a>
+            <a class="btn btn-secondary" href="#profil-lesen">Profil lesen lernen</a>
+          </div>
+        </div>
+        <aside class="uwp-hero-note" role="note">
+          <p class="hero-kicker">Leitfrage</p>
+          <h2>Was verändert das Unternehmen wirklich?</h2>
+          <p>Eine gleiche Bilanz oder ein guter Nachhaltigkeitsbericht sagt noch nicht, ob eine Firma positiv wirkt. Das UWP fragt nach Geschäftsmodell, Lieferkette, Governance, Datenqualität und Transformation.</p>
+        </aside>
+      </section>
+
+      <section class="section" aria-labelledby="uwp-score-title" data-generic-tool-explanation-ready="true">
+        <div class="uwp-lede-grid">
+          <div>
+            <p class="hero-kicker">Aha</p>
+            <h2 id="uwp-score-title">Was ist eigentlich ein Score - und was ist er nicht?</h2>
+            <p>Ein Score ist keine Schulnote über ein Unternehmen und kein moralisches Urteil über Menschen. Er ist eine geordnete Rückfrage: Wo zeigt der Datenstand positive Netto-Wirkung, wo Wirkungspotenzial, wo Wirkungsrisiko - und was ist noch nicht belastbar belegt?</p>
+            <p class="card-text">Die interne WÖk-Lesart arbeitet mit einer Skala von -3 bis +3. Für die Website können Teilwerte zusätzlich als 0-100-Werte visualisiert werden, ohne die Schutzlinie aufzugeben.</p>
+          </div>
+          <aside class="uwp-method-note" role="note">
+            <p class="hero-kicker">Merksatz</p>
+            <h3>Ein Score ist kein Urteil.</h3>
+            <p>Er ist eine strukturierte Rückfrage an Daten, Geschäftsmodell, Lieferkette und Governance.</p>
+          </aside>
+        </div>
+        <div class="uwp-scale-grid" aria-label="WÖk-Wirkungsskala von minus drei bis plus drei">
+          <div class="uwp-scale-item"><span class="uwp-scale-score">+3</span><p>transformativ positive Wirkung</p></div>
+          <div class="uwp-scale-item"><span class="uwp-scale-score">+2</span><p>sehr gute Wirkung</p></div>
+          <div class="uwp-scale-item"><span class="uwp-scale-score">+1</span><p>gute Wirkung</p></div>
+          <div class="uwp-scale-item"><span class="uwp-scale-score">0</span><p>neutral, wirkungsarm oder noch nicht positiv</p></div>
+          <div class="uwp-scale-item"><span class="uwp-scale-score">-1</span><p>schwache oder problematische Wirkung</p></div>
+          <div class="uwp-scale-item"><span class="uwp-scale-score">-2</span><p>schädliche Wirkung</p></div>
+          <div class="uwp-scale-item"><span class="uwp-scale-score">-3</span><p>hoch schädliche, nicht akzeptable Wirkung</p></div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="rechenweg" aria-labelledby="uwp-method-title">
+        <div class="section-header">
+          <p class="hero-kicker">Mechanik</p>
+          <h2 id="uwp-method-title">Wie kommt diese Zahl zustande?</h2>
+          <p>Die Bewertung beginnt nicht beim Gefühl, sondern bei Klassifikation, Quellen und Datenqualität. Jeder Wert braucht drei Antworten: was er misst, wie man ihn liest und für wen er wichtig ist.</p>
+        </div>
+        <div class="uwp-process-grid">
+          <article class="uwp-process-step"><span>1</span><h3 class="card-title">Klassifikation</h3><p>Was tut die Firma? Über NACE und Branche werden die relevanten Wirkungsfelder bestimmt.</p></article>
+          <article class="uwp-process-step"><span>2</span><h3 class="card-title">Indikatoren</h3><p>Jedes Feld bekommt WÖk-IDs. CSRD, ESRS, GRI und Berichte werden verbunden, nicht frei erfunden.</p></article>
+          <article class="uwp-process-step"><span>3</span><h3 class="card-title">Normalisierung</h3><p>Rohwerte werden gegen sektorale Benchmarks auf die Skala -3 bis +3 übersetzt.</p></article>
+          <article class="uwp-process-step"><span>4</span><h3 class="card-title">Einzelscores</h3><p>Pro Feld entsteht ein Score mit Datenqualitätsklasse A-E und sichtbarer Quelle.</p></article>
+          <article class="uwp-process-step"><span>5</span><h3 class="card-title">Reverse Merit Order</h3><p>Das schwächste kritische Feld bestimmt die Obergrenze. Gute Felder kompensieren keine roten Felder.</p></article>
+          <article class="uwp-process-step"><span>6</span><h3 class="card-title">Gesamtprofil</h3><p>Ein Gesamtprofil erscheint nur, wenn gerade das entscheidende Feld ausreichend belastbar belegt ist.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="uwp-apple-title">
+        <div class="section-header">
+          <p class="hero-kicker">Aha-Anker</p>
+          <h2 id="uwp-apple-title">Warum macht eine grüne Sparte ein Unternehmen nicht automatisch grün?</h2>
+          <p>Zwei Äpfel, gleicher Preis. Wirken sie gleich? Am Apfel wird die Regel schnell sichtbar: Nicht der Durchschnitt entscheidet, sondern das kritische Schwachfeld.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="uwp-mini-table">
+            <thead>
+              <tr><th>Wirkungsfeld</th><th>Regionaler Bio-Apfel</th><th>Importapfel aus Wasserstressregion</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Klima</td><td class="uwp-score-positive">+2</td><td class="uwp-score-negative">-1</td></tr>
+              <tr><td>Wasser</td><td class="uwp-score-positive">+1</td><td class="uwp-score-negative">-2</td></tr>
+              <tr><td>Biodiversität</td><td class="uwp-score-positive">+2</td><td class="uwp-score-negative">-1</td></tr>
+              <tr><td>Chemie &amp; Gesundheit</td><td class="uwp-score-positive">+2</td><td class="uwp-score-negative">-1</td></tr>
+              <tr><td>Arbeit</td><td class="uwp-score-positive">+1</td><td class="uwp-score-negative">-1</td></tr>
+              <tr><td>Ressourcen &amp; Verpackung</td><td class="uwp-score-positive">+1</td><td class="uwp-score-neutral">0</td></tr>
+              <tr><th>FinalScore (Minimum)</th><th class="uwp-score-positive">+1</th><th class="uwp-score-negative">-2</th></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="protection-notice" role="note">
+          <p class="card-kicker">Merksatz</p>
+          <h3>Vom Apfel zur AG ist es nur ein Skalensprung.</h3>
+          <p>Die Regel bleibt: Das schwächste kritische Feld entscheidet. Reichweite, Umsatz oder gute Teilwerte sind noch keine positive Netto-Wirkung.</p>
+        </aside>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="uwp-norddraht-title">
+        <div class="section-header">
+          <p class="hero-kicker">Worked Example · fiktiv</p>
+          <h2 id="uwp-norddraht-title">Wie sähe das bei einer fiktiven Firma aus?</h2>
+          <p>Die Norddraht AG ist ein bewusst erfundenes Beispiel. So bleibt die Methode nachvollziehbar, ohne echte Unternehmen mit nicht belegten Scores zu versehen.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="uwp-mini-table">
+            <thead>
+              <tr><th>Wirkungsfeld</th><th>Messgröße, vereinfacht</th><th>Einzelscore</th><th>Datenqualität</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Klima Scope 1+2</td><td>t CO2e / Mio. Euro Umsatz vs. Sektor-Benchmark</td><td class="uwp-score-positive">+1</td><td>B</td></tr>
+              <tr><td>Klima Scope 3</td><td>Vorprodukt-Emissionsintensität</td><td class="uwp-score-negative">-1</td><td>D</td></tr>
+              <tr><td>Wasser</td><td>Entnahme mal Wasserstressfaktor</td><td class="uwp-score-positive">+1</td><td>C</td></tr>
+              <tr><td>Arbeit &amp; Sicherheit</td><td>Unfälle / Mio. Arbeitsstunden, Living-Wage-Quote</td><td class="uwp-score-positive">+2</td><td>A</td></tr>
+              <tr><td>Menschenrechte Lieferkette</td><td>Audit-Abdeckung kritischer Vorlieferanten</td><td class="uwp-score-negative">-2</td><td>D</td></tr>
+              <tr><td>Governance / Steuertransparenz</td><td>Country-by-Country-Reporting, Whistleblowing</td><td class="uwp-score-positive">+1</td><td>B</td></tr>
+              <tr><td>Lobbying / Einflussnahme</td><td>Transparenzregister, Positionspapiere</td><td class="uwp-score-neutral">0</td><td>C</td></tr>
+              <tr><td>Datenschutz</td><td>Verstöße, algorithmische Fairness</td><td class="uwp-score-positive">+1</td><td>B</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <pre class="uwp-formula"><code>FinalScore = min(+1, -1, +1, +2, -2, +1, 0, +1) = -2</code></pre>
+        <aside class="uwp-method-note" role="note">
+          <p class="hero-kicker">Der eigentliche Clou</p>
+          <h3>Wenn das kritische Feld nur Datenqualität D hat, gibt es kein hartes Gesamturteil.</h3>
+          <p>Dann zeigt das UWP: Kritisches Feld bei unzureichender Datenlage. Offene Frage an das Unternehmen: Wie hoch ist die geprüfte Audit-Abdeckung der kritischen Vorlieferanten?</p>
+        </aside>
+      </section>
+
+      <section class="section" id="unternehmen-suchen" aria-labelledby="uwp-search-title">
+        <div class="section-header">
+          <p class="hero-kicker">UWP-100 Beta</p>
+          <h2 id="uwp-search-title">Unternehmen aus dem Beta-Universum suchen</h2>
+          <p>Das UWP-100-Universum ist ein kuratiertes Beta-Universum von 100 deutschen börsennotierten Unternehmen. Es dient der methodischen Erprobung, ist kein offizieller Index und zeigt ohne belastbare Beobachtungen keine echten Unternehmens-Scores.</p>
+          <p class="card-text" data-uwp-count>Unternehmen werden geladen ...</p>
+        </div>
+        <div class="card">
+          <div class="uwp-search-shell">
+            <div class="uwp-field">
+              <label for="uwp-company-search">Freie Suche innerhalb des UWP-100-Universums</label>
+              <input id="uwp-company-search" type="search" placeholder="Name, Ticker, Branche oder Indexumfeld eingeben" autocomplete="off" data-uwp-search>
+            </div>
+            <div class="uwp-field">
+              <label for="uwp-company-select">Direkt auswählen</label>
+              <select id="uwp-company-select" data-uwp-select>
+                <option>Unternehmen werden geladen ...</option>
+              </select>
+            </div>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-secondary" type="button" data-uwp-first>Erstes Profil öffnen</button>
+          </div>
+          <div class="uwp-results" data-uwp-results aria-live="polite"></div>
+        </div>
+      </section>
+
+      <div data-uwp-profile hidden></div>
+
+      <section class="section section-muted" id="profil-lesen" aria-labelledby="uwp-read-title">
+        <div class="section-header">
+          <p class="hero-kicker">Profil lesen</p>
+          <h2 id="uwp-read-title">Wie lese ich ein Profil in 60 Sekunden?</h2>
+          <p>Die Reihenfolge ist wichtig. Erst das schwächste Feld, dann Datenqualität, dann Status und Trend. Das Profil entscheidet nicht. Es macht entscheidbar.</p>
+        </div>
+        <div class="uwp-reading-grid">
+          <article class="uwp-reading-step"><span>1</span><h3 class="card-title">Schwächstes Feld</h3><p>Nicht auf den Schnitt schauen. Das tiefste kritische Feld ist die Obergrenze des Profils.</p></article>
+          <article class="uwp-reading-step"><span>2</span><h3 class="card-title">Datenqualität</h3><p>A/B ist belastbar, C braucht Vorsicht, D/E ist Rückfrage statt Befund.</p></article>
+          <article class="uwp-reading-step"><span>3</span><h3 class="card-title">Status und Trend</h3><p>Status zeigt, wo es steht. Trend zeigt, wohin es sich bewegt.</p></article>
+          <article class="uwp-reading-step"><span>4</span><h3 class="card-title">Gap prüfen</h3><p>Bessere Berichte sind gut. Aber Transparenz ist noch keine tatsächliche Wirkung.</p></article>
+          <article class="uwp-reading-step"><span>5</span><h3 class="card-title">Handlung ableiten</h3><p>Aus dem Profil wird eine konkrete Rückfrage für Einkauf, Kapital, Aufsicht oder Führung.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="uwp-values-title">
+        <div class="section-header">
+          <p class="hero-kicker">Wert lesen</p>
+          <h2 id="uwp-values-title">Was bedeutet welcher Wert?</h2>
+          <p>Jede Anzeige bekommt drei Sätze: was sie misst, wie man sie liest und für wen sie wichtig ist.</p>
+        </div>
+        <details class="uwp-details" open>
+          <summary>Die fünf Anzeigen eines Profils</summary>
+          <div class="table-wrap">
+            <table class="uwp-mini-table">
+              <thead>
+                <tr><th>Anzeige</th><th>Was sie misst</th><th>Wie man sie liest</th><th>Typischer Denkfehler</th><th>Für wen wichtig</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Status</td><td>Aktuelles Wirkungsniveau je Dimension.</td><td>Wo steht das Unternehmen heute? Das schwächste kritische Feld zählt zuerst.</td><td>Ein guter Klimawert macht kein gutes Gesamtprofil.</td><td>Einkauf, Aufsicht, Verbraucher:innen</td></tr>
+                <tr><td>Trend</td><td>Veränderung des Status über mehrere Jahre.</td><td>Richtung, nicht Niveau. Ein schwacher Status kann sich verbessern oder verhärten.</td><td>Es wird besser ist nicht dasselbe wie es ist gut.</td><td>Investor:innen, Unternehmensführung</td></tr>
+                <tr><td>Transformation</td><td>Bewegung im Geschäftsmodell, CapEx, Produktmix und Lieferkettenumbau.</td><td>Zukunftssignal: strukturelle Verbesserung oder kosmetische Anpassung?</td><td>Einzelne grüne Produkte mit Transformation verwechseln.</td><td>Kapital, Politik, Regulierung</td></tr>
+                <tr><td>Datenqualität</td><td>Belastbarkeit der Werte in Klassen A-E.</td><td>Vorbehalt vor jeder Zahl. Ein guter Score in Klasse E ist keine geprüfte Aussage.</td><td>Eine präzise Zahl für eine geprüfte Zahl halten.</td><td>Alle, besonders Aufsicht und Kapital</td></tr>
+                <tr><td>Gesamt-Wirkungsprofil</td><td>Zusammenführung nach Reverse Merit Order und Nichtkompensation.</td><td>Das schwächste kritische Feld bestimmt die Obergrenze. Kein Mittelwert.</td><td>Den Gesamtwert als Schulnote lesen.</td><td>Beschaffung, Investor:innen, Steuerung</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+
+      <section class="section section-muted" id="datenquellen" aria-labelledby="uwp-data-title">
+        <div class="section-header">
+          <p class="hero-kicker">Datenqualität</p>
+          <h2 id="uwp-data-title">Woher weiß ich, ob ich der Zahl trauen darf?</h2>
+          <p>Fehlende Daten werden nicht versteckt. Sie sind Teil des Ergebnisses. Das Snapshot-Prinzip ist Absicht: auditierbar sind versionierte Daten mit Quelle, Jahr, Abrufdatum und Methodikversion.</p>
+        </div>
+        <div class="card-grid five">
+          <article class="card"><h3 class="card-title">A</h3><p class="card-text">Geprüfte, quellenverankerte Daten mit klarer Methodik und hoher Vergleichbarkeit.</p></article>
+          <article class="card"><h3 class="card-title">B</h3><p class="card-text">Belastbare Unternehmensdaten mit guter Quelle, aber begrenzter Prüfung oder Vergleichbarkeit.</p></article>
+          <article class="card"><h3 class="card-title">C</h3><p class="card-text">Brauchbare Daten mit methodischem Vorbehalt. Lesen, aber nicht überdehnen.</p></article>
+          <article class="card"><h3 class="card-title">D</h3><p class="card-text">Schätzung, Teilquelle oder Lücke. Als Rückfrage anzeigen, nicht als Befund verkaufen.</p></article>
+          <article class="card"><h3 class="card-title">E</h3><p class="card-text">Datenlücke. Kein Score im Kernfeld; bei kritischem Feld bleibt das Gesamtprofil gesperrt.</p></article>
+        </div>
+        <div class="uwp-architecture" aria-label="Snapshot-Architektur">
+          <article class="card"><h3 class="card-title">Quelle</h3><p class="card-text">CSRD/ESRS, GRI, Berichte, SBTi, CDP oder andere zulässige öffentliche beziehungsweise lizenzierte Quellen.</p></article>
+          <article class="card"><h3 class="card-title">Adapter</h3><p class="card-text">Parser und Extraktion für XHTML, XBRL, PDF, HTML und strukturierte Datensätze.</p></article>
+          <article class="card"><h3 class="card-title">Mapping</h3><p class="card-text">Quell-Kennzahl zu WÖk-ID, Datenqualitätsklasse, Benchmark und Normalisierung.</p></article>
+          <article class="card"><h3 class="card-title">Snapshot</h3><p class="card-text">Versionierter Datensatz je Firma und Jahr. Kein Wert ohne Herkunft.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="uwp-gap-title">
+        <div class="section-header">
+          <p class="hero-kicker">Disclosure-to-Impact-Gap</p>
+          <h2 id="uwp-gap-title">Berichtet die Firma besser - oder wirkt sie besser?</h2>
+          <p>Mehr Transparenz ist gut, aber Transparenz ist noch keine Wirkung. Deshalb trennt das UWP Datenqualität, Status, Trend und Transformation.</p>
+        </div>
+        <div class="card-grid two">
+          <article class="card"><h3 class="card-title">Besser berichtet</h3><p class="card-text">Mehr Kennzahlen, bessere Framework-Abdeckung, mehr Assurance, klarere Quellen. Das verbessert die Lesbarkeit und kann Rückkopplung ermöglichen.</p></article>
+          <article class="card"><h3 class="card-title">Besser wirkt</h3><p class="card-text">Absolute Emissionen, Risiken, Wasserstress, Menschenrechtslücken oder Demokratie-Risiken verändern sich tatsächlich. Erst dann wird aus Reporting Rückkopplung.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="uwp-dimensions-title">
+        <div class="section-header">
+          <p class="hero-kicker">WÖk-Dimensionen</p>
+          <h2 id="uwp-dimensions-title">Was wird betrachtet?</h2>
+          <p>Das UWP trennt Wirkung auf Mensch, Planet und Demokratie. Transformation ist keine vierte WÖk-Dimension, sondern eine Auswertungsebene: Bewegt sich das Geschäftsmodell wirklich?</p>
+        </div>
+        <div class="card-grid four">
+          <article class="card"><h3 class="card-title">Mensch</h3><p class="card-text">Arbeitsbedingungen, faire Löhne, Gesundheitsschutz, Sicherheit, Menschenrechte, Lieferketten, Zugang und soziale Produktwirkung.</p></article>
+          <article class="card"><h3 class="card-title">Planet</h3><p class="card-text">Scope 1/2/3, Energie, Wasser, Wasserstress, Abfall, Kreislaufwirtschaft, Biodiversität, Landnutzung und Schadstoffe.</p></article>
+          <article class="card"><h3 class="card-title">Demokratie</h3><p class="card-text">Steuertransparenz, Korruption, Whistleblowing, Lobbying, Datenschutz, Plattformmacht, Rechtskonformität und Vertrauen.</p></article>
+          <article class="card"><h3 class="card-title">Transformation</h3><p class="card-text">Geschäftsmodell, CapEx, absolute Wirkungen, Produktanteile, Lieferkettenumbau und gesetzte Standards über die Zeit.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="uwp-use-title">
+        <div class="section-header">
+          <p class="hero-kicker">Wofür?</p>
+          <h2 id="uwp-use-title">Wer braucht das - und wofür?</h2>
+          <p>Das Profil entscheidet nicht automatisch. Es macht die nächste gute Frage sichtbar.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="uwp-mini-table">
+            <thead>
+              <tr><th>Rolle</th><th>Worauf diese Rolle zuerst schaut</th><th>Die eine Frage, die das UWP beantwortet</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Beschaffung / Einkauf</td><td>Schwächstes Lieferketten-Feld, Datenqualität</td><td>Welcher Lieferant verschiebt versteckte Kosten in meine Kette?</td></tr>
+              <tr><td>Kapital / Investor:innen</td><td>Trend, Transformation, Governance</td><td>Verbessert sich die Wirkung strukturell - oder nur der Bericht?</td></tr>
+              <tr><td>Unternehmensführung</td><td>Eigene rote Felder, Disclosure-to-Impact-Gap</td><td>Wo habe ich echte Wirkungslücken statt Berichtslücken?</td></tr>
+              <tr><td>Regulierung / Politik</td><td>Felder mit schwacher Datenqualität D/E</td><td>Wo brauchen wir bessere Datenpflichten oder klare rote Linien?</td></tr>
+              <tr><td>Wirkungssteuer</td><td>Gesamt-FinalScore je Produktgruppe</td><td>Woran ließe sich eine wirkungsgekoppelte Besteuerung andocken?</td></tr>
+              <tr><td>Verbraucher:innen</td><td>Status und ein verständlicher Klartext-Satz</td><td>Was steckt hinter Produkt und Marke - positiv, neutral, negativ?</td></tr>
+              <tr><td>Demokratie-Dimension</td><td>Steuertransparenz, Lobbying, Plattformmacht</td><td>Stärkt oder schwächt dieses Unternehmen öffentliche Räume?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="protection-notice" role="note">
+          <p class="card-kicker">Schutzlinien</p>
+          <h3>Keine Planwirtschaft, keine Sprachpolizei, kein Social Credit.</h3>
+          <p>Das UWP bewertet keine Personen und erstellt keine moralische Rangliste von Menschen. Es ordnet öffentlich belegbare Wirkungsdaten von Unternehmen in einem methodischen, versionierten Modell.</p>
+        </aside>
+      </section>
+    </main>
+    <footer class="footer" data-search-exclude>
+  <div class="footer-grid">
+    <div>
+      <p class="hero-kicker">Wirkungsökonomie</p>
+      <h2>Die neue Ordnung des Wohlstands</h2>
+      <p>Die Wirkungsökonomie ist ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht, bewertet und in Entscheidungen zurückführt.</p>
+      <p><a class="text-link" href="../../mitmachen.html">Kontakt und Mitmachen</a></p>
+    </div>
+    <a class="btn btn-primary" href="../../kompass.html">WÖk-Kompass öffnen</a>
+    <nav class="footer-nav" aria-label="Footer Navigation" data-search-exclude>
+      <div class="footer-nav-group">
+      <h3>Verstehen</h3>
+      <div class="footer-nav-links">
+          <a href="../../verstehen/" data-nav-match="verstehen/">Einstieg</a>
+          <a href="../../modell.html" data-nav-match="modell.html">Das Modell</a>
+          <a href="../../so-wirkt-wirkungsoekonomie/" data-nav-match="so-wirkt-wirkungsoekonomie/">So wirkt WÖk</a>
+          <a href="../../wirkungswissenschaften/" data-nav-match="wirkungswissenschaften/">Wirkungswissenschaften</a>
+          <a href="../../einwaende/" data-nav-match="einwaende/">Einwände</a>
+          <a href="../../begriffe/" data-nav-match="begriffe/">Glossar</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Für wen?</h3>
+      <div class="footer-nav-links">
+          <a href="../../fuer/" data-nav-match="fuer/">Übersicht</a>
+          <a href="../../fuer/buergerinnen.html" data-nav-match="fuer/buergerinnen.html">Bürger:innen</a>
+          <a href="../../fuer/unternehmen.html" data-nav-match="fuer/unternehmen.html">Unternehmen</a>
+          <a href="../../fuer/investoren.html" data-nav-match="fuer/investoren.html">Investor:innen</a>
+          <a href="../../fuer/kommunen.html" data-nav-match="fuer/kommunen.html">Kommunen</a>
+          <a href="../../fuer/politik.html" data-nav-match="fuer/politik.html">Politik</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungsfelder</h3>
+      <div class="footer-nav-links">
+          <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/">Alle Wirkungsfelder</a>
+          <a href="../../wirkungsfelder/bildung/" data-nav-match="wirkungsfelder/bildung/">Bildung</a>
+          <a href="../../wirkungsfelder/gesundheit-pflege/" data-nav-match="wirkungsfelder/gesundheit-pflege/">Gesundheit &amp; Pflege</a>
+          <a href="../../wirkungsfelder/klima-energie-ressourcen/" data-nav-match="wirkungsfelder/klima-energie-ressourcen/">Klima, Energie &amp; Ressourcen</a>
+          <a href="../../wirkungsfelder/finanzsystem-kapital/" data-nav-match="wirkungsfelder/finanzsystem-kapital/">Finanzsystem &amp; Kapital</a>
+          <a href="../../wirkungsfelder/staat-recht-demokratie/" data-nav-match="wirkungsfelder/staat-recht-demokratie/">Staat, Recht &amp; Demokratie</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Praxis &amp; Tools</h3>
+      <div class="footer-nav-links">
+          <a href="../../werkzeuge/" data-nav-match="werkzeuge/">Alle Werkzeuge</a>
+          <a href="../../erleben/" data-nav-match="erleben/">Interaktive Demos</a>
+          <a href="../../wirkungssteuerung/wirkungssteuer/" data-nav-match="wirkungssteuerung/wirkungssteuer/">Wirkungssteuer</a>
+          <a href="../../wirkungssteuerung/wirkungshaushalt/" data-nav-match="wirkungssteuerung/wirkungshaushalt/">Wirkungshaushalt</a>
+          <a href="../../werkzeuge/scorecards/" data-nav-match="werkzeuge/scorecards/">Scorecards</a>
+          <a href="../../werkzeuge/t-sroi/" data-nav-match="werkzeuge/t-sroi/">T-SROI</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Debatte &amp; Radar</h3>
+      <div class="footer-nav-links">
+          <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/">Übersicht</a>
+          <a href="../../wirkungsradar/" data-nav-match="wirkungsradar/">Wirkungsradar</a>
+          <a href="../../wirkungsradar/debattenkarten/" data-nav-match="wirkungsradar/debattenkarten/">Debattenkarten</a>
+          <a href="../../woek-ki/" data-nav-match="woek-ki/">Frag die WÖk</a>
+          <a href="../../app/" data-nav-match="app/">WÖk-App</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Lernen</h3>
+      <div class="footer-nav-links">
+          <a href="../../lernen/" data-nav-match="lernen/">Lernportal</a>
+          <a href="../../akademie/" data-nav-match="akademie/">Akademie</a>
+          <a href="../../institut/" data-nav-match="institut/">Wirkungsinstitut</a>
+          <a href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Bibliothek</h3>
+      <div class="footer-nav-links">
+          <a href="../../bibliothek/" data-nav-match="bibliothek/">Bibliothek</a>
+          <a href="../../journal/" data-nav-match="journal/">Journal</a>
+          <a href="../../podcast/" data-nav-match="podcast/">Podcast</a>
+          <a href="../../quellenarchiv/" data-nav-match="quellenarchiv/">Quellenarchiv</a>
+          <a href="../../referenz/" data-nav-match="referenz/">Online-Buch</a>
+          <a href="../../wissen/working-papers/" data-nav-match="wissen/working-papers/">Working Papers</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Mitmachen</h3>
+      <div class="footer-nav-links">
+          <a href="../../mitmachen.html" data-nav-match="mitmachen.html">Mitmachen</a>
+          <a href="../../suche.html" data-nav-match="suche.html">Suche</a>
+          <a href="../../ueber.html" data-nav-match="ueber.html">Über die WÖk</a>
+          <a href="../../impressum.html" data-nav-match="impressum.html">Impressum</a>
+          <a href="../../datenschutz.html" data-nav-match="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    </nav>
+    <nav class="footer-legal-nav" aria-label="Rechtliches" data-search-exclude>
+<a href="../../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+<a href="../../ueber.html" data-nav-match="ueber.html|ueber/|ueber-die-woek/|ueber-die-w-oek/">Über die Wirkungsökonomie</a>
+<a href="../../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+<a href="../../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+    </nav>
+    <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+  </div>
+</footer>
+    <script src="../../assets/js/main.js"></script>
+    <script type="module" src="../../assets/js/uwp/uwp-profile.js"></script>
+  </body>
+</html>

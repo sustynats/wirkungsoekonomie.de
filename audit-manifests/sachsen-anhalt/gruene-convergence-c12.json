@@ -1,0 +1,174 @@
+{
+  "schema_version": "woek-st-gruene-convergence-component-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C12",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {"id": 5377817070, "marker": "ST-GRUENE-PSP-R21", "updated_at": "2026-08-22T04:15:11Z", "body_sha256": "ffe78e27d9cc072e7fca9a3371772d7393b634d9475b29700bf8beb95c6ff149"},
+      {"id": 5377822084, "marker": "ST-GRUENE-PSP-R22", "updated_at": "2026-08-22T04:16:26Z", "body_sha256": "21054516a6332803a5fa0c760132575ddd30ba6d915b6dc2e5e9f3671e16f381"},
+      {"id": 5377832404, "marker": "ST-GRUENE-PSP-R22.1", "updated_at": "2026-08-22T04:19:03Z", "body_sha256": "3b761fb143207ea431d49b8e58b4ee0f68fb6210f737e3ea4bc80a27393c3659"},
+      {"id": 5377840880, "marker": "ST-GRUENE-PSP-R23", "updated_at": "2026-08-22T04:21:20Z", "body_sha256": "06a7bc16b1bbe942f2f5e569b284a948f906b360a7031f06b4ea509bc622671c"},
+      {"id": 5377868982, "marker": "ST-GRUENE RETRO-PARITY R24", "updated_at": "2026-08-22T04:28:25Z", "body_sha256": "8cc002e708d6abc81b78ccbd5ea068019539d0ae48f211dba883fd7b5df4b134"},
+      {"id": 5373764817, "marker": "ST-GRUENE-A06", "updated_at": "2026-08-21T18:31:54Z", "body_sha256": "3ad0cd074f03044b46b17ffcbf00680485e9a5c87e3819a4205648ac30d8fd84"},
+      {"id": 5374157612, "marker": "ST-GRUENE-A07.2", "updated_at": "2026-08-21T19:10:45Z", "body_sha256": "1ef75890c34411f4e3226a565cc4e230d154ee6e904c1fcfd96521ac81c2e99c"}
+    ],
+    "required_facts": {
+      "ST-GRUENE-PSP-R21": ["historical working window: **0344–0353**", "source-v2/restore records reused: **5**", "`ST_GRUENE_PSP_R21_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R22": ["historical working window: **0354–0360**", "`ST_GRUENE_PSP_R22_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R22.1": ["historical scope is **`0354–0362`**, not `0354–0360`", "historical rows in R22 = **9 (`0354–0362`)**", "`ST_GRUENE_PSP_R22_LOCAL_PARITY = PASS_CORRECTED_BOUNDARY`"],
+      "ST-GRUENE-PSP-R23": ["corrected historical working window: **0363–0381**", "`0366/0367/0374/0379` are provenance parents only after split", "`ST_GRUENE_PSP_R23_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE RETRO-PARITY R24": ["historisches Working-Fenster **0382–0390**", "**23 einmalig gezählte aktive Effect-Leaves**", "`ST_GRUENE_PSP_R24_LOCAL_PARITY = PASS`"]
+    },
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C11"
+  },
+  "scope": {
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "windows": [
+    {
+      "source_marker": "ST-GRUENE-PSP-R21",
+      "historical_first": "0344", "historical_last": "0353",
+      "historical_roles": {
+        "active_effect_leaf": ["0346", "0347", "0348", "0349", "0350", "0351", "0352"],
+        "context_design_non_effect_source_leaf": ["0345", "0353"],
+        "parent_provenance_nonleaf": ["0344"], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-0344-child-oerr-bestands-entwicklungsgarantie",
+          "ltw-2026-st-gruene-v2-0344-child-private-digitale-buergermedien",
+          "ltw-2026-st-gruene-v2-0349-child-regionale-investigative-berichterstattung-erhalten",
+          "ltw-2026-st-gruene-v2-0352-child-ki-datensicherheit-digitalkommunikation"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0344": ["ltw-2026-st-gruene-v2-0344-child-oerr-bestands-entwicklungsgarantie", "ltw-2026-st-gruene-v2-0344-child-private-digitale-buergermedien"],
+        "0349": ["ltw-2026-st-gruene-v2-0349-child-regionale-investigative-berichterstattung-erhalten"],
+        "0352": ["ltw-2026-st-gruene-v2-0352-child-ki-datensicherheit-digitalkommunikation"]
+      },
+      "restored_in_place_historical": ["0345"], "semantic_relations": [],
+      "counts": {"historical_active_effect_leaves": 7, "versioned_active_effect_leaves": 4, "non_effect_source_leaves": 2, "parent_provenance_nonleaves": 1, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 13, "authoritative_effect_leaves": 11}
+    },
+    {
+      "source_marker": "ST-GRUENE-PSP-R22.1",
+      "historical_first": "0354", "historical_last": "0362",
+      "historical_roles": {
+        "active_effect_leaf": ["0359", "0360", "0361", "0362"],
+        "context_design_non_effect_source_leaf": ["0354", "0355", "0356", "0358"],
+        "parent_provenance_nonleaf": ["0357"], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {"active_effect_leaf": [], "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []},
+      "lineage_edges": {}, "restored_in_place_historical": ["0360"], "semantic_relations": [],
+      "counts": {"historical_active_effect_leaves": 4, "versioned_active_effect_leaves": 0, "non_effect_source_leaves": 4, "parent_provenance_nonleaves": 1, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 8, "authoritative_effect_leaves": 4}
+    },
+    {
+      "source_marker": "ST-GRUENE-PSP-R23",
+      "historical_first": "0363", "historical_last": "0381",
+      "historical_roles": {
+        "active_effect_leaf": ["0363", "0364", "0365", "0368", "0370", "0371", "0372", "0373", "0375", "0376", "0377", "0378", "0381"],
+        "context_design_non_effect_source_leaf": ["0380"],
+        "parent_provenance_nonleaf": ["0366", "0367", "0369", "0374", "0379"], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a07-0001-kulturpass-erweiterung",
+          "ltw-2026-st-gruene-ps-a07-0002-lernmittelfreiheit",
+          "ltw-2026-st-gruene-ps-a07-0003-alle-un-kinderrechte-landesverfassung",
+          "ltw-2026-st-gruene-ps-a07-0004-kinderrechte-monitoringstelle",
+          "ltw-2026-st-gruene-ps-a07-0005-kommunale-kinderrechtebueros",
+          "ltw-2026-st-gruene-ps-a07-0006-kinderschutzgesetz-evaluation",
+          "ltw-2026-st-gruene-ps-a07-0007-jugendaemter-ausstattung",
+          "ltw-2026-st-gruene-ps-a07-0008-kooperation-gesundheit-schule-jugendhilfe",
+          "ltw-2026-st-gruene-ps-a07-0009-kommunale-praeventionsketten",
+          "ltw-2026-st-gruene-ps-a07-0010-grosse-loesung-jugendhilfe",
+          "ltw-2026-st-gruene-ps-a07-0011-verfahrenslotsen-qualifizieren-foerdern",
+          "ltw-2026-st-gruene-ps-a07-0012-jugendaemter-digitalisierung",
+          "ltw-2026-st-gruene-ps-a07-0013-heimatnahe-inobhutnahme-landeskinder",
+          "ltw-2026-st-gruene-ps-a07-0014-jugendverbandsarbeit-verlaesslich-foerdern",
+          "ltw-2026-st-gruene-ps-a07-0015-jugendverbandsreferenten-finanzieren",
+          "ltw-2026-st-gruene-ps-a07-0016-landeszentrum-jugend-und-demokratie",
+          "ltw-2026-st-gruene-ps-a07-0017-mobile-familienarbeit-ausbauen",
+          "ltw-2026-st-gruene-ps-a07-0018-digitale-familienangebote",
+          "ltw-2026-st-gruene-ps-a07-0019-jugendparlament-rede-antrags-anhoerungsrecht",
+          "ltw-2026-st-gruene-ps-a07-0020-jugendparlament-eigenes-budget",
+          "ltw-2026-st-gruene-ps-a07-0021-antragsrecht-gruendung-jugendparlament",
+          "ltw-2026-st-gruene-ps-a07-0022-schuelerbeteiligung-lehrplankommission",
+          "ltw-2026-st-gruene-ps-a07-0023-niedrigschwellige-jugend-psychoberatung",
+          "ltw-2026-st-gruene-ps-a07-0024-jugend-krisenintervention",
+          "ltw-2026-st-gruene-ps-a07-0025-zusaetzliche-psychotherapieplaetze",
+          "ltw-2026-st-gruene-ps-a07-0026-schulsport-stress-achtsamkeit-entspannung"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0363": ["ltw-2026-st-gruene-ps-a07-0001-kulturpass-erweiterung", "ltw-2026-st-gruene-ps-a07-0002-lernmittelfreiheit"],
+        "0365": ["ltw-2026-st-gruene-ps-a07-0003-alle-un-kinderrechte-landesverfassung"],
+        "0366": ["ltw-2026-st-gruene-ps-a07-0004-kinderrechte-monitoringstelle", "ltw-2026-st-gruene-ps-a07-0005-kommunale-kinderrechtebueros"],
+        "0367": ["ltw-2026-st-gruene-ps-a07-0006-kinderschutzgesetz-evaluation", "ltw-2026-st-gruene-ps-a07-0007-jugendaemter-ausstattung", "ltw-2026-st-gruene-ps-a07-0008-kooperation-gesundheit-schule-jugendhilfe"],
+        "0369": ["ltw-2026-st-gruene-ps-a07-0014-jugendverbandsarbeit-verlaesslich-foerdern", "ltw-2026-st-gruene-ps-a07-0015-jugendverbandsreferenten-finanzieren"],
+        "0371": ["ltw-2026-st-gruene-ps-a07-0016-landeszentrum-jugend-und-demokratie"],
+        "0374": ["ltw-2026-st-gruene-ps-a07-0017-mobile-familienarbeit-ausbauen", "ltw-2026-st-gruene-ps-a07-0018-digitale-familienangebote"],
+        "0376": ["ltw-2026-st-gruene-ps-a07-0019-jugendparlament-rede-antrags-anhoerungsrecht", "ltw-2026-st-gruene-ps-a07-0020-jugendparlament-eigenes-budget", "ltw-2026-st-gruene-ps-a07-0021-antragsrecht-gruendung-jugendparlament"],
+        "0379": ["ltw-2026-st-gruene-ps-a07-0023-niedrigschwellige-jugend-psychoberatung", "ltw-2026-st-gruene-ps-a07-0024-jugend-krisenintervention", "ltw-2026-st-gruene-ps-a07-0025-zusaetzliche-psychotherapieplaetze"],
+        "0381": ["ltw-2026-st-gruene-ps-a07-0026-schulsport-stress-achtsamkeit-entspannung"]
+      },
+      "restored_in_place_historical": [], "semantic_relations": [],
+      "counts": {"historical_active_effect_leaves": 13, "versioned_active_effect_leaves": 26, "non_effect_source_leaves": 1, "parent_provenance_nonleaves": 5, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 40, "authoritative_effect_leaves": 39}
+    },
+    {
+      "source_marker": "ST-GRUENE RETRO-PARITY R24",
+      "historical_first": "0382", "historical_last": "0390",
+      "historical_roles": {
+        "active_effect_leaf": ["0384", "0386", "0389"],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": ["0382", "0383", "0385", "0387", "0388", "0390"], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a07-0027-kita-mindestpersonalschluessel-anheben",
+          "ltw-2026-st-gruene-ps-a07-0028-sonderfoerderung-bedarfskitas",
+          "ltw-2026-st-gruene-ps-a07-0029-kitasozialarbeit-ausbauen",
+          "ltw-2026-st-gruene-ps-a07-0030-erzieher-bezahlung-arbeitsbedingungen",
+          "ltw-2026-st-gruene-ps-a07-0031-kita-buerokratieentlastung",
+          "ltw-2026-st-gruene-ps-a07-0032-verguetung-anerkennungsjahr",
+          "ltw-2026-st-gruene-ps-a07-0033-kita-netz-laendliche-kitas-sichern",
+          "ltw-2026-st-gruene-ps-a07-0034-kommunale-kitaplanung-finanzieren",
+          "ltw-2026-st-gruene-ps-a07-0035-heimatkita-15-minuten",
+          "ltw-2026-st-gruene-ps-a07-0036-kleinst-kitas-unterstuetzen",
+          "ltw-2026-st-gruene-ps-a07-0037-alternative-lokale-betreuungsformate",
+          "ltw-2026-st-gruene-ps-a07-0038-soziale-staffelung-kitabeitraege",
+          "ltw-2026-st-gruene-ps-a07-0039-bildung-elementar-implementierung",
+          "ltw-2026-st-gruene-ps-a07-0040-bildung-elementar-fortbildungen",
+          "ltw-2026-st-gruene-ps-a07-0041-kita-expertenpool",
+          "ltw-2026-st-gruene-ps-a07-0042-kita-beteiligung-fachberatung",
+          "ltw-2026-st-gruene-ps-a07-0043-kita-demokratiepreis",
+          "ltw-2026-st-gruene-ps-a07-0044-kita-familienanlaufstelle-verzahnung",
+          "ltw-2026-st-gruene-ps-a07-0045-elternarbeit-in-personalschluessel",
+          "ltw-2026-st-gruene-ps-a07-0046-kita-schulung-geschlechterneutrale-erziehung"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0382": ["ltw-2026-st-gruene-ps-a07-0027-kita-mindestpersonalschluessel-anheben", "ltw-2026-st-gruene-ps-a07-0028-sonderfoerderung-bedarfskitas", "ltw-2026-st-gruene-ps-a07-0029-kitasozialarbeit-ausbauen", "ltw-2026-st-gruene-ps-a07-0030-erzieher-bezahlung-arbeitsbedingungen", "ltw-2026-st-gruene-ps-a07-0031-kita-buerokratieentlastung"],
+        "0383": ["ltw-2026-st-gruene-ps-a07-0032-verguetung-anerkennungsjahr", "ltw-2026-st-gruene-ps-a07-0033-kita-netz-laendliche-kitas-sichern", "ltw-2026-st-gruene-ps-a07-0034-kommunale-kitaplanung-finanzieren", "ltw-2026-st-gruene-ps-a07-0035-heimatkita-15-minuten", "ltw-2026-st-gruene-ps-a07-0036-kleinst-kitas-unterstuetzen", "ltw-2026-st-gruene-ps-a07-0037-alternative-lokale-betreuungsformate"],
+        "0384": ["ltw-2026-st-gruene-ps-a07-0038-soziale-staffelung-kitabeitraege"],
+        "0385": ["ltw-2026-st-gruene-ps-a07-0039-bildung-elementar-implementierung", "ltw-2026-st-gruene-ps-a07-0040-bildung-elementar-fortbildungen", "ltw-2026-st-gruene-ps-a07-0041-kita-expertenpool"],
+        "0387": ["ltw-2026-st-gruene-ps-a07-0042-kita-beteiligung-fachberatung", "ltw-2026-st-gruene-ps-a07-0043-kita-demokratiepreis"],
+        "0388": ["ltw-2026-st-gruene-ps-a07-0044-kita-familienanlaufstelle-verzahnung"],
+        "0390": ["ltw-2026-st-gruene-ps-a07-0046-kita-schulung-geschlechterneutrale-erziehung"]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [{"from": "0388", "relation": "CONTAINED_COMPONENT_DEDUPED_TO", "to": "0389", "count": 0}],
+      "counts": {"historical_active_effect_leaves": 3, "versioned_active_effect_leaves": 20, "non_effect_source_leaves": 0, "parent_provenance_nonleaves": 6, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 23, "authoritative_effect_leaves": 23}
+    }
+  ],
+  "counts": {"authoritative_source_leaves": 84, "authoritative_effect_leaves": 77},
+  "constraints": {
+    "new_stable_ids": 0, "current_740_mutation": "NONE", "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE", "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R25_PLUS_AND_UNION_GATE"
+  }
+}

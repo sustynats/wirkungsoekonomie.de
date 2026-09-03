@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "WOEK-BE-FDP-2026-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "shared_residual_path": "data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
+    "party": "FDP",
+    "artifact_id": "BE-AGH-2026-FDP-WAHLPROGRAMM",
+    "artifact_sha256": "3e3e1f5cac99864937d79e4d7c9c0bda4a03a71868ba1f25d8bf918766223f32"
+  },
+  "input": {
+    "ledger_manifest_path": "data/state-programmes/fach-reviews/berlin-2026-fdp-v1/manifest.json",
+    "ledger_id": "WOEK-BE-FDP-2026-FULL-PROGRAMME-REVIEW-V1",
+    "logical_descriptor_sha256": "2cf2b4baa3c7250ec7faa6c2e7e9e1378697addfa350c7a6997547a1e24b1e51"
+  },
+  "precondition": {
+    "source_register_path": "data/state-programmes/current-source-registers/berlin-2026-v2.json",
+    "source_register_sha256": "29f088e153613129cedaba91f4e6eb2da0f9554f8a0961a065a849328eadc36c",
+    "expected_page_count": 121,
+    "require_ledger_validation_pass": true
+  },
+  "overlay": {
+    "source_object_review_status": "SOURCE_OBJECT_REVIEW_COMPLETE",
+    "programme_analysis_complete": true,
+    "programme_terminal_basis": "ALL_EFFECT_ATOMS_TERMINATED_OR_CONTEXT_REVIEWED_UNDER_DELEGATED_PROTOCOL",
+    "reviewed_page_count": 121,
+    "source_unit_count": 763,
+    "effect_atom_count": 1706,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 1706,
+    "genuine_fach_review_required_count": 0,
+    "explicit_fach_available_for_public_effect_projection": false,
+    "effect_credit_allowed": false,
+    "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL"
+  },
+  "apply_contract": {
+    "match_keys": [
+      "party",
+      "artifact_id",
+      "artifact_sha256"
+    ],
+    "preserve_all_other_programmes": true,
+    "remove_only_exact_matching_fdp_page_envelopes_after_validation": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "consumer_must_preserve_existing_explicit_fach": true,
+    "consumer_must_not_materialize_missing_fach_fields": true
+  },
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "dns_mapping_synthesized": false,
+    "recommendation_synthesized": false,
+    "party_score_created": false,
+    "vercel_build_triggered": false
+  },
+  "descriptor_sha256": "fbbbc7f48b0733e5cdb33d3cbe4e3d4fb3b774da525951c9fec01b2b034ef5c8"
+}

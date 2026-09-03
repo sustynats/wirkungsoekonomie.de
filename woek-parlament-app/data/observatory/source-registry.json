@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-18",
+  "sources": [
+    { "source_id": "dwd-open-data", "impact_spaces": ["KLIMA_WETTER"], "name": "Deutscher Wetterdienst - Open Data", "release_url": "https://opendata.dwd.de/", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "bfg-wsv-pegelonline", "impact_spaces": ["WASSER"], "name": "PEGELONLINE", "release_url": "https://www.pegelonline.wsv.de/gast/start", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "uba-data", "impact_spaces": ["EMISSIONEN", "KLIMA_WETTER", "UMWELT"], "name": "Umweltbundesamt - Daten", "release_url": "https://www.umweltbundesamt.de/daten", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "rki-data", "impact_spaces": ["GESUNDHEIT"], "name": "Robert Koch-Institut - Daten und Informationen", "release_url": "https://www.rki.de/DE/Content/InfAZ/InfAZ_marginal_node.html", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "destatis-releases", "impact_spaces": ["ARBEITSMARKT", "WIRTSCHAFT", "PREISE", "WOHNEN", "BILDUNG", "DEMOGRAFIE", "MIGRATION", "STAATSFINANZEN", "SOZIALSYSTEME"], "name": "Statistisches Bundesamt - Presse und Veröffentlichungen", "release_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/_inhalt.html", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "bamf-statistics", "impact_spaces": ["MIGRATION"], "name": "BAMF - Statistik", "release_url": "https://www.bamf.de/DE/Themen/Statistik/statistik-node.html", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "ba-statistics", "impact_spaces": ["ARBEITSMARKT"], "name": "Bundesagentur für Arbeit - Statistik", "release_url": "https://statistik.arbeitsagentur.de/", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "smard", "impact_spaces": ["ENERGIE_STROM_NETZE"], "name": "SMARD Strommarktdaten", "release_url": "https://www.smard.de/home", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "bmf-monthly", "impact_spaces": ["STAATSFINANZEN"], "name": "BMF - Monatsberichte", "release_url": "https://www.bundesfinanzministerium.de/Monatsberichte/", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "bundesbank-statistics", "impact_spaces": ["WIRTSCHAFT", "PREISE", "STAATSFINANZEN"], "name": "Deutsche Bundesbank - Statistiken", "release_url": "https://www.bundesbank.de/de/statistiken", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "bfn-data", "impact_spaces": ["BIODIVERSITAET_NATUR"], "name": "Bundesamt für Naturschutz - Daten und Fakten", "release_url": "https://www.bfn.de/daten-und-fakten", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "thuenen-data", "impact_spaces": ["LANDWIRTSCHAFT_ERNTE", "WALD_WALDBRAND"], "name": "Thünen-Institut", "release_url": "https://www.thuenen.de/de/", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "bbsr", "impact_spaces": ["WOHNEN", "INFRASTRUKTUR_VERKEHR"], "name": "Bundesinstitut für Bau-, Stadt- und Raumforschung", "release_url": "https://www.bbsr.bund.de/", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "eurostat-releases", "impact_spaces": ["EU_OUTCOMES"], "name": "Eurostat - Veröffentlichungen", "release_url": "https://ec.europa.eu/eurostat/news/release-calendar", "adapter_status": "ACTIVE_RELEASE_MONITOR" },
+    { "source_id": "copernicus-emergency", "impact_spaces": ["KLIMA_WETTER", "WASSER", "WALD_WALDBRAND"], "name": "Copernicus Emergency Management Service", "release_url": "https://emergency.copernicus.eu/", "adapter_status": "ACTIVE_RELEASE_MONITOR" }
+  ]
+}

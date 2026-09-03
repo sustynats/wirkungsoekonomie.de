@@ -1,0 +1,151 @@
+{
+  "terms": [
+    {
+      "id": "wirkungsgrad",
+      "termId": "wirkungsgrad",
+      "slug": "wirkungsgrad",
+      "canonicalLabel": "Wirkungsgrad",
+      "aliases": ["Wirkungsgrad (allgemein)"],
+      "metaTitle": "Wirkungsgrad - allgemeiner Oberbegriff | Glossar der Wirkungsökonomie",
+      "metaDescription": "Wirkungsgrad ist ein offener Oberbegriff für Verhältniskennzahlen. Physikalischer, wirkungsökonomischer und fiskalischer Wirkungsgrad unterscheiden sich nach Ergebnis und Einsatz.",
+      "keyPoints": ["Der Oberbegriff legt noch nicht fest, was als Ergebnis und was als Einsatz gezählt wird.", "Physikalischer Wirkungsgrad beschreibt technische Energie- oder Leistungsumwandlung.", "Wirkungsökonomischer Wirkungsgrad beschreibt positive Netto-Wirkung im Verhältnis zu einem benannten Einsatz.", "Fiskalischer Wirkungsgrad begrenzt diesen Einsatz auf öffentliche Mittel."],
+      "shortDefinition": "Wirkungsgrad bezeichnet zunächst ein Verhältnis zwischen einem klar definierten Ergebnis und einem klar definierten Einsatz. Erst der Kontext bestimmt, was im Zähler und im Nenner steht.",
+      "longDefinition": "Wirkungsgrad ist ein Oberbegriff für Verhältniskennzahlen. In der Physik vergleicht er nutzbare Energie oder Leistung mit zugeführter Energie oder Leistung. In der Wirkungsökonomie kann er positive Netto-Wirkung zu einem benannten Einsatz ins Verhältnis setzen. Die Begriffe meinen also nicht automatisch dasselbe und sind nur innerhalb eines offengelegten Bezugsrahmens vergleichbar.",
+      "woekRelation": "Für die Wirkungsökonomie bleibt der Begriff bewusst offen: Vor jeder Rechnung müssen Zielzustand, Bilanzgrenze, Zeithorizont, Zurechnung und der konkrete Einsatz benannt werden. Ohne diese Angaben ist ein Wirkungsgrad keine belastbare Aussage über positive Netto-Wirkung.",
+      "usageNote": "Wirkungsgrad ohne Zusatz nur verwenden, wenn der Kontext eindeutig ist. Für Energieumwandlung ist physikalischer Wirkungsgrad präzise; für bewertete gesellschaftliche Wirkung wirkungsökonomischer Wirkungsgrad.",
+      "category": "Messbegriff",
+      "type": "Oberbegriff für Verhältniskennzahlen",
+      "source": "WÖk-Begriffsleitfaden · Differenzierung Wirkungsgrad",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["physikalischer-wirkungsgrad", "wirkungsoekonomischer-wirkungsgrad", "fiskalischer-wirkungsgrad", "impact-of-investment", "effizienz", "positive-netto-wirkung"],
+      "doNotConfuseWith": ["Physikalischer Wirkungsgrad", "Wirkungsökonomischer Wirkungsgrad", "Fiskalischer Wirkungsgrad", "Impact-of-Investment / IOI", "Effizienz"],
+      "deepGlossarySections": [
+        {
+          "title": "Eine Verhältniszahl braucht einen Rahmen",
+          "body": "Ein Wirkungsgrad ist erst aussagekräftig, wenn Ergebnis, Einsatz, Einheit, Systemgrenze und Zeitraum feststehen. Gleiche Zahlen können verschiedene Dinge meinen, wenn etwa Energie, Geld, Zeit oder Material im Nenner stehen.",
+          "items": ["Den Zähler benennen: Energie, Leistung, positive Netto-Wirkung oder eine andere klar definierte Größe.", "Den Nenner benennen: Energieeinsatz, investiertes Kapital, öffentliche Mittel, Zeit, Material oder ein anderer relevanter Einsatz.", "Bilanzgrenzen, Nebenwirkungen und Zurechnung offenlegen, bevor Werte verglichen werden."]
+        },
+        {
+          "title": "Die drei fachlichen Varianten",
+          "body": "Der allgemeine Oberbegriff hält die Definition offen. Die Präzisierung entscheidet, welche Frage beantwortet wird.",
+          "items": ["Physikalischer Wirkungsgrad: nutzbare Energie oder Leistung im Verhältnis zur zugeführten Energie oder Leistung.", "Wirkungsökonomischer Wirkungsgrad: positive Netto-Wirkung im Verhältnis zu einem klar benannten Einsatz.", "Fiskalischer Wirkungsgrad: positive Netto-Wirkung im Verhältnis zu einem öffentlichen Euro."]
+        }
+      ]
+    },
+    {
+      "id": "physikalischer-wirkungsgrad",
+      "termId": "physikalischer-wirkungsgrad",
+      "slug": "physikalischer-wirkungsgrad",
+      "canonicalLabel": "Physikalischer Wirkungsgrad",
+      "aliases": ["energetischer Wirkungsgrad", "eta", "η"],
+      "formula": {"title": "Technische Umwandlungsformel", "expression": "η = nutzbar abgegebene Energie oder Leistung / zugeführte Energie oder Leistung", "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>η</mi><mo>=</mo><mfrac><msub><mi>E</mi><mtext>nutzbar</mtext></msub><msub><mi>E</mi><mtext>zugeführt</mtext></msub></mfrac><mo>=</mo><mfrac><msub><mi>P</mi><mtext>nutzbar</mtext></msub><msub><mi>P</mi><mtext>zugeführt</mtext></msub></mfrac></mrow></math>", "explanation": "η beschreibt den Anteil der zugeführten Energie oder Leistung, der im definierten Prozess als nutzbar abgegebene Energie oder Leistung verfügbar ist.", "note": "Die Formel gilt nur für die jeweils definierte Umwandlung und Systemgrenze."},
+      "keyPoints": ["η vergleicht nutzbar abgegebene mit zugeführter Energie oder Leistung.", "Die Kennzahl zeigt technische Umwandlungsverluste innerhalb einer klaren Systemgrenze.", "Sie bewertet keine soziale, ökologische, demokratische oder finanzielle Wirkung.", "Für positive Netto-Wirkung pro Einsatz ist der wirkungsökonomische Wirkungsgrad der präzisere Begriff."],
+      "shortDefinition": "Der physikalische Wirkungsgrad beschreibt bei einer Energie- oder Leistungsumwandlung das Verhältnis von nutzbar abgegebener zu zugeführter Energie oder Leistung.",
+      "longDefinition": "Der physikalische Wirkungsgrad wird üblicherweise als η = nutzbare abgegebene Energie oder Leistung geteilt durch zugeführte Energie oder Leistung angegeben. Er zeigt Umwandlungsverluste und wird häufig als Zahl zwischen 0 und 1 oder als Prozentwert dargestellt. Er bewertet nicht, ob die Anwendung sozial, ökologisch, demokratisch oder wirtschaftlich positive Wirkung erzeugt.",
+      "woekRelation": "Der physikalische Wirkungsgrad ist für die Wirkungsökonomie ein wichtiger Sachwert, etwa bei Energie- und Ressourceneinsatz. Er ist aber nur ein möglicher Einflussfaktor: hohe Energieeffizienz ist nicht gleich positive Netto-Wirkung.",
+      "usageNote": "Für Motoren, Anlagen, Energieumwandlung oder technische Prozesse verwenden. Nicht als Kurzform für gesellschaftliche, ökologische oder fiskalische Wirkung verwenden.",
+      "category": "Physik, Energie und Wirkungsmetaphern",
+      "type": "Physikalische Kennzahl",
+      "source": "WÖk-Begriffsleitfaden · Differenzierung Wirkungsgrad",
+      "status": "approved",
+      "version": "1.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["wirkungsgrad", "energieeffizienz", "nutzenergie", "energieumwandlung", "wirkleistung", "wirkungsoekonomischer-wirkungsgrad"],
+      "doNotConfuseWith": ["Wirkungsökonomischer Wirkungsgrad", "Fiskalischer Wirkungsgrad", "Effizienz", "positive Netto-Wirkung"],
+      "deepGlossarySections": [
+        {
+          "title": "Was die Kennzahl zeigt",
+          "body": "Die Kennzahl zeigt, welcher Anteil der zugeführten Energie oder Leistung als nutzbare Energie oder Leistung verfügbar wird. Nicht nutzbare Anteile erscheinen im betrachteten Prozess als Verluste.",
+          "items": ["Beispielhafte Formel: η = nutzbare abgegebene Energie oder Leistung / zugeführte Energie oder Leistung.", "Die Aussage gilt immer nur für die definierte Umwandlung und Systemgrenze.", "Ein hoher Wert spricht für geringe technische Umwandlungsverluste, nicht für eine umfassende Wirkungsbewertung."]
+        },
+        {
+          "title": "Grenze zur Wirkungsökonomie",
+          "body": "Eine technisch effiziente Anlage kann dennoch negative oder gemischte Wirkungen haben, etwa durch Rohstoffe, Standortfolgen, Verteilung, Rebound oder politische Pfadabhängigkeiten. Deshalb ergänzt die Wirkungsökonomie den technischen Wert um die Frage nach positiver Netto-Wirkung.",
+          "items": ["Physikalischer Wirkungsgrad beantwortet eine technische Umwandlungsfrage.", "Wirkungsökonomischer Wirkungsgrad beantwortet eine Bewertungsfrage über positive Netto-Wirkung und Einsatz."]
+        }
+      ]
+    },
+    {
+      "id": "wirkungsoekonomischer-wirkungsgrad",
+      "termId": "wirkungsoekonomischer-wirkungsgrad",
+      "slug": "wirkungsoekonomischer-wirkungsgrad",
+      "canonicalLabel": "Wirkungsökonomischer Wirkungsgrad",
+      "aliases": ["WÖk-Wirkungsgrad", "wirkungsbezogener Wirkungsgrad"],
+      "formula": {"title": "Wirkungsökonomische Intensitätsformel", "expression": "Wirkungsintensität_U = dokumentierte Netto-Wirkungsgröße ΔZ_U / klar benannter Ressourceneinsatz R", "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>WI</mi><mi>U</mi></msub><mo>=</mo><mfrac><msub><mi>ΔZ</mi><mi>U</mi></msub><mi>R</mi></mfrac></mrow></math>", "explanation": "U benennt die Wirkungsgröße und ihre Einheit, etwa vermiedene Tonnen CO₂, gesund verbrachte Lebensjahre oder NWI-Punkte. Nur bei gleicher Einheit im Zähler und Nenner entsteht eine dimensionslose Verhältniszahl; sonst ist die Einheit ausdrücklich mit auszuweisen.", "note": "Vergleiche sind nur bei gleicher Zielgröße, Einheit, Bilanzgrenze, Zeitbezug und nachvollziehbarer Zurechnung belastbar. Eine qualitative Bilanz bildet keinen Quotienten."},
+      "keyPoints": ["Der Zähler ist eine dokumentierte Netto-Wirkungsgröße mit klarer Einheit; der Nenner ist ein ausdrücklich benannter Einsatz.", "Der Einsatz kann Geld, Zeit, Energie, Material oder institutionelle Kapazität sein.", "Eine Kennzahl mit unterschiedlichen Einheiten ist eine Wirkungsintensität, keine dimensionslose Universalrangliste.", "IOI und fiskalischer Wirkungsgrad sind monetäre Spezialisierungen mit Kapital- beziehungsweise öffentlichem Mitteleinsatz in Euro."],
+      "shortDefinition": "Der wirkungsökonomische Wirkungsgrad beschreibt die Intensität einer dokumentierten positiven Netto-Wirkung je klar benanntem Einsatz. Seine Einheit muss immer sichtbar bleiben, sofern Zähler und Nenner nicht dieselbe Einheit haben.",
+      "longDefinition": "Der wirkungsökonomische Wirkungsgrad ist ein Oberbegriff für klar definierte Wirkungsintensitäten. Formelhaft wird eine dokumentierte Netto-Wirkungsgröße ΔZ mit ihrer Einheit U durch einen klar benannten Ressourceneinsatz R geteilt. Das kann etwa Tonnen CO₂ je Megawattstunde, NWI-Punkte je Arbeitsstunde oder Euro-Nettonutzen je Euro Kapital sein. Nur im letzten Fall ist die Kennzahl dimensionslos. Eine Rechnung ist nur dann nachvollziehbar und vergleichbar, wenn Zielzustand, Referenz, Einheit, Bilanzgrenze, Zeithorizont, Zurechnung, Nebenwirkungen, Datenqualität und der Umgang mit nicht kompensierbaren Schäden offengelegt sind.",
+      "woekRelation": "Der Begriff macht Wirkungseffizienz prüfbar, ohne Wirkung mit Output, Reichweite oder bloßem Wirkungspotenzial zu verwechseln. Eine hohe Kennzahl ist keine automatische Priorisierung: Nichtkompensation, Grundrechte, demokratische Abwägung und Reverse Merit Order bleiben eigenständige Schutz- und Steuerungsfragen.",
+      "usageNote": "Den Begriff verwenden, wenn positive Netto-Wirkung tatsächlich bewertet und der Einsatz ausdrücklich benannt ist. Nicht verwenden, wenn nur ein mögliches Potenzial, eine Leistung oder eine Reichweite vorliegt.",
+      "category": "Messbegriff",
+      "type": "Wirkungsökonomische Verhältniskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Differenzierung Wirkungsgrad",
+      "status": "approved",
+      "version": "1.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["wirkungsgrad", "positive-netto-wirkung", "fiskalischer-wirkungsgrad", "impact-of-investment", "nwi", "t-sroi", "nichtkompensationsprinzip"],
+      "doNotConfuseWith": ["Physikalischer Wirkungsgrad", "Fiskalischer Wirkungsgrad", "Impact-of-Investment / IOI", "Wirkungspotenzial", "Effizienz", "Reichweite"],
+      "deepGlossarySections": [
+        {
+          "title": "Rechenbar, aber nicht beliebig präzise",
+          "body": "Der Wirkungsgrad kann genauer berechnet werden, wenn die Rechenlogik vollständig bestimmt ist. Präzise erscheint nicht durch eine Zahl allein, sondern durch nachvollziehbare Annahmen und eine überprüfbare Wirkungsbilanz.",
+          "items": ["Zähler: dokumentierte Netto-Wirkungsgröße mit einer ausdrücklich genannten Einheit; Schutzgrenzen begrenzen die Verrechnung.", "Nenner: der konkret benannte Einsatz, zum Beispiel Geld, Zeit, Energie, Material oder institutionelle Kapazität.", "Vergleiche nur bei gleichen Einheiten, Bilanzgrenzen, Zeithorizonten, Zielgrößen und nachvollziehbarer Zurechnung ziehen."]
+        },
+        {
+          "title": "Spezialisierungen",
+          "body": "Die Kennzahl wird enger, sobald ihr Nenner festgelegt wird.",
+          "items": ["Impact-of-Investment / IOI: monetär bewerteter direkter Nettonutzen in Euro je investiertem Euro.", "Fiskalischer Wirkungsgrad: monetär bewerteter direkter Nettonutzen in Euro je öffentlichem Euro.", "Ein einzelner Fall kann in beide Kategorien fallen, etwa eine öffentliche Investition. Die Begriffe benennen dann unterschiedliche Blickwinkel auf dieselbe Rechnung."]
+        }
+      ]
+    },
+    {
+      "id": "fiskalischer-wirkungsgrad",
+      "termId": "fiskalischer-wirkungsgrad",
+      "slug": "fiskalischer-wirkungsgrad",
+      "canonicalLabel": "Fiskalischer Wirkungsgrad",
+      "formula": {"title": "Fiskalische Wirkungsformel", "expression": "Fiskalischer Wirkungsgrad = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert des klar abgegrenzten öffentlichen Mitteleinsatzes in EUR", "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>η</mi><mtext>fiskal</mtext></msub><mo>=</mo><mfrac><mrow><mi>PV</mi><mo>(</mo><msub><mi>B</mi><mi>direkt</mi></msub><mo>−</mo><mi>S</mi><mo>)</mo></mrow><mrow><mi>PV</mi><mo>(</mo><msub><mi>M</mi><mtext>öffentlich</mtext></msub><mo>)</mo></mrow></mfrac></mrow></math>", "explanation": "Zähler und Nenner sind Euro derselben Preisbasis. Der Nenner umfasst ausschließlich den abgegrenzten öffentlichen Mitteleinsatz, etwa eine Ausgabe, Förderung, Subvention oder öffentliche Investition.", "note": "Nicht-monetäre Wirkungswerte sind mit ihrer Einheit getrennt auszuweisen. Schwere negative Wirkungen dürfen nicht durch einen hohen Wert wegverrechnet werden; Nichtkompensation bleibt eine Schutzgrenze."},
+      "keyPoints": ["Der Nenner ist ein klar abgegrenzter öffentlicher Mitteleinsatz in Euro.", "Die Kennzahl eignet sich für Haushalte, Förderungen, Subventionen und öffentliche Investitionen mit vergleichbarer Preis- und Zeitbasis.", "Nicht-monetäre Ergebnisse bleiben als Wirkungsprofil oder klar benannte Intensität sichtbar.", "Eine hohe Kennzahl ersetzt weder Nichtkompensation noch demokratische Haushaltsentscheidungen."],
+      "shortDefinition": "Der fiskalische Wirkungsgrad beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem öffentlichen Euro.",
+      "longDefinition": "Der fiskalische Wirkungsgrad ist die auf öffentliche Mittel bezogene monetäre Verhältniskennzahl. Sein Zähler ist der Barwert eines kausal zugerechneten direkten Nettonutzens in Euro, sein Nenner ein klar abgegrenzter öffentlicher Mitteleinsatz in Euro derselben Preisbasis. Nicht-monetäre Wirkungsprofile sind wichtig, werden aber nicht unbemerkt zum Euro-Zähler gemacht. Damit eine Rechnung tragfähig ist, müssen Zweck, Bilanzgrenze, Zeitraum, Zurechnung, Nebenwirkungen, Datenqualität und Nichtkompensation sichtbar sein.",
+      "woekRelation": "Er hilft, öffentliche Finanzentscheidungen nach positiver Netto-Wirkung zu prüfen. Er ersetzt weder demokratische Haushaltsentscheidungen noch Schutzgrenzen; ein hoher Wert darf schwere negative Wirkungen nicht wegverrechnen.",
+      "usageNote": "Für die Wirkung öffentlicher Mittel verwenden. Bei privatem Kapital oder bei einem anderen Einsatz ist stattdessen IOI oder der allgemeiner gefasste wirkungsökonomische Wirkungsgrad präziser.",
+      "category": "Wirkungsfinanzpolitik",
+      "type": "Öffentliche Wirkungskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Differenzierung Wirkungsgrad",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["wirkungsgrad", "wirkungsoekonomischer-wirkungsgrad", "impact-of-investment", "wirkungshaushalt", "wirkungspruefung-oeffentlicher-mittel", "positive-netto-wirkung", "nichtkompensationsprinzip"],
+      "doNotConfuseWith": ["Impact-of-Investment / IOI", "Wirkungsökonomischer Wirkungsgrad", "ROI", "Effizienz"],
+      "deepGlossarySections": [
+        {
+          "title": "Öffentlicher Euro als Nenner",
+          "body": "Die Besonderheit ist nicht die Wirkungsseite, sondern der Bezug auf öffentliche Mittel. Das macht die Kennzahl für Haushalte, Förderungen, Subventionen und öffentliche Investitionen geeignet.",
+          "items": ["Fiskalischer Wirkungsgrad = Barwert des direkten Nettonutzens in Euro / Barwert des klar abgegrenzten öffentlichen Mitteleinsatzes in Euro.", "Öffentliche Investitionen können zugleich als IOI betrachtet werden; IOI ist jedoch nicht auf öffentliche Mittel beschränkt.", "Steuerung braucht zusätzlich Rückkopplung, Transparenz und demokratische Kontrolle."]
+        }
+      ]
+    },
+    {
+      "id": "impact-of-investment",
+      "termId": "impact-of-investment",
+      "slug": "impact-of-investment",
+      "canonicalLabel": "Impact-of-Investment / IOI",
+      "aliases": ["Impact-of-Investment", "Impact of Investment", "IOI"],
+      "formula": {"title": "IOI-Formel", "expression": "IOI = Σ(t=1…T)[(Bdirekt,t · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]", "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>IOI</mi><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><mfrac><mrow><msub><mi>B</mi><mtext>direkt,t</mtext></msub><mo>·</mo><msub><mi>a</mi><mi>t</mi></msub><mo>·</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>d</mi><mi>t</mi></msub><mo>)</mo><mo>·</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>v</mi><mi>t</mi></msub><mo>)</mo><mo>−</mo><msub><mi>S</mi><mi>t</mi></msub></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><mrow><msub><mi>I</mi><mi>t</mi></msub><mo>+</mo><msub><mi>K</mi><mi>t</mi></msub></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>k</mi></msub><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mfrac></mrow></math>", "explanation": "Zähler und Nenner sind Euro derselben Preisbasis. Der Zähler umfasst den kausal zugerechneten direkten Nutzen Bdirekt · a · (1 − d) · (1 − v) abzüglich konservativ angesetzter Schäden; Transformation wird beim T-SROI als eigener, belegter Nutzenstrom behandelt. Der Nutzenzeitraum beginnt bei t = 1, Ressourcen bei t = 0; eine Anfangsinvestition I₀ wird deshalb nicht abgezinst.", "note": "Ein Punktwert, ein Index oder eine qualitative Bilanz kann das Schutz-Gate und die Wirkungsinterpretation stützen, ist aber kein Euro-Zähler. Bilanzgrenzen, Zurechnung, Zeitbezug, Datenqualität und Nichtkompensation müssen offengelegt sein."},
+      "shortDefinition": "Impact-of-Investment (IOI) misst den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem Euro an investiertem Kapital. Er ist eine investitionsbezogene Kennzahl und kein Ersatz für die Schutzprüfung.",
+      "longDefinition": "Impact-of-Investment (IOI) ist eine investitionsbezogene Euro-zu-Euro-Kennzahl der Wirkungsökonomie. Er setzt den Barwert eines kausal zugerechneten direkten Nettonutzens in Euro ins Verhältnis zum Barwert des investierten Kapitals und der inkrementellen Kosten in Euro derselben Preisbasis. Ein NWI-Punktwert, ein Index oder eine qualitative Wirkungsbilanz kann die vorgelagerte Schutzprüfung und Einordnung tragen, darf aber nicht ohne gesonderte Monetarisierung durch Euro geteilt und als dimensionsloser IOI ausgegeben werden. Damit unterscheidet sich IOI vom allgemeineren wirkungsökonomischen Wirkungsgrad, dessen Einheit jeweils ausdrücklich zu benennen ist, und vom fiskalischen Wirkungsgrad, der ausschließlich öffentliche Mittel betrachtet.",
+      "woekRelation": "IOI macht direkte Kapitalwirkung prüfbar, ersetzt aber keine demokratische Abwägung. NWI, Scorecard, Bilanzgrenzen, Zurechnung, Zeitbezug, Nebenwirkungen, Datenqualität, Nichtkompensation und Reverse Merit Order bleiben vorgelagert und sichtbar.",
+      "usageNote": "Für Investitionen und Portfolios verwenden, wenn der Kapitaleinsatz der gemeinsame Nenner ist. Bei öffentlichen Mitteln ohne Investitionsbezug ist fiskalischer Wirkungsgrad präziser.",
+      "category": "Messbegriff",
+      "type": "Investitionsbezogene Wirkungskennzahl",
+      "source": "WÖk-Begriffsleitfaden · Differenzierung Wirkungsgrad",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "redaktionell synchronisiert",
+      "relatedTerms": ["wirkungsoekonomischer-wirkungsgrad", "fiskalischer-wirkungsgrad", "wirkungsgrad", "positive-netto-wirkung", "nwi", "t-sroi", "wirkungshaushalt"],
+      "doNotConfuseWith": ["Wirkungsökonomischer Wirkungsgrad", "Fiskalischer Wirkungsgrad", "ROI", "Impact Investing", "T-SROI", "NWI", "Sustainable Value", "ESG"]
+    }
+  ]
+}

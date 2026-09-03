@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/relationship-1.0.schema.json",
+  "title": "WÖk Relationship 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["relationship_id", "source_object_id", "target_object_id", "relationship_type", "evidence_source_event_ids", "confidence", "method", "review_status", "created_at"],
+  "properties": {
+    "relationship_id": {"type": "string", "minLength": 1},
+    "source_object_id": {"type": "string", "minLength": 1},
+    "target_object_id": {"type": "string", "minLength": 1},
+    "relationship_type": {"enum": ["HAS_SOURCE_EVENT", "RELATED_TO_PARLIAMENTARY_CASE", "IMPLEMENTS_COALITION_COMMITMENT", "PARTIALLY_IMPLEMENTS_COALITION_COMMITMENT", "AMENDS", "SUPERSEDES", "SUPERSEDED_BY", "IMPLEMENTS_LAW", "CREATES_PROGRAMME", "FUNDS", "EVALUATED_BY", "PART_OF", "RELATED_TO", "POSSIBLE_SAME_AS", "FACILITATES", "SUPPORTS", "RESPONDS_TO", "IMPLEMENTS_IN_MARKET"]},
+    "evidence_source_event_ids": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"enum": ["EXACT", "HIGH", "MEDIUM", "LOW"]},
+    "method": {"enum": ["OFFICIAL_IDENTIFIER", "EXPLICIT_REFERENCE", "RULE", "SEMANTIC_CANDIDATE", "MANUAL"]},
+    "review_status": {"enum": ["CONFIRMED", "REVIEW_REQUIRED", "REJECTED"]},
+    "created_at": {"type": "string"}
+  }
+}
+

@@ -1,0 +1,57 @@
+name: Sync #253 deterministic projections
+
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
+
+on:
+  push:
+    branches:
+      - codex/state-sustainability-architecture-sitewide-20260821
+    paths:
+      - '.github/workflows/state-sustainability-sync.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/state-sustainability-architecture-sitewide-20260821
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply approved deterministic projections
+        run: |
+          python tools/apply_state_sustainability_architecture.py
+          python tools/apply_state_sustainability_sources.py
+          npm run build:search
+          npm run taxonomy:build
+      - name: Commit all deterministic outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo 'All #253 projections already committed.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git reset .github/workflows/state-sustainability-sync.yml || true
+          if git diff --cached --quiet; then
+            echo 'Only workflow file differs; nothing to project.'
+            exit 0
+          fi
+          git commit -m 'fix: sync approved #253 site, source, search and taxonomy projections'
+          git push origin HEAD:codex/state-sustainability-architecture-sitewide-20260821

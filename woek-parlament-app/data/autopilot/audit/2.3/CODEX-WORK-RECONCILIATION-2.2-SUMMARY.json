@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.2",
+  "generated_at": "2026-08-18T08:32:40.385Z",
+  "mode": "INITIAL_BOOTSTRAP_2_3",
+  "canonical_dropbox_root": "/WOEK",
+  "repository": "/private/tmp/woek-government-1.1-staging",
+  "branch": "codex/autopilot-2-3-staging",
+  "base_commit": "0625da8c6798bc241e2fc9c46c3adfe1696c533f",
+  "status": "PASS_WITH_KNOWN_GAPS",
+  "task_count": 34,
+  "status_counts": {
+    "DONE": 21,
+    "BLOCKED": 7,
+    "NEEDS_RECHECK": 1,
+    "PARTIAL": 5
+  },
+  "open_p0": 9,
+  "open_p1": 4,
+  "runtime_findings": {
+    "zero_byte_managed_files": 25,
+    "parliament_ready_present": false,
+    "legacy_28_full_review_payloads_present": 0,
+    "government_editorial_source_count": 63,
+    "government_public_count_2_3": 44,
+    "government_review_count_2_3": 19,
+    "eu_initial_impact_count": 21,
+    "state_initial_explicit_impact_count": 23,
+    "observatory_public_evidence_count": 1,
+    "observatory_reality_candidate_count": 1
+  },
+  "production_deploy_enabled": false,
+  "recurring_writers_enabled": false
+}

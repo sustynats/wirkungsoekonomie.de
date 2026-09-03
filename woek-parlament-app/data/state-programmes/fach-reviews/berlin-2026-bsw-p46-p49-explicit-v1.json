@@ -1,0 +1,1883 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P46-P49-EXPLICIT-FACH-2026-V1",
+  "base_main_commit": "7628b7e45e9e462af5cc92a5b6dcf9f9e714eae5",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "controller": {
+    "issue": 241,
+    "issue_comment_id": 5458980983,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5458980983"
+  },
+  "authoritative_markdowns": [
+    {
+      "pdf_page": 46,
+      "issue": 240,
+      "issue_comment_id": 5458773627,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458773627",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p46-authoritative-handoff.md",
+      "file_sha256": "29c3b42942a3693f4fc9252e22e033ea46dc26ac70f7f2b8d452d395d1dd1c57"
+    },
+    {
+      "pdf_page": 47,
+      "issue": 240,
+      "issue_comment_id": 5458802801,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458802801",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p47-authoritative-handoff.md",
+      "file_sha256": "05d213abe2a426949c39696d3fb9f4753e6788610d3834248e060c628b22d14a"
+    },
+    {
+      "pdf_page": 48,
+      "issue": 240,
+      "issue_comment_id": 5458817464,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5458817464",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p48-authoritative-handoff.md",
+      "file_sha256": "bdb6e9491c201a6de0a2ec1ab26820801b850c6f6998f8c3cb534968abae8cfb"
+    },
+    {
+      "pdf_page": 49,
+      "issue": 240,
+      "issue_comment_id": 5457760204,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5457760204",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p49-authoritative-handoff.md",
+      "file_sha256": "6294e6f8cb25f2b4f405b363adec8c7cda832c97ccf7d786e94f282d903fd00c"
+    }
+  ],
+  "source_objects": [
+    {
+      "object_id": "BE-BSW-P46-U03-dd84466dfa6d",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 46,
+      "source_text_sha256": "dd84466dfa6dfaa14ea337f45dfd241c5702ba26bdda1b93a72ec31dc664633e",
+      "source_text": "Für eine sichere Energieversorgung"
+    },
+    {
+      "object_id": "BE-BSW-P46-U13-53ce8855139b",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 46,
+      "source_text_sha256": "53ce8855139bd031588c43a675e566abb27e350fc336850c6e1a1111f9361fc8",
+      "source_text": "Umstieg auf erneuerbare Energien sozial verträglich und technologieoffen gestalten"
+    },
+    {
+      "object_id": "BE-BSW-P48-U02-2b263d920996",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 48,
+      "source_text_sha256": "2b263d9209961f622b6c45ac8ae7a56ed23fd11974a3d89de260f5434c7914af",
+      "source_excerpt": "Der zu langsame Ausbau von Straßen, Schienen und Knotenpunkten führt immer häufiger zu Staus, Überlastung, Unzuverlässigkeit und Nutzungskonflikten. Eine leistungsfähige Verkehrspolitik muss deshalb alle Verkehrsträger in den Blick nehmen …"
+    },
+    {
+      "object_id": "BE-BSW-P48-U03-381203f1f6b4",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 48,
+      "source_text_sha256": "381203f1f6b4282837e51f31f59e4ec479438419ea92a0458a00b10f81d79d37",
+      "source_text": "Öffentlichen Nahverkehr gezielt ausbauen"
+    },
+    {
+      "object_id": "BE-BSW-P48-U06-152396dd78db",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 48,
+      "source_text_sha256": "152396dd78dbbdc8571ba6b3afdd5aa6c19eb8c76bfd06245dd02da469ce0ac8",
+      "source_text": "Berlin und Brandenburg besser vernetzen"
+    },
+    {
+      "object_id": "BE-BSW-P49-U01-37ced15760ca",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 49,
+      "source_text_sha256": "37ced15760ca56e95187b0e7f7408a9209a66e7a9d51f794681f6ef4a8bd516f",
+      "source_text": "Sichere Wege zu Fuß"
+    },
+    {
+      "object_id": "BE-BSW-P49-U04-e3f76aa8553d",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 49,
+      "source_text_sha256": "e3f76aa8553dc4b8b0c53d90a3688ddc98b75af2907c59ffa9027b2d705cb6c0",
+      "source_text": "Radverkehr sicher und durchgängig gestalten"
+    },
+    {
+      "object_id": "BE-BSW-P49-U07-27589962eae7",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 49,
+      "source_text_sha256": "27589962eae76af0aaea12daa1e8828cb8323e489b5f470f132ab7073f2f181e",
+      "source_text": "Das Auto bleibt für viele unverzichtbar"
+    },
+    {
+      "object_id": "BE-BSW-P49-U11-b26ec37a3382",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 49,
+      "source_text_sha256": "b26ec37a3382e04b1852643c36e7ea01d03408915c66b5d06d6c56e79558e5ea",
+      "source_text": "Mit einer Gütermenge von 76,5 Millionen Tonnen ist der Straßengüterverkehr am Gesamtaufkommen mit 90,6 % unvertretbar hoch beteiligt. Wenn dieser Anteil auch"
+    },
+    {
+      "object_id": "BE-BSW-P50-U01-bb3d4390ad9a",
+      "object_kind": "SOURCE_UNIT",
+      "pdf_page": 50,
+      "source_text_sha256": "bb3d4390ad9a1c856687c00d3e00d320bed724d8907e2a4b22477c86e42b5ce5",
+      "source_text": "innerstädtische Versand- und Empfangsmengen, z.B. Baustofftransport, beinhaltet, ist diese hohe Dominanz des Straßengüterverkehrs so nicht mehr hinnehmbar."
+    },
+    {
+      "object_id": "BE-BSW-P46-U01-A01-3b0a665ac407",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "3b0a665ac4078efe288f4146b5b9079b8b63dfb1ee9fbbe98be4c251bf2e289a",
+      "source_text": "Wir wollen eine Abschaffung des CO2-Preises."
+    },
+    {
+      "object_id": "BE-BSW-P46-U01-A02-7dc86840e180",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "7dc86840e1801069d4c1a45f69a9c5e43ecc9cb9ff6bc84840a1d0522437ef94",
+      "source_text": "Dieser wirkt sich direkt auf die Kosten für fossile Energieträger aus."
+    },
+    {
+      "object_id": "BE-BSW-P46-U01-A03-2471cbe08cdb",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "2471cbe08cdbafca3b1705b6c3e92a87b902d11d5d296259071b0b95b2be0398",
+      "source_text": "Er belastet sowohl die Wirtschaft, als auch die Bürger."
+    },
+    {
+      "object_id": "BE-BSW-P46-U02-A01-536ddb5be356",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "536ddb5be3564603f8601cf80f869b3379597f34ba80a5243dca3167497fa65f",
+      "source_text": "Die Kosten zur Finanzierung des Umbaus der Energieinfrastruktur sind fair zu verteilen."
+    },
+    {
+      "object_id": "BE-BSW-P46-U02-A02-26546604a1cb",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "26546604a1cb782baac843106218759388406c1daba9d7af027aa58387716343",
+      "source_text": "Auch weniger energieintensive Industrien brauchen Strompreisentlastungen."
+    },
+    {
+      "object_id": "BE-BSW-P46-U02-A03-aa7cbe821f7f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "aa7cbe821f7faac29083a6a135b96e8a030e641dc1daab87ff2cebac4810bd2b",
+      "source_text": "Zur nachhaltigen Reduzierung der Strompreise für alle Verbraucher fordern wir Investitionen u.a. in Stromnetze, Stromspeicher sowie in die Digitalisierung, um dadurch die Strukturkosten des Energiesystems zu senken."
+    },
+    {
+      "object_id": "BE-BSW-P46-U04-A01-54e6b9cad917",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "54e6b9cad9177b5edb3def563e7fbe7a8204a40edecac616e8f4f8d8f5a5600b",
+      "source_text": "Die Raffinerie PCK in Schwedt, die Berlin mit Kraftstoffen versorgt, muss eine langfristige Perspektive bekommen."
+    },
+    {
+      "object_id": "BE-BSW-P46-U05-A01-17bec11747b0",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "17bec11747b0e814153a5e0e913e8d2cefad0bfd4e0f6d2bfe89c2e8ced143c4",
+      "source_text": "Wir setzen uns für die Wiederinbetriebnahme des noch nutzbaren Stranges der Nord-Stream- Pipeline ein."
+    },
+    {
+      "object_id": "BE-BSW-P46-U06-A01-e589e9472c2e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "e589e9472c2e13b5cda8a98cbd835cb01ef51d55b9bcc64b0de35aa87c2ba4cf",
+      "source_excerpt": "Wir brauchen Investitionen in die Energieinfrastruktur, die das Abschalten von Photovoltaikanlagen im Sommer sowie von Windrädern bei flächendeckenden Starkwinden möglichst ausschließen sowie die oft unzureichende elektrische Reserveleistu…"
+    },
+    {
+      "object_id": "BE-BSW-P46-U06-A02-2700fb8a3dd2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "2700fb8a3dd2032cca7d94707bb37ffcb64b045fb05e0f18aa711c0d24445ea8",
+      "source_text": "Die Investitionen betreffen z.B."
+    },
+    {
+      "object_id": "BE-BSW-P46-U06-A03-6d99162ea566",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "6d99162ea56636b665fc44a232c82cd36d2299290352ad6d52e411915e7c0a54",
+      "source_text": "Strom- und Fernwärmeleitungen, Umspannwerke, Energiespeicher, Elektrolyseure, Power-to-Heat-Anlagen und Reservekraftwerke."
+    },
+    {
+      "object_id": "BE-BSW-P46-U07-A01-2b71c19daba9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "2b71c19daba914b591b9182f761f59a94a964d5987b2f5adf4fb4d4586a2763e",
+      "source_text": "Der Zubau von Photovoltaikanlagen, welche für Berlin von großer Bedeutung sind, muss im Kontext mit dem Ausbau der Energieinfrastruktur erfolgen."
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A01-945bde3bbbc3",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "945bde3bbbc33fd1164d28a59bc740e12ee335b6547c08d0840771fb585a0b2e",
+      "source_text": "Das BSW fordert einen konsequenten Ausbau von Fernwärmeanlagen."
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A02-e7124d02b0a5",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "e7124d02b0a528b674580f86847d77b271280e45b63d2ec0388250d17d5d126b",
+      "source_text": "Zur Steuerung dieses Prozesses soll maßgeblich die kommunale Wärmeplanung dienen."
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A03-1cc17816d759",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "1cc17816d7598d0b457c8ee467af2779b2feccfb2ddd752a8f3700d56f5483e5",
+      "source_text": "Das BSW fordert Vorrang für derartige Projekte."
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A04-8242f3d8bd99",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "8242f3d8bd999f566ff97299e436af5ff9526e4392042ade58ffdbbbb9960833",
+      "source_text": "Dazu sind auch die rechtlichen Rahmenbedingungen anzupassen, um die Genehmigungsverfahren zu vereinfachen und beschleunigen zu können."
+    },
+    {
+      "object_id": "BE-BSW-P46-U09-A01-13208906d601",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "13208906d6019b3ec86cb55c4b6151cef4ff9e1a4d95e80f3f37b57d44d5d89c",
+      "source_text": "Wir werden Energieanlagen, wie z.B."
+    },
+    {
+      "object_id": "BE-BSW-P46-U09-A02-7eb61e4a771f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "7eb61e4a771f9eba25d371113484901509cd4a31af85c30f0f55f551d94a6353",
+      "source_text": "Kohlekraftwerke, erst dann außer Betrieb nehmen, wenn ausreichend wettbewerbsfähige und sichere Alternativen zur Verfügung stehen."
+    },
+    {
+      "object_id": "BE-BSW-P46-U09-A03-3103f7bf89c9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "3103f7bf89c9513ec4a2e4f23e0db3dcb49342a17b67685428223b4dd087118c",
+      "source_text": "Den Rückbau des derzeitigen Erdgasnetzes lehnen wir ebenfalls ab."
+    },
+    {
+      "object_id": "BE-BSW-P46-U10-A01-aa039fcae982",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "aa039fcae9824be9f16bde8832635c07967289a11f55392ad62ca3e1f7c3c2a7",
+      "source_text": "Wir unterstützen die Rekommunalisierung der GASAG AG."
+    },
+    {
+      "object_id": "BE-BSW-P46-U11-A01-eba398e44626",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "eba398e44626b8bddd351127646579399e6ee5d3b6d997c8cec922e7f361cfae",
+      "source_text": "Der Ausbau des Wasserstoffnetzes muss im Einklang mit der Nachfrage nach grünem Wasserstoff erfolgen um teure Fehlinvestitionen zu vermeiden."
+    },
+    {
+      "object_id": "BE-BSW-P46-U11-A02-a9008b5b4b6c",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "a9008b5b4b6cc681fac70032a42c02be74998f7a246a2135bc1374f42fcf20ca",
+      "source_text": "Das BSW sieht in der energieintensiven Industrie, in industriellen Hochtemperaturprozessen sowie in Gaskraftwerken die Schwerpunkte der energetischen Wasserstoffnutzung."
+    },
+    {
+      "object_id": "BE-BSW-P46-U12-A01-633dd9f532e4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "633dd9f532e4ca99828900b5f2bc1104880a04835a6be62d4868c03d259e17ef",
+      "source_text": "Das BSW lehnt die Produktionsverlagerung energietechnischer Komponenten ins Ausland ab."
+    },
+    {
+      "object_id": "BE-BSW-P46-U14-A01-e86a4c8a4bf7",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 46,
+      "source_text_sha256": "e86a4c8a4bf706ca2338372fadaa8f471c582b443777878060de611dcef1e72f",
+      "source_text": "Neue Heizungsanlagen sind nach wirtschaftlichen Gesichtspunkten zu konzipieren, zu errichten und zu betreiben."
+    },
+    {
+      "object_id": "BE-BSW-P47-U01-A01-6a2348e8be71",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "6a2348e8be71853edabd87d122a187a0ac25370ff53017f2a50e19f33bf53b71",
+      "source_text": "Wir wollen Bedingungen schaffen, bei denen die Nutzung von Wärmepumpen wirtschaftlich und technisch sinnvoll ist, d. h."
+    },
+    {
+      "object_id": "BE-BSW-P47-U01-A02-ae417a1a413f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "ae417a1a413f269dcf75e530f41702bcbc8a7573c8b7ffa414e648df97248aa2",
+      "source_text": "Integration in ein Fernwärmesystem mit Wärmespeichern."
+    },
+    {
+      "object_id": "BE-BSW-P47-U02-A01-465b845ac6cc",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "465b845ac6cc00906c80e23d256dc45c9053f6b0145151550aab77b1e0dbcf9c",
+      "source_text": "Investitionen in emissionsmindernde Energieanlagen sollten dort getätigt werden, wo sie den größtmöglichen Effekt erzielen."
+    },
+    {
+      "object_id": "BE-BSW-P47-U02-A02-4164ec1a74e2",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "4164ec1a74e2a466e159790805e6fa4ad017154740e331eff7dfbc66718b1675",
+      "source_text": "Aktivismus zum Erreichen bestimmter Zielmarken sehen wir nicht als primäres Ziel an."
+    },
+    {
+      "object_id": "BE-BSW-P47-U03-A01-dc1476d3a42d",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "dc1476d3a42dc3976f9373f66360d41d073ada051610865c9ebb19cb80978033",
+      "source_text": "Das BSW setzt auf Technologieforschung und Technologieoffenheit."
+    },
+    {
+      "object_id": "BE-BSW-P47-U03-A02-2f013f7c0efb",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "2f013f7c0efba56088a2476502a316fbd3fcff3ed269457081786f3f1bbd01c3",
+      "source_text": "Das betrifft beispielhaft die Herstellung von Wasserstoff sowie von synthetischen Kraftstoffen."
+    },
+    {
+      "object_id": "BE-BSW-P47-U03-A03-b46bd2264eb0",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "b46bd2264eb03bba922fccd7189b65ade558b5aba231a2985fb991afd14e9cbd",
+      "source_text": "Beide Energieträger weisen jeweils Vor- und Nachteile bei der Herstellung und Verteilung auf."
+    },
+    {
+      "object_id": "BE-BSW-P47-U04-A01-48550be8d573",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "48550be8d5732250c734c562a96edfad83f79ca1d0ceda07370f2c368f2aca5f",
+      "source_text": "Das BSW befürwortet Technologien zur Abscheidung, Speicherung und Nutzung von Kohlendioxid aus kraftwerkstechnischen und industriellen Verbrennungsprozessen."
+    },
+    {
+      "object_id": "BE-BSW-P47-U05-A01-90ab03ddb969",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "90ab03ddb969893a5a0ff04de640e018510f6558b8ad789180eae8da598f8a0d",
+      "source_text": "Die Entwicklung bzw."
+    },
+    {
+      "object_id": "BE-BSW-P47-U05-A02-0683261296fe",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "0683261296fe87da8dbedd7ce7cb9d9830980de55aebf700ba4b2b8dfd921f8b",
+      "source_text": "Weiterentwicklung von Strom- und Wärmespeichern ist für den Umstieg auf erneuerbare Energien zentral und muss noch stärker unterstützt werden."
+    },
+    {
+      "object_id": "BE-BSW-P47-U06-A01-28befc44f29e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "28befc44f29e0b70efd9add53a665735e0a0b08d2408e8a267b094fb7768fb3d",
+      "source_text": "Berlin verfügt über nutzbares geothermisches Potential, das die Berliner Gebäudeheizung umweltfreundlicher machen kann."
+    },
+    {
+      "object_id": "BE-BSW-P47-U06-A02-df55264bada6",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "df55264bada6508c792fb535ff4c7a4628608c544fdc8128c3dcf5036ddab674",
+      "source_text": "Wir unterstützen die Errichtung von Demonstrationsanlagen sowie die entsprechende Begleitforschung."
+    },
+    {
+      "object_id": "BE-BSW-P47-U07-A01-ac033f6b604f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "ac033f6b604f3b55e76cd91a719a613025502bbb6b1170f74bc9c60f4fdc86ef",
+      "source_text": "Baumpflanzungen, Fassaden- und Dachbegrünung, offene Wasserflächen, Trinkwasserbrunnen und Kühlräume sind sinnvolle Investitionen im Innenstadtbereich."
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A01-7cb685beaad5",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "7cb685beaad56e9ecd687821a3ff76d441d082ca13f6429eb134ec73d0a5939f",
+      "source_text": "Wir fordern den Verzicht auf die Errichtung von Windrädern in Berlin und eine Initiative zur Veränderung des Wind-an-Land-Gesetzes, um die Flächenvorgaben für Windenergieanlagen abzuschaffen."
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A02-1862cc9fddf1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "1862cc9fddf1d1a2ae7df3be173660785b89e6847c8ae2df804da390f85dade9",
+      "source_text": "Wir setzen uns für das Repowering alter Windkraftanlagen ein."
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A03-db77b10e4e82",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "db77b10e4e82e0d311bf300f591dded838bc191eb5ff6f0df47c6898df6764e3",
+      "source_text": "Das bedeutet den Austausch älterer Windenergieanlagen durch neuere, leistungsfähigere Modelle."
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A04-82f503052981",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 47,
+      "source_text_sha256": "82f5030529817a5cbb4060d672d2549656614a396bc37ffe7e3573ba440e1ca3",
+      "source_text": "Das bringt mehr grünen Strom und verbesserte Effizienz am vorhandenen Standort."
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A01-284b755466f4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "284b755466f4a19750afaf0aec312afdbeb1a57b6d41f74ded3e25c99f70663e",
+      "source_text": "Verkehr Verkehrspolitik darf nicht spalten."
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A02-f5a7ad8b6e2e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "f5a7ad8b6e2e43675d5a68a71ccc68dc45e0d27b81b30abf2ae73093222b79d7",
+      "source_text": "Berlin braucht keinen ideologischen Gegensatz zwischen Auto, Fahrrad und öffentlichem Nahverkehr, sondern ein vernünftiges Miteinander."
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A03-eb1521ca39b7",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "eb1521ca39b76aa61ca36cdc6317a1dbce54d1f49b9355341530e14a12ec88ec",
+      "source_text": "Sichere Wege für Fußgänger, ein starker Nahverkehr, ein verlässliches Radwegenetz und gute Bedingungen für den motorisierten Individualverkehr gehören zusammen."
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A04-06cdde67f23f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "06cdde67f23f519bcef2742ca65c9e5ec24c0c3404e86f5a1ee2be9d58d37702",
+      "source_text": "Gerade in den Außenbezirken, bei Schichtarbeit, im Handwerk, für Familien und für mobilitätseingeschränkte Menschen bleibt das Auto oft unverzichtbar."
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A01-99aec02f9c87",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "99aec02f9c878121b1c79e6ca5213066269b9a342b128628f038352e251b08cd",
+      "source_text": "Ein Schwerpunkt unserer Verkehrspolitik ist die Stärkung des ÖPNV, vor allem in den Berliner Außenbezirken."
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A02-dfec33084059",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "dfec3308405966bb54eeb2ca8f50102af4ead13e9da4d06d2cc341070145edff",
+      "source_text": "Dort reichen Taktung, Erreichbarkeit und Zuverlässigkeit oft nicht aus, um eine echte Alternative zum Auto zu bieten."
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A03-e81f62d9b934",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "e81f62d9b93428fc2772a60d9a4b4fd45ffb16326c105f4d59fe295cc93305fa",
+      "source_text": "Deshalb setzen wir uns für den gezielten Ausbau von U-Bahn, S-Bahn, Straßenbahn und Bus ein."
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A04-21a1989ffc91",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "21a1989ffc91f788ce375461ac6202dc743cf12f5870971a3f2146e53bfea346",
+      "source_text": "Zudem setzen wir uns für den Bau von zwei Seilbahnlinien in Treptow-Köpenick sowie Pankow Nord ein."
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A05-104c39b0ec69",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "104c39b0ec69d6ae47d157963a09a74af9d815d0c0251dc37a4e9d7833d589fc",
+      "source_text": "Diese und wenn möglich auch die bestehende Seilbahn 'Gärten der Welt' in Marzahn-Hellersdorf sollen in das Berliner ÖPNV- Verbundsystem integriert werden."
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A06-58a443380aaf",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "58a443380aafddecc1aa4de2d292099394b55ccc4ba5ebb47fc8e955530e232c",
+      "source_text": "U-Bahn-Verlängerungen und Lückenschlüsse sollen dort vorangebracht werden, wo sie einen klaren Nutzen bringen und neue wie bestehende Quartiere besser anbinden."
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A07-68bf517c3fd0",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "68bf517c3fd0e3eb7ff3d7de974a30603d39190203780c95a8a6ca74777703a1",
+      "source_text": "Auch das Straßenbahnnetz soll dort erweitert werden, wo es die Erschließung verbessert und Versorgungslücken schließt."
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A01-00098694378e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "00098694378eae3b772eb2ba2705de45c431bc4e02024bbfb1ddd338805d9ef2",
+      "source_text": "Bei Bus und Straßenbahn wollen wir Takte, Linienführungen und Umsteigebeziehungen so ordnen, dass Wege einfacher und Doppelstrukturen vermieden werden."
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A02-7f53a793d737",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "7f53a793d7374dd7df173bf6afbc9164dfd3b379408f5e85f774f7cdc474faa9",
+      "source_text": "Flexible Ergänzungen des klassischen Nahverkehrs können dabei eine wichtige Rolle spielen."
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A03-16ed75cf3524",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "16ed75cf35246537b684fbe5712dc1a5d0bb3c43b8b7f9be52a5a532999e8fed",
+      "source_text": "Rufbusse und ähnliche Angebote sind vor allem dort sinnvoll, wo Ortsteile bislang nur unzureichend erschlossen sind."
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A04-dbab479d21f7",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "dbab479d21f70b3ae3f91682e01751d8105b9f065d4247de8aa37486b166a2bf",
+      "source_text": "Solche Modelle sollten gesichert und weiterentwickelt werden."
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A05-40a7121a76db",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "40a7121a76dbf8459953ae891e3b5ce06e5951a0bd148dab0222d07991a44cd3",
+      "source_text": "Auch Oberleitungsbusse können dort geprüft werden, wo sie emissionsarme Mobilität ermöglichen, ohne den Aufwand eines Schienenausbaus zu erfordern."
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A06-12f6965a428d",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "12f6965a428d3e82d82d32aa8ce9fb932521e68b0a73bda1d2adc8dded6e821e",
+      "source_text": "Für uns zählt nicht Symbolpolitik, sondern eine bessere Erreichbarkeit."
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A01-a0e5c7f0fef9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "a0e5c7f0fef94fff3cf7663ae399be68766638f37a4ff3661682e7e3a0eebadc",
+      "source_text": "Damit der öffentliche Verkehr attraktiver wird, müssen Berlin und Brandenburg enger zusammenarbeiten."
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A02-2fa72e8f675f",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "2fa72e8f675f19ba27e6e485174054850b505e3176f57761f6bd4bcfaa5bd7f0",
+      "source_text": "Die Metropolregion ist längst ein gemeinsamer Lebens- und Arbeitsraum."
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A03-ad2e2b61d926",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "ad2e2b61d9263f363676ca5d4bc9193d143ad70f83d088a7d8edd073c30a463e",
+      "source_text": "Deshalb wollen wir die Tarifstruktur zwischen Berlin und Brandenburg neu ordnen, Pendlerverkehre stärker berücksichtigen und uns für ein kostenloses Schülerticket in der gesamten Region einsetzen."
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A04-08e54cbed207",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 48,
+      "source_text_sha256": "08e54cbed2077014a1fe36dc540eea87aee5c66b4df2a5825d5dc2792a34b295",
+      "source_text": "Park-and-Ride-Angebote an den Stadträndern können dazu beitragen, den innerstädtischen Autoverkehr zu verringern, ohne die Mobilität der Pendler einzuschränken."
+    },
+    {
+      "object_id": "BE-BSW-P49-U02-A01-d41146ef291e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "d41146ef291ead52f8fdd993f14a5345993aeafdad2a1c7e22eeb680e73dc5da",
+      "source_text": "Der Fußverkehr muss deutlich stärker berücksichtigt werden."
+    },
+    {
+      "object_id": "BE-BSW-P49-U02-A02-dba137801e68",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "dba137801e68cf3a09ceac3512d7e2afab74cb487abdf491e62c4b34e27320e8",
+      "source_text": "Sichere Gehwege, abgesenkte Bordsteine, Zebrastreifen, Querungshilfen und gut geschaltete Ampeln sind Teil einer funktionierenden Daseinsvorsorge."
+    },
+    {
+      "object_id": "BE-BSW-P49-U02-A03-7f881af62b46",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "7f881af62b46a3d1c3360c6e28c60763082c36945fca6eee851aac06ba52fa15",
+      "source_text": "Gerade im Umfeld von Schulen, Kitas, Senioreneinrichtungen, Krankenhäusern und Arztpraxen müssen sichere Wege oberste Priorität haben."
+    },
+    {
+      "object_id": "BE-BSW-P49-U03-A01-27963dbe53e9",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "27963dbe53e91675a935ec2fc5be0e78d27dc60b718fda819a298a9bc9e5eff4",
+      "source_text": "Barrierefreiheit muss bei Sanierungen, Neubauten und im laufenden Unterhalt des öffentlichen Raums konsequent mitgedacht werden."
+    },
+    {
+      "object_id": "BE-BSW-P49-U03-A02-caec83208cc7",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "caec83208cc78b46297e72d59509702fd3251ba2f44384b3b4afe24c502f4290",
+      "source_text": "Besonders in den Außenbezirken, wo Wege oft weiter und Haltestellen schlechter erreichbar sind, braucht es spürbare Verbesserungen."
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A01-4dd451b87b91",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "4dd451b87b915eab2eb5415f6ad674582d575d91f5baa47b54e8e07251f0ef6c",
+      "source_text": "Berlin braucht ein sicheres, zusammenhängendes und alltagstaugliches Radwegenetz."
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A02-47ad05759328",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "47ad0575932847843defc412e0cfc55441278d8db2b5cc08a6862559d6046bdb",
+      "source_text": "Radwege dürfen nicht im Nichts beginnen und enden."
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A03-b297a18f946b",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "b297a18f946b5779c735531ac73d040a9b61267d24748db6fa9b41196b73d455",
+      "source_text": "Vor allem in den Randlagen fehlen oft sichere Verbindungen zwischen Ortsteilen, Schulen, Wohngebieten und Bahnhöfen."
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A04-0c04cf40f271",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "0c04cf40f271bff85d3ce8ef24beadb2d75a7ad391363bd6da837ee7d02afe0e",
+      "source_text": "Diese Verbindungen wollen wir gezielt ausbauen."
+    },
+    {
+      "object_id": "BE-BSW-P49-U06-A01-54abab1cb9e3",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "54abab1cb9e32d1a9596661a5c1e6ef4dc6d7590163719d844fd26111606dbea",
+      "source_text": "Wo Radwege entstehen, müssen sie sicher geführt werden, entweder baulich getrennt von der Fahrbahn und so angelegt, dass Konflikte mit Fußgängern und dem Autoverkehr minimiert werden."
+    },
+    {
+      "object_id": "BE-BSW-P49-U06-A02-37cf0ea0a927",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "37cf0ea0a927c757644ac2a9c9ece18a49c1d08a5ba57dcc3a88bec16882d9f4",
+      "source_text": "Gerade an Kreuzungen braucht es klare Lösungen, etwa durch getrennte Ampelphasen für abbiegende Kraftfahrzeuge und geradeaus fahrenden Radverkehr."
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A01-f6e0f95c23da",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "f6e0f95c23da30dce49e2ce890cde2da566bc37e843e8b15a2cf0228dac5a3ee",
+      "source_text": "Auch der motorisierte Individualverkehr bleibt ein fester Bestandteil der Mobilität in Berlin."
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A02-9f2809d416c4",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "9f2809d416c4d8997817ebb73785734466d30eb65000d5437f42ef2955c18017",
+      "source_text": "Viele Berliner sind auf ihr Auto angewiesen und können sich teure Umstiege nicht einfach leisten."
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A03-079d869cea58",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "079d869cea581e0bd7ac3ed0f92474496f2786ea790fcf8c21fb9fdb794734b9",
+      "source_text": "Neue finanzielle Belastungen wie City-Tax-Modelle für Verbrenner lehnen wir daher ab."
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A04-0cf4aff377a0",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "0cf4aff377a0a62ed080ea043c55a19c3a1e833a3d5a76008167932790c36648",
+      "source_text": "Klimafreundliche Antriebe sollen gefördert werden, ohne Menschen mit niedrigen und mittleren Einkommen zusätzlich zu belasten."
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A01-1400cd99a821",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "1400cd99a8213e3ac311eee407b60efab96e0cf1411aaee17617b2adc15b7202",
+      "source_text": "Dazu gehört für uns auch, bestehende Engpässe im Berliner Straßennetz gezielt zu entlasten."
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A02-69c0d37055a1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "69c0d37055a132fe480ca14deb601860ce089ff073771cfb345ab12b0d5062cd",
+      "source_text": "Die Fortführung des 17."
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A03-8dbef6f424bb",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "8dbef6f424bb87cba51366f90176b9073bcfdf18dd707eb76e2940d1e145cc4d",
+      "source_text": "Bauabschnitts der A100 bis zur Storkower Straße befürworten wir."
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A04-631452e7af83",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "631452e7af830f4e2811d90b024eb65f684d0a226517f757d8ffe71d876ae3b8",
+      "source_text": "Dabei sind die berechtigten Anliegen der Anwohner und eine verbindliche Bürgerbeteiligung angemessen zu berücksichtigen."
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A05-6049e3777a4e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "6049e3777a4e7a8d9a894976bd022e820062496c2d9a2dbb744796f5e8f79370",
+      "source_text": "Zugleich sehen wir in dem Vorhaben die Chance, den Verkehrsfluss auf stark belasteten Strecken zu verbessern und innerstädtische Quartiere zu entlasten."
+    },
+    {
+      "object_id": "BE-BSW-P49-U10-A01-c6e046317ca1",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "c6e046317ca16bae6b16a915862fb42b53fe3f1a61ec4eaf00a0c6820d715021",
+      "source_text": "Unnötige Parkplatzvernichtung sehen wir ebenso kritisch wie Verkehrskonzepte, die Verkehre nur verlagern, statt sie sinnvoll zu ordnen."
+    },
+    {
+      "object_id": "BE-BSW-P49-U10-A02-389dc1413687",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "389dc1413687c7e816ea5aa31098af784c54e5bb519be5002acdd749e19aaafe",
+      "source_text": "Kiezblocks lehnen wir ab, wenn sie den Verkehr in bereits überlastete Hauptstraßen drängen, Lieferverkehre erschweren und die Akzeptanz im Quartier mindern."
+    },
+    {
+      "object_id": "BE-BSW-P49-U10-A03-92fb10ce4c2e",
+      "object_kind": "SOURCE_ATOM",
+      "pdf_page": 49,
+      "source_text_sha256": "92fb10ce4c2e3dd1fa6577a782d40d212628374551b8b7ce3b3bc9f69e465827",
+      "source_text": "Stattdessen setzen wir auf ausgewogene Lösungen mit Parkraummanagement, Quartiersgaragen, Ladezonen und einer besseren Organisation des ruhenden Verkehrs."
+    }
+  ],
+  "original_records": [
+    {
+      "object_id": "BE-BSW-P46-U03-dd84466dfa6d",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P46-U13-53ce8855139b",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P48-U03-381203f1f6b4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P48-U06-152396dd78db",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P49-U01-37ced15760ca",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P49-U04-e3f76aa8553d",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P49-U07-27589962eae7",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "STRUCTURAL_HEADING"
+    },
+    {
+      "object_id": "BE-BSW-P48-U02-2b263d920996",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROBLEM_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_DIAGNOSIS_AND_SYSTEM_CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P46-U01-A01-3b0a665ac407",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "CO2_PRICE_ABOLITION"
+    },
+    {
+      "object_id": "BE-BSW-P46-U01-A02-7dc86840e180",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CAUSAL_PRICE_MECHANISM_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "RATIONALE_OR_EXPECTED_CONSEQUENCE"
+    },
+    {
+      "object_id": "BE-BSW-P46-U01-A03-2471cbe08cdb",
+      "authoritative_terminal_fach_state": "NON_EFFECT_AGGREGATE_DISTRIBUTIONAL_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "SOURCE_DISTRIBUTIONAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P46-U02-A01-536ddb5be356",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DISTRIBUTIONAL_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "DISTRIBUTIONAL_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P46-U02-A02-26546604a1cb",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "ELECTRICITY_PRICE_RELIEF_INSTRUMENT_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P46-U02-A03-aa7cbe821f7f",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "GRID_STORAGE_AND_DIGITAL_INVESTMENT"
+    },
+    {
+      "object_id": "BE-BSW-P46-U04-A01-54e6b9cad917",
+      "authoritative_terminal_fach_state": "NON_EFFECT_TARGET_STATE_AND_CURRENT_BASELINE_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PCK_TARGET_STATE"
+    },
+    {
+      "object_id": "BE-BSW-P46-U05-A01-17bec11747b0",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "NORD_STREAM_REOPENING_ADVOCACY"
+    },
+    {
+      "object_id": "BE-BSW-P46-U06-A01-e589e9472c2e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "ENERGY_INFRASTRUCTURE_CURTAILMENT_AND_RESERVE"
+    },
+    {
+      "object_id": "BE-BSW-P46-U06-A02-2700fb8a3dd2",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_IMPLEMENTATION_LIST_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P46-U06-M01-eb86fdaf58a2"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P46-U06-A03-6d99162ea566",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_IMPLEMENTATION_LIST_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P46-U06-M01-eb86fdaf58a2"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P46-U07-A01-2b71c19daba9",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SYSTEM_COHERENCE_DESIGN_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PV_INFRASTRUCTURE_COHERENCE_GUARD"
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A01-945bde3bbbc3",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DISTRICT_HEATING_EXPANSION"
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A02-e7124d02b0a5",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXISTING_GOVERNANCE_BASELINE_AND_COHERENCE_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MUNICIPAL_HEAT_PLAN_BASELINE"
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A03-1cc17816d759",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "PROJECT_PRIORITY_INSTRUMENT_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P46-U08-A04-8242f3d8bd99",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "PERMITTING_LAW_AND_SAFEGUARD_DELTA_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P46-U09-A01-13208906d601",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_COAL_RETIREMENT_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P46-U09-M01-314fc5e540c9"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P46-U09-A02-7eb61e4a771f",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_COAL_RETIREMENT_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P46-U09-M01-314fc5e540c9"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P46-U09-A03-3103f7bf89c9",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "GAS_NETWORK_RETENTION"
+    },
+    {
+      "object_id": "BE-BSW-P46-U10-A01-aa039fcae982",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "GASAG_REMUNICIPALISATION"
+    },
+    {
+      "object_id": "BE-BSW-P46-U11-A01-eba398e44626",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DEMAND_ALIGNED_GREEN_HYDROGEN_NETWORK"
+    },
+    {
+      "object_id": "BE-BSW-P46-U11-A02-a9008b5b4b6c",
+      "authoritative_terminal_fach_state": "NON_EFFECT_USE_CASE_PRIORITISATION_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "HYDROGEN_USE_CASE_TARGETING"
+    },
+    {
+      "object_id": "BE-BSW-P46-U12-A01-633dd9f532e4",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "ENERGY_TECH_COMPONENT_ANTI_RELOCATION_INSTRUMENT_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P46-U14-A01-e86a4c8a4bf7",
+      "authoritative_terminal_fach_state": "NON_EFFECT_ECONOMIC_DESIGN_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "LIFECYCLE_ECONOMIC_DESIGN_GUARD"
+    },
+    {
+      "object_id": "BE-BSW-P47-U01-A01-6a2348e8be71",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_HEAT_PUMP_NETWORK_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P47-U01-M01-af773049c6ed"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P47-U01-A02-ae417a1a413f",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_HEAT_PUMP_NETWORK_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P47-U01-M01-af773049c6ed"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P47-U02-A01-465b845ac6cc",
+      "authoritative_terminal_fach_state": "NON_EFFECT_MARGINAL_IMPACT_AND_COST_EFFECTIVENESS_DESIGN_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MARGINAL_IMPACT_ALLOCATION_GUARD"
+    },
+    {
+      "object_id": "BE-BSW-P47-U02-A02-4164ec1a74e2",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_POLICY_PRIORITY_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ANTI_TARGET_RHETORICAL_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P47-U03-A01-dc1476d3a42d",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "TECHNOLOGY_RESEARCH_SUPPORT_INSTRUMENT_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P47-U03-A02-2f013f7c0efb",
+      "authoritative_terminal_fach_state": "NON_EFFECT_TECHNOLOGY_EXAMPLE_SCOPE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "HYDROGEN_AND_SYNTHETIC_FUEL_EXAMPLES"
+    },
+    {
+      "object_id": "BE-BSW-P47-U03-A03-b46bd2264eb0",
+      "authoritative_terminal_fach_state": "NON_EFFECT_TECHNOLOGY_COMPARISON_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TECHNOLOGY_PROS_AND_CONS_RATIONALE"
+    },
+    {
+      "object_id": "BE-BSW-P47-U04-A01-48550be8d573",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "CCS_AND_CCU_SUPPORT"
+    },
+    {
+      "object_id": "BE-BSW-P47-U05-A01-90ab03ddb969",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_STORAGE_SUPPORT_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P47-U05-M01-f446746abe6b"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P47-U05-A02-0683261296fe",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MALFORMED_STORAGE_SUPPORT_SENTENCE_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P47-U05-M01-f446746abe6b"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P47-U06-A01-28befc44f29e",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RESOURCE_POTENTIAL_AND_EXPECTED_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "GEOTHERMAL_RESOURCE_POTENTIAL_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P47-U06-A02-df55264bada6",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "GEOTHERMAL_DEMONSTRATION_AND_RESEARCH"
+    },
+    {
+      "object_id": "BE-BSW-P47-U07-A01-ac033f6b604f",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_HEAT_ADAPTATION_LIST_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P47-U07-A01-C01-d5707fdfa22b",
+        "BE-BSW-P47-U07-A01-C02-b2b4f10a585a",
+        "BE-BSW-P47-U07-A01-C03-aa3947ff8b8e",
+        "BE-BSW-P47-U07-A01-C04-c6bd6f4cf439",
+        "BE-BSW-P47-U07-A01-C05-eb860b1ab695",
+        "BE-BSW-P47-U07-A01-C06-1f8eabc9ad1a"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A01-7cb685beaad5",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_WIND_POLICY_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P47-U08-A01-C01-5e0b62716f3a",
+        "BE-BSW-P47-U08-A01-C02-e5e6354fa423"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A02-1862cc9fddf1",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "WIND_REPOWERING"
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A03-db77b10e4e82",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DEFINITION_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "REPOWERING_DEFINITION"
+    },
+    {
+      "object_id": "BE-BSW-P47-U08-A04-82f503052981",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "REPOWERING_EXPECTED_OUTCOME_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A01-284b755466f4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_POLICY_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MOBILITY_NORMATIVE_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A02-f5a7ad8b6e2e",
+      "authoritative_terminal_fach_state": "NON_EFFECT_MODAL_COHERENCE_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MODAL_COHERENCE_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A03-eb1521ca39b7",
+      "authoritative_terminal_fach_state": "NON_EFFECT_MULTI_MODAL_TARGET_STATE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MULTIMODAL_TARGET_STATE"
+    },
+    {
+      "object_id": "BE-BSW-P48-U01-A04-06cdde67f23f",
+      "authoritative_terminal_fach_state": "NON_EFFECT_ACCESS_AND_DEPENDENCY_DIAGNOSIS_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CAR_DEPENDENCY_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A01-99aec02f9c87",
+      "authoritative_terminal_fach_state": "NON_EFFECT_POLICY_PRIORITY_AND_SPATIAL_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "OUTER_DISTRICT_TRANSIT_PRIORITY"
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A02-dfec33084059",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SERVICE_DEFICIT_DIAGNOSIS_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TRANSIT_SERVICE_DEFICIT_SOURCE_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A03-e81f62d9b934",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_MODAL_EXPANSION_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P48-U04-A03-C01-0c64daf14a54",
+        "BE-BSW-P48-U04-A03-C02-0bfa00376e01",
+        "BE-BSW-P48-U04-A03-C03-4c1cad41393a",
+        "BE-BSW-P48-U04-A03-C04-bb3d83ff198b"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A04-21a1989ffc91",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TWO_CABLE_CAR_PROJECTS_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P48-U04-A04-C01-b88058653d24",
+        "BE-BSW-P48-U04-A04-C02-edec4670b58d"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A05-104c39b0ec69",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "CABLE_CAR_FARE_AND_NETWORK_INTEGRATION"
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A06-58a443380aaf",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROJECT_SELECTION_AND_BENEFIT_TEST_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "U_BAHN_PROJECT_SELECTION_GUARD"
+    },
+    {
+      "object_id": "BE-BSW-P48-U04-A07-68bf517c3fd0",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PROJECT_SELECTION_AND_NETWORK_GAP_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TRAM_PROJECT_SELECTION_GUARD"
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A01-00098694378e",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "BUS_TRAM_NETWORK_REDESIGN"
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A02-7f53a793d737",
+      "authoritative_terminal_fach_state": "NON_EFFECT_OPTION_SPACE_AND_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FLEXIBLE_TRANSIT_OPTION_SPACE"
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A03-16ed75cf3524",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "LOW_DENSITY_ON_DEMAND_TRANSIT"
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A04-dbab479d21f7",
+      "authoritative_terminal_fach_state": "NON_EFFECT_RESTATEMENT_AND_CONTINUATION_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ON_DEMAND_CONTINUATION_RESTATEMENT"
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A05-40a7121a76db",
+      "authoritative_terminal_fach_state": "NON_EFFECT_TECHNOLOGY_OPTION_APPRAISAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "TROLLEYBUS_OPTION_APPRAISAL"
+    },
+    {
+      "object_id": "BE-BSW-P48-U05-A06-12f6965a428d",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_OUTCOME_PRIORITY_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ACCESSIBILITY_PRIORITY_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A01-a0e5c7f0fef9",
+      "authoritative_terminal_fach_state": "NON_EFFECT_INTERGOVERNMENTAL_COHERENCE_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "BERLIN_BRANDENBURG_COOPERATION_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A02-2fa72e8f675f",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SPATIAL_DEMAND_CONTEXT_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "METROPOLITAN_REGION_CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A03-ad2e2b61d926",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_TARIFF_COMMUTER_STUDENT_TICKET_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P48-U07-A03-C01-8a81f3a3709c",
+        "BE-BSW-P48-U07-A03-C02-b8fd6c466c9f",
+        "BE-BSW-P48-U07-A03-C03-e2e0094b5f37"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P48-U07-A04-08e54cbed207",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PARK_AND_RIDE_AT_CITY_EDGES"
+    },
+    {
+      "object_id": "BE-BSW-P49-U02-A01-d41146ef291e",
+      "authoritative_terminal_fach_state": "NON_EFFECT_POLICY_PRIORITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "WALKING_PRIORITY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P49-U02-A02-dba137801e68",
+      "authoritative_terminal_fach_state": "NON_EFFECT_DESIGN_GOAL_AND_MEASURE_EXAMPLES_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "WALKING_DESIGN_EXAMPLES"
+    },
+    {
+      "object_id": "BE-BSW-P49-U02-A03-7f881af62b46",
+      "authoritative_terminal_fach_state": "NON_EFFECT_TARGETING_AND_SAFETY_PRIORITY_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "VULNERABLE_LOCATION_SAFETY_PRIORITY"
+    },
+    {
+      "object_id": "BE-BSW-P49-U03-A01-27963dbe53e9",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PUBLIC_SPACE_ACCESSIBILITY_LIFECYCLE_INTEGRATION"
+    },
+    {
+      "object_id": "BE-BSW-P49-U03-A02-caec83208cc7",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "OUTER_DISTRICT_ACCESS_IMPROVEMENT_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A01-4dd451b87b91",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NETWORK_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CYCLING_NETWORK_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A02-47ad05759328",
+      "authoritative_terminal_fach_state": "NON_EFFECT_CONTINUITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CYCLING_CONTINUITY_GOAL"
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A03-b297a18f946b",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SOURCE_DIAGNOSIS_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CYCLING_GAP_DIAGNOSIS"
+    },
+    {
+      "object_id": "BE-BSW-P49-U05-A04-0c04cf40f271",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "TARGETED_CYCLING_GAP_EXPANSION"
+    },
+    {
+      "object_id": "BE-BSW-P49-U06-A01-54abab1cb9e3",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SAFE_SEPARATED_CYCLING_INFRASTRUCTURE"
+    },
+    {
+      "object_id": "BE-BSW-P49-U06-A02-37cf0ea0a927",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "SEPARATE_TURNING_AND_CYCLING_SIGNAL_PHASES"
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A01-f6e0f95c23da",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SYSTEM_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "MOTORISED_INDIVIDUAL_TRANSPORT_CONTEXT"
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A02-9f2809d416c4",
+      "authoritative_terminal_fach_state": "NON_EFFECT_SOURCE_DIAGNOSIS_AND_DISTRIBUTION_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CAR_DEPENDENCY_AND_AFFORDABILITY_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A03-079d869cea58",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "UNSPECIFIED_CITY_TAX_REJECTION"
+    },
+    {
+      "object_id": "BE-BSW-P49-U08-A04-0cf4aff377a0",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "UNSPECIFIED_CLIMATE_FRIENDLY_DRIVE_SUPPORT"
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A01-1400cd99a821",
+      "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "ROAD_BOTTLENECK_AND_TREATMENT_UNSPECIFIED"
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A02-69c0d37055a1",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FALSE_ORDINAL_SENTENCE_SPLIT",
+      "replacement_record_ids": [
+        "BE-BSW-P49-U09-A02-175fd9b0f08b"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A03-8dbef6f424bb",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "FALSE_ORDINAL_SENTENCE_SPLIT",
+      "replacement_record_ids": [
+        "BE-BSW-P49-U09-A02-175fd9b0f08b"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A04-631452e7af83",
+      "authoritative_terminal_fach_state": "NON_EFFECT_PARTICIPATION_AND_PROTECTED_INTEREST_SAFEGUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "A100_PARTICIPATION_SAFEGUARD"
+    },
+    {
+      "object_id": "BE-BSW-P49-U09-A05-6049e3777a4e",
+      "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "A100_EXPECTED_TRAFFIC_RELIEF_CLAIM"
+    },
+    {
+      "object_id": "BE-BSW-P49-U10-A01-c6e046317ca1",
+      "authoritative_terminal_fach_state": "NON_EFFECT_NORMATIVE_AND_CAUSAL_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "PARKING_AND_TRAFFIC_DISPLACEMENT_FRAME"
+    },
+    {
+      "object_id": "BE-BSW-P49-U10-A02-389dc1413687",
+      "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "CONDITIONAL_KIEZBLOCK_REJECTION_RULE"
+    },
+    {
+      "object_id": "BE-BSW-P49-U10-A03-92fb10ce4c2e",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMPOUND_PARKING_INSTRUMENT_PARENT",
+      "replacement_record_ids": [
+        "BE-BSW-P49-U10-A03-C01-9b34b79e6407",
+        "BE-BSW-P49-U10-A03-C02-d04e0012e41b",
+        "BE-BSW-P49-U10-A03-C03-677f78cf3704",
+        "BE-BSW-P49-U10-A03-C04-c8ffa151eac6"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P49-U11-b26ec37a3382",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P49_P50_CROSS_PAGE_FREIGHT_DIAGNOSIS_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P49P50-U11U01-M01-6894142020b5"
+      ]
+    },
+    {
+      "object_id": "BE-BSW-P50-U01-bb3d4390ad9a",
+      "authoritative_terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "decision_kind": "P49_P50_CROSS_PAGE_FREIGHT_DIAGNOSIS_FRAGMENT",
+      "replacement_record_ids": [
+        "BE-BSW-P49P50-U11U01-M01-6894142020b5"
+      ]
+    }
+  ],
+  "deterministic_records": [
+    {
+      "parent_object_ids": [
+        "BE-BSW-P46-U06-A02-2700fb8a3dd2",
+        "BE-BSW-P46-U06-A03-6d99162ea566"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Die Investitionen betreffen z.B. Strom- und Fernwärmeleitungen, Umspannwerke, Energiespeicher, Elektrolyseure, Power-to-Heat-Anlagen und Reservekraftwerke.",
+      "source_span": {
+        "start": 0,
+        "end": 155
+      },
+      "terminal_fach_state": "NON_EFFECT_IMPLEMENTATION_EXAMPLE_PORTFOLIO_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "ENERGY_INFRASTRUCTURE_IMPLEMENTATION_EXAMPLE_LIST",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P46-U06-M01-eb86fdaf58a2",
+      "source_text_sha256": "eb86fdaf58a29ff361fc48d8e33d6dcb5f08b426af644b5e26f83b9229f19f9b",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P46-U09-A01-13208906d601",
+        "BE-BSW-P46-U09-A02-7eb61e4a771f"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Wir werden Energieanlagen, wie z.B. Kohlekraftwerke, erst dann außer Betrieb nehmen, wenn ausreichend wettbewerbsfähige und sichere Alternativen zur Verfügung stehen.",
+      "source_span": {
+        "start": 0,
+        "end": 166
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "COAL_RETIREMENT_REPLACEMENT_AVAILABILITY_CONDITION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P46-U09-M01-314fc5e540c9",
+      "source_text_sha256": "314fc5e540c9cb1bc79b9c1b77ab2c343bea31aff1ed9cd9a5723b15c6824bef",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U01-A01-6a2348e8be71",
+        "BE-BSW-P47-U01-A02-ae417a1a413f"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Wir wollen Bedingungen schaffen, bei denen die Nutzung von Wärmepumpen wirtschaftlich und technisch sinnvoll ist, d. h. Integration in ein Fernwärmesystem mit Wärmespeichern.",
+      "source_span": {
+        "start": 0,
+        "end": 174
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "LARGE_HEAT_PUMP_NETWORK_AND_THERMAL_STORAGE_INTEGRATION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U01-M01-af773049c6ed",
+      "source_text_sha256": "af773049c6edf7a372c85812e24e1cc2a739bf2bdf86fd1cb39ad614c6ea65f2",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U05-A01-90ab03ddb969",
+        "BE-BSW-P47-U05-A02-0683261296fe"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Die Entwicklung bzw. Weiterentwicklung von Strom- und Wärmespeichern ist für den Umstieg auf erneuerbare Energien zentral und muss noch stärker unterstützt werden.",
+      "source_span": {
+        "start": 0,
+        "end": 163
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "ELECTRICITY_AND_HEAT_STORAGE_DEVELOPMENT_SUPPORT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U05-M01-f446746abe6b",
+      "source_text_sha256": "f446746abe6bf2580be48b78d3383445f4c1a913db4a8636ec997adae38b747b",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U07-A01-ac033f6b604f"
+      ],
+      "source_text": "Baumpflanzungen",
+      "source_span": {
+        "start": 0,
+        "end": 15
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "URBAN_TREE_PLANTING",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U07-A01-C01-d5707fdfa22b",
+      "source_text_sha256": "d5707fdfa22bb1b541c283efc40f5103c7881e64cdcc2ca7f797897fe0945fc9",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U07-A01-ac033f6b604f"
+      ],
+      "source_text": "Fassadenbegrünung",
+      "source_span": {
+        "start": 17,
+        "end": 44
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FACADE_GREENING",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U07-A01-C02-b2b4f10a585a",
+      "source_text_sha256": "b2b4f10a585a084d8956f58f257c7cc516e97aac558462fe67285af5008c1572",
+      "source_span_basis": "AUTHORITATIVE_ELLIPTICAL_LIST_EXPANSION_FROM_EXACT_PARENT_SPAN",
+      "reconstruction_mode": "AUTHORITATIVE_ELLIPTICAL_LIST_EXPANSION",
+      "source_segments": [
+        {
+          "parent_object_id": "BE-BSW-P47-U07-A01-ac033f6b604f",
+          "start": 17,
+          "end": 44,
+          "source_text": "Fassaden- und Dachbegrünung"
+        }
+      ]
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U07-A01-ac033f6b604f"
+      ],
+      "source_text": "Dachbegrünung",
+      "source_span": {
+        "start": 31,
+        "end": 44
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "ROOF_GREENING",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U07-A01-C03-aa3947ff8b8e",
+      "source_text_sha256": "aa3947ff8b8e492c9284f31b3db0715c1a504b6f4305db3bb1a750e81b71d6f5",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U07-A01-ac033f6b604f"
+      ],
+      "source_text": "offene Wasserflächen",
+      "source_span": {
+        "start": 46,
+        "end": 66
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "OPEN_WATER_SURFACES",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U07-A01-C04-c6bd6f4cf439",
+      "source_text_sha256": "c6bd6f4cf4398d62fc1b5e63c9423f74c34984eb8155e4d5eb0139d32d9c4c6f",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U07-A01-ac033f6b604f"
+      ],
+      "source_text": "Trinkwasserbrunnen",
+      "source_span": {
+        "start": 68,
+        "end": 86
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "DRINKING_WATER_FOUNTAINS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U07-A01-C05-eb860b1ab695",
+      "source_text_sha256": "eb860b1ab6955557b5f55643de4ea14cc4b66e76d8bfc20b6087a8acdce372ce",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U07-A01-ac033f6b604f"
+      ],
+      "source_text": "Kühlräume",
+      "source_span": {
+        "start": 91,
+        "end": 100
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "COOLING_ROOMS",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U07-A01-C06-1f8eabc9ad1a",
+      "source_text_sha256": "1f8eabc9ad1a6af3fbda85e225ac0ebccee749e59ed92e571a9e7b7eb0a0ac78",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U08-A01-7cb685beaad5"
+      ],
+      "source_text": "Wir fordern den Verzicht auf die Errichtung von Windrädern in Berlin",
+      "source_span": {
+        "start": 0,
+        "end": 68
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "NO_NEW_WIND_TURBINES_IN_BERLIN",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U08-A01-C01-5e0b62716f3a",
+      "source_text_sha256": "5e0b62716f3abc52d651cd4436205e28a871fcd5bea195e7a91a54c2e211f6a7",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P47-U08-A01-7cb685beaad5"
+      ],
+      "source_text": "eine Initiative zur Veränderung des Wind-an-Land-Gesetzes, um die Flächenvorgaben für Windenergieanlagen abzuschaffen",
+      "source_span": {
+        "start": 73,
+        "end": 190
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FEDERAL_WINDBG_AREA_TARGET_REPEAL_INITIATIVE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P47-U08-A01-C02-e5e6354fa423",
+      "source_text_sha256": "e5e6354fa4231f9cd75353e6d48eb44274bf96389a019ca7bd99a199007db679",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U04-A03-e81f62d9b934"
+      ],
+      "source_text": "U-Bahn",
+      "source_span": {
+        "start": 52,
+        "end": 58
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "TARGETED_U_BAHN_EXPANSION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U04-A03-C01-0c64daf14a54",
+      "source_text_sha256": "0c64daf14a54ea3d59a139b481fce459602ff904d06b9b6c998a695de92ff0ea",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U04-A03-e81f62d9b934"
+      ],
+      "source_text": "S-Bahn",
+      "source_span": {
+        "start": 60,
+        "end": 66
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "TARGETED_S_BAHN_EXPANSION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U04-A03-C02-0bfa00376e01",
+      "source_text_sha256": "0bfa00376e018ca42750c948e131bc3760b67f4a9d264e5fca156d785dec24cb",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U04-A03-e81f62d9b934"
+      ],
+      "source_text": "Straßenbahn",
+      "source_span": {
+        "start": 68,
+        "end": 79
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "TARGETED_TRAM_EXPANSION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U04-A03-C03-4c1cad41393a",
+      "source_text_sha256": "4c1cad41393aae36fe017b939bf652615aeacfbb17a9e8be63fe3d5fa54d9290",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U04-A03-e81f62d9b934"
+      ],
+      "source_text": "Bus",
+      "source_span": {
+        "start": 84,
+        "end": 87
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "TARGETED_BUS_EXPANSION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U04-A03-C04-bb3d83ff198b",
+      "source_text_sha256": "bb3d83ff198b139d1037d5db0fddf97b2e0129f7ce67dc9d16fdeb56f4ee00d8",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U04-A04-21a1989ffc91"
+      ],
+      "source_text": "Treptow-Köpenick",
+      "source_span": {
+        "start": 60,
+        "end": 76
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "TREPTOW_KOEPENICK_CABLE_CAR_PROJECT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U04-A04-C01-b88058653d24",
+      "source_text_sha256": "b88058653d2476db08e4f24af3bb4c0b5bfdfde4f4e61f94a0c96dcf15df7a29",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U04-A04-21a1989ffc91"
+      ],
+      "source_text": "Pankow Nord",
+      "source_span": {
+        "start": 83,
+        "end": 94
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "PANKOW_NORD_CABLE_CAR_PROJECT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U04-A04-C02-edec4670b58d",
+      "source_text_sha256": "edec4670b58d9b02202281ca84901e3aa5d1aae81c626cd04fdae638c9ab15d8",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U07-A03-ad2e2b61d926"
+      ],
+      "source_text": "die Tarifstruktur zwischen Berlin und Brandenburg neu ordnen",
+      "source_span": {
+        "start": 19,
+        "end": 79
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "BERLIN_BRANDENBURG_TARIFF_REORGANISATION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U07-A03-C01-8a81f3a3709c",
+      "source_text_sha256": "8a81f3a3709c57e77708358de41cd5462787406d91d26f12f763af9002b19c13",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U07-A03-ad2e2b61d926"
+      ],
+      "source_text": "Pendlerverkehre stärker berücksichtigen",
+      "source_span": {
+        "start": 81,
+        "end": 120
+      },
+      "terminal_fach_state": "NON_EFFECT_DEMAND_PLANNING_AND_DISTRIBUTION_GUARD_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "COMMUTER_FLOW_PLANNING_GUARD",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U07-A03-C02-b8fd6c466c9f",
+      "source_text_sha256": "b8fd6c466c9f76f1497b66fb1527caffb6593eb86efcb5e57675d4612064edf3",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P48-U07-A03-ad2e2b61d926"
+      ],
+      "source_text": "uns für ein kostenloses Schülerticket in der gesamten Region einsetzen",
+      "source_span": {
+        "start": 125,
+        "end": 195
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "FREE_STUDENT_TICKET_WHOLE_REGION",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P48-U07-A03-C03-e2e0094b5f37",
+      "source_text_sha256": "e2e0094b5f3764198b93720c8080c053b72f85fd9ca81c96df1666cd6464c965",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P49-U09-A02-69c0d37055a1",
+        "BE-BSW-P49-U09-A03-8dbef6f424bb"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Die Fortführung des 17. Bauabschnitts der A100 bis zur Storkower Straße befürworten wir.",
+      "source_span": {
+        "start": 0,
+        "end": 88
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "A100_17TH_SECTION_TO_STORKOWER_STRASSE",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P49-U09-A02-175fd9b0f08b",
+      "source_text_sha256": "175fd9b0f08b5cc730d512703ded32c5d1588576e85ec0e761dbed80179e158e",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P49-U10-A03-92fb10ce4c2e"
+      ],
+      "source_text": "Parkraummanagement",
+      "source_span": {
+        "start": 52,
+        "end": 70
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "PARKING_MANAGEMENT",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P49-U10-A03-C01-9b34b79e6407",
+      "source_text_sha256": "9b34b79e6407470ad6b4f5339f1115487a20ecc77d80e17c28a56c586f2e445d",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P49-U10-A03-92fb10ce4c2e"
+      ],
+      "source_text": "Quartiersgaragen",
+      "source_span": {
+        "start": 72,
+        "end": 88
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "NEIGHBOURHOOD_GARAGES",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P49-U10-A03-C02-d04e0012e41b",
+      "source_text_sha256": "d04e0012e41b892091f55cfddcfb41e34c4a90dff755f1577aa3a57b004014c8",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P49-U10-A03-92fb10ce4c2e"
+      ],
+      "source_text": "Ladezonen",
+      "source_span": {
+        "start": 90,
+        "end": 99
+      },
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "decision_kind": "LOADING_ZONES",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P49-U10-A03-C03-677f78cf3704",
+      "source_text_sha256": "677f78cf3704ad02fcc1cd6e43908e0fdff3cba4387b70c9a992ce31dd43a71a",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P49-U10-A03-92fb10ce4c2e"
+      ],
+      "source_text": "einer besseren Organisation des ruhenden Verkehrs",
+      "source_span": {
+        "start": 104,
+        "end": 153
+      },
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "decision_kind": "PARKED_TRAFFIC_ORGANISATION_INSTRUMENT_UNSPECIFIED",
+      "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+      "object_id": "BE-BSW-P49-U10-A03-C04-c8ffa151eac6",
+      "source_text_sha256": "c8ffa151eac6aca7020e9c7df293163080483c68c850607655deed894a56b803",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT"
+    },
+    {
+      "parent_object_ids": [
+        "BE-BSW-P49-U11-b26ec37a3382",
+        "BE-BSW-P50-U01-bb3d4390ad9a"
+      ],
+      "parent_joiner": " ",
+      "source_text": "Mit einer Gütermenge von 76,5 Millionen Tonnen ist der Straßengüterverkehr am Gesamtaufkommen mit 90,6 % unvertretbar hoch beteiligt. Wenn dieser Anteil auch innerstädtische Versand- und Empfangsmengen, z.B. Baustofftransport, beinhaltet, ist diese hohe Dominanz des Straßengüterverkehrs so nicht mehr hinnehmbar.",
+      "source_span": {
+        "start": 0,
+        "end": 313
+      },
+      "terminal_fach_state": "NON_EFFECT_QUANTITATIVE_DIAGNOSIS_AND_NORMATIVE_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "decision_kind": "CROSS_PAGE_FREIGHT_DIAGNOSIS",
+      "object_kind": "DETERMINISTIC_CROSS_PAGE_SEMANTIC_REPLACEMENT",
+      "object_id": "BE-BSW-P49P50-U11U01-M01-6894142020b5",
+      "source_text_sha256": "6894142020b52982b85f38787a34885f7fe15637ccb088efede102e9d9a2ea07",
+      "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT"
+    }
+  ],
+  "deterministic_open_children": [],
+  "deterministic_child_contract": {
+    "id_rule": "stable structural prefix plus first 12 hex characters of SHA-256(exact UTF-8 deterministic source text)",
+    "source_span_basis": [
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+      "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_JOINED_PARENT_SOURCE_TEXT",
+      "AUTHORITATIVE_ELLIPTICAL_LIST_EXPANSION_FROM_EXACT_PARENT_SPAN"
+    ],
+    "semantics_rule": "IDs, hashes, exact text spans and lineage are mechanical; Fach is copied only from the cited WÖk comments."
+  },
+  "coverage": {
+    "protected_fach_terminal_physical_scope": "P1-P45",
+    "segmented_physical_pages": [
+      46,
+      47,
+      48,
+      49
+    ],
+    "next_opaque_page_review_envelope_from": 50,
+    "next_opaque_page_review_envelope_through": 66,
+    "original_source_object_count": 95,
+    "original_terminal_record_count": 95,
+    "deterministic_terminal_record_count": 27,
+    "new_terminal_record_count": 122,
+    "active_terminal_review_leaf_count": 53,
+    "active_explicit_fach_approved_count": 36,
+    "active_reviewed_not_assessable_count": 17,
+    "versioned_parent_or_fragment_count": 18,
+    "new_exact_open_child_object_count": 0,
+    "carried_exact_open_child_object_count": 61,
+    "terminal_status_counts": {
+      "EXPLICIT_FACH_APPROVED": 36,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 17,
+      "NON_EFFECT_CONTEXT_REVIEWED": 51,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 18
+    },
+    "gate": "BE_BSW_P46_P49_FACH_COMPLETE_PASS_SOURCE_BOUND"
+  },
+  "constraints": {
+    "fach_inferred_from_source": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "party_wide_judgement_synthesized": false
+  }
+}

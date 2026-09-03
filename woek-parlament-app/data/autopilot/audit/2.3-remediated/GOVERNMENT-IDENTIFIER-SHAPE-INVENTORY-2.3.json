@@ -1,0 +1,79 @@
+{
+  "schema_version": "woek-government-identifier-shape-inventory-2.3",
+  "generated_at": "2026-08-21T10:04:08.133Z",
+  "input": "/data/government/public/government-actions.jsonl",
+  "status": "PASS",
+  "public_action_count": 1931,
+  "source_identifier_value_count": 10088,
+  "safely_rendered_row_count": 10088,
+  "supported_shape_count": 6,
+  "fail_closed_shape_count": 0,
+  "missing_required_shapes": [],
+  "shapes": [
+    {
+      "shape": "bgbl:string",
+      "count": 19,
+      "behavior": "EXPLICIT_SAFE_RENDERER",
+      "example": {
+        "government_action_id": "govaction:breg-cabinet:2444492:top:4",
+        "value": "Verordnung zur Ablösung der Emissionshandelsverordnung 2030 zur Umsetzung des TEHG-Europarechtsanpassungsgesetzes 2024"
+      }
+    },
+    {
+      "shape": "dip_ids:string",
+      "count": 572,
+      "behavior": "EXPLICIT_SAFE_RENDERER",
+      "example": {
+        "government_action_id": "govaction:dip:338317",
+        "value": "338317"
+      }
+    },
+    {
+      "shape": "drucksachen:string",
+      "count": 5175,
+      "behavior": "EXPLICIT_SAFE_RENDERER",
+      "example": {
+        "government_action_id": "govaction:dip:338317",
+        "value": "BR 450/26"
+      }
+    },
+    {
+      "shape": "eli:string",
+      "count": 19,
+      "behavior": "EXPLICIT_SAFE_RENDERER",
+      "example": {
+        "government_action_id": "govaction:breg-cabinet:2444492:top:4",
+        "value": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/201"
+      }
+    },
+    {
+      "shape": "other:object{agenda_item,cabinet_session}",
+      "count": 511,
+      "behavior": "EXPLICIT_SAFE_RENDERER",
+      "example": {
+        "government_action_id": "govaction:breg-cabinet:2449358:top:10",
+        "value": {
+          "agenda_item": 10,
+          "cabinet_session": 55
+        }
+      }
+    },
+    {
+      "shape": "other:object{dip_document_id,document_url}",
+      "count": 3792,
+      "behavior": "EXPLICIT_SAFE_RENDERER",
+      "example": {
+        "government_action_id": "govaction:dip:338317",
+        "value": {
+          "dip_document_id": "290193",
+          "document_url": "https://dserver.bundestag.de/brd/2026/0450-26.pdf"
+        }
+      }
+    }
+  ],
+  "invariants": {
+    "STRUCTURED_OBJECTS_NEVER_RENDER_AS_REACT_CHILDREN": true,
+    "UNKNOWN_OBJECT_SHAPES_FAIL_CLOSED": true,
+    "SOURCE_URLS_USE_WOEK_INTERMEDIARY": true
+  }
+}

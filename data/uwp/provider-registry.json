@@ -1,0 +1,110 @@
+{
+  "registry_id": "uwp-provider-registry-beta-2026-06-10",
+  "title": "Provider-Architektur Unternehmens-Wirkungsprofil Beta",
+  "method_version": "uwp-beta-0.1",
+  "runtime_rule": "Keine Daten live beim Seitenaufruf scrapen. Die Website nutzt versionierte Snapshots.",
+  "license_rule": "Wenn der Lizenzstatus unklar ist, werden keine Daten übernommen. Der Provider wird nur als mögliche Quelle dokumentiert.",
+  "providers": [
+    {
+      "provider_id": "company_reports",
+      "label": "Unternehmensberichte",
+      "scope": [
+        "Nachhaltigkeitsberichte",
+        "Geschäftsberichte",
+        "integrierte Berichte",
+        "nichtfinanzielle Erklärungen",
+        "IR-Seiten",
+        "PDF/HTML/XHTML"
+      ],
+      "snapshot_required": true,
+      "license_status": "öffentlich zu prüfen",
+      "mvp_status": "vorbereitet"
+    },
+    {
+      "provider_id": "esrs_csrd",
+      "label": "ESRS / CSRD / EU-Taxonomie",
+      "scope": [
+        "ESRS-/CSRD-Berichte",
+        "ESEF/XBRL/XHTML, soweit zugänglich",
+        "EU-Taxonomie-Kennzahlen Umsatz, CapEx und OpEx"
+      ],
+      "snapshot_required": true,
+      "license_status": "öffentlich zu prüfen",
+      "mvp_status": "vorbereitet"
+    },
+    {
+      "provider_id": "gri_index",
+      "label": "GRI Content Index",
+      "scope": [
+        "GRI Content Index aus Unternehmensberichten",
+        "Mapping auf GRI-Disclosure-Items"
+      ],
+      "snapshot_required": true,
+      "license_status": "keine Annahme einer vollständigen zentralen Datenbank",
+      "mvp_status": "vorbereitet"
+    },
+    {
+      "provider_id": "sbti",
+      "label": "Science Based Targets",
+      "scope": [
+        "Zielstatus",
+        "Validierungsstatus",
+        "Zieljahr",
+        "Net-Zero-Ziele, soweit öffentlich und lizenzrechtlich nutzbar"
+      ],
+      "snapshot_required": true,
+      "license_status": "öffentlich oder lizenziert",
+      "mvp_status": "vorbereitet"
+    },
+    {
+      "provider_id": "cdp_optional",
+      "label": "CDP optional",
+      "scope": [
+        "CDP-Daten nur, wenn öffentlich oder lizenziert",
+        "sonst nur als mögliche Quelle sichtbar"
+      ],
+      "snapshot_required": true,
+      "license_status": "nicht ungeprüft übernehmen",
+      "mvp_status": "nur Architektur"
+    },
+    {
+      "provider_id": "sec_edgar_optional",
+      "label": "SEC EDGAR optional",
+      "scope": [
+        "20-F",
+        "10-K",
+        "XBRL-Finanzdaten für Unternehmen mit SEC-Filings"
+      ],
+      "snapshot_required": true,
+      "license_status": "öffentlich zu prüfen",
+      "mvp_status": "nur Architektur"
+    },
+    {
+      "provider_id": "controversies_optional",
+      "label": "Kontroversen optional",
+      "scope": [
+        "Behördenmitteilungen",
+        "Bußgelder",
+        "Gerichtsverfahren",
+        "Umweltregister",
+        "Sanktionslisten",
+        "öffentlich belegte Kontroversen"
+      ],
+      "snapshot_required": true,
+      "license_status": "nur seriöse, belegbare Quellen",
+      "mvp_status": "vorbereitet"
+    },
+    {
+      "provider_id": "manual_snapshot",
+      "label": "Manueller MVP-Snapshot",
+      "scope": [
+        "kuratierte CSV/JSON-Dateien",
+        "erste Testunternehmen",
+        "manuelle Quellenprüfung"
+      ],
+      "snapshot_required": true,
+      "license_status": "projektspezifisch dokumentieren",
+      "mvp_status": "aktiv"
+    }
+  ]
+}

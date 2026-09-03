@@ -1,0 +1,91 @@
+{
+  "method_version": "territorial-compass-beta-0.1",
+  "entities": [
+    "entity_id",
+    "entity_type",
+    "name",
+    "official_name",
+    "iso2",
+    "iso3",
+    "nuts_code",
+    "ags",
+    "parent_entity_id",
+    "region_group",
+    "population",
+    "area",
+    "status",
+    "notes"
+  ],
+  "indicator_catalog": [
+    "indicator_id",
+    "name",
+    "dimension",
+    "subdimension",
+    "sdg_or_sdgplus",
+    "unit",
+    "polarity",
+    "source_priority",
+    "benchmark_method",
+    "required",
+    "red_line",
+    "method_version"
+  ],
+  "observations": [
+    "observation_id",
+    "entity_id",
+    "year",
+    "indicator_id",
+    "raw_value",
+    "unit",
+    "source_id",
+    "source_url",
+    "retrieved_at",
+    "license",
+    "data_quality",
+    "notes"
+  ],
+  "scores": [
+    "score_id",
+    "entity_id",
+    "year",
+    "indicator_id",
+    "score_0_100",
+    "method_version",
+    "data_quality",
+    "red_line_flag",
+    "notes"
+  ],
+  "profiles": [
+    "profile_id",
+    "entity_id",
+    "entity_type",
+    "year",
+    "method_version",
+    "mensch_score",
+    "planet_score",
+    "demokratie_score",
+    "overall_score",
+    "coverage",
+    "data_quality_score",
+    "trend_summary",
+    "interpretation",
+    "created_at"
+  ],
+  "sources": [
+    "source_id",
+    "title",
+    "provider",
+    "url",
+    "license",
+    "retrieved_at",
+    "update_frequency",
+    "notes"
+  ],
+  "comparison_groups": [
+    "group_id",
+    "title",
+    "entity_type",
+    "entities",
+    "method_note"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "method_version": "uwp-beta-0.1",
+  "title": "Unternehmens-Wirkungsprofil Beta Scoring-Architektur",
+  "public_rule": "Keine echten Scores ohne belegte, versionierte Beobachtungen.",
+  "score_scale": "Interne WÖk-Wirkungsskala -3 bis +3; ergänzende 0-100-Darstellung nur für Website-Teilwerte.",
+  "minimum_rules": {
+    "minimum_coverage_for_overall_score": 0.6,
+    "minimum_dimension_coverage": 0.5,
+    "minimum_data_quality": "mittel",
+    "red_line_blocks_overall_score": true
+  },
+  "score_types": [
+    {
+      "id": "status_score",
+      "label": "Status-Score",
+      "question": "Wo steht das Unternehmen im aktuellen Datenjahr?"
+    },
+    {
+      "id": "trend_score",
+      "label": "Trend-Score",
+      "question": "Verbessert oder verschlechtert sich der Wert über mehrere Jahre?"
+    },
+    {
+      "id": "transformation_score",
+      "label": "Transformations-Score",
+      "question": "Verändert sich das Geschäftsmodell oder nur die Berichtstiefe?"
+    },
+    {
+      "id": "data_quality_score",
+      "label": "Datenqualitäts-Score",
+      "question": "Wie vollständig, geprüft, vergleichbar und maschinenlesbar sind die Daten?"
+    },
+    {
+      "id": "red_line_logic",
+      "label": "Rote-Linien-Logik",
+      "question": "Begrenzen schwere negative Wirkungen die Gesamtbewertung?"
+    }
+  ],
+  "polarity": [
+    "higher_is_better",
+    "lower_is_better",
+    "target_corridor",
+    "near_zero_better",
+    "binary_compliance",
+    "red_line_event",
+    "disclosure_quality"
+  ],
+  "reverse_merit_order": {
+    "rule": "Positive Werte in anderen Bereichen kompensieren rote Linien nicht automatisch. Das schwächste kritische Feld bestimmt die Obergrenze.",
+    "examples": [
+      "gute Klimaziele, aber schwere Menschenrechtskontroverse",
+      "hohe Diversität, aber massive Umweltverstöße",
+      "gute Governance-Berichte, aber aggressive Steuervermeidung",
+      "guter Scope-1/2-Trend, aber steigende Scope-3-Emissionen",
+      "starke Produktinnovation, aber toxisches Geschäftsmodell"
+    ]
+  },
+  "disclosure_to_impact_gap": {
+    "title": "Berichtet das Unternehmen besser - oder wirkt es besser?",
+    "logic": "Berichtsumfang, Datenqualität, Assurance und Framework-Abdeckung werden mit tatsächlichen Wirkungsindikatoren über die Zeit verglichen."
+  },
+  "data_quality_classes": [
+    {
+      "class": "A",
+      "meaning": "geprüfte, quellenverankerte Daten mit klarer Methodik"
+    },
+    {
+      "class": "B",
+      "meaning": "belastbare Unternehmensdaten mit guter Quelle, aber begrenzter Prüfung oder Vergleichbarkeit"
+    },
+    {
+      "class": "C",
+      "meaning": "brauchbare Daten mit methodischem Vorbehalt"
+    },
+    {
+      "class": "D",
+      "meaning": "Schätzung, Teilquelle oder Lücke; Rückfrage statt Befund"
+    },
+    {
+      "class": "E",
+      "meaning": "Datenlücke; kein Score im Kernfeld"
+    }
+  ],
+  "snapshot_pipeline": {
+    "principle": "Versionierte Snapshots statt Live-Scraping.",
+    "layers": [
+      "source",
+      "adapter",
+      "mapping",
+      "snapshot_writer"
+    ],
+    "rule": "Kein Wert ohne Herkunft. Fehlt eine Quelle, wird Datenqualität E geschrieben, nicht 0 und nicht geschätzt-als-ob-gemessen."
+  }
+}

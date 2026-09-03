@@ -1,0 +1,31 @@
+{
+  "schema_version": "woek-recommendation-canonical-sync-2.3",
+  "generated_at": "2026-08-19T07:39:05.145Z",
+  "canonical_root": "/WOEK",
+  "source_jsonl": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/GOVERNMENT-RECOMMENDATIONS-2026-08-18-PM-B02.jsonl",
+  "source_handoff": "/WOEK/WOEK-AUTOPILOT/CONTROL/RECOMMENDATION-BACKFILL-HANDOFF-2026-08-18-PM-B02-FINAL.json",
+  "source_sha256": "09ccbbca62875c2d5a837b357c1891a56418d3e425a9ee0bac11960b61cb909b",
+  "recommendation_schema_valid": "3/3",
+  "imported_or_idempotent": "3/3",
+  "public_recommendation_count": 6,
+  "ledger_completed_count": 9,
+  "ledger_remaining_backlog_count": 124,
+  "dispositions": [
+    {
+      "recommendation_id": "WOEK-REC-BUND-GRUNDSICHERUNG-2026-R1",
+      "status": "IDEMPOTENT"
+    },
+    {
+      "recommendation_id": "WOEK-REC-BUND-TARIFTREUE-2025-2026-R1",
+      "status": "IDEMPOTENT"
+    },
+    {
+      "recommendation_id": "WOEK-REC-BUND-SAFE-COUNTRY-REGULATION-2026-R1",
+      "status": "IDEMPOTENT"
+    }
+  ],
+  "CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS": true,
+  "ZIP_IS_NOT_CANONICAL_SOURCE": true,
+  "NO_HISTORY_OVERWRITTEN": true,
+  "production_impact": "NONE_STAGING_ONLY"
+}

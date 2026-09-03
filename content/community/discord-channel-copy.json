@@ -1,0 +1,247 @@
+{
+  "version": "2026-07-10",
+  "tone": "klar, warm, kurz, nicht technisch",
+  "messages": [
+    {
+      "channel": "willkommen",
+      "kind": "pinned",
+      "title": "Willkommen in der WÖk-Community",
+      "body": [
+        "Schön, dass du da bist.",
+        "",
+        "Dieser Discord ist der offene Austauschraum zur Wirkungsökonomie. Hier geht es um Fragen, Hinweise, Diskussion, Veröffentlichungen und gemeinsames Prüfen.",
+        "",
+        "Die Arbeit selbst ist klar verteilt:",
+        "- Website: verstehen, lesen, nachschlagen.",
+        "- Akademie: lernen, üben, Fortschritt speichern, prüfen, zertifizieren.",
+        "- Institut: Quellen, Forschung, Review und Mitwirkung.",
+        "- Discord: Community, Rückfragen, Feedback und Updates.",
+        "",
+        "Akademie-Zugang kann über Community-Beitritt oder LinkedIn-Freischaltung entstehen. Der Lernfortschritt liegt trotzdem immer in der Akademie.",
+        "",
+        "Wenn du neu bist, starte mit #bot-hilfe oder stelle deine Frage in #hilfe-und-fragen."
+      ]
+    },
+    {
+      "channel": "regeln",
+      "kind": "pinned",
+      "title": "Kurzregeln",
+      "body": [
+        "Wir halten es einfach:",
+        "",
+        "1. Sachlich bleiben.",
+        "2. Menschen nicht bewerten.",
+        "3. Quellen, Unsicherheit und Grenzen benennen.",
+        "4. Keine Rechts-, Steuer-, Finanz-, Anlage-, Gesundheits- oder Therapieberatung.",
+        "5. Keine Heilsversprechen.",
+        "6. Kritik ist willkommen. Abwertung nicht.",
+        "",
+        "Die Wirkungsökonomie bewertet Wirkungen, Entscheidungen, Strukturen und Systeme. Sie bewertet nicht den Wert von Menschen."
+      ]
+    },
+    {
+      "channel": "bot-hilfe",
+      "kind": "pinned",
+      "title": "Bots und schnelle Orientierung",
+      "body": [
+        "Die Bots helfen hier vor allem beim Sortieren.",
+        "",
+        "Was automatisch einlaufen kann:",
+        "- neue Journalartikel in #journal",
+        "- neue Bibliotheks- und Dossier-Einträge in #bibliothek",
+        "- Akademie-Hinweise in #akademie-updates",
+        "- Instituts- und Quellenupdates in #institut-updates",
+        "",
+        "Geplant für #frag-die-woek:",
+        "- kurze Begriffserklärungen",
+        "- Hinweise auf passende Glossar-, Bibliotheks- und Quellenarchivseiten",
+        "- erste Einordnung von Fragen nach Wirkung, Wirkungspotenzial und Wirkungsrisiko",
+        "",
+        "Wichtig: Bot-Antworten sind Orientierung. Sie sind keine finale WÖk-Bewertung und keine Beratung. Akademie-Fortschritt, Prüfungen und Zertifikate laufen nicht über Discord-Bots."
+      ]
+    },
+    {
+      "channel": "hilfe-und-fragen",
+      "kind": "pinned",
+      "title": "Wobei brauchst du Orientierung?",
+      "body": [
+        "Hier passen alle einfachen Fragen hin:",
+        "",
+        "- Wo finde ich etwas?",
+        "- Ist das Website, Akademie oder Institut?",
+        "- Wo melde ich Fehler?",
+        "- Wo gehören Quellenhinweise hin?",
+        "- Wie komme ich in die Akademie: Community oder LinkedIn?",
+        "- Wie starte ich mit der Wirkungsökonomie?",
+        "",
+        "Wenn es um eine konkrete Quelle, Seite oder Aussage geht, poste bitte den Link dazu."
+      ]
+    },
+    {
+      "channel": "ankuendigungen",
+      "kind": "pinned",
+      "title": "Ankündigungen",
+      "body": [
+        "Hier stehen nur wichtige Hinweise zur Community, zur Struktur und zu größeren Änderungen.",
+        "",
+        "Für neue Veröffentlichungen gibt es eigene Kanäle: #journal, #bibliothek, #akademie-updates und #institut-updates."
+      ]
+    },
+    {
+      "channel": "journal",
+      "kind": "pinned",
+      "title": "Journal",
+      "body": [
+        "Hier laufen neue Journalbeiträge ein.",
+        "",
+        "Das Journal ordnet aktuelle Entwicklungen nach der Frage ein: Welche Wirkung hat das auf Mensch, Planet und Demokratie?"
+      ]
+    },
+    {
+      "channel": "bibliothek",
+      "kind": "pinned",
+      "title": "Bibliothek",
+      "body": [
+        "Hier laufen neue Publikationen, Dossiers, Onlinefassungen und größere Bibliotheksupdates ein.",
+        "",
+        "Wenn du zu einer Quelle Hinweise hast, nutze #feedback oder das Quellenarchiv auf der Website."
+      ]
+    },
+    {
+      "channel": "akademie-updates",
+      "kind": "pinned",
+      "title": "Akademie-Updates",
+      "body": [
+        "Hier geht es um Lernen, Kurse, Vorlesungen, Prüfungen und Zertifikate.",
+        "",
+        "Zugang ist über Community-Beitritt oder LinkedIn-Freischaltung möglich. Wichtig: Discord speichert keine Lernstände und vergibt keine Prüfungsfreigaben. Der persönliche Studienraum liegt in der Akademie-Plattform."
+      ]
+    },
+    {
+      "channel": "institut-updates",
+      "kind": "pinned",
+      "title": "Institut-Updates",
+      "body": [
+        "Hier laufen öffentliche Hinweise aus dem Institut ein: Quellenarchiv, Review, Forschungsfelder und Mitwirkungsmöglichkeiten.",
+        "",
+        "Fachliche Review- und Rollenprozesse laufen im Institutsportal, nicht in Discord."
+      ]
+    },
+    {
+      "channel": "vorstellen",
+      "kind": "pinned",
+      "title": "Stell dich kurz vor",
+      "body": [
+        "Ein Satz reicht:",
+        "",
+        "- Wer bist du?",
+        "- Welches Wirkungsfeld interessiert dich?",
+        "- Was möchtest du verstehen, prüfen oder anwenden?"
+      ]
+    },
+    {
+      "channel": "allgemeiner-austausch",
+      "kind": "pinned",
+      "title": "Allgemeiner Austausch",
+      "body": [
+        "Der offene Raum für Gedanken, Fragen und Diskussion zur Wirkungsökonomie.",
+        "",
+        "Wenn ein Thema sehr konkret ist, nutze lieber einen Themenraum. Wenn du unsicher bist, poste es hier."
+      ]
+    },
+    {
+      "channel": "frag-die-woek",
+      "kind": "pinned",
+      "title": "Frag die WÖk",
+      "body": [
+        "Hier kannst du kurze Fragen stellen, zum Beispiel:",
+        "",
+        "- Was bedeutet positive Netto-Wirkung?",
+        "- Wie unterscheidet sich Wirkung von Wirkungspotenzial?",
+        "- Wo finde ich etwas zu Stranded Assets?",
+        "- Wie passt WÖMM zu WÖMS?",
+        "- Welche Quellen passen zu einem Thema?",
+        "",
+        "Gute Frageformel: Kontext + Frage + Quelle oder Beispiel.",
+        "",
+        "Antworten sind Orientierung, keine Rechts-, Steuer-, Finanz-, Gesundheits- oder Therapieberatung. Dein Akademie-Fortschritt wird dadurch nicht verändert."
+      ]
+    },
+    {
+      "channel": "feedback",
+      "kind": "pinned",
+      "title": "Feedback und Fehler",
+      "body": [
+        "Bitte poste möglichst konkret:",
+        "",
+        "- Link",
+        "- kurzer Befund",
+        "- was du erwartet hättest",
+        "- falls es um Quellen geht: Titel, Autor:in, Jahr und Link oder bibliografische Angabe",
+        "",
+        "Feedback ist Teil der Wirkungsökonomie: Das Modell soll prüfbar, korrigierbar und lernfähig bleiben."
+      ]
+    },
+    {
+      "channel": "wirkungsfelder",
+      "kind": "pinned",
+      "title": "Wirkungsfelder",
+      "body": [
+        "Hier geht es um Anwendung: Arbeit, Wohnen, Gesundheit, Finanzsystem, Medien, Staat, Bildung, Energie, Unternehmen und weitere Felder.",
+        "",
+        "Bitte möglichst konkret bleiben: Welches Feld, welche Entscheidung, welche Wirkung, welche Quelle?"
+      ]
+    },
+    {
+      "channel": "management-woemm-woems",
+      "kind": "pinned",
+      "title": "WÖMM und WÖMS",
+      "body": [
+        "Hier geht es um das Wirkungsökonomische Managementmodell und das Methodensystem.",
+        "",
+        "Kurz gesagt:",
+        "- WÖMM hilft, Organisationen nach Wirkung zu führen.",
+        "- WÖMS liefert Methoden, Canvas und Vorgehen für die Anwendung.",
+        "",
+        "Detailtiefe gehört in Akademie, Fortbildung oder Coach-Track. Hier geht es um Verständnis, Fragen und Praxisideen."
+      ]
+    },
+    {
+      "channel": "mensch-und-wirkung",
+      "kind": "pinned",
+      "title": "Mensch & Wirkung",
+      "body": [
+        "Dieser Raum ist für Wirkungspsychologie, Wirkungspraxis und säkulare Lebenspraxis.",
+        "",
+        "Rote Linien:",
+        "- keine Diagnosen",
+        "- keine Therapie",
+        "- keine Heilsversprechen",
+        "- keine Bewertung von Menschen",
+        "- keine Krisenhilfe",
+        "",
+        "Es geht um Sprache, Reflexion, Alltag, Resonanz, Selbststeuerung und Wirkung im Leben."
+      ]
+    },
+    {
+      "channel": "medien-und-sprache",
+      "kind": "pinned",
+      "title": "Medien und Sprache",
+      "body": [
+        "Hier geht es um Frames, Narrative, Faktenchecks, Öffentlichkeit und die Wirkung von Worten.",
+        "",
+        "Wichtig: Reichweite ist nicht Wirkung. Wiederholung kann Frames verstärken. Gute Kommunikation prüft auch Nebenwirkungen."
+      ]
+    },
+    {
+      "channel": "termine",
+      "kind": "pinned",
+      "title": "Termine",
+      "body": [
+        "Hier stehen Community-Termine, Sprechstunden, Workshops und Akademie-Hinweise.",
+        "",
+        "Diskussionen zu Terminen bitte in #hilfe-und-fragen oder im jeweiligen Themenraum."
+      ]
+    }
+  ]
+}

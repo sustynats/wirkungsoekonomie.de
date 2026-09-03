@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/woek-recommendation-version-2.3.schema.json",
+  "title": "WÖk RecommendationVersion 2.3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record", "valid_from", "recorded_at"],
+  "properties": {
+    "record": { "$ref": "woek-recommendation-record-2.3.schema.json" },
+    "valid_from": { "type": "string", "format": "date-time" },
+    "recorded_at": { "type": "string", "format": "date-time" }
+  }
+}

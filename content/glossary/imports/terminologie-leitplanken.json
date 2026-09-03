@@ -1,0 +1,86 @@
+{
+  "terms": [
+    {
+      "id": "reporting",
+      "termId": "reporting",
+      "slug": "reporting",
+      "label": "Reporting",
+      "canonicalLabel": "Reporting",
+      "aliases": ["Reporting", "Wirkungsreporting", "Impact Reporting"],
+      "synonyms": ["Reporting", "Wirkungsreporting", "Impact Reporting"],
+      "shortDefinition": "Reporting dokumentiert Informationen, Annahmen und Messwerte. Es ist weder Wirkung noch Wirkungsrückkopplung.",
+      "hoverDefinition": "Reporting macht Informationen nachvollziehbar. Erst ein prüfbarer Lern- und Entscheidungsprozess macht daraus Wirkungsrückkopplung.",
+      "definition": "Reporting bezeichnet die strukturierte Offenlegung oder Dokumentation von Daten, Methoden, Annahmen, Ergebnissen und Unsicherheiten. Ein Bericht kann eine wichtige Grundlage für Wirkungsbewertung und Lernen sein. Er beweist aber weder eine eingetretene Zustandsveränderung noch löst er selbst eine Entscheidung aus.",
+      "longDefinition": "Reporting bezeichnet die strukturierte Offenlegung oder Dokumentation von Daten, Methoden, Annahmen, Ergebnissen und Unsicherheiten. Ein Bericht kann eine wichtige Grundlage für Wirkungsbewertung und Lernen sein. Er beweist aber weder eine eingetretene Zustandsveränderung noch löst er selbst eine Entscheidung aus. Wirkungsrückkopplung entsteht erst, wenn ein nachvollziehbarer Befund gegen einen Referenzrahmen geprüft wird und eine zuständige Stelle daraus eine begründete, überprüfbare Folgeentscheidung ableitet.",
+      "woekRelation": "In der Wirkungsökonomie liefert Reporting eine Informationsgrundlage. Wirkungsbewertung ordnet die Evidenz ein; Wirkungslenkung legt Ziele, Schutzgrenzen und Instrumente fest; Wirkungsrückkopplung führt geprüfte Beobachtungen und Unsicherheit in die nächste Entscheidung zurück. Kein Bericht ersetzt diese Schritte.",
+      "usageNote": "Reporting nur für Dokumentation und Offenlegung verwenden. Bei einer behaupteten Zustandsveränderung zusätzlich Wirkungspfad, Vergleichsmaßstab, Datenqualität, Unsicherheit und gegebenenfalls eine Rückkopplungsentscheidung benennen.",
+      "doNotConfuseWith": [
+        "Wirkung: tatsächliche Zustandsveränderung, nicht ihre Beschreibung.",
+        "Wirkungsbewertung: begründete Einordnung von Daten und Befunden.",
+        "Wirkungsrückkopplung: Lern- und Korrekturprozess zwischen geprüftem Befund und späterer Entscheidung.",
+        "Wirkungslenkung: legitimierte Festlegung von Zielen, Schutzgrenzen, Prioritäten und Instrumenten."
+      ],
+      "examples": [
+        "Ein Nachhaltigkeitsbericht dokumentiert Emissionen, Methoden und Datenlücken. Das ist Reporting, noch kein Wirkungsnachweis.",
+        "Ein Evaluationsbericht zeigt eine gemessene Veränderung gegenüber einer Baseline. Erst die begründete Entscheidung, ein Programm anzupassen, schließt eine Rückkopplung.",
+        "Ein Unternehmen veröffentlicht seine Annahmen und korrigiert eine Kennzahl. Die Transparenz verbessert die Prüfbarkeit, ersetzt aber keine Wirkungsbewertung."
+      ],
+      "relatedTerms": ["berichtsdaten", "wirkungsdaten", "wirkungsbewertung", "wirkungslenkung", "wirkungsrueckkopplung", "datenqualitaet", "wirkung", "wirkungspotenzial"],
+      "officialSources": [
+        "Corporate Sustainability Reporting Directive (CSRD) – Richtlinie (EU) 2022/2464|/quellenarchiv/wok-q-0029/",
+        "European Sustainability Reporting Standards (Delegated Regulation (EU) 2023/2772)|/quellenarchiv/wok-q-0925/",
+        "GRI Standards|/quellenarchiv/wok-q-0939/"
+      ],
+      "sourceProvenance": "Die Quellen belegen Berichts- und Offenlegungsstandards. Die WÖk-Definition trennt Bericht, Wirkung, Bewertung, Lenkung und Rückkopplung und ordnet sie mit diesen Standards ein.",
+      "category": "Daten- und Prüfbegriff",
+      "type": "Anschlussbegriff",
+      "status": "approved",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": false
+    },
+    {
+      "id": "personenbewertung",
+      "termId": "personenbewertung",
+      "slug": "personenbewertung",
+      "label": "Personenbewertung",
+      "canonicalLabel": "Personenbewertung",
+      "aliases": ["Personenbewertung", "Personenscore", "Verhaltensscore"],
+      "synonyms": ["Personenbewertung", "Personenscore", "Verhaltensscore"],
+      "shortDefinition": "Personenbewertung ordnet einzelne Menschen nach Verhalten, Merkmalen, Ansichten oder vermuteter Konformität ein. Sie ist kein Instrument der Wirkungsökonomie.",
+      "hoverDefinition": "Die Wirkungsökonomie bewertet keine Menschen, Gesinnungen oder Lebensstile. Sie prüft Wirkungen von Regeln, Produkten, Organisationen und Programmen.",
+      "definition": "Personenbewertung ist die Bewertung, Rangordnung oder Zuordnung einzelner Menschen anhand von Verhalten, persönlichen Merkmalen, Ansichten, Beziehungen oder vermuteter Loyalität. Sie wird besonders problematisch, wenn daraus automatisierte Nachteile, Zugangshürden, Überwachung oder soziale Sanktionen folgen. Die Wirkungsökonomie verwendet keine Personen-, Gesinnungs- oder Verhaltensscores.",
+      "longDefinition": "Personenbewertung ist die Bewertung, Rangordnung oder Zuordnung einzelner Menschen anhand von Verhalten, persönlichen Merkmalen, Ansichten, Beziehungen oder vermuteter Loyalität. Sie wird besonders problematisch, wenn daraus automatisierte Nachteile, Zugangshürden, Überwachung oder soziale Sanktionen folgen. Die Wirkungsökonomie verwendet keine Personen-, Gesinnungs- oder Verhaltensscores. Ihr Gegenstand sind überprüfbare Wirkungen und Risiken von Produkten, Tätigkeiten, Organisationen, Programmen, Regeln, Haushalten und Kapitalflüssen. Grundrechte, Datenschutz, Verhältnismäßigkeit, Rechtsschutz und demokratische Kontrolle begrenzen jede daten- oder regelgestützte Entscheidung.",
+      "woekRelation": "Die WÖk ist weder ein Social-Credit-System noch eine moralische Rangliste. Wirkungsbewertung kann Folgen von Handlungen und Strukturen prüfen, aber niemals den Wert, die Würde oder die politische Haltung einer Person bewerten.",
+      "usageNote": "Bei Modellen zu Punkten, Boni, Konsum, Einkommen, Medien oder Datenräumen stets klarstellen, dass nur Produkte, Transaktionen, Regeln oder aggregierte Systemzustände geprüft werden. Personenbezogene Daten nur mit Rechtsgrundlage, Zweckbindung, Datenminimierung, Einspruch und wirksamem Rechtsschutz verwenden.",
+      "doNotConfuseWith": [
+        "Wirkungsbewertung: prüft Folgen von Strukturen und Entscheidungen, nicht Menschen.",
+        "Produkt- oder Organisationsbewertung: bezieht sich auf einen klaren Gegenstand und einen Wirkungsraum, nicht auf den moralischen Wert von Personen.",
+        "Social Credit: umfassende Form einer Personen- und Verhaltensbewertung mit möglichen sozialen Folgen.",
+        "Statistik: darf keine individuelle Rangordnung oder automatisierte Benachteiligung verdecken."
+      ],
+      "examples": [
+        "Eine Produktscorecard beschreibt Material-, Gesundheits- und Klimarisiken eines Produkts. Sie bewertet nicht die Menschen, die es kaufen.",
+        "Ein Förderprogramm veröffentlicht Kriterien und einen Einspruchsweg für Organisationen. Es vergibt keinen Verhaltensscore an Bürgerinnen und Bürger.",
+        "Eine Kennzahl wird nur aggregiert veröffentlicht, damit einzelne Menschen nicht rückwirkend bewertet oder benachteiligt werden können."
+      ],
+      "relatedTerms": ["social-credit", "wirkungspunkte", "wirkungslenkung", "wirkungsrueckkopplung", "wirkungsarchitektur", "datenschutz", "grundrechte", "verhaeltnismaessigkeit", "rechtsschutz"],
+      "officialSources": [
+        "EU-Grundrechtecharta|/quellenarchiv/wok-q-0306/",
+        "General Data Protection Regulation / GDPR|/quellenarchiv/wok-q-0556/",
+        "Congressional Research Service: China's Corporate Social Credit System|/quellenarchiv/wok-q-0573/"
+      ],
+      "sourceProvenance": "Grundrechte- und Datenschutzquellen markieren rechtliche Schutzlinien. Die Social-Credit-Quelle dient der begrifflichen Einordnung; die WÖk-Abgrenzung ist eine eigene Modellschutzlinie.",
+      "category": "Schutzbegriff",
+      "type": "Schutzbegriff",
+      "status": "approved",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": false
+    }
+  ]
+}

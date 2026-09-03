@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.3",
+  "reconciliation_id": "WOEK-WORK-RECONCILIATION-2.3-REMEDIATED-2026-08-18",
+  "generated_at": "2026-08-18T10:20:00Z",
+  "status": "PASS",
+  "artifacts": [
+    {
+      "name": "CODEX-WORK-RECONCILIATION-2.3-SUMMARY.json",
+      "sha256": "7f1a642848e4b632a5a95d64fa9449e3e0f3c903c038d195672e51141acb8328"
+    },
+    {
+      "name": "CODEX-WORK-RECONCILIATION-2.3-TASKS.jsonl",
+      "sha256": "a144f3fb64a007ec78750c0c2befaaf253efc5812551568fc6a575c3ef9074a4"
+    },
+    {
+      "name": "CODEX-WORK-RECONCILIATION-2.3-GAPS.jsonl",
+      "sha256": "aa74dc498e9a7aa186a20a0f1c150d06554e409535c154860e18deb0bb169476"
+    },
+    {
+      "name": "CODEX-WORK-RECONCILIATION-2.3-REPORT.md",
+      "sha256": "15ef53f834fb50e431eb2244c07eb455645fb5e68d00cc34c756a38541be9b7e"
+    }
+  ]
+}

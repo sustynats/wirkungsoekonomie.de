@@ -1,0 +1,594 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-AFD-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "EFFECT_ATOMS",
+  "page_from": 97,
+  "page_to": 99,
+  "records": [
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A01",
+      "atom_id": "BE-AFD-2026-SU-0127-A01",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "eine transparente Darstellung der Haushaltswirkungen.",
+      "source_sentence_normalized": "eine transparente Darstellung der Haushaltswirkungen.",
+      "source_sentence_sha256": "3013a157ff8d4ade77c6e9d533c2721a4506300ad7d4295f283d7157fcf72a78",
+      "policy_action": "eine transparente Darstellung der Haushaltswirkungen.",
+      "policy_action_sha256": "3013a157ff8d4ade77c6e9d533c2721a4506300ad7d4295f283d7157fcf72a78",
+      "source_text_sha256": "3013a157ff8d4ade77c6e9d533c2721a4506300ad7d4295f283d7157fcf72a78",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "PUBLIC_FINANCE_FUNDING",
+      "missing_review_inputs": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "PUBLIC_FINANCE_FUNDING_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A01 (`eine transparente Darstellung der Haushaltswirkungen.`) is terminally not assessable after individual object-level review: this PUBLIC_FINANCE_FUNDING object does not specify or bind amount_period_and_funding_source, additionality_and_opportunity_cost, allocation_and_eligibility_rules, delivery_capacity_and_timeline, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A02",
+      "atom_id": "BE-AFD-2026-SU-0127-A02",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Politik muss bezahlbar bleiben.",
+      "source_sentence_normalized": "Politik muss bezahlbar bleiben.",
+      "source_sentence_sha256": "579f9bd63f13382e0690eb00a101fc05e3176cb3a3e5d6f0d106490ab6dc4235",
+      "policy_action": "Politik muss bezahlbar bleiben.",
+      "policy_action_sha256": "579f9bd63f13382e0690eb00a101fc05e3176cb3a3e5d6f0d106490ab6dc4235",
+      "source_text_sha256": "579f9bd63f13382e0690eb00a101fc05e3176cb3a3e5d6f0d106490ab6dc4235",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A02 (`Politik muss bezahlbar bleiben.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A03",
+      "atom_id": "BE-AFD-2026-SU-0127-A03",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Berlin braucht hier Regelbindung, Transparenz und einen klaren Abbaupfad.",
+      "source_sentence_normalized": "Berlin braucht hier Regelbindung, Transparenz und einen klaren Abbaupfad.",
+      "source_sentence_sha256": "5af32bba3123bfd5d5f6ddce725f8d87e0cc5c4e7945d93cf73c9331a8da9135",
+      "policy_action": "Berlin braucht hier Regelbindung, Transparenz und einen klaren Abbaupfad.",
+      "policy_action_sha256": "5af32bba3123bfd5d5f6ddce725f8d87e0cc5c4e7945d93cf73c9331a8da9135",
+      "source_text_sha256": "5af32bba3123bfd5d5f6ddce725f8d87e0cc5c4e7945d93cf73c9331a8da9135",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GOVERNANCE_PROCESS",
+      "missing_review_inputs": [
+        "defined_decision_output_and_trigger",
+        "responsible_actor_and_competence",
+        "implementation_timeline_and_resources",
+        "operational_affected_system",
+        "process_performance_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GOVERNANCE_PROCESS_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A03 (`Berlin braucht hier Regelbindung, Transparenz und einen klaren Abbaupfad.`) is terminally not assessable after individual object-level review: this GOVERNANCE_PROCESS object does not specify or bind defined_decision_output_and_trigger, responsible_actor_and_competence, implementation_timeline_and_resources, operational_affected_system, process_performance_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A04",
+      "atom_id": "BE-AFD-2026-SU-0127-A04",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Wir fordern ein regelmäßiges, transparentes Monitoring der impliziten Schulden:",
+      "source_sentence_normalized": "Wir fordern ein regelmäßiges, transparentes Monitoring der impliziten Schulden:",
+      "source_sentence_sha256": "b5221f89e44d7f6082950a15643709e4772953885aad6bdafb8ee8974df88d55",
+      "policy_action": "Wir fordern ein regelmäßiges, transparentes Monitoring der impliziten Schulden:",
+      "policy_action_sha256": "b5221f89e44d7f6082950a15643709e4772953885aad6bdafb8ee8974df88d55",
+      "source_text_sha256": "b5221f89e44d7f6082950a15643709e4772953885aad6bdafb8ee8974df88d55",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A04 (`Wir fordern ein regelmäßiges, transparentes Monitoring der impliziten Schulden:`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A05",
+      "atom_id": "BE-AFD-2026-SU-0127-A05",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Pensionslasten regelmäßig ermitteln und aktualisieren;",
+      "source_sentence_normalized": "Pensionslasten regelmäßig ermitteln und aktualisieren;",
+      "source_sentence_sha256": "dcd711b3bc600375ef8dbf1c6c0a86321b9d3c93dc6f8ce3419e7c2102ae2cb2",
+      "policy_action": "Pensionslasten regelmäßig ermitteln und aktualisieren",
+      "policy_action_sha256": "b99a81a36eee38f87931352711c57d9d1032820705c2be1e12b7e4eb574e6db0",
+      "source_text_sha256": "dcd711b3bc600375ef8dbf1c6c0a86321b9d3c93dc6f8ce3419e7c2102ae2cb2",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A05 (`Pensionslasten regelmäßig ermitteln und aktualisieren`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A06",
+      "atom_id": "BE-AFD-2026-SU-0127-A06",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "angemessene Rücklagen bilden.",
+      "source_sentence_normalized": "angemessene Rücklagen bilden.",
+      "source_sentence_sha256": "500bf14e73bc8dee6a5e47b0075454fb69e19636dbe18d3cf9ba3e48ad3ab955",
+      "policy_action": "angemessene Rücklagen bilden.",
+      "policy_action_sha256": "500bf14e73bc8dee6a5e47b0075454fb69e19636dbe18d3cf9ba3e48ad3ab955",
+      "source_text_sha256": "500bf14e73bc8dee6a5e47b0075454fb69e19636dbe18d3cf9ba3e48ad3ab955",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A06 (`angemessene Rücklagen bilden.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A07",
+      "atom_id": "BE-AFD-2026-SU-0127-A07",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Wer Generationengerechtigkeit ernst nimmt, muss implizite Schulden genauso behandeln wie explizite.",
+      "source_sentence_normalized": "Wer Generationengerechtigkeit ernst nimmt, muss implizite Schulden genauso behandeln wie explizite.",
+      "source_sentence_sha256": "76222ef28fce8eda2912c45ea0c2f6d5eaffc3303df6b4a715c4e7ea8fad4aa6",
+      "policy_action": "Wer Generationengerechtigkeit ernst nimmt, muss implizite Schulden genauso behandeln wie explizite.",
+      "policy_action_sha256": "76222ef28fce8eda2912c45ea0c2f6d5eaffc3303df6b4a715c4e7ea8fad4aa6",
+      "source_text_sha256": "76222ef28fce8eda2912c45ea0c2f6d5eaffc3303df6b4a715c4e7ea8fad4aa6",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A07 (`Wer Generationengerechtigkeit ernst nimmt, muss implizite Schulden genauso behandeln wie explizite.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A08",
+      "atom_id": "BE-AFD-2026-SU-0127-A08",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Haushaltsausgleich in vier Jahren, danach Schuldenabbau Die Berliner Haushaltspolitik muss wieder auf Stabilität ausgerichtet werden.",
+      "source_sentence_normalized": "Haushaltsausgleich in vier Jahren, danach Schuldenabbau Die Berliner Haushaltspolitik muss wieder auf Stabilität ausgerichtet werden.",
+      "source_sentence_sha256": "a8c95e343ddb43141d6b8a43a8be7b511cf278bd7672b42411d5a162d730eaf6",
+      "policy_action": "Haushaltsausgleich in vier Jahren, danach Schuldenabbau Die Berliner Haushaltspolitik muss wieder auf Stabilität ausgerichtet werden.",
+      "policy_action_sha256": "a8c95e343ddb43141d6b8a43a8be7b511cf278bd7672b42411d5a162d730eaf6",
+      "source_text_sha256": "a8c95e343ddb43141d6b8a43a8be7b511cf278bd7672b42411d5a162d730eaf6",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A08 (`Haushaltsausgleich in vier Jahren, danach Schuldenabbau Die Berliner Haushaltspolitik muss wieder auf Stabilität ausgerichtet werden.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A09",
+      "atom_id": "BE-AFD-2026-SU-0127-A09",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Innerhalb von vier Jahren einen Haushaltsausgleich ohne Haushaltsdefizit zu erreichen;",
+      "source_sentence_normalized": "Innerhalb von vier Jahren einen Haushaltsausgleich ohne Haushaltsdefizit zu erreichen;",
+      "source_sentence_sha256": "afb1c4c2633cb340fb478ac379c3947417dff995284829a41416a46da7c319b8",
+      "policy_action": "Innerhalb von vier Jahren einen Haushaltsausgleich ohne Haushaltsdefizit zu erreichen",
+      "policy_action_sha256": "419e30bdb8ad94948d71b6ea1a979c69b69f12bde523d485671bda6706d50e25",
+      "source_text_sha256": "afb1c4c2633cb340fb478ac379c3947417dff995284829a41416a46da7c319b8",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "PUBLIC_FINANCE_FUNDING",
+      "missing_review_inputs": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "PUBLIC_FINANCE_FUNDING_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A09 (`Innerhalb von vier Jahren einen Haushaltsausgleich ohne Haushaltsdefizit zu erreichen`) is terminally not assessable after individual object-level review: this PUBLIC_FINANCE_FUNDING object does not specify or bind amount_period_and_funding_source, additionality_and_opportunity_cost, allocation_and_eligibility_rules, delivery_capacity_and_timeline, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A10",
+      "atom_id": "BE-AFD-2026-SU-0127-A10",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "anschließend Verbindlichkeiten systematisch abzubauen;",
+      "source_sentence_normalized": "anschließend Verbindlichkeiten systematisch abzubauen;",
+      "source_sentence_sha256": "a5f737d54280a9c2752f60b31a6cbc20f17f8c6f1ca86860f2f6f26b9d9458d4",
+      "policy_action": "anschließend Verbindlichkeiten systematisch abzubauen",
+      "policy_action_sha256": "bb3a1f9522b647dbba33999ae8798612bf5916b210358ac39e5f587daf94f05d",
+      "source_text_sha256": "a5f737d54280a9c2752f60b31a6cbc20f17f8c6f1ca86860f2f6f26b9d9458d4",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "HOUSING_LAND_USE",
+      "missing_review_inputs": [
+        "units_tenure_price_location_and_timing",
+        "planning_approval_and_competence_route",
+        "capital_and_operating_finance",
+        "eligible_or_affected_households",
+        "housing_market_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "HOUSING_LAND_USE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A10 (`anschließend Verbindlichkeiten systematisch abzubauen`) is terminally not assessable after individual object-level review: this HOUSING_LAND_USE object does not specify or bind units_tenure_price_location_and_timing, planning_approval_and_competence_route, capital_and_operating_finance, eligible_or_affected_households, housing_market_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A11",
+      "atom_id": "BE-AFD-2026-SU-0127-A11",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Entlastungen und Steuersenkungen nur auf Grundlage solider Haushalte umzusetzen.",
+      "source_sentence_normalized": "Entlastungen und Steuersenkungen nur auf Grundlage solider Haushalte umzusetzen.",
+      "source_sentence_sha256": "f421371d618c1fe076a1800a31bfea345fb86a84d20b6f7d94c2a8e01783fb11",
+      "policy_action": "Entlastungen und Steuersenkungen nur auf Grundlage solider Haushalte umzusetzen.",
+      "policy_action_sha256": "f421371d618c1fe076a1800a31bfea345fb86a84d20b6f7d94c2a8e01783fb11",
+      "source_text_sha256": "f421371d618c1fe076a1800a31bfea345fb86a84d20b6f7d94c2a8e01783fb11",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": true,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "TAX_FEE_PRICE_INSTRUMENT",
+      "missing_review_inputs": [
+        "tax_fee_or_price_base_rate_and_exemptions",
+        "competence_and_legal_basis",
+        "incidence_and_distribution_scope",
+        "revenue_use_or_financing_interaction",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "TAX_FEE_PRICE_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A11 (`Entlastungen und Steuersenkungen nur auf Grundlage solider Haushalte umzusetzen.`) is terminally not assessable after individual object-level review: this TAX_FEE_PRICE_INSTRUMENT object does not specify or bind tax_fee_or_price_base_rate_and_exemptions, competence_and_legal_basis, incidence_and_distribution_scope, revenue_use_or_financing_interaction, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A12",
+      "atom_id": "BE-AFD-2026-SU-0127-A12",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Ein tragfähiger Haushalt ist die Voraussetzung, um Bürger und Wirtschaft dauerhaft zu entlasten, ohne neue Risiken zu schaffen.",
+      "source_sentence_normalized": "Ein tragfähiger Haushalt ist die Voraussetzung, um Bürger und Wirtschaft dauerhaft zu entlasten, ohne neue Risiken zu schaffen.",
+      "source_sentence_sha256": "f079928614b54323e9b92ad32b68839952a7d922aab0ad26d1c5356d9e800cb5",
+      "policy_action": "Ein tragfähiger Haushalt ist die Voraussetzung, um Bürger und Wirtschaft dauerhaft zu entlasten, ohne neue Risiken zu schaffen.",
+      "policy_action_sha256": "f079928614b54323e9b92ad32b68839952a7d922aab0ad26d1c5356d9e800cb5",
+      "source_text_sha256": "f079928614b54323e9b92ad32b68839952a7d922aab0ad26d1c5356d9e800cb5",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "PUBLIC_FINANCE_FUNDING",
+      "missing_review_inputs": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "PUBLIC_FINANCE_FUNDING_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A12 (`Ein tragfähiger Haushalt ist die Voraussetzung, um Bürger und Wirtschaft dauerhaft zu entlasten, ohne neue Risiken zu schaffen.`) is terminally not assessable after individual object-level review: this PUBLIC_FINANCE_FUNDING object does not specify or bind amount_period_and_funding_source, additionality_and_opportunity_cost, allocation_and_eligibility_rules, delivery_capacity_and_timeline, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0127-A13",
+      "atom_id": "BE-AFD-2026-SU-0127-A13",
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "Berlin braucht eine Standortpolitik, die Haushaltsdisziplin, investive Schwerpunktsetzung und Entlastung verbindet – nicht durch Verschiebung von Lasten, sondern durch Prioritätensetzung, Effizienz und Transparenz.",
+      "source_sentence_normalized": "Berlin braucht eine Standortpolitik, die Haushaltsdisziplin, investive Schwerpunktsetzung und Entlastung verbindet – nicht durch Verschiebung von Lasten, sondern durch Prioritätensetzung, Effizienz und Transparenz.",
+      "source_sentence_sha256": "b4a2a879c9c0ab7fd622adc0079d13d9850d952c10b37da3c2c78b8ac2707a67",
+      "policy_action": "Berlin braucht eine Standortpolitik, die Haushaltsdisziplin, investive Schwerpunktsetzung und Entlastung verbindet – nicht durch Verschiebung von Lasten, sondern durch Prioritätensetzung, Effizienz und Transparenz.",
+      "policy_action_sha256": "b4a2a879c9c0ab7fd622adc0079d13d9850d952c10b37da3c2c78b8ac2707a67",
+      "source_text_sha256": "b4a2a879c9c0ab7fd622adc0079d13d9850d952c10b37da3c2c78b8ac2707a67",
+      "source_parent_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "PUBLIC_FINANCE_FUNDING",
+      "missing_review_inputs": [
+        "amount_period_and_funding_source",
+        "additionality_and_opportunity_cost",
+        "allocation_and_eligibility_rules",
+        "delivery_capacity_and_timeline",
+        "baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "PUBLIC_FINANCE_FUNDING_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0127-A13 (`Berlin braucht eine Standortpolitik, die Haushaltsdisziplin, investive Schwerpunktsetzung und Entlastung verbindet – nicht durch Verschiebung von Lasten, sondern durch Prioritätensetzung, Effizienz und Transparenz.`) is terminally not assessable after individual object-level review: this PUBLIC_FINANCE_FUNDING object does not specify or bind amount_period_and_funding_source, additionality_and_opportunity_cost, allocation_and_eligibility_rules, delivery_capacity_and_timeline, baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+name: AfD final union audit
+
+on:
+  push:
+    branches:
+      - 'release/st-afd-a43-clean-20260822'
+    paths:
+      - 'content/audits/sachsen-anhalt/afd-final-union-manifest-a43.json'
+      - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-afd-zusagen.md'
+      - 'tools/validate_afd_final_union_a43.py'
+      - '.github/workflows/afd-final-union-audit.yml'
+  pull_request:
+    paths:
+      - 'content/audits/sachsen-anhalt/afd-final-union-manifest-a43.json'
+      - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-afd-zusagen.md'
+      - 'tools/validate_afd_final_union_a43.py'
+      - '.github/workflows/afd-final-union-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-frozen-a43:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate frozen ST-AfD A43 final union
+        run: python tools/validate_afd_final_union_a43.py

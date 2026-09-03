@@ -1,0 +1,138 @@
+/*
+ * Wirkungsportal Parlament — Design-Tokens
+ * Version 1.0.0 · Stand 2026-08-15
+ *
+ * Dies ist die verbindliche Quelle für Farb-, Typografie-, Abstand- und
+ * Geometriewerte. Komponenten verwenden ausschließlich diese Tokens oder
+ * die in globals.css dokumentierten Kompatibilitätsaliase.
+ */
+
+:root {
+  /* Flächen */
+  --farbe-flaeche-basis: #f6f1e8;
+  --farbe-flaeche-karte: #ffffff;
+  --farbe-flaeche-warm: #fdfbf7;
+  --farbe-flaeche-buehne: #132133;
+  --farbe-flaeche-tief: #0b1020;
+
+  /* Text */
+  --farbe-text: #1b2431;
+  --farbe-text-sekundaer: #5b6675;
+  --farbe-text-akzent: #7d5f1e;
+  --farbe-text-link: #175646;
+  --farbe-text-link-hover: #1f6f5c;
+  --farbe-text-invers: #e7ebf0;
+  --farbe-text-invers-weich: #c3ccd8;
+  --farbe-text-invers-akzent: #c8a24a;
+
+  /* Aktionen, Linien, Status und Fokus */
+  --farbe-aktion: #c8a24a;
+  --farbe-aktion-text: #20180a;
+  --farbe-aktion-hover: #b8913c;
+  --farbe-aktion-zweit: #175646;
+  --farbe-aktion-zweit-text: #ffffff;
+  --farbe-linie: #e4ddd1;
+  --farbe-linie-weich: #ede8df;
+  --farbe-linie-invers: #2a3b52;
+  --farbe-status-neutral: #9aa3ae;
+  --farbe-status-positiv: #1f6f5c;
+  --farbe-status-negativ: #a54537;
+  --farbe-status-ambivalent: #825f2d;
+  --farbe-status-bedingt: #c8a24a;
+  --farbe-status-offen: #7a8798;
+  --farbe-fokus: #1f6f5c;
+  --farbe-fokus-invers: #c8a24a;
+
+  /* Typografie */
+  --schrift-display: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --schrift-text: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --groesse-h1: clamp(2rem, 3.4vw, 3rem);
+  --groesse-h2: clamp(1.5rem, 2.2vw, 2rem);
+  --groesse-h3: 1.375rem;
+  --groesse-h4: 1.1875rem;
+  --groesse-fliess: 1.1875rem;
+  --groesse-klein: 1rem;
+  --groesse-label: .8125rem;
+  --groesse-h1-lang: clamp(1.5rem, 2.4vw, 2.1rem);
+  --zeilenhoehe-eng: 1.15;
+  --zeilenhoehe-normal: 1.35;
+  --zeilenhoehe-text: 1.62;
+  --schriftstaerke-normal: 400;
+  --schriftstaerke-halb: 600;
+  --schriftstaerke-fett: 700;
+  --laufweite-display: -.015em;
+  --laufweite-label: .14em;
+
+  /* Lesbarkeit und Raster */
+  --textbreite-min: 45ch;
+  --textbreite-ideal: 65ch;
+  --textbreite-max: 75ch;
+  --textbreite-lead: 56ch;
+  --abstand-2xs: .25rem;
+  --abstand-xs: .5rem;
+  --abstand-s: .75rem;
+  --abstand-m: 1rem;
+  --abstand-l: 1.5rem;
+  --abstand-xl: 2rem;
+  --abstand-2xl: 3rem;
+  --abstand-3xl: 4rem;
+  --abstand-sektion: clamp(2.75rem, 5vw, 4.5rem);
+  --abstand-raster: 1.25rem;
+  --radius-buehne: 20px;
+  --radius-karte: 12px;
+  --radius-klein: 8px;
+  --radius-pille: 999px;
+  --breite-inhalt: 1180px;
+  --breite-schmal: 860px;
+  --rahmen-staerke: 1px;
+  --rahmen-staerke-kraeftig: 3px;
+  --tippziel-min: 44px;
+  --tippziel-abstand: 8px;
+  --fokus-staerke: 2px;
+  --fokus-abstand: 2px;
+  --spalten-kachel-min: 300px;
+  --spalten-karte-min: 290px;
+  --spalten-max: 3;
+  --stufe-mobil: 640px;
+  --stufe-tablet: 880px;
+  --stufe-desktop: 1180px;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--farbe-flaeche-basis);
+  color: var(--farbe-text);
+  font-family: var(--schrift-text);
+  font-size: var(--groesse-fliess);
+  line-height: var(--zeilenhoehe-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  color: var(--farbe-flaeche-buehne);
+  font-family: var(--schrift-display);
+  font-weight: var(--schriftstaerke-fett);
+  line-height: var(--zeilenhoehe-eng);
+  letter-spacing: var(--laufweite-display);
+}
+
+h1 { max-width: 17ch; font-size: var(--groesse-h1); }
+h2 { max-width: 24ch; font-size: var(--groesse-h2); }
+h3 { font-size: var(--groesse-h3); line-height: var(--zeilenhoehe-normal); }
+h4 { font-size: var(--groesse-h4); line-height: var(--zeilenhoehe-normal); }
+h1.ist-langtitel { max-width: 26ch; font-size: var(--groesse-h1-lang); line-height: 1.2; }
+
+p, li, dd { max-width: var(--textbreite-ideal); }
+a { color: var(--farbe-text-link); text-underline-offset: 3px; }
+a:hover { color: var(--farbe-text-link-hover); }
+:focus-visible { outline: var(--fokus-staerke) solid var(--farbe-fokus); outline-offset: var(--fokus-abstand); }
+button, [role="button"], summary, .btn, input, select { min-height: var(--tippziel-min); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "publisher": "Institut für Wirkungsökonomie",
+  "archive": {
+    "sourceLabel": "Freigegebener Fachbestand Release 1.0",
+    "publisher": "Institut für Wirkungsökonomie",
+    "importedAt": "2026-08-15T19:38:13.736Z",
+    "archiveHash": "0ca0bcceb48d8b41b4b481f7070f1c20e0ed86abce72c38371575d54452ad7e4",
+    "archiveEntries": 42,
+    "originalPathWithheld": true
+  },
+  "coverage": {
+    "caseReviews": {
+      "expected": 28,
+      "received": 28,
+      "uniqueCaseIds": 28
+    },
+    "commitmentRegisters": {
+      "expected": 7,
+      "received": 7,
+      "totalCommitments": 1593,
+      "sourceKeys": [
+        "btw-2025-afd",
+        "btw-2025-cdu-csu",
+        "btw-2025-gruene",
+        "btw-2025-linke",
+        "btw-2025-spd",
+        "btw-2025-ssw",
+        "coalition-2025-cdu-csu-spd"
+      ]
+    },
+    "saxonyAnhaltTargets": {
+      "expected": 28,
+      "received": 28
+    },
+    "documentedCoalitionToDecisionRelations": {
+      "received": 347
+    },
+    "programmeToCoalitionRelations": {
+      "received": 1246,
+      "status": "SOURCE_ANCHORED"
+    },
+    "openOrAmbiguousRelations": {
+      "received": 314,
+      "status": "OPEN_AS_DOCUMENTED"
+    }
+  },
+  "contentHashes": {
+    "reviews": "3b023f7cf73fbcb859123c8e9cf0c12cfdf9c0bd6fbece93910c0854f935782a",
+    "commitmentRegisters": "c476edb41ed856cee27b775b4b1402db337a2584f6bad952b7ae48af6698eaca",
+    "commitmentLinks": "d3d5988baa11db2d09431147e68f6ea951b597db27f2cc492b608dd145e5a80b",
+    "stateTargetRegister": "34c9a495d1fa4cf8cde52417260b6aceee195784f1722c63732dcc962f461a91",
+    "releaseSummary": "c4a9045ab7abf8ac67509098a22333641516496138dcfe710a6cd81fb5a9a86e"
+  },
+  "terminologyShell": {
+    "currentPublicTerminology": "WÖk-Begriffsleitfaden v1.5",
+    "sourceSnapshotsPreserved": true
+  }
+}

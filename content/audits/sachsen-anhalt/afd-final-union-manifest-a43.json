@@ -1,0 +1,308 @@
+{
+  "active_leaf_241_layer_set_check": {
+    "new_layer_synthesis": 0,
+    "status": "PASS_INHERITED_APPLICABLE_TERMINAL_RECORDS"
+  },
+  "active_leaf_terminal_fach_set_check": {
+    "new_fach_judgements": 0,
+    "status": "PASS_REUSED_EXACTLY"
+  },
+  "authoritative_counts": {
+    "authoritative_effect_mechanism_count": 619,
+    "authoritative_source_unit_count": 619,
+    "counting_method": "cardinality of collision-resolved final ACTIVE_EFFECT_LEAF set; never 466+repair arithmetic",
+    "counts_frozen": true,
+    "preserved_zero_count_records": 233,
+    "represented_role_record_universe": 852
+  },
+  "completion": {
+    "PEND": 0,
+    "ST_AFD_FINAL_FACH_COMPLETE": "PASS",
+    "ST_AFD_PRIMARY_SOURCE_PARITY": "PASS_FULL_PROGRAMME",
+    "handoff": "clean exact-current-main Sachsen-Anhalt-only AfD projection/gates; project terminal frozen leaves only; no DNS/Recommendation/Fach synthesis",
+    "unresolved_source_relations": 0
+  },
+  "dedupe_reconciliation": {
+    "a17_duplicate_0015": "DUPLICATE_RESTATEMENT_ZERO",
+    "a18_a19_p40_boundary": "passage-boundary ownership; no duplicate",
+    "a21_0138": "ACTIVE_EFFECT_LEAF_RESIDUAL_DEDUPED; repeated subclauses relation-only",
+    "a23_a06_handoff": "P108->P109/0183 owned by A06; no duplicate",
+    "a26_0434": "NON_EFFECT_ZERO_SOURCE_PORTFOLIO",
+    "a27_0444_xvii09": "HISTORICAL_PARTIAL_SOURCE_VARIANT_NONFINAL -> canonical XVII09-001",
+    "canonical_a20_versioned_set": "30-record A20 set only; older 24-record checkpoint superseded/excluded",
+    "exact_stable_id_collisions": 0,
+    "graph_acyclic": "PASS",
+    "unresolved_duplicate_restatement_supersedes_relations": 0,
+    "unresolved_semantic_collisions": 0
+  },
+  "gap_counts": {
+    "ABSENT": 0,
+    "DUPLICATE_GAP": 0,
+    "OVERMERGED": 0,
+    "PARTIAL_PARENT": 0,
+    "RESTORE_GAP": 0,
+    "SOURCE_ROLE_GAP": 0,
+    "TRUNCATED": 0
+  },
+  "historical_register": {
+    "git_blob": "2914eed6559a89152f7d1b950103beee91536ffa",
+    "path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-afd-zusagen.md",
+    "register_sha256": "7f0825a692641cc28106d8c6080efd07d30c7cae90633a268d0ee719b3de8734",
+    "source_hash": "854af40581d6699f8aae227dcce3641bebf35bb3dacd3f6ae90b11cabb0285d5",
+    "status": "TERMINAL_HISTORICAL_ONLY",
+    "working_rows": 466
+  },
+  "manifest_id": "ST-AFD-FINAL-UNION-MANIFEST-A43",
+  "mode": "FINAL_SOURCE_ROLE_CONVERGENCE_NO_NEW_FACH",
+  "page_passage_role_chain": {
+    "interstitial_new_fach_judgements": 0,
+    "interstitial_new_primary_leaves": 0,
+    "interstitial_roles": {
+      "P208": "CONTEXT_ONLY_CHAPTER_DIVIDER",
+      "P209": "SAME_REUSED_A14_CHAPTER_INTRO_CONTEXT",
+      "P216": "CONTEXT_ONLY_CHAPTER_DIVIDER",
+      "P217": "SAME_REUSED_A14_CHAPTER_XV_INTRO",
+      "P225": "CONTEXT_ONLY_TRANSITION",
+      "P226": "CONTEXT_ONLY_CHAPTER_DIVIDER",
+      "P227": "SAME_REUSED_A15_CHAPTER_XVI",
+      "P233": "CONTEXT_ONLY_TRANSITION",
+      "P234": "CONTEXT_ONLY_CHAPTER_DIVIDER",
+      "P235": "SAME_REUSED_A15_CHAPTER_XVII_INTRO_CONTEXT"
+    },
+    "segments": [
+      "P0-P23:A17",
+      "P24-P40:A18_THROUGH_SECTION_27",
+      "P40/P41-P52:A19_FROM_SECTION_28_PASSAGE_BOUNDARY",
+      "P53-P68:A20",
+      "P69-P88:A21",
+      "P89-P102:A22",
+      "P103-P108:A23",
+      "P109-P123:A06",
+      "P124-P142:A07",
+      "P143-P195:A08_TO_A12_ORDERED_REUSED_SOURCE_BOUND",
+      "P196-P207:A13",
+      "P208-P209:A24_2_EXPLICIT_INTERSTITIAL_ROLES",
+      "P210-P215:A14_CHAPTER_XIV_FULL",
+      "P216-P217:A24_2_EXPLICIT_INTERSTITIAL_ROLES",
+      "P218-P223:A14_CHAPTER_XV_SECTIONS_1_8",
+      "P223-P224:A15_CHAPTER_XV_SECTION_9_PASSAGE_BOUNDARY",
+      "P225-P227:A24_2_EXPLICIT_INTERSTITIAL_ROLES",
+      "P228-P232:A15_CHAPTER_XVI_FULL",
+      "P233-P235:A24_2_EXPLICIT_INTERSTITIAL_ROLES",
+      "P236-P238:A15_CHAPTER_XVII_INTRO_SECTIONS_1_2",
+      "P239-P257:A16_CHAPTER_XVII_SECTIONS_3_17_PLUS_BACKMATTER_CONTEXT_ONLY"
+    ],
+    "status": "PASS_P0_P257_CONTINUOUS"
+  },
+  "primary_source": "final party-official 258-page PDF",
+  "role_materialization": {
+    "active_effect_leaves": 619,
+    "canonical_versioned_rows": 386,
+    "conservation": "619+102+131=852",
+    "count_rule": {
+      "ACTIVE_EFFECT_LEAF": 1,
+      "NON_EFFECT_CONTEXT_DESIGN_SOURCE": 0,
+      "PARENT_PROVENANCE_DUPLICATE_RESTATEMENT_SUPERSEDED_RELATION": 0
+    },
+    "historical_rows": 466,
+    "represented_role_record_universe": 852,
+    "slice_partitions": [
+      {
+        "active_effect_leaves": 45,
+        "historical": "0001-0035",
+        "historical_rows": 35,
+        "relation_provenance_zero": 7,
+        "role_anchor": "ST_AFD_A42_EXACT_ROLE_RECONCILIATION=PASS",
+        "scope": "A17/P0-P23",
+        "slice": "A42",
+        "slice_sha256": "eb1c7f7379d7fff8527a68f670a00e7eb0655c46c67b5f0eb5b99805d3a0eee3",
+        "versioned_rows": 23,
+        "zero_count_nonleaf_context": 6
+      },
+      {
+        "active_effect_leaves": 40,
+        "historical": "0036-0051",
+        "historical_rows": 16,
+        "relation_provenance_zero": 13,
+        "role_anchor": "ST_AFD_A41_EXACT_ROLE_RECONCILIATION=PASS",
+        "scope": "A18/P24-P40",
+        "slice": "A41",
+        "slice_sha256": "ccc5e53435795cea579d5893ad882c21e9e59f35fbf6888450455b5dfdbe44b8",
+        "versioned_rows": 38,
+        "zero_count_nonleaf_context": 1
+      },
+      {
+        "active_effect_leaves": 35,
+        "historical": "0052-0071",
+        "historical_rows": 20,
+        "relation_provenance_zero": 8,
+        "role_anchor": "ST_AFD_A40_EXACT_ROLE_RECONCILIATION=PASS",
+        "scope": "A19/P40-P52",
+        "slice": "A40",
+        "slice_sha256": "243b3ef0506e63b9141c41fe18db22943a05b753e6ddcb2201f7b75893f7cd67",
+        "versioned_rows": 26,
+        "zero_count_nonleaf_context": 3
+      },
+      {
+        "active_effect_leaves": 46,
+        "historical": "0072-0103",
+        "historical_rows": 32,
+        "relation_provenance_zero": 10,
+        "role_anchor": "ST_AFD_A39_EXACT_ROLE_RECONCILIATION=PASS",
+        "scope": "A20/P53-P68",
+        "slice": "A39",
+        "slice_sha256": "eda78f343d7ed0e956db8f91ba7be7d4d30bfc4a17a9943d29b2b21bf01a5e8f",
+        "versioned_rows": 30,
+        "zero_count_nonleaf_context": 6
+      },
+      {
+        "active_effect_leaves": 61,
+        "historical": "0104-0152",
+        "historical_rows": 49,
+        "relation_provenance_zero": 9,
+        "role_anchor": "ST_AFD_A38_EXACT_ROLE_RECONCILIATION=PASS",
+        "scope": "A21/P69-P88",
+        "slice": "A38",
+        "slice_sha256": "31815320ae92e35b0272fa237b0baf0f3038b98ca9727ebc48a37d427afafda3",
+        "versioned_rows": 28,
+        "zero_count_nonleaf_context": 7
+      },
+      {
+        "active_effect_leaves": 19,
+        "historical": "0153-0168",
+        "historical_rows": 16,
+        "relation_provenance_zero": 6,
+        "role_anchor": "ST_AFD_A37_A22_EXACT_ROLE_PARTITION=PASS_29_OF_29",
+        "scope": "A22/P89-P102",
+        "slice": "A37",
+        "versioned_rows": 13,
+        "zero_count_nonleaf_context": 4
+      },
+      {
+        "active_effect_leaves": 12,
+        "historical": "0169-0180",
+        "historical_rows": 12,
+        "relation_provenance_zero": 2,
+        "role_anchor": "ST_AFD_A36_A23_EXACT_ROLE_PARTITION=PASS_17_OF_17",
+        "scope": "A23/P103-P108",
+        "slice": "A36",
+        "versioned_rows": 5,
+        "zero_count_nonleaf_context": 3
+      },
+      {
+        "active_effect_leaves": 41,
+        "historical": "0181-0210",
+        "historical_rows": 30,
+        "relation_provenance_zero": 3,
+        "role_anchor": "ST_AFD_A35_A06_EXACT_ROLE_PARTITION=PASS_47_OF_47",
+        "scope": "A06/handoff-from-P109",
+        "slice": "A35",
+        "versioned_rows": 17,
+        "zero_count_nonleaf_context": 3
+      },
+      {
+        "active_effect_leaves": 43,
+        "historical": "0211-0240",
+        "historical_rows": 30,
+        "relation_provenance_zero": 4,
+        "role_anchor": "ST_AFD_A34_A07_EXACT_ROLE_PARTITION=PASS_56_OF_56",
+        "scope": "A07",
+        "slice": "A34",
+        "versioned_rows": 26,
+        "zero_count_nonleaf_context": 9
+      },
+      {
+        "active_effect_leaves": 13,
+        "historical": "0241-0257",
+        "historical_rows": 17,
+        "relation_provenance_zero": 11,
+        "role_anchor": "ST_AFD_A33_A08_EXACT_ROLE_PARTITION=PASS_28_OF_28",
+        "scope": "A08",
+        "slice": "A33",
+        "versioned_rows": 11,
+        "zero_count_nonleaf_context": 4
+      },
+      {
+        "active_effect_leaves": 26,
+        "historical": "0258-0270",
+        "historical_rows": 13,
+        "relation_provenance_zero": 11,
+        "role_anchor": "ST_AFD_A32_A09_EXACT_ROLE_PARTITION=PASS_38_OF_38",
+        "scope": "A09",
+        "slice": "A32",
+        "versioned_rows": 25,
+        "zero_count_nonleaf_context": 1
+      },
+      {
+        "active_effect_leaves": 19,
+        "historical": "0271-0285",
+        "historical_rows": 15,
+        "relation_provenance_zero": 11,
+        "role_anchor": "ST_AFD_A31_A10_EXACT_ROLE_PARTITION=PASS_37_OF_37",
+        "scope": "A10",
+        "slice": "A31",
+        "versioned_rows": 22,
+        "zero_count_nonleaf_context": 7
+      },
+      {
+        "active_effect_leaves": 37,
+        "historical": "0286-0319",
+        "historical_rows": 34,
+        "relation_provenance_zero": 6,
+        "role_anchor": "ST_AFD_A30_A11_EXACT_ROLE_PARTITION=PASS_53_OF_53",
+        "scope": "A11",
+        "slice": "A30",
+        "versioned_rows": 19,
+        "zero_count_nonleaf_context": 10
+      },
+      {
+        "active_effect_leaves": 39,
+        "historical": "0320-0345",
+        "historical_rows": 26,
+        "relation_provenance_zero": 8,
+        "role_anchor": "ST_AFD_A29_A12_EXACT_ROLE_PARTITION=PASS_54_OF_54",
+        "scope": "A12",
+        "slice": "A29",
+        "versioned_rows": 28,
+        "zero_count_nonleaf_context": 7
+      },
+      {
+        "active_effect_leaves": 42,
+        "historical": "0346-0375",
+        "historical_rows": 30,
+        "relation_provenance_zero": 6,
+        "role_anchor": "ST_AFD_A28_ROLE_FINAL=56_OF_56",
+        "scope": "A13",
+        "slice": "A28",
+        "versioned_rows": 26,
+        "zero_count_nonleaf_context": 8
+      },
+      {
+        "active_effect_leaves": 64,
+        "historical": "0376-0435",
+        "historical_rows": 60,
+        "relation_provenance_zero": 9,
+        "role_anchor": "ST_AFD_A26_1_ROLE_FINAL=93_OF_93",
+        "scope": "A14-A15",
+        "slice": "A26.1",
+        "versioned_rows": 33,
+        "zero_count_nonleaf_context": 20
+      },
+      {
+        "active_effect_leaves": 37,
+        "historical": "0436-0466",
+        "historical_rows": 31,
+        "relation_provenance_zero": 7,
+        "role_anchor": "ST_AFD_A27_1_ROLE_FINAL=47_OF_47",
+        "scope": "A16",
+        "slice": "A27.1",
+        "versioned_rows": 16,
+        "zero_count_nonleaf_context": 3
+      }
+    ],
+    "zero_count_nonleaf_context": 102,
+    "zero_count_relation_provenance": 131,
+    "zero_count_total": 233
+  },
+  "scope": "Sachsen-Anhalt 2026 AfD Regierungsprogramm only"
+}

@@ -1,0 +1,69 @@
+version: 2026-05-24
+status: release-candidate
+referenceCategories:
+  - id: kernquelle
+    title: Kernquelle
+    description: "Trägt die Hauptaussage eines Abschnitts oder Begriffs."
+  - id: anschlussquelle
+    title: Anschlussquelle
+    description: "Stellt wissenschaftliche, regulatorische oder politische Anschlussfähigkeit her."
+  - id: woek_interne_quelle
+    title: WÖk-interne Quelle
+    description: "Dokumentiert die Entwicklung innerhalb des Projekts und ersetzt keine externen Belege."
+  - id: daten_standardquelle
+    title: Daten-/Standardquelle
+    description: "Liefert Datenstandard, Klassifikation, Norm, Indikator oder Reportingrahmen."
+  - id: historische_quelle
+    title: Historische Quelle
+    description: "Frühere Fassungen, alte Whitepaper oder alte Working Papers."
+  - id: juristische_regulatorische_pruefstelle
+    title: Juristische / regulatorische Prüfstelle
+    description: "Quelle oder Thema, das vor verbindlicher Nutzung juristisch oder regulatorisch vertieft geprüft werden muss."
+  - id: pruefen_unklar
+    title: Prüfen / Unklar
+    description: "Quelle ist vorhanden, aber Rolle, Aktualität, Belastbarkeit oder Zuordnung ist noch unklar."
+categories:
+  - id: eu_regulations_and_official_data
+    title: Eu Regulations And Official Data
+    count: 63
+    status: draft
+  - id: global_sdg_un_science_data
+    title: Global Sdg Un Science Data
+    count: 19
+    status: draft
+  - id: germany_municipal_sources
+    title: Germany Municipal Sources
+    count: 19
+    status: draft
+  - id: standards_methods_and_impact_frameworks
+    title: Standards Methods And Impact Frameworks
+    count: 33
+    status: draft
+  - id: esg_rating_methodologies_and_sustainability_data_providers
+    title: Esg Rating Methodologies And Sustainability Data Providers
+    count: 15
+    status: draft
+  - id: product_lca_epd_and_data_space_sources
+    title: Product Lca Epd And Data Space Sources
+    count: 10
+    status: draft
+  - id: consulting_and_professional_services
+    title: Consulting And Professional Services
+    count: 33
+    status: draft
+  - id: certifications_labels_standards
+    title: Certifications Labels Standards
+    count: 27
+    status: draft
+  - id: alternative_economic_models_and_revival_debates
+    title: Alternative Economic Models And Revival Debates
+    count: 14
+    status: draft
+  - id: ordnungspolitik_anschlussfaehigkeit_demokratie
+    title: Ordnungspolitik Anschlussfaehigkeit Demokratie
+    count: 16
+    status: draft
+  - id: change_management_enterprise_resilience
+    title: Change Management Enterprise Resilience
+    count: 12
+    status: draft

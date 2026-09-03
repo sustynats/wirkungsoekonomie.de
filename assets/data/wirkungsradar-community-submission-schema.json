@@ -1,0 +1,43 @@
+{
+  "fields": [
+    "submission_id",
+    "created_at",
+    "claim_text",
+    "source_url",
+    "platform",
+    "topic",
+    "user_relevance_note",
+    "status",
+    "review_notes",
+    "risk_of_amplification",
+    "publication_decision",
+    "related_existing_page",
+    "created_page_url"
+  ],
+  "transport": {
+    "route": "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/",
+    "pageType": "narrative_submission",
+    "source": "debate_compass_narrative",
+    "moderation_area": "narrativ_queue",
+    "spamProtection": "Discord-Login der Akademie-Narrativstrecke"
+  },
+  "statuses": [
+    "eingereicht",
+    "in Prüfung",
+    "abgelehnt wegen Frame-Verstärkung",
+    "abgelehnt wegen fehlender Relevanz",
+    "zusammengeführt mit bestehendem Narrativ",
+    "zur Veröffentlichung freigegeben",
+    "veröffentlicht"
+  ],
+  "publicationPolicy": "Neue Einreichungen dürfen nicht automatisch veröffentlicht werden.",
+  "reviewCriteria": [
+    "Ist die Aussage relevant genug?",
+    "Hat sie Verbreitung oder Wirkungspotenzial?",
+    "Gibt es bereits eine ähnliche Seite?",
+    "Würde Veröffentlichung den Frame verstärken?",
+    "Lässt sich der Wirkpfad sinnvoll erklären?",
+    "Gibt es belastbare Fakten- oder Quellenlage?",
+    "Ist eine Reaktion oder Antwortstrategie ableitbar?"
+  ]
+}

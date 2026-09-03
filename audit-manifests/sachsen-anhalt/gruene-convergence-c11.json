@@ -1,0 +1,217 @@
+{
+  "schema_version": "woek-st-gruene-convergence-component-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C11",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {"id": 5377781384, "marker": "ST-GRUENE-PSP-R15", "updated_at": "2026-08-22T04:06:35Z", "body_sha256": "c80b0463c037e8503a148a4af195eadde41bdd52ce05feb9c63e00aee829d9b5"},
+      {"id": 5377789382, "marker": "ST-GRUENE-PSP-R16", "updated_at": "2026-08-22T04:08:20Z", "body_sha256": "47adf2ec20e92755e45b0cc6517ec0380088b49bbfa22b7f8bc9292d2e963c50"},
+      {"id": 5377794706, "marker": "ST-GRUENE-PSP-R17", "updated_at": "2026-08-22T04:09:39Z", "body_sha256": "5b89599332c99f1e6bdada97b4e81506b54e41b4bb038c7880a6f30db3f2dcb5"},
+      {"id": 5377802856, "marker": "ST-GRUENE-PSP-R18", "updated_at": "2026-08-22T04:11:35Z", "body_sha256": "0444d6102254079812adf1eb8c4293a5922c60f72d155e15db3396107c99273b"},
+      {"id": 5377807348, "marker": "ST-GRUENE-PSP-R19", "updated_at": "2026-08-22T04:12:45Z", "body_sha256": "0532be5cb88842ed9ce29d34a878866a461d14b9ea9f5e202cf8fb61fece9ca9"},
+      {"id": 5377812574, "marker": "ST-GRUENE-PSP-R20", "updated_at": "2026-08-22T04:14:04Z", "body_sha256": "da792272e95c6496c45235e13498bcd6b778e5779f020e4cc7df4bf7e07c22cb"},
+      {"id": 5373696133, "marker": "ST-GRUENE-A05", "updated_at": "2026-08-21T18:24:54Z", "body_sha256": "bc4b87456bf71a9a5c3c4ba0491b77176c1f109c4e53915204a0540af2b457a6"},
+      {"id": 5373764817, "marker": "ST-GRUENE-A06", "updated_at": "2026-08-21T18:31:54Z", "body_sha256": "3ad0cd074f03044b46b17ffcbf00680485e9a5c87e3819a4205648ac30d8fd84"}
+    ],
+    "required_facts": {
+      "ST-GRUENE-PSP-R15": ["historical working window: **0271–0279**", "**12** records = **11 `ABSENT` repairs + 1 `PARTIAL_PARENT(0278)` child**", "`ST_GRUENE_PSP_R15_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R16": ["historical working window: **0280–0297**", "**8** = **6 `ABSENT` repairs + 1 `PARTIAL_PARENT` child + 1 `TRUNCATED` restore**", "`ST_GRUENE_PSP_R16_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R17": ["historical working window: **0298–0311**", "pre-existing source-v2 records reused: **12**", "non-effect rows: `0298`, `0309`", "`ST_GRUENE_PSP_R17_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R18": ["historical working window: **0312–0321**", "pre-existing A06 source-v2 records reused: **6**", "`ST_GRUENE_PSP_R18_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R19": ["historical working window: **0322–0330**", "pre-existing A06 source-v2 records reused: **7**", "`0329/0330` are reconciled as one semantic service-access mechanism", "`ST_GRUENE_PSP_R19_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R20": ["historical working window: **0331–0343**", "pre-existing A06 source-v2 records reused: **7**", "marked non-effect for local denominator accounting", "`ST_GRUENE_PSP_R20_LOCAL_PARITY = PASS`"]
+    },
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C10"
+  },
+  "scope": {
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "windows": [
+    {
+      "source_marker": "ST-GRUENE-PSP-R15",
+      "historical_first": "0271",
+      "historical_last": "0279",
+      "historical_roles": {
+        "active_effect_leaf": ["0271", "0272", "0273", "0274", "0275", "0276", "0277", "0278", "0279"],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-after-0270-polizei-7000-stellen",
+          "ltw-2026-st-gruene-v2-after-0270-polizeiverwaltung-staerken",
+          "ltw-2026-st-gruene-v2-after-0270-polizeirevierbudgets",
+          "ltw-2026-st-gruene-v2-after-0270-polizeifahrradstreifen",
+          "ltw-2026-st-gruene-v2-after-0271-keine-massenueberwachung",
+          "ltw-2026-st-gruene-v2-after-0274-psychische-ausnahmesituationen-taser-deeskalation",
+          "ltw-2026-st-gruene-v2-after-0275-cybercrime-grenzueberschreitend",
+          "ltw-2026-st-gruene-v2-after-0276-polizeinachwuchs-anforderungen-kampagnen",
+          "ltw-2026-st-gruene-v2-after-0276-polizeihochschule-aschersleben",
+          "ltw-2026-st-gruene-v2-after-0277-demokratie-menschenrechte-antidiskriminierung-polizeiausbildung",
+          "ltw-2026-st-gruene-v2-0278-child-hinweisgeberschutz-jahresbericht",
+          "ltw-2026-st-gruene-v2-after-0278-fehlerkultur-supervision-beschwerdewege"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {"0278": ["ltw-2026-st-gruene-v2-0278-child-hinweisgeberschutz-jahresbericht"]},
+      "restored_in_place_historical": [], "semantic_relations": [],
+      "counts": {"historical_active_effect_leaves": 9, "versioned_active_effect_leaves": 12, "non_effect_source_leaves": 0, "parent_provenance_nonleaves": 0, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 21, "authoritative_effect_leaves": 21}
+    },
+    {
+      "source_marker": "ST-GRUENE-PSP-R16",
+      "historical_first": "0280",
+      "historical_last": "0297",
+      "historical_roles": {
+        "active_effect_leaf": ["0280", "0281", "0283", "0284", "0285", "0286", "0287", "0288", "0289", "0290", "0291", "0292", "0293", "0294", "0295", "0296", "0297"],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": ["0282"]
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-after-0282-oeffentliche-einrichtungen-gewaltschutzkonzepte",
+          "ltw-2026-st-gruene-v2-after-0283-landeskoordinierung-gewaltschutz-behinderung",
+          "ltw-2026-st-gruene-v2-0284-child-transnationale-repression",
+          "ltw-2026-st-gruene-v2-after-0286-bedarfsgerechter-ausbau-frauenhaeuser",
+          "ltw-2026-st-gruene-v2-after-0291-praevention-toxische-maennlichkeit-antifeminismus",
+          "ltw-2026-st-gruene-v2-after-0291-taeterarbeit-zielgruppen-erweitern",
+          "ltw-2026-st-gruene-v2-after-0295-aktionsprogramm-akzeptanz-lsbtiq"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {"0284": ["ltw-2026-st-gruene-v2-0284-child-transnationale-repression"]},
+      "restored_in_place_historical": ["0287"],
+      "semantic_relations": [{"from": "0282", "relation": "DERIVED_RIGHTS_EFFECT_OF", "to": "0281", "count": 0}],
+      "counts": {"historical_active_effect_leaves": 17, "versioned_active_effect_leaves": 7, "non_effect_source_leaves": 0, "parent_provenance_nonleaves": 0, "duplicate_restatement_nonleaves": 1, "authoritative_source_leaves": 24, "authoritative_effect_leaves": 24}
+    },
+    {
+      "source_marker": "ST-GRUENE-PSP-R17",
+      "historical_first": "0298",
+      "historical_last": "0311",
+      "historical_roles": {
+        "active_effect_leaf": ["0299", "0300", "0301", "0302", "0303", "0304", "0305", "0306", "0307", "0308", "0310", "0311"],
+        "context_design_non_effect_source_leaf": ["0298", "0309"], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-0299-child-fachverfahren-video-barrierefreier-zugang",
+          "ltw-2026-st-gruene-v2-after-0300-justiz-homeoffice-moderne-it",
+          "ltw-2026-st-gruene-v2-after-0300-richter-staatsanwaelte-alimentation",
+          "ltw-2026-st-gruene-v2-0302-child-it-expertise-laenderkoordination",
+          "ltw-2026-st-gruene-v2-after-0302-digitalcrime-praxistraining",
+          "ltw-2026-st-gruene-v2-0306-child-befugnisse-personal-ausstattung-zugang",
+          "ltw-2026-st-gruene-v2-after-0306-strafvollzug-resozialisierung-psychosozial",
+          "ltw-2026-st-gruene-v2-after-0306-strafvollzug-personal-arbeit-digital",
+          "ltw-2026-st-gruene-v2-after-0306-strafvollzug-kooperation-arbeit-qualifizierung",
+          "ltw-2026-st-gruene-v2-after-0306-frauenvollzug-mutter-kind",
+          "ltw-2026-st-gruene-v2-0311-child-suchtbehandlung-uebergangsmanagement",
+          "ltw-2026-st-gruene-v2-after-0311-therapiemassnahmen-verguetung"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0299": ["ltw-2026-st-gruene-v2-0299-child-fachverfahren-video-barrierefreier-zugang"],
+        "0302": ["ltw-2026-st-gruene-v2-0302-child-it-expertise-laenderkoordination"],
+        "0306": ["ltw-2026-st-gruene-v2-0306-child-befugnisse-personal-ausstattung-zugang"],
+        "0311": ["ltw-2026-st-gruene-v2-0311-child-suchtbehandlung-uebergangsmanagement"]
+      },
+      "restored_in_place_historical": [], "semantic_relations": [],
+      "counts": {"historical_active_effect_leaves": 12, "versioned_active_effect_leaves": 12, "non_effect_source_leaves": 2, "parent_provenance_nonleaves": 0, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 26, "authoritative_effect_leaves": 24}
+    },
+    {
+      "source_marker": "ST-GRUENE-PSP-R18",
+      "historical_first": "0312",
+      "historical_last": "0321",
+      "historical_roles": {
+        "active_effect_leaf": ["0312", "0313", "0314", "0315", "0316", "0317", "0318", "0319", "0320", "0321"],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-after-0317-feuerwehr-freistellungsregeln",
+          "ltw-2026-st-gruene-v2-before-0319-krisenvorsorgeplaene",
+          "ltw-2026-st-gruene-v2-before-0319-zivil-militaerische-planung",
+          "ltw-2026-st-gruene-v2-0320-child-geschlechtersensible-krisenplanung",
+          "ltw-2026-st-gruene-v2-0320-child-barrierefreie-inklusive-krisenstrukturen",
+          "ltw-2026-st-gruene-v2-0321-child-vendor-redundanz-fallback"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0320": ["ltw-2026-st-gruene-v2-0320-child-geschlechtersensible-krisenplanung", "ltw-2026-st-gruene-v2-0320-child-barrierefreie-inklusive-krisenstrukturen"],
+        "0321": ["ltw-2026-st-gruene-v2-0321-child-vendor-redundanz-fallback"]
+      },
+      "restored_in_place_historical": [], "semantic_relations": [],
+      "counts": {"historical_active_effect_leaves": 10, "versioned_active_effect_leaves": 6, "non_effect_source_leaves": 0, "parent_provenance_nonleaves": 0, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 16, "authoritative_effect_leaves": 16}
+    },
+    {
+      "source_marker": "ST-GRUENE-PSP-R19",
+      "historical_first": "0322",
+      "historical_last": "0330",
+      "historical_roles": {
+        "active_effect_leaf": ["0322", "0325", "0326", "0327", "0328", "0330"],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": ["0324"], "duplicate_restatement_nonleaf": ["0323", "0329"]
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-0324-child-zweistufige-landesverwaltung",
+          "ltw-2026-st-gruene-v2-0324-child-18-7-vza-personalplan-2035",
+          "ltw-2026-st-gruene-v2-0324-child-aufgabenkritik-effizienz-open-budget",
+          "ltw-2026-st-gruene-v2-after-0324-moderne-arbeit-fortbildung-laufbahnen",
+          "ltw-2026-st-gruene-v2-0326-child-amtliche-blaetter-frei-online",
+          "ltw-2026-st-gruene-v2-0327-0328-child-public-money-public-software",
+          "ltw-2026-st-gruene-v2-before-0329-entscheidungen-verstaendlich-begruenden"
+        ],
+        "context_design_non_effect_source_leaf": [], "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0324": ["ltw-2026-st-gruene-v2-0324-child-zweistufige-landesverwaltung", "ltw-2026-st-gruene-v2-0324-child-18-7-vza-personalplan-2035", "ltw-2026-st-gruene-v2-0324-child-aufgabenkritik-effizienz-open-budget"],
+        "0326": ["ltw-2026-st-gruene-v2-0326-child-amtliche-blaetter-frei-online"],
+        "0327": ["ltw-2026-st-gruene-v2-0327-0328-child-public-money-public-software"]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [
+        {"from": "0323", "relation": "RESTATEMENT_EFFECT_CHILD_OF", "to": "0322", "count": 0},
+        {"from": "0329", "relation": "RESTATEMENT_PARENT_OF_ACTIVE_DEDUPED_EFFECT", "to": "0330", "count": 0}
+      ],
+      "counts": {"historical_active_effect_leaves": 6, "versioned_active_effect_leaves": 7, "non_effect_source_leaves": 0, "parent_provenance_nonleaves": 1, "duplicate_restatement_nonleaves": 2, "authoritative_source_leaves": 13, "authoritative_effect_leaves": 13}
+    },
+    {
+      "source_marker": "ST-GRUENE-PSP-R20",
+      "historical_first": "0331",
+      "historical_last": "0343",
+      "historical_roles": {
+        "active_effect_leaf": ["0331", "0332", "0333", "0334", "0336", "0337", "0338", "0339", "0341", "0342", "0343"],
+        "context_design_non_effect_source_leaf": ["0335"], "parent_provenance_nonleaf": ["0340"], "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-0281-0336-child-ladg-rechtsschutz-hearing-compensation",
+          "ltw-2026-st-gruene-v2-after-0337-keine-kuerzung-eingliederungshilfe",
+          "ltw-2026-st-gruene-v2-0340-child-landesrahmenvertrag-personenzentriert",
+          "ltw-2026-st-gruene-v2-0340-child-traegerbudgets",
+          "ltw-2026-st-gruene-v2-after-0342-personenzentrierte-eingliederungshilfe",
+          "ltw-2026-st-gruene-v2-after-0343-intersektionale-perspektive"
+        ],
+        "context_design_non_effect_source_leaf": ["ltw-2026-st-gruene-v2-0341-child-kostentraeger-kv-umsetzung"],
+        "parent_provenance_nonleaf": [], "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0336": ["ltw-2026-st-gruene-v2-0281-0336-child-ladg-rechtsschutz-hearing-compensation"],
+        "0340": ["ltw-2026-st-gruene-v2-0340-child-landesrahmenvertrag-personenzentriert", "ltw-2026-st-gruene-v2-0340-child-traegerbudgets"],
+        "0341": ["ltw-2026-st-gruene-v2-0341-child-kostentraeger-kv-umsetzung"]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [{"from": "0336", "relation": "LADG_LAW_DEDUPED_TO_CROSS_WINDOW_CANONICAL", "to": "0281", "count": 0}],
+      "counts": {"historical_active_effect_leaves": 11, "versioned_active_effect_leaves": 6, "non_effect_source_leaves": 2, "parent_provenance_nonleaves": 1, "duplicate_restatement_nonleaves": 0, "authoritative_source_leaves": 19, "authoritative_effect_leaves": 17}
+    }
+  ],
+  "counts": {"authoritative_source_leaves": 119, "authoritative_effect_leaves": 115},
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R21_PLUS_AND_UNION_GATE"
+  }
+}

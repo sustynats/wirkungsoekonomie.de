@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-08-18T10:03:00Z",
+  "repository": "sustynats/wirkungsoekonomie.de",
+  "verification_method": "gh workflow list --all --json id,name,state,path",
+  "workflows": [
+    {
+      "id": 336712886,
+      "name": "WÖk Political Autopilot",
+      "path": ".github/workflows/political-autopilot.yml",
+      "state": "disabled_manually"
+    },
+    {
+      "id": 336712887,
+      "name": "WÖk Political Daily Digest",
+      "path": ".github/workflows/political-daily-digest.yml",
+      "state": "disabled_manually"
+    }
+  ],
+  "normal_writers_enabled": false,
+  "daily_newsletter_enabled": false,
+  "status": "PASS"
+}

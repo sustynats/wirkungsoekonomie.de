@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "hook_id": "WOEK-BE-TIERSCHUTZPARTEI-2026-COVERAGE-OVERLAY-V1",
+  "update_mode": "PROGRAMME_SCOPED_OVERLAY_DO_NOT_OVERWRITE_SHARED_RESIDUAL",
+  "target": {
+    "shared_residual_path": "data/state-programmes/fach-content-residuals/berlin-2026-v2.json",
+    "party": "Tierschutzpartei",
+    "artifact_id": "BE-AGH-2026-TIERSCHUTZPARTEI-WAHLPROGRAMM",
+    "artifact_sha256": "1db89d9811e0d546c269c6ad6819603e12841b0d3f7f20f976444858d86cf172"
+  },
+  "input": {
+    "ledger_manifest_path": "data/state-programmes/fach-reviews/berlin-2026-tierschutzpartei-v1/manifest.json",
+    "ledger_id": "WOEK-BE-TIERSCHUTZPARTEI-2026-FULL-PROGRAMME-REVIEW-V1",
+    "logical_descriptor_sha256": "dd3cdf9e0bfbffbf498bf653140bd2fe4d3f14cfb20d8fd0d851a53d3250c8fc"
+  },
+  "overlay": {
+    "source_object_review_status": "SOURCE_OBJECT_REVIEW_COMPLETE",
+    "programme_analysis_complete": true,
+    "reviewed_page_count": 96,
+    "source_unit_count": 642,
+    "effect_atom_count": 2389,
+    "explicit_fach_approved_count": 0,
+    "reviewed_not_assessable_count": 2389,
+    "genuine_fach_review_required_count": 0,
+    "effect_credit_allowed": false,
+    "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL"
+  },
+  "apply_contract": {
+    "match_keys": [
+      "party",
+      "artifact_id",
+      "artifact_sha256"
+    ],
+    "preserve_all_other_programmes": true,
+    "shared_residual_mutation_performed_by_this_lane": false,
+    "consumer_must_preserve_existing_explicit_fach": true,
+    "consumer_must_not_materialize_missing_fach_fields": true
+  },
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "dns_mapping_synthesized": false,
+    "recommendation_synthesized": false,
+    "party_score_created": false,
+    "vercel_build_triggered": false
+  },
+  "descriptor_sha256": "dead1a33f5d903fcda41e2423d21305b36dab261ae619ff207dc27193757d8da"
+}

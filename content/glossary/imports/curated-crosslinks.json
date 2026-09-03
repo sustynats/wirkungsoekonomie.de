@@ -1,0 +1,1831 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Kuratiertes Ergänzungsregister für öffentliche Glossar-Querverweise. Jeder Eintrag verweist ausschließlich auf bestehende kanonische termIds; Typ und Begründung dokumentieren die fachliche Verbindung.",
+  "terms": [
+    {
+      "termId": "benchmarks",
+      "canonicalLabel": "Benchmarks",
+      "relatedTerms": ["benchmark"],
+      "curatedCrosslinks": [
+        {"targetTermId": "benchmark", "relationType": "Begriffsfamilie", "reason": "Benchmarks sind die Mehrzahl einzelner fachlicher Vergleichswerte."}
+      ]
+    },
+    {
+      "termId": "bestandsimmobilie",
+      "canonicalLabel": "Bestandsimmobilie",
+      "relatedTerms": ["immobilien", "energetische-sanierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "immobilien", "relationType": "Teilbereich", "reason": "Die Bestandsimmobilie ist ein bereits errichteter Teil des Immobilienbestands."},
+        {"targetTermId": "energetische-sanierung", "relationType": "Maßnahmenbezug", "reason": "Sanierung ist ein zentraler Hebel für Energiebedarf und Lebensdauer im Bestand."}
+      ]
+    },
+    {
+      "termId": "bilanzgrenze",
+      "canonicalLabel": "Bilanzgrenze",
+      "relatedTerms": ["systemgrenze", "lebenszyklusanalyse"],
+      "curatedCrosslinks": [
+        {"targetTermId": "systemgrenze", "relationType": "Abgrenzung", "reason": "Beide Begriffe legen fest, welche Prozesse und Folgen in eine Bewertung eingehen."},
+        {"targetTermId": "lebenszyklusanalyse", "relationType": "Methodenbezug", "reason": "Lebenszyklusanalysen brauchen eine ausdrücklich dokumentierte Bilanzgrenze."}
+      ]
+    },
+    {
+      "termId": "biodiversitaet",
+      "canonicalLabel": "Biodiversität",
+      "relatedTerms": ["planet", "biodiversitaetsrisiko"],
+      "curatedCrosslinks": [
+        {"targetTermId": "planet", "relationType": "Schutzdimension", "reason": "Biodiversität gehört zu den ökologischen Lebensgrundlagen der Planet-Dimension."},
+        {"targetTermId": "biodiversitaetsrisiko", "relationType": "Risikobeziehung", "reason": "Das Risiko beschreibt mögliche Schäden an der biologischen Vielfalt."}
+      ]
+    },
+    {
+      "termId": "bip",
+      "canonicalLabel": "BIP",
+      "relatedTerms": ["wellbeing-economy", "w-bip"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wellbeing-economy", "relationType": "Bewertungsalternative", "reason": "Wellbeing Economy grenzt Wohlstandssteuerung vom bloßen BIP-Wachstum ab."},
+        {"targetTermId": "w-bip", "relationType": "Kennzahlenerweiterung", "reason": "W-BIP ergänzt wirtschaftliche Leistung um soziale und ökologische Aspekte."}
+      ]
+    },
+    {
+      "termId": "bne",
+      "canonicalLabel": "BNE",
+      "relatedTerms": ["bip"],
+      "curatedCrosslinks": [
+        {"targetTermId": "bip", "relationType": "Kennzahlenabgrenzung", "reason": "BNE ordnet Einkommen der Inländer zu, BIP die Produktion im Inland."}
+      ]
+    },
+    {
+      "termId": "brutblanket",
+      "canonicalLabel": "Brutblanket",
+      "relatedTerms": ["tiere", "biodiversitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "tiere", "relationType": "Schutzobjekt", "reason": "Die Maßnahme schützt brütende Tiere und ihre Fortpflanzungsräume."},
+        {"targetTermId": "biodiversitaet", "relationType": "Schutzbezug", "reason": "Artenschutzmaßnahmen tragen zum Erhalt biologischer Vielfalt bei."}
+      ]
+    },
+    {
+      "termId": "bruttokreditaufnahme",
+      "canonicalLabel": "Bruttokreditaufnahme",
+      "relatedTerms": ["nettokreditaufnahme", "refinanzierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "nettokreditaufnahme", "relationType": "Rechenabgrenzung", "reason": "Die Nettokreditaufnahme berücksichtigt Tilgungen und Gegenbewegungen."},
+        {"targetTermId": "refinanzierung", "relationType": "Finanzierungsvorgang", "reason": "Refinanzierung kann Teil der gesamten neuen Kreditaufnahme sein."}
+      ]
+    },
+    {
+      "termId": "capex-plan",
+      "canonicalLabel": "CapEx-Plan",
+      "relatedTerms": ["capex", "investitionsschuld"],
+      "curatedCrosslinks": [
+        {"targetTermId": "capex", "relationType": "Planungsbezug", "reason": "Der CapEx-Plan konkretisiert geplante Investitionsausgaben."},
+        {"targetTermId": "investitionsschuld", "relationType": "Vorsorgebezug", "reason": "Unterlassene Investitionen können als Investitionsschuld in die Zukunft wirken."}
+      ]
+    },
+    {
+      "termId": "care-economy",
+      "canonicalLabel": "Care Economy / Feministische Ökonomie",
+      "relatedTerms": ["sorgearbeit", "gender-care-gap"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sorgearbeit", "relationType": "Gegenstandsbezug", "reason": "Care Economy macht bezahlte und unbezahlte Sorgearbeit wirtschaftlich sichtbar."},
+        {"targetTermId": "gender-care-gap", "relationType": "Verteilungsbezug", "reason": "Der Gender Care Gap beschreibt die ungleiche Verteilung von Sorgearbeit."}
+      ]
+    },
+    {
+      "termId": "circular-economy",
+      "canonicalLabel": "Circular Economy / Regenerative Economy",
+      "relatedTerms": ["kreislaufwirtschaft", "kreislauffaehigkeit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kreislaufwirtschaft", "relationType": "Wirtschaftsansatz", "reason": "Circular Economy beschreibt die Kreislaufwirtschaft als Gestaltungsansatz."},
+        {"targetTermId": "kreislauffaehigkeit", "relationType": "Bewertungsmerkmal", "reason": "Kreislauffähigkeit prüft, ob Materialien und Produkte tatsächlich im Kreislauf bleiben können."}
+      ]
+    },
+    {
+      "termId": "crrem",
+      "canonicalLabel": "CRREM / Carbon Risk Real Estate Monitor",
+      "relatedTerms": ["immobilien", "misalignment-year"],
+      "curatedCrosslinks": [
+        {"targetTermId": "immobilien", "relationType": "Anwendungsfeld", "reason": "CRREM bewertet klimabezogene Übergangsrisiken im Immobilienbestand."},
+        {"targetTermId": "misalignment-year", "relationType": "Pfadabweichung", "reason": "Misalignment Years zeigen die Abweichung eines Objekts vom definierten Klimapfad."}
+      ]
+    },
+    {
+      "termId": "cyberresilienz",
+      "canonicalLabel": "Cyberresilienz",
+      "relatedTerms": ["dora", "risiko-und-resilienzregister"],
+      "curatedCrosslinks": [
+        {"targetTermId": "dora", "relationType": "Regulierungsbezug", "reason": "DORA setzt für den Finanzsektor Anforderungen an digitale operationale Resilienz."},
+        {"targetTermId": "risiko-und-resilienzregister", "relationType": "Steuerungsinstrument", "reason": "Ein Register macht Cyberrisiken, Vorsorge und Nachverfolgung prüfbar."}
+      ]
+    },
+    {
+      "termId": "d-und-o",
+      "canonicalLabel": "D&O",
+      "relatedTerms": ["unternehmens-impact-und-governance-frameworks", "risikomanagement"],
+      "curatedCrosslinks": [
+        {"targetTermId": "unternehmens-impact-und-governance-frameworks", "relationType": "Governancebezug", "reason": "D&O betrifft Verantwortung und Haftungsrisiken von Leitungs- und Aufsichtsorganen."},
+        {"targetTermId": "risikomanagement", "relationType": "Risikobezug", "reason": "Versicherungsschutz ist ein Baustein im Umgang mit Haftungsrisiken."}
+      ]
+    },
+    {
+      "termId": "datenstandard",
+      "canonicalLabel": "Datenstandard / Standardisierung von Risikomanagement",
+      "relatedTerms": ["datenqualitaet", "managementsystemstandards"],
+      "curatedCrosslinks": [
+        {"targetTermId": "datenqualitaet", "relationType": "Qualitätssicherung", "reason": "Standards machen Erhebung, Dokumentation und Prüfung von Daten vergleichbar."},
+        {"targetTermId": "managementsystemstandards", "relationType": "Systembezug", "reason": "Managementsysteme nutzen Standards für Zuständigkeiten, Prozesse und Nachweise."}
+      ]
+    },
+    {
+      "termId": "deal",
+      "canonicalLabel": "DEAL",
+      "relatedTerms": ["clean-industrial-deal", "eu"],
+      "curatedCrosslinks": [
+        {"targetTermId": "clean-industrial-deal", "relationType": "Beispiel", "reason": "Der Clean Industrial Deal ist ein konkretes europäisches Maßnahmenpaket."},
+        {"targetTermId": "eu", "relationType": "Institutioneller Rahmen", "reason": "Nachhaltigkeits- und Transformationsdeals werden häufig auf EU-Ebene verhandelt."}
+      ]
+    },
+    {
+      "termId": "debiasing",
+      "canonicalLabel": "Debiasing",
+      "relatedTerms": ["kognitive-dissonanz", "meta-kognitive-intervention"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kognitive-dissonanz", "relationType": "Psychologischer Mechanismus", "reason": "Dissonanz kann Abwehr auslösen, die Debiasing bearbeiten soll."},
+        {"targetTermId": "meta-kognitive-intervention", "relationType": "Interventionsform", "reason": "Metakognitive Interventionen helfen, das eigene Denken kritisch zu prüfen."}
+      ]
+    },
+    {
+      "termId": "degrowth",
+      "canonicalLabel": "Degrowth / Postwachstum",
+      "relatedTerms": ["wellbeing-economy", "bip"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wellbeing-economy", "relationType": "Zielalternative", "reason": "Beide Ansätze verschieben den Maßstab von Wachstum zu Lebensqualität und Grenzen."},
+        {"targetTermId": "bip", "relationType": "Kritische Abgrenzung", "reason": "Postwachstum kritisiert die Gleichsetzung von BIP-Wachstum und Wohlstand."}
+      ]
+    },
+    {
+      "termId": "deindustrialisierungsnarrativ",
+      "canonicalLabel": "Deindustrialisierungsnarrativ",
+      "relatedTerms": ["narrativ", "green-deal-industrial-plan"],
+      "curatedCrosslinks": [
+        {"targetTermId": "narrativ", "relationType": "Begriffstyp", "reason": "Der Begriff bezeichnet einen Deutungsrahmen für wirtschaftlichen Wandel."},
+        {"targetTermId": "green-deal-industrial-plan", "relationType": "Politikbezug", "reason": "Industriepolitische Transformationspläne sind ein konkreter Bezugspunkt des Narrativs."}
+      ]
+    },
+    {
+      "termId": "demokratische-staatsschuld",
+      "canonicalLabel": "Demokratische Staatsschuld",
+      "relatedTerms": ["demokratische-erosion", "nicht-finanzielle-staatsschulden"],
+      "curatedCrosslinks": [
+        {"targetTermId": "demokratische-erosion", "relationType": "Schadensprozess", "reason": "Vertrauensverlust und institutionelle Schwächung sind Formen demokratischer Erosion."},
+        {"targetTermId": "nicht-finanzielle-staatsschulden", "relationType": "Begriffsfamilie", "reason": "Demokratische Staatsschuld beschreibt eine nichtfinanzielle Zukunftslast."}
+      ]
+    },
+    {
+      "termId": "digital-ki-und-plattformstandards",
+      "canonicalLabel": "Digital-, KI- und Plattformstandards",
+      "relatedTerms": ["ki-governance", "plattformregulierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "ki-governance", "relationType": "Governancebezug", "reason": "KI-Standards konkretisieren Anforderungen an verantwortliche Entwicklung und Aufsicht."},
+        {"targetTermId": "plattformregulierung", "relationType": "Regulierungsbezug", "reason": "Plattformstandards werden durch Regeln für große digitale Dienste umgesetzt."}
+      ]
+    },
+    {
+      "termId": "donut-oekonomie",
+      "canonicalLabel": "Donut-Ökonomie / Doughnut Economics Action Lab",
+      "relatedTerms": ["planetare-grenzen", "mensch-planet-demokratie"],
+      "curatedCrosslinks": [
+        {"targetTermId": "planetare-grenzen", "relationType": "Ökologische Grenze", "reason": "Die äußere Grenze des Donuts bildet ökologische Belastungsgrenzen ab."},
+        {"targetTermId": "mensch-planet-demokratie", "relationType": "Bewertungsrahmen", "reason": "Beide Ansätze verbinden soziale Bedingungen mit ökologischer Tragfähigkeit."}
+      ]
+    },
+    {
+      "termId": "dora",
+      "canonicalLabel": "DORA",
+      "relatedTerms": ["cyberresilienz", "risikomanagement"],
+      "curatedCrosslinks": [
+        {"targetTermId": "cyberresilienz", "relationType": "Regelungsziel", "reason": "DORA stärkt die digitale Widerstandsfähigkeit von Finanzunternehmen."},
+        {"targetTermId": "risikomanagement", "relationType": "Pflichtenbezug", "reason": "IKT-Risiken müssen identifiziert, getestet und gemeldet werden."}
+      ]
+    },
+    {
+      "termId": "eigentumsangst",
+      "canonicalLabel": "Eigentumsangst",
+      "relatedTerms": ["eigentumsrechte", "status-threat"],
+      "curatedCrosslinks": [
+        {"targetTermId": "eigentumsrechte", "relationType": "Gegenstandsbezug", "reason": "Die Sorge bezieht sich auf Besitz, Kontrolle und rechtlich abgesicherte Ansprüche."},
+        {"targetTermId": "status-threat", "relationType": "Psychologischer Bezug", "reason": "Der Verlust von Besitz kann als Bedrohung von Status und Sicherheit erlebt werden."}
+      ]
+    },
+    {
+      "termId": "eiopa",
+      "canonicalLabel": "EIOPA",
+      "relatedTerms": ["versicherbarkeit", "esma"],
+      "curatedCrosslinks": [
+        {"targetTermId": "versicherbarkeit", "relationType": "Aufsichtsbereich", "reason": "EIOPA beaufsichtigt Themen des Versicherungswesens und der Altersversorgung."},
+        {"targetTermId": "esma", "relationType": "Institutioneller Vergleich", "reason": "EIOPA und ESMA sind europäische Aufsichtsbehörden für unterschiedliche Finanzsektoren."}
+      ]
+    },
+    {
+      "termId": "elektrolyse",
+      "canonicalLabel": "Elektrolyse",
+      "relatedTerms": ["wasserstoff", "energieeffizienz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wasserstoff", "relationType": "Verfahrensprodukt", "reason": "Elektrolyse ist ein zentraler Weg zur Herstellung von Wasserstoff."},
+        {"targetTermId": "energieeffizienz", "relationType": "Bewertungsmaßstab", "reason": "Die Umwandlungsverluste bestimmen die energetische Sinnhaftigkeit der Anwendung."}
+      ]
+    },
+    {
+      "termId": "endogenes-geld",
+      "canonicalLabel": "Endogenes Geld",
+      "relatedTerms": ["mmt", "monetaere-souveraenitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "mmt", "relationType": "Theoriebezug", "reason": "MMT erläutert Kreditgeldschöpfung und ihre makroökonomischen Folgen."},
+        {"targetTermId": "monetaere-souveraenitaet", "relationType": "Institutioneller Bezug", "reason": "Die Geldschöpfung hängt von Währung, Zentralbank und staatlichen Institutionen ab."}
+      ]
+    },
+    {
+      "termId": "energetische-sanierung",
+      "canonicalLabel": "Energetische Sanierung",
+      "relatedTerms": ["bestandsimmobilie", "sanierungsfahrplan"],
+      "curatedCrosslinks": [
+        {"targetTermId": "bestandsimmobilie", "relationType": "Anwendungsobjekt", "reason": "Energetische Sanierung verbessert vor allem den bereits errichteten Gebäudebestand."},
+        {"targetTermId": "sanierungsfahrplan", "relationType": "Planungsinstrument", "reason": "Ein Sanierungsfahrplan ordnet Maßnahmen fachlich und zeitlich."}
+      ]
+    },
+    {
+      "termId": "entmenschlichender-kampfbegriff",
+      "canonicalLabel": "Entmenschlichender Kampfbegriff",
+      "relatedTerms": ["dehumanisierung", "menschenwuerde"],
+      "curatedCrosslinks": [
+        {"targetTermId": "dehumanisierung", "relationType": "Wirkmechanismus", "reason": "Der Kampfbegriff ist eine sprachliche Form der Entmenschlichung."},
+        {"targetTermId": "menschenwuerde", "relationType": "Schutzgut", "reason": "Entmenschlichende Sprache verletzt die Anerkennung gleicher Würde."}
+      ]
+    },
+    {
+      "termId": "entwicklungskredit",
+      "canonicalLabel": "Entwicklungskredit",
+      "relatedTerms": ["kapitalzugang", "wirkungsinvestition-des-staates"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kapitalzugang", "relationType": "Finanzierungsfunktion", "reason": "Entwicklungskredite schaffen Zugang zu langfristigem Kapital für Vorhaben."},
+        {"targetTermId": "wirkungsinvestition-des-staates", "relationType": "Öffentlicher Wirkbezug", "reason": "Öffentliche Kredite können als Wirkungsinvestition begründet werden, wenn die Wirkung prüfbar ist."}
+      ]
+    },
+    {
+      "termId": "epbd",
+      "canonicalLabel": "EPBD / Energy Performance of Buildings Directive",
+      "relatedTerms": ["gebaeudeenergieperformance", "energetische-sanierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "gebaeudeenergieperformance", "relationType": "Regelungsgegenstand", "reason": "Die EPBD regelt Anforderungen an die Gesamtenergieeffizienz von Gebäuden."},
+        {"targetTermId": "energetische-sanierung", "relationType": "Umsetzungsbezug", "reason": "Sanierung ist ein wesentlicher Anwendungsfall der Effizienzvorgaben."}
+      ]
+    },
+    {
+      "termId": "erm",
+      "canonicalLabel": "ERM",
+      "relatedTerms": ["risikomanagement", "enterprise-risk-management-nach-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "risikomanagement", "relationType": "Oberbegriff", "reason": "ERM ist die organisationsweite Ausgestaltung von Risikomanagement."},
+        {"targetTermId": "enterprise-risk-management-nach-wirkung", "relationType": "WÖk-Anwendung", "reason": "Die wirkungsorientierte Variante ergänzt klassische Risiken um mögliche negative Folgen."}
+      ]
+    },
+    {
+      "termId": "erwuenschte-wirkung",
+      "canonicalLabel": "Erwünschte Wirkung",
+      "relatedTerms": ["positive-wirkung", "positive-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "positive-wirkung", "relationType": "Bewertungseinordnung", "reason": "Eine erwünschte Veränderung wird erst im Bewertungsrahmen als positiv eingeordnet."},
+        {"targetTermId": "positive-netto-wirkung", "relationType": "Nebenwirkungsprüfung", "reason": "Erwünschte Einzelwirkungen reichen nicht, wenn Schäden und Verlagerungen überwiegen."}
+      ]
+    },
+    {
+      "termId": "esg-beratung",
+      "canonicalLabel": "ESG-Beratung / Nachhaltigkeitsberatung",
+      "relatedTerms": ["esg", "nachhaltigkeitsmanagement"],
+      "curatedCrosslinks": [
+        {"targetTermId": "esg", "relationType": "Themenbezug", "reason": "ESG-Beratung unterstützt Umwelt-, Sozial- und Governance-Fragen."},
+        {"targetTermId": "nachhaltigkeitsmanagement", "relationType": "Umsetzungsbezug", "reason": "Beratung kann Managementprozesse, Ziele und Berichte strukturieren."}
+      ]
+    },
+    {
+      "termId": "esg-rating",
+      "canonicalLabel": "ESG-Rating",
+      "relatedTerms": ["sustainability-benchmarking", "wirkungsbewertung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sustainability-benchmarking", "relationType": "Methodenbezug", "reason": "Ratings vergleichen ESG-Indikatoren nach festgelegten Regeln."},
+        {"targetTermId": "wirkungsbewertung", "relationType": "Abgrenzung", "reason": "Ein ESG-Rating ersetzt keine vollständige Bewertung tatsächlicher Wirkungen."}
+      ]
+    },
+    {
+      "termId": "esma",
+      "canonicalLabel": "ESMA",
+      "relatedTerms": ["eu", "esg-rating"],
+      "curatedCrosslinks": [
+        {"targetTermId": "eu", "relationType": "Institutioneller Rahmen", "reason": "ESMA ist eine Aufsichtsbehörde der Europäischen Union."},
+        {"targetTermId": "esg-rating", "relationType": "Aufsichtsbezug", "reason": "ESMA wirkt an Regeln für Transparenz und Aufsicht auf Wertpapiermärkten mit."}
+      ]
+    },
+    {
+      "termId": "ets",
+      "canonicalLabel": "ETS",
+      "relatedTerms": ["emissionshandel", "treibhausgasemissionen"],
+      "curatedCrosslinks": [
+        {"targetTermId": "emissionshandel", "relationType": "Instrumententyp", "reason": "Ein ETS ist ein Handelssystem für begrenzte Emissionsrechte."},
+        {"targetTermId": "treibhausgasemissionen", "relationType": "Steuerungsgegenstand", "reason": "Das System soll Treibhausgasemissionen begrenzen oder verteuern."}
+      ]
+    },
+    {
+      "termId": "eu",
+      "canonicalLabel": "EU",
+      "relatedTerms": ["eu-nachhaltigkeitsverfassungsrahmen", "eu-taxonomie"],
+      "curatedCrosslinks": [
+        {"targetTermId": "eu-nachhaltigkeitsverfassungsrahmen", "relationType": "Rechtsrahmen", "reason": "Der Rahmen bündelt EU-Recht und Ziele nachhaltiger Entwicklung."},
+        {"targetTermId": "eu-taxonomie", "relationType": "Regelungsinstrument", "reason": "Die EU-Taxonomie ist ein europäischer Rahmen für nachhaltige Wirtschaftstätigkeiten."}
+      ]
+    },
+    {
+      "termId": "eu-taxonomie-bei-immobilien",
+      "canonicalLabel": "EU-Taxonomie bei Immobilien",
+      "relatedTerms": ["eu-taxonomie", "immobilien"],
+      "curatedCrosslinks": [
+        {"targetTermId": "eu-taxonomie", "relationType": "Anwendungsregel", "reason": "Die Immobilienkriterien sind eine sektorspezifische Anwendung der EU-Taxonomie."},
+        {"targetTermId": "immobilien", "relationType": "Anwendungsfeld", "reason": "Bewertet werden Bau, Erwerb, Sanierung und Betrieb von Immobilien."}
+      ]
+    },
+    {
+      "termId": "fach-zukunft",
+      "canonicalLabel": "Fach Zukunft",
+      "relatedTerms": ["zukunftsfaehigkeit", "wirkungskompetenz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "zukunftsfaehigkeit", "relationType": "Zielbezug", "reason": "Zukunftsorientiertes Fachwissen soll tragfähige Handlungsmöglichkeiten erschließen."},
+        {"targetTermId": "wirkungskompetenz", "relationType": "Kompetenzbezug", "reason": "Wirkungskompetenz verbindet Fachwissen mit dem Verstehen von Folgen und Entscheidungen."}
+      ]
+    },
+    {
+      "termId": "fledermausabschaltung",
+      "canonicalLabel": "Fledermausabschaltung",
+      "relatedTerms": ["windenergie", "biodiversitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "windenergie", "relationType": "Anlagenbezug", "reason": "Die Abschaltung betrifft den Betrieb von Windenergieanlagen."},
+        {"targetTermId": "biodiversitaet", "relationType": "Schutzbezug", "reason": "Sie senkt Kollisionsrisiken für Fledermäuse und dient dem Artenschutz."}
+      ]
+    },
+    {
+      "termId": "folgekosten",
+      "canonicalLabel": "Folgekosten",
+      "relatedTerms": ["kosten-des-nicht-handelns", "externalitaeten"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kosten-des-nicht-handelns", "relationType": "Zeitbezug", "reason": "Unterlassene Vorsorge erzeugt häufig spätere Kosten und Schäden."},
+        {"targetTermId": "externalitaeten", "relationType": "Kostenverlagerung", "reason": "Folgekosten können auf Dritte, öffentliche Haushalte oder spätere Generationen verlagert werden."}
+      ]
+    },
+    {
+      "termId": "folgekostenvermeidung",
+      "canonicalLabel": "Folgekostenvermeidung",
+      "relatedTerms": ["folgekosten", "praevention-als-wirkleistung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "folgekosten", "relationType": "Zielbezug", "reason": "Folgekostenvermeidung zielt auf später nicht eintretende Schäden und Reparaturen."},
+        {"targetTermId": "praevention-als-wirkleistung", "relationType": "Präventionsbezug", "reason": "Prävention wird an vermiedenen Schäden und stabilisierten Bedingungen beurteilt."}
+      ]
+    },
+    {
+      "termId": "foerdercontrolling",
+      "canonicalLabel": "Fördercontrolling",
+      "relatedTerms": ["foerderlogik", "wirkungscontrolling"],
+      "curatedCrosslinks": [
+        {"targetTermId": "foerderlogik", "relationType": "Steuerungsrahmen", "reason": "Förderlogik legt Regeln und Anreize fest, die Controlling prüft und rückkoppelt."},
+        {"targetTermId": "wirkungscontrolling", "relationType": "Methodenbezug", "reason": "Fördercontrolling wird wirkungsorientiert, wenn es Ergebnisse und Folgen in Entscheidungen zurückführt."}
+      ]
+    },
+    {
+      "termId": "foerderlogik",
+      "canonicalLabel": "Förderlogik",
+      "relatedTerms": ["foerdercontrolling", "neoklassische-foerderlogik"],
+      "curatedCrosslinks": [
+        {"targetTermId": "foerdercontrolling", "relationType": "Umsetzungsbezug", "reason": "Controlling prüft die Anwendung der Vergabe- und Rückkopplungsregeln."},
+        {"targetTermId": "neoklassische-foerderlogik", "relationType": "Theorieabgrenzung", "reason": "Die neoklassische Logik ist eine engere, primär an Preisen und Anreizen orientierte Förderperspektive."}
+      ]
+    },
+    {
+      "termId": "fossile-alternative",
+      "canonicalLabel": "Fossile Alternative",
+      "relatedTerms": ["fossile-systemkosten", "lock-in-effekt"],
+      "curatedCrosslinks": [
+        {"targetTermId": "fossile-systemkosten", "relationType": "Kostenbezug", "reason": "Fossile Optionen verursachen häufig Emissions-, Abhängigkeits- und Folgekosten."},
+        {"targetTermId": "lock-in-effekt", "relationType": "Pfadbezug", "reason": "Neue fossile Infrastruktur kann klimaverträgliche Alternativen langfristig erschweren."}
+      ]
+    },
+    {
+      "termId": "framekontrolle",
+      "canonicalLabel": "Framekontrolle",
+      "relatedTerms": ["framing", "reframing"],
+      "curatedCrosslinks": [
+        {"targetTermId": "framing", "relationType": "Gegenstand", "reason": "Framekontrolle erkennt und prüft den übernommenen Deutungsrahmen."},
+        {"targetTermId": "reframing", "relationType": "Gesprächstechnik", "reason": "Reframing setzt einen treffenderen Rahmen, statt den problematischen unkritisch zu wiederholen."}
+      ]
+    },
+    {
+      "termId": "functional-finance",
+      "canonicalLabel": "Functional Finance",
+      "relatedTerms": ["mmt", "funktionale-wirkungsfinanzpolitik"],
+      "curatedCrosslinks": [
+        {"targetTermId": "mmt", "relationType": "Theoriebezug", "reason": "Functional Finance ist ein zentraler finanzpolitischer Anschluss an MMT-Debatten."},
+        {"targetTermId": "funktionale-wirkungsfinanzpolitik", "relationType": "WÖk-Erweiterung", "reason": "Die Wirkungsfinanzpolitik ergänzt Funktionsziele um Netto-Wirkung und Rückkopplung."}
+      ]
+    },
+    {
+      "termId": "funktionale-wirkungsfinanzpolitik",
+      "canonicalLabel": "Funktionale Wirkungsfinanzpolitik",
+      "relatedTerms": ["functional-finance", "wirkungsfinanzierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "functional-finance", "relationType": "Theoriegrundlage", "reason": "Sie übernimmt die funktionsorientierte Sicht auf Finanzpolitik."},
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "Anwendungsform", "reason": "Wirkungsfinanzierung übersetzt den Ansatz in Ziele, Prüfung und Rückkopplung."}
+      ]
+    },
+    {
+      "termId": "fusion",
+      "canonicalLabel": "Fusion",
+      "relatedTerms": ["technologiereifegrad", "energie"],
+      "curatedCrosslinks": [
+        {"targetTermId": "technologiereifegrad", "relationType": "Bewertungskriterium", "reason": "Die Einordnung von Fusion hängt stark vom Reifegrad der Technologie ab."},
+        {"targetTermId": "energie", "relationType": "Anwendungsfeld", "reason": "Fusion wird als mögliche Form der Energieumwandlung diskutiert."}
+      ]
+    },
+    {
+      "termId": "garantie",
+      "canonicalLabel": "Garantie",
+      "relatedTerms": ["risikomanagement", "kapitalzugang"],
+      "curatedCrosslinks": [
+        {"targetTermId": "risikomanagement", "relationType": "Risikoinstrument", "reason": "Garantien verteilen oder begrenzen klar definierte Ausfall- und Schadensrisiken."},
+        {"targetTermId": "kapitalzugang", "relationType": "Finanzierungsbezug", "reason": "Garantien können Finanzierung ermöglichen, indem sie Risiken für Kapitalgebende senken."}
+      ]
+    },
+    {
+      "termId": "gebaeude-und-immobilienstandards",
+      "canonicalLabel": "Gebäude- und Immobilienstandards",
+      "relatedTerms": ["epbd", "gebaeudeenergiegesetz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "epbd", "relationType": "EU-Regelungsbezug", "reason": "Die EPBD setzt europäische Rahmenanforderungen für die Gebäudeenergieperformance."},
+        {"targetTermId": "gebaeudeenergiegesetz", "relationType": "Nationaler Regelungsbezug", "reason": "Das Gebäudeenergiegesetz konkretisiert Anforderungen für Gebäude in Deutschland."}
+      ]
+    },
+    {
+      "termId": "gebaeudeenergieperformance",
+      "canonicalLabel": "Gebäudeenergieperformance",
+      "relatedTerms": ["energetische-sanierung", "gebaeudeenergiegesetz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "energetische-sanierung", "relationType": "Verbesserungsmaßnahme", "reason": "Sanierung verändert Hülle, Technik und Regelung und damit die Energieperformance."},
+        {"targetTermId": "gebaeudeenergiegesetz", "relationType": "Regelungsbezug", "reason": "Das Gesetz enthält Anforderungen an die energetische Qualität von Gebäuden."}
+      ]
+    },
+    {
+      "termId": "gemeinwohloekonomie",
+      "canonicalLabel": "Gemeinwohlökonomie / Gemeinwohl-Bilanz",
+      "relatedTerms": ["mensch-planet-demokratie", "wirkungsbewertung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "mensch-planet-demokratie", "relationType": "Wertebezug", "reason": "Beide ordnen wirtschaftliches Handeln an sozialen, ökologischen und demokratischen Kriterien ein."},
+        {"targetTermId": "wirkungsbewertung", "relationType": "Bewertungsbezug", "reason": "Eine Gemeinwohl-Bilanz ist eine strukturierte Einordnung, nicht der Nachweis aller Wirkungen."}
+      ]
+    },
+    {
+      "termId": "gesichtswahrende_korrektur",
+      "canonicalLabel": "Gesichtswahrende Korrektur",
+      "relatedTerms": ["wertebruecke", "kommunikative_souveraenitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wertebruecke", "relationType": "Gesprächstechnik", "reason": "Eine gemeinsame Wertebasis erleichtert Korrektur ohne Beschämung."},
+        {"targetTermId": "kommunikative_souveraenitaet", "relationType": "Kompetenzbezug", "reason": "Souveräne Kommunikation hält die Sachfrage offen und vermeidet Identitätsangriffe."}
+      ]
+    },
+    {
+      "termId": "globale-oeffentliche-gueter",
+      "canonicalLabel": "Globale öffentliche Güter",
+      "relatedTerms": ["internationale-zusammenarbeit", "globale-wirkungsordnung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "internationale-zusammenarbeit", "relationType": "Kooperationsbezug", "reason": "Klima, Frieden und Pandemievorsorge brauchen grenzüberschreitende Zusammenarbeit."},
+        {"targetTermId": "globale-wirkungsordnung", "relationType": "Governancebezug", "reason": "Eine globale Ordnung koordiniert Regeln und Verantwortlichkeiten für solche Güter."}
+      ]
+    },
+    {
+      "termId": "globale-wirkungsordnung",
+      "canonicalLabel": "Globale Wirkungsordnung",
+      "relatedTerms": ["internationale-zusammenarbeit", "mensch-planet-demokratie"],
+      "curatedCrosslinks": [
+        {"targetTermId": "internationale-zusammenarbeit", "relationType": "Umsetzungsbezug", "reason": "Globale Wirkungssteuerung setzt abgestimmtes Handeln über Grenzen hinweg voraus."},
+        {"targetTermId": "mensch-planet-demokratie", "relationType": "Bewertungsrahmen", "reason": "Die Ordnung soll grenzüberschreitende Folgen in diesen drei Dimensionen sichtbar machen."}
+      ]
+    },
+    {
+      "termId": "gsbp",
+      "canonicalLabel": "GSBP",
+      "relatedTerms": ["biodiversitaet", "globale-wirkungsordnung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "biodiversitaet", "relationType": "Schutzziel", "reason": "Der Rahmen richtet Ziele und Maßnahmen am Schutz biologischer Vielfalt aus."},
+        {"targetTermId": "globale-wirkungsordnung", "relationType": "Globaler Rahmen", "reason": "Der Biodiversitätsrahmen koordiniert internationale Ziele und Berichterstattung."}
+      ]
+    },
+    {
+      "termId": "haushaltsblindleistung",
+      "canonicalLabel": "Haushaltsblindleistung",
+      "relatedTerms": ["staatsfinanzielle-wirkungsblindheit", "wirkungsdefizit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "staatsfinanzielle-wirkungsblindheit", "relationType": "Diagnosebezug", "reason": "Blindleistung entsteht, wenn Mittelbewegungen ohne reale Zustandsänderung als Erfolg gelten."},
+        {"targetTermId": "wirkungsdefizit", "relationType": "Folgebezug", "reason": "Nicht wirksame Ausgaben vergrößern die Lücke zwischen Aufwand und positiver Netto-Wirkung."}
+      ]
+    },
+    {
+      "termId": "haushaltsverlustleistung",
+      "canonicalLabel": "Haushaltsverlustleistung",
+      "relatedTerms": ["negative-wirkung", "oeffentliche-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "negative-wirkung", "relationType": "Wirkungseinordnung", "reason": "Verlustleistung stabilisiert Schäden oder erzeugt negative Folgen."},
+        {"targetTermId": "oeffentliche-netto-wirkung", "relationType": "Bilanzierungsbezug", "reason": "Die öffentliche Netto-Bilanz macht die Schäden neben positiven Effekten sichtbar."}
+      ]
+    },
+    {
+      "termId": "haushaltswashing",
+      "canonicalLabel": "Haushaltswashing",
+      "relatedTerms": ["wirkungswashing", "haushaltswirkleistung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungswashing", "relationType": "Sonderform", "reason": "Haushaltswashing überträgt unbelegte Wirkungsbehauptungen auf öffentliche Ausgaben."},
+        {"targetTermId": "haushaltswirkleistung", "relationType": "Abgrenzung", "reason": "Wirkleistung erfordert Daten, Prüfung und Rückkopplung statt bloßer Zukunftsrhetorik."}
+      ]
+    },
+    {
+      "termId": "haushaltswirkleistung",
+      "canonicalLabel": "Haushaltswirkleistung",
+      "relatedTerms": ["positive-netto-wirkung", "oeffentliche-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "positive-netto-wirkung", "relationType": "Wirkungskriterium", "reason": "Haushaltswirkleistung verlangt eine begründete positive Netto-Veränderung."},
+        {"targetTermId": "oeffentliche-netto-wirkung", "relationType": "Bilanzierungsbezug", "reason": "Die öffentliche Bilanz bezieht Nutzen, Schäden, Folgekosten und Grenzen ein."}
+      ]
+    },
+    {
+      "termId": "heizhammer",
+      "canonicalLabel": "Heizhammer",
+      "relatedTerms": ["kommunale-waermeplanung", "framing"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kommunale-waermeplanung", "relationType": "Sachbezug", "reason": "Wärmeplanung behandelt die tatsächlichen Optionen für bezahlbare und sichere Wärme."},
+        {"targetTermId": "framing", "relationType": "Sprachmechanismus", "reason": "Der Kampfbegriff rahmt Regelungen als Zwang und kann Sachfragen überlagern."}
+      ]
+    },
+    {
+      "termId": "heizkostenrisiko",
+      "canonicalLabel": "Heizkostenrisiko",
+      "relatedTerms": ["energetische-sanierung", "energiearmut"],
+      "curatedCrosslinks": [
+        {"targetTermId": "energetische-sanierung", "relationType": "Risikominderung", "reason": "Effizienzmaßnahmen können den Wärmebedarf und damit Kostenrisiken senken."},
+        {"targetTermId": "energiearmut", "relationType": "Sozialer Folgebezug", "reason": "Hohe oder volatile Heizkosten können Haushalte in Energiearmut bringen."}
+      ]
+    },
+    {
+      "termId": "identitaetsschutz-kognition",
+      "canonicalLabel": "Identitätsschutz-Kognition",
+      "relatedTerms": ["kognitive-dissonanz", "status-threat"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kognitive-dissonanz", "relationType": "Psychologischer Mechanismus", "reason": "Widersprüchliche Informationen können Abwehr zum Schutz des Selbstbilds auslösen."},
+        {"targetTermId": "status-threat", "relationType": "Auslöser", "reason": "Eine wahrgenommene Statusbedrohung kann identitätsschützende Informationsverarbeitung verstärken."}
+      ]
+    },
+    {
+      "termId": "iea",
+      "canonicalLabel": "IEA",
+      "relatedTerms": ["energie", "energiesicherheit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "energie", "relationType": "Themenfeld", "reason": "Die IEA analysiert Energiesysteme, Szenarien und Transformationspfade."},
+        {"targetTermId": "energiesicherheit", "relationType": "Politikbezug", "reason": "Versorgungssicherheit gehört zu ihren zentralen Analyse- und Handlungsthemen."}
+      ]
+    },
+    {
+      "termId": "immobilien",
+      "canonicalLabel": "Immobilien",
+      "relatedTerms": ["bestandsimmobilie", "gebaeude-und-immobilienstandards"],
+      "curatedCrosslinks": [
+        {"targetTermId": "bestandsimmobilie", "relationType": "Bestandssegment", "reason": "Bestandsimmobilien sind bereits errichtete Gebäude innerhalb des Immobilienbegriffs."},
+        {"targetTermId": "gebaeude-und-immobilienstandards", "relationType": "Regelungsbezug", "reason": "Standards betreffen Planung, Betrieb, Energie und Nachhaltigkeit von Immobilien."}
+      ]
+    },
+    {
+      "termId": "impact-investing",
+      "canonicalLabel": "Impact Investing",
+      "relatedTerms": ["impact-of-investment", "t-sroi"],
+      "curatedCrosslinks": [
+        {"targetTermId": "impact-of-investment", "relationType": "Messbezug", "reason": "IOI unterstützt die Prüfung von Veränderung im Verhältnis zu eingesetzten Ressourcen."},
+        {"targetTermId": "t-sroi", "relationType": "Bewertungsmethode", "reason": "T-SROI ist eine explizite Transformations- und Ressourcenrelation, nicht nur eine Renditekennzahl."}
+      ]
+    },
+    {
+      "termId": "industriestrom",
+      "canonicalLabel": "Industriestrom",
+      "relatedTerms": ["energieinfrastruktur", "energieeffizienz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "energieinfrastruktur", "relationType": "Versorgungsbezug", "reason": "Industriestrom benötigt Netze, Anschlüsse und eine verlässliche Stromversorgung."},
+        {"targetTermId": "energieeffizienz", "relationType": "Nutzungsbezug", "reason": "Die Wirkung industriellen Stroms hängt auch von der Effizienz seiner Verwendung ab."}
+      ]
+    },
+    {
+      "termId": "inflationsgrenze",
+      "canonicalLabel": "Inflationsgrenze",
+      "relatedTerms": ["realressourcengrenze", "mmt"],
+      "curatedCrosslinks": [
+        {"targetTermId": "realressourcengrenze", "relationType": "Kapazitätsgrenze", "reason": "Inflationsdruck entsteht, wenn Nachfrage auf knappe reale Ressourcen trifft."},
+        {"targetTermId": "mmt", "relationType": "Theoriebezug", "reason": "MMT betont reale Kapazitäten und Inflation als relevante Grenzen staatlicher Finanzierung."}
+      ]
+    },
+    {
+      "termId": "infraschall",
+      "canonicalLabel": "Infraschall",
+      "relatedTerms": ["windenergie", "messgrenzen-und-unsicherheit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "windenergie", "relationType": "Quellenbezug", "reason": "Windenergieanlagen sind ein häufiger Anlass für Debatten über Infraschall."},
+        {"targetTermId": "messgrenzen-und-unsicherheit", "relationType": "Evidenzbezug", "reason": "Die Einordnung verlangt Angaben zu Quelle, Intensität, Dauer und Unsicherheit."}
+      ]
+    },
+    {
+      "termId": "infrastrukturelle-staatsschuld",
+      "canonicalLabel": "Infrastrukturelle Staatsschuld",
+      "relatedTerms": ["investitionsschuld", "nicht-finanzielle-staatsschulden"],
+      "curatedCrosslinks": [
+        {"targetTermId": "investitionsschuld", "relationType": "Entstehungsbezug", "reason": "Vernachlässigte Netze, Schulen und Gebäude sind aufgeschobene Investitionen."},
+        {"targetTermId": "nicht-finanzielle-staatsschulden", "relationType": "Begriffsfamilie", "reason": "Der Sanierungsrückstand ist eine Zukunftslast jenseits der Geldschuld."}
+      ]
+    },
+    {
+      "termId": "integration-als-infrastruktur",
+      "canonicalLabel": "Integration als Infrastruktur",
+      "relatedTerms": ["kommunale-integrationskapazitaet", "soziale-infrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kommunale-integrationskapazitaet", "relationType": "Lokale Umsetzung", "reason": "Kommunale Kapazität setzt die Voraussetzungen für Teilhabe vor Ort um."},
+        {"targetTermId": "soziale-infrastruktur", "relationType": "Versorgungsbezug", "reason": "Wohnen, Bildung, Gesundheit und Begegnung sind soziale Infrastruktur für Teilhabe."}
+      ]
+    },
+    {
+      "termId": "internationale-zusammenarbeit",
+      "canonicalLabel": "Internationale Zusammenarbeit",
+      "relatedTerms": ["globale-oeffentliche-gueter", "globale-wirkungsordnung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "globale-oeffentliche-gueter", "relationType": "Aufgabenbezug", "reason": "Grenzüberschreitende Güter wie Klima und Pandemievorsorge brauchen gemeinsame Lösungen."},
+        {"targetTermId": "globale-wirkungsordnung", "relationType": "Governancebezug", "reason": "Zusammenarbeit wird durch Regeln, Institutionen und Verantwortlichkeiten organisiert."}
+      ]
+    },
+    {
+      "termId": "iso",
+      "canonicalLabel": "ISO / DIN / EN",
+      "relatedTerms": ["managementsystemstandards", "datenstandard"],
+      "curatedCrosslinks": [
+        {"targetTermId": "managementsystemstandards", "relationType": "Normungsbezug", "reason": "ISO- und DIN-Normen strukturieren viele Managementsysteme."},
+        {"targetTermId": "datenstandard", "relationType": "Datenbezug", "reason": "Normen können Begriffe, Formate und Prüfschritte für Daten vereinheitlichen."}
+      ]
+    },
+    {
+      "termId": "kapitalzugang",
+      "canonicalLabel": "Kapitalzugang",
+      "relatedTerms": ["entwicklungskredit", "wirkungsfonds"],
+      "curatedCrosslinks": [
+        {"targetTermId": "entwicklungskredit", "relationType": "Finanzierungsinstrument", "reason": "Entwicklungskredite können langfristigen Zugang zu Kapital eröffnen."},
+        {"targetTermId": "wirkungsfonds", "relationType": "Finanzierungsform", "reason": "Wirkungsfonds bündeln Kapital für Vorhaben mit definiertem Wirkungsanspruch."}
+      ]
+    },
+    {
+      "termId": "kausalitaet-und-zurechnung",
+      "canonicalLabel": "Kausalität und Zurechnung",
+      "relatedTerms": ["wirkungszurechnung", "wirkpfad"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungszurechnung", "relationType": "Verantwortungsbezug", "reason": "Zurechnung klärt, welchen Beitrag ein Akteur zur beobachteten Veränderung leistet."},
+        {"targetTermId": "wirkpfad", "relationType": "Erklärungsbezug", "reason": "Ein Wirkpfad macht angenommene Ursachen, Zwischenschritte und Folgen nachvollziehbar."}
+      ]
+    },
+    {
+      "termId": "kinderarbeit",
+      "canonicalLabel": "Kinderarbeit / Zwangsarbeit",
+      "relatedTerms": ["menschenrechte-in-der-lieferkette", "ilo-kernarbeitsnormen"],
+      "curatedCrosslinks": [
+        {"targetTermId": "menschenrechte-in-der-lieferkette", "relationType": "Sorgfaltspflicht", "reason": "Kinder- und Zwangsarbeit sind zentrale Risiken in Lieferketten."},
+        {"targetTermId": "ilo-kernarbeitsnormen", "relationType": "Normbezug", "reason": "Die Kernarbeitsnormen markieren verbindliche Schutzlinien gegen ausbeuterische Arbeit."}
+      ]
+    },
+    {
+      "termId": "klima-und-emissionsstandards",
+      "canonicalLabel": "Klima- und Emissionsstandards",
+      "relatedTerms": ["thg-emissions-scopes", "treibhausgasemissionen"],
+      "curatedCrosslinks": [
+        {"targetTermId": "thg-emissions-scopes", "relationType": "Erfassungslogik", "reason": "Scopes ordnen Emissionen Quellen und Wertschöpfungsstufen zu."},
+        {"targetTermId": "treibhausgasemissionen", "relationType": "Messgegenstand", "reason": "Standards regeln, wie Treibhausgasemissionen erfasst und verglichen werden."}
+      ]
+    },
+    {
+      "termId": "kommunale-integrationskapazitaet",
+      "canonicalLabel": "Kommunale Integrationskapazität",
+      "relatedTerms": ["integration-als-infrastruktur", "soziale-infrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "integration-als-infrastruktur", "relationType": "Umsetzungsbezug", "reason": "Der Ansatz beschreibt die Leistungen, die Kommunen für Teilhabe bereitstellen müssen."},
+        {"targetTermId": "soziale-infrastruktur", "relationType": "Kapazitätsgrundlage", "reason": "Wohnung, Bildung, Gesundheit und Begegnung bestimmen die kommunale Aufnahmefähigkeit."}
+      ]
+    },
+    {
+      "termId": "kommunale-waermeplanung",
+      "canonicalLabel": "Kommunale Wärmeplanung",
+      "relatedTerms": ["waermewende", "kommunale-energie"],
+      "curatedCrosslinks": [
+        {"targetTermId": "waermewende", "relationType": "Transformationsbezug", "reason": "Wärmeplanung ordnet lokale Wege zu klimaverträglicher Wärmeversorgung."},
+        {"targetTermId": "kommunale-energie", "relationType": "Räumlicher Bezug", "reason": "Sie verbindet Erzeugung, Netze, Gebäude und Nachfrage im kommunalen Energiesystem."}
+      ]
+    },
+    {
+      "termId": "kommunikative_souveraenitaet",
+      "canonicalLabel": "Kommunikative Souveränität",
+      "relatedTerms": ["framekontrolle", "psychologischer_wirkungscheck"],
+      "curatedCrosslinks": [
+        {"targetTermId": "framekontrolle", "relationType": "Gesprächsfähigkeit", "reason": "Souveräne Kommunikation erkennt problematische Frames und übernimmt sie nicht unkritisch."},
+        {"targetTermId": "psychologischer_wirkungscheck", "relationType": "Reflexionsinstrument", "reason": "Der Check macht Trigger, Abwehr und Gesprächsmuster sichtbar."}
+      ]
+    },
+    {
+      "termId": "konsumbilanz",
+      "canonicalLabel": "Konsumbilanz",
+      "relatedTerms": ["produktwirkung", "territorialbilanz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "produktwirkung", "relationType": "Bewertungsobjekt", "reason": "Die Konsumbilanz bündelt Folgen von Produkten und ihrem Gebrauch."},
+        {"targetTermId": "territorialbilanz", "relationType": "Bilanzabgrenzung", "reason": "Konsumbezogene Bilanzen unterscheiden sich von Wirkungen innerhalb eines Gebiets."}
+      ]
+    },
+    {
+      "termId": "kontraindikation",
+      "canonicalLabel": "Kontraindikation",
+      "relatedTerms": ["wirkungsrisiko", "rote-linien"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsrisiko", "relationType": "Entscheidungsgrund", "reason": "Eine Kontraindikation liegt vor, wenn Risiken oder Schäden eine Anwendung ausschließen."},
+        {"targetTermId": "rote-linien", "relationType": "Ausschlussregel", "reason": "Rote Linien markieren Bedingungen, unter denen eine Maßnahme nicht vertretbar ist."}
+      ]
+    },
+    {
+      "termId": "kontrollbeduerfnis",
+      "canonicalLabel": "Kontrollbedürfnis",
+      "relatedTerms": ["ambiguitaetsintoleranz", "risikomanagement"],
+      "curatedCrosslinks": [
+        {"targetTermId": "ambiguitaetsintoleranz", "relationType": "Psychologischer Bezug", "reason": "Unklare Situationen können das Bedürfnis nach eindeutiger Steuerbarkeit verstärken."},
+        {"targetTermId": "risikomanagement", "relationType": "Abgrenzung", "reason": "Risikomanagement ist ein transparenter Prozess, nicht die persönliche Illusion vollständiger Kontrolle."}
+      ]
+    },
+    {
+      "termId": "kpi",
+      "canonicalLabel": "KPI",
+      "relatedTerms": ["key-impact-indicator", "impact-controlling"],
+      "curatedCrosslinks": [
+        {"targetTermId": "key-impact-indicator", "relationType": "Kennzahlenabgrenzung", "reason": "Ein KII bezieht sich auf Zustandsveränderung, ein KPI kann bloße Leistung abbilden."},
+        {"targetTermId": "impact-controlling", "relationType": "Steuerungsbezug", "reason": "Impact-Controlling ordnet Leistungskennzahlen in einen Wirkungs- und Rückkopplungsprozess ein."}
+      ]
+    },
+    {
+      "termId": "kraftwerks-nettoleistung",
+      "canonicalLabel": "Kraftwerks-Nettoleistung",
+      "relatedTerms": ["gesicherte-leistung", "energieinfrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "gesicherte-leistung", "relationType": "Leistungsabgrenzung", "reason": "Nettoleistung beschreibt die Einspeisung nach Eigenverbrauch, gesicherte Leistung die verlässliche Verfügbarkeit."},
+        {"targetTermId": "energieinfrastruktur", "relationType": "Systembezug", "reason": "Die nutzbare Einspeisung wird erst im Zusammenspiel mit Netz und System sichtbar."}
+      ]
+    },
+    {
+      "termId": "label",
+      "canonicalLabel": "Label / Siegel",
+      "relatedTerms": ["nachhaltigkeitslabel", "labelwashing"],
+      "curatedCrosslinks": [
+        {"targetTermId": "nachhaltigkeitslabel", "relationType": "Anwendungsfall", "reason": "Nachhaltigkeitslabel sind Siegel für bestimmte Umwelt- oder Sozialkriterien."},
+        {"targetTermId": "labelwashing", "relationType": "Missbrauchsrisiko", "reason": "Ein Label kann ohne substanzielle Prüfung zur irreführenden Aufwertung genutzt werden."}
+      ]
+    },
+    {
+      "termId": "labelwashing",
+      "canonicalLabel": "Labelwashing",
+      "relatedTerms": ["label", "greenwashing"],
+      "curatedCrosslinks": [
+        {"targetTermId": "label", "relationType": "Mittelbezug", "reason": "Labelwashing nutzt Labels oder Siegel für eine unbegründete Aufwertung."},
+        {"targetTermId": "greenwashing", "relationType": "Täuschungsform", "reason": "Labelwashing ist eine spezifische Form irreführender Nachhaltigkeitskommunikation."}
+      ]
+    },
+    {
+      "termId": "laecherlichkeitsframe",
+      "canonicalLabel": "Lächerlichkeitsframe",
+      "relatedTerms": ["framing", "diskurskultur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "framing", "relationType": "Sprachmechanismus", "reason": "Der Frame verschiebt die Wahrnehmung vom Inhalt auf Spott und Abwertung."},
+        {"targetTermId": "diskurskultur", "relationType": "Demokratische Folge", "reason": "Lächerlichmachen kann die ernsthafte und faire Auseinandersetzung im Diskurs schwächen."}
+      ]
+    },
+    {
+      "termId": "ladeangst",
+      "canonicalLabel": "Ladeangst",
+      "relatedTerms": ["ladeinfrastruktur", "ladefenster"],
+      "curatedCrosslinks": [
+        {"targetTermId": "ladeinfrastruktur", "relationType": "Versorgungsbezug", "reason": "Verfügbarkeit, Zuverlässigkeit und Zugänglichkeit der Infrastruktur prägen Ladeangst."},
+        {"targetTermId": "ladefenster", "relationType": "Nutzungsbezug", "reason": "Geeignete Zeitfenster bestimmen, ob Laden im Alltag zuverlässig möglich ist."}
+      ]
+    },
+    {
+      "termId": "ladefenster",
+      "canonicalLabel": "Ladefenster",
+      "relatedTerms": ["dynamischer-stromtarif", "ladeangst"],
+      "curatedCrosslinks": [
+        {"targetTermId": "dynamischer-stromtarif", "relationType": "Steuerungsbezug", "reason": "Tarife können Laden in Zeiten mit passender Netz- oder Erzeugungslage lenken."},
+        {"targetTermId": "ladeangst", "relationType": "Nutzungsbezug", "reason": "Planbare Ladefenster können die Sorge vor fehlender Reichweite und Verfügbarkeit reduzieren."}
+      ]
+    },
+    {
+      "termId": "lieferkettenrisiko",
+      "canonicalLabel": "Lieferkettenrisiko",
+      "relatedTerms": ["lieferkettenwirkung", "menschenrechte-in-der-lieferkette"],
+      "curatedCrosslinks": [
+        {"targetTermId": "lieferkettenwirkung", "relationType": "Wirkungsbezug", "reason": "Risiken entlang der Kette können ökologische, soziale und ökonomische Folgen auslösen."},
+        {"targetTermId": "menschenrechte-in-der-lieferkette", "relationType": "Sorgfaltspflicht", "reason": "Menschenrechtsverletzungen sind ein zentraler Teil von Lieferkettenrisiken."}
+      ]
+    },
+    {
+      "termId": "living-wage",
+      "canonicalLabel": "Living Wage / existenzsichernder Lohn",
+      "relatedTerms": ["sozial-arbeits-und-menschenrechtsstandards", "lohnabstand"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sozial-arbeits-und-menschenrechtsstandards", "relationType": "Mindeststandard", "reason": "Existenzsichernde Löhne sind ein Kernanliegen sozialer Arbeitsstandards."},
+        {"targetTermId": "lohnabstand", "relationType": "Einkommensbezug", "reason": "Der Lohnabstand ordnet verfügbare Einkommen und Arbeitsanreize ein, nicht die Angemessenheit des Lohns selbst."}
+      ]
+    },
+    {
+      "termId": "lock-in-effekt",
+      "canonicalLabel": "Lock-in-Effekt",
+      "relatedTerms": ["pfadabhaengigkeit", "verbrenner-lock-in"],
+      "curatedCrosslinks": [
+        {"targetTermId": "pfadabhaengigkeit", "relationType": "Systemmechanismus", "reason": "Lock-ins verfestigen Pfade und erschweren spätere Alternativen."},
+        {"targetTermId": "verbrenner-lock-in", "relationType": "Beispiel", "reason": "Fossile Fahrzeug- und Tankinfrastruktur kann einen konkreten Verbrennerpfad stabilisieren."}
+      ]
+    },
+    {
+      "termId": "lohnabstand",
+      "canonicalLabel": "Lohnabstand",
+      "relatedTerms": ["arbeitsanreiz", "sozialabgaben"],
+      "curatedCrosslinks": [
+        {"targetTermId": "arbeitsanreiz", "relationType": "Verhaltensbezug", "reason": "Der verfügbare Einkommensabstand beeinflusst, aber erklärt nicht allein, Arbeitsentscheidungen."},
+        {"targetTermId": "sozialabgaben", "relationType": "Rechenbezug", "reason": "Abgaben verändern die Differenz zwischen Brutto-, Netto- und verfügbaren Einkommen."}
+      ]
+    },
+    {
+      "termId": "managementsystemstandards",
+      "canonicalLabel": "Managementsystemstandards",
+      "relatedTerms": ["iso", "risikomanagement"],
+      "curatedCrosslinks": [
+        {"targetTermId": "iso", "relationType": "Normungsbezug", "reason": "Viele Managementsystemstandards werden als ISO-Normen veröffentlicht."},
+        {"targetTermId": "risikomanagement", "relationType": "Anwendungsbezug", "reason": "Standards ordnen Zuständigkeiten und Prozesse zum Erkennen und Behandeln von Risiken."}
+      ]
+    },
+    {
+      "termId": "megawattladen",
+      "canonicalLabel": "Megawattladen",
+      "relatedTerms": ["schnellladen", "ladeinfrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "schnellladen", "relationType": "Leistungsklasse", "reason": "Megawattladen ist Hochleistungsladen als besondere Form des Schnellladens."},
+        {"targetTermId": "ladeinfrastruktur", "relationType": "Systembezug", "reason": "Die hohe Leistung stellt besondere Anforderungen an Anschluss, Netz und Standort."}
+      ]
+    },
+    {
+      "termId": "menschenrechte-in-der-lieferkette",
+      "canonicalLabel": "Menschenrechte in der Lieferkette",
+      "relatedTerms": ["kinderarbeit", "lieferkettenrisiko"],
+      "curatedCrosslinks": [
+        {"targetTermId": "kinderarbeit", "relationType": "Schutzrisiko", "reason": "Kinder- und Zwangsarbeit sind konkrete Menschenrechtsrisiken in Lieferketten."},
+        {"targetTermId": "lieferkettenrisiko", "relationType": "Sorgfaltspflicht", "reason": "Menschenrechtsrisiken sind neben Umwelt- und Ausfallrisiken Teil der Lieferkettenprüfung."}
+      ]
+    },
+    {
+      "termId": "misalignment-year",
+      "canonicalLabel": "Misalignment Year",
+      "relatedTerms": ["crrem", "klimaneutralitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "crrem", "relationType": "Messmodell", "reason": "CRREM ermittelt, wann ein Immobilienpfad von definierten Klimazielen abweicht."},
+        {"targetTermId": "klimaneutralitaet", "relationType": "Zielpfad", "reason": "Eine Abweichung setzt einen transparenten Klima- oder Transformationspfad voraus."}
+      ]
+    },
+    {
+      "termId": "mmt",
+      "canonicalLabel": "MMT",
+      "relatedTerms": ["endogenes-geld", "functional-finance"],
+      "curatedCrosslinks": [
+        {"targetTermId": "endogenes-geld", "relationType": "Geldtheorie", "reason": "MMT erklärt die Rolle von Kreditgeldschöpfung im modernen Geldsystem."},
+        {"targetTermId": "functional-finance", "relationType": "Finanzpolitik", "reason": "Functional Finance ist ein wichtiges Konzept für die funktionale Beurteilung öffentlicher Haushalte."}
+      ]
+    },
+    {
+      "termId": "molekuel-hierarchie",
+      "canonicalLabel": "Molekül-Hierarchie",
+      "relatedTerms": ["wasserstoff-hierarchie", "energieeffizienz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wasserstoff-hierarchie", "relationType": "Spezialisierung", "reason": "Die Wasserstoff-Hierarchie konkretisiert die Zuordnung eines knappen Moleküls zu Anwendungen."},
+        {"targetTermId": "energieeffizienz", "relationType": "Bewertungskriterium", "reason": "Die Rangfolge berücksichtigt Umwandlungsverluste und die Qualität alternativer Anwendungen."}
+      ]
+    },
+    {
+      "termId": "monetaere-souveraenitaet",
+      "canonicalLabel": "Monetäre Souveränität",
+      "relatedTerms": ["endogenes-geld", "mmt"],
+      "curatedCrosslinks": [
+        {"targetTermId": "endogenes-geld", "relationType": "Geldsystembezug", "reason": "Die Fähigkeit zur Finanzierung ist mit Kreditgeld, Währung und Zentralbankinstitutionen verbunden."},
+        {"targetTermId": "mmt", "relationType": "Theoriebezug", "reason": "MMT diskutiert den Unterschied zwischen währungssouveränen und nicht souveränen Staaten."}
+      ]
+    },
+    {
+      "termId": "msci-esg-ratings",
+      "canonicalLabel": "MSCI ESG Ratings",
+      "relatedTerms": ["esg-rating", "sustainability-benchmarking"],
+      "curatedCrosslinks": [
+        {"targetTermId": "esg-rating", "relationType": "Anbieterbeispiel", "reason": "MSCI ESG Ratings sind eine konkrete ESG-Ratingmethodik eines Marktanbieters."},
+        {"targetTermId": "sustainability-benchmarking", "relationType": "Methodenbezug", "reason": "Die Ratings vergleichen Unternehmen anhand festgelegter ESG-Indikatoren."}
+      ]
+    },
+    {
+      "termId": "natur-landwirtschafts-und-biodiversitaetsstandards",
+      "canonicalLabel": "Natur-, Landwirtschafts- und Biodiversitätsstandards",
+      "relatedTerms": ["biodiversitaet", "regenerative-landwirtschaft"],
+      "curatedCrosslinks": [
+        {"targetTermId": "biodiversitaet", "relationType": "Schutzgegenstand", "reason": "Die Standards enthalten Anforderungen an Artenvielfalt und ökologische Qualität."},
+        {"targetTermId": "regenerative-landwirtschaft", "relationType": "Anwendungsansatz", "reason": "Regenerative Landwirtschaft ist ein möglicher Weg zur Umsetzung naturbezogener Standards."}
+      ]
+    },
+    {
+      "termId": "nebenwirkung",
+      "canonicalLabel": "Nebenwirkung",
+      "relatedTerms": ["folgewirkung", "wirkungsrisiko"],
+      "curatedCrosslinks": [
+        {"targetTermId": "folgewirkung", "relationType": "Folgebezug", "reason": "Nebenwirkungen sind zusätzliche direkte oder indirekte Folgen einer Maßnahme."},
+        {"targetTermId": "wirkungsrisiko", "relationType": "Risikobezug", "reason": "Mögliche schädliche Nebenwirkungen gehören in die Risikoprüfung."}
+      ]
+    },
+    {
+      "termId": "neoklassische-foerderlogik",
+      "canonicalLabel": "Neoklassische Förderlogik",
+      "relatedTerms": ["foerderlogik", "wirkungsfinanzierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "foerderlogik", "relationType": "Theorievariante", "reason": "Die neoklassische Perspektive ist eine spezifische, an Preisen und Marktversagen orientierte Förderlogik."},
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "Abgrenzung", "reason": "Wirkungsfinanzierung prüft zusätzlich reale Folgen, Grenzen, Datenqualität und Rückkopplung."}
+      ]
+    },
+    {
+      "termId": "nettokreditaufnahme",
+      "canonicalLabel": "Nettokreditaufnahme",
+      "relatedTerms": ["bruttokreditaufnahme", "refinanzierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "bruttokreditaufnahme", "relationType": "Rechenabgrenzung", "reason": "Brutto- und Nettokreditaufnahme unterscheiden sich durch Tilgungen und Gegenbewegungen."},
+        {"targetTermId": "refinanzierung", "relationType": "Finanzierungsvorgang", "reason": "Refinanzierung kann die Neuaufnahme und Ablösung bestehender Verpflichtungen beeinflussen."}
+      ]
+    },
+    {
+      "termId": "nie-eingezahlt-narrativ",
+      "canonicalLabel": "Nie-eingezahlt-Narrativ",
+      "relatedTerms": ["sozialstaats-suendenbock", "erwerbsarbeitslogik"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sozialstaats-suendenbock", "relationType": "Narrativfamilie", "reason": "Beide Frames entwerten soziale Ansprüche und verdecken strukturelle Ursachen."},
+        {"targetTermId": "erwerbsarbeitslogik", "relationType": "Bewertungsmaßstab", "reason": "Das Narrativ reduziert gesellschaftliche Beiträge auf formale Erwerbsbiografien."}
+      ]
+    },
+    {
+      "termId": "no-regret-anwendung",
+      "canonicalLabel": "No-Regret-Anwendung",
+      "relatedTerms": ["wirkungsrisikomanagement", "vorsorgeprinzip"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsrisikomanagement", "relationType": "Entscheidungsbezug", "reason": "No-Regret-Maßnahmen sind unter Unsicherheit besonders robust gegen negative Folgen."},
+        {"targetTermId": "vorsorgeprinzip", "relationType": "Schutzlogik", "reason": "Vorsorge rechtfertigt frühes Handeln, wenn Schäden schwer reversibel sein können."}
+      ]
+    },
+    {
+      "termId": "normativer-massstab",
+      "canonicalLabel": "Normativer Maßstab",
+      "relatedTerms": ["sdg-sdgplus-referenzrahmen", "wirkungsbewertung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sdg-sdgplus-referenzrahmen", "relationType": "Referenzrahmen", "reason": "SDG und SDG+ sind ein offengelegter Rahmen für die Einordnung positiver Wirkung."},
+        {"targetTermId": "wirkungsbewertung", "relationType": "Bewertungsgrundlage", "reason": "Eine Bewertung muss benennen, nach welchen Werten, Rechten und Grenzen sie urteilt."}
+      ]
+    },
+    {
+      "termId": "nullsummenfehler",
+      "canonicalLabel": "Nullsummenfehler",
+      "relatedTerms": ["interdependenz", "wohlstand-als-systemzustand"],
+      "curatedCrosslinks": [
+        {"targetTermId": "interdependenz", "relationType": "Systembezug", "reason": "Wechselwirkungen zeigen, dass Gewinne und Verluste nicht zwangsläufig eine feste Nullsumme bilden."},
+        {"targetTermId": "wohlstand-als-systemzustand", "relationType": "Wohlstandsbezug", "reason": "Wohlstand umfasst tragfähige Zustände und ist nicht nur ein zu verteilender Geldbetrag."}
+      ]
+    },
+    {
+      "termId": "oecd",
+      "canonicalLabel": "OECD",
+      "relatedTerms": ["oecd-leitsaetze", "wellbeing-economy"],
+      "curatedCrosslinks": [
+        {"targetTermId": "oecd-leitsaetze", "relationType": "Institutionelles Instrument", "reason": "Die OECD-Leitsätze sind ein konkreter Referenzrahmen der Organisation."},
+        {"targetTermId": "wellbeing-economy", "relationType": "Analysebezug", "reason": "Die OECD veröffentlicht Daten und Empfehlungen zu Wohlstand, Lebensqualität und Politik."}
+      ]
+    },
+    {
+      "termId": "oeffentliche-finanzen-schulden-und-wirkung",
+      "canonicalLabel": "Öffentliche Finanzen, Schulden und Wirkung",
+      "relatedTerms": ["wirkungsfinanzierung", "oeffentliche-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "Steuerungsansatz", "reason": "Wirkungsfinanzierung verbindet Einnahmen, Ausgaben und Kredite mit überprüfbaren Zielen."},
+        {"targetTermId": "oeffentliche-netto-wirkung", "relationType": "Bewertungsmaßstab", "reason": "Die Netto-Betrachtung erfasst Nutzen, Schäden, Folgekosten und Schutzgrenzen öffentlicher Entscheidungen."}
+      ]
+    },
+    {
+      "termId": "oeffentliche-netto-wirkung",
+      "canonicalLabel": "Öffentliche Netto-Wirkung",
+      "relatedTerms": ["netto-wirkung", "mensch-planet-demokratie"],
+      "curatedCrosslinks": [
+        {"targetTermId": "netto-wirkung", "relationType": "Begriffsanwendung", "reason": "Öffentliche Netto-Wirkung wendet die Netto-Bilanz auf staatliches Handeln an."},
+        {"targetTermId": "mensch-planet-demokratie", "relationType": "Bewertungsdimension", "reason": "Die Bilanz ordnet Folgen für Menschen, ökologische Lebensgrundlagen und Demokratie ein."}
+      ]
+    },
+    {
+      "termId": "outcome",
+      "canonicalLabel": "Outcome",
+      "relatedTerms": ["output", "wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "output", "relationType": "Abgrenzung", "reason": "Output ist die erbrachte Leistung, Outcome die eingetretene Veränderung bei Zielgruppen oder Systemen."},
+        {"targetTermId": "wirkung", "relationType": "Wirkungsbezug", "reason": "Ein Outcome kann ein beobachteter Teil einer tatsächlichen Zustandsveränderung sein."}
+      ]
+    },
+    {
+      "termId": "output",
+      "canonicalLabel": "Output",
+      "relatedTerms": ["outcome", "wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "outcome", "relationType": "Abgrenzung", "reason": "Output beschreibt Leistung; Outcome fragt nach der darauf folgenden Veränderung."},
+        {"targetTermId": "wirkung", "relationType": "Nachweisgrenze", "reason": "Eine Menge erbrachter Leistungen beweist für sich noch keine Wirkung."}
+      ]
+    },
+    {
+      "termId": "planet",
+      "canonicalLabel": "Planet",
+      "relatedTerms": ["biodiversitaet", "planetare-grenzen"],
+      "curatedCrosslinks": [
+        {"targetTermId": "biodiversitaet", "relationType": "Schutzdimension", "reason": "Biologische Vielfalt ist eine zentrale ökologische Lebensgrundlage."},
+        {"targetTermId": "planetare-grenzen", "relationType": "Grenzenbezug", "reason": "Planetare Grenzen markieren Belastungsräume, die ökologische Systeme nicht überschreiten sollten."}
+      ]
+    },
+    {
+      "termId": "platform-on-sustainable-finance",
+      "canonicalLabel": "Platform on Sustainable Finance",
+      "relatedTerms": ["eu-taxonomie", "taxonomy-compass"],
+      "curatedCrosslinks": [
+        {"targetTermId": "eu-taxonomie", "relationType": "Beratungsauftrag", "reason": "Die Platform berät die Kommission zur Weiterentwicklung der EU-Taxonomie."},
+        {"targetTermId": "taxonomy-compass", "relationType": "Informationsbezug", "reason": "Der Compass macht Taxonomiekriterien zugänglich, die im Beratungsumfeld weiterentwickelt werden."}
+      ]
+    },
+    {
+      "termId": "praevention-als-wirkleistung",
+      "canonicalLabel": "Prävention als Wirkleistung",
+      "relatedTerms": ["praevention", "folgekostenvermeidung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "praevention", "relationType": "Grundansatz", "reason": "Prävention setzt vor Eintritt eines Schadens oder einer Verschlechterung an."},
+        {"targetTermId": "folgekostenvermeidung", "relationType": "Bewertungskriterium", "reason": "Wirkleistung wird an vermiedenen Schäden und späteren Belastungen geprüft."}
+      ]
+    },
+    {
+      "termId": "privathaushaltsmythos",
+      "canonicalLabel": "Privathaushaltsmythos",
+      "relatedTerms": ["mmt", "privatkredit-frame"],
+      "curatedCrosslinks": [
+        {"targetTermId": "mmt", "relationType": "Theorieabgrenzung", "reason": "MMT erklärt, warum ein währungssouveräner Staat nicht wie ein Privathaushalt bilanziert wird."},
+        {"targetTermId": "privatkredit-frame", "relationType": "Framebezug", "reason": "Der Privatkredit-Frame überträgt dieselbe falsche Analogie auf staatliche Verschuldung."}
+      ]
+    },
+    {
+      "termId": "privatkredit-frame",
+      "canonicalLabel": "Privatkredit-Frame",
+      "relatedTerms": ["privathaushaltsmythos", "monetaere-souveraenitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "privathaushaltsmythos", "relationType": "Framefamilie", "reason": "Beide Begriffe übertragen private Schuldenlogik unzulässig auf staatliche Finanzpolitik."},
+        {"targetTermId": "monetaere-souveraenitaet", "relationType": "Sachliche Abgrenzung", "reason": "Währung und monetäre Institutionen verändern die Bedingungen staatlicher Finanzierung grundlegend."}
+      ]
+    },
+    {
+      "termId": "produkt-umwelt-und-kreislauflabels",
+      "canonicalLabel": "Produkt-, Umwelt- und Kreislauflabels",
+      "relatedTerms": ["label", "produktwirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "label", "relationType": "Kennzeichnungsform", "reason": "Produkt- und Umweltlabels sind spezielle Formen von Labeln und Siegeln."},
+        {"targetTermId": "produktwirkung", "relationType": "Abgrenzung", "reason": "Ein Label belegt meist Teilkriterien, nicht die gesamte Wirkung eines Produkts."}
+      ]
+    },
+    {
+      "termId": "psychologischer_wirkungscheck",
+      "canonicalLabel": "Psychologischer Wirkungscheck",
+      "relatedTerms": ["debiasing", "resonanzprofil"],
+      "curatedCrosslinks": [
+        {"targetTermId": "debiasing", "relationType": "Interventionsbezug", "reason": "Der Check kann Verzerrungen und emotionale Fehlreaktionen als Ansatz für Debiasing sichtbar machen."},
+        {"targetTermId": "resonanzprofil", "relationType": "Analyseergebnis", "reason": "Ein Resonanzprofil beschreibt die Anschlussräume, die der Check bei Sprache oder Maßnahmen erfasst."}
+      ]
+    },
+    {
+      "termId": "psychologisches_stoeckchen",
+      "canonicalLabel": "Psychologisches Stöckchen",
+      "relatedTerms": ["sprachlicher-trigger", "psychologischer_wirkungscheck"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sprachlicher-trigger", "relationType": "Auslösemechanismus", "reason": "Das Stöckchen soll häufig eine emotionale oder defensive Reaktion auslösen."},
+        {"targetTermId": "psychologischer_wirkungscheck", "relationType": "Analysebezug", "reason": "Der Check hilft, Auslöser, erwartete Reaktion und Gesprächsfolge zu prüfen."}
+      ]
+    },
+    {
+      "termId": "ptl-kraftstoff",
+      "canonicalLabel": "PtL-Kraftstoff",
+      "relatedTerms": ["elektrolyse", "wasserstoff"],
+      "curatedCrosslinks": [
+        {"targetTermId": "elektrolyse", "relationType": "Herstellungsweg", "reason": "PtL benötigt häufig Wasserstoff, der mit Strom per Elektrolyse erzeugt wird."},
+        {"targetTermId": "wasserstoff", "relationType": "Ausgangsstoff", "reason": "Wasserstoff ist ein zentraler Bestandteil synthetischer strombasierter Kraftstoffe."}
+      ]
+    },
+    {
+      "termId": "public-purpose",
+      "canonicalLabel": "Public Purpose",
+      "relatedTerms": ["public-purpose-finance", "oeffentliche-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "public-purpose-finance", "relationType": "Finanzierungsanwendung", "reason": "Public Purpose Finance richtet öffentliche Finanzierung an einem gesellschaftlichen Zweck aus."},
+        {"targetTermId": "oeffentliche-netto-wirkung", "relationType": "Bewertungsbezug", "reason": "Ein öffentlicher Zweck muss an realen positiven und negativen Folgen prüfbar bleiben."}
+      ]
+    },
+    {
+      "termId": "public-purpose-finance",
+      "canonicalLabel": "Public Purpose Finance",
+      "relatedTerms": ["public-purpose", "wirkungsfinanzierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "public-purpose", "relationType": "Zielgrundlage", "reason": "Der öffentliche Zweck begründet, wofür öffentliche Finanzierung eingesetzt wird."},
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "WÖk-Präzisierung", "reason": "Wirkungsfinanzierung ergänzt den Zweck durch Netto-Prüfung, Ressourcenlage und Rückkopplung."}
+      ]
+    },
+    {
+      "termId": "qualifikationsverlust",
+      "canonicalLabel": "Qualifikationsverlust",
+      "relatedTerms": ["weiterbildung", "uebergangstaetigkeit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "weiterbildung", "relationType": "Präventionsbezug", "reason": "Weiterbildung kann den Abbau und die Entwertung von Fähigkeiten verringern."},
+        {"targetTermId": "uebergangstaetigkeit", "relationType": "Übergangsbezug", "reason": "Unterstützte Übergänge zwischen Lebensphasen können Qualifikationen erhalten."}
+      ]
+    },
+    {
+      "termId": "reach",
+      "canonicalLabel": "REACH",
+      "relatedTerms": ["hazardous-substances", "materialgesundheit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "hazardous-substances", "relationType": "Regelungsgegenstand", "reason": "REACH betrifft Registrierung, Bewertung und Beschränkung gefährlicher Stoffe."},
+        {"targetTermId": "materialgesundheit", "relationType": "Bewertungsbezug", "reason": "Stoffregulierung ist wichtig für die gesundheitliche Qualität von Materialien und Produkten."}
+      ]
+    },
+    {
+      "termId": "realressourcengrenze",
+      "canonicalLabel": "Realressourcengrenze",
+      "relatedTerms": ["inflationsgrenze", "wirkungsspielraum"],
+      "curatedCrosslinks": [
+        {"targetTermId": "inflationsgrenze", "relationType": "Kapazitätsbezug", "reason": "Knappheit bei Personal, Material oder Energie kann zusätzlichen Nachfragedruck in Inflation übersetzen."},
+        {"targetTermId": "wirkungsspielraum", "relationType": "Steuerungsgrenze", "reason": "Der reale Ressourcenraum begrenzt, was öffentliche Finanzierung praktisch bewirken kann."}
+      ]
+    },
+    {
+      "termId": "refinanzierung",
+      "canonicalLabel": "Refinanzierung",
+      "relatedTerms": ["bruttokreditaufnahme", "nettokreditaufnahme"],
+      "curatedCrosslinks": [
+        {"targetTermId": "bruttokreditaufnahme", "relationType": "Finanzierungsvorgang", "reason": "Die Ablösung und Verlängerung bestehender Kredite kann Teil der gesamten Neuaufnahme sein."},
+        {"targetTermId": "nettokreditaufnahme", "relationType": "Rechenabgrenzung", "reason": "Die Nettogröße zeigt, was nach Tilgungen und Gegenbewegungen neu hinzukommt."}
+      ]
+    },
+    {
+      "termId": "regelbasierte-ordnung",
+      "canonicalLabel": "Regelbasierte Ordnung",
+      "relatedTerms": ["rechtsstaatlichkeit", "globale-wirkungsordnung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "rechtsstaatlichkeit", "relationType": "Rechtsprinzip", "reason": "Allgemeine, überprüfbare Regeln und Schutz vor Willkür sind Kernelemente des Rechtsstaats."},
+        {"targetTermId": "globale-wirkungsordnung", "relationType": "Internationaler Bezug", "reason": "Auch grenzüberschreitende Kooperation braucht transparente Regeln und Rechenschaft."}
+      ]
+    },
+    {
+      "termId": "reparaturwohlstand",
+      "canonicalLabel": "Reparaturwohlstand",
+      "relatedTerms": ["reparierbarkeit-recht-auf-reparatur", "circular-economy"],
+      "curatedCrosslinks": [
+        {"targetTermId": "reparierbarkeit-recht-auf-reparatur", "relationType": "Gestaltungsbedingung", "reason": "Langlebige und reparierbare Produkte sind eine Voraussetzung von Reparaturwohlstand."},
+        {"targetTermId": "circular-economy", "relationType": "Wirtschaftsansatz", "reason": "Kreislauforientierung verbindet Reparatur mit dem Erhalt von Material und Nutzungsdauer."}
+      ]
+    },
+    {
+      "termId": "resonanzprofil",
+      "canonicalLabel": "Resonanzprofil",
+      "relatedTerms": ["resonanzraum", "psychologischer_wirkungscheck"],
+      "curatedCrosslinks": [
+        {"targetTermId": "resonanzraum", "relationType": "Analysegegenstand", "reason": "Das Profil beschreibt, welche emotionalen und sozialen Anschlussräume aktiviert werden."},
+        {"targetTermId": "psychologischer_wirkungscheck", "relationType": "Erhebungsbezug", "reason": "Der Wirkungscheck kann die Trigger und Gesprächsmuster für ein Profil erfassen."}
+      ]
+    },
+    {
+      "termId": "risikomanagement",
+      "canonicalLabel": "Risikomanagement",
+      "relatedTerms": ["erm", "wirkungsrisikomanagement"],
+      "curatedCrosslinks": [
+        {"targetTermId": "erm", "relationType": "Organisationsform", "reason": "ERM integriert Risikomanagement in die Steuerung einer Organisation."},
+        {"targetTermId": "wirkungsrisikomanagement", "relationType": "WÖk-Anwendung", "reason": "Die wirkungsorientierte Variante berücksichtigt mögliche negative Folgen und systemische Destabilisierung."}
+      ]
+    },
+    {
+      "termId": "rmo",
+      "canonicalLabel": "RMO",
+      "relatedTerms": ["reverse-merit-order", "nichtkompensationsprinzip"],
+      "curatedCrosslinks": [
+        {"targetTermId": "reverse-merit-order", "relationType": "Abkürzung", "reason": "RMO ist die gebräuchliche Abkürzung für Reverse Merit Order."},
+        {"targetTermId": "nichtkompensationsprinzip", "relationType": "Schutzlogik", "reason": "Die Priorisierung darf kritische Schäden nicht durch positive Einzelwerte überdecken."}
+      ]
+    },
+    {
+      "termId": "roi",
+      "canonicalLabel": "ROI",
+      "relatedTerms": ["impact-of-investment", "t-sroi"],
+      "curatedCrosslinks": [
+        {"targetTermId": "impact-of-investment", "relationType": "Kennzahlenabgrenzung", "reason": "IOI bewertet Wirkung im Verhältnis zu Ressourcen, nicht allein finanziellen Ertrag."},
+        {"targetTermId": "t-sroi", "relationType": "Kennzahlenabgrenzung", "reason": "T-SROI verbindet transformativ bewertete Wirkung mit Ressourcen und dokumentierten Annahmen."}
+      ]
+    },
+    {
+      "termId": "rote-linien",
+      "canonicalLabel": "Rote Linien",
+      "relatedTerms": ["nichtkompensationsprinzip", "wirkungsgrenze"],
+      "curatedCrosslinks": [
+        {"targetTermId": "nichtkompensationsprinzip", "relationType": "Schutzlogik", "reason": "Schwere Schäden und Rechteverletzungen dürfen nicht mit positiven Einzelwerten verrechnet werden."},
+        {"targetTermId": "wirkungsgrenze", "relationType": "Grenzbezug", "reason": "Wirkungsgrenzen machen nachvollziehbar, wann eine rote Linie erreicht oder überschritten ist."}
+      ]
+    },
+    {
+      "termId": "rueckbaupflicht",
+      "canonicalLabel": "Rückbaupflicht",
+      "relatedTerms": ["rueckbaustandard", "kreislauffaehigkeit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "rueckbaustandard", "relationType": "Regelungsbezug", "reason": "Rückbaustandards konkretisieren, wie Anlagen oder Flächen wiederhergestellt werden sollen."},
+        {"targetTermId": "kreislauffaehigkeit", "relationType": "Gestaltungsbezug", "reason": "Rückbau kann Wiederverwendung und stoffliche Kreisläufe ermöglichen."}
+      ]
+    },
+    {
+      "termId": "sachleistung",
+      "canonicalLabel": "Sachleistung",
+      "relatedTerms": ["daseinsvorsorge", "soziale-infrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "daseinsvorsorge", "relationType": "Versorgungsform", "reason": "Bildung, Pflege, Wohnen und Mobilität können als konkrete öffentliche Leistungen bereitgestellt werden."},
+        {"targetTermId": "soziale-infrastruktur", "relationType": "Bereitstellungsbezug", "reason": "Viele Sachleistungen setzen Einrichtungen, Personal und dauerhaft tragfähige Infrastruktur voraus."}
+      ]
+    },
+    {
+      "termId": "sanierungsfahrplan",
+      "canonicalLabel": "Sanierungsfahrplan",
+      "relatedTerms": ["energetische-sanierung", "bestandsimmobilie"],
+      "curatedCrosslinks": [
+        {"targetTermId": "energetische-sanierung", "relationType": "Planungsinstrument", "reason": "Der Fahrplan ordnet energetische und bauliche Verbesserungen in sinnvolle Schritte."},
+        {"targetTermId": "bestandsimmobilie", "relationType": "Anwendungsobjekt", "reason": "Sanierungsfahrpläne beziehen sich auf bereits errichtete Gebäude im Bestand."}
+      ]
+    },
+    {
+      "termId": "scheinwohlstand",
+      "canonicalLabel": "Scheinwohlstand",
+      "relatedTerms": ["vorgriffswohlstand", "externalitaeten"],
+      "curatedCrosslinks": [
+        {"targetTermId": "vorgriffswohlstand", "relationType": "Zeitbezug", "reason": "Gegenwärtiger Wohlstand kann auf Kosten künftiger Ressourcen und Handlungsspielräume entstehen."},
+        {"targetTermId": "externalitaeten", "relationType": "Kostenverlagerung", "reason": "Verdeckte Schäden erscheinen nicht im privaten Nutzen, werden aber von anderen getragen."}
+      ]
+    },
+    {
+      "termId": "schnellladepark",
+      "canonicalLabel": "Schnellladepark",
+      "relatedTerms": ["ladepark", "ladeinfrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "ladepark", "relationType": "Anlagentyp", "reason": "Ein Schnellladepark ist ein Ladepark mit mehreren leistungsstarken Ladepunkten."},
+        {"targetTermId": "ladeinfrastruktur", "relationType": "Systembezug", "reason": "Netzanschluss, Steuerung und Aufenthaltsinfrastruktur sind Teile der Ladeinfrastruktur."}
+      ]
+    },
+    {
+      "termId": "schuldenmythos",
+      "canonicalLabel": "Schuldenmythos",
+      "relatedTerms": ["privathaushaltsmythos", "mmt"],
+      "curatedCrosslinks": [
+        {"targetTermId": "privathaushaltsmythos", "relationType": "Fehlanalogie", "reason": "Der Schuldenmythos setzt Staatsschulden mit privater Verschuldung gleich."},
+        {"targetTermId": "mmt", "relationType": "Theorieabgrenzung", "reason": "MMT bietet eine alternative Erklärung öffentlicher Finanzierung und ihrer realen Grenzen."}
+      ]
+    },
+    {
+      "termId": "schwarze-null",
+      "canonicalLabel": "Schwarze Null",
+      "relatedTerms": ["schuldenbremse", "nettokreditaufnahme"],
+      "curatedCrosslinks": [
+        {"targetTermId": "schuldenbremse", "relationType": "Haushaltsregel", "reason": "Beide Konzepte betreffen die Begrenzung öffentlicher Neuverschuldung."},
+        {"targetTermId": "nettokreditaufnahme", "relationType": "Messgröße", "reason": "Die Schwarze Null wird über den Saldo der öffentlichen Kreditaufnahme beurteilt."}
+      ]
+    },
+    {
+      "termId": "sicherheits-t-sroi",
+      "canonicalLabel": "Sicherheits-T-SROI",
+      "relatedTerms": ["t-sroi", "sicherheitsresilienz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "t-sroi", "relationType": "Methodenvariante", "reason": "Sicherheits-T-SROI wendet die transformatorische Ressourcenrelation auf Sicherheitsinvestitionen an."},
+        {"targetTermId": "sicherheitsresilienz", "relationType": "Bewertungsfeld", "reason": "Bewertet werden Beiträge zur Prävention, Bewältigung und Stabilisierung von Sicherheit."}
+      ]
+    },
+    {
+      "termId": "sicherheitspolitische-staatsschuld",
+      "canonicalLabel": "Sicherheitspolitische Staatsschuld",
+      "relatedTerms": ["nicht-finanzielle-staatsschulden", "sicherheitsresilienz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "nicht-finanzielle-staatsschulden", "relationType": "Begriffsfamilie", "reason": "Unterlassene Schutz- und Resilienzinvestitionen erzeugen eine nichtfinanzielle Zukunftslast."},
+        {"targetTermId": "sicherheitsresilienz", "relationType": "Schutzgegenstand", "reason": "Die Schuld entsteht aus geschwächter Fähigkeit, Bedrohungen vorzubeugen und zu bewältigen."}
+      ]
+    },
+    {
+      "termId": "sicherheitsresilienz",
+      "canonicalLabel": "Sicherheitsresilienz",
+      "relatedTerms": ["verteidigungsfaehigkeit", "cyberresilienz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "verteidigungsfaehigkeit", "relationType": "Schutzdimension", "reason": "Verteidigungsfähigkeit ist ein Baustein der Fähigkeit, schwere äußere Bedrohungen abzuwehren."},
+        {"targetTermId": "cyberresilienz", "relationType": "Teilbereich", "reason": "Digitale Angriffe und Ausfälle sind ein wichtiger Sicherheits- und Resilienzbereich."}
+      ]
+    },
+    {
+      "termId": "social-economy",
+      "canonicalLabel": "Social Economy / Solidarity Economy",
+      "relatedTerms": ["solidaritaet", "genossenschaft"],
+      "curatedCrosslinks": [
+        {"targetTermId": "solidaritaet", "relationType": "Leitprinzip", "reason": "Solidarity Economy stellt gegenseitige Unterstützung und soziale Ziele in den Mittelpunkt."},
+        {"targetTermId": "genossenschaft", "relationType": "Organisationsform", "reason": "Genossenschaften sind eine verbreitete kooperative Form sozialer und solidarischer Ökonomie."}
+      ]
+    },
+    {
+      "termId": "sozial-arbeits-und-menschenrechtsstandards",
+      "canonicalLabel": "Sozial-, Arbeits- und Menschenrechtsstandards",
+      "relatedTerms": ["ilo-kernarbeitsnormen", "living-wage"],
+      "curatedCrosslinks": [
+        {"targetTermId": "ilo-kernarbeitsnormen", "relationType": "Normbezug", "reason": "Die ILO-Kernarbeitsnormen konkretisieren grundlegende Rechte bei der Arbeit."},
+        {"targetTermId": "living-wage", "relationType": "Lohnbezug", "reason": "Ein existenzsichernder Lohn ist ein wichtiger Maßstab für angemessene Arbeitsbedingungen."}
+      ]
+    },
+    {
+      "termId": "soziale-staatsschuld",
+      "canonicalLabel": "Soziale Staatsschuld",
+      "relatedTerms": ["nicht-finanzielle-staatsschulden", "soziale-infrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "nicht-finanzielle-staatsschulden", "relationType": "Begriffsfamilie", "reason": "Vernachlässigte soziale Grundlagen sind Zukunftslasten jenseits einer Geldschuld."},
+        {"targetTermId": "soziale-infrastruktur", "relationType": "Entstehungsbezug", "reason": "Mängel bei Bildung, Pflege, Wohnen und Gesundheit können soziale Staatsschuld aufbauen."}
+      ]
+    },
+    {
+      "termId": "sozialstaats-suendenbock",
+      "canonicalLabel": "Sozialstaats-Sündenbock",
+      "relatedTerms": ["sozialstaatsprinzip", "narrativ"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sozialstaatsprinzip", "relationType": "Sachliche Abgrenzung", "reason": "Der Frame greift soziale Sicherung an, die im Sozialstaatsprinzip verankert ist."},
+        {"targetTermId": "narrativ", "relationType": "Begriffstyp", "reason": "Es handelt sich um einen Deutungsrahmen, der Ursachen gesellschaftlicher Probleme verkürzt zuordnet."}
+      ]
+    },
+    {
+      "termId": "sozialtourismus-frame",
+      "canonicalLabel": "Sozialtourismus-Frame",
+      "relatedTerms": ["sozialstaats-suendenbock", "framing"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sozialstaats-suendenbock", "relationType": "Framefamilie", "reason": "Beide Deutungen stellen soziale Sicherung oder ihre Nutzung pauschal als Problem dar."},
+        {"targetTermId": "framing", "relationType": "Sprachmechanismus", "reason": "Der Begriff rahmt Migration und Freizügigkeit einseitig als Missbrauch."}
+      ]
+    },
+    {
+      "termId": "sroi",
+      "canonicalLabel": "SROI",
+      "relatedTerms": ["t-sroi", "impact-of-investment"],
+      "curatedCrosslinks": [
+        {"targetTermId": "t-sroi", "relationType": "Methodenabgrenzung", "reason": "T-SROI ergänzt klassische SROI-Logik um Transformation, Grenzen und dokumentierte Gate-Bedingungen."},
+        {"targetTermId": "impact-of-investment", "relationType": "Ressourcenrelation", "reason": "Beide Ansätze setzen eine bewertete Veränderung in Beziehung zu eingesetzten Ressourcen."}
+      ]
+    },
+    {
+      "termId": "staatsfinanzielle-wirkungsblindheit",
+      "canonicalLabel": "Staatsfinanzielle Wirkungsblindheit",
+      "relatedTerms": ["oeffentliche-finanzen-schulden-und-wirkung", "oeffentliche-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "oeffentliche-finanzen-schulden-und-wirkung", "relationType": "Gegenmodell", "reason": "Der Ansatz verbindet Geldbewegungen mit ihren tatsächlichen gesellschaftlichen Folgen."},
+        {"targetTermId": "oeffentliche-netto-wirkung", "relationType": "Bewertungsalternative", "reason": "Die Netto-Bilanz berücksichtigt Nutzen, Schäden, Folgekosten und Schutzgrenzen."}
+      ]
+    },
+    {
+      "termId": "standortscorecard",
+      "canonicalLabel": "Standortscorecard",
+      "relatedTerms": ["scorecard", "standortwirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "scorecard", "relationType": "Instrumententyp", "reason": "Eine Standortscorecard ist eine spezifische Bewertungsstruktur für einen Standort."},
+        {"targetTermId": "standortwirkung", "relationType": "Bewertungsgegenstand", "reason": "Die Scorecard bündelt Indikatoren zu Folgen der Ansiedlung und des Standorts."}
+      ]
+    },
+    {
+      "termId": "standortwirkung",
+      "canonicalLabel": "Standortwirkung",
+      "relatedTerms": ["standortscorecard", "wirkungsfeld"],
+      "curatedCrosslinks": [
+        {"targetTermId": "standortscorecard", "relationType": "Messinstrument", "reason": "Eine Standortscorecard strukturiert Kennzahlen zu Standortfolgen."},
+        {"targetTermId": "wirkungsfeld", "relationType": "Gliederungsbezug", "reason": "Beschäftigung, Infrastruktur, Klima und Teilhabe sind unterschiedliche Wirkungsfelder eines Standorts."}
+      ]
+    },
+    {
+      "termId": "status-threat",
+      "canonicalLabel": "Status Threat",
+      "relatedTerms": ["identitaetsschutz-kognition", "status-quo-bias"],
+      "curatedCrosslinks": [
+        {"targetTermId": "identitaetsschutz-kognition", "relationType": "Psychologischer Mechanismus", "reason": "Statusbedrohung kann die Abwehr von Informationen zum Schutz des Selbstbilds verstärken."},
+        {"targetTermId": "status-quo-bias", "relationType": "Verhaltensfolge", "reason": "Die Sorge vor Statusverlust kann Präferenzen für bestehende Verhältnisse verstärken."}
+      ]
+    },
+    {
+      "termId": "steuergeld-frame",
+      "canonicalLabel": "Steuergeld-Frame",
+      "relatedTerms": ["privathaushaltsmythos", "oeffentliche-finanzen-schulden-und-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "privathaushaltsmythos", "relationType": "Fehlanalogie", "reason": "Der Frame behandelt öffentliche Ausgaben wie den Verlust eines privaten Haushaltsbudgets."},
+        {"targetTermId": "oeffentliche-finanzen-schulden-und-wirkung", "relationType": "Sachliche Erweiterung", "reason": "Öffentliche Finanzen müssen auch Versorgung, Vorsorge und reale Folgen einbeziehen."}
+      ]
+    },
+    {
+      "termId": "steward-ownership",
+      "canonicalLabel": "Steward Ownership / Verantwortungseigentum",
+      "relatedTerms": ["eigentum-verpflichtet", "eigentumsverantwortung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "eigentum-verpflichtet", "relationType": "Normativer Bezug", "reason": "Verantwortungseigentum übersetzt die Bindung von Eigentum an Verantwortung in eine Unternehmensstruktur."},
+        {"targetTermId": "eigentumsverantwortung", "relationType": "Gestaltungsbezug", "reason": "Die Trennung von Stimm- und Vermögensrechten dient einer langfristigen Zweckverantwortung."}
+      ]
+    },
+    {
+      "termId": "sustainability-benchmarking",
+      "canonicalLabel": "Sustainability Benchmarking / ESG-Rating-Methodik",
+      "relatedTerms": ["benchmark", "esg-rating"],
+      "curatedCrosslinks": [
+        {"targetTermId": "benchmark", "relationType": "Vergleichsgrundlage", "reason": "Benchmarking vergleicht Indikatoren mit definierten Referenz- oder Schwellenwerten."},
+        {"targetTermId": "esg-rating", "relationType": "Bewertungsmethode", "reason": "ESG-Ratings sind eine verbreitete Form regelgeleiteten Nachhaltigkeitsbenchmarkings."}
+      ]
+    },
+    {
+      "termId": "sustainalytics",
+      "canonicalLabel": "Sustainalytics",
+      "relatedTerms": ["esg-rating", "sustainability-benchmarking"],
+      "curatedCrosslinks": [
+        {"targetTermId": "esg-rating", "relationType": "Anbieterbeispiel", "reason": "Sustainalytics bietet ESG-Research, Ratings und Risikoanalysen an."},
+        {"targetTermId": "sustainability-benchmarking", "relationType": "Methodenbezug", "reason": "Die Angebote vergleichen Unternehmen anhand nachhaltigkeitsbezogener Indikatoren und Regeln."}
+      ]
+    },
+    {
+      "termId": "symbolausgabe",
+      "canonicalLabel": "Symbolausgabe",
+      "relatedTerms": ["haushaltsblindleistung", "haushaltswashing"],
+      "curatedCrosslinks": [
+        {"targetTermId": "haushaltsblindleistung", "relationType": "Wirkungsdefizit", "reason": "Eine Symbolausgabe kann Mittel bewegen, ohne eine ausreichende Zustandsveränderung zu erzeugen."},
+        {"targetTermId": "haushaltswashing", "relationType": "Kommunikationsrisiko", "reason": "Sichtbare Ausgaben können ohne Wirkungsarchitektur als Zukunftsinvestition ausgegeben werden."}
+      ]
+    },
+    {
+      "termId": "tankstellenlogik",
+      "canonicalLabel": "Tankstellenlogik",
+      "relatedTerms": ["ladeangst", "ladeinfrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "ladeangst", "relationType": "Wahrnehmungsbezug", "reason": "Die Logik bewertet neue Mobilität mit Erwartungen an sofortige fossile Verfügbarkeit."},
+        {"targetTermId": "ladeinfrastruktur", "relationType": "Systemabgrenzung", "reason": "Ladeinfrastruktur kann zeitlich, räumlich und netzdienlich anders organisiert sein als Tankstellen."}
+      ]
+    },
+    {
+      "termId": "target-gain",
+      "canonicalLabel": "Target Gain",
+      "relatedTerms": ["wirkungsziele-und-impact-okr", "benchmark"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsziele-und-impact-okr", "relationType": "Zielbezug", "reason": "Target Gain beschreibt einen angestrebten Fortschritt gegenüber einem Ausgangszustand."},
+        {"targetTermId": "benchmark", "relationType": "Vergleichsmaßstab", "reason": "Der Gewinn wird gegen einen Ausgangswert, Zielpfad oder fachlichen Benchmark bestimmt."}
+      ]
+    },
+    {
+      "termId": "taxonomy-compass",
+      "canonicalLabel": "Taxonomy Compass / EU Taxonomy Compass",
+      "relatedTerms": ["eu-taxonomie", "technische-bewertungskriterien"],
+      "curatedCrosslinks": [
+        {"targetTermId": "eu-taxonomie", "relationType": "Informationswerkzeug", "reason": "Der Compass erschließt die Anforderungen und Aktivitäten der EU-Taxonomie."},
+        {"targetTermId": "technische-bewertungskriterien", "relationType": "Dateninhalt", "reason": "Er macht die technischen Kriterien für Taxonomiekonformität zugänglich."}
+      ]
+    },
+    {
+      "termId": "technologiereifegrad",
+      "canonicalLabel": "Technologiereifegrad",
+      "relatedTerms": ["technologieoffenheit", "no-regret-anwendung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "technologieoffenheit", "relationType": "Entscheidungsbezug", "reason": "Offenheit für Optionen braucht eine transparente Einordnung ihrer Reife und Einsatzfähigkeit."},
+        {"targetTermId": "no-regret-anwendung", "relationType": "Priorisierungsbezug", "reason": "Reife und robuste Anwendungen lassen sich unter Unsicherheit anders priorisieren als spekulative Optionen."}
+      ]
+    },
+    {
+      "termId": "territorialbilanz",
+      "canonicalLabel": "Territorialbilanz",
+      "relatedTerms": ["konsumbilanz", "bilanzgrenze"],
+      "curatedCrosslinks": [
+        {"targetTermId": "konsumbilanz", "relationType": "Bilanzabgrenzung", "reason": "Konsumbilanzen ordnen Folgen dem Verbrauch zu, Territorialbilanzen einem abgegrenzten Gebiet."},
+        {"targetTermId": "bilanzgrenze", "relationType": "Methodengrundlage", "reason": "Die territoriale Zuordnung muss räumliche, zeitliche und sachliche Grenzen offenlegen."}
+      ]
+    },
+    {
+      "termId": "thermischer-strompfad",
+      "canonicalLabel": "Thermischer Strompfad",
+      "relatedTerms": ["waermepumpe", "energieeffizienz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "waermepumpe", "relationType": "Technologiebeispiel", "reason": "Wärmepumpen nutzen Strom für Wärme mit einer anderen Effizienz als direkte Widerstandsheizung."},
+        {"targetTermId": "energieeffizienz", "relationType": "Bewertungskriterium", "reason": "Temperaturniveau, Umwandlungsverluste und Alternativen bestimmen die Sinnhaftigkeit des Strompfads."}
+      ]
+    },
+    {
+      "termId": "thg",
+      "canonicalLabel": "THG",
+      "relatedTerms": ["treibhausgasemissionen", "klima-und-emissionsstandards"],
+      "curatedCrosslinks": [
+        {"targetTermId": "treibhausgasemissionen", "relationType": "Begriffsbezug", "reason": "THG ist die Abkürzung für die Gase, deren Emissionen zur Erwärmung beitragen."},
+        {"targetTermId": "klima-und-emissionsstandards", "relationType": "Messbezug", "reason": "Standards legen fest, wie THG-Emissionen erfasst, berichtet und verglichen werden."}
+      ]
+    },
+    {
+      "termId": "tiere",
+      "canonicalLabel": "Tiere / nicht-menschliches Leben",
+      "relatedTerms": ["tierschutz-und-tierwohl", "biodiversitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "tierschutz-und-tierwohl", "relationType": "Schutzbezug", "reason": "Tierwohl und Tierschutz konkretisieren die Berücksichtigung nicht-menschlicher Interessen."},
+        {"targetTermId": "biodiversitaet", "relationType": "Ökologischer Bezug", "reason": "Tiere sind Teil der Vielfalt von Arten und ökologischen Wechselwirkungen."}
+      ]
+    },
+    {
+      "termId": "uebergabestation",
+      "canonicalLabel": "Übergabestation",
+      "relatedTerms": ["verteilnetz", "energieinfrastruktur"],
+      "curatedCrosslinks": [
+        {"targetTermId": "verteilnetz", "relationType": "Netzfunktion", "reason": "Übergabestationen koppeln Versorgungsebenen an nachgelagerte Verteilstrukturen."},
+        {"targetTermId": "energieinfrastruktur", "relationType": "Anlagenbezug", "reason": "Sie sind technische Knotenpunkte von Strom-, Wärme- oder Medieninfrastruktur."}
+      ]
+    },
+    {
+      "termId": "uebergangstaetigkeit",
+      "canonicalLabel": "Übergangstätigkeit",
+      "relatedTerms": ["qualifikationsverlust", "weiterbildung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "qualifikationsverlust", "relationType": "Präventionsbezug", "reason": "Unterstützte Übergänge können Unterbrechungen und den Verlust von Fähigkeiten abfedern."},
+        {"targetTermId": "weiterbildung", "relationType": "Befähigungsbezug", "reason": "Weiterbildung kann Übergänge zwischen Arbeit, Care, Rehabilitation und Ruhestand begleiten."}
+      ]
+    },
+    {
+      "termId": "uebertragungsnetz",
+      "canonicalLabel": "Übertragungsnetz",
+      "relatedTerms": ["stromnetz", "verteilnetz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "stromnetz", "relationType": "Netzebene", "reason": "Das Übertragungsnetz ist die hochspannige Ebene des Stromnetzes über große Entfernungen."},
+        {"targetTermId": "verteilnetz", "relationType": "Systemübergang", "reason": "Übertragungs- und Verteilnetz verbinden Erzeugungsregionen mit lokalen Verbrauchern."}
+      ]
+    },
+    {
+      "termId": "ueberwachungskapitalismus",
+      "canonicalLabel": "Überwachungskapitalismus",
+      "relatedTerms": ["digitale-selbstbestimmung", "datenschutz"],
+      "curatedCrosslinks": [
+        {"targetTermId": "digitale-selbstbestimmung", "relationType": "Schutzgut", "reason": "Verhaltensbasierte Geschäftsmodelle können die Kontrolle von Menschen über ihre Daten und Entscheidungen schwächen."},
+        {"targetTermId": "datenschutz", "relationType": "Rechtsbezug", "reason": "Datenschutz begrenzt die Erhebung und Verarbeitung personenbezogener Verhaltensdaten."}
+      ]
+    },
+    {
+      "termId": "unternehmens-impact-und-governance-frameworks",
+      "canonicalLabel": "Unternehmens-, Impact- und Governance-Frameworks",
+      "relatedTerms": ["wirkungsgovernance", "managementsystemstandards"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsgovernance", "relationType": "Steuerungsbezug", "reason": "Wirkungsgovernance ordnet Zuständigkeiten, Kontrolle und Rechenschaft für Folgen."},
+        {"targetTermId": "managementsystemstandards", "relationType": "Strukturbezug", "reason": "Frameworks nutzen Prozesse und Rollen, die Managementsystemstandards konkretisieren können."}
+      ]
+    },
+    {
+      "termId": "verteidigungsfaehigkeit",
+      "canonicalLabel": "Verteidigungsfähigkeit",
+      "relatedTerms": ["sicherheitsresilienz", "sicherheitspolitische-staatsschuld"],
+      "curatedCrosslinks": [
+        {"targetTermId": "sicherheitsresilienz", "relationType": "Schutzdimension", "reason": "Verteidigungsfähigkeit stärkt die Fähigkeit, schwere Bedrohungen abzuwehren und handlungsfähig zu bleiben."},
+        {"targetTermId": "sicherheitspolitische-staatsschuld", "relationType": "Unterlassungsfolge", "reason": "Mangelnde Schutzfähigkeit kann spätere Sicherheitslasten und Risiken erhöhen."}
+      ]
+    },
+    {
+      "termId": "vlop",
+      "canonicalLabel": "VLOP",
+      "relatedTerms": ["dsa", "plattformregulierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "dsa", "relationType": "Rechtsgrundlage", "reason": "VLOPs unterliegen im Digital Services Act erweiterten Sorgfalts- und Transparenzpflichten."},
+        {"targetTermId": "plattformregulierung", "relationType": "Regulierungsbezug", "reason": "Die besonderen Pflichten sind Teil der Regulierung großer Online-Plattformen."}
+      ]
+    },
+    {
+      "termId": "vorgriffswohlstand",
+      "canonicalLabel": "Vorgriffswohlstand",
+      "relatedTerms": ["scheinwohlstand", "zukunftsschulden"],
+      "curatedCrosslinks": [
+        {"targetTermId": "scheinwohlstand", "relationType": "Bewertungsbezug", "reason": "Ein gegenwärtiger Vorteil kann nur scheinbar wohlstandsfördernd sein, wenn er Zukunftskosten verdeckt."},
+        {"targetTermId": "zukunftsschulden", "relationType": "Zeitbezug", "reason": "Vorgriffe auf Ressourcen und Stabilität schränken künftige Handlungsspielräume ein."}
+      ]
+    },
+    {
+      "termId": "w-bip",
+      "canonicalLabel": "W-BIP",
+      "relatedTerms": ["bip", "wellbeing-economy"],
+      "curatedCrosslinks": [
+        {"targetTermId": "bip", "relationType": "Kennzahlenerweiterung", "reason": "W-BIP ergänzt das Bruttoinlandsprodukt um soziale, ökologische und gesellschaftliche Aspekte."},
+        {"targetTermId": "wellbeing-economy", "relationType": "Steuerungsbezug", "reason": "Erweiterte Wohlstandskennzahlen unterstützen eine Orientierung an Lebensqualität statt nur Produktion."}
+      ]
+    },
+    {
+      "termId": "wellbeing-economy",
+      "canonicalLabel": "Wellbeing Economy / Beyond GDP",
+      "relatedTerms": ["bip", "w-bip"],
+      "curatedCrosslinks": [
+        {"targetTermId": "bip", "relationType": "Abgrenzung", "reason": "Wellbeing Economy richtet Steuerung nicht allein am Geldwert der Produktion aus."},
+        {"targetTermId": "w-bip", "relationType": "Kennzahlenbezug", "reason": "W-BIP ist ein Beispiel für die Erweiterung wirtschaftlicher Kennzahlen um Wohlstandsdimensionen."}
+      ]
+    },
+    {
+      "termId": "weltfaehig",
+      "canonicalLabel": "Weltfähig",
+      "relatedTerms": ["zukunftsfaehigkeit", "positive-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "zukunftsfaehigkeit", "relationType": "Tragfähigkeitsbezug", "reason": "Weltfähigkeit fragt nach langfristiger Tragfähigkeit unter ökologischen, sozialen und demokratischen Bedingungen."},
+        {"targetTermId": "positive-netto-wirkung", "relationType": "Bewertungsbezug", "reason": "Positive Netto-Wirkung ist ein prüfbarer Anspruch, um solche Tragfähigkeit nicht nur zu behaupten."}
+      ]
+    },
+    {
+      "termId": "wertebruecke",
+      "canonicalLabel": "Wertebrücke",
+      "relatedTerms": ["gesichtswahrende_korrektur", "kommunikative_souveraenitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "gesichtswahrende_korrektur", "relationType": "Gesprächstechnik", "reason": "Ein gemeinsamer Wert erlaubt Korrektur, ohne die Person abzuwerten."},
+        {"targetTermId": "kommunikative_souveraenitaet", "relationType": "Kompetenzbezug", "reason": "Die Technik hilft, ruhig zu bleiben und zur Wirkungsfrage zurückzuführen."}
+      ]
+    },
+    {
+      "termId": "wirksame-arbeit",
+      "canonicalLabel": "Wirksame Arbeit",
+      "relatedTerms": ["wirkung", "wirksamkeit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkung", "relationType": "Ergebnisbezug", "reason": "Wirksame Arbeit trägt nachvollziehbar zu einer tatsächlichen Zustandsveränderung bei."},
+        {"targetTermId": "wirksamkeit", "relationType": "Prüfbezug", "reason": "Wirksamkeit prüft, ob eine Tätigkeit ihr beabsichtigtes Ergebnis tatsächlich erreicht."}
+      ]
+    },
+    {
+      "termId": "wirkungsdefizit",
+      "canonicalLabel": "Wirkungsdefizit",
+      "relatedTerms": ["wirkungsfinanzierung", "oeffentliche-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "Steuerungsgegenstand", "reason": "Wirkungsfinanzierung soll die Lücke zwischen Mitteleinsatz und positiver Netto-Wirkung sichtbar machen und verringern."},
+        {"targetTermId": "oeffentliche-netto-wirkung", "relationType": "Messbezug", "reason": "Die Netto-Bilanz zeigt, ob öffentliche Mittel Nutzen, Schäden und Folgekosten angemessen berücksichtigen."}
+      ]
+    },
+    {
+      "termId": "wirkungsdisziplin",
+      "canonicalLabel": "Wirkungsdisziplin",
+      "relatedTerms": ["wirkungsfinanzierung", "datenqualitaet"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "Steuerungsprinzip", "reason": "Wirkungsdisziplin bindet öffentliche Finanzierung an Ziel, Netto-Prüfung und Korrektur."},
+        {"targetTermId": "datenqualitaet", "relationType": "Evidenzanforderung", "reason": "Eine belastbare Wirkungsaussage braucht nachvollziehbare Datenqualität und dokumentierte Unsicherheit."}
+      ]
+    },
+    {
+      "termId": "wirkungsebene-1",
+      "canonicalLabel": "Wirkungsebene 1",
+      "relatedTerms": ["wirkungsebene-2", "wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsebene-2", "relationType": "Folgestufe", "reason": "Indirekte Reaktionen und Verlagerungen folgen oft auf unmittelbare Veränderungen."},
+        {"targetTermId": "wirkung", "relationType": "Grundbezug", "reason": "Die Ebene bezeichnet eine direkt beobachtbare Form tatsächlicher Zustandsveränderung."}
+      ]
+    },
+    {
+      "termId": "wirkungsebene-2",
+      "canonicalLabel": "Wirkungsebene 2",
+      "relatedTerms": ["wirkungsebene-1", "wirkungsebene-3"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsebene-1", "relationType": "Ausgangspunkt", "reason": "Ebene 2 beschreibt Folgen, die auf eine unmittelbare Veränderung reagieren."},
+        {"targetTermId": "wirkungsebene-3", "relationType": "Systemfolge", "reason": "Wiederholte indirekte Folgen können Regeln, Anreize und Systempfade verändern."}
+      ]
+    },
+    {
+      "termId": "wirkungsebene-3",
+      "canonicalLabel": "Wirkungsebene 3",
+      "relatedTerms": ["wirkungsebene-2", "transformationswirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsebene-2", "relationType": "Entstehungspfad", "reason": "Indirekte Folgen können sich zu Veränderungen von Regeln, Anreizen und Erwartungen verdichten."},
+        {"targetTermId": "transformationswirkung", "relationType": "Systembezug", "reason": "Systempfadänderungen sind ein Kennzeichen von Transformationswirkung."}
+      ]
+    },
+    {
+      "termId": "wirkungsfeld",
+      "canonicalLabel": "Wirkungsfeld",
+      "relatedTerms": ["mensch-planet-demokratie", "wirkungsindikator"],
+      "curatedCrosslinks": [
+        {"targetTermId": "mensch-planet-demokratie", "relationType": "Gliederungsrahmen", "reason": "Wirkungsfelder können den drei grundlegenden Bewertungsdimensionen zugeordnet werden."},
+        {"targetTermId": "wirkungsindikator", "relationType": "Messbezug", "reason": "Indikatoren machen Veränderungen in einem konkreten Wirkungsfeld beobachtbar."}
+      ]
+    },
+    {
+      "termId": "wirkungsfinanzierung",
+      "canonicalLabel": "Wirkungsfinanzierung",
+      "relatedTerms": ["oeffentliche-netto-wirkung", "realressourcengrenze"],
+      "curatedCrosslinks": [
+        {"targetTermId": "oeffentliche-netto-wirkung", "relationType": "Bewertungsmaßstab", "reason": "Finanzierung wird an der bilanzierten Wirkung auf Mensch, Planet und Demokratie ausgerichtet."},
+        {"targetTermId": "realressourcengrenze", "relationType": "Umsetzungsgrenze", "reason": "Geld schafft keine fehlenden Fachkräfte, Materialien, Energie oder ökologische Tragfähigkeit."}
+      ]
+    },
+    {
+      "termId": "wirkungshaushalt-fuer-auslandsprojekte",
+      "canonicalLabel": "Wirkungshaushalt für Auslandsprojekte",
+      "relatedTerms": ["wirkungshaushalt", "internationale-zusammenarbeit"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungshaushalt", "relationType": "Anwendungsvariante", "reason": "Der Wirkungshaushalt verbindet Mittel, Ziele, Risiken und Rückkopplung in einem Budgetrahmen."},
+        {"targetTermId": "internationale-zusammenarbeit", "relationType": "Kontextbezug", "reason": "Auslandsprojekte benötigen transparente Partnerschaften und grenzüberschreitende Verantwortlichkeiten."}
+      ]
+    },
+    {
+      "termId": "wirkungshebel",
+      "canonicalLabel": "Wirkungshebel / Systemhebel",
+      "relatedTerms": ["hebelpunkt", "wirkpfad"],
+      "curatedCrosslinks": [
+        {"targetTermId": "hebelpunkt", "relationType": "Systembezug", "reason": "Hebelpunkte markieren Stellen im System, an denen Veränderungen überproportional wirken können."},
+        {"targetTermId": "wirkpfad", "relationType": "Erklärungsbezug", "reason": "Ein Wirkpfad zeigt, über welche Zwischenschritte ein Hebel Zustände verändern soll."}
+      ]
+    },
+    {
+      "termId": "wirkungsinvestition-des-staates",
+      "canonicalLabel": "Wirkungsinvestition des Staates",
+      "relatedTerms": ["wirkungsfinanzierung", "positive-netto-wirkung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "Finanzierungsansatz", "reason": "Eine Wirkungsinvestition ist eine konkrete Form öffentlich wirkungsorientierter Finanzierung."},
+        {"targetTermId": "positive-netto-wirkung", "relationType": "Zulassungskriterium", "reason": "Die Investition braucht eine begründete positive Netto-Wirkung statt eines bloßen Ausgabenlabels."}
+      ]
+    },
+    {
+      "termId": "wirkungsklasse",
+      "canonicalLabel": "Wirkungsklasse",
+      "relatedTerms": ["scorecard", "finalscore"],
+      "curatedCrosslinks": [
+        {"targetTermId": "scorecard", "relationType": "Bewertungsrahmen", "reason": "Eine Scorecard dokumentiert Felder, Datenqualität und Regeln für die Zuordnung zu einer Wirkungsklasse."},
+        {"targetTermId": "finalscore", "relationType": "Verdichtungsbezug", "reason": "Ein FinalScore kann nur nach Grenzprüfung eine verdichtete Einordnung unterstützen."}
+      ]
+    },
+    {
+      "termId": "wirkungsrisikomanagement",
+      "canonicalLabel": "Wirkungsrisikomanagement",
+      "relatedTerms": ["wirkungsrisiko", "risikomanagement"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungsrisiko", "relationType": "Gegenstand", "reason": "Gegenstand sind mögliche negative, unerwünschte oder destabilisierende Wirkungen."},
+        {"targetTermId": "risikomanagement", "relationType": "Prozessbezug", "reason": "Es nutzt Erkennen, Bewerten, Begrenzen, Überwachen und Kommunizieren als fortlaufenden Prozess."}
+      ]
+    },
+    {
+      "termId": "wirkungsspielraum",
+      "canonicalLabel": "Wirkungsspielraum",
+      "relatedTerms": ["realressourcengrenze", "wirkungskapazitaet-des-staates"],
+      "curatedCrosslinks": [
+        {"targetTermId": "realressourcengrenze", "relationType": "Umsetzungsgrenze", "reason": "Finanzielle Absicht wird durch Personal, Material, Energie, Zeit und ökologische Tragfähigkeit begrenzt."},
+        {"targetTermId": "wirkungskapazitaet-des-staates", "relationType": "Institutioneller Bezug", "reason": "Staatliche Kapazität entscheidet, ob Finanzierung in tatsächliche Wirkung übersetzt werden kann."}
+      ]
+    },
+    {
+      "termId": "wirkungssteuerkonto",
+      "canonicalLabel": "Wirkungssteuerkonto",
+      "relatedTerms": ["wirkungssteuer", "wkg"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungssteuer", "relationType": "Steuerungsinstrument", "reason": "Das Konto verbindet steuerliche Be- oder Entlastung mit dokumentierten Wirkungsdaten."},
+        {"targetTermId": "wkg", "relationType": "Begriffsnähe", "reason": "WKG bezeichnet ein Wirkungskonto als konzeptionelles Instrument für Zuordnung und Rückkopplung."}
+      ]
+    },
+    {
+      "termId": "wirkungswashing",
+      "canonicalLabel": "Wirkungswashing",
+      "relatedTerms": ["greenwashing", "wirkungsbewertung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "greenwashing", "relationType": "Täuschungsfamilie", "reason": "Beide Begriffe benennen übertriebene oder unbelegte Nachhaltigkeits- und Wirkungsbehauptungen."},
+        {"targetTermId": "wirkungsbewertung", "relationType": "Prüfgegenmittel", "reason": "Eine nachvollziehbare Bewertung prüft Zustandsveränderung, Grenzen, Nebenwirkungen und Evidenz."}
+      ]
+    },
+    {
+      "termId": "wkg",
+      "canonicalLabel": "WKG",
+      "relatedTerms": ["wirkungssteuerkonto", "wirkungsdaten"],
+      "curatedCrosslinks": [
+        {"targetTermId": "wirkungssteuerkonto", "relationType": "Instrumentenbezug", "reason": "Ein Wirkungssteuerkonto ist eine mögliche konkrete Anwendung eines Wirkungskontos."},
+        {"targetTermId": "wirkungsdaten", "relationType": "Datengrundlage", "reason": "Ein Wirkungskonto ordnet, dokumentiert und rückkoppelt nachvollziehbare Wirkungsdaten."}
+      ]
+    },
+    {
+      "termId": "zukunftsdisziplin",
+      "canonicalLabel": "Zukunftsdisziplin",
+      "relatedTerms": ["zukunftsschulden", "wirkungsfinanzierung"],
+      "curatedCrosslinks": [
+        {"targetTermId": "zukunftsschulden", "relationType": "Prüfgegenstand", "reason": "Zukunftsdisziplin macht finanzielle und nichtfinanzielle Lasten für spätere Generationen sichtbar."},
+        {"targetTermId": "wirkungsfinanzierung", "relationType": "Steuerungsansatz", "reason": "Wirkungsfinanzierung verbindet die Prüfung solcher Lasten mit Zielen, Daten und Rückkopplung."}
+      ]
+    },
+    {
+      "termId": "zuschuss",
+      "canonicalLabel": "Zuschuss",
+      "relatedTerms": ["foerderlogik", "foerdercontrolling"],
+      "curatedCrosslinks": [
+        {"targetTermId": "foerderlogik", "relationType": "Vergaberegel", "reason": "Förderlogik bestimmt Zweck, Kriterien und Bedingungen eines Zuschusses."},
+        {"targetTermId": "foerdercontrolling", "relationType": "Prüfbezug", "reason": "Fördercontrolling begleitet Mittelverwendung, Ergebnisse und mögliche Wirkungen eines Zuschusses."}
+      ]
+    }
+  ]
+}

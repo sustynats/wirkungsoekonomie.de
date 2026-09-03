@@ -1,0 +1,66 @@
+name: Wirkungsticker
+
+on:
+  schedule:
+    # UTC candidates for 07, 12, 16 and 20 Europe/Berlin in CET and CEST.
+    - cron: "0 5,6,10,11,14,15,18,19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wirkungsticker-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Select Europe/Berlin slot
+        id: slot
+        run: node scripts/news/schedule.mjs
+      - name: Unit and security tests
+        if: steps.slot.outputs.should_run == 'true'
+        run: npm run news:test
+      - name: Import, analyze and build
+        if: steps.slot.outputs.should_run == 'true'
+        env:
+          WOEK_NEWS_MONTHLY_AI_BUDGET_USD: "5"
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "6"
+          WOEK_NEWS_AI_BATCH_SIZE: "2"
+          WOEK_NEWS_AI_TIMEOUT_MS: "120000"
+        run: npm run news:run
+      - name: Build search index and validate output
+        if: steps.slot.outputs.should_run == 'true'
+        env:
+          SOURCE_DATE_EPOCH: "1787270400"
+        run: |
+          npm run build:search
+          npm run news:validate
+      - name: Commit one atomic update
+        if: steps.slot.outputs.should_run == 'true'
+        env:
+          SLOT_NAME: ${{ steps.slot.outputs.slot }}
+        run: |
+          set -euo pipefail
+          git config user.name "wirkungsticker-bot"
+          git config user.email "wirkungsticker-bot@users.noreply.github.com"
+          git add -- data/news news reports/wirkungsticker-latest-run.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json
+          if git diff --cached --quiet; then
+            echo "Keine neue oder geänderte Wirkungsnachricht."
+            exit 0
+          fi
+          git commit -m "[wirkungsticker] ${SLOT_NAME} $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main
+          git push origin HEAD:main

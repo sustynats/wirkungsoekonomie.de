@@ -1,0 +1,668 @@
+{
+  "base_main_commit": "76e885da27574b1c1d8cd3cbcf6cf6083bceee63",
+  "constraints": {
+    "dns_mapping_synthesized": false,
+    "impact_direction_synthesized": false,
+    "new_fach_judgements_created": false,
+    "party_score_created": false,
+    "recommendation_synthesized": false,
+    "vercel_build_triggered": false
+  },
+  "coverage": {
+    "assessment_maturity": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+    "byte_exact_current_available_final_programme_set_count": 12,
+    "canonical_artifact_count": 12,
+    "canonicalization_completed_in_v2_count": 3,
+    "classified_party_count": 17,
+    "election_source_available_canonicalization_pending_count": 0,
+    "final_election_programme_not_verified_count": 5,
+    "final_election_programme_verified_count": 12,
+    "full_final_election_programme_corpus_available": false,
+    "source_available_for_election_corpus_count": 12
+  },
+  "current_available_final_programme_set": [
+    {
+      "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+      "party": "AfD",
+      "sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+      "party": "BÜNDNIS 90/DIE GRÜNEN",
+      "sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+      "party": "BSW",
+      "sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-DKP-WAHLPROGRAMM",
+      "party": "DKP",
+      "sha256": "dbc90c37b7280b700e8a2bb744f92b17483d865fe2d4e76f37e6c8b79ff09911"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-FDP-WAHLPROGRAMM",
+      "party": "FDP",
+      "sha256": "3e3e1f5cac99864937d79e4d7c9c0bda4a03a71868ba1f25d8bf918766223f32"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-DIE-PARTEI-WAHLPROGRAMM",
+      "party": "Die PARTEI",
+      "sha256": "41e75b0d3cb617f85fff789a3aca217c1a68e761134fecdc44b56d64887d32b8"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-TIERSCHUTZPARTEI-WAHLPROGRAMM",
+      "party": "Tierschutzpartei",
+      "sha256": "1db89d9811e0d546c269c6ad6819603e12841b0d3f7f20f976444858d86cf172"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-SGP-WAHLERKLAERUNG",
+      "party": "SGP",
+      "sha256": "69851181a6d105a1ee3c5decddd6a4bc00922a61f3d363a2b8a0dc6cd464e2a2"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+      "party": "Volt",
+      "sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+      "party": "SPD",
+      "sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-CDU-REGIERUNGSPROGRAMM",
+      "party": "CDU",
+      "sha256": "ff27b8efafc426669f76ef71576a7cbce52bdb95fbb0cc2931afa7e11bbed455"
+    },
+    {
+      "artifact_id": "BE-AGH-2026-LINKE-WAHLPROGRAMM",
+      "party": "Die Linke",
+      "sha256": "70be401125217cac46a94d3b0b97b49bd332774342e54fb22a202043bd099c1f"
+    }
+  ],
+  "descriptor_sha256": "ced556b03cd2f470ef39ac9d8da4717f301241b19e646c1123a52780820c035c",
+  "election": "agh-2026-be",
+  "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
+  "jurisdiction": "berlin",
+  "official_field": {
+    "admitted_party_count": 17,
+    "berlinwide_bezirkslisten_count": 3,
+    "landesliste_count": 12,
+    "official_source_date": "2026-07-24",
+    "official_source_url": "https://www.berlin.de/wahlen/pressemitteilungen/2026/pressemitteilung.1697177.php",
+    "selected_district_bezirkslisten_count": 2
+  },
+  "parties": [
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+        "artifact_url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf",
+        "byte_length": 9161383,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 99,
+        "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+        "title": "Programm der AfD Berlin für die Wahlen am 20. September 2026",
+        "version_evidence": "Direct PDF linked as Landeswahlprogramm 2026 by the official AfD Berlin district page; cover names party, election and date."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "AfD",
+      "public_status_detail": "Die offizielle Berliner Bezirksseite bezeichnet und verlinkt die 99-seitige PDF als Landeswahlprogramm 2026. PDF-Cover, Wahlbezug, Byteumfang und SHA-256 sind eingefroren; das separate Bezirkswahlprogramm bleibt ein anderes Objekt.",
+      "public_status_label": "Finales Landeswahlprogramm bytegenau verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_LANDESPROGRAMME_PDF_BYTE_EXACT",
+      "source_urls": [
+        {
+          "label": "Offizielle Wahlseite AfD Lichtenberg",
+          "url": "https://lichtenberg.afd.berlin/wahl-2026/"
+        },
+        {
+          "label": "Landeswahlprogramm-PDF",
+          "url": "https://lichtenberg.afd.berlin/wp-content/uploads/2026/07/AfD-WK-Berlin-Wahlprogramm-Webversion.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-GRUENE-WAHLPROGRAMM",
+        "artifact_url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf",
+        "byte_length": 2212991,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 256,
+        "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "db07990ef613bf239691980873dbfaff3df98e07e8a27c5e05edc2363d9dade2",
+        "title": "Politik ändern. Berlin bleiben. Wahlprogramm zur Abgeordnetenhauswahl 2026",
+        "version_evidence": "Direct full-programme PDF linked by the official Berlin party programme page; cover identifies election and party."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "BÜNDNIS 90/DIE GRÜNEN",
+      "public_status_detail": "Das beschlossene Berliner Wahlprogramm 2026 ist als parteioffizielle Programmquelle verfügbar.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE",
+      "source_urls": [
+        {
+          "label": "Wahlprogramm",
+          "url": "https://gruene.berlin/wahlprogramm"
+        },
+        {
+          "label": "Wahlprogramm-PDF",
+          "url": "https://gruene.berlin/fileadmin/BE/lv_berlin/files/Wahlprogramm_2026_Online.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+        "artifact_url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf",
+        "byte_length": 757572,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 66,
+        "publication_status": "PARTY_APPROVED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+        "title": "Berlin – Mit uns endlich vernünftig und gerecht",
+        "version_evidence": "Direct 66-page PDF linked by the official party page documenting adoption on 25 April 2026."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "BSW",
+      "public_status_detail": "Das am 25. April 2026 verabschiedete 66-seitige Landeswahlprogramm liegt als parteioffizielle PDF vor.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_PDF",
+      "source_urls": [
+        {
+          "label": "Programmseite",
+          "url": "https://bsw.berlin/allgemein/entwurf-des-landeswahlprogramms-des-berliner-bsw/"
+        },
+        {
+          "label": "Programm-PDF",
+          "url": "https://bsw.berlin/wp-content/uploads/Wahlprogramm-BSW-Berlin-AGH-Wahl-2026.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-DKP-WAHLPROGRAMM",
+        "artifact_url": "https://berlin.dkp.de/wp-content/uploads/sites/83/2026/04/Wahlprogramm.pdf",
+        "byte_length": 1911023,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 8,
+        "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "dbc90c37b7280b700e8a2bb744f92b17483d865fe2d4e76f37e6c8b79ff09911",
+        "title": "Wahlprogramm zur Berliner Abgeordnetenhauswahl 2026",
+        "version_evidence": "Direct PDF linked as Wahlprogramm zur AGH-Wahl by the official DKP election page; cover identifies election and party state association."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "DKP",
+      "public_status_detail": "Die parteioffizielle Wahlseite verlinkt die achtseitige PDF ausdrücklich als Wahlprogramm zur AGH-Wahl. Titel, Dateiidentität, Byteumfang und SHA-256 sind eingefroren.",
+      "public_status_label": "Finales Wahlprogramm bytegenau verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_AGH_PROGRAMME_PDF_BYTE_EXACT",
+      "source_urls": [
+        {
+          "label": "Offizielle Wahlseite",
+          "url": "https://trep-koep.dkp.de/berliner-wahlen-2026/"
+        },
+        {
+          "label": "Wahlprogramm-PDF",
+          "url": "https://berlin.dkp.de/wp-content/uploads/sites/83/2026/04/Wahlprogramm.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "GENERAL_CURRENT_PARTY_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": null,
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "Die Urbane.",
+      "public_status_detail": "Die Partei bezeichnet ihr allgemeines Programm selbst als unvollständig und ohne finales Lektorat. Ein eigener finaler Berlin-2026-Programmartifact ist nicht verifiziert.",
+      "public_status_label": "Allgemeines Programm in Arbeit · kein finales Wahlprogramm",
+      "source_available_for_election_corpus": false,
+      "source_status": "GENERAL_WORK_IN_PROGRESS_NOT_FINAL_ELECTION_PROGRAMME",
+      "source_urls": [
+        {
+          "label": "Allgemeines Programm",
+          "url": "https://www.die-urbane.de/programm.html"
+        },
+        {
+          "label": "Landesverband Berlin",
+          "url": "https://www.die-urbane.de/die-urbane/landesverbaende/du-berlin.html"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-FDP-WAHLPROGRAMM",
+        "artifact_url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf",
+        "byte_length": 1208209,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 121,
+        "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "3e3e1f5cac99864937d79e4d7c9c0bda4a03a71868ba1f25d8bf918766223f32",
+        "title": "Berlin geht besser. Das Wahlprogramm zur Abgeordnetenhauswahl 2026",
+        "version_evidence": "Direct full-programme PDF linked by the official party programme page; filename and cover identify the final election version."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "FDP",
+      "public_status_detail": "Das Berliner Wahlprogramm zur Abgeordnetenhauswahl 2026 ist als parteioffizielle Programmquelle verfügbar.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE",
+      "source_urls": [
+        {
+          "label": "Wahlprogramm",
+          "url": "https://www.fdp-berlin.de/wahlprogramm"
+        },
+        {
+          "label": "Wahlprogramm-PDF",
+          "url": "https://www.fdp-berlin.de/sites/default/files/2026-07/Wahlprogramm_FDP%20Berlin_Abgeordnetenhauswahl%202026_FINAL.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "ELECTION_CAMPAIGN_AND_GENERAL_PROGRAMME_REFERENCE",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": null,
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "ÖDP",
+      "public_status_detail": "Kampagne, Flyer und Spot sind Kommunikationsquellen. Bestehende landespolitische Programmatik wird nicht still als finales Berlin-2026-Wahlprogramm umetikettiert.",
+      "public_status_label": "Wahlkampagnenmaterial vorhanden · finales Vollprogramm nicht verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "ELECTION_CAMPAIGN_SOURCE_DEDICATED_FINAL_PROGRAMME_NOT_VERIFIED",
+      "source_urls": [
+        {
+          "label": "Wahlseite 2026",
+          "url": "https://www.oedp-berlin.de/wahlen/abgeordnetenhauswahl-2026"
+        },
+        {
+          "label": "Wahlwerbemittel",
+          "url": "https://www.oedp-berlin.de/wahlen/abgeordnetenhauswahl-2026/tv-spot-u-bahn-werbung-flyer-co"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PENDING",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": null,
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "PdF",
+      "public_status_detail": "Die offizielle Wahlseite kündigt das Wahlprogramm weiterhin an und verweist vorläufig nur auf das Grundsatzprogramm. Dieses ersetzt keinen Berlin-2026-Programmartifact.",
+      "public_status_label": "Finales Wahlprogramm noch nicht veröffentlicht",
+      "source_available_for_election_corpus": false,
+      "source_status": "FINAL_ELECTION_PROGRAMME_NOT_YET_PUBLISHED_SOURCE_PENDING",
+      "source_urls": [
+        {
+          "label": "Offizielle Wahlseite",
+          "url": "https://partei-des-fortschritts.de/wahl-zum-abgeordnetenhaus-berlin/"
+        }
+      ]
+    },
+    {
+      "artifact_class": "PARTY_OFFICIAL_2026_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-DIE-PARTEI-WAHLPROGRAMM",
+        "artifact_url": "https://die-partei-berlin.de/archiv/7778",
+        "byte_length": 62936,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "text/html; charset=UTF-8",
+        "page_count": null,
+        "publication_status": "PARTY_PUBLISHED_CURRENT_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "41e75b0d3cb617f85fff789a3aca217c1a68e761134fecdc44b56d64887d32b8",
+        "title": "Unser Wahlprogramm zur AGH Wahl 2026",
+        "version_evidence": "Official party article published 22 June 2026 and modified 19 August 2026; raw response bytes freeze the current ten-point programme page."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "Die PARTEI",
+      "public_status_detail": "Die parteioffizielle Berliner Seite veröffentlicht das AGH-Wahlprogramm 2026 als Zehn-Punkte-Plan. Bezirksspezifische Programme bleiben getrennt.",
+      "public_status_label": "Wahlprogramm 2026 verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_2026_ELECTION_PROGRAMME_AVAILABLE",
+      "source_urls": [
+        {
+          "label": "Parteiwebsite Berlin",
+          "url": "https://die-partei-berlin.de/"
+        },
+        {
+          "label": "Wahlprogramm 2026",
+          "url": "https://die-partei-berlin.de/archiv/7778"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-TIERSCHUTZPARTEI-WAHLPROGRAMM",
+        "artifact_url": "https://berlin.tierschutzpartei.de/wahlprogramm-berlin-2026.pdf",
+        "byte_length": 5583527,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 96,
+        "publication_status": "PARTY_APPROVED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "1db89d9811e0d546c269c6ad6819603e12841b0d3f7f20f976444858d86cf172",
+        "title": "Wähle Mitgefühl! Wahlprogramm Berlin-Wahl 2026",
+        "version_evidence": "Direct full-programme PDF linked by the official election page; the party documents adoption on 14 March 2026."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "Tierschutzpartei",
+      "public_status_detail": "Das am 14. März 2026 beschlossene Berliner Landeswahlprogramm liegt als parteioffizielle Vollfassung vor.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_PDF",
+      "source_urls": [
+        {
+          "label": "Wahlseite",
+          "url": "https://berlin.tierschutzpartei.de/berliner-wahlen-2026"
+        },
+        {
+          "label": "Programm-PDF",
+          "url": "https://berlin.tierschutzpartei.de/wahlprogramm-berlin-2026.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_MANIFEST_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-SGP-WAHLERKLAERUNG",
+        "artifact_url": "https://www.wsws.org/de/articles/2026/07/10/sgpb-j10.pdf",
+        "byte_length": 33938,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 4,
+        "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_MANIFEST",
+        "retrieved_on": "2026-08-24",
+        "sha256": "69851181a6d105a1ee3c5decddd6a4bc00922a61f3d363a2b8a0dc6cd464e2a2",
+        "title": "Berlinwahl 2026: Sozialismus statt Krieg",
+        "version_evidence": "The official SGP site labels and links the German declaration; the PDF names Sozialistische Gleichheitspartei and 10 July 2026."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "SGP",
+      "public_status_detail": "Die offizielle SGP-Parteiseite verlinkt die deutschsprachige Wahlerklärung vom 10. Juli 2026. Die vierseitige PDF nennt Partei, Berlinwahl und Datum; URL, Byteumfang und SHA-256 sind eingefroren.",
+      "public_status_label": "Deutsche Wahlerklärung bytegenau verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_GERMAN_ELECTION_MANIFEST_PDF_BYTE_EXACT",
+      "source_urls": [
+        {
+          "label": "Offizielle SGP-Wahlseite",
+          "url": "https://www.gleichheit.de/home.html"
+        },
+        {
+          "label": "Deutsche Wahlerklärung",
+          "url": "https://www.wsws.org/de/articles/2026/07/10/sgpb-j10.html"
+        },
+        {
+          "label": "Manifest-PDF",
+          "url": "https://www.wsws.org/de/articles/2026/07/10/sgpb-j10.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-VOLT-WAHLPROGRAMM",
+        "artifact_url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf",
+        "byte_length": 1041663,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 113,
+        "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "515828c1e965b0ade7025941386a3c6a31a3e91c4fe54b4c0b47b39a4c2c3fb1",
+        "title": "Programm zur Wahl des Berliner Abgeordnetenhauses – Wahlprogramm Berlin 2026",
+        "version_evidence": "Newest dated full-programme PDF linked by the official Berlin 2026 programme page; retained separately from the older 20 July file."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "Volt",
+      "public_status_detail": "Das Berliner Programm 2026 ist als parteioffizielle Programmquelle verfügbar.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE",
+      "source_urls": [
+        {
+          "label": "Programm Berlin 2026",
+          "url": "https://voltdeutschland.org/berlin/programm/programme/programm-berlin-2026"
+        },
+        {
+          "label": "Wahlprogramm-PDF",
+          "url": "https://voltdeutschland.org/storage/assets-berlin/pdf/policy-wahlprogramm-2026/wahlprogramm-(last_edited_5-8-2026).pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+        "artifact_url": "https://spd.berlin/media/2026/08/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf",
+        "byte_length": 663059,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 66,
+        "publication_status": "PARTY_APPROVED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+        "title": "Wahlprogramm Abgeordnetenhauswahl 2026",
+        "version_evidence": "Direct v4.1 PDF linked by the official programme page after the documented 8/9 May 2026 final adoption."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "BERLINWEITE_BEZIRKSLISTEN",
+      "final_election_programme_verified": true,
+      "party": "SPD",
+      "public_status_detail": "Das am 8./9. Mai 2026 final beschlossene Berliner Wahlprogramm ist als parteioffizielle Programmquelle verfügbar.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE",
+      "source_urls": [
+        {
+          "label": "Wahlprogramm",
+          "url": "https://spd.berlin/wahlprogramm/"
+        },
+        {
+          "label": "Wahlprogramm-PDF",
+          "url": "https://spd.berlin/media/2026/08/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-CDU-REGIERUNGSPROGRAMM",
+        "artifact_url": "https://cdu.berlin/download?dokument=1&file=366",
+        "byte_length": 1546182,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 128,
+        "publication_status": "PARTY_APPROVED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "ff27b8efafc426669f76ef71576a7cbce52bdb95fbb0cc2931afa7e11bbed455",
+        "title": "Berlin wird. Regierungsprogramm 2026–2031",
+        "version_evidence": "Official download record names file 366 and documents the 50th state party conference decision of 9 June 2026."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "BERLINWEITE_BEZIRKSLISTEN",
+      "final_election_programme_verified": true,
+      "party": "CDU",
+      "public_status_detail": "Das am 9. Juni 2026 beschlossene Regierungsprogramm 2026–2031 ist als parteioffizielle Programmquelle verfügbar.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE",
+      "source_urls": [
+        {
+          "label": "Regierungsprogramm",
+          "url": "https://cdu.berlin/wofuer-wir-stehen"
+        },
+        {
+          "label": "Regierungsprogramm-PDF",
+          "url": "https://cdu.berlin/download?dokument=1&file=366"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": {
+        "artifact_id": "BE-AGH-2026-LINKE-WAHLPROGRAMM",
+        "artifact_url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf",
+        "byte_length": 2556826,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+        "media_type": "application/pdf",
+        "page_count": 336,
+        "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME",
+        "retrieved_on": "2026-08-24",
+        "sha256": "70be401125217cac46a94d3b0b97b49bd332774342e54fb22a202043bd099c1f",
+        "title": "Berlin bezahlbar machen – Wahlprogramm zur Abgeordnetenhauswahl 2026",
+        "version_evidence": "Direct full-programme PDF linked by the official Berlin party programme page."
+      },
+      "canonicalization_pending": false,
+      "field_scope": "BERLINWEITE_BEZIRKSLISTEN",
+      "final_election_programme_verified": true,
+      "party": "Die Linke",
+      "public_status_detail": "Das Berliner Wahlprogramm 2026 ist als parteioffizielle Programmquelle verfügbar.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE",
+      "source_urls": [
+        {
+          "label": "Wahlprogramm",
+          "url": "https://dielinke.berlin/wahlprogramm/"
+        },
+        {
+          "label": "Wahlprogramm-PDF",
+          "url": "https://dielinke.berlin/fileadmin/download/2026/Wahlprogramm_AGH_2026_Die_Linke_Berlin.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "CAMPAIGN_POSITION_AND_GENERAL_PROGRAMME_REFERENCE",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": null,
+      "canonicalization_pending": false,
+      "field_scope": "BEZIRKSLISTEN_EINZELNE_BEZIRKE",
+      "final_election_programme_verified": false,
+      "party": "HEIMAT",
+      "public_status_detail": "Aktuelle Berliner Positionen und das allgemeine Parteiprogramm bleiben getrennte Quellen. Kein eigener finaler Berlin-2026-Programmartifact ist verifiziert.",
+      "public_status_label": "Berliner Positionen vorhanden · finales Wahlprogramm nicht verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "BERLIN_2026_POSITION_SOURCES_DEDICATED_FINAL_PROGRAMME_NOT_VERIFIED",
+      "source_urls": [
+        {
+          "label": "Parteiwebsite mit Berliner Bereich",
+          "url": "https://die-heimat.de/"
+        },
+        {
+          "label": "Allgemeines Parteiprogramm",
+          "url": "https://die-heimat.de/wp-content/uploads/2023/11/Parteiprogramm_Heimat.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "GENERAL_PROGRAMME_REFERENCE",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonical_artifact": null,
+      "canonicalization_pending": false,
+      "field_scope": "BEZIRKSLISTEN_EINZELNE_BEZIRKE",
+      "final_election_programme_verified": false,
+      "party": "B* (bergpartei, die überpartei)",
+      "public_status_detail": "Ein älterer allgemeiner Programmcorpus ist dokumentiert. Er wird nicht als finales Berlin-2026-Wahlprogramm oder vollständiger Wahlversprechen-Corpus ausgegeben.",
+      "public_status_label": "Allgemeine Programmreferenz · kein finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "GENERAL_PROGRAMME_REFERENCE_2026_SPECIFIC_FINAL_ARTIFACT_NOT_VERIFIED",
+      "source_urls": [
+        {
+          "label": "Archivierte Programmreferenz",
+          "url": "https://www.bundeswahlleiterin.de/dam/jcr/cd0291eb-794b-4067-99cc-935ca9446a64/b.pdf"
+        }
+      ]
+    }
+  ],
+  "preserved_fach_review": {
+    "byte_length": 12016,
+    "materiality_theme_count": 6,
+    "path": "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md",
+    "rule": "Preserve and cross-link the six existing themes; source classification does not create or replace impact judgements.",
+    "sha256": "6a7c7eb890b57f7b2d5b3ce0d461468d79febb7397e2930a28217f42374ed9f2"
+  },
+  "publication_integrity": {
+    "rendered_content_paths": [
+      "/laender/berlin",
+      "/laender/berlin/wahl"
+    ],
+    "required_content_paths": [
+      "/laender/berlin",
+      "/laender/berlin/wahl"
+    ],
+    "unrendered_content_paths": []
+  },
+  "register_id": "BE-AGH-2026-CURRENT-SOURCE-REGISTER-V2",
+  "schema_version": "woek-state-current-source-register-1.2",
+  "source_as_of": "2026-08-24",
+  "source_pins": [
+    {
+      "body_sha256": "c061b873efbe5a8217a05f2dc9df90466ff1444b1707f1ffeccbd481d702efba",
+      "comment_id": 5367584560,
+      "role": "official field and programme-source reconciliation",
+      "updated_at": "2026-08-21T08:39:54Z",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367584560"
+    },
+    {
+      "body_sha256": "491050279986ddc34df19b90f81a946bb7c5d33104330dd7406b4523f6941ddd",
+      "comment_id": 5374672840,
+      "role": "five open artifact classifications and source-maturity guard",
+      "updated_at": "2026-08-21T19:55:47Z",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5374672840"
+    }
+  ],
+  "status": "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_17_OF_17"
+}

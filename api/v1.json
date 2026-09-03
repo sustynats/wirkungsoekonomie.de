@@ -1,0 +1,111 @@
+{
+  "id": "woek-core-static-api",
+  "name": "WÖk Core Static API",
+  "version": "v1",
+  "generatedAt": "2026-08-21T14:46:36.244Z",
+  "baseUrl": "https://wirkungsoekonomie.de/api/v1/",
+  "status": "read-only-static",
+  "contract": {
+    "format": "JSON",
+    "cacheable": true,
+    "canonicalSource": "Website-Repo build outputs",
+    "dynamicCoreBaseUrlEnv": "WOEK_KERN_API_URL"
+  },
+  "endpoints": [
+    {
+      "id": "core-index",
+      "url": "/api/v1/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Versionierter Einstieg in die statischen WÖk-Kern-Endpunkte.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/"
+    },
+    {
+      "id": "capabilities",
+      "url": "/api/v1/capabilities/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Maschinenlesbarer Überblick über Datenbereiche, Grenzen und Nutzungsregeln.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/capabilities/"
+    },
+    {
+      "id": "glossary",
+      "url": "/api/v1/glossary/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Glossar-Snapshot aus dem versionierten Wissenskern.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/glossary/"
+    },
+    {
+      "id": "methods",
+      "url": "/api/v1/methods/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Schlanker WÖMS-Snapshot der 84 kanonischen Kernmethoden.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/methods/"
+    },
+    {
+      "id": "canvases",
+      "url": "/api/v1/canvases/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Feldgenaue WÖMS-Canvas-Spezifikationen und verbindlicher Mindeststandard.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/canvases/"
+    },
+    {
+      "id": "search",
+      "url": "/api/v1/search/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal"
+      ],
+      "description": "Suchindex-Metadaten und Verweise auf die produktive statische Suche.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/search/"
+    },
+    {
+      "id": "sdg-plus",
+      "url": "/api/v1/sdg-plus/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "SDG/SDG+-Referenzrahmen als maschinenlesbarer Snapshot.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/sdg-plus/"
+    },
+    {
+      "id": "wirkungsradar",
+      "url": "/api/v1/wirkungsradar/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Wirkungsradar-Karten, Resonanzkarten und bestehende Embed-/Distribution-Endpunkte.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/wirkungsradar/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+name: ST GRUENE final union C17
+
+on:
+  pull_request:
+    paths:
+      - "audit-manifests/sachsen-anhalt/gruene-convergence-c*.json"
+      - "audit-manifests/sachsen-anhalt/gruene-final-union-c17.json"
+      - "tools/validate_st_gruene_final_union.py"
+      - ".github/workflows/st-gruene-final-union-c17.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  final-union-c17:
+    name: Full-programme count, collision and DAG freeze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate final union and pinned issue facts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_st_gruene_final_union.py --check-github

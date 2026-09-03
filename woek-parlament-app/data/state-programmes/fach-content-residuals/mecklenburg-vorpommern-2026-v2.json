@@ -1,0 +1,910 @@
+{
+  "schema_version": "woek-mv-fach-content-residual-2.0",
+  "matrix_id": "MV-FACH-CONTENT-RESIDUAL-2026-V2",
+  "jurisdiction": "DE-MV",
+  "election": "ltw-2026-mv",
+  "source_as_of": "2026-08-26",
+  "status": "VERIFIED_FINAL_PROGRAMME_SUBCORPUS_TERMINAL_FULL_CORPUS_FAIL_CLOSED",
+  "binding_order": [
+    "SPD",
+    "AfD",
+    "CDU",
+    "Die Linke",
+    "Bündnis 90/Die Grünen",
+    "FDP",
+    "FREIE WÄHLER",
+    "PIRATEN",
+    "Bündnis C",
+    "BSW",
+    "Partei des Fortschritts",
+    "Volt"
+  ],
+  "source_maturity_blocker_order": [
+    "Tierschutzpartei",
+    "Die PARTEI",
+    "ÖDP",
+    "Handwerker Partei Deutschland",
+    "KPD",
+    "Team Freiheit",
+    "WIR LEBEN DEMOKRATIE"
+  ],
+  "approval_protocol": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+  "combined_projection_rule": "COUNT_AND_BIND_EXISTING_TERMINALS_ONLY_NO_NEW_FACH_SEMANTICS",
+  "completion_scope": {
+    "verified_final_programme_subcorpus_terminal": true,
+    "verified_final_programmes_terminal": 12,
+    "admitted_party_field_fully_source_mature": false,
+    "admitted_party_field_fully_fach_reviewed": false,
+    "source_maturity_blockers": 7
+  },
+  "release_policy": {
+    "github_first": true,
+    "no_new_vercel_build": true,
+    "parliament_release_approval": "NOT_GRANTED",
+    "vercel_preview": false,
+    "vercel_build": false,
+    "vercel_deployment": false
+  },
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "materiality_synthesized": false,
+    "problem_review_synthesized": false,
+    "goal_review_synthesized": false,
+    "dns_mapping_synthesized": false,
+    "sdg_mapping_synthesized": false,
+    "recommendation_synthesized": false,
+    "party_score_synthesized": false,
+    "party_wide_judgement_synthesized": false,
+    "existing_terminal_fach_rewritten": false,
+    "unverified_source_promoted_to_final_programme": false
+  },
+  "current_source_register": {
+    "path": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json",
+    "file_sha256": "b3616b489ad21c07bb210d09bdba5c71a084bb03716a4fc4b4e6d9c02dede6e8",
+    "descriptor_sha256": "c8d011d34c9633f791a35aee616ccb4c7b770948bfeba75b13c0fe58f1c13e95",
+    "classified_parties": 19,
+    "verified_final_programmes": 12,
+    "final_programmes_not_verified": 7,
+    "full_final_election_programme_corpus_available": false
+  },
+  "summary": {
+    "admitted_parties": 19,
+    "source_classified_parties": 19,
+    "verified_final_programmes": 12,
+    "verified_final_programmes_terminal": 12,
+    "verified_final_programmes_open": 0,
+    "source_maturity_blockers": 7,
+    "remaining_genuine_fach_review_required": 0,
+    "reviewed_pages": 896,
+    "unaccounted_pages": 0,
+    "source_units": 8712,
+    "effect_bearing_source_units": 4811,
+    "non_effect_context_source_units": 3901,
+    "multi_atom_source_units": 1434,
+    "effect_atoms": 7494,
+    "terminal_source_objects": 11395,
+    "explicit_fach_approved": 0,
+    "reviewed_not_assessable_with_exact_reason": 7494,
+    "non_effect_context_reviewed": 3901,
+    "genuine_fach_review_required": 0,
+    "unclassified_source_units": 0,
+    "unterminated_effect_atoms": 0,
+    "source_conflicts_without_status": 0,
+    "silent_omissions": 0,
+    "verified_subcorpus_gate": "PASS_12_OF_12_TERMINAL",
+    "full_field_gate": "FAIL_CLOSED_7_SOURCE_MATURITY_BLOCKERS"
+  },
+  "programmes": [
+    {
+      "binding_order": 1,
+      "party": "SPD",
+      "source_register_party": "SPD",
+      "programme_slug": "spd",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-SPD-REGIERUNGSPROGRAMM",
+        "artifact_sha256": "b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc",
+        "byte_length": 1072223,
+        "media_type": "application/pdf",
+        "page_count": 95,
+        "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 95,
+        "unaccounted_pages": 0,
+        "source_units": 904,
+        "effect_bearing_source_units": 466,
+        "non_effect_context_source_units": 438,
+        "multi_atom_source_units": 223,
+        "effect_atoms": 832,
+        "terminal_source_objects": 1270,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 832,
+        "non_effect_context_reviewed": 438,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/manifest.json",
+        "ledger_manifest_file_sha256": "1a6a89bee7360f962c1154da8daed8b7cb7fe09c4133d06c58f83d6d192f76b1",
+        "ledger_manifest_sha256": "a1455a2da491ebd763d5ec36fba3bf813916e2743011c2a2465d37a5da329f41",
+        "logical_descriptor_sha256": "c4932fbd3110b7e21f1d3e13f78e606f6b98635da1f7b527f812b77ba0641d48",
+        "source_unit_shard_count": 12,
+        "source_unit_shard_set_sha256": "67e7bd8798b30cb5092bf4b5514ff9157d7b6bdf0a8c06adbbd0cbe5a4421e39",
+        "effect_atom_shard_count": 12,
+        "effect_atom_shard_set_sha256": "7677c69a62146875a53443cb966eaaf90a0765f17a79843ea5b2ded171a0daba",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-spd-v1.json",
+        "coverage_hook_file_sha256": "dec1bbf526a09f21e81c2129b87e6cbfa7c21f1cc2b1266dcc0ac5d2e529fb7c",
+        "coverage_hook_descriptor_sha256": "4331b48546873a6d3b8e3d1dda28d2d007dafb78f13960733e84cf238914d3a9"
+      }
+    },
+    {
+      "binding_order": 2,
+      "party": "AfD",
+      "source_register_party": "AfD",
+      "programme_slug": "afd",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-AFD-REGIERUNGSPROGRAMM",
+        "artifact_sha256": "44087592fed7d8943d44019722def861947cf72acd203bf3b802deb6873ec8b0",
+        "byte_length": 1580871,
+        "media_type": "application/pdf",
+        "page_count": 93,
+        "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 93,
+        "unaccounted_pages": 0,
+        "source_units": 854,
+        "effect_bearing_source_units": 342,
+        "non_effect_context_source_units": 512,
+        "multi_atom_source_units": 132,
+        "effect_atoms": 523,
+        "terminal_source_objects": 1035,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 523,
+        "non_effect_context_reviewed": 512,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-afd-v1/manifest.json",
+        "ledger_manifest_file_sha256": "370a28ac8363f05984d97e402fbfe97e8d95fe00215eee00d35c6a5f6d48502e",
+        "ledger_manifest_sha256": "fc1d5cd8be1d4958dc7602f5a0f4776c8c3fcf4397f701093a629be90e38f1fb",
+        "logical_descriptor_sha256": "03ce0e2d633bcc889b7fd02a5c134200a6cdb2c27c9893bda054252e950efeaa",
+        "source_unit_shard_count": 12,
+        "source_unit_shard_set_sha256": "099a80c986976928df129ab03c6f65093fbd745e6d0de9cc9711b8b5ecacc19d",
+        "effect_atom_shard_count": 12,
+        "effect_atom_shard_set_sha256": "ffd06f2798ba42df71737a8f7d8831864b766ff5cc9a9bc7c470f7fac744d133",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-afd-v1.json",
+        "coverage_hook_file_sha256": "c52669d720db04290099f1142a87558a5ed52149dc47195ace190523e08a1485",
+        "coverage_hook_descriptor_sha256": "907eaaa57f1a494e141c3391dff95fa9d439a29dfeecce12270113ff40fc4f8a"
+      }
+    },
+    {
+      "binding_order": 3,
+      "party": "CDU",
+      "source_register_party": "CDU",
+      "programme_slug": "cdu",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-CDU-WAHLPROGRAMM",
+        "artifact_sha256": "a33653bbe873666bf337522c51778e7b32a768e75d716b0e3483781d27a6c72e",
+        "byte_length": 1197976,
+        "media_type": "application/pdf",
+        "page_count": 139,
+        "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 139,
+        "unaccounted_pages": 0,
+        "source_units": 1056,
+        "effect_bearing_source_units": 632,
+        "non_effect_context_source_units": 424,
+        "multi_atom_source_units": 268,
+        "effect_atoms": 1054,
+        "terminal_source_objects": 1478,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 1054,
+        "non_effect_context_reviewed": 424,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-cdu-v1/manifest.json",
+        "ledger_manifest_file_sha256": "4df2c59e0d7075cb1bab94cba9154c0aa6b0c1962647ce8a8dd31052e93a822e",
+        "ledger_manifest_sha256": "220115cda08b2cebef5ca5d29c09823206841ad5dd83a0ccec6087422f166b84",
+        "logical_descriptor_sha256": "66df08f4536093c7c4a0f6819c351eed561d274843fa1e6af92c1f2fb7255398",
+        "source_unit_shard_count": 18,
+        "source_unit_shard_set_sha256": "583b99485ec8ea8fe935533e6d86221f1459080ca4460e93ed633bbb78690618",
+        "effect_atom_shard_count": 18,
+        "effect_atom_shard_set_sha256": "83afff2b59692ea1e14f6950c4d710a4efe05ed55d13d2e487c449ff6c6739ef",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-cdu-v1.json",
+        "coverage_hook_file_sha256": "3aacb95666975e9b0b75cdc479c872fb7d5de0da6dcf7d35f8c5534fb1a2ff1e",
+        "coverage_hook_descriptor_sha256": "8c85264817e5bf176ef77a7f3965be7a7dbe9685d6ebd579bcc86982b1254e8b"
+      }
+    },
+    {
+      "binding_order": 4,
+      "party": "Die Linke",
+      "source_register_party": "Die Linke",
+      "programme_slug": "linke",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-LINKE-LANGWAHLPROGRAMM",
+        "artifact_sha256": "c26d2be501a05e820ed6761d75d0b2468ffbeb06859b967e3b8836129779fb6e",
+        "byte_length": 918713,
+        "media_type": "application/pdf",
+        "page_count": 30,
+        "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 30,
+        "unaccounted_pages": 0,
+        "source_units": 411,
+        "effect_bearing_source_units": 210,
+        "non_effect_context_source_units": 201,
+        "multi_atom_source_units": 137,
+        "effect_atoms": 777,
+        "terminal_source_objects": 978,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 777,
+        "non_effect_context_reviewed": 201,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-linke-v1/manifest.json",
+        "ledger_manifest_file_sha256": "e1ba285918e5457b9bbc06e6578e664796ffc126b8d0c571a4f6eebe3f8c70fb",
+        "ledger_manifest_sha256": "fd3f73a34ac7917cae1e9ecb1c0fc059aa30d680aebbb18df1e81ff4290621ed",
+        "logical_descriptor_sha256": "31e857d105e787cb61906141ab38b1081db24db655ae91dfcd903f2aa4fde219",
+        "source_unit_shard_count": 4,
+        "source_unit_shard_set_sha256": "f6048ce89fb136eff95ce527f4a2f3e82e26836b4f41170bf1c6b5f12b463cc8",
+        "effect_atom_shard_count": 4,
+        "effect_atom_shard_set_sha256": "3f4ced082ff72fd6dab08c8251d45d61887e1a973fb091f14856803291213346",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-linke-v1.json",
+        "coverage_hook_file_sha256": "92de9dfc3a0db23597424250d693c77fd57066e59b85d01d72e01352252481bb",
+        "coverage_hook_descriptor_sha256": "fccdf9768f94a813c230c2b2288c7fe9153bdcf194dc188872a2fe5d6caa632d"
+      }
+    },
+    {
+      "binding_order": 5,
+      "party": "Bündnis 90/Die Grünen",
+      "source_register_party": "BÜNDNIS 90/DIE GRÜNEN",
+      "programme_slug": "gruene",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-GRUENE-WAHLPROGRAMM",
+        "artifact_sha256": "a3ddd454f4612460ace9deb2c4789e161a37f62f0abfa9e5c12d7f9878377ee3",
+        "byte_length": 15989661,
+        "media_type": "application/pdf",
+        "page_count": 112,
+        "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 112,
+        "unaccounted_pages": 0,
+        "source_units": 1003,
+        "effect_bearing_source_units": 424,
+        "non_effect_context_source_units": 579,
+        "multi_atom_source_units": 206,
+        "effect_atoms": 976,
+        "terminal_source_objects": 1555,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 976,
+        "non_effect_context_reviewed": 579,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-gruene-v1/manifest.json",
+        "ledger_manifest_file_sha256": "7218632d7162e99bf958bdd45a5dd7a52bd45caf9f67377131fee96f515fd82f",
+        "ledger_manifest_sha256": "2051f31c72457439bc2f91436941253ad269948a363a864083db39b1d79a0340",
+        "logical_descriptor_sha256": "5f0acb42b15a99daa29570810161294b4fb03c1987fb1b5b6081b1ae4670a69f",
+        "source_unit_shard_count": 14,
+        "source_unit_shard_set_sha256": "79520e2a673815c17a370564fe356f1c79dc78bcdb92ac343fc81c5bc6ebd6e9",
+        "effect_atom_shard_count": 14,
+        "effect_atom_shard_set_sha256": "b46b3f4469f124b5e844fcc58853737da06f001df649827fb5a8a94756a8d4ff",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-gruene-v1.json",
+        "coverage_hook_file_sha256": "ec0bc6eda6592b654ca1f7d727d14fab2aa9a61fd3b47aa90fe2e84ed61c2333",
+        "coverage_hook_descriptor_sha256": "7237a452c73f9eb0128671d23e9d58249258b478c539566a9cb3395fbb0d6b9b"
+      }
+    },
+    {
+      "binding_order": 6,
+      "party": "FDP",
+      "source_register_party": "FDP",
+      "programme_slug": "fdp",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-FDP-WAHLPROGRAMM",
+        "artifact_sha256": "91699d395bd4af26ffb7c9f824fd892a4aca0e29737f856a5d3b189f7bf16b31",
+        "byte_length": 2583137,
+        "media_type": "application/pdf",
+        "page_count": 152,
+        "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 152,
+        "unaccounted_pages": 0,
+        "source_units": 1533,
+        "effect_bearing_source_units": 1001,
+        "non_effect_context_source_units": 532,
+        "multi_atom_source_units": 210,
+        "effect_atoms": 1275,
+        "terminal_source_objects": 1807,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 1275,
+        "non_effect_context_reviewed": 532,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-fdp-v1/manifest.json",
+        "ledger_manifest_file_sha256": "d5120f400f1e7d7973a827abe67227575e3fe9032cc1c45777791f8a44cc630b",
+        "ledger_manifest_sha256": "e4b1362fe1c25c1905ad6c3912fa0e1c88360975c21f23541813ecd4631d8281",
+        "logical_descriptor_sha256": "1ff0165e67d183afa0940e330eadc4245b6ca979a7af6868426d54a20206f90d",
+        "source_unit_shard_count": 19,
+        "source_unit_shard_set_sha256": "f7b761204b88d42b02788621e49e02b9332c3a942dc0414f5a3f24c2012b1f7f",
+        "effect_atom_shard_count": 19,
+        "effect_atom_shard_set_sha256": "53e18a912d615c06865c9321eb798c537c22c43b95e41d3de51abdea706bdff2",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-fdp-v1.json",
+        "coverage_hook_file_sha256": "6ffc7906315a8b7290740c1db62b5bde54a652c67171f1be99c2658cd81358ac",
+        "coverage_hook_descriptor_sha256": "7aa39ec5c02cb4764b5931deb467ac03fce96bff260ca848549df79bd8d97c99"
+      }
+    },
+    {
+      "binding_order": 7,
+      "party": "FREIE WÄHLER",
+      "source_register_party": "FREIE WÄHLER",
+      "programme_slug": "freie-waehler",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-FREIE-WAEHLER-WAHLPROGRAMM",
+        "artifact_sha256": "9e6295ac5a691cf4b4483736e1cf87a5b95192e122f43bbb8ca5a3cb9b67554c",
+        "byte_length": 3451433,
+        "media_type": "application/pdf",
+        "page_count": 34,
+        "source_status": "PARTY_OFFICIAL_FULL_PROGRAMME_PDF_BYTE_EXACT",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 34,
+        "unaccounted_pages": 0,
+        "source_units": 276,
+        "effect_bearing_source_units": 151,
+        "non_effect_context_source_units": 125,
+        "multi_atom_source_units": 19,
+        "effect_atoms": 174,
+        "terminal_source_objects": 299,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 174,
+        "non_effect_context_reviewed": 125,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-freie-waehler-v1/manifest.json",
+        "ledger_manifest_file_sha256": "c2b963eae65ccb4aa2c304d7e83d54262c6c5016d0a6346362d5a98c221e4636",
+        "ledger_manifest_sha256": "c125686884ecf557099b434e920fa37409d29c2bbe7e50313cbbf4271c9d26a3",
+        "logical_descriptor_sha256": "d7efe3211f612e08ee11020e46ef441a6bccc5946883577462201adfdabe8ef9",
+        "source_unit_shard_count": 5,
+        "source_unit_shard_set_sha256": "e41f39032204199074572df7b91f148aae90f29fdfe4c2ea40c8d9fd29956b04",
+        "effect_atom_shard_count": 5,
+        "effect_atom_shard_set_sha256": "dec0c60627374787af6b81516036cd381bc8d1fa27c7e67f299f6743d3258794",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-freie-waehler-v1.json",
+        "coverage_hook_file_sha256": "720c36f7ee50afa24490146fba82bcd6b54e60fb3f97a78204b699b63f1fe5f5",
+        "coverage_hook_descriptor_sha256": "49faf45052add8859c3980be63c9bc995d34e6b5c9e23e6c2f04267f5accec73"
+      }
+    },
+    {
+      "binding_order": 8,
+      "party": "PIRATEN",
+      "source_register_party": "PIRATEN",
+      "programme_slug": "piraten",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-PIRATEN-WAHLPROGRAMM",
+        "artifact_sha256": "033643c4deabd8ac5c414ba2276ca25906418e0349143bff1dc0fb1d3c4d13a1",
+        "byte_length": 145496,
+        "media_type": "application/pdf",
+        "page_count": 5,
+        "source_status": "PARTY_OFFICIAL_FINAL_PROGRAMME_ARTIFACT_READY",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 5,
+        "unaccounted_pages": 0,
+        "source_units": 63,
+        "effect_bearing_source_units": 29,
+        "non_effect_context_source_units": 34,
+        "multi_atom_source_units": 16,
+        "effect_atoms": 49,
+        "terminal_source_objects": 83,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 49,
+        "non_effect_context_reviewed": 34,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-piraten-v1/manifest.json",
+        "ledger_manifest_file_sha256": "4717b7719065d2986b008a4f7589beb09d50c6cf9e2927f594c4aeb7f92204df",
+        "ledger_manifest_sha256": "112e9ac2552b2b8059bd5962366886729d0b32d2ffbec780f67c120e46b3bb20",
+        "logical_descriptor_sha256": "82215617e49263ecc177f88490e643babb5560e28ade3045bbb3b74a34986c18",
+        "source_unit_shard_count": 1,
+        "source_unit_shard_set_sha256": "effbd5a3625566bdf826a3545c263044ccb3ccaa8bf01eb9b805ce7253f505f0",
+        "effect_atom_shard_count": 1,
+        "effect_atom_shard_set_sha256": "d74fa824c3d6033e4633d7d981113ff8e9b48f1e640d5190c9c9051e441b9764",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-piraten-v1.json",
+        "coverage_hook_file_sha256": "9e81eb6d97cb70ae9607b7841770cb46fcaab054ce3beb0ebae528e76c25dd94",
+        "coverage_hook_descriptor_sha256": "001c937194695b76d37baae2421ac3d7a4ebfe2cbc9a4d2ecd5603b9a92d54c6"
+      }
+    },
+    {
+      "binding_order": 9,
+      "party": "Bündnis C",
+      "source_register_party": "Bündnis C",
+      "programme_slug": "buendnis-c",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-BUENDNIS-C-WAHLPROGRAMM",
+        "artifact_sha256": "52465aa4ba287c0687a45138d7eff75272a5bf85c18b8e846e3cbe118db32443",
+        "byte_length": 473925,
+        "media_type": "application/pdf",
+        "page_count": 22,
+        "source_status": "FINAL_PARTY_OFFICIAL_PROGRAMME_SOURCE_READY",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 22,
+        "unaccounted_pages": 0,
+        "source_units": 230,
+        "effect_bearing_source_units": 127,
+        "non_effect_context_source_units": 103,
+        "multi_atom_source_units": 16,
+        "effect_atoms": 149,
+        "terminal_source_objects": 252,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 149,
+        "non_effect_context_reviewed": 103,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-buendnis-c-v1/manifest.json",
+        "ledger_manifest_file_sha256": "b1dbadc076aac41735155359100ef98d2e7236dcdb168897489877e65c63ecee",
+        "ledger_manifest_sha256": "0c3e1f5b002e06a98f2e00035ed168eef8c1a0fba5f1059ae73ae95e8a2ab74b",
+        "logical_descriptor_sha256": "b417026c85b16435cc5dbf5ba6c3490fe92bb054ff203e3d81203c9fa0e833f3",
+        "source_unit_shard_count": 3,
+        "source_unit_shard_set_sha256": "096c54fb07794c2085ac99892de97c3ee0cb243b5421e07379ea5fafa8023ef4",
+        "effect_atom_shard_count": 3,
+        "effect_atom_shard_set_sha256": "f0461d80b668025511984e8471ccce1ac32019a03f3759a433b74c5a99698e2b",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-buendnis-c-v1.json",
+        "coverage_hook_file_sha256": "1d844b5acd03dc215901499f6bfc823351c80367c0ac22dfe7b700f34caf93fa",
+        "coverage_hook_descriptor_sha256": "e306600f1352fae895e6ea602d3febf0445b6157e46f3b1deb8f8713938ff65f"
+      }
+    },
+    {
+      "binding_order": 10,
+      "party": "BSW",
+      "source_register_party": "BSW",
+      "programme_slug": "bsw",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-BSW-LANDESWAHLPROGRAMM",
+        "artifact_sha256": "062b284d3e91919c673a2746c53c9d4e14ef8b1ab4b82699782789ec483c7968",
+        "byte_length": 1184670,
+        "media_type": "application/pdf",
+        "page_count": 94,
+        "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE_READY",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 94,
+        "unaccounted_pages": 0,
+        "source_units": 1173,
+        "effect_bearing_source_units": 824,
+        "non_effect_context_source_units": 349,
+        "multi_atom_source_units": 131,
+        "effect_atoms": 991,
+        "terminal_source_objects": 1340,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 991,
+        "non_effect_context_reviewed": 349,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-bsw-v1/manifest.json",
+        "ledger_manifest_file_sha256": "677395e032fb454ddfd2d88e3138705b5173fd647eb84a286afa6462190eb3b4",
+        "ledger_manifest_sha256": "35b5ede3d1c9a33f4c5dc675bdd8d4c875906501eb2e155d5876660bad6dfdc8",
+        "logical_descriptor_sha256": "35b9f2033959c1cb66402ae00e80710ed7824e0934c99578a0d39720c3541893",
+        "source_unit_shard_count": 12,
+        "source_unit_shard_set_sha256": "2d9c76d7ebf042da6f4c5ef63f5ee95c71701febdb4b35570c7ba6d0090c006d",
+        "effect_atom_shard_count": 12,
+        "effect_atom_shard_set_sha256": "23999af3ebc3f717b3099dc6ae7eafbfe37e5e5c175fb43c25dbb050e9c0021f",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-bsw-v1.json",
+        "coverage_hook_file_sha256": "8b3b0c0d9e51dab2c2ef569ca717526eb5d8eac67f2fdeb58fd715e38f19a442",
+        "coverage_hook_descriptor_sha256": "cd41f7edd7310b1d8e47b4624d9f12048a0d55f17918614c9fdb7d2f9c0b3b8c"
+      }
+    },
+    {
+      "binding_order": 11,
+      "party": "Partei des Fortschritts",
+      "source_register_party": "PdF",
+      "programme_slug": "pdf",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-PDF-WAHLPROGRAMM",
+        "artifact_sha256": "418ccadca7e8f63ae3f9b5f2ca436b2045d41e803fa44eddbbb93947b74e543b",
+        "byte_length": 163254,
+        "media_type": "application/pdf",
+        "page_count": 53,
+        "source_status": "PARTY_OFFICIAL_2026_MV_ELECTION_PROGRAMME_PDF_READY",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 53,
+        "unaccounted_pages": 0,
+        "source_units": 631,
+        "effect_bearing_source_units": 338,
+        "non_effect_context_source_units": 293,
+        "multi_atom_source_units": 34,
+        "effect_atoms": 376,
+        "terminal_source_objects": 669,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 376,
+        "non_effect_context_reviewed": 293,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-pdf-v1/manifest.json",
+        "ledger_manifest_file_sha256": "c8d9934531829bb2f51ceb0b36748b0e8560277636b55e5d9a4468319df595fb",
+        "ledger_manifest_sha256": "83eb3f5256b181a2f6eacedb5c7f24cfc0d1fc26688c2828d83fea53de66caa4",
+        "logical_descriptor_sha256": "c7851581556efd61456068d132bb7efffcb41471b49a2f280b01afbadcce0750",
+        "source_unit_shard_count": 7,
+        "source_unit_shard_set_sha256": "ead96d313b619ef5fd81a7f8eea891301e298538ea80dab3f4dae844313dc8fe",
+        "effect_atom_shard_count": 7,
+        "effect_atom_shard_set_sha256": "9271f838cd98ca7a5e8743a40e48a6b526be1d0cacd4e6ed6e4686a9d2fbf8b5",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-pdf-v1.json",
+        "coverage_hook_file_sha256": "b0d92f41d6c97ef9b5d437d865f5c6b9f06c809d4204696bdb8f8a4d59d6d9e9",
+        "coverage_hook_descriptor_sha256": "66c81bd1c5bdf154329392b11f379084d004970a07ef650390bd53d648a6f0c5"
+      }
+    },
+    {
+      "binding_order": 12,
+      "party": "Volt",
+      "source_register_party": "Volt",
+      "programme_slug": "volt",
+      "artifact": {
+        "artifact_id": "MV-LTW-2026-VOLT-WAHLPROGRAMM",
+        "artifact_sha256": "a992f71adf0b37a633c60d9ac1e8923680e8a7e01ac428bf2e86036294e57663",
+        "byte_length": 1725660,
+        "media_type": "application/pdf",
+        "page_count": 67,
+        "source_status": "PARTY_OFFICIAL_MV_2026_PROGRAMME_PDF_BYTE_EXACT",
+        "final_election_programme_verified": true
+      },
+      "review_state": "PROGRAMME_ANALYSIS_COMPLETE_UNDER_DELEGATED_PROTOCOL",
+      "programme_analysis_complete": true,
+      "programme_source_object_review_complete": true,
+      "public_projection_mode": "FAIL_CLOSED_NO_EFFECT_CREDIT_WITHOUT_EXPLICIT_FACH_APPROVAL",
+      "effect_credit_allowed": false,
+      "counts": {
+        "reviewed_pages": 67,
+        "unaccounted_pages": 0,
+        "source_units": 578,
+        "effect_bearing_source_units": 267,
+        "non_effect_context_source_units": 311,
+        "multi_atom_source_units": 42,
+        "effect_atoms": 318,
+        "terminal_source_objects": 629,
+        "explicit_fach_approved": 0,
+        "reviewed_not_assessable_with_exact_reason": 318,
+        "non_effect_context_reviewed": 311,
+        "genuine_fach_review_required": 0,
+        "unclassified_source_units": 0,
+        "unterminated_effect_atoms": 0,
+        "source_conflicts_without_status": 0
+      },
+      "coverage_evidence": {
+        "ledger_manifest_path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-volt-v1/manifest.json",
+        "ledger_manifest_file_sha256": "698ece8e321229b59b9646ce55df26339120e8e2dbcb399d4a3ec88fd982922b",
+        "ledger_manifest_sha256": "cc979e217d3db3dd9f5d2b633a36268873dafb2de8275139c13647c81806663b",
+        "logical_descriptor_sha256": "d63979e30f2083f49956754f401c0f03a5a34d76bde07843ea12e39163ce5587",
+        "source_unit_shard_count": 9,
+        "source_unit_shard_set_sha256": "6afad19d0b5695fb009082f9eb08f5ea1d66997242cf7cc962293afae018caad",
+        "effect_atom_shard_count": 9,
+        "effect_atom_shard_set_sha256": "84798d680504232266cfc3bb0b13eda55b334634c373142cc7c7c03a4aae3883",
+        "coverage_hook_path": "woek-parlament-app/data/state-programmes/fach-coverage-hooks/mecklenburg-vorpommern-2026-volt-v1.json",
+        "coverage_hook_file_sha256": "8cbaea1db7020e736fd83dbaedab0f344890c8a026b2ac4885b9510acbda7df7",
+        "coverage_hook_descriptor_sha256": "6aacfc9f27ea9abbc7443ea8cf80d9e2b6e073ee632795f00e432351237ba570"
+      }
+    }
+  ],
+  "source_maturity_blockers": [
+    {
+      "blocker_order": 1,
+      "party": "Tierschutzpartei",
+      "residual_class": "SOURCE_MATURITY_BLOCKER",
+      "blocking_gate": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "exact_register_state": {
+        "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+        "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+        "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+        "final_election_programme_verified": false,
+        "source_available_for_election_corpus": false,
+        "canonicalization_pending": false,
+        "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+        "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+        "source_urls": [
+          {
+            "label": "Dokumentierter Quellenstatus in #240",
+            "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+          }
+        ],
+        "canonical_artifact": null
+      },
+      "required_transition": "CURRENT_SOURCE_REGISTER_FINAL_ELECTION_PROGRAMME_VERIFIED_TRUE",
+      "fach_review_started": false,
+      "fach_semantics_inferred": false
+    },
+    {
+      "blocker_order": 2,
+      "party": "Die PARTEI",
+      "residual_class": "SOURCE_MATURITY_BLOCKER",
+      "blocking_gate": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "exact_register_state": {
+        "artifact_class": "CURRENT_PROGRAMME_ROUTE",
+        "source_status": "PARTY_OFFICIAL_CURRENT_PROGRAMME_ROUTE_BYTE_EXACT_FINALITY_NOT_VERIFIED",
+        "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+        "final_election_programme_verified": false,
+        "source_available_for_election_corpus": true,
+        "canonicalization_pending": false,
+        "public_status_label": "Aktuelle Programmseite versioniert · Finalstatus offen",
+        "public_status_detail": "Der offizielle Landesauftritt führt die Programmseite aus dem Landtagswahl-2026-Bereich. Die aktuelle HTML-Fassung ist bytegenau eingefroren; ein ausdrücklicher Beschluss- oder Finalstatus ist weiterhin nicht nachgewiesen und wird nicht unterstellt.",
+        "source_urls": [
+          {
+            "label": "Landesportal",
+            "url": "https://diepartei-mv.de/"
+          },
+          {
+            "label": "Programmroute",
+            "url": "https://www.diepartei-mv.de/Programm.html"
+          }
+        ],
+        "canonical_artifact": {
+          "artifact_id": "MV-LTW-2026-DIE-PARTEI-CURRENT-PROGRAMME-ROUTE",
+          "artifact_url": "https://www.diepartei-mv.de/Programm.html",
+          "byte_length": 21105,
+          "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+          "media_type": "text/html; charset=UTF-8",
+          "page_count": null,
+          "publication_status": "PARTY_PUBLISHED_CURRENT_PROGRAMME_ROUTE_FINALITY_NOT_VERIFIED",
+          "retrieved_on": "2026-08-24",
+          "sha256": "2eb74e6cbeaa06109fb4e4333b4ac99742f7bf1e0008a9d87deeeb46ccf17641",
+          "title": "Unser Wahlprogramm – Das Sofort-Programm für MV",
+          "version_evidence": "The official state portal links this programme route from its 2026 election surface; two raw fetches were byte-identical. No adoption or finality evidence is claimed."
+        }
+      },
+      "required_transition": "CURRENT_SOURCE_REGISTER_FINAL_ELECTION_PROGRAMME_VERIFIED_TRUE",
+      "fach_review_started": false,
+      "fach_semantics_inferred": false
+    },
+    {
+      "blocker_order": 3,
+      "party": "ÖDP",
+      "residual_class": "SOURCE_MATURITY_BLOCKER",
+      "blocking_gate": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "exact_register_state": {
+        "artifact_class": "ELECTION_REFERENCED_CURRENT_LANDESPROGRAMME",
+        "source_status": "ELECTION_REFERENCED_CURRENT_LANDESPROGRAMME_NOT_NEW_2026_FINAL_CORPUS",
+        "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+        "final_election_programme_verified": false,
+        "source_available_for_election_corpus": false,
+        "canonicalization_pending": false,
+        "public_status_label": "Aktuelles Landesprogramm wahlbezogen referenziert · kein neues finales 2026-Vollprogramm",
+        "public_status_detail": "Die offizielle Wahlseite verweist auf das bestehende Landesprogramm. Es wird nicht still als neu 2026 verabschiedeter Wahlprogramm-Corpus umetikettiert.",
+        "source_urls": [
+          {
+            "label": "Wahlseite 2026",
+            "url": "https://www.oedp-mv.de/wahlen/landtagswahl-2026"
+          },
+          {
+            "label": "Landesprogramm",
+            "url": "https://www.oedp-mv.de/programm/landesprogramm"
+          }
+        ],
+        "canonical_artifact": null
+      },
+      "required_transition": "CURRENT_SOURCE_REGISTER_FINAL_ELECTION_PROGRAMME_VERIFIED_TRUE",
+      "fach_review_started": false,
+      "fach_semantics_inferred": false
+    },
+    {
+      "blocker_order": 4,
+      "party": "Handwerker Partei Deutschland",
+      "residual_class": "SOURCE_MATURITY_BLOCKER",
+      "blocking_gate": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "exact_register_state": {
+        "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+        "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+        "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+        "final_election_programme_verified": false,
+        "source_available_for_election_corpus": false,
+        "canonicalization_pending": false,
+        "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+        "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+        "source_urls": [
+          {
+            "label": "Dokumentierter Quellenstatus in #240",
+            "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+          }
+        ],
+        "canonical_artifact": null
+      },
+      "required_transition": "CURRENT_SOURCE_REGISTER_FINAL_ELECTION_PROGRAMME_VERIFIED_TRUE",
+      "fach_review_started": false,
+      "fach_semantics_inferred": false
+    },
+    {
+      "blocker_order": 5,
+      "party": "KPD",
+      "residual_class": "SOURCE_MATURITY_BLOCKER",
+      "blocking_gate": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "exact_register_state": {
+        "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+        "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+        "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+        "final_election_programme_verified": false,
+        "source_available_for_election_corpus": false,
+        "canonicalization_pending": false,
+        "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+        "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+        "source_urls": [
+          {
+            "label": "Dokumentierter Quellenstatus in #240",
+            "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+          }
+        ],
+        "canonical_artifact": null
+      },
+      "required_transition": "CURRENT_SOURCE_REGISTER_FINAL_ELECTION_PROGRAMME_VERIFIED_TRUE",
+      "fach_review_started": false,
+      "fach_semantics_inferred": false
+    },
+    {
+      "blocker_order": 6,
+      "party": "Team Freiheit",
+      "residual_class": "SOURCE_MATURITY_BLOCKER",
+      "blocking_gate": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "exact_register_state": {
+        "artifact_class": "CAMPAIGN_PROGRAMMATIC_SOURCE",
+        "source_status": "MV_2026_CAMPAIGN_PROGRAMMATIC_SOURCE_AVAILABLE_FINAL_STANDALONE_PROGRAMME_NOT_ESTABLISHED",
+        "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+        "final_election_programme_verified": false,
+        "source_available_for_election_corpus": false,
+        "canonicalization_pending": false,
+        "public_status_label": "MV-2026-Kampagnenprogrammatik vorhanden · finales Vollprogramm nicht verifiziert",
+        "public_status_detail": "MV-spezifische Positionen sind als Kampagnen- und Kommunikationsquelle verfügbar. Daraus wird kein eigenständiges finales Wahlprogramm abgeleitet.",
+        "source_urls": [
+          {
+            "label": "Parteiwebsite",
+            "url": "https://team-freiheit.de/"
+          },
+          {
+            "label": "MV-Seite",
+            "url": "https://www.team-freiheit.de/mv/"
+          }
+        ],
+        "canonical_artifact": null
+      },
+      "required_transition": "CURRENT_SOURCE_REGISTER_FINAL_ELECTION_PROGRAMME_VERIFIED_TRUE",
+      "fach_review_started": false,
+      "fach_semantics_inferred": false
+    },
+    {
+      "blocker_order": 7,
+      "party": "WIR LEBEN DEMOKRATIE",
+      "residual_class": "SOURCE_MATURITY_BLOCKER",
+      "blocking_gate": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "exact_register_state": {
+        "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+        "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+        "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+        "final_election_programme_verified": false,
+        "source_available_for_election_corpus": false,
+        "canonicalization_pending": false,
+        "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+        "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+        "source_urls": [
+          {
+            "label": "Dokumentierter Quellenstatus in #240",
+            "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+          }
+        ],
+        "canonical_artifact": null
+      },
+      "required_transition": "CURRENT_SOURCE_REGISTER_FINAL_ELECTION_PROGRAMME_VERIFIED_TRUE",
+      "fach_review_started": false,
+      "fach_semantics_inferred": false
+    }
+  ],
+  "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
+  "descriptor_sha256": "f5c0696f9e8c10ece572f26c7188cb97fa99f35a0ce7288d00960735e2523b71"
+}

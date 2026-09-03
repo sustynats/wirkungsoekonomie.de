@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wirkungsrenten-Rechner | Wirkungsökonomie</title>
+    <meta name="description" content="Modellhafte Demo zu Basisrente, Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende, Fondsanteil und Automatisierungs-Entkopplung.">
+    <meta name="search_title" content="Wirkungsrenten-Rechner">
+    <meta name="search_description" content="Modellhafte Demo zu Basisrente, Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende, Fondsanteil und Automatisierungs-Entkopplung.">
+    <meta name="search_section" content="Erleben">
+    <meta name="search_type" content="Demo">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/erleben/wirkungsrenten-rechner/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="Wirkungsrenten-Rechner">
+    <meta property="og:description" content="Modellhafte Demo zu Basisrente, Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende, Fondsanteil und Automatisierungs-Entkopplung.">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/erleben/wirkungsrenten-rechner/">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
+  </head>
+  <body>
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--frag-die-wok" href="../../woek-ki/" data-nav-match="woek-ki/|app/" data-utility-label="Frag die WÖk">Frag die WÖk</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        <a class="site-utility-link site-utility-link--language" href="../../en/" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/|sdg-plus/|referenzrahmen/|sdg-sdgplus/|wissen/">Verstehen</a>
+        <a href="../../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/unternehmen/impact-controlling/|fuer/buergerinnen.html|fuer/investoren.html|fuer/investoren/impact-controlling/|fuer/kommunen.html">Für wen?</a>
+        <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/|wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/">Praxis &amp; Tools</a>
+        <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Debatte &amp; Radar</a>
+        <a href="../../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
+        <a href="../../institut/" data-nav-match="institut/">Institut</a>
+        <a href="../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|quellenarchiv/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html|portale/|website-1-0-release/">Bibliothek</a>
+        <a href="../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--frag-die-wok" href="../../woek-ki/" data-nav-match="woek-ki/|app/" data-utility-label="Frag die WÖk">Frag die WÖk</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        <a class="site-utility-link site-utility-link--language" href="../../en/" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <p class="print-meta">Wirkungsökonomie · Wirkungsrenten-Rechner · https://wirkungsoekonomie.de/erleben/wirkungsrenten-rechner/ · Druckdatum: 2026-05-24</p>
+<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="../../index.html">Start</a> / <a href="../../erleben.html">Erleben</a></nav><p class="hero-kicker">Demo · Modell Modellfassung</p><h1>Wirkungsrenten-Rechner</h1><p class="hero-subtitle">Basisrente, klassische Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende und Fondsanteil modellhaft zusammendenken.</p><p class="scanner-notice">Modellhafte Demonstration. Keine Rentenauskunft, keine Rechtsberatung, keine Steuerberatung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#rechenmodell">Rechenmodell ansehen</a></div></div></section>
+<!-- stage8-demo-governance:start -->
+      <section class="section demo-governance" aria-labelledby="stage8-demo-wirkungsrenten-rechner-title">
+        <div class="section-header">
+          <p class="hero-kicker">Demo-Methodik</p>
+          <h2 id="stage8-demo-wirkungsrenten-rechner-title">Was diese Demo zeigt und was nicht</h2>
+          <p>Dieser Standardblock gilt für Demos, Rechner, Scanner und interaktive Tools. Er trennt modellhafte Darstellung von amtlicher Bewertung, Beratung oder automatisierter Entscheidung.</p>
+        </div>
+        <aside class="protection-notice" role="note" aria-label="Schutzlinien dieser Demo">
+          <p class="card-kicker">Schutzlinien</p>
+          <h3 class="card-title">Nicht amtlich. Keine Beratung. Keine Personenbewertung.</h3>
+          <ul class="protection-notice-list">
+            <li>Nicht amtlich und keine WÖk-Zertifizierung.</li>
+            <li>Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs- oder Förderberatung.</li>
+            <li>Keine Personenbewertung und kein Social-Credit-Mechanismus.</li>
+            <li>Keine automatische Entscheidung; Verantwortung bleibt menschlich, institutionell und demokratisch legitimiert.</li>
+            <li>Datenqualität, Annahmen und Unsicherheit müssen sichtbar bleiben.</li>
+          </ul>
+        </aside>
+        <div class="card-grid four demo-governance-grid">
+          <article class="card">
+            <p class="card-kicker">Was diese Demo zeigt</p>
+            <h3 class="card-title">Wirkungsrenten-Rechner</h3>
+            <p class="card-text">Wie Lebensleistung, Care, Bildung, Pflege, Generationenvertrag und soziale Sicherung als Wirkungsfragen modellhaft sichtbar werden.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Modellannahmen</p>
+            <h3 class="card-title">Vereinfachtes Arbeitsmodell</h3>
+            <p class="card-text">Die Demo nutzt vereinfachte Wirkungspfade, Schwellen, Gewichtungen und Beispielwerte. Sie zeigt Struktur und Logik, nicht den finalen Prüfstandard.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Datenqualität / Demo-Werte</p>
+            <h3 class="card-title">Beispielwerte statt Prüfstatus</h3>
+            <p class="card-text">Demo-Werte sind modellhaft. Reale Anwendungen brauchen Quellen, Versionen, Datenqualitätsstufen, Unsicherheitsmarkierung und prüfbare Nachweise.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Was diese Demo nicht leistet</p>
+            <h3 class="card-title">Keine endgültige Einstufung</h3>
+            <p class="card-text">Die Demo ersetzt keine amtliche Bewertung, keine Beratung, keine Auditierung, keine Zertifizierung und keine fachliche Einzelfallprüfung.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Schutzlinien</p>
+            <h3 class="card-title">Rote Linien bleiben sichtbar</h3>
+            <p class="card-text">Keine Personenbewertung, keine automatische Entscheidung, keine Kompensation roter Linien und keine verdeckte Beratung. Datenqualität und Unsicherheit bleiben sichtbar.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Verwandte Methoden</p>
+            <h3 class="card-title">Methodisch vertiefen</h3>
+            <div class="demo-governance-links"><a class="text-link" href="../../werkzeuge/wirkungsfonds/">Wirkungsfonds</a><a class="text-link" href="../../werkzeuge/wirkungshaushalt/">Wirkungshaushalt</a><a class="text-link" href="../../werkzeuge/t-sroi/">T-SROI</a></div>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Verwandte Dokumente</p>
+            <h3 class="card-title">Bibliothek und Kontext</h3>
+            <div class="demo-governance-links"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/">Rente &amp; soziale Sicherung</a><a class="text-link" href="../../referenz/kapitel-058-wirkungsrente/">Wirkungsrente</a></div>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Nächster Schritt</p>
+            <h3 class="card-title">Vom Ausprobieren zur Anwendung</h3>
+            <p class="card-text">Nutze das Ergebnis als Lern- und Diskussionsanstoß und prüfe danach Methodik, Datenlage und passende Wirkungsfelder.</p>
+            <div class="demo-governance-links"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/">Rente &amp; soziale Sicherung</a><a class="text-link" href="../../werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/">Arbeitsbibliothek Rente</a></div>
+          </article>
+        </div>
+      </section>
+<!-- stage8-demo-governance:end --><section class="section" aria-labelledby="rechenmodell"><div class="section-header"><p class="hero-kicker">Arbeitsformel</p><h2 id="rechenmodell">Rechenmodell Modellfassung <a class="cite-anchor no-print" href="#rechenmodell" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2></div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Formel</th><td>Rente_modell = B + A + max(0, WB) + WD + F</td></tr><tr><th>B</th><td>Basisrente / Würdeebene</td></tr><tr><th>A</th><td>Klassischer Anwartschaftsanteil</td></tr><tr><th>LWF</th><td>Lebenswirkungs-Faktor, Pilotkorridor 1,00 bis 1,25</td></tr><tr><th>WB</th><td>B × (LWF - 1), keine negative Personenabsenkung unter die Würdeebene</td></tr><tr><th>WD / F</th><td>Wirkungsdividende und Fondsanteil aus Renten-Impact-Fonds</td></tr></tbody></table></div></section><section class="section" aria-labelledby="demo-module"><div class="section-header"><p class="hero-kicker">Module</p><h2 id="demo-module">Demo-Module <a class="cite-anchor no-print" href="#demo-module" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2></div><div class="card-grid three"><article class="card"><p class="card-kicker">Demo</p><h3 class="card-title">Alter-Rente-Vergleich</h3><p class="card-text">Vergleicht alte Logik und Wirkungslogik modellhaft.</p></article><article class="card"><p class="card-kicker">Demo</p><h3 class="card-title">Lebenswirkungs-Konto</h3><p class="card-text">Zeigt Nachweisfelder für Care, Bildung, Pflege, Ehrenamt und Transformation.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-konto/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Demo</p><h3 class="card-title">Renten-Impact-Fonds-Szenario</h3><p class="card-text">Verbindet Fondsparameter, Wirkungserträge, Rücklagen und Ausschüttung.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/renten-impact-fonds/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Demo</p><h3 class="card-title">Automatisierungs-Entkopplung</h3><p class="card-text">Zeigt Maschinenleistung, Sozialabgabenbasis und Rückkopplungsquote.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/">Wirkungsfeld ansehen</a></div></article></div></section><section class="section narrow"><nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol class="toc-links"><li class="toc-level-2"><a href="#tool-spezifikation-wirkungsrenten-rechner-und-lebenswirkungs-konto">Methodik: Wirkungsrenten-Rechner und Lebenswirkungs-Konto</a></li><li class="toc-level-2"><a href="#zweck">Zweck</a></li><li class="toc-level-2"><a href="#module">Module</a></li><li class="toc-level-3"><a href="#1-alter-rente-vergleich-alte-logik-vs-wirkungslogik">1. Alter-Rente-Vergleich: alte Logik vs. Wirkungslogik.</a></li><li class="toc-level-3"><a href="#2-lebenswirkungs-konto-nachweisfelder-fur-care-bildung-pflege-ehrenamt-transformation">2. Lebenswirkungs-Konto: Nachweisfelder für Care, Bildung, Pflege, Ehrenamt, Transformation.</a></li><li class="toc-level-3"><a href="#3-lebenswirkungs-faktor-begrenzter-korridor-fur-anerkannte-wirkleistung">3. Lebenswirkungs-Faktor: begrenzter Korridor für anerkannte Wirkleistung.</a></li><li class="toc-level-3"><a href="#4-wirkungsdividenden-szenario-ausschuttung-aus-wirkungsfonds">4. Wirkungsdividenden-Szenario: Ausschüttung aus Wirkungsfonds.</a></li><li class="toc-level-3"><a href="#5-automatisierungs-entkopplung-maschinenleistung-und-sozialabgabenbasis">5. Automatisierungs-Entkopplung: Maschinenleistung und Sozialabgabenbasis.</a></li><li class="toc-level-3"><a href="#6-renten-impact-fonds-fondsbeitrage-rendite-wirkungsindex-ausschlusskriterien">6. Renten-Impact-Fonds: Fondsbeiträge, Rendite, Wirkungsindex, Ausschlusskriterien.</a></li><li class="toc-level-2"><a href="#eingaben">Eingaben</a></li><li class="toc-level-2"><a href="#arbeitsformel-v0-1">Arbeitsformel Modellfassung</a></li><li class="toc-level-2"><a href="#ausgaben">Ausgaben</a></li><li class="toc-level-2"><a href="#datenschutz-und-schutzlinien">Datenschutz und Schutzlinien</a></li><li class="toc-level-2"><a href="#kontextverlinkungen">Kontextverlinkungen</a></li></ol></nav></section><section class="section article-section"><article class="article-body fulltext-reader"><h2 id="spezifikation">Methodik <a class="cite-anchor no-print" href="#spezifikation" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2><h2 id="tool-spezifikation-wirkungsrenten-rechner-und-lebenswirkungs-konto">Methodik: Wirkungsrenten-Rechner und Lebenswirkungs-Konto <a class="cite-anchor no-print" href="#tool-spezifikation-wirkungsrenten-rechner-und-lebenswirkungs-konto" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<p id="absatz-001">Modellhafte Fassung Status: Arbeitsfassung Autorin/Referenz: Natalie Weber / Wirkungsökonomie <a class="cite-anchor no-print" href="#absatz-001" aria-label="Zitierlink zu diesem Absatz">#</a></p>
+<h2 id="zweck">Zweck <a class="cite-anchor no-print" href="#zweck" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<p id="absatz-002">Der Wirkungsrenten-Rechner macht modellhaft sichtbar, wie eine wirkungsökonomische Rentenlogik aussehen kann. Er ersetzt keine Rentenauskunft, keine Rechtsberatung und keine steuerliche Beratung. Er dient der öffentlichen Verständlichkeit und politischen Diskussion. <a class="cite-anchor no-print" href="#absatz-002" aria-label="Zitierlink zu diesem Absatz">#</a></p>
+<h2 id="module">Module <a class="cite-anchor no-print" href="#module" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="1-alter-rente-vergleich-alte-logik-vs-wirkungslogik">1. Alter-Rente-Vergleich: alte Logik vs. Wirkungslogik. <a class="cite-anchor no-print" href="#1-alter-rente-vergleich-alte-logik-vs-wirkungslogik" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h3 id="2-lebenswirkungs-konto-nachweisfelder-fur-care-bildung-pflege-ehrenamt-transformation">2. Lebenswirkungs-Konto: Nachweisfelder für Care, Bildung, Pflege, Ehrenamt, Transformation. <a class="cite-anchor no-print" href="#2-lebenswirkungs-konto-nachweisfelder-fur-care-bildung-pflege-ehrenamt-transformation" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h3 id="3-lebenswirkungs-faktor-begrenzter-korridor-fur-anerkannte-wirkleistung">3. Lebenswirkungs-Faktor: begrenzter Korridor für anerkannte Wirkleistung. <a class="cite-anchor no-print" href="#3-lebenswirkungs-faktor-begrenzter-korridor-fur-anerkannte-wirkleistung" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h3 id="4-wirkungsdividenden-szenario-ausschuttung-aus-wirkungsfonds">4. Wirkungsdividenden-Szenario: Ausschüttung aus Wirkungsfonds. <a class="cite-anchor no-print" href="#4-wirkungsdividenden-szenario-ausschuttung-aus-wirkungsfonds" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h3 id="5-automatisierungs-entkopplung-maschinenleistung-und-sozialabgabenbasis">5. Automatisierungs-Entkopplung: Maschinenleistung und Sozialabgabenbasis. <a class="cite-anchor no-print" href="#5-automatisierungs-entkopplung-maschinenleistung-und-sozialabgabenbasis" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h3 id="6-renten-impact-fonds-fondsbeitrage-rendite-wirkungsindex-ausschlusskriterien">6. Renten-Impact-Fonds: Fondsbeiträge, Rendite, Wirkungsindex, Ausschlusskriterien. <a class="cite-anchor no-print" href="#6-renten-impact-fonds-fondsbeitrage-rendite-wirkungsindex-ausschlusskriterien" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h2 id="eingaben">Eingaben <a class="cite-anchor no-print" href="#eingaben" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<ul><li>Geburtsjahr und Lebensphase</li><li>klassische Beitragsjahre / Einkommenshistorie als vereinfachte Eingabe</li><li>Care- und Pflegezeiten</li><li>Bildungs-, Qualifikations- und Engagementzeiten</li><li>Transformationsbeiträge / gemeinwohlorientierte Tätigkeit</li><li>Fondsparameter: erwartete Wirkungserträge, Ausschüttungsquote, Rücklagenquote</li><li>Automatisierungsparameter: ersetzte menschliche Arbeitszeit, Maschinenwertschöpfung, Rückkopplungsquote</li></ul>
+<h2 id="arbeitsformel-v0-1">Arbeitsformel Modellfassung <a class="cite-anchor no-print" href="#arbeitsformel-v0-1" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<p id="absatz-003">B = Basisrente / Würdeebene A = klassischer Anwartschaftsanteil LWF = Lebenswirkungs-Faktor, Pilotkorridor 1,00 bis 1,25 für positive Anerkennung WB = B × (LWF - 1) WD = Wirkungsdividende aus Fonds F = Fondsanteil <a class="cite-anchor no-print" href="#absatz-003" aria-label="Zitierlink zu diesem Absatz">#</a></p>
+<p id="absatz-004">Rente_modell = B + A + max(0, WB) + WD + F <a class="cite-anchor no-print" href="#absatz-004" aria-label="Zitierlink zu diesem Absatz">#</a></p>
+<p id="absatz-005">In der Pilotphase keine negative Personenabsenkung unter die Würdeebene. Negative Wirkung wird primär über Unternehmens-, Produkt-, Kapital- und Steuerinstrumente rückgekoppelt. <a class="cite-anchor no-print" href="#absatz-005" aria-label="Zitierlink zu diesem Absatz">#</a></p>
+<h2 id="ausgaben">Ausgaben <a class="cite-anchor no-print" href="#ausgaben" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<ul><li>Modellrente in Euro</li><li>Zusammensetzung der Bausteine</li><li>Vergleich zur alten Logik</li><li>Wirkungsfelder und SDG-/SDG+-Bezug</li><li>Datenqualitäts-Hinweise</li><li>Politische Ausgestaltungsspielräume</li></ul>
+<h2 id="datenschutz-und-schutzlinien">Datenschutz und Schutzlinien <a class="cite-anchor no-print" href="#datenschutz-und-schutzlinien" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<ul><li>keine Speicherung ohne Zustimmung</li><li>keine automatisierte Letztentscheidung</li><li>keine Personenbewertung</li><li>Recht auf Korrektur in realer Umsetzung</li><li>Popover-Hinweis: Modellhafte Demo, keine Rentenauskunft</li></ul>
+<h2 id="kontextverlinkungen">Kontextverlinkungen <a class="cite-anchor no-print" href="#kontextverlinkungen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<ul><li>/wirkungsfelder/rente-soziale-sicherung/</li><li>/wirkungsfelder/arbeit-einkommen/</li><li>/wirkungsfelder/finanzsystem-kapital/</li><li>/werkzeuge/impact-controlling/</li><li>/werkzeuge/woek-ids/</li><li>/werkzeuge/wirkungseinkommensteuer/</li><li>/werkzeuge/wirkungssteuergesetz/</li></ul></article></section><section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Methoden & Werkzeuge</p><h2 id="tools">Werkzeuge in diesem Bereich <a class="cite-anchor no-print" href="#tools" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2></div><div class="card-grid three"><article class="card"><p class="card-kicker">Demo</p><h3 class="card-title">Wirkungsrenten-Rechner</h3><p class="card-text">Zeigt Basisrente, klassische Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende und Fondsanteil modellhaft.</p><div class="portal-card-actions"><span class="text-note is-current" aria-current="page">Du nutzt diese Demo.</span></div></article><article class="card"><p class="card-kicker">Modul</p><h3 class="card-title">Lebenswirkungs-Konto</h3><p class="card-text">Macht Care, Bildung, Pflege, Ehrenamt, Transformation und Gemeinwesenbeiträge sichtbar, ohne Menschen zu bewerten.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-konto/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Berechnungslogik</p><h3 class="card-title">Lebenswirkungs-Faktor</h3><p class="card-text">Begrenzter Pilotkorridor für anerkannte positive Wirkleistung, mit Würdegrenze und Korrekturverfahren.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-faktor/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Fonds</p><h3 class="card-title">Renten-Impact-Fonds</h3><p class="card-text">Verbindet Alterssicherung, Kapitalwirkung, Transformationsfinanzierung und positive Netto-Wirkung.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/rente-soziale-sicherung/renten-impact-fonds/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Querschnitt</p><h3 class="card-title">Wirkungsfonds</h3><p class="card-text">Fondsarchitektur für Rente, Bildung, Gesundheit, Wohnen, Demokratie, Medien, Innovation und Regeneration.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/finanzsystem-kapital/finanzierbarkeit-wirkungsfonds/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Steuerkonzept</p><h3 class="card-title">Wirkungseinkommensteuer</h3><p class="card-text">Ordnet Einkommen nach Höhe, Entstehungskontext und Wirkung ein.</p><div class="portal-card-actions"><a class="text-link" href="../../werkzeuge/wirkungseinkommensteuer/">Methodik lesen</a></div></article><article class="card"><p class="card-kicker">Rückkopplung</p><h3 class="card-title">Maschinenwertschöpfungsbeitrag</h3><p class="card-text">Beteiligt automatisierte Wertschöpfung an sozialer Sicherung und Wirkungsfonds.</p><div class="portal-card-actions"><a class="text-link" href="../../werkzeuge/maschinenwertschoepfungsbeitrag/">Methodik lesen</a></div></article><article class="card"><p class="card-kicker">Datenarchitektur</p><h3 class="card-title">WÖk-IDs</h3><p class="card-text">Verbinden SDGs, SDG+, Rentenwirkung, Care, Fonds, Einkommen und Sozialschutz mit nachvollziehbaren Indikatoren.</p><div class="portal-card-actions"><a class="text-link" href="../../werkzeuge/woek-ids/">Methodik lesen</a></div></article><article class="card"><p class="card-kicker">Impact Controlling</p><h3 class="card-title">T-SROI</h3><p class="card-text">Bewertet Transformationsinvestitionen in Care, Weiterbildung, Gesundheit, Wohnen und Fondslogik.</p><div class="portal-card-actions"><a class="text-link" href="../../werkzeuge/t-sroi/">Methodik lesen</a></div></article><article class="card"><p class="card-kicker">Institution</p><h3 class="card-title">Wirkungsrat</h3><p class="card-text">Prüft Methodik, rote Linien, Evaluation und demokratische Korrektur der Wirkungslogik.</p><div class="portal-card-actions"><a class="text-link" href="../../werkzeuge/wirkungsrat/">Methodik lesen</a></div></article></div></section><section class="section" aria-labelledby="vernetzung"><div class="section-header"><p class="hero-kicker">Vernetzung</p><h2 id="vernetzung">Querverlinkungen <a class="cite-anchor no-print" href="#vernetzung" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2></div><div class="card-grid three"><article class="card"><p class="card-kicker">Wirkungsfeld</p><h3 class="card-title">Arbeit &amp; Einkommen</h3><p class="card-text">Sozialabgaben-Entkopplung, Maschinenleistung, Wirkungseinkommen und Automatisierungsdividende.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/arbeit-einkommen/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Wirkungsfeld</p><h3 class="card-title">Finanzsystem &amp; Kapital</h3><p class="card-text">Renten-Impact-Fonds, Wirkungsfonds, Kapitalwirkung, Vermögen und Erbschaft als Querschnitt.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/finanzsystem-kapital/finanzierbarkeit-wirkungsfonds/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Wirkungsfeld</p><h3 class="card-title">Staat, Recht &amp; Demokratie</h3><p class="card-text">WStG, WEstG, Wirkungshaushalt, Wirkungsrat, Rechtsschutz und parlamentarische Kontrolle.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/staat-recht-demokratie/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Wirkungsfeld</p><h3 class="card-title">Wirtschaft &amp; Unternehmen</h3><p class="card-text">Automatisierung, betriebliche Vorsorge, Finanzmarktanforderungen, Weiterbildung und Mitbestimmung.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/wirtschaft-unternehmen/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Wirkungsfeld</p><h3 class="card-title">Wohnen &amp; Stadt</h3><p class="card-text">Alter, barrierefreies Wohnen, Wohnwirkungsfonds, Vorsorgekapital und Quartierswirkung.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/wohnen-stadt/">Wirkungsfeld ansehen</a></div></article><article class="card"><p class="card-kicker">Wirkungsfeld</p><h3 class="card-title">Produkte &amp; Konsum</h3><p class="card-text">Wirkungsumsatzsteuer, Kaufkraftschutz, Preise und soziale Abfederung.</p><div class="portal-card-actions"><a class="text-link" href="../../wirkungsfelder/produkte-konsum/">Wirkungsfeld ansehen</a></div></article></div></section><section class="section" aria-labelledby="politik"><div class="section-header"><p class="hero-kicker">Demokratische Umsetzung</p><h2 id="politik">Politische Anschlussfähigkeit und Umsetzungsoptionen <a class="cite-anchor no-print" href="#politik" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2><p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit Rente und soziale Sicherung demokratisch, rechtsstaatlich und praktisch umgesetzt werden können.</p></div><div class="table-wrap"><table class="data-table"><tbody><tr><th scope="row">Aufgabe der Politik</th><td>Würde im Alter, Finanzierungsstabilität, Lebenswirkung, Care-Anerkennung, Sozialschutz und demokratisches Vertrauen verbinden.</td></tr><tr><th scope="row">Politische Rahmenbedingungen</th><td>Rentenrecht, Sozialversicherungsrecht, Steuerrecht, Datenschutz, Fondsaufsicht, WÖk-IDs, Wirkungshaushalt und Wirkungsrat kohärent verknüpfen.</td></tr><tr><th scope="row">Ausgestaltungsspielraum</th><td>Umlage, Fonds, Basisrente, Bonuskorridore, Beitragssätze, Steuerzuschüsse, Pilotregionen und Kapitaldeckung bleiben politisch gestaltbar.</td></tr><tr><th scope="row">Zielkonflikte</th><td>Würde und Leistungsprinzip, Datenschutz und Nachweis, Einfachheit und Präzision, Generationengerechtigkeit und Bestandsschutz müssen demokratisch abgewogen werden.</td></tr><tr><th scope="row">Rollenverteilung</th><td>EU, Bund, Länder, Kommunen, Sozialversicherung, Unternehmen, Gewerkschaften, Wissenschaft, Zivilgesellschaft und Wirkungsrat tragen unterschiedliche Verantwortung.</td></tr><tr><th scope="row">Übergang und Schutz</th><td>Bestandsschutz, Härtefallregeln, freiwillige Pilotphasen, KMU-Schutz, Sozialausgleich, Rechtsschutz und klare Korrekturverfahren sichern die Einführung.</td></tr><tr><th scope="row">Evaluation und Korrektur</th><td>Regelmäßige Wirkungsberichte, öffentliche Konsultation, Datenqualitätsprüfung, parlamentarische Kontrolle und gerichtlicher Rechtsschutz halten das System lernfähig.</td></tr><tr><th scope="row">Schutz vor Technokratie</th><td>Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Normative Entscheidungen bleiben demokratisch legitimiert.</td></tr></tbody></table></div></section><section class="section" aria-labelledby="sdg-ref"><div class="portal-reference-block"><p class="hero-kicker">Referenzrahmen</p><h2 id="sdg-ref">SDG-/SDG+-Bezug <a class="cite-anchor no-print" href="#sdg-ref" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2><div class="model-strip"><span class="sdg-ref" data-sdg-id="sdg-1">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-1-keine-armut/" aria-label="SDG 1 Keine Armut: SDG 1 ist in der Wirkungsökonomie kein reines Einkommensziel." aria-describedby="sdg-popover-sdg-1-377">SDG 1 Keine Armut</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 1 Keine Armut: SDG 1 ist in der Wirkungsökonomie kein reines Einkommensziel." aria-describedby="sdg-popover-sdg-1-377">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-1-377" role="tooltip">SDG 1 ist in der Wirkungsökonomie kein reines Einkommensziel. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-3">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/" aria-label="SDG 3 Gesundheit Wohlergehen: SDG 3 beschreibt Gesundheit als Zustand körperlicher, psychischer und sozialer Lebensfähigkeit." aria-describedby="sdg-popover-sdg-3-378">SDG 3 Gesundheit Wohlergehen</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 3 Gesundheit Wohlergehen: SDG 3 beschreibt Gesundheit als Zustand körperlicher, psychischer und sozialer Lebensfähigkeit." aria-describedby="sdg-popover-sdg-3-378">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-3-378" role="tooltip">SDG 3 beschreibt Gesundheit als Zustand körperlicher, psychischer und sozialer Lebensfähigkeit. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-4">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/" aria-label="SDG 4 Hochwertige Bildung: SDG 4 ist für die WÖk ein Kernziel, weil Bildung nicht nur Wissen vermittelt, sondern Wirkungskompetenz erzeugt: die Fähigkeit, Folgen, Nebenwirkungen, Rückkopplungen, Macht und Verantwortung zu verstehen." aria-describedby="sdg-popover-sdg-4-379">SDG 4 Hochwertige Bildung</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 4 Hochwertige Bildung: SDG 4 ist für die WÖk ein Kernziel, weil Bildung nicht nur Wissen vermittelt, sondern Wirkungskompetenz erzeugt: die Fähigkeit, Folgen, Nebenwirkungen, Rückkopplungen, Macht und Verantwortung zu verstehen." aria-describedby="sdg-popover-sdg-4-379">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-4-379" role="tooltip">SDG 4 ist für die WÖk ein Kernziel, weil Bildung nicht nur Wissen vermittelt, sondern Wirkungskompetenz erzeugt: die Fähigkeit, Folgen, Nebenwirkungen, Rückkopplungen, Macht und Verantwortung zu verstehen. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-5">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/" aria-label="SDG 5 Geschlechtergleichstellung: Gleichstellung ist in der WÖk nicht nur Verteilungsfrage, sondern Systemfrage: Care, Macht, Führung, Einkommen, Sicherheit und digitale Teilhabe prägen Wirkungschancen." aria-describedby="sdg-popover-sdg-5-380">SDG 5 Geschlechtergleichstellung</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 5 Geschlechtergleichstellung: Gleichstellung ist in der WÖk nicht nur Verteilungsfrage, sondern Systemfrage: Care, Macht, Führung, Einkommen, Sicherheit und digitale Teilhabe prägen Wirkungschancen." aria-describedby="sdg-popover-sdg-5-380">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-5-380" role="tooltip">Gleichstellung ist in der WÖk nicht nur Verteilungsfrage, sondern Systemfrage: Care, Macht, Führung, Einkommen, Sicherheit und digitale Teilhabe prägen Wirkungschancen. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-8">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/" aria-label="SDG 8 Menschenwürdige Arbeit nachhaltige wirtschaftliche Entwicklung: SDG 8 ist für die WÖk kritisch, weil Wachstum nicht automatisch positiv ist." aria-describedby="sdg-popover-sdg-8-381">SDG 8 Menschenwürdige Arbeit nachhaltige wirtschaftliche Entwicklung</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 8 Menschenwürdige Arbeit nachhaltige wirtschaftliche Entwicklung: SDG 8 ist für die WÖk kritisch, weil Wachstum nicht automatisch positiv ist." aria-describedby="sdg-popover-sdg-8-381">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-8-381" role="tooltip">SDG 8 ist für die WÖk kritisch, weil Wachstum nicht automatisch positiv ist. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-10">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/" aria-label="SDG 10 Weniger Ungleichheiten: SDG 10 liest die WÖk als Systemfrage von Macht, Einkommen, Kapital, Zugang, Diskriminierung, Migration und regionaler Teilhabe." aria-describedby="sdg-popover-sdg-10-382">SDG 10 Weniger Ungleichheiten</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 10 Weniger Ungleichheiten: SDG 10 liest die WÖk als Systemfrage von Macht, Einkommen, Kapital, Zugang, Diskriminierung, Migration und regionaler Teilhabe." aria-describedby="sdg-popover-sdg-10-382">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-10-382" role="tooltip">SDG 10 liest die WÖk als Systemfrage von Macht, Einkommen, Kapital, Zugang, Diskriminierung, Migration und regionaler Teilhabe. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-11">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/" aria-label="SDG 11 Nachhaltige Städte Gemeinden: SDG 11 ist für die WÖk der Raumbezug: Wohnen, Mobilität, Hitze, Energie, Gesundheit, Kultur, Sicherheit, Beteiligung und Quartier wirken zusammen." aria-describedby="sdg-popover-sdg-11-383">SDG 11 Nachhaltige Städte Gemeinden</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 11 Nachhaltige Städte Gemeinden: SDG 11 ist für die WÖk der Raumbezug: Wohnen, Mobilität, Hitze, Energie, Gesundheit, Kultur, Sicherheit, Beteiligung und Quartier wirken zusammen." aria-describedby="sdg-popover-sdg-11-383">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-11-383" role="tooltip">SDG 11 ist für die WÖk der Raumbezug: Wohnen, Mobilität, Hitze, Energie, Gesundheit, Kultur, Sicherheit, Beteiligung und Quartier wirken zusammen. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-16">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/" aria-label="SDG 16 Frieden, Gerechtigkeit starke Institutionen: SDG 16 ist der offizielle SDG-Anker für Demokratie, Recht, Institutionen, Frieden, Korruption und Zugang zu Information." aria-describedby="sdg-popover-sdg-16-384">SDG 16 Frieden, Gerechtigkeit starke Institutionen</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 16 Frieden, Gerechtigkeit starke Institutionen: SDG 16 ist der offizielle SDG-Anker für Demokratie, Recht, Institutionen, Frieden, Korruption und Zugang zu Information." aria-describedby="sdg-popover-sdg-16-384">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-16-384" role="tooltip">SDG 16 ist der offizielle SDG-Anker für Demokratie, Recht, Institutionen, Frieden, Korruption und Zugang zu Information. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-17">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/sdg-17-partnerschaften/" aria-label="SDG 17 Partnerschaften zur Erreichung der Ziele: SDG 17 ist die Umsetzungsdimension: Daten, Finanzierung, Technologie, Handel, Kapazitäten und Partnerschaften." aria-describedby="sdg-popover-sdg-17-385">SDG 17 Partnerschaften zur Erreichung der Ziele</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 17 Partnerschaften zur Erreichung der Ziele: SDG 17 ist die Umsetzungsdimension: Daten, Finanzierung, Technologie, Handel, Kapazitäten und Partnerschaften." aria-describedby="sdg-popover-sdg-17-385">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-17-385" role="tooltip">SDG 17 ist die Umsetzungsdimension: Daten, Finanzierung, Technologie, Handel, Kapazitäten und Partnerschaften. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-demokratie">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/#sdgplus-demokratie" aria-label="SDG+ Demokratie: SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar." aria-describedby="sdg-popover-sdgplus-demokratie-386">SDG+ Demokratie</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ Demokratie: SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar." aria-describedby="sdg-popover-sdgplus-demokratie-386">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-demokratie-386" role="tooltip">SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-rechtsstaatlichkeit">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit" aria-label="SDG+ Rechtsstaatlichkeit: SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht." aria-describedby="sdg-popover-sdgplus-rechtsstaatlichkeit-387">SDG+ Rechtsstaatlichkeit</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ Rechtsstaatlichkeit: SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht." aria-describedby="sdg-popover-sdgplus-rechtsstaatlichkeit-387">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-rechtsstaatlichkeit-387" role="tooltip">SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-institutionelles-vertrauen">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen" aria-label="SDG+ institutionelles Vertrauen: SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln." aria-describedby="sdg-popover-sdgplus-institutionelles-vertrauen-388">SDG+ institutionelles Vertrauen</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ institutionelles Vertrauen: SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln." aria-describedby="sdg-popover-sdgplus-institutionelles-vertrauen-388">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-institutionelles-vertrauen-388" role="tooltip">SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-gesellschaftlicher-zusammenhalt">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/#sdgplus-gesellschaftlicher-zusammenhalt" aria-label="SDG+ gesellschaftlicher Zusammenhalt: SDG+ gesellschaftlicher Zusammenhalt macht sichtbar, ob Teilhabe, Zugehörigkeit, Sicherheit, Fairness und Schutz vor Spaltung gestärkt werden." aria-describedby="sdg-popover-sdgplus-gesellschaftlicher-zusammenhalt-389">SDG+ gesellschaftlicher Zusammenhalt</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ gesellschaftlicher Zusammenhalt: SDG+ gesellschaftlicher Zusammenhalt macht sichtbar, ob Teilhabe, Zugehörigkeit, Sicherheit, Fairness und Schutz vor Spaltung gestärkt werden." aria-describedby="sdg-popover-sdgplus-gesellschaftlicher-zusammenhalt-389">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-gesellschaftlicher-zusammenhalt-389" role="tooltip">SDG+ gesellschaftlicher Zusammenhalt macht sichtbar, ob Teilhabe, Zugehörigkeit, Sicherheit, Fairness und Schutz vor Spaltung gestärkt werden. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-digitale-selbstbestimmung">
+    <a class="sdg-ref-link" href="../../verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung" aria-label="SDG+ digitale Selbstbestimmung: SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation." aria-describedby="sdg-popover-sdgplus-digitale-selbstbestimmung-390">SDG+ digitale Selbstbestimmung</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ digitale Selbstbestimmung: SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation." aria-describedby="sdg-popover-sdgplus-digitale-selbstbestimmung-390">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-digitale-selbstbestimmung-390" role="tooltip">SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span></div><p>Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. <a class="text-link" href="../../verstehen/sdgs-sdgplus/#sdgplus">SDG+</a> ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Rechtsstaatlichkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p><a class="text-link" href="../../verstehen/sdgs-sdgplus/">Vertiefung lesen</a></div></section><section class="section" aria-labelledby="buch"><div class="section-header"><p class="hero-kicker">Online-Buch</p><h2 id="buch">Anker im Online-Buch <a class="cite-anchor no-print" href="#buch" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2></div><div class="model-strip"><a href="../../referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/">Kapitel 56 - Arbeit, Automatisierung und Maschinenleistung</a><a href="../../referenz/kapitel-057-wirkungseinkommen/">Kapitel 57 - Wirkungseinkommen</a><a href="../../referenz/kapitel-058-wirkungsrente/">Kapitel 58 - Wirkungsrente</a><a href="../../referenz/kapitel-015-leistung-neu-definieren/">Kapitel 15 - Leistung neu definieren</a><a href="../../referenz/kapitel-022-wirkungslenkung/">Kapitel 22 - Wirkungslenkung</a><a href="../../referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/">Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz</a><a href="../../referenz/">Online-Buch Hauptseite</a></div></section><section class="section" aria-labelledby="quellen"><div class="card"><p class="hero-kicker">Quellen</p><h2 id="quellen">Quellen und Datenbezug <a class="cite-anchor no-print" href="#quellen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2><p>Die externen Referenzen dienen als Kontext für Demografie, Rentenversicherung, Erwerbspersonen, Altenquotient und internationale Rentenvergleiche. Modellwerte sind Arbeitsannahmen, keine Rentenauskunft, Rechtsberatung oder Steuerberatung.</p><div class="table-wrap"><table class="data-table"><tbody><tr><th scope="row">WÖk-Arbeitspapier Rentensystem</th><td>WP_Rente.pdf, Natalie Weber, 2025</td></tr><tr><th scope="row">Wenn Maschinen arbeiten</th><td>Natalie Weber, 2025</td></tr><tr><th scope="row">Die neue Ordnung des Wohlstands</th><td>Natalie Weber, 2026, Kapitel 56-58 und Exkurs SDGs</td></tr><tr><th scope="row">Systemmodell der Wirkungsökonomie</th><td>Natalie Weber, 2025, Finanzsystem &amp; Kapital / Gesellschaft &amp; Soziales</td></tr><tr><th scope="row">Führender Begriffsleitfaden</th><td>Wirkung ist neutral und relational, SDGs/Agenda2030/SDG+ als Referenzrahmen</td></tr><tr><th scope="row">BMAS Rentenversicherungsbericht 2025</th><td><a class="text-link" href="https://www.bmas.de/SharedDocs/Downloads/DE/Rente/rentenversicherungsbericht-2025.html" target="_blank" rel="noopener noreferrer">BMAS Rentenversicherungsbericht 2025 <span class="sr-only">(externe Quelle)</span></a></td></tr><tr><th scope="row">Destatis Babyboomer und Erwerbspersonen 2025</th><td><a class="text-link" href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/08/PD25_N048_13.html" target="_blank" rel="noopener noreferrer">Destatis Babyboomer und Erwerbspersonen 2025 <span class="sr-only">(externe Quelle)</span></a></td></tr><tr><th scope="row">Destatis Altenquotient 2025</th><td><a class="text-link" href="https://www.destatis.de/DE/Themen/Querschnitt/Demografischer-Wandel/Aspekte/demografie-altenquotient.html" target="_blank" rel="noopener noreferrer">Destatis Altenquotient 2025 <span class="sr-only">(externe Quelle)</span></a></td></tr><tr><th scope="row">Deutsche Rentenversicherung in Zahlen 2025</th><td><a class="text-link" href="https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Statistiken-und-Berichte/statistikpublikationen/rv_in_zahlen.html" target="_blank" rel="noopener noreferrer">Deutsche Rentenversicherung in Zahlen 2025 <span class="sr-only">(externe Quelle)</span></a></td></tr><tr><th scope="row">OECD Pensions at a Glance 2025: Germany</th><td><a class="text-link" href="https://www.oecd.org/en/publications/pensions-at-a-glance-2025-country-notes_8a53ef12-en/germany_c480c8fa-en.html" target="_blank" rel="noopener noreferrer">OECD Pensions at a Glance 2025: Germany <span class="sr-only">(externe Quelle)</span></a></td></tr></tbody></table></div></div></section><section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Vertiefung</p><h2 id="downloads">Downloads und Druck <a class="cite-anchor no-print" href="#downloads" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2><p>Onlinefassung ist der Hauptzugang. PDF-Fassung bleiben ergänzende Downloadfassungen.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-secondary" href="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-public-assets-v2/assets__downloads__tool_spezifikation_wirkungsrenten_rechner.pdf">Methodik Rechner</a><a class="btn btn-secondary" href="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-public-assets-v2/assets__downloads__tool_spezifikation_wirkungsrentenrechner.pdf">Methodik Simulator</a></div></div></section>
+    </main>
+    <footer class="footer" data-search-exclude>
+  <div class="footer-grid">
+    <div>
+      <p class="hero-kicker">Wirkungsökonomie</p>
+      <h2>Die neue Ordnung des Wohlstands</h2>
+      <p>Die Wirkungsökonomie ist ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht, bewertet und in Entscheidungen zurückführt.</p>
+      <p><a class="text-link" href="../../mitmachen.html">Kontakt und Mitmachen</a></p>
+    </div>
+    <a class="btn btn-primary" href="../../kompass.html">WÖk-Kompass öffnen</a>
+    <nav class="footer-nav" aria-label="Footer Navigation" data-search-exclude>
+      <div class="footer-nav-group">
+      <h3>Verstehen</h3>
+      <div class="footer-nav-links">
+          <a href="../../verstehen/" data-nav-match="verstehen/">Einstieg</a>
+          <a href="../../modell.html" data-nav-match="modell.html">Das Modell</a>
+          <a href="../../so-wirkt-wirkungsoekonomie/" data-nav-match="so-wirkt-wirkungsoekonomie/">So wirkt WÖk</a>
+          <a href="../../wirkungswissenschaften/" data-nav-match="wirkungswissenschaften/">Wirkungswissenschaften</a>
+          <a href="../../einwaende/" data-nav-match="einwaende/">Einwände</a>
+          <a href="../../begriffe/" data-nav-match="begriffe/">Glossar</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Für wen?</h3>
+      <div class="footer-nav-links">
+          <a href="../../fuer/" data-nav-match="fuer/">Übersicht</a>
+          <a href="../../fuer/buergerinnen.html" data-nav-match="fuer/buergerinnen.html">Bürger:innen</a>
+          <a href="../../fuer/unternehmen.html" data-nav-match="fuer/unternehmen.html">Unternehmen</a>
+          <a href="../../fuer/investoren.html" data-nav-match="fuer/investoren.html">Investor:innen</a>
+          <a href="../../fuer/kommunen.html" data-nav-match="fuer/kommunen.html">Kommunen</a>
+          <a href="../../fuer/politik.html" data-nav-match="fuer/politik.html">Politik</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungsfelder</h3>
+      <div class="footer-nav-links">
+          <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/">Alle Wirkungsfelder</a>
+          <a href="../../wirkungsfelder/bildung/" data-nav-match="wirkungsfelder/bildung/">Bildung</a>
+          <a href="../../wirkungsfelder/gesundheit-pflege/" data-nav-match="wirkungsfelder/gesundheit-pflege/">Gesundheit &amp; Pflege</a>
+          <a href="../../wirkungsfelder/klima-energie-ressourcen/" data-nav-match="wirkungsfelder/klima-energie-ressourcen/">Klima, Energie &amp; Ressourcen</a>
+          <a href="../../wirkungsfelder/finanzsystem-kapital/" data-nav-match="wirkungsfelder/finanzsystem-kapital/">Finanzsystem &amp; Kapital</a>
+          <a href="../../wirkungsfelder/staat-recht-demokratie/" data-nav-match="wirkungsfelder/staat-recht-demokratie/">Staat, Recht &amp; Demokratie</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Praxis &amp; Tools</h3>
+      <div class="footer-nav-links">
+          <a href="../../werkzeuge/" data-nav-match="werkzeuge/">Alle Werkzeuge</a>
+          <a href="../../erleben/" data-nav-match="erleben/">Interaktive Demos</a>
+          <a href="../../wirkungssteuerung/wirkungssteuer/" data-nav-match="wirkungssteuerung/wirkungssteuer/">Wirkungssteuer</a>
+          <a href="../../wirkungssteuerung/wirkungshaushalt/" data-nav-match="wirkungssteuerung/wirkungshaushalt/">Wirkungshaushalt</a>
+          <a href="../../werkzeuge/scorecards/" data-nav-match="werkzeuge/scorecards/">Scorecards</a>
+          <a href="../../werkzeuge/t-sroi/" data-nav-match="werkzeuge/t-sroi/">T-SROI</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Debatte &amp; Radar</h3>
+      <div class="footer-nav-links">
+          <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/">Übersicht</a>
+          <a href="../../wirkungsradar/" data-nav-match="wirkungsradar/">Wirkungsradar</a>
+          <a href="../../wirkungsradar/debattenkarten/" data-nav-match="wirkungsradar/debattenkarten/">Debattenkarten</a>
+          <a href="../../woek-ki/" data-nav-match="woek-ki/">Frag die WÖk</a>
+          <a href="../../app/" data-nav-match="app/">WÖk-App</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Lernen</h3>
+      <div class="footer-nav-links">
+          <a href="../../lernen/" data-nav-match="lernen/">Lernportal</a>
+          <a href="../../akademie/" data-nav-match="akademie/">Akademie</a>
+          <a href="../../institut/" data-nav-match="institut/">Wirkungsinstitut</a>
+          <a href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Bibliothek</h3>
+      <div class="footer-nav-links">
+          <a href="../../bibliothek/" data-nav-match="bibliothek/">Bibliothek</a>
+          <a href="../../journal/" data-nav-match="journal/">Journal</a>
+          <a href="../../podcast/" data-nav-match="podcast/">Podcast</a>
+          <a href="../../quellenarchiv/" data-nav-match="quellenarchiv/">Quellenarchiv</a>
+          <a href="../../referenz/" data-nav-match="referenz/">Online-Buch</a>
+          <a href="../../wissen/working-papers/" data-nav-match="wissen/working-papers/">Working Papers</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Mitmachen</h3>
+      <div class="footer-nav-links">
+          <a href="../../mitmachen.html" data-nav-match="mitmachen.html">Mitmachen</a>
+          <a href="../../suche.html" data-nav-match="suche.html">Suche</a>
+          <a href="../../ueber.html" data-nav-match="ueber.html">Über die WÖk</a>
+          <a href="../../impressum.html" data-nav-match="impressum.html">Impressum</a>
+          <a href="../../datenschutz.html" data-nav-match="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    </nav>
+    <nav class="footer-legal-nav" aria-label="Rechtliches" data-search-exclude>
+<a href="../../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+<a href="../../ueber.html" data-nav-match="ueber.html|ueber/|ueber-die-woek/|ueber-die-w-oek/">Über die Wirkungsökonomie</a>
+<a href="../../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+<a href="../../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+    </nav>
+    <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+  </div>
+</footer>
+    <script src="../../assets/js/main.js?v=20260612-mobile-table-fix"></script>
+  </body>
+</html>

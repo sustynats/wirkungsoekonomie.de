@@ -1,0 +1,102 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-BSW-P23-EXPLICIT-FACH-2026-V1",
+  "base_main_commit": "b0209e26bbc93d89070bc89e0c83df7d4ab0269f",
+  "artifact_id": "BE-AGH-2026-BSW-WAHLPROGRAMM",
+  "artifact_sha256": "fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675",
+  "artifact_byte_length": 757572,
+  "artifact_page_count": 66,
+  "authoritative_markdown": {
+    "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-p23-authoritative-handoff.md",
+    "file_sha256": "4aecb623c3dc28892ee3d8c9350d314f214f4d9d333d5ce5594fc709876ea88f"
+  },
+  "controller": {
+    "issue_comment_id": 5452695176,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5452695176"
+  },
+  "batches": [
+    {
+      "physical_pdf_pages": [23],
+      "issue_comment_id": 5452692674,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5452692674",
+      "result": "BE_BSW_P23_CLEAN_RECORDS_TERMINAL_CHILD_FACH_PENDING"
+    }
+  ],
+  "coverage": {
+    "segmented_physical_pages": [23],
+    "protected_fach_terminal_physical_scope": "P1-P22",
+    "next_opaque_page_review_envelope_from": 24,
+    "next_opaque_page_review_envelope_through": 66,
+    "original_source_object_count": 25,
+    "zero_atom_source_unit_count": 4,
+    "compound_parent_count": 6,
+    "terminal_original_record_count": 25,
+    "active_terminal_review_leaf_count": 9,
+    "active_explicit_fach_approved_count": 9,
+    "active_reviewed_not_assessable_count": 0,
+    "zero_count_original_record_count": 16,
+    "deterministic_child_review_object_count": 13,
+    "exact_open_child_object_count": 13,
+    "gate": "BE_BSW_P23_CLEAN_RECORDS_TERMINAL_CHILD_FACH_PENDING"
+  },
+  "constraints": {
+    "impact_direction_synthesized": false,
+    "evidence_level_synthesized": false,
+    "dns_mapping_created": false,
+    "recommendation_created": false,
+    "score_created": false,
+    "party_wide_judgement_created": false,
+    "generic_delegated_rnaa_used_for_covered_objects": false,
+    "child_fach_synthesized": false,
+    "vercel_action_triggered": false
+  },
+  "original_records": [
+    {"object_id":"BE-BSW-P23-U01-acd3261ecb81","authoritative_terminal_fach_state":"NON_EFFECT_CONTEXT_REVIEWED","counts_as_effect_object":false,"decision_kind":"STRUCTURAL_HEADING"},
+    {"object_id":"BE-BSW-P23-U02-A01-c54519ff8967","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"LOW_THRESHOLD_FAMILY_WELCOME_CENTRES"},
+    {"object_id":"BE-BSW-P23-U02-A02-bc31befedc2c","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"UNIVERSAL_NEWBORN_BABYBOX"},
+    {"object_id":"BE-BSW-P23-U02-A03-7c18c4c4bf58","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"FAMILY_NURSE_PROGRAMME"},
+    {"object_id":"BE-BSW-P23-U02-A04-921d35d9fbc9","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"CHILD_HEALTH_COORDINATION_BODY"},
+    {"object_id":"BE-BSW-P23-U02-A05-b74315fbed9e","authoritative_terminal_fach_state":"SOURCE_UNIT_RECLASSIFIED_VERSIONED","counts_as_effect_object":false,"decision_kind":"NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_FACH","replacement_child_ids":["BE-BSW-P23-U02-A05-C01-2ecb2c4b9062","BE-BSW-P23-U02-A05-C02-eeb94af79ed1"]},
+    {"object_id":"BE-BSW-P23-U02-A06-4295e8a12266","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"U8_U9_EARLY_SUPPORT_LINKAGE"},
+    {"object_id":"BE-BSW-P23-U02-A07-152ef5b2525e","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"SOCIAL_PAEDIATRIC_CENTRE_EXPANSION"},
+    {"object_id":"BE-BSW-P23-U03-c8b51e088c98","authoritative_terminal_fach_state":"NON_EFFECT_CONTEXT_REVIEWED","counts_as_effect_object":false,"decision_kind":"STRUCTURAL_HEADING"},
+    {"object_id":"BE-BSW-P23-U04-A01-a64c2c362f16","authoritative_terminal_fach_state":"NON_EFFECT_BROAD_POLICY_INTENT_REVIEWED","counts_as_effect_object":false,"decision_kind":"BROAD_POLICY_INTENT"},
+    {"object_id":"BE-BSW-P23-U04-A02-0d2644a557d8","authoritative_terminal_fach_state":"NON_EFFECT_FINANCIAL_PROTECTION_GOAL_REVIEWED","counts_as_effect_object":false,"decision_kind":"FINANCIAL_PROTECTION_GOAL"},
+    {"object_id":"BE-BSW-P23-U04-A03-09299f68dcd8","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"CAPPED_CARE_INSURANCE_COPAYMENTS"},
+    {"object_id":"BE-BSW-P23-U04-A04-89cb1f5e84a1","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"PERSONAL_CARE_BUDGET"},
+    {"object_id":"BE-BSW-P23-U04-A05-f1e36609862b","authoritative_terminal_fach_state":"SOURCE_UNIT_RECLASSIFIED_VERSIONED","counts_as_effect_object":false,"decision_kind":"NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_FACH","replacement_child_ids":["BE-BSW-P23-U04-A05-C01-559ff00e244e","BE-BSW-P23-U04-A05-C02-475454f3ce4e"]},
+    {"object_id":"BE-BSW-P23-U04-A06-988760f94661","authoritative_terminal_fach_state":"NON_EFFECT_CAUSAL_AND_GOVERNANCE_CLAIM_REVIEWED","counts_as_effect_object":false,"decision_kind":"CAUSAL_GOVERNANCE_CLAIM"},
+    {"object_id":"BE-BSW-P23-U04-A07-0275b00635b5","authoritative_terminal_fach_state":"NON_EFFECT_GOVERNANCE_NORM_AND_END_STATE_REVIEWED","counts_as_effect_object":false,"decision_kind":"GOVERNANCE_NORM_END_STATE"},
+    {"object_id":"BE-BSW-P23-U05-4dec0f3d01ff","authoritative_terminal_fach_state":"NON_EFFECT_CONTEXT_REVIEWED","counts_as_effect_object":false,"decision_kind":"STRUCTURAL_HEADING"},
+    {"object_id":"BE-BSW-P23-U06-09dbd5d0977e","authoritative_terminal_fach_state":"NON_EFFECT_PROBLEM_CLAIM_REVIEWED","counts_as_effect_object":false,"decision_kind":"PROGRAMME_PROBLEM_CLAIM"},
+    {"object_id":"BE-BSW-P23-U07-A01-029219a8e6f8","authoritative_terminal_fach_state":"NON_EFFECT_ETHICAL_AND_OUTCOME_GUARD_REVIEWED","counts_as_effect_object":false,"decision_kind":"ETHICAL_OUTCOME_GUARD"},
+    {"object_id":"BE-BSW-P23-U07-A02-3378d883c8e6","authoritative_terminal_fach_state":"SOURCE_UNIT_RECLASSIFIED_VERSIONED","counts_as_effect_object":false,"decision_kind":"NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_FACH","replacement_child_ids":["BE-BSW-P23-U07-A02-C01-53fa6b85d253","BE-BSW-P23-U07-A02-C02-fd1ad1e7c88d"]},
+    {"object_id":"BE-BSW-P23-U07-A03-b2b1bf5be7ee","authoritative_terminal_fach_state":"SOURCE_UNIT_RECLASSIFIED_VERSIONED","counts_as_effect_object":false,"decision_kind":"NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_FACH","replacement_child_ids":["BE-BSW-P23-U07-A03-C01-4fab6d2f5fff","BE-BSW-P23-U07-A03-C02-ea8092f97105"]},
+    {"object_id":"BE-BSW-P23-U07-A04-64758d6a0bdc","authoritative_terminal_fach_state":"SOURCE_UNIT_RECLASSIFIED_VERSIONED","counts_as_effect_object":false,"decision_kind":"NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_FACH","replacement_child_ids":["BE-BSW-P23-U07-A04-C01-c12bff3bf513","BE-BSW-P23-U07-A04-C02-4e0b1087084f","BE-BSW-P23-U07-A04-C03-6b293db0e29c"]},
+    {"object_id":"BE-BSW-P23-U08-A01-9be6ba2ac01a","authoritative_terminal_fach_state":"EXPLICIT_FACH_APPROVED","counts_as_effect_object":true,"decision_kind":"GENERAL_AMBULATORY_PALLIATIVE_CARE_EXPANSION"},
+    {"object_id":"BE-BSW-P23-U08-A02-b9862d9ec756","authoritative_terminal_fach_state":"SOURCE_UNIT_RECLASSIFIED_VERSIONED","counts_as_effect_object":false,"decision_kind":"NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_FACH","replacement_child_ids":["BE-BSW-P23-U08-A02-C01-9bd156834f27","BE-BSW-P23-U08-A02-C02-8a4f8727e5c6"]},
+    {"object_id":"BE-BSW-P23-U08-A03-a17bad929bd4","authoritative_terminal_fach_state":"NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED","counts_as_effect_object":false,"decision_kind":"EXPECTED_OUTCOME_CLAIM"}
+  ],
+  "deterministic_children": [
+    {"object_id":"BE-BSW-P23-U02-A05-C01-2ecb2c4b9062","parent_object_id":"BE-BSW-P23-U02-A05-b74315fbed9e","child_role":"MIDWIFE_MATCHING_COORDINATION","source_text":"Hebammenvermittlung wird berlinweit koordiniert","source_text_sha256":"2ecb2c4b906212e1ce1e3fbba9a571fb58d3d8983b469c6fb93ed7e8c8650210","source_span":{"start":0,"end":47}},
+    {"object_id":"BE-BSW-P23-U02-A05-C02-eeb94af79ed1","parent_object_id":"BE-BSW-P23-U02-A05-b74315fbed9e","child_role":"MIDWIFE_INCENTIVE_SUPPORT","source_text":"mit Anreizsystemen unterstützt","source_text_sha256":"eeb94af79ed1d21bb978f5ac62eacd7590ed63e85a708168ae5283dbf776c868","source_span":{"start":52,"end":82}},
+    {"object_id":"BE-BSW-P23-U04-A05-C01-559ff00e244e","parent_object_id":"BE-BSW-P23-U04-A05-f1e36609862b","child_role":"CARE_ADMINISTRATIVE_RELIEF","source_text":"weniger Bürokratie und weniger Vorschriften","source_text_sha256":"559ff00e244e93b58342e6f87508c3b2be65ddbbeaad0aad133086bd68e289ed","source_span":{"start":22,"end":65}},
+    {"object_id":"BE-BSW-P23-U04-A05-C02-475454f3ce4e","parent_object_id":"BE-BSW-P23-U04-A05-f1e36609862b","child_role":"CARE_TIME_AND_OPERATIONAL_RESOURCES","source_text":"ausreichend Zeit und Ressourcen für ihre eigentliche Arbeit, nämlich die fachgerechte Pflege und liebevolle Betreuung der ihnen anvertrauten Menschen","source_text_sha256":"475454f3ce4ef391a61311ba62c3c59f3f92a38c739b40b912660a2a0177aca3","source_span":{"start":84,"end":233}},
+    {"object_id":"BE-BSW-P23-U07-A02-C01-53fa6b85d253","parent_object_id":"BE-BSW-P23-U07-A02-3378d883c8e6","child_role":"MOBILE_PRACTICE_ASSISTANTS","source_text":"mobile Praxisassistenzen","source_text_sha256":"53fa6b85d253bef9a7f6062fc87700a26cf54a799fbc082862ce94f7be923594","source_span":{"start":70,"end":94}},
+    {"object_id":"BE-BSW-P23-U07-A02-C02-fd1ad1e7c88d","parent_object_id":"BE-BSW-P23-U07-A02-3378d883c8e6","child_role":"GERIATRIC_QUALIFIED_TEAMS","source_text":"geriatrisch qualifizierte Teams","source_text_sha256":"fd1ad1e7c88dfd23aea1fd8915d9f94c9e6eb601ffa4d02bf10479919fbb85b2","source_span":{"start":99,"end":130}},
+    {"object_id":"BE-BSW-P23-U07-A03-C01-4fab6d2f5fff","parent_object_id":"BE-BSW-P23-U07-A03-b2b1bf5be7ee","child_role":"SUPPLEMENTARY_HOME_NURSING_CAPACITY","source_text":"Ergänzende häusliche Krankenpflege","source_text_sha256":"4fab6d2f5ffffdb7cfcbde69c1ef677f6d6e4d9dfa94bc8e4259dcddce5afadc","source_span":{"start":0,"end":34}},
+    {"object_id":"BE-BSW-P23-U07-A03-C02-ea8092f97105","parent_object_id":"BE-BSW-P23-U07-A03-b2b1bf5be7ee","child_role":"PSYCHOSOCIAL_SUPPORT_CAPACITY","source_text":"psychosoziale Betreuung","source_text_sha256":"ea8092f971057793c8ed44c39ee7d1e6a3dfd03b0570c00b2ef79668e82a40d4","source_span":{"start":39,"end":62}},
+    {"object_id":"BE-BSW-P23-U07-A04-C01-c12bff3bf513","parent_object_id":"BE-BSW-P23-U07-A04-64758d6a0bdc","child_role":"DEMENTIA_SENSITIVE_HOSPITAL_STRUCTURES","source_text":"demenzsensible Strukturen","source_text_sha256":"c12bff3bf5130b96c03a8218988a408709e1dbbf7c9fcb89072c73cc34b8d57b","source_span":{"start":23,"end":48}},
+    {"object_id":"BE-BSW-P23-U07-A04-C02-4e0b1087084f","parent_object_id":"BE-BSW-P23-U07-A04-64758d6a0bdc","child_role":"HOSPITAL_ACCESSIBILITY","source_text":"Barrierefreiheit","source_text_sha256":"4e0b1087084fdb240350c7b0e7eb11aa8feb7f6ad5100cbf96d256d8340f39cd","source_span":{"start":50,"end":66}},
+    {"object_id":"BE-BSW-P23-U07-A04-C03-6b293db0e29c","parent_object_id":"BE-BSW-P23-U07-A04-64758d6a0bdc","child_role":"DISCHARGE_MANAGEMENT","source_text":"ein funktionierendes Entlassmanagement","source_text_sha256":"6b293db0e29cfcfe70796db0fc99d7b9e48644f4ba2b522b9f62505687fc0ce4","source_span":{"start":71,"end":109}},
+    {"object_id":"BE-BSW-P23-U08-A02-C01-9bd156834f27","parent_object_id":"BE-BSW-P23-U08-A02-b9862d9ec756","child_role":"GP_PALLIATIVE_CARE_QUALIFICATION","source_text":"bessere Qualifizierung","source_text_sha256":"9bd156834f27aa040f24bdcac9868905feb89664a0a38a29cf732c271b77606a","source_span":{"start":30,"end":52}},
+    {"object_id":"BE-BSW-P23-U08-A02-C02-8a4f8727e5c6","parent_object_id":"BE-BSW-P23-U08-A02-b9862d9ec756","child_role":"PRACTICE_PALLIATIVE_CARE_FINANCING_RESOURCES","source_text":"ausreichende finanzielle Ressourcen","source_text_sha256":"8a4f8727e5c619ab22539822961b3451d85a6215ad6d7bbc1600ca228b3bb08c","source_span":{"start":57,"end":92}}
+  ],
+  "deterministic_child_contract": {
+    "source_span_basis": "UTF16_CODE_UNIT_OFFSETS_IN_EXACT_PARENT_SOURCE_TEXT",
+    "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
+    "counts_as_effect_object": true,
+    "materialization_mode": "DETERMINISTIC_SEGMENTATION_ONLY_NO_FACH",
+    "exact_reason": "The authoritative WÖk P23 handoff explicitly withholds child-level Fach until deterministic exact child IDs and source spans are returned to issue #240."
+  }
+}

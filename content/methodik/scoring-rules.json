@@ -1,0 +1,44 @@
+[
+  {
+    "rule_id": "score-scale-minus3-plus3",
+    "name": "Score-Skala -3 bis +3",
+    "description": "Indikatoren werden auf einer Skala von -3 stark schädlich bis +3 stark positiv eingeordnet.",
+    "applies_to": ["Scorecard", "Wirkungsindikatoren"],
+    "scale": [-3, -2, -1, 0, 1, 2, 3],
+    "thresholds": "indikatorspezifisch nach Benchmark, Schwellenwert und Datenqualität",
+    "notes": "0 bedeutet neutral, unklar oder noch nicht ausreichend bewertbar."
+  },
+  {
+    "rule_id": "data-quality-a-e",
+    "name": "Datenqualität A bis E",
+    "description": "Jeder Wert wird nach Belastbarkeit markiert.",
+    "applies_to": ["Rohdaten", "Indikatoren", "Scorecards"],
+    "scale": ["A", "B", "C", "D", "E"],
+    "thresholds": {
+      "A": "gemessen und geprüft",
+      "B": "berichtet und plausibilisiert",
+      "C": "branchenspezifischer Benchmark",
+      "D": "Archetyp oder Näherung",
+      "E": "unklar oder nicht ausreichend"
+    },
+    "notes": "Unsicherheit wird nicht versteckt, sondern sichtbar dokumentiert."
+  },
+  {
+    "rule_id": "non-compensation",
+    "name": "Schutzregel gegen Schönrechnen",
+    "description": "Schädliche Wirkung darf nicht durch gute Werte an anderer Stelle verdeckt werden.",
+    "applies_to": ["NWI", "Wirkungsklasse", "Reverse Merit Order"],
+    "scale": "kritisches Einzelfeld kann Gesamtbewertung begrenzen",
+    "thresholds": "indikator- und feldspezifisch",
+    "notes": "Das schlechteste relevante Wirkungsfeld bleibt sichtbar."
+  },
+  {
+    "rule_id": "feedback-class",
+    "name": "Wirkungsklasse zu Steuerklasse",
+    "description": "Wirkungsklassen können in Steuerklassen, Preise, Förderung, Kapitalzugang oder Beschaffung übersetzt werden.",
+    "applies_to": ["Wirkungssteuer", "Preisrückkopplung", "öffentliche Beschaffung"],
+    "scale": ["+3", "+2", "+1", "0", "-1", "-2", "-3"],
+    "thresholds": "politisch festzulegen",
+    "notes": "Die WÖk liefert die Bewertungslogik. Konkrete Steuersätze wären politisch zu beschließen."
+  }
+]

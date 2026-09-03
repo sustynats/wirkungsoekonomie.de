@@ -1,0 +1,461 @@
+# Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag
+
+
+**Untertitel:** Scorecard, Prüfpfad, Preis-Testannahme und Preisschild am kleinsten verständlichen Produktfall
+
+
+**Autorin:** Natalie Weber
+
+**Referenz:** Wirkungsökonomie
+
+**Version:** v1.1
+
+**Stand:** 2. August 2026
+
+
+> Der Apfel ist kein Symbol. Er ist der kleinste vollständige Testfall für ehrliche Preise.
+
+
+## Kurzprofil
+
+- **Unterbereich:** Apfelbeispiel, Produktdemo, nachvollziehbarer Prüfpfad
+
+- **Ziel:** Die Logik der Wirkungsumsatzsteuer an einem alltagsnahen Produkt nachvollziehbar machen.
+
+- **Abgrenzung:** Kein realer Steuerbescheid; konzeptionelle und didaktische Ausarbeitung.
+
+- **Toolbezug:** Apfel-Rechner, Produktwirkungsrechner, Scorecard-Demo, DPP-Demo
+
+- **Hauptverknüpfung:** WUStG, WÖk-IDs, Scorecards, Reverse Merit Order, Verbraucherinformation
+
+
+## Inhaltsübersicht
+
+1. Executive Summary
+
+2. Ausgangsdiagnose: Warum das heutige Preisschild blind ist
+
+3. Produktidentifikation: NACE, Warencode und Lebenszyklus
+
+4. Relevante SDGs und SDG+-Dimensionen
+
+5. Datenarchitektur: vom Betrieb bis zum Produktpass
+
+6. Scorecard, Benchmarks und Reverse Merit Order
+
+7. Prüfpfad: Ablaufmodell
+
+8. Fallvergleich: Regionaler Bio-Apfel und importierter Apfel
+
+9. Politische Anschlussfähigkeit und Umsetzungsoptionen
+
+10. Website- und Tool-Integration
+
+11. Fazit
+
+12. Rechenlogik und Beispielszene im Detail
+
+13. Datenqualität als eigene Informationsschicht
+
+14. Governance, Einspruch und Fehlerkorrektur
+
+15. Roadmap für Pilotierung
+
+
+## Executive Summary
+
+
+Dieses Detailkonzept macht das Apfelbeispiel zum kleinsten vollständigen Demonstrationsfall der Wirkungsumsatzsteuer. Es zeigt, wie aus einem alltäglichen Produkt ein nachvollziehbarer Wirkungs- und Prüfpfad wird: NACE-Zuordnung, relevante SDGs, Datenquellen, WÖk-IDs, Scorecard, Reverse Merit Order, Prüfstatus, Preisschild und Einspruchspfad. Der Score liefert keine automatische Tarifentscheidung.
+
+Der Apfel eignet sich, weil er einfach verständlich und zugleich systemisch reich ist. Er berührt Ernährung, Wasser, Boden, Biodiversität, Pestizide, Saisonarbeit, Lagerung, Transport, Verpackung, regionale Versorgung und Verbraucherinformation. Genau daran lässt sich zeigen, dass Wirkung nicht moralische Behauptung ist, sondern strukturierte Zustandsbewertung.
+
+Die Grundfrage lautet nicht: Ist regional immer gut und Import immer schlecht? Die Grundfrage lautet: Welche Wirkung erzeugt diese konkrete Produktkette, mit welcher Datenqualität, in welchen Wirkungsfeldern und mit welchen roten Linien? Dadurch wird das Apfelbeispiel zur Brücke zwischen Theorie und Alltag.
+
+
+## Ausgangsdiagnose: Warum das heutige Preisschild blind ist
+
+
+Im heutigen Mehrwertsteuersystem erscheint ein Apfel steuerlich vor allem als Produktkategorie. Das Preisschild zeigt Preis, Menge, Herkunft und vielleicht ein Siegel. Es zeigt aber nicht zuverlässig, welche Wasser- oder Arbeitsrisiken in der Lieferkette stecken, welche Emissionen durch Lagerung und Transport entstehen, welche Rückstände oder Pestizidrisiken relevant sind und ob der Anbau Boden und Biodiversität schützt oder schwächt.
+
+Diese Blindheit erzeugt falsche Anreize. Produkte können günstiger erscheinen, weil reale Folgekosten in Gesundheit, Umwelt, Klima oder sozialen Systemen nicht im Preis auftauchen. Nachhaltige Erzeugung wird dann zum Mehrpreis, obwohl destruktive Erzeugung den größeren gesellschaftlichen Preis verursacht.
+
+Die Wirkungsökonomie korrigiert das nicht durch Konsumvorschriften. Sie macht die Wirkung selbst preis- und steuerrelevant. Der Apfel bleibt frei kaufbar; aber der Markt erhält ein besseres Signal darüber, was die Produktkette tatsächlich bewirkt.
+
+| Heute | Wirkungsökonomisch |
+
+| --- | --- |
+
+| Steuersatz nach Produktkategorie | Wirkungsprofil als Evidenz für einen gesetzlich bestimmten Tarifrahmen |
+
+| Siegel als Zusatzinformation | Scorecard als geprüfte Rückkopplung |
+
+| Herkunft oft als grober Hinweis | Herkunft wird über Wasser, Klima, Arbeit und Resilienz bewertet |
+
+| Externe Kosten bleiben unsichtbar | Folgekosten werden über Steuer und Preis sichtbar |
+
+| Konsument:innen recherchieren selbst | System liefert verständliche, geprüfte Information |
+
+
+## Produktidentifikation: NACE, Warencode und Lebenszyklus
+
+
+Der erste methodische Schritt ist die Produktidentifikation. Ein Apfel ist nicht nur ein Endprodukt im Regal, sondern das Ergebnis einer wirtschaftlichen Aktivität und einer Lebenszykluskette. Für die Wirkungsbewertung wird die Produktgruppe über NACE, Zoll-/Warencode, Produktpass und Lieferketten-ID identifiziert.
+
+Die Zuordnung legt fest, welche Wirkungsfelder standardmäßig aktiviert werden. Beim Apfel sind insbesondere Ernährungssicherheit, Wasser, Arbeit, nachhaltige Produktion, Klima, Biodiversität, Gesundheit und Informationsqualität relevant. Die Methode verhindert, dass Politik oder Verwaltung jedes Produkt willkürlich einzeln bewerten müssen.
+
+Der Lebenszyklus umfasst Anbau, Betriebsmittel, Bewässerung, Ernte, Lagerung, Packhaus, Transport, Handel, Nutzung und Abfall. Erst diese Kette macht die Produktwirkung sichtbar.
+
+| Ebene | Apfelbeispiel | Bedeutung |
+
+| --- | --- | --- |
+
+| Produktgruppe | Kernobst / Apfel | Ausgangspunkt der Standardindikatoren |
+
+| Lebenszyklus | Anbau bis Entsorgung | verhindert reine Regalbetrachtung |
+
+| Wirkungsfelder | Wasser, Klima, Arbeit, Gesundheit, Biodiversität | bestimmt Scorecard-Bausteine |
+
+| Datenstatus | Primärdaten + Sekundärdaten + Audit | bestimmt Vertrauensniveau |
+
+| Ergebnis | FinalScore als Engpasssignal und Prüfstatus | informiert Prüfung, Preis-Testannahme und Vorsteuerlogik; leitet keinen Satz ab |
+
+
+## Relevante SDGs und SDG+-Dimensionen
+
+
+Die SDGs sind im Apfelbeispiel kein dekorativer Bezug. Sie strukturieren die Frage, welche Zustandsveränderungen überhaupt relevant sind. SDG 2 betrifft Ernährung und Agrarsysteme, SDG 6 Wasser, SDG 8 menschenwürdige Arbeit, SDG 12 nachhaltige Produktion, SDG 13 Klima und SDG 15 Biodiversität und Boden.
+
+SDG+ ergänzt die klassische SDG-Logik dort, wo Daten, Vertrauen und Informationsqualität für die Wirksamkeit entscheidend sind. Ein Produktpass oder Score ist nur dann wertvoll, wenn er transparent, prüfbar und nicht manipulierbar ist. Deshalb gehören Medien- und Informationsqualität, institutionelles Vertrauen und digitale Selbstbestimmung zum Rahmen.
+
+| Referenz | Apfelrelevanz | WÖk-Übersetzung |
+
+| --- | --- | --- |
+
+| SDG 2 | Nahrungsmittel und landwirtschaftliche Systeme | Ernährungssicherheit und nachhaltiger Anbau |
+
+| SDG 6 | Bewässerung und Wasserstress | Wasserintensität und regionale Belastung |
+
+| SDG 8 | Saisonarbeit und Lieferkettenarbeit | Living Wage, Arbeitsschutz, Rechte |
+
+| SDG 12 | Ressourcen, Verpackung, Food-Loss | Kreislauf- und Abfallwirkung |
+
+| SDG 13 | Anbau, Kühlung, Transport | Produktlebenszyklus-Emissionen |
+
+| SDG 15 | Boden, Pestizide, Biodiversität | ökologische Regeneration oder Schädigung |
+
+| SDG+ | Datenklarheit und Vertrauen | Prüfbarkeit und Schutz vor Wirkungssimulation |
+
+
+## Datenarchitektur: vom Betrieb bis zum Produktpass
+
+
+Das Apfelmodell nutzt unterschiedliche Datenquellen. Primärdaten stammen vom Betrieb, Packhaus, Händler oder Logistiker. Sekundärdaten ergänzen dort, wo betriebsspezifische Daten fehlen, etwa bei Wasserstressregionen oder Transportemissionsfaktoren. Audits, Laboranalysen und Zertifizierungen erhöhen die Datenqualität, ersetzen aber nicht die Scorecardlogik.
+
+Fehlende Daten dürfen keinen Wettbewerbsvorteil erzeugen. Deshalb arbeitet die WÖk mit konservativer Bewertung, Nachreichungsfristen und Datenqualitätsklassen. Ein Produkt mit unklarer Lieferkette kann nicht denselben Prüfstatus erhalten wie ein Produkt mit geprüften Daten.
+
+Der digitale Produktpass wird zum Produktgedächtnis. Er trägt Daten über Herkunft, Lebenszyklus, Material, Lagerung, Transport, Zertifikate, Prüfstatus und Score-Entscheidung.
+
+| Datenfeld | Quelle | Wirkungsfeld |
+
+| --- | --- | --- |
+
+| kg CO2e je kg Apfel | Betrieb, Lagerung, Logistik, LCA/EPD | Klima |
+
+| Wasserentnahme × Wasserstress | Betrieb, regionale Wasserstressdaten | Wasser |
+
+| Pestizid-/Rückstandsdaten | Betriebsdaten, Labor, Zertifikate | Gesundheit/Biodiversität |
+
+| Living-Wage-Abdeckung | Lieferantendaten, Audits, Beschwerdemechanismen | Arbeit/Fairness |
+
+| Bodenfruchtbarkeit und Biodiversitätsflächen | Betriebsdaten, Fernerkundung, Audit | Boden/Leben an Land |
+
+| Verpackung und Food-Loss | Packhaus, Handel, Abfalldaten | Ressourcen/Kreislauf |
+
+
+## Scorecard, Benchmarks und Reverse Merit Order
+
+
+Die Scorecard übersetzt Messwerte in eine Wirkungsskala. Dabei wird nicht ein politisches Bauchgefühl angewendet, sondern eine vorher definierte Bewertungsfunktion mit branchenspezifischen Benchmarks. Für jedes relevante Feld wird ein Score berechnet.
+
+Die Reverse Merit Order verhindert Kompensation. Wenn Wasserstress oder Arbeitsrechte kritisch sind, kann eine gute Klimabilanz diese Schwäche nicht überdecken. Damit schützt die Logik vor Greenwashing und vor Durchschnittsillusionen.
+
+Für den Apfel ist diese Engpasslogik besonders wichtig, weil einzelne Produktketten in einem Feld stark und in einem anderen schwach sein können.
+
+| Wirkungsfeld | Beispielindikator | Engpasslogik |
+
+| --- | --- | --- |
+
+| Klima | kg CO2e/kg inkl. Lagerung und Transport | hohe Emission begrenzen Score |
+
+| Wasser | Liter/kg × Wasserstressfaktor | Trockenregionen werden differenziert sichtbar |
+
+| Arbeit | Living Wage, Arbeitszeit, Sicherheit | Ausbeutung ist nicht kompensierbar |
+
+| Gesundheit | Pestizidrisiko, Rückstände, Produktsicherheit | Grenzverletzungen oder systemische Risiken blockieren |
+
+| Biodiversität | Boden, Habitat, Pestiziddruck | regenerative Praxis wird belohnt |
+
+
+## Prüfpfad: Ablaufmodell
+
+
+Der Prüfpfad bedeutet nicht, dass ein Algorithmus heimlich entscheidet. Er macht transparent, welche Daten und Regeln zu welchem Wirkungsprofil führen. Das System muss nachvollziehbar, auditierbar und anfechtbar bleiben.
+
+Der Ablauf beginnt mit Produktidentifikation, führt über Datenabruf und Scoreberechnung zu Engpasssignal und Prüfstatus und endet mit Produktpass und Verbraucherinformation. Ein rechtlicher Tarif kann nur in einem gesonderten, gesetzlich geregelten Verfahren bestimmt werden. Jede Entscheidung bleibt versioniert. Unternehmen können Daten nachreichen oder den Prüfstatus anfechten; Verbraucher:innen und Zivilgesellschaft können Fehlhinweise melden.
+
+- Produkt identifizieren: NACE, Warencode, Herkunft, Produktpass-ID.
+
+- Relevanz bestimmen: aktivierte SDGs, SDG+ und WÖk-ID-Familien.
+
+- Daten abrufen: CSRD/ESRS, DPP, EPD, Lieferantendaten, Sekundärdaten.
+
+- Feldscores berechnen: Branchen-, Regions- und Technologiekontext berücksichtigen.
+
+- Reverse Merit Order anwenden: schwächstes zentrales Feld begrenzt FinalScore.
+
+- Engpasssignal und Prüfstatus ausgeben; nur bei einem rechtlich bestimmten Satz eine offen gekennzeichnete Preisrechnung zeigen.
+
+- Prüf- und Einspruchspfad offenhalten.
+
+
+## Fallvergleich: Regionaler Bio-Apfel und importierter Apfel
+
+
+Der Vergleich dient nicht dazu, Herkunft moralisch zu bewerten. Regionalität ist kein automatischer Wirkungsbonus. Sie kann positive Wirkung haben, wenn Transport, Versorgungssicherheit, lokale Wertschöpfung und Frische tatsächlich besser sind. Sie kann aber auch durch lange Kühlung, Pestizide oder schlechte Arbeitsbedingungen belastet sein.
+
+Ein importierter Apfel ist ebenfalls nicht automatisch schlecht. Seefracht kann effizient sein, Betriebe können gute Arbeits- und Biodiversitätsstandards haben. Kritisch können jedoch Wasserstress, lange Ketten, Datenunsicherheit oder Kühlung sein.
+
+Die WÖk ersetzt Vorurteile durch Wirkungsdaten.
+
+| Feld | Regionaler Bio-Apfel | Importapfel | Bewertungsprinzip |
+
+| --- | --- | --- | --- |
+
+| Klima | kurze Wege, ggf. Lagerung relevant | lange Kette, ggf. effiziente Seefracht | tatsächliche CO2e statt Herkunftsgefühl |
+
+| Wasser | abhängig von Region und Anbau | kritisch bei Wasserstress | Wasserstressfaktor entscheidet |
+
+| Arbeit | Saisonarbeit auch hier relevant | Audits und Rechte notwendig | keine automatische Überlegenheit |
+
+| Biodiversität | Bio kann positiv sein | Plantagenstruktur relevant | Betriebs- und Habitatdaten zählen |
+
+| Prüfstatus | positive Aussage nur ohne kritischen Engpass | kritischer Befund begrenzt sie | Reverse Merit Order |
+
+
+## Politische Anschlussfähigkeit und Umsetzungsoptionen
+
+
+Das Apfelmodell ist politisch anschlussfähig, weil es keine fertige Parteipolitik vorgibt. Es zeigt einen Rahmen, in dem unterschiedliche Parteien unterschiedliche Gewichtungen wählen können: Bauernschutz, Verbraucherpreise, Importfairness, Bürokratiearmut, regionale Wertschöpfung oder internationale Kooperation.
+
+Entscheidend ist, dass Methodik, Daten, Schutzmechanismen und Korrekturpfade transparent bleiben. Wirkung darf nicht zur Technokratie werden, sondern muss demokratisch prüfbar und sozial abgefedert sein.
+
+| Ebene | Aufgabe |
+
+| --- | --- |
+
+| Politische Aufgabe | Pilotierung, Methodik, Datenzugang, Kaufkraftschutz und Rechtsschutz schaffen |
+
+| Ausgestaltungsspielraum | Produktgruppen, Satzkorridore, Übergangsfristen, Bonusmodelle |
+
+| Zielkonflikte | Lebensmittelpreise, Agrarstruktur, Importfairness, Datenaufwand |
+
+| Evaluation | Preiswirkung, Verteilung, Umweltwirkung, Datenqualität, Marktreaktion |
+
+| Schutz vor Technokratie | Daten bereiten Entscheidungen vor, ersetzen sie aber nicht |
+
+
+## Website- und Tool-Integration
+
+
+Das Apfelbeispiel sollte auf der Website als interaktive Demo sichtbar werden. Nutzer:innen wählen Herkunft, Anbauform, Transport, Wasserstress, Arbeit und Verpackung. Die Demo zeigt, wie sich Feldscores, Engpassfeld und Prüfstatus verändern; ein Satz wird nicht aus diesen Werten berechnet.
+
+Wichtig ist die klare Kennzeichnung als Lernmodell. Die Demo darf nicht als echter Steuerbescheid erscheinen, sondern soll die Logik verständlich machen.
+
+- Toolkarte: Apfel-Rechner / Produktwirkungsdemo.
+
+- Download: Detailkonzept und Apfel-Beispielpapier.
+
+- Verlinkung: WUStG, WÖk-IDs, Scorecards, DPP, Lieferketten, Verbraucherinformation.
+
+- Mobile Darstellung als Kartenlogik statt breiter Tabelle.
+
+
+## Fazit
+
+
+Das Apfelbeispiel ist der kleinste vollständige Testfall der Produktwirkungssteuer. Es verbindet Alltag, Daten, Steuerlogik und politisch anschlussfähige Umsetzung.
+
+Wenn die Wirkungsökonomie am Apfel verständlich wird, kann sie später auf komplexere Produkte wie Textilien, Chemie, Batterien, Stromtarife, Bauprodukte oder digitale Geräte übertragen werden.
+
+
+## Rechenlogik und Beispielszene im Detail
+
+
+Die Wirkungsrechnung im Apfelmodell kann für die Website als transparente Beispielrechnung aufgebaut werden. Dabei wird nicht behauptet, dass die hier genannten Werte reale Produktdaten sind; sie dienen der Darstellung der Methode. Wichtig ist: Das Wirkungsprofil entsteht nicht aus einem einzelnen Label, und aus ihm entsteht kein Steuersatz. Bei einer ausdrücklich gesetzten Testannahme, etwa `t = 10 %`, rechnet die Seite nur `P_brutto = P_netto × (1 + t)`; aus 1,00 EUR werden dann 1,10 EUR.
+
+Eine typische Demonstrationsrechnung kann drei Szenarien unterscheiden: regionaler Bio-Apfel ohne kritische Datenlücken, regionaler konventioneller Apfel mit Pestizid- und Biodiversitätsrisiko und Importapfel aus wasserstressreicher Region. Jede Variante zeigt andere Engpassfelder. So wird verständlich, warum eine pauschale Herkunfts- oder Bio-Logik nicht ausreicht.
+
+Die Website sollte die Beispielwerte veränderbar machen. Wenn Nutzer:innen Wasserstress reduzieren, Transportart ändern oder Living-Wage-Daten verbessern, sieht man, wie sich einzelne Feldscores verändern. Der FinalScore folgt aber weiterhin der Reverse Merit Order.
+
+| Szenario | Wahrscheinliches Engpassfeld | Lernpunkt |
+
+| --- | --- | --- |
+
+| Regional bio, kurze Wege | ggf. Datenqualität oder Lagerung | regional kann stark sein, muss aber belegt werden |
+
+| Regional konventionell | Pestizide/Biodiversität | kurze Wege kompensieren kein Chemierisiko |
+
+| Import aus Trockenregion | Wasserstress | Transport ist nicht immer der einzige Engpass |
+
+| Import mit guten Sozialdaten | Wasser oder Klima, nicht Arbeit | gute Arbeit muss sichtbar bleiben, aber nicht alles kompensieren |
+
+| Lagerware aus Region | Kühlenergie | Saisonalität kann Wirkung beeinflussen |
+
+
+## Datenqualität als eigene Informationsschicht
+
+
+Eine belastbare Produktwirkungsrechnung braucht nicht nur Werte, sondern Angaben zur Qualität der Werte. Ein Produkt kann einen numerischen Score besitzen und dennoch eine geringe Vertrauensstufe haben, wenn zentrale Daten unvollständig, alt, nicht auditiert oder nur pauschal geschätzt sind.
+
+Im Apfelbeispiel sollte deshalb immer sichtbar sein, ob die Wasser-, Arbeits-, Klima- und Pestiziddaten primär erhoben, sekundär geschätzt oder unabhängig geprüft wurden. Diese Datenqualität darf nicht im Kleingedruckten verschwinden, weil sie für Vertrauen, Einspruch und Marktwirkung entscheidend ist.
+
+Ein gutes System unterscheidet zwischen methodischer Unsicherheit und fehlender Mitwirkung. Unsicherheit ist normal und muss offen markiert werden. Strategisches Nicht-Liefern von Daten darf dagegen keinen Vorteil erzeugen.
+
+| Datenstufe | Beschreibung | Folge für den Prüfstatus |
+
+| --- | --- | --- |
+
+| A | primär, aktuell, auditiert | volle Bewertbarkeit |
+
+| B | primär, plausibilisiert, nicht vollständig auditiert | normal mit Hinweis |
+
+| C | Sekundärdaten / Branchenwerte | konservativer Sicherheitsabschlag |
+
+| D | wesentliche Lücke | vorläufiger Prüfstatus und Nachreichung |
+
+| E | unplausibel oder verweigert | Malus-/Prüfpfad |
+
+
+## Governance, Einspruch und Fehlerkorrektur
+
+
+Ein digitaler Prüfpfad braucht demokratische und rechtsstaatliche Einbettung. Ein Betrieb muss nachvollziehen können, warum sein Produkt welches Wirkungsprofil und welchen Prüfstatus erhalten hat. Er braucht die Möglichkeit, bessere Daten nachzureichen, methodische Fehler geltend zu machen oder eine falsche Zuordnung zu korrigieren.
+
+Umgekehrt brauchen Verbraucher:innen, Wettbewerber und Zivilgesellschaft die Möglichkeit, offensichtliche Fehler, Scheinzertifikate oder irreführende Angaben zu melden. Ein Wirkungsregister darf also kein statisches Archiv sein, sondern muss als lernendes Korrektursystem angelegt werden.
+
+Die Methodik selbst darf nicht von einzelnen Konzernen oder Behörden allein kontrolliert werden. Sie braucht öffentliche Konsultation, wissenschaftliche Prüfung, Branchenwissen, Zivilgesellschaft und eine klare Rolle des Wirkungsrats.
+
+- Einspruchsfrist nach einem Prüfstatus und nach wesentlichen Methodikänderungen.
+
+- Offener Prüfpfad: welche Daten, welche Benchmarks, welche Scorefunktion.
+
+- Korrekturmechanismus ohne rückwirkende Überforderung kleiner Betriebe.
+
+- Öffentliche Methodik und Versionierung der WÖk-ID-Familien.
+
+- Sanktionen bei vorsätzlich falschen Angaben, aber Lernschutz bei ehrlichen Fehlern.
+
+
+## Roadmap für Pilotierung
+
+
+Das Apfelmodell kann als Pilot besonders früh eingesetzt werden, weil Lebensmittel alltagsnah sind und die Wirkung sofort verstanden wird. Gleichzeitig ist Grundbedarf sensibel. Eine Pilotierung sollte daher nicht sofort mit Steuerwirkung beginnen, sondern zunächst als Transparenz- und Lernmodell.
+
+Phase eins wäre eine reine Informationsdemo mit freiwilligen Daten. Phase zwei wäre eine Schattenrechnung ohne Steuerwirkung. Phase drei könnte begrenzte steuerliche Wirkung in einem klar abgegrenzten Produktsegment testen. Phase vier wäre die Übertragung auf weitere Lebensmittelgruppen.
+
+Damit wird die Wirkungsumsatzsteuer nicht als Schock eingeführt, sondern als lernfähige Architektur.
+
+| Phase | Inhalt | Ziel |
+
+| --- | --- | --- |
+
+| 1 | Demo und freiwillige Daten | Verständlichkeit und UX testen |
+
+| 2 | Schattenrechnung | Methodik und Datenqualität prüfen |
+
+| 3 | begrenzter Pilot mit Steuerkorridor | Preis- und Marktreaktionen beobachten |
+
+| 4 | Ausweitung auf Produktgruppen | Standardisierung und Skalierung |
+
+| 5 | Evaluation durch Wirkungsrat | Korrektur und demokratische Legitimation |
+
+
+## Quellen und Anschlussdokumente
+
+- Natalie Weber: Die neue Ordnung des Wohlstands, Teile V-VIII zu WÖk-IDs, Scorecards, WUStG, DPP, Produkten und Märkten.
+
+- Natalie Weber: WP_Produkte - Produktbesteuerung durch Wirkung.
+
+- Natalie Weber: Beispiel Apfel Wirkungssteuer Bonusregel.
+
+- Natalie Weber: Technische Leitlinien zum Wirkungssteuergesetz (WUStG) - Extended v2.
+
+- Natalie Weber: Wirkungsökonomie in der Lieferkette.
+
+- Natalie Weber: Beispiel-Konzern - Von der CSRD zur Produktscorecard am Beispiel BASF Polyamid.
+
+- Natalie Weber: Führender Begriffsleitfaden der Wirkungsökonomie v1.0.
+
+- Europäische Kommission: Corporate Sustainability Reporting / CSRD und ESRS.
+
+- Europäische Kommission: Ecodesign for Sustainable Products Regulation (ESPR) und Digital Product Passport.
+
+- Europäische Kommission: Corporate Sustainability Due Diligence Directive (CSDDD).
+
+- Europäische Kommission: Carbon Border Adjustment Mechanism (CBAM).
+
+## Vertiefung: Varianten des Apfelbeispiels und warum Herkunft allein nicht reicht
+
+Für die öffentliche Kommunikation ist es verführerisch, das Apfelbeispiel auf „regional gut, importiert schlecht“ zu verkürzen. Genau diese Verkürzung wäre aber nicht wirkungsökonomisch. Die WÖk will keine Herkunftsmoral erzeugen, sondern Wirkungswahrheit. Darum muss das Beispiel mehrere Varianten zulassen: regional frisch, regional lange gelagert, regional konventionell, regional biologisch, Import aus wasserstressarmer Region, Import aus Wasserstressregion, Import per Schiff, Import per Luftfracht, Mehrweg- oder Einwegverpackung.
+
+Diese Varianten zeigen, dass Wirkung relational ist. Ein regionaler Apfel aus energieintensiver Lagerung kann in der Klimabilanz schlechter sein als ein saisonal importierter Apfel aus effizienter Logistik. Ein importierter Apfel aus einer trockenen Region kann trotz guter Klimawerte im Wasserfeld kritisch sein. Ein Bio-Apfel kann durch Verpackung oder Food Loss neutralisiert werden, ohne dass sein Anbau dadurch schlecht wäre. Deshalb braucht es ein Scorecard-Modell, das mehrere Wirkungsfelder getrennt sichtbar macht.
+
+| Variante | Zentraler Prüfpunkt | Warum relevant? |
+| --- | --- | --- |
+| Regional frisch / saisonal | Transport kurz, Lagerung gering | Kann klimatisch stark sein, aber Arbeit und Pestizide bleiben prüfpflichtig. |
+| Regional lange gelagert | Kühlenergie, Verluste, Strommix | Regionalität allein garantiert keine positive Wirkung. |
+| Import per Schiff | Transportemissionen, Herkunftswasser, Arbeitsstandards | Kann logistisch effizient sein, aber Wasser- und Arbeitsfeld entscheiden mit. |
+| Import per Luftfracht | Transport als kritisches Feld | Kann über Reverse Merit Order sofort abwerten. |
+| Bio, aber Einweg-/Überverpackung | Verpackung und Kreislauf | Gute Anbauwirkung kann durch Ressourcenfeld begrenzt werden. |
+| Konventionell mit Biodiversitätsmaßnahmen | Pestizide, Ausgleichsflächen, Boden | Nicht das Label allein, sondern die messbare Wirkung zählt. |
+
+
+
+## Vertiefung: Datenqualitätsstufen und Fairness für kleine Betriebe
+
+Das Apfelbeispiel darf kleine Erzeuger:innen nicht mit denselben Datenanforderungen belasten wie große Handelsketten. Gleichzeitig darf eine vereinfachte Datenerhebung kein Einfallstor für Wirkungssimulation werden. Deshalb braucht das Modell Datenqualitätsstufen. Die einfachste Stufe nutzt anerkannte Standardwerte und Zertifikate. Die mittlere Stufe ergänzt betriebliche Daten. Die höchste Stufe nutzt auditierte Produkt- und Chargendaten, Produktpassinformationen und unabhängige Stichproben.
+
+| Stufe | Datenbasis | Einsatz |
+| --- | --- | --- |
+| DQ1 - Standardprofil | Regionale Durchschnittswerte, anerkannte Zertifikate, einfache Eigenerklärung | Kleine Betriebe, Pilotphase, niedriger Verwaltungsaufwand. |
+| DQ2 - Betriebsprofil | Betriebsdaten zu Wasser, Energie, Pestiziden, Arbeit, Verpackung | Professionelle Erzeuger, Packhäuser, Großhandel. |
+| DQ3 - Produkt-/Chargenprofil | DPP, LCA/EPD, auditierte Lieferketten- und Chargendaten | Große Händler, Exportketten, komplexe Lieferketten. |
+| DQ4 - Prüfprofil | Externe Assurance, Stichproben, Satelliten-/GIS-Abgleich, Laborwerte | Hohe Wirkungsklassen, Streitfälle, rote Linien. |
+
+Politisch ist entscheidend, dass Fördermittel nicht nur für neue Technik, sondern auch für Datenfähigkeit bereitstehen. Wenn Wirkung steuerlich relevant wird, wird Datenkompetenz Teil der wirtschaftlichen Teilhabe. Gerade kleine Betriebe müssen dabei unterstützt werden.
+
+
+
+## Vertiefung: Missverständnisse und Schutz vor Moralisierung
+
+Das Apfelbeispiel muss kommunikativ sauber geführt werden. Es darf nicht so wirken, als solle Verbraucher:innen vorgeschrieben werden, was sie kaufen dürfen. Die Wirkungsökonomie verändert nicht die individuelle Wahlfreiheit, sondern die Wahrheitsnähe des Preissignals. Wer weiterhin einen bestimmten Apfel kaufen möchte, kann das tun. Aber der Preis soll nicht mehr so tun, als hätten alle Äpfel dieselbe Wirkung.
+
+| Missverständnis | Korrektur |
+| --- | --- |
+| Die WÖk will Konsum verbieten. | Nein. Sie macht Wirkung sichtbar und rückkoppelt sie in Preise und Steuern. |
+| Regional wird immer bevorzugt. | Nein. Regionalität ist ein Wirkungsfaktor, aber kein automatisches Urteil. |
+| Das wird zu kompliziert für Verbraucher:innen. | Die Komplexität liegt im Hintergrund; sichtbar werden Ampel, Score und Kurzbegründung. |
+| Das benachteiligt kleine Höfe. | Nicht, wenn Datenstufen, Standardprofile und Förderlotsen eingebaut werden. |
+| Das ist grüne Ideologie. | Nein. Es ist strukturiertes Risiko- und Wirkungsmanagement auf Basis messbarer Felder. |
+
+
+
+## Vertiefung: Mindestanforderungen an den Apfel-Rechner
+
+Der Apfel-Rechner sollte keinen Steuersatz ausspucken. Er sollte den Denkweg zeigen: Produktidentifikation, relevante SDGs, Datenfelder, Score je Wirkungsfeld, schwächstes Feld, Prüfstatus, Verbraucherinformation und Verbesserungshebel. Eine separat eingegebene Preis-Testannahme darf nur als Rechenbeispiel erscheinen. Damit wird das Tool pädagogisch und politisch anschlussfähig.
+
+- Eingabe: Herkunft, Anbauform, Lagerung, Verpackung, Transportart, Wasserstress, Arbeitsnachweis, Pestizid-/Chemierisiko.
+- Ausgabe: Score je Feld, FinalScore als Engpasssignal, Prüfstatus, kurzer Erklärungstext und gegebenenfalls eine ausdrücklich eingegebene Preis-Testannahme.
+- Transparenz: Markierung von Annahmen, Datenqualität und Unsicherheit.
+- Vergleich: regional frisch vs. Lagerapfel vs. Import per Schiff vs. Import per Luftfracht.
+- Schutz: Kein Personen- oder Betriebsranking im öffentlichen Tool, sondern Produktlogik und Lernbeispiel.

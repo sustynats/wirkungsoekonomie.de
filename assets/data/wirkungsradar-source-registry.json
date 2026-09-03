@@ -1,0 +1,529 @@
+[
+  {
+    "id": "uba_emissions_inventory",
+    "label": "Umweltbundesamt Emissionsdaten",
+    "organization": "Umweltbundesamt",
+    "url": "https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland",
+    "sourceType": "official_agency",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Emissionen Deutschland",
+      "Bilanzgrenzen",
+      "Klima-Datenstand"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Die Quelle entscheidet nicht allein, wie Verantwortung politisch verteilt wird."
+    ],
+    "updateFrequency": "annual",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "global_carbon_project",
+    "label": "Global Carbon Project",
+    "organization": "Global Carbon Project",
+    "url": "https://globalcarbonproject.org/carbonbudget/",
+    "sourceType": "research_institute",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "globale Emissionen",
+      "Carbon Budget",
+      "Vergleichsdaten"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Die Quelle ersetzt keine nationale Politikbewertung."
+    ],
+    "updateFrequency": "annual",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "ipcc_ar6_synthesis",
+    "label": "IPCC AR6 Synthesebericht",
+    "organization": "IPCC",
+    "url": "https://www.ipcc.ch/report/ar6/syr/",
+    "sourceType": "peer_review",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Klimarisiken",
+      "Minderungspfade",
+      "wissenschaftlicher Konsens"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Der Bericht liefert keine tagesaktuellen Marktdaten."
+    ],
+    "updateFrequency": "static",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "destatis_environmental_accounts",
+    "label": "Destatis Umweltökonomische Gesamtrechnung",
+    "organization": "Statistisches Bundesamt",
+    "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/UGR/_inhalt.html",
+    "sourceType": "official_statistics",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Umweltökonomische Daten",
+      "Konsum- und Wirtschaftsbezug"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Die Daten zeigen keine vollständige moralische Verantwortungsverteilung."
+    ],
+    "updateFrequency": "annual",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "iea_evs",
+    "label": "IEA Global EV Outlook",
+    "organization": "International Energy Agency",
+    "url": "https://www.iea.org/reports/global-ev-outlook-2024",
+    "sourceType": "official_agency",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Elektromobilität",
+      "Batterien",
+      "Markt- und Infrastrukturdaten"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "IEA-Szenarien sind modelliert und hängen von Annahmen ab."
+    ],
+    "updateFrequency": "annual",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "icct_lifecycle_evs",
+    "label": "ICCT Lebenszyklusvergleich Fahrzeuge",
+    "organization": "International Council on Clean Transportation",
+    "url": "https://theicct.org/publication/a-global-comparison-of-the-life-cycle-greenhouse-gas-emissions-of-combustion-engine-and-electric-passenger-cars/",
+    "sourceType": "research_institute",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Lebenszyklus Fahrzeuge",
+      "Verbrennervergleich",
+      "Strommix-Sensitivität"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Regionale Strommix- und Fahrprofilannahmen müssen geprüft werden."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "adac_lca_drives",
+    "label": "ADAC Lebenszyklusanalyse Antriebe",
+    "organization": "ADAC",
+    "url": "https://www.adac.de/verkehr/tanken-kraftstoff-antrieb/alternative-antriebe/klimabilanz/",
+    "sourceType": "mobility_association",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Lebenszyklusvergleich",
+      "Strommix-Sensitivität",
+      "regenerativer Strom"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Modellannahmen zu Fahrzeugklasse, Laufleistung, Batteriegröße und Strompfad prüfen."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "adac_emobility_facts",
+    "label": "ADAC Fakten zur Elektromobilität",
+    "organization": "ADAC",
+    "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/elektroauto/elektroauto-pro-und-contra/",
+    "sourceType": "mobility_association",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "CO2-Rucksack",
+      "Betrieb",
+      "Akku und Garantie",
+      "Ladeinfrastruktur"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Ratgeberquelle; Detailzahlen können sich mit Markt und Datenstand ändern."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "bmv_ladeinfrastruktur_erneuerbar",
+    "label": "BMV Förderprogramm Ladeinfrastruktur",
+    "organization": "Bundesministerium für Verkehr",
+    "url": "https://www.bmv.de/SharedDocs/DE/Artikel/G/infopapier-sechster-foerderaufruf-ladeinfrastruktur.html",
+    "sourceType": "government",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "geförderte öffentliche Ladeinfrastruktur",
+      "erneuerbarer Strom als Fördervoraussetzung"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Belegt Fördervoraussetzungen, nicht jede private oder ungeförderte Ladesituation."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "transport_environment_efuels",
+    "label": "Transport & Environment zu E-Fuels",
+    "organization": "Transport & Environment",
+    "url": "https://www.transportenvironment.org/discover/e-fuels-too-inefficient-and-expensive-for-cars/",
+    "sourceType": "ngo",
+    "countryOrRegion": "Europa",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "E-Fuel-Effizienz",
+      "Pkw-Priorisierung",
+      "Debattenperspektive"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "NGO-Quelle; sie braucht A- oder B-Quellen daneben."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "C"
+  },
+  {
+    "id": "iea_hydrogen",
+    "label": "IEA Global Hydrogen Review",
+    "organization": "International Energy Agency",
+    "url": "https://www.iea.org/reports/global-hydrogen-review-2024",
+    "sourceType": "official_agency",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Wasserstoff",
+      "Elektrolyse",
+      "Einsatzprioritäten"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Markthochlauf und Kosten sind unsicher."
+    ],
+    "updateFrequency": "annual",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "iter_fusion",
+    "label": "ITER Projektinformationen",
+    "organization": "ITER Organization",
+    "url": "https://www.iter.org/",
+    "sourceType": "official_agency",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Fusionstechnologie",
+      "Forschungsstand",
+      "Zeitpfad"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Projektquelle; sie belegt Forschung, aber keinen kurzfristigen Stromsystemnutzen."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "bundeshaushalt",
+    "label": "Bundeshaushalt",
+    "organization": "Bundesministerium der Finanzen",
+    "url": "https://www.bundeshaushalt.de/",
+    "sourceType": "government",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Haushalt",
+      "Ausgaben",
+      "Finanzplanung"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Der Haushalt zeigt Ausgaben, aber nicht automatisch Wirkungsqualität."
+    ],
+    "updateFrequency": "annual",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "bundesbank_staatsfinanzen",
+    "label": "Bundesbank Staatsfinanzen",
+    "organization": "Deutsche Bundesbank",
+    "url": "https://www.bundesbank.de/de/statistiken/oeffentliche-finanzen",
+    "sourceType": "official_statistics",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Staatsfinanzen",
+      "Zinsen",
+      "Refinanzierung"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Finanzdaten ersetzen keine Bewertung der Ausgabenwirkung."
+    ],
+    "updateFrequency": "monthly",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "iab_buergergeld_arbeitsmarkt",
+    "label": "IAB Arbeitsmarkt- und Sozialforschung",
+    "organization": "Institut für Arbeitsmarkt- und Berufsforschung",
+    "url": "https://www.iab.de/",
+    "sourceType": "research_institute",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Arbeitsmarkt",
+      "Bürgergeld",
+      "Anreize"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Einzelne Studien unterscheiden sich nach Methodik und Zeitraum."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "bamf_migration",
+    "label": "BAMF Migrations- und Integrationsdaten",
+    "organization": "Bundesamt für Migration und Flüchtlinge",
+    "url": "https://www.bamf.de/DE/Themen/Forschung/forschung-node.html",
+    "sourceType": "official_agency",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Migration",
+      "Integration",
+      "Sprache"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Die Quelle zeigt Verwaltungs- und Forschungsdaten, aber keine kommunale Vollbilanz."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "oecd_migration",
+    "label": "OECD Migration Outlook",
+    "organization": "OECD",
+    "url": "https://www.oecd.org/migration/international-migration-outlook-1999124x.htm",
+    "sourceType": "research_institute",
+    "countryOrRegion": "OECD",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Migration",
+      "Arbeitsmarkt",
+      "internationale Einordnung"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Internationale Vergleiche müssen auf nationale Regeln übertragen werden."
+    ],
+    "updateFrequency": "annual",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "kiel_ukraine_tracker",
+    "label": "Ukraine Support Tracker",
+    "organization": "Kiel Institute for the World Economy",
+    "url": "https://www.ifw-kiel.de/topics/war-against-ukraine/ukraine-support-tracker/",
+    "sourceType": "research_institute",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Ukraine-Hilfe",
+      "Zusagen",
+      "internationale Vergleiche"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Tracker-Daten unterscheiden Zusagen, Auszahlungen und Kategorien; das muss erklärt werden."
+    ],
+    "updateFrequency": "monthly",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "bundesregierung_ukraine_hilfe",
+    "label": "Bundesregierung Ukraine-Hilfe",
+    "organization": "Bundesregierung",
+    "url": "https://www.bundesregierung.de/breg-de/themen/krieg-in-der-ukraine",
+    "sourceType": "government",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Ukraine-Hilfe",
+      "Regierungsangaben",
+      "Sicherheitspolitik"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Regierungsquelle; unabhängige Tracker sollten danebenstehen."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "A"
+  },
+  {
+    "id": "kfw_development_projects",
+    "label": "KfW Entwicklungsbank Projekte",
+    "organization": "KfW Entwicklungsbank",
+    "url": "https://www.kfw-entwicklungsbank.de/",
+    "sourceType": "government",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Entwicklungsprojekte",
+      "Finanzierung",
+      "Projektlogik"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Projektangaben zeigen nicht allein Wirkung vor Ort."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "bpb_desinformation",
+    "label": "bpb Dossier Desinformation",
+    "organization": "Bundeszentrale für politische Bildung",
+    "url": "https://www.bpb.de/themen/medien-journalismus/desinformation/",
+    "sourceType": "official_agency",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Desinformation",
+      "Medienkompetenz",
+      "Diskurs"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Die Quelle erklärt Mechanismen, aber prüft nicht jede konkrete Aussage."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "debunking_handbook",
+    "label": "Debunking Handbook",
+    "organization": "University of Bristol / Partner",
+    "url": "https://www.climatechangecommunication.org/debunking-handbook-2020/",
+    "sourceType": "research_institute",
+    "countryOrRegion": "global",
+    "language": "en",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Debunking",
+      "Frame-Risiken",
+      "Kommunikation"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Kommunikationsforschung ersetzt keine Sachquelle."
+    ],
+    "updateFrequency": "static",
+    "reliabilityTier": "B"
+  }
+]

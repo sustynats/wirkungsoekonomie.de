@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "coverage_default": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+  "ministries": [
+    {"ministry_id":"BMF","official_name":"Bundesministerium der Finanzen","official_site":"https://www.bundesfinanzministerium.de/Web/DE/Home/home.html","discovery_urls":["https://www.bundesfinanzministerium.de/sitemap.xml"]},
+    {"ministry_id":"BMI","official_name":"Bundesministerium des Innern","official_site":"https://www.bmi.bund.de/DE/startseite/startseite-node.html","discovery_urls":["https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html"]},
+    {"ministry_id":"AA","official_name":"Auswärtiges Amt","official_site":"https://www.auswaertiges-amt.de/de","discovery_urls":["https://www.auswaertiges-amt.de/de/newsroom"]},
+    {"ministry_id":"BMVg","official_name":"Bundesministerium der Verteidigung","official_site":"https://www.bmvg.de/de","discovery_urls":["https://www.bmvg.de/sitemap/de-sitemap.xml.gz"]},
+    {"ministry_id":"BMWE","official_name":"Bundesministerium für Wirtschaft und Energie","official_site":"https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html","discovery_urls":["https://www.bundeswirtschaftsministerium.de/Navigation/DE/Service/Stellungnahmen/Aktuelle-Gesetzgebungsverfahren/aktuelle-gesetzgebungsverfahren.html","https://www.bundeswirtschaftsministerium.de/Navigation/WS/XMLSitemap/sitemap.xml?nn=13388"]},
+    {"ministry_id":"BMFTR","official_name":"Bundesministerium für Forschung, Technologie und Raumfahrt","official_site":"https://www.bmbf.de/DE/Home/home_node.html","discovery_urls":["https://www.bmbf.de/DE/Service/Presse/presse_node.html"]},
+    {"ministry_id":"BMJV","official_name":"Bundesministerium der Justiz und für Verbraucherschutz","official_site":"https://www.bmjv.de/DE/Startseite/Startseite_node.html","discovery_urls":["https://www.bmjv.de/DE/Themen/Gesetzgebung/Gesetzgebung_node.html"]},
+    {"ministry_id":"BMBFSFJ","official_name":"Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend","official_site":"https://www.bmbfsfj.bund.de","discovery_urls":["https://www.bmbfsfj.bund.de/service-sitemap-b391d6efd2092a2aac9fba5db84be971-sitemap_index.xml"]},
+    {"ministry_id":"BMAS","official_name":"Bundesministerium für Arbeit und Soziales","official_site":"https://www.bmas.de/DE/Startseite/start.html","discovery_urls":["https://www.bmas.de/sitemap.xml"]},
+    {"ministry_id":"BMDS","official_name":"Bundesministerium für Digitales und Staatsmodernisierung","official_site":"https://bmds.bund.de/","discovery_urls":["https://bmds.bund.de/sitemap.xml"]},
+    {"ministry_id":"BMV","official_name":"Bundesministerium für Verkehr","official_site":"https://www.bmv.de/DE/Home/home.html","discovery_urls":["https://www.bmv.de/DE/Service/Gesetze/Gesetze-21/Formular.html"]},
+    {"ministry_id":"BMUKN","official_name":"Bundesministerium für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit","official_site":"https://www.bundesumweltministerium.de/","discovery_urls":["https://www.bundesumweltministerium.de/sitemap.xml"]},
+    {"ministry_id":"BMG","official_name":"Bundesministerium für Gesundheit","official_site":"https://www.bundesgesundheitsministerium.de/","discovery_urls":["https://www.bundesgesundheitsministerium.de/sitemap.xml"]},
+    {"ministry_id":"BMLEH","official_name":"Bundesministerium für Landwirtschaft, Ernährung und Heimat","official_site":"https://www.bmleh.de/DE/Home/home_node.html","discovery_urls":["https://www.bmleh.de/DE/service/gesetze-und-verordnungen/gesetze-und-verordnungen_node.html"]},
+    {"ministry_id":"BMZ","official_name":"Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung","official_site":"https://www.bmz.de/de","discovery_urls":["https://www.bmz.de/de/aktuelles","https://www.bmz.de/de/themen/privatwirtschaft/wirtschaftspartnerschaftsabkommen-afrikanische-staaten"]},
+    {"ministry_id":"BMWSB","official_name":"Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen","official_site":"https://www.bmwsb.bund.de/DE/home/home_node.html","discovery_urls":["https://www.bmwsb.bund.de/DE/ministerium/gesetzgebungsverfahren/gesetzgebungsverfahren.html"]}
+  ],
+  "candidate_url_terms": ["gesetz", "verordnung", "richtlinie", "foerder", "förder", "strategie", "aktionsplan", "programm", "vereinbarung", "memorandum", "konsultation", "anhoerung", "anhörung", "evaluation", "monitoring", "bericht", "beschaffung", "investition"],
+  "candidate_title_terms": ["Gesetz", "Verordnung", "Richtlinie", "Förderprogramm", "Förderrichtlinie", "Strategie", "Aktionsplan", "Programm", "Vereinbarung", "Memorandum", "Konsultation", "Anhörung", "Evaluation", "Monitoring", "Bericht", "Beschaffung", "Investition", "Umsetzung"]
+}

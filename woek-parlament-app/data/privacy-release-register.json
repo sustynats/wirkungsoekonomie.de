@@ -1,0 +1,24 @@
+{
+  "privacy_notice_version": "2026-08-18.1",
+  "reviewed_at": "2026-08-18",
+  "review_scope": [
+    "voluntary email updates with double opt-in",
+    "at most one daily digest on days with verified published changes",
+    "recurring signed one-click unsubscribe without open or click tracking",
+    "delivery run and delivery status ledger without behavioural profiles",
+    "self-service unsubscribe with recipient-record deletion",
+    "local browser storage and cross-domain bookmark handoff",
+    "privacy-preserving client-side reach measurement on the parliament portal",
+    "shared first-party analytics dashboard with separate parliament filter",
+    "no persistent visitor identifier, no query parameters, no full referrer URLs, no parliament geo data and no parliament user-agent fingerprint",
+    "automatic deletion of individual analytics events and sessions after 90 days"
+  ],
+  "tracking": {
+    "advertising_networks": false,
+    "google_analytics": false,
+    "mailchimp": false,
+    "email_open_tracking": false,
+    "email_click_tracking": false,
+    "parliament_client_analytics": true
+  }
+}

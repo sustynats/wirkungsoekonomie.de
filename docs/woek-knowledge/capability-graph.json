@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "generated": "2026-08-14",
+  "note": "Technisch nutzbarer Capability-Graph. implementedBy = Repo-Pfade/Endpoints; explainedBy = Erklärinhalte; usedBy = Produkte/Flächen.",
+  "capabilities": [
+    {
+      "capability": "NORMATIVE_REFERENCE_SDG_SDGPLUS",
+      "implementedBy": ["assets/data/sdg-reference.json", "api/v1/sdg-plus/", "verstehen/sdgs-sdgplus/"],
+      "leadingSource": "SDG-/SDG+-Referenzrahmen v0.3",
+      "explainedBy": ["begriffe/sdg-plus/", "begriffe/mensch-planet-demokratie/"],
+      "usedBy": ["website-portale", "produktcheck", "kwi", "wirkungskompasse", "parlament(geplant)"]
+    },
+    {
+      "capability": "TERMINOLOGY_GLOSSARY",
+      "implementedBy": ["assets/data/glossary-lookup.json", "api/v1/glossary/", "begriffe/"],
+      "leadingSource": "Begriffsleitfaden v1.5",
+      "usedBy": ["website", "akademie(RAG)", "alle-produkte"]
+    },
+    {
+      "capability": "INDICATOR_REGISTRY_WOEK_IDS",
+      "implementedBy": ["data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx", "assets/data/woek-id-register.json", "woek-id-register/"],
+      "leadingSource": "WÖk-Masterregister v1.4 FINAL",
+      "rules": "content/methodik/scoring-rules.json (-3..+3, 28 Regeln)",
+      "usedBy": ["scorecards", "rechner", "uwp", "parlament(Indikatoren)"]
+    },
+    {
+      "capability": "NON_COMPENSATION_ANALYSIS",
+      "implementedBy": ["assets/js/impact-calculations.js#calculateFinalScore", "assets/js/wirkungscheck-bundestag-v3/rules-v3.js(rote Linien)", "data/uwp/*NonCompensation_RedLine*"],
+      "explainedBy": ["begriffe/nichtkompensationsprinzip/", "werkzeuge/reverse-merit-order/", "docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md#2.12"],
+      "usedBy": ["produktwirkungsrechner", "scorecard-dashboard", "t-sroi-rechner", "wirkungscheck-v3", "parlament(geplant)"]
+    },
+    {
+      "capability": "T_SROI_CALCULATION",
+      "implementedBy": ["assets/js/impact-calculations.js#calculateTSROI", "werkzeuge/t-sroi/#interaktives-beispiel"],
+      "leadingSource": "T-SROI-Rechenstandard v1.1 (docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md)",
+      "usedBy": ["impact-controlling-rechner", "impact-investment-rechner", "parlament(Vertiefung)"]
+    },
+    {
+      "capability": "DETERMINISTIC_IMPACT_CHECK",
+      "implementedBy": ["assets/js/wirkungscheck-bundestag-v3/{rules-v3,topic-modules-v3,app-v3}.js", "assets/js/wahlkreis-wirkungscheck/instruments-2026.js"],
+      "specs": ["docs/wirkungscheck-v3/RULE_ENGINE_V3.md", "docs/wirkungscheck-v3/IMMEDIATE_FEEDBACK_RULES.md", "docs/wirkungscheck/RESULT_EXPLAINABILITY.md"],
+      "usedBy": ["werkzeuge/wahlkreis-wirkungscheck/", "parlament(EXTEND: Kern-Engine)"]
+    },
+    {
+      "capability": "FACTCHECK_FOLGENCHECK",
+      "implementedBy": ["oracle:/api/factcheck", "assets/js/faktencheck.js", "assets/js/woek-app.js"],
+      "explainedBy": ["werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/"],
+      "usedBy": ["werkzeuge/faktencheck/", "app/", "parlament(Claim-Prüfung)"]
+    },
+    {
+      "capability": "WOEK_AI_ASSISTANT",
+      "implementedBy": ["oracle:/api/woek-ai", "akademie:/api/ki-beta(RAG+TogetherAI)"],
+      "clients": ["assets/js/woek-ai-client.js", "woek-ki/", "app/", "akademie:/ki-beta"],
+      "sharedServiceStatus": "UNRESOLVED — zwei Backends, Kanonisierung offen",
+      "usedBy": ["website", "akademie", "wirkungscheck-v3(opt-in)", "parlament(geplant, votum-frei)"]
+    },
+    {
+      "capability": "CLAIM_DEBATE_SYSTEM",
+      "implementedBy": ["wirkungsradar/", "assets/data/wirkungsradar-*.json", "api/v1/wirkungsradar/(cards+distribution+embed)"],
+      "moderation": "akademie:/dozentin/narrative + narrative_submissions",
+      "usedBy": ["website", "unterricht/workshops", "parlament(Claim-/Gegenargument-Muster)"]
+    },
+    {
+      "capability": "SOURCE_ARCHIVE",
+      "implementedBy": ["institut:/api/quellen(SoR)", "content/quellenarchiv/sources.json", "quellenarchiv/"],
+      "sync": ".github/workflows/quellenarchiv-sync.yml",
+      "usedBy": ["website", "parlament(Evidenz-Belege)"]
+    },
+    {
+      "capability": "DOCUMENT_VERSION_STATUS",
+      "implementedBy": ["assets/data/library-version-registry.json", "scripts/library/build-library-versioning-stage9.mjs"],
+      "statuses": ["führend", "aktuell", "Arbeitsfassung", "ältere Fassung", "ersetzt", "archiviert"],
+      "usedBy": ["bibliothek/", "downloads.html", "parlament(Muster für Drucksachen-Fassungsstatus)"]
+    },
+    {
+      "capability": "CITABLE_ONLINE_READING",
+      "implementedBy": ["scripts/library/build_grundlagen_onlinefassung.py", "assets/js/reference-reader.js", "bibliothek/eintraege/*/lesen/*"],
+      "usedBy": ["woemm-2-0", "woems-2-0", "grundlagenwerke", "parlament(zitierfähige Dossier-Kapitel)"]
+    },
+    {
+      "capability": "REGIONAL_CONTEXT",
+      "implementedBy": ["assets/js/wahlkreis-wirkungscheck/data-2025.js(299 Wahlkreise)", "assets/data/kwi/(45 Städte, Quelle tot)", "data/wirkungskompass/(Länder/EU/Welt)"],
+      "gaps": ["kein AGS", "kein Kommune-Wahlkreis-Mapping", "keine Kreisebene"],
+      "usedBy": ["wirkungscheck", "erleben-kompasse", "parlament(RegionalLens nach Datenfix)"]
+    },
+    {
+      "capability": "ASSESSMENT_ENGINE",
+      "implementedBy": ["akademie:lib/curriculum/assessment-{engine,state-machine,attempt-policy}.ts"],
+      "usedBy": ["akademie-pruefungen", "parlament(optional Lernelemente)"]
+    },
+    {
+      "capability": "SUBMISSION_MODERATION_PIPELINE",
+      "implementedBy": ["akademie:/fragen/einreichen", "akademie:/narrativ-einreichen", "akademie:/dozentin/{fragen,narrative,aufgaben}", "supabase:question_submissions+narrative_submissions+review_tasks"],
+      "usedBy": ["wirkungsradar-community", "parlament(Wirkungsdialog + Editorial-Workbench-Muster)"]
+    },
+    {
+      "capability": "PARLIAMENTARY_DATA_INGESTION",
+      "implementedBy": [],
+      "prepared": "content/data/external-data-sources.json#bundestag-bundesrat (DIP)",
+      "status": "BUILD_NEW",
+      "usedBy": ["parlament"]
+    },
+    {
+      "capability": "MDB_DIALOG_INFRASTRUCTURE",
+      "implementedBy": ["ops/wahlkreis-wirkungscheck/(CiviCRM+LimeSurvey+Analytics, lokal)"],
+      "specs": ["docs/wirkungscheck/{EMAIL_ARCHITECTURE,INVITATION_DATA_FLOW,DISCLOSURE_CONTROL,ANALYTICS_ARCHITECTURE}.md"],
+      "status": "PROTOTYPE (nicht produktiv; Vier-Augen-Versandschutz spezifiziert)",
+      "usedBy": ["parlament(Wirkungsdialog Parlament)"]
+    },
+    {
+      "capability": "MEDIA_CDN_PIPELINE",
+      "implementedBy": ["github-releases:woek-public-assets-v2", "assets/data/public-release-assets.json", "scripts/assets/check-release-assets.mjs"],
+      "usedBy": ["podcast", "videos", "pdf-pakete", "parlament(PDF-Exporte)"]
+    }
+  ]
+}

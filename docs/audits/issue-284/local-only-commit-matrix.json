@@ -1,0 +1,848 @@
+{
+  "issue": 284,
+  "commit_count": 69,
+  "classification_counts": {
+    "ALREADY_IN_GITHUB_PR_OR_BRANCH": 5,
+    "BUILD_CACHE_OR_TEMPORARY": 3,
+    "SUPERSEDED": 61
+  },
+  "rescue_release": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue",
+  "five_commit_bundle_sha256": "2d0dd6e6c438e4374427499e43bcaf1dd8d548d176b5984415ccb7c823cdaf8e",
+  "wholesale_all_refs_bundle_uploaded": false,
+  "commits": [
+    {
+      "commit": "3fa2c87cbb2f333ab5bcadea3c6e3e2c9f383bb4",
+      "parents": [
+        "66ec4f43f5b53b42e32b690c3b1c5e8ae051117a"
+      ],
+      "date": "2026-08-21T20:16:28+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/state-assessment-live-followup-20260821)",
+      "subject": "Materialize state assessment benchmark follow-up",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "66ec4f43f5b53b42e32b690c3b1c5e8ae051117a",
+      "parents": [
+        "b79be1437b205954c942a90a11ee2b48ba22f641"
+      ],
+      "date": "2026-08-21T20:13:38+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Refine object-specific state assessment architecture",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "87ccf75fdb5efdedbca95731e57681ff004fe2c2",
+      "parents": [
+        "4c95d7baeab3d0e5c7a5dcc9d30412cd9a2725ca"
+      ],
+      "date": "2026-08-21T20:13:38+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/state-sitemap-live-final-20260821)",
+      "subject": "Refine object-specific state assessment architecture",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "8fcc4c8dc04613d2a043cb1b1f1a38d2f009213a",
+      "parents": [
+        "155a2d2f610e36581077b08bac64bcfdbcc68239"
+      ],
+      "date": "2026-08-21T18:07:26+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "chore(#253): refresh exhaustive matrix after gate hardening",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "155a2d2f610e36581077b08bac64bcfdbcc68239",
+      "parents": [
+        "a94e6a8903986b1c50a5f72693f977de48ffda36"
+      ],
+      "date": "2026-08-21T18:05:04+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): make source quality report reproducible",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "a94e6a8903986b1c50a5f72693f977de48ffda36",
+      "parents": [
+        "c83d28d60b0cd03cc1e62bc661c56eb6e2af4578"
+      ],
+      "date": "2026-08-21T18:03:04+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "chore(#253): pin deterministic release metadata",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "c83d28d60b0cd03cc1e62bc661c56eb6e2af4578",
+      "parents": [
+        "a4575fe37a84cddeabb4ae4406ca636d6c3c9474"
+      ],
+      "date": "2026-08-21T17:59:34+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "feat(#253): cover material government action by object type",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "a4575fe37a84cddeabb4ae4406ca636d6c3c9474",
+      "parents": [
+        "6935140da892951d0f135f9cd6eee4e988709a54"
+      ],
+      "date": "2026-08-21T17:50:55+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): use canonical Python state projections in build",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "6935140da892951d0f135f9cd6eee4e988709a54",
+      "parents": [
+        "ac4513171d31a46032bfa58c997e2e9d6bec1b61"
+      ],
+      "date": "2026-08-21T17:43:02+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): harden historical and semantic release gates",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "ac4513171d31a46032bfa58c997e2e9d6bec1b61",
+      "parents": [
+        "1b7769f32c039165901525be14ce1d8796c457da"
+      ],
+      "date": "2026-08-21T17:41:37+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): disambiguate NWI terminology sitewide",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "f207f8aaa3be91e87f391f3039cda8c786e274b4",
+      "parents": [
+        "fb7414b1a9ab3448aa2a47bc91df98961aaa65dc"
+      ],
+      "date": "2026-08-21T17:50:55+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): use canonical Python state projections in build",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "fb7414b1a9ab3448aa2a47bc91df98961aaa65dc",
+      "parents": [
+        "a4499c28ac4f1a792f62fae8afcef59c9c5bb2c8"
+      ],
+      "date": "2026-08-21T17:45:18+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "chore(#253): regenerate reconciled release artifacts",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "a4499c28ac4f1a792f62fae8afcef59c9c5bb2c8",
+      "parents": [
+        "35b8a348095337d07c97663b6b816c82de5a8007"
+      ],
+      "date": "2026-08-21T17:43:20+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "chore(#253): retire completed release payload transfer",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "35b8a348095337d07c97663b6b816c82de5a8007",
+      "parents": [
+        "b1e696acc0fad5b7c265acb7331245e44fcd82fd"
+      ],
+      "date": "2026-08-21T17:43:02+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): harden historical and semantic release gates",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "b1e696acc0fad5b7c265acb7331245e44fcd82fd",
+      "parents": [
+        "7ea155d298714bd4b0f4604096637ba02dfb8484"
+      ],
+      "date": "2026-08-21T17:41:37+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): disambiguate NWI terminology sitewide",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "7ea155d298714bd4b0f4604096637ba02dfb8484",
+      "parents": [
+        "39e3504eff9289925bd9bc2f79cb259dac7a7d16"
+      ],
+      "date": "2026-08-21T17:40:10+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "chore(#253): reconcile transferred glossary outputs",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "39e3504eff9289925bd9bc2f79cb259dac7a7d16",
+      "parents": [
+        "de7bdc5b250adcb53204e5af54b02b72bc21f42f"
+      ],
+      "date": "2026-08-21T08:26:16-07:00",
+      "author": "OpenAI Codex",
+      "decoration": "",
+      "subject": "release: transfer complete #253 and MasterItems v1.5 payload",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "1261479dab96b7a862e860e0f44fea84741ebd06",
+      "parents": [
+        "64c57b41e0dbc8065d266ca4147445d82edb61a7"
+      ],
+      "date": "2026-08-21T17:38:43+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/state-sustainability-architecture-sitewide-20260821)",
+      "subject": "fix(#253): harden historical and semantic release gates",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "951454a5dc3b2e05d29d6887733de4408d4e3f3c",
+      "parents": [
+        "cdd29f99dc32199caa9762b32508364099ea0b0b"
+      ],
+      "date": "2026-08-21T08:26:16-07:00",
+      "author": "OpenAI Codex",
+      "decoration": "(codex/state-release-payload)",
+      "subject": "release: transfer complete #253 and MasterItems v1.5 payload",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "64c57b41e0dbc8065d266ca4147445d82edb61a7",
+      "parents": [
+        "b54fe62469aa63cdf53892bd2f058669f7a05540",
+        "cdd29f99dc32199caa9762b32508364099ea0b0b"
+      ],
+      "date": "2026-08-21T16:56:52+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Merge remote-tracking branch 'origin/codex/state-sustainability-architecture-sitewide-20260821' into codex/state-sustainability-architecture-sitewide-20260821",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "b54fe62469aa63cdf53892bd2f058669f7a05540",
+      "parents": [
+        "37a45a784da602d217f2fff1d9569790ed737bb8"
+      ],
+      "date": "2026-08-21T16:56:20+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix(#253): disambiguate NWI terminology sitewide",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "37a45a784da602d217f2fff1d9569790ed737bb8",
+      "parents": [
+        "0c5e9b4134cf9aee77cbfbcf6398b0fef80eebad",
+        "715c6deccb94bccef7b1667501f2d70d504c5cbc"
+      ],
+      "date": "2026-08-21T16:18:20+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Merge remote-tracking branch 'origin/codex/state-sustainability-architecture-sitewide-20260821' into codex/state-sustainability-architecture-sitewide-20260821",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "0c5e9b4134cf9aee77cbfbcf6398b0fef80eebad",
+      "parents": [
+        "12628e36973274e80c4935fdbeb3ae654096bb51"
+      ],
+      "date": "2026-08-21T16:12:02+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "fix: align architecture artifact gate with public routes",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "12628e36973274e80c4935fdbeb3ae654096bb51",
+      "parents": [
+        "ac7c22813344f9320b820273fcecc29f4c8262d3",
+        "7c62c2f6c5a6055e6cd540e74c27ba9d753cf0f7"
+      ],
+      "date": "2026-08-21T15:56:03+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Merge latest #253 audit contract and canonical source architecture",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "ac7c22813344f9320b820273fcecc29f4c8262d3",
+      "parents": [
+        "39b7fcf37eedbfbcdaa11820e2e2b13ce2692035",
+        "26ba6c9aea85ccfcf1ae0535c6cf84bb7b3ee46f"
+      ],
+      "date": "2026-08-21T14:53:46+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Merge latest #253 audit architecture and release implementation",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "39b7fcf37eedbfbcdaa11820e2e2b13ce2692035",
+      "parents": [
+        "cedea8f6c57093ba7795be1036f7dc4c6c9b3459"
+      ],
+      "date": "2026-08-21T14:33:19+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "feat: complete state sustainability architecture release",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the completed #253 state-sustainability architecture and subsequent v1.7/current release state."
+    },
+    {
+      "commit": "c9485d4a821cf2255acdad824b15c8bccbf0f3fe",
+      "parents": [
+        "cedea8f6c57093ba7795be1036f7dc4c6c9b3459",
+        "7b7eaab1fd2586f8132acfa15cca69ff5f6efd19",
+        "d376f46d3201f2b6882c565d5fa0c2126531a979"
+      ],
+      "date": "2026-08-21T14:31:43+02:00",
+      "author": "sustynats",
+      "decoration": "(refs/stash)",
+      "subject": "On codex/state-sustainability-architecture-sitewide-20260821: verified-full-build-and-artifact-side-effects-state-architecture",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "evidence": "Git stash/index/untracked snapshot from the completed #253 lane; not canonical branch history."
+    },
+    {
+      "commit": "7b7eaab1fd2586f8132acfa15cca69ff5f6efd19",
+      "parents": [
+        "cedea8f6c57093ba7795be1036f7dc4c6c9b3459"
+      ],
+      "date": "2026-08-21T14:31:43+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "index on codex/state-sustainability-architecture-sitewide-20260821: cedea8f6c5 ci: run state sustainability architecture matrix audit",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "evidence": "Git stash/index/untracked snapshot from the completed #253 lane; not canonical branch history."
+    },
+    {
+      "commit": "d376f46d3201f2b6882c565d5fa0c2126531a979",
+      "parents": [],
+      "date": "2026-08-21T14:31:43+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "untracked files on codex/state-sustainability-architecture-sitewide-20260821: cedea8f6c5 ci: run state sustainability architecture matrix audit",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "evidence": "Git stash/index/untracked snapshot from the completed #253 lane; not canonical branch history."
+    },
+    {
+      "commit": "59628d414d141b01f49cc4fcce1071a77c670f3d",
+      "parents": [
+        "847d397036467686cb456a8d2fb0197f3a698c06"
+      ],
+      "date": "2026-08-21T13:04:58+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/nachhaltigkeit-wirkungssteuerung-20260820)",
+      "subject": "Publish two Wirkungsteuerung journal articles",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the later journal/publication pipeline and current article outputs."
+    },
+    {
+      "commit": "7e38fcb248c756fa6021cfdc87b3ef1eeb58b093",
+      "parents": [
+        "3f599dd3728fd6ab1d0673e58db08734680115ed"
+      ],
+      "date": "2026-08-16T00:06:31+02:00",
+      "author": "sustynats",
+      "decoration": "(HEAD -> codex/live-clean-20260628)",
+      "subject": "docs: add cross-domain review briefs",
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "evidence": "Exact commit and its four sibling old-branch commits are preserved in the verified issue-284-live-clean-local-five.bundle GitHub Release asset."
+    },
+    {
+      "commit": "3f599dd3728fd6ab1d0673e58db08734680115ed",
+      "parents": [
+        "fb9dac4451c8775081909764ccb588495aadaedf"
+      ],
+      "date": "2026-08-15T23:53:24+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "docs: define cross-domain publication and release standards",
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "evidence": "Exact commit and its four sibling old-branch commits are preserved in the verified issue-284-live-clean-local-five.bundle GitHub Release asset."
+    },
+    {
+      "commit": "fb9dac4451c8775081909764ccb588495aadaedf",
+      "parents": [
+        "229d1bf8f30e2390fdac7aede43ba84874f317f4"
+      ],
+      "date": "2026-08-15T23:22:05+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "feat(parlament): centralize design tokens and release gate",
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "evidence": "Exact commit and its four sibling old-branch commits are preserved in the verified issue-284-live-clean-local-five.bundle GitHub Release asset."
+    },
+    {
+      "commit": "229d1bf8f30e2390fdac7aede43ba84874f317f4",
+      "parents": [
+        "da4eeb5c561877f3cd1f3d3cc680a30680b83079"
+      ],
+      "date": "2026-08-15T23:08:14+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "docs(parlament): add publication and release QA contracts",
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "evidence": "Exact commit and its four sibling old-branch commits are preserved in the verified issue-284-live-clean-local-five.bundle GitHub Release asset."
+    },
+    {
+      "commit": "da4eeb5c561877f3cd1f3d3cc680a30680b83079",
+      "parents": [
+        "aeecaf0e0478f362987c87ce19290278fe66761a"
+      ],
+      "date": "2026-08-15T22:34:16+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "feat(parlament): add Saxony-Anhalt programme review pipeline",
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "evidence": "Exact commit and its four sibling old-branch commits are preserved in the verified issue-284-live-clean-local-five.bundle GitHub Release asset."
+    },
+    {
+      "commit": "7aa91e4fceffc59474e5f277241813f778a183cf",
+      "parents": [
+        "fbddc7420a557c2154e76c0aa82f218a2fe23f62"
+      ],
+      "date": "2026-08-14T16:52:51+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/parlament-tech)",
+      "subject": "feat(parlament): add editorial workbench and AI guardrails",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the later Parliament Golden State and current release architecture."
+    },
+    {
+      "commit": "fbddc7420a557c2154e76c0aa82f218a2fe23f62",
+      "parents": [
+        "18cdeef1254477ea077934cd2165f3c2b5080f16"
+      ],
+      "date": "2026-08-14T16:44:13+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "feat(parlament): add editorial decision backend foundation",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the later Parliament Golden State and current release architecture."
+    },
+    {
+      "commit": "18cdeef1254477ea077934cd2165f3c2b5080f16",
+      "parents": [
+        "37aa3884d03b61138ea0b8272ef9db87b66789a4",
+        "a66f26a405d1e1d8dc93c3bd7564a4808a2ed8ca"
+      ],
+      "date": "2026-08-14T15:06:14+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Merge remote-tracking branch 'origin/main' into codex/parlament-tech",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the later Parliament Golden State and current release architecture."
+    },
+    {
+      "commit": "772586868e0658af82a2b7a63673cea1859c6ecc",
+      "parents": [
+        "b5789073a53de6bc25134d05e589bfa0ab3ce2f8"
+      ],
+      "date": "2026-08-05T18:51:02+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/publish-kooperative-wirkungsordnung-integration)",
+      "subject": "Aktualisiere Suchmetadaten",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "b5789073a53de6bc25134d05e589bfa0ab3ce2f8",
+      "parents": [
+        "f87d4fb8d3243ca15d7712c6cf334ab4e228b090"
+      ],
+      "date": "2026-08-05T18:47:00+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Veröffentliche kooperative Wirkungsordnung",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the merged #201/#202 Kooperative Wirkungsordnung publication and integration."
+    },
+    {
+      "commit": "a37ae19860c74bf577a3f304be5be52b117dfb98",
+      "parents": [
+        "59917c8331b88c1f7bc9d889a65a2e465d687a75"
+      ],
+      "date": "2026-08-05T18:47:00+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/publish-kooperative-wirkungsordnung)",
+      "subject": "Veröffentliche kooperative Wirkungsordnung",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the merged #201/#202 Kooperative Wirkungsordnung publication and integration."
+    },
+    {
+      "commit": "21e06366839cc17f870c524d6c66069e2af826f0",
+      "parents": [
+        "a248e1fa3dc9fb850e1b5d63d03525c20cb1b152"
+      ],
+      "date": "2026-07-29T20:05:10+02:00",
+      "author": "sustynats",
+      "decoration": "(agent/allow-journal-pdfs-20260729)",
+      "subject": "Use public URLs in journal PDFs",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the later journal/publication pipeline and current article outputs."
+    },
+    {
+      "commit": "c358361d91fa535669894480eeefad1397d6881e",
+      "parents": [
+        "256368d7c9484b58f2017911c5b7922afa0206a0",
+        "a7cf49977519bf44edb15faaf1cce7a85d35a9fa"
+      ],
+      "date": "2026-07-20T14:56:48Z",
+      "author": "sustynats",
+      "decoration": "(codex/ci-repro-pr165-merge)",
+      "subject": "Merge a7cf49977519bf44edb15faaf1cce7a85d35a9fa into 256368d7c9484b58f2017911c5b7922afa0206a0",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "00e0563348d4821e5b71925b705bfc2d82ed8b0a",
+      "parents": [
+        "8ac90eecf44e1858208d11d833dc38c76a1f3cef"
+      ],
+      "date": "2026-07-11T13:39:55+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/redirect-infra)",
+      "subject": "chore(site): redirect-infrastruktur fuer ia-umbau",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "8b5ab0efaf6c72cc9617b03531f39c157dd2863a",
+      "parents": [
+        "8ac90eecf44e1858208d11d833dc38c76a1f3cef"
+      ],
+      "date": "2026-07-11T11:35:49+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/footer-single-source)",
+      "subject": "chore(site): footer als single source normalisieren",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "6ff5dd36cbb60f9309d751f2edbd2fa1af8d0ac9",
+      "parents": [
+        "61c5fe59bf25492384ef830c9508fc704d12c8a5"
+      ],
+      "date": "2026-07-07T13:34:49+02:00",
+      "author": "sustynats",
+      "decoration": "(claude/quellenarchiv-website-spiegel)",
+      "subject": "ci(quellenarchiv): wöchentlicher Snapshot-Sync mit dem Institut per PR",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the evolved Quellenarchiv source registry, website mirror and current build pipeline."
+    },
+    {
+      "commit": "61c5fe59bf25492384ef830c9508fc704d12c8a5",
+      "parents": [
+        "6b48423de3a9516d815b8a9fc2e23239cc2bd2a1"
+      ],
+      "date": "2026-07-07T13:33:36+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "feat(quellenarchiv): Website-Spiegel des kuratierten Quellenarchivs (read-only)",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the evolved Quellenarchiv source registry, website mirror and current build pipeline."
+    },
+    {
+      "commit": "54420cfa20e7a59bbbec8362d562608a9cb3d1f4",
+      "parents": [
+        "2de5ade7aa8203b6051a660b31dd53ee4b3c8c9e"
+      ],
+      "date": "2026-06-17T11:13:13+02:00",
+      "author": "Claude",
+      "decoration": "(claude/setup)",
+      "subject": "Add Claude × Codex collaboration workflow",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "974bf8d48127cb0407b58f5904f2bb586b13f926",
+      "parents": [
+        "0d8943acd5a8c22c95e192748b368a48b44bae64"
+      ],
+      "date": "2026-05-31T09:00:33+02:00",
+      "author": "sustynats",
+      "decoration": "(glossary-sixth-kondratieff-expand-ai-robotics)",
+      "subject": "Expand sixth Kondratieff glossary entry",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the evolved glossary source/build/publication state."
+    },
+    {
+      "commit": "8e9d6dd9a4ef8d2c490f2655bf48f02837249795",
+      "parents": [
+        "1c1567c4a75c1722bb3d46749fa637eec80ba00f"
+      ],
+      "date": "2026-05-31T08:43:43+02:00",
+      "author": "sustynats",
+      "decoration": "(backup/woek-id-register-explorer-before-realign-20260531-195145)",
+      "subject": "Launch site restructure and WÖk-ID register explorer",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "f72bedb4beca9eb4e1b60b1b1d2b9e8eca5d5e38",
+      "parents": [
+        "2c16955949c0121cca27346272cd00afb05e3da6"
+      ],
+      "date": "2026-05-30T21:47:08+02:00",
+      "author": "sustynats",
+      "decoration": "(feature/glossar-geld-kapital)",
+      "subject": "Clean public library artifacts and refresh search",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "1c1567c4a75c1722bb3d46749fa637eec80ba00f",
+      "parents": [
+        "522dcebc8ef6b1665d1bc84392c1d6a56d38a75c"
+      ],
+      "date": "2026-05-29T07:00:51+02:00",
+      "author": "sustynats",
+      "decoration": "(woek-id-register-public-explorer, site-restructure-stage-9-library-versioning, site-restructure-stage-8-experience-demos, site-restructure-stage-7-impact-fields, site-restructure-stage-6-objections, site-restructure-stage-5-understand-mastermap, site-restructure-stage-4-method-map, site-restructure-stage-3-home-journey, site-restructure-stage-2-content-governance, site-restructure-stage-15-post-launch-monitoring, site-restructure-stage-14-launch-qa, site-restructure-stage-13-usability-a11y-seo, site-restructure-stage-12-search-glossary-crosslinks, site-restructure-stage-11-academy, site-restructure-stage-10-pilot-journey, site-restructure-stage-1-navigation, site-restructure-stage-0-inventory, feature/website-conversion-visuals-tools-search, document-library-redesign)",
+      "subject": "Add personal audio introduction",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "17adc648005d0881bda7a0c435459135ed54653d",
+      "parents": [
+        "1629ade925a26a27fc89941fd50cfc90b0d34194"
+      ],
+      "date": "2026-05-27T08:32:29+02:00",
+      "author": "sustynats",
+      "decoration": "(codex/publish-journal-articles)",
+      "subject": "Publish journal articles and glossary entries",
+      "classification": "SUPERSEDED",
+      "evidence": "Current main contains the later journal/publication pipeline and current article outputs."
+    },
+    {
+      "commit": "08d8f2ff80708dad513bbcfd7b227764d3506d13",
+      "parents": [
+        "bc709743a141a80401a3849cf83459961006af7f"
+      ],
+      "date": "2026-05-25T18:00:56+02:00",
+      "author": "sustynats",
+      "decoration": "(main)",
+      "subject": "Commit generated usability cleanup output",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "bc709743a141a80401a3849cf83459961006af7f",
+      "parents": [
+        "97e382cd46ccfcf22cdce964f8f4e12e3d6d2cfc"
+      ],
+      "date": "2026-05-25T17:49:24+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Clean up UX, tool CTAs and mobile header",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "97e382cd46ccfcf22cdce964f8f4e12e3d6d2cfc",
+      "parents": [
+        "023681107d48778da632f2105f0389c1b9c8553e"
+      ],
+      "date": "2026-05-25T16:34:48+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Clean up public tool pages and calculator",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "023681107d48778da632f2105f0389c1b9c8553e",
+      "parents": [
+        "72a1cadef9b9d8e375d5457d360a2867a25eb492"
+      ],
+      "date": "2026-05-25T16:06:14+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Fix Wirkungsfelder-Uebersicht und Hero",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "72a1cadef9b9d8e375d5457d360a2867a25eb492",
+      "parents": [
+        "e53a742d83497e96730a276e9ea056e3dab24cfb"
+      ],
+      "date": "2026-05-25T15:38:19+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Website 1.0 Masterbibliothek",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "e53a742d83497e96730a276e9ea056e3dab24cfb",
+      "parents": [
+        "c66a4936ca3df46f4509451d8dd80cf30bb9dea2"
+      ],
+      "date": "2026-05-25T15:05:40+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Rang 23 Wirkungsakademie Portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "c66a4936ca3df46f4509451d8dd80cf30bb9dea2",
+      "parents": [
+        "e58f071756f8edf9dc89e3abe1992b68d939df64"
+      ],
+      "date": "2026-05-25T14:48:54+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Rang 22 Zukunftsbilder Portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "e58f071756f8edf9dc89e3abe1992b68d939df64",
+      "parents": [
+        "ef3c57512ca78f09088fe98ebf14eb01a0c4f290"
+      ],
+      "date": "2026-05-25T14:24:54+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Rang 21 Schutzarchitektur Portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "ef3c57512ca78f09088fe98ebf14eb01a0c4f290",
+      "parents": [
+        "d36d1ff983cadb498e7907a9f967d56d7962b4e5"
+      ],
+      "date": "2026-05-25T14:07:46+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Rang 20 Transformation Portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "d36d1ff983cadb498e7907a9f967d56d7962b4e5",
+      "parents": [
+        "0c8d9b0974a29c785c97d936c19e7f653a4e80f5"
+      ],
+      "date": "2026-05-25T13:46:49+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Rang 19 Internationale Ordnung Portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "0c8d9b0974a29c785c97d936c19e7f653a4e80f5",
+      "parents": [
+        "948dec340af2e4ec4d2696d546af1a4323433928"
+      ],
+      "date": "2026-05-25T13:27:23+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Rang 18 Wissenschaft Portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "948dec340af2e4ec4d2696d546af1a4323433928",
+      "parents": [
+        "db4c1e6e27ef2cd245311e56b47b3def036e66a3"
+      ],
+      "date": "2026-05-25T13:04:20+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Integriere Rang 17 Digitalisierung KI Portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "db4c1e6e27ef2cd245311e56b47b3def036e66a3",
+      "parents": [
+        "a5caaaf9285ee8f81d11d9f7fa94b8675289be06"
+      ],
+      "date": "2026-05-25T12:36:33+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Praezisiere Mensch Planet Demokratie Begriff",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "a5caaaf9285ee8f81d11d9f7fa94b8675289be06",
+      "parents": [
+        "b71a1262d07ad76b66219ec2afd5985f67388090"
+      ],
+      "date": "2026-05-25T12:13:39+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Add Rang 16 Sicherheit und Resilienz portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "b71a1262d07ad76b66219ec2afd5985f67388090",
+      "parents": [
+        "d96976cb90f075065423a86267317136caa8dd1a"
+      ],
+      "date": "2026-05-25T11:45:35+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Add Rang 15 Migration und Vielfalt portal",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    },
+    {
+      "commit": "d96976cb90f075065423a86267317136caa8dd1a",
+      "parents": [
+        "04609f9f799cdb1a77d0aa367c372e0cc92c3c92"
+      ],
+      "date": "2026-05-25T11:05:35+02:00",
+      "author": "sustynats",
+      "decoration": "",
+      "subject": "Refine UX navigation and knowledge search",
+      "classification": "SUPERSEDED",
+      "evidence": "Historical local-ref commit is superseded by the current main tree and completed GitHub lanes; its changed working artifacts were separately classified item by item."
+    }
+  ]
+}

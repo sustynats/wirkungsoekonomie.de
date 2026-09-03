@@ -1,0 +1,27 @@
+name: ST GRUENE convergence C14
+
+on:
+  pull_request:
+    paths:
+      - "audit-manifests/sachsen-anhalt/gruene-convergence-c14.json"
+      - "tools/validate_st_gruene_convergence_component.py"
+      - ".github/workflows/st-gruene-convergence-c14.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  convergence-c14:
+    name: Exact R26-R29 role and edge ledger
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate committed ledger and pinned issue facts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_st_gruene_convergence_component.py audit-manifests/sachsen-anhalt/gruene-convergence-c14.json --check-github

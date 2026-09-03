@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "templates": [
+    {
+      "id": "product-path",
+      "label": "Produkt",
+      "steps": [
+        "Produkt",
+        "Daten",
+        "Wirkungsfelder",
+        "WÖk-ID-Hypothese",
+        "Scorecard-Hypothese",
+        "Datenlücken",
+        "mögliche Rückkopplung"
+      ]
+    },
+    {
+      "id": "text-narrative-path",
+      "label": "Text / Narrativ",
+      "steps": [
+        "Aussage",
+        "Frame",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wahrnehmungsverschiebung",
+        "demokratisches Risiko",
+        "SDG+-Einordnung"
+      ]
+    },
+    {
+      "id": "company-path",
+      "label": "Unternehmen",
+      "steps": [
+        "Geschäftsmodell",
+        "Produkte / Dienstleistungen",
+        "Lieferkette / Kapital / Daten / Ressourcen",
+        "Wirkungspotenziale",
+        "mögliche Zustandsveränderungen",
+        "Datenlücken",
+        "mögliche Wirkungsbewertung erst nach Prüfung"
+      ]
+    },
+    {
+      "id": "election-program-path",
+      "label": "Wahlprogramm",
+      "steps": [
+        "politische Maßnahme",
+        "behauptetes Ziel",
+        "Wirkungspotenzial",
+        "betroffene Wirkungsräume",
+        "Zielkonflikte",
+        "Datenbedarf",
+        "WÖk-Gegenfrage"
+      ]
+    },
+    {
+      "id": "decision-path",
+      "label": "Entscheidung",
+      "steps": [
+        "Auslöser",
+        "Wirkungspotenzial",
+        "Nebenwirkungen",
+        "Zielkonflikte",
+        "Rückkopplungen",
+        "Datenbedarf",
+        "vorläufige Einordnung"
+      ]
+    }
+  ]
+}

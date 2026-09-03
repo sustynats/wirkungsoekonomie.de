@@ -1,0 +1,30 @@
+{
+  email {$CADDY_EMAIL}
+}
+
+(secure_headers) {
+  encode zstd gzip
+  header {
+    -Server
+    Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    X-Content-Type-Options "nosniff"
+    Referrer-Policy "strict-origin-when-cross-origin"
+    Permissions-Policy "camera=(), geolocation=(), microphone=(), payment=(), usb=()"
+    X-Frame-Options "SAMEORIGIN"
+  }
+}
+
+{$CRM_DOMAIN} {
+  import secure_headers
+  reverse_proxy crm:80
+}
+
+{$SURVEY_DOMAIN} {
+  import secure_headers
+  handle /api/analytics/* {
+    reverse_proxy analytics:3000
+  }
+  handle {
+    reverse_proxy survey:80
+  }
+}

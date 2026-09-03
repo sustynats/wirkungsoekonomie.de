@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1110" viewBox="0 0 1800 1110" role="img" aria-labelledby="title desc">
+  <title id="title">Der Wirkungskreislauf der Wirkungsökonomie</title>
+  <desc id="desc">Von Auslösern, Wirkungspotenzialen und Wirkmechanismen über einen Wirkungspfad mit optionalem IOOI-Abschnitt zu Evidenz, Bewertung, Schutzregeln, Rückkopplung und Lernen.</desc>
+  <defs>
+    <style>
+      .bg{fill:#F7F4EC}.navy{fill:#0B1B36}.green{fill:#2D7F5F}.gold{fill:#C9932E}.coral{fill:#C95749}.text{fill:#2E333C}
+      .line{stroke:#D7D0C1;stroke-width:2;fill:none}.oline{stroke:#C9932E;stroke-width:2.3;fill:none}
+      .card{fill:#fffdfa;stroke:#D7D0C1;stroke-width:2}.softn{fill:#EEF2F7;stroke:#0B1B36;stroke-width:2}.softg{fill:#EAF3EE;stroke:#2D7F5F;stroke-width:2}.softo{fill:#F7EEDC;stroke:#C9932E;stroke-width:2}.softc{fill:#F7E6E2;stroke:#C95749;stroke-width:2}
+      .title{font-family:Georgia,'Times New Roman',serif;font-size:54px;font-weight:700;letter-spacing:3.2px}.subtitle{font-family:Georgia,'Times New Roman',serif;font-size:28px;letter-spacing:.8px}
+      .h{font-family:Inter,Arial,sans-serif;font-size:23px;font-weight:800}.body{font-family:Inter,Arial,sans-serif;font-size:17px}.num{font-family:Georgia,'Times New Roman',serif;font-size:32px;font-weight:700}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#C9932E"/></marker>
+  </defs>
+  <rect class="bg" width="1800" height="1110"/>
+  <rect x="28" y="28" width="1744" height="1054" rx="18" fill="none" stroke="#D7D0C1" stroke-width="2"/>
+  <text x="900" y="88" class="title navy" text-anchor="middle">DER WIRKUNGSKREISLAUF</text>
+  <text x="900" y="128" class="subtitle gold" text-anchor="middle">Vom Wirkpfad zur Steuerungsarchitektur</text>
+  <line x1="150" y1="154" x2="1650" y2="154" class="line"/>
+
+  <rect x="105" y="220" width="360" height="170" rx="18" class="softn"/>
+  <text x="133" y="264" class="num navy">1</text><text x="185" y="264" class="h navy">Vor der Wirkung</text>
+  <text x="133" y="305" class="body text">Auslöser und Wirkstoff</text><text x="133" y="330" class="body text">als didaktische Analogie.</text>
+  <line x1="465" y1="305" x2="500" y2="305" class="oline" marker-end="url(#arrow)"/>
+
+  <rect x="515" y="220" width="360" height="170" rx="18" class="softo"/>
+  <text x="543" y="264" class="num gold">2</text><text x="595" y="264" class="h navy">Potenzial und Risiko</text>
+  <text x="543" y="305" class="body text">Möglichkeit positiver, negativer</text><text x="543" y="330" class="body text">oder ambivalenter Wirkung.</text>
+  <line x1="875" y1="305" x2="910" y2="305" class="oline" marker-end="url(#arrow)"/>
+
+  <rect x="925" y="220" width="360" height="170" rx="18" class="softn"/>
+  <text x="953" y="264" class="num navy">3</text><text x="1005" y="264" class="h navy">Wirkmechanismus</text>
+  <text x="953" y="305" class="body text">Warum und unter welchen</text><text x="953" y="330" class="body text">Annahmen Veränderung entsteht.</text>
+  <line x1="1285" y1="305" x2="1320" y2="305" class="oline" marker-end="url(#arrow)"/>
+
+  <rect x="1335" y="220" width="360" height="170" rx="18" class="softg"/>
+  <text x="1363" y="264" class="num green">4</text><text x="1415" y="264" class="h navy">Wirkpfad</text>
+  <text x="1363" y="305" class="body text">optional: IOOI-Abschnitt</text><text x="1363" y="330" class="body text">Input → [Aktivität] → Output → Outcome → Impact.</text>
+
+  <rect x="105" y="490" width="360" height="170" rx="18" class="softc"/>
+  <text x="133" y="534" class="num coral">5</text><text x="185" y="534" class="h navy">Evidenz und Folgen</text>
+  <text x="133" y="575" class="body text">Wirkungsnachweis, Attribution,</text><text x="133" y="600" class="body text">Neben- und Wechselwirkungen.</text>
+  <line x1="465" y1="575" x2="500" y2="575" class="oline" marker-end="url(#arrow)"/>
+
+  <rect x="515" y="490" width="360" height="170" rx="18" class="softn"/>
+  <text x="543" y="534" class="num navy">6</text><text x="595" y="534" class="h navy">Wirkungsbewertung</text>
+  <text x="543" y="575" class="body text">Einordnung am Referenzrahmen:</text><text x="543" y="600" class="body text">SDGs, Agenda 2030 und SDG+.</text>
+  <line x1="875" y1="575" x2="910" y2="575" class="oline" marker-end="url(#arrow)"/>
+
+  <rect x="925" y="490" width="360" height="170" rx="18" class="softo"/>
+  <text x="953" y="534" class="num gold">7</text><text x="1005" y="534" class="h navy">Netto und Schutz</text>
+  <text x="953" y="575" class="body text">Nichtkompensation, Grenzen,</text><text x="953" y="600" class="body text">Rechte und Verteilungsfragen.</text>
+  <line x1="1285" y1="575" x2="1320" y2="575" class="oline" marker-end="url(#arrow)"/>
+
+  <rect x="1335" y="490" width="360" height="170" rx="18" class="softg"/>
+  <text x="1363" y="534" class="num green">8</text><text x="1415" y="534" class="h navy">Transformation</text>
+  <text x="1363" y="575" class="body text">Wirkungsordnungen, Lernen</text><text x="1363" y="600" class="body text">und tragfähige Systemwechsel.</text>
+
+  <rect x="345" y="760" width="510" height="160" rx="18" class="softg"/>
+  <text x="373" y="804" class="num green">9</text><text x="425" y="804" class="h navy">Wirkungslenkung</text>
+  <text x="373" y="845" class="body text">Preise, Steuern, Kapital, Beschaffung,</text><text x="373" y="870" class="body text">Management, Recht und Regulation reagieren.</text>
+  <line x1="855" y1="840" x2="930" y2="840" class="oline" marker-end="url(#arrow)"/>
+  <rect x="945" y="760" width="510" height="160" rx="18" class="softn"/>
+  <text x="973" y="804" class="num navy">10</text><text x="1042" y="804" class="h navy">Rückkopplung und Lernen</text>
+  <text x="973" y="845" class="body text">Neue Systemzustände werden beobachtet,</text><text x="973" y="870" class="body text">korrigiert und erneut gestaltet.</text>
+  <path d="M1455 920 C1550 1000 300 1000 345 920" class="oline" marker-end="url(#arrow)"/>
+
+  <rect x="145" y="970" width="1510" height="72" rx="18" class="card"/>
+  <text x="190" y="1015" class="body navy">Wirkungspotenzial ist nicht Wirkung. Ein plausibler Wirkmechanismus ist kein Wirkungsnachweis. IOOI kann einen Abschnitt strukturieren; die Wirkungsökonomie ist eigenständig.</text>
+</svg>

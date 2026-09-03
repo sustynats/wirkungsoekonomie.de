@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/government-impact-analysis-1.0.schema.json",
+  "title": "WÖk GovernmentImpactAnalysis 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["analysis_id", "government_action_id", "analysis_stage", "materiality_class", "impact_paths", "legal_boundaries", "non_compensable_boundaries", "overall_direction", "overall_evidence_status", "data_gaps", "feedback_actions", "method_version", "data_version", "created_at", "updated_at"],
+  "properties": {
+    "analysis_id": {"type": "string", "minLength": 1},
+    "government_action_id": {"type": "string", "minLength": 1},
+    "analysis_stage": {"enum": ["FACT_ONLY", "EX_ANTE", "IMPLEMENTATION", "EARLY_OUTCOME", "EX_POST", "RE_EVALUATED"]},
+    "materiality_class": {"enum": ["REGISTER_ONLY", "STANDARD_CHECK", "FULL_WOEK_CHECK", "URGENT_BOUNDARY_REVIEW"]},
+    "objective": {"type": ["string", "null"]},
+    "instrument": {"type": ["string", "null"]},
+    "ex_ante_context": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["knowledge_cutoff", "known_impact_potentials", "known_risks", "available_source_refs", "official_communication_refs", "later_information_excluded"],
+      "properties": {
+        "knowledge_cutoff": {"type": "string", "format": "date"},
+        "known_impact_potentials": {"type": "array"},
+        "known_risks": {"type": "array"},
+        "available_source_refs": {"type": "array"},
+        "official_communication_refs": {"type": "array"},
+        "later_information_excluded": {"const": true}
+      },
+      "description": "Zeitlich abgegrenzter Wissensstand vor der Entscheidung. Amtliche Kommunikation dokumentiert Ziele oder Annahmen, ist aber kein Wirkungsnachweis."
+    },
+    "target_groups": {"type": "array", "items": {"type": "string"}},
+    "impact_paths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["impact_path_id", "stage", "trigger", "mechanism", "conditions", "recipients", "impact_spaces", "state_variable", "order", "direction", "evidence_status", "data_status", "attribution", "time_horizon", "sdg_refs", "sdg_plus_refs", "mpd_refs", "legal_refs", "woek_id_refs", "uncertainties", "counterarguments", "data_needs"],
+        "properties": {
+          "impact_path_id": {"type": "string"},
+          "stage": {"enum": ["EX_ANTE", "IMPLEMENTATION", "EX_POST"]},
+          "trigger": {"type": "string"},
+          "mechanism": {"type": "string"},
+          "conditions": {"type": "array", "items": {"type": "string"}},
+          "recipients": {"type": "array", "items": {"type": "string"}},
+          "impact_spaces": {"type": "array", "items": {"type": "string"}},
+          "state_variable": {"type": "string"},
+          "baseline": {"type": ["object", "number", "string", "null"]},
+          "expected_or_observed_change": {"type": ["object", "number", "string", "null"]},
+          "counterfactual": {"type": ["object", "number", "string", "null"]},
+          "order": {"enum": ["FIRST", "SECOND", "THIRD"]},
+          "direction": {"enum": ["POSITIVE", "NEGATIVE", "NEUTRAL", "AMBIVALENT", "OPEN"]},
+          "evidence_status": {"enum": ["HIGH", "MEDIUM", "LOW", "NOT_ASSESSABLE"]},
+          "data_status": {"enum": ["MEASURED", "OBSERVED", "MODELLED", "ESTIMATED", "SECONDARY", "MISSING"]},
+          "attribution": {"enum": ["DIRECT", "PLAUSIBLE_CONTRIBUTION", "SYSTEMIC_CONTRIBUTION", "UNCLEAR"]},
+          "time_horizon": {"enum": ["SHORT", "MEDIUM", "LONG", "NOT_YET_OBSERVABLE"]},
+          "sdg_refs": {"type": "array"},
+          "sdg_plus_refs": {"type": "array"},
+          "mpd_refs": {"type": "array"},
+          "legal_refs": {"type": "array"},
+          "woek_id_refs": {"type": "array"},
+          "source_refs": {"type": "array"},
+          "uncertainties": {"type": "array", "items": {"type": "string"}},
+          "counterarguments": {"type": "array", "items": {"type": "string"}},
+          "data_needs": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "implementation_indicators": {"type": "array"},
+    "output_indicators": {"type": "array"},
+    "outcome_indicators": {"type": "array"},
+    "observations": {"type": "array"},
+    "legal_boundaries": {"type": "array"},
+    "non_compensable_boundaries": {"type": "array"},
+    "overall_direction": {"enum": ["POSITIVE", "NEGATIVE", "NEUTRAL", "AMBIVALENT", "OPEN", "NOT_APPLICABLE"]},
+    "overall_evidence_status": {"enum": ["HIGH", "MEDIUM", "LOW", "NOT_ASSESSABLE"]},
+    "data_gaps": {"type": "array", "items": {"type": "string"}},
+    "feedback_actions": {"type": "array"},
+    "next_review_date": {"type": ["string", "null"]},
+    "method_version": {"type": "string"},
+    "data_version": {"type": "string"},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"}
+  }
+}

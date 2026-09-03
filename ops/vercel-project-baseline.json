@@ -1,0 +1,67 @@
+{
+  "team_id": "team_sOR1voJPyc1jY5VsMdQRyFWz",
+  "team_slug": "woek-akademie",
+  "expected": {
+    "command_for_ignoring_build_step": "exit 0",
+    "git_deployments": "disabled",
+    "build_machine_type": "standard",
+    "build_machine_selection": "fixed",
+    "elastic_concurrency_enabled": false,
+    "build_queue": "WAIT_FOR_NAMESPACE_QUEUE",
+    "web_analytics_enabled": false,
+    "speed_insights_has_data": false,
+    "observability_plus_enabled": false,
+    "additional_team_seats": 0
+  },
+  "projects": [
+    {
+      "id": "prj_zbfaqLTQORQreVdCF8mywjBMjy6Y",
+      "name": "natsalexandre-web",
+      "git_linked": true,
+      "approved_runtime_roles": [
+        "NEXTJS_HOSTING_AND_CDN",
+        "SERVER_FUNCTIONS",
+        "ORACLE_MEDIA_ACCESS_GATE",
+        "SCHEDULED_CRONS",
+        "ENCRYPTED_ENVIRONMENT_VARIABLES"
+      ],
+      "canonical_external_systems": {
+        "database_and_identity": "SUPABASE",
+        "private_media": "ORACLE_OBJECT_STORAGE",
+        "source_repository": "GITHUB"
+      },
+      "cost_observation": [
+        "FUNCTIONS",
+        "CDN_AND_DATA_TRANSFER",
+        "PROTECTED_MEDIA_ROUTES",
+        "CRON_EXECUTIONS"
+      ],
+      "legacy_deploy_hook_count_max": 0
+    },
+    {
+      "id": "prj_h1X7GuXOVo1bdnOfoYXzTfP8ygBK",
+      "name": "woek-parlament",
+      "git_linked": true,
+      "legacy_deploy_hook_count_max": 2,
+      "legacy_deploy_hooks_must_remain_build_inert": true
+    },
+    {
+      "id": "prj_SlgxeAHv60nXP9AgA1ndTbggq9R7",
+      "name": "woek-akademie-app",
+      "git_linked": true,
+      "legacy_deploy_hook_count_max": 0
+    },
+    {
+      "id": "prj_3U2pAFh4digPuwOfT1ffFtq5Xd41",
+      "name": "woek-dateieingang",
+      "git_linked": false,
+      "legacy_deploy_hook_count_max": 0
+    },
+    {
+      "id": "prj_j2DAmjccTLeJMrhwd09umjuQdpVo",
+      "name": "woek-institut-app",
+      "git_linked": true,
+      "legacy_deploy_hook_count_max": 0
+    }
+  ]
+}

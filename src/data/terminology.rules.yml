@@ -1,0 +1,46 @@
+rules:
+  - id: wirkung-neutral
+    severity: high
+    term: Wirkung
+    check: "Wirkung darf nicht automatisch positiv verwendet werden."
+    preferred: "Wirkung als tatsächliche Veränderung von Zuständen, positiv, negativ oder neutral."
+  - id: zielgroesse-positive-netto-wirkung
+    severity: high
+    term: positive Netto-Wirkung
+    check: "Wenn eine positive Zielgröße gemeint ist, positive Netto-Wirkung prüfen."
+    preferred: "Zielgröße der WÖk ist positive Netto-Wirkung für Mensch, Planet und Demokratie."
+  - id: wirkungspotenzial-nicht-wirkung
+    severity: medium
+    term: Wirkungspotenzial
+    check: "Potenzial darf nicht als eingetretene Wirkung formuliert werden."
+    preferred: "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann."
+  - id: wirkstoff-analogie
+    severity: high
+    term: Wirkstoff
+    check: "Wirkstoff nur als didaktische Analogie verwenden."
+    preferred: "gesellschaftlicher Wirkstoff als Analogie; Auslöser mit Wirkungspotenzial."
+  - id: sdg-plus-nicht-un
+    severity: high
+    term: SDG+
+    check: "SDG+ darf nicht als offizielle UN-Kategorie dargestellt werden."
+    preferred: "SDG+ ist eine WÖk-Erweiterung für demokratische, mediale und institutionelle Wirkungsfelder."
+  - id: frame-framing-reframing-trennen
+    severity: medium
+    term: Frame / Framing / Reframing
+    check: "Bei Frame, Framing und Reframing muss klar zwischen Deutungsrahmen, Prozess und bewusster Verschiebung unterschieden werden."
+    preferred: "Frame = Deutungsrahmen; Framing = Setzen oder Verstärken eines Deutungsrahmens; Reframing = bewusste Verschiebung des Deutungs- und Bewertungsrahmens."
+  - id: reframing-wirkungsmassstab
+    severity: high
+    term: Reframing
+    check: "Reframing darf nicht als bloß positiveres Wording, Manipulation oder Schönfärberei verwendet werden."
+    preferred: "Wirkungsorientiertes Reframing verschiebt den Bewertungsmaßstab von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung für Mensch, Planet und Demokratie."
+  - id: framing-wirkungspotenzial
+    severity: high
+    term: Framing
+    check: "Bei Sprache, Medien und Narrativen nicht vorschnell eingetretene Wirkung behaupten."
+    preferred: "Von Wirkungspotenzial, Resonanzraum, Wirkungspfad oder Wirkungsrisiko sprechen, solange kein Wirkungsnachweis vorliegt."
+  - id: reframing-schutzlinien
+    severity: high
+    term: Reframing
+    check: "Reframing darf keine Zielkonflikte verdecken, keine Feindbilder erzeugen und keine unbelegten Absichten unterstellen."
+    preferred: "Der neue Frame soll mehr Wirklichkeit sichtbar machen, Würde schützen, Zielkonflikte offenhalten und demokratische Handlungsfähigkeit erhöhen."

@@ -1,0 +1,3378 @@
+{
+  "schemaVersion": "2026-05-document-library-redesign",
+  "allowedValues": {
+    "documentType": [
+      "kurzfassung",
+      "manifest",
+      "leitbild",
+      "grundlagenpapier",
+      "standardwerk",
+      "buch",
+      "whitepaper",
+      "working-paper",
+      "paper",
+      "konzept",
+      "dossier",
+      "fallbeispiel",
+      "technische-leitlinie",
+      "gesetzesentwurf",
+      "datenregister",
+      "essay",
+      "vortrag",
+      "redaktionsgrundlage",
+      "intern"
+    ],
+    "status": [
+      "fuehrend",
+      "aktuell",
+      "fachoeffentlich",
+      "diskussionsfassung",
+      "arbeitsfassung",
+      "in-pruefung",
+      "archiv",
+      "ersetzt",
+      "intern",
+      "review-erforderlich"
+    ],
+    "visibility": [
+      "public",
+      "expert_public",
+      "archive",
+      "review_required",
+      "internal",
+      "hidden"
+    ]
+  },
+  "visibilityRule": "Nur public und expert_public erscheinen in der normalen Bibliothek. Archive erscheint nur im Archiv. review_required, internal und hidden erscheinen nicht als Kachel und nicht als direkter Download.",
+  "documents": [
+    {
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0",
+      "slug": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0",
+      "title": "Nachhaltigkeit als Systemresilienz v1.0",
+      "subtitle": "Archivierte erste Online-Ausgabe der Fachveröffentlichung",
+      "fileName": "Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
+      "filePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
+      "documentType": "grundlagenpapier",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Methodik"
+      ],
+      "level": "expert",
+      "summaryShort": "Erste Online-Ausgabe der Fachveröffentlichung, für bestehende Zitate unverändert erhalten.",
+      "whatToExpect": "Die kompaktere v1.0-Ausgabe ohne die vollständige Abbildungs- und Formelstrecke. Für die vollständige Fachfassung gilt v1.1.",
+      "keyQuestions": [
+        "Wo liegt die vollständige Fachfassung?",
+        "Welche erste Online-Ausgabe bleibt zitierfähig?"
+      ],
+      "topics": [
+        "Nachhaltigkeit",
+        "Resilienz",
+        "Systemresilienz",
+        "Archiv"
+      ],
+      "methods": [
+        "Systemresilienz",
+        "Wirkungsarchitektur",
+        "Nichtkompensation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell"
+      ],
+      "version": "1.0",
+      "date": "2026-07-30",
+      "replacedBy": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "editorialNote": "Archivierte erste Online-Ausgabe. Nicht still überschrieben; die vollständige Fachfassung mit gesetzten Formeln und Abbildungen ist Version 1.1.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 208,
+      "fileType": "pdf",
+      "fileSize": "175 KB",
+      "pageCount": 7,
+      "estimatedReadingTime": "12 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "minifest-wirkungsoekonomie",
+      "slug": "minifest-wirkungsoekonomie",
+      "title": "Minifest Wirkungsökonomie",
+      "subtitle": "Sehr kurzer Einstieg in die Grundidee",
+      "fileName": "Minifest_Wirkungsoekonomie.pdf",
+      "filePath": "public/downloads/originals/Minifest_Wirkungsoekonomie.pdf",
+      "documentType": "kurzfassung",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Einsteiger:innen",
+        "Bürger:innen"
+      ],
+      "level": "einsteiger",
+      "summaryShort": "Sehr kurzer Einstieg in die Grundidee der Wirkungsökonomie.",
+      "whatToExpect": "Ein kompakter Einstieg in den Maßstabswechsel von Kapital zu Wirkung.",
+      "keyQuestions": [
+        "Was meint Wirkung statt Kapital?",
+        "Warum braucht es einen anderen Maßstab?"
+      ],
+      "topics": [
+        "Grundlagen",
+        "Customer Journey",
+        "Wirkung statt Kapital"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "leitbild-mensch-planet-demokratie",
+        "grundlagenpapier-wirkungsoekonomie"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "editorialNote": "Als schneller Einstieg geeignet.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Empfohlener Einstieg",
+      "order": 10,
+      "fileType": "pdf",
+      "fileSize": "73 KB",
+      "pageCount": 4,
+      "estimatedReadingTime": "7 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "leitbild-mensch-planet-demokratie",
+      "slug": "leitbild-mensch-planet-demokratie",
+      "title": "Leitbild für Mensch, Planet und Demokratie",
+      "subtitle": "Normativer Kompass der Wirkungsökonomie",
+      "fileName": "Leitbild für Mensch Planet und Demokratie.pdf",
+      "filePath": "public/downloads/originals/Leitbild für Mensch Planet und Demokratie.pdf",
+      "documentType": "leitbild",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Einsteiger:innen",
+        "Politik",
+        "Bildung"
+      ],
+      "level": "einsteiger",
+      "summaryShort": "Verständliches Leitbild für die Ausrichtung auf Mensch, Planet und Demokratie.",
+      "whatToExpect": "Eine kurze normative Einordnung, warum Mensch, Planet und Demokratie gemeinsam betrachtet werden.",
+      "keyQuestions": [
+        "Warum diese drei Bezugspunkte?",
+        "Was heißt positive Netto-Wirkung?"
+      ],
+      "topics": [
+        "Mensch-Planet-Demokratie",
+        "Leitbild",
+        "Positive Netto-Wirkung"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "minifest-wirkungsoekonomie",
+        "woek-manifest"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Grundlagen & Leitbild",
+      "order": 20,
+      "fileType": "pdf",
+      "fileSize": "135 KB",
+      "pageCount": 17,
+      "estimatedReadingTime": "29 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-manifest",
+      "slug": "woek-manifest",
+      "title": "WÖk-Manifest",
+      "subtitle": "Wirkung statt Kapital als programmatischer Aufruf",
+      "fileName": "WÖk-Manifest.pdf",
+      "filePath": "public/downloads/originals/WÖk-Manifest.pdf",
+      "documentType": "manifest",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Einsteiger:innen",
+        "Mitgestalter:innen"
+      ],
+      "level": "einsteiger",
+      "summaryShort": "Programmatischer Aufruf zur neuen Ordnung „Wirkung statt Kapital“.",
+      "whatToExpect": "Ein pointierter, normativer Text für Menschen, die die Grundidee schnell erfassen wollen.",
+      "keyQuestions": [
+        "Warum reicht Kapital als Leitgröße nicht?",
+        "Welche neue Richtung schlägt die WÖk vor?"
+      ],
+      "topics": [
+        "Manifest",
+        "Wirkung statt Kapital",
+        "Mitgestaltung"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "minifest-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Grundlagen & Leitbild",
+      "order": 30,
+      "fileType": "pdf",
+      "fileSize": "2.8 MB",
+      "pageCount": 18,
+      "estimatedReadingTime": "31 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "grundlagenpapier-wirkungsoekonomie",
+      "slug": "grundlagenpapier-wirkungsoekonomie",
+      "title": "Grundlagenpapier Wirkungsökonomie",
+      "subtitle": "Systematische Einführung in Prinzipien und Grundmodell",
+      "fileName": "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+      "filePath": "public/downloads/originals/Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+      "documentType": "grundlagenpapier",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Einsteiger:innen",
+        "Fachöffentlichkeit",
+        "Politik"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Systematische Einführung in Notwendigkeit, Prinzipien und Grundmodell der Wirkungsökonomie.",
+      "whatToExpect": "Eine längere Einführung, die die Grundlogik, Begriffe und Systemannahmen zusammenführt.",
+      "keyQuestions": [
+        "Was ist die WÖk?",
+        "Wie entstehen Bewertung und Rückkopplung?",
+        "Wo liegen Schutzlinien?"
+      ],
+      "topics": [
+        "Grundlagen",
+        "Rückkopplung",
+        "SDGs & SDG+"
+      ],
+      "methods": [
+        "Scorecards",
+        "Wirkungsrückkopplung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "leitbild-mensch-planet-demokratie",
+        "whitepaper-t-sroi"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Grundlagen & Leitbild",
+      "order": 40,
+      "fileType": "pdf",
+      "fileSize": "345 KB",
+      "pageCount": 21,
+      "estimatedReadingTime": "36 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie",
+      "slug": "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie",
+      "title": "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung",
+      "subtitle": "Soziale Dilemmata, psychologische Dynamiken, Vertrauen, Macht, Wirkungsintegrität, SDG+ und die Bedingungen gelingender Transformation",
+      "author": "Natalie Weber",
+      "publicationLabel": "Gesamtstudie 2.0",
+      "fileName": "woek_gesamtstudie_wirkungsdilemmata_kooperation_sdgplus_v2_0.pdf",
+      "filePath": "assets/downloads/woek_gesamtstudie_wirkungsdilemmata_kooperation_sdgplus_v2_0.pdf",
+      "contentHtmlPath": "content/documents/online/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie.inc",
+      "documentType": "grundlagenpapier",
+      "status": "arbeitsfassung",
+      "visibility": "expert_public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Politik",
+        "Methodik",
+        "Zivilgesellschaft"
+      ],
+      "level": "expert",
+      "summaryShort": "Gesamtstudie 2.0 zur Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung. Sie ordnet soziale Dilemmata, psychologische Dynamiken, Vertrauen, Macht, Wirkungsintegrität und SDG+ als Bedingungen gelingender Transformation ein.",
+      "whatToExpect": "Eine umfassende Theorie- und Architekturstudie zu sozialen Wirkungsdilemmata, Kooperation, Rückkopplung, Wirkungstragung, Nichtkompensation, Reverse Merit Order, Wirkungsintegrität, SDG+ und institutioneller Lernfähigkeit. Modellhafte Vorschläge bleiben als Arbeits- und Diskussionsfassung gekennzeichnet.",
+      "keyQuestions": [
+        "Unter welchen Bedingungen wird Kooperation ohne Naivität tragfähig und wehrhaft?",
+        "Wie lassen sich soziale Wirkungsdilemmata, Macht- und Informationsprobleme, Externalisierung und Vertrauensverluste gemeinsam einordnen?",
+        "Wie schützen Nichtkompensation, Reverse Merit Order, Rechtsstaatlichkeit und Wirkungsintegrität vor Scheingenauigkeit, Machtmissbrauch und Personenbewertung?",
+        "Wie kann eine Wirkungsordnung positive Netto-Wirkung am Referenzrahmen Mensch, Planet, Demokratie, SDGs und SDG+ ausrichten?"
+      ],
+      "topics": [
+        "Soziale Wirkungsdilemmata",
+        "Kooperation",
+        "Vertrauen",
+        "Macht",
+        "Wirkungsintegrität",
+        "Wirkungstragung",
+        "Externalisierung",
+        "Nichtkompensation",
+        "Reverse Merit Order",
+        "SDG+"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Wirkungsrückkopplung",
+        "Wirkungsintegrität",
+        "Polyzentralität",
+        "Wirkungsassurance"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "systemmodell-wirkungsoekonomie",
+        "woek-begriffsleitfaden-fuehrend",
+        "whitepaper-t-sroi",
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept"
+      ],
+      "version": "v2.0",
+      "date": "2026-08-05",
+      "legalNotice": "Konzeptionelle Gesamtstudie und Arbeitsfassung. Kein empirischer Nachweis einer bereits gesamtwirtschaftlich bewährten Wirkungsökonomie; keine Rechts-, Steuer-, Förder-, Anlage-, Prüfungs-, Unternehmens- oder Politikberatung, keine amtliche Bewertungsmethode, keine Personenbewertung und kein Social-Credit-System.",
+      "editorialNote": "Die öffentliche Fassung trennt Theorie, Modelle, Forschungsfragen und Quellen von redaktioneller Arbeitsplanung. Modellhafte Aussagen, Pilotlogiken und institutionelle Module sind als Vorschläge gekennzeichnet.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "includeInFullKnowledgeLibrary": true,
+      "section": "Grundlagen & Leitbild",
+      "order": 42,
+      "fileType": "pdf",
+      "fileSize": "2.5 MB",
+      "pageCount": 128,
+      "estimatedReadingTime": "218 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": ""
+    },
+    {
+      "id": "von-der-wissensgesellschaft-zur-wirkungsgesellschaft",
+      "slug": "von-der-wissensgesellschaft-zur-wirkungsgesellschaft",
+      "title": "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
+      "subtitle": "Warum die nächste Stufe des Fortschritts nicht mehr fragt: Was wissen wir?, sondern: Was bewirkt es?",
+      "fileName": "von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf",
+      "filePath": "public/downloads/originals/von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf",
+      "documentType": "dossier",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Einsteiger:innen",
+        "Fachöffentlichkeit",
+        "Politik",
+        "Wissenschaft",
+        "Bildung"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Dossier v2.0 zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Die neue Fassung schärft Labels, Zertifikate, Scores, Faktenchecks und Berichte als Sichtbarkeitsinstrumente, die erst durch Bewertung und Rückkopplung Wirkung erzeugen.",
+      "whatToExpect": "Eine verständliche und zugleich systematische Einordnung der nächsten Fortschrittsstufe: von Wissen, Bericht und Messung zu Wirkungsarchitektur, demokratischer Lernfähigkeit und realer Zustandsveränderung.",
+      "keyQuestions": [
+        "Warum reicht Wissen allein nicht mehr als Fortschrittsmaßstab?",
+        "Was unterscheidet Wissensgesellschaft und Wirkungsgesellschaft?",
+        "Wie werden Daten, KI, Wissenschaft, Märkte, Staat und Medien zu Rückkopplungsarchitekturen für positive Netto-Wirkung?"
+      ],
+      "topics": [
+        "Wissensgesellschaft",
+        "Wirkungsgesellschaft",
+        "Labels",
+        "Zertifikate",
+        "Scores",
+        "Faktencheck",
+        "Folgencheck",
+        "Wirkungsrückkopplung",
+        "positive Netto-Wirkung"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Wirkungsrückkopplung",
+        "Scorecards",
+        "WÖk-IDs",
+        "T-SROI"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie",
+        "Öffentlichkeit & Wissen",
+        "Wissenschaft & Innovation"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "systemmodell-wirkungsoekonomie",
+        "whitepaper-t-sroi",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "version": "v2.0",
+      "date": "2026-06-15",
+      "legalNotice": "Konzeptionelles Dossier. Keine Rechts-, Steuer-, Anlage-, Förder-, Bildungs-, Gesundheits- oder Politikberatung; keine amtliche Bewertung.",
+      "editorialNote": "Aus dem Ausgangsdossier in das WÖK-CI-Template überführt, als PDF veröffentlicht und als Online-Lesefassung verankert.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "onlinePath": "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/",
+      "foundationPath": "verstehen/wissensgesellschaft-wirkungsgesellschaft/",
+      "section": "Grundlagen & Leitbild",
+      "order": 45,
+      "fileType": "pdf",
+      "fileSize": "337 KB",
+      "pageCount": 21,
+      "estimatedReadingTime": "36 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "standardwerk-neue-ordnung-wohlstands-2026",
+      "slug": "standardwerk-neue-ordnung-wohlstands-2026",
+      "title": "Die neue Ordnung des Wohlstands",
+      "subtitle": "Standardwerk und Langfassung der Wirkungsökonomie",
+      "fileName": "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf",
+      "filePath": "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
+      "documentType": "standardwerk",
+      "status": "führend",
+      "visibility": "public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Politik"
+      ],
+      "level": "expert",
+      "summaryShort": "Umfassendes Standardwerk und Langfassung der Wirkungsökonomie.",
+      "whatToExpect": "Eine fachlich dichte Langfassung mit Systemarchitektur, Begriffen, Wirkungsfeldern und politischer Einordnung.",
+      "keyQuestions": [
+        "Wie hängt das Gesamtmodell zusammen?",
+        "Welche Ordnungsidee steht hinter Wirkung statt Kapital?"
+      ],
+      "topics": [
+        "Standardwerk",
+        "Systemarchitektur",
+        "Referenzfassung"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Wirkungsrückkopplung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "systemmodell-wirkungsoekonomie"
+      ],
+      "version": "2026",
+      "date": "2026",
+      "editorialNote": "Eigene Standardwerk-Seite verwenden; nicht als kleine Normalkachel behandeln.",
+      "internalNote": "Formale QA, Quellenstatus und Tracking-URLs prüfen.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "onlinePath": "referenz/",
+      "section": "Empfohlener Einstieg",
+      "order": 5,
+      "fileType": "pdf",
+      "fileSize": "29.1 MB",
+      "pageCount": 1250,
+      "estimatedReadingTime": "2125 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nachhaltiges-marketing-mix",
+      "slug": "nachhaltiges-marketing-mix",
+      "title": "Nachhaltiges Marketing-Mix",
+      "subtitle": "Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel",
+      "fileName": "nachhaltiges-marketing-mix.pdf",
+      "filePath": "assets/pdf/imported/nachhaltiges-marketing-mix.pdf",
+      "contentHtmlPath": "assets/data/document-online/nachhaltiges-marketing-mix.html",
+      "documentType": "buch",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Unternehmen",
+        "Marketing",
+        "Handel",
+        "Industrie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Frühe Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+      "whatToExpect": "Online lesbarer Praxisleitfaden zu Produktentwicklung, Preisgestaltung, Platzierung, Promotion und dem fünften P Planet.",
+      "keyQuestions": [
+        "Wie erweitert Planet den klassischen Marketing-Mix?",
+        "Wie werden SDGs in Produkt-, Preis-, Vertriebs- und Kommunikationsentscheidungen übersetzt?"
+      ],
+      "topics": [
+        "Marketing",
+        "Nachhaltigkeit",
+        "SDGs & SDG+",
+        "5. P Planet",
+        "Kreislaufwirtschaft"
+      ],
+      "methods": [
+        "Scorecards",
+        "Wirkungsrückkopplung",
+        "SDGs & SDG+"
+      ],
+      "impactFields": [
+        "Wirtschaft & Kapital",
+        "Planet & Resilienz",
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "grundlagenpapier-wirkungsoekonomie",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "version": "frühe Buchfassung",
+      "date": "2024",
+      "legalNotice": "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+      "editorialNote": "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Bücher & Praxisleitfäden",
+      "order": 55,
+      "fileType": "pdf",
+      "fileSize": "171 KB",
+      "pageCount": 19,
+      "estimatedReadingTime": "32 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nachhaltiger-einzelhandel",
+      "slug": "nachhaltiger-einzelhandel",
+      "title": "Nachhaltiger Einzelhandel",
+      "subtitle": "Nachhaltigkeit, Verantwortung und Kreislaufwirtschaft im Handel",
+      "fileName": "nachhaltiger-einzelhandel.pdf",
+      "filePath": "assets/pdf/imported/nachhaltiger-einzelhandel.pdf",
+      "contentHtmlPath": "assets/data/document-online/nachhaltiger-einzelhandel.html",
+      "documentType": "buch",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Handel",
+        "Unternehmen",
+        "Mittelstand"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Frühe Ausarbeitung dazu, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+      "whatToExpect": "Online lesbarer Praxisleitfaden mit Schwerpunkt Handel, Kund:innenbeziehung, Kreislaufwirtschaft und Umsetzung.",
+      "keyQuestions": [
+        "Wie kann Einzelhandel Nachhaltigkeit praktisch verankern?",
+        "Welche Rolle spielen Sortiment, Lieferketten, Rücknahme und Kommunikation?"
+      ],
+      "topics": [
+        "Einzelhandel",
+        "Nachhaltigkeit",
+        "Kreislaufwirtschaft",
+        "Produkte & Konsum"
+      ],
+      "methods": [
+        "Scorecards",
+        "Wirkungsrückkopplung",
+        "Produktwirkung"
+      ],
+      "impactFields": [
+        "Wirtschaft & Kapital",
+        "Produkte & Konsum",
+        "Planet & Resilienz"
+      ],
+      "relatedDocuments": [
+        "nachhaltiges-marketing-mix",
+        "wirkungsoekonomie-lieferkette",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "version": "frühe Buchfassung",
+      "date": "2023",
+      "legalNotice": "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+      "editorialNote": "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Bücher & Praxisleitfäden",
+      "order": 56,
+      "fileType": "pdf",
+      "fileSize": "25 KB",
+      "pageCount": 11,
+      "estimatedReadingTime": "19 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+      "slug": "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+      "title": "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+      "subtitle": "Agenda 2030, SDGs und ESG-Anforderungen in Beratungsunternehmen",
+      "fileName": "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+      "filePath": "assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+      "contentHtmlPath": "assets/data/document-online/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.html",
+      "documentType": "buch",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Beratungsunternehmen",
+        "Mittelstand",
+        "Unternehmen"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+      "whatToExpect": "Online lesbarer Praxisleitfaden zu Strategie, Organisation, Kund:innenanforderungen, Lieferanten, Berichtswesen und Umsetzung.",
+      "keyQuestions": [
+        "Wie wird Nachhaltigkeit in Beratungsunternehmen organisatorisch verankert?",
+        "Wie lassen sich SDGs und ESG-Anforderungen praktisch strukturieren?"
+      ],
+      "topics": [
+        "Beratungsunternehmen",
+        "Mittelstand",
+        "SDGs & SDG+",
+        "ESG",
+        "Unternehmensstrategie"
+      ],
+      "methods": [
+        "SDGs & SDG+",
+        "Wirkungscontrolling",
+        "Wirkungsrückkopplung"
+      ],
+      "impactFields": [
+        "Wirtschaft & Kapital",
+        "Öffentlichkeit & Wissen",
+        "Planet & Resilienz"
+      ],
+      "relatedDocuments": [
+        "nachhaltiges-marketing-mix",
+        "grundlagenpapier-wirkungsoekonomie",
+        "systemmodell-wirkungsoekonomie"
+      ],
+      "version": "frühe Buchfassung",
+      "date": "2023",
+      "legalNotice": "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+      "editorialNote": "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Bücher & Praxisleitfäden",
+      "order": 57,
+      "fileType": "pdf",
+      "fileSize": "39 KB",
+      "pageCount": 16,
+      "estimatedReadingTime": "27 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nachhaltigkeitstransformation-im-handwerk",
+      "slug": "nachhaltigkeitstransformation-im-handwerk",
+      "title": "Nachhaltigkeitstransformation im Handwerk",
+      "subtitle": "Ein Leitfaden für kleine Betriebe",
+      "fileName": "nachhaltigkeitstransformation-im-handwerk.pdf",
+      "filePath": "assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf",
+      "contentHtmlPath": "assets/data/document-online/nachhaltigkeitstransformation-im-handwerk.html",
+      "documentType": "buch",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Handwerk",
+        "Mittelstand",
+        "Kleine Betriebe"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+      "whatToExpect": "Online lesbarer Praxisleitfaden für Holz-, Elektro-, Bau- und Sanitärhandwerk mit Umsetzungs- und Checklistenlogik.",
+      "keyQuestions": [
+        "Welche Nachhaltigkeitsanforderungen betreffen kleine Handwerksbetriebe?",
+        "Wie können Betrieb, Kund:innenbeziehung und Lieferanten praktisch umgestellt werden?"
+      ],
+      "topics": [
+        "Handwerk",
+        "Mittelstand",
+        "SDGs & SDG+",
+        "Nachhaltigkeit",
+        "Kleine Betriebe"
+      ],
+      "methods": [
+        "SDGs & SDG+",
+        "Wirkungsrückkopplung",
+        "Datenqualität & Assurance"
+      ],
+      "impactFields": [
+        "Wirtschaft & Kapital",
+        "Alltag & Grundbedürfnisse",
+        "Planet & Resilienz"
+      ],
+      "relatedDocuments": [
+        "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+        "nachhaltiges-marketing-mix",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "version": "frühe Buchfassung",
+      "date": "2023",
+      "legalNotice": "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+      "editorialNote": "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Bücher & Praxisleitfäden",
+      "order": 58,
+      "fileType": "pdf",
+      "fileSize": "43 KB",
+      "pageCount": 24,
+      "estimatedReadingTime": "41 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "whitepaper-t-sroi",
+      "slug": "whitepaper-t-sroi",
+      "title": "Whitepaper T-SROI",
+      "subtitle": "Historische Multiplikatorlogik und ihr wissenschaftlicher Ersatz",
+      "fileName": "Whitepaper-T-SROI.pdf",
+      "filePath": "public/downloads/originals/Whitepaper-T-SROI.pdf",
+      "documentType": "whitepaper",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Unternehmen",
+        "Wissenschaft",
+        "Impact Controlling"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Historische Whitepaper-Fassung mit multiplikativer T-SROI-Logik. Für Berechnungen gilt der aktuelle T-SROI-Rechenstandard.",
+      "whatToExpect": "Die frühere Argumentation bleibt nachvollziehbar; die enthaltene Multiplikatorformel ist durch die kausale, diskontierte Netto-Nutzenrechnung ersetzt.",
+      "keyQuestions": [
+        "Wie ist die historische Multiplikatorlogik einzuordnen?",
+        "Wo steht der aktuelle T-SROI-Rechenstandard?"
+      ],
+      "topics": [
+        "T-SROI",
+        "Impact Controlling",
+        "Transformationswirkung"
+      ],
+      "methods": [
+        "T-SROI",
+        "Impact Controlling"
+      ],
+      "impactFields": [
+        "Wirtschaft & Kapital",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "technische-leitlinien-wustg"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "successorUrl": "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+      "successorLabel": "Aktuellen T-SROI-Rechenstandard öffnen",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Methoden & Werkzeuge",
+      "order": 110,
+      "fileType": "pdf",
+      "fileSize": "430 KB",
+      "pageCount": 18,
+      "estimatedReadingTime": "31 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+      "slug": "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+      "title": "Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie",
+      "subtitle": "Arbeitspapier zur Verbindung von CSRD/ESRS, IRO-Logik, Wirkungsdaten und Steuerung",
+      "fileName": "Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+      "filePath": "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+      "documentType": "working-paper",
+      "status": "arbeitsfassung",
+      "visibility": "expert_public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Unternehmen",
+        "Nachhaltigkeit",
+        "Controlling",
+        "Marketing"
+      ],
+      "level": "expert",
+      "summaryShort": "Arbeitspapier zur doppelten Wesentlichkeit als Brücke von Berichtspflichten zu Impact-Controlling, Wirkungsdaten und wirkungsorientierter Steuerung.",
+      "whatToExpect": "Eine fachliche Einordnung, wie CSRD/ESRS, IROs, Impact Materiality, Financial Materiality, Key Impact Indicators und Impact-Marketing in eine steuerbare Wirkungsarchitektur übersetzt werden.",
+      "keyQuestions": [
+        "Wie wird doppelte Wesentlichkeit von einer Berichtspflicht zu einer Steuerungslogik?",
+        "Welche Rolle spielen Impact-Controlling, Impact-Management und Key Impact Indicators?",
+        "Wie schützt Wirkungsökonomie vor Impact-Washing und bloßer Wirkungssimulation?"
+      ],
+      "topics": [
+        "Doppelte Wesentlichkeit",
+        "Impact-Controlling",
+        "Impact-Management",
+        "Impact-Marketing",
+        "CSRD",
+        "ESRS",
+        "IRO",
+        "Wirkungsdaten"
+      ],
+      "methods": [
+        "Wesentlichkeitsanalyse",
+        "Impact-Controlling",
+        "Key Impact Indicators",
+        "Wirkungsdatenraum"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "whitepaper-t-sroi",
+        "grundlagenpapier-wirkungsoekonomie",
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "Arbeitsfassung 2026-06",
+      "date": "2026-06",
+      "legalNotice": "Keine Rechts-, Steuer-, Prüfungs-, Nachhaltigkeits-, Anlage- oder Unternehmensberatung.",
+      "editorialNote": "Als Arbeitspapier für PDF-Download, Website-Verankerung und Glossar-Erweiterung bereitgestellt.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Methoden & Werkzeuge",
+      "order": 112,
+      "fileType": "pdf",
+      "fileSize": "938 KB",
+      "pageCount": 33,
+      "estimatedReadingTime": "56 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+      "slug": "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+      "title": "Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf",
+      "subtitle": "Ein anonymisiertes Praxispaper aus der Chemieindustrie",
+      "fileName": "woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+      "filePath": "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+      "contentHtmlPath": "content/documents/online/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.inc",
+      "documentType": "paper",
+      "status": "aktuell",
+      "visibility": "expert_public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Unternehmen",
+        "Einkauf",
+        "Controlling",
+        "Marketing"
+      ],
+      "level": "expert",
+      "summaryShort": "Anonymisiertes Praxispaper zur operativen Verankerung von Impact-Strategie, Impact-Management, Impact-Controlling und Impact-Marketing im Unternehmenseinkauf.",
+      "whatToExpect": "Ein praxisnaher Weg von doppelter Wesentlichkeit über Key Impact Indicators, Scorecards, Lieferantensteuerung, Warengruppenlogik und Claim-Freigaben bis zur Roadmap.",
+      "keyQuestions": [
+        "Wie wird doppelte Wesentlichkeit im strategischen Einkauf operationalisiert?",
+        "Welche KIIs und Scorecards machen Lieferanten, Warengruppen und Transformationsmaßnahmen steuerbar?",
+        "Wie wird Impact-Marketing als belegbare Wirkungskommunikation statt Green Marketing verankert?"
+      ],
+      "topics": [
+        "Wirkungsökonomie",
+        "Impact-Strategie",
+        "Impact-Management",
+        "Impact-Controlling",
+        "Impact-Marketing",
+        "Key Impact Indicators",
+        "Doppelte Wesentlichkeit",
+        "Einkauf",
+        "Lieferkette",
+        "Chemieindustrie",
+        "Unternehmenssteuerung",
+        "T-SROI",
+        "Wirkungsdaten",
+        "WÖk-IDs",
+        "Scorecard"
+      ],
+      "methods": [
+        "Impact-Controlling",
+        "Key Impact Indicators",
+        "Scorecards",
+        "T-SROI",
+        "Reverse Merit Order",
+        "Wesentlichkeitsanalyse"
+      ],
+      "impactFields": [
+        "Wirtschaft & Kapital",
+        "Produkte & Konsum",
+        "Daten & Infrastruktur",
+        "Planet & Resilienz"
+      ],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+        "whitepaper-t-sroi",
+        "wirkungsoekonomie-lieferkette",
+        "technische-leitlinien-wustg"
+      ],
+      "version": "Anonymisierte Publikationsfassung 2026-06",
+      "date": "2026-06-04",
+      "legalNotice": "Anonymisiertes Praxispaper. Keine Rechts-, Steuer-, Prüfungs-, Nachhaltigkeits-, Anlage- oder Unternehmensberatung; keine offizielle Position eines Unternehmens.",
+      "editorialNote": "Das Word-Ausgangsdokument wurde anonymisiert übernommen; Produktgruppen- und Zielpfadbeispiele wurden in der Publikationsfassung zusätzlich neutralisiert.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Methoden & Werkzeuge",
+      "order": 113,
+      "fileType": "pdf",
+      "fileSize": "308 KB",
+      "pageCount": 20,
+      "estimatedReadingTime": "34 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "technische-leitlinien-wustg",
+      "slug": "technische-leitlinien-wustg",
+      "title": "Technische Leitlinien WUStG",
+      "subtitle": "WÖk-IDs, Archetypen, Benchmarks, Scorecards und Assurance",
+      "fileName": "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+      "filePath": "public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+      "documentType": "technische-leitlinie",
+      "status": "fachoeffentlich",
+      "visibility": "expert_public",
+      "audience": [
+        "Methodik",
+        "Daten",
+        "Pilotierung"
+      ],
+      "level": "technisch",
+      "summaryShort": "Technische Leitlinien zu WÖk-IDs, Archetypen, Benchmarks, Scorecards, Datenquellen und Assurance.",
+      "whatToExpect": "Technische Methodik für Datenquellen, Bewertungslogik und Qualitätssicherung.",
+      "keyQuestions": [
+        "Welche Daten braucht die WÖk?",
+        "Wie werden Scorecards methodisch abgesichert?"
+      ],
+      "topics": [
+        "WÖk-IDs",
+        "Datenqualität",
+        "WUStG"
+      ],
+      "methods": [
+        "WÖk-IDs",
+        "Scorecards",
+        "Datenqualität & Assurance"
+      ],
+      "impactFields": [
+        "Daten & Infrastruktur",
+        "Staat & Demokratie"
+      ],
+      "relatedDocuments": [
+        "whitepaper-t-sroi",
+        "woek-master-items-register"
+      ],
+      "version": "v2",
+      "date": "2026-05",
+      "legalNotice": "Fachliche Methodik. Nicht amtlich. Keine Rechts-, Steuer- oder Anlageberatung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Technische Anlagen",
+      "order": 410,
+      "fileType": "pdf",
+      "fileSize": "126 KB",
+      "pageCount": 11,
+      "estimatedReadingTime": "19 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wirkungsrat-konzept",
+      "slug": "wirkungsrat-konzept",
+      "title": "Wirkungsrat Konzept",
+      "subtitle": "Institutionelle Verankerung von Prüfung, Lernen und Korrektur",
+      "fileName": "Wirkungsrat_Konzept.pdf",
+      "filePath": "public/downloads/originals/Wirkungsrat_Konzept.pdf",
+      "documentType": "konzept",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Politik",
+        "Verwaltung",
+        "Fachöffentlichkeit"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Konzept zur institutionellen Verankerung des Wirkungsrats.",
+      "whatToExpect": "Ein Modell für demokratisch legitimierte Prüfung, Evaluation und Korrektur.",
+      "keyQuestions": [
+        "Wer prüft Wirkung?",
+        "Wie bleibt Bewertung lernfähig und rechtsstaatlich?"
+      ],
+      "topics": [
+        "Wirkungsrat",
+        "Evaluation",
+        "Rechtsschutz"
+      ],
+      "methods": [
+        "Wirkungsrat",
+        "Evaluation"
+      ],
+      "impactFields": [
+        "Staat & Demokratie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "wirkungssteuer-wstg-3-0"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "legalNotice": "Konzeptpapier. Nicht amtlich. Keine Rechts-, Steuer- oder Anlageberatung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Recht & Steuerung",
+      "order": 210,
+      "fileType": "pdf",
+      "fileSize": "246 KB",
+      "pageCount": 5,
+      "estimatedReadingTime": "9 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wirkungsoekonomie-lieferkette",
+      "slug": "wirkungsoekonomie-lieferkette",
+      "title": "Wirkungsökonomie in der Lieferkette",
+      "subtitle": "Scorecards, Lieferkettenwirkung und Vorsteuerlogik",
+      "fileName": "Wirkungsökonomie in der Lieferkette.pdf",
+      "filePath": "public/downloads/originals/Wirkungsökonomie in der Lieferkette.pdf",
+      "documentType": "working-paper",
+      "status": "diskussionsfassung",
+      "visibility": "expert_public",
+      "audience": [
+        "Unternehmen",
+        "Beschaffung",
+        "Lieferketten"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Anwendung der Wirkungsökonomie auf globale Lieferketten, Scorecards und Vorsteuerlogik.",
+      "whatToExpect": "Ein Working Paper zu Produkt- und Lieferkettenwirkung mit methodischen Annahmen.",
+      "keyQuestions": [
+        "Wie wird Lieferkettenwirkung sichtbar?",
+        "Welche Daten und Scorecards werden gebraucht?"
+      ],
+      "topics": [
+        "Lieferkette",
+        "Produktwirkung",
+        "WUStG"
+      ],
+      "methods": [
+        "Scorecards",
+        "WÖk-IDs",
+        "Wirkungsumsatzsteuer"
+      ],
+      "impactFields": [
+        "Wirtschaft & Kapital",
+        "Planet & Resilienz"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "beispiel-apfel-wirkungssteuer"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "legalNotice": "Diskussionsfassung. Nicht amtlich. Keine Rechts-, Steuer- oder Anlageberatung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 320,
+      "fileType": "pdf",
+      "fileSize": "304 KB",
+      "pageCount": 28,
+      "estimatedReadingTime": "48 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "beispiel-apfel-wirkungssteuer",
+      "slug": "beispiel-apfel-wirkungssteuer",
+      "title": "Beispiel: Regionaler Apfel vs. Chile-Apfel",
+      "subtitle": "Automatisierte Einstufung einer Wirkungssteuer als Modellbeispiel",
+      "fileName": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+      "filePath": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+      "documentType": "fallbeispiel",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Praxis",
+        "Methodik",
+        "Politik"
+      ],
+      "level": "intermediate",
+      "summaryShort": "Modellbeispiel zur Frage, wie eine Wirkungssteuer bei zwei äußerlich ähnlichen Produkten unterschiedliche Wirkpfade sichtbar machen kann.",
+      "whatToExpect": "Ein konkretes Beispiel zur wirkungsökonomischen Produktbewertung am Vergleich regionaler und importierter Äpfel.",
+      "keyQuestions": [
+        "Wie unterscheiden sich Preis und Wirkung?",
+        "Welche Daten könnten in eine Wirkungssteuer einfließen?",
+        "Wie bleibt die Bewertung modellhaft und nicht personenbezogen?"
+      ],
+      "topics": [
+        "Produktwirkung",
+        "Wirkungssteuer",
+        "Wahre Preise"
+      ],
+      "methods": [
+        "Scorecard",
+        "Wirkungssteuer",
+        "Positive Netto-Wirkung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "internalNote": "Interne Referenzen entfernen oder durch öffentliche Quellen ersetzen.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Praxisbeispiele",
+      "order": 310,
+      "contentHtmlPath": "content/documents/online/beispiel-apfel-wirkungssteuer.inc",
+      "legalNotice": "Illustratives Modellbeispiel. Keine Steuer-, Rechts-, Förder-, Anlage- oder Unternehmensberatung; keine amtliche Bewertungsmethode.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
+      "fileType": "pdf",
+      "fileSize": "194 KB",
+      "pageCount": 17,
+      "estimatedReadingTime": "29 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "beispiel-konzern",
+      "slug": "beispiel-konzern",
+      "title": "Fallbeispiel: Von der CSRD zur Produktscorecard",
+      "subtitle": "Wie Unternehmensdaten in produktbezogene Wirkung übersetzt werden können",
+      "fileName": "Beispiel-Konzern.pdf",
+      "filePath": "public/downloads/originals/Beispiel-Konzern.pdf",
+      "documentType": "fallbeispiel",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Unternehmen",
+        "Investoren",
+        "Methodik"
+      ],
+      "level": "intermediate",
+      "summaryShort": "Illustratives Fallbeispiel zur Übersetzung von CSRD-/ESG-Daten in produktbezogene Wirkungslogik.",
+      "whatToExpect": "Ein modellhafter Weg von Nachhaltigkeitsdaten zur Produktscorecard, ohne eine reale Unternehmensbewertung zu behaupten.",
+      "keyQuestions": [
+        "Wie werden Unternehmensdaten produktbezogen?",
+        "Wo endet Reporting und wo beginnt Rückkopplung?",
+        "Welche Schutzlinien braucht ein Modellbeispiel?"
+      ],
+      "topics": [
+        "CSRD",
+        "Produktscorecard",
+        "Unternehmenswirkung"
+      ],
+      "methods": [
+        "Produktwirkung",
+        "Scorecard",
+        "Wirkungscontrolling"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "internalNote": "Disclaimer ergänzen: illustratives Modellbeispiel, keine tatsächliche Unternehmensbewertung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Praxisbeispiele",
+      "order": 312,
+      "contentHtmlPath": "content/documents/online/beispiel-konzern.inc",
+      "legalNotice": "Illustratives Modellbeispiel. Keine tatsächliche Unternehmensbewertung, kein Rating und keine Rechts-, Prüfungs-, Steuer-, Anlage- oder Unternehmensberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
+      "fileType": "pdf",
+      "fileSize": "68 KB",
+      "pageCount": 4,
+      "estimatedReadingTime": "7 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "systemmodell-wirkungsoekonomie",
+      "slug": "systemmodell-wirkungsoekonomie",
+      "title": "Systemmodell der Wirkungsökonomie",
+      "subtitle": "Umfangreiche Systemarchitektur Mensch-Planet-Demokratie",
+      "fileName": "Systemmodell-der-Wirkungsökonomie.pdf",
+      "filePath": "public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf",
+      "documentType": "konzept",
+      "status": "fachoeffentlich",
+      "visibility": "expert_public",
+      "audience": [
+        "Wissenschaft",
+        "Methodik",
+        "Pilotierung"
+      ],
+      "level": "expert",
+      "summaryShort": "Umfangreiches Systemmodell und Ordnungskarte Mensch-Planet-Demokratie.",
+      "whatToExpect": "Eine dichte Systemarchitektur mit vielen Querverbindungen, nicht als Einstieg gedacht.",
+      "keyQuestions": [
+        "Wie ist die Wirkungsökonomie als Gesamtsystem aufgebaut?"
+      ],
+      "topics": [
+        "Systemmodell",
+        "Mensch-Planet-Demokratie",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Evaluation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "editorialNote": "Eigene Landingpage mit Legende und Warnung umfangreiche Systemarchitektur.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Methoden & Werkzeuge",
+      "order": 120,
+      "fileType": "pdf",
+      "fileSize": "2.9 MB",
+      "pageCount": 223,
+      "estimatedReadingTime": "379 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wstg-oktober-2025",
+      "slug": "wstg-oktober-2025",
+      "title": "WStG Oktober 2025",
+      "subtitle": "Zitierfähiger historischer Entwicklungsstand vor der Gesamtneufassung 3.0",
+      "fileName": "WStG_Oktober2025.pdf",
+      "filePath": "public/downloads/originals/WStG_Oktober2025.pdf",
+      "documentType": "gesetzesentwurf",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Politik",
+        "Verwaltung",
+        "Jurist:innen"
+      ],
+      "level": "juristisch",
+      "summaryShort": "Historische Diskussionsfassung des Wirkungssteuergesetzes vom Oktober 2025; ersetzt durch die Gesamtneufassung WStG 3.0.",
+      "whatToExpect": "Die unveränderte, zitierfähige historische Quellenfassung. Für den aktuellen fachlichen Stand gilt die Gesamtneufassung 3.0 vom 17. August 2026.",
+      "keyQuestions": [
+        "Wie könnte Wirkung steuerlich geregelt werden?",
+        "Welche Schutzlinien braucht ein Gesetz?"
+      ],
+      "topics": [
+        "WStG",
+        "Recht",
+        "Steuerung"
+      ],
+      "methods": [
+        "Wirkungssteuerung",
+        "Wirkungsrat"
+      ],
+      "impactFields": [
+        "Staat & Demokratie"
+      ],
+      "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0",
+        "wirkungsrat-konzept",
+        "technische-leitlinien-wustg"
+      ],
+      "version": "Oktober 2025",
+      "date": "2025-10",
+      "replacedBy": "wirkungssteuer-wstg-3-0",
+      "successorUrl": "bibliothek/wirkungssteuer-wstg-3-0/",
+      "successorLabel": "WStG 3.0 öffnen",
+      "historicalNotice": "Diese Fassung dokumentiert den Entwicklungsstand von 2025. Sie ist durch die modulare Gesamtneufassung 3.0 ersetzt.",
+      "editorialNote": "Historische Originalfassung; nicht still überschrieben.",
+      "legalNotice": "Historische Diskussionsfassung. Nicht amtlich. Keine Rechts-, Steuer- oder Anlageberatung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Recht & Steuerung",
+      "order": 205,
+      "fileType": "pdf",
+      "fileSize": "2.0 MB",
+      "pageCount": 146,
+      "estimatedReadingTime": "248 Min.",
+      "replaces": [],
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wirkungssteuer-wstg-3-0",
+      "slug": "wirkungssteuer-wstg-3-0",
+      "title": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0",
+      "subtitle": "Gesamtneufassung 2026: Systemarchitektur, Gesetzesentwurf, Kommentierung, Steuerartenatlas und Umsetzungspfad",
+      "author": "Natalie Weber",
+      "publicationLabel": "Führender Referenz- und Gesetzesentwurf",
+      "fileName": "Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
+      "filePath": "public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
+      "contentHtmlPath": "content/documents/online/wirkungssteuer-wstg-3-0.inc",
+      "documentType": "gesetzesentwurf",
+      "status": "führend",
+      "visibility": "public",
+      "audience": [
+        "Politik",
+        "Verwaltung",
+        "Steuerrecht",
+        "Wissenschaft",
+        "Fachöffentlichkeit"
+      ],
+      "level": "juristisch",
+      "summaryShort": "Die Gesamtneufassung 3.0 ordnet Wirkungssteuer als modulare Rückkopplungsarchitektur über bestehende Steuerarten: Scorecards liefern Evidenz, der Gesetzgeber bleibt Tarifgeber.",
+      "whatToExpect": "47 Seiten mit 125 vollständig kommentierten Paragrafen, Steuerartenatlas, Daten- und Registerarchitektur, Wirkungsnachweiskonto, Governance, Rechtsschutz, KI, EU-Pfad, Digitalem Produktpass und Umsetzungshorizont bis 2040.",
+      "keyQuestions": [
+        "Wie kann Wirkung rechtsstaatlich und modular an bestehende Steuerarten rückgekoppelt werden, ohne eine universelle Supersteuer zu schaffen?",
+        "Welche Rollen haben Gesetzgeber, Scorecards, Wirkungsrat, WÖk-IDs, Produkt-IDs und Wirkungsnachweiskonto?",
+        "Welche nationalen und europäischen Entwicklungspfade sind insbesondere für Umsatzsteuer, Produktdaten und Digitalen Produktpass realistisch?"
+      ],
+      "topics": [
+        "Wirkungssteuer",
+        "WStG 3.0",
+        "Steuerartenatlas",
+        "Wirkungsnachweiskonto",
+        "EU-Steuerrecht",
+        "Digitaler Produktpass",
+        "Governance",
+        "Rechtsschutz"
+      ],
+      "methods": [
+        "Wirkungsrückkopplung",
+        "Scorecards",
+        "Nichtkompensation",
+        "Reverse Merit Order",
+        "WÖk-IDs",
+        "Evaluation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie",
+        "Staat & Recht",
+        "Wirtschaft & Kapital"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025",
+        "wirkungsrat-konzept",
+        "technische-leitlinien-wustg",
+        "woek-begriffsleitfaden-fuehrend",
+        "woek-master-items-register"
+      ],
+      "version": "3.0 · Gesamtneufassung 2026",
+      "date": "2026-08-17",
+      "isLeadingReference": true,
+      "replaces": [
+        "wstg-oktober-2025"
+      ],
+      "legalNotice": "Referenz- und Diskussionsentwurf. Kein geltendes Recht und keine Rechts-, Steuer-, Finanz- oder Anlageberatung. Tarife, Schwellen und Module sind, soweit nicht ausdrücklich anders bezeichnet, WÖk-Entwurfs- oder Simulationsparameter.",
+      "editorialNote": "Echte Gesamtneufassung. Die Fassung 2.0 und das Working Paper vom Oktober 2025 bleiben unverändert und zitierfähig archiviert.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "includeInFullKnowledgeLibrary": true,
+      "section": "Recht & Steuerung",
+      "order": 108,
+      "fileType": "pdf",
+      "fileSize": "742 KB",
+      "pageCount": 47,
+      "estimatedReadingTime": "80 Min.",
+      "replacedBy": "",
+      "internalNote": ""
+    },
+    {
+      "id": "wp-produkte",
+      "slug": "wp-produkte",
+      "title": "Produktbesteuerung durch Wirkung",
+      "subtitle": "Historische Quellenfassung zur Produkt- und Preissteuerung",
+      "fileName": "WP_Produkte.pdf",
+      "filePath": "public/downloads/originals/WP_Produkte.pdf",
+      "documentType": "working-paper",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Politik",
+        "Unternehmen",
+        "Wissenschaft"
+      ],
+      "level": "expert",
+      "summaryShort": "Historische Quellenfassung zur Produktsteuerung. Sie enthält überholte automatische Zuordnungen von Scores zu Steuerklassen und dehnt die Logik teilweise auf Personen und Einkommen aus.",
+      "whatToExpect": "Die Fassung bleibt als Entwicklungsspur verfügbar. Der aktuelle Ansatz trennt Produkt-, Organisations- und Personenebene strikt: Ein Score löst weder automatisch einen Preis noch eine Steuerklasse aus; Entscheidungen brauchen Rechtsgrundlage, Datenqualität, Prüfung und demokratische Kontrolle.",
+      "keyQuestions": [
+        "Welche automatische Score- und Steuerlogik ist verworfen?",
+        "Wie begrenzen Nichtkompensation und Reverse Merit Order eine aktuelle Produktprüfung?",
+        "Wo liegt das aktuelle Dossier Produkte & Konsum?"
+      ],
+      "topics": [
+        "Produktwirkung",
+        "Wirkungssteuerung",
+        "Historische Quellenfassung"
+      ],
+      "methods": [
+        "Wirkungssteuer",
+        "Reverse Merit Order",
+        "Nichtkompensation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "version": "v1.0",
+      "date": "2025",
+      "internalNote": "",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 912,
+      "contentHtmlPath": "",
+      "suppressHistoricalText": true,
+      "successorUrl": "wirkungsfelder/produkte-konsum/dossier/",
+      "successorLabel": "Aktuelles Dossier Produkte & Konsum öffnen",
+      "historicalNotice": "Diese Fassung koppelt Scores teilweise automatisch an Steuerklassen, Preise und personenbezogene Daten. Das ist verworfen: Die WÖk bewertet keine Personen und setzt weder individuelle Steuern noch Preise automatisch aus einem Score fest. Nichtkompensation und Reverse Merit Order sind Schutz-Gates, keine Rechenabkürzung für automatische Entscheidungen.",
+      "legalNotice": "Historische Quellenfassung. Nicht als Grundlage für Personenbewertungen, automatische Steuer- oder Preisentscheidungen oder reale Produktklassifikationen verwenden. Keine Rechts-, Steuer-, Förder-, Anlage-, Prüfungs- oder Unternehmensberatung; keine amtliche Bewertungsmethode.",
+      "editorialNote": "",
+      "fileType": "pdf",
+      "fileSize": "76 KB",
+      "pageCount": 22,
+      "estimatedReadingTime": "37 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wp-einkommen",
+      "slug": "wp-einkommen",
+      "title": "Wirkungseinkommen",
+      "subtitle": "Ein neuer Blick auf soziale Sicherheit in der Wirkungsökonomie",
+      "fileName": "WP_Einkommen.pdf",
+      "filePath": "public/downloads/originals/WP_Einkommen.pdf",
+      "documentType": "working-paper",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Politik",
+        "Soziales",
+        "Wissenschaft"
+      ],
+      "level": "expert",
+      "summaryShort": "Working Paper zur Idee eines Wirkungseinkommens als sozialer Sicherungs- und Rückkopplungslogik.",
+      "whatToExpect": "Eine konzeptionelle Einordnung, wie Einkommen, Automatisierung, soziale Sicherheit und positive Netto-Wirkung zusammengedacht werden können.",
+      "keyQuestions": [
+        "Wie verändert Automatisierung die Einkommensfrage?",
+        "Was unterscheidet Wirkungseinkommen von Arbeits- oder Grundeinkommen?",
+        "Welche Schutzlinien braucht ein solches Modell?"
+      ],
+      "topics": [
+        "Wirkungseinkommen",
+        "Soziale Sicherheit",
+        "Arbeit"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Positive Netto-Wirkung",
+        "Systemische Rückkopplung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025"
+      ],
+      "version": "v1.0",
+      "date": "2025",
+      "legalNotice": "Konzeptionelles Working Paper. Keine Rechts-, Steuer-, Sozial-, Förder-, Anlage- oder Rentenberatung und keine politische Programmatik.",
+      "internalNote": "Redaktionelle Prüfung und rechtlicher Disclaimer erforderlich.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungssteuerung",
+      "order": 316,
+      "contentHtmlPath": "content/documents/online/wp-einkommen.inc",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
+      "fileType": "pdf",
+      "fileSize": "2.7 MB",
+      "pageCount": 12,
+      "estimatedReadingTime": "20 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wp-wohnungsmarkt",
+      "slug": "wp-wohnungsmarkt",
+      "title": "Working-Paper Wohnungsmarkt",
+      "subtitle": "Historische T-SROI- und Wohnwirkungsdarstellung",
+      "fileName": "WP_Wohnungsmarkt.pdf",
+      "filePath": "public/downloads/originals/WP_Wohnungsmarkt.pdf",
+      "documentType": "working-paper",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Kommunen",
+        "Politik",
+        "Wohnen"
+      ],
+      "level": "expert",
+      "summaryShort": "Historisches Working Paper mit einer vereinfachten T-SROI-Darstellung. Für T-SROI-Berechnungen gilt der aktuelle Rechenstandard.",
+      "whatToExpect": "Die Wohnungsmarktanalyse bleibt als historische Quellenfassung lesbar; ihre T-SROI-Aussagen sind durch die kausale, diskontierte Netto-Nutzenrechnung eingeordnet.",
+      "keyQuestions": [
+        "Welche T-SROI-Annahmen sind historisch?",
+        "Wie lautet der aktuelle Rechenstandard?"
+      ],
+      "topics": [
+        "Wohnen",
+        "Boden",
+        "Wohnwirkung"
+      ],
+      "methods": [
+        "Wirkungssteuer",
+        "Scorecard",
+        "Reverse Merit Order"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie"
+      ],
+      "version": "v1.0",
+      "date": "2025",
+      "internalNote": "Quellen, Zahlen und Status prüfen.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 318,
+      "contentHtmlPath": "content/documents/online/wp-wohnungsmarkt.inc",
+      "successorUrl": "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+      "successorLabel": "Aktuellen T-SROI-Rechenstandard öffnen",
+      "legalNotice": "Working Paper. Keine Rechts-, Steuer-, Miet-, Immobilien-, Förder-, Anlage- oder Kommunalberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
+      "fileType": "pdf",
+      "fileSize": "6.7 MB",
+      "pageCount": 105,
+      "estimatedReadingTime": "179 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wenn-maschinen-arbeiten",
+      "slug": "wenn-maschinen-arbeiten",
+      "title": "Wenn Maschinen arbeiten",
+      "subtitle": "Historische Quellenfassung zu Automatisierung und Wirkungseinkommen",
+      "fileName": "Wenn-Maschinen-arbeiten.pdf",
+      "filePath": "public/downloads/originals/Wenn-Maschinen-arbeiten.pdf",
+      "documentType": "working-paper",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Politik",
+        "Wirtschaft",
+        "Wissenschaft"
+      ],
+      "level": "expert",
+      "summaryShort": "Historische Quellenfassung. Sie dokumentiert einen frühen Denkweg zu Automatisierung und sozialer Sicherung, enthält aber verworfene Vorschläge zur personenbezogenen Bewertung und zu automatischen individuellen Steuer- und Transferfolgen.",
+      "whatToExpect": "Die historische Argumentation bleibt nur als Entwicklungsspur lesbar. Der aktuelle Ansatz bewertet Wirkungen von Angeboten, Entscheidungen und Systemen – nicht Menschen – und trifft keine automatischen Individualentscheidungen.",
+      "keyQuestions": [
+        "Welche Annahmen dieser historischen Fassung sind verworfen?",
+        "Wie werden Automatisierung und soziale Sicherung heute ohne Personen-Scoring eingeordnet?",
+        "Wo liegt die aktuelle Einordnung zu Arbeit und Einkommen?"
+      ],
+      "topics": [
+        "Automatisierung",
+        "Arbeit & Einkommen",
+        "Historische Quellenfassung"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Systemanalyse",
+        "Schutzlinien"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "wp-einkommen"
+      ],
+      "version": "v1.0",
+      "date": "2025",
+      "internalNote": "",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 920,
+      "contentHtmlPath": "",
+      "suppressHistoricalText": true,
+      "successorUrl": "wirkungsfelder/arbeit-einkommen/",
+      "successorLabel": "Aktuelle Einordnung zu Arbeit & Einkommen öffnen",
+      "historicalNotice": "Diese Fassung enthält Passagen zu individuellen Wirkungswerten, Konten und automatischen Steuer-, Transfer- oder Leistungsfolgen. Diese Passagen sind verworfen: Die WÖk bewertet keine Personen, vergibt keine sozialen Punkte und trifft keine automatischen Entscheidungen über Menschen. Nichtkompensation und Reverse Merit Order begrenzen die Bewertung von Angeboten und Entscheidungen; sie rechtfertigen keine Personeneingriffe.",
+      "legalNotice": "Historische Quellenfassung. Nicht als Grundlage für Bewertungen von Personen, automatische Entscheidungen oder Steuer-, Transfer-, Leistungs- oder Zugangsentscheidungen verwenden. Keine Rechts-, Steuer-, Sozial-, Arbeitsmarkt-, Anlage- oder Unternehmensberatung.",
+      "editorialNote": "",
+      "fileType": "pdf",
+      "fileSize": "224 KB",
+      "pageCount": 70,
+      "estimatedReadingTime": "119 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nats-woek-allgemein",
+      "slug": "nats-woek-allgemein",
+      "title": "Von Kapital zu Wirkung",
+      "subtitle": "Vortragsfolien zur Grundidee der Wirkungsökonomie",
+      "fileName": "NATS_WOeK_allgemein.pdf",
+      "filePath": "public/downloads/originals/NATS_WOeK_allgemein.pdf",
+      "documentType": "vortrag",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Einstieg",
+        "Praxis",
+        "Veranstaltungen"
+      ],
+      "level": "intro",
+      "summaryShort": "Vortragsunterlage zur Verschiebung von Kapital als Maßstab hin zu Wirkung als Kompass.",
+      "whatToExpect": "Folienhafte Einführung in Grundbegriffe, Beispiele und Schutzlinien der Wirkungsökonomie.",
+      "keyQuestions": [
+        "Warum reicht Kapital als Maßstab nicht aus?",
+        "Was bedeutet Wirkung als Kompass?",
+        "Welche Missverständnisse muss die WÖk vermeiden?"
+      ],
+      "topics": [
+        "Einführung",
+        "Wirkung statt Kapital",
+        "Vortrag"
+      ],
+      "methods": [
+        "Wirkungslogik",
+        "Systembild",
+        "Schutzlinien"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "minifest-wirkungsoekonomie"
+      ],
+      "version": "v1.0",
+      "date": "2026-05",
+      "internalNote": "Nur veröffentlichen, wenn als Vortrag/Folienseite kuratiert und visuell geprüft.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Einstieg & Vorträge",
+      "order": 322,
+      "contentHtmlPath": "content/documents/online/nats-woek-allgemein.inc",
+      "legalNotice": "Vortragsunterlage. Keine Rechts-, Steuer-, Förder-, Anlage-, Unternehmens- oder Politikberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
+      "fileType": "pdf",
+      "fileSize": "9.2 MB",
+      "pageCount": 60,
+      "estimatedReadingTime": "102 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-master-items-register",
+      "slug": "woek-master-items-register",
+      "title": "WÖk-Masterregister v1.5",
+      "subtitle": "Führendes MasterItems-Register mit Zwei-Ebenen-, Quellen- und Prüfarchitektur",
+      "fileName": "WOeK_Masterregister_v1.5_2026-08-21.xlsx",
+      "filePath": "assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx",
+      "documentType": "datenregister",
+      "status": "führend",
+      "visibility": "expert_public",
+      "audience": [
+        "Methodik",
+        "Daten",
+        "Wissenschaft"
+      ],
+      "level": "expert",
+      "summaryShort": "Führendes Register mit 621 stabilen MasterItems, expliziter Trennung vom Wirkindikatorenregister sowie sichtbaren offenen Mapping- und Prüfstatus.",
+      "whatToExpect": "Ein technisches Register für Expert:innen: Wirkungsobjekt, StateVariable- und Indicator-Mappingstatus, Regeln, Quellenfunktion, Systemgrenzen, Datenqualität und Assurance.",
+      "keyQuestions": [
+        "Welche MasterItems und Prüfpfade sind aktuell geführt?",
+        "Welche Zuordnungen bleiben OPEN_REVIEW_REQUIRED?",
+        "Wie bleiben MasterItem, Indikator, Beobachtung und Wirkung getrennt?"
+      ],
+      "topics": [
+        "WÖk-ID",
+        "MasterItems",
+        "Wirkindikatorenregister",
+        "Staatliche Nachhaltigkeitsarchitektur"
+      ],
+      "methods": [
+        "MasterItem → StateVariable → Indicator → Observation",
+        "Datenqualität & Assurance"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg"
+      ],
+      "version": "v1.5",
+      "date": "2026-08-21",
+      "legalNotice": "Technisches Register. Keine amtliche Klassifikation, keine Rechts-, Steuer-, Förder-, Anlage- oder Unternehmensberatung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Register & Daten",
+      "order": 324,
+      "contentHtmlPath": "content/documents/online/woek-master-items-register.inc",
+      "editorialNote": "Führende Fassung v1.5, Stand 21. August 2026. Alle 621 IDs aus v1.4 bleiben unverändert. Offene Mappings, Kalibrierungen und Benchmarks bleiben offen; leere Eingaben bleiben unbewertet.",
+      "replaces": [
+        "woek-master-items-v1-2"
+      ],
+      "fileType": "xlsx",
+      "fileSize": "377 KB",
+      "pageCount": 221,
+      "estimatedReadingTime": "376 Min.",
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-master-items-register-v1-4",
+      "slug": "woek-master-items-register-v1-4",
+      "title": "WÖk-Masterregister v1.4 (historische Fassung)",
+      "subtitle": "Ersetzte technische Registerfassung vom 16. August 2026",
+      "fileName": "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+      "filePath": "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+      "documentType": "datenregister",
+      "status": "ersetzt",
+      "visibility": "expert_public",
+      "audience": [
+        "Methodik",
+        "Daten",
+        "Wissenschaft"
+      ],
+      "level": "technisch",
+      "summaryShort": "Historische v1.4-Fassung mit 621 WÖk-IDs; für aktuelle Anwendungen gilt v1.5.",
+      "whatToExpect": "Unveränderte historische Registerdatei zur Nachvollziehbarkeit des v1.4-Standes.",
+      "keyQuestions": [
+        "Wie sah das Register vor der expliziten Zwei-Ebenen-Architektur aus?"
+      ],
+      "topics": [
+        "WÖk-IDs",
+        "Register",
+        "Versionierung"
+      ],
+      "methods": [
+        "WÖk-IDs",
+        "Datenqualität & Assurance"
+      ],
+      "impactFields": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedDocuments": [
+        "woek-master-items-register"
+      ],
+      "version": "v1.4",
+      "date": "2026-08-16",
+      "legalNotice": "Historische Arbeits- und Governance-Fassung. Keine amtliche Klassifikation und keine automatische Entscheidung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 421,
+      "fileType": "xlsx",
+      "fileSize": "442 KB",
+      "pageCount": null,
+      "estimatedReadingTime": "technisches Register",
+      "replaces": [],
+      "replacedBy": "",
+      "editorialNote": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-master-items-xlsx",
+      "slug": "woek-master-items-xlsx",
+      "title": "WÖk Master Items final v1.2 XLSX",
+      "subtitle": "Interne technische Arbeits- und Datenfassung",
+      "fileName": "WOeK_Master_Items_final_v1.2.xlsx",
+      "filePath": "content/internal-documents/originals/WOeK_Master_Items_final_v1.2.xlsx",
+      "documentType": "datenregister",
+      "status": "intern",
+      "visibility": "internal",
+      "audience": [
+        "Intern",
+        "Methodik"
+      ],
+      "level": "technisch",
+      "summaryShort": "Interne technische Arbeits-/Datenfassung des WÖk-ID-Registers.",
+      "whatToExpect": "Interne Quelle für Datenimport und Methodik, nicht als öffentlicher Download.",
+      "keyQuestions": [
+        "Welche Rohdaten liegen intern zugrunde?"
+      ],
+      "topics": [
+        "WÖk-IDs",
+        "Datenregister"
+      ],
+      "methods": [
+        "WÖk-IDs"
+      ],
+      "impactFields": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedDocuments": [
+        "woek-master-items-register"
+      ],
+      "version": "v1.2",
+      "date": "2025",
+      "internalNote": "Nicht öffentlich bereitstellen.",
+      "downloadAllowed": false,
+      "previewAllowed": false,
+      "section": "Archiv",
+      "order": 905,
+      "fileType": "xlsx",
+      "fileSize": "283 KB",
+      "pageCount": null,
+      "estimatedReadingTime": "technisches Register",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "editorialNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend",
+      "slug": "woek-begriffsleitfaden-fuehrend",
+      "title": "WÖk-Begriffsleitfaden führend v1.7",
+      "subtitle": "Maßgebliche Sprachreferenz der Wirkungsökonomie",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
+      "contentHtmlPath": "content/documents/online/woek-begriffsleitfaden-fuehrend.inc",
+      "documentType": "redaktionsgrundlage",
+      "status": "führend",
+      "visibility": "public",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Führende Sprach- und Methodenreferenz v1.7: staatliche Prüfrahmen objektspezifisch einordnen, Wirkungsrelevanz statt Rechtsform anwenden und den WÖk-Zusatznutzen additiv bestimmen.",
+      "whatToExpect": "Ein verbindlicher Referenzrahmen für konsistente WÖk-Sprache mit DNS/GGO/GFA/eNAP, § 7 BHO/VV-BHO, anwendbaren Fachrahmen, Problem Review, Goal Review, Wirkpfad, Gegenfaktum, Attribution, Zwei-Ebenen-Registerarchitektur, Nichtkompensation und Reality Check.",
+      "keyQuestions": [
+        "Welcher staatliche Prüfrahmen gilt für welchen Gegenstand?",
+        "Was leisten DNS, GGO/GFA/eNAP und BHO/VV-BHO bereits?",
+        "Was ergänzt die WÖk spezifisch?",
+        "Wie werden MasterItem, Indikator, Beobachtung, Wirkung und Attribution getrennt?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Sprachregelwerk",
+        "DNS",
+        "GFA",
+        "eNAP",
+        "BHO",
+        "VV-BHO",
+        "Wirkungsrelevanz",
+        "Objektspezifische Prüfarchitektur",
+        "Problem Review",
+        "Goal Review",
+        "Masterregister",
+        "Wirkindikatorenregister",
+        "Reality Check"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "version": "v1.7",
+      "date": "2026-08-21",
+      "editorialNote": "Vollständige, geprüfte Version 1.7. Sie ergänzt v1.6 um Wirkungsrelevanz statt Rechtsform sowie § 7 BHO/VV-BHO und objektspezifische Prüfrahmen. Version 1.0 bis 1.6 bleiben zitierfähig erhalten.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "isLeadingReference": true,
+      "section": "Führende Referenzen",
+      "order": 430,
+      "fileType": "pdf",
+      "fileSize": "807 KB",
+      "pageCount": 52,
+      "estimatedReadingTime": "88 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-6",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-6",
+      "title": "WÖk-Begriffsleitfaden führend v1.6",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.6 mit der staatlichen Nachhaltigkeits- und Folgenprüfungsarchitektur sowie der Zwei-Ebenen-Registerlogik.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung. Für Wirkungsrelevanz, § 7 BHO/VV-BHO und die objektspezifische staatliche Prüfarchitektur gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.6?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "DNS",
+        "GFA",
+        "eNAP",
+        "Masterregister",
+        "Wirkindikatorenregister"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.6",
+      "date": "2026-08-21",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 434,
+      "fileType": "pdf",
+      "fileSize": "731 KB",
+      "pageCount": 47,
+      "estimatedReadingTime": "80 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-5",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-5",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.5 des Begriffsleitfadens mit der IOOI- und Wirkungsarchitektur-Präzisierung vom 15. August 2026.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung. Für den aktuellen Begriffsstand gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.5?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "IOOI",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.5",
+      "date": "2026-08-15",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 432,
+      "fileType": "pdf",
+      "fileSize": "663 KB",
+      "pageCount": 34,
+      "estimatedReadingTime": "58 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-4",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-4",
+      "title": "WÖk-Begriffsleitfaden führend v1.4",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.4 des Begriffsleitfadens; sie dokumentiert den vorherigen IOOI-Stand und bleibt für frühere Zitate unverändert erhalten.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.4?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "IOOI",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.4",
+      "date": "2026-08-14",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 433,
+      "fileType": "pdf",
+      "fileSize": "417 KB",
+      "pageCount": 28,
+      "estimatedReadingTime": "48 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-3",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-3",
+      "title": "WÖk-Begriffsleitfaden führend v1.3",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.3 des Begriffsleitfadens mit der damals führenden Resilienzsystematik.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.3?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "Wirkungsresilienz"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.3",
+      "date": "2026-07-30",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 435,
+      "fileType": "pdf",
+      "fileSize": "371 KB",
+      "pageCount": 25,
+      "estimatedReadingTime": "43 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-2",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-2",
+      "title": "WÖk-Begriffsleitfaden führend v1.2",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.2 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.2?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.2",
+      "date": "2026-07-30",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 436,
+      "fileType": "pdf",
+      "fileSize": "340 KB",
+      "pageCount": 23,
+      "estimatedReadingTime": "39 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-0",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-0",
+      "title": "WÖk-Begriffsleitfaden führend v1.0",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.0 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.0?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.0",
+      "date": "2026-05-21",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 431,
+      "fileType": "pdf",
+      "fileSize": "36 KB",
+      "pageCount": 15,
+      "estimatedReadingTime": "26 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "sexarbeit-als-soziale-infrastruktur",
+      "slug": "sexarbeit-als-soziale-infrastruktur",
+      "title": "Sexarbeit als soziale Infrastruktur",
+      "subtitle": "Grundlagen für eine funktionale und realitätsnahe Regulierung",
+      "fileName": "Sexarbeit-als-soziale-Infrastruktur.pdf",
+      "filePath": "public/downloads/originals/Sexarbeit-als-soziale-Infrastruktur.pdf",
+      "documentType": "konzeptpapier",
+      "status": "aktuell",
+      "visibility": "expert_public",
+      "audience": [
+        "Politik",
+        "Soziales",
+        "Wissenschaft"
+      ],
+      "level": "expert",
+      "summaryShort": "Konzeptpapier zur funktionalen Einordnung von Sexarbeit als soziale Infrastruktur und Regulierungsfrage.",
+      "whatToExpect": "Eine wirkungsökonomische Einordnung mit Fokus auf Schutz, Rechte, Realität, Risiken und institutionelle Rückkopplung.",
+      "keyQuestions": [
+        "Warum greift eine rein moralische Betrachtung zu kurz?",
+        "Welche Wirkungsrisiken entstehen durch Verdrängung?",
+        "Wie können Schutz, Rechte und Regulierung zusammen gedacht werden?"
+      ],
+      "topics": [
+        "Sexarbeit",
+        "Soziale Infrastruktur",
+        "Regulierung"
+      ],
+      "methods": [
+        "Wirkungsanalyse",
+        "Schutzarchitektur",
+        "SDG+"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "systemmodell-wirkungsoekonomie"
+      ],
+      "version": "Reviewfassung",
+      "date": "2026-06-01",
+      "legalNotice": "Konzeptpapier. Keine Rechts-, Sozial-, Gesundheits-, Sicherheits- oder Beratungsleistung und keine Bewertung einzelner Personen oder Gruppen.",
+      "editorialNote": "Aus der DOCX-Quelle als öffentliche PDF- und Onlinefassung erzeugt; das Word-Dokument bleibt nicht downloadbar.",
+      "internalNote": "Primäre interne Konzeptquelle für die Erweiterung des Glossarbegriffs Sexarbeit.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 326,
+      "contentHtmlPath": "content/documents/online/sexarbeit-als-soziale-infrastruktur.inc",
+      "fileType": "pdf",
+      "fileSize": "10 KB",
+      "pageCount": 4,
+      "estimatedReadingTime": "7 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "illusionmaschine-buerokratieabbau",
+      "slug": "illusionmaschine-buerokratieabbau",
+      "title": "IllusionMaschine Bürokratieabbau",
+      "subtitle": "Warum weniger Regeln nicht automatisch mehr Wirkung erzeugen",
+      "fileName": "IllusionMaschine-Buerokratieabbau.pdf",
+      "filePath": "public/downloads/originals/IllusionMaschine-Buerokratieabbau.pdf",
+      "documentType": "working-paper",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Politik",
+        "Verwaltung",
+        "Methodik"
+      ],
+      "level": "expert",
+      "summaryShort": "Working Paper zur Frage, wann Bürokratieabbau Wirkung schafft und wann er nur Schutz- und Rückkopplungsfunktionen abbaut.",
+      "whatToExpect": "Eine systemische Einordnung von Bürokratie, Regulierung, Reparaturaufwand und Wirkungsarchitektur.",
+      "keyQuestions": [
+        "Wann ist Bürokratie Reparaturfolge falscher Anreize?",
+        "Wann schützt Verwaltung reale Wirkungsgrenzen?",
+        "Wie unterscheidet man Vereinfachung von Schutzabbau?"
+      ],
+      "topics": [
+        "Bürokratie",
+        "Regulierung",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Systemanalyse",
+        "Wirkungsfolgenabschätzung",
+        "Rückkopplung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "wirkungsrat-konzept",
+        "systemmodell-wirkungsoekonomie"
+      ],
+      "version": "",
+      "date": "",
+      "internalNote": "Im Release-/Fachbibliotheksregister genannt, aber nicht als freigegebene öffentliche Datei gefunden.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Staat & Demokratie",
+      "order": 328,
+      "contentHtmlPath": "content/documents/online/illusionmaschine-buerokratieabbau.inc",
+      "legalNotice": "Working Paper. Keine Rechts-, Verwaltungs-, Steuer-, Förder-, Anlage- oder Politikberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
+      "fileType": "pdf",
+      "fileSize": "66 KB",
+      "pageCount": 5,
+      "estimatedReadingTime": "9 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wp-rente",
+      "slug": "wp-rente",
+      "title": "Working-Paper Rente",
+      "subtitle": "Historische Quellenfassung zu Rente und sozialer Sicherung",
+      "fileName": "WP_Rente.pdf",
+      "filePath": "public/downloads/originals/WP_Rente.pdf",
+      "documentType": "working-paper",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Politik",
+        "Soziales",
+        "Wissenschaft"
+      ],
+      "level": "expert",
+      "summaryShort": "Historische Quellenfassung zu Rente und sozialer Sicherung. Sie enthält verworfene Formeln, die individuelle Biografien und Wirkungsfaktoren zu automatischen Rentenfolgen verrechnen.",
+      "whatToExpect": "Die Fassung bleibt nur für die Entwicklungsgeschichte lesbar. Die aktuelle Einordnung schützt Grundsicherung, Gleichbehandlung, Datenschutz und Rechtsschutz; sie bewertet keine Menschen und automatisiert keine individuellen Rentenansprüche.",
+      "keyQuestions": [
+        "Welche individuellen Rentenformeln dieser Fassung sind verworfen?",
+        "Wie werden Automatisierung und Alterssicherung heute ohne Personen-Scoring eingeordnet?",
+        "Wo liegt die aktuelle Einordnung zu Rente und sozialer Sicherung?"
+      ],
+      "topics": [
+        "Rente",
+        "Soziale Sicherung",
+        "Historische Quellenfassung"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Systemanalyse",
+        "Schutzlinien"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "wp-einkommen",
+        "wstg-oktober-2025"
+      ],
+      "version": "",
+      "date": "",
+      "legalNotice": "Historische Quellenfassung. Nicht als Grundlage für Personenbewertungen, automatische Renten-, Steuer-, Transfer- oder Leistungsentscheidungen verwenden. Keine Rechts-, Steuer-, Renten-, Sozial-, Versicherungs-, Förder- oder Anlageberatung.",
+      "internalNote": "",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 916,
+      "contentHtmlPath": "",
+      "suppressHistoricalText": true,
+      "successorUrl": "wirkungsfelder/rente-soziale-sicherung/",
+      "successorLabel": "Aktuelle Einordnung zu Rente & sozialer Sicherung öffnen",
+      "historicalNotice": "Diese Fassung verrechnet individuelle Biografien, Wirkungsfaktoren und Rentenhöhen. Diese Logik ist verworfen: Die WÖk bewertet keine Personen, führt keine persönlichen Wirkungskonten und trifft keine automatischen Entscheidungen über individuelle Renten- oder Leistungsansprüche.",
+      "editorialNote": "",
+      "fileType": "pdf",
+      "fileSize": "2.6 MB",
+      "pageCount": 90,
+      "estimatedReadingTime": "153 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nachhaltigkeit-systemarchitektur",
+      "slug": "nachhaltigkeit-systemarchitektur",
+      "title": "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.",
+      "subtitle": "Warum Nachhaltigkeit im kapitalszentrierten Steuerungsmodell strukturell unterbestimmt bleibt",
+      "fileName": "Nachhaltigkeit-Systemarchitektur-v1.2.pdf",
+      "filePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.2.pdf",
+      "contentHtmlPath": "content/documents/online/nachhaltigkeit-systemarchitektur-v1.2.inc",
+      "documentType": "working-paper",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Methodik"
+      ],
+      "level": "expert",
+      "summaryShort": "Version 1.2 des Grundlagenpapiers: Nachhaltigkeit als langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.",
+      "whatToExpect": "Eine fachlich dichte Herleitung von Systemarchitektur und Systemresilienz mit Rückstell- und Regenerationsmechanismen, acht Analysebausteinen, Nichtkompensation und Regimeresilienz-Abgrenzung.",
+      "keyQuestions": [
+        "Warum bleibt Nachhaltigkeit im kapitalszentrierten Steuerungsmodell strukturell unterbestimmt?",
+        "Wie unterscheiden sich Systemarchitektur, Systemresilienz und langfristige Wirkungsresilienz?",
+        "Wie machen Rückstellungen, Regeneration, Lernen und Nicht-Externalisierung ein System nachhaltig?"
+      ],
+      "topics": [
+        "Nachhaltigkeit",
+        "Systemarchitektur",
+        "Systemresilienz",
+        "Wirkungsresilienz",
+        "Transformation"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Systemresilienz",
+        "SDGs & SDG+",
+        "Reverse Merit Order",
+        "Nichtkompensation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "systemmodell-wirkungsoekonomie",
+        "grundlagenpapier-wirkungsoekonomie",
+        "woek-begriffsleitfaden-fuehrend",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "version": "1.2 · 2026.1",
+      "date": "2026-07-30",
+      "legalNotice": "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+      "editorialNote": "Version 1.2 · 2026.1 präzisiert Nachhaltigkeit als langfristig gesicherte Wirkungsresilienz und trennt die acht Analysebausteine sauber. Die PDF-Versionen 1.0 und 1.1 bleiben unter ihren ursprünglichen Downloadpfaden als zitierfähige historische Fassungen erhalten.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Grundlagen & Leitbild",
+      "order": 206,
+      "fileType": "pdf",
+      "fileSize": "227 KB",
+      "pageCount": 20,
+      "estimatedReadingTime": "34 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nachhaltigkeit-systemarchitektur-v1-1",
+      "slug": "nachhaltigkeit-systemarchitektur-v1-1",
+      "title": "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur. v1.1",
+      "subtitle": "Zitierfähige Archivfassung der Resilienzpräzisierung",
+      "fileName": "Nachhaltigkeit-Systemarchitektur-v1.1.pdf",
+      "filePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.1.pdf",
+      "documentType": "working-paper",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Methodik"
+      ],
+      "level": "expert",
+      "summaryShort": "Archivierte Fassung v1.1 des Grundlagenpapiers; für frühere Zitate unverändert erhalten.",
+      "whatToExpect": "Die frühere, zitierfähige Resilienzpräzisierung. Für den aktuellen Begriffsstand gilt Version 1.2 · 2026.1.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.1?",
+        "Wo ist die aktuelle Fassung?"
+      ],
+      "topics": [
+        "Nachhaltigkeit",
+        "Systemarchitektur",
+        "Systemresilienz",
+        "Archiv"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Systemresilienz",
+        "Nichtkompensation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "nachhaltigkeit-systemarchitektur"
+      ],
+      "version": "1.1",
+      "date": "2026-07-30",
+      "replacedBy": "nachhaltigkeit-systemarchitektur",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.2 · 2026.1.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 207,
+      "fileType": "pdf",
+      "fileSize": "208 KB",
+      "pageCount": 18,
+      "estimatedReadingTime": "31 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "slug": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "title": "Nachhaltigkeit als Systemresilienz",
+      "subtitle": "Resilienzdefinition, Kugelmodell, Klima-Beispiel und mathematische Herleitung",
+      "fileName": "Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.pdf",
+      "filePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.pdf",
+      "contentHtmlPath": "content/documents/online/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1.1.inc",
+      "documentType": "grundlagenpapier",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Methodik",
+        "Akademie"
+      ],
+      "level": "expert",
+      "summaryShort": "Fachveröffentlichung zur langfristig gesicherten Wirkungsresilienz mit Kugel-Becken-Modell, Klimaformeln und MPD-Herleitung.",
+      "whatToExpect": "Eine nachvollziehbare Verbindung von allgemeiner Resilienzdefinition, Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung, Transformation, Klimasystem und Nichtkompensation im MPD-Referenzrahmen.",
+      "keyQuestions": [
+        "Wie unterscheiden sich Resilienz, Systemresilienz, Wirkungsresilienz und Nachhaltigkeit?",
+        "Was erklären die acht Analysebausteine?",
+        "Warum genügt Rückkehr in den alten Zustand nicht immer?"
+      ],
+      "topics": [
+        "Nachhaltigkeit",
+        "Resilienz",
+        "Systemresilienz",
+        "Wirkungsresilienz",
+        "Klima",
+        "Stabilitätslandschaft"
+      ],
+      "methods": [
+        "Systemresilienz",
+        "Wirkungsarchitektur",
+        "Nichtkompensation",
+        "SDGs & SDG+"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend",
+        "nachhaltigkeit-systemarchitektur",
+        "systemmodell-wirkungsoekonomie",
+        "grundlagenpapier-wirkungsoekonomie"
+      ],
+      "version": "1.1",
+      "date": "2026-07-30",
+      "legalNotice": "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+      "editorialNote": "Vollständige Fachfassung mit gesetzten Formeln und Abbildungen. Die frühere v1.0-PDF bleibt als erste Online-Ausgabe zitierfähig erhalten; v1.1 ist die führende Fassung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Grundlagen & Leitbild",
+      "order": 205,
+      "fileSize": "662 KB",
+      "pageCount": 13,
+      "estimatedReadingTime": "24 Min.",
+      "replaces": [
+        "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0"
+      ],
+      "fileType": "pdf",
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wirkungsbasiertes-value-pricing",
+      "slug": "wirkungsbasiertes-value-pricing",
+      "title": "Wirkungsbasiertes Value Pricing",
+      "subtitle": "Vom Stundenhonorar zur Vergütung nach erzeugtem Kundenwert und positiver Netto-Wirkung",
+      "author": "Natalie Weber",
+      "publicationLabel": "Dossier und fachliches Detailkonzept",
+      "fileName": "Wirkungsbasiertes_Value_Pricing_v1.2.pdf",
+      "filePath": "public/downloads/originals/Wirkungsbasiertes_Value_Pricing_v1.2.pdf",
+      "contentHtmlPath": "content/documents/online/wirkungsbasiertes-value-pricing-v1.2.inc",
+      "documentType": "dossier",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Unternehmen",
+        "Beratung",
+        "Einkauf",
+        "Controlling",
+        "Fachöffentlichkeit"
+      ],
+      "level": "expert",
+      "summaryShort": "Dossier v1.2 zur Vergütung nach zurechenbarem Kundenwert: Es verbindet Value-based Pricing mit einer getrennten Prüfung positiver Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "whatToExpect": "Ein fachliches Arbeitsmodell für Leistungen und Angebote: Kundenwert, Attribution, Wirkungsrisiken, Nichtkompensation, Wirkungsgrenzen, Erschwinglichkeit und faire Lastenverteilung werden getrennt ausgewiesen und in einen verantworteten Preis-Korridor überführt.",
+      "keyQuestions": [
+        "Wie wird der ökonomische Kundenwert einer Leistung von Aufwand und Umsatz unterschieden?",
+        "Wie werden Kundenwert und Netto-Wirkung getrennt geprüft, ohne sie zu einer Euro-Summe zu verrechnen?",
+        "Welche Rolle spielen Attribution, Datenqualität, Wirkungsgrenzen und faire Risikoteilung bei einem Preis-Korridor?"
+      ],
+      "topics": [
+        "Value-based Pricing",
+        "Kundenwert",
+        "Wirkungscontrolling",
+        "Scorecards",
+        "Nichtkompensation",
+        "Preis-Korridor"
+      ],
+      "methods": [
+        "Wirkungscontrolling",
+        "Wirkpfad",
+        "Wirkungszurechnung",
+        "Scorecards",
+        "T-SROI"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie",
+        "Ökonomie"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "whitepaper-t-sroi",
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.2 · Erstveröffentlichung 4. Mai 2026 · aktualisierte Fassung August 2026",
+      "date": "2026-05-04",
+      "legalNotice": "Fachliches Arbeitsmodell, kein allgemein anerkannter Norm-, Prüf- oder Vertragsstandard. Keine Rechts-, Steuer-, Finanz-, Preis-, Unternehmens- oder Vertragsberatung. Keine automatische Preisformel und keine Personenbewertung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "includeInFullKnowledgeLibrary": true,
+      "section": "Wirtschaft & Unternehmen",
+      "order": 125,
+      "fileType": "pdf",
+      "fileSize": "2.4 MB",
+      "pageCount": 69,
+      "estimatedReadingTime": "117 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "editorialNote": "",
+      "internalNote": ""
+    },
+    {
+      "id": "woek-partei",
+      "slug": "woek-partei",
+      "title": "WÖK-Partei",
+      "subtitle": "Politisches Programm, nicht Teil der neutralen Bibliothek",
+      "fileName": "WÖK-Partei.pdf",
+      "filePath": "content/internal-documents/originals/WÖK-Partei.pdf",
+      "documentType": "intern",
+      "status": "intern",
+      "visibility": "hidden",
+      "audience": [
+        "Intern"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Grundsatzprogramm einer Partei.",
+      "whatToExpect": "Nicht in der neutralen Bibliothek der Wirkungsökonomie anzeigen.",
+      "keyQuestions": [
+        "Nur separater politischer Kontext, falls gewollt."
+      ],
+      "topics": [
+        "Politischer Kontext"
+      ],
+      "methods": [],
+      "impactFields": [
+        "Staat & Demokratie"
+      ],
+      "relatedDocuments": [],
+      "version": "v1.0",
+      "date": "2026-05",
+      "internalNote": "Nicht in der neutralen Bibliothek anzeigen.",
+      "downloadAllowed": false,
+      "previewAllowed": false,
+      "section": "Archiv",
+      "order": 906,
+      "fileType": "pdf",
+      "fileSize": "4.6 MB",
+      "pageCount": 53,
+      "estimatedReadingTime": "90 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "editorialNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "faz-beitrag",
+      "slug": "faz-beitrag",
+      "title": "FAZ-Beitrag",
+      "subtitle": "Artikelentwurf Wirkung statt Kapital",
+      "fileName": "FAZ-Beitrag.docx",
+      "filePath": "content/internal-documents/originals/FAZ-Beitrag.docx",
+      "documentType": "essay",
+      "status": "intern",
+      "visibility": "internal",
+      "audience": [
+        "Intern",
+        "Redaktion"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Artikelentwurf „Wirkung statt Kapital“.",
+      "whatToExpect": "Interner Entwurf, nicht als DOCX-Download veröffentlichen.",
+      "keyQuestions": [
+        "Soll später ein öffentlicher Journalartikel entstehen?"
+      ],
+      "topics": [
+        "Debatte",
+        "Essay"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedDocuments": [
+        "woek-manifest"
+      ],
+      "version": "Entwurf",
+      "date": "2026-05",
+      "internalNote": "Bei Freigabe als Journalartikel in HTML oder PDF finalisieren.",
+      "downloadAllowed": false,
+      "previewAllowed": false,
+      "section": "Archiv",
+      "order": 907,
+      "fileType": "docx",
+      "fileSize": "",
+      "pageCount": null,
+      "estimatedReadingTime": "",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "editorialNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "folgencheck-wirkungspolitische-sprache",
+      "slug": "folgencheck-wirkungspolitische-sprache",
+      "title": "Folgencheck statt Faktencheck",
+      "subtitle": "Wirkungsökonomische Analyse politischer Sprache am Beispiel des AfD-Regierungsprogramms Sachsen-Anhalt",
+      "fileName": "arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf",
+      "filePath": "assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf",
+      "contentHtmlPath": "content/documents/online/folgencheck-wirkungspolitische-sprache.inc",
+      "documentType": "working-paper",
+      "status": "arbeitsfassung",
+      "visibility": "public",
+      "audience": [
+        "Journalismus",
+        "Politik",
+        "Bildung",
+        "Fachöffentlichkeit"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Arbeitspapier zum Folgencheck politischer Sprache: Es zeigt, warum Faktenprüfung durch eine vorsorgende Wirkungsprüfung von Frames, Narrativen und Resonanzräumen ergänzt werden muss.",
+      "whatToExpect": "Eine ausführliche Online- und PDF-Fassung mit Methode, Pilotkorpus, Frame-Analyse, Wirkungskarte, Gegenstrategien, Forschungsprogramm und Schutzlinien.",
+      "keyQuestions": [
+        "Warum reicht ein Faktencheck bei politischer Sprache nicht aus?",
+        "Welche Wirkungspotenziale öffnen Frames, Narrative und Feindbildkommunikation?",
+        "Wie kann demokratische Sprache wirken, ohne problematische Frames zu spiegeln?"
+      ],
+      "topics": [
+        "Folgencheck",
+        "Faktencheck",
+        "Politische Sprache",
+        "Frames",
+        "Narrative",
+        "AfD-Regierungsprogramm Sachsen-Anhalt",
+        "Medien & Demokratie",
+        "SDG+"
+      ],
+      "methods": [
+        "Folgencheck",
+        "Wirkungsanalyse",
+        "Resonanzraumanalyse",
+        "Wirkungspfad-Analyse"
+      ],
+      "impactFields": [
+        "Demokratie",
+        "Öffentlichkeit & Wissen",
+        "Mensch"
+      ],
+      "relatedDocuments": [
+        "faktencheck-folgencheck-v1-1",
+        "grundlagenpapier-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "version": "v0.1",
+      "date": "2026-06-01",
+      "isLeadingReference": true,
+      "legalNotice": "Keine Wahlempfehlung, kein Rechtsgutachten, keine psychologische Diagnose und keine Bewertung einzelner Wähler:innen, Parteimitglieder oder Personen.",
+      "editorialNote": "Arbeitsfassung; Wirkungspotenziale politischer Sprache werden modellhaft und vorsorgend geprüft.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Essays & Debatte",
+      "order": 805,
+      "fileType": "pdf",
+      "fileSize": "356 KB",
+      "pageCount": 21,
+      "estimatedReadingTime": "36 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "fuenf-wellen-oeffentlicher-wirkung",
+      "slug": "fuenf-wellen-oeffentlicher-wirkung",
+      "title": "Die fünf Wellen öffentlicher Wirkung",
+      "subtitle": "Das wirkungsökonomische Modell öffentlicher Kommunikation und Debattenführung",
+      "fileName": "woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+      "filePath": "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+      "contentHtmlPath": "content/documents/online/fuenf-wellen-oeffentlicher-wirkung.inc",
+      "documentType": "dossier",
+      "status": "arbeitsfassung",
+      "visibility": "public",
+      "audience": [
+        "Journalismus",
+        "Politik",
+        "Bildung",
+        "Fachöffentlichkeit"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Dossier zum Wellen-Tiefen-Modell öffentlicher Wirkung: Es erklärt, wie Aufmerksamkeit, Emotion, Deutung, Resonanz und Verschiebung öffentliche Debatten prägen.",
+      "whatToExpect": "Eine ausführliche Online- und PDF-Fassung mit Modelllogik, Debattenkarten, Resonanz-Kompass, Schutzlinien und redaktioneller Website-Architektur für den öffentlichen Wirkungsraum.",
+      "keyQuestions": [
+        "Warum greifen Faktenchecks oft zu spät, wenn Debatten bereits Wirkung entfaltet haben?",
+        "Wie entstehen aus Aufmerksamkeit, Emotion und Deutung gesellschaftliche Resonanzräume?",
+        "Wie kann demokratische Kommunikation Wirkung prüfen, ohne Menschen zu bewerten oder Frames unkritisch zu spiegeln?"
+      ],
+      "topics": [
+        "Öffentlicher Wirkungsraum",
+        "Wellen-Tiefen-Modell",
+        "Debattenkarten",
+        "Resonanz",
+        "Frames",
+        "Narrative",
+        "Folgencheck",
+        "Medien & Demokratie",
+        "SDG+"
+      ],
+      "methods": [
+        "Wellen-Tiefen-Modell",
+        "Wirkungsanalyse",
+        "Resonanzraumanalyse",
+        "Wirkungspfad-Analyse"
+      ],
+      "impactFields": [
+        "Demokratie",
+        "Öffentlichkeit & Wissen",
+        "Mensch"
+      ],
+      "relatedDocuments": [
+        "folgencheck-wirkungspolitische-sprache",
+        "grundlagenpapier-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie",
+        "systemmodell-wirkungsoekonomie"
+      ],
+      "version": "v0.1",
+      "date": "2026-06-08",
+      "legalNotice": "Keine Wahlempfehlung, kein Rechtsgutachten, keine psychologische Diagnose und keine Bewertung einzelner Personen, Wähler:innen oder Gruppen.",
+      "editorialNote": "Arbeitsfassung; Wirkungspotenziale öffentlicher Kommunikation werden modellhaft und vorsorgend geprüft.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Essays & Debatte",
+      "order": 806,
+      "fileType": "pdf",
+      "fileSize": "570 KB",
+      "pageCount": 64,
+      "estimatedReadingTime": "109 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "fuenf-wellen-wirkungsentfaltung",
+      "slug": "fuenf-wellen-wirkungsentfaltung",
+      "title": "Die fünf Wellen der Wirkungsentfaltung",
+      "subtitle": "Das Wellen-Tiefen-Modell als allgemeines wirkungsökonomisches Grundmuster",
+      "fileName": "woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
+      "filePath": "assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
+      "contentHtmlPath": "content/documents/online/fuenf-wellen-wirkungsentfaltung.inc",
+      "documentType": "dossier",
+      "status": "arbeitsfassung",
+      "visibility": "public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Strategie",
+        "Methodik"
+      ],
+      "level": "expert",
+      "summaryShort": "Dossier zur allgemeinen Wirkungsentfaltung: Es überträgt die Wellen-Tiefen-Logik von öffentlicher Kommunikation auf Produkte, Märkte, Kapital, Politik und Institutionen.",
+      "whatToExpect": "Eine ausführliche Online- und PDF-Fassung mit allgemeiner Modellarchitektur, Abgrenzung zum Wirkungsrad, Übertragungen auf Wirkungsräume und methodischen Schutzlinien.",
+      "keyQuestions": [
+        "Warum lässt sich die Wellen-Tiefen-Logik über öffentliche Kommunikation hinaus verallgemeinern?",
+        "Wie unterscheiden sich Sichtbarkeit, Betroffenheit, Bewertung, Resonanz und Struktur von klassischen Output-Logiken?",
+        "Wie hilft das Modell, Wirkungsräume zu lesen, bevor sie vollständig messbar sind?"
+      ],
+      "topics": [
+        "Wirkungsentfaltung",
+        "Wellen-Tiefen-Modell",
+        "Wirkungsräume",
+        "Wirkungsrad",
+        "Rückkopplung",
+        "Systemwirkung",
+        "Resilienz",
+        "Methodik"
+      ],
+      "methods": [
+        "Wellen-Tiefen-Modell",
+        "Wirkungsraumanalyse",
+        "Wirkungspfad-Analyse",
+        "Systemanalyse"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie",
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedDocuments": [
+        "fuenf-wellen-oeffentlicher-wirkung",
+        "grundlagenpapier-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie",
+        "systemmodell-wirkungsoekonomie"
+      ],
+      "version": "v0.1",
+      "date": "2026-06-08",
+      "legalNotice": "Keine amtliche Bewertungsmethode, keine automatische Entscheidung, keine Personenbewertung und keine Rechts-, Steuer-, Förder- oder Anlageberatung.",
+      "editorialNote": "Arbeitsfassung; allgemeines Grundmuster der Wirkungsökonomie zur fachlichen Weiterentwicklung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Methoden & Werkzeuge",
+      "order": 407,
+      "fileType": "pdf",
+      "fileSize": "487 KB",
+      "pageCount": 109,
+      "estimatedReadingTime": "185 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "klimawandel-finanzmarkt",
+      "slug": "klimawandel-finanzmarkt",
+      "title": "Klimawandel und der Finanzmarkt",
+      "subtitle": "Versicherbarkeit, Sustainable Finance, Stranded Assets und die stille Neubewertung von Vermögen",
+      "fileName": "woek_dossier_klimawandel_finanzmarkt_v1_0.pdf",
+      "filePath": "assets/downloads/woek_dossier_klimawandel_finanzmarkt_v1_0.pdf",
+      "contentHtmlPath": "content/documents/online/klimawandel-finanzmarkt.inc",
+      "documentType": "dossier",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Bürger:innen",
+        "Unternehmen",
+        "Investor:innen",
+        "Politik",
+        "Fachöffentlichkeit"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Dossier zur stillen Neubewertung von Klimarisiken im Finanzmarkt: Versicherbarkeit, Kreditwürdigkeit, Sustainable Finance, Stranded Assets und Wirkungskapital.",
+      "whatToExpect": "Eine umfassende Online- und PDF-Fassung mit verständlicher Einführung, Versicherungs- und Kreditlogik, Sustainable-Finance-Kontext, Stranded-Asset-Risiken, Checklisten, Glossar und Quellenapparat.",
+      "keyQuestions": [
+        "Wie wird aus Klimawandel ein Versicherungs-, Kredit- und Vermögensrisiko?",
+        "Warum ist Reichweite oder Reporting noch keine Wirkung, solange Rückkopplung fehlt?",
+        "Welche Schutzlinien helfen privaten Haushalten, Unternehmen, Kapital und Politik, Klimarisiken früher und gerechter zu bearbeiten?"
+      ],
+      "topics": [
+        "Klimawandel",
+        "Finanzmarkt",
+        "Versicherbarkeit",
+        "Kreditwürdigkeit",
+        "Sustainable Finance",
+        "Stranded Assets",
+        "Klimarisiko",
+        "Wirkungskapital",
+        "Positive Netto-Wirkung"
+      ],
+      "methods": [
+        "Wirkungsanalyse",
+        "Wirkungsrisiko",
+        "Wirkungspfad-Analyse",
+        "Wirkungsrückkopplung",
+        "Nichtkompensation"
+      ],
+      "impactFields": [
+        "Planet",
+        "Mensch",
+        "Demokratie",
+        "Finanzsystem & Kapital",
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedDocuments": [
+        "grundlagenpapier-wirkungsoekonomie",
+        "nachhaltigkeit-systemarchitektur",
+        "systemmodell-wirkungsoekonomie",
+        "fuenf-wellen-wirkungsentfaltung",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "version": "v1.0",
+      "date": "2026-06-29",
+      "legalNotice": "Keine Rechts-, Versicherungs-, Kredit-, Förder-, Steuer- oder Anlageberatung; keine Bewertung einzelner Anbieter, Produkte, Personen oder Portfolios; keine amtliche Bewertungsmethode.",
+      "editorialNote": "Umfassende Dossierfassung zum Zusammenhang von Klimawandel, Versicherbarkeit, Kapitalmärkten und wirkungsökonomischer Rückkopplung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 332,
+      "fileType": "pdf",
+      "fileSize": "572 KB",
+      "pageCount": 64,
+      "estimatedReadingTime": "109 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "die-neue-ordnung-des-wohlstands-2",
+      "slug": "die-neue-ordnung-des-wohlstands-2",
+      "title": "Die neue Ordnung des Wohlstands 2",
+      "subtitle": "Ältere Fassung des Standardwerks",
+      "fileName": "Die neue Ordnung des Wohlstands_2.pdf",
+      "filePath": "content/internal-documents/originals/Die neue Ordnung des Wohlstands_2.pdf",
+      "documentType": "standardwerk",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Fachöffentlichkeit"
+      ],
+      "level": "expert",
+      "summaryShort": "Ältere Fassung, ersetzt durch die Fassung 2026.",
+      "whatToExpect": "Archivhinweis, nicht Hauptbibliothek.",
+      "keyQuestions": [
+        "Welche ältere Fassung wurde ersetzt?"
+      ],
+      "topics": [
+        "Archiv",
+        "Standardwerk"
+      ],
+      "methods": [],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "version": "alt",
+      "date": "",
+      "replaces": [],
+      "replacedBy": "standardwerk-neue-ordnung-wohlstands-2026",
+      "legalNotice": "",
+      "editorialNote": "Nicht in Hauptbibliothek zeigen.",
+      "internalNote": "",
+      "downloadAllowed": false,
+      "previewAllowed": false,
+      "section": "Archiv",
+      "order": 950,
+      "fileType": "pdf",
+      "fileSize": "",
+      "pageCount": null,
+      "estimatedReadingTime": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "whitepaper20",
+      "slug": "whitepaper20",
+      "title": "Whitepaper20",
+      "subtitle": "Ältere oder ersetzte Leitbild-/Whitepaper-Fassung",
+      "fileName": "Whitepaper20.pdf",
+      "filePath": "content/internal-documents/originals/Whitepaper20.pdf",
+      "documentType": "whitepaper",
+      "status": "ersetzt",
+      "visibility": "archive",
+      "audience": [
+        "Fachöffentlichkeit"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Ältere Fassung, vermutlich durch aktuelles Leitbild ersetzt.",
+      "whatToExpect": "Archivhinweis, nicht Hauptbibliothek.",
+      "keyQuestions": [
+        "Welche ältere Fassung wurde ersetzt?"
+      ],
+      "topics": [
+        "Archiv",
+        "Leitbild"
+      ],
+      "methods": [],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "version": "alt",
+      "date": "",
+      "replaces": [],
+      "replacedBy": "leitbild-mensch-planet-demokratie",
+      "legalNotice": "",
+      "editorialNote": "Prüfen, ob durch aktuelles Leitbild ersetzt.",
+      "internalNote": "",
+      "downloadAllowed": false,
+      "previewAllowed": false,
+      "section": "Archiv",
+      "order": 951,
+      "fileType": "pdf",
+      "fileSize": "",
+      "pageCount": null,
+      "estimatedReadingTime": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    }
+  ]
+}
