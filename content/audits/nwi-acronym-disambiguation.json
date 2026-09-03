@@ -4,7 +4,7 @@
   "established_public_meaning": "Nationaler Wohlfahrtsindex (NWI)",
   "woek_model_public_name": "WÖk-Netto-Wirkungsindex",
   "official_source": "https://www.umweltbundesamt.de/daten/umweltindikatoren/indikator-nationaler-wohlfahrtsindex",
-  "route_count": 1041,
+  "route_count": 1042,
   "failure_count": 0,
   "gate": "PASS",
   "records": [
@@ -6142,6 +6142,15 @@
       "public_url": "/modell.html",
       "historical_publication": false,
       "classification": "WOEK_NETTO_WIRKUNGS_INDEX_NAMESPACED",
+      "official_nwi_occurrences": 0,
+      "unqualified_nwi_occurrences": 0,
+      "status": "PASS"
+    },
+    {
+      "source_path": "news/index.html",
+      "public_url": "/news/",
+      "historical_publication": false,
+      "classification": "NATIONALER_WOHLFAHRTSINDEX",
       "official_nwi_occurrences": 0,
       "unqualified_nwi_occurrences": 0,
       "status": "PASS"
