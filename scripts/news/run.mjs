@@ -14,12 +14,13 @@ import {
   scheduledSlot,
   sha256,
   slugify,
+  storySimilarity,
   validateAnalysis,
 } from "./lib.mjs";
 import { buildNewsSite } from "./build.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const RELEVANCE_FILTER_VERSION = "3.1";
+const RELEVANCE_FILTER_VERSION = "3.2";
 const RELEVANCE_BACKFILL_DAYS = 7;
 const MAX_QUALITY_RETRIES = 3;
 const RETRYABLE_QUALITY_ERRORS = [
@@ -110,6 +111,35 @@ function mergeSources(existing = [], incoming = []) {
 
 function storyContentHash(story) {
   return sha256(story.sources.map((source) => `${source.url}:${source.content_hash}`).sort().join("\n"));
+}
+
+function storyComparisonText(story) {
+  return [
+    story.title,
+    story.analysis?.summary,
+    ...(story.sources || []).flatMap((source) => [source.title, source.summary]),
+  ].filter(Boolean).join(" ");
+}
+
+function attachRelatedTickerHistory(candidates, stories) {
+  const publishedHistory = (stories || [])
+    .filter((story) => story.published && story.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE");
+  return candidates.map((candidate) => {
+    const candidateText = storyComparisonText(candidate);
+    const relatedTickerHistory = publishedHistory
+      .filter((story) => story.story_id !== candidate.story_id)
+      .map((story) => ({ story, similarity: storySimilarity(candidateText, storyComparisonText(story)) }))
+      .filter(({ similarity }) => similarity >= 0.1)
+      .sort((a, b) => b.similarity - a.similarity)
+      .slice(0, 5)
+      .map(({ story }) => ({
+        story_id: story.story_id,
+        title: story.title,
+        summary: story.analysis?.summary || "",
+        source_urls: (story.sources || []).map((source) => source.url).slice(0, 3),
+      }));
+    return { ...candidate, related_ticker_history: relatedTickerHistory };
+  });
 }
 
 function createCandidate(cluster, now, reassessment = false) {
@@ -464,7 +494,7 @@ export async function runWirkungsticker(options = {}) {
       candidate.content_hash = story.pending_update?.content_hash || storyContentHash(candidate);
       return candidate;
     });
-  const clusters = [...freshCandidates, ...retryCandidates];
+  const clusters = attachRelatedTickerHistory([...freshCandidates, ...retryCandidates], storyStore.stories);
   report.story_clusters = freshCandidates.length;
   report.pending_stories_retried = retryCandidates.length;
   const month = now.slice(0, 7);
