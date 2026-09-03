@@ -23,6 +23,13 @@ test("release notifier is gated by a public change and uses an idempotent public
   assert.match(notifier, /WOEK_NEWS_PUSH_ADMIN_TOKEN/);
 });
 
+test("ticker push job runs after a successful deploy despite skipped release-assets", () => {
+  const workflow = fs.readFileSync(".github/workflows/deploy.yml", "utf8");
+  const notificationJob = workflow.split("  notify-ticker:")[1];
+  assert.ok(notificationJob);
+  assert.match(notificationJob, /if: always\(\) && needs\.build\.outputs\.ticker_only == 'true' && needs\.deploy\.result == 'success'/);
+});
+
 function workerHarness({ offline = false } = {}) {
   let state = { enabled: true, lastKnown: "2026-09-03T18:00:00.000Z", unreadCount: 0 };
   const handlers = new Map();

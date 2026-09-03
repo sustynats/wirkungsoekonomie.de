@@ -400,7 +400,8 @@ export async function runWirkungsticker(options = {}) {
   if (!Number.isFinite(nowDate.getTime())) throw new Error("INVALID_RUN_TIME");
   const now = nowDate.toISOString();
   const runSchedule = scheduledSlot(nowDate);
-  const isAutomatedRun = process.env.GITHUB_EVENT_NAME === "schedule";
+  const isAutomatedRun = process.env.GITHUB_EVENT_NAME === "schedule"
+    || (process.env.GITHUB_EVENT_NAME === "push" && process.env.GITHUB_REF === "refs/heads/codex/wirkungsticker-clock");
   const registry = readJson(files.registry);
   const state = readJson(files.state);
   const storyStore = readJson(files.stories);

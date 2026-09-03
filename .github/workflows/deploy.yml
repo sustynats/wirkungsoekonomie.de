@@ -160,7 +160,7 @@ jobs:
 
   notify-ticker:
     needs: [build, deploy]
-    if: needs.build.outputs.ticker_only == 'true' && needs.deploy.result == 'success'
+    if: always() && needs.build.outputs.ticker_only == 'true' && needs.deploy.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout committed ticker
