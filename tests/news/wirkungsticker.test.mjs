@@ -461,6 +461,24 @@ test("Verspätete GitHub-Zeitpläne werden nicht mehr übersprungen", () => {
   assert.equal(JSON.parse(result.stdout).should_run, "true");
 });
 
+test("Oracle-Clock-Push startet auch nachts; andere Pushes erzwingen keinen Lauf", () => {
+  const script = fileURLToPath(new URL("../../scripts/news/schedule.mjs", import.meta.url));
+  for (const [ref, expected] of [
+    ["refs/heads/codex/wirkungsticker-clock", "true"],
+    ["refs/heads/main", "false"],
+    ["refs/heads/codex/wirkungsticker-clock-other", "false"],
+  ]) {
+    const result = spawnSync(process.execPath, [script], {
+      encoding: "utf8",
+      env: { ...process.env, GITHUB_EVENT_NAME: "push", GITHUB_REF: ref, WOEK_NEWS_NOW: "2026-09-03T23:19:00Z", GITHUB_OUTPUT: "" },
+    });
+    assert.equal(result.status, 0);
+    const output = JSON.parse(result.stdout);
+    assert.equal(output.should_run, expected, ref);
+    if (expected === "true") assert.match(output.slot, /Automatischer Lauf/);
+  }
+});
+
 test("Technische Qualitätsfehler werden begrenzt erneut versucht, fachliche Ablehnungen nicht", () => {
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 0), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_UNSUPPORTED_NUMBER:17"], 2), true);
