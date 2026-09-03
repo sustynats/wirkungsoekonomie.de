@@ -5,6 +5,10 @@ if (report.public_changed !== true) {
   console.log("No public ticker change; push skipped.");
   process.exit(0);
 }
+if (![report.published_stories, report.updated_stories, report.reactivated_stories].some((count) => Number(count) > 0)) {
+  console.log("Only archival changes; no new-news push.");
+  process.exit(0);
+}
 
 const feed = JSON.parse(fs.readFileSync("wirkungsticker/feed.json", "utf8"));
 const item = Array.isArray(feed.items) ? feed.items[0] : undefined;
@@ -27,6 +31,7 @@ for (let attempt = 1; attempt <= 3; attempt += 1) {
   try {
     const response = await fetch(apiUrl, {
       method: "POST",
+      signal: AbortSignal.timeout(60_000),
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import fs from "node:fs";
 import {
   assertSafeFeedUrl,
   budgetStage,
@@ -138,6 +139,15 @@ test("Nur veröffentlichte und verifizierte WÖk-Parlamentsbewertungen werden ü
   const updated = parseWoekPublicAssessments(raw.replaceAll("2026-09-03", "2026-09-04"), parliamentSource)[0];
   assert.equal(updated.item_id, assessment.item_id);
   assert.notEqual(updated.content_hash, assessment.content_hash);
+});
+
+test("BMAS-Feed darf seine offizielle Artikeldomain lesen, aber keine fremde Domain", async () => {
+  const registry = JSON.parse(fs.readFileSync(new URL("../../content/news/source-registry.json", import.meta.url), "utf8"));
+  const bmas = registry.sources.find((entry) => entry.source_id === "bmas-aktuell");
+  const fetchImpl = async () => new Response(`<main>${"Offizieller Inhalt des Bundesministeriums. ".repeat(5)}</main>`, { headers: { "content-type": "text/html" } });
+  const result = await fetchArticleExcerpt({ url: "https://www.bmas.de/DE/Service/Presse/Meldungen/test.html" }, bmas, { resolve_dns: false }, fetchImpl);
+  assert.ok(result.excerpt.length >= 120);
+  await assert.rejects(fetchArticleExcerpt({ url: "https://untrusted.example/article" }, bmas, { resolve_dns: false }, fetchImpl), /HOST_NOT_ALLOWED/);
 });
 
 test("Deduplizierung, Ähnlichkeit und Story-Cluster sind deterministisch", () => {
