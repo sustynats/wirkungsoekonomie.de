@@ -1,7 +1,101 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-03T23:06:06.352Z",
+  "updated_at": "2026-09-03T23:36:29.513Z",
   "stories": [
+    {
+      "story_id": "wt-edd4484465895b46",
+      "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
+      "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
+      "source_summary": "France 24 berichtet über einen nepalesischen Arbeiter, der seine Flucht aus einem Tunnel eines Wasserkraftprojekts nach der schweren Flut schildert. Der Bericht nennt zugleich, dass in Tunneln von sechs Wasserkraftwerken in Nepal rund 900 Arbeiter feststecken sollen.\n\nAußerdem heißt es, die Zahl der Vermissten in der Himalaya-Katastrophe sei am Donnerstag auf 5,624 gestiegen; dies werde nepalesischen und chinesischen Behörden zugeschrieben. Weitere unabhängige Bestätigungen oder ein genauer Rettungsstand werden in der Quelle nicht genannt.",
+      "summary": "France 24 schildert die Flucht eines Arbeiters aus einem gefluteten Tunnel und nennt zugleich rund 900 Eingeschlossene an sechs Wasserkraftwerken. Die Zahl der Vermissten wird mit 5,624 angegeben.",
+      "detail_summary": "Gesichert aus der vorliegenden Quelle ist vor allem der Bericht über einen Arbeiter, der aus einem von der Flut getroffenen Tunnel entkommen sein soll, sowie die Angabe, dass an sechs Wasserkraftwerken rund 900 Menschen in Tunneln feststecken. Hinzu kommt die Meldung, die Zahl der Vermissten in der Himalaya-Katastrophe sei auf 5,624 gestiegen. Das ist für Menschenschutz und Krisenlage materiell relevant, weil es um unmittelbar gefährdete Beschäftigte, laufende Rettung und mögliche Folgeschäden in einer kritischen Infrastruktur geht. Der Wirkpfad reicht von der Flut über die Unterbrechung des Zugangs zu den Tunneln bis zu Rettungs- und Bergungsmaßnahmen. Mögliche Folgen sind weitere Rettungen, Verzögerungen im Betrieb und zusätzliche Belastungen für lokale Notfallstrukturen. Die Evidenz bleibt jedoch begrenzt, weil nur eine journalistische Quelle vorliegt und keine unabhängige Bestätigung im Datensatz enthalten ist.",
+      "why_relevant": "Der Vorgang betrifft potenziell hunderte Beschäftigte in einer akuten Gefahrenlage und damit unmittelbar Schutz, Rettung und Infrastrukturstabilität.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Es geht um unmittelbar gefährdete Arbeiter, mögliche Rettungseinsätze und den Schutz vor weiteren Schäden."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Bericht betrifft eine Flutkatastrophe und Wasserkraft-Infrastruktur, aber keine belastbaren Umweltfolgen über das Ereignis hinaus."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Keine direkte demokratische oder institutionelle Entscheidungsänderung ist aus der Quelle ersichtlich."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Eingeschlossene Arbeiter",
+            "value": "900",
+            "unit": "Personen",
+            "context": "In Tunneln von sechs Wasserkraftwerken sollen sie feststecken."
+          },
+          {
+            "label": "Vermisste",
+            "value": "5,624",
+            "unit": "Personen",
+            "context": "So wird die Zahl der Vermissten am Donnerstag angegeben."
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "unternehmen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "gemischt",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T17:22:20.000Z",
+      "last_updated": "2026-09-03T23:37:36.842Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-4d4eabf7fc99346b711e",
+      "source_published_at": "2026-09-03T17:22:20.000Z",
+      "published_at": "2026-09-03T23:37:36.842Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Bleibt die Zahl der eingeschlossenen Arbeiter bei den betroffenen Anlagen bei rund 900 oder ändert sie sich durch Rettungen?",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Aktualisierte Angaben zu geretteten, eingeschlossenen oder vermissten Arbeitern",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ec940d1e5c0ccd65",
+          "announced_at": "2026-09-03T17:22:20.000Z",
+          "follow_up_date": "2026-09-10T23:37:36.842Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T17:22:20.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e01001c00cf12041",
       "slug": "federal-judge-blocks-trump-s-new-bid-to-abolish-birthright-citizenship-citing-supreme-co-f12041",
