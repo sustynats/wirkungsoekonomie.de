@@ -4,11 +4,13 @@
   "policy": {
     "user_agent": "WOek-Wirkungsticker/2.0 (+https://wirkungsoekonomie.de/wirkungsticker/)",
     "max_feed_bytes": 1500000,
+    "max_article_bytes": 2000000,
+    "max_article_excerpt_chars": 7000,
     "request_timeout_ms": 18000,
     "max_redirects": 3,
     "max_items_per_source": 24,
     "bootstrap_lookback_hours": 36,
-    "copying_rule": "Nur Feed-Metadaten und kurze Abstracts als Analysegrundlage verwenden. Keine Volltexte spiegeln; öffentlich eigene Kurzfassungen und Original-Links ausgeben."
+    "copying_rule": "Nur vorgefilterte Primärquellen kontrolliert und begrenzt als Analysegrundlage abrufen. Keine Volltexte speichern oder spiegeln; öffentlich ausschließlich eigene Kurzfassungen und Original-Links ausgeben."
   },
   "sources": [
     {

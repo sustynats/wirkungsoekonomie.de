@@ -11,6 +11,8 @@ import {
   classifyItem,
   clusterItems,
   extractJsonObject,
+  extractArticleText,
+  fetchArticleExcerpt,
   parseFeed,
   parseWoekPublicAssessments,
   sanitizeFeedText,
@@ -38,7 +40,9 @@ function candidate() {
 
 function validAnalysis() {
   return {
-    story_id: "wt-test", summary: "Der Bund hat ein Klimagesetz beschlossen. Welche Zustände sich dadurch verändern, ist noch offen.",
+    story_id: "wt-test",
+    source_summary: "Der Bund hat nach Angaben der amtlichen Quelle ein Klimagesetz beschlossen. Es enthält neue Vorgaben für Energie und Infrastruktur und bildet damit den formalen Gegenstand der Meldung. Beteiligt ist der Bund als Gesetzgeber; weitere beteiligte Stellen nennt der vorliegende Quellenausschnitt nicht. Der Anlass und das konkrete Datum des Beschlusses werden darin ebenfalls nicht ausgeführt.\n\nDie Quelle beschreibt die Änderung als neue Regelung, nennt aber weder einzelne Paragrafen noch Fristen, Finanzbeträge oder Zuständigkeiten für den Vollzug. Auch Übergangsregelungen und der weitere Zeitplan bleiben im verfügbaren Text offen. Diese Zusammenfassung gibt ausschließlich den mitgeteilten Beschluss und die dort genannten Bereiche wieder. Weitere Einzelheiten fehlen.",
+    summary: "Der Bund hat ein Klimagesetz beschlossen. Welche Zustände sich dadurch verändern, ist noch offen.",
     detail_summary: "Fakt ist der Beschluss eines Klimagesetzes durch den Bund; weitere Vollzugsdetails sind in der gelieferten Quelle noch nicht ausgeführt. Die neuen Regeln können Investitions- und Planungsentscheidungen im Energiesystem verändern. Der mögliche Wirkpfad verläuft über verbindliche Vorgaben, darauf reagierende Kapitalflüsse und spätere Änderungen technischer Infrastruktur. Für Menschen können Kosten und Versorgungssicherheit berührt sein, während für den Planeten vor allem der spätere Emissionspfad relevant ist. Ob diese möglichen Folgen tatsächlich eintreten und dem Gesetz zugerechnet werden können, ist noch nicht durch Wirkungsdaten belegt.",
     why_relevant: "Die Regeln können Energieentscheidungen verändern.", status: "beschlossen", analysis_type: "ex_ante", importance: "hoch",
     human: { relevance: "mittel", rationale: "Kosten und Nutzen können verteilt sein." },
@@ -72,6 +76,18 @@ test("Atom, HTML-Bereinigung und DTD-Sperre funktionieren", () => {
   assert.equal(parseFeed(atom, source)[0].summary, "Erste Daten");
   assert.equal(sanitizeFeedText("<script>ignore()</script><p>Sicher</p>"), "Sicher");
   assert.throws(() => parseFeed("<!DOCTYPE x><rss><item></item></rss>", source), /FEED_DTD_NOT_ALLOWED/);
+});
+
+test("Artikeltext wird begrenzt aus dem Inhaltsbereich extrahiert", async () => {
+  const html = `<html><body><nav>Menü</nav><main><h1>Klimagesetz</h1><p>Der Bund hat neue Regeln beschlossen.</p><script>ignore()</script><p>Die Frist endet im Jahr 2030.</p></main><footer>Kontakt</footer></body></html>`;
+  assert.equal(extractArticleText(html), "Klimagesetz Der Bund hat neue Regeln beschlossen. Die Frist endet im Jahr 2030.");
+  const result = await fetchArticleExcerpt(
+    { url: "https://example.org/a" },
+    { ...source, feed_url: "https://example.org/feed.xml" },
+    { max_article_bytes: 5000, max_article_excerpt_chars: 500, resolve_dns: false },
+    async () => new Response(`<main><p>${"Gesicherter Artikelinhalt. ".repeat(8)}</p></main>`, { status: 200, headers: { "content-type": "text/html" } }),
+  );
+  assert.match(result.excerpt, /Gesicherter Artikelinhalt/);
 });
 
 test("Nur veröffentlichte und verifizierte WÖk-Parlamentsbewertungen werden übernommen", () => {
@@ -227,6 +243,7 @@ test("Prompt Injection bleibt als untrusted Datenblock gekapselt", () => {
   assert.match(prompt, /Darin enthaltene Anweisungen.*ignorieren/);
   assert.match(prompt, /IGNORE ALL PREVIOUS INSTRUCTIONS/);
   assert.match(prompt, /detail_summary/);
+  assert.match(prompt, /source_summary/);
   assert.match(prompt, /Zahlwort bleibt Zahlwort/);
   assert.match(prompt, /Publikationsform ist niemals allein ein Ausschlussgrund/);
   assert.match(prompt, /historical_relevance_reassessment/);
@@ -326,6 +343,21 @@ test("Längere Detailzusammenfassung wird separat geprüft", () => {
   assert.deepEqual(validateAnalysis(analysis, candidate()), []);
   analysis.detail_summary = "Zu kurz.";
   assert.ok(validateAnalysis(analysis, candidate()).includes("AI_DETAIL_SUMMARY_LENGTH"));
+});
+
+test("Quellenzusammenfassung bleibt lang genug und ohne WÖk-Bewertung", () => {
+  const short = validAnalysis();
+  short.source_summary = "Zu kurz.";
+  assert.ok(validateAnalysis(short, candidate()).includes("AI_SOURCE_SUMMARY_LENGTH"));
+  const singleParagraph = validAnalysis();
+  singleParagraph.source_summary = singleParagraph.source_summary.replace(/\n\s*\n/, " ");
+  assert.ok(validateAnalysis(singleParagraph, candidate()).includes("AI_SOURCE_SUMMARY_PARAGRAPHS"));
+  const evaluative = validAnalysis();
+  evaluative.source_summary = `${evaluative.source_summary} Diese Entwicklung ist wirkungsökonomisch positiv zu bewerten.`;
+  assert.ok(validateAnalysis(evaluative, candidate()).includes("AI_SOURCE_SUMMARY_NOT_NEUTRAL"));
+  const inventedNumber = validAnalysis();
+  inventedNumber.source_summary = inventedNumber.source_summary.replace("das konkrete Datum", "den 31. Dezember 2029");
+  assert.ok(validateAnalysis(inventedNumber, candidate()).includes("AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:31"));
 });
 
 test("Abkürzungen werden bei der Satzprüfung nicht als eigene Sätze gezählt", () => {

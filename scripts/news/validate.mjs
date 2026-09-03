@@ -25,8 +25,12 @@ if (!Array.isArray(store.stories) || !Array.isArray(usage.runs)) fail("DATA_SCHE
 
 for (const story of store.stories) {
   if (!story.story_id || !story.slug || !Array.isArray(story.sources) || !Array.isArray(story.claims)) fail(`STORY_SCHEMA_INVALID:${story.story_id || "unknown"}`);
+  if (story.sources.some((source) => Object.hasOwn(source, "article_excerpt"))) fail(`TRANSIENT_ARTICLE_TEXT_PERSISTED:${story.story_id}`);
   if (story.published && story.listed !== false) {
-    const errors = validateAnalysis(story.analysis, story);
+    const sourceSummaryWords = String(story.source_summary || "").trim().split(/\s+/).filter(Boolean).length;
+    const sourceSummaryParagraphs = String(story.source_summary || "").trim().split(/\n\s*\n/).filter((paragraph) => paragraph.trim()).length;
+    if (sourceSummaryWords < 100 || sourceSummaryWords > 180 || sourceSummaryParagraphs < 2 || sourceSummaryParagraphs > 3) fail(`STORY_SOURCE_SUMMARY_INVALID:${story.story_id}:${sourceSummaryWords}:${sourceSummaryParagraphs}`);
+    const errors = validateAnalysis({ source_summary: story.source_summary, ...story.analysis }, story, { validateSourceSummaryNumbers: false });
     if (errors.length) fail(`PUBLISHED_STORY_QUALITY_INVALID:${story.story_id}:${errors.join(",")}`);
     if (!fs.existsSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"))) fail(`STORY_PAGE_MISSING:${story.slug}`);
   }
@@ -49,6 +53,11 @@ for (const story of store.stories.filter((item) => item.published && item.listed
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
   const shareUrl = `https://wirkungsoekonomie.de/wirkungsticker/${story.slug}/`;
   if (!detail.includes("data-news-share-button") || !detail.includes(`data-share-url="${shareUrl}"`) || !detail.includes("assets/js/news-share.js")) fail(`NEWS_SHARE_UI_INVALID:${story.story_id}`);
+  const sourceSummaryAt = detail.indexOf("data-news-source-summary");
+  const factCheckAt = detail.indexOf("news-fact-check");
+  const analysisAt = detail.indexOf("news-story-summary");
+  const consequenceAt = detail.indexOf("news-consequence-check");
+  if (sourceSummaryAt < 0 || !detail.includes("Worum geht es?") || !detail.includes("Originalquelle ansehen") || !(sourceSummaryAt < factCheckAt && factCheckAt < analysisAt && analysisAt < consequenceAt)) fail(`NEWS_SOURCE_ANALYSIS_ORDER_INVALID:${story.story_id}`);
   const renderedSummary = detail.match(/news-story-summary[\s\S]*?<p class="news-analysis-copy">([\s\S]*?)<\/p>/)?.[1]
     ?.replace(/<[^>]*>/g, " ")
     .replace(/&(?:#\d+|#x[\da-f]+|\w+);/gi, " ")

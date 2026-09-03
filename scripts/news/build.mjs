@@ -97,6 +97,15 @@ function prose(items, fallback = "Offen – die Quellenlage reicht für eine bel
   }).map(escapeHtml).join(" ");
 }
 
+function sourceSummaryParagraphs(value) {
+  return String(value || "")
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+    .join("");
+}
+
 function sentenceFragment(value, fallback, maxLength = 96) {
   const text = String(value || fallback || "").trim().replace(/[.!?]+$/, "");
   if (text.length <= maxLength) return text;
@@ -146,6 +155,7 @@ function card(story, index) {
   const high = ["hoch", "sehr hoch"].includes(story.analysis.importance);
   const searchText = [
     story.title,
+    story.source_summary,
     story.analysis.summary,
     story.analysis.why_relevant,
     "Faktencheck",
@@ -208,7 +218,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260903-3">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260903-4">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -266,19 +276,24 @@ function storyPage(story) {
   const shareUrl = `${SITE}/wirkungsticker/${story.slug}/`;
   const shareText = `Wirkungsticker: ${a.summary}`;
   const detailSummary = expandedDetailSummary(a);
-  const factStatement = String(detailSummary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
+  const factStatement = String(story.source_summary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
   const truthOpening = /^(fakt|gesichert|belegt)\b/i.test(factStatement)
     ? factStatement
     : `Gesichert ist: ${factStatement}`;
   const primarySourceCount = story.sources.filter((source) => source.primary_source).length;
   const primarySourceNames = [...new Set(story.sources.filter((source) => source.primary_source).map((source) => source.publisher))].join(", ");
   const sources = story.sources.map((source) => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><div class="news-source-meta"><span>${source.primary_source ? "Primärquelle" : "ergänzende Quelle"}</span><span>${escapeHtml(formatDate(source.published_at, { dateOnly: true }))}</span></div></li>`).join("");
+  const originalSources = [...story.sources]
+    .filter((source) => source.primary_source)
+    .sort((left, right) => Date.parse(right.published_at || 0) - Date.parse(left.published_at || 0));
+  const sourceSummaryLinks = originalSources.map((source, index) => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${index === 0 ? "Originalquelle ansehen" : `Weitere Originalquelle bei ${escapeHtml(source.publisher)}`} <span aria-hidden="true">→</span></a>`).join("");
   const history = [...(story.versions || [])].reverse().map((version) => `<li><strong>Version ${escapeHtml(version.version)}</strong> · ${escapeHtml(formatDate(version.analyzed_at))} · ${escapeHtml(version.analysis.analysis_type === "ex_ante" ? "Ex ante" : version.analysis.analysis_type === "ex_post" ? "Ex post" : "Monitoring")}</li>`).join("");
   const body = `<main id="main-content" data-search-content data-no-glossary>
-  <section class="hero news-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml((story.topic || []).join(" · "))}</p><h1 class="hero-title">${escapeHtml(story.title)}</h1><p class="hero-subtitle">${escapeHtml(a.summary)}</p><div class="news-hero__meta"><span>${escapeHtml(a.status)} · ${analysisType}</span><span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="news-share" data-news-share><button class="btn btn-secondary news-share__button" type="button" data-news-share-button data-share-title="${escapeHtml(story.title)}" data-share-text="${escapeHtml(shareText)}" data-share-url="${escapeHtml(shareUrl)}" aria-describedby="news-share-status-${escapeHtml(story.slug)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .18.02.35.05.52L8.91 9.1A3 3 0 0 0 7 8.42a3 3 0 1 0 1.91 5.49l6.14 3.58A3 3 0 0 0 15 18a3 3 0 1 0 .83-2.07l-6.14-3.58c.2-.55.2-1.15 0-1.7l6.14-3.58A3 3 0 0 0 18 8Z" fill="currentColor"/></svg><span>Nachricht teilen</span></button><p class="news-share__status" id="news-share-status-${escapeHtml(story.slug)}" data-news-share-status aria-live="polite"></p></div></div></section>
+  <section class="hero news-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml((story.topic || []).join(" · "))}</p><h1 class="hero-title">${escapeHtml(story.title)}</h1><div class="news-hero__meta"><span>${escapeHtml(a.status)} · ${analysisType}</span><span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="news-share" data-news-share><button class="btn btn-secondary news-share__button" type="button" data-news-share-button data-share-title="${escapeHtml(story.title)}" data-share-text="${escapeHtml(shareText)}" data-share-url="${escapeHtml(shareUrl)}" aria-describedby="news-share-status-${escapeHtml(story.slug)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .18.02.35.05.52L8.91 9.1A3 3 0 0 0 7 8.42a3 3 0 1 0 1.91 5.49l6.14 3.58A3 3 0 0 0 15 18a3 3 0 1 0 .83-2.07l-6.14-3.58c.2-.55.2-1.15 0-1.7l6.14-3.58A3 3 0 0 0 18 8Z" fill="currentColor"/></svg><span>Nachricht teilen</span></button><p class="news-share__status" id="news-share-status-${escapeHtml(story.slug)}" data-news-share-status aria-live="polite"></p></div></div></section>
   <section class="section"><div class="news-story-layout"><div class="news-story-main">
-    <article class="news-story-section news-story-summary"><p class="hero-kicker">Kurzüberblick</p><h2>Was passiert ist und was daraus folgen kann</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p></article>
+    <article class="news-story-section news-source-summary" data-news-source-summary><p class="hero-kicker">Nachricht</p><h2>Worum geht es?</h2><p class="news-source-summary__note">Neutrale Zusammenfassung der verlinkten Originalquelle${originalSources.length === 1 ? "" : "n"}. Die wirkungsökonomische Einordnung beginnt erst danach.</p><div class="news-source-summary__copy">${sourceSummaryParagraphs(story.source_summary)}</div><div class="news-source-summary__links">${sourceSummaryLinks}</div></article>
     <article class="news-story-section news-fact-check"><p class="hero-kicker">Quellenprüfung</p><h2>Faktencheck</h2><p class="news-method-note"><strong>Wahrheit zuerst:</strong> Der belastbar bestätigte Sachverhalt steht vor Behauptungen, offenen Punkten und möglichen Folgen. So soll bloße Wiederholung keinen falschen Wahrheits­eindruck erzeugen.</p><div class="news-check-prose"><section><h3>Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Die Prüfung stützt sich auf ${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""} und ${story.claims.length} ${story.claims.length === 1 ? "tragenden, quellengebundenen Claim" : "tragende, quellengebundene Claims"}. Der Evidenzstand lautet: ${escapeHtml(a.evidence_level)}</p></section><section><h3>Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
+    <article class="news-story-section news-story-summary"><p class="hero-kicker">Wirkungsökonomische Analyse</p><h2>Einordnung im Überblick</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p></article>
     <article class="news-story-section"><p class="hero-kicker">Einordnung</p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p><div class="news-dimensions">${dimensions(story)}</div></article>
     <article class="news-story-section"><h2>Wirkungspotenzial</h2><p class="news-analysis-copy">${escapeHtml(a.impact_potential)}</p><h3>Wirkungsrisiken und Nebenfolgen</h3>${list([...(a.impact_risks || []), ...(a.side_effects || [])])}</article>
     <article class="news-story-section news-consequence-check"><p class="hero-kicker">Folgencheck</p><h2>Wirkpfad und mögliche Folgen</h2><p class="news-method-note">Ausgangspunkt ist ausschließlich der oben gesicherte Sachverhalt. Der Folgencheck formuliert daraus begründete Wirkungspfade und Unsicherheiten; er ist kein Nachweis bereits eingetretener Wirkung.</p><div class="news-consequence-stack"><section><h3>Wirkmechanismus</h3><p>${prose(a.mechanisms)}</p></section><section><h3>Erste Ordnung – unmittelbar</h3><p>${prose(a.first_order)}</p></section><section><h3>Zweite Ordnung – nachgelagert</h3><p>${prose(a.second_order)}</p></section><section><h3>Dritte Ordnung – systemisch</h3><p>${prose(a.third_order)}</p></section><section><h3>Risiken, Gegenläufe und Prüfgrenzen</h3><p>${prose([...(a.impact_risks || []), ...(a.side_effects || []), ...(a.uncertainties || [])])}</p></section></div></article>
@@ -297,7 +312,7 @@ function storyPage(story) {
     body,
     jsonLd: {
       "@context": "https://schema.org", "@type": "AnalysisNewsArticle", "@id": `${SITE}/wirkungsticker/${story.slug}/#article`,
-      url: `${SITE}/wirkungsticker/${story.slug}/`, headline: story.title, description: a.summary, inLanguage: "de",
+      url: `${SITE}/wirkungsticker/${story.slug}/`, headline: story.title, description: a.summary, abstract: story.source_summary, inLanguage: "de",
       datePublished: story.published_at, dateModified: story.last_updated,
       author: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
@@ -354,6 +369,7 @@ function publicStory(story) {
     story_id: story.story_id,
     slug: story.slug,
     title: story.title,
+    source_summary: story.source_summary,
     summary: story.analysis.summary,
     detail_summary: story.analysis.detail_summary || null,
     why_relevant: story.analysis.why_relevant,
@@ -410,7 +426,7 @@ export function buildNewsSite() {
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));
-  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.0", updated_at: data.updated_at, stories: stories.map(publicStory) }, null, 2));
+  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.1", updated_at: data.updated_at, stories: stories.map(publicStory) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
   write(path.join(LEGACY_NEWS_DIR, "wirkungsticker/index.html"), legacyRedirect("/wirkungsticker/"));
   for (const story of stories) write(path.join(LEGACY_NEWS_DIR, story.slug, "index.html"), legacyRedirect(`/wirkungsticker/${story.slug}/`, story.title));

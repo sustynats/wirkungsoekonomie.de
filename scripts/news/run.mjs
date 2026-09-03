@@ -7,6 +7,7 @@ import {
   claimLedgerFor,
   clusterItems,
   estimateUsage,
+  fetchArticleExcerpt,
   fetchFeed,
   monthlyUsage,
   parseFeed,
@@ -34,6 +35,9 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_UNCERTAINTY_REQUIRED$/,
   /^AI_WATCH_NEXT_REQUIRED$/,
   /^AI_SUMMARY_SENTENCE_COUNT$/,
+  /^AI_SOURCE_SUMMARY_(?:LENGTH|PARAGRAPHS|NOT_NEUTRAL)$/,
+  /^AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:/,
+  /^AI_EXCESSIVE_SOURCE_SUMMARY_COPY$/,
   /^AI_DETAIL_SUMMARY_(?:INVALID|LENGTH)$/,
   /^AI_UNSUPPORTED_NUMBER:/,
   /^AI_UNSUPPORTED_FRAMEWORK_NUMBER:/,
@@ -258,11 +262,13 @@ export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0) {
 function publishedRecord(candidate, analysis, ai, now) {
   const existing = candidate.existing_story;
   const versionNumber = Number(existing?.current_version || 0) + 1;
+  const { source_summary: sourceSummary, ...woekAnalysis } = analysis;
   const version = {
     version: versionNumber,
     analyzed_at: now,
     content_hash: candidate.content_hash,
-    analysis,
+    source_summary: sourceSummary,
+    analysis: woekAnalysis,
     provider: ai.provider,
     model: ai.model,
     mode: ai.mode,
@@ -285,7 +291,8 @@ function publishedRecord(candidate, analysis, ai, now) {
     analysis_status: "veröffentlicht",
     relevance_filter_version: RELEVANCE_FILTER_VERSION,
     current_version: versionNumber,
-    analysis,
+    source_summary: sourceSummary,
+    analysis: woekAnalysis,
     versions: [...(existing?.versions || []), version],
     publication_history: [
       ...(existing?.publication_history || []),
@@ -381,6 +388,8 @@ export async function runWirkungsticker(options = {}) {
     source_retry_attempts: 0,
     source_errors: [],
     quality_holds: [],
+    article_excerpts_fetched: 0,
+    article_excerpt_failures: 0,
     budget_stage: 0,
     completed_at: null,
   };
@@ -527,13 +536,31 @@ export async function runWirkungsticker(options = {}) {
 
   const aiEnabled = String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   if (selected.length && aiEnabled) {
+    const sourceRegistryById = new Map(enabledSources.map((source) => [source.source_id, source]));
     for (let offset = 0; offset < selected.length; offset += aiBatchSize) {
       const batch = selected.slice(offset, offset + aiBatchSize);
       try {
         if (offset > 0) await (options.aiBatchDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(
           Number(process.env.WOEK_NEWS_AI_BATCH_DELAY_MS || 2500),
         );
-        const aiResult = await (options.callAiImpl || callWoekAi)(batch, {
+        const analysisBatch = await Promise.all(batch.map(async (candidate) => {
+          let articleSources = 0;
+          const sources = await Promise.all(candidate.sources.map(async (source) => {
+            const registrySource = sourceRegistryById.get(source.source_id);
+            if (!source.primary_source || !registrySource || articleSources >= 2) return source;
+            articleSources += 1;
+            try {
+              const result = await (options.fetchArticleImpl || fetchArticleExcerpt)(source, registrySource, registry.policy);
+              report.article_excerpts_fetched += 1;
+              return { ...source, article_excerpt: result.excerpt };
+            } catch (_error) {
+              report.article_excerpt_failures += 1;
+              return source;
+            }
+          }));
+          return { ...candidate, sources };
+        }));
+        const aiResult = await (options.callAiImpl || callWoekAi)(analysisBatch, {
           apiUrl: process.env.WOEK_NEWS_API_URL,
           timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
           attempts: Number(process.env.WOEK_NEWS_AI_ATTEMPTS_PER_STORY || 1),
@@ -553,7 +580,8 @@ export async function runWirkungsticker(options = {}) {
         const analyses = new Map(aiResult.analyses.map((analysis) => [analysis.story_id, analysis]));
         for (const candidate of batch) {
           const analysis = analyses.get(candidate.story_id);
-          const errors = analysis ? validateAnalysis(analysis, candidate) : ["AI_ANALYSIS_MISSING"];
+          const analysisCandidate = analysisBatch.find((item) => item.story_id === candidate.story_id) || candidate;
+          const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
           if (errors.length) {
             if (shouldRetireAfterReassessment(candidate, errors)) {
               byId.set(candidate.story_id, retiredRecord(candidate, now, errors));

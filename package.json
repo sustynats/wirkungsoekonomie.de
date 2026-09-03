@@ -24,6 +24,8 @@
     "updates:check": "node scripts/site/check-site-updates.mjs",
     "news:run": "node scripts/news/run.mjs",
     "news:build": "node scripts/news/build.mjs",
+    "news:backfill-source-summaries": "node scripts/news/backfill-source-summaries.mjs",
+    "news:check-source-summaries": "node scripts/news/backfill-source-summaries.mjs --check",
     "news:test": "node --test tests/news/*.test.mjs",
     "news:validate": "node scripts/news/validate.mjs",
     "check:hosting-cost": "node scripts/ops/check-hosting-cost-guard.mjs",
