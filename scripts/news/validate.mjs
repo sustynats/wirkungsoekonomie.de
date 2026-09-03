@@ -47,6 +47,13 @@ if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.in
 if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen")) fail("NEWS_APP_UI_INVALID");
 for (const story of store.stories.filter((item) => item.published && item.listed !== false)) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
+  const renderedSummary = detail.match(/news-story-summary[\s\S]*?<p class="news-analysis-copy">([\s\S]*?)<\/p>/)?.[1]
+    ?.replace(/<[^>]*>/g, " ")
+    .replace(/&(?:#\d+|#x[\da-f]+|\w+);/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim() || "";
+  if (renderedSummary.length < 500) fail(`NEWS_DETAIL_SUMMARY_TOO_SHORT:${story.story_id}:${renderedSummary.length}`);
+  if (renderedSummary.length > 1200) fail(`NEWS_DETAIL_SUMMARY_TOO_LONG:${story.story_id}:${renderedSummary.length}`);
   const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
   const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");
   if (!detail.includes("Wahrheit zuerst:") || truthAt < 0 || uncertaintyAt < 0 || truthAt > uncertaintyAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);

@@ -97,6 +97,31 @@ function prose(items, fallback = "Offen – die Quellenlage reicht für eine bel
   }).map(escapeHtml).join(" ");
 }
 
+function sentenceFragment(value, fallback, maxLength = 96) {
+  const text = String(value || fallback || "").trim().replace(/[.!?]+$/, "");
+  if (text.length <= maxLength) return text;
+  const shortened = text.slice(0, maxLength + 1).replace(/\s+\S*$/, "").trim();
+  return shortened || text.slice(0, maxLength).trim();
+}
+
+function expandedDetailSummary(analysis) {
+  const direct = String(analysis.detail_summary || "").trim();
+  if (direct.length >= 500) return direct;
+  const mechanism = sentenceFragment(analysis.mechanisms?.[0], analysis.impact_potential);
+  const immediate = sentenceFragment(analysis.first_order?.[0], analysis.impact_potential);
+  const downstream = sentenceFragment(analysis.second_order?.[0], analysis.side_effects?.[0]);
+  const systemic = sentenceFragment(analysis.systemic_relevance, analysis.third_order?.[0]);
+  const uncertainty = sentenceFragment(analysis.uncertainties?.[0], analysis.attribution);
+  return [
+    String(analysis.summary || "").trim(),
+    `Die Relevanzbegründung lautet: ${sentenceFragment(analysis.why_relevant)}.`,
+    `Als möglicher Wirkmechanismus gilt: ${mechanism}.`,
+    `Als unmittelbare Folge kommt in Betracht: ${immediate}; nachgelagert ist zu prüfen: ${downstream}.`,
+    `Für die systemische Perspektive gilt: ${systemic}.`,
+    `Die Evidenzgrenze bleibt: ${sentenceFragment(analysis.evidence_level)}; zur Zurechnung gilt: ${sentenceFragment(analysis.attribution)}; offen bleibt: ${uncertainty}.`,
+  ].filter(Boolean).join(" ");
+}
+
 function dimensionLabel(key) {
   return { human: "Mensch", planet: "Planet", democracy: "Demokratie" }[key];
 }
@@ -219,7 +244,7 @@ function indexPage(stories, updatedAt) {
   <section class="section news-search" aria-labelledby="ticker-search-title"><div><p class="hero-kicker">Im Ticker suchen</p><h2 id="ticker-search-title">Wirkungsnachrichten schnell finden</h2><p>Die Suche filtert Titel, Kurzanalysen, Themen und Wirkungsdimensionen direkt auf dieser Seite.</p></div><div class="news-search__controls"><label for="ticker-search-input">Suchbegriff</label><input id="ticker-search-input" type="search" autocomplete="off" placeholder="Zum Beispiel: Energie, Arbeit, Demokratie" data-news-search-input><a class="text-link" href="../suche.html" data-news-site-search-link>Gesamte Website durchsuchen</a></div></section>
   <nav class="news-filter-bar" aria-label="Wirkungsticker filtern"><div class="news-filter-bar__inner">${filters.map(([value, label], index) => `<button class="news-filter" type="button" data-news-filter="${value}" aria-pressed="${index === 0}">${label}</button>`).join("")}</div></nav>
   <section class="section" aria-labelledby="ticker-stories-title"><div class="section-header"><p class="hero-kicker">Aktuelle Wirkungsakten</p><h2 id="ticker-stories-title">Die wichtigsten Wirkungsnachrichten seit dem letzten Update</h2><p data-news-results-status aria-live="polite">${stories.length} belastbar veröffentlichte ${stories.length === 1 ? "Story" : "Storys"}. Neue Informationen aktualisieren bestehende Akten.</p></div><div class="news-grid">${cards}</div><div class="news-empty" data-news-filter-empty hidden><p>Für diesen Filter und Suchbegriff gibt es derzeit keine veröffentlichte Story.</p></div><div class="news-load-more" data-news-load-more-wrap hidden><button class="btn btn-secondary" type="button" data-news-load-more aria-expanded="false">Weitere Meldungen laden</button></div></section>
-  <section class="section section-soft" id="methodik" aria-labelledby="ticker-method-title"><div class="section-header"><p class="hero-kicker">Qualität vor Takt</p><h2 id="ticker-method-title">So entsteht eine Veröffentlichung.</h2></div><div class="impact-process"><article class="impact-process__step"><span class="impact-process__index">1</span><h3>Primärquellen</h3><p>Offizielle RSS-/Atom-Feeds liefern Titel, Kurztext, Zeit und Original-Link. Keine Paywall und kein Volltext-Scraping.</p></article><article class="impact-process__step"><span class="impact-process__index">2</span><h3>Lokal reduzieren</h3><p>URL-/Hash-Deduplizierung, Story-Clustering, Zeitfilter, Themenzuordnung und WÖk-Relevanzvoranalyse laufen ohne KI.</p></article><article class="impact-process__step"><span class="impact-process__index">3</span><h3>Gezielt analysieren</h3><p>Nur materialitätsstarke Storys gehen gebündelt an die bestehende Oracle-WÖk-KI. Nachrichteninhalte gelten dort als Daten, nie als Anweisung.</p></article><article class="impact-process__step"><span class="impact-process__index">4</span><h3>Fail closed</h3><p>Claim-Ledger, Primärquelle, Terminologie, Kausalitätsgrenzen, Unsicherheit und Textübernahme werden automatisch geprüft. Konflikte bleiben zurückgestellt.</p></article><article class="impact-process__step"><span class="impact-process__index">5</span><h3>Lernen</h3><p>Neue Quellen ergänzen dieselbe Story; frühere Analysen bleiben versioniert. Monitoring und Ex-post-Einordnung folgen erst mit neuen Daten.</p></article></div><p class="notice"><strong>Einordnung, kein amtliches Angebot:</strong> Die Analysen sind unabhängige WÖk-Einordnungen. Ziel- oder Indikatorbezug allein ist weder Wirkung noch Kausalitätsnachweis.</p></section>
+  <section class="section section-soft" id="methodik" aria-labelledby="ticker-method-title"><div class="section-header"><p class="hero-kicker">Qualität vor Takt</p><h2 id="ticker-method-title">So entsteht eine Veröffentlichung.</h2></div><div class="impact-process"><article class="impact-process__step"><span class="impact-process__index">1</span><h3>Primärquellen</h3><p>Offizielle RSS-/Atom-Feeds liefern Titel, Kurztext, Zeit und Original-Link. Keine Paywall und kein Volltext-Scraping.</p></article><article class="impact-process__step"><span class="impact-process__index">2</span><h3>Lokal reduzieren</h3><p>URL-/Hash-Deduplizierung, Story-Clustering, Zeitfilter, Themenzuordnung und WÖk-Relevanzvoranalyse laufen ohne KI.</p></article><article class="impact-process__step"><span class="impact-process__index">3</span><h3>Gezielt analysieren</h3><p>Nur materialitätsstarke Storys gehen einzeln und getaktet an die bestehende Oracle-WÖk-KI. Nachrichteninhalte gelten dort als Daten, nie als Anweisung.</p></article><article class="impact-process__step"><span class="impact-process__index">4</span><h3>Fail closed</h3><p>Claim-Ledger, Primärquelle, Terminologie, Kausalitätsgrenzen, Unsicherheit und Textübernahme werden automatisch geprüft. Konflikte bleiben zurückgestellt.</p></article><article class="impact-process__step"><span class="impact-process__index">5</span><h3>Lernen</h3><p>Neue Quellen ergänzen dieselbe Story; frühere Analysen bleiben versioniert. Monitoring und Ex-post-Einordnung folgen erst mit neuen Daten.</p></article></div><p class="notice"><strong>Einordnung, kein amtliches Angebot:</strong> Die Analysen sind unabhängige WÖk-Einordnungen. Ziel- oder Indikatorbezug allein ist weder Wirkung noch Kausalitätsnachweis.</p></section>
 </main>`;
   return pageShell({
     title: "Wirkungsticker",
@@ -238,12 +263,7 @@ function indexPage(stories, updatedAt) {
 function storyPage(story) {
   const a = story.analysis;
   const analysisType = a.analysis_type === "ex_ante" ? "Ex ante" : a.analysis_type === "ex_post" ? "Ex post" : "Monitoring";
-  const detailSummary = a.detail_summary || [
-    a.summary,
-    a.why_relevant,
-    `Der ausgewiesene Wirkpfad beschreibt ein Potenzial: ${a.impact_potential}`,
-    `Evidenzgrenze: ${a.evidence_level}`,
-  ].join(" ");
+  const detailSummary = expandedDetailSummary(a);
   const factStatement = String(detailSummary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
   const truthOpening = /^(fakt|gesichert|belegt)\b/i.test(factStatement)
     ? factStatement
