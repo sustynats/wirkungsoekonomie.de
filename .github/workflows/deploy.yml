@@ -157,3 +157,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  notify-ticker:
+    needs: [build, deploy]
+    if: needs.build.outputs.ticker_only == 'true' && needs.deploy.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout committed ticker
+        uses: actions/checkout@v4
+      - name: Notify subscribed Wirkungsticker apps
+        env:
+          WOEK_NEWS_PUSH_ADMIN_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+        run: node scripts/news/publish-push.mjs

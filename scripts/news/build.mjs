@@ -264,7 +264,7 @@ ${renderIconSprite()}
 ${body}
 ${footer}
 <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260903-6"></script>
+<script src="${base}assets/js/news-pwa.js?v=20260903-7"></script>
 ${extraScript}
 </body>
 </html>`;

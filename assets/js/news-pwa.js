@@ -25,6 +25,7 @@
   const lastSeenKey = "woek_ticker_last_seen";
   const lastNotifiedKey = "woek_ticker_last_notified";
   const notificationTag = "woek-wirkungsticker-updates";
+  const pushApiBase = "https://130.162.217.58.sslip.io/api/news-push";
   const autoReloadKey = "woek_ticker_last_auto_reload";
   const mobile = navigator.userAgentData?.mobile === true
     || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
@@ -124,15 +125,19 @@
     notificationToggle?.addEventListener("click", () => void toggleNotifications());
     markReadButton?.addEventListener("click", () => void markNewsAsSeen());
     if (!enabled) return;
-    await configureBackgroundChecks(true);
-    startForegroundChecks();
+    try {
+      await configureBackgroundChecks(true);
+      startForegroundChecks();
+    } catch {
+      renderNotificationState(false, "Push konnte gerade nicht verbunden werden. Beim nächsten Öffnen versucht die App es erneut.");
+    }
   }
 
   async function toggleNotifications() {
     const enabled = window.localStorage.getItem(notificationKey) === "enabled";
     if (enabled) {
       window.localStorage.setItem(notificationKey, "disabled");
-      await configureBackgroundChecks(false);
+      await configureBackgroundChecks(false).catch(() => undefined);
       await updateAppBadge(0);
       renderNotificationState(false, "Für den Wirkungsticker deaktiviert. Die allgemeine Browserberechtigung lässt sich zusätzlich in den Geräteeinstellungen ändern.");
       return;
@@ -156,8 +161,14 @@
       return;
     }
 
+    try {
+      await configureBackgroundChecks(true);
+    } catch {
+      window.localStorage.setItem(notificationKey, "disabled");
+      renderNotificationState(false, "Push konnte gerade nicht aktiviert werden. Bitte später erneut versuchen.");
+      return;
+    }
     window.localStorage.setItem(notificationKey, "enabled");
-    await configureBackgroundChecks(true);
     startForegroundChecks();
     renderNotificationState(true);
     await checkForNews();
@@ -209,19 +220,24 @@
     }
     if (notificationStatus) {
       notificationStatus.textContent = message || (enabled
-        ? "Aktiv. Unterstützte Smartphones prüfen im Hintergrund; sonst erfolgt die Prüfung beim Öffnen der App."
+        ? "Aktiv. Neue oder wesentlich aktualisierte Meldungen werden automatisch zugestellt; die Zahl zeigt ungelesene Meldungen."
         : "Push-Benachrichtigungen sind aus.");
     }
   }
 
   async function configureBackgroundChecks(enabled) {
-    const registration = await registrationPromise;
+    const initialRegistration = await registrationPromise;
+    const registration = initialRegistration && "ready" in navigator.serviceWorker
+      ? await navigator.serviceWorker.ready
+      : initialRegistration;
     if (!registration) return;
     const latest = window.localStorage.getItem(lastSeenKey) || (newestCardTimestamp() ? new Date(newestCardTimestamp()).toISOString() : null);
+    if (enabled) await subscribeToServerPush(registration);
     registration.active?.postMessage({
       type: enabled ? "NEWS_NOTIFICATIONS_ENABLE" : "NEWS_NOTIFICATIONS_DISABLE",
       latest,
     });
+    if (!enabled) await unsubscribeFromServerPush(registration);
     if (!("periodicSync" in registration)) return;
     try {
       if (enabled) await registration.periodicSync.register(notificationTag, { minInterval: 4 * 60 * 60 * 1000 });
@@ -229,6 +245,54 @@
     } catch {
       if (enabled && notificationStatus) notificationStatus.textContent = "Aktiv. Dieses Gerät prüft neue Meldungen beim Öffnen der App.";
     }
+  }
+
+  async function subscribeToServerPush(registration) {
+    if (!("PushManager" in window) || !registration.pushManager) {
+      throw new Error("PUSH_NOT_SUPPORTED");
+    }
+    const configResponse = await fetch(`${pushApiBase}/config`, {
+      cache: "no-store",
+      headers: { "X-WOEK-Client-ID": "wirkungsticker-pwa-v1" },
+    });
+    const config = await configResponse.json().catch(() => null);
+    if (!configResponse.ok || !config?.enabled || !config.publicKey) throw new Error("PUSH_NOT_CONFIGURED");
+    let subscription = await registration.pushManager.getSubscription();
+    if (!subscription) {
+      subscription = await registration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: base64UrlToBytes(config.publicKey),
+      });
+    }
+    const response = await fetch(`${pushApiBase}/subscribe`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-WOEK-Client-ID": "wirkungsticker-pwa-v1",
+      },
+      body: JSON.stringify({ subscription: subscription.toJSON() }),
+    });
+    if (!response.ok) throw new Error("PUSH_SUBSCRIPTION_FAILED");
+  }
+
+  async function unsubscribeFromServerPush(registration) {
+    const subscription = await registration.pushManager?.getSubscription?.();
+    if (!subscription) return;
+    await fetch(`${pushApiBase}/unsubscribe`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-WOEK-Client-ID": "wirkungsticker-pwa-v1",
+      },
+      body: JSON.stringify({ endpoint: subscription.endpoint }),
+    }).catch(() => undefined);
+    await subscription.unsubscribe().catch(() => undefined);
+  }
+
+  function base64UrlToBytes(value) {
+    const padding = "=".repeat((4 - (value.length % 4)) % 4);
+    const binary = window.atob((value + padding).replace(/-/g, "+").replace(/_/g, "/"));
+    return Uint8Array.from(binary, (character) => character.charCodeAt(0));
   }
 
   async function checkForNews({ manual = false } = {}) {
