@@ -35,6 +35,7 @@
     || window.navigator.standalone === true;
   let deferredInstallPrompt = null;
   let newsCheckInterval = null;
+  let latestFeedTimestamp = 0;
 
   tools.hidden = !(mobile || standalone);
   initializeInstallOffer();
@@ -182,7 +183,6 @@
   }
 
   function initializeFreshnessChecks() {
-    if (!cards.length) return;
     startForegroundChecks();
     refreshButtons.forEach((button) => button.addEventListener("click", () => void refreshNow()));
     window.addEventListener("focus", () => void handleForeground());
@@ -243,7 +243,7 @@
       if (enabled) await registration.periodicSync.register(notificationTag, { minInterval: 4 * 60 * 60 * 1000 });
       else await registration.periodicSync.unregister(notificationTag);
     } catch {
-      if (enabled && notificationStatus) notificationStatus.textContent = "Aktiv. Dieses Gerät prüft neue Meldungen beim Öffnen der App.";
+      // Echtes Web Push ist bereits verbunden; Periodic Sync ist nur ein Zusatz.
     }
   }
 
@@ -253,7 +253,6 @@
     }
     const configResponse = await fetch(`${pushApiBase}/config`, {
       cache: "no-store",
-      headers: { "X-WOEK-Client-ID": "wirkungsticker-pwa-v1" },
     });
     const config = await configResponse.json().catch(() => null);
     if (!configResponse.ok || !config?.enabled || !config.publicKey) throw new Error("PUSH_NOT_CONFIGURED");
@@ -268,7 +267,6 @@
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-WOEK-Client-ID": "wirkungsticker-pwa-v1",
       },
       body: JSON.stringify({ subscription: subscription.toJSON() }),
     });
@@ -282,7 +280,6 @@
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-WOEK-Client-ID": "wirkungsticker-pwa-v1",
       },
       body: JSON.stringify({ endpoint: subscription.endpoint }),
     }).catch(() => undefined);
@@ -305,6 +302,7 @@
       if (!response.ok) throw new Error("NEWS_FEED_UNAVAILABLE");
       const feed = await response.json();
       const feedLatest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
+      latestFeedTimestamp = feedLatest;
       const pageLatest = newestCardTimestamp();
       if (cards.length && feedLatest > pageLatest && document.visibilityState === "visible") {
         const lastReload = Number(window.sessionStorage.getItem(autoReloadKey) || 0);
@@ -342,7 +340,7 @@
   }
 
   async function acknowledgeVisibleNews({ hideMarkers = false } = {}) {
-    const newest = newestCardTimestamp();
+    const newest = Math.max(newestCardTimestamp(), latestFeedTimestamp);
     if (newest) {
       const value = new Date(newest).toISOString();
       window.localStorage.setItem(lastSeenKey, value);
