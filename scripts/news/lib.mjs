@@ -144,6 +144,7 @@ export function canonicalizeUrl(raw, base) {
 
 export function parseFeed(xml, source) {
   if (typeof xml !== "string" || xml.length < 20) throw new Error("FEED_EMPTY_OR_INVALID");
+  if (source.source_type === "woek_public_assessments_json") return parseWoekPublicAssessments(xml, source);
   if (/<!DOCTYPE|<!ENTITY/i.test(xml)) throw new Error("FEED_DTD_NOT_ALLOWED");
   const rssItems = [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map((match) => match[1]);
   const atomEntries = rssItems.length ? [] : [...xml.matchAll(/<entry\b[^>]*>([\s\S]*?)<\/entry>/gi)].map((match) => match[1]);
@@ -180,6 +181,54 @@ export function parseFeed(xml, source) {
       item_id: sha256(url || `${source.source_id}:${guid}`),
     }];
   });
+}
+
+export function parseWoekPublicAssessments(raw, source) {
+  let payload;
+  try {
+    payload = JSON.parse(raw);
+  } catch {
+    throw new Error("FEED_JSON_INVALID");
+  }
+  if (!Array.isArray(payload?.data)) throw new Error("FEED_JSON_DATA_REQUIRED");
+  const limit = Number(source.max_items || 24);
+  return payload.data
+    .filter((entry) => entry && typeof entry === "object")
+    .filter((entry) => entry.statusVerification === "VERIFIED")
+    .filter((entry) => ["PUBLISHED", "PREPARATION_PUBLISHED", "WORKING_ACT_PUBLISHED"].includes(entry.editorialStatus))
+    .filter((entry) => typeof entry.summary === "string" && !/Eine WÖk-Wirkungsanalyse ist noch nicht veröffentlicht\.?/i.test(entry.summary))
+    .sort((a, b) => Date.parse(b.lastUpdated || 0) - Date.parse(a.lastUpdated || 0))
+    .slice(0, limit)
+    .flatMap((entry) => {
+      const slug = sanitizeFeedText(entry.slug, 180);
+      const plainTitle = sanitizeFeedText(entry.plainTitle || entry.title, 220);
+      const url = canonicalizeUrl(`/entscheidungen/${slug}`, source.url);
+      if (!slug || !plainTitle || !url) return [];
+      const title = `Neue WÖk-Parlamentsbewertung: ${plainTitle}`;
+      const summary = sanitizeFeedText([
+        entry.summary,
+        entry.parliamentaryStatus ? `Parlamentarischer Stand: ${entry.parliamentaryStatus}.` : "",
+        entry.versionNote || "",
+      ].filter(Boolean).join(" "), 1500);
+      const parsedDate = Date.parse(`${entry.lastUpdated || ""}T12:00:00Z`);
+      const publishedAt = Number.isFinite(parsedDate) ? new Date(parsedDate).toISOString() : null;
+      return [{
+        source_id: source.source_id,
+        publisher: source.name,
+        source_type: source.source_type,
+        primary_source: Boolean(source.primary_source),
+        source_priority: Number(source.priority || 0),
+        source_topic: source.topic,
+        title,
+        summary,
+        url,
+        guid: url,
+        published_at: publishedAt,
+        categories: [entry.kind, entry.materiality, entry.analysisStatus].map((value) => sanitizeFeedText(value, 120)).filter(Boolean),
+        content_hash: sha256(`${title}\n${summary}\n${url}`),
+        item_id: sha256(url),
+      }];
+    });
 }
 
 function privateIp(address) {
@@ -248,7 +297,9 @@ export async function fetchFeed(source, policy, fetchImpl = fetch) {
         redirect: "manual",
         signal: controller.signal,
         headers: {
-          Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9",
+          Accept: source.source_type === "woek_public_assessments_json"
+            ? "application/json"
+            : "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9",
           "User-Agent": policy.user_agent,
         },
       });
@@ -361,10 +412,14 @@ export function claimLedgerFor(items, storyId, checkedAt) {
     claim_id: `${storyId}-claim-${String(index + 1).padStart(2, "0")}`,
     story_id: storyId,
     claim: item.summary ? `${item.title}: ${item.summary}`.slice(0, 900) : item.title,
-    claim_type: "Fakt oder Beobachtung laut Primärquelle",
+    claim_type: item.source_type?.startsWith("woek_")
+      ? "Veröffentlichungsinhalt der WÖk; analytische Einordnung, keine amtliche Primärquelle"
+      : "Fakt oder Beobachtung laut Primärquelle",
     source_id: item.source_id,
-    source_function: "official_fact_source",
-    evidence_level: item.primary_source ? "Primärquelle" : "Sekundärquelle",
+    source_function: item.source_type?.startsWith("woek_") ? "woek_publication_source" : "official_fact_source",
+    evidence_level: item.source_type?.startsWith("woek_")
+      ? "WÖk-Veröffentlichung mit ausgewiesener eigener Quellenbasis"
+      : (item.primary_source ? "Primärquelle" : "Sekundärquelle"),
     data_status: item.summary ? "Feed-Kurztext vorhanden" : "nur Titel und Metadaten",
     attribution: "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
     reference_framework: [],
@@ -641,7 +696,11 @@ function collectStrings(value, result = []) {
 }
 
 function sentenceCount(value) {
-  return String(value).split(/[.!?]+(?:\s|$)/).filter((part) => part.trim()).length;
+  const protectedText = String(value)
+    .replace(/\b(?:Mrd|Mio|Mr|Mrs|Dr|Prof|Nr|bzw|ca|usw|vgl|ggf)\./gi, (match) => match.replaceAll(".", "∯"))
+    .replace(/\b(?:d\.\s*h|z\.\s*B|u\.\s*a)\./gi, (match) => match.replaceAll(".", "∯"))
+    .replace(/(\d)\.(\d)/g, "$1∯$2");
+  return protectedText.split(/[.!?]+(?:[”"'»)]*\s|$)/).filter((part) => part.trim()).length;
 }
 
 function numberTokens(value) {
@@ -704,7 +763,11 @@ export function validateAnalysis(analysis, story) {
   if (sentenceCount(analysis?.summary) !== 2) errors.push("AI_SUMMARY_SENTENCE_COUNT");
   if (analysis?.detail_summary !== undefined) {
     if (typeof analysis.detail_summary !== "string" || !analysis.detail_summary.trim()) errors.push("AI_DETAIL_SUMMARY_INVALID");
-    else if (sentenceCount(analysis.detail_summary) < 5 || sentenceCount(analysis.detail_summary) > 7 || analysis.detail_summary.length < 500 || analysis.detail_summary.length > 1200) errors.push("AI_DETAIL_SUMMARY_LENGTH");
+    else if (filterVersion >= 3.1) {
+      if (sentenceCount(analysis.detail_summary) < 5 || sentenceCount(analysis.detail_summary) > 7 || analysis.detail_summary.length < 500 || analysis.detail_summary.length > 1200) errors.push("AI_DETAIL_SUMMARY_LENGTH");
+    } else if (sentenceCount(analysis.detail_summary) < 4 || sentenceCount(analysis.detail_summary) > 6 || analysis.detail_summary.length > 900) {
+      errors.push("AI_DETAIL_SUMMARY_LENGTH");
+    }
   }
   if (analysis?.publication_recommendation !== true) errors.push("AI_PUBLICATION_NOT_RECOMMENDED");
   if (!story.sources.some((source) => source.primary_source)) errors.push("PRIMARY_SOURCE_REQUIRED");

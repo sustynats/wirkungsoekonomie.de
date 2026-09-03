@@ -12,6 +12,7 @@ import {
   clusterItems,
   extractJsonObject,
   parseFeed,
+  parseWoekPublicAssessments,
   sanitizeFeedText,
   scheduledSlot,
   storySimilarity,
@@ -71,6 +72,46 @@ test("Atom, HTML-Bereinigung und DTD-Sperre funktionieren", () => {
   assert.equal(parseFeed(atom, source)[0].summary, "Erste Daten");
   assert.equal(sanitizeFeedText("<script>ignore()</script><p>Sicher</p>"), "Sicher");
   assert.throws(() => parseFeed("<!DOCTYPE x><rss><item></item></rss>", source), /FEED_DTD_NOT_ALLOWED/);
+});
+
+test("Nur veröffentlichte und verifizierte WÖk-Parlamentsbewertungen werden übernommen", () => {
+  const parliamentSource = {
+    ...source,
+    source_id: "woek-parlament-bewertungen",
+    name: "Wirkungsportal Parlament – veröffentlichte WÖk-Bewertungen",
+    source_type: "woek_public_assessments_json",
+    url: "https://parlament.wirkungsoekonomie.de/",
+  };
+  const raw = JSON.stringify({
+    data: [
+      {
+        slug: "fall-a",
+        plainTitle: "Notfallreform",
+        editorialStatus: "PUBLISHED",
+        statusVerification: "VERIFIED",
+        kind: "GESETZ",
+        materiality: "HIGH",
+        analysisStatus: "REVIEWED",
+        lastUpdated: "2026-09-03",
+        parliamentaryStatus: "Beschlossen",
+        summary: "Die veröffentlichte Bewertung trennt Versorgungspotenzial und Kapazitätsrisiken.",
+        versionNote: "Fachstand 2.0",
+      },
+      {
+        slug: "fall-b",
+        plainTitle: "Unveröffentlichte Bewertung",
+        editorialStatus: "PUBLISHED",
+        statusVerification: "VERIFIED",
+        lastUpdated: "2026-09-03",
+        summary: "Eine WÖk-Wirkungsanalyse ist noch nicht veröffentlicht.",
+      },
+    ],
+  });
+  const [assessment] = parseWoekPublicAssessments(raw, parliamentSource);
+  assert.equal(assessment.title, "Neue WÖk-Parlamentsbewertung: Notfallreform");
+  assert.equal(assessment.url, "https://parlament.wirkungsoekonomie.de/entscheidungen/fall-a");
+  assert.equal(assessment.published_at, "2026-09-03T12:00:00.000Z");
+  assert.equal(parseFeed(raw, parliamentSource).length, 1);
 });
 
 test("Deduplizierung, Ähnlichkeit und Story-Cluster sind deterministisch", () => {
@@ -252,6 +293,14 @@ test("Längere Detailzusammenfassung wird separat geprüft", () => {
   assert.deepEqual(validateAnalysis(analysis, candidate()), []);
   analysis.detail_summary = "Zu kurz.";
   assert.ok(validateAnalysis(analysis, candidate()).includes("AI_DETAIL_SUMMARY_LENGTH"));
+});
+
+test("Abkürzungen werden bei der Satzprüfung nicht als eigene Sätze gezählt", () => {
+  const analysis = validAnalysis();
+  const story = candidate();
+  story.sources[0].summary = "Der Mechanismus umfasst bis zu 35 Mrd. EUR.";
+  analysis.summary = "Der Mechanismus umfasst bis zu 35 Mrd. EUR. Seine tatsächliche Wirkung bleibt offen.";
+  assert.deepEqual(validateAnalysis(analysis, story), []);
 });
 
 test("Belegte Zahlen und benannte SDG-Referenznummern bleiben zulässig", () => {

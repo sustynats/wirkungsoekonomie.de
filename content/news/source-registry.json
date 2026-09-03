@@ -193,6 +193,32 @@
       "allowed_redirect_hosts": ["www.bverwg.de"],
       "last_success": null,
       "last_error": null
+    },
+    {
+      "source_id": "woek-journal",
+      "name": "Journal der Wirkungsökonomie",
+      "url": "https://wirkungsoekonomie.de/journal/",
+      "feed_url": "https://wirkungsoekonomie.de/feeds/journal.xml",
+      "source_type": "woek_journal_rss",
+      "topic": "Wirkungsökonomie",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 82,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "woek-parlament-bewertungen",
+      "name": "Wirkungsportal Parlament – veröffentlichte WÖk-Bewertungen",
+      "url": "https://parlament.wirkungsoekonomie.de/",
+      "feed_url": "https://parlament.wirkungsoekonomie.de/api/parliament/cases",
+      "source_type": "woek_public_assessments_json",
+      "topic": "Demokratie",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 90,
+      "last_success": null,
+      "last_error": null
     }
   ]
 }
