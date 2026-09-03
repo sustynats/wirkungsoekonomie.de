@@ -39,8 +39,11 @@ jobs:
         if: steps.slot.outputs.should_run == 'true'
         env:
           WOEK_NEWS_MONTHLY_AI_BUDGET_USD: "5"
-          # Vier Einzelanalysen halten auch mit Wiederholungen Abstand zum Worker-Limit.
+          # Vier Einzelanalysen entsprechen exakt dem reservierten Worker-Limit.
           WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "4"
+          # Technische Wiederholungen bleiben in der dauerhaften Stunden-Queue. So
+          # verbraucht ein 503 nicht mehrere der vier reservierten Worker-Slots.
+          WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
           # Längere Detailfassungen bleiben pro Anfrage unter dem Upstream-Zeitfenster.
           WOEK_NEWS_AI_BATCH_SIZE: "1"
           WOEK_NEWS_AI_BATCH_DELAY_MS: "30000"

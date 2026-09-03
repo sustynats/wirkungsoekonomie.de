@@ -536,6 +536,7 @@ export async function runWirkungsticker(options = {}) {
         const aiResult = await (options.callAiImpl || callWoekAi)(batch, {
           apiUrl: process.env.WOEK_NEWS_API_URL,
           timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
+          attempts: Number(process.env.WOEK_NEWS_AI_ATTEMPTS_PER_STORY || 1),
         });
         report.provider ||= aiResult.provider;
         report.model ||= aiResult.model;
@@ -576,11 +577,16 @@ export async function runWirkungsticker(options = {}) {
         const reason = sanitizeError(error);
         report.ai_error = reason;
         report.failed_batch_offset = offset;
-        for (const candidate of selected.slice(offset)) {
+        const rateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
+        const deferred = rateLimited ? selected.slice(offset) : batch;
+        for (const candidate of deferred) {
           byId.set(candidate.story_id, pendingRecord(candidate, "AI_PROVIDER_UNAVAILABLE", now, [reason]));
           report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_PROVIDER_UNAVAILABLE" });
         }
-        break;
+        // Ein ausgeschöpftes Client-Limit sperrt alle weiteren Aufrufe dieses
+        // Laufs. Bei 5xx/Timeout ist dagegen nur die betroffene Story vertagt;
+        // die übrigen vier reservierten Slots dürfen unabhängig weiterarbeiten.
+        if (rateLimited) break;
       }
     }
   } else {
