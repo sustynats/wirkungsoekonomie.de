@@ -310,6 +310,8 @@ function questionActionsHtml() {
 
 function getContextualQuestions() {
   const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
+  // News and source profiles are not glossary entries.
+  if (/^wirkungsticker(?:\/|$)/.test(path)) return [];
   const pageText = `${document.title} ${mainElement?.textContent || ""}`.toLowerCase();
 
   if (/^blog\/.+\.html$/.test(path)) {
