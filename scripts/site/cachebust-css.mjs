@@ -13,6 +13,9 @@ try {
     process.exit(0);
   }
   const hash = crypto.createHash("sha256").update(fs.readFileSync(cssPath)).digest("hex").slice(0, 12);
+  // Keep the shared Wirkungsraum runtime current on every page, not just the AI page.
+  const mainPath = path.join(SITE, "assets", "js", "main.js");
+  const mainHash = fs.existsSync(mainPath) ? crypto.createHash("sha256").update(fs.readFileSync(mainPath)).digest("hex").slice(0, 12) : null;
   const re = /style\.css\?v=[^"'\s>]+/g;
   const replacement = `style.css?v=${hash}`;
   let changed = 0, scanned = 0;
@@ -23,10 +26,9 @@ try {
       else if (e.isFile() && e.name.endsWith(".html")) {
         scanned++;
         const s = fs.readFileSync(full, "utf8");
-        if (s.includes("style.css?v=")) {
-          const out = s.replace(re, replacement);
-          if (out !== s) { fs.writeFileSync(full, out); changed++; }
-        }
+        let out = s.replace(re, replacement);
+        if (mainHash) out = out.replace(/assets\/js\/main\.js(?:\?v=[^"'\s>]+)?/g, `assets/js/main.js?v=${mainHash}`);
+        if (out !== s) { fs.writeFileSync(full, out); changed++; }
       }
     }
   };

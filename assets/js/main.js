@@ -3545,17 +3545,19 @@ const WoekUserSpace = (() => {
     return parseJson(storage.getItem(namespace), emptyStore());
   }
 
-  function saveRawStore(store) {
+  function saveRawStore(store, requirePersistent = false) {
     store.updated_at = timestamp();
     const normalized = normalizeStore(store);
     const storage = localStorageSafe();
     if (!storage) {
+      if (requirePersistent) throw new Error("Browser-Speicher ist nicht verfügbar.");
       memoryStore = normalized;
       return normalized;
     }
     try {
       storage.setItem(namespace, JSON.stringify(normalized));
-    } catch {
+    } catch (error) {
+      if (requirePersistent) throw error;
       memoryStore = normalized;
     }
     return normalized;
@@ -3732,10 +3734,10 @@ const WoekUserSpace = (() => {
     return store;
   }
 
-  function updateStore(mutator) {
-    const store = loadStore();
+  function updateStore(mutator, requirePersistent = false) {
+    const store = clone(loadStore());
     const result = mutator(store);
-    saveRawStore(store);
+    saveRawStore(store, requirePersistent);
     return result;
   }
 
@@ -3929,7 +3931,7 @@ const WoekUserSpace = (() => {
     return updateStore((store) => {
       const object = store.objects.ai_query_history;
       const now = timestamp();
-      const id = item.id || normalizeId(`ki-${question}`);
+      const id = item.id || `ki-${crypto.randomUUID()}`;
       const existing = Array.isArray(object.items) ? object.items.find((entry) => entry.id === id) : null;
       const firstAskedAt = existing?.first_asked_at || existing?.asked_at || now;
       const nextItem = normalizeSyncRecord(
@@ -3938,22 +3940,29 @@ const WoekUserSpace = (() => {
           ...item,
           id,
           question,
-          answer: String(item.answer || "").trim().slice(0, 6000),
-          sources: normalizeHistoryResults(item.sources, 10),
+          answer: String(item.answer || "").trim(),
+          sources: (Array.isArray(item.sources) ? item.sources : []).flatMap((source) => {
+            try {
+              if (typeof source?.url !== "string" || !source.url.trim()) return [];
+              const url = new URL(source.url, "https://wirkungsoekonomie.de");
+              if (!/^https?:$/.test(url.protocol) || url.username || url.password) return [];
+              return [{ url: url.href, title: String(source.title || "Quelle"), excerpt: String(source.excerpt || source.note || ""), rank: source.rank, section: source.section, type: source.type }];
+            } catch { return []; }
+          }),
           first_asked_at: firstAskedAt,
-          asked_at: now,
+          asked_at: existing?.asked_at || item.asked_at || now,
           updated_at: now,
-          ask_count: Math.max(1, Number(existing?.ask_count || 0) + 1),
+          ask_count: Math.max(1, Number(existing?.ask_count || 1)),
           source_count: Number.isFinite(Number(item.source_count)) ? Number(item.source_count) : normalizeHistoryResults(item.sources).length,
           synced_at: null,
           sync_status: "local_changed"
         },
         store.sync
       );
-      object.items = [nextItem, ...(Array.isArray(object.items) ? object.items.filter((entry) => entry.id !== id) : [])].slice(0, 120);
+      object.items = [nextItem, ...(Array.isArray(object.items) ? object.items.filter((entry) => entry.id !== id) : [])];
       touchObject(store, "ai_query_history", now);
       return clone(nextItem);
-    });
+    }, true);
   }
 
   function resetObject(objectName) {
@@ -5768,7 +5777,8 @@ const WirkungsraumLayer = (() => {
 
   function aiReplayUrl(item) {
     const url = new URL(i18nPath("/woek-ki/", "/en/woek-ai/"), window.location.origin);
-    if (item.question) url.searchParams.set("frage", item.question);
+    if (item.id) url.searchParams.set("antwort", item.id);
+    else if (item.question) url.searchParams.set("frage", item.question);
     return `${url.pathname}${url.search}`;
   }
 
@@ -5808,7 +5818,7 @@ const WirkungsraumLayer = (() => {
       ${answerExcerpt ? `<p class="card-text">${escapeHtml(answerExcerpt)}${cleanText(item.answer || "").length > answerExcerpt.length ? " ..." : ""}</p>` : ""}
       ${resultLinkList(item.sources, i18n("Keine Quellen gespeichert.", "No sources saved."))}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(aiReplayUrl(item))}">${i18n("Frage erneut öffnen", "Open question again")}</a>
+        <a class="btn btn-primary" href="${escapeAttribute(aiReplayUrl(item))}">${i18n("Gespeicherte Antwort öffnen", "Open saved answer")}</a>
         <button class="btn btn-secondary" type="button" data-prefill-ai-question="${escapeAttribute(item.question || "")}">${i18n("Frage übernehmen", "Use question")}</button>
         ${options.dashboard ? "" : `<a class="btn btn-secondary" href="${i18nPath("/mein-wirkungsraum/#ki-anfragen", "/en/my-impact-space/#ai-history")}">${i18n("Im Wirkungsraum ansehen", "View in My Impact Space")}</a>`}
       </p>

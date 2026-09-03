@@ -277,6 +277,7 @@
         }
       }
     </script>
+    <link rel="stylesheet" href="../assets/css/woek-ai-results.css?v=20260904">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -418,7 +419,7 @@
           <div class="section-header">
             <p class="hero-kicker">Mein Wirkungsraum</p>
             <h2 id="ai-history-title">Meine vergangenen KI-Anfragen</h2>
-            <p>Frühere KI-Fragen bleiben mit Antwort und Quellen lokal in diesem Browser. Du kannst eine Frage erneut öffnen oder sie direkt wieder in das Eingabefeld übernehmen.</p>
+            <p>Frühere KI-Fragen bleiben mit Antwort und Quellen lokal in diesem Browser. Öffne die gespeicherte Antwort, ohne sie neu zu erzeugen. Über „Antwort teilen“ kannst Du eine einzelne Antwort ausdrücklich öffentlich freigeben.</p>
           </div>
           <div class="wirkungsraum-history-list" data-ai-history-inline-list>
             <article class="card"><p class="card-text">Noch keine vergangenen KI-Anfragen in diesem Browser.</p></article>
@@ -530,8 +531,10 @@
     <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
   </div>
 </footer>
-    <script src="../assets/js/main.js?v=20260628-woek-feedback"></script>
+<script defer src="../assets/js/newsletter.js?v=20260815-landing"></script>
+    <script src="../assets/js/main.js?v=20260904-ai-results"></script>
     <script src="../assets/js/woek-ai-client.js?v=20260711-ia-infra"></script>
+    <script src="../assets/js/woek-ai-results.js?v=20260904"></script>
     <script>
       const form = document.querySelector("#woek-ai-form");
       const question = document.querySelector("#woek-ai-question");
@@ -556,6 +559,22 @@
       const glossaryLookupUrl = "../assets/data/glossary-lookup.json";
       let glossaryLookupPromise = null;
       let currentFeedback = null;
+      let requestInFlight = false;
+      const answerResults = window.WoekAiResults.attach({
+        apiBase: apiUrl.replace(/\/api\/woek-ai(?:\?.*)?$/, ""),
+        render(item, shared) {
+          question.value = item.question;
+          placeholder.hidden = true;
+          answer.textContent = item.answer;
+          mode.textContent = shared ? "Geteilte Antwort" : "Gespeicherte Antwort";
+          provider.textContent = item.provider || "WÖk-KI";
+          model.textContent = item.model || "Gespeicherter Stand";
+          sourceCount.textContent = String(item.sources.length);
+          renderSources(item.sources);
+          setFeedbackVisible(false);
+          setLoading(false);
+        }
+      });
 
       // Fortschrittsbalken (analog zum Wirkungscheck): zeigt, was gerade läuft.
       const progressEl = document.querySelector("#woek-ai-progress");
@@ -660,9 +679,12 @@
       function setLoading(isLoading) {
         submit.disabled = isLoading || question.value.trim().length < 4;
         submit.textContent = isLoading ? "Antwort wird erstellt" : "Frage stellen";
+        clearButton.disabled = isLoading;
+        document.querySelectorAll(".woek-ai-example").forEach((button) => { button.disabled = isLoading; });
       }
 
       function clearResult() {
+        answerResults.clear();
         currentFeedback = null;
         placeholder.hidden = false;
         placeholder.textContent = "Noch keine Frage gestellt.";
@@ -833,9 +855,8 @@
       }
 
       function recordAiHistory(questionValue, payload = {}) {
-        if (!window.WoekUserSpace?.recordAiQuery) return;
         const items = Array.isArray(payload.sources) ? payload.sources : [];
-        window.WoekUserSpace.recordAiQuery({
+        answerResults.capture({
           question: questionValue,
           answer: payload.answer || answer.textContent || "",
           sources: items,
@@ -844,7 +865,6 @@
           provider: payload.provider || provider.textContent || "",
           model: payload.model || model.textContent || ""
         });
-        document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
       }
 
       function getClientId() {
@@ -914,7 +934,7 @@
           return;
         }
 
-        sources.innerHTML = items.map((item) => `
+        sources.innerHTML = window.WoekAiResults.safeSources(items).map((item) => `
           <a class="woek-ai-source-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
             <span>[${escapeHtml(item.rank)}] ${escapeHtml(item.section)} · ${escapeHtml(item.type)}</span>
             <strong>${escapeHtml(item.title)}</strong>
@@ -923,7 +943,7 @@
         `).join("");
       }
 
-      question.addEventListener("input", () => setLoading(false));
+      question.addEventListener("input", () => { if (!requestInFlight) setLoading(false); });
 
       clearButton.addEventListener("click", () => {
         question.value = "";
@@ -949,12 +969,15 @@
       }
 
       applyQuestionParam();
+      answerResults.restore();
 
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
         const value = question.value.trim();
-        if (value.length < 4) return;
+        if (value.length < 4 || requestInFlight) return;
 
+        requestInFlight = true;
+        answerResults.begin();
         setLoading(true);
         placeholder.hidden = false;
         placeholder.textContent = "Die Beta erstellt zuerst eine Antwort und prüft danach Quellen, WÖk-Einordnung und Grenzen.";
@@ -1026,6 +1049,7 @@
           mode.textContent = "Fehler";
           renderSources([]);
         } finally {
+          requestInFlight = false;
           stopProgress();
           setLoading(false);
         }

@@ -1,0 +1,8 @@
+.woek-ai-answer-actions { margin-block: 1.5rem; border-top: 1px solid var(--border, #d9d3c8); padding-top: 1rem; }
+.woek-ai-answer-actions[hidden], .woek-ai-answer-actions [hidden] { display: none !important; }
+.woek-ai-answer-actions .woek-ai-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.woek-ai-answer-actions .btn { white-space: normal; overflow-wrap: anywhere; }
+.woek-ai-share-consent { margin-top: 1rem; padding: 1rem; background: var(--surface-soft, #f4f1e9); border-radius: .75rem; }
+.woek-ai-shared-link { display: grid; gap: .75rem; min-width: 0; }
+.woek-ai-shared-link input { box-sizing: border-box; width: 100%; min-width: 0; padding: .75rem; font: inherit; }
+.woek-ai-shared-link a, .woek-ai-answer { overflow-wrap: anywhere; }
