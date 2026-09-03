@@ -8,6 +8,7 @@ on:
     paths:
       - '**/*.html'
       - 'content/**'
+      - '!content/taxonomy/site-map.json'
       - 'scripts/**'
       - 'tools/apply_state_sustainability_architecture.py'
       - 'tools/apply_state_sustainability_sources.py'
@@ -25,10 +26,7 @@ on:
       - 'tools/check_state_sustainability_wiwi_scope.py'
       - '.github/workflows/deploy.yml'
       - 'sitemap.xml'
-      - 'assets/search/**'
-      - 'public/data/woek-search-meta.json'
       - 'llms.txt'
-      - '.github/workflows/state-sustainability-audit.yml'
   workflow_dispatch:
 
 permissions:
