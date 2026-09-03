@@ -31,6 +31,7 @@ function mockRun(calls, overrides = {}) {
     if (command === "model get") return JSON.stringify(MODEL);
     if (command === "generate cost") return '{"credits":2}';
     if (command === "generate create") return '{"job_ids":["job-123456"]}';
+    if (command === "generate get") return '{"id":"job-123456","status":"queued"}';
     if (command === "generate wait") return '{"id":"job-123456","status":"completed","result_url":"https://d8j0ntlcm91z4.cloudfront.net/result.png"}';
     throw new Error(`Unexpected command ${command}`);
   };
@@ -74,6 +75,12 @@ test("disabled provider and changed cost never create a paid job", async (t) => 
   await assert.rejects(createHiggsfieldAdapter({directory,enabled:false}).generate(STORY),{code:"HIGGSFIELD_DISABLED"});
   await assert.rejects(createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls,{"generate cost":()=>'{"credits":99}'})}).generate(STORY),{code:"HIGGSFIELD_COST_CHANGED"});
   assert.equal(calls.some((a)=>a[1]==="create"),false);
+});
+test("terminal failed provider job is persisted and never waits or pays again",async(t)=>{
+  const calls=[],directory=temp(t),provider=createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls,{"generate get":()=>'{"id":"job-123456","status":"failed"}'})});
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
+  assert.equal(calls.filter(a=>a[1]==="create").length,1);assert.equal(calls.filter(a=>a[1]==="wait").length,0);
 });
 test("ambiguous submit is durable and cannot create another paid job", async (t) => {
   const calls=[],directory=temp(t), run=mockRun(calls,{"generate create":()=>{throw imageError("HIGGSFIELD_TIMEOUT");},"generate list":()=>"[]"});

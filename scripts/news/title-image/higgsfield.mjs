@@ -143,7 +143,16 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
           atomicJson(journal, record);
         }
         let result;
+        // The CLI wait command can itself time out even for a failed job. Read
+        // the terminal state first so such jobs do not remain queued forever.
+        const current = generationResult(parseCliJson(await run(["generate", "get", record.job_id, "--json"])));
+        if (["failed", "error", "cancelled"].includes(current.status)) {
+          record.status = current.status; atomicJson(journal, record);
+          throw imageError("HIGGSFIELD_PREVIOUS_JOB_FAILED");
+        }
+        if (current.status === "completed" && current.url) result = current;
         for (let attempt = 0; attempt < 2; attempt++) {
+          if (result?.url) break;
           try {
             result = generationResult(parseCliJson(await run(["generate", "wait", record.job_id, "--timeout", "55s", "--interval", "5s", "--quiet", "--json"], { timeout: 60000 })));
             if (result.status === "completed" && result.url) break;
