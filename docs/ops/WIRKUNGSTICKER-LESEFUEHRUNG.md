@@ -8,4 +8,6 @@ Reihenfolge: „Worum geht es?“ → „Was ist wie belegt?“ → Faktencheck 
 
 Dies ist eine reine Darstellungsänderung. Nachrichtentexte, Belege, Versionsstände und Veröffentlichungsdaten werden nicht verändert; daraus entsteht keine neue Push-Mitteilung. Die separate öffentliche Release-Revision und aktualisierte Cache-Version machen den neuen Seitenaufbau in der WebApp verfügbar.
 
+Nachtrag: Nummerierte SDG-Verweise im Referenzrahmen tragen ihre ausgeschriebenen Zielnamen aus dem bestehenden Website-Katalog `assets/data/sdg-reference.json`. Auch Kurzlisten wie „SDG 7, 9 und 13“ werden verständlich ausgeschrieben. Einschränkungen, andere Referenzrahmen, Unterzielnummern und SDG+ bleiben erhalten. Die Formatierung erfolgt ausschließlich bei der Seitenerzeugung, auch für bestehende Akten; keine Neubewertung, keine zusätzliche KI-Anfrage und kein neuer Nachrichten-Push.
+
 Abnahme: 166 News-Tests einschließlich Reihenfolge, Warnhinweisen, unveränderten Daten und Legacy-Fallback. Browserprüfung mit 390 und 1365 Pixeln, funktionierender Belegstand-Navigation, ohne horizontalen Seitenüberlauf und ohne festgestellte JavaScript-Fehler. Kein Test auf einem physischen iPhone.
