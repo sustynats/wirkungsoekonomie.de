@@ -1,7 +1,651 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T15:26:48.913Z",
+  "updated_at": "2026-09-04T15:51:24.598Z",
   "stories": [
+    {
+      "story_id": "wt-b5e0a39f46388642",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-c104f14dbf08f2d8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1bc73911da65ab64-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-ddddb3381711c629-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "speech-by-commissioner-lahbib-at-the-european-parliament-on-the-2026-wildfire-season-388642",
+      "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+      "source_summary": "Die Europäische Kommission veröffentlicht eine Rede von Kommissarin Lahbib vor dem Europäischen Parlament zur Waldbrandsaison 2026. Darin heißt es, der Sommer habe die EU bereits stark belastet. Nach der Mitteilung sind in der EU in diesem Sommer fast 700.000 Hektar verbrannt. Die Quelle ordnet diese Fläche als größer ein als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte. Weitere Details zur Methodik, zum genauen Zeitraum und zu möglichen Folgen enthält der gelieferte Auszug nicht.\n\nEs handelt sich um eine institutionelle Rede der Kommission vom 1. September 2026. Der Ausschnitt gibt nur den zentralen Befund und eine Einordnung der Größenordnung wieder. Ob und wie die Zahl im Original weiter erklärt oder abgegrenzt wird, bleibt im gelieferten Material offen.",
+      "summary": "Die Kommission meldet für die EU fast 700.000 verbrannte Hektar in diesem Sommer. Sie sagt zugleich, das sei mehr als der Jahresdurchschnitt der vergangenen zwei Jahrzehnte.",
+      "detail_summary": "Gesichert ist zunächst nur der von der Kommission veröffentlichte Befund, dass in diesem Sommer in der EU fast 700.000 Hektar verbrannt sind. Die Quelle ergänzt, dass dies über dem Jahresdurchschnitt der vergangenen zwei Jahrzehnte liege. Das ist relevant, weil es auf eine mögliche Verschärfung der Waldbrandbelastung für Mensch, Infrastruktur und Natur hindeutet und damit Schutz-, Einsatz- und Präventionskapazitäten unter Druck setzen kann. Der Wirkpfad verläuft über größere Brandflächen, höhere Einsatzlast und potenziell steigende Folgekosten für Gesundheit, Umwelt und öffentliche Haushalte. Ob daraus bereits eine längerfristige Veränderung der Brandlage folgt, ist mit dem vorliegenden Ausschnitt nicht belastbar zu belegen; Methodik, räumliche Abgrenzung und Ursachen bleiben offen.",
+      "why_relevant": "Die Meldung enthält eine zustandsbezogene Größenordnung zur Waldbrandlage in der EU und damit einen möglichen Hinweis auf erhöhte Belastung für Mensch, Natur und öffentliche Systeme.",
+      "topic": [
+        "Gesundheit",
+        "Europa"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Brandflächen dieser Größenordnung können Einsatzkräfte, Gesundheitsschutz und betroffene Bevölkerung erheblich belasten."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Großflächige Brände betreffen Wälder, Böden, Biodiversität und Emissionen direkt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Nachricht berührt öffentliche Krisenreaktion und die Belastbarkeit gemeinsamer EU-Politik, ohne selbst eine Entscheidung zu enthalten."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Verbrannte Fläche",
+            "value": "700.000",
+            "unit": "Hektar",
+            "context": "fast so viel Fläche sei in der EU bereits verbrannt"
+          }
+        ],
+        "affected_groups": [
+          "natur",
+          "staat",
+          "kommunen",
+          "europa"
+        ],
+        "timeline": [
+          {
+            "date": "2026-09-01",
+            "label": "Rede der Kommissarin im Europaparlament"
+          }
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "risiko",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-01T16:09:08.000Z",
+      "last_updated": "2026-09-04T15:53:43.395Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-88c06765dd812ab1333c",
+      "source_published_at": "2026-09-01T16:09:08.000Z",
+      "published_at": "2026-09-04T04:38:09.628Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "eu-kommission-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Europäische Kommission – Press Corner",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T16:09:08.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a840cc8db943b070",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a840cc8db943b070-013027a7128d714d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a840cc8db943b070-3b5cf4c7e20899e2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a840cc8db943b070-c5f982d590ba3c0e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "anhorung-zur-anderung-des-dungegesetzes-43b070",
+      "title": "Anhörung zur Änderung des Düngegesetzes",
+      "source_summary": "Der Deutsche Bundestag kündigt für Dienstag, 8. September, eine öffentliche Anhörung des Ausschusses für Landwirtschaft, Ernährung und Heimat zur geplanten Änderung des Düngegesetzes an. Die Sitzung soll von 15 bis 17 Uhr im Sitzungssaal 4.700 des Paul-Löbe-Hauses stattfinden und per Livestream sowie später in der Mediathek übertragen werden.\n\nAls Grundlage nennt die Mitteilung den von der Bundesregierung eingebrachten Entwurf eines Zweiten Gesetzes zur Änderung des Düngegesetzes. Genannt werden außerdem ein vorgesehenes Wirkungsmonitoring, ein erweitertes bundesweites Monitoring zur Berichterstattung gegenüber der EU-Kommission und weitere Änderungen beim Inverkehrbringen von Düngemitteln. Als Sachverständige und Interessenvertreter sind mehrere Personen geladen.",
+      "summary": "Der Bundestag kündigt eine öffentliche Anhörung zur Änderung des Düngegesetzes an. Der Entwurf soll unter anderem ein neues Wirkungsmonitoring und weitere Vorgaben für das Düngerecht schaffen.",
+      "detail_summary": "Gesichert ist zunächst nur der Verfahrensschritt: Der Landwirtschaftsausschuss des Bundestags will am 8. September eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen. Materiell relevant ist das, weil der Entwurf laut Mitteilung nicht nur redaktionell ist, sondern eine Rechtsgrundlage für ein Wirkungsmonitoring und ein erweitertes bundesweites Monitoring schaffen soll. Das berührt Regulierung, Datenerhebung und die Berichterstattung gegenüber der EU-Kommission. Mögliche Folge ist, dass sich die künftige Steuerung des Düngerechts stärker an gemessenen Wirkungen und an EU-Vorgaben ausrichtet. Offen bleibt aber, ob und in welcher Form der Entwurf nach der Anhörung verändert, beschlossen oder umgesetzt wird; die Quelle belegt nur das Anhörungsverfahren, nicht den späteren Ausgang.",
+      "why_relevant": "Die Meldung markiert einen konkreten Schritt in einem Gesetzgebungsverfahren mit möglicher Wirkung auf Düngerecht, Monitoringpflichten und EU-Berichterstattung.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Landwirtschaftliche Regulierung kann Betriebe, Beschäftigte und Verbraucherpreise indirekt betreffen, aber der Quellenstand zeigt erst ein Anhörungsverfahren."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Düngerecht und Monitoring sind direkt mit Nährstoffeinträgen, Wasserqualität und Umweltsteuerung verknüpft."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Anhörung ist ein parlamentarischer Korrektur- und Prüfprozess; sie stärkt Transparenz, ist aber noch keine Entscheidung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Anhörungstermin",
+            "value": "8. September",
+            "unit": "Datum",
+            "context": "Geplanter Termin der öffentlichen Anhörung"
+          },
+          {
+            "label": "Sitzungszeit",
+            "value": "15 bis 17 Uhr",
+            "unit": "Uhrzeit",
+            "context": "Geplante Dauer der Anhörung"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "chance",
+          "democracy": "chance"
+        }
+      },
+      "first_seen": "2026-09-04T15:16:00.000Z",
+      "last_updated": "2026-09-04T15:53:11.781Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-55a7906a6116a9b09f49",
+      "source_published_at": "2026-09-04T15:14:00.000Z",
+      "published_at": "2026-09-04T15:53:11.781Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib",
+            "bundestag-hib",
+            "bundestag-hib",
+            "bundestag-hib",
+            "bundestag-hib",
+            "bundestag-hib",
+            "bundestag-hib",
+            "bundestag-hib",
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "bundestag-hib",
+              "bundestag-hib"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob aus der Anhörung neue Änderungswünsche oder eine Beschlussempfehlung folgen",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Ausschussbeschluss, Änderungsantrag oder Bericht nach der Anhörung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bfada2f9a8ffd28e",
+          "announced_at": "2026-09-04T15:16:00.000Z",
+          "follow_up_date": "2026-09-11T15:53:11.781Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210250",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:16:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210244",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:14:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210340",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:46:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210334",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:44:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210328",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:42:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210322",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:40:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210316",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:38:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210310",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:36:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210304",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T15:34:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-1fbb056ccaaf351d",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-0ba05b514a1f5ae7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-3ec4f21768018bd5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-41d304b1665ae511-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
+      "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+      "source_summary": "Nach mehreren Sabotageangriffen auf die Energieversorgung in Deutschland sucht die Polizei europaweit nach einem Tatverdächtigen aus Gevelsberg in Nordrhein-Westfalen. Laut Bericht gehen die Ermittler davon aus, dass der 48-Jährige Bekennerschreiben verfasst hat; die Briefe seien bei deutschen Medienhäusern eingegangen.\n\nIn dem Schreiben werde auf Angriffe auf Umspannwerke in Brandenburg und Nordrhein-Westfalen Bezug genommen. Der Text nenne Details, die zunächst noch nicht öffentlich bekannt gewesen seien, und als Motiv werde der Kampf gegen fossile Energieträger genannt. Zugleich wird auf weitere Vorfälle und auf Reaktionen aus der Politik verwiesen, darunter die Einschätzung eines möglichen Einzeltäters und ein angekündigtes Sicherheitszentrum in Brandenburg.",
+      "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
+      "detail_summary": "Gesichert aus der vorliegenden Quelle ist vor allem, dass die Polizei nach einem 48-jährigen Mann aus Gevelsberg fahndet und die Ermittler ein Bekennerschreiben für echt halten. Der Bericht ordnet die Sache in eine Serie von Sabotageangriffen auf die Energieversorgung ein und nennt Angriffe auf Umspannwerke in Brandenburg und Nordrhein-Westfalen. Für die Bewertung ist das relevant, weil kritische Infrastruktur betroffen ist und schon ein begrenzter Eingriff in Stromanlagen Versorgungsrisiken, Sicherheitsmaßnahmen und politische Reaktionen auslösen kann. Ein möglicher Wirkpfad führt über den Verdacht auf organisierte oder wiederholte Sabotage zu mehr Schutzaufwand und zu Änderungen bei Überwachung und Prävention. Offen bleibt aber, wer die Taten tatsächlich begangen hat, wie groß der Sachschaden ist und ob die Zuschreibungen der Ermittler später bestätigt werden. Die Evidenz ist derzeit journalistisch brauchbar, aber nur sekundär belegt; eine belastbare Zurechnung braucht weitere unabhängige Quellen oder Originalbelege.",
+      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, laufende Ermittlungen und mögliche Schutzfolgen für Energieversorgung und Sicherheitsarchitektur.",
+      "topic": [
+        "Energie",
+        "Europa",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell viele Haushalte und Versorgungsnutzer, weil Strominfrastruktur angegriffen wurde und Schutzmaßnahmen folgen können."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Bezug zu fossilen Energieträgern ist nur als behauptetes Motiv belegt; konkrete Umweltwirkung bleibt offen."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Die Meldung kann Sicherheitsdebatten, Behördenhandeln und Schutz kritischer Infrastruktur berühren; die Beleglage bleibt aber vorläufig."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Alter des Verdächtigen",
+            "value": "48",
+            "unit": "Jahre",
+            "context": "Der Bericht nennt einen 48-jährigen Verdächtigen."
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "staat",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T11:09:14.000Z",
+      "last_updated": "2026-09-04T15:52:29.187Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-35d991525796ba55dcd9",
+      "source_published_at": "2026-09-04T15:44:10.000Z",
+      "published_at": "2026-09-04T11:12:12.390Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei den gesuchten Mann gefasst hat",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimeldung oder belastbare Medienbestätigung einer Festnahme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3beb5028a69fd7e0",
+          "announced_at": "2026-09-04T15:44:10.000Z",
+          "follow_up_date": "2026-09-11T15:52:29.187Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:44:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-5547189d2645384a",
       "title_image": {
@@ -2059,94 +2703,6 @@
           "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T08:13:24.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-1fbb056ccaaf351d",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-8c915ef00a333f6a-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-6b0aa55a187453c5-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-beae49327832082d-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
-      "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
-      "source_summary": "Die Meldung berichtet über Sabotageakte an mehreren Umspannwerken und ein dazugehöriges Bekennerschreiben. Die Polizei hält dieses Schreiben für authentisch. Nach Informationen des Deutschlandfunks gilt ein 49-jähriger Mann aus Gevelsberg im südlichen Ruhrgebiet als tatverdächtig, nach ihm wird bundesweit gefahndet.\n\nIm Text heißt es außerdem, am Dienstag sei die Stromversorgung in Brandenburg und Nordrhein-Westfalen gezielt gestört worden. Gestern Abend seien ähnliche Gegenstände in der Nähe von Dormagen gefunden worden. Zudem werde in Ganderkesee sowie an einem weiteren Umspannwerk in Weisweiler bei Aachen ermittelt oder Hinweisen nachgegangen.",
-      "summary": "Die Polizei hält ein Bekennerschreiben zu den Sabotageakten für echt. Ein 49-jähriger Verdächtiger aus Gevelsberg wird bundesweit gesucht.",
-      "detail_summary": "Gesichert ist zunächst die polizeiliche Einschätzung, dass ein Bekennerschreiben im Zusammenhang mit der Sabotage an mehreren Umspannwerken authentisch ist. Der Deutschlandfunk nennt zudem einen 49-jährigen Mann aus Gevelsberg als tatverdächtig; nach ihm wird bundesweit gefahndet. Das ist für die Lage relevant, weil sich der Verdacht damit von einem bloßen Störfall zu einem konkreten Ermittlungs- und Fahndungsvorgang verdichtet. Der Wirkpfad liegt vor allem in der Sicherheit kritischer Infrastruktur: Schon einzelne Eingriffe können Versorgung, Alarmierung und Schutzaufwand verändern. Möglich sind kurzfristig mehr Kontrollen, technische Nachrüstungen und ein höherer organisatorischer Aufwand bei Netzbetreibern und Behörden. Offen bleibt jedoch, wie belastbar die Zuschreibung ist und wie weit die Sabotageakte tatsächlich reichten; dafür liegt hier nur eine sekundäre Quelle vor.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und eine bundesweite Fahndung. Das kann Schutzmaßnahmen, Behördenprioritäten und die Sicherheitslage für Versorgungssysteme beeinflussen.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Versorgungssicherheit und mögliche Folgen für Haushalte, Beschäftigte und Behörden im Umgang mit kritischer Infrastruktur."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Störung der Stromversorgung berührt Energieinfrastruktur; direkte Umweltfolgen sind aus der Quelle aber nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Ermittlungen zu Sabotage an kritischer Infrastruktur berühren staatliche Schutzfähigkeit und die Korrekturfähigkeit sicherheitsrelevanter Institutionen."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "haushalte",
-          "unternehmen",
-          "staat",
-          "beschaeftigte"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T11:09:14.000Z",
-      "last_updated": "2026-09-04T11:12:12.390Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-35d991525796ba55dcd9",
-      "source_published_at": "2026-09-04T11:09:14.000Z",
-      "published_at": "2026-09-04T11:12:12.390Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:09:14.000Z",
           "primary_source": false
         }
       ]
@@ -4827,107 +5383,6 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
           "source_type": "official_rss",
           "published_at": "2026-09-02T08:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-b5e0a39f46388642",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-bc11696bd602bc83-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-bc11696bd602bc83-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-bc11696bd602bc83-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "speech-by-commissioner-lahbib-at-the-european-parliament-on-the-2026-wildfire-season-388642",
-      "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
-      "source_summary": "Die Quelle ist eine Rede von Kommissarin Lahbib im Europäischen Parlament zur Waldbrandsaison 2026. Sie datiert aus Brüssel vom 1. September 2026 und beschreibt den Sommer als Belastungsprobe für die EU.\n\nIm sichtbaren Ausschnitt nennt die Rede als zentrale Zahl, dass bereits fast 700.000 Hektar in der EU verbrannt seien. Laut dem Text sei das mehr Land als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte; der vollständige Zusammenhang des Satzes ist im gelieferten Auszug jedoch abgeschnitten.",
-      "summary": "Lahbib sagte im Europaparlament, dass in der EU in diesem Sommer bereits fast 700.000 Hektar verbrannt seien. Der Auszug ordnet das als mehr als den Jahresdurchschnitt der vergangenen zwei Jahrzehnte ein.",
-      "detail_summary": "Gesichert ist aus der Primärquelle zunächst nur eine politische Aussage zur laufenden Waldbrandsaison: Kommissarin Lahbib nennt im Europaparlament fast 700.000 verbrannte Hektar in der EU. Das ist als erste Lagezahl materiell, weil sie einen großen Flächenverlust beschreibt und damit auf Belastungen für Natur, Landnutzung und öffentliche Krisenreaktion verweist. Der Wirkpfad liegt vor allem in den direkten Schäden durch Feuer sowie in möglichen Folgeeffekten auf Schutz, Wiederaufbau und Prävention. Für eine ex-post-Wirkungsbilanz reicht der Ausschnitt nicht aus; offen bleiben regionale Verteilung, Ursachen, Vergleichbarkeit und die Frage, ob weitere Maßnahmen angekündigt wurden. Die Evidenz ist vorläufig, weil nur ein sichtbarer Redeauszug vorliegt und keine unabhängige Bestätigung der Zahl.",
-      "why_relevant": "Die Meldung enthält eine konkrete, große Lagezahl zur Waldbrandlage in der EU und kann Prioritäten für Prävention, Einsatzplanung und Umweltpolitik beeinflussen.",
-      "topic": [
-        "Gesundheit",
-        "Europa"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Die Zahl verweist auf potenzielle Risiken für Gesundheit, Sicherheit und Infrastruktur, ohne dass im Auszug weitere Betroffenengruppen quantifiziert werden."
-        },
-        "planet": {
-          "relevance": "hoch",
-          "rationale": "Verbrannte Fläche ist ein direkter Indikator für Naturverlust, Emissionen und Belastung von Ökosystemen; die Größenordnung ist erheblich."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Im Auszug geht es primär um eine Lagebeschreibung im Parlament, nicht um eine demokratische Regel- oder Entscheidungsänderung."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Verbrannte Fläche",
-            "value": "700.000",
-            "unit": "Hektar",
-            "context": "Fast so viel Fläche sei in der EU bereits verbrannt"
-          }
-        ],
-        "affected_groups": [
-          "natur",
-          "europa"
-        ],
-        "timeline": [
-          {
-            "date": "2026-09-01",
-            "label": "Rede von Lahbib im Parlament"
-          }
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "risiko",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-01T16:09:08.000Z",
-      "last_updated": "2026-09-04T04:38:09.628Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-88c06765dd812ab1333c",
-      "source_published_at": "2026-09-01T16:09:08.000Z",
-      "published_at": "2026-09-04T04:38:09.628Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "eu-kommission-presse"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Europäische Kommission – Press Corner",
-          "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T16:09:08.000Z",
           "primary_source": true
         }
       ]
