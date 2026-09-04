@@ -1,7 +1,359 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T15:06:23.805Z",
+  "updated_at": "2026-09-04T15:21:35.641Z",
   "stories": [
+    {
+      "story_id": "wt-79a8fce4900e254f",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-e07a57962499eda5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-583523288c78fa29-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-df782c24eeb9ac57-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "france-announces-1-billion-aid-for-farmers-after-climate-hit-summer-0e254f",
+      "title": "France announces €1 billion aid for farmers after climate-hit summer",
+      "source_summary": "France 24 berichtet, Frankreich habe in diesem Jahr seinen heißesten Sommer seit Beginn der Aufzeichnungen erlebt. Genannt werden Hitzewellen, Dürre und große Waldbrände, die bis in den September hinein anhielten. Die nationale Wetterbehörde habe fünf Départements für mehrere Tage auf Orange-Alarm gesetzt; in einigen Gebieten würden bis zu 40 Grad erwartet.\n\nZugleich kündigte die Landwirtschaftsministerin einen Plan an, mehr als eine Milliarde Euro an Hilfen für den Agrarsektor freizusetzen. Der Bericht verweist darauf, dass die Landwirtschaft nach Darstellung der Quelle von dem extremen Wetter schwer betroffen sei.",
+      "summary": "Frankreichs Landwirtschaftsministerium kündigt nach einem extrem heißen Sommer Hilfen von mehr als einer Milliarde Euro an. Die Wetterlage bleibt mit Orange-Alarm und erwarteten 40 Grad weiter angespannt.",
+      "detail_summary": "Gesichert ist zunächst die Ankündigung von mehr als einer Milliarde Euro Hilfen für den französischen Agrarsektor nach einem Sommer mit Rekordhitze, Dürre und Waldbränden. France 24 berichtet außerdem, dass die nationale Wetterbehörde fünf Départements auf Orange-Alarm gesetzt habe und lokal 40 Grad erwartet würden. Die Nachricht ist materiell, weil sie auf eine staatliche finanzielle Reaktion auf klimabedingte Erntestress- und Einkommensrisiken verweist. Der Wirkpfad verläuft über Liquidität und Schadensabfederung für Betriebe; möglich sind kurzfristige Entlastung und höhere Resilienz, aber auch Mitnahmeeffekte oder unklare Verteilung. Offen bleibt, wie die Hilfen genau ausgestaltet, finanziert und an Betroffene verteilt werden. Die Evidenzlage ist vorerst eine einzelne journalistische Quelle; eine unabhängige Bestätigung der Ankündigung liegt hier nicht vor.",
+      "why_relevant": "Die Meldung verbindet Klimastress mit einer konkreten staatlichen Finanzzusage für einen systemrelevanten Wirtschaftssektor. Das betrifft mögliche Ernteausfälle, Einkommensstabilisierung und künftige Anpassungskapazitäten.",
+      "topic": [
+        "Klima",
+        "Europa",
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Entlastung für landwirtschaftliche Betriebe und Beschäftigte; Verteilungswirkung noch offen."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Die Ursache liegt in klimabedingter Extremhitze, Dürre und Bränden; Anpassung und Resilienz sind zentral."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Staatliche Mittelvergabe und Priorisierung sind politisch relevant, aber die demokratische Korrekturfähigkeit bleibt offen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Hilfen für den Agrarsektor",
+            "value": "1",
+            "unit": "Mrd. EUR",
+            "context": "mehr als eine Milliarde Euro sollen freigesetzt werden"
+          },
+          {
+            "label": "Départements auf Orange-Alarm",
+            "value": "fünf",
+            "unit": "Départements",
+            "context": "fünf Regionen standen mehrere Tage auf Orange-Alarm"
+          },
+          {
+            "label": "Temperatur in einigen Gebieten",
+            "value": "40",
+            "unit": "Grad",
+            "context": "bis zu 40 Grad werden erwartet"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "unternehmen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "risiko",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T15:12:29.000Z",
+      "last_updated": "2026-09-04T15:23:21.799Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-becb84b8e979276421c0",
+      "source_published_at": "2026-09-04T15:12:29.000Z",
+      "published_at": "2026-09-04T15:23:21.799Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260904-france-announces-%E2%82%AC1-billion-aid-for-farmers-after-climate-hit-summer",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:12:29.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e18907861b9d9b1f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-1b4fba4f63628b16-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-a1d0cfbf024586d0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-23bde49492017dd4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "brucken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-9d9b1f",
+      "title": "Brücken-Neubau im Marburger Norden gestartet: Wieder Bahnsperrungen geplant",
+      "source_summary": "Nach dem Abriss einer wichtigen Brücke in Marburg haben die Arbeiten für den Neubau begonnen. Die Brücke über die Bahngleise in der Neuen Kasseler Straße gilt als Verbindung Richtung Norden und Lahnberge; seit November 2024 war sie gesperrt und im Frühling 2025 abgerissen worden. Laut Hessenmobil soll der Neubau bis 2027 fertig werden.\n\nFür den Bau sind weitere Einschränkungen angekündigt. Genannt werden Sperrpausen für den Bahnverkehr, etwa Mitte Oktober 2026 sowie im Mai 2027; genaue Zeitpunkte sollen gemeinsam mit der Bahn noch mitgeteilt werden. Für Auto-, Rad- und Fußverkehr bleiben Umleitungen bestehen. Der Abbruch der alten Brücke und Nebenarbeiten kosteten laut Hessenmobil rund drei Millionen Euro, der Neubau soll rund 15 Millionen Euro kosten und aus ultrahochfestem Faserbeton entstehen.",
+      "summary": "Der Neubau einer wichtigen Marburger Brücke hat begonnen, und weitere Sperrpausen für die Bahn sind angekündigt. Für Auto- und Radverkehr bleiben Umleitungen bis zur Fertigstellung bestehen.",
+      "detail_summary": "Gesichert ist der Baubeginn an der Brücke im Marburger Norden nach Abriss des alten Bauwerks. Die Meldung ist relevant, weil die Brücke eine zentrale Verbindung für Pendler, den Bahnverkehr und den Zugang Richtung Lahnberge ist und die Einschränkungen noch bis zur Fertigstellung anhalten sollen. Der Wirkpfad liegt in der fortgesetzten Umleitung von Verkehrsströmen und in erneuten Sperrpausen auf der Bahnstrecke unter der Brücke. Mögliche Folgen sind weitere Reisezeitverluste, betriebliche Störungen im Bahnverkehr und anhaltende Belastungen für Anwohner und Pendelnde. Die Evidenz ist jedoch auf eine journalistische Quelle begrenzt; unabhängige Bestätigung der Termine und der Kosten liegt hier nicht vor.",
+      "why_relevant": "Die Meldung beschreibt einen realen Infrastrukturumbau mit fortgesetzten Eingriffen in Bahn- und Straßenverkehr und damit in Mobilität, Erreichbarkeit und Alltagslogistik einer Region.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Pendlerinnen, Anwohner und Verkehrsnutzer durch weitere Sperrungen und Umleitungen über einen längeren Zeitraum."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Der Vorgang betrifft primär Infrastruktur und Verkehr; ökologische Effekte werden in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "offen",
+          "rationale": "Direkte demokratiespezifische Folgen sind aus der Quelle nicht ableitbar."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Kosten Abriss und Nebenarbeiten",
+            "value": "drei",
+            "unit": "Millionen Euro",
+            "context": "laut Hessenmobil für den Abbruch inklusive Nebenarbeiten"
+          },
+          {
+            "label": "Kosten Neubau",
+            "value": "15",
+            "unit": "Millionen Euro",
+            "context": "laut Hessenmobil für die neue Brücke"
+          },
+          {
+            "label": "Fertigstellung",
+            "value": "2027",
+            "unit": "Jahr",
+            "context": "bis dahin soll der Neubau fertig werden"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ],
+        "timeline": [
+          {
+            "date": "2026-10",
+            "label": "erste genannte Sperrpausen"
+          },
+          {
+            "date": "2027",
+            "label": "Fertigstellung geplant"
+          },
+          {
+            "date": "2027-05",
+            "label": "weitere Sperrungen und nächtliche Sperrpausen"
+          }
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T15:07:42.000Z",
+      "last_updated": "2026-09-04T15:22:55.300Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-9d4afdfe89c278d9bc9e",
+      "source_published_at": "2026-09-04T15:07:42.000Z",
+      "published_at": "2026-09-04T15:22:55.300Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die angekündigten Bahn-Sperrpausen treten wie genannt ein und werden von der Bahn bestätigt.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Fahrplan- oder Baustellenmeldungen zu den genannten Zeiträumen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-417ea54c06a5109a",
+          "announced_at": "2026-09-04T15:07:42.000Z",
+          "follow_up_date": "2026-09-11T15:22:55.300Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/wirtschaft/bruecken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-v3,bruecke-marburg-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:07:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-8e4cf2004cb7951c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-e0b6c48332571c6b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-8247f5c26c79bfa0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-f33c78a8332ff861-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "russische-drohne-trifft-geheimdienst-sitz-in-kiew-b7951c",
+      "title": "Russische Drohne trifft Geheimdienst-Sitz in Kiew",
+      "source_summary": "Die vorliegenden Berichte schildern einen Drohnenangriff in Kiew am Freitag. Nach den Angaben traf eine russische Drohne den Sitz des ukrainischen Inlandsgeheimdienstes SBU im Zentrum der Stadt. In einem Bericht heißt es, Selenskyj habe auf Telegram gesagt, der Angriff habe direkt auf das Büro des Geheimdienstchefs gezielt. Ein anderer Bericht nennt mehrere Verletzte, während im Umfeld des Gebäudes mehrere Krankenwagen gesehen worden seien und schwarzer Rauch aufgestiegen sei.\n\nDie Quellen beziehen sich auf AFP beziehungsweise Reuters, liefern aber hier keine eigenständige Primärbestätigung des Vorfalls. Unklar bleiben im gelieferten Material der genaue Schadensumfang, weitere Opferzahlen und der unabhängige Beleg für den Zielort des Angriffs.",
+      "summary": "Russische Drohnen sollen den SBU-Sitz im Zentrum von Kiew getroffen haben. In den vorliegenden Berichten ist von mehreren Verletzten und sichtbaren Schäden die Rede.",
+      "detail_summary": "Gesichert aus den gelieferten Texten ist vor allem der gemeldete Treffer auf den SBU-Sitz in Kiew und die dazugehörige Einordnung als russischer Drohnenangriff. Zusätzlich nennen die Berichte mehrere Verletzte, Krankenwagen am Ort und schwarzen Rauch über dem Bereich nahe der Sophienkathedrale. Für die Einordnung als Nachricht ist das relevant, weil ein Angriff auf einen zentralen Sicherheitsstandort in einer Hauptstadt potenziell Schutzgüter, öffentliche Ordnung und weitere militärische Reaktionen berührt. Der unmittelbare Wirkpfad liegt in der physischen Beschädigung eines staatlichen Ziels und möglichen Folgereaktionen im laufenden Krieg. Offen bleibt, ob der Treffer und die Opferzahlen unabhängig bestätigt sind und wie groß der materielle Schaden tatsächlich ist; die Evidenzbasis ist damit zunächst begrenzt.",
+      "why_relevant": "Ein Angriff auf den Sitz des Inlandsgeheimdienstes im Zentrum der Hauptstadt ist potenziell systemrelevant für Sicherheit, Eskalationsdynamik und zivile Gefährdung.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Zivilpersonen, Behördenpersonal und die Sicherheitslage in einer Hauptstadt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den Quellen ergibt sich kein unmittelbarer Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf einen zentralen Staats- und Sicherheitsstandort kann die Funktionsfähigkeit staatlicher Institutionen berühren."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "beschaeftigte",
+          "kommunen",
+          "europa"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-04T13:52:39.000Z",
+      "last_updated": "2026-09-04T15:22:16.882Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-43f99f36657ddc9d3f73",
+      "source_published_at": "2026-09-04T13:52:39.000Z",
+      "published_at": "2026-09-04T14:08:09.852Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob es unabhängige Bestätigung des Einschlags und des Schadensumfangs gibt",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "weitere unabhängige Quellen oder Behördenangaben zum Treffer und zu Verletzten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-827fc6e0ab770af2",
+          "announced_at": "2026-09-04T13:52:39.000Z",
+          "follow_up_date": "2026-09-11T15:22:16.882Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/russische-drohne-trifft-geheimdienst-sitz-in-kiew-38209648.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:52:39.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-schattenflotte-drohnen-sabotage-anschlag-,ukraine-news-04-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:13:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-f2edeab46d126d83",
       "title_image": {
@@ -299,82 +651,6 @@
           "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T09:36:10.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-8e4cf2004cb7951c",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-77a2af750aee4a30-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-d7e8b04c28628dd2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-37bb05cd423564f3-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "russische-drohne-trifft-geheimdienst-sitz-in-kiew-b7951c",
-      "title": "Russische Drohne trifft Geheimdienst-Sitz in Kiew",
-      "source_summary": "Nach Angaben des Berichts wurde der Sitz des ukrainischen Inlandsgeheimdienstes SBU im Zentrum von Kiew am helllichten Tag von einer russischen Drohne getroffen. Der Angriff soll am Freitag erfolgt sein.\n\nDer ukrainische Präsident Wolodymyr Selenskyj erklärte demnach auf Telegram, die Drohne habe „direkt“ auf das Büro des Geheimdienstchefs gezielt. AFP-Reporter sahen mehrere Krankenwagen nahe dem Gebäude im Herzen der Hauptstadt. Weitere Angaben zu Schäden, Verletzten oder einer zweiten Bestätigung nennt der Text nicht.",
-      "summary": "Eine russische Drohne soll den SBU-Sitz im Zentrum von Kiew getroffen haben. Selenskyj sagte laut Bericht, das Ziel sei direkt das Büro des Geheimdienstchefs gewesen.",
-      "detail_summary": "Gesichert ist zunächst nur der Bericht, dass eine russische Drohne den Sitz des ukrainischen Inlandsgeheimdienstes SBU im Zentrum von Kiew getroffen haben soll. Dazu kommt die im Text wiedergegebene Aussage von Präsident Wolodymyr Selenskyj, der Angriff habe direkt auf das Büro des Geheimdienstchefs gezielt. Die AFP-Reporter beobachteten zudem mehrere Krankenwagen nahe dem Gebäude, was auf einen akuten Einsatz vor Ort hindeutet. Materiell relevant ist der Vorgang, weil ein Angriff auf einen zentralen Sicherheitsapparat in der Hauptstadt potenziell Schutz, Funktionsfähigkeit und Lagebild staatlicher Institutionen beeinträchtigt. Ein möglicher Wirkpfad reicht von unmittelbaren Schäden und Sicherheitsfolgen bis zu weiterer Eskalation und zusätzlichem Druck auf zivile Infrastruktur. Eine belastbare Einordnung von Umfang, Verletzten oder strategischer Wirkung ist mit der vorliegenden Einzelquelle noch nicht möglich.",
-      "why_relevant": "Ein Angriff auf den SBU-Sitz in Kiew betrifft eine zentrale staatliche Sicherheitsinstitution im laufenden Krieg und kann kurzfristig Sicherheitslage, Funktionsfähigkeit und Eskalationsdynamik beeinflussen.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Beschäftigte, Einsatzkräfte und zivile Anwohner im Zentrum der Hauptstadt; zugleich geht es um staatliche Sicherheitsfunktionen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Der Quellenstand beschreibt keinen direkten Umwelt- oder Klimabezug."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Ein Angriff auf einen zentralen Geheimdienstsitz berührt staatliche Sicherheits- und Schutzfunktionen sowie die demokratische Korrekturfähigkeit in einer Krisenlage."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T13:52:39.000Z",
-      "last_updated": "2026-09-04T14:08:09.852Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-43f99f36657ddc9d3f73",
-      "source_published_at": "2026-09-04T13:52:39.000Z",
-      "published_at": "2026-09-04T14:08:09.852Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/russische-drohne-trifft-geheimdienst-sitz-in-kiew-38209648.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T13:52:39.000Z",
           "primary_source": false
         }
       ]
