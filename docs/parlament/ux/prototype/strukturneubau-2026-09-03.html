@@ -1,0 +1,1195 @@
+<title>Wirkungsportal Neubau</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* ─────────────────────────────────────────────────────────────
+   Canvas (Review-Umgebung) — theme-aware
+   Artboards (das Produkt selbst) — bewusst immer im Portal-Licht,
+   weil das Portal ein einziges, helles Redaktionslicht hat.
+   ───────────────────────────────────────────────────────────── */
+:root{
+  --canvas-bg:#e8e2d6;
+  --canvas-ink:#1b2431;
+  --canvas-ink-2:#5b6675;
+  --canvas-line:#cfc6b6;
+  --canvas-card:#f6f1e8;
+  --canvas-accent:#175646;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --canvas-bg:#0b1020;
+    --canvas-ink:#e7ebf0;
+    --canvas-ink-2:#a3b0c0;
+    --canvas-line:#243349;
+    --canvas-card:#132133;
+    --canvas-accent:#c8a24a;
+  }
+}
+:root[data-theme="dark"]{
+  --canvas-bg:#0b1020;
+  --canvas-ink:#e7ebf0;
+  --canvas-ink-2:#a3b0c0;
+  --canvas-line:#243349;
+  --canvas-card:#132133;
+  --canvas-accent:#c8a24a;
+}
+
+/* Portal-Tokens — 1:1 aus app/tokens.css v1.0.0 */
+.pt{
+  --flaeche-basis:#f6f1e8;
+  --flaeche-karte:#ffffff;
+  --flaeche-warm:#fdfbf7;
+  --flaeche-buehne:#132133;
+  --text:#1b2431;
+  --text-2:#5b6675;
+  --akzent:#7d5f1e;
+  --link:#175646;
+  --invers:#e7ebf0;
+  --invers-weich:#c3ccd8;
+  --invers-akzent:#c8a24a;
+  --aktion:#c8a24a;
+  --aktion-text:#20180a;
+  --aktion-zweit:#175646;
+  --linie:#e4ddd1;
+  --linie-weich:#ede8df;
+  --pos:#1f6f5c;
+  --neg:#a54537;
+  --bedingt:#c8a24a;
+  --offen:#7a8798;
+  --serif:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  --sans:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+*{box-sizing:border-box}
+body{background:var(--canvas-bg);color:var(--canvas-ink);font-family:"Source Sans 3",-apple-system,Helvetica,Arial,sans-serif;line-height:1.6}
+h1,h2,h3,h4{font-family:"Source Serif 4",Georgia,serif;line-height:1.15;letter-spacing:-.015em;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--canvas-accent);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ── Review-Chrome ───────────────────────────────────────────── */
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px 80px}
+.doc-head{padding:40px 0 26px;border-bottom:1px solid var(--canvas-line)}
+.doc-kicker{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--canvas-ink-2);font-weight:700;margin-bottom:12px}
+.doc-head h1{font-size:clamp(1.9rem,4vw,2.9rem);max-width:20ch}
+.doc-head .sub{margin-top:14px;max-width:62ch;color:var(--canvas-ink-2);font-size:1.05rem}
+.doc-meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.doc-meta span{font-size:.78rem;padding:5px 11px;border:1px solid var(--canvas-line);border-radius:999px;color:var(--canvas-ink-2)}
+
+.jump{position:sticky;top:0;z-index:40;background:var(--canvas-bg);border-bottom:1px solid var(--canvas-line);margin-bottom:0}
+.jump-inner{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+.jump a{flex:0 0 auto;font-size:.82rem;padding:7px 13px;border-radius:999px;text-decoration:none;color:var(--canvas-ink-2);border:1px solid transparent;white-space:nowrap}
+.jump a:hover{border-color:var(--canvas-line);color:var(--canvas-ink)}
+
+.chapter{padding-top:56px}
+.chapter-head{display:flex;gap:16px;align-items:baseline;margin-bottom:8px}
+.chapter-num{font-family:"Source Serif 4",Georgia,serif;font-size:1.6rem;color:var(--canvas-accent);font-weight:700;font-variant-numeric:tabular-nums}
+.chapter h2{font-size:clamp(1.4rem,2.6vw,2rem)}
+.chapter-lead{max-width:66ch;color:var(--canvas-ink-2);margin-bottom:26px;font-size:1rem}
+
+/* Befund-Tabelle */
+.befund{border:1px solid var(--canvas-line);border-radius:12px;overflow:hidden;background:var(--canvas-card)}
+.befund-row{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-bottom:1px solid var(--canvas-line)}
+.befund-row:last-child{border-bottom:0}
+@media(min-width:760px){.befund-row{grid-template-columns:190px minmax(0,1fr) minmax(0,1fr)}}
+.befund-row>div{padding:16px 18px}
+.befund-row>div+div{border-top:1px solid var(--canvas-line)}
+@media(min-width:760px){.befund-row>div+div{border-top:0;border-left:1px solid var(--canvas-line)}}
+.befund-label{font-weight:700;font-size:.9rem}
+.befund-ist,.befund-soll{font-size:.92rem}
+.befund-ist{color:var(--canvas-ink-2)}
+.tag{display:inline-block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:4px;margin-bottom:7px}
+.tag-ist{background:rgba(165,69,55,.14);color:#a54537}
+.tag-soll{background:rgba(31,111,92,.14);color:#175646}
+:root[data-theme="dark"] .tag-ist,:root:not([data-theme="light"]) .tag-ist{}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:rgba(125,95,30,.1);padding:1px 5px;border-radius:4px}
+
+/* Artboard */
+.board{margin-top:26px;border-radius:16px;overflow:hidden;border:1px solid var(--canvas-line);box-shadow:0 24px 60px -30px rgba(11,16,32,.45)}
+.board-bar{background:var(--flaeche-buehne,#132133);color:#c3ccd8;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:9px 16px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.board-bar em{font-style:normal;color:#c8a24a}
+.board-body{background:#f6f1e8;color:#1b2431;font-family:var(--sans);font-size:16px;line-height:1.6}
+
+/* ── Portal-Komponenten (das eigentliche Design) ─────────────── */
+.pt .shell{max-width:1180px;margin:0 auto;padding:0 28px}
+@media(max-width:640px){.pt .shell{padding:0 18px}}
+.pt h1,.pt h2,.pt h3,.pt h4{font-family:var(--serif);color:var(--flaeche-buehne)}
+.pt .eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--akzent);margin:0 0 8px}
+
+/* Header + Navigation (NEU: 5 Bereiche) */
+.pt .topbar{background:var(--flaeche-buehne);color:var(--invers)}
+.pt .topbar-inner{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wrap}
+.pt .brand{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:700;font-size:1.02rem;color:#fff;text-decoration:none;flex:0 0 auto}
+.pt .brand .sig{width:24px;height:24px;border-radius:5px;background:var(--invers-akzent);display:grid;place-items:center;color:#20180a;font-size:.7rem;font-weight:700;font-family:var(--sans)}
+.pt .brand small{display:block;font-family:var(--sans);font-weight:400;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--invers-weich)}
+.pt .mainnav{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.pt .mainnav a{color:var(--invers-weich);text-decoration:none;font-size:.9rem;padding:8px 12px;border-radius:6px;white-space:nowrap}
+.pt .mainnav a:hover{background:rgba(255,255,255,.07);color:#fff}
+.pt .mainnav a[aria-current]{color:#fff;background:rgba(200,162,74,.16);box-shadow:inset 0 -2px 0 var(--invers-akzent)}
+.pt .utility{display:flex;gap:6px;align-items:center}
+.pt .utility a{color:var(--invers-weich);text-decoration:none;font-size:.82rem;padding:6px 10px;border:1px solid rgba(255,255,255,.16);border-radius:999px;white-space:nowrap}
+.pt .utility a.prim{background:var(--invers-akzent);color:#20180a;border-color:var(--invers-akzent);font-weight:600}
+@media(max-width:900px){.pt .mainnav{order:3;width:100%;margin-left:0;border-top:1px solid rgba(255,255,255,.12);padding:6px 0}.pt .utility{margin-left:auto}}
+
+.pt .crumbs{font-size:.82rem;color:var(--text-2);padding:14px 0 0}
+.pt .crumbs a{color:var(--link)}
+.pt .crumbs span{margin:0 7px;opacity:.5}
+
+/* Hero (kompakt) */
+.pt .hero{padding:44px 0 30px}
+.pt .hero h1{font-size:clamp(1.9rem,3.4vw,2.9rem);max-width:19ch}
+.pt .hero .lead{margin-top:16px;max-width:56ch;font-size:1.12rem;color:var(--text)}
+.pt .hero .indep{margin-top:14px;font-size:.86rem;color:var(--text-2);max-width:60ch}
+.pt .hero-actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.pt .btn{display:inline-flex;align-items:center;gap:7px;padding:11px 19px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid transparent}
+.pt .btn-prim{background:var(--aktion);color:var(--aktion-text);border-color:#b8913c}
+.pt .btn-sec{background:transparent;color:var(--link);border-color:var(--link)}
+.pt .tlink{color:var(--link);text-decoration:none;font-weight:600;font-size:.92rem;border-bottom:1px solid rgba(23,86,70,.35);padding-bottom:1px}
+
+/* Portalstand — Kennzahlenband */
+.pt .stand{background:var(--flaeche-buehne);color:var(--invers);padding:26px 0 28px;margin-top:8px}
+.pt .stand .eyebrow{color:var(--invers-akzent)}
+.pt .stand-grid{display:grid;gap:2px;grid-template-columns:repeat(2,1fr);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:10px;overflow:hidden;margin-top:14px}
+@media(min-width:760px){.pt .stand-grid{grid-template-columns:repeat(4,1fr)}}
+.pt .stand-cell{background:var(--flaeche-buehne);padding:16px 18px}
+.pt .stand-num{font-family:var(--serif);font-size:2.1rem;font-weight:700;color:#fff;font-variant-numeric:tabular-nums;line-height:1}
+.pt .stand-cap{font-size:.82rem;color:var(--invers-weich);margin-top:6px;max-width:22ch}
+.pt .stand-note{font-size:.78rem;color:var(--invers-weich);margin-top:14px;opacity:.85}
+
+/* Reifegrad-Balken */
+.pt .ribbon{margin-top:18px}
+.pt .ribbon-track{display:flex;gap:2px;height:26px;border-radius:5px;overflow:hidden}
+.pt .ribbon-track i{display:block;position:relative}
+.pt .ribbon-legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:.8rem;color:var(--invers-weich)}
+.pt .ribbon-legend b{display:inline-flex;align-items:center;gap:7px;font-weight:400}
+.pt .ribbon-legend b::before{content:"";width:10px;height:10px;border-radius:2px;background:var(--c)}
+.pt .ribbon-legend b em{font-style:normal;color:#fff;font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ── Wirkungssignatur (Kernkomponente) ───────────────────────── */
+.sig{border:1px solid var(--linie);border-radius:9px;background:var(--flaeche-warm);display:grid;grid-template-columns:1fr;overflow:hidden}
+@media(min-width:520px){.sig{grid-template-columns:1.35fr .85fr .95fr}}
+.sig-cell{padding:11px 13px}
+.sig-cell+.sig-cell{border-top:1px solid var(--linie)}
+@media(min-width:520px){.sig-cell+.sig-cell{border-top:0;border-left:1px solid var(--linie)}}
+.sig-lab{font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;font-weight:700;color:var(--text-2);margin-bottom:7px}
+.sig-val{display:flex;align-items:center;gap:7px;font-size:.86rem;font-weight:600;color:var(--text);line-height:1.3}
+.sig-ico{width:19px;height:19px;flex:0 0 auto;border-radius:50%;display:grid;place-items:center;font-size:.72rem;font-weight:700;color:#fff;line-height:1}
+.sig-ico.pos{background:var(--pos)}
+.sig-ico.neg{background:var(--neg)}
+.sig-ico.bed{background:var(--bedingt);color:#20180a}
+.sig-ico.off{background:var(--offen)}
+.sig-ico.amb{background:linear-gradient(90deg,var(--pos) 0 50%,var(--neg) 50% 100%)}
+
+/* Richtungsachse */
+.axis{margin-top:9px}
+.axis-track{position:relative;height:9px;border-radius:3px;background:linear-gradient(90deg,rgba(165,69,55,.2),rgba(122,135,152,.18) 48% 52%,rgba(31,111,92,.2));border:1px solid var(--linie)}
+.axis-track::after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--linie);}
+.axis-mark{position:absolute;top:50%;width:11px;height:11px;margin:-6px 0 0 -6px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(27,36,49,.25)}
+.axis-mark.pos{background:var(--pos)}
+.axis-mark.neg{background:var(--neg)}
+.axis-mark.off{background:var(--offen)}
+.axis-ends{display:flex;justify-content:space-between;font-size:.66rem;color:var(--text-2);margin-top:5px}
+
+/* Evidenzstufen */
+.pips{display:flex;gap:3px;margin-top:9px}
+.pips i{flex:1;height:9px;border-radius:2px;background:var(--linie);border:1px solid var(--linie)}
+.pips i.on{background:var(--pos);border-color:var(--pos)}
+.pips-cap{font-size:.7rem;color:var(--text-2);margin-top:6px}
+
+/* Reifepipeline */
+.pipe{display:flex;align-items:center;gap:4px;margin-top:9px}
+.pipe i{width:10px;height:10px;border-radius:50%;background:var(--linie);border:1px solid #d3c9b8;flex:0 0 auto}
+.pipe i.done{background:var(--pos);border-color:var(--pos)}
+.pipe i.now{background:var(--bedingt);border-color:#a8842f;box-shadow:0 0 0 3px rgba(200,162,74,.28)}
+.pipe s{flex:1;height:1px;background:var(--linie);text-decoration:none}
+
+/* Kartenraster */
+.pt .section{padding:38px 0}
+.pt .section.warm{background:var(--flaeche-warm);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.pt .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.pt .sec-head h2{font-size:clamp(1.35rem,2.2vw,1.8rem);max-width:22ch}
+.pt .grid3{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:720px){.pt .grid3{grid-template-columns:repeat(3,1fr)}}
+.pt .grid4{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:640px){.pt .grid4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.pt .grid4{grid-template-columns:repeat(4,1fr)}}
+
+.card{background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:12px;padding:17px;display:flex;flex-direction:column;gap:12px}
+.card-top{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.chip{font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid var(--linie);color:var(--text-2);background:var(--flaeche-warm)}
+.chip.hoch{border-color:#d9c69a;background:rgba(200,162,74,.16);color:#6b5216}
+.chip.typ{border-color:#bcd0c9;background:rgba(31,111,92,.1);color:#175646}
+.card h3{font-size:1.02rem;line-height:1.3;max-width:none}
+.card h3 a{color:var(--flaeche-buehne);text-decoration:none;border-bottom:1px solid rgba(19,33,51,.18)}
+.card .finding{font-size:.9rem;color:var(--text);margin:0}
+.card .finding b{color:var(--akzent);font-weight:700}
+.card-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:4px;font-size:.82rem;color:var(--text-2)}
+.card-foot .tlink{font-size:.86rem}
+
+/* Legende zur Signatur */
+.legend{background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:12px;padding:20px;display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:800px){.legend{grid-template-columns:repeat(3,1fr)}}
+.legend h4{font-size:.95rem;margin-bottom:7px}
+.legend p{font-size:.86rem;color:var(--text-2)}
+.legend ul{margin:9px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.legend li{display:flex;gap:8px;align-items:flex-start;font-size:.83rem}
+
+/* Wege-Kacheln */
+.way{background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:12px;padding:18px;text-decoration:none;display:block}
+.way .n{font-family:var(--serif);font-size:.9rem;font-weight:700;color:var(--aktion);letter-spacing:.05em}
+.way h3{font-size:1.05rem;margin:6px 0 7px}
+.way p{font-size:.86rem;color:var(--text-2)}
+.way .arrow{margin-top:11px;font-size:.86rem;color:var(--link);font-weight:600}
+
+/* Kartogramm */
+.karto{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;max-width:430px}
+.karto b{aspect-ratio:1;border-radius:6px;display:grid;place-items:center;font-size:.68rem;font-weight:700;font-family:var(--sans);border:1px solid rgba(19,33,51,.12)}
+.k4{background:#175646;color:#fff}
+.k3{background:#5f9c8b;color:#0c231d}
+.k2{background:#b9d2c9;color:#123c32}
+.k1{background:#e9e3d8;color:#7a8798}
+.karto-legend{display:flex;flex-direction:column;gap:9px;font-size:.85rem}
+.karto-legend b{display:inline-flex;align-items:center;gap:9px;font-weight:400;color:var(--text-2)}
+.karto-legend b i{width:13px;height:13px;border-radius:3px;flex:0 0 auto;border:1px solid rgba(19,33,51,.12)}
+.karto-legend b em{font-style:normal;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;min-width:2ch;display:inline-block}
+
+/* Vertrauensband */
+.pt .trust{background:var(--flaeche-buehne);color:var(--invers);padding:34px 0}
+.pt .trust h2{color:#fff;font-size:1.5rem}
+.pt .trust .eyebrow{color:var(--invers-akzent)}
+.pt .trust-grid{display:grid;gap:14px;grid-template-columns:1fr;margin-top:18px}
+@media(min-width:720px){.pt .trust-grid{grid-template-columns:repeat(4,1fr)}}
+.pt .trust-grid div{border-top:2px solid rgba(200,162,74,.55);padding-top:11px}
+.pt .trust-grid strong{display:block;font-size:.92rem;color:#fff;margin-bottom:5px}
+.pt .trust-grid span{font-size:.83rem;color:var(--invers-weich)}
+
+/* ── Register-Screen ─────────────────────────────────────────── */
+.filters{display:flex;gap:8px;flex-wrap:wrap;padding:14px;background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:11px}
+.fgroup{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.fgroup>span{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--text-2);margin-right:2px}
+.fchip{font-size:.82rem;padding:5px 11px;border-radius:999px;border:1px solid var(--linie);background:var(--flaeche-warm);color:var(--text-2);cursor:default}
+.fchip.on{background:var(--flaeche-buehne);border-color:var(--flaeche-buehne);color:#fff;font-weight:600}
+.fsep{width:1px;align-self:stretch;background:var(--linie);margin:0 4px}
+
+.result{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:18px 0 6px}
+.result-n{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--flaeche-buehne);font-variant-numeric:tabular-nums}
+.dist{flex:1;min-width:260px}
+.dist-track{display:flex;gap:2px;height:15px;border-radius:4px;overflow:hidden}
+.dist-legend{display:flex;flex-wrap:wrap;gap:5px 15px;margin-top:8px;font-size:.78rem;color:var(--text-2)}
+.dist-legend b{display:inline-flex;align-items:center;gap:6px;font-weight:400}
+.dist-legend b::before{content:"";width:9px;height:9px;border-radius:2px;background:var(--c)}
+.dist-legend b em{font-style:normal;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums}
+
+.row{background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:11px;padding:15px 17px;display:grid;gap:13px;grid-template-columns:1fr}
+@media(min-width:860px){.row{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center}}
+.row h3{font-size:1rem;line-height:1.32}
+.row h3 a{color:var(--flaeche-buehne);text-decoration:none;border-bottom:1px solid rgba(19,33,51,.18)}
+.row .meta{font-size:.79rem;color:var(--text-2);margin-top:6px}
+
+/* ── Akten-Screen ────────────────────────────────────────────── */
+.akte{display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:960px){.akte{grid-template-columns:minmax(0,1fr) 268px}}
+.rail{display:flex;flex-direction:column;gap:14px}
+.rail-box{background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:11px;padding:15px}
+.rail-box h4{font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;color:var(--text-2);font-family:var(--sans);font-weight:700;margin-bottom:10px}
+.rail-dl{display:flex;flex-direction:column;gap:9px;margin:0}
+.rail-dl div{display:flex;justify-content:space-between;gap:10px;font-size:.84rem;align-items:baseline}
+.rail-dl dt{color:var(--text-2);flex:0 0 auto}
+.rail-dl dd{margin:0;text-align:right;font-weight:600;color:var(--text)}
+
+.modus{display:inline-flex;padding:3px;background:var(--flaeche-warm);border:1px solid var(--linie);border-radius:999px;gap:2px}
+.modus button{font:inherit;font-size:.84rem;font-weight:600;padding:6px 14px;border-radius:999px;border:0;background:transparent;color:var(--text-2);cursor:pointer;min-height:0}
+.modus button[aria-pressed="true"]{background:var(--flaeche-buehne);color:#fff}
+
+.keyfind{border-left:3px solid var(--aktion);background:var(--flaeche-warm);padding:14px 16px;border-radius:0 9px 9px 0}
+.keyfind .eyebrow{margin-bottom:5px}
+.keyfind p{font-size:1.02rem;color:var(--text);font-weight:600;max-width:60ch}
+
+/* Wirkpfad-Kette */
+.chain{display:flex;flex-direction:column;gap:0;margin-top:6px}
+@media(min-width:760px){.chain{flex-direction:row;align-items:stretch}}
+.chain-node{flex:1;background:var(--flaeche-karte);border:1px solid var(--linie);padding:13px 14px;position:relative}
+.chain-node:first-child{border-radius:9px 9px 0 0}
+.chain-node:last-child{border-radius:0 0 9px 9px}
+@media(min-width:760px){
+  .chain-node:first-child{border-radius:9px 0 0 9px}
+  .chain-node:last-child{border-radius:0 9px 9px 0}
+  .chain-node+.chain-node{border-left:0}
+}
+@media(max-width:759px){.chain-node+.chain-node{border-top:0}}
+.chain-node.open{background:repeating-linear-gradient(135deg,var(--flaeche-warm) 0 7px,rgba(122,135,152,.12) 7px 14px);border-style:dashed}
+.chain-step{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--text-2);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.chain-step i{width:8px;height:8px;border-radius:50%;background:var(--pos);flex:0 0 auto}
+.chain-node.open .chain-step i{background:var(--offen)}
+.chain-node strong{display:block;font-size:.92rem;color:var(--flaeche-buehne);margin-bottom:4px;font-family:var(--serif)}
+.chain-node p{font-size:.82rem;color:var(--text-2)}
+.chain-ev{margin-top:8px;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--pos)}
+.chain-node.open .chain-ev{color:var(--offen)}
+
+/* Referenzrahmen-Chips */
+.refs{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
+.refs b{font-size:.76rem;font-weight:700;padding:5px 10px;border-radius:6px;border:1px solid var(--linie);background:var(--flaeche-warm);color:#a9a094}
+.refs b.on{background:rgba(23,86,70,.1);border-color:#9dbdb2;color:#134a3d}
+.refs b.law{background:rgba(200,162,74,.14);border-color:#d6c191;color:#6b5216}
+
+/* Prüffragen-Ring */
+.ring-wrap{display:flex;align-items:center;gap:15px}
+.ring{width:76px;height:76px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  background:conic-gradient(var(--pos) 0 calc(var(--p)*1%),#e4ddd1 calc(var(--p)*1%) 100%)}
+.ring i{width:56px;height:56px;border-radius:50%;background:var(--flaeche-karte);display:grid;place-items:center;font-style:normal;font-family:var(--serif);font-weight:700;font-size:1.02rem;color:var(--flaeche-buehne);font-variant-numeric:tabular-nums}
+
+/* Tabs */
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--linie);margin-top:6px;overflow-x:auto}
+.tabs button{font:inherit;font-size:.9rem;font-weight:600;padding:10px 15px;border:0;background:transparent;color:var(--text-2);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-1px;min-height:0}
+.tabs button[aria-selected="true"]{color:var(--flaeche-buehne);border-bottom-color:var(--aktion)}
+.tabpanel{padding-top:18px}
+.tabpanel p{font-size:.95rem;max-width:68ch;color:var(--text)}
+.tabpanel p+p{margin-top:11px}
+.fach{display:none}
+.pt[data-modus="fachlich"] .fach{display:block}
+.pt[data-modus="fachlich"] .kurz-only{display:none}
+
+/* Verfahrenszeitstrahl */
+.steps{display:flex;flex-wrap:wrap;gap:0;margin-top:8px;border:1px solid var(--linie);border-radius:9px;overflow:hidden;background:var(--flaeche-karte)}
+.step{flex:1;min-width:150px;padding:12px 14px;border-right:1px solid var(--linie)}
+.step:last-child{border-right:0}
+.step.now{background:rgba(200,162,74,.12)}
+.step.future{background:var(--flaeche-warm);color:var(--text-2)}
+.step .d{font-size:.72rem;color:var(--text-2);font-variant-numeric:tabular-nums}
+.step .t{font-size:.86rem;font-weight:600;color:var(--flaeche-buehne);margin-top:3px}
+.step.future .t{color:var(--text-2);font-weight:400}
+
+details.more{margin-top:14px;border:1px solid var(--linie);border-radius:9px;background:var(--flaeche-karte);padding:0}
+details.more summary{cursor:pointer;padding:12px 15px;font-weight:600;font-size:.9rem;color:var(--link);list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:"＋";font-weight:400;color:var(--text-2)}
+details.more[open] summary::after{content:"－"}
+details.more .inner{padding:0 15px 15px;font-size:.88rem;color:var(--text-2)}
+details.more .inner p{max-width:66ch}
+
+/* Notiz-Kästen im Review-Dokument */
+.note{border-left:3px solid var(--canvas-accent);padding:12px 16px;background:var(--canvas-card);border-radius:0 10px 10px 0;font-size:.92rem;margin-top:20px}
+.note strong{display:block;margin-bottom:5px}
+.note p{color:var(--canvas-ink-2)}
+.note ul{margin:8px 0 0;padding-left:18px;color:var(--canvas-ink-2)}
+.note li{margin-bottom:4px}
+
+.iatree{background:var(--canvas-card);border:1px solid var(--canvas-line);border-radius:12px;padding:20px;overflow-x:auto}
+.iatree ul{list-style:none;margin:0;padding:0}
+.iatree>ul>li{margin-bottom:16px}
+.iatree>ul>li:last-child{margin-bottom:0}
+.iatree .lvl1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:1.05rem;display:flex;align-items:baseline;gap:9px}
+.iatree .lvl1 code{font-size:.78rem}
+.iatree ul ul{margin:8px 0 0 0;padding-left:16px;border-left:2px solid var(--canvas-line);display:flex;flex-direction:column;gap:5px}
+.iatree ul ul li{font-size:.88rem;color:var(--canvas-ink-2);display:flex;gap:9px;flex-wrap:wrap;align-items:baseline}
+.iatree ul ul code{font-size:.76rem}
+.iatree .from{font-size:.74rem;color:var(--canvas-ink-2);opacity:.75}
+
+table.map{width:100%;border-collapse:collapse;font-size:.86rem}
+table.map th,table.map td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--canvas-line);vertical-align:top}
+table.map th{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--canvas-ink-2)}
+table.map td code{white-space:nowrap}
+.scroller{overflow-x:auto;border:1px solid var(--canvas-line);border-radius:12px;background:var(--canvas-card);padding:4px 14px}
+</style>
+
+<div class="jump">
+  <div class="jump-inner">
+    <a href="#befund">1 Befund</a>
+    <a href="#ia">2 Neue Struktur</a>
+    <a href="#sprache">3 Visuelle Sprache</a>
+    <a href="#start">4 Portalstart</a>
+    <a href="#register">5 Wirkungsakten</a>
+    <a href="#akte">6 Einzelakte</a>
+    <a href="#regeln">7 Regeln</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header class="doc-head">
+    <p class="doc-kicker">Institut für Wirkungsökonomie · UX-Vorlage für die Umsetzung</p>
+    <h1>Wirkungsportal Parlament — Neubau der Struktur</h1>
+    <p class="sub">Das Portal hat starke Inhalte und eine schwache Ordnung. Diese Vorlage zeigt, wie aus 13 gleichrangigen Bereichen fünf werden, wie Übersichtsseiten aufhören, ganze Analysen zu zitieren, und wie Ergebnisse eine eigene visuelle Sprache bekommen — ohne dass ein einziger Inhalt verloren geht.</p>
+    <div class="doc-meta">
+      <span>Stand 3. September 2026</span>
+      <span>Bezug: parlament.wirkungsoekonomie.de</span>
+      <span>Design-Tokens v1.0.0 unverändert</span>
+      <span>Umsetzung: Codex</span>
+    </div>
+  </header>
+
+  <!-- ══════════════ 1 BEFUND ══════════════ -->
+  <section class="chapter" id="befund">
+    <div class="chapter-head"><span class="chapter-num">1</span><h2>Befund</h2></div>
+    <p class="chapter-lead">Sieben Feststellungen, jede am laufenden Portal überprüfbar. Die Inhalte sind nicht das Problem — ihre Anordnung ist es.</p>
+
+    <div class="befund">
+      <div class="befund-row">
+        <div class="befund-label">Navigation</div>
+        <div class="befund-ist"><span class="tag tag-ist">Ist</span>13 gleichrangige Links in einer Zeile, aus drei unvereinbaren Logiken gemischt: Organe (Bundestag, Bundesregierung, Länder, EU), Inhaltsarten (Wirkungsfälle, Fachanalysen, Abstimmungsbilanz, Quellenarchiv) und Portalinfos (Methodik, Transparenz). Mobil: ein Aufklapper mit denselben 13 Zielen. Keine aktive Markierung, keine Brotkrumen.</div>
+        <div class="befund-soll"><span class="tag tag-soll">Soll</span>Fünf Bereiche entlang des Wirkungszyklus. Organ und Ebene werden zum Filter, nicht zum Menüpunkt. Aktiver Bereich sichtbar, Brotkrumen auf jeder Unterseite.</div>
+      </div>
+      <div class="befund-row">
+        <div class="befund-label">Überladene Karten</div>
+        <div class="befund-ist"><span class="tag tag-ist">Ist</span>Eine Teaser-Karte auf der Startseite rendert die vollständige Kurzbewertung: Wirkungspotenzial kompakt, Wirkungskern, Key Finding, Wirkungsrichtung, Evidenzstatus, Reality-Check, Einordnungsstand, vier Metazeilen. Rund 400 Wörter — pro Karte. Drei Karten nebeneinander ergeben 1.200 Wörter Fließtext in einem Vorschaubereich.</div>
+        <div class="befund-soll"><span class="tag tag-soll">Soll</span>Eine Karte trägt höchstens 60 Wörter: Titel, ein Key Finding, die Wirkungssignatur, zwei Statusmerkmale. Alles andere lebt in der Akte.</div>
+      </div>
+      <div class="befund-row">
+        <div class="befund-label">Startseite</div>
+        <div class="befund-ist"><span class="tag tag-ist">Ist</span>Elf gestapelte Textabschnitte, davon sechs zur Methode und zum Selbstverständnis, bevor überhaupt ein Ergebnis kommt. Über 2.500 Wörter. Keine einzige Zahl darüber, wie groß das Portal ist oder was darin steht.</div>
+        <div class="befund-soll"><span class="tag tag-soll">Soll</span>Ergebnisse zuerst, Methode als Angebot. Ein Kennzahlenband beantwortet „Was ist dieses Portal?" in fünf Sekunden. Zielumfang der Startseite: rund 450 Wörter.</div>
+      </div>
+      <div class="befund-row">
+        <div class="befund-label">Kein Ergebnisbild</div>
+        <div class="befund-ist"><span class="tag tag-ist">Ist</span>Wirkungsrichtung, Evidenzstatus und Reifegrad sind bereits sauber typisierte Werte — werden aber ausschließlich als Fließtextsätze ausgegeben („Getrennte Wirkpfade: Gegenläufige Wirkungsrichtungen, Positives Wirkungspotenzial"). Vorhandene Visualkomponenten erscheinen auf keiner Übersichtsseite.</div>
+        <div class="befund-soll"><span class="tag tag-soll">Soll</span>Eine feste visuelle Sprache für Ergebnisse: Wirkungssignatur, Wirkpfad-Kette, Reifeband, Kartogramm. Immer dieselbe Form für dieselbe Bedeutung.</div>
+      </div>
+      <div class="befund-row">
+        <div class="befund-label">Zwei Navigationen</div>
+        <div class="befund-ist"><span class="tag tag-ist">Ist</span><code>/regierung</code> bringt eine eigene Unternavigation mit acht Punkten mit, die mit der Hauptnavigation weder in Benennung noch in Logik zusammenpasst. Wer dort landet, verliert den Ausgang.</div>
+        <div class="befund-soll"><span class="tag tag-soll">Soll</span>Ein einziges Unternavigationsmuster für alle Bereiche, immer unter der Hauptnavigation, immer mit Brotkrumen darüber.</div>
+      </div>
+      <div class="befund-row">
+        <div class="befund-label">Verwaiste Seiten</div>
+        <div class="befund-ist"><span class="tag tag-ist">Ist</span><code>/bevorstehend</code>, <code>/im-verfahren</code>, <code>/historie</code>, <code>/monitor</code>, <code>/werkzeuge</code>, <code>/abstimmungen</code>, <code>/begriffe</code>, <code>/suche</code>, <code>/fachakten</code> existieren, stehen aber in keinem Menü. Sie sind nur über Fließtextlinks erreichbar oder gar nicht.</div>
+        <div class="befund-soll"><span class="tag tag-soll">Soll</span>Jede erreichbare Seite hat genau einen Platz im Baum. Was keinen Platz bekommt, wird zusammengeführt oder weitergeleitet — nicht gelöscht.</div>
+      </div>
+      <div class="befund-row">
+        <div class="befund-label">Statusfarben</div>
+        <div class="befund-ist"><span class="tag tag-ist">Ist</span>Die fünf Statusfarben der Tokens sind maschinell geprüft nicht unterscheidbar: <code>ambivalent&nbsp;#825f2d</code> und <code>negativ&nbsp;#a54537</code> liegen bei ΔE&nbsp;9,1 für normales Sehen und ΔE&nbsp;0,9 bei Deuteranopie. Ausgerechnet die folgenreichste Unterscheidung des Portals ist farblich keine.</div>
+        <div class="befund-soll"><span class="tag tag-soll">Soll</span>Vier Farbmarken statt fünf. „Ambivalent" bekommt gar keine eigene Farbe, sondern eine eigene <em>Form</em>: eine geteilte Marke aus Grün und Rot. Das ist zugleich methodisch ehrlicher — ambivalent ist kein dritter Wert, sondern beides zugleich.</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Nichts wird zurückgebaut.</strong>
+      <p>Jeder Satz, jede Quelle, jede Prüfebene bleibt im Portal. Der Umbau verschiebt Inhalt zwischen Ebenen — Karte, Akte, Aufklapper — und entfernt ihn nirgends. Wo dieser Entwurf „kürzen" sagt, ist immer „tiefer legen" gemeint.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════ 2 IA ══════════════ -->
+  <section class="chapter" id="ia">
+    <div class="chapter-head"><span class="chapter-num">2</span><h2>Die neue Struktur</h2></div>
+    <p class="chapter-lead">Das Portal hat bereits ein Ordnungsprinzip — es steht nur ganz unten auf der Startseite als „Vier Säulen" und wird nirgends zur Navigation. Genau das wird es jetzt: Was steht an → was ist geprüft → was ist daraus geworden → wer entscheidet → wie prüfen wir. Fünf Bereiche, jeder mit einer echten Landing-Page.</p>
+
+    <div class="iatree">
+      <ul>
+        <li>
+          <div class="lvl1">Aktuell <code>/aktuell</code></div>
+          <ul>
+            <li>Parlamentsradar — was steht an <code>/aktuell/radar</code> <span class="from">← /bevorstehend</span></li>
+            <li>Im Verfahren <code>/aktuell/im-verfahren</code> <span class="from">← /im-verfahren</span></li>
+            <li>Neu veröffentlicht <code>/aktuell/neu</code> <span class="from">← neu</span></li>
+            <li>Wirkungsradar per E-Mail <code>/aktuell/radar-abo</code> <span class="from">← /wirkungsradar-updates</span></li>
+          </ul>
+        </li>
+        <li>
+          <div class="lvl1">Wirkungsakten <code>/wirkungsakten</code></div>
+          <ul>
+            <li>Ein einziges Register über alle Ebenen, mit Filtern für Ebene · Organ · Wirkungsfeld · Richtung · Evidenz · Reifegrad</li>
+            <li>Einzelakte <code>/wirkungsakten/[slug]</code> <span class="from">← /entscheidungen/[slug] bleibt als kanonische URL bestehen</span></li>
+            <li>Zusammengeführt aus <code>/entscheidungen</code>, <code>/wirkungsfaelle</code>, <code>/fachakten</code>, <code>/fachanalysen</code>, <code>/regierung/wirkungsanalysen</code>, <code>/eu/wirkungsfaelle</code></li>
+          </ul>
+        </li>
+        <li>
+          <div class="lvl1">Wirkungsmonitor <code>/monitor</code></div>
+          <ul>
+            <li>Wirkungsobservatorium <code>/monitor/observatorium</code> <span class="from">← /wirkungsobservatorium</span></li>
+            <li>Reality-Checks nach der Umsetzung <code>/monitor/reality-checks</code></li>
+            <li>Versprechen &amp; Praxis <code>/monitor/mandat-und-praxis</code> <span class="from">← /mandat-und-praxis</span></li>
+            <li>Abstimmungsbilanz <code>/monitor/abstimmungen</code> <span class="from">← /abgeordnete, /abstimmungen</span></li>
+            <li>Wirkungsgedächtnis / Historie <code>/monitor/historie</code> <span class="from">← /historie</span></li>
+          </ul>
+        </li>
+        <li>
+          <div class="lvl1">Bund, Länder &amp; EU <code>/ebenen</code></div>
+          <ul>
+            <li>Bundestag <code>/ebenen/bundestag</code> <span class="from">← /bundestag</span></li>
+            <li>Bundesregierung <code>/ebenen/bundesregierung</code> <span class="from">← /regierung samt Kabinett, Ministerien, Ressorts, Haushalt</span></li>
+            <li>Bundesländer <code>/ebenen/laender</code> + <code>/ebenen/laender/[slug]</code> <span class="from">← /laender</span></li>
+            <li>Europäische Union <code>/ebenen/eu</code> <span class="from">← /eu</span></li>
+          </ul>
+        </li>
+        <li>
+          <div class="lvl1">Prüfstandard <code>/pruefstandard</code></div>
+          <ul>
+            <li>So prüfen wir <code>/pruefstandard/methodik</code> <span class="from">← /methodik</span></li>
+            <li>Referenzrahmen: SDG, SDG+, Recht <code>/pruefstandard/referenzrahmen</code> <span class="from">← /transparenz#referenzrahmen</span></li>
+            <li>Wirkindikatoren <code>/pruefstandard/wirkindikatoren</code></li>
+            <li>Begriffe <code>/pruefstandard/begriffe</code> <span class="from">← /begriffe</span></li>
+            <li>Quellenarchiv <code>/pruefstandard/quellen</code> <span class="from">← /quellen</span></li>
+            <li>Über uns, Grenzen, Korrekturen <code>/pruefstandard/transparenz</code> <span class="from">← /transparenz</span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <strong>Der entscheidende Schnitt</strong>
+      <p>Ebene und Organ sind keine Bereiche mehr, sondern Filter. Derselbe Aktentyp lag bisher unter sechs verschiedenen Pfaden — deshalb wusste niemand, ob „Wirkungsfälle" eine Teilmenge von „Bundestag" ist oder etwas anderes. Ein Register mit Facetten löst das vollständig auf. <code>/ebenen/…</code> bleibt als institutioneller Einstieg bestehen, zeigt dort aber nur noch das Profil des Organs plus eine vorgefilterte Ansicht des Registers.</p>
+    </div>
+
+    <div class="scroller" style="margin-top:20px">
+      <table class="map">
+        <thead><tr><th>Alt</th><th>Neu</th><th>Verfahren</th></tr></thead>
+        <tbody>
+          <tr><td><code>/bevorstehend</code>, <code>/im-verfahren</code></td><td><code>/aktuell/radar</code>, <code>/aktuell/im-verfahren</code></td><td>308</td></tr>
+          <tr><td><code>/entscheidungen</code>, <code>/wirkungsfaelle</code>, <code>/fachakten</code>, <code>/fachanalysen</code></td><td><code>/wirkungsakten</code> mit vorgesetztem Filter</td><td>308</td></tr>
+          <tr><td><code>/entscheidungen/[slug]</code></td><td>bleibt — kanonisch, keine Änderung</td><td>—</td></tr>
+          <tr><td><code>/regierung/**</code></td><td><code>/ebenen/bundesregierung/**</code></td><td>308, Pfadstruktur 1:1</td></tr>
+          <tr><td><code>/laender/**</code>, <code>/eu/**</code></td><td><code>/ebenen/laender/**</code>, <code>/ebenen/eu/**</code></td><td>308</td></tr>
+          <tr><td><code>/wirkungsobservatorium</code>, <code>/mandat-und-praxis</code>, <code>/abgeordnete</code>, <code>/historie</code></td><td><code>/monitor/**</code></td><td>308</td></tr>
+          <tr><td><code>/methodik</code>, <code>/transparenz</code>, <code>/quellen</code>, <code>/begriffe</code></td><td><code>/pruefstandard/**</code></td><td>308</td></tr>
+          <tr><td><code>/werkzeuge</code></td><td>entfällt als Seite — Inhalt zieht in <code>/pruefstandard/methodik</code></td><td>308</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════════ 3 VISUELLE SPRACHE ══════════════ -->
+  <section class="chapter" id="sprache">
+    <div class="chapter-head"><span class="chapter-num">3</span><h2>Die visuelle Sprache für Ergebnisse</h2></div>
+    <p class="chapter-lead">Sechs Bausteine, jeder mit genau einer Bedeutung, überall gleich. Sie ersetzen keinen Text — sie stehen davor, damit der Text danach freiwillig gelesen wird.</p>
+
+    <div class="pt">
+      <div style="display:grid;gap:18px;grid-template-columns:1fr">
+
+        <!-- Signatur -->
+        <div style="background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:12px;padding:22px">
+          <p class="eyebrow">Baustein 01 — überall, wo eine Akte erscheint</p>
+          <h3 style="font-size:1.25rem;margin-bottom:6px">Wirkungssignatur</h3>
+          <p style="font-size:.92rem;color:var(--text-2);max-width:70ch;margin-bottom:16px">Drei getrennte Achsen, nie verrechnet: Wohin zeigt die Wirkung, wie belastbar ist das Wissen, wie weit ist der Fall im Zyklus. Genau die drei Werte, die das Portal ohnehin typisiert führt — nur nicht mehr als Fließtextsatz.</p>
+
+          <div class="sig" style="max-width:660px">
+            <div class="sig-cell">
+              <p class="sig-lab">Wirkungsrichtung</p>
+              <p class="sig-val"><span class="sig-ico pos">↑</span> Positives Potenzial</p>
+              <div class="axis">
+                <div class="axis-track"><span class="axis-mark pos" style="left:76%"></span></div>
+                <div class="axis-ends"><span>entfernt sich</span><span>nähert sich</span></div>
+              </div>
+            </div>
+            <div class="sig-cell">
+              <p class="sig-lab">Evidenz</p>
+              <p class="sig-val">Stufe 2 von 4</p>
+              <div class="pips"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+              <p class="pips-cap">Vorlage belegt · Wirkannahme offen</p>
+            </div>
+            <div class="sig-cell">
+              <p class="sig-lab">Reifegrad</p>
+              <p class="sig-val">Ex ante</p>
+              <div class="pipe"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div>
+              <p class="pips-cap">Prüfung vor der Entscheidung</p>
+            </div>
+          </div>
+
+          <p style="font-size:.9rem;color:var(--text-2);margin:18px 0 9px"><strong style="color:var(--text)">Der ambivalente Fall</strong> — zwei Marken auf einer Achse, nie ein Mittelwert:</p>
+          <div class="sig" style="max-width:660px">
+            <div class="sig-cell">
+              <p class="sig-lab">Wirkungsrichtung</p>
+              <p class="sig-val"><span class="sig-ico amb">⇅</span> Gegenläufige Wirkpfade</p>
+              <div class="axis">
+                <div class="axis-track"><span class="axis-mark neg" style="left:22%"></span><span class="axis-mark pos" style="left:71%"></span></div>
+                <div class="axis-ends"><span>entfernt sich</span><span>nähert sich</span></div>
+              </div>
+            </div>
+            <div class="sig-cell">
+              <p class="sig-lab">Evidenz</p>
+              <p class="sig-val">Stufe 1 von 4</p>
+              <div class="pips"><i class="on"></i><i></i><i></i><i></i></div>
+              <p class="pips-cap">Wirkmechanismus plausibel, unbelegt</p>
+            </div>
+            <div class="sig-cell">
+              <p class="sig-lab">Reifegrad</p>
+              <p class="sig-val">In Umsetzung</p>
+              <div class="pipe"><i class="done"></i><s></s><i class="now"></i><s></s><i></i><s></s><i></i></div>
+              <p class="pips-cap">Beobachtung läuft an</p>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;padding:13px 15px;background:var(--flaeche-warm);border:1px solid var(--linie);border-radius:9px">
+            <p style="font-size:.86rem;color:var(--text-2);max-width:none"><strong style="color:var(--text)">Bindende Regel:</strong> Die Signatur zeigt nie eine Gesamtnote und addiert nie über die drei Achsen. Jede Marke trägt immer Symbol <em>und</em> Wortlaut — Farbe allein trägt keine Aussage, weil Grün und Rot bei Protanopie nur ΔE&nbsp;6,9 auseinanderliegen.</p>
+          </div>
+        </div>
+
+        <!-- Kette -->
+        <div style="background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:12px;padding:22px">
+          <p class="eyebrow">Baustein 02 — in jeder Akte, direkt unter der Signatur</p>
+          <h3 style="font-size:1.25rem;margin-bottom:6px">Wirkpfad-Kette</h3>
+          <p style="font-size:.92rem;color:var(--text-2);max-width:70ch;margin-bottom:16px">Vier Glieder vom Beschluss zur Zurechnung. Wo die Evidenz aufhört, wird das Glied gestrichelt und schraffiert. Die Grafik zeigt damit genau das, was das Portal methodisch behauptet: Wissen endet an einer bestimmten Stelle — und diese Stelle ist sichtbar.</p>
+          <div class="chain">
+            <div class="chain-node"><p class="chain-step"><i></i>01 Entscheidung</p><strong>Beschluss</strong><p>Amtliche Fassung liegt vor.</p><p class="chain-ev">belegt</p></div>
+            <div class="chain-node"><p class="chain-step"><i></i>02 Umsetzung</p><strong>Mittel &amp; Vollzug</strong><p>Ressourcen fließen, Regel greift.</p><p class="chain-ev">belegt</p></div>
+            <div class="chain-node open"><p class="chain-step"><i></i>03 Zustand</p><strong>Veränderung</strong><p>Was verändert sich messbar?</p><p class="chain-ev">noch nicht beobachtbar</p></div>
+            <div class="chain-node open"><p class="chain-step"><i></i>04 Zurechnung</p><strong>Beitrag</strong><p>Was wäre ohne die Entscheidung geschehen?</p><p class="chain-ev">offen</p></div>
+          </div>
+        </div>
+
+        <!-- weitere -->
+        <div style="display:grid;gap:18px;grid-template-columns:1fr">
+          <div style="background:var(--flaeche-karte);border:1px solid var(--linie);border-radius:12px;padding:22px">
+            <p class="eyebrow">Bausteine 03–06</p>
+            <h3 style="font-size:1.25rem;margin-bottom:16px">Reifeband, Prüffragen-Ring, Referenzchips, Kartogramm</h3>
+            <div style="display:grid;gap:24px;grid-template-columns:1fr">
+              <div class="grid4" style="display:grid;gap:24px">
+                <div>
+                  <p class="sig-lab">03 · Prüffragen-Ring</p>
+                  <div class="ring-wrap" style="margin-top:9px">
+                    <div class="ring" style="--p:30"><i>3/10</i></div>
+                    <p style="font-size:.83rem;color:var(--text-2)">beantwortet von zehn konkreten Prüffragen</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="sig-lab">04 · Referenzchips</p>
+                  <div class="refs" style="margin-top:9px">
+                    <b class="on">SDG 3</b><b class="on">SDG 5</b><b class="on">SDG 16</b><b>SDG 10</b><b>SDG 11</b>
+                    <b class="law">Art. 2 GG</b><b class="law">Schutzpflicht</b>
+                  </div>
+                  <p style="font-size:.8rem;color:var(--text-2);margin-top:8px">Nur berührte Ziele leuchten. Recht bleibt eine eigene, goldene Ebene.</p>
+                </div>
+                <div>
+                  <p class="sig-lab">05 · Verfahrensschritte</p>
+                  <div class="steps" style="margin-top:9px;font-size:.9em">
+                    <div class="step"><p class="d">15.08.2026</p><p class="t">Zugeleitet</p></div>
+                    <div class="step now"><p class="d">offen</p><p class="t">1. Lesung</p></div>
+                    <div class="step future"><p class="d">—</p><p class="t">Ausschuss</p></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="sig-lab">06 · Länder-Kartogramm</p>
+                  <div style="display:flex;gap:16px;margin-top:9px;flex-wrap:wrap;align-items:flex-start">
+                    <div class="karto" style="max-width:190px">
+                      <b class="k1">SH</b><b class="k1">HH</b><b class="k1">MV</b><b class="k1"></b><b class="k1"></b>
+                      <b class="k1">HB</b><b class="k1">NI</b><b class="k1">BB</b><b class="k1">BE</b><b class="k1"></b>
+                      <b class="k1">NW</b><b class="k1">ST</b><b class="k3">SN</b><b class="k1"></b><b class="k1"></b>
+                      <b class="k3">HE</b><b class="k3">TH</b><b class="k4">ST</b><b class="k1"></b><b class="k1"></b>
+                      <b class="k2">RP</b><b class="k1">SL</b><b class="k2">BW</b><b class="k1">BY</b><b class="k1"></b>
+                    </div>
+                    <div class="karto-legend">
+                      <b><i class="k4"></i><em>1</em> vollständig analysiert</b>
+                      <b><i class="k3"></i><em>2</em> initialer Fachstand</b>
+                      <b><i class="k2"></i><em>2</em> Materialitätsreview</b>
+                      <b><i class="k1"></i><em>11</em> ausdrücklich offen</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:.83rem;color:var(--text-2);margin-top:16px;max-width:70ch">Das Kartogramm ersetzt drei Absätze auf der Länderseite, die heute in Prosa erklären, wie unvollständig der Bestand ist. Die Ehrlichkeit bleibt — sie wird nur in einer Sekunde statt in einer Minute lesbar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 4 PORTALSTART ══════════════ -->
+  <section class="chapter" id="start">
+    <div class="chapter-head"><span class="chapter-num">4</span><h2>Portalstart</h2></div>
+    <p class="chapter-lead">Von elf Textabschnitten auf sechs Blöcke. Die Methode verschwindet nicht — sie steht nicht mehr <em>vor</em> dem ersten Ergebnis. Alle Zahlen im Kennzahlenband sind Platzhalter des Entwurfs und in der Umsetzung aus dem Bestand zu berechnen.</p>
+
+    <div class="board">
+      <div class="board-bar"><span>Artboard A — <em>/</em></span><span>Zielumfang ≈ 450 Wörter</span></div>
+      <div class="board-body pt">
+
+        <div class="topbar"><div class="topbar-inner">
+          <a class="brand" href="#start"><span class="sig">WÖ</span><span>Wirkungsportal<small>Parlament</small></span></a>
+          <nav class="mainnav">
+            <a href="#start" aria-current="page">Aktuell</a>
+            <a href="#register">Wirkungsakten</a>
+            <a href="#start">Wirkungsmonitor</a>
+            <a href="#start">Bund, Länder &amp; EU</a>
+            <a href="#start">Prüfstandard</a>
+          </nav>
+          <div class="utility"><a href="#start">Suche</a><a href="#start">Merkliste</a><a class="prim" href="#start">Radar abonnieren</a></div>
+        </div></div>
+
+        <div class="shell hero">
+          <p class="eyebrow">Unabhängiges Portal des Instituts für Wirkungsökonomie</p>
+          <h1>Von der politischen Absicht zur tatsächlichen Wirkung.</h1>
+          <p class="lead">Welche Zustände soll eine Entscheidung verändern, welche Nebenwirkungen sind möglich — und was verändert sich nach der Umsetzung wirklich?</p>
+          <p class="indep">Kein Angebot des Deutschen Bundestages, keiner Partei, keiner Fraktion.</p>
+          <div class="hero-actions">
+            <a class="btn btn-prim" href="#start">Was steht als Nächstes an?</a>
+            <a class="btn btn-sec" href="#start">So prüfen wir</a>
+          </div>
+        </div>
+
+        <div class="stand"><div class="shell">
+          <p class="eyebrow">Portalstand</p>
+          <div class="stand-grid">
+            <div class="stand-cell"><p class="stand-num">142</p><p class="stand-cap">Wirkungsakten veröffentlicht</p></div>
+            <div class="stand-cell"><p class="stand-num">19</p><p class="stand-cap">Vorgänge im Parlamentsradar</p></div>
+            <div class="stand-cell"><p class="stand-num">5<span style="font-size:1.2rem;color:var(--invers-weich)"> / 16</span></p><p class="stand-cap">Länder mit Fachstand</p></div>
+            <div class="stand-cell"><p class="stand-num">1.430</p><p class="stand-cap">amtliche Quellen geprüft</p></div>
+          </div>
+          <div class="ribbon">
+            <div class="ribbon-track">
+              <i style="flex:96;background:#c8a24a"></i><i style="flex:28;background:#5f9c8b"></i><i style="flex:13;background:#1f6f5c"></i><i style="flex:5;background:#7a8798"></i>
+            </div>
+            <div class="ribbon-legend">
+              <b style="--c:#c8a24a"><em>96</em>&nbsp;Ex ante geprüft</b>
+              <b style="--c:#5f9c8b"><em>28</em>&nbsp;In Umsetzung</b>
+              <b style="--c:#1f6f5c"><em>13</em>&nbsp;Wirkung beobachtet</b>
+              <b style="--c:#7a8798"><em>5</em>&nbsp;Beitrag zugerechnet</b>
+            </div>
+          </div>
+          <p class="stand-note">Beispielwerte des Entwurfs. In der Umsetzung aus dem Aktenbestand berechnet und mit Stichtag ausgewiesen.</p>
+        </div></div>
+
+        <div class="shell section">
+          <div class="sec-head">
+            <div><p class="eyebrow">Parlamentsradar</p><h2>Was steht als Nächstes an?</h2></div>
+            <a class="tlink" href="#register">Alle 19 Vorgänge →</a>
+          </div>
+          <div class="grid3">
+
+            <article class="card">
+              <div class="card-top"><span class="chip typ">Radar</span><span class="chip hoch">hohe Prüfrelevanz</span></div>
+              <h3><a href="#akte">Strafrechtlicher Schutz vor K.-o.-Tropfen</a></h3>
+              <p class="finding"><b>Key Finding:</b> Strafrahmen allein verbessert die Aufklärung nicht.</p>
+              <div class="sig">
+                <div class="sig-cell">
+                  <p class="sig-lab">Richtung</p>
+                  <p class="sig-val"><span class="sig-ico pos">↑</span> Positives Potenzial</p>
+                  <div class="axis"><div class="axis-track"><span class="axis-mark pos" style="left:76%"></span></div></div>
+                </div>
+                <div class="sig-cell"><p class="sig-lab">Evidenz</p><div class="pips" style="margin-top:2px"><i class="on"></i><i class="on"></i><i></i><i></i></div><p class="pips-cap">2 / 4</p></div>
+                <div class="sig-cell"><p class="sig-lab">Reife</p><div class="pipe" style="margin-top:2px"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div><p class="pips-cap">Ex ante</p></div>
+              </div>
+              <div class="card-foot"><span>Zugeleitet · 15.08.2026</span><a class="tlink" href="#akte">Akte öffnen →</a></div>
+            </article>
+
+            <article class="card">
+              <div class="card-top"><span class="chip typ">Radar</span><span class="chip hoch">hohe Prüfrelevanz</span></div>
+              <h3><a href="#akte">Halbautomatische Kurzwaffen als Verbrechen</a></h3>
+              <p class="finding"><b>Key Finding:</b> Starre Mindeststrafe bei gleichzeitig weiterem Überwachungseingriff.</p>
+              <div class="sig">
+                <div class="sig-cell">
+                  <p class="sig-lab">Richtung</p>
+                  <p class="sig-val"><span class="sig-ico amb">⇅</span> Gegenläufig</p>
+                  <div class="axis"><div class="axis-track"><span class="axis-mark neg" style="left:24%"></span><span class="axis-mark pos" style="left:69%"></span></div></div>
+                </div>
+                <div class="sig-cell"><p class="sig-lab">Evidenz</p><div class="pips" style="margin-top:2px"><i class="on"></i><i class="on"></i><i></i><i></i></div><p class="pips-cap">2 / 4</p></div>
+                <div class="sig-cell"><p class="sig-lab">Reife</p><div class="pipe" style="margin-top:2px"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div><p class="pips-cap">Ex ante</p></div>
+              </div>
+              <div class="card-foot"><span>Zugeleitet · 15.08.2026</span><a class="tlink" href="#akte">Akte öffnen →</a></div>
+            </article>
+
+            <article class="card">
+              <div class="card-top"><span class="chip typ">Radar</span><span class="chip hoch">hohe Prüfrelevanz</span></div>
+              <h3><a href="#akte">Bundeshaushalt 2027</a></h3>
+              <p class="finding"><b>Key Finding:</b> Bewertung nur je Programm — der Haushalt hat keine Gesamtrichtung.</p>
+              <div class="sig">
+                <div class="sig-cell">
+                  <p class="sig-lab">Richtung</p>
+                  <p class="sig-val"><span class="sig-ico off">○</span> Nicht aggregierbar</p>
+                  <div class="axis"><div class="axis-track"><span class="axis-mark off" style="left:50%"></span></div></div>
+                </div>
+                <div class="sig-cell"><p class="sig-lab">Evidenz</p><div class="pips" style="margin-top:2px"><i class="on"></i><i></i><i></i><i></i></div><p class="pips-cap">1 / 4</p></div>
+                <div class="sig-cell"><p class="sig-lab">Reife</p><div class="pipe" style="margin-top:2px"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div><p class="pips-cap">Ex ante</p></div>
+              </div>
+              <div class="card-foot"><span>Zugeleitet · 15.08.2026</span><a class="tlink" href="#akte">Akte öffnen →</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="section warm"><div class="shell">
+          <p class="eyebrow">Die Signatur lesen</p>
+          <h2 style="margin-bottom:16px">Drei Achsen. Keine Note.</h2>
+          <div class="legend">
+            <div>
+              <h4>Wirkungsrichtung</h4>
+              <p>Nähert sich die Maßnahme dem Ziel oder entfernt sie sich? Gegenläufige Pfade bekommen zwei Marken und werden nie gemittelt.</p>
+            </div>
+            <div>
+              <h4>Evidenz</h4>
+              <p>Vier Stufen von „plausibler Wirkmechanismus" bis „Beitrag belastbar zugerechnet". Offen heißt weder neutral noch null.</p>
+            </div>
+            <div>
+              <h4>Reifegrad</h4>
+              <p>Wo im Zyklus der Fall steht: vor der Entscheidung, in Umsetzung, beobachtet, zurückgekoppelt.</p>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="shell section">
+          <div class="sec-head"><div><p class="eyebrow">Vier Wege ins Portal</p><h2>Wonach suchen Sie?</h2></div></div>
+          <div class="grid4">
+            <a class="way" href="#register"><p class="n">01</p><h3>Wirkungsakten</h3><p>142 geprüfte Vorlagen, filterbar nach Ebene, Wirkungsfeld, Richtung und Evidenz.</p><p class="arrow">Register öffnen →</p></a>
+            <a class="way" href="#start"><p class="n">02</p><h3>Wirkungsmonitor</h3><p>Was aus Beschlüssen wurde: Beobachtung, Reality-Checks, Versprechen und Praxis.</p><p class="arrow">Monitor öffnen →</p></a>
+            <a class="way" href="#start"><p class="n">03</p><h3>Bund, Länder &amp; EU</h3><p>Wer entscheidet — Bundestag, Bundesregierung, 16 Länder, Europäische Union.</p><p class="arrow">Ebenen öffnen →</p></a>
+            <a class="way" href="#start"><p class="n">04</p><h3>Prüfstandard</h3><p>Methode, Referenzrahmen, Begriffe, Quellenarchiv und unsere Grenzen.</p><p class="arrow">Standard öffnen →</p></a>
+          </div>
+        </div>
+
+        <div class="section warm"><div class="shell">
+          <div class="sec-head"><div><p class="eyebrow">Bundesländer</p><h2>16 Länder, ein Prüfstandard, ehrlicher Fachstand.</h2></div><a class="tlink" href="#start">Länderbereich →</a></div>
+          <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start">
+            <div class="karto">
+              <b class="k1">SH</b><b class="k1">HH</b><b class="k2">MV</b><b class="k1"></b><b class="k1"></b>
+              <b class="k1">HB</b><b class="k1">NI</b><b class="k1">BB</b><b class="k2">BE</b><b class="k1"></b>
+              <b class="k1">NW</b><b class="k4">ST</b><b class="k1">SN</b><b class="k1"></b><b class="k1"></b>
+              <b class="k1">HE</b><b class="k1">TH</b><b class="k1"></b><b class="k1"></b><b class="k1"></b>
+              <b class="k3">RP</b><b class="k1">SL</b><b class="k3">BW</b><b class="k1">BY</b><b class="k1"></b>
+            </div>
+            <div style="flex:1;min-width:240px">
+              <div class="karto-legend">
+                <b><i class="k4"></i><em>1</em> vollständig analysiert — Sachsen-Anhalt</b>
+                <b><i class="k3"></i><em>2</em> initialer Regierungsfachstand — BW, RP</b>
+                <b><i class="k2"></i><em>2</em> Materialitätsreview — Berlin, MV</b>
+                <b><i class="k1"></i><em>11</em> ausdrücklich noch offen</b>
+              </div>
+              <p style="font-size:.88rem;color:var(--text-2);margin-top:14px;max-width:44ch">Kein generischer Ersatztext für Länder ohne Analyse. Eine registrierte Quelle ist keine fertige Wirkungsanalyse.</p>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="trust"><div class="shell">
+          <p class="eyebrow">Unabhängig und nachvollziehbar</p>
+          <h2>Ein offener Referenzrahmen — keine versteckte Parteibewertung.</h2>
+          <div class="trust-grid">
+            <div><strong>Amtliche Fakten getrennt</strong><span>Verfahrensstand und Fassungen stammen aus gekennzeichneten Originalquellen.</span></div>
+            <div><strong>Keine Blackbox</strong><span>Rechenweg, Quellen, Annahmen und Grenzen sind auf jeder Seite zu öffnen.</span></div>
+            <div><strong>Keine Gesamtnote</strong><span>Schwere Schäden an Schutzgütern werden nicht gegen Vorteile verrechnet.</span></div>
+            <div><strong>Keine Personenbewertung</strong><span>Das Portal bewertet keine Menschen, Gesinnungen oder Nutzerprofile.</span></div>
+          </div>
+          <p style="margin-top:20px"><a class="tlink" style="color:var(--invers-akzent);border-color:rgba(200,162,74,.4)" href="#start">Prüfstandard und Grenzen ansehen →</a></p>
+        </div></div>
+
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Was von der alten Startseite wohin wandert</strong>
+      <ul>
+        <li>„Was ist Wirkungsökonomie", „Die gemeinsame Wirkungsarchitektur", „Vier Säulen", das Schulgebäude-Beispiel → <code>/pruefstandard/methodik</code>, dort als zusammenhängende Erklärstrecke stärker als verstreut auf der Startseite.</li>
+        <li>„Was Sie hier bekommen" → wird zu „Vier Wege ins Portal" und damit zu Navigation statt Beschreibung.</li>
+        <li>Vertrauensabschnitt → gekürzt auf vier Zeilen, Volltext unter <code>/pruefstandard/transparenz</code>.</li>
+        <li>Teaser Mandat &amp; Praxis, Länder, Fachanalysen → als Ziel in „Vier Wege" bzw. im Länderblock.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════════ 5 REGISTER ══════════════ -->
+  <section class="chapter" id="register">
+    <div class="chapter-head"><span class="chapter-num">5</span><h2>Wirkungsakten — ein Register statt sechs Listen</h2></div>
+    <p class="chapter-lead">Derselbe Objekttyp lag bisher unter sechs Pfaden. Hier liegt er einmal, mit Facetten. Die Verteilungsleiste über der Liste beantwortet die häufigste Frage sofort: Wie sieht der Bestand insgesamt aus?</p>
+
+    <div class="board">
+      <div class="board-bar"><span>Artboard B — <em>/wirkungsakten</em></span><span>Filter · Verteilung · Zeilen</span></div>
+      <div class="board-body pt">
+
+        <div class="topbar"><div class="topbar-inner">
+          <a class="brand" href="#start"><span class="sig">WÖ</span><span>Wirkungsportal<small>Parlament</small></span></a>
+          <nav class="mainnav">
+            <a href="#start">Aktuell</a><a href="#register" aria-current="page">Wirkungsakten</a><a href="#start">Wirkungsmonitor</a><a href="#start">Bund, Länder &amp; EU</a><a href="#start">Prüfstandard</a>
+          </nav>
+          <div class="utility"><a href="#start">Suche</a><a href="#start">Merkliste</a><a class="prim" href="#start">Radar abonnieren</a></div>
+        </div></div>
+
+        <div class="shell">
+          <p class="crumbs"><a href="#start">Start</a><span>›</span>Wirkungsakten</p>
+          <div style="padding:20px 0 22px">
+            <p class="eyebrow">Register</p>
+            <h1 style="font-size:clamp(1.7rem,3vw,2.4rem)">Alle geprüften Vorlagen an einer Stelle</h1>
+            <p style="max-width:60ch;margin-top:12px;color:var(--text-2)">Bundestag, Bundesregierung, Länder und EU in einem Bestand. Amtlicher Sachverhalt und WÖk-Einordnung bleiben in jeder Akte getrennt sichtbar.</p>
+          </div>
+
+          <div class="filters">
+            <div class="fgroup"><span>Ebene</span><b class="fchip on">Alle</b><b class="fchip">Bund</b><b class="fchip">Länder</b><b class="fchip">EU</b></div>
+            <div class="fsep"></div>
+            <div class="fgroup"><span>Organ</span><b class="fchip on">Alle</b><b class="fchip">Bundestag</b><b class="fchip">Regierung</b></div>
+            <div class="fsep"></div>
+            <div class="fgroup"><span>Richtung</span><b class="fchip on">Alle</b><b class="fchip">Positiv</b><b class="fchip">Gegenläufig</b><b class="fchip">Risiko</b><b class="fchip">Offen</b></div>
+            <div class="fsep"></div>
+            <div class="fgroup"><span>Reife</span><b class="fchip on">Alle</b><b class="fchip">Ex ante</b><b class="fchip">Beobachtet</b></div>
+          </div>
+
+          <div class="result">
+            <p class="result-n">142 Akten</p>
+            <div class="dist">
+              <div class="dist-track">
+                <i style="flex:41;background:#1f6f5c"></i><i style="flex:38;background:linear-gradient(90deg,#1f6f5c 0 50%,#a54537 50%)"></i><i style="flex:22;background:#a54537"></i><i style="flex:41;background:#7a8798"></i>
+              </div>
+              <div class="dist-legend">
+                <b style="--c:#1f6f5c"><em>41</em>&nbsp;positives Potenzial</b>
+                <b style="--c:#825f2d"><em>38</em>&nbsp;gegenläufig</b>
+                <b style="--c:#a54537"><em>22</em>&nbsp;überwiegend Risiko</b>
+                <b style="--c:#7a8798"><em>41</em>&nbsp;offen / nicht aggregierbar</b>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:.8rem;color:var(--text-2);margin-bottom:20px">Beispielverteilung des Entwurfs. „Offen" ist eine eigene Kategorie, kein Restposten.</p>
+
+          <div style="display:flex;flex-direction:column;gap:11px;padding-bottom:34px">
+
+            <article class="row">
+              <div>
+                <div class="card-top" style="margin-bottom:7px"><span class="chip typ">Bundestag</span><span class="chip hoch">hohe Prüfrelevanz</span></div>
+                <h3><a href="#akte">Gesetz zur Änderung des Strafgesetzbuches — Schutz vor K.-o.-Tropfen</a></h3>
+                <p class="meta">Zugeleitet, noch nicht beraten · amtliche Quelle geprüft · 15.08.2026</p>
+              </div>
+              <div class="sig">
+                <div class="sig-cell"><p class="sig-lab">Richtung</p><p class="sig-val"><span class="sig-ico pos">↑</span> Positiv</p></div>
+                <div class="sig-cell"><p class="sig-lab">Evidenz</p><div class="pips" style="margin-top:2px"><i class="on"></i><i class="on"></i><i></i><i></i></div><p class="pips-cap">2 / 4</p></div>
+                <div class="sig-cell"><p class="sig-lab">Reife</p><div class="pipe" style="margin-top:2px"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div><p class="pips-cap">Ex ante</p></div>
+              </div>
+            </article>
+
+            <article class="row">
+              <div>
+                <div class="card-top" style="margin-bottom:7px"><span class="chip typ">Bundesregierung</span></div>
+                <h3><a href="#akte">Gebäudemodernisierungsgesetz 2026</a></h3>
+                <p class="meta">Kabinettsbeschluss · amtliche Quelle geprüft · 28.08.2026</p>
+              </div>
+              <div class="sig">
+                <div class="sig-cell"><p class="sig-lab">Richtung</p><p class="sig-val"><span class="sig-ico amb">⇅</span> Gegenläufig</p></div>
+                <div class="sig-cell"><p class="sig-lab">Evidenz</p><div class="pips" style="margin-top:2px"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><p class="pips-cap">3 / 4</p></div>
+                <div class="sig-cell"><p class="sig-lab">Reife</p><div class="pipe" style="margin-top:2px"><i class="done"></i><s></s><i class="now"></i><s></s><i></i><s></s><i></i></div><p class="pips-cap">In Umsetzung</p></div>
+              </div>
+            </article>
+
+            <article class="row">
+              <div>
+                <div class="card-top" style="margin-bottom:7px"><span class="chip typ">Bundesregierung</span></div>
+                <h3><a href="#akte">Aktionsplan Nachhaltigkeit 2026 — 19 Missionen</a></h3>
+                <p class="meta">Beteiligungsfassung · Ex-ante-Analyse · 22.08.2026</p>
+              </div>
+              <div class="sig">
+                <div class="sig-cell"><p class="sig-lab">Richtung</p><p class="sig-val"><span class="sig-ico pos">↑</span> Strukturell positiv</p></div>
+                <div class="sig-cell"><p class="sig-lab">Evidenz</p><div class="pips" style="margin-top:2px"><i class="on"></i><i class="on"></i><i></i><i></i></div><p class="pips-cap">2 / 4</p></div>
+                <div class="sig-cell"><p class="sig-lab">Reife</p><div class="pipe" style="margin-top:2px"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div><p class="pips-cap">Ex ante</p></div>
+              </div>
+            </article>
+
+            <article class="row">
+              <div>
+                <div class="card-top" style="margin-bottom:7px"><span class="chip typ">Bundestag</span><span class="chip hoch">hohe Prüfrelevanz</span></div>
+                <h3><a href="#akte">Haushaltsgesetz 2027</a></h3>
+                <p class="meta">Zugeleitet, noch nicht beraten · amtliche Quelle geprüft · 15.08.2026</p>
+              </div>
+              <div class="sig">
+                <div class="sig-cell"><p class="sig-lab">Richtung</p><p class="sig-val"><span class="sig-ico off">○</span> Nicht aggregierbar</p></div>
+                <div class="sig-cell"><p class="sig-lab">Evidenz</p><div class="pips" style="margin-top:2px"><i class="on"></i><i></i><i></i><i></i></div><p class="pips-cap">1 / 4</p></div>
+                <div class="sig-cell"><p class="sig-lab">Reife</p><div class="pipe" style="margin-top:2px"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div><p class="pips-cap">Ex ante</p></div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 6 AKTE ══════════════ -->
+  <section class="chapter" id="akte">
+    <div class="chapter-head"><span class="chapter-num">6</span><h2>Die Einzelakte — drei Tiefen statt einer Wand</h2></div>
+    <p class="chapter-lead">Der gesamte heutige Text bleibt erhalten und wird auf drei Ebenen verteilt: Ergebnis sofort, Fachstand in Reitern, Rohmaterial im Aufklapper. Der Lesemodus schaltet zwischen verständlicher und fachlicher Sprache — probieren Sie ihn im Artboard aus.</p>
+
+    <div class="board">
+      <div class="board-bar"><span>Artboard C — <em>/wirkungsakten/ko-tropfen-stgb</em></span><span>Lesemodus &amp; Reiter sind bedienbar</span></div>
+      <div class="board-body pt" id="akte-pt" data-modus="verstaendlich">
+
+        <div class="topbar"><div class="topbar-inner">
+          <a class="brand" href="#start"><span class="sig">WÖ</span><span>Wirkungsportal<small>Parlament</small></span></a>
+          <nav class="mainnav">
+            <a href="#start">Aktuell</a><a href="#register" aria-current="page">Wirkungsakten</a><a href="#start">Wirkungsmonitor</a><a href="#start">Bund, Länder &amp; EU</a><a href="#start">Prüfstandard</a>
+          </nav>
+          <div class="utility"><a href="#start">Suche</a><a href="#start">Merkliste</a><a class="prim" href="#start">Radar abonnieren</a></div>
+        </div></div>
+
+        <div class="shell">
+          <p class="crumbs"><a href="#start">Start</a><span>›</span><a href="#register">Wirkungsakten</a><span>›</span>Bundestag<span>›</span>K.-o.-Tropfen</p>
+
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap;padding:18px 0 0">
+            <div class="card-top"><span class="chip typ">Bundestag · Radar</span><span class="chip hoch">hohe Prüfrelevanz</span></div>
+            <div class="modus" role="group" aria-label="Lesemodus">
+              <button type="button" data-modus-set="verstaendlich" aria-pressed="true">Verständlich</button>
+              <button type="button" data-modus-set="fachlich" aria-pressed="false">Fachlich</button>
+            </div>
+          </div>
+
+          <h1 style="margin-top:12px;font-size:clamp(1.6rem,2.8vw,2.2rem);max-width:24ch">Strafrechtlicher Schutz vor sogenannten K.-o.-Tropfen</h1>
+          <p style="font-size:.85rem;color:var(--text-2);margin-top:9px">Gesetz zur Änderung des Strafgesetzbuches · Drucksache dem Bundestag zugeleitet</p>
+
+          <div class="akte" style="margin-top:24px;padding-bottom:36px">
+            <div>
+
+              <div class="sig" style="grid-template-columns:1fr">
+                <div class="sig-cell" style="display:grid;gap:14px;grid-template-columns:1fr">
+                  <div class="grid3">
+                    <div>
+                      <p class="sig-lab">Wirkungsrichtung</p>
+                      <p class="sig-val"><span class="sig-ico pos">↑</span> Positives Wirkungspotenzial</p>
+                      <div class="axis"><div class="axis-track"><span class="axis-mark pos" style="left:76%"></span></div><div class="axis-ends"><span>entfernt sich</span><span>nähert sich</span></div></div>
+                    </div>
+                    <div>
+                      <p class="sig-lab">Evidenz</p>
+                      <p class="sig-val">Stufe 2 von 4</p>
+                      <div class="pips"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+                      <p class="pips-cap">Amtliche Vorlage belegt · Wirkannahme noch zu prüfen</p>
+                    </div>
+                    <div>
+                      <p class="sig-lab">Reifegrad</p>
+                      <p class="sig-val">Ex ante</p>
+                      <div class="pipe"><i class="now"></i><s></s><i></i><s></s><i></i><s></s><i></i></div>
+                      <p class="pips-cap">Wirkung noch nicht beobachtbar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="keyfind" style="margin-top:16px">
+                <p class="eyebrow">Key Finding</p>
+                <p>Eine bloße Strafrahmenverschiebung verbessert die Aufklärung nicht.</p>
+              </div>
+
+              <p style="margin-top:16px;font-size:1.02rem;max-width:62ch" class="kurz-only">Die Ergänzung um gefährliche „Mittel" kann eine Lücke im Strafrecht schließen, die durch höchstrichterliche Auslegung sichtbar wurde. Ob dadurch mehr Taten verhindert, angezeigt oder verurteilt werden, ist offen.</p>
+              <p style="margin-top:16px;font-size:1.02rem;max-width:62ch" class="fach">Die Ergänzung um gefährliche „Mittel" kann eine durch höchstrichterliche Auslegung sichtbar gewordene Qualifikationslücke schließen, Unrechtsgleichheit herstellen und den Schutz vor K.-o.-Tropfen stärken. Die tatsächliche Präventions-, Anzeige-, Verurteilungs- und Opferwirkung bleibt offen. Aussagegrenze: Die amtliche Vorlage dokumentiert Regelungsabsicht und Mechanismus, nicht die spätere Zustandsänderung oder Kausalwirkung.</p>
+
+              <h2 style="font-size:1.2rem;margin-top:28px">Wirkpfad — und wo das Wissen endet</h2>
+              <div class="chain" style="margin-top:11px">
+                <div class="chain-node"><p class="chain-step"><i></i>01 Entscheidung</p><strong>Qualifikation erweitert</strong><p>Amtliche Vorlage liegt vor.</p><p class="chain-ev">belegt</p></div>
+                <div class="chain-node open"><p class="chain-step"><i></i>02 Umsetzung</p><strong>Anwendungspraxis</strong><p>Toxikologische Beweissicherung, Anzeigeverhalten.</p><p class="chain-ev">nicht belegt</p></div>
+                <div class="chain-node open"><p class="chain-step"><i></i>03 Zustand</p><strong>Weniger Taten?</strong><p>Amtliche Fallstatistik zu K.-o.-Tropfen fehlt.</p><p class="chain-ev">Datenlücke</p></div>
+                <div class="chain-node open"><p class="chain-step"><i></i>04 Zurechnung</p><strong>Beitrag der Norm</strong><p>Gegenfaktum nicht bestimmbar.</p><p class="chain-ev">offen</p></div>
+              </div>
+
+              <div class="grid3" style="margin-top:22px">
+                <div style="grid-column:span 2">
+                  <p class="sig-lab">Berührter Referenzrahmen</p>
+                  <div class="refs"><b class="on">SDG 3</b><b class="on">SDG 5</b><b class="on">SDG 16</b><b>SDG 10</b><b>SDG 11</b><b class="law">Art. 2 II GG</b><b class="law">Schutzpflicht</b></div>
+                </div>
+                <div>
+                  <p class="sig-lab">Offene Prüffragen</p>
+                  <div class="ring-wrap" style="margin-top:8px"><div class="ring" style="--p:0"><i>0/10</i></div><p style="font-size:.82rem;color:var(--text-2)">zehn konkrete Fragen noch offen</p></div>
+                </div>
+              </div>
+
+              <h2 style="font-size:1.2rem;margin-top:28px">Verfahrensstand</h2>
+              <div class="steps">
+                <div class="step"><p class="d">15.08.2026</p><p class="t">Dem Bundestag zugeleitet</p></div>
+                <div class="step now"><p class="d">noch offen</p><p class="t">1. Lesung</p></div>
+                <div class="step future"><p class="d">—</p><p class="t">Ausschussberatung</p></div>
+                <div class="step future"><p class="d">—</p><p class="t">Schlussabstimmung</p></div>
+              </div>
+
+              <div class="tabs" role="tablist" style="margin-top:28px">
+                <button role="tab" aria-selected="true" data-tab="t1">Sachverhalt</button>
+                <button role="tab" aria-selected="false" data-tab="t2">Wirkungsanalyse</button>
+                <button role="tab" aria-selected="false" data-tab="t3">Evidenz &amp; Grenzen</button>
+                <button role="tab" aria-selected="false" data-tab="t4">Quellen</button>
+                <button role="tab" aria-selected="false" data-tab="t5">Verlauf</button>
+              </div>
+              <div class="tabpanel" id="t1">
+                <p>Der Entwurf ergänzt die Qualifikation um gefährliche „Mittel". Damit sollen Fälle erfasst werden, in denen narkotisierende Substanzen bei Sexualdelikten verabreicht werden.</p>
+                <p class="fach">Anlass ist eine höchstrichterliche Auslegung, nach der das bisherige Normdesign den gesetzgeberisch angenommenen Unrechtsgehalt nicht konsistent erfasst. Diese Rechtsprechung ist eine dokumentierte Rückkopplung aus der Anwendungspraxis.</p>
+              </div>
+              <div class="tabpanel" id="t2" hidden>
+                <p>Der angenommene Wirkmechanismus: Eine klarere strafrechtliche Erfassung erhöht Unrechtsbewertung und Ermittlungspriorität — und damit mittelbar Abschreckung und Anzeigebereitschaft.</p>
+                <p>Die praktische Schutzwirkung hängt jedoch ebenso an schneller toxikologischer Beweissicherung, an Beratung, an Prävention und an einer verlässlichen Erfassung der Fälle. Keiner dieser Hebel wird durch den Entwurf selbst bewegt.</p>
+              </div>
+              <div class="tabpanel" id="t3" hidden>
+                <p><strong>Getragene Wirkannahme:</strong> Fälle der Verabreichung narkotisierender Substanzen bei Sexualdelikten können der höheren Qualifikation zugeordnet werden.</p>
+                <p><strong>Zentrale Datenlücke:</strong> Es fehlt eine amtliche Fall- und Verfahrensstatistik zu K.-o.-Tropfen. Ohne sie ist weder Ausgangslage noch spätere Veränderung bestimmbar.</p>
+                <p><strong>Aussagegrenze:</strong> Die amtliche Vorlage dokumentiert Regelungsabsicht und Mechanismus — nicht die spätere Zustandsänderung und nicht die Kausalwirkung.</p>
+              </div>
+              <div class="tabpanel" id="t4" hidden>
+                <p>Amtliche Vorlage geprüft · Bundestagsdrucksache · Stand 15.08.2026. Jede Aussage dieser Akte verweist auf ihre Grundlage; nicht belegte Aussagen sind als Annahme gekennzeichnet.</p>
+              </div>
+              <div class="tabpanel" id="t5" hidden>
+                <p>15.08.2026 — Akte angelegt, amtliche Quelle geprüft, Ex-ante-Einordnung veröffentlicht. Korrekturen an dieser Akte werden sichtbar dokumentiert und ersetzen keine Fassung stillschweigend.</p>
+              </div>
+
+              <details class="more">
+                <summary>Rechenweg, Annahmen und Versionsstand öffnen</summary>
+                <div class="inner"><p>Hier liegt die heutige Transparenzansicht vollständig: Eingangswerte, Gegenfaktum, Formel, Annahmen, Unsicherheit, methodische Version und Rohquellen. Sie bleibt unverändert erhalten — nur eine Ebene tiefer.</p></div>
+              </details>
+
+            </div>
+
+            <aside class="rail">
+              <div class="rail-box">
+                <h4>Status</h4>
+                <dl class="rail-dl">
+                  <div><dt>Parlament</dt><dd>zugeleitet</dd></div>
+                  <div><dt>WÖk-Analyse</dt><dd>Ex ante</dd></div>
+                  <div><dt>Quellen</dt><dd>geprüft</dd></div>
+                  <div><dt>Aktualisiert</dt><dd>15.08.2026</dd></div>
+                </dl>
+              </div>
+              <div class="rail-box">
+                <h4>Diese Akte verfolgen</h4>
+                <a class="btn btn-prim" style="width:100%;justify-content:center" href="#akte">Merken</a>
+                <a class="btn btn-sec" style="width:100%;justify-content:center;margin-top:8px" href="#akte">Bei Änderung benachrichtigen</a>
+              </div>
+              <div class="rail-box">
+                <h4>Einwand senden</h4>
+                <p style="font-size:.84rem;color:var(--text-2)">Neue Daten oder ein methodischer Fehler? Korrekturen werden dokumentiert, nicht still ersetzt.</p>
+                <p style="margin-top:9px"><a class="tlink" href="#akte">Korrektur melden →</a></p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 7 REGELN ══════════════ -->
+  <section class="chapter" id="regeln">
+    <div class="chapter-head"><span class="chapter-num">7</span><h2>Bindende Regeln für die Umsetzung</h2></div>
+    <p class="chapter-lead">Was in keinem Schritt verhandelbar ist. Diese Liste geht unverändert in den Codex-Auftrag ein.</p>
+
+    <div class="scroller">
+      <table class="map">
+        <thead><tr><th style="width:34%">Regel</th><th>Begründung</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Kein Inhalt wird entfernt</strong></td><td>Jede heute veröffentlichte Passage bleibt erreichbar. Der Umbau verschiebt nur ihre Ebene. Vor jedem Merge ist ein Textbestands-Diff zu führen: entfernte Absätze müssen einzeln als „verschoben nach X" ausgewiesen sein.</td></tr>
+          <tr><td><strong>Keine Gesamtnote, kein Score</strong></td><td>Die Signatur zeigt drei getrennte Achsen. Es gibt keine Sortierung nach einem aggregierten Wert, keine Ranglisten von Fällen und keine Bewertung von Personen, Parteien oder Fraktionen.</td></tr>
+          <tr><td><strong>Farbe trägt nie allein</strong></td><td>Jede Statusmarke führt Symbol und Wortlaut. Gemessen: Grün ↔ Rot liegen bei Protanopie bei ΔE 6,9, Gold hat 2,35:1 gegen die Kartenfläche. Beides ist nur mit sichtbarer Beschriftung zulässig.</td></tr>
+          <tr><td><strong>Ambivalent ist eine Form, keine Farbe</strong></td><td>Gegenläufige Wirkpfade bekommen zwei Marken auf der Achse und eine geteilte Symbolmarke. Der bisherige Token <code>--farbe-status-ambivalent</code> entfällt als Markenfarbe, weil er von <code>negativ</code> nicht unterscheidbar ist.</td></tr>
+          <tr><td><strong>Ex ante und ex post bleiben getrennt</strong></td><td>Der Reifegrad ist eine eigene Achse. Späteres Wissen darf nie als damaliges Wissen erscheinen — auch nicht implizit über eine gemeinsame Farbe oder Sortierung.</td></tr>
+          <tr><td><strong>„Offen" ist eine Kategorie</strong></td><td>In jeder Verteilung, jedem Filter und jeder Legende erscheint „offen / nicht aggregierbar" als eigener Wert mit eigener Zahl — nie als Restposten und nie als Null.</td></tr>
+          <tr><td><strong>Alle alten URLs bleiben erreichbar</strong></td><td>Jede in der Zuordnungstabelle genannte Route bekommt eine 308-Weiterleitung. <code>/entscheidungen/[slug]</code> bleibt unverändert kanonisch, weil extern darauf verlinkt wird.</td></tr>
+          <tr><td><strong>Ein Navigationsmuster</strong></td><td>Hauptnavigation mit fünf Bereichen, darunter je Bereich dieselbe Unternavigation, darüber Brotkrumen. Bereichseigene Sondernavigationen wie heute unter <code>/regierung</code> werden aufgelöst.</td></tr>
+          <tr><td><strong>Design-Tokens bleiben</strong></td><td>Farb-, Typo- und Abstandswerte aus <code>app/tokens.css</code> v1.0.0 werden nicht ersetzt. Neu hinzu kommen ausschließlich Tokens für die Signaturachsen und die Reifestufen.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:26px">
+      <strong>Reihenfolge der Umsetzung</strong>
+      <ul>
+        <li><strong>P1 · Navigation und Routen</strong> — fünf Bereiche, Brotkrumen, aktiver Zustand, alle 308-Weiterleitungen, Titel-Bug (<code>„… · Wirkungsportal Parlament · Wirkungsportal Parlament"</code>) beheben. Sichtbarer Gewinn ohne inhaltliches Risiko.</li>
+        <li><strong>P2 · Wirkungssignatur</strong> — als Komponente mit den drei Achsen, gespeist aus den bereits typisierten Feldern. Danach Karten und Zeilen auf ≤ 60 Wörter kürzen.</li>
+        <li><strong>P3 · Register</strong> — <code>/wirkungsakten</code> mit Facetten, Verteilungsleiste, Zusammenführung der sechs Listenpfade.</li>
+        <li><strong>P4 · Startseite</strong> — Kennzahlenband, sechs Blöcke, Methodikstrecke nach <code>/pruefstandard/methodik</code> umziehen.</li>
+        <li><strong>P5 · Einzelakte</strong> — drei Tiefen, Lesemodus, Wirkpfad-Kette, Referenzchips, Prüffragen-Ring.</li>
+        <li><strong>P6 · Bereichsseiten</strong> — Ebenen, Monitor, Prüfstandard auf das gemeinsame Landing-Muster, Kartogramm auf der Länderseite.</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<script>
+document.querySelectorAll("[data-modus-set]").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var root = document.getElementById("akte-pt");
+    root.dataset.modus = btn.dataset.modusSet;
+    document.querySelectorAll("[data-modus-set]").forEach(function(b){
+      b.setAttribute("aria-pressed", String(b === btn));
+    });
+  });
+});
+document.querySelectorAll('[role="tab"]').forEach(function(tab){
+  tab.addEventListener("click", function(){
+    document.querySelectorAll('[role="tab"]').forEach(function(t){
+      t.setAttribute("aria-selected", String(t === tab));
+      var panel = document.getElementById(t.dataset.tab);
+      if (panel) panel.hidden = (t !== tab);
+    });
+  });
+});
+</script>

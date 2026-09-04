@@ -62,6 +62,20 @@ test("editorial subjects are concrete and topic-specific, not default abstract f
   assert.match(prompt, /right 60–96% calm/);
   assert.equal(chooseTitleImageMode({ ...care, title: "Ermittlungen in Gesundheitsberufen" }).mode, "impact_card");
 });
+test("sensitive news can use an explicit neutral object without exposing incident context to image generation", () => {
+  const story = { ...STORY, title: "Sabotage an Umspannwerk in Beispielstadt", source_summary: "Nach einer mutmaßlichen Sabotage an einem Umspannwerk ermittelt die Polizei gegen eine Person. Die Stromversorgung wird nach Angaben des Betreibers weiter aufrechterhalten." };
+  assert.equal(chooseTitleImageMode(story).topic, "grid");
+  assert.equal(chooseTitleImageMode(story).object_only, true);
+  const prompt = buildEditorialImagePrompt(story);
+  assert.match(prompt, /intact, generic electrical substation/);
+  assert.doesNotMatch(prompt, /Beispielstadt|Sabotage|Polizei/);
+  assert.equal(chooseTitleImageMode({ ...story, title: "Vorwürfe gegen eine Person" }).mode, "impact_card");
+  const childcare = { ...story, title: "Kinderbetreuung bei der Bundeswehr", source_summary: "Die Kosten der Kinderbetreuung bei der Bundeswehr sind gestiegen. Die Meldung beschreibt die Finanzierung bestehender Betreuungsplätze in Kindertagesstätten." };
+  assert.equal(chooseTitleImageMode(childcare).topic, "childcare");
+  assert.match(buildEditorialImagePrompt(childcare), /empty generic daycare/);
+  assert.doesNotMatch(buildEditorialImagePrompt(childcare), /Bundeswehr/);
+  assert.equal(chooseTitleImageMode({ ...childcare, title: "Missbrauch von Kindern im Internet" }).mode, "impact_card");
+});
 test("health checks pinned binary, actual Pro identity, params and credits without generation", async () => {
   const calls = []; assert.equal((await checkHiggsfieldAvailability({run:mockRun(calls)})).model, "nano_banana_pro");
   assert.equal(calls.some((a) => a[0] === "generate"), false);
@@ -88,6 +102,28 @@ test("disabled provider and changed cost never create a paid job", async (t) => 
   await assert.rejects(createHiggsfieldAdapter({directory,enabled:false}).generate(STORY),{code:"HIGGSFIELD_DISABLED"});
   await assert.rejects(createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls,{"generate cost":()=>'{"credits":99}'})}).generate(STORY),{code:"HIGGSFIELD_COST_CHANGED"});
   assert.equal(calls.some((a)=>a[1]==="create"),false);
+});
+test("owner-approved image budget has no daily or monthly cap; balance and per-image price still gate creates", async (t) => {
+  assert.equal(C.max_generations_per_day, undefined);
+  assert.equal(C.max_credits_per_month, undefined);
+  const directory = temp(t), calls = [];
+  const reservations = Array.from({ length: 301 }, () => ({ at: "2026-09-04T00:00:00Z", credits: 2 }));
+  fs.writeFileSync(path.join(directory, "credits.json"), JSON.stringify({ reservations }));
+  const provider = createHiggsfieldAdapter({ directory, run: mockRun(calls), download: async () => asset(), quality: async () => ({ version: VISUAL_GATE_VERSION, status: "passed" }), enabled: true });
+  await provider.generate(STORY);
+  assert.equal(calls.filter(a => a[1] === "create").length, 1);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(directory, "credits.json"))).reservations.length, 302);
+  const emptyCalls = [];
+  await assert.rejects(createHiggsfieldAdapter({ directory: temp(t), enabled: true, run: mockRun(emptyCalls, { "account status": () => '{"credits":0}' }) }).generate(STORY), { code: "HIGGSFIELD_CREDITS_UNAVAILABLE" });
+  assert.equal(emptyCalls.some(a => a[1] === "create"), false);
+});
+test("already paid job can finish even when remaining account balance is empty", async (t) => {
+  const directory = temp(t), calls = [], folder = path.join(directory, STORY.story_id);
+  fs.mkdirSync(folder);
+  fs.writeFileSync(path.join(folder, "source-visual.json"), JSON.stringify({ status: "queued", job_id: "job-123456", prompt_version: C.prompt_version }));
+  const provider = createHiggsfieldAdapter({ directory, enabled: true, run: mockRun(calls, { "account status": () => assert.fail("do not recheck balance for a paid job") }), download: async () => asset(), quality: async () => ({ version: VISUAL_GATE_VERSION, status: "passed" }) });
+  assert.ok((await provider.generate(STORY)).bytes);
+  assert.equal(calls.some(a => a[1] === "create"), false);
 });
 test("terminal failed provider job is persisted and never waits or pays again",async(t)=>{
   const calls=[],directory=temp(t),provider=createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls,{"generate get":()=>'{"id":"job-123456","status":"failed"}'})});
@@ -350,7 +386,7 @@ test("render-only and terminal replacement failures never discard a working titl
   assert.equal(rejected.title_image.retry_after, undefined);
 });
 
-test("explicit refresh snapshots only eligible old editorial images, never changes article text", async (t) => {
+test("explicit refresh snapshots eligible old images and newly visualisable cards, never changes article text", async (t) => {
   const root = temp(t); fs.mkdirSync(path.join(root, "data/news"), { recursive: true }); fs.mkdirSync(path.join(root, "reports"));
   const title = { mode: "editorial", wide: { url: "old" }, source_visual: { prompt_version: "old-prompt" } };
   const stories = [
@@ -358,18 +394,24 @@ test("explicit refresh snapshots only eligible old editorial images, never chang
     { ...STORY, story_id: "wt-1234567890abcdea", published: true, title_image: { ...title, source_visual: { prompt_version: C.prompt_version } } },
     { ...STORY, story_id: "wt-1234567890abcdeb", published: true, title: "Ermittlungen", title_image: title },
     { ...STORY, story_id: "wt-1234567890abcdec", published: true, title_image: { mode: "impact_card" } },
+    { ...STORY, story_id: "wt-1234567890abcded", published: true, title_image: { ...title, source_visual: { prompt_version: "woek-editorial-3-concrete" } } },
+    { ...STORY, story_id: "wt-1234567890abcdee", published: true, title: "Ermittlungen", title_image: { mode: "impact_card", template_version: "old" } },
   ];
   const file = path.join(root, "data/news/stories.json"); fs.writeFileSync(file, JSON.stringify({ stories }));
   fs.writeFileSync(path.join(root, "reports/wirkungsticker-latest-run.json"), "{}");
   const before = fs.readFileSync(file, "utf8");
   const dry = await backfillTitleImages({ root, refreshEditorial: true, limit: 20 });
-  assert.equal(dry.candidates, 1); assert.equal(dry.results[0].would_generate, true);
+  assert.equal(dry.candidates, 3); assert.equal(dry.results[0].would_generate, true);
+  assert.equal(dry.results[2].would_generate, false);
   assert.equal(fs.readFileSync(file, "utf8"), before);
   await backfillTitleImages({ root, refreshEditorial: true, dryRun: false, maxDurationMs: 0, limit: 20, build: () => {} });
   const saved = JSON.parse(fs.readFileSync(file)).stories;
   assert.equal(saved[0].title_image.refresh_prompt_version, C.prompt_version);
   assert.deepEqual(publicTitleImage(saved[0].title_image), publicTitleImage(stories[0].title_image));
-  assert.deepEqual(saved.slice(1), stories.slice(1));
+  for (const i of [1, 2, 4]) assert.deepEqual(saved[i], stories[i]);
+  assert.equal(saved[3].title_image.refresh_prompt_version, C.prompt_version);
+  assert.equal(saved[5].title_image.refresh_prompt_version, undefined);
+  assert.ok(saved[5].title_image.retry_after);
   assert.equal(saved[0].source_summary, STORY.source_summary);
   await assert.rejects(backfillTitleImages({ root, refreshEditorial: true, renderOnly: true }), /REFRESH_MODE_CONFLICT/);
 });

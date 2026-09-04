@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import { canonicalPortalHref, portalNavigation } from "../../lib/navigation.ts";
+import { canonicalAuditUrl } from "./portal-audit-url.mjs";
 import { createHash } from "node:crypto";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -19,10 +21,7 @@ const coreRoutes = [
   "/eu", "/eu/wirkungsfaelle", "/laender", "/laender/sachsen-anhalt", "/suche",
   "/methodik", "/methodik/wirkindikatoren", "/transparenz", "/quellen", "/sitemap.xml",
 ];
-const requiredNavigationTargets = [
-  "/", "/wirkungsfaelle", "/regierung", "/entscheidungen", "/mandat-und-praxis", "/laender",
-  "/eu", "/methodik", "/transparenz", "/wirkungsobservatorium", "/fachanalysen", "/quellen", "/suche",
-];
+const requiredNavigationTargets = ["/", "/suche", "/aktuell/radar-abo", ...portalNavigation.map((item) => item.href)];
 
 function json(file) { return JSON.parse(readFileSync(file, "utf8")); }
 function jsonl(file) { return readFileSync(file, "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line)); }
@@ -65,11 +64,11 @@ function contentLayerStatus(record, layer) {
   return findField(record, new Set(aliases[layer])) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW";
 }
 function unique(values) { return [...new Set(values)].sort(); }
-function routeWithoutQuery(value) { return value.split(/[?#]/)[0]; }
+function routeWithoutQuery(value) { return canonicalPortalHref(value).split(/[?#]/)[0]; }
 async function fetchRoute(route) {
   try {
     const needsBody = route === "/" || route === "/suche" || route === "/sitemap.xml";
-    const response = await fetch(`${baseUrl}${route}`, { method: needsBody ? "GET" : "HEAD", redirect: "manual", signal: AbortSignal.timeout(15_000) });
+    const response = await fetch(canonicalAuditUrl(`${baseUrl}${route}`), { method: needsBody ? "GET" : "HEAD", redirect: "manual", signal: AbortSignal.timeout(15_000) });
     const body = needsBody ? await response.text() : "";
     return { route, status: response.status, body };
   } catch (error) {
@@ -148,11 +147,11 @@ const homeLinks = new Set([...home.matchAll(/href=["']([^"']+)["']/g)].map((matc
 const navigationTargets = requiredNavigationTargets.map((route) => ({ route, present: homeLinks.has(route) }));
 const search = routeResults.find((entry) => entry.route === "/suche")?.body ?? "";
 const searchTargets = [
-  ...government.map((record) => ({ object_id: record.impact_case_id, route: `/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`, title_present_in_search_payload: search.includes(`href=\"/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}\"`) })),
+  ...government.map((record) => ({ object_id: record.impact_case_id, route: canonicalPortalHref(`/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`), title_present_in_search_payload: search.includes(`href="/ebenen/bundesregierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}"`) })),
   ...parliament.map((record) => ({ object_id: record.publicWorkingAct?.fullReview?.result?.case_id ?? record.slug, route: `/entscheidungen/${record.slug}`, title_present_in_search_payload: search.includes(`href=\"/entscheidungen/${record.slug}\"`) })),
-  ...strategySourceVsView.search_targets.map((route) => ({ object_id: route.split("/").at(-1), route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
-  ...stateCoalitionBwSourceVsView.search_targets.map((route) => ({ object_id: "BW-COALITION-2026-2031", route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
-  ...stateCoalitionRlpSourceVsView.search_targets.map((route) => ({ object_id: "RLP-COALITION-2026-2031", route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
+  ...strategySourceVsView.search_targets.map((route) => ({ object_id: route.split("/").at(-1), route, title_present_in_search_payload: search.includes(`href=\"${canonicalPortalHref(route)}\"`) })),
+  ...stateCoalitionBwSourceVsView.search_targets.map((route) => ({ object_id: "BW-COALITION-2026-2031", route, title_present_in_search_payload: search.includes(`href=\"${canonicalPortalHref(route)}\"`) })),
+  ...stateCoalitionRlpSourceVsView.search_targets.map((route) => ({ object_id: "RLP-COALITION-2026-2031", route, title_present_in_search_payload: search.includes(`href=\"${canonicalPortalHref(route)}\"`) })),
 ];
 const sitemapBody = routeResults.find((entry) => entry.route === "/sitemap.xml")?.body ?? "";
 const sitemapUrls = new Set([...sitemapBody.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => new URL(match[1]).pathname));

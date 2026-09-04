@@ -27,6 +27,7 @@ import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFil
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
+import { IMAGE_CONFIG } from "./title-image/policy.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -835,13 +836,13 @@ export async function runWirkungsticker(options = {}) {
   }
 
   // Enhancement failures cannot enter the AI-error catch above or suppress a
-  // validated article. Revisit one delayed image per run, without redoing news AI.
+  // validated article. Drain a bounded image queue without redoing news AI.
   report.title_images = [];
   report.title_images_changed = 0;
   if (!options.dryRun) {
     const prepareImage = options.prepareTitleImage || createTitleImagePipeline();
-    const pendingImage = [...byId.values()].filter((story) => story.published && story.listed !== false && !changedStoryIds.has(story.story_id) && story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= nowDate.getTime()).sort((a, b) => Date.parse(a.title_image.retry_after) - Date.parse(b.title_image.retry_after))[0];
-    const imageIds = [...(pendingImage ? [pendingImage.story_id] : []), ...changedStoryIds];
+    const pendingImages = [...byId.values()].filter((story) => story.published && story.listed !== false && !changedStoryIds.has(story.story_id) && story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= nowDate.getTime()).sort((a, b) => Date.parse(a.title_image.retry_after) - Date.parse(b.title_image.retry_after)).slice(0, IMAGE_CONFIG.max_generations_per_run);
+    const imageIds = [...changedStoryIds, ...pendingImages.map(story => story.story_id)];
     const imageDeadline = Date.now() + 4 * 60000;
     for (const storyId of imageIds) {
       const story = byId.get(storyId);

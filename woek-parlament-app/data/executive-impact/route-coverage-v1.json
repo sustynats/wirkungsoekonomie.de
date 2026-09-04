@@ -5,7 +5,18 @@
   "rows": [
     {
       "route_family": "Parliament home and thematic discovery",
-      "route_patterns": ["app/page.tsx", "app/[section]/page.tsx", "app/wirkungsfaelle/page.tsx"],
+      "route_patterns": [
+        "app/page.tsx",
+        "app/[section]/page.tsx",
+        "app/wirkungsfaelle/page.tsx",
+        "app/aktuell/radar/page.tsx",
+        "app/aktuell/im-verfahren/page.tsx",
+        "app/monitor/historie/page.tsx",
+        "app/monitor/page.tsx",
+        "app/ebenen/bundestag/page.tsx",
+        "app/pruefstandard/transparenz/page.tsx",
+        "app/pruefstandard/methodik/page.tsx"
+      ],
       "audited": true,
       "current": "Case-specific WÖk preview cards precede process metadata.",
       "failure": "Full MPD, SDG and path layers do not belong on every compact discovery card.",
@@ -29,7 +40,11 @@
     },
     {
       "route_family": "Parliament decision and law detail",
-      "route_patterns": ["app/entscheidungen/[slug]/page.tsx", "app/wirkungsfaelle/[id]/page.tsx"],
+      "route_patterns": [
+        "app/entscheidungen/[slug]/page.tsx",
+        "app/wirkungsfaelle/[id]/page.tsx",
+        "app/wirkungsakten/faelle/[id]/page.tsx"
+      ],
       "audited": true,
       "current": "ExecutiveImpactSummary appears before maturity and process data when an approved working act exists; fact-only objects fail closed.",
       "failure": "Working acts with more than five paths and without approved materiality ranking cannot receive an automatic Top-5.",
@@ -53,7 +68,10 @@
     },
     {
       "route_family": "Sachsen-Anhalt election overview",
-      "route_patterns": ["app/laender/sachsen-anhalt/page.tsx"],
+      "route_patterns": [
+        "app/laender/sachsen-anhalt/page.tsx",
+        "app/ebenen/laender/sachsen-anhalt/page.tsx"
+      ],
       "audited": true,
       "current": "Six compact cards expose a source-bound bottom line, MPD, directed SDG/SDG+, up to three material paths, materiality, evidence and noncompensation before method/process data; no score or ranking.",
       "failure": "The former overview foregrounded process text and the first four Editorial-v2 paths instead of a programme-wide materiality projection.",
@@ -79,7 +97,10 @@
     },
     {
       "route_family": "Sachsen-Anhalt programme detail",
-      "route_patterns": ["app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx"],
+      "route_patterns": [
+        "app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx",
+        "app/ebenen/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx"
+      ],
       "audited": true,
       "current": "Bottom line, MPD, directed SDG/SDG+, three material paths, noncompensation and evidence precede the approved programme image, communication analysis and all process/source detail.",
       "failure": "The former detail view placed process counts above impact and treated four Editorial-v2 paths as its central programme selection.",
@@ -105,7 +126,10 @@
     },
     {
       "route_family": "Curated state coalition agreements",
-      "route_patterns": ["app/laender/[slug]/mandat-und-praxis/page.tsx"],
+      "route_patterns": [
+        "app/laender/[slug]/mandat-und-praxis/page.tsx",
+        "app/ebenen/laender/[slug]/mandat-und-praxis/page.tsx"
+      ],
       "audited": true,
       "current": "Baden-Württemberg and Rheinland-Pfalz use the shared executive contract; all other states retain an explicit no-analysis state.",
       "failure": "No document-wide Fach selection of 3–5 paths or MPD/SDG aggregate is approved for the two portfolio objects.",
@@ -129,7 +153,12 @@
     },
     {
       "route_family": "Government impact analysis detail",
-      "route_patterns": ["app/regierung/wirkungsanalysen/[id]/page.tsx", "app/regierung/wirkungsanalysen/[id]/quellen/[source]/page.tsx"],
+      "route_patterns": [
+        "app/regierung/wirkungsanalysen/[id]/page.tsx",
+        "app/regierung/wirkungsanalysen/[id]/quellen/[source]/page.tsx",
+        "app/ebenen/bundesregierung/wirkungsanalysen/[id]/page.tsx",
+        "app/ebenen/bundesregierung/wirkungsanalysen/[id]/quellen/[source]/page.tsx"
+      ],
       "audited": true,
       "current": "Full-schema records use the shared executive layer; aggregate direction and materiality remain open. Compact Fach records retain approved summary and explicit structural gaps.",
       "failure": "One six-path full record has no approved Top-5 ranking; compact records lack MPD/SDG/path structures.",
@@ -153,7 +182,39 @@
     },
     {
       "route_family": "Government discovery, actions and operational views",
-      "route_patterns": ["app/regierung/page.tsx", "app/regierung/akte/page.tsx", "app/regierung/akte/[id]/page.tsx", "app/regierung/wirkungsanalysen/page.tsx", "app/regierung/haushalt-foerderung/page.tsx", "app/regierung/kabinett/page.tsx", "app/regierung/mandat-praxis/page.tsx", "app/regierung/mandat-und-praxis/page.tsx", "app/regierung/methodik/page.tsx", "app/regierung/ministerien/page.tsx", "app/regierung/ministerien/[id]/page.tsx", "app/regierung/ressorts/page.tsx", "app/regierung/ressorts/[id]/page.tsx", "app/regierung/transparenz/page.tsx", "app/regierung/umsetzung/page.tsx", "app/regierung/wirkungsmonitor/page.tsx"],
+      "route_patterns": [
+        "app/regierung/page.tsx",
+        "app/regierung/akte/page.tsx",
+        "app/regierung/akte/[id]/page.tsx",
+        "app/regierung/wirkungsanalysen/page.tsx",
+        "app/regierung/haushalt-foerderung/page.tsx",
+        "app/regierung/kabinett/page.tsx",
+        "app/regierung/mandat-praxis/page.tsx",
+        "app/regierung/mandat-und-praxis/page.tsx",
+        "app/regierung/methodik/page.tsx",
+        "app/regierung/ministerien/page.tsx",
+        "app/regierung/ministerien/[id]/page.tsx",
+        "app/regierung/ressorts/page.tsx",
+        "app/regierung/ressorts/[id]/page.tsx",
+        "app/regierung/transparenz/page.tsx",
+        "app/regierung/umsetzung/page.tsx",
+        "app/regierung/wirkungsmonitor/page.tsx",
+        "app/ebenen/bundesregierung/akte/[id]/page.tsx",
+        "app/ebenen/bundesregierung/akte/page.tsx",
+        "app/ebenen/bundesregierung/haushalt-foerderung/page.tsx",
+        "app/ebenen/bundesregierung/kabinett/page.tsx",
+        "app/ebenen/bundesregierung/mandat-praxis/page.tsx",
+        "app/ebenen/bundesregierung/mandat-und-praxis/page.tsx",
+        "app/ebenen/bundesregierung/methodik/page.tsx",
+        "app/ebenen/bundesregierung/ministerien/[id]/page.tsx",
+        "app/ebenen/bundesregierung/ministerien/page.tsx",
+        "app/ebenen/bundesregierung/page.tsx",
+        "app/ebenen/bundesregierung/ressorts/[id]/page.tsx",
+        "app/ebenen/bundesregierung/ressorts/page.tsx",
+        "app/ebenen/bundesregierung/transparenz/page.tsx",
+        "app/ebenen/bundesregierung/umsetzung/page.tsx",
+        "app/ebenen/bundesregierung/wirkungsmonitor/page.tsx"
+      ],
       "audited": true,
       "current": "Approved impact cards precede process data; fact-only actions and organizational pages make their non-analysis function explicit.",
       "failure": "Organization, source coverage and lifecycle routes are not impact assessments themselves.",
@@ -177,7 +238,19 @@
     },
     {
       "route_family": "EU impact routes",
-      "route_patterns": ["app/eu/page.tsx", "app/eu/gesetzgebung/page.tsx", "app/eu/kommission/page.tsx", "app/eu/mandat/page.tsx", "app/eu/wirkungsfaelle/page.tsx", "app/eu/wirkungsfaelle/[id]/page.tsx"],
+      "route_patterns": [
+        "app/eu/page.tsx",
+        "app/eu/gesetzgebung/page.tsx",
+        "app/eu/kommission/page.tsx",
+        "app/eu/mandat/page.tsx",
+        "app/eu/wirkungsfaelle/page.tsx",
+        "app/eu/wirkungsfaelle/[id]/page.tsx",
+        "app/ebenen/eu/gesetzgebung/page.tsx",
+        "app/ebenen/eu/kommission/page.tsx",
+        "app/ebenen/eu/mandat/page.tsx",
+        "app/ebenen/eu/page.tsx",
+        "app/ebenen/eu/wirkungsfaelle/[id]/page.tsx"
+      ],
       "audited": true,
       "current": "Detail routes use the shared executive contract; approved EU short records expose bottom line and evidence while absent MPD/SDG/path structures fail closed.",
       "failure": "The EU short-record contract has no source-bound MPD, SDG direction, material path or noncompensation projection.",
@@ -201,7 +274,20 @@
     },
     {
       "route_family": "State hubs, state facts and Sachsen-Anhalt supporting records",
-      "route_patterns": ["app/laender/page.tsx", "app/laender/[slug]/page.tsx", "app/laender/[slug]/wahl/page.tsx", "app/laender/[slug]/regierung/page.tsx", "app/laender/sachsen-anhalt/quellen/page.tsx", "app/laender/sachsen-anhalt/ziele/page.tsx"],
+      "route_patterns": [
+        "app/laender/page.tsx",
+        "app/laender/[slug]/page.tsx",
+        "app/laender/[slug]/wahl/page.tsx",
+        "app/laender/[slug]/regierung/page.tsx",
+        "app/laender/sachsen-anhalt/quellen/page.tsx",
+        "app/laender/sachsen-anhalt/ziele/page.tsx",
+        "app/ebenen/laender/[slug]/page.tsx",
+        "app/ebenen/laender/[slug]/regierung/page.tsx",
+        "app/ebenen/laender/[slug]/wahl/page.tsx",
+        "app/ebenen/laender/page.tsx",
+        "app/ebenen/laender/sachsen-anhalt/quellen/page.tsx",
+        "app/ebenen/laender/sachsen-anhalt/ziele/page.tsx"
+      ],
       "audited": true,
       "current": "Jurisdiction/source/target facts are separated from approved reviews; absent analyses fail closed.",
       "failure": "A jurisdiction registry entry or target framework is not an impact finding.",
@@ -225,7 +311,12 @@
     },
     {
       "route_family": "Federal mandate and programme publications",
-      "route_patterns": ["app/mandat-und-praxis/page.tsx", "app/mandat-und-praxis/[sourceKey]/page.tsx"],
+      "route_patterns": [
+        "app/mandat-und-praxis/page.tsx",
+        "app/mandat-und-praxis/[sourceKey]/page.tsx",
+        "app/monitor/mandat-und-praxis/[sourceKey]/page.tsx",
+        "app/monitor/mandat-und-praxis/page.tsx"
+      ],
       "audited": true,
       "current": "Approved summary content precedes complete source material; source-only records do not receive technical Fach.",
       "failure": "No new master-contract MPD/SDG/materiality projection is approved for every historical publication.",
@@ -249,7 +340,16 @@
     },
     {
       "route_family": "Votes and members",
-      "route_patterns": ["app/abstimmungen/[voteId]/page.tsx", "app/abgeordnete/page.tsx", "app/abgeordnete/[slug]/page.tsx", "app/abgeordnete/[slug]/quelle/page.tsx"],
+      "route_patterns": [
+        "app/abstimmungen/[voteId]/page.tsx",
+        "app/abgeordnete/page.tsx",
+        "app/abgeordnete/[slug]/page.tsx",
+        "app/abgeordnete/[slug]/quelle/page.tsx",
+        "app/monitor/abstimmungen/abgeordnete/[slug]/page.tsx",
+        "app/monitor/abstimmungen/abgeordnete/[slug]/quelle/page.tsx",
+        "app/monitor/abstimmungen/page.tsx",
+        "app/monitor/abstimmungen/[voteId]/page.tsx"
+      ],
       "audited": true,
       "current": "Official votes and member relationships are shown without person scores or inferred effects.",
       "failure": "A vote or member identity is not itself a fach-approved impact analysis.",
@@ -273,7 +373,13 @@
     },
     {
       "route_family": "Fachanalyses and Fachakten",
-      "route_patterns": ["app/fachanalysen/page.tsx", "app/fachanalysen/[slug]/page.tsx", "app/fachakten/[id]/route.ts"],
+      "route_patterns": [
+        "app/fachanalysen/page.tsx",
+        "app/fachanalysen/[slug]/page.tsx",
+        "app/fachakten/[id]/route.ts",
+        "app/wirkungsakten/fachakten/[id]/route.ts",
+        "app/wirkungsakten/fachanalysen/[slug]/page.tsx"
+      ],
       "audited": true,
       "current": "Case-specific approved summary precedes full immutable Fach material; the Fachakten endpoint is an artifact route.",
       "failure": "Legacy publications do not all carry the new structured Executive contract.",
@@ -297,7 +403,13 @@
     },
     {
       "route_family": "Search and source transparency",
-      "route_patterns": ["app/suche/page.tsx", "app/quellen/page.tsx", "app/quellen/[slug]/page.tsx"],
+      "route_patterns": [
+        "app/suche/page.tsx",
+        "app/quellen/page.tsx",
+        "app/quellen/[slug]/page.tsx",
+        "app/pruefstandard/quellen/[slug]/page.tsx",
+        "app/pruefstandard/quellen/page.tsx"
+      ],
       "audited": true,
       "current": "Search cards show approved case-specific summaries before process; source routes explain provenance and reverse usage.",
       "failure": "Source records are evidence/provenance, not impact findings.",
@@ -321,7 +433,14 @@
     },
     {
       "route_family": "Methods, indicators and glossary",
-      "route_patterns": ["app/methodik/wirkindikatoren/page.tsx", "app/methodik/wirkindikatoren/[indicatorId]/page.tsx", "app/begriffe/page.tsx"],
+      "route_patterns": [
+        "app/methodik/wirkindikatoren/page.tsx",
+        "app/methodik/wirkindikatoren/[indicatorId]/page.tsx",
+        "app/begriffe/page.tsx",
+        "app/pruefstandard/begriffe/page.tsx",
+        "app/pruefstandard/wirkindikatoren/[indicatorId]/page.tsx",
+        "app/pruefstandard/wirkindikatoren/page.tsx"
+      ],
       "audited": true,
       "current": "Method and definition routes explain reference and measurement architecture.",
       "failure": "They do not assess a political object.",
@@ -345,7 +464,11 @@
     },
     {
       "route_family": "Impact observatory",
-      "route_patterns": ["app/wirkungsobservatorium/page.tsx"],
+      "route_patterns": [
+        "app/wirkungsobservatorium/page.tsx",
+        "app/monitor/observatorium/page.tsx",
+        "app/monitor/reality-checks/page.tsx"
+      ],
       "audited": true,
       "current": "Observed state, evidence event and attribution candidates remain separate.",
       "failure": "An observation is not automatically a case-level causal impact summary.",
@@ -369,7 +492,18 @@
     },
     {
       "route_family": "Operational status and subscription pages",
-      "route_patterns": ["app/autopilot/status/page.tsx", "app/wirkungsradar-updates/page.tsx", "app/wirkungsradar-updates/abmelden/page.tsx", "app/wirkungsradar-updates/bestaetigen/page.tsx", "app/woek-newsletter/abmelden/page.tsx", "app/woek-newsletter/bestaetigen/page.tsx"],
+      "route_patterns": [
+        "app/autopilot/status/page.tsx",
+        "app/wirkungsradar-updates/page.tsx",
+        "app/wirkungsradar-updates/abmelden/page.tsx",
+        "app/wirkungsradar-updates/bestaetigen/page.tsx",
+        "app/woek-newsletter/abmelden/page.tsx",
+        "app/woek-newsletter/bestaetigen/page.tsx",
+        "app/pruefstandard/transparenz/datenbetrieb/page.tsx",
+        "app/aktuell/radar-abo/abmelden/page.tsx",
+        "app/aktuell/radar-abo/bestaetigen/page.tsx",
+        "app/aktuell/radar-abo/page.tsx"
+      ],
       "audited": true,
       "current": "Operational and consent flows only.",
       "failure": "Not an impact-analysis function.",
@@ -393,7 +527,9 @@
     },
     {
       "route_family": "Public and editorial APIs",
-      "route_patterns": ["app/api/**/route.ts"],
+      "route_patterns": [
+        "app/api/**/route.ts"
+      ],
       "audited": true,
       "current": "Machine interfaces, cron and protected editorial operations.",
       "failure": "No public page information hierarchy applies.",
@@ -417,7 +553,10 @@
     },
     {
       "route_family": "Search-engine machine routes",
-      "route_patterns": ["app/sitemap.ts", "app/robots.ts"],
+      "route_patterns": [
+        "app/sitemap.ts",
+        "app/robots.ts"
+      ],
       "audited": true,
       "current": "Machine discovery only.",
       "failure": "No public page information hierarchy applies.",
@@ -438,6 +577,40 @@
       "a11y": "NOT_APPLICABLE",
       "test": "sitemap/navigation gate",
       "status": "NOT_APPLICABLE"
+    },
+    {
+      "route_family": "P1 structural directories and lossless register views",
+      "route_patterns": [
+        "app/aktuell/page.tsx",
+        "app/aktuell/neu/page.tsx",
+        "app/ebenen/page.tsx",
+        "app/pruefstandard/page.tsx",
+        "app/wirkungsakten/page.tsx",
+        "app/pruefstandard/referenzrahmen/page.tsx"
+      ],
+      "audited": true,
+      "canonical_data_identified": true,
+      "impact_first_implemented": true,
+      "canonical_data": "Existing published collection renderers and complete transparency section, reused without Fach changes.",
+      "bottom_line": "EXISTING_COLLECTION_RENDERERS_OR_NOT_APPLICABLE_FOR_DIRECTORY",
+      "mpd": "EXISTING_RENDERER_OR_DETAIL_ROUTE",
+      "sdg": "EXISTING_RENDERER_OR_DETAIL_ROUTE",
+      "material_paths": "EXISTING_RENDERER_OR_DETAIL_ROUTE",
+      "evidence": "EXISTING_RENDERER_OR_DETAIL_ROUTE",
+      "noncompensation": "EXISTING_RENDERER_OR_DETAIL_ROUTE",
+      "communication_preview_if_applicable": "EXISTING_RENDERER_OR_DETAIL_ROUTE",
+      "visual_if_available": "EXISTING_RENDERER_OR_DETAIL_ROUTE",
+      "mobile": "P1_BROWSER_GATE",
+      "a11y": "P1_BROWSER_GATE",
+      "test": "portal-navigation.test.ts + portal-text-inventory.ts + P1 browser/redirect matrix",
+      "status": "PASS",
+      "gap": "P1 changes route ownership only. Shared faceted registry is scoped to P3; no new Fach verdict."
     }
-  ]
+  ],
+  "route_migration": {
+    "base_commit": "4d57b24dab20fa1daf63a661cdcd69dd04cc195c",
+    "phase": "P1",
+    "source_contract": "docs/parlament/CODEX_AUFTRAG_2026-09-03_STRUKTURNEUBAU.md",
+    "policy": "New route aliases inherit exact content and all existing guards; existing Fach requirements are unchanged."
+  }
 }

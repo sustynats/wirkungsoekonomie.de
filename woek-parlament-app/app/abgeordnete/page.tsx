@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { listPublishedMemberProfiles } from "@/lib/members/public-profiles";
+import { DatabaseConfigurationError } from "@/lib/database/supabase-admin";
 
 export const metadata: Metadata = {
   title: "Abstimmungen im Wirkungscheck",
@@ -10,7 +11,10 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function MembersPage() {
-  const profiles = await listPublishedMemberProfiles();
+  const profiles = await listPublishedMemberProfiles().catch((error: unknown) => {
+    if (error instanceof DatabaseConfigurationError) return null;
+    throw error;
+  });
   return (
     <div className="shell content-page members-page">
       <header className="page-intro">
@@ -40,7 +44,8 @@ export default async function MembersPage() {
       </section>
 
       <section className="notice notice-neutral"><strong>Amtlicher Aufbau läuft.</strong><p>Die Profile werden erst veröffentlicht, wenn sowohl die amtliche namentliche Abstimmung als auch die zugrundeliegende Wirkungsprüfung vollständig geprüft sind. Bis dahin gibt es keine Profile mit scheinbaren Kennzahlen.</p></section>
-      {profiles.length > 0 && <section className="section section-compact" aria-labelledby="member-list-title">
+      {profiles === null && <section className="notice" role="status"><strong>Abstimmungsbilanz derzeit nicht abrufbar.</strong><p>Die öffentliche Abstimmungsbilanz ist in dieser Umgebung nicht angebunden. Daraus folgt keine Aussage über vorhandene Daten oder einzelne Stimmen.</p></section>}
+      {profiles !== null && profiles.length > 0 && <section className="section section-compact" aria-labelledby="member-list-title">
         <div className="section-heading"><div><p className="eyebrow">Freigegebene Profile</p><h2 id="member-list-title">Namentliche Abstimmungen im Detail</h2></div></div>
         <div className="member-profile-grid">{profiles.map((profile) => <article key={profile.slug}>
           <p className="source-register-label">Amtliche Metadaten</p><h3>{profile.displayName}</h3>

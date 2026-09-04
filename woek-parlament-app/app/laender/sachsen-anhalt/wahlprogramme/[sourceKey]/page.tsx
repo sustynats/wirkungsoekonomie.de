@@ -30,11 +30,11 @@ export default async function SaxonyAnhaltProgrammePage({ params }: { params: Pr
   if (!review || !commitments) notFound();
 
   return <main className="section shell">
-    <nav className="breadcrumb" aria-label="Pfad">
+    <p className="record-context">
       <Link href="/laender">Bundesländer</Link><span aria-hidden="true">/</span>
       <Link href="/laender/sachsen-anhalt">Sachsen-Anhalt</Link><span aria-hidden="true">/</span>
       <span>Wahlprogrammanalyse</span>
-    </nav>
+    </p>
     <SaxonyAnhaltProgrammeAnalysisV3 programme={programme} review={review} commitments={commitments} />
   </main>;
 }

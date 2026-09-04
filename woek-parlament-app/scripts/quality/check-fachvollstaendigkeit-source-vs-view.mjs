@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { canonicalAuditUrl } from "./portal-audit-url.mjs";
 import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { projectEuEditorial } from "../../lib/publication/public-editorial-projection.mjs";
@@ -105,7 +106,7 @@ const failures = [];
 const results = [];
 for (const review of reviews) {
   const route = routeFor(review.impact_case_id);
-  const response = await fetch(`${baseUrl}${route}`, { redirect: "manual" });
+  const response = await fetch(canonicalAuditUrl(`${baseUrl}${route}`), { redirect: "manual" });
   const shouldPublish = expectedPublic(review.impact_case_id);
   if (!shouldPublish) {
     const pass = response.status === 404;
@@ -127,7 +128,7 @@ for (const review of reviews) {
 
 for (const review of targets) {
   const route = routeFor(review.impact_case_id);
-  const response = await fetch(`${baseUrl}${route}`, { redirect: "manual" });
+  const response = await fetch(canonicalAuditUrl(`${baseUrl}${route}`), { redirect: "manual" });
   const html = await response.text();
   const text = normalized(plainHtml(html));
   const publicMappingProse = review.mappings.flatMap((mapping) => [mapping.target_label, mapping.mechanism_rationale, mapping.limitations]);

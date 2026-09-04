@@ -18,7 +18,7 @@ export default async function VoteReferencePage({ params }: { params: Promise<{ 
   const reference = await getPublicVoteReference((await params).voteId);
   if (!reference) notFound();
   return <div className="shell content-page source-detail-page">
-    <p className="breadcrumb"><Link href="/abgeordnete">Abstimmungsbilanz</Link><span>/</span><span>Amtliche Abstimmung</span></p>
+    <p className="record-context"><Link href="/abgeordnete">Abstimmungsbilanz</Link><span>/</span><span>Amtliche Abstimmung</span></p>
     <header className="source-detail-header">
       <div><p className="eyebrow">Amtliche Primärquelle</p><h1>{reference.title}</h1><p className="lead">Diese Seite ordnet die amtliche Quelle einer namentlichen Abstimmung ein. Individuelle Stimmen werden ausschließlich aus der veröffentlichten amtlichen Liste übernommen.</p></div>
       <a className="button button-primary" href={reference.sourceUrl} target="_blank" rel="noreferrer">Originalquelle öffnen ↗</a>

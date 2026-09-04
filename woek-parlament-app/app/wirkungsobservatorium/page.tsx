@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { listExternalShocks, listOutcomeSeries, listPublicEvidenceEvents, listPublicRealityCheckCandidates, listStateObservations } from "@/lib/observatory/public-data";
+import { RealityCheckCandidates } from "@/app/components/RealityCheckCandidates";
+import { listExternalShocks, listOutcomeSeries, listPublicEvidenceEvents, listStateObservations } from "@/lib/observatory/public-data";
 import { getPublicImpactCases } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
-import { humanizeSystemValue, publicObservatoryQualityFieldLabel, publicObservatoryValueLabel } from "@/lib/presentation/labels";
+import { publicObservatoryQualityFieldLabel, publicObservatoryValueLabel } from "@/lib/presentation/labels";
 
 export const metadata = {
   title: "Wirkungsobservatorium",
@@ -26,7 +27,6 @@ function qualityLabel(value: string | Record<string, string>) {
 
 export default function ImpactObservatoryPage() {
   const events = listPublicEvidenceEvents();
-  const candidates = listPublicRealityCheckCandidates();
   const observations = listStateObservations();
   const series = listOutcomeSeries();
   const shocks = listExternalShocks();
@@ -77,17 +77,6 @@ export default function ImpactObservatoryPage() {
         {event.linked_impact_case_ids.map((id) => publicImpactById.has(id) ? <p key={id}><Link className="text-link" href={`/wirkungsfaelle/${encodeURIComponent(id)}`}>Verknüpften Wirkungsfall öffnen →</Link></p> : <p key={id}><strong>Fachbezug:</strong> Die verknüpfte Wirkungsanalyse ist noch nicht redaktionell publikationsreif.</p>)}
       </article>; })}</div> : <p>Derzeit ist kein öffentlich freigegebenes Evidenzereignis registriert.</p>}
     </section>
-    <section className="section section-compact" aria-labelledby="reality-candidates">
-      <p className="eyebrow">Prüfanlässe</p>
-      <h2 id="reality-candidates">Fachlich freigegebene Reality-Check-Kandidaten</h2>
-      <p>Ein Kandidat löst eine fachliche Prüfung aus. Er ändert weder Richtung noch Zurechnung automatisch.</p>
-      {candidates.length ? <div className="source-register">{candidates.map((candidate) => { const impact = publicImpactById.get(candidate.linked_impact_case_id); const attribution = publicObservatoryValueLabel(candidate.attribution_status); return <article key={candidate.reality_candidate_id}>
-        {attribution && <p className="source-register-label">Zurechnung: {attribution}</p>}
-        <h3>{impact?.title ?? "Prüfanlass für einen verknüpften Wirkungsfall"}</h3>
-        <p>{candidate.reason_for_recheck}</p>
-        <details><summary>Offene Prüffragen</summary><ul>{candidate.required_review_questions.map((question) => <li key={question}>{humanizeSystemValue(question)}</li>)}</ul></details>
-        {impact && <p><Link className="text-link" href={`/wirkungsfaelle/${encodeURIComponent(impact.impact_case_id)}`}>Verknüpften Wirkungsfall öffnen →</Link></p>}
-      </article>; })}</div> : <p>Derzeit ist kein freigegebener Reality-Check-Kandidat registriert.</p>}
-    </section>
+    <RealityCheckCandidates />
   </div>;
 }

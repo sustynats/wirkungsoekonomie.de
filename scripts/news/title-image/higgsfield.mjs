@@ -69,7 +69,7 @@ function qualityFailure(error) {
 
 export function createHiggsfieldAdapter({ directory, run = runHiggsfield, download = downloadImage, quality = checkEditorialAsset, now = () => new Date().toISOString(), enabled = process.env.WOEK_HIGGSFIELD_ENABLED === "true" } = {}) {
   if (!directory) throw imageError("HIGGSFIELD_PERSISTENCE_REQUIRED");
-  let active = false, unavailableUntil = 0, health = null;
+  let active = false, unavailableUntil = 0;
   return {
     health: () => checkHiggsfieldAvailability({ run }),
     async generate(story) {
@@ -132,7 +132,6 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
       fs.writeFileSync(lock, String(process.pid));
       active = true;
       try {
-        health ||= await checkHiggsfieldAvailability({ run });
         if (record?.status === "submitted_unknown") {
           const recovered = await recoverSubmittedJob(run, record);
           record.job_id = recovered.id; record.status = recovered.status;
@@ -142,10 +141,10 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
         const ledgerPath = path.join(directory, "credits.json");
         const ledger = fs.existsSync(ledgerPath) ? JSON.parse(fs.readFileSync(ledgerPath, "utf8")) : { reservations: [] };
         if (!record?.job_id) {
-          const today = now().slice(0,10), month = today.slice(0,7);
-          const daily = ledger.reservations.filter((r) => r.at.startsWith(today)).length;
-          const monthly = ledger.reservations.filter((r) => r.at.startsWith(month)).reduce((n,r) => n + r.credits, 0);
-          if (daily >= C.max_generations_per_day || monthly + C.max_credits_per_image > C.max_credits_per_month) throw imageError("HIGGSFIELD_CREDIT_LIMIT");
+          // Owner removed our daily/monthly caps on 2026-09-04. Keep the ledger,
+          // actual balance/price checks and durable, at-most-once submission.
+          // An already paid job can still be retrieved with an empty balance.
+          await checkHiggsfieldAvailability({ run });
           const args = [C.model, "--prompt", prompt, "--aspect_ratio", C.aspect_ratio, "--resolution", C.resolution];
           const cost = parseCliJson(await run(["generate", "cost", ...args, "--json"]));
           if (!Number.isFinite(cost.credits) || cost.credits <= 0 || cost.credits > C.max_credits_per_image) throw imageError("HIGGSFIELD_COST_CHANGED");
@@ -198,7 +197,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
         promote(record);
         return { ...record, bytes: asset.bytes, reused: false };
       } catch (error) {
-        if (["HIGGSFIELD_AUTH_UNAVAILABLE","HIGGSFIELD_REQUEST_FAILED","HIGGSFIELD_CREDITS_UNAVAILABLE"].includes(safeImageFailure(error))) { unavailableUntil = Date.now() + 15 * 60000; health = null; }
+        if (["HIGGSFIELD_AUTH_UNAVAILABLE","HIGGSFIELD_REQUEST_FAILED","HIGGSFIELD_CREDITS_UNAVAILABLE"].includes(safeImageFailure(error))) unavailableUntil = Date.now() + 15 * 60000;
         throw error;
       } finally {
         active = false;

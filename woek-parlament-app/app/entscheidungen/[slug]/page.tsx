@@ -109,7 +109,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const completePublication = activeView === "fachakte" && publicationCaseId ? await getCasePublicationSource(publicationCaseId) : null;
   return (
     <div className="shell decision-page">
-      <nav className="breadcrumb" aria-label="Pfad"><Link href="/entscheidungen">Wirkungschecks</Link><span aria-hidden="true">/</span><span>{caseKindLabel(item.kind)}</span></nav>
+      <p className="record-context"><Link href="/entscheidungen">Wirkungschecks</Link><span aria-hidden="true">/</span><span>{caseKindLabel(item.kind)}</span></p>
       <header className="decision-header">
         <div><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
       </header>

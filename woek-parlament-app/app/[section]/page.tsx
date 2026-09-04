@@ -34,7 +34,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
   return (
     <div className="shell content-page">
       <header className="page-intro"><p className="eyebrow">{content.eyebrow}</p><h1>{content.title}</h1><p className="lead">{content.lead}</p></header>
-      {section === "methodik" && <Methodology />}
+      {section === "methodik" && <><Methodology /><section id="werkzeuge"><p className="eyebrow">{sectionCopy.werkzeuge.eyebrow}</p><h2>{sectionCopy.werkzeuge.title}</h2><p className="lead">{sectionCopy.werkzeuge.lead}</p><Toolbox /></section></>}
       {section === "transparenz" && <Transparency />}
       {section === "werkzeuge" && <Toolbox />}
       {section === "monitor" && <Monitor />}
