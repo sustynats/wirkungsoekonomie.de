@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "polls": [
+    {
+      "title": "Wie überzeugt Euch der neue Wirkungsticker?",
+      "slug": "wirkungsticker-feedback",
+      "intro": "Der Wirkungsticker ist live.\n\nAktuelle Nachrichten werden hier nicht einfach weitergereicht, sondern quellengebunden eingeordnet: Was ist Fakt? Was könnte daraus folgen? Und welche Wirkung betrifft Mensch, Planet und Demokratie?\n\nDazu kommen Faktencheck, Folgencheck und eine wirkungsökonomische Einordnung.\n\nJetzt interessiert mich Eure Einschätzung.",
+      "question": "Wie überzeugt Euch der neue Wirkungsticker?",
+      "status": "active",
+      "starts_at": null,
+      "ends_at": null,
+      "results_visibility": "after_vote",
+      "image": "",
+      "cta_text": "Zum Wirkungsticker",
+      "cta_url": "/wirkungsticker/",
+      "further_url": "",
+      "feedback_note": "Was fehlt Euch noch oder was würdet Ihr verbessern? Schreibt mir gerne Euer Feedback.",
+      "social_description": "Der Wirkungsticker ordnet aktuelle Nachrichten nach Fakten, möglichen Folgen und ihrer Wirkung auf Mensch, Planet und Demokratie ein. Wie überzeugt Euch das Konzept?",
+      "feedback_enabled": 1,
+      "options": [
+        {
+          "id": "c203bf9a-0ed2-4811-89dd-8614a785d5d9",
+          "label": "Sehr gut – würde ich nutzen",
+          "sort_order": 0
+        },
+        {
+          "id": "6390945f-a533-494b-8e61-540a495d2d70",
+          "label": "Gut – kleine Verbesserungen",
+          "sort_order": 1
+        },
+        {
+          "id": "42a5dd52-29d9-48c6-b8ab-6ea47b3d3e03",
+          "label": "Interessant – noch unsicher",
+          "sort_order": 2
+        },
+        {
+          "id": "f68262f7-f872-407d-8303-90094ed14c86",
+          "label": "Überzeugt mich noch nicht",
+          "sort_order": 3
+        }
+      ],
+      "id": "7d55a7c2-2245-4f90-9435-4360db37b3b1",
+      "published_at": "2026-09-04T08:23:28.040Z",
+      "created_at": "2026-09-04T08:23:28.040Z",
+      "updated_at": "2026-09-04T08:23:28.040Z",
+      "revision": 1,
+      "effective_status": "active"
+    }
+  ],
+  "retired_slugs": []
+}

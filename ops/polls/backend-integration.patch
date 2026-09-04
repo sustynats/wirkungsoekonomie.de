@@ -1,0 +1,57 @@
+diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
+index 45a3439..3b56550 100644
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -1,5 +1,6 @@
+ import { createServer, type IncomingMessage, type Server, type ServerResponse } from "node:http";
+ import { createHmac, timingSafeEqual } from "node:crypto";
++import { createPollApi } from "../../polls/api.mjs";
+ import type { RuntimeConfig } from "../config.js";
+ import type {
+   AnswerFeedbackRating,
+@@ -78,10 +79,16 @@ export interface ApiProviderSet {
+ }
+ 
+ export function startApiServer(service: FactcheckService, config: RuntimeConfig, providers: ApiProviderSet = {}): Server {
++  const pollApi = createPollApi({
++    authenticate: request => readCommunitySessionFromRequest(request, config),
++    discordToken: config.token,
++    guildId: config.guildId,
++  });
+   const rateLimit = new Map<string, RateLimitEntry>();
+   let newsAnalysisActive = false;
+   const server = createServer(async (request, response) => {
+     try {
++      if (await pollApi(request, response)) return;
+       const requestUrl = new URL(request.url ?? "/", "http://localhost");
+       setCorsHeaders(request, response, config);
+ 
+@@ -402,6 +409,7 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+     }
+   });
+ 
++  server.once("close", () => pollApi.close?.());
+   server.listen(config.apiPort, config.apiHost, () => {
+     console.log(`Wirkungscheck-API hoert auf http://${config.apiHost}:${config.apiPort}.`);
+   });
+diff --git a/package.json b/package.json
+index 9f2f849..01a9bea 100644
+--- a/package.json
++++ b/package.json
+@@ -7,7 +7,7 @@
+   "scripts": {
+     "dev": "tsx src/index.ts",
+     "register": "tsx src/register-commands.ts",
+-    "build": "tsc -p tsconfig.build.json",
++    "build": "tsc -p tsconfig.build.json && node polls/copy-runtime.mjs",
+     "start": "node dist/src/index.js",
+     "rss:backfill": "node dist/src/scripts/backfillWebsiteFeeds.js",
+     "rss:backfill:dev": "tsx src/scripts/backfillWebsiteFeeds.ts",
+@@ -32,6 +32,6 @@
+     "undici": "6.27.0"
+   },
+   "engines": {
+-    "node": ">=20.11"
++    "node": ">=22.13"
+   }
+ }
