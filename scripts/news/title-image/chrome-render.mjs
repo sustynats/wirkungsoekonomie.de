@@ -6,13 +6,25 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { once } from "node:events";
 
+export async function setGeneratedDocument(page, frameId, svg) {
+  await page("Page.setDocumentContent", { frameId, html: `<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: blob:; font-src data:; style-src 'unsafe-inline'"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}img{display:block}</style></head><body></body></html>` });
+  // Multi-megabyte inlined originals can stall a single DevTools command.
+  // Keep each transport frame bounded; no files or external URLs are needed.
+  await page("Runtime.evaluate", { expression: "globalThis.__wtSvg=[]" });
+  for (let offset = 0; offset < svg.length; offset += 65536) {
+    await page("Runtime.evaluate", { expression: `globalThis.__wtSvg.push(${JSON.stringify(svg.slice(offset, offset + 65536))})` });
+  }
+  const result = await page("Runtime.evaluate", { expression: "(()=>{const image=new Image();image.src=URL.createObjectURL(new Blob(globalThis.__wtSvg,{type:'image/svg+xml'}));document.body.replaceChildren(image);delete globalThis.__wtSvg;return true})()", returnByValue: true });
+  if (result.exceptionDetails || result.result?.value !== true) throw new Error("CHROME_DOCUMENT_INVALID");
+}
+
 export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), "wt-title-cdp-"));
-  let child, socket, timer;
+  let child, socket, timer, phase = "START";
   const pending = new Map(); let sequence = 0;
   try {
     const png = await Promise.race([
-      new Promise((_, reject) => { timer = setTimeout(() => reject(new Error("CHROME_RENDER_TIMEOUT")), 30000); }),
+      new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`CHROME_RENDER_TIMEOUT_${phase}`)), 30000); }),
       (async () => {
         child = spawn(chrome, ["--headless=new", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${directory}`, "--no-first-run", "--no-default-browser-check", "--disable-background-networking", "--disable-component-update", "--disable-dev-shm-usage", "--password-store=basic", "--use-mock-keychain", ...(process.env.WT_CHROME_NO_SANDBOX === "true" ? ["--no-sandbox"] : []), "about:blank"], { stdio: ["ignore", "ignore", "pipe"] });
         const endpoint = await new Promise((resolve, reject) => {
@@ -24,6 +36,7 @@ export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
             if (match) resolve(match[1]);
           });
         });
+        phase = "CONNECT";
         socket = new WebSocket(endpoint);
         await new Promise((resolve, reject) => { socket.addEventListener("open", resolve, { once: true }); socket.addEventListener("error", reject, { once: true }); });
         socket.addEventListener("message", (event) => {
@@ -35,17 +48,22 @@ export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
         const send = (method, params = {}, sessionId) => new Promise((resolve, reject) => {
           const id = ++sequence; pending.set(id, { resolve, reject }); socket.send(JSON.stringify({ id, method, params, ...(sessionId ? { sessionId } : {}) }));
         });
+        phase = "PAGE";
         const { targetId } = await send("Target.createTarget", { url: "about:blank" });
         const { sessionId } = await send("Target.attachToTarget", { targetId, flatten: true });
-        const page = (method, params) => send(method, params, sessionId);
+        let pageCommands = 0;
+        const page = (method, params) => { phase = `${method.replaceAll(".", "_")}_${++pageCommands}`; return send(method, params, sessionId); };
         await page("Page.enable");
         await page("Network.enable");
         await page("Network.setBlockedURLs", { urls: ["http://*", "https://*", "file://*"] });
         await page("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: scale, mobile: false });
         const { frameTree } = await page("Page.getFrameTree");
-        await page("Page.setDocumentContent", { frameId: frameTree.frame.id, html: `<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; font-src data:; style-src 'unsafe-inline'"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}svg{display:block}</style></head><body>${svg}</body></html>` });
-        const ready = await page("Runtime.evaluate", { expression: "Promise.all([document.fonts.ready,...Array.from(document.querySelectorAll('image')).map(e=>{const i=new Image();i.src=e.href.baseVal;return i.decode()})]).then(()=>true)", awaitPromise: true, returnByValue: true });
+        phase = "DOCUMENT";
+        await setGeneratedDocument(page, frameTree.frame.id, svg);
+        phase = "ASSETS";
+        const ready = await page("Runtime.evaluate", { expression: "Promise.all([document.fonts.ready,...Array.from(document.images).map(image=>image.decode())]).then(()=>true)", awaitPromise: true, returnByValue: true });
         if (ready.exceptionDetails || ready.result?.value !== true) throw new Error("CHROME_ASSETS_NOT_READY");
+        phase = "SCREENSHOT";
         const shot = await page("Page.captureScreenshot", { format: "png", clip: { x: 0, y: 0, width, height, scale: 1 }, captureBeyondViewport: false });
         return Buffer.from(shot.data, "base64");
       })(),

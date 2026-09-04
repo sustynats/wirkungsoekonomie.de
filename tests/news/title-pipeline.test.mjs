@@ -4,6 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { deflateSync } from "node:zlib";
+import { runInNewContext } from "node:vm";
 import { IMAGE_CONFIG as C, chooseTitleImageMode, buildEditorialImagePrompt, digest, imageError } from "../../scripts/news/title-image/policy.mjs";
 import { inspectImage, downloadImage } from "../../scripts/news/title-image/image-file.mjs";
 import { checkHiggsfieldAvailability, createHiggsfieldAdapter, parseCliJson, generationResult, recoverSubmittedJob } from "../../scripts/news/title-image/higgsfield.mjs";
@@ -11,6 +12,7 @@ import { createTitleImagePipeline, publicTitleImage } from "../../scripts/news/t
 import { renderTitleImageFromStory } from "../../scripts/news/title-image/index.mjs";
 import { checkEditorialAsset, detectedWords, VISUAL_GATE_VERSION } from "../../scripts/news/title-image/quality.mjs";
 import { backfillTitleImages } from "../../scripts/news/title-image/backfill.mjs";
+import { setGeneratedDocument } from "../../scripts/news/title-image/chrome-render.mjs";
 
 const STORY = { story_id: "wt-1234567890abcdef", title: "Neue Netzinfrastruktur", source_summary: "Die Netzagentur berichtet über ein neues Verfahren für den Ausbau der Stromnetze. Die vorgesehene Regelung betrifft die Planung und Genehmigung zusätzlicher Stromleitungen.", topic: ["Energie"], claims: [], analysis: { status: "Entwurf", analysis_type: "ex_ante", human: { relevance: "mittel" } } };
 const MODEL = { type: "image", job_type: C.model, display_name: C.model_name, params: [{ name: "aspect_ratio", enum: ["16:9"] }, { name: "resolution", enum: ["2k"] }] };
@@ -138,6 +140,20 @@ test("web-wide variant preserves semantic HTML headline without repeating title 
   const result=renderTitleImageFromStory(STORY,{size:"wide",fonts:"none",headlineVisible:false});
   assert.doesNotMatch(result.svg,/>Netzinfrastruktur<\/text>/); assert.match(result.svg,/WIRKUNGSTICKER/);
   assert.match(renderTitleImageFromStory(STORY,{size:"og",fonts:"none"}).svg,/>Netzinfrastruktur<\/text>/);
+});
+test("large inline originals use bounded CDP frames and reconstruct exactly",async()=>{
+  const svg='<svg><image href="data:image/png;base64,'+'A'.repeat(8*1024*1024)+'"/></svg>';
+  let rebuilt;
+  const context={Image:class{},Blob:class{constructor(parts){rebuilt=parts.join('');}},URL:{createObjectURL:()=>"blob:local"},document:{body:{replaceChildren(image){assert.equal(image.src,"blob:local");}}}};let chunks=0;
+  await setGeneratedDocument(async(method,params)=>{
+    assert.ok(JSON.stringify(params).length<70000);
+    if(method==="Page.setDocumentContent"){assert.match(params.html,/default-src 'none'/);assert.equal(params.frameId,"frame-test");return {};}
+    chunks++;return {result:{value:runInNewContext(params.expression,context)}};
+  },"frame-test",svg);
+  assert.ok(chunks>120);assert.equal(rebuilt,svg);assert.equal(context.__wtSvg,undefined);
+});
+test("CDP document construction fails closed when browser evaluation fails",async()=>{
+  await assert.rejects(setGeneratedDocument(async()=>({exceptionDetails:{}}),"frame","<svg/>"),/CHROME_DOCUMENT_INVALID/);
 });
 test("public image metadata excludes prompts, credentials, private paths and arbitrary URLs",()=>{
   const result=publicTitleImage({mode:"editorial",prompt:"secret",source_visual:{file:"/private/secret"},og:{url:"https://evil.example/x"}});

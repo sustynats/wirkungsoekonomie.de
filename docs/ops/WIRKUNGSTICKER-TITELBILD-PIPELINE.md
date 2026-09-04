@@ -36,9 +36,11 @@ Erkennung. Das Ergebnis ist immer als Symbolbild bzw. WÖk-Einordnung gekennzeic
 
 Originale müssen PNG/JPEG/WebP sein, mindestens 1200 Pixel breit, höchstens
 12 MiB und 34 Megapixel groß. Downloads haben HTTPS-/Host-/IP-/Redirect-Grenzen.
-Tesseract prüft die Originaldatei auf gut erkennbare Schrift. Ein Texttreffer
-bleibt dauerhaft gesperrt; ein ausgefallener Prüfer kann dasselbe Original
-später erneut prüfen. OCR erkennt nicht jede denkbare Bildabweichung.
+Tesseract prüft die Originaldatei auf gut erkennbare Schrift. Gate `text-free-2`
+sperrt sichere Treffer sofort; unsichere Treffer müssen in einer zweiten
+Segmentierung bestätigt werden. Ein Prüferausfall bleibt geschlossen. Nach
+einem Gate-Update wird dasselbe gespeicherte Original erneut geprüft, niemals
+dafür neu generiert. OCR erkennt nicht jede denkbare Bildabweichung.
 
 Der erste echte Test (2 Credits) enthielt unerwünschte Wörter und wurde gesperrt.
 Er wird nicht veröffentlicht oder kostenpflichtig durch ein „schöneres“ ersetzt.
