@@ -1,7 +1,104 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T14:06:39.469Z",
+  "updated_at": "2026-09-04T14:12:28.186Z",
   "stories": [
+    {
+      "story_id": "wt-7ae0b9f22404b684",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+      "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+      "source_summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Hessens Innenminister Roman Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen. Dennoch würden die Sicherheitsvorkehrungen erhöht. Die Quelle nennt als Beispiel den Main-Kinzig-Kreis, wo der Schutz wichtiger Anlagen derzeit verstärkt werde.\n\nGenannt werden drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Das Innenministerium will sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, einzelnen Vorkehrungen oder möglichen Szenarien äußern. Die Quelle verweist außerdem auf eine angespannte Sicherheitslage und auf weitere Vorfälle an kritischer Infrastruktur in Deutschland.",
+      "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+      "detail_summary": "Gesichert ist nach der Quelle vor allem, dass Hessen seine Schutzvorkehrungen für kritische Infrastruktur hochfährt, obwohl es laut Innenminister Poseck keine Hinweise auf vergleichbare Taten im Land gibt. Als konkretes Beispiel nennt die Meldung den Main-Kinzig-Kreis mit drei Umspannwerken. Der Vorgang ist für Energieversorgung und Krisenfestigkeit relevant, weil zusätzliche Sicherung die Verwundbarkeit einzelner Anlagen senken kann und zugleich auf erhöhte Gefahrenwahrnehmung in der Infrastruktursteuerung hinweist. Ein möglicher Folgeeffekt ist mehr personeller, organisatorischer und technischer Aufwand für Betreiber und Behörden. Ob dadurch tatsächlich Anschläge verhindert oder nur Risiken verlagert werden, bleibt offen; die Quelle nennt keine überprüfbaren Wirkungen oder belastbaren Details zu den Maßnahmen.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, also einen potenziell systemrelevanten Bereich mit möglichen Kaskaden für Versorgungssicherheit, Schutzpflichten und staatliche Sicherheitsarchitektur.",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Es geht um Schutz kritischer Infrastruktur, die bei Ausfällen Versorgung und Sicherheit vieler Menschen betreffen kann."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle stellt den Schutz staatlich und gesellschaftlich relevanter Infrastruktur sowie die Reaktion der Behörden in den Mittelpunkt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Umspannwerke im Main-Kinzig-Kreis",
+            "value": "drei",
+            "unit": "Anlagen",
+            "context": "Genannte Standorte, deren Schutz verstärkt wird"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T09:36:10.000Z",
+      "last_updated": "2026-09-04T14:13:53.288Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-75bee49c92987065ab05",
+      "source_published_at": "2026-09-03T09:36:10.000Z",
+      "published_at": "2026-09-03T23:06:38.718Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T09:36:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-8e4cf2004cb7951c",
       "title_image": {
@@ -5654,103 +5751,6 @@
           "url": "http://www.euronews.com/2026/09/03/federal-judge-blocks-trumps-new-bid-to-abolish-birthright-citizenship-citing-supreme-court",
           "source_type": "media_rss",
           "published_at": "2026-09-03T04:22:45.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7ae0b9f22404b684",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-      "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-      "source_summary": "Nach mutmaßlichen Sabotageakten an Stromnetzen in Brandenburg und bei Köln berichtet die hessenschau, dass Hessens Innenminister Roman Poseck keine Hinweise auf vergleichbare Taten in Hessen sieht. Zugleich würden die Sicherheitsvorkehrungen erhöht; als Beispiel nennt der Beitrag den Main-Kinzig-Kreis.\n\nDer Text beschreibt außerdem, dass Betreiber kritischer Infrastruktur für die Sicherung ihrer Anlagen grundsätzlich selbst verantwortlich sind und sich mit den zuständigen Landesministerien austauschen. Genannt wird, dass die Kreiswerke Main-Kinzig den Schutz ihrer Anlagen verstärken, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Konkrete Schutzkonzepte bleiben laut Innenministerium geheim.",
-      "summary": "Hessen erhöht nach mutmaßlicher Sabotage an Stromnetzen anderswo die Sicherung von Umspannwerken und anderen kritischen Anlagen. Konkrete Schutzdetails nennt die Quelle nicht.",
-      "detail_summary": "Gesichert ist zunächst nur, dass das Land Hessen nach den mutmaßlichen Sabotageakten in Brandenburg und bei Köln seine Sicherheitsvorkehrungen rund um kritische Infrastruktur verstärkt. Der Beitrag nennt als Beispiel den Main-Kinzig-Kreis, wo die Kreiswerke ihren Schutz für drei Umspannwerke hochfahren. Für die Einordnung ist das relevant, weil Stromversorgung und kritische Infrastruktur systemisch verwundbar sind und zusätzliche Sicherung Kosten, Abläufe und Zuständigkeiten verändert. Ein möglicher Wirkpfad verläuft über mehr Präsenz, höhere Abschreckung und weniger Angriffsgelegenheiten; zugleich können Aufwand, Geheimhaltung und Koordinationsbedarf steigen. Ob dadurch tatsächlich Angriffe verhindert oder Risiken nur verlagert werden, bleibt offen. Belastbar belegt ist hier vor allem die Reaktion auf eine angespannte Sicherheitslage, nicht deren Wirksamkeit.",
-      "why_relevant": "Die Meldung beschreibt eine konkrete Reaktion auf mögliche Sabotage gegen kritische Energieinfrastruktur. Das kann Schutzstandards, operative Kosten und Resilienz von Versorgungssystemen betreffen.",
-      "topic": [
-        "Energie",
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Relevant für Versorgungssicherheit, aber der Beitrag belegt vor allem Vorsorge und keine eingetretene Versorgungsstörung in Hessen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; die Relevanz liegt primär bei Infrastruktur- und Sicherheitsfragen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Text berührt den Schutz kritischer Infrastruktur und die Frage staatlicher Sicherheitsvorsorge; konkrete demokratische Folgen bleiben offen."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Umspannwerke im Beispielkreis",
-            "value": "drei",
-            "unit": "Anlagen",
-            "context": "Genannt werden drei Umspannwerke im Main-Kinzig-Kreis."
-          }
-        ],
-        "affected_groups": [
-          "kommunen",
-          "staat",
-          "unternehmen",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T09:36:10.000Z",
-      "last_updated": "2026-09-03T23:06:38.718Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-75bee49c92987065ab05",
-      "source_published_at": "2026-09-03T09:36:10.000Z",
-      "published_at": "2026-09-03T23:06:38.718Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T09:36:10.000Z",
           "primary_source": false
         }
       ]

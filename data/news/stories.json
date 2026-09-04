@@ -1,7 +1,776 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T14:06:39.469Z",
+  "updated_at": "2026-09-04T14:12:28.186Z",
   "stories": [
+    {
+      "story_id": "wt-7ae0b9f22404b684",
+      "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+      "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+      "first_seen": "2026-09-03T09:36:10.000Z",
+      "last_updated": "2026-09-04T14:13:53.288Z",
+      "published_at": "2026-09-03T23:06:38.718Z",
+      "updated_at": "2026-09-04T14:13:53.288Z",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+          "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+          "summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln hat Innenminister Poseck versichert, dass es keine Hinweise auf vergleichbare Taten in Hessen gebe. Dennoch werden die Sicherheitsvorkehrungen erhöht - wie etwa das Beispiel Main-Kinzig-Kreis zeigt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T09:36:10.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "48fadfbec20983dd34fca3250fdf9deeb65bc656c78bfbd2fdc7ac7de4f78f36",
+          "source_item_id": "3187d00b390be8458dae3f1af39e3bb4150df677410a9cfc22b754ccb8c28e51",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T09:36:10.000Z",
+          "ingested_at": "2026-09-03T23:06:06.352Z",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7ae0b9f22404b684-v2-claim-1",
+          "story_id": "wt-7ae0b9f22404b684",
+          "claim": "Hessen hat nach mutmaßlichen Sabotageakten an Stromnetzen seine Sicherheitsvorkehrungen für Umspannwerke und andere kritische Anlagen verschärft.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "94ca688bb0dc88995025",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "f3d85385188c0430fe09",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T14:13:53.288Z"
+        },
+        {
+          "claim_id": "wt-7ae0b9f22404b684-v2-claim-2",
+          "story_id": "wt-7ae0b9f22404b684",
+          "claim": "Innenminister Roman Poseck sagte, es gebe keine Hinweise auf vergleichbare Taten in Hessen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "94ca688bb0dc88995025",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "4d79f4a5c81a04c0e220",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T14:13:53.288Z"
+        },
+        {
+          "claim_id": "wt-7ae0b9f22404b684-v2-claim-3",
+          "story_id": "wt-7ae0b9f22404b684",
+          "claim": "Der Main-Kinzig-Kreis verstärkt derzeit den Schutz seiner wichtigen Anlagen, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "bdf0d3ceeb19ea6b7ab5",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T14:13:53.288Z"
+        },
+        {
+          "claim_id": "wt-7ae0b9f22404b684-v2-claim-4",
+          "story_id": "wt-7ae0b9f22404b684",
+          "claim": "Das Innenministerium äußert sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, Vorkehrungen einzelner Anlagen oder möglichen Szenarien.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "af6cda179ad68f15d213",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "ca796be7543cc52ea539",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T14:13:53.288Z"
+        },
+        {
+          "claim_id": "wt-7ae0b9f22404b684-v2-claim-5",
+          "story_id": "wt-7ae0b9f22404b684",
+          "claim": "Die Quelle verweist auf mutmaßliche Sabotage an Stromnetzen in Brandenburg und bei Köln sowie auf weitere Vorfälle in Deutschland als Anlass für die Verschärfungen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "2300255f62010787e95f",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "2fc26a0a9217332b604d",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "excerpt_hash": "50950087490dfd8f1bfa",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T14:13:53.288Z"
+        }
+      ],
+      "event_id": "event-75bee49c92987065ab05",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T14:13:35.146Z",
+      "publish_ready_at": "2026-09-04T14:13:53.288Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "f5a0b52db0122bba1e73ddb8f6accded3dac746f90e723a83558d0a24aa2f7c9",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "3c99358aab8c11c0d874fe70d1a42ec064cdde8a30442a12e15cc40390f21010"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "610a15ea7a97697444ff5f2e9ec89a1ff5b5a801faf8b070dc105d40d0b2b870"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "d04bfff4674d44598bb30ce09bf3331bc9d8dcf03fbf5cb5c23b9fc83b685092"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-7a234ce31ca8915b-source.png",
+          "sha256": "7a234ce31ca8915b62bc81965cae7a646b60a47bde6b3f1fde244b469974805c",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T10:17:43.034Z"
+        },
+        "fingerprint": "1d01003fa567cea090146831e10de5419c95444d095fc480d341361bf5859f93",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T10:18:36.540Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Hessens Innenminister Roman Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen. Dennoch würden die Sicherheitsvorkehrungen erhöht. Die Quelle nennt als Beispiel den Main-Kinzig-Kreis, wo der Schutz wichtiger Anlagen derzeit verstärkt werde.\n\nGenannt werden drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Das Innenministerium will sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, einzelnen Vorkehrungen oder möglichen Szenarien äußern. Die Quelle verweist außerdem auf eine angespannte Sicherheitslage und auf weitere Vorfälle an kritischer Infrastruktur in Deutschland.",
+      "analysis": {
+        "story_id": "wt-7ae0b9f22404b684",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+        "detail_summary": "Gesichert ist nach der Quelle vor allem, dass Hessen seine Schutzvorkehrungen für kritische Infrastruktur hochfährt, obwohl es laut Innenminister Poseck keine Hinweise auf vergleichbare Taten im Land gibt. Als konkretes Beispiel nennt die Meldung den Main-Kinzig-Kreis mit drei Umspannwerken. Der Vorgang ist für Energieversorgung und Krisenfestigkeit relevant, weil zusätzliche Sicherung die Verwundbarkeit einzelner Anlagen senken kann und zugleich auf erhöhte Gefahrenwahrnehmung in der Infrastruktursteuerung hinweist. Ein möglicher Folgeeffekt ist mehr personeller, organisatorischer und technischer Aufwand für Betreiber und Behörden. Ob dadurch tatsächlich Anschläge verhindert oder nur Risiken verlagert werden, bleibt offen; die Quelle nennt keine überprüfbaren Wirkungen oder belastbaren Details zu den Maßnahmen.",
+        "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, also einen potenziell systemrelevanten Bereich mit möglichen Kaskaden für Versorgungssicherheit, Schutzpflichten und staatliche Sicherheitsarchitektur.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Es geht um Schutz kritischer Infrastruktur, die bei Ausfällen Versorgung und Sicherheit vieler Menschen betreffen kann."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle stellt den Schutz staatlich und gesellschaftlich relevanter Infrastruktur sowie die Reaktion der Behörden in den Mittelpunkt."
+        },
+        "importance": "mittel",
+        "impact_potential": "Mehr Schutz an Umspannwerken kann die Verwundbarkeit kritischer Energieinfrastruktur reduzieren und damit Versorgungsrisiken senken; zugleich entstehen zusätzliche Sicherungs- und Koordinationskosten.",
+        "impact_risks": [
+          "Mehr Sicherheitsaufwand für Betreiber und Behörden ohne belegten Nachweis, dass damit konkrete Angriffe verhindert werden.",
+          "Mögliche Verlagerung von Risiken auf weniger geschützte Standorte oder andere Infrastrukturbereiche."
+        ],
+        "mechanisms": [
+          "Erhöhte Präsenz, Streifen und Zugangssicherung an sensiblen Anlagen.",
+          "Risikobewertung und Anpassung lokaler Schutzkonzepte durch Betreiber und Behörden."
+        ],
+        "first_order": [
+          "Mehr Sicherheitsmaßnahmen an Umspannwerken und anderen kritischen Anlagen."
+        ],
+        "second_order": [
+          "Höherer organisatorischer und finanzieller Aufwand für Betreiber und staatliche Stellen."
+        ],
+        "third_order": [
+          "Mögliche Anpassung der Schutzstandards für kritische Infrastruktur, wenn die Lage länger anhält."
+        ],
+        "systemic_relevance": "Kritische Energieinfrastruktur hat hohe Systemrelevanz, weil Störungen Kaskaden in Versorgung, Wirtschaft und öffentlicher Sicherheit auslösen können.",
+        "transformation_potential": "Begrenzt bis mittel: Die Meldung zeigt eine punktuelle Verschärfung von Schutzmaßnahmen, nicht eine strukturelle Reform der Sicherheitsordnung.",
+        "resilience": "Die Maßnahme zielt auf höhere Resilienz einzelner Anlagen; ob die Gesamtsystemresilienz steigt, ist aus der Quelle nicht belegt.",
+        "side_effects": [
+          "Mehr Kosten und Personalbindung bei Betreibern.",
+          "Mehr Geheimhaltung bei Schutzkonzepten erschwert öffentliche Nachprüfbarkeit."
+        ],
+        "uncertainties": [
+          "Ob es in Hessen tatsächlich konkrete Vorfälle gab, bleibt laut Quelle offen.",
+          "Aus der Quelle geht nicht hervor, wie weit die Verschärfungen an einzelnen Standorten gehen.",
+          "Die tatsächliche Wirksamkeit der Maßnahmen wird nicht belegt."
+        ],
+        "evidence_level": "single secondary source; konkrete Maßnahmen und Wirkung bleiben weitgehend unbeziffert.",
+        "attribution": "Die Tatsachen beruhen auf einer journalistischen Einzelquelle; unabhängige Bestätigung der konkreten Schutzverschärfungen liegt in den gelieferten Daten nicht vor.",
+        "watch_next": [
+          "Ob Behörden oder Betreiber weitere Details zu Schutzmaßnahmen veröffentlichen.",
+          "Ob es neue bestätigte Vorfälle oder Ermittlungen in Hessen gibt."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 9, SDG 11, SDG 16, soweit der Schutz kritischer Infrastruktur betroffen ist."
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue, materialle Information über verschärfte Sicherheitsvorkehrungen an kritischer Energieinfrastruktur; derzeit nur single-source belegt, aber hinreichend konkret für eine vorsichtige Erstmeldung."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Umspannwerke im Main-Kinzig-Kreis",
+              "value": "drei",
+              "unit": "Anlagen",
+              "context": "Genannte Standorte, deren Schutz verstärkt wird"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "beschaeftigte",
+            "verbraucherinnen"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T23:06:38.718Z",
+          "content_hash": "f5a0b52db0122bba1e73ddb8f6accded3dac746f90e723a83558d0a24aa2f7c9",
+          "source_summary": "Nach mutmaßlichen Sabotageakten an Stromnetzen in Brandenburg und bei Köln berichtet die hessenschau, dass Hessens Innenminister Roman Poseck keine Hinweise auf vergleichbare Taten in Hessen sieht. Zugleich würden die Sicherheitsvorkehrungen erhöht; als Beispiel nennt der Beitrag den Main-Kinzig-Kreis.\n\nDer Text beschreibt außerdem, dass Betreiber kritischer Infrastruktur für die Sicherung ihrer Anlagen grundsätzlich selbst verantwortlich sind und sich mit den zuständigen Landesministerien austauschen. Genannt wird, dass die Kreiswerke Main-Kinzig den Schutz ihrer Anlagen verstärken, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Konkrete Schutzkonzepte bleiben laut Innenministerium geheim.",
+          "analysis": {
+            "story_id": "wt-7ae0b9f22404b684",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Hessen erhöht nach mutmaßlicher Sabotage an Stromnetzen anderswo die Sicherung von Umspannwerken und anderen kritischen Anlagen. Konkrete Schutzdetails nennt die Quelle nicht.",
+            "detail_summary": "Gesichert ist zunächst nur, dass das Land Hessen nach den mutmaßlichen Sabotageakten in Brandenburg und bei Köln seine Sicherheitsvorkehrungen rund um kritische Infrastruktur verstärkt. Der Beitrag nennt als Beispiel den Main-Kinzig-Kreis, wo die Kreiswerke ihren Schutz für drei Umspannwerke hochfahren. Für die Einordnung ist das relevant, weil Stromversorgung und kritische Infrastruktur systemisch verwundbar sind und zusätzliche Sicherung Kosten, Abläufe und Zuständigkeiten verändert. Ein möglicher Wirkpfad verläuft über mehr Präsenz, höhere Abschreckung und weniger Angriffsgelegenheiten; zugleich können Aufwand, Geheimhaltung und Koordinationsbedarf steigen. Ob dadurch tatsächlich Angriffe verhindert oder Risiken nur verlagert werden, bleibt offen. Belastbar belegt ist hier vor allem die Reaktion auf eine angespannte Sicherheitslage, nicht deren Wirksamkeit.",
+            "why_relevant": "Die Meldung beschreibt eine konkrete Reaktion auf mögliche Sabotage gegen kritische Energieinfrastruktur. Das kann Schutzstandards, operative Kosten und Resilienz von Versorgungssystemen betreffen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Relevant für Versorgungssicherheit, aber der Beitrag belegt vor allem Vorsorge und keine eingetretene Versorgungsstörung in Hessen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; die Relevanz liegt primär bei Infrastruktur- und Sicherheitsfragen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Text berührt den Schutz kritischer Infrastruktur und die Frage staatlicher Sicherheitsvorsorge; konkrete demokratische Folgen bleiben offen."
+            },
+            "importance": "mittel",
+            "impact_potential": "Mehr Schutz an Umspannwerken kann die Verwundbarkeit kritischer Strominfrastruktur senken, erhöht aber auch laufenden Aufwand und organisatorische Komplexität.",
+            "impact_risks": [
+              "Mehr Sicherheitsmaßnahmen können Kosten und Personalbindung erhöhen.",
+              "Geheimhaltung begrenzt die öffentliche Nachprüfbarkeit einzelner Schutzkonzepte.",
+              "Risiken können sich räumlich verlagern statt insgesamt sinken."
+            ],
+            "mechanisms": [
+              "Erhöhte Präsenz und Schutzvorkehrungen sollen Angriffsmöglichkeiten verringern.",
+              "Abstimmung zwischen Betreibern und Landesbehörden kann Reaktionsfähigkeit erhöhen."
+            ],
+            "first_order": [
+              "Mehr Schutzmaßnahmen an Umspannwerken und anderen Anlagen.",
+              "Mehr Abstimmung zwischen Betreiber und Behörden."
+            ],
+            "second_order": [
+              "Höhere Betriebskosten und mehr organisatorischer Aufwand.",
+              "Mögliche Abschreckung oder Verlagerung von Risiken."
+            ],
+            "third_order": [
+              "Falls die Lage länger anhält, könnte sich ein dauerhaft höherer Standard für kritische Infrastruktur herausbilden."
+            ],
+            "systemic_relevance": "Die Meldung betrifft kritische Energieinfrastruktur, also einen Bereich mit hoher Systemrelevanz für Versorgung und Sicherheit.",
+            "transformation_potential": "Begrenzt bis mittel: Die Quelle zeigt eine defensive Anpassung, aber keinen strukturellen Umbau des Energiesystems.",
+            "resilience": "Resilienz kann kurzfristig steigen, wenn Schutz und Lagebeobachtung verbessert werden; die Dauerwirkung ist jedoch ungesichert.",
+            "side_effects": [
+              "Mehr Geheimhaltung erschwert externe Kontrolle.",
+              "Zusätzliche Sicherung kann Ressourcen von anderer Prävention abziehen."
+            ],
+            "uncertainties": [
+              "Es bleibt offen, ob es in Hessen konkrete Vorfälle gab.",
+              "Unklar ist, wie stark und an welchen Standorten die Schutzmaßnahmen erhöht werden.",
+              "Die tatsächliche Wirksamkeit der Maßnahmen ist aus der Quelle nicht belegt."
+            ],
+            "evidence_level": "single-source, journalistisch plausibel, aber ohne unabhängige Bestätigung der Kernlage in Hessen.",
+            "attribution": "Die Angaben beruhen auf einem hessenschau-Bericht und darin zitierten Aussagen des Innenministers sowie eines Kreiswerkssprechers.",
+            "watch_next": [
+              "Ob Hessen weitere konkrete Maßnahmen oder Lageeinschätzungen veröffentlicht.",
+              "Ob es zu bestätigten Vorfällen oder Störungen in Hessen kommt."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7",
+              "Agenda 2030/SDG 9",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält eine neue, konkret zurechenbare Schutzreaktion auf Sabotagevorfälle und betrifft kritische Energieinfrastruktur mit systemischer Relevanz."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Umspannwerke im Beispielkreis",
+                  "value": "drei",
+                  "unit": "Anlagen",
+                  "context": "Genannt werden drei Umspannwerke im Main-Kinzig-Kreis."
+                }
+              ],
+              "affected_groups": [
+                "kommunen",
+                "staat",
+                "unternehmen",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v1-claim-1",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Innenminister Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "94ca688bb0dc88995025",
+                  "checked_at": "2026-09-03T23:06:38.718Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-03T23:06:38.718Z"
+            },
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v1-claim-2",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Hessen erhöht nach den jüngsten Vorfällen die Sicherheitsvorkehrungen für Umspannwerke und andere kritische Anlagen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "f3d85385188c0430fe09",
+                  "checked_at": "2026-09-03T23:06:38.718Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "ca796be7543cc52ea539",
+                  "checked_at": "2026-09-03T23:06:38.718Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-03T23:06:38.718Z"
+            },
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v1-claim-3",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Die Kreiswerke Main-Kinzig verstärken den Schutz ihrer wichtigen Anlagen, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "bdf0d3ceeb19ea6b7ab5",
+                  "checked_at": "2026-09-03T23:06:38.718Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "9d563b12e44722b1c3a4",
+                  "checked_at": "2026-09-03T23:06:38.718Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-03T23:06:38.718Z"
+            },
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v1-claim-4",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Das Innenministerium äußert sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten oder einzelnen Vorkehrungen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "af6cda179ad68f15d213",
+                  "checked_at": "2026-09-03T23:06:38.718Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "ca796be7543cc52ea539",
+                  "checked_at": "2026-09-03T23:06:38.718Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-03T23:06:38.718Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "content_hash": "48fadfbec20983dd34fca3250fdf9deeb65bc656c78bfbd2fdc7ac7de4f78f36"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T14:13:53.288Z",
+          "content_hash": "f5a0b52db0122bba1e73ddb8f6accded3dac746f90e723a83558d0a24aa2f7c9",
+          "source_summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Hessens Innenminister Roman Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen. Dennoch würden die Sicherheitsvorkehrungen erhöht. Die Quelle nennt als Beispiel den Main-Kinzig-Kreis, wo der Schutz wichtiger Anlagen derzeit verstärkt werde.\n\nGenannt werden drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Das Innenministerium will sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, einzelnen Vorkehrungen oder möglichen Szenarien äußern. Die Quelle verweist außerdem auf eine angespannte Sicherheitslage und auf weitere Vorfälle an kritischer Infrastruktur in Deutschland.",
+          "analysis": {
+            "story_id": "wt-7ae0b9f22404b684",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+            "detail_summary": "Gesichert ist nach der Quelle vor allem, dass Hessen seine Schutzvorkehrungen für kritische Infrastruktur hochfährt, obwohl es laut Innenminister Poseck keine Hinweise auf vergleichbare Taten im Land gibt. Als konkretes Beispiel nennt die Meldung den Main-Kinzig-Kreis mit drei Umspannwerken. Der Vorgang ist für Energieversorgung und Krisenfestigkeit relevant, weil zusätzliche Sicherung die Verwundbarkeit einzelner Anlagen senken kann und zugleich auf erhöhte Gefahrenwahrnehmung in der Infrastruktursteuerung hinweist. Ein möglicher Folgeeffekt ist mehr personeller, organisatorischer und technischer Aufwand für Betreiber und Behörden. Ob dadurch tatsächlich Anschläge verhindert oder nur Risiken verlagert werden, bleibt offen; die Quelle nennt keine überprüfbaren Wirkungen oder belastbaren Details zu den Maßnahmen.",
+            "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, also einen potenziell systemrelevanten Bereich mit möglichen Kaskaden für Versorgungssicherheit, Schutzpflichten und staatliche Sicherheitsarchitektur.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Es geht um Schutz kritischer Infrastruktur, die bei Ausfällen Versorgung und Sicherheit vieler Menschen betreffen kann."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Quelle stellt den Schutz staatlich und gesellschaftlich relevanter Infrastruktur sowie die Reaktion der Behörden in den Mittelpunkt."
+            },
+            "importance": "mittel",
+            "impact_potential": "Mehr Schutz an Umspannwerken kann die Verwundbarkeit kritischer Energieinfrastruktur reduzieren und damit Versorgungsrisiken senken; zugleich entstehen zusätzliche Sicherungs- und Koordinationskosten.",
+            "impact_risks": [
+              "Mehr Sicherheitsaufwand für Betreiber und Behörden ohne belegten Nachweis, dass damit konkrete Angriffe verhindert werden.",
+              "Mögliche Verlagerung von Risiken auf weniger geschützte Standorte oder andere Infrastrukturbereiche."
+            ],
+            "mechanisms": [
+              "Erhöhte Präsenz, Streifen und Zugangssicherung an sensiblen Anlagen.",
+              "Risikobewertung und Anpassung lokaler Schutzkonzepte durch Betreiber und Behörden."
+            ],
+            "first_order": [
+              "Mehr Sicherheitsmaßnahmen an Umspannwerken und anderen kritischen Anlagen."
+            ],
+            "second_order": [
+              "Höherer organisatorischer und finanzieller Aufwand für Betreiber und staatliche Stellen."
+            ],
+            "third_order": [
+              "Mögliche Anpassung der Schutzstandards für kritische Infrastruktur, wenn die Lage länger anhält."
+            ],
+            "systemic_relevance": "Kritische Energieinfrastruktur hat hohe Systemrelevanz, weil Störungen Kaskaden in Versorgung, Wirtschaft und öffentlicher Sicherheit auslösen können.",
+            "transformation_potential": "Begrenzt bis mittel: Die Meldung zeigt eine punktuelle Verschärfung von Schutzmaßnahmen, nicht eine strukturelle Reform der Sicherheitsordnung.",
+            "resilience": "Die Maßnahme zielt auf höhere Resilienz einzelner Anlagen; ob die Gesamtsystemresilienz steigt, ist aus der Quelle nicht belegt.",
+            "side_effects": [
+              "Mehr Kosten und Personalbindung bei Betreibern.",
+              "Mehr Geheimhaltung bei Schutzkonzepten erschwert öffentliche Nachprüfbarkeit."
+            ],
+            "uncertainties": [
+              "Ob es in Hessen tatsächlich konkrete Vorfälle gab, bleibt laut Quelle offen.",
+              "Aus der Quelle geht nicht hervor, wie weit die Verschärfungen an einzelnen Standorten gehen.",
+              "Die tatsächliche Wirksamkeit der Maßnahmen wird nicht belegt."
+            ],
+            "evidence_level": "single secondary source; konkrete Maßnahmen und Wirkung bleiben weitgehend unbeziffert.",
+            "attribution": "Die Tatsachen beruhen auf einer journalistischen Einzelquelle; unabhängige Bestätigung der konkreten Schutzverschärfungen liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Ob Behörden oder Betreiber weitere Details zu Schutzmaßnahmen veröffentlichen.",
+              "Ob es neue bestätigte Vorfälle oder Ermittlungen in Hessen gibt."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, SDG 11, SDG 16, soweit der Schutz kritischer Infrastruktur betroffen ist."
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, materialle Information über verschärfte Sicherheitsvorkehrungen an kritischer Energieinfrastruktur; derzeit nur single-source belegt, aber hinreichend konkret für eine vorsichtige Erstmeldung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Umspannwerke im Main-Kinzig-Kreis",
+                  "value": "drei",
+                  "unit": "Anlagen",
+                  "context": "Genannte Standorte, deren Schutz verstärkt wird"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "beschaeftigte",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v2-claim-1",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Hessen hat nach mutmaßlichen Sabotageakten an Stromnetzen seine Sicherheitsvorkehrungen für Umspannwerke und andere kritische Anlagen verschärft.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "94ca688bb0dc88995025",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "f3d85385188c0430fe09",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v2-claim-2",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Innenminister Roman Poseck sagte, es gebe keine Hinweise auf vergleichbare Taten in Hessen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "94ca688bb0dc88995025",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "4d79f4a5c81a04c0e220",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v2-claim-3",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Der Main-Kinzig-Kreis verstärkt derzeit den Schutz seiner wichtigen Anlagen, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "bdf0d3ceeb19ea6b7ab5",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v2-claim-4",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Das Innenministerium äußert sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, Vorkehrungen einzelner Anlagen oder möglichen Szenarien.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "af6cda179ad68f15d213",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "ca796be7543cc52ea539",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            },
+            {
+              "claim_id": "wt-7ae0b9f22404b684-v2-claim-5",
+              "story_id": "wt-7ae0b9f22404b684",
+              "claim": "Die Quelle verweist auf mutmaßliche Sabotage an Stromnetzen in Brandenburg und bei Köln sowie auf weitere Vorfälle in Deutschland als Anlass für die Verschärfungen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "2300255f62010787e95f",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "2fc26a0a9217332b604d",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+                  "excerpt_hash": "50950087490dfd8f1bfa",
+                  "checked_at": "2026-09-04T14:13:53.288Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T14:13:53.288Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+              "content_hash": "48fadfbec20983dd34fca3250fdf9deeb65bc656c78bfbd2fdc7ac7de4f78f36"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T23:06:38.718Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T14:13:53.288Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-8e4cf2004cb7951c",
       "slug": "russische-drohne-trifft-geheimdienst-sitz-in-kiew-b7951c",
@@ -1524,7 +2293,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "0e5790e5b59c983ecd17bb41b4ae37bb2c3c5bcb96bfe55dc16f1dad3ed34701",
         "sources": [
           {
@@ -2588,7 +3357,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "6651d1c6d254a700ea496532f75f9549427bd1de4b4f4084bc0a599195e9823e",
         "sources": [
           {
@@ -3943,7 +4712,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
         "sources": [
           {
@@ -5326,7 +6095,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "32ac85e953dc41a0f73d3035bbdc0b07811e5ddf476f0eec484c612547ddbbbf",
         "sources": [
           {
@@ -5432,19 +6201,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:06:39.469Z"
+          "checked_at": "2026-09-04T14:12:28.186Z"
         }
       ],
       "content_hash": "8c841a3e54a910701b1f291bcb1af056acf616c5650e925fa0293e8f5bd816ed",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T14:06:39.469Z",
+      "updated_at": "2026-09-04T14:12:28.186Z",
       "event_first_seen_at": "2026-09-04T13:51:37.798Z",
       "event_detected_at": "2026-09-04T13:51:37.798Z",
       "event_id": "event-a36220157597c56a52fe",
@@ -5476,14 +6245,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 43.65781666666667,
+        "source_age_minutes": 49.469766666666665,
         "detection_delay_minutes": 28.629966666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.02785,
+        "queue_age_minutes": 20.8398,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 90,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T14:12:28.186Z",
+      "rejection": {
+        "at": "2026-09-04T14:12:28.186Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -7185,7 +7966,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "76f972558505e81e47a2de677c8230af59ec7570c5971d5ab95b43d1b1cdca85",
         "sources": [
           {
@@ -7220,9 +8001,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -7289,19 +8072,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:06:39.469Z"
+          "checked_at": "2026-09-04T14:12:28.186Z"
         }
       ],
       "content_hash": "5471e9b5c2f7b32c1fbe2c295b563670c1b4bc545715d58a0d5fd50ef17d379a",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T14:06:39.469Z",
+      "updated_at": "2026-09-04T14:12:28.186Z",
       "event_first_seen_at": "2026-09-04T12:51:34.068Z",
       "event_detected_at": "2026-09-04T12:51:34.068Z",
       "event_id": "event-ace669e887231fac82e7",
@@ -7330,14 +8113,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 96.04115,
+        "source_age_minutes": 101.8531,
         "detection_delay_minutes": 20.951133333333335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.09001666666667,
+        "queue_age_minutes": 80.90196666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 80,
+        "news_freshness_score": 79,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T14:12:28.186Z",
+      "rejection": {
+        "at": "2026-09-04T14:12:28.186Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -8414,7 +9209,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "c8edbe03eae1fe3b48b26fd6cfeec12001c15d94a3286372a49b18e5321b17d9",
         "sources": [
           {
@@ -8619,7 +9414,7 @@
       "verification_started_at": "2026-09-04T12:07:36.086Z",
       "publish_ready_at": "2026-09-04T12:07:51.198Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -9011,48 +9806,7 @@
         "generated_at": "2026-09-04T12:10:35.071Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "07c8347b53494898fbf9937a52cdec986c1985f02dd7e59cf318099f23493405",
-        "sources": [
-          {
-            "source_id": "bundesregierung-presse",
-            "publisher": "Pressemitteilungen der Bundesregierung",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/110-millionen-euro-fuer-schloss-friedenstein-staatsminister-weimer-und-ministerpraesident-voigt-ueberreichen-symbolischen-scheck-2451560",
-            "title": "110 Millionen Euro für Schloss Friedenstein - Staatsminister Weimer und Ministerpräsident Voigt überreichen symbolischen Scheck",
-            "summary": "Staatsminister Wolfram Weimer besucht Eisenach und Gotha. Im Mittelpunkt seiner Kulturbautenreise steht ein echter Meilenstein bei der Sanierung von Schloss Friedenstein. Denn am heutigen Nachmittag überreichen Kulturstaatsminister Wolfram Weimer und Ministerpräsident Mario Voigt einen symbolischen Scheck über 110 Millionen Euro. Dieser steht dabei für das Gesamtvolumen des Sanierungsprogramms, das Bund und Land zu gleichen Teilen finanzieren. Darin enthalten sind sowohl die Mittel für die anstehenden Sanierungsabschnitte als auch bereits abgeschlossene Investitionen. Mit dem aktuellen Zuwendungsbescheid für das zweite Teilprojekt kann die Stiftung Thüringer Schlösser und Gärten nun ein großes Vorhaben in Angriff nehmen: Die Sanierung des Westflügels für die museale Nutzung durch die Friedenstein Stiftung Gotha. 2027 sollen dann die Arbeiten am Ostturm mit Teilen des Ostflügels beginnen. Ziel ist es, die historische Bausubstanz dauerhaft zu sichern und zugleich die Voraussetzunge...",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T12:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 88,
-            "source_topic": "Politik",
-            "content_hash": "8caef632d82af178d7c2956e96452f08fb93a3528671032c6d2b3e789a299620",
-            "source_item_id": "4af785d479a09d71a7885b9deef9d3add6b48a83fced8331ee6ac06b1fabc5a5",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T12:00:00.000Z",
-            "ingested_at": "2026-09-04T14:06:39.469Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-d80fd849c477e2ad",
@@ -9827,7 +10581,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
         "sources": [
           {
@@ -10486,7 +11240,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "dfa59f6b6552c7a39827ee42e391db763f8104fa0fafb13879b9e7fb595816e5",
         "sources": [
           {
@@ -13858,7 +14612,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "47dbb24c1485c38e734f8ee9a2356fe7e29666f3e9bc7d63878bcd94081ec429",
         "sources": [
           {
@@ -17865,7 +18619,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
         "sources": [
           {
@@ -18479,7 +19233,7 @@
       "verification_started_at": "2026-09-04T10:43:40.074Z",
       "publish_ready_at": "2026-09-04T10:43:56.419Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -18952,111 +19706,7 @@
         "generated_at": "2026-09-04T10:45:15.611Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "859716f24d00e852fa3d6355d89ad0a116f0f00ed142cd1d62e4d1e28654f0da",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/digital/wertvolle-ressourcen--studie--milliardenwerte-in-europas-elektroschrott-ungenutzt-38205836.html",
-            "title": "Wertvolle Ressourcen: Studie: Milliardenwerte in Europas Elektroschrott ungenutzt",
-            "summary": "Warum verstauben mehr als 700 Millionen Smartphones in Europas Schubladen, statt wertvolle Rohstoffe zu liefern? Eine Studie zeigt, was Verbraucher und Hersteller ändern könnten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T03:00:10.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c1caf853e5a00581ee8533b26f2729c6d35a69009ceafe55baad154cb22c3b65",
-            "source_item_id": "255ae1d6fa71503c3105e8a683c1a1a8058c15737091071a2657a1ef9f79545c",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T03:00:10.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/gesellschaft/medien/dpa-wertvolle-ressourcen-16016067.html",
-            "title": "Wertvolle Ressourcen: Studie: Milliardenwerte in Europas Elektroschrott ungenutzt",
-            "summary": "Warum verstauben mehr als 700 Millionen Smartphones in Europas Schubladen, statt wertvolle Rohstoffe zu liefern? Eine Studie zeigt, was Verbraucher und Hersteller ändern könnten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T03:02:24.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "56c14fc4720212dbb2917f943d82c730fa8161d3da57a68e186e696a7f91122e",
-            "source_item_id": "74cf20aefe694de8a3ec14ea203a68963eaad92ca379b7b3a356be0f9a4949af",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T03:02:24.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/studie-milliardenwerte-in-europas-elektroschrott-ungenutzt-102.html",
-            "title": "Ressourcen - Studie: Milliardenwerte in Europas Elektroschrott ungenutzt",
-            "summary": "In ausgedienten Haushaltsgeräten und alter Unterhaltungselektronik in der EU schlummern laut einer Studie ungenutzte Rohstoff im Wert von mehr als 65 Milliarden Euro. Zu diesem Ergebnis kommt eine gemeinsame Untersuchung der Boston Consulting Group (BCG) und der Initiative Cradle to Cradle Electronics, die anlässlich der Technikmesse IFA in Berlin vorgestellt wurde.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T13:55:26.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "3fcf1167a1e2e18cdb0c816f33205d9287f0cd2f7eed5c7a2a93892dda62bb01",
-            "source_item_id": "7e597e74763d58470f368fbf8acbabc303a134cb261045265f44a4f71934f7d0",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T13:55:26.000Z",
-            "ingested_at": "2026-09-04T14:06:39.469Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-61d3420f0dd76f70",
@@ -19319,7 +19969,7 @@
       "verification_started_at": "2026-09-04T10:42:51.794Z",
       "publish_ready_at": "2026-09-04T10:43:11.833Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -20221,142 +20871,7 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "aa7b0c0e8c6bf11b13346910e264726bd3df23a40665c92499f87b20fe0068e1",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/kongresswahlen--trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-38205426.html",
-            "title": "Kongresswahlen: Trump zieht im Streit um Briefwahl erneut vor Supreme Court",
-            "summary": "Kurz vor Beginn der Briefwahl für die „Midterms“ will Trump neue Regeln durchdrücken. Der Rechtsstreit darüber zieht sich schon länger, nun wendet sich die Regierung abermals an das oberste Gericht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T22:51:46.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "1e3da25bce3eaf164a3d44a855ca8503e0603c551a1d8290aedcaad23ea8f41e",
-            "source_item_id": "67c450fb4dda5048b25e21da4a479c9bb82c9834f7150d719c86f37d9e9f82a7",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T22:51:46.000Z",
-            "ingested_at": "2026-09-04T01:26:36.485Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-kongresswahlen-16015963.html",
-            "title": "Streit um Briefwahlregeln: Trump zieht erneut vor Supreme Court",
-            "summary": "Die Trump-Regierung hat den Supreme Court erneut angerufen, um schärfere Briefwahlregeln durchzusetzen. Eine Bundesrichterin hatte das Vorhaben zuvor per einstweiliger Verfügung gestoppt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T21:08:30.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ae36d4cbff0f7a9374f372a39ecc939de1a93b4c00866e7058ec41102109d691",
-            "source_item_id": "f7c4ca5e309a5f0e006a0fc50aed2ebe6483542678a642fc78452ee8e8e6f024",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T21:08:30.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/politik/ausland/usa-trump-streit-briefwahl-supreme-court-100.html",
-            "title": "Trump zieht im Streit um Briefwahl erneut vor Supreme Court",
-            "summary": "Am 3. November finden in den USA die Midterms statt. Im Streit um neue Beschränkungen der Briefwahl hat die Regierung von Donald Trump erneut den Supreme Court angerufen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T01:03:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "d93f95906a969ce5d163131ebafcbe6aeba4489723c2e13d3b72029ab4b190ec",
-            "source_item_id": "6d44d6a31d41a8fab926adf654647f625b656497ecb6f7dd31119f481a651a43",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T01:03:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-regierung-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-102.html",
-            "title": "USA - US-Regierung zieht im Streit um Briefwahl erneut vor Supreme Court",
-            "summary": "Kurz vor Beginn der Briefwahl für die Zwischenwahlen in den USA zieht die Regierung von Präsident Trump erneut vor den Obersten Gerichtshof.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T13:55:26.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "89a439d5b9d9b8118c14217dda64818f8465f590e41244d7c69e6511d539b71e",
-            "source_item_id": "53fabac28d60802d1856562da86eb700d5f29bef6087e79e9c3ae7c8a4e17d95",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T13:55:26.000Z",
-            "ingested_at": "2026-09-04T14:06:39.469Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-76dd7f8508f81c11",
@@ -21489,7 +22004,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
         "sources": [
           {
@@ -22116,7 +22631,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "7186e44e5200cc57900c5f6de90416a746c77fcb2e3be5f30bf03b62690c804c",
         "sources": [
           {
@@ -23541,7 +24056,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "e9a4f51401aea2c89fef4902519e5697aae1098be75d9b8418a2338535b3e10d",
         "sources": [
           {
@@ -24573,7 +25088,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "ed4359195206a11f8a375f078f1733a84a4ba16d4c1c0e11eb9ba0edfa0066ff",
         "sources": [
           {
@@ -25068,7 +25583,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "56fc3e3cc02ffe9de49828a643c8bf86f747e7f0de5938d5ea8d657524a7e3a8",
         "sources": [
           {
@@ -26379,7 +26894,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "81cb5d63d44d23392a53f615e89cbdefdf6d803863db64c0631615366d6cf29c",
         "sources": [
           {
@@ -28204,7 +28719,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "e94409d7f9d4796ecc951a57c5b0db1eb9d95fb101f1bf141563ebd3062f54e6",
         "sources": [
           {
@@ -28814,7 +29329,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "104fd2ac96b1ff667bf3085cdb87e60cad729f9879068d9bc6c47d02b3eddfff",
         "sources": [
           {
@@ -30407,7 +30922,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -31422,7 +31937,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -33463,7 +33978,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "0951961db5e880d5773f7d223e4058e7c70fc0383501b989ee1c8e3abd8d9315",
         "sources": [
           {
@@ -34625,7 +35140,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
         "sources": [
           {
@@ -35210,7 +35725,7 @@
       "retirement_history": [],
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -35878,7 +36393,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
         "sources": [
           {
@@ -36263,7 +36778,7 @@
       "verification_started_at": "2026-09-04T04:39:17.466Z",
       "publish_ready_at": "2026-09-04T04:39:29.989Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -36897,49 +37412,7 @@
         "generated_at": "2026-09-04T06:03:16.802Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
-            "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-            "summary": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte. So werden Verbraucherinnen und Verbraucher spürbar entlastet. Langfristig werden niedrigere Steuern und ein Industriestrompreis auch die Wirtschaft unterstützen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T13:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "c9baac27652662154968b40977d601b1a1234a6c2e6c217dd2fd3f76725bef59",
-            "source_item_id": "cf5b3c56d6a982f602b4f8f2c6f2d8bd2a24859c5f87e492420d68ae3a418160",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T13:00:00.000Z",
-            "ingested_at": "2026-09-04T14:06:39.469Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-9d87c7944980e87e",
@@ -37405,7 +37878,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
         "sources": [
           {
@@ -37816,7 +38289,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
         "sources": [
           {
@@ -38945,7 +39418,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
         "sources": [
           {
@@ -39682,7 +40155,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
         "sources": [
           {
@@ -40196,7 +40669,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
         "sources": [
           {
@@ -41321,7 +41794,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "5075c7ffde16cbbf806ab1eed166f847b296725de53c460c37469f3ec7552983",
         "sources": [
           {
@@ -41984,7 +42457,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "5a56ec97c1c488c4e358f69ef0a90770eddf25eb4ca171e125fde72efa5a8d39",
         "sources": [
           {
@@ -42630,7 +43103,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
         "sources": [
           {
@@ -43462,7 +43935,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
         "sources": [
           {
@@ -45535,7 +46008,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "ef6601581aead879d3f2fe7b232c0a9b5d2665911fa3dba5380e9af5490ba3df",
         "sources": [
           {
@@ -47493,7 +47966,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "ba792de8bcac830ac84f3b4f0dc1c53cf00b89108e9cb01f51205b013355e63c",
         "sources": [
           {
@@ -48051,7 +48524,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "6e4464438c753d3e38b4f92054ace42e22183c6c85d209f007eaeff4dd76b1e4",
         "sources": [
           {
@@ -48772,7 +49245,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
+        "detected_at": "2026-09-04T14:12:28.186Z",
         "content_hash": "c5d58f7d34ae883a4c01449c96f07eae9763d3812701c0ff1c8f482ed998c537",
         "sources": [
           {
@@ -49628,7 +50101,7 @@
       "verification_started_at": "2026-09-03T23:06:41.222Z",
       "publish_ready_at": "2026-09-03T23:06:54.492Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -49925,605 +50398,7 @@
         "generated_at": "2026-09-04T10:17:41.923Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "44a7f80de391c82a67e110fefdea50ffd07608f96331c6125d2e51b9881aec46",
-        "sources": [
-          {
-            "source_id": "euronews-en",
-            "publisher": "Euronews",
-            "url": "http://www.euronews.com/2026/09/03/federal-judge-blocks-trumps-new-bid-to-abolish-birthright-citizenship-citing-supreme-court",
-            "title": "Federal judge blocks Trump's new bid to abolish birthright citizenship citing Supreme Court precedent",
-            "summary": "The ruling is the second time Trump’s ambitious plans of abolishing a constitutional right were shot down by federal courts. The US Supreme Court earlier blocked an executive attempt at abolishing the right to children born to parents who do not hold legal residence status.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T04:22:45.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Europa",
-            "content_hash": "69cc7640d7f4153706df80e22c76380f7cbd85b93bce375835ba482e7f3a3d3b",
-            "source_item_id": "0c7cd4d72f57347db59b3a9b09f24bac9817cbcc474da49104c6a5f6f8376de6",
-            "publisher_id": "euronews",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "EU",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T04:22:45.000Z",
-            "ingested_at": "2026-09-04T14:06:39.469Z",
-            "provenance": {
-              "origin": "publisher:euronews",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
-    },
-    {
-      "story_id": "wt-7ae0b9f22404b684",
-      "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-      "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-      "first_seen": "2026-09-03T09:36:10.000Z",
-      "last_updated": "2026-09-03T23:06:38.718Z",
-      "published_at": "2026-09-03T23:06:38.718Z",
-      "updated_at": "2026-09-03T23:06:38.718Z",
-      "topic": [
-        "Energie",
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-          "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-          "summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln hat Innenminister Poseck versichert, dass es keine Hinweise auf vergleichbare Taten in Hessen gebe. Dennoch werden die Sicherheitsvorkehrungen erhöht - wie etwa das Beispiel Main-Kinzig-Kreis zeigt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T09:36:10.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "48fadfbec20983dd34fca3250fdf9deeb65bc656c78bfbd2fdc7ac7de4f78f36",
-          "source_item_id": "3187d00b390be8458dae3f1af39e3bb4150df677410a9cfc22b754ccb8c28e51",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T09:36:10.000Z",
-          "ingested_at": "2026-09-03T23:06:06.352Z",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7ae0b9f22404b684-v1-claim-1",
-          "story_id": "wt-7ae0b9f22404b684",
-          "claim": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Innenminister Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "excerpt_hash": "94ca688bb0dc88995025",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-03T23:06:38.718Z"
-        },
-        {
-          "claim_id": "wt-7ae0b9f22404b684-v1-claim-2",
-          "story_id": "wt-7ae0b9f22404b684",
-          "claim": "Hessen erhöht nach den jüngsten Vorfällen die Sicherheitsvorkehrungen für Umspannwerke und andere kritische Anlagen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "excerpt_hash": "f3d85385188c0430fe09",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "excerpt_hash": "ca796be7543cc52ea539",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-03T23:06:38.718Z"
-        },
-        {
-          "claim_id": "wt-7ae0b9f22404b684-v1-claim-3",
-          "story_id": "wt-7ae0b9f22404b684",
-          "claim": "Die Kreiswerke Main-Kinzig verstärken den Schutz ihrer wichtigen Anlagen, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "excerpt_hash": "bdf0d3ceeb19ea6b7ab5",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "excerpt_hash": "9d563b12e44722b1c3a4",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-03T23:06:38.718Z"
-        },
-        {
-          "claim_id": "wt-7ae0b9f22404b684-v1-claim-4",
-          "story_id": "wt-7ae0b9f22404b684",
-          "claim": "Das Innenministerium äußert sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten oder einzelnen Vorkehrungen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "excerpt_hash": "af6cda179ad68f15d213",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "excerpt_hash": "ca796be7543cc52ea539",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-03T23:06:38.718Z"
-        }
-      ],
-      "event_id": "event-75bee49c92987065ab05",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-03T23:06:25.861Z",
-      "publish_ready_at": "2026-09-03T23:06:38.718Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "content_hash": "f5a0b52db0122bba1e73ddb8f6accded3dac746f90e723a83558d0a24aa2f7c9",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Nach mutmaßlichen Sabotageakten an Stromnetzen in Brandenburg und bei Köln berichtet die hessenschau, dass Hessens Innenminister Roman Poseck keine Hinweise auf vergleichbare Taten in Hessen sieht. Zugleich würden die Sicherheitsvorkehrungen erhöht; als Beispiel nennt der Beitrag den Main-Kinzig-Kreis.\n\nDer Text beschreibt außerdem, dass Betreiber kritischer Infrastruktur für die Sicherung ihrer Anlagen grundsätzlich selbst verantwortlich sind und sich mit den zuständigen Landesministerien austauschen. Genannt wird, dass die Kreiswerke Main-Kinzig den Schutz ihrer Anlagen verstärken, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Konkrete Schutzkonzepte bleiben laut Innenministerium geheim.",
-      "analysis": {
-        "story_id": "wt-7ae0b9f22404b684",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Hessen erhöht nach mutmaßlicher Sabotage an Stromnetzen anderswo die Sicherung von Umspannwerken und anderen kritischen Anlagen. Konkrete Schutzdetails nennt die Quelle nicht.",
-        "detail_summary": "Gesichert ist zunächst nur, dass das Land Hessen nach den mutmaßlichen Sabotageakten in Brandenburg und bei Köln seine Sicherheitsvorkehrungen rund um kritische Infrastruktur verstärkt. Der Beitrag nennt als Beispiel den Main-Kinzig-Kreis, wo die Kreiswerke ihren Schutz für drei Umspannwerke hochfahren. Für die Einordnung ist das relevant, weil Stromversorgung und kritische Infrastruktur systemisch verwundbar sind und zusätzliche Sicherung Kosten, Abläufe und Zuständigkeiten verändert. Ein möglicher Wirkpfad verläuft über mehr Präsenz, höhere Abschreckung und weniger Angriffsgelegenheiten; zugleich können Aufwand, Geheimhaltung und Koordinationsbedarf steigen. Ob dadurch tatsächlich Angriffe verhindert oder Risiken nur verlagert werden, bleibt offen. Belastbar belegt ist hier vor allem die Reaktion auf eine angespannte Sicherheitslage, nicht deren Wirksamkeit.",
-        "why_relevant": "Die Meldung beschreibt eine konkrete Reaktion auf mögliche Sabotage gegen kritische Energieinfrastruktur. Das kann Schutzstandards, operative Kosten und Resilienz von Versorgungssystemen betreffen.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Relevant für Versorgungssicherheit, aber der Beitrag belegt vor allem Vorsorge und keine eingetretene Versorgungsstörung in Hessen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; die Relevanz liegt primär bei Infrastruktur- und Sicherheitsfragen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Text berührt den Schutz kritischer Infrastruktur und die Frage staatlicher Sicherheitsvorsorge; konkrete demokratische Folgen bleiben offen."
-        },
-        "importance": "mittel",
-        "impact_potential": "Mehr Schutz an Umspannwerken kann die Verwundbarkeit kritischer Strominfrastruktur senken, erhöht aber auch laufenden Aufwand und organisatorische Komplexität.",
-        "impact_risks": [
-          "Mehr Sicherheitsmaßnahmen können Kosten und Personalbindung erhöhen.",
-          "Geheimhaltung begrenzt die öffentliche Nachprüfbarkeit einzelner Schutzkonzepte.",
-          "Risiken können sich räumlich verlagern statt insgesamt sinken."
-        ],
-        "mechanisms": [
-          "Erhöhte Präsenz und Schutzvorkehrungen sollen Angriffsmöglichkeiten verringern.",
-          "Abstimmung zwischen Betreibern und Landesbehörden kann Reaktionsfähigkeit erhöhen."
-        ],
-        "first_order": [
-          "Mehr Schutzmaßnahmen an Umspannwerken und anderen Anlagen.",
-          "Mehr Abstimmung zwischen Betreiber und Behörden."
-        ],
-        "second_order": [
-          "Höhere Betriebskosten und mehr organisatorischer Aufwand.",
-          "Mögliche Abschreckung oder Verlagerung von Risiken."
-        ],
-        "third_order": [
-          "Falls die Lage länger anhält, könnte sich ein dauerhaft höherer Standard für kritische Infrastruktur herausbilden."
-        ],
-        "systemic_relevance": "Die Meldung betrifft kritische Energieinfrastruktur, also einen Bereich mit hoher Systemrelevanz für Versorgung und Sicherheit.",
-        "transformation_potential": "Begrenzt bis mittel: Die Quelle zeigt eine defensive Anpassung, aber keinen strukturellen Umbau des Energiesystems.",
-        "resilience": "Resilienz kann kurzfristig steigen, wenn Schutz und Lagebeobachtung verbessert werden; die Dauerwirkung ist jedoch ungesichert.",
-        "side_effects": [
-          "Mehr Geheimhaltung erschwert externe Kontrolle.",
-          "Zusätzliche Sicherung kann Ressourcen von anderer Prävention abziehen."
-        ],
-        "uncertainties": [
-          "Es bleibt offen, ob es in Hessen konkrete Vorfälle gab.",
-          "Unklar ist, wie stark und an welchen Standorten die Schutzmaßnahmen erhöht werden.",
-          "Die tatsächliche Wirksamkeit der Maßnahmen ist aus der Quelle nicht belegt."
-        ],
-        "evidence_level": "single-source, journalistisch plausibel, aber ohne unabhängige Bestätigung der Kernlage in Hessen.",
-        "attribution": "Die Angaben beruhen auf einem hessenschau-Bericht und darin zitierten Aussagen des Innenministers sowie eines Kreiswerkssprechers.",
-        "watch_next": [
-          "Ob Hessen weitere konkrete Maßnahmen oder Lageeinschätzungen veröffentlicht.",
-          "Ob es zu bestätigten Vorfällen oder Störungen in Hessen kommt."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 7",
-          "Agenda 2030/SDG 9",
-          "Agenda 2030/SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "implementation",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Die Meldung enthält eine neue, konkret zurechenbare Schutzreaktion auf Sabotagevorfälle und betrifft kritische Energieinfrastruktur mit systemischer Relevanz."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "Umspannwerke im Beispielkreis",
-              "value": "drei",
-              "unit": "Anlagen",
-              "context": "Genannt werden drei Umspannwerke im Main-Kinzig-Kreis."
-            }
-          ],
-          "affected_groups": [
-            "kommunen",
-            "staat",
-            "unternehmen",
-            "verbraucherinnen"
-          ],
-          "tendency": {
-            "human": "gemischt",
-            "planet": "offen",
-            "democracy": "gemischt"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-03T23:06:38.718Z",
-          "content_hash": "f5a0b52db0122bba1e73ddb8f6accded3dac746f90e723a83558d0a24aa2f7c9",
-          "source_summary": "Nach mutmaßlichen Sabotageakten an Stromnetzen in Brandenburg und bei Köln berichtet die hessenschau, dass Hessens Innenminister Roman Poseck keine Hinweise auf vergleichbare Taten in Hessen sieht. Zugleich würden die Sicherheitsvorkehrungen erhöht; als Beispiel nennt der Beitrag den Main-Kinzig-Kreis.\n\nDer Text beschreibt außerdem, dass Betreiber kritischer Infrastruktur für die Sicherung ihrer Anlagen grundsätzlich selbst verantwortlich sind und sich mit den zuständigen Landesministerien austauschen. Genannt wird, dass die Kreiswerke Main-Kinzig den Schutz ihrer Anlagen verstärken, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Konkrete Schutzkonzepte bleiben laut Innenministerium geheim.",
-          "analysis": {
-            "story_id": "wt-7ae0b9f22404b684",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Hessen erhöht nach mutmaßlicher Sabotage an Stromnetzen anderswo die Sicherung von Umspannwerken und anderen kritischen Anlagen. Konkrete Schutzdetails nennt die Quelle nicht.",
-            "detail_summary": "Gesichert ist zunächst nur, dass das Land Hessen nach den mutmaßlichen Sabotageakten in Brandenburg und bei Köln seine Sicherheitsvorkehrungen rund um kritische Infrastruktur verstärkt. Der Beitrag nennt als Beispiel den Main-Kinzig-Kreis, wo die Kreiswerke ihren Schutz für drei Umspannwerke hochfahren. Für die Einordnung ist das relevant, weil Stromversorgung und kritische Infrastruktur systemisch verwundbar sind und zusätzliche Sicherung Kosten, Abläufe und Zuständigkeiten verändert. Ein möglicher Wirkpfad verläuft über mehr Präsenz, höhere Abschreckung und weniger Angriffsgelegenheiten; zugleich können Aufwand, Geheimhaltung und Koordinationsbedarf steigen. Ob dadurch tatsächlich Angriffe verhindert oder Risiken nur verlagert werden, bleibt offen. Belastbar belegt ist hier vor allem die Reaktion auf eine angespannte Sicherheitslage, nicht deren Wirksamkeit.",
-            "why_relevant": "Die Meldung beschreibt eine konkrete Reaktion auf mögliche Sabotage gegen kritische Energieinfrastruktur. Das kann Schutzstandards, operative Kosten und Resilienz von Versorgungssystemen betreffen.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Relevant für Versorgungssicherheit, aber der Beitrag belegt vor allem Vorsorge und keine eingetretene Versorgungsstörung in Hessen."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; die Relevanz liegt primär bei Infrastruktur- und Sicherheitsfragen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Der Text berührt den Schutz kritischer Infrastruktur und die Frage staatlicher Sicherheitsvorsorge; konkrete demokratische Folgen bleiben offen."
-            },
-            "importance": "mittel",
-            "impact_potential": "Mehr Schutz an Umspannwerken kann die Verwundbarkeit kritischer Strominfrastruktur senken, erhöht aber auch laufenden Aufwand und organisatorische Komplexität.",
-            "impact_risks": [
-              "Mehr Sicherheitsmaßnahmen können Kosten und Personalbindung erhöhen.",
-              "Geheimhaltung begrenzt die öffentliche Nachprüfbarkeit einzelner Schutzkonzepte.",
-              "Risiken können sich räumlich verlagern statt insgesamt sinken."
-            ],
-            "mechanisms": [
-              "Erhöhte Präsenz und Schutzvorkehrungen sollen Angriffsmöglichkeiten verringern.",
-              "Abstimmung zwischen Betreibern und Landesbehörden kann Reaktionsfähigkeit erhöhen."
-            ],
-            "first_order": [
-              "Mehr Schutzmaßnahmen an Umspannwerken und anderen Anlagen.",
-              "Mehr Abstimmung zwischen Betreiber und Behörden."
-            ],
-            "second_order": [
-              "Höhere Betriebskosten und mehr organisatorischer Aufwand.",
-              "Mögliche Abschreckung oder Verlagerung von Risiken."
-            ],
-            "third_order": [
-              "Falls die Lage länger anhält, könnte sich ein dauerhaft höherer Standard für kritische Infrastruktur herausbilden."
-            ],
-            "systemic_relevance": "Die Meldung betrifft kritische Energieinfrastruktur, also einen Bereich mit hoher Systemrelevanz für Versorgung und Sicherheit.",
-            "transformation_potential": "Begrenzt bis mittel: Die Quelle zeigt eine defensive Anpassung, aber keinen strukturellen Umbau des Energiesystems.",
-            "resilience": "Resilienz kann kurzfristig steigen, wenn Schutz und Lagebeobachtung verbessert werden; die Dauerwirkung ist jedoch ungesichert.",
-            "side_effects": [
-              "Mehr Geheimhaltung erschwert externe Kontrolle.",
-              "Zusätzliche Sicherung kann Ressourcen von anderer Prävention abziehen."
-            ],
-            "uncertainties": [
-              "Es bleibt offen, ob es in Hessen konkrete Vorfälle gab.",
-              "Unklar ist, wie stark und an welchen Standorten die Schutzmaßnahmen erhöht werden.",
-              "Die tatsächliche Wirksamkeit der Maßnahmen ist aus der Quelle nicht belegt."
-            ],
-            "evidence_level": "single-source, journalistisch plausibel, aber ohne unabhängige Bestätigung der Kernlage in Hessen.",
-            "attribution": "Die Angaben beruhen auf einem hessenschau-Bericht und darin zitierten Aussagen des Innenministers sowie eines Kreiswerkssprechers.",
-            "watch_next": [
-              "Ob Hessen weitere konkrete Maßnahmen oder Lageeinschätzungen veröffentlicht.",
-              "Ob es zu bestätigten Vorfällen oder Störungen in Hessen kommt."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7",
-              "Agenda 2030/SDG 9",
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "implementation",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Die Meldung enthält eine neue, konkret zurechenbare Schutzreaktion auf Sabotagevorfälle und betrifft kritische Energieinfrastruktur mit systemischer Relevanz."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Umspannwerke im Beispielkreis",
-                  "value": "drei",
-                  "unit": "Anlagen",
-                  "context": "Genannt werden drei Umspannwerke im Main-Kinzig-Kreis."
-                }
-              ],
-              "affected_groups": [
-                "kommunen",
-                "staat",
-                "unternehmen",
-                "verbraucherinnen"
-              ],
-              "tendency": {
-                "human": "gemischt",
-                "planet": "offen",
-                "democracy": "gemischt"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-7ae0b9f22404b684-v1-claim-1",
-              "story_id": "wt-7ae0b9f22404b684",
-              "claim": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Innenminister Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-                  "excerpt_hash": "94ca688bb0dc88995025",
-                  "checked_at": "2026-09-03T23:06:38.718Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            },
-            {
-              "claim_id": "wt-7ae0b9f22404b684-v1-claim-2",
-              "story_id": "wt-7ae0b9f22404b684",
-              "claim": "Hessen erhöht nach den jüngsten Vorfällen die Sicherheitsvorkehrungen für Umspannwerke und andere kritische Anlagen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-                  "excerpt_hash": "f3d85385188c0430fe09",
-                  "checked_at": "2026-09-03T23:06:38.718Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-                  "excerpt_hash": "ca796be7543cc52ea539",
-                  "checked_at": "2026-09-03T23:06:38.718Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            },
-            {
-              "claim_id": "wt-7ae0b9f22404b684-v1-claim-3",
-              "story_id": "wt-7ae0b9f22404b684",
-              "claim": "Die Kreiswerke Main-Kinzig verstärken den Schutz ihrer wichtigen Anlagen, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-                  "excerpt_hash": "bdf0d3ceeb19ea6b7ab5",
-                  "checked_at": "2026-09-03T23:06:38.718Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-                  "excerpt_hash": "9d563b12e44722b1c3a4",
-                  "checked_at": "2026-09-03T23:06:38.718Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            },
-            {
-              "claim_id": "wt-7ae0b9f22404b684-v1-claim-4",
-              "story_id": "wt-7ae0b9f22404b684",
-              "claim": "Das Innenministerium äußert sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten oder einzelnen Vorkehrungen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-                  "excerpt_hash": "af6cda179ad68f15d213",
-                  "checked_at": "2026-09-03T23:06:38.718Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-                  "excerpt_hash": "ca796be7543cc52ea539",
-                  "checked_at": "2026-09-03T23:06:38.718Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-03T23:06:38.718Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-              "content_hash": "48fadfbec20983dd34fca3250fdf9deeb65bc656c78bfbd2fdc7ac7de4f78f36"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-03T23:06:38.718Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "3c99358aab8c11c0d874fe70d1a42ec064cdde8a30442a12e15cc40390f21010"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "610a15ea7a97697444ff5f2e9ec89a1ff5b5a801faf8b070dc105d40d0b2b870"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "d04bfff4674d44598bb30ce09bf3331bc9d8dcf03fbf5cb5c23b9fc83b685092"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-7a234ce31ca8915b-source.png",
-          "sha256": "7a234ce31ca8915b62bc81965cae7a646b60a47bde6b3f1fde244b469974805c",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-04T10:17:43.034Z"
-        },
-        "fingerprint": "1d01003fa567cea090146831e10de5419c95444d095fc480d341361bf5859f93",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T10:18:36.540Z",
-        "status": "generated"
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "f5a0b52db0122bba1e73ddb8f6accded3dac746f90e723a83558d0a24aa2f7c9",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-            "summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln hat Innenminister Poseck versichert, dass es keine Hinweise auf vergleichbare Taten in Hessen gebe. Dennoch werden die Sicherheitsvorkehrungen erhöht - wie etwa das Beispiel Main-Kinzig-Kreis zeigt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T09:36:10.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "48fadfbec20983dd34fca3250fdf9deeb65bc656c78bfbd2fdc7ac7de4f78f36",
-            "source_item_id": "3187d00b390be8458dae3f1af39e3bb4150df677410a9cfc22b754ccb8c28e51",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T09:36:10.000Z",
-            "ingested_at": "2026-09-03T23:06:06.352Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-a77b5d9b2935de2a",
@@ -50634,7 +50509,7 @@
       "verification_started_at": "2026-09-03T22:37:04.322Z",
       "publish_ready_at": "2026-09-03T22:37:15.098Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -50980,50 +50855,7 @@
         "generated_at": "2026-09-04T10:19:24.500Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "242e262fcef9a2b5aa5f07b2a17ef6c490328cd64b8b2f580c10e9bbffb9b3f3",
-        "sources": [
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell/rheinland-pfalz/kaiserslautern/bgh-gericht-beendet-streit-um-gema-gebuehren-in-suedwestpfalz-seniorenheim-100.html",
-            "title": "TV im Seniorenheim-Zimmer in Dahn: Keine zusätzliche GEMA-Lizenz nötig",
-            "summary": "Ein Seniorenheim in Dahn braucht für die Weiterleitung von TV-Programmen im Haus keine zusätzliche GEMA-Lizenz. Das hatte der Europäische Gerichtshof entschieden. Jetzt hat der Bundesgerichtshof dieses Urteil bestätigt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:33:02.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "0a42f8ee46e833ae5ddc88240167364df518ddcf5f4dce11337c9eec3f6a06fc",
-            "source_item_id": "720c9cf1b295cfd969758403a31645bd45a865cf93f5a9ffe497471ded7a1d27",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:33:02.000Z",
-            "ingested_at": "2026-09-03T22:36:32.459Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-57bcbc8dea706471",
@@ -51824,7 +51656,7 @@
       "verification_started_at": "2026-09-03T22:22:35.442Z",
       "publish_ready_at": "2026-09-03T22:22:49.015Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -52176,50 +52008,7 @@
         "generated_at": "2026-09-04T10:57:57.370Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T14:06:39.469Z",
-        "content_hash": "fbee009031ba15d44ffc3958900730222392ff7a74481082d4fa95240ed042ca",
-        "sources": [
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
-            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
-            "summary": "Neues Lagezentrum, schnellere Gesetze: Nach dem Angriff auf das Stromnetz will Brandenburg die Sicherheit von kritischer Infrastruktur erhöhen. Anlagen-Betreiber sollen sich selbst schützen können.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:30:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "c5581a1f3fbb5e5cd09ad6e246e7d570e44227c064de6684bb4cd734e285f3e2",
-            "source_item_id": "2e4a09c705f16510810b9505567dab853ce3a641b63549edaf04cb1a341f4869",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:30:00.000Z",
-            "ingested_at": "2026-09-04T14:06:39.469Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-98ff7e403362fdf9",
@@ -70043,5 +69832,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T14:06:39.469Z"
+  "public_updated_at": "2026-09-04T14:12:28.186Z"
 }

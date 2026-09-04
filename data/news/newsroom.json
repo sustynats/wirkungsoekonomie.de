@@ -181559,7 +181559,242 @@
         "AI_EVIDENCE_INSUFFICIENT"
       ],
       "rationale": "Nur eine Sekundärquelle ohne unabhängige Bestätigung oder Primärbeleg für die Arbeitsmarktzahlen und den Kontext."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-7acb200563821341",
+      "event_id": "event-a36220157597c56a52fe",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Sekundärquelle ohne unabhängige Bestätigung; der Kern beruht auf einer Schlagzeile und einem kurzen Abstract."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-fd5875ad8a2bb508",
+      "event_id": "event-ace669e887231fac82e7",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Quelle schildert vor allem ein Interview und eine Einordnung ohne klaren neuen Ereigniskern, belastbare Entscheidung oder materiell neue Zustandsänderung."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-9812656e38b0d665",
+      "event_id": "event-f27aeef64f1f2b4c573e",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Meldung wiederholt die bereits veröffentlichte Ankündigung zu Sicherheitszentrum, schnellerer Gesetzgebung und Betreiber-Schutz; es fehlt eine substanziell neue, materiale Entwicklung."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-a416364f223ac3fc",
+      "event_id": "event-dc0ea6a5d87506732af2",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Gegenüber der Erstmeldung kommen neue, berichtenswerte Details zu Ausbreitung, Einsatzumfang, Verletzung und Abschluss der Löscharbeiten hinzu."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-a77b5d9b2935de2a",
+      "event_id": "event-b802f916d71dbcbf3d44",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Angaben wiederholen die bereits veröffentlichte Kernmeldung zum BGH-Urteil ohne neue belastbare Tatsachen oder substantiell bessere Einordnung."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "event_id": "event-ebbcaeb2f5de9babbe87",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Quelle wiederholt bereits erfasste Entlastungsmaßnahmen ohne neue belastbare Information, neue Entscheidung oder substanziell bessere Belege gegenüber dem bestehenden Tickerstand."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-c84116529aa2d23b",
+      "event_id": "event-e07f28d8aeff022b18e1",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen denselben Studienbefund ohne neue belastbare Information gegenüber der bereits veröffentlichten Fassung."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-a39369745f4e5cef",
+      "event_id": "event-75496d991aeece90e2e0",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt die bereits publizierte Zusage über 110 Millionen Euro und nennt keine neue materielle Entwicklung gegenüber der bestehenden Erstmeldung."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-7ae0b9f22404b684",
+      "event_id": "event-75bee49c92987065ab05",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Neue, materialle Information über verschärfte Sicherheitsvorkehrungen an kritischer Energieinfrastruktur; derzeit nur single-source belegt, aber hinreichend konkret für eine vorsichtige Erstmeldung."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-e01001c00cf12041",
+      "event_id": "event-b59292667fc88bb33e5f",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre Quelle liegt vor; der genaue Inhalt der richterlichen Entscheidung und eine unabhängige Bestätigung fehlen."
+    },
+    {
+      "at": "2026-09-04T14:12:28.186Z",
+      "story_id": "wt-61d3420f0dd76f70",
+      "event_id": "event-0059d4df349b8d2350cf",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen nur den bereits veröffentlichten Stand: erneute Anrufung des Supreme Court, keine neue Entscheidung oder materiell neue Entwicklung."
     }
   ],
-  "updated_at": "2026-09-04T14:06:39.469Z"
+  "updated_at": "2026-09-04T14:12:28.186Z"
 }
