@@ -1,7 +1,116 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T14:36:55.366Z",
+  "updated_at": "2026-09-04T15:06:23.805Z",
   "stories": [
+    {
+      "story_id": "wt-f2edeab46d126d83",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-e4a7abfbde025a9d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-2a4d0a984def3140-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-1891c81a9186f849-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+      "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+      "source_summary": "Der Bericht meldet, dass die Hackergruppe Rhysida nach einem Angriff auf das Berliner Landesnetz Daten im Darknet zum Download angeboten habe. Zuvor sei eine von der Berliner Senatsverwaltung gesetzte Zahlungsfrist abgelaufen. Nach rbb-Informationen sollen rund 1,4 Millionen Datensätze in mehreren Paketen zugänglich gemacht worden sein.\n\nDie Quelle nennt als mögliche Inhalte unter anderem Arbeitszeugnisse, Ausschreibungen, Beurteilungen und Personalakten. Zugleich heißt es, die Angaben ließen sich zunächst nicht überprüfen; auch sei unklar, ob es sich um die gesamte Menge der Anfang August erbeuteten Daten handelt. Experten hätten gewarnt, die Hacker könnten sensible Daten verkaufen.",
+      "summary": "Rhysida soll nach Ablauf einer Frist Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht haben. Umfang und genaue Inhalte sind laut Bericht noch nicht verifiziert.",
+      "detail_summary": "Gesichert nach der vorliegenden Quelle ist vor allem der behauptete Veröffentlichungsschritt der Hackergruppe Rhysida im Darknet nach Ablauf einer gesetzten Frist. Der Vorgang ist materiell, weil er von einem bloßen Datendiebstahl in eine potenzielle Verbreitung sensibler Verwaltungs- und Personaldaten übergeht. Der Wirkpfad liegt in der möglichen Weiterveräußerung, Vervielfältigung oder gezielten Nutzung der Daten gegen Betroffene und Verwaltung. Als mögliche Folge nennt die Quelle eine Veröffentlichung von Arbeitszeugnissen, Ausschreibungen, Beurteilungen und Personalakten; zugleich bleibt offen, ob diese Ordner tatsächlich vollständig und echt sind. Die Evidenz ist jedoch begrenzt, weil die Angaben zunächst nicht überprüfbar waren und nur eine Quelle vorliegt. Deshalb ist die Lage als laufende Entwicklung mit offenem Umfang und offener technischer Verifikation zu behandeln.",
+      "why_relevant": "Der Vorgang betrifft mögliche sensible Verwaltungsdaten, Datenschutz, Verwaltungskontinuität und das Vertrauen in digitale staatliche Infrastrukturen.",
+      "topic": [
+        "Digitalisierung",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen für Beschäftigte und weitere Betroffene durch Veröffentlichung oder Weiterverwertung sensibler Daten sind naheliegend, aber noch nicht verifiziert."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf ein Landesnetz und mögliche Datenoffenlegung berührt Verwaltungssicherheit, Datenschutz und die Funktionsfähigkeit öffentlicher Institutionen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Datenmenge laut Bericht",
+            "value": "1,4 Millionen",
+            "unit": "Datensätze",
+            "context": "Zugänglich gemachte Daten laut rbb-Informationen"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-04T14:37:53.000Z",
+      "last_updated": "2026-09-04T15:07:05.912Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-9ce6682a9f1a77ee5f1d",
+      "source_published_at": "2026-09-04T14:37:53.000Z",
+      "published_at": "2026-09-04T15:07:05.912Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob weitere Stellen die Darknet-Veröffentlichung und den Umfang der Daten unabhängig bestätigen.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Berichte oder technische Belege zur Veröffentlichung im Darknet",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fbac489cdc45dae6",
+          "announced_at": "2026-09-04T14:37:53.000Z",
+          "follow_up_date": "2026-09-11T15:07:05.912Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:37:53.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-d02cf2fc303cef4f",
       "title_image": {
