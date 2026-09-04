@@ -9,6 +9,13 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ## 2026-09-03
 
+### 2026-09-04 · Codex · Wirkungsticker: Merken und Wisch-Leseweg
+- **Was:** Merken direkt auf jeder Nachrichtenkarte und zusätzlich am Detailseitenende; dieselben `WoekUserSpace`-Einträge, Konto-Synchronisierung und Entfernen-aus-Sammlungen wie bisher. Gemeinsamer Buttonzustand und Link zur bestehenden Merkliste, keine zweite Datensammlung.
+- **Navigation:** Links wischen öffnet die nächste Meldung, rechts den tatsächlichen vorherigen Lese-Schritt (Übersicht → A → B → A → Übersicht). Direkteinstieg fällt sicher auf die Übersicht zurück. Browser-History bleibt erhalten; Abschnittslinks erzeugen keine Schein-Seiten. Rückkehr stellt Filter, nachgeladene Karten und Scrollposition wieder her.
+- **Schutz:** Vertikal-/Mehrfinger-/Zoom-Gesten, Textauswahl, Formulare, Links, horizontale Scrollbereiche und sichtbare Dialoge bleiben unbeeinträchtigt; Bildschirmränder bleiben nativen Browsergesten vorbehalten. Sichtbare Navigation bleibt als Alternative vorhanden.
+- **Geprüft:** 135 News-Tests einschließlich 10 neuer Leseweg-/Merken-Tests; News-Build/Validator, Suchindex/Taxonomie, 390px-Browser ohne Überlauf/JS-Fehler. Karten-Merken → Detailzustand → bestehende Merkliste und Wischfolge mit Wiederherstellung von Scrollposition 5057 geprüft. Keine Filter-, Quellen-, Budget- oder Hostingänderung.
+- **Kostenbeobachtung:** Zusätzliche tägliche Codex-Beobachtung um 09:00 eingerichtet (braucht laufende Desktop-App); serverseitige Kostenerfassung und 25-EUR-KI-Grenze bleiben unabhängig davon. Richtwert 1 EUR/Tag, kein stilles Anheben auf 30 EUR.
+
 ### 2026-09-04 · Codex · Automatische Titelbilder und App-Abschluss
 - **Was:** Claudes Titelbildsystem unverändert als Basis, offizielle Higgsfield-CLI 1.1.24/Nano Banana Pro auf Oracle; persistente Originale/Job-ID/Creditreservierung; konservative Moduswahl, OCR, Fallback; drei Größen über gepinntes Chrome/DevTools; immutable GitHub-Releases, sichere öffentliche Metadaten. Einmalig beauftragter Backfill mit dauerhafter Restqueue.
 - **App:** freiwilliger Erstbesuch-Push-Hinweis, keine generischen Begriffsfragen im Ticker, Leserinformation statt öffentlicher Kostenregeln. Teilen und Rückkehrposition bleiben erhalten.
