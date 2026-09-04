@@ -7,6 +7,7 @@ import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { CanonicalMethodExplainer } from "@/app/components/CanonicalMethodExplainer";
 import { ImpactVisualMethod } from "@/app/components/impact-visuals/ImpactVisualMethod";
 import { listPublishedCases } from "@/lib/cases";
+import { monitorCopy, MonitorContext } from "@/app/components/MonitorContext";
 
 const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string; empty: string }> = {
   bundestag: { eyebrow: "Deutscher Bundestag", title: "Entscheidungen des Bundestages verständlich prüfen", lead: "Ein unabhängiges Portal des Instituts für Wirkungsökonomie zu Entscheidungen des Deutschen Bundestages. Amtliche Tatsachen und eigene fachliche Einordnung bleiben dabei klar getrennt.", empty: "Sobald ein Vorgang die Veröffentlichungsprüfung erfüllt, erscheint er hier mit Quellen und nachvollziehbarem Status." },
@@ -14,7 +15,7 @@ const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string
   "im-verfahren": { eyebrow: "Parlamentsradar", title: "Laufende parlamentarische Verfahren", lead: "Jeder Verfahrensschritt wird nur angezeigt, wenn er durch eine parlamentarische Originalquelle belegt ist. Der Stand des Verfahrens und der Stand der WÖk-Analyse werden getrennt gezeigt.", empty: "Sobald ein laufendes Verfahren die Veröffentlichungsprüfung erfüllt, erscheint es hier." },
   entscheidungen: { eyebrow: "Wirkungschecks", title: "Vorgänge und Wirkungschecks", lead: "Jede Seite zeigt getrennt, was amtlich belegt ist, welche Fragen die WÖk untersucht und was noch offen ist. Erst mit belastbaren Quellen, Annahmen und Grenzen wird eine fachliche Einordnung veröffentlicht.", empty: "Veröffentlichte Wirkungschecks erscheinen hier mit ihrer Quellen-, Analyse- und Evidenzlage." },
   historie: { eyebrow: "Historische Wirkungschecks", title: "Damals entscheiden. Heute lernen.", lead: "Historische Checks stellen zwei Perspektiven nebeneinander: Was war zum Zeitpunkt der Entscheidung bekannt? Und was lässt sich heute beobachten und der Entscheidung belastbar zurechnen? Späteres Wissen wird nicht als damaliges Wissen ausgegeben.", empty: "Der historische Bereich erläutert die Rückschau-Methode. Veröffentlichte Fälle ergänzen den Zeitstrahl mit Quellen, Beobachtungen und Lernpunkten." },
-  monitor: { eyebrow: "Wirkungsmonitor", title: "Nach einer Entscheidung beobachten und lernen", lead: "Monitoring sammelt fortlaufend Daten. Eine spätere Evaluation prüft zusätzlich, warum sich etwas verändert hat und welchen Beitrag eine Entscheidung dazu geleistet hat. Eine einzelne Kennzahl ist deshalb noch kein Wirkungsnachweis.", empty: "Monitorfälle erscheinen mit Ausgangswert, Datenquelle, erwarteter Veränderung, Beobachtungszeitraum und einem Anlass für die erneute Prüfung." },
+  monitor: monitorCopy,
   werkzeuge: { eyebrow: "Werkzeugkasten", title: "WÖk-Werkzeuge für die parlamentarische Prüfung", lead: "Das Portal verlinkt auf bestehende Methoden und zeigt ihren Reifegrad. Eine Demo ist keine automatische Fachentscheidung.", empty: "Die verbindliche Zuordnung zum führenden WÖMS 2.0 wird kontrolliert importiert." },
   methodik: { eyebrow: "Entscheidungsstandard", title: "Wirkungen prüfen, ohne Politik zu ersetzen", lead: "Politik prüft Folgen bereits heute. Die Wirkungsökonomie verbindet und erweitert diese Arbeit: Sie trennt Fakten, Wirkungspotenzial, beobachtete Zustandsveränderung, Zurechnung, Bewertung und spätere Rückkopplung.", empty: "Die Methodik ist offen dokumentiert und wird je Veröffentlichung versioniert." },
   transparenz: { eyebrow: "Über das Portal", title: "Vertrauen entsteht durch nachvollziehbare Arbeit", lead: "Wer das Portal herausgibt, was seine Einordnung leisten kann, worauf sie beruht – und wo ihre Grenzen liegen.", empty: "Die Angaben zum Portal werden fortlaufend ergänzt und versioniert." }
@@ -38,7 +39,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
       {section === "methodik" && <><Methodology /><section id="werkzeuge"><p className="eyebrow">{sectionCopy.werkzeuge.eyebrow}</p><h2>{sectionCopy.werkzeuge.title}</h2><p className="lead">{sectionCopy.werkzeuge.lead}</p><Toolbox /></section></>}
       {section === "transparenz" && <Transparency />}
       {section === "werkzeuge" && <Toolbox />}
-      {section === "monitor" && <Monitor />}
+      {section === "monitor" && <MonitorContext />}
       {cases.length > 0 ? <div className={section === "entscheidungen" ? "case-register-list" : "card-grid"}>{cases.map((item) => section === "entscheidungen" ? <CaseRegisterRow item={item} key={item.slug} /> : <CaseCard item={item} key={item.slug} />)}</div> : !hasStandaloneContent && <div className="notice"><strong>{content.empty}</strong></div>}
       <p className="page-return"><Link href="/">← Zur Portalstartseite</Link></p>
     </div>
@@ -186,8 +187,4 @@ function Transparency() {
 
 function Toolbox() {
   return <section className="notice"><strong>Bestehenden WÖk-Werkzeugkasten nutzen.</strong><p>Der vollständige Katalog bleibt auf <a href="https://wirkungsoekonomie.de/werkzeuge/">wirkungsoekonomie.de/werkzeuge</a>. Der parlamentarische Kontext übernimmt nur klar gekennzeichnete Methoden und keine unbestätigten Tool-Backends.</p></section>;
-}
-
-function Monitor() {
-  return <section className="notice"><strong>Monitoring beobachtet. Evaluation erklärt.</strong><p>Für jeden Monitorfall werden Ausgangswert, erwartete Veränderung, Umsetzungs- und Wirkungsindikator, Quelle, Zeitbezug und betroffene Gruppen sichtbar. Vorab wird außerdem festgelegt, bei welchen späteren Ergebnissen Maßnahme oder Analyse erneut geprüft werden müssen. Diese Überprüfungsschwellen heißen Korrekturtrigger.</p></section>;
 }

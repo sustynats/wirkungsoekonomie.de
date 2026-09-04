@@ -1,7 +1,395 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T15:51:24.598Z",
+  "updated_at": "2026-09-04T16:21:44.537Z",
   "stories": [
+    {
+      "story_id": "wt-0b6279d05f195d31",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0b6279d05f195d31-aa8b17a2c19df5d1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0b6279d05f195d31-60ef491607e25851-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0b6279d05f195d31-72098b08ce68ad5a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "us-unternehmen-schaffen-im-august-mehr-arbeitsplatze-195d31",
+      "title": "US-Unternehmen schaffen im August mehr Arbeitsplätze",
+      "source_summary": "Die Meldungen berichten übereinstimmend über US-Arbeitsmarktdaten für August. Laut US-Arbeitsministerium stieg die Zahl der Beschäftigten außerhalb der Landwirtschaft um 162.000, was als besser als erwartet beschrieben wird.\n\nEine der Meldungen ergänzt, dass das Weiße Haus die Zahlen in Onlinenetzwerken mit einem Foto von Präsident Donald Trump kommentierte. Die zweite Fassung betont zudem, der Arbeitsmarkt habe sich robuster erwiesen als erwartet und Trump habe den Druck auf die Fed erhöht. Weitere Details zu Methodik, Revisionen oder Folgen nennt das Material nicht.",
+      "summary": "US-Arbeitsmarktdaten aus August zeigen laut Bericht einen Zuwachs von 162.000 Stellen außerhalb der Landwirtschaft. Das Weiße Haus reagierte darauf online mit einem Trump-Foto.",
+      "detail_summary": "Gesichert ist aus den gelieferten Texten vor allem der August-Wert für den US-Arbeitsmarkt: Die Zahl der Beschäftigten außerhalb der Landwirtschaft stieg um 162.000 und wurde als besser beziehungsweise robuster als erwartet eingeordnet. Zusätzlich wird berichtet, dass das Weiße Haus die Daten in Onlinenetzwerken kommentierte und Trump den Druck auf die Fed erhöhte. Für die redaktionelle Einordnung ist das eine neue Zustandsinformation über den Arbeitsmarkt, aber zunächst nur in Form einer sekundär berichteten Statistik. Materiell relevant ist sie, weil Monatsdaten dieser Art Erwartungen an Zinsen, Konsum und Beschäftigung beeinflussen können. Eine belastbare Wirkung auf reale Entscheidungen ist daraus aber noch nicht ableitbar; dafür fehlen im Material Reaktionen, Folgedaten und methodische Details. Die Evidenz bleibt deshalb auf die gelieferte Sekundärquelle begrenzt.",
+      "why_relevant": "Der Bericht liefert neue US-Arbeitsmarktdaten mit möglichem Einfluss auf Zinserwartungen, Beschäftigung und Konjunkturbeobachtung.",
+      "topic": [
+        "Arbeit",
+        "Wirtschaft"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Arbeitsmarktdaten betreffen Beschäftigung und Einkommen vieler Menschen direkt und können Erwartungen am Arbeitsmarkt verändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Im gelieferten Material gibt es keinen direkten Bezug zu Umwelt- oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Reaktion des Weißen Hauses und der Druck auf die Fed berühren Geldpolitik und öffentliche Kommunikation."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Beschäftigte außerhalb der Landwirtschaft",
+            "value": "162.000",
+            "unit": "Personen",
+            "context": "Zuwachs im August laut US-Arbeitsministerium"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "unternehmen",
+          "investoren",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T13:50:27.000Z",
+      "last_updated": "2026-09-04T16:23:03.495Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8886cea1ae83e852bcec",
+      "source_published_at": "2026-09-04T13:50:27.000Z",
+      "published_at": "2026-09-04T16:23:03.495Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-unternehmen-schaffen-im-august-mehr-arbeitsplaetze-38209652.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:50:27.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-arbeitsmarkt-im-august-robuster--trump-droht-notenbank-fed-38209652.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:08:38.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-12a75e1a8e63deaa",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-a443b089c7ddd307-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-18ba7109302575b6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-2eba79c5deacf6f2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "cyberkriminalitat-hacker-veroffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-dark-63deaa",
+      "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+      "source_summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Deutschlandfunk berichtet unter Berufung auf mehrere Medien, die Hackergruppe Rhysida habe rund 1,4 Millionen Daten im Darknet bereitgestellt.\n\nLaut dem Bericht soll es darunter auch Informationen geben, die für die Sicherheit Berlins und Deutschlands relevant sind, etwa zu Zivilschutz und besonders zu schützenden Objekten. Genannt werden außerdem geheime Dokumente zu Rüstungsunternehmen, ein behaupteter unbemerkter Zugriff auf Berliner Verwaltungsnetze im August, eine Lösegeldforderung von rund zwei Millionen Euro und ein ausgelaufenes Ultimatum.",
+      "summary": "Nach einem Hackerangriff auf Berliner Verwaltungsnetze sollen Daten im Darknet veröffentlicht worden sein. Im Bericht ist außerdem von sensiblen Unterlagen, einer Lösegeldforderung und einem ausgelaufenen Ultimatum die Rede.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Meldung, dass nach einem Angriff auf Berliner Verwaltungsnetze Daten im Darknet veröffentlicht worden sein sollen; der Bericht nennt dafür die Gruppe Rhysida und rund 1,4 Millionen Daten. Relevanz entsteht vor allem, weil unter den abrufbaren Informationen auch sicherheitsrelevante Angaben zu Zivilschutz, Schutzobjekten und Rüstungsunternehmen genannt werden. Der Wirkpfad liegt weniger in der reinen Reichweite als in möglichen Folgeeffekten auf Schutz, Geheimhaltung und Erpressbarkeit öffentlicher Infrastruktur. Mögliche Folgen sind zusätzliche Sicherheitsprüfungen, organisatorische Nachbesserungen und ein erhöhtes Risiko für nachgelagerte Angriffe. Offen bleibt jedoch, welcher Teil der Daten tatsächlich verifiziert ist und wie groß der sensible Anteil ist; dafür liefert die Quelle nur einen begrenzten, sekundären Befund.",
+      "why_relevant": "Die Meldung betrifft potenziell sicherheitsrelevante Verwaltungsdaten und damit Informationsgrundlagen, Schutzmaßnahmen und die Resilienz staatlicher Infrastruktur.",
+      "topic": [
+        "Energie",
+        "Digitalisierung",
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen betreffen öffentliche Verwaltung, Schutzinfrastruktur und indirekt Bürgerinnen und Bürger über Sicherheits- und Vertrauensfragen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Planet-Bezug ist aus der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf Landesnetze und die Veröffentlichung sensibler Verwaltungsdaten berührt staatliche Funktionsfähigkeit und demokratische Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T16:14:15.000Z",
+      "last_updated": "2026-09-04T16:22:44.606Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-5af2c4bd0487548d3bd6",
+      "source_published_at": "2026-09-04T16:14:15.000Z",
+      "published_at": "2026-09-04T16:22:44.606Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-cb1584ee4d9e6a43",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cb1584ee4d9e6a43-c4c223bb1ea20dda-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cb1584ee4d9e6a43-c87ee19cee2c40e7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cb1584ee4d9e6a43-db9904f121fbc5e5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
+      "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+      "source_summary": "Die Quelle berichtet über Aussagen von NRW-Innenminister Herbert Reul zu einem Verdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen die deutsche Stromversorgung. Demnach hat die Polizei das Fahrzeug des Mannes in Niederzier gestürmt. Reul sagte in Düsseldorf, der Verdächtige sei nun vermutlich zu Fuß unterwegs und werde nicht weit kommen.\n\nDie Meldung benennt keine weiteren Details zum Tatverdacht, zum Zeitpunkt des Zugriffs oder zu einer Festnahme. Der Bericht ist als journalistische Darstellung einer politischen Aussage angelegt; ein eigener amtlicher Originaltext ist in den gelieferten Daten nicht enthalten.",
+      "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
+      "detail_summary": "Gesichert ist zunächst nur die berichtete Aussage von NRW-Innenminister Reul, dass die Polizei das Fahrzeug eines Verdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen die Stromversorgung gestürmt habe. Der in der Meldung genannte Ort ist Niederzier. Daraus ergibt sich eine neue, konkrete Verfahrenslage im laufenden Fall, weil ein polizeilicher Zugriff und eine veränderte Lage des Verdächtigen beschrieben werden. Materiell relevant ist das vor allem wegen möglicher Folgen für Fahndung, Gefahrenlage und Schutz der Energieinfrastruktur. Offen bleibt jedoch, ob die Darstellung bereits durch eine unabhängige Primärquelle bestätigt ist und ob es eine Festnahme oder weitere amtliche Angaben gibt.",
+      "why_relevant": "Ein polizeilicher Zugriff im mutmaßlichen Sabotagefall an der Stromversorgung betrifft öffentliche Sicherheit, Energieinfrastruktur und die laufende Fahndung.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen für öffentliche Sicherheit, Fahndung und Versorgungsschutz."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug aus den gelieferten Angaben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall betrifft staatliche Gefahrenabwehr und die öffentliche Information über Sabotageverdacht."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Ort des Zugriffs",
+            "value": "Niederzier",
+            "unit": "Ort",
+            "context": "Ort, an dem der Zugriff laut Meldung erfolgte"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "kommunen",
+          "unternehmen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T15:55:00.000Z",
+      "last_updated": "2026-09-04T16:09:09.120Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-99dc04c6baafcb8c9d9e",
+      "source_published_at": "2026-09-04T15:55:00.000Z",
+      "published_at": "2026-09-04T16:09:09.120Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Verdächtige festgenommen wurde oder weiter flüchtig ist.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung, Festnahme oder neue Fahndungsangaben",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bf7cba94844b3e5e",
+          "announced_at": "2026-09-04T15:55:00.000Z",
+          "follow_up_date": "2026-09-11T16:09:09.120Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/stromversorgung--reul--polizei-stuermt-fahrzeug-von-sabotage-verdaechtigem-38210002.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:55:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7122b10e5711a154",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-ce0c434198c639cd-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-26c7dca55074c3f2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-f29f2779b83e8df8-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "braucht-ki-eine-internationale-aufsichtsbehorde-11a154",
+      "title": "Braucht KI eine internationale Aufsichtsbehörde?",
+      "source_summary": "Die Quelle berichtet, dass Bundesdigitalminister Karsten Wildberger im Gespräch mit einem Portal eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle angeregt hat. Als Vorbild nennt er die Internationale Atomenergiebehörde. Genannt werden Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen als mögliche Aufgaben.\n\nDie Quelle ordnet den Vorschlag mit Einschätzungen von zwei Rechtswissenschaftlern ein. Ein Experte hält die Idee grundsätzlich für sinnvoll, verweist aber darauf, dass eine internationale Behörde keine eigenen Durchgriffsrechte hätte und auf Kooperation von Staaten und Unternehmen angewiesen wäre. Der andere betont, dass KI-Risiken anders als bei der Atomenergie vor allem über Sekundäreffekte, etwa in der IT-Sicherheit, entstehen. Offene Punkte sind der konkrete Zuschnitt, die Durchsetzbarkeit und die internationale Anschlussfähigkeit.",
+      "summary": "Wildberger schlägt eine internationale KI-Aufsicht nach IAEA-Vorbild vor. Die Quelle zeigt zugleich, dass Zuständigkeiten und Durchsetzung offen bleiben.",
+      "detail_summary": "Gesichert ist, dass Digitalminister Wildberger eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle ins Gespräch bringt und dabei auf Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen zielt. Das ist relevant, weil damit die Debatte von allgemeiner Regulierung zu einer möglichen neuen internationalen Institution verschoben wird. Der Wirkpfad läge über gemeinsame Regeln, Vorabtests und Vorfallmeldungen, also über präzisere Steuerung und schnellere Reaktion auf Risiken. Mögliche Folgen wären strengere internationale Koordination, aber auch Konflikte über Zuständigkeit, Verbindlichkeit und die Rolle von USA, China und EU. Die Quelle stützt diesen Vorschlag jedoch nur als journalistisch wiedergegebene ministerielle Position und ergänzt ihn mit Experteneinschätzungen; ob daraus tatsächlich eine tragfähige Institution entsteht, bleibt offen.",
+      "why_relevant": "Der Vorstoß betrifft mögliche künftige Regeln für KI-Sicherheit, internationale Koordination und die Verteilung von Regulierungsmacht.",
+      "topic": [
+        "Digitalisierung",
+        "KI"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "KI-Regeln können Sicherheit, Arbeitsabläufe und Haftungsfragen für viele Nutzer und Anbieter beeinflussen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen wird in der Quelle nicht hergestellt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Die Frage berührt internationale Regelsetzung, staatliche Kontrolle und demokratische Korrekturfähigkeit bei Hochrisiko-KI."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T15:54:00.000Z",
+      "last_updated": "2026-09-04T16:08:20.425Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-39a76d34400c9aa5a56b",
+      "source_published_at": "2026-09-04T15:54:00.000Z",
+      "published_at": "2026-09-04T16:08:20.425Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann die Bundesregierung aus dem Vorstoß konkrete internationale Verhandlungen oder einen Vorschlag ableitet.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Kabinetts-, Ministeriums- oder UN-/EU-Schritte zu KI-Aufsicht",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-899b31d44a02b221",
+          "announced_at": "2026-09-04T15:54:00.000Z",
+          "follow_up_date": "2026-09-11T16:08:20.425Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ki-modelle-kontrolle-karsten-wildberger-aufsichtsbehoerde-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:54:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b5e0a39f46388642",
       "title_image": {
