@@ -55,6 +55,7 @@
       "version": 3,
       "news_status": "developing",
       "event_id": "event-f2fa5659b171e222bce8",
+      "case_file": null,
       "source_published_at": "2026-09-03T19:03:18.000Z",
       "published_at": "2026-09-04T01:00:39.627Z",
       "evidence_groups": {
@@ -197,6 +198,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-0d32d40861dc356e70e6",
+      "case_file": null,
       "source_published_at": "2026-09-04T17:51:00.000Z",
       "published_at": "2026-09-04T18:22:57.645Z",
       "evidence_groups": {
@@ -248,7 +250,8 @@
       "detail_summary": "Gesichert ist zunächst, dass die Ermittlungen nach Sabotagevorwürfen an Umspannwerken weiterlaufen und sich die Polizei auf einen 48-jährigen Verdächtigen aus Gevelsberg konzentriert. In seinem Wohnhaus wurden sprengstoffverdächtige Gegenstände gefunden, zusätzlich wurde sein Fahrzeug gestürmt. Für die Nachricht relevant ist das wegen des betroffenen Systems: Stromnetzinfrastruktur kann bei Sabotage nicht nur lokal, sondern über Kraftwerksblöcke und Abschaltungen in Betrieb und Resilienz eingreifen. Als mögliche Folge kommen weitere Sicherheitsmaßnahmen, zusätzliche Ermittlungs- und Schutzkosten sowie ein erhöhtes Störungsrisiko für einzelne Anlagen in Betracht. Die Beleglage bleibt jedoch auf eine einzige journalistische Quelle begrenzt; die Täterschaft ist nach der Quelle nicht abschließend geklärt, daher bleiben Ursachen- und Wirkungsaussagen vorsichtig.",
       "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Schutz- und Folgekosten für ein systemrelevantes Versorgungsnetz.",
       "topic": [
-        "Energie"
+        "Energie",
+        "Gesellschaft"
       ],
       "status": "laufende Entwicklung",
       "analysis_type": "ex_ante",
@@ -273,6 +276,153 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-5fed0f90ee4fb60ffd0d",
+      "case_file": {
+        "case_id": "case-4dc00cde414b35",
+        "member_count": 14,
+        "publisher_count": 12,
+        "members": [
+          {
+            "story_id": "wt-03c6bacdda808696",
+            "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
+            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
+            "updated_at": "2026-09-04T18:22:40.051Z",
+            "published_at": "2026-09-04T18:22:40.051Z",
+            "kind": "Ermittlungsstand",
+            "current": true
+          },
+          {
+            "story_id": "wt-00fccb632042b492",
+            "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
+            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+            "summary": "Die Polizei fahndet nach einem 1977 geborenen Mann aus Gevelsberg im Zusammenhang mit mutmaßlicher Stromnetz-Sabotage. Zwei Bekennerschreiben werden wegen detaillierten Täterwissens als authentisch eingeschätzt.",
+            "updated_at": "2026-09-04T17:42:19.209Z",
+            "published_at": "2026-09-04T12:08:21.972Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-a6f6c9c60011b50c",
+            "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+            "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
+            "updated_at": "2026-09-04T17:41:54.741Z",
+            "published_at": "2026-09-04T17:41:54.741Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-60f4e4d7d43fad99",
+            "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+            "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+            "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
+            "updated_at": "2026-09-04T17:41:38.182Z",
+            "published_at": "2026-09-04T17:41:38.182Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-a5874ae28ed5533f",
+            "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+            "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
+            "updated_at": "2026-09-04T17:37:24.324Z",
+            "published_at": "2026-09-04T17:37:24.324Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-cb1584ee4d9e6a43",
+            "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
+            "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+            "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
+            "updated_at": "2026-09-04T16:09:09.120Z",
+            "published_at": "2026-09-04T16:09:09.120Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-1fbb056ccaaf351d",
+            "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
+            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+            "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
+            "updated_at": "2026-09-04T15:52:29.187Z",
+            "published_at": "2026-09-04T11:12:12.390Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-5547189d2645384a",
+            "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
+            "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+            "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
+            "updated_at": "2026-09-04T15:29:14.683Z",
+            "published_at": "2026-09-04T13:23:17.993Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ae0b9f22404b684",
+            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+            "updated_at": "2026-09-04T14:13:53.288Z",
+            "published_at": "2026-09-03T23:06:38.718Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-4fb94d2cebfca746",
+            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
+            "updated_at": "2026-09-04T11:11:50.847Z",
+            "published_at": "2026-09-04T01:53:14.028Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-f3d585eac14dec76",
+            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
+            "updated_at": "2026-09-04T10:21:35.407Z",
+            "published_at": "2026-09-04T02:07:51.145Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-7b385f58748f3d32",
+            "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+            "updated_at": "2026-09-04T10:09:13.371Z",
+            "published_at": "2026-09-04T10:09:13.371Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-b9487671699d6c9b",
+            "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
+            "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+            "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
+            "updated_at": "2026-09-04T01:53:45.231Z",
+            "published_at": "2026-09-04T01:53:45.231Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-9812656e38b0d665",
+            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
+            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
+            "updated_at": "2026-09-03T22:22:49.015Z",
+            "published_at": "2026-09-03T22:22:49.015Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          }
+        ]
+      },
       "source_published_at": "2026-09-04T18:11:14.000Z",
       "published_at": "2026-09-04T18:22:40.051Z",
       "evidence_groups": {
@@ -363,6 +513,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-9ce6682a9f1a77ee5f1d",
+      "case_file": null,
       "source_published_at": "2026-09-04T17:23:23.000Z",
       "published_at": "2026-09-04T15:07:05.912Z",
       "evidence_groups": {
@@ -464,6 +615,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-49e6ddd9913a3803a948",
+      "case_file": null,
       "source_published_at": "2026-09-03T16:31:09.000Z",
       "published_at": "2026-09-04T02:22:48.837Z",
       "evidence_groups": {
@@ -495,293 +647,6 @@
           "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:31:09.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-00fccb632042b492",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-36f35266a4ea781e-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-573d10ce9f424111-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-61605e37eceb3d45-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
-      "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
-      "source_summary": "Die Deutsche Welle berichtet über Ermittlungen nach mehreren mutmaßlichen Sabotageakten an der Stromversorgung in Brandenburg und Nordrhein-Westfalen. Nach Angaben des Berichts fahndet die Polizei nach einem 1977 geborenen deutschen Staatsangehörigen aus Gevelsberg. Grundlage sind zwei handschriftliche Bekennerschreiben, die die Ermittler wegen enthaltenen Täterwissens für authentisch halten.\n\nDer Text beschreibt, dass in einem Schreiben Taten bei Jänschwalde und Schwarze Pumpe eingeräumt werden; ein weiteres Schreiben reklamiere Angriffe in Nordrhein-Westfalen, darunter Orte wie Gohr, Bergheim-Rheidt, Dormagen und Weisweiler. Als Motive nennt der Verfasser den Kampf gegen fossile Stromerzeugung und einen Bezug zum Nahostkonflikt. Die Frage, ob die Unterschrift echt ist und wie die einzelnen Vorfälle genau zusammenhängen, bleibt offen.",
-      "summary": "Die Polizei fahndet nach einem 1977 geborenen Mann aus Gevelsberg im Zusammenhang mit mutmaßlicher Stromnetz-Sabotage. Zwei Bekennerschreiben werden wegen detaillierten Täterwissens als authentisch eingeschätzt.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Quelle, dass die Ermittler nach einem 1977 geborenen Mann aus Gevelsberg suchen und zwei handschriftliche Bekennerschreiben auswerten. Der Bericht ordnet ihnen mehrere mutmaßliche Angriffe auf die Stromversorgung in Brandenburg und Nordrhein-Westfalen zu. Für die redaktionelle Einordnung ist das relevant, weil es um kritische Infrastruktur geht und damit um potenziell systemische Störungen, nicht nur um einen lokalen Einzelfall. Ein möglicher Wirkpfad wäre zusätzliche Vorsorge, Sicherheitsmaßnahmen und Ermittlungsdruck bei Energieanlagen. Möglich sind auch Folgewirkungen auf Schutzkonzepte und die Wahrnehmung von Verwundbarkeit des Netzes. Die Beleglage bleibt aber auf einen journalistischen Bericht beschränkt; Identität, Echtheit der Unterschrift und die endgültige Zurechnung sind noch offen.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Fahndung und mögliche Sicherheitsfolgen über den Einzelfall hinaus.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Ausfälle oder Schutzmaßnahmen bei Strominfrastruktur können Versorgung und Sicherheit betreffen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Ein direkter Umweltbezug ist aus der Quelle nicht belastbar ableitbar; genannt werden nur Motive und Stromerzeugung."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Ermittlungen zu Sabotage an kritischer Infrastruktur berühren öffentliche Sicherheit und staatliche Schutzfähigkeit."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T11:40:00.000Z",
-      "last_updated": "2026-09-04T17:42:19.209Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-e4876e29370bc0f63efa",
-      "source_published_at": "2026-09-04T11:40:00.000Z",
-      "published_at": "2026-09-04T12:08:21.972Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dw-news"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Polizei die Authentizität der Schreiben weiterhin bestätigt und ob der Gesuchte gefasst wird.",
-          "source_id": "dw-news",
-          "expected_by": null,
-          "measurable_indicator": "Amtliche Bestätigung oder Vollzug der Fahndung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-d507a2000580b029",
-          "announced_at": "2026-09-04T11:40:00.000Z",
-          "follow_up_date": "2026-09-11T12:08:21.972Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutsche Welle",
-          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:40:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-a6f6c9c60011b50c",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-8360511f1a3b41af-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-72b6079a61179a4b-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-22a05049aa4bf2fe-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
-      "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
-      "source_summary": "Die taz berichtet, die Polizei fahnde nach dem Gevelsberger Daniel V. Sein zum Wohnmobil umgebauter Lkw sei am Hambacher Forst entdeckt worden. Nach Angaben der Quelle hatte der Mann ein Bekennerschreiben an die taz geschickt und soll sich in Schreiben zu mehreren Angriffen auf Umspannwerke geäußert haben.\n\nDie Polizei sei dem Verdächtigen laut Bericht nahe Niederzier mit einem Sondereinsatzkommando auf der Spur gewesen. Festgenommen wurde er demnach nicht; NRW-Innenminister Herbert Reul sagte, er sei vermutlich zu Fuß unterwegs. Außerdem nennt die taz weitere Polizeieinsätze in Weisweiler, Dormagen, Bergheim-Rheidt und Ganderkesee im Zusammenhang mit der Tatserie.",
-      "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
-      "detail_summary": "Gesichert aus der Quelle ist vor allem die laufende Fahndung nach Daniel V. und der Fund seines Lkw am Hambacher Forst. Die Meldung verbindet den Fall mit einem Bekennerschreiben an die taz und mit weiteren Polizeieinsätzen im Umfeld mehrerer Umspannwerke. Das ist für die Energieinfrastruktur relevant, weil Angriffe auf solche Knotenpunkte bei Erfolg Versorgungsstörungen, erhöhte Schutzkosten und zusätzliche Einsatzbelastung auslösen können. Der unmittelbare Wirkpfad liegt daher zunächst nicht in einem eingetretenen Schaden, sondern in der Verdachtslage, der Ermittlung und der Gefährdung kritischer Infrastruktur. Eine mögliche Folge ist eine Verstärkung von Sicherungsmaßnahmen an ähnlichen Anlagen; ob und in welchem Umfang das eintritt, bleibt offen. Die Beleglage stammt hier nur aus einer journalistischen Quelle, daher bleiben Täterschaft, Motiv und Gesamtumfang der Serie vorläufig.",
-      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Energieinfrastruktur und damit einen potenziell systemrelevanten Zustand mit Folgen für Versorgungssicherheit, Schutzaufwand und öffentliche Sicherheit.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Einsatzlagen und Sicherheitsgefühl, aber ein konkreter Personenschaden ist hier nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; höchstens indirekte Folgen über Energieinfrastruktur und Sicherheitsmaßnahmen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und die demokratische Korrekturfähigkeit, ohne dass ein institutioneller Ausfall belegt ist."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Verdächtiger",
-            "value": "Daniel V.",
-            "unit": "Person",
-            "context": "von der Polizei gesuchte Person"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "risiko"
-        }
-      },
-      "first_seen": "2026-09-04T07:59:00.000Z",
-      "last_updated": "2026-09-04T17:41:54.741Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-6371f2b9c6843f8218bf",
-      "source_published_at": "2026-09-04T16:34:00.000Z",
-      "published_at": "2026-09-04T17:41:54.741Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "taz-aktuell",
-              "taz-aktuell"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:34:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Polizei-findet-Truck-des-Verdaechtigen-am-Hambacher-Forst/!6210358",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:34:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-e731083fd0f9c981-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-4cb3f07fbcbef779-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-64c671dbff05938e-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-      "source_summary": "Die Quelle berichtet über die laufenden Ermittlungen nach Angriffen auf das Stromnetz in Nordrhein-Westfalen und Brandenburg. Nach Angaben von Innenminister Reul wurde das Fahrzeug eines Verdächtigen in Niederzier gestürmt; in seiner Wohnung in Gevelsberg seien sprengstoffverdächtige Gegenstände gefunden worden. Die Polizei suche weiter nach dem Verdächtigen. \n\nBundesinnenminister Dobrindt ordnet die Lage als sehr wahrscheinlich Einzeltat ein und spricht nach aktuellem Stand von Klimaextremismus. Zugleich verweist er auf weiter laufende Ermittlungen und einen noch nicht abschließend geklärten Tathintergrund. Reul sagt, die vorliegenden Briefe würden derzeit als authentisch bewertet, prüfe aber weiter, ob der Mann allein gehandelt habe oder Bezüge zu anderen Vorfällen bestehen.",
-      "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
-      "detail_summary": "Gesichert ist nach der Quelle, dass die Ermittlungen zu Angriffen auf das Stromnetz weiterlaufen und dass Polizei und Innenminister konkrete Maßnahmen gegen einen Verdächtigen beschreiben. Das ist relevant, weil sich daraus ein möglicher Wirkpfad auf die Sicherheit kritischer Infrastruktur ergibt, etwa über Fahndung, Gefahrenabwehr und Schutzmaßnahmen bei Betreibern. Politisch und operativ bedeutsam ist vor allem die Kombination aus laufender Fahndung, dem Fund verdächtiger Gegenstände und der öffentlichen Einordnung durch die Innenminister. Als mögliche Folge kommen verschärfte Schutzvorkehrungen und weitere Ermittlungsmaßnahmen in Betracht. Unklar bleibt aber, wie belastbar die Zuschreibungen zu Motiv, Täterzahl und Hintergründen im Moment schon sind; die Quelle selbst verweist auf laufende Prüfungen.",
-      "why_relevant": "Der Vorgang betrifft potenzielle Angriffe auf kritische Energieinfrastruktur und damit einen Bereich mit möglicher Systemrelevanz, Sicherheitsfolgen und politischem Handlungsdruck.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Versorgungssicherheit und Schutz kritischer Infrastruktur mit möglicher Auswirkung auf Bevölkerung und Einsatzkräfte."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht belegt; allenfalls indirekt über Energieinfrastruktur und Ausfallrisiken."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die öffentliche Einordnung durch Innenminister und laufende Ermittlungen berühren staatliche Sicherheits- und Schutzaufgaben."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T15:15:00.000Z",
-      "last_updated": "2026-09-04T17:41:38.182Z",
-      "version": 1,
-      "news_status": "updated",
-      "event_id": "event-b1327260d95e2af32735",
-      "source_published_at": "2026-09-04T16:49:00.000Z",
-      "published_at": "2026-09-04T17:41:38.182Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob der Verdächtige tatsächlich allein gehandelt hat oder weitere Beteiligte identifiziert werden.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeiliche oder staatsanwaltschaftliche Bestätigung zusätzlicher Tatbeteiligter oder deren Ausschluss",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-d2799f53d488671a",
-          "announced_at": "2026-09-04T16:49:00.000Z",
-          "follow_up_date": "2026-09-11T17:41:38.182Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:49:00.000Z",
           "primary_source": false
         }
       ]
@@ -839,6 +704,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-ae1b49037aaef952b5be",
+      "case_file": null,
       "source_published_at": "2026-09-04T17:33:42.000Z",
       "published_at": "2026-09-04T17:41:02.699Z",
       "evidence_groups": {
@@ -870,110 +736,6 @@
           "url": "https://www.deutschlandfunk.de/hochschulen-in-ungarn-nehmen-wieder-am-erasmus-programm-teil-102.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T17:33:42.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-a5874ae28ed5533f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-7383172017378959-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-e4f6f9e1b6fc97fa-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-11c6e2cf82122735-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
-      "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-      "source_summary": "Nach dem Sabotageversuch an einem Umspannwerk in Dormagen meldet der WDR einen SEK-Einsatz beim Hambacher Forst. Im Ticker heißt es, das Spezialeinsatzkommando sei in der Nähe eines auffälligen Lasters vorgegangen; der gesuchte Tatverdächtige sei dort nicht im Fahrzeug gewesen. Später werde das Fahrzeug durchsucht, außerdem werde im angrenzenden Wald mit Spürhund gesucht.\n\nDer WDR berichtet zudem von einer Pressekonferenz in Düsseldorf mit Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul. Dobrindt sprach dort von einer „hohen Bedrohungslage“. Reul erklärte, es sei unklar, ob der Mann allein oder gemeinsam mit anderen gehandelt habe; geprüft werde auch ein möglicher Zusammenhang mit einem Vorfall in Brandenburg.",
-      "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
-      "detail_summary": "Gesichert aus der Quelle ist vor allem, dass die Ermittlungen zu den mutmaßlichen Sabotagefällen in eine laufende Polizeilage übergegangen sind. Der WDR berichtet von einem SEK-Zugriff in der Nähe des Hambacher Forsts, bei dem der gesuchte Mann zunächst nicht im Fahrzeug war. Parallel dazu fand in Düsseldorf eine Pressekonferenz mit Dobrindt und Reul statt. Für die öffentliche Bewertung ist das relevant, weil es um mögliche Angriffe auf kritische Energieinfrastruktur und um den Zugriff staatlicher Sicherheitsorgane geht. Ein möglicher Wirkpfad liegt in erhöhtem Schutz, intensiveren Ermittlungen und möglichen Folgemaßnahmen für Betreiber und Behörden. Offen bleibt aber, ob der Verdächtige tatsächlich gefasst wird, ob es weitere Beteiligte gibt und wie tragfähig die Zuordnung der Taten ist.",
-      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitsbehörden und mögliche weitere Ermittlungs- oder Schutzmaßnahmen. Damit sind potenzielle Folgen für Versorgungssicherheit und staatliche Reaktionsfähigkeit berührt.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Es geht um mögliche Gefahren für Menschen im Umfeld kritischer Infrastruktur und um staatliche Schutzmaßnahmen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umwelt- oder Klimabezug ist in der Quelle nicht belegt; betroffen ist eher die Energieinfrastruktur."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Lage betrifft Sicherheitsbehörden, Ermittlungen und den Schutz kritischer Infrastruktur, also staatliche Korrekturfähigkeit."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T16:15:33.000Z",
-      "last_updated": "2026-09-04T17:37:24.324Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-53de10df4f68e93ec96a",
-      "source_published_at": "2026-09-04T16:15:33.000Z",
-      "published_at": "2026-09-04T17:37:24.324Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten",
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "wdr-nachrichten",
-              "wdr-nachrichten"
-            ],
-            "reason": "same_publisher"
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die Polizei den gesuchten Mann noch festnimmt oder identifiziert.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue amtliche oder belastbar bestätigte Festnahme- oder Fahndungsmeldung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-c8043e94464f5d27",
-          "announced_at": "2026-09-04T16:15:33.000Z",
-          "follow_up_date": "2026-09-11T17:37:24.324Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:15:33.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:14:36.000Z",
           "primary_source": false
         }
       ]
@@ -1032,6 +794,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "case_file": null,
       "source_published_at": "2026-09-04T03:37:34.000Z",
       "published_at": "2026-09-04T17:36:18.898Z",
       "evidence_groups": {
@@ -1147,6 +910,7 @@
       "version": 2,
       "news_status": "preliminary",
       "event_id": "event-39a76d34400c9aa5a56b",
+      "case_file": null,
       "source_published_at": "2026-09-04T15:54:00.000Z",
       "published_at": "2026-09-04T16:08:20.425Z",
       "evidence_groups": {
@@ -1238,6 +1002,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-5af2c4bd0487548d3bd6",
+      "case_file": null,
       "source_published_at": "2026-09-04T16:14:15.000Z",
       "published_at": "2026-09-04T16:22:44.606Z",
       "evidence_groups": {
@@ -1351,6 +1116,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-8886cea1ae83e852bcec",
+      "case_file": null,
       "source_published_at": "2026-09-04T13:50:27.000Z",
       "published_at": "2026-09-04T16:23:03.495Z",
       "evidence_groups": {
@@ -1386,113 +1152,6 @@
           "url": "https://www.stern.de/news/us-arbeitsmarkt-im-august-robuster--trump-droht-notenbank-fed-38209652.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T16:08:38.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-cb1584ee4d9e6a43",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cb1584ee4d9e6a43-c4c223bb1ea20dda-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cb1584ee4d9e6a43-c87ee19cee2c40e7-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cb1584ee4d9e6a43-db9904f121fbc5e5-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
-      "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
-      "source_summary": "Die Quelle berichtet über Aussagen von NRW-Innenminister Herbert Reul zu einem Verdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen die deutsche Stromversorgung. Demnach hat die Polizei das Fahrzeug des Mannes in Niederzier gestürmt. Reul sagte in Düsseldorf, der Verdächtige sei nun vermutlich zu Fuß unterwegs und werde nicht weit kommen.\n\nDie Meldung benennt keine weiteren Details zum Tatverdacht, zum Zeitpunkt des Zugriffs oder zu einer Festnahme. Der Bericht ist als journalistische Darstellung einer politischen Aussage angelegt; ein eigener amtlicher Originaltext ist in den gelieferten Daten nicht enthalten.",
-      "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
-      "detail_summary": "Gesichert ist zunächst nur die berichtete Aussage von NRW-Innenminister Reul, dass die Polizei das Fahrzeug eines Verdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen die Stromversorgung gestürmt habe. Der in der Meldung genannte Ort ist Niederzier. Daraus ergibt sich eine neue, konkrete Verfahrenslage im laufenden Fall, weil ein polizeilicher Zugriff und eine veränderte Lage des Verdächtigen beschrieben werden. Materiell relevant ist das vor allem wegen möglicher Folgen für Fahndung, Gefahrenlage und Schutz der Energieinfrastruktur. Offen bleibt jedoch, ob die Darstellung bereits durch eine unabhängige Primärquelle bestätigt ist und ob es eine Festnahme oder weitere amtliche Angaben gibt.",
-      "why_relevant": "Ein polizeilicher Zugriff im mutmaßlichen Sabotagefall an der Stromversorgung betrifft öffentliche Sicherheit, Energieinfrastruktur und die laufende Fahndung.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Folgen für öffentliche Sicherheit, Fahndung und Versorgungsschutz."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein direkter Umweltbezug aus den gelieferten Angaben."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Fall betrifft staatliche Gefahrenabwehr und die öffentliche Information über Sabotageverdacht."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Ort des Zugriffs",
-            "value": "Niederzier",
-            "unit": "Ort",
-            "context": "Ort, an dem der Zugriff laut Meldung erfolgte"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "kommunen",
-          "unternehmen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T15:55:00.000Z",
-      "last_updated": "2026-09-04T16:09:09.120Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-99dc04c6baafcb8c9d9e",
-      "source_published_at": "2026-09-04T15:55:00.000Z",
-      "published_at": "2026-09-04T16:09:09.120Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob der Verdächtige festgenommen wurde oder weiter flüchtig ist.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimitteilung, Festnahme oder neue Fahndungsangaben",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-bf7cba94844b3e5e",
-          "announced_at": "2026-09-04T15:55:00.000Z",
-          "follow_up_date": "2026-09-11T16:09:09.120Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/stromversorgung--reul--polizei-stuermt-fahrzeug-von-sabotage-verdaechtigem-38210002.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T15:55:00.000Z",
           "primary_source": false
         }
       ]
@@ -1577,6 +1236,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-88c06765dd812ab1333c",
+      "case_file": null,
       "source_published_at": "2026-09-01T16:09:08.000Z",
       "published_at": "2026-09-04T04:38:09.628Z",
       "evidence_groups": {
@@ -1679,6 +1339,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-55a7906a6116a9b09f49",
+      "case_file": null,
       "source_published_at": "2026-09-04T15:14:00.000Z",
       "published_at": "2026-09-04T15:53:11.781Z",
       "evidence_groups": {
@@ -2032,211 +1693,6 @@
       ]
     },
     {
-      "story_id": "wt-1fbb056ccaaf351d",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-0ba05b514a1f5ae7-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-3ec4f21768018bd5-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1fbb056ccaaf351d-41d304b1665ae511-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
-      "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
-      "source_summary": "Nach mehreren Sabotageangriffen auf die Energieversorgung in Deutschland sucht die Polizei europaweit nach einem Tatverdächtigen aus Gevelsberg in Nordrhein-Westfalen. Laut Bericht gehen die Ermittler davon aus, dass der 48-Jährige Bekennerschreiben verfasst hat; die Briefe seien bei deutschen Medienhäusern eingegangen.\n\nIn dem Schreiben werde auf Angriffe auf Umspannwerke in Brandenburg und Nordrhein-Westfalen Bezug genommen. Der Text nenne Details, die zunächst noch nicht öffentlich bekannt gewesen seien, und als Motiv werde der Kampf gegen fossile Energieträger genannt. Zugleich wird auf weitere Vorfälle und auf Reaktionen aus der Politik verwiesen, darunter die Einschätzung eines möglichen Einzeltäters und ein angekündigtes Sicherheitszentrum in Brandenburg.",
-      "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
-      "detail_summary": "Gesichert aus der vorliegenden Quelle ist vor allem, dass die Polizei nach einem 48-jährigen Mann aus Gevelsberg fahndet und die Ermittler ein Bekennerschreiben für echt halten. Der Bericht ordnet die Sache in eine Serie von Sabotageangriffen auf die Energieversorgung ein und nennt Angriffe auf Umspannwerke in Brandenburg und Nordrhein-Westfalen. Für die Bewertung ist das relevant, weil kritische Infrastruktur betroffen ist und schon ein begrenzter Eingriff in Stromanlagen Versorgungsrisiken, Sicherheitsmaßnahmen und politische Reaktionen auslösen kann. Ein möglicher Wirkpfad führt über den Verdacht auf organisierte oder wiederholte Sabotage zu mehr Schutzaufwand und zu Änderungen bei Überwachung und Prävention. Offen bleibt aber, wer die Taten tatsächlich begangen hat, wie groß der Sachschaden ist und ob die Zuschreibungen der Ermittler später bestätigt werden. Die Evidenz ist derzeit journalistisch brauchbar, aber nur sekundär belegt; eine belastbare Zurechnung braucht weitere unabhängige Quellen oder Originalbelege.",
-      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, laufende Ermittlungen und mögliche Schutzfolgen für Energieversorgung und Sicherheitsarchitektur.",
-      "topic": [
-        "Energie",
-        "Europa",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell viele Haushalte und Versorgungsnutzer, weil Strominfrastruktur angegriffen wurde und Schutzmaßnahmen folgen können."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Der Bezug zu fossilen Energieträgern ist nur als behauptetes Motiv belegt; konkrete Umweltwirkung bleibt offen."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Die Meldung kann Sicherheitsdebatten, Behördenhandeln und Schutz kritischer Infrastruktur berühren; die Beleglage bleibt aber vorläufig."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Alter des Verdächtigen",
-            "value": "48",
-            "unit": "Jahre",
-            "context": "Der Bericht nennt einen 48-jährigen Verdächtigen."
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "unternehmen",
-          "staat",
-          "kommunen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T11:09:14.000Z",
-      "last_updated": "2026-09-04T15:52:29.187Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-35d991525796ba55dcd9",
-      "source_published_at": "2026-09-04T15:44:10.000Z",
-      "published_at": "2026-09-04T11:12:12.390Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Polizei den gesuchten Mann gefasst hat",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimeldung oder belastbare Medienbestätigung einer Festnahme",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-3beb5028a69fd7e0",
-          "announced_at": "2026-09-04T15:44:10.000Z",
-          "follow_up_date": "2026-09-11T15:52:29.187Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T15:44:10.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-5547189d2645384a",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-c66ed003a2b8a20b-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-c63a52c7b525d3cc-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-2ffbcb59eccf0717-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
-      "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-      "source_summary": "Der WDR berichtet über neue Ermittlungsstände zu den mutmaßlichen Angriffen auf Umspannwerke. Am Nachmittag informierten Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul in Düsseldorf über den Stand der Ermittlungen. Nach Angaben aus dem Liveticker läuft in Gevelsberg ein SEK-Einsatz; der gesuchte Mann sei dort nicht angetroffen worden. In seiner Wohnung hätten Ermittler sprengstoffverdächtige Stoffe gefunden.\n\nReul zufolge wird nach einem 48-jährigen Mann aus Gevelsberg unter Hochdruck gefahndet. Laut WDR ist offen, ob der Mann allein oder gemeinsam mit anderen gehandelt hat. Außerdem werde geprüft, ob ein Zusammenhang mit dem Anschlag auf ein Umspannwerk in Brandenburg besteht. Der WDR ordnet die Einsätze in die zuvor berichteten Vorfälle in Jänschwalde, Bergheim und Dormagen ein.",
-      "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
-      "detail_summary": "Gesichert belegt ist vor allem der neue Ermittlungsstand: In Gevelsberg lief ein SEK-Einsatz, der gesuchte Mann wurde dort nicht angetroffen, und in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe. Damit verschiebt sich der Vorgang von einem bloßen Verdacht zu einer konkreteren Fahndungs- und Gefahrenlage. Für die Einordnung ist relevant, dass der WDR die Angaben im Kontext mehrerer Angriffe auf Umspannwerke berichtet und damit einen möglichen Zusammenhang zwischen den Fällen sichtbar macht. Ein möglicher Wirkpfad liegt in verstärkter Sicherung kritischer Infrastruktur, in weiterer Fahndung und in zusätzlichen Ermittlungen zu möglichen Mittätern. Ob daraus tatsächlich neue Schutzmaßnahmen, Einschränkungen oder strafrechtliche Folgen entstehen, bleibt offen. Belastbar ist bislang nur der berichtete Ermittlungsstand aus einer Quelle; die Unabhängigkeit weiterer Bestätigungen liegt hier nicht vor.",
-      "why_relevant": "Die Meldung beschreibt neue, konkret benannte Ermittlungsinformationen zu Angriffen auf kritische Infrastruktur und damit einen möglichen Präzedenz- und Schutzpfad mit Relevanz für Versorgungssicherheit und öffentliche Sicherheit.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind mögliche Gefahren für Versorgungssicherheit, Fahndung und Schutz kritischer Infrastruktur."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umweltbezug ist aus den Belegen nicht belastbar ableitbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Lage berührt staatliche Sicherheitsfähigkeit und den Schutz kritischer Infrastruktur, nicht aber einen direkten demokratischen Verfahrenskonflikt."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Alter des Gesuchten",
-            "value": "48",
-            "unit": "Jahre",
-            "context": "Das Alter des in Gevelsberg gesuchten Mannes"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "kommunen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T10:22:28.000Z",
-      "last_updated": "2026-09-04T15:29:14.683Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-dad0642fc6ee28b03f8a",
-      "source_published_at": "2026-09-04T13:58:04.000Z",
-      "published_at": "2026-09-04T13:23:17.993Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T13:58:04.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-e442d6ad81290406",
       "title_image": {
         "mode": "impact_card",
@@ -2289,6 +1745,7 @@
       "version": 4,
       "news_status": "preliminary",
       "event_id": "event-83becedad84b8b907cdf",
+      "case_file": null,
       "source_published_at": "2026-09-03T06:53:00.000Z",
       "published_at": "2026-09-04T01:52:05.573Z",
       "evidence_groups": {
@@ -2366,6 +1823,7 @@
       "version": 2,
       "news_status": "updated",
       "event_id": "event-1b0c4e9053465796c788",
+      "case_file": null,
       "source_published_at": "2026-09-04T05:10:44.000Z",
       "published_at": "2026-09-04T05:43:04.119Z",
       "evidence_groups": {
@@ -2528,6 +1986,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-becb84b8e979276421c0",
+      "case_file": null,
       "source_published_at": "2026-09-04T15:12:29.000Z",
       "published_at": "2026-09-04T15:23:21.799Z",
       "evidence_groups": {
@@ -2649,6 +2108,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-9d4afdfe89c278d9bc9e",
+      "case_file": null,
       "source_published_at": "2026-09-04T15:07:42.000Z",
       "published_at": "2026-09-04T15:22:55.300Z",
       "evidence_groups": {
@@ -2749,6 +2209,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-43f99f36657ddc9d3f73",
+      "case_file": null,
       "source_published_at": "2026-09-04T13:52:39.000Z",
       "published_at": "2026-09-04T14:08:09.852Z",
       "evidence_groups": {
@@ -2866,6 +2327,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-86e467282b4359844579",
+      "case_file": null,
       "source_published_at": "2026-09-04T14:33:35.000Z",
       "published_at": "2026-09-04T14:38:33.214Z",
       "evidence_groups": {
@@ -2885,103 +2347,6 @@
           "url": "https://www.deutschlandfunk.de/frontex-unterstuetzt-frankreich-bei-einsaetzen-im-aermelkanal-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T14:33:35.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7ae0b9f22404b684",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-      "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-      "source_summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Hessens Innenminister Roman Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen. Dennoch würden die Sicherheitsvorkehrungen erhöht. Die Quelle nennt als Beispiel den Main-Kinzig-Kreis, wo der Schutz wichtiger Anlagen derzeit verstärkt werde.\n\nGenannt werden drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Das Innenministerium will sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, einzelnen Vorkehrungen oder möglichen Szenarien äußern. Die Quelle verweist außerdem auf eine angespannte Sicherheitslage und auf weitere Vorfälle an kritischer Infrastruktur in Deutschland.",
-      "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
-      "detail_summary": "Gesichert ist nach der Quelle vor allem, dass Hessen seine Schutzvorkehrungen für kritische Infrastruktur hochfährt, obwohl es laut Innenminister Poseck keine Hinweise auf vergleichbare Taten im Land gibt. Als konkretes Beispiel nennt die Meldung den Main-Kinzig-Kreis mit drei Umspannwerken. Der Vorgang ist für Energieversorgung und Krisenfestigkeit relevant, weil zusätzliche Sicherung die Verwundbarkeit einzelner Anlagen senken kann und zugleich auf erhöhte Gefahrenwahrnehmung in der Infrastruktursteuerung hinweist. Ein möglicher Folgeeffekt ist mehr personeller, organisatorischer und technischer Aufwand für Betreiber und Behörden. Ob dadurch tatsächlich Anschläge verhindert oder nur Risiken verlagert werden, bleibt offen; die Quelle nennt keine überprüfbaren Wirkungen oder belastbaren Details zu den Maßnahmen.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, also einen potenziell systemrelevanten Bereich mit möglichen Kaskaden für Versorgungssicherheit, Schutzpflichten und staatliche Sicherheitsarchitektur.",
-      "topic": [
-        "Energie",
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Es geht um Schutz kritischer Infrastruktur, die bei Ausfällen Versorgung und Sicherheit vieler Menschen betreffen kann."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Quelle stellt den Schutz staatlich und gesellschaftlich relevanter Infrastruktur sowie die Reaktion der Behörden in den Mittelpunkt."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Umspannwerke im Main-Kinzig-Kreis",
-            "value": "drei",
-            "unit": "Anlagen",
-            "context": "Genannte Standorte, deren Schutz verstärkt wird"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T09:36:10.000Z",
-      "last_updated": "2026-09-04T14:13:53.288Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-75bee49c92987065ab05",
-      "source_published_at": "2026-09-03T09:36:10.000Z",
-      "published_at": "2026-09-03T23:06:38.718Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T09:36:10.000Z",
           "primary_source": false
         }
       ]
@@ -3058,6 +2423,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-9ff813e069f6534376e1",
+      "case_file": null,
       "source_published_at": "2026-09-04T13:55:26.000Z",
       "published_at": "2026-09-04T14:07:43.054Z",
       "evidence_groups": {
@@ -3147,6 +2513,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-1c73422aa65b168ca042",
+      "case_file": null,
       "source_published_at": "2026-09-04T13:42:24.000Z",
       "published_at": "2026-09-04T13:53:07.692Z",
       "evidence_groups": {
@@ -3242,6 +2609,7 @@
       "version": 3,
       "news_status": "developing",
       "event_id": "event-e36c0e80c02ea72f11c7",
+      "case_file": null,
       "source_published_at": "2026-09-04T08:43:18.000Z",
       "published_at": "2026-09-04T09:47:23.735Z",
       "evidence_groups": {
@@ -3363,6 +2731,7 @@
       "version": 3,
       "news_status": "developing",
       "event_id": "event-d32c4341ee16ff499c56",
+      "case_file": null,
       "source_published_at": "2026-09-04T13:13:20.000Z",
       "published_at": "2026-09-04T09:48:16.895Z",
       "evidence_groups": {
@@ -3482,6 +2851,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-dc0ea6a5d87506732af2",
+      "case_file": null,
       "source_published_at": "2026-09-04T12:00:21.000Z",
       "published_at": "2026-09-04T12:36:53.285Z",
       "evidence_groups": {
@@ -3598,6 +2968,7 @@
       "version": 1,
       "news_status": "confirmed",
       "event_id": "event-75496d991aeece90e2e0",
+      "case_file": null,
       "source_published_at": "2026-09-04T12:00:00.000Z",
       "published_at": "2026-09-04T12:07:51.198Z",
       "evidence_groups": {
@@ -3711,6 +3082,7 @@
       "version": 2,
       "news_status": "preliminary",
       "event_id": "event-ef24781d9a226809238d",
+      "case_file": null,
       "source_published_at": "2026-09-03T13:56:50.000Z",
       "published_at": "2026-09-04T02:37:01.895Z",
       "evidence_groups": {
@@ -3836,6 +3208,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-eb3a46e622601f11b539",
+      "case_file": null,
       "source_published_at": "2026-09-04T11:13:34.000Z",
       "published_at": "2026-09-04T11:37:27.087Z",
       "evidence_groups": {
@@ -3913,6 +3286,7 @@
       "version": 2,
       "news_status": "updated",
       "event_id": "event-993d57cff20b05016759",
+      "case_file": null,
       "source_published_at": "2026-09-04T05:44:22.000Z",
       "published_at": "2026-09-04T06:37:20.682Z",
       "evidence_groups": {
@@ -3981,333 +3355,6 @@
           "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T08:13:24.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4fb94d2cebfca746",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-36fdffe34926aa7d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-56a338ea84c84a50-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-d5b4e2e6708d0457-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-      "source_summary": "Mehrere Medien berichten über einen verdächtigen Fund an einem Umspannwerk in Dormagen. Nach Darstellung der Polizei wird der Vorfall als möglicher Sabotageakt oder Sabotagedelikt eingeordnet; in den Meldungen ist von einem Bekennerschreiben die Rede, dessen Echtheit in den gelieferten Texten nicht unabhängig geprüft wird.\n\nDer WDR meldet zudem eine Fahndung nach einem Mann aus Gevelsberg. Weitere Berichte erwähnen, dass an anderen Umspannwerken bereits am Dienstag Vorfälle gewesen seien. Aus dem gelieferten Material geht nicht hervor, ob der Gegenstand tatsächlich Schaden ausgelöst hat oder wie belastbar die Zuschreibungen im Einzelnen sind.",
-      "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
-      "detail_summary": "Gesichert ist aus den gelieferten Quellen vor allem der Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen. Mehrere Redaktionen berichten anschließend, die Polizei gehe von Sabotage aus; ein Bekennerschreiben wird erwähnt, seine Echtheit bleibt in den Quellen aber nicht unabhängig belegt. Für die Berichterstattung ist das materiell relevant, weil es um kritische Infrastruktur und damit um mögliche Störungen der Stromversorgung geht. Der Wirkpfad läge im schlimmsten Fall über beschädigte Anlagen, Ausfälle oder zusätzliche Sicherheitsmaßnahmen. Ob tatsächlich ein Schaden drohte oder ein Zusammenhang zu weiteren Vorfällen besteht, bleibt offen. Deshalb ist die Lage derzeit eher eine belastbare Erstmeldung als eine abgeschlossene Einordnung.",
-      "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und damit potenziell Versorgungssicherheit, Sicherheitsaufwand und öffentliche Risikoabwägung. Schon ein einzelner Vorfall kann wegen der Systemrelevanz über den Einzelfall hinaus Bedeutung haben.",
-      "topic": [
-        "Politik",
-        "Wirtschaft",
-        "Energie",
-        "Gesellschaft"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Folgen für Stromversorgung, Sicherheitsgefühl und Schutzaufwand sind erkennbar, konkrete Schäden sind aber nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist aus den Quellen nicht ersichtlich; mögliche Folgewirkungen bleiben offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Fall berührt den Schutz kritischer Infrastruktur und staatliche Sicherheits- und Ermittlungsfähigkeit, ohne dass ein demokratischer Verfahrensbruch belegt wäre."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T21:14:14.000Z",
-      "last_updated": "2026-09-04T11:11:50.847Z",
-      "version": 4,
-      "news_status": "preliminary",
-      "event_id": "event-73b1c53517b0e2f5118c",
-      "source_published_at": "2026-09-03T21:03:08.000Z",
-      "published_at": "2026-09-04T01:53:14.028Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten",
-            "wdr-nachrichten"
-          ],
-          [
-            "swr-aktuell"
-          ],
-          [
-            "ndr-info"
-          ],
-          [
-            "dlf-nachrichten",
-            "dlf-nachrichten",
-            "dlf-nachrichten",
-            "dlf-nachrichten"
-          ],
-          [
-            "stern-schlagzeilen",
-            "stern-schlagzeilen"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ],
-          [
-            "tagesspiegel-home"
-          ],
-          [
-            "taz-aktuell"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 9,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher"
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher"
-          },
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher"
-          },
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher"
-          },
-          {
-            "source_ids": [
-              "wdr-nachrichten",
-              "wdr-nachrichten"
-            ],
-            "reason": "same_publisher"
-          },
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher"
-          },
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher"
-          },
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher"
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die Ermittler den Fund als bestätigten Sabotageakt einstufen oder nur als Verdacht behandeln.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Einordnung der Polizei oder Staatsanwaltschaft",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-71fe7d0ca37bce7e",
-          "announced_at": "2026-09-04T06:00:49.000Z",
-          "follow_up_date": "2026-09-11T06:06:52.464Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ergebnis der Expertenprüfung des Gegenstands am Umspannwerk",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizei oder Betreiber nennt gesicherte Einordnung des Gegenstands.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6cdbe9e8f974e3ab",
-          "announced_at": "2026-09-04T02:12:48.000Z",
-          "follow_up_date": "2026-09-11T02:21:50.081Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-4855e13df47f18ed"
-        },
-        {
-          "claim": "Ob die Polizei den Fund als Sabotageversuch, harmlosen Gegenstand oder etwas anderes einordnet.",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Einordnung des Fundes oder konkrete Ermittlungsmitteilung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-cd5dd6963599eba1",
-          "announced_at": "2026-09-04T00:30:02.000Z",
-          "follow_up_date": "2026-09-11T01:00:23.705Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-7d3fabe103b78ce3"
-        },
-        {
-          "claim": "Wird die Polizei den Gegenstand als funktionsfähige Abschussvorrichtung einstufen?",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Einordnung des Fundes und mögliche technische Beschreibung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8b70c8da46e59258",
-          "announced_at": "2026-09-04T00:48:10.000Z",
-          "follow_up_date": "2026-09-11T01:27:12.242Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-7d3fabe103b78ce3"
-        },
-        {
-          "claim": "Die Polizei teilt weitere Erkenntnisse zur Echtheit des Bekennerschreibens mit.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue bestätigte oder zurückgenommene Aussagen zur Echtheit",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-ce9d748a66e3df21",
-          "announced_at": "2026-09-04T06:00:49.000Z",
-          "follow_up_date": "2026-09-11T09:22:10.498Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:04:21.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:45:01.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "NDR",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:37:43.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T06:00:49.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:12:48.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T00:39:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:06:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:07:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:03:08.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:17:32.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:59:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:29:46.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T04:50:24.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-bundesweite-fahndung-nach-tatverdaechtigem-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:29:27.000Z",
           "primary_source": false
         }
       ]
@@ -4388,6 +3435,7 @@
       "version": 5,
       "news_status": "preliminary",
       "event_id": "event-06fbdda38e40a97f5340",
+      "case_file": null,
       "source_published_at": "2026-09-03T18:53:18.000Z",
       "published_at": "2026-09-04T01:52:37.203Z",
       "evidence_groups": {
@@ -4648,6 +3696,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-e07f28d8aeff022b18e1",
+      "case_file": null,
       "source_published_at": "2026-09-04T03:00:10.000Z",
       "published_at": "2026-09-04T10:43:56.419Z",
       "evidence_groups": {
@@ -4781,6 +3830,7 @@
       "version": 3,
       "news_status": "developing",
       "event_id": "event-0059d4df349b8d2350cf",
+      "case_file": null,
       "source_published_at": "2026-09-03T21:08:30.000Z",
       "published_at": "2026-09-04T01:27:46.072Z",
       "evidence_groups": {
@@ -4917,6 +3967,7 @@
       "version": 2,
       "news_status": "preliminary",
       "event_id": "event-4d4eabf7fc99346b711e",
+      "case_file": null,
       "source_published_at": "2026-09-03T17:22:20.000Z",
       "published_at": "2026-09-03T23:37:36.842Z",
       "evidence_groups": {
@@ -4948,204 +3999,6 @@
           "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
           "source_type": "media_rss",
           "published_at": "2026-09-03T17:22:20.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-f3d585eac14dec76",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0167d295b29ef87f-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0666df4bbd59b99c-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-4f5215c9936e9827-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-      "source_summary": "Die taz berichtet, dass sie nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Nach dem Bericht lässt sich die Echtheit des Schreibens nicht zweifelsfrei klären. In dem Text soll sich ein Einzeltäter zu der Tat bekennen und die verwendeten selbstgebauten Raketen detailliert beschreiben. Außerdem soll das Schreiben Angaben zum vermeintlichen Absender enthalten; die Redaktion berichtet, sie habe an der angegebenen Adresse zunächst nur ein anderes Familienmitglied angetroffen.\n\nrbb24 meldet, die Polizei habe nach der Sabotage am Stromnetz bei Jänschwalde ein Bekennerschreiben erhalten und prüfe dessen Authentizität. Zugleich wird berichtet, dass die Ermittlungen unter anderem wegen der Bildung einer terroristischen Vereinigung laufen. Beide Berichte halten offen, ob das Schreiben echt ist und ob die darin genannten weiteren Orte tatsächlich angegriffen wurden.",
-      "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
-      "detail_summary": "Gesichert ist, dass nach dem Angriff auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben eingegangen ist und seine Echtheit bislang nicht bestätigt ist. rbb24 berichtet zugleich, die Polizei ermittle nach der Sabotage auch wegen der Bildung einer terroristischen Vereinigung. Die taz nennt im Schreiben detaillierte Beschreibungen selbstgebauter Raketen und verweist auf weitere angeblich betroffene Orte in Brandenburg und Sachsen. Für die Nachricht ist das relevant, weil sich der Vorgang nicht auf einen bloßen Einzelfall reduziert, sondern auf mögliche weitere Taten und auf ein Verfahren mit Bezug zu kritischer Infrastruktur. Der Wirkpfad liegt vor allem in der Lageeinschätzung von Sicherheitsbehörden, möglichen Schutzmaßnahmen und der Frage, ob sich ein koordiniertes Muster bestätigt. Offen bleibt aber, ob das Schreiben echt ist und ob die genannten weiteren Orte tatsächlich betroffen waren; deshalb bleibt die Zurechnung der behaupteten Tatserie vorerst unsicher.",
-      "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und mögliche weitere Angriffe; davon hängen Sicherheitslage, Ermittlungsrichtung und Schutzmaßnahmen ab.",
-      "topic": [
-        "Energie",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Störungen der Stromversorgung und Sicherheitsfolgen betreffen viele Menschen direkt oder indirekt."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimawirkpfad."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der mögliche Terrorismusbezug und staatliche Schutzreaktionen berühren Sicherheitsordnung und demokratische Kontrolle."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-03T16:21:00.000Z",
-      "last_updated": "2026-09-04T10:21:35.407Z",
-      "version": 2,
-      "news_status": "updated",
-      "event_id": "event-f0b1482b8ce86ec1fab2",
-      "source_published_at": "2026-09-03T16:21:00.000Z",
-      "published_at": "2026-09-04T02:07:51.145Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ],
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens.",
-          "source_id": "taz-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Polizei oder Ermittler bewerten das Schreiben eindeutig als echt, falsch oder nicht belegbar.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-82c1d1ebd142a53a",
-          "announced_at": "2026-09-03T16:21:00.000Z",
-          "follow_up_date": "2026-09-11T02:07:51.145Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6f87b9521d465246",
-          "announced_at": "2026-09-03T18:57:30.000Z",
-          "follow_up_date": "2026-09-10T22:37:01.821Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-57bcbc8dea706471"
-        },
-        {
-          "claim": "Ob die Polizei die Authentizität des Bekennerschreibens bestätigen kann",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Polizeimitteilung zur Echtheitsprüfung oder Bestätigung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-2321322fdee145a1",
-          "announced_at": "2026-09-03T18:57:30.000Z",
-          "follow_up_date": "2026-09-11T10:21:35.407Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:21:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T18:57:30.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7b385f58748f3d32",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-954a5ccec049ce21-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-c404bd8d02df1dba-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-4528cb0e4dd565cc-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-      "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-      "source_summary": "Die rbb24-Meldung berichtet unter Berufung auf ARD-Informationen, dass Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten. Nach dem Bericht bekennt sich darin ein mutmaßlicher Alleintäter zu Anschlägen in Jänschwalde und in Bergheim bei Köln, und die Fahndung läuft weiter.\n\nZudem heißt es, der Polizei in Nordrhein-Westfalen und Brandenburg lägen inzwischen zwei Bekennerschreiben derselben Person vor. Die Schreiben seien handschriftlich verfasst, mit Namen unterzeichnet und enthielten nach ARD-Terrorismusexperte Michael Götschenberg Täterwissen. Der Bericht nennt außerdem Hinweise, wonach die Person mit einem alten Bundeswehrfahrzeug unterwegs sei und offenbar weitere Tatorte anfahre.",
-      "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
-      "detail_summary": "Gesichert nach der vorliegenden Meldung ist vor allem, dass die Polizei die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch hält. Der Bericht ordnet die Schreiben einem mutmaßlichen Alleintäter zu, nennt Jänschwalde und Bergheim bei Köln als Tatorte und sagt, die Fahndung laufe weiter. Für die Einordnung ist das relevant, weil sich damit die Informationslage von einer bloßen Sachbeschädigungs- oder Sabotagespur hin zu einer personalisierten Ermittlungs- und Bedrohungslage verschiebt. Der Wirkpfad liegt vor allem in veränderten Ermittlungsprioritäten, Schutzmaßnahmen an kritischer Infrastruktur und möglicher öffentlicher Risikowahrnehmung. Mögliche Folgen sind zusätzliche Sicherung, weitere Fahndungsmaßnahmen und eine belastendere Lage für Netzbetreiber; ob daraus breitere Systemeffekte entstehen, bleibt offen. Tragfähige unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor, daher bleibt die Zuschreibung vorläufig.",
-      "why_relevant": "Die Meldung verändert die Lagebewertung zu Sabotage an kritischer Energieinfrastruktur, weil sie Authentizität, mögliche Täterschaft und laufende Fahndung zusammenführt.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Sicherheit, Versorgungsschutz und Ermittlungsressourcen; die Lage kann Schutzmaßnahmen und öffentliche Wahrnehmung verändern."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad wird in der Quelle nicht belastbar beschrieben."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Meldung berührt den Schutz kritischer Infrastruktur und die Informationslage der Öffentlichkeit, ohne dass bereits eine politische Entscheidung vorliegt."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T10:06:18.000Z",
-      "last_updated": "2026-09-04T10:09:13.371Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-6a9b508f2d9dfc0503cf",
-      "source_published_at": "2026-09-04T10:06:18.000Z",
-      "published_at": "2026-09-04T10:09:13.371Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:06:18.000Z",
           "primary_source": false
         }
       ]
@@ -5222,6 +4075,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-04fa654345f6b9b3f3b6",
+      "case_file": null,
       "source_published_at": "2026-09-04T09:40:30.000Z",
       "published_at": "2026-09-04T09:47:51.866Z",
       "evidence_groups": {
@@ -5310,6 +4164,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-fea21a345042f920125d",
+      "case_file": null,
       "source_published_at": "2026-09-04T09:38:17.000Z",
       "published_at": "2026-09-04T09:47:04.612Z",
       "evidence_groups": {
@@ -5405,6 +4260,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-00e037258a042cf12f8e",
+      "case_file": null,
       "source_published_at": "2026-09-04T09:13:49.000Z",
       "published_at": "2026-09-04T09:22:48.037Z",
       "evidence_groups": {
@@ -5508,6 +4364,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-9e64e7ea13cdf3b32ec3",
+      "case_file": null,
       "source_published_at": "2026-09-04T07:54:00.000Z",
       "published_at": "2026-09-04T08:07:54.216Z",
       "evidence_groups": {
@@ -5628,6 +4485,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-e58efb35b527ea929251",
+      "case_file": null,
       "source_published_at": "2026-09-04T07:35:40.000Z",
       "published_at": "2026-09-04T08:07:21.455Z",
       "evidence_groups": {
@@ -5719,6 +4577,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-6e64c9ae321214a6b67a",
+      "case_file": null,
       "source_published_at": "2026-09-02T08:00:00.000Z",
       "published_at": "2026-09-03T07:58:18.398Z",
       "evidence_groups": {
@@ -5829,6 +4688,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-f10c5b35a0961de9aa6c",
+      "case_file": null,
       "source_published_at": "2026-08-31T17:00:00.000Z",
       "published_at": "2026-09-03T10:52:37.099Z",
       "evidence_groups": {
@@ -5955,6 +4815,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-864e7c7a9a2009a72fa5",
+      "case_file": null,
       "source_published_at": "2026-09-03T08:58:00.000Z",
       "published_at": "2026-09-04T04:07:24.339Z",
       "evidence_groups": {
@@ -6075,6 +4936,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-8b84ae4650626fa86f6f",
+      "case_file": null,
       "source_published_at": "2026-09-03T15:27:13.000Z",
       "published_at": "2026-09-04T01:02:06.108Z",
       "evidence_groups": {
@@ -6154,6 +5016,7 @@
       "version": 2,
       "news_status": "developing",
       "event_id": "event-a245879abee746aa83eb",
+      "case_file": null,
       "source_published_at": "2026-09-02T13:20:00.000Z",
       "published_at": "2026-09-03T07:58:18.398Z",
       "evidence_groups": {
@@ -6278,6 +5141,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-3c4cec37699684f265d9",
+      "case_file": null,
       "source_published_at": "2026-09-02T06:00:00.000Z",
       "published_at": "2026-09-04T04:51:34.536Z",
       "evidence_groups": {
@@ -6398,6 +5262,7 @@
       "version": 3,
       "news_status": "preliminary",
       "event_id": "event-ebbcaeb2f5de9babbe87",
+      "case_file": null,
       "source_published_at": "2026-09-02T13:00:00.000Z",
       "published_at": "2026-09-03T07:49:38.699Z",
       "evidence_groups": {
@@ -6499,6 +5364,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-ef9d83c7cd180ed4c9e4",
+      "case_file": null,
       "source_published_at": "2026-09-02T08:00:00.000Z",
       "published_at": "2026-09-04T04:38:32.687Z",
       "evidence_groups": {
@@ -6629,6 +5495,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-795c48d3db0831ef9b61",
+      "case_file": null,
       "source_published_at": "2026-09-01T19:26:04.000Z",
       "published_at": "2026-09-04T04:06:28.686Z",
       "evidence_groups": {
@@ -6749,6 +5616,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-4a6d367a382907820710",
+      "case_file": null,
       "source_published_at": "2026-09-03T08:11:00.000Z",
       "published_at": "2026-09-04T03:38:02.536Z",
       "evidence_groups": {
@@ -6870,6 +5738,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-89b1f66c8058426180f1",
+      "case_file": null,
       "source_published_at": "2026-09-03T16:05:41.000Z",
       "published_at": "2026-09-04T03:37:06.255Z",
       "evidence_groups": {
@@ -6972,6 +5841,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-2b34917a75229737249c",
+      "case_file": null,
       "source_published_at": "2026-09-02T09:37:00.000Z",
       "published_at": "2026-09-04T02:53:04.131Z",
       "evidence_groups": {
@@ -7086,6 +5956,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-f9a41064b5a1fe587421",
+      "case_file": null,
       "source_published_at": "2026-09-03T04:28:00.000Z",
       "published_at": "2026-09-04T02:52:23.414Z",
       "evidence_groups": {
@@ -7192,6 +6063,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-54b00f814a91f1c08961",
+      "case_file": null,
       "source_published_at": "2026-09-03T13:49:00.000Z",
       "published_at": "2026-09-04T02:52:07.945Z",
       "evidence_groups": {
@@ -7223,113 +6095,6 @@
           "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-schulen-gewalt-bildungssenatorin-plan-regeln.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T13:49:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-b9487671699d6c9b",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-1e8e92e5912224b6-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-1e8e92e5912224b6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-1e8e92e5912224b6-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
-      "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
-      "source_summary": "Der WDR berichtet über Ermittlungen zu Bekennerschreiben im Zusammenhang mit Angriffen auf Umspannwerke. Nach Angaben der Meldung sind inzwischen zwei Schreiben aufgetaucht, und die Spuren führen nach NRW.\n\nGenannt werden Vorfälle in Bergheim, Jänschwalde und Dormagen-Gohr. Die Polizei prüft demnach, ob das Schreiben echt ist; offen bleibt auch, ob es Verbindungen zwischen den Fällen in NRW und Brandenburg gibt. In der Darstellung heißt es außerdem, ein Verfasser behaupte Angriffe auf das Stromnetz vorbereitet zu haben und drohe mit weiteren Taten.",
-      "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
-      "detail_summary": "Gesichert aus der Meldung ist vor allem, dass Ermittler nach einem Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke suchen und dass nach WDR-Angaben inzwischen zwei Schreiben aufgetaucht sind. Die berichteten Spuren führen nach NRW, während zugleich offen bleibt, ob die Fälle in NRW und Brandenburg zusammenhängen. Für die Einordnung ist das relevant, weil es um kritische Infrastruktur geht und schon der Verdacht koordinierter Sabotage Folgekosten, Sicherheitsmaßnahmen und Ermittlungsaufwand auslösen kann. Ein möglicher Wirkpfad reicht von zusätzlicher Schutzprüfung an Umspannwerken bis zu politischem Druck auf Betreiber und Behörden. Belastbar ist aber bislang nur die berichtete Untersuchungslage; die Echtheit des Schreibens und die Zuschreibungen sind noch nicht unabhängig bestätigt. Deshalb bleibt die Wirkungslage vorläufig und mehrere Folgenfelder müssen offen bleiben.",
-      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur und damit einen Bereich mit potenziellen Kaskaden für Versorgungssicherheit, Sicherheitskosten und staatliche Reaktionsfähigkeit.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Risiken für Stromversorgung und Sicherheit betreffen viele Haushalte und Beschäftigte indirekt, der konkrete Schaden ist aber noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht belastbar beschrieben; ein Zusammenhang über Energieinfrastruktur bleibt nur indirekt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Angriffe auf kritische Infrastruktur berühren öffentliche Sicherheit und staatliche Schutzfähigkeit, die konkrete demokratische Auswirkung bleibt offen."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Bekennerschreiben",
-            "value": "zwei",
-            "unit": "Schreiben",
-            "context": "Anzahl der laut Bericht aufgetauchten Schreiben"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "unternehmen",
-          "staat"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T01:26:48.000Z",
-      "last_updated": "2026-09-04T01:53:45.231Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-4cc141e5db1bd8368571",
-      "source_published_at": "2026-09-04T01:26:48.000Z",
-      "published_at": "2026-09-04T01:53:45.231Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens und mögliche Zusammenhänge zwischen den Fällen.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Ermittlungsbehörden bestätigen oder verneinen Echtheit und Zusammenhang öffentlich.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-db239b36c079847b",
-          "announced_at": "2026-09-04T01:26:48.000Z",
-          "follow_up_date": "2026-09-11T01:53:45.231Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:26:48.000Z",
           "primary_source": false
         }
       ]
@@ -7412,6 +6177,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-56233210d0bf06531c2d",
+      "case_file": null,
       "source_published_at": "2026-09-03T15:07:33.000Z",
       "published_at": "2026-09-04T01:09:49.693Z",
       "evidence_groups": {
@@ -7501,6 +6267,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-766fb5a03e5c10e53cd6",
+      "case_file": null,
       "source_published_at": "2026-09-02T16:48:00.000Z",
       "published_at": "2026-09-04T01:09:04.488Z",
       "evidence_groups": {
@@ -7610,6 +6377,7 @@
       "version": 1,
       "news_status": "confirmed",
       "event_id": "event-c061cdbd91019208004c",
+      "case_file": null,
       "source_published_at": "2026-09-02T22:00:00.000Z",
       "published_at": "2026-09-04T00:21:59.880Z",
       "evidence_groups": {
@@ -7697,6 +6465,7 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-b59292667fc88bb33e5f",
+      "case_file": null,
       "source_published_at": "2026-09-03T04:22:45.000Z",
       "published_at": "2026-09-03T23:06:54.492Z",
       "evidence_groups": {
@@ -7792,6 +6561,7 @@
       "version": 1,
       "news_status": "preliminary",
       "event_id": "event-b802f916d71dbcbf3d44",
+      "case_file": null,
       "source_published_at": "2026-09-03T16:33:02.000Z",
       "published_at": "2026-09-03T22:37:15.098Z",
       "evidence_groups": {
@@ -7823,107 +6593,6 @@
           "url": "https://www.swr.de/swraktuell/rheinland-pfalz/kaiserslautern/bgh-gericht-beendet-streit-um-gema-gebuehren-in-suedwestpfalz-seniorenheim-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:33:02.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-9812656e38b0d665",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-d48bad746eead60a-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-a2d45df5cf096c04-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-e60ffe161fe2bf90-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
-      "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
-      "source_summary": "Brandenburg reagiert laut Bericht auf eine Stromnetz-Sabotage nahe dem Kraftwerk Jänschwalde mit neuen Sicherheitsplänen. Innenminister Jan Redmann kündigt ein „360-Grad-Sicherheitszentrum“ an, in dem Erkenntnisse aus Verfassungsschutz, Polizei sowie Brand- und Katastrophenschutz gebündelt werden sollen.\n\nZugleich soll ein Beleihungsgesetz vorbereitet werden. Damit könnten Betreiber kritischer Infrastruktur den Schutz ihrer Anlagen selbst organisieren; bislang dürfen das laut Bericht nur Landes-, Bundespolizei und Bundeswehr. Außerdem nennt das Innenministerium weitere geplante Änderungen bei mehreren Sicherheitsgesetzen. Offene Fragen bleiben Zeitpunkt, genauer Inhalt und parlamentarischer Verlauf.",
-      "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
-      "detail_summary": "Gesichert ist zunächst die politische Reaktion auf die Sabotage an kritischer Infrastruktur: Brandenburg kündigt ein neues Sicherheitszentrum und weitere Gesetzesvorhaben an. Materiell relevant ist das, weil damit Zuständigkeiten, Schutzlogiken und mögliche Eingriffe in die Sicherung von Energieinfrastruktur verändert werden können. Der Wirkpfad läuft über zentralere Lagebilder, schnellere Koordination und neue rechtliche Befugnisse für Betreiber. Möglich sind dadurch höhere Resilienz und weniger Angriffsflächen, zugleich aber neue Abgrenzungsfragen zwischen Staat, Betreibern und Sicherheitsbehörden. Unklar bleibt, wie weit die Vorhaben tatsächlich gehen, ob sie beschlossen werden und welche Ressourcen sie binden. Belegt ist bisher nur die Ankündigung in einer einzelnen journalistischen Quelle; unabhängige Bestätigung oder amtliche Primärdokumente liegen hier nicht vor.",
-      "why_relevant": "Die Meldung betrifft den Schutz kritischer Infrastruktur und damit Regeln, Zuständigkeiten und Sicherheitsarchitektur mit möglicher Wirkung auf Versorgungssicherheit und staatliche Resilienz.",
-      "topic": [
-        "Energie",
-        "Geopolitik",
-        "Politik"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Potenzielle Folgen für Versorgungssicherheit, Polizeiorganisation und den Schutz von Anlagen betreffen viele Haushalte und Betriebe indirekt."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Über den Schutz des Stromnetzes und der Energieinfrastruktur können Ausfälle, Störungen und Folgeschäden begrenzt oder verschärft werden."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Neue Befugnisse und Gesetzesänderungen berühren demokratische Korrekturfähigkeit, Zuständigkeiten und staatliche Kontrolle."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "haushalte"
-        ],
-        "tendency": {
-          "human": "chance",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T16:30:00.000Z",
-      "last_updated": "2026-09-03T22:22:49.015Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-f27aeef64f1f2b4c573e",
-      "source_published_at": "2026-09-03T16:30:00.000Z",
-      "published_at": "2026-09-03T22:22:49.015Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob das angekündigte Sicherheitszentrum und das Beleihungsgesetz formell beschlossen werden",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Kabinetts-, Landtags- oder Gesetzesbeschluss mit Text des Vorhabens",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-11656929adb12c06",
-          "announced_at": "2026-09-03T16:30:00.000Z",
-          "follow_up_date": "2026-09-10T22:22:49.015Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:30:00.000Z",
           "primary_source": false
         }
       ]
@@ -8026,6 +6695,7 @@
       "version": 4,
       "news_status": "preliminary",
       "event_id": "event-945d96c0f77bf403f68d",
+      "case_file": null,
       "source_published_at": "2026-09-02T06:00:00.000Z",
       "published_at": "2026-09-03T07:44:09.616Z",
       "evidence_groups": {
@@ -8135,6 +6805,7 @@
       "version": 1,
       "news_status": null,
       "event_id": null,
+      "case_file": null,
       "source_published_at": "2026-09-01T22:00:00.000Z",
       "published_at": "2026-09-03T11:15:45.293Z",
       "evidence_groups": null,
@@ -8152,75 +6823,6 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
           "source_type": "official_rss",
           "published_at": "2026-09-03T11:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-b2161abe6d0a2603",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "neues-forderprogramm-mit-zehn-millionen-euro-fur-projekte-in-ns-und-sed-gedenkstatten-st-0a2603",
-      "title": "Neues Förderprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten – Staatsminister Weimer: „Gerade jetzt Orte der Erinnerung stärken“",
-      "source_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein neues Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur gestartet. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 insgesamt zehn Millionen Euro vorgesehen. Anträge können seit Veröffentlichung der Meldung eingereicht werden; die Bewerbungsfrist endet am 1. Oktober 2026. Über die Auswahl soll eine unabhängige Jury beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.\n\nGefördert werden Vorhaben in drei Bereichen: Erhalt historischer Orte, Digitalisierung und digitale Lebenswelten sowie Vermittlung und anwendungsbezogene Forschung. Das Programm setzt die im November 2025 beschlossene neue Gedenkstättenkonzeption um. Kulturstaatsminister Wolfram Weimer erklärte zum Start, historische Orte, digitale Zugänge und zeitgemäße Bildungsangebote sollten unterstützt werden. Die Meldung führt außerdem aus, dass die bisherige Projektförderung verdoppelt werde.",
-      "summary": "Der Bund öffnet ein Förderprogramm für NS- und SED-Gedenkstätten. Veröffentlichbar ist eine Ex-ante-Einordnung zu Erinnerung, Bildung und demokratischer Resilienz.",
-      "detail_summary": "Fakt ist ein neues Bundesprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten. Bewerben können sich Gedenkstätten und Erinnerungsorte zur Aufarbeitung. Belegt sind Ziele wie Bewahrung historischer Orte und neue digitale Zugänge. Wirkungspotenzial liegt in Bildung, Teilhabe und demokratischer Erinnerungskultur. Eingetretene Wirkung, Reichweite und Qualität der Projekte sind noch offen.",
-      "why_relevant": "Gedenkstättenarbeit kann historisches Lernen, Betroffenenperspektiven, digitale Zugänge und demokratische Resilienz stärken.",
-      "topic": [
-        "Digitalisierung",
-        "Europa",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Menschen können über Bildungsangebote, Erinnerung und Zugänglichkeit profitieren; tatsächliche Nutzung ist noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein materieller Umweltbezug ist im Material nicht erkennbar."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Aufarbeitung von NS-Terrorherrschaft und SED-Diktatur berührt demokratische Bildung, Erinnerung und Korrekturfähigkeit."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-03T07:06:42.000Z",
-      "last_updated": "2026-09-03T07:58:18.398Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-09-03T07:06:42.000Z",
-      "published_at": "2026-09-03T07:58:18.398Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
-          "source_type": "official_rss",
-          "published_at": "2026-09-03T07:06:42.000Z",
           "primary_source": true
         }
       ]
@@ -8281,6 +6883,7 @@
       "version": 1,
       "news_status": null,
       "event_id": null,
+      "case_file": null,
       "source_published_at": "2026-09-02T07:44:36.000Z",
       "published_at": "2026-09-03T07:58:18.398Z",
       "evidence_groups": null,
@@ -8291,6 +6894,76 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-windenergie-auf-see-gesetz-2451190",
           "source_type": "official_rss",
           "published_at": "2026-09-02T07:44:36.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b2161abe6d0a2603",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "neues-forderprogramm-mit-zehn-millionen-euro-fur-projekte-in-ns-und-sed-gedenkstatten-st-0a2603",
+      "title": "Neues Förderprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten – Staatsminister Weimer: „Gerade jetzt Orte der Erinnerung stärken“",
+      "source_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein neues Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur gestartet. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 insgesamt zehn Millionen Euro vorgesehen. Anträge können seit Veröffentlichung der Meldung eingereicht werden; die Bewerbungsfrist endet am 1. Oktober 2026. Über die Auswahl soll eine unabhängige Jury beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.\n\nGefördert werden Vorhaben in drei Bereichen: Erhalt historischer Orte, Digitalisierung und digitale Lebenswelten sowie Vermittlung und anwendungsbezogene Forschung. Das Programm setzt die im November 2025 beschlossene neue Gedenkstättenkonzeption um. Kulturstaatsminister Wolfram Weimer erklärte zum Start, historische Orte, digitale Zugänge und zeitgemäße Bildungsangebote sollten unterstützt werden. Die Meldung führt außerdem aus, dass die bisherige Projektförderung verdoppelt werde.",
+      "summary": "Der Bund öffnet ein Förderprogramm für NS- und SED-Gedenkstätten. Veröffentlichbar ist eine Ex-ante-Einordnung zu Erinnerung, Bildung und demokratischer Resilienz.",
+      "detail_summary": "Fakt ist ein neues Bundesprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten. Bewerben können sich Gedenkstätten und Erinnerungsorte zur Aufarbeitung. Belegt sind Ziele wie Bewahrung historischer Orte und neue digitale Zugänge. Wirkungspotenzial liegt in Bildung, Teilhabe und demokratischer Erinnerungskultur. Eingetretene Wirkung, Reichweite und Qualität der Projekte sind noch offen.",
+      "why_relevant": "Gedenkstättenarbeit kann historisches Lernen, Betroffenenperspektiven, digitale Zugänge und demokratische Resilienz stärken.",
+      "topic": [
+        "Digitalisierung",
+        "Europa",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Menschen können über Bildungsangebote, Erinnerung und Zugänglichkeit profitieren; tatsächliche Nutzung ist noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein materieller Umweltbezug ist im Material nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Aufarbeitung von NS-Terrorherrschaft und SED-Diktatur berührt demokratische Bildung, Erinnerung und Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T07:06:42.000Z",
+      "last_updated": "2026-09-03T07:58:18.398Z",
+      "version": 1,
+      "news_status": null,
+      "event_id": null,
+      "case_file": null,
+      "source_published_at": "2026-09-03T07:06:42.000Z",
+      "published_at": "2026-09-03T07:58:18.398Z",
+      "evidence_groups": null,
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T07:06:42.000Z",
           "primary_source": true
         }
       ]

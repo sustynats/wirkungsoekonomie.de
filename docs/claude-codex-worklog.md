@@ -7,6 +7,13 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+### 2026-09-04 · Codex · Automatische rückwirkende Lageakten
+- **Was:** Generische Darstellungsebene oberhalb der unveränderten Wirkungsakten. Zwei Entwicklungen bleiben einzeln; ab drei sicher verbundenen Meldungen entsteht beim Build rückwirkend eine Lageakte. Der neueste materielle Stand repräsentiert die Lage und rückt im Feed nach oben. Wiederholungen ohne neue Information tun das nicht.
+- **Trennung:** Ereignisse, Quellen, Claims, Analysen, Versionen und alte URLs bleiben getrennt und vollständig nachvollziehbar. Die Zeitleiste ordnet nur den gemeinsamen Nachrichtenverlauf; es gibt keine Faktenübertragung zwischen Ereignissen.
+- **Automatik:** Gesamtbestand und zukünftige Meldungen werden mit denselben Regeln geprüft. Enges Zeitfenster, seltene gemeinsame Begriffe, Titelüberlappung und Fallcharakter sind Pflicht; stark benannte Vorgänge können nach ruhigerer Phase fortgeführt werden. Feed, RSS/Atom/JSON, Web-App und Push sehen genau einen aktuellen Lageaktenstand.
+- **Bestandsprobe:** 14 zusammenhängende Stromnetz-/Umspannwerk-Entwicklungen bilden eine Lageakte. Allgemeine Cyber-, internationale Angriffs- und Hintergrundmeldungen bleiben getrennt. Fremdthemen-Regressionsprobe mit einem synthetischen Insolvenzfall.
+- **Pfade:** `scripts/news/case-files.mjs`, `scripts/news/build.mjs`, `scripts/news/validate.mjs`, `tests/news/case-files.test.mjs`, `docs/ops/WIRKUNGSTICKER-LIVING-FILES.md`.
+
 ### 2026-09-04 · Codex · Eingabegrenzen und reale Tokenbudgetierung
 - **Ursachen:** 325 identische Abhängigkeitsvermerke aus 26 Dokumenten; gemeinsame 8-Cent-Pauschale zusätzlich zum tokenbasierten Nachrichtenjournal.
 - **Fix:** Exakte Abhängigkeitsvermerke mit Anzahl statt Wiederholungen; zweite verlustfreie Transportstufe für große Eingaben. Alle Dokumente, Claims, Rollen und Widersprüche bleiben erhalten. Keine neuen KI-Stufen mit zusätzlichen Kosten.
