@@ -56,3 +56,14 @@ test("all full former collection renderers remain reachable in the explicit cont
   assert.match(register, /href="\/wirkungsakten\/bestand"/);
   assert.match(register, /SamePageQueryForm/);
 });
+
+test("institutional entry has a fixed cross-page register destination and normal scrolling", () => {
+  const component = readFileSync("app/components/InstitutionRegisterLink.tsx", "utf8");
+  assert.match(component, /pathname: "\/wirkungsakten"/);
+  assert.match(component, /ebene: level/);
+  assert.doesNotMatch(component, /SamePageStateLink|scroll=\{false\}|router\.push/);
+  for (const area of ["bundestag", "bundesregierung", "laender", "eu"]) {
+    const page = readFileSync(`app/ebenen/${area}/page.tsx`, "utf8");
+    assert.match(page, /<InstitutionRegisterLink level=/);
+  }
+});

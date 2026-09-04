@@ -112,6 +112,16 @@ try {
     assert.equal(await page.getByRole("link", { name: "Zum gemeinsamen Wirkungsakten-Register", exact: true }).count(), 1);
     assert.equal(await page.locator('nav[aria-label="Bestandsansichten"] a[aria-current="page"]').count(), 1);
   }
+  results.institutionalEntries = [];
+  for (const [area, filters] of [["bundestag", { ebene: "bund", organ: "bundestag" }], ["bundesregierung", { ebene: "bund", organ: "bundesregierung" }], ["laender", { ebene: "land" }], ["eu", { ebene: "eu", organ: "eu" }]]) {
+    await page.goto(`${base}/ebenen/${area}`, { waitUntil: "networkidle" });
+    await page.locator('a[href^="/wirkungsakten?ebene="]').first().click();
+    await page.waitForURL((url) => url.pathname === "/wirkungsakten" && Object.entries(filters).every(([key, value]) => url.searchParams.get(key) === value));
+    const expected = filterRegister(registerProof.objects, filters).map((item) => item.id).sort();
+    await page.waitForFunction((count) => document.querySelectorAll("[data-register-id]").length === count, expected.length);
+    assert.deepEqual(await page.locator("[data-register-id]").evaluateAll((rows) => rows.map((row) => row.getAttribute("data-register-id")).sort()), expected);
+    results.institutionalEntries.push({ area, filters, objects: expected.length, status: "PASS" });
+  }
   for (const width of [375, 1440]) {
     await page.setViewportSize({ width, height: 960 });
     await page.goto(`${base}/wirkungsakten?bestand=entscheidungen`, { waitUntil: "networkidle" });

@@ -31,14 +31,14 @@ Zusätzlicher lokaler DOM-Vergleich gegen den unveränderten P2-Produktionsbuild
 ## Nachweise
 
 - Deterministische Vollmengenprüfung: `scripts/quality/check-register.ts`, einschließlich Identitäten, kanonischen URLs, bisherigen Sammlungen und aller paarweisen Facettenkombinationen.
-- 289 Tests, Typecheck und Lint lokal bestanden.
+- 290 Tests, Typecheck und Lint lokal bestanden.
 - Vollständiger lokaler Produktionsbuild mit den bisherigen Source-vs-View-, B07-, Länder- und Golden-State-Gates bestanden.
 - Browsergate prüft sämtliche öffentlichen Sitemap-/Navigationsrouten, alle alten 308-Regeln, alle Registerzeilen und deren Wortbudget, sechs Facetten, absolute Verteilung, URL-Reload, Zurück/Vorwärts und Fokus. Die fünf vollständigen Kontextansichten werden ebenfalls geöffnet.
 - 375/1440-Pixel-Preview und WCAG-A/AA-Prüfung in derselben exact-head-GitHub-Aktion wie P1/P2; deren Bericht und `commit.txt` sind der Mergebeleg. Kein Merge bei Rot.
 
 Lokaler vollständiger Browserlauf: 342 Routen, 33 Redirect-Regeln, 136/136 Registerzeilen bei beiden Breiten, maximal 47 Wörter, keine WCAG-A/AA-Verstöße in den neuen Registerflächen, keine Runtime- oder 5xx-Fehler. Filter-Reload, Zurück/Vorwärts, Fokus und Scrollposition bestehen.
 
-Das bestehende Current-Golden-Readiness-Artefakt pinnt den SHA-256 des Same-Page-Navigation-Gates. Die ergänzte explizite Cross-Page-Klassifikation erfordert dessen deterministische Neuberechnung. Der Diff enthält ausschließlich den Gate-Hash und den daraus folgenden Descriptor-Hash. Berlin 4/12, 1.193 Review-Envelopes, der MV-Fachblocker und sämtliche Release-Sperren sind unverändert. Die historische Golden-State-Freigabe wird nicht überschrieben.
+Historischer und aktueller Golden-Nachweis pinnen den Same-Page-Vertrag bytegenau. Gate und Shared-Komponente bleiben daher exakt unverändert. `InstitutionRegisterLink` ist ein eigener, fest auf `/wirkungsakten` begrenzter Server-Baustein für die vier institutionellen Einstiege, ohne frei wählbares Navigationsziel oder Scroll-Unterdrückung. Er wird gesondert statisch und durch echte Register-Navigation im Browser geprüft. Der zwischenzeitliche Ansatz einer Erweiterung des alten Vertrags wurde vollständig zurückgenommen; kein Release-Descriptor verbleibt im P3-Diff. Berlin 4/12, 1.193 Review-Envelopes, der MV-Fachblocker und sämtliche Release-Sperren sind unverändert.
 
 ## Betrieb
 
