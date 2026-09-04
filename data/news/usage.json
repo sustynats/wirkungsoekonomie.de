@@ -2143,6 +2143,33 @@
       },
       "source_failures": 0,
       "quality_holds": 5
+    },
+    {
+      "run_id": "news-run-708588e6e023",
+      "started_at": "2026-09-04T12:06:38.422Z",
+      "completed_at": "2026-09-04T12:11:29.017Z",
+      "berlin_slot": "Automatischer Lauf 14:00",
+      "counts": {
+        "feed_entries_fetched": 915,
+        "feed_entries_new": 54,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 530,
+        "story_clusters": 63,
+        "locally_rejected": 60,
+        "ai_stories": 8,
+        "published_stories": 2
+      },
+      "ai": {
+        "requests": 8,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 58445,
+        "output_tokens": 8699,
+        "estimated_cost_usd": 0.062243,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 6
     }
   ]
 }
