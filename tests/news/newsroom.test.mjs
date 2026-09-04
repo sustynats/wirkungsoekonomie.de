@@ -104,6 +104,14 @@ test("public press-room HTML records keep per-article dates and do not read imag
   const result = parseHtmlIndex(html, { ...source, html_layout: "pressroom_article_list", access: { html_index: true } });
   assert.equal(result[0].url, "https://example.org/release/"); assert.equal(result[0].published_at, "2026-09-02T00:00:00.000Z"); assert.equal(result[0].image, undefined);
 });
+test("Berlin press portal adapter reads only public table metadata", () => {
+  const html = '<table><tr><th>Datum</th></tr><tr><td>04.09.2026</td><td><a href="/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1710705.php">Aktuelle Lage nach dem IKT-Vorfall im Landesnetz Berlin</a></td><td>Presse- und Informationsamt des Landes Berlin</td></tr></table>';
+  const [result] = parseHtmlIndex(html, { ...source, url: "https://www.berlin.de/presse/", html_layout: "berlin_press_table", access: { html_index: true } });
+  assert.equal(result.url, "https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1710705.php");
+  assert.equal(result.published_at, "2026-09-03T22:00:00.000Z");
+  assert.equal(result.authority, "Presse- und Informationsamt des Landes Berlin");
+  assert.equal(result.image, undefined);
+});
 test("uncertain and single-origin claims cannot masquerade as confirmed", () => {
   const changed = structuredClone(analysis);
   changed.event_claims[0].status = "confirmed_claim";

@@ -65,6 +65,26 @@ test("automatic merging excludes other places, response policies and multi-event
   assert.deepEqual([groups[0].canonical_id, ...groups[0].duplicate_ids].sort(), ["dormagen", "dup"].sort());
 });
 
+test("reports about the same public-network cyber incident become one living file", () => {
+  const rbb = story("rbb", "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz", {
+    last_updated: "2026-09-04T18:08:49Z",
+    sources: [source("Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz", "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-landesnetz-daten-veroeffentlicht.html")],
+  });
+  const dlf = story("dlf", "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen", {
+    last_updated: "2026-09-04T17:35:19Z",
+    sources: [source("Cyberkriminalität: Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz", "https://www.deutschlandfunk.de/berlin-it-netz-cyberangriff-100.html")],
+  });
+  const official = source("Aktuelle Lage nach dem IKT-Vorfall im Landesnetz Berlin und der Veröffentlichung der gestohlenen Daten", "https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1710705.php");
+  assert.equal(fileSubject(rbb).key, "cyber_incident:berlin");
+  assert.equal(fileSubject(dlf).key, "cyber_incident:berlin");
+  assert.equal(fileSubject(official).key, "cyber_incident:berlin");
+  assert.deepEqual(duplicateGroups([rbb, dlf]), [{ canonical_id: "rbb", duplicate_ids: ["dlf"], reason: "specific_object_or_leading_document" }]);
+  assert.equal(clusterItems([official], [rbb], now)[0].story_id, "rbb");
+  assert.equal(livingFileMatch(source("Cyberangriff auf Hamburger Landesnetz"), rbb).score, 0);
+  assert.equal(fileSubject(source("Cyberangriff auf Berliner Krankenhausnetz")).key, null);
+  assert.equal(fileSubject(source("Hacker melden Daten aus Landesnetz nach Ultimatum")).key, null);
+});
+
 test("subsequent consolidation resolves older aliases directly and preserves the old target history", () => {
   const a = structuredClone(dormagen), b = story("b", dormagen.title), c = story("c", dormagen.title);
   const stories = [a, b, c];
