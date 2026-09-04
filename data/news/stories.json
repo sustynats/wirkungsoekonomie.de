@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T19:06:24.876Z",
+  "updated_at": "2026-09-04T19:21:19.205Z",
   "stories": [
     {
       "story_id": "wt-00fccb632042b492",
@@ -982,6 +982,121 @@
       "retirement_history": []
     },
     {
+      "story_id": "wt-9d9b1a5968a2d3b8",
+      "slug": "energieversorgung-grosserer-polizeieinsatz-mit-hubschrauber-an-stromanlage-a2d3b8",
+      "title": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage",
+      "first_seen": "2026-09-04T19:08:14.000Z",
+      "last_updated": "2026-09-04T19:08:14.000Z",
+      "topic": [
+        "Energie",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/energieversorgung--groesserer-polizeieinsatz-mit-hubschrauber-an-stromanlage-38210260.html",
+          "title": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage",
+          "summary": "Schon wieder ein Vorfall an Stromleitungen in NRW, diesmal in Hamm. Die Polizei geht der Sache mit einem größeren Aufgebot nach - um was genau es sich handelt, sagt sie zunächst nicht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:08:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9a0ab3119ca0830d43e1a90c02acae49656198b0baed7b78b00eeed36c5e873f",
+          "source_item_id": "b5c930292bbc030b081fcfd736f72a9c0afdf66f70795a3c1a56d4ded3c644be",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:08:14.000Z",
+          "ingested_at": "2026-09-04T19:21:19.205Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9d9b1a5968a2d3b8-claim-01",
+          "story_id": "wt-9d9b1a5968a2d3b8",
+          "claim": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage: Schon wieder ein Vorfall an Stromleitungen in NRW, diesmal in Hamm. Die Polizei geht der Sache mit einem größeren Aufgebot nach - um was genau es sich handelt, sagt sie zunächst nicht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T19:21:19.205Z"
+        }
+      ],
+      "content_hash": "800b55d0cd83210c8d9ed42ae8e6aeb792de4edd9260950a729be13ce92544b5",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-04T19:21:19.205Z",
+      "event_first_seen_at": "2026-09-04T19:21:19.205Z",
+      "event_detected_at": "2026-09-04T19:21:19.205Z",
+      "event_id": "event-403947adbac29ba7c2ab",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.08675,
+        "detection_delay_minutes": 13.08675,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      }
+    },
+    {
       "story_id": "wt-63b6c057c20a2143",
       "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
       "title": "KI-Sicherheitsinstitut eröffnet",
@@ -1770,6 +1885,172 @@
         }
       ],
       "retirement_history": []
+    },
+    {
+      "story_id": "wt-eefb978e3155ecf0",
+      "slug": "bekennerschreiben-aufgetaucht-offenbar-weiterer-anschlagsversuch-an-umspannwerk-in-nrw-55ecf0",
+      "title": "Bekennerschreiben aufgetaucht: Offenbar weiterer Anschlagsversuch an Umspannwerk in NRW",
+      "first_seen": "2026-09-03T20:57:09.000Z",
+      "last_updated": "2026-09-04T18:55:00.000Z",
+      "topic": [
+        "Politik",
+        "Energie",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/fundstuck-beschlagnahmt-polizeieinsatz-wegen-verdachtigen-gegenstands-an-umspannwerk-in-dormagen-16015953.html",
+          "title": "Bekennerschreiben aufgetaucht: Offenbar weiterer Anschlagsversuch auf Umspannwerk in NRW",
+          "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von Sabotage aus. Ein Bekennerschreiben liegt vor, die Polizei fahndet nach dem Verfasser.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:57:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4e24d95542c3c45f1cebcfdb15e6e1748f78628b3feef5832510b3fcb646ad6a",
+          "source_item_id": "aa8dd303633c9436abd03f45792c318f6f62a4fbbf62371e2b730eeefaacf04c",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T20:57:09.000Z",
+          "ingested_at": "2026-09-04T02:21:15.650Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/panorama/justiz/attacken-auf-stromnetz-etwas-draht-ein-paar-feuerwerksraketen-fertig-ist-das-sicherheitsproblem-a-d29ce510-ae78-4ed5-ae8c-1b0f49345bfd",
+          "title": "Attacken auf Stromnetz: Etwas Draht, ein paar Feuerwerksraketen, fertig ist das Sicherheitsproblem",
+          "summary": "Der Mann, der verdächtigt wird, das Stromnetz angegriffen zu haben, ist in NRW weiter auf der Flucht. Sein Fahrzeug wurde gefunden, von ihm fehlt aktuell jede Spur. Doch auch nach einer Festnahme wird dieser Fall nicht beendet sein.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:55:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "8159425004929fa0f21f8dbc87ee3daa3cea30cd2886f85e13ccd623373345a7",
+          "source_item_id": "6f41740bb2499ba1c202e124f7db1a5e7ae18f590077be599c4fc5a7137da398",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:55:00.000Z",
+          "ingested_at": "2026-09-04T19:21:19.205Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-eefb978e3155ecf0-claim-01",
+          "story_id": "wt-eefb978e3155ecf0",
+          "claim": "Bekennerschreiben aufgetaucht: Offenbar weiterer Anschlagsversuch auf Umspannwerk in NRW: Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von Sabotage aus. Ein Bekennerschreiben liegt vor, die Polizei fahndet nach dem Verfasser.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T19:21:19.205Z"
+        },
+        {
+          "claim_id": "wt-eefb978e3155ecf0-claim-02",
+          "story_id": "wt-eefb978e3155ecf0",
+          "claim": "Attacken auf Stromnetz: Etwas Draht, ein paar Feuerwerksraketen, fertig ist das Sicherheitsproblem: Der Mann, der verdächtigt wird, das Stromnetz angegriffen zu haben, ist in NRW weiter auf der Flucht. Sein Fahrzeug wurde gefunden, von ihm fehlt aktuell jede Spur. Doch auch nach einer Festnahme wird dieser Fall nicht beendet sein.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T19:21:19.205Z"
+        }
+      ],
+      "content_hash": "da8ee9a960314048cc93b3d73f7aa303a30aca6b0ca9b96d204d16e2ca77b4d6",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-04T19:21:19.205Z",
+      "event_first_seen_at": "2026-09-04T01:51:32.529Z",
+      "event_detected_at": "2026-09-04T01:51:32.529Z",
+      "event_id": "event-20665109259b5f54ba4c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik",
+          "Energie",
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 26.320083333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 1049.7779333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      }
     },
     {
       "story_id": "wt-d175d26e4635ba0a",
@@ -8357,7 +8638,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -9750,10 +10031,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
@@ -10954,7 +11233,7 @@
       },
       "pending_update": {
         "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "94267b8238bca8c9f35bf0dac3d719411c527a320bd90dbb536bc05b74fabfb9",
+        "content_hash": "cb8be6b0f80d2daabf54b50e544afc5abf5e88aedbc709ebad4987401eeb2498",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -10992,13 +11271,13 @@
             "publisher": "WDR",
             "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
             "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-            "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen SEK-Einsatz beim Hambacher Forst. Aktuelle Infos zu den Ermittlungen im Ticker.",
+            "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen SEK-Einsatz am Hambacher Forst. Aktuelle Infos zu den Ermittlungen im Ticker.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T18:29:16.000Z",
+            "published_at": "2026-09-04T19:07:08.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
-            "content_hash": "156b09cd46b3a63454c63c04077a62e97000ec5eb22bd28b856dc06e83e0503f",
+            "content_hash": "cb52c30f08b1bb276dc115f0e11409b10f1b9959b0f75f92fdbb0a2865c15e24",
             "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
             "publisher_id": "wdr",
             "publisher_kind": "public_broadcasting",
@@ -11010,8 +11289,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T18:29:16.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "source_published_at": "2026-09-04T19:07:08.000Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -11019,15 +11298,11 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "CLAIM_EVIDENCE_NOT_IN_SOURCE"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
-        "fresh": false,
+        "fresh": true,
         "consolidation": false
       }
     },
@@ -23416,7 +23691,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:07:42.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:hr",
               "basis": "publisher_only_origin_unverified",
@@ -23424,10 +23699,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 2,
         "reassessment": false,
         "fresh": false,
@@ -31181,7 +31454,7 @@
             "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
             "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T18:30:01.000Z",
+            "published_at": "2026-09-04T19:15:07.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -31197,8 +31470,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T18:30:01.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "source_published_at": "2026-09-04T19:15:07.000Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -31206,7 +31479,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -35785,7 +36058,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -36444,7 +36717,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -47308,7 +47581,7 @@
             "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
             "summary": "Die Polizei hält Bekennerschreiben zur Sabotage von Umspannwerken in Jänschwalde und Nordrhein-Westfalen für authentisch. Ein 48-Jähriger präsentiert sich darin als alleiniger Täter. Offenbar wurden gezielt Anlagen ausgewählt, die an Kohlekraftwerke angeschlossen sind.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T18:11:14.000Z",
+            "published_at": "2026-09-04T19:08:24.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -47324,8 +47597,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T18:11:14.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "source_published_at": "2026-09-04T19:08:24.000Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -47333,10 +47606,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_DETAIL_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
@@ -50167,7 +50438,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -51983,7 +52254,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -51991,7 +52262,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -54060,7 +54331,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -54068,7 +54339,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -57353,7 +57624,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -57361,7 +57632,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -58838,7 +59109,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -58846,7 +59117,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -59976,7 +60247,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -60705,7 +60976,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-04T19:21:19.205Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -60713,7 +60984,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -61226,7 +61497,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -62351,7 +62622,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -63015,7 +63286,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -63661,7 +63932,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -74039,199 +74310,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-eefb978e3155ecf0",
-      "slug": "bekennerschreiben-aufgetaucht-offenbar-weiterer-anschlagsversuch-an-umspannwerk-in-nrw-55ecf0",
-      "title": "Bekennerschreiben aufgetaucht: Offenbar weiterer Anschlagsversuch an Umspannwerk in NRW",
-      "first_seen": "2026-09-03T20:57:09.000Z",
-      "last_updated": "2026-09-03T20:57:09.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/fundstuck-beschlagnahmt-polizeieinsatz-wegen-verdachtigen-gegenstands-an-umspannwerk-in-dormagen-16015953.html",
-          "title": "Bekennerschreiben aufgetaucht: Offenbar weiterer Anschlagsversuch auf Umspannwerk in NRW",
-          "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von Sabotage aus. Ein Bekennerschreiben liegt vor, die Polizei fahndet nach dem Verfasser.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T20:57:09.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "4e24d95542c3c45f1cebcfdb15e6e1748f78628b3feef5832510b3fcb646ad6a",
-          "source_item_id": "aa8dd303633c9436abd03f45792c318f6f62a4fbbf62371e2b730eeefaacf04c",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T20:57:09.000Z",
-          "ingested_at": "2026-09-04T02:21:15.650Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-eefb978e3155ecf0-claim-01",
-          "story_id": "wt-eefb978e3155ecf0",
-          "claim": "Bekennerschreiben aufgetaucht: Offenbar weiterer Anschlagsversuch auf Umspannwerk in NRW: Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von Sabotage aus. Ein Bekennerschreiben liegt vor, die Polizei fahndet nach dem Verfasser.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T02:21:15.650Z"
-        }
-      ],
-      "content_hash": "1d94ce1b2b14f3a0da60d915c9f3b6c0e3de606f203d85047ee43ecfcf6da602",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_REQUIRED_STRING:source_summary",
-        "AI_REQUIRED_STRING:summary",
-        "AI_REQUIRED_STRING:why_relevant",
-        "AI_REQUIRED_STRING:status",
-        "AI_REQUIRED_STRING:analysis_type",
-        "AI_REQUIRED_STRING:importance",
-        "AI_REQUIRED_STRING:impact_potential",
-        "AI_REQUIRED_STRING:systemic_relevance",
-        "AI_REQUIRED_STRING:transformation_potential",
-        "AI_REQUIRED_STRING:resilience",
-        "AI_REQUIRED_STRING:evidence_level",
-        "AI_REQUIRED_STRING:attribution",
-        "AI_REQUIRED_STRING:detail_summary",
-        "AI_STATUS_INVALID",
-        "AI_ANALYSIS_TYPE_INVALID",
-        "AI_IMPORTANCE_INVALID",
-        "AI_PUBLICATION_GATE_REQUIRED",
-        "AI_DIMENSION_INVALID:human",
-        "AI_DIMENSION_INVALID:planet",
-        "AI_DIMENSION_INVALID:democracy",
-        "AI_ARRAY_REQUIRED:impact_risks",
-        "AI_ARRAY_REQUIRED:mechanisms",
-        "AI_ARRAY_REQUIRED:first_order",
-        "AI_ARRAY_REQUIRED:second_order",
-        "AI_ARRAY_REQUIRED:third_order",
-        "AI_ARRAY_REQUIRED:side_effects",
-        "AI_ARRAY_REQUIRED:uncertainties",
-        "AI_ARRAY_REQUIRED:watch_next",
-        "AI_ARRAY_REQUIRED:reference_frameworks",
-        "AI_UNCERTAINTY_REQUIRED",
-        "AI_WATCH_NEXT_REQUIRED",
-        "AI_SUMMARY_SENTENCE_COUNT",
-        "AI_SOURCE_SUMMARY_LENGTH",
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "NEWS_STATUS_REQUIRED",
-        "EVENT_CLAIMS_REQUIRED"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T02:21:15.650Z",
-      "event_first_seen_at": "2026-09-04T01:51:32.529Z",
-      "event_detected_at": "2026-09-04T01:51:32.529Z",
-      "event_id": "event-20665109259b5f54ba4c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 324.11083333333335,
-        "detection_delay_minutes": 294.39215,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 29.718683333333335,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 32,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T02:21:15.650Z",
-      "rejection": {
-        "at": "2026-09-04T02:21:15.650Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_REQUIRED_STRING:source_summary",
-          "AI_REQUIRED_STRING:summary",
-          "AI_REQUIRED_STRING:why_relevant",
-          "AI_REQUIRED_STRING:status",
-          "AI_REQUIRED_STRING:analysis_type",
-          "AI_REQUIRED_STRING:importance",
-          "AI_REQUIRED_STRING:impact_potential",
-          "AI_REQUIRED_STRING:systemic_relevance",
-          "AI_REQUIRED_STRING:transformation_potential",
-          "AI_REQUIRED_STRING:resilience",
-          "AI_REQUIRED_STRING:evidence_level",
-          "AI_REQUIRED_STRING:attribution",
-          "AI_REQUIRED_STRING:detail_summary",
-          "AI_STATUS_INVALID",
-          "AI_ANALYSIS_TYPE_INVALID",
-          "AI_IMPORTANCE_INVALID",
-          "AI_PUBLICATION_GATE_REQUIRED",
-          "AI_DIMENSION_INVALID:human",
-          "AI_DIMENSION_INVALID:planet",
-          "AI_DIMENSION_INVALID:democracy",
-          "AI_ARRAY_REQUIRED:impact_risks",
-          "AI_ARRAY_REQUIRED:mechanisms",
-          "AI_ARRAY_REQUIRED:first_order",
-          "AI_ARRAY_REQUIRED:second_order",
-          "AI_ARRAY_REQUIRED:third_order",
-          "AI_ARRAY_REQUIRED:side_effects",
-          "AI_ARRAY_REQUIRED:uncertainties",
-          "AI_ARRAY_REQUIRED:watch_next",
-          "AI_ARRAY_REQUIRED:reference_frameworks",
-          "AI_UNCERTAINTY_REQUIRED",
-          "AI_WATCH_NEXT_REQUIRED",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "NEWS_STATUS_REQUIRED",
-          "EVENT_CLAIMS_REQUIRED"
         ]
       }
     },
