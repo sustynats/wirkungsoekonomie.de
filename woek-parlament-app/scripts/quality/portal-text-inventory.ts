@@ -11,8 +11,11 @@ function texts(content: string, name: string) {
   const file = ts.createSourceFile(name, content, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
   const result: string[] = [];
   function walk(node: ts.Node) {
-    // JSX text and long literals cover prose as well as data-bound section copy.
-    if (ts.isJsxText(node) || (ts.isStringLiteral(node) && node.text.length >= 35 && /[ .!?]/.test(node.text))) {
+    // Short visible heading/lead props remain prose when extracted into a
+    // shared component. CSS names and regroupable navigation labels are not.
+    const visibleAttribute = ts.isStringLiteral(node) && ts.isJsxAttribute(node.parent)
+      && ["title", "lead", "eyebrow", "description"].includes(node.parent.name.getText(file));
+    if (ts.isJsxText(node) || visibleAttribute || (ts.isStringLiteral(node) && node.text.length >= 35 && /[ .!?]/.test(node.text))) {
       const text = node.text.replace(/\s+/g, " ").trim();
       if (text && !text.startsWith("@/") && !text.startsWith("https:") && !text.startsWith("/")) result.push(text);
     }
@@ -37,7 +40,7 @@ const records = changed.flatMap((file) => {
   });
 });
 const missing = records.filter((record) => record.status === "MISSING");
-const report = { base_commit: base, phase: "P5", policy: "No published paragraph removed; navigation labels may be regrouped. Canonical data untouched.", total_text_objects: records.length, missing: missing.length, records };
+const report = { base_commit: base, phase: "P6", policy: "No published paragraph removed; navigation labels may be regrouped. Canonical data untouched.", total_text_objects: records.length, missing: missing.length, records };
 const output = process.env.PORTAL_TEXT_REPORT;
 if (output) { mkdirSync(dirname(output), { recursive: true }); writeFileSync(output, JSON.stringify(report, null, 2) + "\n"); }
 if (missing.length) { console.error(JSON.stringify(missing, null, 2)); process.exitCode = 1; }

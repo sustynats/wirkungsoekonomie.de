@@ -3,11 +3,12 @@ import { createRequire } from "node:module";
 import { execFileSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { canonicalPortalHref, portalRedirects, portalNavigation, allNavigationItems } from "../../lib/navigation.ts";
+import { canonicalPortalHref, portalRedirects, portalNavigation, allNavigationItems, sectionNavigation } from "../../lib/navigation.ts";
 import { filterRegister } from "../../lib/register-model.ts";
 import { verifyHome } from "./check-home-browser.mjs";
 import { verifyDecisionDepth } from "./check-decision-depth-browser.mjs";
 import { verifyDecisionText } from "./check-decision-text-preservation.mjs";
+import { verifyAreas } from "./check-area-browser.mjs";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PORTAL_PLAYWRIGHT_MODULE ?? "playwright");
@@ -44,8 +45,10 @@ for (const path of paths) {
   if (path.startsWith("/entscheidungen/")) assert.match(body, /<dt>Stand der WÖk-Analyse<\/dt>/, "old card analysis status must remain on detail");
   assert.match(body, /aria-label="Brotkrumen"/, path);
   assert.equal((body.match(/aria-label="Brotkrumen"/g) ?? []).length, 1, path);
+  assert.equal((body.match(/<h1(?:\s|>)/g) ?? []).length, 1, path);
+  assert.equal((body.match(/aria-label="Bereichsnavigation"/g) ?? []).length, sectionNavigation(path).length ? 1 : 0, path);
   assert.doesNotMatch(body, /Wirkungsportal Parlament[^<]*Wirkungsportal Parlament<\/title>/, path);
-  results.routes.push({ route: path, status: response.status, breadcrumbs: "PASS" });
+  results.routes.push({ route: path, status: response.status, breadcrumbs: "PASS", single_h1: "PASS", single_section_navigation: "PASS" });
 }
 for (const path of ["/pruefstandard/transparenz/datenbetrieb", "/autopilot/status"]) {
   const response = await fetch(`${base}${path}`, { headers: { purpose: "prefetch" } });
@@ -61,6 +64,7 @@ try {
   page.on("response", (response) => { if (response.status() >= 500) results.errors.push(`HTTP ${response.status()} ${new URL(response.url()).pathname}`); });
   results.signatures = [];
   const axeSource = readFileSync(process.env.PORTAL_AXE_MODULE ?? require.resolve("axe-core/axe.min.js"), "utf8");
+  results.areas = await verifyAreas({ browser, page, base, output, axeSource });
   results.home = await verifyHome({ page, base, output, axeSource });
   const decisionPaths = [...paths].filter((path) => path.startsWith("/entscheidungen/"));
   results.decisionDepth = await verifyDecisionDepth({ page, base, output, axeSource, paths: decisionPaths });
