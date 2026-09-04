@@ -14,7 +14,7 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
   const reportFile = path.join(root, "reports/wirkungsticker-latest-run.json");
   const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
   const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (refreshEditorial
-    ? story.title_image?.mode === "editorial" && story.title_image.source_visual?.prompt_version !== C.prompt_version && chooseTitleImageMode(story).mode === "editorial"
+    ? chooseTitleImageMode(story).mode === "editorial" && (story.title_image?.mode !== "editorial" || ![C.prompt_version, "woek-editorial-3-concrete"].includes(story.title_image?.source_visual?.prompt_version))
     : (!editorialOnly || story.title_image?.mode === "editorial") && (renderOnly ? story.title_image : !story.title_image?.wide || story.title_image.retry_after)));
   const worker = prepare || createTitleImagePipeline({ root, allowGeneration: !renderOnly, maxGenerations: limit });
   const results = []; let changed = 0;
@@ -22,9 +22,9 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
   if (!dryRun && !renderOnly) {
     // The user-approved snapshot survives the runner and the workstation. If
     // this bounded batch stops, normal server-triggered runs finish one queued
-    // image at a time; no recurring paid all-history backfill is introduced.
+    // bounded images at a time; no recurring paid all-history backfill is introduced.
     const queuedAt = new Date().toISOString();
-    for (const story of selected) story.title_image = { ...story.title_image, retry_after: story.title_image?.retry_after || queuedAt, ...(refreshEditorial ? { refresh_prompt_version: C.prompt_version } : {}) };
+    for (const story of selected) story.title_image = { ...story.title_image, retry_after: queuedAt, ...(refreshEditorial ? { refresh_prompt_version: C.prompt_version } : {}) };
     fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
   }
   const deadline = Date.now() + maxDurationMs;

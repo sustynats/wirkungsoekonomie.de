@@ -30,7 +30,13 @@ Es gibt keinen Codex-/Mac-Scheduler und keine zusätzliche Vercel-Laufzeit.
 Editorial erhält eine individuelle, bereits geprüfte neutrale Nachricht als
 Kontext. Safe Areas, textfreier Hintergrund, keine Personen, Logos, Karten,
 Charts oder Nachstellungen realer Ereignisse sind feste Promptregeln. Bei
-sensiblen/unklaren Themen wird ohne Bildauftrag die Wirkungskarte gewählt.
+unklaren Themen wird ohne Bildauftrag die Wirkungskarte gewählt. Seit Prompt v4
+dürfen auch sensible Nachrichten ein klar benanntes neutrales Sachmotiv erhalten,
+wenn Überschrift **und** geprüfte Zusammenfassung dasselbe hinterlegte Objekt
+tragen (z. B. Umspannwerk oder Kinderbetreuung). Dann erhält Higgsfield nur das
+generische unbeschädigte Objekt bzw. den leeren Raum, keine Namen, Vorwürfe,
+Ereignisdetails oder Ortsangaben. Ungeklärte Personen-/Gewaltmeldungen ohne solchen
+Anker bleiben Wirkungskarten. Kein Bild wird als Ereignisfoto ausgegeben.
 Die Moduswahl ist konservativ, aber keine Garantie für vollständige semantische
 Erkennung. Das Ergebnis ist immer als Symbolbild bzw. WÖk-Einordnung gekennzeichnet.
 
@@ -94,10 +100,14 @@ passenden Modell-/Prompt-/Zeitdaten aus der offiziellen Auftragsliste geklärt.
 Es wird nie blind erneut Create ausgeführt. Bekannte Jobs werden nur abgefragt.
 Timeout/Downloadfehler: begrenzte Wiederholung mit Backoff. Kein Nachkauf von Credits.
 
-Konservative eigene Grenzen in `config.json`: 1 neuer Bildversuch je Normallauf,
-20 Generierungen/UTC-Tag, 600 Credits/UTC-Monat, höchstens 2 Credits/Bild. Das ist
-eine Obergrenze innerhalb vorhandener Credits, keine Zusage zusätzlicher Ausgaben.
-Sie ist unabhängig vom unverändert maximal 25-EUR-Nachrichten-KI-Budget.
+**Freigabe vom 4. September, nach Guthabenbestätigung:** Die internen Grenzen von
+20 Generierungen/Tag und 600 Credits/Monat sind aufgehoben. Das Reservierungsjournal
+bleibt für Nachvollziehbarkeit und Doppelbuchungsschutz erhalten. Vor jedem neuen
+Auftrag werden echtes Guthaben, Modell und Preis geprüft; höchstens 2 Credits/Bild,
+kein Nachkauf. Bereits bezahlte Aufträge können auch bei leerem Restguthaben fertig
+abgeholt werden. Normalläufe verarbeiten bis zu vier Bilder seriell innerhalb des
+bestehenden Vier-Minuten-Zeitfensters, neue Nachrichten zuerst. Das ist ein
+Laufzeitschutz, kein Tages- oder Monatsbudget. Das 25-EUR-Text-KI-Budget bleibt bestehen.
 
 Nachrichten: bis 12 KI-Kandidaten/Lauf und 48 Aufrufe/rollender Stunde, seriell und
 mit unverändertem Monatsgate. KI-Zeitbudget 7 Minuten, Bilder 4 Minuten; Rest wird
@@ -127,8 +137,10 @@ bestellen Ersatzmotive; Artikeltext, Versionsnummer und Nachrichtenzeit bleiben
 unverändert. Bildmetadaten und `public_updated_at` dürfen sich ändern.
 
 **Ausdrücklich freigegebene Motiv-Erneuerung (4. September):**
-`--refresh-editorial` markiert ausschließlich die begrenzte Auswahl vorhandener,
-weiterhin sicher visualisierbarer Editorials mit alter Promptversion. Es ist nicht
+`--refresh-editorial` markiert die begrenzte Auswahl weiterhin sicher
+visualisierbarer alter Editorials sowie Karten, für die nun ein neutrales Sachmotiv
+bestimmt werden kann. Bereits konkrete v3-Originale werden nicht unnötig neu
+bestellt. Für neue oder erneut ausdrücklich beauftragte Motive gilt v4. Es ist nicht
 mit Render-only/Cards-only kombinierbar. `refresh_prompt_version` und `retry_after`
 bilden eine persistente Restqueue für den normalen Worker. Das alte Titelbild
 bleibt bis zum vollständigen Erfolg aller Formate öffentlich. OCR-Ablehnung oder
@@ -136,7 +148,7 @@ unklarer Submit bleiben gesperrt, transiente Fehler werden ohne neuen Create fü
 denselben Auftrag wiederaufgenommen. Oracle führt einen separaten Journalpfad je
 Story/Promptrevision und archiviert den bisherigen Datensatz vor der Promotion.
 Die normale Pipeline bestellt bei einem bloßen Promptupdate weiterhin keine
-Ersatzmotive. Tages-/Monatslimits gelten auch für diesen einmaligen Backfill.
+Ersatzmotive. Die oben dokumentierte Aufhebung der Tages-/Monatslimits gilt auch hier.
 Im bestehenden Workflow startet `title_images_refresh_editorial=true` diesen
 opt-in Pfad; Standard bleibt false. Die OCR hat für detailreiche Fotos pro Pass
 30 Sekunden und einen OpenMP-Thread auf der Micro-VM; Regeln/Schwellen unverändert.
