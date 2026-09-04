@@ -1,7 +1,551 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T19:54:51.283Z",
+  "updated_at": "2026-09-04T21:36:16.313Z",
   "stories": [
+    {
+      "story_id": "wt-a5874ae28ed5533f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-a64e08432a4adebe-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-2d7207ad12ad5944-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-894377f2ad5160e3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+      "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+      "source_summary": "Der WDR berichtet in einem Liveticker über einen größeren Polizeieinsatz am Hambacher Forst im Zusammenhang mit Sabotageversuchen an der Stromversorgung. Nach Angaben des Tickerttexts suchte die Polizei nach einem 48-Jährigen, der für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll. Am Hambacher Forst wurde ein Fahrzeug gefunden, das dem Mann gehören soll; Einsatzkräfte suchten im Wald nach Spuren und verließen ihn später wieder, ohne den Tatverdächtigen zu finden.\n\nDer Ticker hält mehrere Zwischenstände fest: Das Landeskriminalamt sicherte Spuren am mutmaßlichen Fahrzeug, die Polizei setzte den Einsatz am Abend zunächst fort und zog später wieder ab. Für die weitere Suche wurde ein Hubschrauber mit Wärmebildkameras angekündigt. Der WDR verweist zudem auf eine Pressekonferenz von Innenminister Herbert Reul und Bundesinnenminister Alexander Dobrindt.",
+      "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
+      "detail_summary": "Gesichert ist nach dem WDR-Ticker, dass die Polizei den Hambacher Forst nach einer Suche wieder verlassen hat, ohne den gesuchten Tatverdächtigen zu finden. Der Einsatz steht im Zusammenhang mit Sabotageversuchen an der Stromversorgung und der Fahndung nach einem 48-Jährigen, der laut Ticker für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll. Für die Einordnung ist relevant, dass es dabei um kritische Energieinfrastruktur und eine laufende Fahndung geht. Der Wirkpfad liegt zunächst in der Störung von Sicherheits- und Ermittlungsabläufen sowie möglichen Folgemaßnahmen an weiteren Orten. Mögliche Folgen sind eine Ausweitung der Fahndung, zusätzliche Sicherungsmaßnahmen und weitere Belastungen für den Betrieb betroffener Anlagen. Offen bleibt, ob und wann der Verdächtige gefasst wird; belastbare Aussagen zu Ursachen, Hintergründen und weiteren Beteiligten liefert der Ticker hier noch nicht.",
+      "why_relevant": "Die Meldung betrifft eine laufende Fahndung im Umfeld möglicher Angriffe auf kritische Strominfrastruktur und damit Sicherheitslage, Ermittlungsabläufe und mögliche Folgemaßnahmen.",
+      "topic": [
+        "Gesellschaft",
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Der Einsatz betrifft Polizeiarbeit, Fahndung und mögliche Gefährdungslagen mit unmittelbarem Bezug zu öffentlichen Sicherheitsinteressen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Bezug zu Stromversorgung und Umspannwerken kann die Versorgungssicherheit berühren; konkrete Ausfälle nennt die Quelle hier nicht."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die öffentliche Sicherheitslage und staatliche Reaktion sind relevant, aber der Ticker berichtet noch keine institutionelle Entscheidung mit Normwirkung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Gesuchter",
+            "value": "48-Jährigen",
+            "unit": "Person",
+            "context": "laut WDR gesuchte Person im Zusammenhang mit den Ermittlungen"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T16:15:33.000Z",
+      "last_updated": "2026-09-04T21:36:31.936Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "case_file": {
+        "case_id": "case-4dc00cde414b35",
+        "member_count": 15,
+        "publisher_count": 14,
+        "members": [
+          {
+            "story_id": "wt-a5874ae28ed5533f",
+            "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+            "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
+            "updated_at": "2026-09-04T21:36:31.936Z",
+            "published_at": "2026-09-04T17:37:24.324Z",
+            "kind": "Ermittlungsstand",
+            "current": true
+          },
+          {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
+            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+            "summary": "In Sachsen haben Ermittler bei einem laufenden Einsatz vier verdächtige Objekte an zwei Fundorten gesichert. Die Berichte verknüpfen den Fall mit den jüngsten Angriffen auf Stromleitungen und einer Fahndung nach einem 48-Jährigen.",
+            "updated_at": "2026-09-04T19:51:20.503Z",
+            "published_at": "2026-09-04T19:51:20.503Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-00fccb632042b492",
+            "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
+            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+            "summary": "Die Polizei fahndet nach einem Mann aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Die Ermittler halten zwei Bekennerschreiben wegen ihres Täterwissens für authentisch.",
+            "updated_at": "2026-09-04T19:08:45.762Z",
+            "published_at": "2026-09-04T12:08:21.972Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-03c6bacdda808696",
+            "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
+            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
+            "updated_at": "2026-09-04T18:22:40.051Z",
+            "published_at": "2026-09-04T18:22:40.051Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-a6f6c9c60011b50c",
+            "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+            "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
+            "updated_at": "2026-09-04T17:41:54.741Z",
+            "published_at": "2026-09-04T17:41:54.741Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-60f4e4d7d43fad99",
+            "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+            "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+            "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
+            "updated_at": "2026-09-04T17:41:38.182Z",
+            "published_at": "2026-09-04T17:41:38.182Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-cb1584ee4d9e6a43",
+            "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
+            "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+            "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
+            "updated_at": "2026-09-04T16:09:09.120Z",
+            "published_at": "2026-09-04T16:09:09.120Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-1fbb056ccaaf351d",
+            "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
+            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+            "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
+            "updated_at": "2026-09-04T15:52:29.187Z",
+            "published_at": "2026-09-04T11:12:12.390Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-5547189d2645384a",
+            "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
+            "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+            "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
+            "updated_at": "2026-09-04T15:29:14.683Z",
+            "published_at": "2026-09-04T13:23:17.993Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ae0b9f22404b684",
+            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+            "updated_at": "2026-09-04T14:13:53.288Z",
+            "published_at": "2026-09-03T23:06:38.718Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-4fb94d2cebfca746",
+            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
+            "updated_at": "2026-09-04T11:11:50.847Z",
+            "published_at": "2026-09-04T01:53:14.028Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-f3d585eac14dec76",
+            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
+            "updated_at": "2026-09-04T10:21:35.407Z",
+            "published_at": "2026-09-04T02:07:51.145Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-7b385f58748f3d32",
+            "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+            "updated_at": "2026-09-04T10:09:13.371Z",
+            "published_at": "2026-09-04T10:09:13.371Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-b9487671699d6c9b",
+            "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
+            "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+            "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
+            "updated_at": "2026-09-04T01:53:45.231Z",
+            "published_at": "2026-09-04T01:53:45.231Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-9812656e38b0d665",
+            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
+            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
+            "updated_at": "2026-09-03T22:22:49.015Z",
+            "published_at": "2026-09-03T22:22:49.015Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-04T16:15:33.000Z",
+      "published_at": "2026-09-04T17:37:24.324Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "wdr-nachrichten",
+              "wdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei den gesuchten Mann noch festnimmt oder identifiziert.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue amtliche oder belastbar bestätigte Festnahme- oder Fahndungsmeldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c8043e94464f5d27",
+          "announced_at": "2026-09-04T16:15:33.000Z",
+          "follow_up_date": "2026-09-11T17:37:24.324Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:15:33.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T20:58:25.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-d7a0af1afc831caf",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-9d0d0d8e5e826b5b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-b6e9fb81ee09adbc-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-a1202df6adf80d57-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
+      "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+      "source_summary": "Mehrere Berichte melden, dass US-Vermittler am Sonntag nach Kiew reisen sollen. Der Stern schreibt, Präsident Selenskyj habe in Kiew einen Besuch der US-Vermittler angekündigt; zuvor seien die Verhandlungen unter US-Vermittlung auf Eis gelegen und die Vermittler seien bislang nur in Moskau gewesen. Der Deutschlandfunk nennt die Gesandten namentlich als Witkoff und Kushner und ergänzt, dass Trump die Reisepläne bestätigt habe.\n\nDie Quellen bleiben dabei bei der Ankündigung und ordnen den Schritt in die bislang erfolglosen Vermittlungsbemühungen ein. Unklar bleibt in den vorliegenden Texten, ob die Reise bereits stattgefunden hat oder nur bevorsteht.",
+      "summary": "Selenskyj kündigt an, dass US-Vermittler am Sonntag nach Kiew kommen sollen. Die Berichte nennen Witkoff und Kushner; Trump bestätigt die Reisepläne.",
+      "detail_summary": "Gesichert ist nach den vorliegenden Quellen vor allem die Ankündigung eines Besuchs US-amerikanischer Vermittler in Kiew am Sonntag. Der Deutschlandfunk nennt sie als Witkoff und Kushner und schreibt, Selenskyj habe sie in einer Videobotschaft angekündigt; Trump habe die Reisepläne bestätigt. Die Stern-Meldung ordnet das als Wiederaufnahme zuvor stockender Vermittlungen ein und verweist darauf, dass die Gespräche unter US-Vermittlung zuletzt auf Eis gelegen hätten. Für die Bewertung ist das relevant, weil ein sichtbarer Vermittlungsschritt potenziell den Verhandlungsrahmen verändert, ohne dass daraus schon ein Erfolg folgt. Mögliche Folgen wären ein neuer Gesprächskanal, ein geänderter Druck auf die Konfliktparteien oder nur symbolische Bewegung ohne Substanz. Ob daraus tatsächlich eine Kursänderung entsteht, bleibt mit den gelieferten Belegen offen; ein Treffen selbst, sein Inhalt und seine Wirkung sind hier noch nicht belegt.",
+      "why_relevant": "Die Ankündigung eines Besuchs hochrangiger US-Vermittler ist ein überprüfbarer Zwischenstand in einem Kriegsgeschehen mit möglichem Einfluss auf Verhandlungskanäle, politische Signale und künftige Entscheidungen.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind vor allem Menschen im Kriegsgebiet und potenziell weitere Zivilisten, falls Vermittlungen politische oder militärische Entscheidungen beeinflussen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Meldung enthält keine unmittelbaren Umwelt- oder Klimafolgen; ein indirekter Einfluss wäre nur mittelbar denkbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Verhandlungen zwischen Staaten und die öffentliche Ankündigung eines Vermittlungsbesuchs berühren diplomatische Entscheidungsprozesse und ihre Nachvollziehbarkeit."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Zeitpunkt des Besuchs",
+            "value": "Sonntag",
+            "unit": "",
+            "context": "Angekündigter Termin für den Besuch der US-Vermittler"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "europa"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T17:21:16.000Z",
+      "last_updated": "2026-09-04T20:51:47.279Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0fef8df3a32c15bcde8d",
+      "case_file": null,
+      "source_published_at": "2026-09-04T17:21:16.000Z",
+      "published_at": "2026-09-04T20:51:47.279Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 2
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die US-Vermittler tatsächlich am Sonntag in Kiew eintreffen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder Bestätigungen zum tatsächlichen Eintreffen in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-cd96130eabd68579",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-06T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:21:16.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:22:14.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:46:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T20:13:08.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-972d20af6da2b586",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
+      "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
+      "source_summary": "Die Bundesregierung beschreibt nach dem Vorfall am Leipziger Flughafen eine verschärfte Lage durch hybride Bedrohungen, Sabotage und Drohnenangriffe. Sie verweist darauf, dass Deutschland mit Sicherheitsbehörden vorbereitet sei und bereits wichtige Maßnahmen getroffen habe. Dazu zählt nach der Quelle eine Reform des Bundespolizeigesetzes mit ausgeweiteter Drohnenabwehr, eine seit Dezember 2025 bestehende Drohnenabwehreinheit der Bundespolizei sowie ein von Bund und Ländern eingerichtetes Drohnenabwehrzentrum.\n\nDie Quelle nennt außerdem das im März 2026 in Kraft getretene KRITIS-Dachgesetz mit Mindeststandards und Meldepflichten für Betreiber kritischer Infrastrukturen. Genannt werden ferner 130 Mitarbeitende für die Drohnenabwehreinheit und eine Investition von 100 Millionen Euro. Zugleich heißt es, viele illegale Drohnenflüge zielten nicht primär auf direkte Angriffe, sondern auf Verunsicherung. Offene Punkte bleiben der genaue Umfang der Bedrohung, die Wirksamkeit der Maßnahmen und die Frage, wie viele Vorfälle staatlich gesteuert sind.",
+      "summary": "Die Bundesregierung verweist nach dem Vorfall am Leipziger Flughafen auf neue und bereits laufende Gegenmaßnahmen gegen hybride Angriffe und Drohnen. Genannt werden Reformen, eine Drohnenabwehreinheit, ein Lagezentrum und neue Standards für kritische Infrastruktur.",
+      "detail_summary": "Gesichert ist zunächst, dass die Bundesregierung ihre Drohnen- und Abwehrarchitektur ausbaut: Sie hat die Befugnisse der Bundespolizei erweitert, seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Mitarbeitenden eingerichtet und ein gemeinsames Drohnenabwehrzentrum von Bund und Ländern aufgebaut. Außerdem verweist die Quelle auf das KRITIS-Dachgesetz, das seit März 2026 in Kraft ist und für kritische Infrastruktur bundesweite Mindeststandards sowie Meldepflichten vorsieht. Das ist materiell relevant, weil es Sicherheitsregeln, Zuständigkeiten und technische sowie organisatorische Schutzanforderungen verändert. Der Wirkpfad liegt vor allem in besserer Detektion, schnellerer Reaktion und stärkerer Koordination zwischen Behörden. Mögliche Folgen sind weniger erfolgreiche Drohnenvorfälle, aber auch höhere Umstellungs- und Compliance-Kosten für Betreiber. Die Evidenz bleibt jedoch eine primär staatliche Selbstdarstellung; zur tatsächlichen Wirksamkeit, zum Umfang fremdgesteuerter Vorfälle und zu den realen Sicherheitsgewinnen liefert die Quelle noch keinen belastbaren Nachweis.",
+      "why_relevant": "Die Meldung beschreibt nicht nur eine Warnung, sondern konkrete staatliche Eingriffe in Sicherheitsarchitektur, Zuständigkeiten und Schutzstandards mit möglichen Folgen für kritische Infrastruktur.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Sicherheitslage, Schutz kritischer Infrastruktur und staatliche Eingriffs- und Reaktionsfähigkeit mit möglichen Auswirkungen auf viele Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung betrifft staatliche Sicherheitsbefugnisse, Koordination zwischen Bund und Ländern und Meldepflichten, also demokratisch relevante Steuerung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Personal der Einheit",
+            "value": "130",
+            "unit": "Mitarbeiterinnen und Mit",
+            "context": "zunächst geplante Stärke der Drohnenabwehreinheit"
+          },
+          {
+            "label": "Investition",
+            "value": "100 Millionen",
+            "unit": "Euro",
+            "context": "Gesamtinvestition für die Drohnenabwehreinheit"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kommunen",
+          "europa"
+        ],
+        "timeline": [
+          {
+            "date": "2025-12",
+            "label": "Drohnenabwehreinheit verfügbar"
+          },
+          {
+            "date": "2026-03",
+            "label": "KRITIS-Dachgesetz in Kraft"
+          }
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-02T06:00:00.000Z",
+      "last_updated": "2026-09-04T20:37:29.426Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-3c4cec37699684f265d9",
+      "case_file": null,
+      "source_published_at": "2026-09-02T06:00:00.000Z",
+      "published_at": "2026-09-04T04:51:34.536Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T06:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-293fa4edfc2b5a5d",
       "title_image": {
@@ -505,300 +1049,6 @@
           "url": "https://www.hessenschau.de/wirtschaft/bruecken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-v3,bruecke-marburg-104.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T15:07:42.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-33e396f2be1a3a1f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-25c24698b6db9704-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-e085fe3b0032dfb7-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-1b3ca248e388c2d8-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-      "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-      "source_summary": "Mehrere Berichte melden einen Polizeieinsatz in Sachsen im Zusammenhang mit den Angriffen auf Stromleitungen und Umspannwerke in Brandenburg und NRW. Nach Angaben aus den Beiträgen wurden in Ostsachsen, nördlich von Bautzen beziehungsweise bei Schleife an der Grenze zu Brandenburg, Sprengvorrichtungen entdeckt oder gesichert. Innenminister Armin Schuster wird mit der Aussage zitiert, an zwei Fundorten seien vier Objekte gesichert worden; die Polizei arbeite an der Entschärfung.\n\nDie Berichte verweisen zudem auf ein Bekennerschreiben, aus dem sich die Hinweise ergeben hätten. Außerdem wird auf die laufende Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen Bezug genommen. Mehrere Details zum genauen Ort und Ablauf bleiben in den Quellen offen oder werden aus taktischen Gründen nicht genannt.",
-      "summary": "In Sachsen haben Ermittler bei einem laufenden Einsatz vier verdächtige Objekte an zwei Fundorten gesichert. Die Berichte verknüpfen den Fall mit den jüngsten Angriffen auf Stromleitungen und einer Fahndung nach einem 48-Jährigen.",
-      "detail_summary": "Gesichert ist nach den vorliegenden Berichten, dass die Polizei in Sachsen an zwei Fundorten vier Objekte gesichert hat und diese als Sprengvorrichtungen beziehungsweise verdächtige Vorrichtungen behandelt. Der Bezug zu den Angriffen auf die Stromversorgung wird in den Quellen über ein Bekennerschreiben hergestellt, aus dem sich die Suchmaßnahmen ergeben hätten. Zugleich läuft nach Angaben der Berichte weiter die Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen. Für die Wirkungsperspektive ist das relevant, weil ein solcher Fund unmittelbar Sicherheitsaufwand, Schutzmaßnahmen und mögliche Betriebsrisiken an kritischer Infrastruktur erhöht. Mögliche Folgen sind zusätzliche Sperrungen, Entschärfungen, Ermittlungsdruck und ein vorsorglicher Ausbau des Schutzes an Umspannwerken. Offen bleibt in den gelieferten Quellen, wie gefährlich die Objekte tatsächlich waren und ob ein Zusammenhang zwischen allen Vorfällen bereits belastbar belegt ist.",
-      "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Folgekosten für Schutz, Betrieb und öffentliche Sicherheit.",
-      "topic": [
-        "Energie",
-        "Arbeit",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die Berichte betreffen mögliche Gefährdung von Beschäftigten, Einsatzkräften und Versorgungssicherheit an kritischer Infrastruktur."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Indirekt berührt der Fall die Stabilität der Stromversorgung, aber nicht unmittelbar Umwelt- oder Klimapolitik."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Lage betrifft staatliche Sicherheitsfähigkeit und den Schutz kritischer Infrastruktur, ohne dass ein demokratischer Entscheidungsprozess selbst verändert wird."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T18:13:49.000Z",
-      "last_updated": "2026-09-04T19:51:20.503Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-b3909a98d9ba9b7edf64",
-      "case_file": {
-        "case_id": "case-4dc00cde414b35",
-        "member_count": 15,
-        "publisher_count": 14,
-        "members": [
-          {
-            "story_id": "wt-33e396f2be1a3a1f",
-            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-            "summary": "In Sachsen haben Ermittler bei einem laufenden Einsatz vier verdächtige Objekte an zwei Fundorten gesichert. Die Berichte verknüpfen den Fall mit den jüngsten Angriffen auf Stromleitungen und einer Fahndung nach einem 48-Jährigen.",
-            "updated_at": "2026-09-04T19:51:20.503Z",
-            "published_at": "2026-09-04T19:51:20.503Z",
-            "kind": "Ermittlungsstand",
-            "current": true
-          },
-          {
-            "story_id": "wt-00fccb632042b492",
-            "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
-            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
-            "summary": "Die Polizei fahndet nach einem Mann aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Die Ermittler halten zwei Bekennerschreiben wegen ihres Täterwissens für authentisch.",
-            "updated_at": "2026-09-04T19:08:45.762Z",
-            "published_at": "2026-09-04T12:08:21.972Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-03c6bacdda808696",
-            "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
-            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
-            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
-            "updated_at": "2026-09-04T18:22:40.051Z",
-            "published_at": "2026-09-04T18:22:40.051Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-a6f6c9c60011b50c",
-            "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
-            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
-            "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
-            "updated_at": "2026-09-04T17:41:54.741Z",
-            "published_at": "2026-09-04T17:41:54.741Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-60f4e4d7d43fad99",
-            "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-            "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-            "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
-            "updated_at": "2026-09-04T17:41:38.182Z",
-            "published_at": "2026-09-04T17:41:38.182Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-a5874ae28ed5533f",
-            "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
-            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-            "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
-            "updated_at": "2026-09-04T17:37:24.324Z",
-            "published_at": "2026-09-04T17:37:24.324Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-cb1584ee4d9e6a43",
-            "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
-            "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
-            "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
-            "updated_at": "2026-09-04T16:09:09.120Z",
-            "published_at": "2026-09-04T16:09:09.120Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-1fbb056ccaaf351d",
-            "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
-            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
-            "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
-            "updated_at": "2026-09-04T15:52:29.187Z",
-            "published_at": "2026-09-04T11:12:12.390Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-5547189d2645384a",
-            "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
-            "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-            "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
-            "updated_at": "2026-09-04T15:29:14.683Z",
-            "published_at": "2026-09-04T13:23:17.993Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ae0b9f22404b684",
-            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
-            "updated_at": "2026-09-04T14:13:53.288Z",
-            "published_at": "2026-09-03T23:06:38.718Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-4fb94d2cebfca746",
-            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
-            "updated_at": "2026-09-04T11:11:50.847Z",
-            "published_at": "2026-09-04T01:53:14.028Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-f3d585eac14dec76",
-            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
-            "updated_at": "2026-09-04T10:21:35.407Z",
-            "published_at": "2026-09-04T02:07:51.145Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-7b385f58748f3d32",
-            "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
-            "updated_at": "2026-09-04T10:09:13.371Z",
-            "published_at": "2026-09-04T10:09:13.371Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-b9487671699d6c9b",
-            "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
-            "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
-            "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
-            "updated_at": "2026-09-04T01:53:45.231Z",
-            "published_at": "2026-09-04T01:53:45.231Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-9812656e38b0d665",
-            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
-            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
-            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
-            "updated_at": "2026-09-03T22:22:49.015Z",
-            "published_at": "2026-09-03T22:22:49.015Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-04T18:13:49.000Z",
-      "published_at": "2026-09-04T19:51:20.503Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 4,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die gesicherten Objekte tatsächlich entschärft werden und welche Sprengwirkung sie haben, soll die Polizei später präzisieren.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Bestätigung zu Entschärfung, Art und Gefährlichkeit der Objekte",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-596c5c287d66ce50",
-          "announced_at": "2026-09-04T19:28:00.000Z",
-          "follow_up_date": "2026-09-11T19:51:20.503Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:13:49.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:15:11.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:28:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:30:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:27:06.000Z",
           "primary_source": false
         }
       ]
@@ -5252,119 +5502,6 @@
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
           "source_type": "official_rss",
           "published_at": null,
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-972d20af6da2b586",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
-      "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
-      "source_summary": "Die Bundesregierung veröffentlicht eine FAQ-Seite zu hybriden Angriffen und Drohnenvorfällen. Als Anlass nennt sie den Fund einer mit Sprengstoff bestückten Drohne am Leipziger Flughafen und bezeichnet den Vorfall als sehr ernst zu nehmend. Zugleich verweist sie auf eine fortlaufend verfolgte Lage und auf Beratungen im Nationalen Sicherheitsrat und im Bundeskabinett.\n\nDie Seite перечисlt mehrere Maßnahmen: Das KRITIS-Dachgesetz sei im März 2026 in Kraft getreten, die Bundespolizei habe seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Beschäftigten, dafür würden 100 Millionen Euro investiert. Außerdem sei ein Drohnenabwehrzentrum von Bund und Ländern eingerichtet worden. Die Bundesregierung nennt zudem eine Reform des Bundespolizeigesetzes, Änderungen am Luftsicherheitsgesetz und verweist auf einen Anstieg illegaler Drohnenflüge über kritische Infrastruktur.",
-      "summary": "Die Bundesregierung beschreibt eine verschärfte Bedrohungslage durch hybride Angriffe und nennt mehrere bereits laufende Gegenmaßnahmen. Dazu gehören neue Befugnisse, eine Drohnenabwehreinheit und ein gemeinsames Lagezentrum.",
-      "detail_summary": "Gesichert ist zunächst die politische Reaktion der Bundesregierung auf die von ihr geschilderte hybride Bedrohungslage. Die Quelle nennt den Leipziger Drohnenvorfall als Auslöser und verweist auf konkrete Maßnahmen wie das im März 2026 in Kraft getretene KRITIS-Dachgesetz, die Drohnenabwehreinheit der Bundespolizei und ein Drohnenabwehrzentrum von Bund und Ländern. Für die Wirkung ist relevant, dass hier nicht nur kommuniziert, sondern Sicherheitsarchitektur, Zuständigkeiten und technische Abwehrkapazitäten verändert werden. Der Wirkpfad läuft über frühere Erkennung, koordiniertere Lagebewertung und schnellere Abwehr von Vorfällen an kritischer Infrastruktur. Möglich sind dadurch geringere Verwundbarkeit und bessere Resilienz, zugleich bleiben Umfang, Effektivität und tatsächliche Umsetzung der Maßnahmen offen. Die Quelle ist jedoch eine Regierungsdarstellung; unabhängige Bestätigung der Lagebewertung oder der behaupteten Wirksamkeit liegt hier nicht vor.",
-      "why_relevant": "Die Meldung beschreibt staatliche Sicherheitsmaßnahmen mit möglichem Einfluss auf kritische Infrastruktur, Abwehrkapazitäten und Zuständigkeiten. Das ist materiell, weil Regeln, Ressourcen und Schutzarchitektur verändert werden.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "laufende Umsetzung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die Maßnahmen zielen auf Schutz von Bevölkerung und kritischer Infrastruktur vor Drohnen- und Sabotagevorfällen. Betroffen sind Sicherheitslage, öffentliche Dienste und mögliche Alltagsstörungen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht beschrieben. Allenfalls indirekt kann der Schutz von Versorgungsinfrastruktur Umweltfolgen von Ausfällen begrenzen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Quelle betrifft Sicherheitsstaat, Zuständigkeiten und Eingriffsbefugnisse. Für demokratische Kontrolle relevant sind Transparenz, Verhältnismäßigkeit und spätere parlamentarische Prüfung."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Mitarbeiterinnen und Mitarbeiter",
-            "value": "130",
-            "unit": "Personen",
-            "context": "Größe der neuen Drohnenabwehreinheit"
-          },
-          {
-            "label": "Investition",
-            "value": "100 Millionen",
-            "unit": "Euro",
-            "context": "Bundesmittel für die Drohnenabwehreinheit"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "kommunen",
-          "europa"
-        ],
-        "timeline": [
-          {
-            "date": "2025-12",
-            "label": "Drohnenabwehreinheit der Bundespolizei"
-          },
-          {
-            "date": "2026-03",
-            "label": "KRITIS-Dachgesetz in Kraft"
-          }
-        ],
-        "tendency": {
-          "human": "chance",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-02T06:00:00.000Z",
-      "last_updated": "2026-09-04T04:51:34.536Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-3c4cec37699684f265d9",
-      "case_file": null,
-      "source_published_at": "2026-09-02T06:00:00.000Z",
-      "published_at": "2026-09-04T04:51:34.536Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "bundesregierung-kompakt"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T06:00:00.000Z",
           "primary_source": true
         }
       ]
