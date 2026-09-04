@@ -12,6 +12,8 @@ Die sechs Facetten Ebene, Organ, Wirkungsfeld, Richtung, Evidenz und Reifegrad w
 
 Die Richtungsverteilung zählt Akten absolut, ohne Mittelwerte oder Ranglisten. Gegenläufige Pfade tragen die geteilte Marke. „Offen / nicht aggregierbar“ besitzt immer eine eigene sichtbare Zahl, auch bei einem leeren Filterergebnis. Ungültige geteilte Filter werden nicht still zu einer breiteren Abfrage.
 
+Die Leiste verwendet numerische SVG-Geometrie statt Inline-Style-Breiten, die durch die unveränderte Production-CSP gesperrt werden. Gegenläufige Pfade bleiben zwei gleich große Teilflächen desselben Aktensegments, nicht zwei Akten. Browsergates vergleichen reale Segmentgeometrie mit den absoluten Zahlen und prüfen auf dem Desktop ausdrücklich Titel/Meta links und Signatur rechts.
+
 ## Textbestands-Diff und Erreichbarkeit
 
 `p3-text-inventory.json`: 57 Textobjekte gegenüber dem P2-Merge, null fehlend. Der kumulative Vor-Umbau-Vergleich bleibt zusätzlich verbindlich.

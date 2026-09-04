@@ -72,6 +72,9 @@ try {
     const counts = await page.locator("[data-register-direction] dd").allTextContents();
     assert.equal(counts.reduce((sum, count) => sum + Number(count), 0), expectedIds.length);
     assert.equal(await page.locator('[data-register-direction="offen"] dd').count(), 1);
+    const segments = await page.locator("[data-register-segment]").evaluateAll((segments) => segments.map((segment) => ({ count: Number(segment.getAttribute("data-count")), width: segment.getBBox().width })));
+    assert.equal(segments.reduce((sum, segment) => sum + segment.count, 0), expectedIds.length);
+    for (const segment of segments) assert.ok(Math.abs(segment.width / 1000 - segment.count / expectedIds.length) < 0.00001, "actual geometry matches counts under production CSP");
     await page.addScriptTag({ content: axeSource });
     const a11y = await page.evaluate(async () => (await window.axe.run({ include: [[".impact-register"]] }, { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } })).violations.map(({ id, nodes }) => ({ id, targets: nodes.map((node) => node.target) })));
     assert.deepEqual(a11y, [], "P3 full register accessibility");
