@@ -772,6 +772,7 @@ export function buildAnalysisPrompt(stories) {
     ...VISUALS_PROMPT_RULES,
     "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar.",
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
+    "Auch Ablehnungen bleiben IMMER innerhalb des äußeren Objekts {analyses:[...]}. Bei genau einer Story enthält analyses genau einen Eintrag; niemals den einzelnen Eintrag als Wurzelobjekt zurückgeben.",
     JSON.stringify({
       analyses: [{
         story_id: "string",
