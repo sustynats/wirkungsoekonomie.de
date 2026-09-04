@@ -1,0 +1,21 @@
+130.162.217.58.sslip.io {
+  encode zstd gzip
+
+  # Own poll paths only: no access logging; never trust a supplied client header.
+  @polls path /api/polls /api/polls/* /api/admin/polls /api/admin/polls/*
+  handle @polls {
+    reverse_proxy 127.0.0.1:8787 {
+      header_up X-Real-IP {remote_host}
+    }
+  }
+
+  handle /api/* {
+    reverse_proxy 127.0.0.1:8787
+  }
+
+  handle /healthz {
+    reverse_proxy 127.0.0.1:8787
+  }
+
+  respond "WOeK API" 200
+}
