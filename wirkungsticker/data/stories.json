@@ -1,7 +1,109 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T11:10:57.869Z",
+  "updated_at": "2026-09-04T11:36:39.394Z",
   "stories": [
+    {
+      "story_id": "wt-68b6674db060e89b",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-68b6674db060e89b-5cfca414ea32adf8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-68b6674db060e89b-90e4b05d0d684ad8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-68b6674db060e89b-99ffa9975e7bf9e2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "spritpreise-am-bodensee-auf-rekordniveau-so-viel-sparen-autofahrer-in-osterreich-60e89b",
+      "title": "Spritpreise am Bodensee auf Rekordniveau - so viel sparen Autofahrer in Österreich",
+      "source_summary": "Die SWR-Aktuell-Meldung beschreibt stark gestiegene Benzinpreise am Bodensee. In Konstanz und Friedrichshafen kostet Super-Benzin laut Bericht am Donnerstag 2,45 Euro pro Liter, E10 liegt zwischen 2,37 und 2,40 Euro; Diesel ist teils noch teurer. Als Vergleich nennt der Beitrag niedrigere Durchschnittspreise in Baden-Württemberg und deutlich günstigere Werte direkt hinter der Grenze im österreichischen Vorarlberg.\n\nDer Text erklärt den Preisunterschied mit der unterschiedlichen Besteuerung und berichtet von regem Tanktourismus. Als Ursachen der hohen Öl- und Benzinpreise nennt die Quelle den Konflikt im Nahen Osten, Einschränkungen rund um die Straße von Hormus, Käufe asiatischer Raffinerien und Niedrigwasser am Rhein. Außerdem wird ein örtlicher Tankstellenbetreiber zitiert, der mehr deutsche Kunden in Österreich beobachte.",
+      "summary": "Am Bodensee liegen die Spritpreise laut SWR auf einem Rekordniveau, besonders in Konstanz und Friedrichshafen. Viele Autofahrer tanken deshalb im günstigeren Vorarlberg.",
+      "detail_summary": "Gesichert ist zunächst der regionale Preissprung: Der SWR berichtet für Konstanz und Friedrichshafen Super-Benzin zu 2,45 Euro je Liter, bei E10 zu 2,37 bis 2,40 Euro und bei Diesel noch darüber. Der Beitrag ordnet das als ungewöhnlich hohe Preise ein und vergleicht sie mit niedrigeren Durchschnittswerten in Baden-Württemberg. Gleichzeitig verweist er auf deutlich billigere Tankstellen direkt hinter der Grenze in Vorarlberg. Daraus ergibt sich ein klarer Wirkpfad: Preisunterschiede verschieben Kaufentscheidungen und lenken Tanknachfrage grenzüberschreitend um. Mögliche Folge sind zusätzliche Fahrten, Umsatzverschiebungen zwischen Tankstellen und höhere Kosten für Pendlerinnen und Pendler; das bleibt im Text aber nur indirekt belegt. Offen bleibt, wie breit der Effekt tatsächlich ausfällt und ob er über den Moment der Preisniveaus hinaus anhält.",
+      "why_relevant": "Die Meldung zeigt eine konkrete, kurzfristig wirksame Preisverschiebung im Alltag vieler Menschen in einer grenznahen Region. Relevant ist sie vor allem wegen der möglichen Verlagerung von Kaufkraft, zusätzlichen Fahrten und Kosten für Pendelnde sowie der regionalen Marktverzerrung.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Autofahrerinnen und Autofahrer, besonders Pendelnde und Haushalte in der Bodenseeregion, über höhere laufende Kosten."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Zusätzliche Fahrten zum günstigeren Tanken können Emissionen erhöhen; zugleich ist die Quelle dafür nur indirekt belastbar."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer demokratischer Korrektureffekt ist nicht erkennbar; es geht vor allem um Markt- und Preiswirkungen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Super-Benzin Konstanz/Friedrichshafen",
+            "value": "2,45",
+            "unit": "Euro/Liter",
+            "context": "genannter Literpreis an mehreren Tankstellen"
+          },
+          {
+            "label": "E10 Konstanz/Friedrichshafen",
+            "value": "2,37 bis 2,40",
+            "unit": "Euro/Liter",
+            "context": "genannte Preisspanne für E10"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "beschaeftigte",
+          "unternehmen",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "gemischt",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T11:13:34.000Z",
+      "last_updated": "2026-09-04T11:37:27.087Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-eb3a46e622601f11b539",
+      "source_published_at": "2026-09-04T11:13:34.000Z",
+      "published_at": "2026-09-04T11:37:27.087Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/friedrichshafen/spritpreise-bodensee-drastisch-gestiegen-tanktourismus-nach-oesterreich-boomt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:13:34.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6267bf5562aa70a6",
       "title_image": {
