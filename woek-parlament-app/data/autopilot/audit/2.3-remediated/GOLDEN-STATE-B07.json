@@ -34563,368 +34563,348 @@
       "present": true
     },
     {
-      "route": "/wirkungsfaelle",
-      "present": true
-    },
-    {
-      "route": "/regierung",
-      "present": true
-    },
-    {
-      "route": "/entscheidungen",
-      "present": true
-    },
-    {
-      "route": "/mandat-und-praxis",
-      "present": true
-    },
-    {
-      "route": "/laender",
-      "present": true
-    },
-    {
-      "route": "/eu",
-      "present": true
-    },
-    {
-      "route": "/methodik",
-      "present": true
-    },
-    {
-      "route": "/transparenz",
-      "present": true
-    },
-    {
-      "route": "/wirkungsobservatorium",
-      "present": true
-    },
-    {
-      "route": "/fachanalysen",
-      "present": true
-    },
-    {
-      "route": "/quellen",
-      "present": true
-    },
-    {
       "route": "/suche",
+      "present": true
+    },
+    {
+      "route": "/aktuell/radar-abo",
+      "present": true
+    },
+    {
+      "route": "/aktuell",
+      "present": true
+    },
+    {
+      "route": "/wirkungsakten",
+      "present": true
+    },
+    {
+      "route": "/monitor",
+      "present": true
+    },
+    {
+      "route": "/ebenen",
+      "present": true
+    },
+    {
+      "route": "/pruefstandard",
       "present": true
     }
   ],
   "search_targets": [
     {
       "object_id": "WOEK-IMPACT-BUND-GMODG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-EEG-NETZPAKET-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EEG-NETZPAKET-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-EEG-NETZPAKET-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-STROMVKG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STROMVKG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STROMVKG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-NOTFALLREFORM-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NOTFALLREFORM-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NOTFALLREFORM-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-KHAG-2025-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KHAG-2025-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KHAG-2025-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-ALTERSVORSORGE-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ALTERSVORSORGE-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-ALTERSVORSORGE-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-TARIFTREUE-2025-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-TARIFTREUE-2025-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-TARIFTREUE-2025-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-GEAS-DE-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-GEAS-DE-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-GEAS-DE-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-BHH-2027",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-GANZTAG-IMPLEMENTATION-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GANZTAG-IMPLEMENTATION-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GANZTAG-IMPLEMENTATION-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-KINDERGELD-ONCE-ONLY-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KINDERGELD-ONCE-ONLY-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KINDERGELD-ONCE-ONLY-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-BGG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BGG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BGG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-MEDIZINREGISTER-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIZINREGISTER-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIZINREGISTER-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-HIGHTECH-AGENDA-2025-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-HIGHTECH-AGENDA-2025-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-HIGHTECH-AGENDA-2025-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-STAATSMODERNISIERUNG-2025-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STAATSMODERNISIERUNG-2025-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STAATSMODERNISIERUNG-2025-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-RECHENZENTREN-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RECHENZENTREN-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-RECHENZENTREN-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-INDUSTRIESTROMPREIS-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-INDUSTRIESTROMPREIS-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-INDUSTRIESTROMPREIS-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-NL-GAS-UNITISIERUNG-2025",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NL-GAS-UNITISIERUNG-2025",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NL-GAS-UNITISIERUNG-2025",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-SEFE-KSI-LISIMS-LNG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-SEFE-KSI-LISIMS-LNG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-SEFE-KSI-LISIMS-LNG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-CCFD-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCFD-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCFD-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-STOFFSTROMBILANZ-AUFHEBUNG-2025",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STOFFSTROMBILANZ-AUFHEBUNG-2025",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STOFFSTROMBILANZ-AUFHEBUNG-2025",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-BIOMASSEV-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BIOMASSEV-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BIOMASSEV-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-THG-QUOTE-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-THG-QUOTE-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-THG-QUOTE-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-CCS-KSPTG-2025",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCS-KSPTG-2025",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCS-KSPTG-2025",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-NIS2-2025",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NIS2-2025",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NIS2-2025",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-IP-SPEICHERUNG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-IP-SPEICHERUNG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-IP-SPEICHERUNG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-WOHNGELD-2027",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-WOHNGELD-2027",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-WOHNGELD-2027",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-MIETRECHT-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIETRECHT-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIETRECHT-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-RENTE-48-2031",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RENTE-48-2031",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-RENTE-48-2031",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-MUETTERRENTE-III",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MUETTERRENTE-III",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MUETTERRENTE-III",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-AKTIVRENTE-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-AKTIVRENTE-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-AKTIVRENTE-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-GKV-FINANZ-2027",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GKV-FINANZ-2027",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GKV-FINANZ-2027",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-SINTI-ROMA-AUFARBEITUNG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SINTI-ROMA-AUFARBEITUNG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SINTI-ROMA-AUFARBEITUNG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-SVA-KOLUMBIEN-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SVA-KOLUMBIEN-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SVA-KOLUMBIEN-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-KI-VO-DURCHFUEHRUNG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-VO-DURCHFUEHRUNG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-VO-DURCHFUEHRUNG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-OK-LATEINAMERIKA-KARIBIK-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-OK-LATEINAMERIKA-KARIBIK-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-OK-LATEINAMERIKA-KARIBIK-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-YAD-VASHEM-PROTOKOLL-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-YAD-VASHEM-PROTOKOLL-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-YAD-VASHEM-PROTOKOLL-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-TIERSCHUTZ-SCHLACHTVIDEO-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-TIERSCHUTZ-SCHLACHTVIDEO-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-TIERSCHUTZ-SCHLACHTVIDEO-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-DUENGEGESETZ-MONITORING-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-DUENGEGESETZ-MONITORING-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-DUENGEGESETZ-MONITORING-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-AFBG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-AFBG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-AFBG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-GEDIG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GEDIG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GEDIG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-STARTUP-SCALEUP-STRATEGIE-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STARTUP-SCALEUP-STRATEGIE-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STARTUP-SCALEUP-STRATEGIE-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-NAP-TARIFVERHANDLUNGEN-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NAP-TARIFVERHANDLUNGEN-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NAP-TARIFVERHANDLUNGEN-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-CYBERGOVSECURE-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CYBERGOVSECURE-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-CYBERGOVSECURE-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-BW-INFRASTRUKTUR-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-INFRASTRUKTUR-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-INFRASTRUKTUR-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-MIGRATION-DIGITAL-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIGRATION-DIGITAL-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIGRATION-DIGITAL-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-KI-MIGRATION-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-MIGRATION-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-MIGRATION-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-RESERVESTAERKUNG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RESERVESTAERKUNG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-RESERVESTAERKUNG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-STRATEGISCHE-GASRESERVE-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STRATEGISCHE-GASRESERVE-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STRATEGISCHE-GASRESERVE-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-WISSZEIT-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-WISSZEIT-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-WISSZEIT-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-INFRA-ZUKUNFT-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-INFRA-ZUKUNFT-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-INFRA-ZUKUNFT-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-REPAIR-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-REPAIR-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-REPAIR-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-BW-BESCHAFFUNG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-BESCHAFFUNG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-BESCHAFFUNG-2026",
       "title_present_in_search_payload": true
     },
     {
       "object_id": "WOEK-IMPACT-BUND-EMOG-2026",
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EMOG-2026",
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-EMOG-2026",
       "title_present_in_search_payload": true
     },
     {
@@ -35184,7 +35164,531 @@
       "present": true
     },
     {
-      "route": "/entscheidungen",
+      "route": "/ebenen/bundesregierung",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M01",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M03",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M06",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M07",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M08",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M10",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M12",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M14",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M15",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M17",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M18",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-AFBG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-AKTIVRENTE-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-ALTERSVORSORGE-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BGG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BIOMASSEV-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-BESCHAFFUNG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-INFRASTRUKTUR-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCFD-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCS-KSPTG-2025",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-CYBERGOVSECURE-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-DUENGEGESETZ-MONITORING-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-EEG-NETZPAKET-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-EMOG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GANZTAG-IMPLEMENTATION-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GEDIG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GKV-FINANZ-2027",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-HIGHTECH-AGENDA-2025-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-INDUSTRIESTROMPREIS-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-INFRA-ZUKUNFT-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-IP-SPEICHERUNG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KHAG-2025-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-MIGRATION-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-VO-DURCHFUEHRUNG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-KINDERGELD-ONCE-ONLY-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIZINREGISTER-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIETRECHT-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIGRATION-DIGITAL-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-MUETTERRENTE-III",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NAP-TARIFVERHANDLUNGEN-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NIS2-2025",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NL-GAS-UNITISIERUNG-2025",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-NOTFALLREFORM-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-OK-LATEINAMERIKA-KARIBIK-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-RECHENZENTREN-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-RENTE-48-2031",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-REPAIR-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-RESERVESTAERKUNG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SINTI-ROMA-AUFARBEITUNG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STAATSMODERNISIERUNG-2025-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STARTUP-SCALEUP-STRATEGIE-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STOFFSTROMBILANZ-AUFHEBUNG-2025",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STRATEGISCHE-GASRESERVE-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-STROMVKG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-SVA-KOLUMBIEN-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-TARIFTREUE-2025-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-THG-QUOTE-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-TIERSCHUTZ-SCHLACHTVIDEO-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-WISSZEIT-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-WOHNGELD-2027",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-BUND-YAD-VASHEM-PROTOKOLL-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-GEAS-DE-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-IMPACT-SEFE-KSI-LISIMS-LNG-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/bundesregierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-001",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-002",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-003",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-004",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-005",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-006",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-007",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-008",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-009",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-010",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-011",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-012",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-013",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-014",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-015",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-016",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-017",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-018",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-019",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-020",
+      "present": true
+    },
+    {
+      "route": "/ebenen/eu/wirkungsfaelle/EU-IMPACT-2026-021",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/baden-wuerttemberg",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/baden-wuerttemberg/mandat-und-praxis",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/bayern",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/berlin",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/brandenburg",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/bremen",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/hamburg",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/hessen",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/mecklenburg-vorpommern",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/niedersachsen",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/nordrhein-westfalen",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/rheinland-pfalz",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/rheinland-pfalz/mandat-und-praxis",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/rheinland-pfalz/regierung",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/saarland",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen-anhalt",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/schleswig-holstein",
+      "present": true
+    },
+    {
+      "route": "/ebenen/laender/thueringen",
       "present": true
     },
     {
@@ -35300,779 +35804,243 @@
       "present": true
     },
     {
-      "route": "/eu",
+      "route": "/monitor/mandat-und-praxis/btw-2025-afd",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle",
+      "route": "/monitor/mandat-und-praxis/btw-2025-cdu-csu",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-001",
+      "route": "/monitor/mandat-und-praxis/btw-2025-gruene",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-002",
+      "route": "/monitor/mandat-und-praxis/btw-2025-linke",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-003",
+      "route": "/monitor/mandat-und-praxis/btw-2025-spd",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-004",
+      "route": "/monitor/mandat-und-praxis/btw-2025-ssw",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-005",
+      "route": "/monitor/mandat-und-praxis/coalition-2025-cdu-csu-spd",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-006",
+      "route": "/pruefstandard/methodik",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-007",
+      "route": "/pruefstandard/quellen",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-008",
+      "route": "/pruefstandard/quellen/quelle-006bc7a808af29b4",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-009",
+      "route": "/pruefstandard/quellen/quelle-01b32ed39354dc9c",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-010",
+      "route": "/pruefstandard/quellen/quelle-0270cabc77e1ff74",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-011",
+      "route": "/pruefstandard/quellen/quelle-036d07ef81200064",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-012",
+      "route": "/pruefstandard/quellen/quelle-0e2b9f976d9dbebd",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-013",
+      "route": "/pruefstandard/quellen/quelle-123a206e5bce74d2",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-014",
+      "route": "/pruefstandard/quellen/quelle-18d8f9e61e4fc8d1",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-015",
+      "route": "/pruefstandard/quellen/quelle-22713f66a77b1a5d",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-016",
+      "route": "/pruefstandard/quellen/quelle-2775d574ff6d04df",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-017",
+      "route": "/pruefstandard/quellen/quelle-2b41c262190e77d5",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-018",
+      "route": "/pruefstandard/quellen/quelle-324d56739ee51b82",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-019",
+      "route": "/pruefstandard/quellen/quelle-3ad90bd6b684e240",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-020",
+      "route": "/pruefstandard/quellen/quelle-3d91347f42f498f1",
       "present": true
     },
     {
-      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-021",
+      "route": "/pruefstandard/quellen/quelle-453b1bfc2e4a6276",
       "present": true
     },
     {
-      "route": "/fachanalysen/gebaeudeenergiegesetz-medienwirkung",
+      "route": "/pruefstandard/quellen/quelle-4a29e540381929ca",
       "present": true
     },
     {
-      "route": "/laender",
+      "route": "/pruefstandard/quellen/quelle-4b0125137a475c7c",
       "present": true
     },
     {
-      "route": "/laender/baden-wuerttemberg",
+      "route": "/pruefstandard/quellen/quelle-5fbffb8156d9536b",
       "present": true
     },
     {
-      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "route": "/pruefstandard/quellen/quelle-622bbdc8e953d548",
       "present": true
     },
     {
-      "route": "/laender/bayern",
+      "route": "/pruefstandard/quellen/quelle-6972a69a97de51a6",
       "present": true
     },
     {
-      "route": "/laender/berlin",
+      "route": "/pruefstandard/quellen/quelle-6ade1cff08c61280",
       "present": true
     },
     {
-      "route": "/laender/brandenburg",
+      "route": "/pruefstandard/quellen/quelle-748b36e0becf7627",
       "present": true
     },
     {
-      "route": "/laender/bremen",
+      "route": "/pruefstandard/quellen/quelle-82c8ae06f171438d",
       "present": true
     },
     {
-      "route": "/laender/hamburg",
+      "route": "/pruefstandard/quellen/quelle-864e435a31b29f93",
       "present": true
     },
     {
-      "route": "/laender/hessen",
+      "route": "/pruefstandard/quellen/quelle-8702043e96c25c4e",
       "present": true
     },
     {
-      "route": "/laender/mecklenburg-vorpommern",
+      "route": "/pruefstandard/quellen/quelle-8b3c481a8be218ab",
       "present": true
     },
     {
-      "route": "/laender/niedersachsen",
+      "route": "/pruefstandard/quellen/quelle-93c2270e52a17cee",
       "present": true
     },
     {
-      "route": "/laender/nordrhein-westfalen",
+      "route": "/pruefstandard/quellen/quelle-95e74c2905cabc7d",
       "present": true
     },
     {
-      "route": "/laender/rheinland-pfalz",
+      "route": "/pruefstandard/quellen/quelle-95ff8067ab6bf40d",
       "present": true
     },
     {
-      "route": "/laender/rheinland-pfalz/mandat-und-praxis",
+      "route": "/pruefstandard/quellen/quelle-96a17f5e68f801b4",
       "present": true
     },
     {
-      "route": "/laender/rheinland-pfalz/regierung",
+      "route": "/pruefstandard/quellen/quelle-99cc5b89fb01cd76",
       "present": true
     },
     {
-      "route": "/laender/saarland",
+      "route": "/pruefstandard/quellen/quelle-9ff9e274e011b212",
       "present": true
     },
     {
-      "route": "/laender/sachsen",
+      "route": "/pruefstandard/quellen/quelle-a54070c6ee8661a4",
       "present": true
     },
     {
-      "route": "/laender/sachsen-anhalt",
+      "route": "/pruefstandard/quellen/quelle-a54b68533f8034f1",
       "present": true
     },
     {
-      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "route": "/pruefstandard/quellen/quelle-ad091ba49e612c57",
       "present": true
     },
     {
-      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "route": "/pruefstandard/quellen/quelle-b0855b454fc6e324",
       "present": true
     },
     {
-      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "route": "/pruefstandard/quellen/quelle-b31d73f742fa7655",
       "present": true
     },
     {
-      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "route": "/pruefstandard/quellen/quelle-c075cfc4217ea037",
       "present": true
     },
     {
-      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "route": "/pruefstandard/quellen/quelle-c343d79e781355aa",
       "present": true
     },
     {
-      "route": "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "route": "/pruefstandard/quellen/quelle-cf1a491da8d75163",
       "present": true
     },
     {
-      "route": "/laender/schleswig-holstein",
+      "route": "/pruefstandard/quellen/quelle-d447336dd4ffa0a8",
       "present": true
     },
     {
-      "route": "/laender/thueringen",
+      "route": "/pruefstandard/quellen/quelle-d56269f53cb3b379",
       "present": true
     },
     {
-      "route": "/mandat-und-praxis/btw-2025-afd",
+      "route": "/pruefstandard/quellen/quelle-d6b6200f1ea76b98",
       "present": true
     },
     {
-      "route": "/mandat-und-praxis/btw-2025-cdu-csu",
+      "route": "/pruefstandard/quellen/quelle-d82b7679ec0f9d98",
       "present": true
     },
     {
-      "route": "/mandat-und-praxis/btw-2025-gruene",
+      "route": "/pruefstandard/quellen/quelle-dee2190584dfc4f3",
       "present": true
     },
     {
-      "route": "/mandat-und-praxis/btw-2025-linke",
+      "route": "/pruefstandard/quellen/quelle-e50fbec7bfeb4085",
       "present": true
     },
     {
-      "route": "/mandat-und-praxis/btw-2025-spd",
+      "route": "/pruefstandard/quellen/quelle-e7464f97069f2958",
       "present": true
     },
     {
-      "route": "/mandat-und-praxis/btw-2025-ssw",
+      "route": "/pruefstandard/quellen/quelle-f255d91d79106560",
       "present": true
     },
     {
-      "route": "/mandat-und-praxis/coalition-2025-cdu-csu-spd",
+      "route": "/pruefstandard/quellen/quelle-f512147124c8b14f",
       "present": true
     },
     {
-      "route": "/methodik",
+      "route": "/pruefstandard/quellen/quelle-f9cd44070c73fef6",
       "present": true
     },
     {
-      "route": "/methodik/wirkindikatoren",
+      "route": "/pruefstandard/transparenz",
       "present": true
     },
     {
-      "route": "/quellen",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-006bc7a808af29b4",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-01b32ed39354dc9c",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-0270cabc77e1ff74",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-036d07ef81200064",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-0e2b9f976d9dbebd",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-123a206e5bce74d2",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-18d8f9e61e4fc8d1",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-22713f66a77b1a5d",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-2775d574ff6d04df",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-2b41c262190e77d5",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-324d56739ee51b82",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-3ad90bd6b684e240",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-3d91347f42f498f1",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-453b1bfc2e4a6276",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-4a29e540381929ca",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-4b0125137a475c7c",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-5fbffb8156d9536b",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-622bbdc8e953d548",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-6972a69a97de51a6",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-6ade1cff08c61280",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-748b36e0becf7627",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-82c8ae06f171438d",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-864e435a31b29f93",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-8702043e96c25c4e",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-8b3c481a8be218ab",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-93c2270e52a17cee",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-95e74c2905cabc7d",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-95ff8067ab6bf40d",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-96a17f5e68f801b4",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-99cc5b89fb01cd76",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-9ff9e274e011b212",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-a54070c6ee8661a4",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-a54b68533f8034f1",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-ad091ba49e612c57",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-b0855b454fc6e324",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-b31d73f742fa7655",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-c075cfc4217ea037",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-c343d79e781355aa",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-cf1a491da8d75163",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-d447336dd4ffa0a8",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-d56269f53cb3b379",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-d6b6200f1ea76b98",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-d82b7679ec0f9d98",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-dee2190584dfc4f3",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-e50fbec7bfeb4085",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-e7464f97069f2958",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-f255d91d79106560",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-f512147124c8b14f",
-      "present": true
-    },
-    {
-      "route": "/quellen/quelle-f9cd44070c73fef6",
-      "present": true
-    },
-    {
-      "route": "/regierung",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M01",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M03",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M06",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M07",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M08",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M10",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M12",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M14",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M15",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M17",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M18",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-AFBG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-AKTIVRENTE-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ALTERSVORSORGE-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BGG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BIOMASSEV-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-BESCHAFFUNG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BW-INFRASTRUKTUR-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCFD-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCS-KSPTG-2025",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CYBERGOVSECURE-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-DUENGEGESETZ-MONITORING-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EEG-NETZPAKET-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EMOG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GANZTAG-IMPLEMENTATION-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GEDIG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GKV-FINANZ-2027",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-HIGHTECH-AGENDA-2025-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-INDUSTRIESTROMPREIS-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-INFRA-ZUKUNFT-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-IP-SPEICHERUNG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KHAG-2025-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-MIGRATION-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-VO-DURCHFUEHRUNG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KINDERGELD-ONCE-ONLY-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIZINREGISTER-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIETRECHT-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIGRATION-DIGITAL-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MUETTERRENTE-III",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NAP-TARIFVERHANDLUNGEN-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NIS2-2025",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NL-GAS-UNITISIERUNG-2025",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NOTFALLREFORM-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-OK-LATEINAMERIKA-KARIBIK-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RECHENZENTREN-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RENTE-48-2031",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-REPAIR-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RESERVESTAERKUNG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SINTI-ROMA-AUFARBEITUNG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STAATSMODERNISIERUNG-2025-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STARTUP-SCALEUP-STRATEGIE-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STOFFSTROMBILANZ-AUFHEBUNG-2025",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STRATEGISCHE-GASRESERVE-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STROMVKG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SVA-KOLUMBIEN-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-TARIFTREUE-2025-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-THG-QUOTE-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-TIERSCHUTZ-SCHLACHTVIDEO-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-WISSZEIT-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-WOHNGELD-2027",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-YAD-VASHEM-PROTOKOLL-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-GEAS-DE-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-SEFE-KSI-LISIMS-LNG-2026",
-      "present": true
-    },
-    {
-      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "route": "/pruefstandard/wirkindikatoren",
       "present": true
     },
     {
@@ -36080,11 +36048,11 @@
       "present": true
     },
     {
-      "route": "/transparenz",
+      "route": "/wirkungsakten",
       "present": true
     },
     {
-      "route": "/wirkungsfaelle",
+      "route": "/wirkungsakten/fachanalysen/gebaeudeenergiegesetz-medienwirkung",
       "present": true
     }
   ],

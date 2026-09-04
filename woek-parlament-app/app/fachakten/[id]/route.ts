@@ -1,3 +1,4 @@
+import { canonicalPortalHref, portalNavigation } from "@/lib/navigation";
 import { getPublicationSource } from "@/lib/publication/fachakten";
 import { escapeHtml, renderPublicationMarkdown } from "@/lib/publication/markdown-renderer";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
@@ -42,7 +43,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
   const sourceRecords = source.sourceRecords.map((record) => `<li><strong>${escapeHtml(publicArchiveText(record.kind))}</strong>: ${escapeHtml(record.sha256)}</li>`).join("");
   const title = escapeHtml(publicTitle(source));
   const summary = overviewSummary(source.overview);
-  const back = escapeHtml(localReturnPath(source.renderedRoute));
+  const back = escapeHtml(canonicalPortalHref(localReturnPath(source.renderedRoute)));
   const document = `<!doctype html>
 <html lang="de">
 <head>
@@ -55,7 +56,9 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
 <body>
   <a class="skip-link" href="#fachtext">Zum Fachtext springen</a>
   <header class="document-header"><div class="shell"><a class="brand" href="/">Wirkungsportal Parlament</a><a class="back-link" href="${back}">← Zur Einordnung</a></div></header>
+  <nav class="shell document-navigation" aria-label="Hauptnavigation">${portalNavigation.map((item) => `<a href="${escapeHtml(item.href)}"${item.href === "/wirkungsakten" ? ' aria-current="location"' : ""}>${escapeHtml(item.label)}</a>`).join(" ")}</nav>
   <main class="shell" id="fachtext">
+    <nav aria-label="Brotkrumen"><a href="/">Startseite</a> › <a href="/wirkungsakten">Wirkungsakten</a> › <span aria-current="page">${title}</span></nav>
     <p class="eyebrow">Vollständige Fachakte · Institut für Wirkungsökonomie</p>
     <h1>${title}</h1>
     <p class="lead">${escapeHtml(summary || "Diese Lesefassung enthält den vollständigen freigegebenen Fachtext. Sie lässt keine Wirkpfade, Datenlücken, Quellen oder Einschränkungen weg.")}</p>

@@ -28,7 +28,7 @@ function contentSecurityPolicy(nonce: string) {
  * the term "proxy" for this request boundary.
  */
 export function proxy(request: NextRequest) {
-  if (request.nextUrl.pathname.startsWith("/autopilot/status")) {
+  if (request.nextUrl.pathname.startsWith("/autopilot/status") || request.nextUrl.pathname.startsWith("/pruefstandard/transparenz/datenbetrieb")) {
     const configuredUser = process.env.AUTOPILOT_STATUS_USER;
     const configuredPassword = process.env.AUTOPILOT_STATUS_PASSWORD;
     const authorization = request.headers.get("authorization");
@@ -51,6 +51,8 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
+    "/autopilot/status/:path*",
+    "/pruefstandard/transparenz/datenbetrieb/:path*",
     {
       source: "/((?!api|_next/static|_next/image|favicon.ico).*)",
       missing: [

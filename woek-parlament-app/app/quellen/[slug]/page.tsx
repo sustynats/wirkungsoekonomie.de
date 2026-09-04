@@ -27,7 +27,7 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
   if (!source) notFound();
   return (
     <div className="shell content-page source-detail-page">
-      <p className="breadcrumb"><Link href="/quellen">Quellenarchiv</Link><span>/</span><span>{sourceCategoryLabel[source.category]}</span></p>
+      <p className="record-context"><Link href="/quellen">Quellenarchiv</Link><span>/</span><span>{sourceCategoryLabel[source.category]}</span></p>
       <header className="source-detail-header">
         <div>
           <p className="eyebrow">{sourceCategoryLabel[source.category]}</p>

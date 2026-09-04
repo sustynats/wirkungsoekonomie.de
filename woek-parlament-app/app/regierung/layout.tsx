@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { GovernmentSubnav } from "@/app/components/government/GovernmentSubnav";
 import { governmentPublicationGatesPass } from "@/lib/government/publication-gates";
 
 export function generateMetadata(): Metadata {
@@ -19,7 +18,6 @@ export default function GovernmentLayout({ children }: Readonly<{ children: Reac
       {staging && <div className="government-stage-banner" role="status">
         <div className="shell" data-woek-technical-proof="environment"><strong>Staging:</strong> Fakten- und Darstellungsprüfung. Keine Production-Veröffentlichung.</div>
       </div>}
-      <div className="shell"><GovernmentSubnav /></div>
       {children}
     </>
   );
