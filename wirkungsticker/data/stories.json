@@ -1,7 +1,341 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T04:06:08.228Z",
+  "updated_at": "2026-09-04T04:36:37.841Z",
   "stories": [
+    {
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-2f17a5465110ce7d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-2f17a5465110ce7d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-2f17a5465110ce7d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
+      "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+      "source_summary": "Die Bundesregierung beschreibt auf ihrer Übersichtsseite mehrere Entlastungen bei den Energiepreisen. Genannt werden die Abschaffung der Gasspeicherumlage, der Bundeszuschuss für niedrigere Strom-Netzentgelte und eine damit verbundene Entlastung von allen Verbraucherinnen und Verbrauchern um etwa 10 Milliarden Euro im Jahr.\n\nZudem nennt die Quelle für Haushalte mit Strom- und Gasbezug eine durchschnittliche Ersparnis von etwa 160 Euro im Jahr 2026. Für Unternehmen verweist sie auf einen für 2026 bis 2028 eingeführten Industriestrompreis, die Zustimmung der EU-Kommission am 16. April 2026 sowie das Inkrafttreten der Förderrichtlinie am 7. Mai. Außerdem wird eine dauerhaft auf den EU-Mindestsatz gesenkte Stromsteuer für mehr als 600.000 produzierende Unternehmen erwähnt.",
+      "summary": "Die Bundesregierung nennt mehrere Entlastungen bei Energiepreisen, darunter die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Als weitere Schritte nennt sie einen Industriestrompreis und eine gesenkte Stromsteuer für viele Unternehmen.",
+      "detail_summary": "Gesichert ist nach der Regierungsdarstellung ein Bündel von Eingriffen in Energiepreisbestandteile: Gasspeicherumlage weg, Strom-Netzentgelte runter, zusätzlich ein Industriestrompreis und eine dauerhaft niedrigere Stromsteuer für viele Unternehmen. Materiell relevant ist das, weil damit Preisbestandteile und damit Kostenrelationen für Haushalte und Betriebe verändert werden. Der Wirkpfad läuft über geringere laufende Energiekosten; kurzfristig kann das die Liquidität von Haushalten und die Kostenbasis von Unternehmen verbessern. Mögliche Folgen sind höhere Konsumspielräume, geringerer Kostendruck in energieintensiven Branchen und eine veränderte Lastenverteilung zwischen Verbraucherinnen, Wirtschaft und Staat. Offen bleibt hier, wie stark sich die angekündigten Beträge tatsächlich in Endpreisen niederschlagen und wie sich die Maßnahmen im Detail verteilen. Eine unabhängige Bestätigung der Größenordnungen liegt in den gelieferten Quellen nicht vor.",
+      "why_relevant": "Die Meldung beschreibt staatliche Eingriffe in zentrale Energiepreisbestandteile mit potenziell breiten Folgen für Haushalte, Unternehmen und die Kostenstruktur der Wirtschaft.",
+      "topic": [
+        "Energie",
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Entlastungen betreffen laut Quelle Verbraucherinnen und Verbraucher sowie viele Unternehmen und können laufende Energiekosten spürbar verändern."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der Quelle folgt keine belastbare Umweltwirkung; mögliche Verlagerungen bei Energieverbrauch oder Emissionen bleiben unbeziffert."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Maßnahmen sind staatliche Preis- und Abgabenpolitik; für demokratische Korrekturfähigkeit ist relevant, dass Umfang und Verteilung der Entlastung öffentlich beschrieben werden."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Entlastung pro Jahr",
+            "value": "10",
+            "unit": "Milliarden Euro",
+            "context": "Von der Bundesregierung genannte jährliche Entlastung aller Verbraucherinnen und Verbraucher"
+          },
+          {
+            "label": "Durchschnittliche Ersparnis 2026",
+            "value": "160",
+            "unit": "Euro",
+            "context": "Durchschnittliche Ersparnis für Haushalte mit Strom und Gas"
+          },
+          {
+            "label": "Begünstigte Unternehmen",
+            "value": "600.000",
+            "unit": "Unternehmen",
+            "context": "Für die die Stromsteuer dauerhaft gesenkt wurde"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "beschaeftigte",
+          "staat"
+        ],
+        "timeline": [
+          {
+            "date": "2026-04-16",
+            "label": "EU-Kommission gibt grünes Licht"
+          },
+          {
+            "date": "2026-05-07",
+            "label": "Förderrichtlinie tritt in Kraft"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-02T13:00:00.000Z",
+      "last_updated": "2026-09-04T04:39:29.989Z",
+      "version": 3,
+      "news_status": "preliminary",
+      "event_id": "event-ebbcaeb2f5de9babbe87",
+      "source_published_at": "2026-09-02T13:00:00.000Z",
+      "published_at": "2026-09-03T07:49:38.699Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T13:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-9d87c7944980e87e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "bessere-startchancen-fur-kinder-80e87e",
+      "title": "Bessere Startchancen für Kinder",
+      "source_summary": "Die Bundesregierung beschreibt frühe Bildung und Kinderbetreuung als zentrale Zukunftsaufgabe und kündigt an, die Startchancen von Kindern sowie die Qualität der frühkindlichen Bildung zu stärken. Nach der Quelle hat das Bundeskabinett den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen.\n\nDer Entwurf sieht bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung vor. Genannt werden außerdem die Feststellung von Sprach- und Entwicklungsstand spätestens mit vier Jahren, eine anschließende Förderung bei Bedarf, besondere Unterstützung für Kitas in herausfordernden Lebenslagen sowie ein besserer Übergang von der Kita in die Grundschule. Der Bund will die Länder ab 2027 über acht Jahre mit rund 9,25 Milliarden Euro bei Mehrbelastungen unterstützen.",
+      "summary": "Das Bundeskabinett hat den Entwurf für ein Kita-Gesetz beschlossen. Vorgesehen sind bundesweit einheitliche Qualitätsstandards und rund 9,25 Milliarden Euro Bundesmittel ab 2027.",
+      "detail_summary": "Gesichert ist, dass das Bundeskabinett den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen hat. Die Vorlage soll bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung einführen und die Start- und Bildungschancen von Kindern verbessern. Außerdem nennt die Quelle als Bausteine die Feststellung von Sprach- und Entwicklungsstand spätestens mit vier Jahren, eine anschließende Förderung bei Bedarf und mehr Unterstützung für Einrichtungen in belasteten Lebenslagen. Materiell relevant ist das vor allem wegen des bundesweiten Geltungsanspruchs, des mehrjährigen Finanzvolumens und möglicher Folgen für Zuständigkeiten, Ressourcenverteilung und Förderpraxis. Als Wirkpfad beschreibt die Quelle eine frühere und gezieltere Förderung, die Unterschiede zwischen Kindern und Kitas verringern soll. Offen bleibt jedoch, wie der Entwurf im weiteren Gesetzgebungsverfahren verändert wird und wann konkrete Wirkungen tatsächlich messbar werden.",
+      "why_relevant": "Die Meldung betrifft frühkindliche Bildung, bundesweite Standards und eine mehrjährige Finanzzusage von rund 9,25 Milliarden Euro; das kann Verteilung, Zuständigkeiten und Förderpraxis im System Kita verändern.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Maßnahme zielt auf frühe Förderung, Chancengleichheit und die Qualität der Betreuung für Kinder in Deutschland; betroffen ist ein breiter Bevölkerungsbereich über mehrere Jahre."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Quelle nennt keinen direkten Umweltbezug; ein planetarer Effekt ist aus dem Material nicht belastbar ableitbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Bundesweite Standards und die Verteilung erheblicher Mittel berühren staatliche Steuerung und die demokratische Korrekturfähigkeit im Bildungsföderalismus."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Bundesmittel ab 2027",
+            "value": "9,25",
+            "unit": "Milliarden Euro",
+            "context": "Vom Bund angekündigte Summe über acht Jahre"
+          }
+        ],
+        "affected_groups": [
+          "kinder_jugend",
+          "kommunen",
+          "staat"
+        ],
+        "timeline": [
+          {
+            "date": "2027",
+            "label": "Beginn der Bundesmittel über acht Jahre"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-02T08:00:00.000Z",
+      "last_updated": "2026-09-04T04:38:32.687Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-ef9d83c7cd180ed4c9e4",
+      "source_published_at": "2026-09-02T08:00:00.000Z",
+      "published_at": "2026-09-04T04:38:32.687Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form der Gesetzentwurf den Bundestag passiert und wann er in Kraft tritt.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Parlamentsbeschluss, Verkündung und Inkrafttretensdatum",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-665782deae448573",
+          "announced_at": "2026-09-02T08:00:00.000Z",
+          "follow_up_date": "2026-09-11T04:38:32.687Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T08:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b5e0a39f46388642",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "speech-by-commissioner-lahbib-at-the-european-parliament-on-the-2026-wildfire-season-388642",
+      "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+      "source_summary": "Die Quelle ist eine Rede von Kommissarin Lahbib im Europäischen Parlament zur Waldbrandsaison 2026. Sie datiert aus Brüssel vom 1. September 2026 und beschreibt den Sommer als Belastungsprobe für die EU.\n\nIm sichtbaren Ausschnitt nennt die Rede als zentrale Zahl, dass bereits fast 700.000 Hektar in der EU verbrannt seien. Laut dem Text sei das mehr Land als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte; der vollständige Zusammenhang des Satzes ist im gelieferten Auszug jedoch abgeschnitten.",
+      "summary": "Lahbib sagte im Europaparlament, dass in der EU in diesem Sommer bereits fast 700.000 Hektar verbrannt seien. Der Auszug ordnet das als mehr als den Jahresdurchschnitt der vergangenen zwei Jahrzehnte ein.",
+      "detail_summary": "Gesichert ist aus der Primärquelle zunächst nur eine politische Aussage zur laufenden Waldbrandsaison: Kommissarin Lahbib nennt im Europaparlament fast 700.000 verbrannte Hektar in der EU. Das ist als erste Lagezahl materiell, weil sie einen großen Flächenverlust beschreibt und damit auf Belastungen für Natur, Landnutzung und öffentliche Krisenreaktion verweist. Der Wirkpfad liegt vor allem in den direkten Schäden durch Feuer sowie in möglichen Folgeeffekten auf Schutz, Wiederaufbau und Prävention. Für eine ex-post-Wirkungsbilanz reicht der Ausschnitt nicht aus; offen bleiben regionale Verteilung, Ursachen, Vergleichbarkeit und die Frage, ob weitere Maßnahmen angekündigt wurden. Die Evidenz ist vorläufig, weil nur ein sichtbarer Redeauszug vorliegt und keine unabhängige Bestätigung der Zahl.",
+      "why_relevant": "Die Meldung enthält eine konkrete, große Lagezahl zur Waldbrandlage in der EU und kann Prioritäten für Prävention, Einsatzplanung und Umweltpolitik beeinflussen.",
+      "topic": [
+        "Gesundheit",
+        "Europa"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Zahl verweist auf potenzielle Risiken für Gesundheit, Sicherheit und Infrastruktur, ohne dass im Auszug weitere Betroffenengruppen quantifiziert werden."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Verbrannte Fläche ist ein direkter Indikator für Naturverlust, Emissionen und Belastung von Ökosystemen; die Größenordnung ist erheblich."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Im Auszug geht es primär um eine Lagebeschreibung im Parlament, nicht um eine demokratische Regel- oder Entscheidungsänderung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Verbrannte Fläche",
+            "value": "700.000",
+            "unit": "Hektar",
+            "context": "Fast so viel Fläche sei in der EU bereits verbrannt"
+          }
+        ],
+        "affected_groups": [
+          "natur",
+          "europa"
+        ],
+        "timeline": [
+          {
+            "date": "2026-09-01",
+            "label": "Rede von Lahbib im Parlament"
+          }
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "risiko",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-01T16:09:08.000Z",
+      "last_updated": "2026-09-04T04:38:09.628Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-88c06765dd812ab1333c",
+      "source_published_at": "2026-09-01T16:09:08.000Z",
+      "published_at": "2026-09-04T04:38:09.628Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "eu-kommission-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Europäische Kommission – Press Corner",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T16:09:08.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
       "title_image": {
