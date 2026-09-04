@@ -96,12 +96,14 @@ test("system-wide semantic cluster guards keep flagged objects out of public", (
   }
 });
 
-test("portal homepage provides a prominent entry into current government work", () => {
-  const homepage = readFileSync(resolve("app/page.tsx"), "utf8");
+test("P4 relocates the complete government introduction to its institutional landing", () => {
+  const homepage = readFileSync(resolve("app/components/HomeContentSections.tsx"), "utf8");
+  assert.match(readFileSync(resolve("app/ebenen/bundesregierung/page.tsx"), "utf8"), /<HomeGovernmentContext/);
+  assert.match(homepage, /GOVERNMENT_STAGING === "1"/);
   assert.match(homepage, /Regierungshandeln &amp; Wirkung/);
   assert.match(homepage, /was war über mögliche Folgen schon bekannt/i);
   assert.match(homepage, /href="\/regierung"/);
-  assert.match(homepage, /getGovernmentPublicData\(\)\.actions\.slice\(0, 3\)/);
+  assert.match(homepage, /getGovernmentPublicData\(\)\.actions\.slice\(0,\s*3\)/);
 });
 
 test("public government projection contains no private paths or provider artefacts", () => {

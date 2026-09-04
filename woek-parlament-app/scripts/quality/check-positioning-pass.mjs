@@ -9,7 +9,12 @@ const checks = [
   {
     file: "app/page.tsx",
     required: [
-      "Von der politischen Absicht zur tatsächlichen Wirkung.",
+      "Von der politischen Absicht zur tatsächlichen Wirkung."
+    ]
+  },
+  {
+    file: "app/components/HomeContentSections.tsx",
+    required: [
       "Politik prüft Folgen bereits heute.",
       "WÖk-Systemcheck",
       "Zustandsveränderungen festgestellt und – soweit möglich – zugerechnet"
