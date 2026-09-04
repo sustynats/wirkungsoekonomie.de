@@ -1,7 +1,1513 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T05:06:21.635Z",
+  "updated_at": "2026-09-04T05:21:19.381Z",
   "stories": [
+    {
+      "story_id": "wt-e442d6ad81290406",
+      "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
+      "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
+      "first_seen": "2026-09-03T06:53:00.000Z",
+      "last_updated": "2026-09-04T05:23:06.391Z",
+      "published_at": "2026-09-04T01:52:05.573Z",
+      "updated_at": "2026-09-04T05:23:06.391Z",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Studie-von-Unicef/!6209752",
+          "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
+          "summary": "Kinder sind im Internet womöglich häufiger sexuellem Missbrauch ausgesetzt als bisher angenommen. Das zeigt eine Unicef-Untersuchung in 21 Ländern. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T06:53:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "208ab37a2b288f50f65ad0d1718c82091149026cd9469ada9990b7c3962cfd17",
+          "source_item_id": "7056452112063302b0ec2f7b7ea5ee74bcfab02bbe8db9bd6f1a83f698b67898",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T06:53:00.000Z",
+          "ingested_at": "2026-09-03T22:21:17.010Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e442d6ad81290406-v2-claim-1",
+          "story_id": "wt-e442d6ad81290406",
+          "claim": "Unicef veröffentlicht eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern in 21 Ländern.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Studie-von-Unicef/!6209752",
+              "excerpt_hash": "0aaedb5733f470fb78e6",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:23:06.391Z"
+        },
+        {
+          "claim_id": "wt-e442d6ad81290406-v2-claim-2",
+          "story_id": "wt-e442d6ad81290406",
+          "claim": "In der Studie sind nach Schätzungen der Organisation 20 Millionen Mädchen und Jungen betroffen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Studie-von-Unicef/!6209752",
+              "excerpt_hash": "54d406ad5252057a0913",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:23:06.391Z"
+        },
+        {
+          "claim_id": "wt-e442d6ad81290406-v2-claim-3",
+          "story_id": "wt-e442d6ad81290406",
+          "claim": "Nahezu 60 Prozent der Fälle ereigneten sich auf Social-Media-Plattformen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Studie-von-Unicef/!6209752",
+              "excerpt_hash": "8156564962e31399cb9d",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:23:06.391Z"
+        },
+        {
+          "claim_id": "wt-e442d6ad81290406-v2-claim-4",
+          "story_id": "wt-e442d6ad81290406",
+          "claim": "Unicef berichtet, dass 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt wurden und 9 Millionen zu sexuellen Gesprächen oder zum Teilen sexueller Bilder aufgefordert wurden.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Studie-von-Unicef/!6209752",
+              "excerpt_hash": "408b89823b8535c5b7b3",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:23:06.391Z"
+        },
+        {
+          "claim_id": "wt-e442d6ad81290406-v2-claim-5",
+          "story_id": "wt-e442d6ad81290406",
+          "claim": "Unicef führt aus, dass betroffene Kinder viermal häufiger Suizidgedanken oder selbstverletzendes Verhalten angaben als Kinder ohne diese Erfahrungen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Studie-von-Unicef/!6209752",
+              "excerpt_hash": "0d12ab8c4664b3ddde07",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:23:06.391Z"
+        }
+      ],
+      "event_id": "event-83becedad84b8b907cdf",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T05:22:53.863Z",
+      "publish_ready_at": "2026-09-04T05:23:06.391Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "60136c50cfe9d1631b7ff39226b8bd332f232beb54b41b2e313994fda6353c2b"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "4250ff05efc931b273c8b699bb4a319c76fa4bcfe80c8c71ae197890636285c2"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "38450c542e9190b3295fc6284b1f42f98d01983d70d95efbc3c4c332d0573ea8"
+        },
+        "source_visual": null,
+        "fingerprint": "5e90e3d035ad3da24260ae98f66de9de0490007bd7160264b1ae29672b8b472a",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T01:54:09.695Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Unicef hat laut der taz eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern veröffentlicht. Die Meldung nennt 21 untersuchte Länder und verweist auf Schätzungen der Organisation zu 20 Millionen betroffenen Mädchen und Jungen. Zudem heißt es, dass nahezu 60 Prozent der Fälle auf Social-Media-Plattformen stattgefunden hätten.\n\nDie taz berichtet außerdem, dass 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt gewesen seien und 9 Millionen gegen ihren Willen zu sexuellen Gesprächen oder zum Teilen sexueller Bilder aufgefordert worden seien. Genannt werden auch Risiken und Folgen wie Angst, Scham, Verwirrung, Isolation sowie häufiger berichtete Suizidgedanken oder selbstverletzendes Verhalten. Deutschland gehörte nach dem Text nicht zu den untersuchten Ländern.",
+      "analysis": {
+        "story_id": "wt-e442d6ad81290406",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Unicef veröffentlicht laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Die Meldung stützt sich auf eine Untersuchung in 21 Ländern.",
+        "detail_summary": "Gesichert ist zunächst, dass Unicef nach der taz eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern veröffentlicht hat. Die Meldung nennt mehrere konkrete Zahlen: 20 Millionen Betroffene in 21 Ländern, nahezu 60 Prozent der Fälle auf Social-Media-Plattformen sowie 15 Millionen und 9 Millionen bei weiteren Teilindikatoren. Das ist journalistisch relevant, weil die Daten einen großen, grenzüberschreitenden Belastungsraum für Kinder im digitalen Umfeld beschreiben. Der Wirkpfad liegt vor allem in Plattformdesign, Kontaktanbahnung und missbräuchlicher Nutzung digitaler Räume; möglich sind Belastungen für Schutz, Gesundheit und Meldestrukturen. Die Evidenz bleibt jedoch auf eine sekundäre Darstellung der taz begrenzt, die Originalstudie liegt im gelieferten Material nicht direkt vor.",
+        "why_relevant": "Die Meldung liefert neue, zahlenbasierte Hinweise auf ein großes, international verteiltes Schutz- und Gesundheitsproblem im digitalen Raum.",
+        "status": "erste Daten",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind laut Meldung sehr viele Kinder und Jugendliche; genannt werden psychische Belastungen und potenzielle Suizidrisiken."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug in den vorliegenden Quellen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Digitale Schutzräume, Plattformgestaltung und Meldesysteme berühren staatliche und gesellschaftliche Korrekturfähigkeit."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Zahlen deuten auf einen großen Schutzbedarf im digitalen Raum und auf mögliche Anpassungen bei Plattformregeln, Präventionsarbeit und Hilfesystemen hin.",
+        "impact_risks": [
+          "Mehr Belästigung und Ausbeutung in digitalen Räumen, wenn Schutzmechanismen unzureichend bleiben.",
+          "Psychische Folgelasten für betroffene Kinder und Jugendliche können Hilfesysteme zusätzlich beanspruchen."
+        ],
+        "mechanisms": [
+          "Plattformfunktionen und gefälschte Konten können Kontaktanbahnung und Ausnutzung erleichtern.",
+          "Frühe Online-Kontakte und Weiterverbreitung sexueller Inhalte können Missbrauchsverläufe verstärken."
+        ],
+        "first_order": [
+          "Die Meldung erhöht die Sichtbarkeit des Problems und der genannten Betroffenenzahlen.",
+          "Schutz- und Präventionsakteure erhalten Anhaltspunkte für Risikoorte im Netz."
+        ],
+        "second_order": [
+          "Plattformen und Politik könnten stärker über Design- und Moderationspflichten diskutieren.",
+          "Hilfesysteme und Aufklärung könnten auf digitale Kontakt- und Verbreitungswege ausgerichtet werden."
+        ],
+        "third_order": [
+          "Langfristig könnten Standards für kinderschützende Plattformgestaltung und Meldestrukturen verschärft werden.",
+          "Die Daten könnten internationale Vergleichbarkeit und Forschung zu digitaler Gewalt gegen Minderjährige stärken."
+        ],
+        "systemic_relevance": "Der Vorgang ist systemisch relevant, weil er einen großen, grenzüberschreitenden Schutz- und Regulierungsbereich digitaler Plattformen betrifft.",
+        "transformation_potential": "Die Nachricht kann Debatten über Plattformarchitektur, Jugendschutz und Präventionsketten verdichten, ist aber noch keine Regeländerung.",
+        "resilience": "Resilienzgewinne wären möglich, wenn Meldestrukturen, Schutzmechanismen und Aufklärung gestärkt werden; belegt ist das hier noch nicht.",
+        "side_effects": [
+          "Mehr öffentliche Aufmerksamkeit kann Meldebereitschaft und Prävention fördern.",
+          "Die Zahlen können auch zu Überforderung oder Alarmisierung beitragen, ohne sofortige Gegenmaßnahmen zu erzwingen."
+        ],
+        "uncertainties": [
+          "Die Originalstudie liegt im gelieferten Material nicht direkt vor.",
+          "Unklar bleibt die genaue Methodik der Länderwahl und Gewichtung.",
+          "Die Angaben stammen hier nur aus einer sekundären Darstellung."
+        ],
+        "evidence_level": "attributed_single_source",
+        "attribution": "Die Kernangaben sind der taz zugeschrieben; unabhängige Bestätigung liegt im Datensatz nicht vor.",
+        "watch_next": [
+          "Originalstudie und Methodik der Unicef-Untersuchung prüfen.",
+          "Prüfen, ob weitere unabhängige Berichte dieselben Kernzahlen bestätigen."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 3, SDG 5, SDG 16 und SDG 17"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "cascades",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält neue, zahlenbasierte Informationen über ein großes Schutz- und Gesundheitsproblem; die Evidenz ist aber bislang nur sekundär belegt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Betroffene Länder",
+              "value": "21",
+              "unit": "Länder",
+              "context": "In diesen Ländern wurden Untersuchungen durchgeführt.",
+              "claim_id": "wt-e442d6ad81290406-claim-01"
+            },
+            {
+              "label": "Betroffene Kinder und Jugendliche",
+              "value": "20 Millionen",
+              "unit": "Personen",
+              "context": "So schätzt Unicef das Ausmaß laut Meldung.",
+              "claim_id": "wt-e442d6ad81290406-claim-01"
+            },
+            {
+              "label": "Fälle auf Social Media",
+              "value": "nahezu 60 Prozent",
+              "unit": "Anteil",
+              "context": "So viele Fälle sollen sich dort ereignet haben.",
+              "claim_id": "wt-e442d6ad81290406-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "kinder_jugend",
+            "verbraucherinnen",
+            "staat"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T01:52:05.573Z",
+          "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
+          "source_summary": "Die taz berichtet über eine Unicef-Untersuchung zu sexueller Ausbeutung von Kindern im Netz. Laut Text wurde die Studie in 21 Ländern durchgeführt; Deutschland gehörte nicht dazu. Der Bericht nennt mehrere Zahlen zu Betroffenheit und zu den Plattformen, auf denen ein großer Teil der Fälle stattgefunden haben soll. Außerdem wird beschrieben, dass Unicef vor psychischen Folgen warnt und auf Forschungsinterviews verweist.\n\nDer Text zitiert Unicef mit dem Hinweis, dass viele Kinder Erfahrungen nicht melden. Genannt werden auch Aussagen von Unicef-Exekutivdirektorin Catherine Russell zu Belastungen und zur Schwierigkeit, Hilfe zu suchen.",
+          "analysis": {
+            "story_id": "wt-e442d6ad81290406",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Unicef meldet laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Genannt werden Betroffenheit in 21 Ländern und hohe Anteile auf sozialen Plattformen.",
+            "detail_summary": "Der bestbelegte Kern der Meldung ist eine von Unicef ausgewertete Untersuchung in 21 Ländern, die laut taz von einer deutlich höheren Verbreitung sexueller Ausbeutung im Internet ausgeht als bisher angenommen. Der Bericht nennt konkrete Zahlen zu Betroffenheit, darunter „jedes fünfte Kind“ sowie weitere Teilbefunde zu ungewollten Inhalten, Aufforderungen zu sexuellen Handlungen und dem Weiterverbreiten von Bildern. Für die Nachricht relevant ist vor allem der mögliche Hinweis auf ein breites, plattformgebundenes Risikofeld, das Kinder in alltäglichen digitalen Umgebungen trifft. Daraus ergibt sich ein Wirkpfad über Plattformdesign, Kontaktanbahnung und Vertrauensausnutzung, der Schutzmechanismen, Moderation und Prävention berühren kann. Mögliche Folge sind verstärkte politische und regulatorische Debatten über Jugendschutz und Plattformpflichten. Die Evidenz bleibt hier jedoch vorläufig, weil nur eine journalistische Sekundärquelle vorliegt und die Originalstudie im gelieferten Material nicht direkt geprüft werden kann.",
+            "why_relevant": "Die Meldung betrifft eine große Zahl potenziell Betroffener, verweist auf digitale Schutz- und Regulierungsfragen und kann Debatten über Plattformpflichten, Prävention und Kinderschutz beeinflussen.",
+            "status": "erste Daten",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die berichteten Zahlen betreffen Kinder direkt und deuten auf ein relevantes Risiko für Schutz, Gesundheit und Teilhabe im digitalen Raum."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Es ist kein unmittelbarer Umwelt- oder Klimabezug aus den Quellen erkennbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Meldung berührt Regulierung von Plattformen, Schutzstandards und die demokratische Kontrolle digitaler Räume."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Zahlen können den Druck auf Plattformen, Aufsicht und Präventionssysteme erhöhen und Schutzstandards für Kinder im Netz stärken.",
+            "impact_risks": [
+              "Ohne belastbare Einordnung können Zahlen Debatten überreizen oder unterschiedliche Delikt- und Erhebungsarten vermischen."
+            ],
+            "mechanisms": [
+              "Plattformdesign und Vertrauensausnutzung erleichtern Kontaktanbahnung und Missbrauch.",
+              "Berichtete Fallzahlen können Regulierung, Aufklärung und Schutzkonzepte anstoßen."
+            ],
+            "first_order": [
+              "mehr Aufmerksamkeit für Online-Schutz von Kindern",
+              "möglicher Anpassungsdruck auf soziale Plattformen"
+            ],
+            "second_order": [
+              "strengere Regeln oder Moderationspflichten können diskutiert werden",
+              "Präventions- und Hilfsangebote könnten ausgebaut werden"
+            ],
+            "third_order": [
+              "langfristig könnten sich Meldewege, Plattformnormen und Schutzstandards verändern"
+            ],
+            "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie digitale Interaktionsräume, Kinderschutz und mögliche Regulierungsreaktionen zugleich betrifft.",
+            "transformation_potential": "Potenzial für verschärfte Schutzarchitekturen im Netz, aber noch keine belegte Transformationswirkung.",
+            "resilience": "Stärkere Meldesysteme und Präventionsstrukturen könnten die Widerstandsfähigkeit von Kindern und Institutionen erhöhen; belegt ist das hier noch nicht.",
+            "side_effects": [
+              "Mehr Meldungen können auch bestehende Dunkelziffern sichtbarer machen, ohne dass sich das Grundrisiko sofort ändert."
+            ],
+            "uncertainties": [
+              "Die Originalstudie liegt im gelieferten Material nicht direkt vor.",
+              "Unklar bleibt, wie die 21 Länder ausgewählt wurden und wie die Befunde methodisch gewichtet sind.",
+              "Die taz berichtet die Zahlen sekundär; unabhängige Bestätigung fehlt im Datensatz."
+            ],
+            "evidence_level": "einseitig belegt über eine journalistische Sekundärquelle; zentrale Zahlen stammen aus der berichteten Unicef-Studie, sind aber im Material nicht direkt prüfbar.",
+            "attribution": "Die Aussagen werden Unicef zugeschrieben und von der taz zusammengefasst; unabhängige Verifikation liegt im Datensatz nicht vor.",
+            "watch_next": [
+              "Abgleich mit der Originalstudie und ihrer Methodik",
+              "Prüfen, ob Behörden oder Fachstellen auf die Zahlen reagieren"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16 und SDG 3, soweit der Kinderschutz und die psychische Gesundheit betroffen sind"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "intensity",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung bringt neue, zahlenbasierte Hinweise auf ein großes Kinderschutzproblem im digitalen Raum; das ist materiell und nicht bloß Aufmerksamkeit."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Betroffene Länder",
+                  "value": "21",
+                  "unit": "Länder",
+                  "context": "In diesen Ländern wurde die Untersuchung durchgeführt",
+                  "claim_id": "wt-e442d6ad81290406-claim-01"
+                },
+                {
+                  "label": "Anteil der Kinder",
+                  "value": "jedes fünfte",
+                  "unit": "Kind",
+                  "context": "Laut Bericht innerhalb eines Jahres im Netz betroffen",
+                  "claim_id": "wt-e442d6ad81290406-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "verbraucherinnen",
+                "staat"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-e442d6ad81290406-v1-claim-1",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "Eine von Unicef ausgewertete Untersuchung in 21 Ländern kommt laut Bericht zu dem Befund, dass jedes fünfte Kind innerhalb eines Jahres im Internet sexuell missbraucht oder ausgebeutet wurde.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "0aaedb5733f470fb78e6",
+                  "checked_at": "2026-09-04T01:52:05.573Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "54d406ad5252057a0913",
+                  "checked_at": "2026-09-04T01:52:05.573Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:05.573Z"
+            },
+            {
+              "claim_id": "wt-e442d6ad81290406-v1-claim-2",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "Laut dem Bericht ereigneten sich nahezu 60 Prozent der Fälle auf Social-Media-Plattformen wie Facebook, Instagram, Snapchat, Tiktok und Whatsapp.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "8156564962e31399cb9d",
+                  "checked_at": "2026-09-04T01:52:05.573Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:05.573Z"
+            },
+            {
+              "claim_id": "wt-e442d6ad81290406-v1-claim-3",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "Unicef nennt außerdem, dass mehr als 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt waren, 9 Millionen zu sexuellen Handlungen gedrängt wurden und 4 Millionen sexuelle Bilder ohne Zustimmung weiterverbreitet wurden.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "408b89823b8535c5b7b3",
+                  "checked_at": "2026-09-04T01:52:05.573Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "8fbf62cee0dface7b88b",
+                  "checked_at": "2026-09-04T01:52:05.573Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:05.573Z"
+            },
+            {
+              "claim_id": "wt-e442d6ad81290406-v1-claim-4",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "In den untersuchten Ländern kannten 38 Prozent der Kinder die missbrauchende Person zunächst online; zugleich verweist die Studie darauf, dass in gut jedem zweiten Fall Personen beteiligt waren, die das Kind bereits kannte.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "d8a22bc03b7d0abb5f2a",
+                  "checked_at": "2026-09-04T01:52:05.573Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "7deccbf7401bc681c40c",
+                  "checked_at": "2026-09-04T01:52:05.573Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:05.573Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Studie-von-Unicef/!6209752",
+              "content_hash": "208ab37a2b288f50f65ad0d1718c82091149026cd9469ada9990b7c3962cfd17"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T05:23:06.391Z",
+          "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
+          "source_summary": "Unicef hat laut der taz eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern veröffentlicht. Die Meldung nennt 21 untersuchte Länder und verweist auf Schätzungen der Organisation zu 20 Millionen betroffenen Mädchen und Jungen. Zudem heißt es, dass nahezu 60 Prozent der Fälle auf Social-Media-Plattformen stattgefunden hätten.\n\nDie taz berichtet außerdem, dass 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt gewesen seien und 9 Millionen gegen ihren Willen zu sexuellen Gesprächen oder zum Teilen sexueller Bilder aufgefordert worden seien. Genannt werden auch Risiken und Folgen wie Angst, Scham, Verwirrung, Isolation sowie häufiger berichtete Suizidgedanken oder selbstverletzendes Verhalten. Deutschland gehörte nach dem Text nicht zu den untersuchten Ländern.",
+          "analysis": {
+            "story_id": "wt-e442d6ad81290406",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Unicef veröffentlicht laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Die Meldung stützt sich auf eine Untersuchung in 21 Ländern.",
+            "detail_summary": "Gesichert ist zunächst, dass Unicef nach der taz eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern veröffentlicht hat. Die Meldung nennt mehrere konkrete Zahlen: 20 Millionen Betroffene in 21 Ländern, nahezu 60 Prozent der Fälle auf Social-Media-Plattformen sowie 15 Millionen und 9 Millionen bei weiteren Teilindikatoren. Das ist journalistisch relevant, weil die Daten einen großen, grenzüberschreitenden Belastungsraum für Kinder im digitalen Umfeld beschreiben. Der Wirkpfad liegt vor allem in Plattformdesign, Kontaktanbahnung und missbräuchlicher Nutzung digitaler Räume; möglich sind Belastungen für Schutz, Gesundheit und Meldestrukturen. Die Evidenz bleibt jedoch auf eine sekundäre Darstellung der taz begrenzt, die Originalstudie liegt im gelieferten Material nicht direkt vor.",
+            "why_relevant": "Die Meldung liefert neue, zahlenbasierte Hinweise auf ein großes, international verteiltes Schutz- und Gesundheitsproblem im digitalen Raum.",
+            "status": "erste Daten",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind laut Meldung sehr viele Kinder und Jugendliche; genannt werden psychische Belastungen und potenzielle Suizidrisiken."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Kein direkter Umweltbezug in den vorliegenden Quellen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Digitale Schutzräume, Plattformgestaltung und Meldesysteme berühren staatliche und gesellschaftliche Korrekturfähigkeit."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Zahlen deuten auf einen großen Schutzbedarf im digitalen Raum und auf mögliche Anpassungen bei Plattformregeln, Präventionsarbeit und Hilfesystemen hin.",
+            "impact_risks": [
+              "Mehr Belästigung und Ausbeutung in digitalen Räumen, wenn Schutzmechanismen unzureichend bleiben.",
+              "Psychische Folgelasten für betroffene Kinder und Jugendliche können Hilfesysteme zusätzlich beanspruchen."
+            ],
+            "mechanisms": [
+              "Plattformfunktionen und gefälschte Konten können Kontaktanbahnung und Ausnutzung erleichtern.",
+              "Frühe Online-Kontakte und Weiterverbreitung sexueller Inhalte können Missbrauchsverläufe verstärken."
+            ],
+            "first_order": [
+              "Die Meldung erhöht die Sichtbarkeit des Problems und der genannten Betroffenenzahlen.",
+              "Schutz- und Präventionsakteure erhalten Anhaltspunkte für Risikoorte im Netz."
+            ],
+            "second_order": [
+              "Plattformen und Politik könnten stärker über Design- und Moderationspflichten diskutieren.",
+              "Hilfesysteme und Aufklärung könnten auf digitale Kontakt- und Verbreitungswege ausgerichtet werden."
+            ],
+            "third_order": [
+              "Langfristig könnten Standards für kinderschützende Plattformgestaltung und Meldestrukturen verschärft werden.",
+              "Die Daten könnten internationale Vergleichbarkeit und Forschung zu digitaler Gewalt gegen Minderjährige stärken."
+            ],
+            "systemic_relevance": "Der Vorgang ist systemisch relevant, weil er einen großen, grenzüberschreitenden Schutz- und Regulierungsbereich digitaler Plattformen betrifft.",
+            "transformation_potential": "Die Nachricht kann Debatten über Plattformarchitektur, Jugendschutz und Präventionsketten verdichten, ist aber noch keine Regeländerung.",
+            "resilience": "Resilienzgewinne wären möglich, wenn Meldestrukturen, Schutzmechanismen und Aufklärung gestärkt werden; belegt ist das hier noch nicht.",
+            "side_effects": [
+              "Mehr öffentliche Aufmerksamkeit kann Meldebereitschaft und Prävention fördern.",
+              "Die Zahlen können auch zu Überforderung oder Alarmisierung beitragen, ohne sofortige Gegenmaßnahmen zu erzwingen."
+            ],
+            "uncertainties": [
+              "Die Originalstudie liegt im gelieferten Material nicht direkt vor.",
+              "Unklar bleibt die genaue Methodik der Länderwahl und Gewichtung.",
+              "Die Angaben stammen hier nur aus einer sekundären Darstellung."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Die Kernangaben sind der taz zugeschrieben; unabhängige Bestätigung liegt im Datensatz nicht vor.",
+            "watch_next": [
+              "Originalstudie und Methodik der Unicef-Untersuchung prüfen.",
+              "Prüfen, ob weitere unabhängige Berichte dieselben Kernzahlen bestätigen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 5, SDG 16 und SDG 17"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "cascades",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält neue, zahlenbasierte Informationen über ein großes Schutz- und Gesundheitsproblem; die Evidenz ist aber bislang nur sekundär belegt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Betroffene Länder",
+                  "value": "21",
+                  "unit": "Länder",
+                  "context": "In diesen Ländern wurden Untersuchungen durchgeführt.",
+                  "claim_id": "wt-e442d6ad81290406-claim-01"
+                },
+                {
+                  "label": "Betroffene Kinder und Jugendliche",
+                  "value": "20 Millionen",
+                  "unit": "Personen",
+                  "context": "So schätzt Unicef das Ausmaß laut Meldung.",
+                  "claim_id": "wt-e442d6ad81290406-claim-01"
+                },
+                {
+                  "label": "Fälle auf Social Media",
+                  "value": "nahezu 60 Prozent",
+                  "unit": "Anteil",
+                  "context": "So viele Fälle sollen sich dort ereignet haben.",
+                  "claim_id": "wt-e442d6ad81290406-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "verbraucherinnen",
+                "staat"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-e442d6ad81290406-v2-claim-1",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "Unicef veröffentlicht eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern in 21 Ländern.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "0aaedb5733f470fb78e6",
+                  "checked_at": "2026-09-04T05:23:06.391Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            },
+            {
+              "claim_id": "wt-e442d6ad81290406-v2-claim-2",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "In der Studie sind nach Schätzungen der Organisation 20 Millionen Mädchen und Jungen betroffen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "54d406ad5252057a0913",
+                  "checked_at": "2026-09-04T05:23:06.391Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            },
+            {
+              "claim_id": "wt-e442d6ad81290406-v2-claim-3",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "Nahezu 60 Prozent der Fälle ereigneten sich auf Social-Media-Plattformen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "8156564962e31399cb9d",
+                  "checked_at": "2026-09-04T05:23:06.391Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            },
+            {
+              "claim_id": "wt-e442d6ad81290406-v2-claim-4",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "Unicef berichtet, dass 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt wurden und 9 Millionen zu sexuellen Gesprächen oder zum Teilen sexueller Bilder aufgefordert wurden.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "408b89823b8535c5b7b3",
+                  "checked_at": "2026-09-04T05:23:06.391Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            },
+            {
+              "claim_id": "wt-e442d6ad81290406-v2-claim-5",
+              "story_id": "wt-e442d6ad81290406",
+              "claim": "Unicef führt aus, dass betroffene Kinder viermal häufiger Suizidgedanken oder selbstverletzendes Verhalten angaben als Kinder ohne diese Erfahrungen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
+                  "excerpt_hash": "0d12ab8c4664b3ddde07",
+                  "checked_at": "2026-09-04T05:23:06.391Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:23:06.391Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Studie-von-Unicef/!6209752",
+              "content_hash": "208ab37a2b288f50f65ad0d1718c82091149026cd9469ada9990b7c3962cfd17"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T01:52:05.573Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T05:23:06.391Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-d175d26e4635ba0a",
+      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
+      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+      "first_seen": "2026-09-03T15:27:13.000Z",
+      "last_updated": "2026-09-04T05:22:51.361Z",
+      "published_at": "2026-09-04T01:02:06.108Z",
+      "updated_at": "2026-09-04T05:22:51.361Z",
+      "topic": [
+        "Klima"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+          "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+          "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T15:27:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
+          "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T15:27:13.000Z",
+          "ingested_at": "2026-09-04T05:06:21.635Z",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v2-claim-1",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks offiziell eröffnet worden.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "4fdaeab2e2643d47349c",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "3d0942abf71c17b78d03",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:22:51.361Z"
+        },
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v2-claim-2",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; dafür sind eine Zisterne und Rückhaltemulden vorgesehen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "f2648a8797634d3610df",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "6cd1c2db5930a4392de3",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:22:51.361Z"
+        },
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v2-claim-3",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter und soll später auf 28.000 Quadratmeter anwachsen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "3d0942abf71c17b78d03",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "0eec46dd9fb9f501bd8d",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:22:51.361Z"
+        },
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v2-claim-4",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Im Endausbau soll der Park so groß werden wie vier Fußballfelder und 181 klimaresiliente Bäume enthalten.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "0eec46dd9fb9f501bd8d",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "6cd1c2db5930a4392de3",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T05:22:51.361Z"
+        }
+      ],
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T05:22:37.717Z",
+      "publish_ready_at": "2026-09-04T05:22:51.361Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "f293a89cc220accbf69b5c8b366dfc1b5feca5147b4361387a58bf3630884382"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "49b10467b7488725ef9037bc0d05df01149097d45ea86063bbddc09f868cc981"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "8485b06bbbbf36d778bde377ec89e4fca896ac555ae9842ea2dc120740e2b473"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b2732af1f959596b-source.png",
+          "sha256": "b2732af1f959596b6ca02355e0481c3521678defb08aed90fbb36e9807a71b18",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-2",
+          "generated_at": "2026-09-04T01:02:09.830Z"
+        },
+        "fingerprint": "b91d583c7317dc1bbad27886a2e02dc3059d08d2ba5e3b3de4221d9c78e9fea2",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T01:29:56.205Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
+      "analysis": {
+        "story_id": "wt-d175d26e4635ba0a",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
+        "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
+        "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
+        "status": "laufende Umsetzung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
+        },
+        "importance": "mittel",
+        "impact_potential": "Lokal kann die Anlage Hitze abmildern, Wasser zurückhalten und den Stadtraum aufwerten; die tatsächliche Stärke hängt aber vom späteren Betrieb und der realen Nutzung ab.",
+        "impact_risks": [
+          "Die angekündigte Kühl- und Speicherwirkung könnte geringer ausfallen als geplant.",
+          "Ohne Pflege, Fertigstellung und Nutzung bleiben die Wirkungen auf das Quartier begrenzt."
+        ],
+        "mechanisms": [
+          "Versickerung und Zwischenspeicherung von Niederschlagswasser",
+          "Beschattung und Verdunstung durch Bäume und Grünflächen",
+          "kostenfreier öffentlicher Raum fördert Aufenthalt und soziale Nutzung"
+        ],
+        "first_order": [
+          "Eröffnung einer neuen öffentlichen Grünanlage im Quartier",
+          "Teilweise Nutzung eines bisher noch nicht vollständig ausgebauten Areals"
+        ],
+        "second_order": [
+          "Besseres Mikroklima und mehr Aufenthaltsqualität im direkten Umfeld sind möglich",
+          "Der Park kann als sozialer Treffpunkt im Neubaugebiet wirken"
+        ],
+        "third_order": [
+          "Das Quartier könnte als Referenz für klimaangepasste Stadtentwicklung dienen",
+          "Die konkrete Übertragbarkeit bleibt wegen fehlender Wirkungsdaten offen"
+        ],
+        "systemic_relevance": "Als Beispiel für klimaangepasste Quartiersplanung berührt der Fall städtische Resilienz, aber zunächst nur auf lokaler Ebene.",
+        "transformation_potential": "Begrenzt bis mittel: Der Vorgang zeigt ein Planungsmodell für Hitze- und Wasseranpassung, ist aber noch kein Beleg für breit wirksame Transformation.",
+        "resilience": "Stärkt potenziell die lokale Anpassungsfähigkeit an Hitze und Starkregen; belastbare Wirksamkeit ist noch nicht nachgewiesen.",
+        "side_effects": [
+          "Mehr öffentliche Nutzung kann Pflege- und Sicherheitsanforderungen erhöhen",
+          "Baumaßnahmen und laufende Fertigstellung erzeugen vorübergehend Restunsicherheit"
+        ],
+        "uncertainties": [
+          "Die tatsächliche Kühlwirkung ist nicht gemessen.",
+          "Die Speicherleistung der Anlage ist nur als Planung beschrieben.",
+          "Der westliche Teil ist noch nicht eröffnet."
+        ],
+        "evidence_level": "single_source_with_caveats",
+        "attribution": "Beruht auf einem journalistischen Bericht ohne unabhängige Zweitquelle in den gelieferten Daten.",
+        "watch_next": [
+          "Fertigstellung des westlichen Parkteils",
+          "Messwerte zu Temperatur- und Wasserhaushalt im Quartier",
+          "Nutzung des Parks durch Anwohnerinnen und Anwohner"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 11, SDG 13"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Eröffnung eines neuen, klimaangepassten Quartiersparks ist eine reale Umsetzung mit lokal materieller Wirkung auf Nutzung, Wasserhaushalt und Hitzeschutz. Die Belege stammen zwar nur aus einer Quelle, tragen aber den Kern der Meldung hinreichend."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "eröffneter Abschnitt",
+              "value": "12.500",
+              "unit": "Quadratmeter",
+              "context": "Größe des nun zugänglichen Parkteils"
+            },
+            {
+              "label": "Endausbau",
+              "value": "28.000",
+              "unit": "Quadratmeter",
+              "context": "geplante Gesamtgröße des Parks"
+            },
+            {
+              "label": "Bäume",
+              "value": "181",
+              "unit": "Stück",
+              "context": "als klimaresilient beschriebene Bäume"
+            }
+          ],
+          "affected_groups": [
+            "haushalte",
+            "kinder_jugend",
+            "kommunen",
+            "natur"
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "chance",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T01:02:06.108Z",
+          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+          "source_summary": "Im Schönhof-Viertel im Frankfurter Westen ist der erste Teil eines neuen Parks offiziell eröffnet worden. Die Anlage soll nicht nur Erholung bieten, sondern auch Regenwasser aufnehmen und die Umgebung kühlen; bei Planung und Bepflanzung seien Klimawandel, Hitzebelastung und Biodiversität mitgedacht worden.\n\nDer zunächst geöffnete östliche Abschnitt umfasst 12.500 Quadratmeter, später soll der Park auf 28.000 Quadratmeter wachsen. Genannt werden außerdem eine Zisterne, Rückhaltemulden, klimaresiliente Bäume, ein Grünes Klassenzimmer und sichere Wege für künftige Schülerinnen und Schüler. Für das Viertel werden 3.500 bis 4.000 Einwohnerinnen und Einwohner in naher Zukunft erwartet.",
+          "analysis": {
+            "story_id": "wt-d175d26e4635ba0a",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Die Anlage soll Regenwasser speichern, kühlen und als Quartiersraum dienen.",
+            "detail_summary": "Gesichert ist zunächst die Eröffnung des ersten Parkteils im Schönhof-Viertel mit einer Fläche von 12.500 Quadratmetern. Die Quelle beschreibt den Park als Teil einer klimaangepassten Quartiersentwicklung mit Zisterne, Rückhaltemulden, klimaresilienten Bäumen und einem Grünen Klassenzimmer. Für die Umweltwirkung ist das relevant, weil hier konkrete bauliche Elemente genannt werden, die Hitze und Starkregen lokal abmildern sollen. Der mögliche Wirkpfad reicht von besserer Wasseraufnahme und Verschattung bis zu höherer Aufenthaltsqualität im Quartier. Ob und in welchem Ausmaß das tatsächlich eintritt, bleibt offen, weil Messdaten zur Kühlleistung, Wasserrückhaltung oder Nutzung fehlen. Die Meldung ist damit eine belastbare Erstinformation über eine laufende städtebauliche Umsetzung, nicht über bereits nachgewiesene Wirkung.",
+            "why_relevant": "Ein neuer Quartierspark mit expliziter Klimaanpassungsfunktion verändert lokale Infrastruktur, Wasserhaushalt und Hitzebelastung in einem wachsenden Wohngebiet.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Der Park betrifft künftige Bewohnerinnen und Bewohner sowie Schulwege und Aufenthaltsqualität im Quartier."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Genannt werden Regenwasserspeicherung, Verschattung und klimaresiliente Bepflanzung als lokale Anpassungsmaßnahmen."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer demokratischer Effekt wird in der Quelle nicht beschrieben; relevant ist eher die kommunale Planung."
+            },
+            "importance": "mittel",
+            "impact_potential": "Der Park kann lokale Hitzebelastung und Oberflächenabfluss im Quartier mindern und damit die Anpassungsfähigkeit eines dicht bebauten Neubaugebiets erhöhen.",
+            "impact_risks": [
+              "Die tatsächliche Kühl- und Speicherleistung kann geringer ausfallen als geplant.",
+              "Ohne Pflege und Nutzung könnten die vorgesehenen Funktionen nur teilweise greifen."
+            ],
+            "mechanisms": [
+              "Verschattung durch klimaresiliente Bäume",
+              "Regenwasserrückhalt über Zisterne und Mulden",
+              "Niedrigschwellige Quartiersnutzung durch offene Grünfläche"
+            ],
+            "first_order": [
+              "mehr Aufenthalts- und Bewegungsraum",
+              "lokale Speicherung von Niederschlagswasser",
+              "erste Verschattung im Areal"
+            ],
+            "second_order": [
+              "mögliche Entlastung bei Starkregen",
+              "bessere Hitzetoleranz im Quartier",
+              "mehr Nutzung von Schul- und Begegnungsangeboten"
+            ],
+            "third_order": [
+              "höhere Resilienz eines neuen Wohngebiets gegenüber Klimarisiken",
+              "Vorbildwirkung für künftige Quartiersplanung möglich"
+            ],
+            "systemic_relevance": "Die Meldung ist lokal, aber sie berührt zwei systemische Themen: urbane Klimaanpassung und integrierte Quartiersplanung. Systemrelevant wird sie vor allem dann, wenn ähnliche Standards in weiteren Neubaugebieten übernommen werden.",
+            "transformation_potential": "Begrenzt bis mittel: Es geht um ein einzelnes Quartier, aber mit konkreten baulichen Merkmalen für klimaangepasste Stadtentwicklung.",
+            "resilience": "Die beschriebenen Elemente erhöhen potenziell die Resilienz des Viertels gegenüber Hitze und Starkregen, bleiben aber von Ausführung, Pflege und tatsächlicher Nutzung abhängig.",
+            "side_effects": [
+              "Bauliche Flächen für Grün können an anderer Stelle Nutzungsansprüche verdrängen.",
+              "Die Wirkung hängt stark von Wetterextremen und Unterhalt ab."
+            ],
+            "uncertainties": [
+              "Keine unabhängige Zweitquelle in den gelieferten Daten.",
+              "Messwerte zur tatsächlichen Kühl- oder Speicherwirkung fehlen.",
+              "Der Endausbau des westlichen Teils ist erst angekündigt, nicht belegt umgesetzt."
+            ],
+            "evidence_level": "single_source_report mit konkreten Orts-, Flächen- und Funktionsangaben; keine unabhängige Bestätigung der Wirkung",
+            "attribution": "Die Angaben stammen ausschließlich aus einem journalistischen Bericht über die Eröffnung und die Planungsziele des Parks.",
+            "watch_next": [
+              "Wann der westliche Teil eröffnet wird und welche Fläche er umfasst.",
+              "Ob spätere Messungen zu Hitze- oder Regenrückhalt veröffentlicht werden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Eröffnung eines klimaangepassten Parkteils in einem neuen Wohnquartier ist eine neue Umsetzung mit lokaler materieller Relevanz; die Evidenz bleibt jedoch auf eine Quelle begrenzt."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-1",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "In Frankfurts Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "4fdaeab2e2643d47349c",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-2",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; die Planung berücksichtigte Klimawandel und Klimaanpassung.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "d6db4d6fec6a17db0ea6",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "f2648a8797634d3610df",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "6cd1c2db5930a4392de3",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "ff042eff6c35db82a0e4",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-3",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter; der Park soll nach und nach auf 28.000 Quadratmeter anwachsen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "3d0942abf71c17b78d03",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-4",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Zwischen 3.500 und 4.000 Menschen sollen in naher Zukunft im Schönhof-Viertel leben.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "8239c4a3b2d33b24a87c",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-5",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Für das Viertel sind auch ein Grünes Klassenzimmer, sichere Wege und eine soziale Treffpunktfunktion vorgesehen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "29375e998e34026f2e4f",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "d0ceedf8ca522ad2e99a",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "35bc3ec03628e9bfc64c",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "0e008636ec2917a5ba7a",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T05:22:51.361Z",
+          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+          "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
+          "analysis": {
+            "story_id": "wt-d175d26e4635ba0a",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
+            "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
+            "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
+            },
+            "importance": "mittel",
+            "impact_potential": "Lokal kann die Anlage Hitze abmildern, Wasser zurückhalten und den Stadtraum aufwerten; die tatsächliche Stärke hängt aber vom späteren Betrieb und der realen Nutzung ab.",
+            "impact_risks": [
+              "Die angekündigte Kühl- und Speicherwirkung könnte geringer ausfallen als geplant.",
+              "Ohne Pflege, Fertigstellung und Nutzung bleiben die Wirkungen auf das Quartier begrenzt."
+            ],
+            "mechanisms": [
+              "Versickerung und Zwischenspeicherung von Niederschlagswasser",
+              "Beschattung und Verdunstung durch Bäume und Grünflächen",
+              "kostenfreier öffentlicher Raum fördert Aufenthalt und soziale Nutzung"
+            ],
+            "first_order": [
+              "Eröffnung einer neuen öffentlichen Grünanlage im Quartier",
+              "Teilweise Nutzung eines bisher noch nicht vollständig ausgebauten Areals"
+            ],
+            "second_order": [
+              "Besseres Mikroklima und mehr Aufenthaltsqualität im direkten Umfeld sind möglich",
+              "Der Park kann als sozialer Treffpunkt im Neubaugebiet wirken"
+            ],
+            "third_order": [
+              "Das Quartier könnte als Referenz für klimaangepasste Stadtentwicklung dienen",
+              "Die konkrete Übertragbarkeit bleibt wegen fehlender Wirkungsdaten offen"
+            ],
+            "systemic_relevance": "Als Beispiel für klimaangepasste Quartiersplanung berührt der Fall städtische Resilienz, aber zunächst nur auf lokaler Ebene.",
+            "transformation_potential": "Begrenzt bis mittel: Der Vorgang zeigt ein Planungsmodell für Hitze- und Wasseranpassung, ist aber noch kein Beleg für breit wirksame Transformation.",
+            "resilience": "Stärkt potenziell die lokale Anpassungsfähigkeit an Hitze und Starkregen; belastbare Wirksamkeit ist noch nicht nachgewiesen.",
+            "side_effects": [
+              "Mehr öffentliche Nutzung kann Pflege- und Sicherheitsanforderungen erhöhen",
+              "Baumaßnahmen und laufende Fertigstellung erzeugen vorübergehend Restunsicherheit"
+            ],
+            "uncertainties": [
+              "Die tatsächliche Kühlwirkung ist nicht gemessen.",
+              "Die Speicherleistung der Anlage ist nur als Planung beschrieben.",
+              "Der westliche Teil ist noch nicht eröffnet."
+            ],
+            "evidence_level": "single_source_with_caveats",
+            "attribution": "Beruht auf einem journalistischen Bericht ohne unabhängige Zweitquelle in den gelieferten Daten.",
+            "watch_next": [
+              "Fertigstellung des westlichen Parkteils",
+              "Messwerte zu Temperatur- und Wasserhaushalt im Quartier",
+              "Nutzung des Parks durch Anwohnerinnen und Anwohner"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Eröffnung eines neuen, klimaangepassten Quartiersparks ist eine reale Umsetzung mit lokal materieller Wirkung auf Nutzung, Wasserhaushalt und Hitzeschutz. Die Belege stammen zwar nur aus einer Quelle, tragen aber den Kern der Meldung hinreichend."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "eröffneter Abschnitt",
+                  "value": "12.500",
+                  "unit": "Quadratmeter",
+                  "context": "Größe des nun zugänglichen Parkteils"
+                },
+                {
+                  "label": "Endausbau",
+                  "value": "28.000",
+                  "unit": "Quadratmeter",
+                  "context": "geplante Gesamtgröße des Parks"
+                },
+                {
+                  "label": "Bäume",
+                  "value": "181",
+                  "unit": "Stück",
+                  "context": "als klimaresilient beschriebene Bäume"
+                }
+              ],
+              "affected_groups": [
+                "haushalte",
+                "kinder_jugend",
+                "kommunen",
+                "natur"
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "chance",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-1",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks offiziell eröffnet worden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "4fdaeab2e2643d47349c",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "3d0942abf71c17b78d03",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-2",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; dafür sind eine Zisterne und Rückhaltemulden vorgesehen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "f2648a8797634d3610df",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "6cd1c2db5930a4392de3",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-3",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter und soll später auf 28.000 Quadratmeter anwachsen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "3d0942abf71c17b78d03",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "0eec46dd9fb9f501bd8d",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-4",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Im Endausbau soll der Park so groß werden wie vier Fußballfelder und 181 klimaresiliente Bäume enthalten.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "0eec46dd9fb9f501bd8d",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "6cd1c2db5930a4392de3",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T01:02:06.108Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T05:22:51.361Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-61d3420f0dd76f70",
       "slug": "kongresswahlen-trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-d76f70",
@@ -947,7 +2453,7 @@
       "verification_started_at": "2026-09-04T04:53:13.531Z",
       "publish_ready_at": "2026-09-04T04:53:25.547Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -1364,47 +2870,7 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
-        "sources": [
-          {
-            "source_id": "bundestag-wirtschaft",
-            "publisher": "Deutscher Bundestag – Wirtschaft und Energie",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
-            "title": "Regionalnachweisregister soll abgewickelt werden",
-            "summary": "Wirtschaft und Energie/Verordnung Das bisher beim Umweltbundesamt geführte Register für Regionalnachweise soll eingestellt werden. Das geht aus einer Verordnung der Bundesregierung hervor.",
-            "source_type": "official_rss",
-            "published_at": null,
-            "primary_source": true,
-            "source_priority": 90,
-            "source_topic": "Wirtschaft",
-            "content_hash": "172f2e3551e48f1cabca43252bc0c38cab3a386d95b590c02a1d6c6483b5de2d",
-            "source_item_id": "33b94a56561fbbd90863d01d78be3acdf39fa5c35c724c33b6f81a2d54e8cd38",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": null,
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-972d20af6da2b586",
@@ -2031,7 +3497,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
         "sources": [
           {
@@ -2643,7 +4109,7 @@
       "verification_started_at": "2026-09-04T04:39:17.466Z",
       "publish_ready_at": "2026-09-04T04:39:29.989Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -3277,50 +4743,7 @@
         "generated_at": "2026-09-04T04:40:29.219Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
-            "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-            "summary": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte. So werden Verbraucherinnen und Verbraucher spürbar entlastet. Langfristig werden niedrigere Steuern und ein Industriestrompreis auch die Wirtschaft unterstützen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T13:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "c9baac27652662154968b40977d601b1a1234a6c2e6c217dd2fd3f76725bef59",
-            "source_item_id": "cf5b3c56d6a982f602b4f8f2c6f2d8bd2a24859c5f87e492420d68ae3a418160",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T13:00:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-9d87c7944980e87e",
@@ -3785,7 +5208,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
         "sources": [
           {
@@ -3895,7 +5318,7 @@
       "verification_started_at": "2026-09-04T04:38:00.776Z",
       "publish_ready_at": "2026-09-04T04:38:09.628Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -4193,47 +5616,7 @@
         "generated_at": "2026-09-04T04:39:37.512Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
-        "sources": [
-          {
-            "source_id": "eu-kommission-presse",
-            "publisher": "Europäische Kommission – Press Corner",
-            "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
-            "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
-            "summary": "European Commission Speech Brussels, 01 Sep 2026 This summer has tested us. Almost 700,000 hectares have already burned across the EU, more land than the yearly average of the past two decades and the season i...",
-            "source_type": "official_rss",
-            "published_at": "2026-09-01T16:09:08.000Z",
-            "primary_source": true,
-            "source_priority": 94,
-            "source_topic": "Europa",
-            "content_hash": "d259783e837d361be26dfa248f50721149a98df4a584b23abe28dc835ba4a650",
-            "source_item_id": "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
-            "publisher_id": "eu-kommission-presse",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "EU"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T16:09:08.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:eu-kommission-presse",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-96193654ac3edfeb",
@@ -5320,7 +6703,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
         "sources": [
           {
@@ -5974,7 +7357,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
         "sources": [
           {
@@ -7181,7 +8564,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "8ace11004a7fe8a753aa1eb5ba413c5352a448fd99645e10812a8620c41120ad",
         "sources": [
           {
@@ -8123,7 +9506,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
         "sources": [
           {
@@ -8760,7 +10143,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
         "sources": [
           {
@@ -10189,7 +11572,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "5075c7ffde16cbbf806ab1eed166f847b296725de53c460c37469f3ec7552983",
         "sources": [
           {
@@ -10850,7 +12233,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "5a56ec97c1c488c4e358f69ef0a90770eddf25eb4ca171e125fde72efa5a8d39",
         "sources": [
           {
@@ -11484,7 +12867,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
         "sources": [
           {
@@ -12068,7 +13451,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
         "sources": [
           {
@@ -12898,7 +14281,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
         "sources": [
           {
@@ -14845,7 +16228,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "7cc3463226d4989cf794b648503cb3da1dc5103b59b12760d5725397320362dc",
         "sources": [
           {
@@ -15866,7 +17249,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "e9e75b73f5aab7fb1c99214e98aadba05d27571cf1587f89b019b65301221bc9",
         "sources": [
           {
@@ -16513,552 +17896,6 @@
       }
     },
     {
-      "story_id": "wt-e442d6ad81290406",
-      "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
-      "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
-      "first_seen": "2026-09-03T06:53:00.000Z",
-      "last_updated": "2026-09-04T01:52:05.573Z",
-      "published_at": "2026-09-04T01:52:05.573Z",
-      "updated_at": "2026-09-04T01:52:05.573Z",
-      "topic": [
-        "Digitalisierung"
-      ],
-      "sources": [
-        {
-          "source_id": "taz-aktuell",
-          "publisher": "taz",
-          "url": "https://taz.de/Studie-von-Unicef/!6209752",
-          "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
-          "summary": "Kinder sind im Internet womöglich häufiger sexuellem Missbrauch ausgesetzt als bisher angenommen. Das zeigt eine Unicef-Untersuchung in 21 Ländern. mehr...",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T06:53:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "208ab37a2b288f50f65ad0d1718c82091149026cd9469ada9990b7c3962cfd17",
-          "source_item_id": "7056452112063302b0ec2f7b7ea5ee74bcfab02bbe8db9bd6f1a83f698b67898",
-          "publisher_id": "taz",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T06:53:00.000Z",
-          "ingested_at": "2026-09-03T22:21:17.010Z",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-e442d6ad81290406-v1-claim-1",
-          "story_id": "wt-e442d6ad81290406",
-          "claim": "Eine von Unicef ausgewertete Untersuchung in 21 Ländern kommt laut Bericht zu dem Befund, dass jedes fünfte Kind innerhalb eines Jahres im Internet sexuell missbraucht oder ausgebeutet wurde.",
-          "status": "single_source_claim",
-          "source_id": "taz-aktuell",
-          "evidence": [
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "excerpt_hash": "0aaedb5733f470fb78e6",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            },
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "excerpt_hash": "54d406ad5252057a0913",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:05.573Z"
-        },
-        {
-          "claim_id": "wt-e442d6ad81290406-v1-claim-2",
-          "story_id": "wt-e442d6ad81290406",
-          "claim": "Laut dem Bericht ereigneten sich nahezu 60 Prozent der Fälle auf Social-Media-Plattformen wie Facebook, Instagram, Snapchat, Tiktok und Whatsapp.",
-          "status": "single_source_claim",
-          "source_id": "taz-aktuell",
-          "evidence": [
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "excerpt_hash": "8156564962e31399cb9d",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:05.573Z"
-        },
-        {
-          "claim_id": "wt-e442d6ad81290406-v1-claim-3",
-          "story_id": "wt-e442d6ad81290406",
-          "claim": "Unicef nennt außerdem, dass mehr als 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt waren, 9 Millionen zu sexuellen Handlungen gedrängt wurden und 4 Millionen sexuelle Bilder ohne Zustimmung weiterverbreitet wurden.",
-          "status": "single_source_claim",
-          "source_id": "taz-aktuell",
-          "evidence": [
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "excerpt_hash": "408b89823b8535c5b7b3",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            },
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "excerpt_hash": "8fbf62cee0dface7b88b",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:05.573Z"
-        },
-        {
-          "claim_id": "wt-e442d6ad81290406-v1-claim-4",
-          "story_id": "wt-e442d6ad81290406",
-          "claim": "In den untersuchten Ländern kannten 38 Prozent der Kinder die missbrauchende Person zunächst online; zugleich verweist die Studie darauf, dass in gut jedem zweiten Fall Personen beteiligt waren, die das Kind bereits kannte.",
-          "status": "single_source_claim",
-          "source_id": "taz-aktuell",
-          "evidence": [
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "excerpt_hash": "d8a22bc03b7d0abb5f2a",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            },
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "excerpt_hash": "7deccbf7401bc681c40c",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:05.573Z"
-        }
-      ],
-      "event_id": "event-83becedad84b8b907cdf",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T01:51:51.939Z",
-      "publish_ready_at": "2026-09-04T01:52:05.573Z",
-      "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Die taz berichtet über eine Unicef-Untersuchung zu sexueller Ausbeutung von Kindern im Netz. Laut Text wurde die Studie in 21 Ländern durchgeführt; Deutschland gehörte nicht dazu. Der Bericht nennt mehrere Zahlen zu Betroffenheit und zu den Plattformen, auf denen ein großer Teil der Fälle stattgefunden haben soll. Außerdem wird beschrieben, dass Unicef vor psychischen Folgen warnt und auf Forschungsinterviews verweist.\n\nDer Text zitiert Unicef mit dem Hinweis, dass viele Kinder Erfahrungen nicht melden. Genannt werden auch Aussagen von Unicef-Exekutivdirektorin Catherine Russell zu Belastungen und zur Schwierigkeit, Hilfe zu suchen.",
-      "analysis": {
-        "story_id": "wt-e442d6ad81290406",
-        "news_status": "preliminary",
-        "publication_depth": "initial",
-        "summary": "Unicef meldet laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Genannt werden Betroffenheit in 21 Ländern und hohe Anteile auf sozialen Plattformen.",
-        "detail_summary": "Der bestbelegte Kern der Meldung ist eine von Unicef ausgewertete Untersuchung in 21 Ländern, die laut taz von einer deutlich höheren Verbreitung sexueller Ausbeutung im Internet ausgeht als bisher angenommen. Der Bericht nennt konkrete Zahlen zu Betroffenheit, darunter „jedes fünfte Kind“ sowie weitere Teilbefunde zu ungewollten Inhalten, Aufforderungen zu sexuellen Handlungen und dem Weiterverbreiten von Bildern. Für die Nachricht relevant ist vor allem der mögliche Hinweis auf ein breites, plattformgebundenes Risikofeld, das Kinder in alltäglichen digitalen Umgebungen trifft. Daraus ergibt sich ein Wirkpfad über Plattformdesign, Kontaktanbahnung und Vertrauensausnutzung, der Schutzmechanismen, Moderation und Prävention berühren kann. Mögliche Folge sind verstärkte politische und regulatorische Debatten über Jugendschutz und Plattformpflichten. Die Evidenz bleibt hier jedoch vorläufig, weil nur eine journalistische Sekundärquelle vorliegt und die Originalstudie im gelieferten Material nicht direkt geprüft werden kann.",
-        "why_relevant": "Die Meldung betrifft eine große Zahl potenziell Betroffener, verweist auf digitale Schutz- und Regulierungsfragen und kann Debatten über Plattformpflichten, Prävention und Kinderschutz beeinflussen.",
-        "status": "erste Daten",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die berichteten Zahlen betreffen Kinder direkt und deuten auf ein relevantes Risiko für Schutz, Gesundheit und Teilhabe im digitalen Raum."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Es ist kein unmittelbarer Umwelt- oder Klimabezug aus den Quellen erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Meldung berührt Regulierung von Plattformen, Schutzstandards und die demokratische Kontrolle digitaler Räume."
-        },
-        "importance": "hoch",
-        "impact_potential": "Die Zahlen können den Druck auf Plattformen, Aufsicht und Präventionssysteme erhöhen und Schutzstandards für Kinder im Netz stärken.",
-        "impact_risks": [
-          "Ohne belastbare Einordnung können Zahlen Debatten überreizen oder unterschiedliche Delikt- und Erhebungsarten vermischen."
-        ],
-        "mechanisms": [
-          "Plattformdesign und Vertrauensausnutzung erleichtern Kontaktanbahnung und Missbrauch.",
-          "Berichtete Fallzahlen können Regulierung, Aufklärung und Schutzkonzepte anstoßen."
-        ],
-        "first_order": [
-          "mehr Aufmerksamkeit für Online-Schutz von Kindern",
-          "möglicher Anpassungsdruck auf soziale Plattformen"
-        ],
-        "second_order": [
-          "strengere Regeln oder Moderationspflichten können diskutiert werden",
-          "Präventions- und Hilfsangebote könnten ausgebaut werden"
-        ],
-        "third_order": [
-          "langfristig könnten sich Meldewege, Plattformnormen und Schutzstandards verändern"
-        ],
-        "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie digitale Interaktionsräume, Kinderschutz und mögliche Regulierungsreaktionen zugleich betrifft.",
-        "transformation_potential": "Potenzial für verschärfte Schutzarchitekturen im Netz, aber noch keine belegte Transformationswirkung.",
-        "resilience": "Stärkere Meldesysteme und Präventionsstrukturen könnten die Widerstandsfähigkeit von Kindern und Institutionen erhöhen; belegt ist das hier noch nicht.",
-        "side_effects": [
-          "Mehr Meldungen können auch bestehende Dunkelziffern sichtbarer machen, ohne dass sich das Grundrisiko sofort ändert."
-        ],
-        "uncertainties": [
-          "Die Originalstudie liegt im gelieferten Material nicht direkt vor.",
-          "Unklar bleibt, wie die 21 Länder ausgewählt wurden und wie die Befunde methodisch gewichtet sind.",
-          "Die taz berichtet die Zahlen sekundär; unabhängige Bestätigung fehlt im Datensatz."
-        ],
-        "evidence_level": "einseitig belegt über eine journalistische Sekundärquelle; zentrale Zahlen stammen aus der berichteten Unicef-Studie, sind aber im Material nicht direkt prüfbar.",
-        "attribution": "Die Aussagen werden Unicef zugeschrieben und von der taz zusammengefasst; unabhängige Verifikation liegt im Datensatz nicht vor.",
-        "watch_next": [
-          "Abgleich mit der Originalstudie und ihrer Methodik",
-          "Prüfen, ob Behörden oder Fachstellen auf die Zahlen reagieren"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 16 und SDG 3, soweit der Kinderschutz und die psychische Gesundheit betroffen sind"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "intensity",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Die Meldung bringt neue, zahlenbasierte Hinweise auf ein großes Kinderschutzproblem im digitalen Raum; das ist materiell und nicht bloß Aufmerksamkeit."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "Betroffene Länder",
-              "value": "21",
-              "unit": "Länder",
-              "context": "In diesen Ländern wurde die Untersuchung durchgeführt",
-              "claim_id": "wt-e442d6ad81290406-claim-01"
-            },
-            {
-              "label": "Anteil der Kinder",
-              "value": "jedes fünfte",
-              "unit": "Kind",
-              "context": "Laut Bericht innerhalb eines Jahres im Netz betroffen",
-              "claim_id": "wt-e442d6ad81290406-claim-01"
-            }
-          ],
-          "affected_groups": [
-            "kinder_jugend",
-            "verbraucherinnen",
-            "staat"
-          ],
-          "tendency": {
-            "human": "risiko",
-            "planet": "offen",
-            "democracy": "gemischt"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T01:52:05.573Z",
-          "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
-          "source_summary": "Die taz berichtet über eine Unicef-Untersuchung zu sexueller Ausbeutung von Kindern im Netz. Laut Text wurde die Studie in 21 Ländern durchgeführt; Deutschland gehörte nicht dazu. Der Bericht nennt mehrere Zahlen zu Betroffenheit und zu den Plattformen, auf denen ein großer Teil der Fälle stattgefunden haben soll. Außerdem wird beschrieben, dass Unicef vor psychischen Folgen warnt und auf Forschungsinterviews verweist.\n\nDer Text zitiert Unicef mit dem Hinweis, dass viele Kinder Erfahrungen nicht melden. Genannt werden auch Aussagen von Unicef-Exekutivdirektorin Catherine Russell zu Belastungen und zur Schwierigkeit, Hilfe zu suchen.",
-          "analysis": {
-            "story_id": "wt-e442d6ad81290406",
-            "news_status": "preliminary",
-            "publication_depth": "initial",
-            "summary": "Unicef meldet laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Genannt werden Betroffenheit in 21 Ländern und hohe Anteile auf sozialen Plattformen.",
-            "detail_summary": "Der bestbelegte Kern der Meldung ist eine von Unicef ausgewertete Untersuchung in 21 Ländern, die laut taz von einer deutlich höheren Verbreitung sexueller Ausbeutung im Internet ausgeht als bisher angenommen. Der Bericht nennt konkrete Zahlen zu Betroffenheit, darunter „jedes fünfte Kind“ sowie weitere Teilbefunde zu ungewollten Inhalten, Aufforderungen zu sexuellen Handlungen und dem Weiterverbreiten von Bildern. Für die Nachricht relevant ist vor allem der mögliche Hinweis auf ein breites, plattformgebundenes Risikofeld, das Kinder in alltäglichen digitalen Umgebungen trifft. Daraus ergibt sich ein Wirkpfad über Plattformdesign, Kontaktanbahnung und Vertrauensausnutzung, der Schutzmechanismen, Moderation und Prävention berühren kann. Mögliche Folge sind verstärkte politische und regulatorische Debatten über Jugendschutz und Plattformpflichten. Die Evidenz bleibt hier jedoch vorläufig, weil nur eine journalistische Sekundärquelle vorliegt und die Originalstudie im gelieferten Material nicht direkt geprüft werden kann.",
-            "why_relevant": "Die Meldung betrifft eine große Zahl potenziell Betroffener, verweist auf digitale Schutz- und Regulierungsfragen und kann Debatten über Plattformpflichten, Prävention und Kinderschutz beeinflussen.",
-            "status": "erste Daten",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Die berichteten Zahlen betreffen Kinder direkt und deuten auf ein relevantes Risiko für Schutz, Gesundheit und Teilhabe im digitalen Raum."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Es ist kein unmittelbarer Umwelt- oder Klimabezug aus den Quellen erkennbar."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Meldung berührt Regulierung von Plattformen, Schutzstandards und die demokratische Kontrolle digitaler Räume."
-            },
-            "importance": "hoch",
-            "impact_potential": "Die Zahlen können den Druck auf Plattformen, Aufsicht und Präventionssysteme erhöhen und Schutzstandards für Kinder im Netz stärken.",
-            "impact_risks": [
-              "Ohne belastbare Einordnung können Zahlen Debatten überreizen oder unterschiedliche Delikt- und Erhebungsarten vermischen."
-            ],
-            "mechanisms": [
-              "Plattformdesign und Vertrauensausnutzung erleichtern Kontaktanbahnung und Missbrauch.",
-              "Berichtete Fallzahlen können Regulierung, Aufklärung und Schutzkonzepte anstoßen."
-            ],
-            "first_order": [
-              "mehr Aufmerksamkeit für Online-Schutz von Kindern",
-              "möglicher Anpassungsdruck auf soziale Plattformen"
-            ],
-            "second_order": [
-              "strengere Regeln oder Moderationspflichten können diskutiert werden",
-              "Präventions- und Hilfsangebote könnten ausgebaut werden"
-            ],
-            "third_order": [
-              "langfristig könnten sich Meldewege, Plattformnormen und Schutzstandards verändern"
-            ],
-            "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie digitale Interaktionsräume, Kinderschutz und mögliche Regulierungsreaktionen zugleich betrifft.",
-            "transformation_potential": "Potenzial für verschärfte Schutzarchitekturen im Netz, aber noch keine belegte Transformationswirkung.",
-            "resilience": "Stärkere Meldesysteme und Präventionsstrukturen könnten die Widerstandsfähigkeit von Kindern und Institutionen erhöhen; belegt ist das hier noch nicht.",
-            "side_effects": [
-              "Mehr Meldungen können auch bestehende Dunkelziffern sichtbarer machen, ohne dass sich das Grundrisiko sofort ändert."
-            ],
-            "uncertainties": [
-              "Die Originalstudie liegt im gelieferten Material nicht direkt vor.",
-              "Unklar bleibt, wie die 21 Länder ausgewählt wurden und wie die Befunde methodisch gewichtet sind.",
-              "Die taz berichtet die Zahlen sekundär; unabhängige Bestätigung fehlt im Datensatz."
-            ],
-            "evidence_level": "einseitig belegt über eine journalistische Sekundärquelle; zentrale Zahlen stammen aus der berichteten Unicef-Studie, sind aber im Material nicht direkt prüfbar.",
-            "attribution": "Die Aussagen werden Unicef zugeschrieben und von der taz zusammengefasst; unabhängige Verifikation liegt im Datensatz nicht vor.",
-            "watch_next": [
-              "Abgleich mit der Originalstudie und ihrer Methodik",
-              "Prüfen, ob Behörden oder Fachstellen auf die Zahlen reagieren"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 16 und SDG 3, soweit der Kinderschutz und die psychische Gesundheit betroffen sind"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "intensity",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Die Meldung bringt neue, zahlenbasierte Hinweise auf ein großes Kinderschutzproblem im digitalen Raum; das ist materiell und nicht bloß Aufmerksamkeit."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Betroffene Länder",
-                  "value": "21",
-                  "unit": "Länder",
-                  "context": "In diesen Ländern wurde die Untersuchung durchgeführt",
-                  "claim_id": "wt-e442d6ad81290406-claim-01"
-                },
-                {
-                  "label": "Anteil der Kinder",
-                  "value": "jedes fünfte",
-                  "unit": "Kind",
-                  "context": "Laut Bericht innerhalb eines Jahres im Netz betroffen",
-                  "claim_id": "wt-e442d6ad81290406-claim-01"
-                }
-              ],
-              "affected_groups": [
-                "kinder_jugend",
-                "verbraucherinnen",
-                "staat"
-              ],
-              "tendency": {
-                "human": "risiko",
-                "planet": "offen",
-                "democracy": "gemischt"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-e442d6ad81290406-v1-claim-1",
-              "story_id": "wt-e442d6ad81290406",
-              "claim": "Eine von Unicef ausgewertete Untersuchung in 21 Ländern kommt laut Bericht zu dem Befund, dass jedes fünfte Kind innerhalb eines Jahres im Internet sexuell missbraucht oder ausgebeutet wurde.",
-              "status": "single_source_claim",
-              "source_id": "taz-aktuell",
-              "evidence": [
-                {
-                  "source_id": "taz-aktuell",
-                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
-                  "excerpt_hash": "0aaedb5733f470fb78e6",
-                  "checked_at": "2026-09-04T01:52:05.573Z"
-                },
-                {
-                  "source_id": "taz-aktuell",
-                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
-                  "excerpt_hash": "54d406ad5252057a0913",
-                  "checked_at": "2026-09-04T01:52:05.573Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            },
-            {
-              "claim_id": "wt-e442d6ad81290406-v1-claim-2",
-              "story_id": "wt-e442d6ad81290406",
-              "claim": "Laut dem Bericht ereigneten sich nahezu 60 Prozent der Fälle auf Social-Media-Plattformen wie Facebook, Instagram, Snapchat, Tiktok und Whatsapp.",
-              "status": "single_source_claim",
-              "source_id": "taz-aktuell",
-              "evidence": [
-                {
-                  "source_id": "taz-aktuell",
-                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
-                  "excerpt_hash": "8156564962e31399cb9d",
-                  "checked_at": "2026-09-04T01:52:05.573Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            },
-            {
-              "claim_id": "wt-e442d6ad81290406-v1-claim-3",
-              "story_id": "wt-e442d6ad81290406",
-              "claim": "Unicef nennt außerdem, dass mehr als 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt waren, 9 Millionen zu sexuellen Handlungen gedrängt wurden und 4 Millionen sexuelle Bilder ohne Zustimmung weiterverbreitet wurden.",
-              "status": "single_source_claim",
-              "source_id": "taz-aktuell",
-              "evidence": [
-                {
-                  "source_id": "taz-aktuell",
-                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
-                  "excerpt_hash": "408b89823b8535c5b7b3",
-                  "checked_at": "2026-09-04T01:52:05.573Z"
-                },
-                {
-                  "source_id": "taz-aktuell",
-                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
-                  "excerpt_hash": "8fbf62cee0dface7b88b",
-                  "checked_at": "2026-09-04T01:52:05.573Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            },
-            {
-              "claim_id": "wt-e442d6ad81290406-v1-claim-4",
-              "story_id": "wt-e442d6ad81290406",
-              "claim": "In den untersuchten Ländern kannten 38 Prozent der Kinder die missbrauchende Person zunächst online; zugleich verweist die Studie darauf, dass in gut jedem zweiten Fall Personen beteiligt waren, die das Kind bereits kannte.",
-              "status": "single_source_claim",
-              "source_id": "taz-aktuell",
-              "evidence": [
-                {
-                  "source_id": "taz-aktuell",
-                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
-                  "excerpt_hash": "d8a22bc03b7d0abb5f2a",
-                  "checked_at": "2026-09-04T01:52:05.573Z"
-                },
-                {
-                  "source_id": "taz-aktuell",
-                  "url": "https://taz.de/Studie-von-Unicef/!6209752",
-                  "excerpt_hash": "7deccbf7401bc681c40c",
-                  "checked_at": "2026-09-04T01:52:05.573Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:05.573Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "taz-aktuell",
-              "url": "https://taz.de/Studie-von-Unicef/!6209752",
-              "content_hash": "208ab37a2b288f50f65ad0d1718c82091149026cd9469ada9990b7c3962cfd17"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T01:52:05.573Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "60136c50cfe9d1631b7ff39226b8bd332f232beb54b41b2e313994fda6353c2b"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "4250ff05efc931b273c8b699bb4a319c76fa4bcfe80c8c71ae197890636285c2"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "38450c542e9190b3295fc6284b1f42f98d01983d70d95efbc3c4c332d0573ea8"
-        },
-        "source_visual": null,
-        "fingerprint": "5e90e3d035ad3da24260ae98f66de9de0490007bd7160264b1ae29672b8b472a",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:54:09.695Z",
-        "status": "generated"
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Studie-von-Unicef/!6209752",
-            "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
-            "summary": "Kinder sind im Internet womöglich häufiger sexuellem Missbrauch ausgesetzt als bisher angenommen. Das zeigt eine Unicef-Untersuchung in 21 Ländern. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T06:53:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "208ab37a2b288f50f65ad0d1718c82091149026cd9469ada9990b7c3962cfd17",
-            "source_item_id": "7056452112063302b0ec2f7b7ea5ee74bcfab02bbe8db9bd6f1a83f698b67898",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T06:53:00.000Z",
-            "ingested_at": "2026-09-03T22:21:17.010Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
-    },
-    {
       "story_id": "wt-eaabd0ab05597ee6",
       "slug": "justiz-corona-ausschuss-beginnt-nach-zwei-jahren-beweisaufnahme-597ee6",
       "title": "Justiz: Corona-Ausschuss beginnt nach zwei Jahren Beweisaufnahme",
@@ -17595,7 +18432,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "ed5f3efece6a1fa55dc53629a2e0317329a77eaf4ab261f6ec855181948a97c4",
         "sources": [
           {
@@ -17692,9 +18529,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false
       }
@@ -17961,7 +18800,7 @@
       "verification_started_at": "2026-09-04T01:26:55.172Z",
       "publish_ready_at": "2026-09-04T01:27:12.242Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -18550,141 +19389,7 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "a7d326deb3b10744b8f8f789f2bae07ac7e46ed99416877f70a53582dfd878d4",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
-            "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
-            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Handelt es sich um eine Abschussvorrichtung oder nur um einen schlechten Scherz?",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T21:07:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "95ca532a46bb3d2ac8e1b929c35086ce0fba2d0a679167fc63e2de441f64c926",
-            "source_item_id": "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T21:07:00.000Z",
-            "ingested_at": "2026-09-04T00:21:22.875Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
-            "title": "Nach Angriffen auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
-            "summary": "Handelt es sich um eine Abschussvorrichtung, oder nur um einen schlechten Scherz? Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T21:03:08.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "8bee50c615245a339fea47ea2d996565dfb75d37869a6674ac52c0f3572d2ab9",
-            "source_item_id": "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T21:03:08.000Z",
-            "ingested_at": "2026-09-04T00:21:22.875Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-            "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von einem Sabotagedelikt aus. Offenbar sollte ein Kurzschluss hergestellt werden. Es…",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T01:00:03.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399",
-            "source_item_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T01:00:03.000Z",
-            "ingested_at": "2026-09-04T01:26:36.485Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "Wieder sind Abschussvorrichtungen an einem Umspannwerk gefunden worden. Aktuell geht es um Dormagen und Weisweiler.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T04:06:43.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff",
-            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T04:06:43.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-9e8076042f86f06d",
@@ -18805,7 +19510,7 @@
       "verification_started_at": "2026-09-04T01:09:38.593Z",
       "publish_ready_at": "2026-09-04T01:09:49.693Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -19176,47 +19881,7 @@
         "generated_at": "2026-09-04T01:30:24.514Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "ba792de8bcac830ac84f3b4f0dc1c53cf00b89108e9cb01f51205b013355e63c",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/video/20260903-outrage-mounts-in-malta-after-acquittal-over-journalist-s-murder",
-            "title": "Outrage mounts in Malta after acquittal over journalist's murder",
-            "summary": "Hundreds of people demonstrated in the Maltese capital Valletta after a wealthy businessman was found not guilty of masterminding the murder of an investigative journalist. The verdict on Daphne Caruana Galizia's car-bomb killing in 2017 sparked outrage from Maltese civil society groups and international media freedom organisations. The opposition Nationalist Party, which organised the demonstration late on Wednesday, has said lawmakers should be called back from their summer break for a special session of the legislature to discuss the case.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T15:07:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "f1550a78c0723b4430841826c3e2376c48c0db3cb631da04f8cc95584dea3e8f",
-            "source_item_id": "d568059689084115a18038df54c6c30bb7cc97c9740e8957694a0396d3517022",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T15:07:33.000Z",
-            "ingested_at": "2026-09-04T00:59:37.557Z",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-872323e750684aa1",
@@ -19380,7 +20045,7 @@
       "verification_started_at": "2026-09-04T01:08:52.901Z",
       "publish_ready_at": "2026-09-04T01:09:04.488Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -19722,632 +20387,7 @@
         "generated_at": "2026-09-04T01:30:29.908Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "6e4464438c753d3e38b4f92054ace42e22183c6c85d209f007eaeff4dd76b1e4",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Demografie-und-Familienplanung/!6209487",
-            "title": "Demografie und Familienplanung: Auch wegen der Wohnungsnot gibt es zu wenig Kinder",
-            "summary": "Der Kinderwunsch in Deutschland nimmt ab. Globale Krisen, Wohnungsnot und Arbeitsmarkt sind Hindernisse für die Familiengründung. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-02T16:48:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "85702275a763d9e2ff168eb0416089b40027529e4b4978a5a3f338fe54342c3d",
-            "source_item_id": "6023962a1855130c10af3ef2894ebb242994a919c49be0db1a74dbc1d7d61da0",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T16:48:00.000Z",
-            "ingested_at": "2026-09-03T22:21:17.010Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
-    },
-    {
-      "story_id": "wt-d175d26e4635ba0a",
-      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
-      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-      "first_seen": "2026-09-03T15:27:13.000Z",
-      "last_updated": "2026-09-04T01:02:06.108Z",
-      "published_at": "2026-09-04T01:02:06.108Z",
-      "updated_at": "2026-09-04T01:02:06.108Z",
-      "topic": [
-        "Klima"
-      ],
-      "sources": [
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-          "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-          "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T15:27:13.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
-          "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T15:27:13.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v1-claim-1",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "In Frankfurts Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "4fdaeab2e2643d47349c",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:02:06.108Z"
-        },
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v1-claim-2",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; die Planung berücksichtigte Klimawandel und Klimaanpassung.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "d6db4d6fec6a17db0ea6",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "f2648a8797634d3610df",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "6cd1c2db5930a4392de3",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "ff042eff6c35db82a0e4",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:02:06.108Z"
-        },
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v1-claim-3",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter; der Park soll nach und nach auf 28.000 Quadratmeter anwachsen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "3d0942abf71c17b78d03",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:02:06.108Z"
-        },
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v1-claim-4",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Zwischen 3.500 und 4.000 Menschen sollen in naher Zukunft im Schönhof-Viertel leben.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "8239c4a3b2d33b24a87c",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:02:06.108Z"
-        },
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v1-claim-5",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Für das Viertel sind auch ein Grünes Klassenzimmer, sichere Wege und eine soziale Treffpunktfunktion vorgesehen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "29375e998e34026f2e4f",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "d0ceedf8ca522ad2e99a",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "35bc3ec03628e9bfc64c",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "0e008636ec2917a5ba7a",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:02:06.108Z"
-        }
-      ],
-      "event_id": "event-8b84ae4650626fa86f6f",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T01:01:55.778Z",
-      "publish_ready_at": "2026-09-04T01:02:06.108Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Im Schönhof-Viertel im Frankfurter Westen ist der erste Teil eines neuen Parks offiziell eröffnet worden. Die Anlage soll nicht nur Erholung bieten, sondern auch Regenwasser aufnehmen und die Umgebung kühlen; bei Planung und Bepflanzung seien Klimawandel, Hitzebelastung und Biodiversität mitgedacht worden.\n\nDer zunächst geöffnete östliche Abschnitt umfasst 12.500 Quadratmeter, später soll der Park auf 28.000 Quadratmeter wachsen. Genannt werden außerdem eine Zisterne, Rückhaltemulden, klimaresiliente Bäume, ein Grünes Klassenzimmer und sichere Wege für künftige Schülerinnen und Schüler. Für das Viertel werden 3.500 bis 4.000 Einwohnerinnen und Einwohner in naher Zukunft erwartet.",
-      "analysis": {
-        "story_id": "wt-d175d26e4635ba0a",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Die Anlage soll Regenwasser speichern, kühlen und als Quartiersraum dienen.",
-        "detail_summary": "Gesichert ist zunächst die Eröffnung des ersten Parkteils im Schönhof-Viertel mit einer Fläche von 12.500 Quadratmetern. Die Quelle beschreibt den Park als Teil einer klimaangepassten Quartiersentwicklung mit Zisterne, Rückhaltemulden, klimaresilienten Bäumen und einem Grünen Klassenzimmer. Für die Umweltwirkung ist das relevant, weil hier konkrete bauliche Elemente genannt werden, die Hitze und Starkregen lokal abmildern sollen. Der mögliche Wirkpfad reicht von besserer Wasseraufnahme und Verschattung bis zu höherer Aufenthaltsqualität im Quartier. Ob und in welchem Ausmaß das tatsächlich eintritt, bleibt offen, weil Messdaten zur Kühlleistung, Wasserrückhaltung oder Nutzung fehlen. Die Meldung ist damit eine belastbare Erstinformation über eine laufende städtebauliche Umsetzung, nicht über bereits nachgewiesene Wirkung.",
-        "why_relevant": "Ein neuer Quartierspark mit expliziter Klimaanpassungsfunktion verändert lokale Infrastruktur, Wasserhaushalt und Hitzebelastung in einem wachsenden Wohngebiet.",
-        "status": "laufende Umsetzung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Der Park betrifft künftige Bewohnerinnen und Bewohner sowie Schulwege und Aufenthaltsqualität im Quartier."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Genannt werden Regenwasserspeicherung, Verschattung und klimaresiliente Bepflanzung als lokale Anpassungsmaßnahmen."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer demokratischer Effekt wird in der Quelle nicht beschrieben; relevant ist eher die kommunale Planung."
-        },
-        "importance": "mittel",
-        "impact_potential": "Der Park kann lokale Hitzebelastung und Oberflächenabfluss im Quartier mindern und damit die Anpassungsfähigkeit eines dicht bebauten Neubaugebiets erhöhen.",
-        "impact_risks": [
-          "Die tatsächliche Kühl- und Speicherleistung kann geringer ausfallen als geplant.",
-          "Ohne Pflege und Nutzung könnten die vorgesehenen Funktionen nur teilweise greifen."
-        ],
-        "mechanisms": [
-          "Verschattung durch klimaresiliente Bäume",
-          "Regenwasserrückhalt über Zisterne und Mulden",
-          "Niedrigschwellige Quartiersnutzung durch offene Grünfläche"
-        ],
-        "first_order": [
-          "mehr Aufenthalts- und Bewegungsraum",
-          "lokale Speicherung von Niederschlagswasser",
-          "erste Verschattung im Areal"
-        ],
-        "second_order": [
-          "mögliche Entlastung bei Starkregen",
-          "bessere Hitzetoleranz im Quartier",
-          "mehr Nutzung von Schul- und Begegnungsangeboten"
-        ],
-        "third_order": [
-          "höhere Resilienz eines neuen Wohngebiets gegenüber Klimarisiken",
-          "Vorbildwirkung für künftige Quartiersplanung möglich"
-        ],
-        "systemic_relevance": "Die Meldung ist lokal, aber sie berührt zwei systemische Themen: urbane Klimaanpassung und integrierte Quartiersplanung. Systemrelevant wird sie vor allem dann, wenn ähnliche Standards in weiteren Neubaugebieten übernommen werden.",
-        "transformation_potential": "Begrenzt bis mittel: Es geht um ein einzelnes Quartier, aber mit konkreten baulichen Merkmalen für klimaangepasste Stadtentwicklung.",
-        "resilience": "Die beschriebenen Elemente erhöhen potenziell die Resilienz des Viertels gegenüber Hitze und Starkregen, bleiben aber von Ausführung, Pflege und tatsächlicher Nutzung abhängig.",
-        "side_effects": [
-          "Bauliche Flächen für Grün können an anderer Stelle Nutzungsansprüche verdrängen.",
-          "Die Wirkung hängt stark von Wetterextremen und Unterhalt ab."
-        ],
-        "uncertainties": [
-          "Keine unabhängige Zweitquelle in den gelieferten Daten.",
-          "Messwerte zur tatsächlichen Kühl- oder Speicherwirkung fehlen.",
-          "Der Endausbau des westlichen Teils ist erst angekündigt, nicht belegt umgesetzt."
-        ],
-        "evidence_level": "single_source_report mit konkreten Orts-, Flächen- und Funktionsangaben; keine unabhängige Bestätigung der Wirkung",
-        "attribution": "Die Angaben stammen ausschließlich aus einem journalistischen Bericht über die Eröffnung und die Planungsziele des Parks.",
-        "watch_next": [
-          "Wann der westliche Teil eröffnet wird und welche Fläche er umfasst.",
-          "Ob spätere Messungen zu Hitze- oder Regenrückhalt veröffentlicht werden."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 11, SDG 13"
-        ],
-        "publication_gate": {
-          "news_value": "implementation",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "none",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Die Eröffnung eines klimaangepassten Parkteils in einem neuen Wohnquartier ist eine neue Umsetzung mit lokaler materieller Relevanz; die Evidenz bleibt jedoch auf eine Quelle begrenzt."
-        },
-        "publication_recommendation": true,
-        "visuals": null
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T01:02:06.108Z",
-          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-          "source_summary": "Im Schönhof-Viertel im Frankfurter Westen ist der erste Teil eines neuen Parks offiziell eröffnet worden. Die Anlage soll nicht nur Erholung bieten, sondern auch Regenwasser aufnehmen und die Umgebung kühlen; bei Planung und Bepflanzung seien Klimawandel, Hitzebelastung und Biodiversität mitgedacht worden.\n\nDer zunächst geöffnete östliche Abschnitt umfasst 12.500 Quadratmeter, später soll der Park auf 28.000 Quadratmeter wachsen. Genannt werden außerdem eine Zisterne, Rückhaltemulden, klimaresiliente Bäume, ein Grünes Klassenzimmer und sichere Wege für künftige Schülerinnen und Schüler. Für das Viertel werden 3.500 bis 4.000 Einwohnerinnen und Einwohner in naher Zukunft erwartet.",
-          "analysis": {
-            "story_id": "wt-d175d26e4635ba0a",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Die Anlage soll Regenwasser speichern, kühlen und als Quartiersraum dienen.",
-            "detail_summary": "Gesichert ist zunächst die Eröffnung des ersten Parkteils im Schönhof-Viertel mit einer Fläche von 12.500 Quadratmetern. Die Quelle beschreibt den Park als Teil einer klimaangepassten Quartiersentwicklung mit Zisterne, Rückhaltemulden, klimaresilienten Bäumen und einem Grünen Klassenzimmer. Für die Umweltwirkung ist das relevant, weil hier konkrete bauliche Elemente genannt werden, die Hitze und Starkregen lokal abmildern sollen. Der mögliche Wirkpfad reicht von besserer Wasseraufnahme und Verschattung bis zu höherer Aufenthaltsqualität im Quartier. Ob und in welchem Ausmaß das tatsächlich eintritt, bleibt offen, weil Messdaten zur Kühlleistung, Wasserrückhaltung oder Nutzung fehlen. Die Meldung ist damit eine belastbare Erstinformation über eine laufende städtebauliche Umsetzung, nicht über bereits nachgewiesene Wirkung.",
-            "why_relevant": "Ein neuer Quartierspark mit expliziter Klimaanpassungsfunktion verändert lokale Infrastruktur, Wasserhaushalt und Hitzebelastung in einem wachsenden Wohngebiet.",
-            "status": "laufende Umsetzung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Der Park betrifft künftige Bewohnerinnen und Bewohner sowie Schulwege und Aufenthaltsqualität im Quartier."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Genannt werden Regenwasserspeicherung, Verschattung und klimaresiliente Bepflanzung als lokale Anpassungsmaßnahmen."
-            },
-            "democracy": {
-              "relevance": "gering",
-              "rationale": "Ein unmittelbarer demokratischer Effekt wird in der Quelle nicht beschrieben; relevant ist eher die kommunale Planung."
-            },
-            "importance": "mittel",
-            "impact_potential": "Der Park kann lokale Hitzebelastung und Oberflächenabfluss im Quartier mindern und damit die Anpassungsfähigkeit eines dicht bebauten Neubaugebiets erhöhen.",
-            "impact_risks": [
-              "Die tatsächliche Kühl- und Speicherleistung kann geringer ausfallen als geplant.",
-              "Ohne Pflege und Nutzung könnten die vorgesehenen Funktionen nur teilweise greifen."
-            ],
-            "mechanisms": [
-              "Verschattung durch klimaresiliente Bäume",
-              "Regenwasserrückhalt über Zisterne und Mulden",
-              "Niedrigschwellige Quartiersnutzung durch offene Grünfläche"
-            ],
-            "first_order": [
-              "mehr Aufenthalts- und Bewegungsraum",
-              "lokale Speicherung von Niederschlagswasser",
-              "erste Verschattung im Areal"
-            ],
-            "second_order": [
-              "mögliche Entlastung bei Starkregen",
-              "bessere Hitzetoleranz im Quartier",
-              "mehr Nutzung von Schul- und Begegnungsangeboten"
-            ],
-            "third_order": [
-              "höhere Resilienz eines neuen Wohngebiets gegenüber Klimarisiken",
-              "Vorbildwirkung für künftige Quartiersplanung möglich"
-            ],
-            "systemic_relevance": "Die Meldung ist lokal, aber sie berührt zwei systemische Themen: urbane Klimaanpassung und integrierte Quartiersplanung. Systemrelevant wird sie vor allem dann, wenn ähnliche Standards in weiteren Neubaugebieten übernommen werden.",
-            "transformation_potential": "Begrenzt bis mittel: Es geht um ein einzelnes Quartier, aber mit konkreten baulichen Merkmalen für klimaangepasste Stadtentwicklung.",
-            "resilience": "Die beschriebenen Elemente erhöhen potenziell die Resilienz des Viertels gegenüber Hitze und Starkregen, bleiben aber von Ausführung, Pflege und tatsächlicher Nutzung abhängig.",
-            "side_effects": [
-              "Bauliche Flächen für Grün können an anderer Stelle Nutzungsansprüche verdrängen.",
-              "Die Wirkung hängt stark von Wetterextremen und Unterhalt ab."
-            ],
-            "uncertainties": [
-              "Keine unabhängige Zweitquelle in den gelieferten Daten.",
-              "Messwerte zur tatsächlichen Kühl- oder Speicherwirkung fehlen.",
-              "Der Endausbau des westlichen Teils ist erst angekündigt, nicht belegt umgesetzt."
-            ],
-            "evidence_level": "single_source_report mit konkreten Orts-, Flächen- und Funktionsangaben; keine unabhängige Bestätigung der Wirkung",
-            "attribution": "Die Angaben stammen ausschließlich aus einem journalistischen Bericht über die Eröffnung und die Planungsziele des Parks.",
-            "watch_next": [
-              "Wann der westliche Teil eröffnet wird und welche Fläche er umfasst.",
-              "Ob spätere Messungen zu Hitze- oder Regenrückhalt veröffentlicht werden."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 11, SDG 13"
-            ],
-            "publication_gate": {
-              "news_value": "implementation",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "none",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Die Eröffnung eines klimaangepassten Parkteils in einem neuen Wohnquartier ist eine neue Umsetzung mit lokaler materieller Relevanz; die Evidenz bleibt jedoch auf eine Quelle begrenzt."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-1",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "In Frankfurts Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "4fdaeab2e2643d47349c",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-2",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; die Planung berücksichtigte Klimawandel und Klimaanpassung.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "d6db4d6fec6a17db0ea6",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "f2648a8797634d3610df",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "6cd1c2db5930a4392de3",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "ff042eff6c35db82a0e4",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-3",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter; der Park soll nach und nach auf 28.000 Quadratmeter anwachsen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "3d0942abf71c17b78d03",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-4",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Zwischen 3.500 und 4.000 Menschen sollen in naher Zukunft im Schönhof-Viertel leben.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "8239c4a3b2d33b24a87c",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-5",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Für das Viertel sind auch ein Grünes Klassenzimmer, sichere Wege und eine soziale Treffpunktfunktion vorgesehen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "29375e998e34026f2e4f",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "d0ceedf8ca522ad2e99a",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "35bc3ec03628e9bfc64c",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "0e008636ec2917a5ba7a",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T01:02:06.108Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "f293a89cc220accbf69b5c8b366dfc1b5feca5147b4361387a58bf3630884382"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "49b10467b7488725ef9037bc0d05df01149097d45ea86063bbddc09f868cc981"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "8485b06bbbbf36d778bde377ec89e4fca896ac555ae9842ea2dc120740e2b473"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b2732af1f959596b-source.png",
-          "sha256": "b2732af1f959596b6ca02355e0481c3521678defb08aed90fbb36e9807a71b18",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-2",
-          "generated_at": "2026-09-04T01:02:09.830Z"
-        },
-        "fingerprint": "b91d583c7317dc1bbad27886a2e02dc3059d08d2ba5e3b3de4221d9c78e9fea2",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:29:56.205Z",
-        "status": "generated"
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-            "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-            "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T15:27:13.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
-            "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T15:27:13.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-31724816547fc87d",
@@ -20487,7 +20527,7 @@
       "verification_started_at": "2026-09-04T01:00:26.208Z",
       "publish_ready_at": "2026-09-04T01:00:39.627Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -20870,48 +20910,7 @@
         "generated_at": "2026-09-04T01:30:35.543Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-            "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
-            "summary": "Rekordpreise an der Zapfsäule und gleichzeitig mehr E-Autos auf den Straßen: Das verändert langfristig die Rechnung für den Staat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T19:03:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8",
-            "source_item_id": "4c8d367548f84b1ad48ef1d5229608422141c82930ca37dae093856f90520f0d",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T19:03:18.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-466fb5b6f800789a",
@@ -22716,7 +22715,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -23782,7 +23781,7 @@
       "verification_started_at": "2026-09-03T22:37:04.322Z",
       "publish_ready_at": "2026-09-03T22:37:15.098Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -24118,51 +24117,7 @@
         "generated_at": "2026-09-04T01:31:08.712Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
-        "content_hash": "242e262fcef9a2b5aa5f07b2a17ef6c490328cd64b8b2f580c10e9bbffb9b3f3",
-        "sources": [
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell/rheinland-pfalz/kaiserslautern/bgh-gericht-beendet-streit-um-gema-gebuehren-in-suedwestpfalz-seniorenheim-100.html",
-            "title": "TV im Seniorenheim-Zimmer in Dahn: Keine zusätzliche GEMA-Lizenz nötig",
-            "summary": "Ein Seniorenheim in Dahn braucht für die Weiterleitung von TV-Programmen im Haus keine zusätzliche GEMA-Lizenz. Das hatte der Europäische Gerichtshof entschieden. Jetzt hat der Bundesgerichtshof dieses Urteil bestätigt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:33:02.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "0a42f8ee46e833ae5ddc88240167364df518ddcf5f4dce11337c9eec3f6a06fc",
-            "source_item_id": "720c9cf1b295cfd969758403a31645bd45a865cf93f5a9ffe497471ded7a1d27",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:33:02.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-57bcbc8dea706471",
@@ -24817,7 +24772,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "9d0a297548dc6af96d67ae3cc0b3ed9811ca1046466165e630458bed0b6f93c7",
         "sources": [
           {
@@ -24916,9 +24871,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
         ],
-        "quality_retry_count": 1,
+        "quality_retry_count": 2,
         "reassessment": false,
         "fresh": false
       }
@@ -34635,7 +34591,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -34879,7 +34835,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -35775,7 +35731,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -36041,7 +35997,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -36314,7 +36270,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -36592,7 +36548,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -36866,7 +36822,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -37144,7 +37100,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:06:21.635Z",
+        "detected_at": "2026-09-04T05:21:19.381Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -42173,7 +42129,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T05:06:21.635Z"
+          "checked_at": "2026-09-04T05:21:19.381Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -42185,7 +42141,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T05:06:21.635Z",
+      "updated_at": "2026-09-04T05:21:19.381Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -42214,11 +42170,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4266.360583333333,
+        "source_age_minutes": 4281.323016666666,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 405.07708333333335,
+        "queue_age_minutes": 420.03951666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -42658,7 +42614,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T05:06:21.635Z"
+          "checked_at": "2026-09-04T05:21:19.381Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -42670,7 +42626,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T05:06:21.635Z",
+      "updated_at": "2026-09-04T05:21:19.381Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -42702,11 +42658,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5346.360583333333,
+        "source_age_minutes": 5361.323016666666,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 405.07708333333335,
+        "queue_age_minutes": 420.03951666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -43564,5 +43520,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T05:06:21.635Z"
+  "public_updated_at": "2026-09-04T05:21:19.381Z"
 }
