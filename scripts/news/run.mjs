@@ -802,8 +802,8 @@ export async function runWirkungsticker(options = {}) {
           report.reactivated_stories += wasPublished && !wasListed ? 1 : 0;
         }
       } catch (error) {
-        report.ai_calls += Number(error?.requestAttempts || 1);
-        report.estimated_cost_usd = Number((report.estimated_cost_usd + NEWS_REQUEST_RESERVATION_USD * Number(error?.requestAttempts || 1)).toFixed(6));
+        report.ai_calls += Number(error?.requestAttempts ?? 1);
+        report.estimated_cost_usd = Number((report.estimated_cost_usd + NEWS_REQUEST_RESERVATION_USD * Number(error?.requestAttempts ?? 1)).toFixed(6));
         report.token_source = "includes_conservative_failed_request_reservations";
         const reason = sanitizeError(error);
         report.ai_error = reason;

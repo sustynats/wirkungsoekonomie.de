@@ -359,9 +359,11 @@
       const feedLatest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
       latestFeedTimestamp = feedLatest;
       const pageLatest = newestCardTimestamp();
-      if (cards.length && feedLatest > pageLatest && document.visibilityState === "visible") {
+      // An explicit refresh also picks up image/template-only releases whose
+      // editorial publication timestamps intentionally remain unchanged.
+      if (cards.length && (manual || feedLatest > pageLatest) && document.visibilityState === "visible") {
         const lastReload = Number(window.sessionStorage.getItem(autoReloadKey) || 0);
-        if (Date.now() - lastReload > 60 * 1000) {
+        if (manual || Date.now() - lastReload > 60 * 1000) {
           window.sessionStorage.setItem(autoReloadKey, String(Date.now()));
           window.location.reload();
           return true;

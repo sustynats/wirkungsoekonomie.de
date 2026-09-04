@@ -637,6 +637,26 @@ function cleanForPrompt(value, maxLength) {
   return sanitizeFeedText(value, maxLength).replace(/```/g, "");
 }
 
+// Oracle accepts at most 40,000 question characters. Keep every source identity,
+// claim, provenance and gate; select exact evidence passages evenly only when
+// needed, and explicitly disclose that the supplied excerpts are incomplete.
+export function fitAnalysisInput(input, budget) {
+  const value = structuredClone(input);
+  const catalogs = value.flatMap(story => story.sources.map(source => ({ source, all: source.evidence_segments, count: source.evidence_segments.length })));
+  let serialized = JSON.stringify(value);
+  while (serialized.length > budget) {
+    const candidates = catalogs.filter(entry => entry.count > 2).sort((a,b) => b.count - a.count);
+    if (!candidates.length) {
+      const error = new Error("AI_INPUT_TOO_LARGE"); error.requestAttempts = 0; throw error;
+    }
+    const entry = candidates[0]; entry.count -= 1;
+    entry.source.evidence_segments = Array.from({length:entry.count},(_,index) => entry.all[Math.round(index * (entry.all.length - 1) / (entry.count - 1))]);
+    entry.source.evidence_selection = { incomplete: true, supplied: entry.count, available: entry.all.length };
+    serialized = JSON.stringify(value);
+  }
+  return serialized;
+}
+
 export function buildAnalysisPrompt(stories) {
   const input = stories.map((story) => ({
     story_id: story.story_id,
@@ -685,7 +705,7 @@ export function buildAnalysisPrompt(stories) {
       url: source.url,
     })),
   }));
-  return [
+  const lines = [
     "Du bist der bereits bestehende quellengebundene WÖk-Analysedienst. Analysiere die folgenden vorgefilterten Story-Cluster.",
     "Du arbeitest als eigenständige Nachrichtenredaktion, nicht als Umschreibedienst. Rekonstruiere das Ereignis aus mehreren verfügbaren Quellen, prüfe ihre Beiträge und Interessen und formuliere einen eigenen journalistischen Text. Keine Rekonstruktion gesperrter Artikel aus Teasern. Keine Quellenkenntnis behaupten, die nicht geliefert wurde.",
     "Amtliche Stellen, Unternehmen und NGOs sind Primärquellen für eigene Erklärungen, nicht automatisch neutrale Wahrheitsinstanzen. Auch ohne amtliche Quelle kann ein belegtes Ereignis berichtenswert sein. Agenturabdrucke, gemeinsame Pressemitteilungen und gleiche Textpassagen zählen nicht als unabhängige Bestätigung. evidence_groups ist eine konservative Abhängigkeitsvorprüfung, kein Beweis für Unabhängigkeit. Bei strittigen oder schwerwiegenden Sachbehauptungen Originalbeleg plus unabhängige Recherche verlangen; ohne ausreichende Evidenz zurückstellen.",
@@ -715,6 +735,7 @@ export function buildAnalysisPrompt(stories) {
     "Wiederhole in Analysefeldern keine URLs, technischen Quellen-IDs oder Dokumentnummern. Übernimm materielle Zahlen nur, wenn sie im Claim oder Quellentext stehen, und behalte ihre Schreibweise bei (Zahlwort bleibt Zahlwort). Keine Einleitung und keine Wiederholung des Schemas.",
     "Ausnahme für interne Belegfelder: event_claims.evidence und followups.source_id müssen die exakten gelieferten IDs und URLs enthalten. Sie gehören nicht in den journalistischen Fließtext. Rechne diese Belegfelder nicht in das Zeichenbudget der Lesertexte ein.",
     "Verbindliches Belegformat: Quellen enthalten evidence_segments mit unveränderlichem evidence_id und excerpt. In event_claims.evidence gib ausschließlich {evidence_id:...} mit einer tatsächlich gelieferten ID aus. Kein Zitat abschreiben, keine URLs oder IDs erfinden. Bei Bedarf mehrere Textstellen-IDs auswählen, die zusammen die konkrete Behauptung tragen. Der Server löst sie vor der Prüfung exakt auf. evidence_segments ersetzen article_excerpt als bereitgestellten Quellentext. Sämtliche Lesertexte einschließlich event_claims.claim auf Deutsch; fremdsprachige Originalbelege nicht übersetzen.",
+    "evidence_selection.incomplete kennzeichnet eine begrenzte Textstellenauswahl, keinen vollständig gelesenen Artikel. Keine Vollständigkeit behaupten; fehlt Beleg oder Kontext für eine Kernbehauptung, insufficient_evidence statt Ergänzen aus Vermutung.",
     ...VISUALS_PROMPT_RULES,
     "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar.",
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
@@ -763,9 +784,11 @@ export function buildAnalysisPrompt(stories) {
       }],
     }),
     "UNTRUSTED_SOURCE_DATA_BEGIN",
-    JSON.stringify(input),
+    "",
     "UNTRUSTED_SOURCE_DATA_END",
-  ].join("\n");
+  ];
+  lines[lines.length - 2] = fitAnalysisInput(input, 39000 - lines.join("\n").length);
+  return lines.join("\n");
 }
 
 export function extractJsonObject(value) {

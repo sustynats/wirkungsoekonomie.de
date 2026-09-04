@@ -6,6 +6,14 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { once } from "node:events";
 
+export async function cleanupChromeProfile(directory, { remove = fs.promises.rm, warn = console.warn } = {}) {
+  // Chrome helpers may finish writing after the browser process exits on Linux.
+  // Cleanup must neither discard a completed PNG nor mask the render error.
+  if (path.dirname(directory) !== os.tmpdir() || !path.basename(directory).startsWith("wt-title-cdp-")) throw new Error("CHROME_PROFILE_PATH_INVALID");
+  try { await remove(directory, { recursive: true, force: true, maxRetries: 10, retryDelay: 50 }); }
+  catch { warn("CHROME_PROFILE_CLEANUP_DEFERRED"); } // ephemeral runner removes it at job end
+}
+
 export async function setGeneratedDocument(page, frameId, svg) {
   await page("Page.setDocumentContent", { frameId, html: `<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: blob:; font-src data:; style-src 'unsafe-inline'"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}img{display:block}</style></head><body></body></html>` });
   // Multi-megabyte inlined originals can stall a single DevTools command.
@@ -26,7 +34,7 @@ export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
     const png = await Promise.race([
       new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`CHROME_RENDER_TIMEOUT_${phase}`)), 30000); }),
       (async () => {
-        child = spawn(chrome, ["--headless=new", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${directory}`, "--no-first-run", "--no-default-browser-check", "--disable-background-networking", "--disable-component-update", "--disable-dev-shm-usage", "--password-store=basic", "--use-mock-keychain", ...(process.env.WT_CHROME_NO_SANDBOX === "true" ? ["--no-sandbox"] : []), "about:blank"], { stdio: ["ignore", "ignore", "pipe"] });
+        child = spawn(chrome, ["--headless=new", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${directory}`, "--no-first-run", "--no-default-browser-check", "--disable-background-networking", "--disable-component-update", "--disable-dev-shm-usage", "--password-store=basic", "--use-mock-keychain", ...(process.env.WT_CHROME_NO_SANDBOX === "true" ? ["--no-sandbox"] : []), "about:blank"], { stdio: ["ignore", "ignore", "pipe"], detached: process.platform !== "win32" });
         const endpoint = await new Promise((resolve, reject) => {
           let output = "";
           child.on("error", reject); child.on("exit", () => reject(new Error("CHROME_EXITED")));
@@ -72,7 +80,13 @@ export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
   } finally {
     clearTimeout(timer); socket?.close();
     for (const operation of pending.values()) operation.reject(new Error("CHROME_RENDER_CLOSED"));
-    if (child && child.exitCode === null) { const closed = once(child, "exit").catch(() => {}); child.kill("SIGKILL"); await closed; }
-    fs.rmSync(directory, { recursive: true, force: true });
+    if (child && child.exitCode === null && child.signalCode === null) {
+      const closed = once(child, "exit").catch(() => {});
+      // Only the process group created above, never another browser/session.
+      try { process.platform === "win32" ? child.kill("SIGKILL") : process.kill(-child.pid, "SIGKILL"); }
+      catch { child.kill("SIGKILL"); }
+      await closed;
+    }
+    await cleanupChromeProfile(directory);
   }
 }
