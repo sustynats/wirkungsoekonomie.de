@@ -9,9 +9,9 @@ export const PAGE_QUESTIONS = {
     q('Welche Weiterbildungen werden angeboten?', '/akademie/weiterbildung.html', 'Weiterbildung'),
   ],
   '/bibliothek/': [
-    q('Welche Veröffentlichungen eignen sich für den Einstieg?', '/bibliothek/#empfohlener-einstieg', 'Orientierung'),
-    q('Wo finde ich Methoden und Werkzeuge?', '/bibliothek/#methoden-werkzeuge', 'Vertiefung'),
-    q('Wo bleiben ältere Fassungen nachvollziehbar?', '/bibliothek/#archiv', 'Versionen'),
+    q('Welche Veröffentlichung eignet sich für den Einstieg?', '/buch/', 'Orientierung'),
+    q('Wo finde ich Methoden und Werkzeuge?', '/tools/', 'Vertiefung'),
+    {label:'Wie erkenne ich ältere Fassungen?', answer:'Achte auf den ausgewiesenen Stand und Kennzeichnungen wie „archiviert“ oder „ersetzt“. Prüfe bei älteren Veröffentlichungen, ob eine neuere Fassung verlinkt ist.', tag:'Versionen'},
   ],
   '/quellenarchiv/': [
     {label:'Wozu dienen die Detailseiten der Quellen?', answer:'Sie ordnen Quellen ein und bieten den Zugang zur jeweiligen Veröffentlichung. Prüfe dort Herkunft, Fassung und Bezug zur behandelten Frage.', tag:'Quellenarbeit'},
@@ -183,7 +183,9 @@ export function isSafeQuestionLink(href) {
 
 export function selectContextualQuestions(context) {
   const path = normalizedPath(context.path);
-  if (context.lang === 'en' || context.noindex || /^\/(admin|_debug|fragen|faq)(\/|$)/.test(path)) return [];
+  // The ticker has its own evidence, follow-up and related-news sections.
+  // Its owner explicitly excluded generic question recommendations here.
+  if (context.lang === 'en' || context.noindex || /^\/(admin|_debug|fragen|faq|wirkungsticker)(\/|$)/.test(path)) return [];
   const unique = items => {
     const labels = new Set(), targets = new Set();
     return items.filter(item => {

@@ -1,7 +1,555 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T09:54:54.452Z",
+  "updated_at": "2026-09-04T10:21:19.449Z",
   "stories": [
+    {
+      "story_id": "wt-31724816547fc87d",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-12162911a926b176-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-2a53356d626167dd-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-eb6f843358afcde0-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
+      "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
+      "source_summary": "Der WDR berichtet über Rekordpreise für Benzin und Diesel an der Zapfsäule und über einen zugleich starken Anstieg bei reinen Elektroautos. Für August nennt der Text im Monatsdurchschnitt einen neuen Höchststand bei Super E10; Diesel sei sogar teurer als E10 gewesen. Zugleich seien 68.930 reine E-Autos neu zugelassen worden, etwa 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag verknüpft diese Entwicklung mit der Finanzierung des Staates: Verbrenner brächten Einnahmen über Kfz-Steuer sowie Energie- und Mehrwertsteuer beim Tanken, während mit wachsender E-Mobilität Einnahmen sinken könnten. Als mögliche Reaktionen nennt der Text eine Ladestromsteuer sowie ein fahrleistungsabhängiges und nach CO₂-Ausstoß gestaffeltes System. Außerdem zitiert der Beitrag ADAC-Positionen zur Kostenfrage bei Diesel und E-Auto sowie Hinweise auf Ladeinfrastruktur und Reichweite.",
+      "summary": "Rekordpreise für Benzin und Diesel treffen auf stark steigende E-Auto-Zulassungen. Der WDR sieht darin eine Verschiebung bei Kosten und möglichen Staatseinnahmen.",
+      "detail_summary": "Gesichert ist laut WDR, dass Super E10 im August so teuer war wie nie zuvor und Diesel sogar über E10 lag. Zugleich wurden 68.930 reine Elektroautos neu zugelassen, was der Beitrag als rund 32 Prozent aller Neuzulassungen und als 75 Prozent Plus gegenüber dem Vorjahr beschreibt. Für die Einordnung ist das relevant, weil sich damit Kaufanreize, Kostenvergleiche und steuerliche Einnahmeströme im Verkehrssektor verschieben können. Der Wirkpfad verläuft über höhere Kraftstoffpreise, veränderte Fahrzeugwahl und sinkende Einnahmen aus Energie- und Kfz-Steuer bei wachsender E-Mobilität. Mögliche Folge ist, dass Politik und Verwaltung über neue Abgaben- oder Finanzierungsmodelle nachdenken. Belastbar belegt ist hier aber nur die Richtung der Entwicklung; die tatsächliche Netto-Wirkung auf Staat, Haushalte und Emissionen bleibt offen.",
+      "why_relevant": "Die Meldung berührt Kaufentscheidungen, Steueraufkommen und die Umstellung des Verkehrssektors und damit mehrere materielle Zustände zugleich.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Spritpreise und die E-Auto-Zulassungen beeinflussen Alltagskosten, Fahrzeugwahl und mögliche Belastungen für Haushalte."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Mehr E-Autos können den Antriebswechsel beschleunigen; der tatsächliche Klimaeffekt bleibt ohne weitere Daten offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Text berührt die Ausgestaltung künftiger Abgaben und damit steuerpolitische Prioritäten und Verteilungseffekte."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Neuzulassungen E-Autos",
+            "value": "68.930",
+            "unit": "Fahrzeuge",
+            "context": "Reine Elektroautos, die im August neu zugelassen wurden"
+          },
+          {
+            "label": "Anteil an Neuzulassungen",
+            "value": "32",
+            "unit": "Prozent",
+            "context": "Anteil der reinen E-Autos an allen Neuzulassungen"
+          },
+          {
+            "label": "Vorjahresplus",
+            "value": "75",
+            "unit": "Prozent",
+            "context": "Zunahme der E-Auto-Zulassungen gegenüber dem Vorjahr"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "chance",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T19:03:18.000Z",
+      "last_updated": "2026-09-04T10:23:05.308Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-f2fa5659b171e222bce8",
+      "source_published_at": "2026-09-03T19:03:18.000Z",
+      "published_at": "2026-09-04T01:00:39.627Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob sich der Anteil rein elektrischer Neuzulassungen in den Folgemonaten weiter erhöht.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw an allen Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-203198b85d8b6d81",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T01:00:39.627Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob sich die Steuer- und Zulassungsentwicklung in den Folgemonaten fortsetzt",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue Monatswerte zu Spritpreisen und E-Auto-Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-eee5a48af6a85c18",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T10:23:05.308Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:03:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-edd4484465895b46",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
+      "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
+      "source_summary": "France 24 beschreibt die Flucht eines nepalesischen Arbeiters aus einem Tunnel eines Wasserkraftprojekts nach einer schweren Überschwemmung. Der Bericht verbindet diese Schilderung mit der Angabe, dass in Nepal rund 900 Arbeiter in Tunneln an sechs Wasserkraftwerken feststecken sollen.\n\nZugleich nennt die Quelle eine steigende Zahl Vermisster im Zusammenhang mit dem Himalaya-Desaster. Die Zahl wird mit 5,624 angegeben und den zuständigen nepalesischen und chinesischen Behörden zugeschrieben. Weitere Details zur Lage der Eingeschlossenen oder zu Rettungserfolgen bleiben in den gelieferten Textstellen offen.",
+      "summary": "Ein Arbeiter schildert seine Flucht aus einem gefluteten Tunnel in Nepal. Parallel nennt der Bericht weiter rund 900 Eingeschlossene und 5,624 Vermisste.",
+      "detail_summary": "Gesichert aus der gelieferten Quelle ist zunächst die Schilderung eines Arbeiters, der nach einer schweren Überschwemmung aus einem Tunnel eines Wasserkraftprojekts entkam. Der Bericht nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und verweist auf 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster. Das ist für die Nachricht relevant, weil es auf eine fortdauernde Gefährdungslage für viele Beschäftigte und auf eine größere Katastrophe mit möglichem Rettungs- und Koordinationsbedarf hinweist. Der Wirkpfad liegt vor allem in akuter Gefahrenabwehr, Einsatzlogistik und möglichen Verzögerungen oder Ausfällen im Wasserkraftbetrieb. Als mögliche Folge kommen weitere Rettungsaktionen, längere Unterbrechungen und zusätzliche Belastungen für die betroffenen Regionen in Frage. Die Evidenz bleibt jedoch begrenzt, weil im Datensatz nur diese eine journalistische Quelle vorliegt und die genaue Lage der Eingeschlossenen offen bleibt.",
+      "why_relevant": "Die Meldung betrifft eine große Zahl potenziell akut gefährdeter Arbeiter und eine laufende Katastrophenlage mit Rettungs- und Infrastrukturbezug.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Viele Beschäftigte sollen eingeschlossen sein; für die Betroffenen geht es um unmittelbare Sicherheit und Rettung."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Überschwemmung betrifft Wasserkraftanlagen und damit Infrastruktur an einem Umwelt- und Klimarisiko-Knoten."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Direkte demokratische Folgen sind aus der Quelle nicht ersichtlich; relevant wären vor allem Behördenkommunikation und Krisensteuerung."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T17:22:20.000Z",
+      "last_updated": "2026-09-04T10:22:39.505Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-4d4eabf7fc99346b711e",
+      "source_published_at": "2026-09-03T17:22:20.000Z",
+      "published_at": "2026-09-03T23:37:36.842Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Bleibt die Zahl der eingeschlossenen Arbeiter bei den betroffenen Anlagen bei rund 900 oder ändert sie sich durch Rettungen?",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Aktualisierte Angaben zu geretteten, eingeschlossenen oder vermissten Arbeitern",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ec940d1e5c0ccd65",
+          "announced_at": "2026-09-03T17:22:20.000Z",
+          "follow_up_date": "2026-09-10T23:37:36.842Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T17:22:20.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3c6be5c124113650",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-e98162d4d5e7e0ae-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-3c7b107f9933ccd8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-c3795c5de98cc273-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wohnhaus-in-chemnitz-nach-explosion-evakuiert-mieter-unter-verdacht-113650",
+      "title": "Wohnhaus in Chemnitz nach Explosion evakuiert - Mieter unter Verdacht",
+      "source_summary": "Nach einer Explosion in einer Wohnung in Chemnitz ist ein Mehrfamilienhaus vorerst unbewohnbar. Ein 37 Jahre alter Bewohner wurde vorläufig festgenommen; die Polizei teilt mit, sie vermute eine selbst verursachte Explosion. Der Mann habe Verbrennungen erlitten und befinde sich nach einem Krankenhausaufenthalt in Polizeigewahrsam.\n\nDie Feuerwehr berichtet, dass acht Hausbewohner das Gebäude selbst verlassen hätten. Zwei Menschen und zwei Hunde seien aus dem verqualmten Haus gerettet worden, vier Bewohner und ein Hund kamen demnach in ein Hotel. Am Einsatz waren 68 Kräfte und 19 Fahrzeuge beteiligt. Ein Statiker soll die Schäden prüfen, außerdem werde ein Brandursachenermittler tätig. Laut Polizei soll der Tatverdächtige am Freitag einem Haftrichter vorgeführt werden.",
+      "summary": "Nach einer Explosion in Chemnitz ist ein Mehrfamilienhaus vorerst unbewohnbar, ein 37-Jähriger wurde vorläufig festgenommen. Die Polizei prüft eine mögliche Selbstverursachung und kündigt weitere Ermittlungen an.",
+      "detail_summary": "Gesichert ist bislang vor allem der unmittelbare Schaden: Ein Mehrfamilienhaus in Chemnitz wurde nach einer Explosion geräumt und ist vorerst nicht bewohnbar. Ein 37 Jahre alter Bewohner wurde vorläufig festgenommen; die Polizei hält es für möglich, dass er die Explosion selbst verursacht hat. Zusätzlich berichtet die Feuerwehr von einem Brand, von geretteten Bewohnern und einer Unterbringung in einem Hotel. Für die Einordnung ist relevant, dass damit nicht nur ein einzelner Wohnraumschaden, sondern ein vorübergehender Ausfall von Wohnraum und ein erheblicher Rettungseinsatz beschrieben sind. Der Wirkpfad verläuft über Gefährdung von Bewohnern, Gebäudeschäden und laufende Straf- und Ursachenermittlung. Eine mögliche Folge sind weitere strafrechtliche Schritte; auch die Dauer der Unbewohnbarkeit bleibt offen. Die Evidenz stützt sich bisher nur auf eine journalistische Quelle mit Polizei- und Feuerwehrangaben, unabhängige Bestätigung liegt hier noch nicht vor.",
+      "why_relevant": "Die Meldung betrifft die akute Sicherheit von Bewohnern, vorübergehenden Wohnraumausfall und ein mögliches strafrechtliches Ermittlungsverfahren. Damit ist der Schaden nicht nur ein lokales Ereignis, sondern ein konkret beschriebener Eingriff in Wohn- und Schutzfunktionen.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Es geht um Gefährdung, Verletzungen, Evakuierung und vorübergehend unbewohnbaren Wohnraum für mehrere Bewohner."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist aus den vorliegenden Angaben nicht belastbar ableitbar."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein demokratischer Wirkpfad ist derzeit nicht erkennbar; es geht primär um Gefahrenabwehr und Strafverfolgung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Bewohner in Gewahrsam",
+            "value": "37",
+            "unit": "Jahre",
+            "context": "Alter des vorläufig Festgenommenen"
+          },
+          {
+            "label": "Einsatzkräfte",
+            "value": "68",
+            "unit": "Kräfte",
+            "context": "am Löscheinsatz beteiligt"
+          },
+          {
+            "label": "Fahrzeuge",
+            "value": "19",
+            "unit": "Fahrzeuge",
+            "context": "am Löscheinsatz beteiligt"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "beschaeftigte",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T05:50:47.000Z",
+      "last_updated": "2026-09-04T10:22:12.643Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-e36c0e80c02ea72f11c7",
+      "source_published_at": "2026-09-04T08:43:18.000Z",
+      "published_at": "2026-09-04T09:47:23.735Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Tatverdächtige einem Haftrichter vorgeführt wird",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bericht über Vorführung, Haftentscheidung oder Verfahrensstand",
+          "expected_by_evidence_hash": "7084b04dc7f9a877497dbd411e5939594552730523f3df6399a68a942632da46",
+          "followup_id": "followup-67de102d7468f78f",
+          "announced_at": "2026-09-04T08:43:18.000Z",
+          "follow_up_date": "2026-09-11T09:47:23.735Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Vorführung des Tatverdächtigen beim Haftrichter",
+          "source_id": "mdr-nachrichten",
+          "expected_by": "2026-09-05",
+          "measurable_indicator": "Meldung über Vorführung, Haftentscheidung oder neue richterliche Maßnahme",
+          "expected_by_evidence_hash": "51b24f1c3420462ba11f2c5a3df70788d32cfa16fb5f9c097f20e465dc06c015",
+          "followup_id": "followup-556fded2c9f12ac2",
+          "announced_at": "2026-09-04T08:43:18.000Z",
+          "follow_up_date": "2026-09-05T10:22:12.643Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/news-haus-evakuierung,explosion-polizei-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:43:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f3d585eac14dec76",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0167d295b29ef87f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0666df4bbd59b99c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-4f5215c9936e9827-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+      "source_summary": "Die taz berichtet, dass sie nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Nach dem Bericht lässt sich die Echtheit des Schreibens nicht zweifelsfrei klären. In dem Text soll sich ein Einzeltäter zu der Tat bekennen und die verwendeten selbstgebauten Raketen detailliert beschreiben. Außerdem soll das Schreiben Angaben zum vermeintlichen Absender enthalten; die Redaktion berichtet, sie habe an der angegebenen Adresse zunächst nur ein anderes Familienmitglied angetroffen.\n\nrbb24 meldet, die Polizei habe nach der Sabotage am Stromnetz bei Jänschwalde ein Bekennerschreiben erhalten und prüfe dessen Authentizität. Zugleich wird berichtet, dass die Ermittlungen unter anderem wegen der Bildung einer terroristischen Vereinigung laufen. Beide Berichte halten offen, ob das Schreiben echt ist und ob die darin genannten weiteren Orte tatsächlich angegriffen wurden.",
+      "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
+      "detail_summary": "Gesichert ist, dass nach dem Angriff auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben eingegangen ist und seine Echtheit bislang nicht bestätigt ist. rbb24 berichtet zugleich, die Polizei ermittle nach der Sabotage auch wegen der Bildung einer terroristischen Vereinigung. Die taz nennt im Schreiben detaillierte Beschreibungen selbstgebauter Raketen und verweist auf weitere angeblich betroffene Orte in Brandenburg und Sachsen. Für die Nachricht ist das relevant, weil sich der Vorgang nicht auf einen bloßen Einzelfall reduziert, sondern auf mögliche weitere Taten und auf ein Verfahren mit Bezug zu kritischer Infrastruktur. Der Wirkpfad liegt vor allem in der Lageeinschätzung von Sicherheitsbehörden, möglichen Schutzmaßnahmen und der Frage, ob sich ein koordiniertes Muster bestätigt. Offen bleibt aber, ob das Schreiben echt ist und ob die genannten weiteren Orte tatsächlich betroffen waren; deshalb bleibt die Zurechnung der behaupteten Tatserie vorerst unsicher.",
+      "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und mögliche weitere Angriffe; davon hängen Sicherheitslage, Ermittlungsrichtung und Schutzmaßnahmen ab.",
+      "topic": [
+        "Energie",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Störungen der Stromversorgung und Sicherheitsfolgen betreffen viele Menschen direkt oder indirekt."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimawirkpfad."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der mögliche Terrorismusbezug und staatliche Schutzreaktionen berühren Sicherheitsordnung und demokratische Kontrolle."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T16:21:00.000Z",
+      "last_updated": "2026-09-04T10:21:35.407Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-f0b1482b8ce86ec1fab2",
+      "source_published_at": "2026-09-03T16:21:00.000Z",
+      "published_at": "2026-09-04T02:07:51.145Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ],
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizei oder Ermittler bewerten das Schreiben eindeutig als echt, falsch oder nicht belegbar.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-82c1d1ebd142a53a",
+          "announced_at": "2026-09-03T16:21:00.000Z",
+          "follow_up_date": "2026-09-11T02:07:51.145Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6f87b9521d465246",
+          "announced_at": "2026-09-03T18:57:30.000Z",
+          "follow_up_date": "2026-09-10T22:37:01.821Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-57bcbc8dea706471"
+        },
+        {
+          "claim": "Ob die Polizei die Authentizität des Bekennerschreibens bestätigen kann",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Polizeimitteilung zur Echtheitsprüfung oder Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2321322fdee145a1",
+          "announced_at": "2026-09-03T18:57:30.000Z",
+          "follow_up_date": "2026-09-11T10:21:35.407Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T18:57:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7b385f58748f3d32",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-954a5ccec049ce21-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-c404bd8d02df1dba-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-4528cb0e4dd565cc-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+      "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+      "source_summary": "Die rbb24-Meldung berichtet unter Berufung auf ARD-Informationen, dass Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten. Nach dem Bericht bekennt sich darin ein mutmaßlicher Alleintäter zu Anschlägen in Jänschwalde und in Bergheim bei Köln, und die Fahndung läuft weiter.\n\nZudem heißt es, der Polizei in Nordrhein-Westfalen und Brandenburg lägen inzwischen zwei Bekennerschreiben derselben Person vor. Die Schreiben seien handschriftlich verfasst, mit Namen unterzeichnet und enthielten nach ARD-Terrorismusexperte Michael Götschenberg Täterwissen. Der Bericht nennt außerdem Hinweise, wonach die Person mit einem alten Bundeswehrfahrzeug unterwegs sei und offenbar weitere Tatorte anfahre.",
+      "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+      "detail_summary": "Gesichert nach der vorliegenden Meldung ist vor allem, dass die Polizei die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch hält. Der Bericht ordnet die Schreiben einem mutmaßlichen Alleintäter zu, nennt Jänschwalde und Bergheim bei Köln als Tatorte und sagt, die Fahndung laufe weiter. Für die Einordnung ist das relevant, weil sich damit die Informationslage von einer bloßen Sachbeschädigungs- oder Sabotagespur hin zu einer personalisierten Ermittlungs- und Bedrohungslage verschiebt. Der Wirkpfad liegt vor allem in veränderten Ermittlungsprioritäten, Schutzmaßnahmen an kritischer Infrastruktur und möglicher öffentlicher Risikowahrnehmung. Mögliche Folgen sind zusätzliche Sicherung, weitere Fahndungsmaßnahmen und eine belastendere Lage für Netzbetreiber; ob daraus breitere Systemeffekte entstehen, bleibt offen. Tragfähige unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor, daher bleibt die Zuschreibung vorläufig.",
+      "why_relevant": "Die Meldung verändert die Lagebewertung zu Sabotage an kritischer Energieinfrastruktur, weil sie Authentizität, mögliche Täterschaft und laufende Fahndung zusammenführt.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Sicherheit, Versorgungsschutz und Ermittlungsressourcen; die Lage kann Schutzmaßnahmen und öffentliche Wahrnehmung verändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad wird in der Quelle nicht belastbar beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung berührt den Schutz kritischer Infrastruktur und die Informationslage der Öffentlichkeit, ohne dass bereits eine politische Entscheidung vorliegt."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T10:06:18.000Z",
+      "last_updated": "2026-09-04T10:09:13.371Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-6a9b508f2d9dfc0503cf",
+      "source_published_at": "2026-09-04T10:06:18.000Z",
+      "published_at": "2026-09-04T10:09:13.371Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:06:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-215068875954a78e",
       "title_image": {
@@ -184,126 +732,6 @@
           "url": "https://www.france24.com/en/video/20260904-iom-ramps-up-emergency-aid-in-lake-chad-as-thousands-flee-boko-haram",
           "source_type": "media_rss",
           "published_at": "2026-09-04T09:40:30.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-3c6be5c124113650",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-6fa29e8e11184d8b-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-6fa29e8e11184d8b-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-6fa29e8e11184d8b-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "wohnhaus-in-chemnitz-nach-explosion-evakuiert-mieter-unter-verdacht-113650",
-      "title": "Wohnhaus in Chemnitz nach Explosion evakuiert - Mieter unter Verdacht",
-      "source_summary": "Nach einer Explosion in einer Wohnung in Chemnitz ist ein Mietshaus vorerst unbewohnbar. Der betroffene 37 Jahre alte Bewohner wurde vorläufig festgenommen. Die Polizei teilt mit, sie vermute, dass der Wohnungsmieter die Explosion selbst verursacht haben könnte; der Mann habe Verbrennungen erlitten und sei nach einem kurzen Krankenhausaufenthalt in Polizeigewahrsam. \n\nLaut Feuerwehr verließen acht Hausbewohner das Gebäude im Lutherviertel selbst. Zwei Menschen und zwei Hunde wurden aus dem verqualmten Haus gerettet, vier Bewohner und ein Hund kamen in ein Hotel. Am Löscheinsatz waren 68 Einsatzkräfte und 19 Fahrzeuge beteiligt; ein Statiker und ein Brandursachenermittler sollen das Haus und die Ursache prüfen.",
-      "summary": "Nach einer Explosion in einem Chemnitzer Mietshaus ist das Gebäude vorerst unbewohnbar und wurde evakuiert. Ein 37-Jähriger wurde vorläufig festgenommen, die Polizei prüft eine mögliche Selbstverursachung.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Meldung vor allem der Einsatz: In Chemnitz wurde nach einer Explosion in einer Wohnung ein Mietshaus geräumt und vorerst für unbewohnbar erklärt. Zudem nennt die Quelle eine vorläufige Festnahme eines 37 Jahre alten Bewohners. Für die weitere Entwicklung ist wichtig, dass Polizei und Feuerwehr nicht nur räumliche Schäden, sondern auch eine mögliche Brand- und Explosionsursache prüfen. Daraus ergibt sich ein Wirkpfad über Wohnraumnutzung, kurzfristige Unterbringung und mögliche strafrechtliche Folgen. Mögliche Folgen sind längere Unbewohnbarkeit, weitere Ermittlungen und Kosten für Sicherung oder Instandsetzung. Belastbar offen bleibt jedoch, ob die Verdachtsannahme zutrifft und wie schwer die Schäden tatsächlich sind; dafür liegt bislang nur eine einzelne journalistische Quelle vor.",
-      "why_relevant": "Die Meldung betrifft kurzfristig Wohnraum, Sicherheit, Rettungseinsatz und mögliche strafrechtliche Konsequenzen in einem bewohnten Haus. Damit sind Zahl und Art der Betroffenen sowie die Intensität des Vorfalls materiell genug für eine Erstmeldung.",
-      "topic": [
-        "Gesundheit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Bewohner, Einsatzkräfte und vorläufige Unterbringung; zudem droht längere Unbewohnbarkeit."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein unmittelbarer Umweltbezug ist belegt; mögliche Brandfolgen bleiben offen."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Es geht vor allem um Einsatz und Ermittlungen, nicht um demokratische Verfahren oder Regeln."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Bewohner",
-            "value": "37",
-            "unit": "Jahre",
-            "context": "Alter des vorläufig festgenommenen Bewohners"
-          },
-          {
-            "label": "Einsatzkräfte",
-            "value": "68",
-            "unit": "Personen",
-            "context": "Beteiligte Kräfte am Löscheinsatz"
-          },
-          {
-            "label": "Fahrzeuge",
-            "value": "19",
-            "unit": "Fahrzeuge",
-            "context": "Eingesetzte Fahrzeuge beim Löscheinsatz"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "beschaeftigte",
-          "staat",
-          "kommunen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-04T05:50:47.000Z",
-      "last_updated": "2026-09-04T09:47:23.735Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-e36c0e80c02ea72f11c7",
-      "source_published_at": "2026-09-04T08:43:18.000Z",
-      "published_at": "2026-09-04T09:47:23.735Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob der Tatverdächtige einem Haftrichter vorgeführt wird",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Bericht über Vorführung, Haftentscheidung oder Verfahrensstand",
-          "expected_by_evidence_hash": "7084b04dc7f9a877497dbd411e5939594552730523f3df6399a68a942632da46",
-          "followup_id": "followup-67de102d7468f78f",
-          "announced_at": "2026-09-04T08:43:18.000Z",
-          "follow_up_date": "2026-09-11T09:47:23.735Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/news-haus-evakuierung,explosion-polizei-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T08:43:18.000Z",
           "primary_source": false
         }
       ]
@@ -3270,20 +3698,20 @@
     {
       "story_id": "wt-9de543ac63864ad7",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-2bb1711a6732f873-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-18f5e317366fe14d-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-65b2705f1af771e6-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3376,20 +3804,20 @@
     {
       "story_id": "wt-d80fd849c477e2ad",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-c9df3da8148c97ca-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-a60458508d9a6729-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-3eeb5b2de2922414-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3510,17 +3938,17 @@
         "mode": "editorial",
         "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-b440219bbbb61eec-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-e46aae3db6197635-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-b440219bbbb61eec-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-bcaa1257892d137b-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-b440219bbbb61eec-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-ed9d6b837154562e-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3622,126 +4050,6 @@
           "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:31:09.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-f3d585eac14dec76",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-      "source_summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde berichtet die taz, dass dort ein Bekennerschreiben eingegangen sei. Das Schreiben soll nach einem Poststempel in Nordrhein-Westfalen abgeschickt worden sein und einen Einzeltäter beschreiben, der selbstgebaute Raketen eingesetzt habe.\n\nDie Redaktion schreibt, die Authentizität lasse sich nicht zweifelsfrei belegen. Eine Sprecherin des Brandenburger Polizeipräsidiums sagte laut Bericht, der Polizei sei ein Bekennerschreiben zu der Tat bisher nicht bekannt. Im Schreiben würden außerdem weitere Orte in Brandenburg und einer in Sachsen genannt, an denen angeblich ebenfalls Hochspannungsleitungen attackiert worden seien.",
-      "summary": "Ein Bekennerschreiben zum Anschlag auf das Umspannwerk Jänschwalde ist bei der taz eingegangen. Seine Echtheit ist nach dem Bericht offen.",
-      "detail_summary": "Gesichert ist zunächst nur, dass die taz nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Der Bericht nennt darin einen angeblichen Einzeltäter aus Nordrhein-Westfalen und beschreibt selbstgebaute Raketen sowie weitere behauptete Angriffe an anderen Orten. Zugleich hält die Redaktion fest, dass sich die Authentizität des Schreibens nicht zweifelsfrei klären lasse. Die Brandenburger Polizei sagte laut taz außerdem, ihr sei ein solches Bekennerschreiben bisher nicht bekannt. Für die öffentliche Einordnung ist das relevant, weil es um einen möglichen Angriff auf kritische Infrastruktur und um die Frage geht, ob das Schreiben Ermittlungen, Aufmerksamkeit und Schutzmaßnahmen beeinflusst. Die Wirkung bleibt vorerst potenziell: belastbar ist noch nicht, ob das Schreiben echt ist oder nur eine falsche Zuschreibung darstellt.",
-      "why_relevant": "Mögliche Sabotage an kritischer Infrastruktur und ein dazugehöriges Bekennerschreiben betreffen Sicherheitslage, Ermittlungen und Schutz kritischer Netze.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Möglicher Angriff auf Strominfrastruktur kann Versorgungsstörungen, Angst und Ermittlungsfolgen für viele Menschen auslösen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umwelt- oder Klimawirkpfad ist aus der vorliegenden Meldung nicht belastbar ableitbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Frage berührt staatliche Sicherheits- und Korrekturfähigkeit bei Angriffen auf kritische Infrastruktur."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Ort des Anschlags",
-            "value": "Jänschwalde",
-            "unit": "Ort",
-            "context": "genannter Tatort des Umspannwerks"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T16:21:00.000Z",
-      "last_updated": "2026-09-04T02:07:51.145Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-f0b1482b8ce86ec1fab2",
-      "source_published_at": "2026-09-03T16:21:00.000Z",
-      "published_at": "2026-09-04T02:07:51.145Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens.",
-          "source_id": "taz-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Polizei oder Ermittler bewerten das Schreiben eindeutig als echt, falsch oder nicht belegbar.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-82c1d1ebd142a53a",
-          "announced_at": "2026-09-03T16:21:00.000Z",
-          "follow_up_date": "2026-09-11T02:07:51.145Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6f87b9521d465246",
-          "announced_at": "2026-09-03T18:57:30.000Z",
-          "follow_up_date": "2026-09-10T22:37:01.821Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-57bcbc8dea706471"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:21:00.000Z",
           "primary_source": false
         }
       ]
@@ -3969,20 +4277,20 @@
     {
       "story_id": "wt-872323e750684aa1",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-80c4559e72ea0879-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-c7b156a7a8a07414-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-58f9d6f04aa33250-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4051,125 +4359,6 @@
           "url": "https://taz.de/Demografie-und-Familienplanung/!6209487",
           "source_type": "media_rss",
           "published_at": "2026-09-02T16:48:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-31724816547fc87d",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
-      "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
-      "source_summary": "Die WDR-Quelle meldet Rekordpreise an der Zapfsäule und verbindet sie mit der Frage, ab wann sich ein Elektroauto lohnt. Genannt werden Daten zum August: Super E10 sei im Monatsdurchschnitt so teuer gewesen wie nie zuvor, Diesel habe im Schnitt 2,223 Euro je Liter gekostet und damit mehr als E10 mit 2,145 Euro.\n\nZugleich berichtet der Beitrag von einem starken Anstieg bei Elektroautos: Fast jedes dritte im August neu zugelassene Auto fahre rein elektrisch, 68.930 Fahrzeuge seien neu auf die Straße gekommen. Der Text verweist außerdem auf staatliche Förderung, die Verlängerung der Kfz-Steuerbefreiung und darauf, dass der wachsende Anteil von E-Autos langfristig die Steuereinnahmen des Staates verändern könne.",
-      "summary": "Die WDR-Quelle beschreibt Rekordpreise für Sprit und einen starken Anstieg bei E-Auto-Neuzulassungen. Sie ordnet das als mögliche Verschiebung bei Kaufentscheidungen und Staatseinnahmen ein.",
-      "detail_summary": "Gesichert berichtet die Quelle von Rekordpreisen an der Zapfsäule und von einem starken Zuwachs bei rein elektrischen Neuzulassungen im August. Das ist relevant, weil sich damit kurzfristig die Kostenabwägung für Autokäufe und mittelfristig die Zusammensetzung des Fahrzeugbestands verschieben kann. Der mögliche Wirkpfad verläuft über Kaufentscheidungen, Fahrzeugmix und später über veränderte Einnahmen aus Kfz-, Energie- und Mehrwertsteuer. Als mögliche Folge nennt der Beitrag eine dauerhafte Verschiebung zugunsten von E-Autos sowie Debatten über neue Finanzierungsmodelle wie Ladestromsteuer oder fahrleistungsabhängige Modelle. Offen bleibt, wie stabil die Preisrelationen sind und ob daraus tatsächlich ein breiterer Strukturwandel entsteht. Die Evidenzlage ist hier zunächst auf eine journalistische Sekundärquelle begrenzt.",
-      "why_relevant": "Die Meldung verbindet zwei materiell relevante Zustandsänderungen: sehr hohe Kraftstoffpreise und eine spürbare Verschiebung im Neuzulassungsmix hin zu Elektroautos. Daraus ergeben sich potenziell Folgen für Haushaltskosten, Marktanteile, Steuereinnahmen und künftige Verkehrsfinanzierung.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Für Haushalte und Beschäftigte im Verkehrsumfeld kann die Preisrelation zwischen Sprit und E-Auto die Kauf- und Nutzungskosten beeinflussen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Ein höherer Anteil rein elektrischer Neuzulassungen kann den Antriebsmix verschieben; die konkrete Umweltwirkung bleibt ex ante aber offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Quelle thematisiert mögliche Änderungen bei staatlichen Einnahmen und künftigen Abgabemodellen, also einen relevanten Ordnungs- und Verteilungsaspekt."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "E10 im Monatsdurchschnitt",
-            "value": "2,145",
-            "unit": "Euro je Liter",
-            "context": "Monatsdurchschnitt für Super E10 im August"
-          },
-          {
-            "label": "Diesel im August",
-            "value": "2,223",
-            "unit": "Euro je Liter",
-            "context": "Durchschnittspreis für Diesel im August"
-          },
-          {
-            "label": "rein elektrisch",
-            "value": "68.930",
-            "unit": "Neuzulassungen",
-            "context": "Zahl neuer rein elektrischer Pkw im August"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "unternehmen",
-          "staat"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T19:03:18.000Z",
-      "last_updated": "2026-09-04T01:00:39.627Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-f2fa5659b171e222bce8",
-      "source_published_at": "2026-09-03T19:03:18.000Z",
-      "published_at": "2026-09-04T01:00:39.627Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob sich der Anteil rein elektrischer Neuzulassungen in den Folgemonaten weiter erhöht.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw an allen Neuzulassungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-203198b85d8b6d81",
-          "announced_at": "2026-09-03T19:03:18.000Z",
-          "follow_up_date": "2026-09-11T01:00:39.627Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:03:18.000Z",
           "primary_source": false
         }
       ]
@@ -4272,135 +4461,22 @@
       ]
     },
     {
-      "story_id": "wt-edd4484465895b46",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
-      "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
-      "source_summary": "France 24 berichtet über einen nepalesischen Arbeiter, der seine Flucht aus einem Tunnel eines Wasserkraftprojekts nach der schweren Flut schildert. Der Bericht nennt zugleich, dass in Tunneln von sechs Wasserkraftwerken in Nepal rund 900 Arbeiter feststecken sollen.\n\nAußerdem heißt es, die Zahl der Vermissten in der Himalaya-Katastrophe sei am Donnerstag auf 5,624 gestiegen; dies werde nepalesischen und chinesischen Behörden zugeschrieben. Weitere unabhängige Bestätigungen oder ein genauer Rettungsstand werden in der Quelle nicht genannt.",
-      "summary": "France 24 schildert die Flucht eines Arbeiters aus einem gefluteten Tunnel und nennt zugleich rund 900 Eingeschlossene an sechs Wasserkraftwerken. Die Zahl der Vermissten wird mit 5,624 angegeben.",
-      "detail_summary": "Gesichert aus der vorliegenden Quelle ist vor allem der Bericht über einen Arbeiter, der aus einem von der Flut getroffenen Tunnel entkommen sein soll, sowie die Angabe, dass an sechs Wasserkraftwerken rund 900 Menschen in Tunneln feststecken. Hinzu kommt die Meldung, die Zahl der Vermissten in der Himalaya-Katastrophe sei auf 5,624 gestiegen. Das ist für Menschenschutz und Krisenlage materiell relevant, weil es um unmittelbar gefährdete Beschäftigte, laufende Rettung und mögliche Folgeschäden in einer kritischen Infrastruktur geht. Der Wirkpfad reicht von der Flut über die Unterbrechung des Zugangs zu den Tunneln bis zu Rettungs- und Bergungsmaßnahmen. Mögliche Folgen sind weitere Rettungen, Verzögerungen im Betrieb und zusätzliche Belastungen für lokale Notfallstrukturen. Die Evidenz bleibt jedoch begrenzt, weil nur eine journalistische Quelle vorliegt und keine unabhängige Bestätigung im Datensatz enthalten ist.",
-      "why_relevant": "Der Vorgang betrifft potenziell hunderte Beschäftigte in einer akuten Gefahrenlage und damit unmittelbar Schutz, Rettung und Infrastrukturstabilität.",
-      "topic": [
-        "Arbeit",
-        "Gesundheit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Es geht um unmittelbar gefährdete Arbeiter, mögliche Rettungseinsätze und den Schutz vor weiteren Schäden."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Der Bericht betrifft eine Flutkatastrophe und Wasserkraft-Infrastruktur, aber keine belastbaren Umweltfolgen über das Ereignis hinaus."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Keine direkte demokratische oder institutionelle Entscheidungsänderung ist aus der Quelle ersichtlich."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Eingeschlossene Arbeiter",
-            "value": "900",
-            "unit": "Personen",
-            "context": "In Tunneln von sechs Wasserkraftwerken sollen sie feststecken."
-          },
-          {
-            "label": "Vermisste",
-            "value": "5,624",
-            "unit": "Personen",
-            "context": "So wird die Zahl der Vermissten am Donnerstag angegeben."
-          }
-        ],
-        "affected_groups": [
-          "beschaeftigte",
-          "unternehmen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "gemischt",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-03T17:22:20.000Z",
-      "last_updated": "2026-09-03T23:37:36.842Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-4d4eabf7fc99346b711e",
-      "source_published_at": "2026-09-03T17:22:20.000Z",
-      "published_at": "2026-09-03T23:37:36.842Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "france24-en"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Bleibt die Zahl der eingeschlossenen Arbeiter bei den betroffenen Anlagen bei rund 900 oder ändert sie sich durch Rettungen?",
-          "source_id": "france24-en",
-          "expected_by": null,
-          "measurable_indicator": "Aktualisierte Angaben zu geretteten, eingeschlossenen oder vermissten Arbeitern",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-ec940d1e5c0ccd65",
-          "announced_at": "2026-09-03T17:22:20.000Z",
-          "follow_up_date": "2026-09-10T23:37:36.842Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "France 24",
-          "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T17:22:20.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-e01001c00cf12041",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-5ed0e808069d84fa-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-fee23ea4fd606a4e-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-cfcbda26be19364a-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4474,20 +4550,20 @@
     {
       "story_id": "wt-7ae0b9f22404b684",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4571,20 +4647,20 @@
     {
       "story_id": "wt-a77b5d9b2935de2a",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-2cb4e642bb73509c-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-90c3b9015aad636e-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-73a0e83a0549bf13-square.png",
           "width": 1080,
           "height": 1080
         }

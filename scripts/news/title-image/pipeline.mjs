@@ -12,7 +12,7 @@ const REPO = "sustynats/wirkungsoekonomie.de";
 const ROOT = path.resolve(import.meta.dirname, "../../..");
 const FALLBACK = "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png";
 const assetUrl = (tag, name) => `https://github.com/${REPO}/releases/download/${tag}/${name}`;
-const TERMINAL = new Set(["HIGGSFIELD_DISABLED", "NO_SAFE_SYMBOLIC_MOTIF", "HIGGSFIELD_PREVIOUS_JOB_FAILED", "HIGGSFIELD_SUBMISSION_UNCERTAIN", "IMAGE_CONTAINS_TEXT"]);
+const TERMINAL = new Set(["HIGGSFIELD_DISABLED", "NO_SAFE_SYMBOLIC_MOTIF", "HIGGSFIELD_PREVIOUS_JOB_FAILED", "HIGGSFIELD_RETRY_EXHAUSTED", "HIGGSFIELD_SUBMISSION_UNCERTAIN", "IMAGE_CONTAINS_TEXT"]);
 function retryFields(reason, now) {
   if (!reason || TERMINAL.has(reason)) return {};
   return { retry_after: new Date(Date.parse(now()) + (reason === "HIGGSFIELD_CREDIT_LIMIT" ? 360 : 15) * 60000).toISOString() };
@@ -97,7 +97,12 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
       if (result.title_image?.mode === "editorial" && result.title_image.source_visual?.prompt_version === refresh && ["og", "wide", "square"].every(key => publicTitleImage(result.title_image)?.[key])) return result;
       const reason = result.title_image?.fallback_reason || "EDITORIAL_REFRESH_NOT_READY";
       const retry = retryFields(reason, now);
-      return { title_image: { ...previous, refresh_failure: reason, ...(retry.retry_after ? { refresh_prompt_version: refresh, ...retry } : {}) }, report: { ...result.report, status: "preserved", reason } };
+      // A failed paid motif must not block a successfully rendered free card
+      // upgrade. Existing editorial pictures are still preserved unchanged.
+      const fallback = previous.mode === "impact_card" && result.title_image?.mode === "impact_card"
+        && result.title_image.template_version === C.template_version
+        && ["og", "wide", "square"].every(key => publicTitleImage(result.title_image)?.[key]) ? result.title_image : previous;
+      return { title_image: { ...fallback, refresh_failure: reason, ...(retry.retry_after ? { refresh_prompt_version: refresh, ...retry } : {}) }, report: { ...result.report, status: "preserved", reason } };
     }
     if (dryRun) return { story_id: story.story_id, ...decision, prompt: buildEditorialImagePrompt(story), asset_directory: `source-assets/wirkungsticker/${story.story_id}/`, would_generate: decision.mode === "editorial" && !story.title_image?.source_visual };
     const started = Date.now();
@@ -133,7 +138,6 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
         const { retry_after: _oldRetry, ...stable } = previous;
         return { title_image: { ...stable, ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), ...retryFields(fallbackReason, now) }, report: { ...log, mode, status: "reused", ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), duration_ms: Date.now() - started } };
       }
-      const prefix = `${id}-${fingerprint.slice(0,16)}`;
       const tag = `wirkungsticker-media-${now().slice(0,7)}`;
       const files = [];
       if (original && !source?.url) {
@@ -159,7 +163,9 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
         }
         const info = inspectImage(png.png, { minWidth: dimensions.width });
         if (info.width !== dimensions.width || info.height !== dimensions.height) throw imageError("RASTER_DIMENSIONS_INVALID");
-        const file = path.join(directory, `${prefix}-${size}.png`);
+        // Renderers can produce different bytes for the same semantic input.
+        // Address the immutable publication by its actual bytes, not the input.
+        const file = path.join(directory, `${id}-${info.sha256.slice(0,16)}-${size}.png`);
         fs.writeFileSync(file, png.png); files.push(file);
         outputs[size] = { url: assetUrl(tag, path.basename(file)), width: dimensions.width, height: dimensions.height, sha256: digest(png.png) };
       }

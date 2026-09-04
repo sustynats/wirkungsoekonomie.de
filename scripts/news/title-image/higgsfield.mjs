@@ -132,12 +132,28 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
       fs.writeFileSync(lock, String(process.pid));
       active = true;
       try {
+        const failureCode = () => record.status === "cancelled" ? "HIGGSFIELD_PREVIOUS_JOB_FAILED"
+          : (record.previous_attempts || []).length >= 1 ? "HIGGSFIELD_RETRY_EXHAUSTED" : "HIGGSFIELD_JOB_RETRY_WAIT";
+        const noteFailure = (status) => {
+          record = { ...record, status, failed_at: record.failed_at || now() };
+          atomicJson(journal, record);
+          throw imageError(failureCode());
+        };
         if (record?.status === "submitted_unknown") {
           const recovered = await recoverSubmittedJob(run, record);
           record.job_id = recovered.id; record.status = recovered.status;
           atomicJson(journal, record);
         }
-        if (["failed", "cancelled", "error"].includes(record?.status)) throw imageError("HIGGSFIELD_PREVIOUS_JOB_FAILED");
+        if (["failed", "cancelled", "error"].includes(record?.status)) {
+          if (record.status === "cancelled" || (record.previous_attempts || []).length >= 1) throw imageError(failureCode());
+          if (!record.failed_at) noteFailure(record.status);
+          if (!(Date.parse(now()) - Date.parse(record.failed_at) >= 60_000)) throw imageError("HIGGSFIELD_JOB_RETRY_WAIT");
+          // Only a confirmed terminal provider failure permits one replacement.
+          // Unknown submissions, cancellation and visual rejection never do.
+          const { previous_attempts = [], ...failed } = record;
+          record = { status: "retry_ready", previous_attempts: [...previous_attempts, failed] };
+          atomicJson(journal, record);
+        }
         const ledgerPath = path.join(directory, "credits.json");
         const ledger = fs.existsSync(ledgerPath) ? JSON.parse(fs.readFileSync(ledgerPath, "utf8")) : { reservations: [] };
         if (!record?.job_id) {
@@ -148,7 +164,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
           const args = [C.model, "--prompt", prompt, "--aspect_ratio", C.aspect_ratio, "--resolution", C.resolution];
           const cost = parseCliJson(await run(["generate", "cost", ...args, "--json"]));
           if (!Number.isFinite(cost.credits) || cost.credits <= 0 || cost.credits > C.max_credits_per_image) throw imageError("HIGGSFIELD_COST_CHANGED");
-          record = { status: "submitted_unknown", provider: "higgsfield", model: C.model, cli_version: C.cli_version, prompt_version: C.prompt_version, prompt_sha256: digest(prompt), generated_at: now(), reserved_credits: cost.credits };
+          record = { status: "submitted_unknown", provider: "higgsfield", model: C.model, cli_version: C.cli_version, prompt_version: C.prompt_version, prompt_sha256: digest(prompt), generated_at: now(), reserved_credits: cost.credits, previous_attempts: record?.previous_attempts || [] };
           atomicJson(journal, record);
           ledger.reservations.push({ story_id: id, at: now(), credits: cost.credits });
           atomicJson(ledgerPath, ledger);
@@ -165,8 +181,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
         // the terminal state first so such jobs do not remain queued forever.
         const current = generationResult(parseCliJson(await run(["generate", "get", record.job_id, "--json"])));
         if (["failed", "error", "cancelled"].includes(current.status)) {
-          record.status = current.status; atomicJson(journal, record);
-          throw imageError("HIGGSFIELD_PREVIOUS_JOB_FAILED");
+          noteFailure(current.status);
         }
         if (current.status === "completed" && current.url) result = current;
         for (let attempt = 0; attempt < 2; attempt++) {
@@ -174,7 +189,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
           try {
             result = generationResult(parseCliJson(await run(["generate", "wait", record.job_id, "--timeout", "55s", "--interval", "5s", "--quiet", "--json"], { timeout: 60000 })));
             if (result.status === "completed" && result.url) break;
-            if (["failed","error","cancelled"].includes(result.status)) { record.status = result.status; atomicJson(journal, record); throw imageError("HIGGSFIELD_GENERATION_FAILED"); }
+            if (["failed","error","cancelled"].includes(result.status)) noteFailure(result.status);
           } catch (error) {
             if (error.code !== "HIGGSFIELD_TIMEOUT" || attempt === 1) throw error;
           }

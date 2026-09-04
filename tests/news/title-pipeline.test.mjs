@@ -16,13 +16,30 @@ import { setGeneratedDocument, cleanupChromeProfile } from "../../scripts/news/t
 
 const STORY = { story_id: "wt-1234567890abcdef", title: "Neue Netzinfrastruktur", source_summary: "Die Netzagentur berichtet über ein neues Verfahren für den Ausbau der Stromnetze. Die vorgesehene Regelung betrifft die Planung und Genehmigung zusätzlicher Stromleitungen.", topic: ["Energie"], claims: [], analysis: { status: "Entwurf", analysis_type: "ex_ante", human: { relevance: "mittel" } } };
 const MODEL = { type: "image", job_type: C.model, display_name: C.model_name, params: [{ name: "aspect_ratio", enum: ["16:9"] }, { name: "resolution", enum: ["2k"] }] };
-function png(width = 1200, height = 675) {
+function png(width = 1200, height = 675, shade = 0) {
   const chunk = (kind, bytes) => { const size = Buffer.alloc(4); size.writeUInt32BE(bytes.length); return Buffer.concat([size, Buffer.from(kind), bytes, Buffer.alloc(4)]); };
   const header = Buffer.alloc(13); header.writeUInt32BE(width); header.writeUInt32BE(height,4); header[8] = 8; header[9] = 6;
-  return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]), chunk("IHDR", header), chunk("IDAT", deflateSync(Buffer.alloc((width * 4 + 1) * height))), chunk("IEND", Buffer.alloc(0))]);
+  return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]), chunk("IHDR", header), chunk("IDAT", deflateSync(Buffer.alloc((width * 4 + 1) * height, shade))), chunk("IEND", Buffer.alloc(0))]);
 }
 function temp(t) { const dir = fs.mkdtempSync(path.join(os.tmpdir(), "woek-title-test-")); t.after(() => fs.rmSync(dir,{recursive:true,force:true})); return dir; }
 const asset = () => { const bytes = png(); return { ...inspectImage(bytes), bytes, model: C.model, prompt_version: C.prompt_version, generated_at: "2026-09-04T00:00:00Z" }; };
+test("immutable title assets use rendered byte hashes even when semantic input is unchanged", async t => {
+  const root = temp(t); const saved = new Map(); let shade = 0;
+  const prepare = createTitleImagePipeline({ root, allowGeneration: false,
+    raster: async (_svg, { width, height }) => ({ png: png(width, height, shade) }),
+    publish: async files => { for (const file of files) {
+      const name = path.basename(file), hash = digest(fs.readFileSync(file));
+      assert.ok(name.includes(hash.slice(0, 16)));
+      if (saved.has(name)) assert.equal(saved.get(name), hash);
+      saved.set(name, hash);
+    } },
+  });
+  const first = await prepare(STORY, { cardsOnly: true }); shade = 1;
+  const second = await prepare(STORY, { cardsOnly: true });
+  assert.equal(first.title_image.fingerprint, second.title_image.fingerprint);
+  assert.notEqual(first.title_image.wide.url, second.title_image.wide.url);
+  assert.equal(saved.size, 6);
+});
 function mockRun(calls, overrides = {}) {
   return async (args) => {
     calls.push(args);
@@ -125,11 +142,35 @@ test("already paid job can finish even when remaining account balance is empty",
   assert.ok((await provider.generate(STORY)).bytes);
   assert.equal(calls.some(a => a[1] === "create"), false);
 });
-test("terminal failed provider job is persisted and never waits or pays again",async(t)=>{
-  const calls=[],directory=temp(t),provider=createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls,{"generate get":()=>'{"id":"job-123456","status":"failed"}'})});
-  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
-  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
-  assert.equal(calls.filter(a=>a[1]==="create").length,1);assert.equal(calls.filter(a=>a[1]==="wait").length,0);
+test("confirmed failed provider job permits one delayed replacement and then stops durably",async(t)=>{
+  let clock="2026-09-04T09:00:00Z";
+  const calls=[],directory=temp(t),run=mockRun(calls,{"generate get":()=>'{"id":"job-123456","status":"failed"}'});
+  const options={directory,enabled:true,run,now:()=>clock};
+  let provider=createHiggsfieldAdapter(options);
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_JOB_RETRY_WAIT"});
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_JOB_RETRY_WAIT"});
+  assert.equal(calls.filter(a=>a[1]==="create").length,1);
+  clock="2026-09-04T09:15:00Z";
+  provider=createHiggsfieldAdapter(options); // A process restart must not reset the attempt budget.
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_RETRY_EXHAUSTED"});
+  await assert.rejects(createHiggsfieldAdapter(options).generate(STORY),{code:"HIGGSFIELD_RETRY_EXHAUSTED"});
+  assert.equal(calls.filter(a=>a[1]==="create").length,2);assert.equal(calls.filter(a=>a[1]==="wait").length,0);
+  const record=JSON.parse(fs.readFileSync(path.join(directory,STORY.story_id,"source-visual.json")));
+  assert.equal(record.previous_attempts.length,1);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(directory,"credits.json"))).reservations.length,2);
+});
+test("confirmed provider failure can recover, but cancelled jobs never generate a replacement",async(t)=>{
+  let clock="2026-09-04T09:00:00Z", failed=true;const calls=[],directory=temp(t);
+  const provider=createHiggsfieldAdapter({directory,enabled:true,now:()=>clock,run:mockRun(calls,{"generate get":()=>JSON.stringify({id:"job-123456",status:failed?"failed":"queued"})}),download:async()=>asset(),quality:async()=>({version:VISUAL_GATE_VERSION,status:"passed"})});
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_JOB_RETRY_WAIT"});
+  failed=false;clock="2026-09-04T09:15:00Z";
+  assert.ok((await provider.generate(STORY)).bytes);
+  assert.equal((await provider.generate(STORY)).reused,true);
+  assert.equal(calls.filter(a=>a[1]==="create").length,2);
+  const cancelledCalls=[],cancelled=createHiggsfieldAdapter({directory:temp(t),enabled:true,run:mockRun(cancelledCalls,{"generate get":()=>'{"id":"job-123456","status":"cancelled"}'})});
+  await assert.rejects(cancelled.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
+  await assert.rejects(cancelled.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
+  assert.equal(cancelledCalls.filter(a=>a[1]==="create").length,1);
 });
 test("ambiguous submit is durable and cannot create another paid job", async (t) => {
   const calls=[],directory=temp(t), run=mockRun(calls,{"generate create":()=>{throw imageError("HIGGSFIELD_TIMEOUT");},"generate list":()=>"[]"});
@@ -372,6 +413,21 @@ test("queued replacement keeps all old public images until success and survives 
   const succeeded = await worker(t, { generate: async story => { assert.equal(story.refresh_prompt_version, C.prompt_version); return asset(); } })({ ...STORY, title_image: failed.title_image });
   assert.equal(succeeded.title_image.refresh_prompt_version, undefined);
   assert.equal(succeeded.title_image.source_visual.prompt_version, C.prompt_version);
+});
+
+test("free card layout upgrades survive a failed editorial replacement without a second generation", async t => {
+  const previous = (await worker(t)(STORY, { cardsOnly: true })).title_image;
+  previous.template_version = "woek-title-1";
+  let calls = 0;
+  const failed = await worker(t, { generate: async () => { calls++; throw imageError("HIGGSFIELD_RETRY_EXHAUSTED"); } })({
+    ...STORY, title_image: { ...previous, refresh_prompt_version: C.prompt_version },
+  });
+  assert.equal(calls, 1);
+  assert.equal(failed.title_image.mode, "impact_card");
+  assert.equal(failed.title_image.template_version, C.template_version);
+  assert.equal(failed.title_image.refresh_failure, "HIGGSFIELD_RETRY_EXHAUSTED");
+  assert.equal(failed.title_image.retry_after, undefined);
+  assert.ok(["og", "wide", "square"].every(key => publicTitleImage(failed.title_image)?.[key]));
 });
 
 test("render-only and terminal replacement failures never discard a working title", async (t) => {
