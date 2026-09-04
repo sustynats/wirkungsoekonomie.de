@@ -12,6 +12,7 @@ import { subscriptionDeliveryReady } from "@/lib/wirkungsradar/subscriptions";
 import "./globals.css";
 import "./impact-signature.css";
 import "./register.css";
+import "./portal-home.css";
 import "./navigation.css";
 
 export const metadata: Metadata = {

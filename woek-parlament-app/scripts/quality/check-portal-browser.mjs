@@ -5,6 +5,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { canonicalPortalHref, portalRedirects, portalNavigation, allNavigationItems } from "../../lib/navigation.ts";
 import { filterRegister } from "../../lib/register-model.ts";
+import { verifyHome } from "./check-home-browser.mjs";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PORTAL_PLAYWRIGHT_MODULE ?? "playwright");
@@ -57,6 +58,7 @@ try {
   page.on("response", (response) => { if (response.status() >= 500) results.errors.push(`HTTP ${response.status()} ${new URL(response.url()).pathname}`); });
   results.signatures = [];
   const axeSource = readFileSync(process.env.PORTAL_AXE_MODULE ?? require.resolve("axe-core/axe.min.js"), "utf8");
+  results.home = await verifyHome({ page, base, output, axeSource });
   const decisionPaths = [...paths].filter((path) => path.startsWith("/entscheidungen/"));
   results.register = [];
   for (const width of [375, 1440]) {
