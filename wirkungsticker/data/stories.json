@@ -1,7 +1,117 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T18:21:48.041Z",
+  "updated_at": "2026-09-04T18:36:20.968Z",
   "stories": [
+    {
+      "story_id": "wt-31724816547fc87d",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-a54b596f48e102d4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-bc27cfb11cd12dac-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-74fb51047f3096d9-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
+      "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
+      "source_summary": "Die WDR-Wirtschaftsberichterstattung meldet Rekordpreise an der Zapfsäule und zugleich steigende E-Auto-Zulassungen. Für August nennt der Beitrag beim Super E10 einen Monatsdurchschnitt auf Höchststand; Diesel sei noch teurer gewesen als E10. Zugleich wird beschrieben, dass im August 68.930 rein elektrische Neuwagen zugelassen wurden, rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag ordnet das als Wandel auf dem Neuwagenmarkt und als Verschiebung bei den Kosten ein. Er verweist auf Förderung für reine Elektroautos, auf die befristete Kfz-Steuerbefreiung sowie darauf, dass Verbrenner dem Staat weiter Einnahmen bringen. Zusätzlich werden mögliche künftige Modelle wie eine fahrleistungsabhängige Abgabe oder eine Ladestromsteuer erwähnt.",
+      "summary": "Die WDR-Meldung verbindet Rekord-Spritpreise mit stark steigenden E-Auto-Zulassungen. Sie beschreibt zugleich mögliche Folgen für Kaufentscheidungen und Staatseinnahmen.",
+      "detail_summary": "Gesichert belegt ist vor allem eine gleichzeitige Bewegung bei Preisen und Neuzulassungen: Super E10 erreichte im August einen Monatsdurchschnitt auf Höchststand, Diesel lag sogar darüber, und reine Elektroautos kamen auf 68.930 Neuzulassungen. Für die Einordnung ist das relevant, weil sich damit Kostenrelationen für Autofahrende und Einnahmeströme des Staates verschieben können. Der Wirkpfad verläuft über Tankkosten, Kaufentscheidungen und steuerliche Regeln, nicht über eine schon eingetretene Nettowirkung. Als mögliche Folge nennt die Quelle mehr Attraktivität von E-Autos und zugleich langfristig sinkende Einnahmen aus Kfz- und Energiesteuer. Die Evidenz bleibt jedoch journalistisch aus einer Quelle; unabhängige Bestätigung für die Zahlen liegt hier nicht vor.",
+      "why_relevant": "Die Meldung beschreibt eine materielle Verschiebung bei Mobilitätskosten, Neuzulassungen und potenziellen Staatseinnahmen. Das betrifft Haushalte, Unternehmen und fiskalische Regeln zugleich.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Kraftstoffpreise und Antriebswahl beeinflussen laufende Mobilitätskosten vieler Haushalte und Unternehmen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Mehr E-Neuzulassungen und die Verschiebung von Verbrennern zu Elektroantrieben können den Emissionspfad beeinflussen, ohne dass die Nettofolge hier schon beziffert ist."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Diskussion um Kfz-Steuer, Energiesteuer und mögliche neue Abgaben betrifft fiskalische Regeln und politische Verteilungskonflikte."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T19:03:18.000Z",
+      "last_updated": "2026-09-04T18:38:30.605Z",
+      "version": 3,
+      "news_status": "developing",
+      "event_id": "event-f2fa5659b171e222bce8",
+      "source_published_at": "2026-09-03T19:03:18.000Z",
+      "published_at": "2026-09-04T01:00:39.627Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob sich der Anteil rein elektrischer Neuzulassungen in den Folgemonaten weiter erhöht.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw an allen Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-203198b85d8b6d81",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T01:00:39.627Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob sich die Steuer- und Zulassungsentwicklung in den Folgemonaten fortsetzt",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue Monatswerte zu Spritpreisen und E-Auto-Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-eee5a48af6a85c18",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T10:23:05.308Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Bleibt der Anteil rein elektrischer Neuzulassungen über mehrere Monate auf hohem Niveau?",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw-Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b8fe82b2d2be3b18",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T18:38:30.605Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:03:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-1bc40229c938d48a",
       "title_image": {
@@ -4749,137 +4859,6 @@
           "url": "https://www.deutschlandfunk.de/us-regierung-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-102.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T10:29:27.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-31724816547fc87d",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-12162911a926b176-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-2a53356d626167dd-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-eb6f843358afcde0-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
-      "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
-      "source_summary": "Der WDR berichtet über Rekordpreise für Benzin und Diesel an der Zapfsäule und über einen zugleich starken Anstieg bei reinen Elektroautos. Für August nennt der Text im Monatsdurchschnitt einen neuen Höchststand bei Super E10; Diesel sei sogar teurer als E10 gewesen. Zugleich seien 68.930 reine E-Autos neu zugelassen worden, etwa 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag verknüpft diese Entwicklung mit der Finanzierung des Staates: Verbrenner brächten Einnahmen über Kfz-Steuer sowie Energie- und Mehrwertsteuer beim Tanken, während mit wachsender E-Mobilität Einnahmen sinken könnten. Als mögliche Reaktionen nennt der Text eine Ladestromsteuer sowie ein fahrleistungsabhängiges und nach CO₂-Ausstoß gestaffeltes System. Außerdem zitiert der Beitrag ADAC-Positionen zur Kostenfrage bei Diesel und E-Auto sowie Hinweise auf Ladeinfrastruktur und Reichweite.",
-      "summary": "Rekordpreise für Benzin und Diesel treffen auf stark steigende E-Auto-Zulassungen. Der WDR sieht darin eine Verschiebung bei Kosten und möglichen Staatseinnahmen.",
-      "detail_summary": "Gesichert ist laut WDR, dass Super E10 im August so teuer war wie nie zuvor und Diesel sogar über E10 lag. Zugleich wurden 68.930 reine Elektroautos neu zugelassen, was der Beitrag als rund 32 Prozent aller Neuzulassungen und als 75 Prozent Plus gegenüber dem Vorjahr beschreibt. Für die Einordnung ist das relevant, weil sich damit Kaufanreize, Kostenvergleiche und steuerliche Einnahmeströme im Verkehrssektor verschieben können. Der Wirkpfad verläuft über höhere Kraftstoffpreise, veränderte Fahrzeugwahl und sinkende Einnahmen aus Energie- und Kfz-Steuer bei wachsender E-Mobilität. Mögliche Folge ist, dass Politik und Verwaltung über neue Abgaben- oder Finanzierungsmodelle nachdenken. Belastbar belegt ist hier aber nur die Richtung der Entwicklung; die tatsächliche Netto-Wirkung auf Staat, Haushalte und Emissionen bleibt offen.",
-      "why_relevant": "Die Meldung berührt Kaufentscheidungen, Steueraufkommen und die Umstellung des Verkehrssektors und damit mehrere materielle Zustände zugleich.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Die Spritpreise und die E-Auto-Zulassungen beeinflussen Alltagskosten, Fahrzeugwahl und mögliche Belastungen für Haushalte."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Mehr E-Autos können den Antriebswechsel beschleunigen; der tatsächliche Klimaeffekt bleibt ohne weitere Daten offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Text berührt die Ausgestaltung künftiger Abgaben und damit steuerpolitische Prioritäten und Verteilungseffekte."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Neuzulassungen E-Autos",
-            "value": "68.930",
-            "unit": "Fahrzeuge",
-            "context": "Reine Elektroautos, die im August neu zugelassen wurden"
-          },
-          {
-            "label": "Anteil an Neuzulassungen",
-            "value": "32",
-            "unit": "Prozent",
-            "context": "Anteil der reinen E-Autos an allen Neuzulassungen"
-          },
-          {
-            "label": "Vorjahresplus",
-            "value": "75",
-            "unit": "Prozent",
-            "context": "Zunahme der E-Auto-Zulassungen gegenüber dem Vorjahr"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "unternehmen",
-          "staat",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "chance",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T19:03:18.000Z",
-      "last_updated": "2026-09-04T10:23:05.308Z",
-      "version": 2,
-      "news_status": "preliminary",
-      "event_id": "event-f2fa5659b171e222bce8",
-      "source_published_at": "2026-09-03T19:03:18.000Z",
-      "published_at": "2026-09-04T01:00:39.627Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob sich der Anteil rein elektrischer Neuzulassungen in den Folgemonaten weiter erhöht.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw an allen Neuzulassungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-203198b85d8b6d81",
-          "announced_at": "2026-09-03T19:03:18.000Z",
-          "follow_up_date": "2026-09-11T01:00:39.627Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob sich die Steuer- und Zulassungsentwicklung in den Folgemonaten fortsetzt",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue Monatswerte zu Spritpreisen und E-Auto-Neuzulassungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-eee5a48af6a85c18",
-          "announced_at": "2026-09-03T19:03:18.000Z",
-          "follow_up_date": "2026-09-11T10:23:05.308Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:03:18.000Z",
           "primary_source": false
         }
       ]
