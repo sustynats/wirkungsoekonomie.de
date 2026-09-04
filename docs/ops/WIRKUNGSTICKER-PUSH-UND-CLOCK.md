@@ -39,7 +39,8 @@ Repository-Deploy-Key mit Schreibrecht, kein persönlicher GitHub-Token. Er lieg
 mit Modus 0600 auf Oracle. Die Bare-Partial-Clone-Daten liegen in
 `/var/lib/woek-wirkungsticker-clock/repository.git`. Der normale GitHub-Zeitplan
 bleibt aktiv. Gemeinsame Workflow-Concurrency, persistente Queue und rollendes
-Vier-Aufrufe-Stundenlimit verhindern Überlappung und überhöhten KI-Verbrauch.
+48-Aufrufe-Stundenlimit der authentifizierten News-Lane verhindern Überlappung;
+zusätzlich gelten zwölf Aufrufe je Lauf und der unveränderte 25-EUR-Monatsschutz.
 
 Prüfung: `systemctl list-timers woek-wirkungsticker-clock.timer`,
 `journalctl -u woek-wirkungsticker-clock.service` und GitHub-Actions-Laufbericht.

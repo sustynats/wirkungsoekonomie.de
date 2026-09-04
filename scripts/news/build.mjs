@@ -273,7 +273,7 @@ ${renderIconSprite()}
 ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
 <script src="${base}assets/js/main.js?v=20260904-ticker-questions"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260904-push-offer"></script>
+<script src="${base}assets/js/news-pwa.js?v=20260904-refresh-images"></script>
 ${extraScript}
 </body>
 </html>`;

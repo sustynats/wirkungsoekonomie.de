@@ -7,6 +7,7 @@ import {
   assertSafeFeedUrl,
   budgetStage,
   buildAnalysisPrompt,
+  fitAnalysisInput,
   callWoekAi,
   canonicalizeUrl,
   classifyItem,
@@ -39,6 +40,22 @@ const source = {
   priority: 100, topic: "Politik", url: "https://example.org/news/", max_items: 10,
   access: { status: "public", cost_usd: 0, article: "bounded_public_text" },
 };
+
+test("Large multi-source prompts retain identities and exact evidence under the Oracle limit", () => {
+  const sources=Array.from({length:12},(_,n)=>({source_id:`source-${n}`,url:`https://example.org/${n}`,title:`Originalbericht Nummer ${n}`,summary:"Eine neue Entscheidung wird anhand konkreter Quellen eingeordnet.",article_excerpt:Array.from({length:80},(_,j)=>`Absatz ${j}: Die Quelle ${n} berichtet über belegte Einzelheiten dieser Entscheidung und nennt ihre Grenzen.`).join(" ")}));
+  const story={story_id:"wt-test",title:"Neue Entscheidung",sources,claims:[]};
+  const prompt=buildAnalysisPrompt([story]);
+  assert.ok(prompt.length<=39000);
+  const input=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]);
+  assert.deepEqual(input[0].sources.map(x=>x.url),sources.map(x=>x.url));
+  assert.ok(input[0].sources.some(x=>x.evidence_selection?.incomplete));
+  for(const item of input[0].sources) for(const segment of item.evidence_segments){
+    const source=sources.find(x=>x.source_id===item.source_id);
+    assert.ok(`${source.title} ${source.summary} ${source.article_excerpt}`.includes(segment.excerpt));
+  }
+  assert.equal(sources[0].evidence_selection,undefined);
+  assert.throws(()=>fitAnalysisInput([{sources:[{url:"x".repeat(100),evidence_segments:[]}]}],10),error=>error.message==="AI_INPUT_TOO_LARGE"&&error.requestAttempts===0);
+});
 
 test("Verfahrensstand trennt Entwurf, Beschluss, geltendes Recht und Ex ante", () => {
   assert.deepEqual(statusConsistencyErrors({status:"beschlossen",source_summary:"Das Gesetz ist seit März in Kraft. Es betrifft die Infrastruktur."}),["AI_STATUS_CONTRADICTS_IN_FORCE"]);

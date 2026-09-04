@@ -1,10 +1,868 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T00:21:22.875Z",
+  "updated_at": "2026-09-04T01:32:19.405Z",
   "stories": [
     {
+      "story_id": "wt-3a01df57b8cfe75f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a01df57b8cfe75f-bccaf0ab02830d93-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a01df57b8cfe75f-bccaf0ab02830d93-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a01df57b8cfe75f-bccaf0ab02830d93-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriffe-auf-stromnetz-polizei-geht-von-sabotage-an-umspannwerk-in-dormagen-aus-cfe75f",
+      "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
+      "source_summary": "Die gelieferten Texte berichten über einen Vorfall an einem Umspannwerk in Dormagen. Laut der einen Quelle untersucht die Polizei einen verdächtigen Fund und geht von Sabotage aus. Die andere Quelle schreibt, ein Spaziergänger habe einen verdächtigen Gegenstand entdeckt; zudem liege nach Angaben der Ermittler ein Bekennerschreiben vor. Beide Meldungen verweisen auf einen laufenden Ermittlungsstand, nennen aber keine weitergehenden Details zu Tätern, Motiv oder Folgen für die Stromversorgung.\n\nDie Quellen sind journalistische Darstellungen und keine Originalmitteilungen. Aus den gelieferten Texten geht nicht hervor, ob die Angaben bereits unabhängig bestätigt sind oder auf derselben behördlichen Grundlage beruhen.",
+      "summary": "Die Polizei geht in Dormagen nach einem verdächtigen Fund an einem Umspannwerk von Sabotage aus. In einer weiteren Meldung ist von einem verdächtigen Gegenstand und einem Bekennerschreiben die Rede.",
+      "detail_summary": "Gesichert aus den vorliegenden Texten ist vor allem der Ermittlungsstand: In Dormagen wird an einem Umspannwerk ein verdächtiger Fund geprüft, und die Polizei wertet den Fall inzwischen als Sabotageverdacht. Die zweite Meldung ergänzt, ein Spaziergänger habe den Gegenstand entdeckt und es liege demnach ein Bekennerschreiben vor. Für die Einordnung als Nachricht ist das relevant, weil Angriffe auf Energieinfrastruktur potenziell in Versorgung, Sicherheitslage und Ermittlungsdruck hineinwirken. Der Wirkpfad wäre zunächst operativ: Absicherung, Prüfung möglicher Schäden und mögliche Anpassungen bei Schutz und Überwachung. Eine mögliche Folge wären verschärfte Sicherheitsmaßnahmen an vergleichbaren Anlagen; ob es tatsächlich zu Ausfällen, Folgeschäden oder weiteren Fällen kommt, bleibt offen. Die Beleglage bleibt jedoch begrenzt, weil nur journalistische Sekundärberichte vorliegen und unklar ist, ob die Aussagen unabhängig voneinander bestätigt sind.",
+      "why_relevant": "Der Fall betrifft kritische Energieinfrastruktur und einen möglichen Sabotagevorwurf. Das kann Sicherheitsmaßnahmen, Betriebsschutz und öffentliche Versorgungskontrolle beeinflussen.",
+      "topic": [
+        "Wirtschaft",
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind potenziell Versorgungssicherheit und Sicherheitsgefühl, konkrete Ausfälle sind aber noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen oder Emissionseffekte."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Vorwurf betrifft kritische Infrastruktur und damit staatliche Schutz- und Ermittlungsfähigkeit; Hinweise auf politische Folgen fehlen."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T00:39:00.000Z",
+      "last_updated": "2026-09-04T01:28:00.255Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-cbd2c0c9db2a4a13b509",
+      "source_published_at": "2026-09-04T00:39:00.000Z",
+      "published_at": "2026-09-04T01:28:00.255Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T00:39:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:06:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-61d3420f0dd76f70",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kongresswahlen-trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-d76f70",
+      "title": "Kongresswahlen: Trump zieht im Streit um Briefwahl erneut vor Supreme Court",
+      "source_summary": "Mehrere deutsche Nachrichtenangebote melden übereinstimmend, dass die Trump-Regierung im Streit um neue Regeln für die Briefwahl erneut den Supreme Court angerufen hat. Hintergrund ist eine zuvor von einer unteren Instanz gestoppte Neuregelung, gegen die nun per Eilantrag vorgegangen werden soll.\n\nZDFheute ergänzt, dass in North Carolina bereits an diesem Freitag erste Briefwahlunterlagen verschickt werden sollen. Außerdem nennt der Bericht den 3. November als Termin der Midterms; dann werden etwa ein Drittel des Senats und das komplette Repräsentantenhaus neu gewählt. Eine Bundesrichterin hatte die Pläne zuvor per einstweiliger Verfügung gebremst und sie als wahrscheinlich verfassungswidrig beschrieben.",
+      "summary": "Die Trump-Regierung hat im Streit um neue Briefwahlregeln erneut den Supreme Court angerufen. Der Fall betrifft das Wahlverfahren kurz vor den Midterms und ist damit demokratiepolitisch relevant.",
+      "detail_summary": "Gesichert ist vor allem der erneute Gang der Trump-Regierung vor den Supreme Court im Streit um neue Briefwahlregeln. Nach den vorliegenden Berichten soll damit eine Entscheidung einer unteren Instanz ausgesetzt werden, die die Umsetzung der Pläne bislang stoppt. Der Vorgang ist relevant, weil er unmittelbar das Wahlverfahren kurz vor den Midterms berührt und damit die Bedingungen der Stimmabgabe verändern kann. Als möglicher Wirkpfad steht eine Verschiebung von Zugänglichkeit, Kontrolle und Tempo der Briefwahl im Raum, mit Folgen für Organisation, Vertrauen und gegebenenfalls die Wahlteilnahme. Offen bleibt nach den vorliegenden Texten, wie der Supreme Court entscheidet und ob die Regelung tatsächlich in Kraft kommt. Eine belastbare Bewertung der Wirkungen ist deshalb ex ante nur begrenzt möglich.",
+      "why_relevant": "Der Vorgang betrifft kurz vor den Midterms die Regeln der Briefwahl und damit einen zentralen demokratischen Prozess. Er kann unmittelbar Zustände bei Zugänglichkeit, Kontrolle und Fristen der Stimmabgabe verändern.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Wählerinnen und Wähler unmittelbar über die Ausgestaltung der Briefwahl; mögliche Folgen reichen bis zur praktischen Zugänglichkeit der Stimmabgabe."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein erkennbarer direkter Bezug zu Umwelt- oder Klimawirkungen in den Quellen."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Der Streit betrifft Wahlregeln, Gerichtsverfahren und damit die demokratische Korrekturfähigkeit vor einer bundesweiten Wahl."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Datum der Midterms",
+            "value": "3. November",
+            "unit": "Datum",
+            "context": "Termin der US-Zwischenwahlen"
+          },
+          {
+            "label": "Erste Briefwahlunterlagen",
+            "value": "Freitag",
+            "unit": "Zeitpunkt",
+            "context": "Beginn des Versands in North Carolina"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-03T21:07:32.000Z",
+      "last_updated": "2026-09-04T01:27:46.072Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-0059d4df349b8d2350cf",
+      "source_published_at": "2026-09-03T21:08:30.000Z",
+      "published_at": "2026-09-04T01:27:46.072Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication"
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/kongresswahlen--trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-38205426.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T22:51:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-kongresswahlen-16015963.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:08:30.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-trump-streit-briefwahl-supreme-court-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:03:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4855e13df47f18ed",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4855e13df47f18ed-7ef7f07d029fc5ab-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4855e13df47f18ed-7ef7f07d029fc5ab-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4855e13df47f18ed-7ef7f07d029fc5ab-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kritische-infrastruktur-offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormage-7f18ed",
+      "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+      "source_summary": "Deutschlandfunk berichtet über einen offenbar erneuten Sabotagevorfall an einem Umspannwerk in Dormagen. Nach Angaben eines Polizeisprechers gehe man nach Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.\n\nAn dem Umspannwerk habe ein Spaziergänger am Vorabend einen verdächtigen Gegenstand gefunden. Laut Polizei handele es sich vermutlich um eine Abschussvorrichtung; zu einem Angriff sei es nicht gekommen. Der Gegenstand werde von Experten untersucht. Der Bericht verweist außerdem auf einen früheren Anschlag vor zwei Tagen bei Rommerskirchen, bei dem mehrere Blöcke zweier Kohlekraftwerke heruntergefahren worden seien.",
+      "summary": "In Dormagen wird ein weiterer möglicher Sabotagevorfall an einem Umspannwerk geprüft. Der Verdacht trifft kritische Strominfrastruktur und ist deshalb über den Einzelfall hinaus relevant.",
+      "detail_summary": "Gesichert aus der vorliegenden Meldung ist zunächst: In Dormagen wird ein weiterer möglicher Sabotagevorfall an einem Umspannwerk untersucht, nachdem dort ein verdächtiger Gegenstand gefunden wurde. Die Polizei geht nach einem Bekennerschreiben von Sabotage aus; zu einem Angriff sei es aber nicht gekommen, der Gegenstand werde geprüft. Für die Einordnung ist das relevant, weil es um kritische Strominfrastruktur geht und damit um eine mögliche Störung mit Folgen für Versorgungssicherheit, Einsatzlogistik und Schutzkonzepte. Ein direkter Wirkungseintritt ist in der Quelle nicht belegt, wohl aber ein Wirkpfad über Gefährdung, Ermittlungen und mögliche zusätzliche Schutzmaßnahmen. Mögliche Folgen wären verschärfte Sicherheitsvorkehrungen oder ein höherer Druck auf Betreiber und Behörden. Ob es sich tatsächlich um koordinierte Sabotage handelt und welche Schäden vermieden wurden, bleibt auf Basis der gelieferten Evidenz offen.",
+      "why_relevant": "Die Meldung betrifft potenzielle Angriffe auf kritische Strominfrastruktur und damit einen Bereich mit möglicher Wirkung auf Versorgungssicherheit, Schutzbedarf und behördliche Reaktion.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Auswirkungen auf Versorgungssicherheit und Schutz kritischer Infrastruktur betreffen Haushalte, Beschäftigte und staatliche Sicherheitsaufgaben."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; allenfalls indirekt über Stromversorgung und Kraftwerksbetrieb."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Angriffe oder Sabotage an kritischer Infrastruktur berühren staatliche Schutzfähigkeit und das Vertrauen in öffentliche Sicherheit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T01:23:22.000Z",
+      "last_updated": "2026-09-04T01:27:28.471Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-cad42ce016710699eab5",
+      "source_published_at": "2026-09-04T01:23:22.000Z",
+      "published_at": "2026-09-04T01:27:28.471Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:23:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7d3fabe103b78ce3",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7d3fabe103b78ce3-843eed3b8f383300-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7d3fabe103b78ce3-843eed3b8f383300-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7d3fabe103b78ce3-843eed3b8f383300-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriffe-auf-stromnetz-verdachtiger-gegenstand-an-umspannwerk-in-dormagen-entdeckt-b78ce3",
+      "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+      "source_summary": "In Dormagen wird an einem Umspannwerk ein verdächtiger Gegenstand untersucht. Mehrere Beiträge berichten, dass die Polizei den Fund vor Ort prüft; zunächst war offen, ob es sich um eine Abschussvorrichtung oder nur um einen schlechten Scherz handelt. Ein WDR-Beitrag ergänzt, dass es in Dormagen-Gohr nach dem Fund zu keiner Beschädigung gekommen sei und unklar bleibe, ob der Gegenstand überhaupt geeignet gewesen wäre, Schaden hervorzurufen.\n\nDer WDR berichtet außerdem, die Polizei gehe inzwischen von einem Sabotagedelikt aus und vermute, dass offenbar ein Kurzschluss hergestellt werden sollte. Nach dem Bericht wird nach einem Mann aus dem Raum Gevelsberg gefahndet, der ein Bekennerschreiben verschickt haben soll; die Echtheit dieses Schreibens werde noch geprüft. Ein möglicher Zusammenhang mit früheren Angriffen auf Umspannwerke in Brandenburg und anderen Orten wird erwähnt, bleibt aber offen.",
+      "summary": "An einem Umspannwerk in Dormagen wurde ein verdächtiger Gegenstand entdeckt und von der Polizei untersucht. Ein WDR-Bericht spricht inzwischen von einem möglichen Sabotagedelikt und einem offenbar beabsichtigten Kurzschluss.",
+      "detail_summary": "Gesichert ist zunächst nur, dass an einem Umspannwerk in Dormagen ein verdächtiger Gegenstand gefunden und polizeilich geprüft wurde. Der WDR berichtet zusätzlich, dass es bislang zu keiner Beschädigung gekommen sei und noch offen sei, ob der Gegenstand überhaupt schadenstauglich war. Neu gegenüber einer bloßen Fundmeldung ist damit die Einordnung als möglicher Sabotageversuch mit möglichem Wirkpfad auf die Stromversorgung. Das ist für Mensch, Unternehmen und kritische Infrastruktur relevant, weil schon der Verdacht auf Angriffe an Umspannwerken Schutzmaßnahmen, Einsatzkräfte und Sicherheitslogik beeinflussen kann. Als mögliche Folge kommen verstärkte Kontrollen, Absperrungen und eine höhere Wachsamkeit an weiteren Anlagen in Betracht. Belastbar belegt ist diese Entwicklung aber nur als vorläufige Polizei- und Medienlage; die technische Funktion des Gegenstands, eine Täterschaft und ein möglicher Zusammenhang mit früheren Vorfällen bleiben offen.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur und damit einen potenziell systemrelevanten Schutzbereich. Schon ein begrenzter Sabotageverdacht kann Sicherheitsmaßnahmen, Betriebsabläufe und öffentliche Wahrnehmung beeinflussen.",
+      "topic": [
+        "Energie",
+        "Wirtschaft",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Einsatzkräfte und Anwohner im Umfeld der Anlage; konkrete Schäden sind aber nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; nur indirekt kann kritische Infrastruktur betroffen sein."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Schutz kritischer Infrastruktur ist für staatliche Handlungsfähigkeit und öffentliche Sicherheit relevant, konkrete demokratische Auswirkungen sind jedoch offen."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T21:07:00.000Z",
+      "last_updated": "2026-09-04T01:27:12.242Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-6d73d8014561c0bc1298",
+      "source_published_at": "2026-09-03T21:03:08.000Z",
+      "published_at": "2026-09-04T01:00:23.705Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 4,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei den Fund als Sabotageversuch, harmlosen Gegenstand oder etwas anderes einordnet.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Behördliche Einordnung des Fundes oder konkrete Ermittlungsmitteilung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cd5dd6963599eba1",
+          "announced_at": "2026-09-04T00:30:02.000Z",
+          "follow_up_date": "2026-09-11T01:00:23.705Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wird die Polizei den Gegenstand als funktionsfähige Abschussvorrichtung einstufen?",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behördliche Einordnung des Fundes und mögliche technische Beschreibung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b70c8da46e59258",
+          "announced_at": "2026-09-04T00:48:10.000Z",
+          "follow_up_date": "2026-09-11T01:27:12.242Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:07:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:00:03.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T00:48:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-9e8076042f86f06d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-681fdce851a5f2ab-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-681fdce851a5f2ab-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-681fdce851a5f2ab-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "outrage-mounts-in-malta-after-acquittal-over-journalist-s-murder-86f06d",
+      "title": "Outrage mounts in Malta after acquittal over journalist's murder",
+      "source_summary": "In Valletta sind nach einem Freispruch im Fall des Mordes an der Journalistin Daphne Caruana Galizia Hunderte Menschen auf die Straße gegangen. Laut der Quelle wurde ein wohlhabender Geschäftsmann für nicht schuldig befunden, den Mord an der investigativen Journalistin masterminded zu haben. Das Urteil zum Autobombenanschlag von 2017 löste Empörung bei maltesischen zivilgesellschaftlichen Gruppen und internationalen Organisationen für Medienfreiheit aus.\n\nDie oppositionelle Nationalist Party organisierte die Demonstration am späten Mittwoch und erklärte, Abgeordnete sollten aus der Sommerpause zurückgerufen werden. Ziel sei eine Sondersitzung des Parlaments, um den Fall zu beraten. Weitere Hintergründe oder gerichtliche Detailangaben nennt die Quelle in dem gelieferten Auszug nicht.",
+      "summary": "Nach dem Freispruch in einem zentralen Mordverfahren kam es in Maltas Hauptstadt zu Protesten. Die Opposition verlangt nun eine Sondersitzung des Parlaments.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Reaktion auf ein Gerichtsurteil in Malta: In Valletta demonstrierten Hunderte, nachdem ein wohlhabender Geschäftsmann im Zusammenhang mit dem Mord an Daphne Caruana Galizia freigesprochen worden war. Der Fall ist politisch und demokratisch relevant, weil er eine Journalistin betrifft und unmittelbar öffentliche Proteste sowie Forderungen an das Parlament auslöste. Der Wirkpfad verläuft damit nicht über materielle Outputgrößen, sondern über Vertrauen in Rechtsstaatlichkeit, Medienfreiheit und die politische Bearbeitung eines hochsensiblen Gewaltverbrechens. Mögliche Folge ist eine zusätzliche parlamentarische Debatte oder eine breitere institutionelle Auseinandersetzung mit dem Fall. Belastbare Angaben zu weiteren politischen Entscheidungen, rechtlichen Konsequenzen oder gesellschaftlichen Langzeitwirkungen liefert der Auszug nicht.",
+      "why_relevant": "Der Fall berührt Medienfreiheit, rechtsstaatliche Glaubwürdigkeit und politische Reaktionsfähigkeit in einem EU-Mitgliedstaat. Die Proteste und der Ruf nach einer Sondersitzung zeigen einen unmittelbaren demokratischen Wirkpfad.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind ein Journalistinnenmord-Fall, öffentliche Proteste und die mögliche politische Aufarbeitung eines schweren Gewaltverbrechens."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Umwelt-, Klima- oder Ressourcenaspekt ist in der Quelle erkennbar."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Es geht um Gerichtsentscheidung, parlamentarische Reaktion, öffentliche Proteste und Medienfreiheit."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Demonstrierende",
+            "value": "Hunderte",
+            "unit": "Personen",
+            "context": "Zahl der Menschen, die in Valletta demonstrierten"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "europa"
+        ],
+        "timeline": [
+          {
+            "date": "2017",
+            "label": "Caruana Galizias Autobombenanschlag"
+          }
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-03T15:07:33.000Z",
+      "last_updated": "2026-09-04T01:09:49.693Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-56233210d0bf06531c2d",
+      "source_published_at": "2026-09-03T15:07:33.000Z",
+      "published_at": "2026-09-04T01:09:49.693Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das Parlament zu einer Sondersitzung einberufen wird",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "offizielle Einberufung oder Absage einer Sondersitzung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-246e6dc0e28ab647",
+          "announced_at": "2026-09-03T15:07:33.000Z",
+          "follow_up_date": "2026-09-11T01:09:49.693Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260903-outrage-mounts-in-malta-after-acquittal-over-journalist-s-murder",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T15:07:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-872323e750684aa1",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "demografie-und-familienplanung-auch-wegen-der-wohnungsnot-gibt-es-zu-wenig-kinder-684aa1",
+      "title": "Demografie und Familienplanung: Auch wegen der Wohnungsnot gibt es zu wenig Kinder",
+      "source_summary": "Die taz berichtet über eine aktuelle Untersuchung des Bundesinstituts für Bevölkerungsforschung auf Basis des FReDA-Panels. Danach nimmt der Kinderwunsch in Deutschland ab; als Gründe nennt die Quelle globale Krisen, Wohnungsnot und Probleme am Arbeitsmarkt.\n\nDie Befragung erhebt regelmäßig 30.000 Personen. Genannt werden unter anderem ein rechnerischer durchschnittlicher Kinderwunsch von 1,69 Kindern bei Frauen und 1,64 bei Männern in 2024/25 sowie eine sinkende Geburtenrate von 1,58 im Jahr 2021 auf 1,32 im Jahr 2025. Außerdem verweist die Quelle auf hohe Unzufriedenheit mit Wohnungsangebot und Arbeits- und Verdienstmöglichkeiten vor Ort.",
+      "summary": "Die Quelle berichtet über einen sinkenden Kinderwunsch in Deutschland und nennt Wohnungsnot, Arbeitsmarkt und globale Krisen als Hindernisse. Die Angaben stammen aus einer BiB-Auswertung auf Basis des FReDA-Panels.",
+      "detail_summary": "Gesichert aus der Quelle ist vor allem der Befund einer sinkenden Familienplanungsbereitschaft in Deutschland, gestützt auf eine aktuelle BiB-Untersuchung. Die berichteten Werte zeigen zugleich einen Abstand zwischen Kinderwunsch und tatsächlicher Geburtenlage. Relevanz hat das, weil Wohnungsmarkt, Arbeitsmarkt und Zukunftserwartungen als konkrete Bedingungen privater Lebensentscheidungen beschrieben werden. Der mögliche Wirkpfad verläuft über erschwerte Haushaltsgründung, spätere Familienplanung und damit veränderte demografische Struktur. Als mögliche Folge nennt die Quelle längerfristig weiter sinkende Geburtenzahlen und Belastungen für die Rentenkassen; das bleibt aber eine Folgerung der Quelle, keine bereits eingetretene Wirkung. Die Evidenz ist für eine Erstmeldung brauchbar, aber begrenzt, weil hier nur ein journalistischer Bericht und keine direkt mitgelieferte Primärstudie vorliegt.",
+      "why_relevant": "Die Meldung verbindet Demografie mit Wohnungs- und Arbeitsmarktbedingungen und damit mit Zustandsänderungen, die Haushalte, Sozialversicherung und langfristige Strukturfragen betreffen können.",
+      "topic": [
+        "Arbeit",
+        "Soziales"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Quelle beschreibt Einflussfaktoren auf Familiengründung und damit auf private Lebensplanung, Wohnkosten und künftige soziale Sicherung."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Ein direkter ökologischer Wirkpfad wird in der Quelle nicht belegt; Klimawandel erscheint nur als Krisensorge unter mehreren."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle nennt eine geschwächte Demokratie als Sorgefeld; belastbar belegt ist hier aber vor allem die Wahrnehmung, nicht ein demokratischer Effekt."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-02T16:48:00.000Z",
+      "last_updated": "2026-09-04T01:09:04.488Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-766fb5a03e5c10e53cd6",
+      "source_published_at": "2026-09-02T16:48:00.000Z",
+      "published_at": "2026-09-04T01:09:04.488Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die in der Studie beschriebenen Zusammenhänge in einer späteren Auswertung oder Gegenanalyse bestätigt werden.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Weitere belastbare Auswertung mit Methode, Stichprobe und Vergleichswerten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-1e566fb7a41cc7a5",
+          "announced_at": "2026-09-02T16:48:00.000Z",
+          "follow_up_date": "2026-09-11T01:09:04.488Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Demografie-und-Familienplanung/!6209487",
+          "source_type": "media_rss",
+          "published_at": "2026-09-02T16:48:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-d175d26e4635ba0a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-b91d583c7317dc1b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
+      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+      "source_summary": "Im Schönhof-Viertel im Frankfurter Westen ist der erste Teil eines neuen Parks offiziell eröffnet worden. Die Anlage soll nicht nur Erholung bieten, sondern auch Regenwasser aufnehmen und die Umgebung kühlen; bei Planung und Bepflanzung seien Klimawandel, Hitzebelastung und Biodiversität mitgedacht worden.\n\nDer zunächst geöffnete östliche Abschnitt umfasst 12.500 Quadratmeter, später soll der Park auf 28.000 Quadratmeter wachsen. Genannt werden außerdem eine Zisterne, Rückhaltemulden, klimaresiliente Bäume, ein Grünes Klassenzimmer und sichere Wege für künftige Schülerinnen und Schüler. Für das Viertel werden 3.500 bis 4.000 Einwohnerinnen und Einwohner in naher Zukunft erwartet.",
+      "summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Die Anlage soll Regenwasser speichern, kühlen und als Quartiersraum dienen.",
+      "detail_summary": "Gesichert ist zunächst die Eröffnung des ersten Parkteils im Schönhof-Viertel mit einer Fläche von 12.500 Quadratmetern. Die Quelle beschreibt den Park als Teil einer klimaangepassten Quartiersentwicklung mit Zisterne, Rückhaltemulden, klimaresilienten Bäumen und einem Grünen Klassenzimmer. Für die Umweltwirkung ist das relevant, weil hier konkrete bauliche Elemente genannt werden, die Hitze und Starkregen lokal abmildern sollen. Der mögliche Wirkpfad reicht von besserer Wasseraufnahme und Verschattung bis zu höherer Aufenthaltsqualität im Quartier. Ob und in welchem Ausmaß das tatsächlich eintritt, bleibt offen, weil Messdaten zur Kühlleistung, Wasserrückhaltung oder Nutzung fehlen. Die Meldung ist damit eine belastbare Erstinformation über eine laufende städtebauliche Umsetzung, nicht über bereits nachgewiesene Wirkung.",
+      "why_relevant": "Ein neuer Quartierspark mit expliziter Klimaanpassungsfunktion verändert lokale Infrastruktur, Wasserhaushalt und Hitzebelastung in einem wachsenden Wohngebiet.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Der Park betrifft künftige Bewohnerinnen und Bewohner sowie Schulwege und Aufenthaltsqualität im Quartier."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Genannt werden Regenwasserspeicherung, Verschattung und klimaresiliente Bepflanzung als lokale Anpassungsmaßnahmen."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer demokratischer Effekt wird in der Quelle nicht beschrieben; relevant ist eher die kommunale Planung."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T15:27:13.000Z",
+      "last_updated": "2026-09-04T01:02:06.108Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "source_published_at": "2026-09-03T15:27:13.000Z",
+      "published_at": "2026-09-04T01:02:06.108Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T15:27:13.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-31724816547fc87d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
+      "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
+      "source_summary": "Die WDR-Quelle meldet Rekordpreise an der Zapfsäule und verbindet sie mit der Frage, ab wann sich ein Elektroauto lohnt. Genannt werden Daten zum August: Super E10 sei im Monatsdurchschnitt so teuer gewesen wie nie zuvor, Diesel habe im Schnitt 2,223 Euro je Liter gekostet und damit mehr als E10 mit 2,145 Euro.\n\nZugleich berichtet der Beitrag von einem starken Anstieg bei Elektroautos: Fast jedes dritte im August neu zugelassene Auto fahre rein elektrisch, 68.930 Fahrzeuge seien neu auf die Straße gekommen. Der Text verweist außerdem auf staatliche Förderung, die Verlängerung der Kfz-Steuerbefreiung und darauf, dass der wachsende Anteil von E-Autos langfristig die Steuereinnahmen des Staates verändern könne.",
+      "summary": "Die WDR-Quelle beschreibt Rekordpreise für Sprit und einen starken Anstieg bei E-Auto-Neuzulassungen. Sie ordnet das als mögliche Verschiebung bei Kaufentscheidungen und Staatseinnahmen ein.",
+      "detail_summary": "Gesichert berichtet die Quelle von Rekordpreisen an der Zapfsäule und von einem starken Zuwachs bei rein elektrischen Neuzulassungen im August. Das ist relevant, weil sich damit kurzfristig die Kostenabwägung für Autokäufe und mittelfristig die Zusammensetzung des Fahrzeugbestands verschieben kann. Der mögliche Wirkpfad verläuft über Kaufentscheidungen, Fahrzeugmix und später über veränderte Einnahmen aus Kfz-, Energie- und Mehrwertsteuer. Als mögliche Folge nennt der Beitrag eine dauerhafte Verschiebung zugunsten von E-Autos sowie Debatten über neue Finanzierungsmodelle wie Ladestromsteuer oder fahrleistungsabhängige Modelle. Offen bleibt, wie stabil die Preisrelationen sind und ob daraus tatsächlich ein breiterer Strukturwandel entsteht. Die Evidenzlage ist hier zunächst auf eine journalistische Sekundärquelle begrenzt.",
+      "why_relevant": "Die Meldung verbindet zwei materiell relevante Zustandsänderungen: sehr hohe Kraftstoffpreise und eine spürbare Verschiebung im Neuzulassungsmix hin zu Elektroautos. Daraus ergeben sich potenziell Folgen für Haushaltskosten, Marktanteile, Steuereinnahmen und künftige Verkehrsfinanzierung.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Für Haushalte und Beschäftigte im Verkehrsumfeld kann die Preisrelation zwischen Sprit und E-Auto die Kauf- und Nutzungskosten beeinflussen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Ein höherer Anteil rein elektrischer Neuzulassungen kann den Antriebsmix verschieben; die konkrete Umweltwirkung bleibt ex ante aber offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle thematisiert mögliche Änderungen bei staatlichen Einnahmen und künftigen Abgabemodellen, also einen relevanten Ordnungs- und Verteilungsaspekt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "E10 im Monatsdurchschnitt",
+            "value": "2,145",
+            "unit": "Euro je Liter",
+            "context": "Monatsdurchschnitt für Super E10 im August"
+          },
+          {
+            "label": "Diesel im August",
+            "value": "2,223",
+            "unit": "Euro je Liter",
+            "context": "Durchschnittspreis für Diesel im August"
+          },
+          {
+            "label": "rein elektrisch",
+            "value": "68.930",
+            "unit": "Neuzulassungen",
+            "context": "Zahl neuer rein elektrischer Pkw im August"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T19:03:18.000Z",
+      "last_updated": "2026-09-04T01:00:39.627Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-f2fa5659b171e222bce8",
+      "source_published_at": "2026-09-03T19:03:18.000Z",
+      "published_at": "2026-09-04T01:00:39.627Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob sich der Anteil rein elektrischer Neuzulassungen in den Folgemonaten weiter erhöht.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw an allen Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-203198b85d8b6d81",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T01:00:39.627Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:03:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
       "story_id": "wt-67083aa272f98b15",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-046d2cf9b584431d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-046d2cf9b584431d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-046d2cf9b584431d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "kommission-verabschiedet-eu-leitlinien-zum-behinderungsmissbrauch-durch-marktbeherrschen-f98b15",
       "title": "Kommission verabschiedet EU-Leitlinien zum Behinderungsmissbrauch durch marktbeherrschende Unternehmen",
       "source_summary": "Die Europäische Kommission meldet, dass sie Leitlinien zur Anwendung von Artikel 102 AEUV auf Fälle von Behinderungsmissbrauch durch marktbeherrschende Unternehmen verabschiedet hat. Die Mitteilung ist als Pressemitteilung aus Brüssel vom 03. Sep 2026 datiert.\n\nNach Angaben der Quelle endet damit ein dreijähriger Prozess. In diesem Zeitraum habe die Kommission die Interessenträger umfassend konsultiert. Weitergehende Details zu Inhalt, Reichweite oder unmittelbaren Folgeschritten nennt der gelieferte Text nicht.",
@@ -83,7 +941,25 @@
     },
     {
       "story_id": "wt-edd4484465895b46",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-323b99e66fb46e39-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-323b99e66fb46e39-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-323b99e66fb46e39-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
       "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
       "source_summary": "France 24 berichtet über einen nepalesischen Arbeiter, der seine Flucht aus einem Tunnel eines Wasserkraftprojekts nach der schweren Flut schildert. Der Bericht nennt zugleich, dass in Tunneln von sechs Wasserkraftwerken in Nepal rund 900 Arbeiter feststecken sollen.\n\nAußerdem heißt es, die Zahl der Vermissten in der Himalaya-Katastrophe sei am Donnerstag auf 5,624 gestiegen; dies werde nepalesischen und chinesischen Behörden zugeschrieben. Weitere unabhängige Bestätigungen oder ein genauer Rettungsstand werden in der Quelle nicht genannt.",
@@ -178,7 +1054,25 @@
     },
     {
       "story_id": "wt-c15cb7a9f3b72c35",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c15cb7a9f3b72c35-e3603aec0ee3b825-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c15cb7a9f3b72c35-e3603aec0ee3b825-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c15cb7a9f3b72c35-e3603aec0ee3b825-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "einkommensteuerreform-beschlossen-b72c35",
       "title": "Regierung beschließt Entwurf zur Einkommensteuerreform",
       "source_summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Vorgesehen sind höhere Beträge beim Kindergeld, beim Grund- und Kinderfreibetrag sowie beim Arbeitnehmer-Pauschbetrag. Der Einkommensteuertarif soll im Bereich zwischen 17.800 und 70.600 Euro abgeflacht werden. Die Maßnahmen sollen 2027 beginnen und ab 2028 vollständig gelten; das genannte Entlastungsvolumen liegt bei rund zehn Milliarden Euro pro Jahr.\n\nDas Kindergeld soll je Kind und Monat von 259 Euro auf 267 Euro im Jahr 2027 und 272 Euro im Jahr 2028 steigen. Genannt werden außerdem höhere Kinder- und Grundfreibeträge sowie ein Arbeitnehmer-Pauschbetrag von 1.430 Euro. Zur Gegenfinanzierung nennt die Quelle Änderungen am Reichensteuersatz und den Abbau einzelner Vergünstigungen. Unter anderem sollen die Absetzbarkeit von Handwerkerleistungen sinken und der Pauschsteuersatz für Minijobs steigen. Ein Rechenbeispiel beschreibt für eine Familie mit zwei Kindern ab 2028 eine jährliche Entlastung von mehr als 600 Euro.",
@@ -227,7 +1121,25 @@
     },
     {
       "story_id": "wt-e01001c00cf12041",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "federal-judge-blocks-trump-s-new-bid-to-abolish-birthright-citizenship-citing-supreme-co-f12041",
       "title": "Federal judge blocks Trump's new bid to abolish birthright citizenship citing Supreme Court precedent",
       "source_summary": "Euronews berichtet, dass ein Bundesrichter einen neuen Versuch von Donald Trump gestoppt habe, das Geburtsortsprinzip abzuschaffen. Die Quelle ordnet die Entscheidung als Bezug auf ein früheres Vorgehen ein und schreibt, der Supreme Court habe zuvor schon einen Exekutivversuch gegen das Recht von Kindern geblockt, deren Eltern keinen legalen Aufenthaltsstatus haben.\n\nWeitere Details zum Inhalt der richterlichen Begründung oder zum Wortlaut der Entscheidung nennt der vorliegende Textausschnitt nicht. Auch bleibt offen, welches konkrete Verfahrensstadium der Fall im Moment des Berichts hatte.",
@@ -296,7 +1208,25 @@
     },
     {
       "story_id": "wt-7ae0b9f22404b684",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
       "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
       "source_summary": "Nach mutmaßlichen Sabotageakten an Stromnetzen in Brandenburg und bei Köln berichtet die hessenschau, dass Hessens Innenminister Roman Poseck keine Hinweise auf vergleichbare Taten in Hessen sieht. Zugleich würden die Sicherheitsvorkehrungen erhöht; als Beispiel nennt der Beitrag den Main-Kinzig-Kreis.\n\nDer Text beschreibt außerdem, dass Betreiber kritischer Infrastruktur für die Sicherung ihrer Anlagen grundsätzlich selbst verantwortlich sind und sich mit den zuständigen Landesministerien austauschen. Genannt wird, dass die Kreiswerke Main-Kinzig den Schutz ihrer Anlagen verstärken, darunter drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Konkrete Schutzkonzepte bleiben laut Innenministerium geheim.",
@@ -375,7 +1305,25 @@
     },
     {
       "story_id": "wt-a77b5d9b2935de2a",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "tv-im-seniorenheim-zimmer-in-dahn-keine-zusatzliche-gema-lizenz-notig-35de2a",
       "title": "TV im Seniorenheim-Zimmer in Dahn: Keine zusätzliche GEMA-Lizenz nötig",
       "source_summary": "Ein SWR-Bericht meldet aus Dahn in der Südwestpfalz einen Rechtsstreit um GEMA-Gebühren in einem Seniorenheim. Nach Darstellung des Beitrags hatte der Betreiber TV-Programme über das hauseigene Kabelnetz zeitgleich, vollständig und unverändert in die Zimmer weitergeleitet.\n\nDer Bericht sagt, der Bundesgerichtshof habe nun entschieden, dass dafür keine zusätzliche Lizenz nötig sei, und damit ein EuGH-Urteil bestätigt. Außerdem heißt es, die Aussage solle grundsätzlich auch für andere Seniorenheime gelten, wenn TV- und Hörfunksignale per Satellit empfangen und intern so weitergeleitet werden.",
@@ -464,7 +1412,25 @@
     },
     {
       "story_id": "wt-57bcbc8dea706471",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-57bcbc8dea706471-c4c7698f6151367a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-57bcbc8dea706471-c4c7698f6151367a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-57bcbc8dea706471-c4c7698f6151367a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "nach-angriff-auf-stromnetz-brandenburger-polizei-pruft-bekennerschreiben-706471",
       "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
       "source_summary": "Die Berichte sagen, dass die Polizei nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben prüft. Nach Polizeiangaben ist die Authentizität des Schreibens derzeit offen; bestätigt oder verneint werden könne sie noch nicht.\n\nDie Ermittlungen laufen weiter und werden unter anderem wegen der Bildung einer terroristischen Vereinigung geführt. Zugleich wird berichtet, dass ein Medienbericht von einem Einzeltäter spricht, der sich in dem Schreiben zu der Tat bekenne. Die polizeiliche Suche am Umspannwerk ist nach den Berichten abgeschlossen.",
@@ -575,7 +1541,25 @@
     },
     {
       "story_id": "wt-9812656e38b0d665",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-927fe87c3270427c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-927fe87c3270427c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-927fe87c3270427c-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
       "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
       "source_summary": "Brandenburg reagiert laut Bericht auf eine Stromnetz-Sabotage nahe dem Kraftwerk Jänschwalde mit neuen Sicherheitsplänen. Innenminister Jan Redmann kündigt ein „360-Grad-Sicherheitszentrum“ an, in dem Erkenntnisse aus Verfassungsschutz, Polizei sowie Brand- und Katastrophenschutz gebündelt werden sollen.\n\nZugleich soll ein Beleihungsgesetz vorbereitet werden. Damit könnten Betreiber kritischer Infrastruktur den Schutz ihrer Anlagen selbst organisieren; bislang dürfen das laut Bericht nur Landes-, Bundespolizei und Bundeswehr. Außerdem nennt das Innenministerium weitere geplante Änderungen bei mehreren Sicherheitsgesetzen. Offene Fragen bleiben Zeitpunkt, genauer Inhalt und parlamentarischer Verlauf.",
@@ -658,7 +1642,25 @@
     },
     {
       "story_id": "wt-98ff7e403362fdf9",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-572841e1897952f8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-572841e1897952f8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-572841e1897952f8-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
       "title": "Stärkerer Schutz kritischer Infrastrukturen",
       "source_summary": "Die Bundesregierung beschreibt das KRITIS-Dachgesetz als Rahmen für bundeseinheitliche und sektorübergreifende Mindeststandards beim Schutz kritischer Infrastrukturen. Genannt werden unter anderem Energie, Transport und Verkehr, Finanz- und Versicherungswesen, Gesundheit, Trinkwasser, Abwasser, Siedlungsabfallentsorgung, Informationstechnik und Telekommunikation, Ernährung, Weltraum sowie öffentliche Verwaltung.\n\nLaut Quelle soll das Gesetz die Widerstandsfähigkeit dieser Infrastrukturen erhöhen und den Betrieb auch bei Vorfällen sichern. Im parlamentarischen Verfahren kamen Änderungen hinzu: Länder dürfen weitere kritische Anlagen identifizieren, das Bundesinnenministerium soll Kriterien und Verfahren per Rechtsverordnung festlegen, und eine Evaluierung ist bereits in 2 Jahren vorgesehen. Das Gesetz trat am 17.03.2026 in Kraft; für Paragraf 14 Abs. 3-5 ist der 01.01.2030 genannt.",
@@ -793,7 +1795,25 @@
     },
     {
       "story_id": "wt-4b5d0962d323432a",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-d95bd8255ed48642-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-d95bd8255ed48642-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-d95bd8255ed48642-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
       "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
       "source_summary": "Die Europäische Kommission hat einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften genehmigt. Er soll ab 2031 Kapazitäten für Stromerzeugung, Speicherung und flexiblen Verbrauch verfügbar machen; die Kommission beziffert die erwarteten Kosten auf 15,6 bis 35,2 Milliarden Euro. Die Bundesregierung berichtet ergänzend, dass Bundestag und Bundesrat das Strom-Versorgungssicherheits- und Kapazitätengesetz verabschiedet haben.\n\nNach der Regierungsdarstellung sollen in den nächsten zwölf Monaten elf Gigawatt steuerbare Kapazität ausgeschrieben werden; weitere Ausschreibungen sind für 2027 und 2029 vorgesehen. Anbieter sollen bereits für die Bereithaltung von Leistung vergütet werden und müssen zugesagte Kapazität zu relevanten Zeitpunkten nachweisen. Für erste Langzeitkapazitäten ist ein Resilienzkriterium zur Fertigung wesentlicher Bauteile im Europäischen Wirtschaftsraum genannt. Der Mechanismus soll Dunkelflauten bei wachsendem Anteil erneuerbarer Energien absichern.",
@@ -850,7 +1870,25 @@
     },
     {
       "story_id": "wt-acae834e3431b203",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-acae834e3431b203-1fee91b6ff613032-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-acae834e3431b203-1fee91b6ff613032-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-acae834e3431b203-1fee91b6ff613032-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "denkmal-fur-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsministe-31b203",
       "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
       "source_summary": "Die Bundesregierung kündigt den Baubeginn für ein Denkmal an, das an die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung Polens von 1939 bis 1945 erinnern soll. Der Deutsche Bundestag hat das Vorhaben beschlossen. Als Standort ist das Gelände der früheren Kroll-Oper im Zentrum Berlins vorgesehen, in der Nähe von Bundeskanzleramt und Bundestag.\n\nNach Angaben der Quelle läuft derzeit ein Gestaltungswettbewerb. Ein Preisgericht soll im Dezember 2026 über den Siegerentwurf beraten; die Errichtung soll 2027 beginnen. Kulturstaatsminister Wolfram Weimer äußerte sich anlässlich des Jahrestags des deutschen Überfalls auf Polen zu dem Vorhaben. Am vorgesehenen Ort besteht bereits seit Juni 2025 ein temporärer Gedenkort, der auf Initiative des Deutschen Polen-Instituts eingerichtet und der Öffentlichkeit übergeben wurde. Weitere Angaben zur endgültigen Gestaltung oder zu den Baukosten nennt die Meldung nicht.",
@@ -900,7 +1938,25 @@
     },
     {
       "story_id": "wt-63b6c057c20a2143",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
       "title": "KI-Sicherheitsinstitut eröffnet",
       "source_summary": "Die Bundesregierung meldet die Eröffnung des AI Safety and Security Institute Deutschland, kurz AISI Deutschland. Das nationale Kompetenz- und Evaluierungsinstitut wurde vom Nationalen Sicherheitsrat beschlossen und wird gemeinsam vom Bundesdigitalministerium und vom Bundesinnenministerium aufgebaut und geleitet. Es ist nach der Darstellung keine Regulierungsbehörde, sondern ein analytisch-operatives Kompetenzzentrum.\n\nAISI Deutschland soll moderne KI-Modelle, Cybersicherheit und mögliche technische Risiken untersuchen, vorhandene Analysekapazitäten bündeln und Lösungen für den sicheren Umgang mit KI-Systemen entwickeln. Vorgesehen ist Beratung für Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft. Außerdem soll das Institut mit vergleichbaren Einrichtungen im Ausland Informationen austauschen und auf gemeinsame internationale Standards hinwirken. Zur Eröffnung betonten die Minister Karsten Wildberger und Alexander Dobrindt die schnelle technische Bewertung von KI-Systemen und die internationale Zusammenarbeit. Konkrete Angaben zu Personal, Budget oder einem Zeitplan nennt der Artikel nicht.",
@@ -951,7 +2007,25 @@
     },
     {
       "story_id": "wt-b2161abe6d0a2603",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-62828346069e2cd1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-62828346069e2cd1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-62828346069e2cd1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "neues-forderprogramm-mit-zehn-millionen-euro-fur-projekte-in-ns-und-sed-gedenkstatten-st-0a2603",
       "title": "Neues Förderprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten – Staatsminister Weimer: „Gerade jetzt Orte der Erinnerung stärken“",
       "source_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein neues Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur gestartet. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 insgesamt zehn Millionen Euro vorgesehen. Anträge können seit Veröffentlichung der Meldung eingereicht werden; die Bewerbungsfrist endet am 1. Oktober 2026. Über die Auswahl soll eine unabhängige Jury beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.\n\nGefördert werden Vorhaben in drei Bereichen: Erhalt historischer Orte, Digitalisierung und digitale Lebenswelten sowie Vermittlung und anwendungsbezogene Forschung. Das Programm setzt die im November 2025 beschlossene neue Gedenkstättenkonzeption um. Kulturstaatsminister Wolfram Weimer erklärte zum Start, historische Orte, digitale Zugänge und zeitgemäße Bildungsangebote sollten unterstützt werden. Die Meldung führt außerdem aus, dass die bisherige Projektförderung verdoppelt werde.",
@@ -1002,7 +2076,25 @@
     },
     {
       "story_id": "wt-3c8762489a80692b",
-      "title_image": null,
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-1d35d14d302606f9-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-1d35d14d302606f9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-1d35d14d302606f9-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "regionalnachweisregister-soll-abgewickelt-werden-80692b",
       "title": "Regionalnachweisregister soll abgewickelt werden",
       "source_summary": "Die Bundesregierung schlägt vor, das beim Umweltbundesamt geführte Regionalnachweisregister einzustellen. Das Register dokumentiert Nachweise, mit denen Stromlieferanten gegenüber Endverbrauchern die regionale Herkunft verbrauchten Stroms aus erneuerbaren Energien bestätigen können. Nach Darstellung der Verordnung wurde das Instrument in der Praxis wenig genutzt und erreichte das beabsichtigte Ziel, die Akzeptanz für zusätzliche Anlagen erneuerbarer Energien zu fördern, nicht.\n\nAls weiteren Grund nennt die Vorlage den administrativen Aufwand der Registerführung und die Meldepflichten für Anlagenbetreiber und Energieversorgungsunternehmen. Diese stünden laut Bundesregierung nicht in einem angemessenen Verhältnis zum Nutzen. Eine europarechtliche Pflicht für Regionalnachweise bestehe nicht. Das gesonderte Herkunftsnachweisregister für Strom aus erneuerbaren Energien soll dagegen weitergeführt werden. Für die Verordnungsänderung ist nach der Bundestagsmeldung die Zustimmung des Deutschen Bundestages erforderlich; ein Abschluss dieses Verfahrens wird noch nicht berichtet.",
@@ -1054,7 +2146,25 @@
     },
     {
       "story_id": "wt-a48a6799c362009d",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a48a6799c362009d-15e5cd8d7aeb49d6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a48a6799c362009d-15e5cd8d7aeb49d6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a48a6799c362009d-15e5cd8d7aeb49d6-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "erkennung-und-behandlung-von-sepsis-thematisiert-62009d",
       "title": "Erkennung und Behandlung von Sepsis thematisiert",
       "source_summary": "Die Fraktion Bündnis 90/Die Grünen hat im Deutschen Bundestag eine Kleine Anfrage zur Erkennung und Behandlung von Sepsis in Deutschland gestellt. In der Anfrage wird Sepsis als lebensbedrohliche Fehlregulation der Immunantwort auf eine Infektion beschrieben, die unbehandelt zu Organversagen und Tod führen kann.\n\nDie Abgeordneten fragen die Bundesregierung, ob sie Verbesserungsmöglichkeiten bei Erkennung und Versorgung von Sepsis sieht. Außerdem verlangen sie Auskunft über Forschungsmittel, die in den vergangenen zehn Jahren für die Sepsisforschung bereitgestellt wurden. Weitere Fragen betreffen Erkenntnisse zu Behandlungsfehlern und deren Nutzung für konkrete Maßnahmen zur Patientensicherheit. Die Bundestagsmeldung gibt den Inhalt der Anfrage wieder; eine Antwort der Bundesregierung, neue Versorgungsdaten oder bereits beschlossene Maßnahmen enthält sie noch nicht.",
@@ -1103,7 +2213,25 @@
     },
     {
       "story_id": "wt-293fa4edfc2b5a5d",
-      "title_image": null,
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-ba672a3857af45f6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-ba672a3857af45f6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-ba672a3857af45f6-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-interview-m-2b5a5d",
       "title": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde",
       "source_summary": "Bundesbankpräsident Joachim Nagel äußert sich in einem Interview mit Le Monde zur Inflation, zu möglichen Zinsschritten und zur europäischen Wirtschaft. Er verweist für Juli und August auf Inflationsraten im Euroraum von 2,9 beziehungsweise 3,3 Prozent und auf das mittelfristige Ziel von 2 Prozent. Für die EZB-Ratssitzung am 10. September hält er eine Zinserhöhung für wahrscheinlich, legt sich für spätere Sitzungen wegen schwankender Energiepreise, volatiler Finanzmärkte und großer Unsicherheit aber nicht fest.\n\nNagel begründet seine Haltung mit dem Risiko, dass länger erhöhte Inflation in Lohnverhandlungen einfließt. Zugleich beschreibt er den Euroraum als widerstandsfähig und nennt für Deutschland ein stärker als erwartetes zweites Quartal, robuste Ausfuhren und eine zufriedenstellende Auftragslage im verarbeitenden Gewerbe. Auf Basis der ersten beiden Quartale erwartet er für Deutschland im laufenden Jahr rund ein Prozent Wachstum.",
@@ -1155,7 +2283,25 @@
     },
     {
       "story_id": "wt-0e1ab5081b9f4045",
-      "title_image": null,
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0e1ab5081b9f4045-9e9963ac7c808a3b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0e1ab5081b9f4045-9e9963ac7c808a3b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0e1ab5081b9f4045-9e9963ac7c808a3b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "mfi-zinsstatistik-fur-den-euroraum-juli-2026-9f4045",
       "title": "MFI-Zinsstatistik für den Euroraum: Juli 2026",
       "source_summary": "Die Veröffentlichung der Deutschen Bundesbank verweist auf die MFI-Zinsstatistik der Europäischen Zentralbank für Juli 2026. Im verfügbaren Kurztext werden zwei gewichtete Indikatoren für neue Kreditgeschäfte im Euroraum genannt. Der Indikator der Finanzierungskosten für neue Unternehmenskredite lag bei 3,80 Prozent. Für neue Wohnungsbaukredite an private Haushalte weist die Meldung einen entsprechenden Wert von 3,54 Prozent aus.\n\nBeide Werte waren nach Angaben der Quelle gegenüber dem vorherigen Stand weitgehend unverändert. Die Meldung beschreibt damit die Kosten neuer Bankkredite in den beiden genannten Segmenten, nicht den gesamten Bestand bereits laufender Darlehen. Weitere Einzelheiten stehen in einer verlinkten EZB-Veröffentlichung als PDF. Der auf der Bundesbank-Seite verfügbare Kurztext nennt keine Ursachen für die Entwicklung und enthält dort auch keine weitergehende Bewertung des längerfristigen Trends.",
@@ -1206,7 +2352,25 @@
     },
     {
       "story_id": "wt-9e4c93f4907aaa42",
-      "title_image": null,
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e4c93f4907aaa42-214e600d5aea182f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e4c93f4907aaa42-214e600d5aea182f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e4c93f4907aaa42-214e600d5aea182f-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "fur-bezahlbare-windenergie-auf-see-7aaa42",
       "title": "Für bezahlbare Windenergie auf See",
       "source_summary": "Das Bundeskabinett hat einen Gesetzentwurf zur Änderung des Windenergie-auf-See-Gesetzes beschlossen. Die bisherigen Ausbauziele für Offshore-Windenergie sollen bestehen bleiben, während Ausschreibungen, Netzanbindung und Finanzierung verändert werden. Die Bundesregierung nennt Bezahlbarkeit, Kosteneffizienz, Versorgungssicherheit und die tatsächliche Realisierung vergebener Projekte als Ziele des Entwurfs.\n\nVorgesehen ist, Netzanbindungen zu optimieren und die Regellaufzeit von Offshore-Anlagen von 25 auf 35 Jahre zu verlängern. Außerdem sollen Differenzverträge eingeführt werden: Betreiber erhalten einen abgesicherten Mindeststrompreis; darüber hinausgehende Erlöse werden abgeschöpft. Im Zuge des europäischen Net-Zero Industry Acts sollen zusätzliche Kriterien unter anderem für Cybersicherheit und Widerstandsfähigkeit gelten. Der Meeresnaturschutz bleibt laut Quelle Bestandteil der Genehmigungsverfahren. Bundeswirtschaftsministerin Katherina Reiche erklärte, die Reform solle Investitionssicherheit, realistischere Auktionen und eine bessere Nutzung der Leitungen schaffen.",
@@ -1258,7 +2422,25 @@
     },
     {
       "story_id": "wt-ab0d79d228a04a51",
-      "title_image": null,
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ab0d79d228a04a51-1e8d16a7a4759f41-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ab0d79d228a04a51-1e8d16a7a4759f41-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ab0d79d228a04a51-1e8d16a7a4759f41-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "504-26-verordnung-zur-beschleunigung-der-anerkennungsverfahren-auslandischer-berufsquali-a04a51",
       "title": "504/26 | Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen | 2. September 2026",
       "source_summary": "Der Bundesrat führt unter der Nummer 504/26 einen Beratungsvorgang mit dem Titel „Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen“. Der Eintrag ist auf den 3. September 2026 datiert. Als federführend ist der Ausschuss mit dem Kürzel G genannt; zusätzlich weist die Seite die Kürzel AIS, Fz und K für weitere beteiligte Ausschüsse aus.\n\nDie Originalseite kündigt an, dass die Drucksachen zu diesem Vorgang noch nicht vorliegen und in Kürze veröffentlicht werden sollen. Damit dokumentiert sie bislang den Eingang und die Ausschusszuweisung der Verordnung, aber noch keine Beratungsergebnisse oder Entscheidung des Bundesrates. Auch konkrete Änderungen an Anerkennungsverfahren, betroffene Heilberufe, Fristen und Zuständigkeiten lassen sich dem derzeit veröffentlichten Eintrag noch nicht entnehmen. Diese Punkte bleiben bis zur Bereitstellung der angekündigten Drucksachen offen.",
@@ -1307,7 +2489,25 @@
     },
     {
       "story_id": "wt-b891f102e908a573",
-      "title_image": null,
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b891f102e908a573-c0764c984669b52c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b891f102e908a573-c0764c984669b52c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b891f102e908a573-c0764c984669b52c-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
       "slug": "bundeszuschuss-fur-niedrigere-stromkosten-08a573",
       "title": "Bundeszuschuss für niedrigere Stromkosten",
       "source_summary": "Die Bundesregierung plant, die Strom-Netzentgelte auch von 2027 bis 2029 mit einem Bundeszuschuss zu dämpfen. Für jedes dieser Jahre sollen 5,525 Milliarden Euro aus dem Klima- und Transformationsfonds an die Übertragungsnetzbetreiber fließen. Das Kabinett hat dafür Änderungen am Energiewirtschaftsgesetz beschlossen. Die Netzbetreiber sollen den Zuschuss in ihre Entgeltkalkulation einbeziehen; über die Stromlieferanten soll die Kostendämpfung Haushalte und Unternehmen erreichen.\n\nFür 2026 nennt die Quelle einen Zuschuss von 6,5 Milliarden Euro. Ein Haushalt mit 3.500 Kilowattstunden Jahresverbrauch könne dadurch rechnerisch etwa 100 Euro sparen, wobei der tatsächliche Betrag unter anderem von Netzgebiet, Verbrauch und Wohnsituation abhängt. Für 2027 liegen laut Artikel noch keine konkreten Entgeltdaten vor. Die Übertragungs- und Verteilnetzbetreiber sollen transparent machen, wie der Zuschuss die Netzentgelte verändert. Die Meldung ordnet den Zuschuss in weitere Maßnahmen wie die abgeschaffte Gasspeicherumlage und einen geplanten Industriestrompreis ein.",

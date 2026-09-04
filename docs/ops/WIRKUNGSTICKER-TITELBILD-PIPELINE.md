@@ -126,3 +126,19 @@ Bildroute ohne Token 403, authentifizierter Modell-/Kontotest ohne Generierung.
 Der Quellenbereich beschreibt öffentlich Belege, Interessen und Prüfgrenzen.
 Keine Abos/Agentur-APIs zu kaufen ist eine interne Kostenregel: weiterhin nur
 freie zulässige Zugänge, keine Paywall-Umgehung und keine Drittanbieter-Umgehung.
+
+### Linux-Nachprüfung vom 4. September 2026
+
+Der erste Produktions-Backfill deckte einen Linux-spezifischen Cleanup-Race auf:
+Chrome-Hilfsprozesse schrieben noch ins temporäre Profil; `ENOTEMPTY` im `finally`
+verwarf dadurch bereits fertig gerenderte PNGs. Die Reparatur beendet ausschließlich
+die eigens gestartete Prozessgruppe und räumt mit begrenzten Wiederholungen auf.
+Ein verbliebener Cleanup-Fehler wird gemeldet, aber vernichtet kein Bildergebnis.
+Der neue echte Linux-/Chrome-Test prüft beide Modi und alle drei Ausgabegrößen,
+ohne Higgsfield-Aufrufe oder Credits. Gespeicherte Originale werden wiederverwendet.
+
+Umfangreiche Nachrichtencluster halten außerdem bereits im Client das 40.000-
+Zeichen-Limit der Oracle-Analyse ein: Quellenidentitäten, Claims und Provenienz
+bleiben vollständig erhalten; bei Bedarf werden unveränderte Belegsegmente
+gleichmäßig ausgewählt und ausdrücklich als unvollständige Auswahl gekennzeichnet.
+Reicht selbst das nicht, wird vor einem kostenpflichtigen Request zurückgestellt.

@@ -23,6 +23,17 @@ test("release notifier is gated by a public change and uses an idempotent public
   assert.match(notifier, /WOEK_NEWS_PUSH_ADMIN_TOKEN/);
 });
 
+test("manual refresh loads image-only releases, but offline keeps the current page", async () => {
+  const app=fs.readFileSync("assets/js/news-pwa.js","utf8");
+  const code=app.slice(app.indexOf("  async function checkForNews("),app.indexOf("  async function markNewsAsSeen("));
+  for(const offline of [false,true]) {
+    let reloads=0,updates=0;
+    const context={Date,cards:[{}],latestFeedTimestamp:0,autoReloadKey:"reload",newestCardTimestamp:()=>0,registrationPromise:Promise.resolve({update:async()=>{updates++;}}),refreshStatus:{textContent:""},document:{visibilityState:"visible"},window:{sessionStorage:{getItem:()=>String(Date.now()),setItem(){}},location:{reload(){reloads++;}}},fetch:async()=>{if(offline)throw new Error("offline");return {ok:true,json:async()=>({items:[]})};}};
+    const result=await vm.runInNewContext(`${code}\ncheckForNews({manual:true})`,context);
+    assert.equal(updates,1);assert.equal(reloads,offline?0:1);assert.equal(result,offline?null:true);
+  }
+});
+
 test("ticker push job runs after a successful deploy despite skipped release-assets", () => {
   const workflow = fs.readFileSync(".github/workflows/deploy.yml", "utf8");
   const notificationJob = workflow.split("  notify-ticker:")[1];

@@ -1030,6 +1030,87 @@
       },
       "source_failures": 0,
       "quality_holds": 119
+    },
+    {
+      "run_id": "news-run-8fe02f263519",
+      "started_at": "2026-09-04T00:59:37.557Z",
+      "completed_at": "2026-09-04T01:02:52.395Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 1024,
+        "feed_entries_new": 6,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 653,
+        "story_clusters": 11,
+        "locally_rejected": 11,
+        "ai_stories": 12,
+        "published_stories": 3
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 74049,
+        "output_tokens": 12599,
+        "estimated_cost_usd": 0.083721,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 114
+    },
+    {
+      "run_id": "news-run-cd68d3c28bfd",
+      "started_at": "2026-09-04T01:08:41.032Z",
+      "completed_at": "2026-09-04T01:11:30.458Z",
+      "berlin_slot": "Automatischer Lauf 03:00",
+      "counts": {
+        "feed_entries_fetched": 0,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 0,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 12,
+        "published_stories": 2
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 65290,
+        "output_tokens": 15604,
+        "estimated_cost_usd": 0.34292,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 106
+    },
+    {
+      "run_id": "news-run-7c59a3b41204",
+      "started_at": "2026-09-04T01:26:36.485Z",
+      "completed_at": "2026-09-04T01:30:18.159Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 852,
+        "feed_entries_new": 6,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 604,
+        "story_clusters": 12,
+        "locally_rejected": 11,
+        "ai_stories": 12,
+        "published_stories": 3
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 82771,
+        "output_tokens": 19038,
+        "estimated_cost_usd": 0.119239,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 102
     }
   ]
 }
