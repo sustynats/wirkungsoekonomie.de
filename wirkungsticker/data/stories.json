@@ -1,7 +1,138 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T02:21:15.650Z",
+  "updated_at": "2026-09-04T02:36:31.848Z",
   "stories": [
+    {
+      "story_id": "wt-d80fd849c477e2ad",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "gesundheitscheck-vor-ausbildung-thuringen-ubernimmt-kosten-fur-untersuchung-77e2ad",
+      "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
+      "source_summary": "Das MDR-Stück meldet, dass Thüringen einen Teil der Kosten für den Gesundheits-Check vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen will. Nach Angaben des Sozialministeriums hatten Ärztinnen und Ärzte angekündigt, die Untersuchung nicht mehr zum seit 30 Jahren geltenden Gebührensatz von 23,31 Euro anzubieten.\n\nAls Folge sei mit der Kassenärztlichen Vereinigung vereinbart worden, pro Untersuchung 53,62 Euro abzurechnen. Das Land übernehme die höhere Gebühr für die Jahre 2026 und 2027; entsprechende Mittel seien im Landeshaushalt eingestellt. Laut Bericht ist Thüringen derzeit das einzige Bundesland mit dieser Regelung. Gesundheitschecks sind Teil des Jugendarbeitsschutzes.",
+      "summary": "Thüringen will die Kosten für Gesundheitschecks vor Ausbildungsbeginn für unter 18-Jährige teilweise übernehmen. Hintergrund ist ein Konflikt um den seit 30 Jahren geltenden Gebührensatz und eine neue Abrechnungsregel mit der Kassenärztlichen Vereinigung.",
+      "detail_summary": "Gesichert ist zunächst: Thüringen will nach Angaben des Sozialministeriums einen Teil der Kosten für die gesetzlich vorgeschriebene Untersuchung von minderjährigen Ausbildungsanfängern übernehmen. Auslöser ist, dass Ärztinnen und Ärzte die Leistung nicht mehr zum alten Gebührensatz erbringen wollten. Für die Abrechnung wurde laut Bericht mit der Kassenärztlichen Vereinigung ein Satz von 53,62 Euro je Untersuchung vereinbart, wobei das Land die höhere Gebühr für 2026 und 2027 trägt. Das ist materiell relevant, weil damit ein Zugangsvoraussetzung für Ausbildung abgesichert werden soll und zugleich die Kosten zwischen Staat und Ärzteschaft neu verteilt werden. Mögliche Folge ist, dass das Angebot der Pflichtuntersuchung flächendeckend erhalten bleibt; ob das tatsächlich so eintritt, bleibt offen. Die Evidenz stützt sich jedoch nur auf einen journalistischen Bericht mit ministeriellen Angaben, daher bleiben Reichweite, Umsetzung und mögliche Nebenfolgen vorerst nur begrenzt belastbar.",
+      "why_relevant": "Die Meldung betrifft eine verbindliche Kostenregel für eine gesetzlich vorgeschriebene Untersuchung im Übergang in Ausbildung und damit einen Eingriff in Finanzierung, Zugang und Versorgung.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit",
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind minderjährige Ausbildungsanfänger und Ärztinnen/Ärzte; der Wirkpfad läuft über Zugang zur Pflichtuntersuchung und Kostenverteilung."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Umweltbezug erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Entscheidung betrifft öffentliche Mittel und eine Regelung im Sozial- und Gesundheitssystem; die Beleglage bleibt aber einseitig."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "alter Gebührensatz",
+            "value": "23,31",
+            "unit": "Euro",
+            "context": "Seit 30 Jahren unveränderter Satz laut Bericht"
+          },
+          {
+            "label": "neuer Satz pro Untersuchung",
+            "value": "53,62",
+            "unit": "Euro",
+            "context": "Abrechnung pro Untersuchung nach Vereinbarung"
+          },
+          {
+            "label": "Laufzeit",
+            "value": "2026 und 2027",
+            "unit": "Jahre",
+            "context": "Für diese Jahre übernimmt das Land die höhere Gebühr"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "kinder_jugend"
+        ],
+        "timeline": [
+          {
+            "date": "2026",
+            "label": "Land übernimmt höhere Gebühr"
+          },
+          {
+            "date": "2027",
+            "label": "Land übernimmt höhere Gebühr"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T13:56:50.000Z",
+      "last_updated": "2026-09-04T02:37:01.895Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-ef24781d9a226809238d",
+      "source_published_at": "2026-09-03T13:56:50.000Z",
+      "published_at": "2026-09-04T02:37:01.895Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Landeshaushalt die angekündigten Mittel für 2026 und 2027 tatsächlich bereitstellt und die Abrechnungspraxis umgesetzt wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Haushaltsansatz, Verwaltungsumsetzung und tatsächlich abgerechnete Fälle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-340f0d8865c0010f",
+          "announced_at": "2026-09-03T13:56:50.000Z",
+          "follow_up_date": "2026-09-11T02:37:01.895Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T13:56:50.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "title_image": {
