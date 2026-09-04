@@ -11,25 +11,27 @@ const handoff = JSON.parse(readFileSync(
   'utf8',
 ));
 
-test('Berlin SPD P22 is canonical-source-bound and advances only to P23', () => {
+test('Berlin SPD P22 stays canonical-source-bound under the subsequent P23 overlay', () => {
   const spd = residual.programmes.find((programme) => programme.party === 'SPD');
   assert.ok(spd);
   assert.equal(spd.programme_analysis_complete, false);
-  assert.equal(spd.terminal_object_count, 36);
-  assert.deepEqual(spd.terminal_status_counts, {
+  const protectedRecords = spd.terminal_objects.filter((item) => Number(item.object_id.match(/-SU-(\d+)/)?.[1]) <= 265);
+  assert.equal(protectedRecords.length, 36);
+  const protectedCounts = Object.fromEntries(['EXPLICIT_FACH_APPROVED', 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON', 'NON_EFFECT_CONTEXT_REVIEWED', 'SOURCE_UNIT_RECLASSIFIED_VERSIONED'].map((state) => [state, protectedRecords.filter((item) => item.fach_state === state).length]));
+  assert.deepEqual(protectedCounts, {
     EXPLICIT_FACH_APPROVED: 16,
     REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON: 2,
     NON_EFFECT_CONTEXT_REVIEWED: 14,
     SOURCE_UNIT_RECLASSIFIED_VERSIONED: 4,
   });
-  assert.equal(spd.remaining_review_envelope_count, 44);
+  assert.equal(spd.remaining_review_envelope_count, 43);
   assert.deepEqual(
     spd.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-    Array.from({ length: 44 }, (_, index) => index + 23),
+    Array.from({ length: 43 }, (_, index) => index + 24),
   );
   assert.deepEqual(spd.protected_fach_scope.next_unreviewed_source_order_frontier, {
-    physical_page: 23,
-    source_unit_from: 'BE-SPD-2026-SU-0266',
+    physical_page: 24,
+    source_unit_from: 'BE-SPD-2026-SU-0281',
   });
 });
 
@@ -59,7 +61,7 @@ test('the eight corrected canonical bindings cannot regress to stale P22 source 
 test('deterministic P22 children retain bidirectional version lineage and exact hashes', () => {
   const spd = residual.programmes.find((programme) => programme.party === 'SPD');
   const children = spd.terminal_objects.filter(
-    (item) => item.object_kind === 'DETERMINISTIC_SEGMENTATION_REPLACEMENT',
+    (item) => item.object_kind === 'DETERMINISTIC_SEGMENTATION_REPLACEMENT' && Number(item.object_id.match(/-SU-(\d+)/)?.[1]) <= 265,
   );
   assert.equal(children.length, 5);
   for (const child of children) {

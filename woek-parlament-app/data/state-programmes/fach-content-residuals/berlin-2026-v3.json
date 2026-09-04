@@ -4,7 +4,7 @@
   "jurisdiction": "DE-BE",
   "election": "agh-2026-be",
   "issue": 240,
-  "base_main_commit": "d8de40a2c740ab1c3d4b41d0ccb1a7fdf65d5d76",
+  "base_main_commit": "1db5d993bd7149c3c09993bf346f66d6c587a7ee",
   "source_as_of": "2026-09-03T08:39:00+02:00",
   "status": "BERLIN_FACH_TRUTH_REMEDIATION_OPEN_8_OF_12",
   "controller_authority": {
@@ -815,6 +815,43 @@
       "protected_physical_scope_after_materialization": "P1-P22",
       "next_source_order_frontier": "P23 / BE-SPD-2026-SU-0266+",
       "gate": "BE_SPD_2026_P22_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_CANONICAL_FINAL_LEDGER_REPAIR"
+    },
+    {
+      "handoff_id": "BE-SPD-P23-CANONICAL-EXPLICIT-FACH-2026-V1",
+      "issue_comment_ids": [
+        5526873010
+      ],
+      "issue_comment_urls": [
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010"
+      ],
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-explicit-v1.json",
+      "file_sha256": "95e2b0b205c53e80332652221de330d25e487e849b0e8f759b880a71f82a33a5",
+      "authoritative_markdown_paths": [
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md"
+      ],
+      "authoritative_markdown_file_sha256s": [
+        "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+      ],
+      "full_source_proof": {
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-full-source-v1.json",
+        "file_sha256": "6ebb73a41f03c09531a5754255e9615402bc05284c37167ee2fade701ff99a2b"
+      },
+      "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+      "artifact_sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+      "exact_terminal_object_count": 74,
+      "active_terminal_review_leaf_count": 34,
+      "exact_open_child_object_count": 0,
+      "physical_pdf_pages": [
+        23
+      ],
+      "cross_page_objects_consumed_once": [
+        "BE-SPD-2026-SU-0280"
+      ],
+      "next_source_order_frontier": {
+        "physical_page": 24,
+        "source_unit_from": "BE-SPD-2026-SU-0281"
+      },
+      "gate": "BE_SPD_2026_P23_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MATERIALISATION"
     }
   ],
   "rejected_predecessor": {
@@ -912,17 +949,17 @@
       "CDU",
       "Die Linke"
     ],
-    "remaining_genuine_fach_review_required": 1193,
-    "remaining_review_scope_count": 1193,
-    "remaining_page_review_envelopes": 1193,
+    "remaining_genuine_fach_review_required": 1192,
+    "remaining_review_scope_count": 1192,
+    "remaining_page_review_envelopes": 1192,
     "remaining_exact_effect_objects_identified": 0,
     "remaining_exact_effect_object_count": null,
-    "terminal_source_objects": 1478,
+    "terminal_source_objects": 1552,
     "terminal_status_counts": {
       "EXPLICIT_FACH_APPROVED": 487,
-      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 168,
-      "NON_EFFECT_CONTEXT_REVIEWED": 685,
-      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 138
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 202,
+      "NON_EFFECT_CONTEXT_REVIEWED": 722,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 141
     },
     "known_segmentation_defects": 2,
     "berlin_completion_gate": "FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH"
@@ -30668,16 +30705,16 @@
       "segmentation_state": "PARTIAL_TERMINAL_WITH_REVIEW_ENVELOPES_OPEN",
       "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
       "programme_analysis_complete": false,
-      "terminal_object_count": 36,
+      "terminal_object_count": 110,
       "terminal_status_counts": {
         "EXPLICIT_FACH_APPROVED": 16,
-        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 2,
-        "NON_EFFECT_CONTEXT_REVIEWED": 14,
-        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 4
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 36,
+        "NON_EFFECT_CONTEXT_REVIEWED": 51,
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 7
       },
-      "remaining_review_envelope_count": 44,
+      "remaining_review_envelope_count": 43,
       "remaining_exact_object_count": 0,
-      "remaining_review_scope_count": 44,
+      "remaining_review_scope_count": 43,
       "terminal_objects": [
         {
           "object_id": "BE-SPD-2026-SU-0248",
@@ -31442,20 +31479,2466 @@
           },
           "fach_handoff_locator": "Issue #240 comment 5483568051; deterministic record BE-SPD-2026-SU-0265-C02-f6f05f020690",
           "decision_kind": "DETERMINISTIC_COMPOUND_CHILD"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0266",
+          "source_unit_id": "BE-SPD-2026-SU-0266",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b003@42.52,69.84,272.22,108.22",
+          "source_text": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden. Als Baustein dafür machen wir Baden in der Spree möglich.",
+          "source_text_sha256": "35e24cae42e15952a7d96ee13fd5a1a8c9f063430ec5d9383e7e2fb8a11ae776",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0266-A01",
+            "BE-SPD-2026-SU-0266-A02"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden. Als Baustein dafür machen wir Baden in der Spree möglich.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0266"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0267",
+          "source_unit_id": "BE-SPD-2026-SU-0267",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b004@42.52,118.94,232.62,134.25",
+          "source_text": "Die Berliner Stadtnatur erhalten",
+          "source_text_sha256": "3637e40d1347d585c12d9ba891081d9c17f6b2b8cee96ea8d24fea7d5c9dfdc7",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "structural heading",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Die Berliner Stadtnatur erhalten",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0267"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_text": "Kleingärten stehen für lebendiges, soziales Stadtleben. Wir stärken und schützen sie, fördern Öffnung für Nachbarschaften und den Erhalt der Biodiversität. Wir entwickeln Kleingartenanlagen als Naherholungsgebiete – für die Kleingärtnerinnen und Kleingärtner und für die Stadtgesellschaft. Gemeinschaftliches Gärtnern im öffentlichen Raum unterstützen wir.",
+          "source_text_sha256": "5ac63e67d646ac04b524b252235f9390c910b957f30ae9b5f722b42ce3f7964e",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0268-A01",
+            "BE-SPD-2026-SU-0268-A02",
+            "BE-SPD-2026-SU-0268-A03",
+            "BE-SPD-2026-SU-0268-A04",
+            "BE-SPD-2026-SU-0268-A05",
+            "BE-SPD-2026-SU-0268-C01-073719e1d0d4",
+            "BE-SPD-2026-SU-0268-C02-6fa2f67b3d2c"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Kleingärten stehen für lebendiges, soziales Stadtleben. Wir stärken und schützen sie, fördern Öffnung für Nachbarschaften und den Erhalt der Biodiversität. Wir entwickeln Kleingartenanlagen als Naherholungsgebiete – für die Kleingärtnerinnen und Kleingärtner und für die Stadtgesellschaft. Gemeinschaftliches Gärtnern im öffentlichen Raum unterstützen wir.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0269",
+          "source_unit_id": "BE-SPD-2026-SU-0269",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b006@42.52,257.35,292.95,361.73",
+          "source_text": "Mit der EU-Wiederherstellungsverordnung soll Berlin 20 Prozent seiner Fläche renaturieren. Wir nutzen das, um den Wert der Stadtnatur zu vermitteln – auch mit Schulen und Informationskampagnen. Die Biodiversitätsstrategie setzen wir um, am Berlin Urban Nature Pact halten wir fest und wirken dem Artensterben wirksam entgegen.",
+          "source_text_sha256": "3ecd4a300afaf6debb3a3947462cf3d88933b9e6328c3dad027c999ed23cfdbf",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0269-A01",
+            "BE-SPD-2026-SU-0269-A02",
+            "BE-SPD-2026-SU-0269-C01-7ea818c99e4c",
+            "BE-SPD-2026-SU-0269-C02-11a824623674",
+            "BE-SPD-2026-SU-0269-C03-4c69a093fa73"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Mit der EU-Wiederherstellungsverordnung soll Berlin 20 Prozent seiner Fläche renaturieren. Wir nutzen das, um den Wert der Stadtnatur zu vermitteln – auch mit Schulen und Informationskampagnen. Die Biodiversitätsstrategie setzen wir um, am Berlin Urban Nature Pact halten wir fest und wirken dem Artensterben wirksam entgegen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0269"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0270",
+          "source_unit_id": "BE-SPD-2026-SU-0270",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b007@42.52,371.46,278.28,462.64",
+          "source_text": "Mit den Berliner Forsten machen wir den Wald klimafest und gestalten ihn naturnah um. Er bleibt Erholungswald; wirtschaftliche Nutzung bleibt nachrangig. Wir fördern den Umbau zum Mischwald vorrangig über Naturverjüngung. Den Zustand begleiten wir mit satellitengestütztem Monitoring.",
+          "source_text_sha256": "2a0b5037e07fb76a25d09c20d7302475f28bf7141e7dabae7a0a22d6120616ce",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0270-A01",
+            "BE-SPD-2026-SU-0270-A02",
+            "BE-SPD-2026-SU-0270-A03",
+            "BE-SPD-2026-SU-0270-C01-3e0638f6596c",
+            "BE-SPD-2026-SU-0270-C02-5017bce4b525"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Mit den Berliner Forsten machen wir den Wald klimafest und gestalten ihn naturnah um. Er bleibt Erholungswald; wirtschaftliche Nutzung bleibt nachrangig. Wir fördern den Umbau zum Mischwald vorrangig über Naturverjüngung. Den Zustand begleiten wir mit satellitengestütztem Monitoring.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0270"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0271",
+          "source_unit_id": "BE-SPD-2026-SU-0271",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b008@42.52,472.36,287.86,576.74",
+          "source_text": "Wir würdigen freiwilliges Umweltengagement. Einsätze, wie Müllsammeln, werden wir mit der Ehrenamtskarte anerkennen und durch Gutscheine für Museen, Theater oder Bäder belohnen. Auch die Kehrenbürger-Aktionen der BSR führen wir fort und bauen sie weiter aus. Damit unterstützen wir diejenigen, die ihre Nachbarschaft sauber halten und verschönern wollen.",
+          "source_text_sha256": "6eab3538f1e1d9e1fc65e162f7c0c9c5b208939a382be4d5b79db8d520feddc2",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0271-A01",
+            "BE-SPD-2026-SU-0271-A02",
+            "BE-SPD-2026-SU-0271-A03",
+            "BE-SPD-2026-SU-0271-A04",
+            "BE-SPD-2026-SU-0271-C01-e4653a9011ec"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir würdigen freiwilliges Umweltengagement. Einsätze, wie Müllsammeln, werden wir mit der Ehrenamtskarte anerkennen und durch Gutscheine für Museen, Theater oder Bäder belohnen. Auch die Kehrenbürger-Aktionen der BSR führen wir fort und bauen sie weiter aus. Damit unterstützen wir diejenigen, die ihre Nachbarschaft sauber halten und verschönern wollen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0271"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0272",
+          "source_unit_id": "BE-SPD-2026-SU-0272",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b009@42.52,587.46,286.02,602.77",
+          "source_text": "Tierschutz als Teil unserer Verantwortung",
+          "source_text_sha256": "92b95cc61ff81747da1890e12678af0408e704645afebad29cb6c0625cab53ee",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "structural heading",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Tierschutz als Teil unserer Verantwortung",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0272"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_text": "Wir stärken die Veterinärämter, damit sie illegalen Tierhandel und Qualzuchten konsequent kontrollieren können. Wir sichern die Finanzierung des Tierheims und fördern funktionierende Konzepte für Katzenkastrationen und Stadttaubenmanagement. Der Hundeführerschein ersetzt die Rasseliste und schafft Sicherheit durch Wissen. Wir schließen den Einsatz von Tieren auf staatlichen Bühnen des Landes aus und untersagen weiterhin Auftritte von Zirkussen mit Wildtieren auf landeseigenen Flächen. Die Funktion der*des Landestierschutzbeauftragten bleibt zentrale Stimme für Tiere in Berlin.",
+          "source_text_sha256": "7da75a97ff01ded19560c20be114321d56bb82ff766c3ef6f64238e973674e20",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0273-A01",
+            "BE-SPD-2026-SU-0273-A02",
+            "BE-SPD-2026-SU-0273-A03",
+            "BE-SPD-2026-SU-0273-C01-f625c4b03abb",
+            "BE-SPD-2026-SU-0273-C02-7cd52ea2b729",
+            "BE-SPD-2026-SU-0273-C03-ed96cf916d6c",
+            "BE-SPD-2026-SU-0273-C04-9ba02d48d7f3"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir stärken die Veterinärämter, damit sie illegalen Tierhandel und Qualzuchten konsequent kontrollieren können. Wir sichern die Finanzierung des Tierheims und fördern funktionierende Konzepte für Katzenkastrationen und Stadttaubenmanagement. Der Hundeführerschein ersetzt die Rasseliste und schafft Sicherheit durch Wissen. Wir schließen den Einsatz von Tieren auf staatlichen Bühnen des Landes aus und untersagen weiterhin Auftritte von Zirkussen mit Wildtieren auf landeseigenen Flächen. Die Funktion der*des Landestierschutzbeauftragten bleibt zentrale Stimme für Tiere in Berlin.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0274",
+          "source_unit_id": "BE-SPD-2026-SU-0274",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b012@304.72,92.54,513.27,124.65",
+          "source_text": "Regenwasser nutzen, Grundwasser schützen, Wasser sparen",
+          "source_text_sha256": "794e3269ba5f65aa741da654216c5f0f5e2dd8f7012f7ddfb495eb309d15c1a4",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "structural heading",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Regenwasser nutzen, Grundwasser schützen, Wasser sparen",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0274"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0275",
+          "source_unit_id": "BE-SPD-2026-SU-0275",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b013@304.72,133.65,554.19,277.63",
+          "source_text": "Für die Schwammstadt koppeln wir mit den Berliner Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab. Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken. Wir wollen den Anteil des Regenwassers, den wir technisch von der Kanalisation abkoppeln können, weiter erhöhen. Dafür werden wir auch das grundstücksübergreifende Regenwassermanagement rechtlich verbindlich machen.",
+          "source_text_sha256": "5b355fd5f208d2ad15748aa38ea20890077c0316fe49f5fe78f9ca430ae84bb7",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0275-A01",
+            "BE-SPD-2026-SU-0275-A02",
+            "BE-SPD-2026-SU-0275-A03",
+            "BE-SPD-2026-SU-0275-A04"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Für die Schwammstadt koppeln wir mit den Berliner Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab. Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken. Wir wollen den Anteil des Regenwassers, den wir technisch von der Kanalisation abkoppeln können, weiter erhöhen. Dafür werden wir auch das grundstücksübergreifende Regenwassermanagement rechtlich verbindlich machen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0275"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "Eine sichere Trinkwasserversorgung ist lebenswichtig. Wir sind uns der drohenden Grundwasserproblematik in Berlin und Brandenburg bewusst und arbeiten verstärkt an gemeinsamen Anpassungsstrategien beider Länder. Wir bringen Gewässer und Uferbereiche gemäß EU‑Wasserrahmenrichtlinie in einen guten Zustand und erhalten sie als Lebensräume und Erholungsorte – mit besonderem Fokus auf Kleingewässer. Notversorgung über Notbrunnen sichern wir und starten eine Wassersparoffensive sowie eine verstärkte Fokussierung auf Grauwasserlösungen (Aufbereitung von Wasser zur Zweitnutzung) im privaten und öffentlichen Bereich. Um die Berliner Wasserwerke nachhaltig zu schützen, wollen wir die Sanierung von Boden- und Grundwasserverunreinigungen vorantreiben. Dazu stärken wir die Bezirke personell und finanziell.",
+          "source_text_sha256": "287f992ffe639757c091bf4f13ddde453c6d0c355de054d2bf5902fd7110df1a",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0276-A01",
+            "BE-SPD-2026-SU-0276-A02",
+            "BE-SPD-2026-SU-0276-A03",
+            "BE-SPD-2026-SU-0276-A04",
+            "BE-SPD-2026-SU-0276-A05",
+            "BE-SPD-2026-SU-0276-A06",
+            "BE-SPD-2026-SU-0276-A07",
+            "BE-SPD-2026-SU-0276-C01-2e37dcd9185f",
+            "BE-SPD-2026-SU-0276-C02-32891e18ca48",
+            "BE-SPD-2026-SU-0276-C03-24aa9535a948",
+            "BE-SPD-2026-SU-0276-A04-C01-557bb37df14b",
+            "BE-SPD-2026-SU-0276-A04-C02-5a23cefed5d4"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Eine sichere Trinkwasserversorgung ist lebenswichtig. Wir sind uns der drohenden Grundwasserproblematik in Berlin und Brandenburg bewusst und arbeiten verstärkt an gemeinsamen Anpassungsstrategien beider Länder. Wir bringen Gewässer und Uferbereiche gemäß EU‑Wasserrahmenrichtlinie in einen guten Zustand und erhalten sie als Lebensräume und Erholungsorte – mit besonderem Fokus auf Kleingewässer. Notversorgung über Notbrunnen sichern wir und starten eine Wassersparoffensive sowie eine verstärkte Fokussierung auf Grauwasserlösungen (Aufbereitung von Wasser zur Zweitnutzung) im privaten und öffentlichen Bereich. Um die Berliner Wasserwerke nachhaltig zu schützen, wollen wir die Sanierung von Boden- und Grundwasserverunreinigungen vorantreiben. Dazu stärken wir die Bezirke personell und finanziell.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0277",
+          "source_unit_id": "BE-SPD-2026-SU-0277",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b015@304.72,534.45,474.68,549.76",
+          "source_text": "Müll vermeiden und recyceln",
+          "source_text_sha256": "cf066d3d4b60fb592bd77c4f3de562cc5471fd7087363bb5a3fabaa35629b83e",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "structural heading",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Müll vermeiden und recyceln",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0277"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0278",
+          "source_unit_id": "BE-SPD-2026-SU-0278",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b016@304.72,558.76,523.45,636.74",
+          "source_text": "Wir stehen zum Zero‑Waste‑Konzept: Vermeidung hat Vorrang vor Verwertung und Entsorgung. Eine Verpackungssteuer soll den Müll aus Essensverpackungen senken. Das NochMall‑Kaufhaus und der Reparatur‑Bonus werden fortgeführt.",
+          "source_text_sha256": "32c055c7cbc2f76001d2beac5c67bbe82f70ef7426de0f927d525be0b22f2481",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0278-A01",
+            "BE-SPD-2026-SU-0278-C01-83665251293d",
+            "BE-SPD-2026-SU-0278-C02-195843e54a1c"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir stehen zum Zero‑Waste‑Konzept: Vermeidung hat Vorrang vor Verwertung und Entsorgung. Eine Verpackungssteuer soll den Müll aus Essensverpackungen senken. Das NochMall‑Kaufhaus und der Reparatur‑Bonus werden fortgeführt.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0278"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0279",
+          "source_unit_id": "BE-SPD-2026-SU-0279",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b017@304.73,646.47,549.30,711.25",
+          "source_text": "Damit der Umgang mit Müll und Umwelt wieder mehr ins Bewusstsein gelangt, verankern wir Müllvermeidung, Recycling und richtige Trennung frühzeitig im Kita- und Schulalltag. Projekttage mit der BSR werden an Berliner Schulen zum Standard.",
+          "source_text_sha256": "c8006f74029e3a0a77c224ed30683c6f6bf9dffa74c1f722db22d0e484b8b2fa",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0279-A01",
+            "BE-SPD-2026-SU-0279-A02",
+            "BE-SPD-2026-SU-0279-C01-6b23ff019563"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Damit der Umgang mit Müll und Umwelt wieder mehr ins Bewusstsein gelangt, verankern wir Müllvermeidung, Recycling und richtige Trennung frühzeitig im Kita- und Schulalltag. Projekttage mit der BSR werden an Berliner Schulen zum Standard.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0279"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0280",
+          "source_unit_id": "BE-SPD-2026-SU-0280",
+          "source_page": 23,
+          "pdf_pages": [
+            23,
+            24
+          ],
+          "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+          "source_text": "Nicht‑kommerzielle Träger bei Altkleidersammlung und -verteilung stärken wir. Die Altholz‑Recyclingquote erhöhen wir deutlich über 25 Prozent, besonders mit den neuen Anlagen in der Gradestraße. Unvermeidbaren Müll bereiten wir künftig stärker in Berlin auf und verwerten ihn. Wir ermöglichen weitere Müllsortieranlagen bei der BSR für verbesserte Ressourcen-Kreisläufe. Wir wollen noch mehr Haushalte mit Biotonnen ausstatten und führen auch die bezirklichen Grünabfälle konsequent der Kompostierung durch die BSR zu.",
+          "source_text_sha256": "395e5e24e2ce5960edfb0a6ddcd07fa51fefa3750bda3d2d795b2b4c7ff8258c",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "covered_by": [
+            "BE-SPD-2026-SU-0280-A01",
+            "BE-SPD-2026-SU-0280-A02",
+            "BE-SPD-2026-SU-0280-A03",
+            "BE-SPD-2026-SU-0280-A04",
+            "BE-SPD-2026-SU-0280-A05",
+            "BE-SPD-2026-SU-0280-A06"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Nicht‑kommerzielle Träger bei Altkleidersammlung und -verteilung stärken wir. Die Altholz‑Recyclingquote erhöhen wir deutlich über 25 Prozent, besonders mit den neuen Anlagen in der Gradestraße. Unvermeidbaren Müll bereiten wir künftig stärker in Berlin auf und verwerten ihn. Wir ermöglichen weitere Müllsortieranlagen bei der BSR für verbesserte Ressourcen-Kreisläufe. Wir wollen noch mehr Haushalte mit Biotonnen ausstatten und führen auch die bezirklichen Grünabfälle konsequent der Kompostierung durch die BSR zu.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0280"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0266-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0266",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b003@42.52,69.84,272.22,108.22",
+          "source_text": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden.",
+          "source_text_sha256": "71128f481e86d9b33aa0c3d4e53c2a03f1d89f420cfe0fd25cd536e05049a312",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "ACCESS_GOAL",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0266-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0266-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0266",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b003@42.52,69.84,272.22,108.22",
+          "source_text": "Als Baustein dafür machen wir Baden in der Spree möglich.",
+          "source_text_sha256": "3f6f48e38a76cddc8dd34440291a27b32229c78e4e1a1404025878e9ce95a3ba",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "SPREE_BATHING_SITE_WATER_QUALITY_SAFETY_AND_DELIVERY_DESIGN_UNSPECIFIED",
+          "exact_reason": "the object does not specify bathing location(s), wastewater/water-quality compliance path, seasonal operating rule, navigation/ecology interface, physical access/safety/accessibility design, capital/operating responsibility, timetable or counterfactual. These determine whether recreation/access benefits exceed health, safety, ecological and resource risks.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Als Baustein dafür machen wir Baden in der Spree möglich.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0266-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_text": "Wir stärken",
+          "source_text_sha256": "542403d84ff4a48fad5bf407cae362c97594c0af73ebe0f9e1812c01af35cb5a",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "SOURCE_FRAGMENT_VERSIONED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "superseded_by": [
+            "BE-SPD-2026-SU-0268-C02-6fa2f67b3d2c"
+          ],
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_excerpt": "Wir stärken",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_FRAGMENT_VERSIONED_ZERO_COUNT",
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0268-C02-6fa2f67b3d2c"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_text": "und schützen sie",
+          "source_text_sha256": "748c94ca0b6aa650e628caf7132b294aa587bdd0e7fe77d2d529e8c3076004b4",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "SOURCE_FRAGMENT_VERSIONED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "superseded_by": [
+            "BE-SPD-2026-SU-0268-C02-6fa2f67b3d2c"
+          ],
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_excerpt": "und schützen sie",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_FRAGMENT_VERSIONED_ZERO_COUNT",
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0268-C02-6fa2f67b3d2c"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_text": "fördern Öffnung für Nachbarschaften und den Erhalt der Biodiversität.",
+          "source_text_sha256": "908be5e726feb7ef1909dde3ef7ba8a4ede0c019c38e5b0a9ffd60a5cc142ac5",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "KLEINGARTEN_OPENING_AND_BIODIVERSITY_DELIVERY_DESIGN_UNSPECIFIED",
+          "exact_reason": "access rule, participating sites, habitat measures, conflicts with allotment use, resources and monitoring are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "fördern Öffnung für Nachbarschaften und den Erhalt der Biodiversität.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_text": "Wir entwickeln Kleingartenanlagen als Naherholungsgebiete – für die Kleingärtnerinnen und Kleingärtner und für die Stadtgesellschaft.",
+          "source_text_sha256": "89eb44dade964572c61ddf715496ed1f1888474d2f6ceecdf81783c3bf487678",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "KLEINGARTEN_NAHERHOLUNG_CONVERSION_SCOPE_ACCESS_AND_RESOURCE_DESIGN_UNSPECIFIED",
+          "exact_reason": "no site scope, physical-access design, investment/maintenance plan, user-conflict rule or additionality.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Wir entwickeln Kleingartenanlagen als Naherholungsgebiete – für die Kleingärtnerinnen und Kleingärtner und für die Stadtgesellschaft.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268-A05",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_text": "Gemeinschaftliches Gärtnern im öffentlichen Raum unterstützen wir.",
+          "source_text_sha256": "d59e00d243d0cb676a3a994d734e54db0f92c5314b1b835bd63beba0e74c78ab",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "COMMUNITY_GARDENING_SUPPORT_INSTRUMENT_SITE_AND_ACCESS_DESIGN_UNSPECIFIED",
+          "exact_reason": "support instrument, sites, tenure, water/soil/safety/access standards, funding and continuation are unspecified.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Gemeinschaftliches Gärtnern im öffentlichen Raum unterstützen wir.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268-A05"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0269-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0269",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b006@42.52,257.35,292.95,361.73",
+          "source_text": "Mit der EU-Wiederherstellungsverordnung soll Berlin 20 Prozent seiner Fläche renaturieren.",
+          "source_text_sha256": "8db9f4890bdc12fd805922387aa86dc8871bab267fa40ee4479233b275a92593",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_EXTERNAL_LEGAL_CONTEXT_REVIEWED_WITH_SOURCE_CLAIM_QUALIFICATION",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "Do not turn this sentence into a Berlin intervention or legal baseline.",
+          "source_claim_qualification": "The binding EU text says Member States shall put in place measures to **jointly cover, as a Union target**, at least 20% of land and 20% of sea areas by 2030; it is not a blanket rule that Berlin itself must renature 20% of its total area.",
+          "qualification_source_url": "https://eur-lex.europa.eu/eli/reg/2024/1991/oj",
+          "qualification_locator": "Art. 1(2)",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Mit der EU-Wiederherstellungsverordnung soll Berlin 20 Prozent seiner Fläche renaturieren.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXTERNAL_LEGAL_CONTEXT_REVIEWED_WITH_SOURCE_CLAIM_QUALIFICATION",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0269-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0269-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0269",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b006@42.52,257.35,292.95,361.73",
+          "source_text": "Wir nutzen das, um den Wert der Stadtnatur zu vermitteln – auch mit Schulen und Informationskampagnen.",
+          "source_text_sha256": "fe02f882d779c00c6f4ee7c98d25ea139654ae36825520d031c80f8977dcc699",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "URBAN_NATURE_EDUCATION_CAMPAIGN_CONTENT_REACH_RESOURCES_AND_OUTCOME_DESIGN_UNSPECIFIED",
+          "exact_reason": "programme content, target populations, intensity, resources, reach and behavioural/outcome evaluation are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Wir nutzen das, um den Wert der Stadtnatur zu vermitteln – auch mit Schulen und Informationskampagnen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0269-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0270-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0270",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b007@42.52,371.46,278.28,462.64",
+          "source_text": "Mit den Berliner Forsten machen wir den Wald klimafest",
+          "source_text_sha256": "2c4b7537ace3171dfe7305167a68d82e4ab93ba0b0f03493d7afebbbe7dbffdd",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "RESILIENCE_GOAL",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Mit den Berliner Forsten machen wir den Wald klimafest",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0270-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0270-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0270",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b007@42.52,371.46,278.28,462.64",
+          "source_text": "und gestalten ihn naturnah um.",
+          "source_text_sha256": "f4a5a738c3069543ad1192c8624eec98b2135a0cf458af1c6b793a9462686408",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "NATURE_NEAR_FOREST_CONVERSION_SITE_SPECIES_SCALE_AND_DELIVERY_DESIGN_UNSPECIFIED",
+          "exact_reason": "exact forest stands/area, species/composition target, climate-site suitability, regeneration success criteria, browsing/herbivory/fire/drought management, recreation/safety trade-offs, timetable/resources and counterfactual are not specified; net resilience/biodiversity/carbon direction cannot be made object-specific without those design choices.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "und gestalten ihn naturnah um.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0270-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0270-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0270",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b007@42.52,371.46,278.28,462.64",
+          "source_text": "Wir fördern den Umbau zum Mischwald vorrangig über Naturverjüngung.",
+          "source_text_sha256": "751972d705c0ab8b5d1dfccd07f17716a66c7e7ede6e8b0f662f1ce7ef022e68",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "MIXED_FOREST_NATURAL_REGENERATION_SPECIES_SITE_HERBIVORY_AND_CLIMATE_DESIGN_UNSPECIFIED",
+          "exact_reason": "exact forest stands/area, species/composition target, climate-site suitability, regeneration success criteria, browsing/herbivory/fire/drought management, recreation/safety trade-offs, timetable/resources and counterfactual are not specified; net resilience/biodiversity/carbon direction cannot be made object-specific without those design choices.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Wir fördern den Umbau zum Mischwald vorrangig über Naturverjüngung.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0270-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0271-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0271",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b008@42.52,472.36,287.86,576.74",
+          "source_text": "Einsätze, wie Müllsammeln, werden wir mit der Ehrenamtskarte anerkennen und durch Gutscheine für Museen, Theater oder Bäder belohnen.",
+          "source_text_sha256": "8c96c6912cd4f7a4c674d3b3d98c34e228ced3e3f87e3e2de458aafc7d910e5e",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "VOLUNTEER_REWARD_ELIGIBILITY_VALUE_BUDGET_AND_ADDITIONALITY_UNSPECIFIED",
+          "exact_reason": "qualifying work, voucher value/frequency, verification, budget, distribution and whether rewards add participation or subsidise existing activity are unspecified.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Einsätze, wie Müllsammeln, werden wir mit der Ehrenamtskarte anerkennen und durch Gutscheine für Museen, Theater oder Bäder belohnen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0271-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0271-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0271",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b008@42.52,472.36,287.86,576.74",
+          "source_text": "Auch die Kehrenbürger-Aktionen der BSR führen wir fort",
+          "source_text_sha256": "7cbe342623a836d863c0f5a5bb734e77d9d9152d26366b2f4e3c3a968663c8b6",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Auch die Kehrenbürger-Aktionen der BSR führen wir fort",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0271-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0271-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0271",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b008@42.52,472.36,287.86,576.74",
+          "source_text": "und bauen sie weiter aus.",
+          "source_text_sha256": "0f16cf72d2e5ed862ea4051fb7879763e712c4f19d8999ca0c5aa004723a68a5",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "KEHRENBÜRGER_EXPANSION_SCALE_RESOURCE_AND_ADDITIONALITY_UNSPECIFIED",
+          "exact_reason": "expansion quantity/geography, BSR capacity/resources, additional participation and waste/safety handling are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "und bauen sie weiter aus.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0271-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0271-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0271",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b008@42.52,472.36,287.86,576.74",
+          "source_text": "Damit unterstützen wir diejenigen, die ihre Nachbarschaft sauber halten und verschönern wollen.",
+          "source_text_sha256": "9bcbf6ee8c701fc21743619ec3bbb0887978755678432aa28d0baabd1128c1f0",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "rationale/intended outcome, zero-count.",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Damit unterstützen wir diejenigen, die ihre Nachbarschaft sauber halten und verschönern wollen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0271-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_text": "Wir stärken die Veterinärämter, damit sie illegalen Tierhandel und Qualzuchten konsequent kontrollieren können.",
+          "source_text_sha256": "0d6fc1d49c55b925a3416d508928ec994052e3bc9bdbf5039a933219ee290eed",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "VETERINARY_ENFORCEMENT_CAPACITY_FTE_FUNDING_TARGETING_AND_OUTCOME_DESIGN_UNSPECIFIED",
+          "exact_reason": "“stärken” gives no FTE, skills, budget, inspection targeting, legal/enforcement workflow, baseline backlog or outcome measure.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Wir stärken die Veterinärämter, damit sie illegalen Tierhandel und Qualzuchten konsequent kontrollieren können.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_text": "Wir sichern die Finanzierung des Tierheims",
+          "source_text_sha256": "288631ba4f1a4e5dc406c3bffa9ca6bc63ee404d0dfb853c85152f0b53d2929e",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "ANIMAL_SHELTER_FINANCING_AMOUNT_DURATION_CAPACITY_AND_SERVICE_STANDARD_UNSPECIFIED",
+          "exact_reason": "financing source/amount/duration, capacity need, service standards, demand baseline and outcomes are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Wir sichern die Finanzierung des Tierheims",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_text": "und fördern funktionierende Konzepte für Katzenkastrationen und Stadttaubenmanagement.",
+          "source_text_sha256": "19afbc61eaf8fc0792366b09c56c988077b3cc09bf4ab8771e0db746dc6d4730",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "CAT_NEUTERING_PIGEON_MANAGEMENT_PROGRAMME_SCOPE_STANDARDS_AND_EVALUATION_UNSPECIFIED",
+          "exact_reason": "target populations/areas, intervention standards, responsible actors, funding, animal-welfare safeguards and measurable outcome design are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "und fördern funktionierende Konzepte für Katzenkastrationen und Stadttaubenmanagement.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0275-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0275",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b013@304.72,133.65,554.19,277.63",
+          "source_text": "Für die Schwammstadt koppeln wir mit den Berliner Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab.",
+          "source_text_sha256": "926f64064091526e674dc95cea2020492d5f68c15d419c73ccda8e2fdb102cea",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "RAINWATER_SEWER_DISCONNECTION_SITE_HYDROGEOLOGY_SCALE_FINANCE_AND_CONTAMINATION_GUARDS_UNSPECIFIED",
+          "exact_reason": "no quantified area/volume, site/hydrogeological suitability, contaminated-soil/groundwater guard, storage/infiltration technology, cost/funding, timetable or overflow/failure rule.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Für die Schwammstadt koppeln wir mit den Berliner Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0275-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0275-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0275",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b013@304.72,133.65,554.19,277.63",
+          "source_text": "Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken.",
+          "source_text_sha256": "f3a453c384971071e30c3fb3b6816d666d82e194c8bf41f02373989914db7822",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_INTENDED_MECHANISM_OR_OUTCOME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "intended mechanism/outcome statement of A01, not another intervention; zero-count.",
+          "related_effect_object_id": "BE-SPD-2026-SU-0275-A01",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_INTENDED_MECHANISM_OR_OUTCOME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0275-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0275-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0275",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b013@304.72,133.65,554.19,277.63",
+          "source_text": "Wir wollen den Anteil des Regenwassers, den wir technisch von der Kanalisation abkoppeln können, weiter erhöhen.",
+          "source_text_sha256": "4cd87241a3a2a847996aadf583c18fc6b7f2a77f074163a43fe4ff4eecb383bc",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_TARGET_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "directional target without independent scale/instrument beyond A01; zero-count target linked to A01.",
+          "related_effect_object_id": "BE-SPD-2026-SU-0275-A01",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir wollen den Anteil des Regenwassers, den wir technisch von der Kanalisation abkoppeln können, weiter erhöhen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_TARGET_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0275-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0275-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0275",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b013@304.72,133.65,554.19,277.63",
+          "source_text": "Dafür werden wir auch das grundstücksübergreifende Regenwassermanagement rechtlich verbindlich machen.",
+          "source_text_sha256": "41f98343d4c06546f67ca581d578644de74c326d7583673663b5f7222ca34fcd",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "CROSS_PROPERTY_RAINWATER_LEGAL_RULE_SCOPE_COST_RIGHTS_AND_TECHNICAL_STANDARD_UNSPECIFIED",
+          "exact_reason": "legal scope, ownership/easements, cost allocation, technical standards, liability, exemptions, enforcement and distribution are not stated.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Dafür werden wir auch das grundstücksübergreifende Regenwassermanagement rechtlich verbindlich machen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0275-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "Wir bringen Gewässer und Uferbereiche gemäß EU‑Wasserrahmenrichtlinie in einen guten Zustand",
+          "source_text_sha256": "ecfd420d5cce7dd669128d4bb77e982ba6936cf5c96c9308b6f05f2b9cba8b57",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "legal/quality goal, zero-count; no intervention class specified in this atom.",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir bringen Gewässer und Uferbereiche gemäß EU‑Wasserrahmenrichtlinie in einen guten Zustand",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "und erhalten sie als Lebensräume und Erholungsorte – mit besonderem Fokus auf Kleingewässer.",
+          "source_text_sha256": "dcb72e67d49375491d4306bbe0b1a8144957179bb213512dffb859dcb1ab91da",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "preservation/outcome goal, zero-count.",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "und erhalten sie als Lebensräume und Erholungsorte – mit besonderem Fokus auf Kleingewässer.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "Notversorgung über Notbrunnen sichern wir",
+          "source_text_sha256": "bfe33cf884f3ee7afb4ec0f5fb28af4de43bc5aaf4e1e4277f73fc6718ab9e99",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "EMERGENCY_WELLS_NUMBER_LOCATION_WATER_QUALITY_CAPACITY_MAINTENANCE_AND_ACCESS_UNSPECIFIED",
+          "exact_reason": "These objects lack the stated design variables in their reason codes; no object-specific net direction/additionality can be bounded from the programme wording alone.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Notversorgung über Notbrunnen sichern wir",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "und starten eine Wassersparoffensive sowie eine verstärkte Fokussierung auf Grauwasserlösungen (Aufbereitung von Wasser zur Zweitnutzung) im privaten und öffentlichen Bereich.",
+          "source_text_sha256": "c910d975c756cf4c61edbad77f4c54903edeb149bcea98a01f78cddf8dc66aa7",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "COMPOUND_PARENT_VERSIONED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "superseded_by": [
+            "BE-SPD-2026-SU-0276-A04-C01-557bb37df14b",
+            "BE-SPD-2026-SU-0276-A04-C02-5a23cefed5d4"
+          ],
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_excerpt": "und starten eine Wassersparoffensive sowie eine verstärkte Fokussierung auf Grauwasserlösungen (Aufbereitung von Wasser zur Zweitnutzung) im privaten und öffentlichen Bereich.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "COMPOUND_PARENT_VERSIONED_ZERO_COUNT",
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0276-A04-C01-557bb37df14b",
+            "BE-SPD-2026-SU-0276-A04-C02-5a23cefed5d4"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A05",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "Um die Berliner Wasserwerke nachhaltig zu schützen,",
+          "source_text_sha256": "198afb6cad290c5077748ed16f244f4e500ca3a080f4928441abbcd239d5d605",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "rationale fragment, zero-count.",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Um die Berliner Wasserwerke nachhaltig zu schützen,",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A05"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A06",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "wollen wir die Sanierung von Boden- und Grundwasserverunreinigungen vorantreiben.",
+          "source_text_sha256": "c9526c27d4c7ad15aee9061d6ee42753aacf759a908db9b729d37c72ce7e4eed",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "SOIL_GROUNDWATER_REMEDIATION_SITE_CONTAMINANT_TECHNOLOGY_PRIORITY_FINANCE_AND_SECONDARY_RISK_UNSPECIFIED",
+          "exact_reason": "These objects lack the stated design variables in their reason codes; no object-specific net direction/additionality can be bounded from the programme wording alone.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "wollen wir die Sanierung von Boden- und Grundwasserverunreinigungen vorantreiben.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A06"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A07",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_text": "Dazu stärken wir die Bezirke personell und finanziell.",
+          "source_text_sha256": "a165a0abccade4ea200800b583e39f2e2bf7ef787a09f00a7f94e3f9824d0b80",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "DISTRICT_REMEDIATION_CAPACITY_FTE_BUDGET_ALLOCATION_DURATION_AND_TASK_LINK_UNSPECIFIED",
+          "exact_reason": "These objects lack the stated design variables in their reason codes; no object-specific net direction/additionality can be bounded from the programme wording alone.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Dazu stärken wir die Bezirke personell und finanziell.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A07"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0278-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0278",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b016@304.72,558.76,523.45,636.74",
+          "source_text": "Eine Verpackungssteuer soll den Müll aus Essensverpackungen senken.",
+          "source_text_sha256": "d08501b0d0198a84a49dee843e8e6ce2db232d7b6fa4abce183e06e9bbccda9b",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "PACKAGING_TAX_BASE_RATE_EXEMPTIONS_ADMINISTRATION_INCIDENCE_REVENUE_USE_AND_BASELINE_UNSPECIFIED",
+          "exact_reason": "the tax base, rate, exemptions, taxable actor/point, administration/enforcement, incidence, reuse treatment, revenue use, current packaging baseline and target are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Eine Verpackungssteuer soll den Müll aus Essensverpackungen senken.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0278-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0279-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0279",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b017@304.73,646.47,549.30,711.25",
+          "source_text": "Damit der Umgang mit Müll und Umwelt wieder mehr ins Bewusstsein gelangt",
+          "source_text_sha256": "9749b995459269709740bcb8d36a53c0638bdf581b442f8b807893ec584904bf",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "rationale/intended outcome, zero-count.",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Damit der Umgang mit Müll und Umwelt wieder mehr ins Bewusstsein gelangt",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0279-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0279-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0279",
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b017@304.73,646.47,549.30,711.25",
+          "source_text": "verankern wir Müllvermeidung, Recycling und richtige Trennung frühzeitig im Kita- und Schulalltag.",
+          "source_text_sha256": "a045be5a9778e84e672c9164e4a72537f74f1072e179d16a067ff70f36b48912",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "WASTE_EDUCATION_CURRICULUM_DOSE_STAFF_RESOURCE_AND_BEHAVIOURAL_EVALUATION_UNSPECIFIED",
+          "exact_reason": "WASTE_EDUCATION_CURRICULUM_DOSE_STAFF_RESOURCE_AND_BEHAVIOURAL_EVALUATION_UNSPECIFIED",
+          "exact_reason_form": "AUTHORITATIVE_OBJECT_SPECIFIC_REASON_CODE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "verankern wir Müllvermeidung, Recycling und richtige Trennung frühzeitig im Kita- und Schulalltag.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0279-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0280-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0280",
+          "source_page": 23,
+          "pdf_pages": [
+            23,
+            24
+          ],
+          "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+          "source_text": "Nicht‑kommerzielle Träger bei Altkleidersammlung und -verteilung stärken wir.",
+          "source_text_sha256": "0c3f611f52b9c3ab8dd75f6dfb0ad99d01da677ff6ae7bad14e3d9227925a5f5",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "NONCOMMERCIAL_TEXTILE_SUPPORT_INSTRUMENT_ELIGIBILITY_LOGISTICS_AND_REUSE_STANDARD_UNSPECIFIED",
+          "exact_reason": "For each, the omitted variables named in the code materially determine additionality, resource/energy balance, quality/downcycling, costs, market displacement and usable circularity; therefore no net object-specific direction is assigned here.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Nicht‑kommerzielle Träger bei Altkleidersammlung und -verteilung stärken wir.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0280-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0280-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0280",
+          "source_page": 23,
+          "pdf_pages": [
+            23,
+            24
+          ],
+          "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+          "source_text": "Die Altholz‑Recyclingquote erhöhen wir deutlich über 25 Prozent, besonders mit den neuen Anlagen in der Gradestraße.",
+          "source_text_sha256": "e106456d4eeeb77dccf679d99a9f2f72b72e5a8e0109385649b1f904306293b2",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "WOOD_RECYCLING_RATE_BASELINE_DEFINITION_FEEDSTOCK_CAPACITY_QUALITY_AND_MARKET_UNSPECIFIED",
+          "exact_reason": "For each, the omitted variables named in the code materially determine additionality, resource/energy balance, quality/downcycling, costs, market displacement and usable circularity; therefore no net object-specific direction is assigned here.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Die Altholz‑Recyclingquote erhöhen wir deutlich über 25 Prozent, besonders mit den neuen Anlagen in der Gradestraße.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0280-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0280-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0280",
+          "source_page": 23,
+          "pdf_pages": [
+            23,
+            24
+          ],
+          "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+          "source_text": "Unvermeidbaren Müll bereiten wir künftig stärker in Berlin auf und verwerten ihn.",
+          "source_text_sha256": "0c7882f0c721f2c6c780b9f71237faf97ae1ec1744659b414d01c12baf257a3f",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "BERLIN_WASTE_PROCESSING_TECHNOLOGY_STREAM_CAPACITY_LIFECYCLE_AND_RESIDUAL_PATH_UNSPECIFIED",
+          "exact_reason": "For each, the omitted variables named in the code materially determine additionality, resource/energy balance, quality/downcycling, costs, market displacement and usable circularity; therefore no net object-specific direction is assigned here.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Unvermeidbaren Müll bereiten wir künftig stärker in Berlin auf und verwerten ihn.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0280-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0280-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0280",
+          "source_page": 23,
+          "pdf_pages": [
+            23,
+            24
+          ],
+          "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+          "source_text": "Wir ermöglichen weitere Müllsortieranlagen bei der BSR für verbesserte Ressourcen-Kreisläufe.",
+          "source_text_sha256": "02d507d7d0dcc636825bcefdf8025198fe6edf223e1ffe688d1f66f58ab6fe00",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "BSR_SORTING_FACILITY_NUMBER_SITE_TECHNOLOGY_CAPACITY_FINANCE_OUTPUT_QUALITY_AND_REJECTS_UNSPECIFIED",
+          "exact_reason": "For each, the omitted variables named in the code materially determine additionality, resource/energy balance, quality/downcycling, costs, market displacement and usable circularity; therefore no net object-specific direction is assigned here.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Wir ermöglichen weitere Müllsortieranlagen bei der BSR für verbesserte Ressourcen-Kreisläufe.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0280-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0280-A05",
+          "source_unit_id": "BE-SPD-2026-SU-0280",
+          "source_page": 23,
+          "pdf_pages": [
+            23,
+            24
+          ],
+          "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+          "source_text": "Wir wollen noch mehr Haushalte mit Biotonnen ausstatten",
+          "source_text_sha256": "441ae8c124b56e5fd9e9a2ea25216c165d6af7d5dec6f7e32eae1894879e7153",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "BIOTON_HOUSEHOLD_COVERAGE_TARGET_COLLECTION_CAPACITY_COST_AND_PARTICIPATION_DESIGN_UNSPECIFIED",
+          "exact_reason": "For each, the omitted variables named in the code materially determine additionality, resource/energy balance, quality/downcycling, costs, market displacement and usable circularity; therefore no net object-specific direction is assigned here.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Wir wollen noch mehr Haushalte mit Biotonnen ausstatten",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0280-A05"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0280-A06",
+          "source_unit_id": "BE-SPD-2026-SU-0280",
+          "source_page": 23,
+          "pdf_pages": [
+            23,
+            24
+          ],
+          "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+          "source_text": "und führen auch die bezirklichen Grünabfälle konsequent der Kompostierung durch die BSR zu.",
+          "source_text_sha256": "2825d1d62c205477623546ce086f6c4e2809e24c709c9ae83eb241b1ca33bbb2",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "GREEN_WASTE_COMPOST_FEEDSTOCK_LOGISTICS_CONTAMINATION_CAPACITY_QUALITY_AND_USE_UNSPECIFIED",
+          "exact_reason": "For each, the omitted variables named in the code materially determine additionality, resource/energy balance, quality/downcycling, costs, market displacement and usable circularity; therefore no net object-specific direction is assigned here.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "und führen auch die bezirklichen Grünabfälle konsequent der Kompostierung durch die BSR zu.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0280-A06"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268-C01-073719e1d0d4",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0268"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_span_utf16": [
+            0,
+            55
+          ],
+          "source_text": "Kleingärten stehen für lebendiges, soziales Stadtleben.",
+          "source_text_sha256": "073719e1d0d4063b940874540f82b9238665957a0a85eaf6df041f3285ee18b3",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "context/rationale zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Kleingärten stehen für lebendiges, soziales Stadtleben.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268-C01-073719e1d0d4"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0268-C02-6fa2f67b3d2c",
+          "source_unit_id": "BE-SPD-2026-SU-0268",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0268"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+          "source_span_utf16": [
+            56,
+            84
+          ],
+          "source_text": "Wir stärken und schützen sie",
+          "source_text_sha256": "6fa2f67b3d2c5d73a90f4dc92226dddeb4c3d184a900d0028df15030d7298288",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "replaces_object_ids": [
+            "BE-SPD-2026-SU-0268-A01",
+            "BE-SPD-2026-SU-0268-A02"
+          ],
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "KLEINGARTEN_STRENGTHEN_PROTECT_LEGAL_FINANCIAL_AND_LAND_INSTRUMENT_UNSPECIFIED",
+          "exact_reason": "neither the legal/land-use protection instrument nor funding, eligible stock, duration, displacement/counterfactual or implementation authority is specified.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Wir stärken und schützen sie",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0268-C02-6fa2f67b3d2c"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0269-C01-7ea818c99e4c",
+          "source_unit_id": "BE-SPD-2026-SU-0269",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0269"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b006@42.52,257.35,292.95,361.73",
+          "source_span_utf16": [
+            194,
+            235
+          ],
+          "source_text": "Die Biodiversitätsstrategie setzen wir um",
+          "source_text_sha256": "7ea818c99e4cbba2efd770b8b612ee23e48f704ce13b1fc87a0c74e00a50c8f1",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "BIODIVERSITY_STRATEGY_VERSION_MEASURE_PORTFOLIO_TIMELINE_RESOURCES_AND_ADDITIONALITY_UNSPECIFIED",
+          "exact_reason": "exact strategy version and which measures/resources/timeline are being newly committed are not specified in this object.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Die Biodiversitätsstrategie setzen wir um",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0269-C01-7ea818c99e4c"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0269-C02-11a824623674",
+          "source_unit_id": "BE-SPD-2026-SU-0269",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0269"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b006@42.52,257.35,292.95,361.73",
+          "source_span_utf16": [
+            237,
+            280
+          ],
+          "source_text": "am Berlin Urban Nature Pact halten wir fest",
+          "source_text_sha256": "11a82462367465da0569c8305581cdacde2e667dda857b15a39b9fc48f23391f",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "continuation/commitment restatement zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "am Berlin Urban Nature Pact halten wir fest",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0269-C02-11a824623674"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0269-C03-4c69a093fa73",
+          "source_unit_id": "BE-SPD-2026-SU-0269",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0269"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b006@42.52,257.35,292.95,361.73",
+          "source_span_utf16": [
+            281,
+            326
+          ],
+          "source_text": "und wirken dem Artensterben wirksam entgegen.",
+          "source_text_sha256": "4c69a093fa736ec25483bae876f313dafeba7121d95fb4bc20ba0db4d91cd408",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "broad intended outcome/goal zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "und wirken dem Artensterben wirksam entgegen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_GOAL_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0269-C03-4c69a093fa73"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0270-C01-3e0638f6596c",
+          "source_unit_id": "BE-SPD-2026-SU-0270",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0270"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b007@42.52,371.46,278.28,462.64",
+          "source_span_utf16": [
+            86,
+            153
+          ],
+          "source_text": "Er bleibt Erholungswald; wirtschaftliche Nutzung bleibt nachrangig.",
+          "source_text_sha256": "3e0638f6596cb3b054567ce2e43b22148160c6afa357f2a64bc7e44e17506413",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_LAND_USE_PRIORITY_GUARD_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "NON_EFFECT_LAND_USE_PRIORITY_GUARD_REVIEWED",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Er bleibt Erholungswald; wirtschaftliche Nutzung bleibt nachrangig.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_LAND_USE_PRIORITY_GUARD_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0270-C01-3e0638f6596c"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0270-C02-5017bce4b525",
+          "source_unit_id": "BE-SPD-2026-SU-0270",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0270"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b007@42.52,371.46,278.28,462.64",
+          "source_span_utf16": [
+            222,
+            284
+          ],
+          "source_text": "Den Zustand begleiten wir mit satellitengestütztem Monitoring.",
+          "source_text_sha256": "5017bce4b525baa1e7a053a441ee09a304535d2ed5998889777f12284542e178",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "FOREST_SATELLITE_MONITORING_INDICATORS_COVERAGE_CADENCE_DECISION_RULE_AND_COST_UNSPECIFIED",
+          "exact_reason": "monitored indicators, spatial/temporal resolution, baseline, validation, cadence, data governance, decision trigger and cost/use are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Den Zustand begleiten wir mit satellitengestütztem Monitoring.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0270-C02-5017bce4b525"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0271-C01-e4653a9011ec",
+          "source_unit_id": "BE-SPD-2026-SU-0271",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0271"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b008@42.52,472.36,287.86,576.74",
+          "source_span_utf16": [
+            0,
+            43
+          ],
+          "source_text": "Wir würdigen freiwilliges Umweltengagement.",
+          "source_text_sha256": "e4653a9011ec9bcb18597e915d91c0da55feb1c2ccbe680bf671ebe7fd0348db",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "recognition/rationale zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Wir würdigen freiwilliges Umweltengagement.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_RATIONALE_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0271-C01-e4653a9011ec"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273-C01-f625c4b03abb",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0273"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_span_utf16": [
+            242,
+            323
+          ],
+          "source_text": "Der Hundeführerschein ersetzt die Rasseliste und schafft Sicherheit durch Wissen.",
+          "source_text_sha256": "f625c4b03abbbc62471e2aca30f36f987d6ceaca0fec0e74fa330274c7f65284",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "DOG_LICENCE_REPLACES_BREED_LIST_TEST_TRAINING_SCOPE_TRANSITION_ENFORCEMENT_AND_SAFETY_EVIDENCE_UNSPECIFIED",
+          "exact_reason": "exact licence/test/training requirements, covered owners/dogs, exemptions, transition from the breed list, fees, enforcement, failure consequences and outcome evaluation are absent.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Der Hundeführerschein ersetzt die Rasseliste und schafft Sicherheit durch Wissen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273-C01-f625c4b03abb"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273-C02-7cd52ea2b729",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0273"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_span_utf16": [
+            324,
+            398
+          ],
+          "source_text": "Wir schließen den Einsatz von Tieren auf staatlichen Bühnen des Landes aus",
+          "source_text_sha256": "7cd52ea2b7290a09c184c0a26754a381d754285be1934ba4d57221fdbddba668",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "STATE_STAGE_ANIMAL_USE_BAN_SCOPE_DEFINITION_EXCEPTIONS_ENFORCEMENT_AND_COUNTERFACTUAL_UNSPECIFIED",
+          "exact_reason": "covered venues/uses/species, legal instrument, exceptions, enforcement and displaced alternatives are unstated.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Wir schließen den Einsatz von Tieren auf staatlichen Bühnen des Landes aus",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273-C02-7cd52ea2b729"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273-C03-ed96cf916d6c",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0273"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_span_utf16": [
+            399,
+            489
+          ],
+          "source_text": "und untersagen weiterhin Auftritte von Zirkussen mit Wildtieren auf landeseigenen Flächen.",
+          "source_text_sha256": "ed96cf916d6c6e94e4c1470ae1339b4b222641874d198dde8cb29aca83ea6421",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "und untersagen weiterhin Auftritte von Zirkussen mit Wildtieren auf landeseigenen Flächen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273-C03-ed96cf916d6c"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0273-C04-9ba02d48d7f3",
+          "source_unit_id": "BE-SPD-2026-SU-0273",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0273"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+          "source_span_utf16": [
+            490,
+            583
+          ],
+          "source_text": "Die Funktion der*des Landestierschutzbeauftragten bleibt zentrale Stimme für Tiere in Berlin.",
+          "source_text_sha256": "9ba02d48d7f3fa84479ac88356f61efe45ab1baaf8edfb727db9674fc3415e31",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_EXISTING_ROLE_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "existing-role/status continuation zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Die Funktion der*des Landestierschutzbeauftragten bleibt zentrale Stimme für Tiere in Berlin.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXISTING_ROLE_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0273-C04-9ba02d48d7f3"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-C01-2e37dcd9185f",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0276"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_span_utf16": [
+            0,
+            53
+          ],
+          "source_text": "Eine sichere Trinkwasserversorgung ist lebenswichtig.",
+          "source_text_sha256": "2e37dcd9185fd4af2baef804f0b6b29a61a6ebd497e16f6752d59227ce7b7a44",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "context/goal zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Eine sichere Trinkwasserversorgung ist lebenswichtig.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-C01-2e37dcd9185f"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-C02-32891e18ca48",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0276"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_span_utf16": [
+            54,
+            137
+          ],
+          "source_text": "Wir sind uns der drohenden Grundwasserproblematik in Berlin und Brandenburg bewusst",
+          "source_text_sha256": "32891e18ca48d7a25d5d2bafdae793fabb9c0d0c1178267232249f5609248d88",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "diagnosis/context zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Wir sind uns der drohenden Grundwasserproblematik in Berlin und Brandenburg bewusst",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-C02-32891e18ca48"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-C03-24aa9535a948",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0276"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_span_utf16": [
+            138,
+            211
+          ],
+          "source_text": "und arbeiten verstärkt an gemeinsamen Anpassungsstrategien beider Länder.",
+          "source_text_sha256": "24aa9535a9483c096df4bba2373d4fbe9cc817e4876544513ffe422303a79b45",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "BERLIN_BRANDENBURG_GROUNDWATER_ADAPTATION_STRATEGY_CONTENT_GOVERNANCE_TIMELINE_RESOURCE_AND_DECISION_PATH_UNSPECIFIED",
+          "exact_reason": "BERLIN_BRANDENBURG_GROUNDWATER_ADAPTATION_STRATEGY_CONTENT_GOVERNANCE_TIMELINE_RESOURCE_AND_DECISION_PATH_UNSPECIFIED",
+          "exact_reason_form": "AUTHORITATIVE_OBJECT_SPECIFIC_REASON_CODE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "und arbeiten verstärkt an gemeinsamen Anpassungsstrategien beider Länder.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-C03-24aa9535a948"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A04-C01-557bb37df14b",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0276-A04"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_span_utf16": [
+            440,
+            476
+          ],
+          "source_text": "und starten eine Wassersparoffensive",
+          "source_text_sha256": "557bb37df14b214f77490100a561ffba44addd68aa844197c3b2851faba88d57",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "WATER_SAVING_OFFENSIVE_INSTRUMENT_TARGET_SECTOR_BASELINE_RESOURCE_AND_EVALUATION_UNSPECIFIED",
+          "exact_reason": "No blanket positive direction may be attached: water savings, hygiene/health, energy, retrofit cost and rebound depend on the missing designs.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "und starten eine Wassersparoffensive",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A04-C01-557bb37df14b"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0276-A04-C02-5a23cefed5d4",
+          "source_unit_id": "BE-SPD-2026-SU-0276",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0276-A04"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+          "source_span_utf16": [
+            477,
+            615
+          ],
+          "source_text": "sowie eine verstärkte Fokussierung auf Grauwasserlösungen (Aufbereitung von Wasser zur Zweitnutzung) im privaten und öffentlichen Bereich.",
+          "source_text_sha256": "5a23cefed5d48ebf2645052af10707a1254f9ce30d102eb857ebbc759c69fba8",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "GREYWATER_SUPPORT_TECHNOLOGY_QUALITY_HEALTH_STANDARD_BUILDING_SCOPE_FINANCE_AND_LIFECYCLE_UNSPECIFIED",
+          "exact_reason": "No blanket positive direction may be attached: water savings, hygiene/health, energy, retrofit cost and rebound depend on the missing designs.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "sowie eine verstärkte Fokussierung auf Grauwasserlösungen (Aufbereitung von Wasser zur Zweitnutzung) im privaten und öffentlichen Bereich.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0276-A04-C02-5a23cefed5d4"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0278-C01-83665251293d",
+          "source_unit_id": "BE-SPD-2026-SU-0278",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0278"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b016@304.72,558.76,523.45,636.74",
+          "source_span_utf16": [
+            0,
+            88
+          ],
+          "source_text": "Wir stehen zum Zero‑Waste‑Konzept: Vermeidung hat Vorrang vor Verwertung und Entsorgung.",
+          "source_text_sha256": "83665251293d5e5d1e7041acffd182a939e185a9217bf08ae7173b9515f530b5",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_POLICY_PRINCIPLE_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "policy principle/restatement zero-count.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Wir stehen zum Zero‑Waste‑Konzept: Vermeidung hat Vorrang vor Verwertung und Entsorgung.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_POLICY_PRINCIPLE_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0278-C01-83665251293d"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0278-C02-195843e54a1c",
+          "source_unit_id": "BE-SPD-2026-SU-0278",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0278"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b016@304.72,558.76,523.45,636.74",
+          "source_span_utf16": [
+            157,
+            222
+          ],
+          "source_text": "Das NochMall‑Kaufhaus und der Reparatur‑Bonus werden fortgeführt.",
+          "source_text_sha256": "195843e54a1cf0ef2a26d2e9ebe998179d98c89bfd122d4382f1cd61ca0b81d6",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5526873010,
+          "authoritative_role_text": "continuation zero-count; do not claim new programme effect from `fortgeführt` without a separately evidenced delta.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Das NochMall‑Kaufhaus und der Reparatur‑Bonus werden fortgeführt.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONTINUATION_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0278-C02-195843e54a1c"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0279-C01-6b23ff019563",
+          "source_unit_id": "BE-SPD-2026-SU-0279",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0279"
+          ],
+          "source_page": 23,
+          "pdf_pages": [
+            23
+          ],
+          "source_locator": "p023:b017@304.73,646.47,549.30,711.25",
+          "source_span_utf16": [
+            173,
+            237
+          ],
+          "source_text": "Projekttage mit der BSR werden an Berliner Schulen zum Standard.",
+          "source_text_sha256": "6b23ff019563af007a9b48e6f53dd4d384af573b0af5b156a0d1ae18b9e7ff03",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5526873010,
+          "exact_reason_code": "BSR_SCHOOL_PROJECT_DAY_FREQUENCY_CONTENT_CAPACITY_RESOURCE_AND_BEHAVIOURAL_EVALUATION_UNSPECIFIED",
+          "exact_reason": "“Standard” does not specify frequency, age groups, content, teacher/BSR capacity, funding, curriculum integration or measurable behaviour/waste outcomes.",
+          "exact_reason_form": "VERBATIM_AUTHORITATIVE_PROSE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Projekttage mit der BSR werden an Berliner Schulen zum Standard.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-authoritative-handoff.md",
+            "file_sha256": "80764145fdd11f92a702b24afae3efde1eaf85c43a1dba2975f452cc3268f299"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5526873010; exact object BE-SPD-2026-SU-0279-C01-6b23ff019563"
         }
       ],
       "remaining_review_envelopes": [
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_023",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 23 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
         {
           "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_024",
           "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
@@ -31932,13 +34415,21 @@
       ],
       "remaining_review_objects": [],
       "protected_fach_scope": {
-        "physical_pages": "P1-P22",
+        "physical_pages": "P1-P23",
         "predecessor_physical_pages": "P1-P21",
         "protected_cross_page_object": "BE-SPD-2026-SU-0247",
         "p22_materialized_terminal_records": 36,
+        "p23_materialized_terminal_records": 74,
+        "materialized_page_set": [
+          22,
+          23
+        ],
+        "consumed_cross_page_objects": [
+          "BE-SPD-2026-SU-0280"
+        ],
         "next_unreviewed_source_order_frontier": {
-          "physical_page": 23,
-          "source_unit_from": "BE-SPD-2026-SU-0266"
+          "physical_page": 24,
+          "source_unit_from": "BE-SPD-2026-SU-0281"
         },
         "preservation_authority": {
           "path": "woek-parlament-app/data/state-programmes/source-integrity/berlin-2026-spd-fach-return-v1.json",
@@ -45605,5 +48096,5 @@
     "vercel_action_triggered": false
   },
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
-  "descriptor_sha256": "71f869c7e96c03c01848def4e0608ef1a40b6dc8228f14c6f459a0f05ebdf3d2"
+  "descriptor_sha256": "ec5540fad6a66914a1f28e073ae5e580fc93d6b4152213d12e6e0f24c810d4d2"
 }

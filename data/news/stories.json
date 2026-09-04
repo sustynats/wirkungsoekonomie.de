@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T14:36:55.366Z",
+  "updated_at": "2026-09-04T14:51:25.485Z",
   "stories": [
     {
       "story_id": "wt-d02cf2fc303cef4f",
@@ -688,19 +688,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T14:51:25.485Z"
         }
       ],
       "content_hash": "964365befa3f455035ccf44c12e23d0009107826fb4f4514db4de1aff4093414",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T14:36:55.366Z",
+      "updated_at": "2026-09-04T14:51:25.485Z",
       "event_first_seen_at": "2026-09-04T14:36:55.366Z",
       "event_detected_at": "2026-09-04T14:36:55.366Z",
       "event_id": "event-eab5f806f86b11b7c7f3",
@@ -728,14 +728,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3.8561,
+        "source_age_minutes": 18.358083333333333,
         "detection_delay_minutes": 3.8561,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.501983333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 96,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T14:51:25.485Z",
+      "rejection": {
+        "at": "2026-09-04T14:51:25.485Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -1577,19 +1589,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T14:51:25.485Z"
         }
       ],
       "content_hash": "db6a81bb452a975bb7c6a5c5cdc8c1beb2c0c11532871395cce564f480527786",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T14:36:55.366Z",
+      "updated_at": "2026-09-04T14:51:25.485Z",
       "event_first_seen_at": "2026-09-04T14:36:55.366Z",
       "event_detected_at": "2026-09-04T14:36:55.366Z",
       "event_id": "event-3b771631b1aae9258732",
@@ -1619,14 +1631,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 21.8561,
+        "source_age_minutes": 36.35808333333333,
         "detection_delay_minutes": 21.8561,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.501983333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T14:51:25.485Z",
+      "rejection": {
+        "at": "2026-09-04T14:51:25.485Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2461,19 +2485,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T14:51:25.485Z"
         }
       ],
       "content_hash": "c940b35ab4b0eb08e9c32c7cfa29c91860424adfb755fcf93dfaa2ab06cc955f",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T14:36:55.366Z",
+      "updated_at": "2026-09-04T14:51:25.485Z",
       "event_first_seen_at": "2026-09-04T14:36:55.366Z",
       "event_detected_at": "2026-09-04T14:36:55.366Z",
       "event_id": "event-d7d3b5302937d0a9e7cb",
@@ -2506,14 +2530,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 23.5061,
+        "source_age_minutes": 38.00808333333333,
         "detection_delay_minutes": 23.5061,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.501983333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T14:51:25.485Z",
+      "rejection": {
+        "at": "2026-09-04T14:51:25.485Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -4038,7 +4074,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "0e5790e5b59c983ecd17bb41b4ae37bb2c3c5bcb96bfe55dc16f1dad3ed34701",
         "sources": [
           {
@@ -5102,7 +5138,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "6651d1c6d254a700ea496532f75f9549427bd1de4b4f4084bc0a599195e9823e",
         "sources": [
           {
@@ -6283,7 +6319,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
         "sources": [
           {
@@ -7541,7 +7577,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "32ac85e953dc41a0f73d3035bbdc0b07811e5ddf476f0eec484c612547ddbbbf",
         "sources": [
           {
@@ -9412,7 +9448,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "76f972558505e81e47a2de677c8230af59ec7570c5971d5ab95b43d1b1cdca85",
         "sources": [
           {
@@ -10653,7 +10689,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "c8edbe03eae1fe3b48b26fd6cfeec12001c15d94a3286372a49b18e5321b17d9",
         "sources": [
           {
@@ -12025,7 +12061,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
         "sources": [
           {
@@ -12684,7 +12720,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "dfa59f6b6552c7a39827ee42e391db763f8104fa0fafb13879b9e7fb595816e5",
         "sources": [
           {
@@ -16164,7 +16200,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "47dbb24c1485c38e734f8ee9a2356fe7e29666f3e9bc7d63878bcd94081ec429",
         "sources": [
           {
@@ -20171,7 +20207,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
         "sources": [
           {
@@ -23556,7 +23592,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
         "sources": [
           {
@@ -24183,7 +24219,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "7186e44e5200cc57900c5f6de90416a746c77fcb2e3be5f30bf03b62690c804c",
         "sources": [
           {
@@ -25608,7 +25644,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "e9a4f51401aea2c89fef4902519e5697aae1098be75d9b8418a2338535b3e10d",
         "sources": [
           {
@@ -26640,7 +26676,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "ed4359195206a11f8a375f078f1733a84a4ba16d4c1c0e11eb9ba0edfa0066ff",
         "sources": [
           {
@@ -27135,7 +27171,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "56fc3e3cc02ffe9de49828a643c8bf86f747e7f0de5938d5ea8d657524a7e3a8",
         "sources": [
           {
@@ -28446,7 +28482,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "81cb5d63d44d23392a53f615e89cbdefdf6d803863db64c0631615366d6cf29c",
         "sources": [
           {
@@ -30271,7 +30307,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "e94409d7f9d4796ecc951a57c5b0db1eb9d95fb101f1bf141563ebd3062f54e6",
         "sources": [
           {
@@ -30881,7 +30917,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "104fd2ac96b1ff667bf3085cdb87e60cad729f9879068d9bc6c47d02b3eddfff",
         "sources": [
           {
@@ -32474,7 +32510,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -33491,7 +33527,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -35532,7 +35568,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "0951961db5e880d5773f7d223e4058e7c70fc0383501b989ee1c8e3abd8d9315",
         "sources": [
           {
@@ -36694,7 +36730,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
         "sources": [
           {
@@ -37279,7 +37315,7 @@
       "retirement_history": [],
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -37947,7 +37983,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
         "sources": [
           {
@@ -39432,7 +39468,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
         "sources": [
           {
@@ -39843,7 +39879,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
         "sources": [
           {
@@ -40972,7 +41008,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
         "sources": [
           {
@@ -41709,7 +41745,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
         "sources": [
           {
@@ -42223,7 +42259,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
         "sources": [
           {
@@ -43348,7 +43384,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "5075c7ffde16cbbf806ab1eed166f847b296725de53c460c37469f3ec7552983",
         "sources": [
           {
@@ -44011,7 +44047,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "5a56ec97c1c488c4e358f69ef0a90770eddf25eb4ca171e125fde72efa5a8d39",
         "sources": [
           {
@@ -44657,7 +44693,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
         "sources": [
           {
@@ -45489,7 +45525,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
         "sources": [
           {
@@ -47562,7 +47598,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "ef6601581aead879d3f2fe7b232c0a9b5d2665911fa3dba5380e9af5490ba3df",
         "sources": [
           {
@@ -49520,7 +49556,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "ba792de8bcac830ac84f3b4f0dc1c53cf00b89108e9cb01f51205b013355e63c",
         "sources": [
           {
@@ -50078,7 +50114,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "6e4464438c753d3e38b4f92054ace42e22183c6c85d209f007eaeff4dd76b1e4",
         "sources": [
           {
@@ -50799,7 +50835,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:36:55.366Z",
+        "detected_at": "2026-09-04T14:51:25.485Z",
         "content_hash": "c5d58f7d34ae883a4c01449c96f07eae9763d3812701c0ff1c8f482ed998c537",
         "sources": [
           {
