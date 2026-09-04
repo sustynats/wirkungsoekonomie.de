@@ -54,6 +54,23 @@ test('publication lag has grace period and compares versions rather than unchang
   d.stories[0].last_updated = '2026-09-04T05:50:00Z';
   assert.equal(summarizeNews(d, now).pendingPublication, 0);
 });
+test('AI alerts distinguish local input failures from HTTP responses and identify the report time', () => {
+  const d = fixture(); d.report.ai_error = 'AI_INPUT_TOO_LARGE';
+  let c = evaluateChecks(d, now).checks.find(c => c.id === 'provider');
+  assert.equal(c.ok, false);
+  assert.match(c.reason, /lokale KI-Eingabelimit/);
+  assert.match(c.reason, /keine KI-Anfrage/);
+  assert.match(c.reason, /2026-09-04T06:00:00\.000Z/);
+  assert.doesNotMatch(c.reason, /KI-Anbieterfehler/);
+  d.report.ai_error = 'AI_PROVIDER_ERROR:503';
+  c = evaluateChecks(d, now).checks.find(c => c.id === 'provider');
+  assert.match(c.reason, /HTTP 503/);
+  assert.doesNotMatch(c.reason, /lokale KI-Eingabelimit/);
+  d.report.ai_error = 'untrusted error @everyone private-token';
+  c = evaluateChecks(d, now).checks.find(c => c.id === 'provider');
+  assert.match(c.reason, /nicht nachgewiesen/);
+  assert.doesNotMatch(c.reason, /@everyone|private-token/);
+});
 test('cost report deduplicates runs, counts missing usage, and does not invent analytics', () => {
   const d = fixture(); const row = { run_id: 'one', started_at: '2026-09-03T23:30:00Z', counts: { ai_stories: 1 }, ai: { estimated_cost_usd: 0.2 } };
   d.usage.runs = [row, row, { run_id: 'two', started_at: now, counts: { ai_stories: 1 }, ai: null }];
