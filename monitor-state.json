@@ -7,9 +7,14 @@
     },
     "provider": {
       "firstSeen": "2026-09-04T08:53:45.319Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "704dad19817852004eb76df7",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Der letzte Lauf meldet einen KI-Anbieterfehler.\nSeit: 2026-09-04T08:53:45.319Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-04"
 }
