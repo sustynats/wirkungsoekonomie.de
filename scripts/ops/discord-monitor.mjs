@@ -59,11 +59,23 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   };
 }
 
+export function aiFailureReason(report = {}) {
+  const error = String(report.ai_error || '');
+  const http = /^AI_PROVIDER_ERROR:(\d{3})(?:\b|$)/.exec(error);
+  let reason = error === 'AI_INPUT_TOO_LARGE'
+    ? 'Eine Akte überschreitet das lokale KI-Eingabelimit; dafür wurde keine KI-Anfrage gesendet. Dies belegt keinen Anbieterausfall.'
+    : http
+      ? `Die KI-Schnittstelle antwortete mit HTTP ${http[1]}; die Ursache ist noch nicht bestimmt.`
+      : 'Die KI-Verarbeitung meldet einen Fehler; ein Anbieterausfall ist damit nicht nachgewiesen.';
+  if (Number.isFinite(Date.parse(report.completed_at))) reason += ` Laufbericht: ${new Date(report.completed_at).toISOString()}.`;
+  return reason;
+}
+
 export function evaluateChecks(data, now) {
   const summary = summarizeNews(data, now);
   const checks = (data.probes || []).map(p => ({ id: p.id, name: p.name, ok: p.ok, reason: p.ok ? 'erreichbar' : p.error, immediate: false }));
   checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && data.report?.status === 'ok', reason: summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Fehler oder einen ungültigen Zeitstempel.', immediate: true });
-  checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !data.report?.ai_error, reason: 'Der letzte Lauf meldet einen KI-Anbieterfehler.', immediate: false });
+  checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !data.report?.ai_error, reason: aiFailureReason(data.report), immediate: false });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: summary.sourceFailures === 0, reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} geprüfte Akten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
   checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: data.report?.budget_policy?.status === 'ok' && summary.usdMonth < Number(data.report?.monthly_budget_usd), reason: 'Monatslimit oder Wechselkurs-Sicherheitsgate hält die KI-Verarbeitung an.', immediate: true });
