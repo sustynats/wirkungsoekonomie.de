@@ -34,7 +34,7 @@ import {
 } from "../../scripts/news/run.mjs";
 import { evaluateRunHealth } from "../../scripts/news/check-run-health.mjs";
 import { loadNewsRegistry } from "../../scripts/news/registry.mjs";
-import { expandEvidenceSegments } from "../../scripts/news/evidence-packets.mjs";
+import { expandEvidenceSegments, expandPacketTransport } from "../../scripts/news/evidence-packets.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
@@ -47,7 +47,7 @@ test("Large multi-source prompts retain identities and exact evidence under the 
   const story={story_id:"wt-test",title:"Neue Entscheidung",sources,claims:[]};
   const prompt=buildAnalysisPrompt([story]);
   assert.ok(prompt.length<=39000);
-  const input=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]);
+  const input=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]).map(expandPacketTransport);
   assert.deepEqual(input[0].sources.map(x=>x.url),sources.map(x=>x.url));
   assert.ok(input[0].sources.some(x=>x.evidence_selection?.incomplete));
   for(const item of expandEvidenceSegments(input[0])) for(const segment of item.evidence_segments){
@@ -67,7 +67,7 @@ test("Growing living files retain all evidence identities, roles and claims with
   const before=structuredClone(story);
   const prompt=buildAnalysisPrompt([story]);
   assert.ok(prompt.length<=39000);
-  const compact=JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0];
+  const compact=expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.equal(compact.sources.length,sources.length);
   assert.equal(compact.claims.length,story.claims.length);
   assert.equal(compact.related_ticker_history.length,5);

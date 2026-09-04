@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-export const EVIDENCE_PACKET_VERSION = "evidence-packet-1";
+export const EVIDENCE_PACKET_VERSION = "evidence-packet-2";
 const hash = value => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 const text = value => String(value || "").replace(/\s+/g, " ").trim();
 
@@ -33,18 +33,72 @@ export function compactEvidenceSegments(stories) {
 
 // Optional excerpt selection may remove the last reference to a shared string.
 // Serialize only live dictionary entries without mutating the reusable catalog.
-export function serializeEvidencePackets(stories) {
-  return JSON.stringify(stories.map(story => {
+export function serializeEvidencePackets(stories, dense = false) {
+  const normalized = stories.map(story => {
     if (!story.evidence_texts) return story;
     const used = [...new Set(story.sources.flatMap(source => source.evidence_segments || []).map(segment => segment.excerpt_text).filter(index => index !== undefined))];
     const { evidence_texts, ...rest } = story;
     return { ...rest, ...(used.length ? { evidence_texts: used.map(index => evidence_texts[index]) } : {}),
       sources: story.sources.map(source => ({ ...source, evidence_segments: source.evidence_segments.map(segment => segment.excerpt_text === undefined ? segment : { ...segment, excerpt_text: used.indexOf(segment.excerpt_text) }) })) };
-  }));
+  });
+  return JSON.stringify(dense ? normalized.map(packTransport) : normalized);
+}
+
+// Second, lossless packing stage for growing files. Text equality is exact;
+// URLs, identities, dates, contrary statements and source roles are retained.
+function packTransport(story) {
+  const counts = new Map();
+  function count(value, key) {
+    if (typeof value === 'string' && value.length >= 50 && !['url', 'source_id', 'claim_id', 'evidence_id'].includes(key)) counts.set(value, (counts.get(value) || 0) + 1);
+    else if (value && typeof value === 'object') for (const [key, child] of Object.entries(value)) count(child, key);
+  }
+  count(story);
+  const texts = [...counts].filter(([,n]) => n > 1).map(([s]) => s);
+  const indices = new Map(texts.map((s,i) => [s,i]));
+  function replace(value, key) {
+    if (typeof value === 'string' && indices.has(value) && !['url', 'source_id', 'claim_id', 'evidence_id'].includes(key)) return { $text: indices.get(value) };
+    if (Array.isArray(value)) return value.map(child => replace(child));
+    if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, replace(child, key)]));
+    return value;
+  }
+  const result = replace(story);
+  if (texts.length) result.text_pool = texts;
+  // Table cells use null only for an absent property, wrapped values distinguish
+  // a real null. No inference or source selection happens during transport.
+  for (const key of ['sources', 'claims']) {
+    if (!result[key]?.length) continue;
+    const columns = [...new Set(result[key].flatMap(row => Object.keys(row)))];
+    const rows = result[key].map(row => columns.map(column => Object.hasOwn(row, column) ? [row[column]] : null));
+    result[`${key}_table`] = { columns, rows };
+    delete result[key];
+  }
+  return result;
+}
+
+export function expandPacketTransport(packed) {
+  function expand(value) {
+    if (value && typeof value === 'object' && Object.keys(value).length === 1 && Object.hasOwn(value, '$text')) {
+      if (!Number.isInteger(value.$text) || typeof packed.text_pool?.[value.$text] !== 'string') throw new Error('PACKET_TEXT_REFERENCE_INVALID');
+      return packed.text_pool[value.$text];
+    }
+    if (Array.isArray(value)) return value.map(expand);
+    if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, expand(child)]));
+    return value;
+  }
+  const result = expand(packed);
+  delete result.text_pool;
+  for (const key of ['sources', 'claims']) {
+    const table = result[`${key}_table`];
+    if (!table) continue;
+    result[key] = table.rows.map(row => Object.fromEntries(table.columns.flatMap((column,i) => row[i] === null ? [] : [[column, row[i][0]]])));
+    delete result[`${key}_table`];
+  }
+  return result;
 }
 
 // Used by contract tests/audits. Never silently repair a malformed reference.
 export function expandEvidenceSegments(story) {
+  story = expandPacketTransport(story);
   return (story.sources || []).map(source => ({ ...source, evidence_segments: (source.evidence_segments || []).map(segment => {
     const { excerpt_from, excerpt_text, ...rest } = segment;
     if (excerpt_from) {
