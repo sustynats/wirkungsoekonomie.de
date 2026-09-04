@@ -1,7 +1,1019 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T13:05:47.106Z",
+  "updated_at": "2026-09-04T13:21:25.210Z",
   "stories": [
+    {
+      "story_id": "wt-5547189d2645384a",
+      "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
+      "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+      "first_seen": "2026-09-04T10:22:28.000Z",
+      "last_updated": "2026-09-04T13:23:17.993Z",
+      "published_at": "2026-09-04T13:23:17.993Z",
+      "updated_at": "2026-09-04T13:23:17.993Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+          "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gab es einen SEK-Einsatz. Dort traf die Polizei den Mann aber nicht an.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:12:19.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f1063dd5b0e5445f73781db7892c9ea58fe53237b98b8131700294ad8e68b6d4",
+          "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T13:12:19.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5547189d2645384a-v1-claim-1",
+          "story_id": "wt-5547189d2645384a",
+          "claim": "In Gevelsberg gab es nach dem Sabotageversuch am Umspannwerk in Dormagen einen SEK-Einsatz; die Polizei traf den Mann dort nicht an.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "674cfe5a1d7024974824",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T13:23:17.993Z"
+        },
+        {
+          "claim_id": "wt-5547189d2645384a-v1-claim-2",
+          "story_id": "wt-5547189d2645384a",
+          "claim": "Die Polizei fahndet europaweit nach einem Mann aus Gevelsberg, Jahrgang 1977; ob er der Verfasser der Bekennerschreiben ist, bleibt unklar.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "0efae352a0ed63e701d1",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "0e62148b66a1c5fc4e2b",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T13:23:17.993Z"
+        },
+        {
+          "claim_id": "wt-5547189d2645384a-v1-claim-3",
+          "story_id": "wt-5547189d2645384a",
+          "claim": "In Dormagen wurden unter einer Hochspannungsleitung selbst gebaute Abschussvorrichtungen entdeckt, die laut Polizei offenbar das Stromnetz angreifen sollten.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "02c30e08f4e9f403bfb0",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "e0e565ad335cef317bb4",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T13:23:17.993Z"
+        }
+      ],
+      "event_id": "event-dad0642fc6ee28b03f8a",
+      "event_first_seen_at": "2026-09-04T10:42:21.689Z",
+      "event_detected_at": "2026-09-04T10:42:21.689Z",
+      "verification_started_at": "2026-09-04T13:23:04.155Z",
+      "publish_ready_at": "2026-09-04T13:23:17.993Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "32ac85e953dc41a0f73d3035bbdc0b07811e5ddf476f0eec484c612547ddbbbf",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen hat es in Gevelsberg einen SEK-Einsatz gegeben. Laut WDR traf die Polizei den gesuchten Mann dort nicht an. Der Beitrag beschreibt außerdem, dass die Polizei europaweit nach einem Mann aus Gevelsberg fahndet, Jahrgang 1977, dessen Name dem WDR vorliege. Unklar bleibt nach Darstellung des Berichts, ob er tatsächlich der Verfasser der Bekennerschreiben ist.\n\nIm Umfeld des Umspannwerks in Dormagen wurden demnach selbst gebaute Abschussvorrichtungen entdeckt, die unter einer Hochspannungsleitung standen. Die Polizei bewertet die Konstruktionen als mögliches Mittel zum Angriff auf das Stromnetz. Der WDR verweist zudem darauf, dass es ähnliche Fälle in Bergheim und Brandenburg gegeben habe. Über Schäden an der Anlage oder einen Stromausfall für die Bevölkerung wird in dem Text nichts als eingetreten berichtet.",
+      "analysis": {
+        "story_id": "wt-5547189d2645384a",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "In Gevelsberg lief nach dem Dormagener Sabotageverdacht ein SEK-Einsatz, ohne dass die Polizei den gesuchten Mann dort antraf. Der WDR meldet zudem Funde und Fahndungshintergründe rund um mögliche Angriffe auf das Stromnetz.",
+        "detail_summary": "Gesichert aus dem vorliegenden Bericht ist vor allem der SEK-Einsatz in Gevelsberg und dass der dort gesuchte Mann nach Angaben des WDR nicht angetroffen wurde. Der Beitrag ordnet den Vorgang in den bereits bekannten Sabotageverdacht am Umspannwerk in Dormagen ein und nennt dort gefundene Abschussvorrichtungen unter einer Hochspannungsleitung. Zusätzlich berichtet er von einer europaweiten Fahndung nach einem Mann aus Gevelsberg, Jahrgang 1977, ohne die Identität oder Täterschaft abschließend zu klären. Für die öffentliche Relevanz spricht der Bezug zu kritischer Infrastruktur und die Möglichkeit weiterer Ermittlungs- und Schutzmaßnahmen. Ein Wirkpfad wäre, dass die Suche nach dem Verdächtigen und die Prüfung der Fundstücke die Gefährdungslage für Stromnetz-Anlagen verändert. Ob daraus bereits konkrete technische, rechtliche oder operative Folgen entstehen, bleibt offen und ist im Material nicht belegt.",
+        "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur und eine europaweite Fahndung; beides kann Ermittlungen, Schutzmaßnahmen und öffentliche Sicherheitslage beeinflussen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mögliche Stromversorgung, Sicherheitsbehörden und Anwohner; bei kritischer Infrastruktur können auch indirekte Folgen für Versorgung und Schutz entstehen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Ein direkter Umweltbezug wird im Material nicht belegt; allenfalls indirekt über Energieinfrastruktur und mögliche Schadensvermeidung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Vorgang berührt staatlichen Schutz kritischer Infrastruktur und Ermittlungsfähigkeit; belastbare Auswirkungen auf demokratische Prozesse sind daraus noch nicht ableitbar."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Verschärfung von Schutz- und Ermittlungsmaßnahmen an kritischer Strominfrastruktur; zugleich potenziell höherer Aufwand für Polizei und Betreiber.",
+        "impact_risks": [
+          "Bei bestätigter Sabotage könnten Sicherheitskosten und operative Belastungen im Stromnetz steigen.",
+          "Unklare Täterschaft kann Ermittlungen erschweren und Unsicherheit im Umfeld kritischer Anlagen verlängern."
+        ],
+        "mechanisms": [
+          "Fahndungsdruck kann Aufenthalts- und Bewegungsmuster des Gesuchten verändern.",
+          "Die Entdeckung der Vorrichtungen kann zu zusätzlichen Sicherungsmaßnahmen an Umspannwerken führen."
+        ],
+        "first_order": [
+          "Polizei setzt die Fahndung fort.",
+          "Betreiber und Behörden prüfen Schutz und mögliche Schäden."
+        ],
+        "second_order": [
+          "Möglicherweise werden Kontrollen an kritischer Infrastruktur ausgeweitet.",
+          "Die Lage kann weitere Ermittlungsansätze in ähnlichen Fällen beeinflussen."
+        ],
+        "third_order": [
+          "Bei Bestätigung eines Sabotagemusters könnten Standards für den Schutz von Umspannwerken angepasst werden."
+        ],
+        "systemic_relevance": "Kritische Strominfrastruktur ist systemrelevant, weil Störungen oder Angriffe weit über den Einzelort hinaus Folgeeffekte für Versorgung, Sicherheit und wirtschaftliche Abläufe haben können.",
+        "transformation_potential": "Begrenzt bis mittel: Aus dem Einzelfall können verstärkte Schutzkonzepte und Ermittlungsroutinen entstehen, aber noch keine strukturelle Umstellung belegt werden.",
+        "resilience": "Der Bericht deutet auf eine laufende Prüfung der Anlage und Fahndung hin; belastbar ist aber nur, dass der Verdächtige vor Ort nicht angetroffen wurde.",
+        "side_effects": [
+          "Mehr Polizeipräsenz und Kontrollaufwand.",
+          "Mögliche Verunsicherung in betroffenen Regionen."
+        ],
+        "uncertainties": [
+          "Ob der Gesuchte tatsächlich der Verfasser der Bekennerschreiben ist, bleibt offen.",
+          "Konkrete Schäden an der Anlage oder Folgen für die Versorgung werden im Material nicht belegt."
+        ],
+        "evidence_level": "niedrig bis mittel, da nur eine journalistische Quelle vorliegt und zentrale Zuschreibungen offen bleiben.",
+        "attribution": "Die belastbaren Fakten stammen ausschließlich aus dem WDR-Bericht; unabhängige Bestätigung liegt im gelieferten Material nicht vor.",
+        "watch_next": [
+          "Ob die Polizei den Gesuchten identifiziert oder festnimmt.",
+          "Ob weitere Schäden oder neue Bekennerschreiben bestätigt werden."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030: SDG 7, SDG 9, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Neue, berichtenswerte Zusatzinformation zum laufenden Sabotagekomplex: SEK-Einsatz in Gevelsberg und keine Antreffung des Gesuchten. Kritische Infrastruktur ist systemrelevant."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T13:23:17.993Z",
+          "content_hash": "32ac85e953dc41a0f73d3035bbdc0b07811e5ddf476f0eec484c612547ddbbbf",
+          "source_summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen hat es in Gevelsberg einen SEK-Einsatz gegeben. Laut WDR traf die Polizei den gesuchten Mann dort nicht an. Der Beitrag beschreibt außerdem, dass die Polizei europaweit nach einem Mann aus Gevelsberg fahndet, Jahrgang 1977, dessen Name dem WDR vorliege. Unklar bleibt nach Darstellung des Berichts, ob er tatsächlich der Verfasser der Bekennerschreiben ist.\n\nIm Umfeld des Umspannwerks in Dormagen wurden demnach selbst gebaute Abschussvorrichtungen entdeckt, die unter einer Hochspannungsleitung standen. Die Polizei bewertet die Konstruktionen als mögliches Mittel zum Angriff auf das Stromnetz. Der WDR verweist zudem darauf, dass es ähnliche Fälle in Bergheim und Brandenburg gegeben habe. Über Schäden an der Anlage oder einen Stromausfall für die Bevölkerung wird in dem Text nichts als eingetreten berichtet.",
+          "analysis": {
+            "story_id": "wt-5547189d2645384a",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Gevelsberg lief nach dem Dormagener Sabotageverdacht ein SEK-Einsatz, ohne dass die Polizei den gesuchten Mann dort antraf. Der WDR meldet zudem Funde und Fahndungshintergründe rund um mögliche Angriffe auf das Stromnetz.",
+            "detail_summary": "Gesichert aus dem vorliegenden Bericht ist vor allem der SEK-Einsatz in Gevelsberg und dass der dort gesuchte Mann nach Angaben des WDR nicht angetroffen wurde. Der Beitrag ordnet den Vorgang in den bereits bekannten Sabotageverdacht am Umspannwerk in Dormagen ein und nennt dort gefundene Abschussvorrichtungen unter einer Hochspannungsleitung. Zusätzlich berichtet er von einer europaweiten Fahndung nach einem Mann aus Gevelsberg, Jahrgang 1977, ohne die Identität oder Täterschaft abschließend zu klären. Für die öffentliche Relevanz spricht der Bezug zu kritischer Infrastruktur und die Möglichkeit weiterer Ermittlungs- und Schutzmaßnahmen. Ein Wirkpfad wäre, dass die Suche nach dem Verdächtigen und die Prüfung der Fundstücke die Gefährdungslage für Stromnetz-Anlagen verändert. Ob daraus bereits konkrete technische, rechtliche oder operative Folgen entstehen, bleibt offen und ist im Material nicht belegt.",
+            "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur und eine europaweite Fahndung; beides kann Ermittlungen, Schutzmaßnahmen und öffentliche Sicherheitslage beeinflussen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind mögliche Stromversorgung, Sicherheitsbehörden und Anwohner; bei kritischer Infrastruktur können auch indirekte Folgen für Versorgung und Schutz entstehen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Ein direkter Umweltbezug wird im Material nicht belegt; allenfalls indirekt über Energieinfrastruktur und mögliche Schadensvermeidung."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Vorgang berührt staatlichen Schutz kritischer Infrastruktur und Ermittlungsfähigkeit; belastbare Auswirkungen auf demokratische Prozesse sind daraus noch nicht ableitbar."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Verschärfung von Schutz- und Ermittlungsmaßnahmen an kritischer Strominfrastruktur; zugleich potenziell höherer Aufwand für Polizei und Betreiber.",
+            "impact_risks": [
+              "Bei bestätigter Sabotage könnten Sicherheitskosten und operative Belastungen im Stromnetz steigen.",
+              "Unklare Täterschaft kann Ermittlungen erschweren und Unsicherheit im Umfeld kritischer Anlagen verlängern."
+            ],
+            "mechanisms": [
+              "Fahndungsdruck kann Aufenthalts- und Bewegungsmuster des Gesuchten verändern.",
+              "Die Entdeckung der Vorrichtungen kann zu zusätzlichen Sicherungsmaßnahmen an Umspannwerken führen."
+            ],
+            "first_order": [
+              "Polizei setzt die Fahndung fort.",
+              "Betreiber und Behörden prüfen Schutz und mögliche Schäden."
+            ],
+            "second_order": [
+              "Möglicherweise werden Kontrollen an kritischer Infrastruktur ausgeweitet.",
+              "Die Lage kann weitere Ermittlungsansätze in ähnlichen Fällen beeinflussen."
+            ],
+            "third_order": [
+              "Bei Bestätigung eines Sabotagemusters könnten Standards für den Schutz von Umspannwerken angepasst werden."
+            ],
+            "systemic_relevance": "Kritische Strominfrastruktur ist systemrelevant, weil Störungen oder Angriffe weit über den Einzelort hinaus Folgeeffekte für Versorgung, Sicherheit und wirtschaftliche Abläufe haben können.",
+            "transformation_potential": "Begrenzt bis mittel: Aus dem Einzelfall können verstärkte Schutzkonzepte und Ermittlungsroutinen entstehen, aber noch keine strukturelle Umstellung belegt werden.",
+            "resilience": "Der Bericht deutet auf eine laufende Prüfung der Anlage und Fahndung hin; belastbar ist aber nur, dass der Verdächtige vor Ort nicht angetroffen wurde.",
+            "side_effects": [
+              "Mehr Polizeipräsenz und Kontrollaufwand.",
+              "Mögliche Verunsicherung in betroffenen Regionen."
+            ],
+            "uncertainties": [
+              "Ob der Gesuchte tatsächlich der Verfasser der Bekennerschreiben ist, bleibt offen.",
+              "Konkrete Schäden an der Anlage oder Folgen für die Versorgung werden im Material nicht belegt."
+            ],
+            "evidence_level": "niedrig bis mittel, da nur eine journalistische Quelle vorliegt und zentrale Zuschreibungen offen bleiben.",
+            "attribution": "Die belastbaren Fakten stammen ausschließlich aus dem WDR-Bericht; unabhängige Bestätigung liegt im gelieferten Material nicht vor.",
+            "watch_next": [
+              "Ob die Polizei den Gesuchten identifiziert oder festnimmt.",
+              "Ob weitere Schäden oder neue Bekennerschreiben bestätigt werden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030: SDG 7, SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neue, berichtenswerte Zusatzinformation zum laufenden Sabotagekomplex: SEK-Einsatz in Gevelsberg und keine Antreffung des Gesuchten. Kritische Infrastruktur ist systemrelevant."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-5547189d2645384a-v1-claim-1",
+              "story_id": "wt-5547189d2645384a",
+              "claim": "In Gevelsberg gab es nach dem Sabotageversuch am Umspannwerk in Dormagen einen SEK-Einsatz; die Polizei traf den Mann dort nicht an.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "674cfe5a1d7024974824",
+                  "checked_at": "2026-09-04T13:23:17.993Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            },
+            {
+              "claim_id": "wt-5547189d2645384a-v1-claim-2",
+              "story_id": "wt-5547189d2645384a",
+              "claim": "Die Polizei fahndet europaweit nach einem Mann aus Gevelsberg, Jahrgang 1977; ob er der Verfasser der Bekennerschreiben ist, bleibt unklar.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "0efae352a0ed63e701d1",
+                  "checked_at": "2026-09-04T13:23:17.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "0e62148b66a1c5fc4e2b",
+                  "checked_at": "2026-09-04T13:23:17.993Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            },
+            {
+              "claim_id": "wt-5547189d2645384a-v1-claim-3",
+              "story_id": "wt-5547189d2645384a",
+              "claim": "In Dormagen wurden unter einer Hochspannungsleitung selbst gebaute Abschussvorrichtungen entdeckt, die laut Polizei offenbar das Stromnetz angreifen sollten.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "02c30e08f4e9f403bfb0",
+                  "checked_at": "2026-09-04T13:23:17.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "e0e565ad335cef317bb4",
+                  "checked_at": "2026-09-04T13:23:17.993Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T13:23:17.993Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "content_hash": "f1063dd5b0e5445f73781db7892c9ea58fe53237b98b8131700294ad8e68b6d4"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T13:23:17.993Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-b8c8ece83cc36995-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "b8c8ece83cc36995551c0897e626faa8a55457a7704ec3e6bc2864dcb78ebd0b"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-d52c3acd5e7e8b6e-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "d52c3acd5e7e8b6e253fecad668e610779f2ba4782656edd85524901d7625950"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-59e708eaed0d93f5-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "59e708eaed0d93f589c85e578aec716da6d7ac4469599946c784c4393a284476"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-b592de8a45df16d3-source.png",
+          "sha256": "b592de8a45df16d33cf8b06de8fac089fe66960d868a6fe85cc773ae3e2f3441",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T13:23:19.466Z"
+        },
+        "fingerprint": "ecfcbc43706a9d39b11317eb8b2793a56ad03da761b741f3129de73528f84d64",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T13:24:21.168Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-b6927bab34dd1c84",
+      "slug": "feierliche-beisetzung-von-mladic-eu-erweiterungskommissarin-kos-sagt-reise-nach-serbien--dd1c84",
+      "title": "Feierliche Beisetzung von Mladic - EU-Erweiterungskommissarin Kos sagt Reise nach Serbien ab",
+      "first_seen": "2026-09-04T13:13:20.000Z",
+      "last_updated": "2026-09-04T13:13:20.000Z",
+      "topic": [
+        "Europa",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/eu-erweiterungskommissarin-kos-sagt-reise-nach-serbien-ab-102.html",
+          "title": "Feierliche Beisetzung von Mladic - EU-Erweiterungskommissarin Kos sagt Reise nach Serbien ab",
+          "summary": "Angesichts der geplanten feierlichen Beisetzung des bosnisch-serbischen Kriegsverbrechers Mladic hat EU-Erweiterungskommissarin Kos eine Reise nach Serbien abgesagt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:13:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "fc21f9cce8f6d86151c84f3f4692d722480f5469a6414bfaae30bdb39d9a5a1d",
+          "source_item_id": "df9a7cc5ed4117d9be7b820b26d91f8e30283d230f0c56b8d394e506cf836b7f",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T13:13:20.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b6927bab34dd1c84-claim-01",
+          "story_id": "wt-b6927bab34dd1c84",
+          "claim": "Feierliche Beisetzung von Mladic - EU-Erweiterungskommissarin Kos sagt Reise nach Serbien ab: Angesichts der geplanten feierlichen Beisetzung des bosnisch-serbischen Kriegsverbrechers Mladic hat EU-Erweiterungskommissarin Kos eine Reise nach Serbien abgesagt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T13:21:25.210Z"
+        }
+      ],
+      "content_hash": "2ee1fc0fc8dcca3b397906fac2b8c24aa0aee9567783397f46a8386da4108fd1",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T13:21:25.210Z",
+      "event_first_seen_at": "2026-09-04T13:21:25.210Z",
+      "event_detected_at": "2026-09-04T13:21:25.210Z",
+      "event_id": "event-8cebb4a2493fcebce86f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.086833333333333,
+        "detection_delay_minutes": 8.086833333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T13:21:25.210Z",
+      "rejection": {
+        "at": "2026-09-04T13:21:25.210Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_NEWS_VALUE_CONTEXT_ONLY",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-0e961b2a87a0b2d3",
+      "slug": "wegen-konig-haralds-beisetzung-norwegen-erhoht-die-sicherheitsmassnahmen-a0b2d3",
+      "title": "Wegen König Haralds Beisetzung: Norwegen erhöht die Sicherheitsmaßnahmen",
+      "first_seen": "2026-09-04T09:55:00.000Z",
+      "last_updated": "2026-09-04T13:06:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/lifestyle/leute/wegen-koenig-haralds-beisetzung--norwegen-erhoeht-die-sicherheitsmassnahmen-38208270.html",
+          "title": "Wegen König Haralds Beisetzung: Norwegen erhöht die Sicherheitsmaßnahmen",
+          "summary": "Zur Beisetzung von König Harald reisen zahlreiche internationale Gäste an. Norwegen führt deshalb temporäre Grenzkontrollen ein.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T09:55:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8541738cd48b1d409b4fdcb60ffbe80bfef23af0913626ef1ae05e00e6f43b22",
+          "source_item_id": "7f0af7983094d59055c7b1409bf46c7373ea618f2ac57099f52497bed20468c0",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T09:55:00.000Z",
+          "ingested_at": "2026-09-04T10:07:41.576Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/lifestyle/leute/koenig-harald-v--beisetzung--norwegen-erhoeht-die-sicherheitsmassnahmen-38208270.html",
+          "title": "Beerdigung: König Harald V. – Norwegen erhöht Sicherheitsmaßnahmen zur Beisetzung",
+          "summary": "Zur Beisetzung von Harald V. reisen zahlreiche internationale Gäste an. Norwegen führt deshalb temporäre Grenzkontrollen ein, um Sicherheit für Trauernde zu schaffen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:06:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "bc5766f338ec9b583423f35db78e00d32fb57128df9ce84cc8681ff420d20b23",
+          "source_item_id": "5e21d2d03294e5257da8e65e23bc48ac184228625dc5bb89bc2708860898a816",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T13:06:00.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0e961b2a87a0b2d3-claim-01",
+          "story_id": "wt-0e961b2a87a0b2d3",
+          "claim": "Wegen König Haralds Beisetzung: Norwegen erhöht die Sicherheitsmaßnahmen: Zur Beisetzung von König Harald reisen zahlreiche internationale Gäste an. Norwegen führt deshalb temporäre Grenzkontrollen ein.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T13:21:25.210Z"
+        },
+        {
+          "claim_id": "wt-0e961b2a87a0b2d3-claim-02",
+          "story_id": "wt-0e961b2a87a0b2d3",
+          "claim": "Beerdigung: König Harald V. – Norwegen erhöht Sicherheitsmaßnahmen zur Beisetzung: Zur Beisetzung von Harald V. reisen zahlreiche internationale Gäste an. Norwegen führt deshalb temporäre Grenzkontrollen ein, um Sicherheit für Trauernde zu schaffen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T13:21:25.210Z"
+        }
+      ],
+      "content_hash": "2dae22dd3d6ea09b60e5aaa2416e50ecc20cef8676f6d740776dcbb8ae62a883",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T13:21:25.210Z",
+      "event_first_seen_at": "2026-09-04T10:07:41.576Z",
+      "event_detected_at": "2026-09-04T10:07:41.576Z",
+      "event_id": "event-ef2c88b89dd96df490c5",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.420166666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 193.72723333333334,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T13:21:25.210Z",
+      "rejection": {
+        "at": "2026-09-04T13:21:25.210Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7587d1bde4d3d0dd",
+      "slug": "eu-rechnungsprufer-warnen-trotz-hoher-verteidigungsausgaben-schlecht-gerustet-d3d0dd",
+      "title": "EU-Rechnungsprüfer warnen: Trotz hoher Verteidigungsausgaben schlecht gerüstet",
+      "first_seen": "2026-09-04T13:05:00.000Z",
+      "last_updated": "2026-09-04T13:05:00.000Z",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/EU-Rechnungspruefer-warnen/!6210381",
+          "title": "EU-Rechnungsprüfer warnen: Trotz hoher Verteidigungsausgaben schlecht gerüstet",
+          "summary": "Der Europäische Rechnungshof kritisiert die Ausgabenpolitik bei der Rüstung. Es geht um Schulden – und Druck auf das EU-Budget. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:05:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ee5f985d0bf0135bc134fb8060e7d87c4355f2df082ac4db8f7bafb92bfcc998",
+          "source_item_id": "1d29163101a8b55c8509dae00bbc0269b511a59b8fcc617d49491b725e67946b",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T13:05:00.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7587d1bde4d3d0dd-claim-01",
+          "story_id": "wt-7587d1bde4d3d0dd",
+          "claim": "EU-Rechnungsprüfer warnen: Trotz hoher Verteidigungsausgaben schlecht gerüstet: Der Europäische Rechnungshof kritisiert die Ausgabenpolitik bei der Rüstung. Es geht um Schulden – und Druck auf das EU-Budget. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T13:21:25.210Z"
+        }
+      ],
+      "content_hash": "88f9f75e9b977eb411285a1009f724f8bdf50ae43f800a4436cf773e03c61894",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_UNSUPPORTED_FRAMEWORK_NUMBER:16,6"
+      ],
+      "quality_retry_count": 1,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-04T13:21:25.210Z",
+      "event_first_seen_at": "2026-09-04T13:21:25.210Z",
+      "event_detected_at": "2026-09-04T13:21:25.210Z",
+      "event_id": "event-dee7eaf221842b5eb806",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Geopolitik",
+          "Finanzen"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.420166666666667,
+        "detection_delay_minutes": 16.420166666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      }
+    },
+    {
+      "story_id": "wt-02509939a8ccae63",
+      "slug": "band-galt-als-kriegsverlust-wahrend-krieg-verlorenes-buch-in-sozialkaufhaus-entdeckt-ccae63",
+      "title": "Band galt als Kriegsverlust: Während Krieg verlorenes Buch in Sozialkaufhaus entdeckt",
+      "first_seen": "2026-09-04T12:55:24.000Z",
+      "last_updated": "2026-09-04T12:56:24.000Z",
+      "topic": [
+        "Soziales",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/band-galt-als-kriegsverlust--waehrend-krieg-verlorenes-buch-in-sozialkaufhaus-entdeckt-38209338.html",
+          "title": "Band galt als Kriegsverlust: Während Krieg verlorenes Buch in Sozialkaufhaus entdeckt",
+          "summary": "Ein Buch aus dem Jahr 1594 taucht nach mehr als 80 Jahren plötzlich in einem Sozialkaufhaus auf. Nach „Detektivarbeit“ stellt sich heraus: Es ging wohl während des Zweiten Weltkriegs verloren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:55:24.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "14902ef5e3f9472369d9a96e513781315b7f48d4bae84dedbfbcb967fb822b70",
+          "source_item_id": "9429a483a0e429953ace00ffddc9c45e7e4688e451b7d0a3e3ba1eca498b5522",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:55:24.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-band-galt-als-kriegsverlust-16019631.html",
+          "title": "Band galt als Kriegsverlust: Während Krieg verlorenes Buch in Sozialkaufhaus entdeckt",
+          "summary": "Ein Buch aus dem Jahr 1594 taucht nach mehr als 80 Jahren plötzlich in einem Sozialkaufhaus auf. Nach „Detektivarbeit“ stellt sich heraus: Es ging wohl während des Zweiten Weltkriegs verloren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:56:24.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "44cfc187d35e012b9721bd42e51750c4a3bebc62441fec7ec0b288030dc3b2c4",
+          "source_item_id": "fbb5b2346ee223499455288b5f5e10597d0a8a0000e5694ce28a12a985d2eb11",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:56:24.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-02509939a8ccae63-claim-01",
+          "story_id": "wt-02509939a8ccae63",
+          "claim": "Band galt als Kriegsverlust: Während Krieg verlorenes Buch in Sozialkaufhaus entdeckt: Ein Buch aus dem Jahr 1594 taucht nach mehr als 80 Jahren plötzlich in einem Sozialkaufhaus auf. Nach „Detektivarbeit“ stellt sich heraus: Es ging wohl während des Zweiten Weltkriegs verloren.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T13:21:25.210Z"
+        },
+        {
+          "claim_id": "wt-02509939a8ccae63-claim-02",
+          "story_id": "wt-02509939a8ccae63",
+          "claim": "Band galt als Kriegsverlust: Während Krieg verlorenes Buch in Sozialkaufhaus entdeckt: Ein Buch aus dem Jahr 1594 taucht nach mehr als 80 Jahren plötzlich in einem Sozialkaufhaus auf. Nach „Detektivarbeit“ stellt sich heraus: Es ging wohl während des Zweiten Weltkriegs verloren.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T13:21:25.210Z"
+        }
+      ],
+      "content_hash": "37e65d4e954653a6b6c1c982c17d2945ba63650308b035f560811422f6946c11",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T13:21:25.210Z",
+      "event_first_seen_at": "2026-09-04T13:21:25.210Z",
+      "event_detected_at": "2026-09-04T13:21:25.210Z",
+      "event_id": "event-0549bde6793cf37f31ea",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 25.020166666666668,
+        "detection_delay_minutes": 25.020166666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T13:21:25.210Z",
+      "rejection": {
+        "at": "2026-09-04T13:21:25.210Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-7a87a173a2b4c2bc",
       "slug": "schutz-der-infrastruktur-beratungen-uber-regeln-fur-private-drohnenabwehr-b4c2bc",
@@ -7657,7 +8669,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T13:05:47.106Z",
+        "detected_at": "2026-09-04T13:21:25.210Z",
         "content_hash": "47dbb24c1485c38e734f8ee9a2356fe7e29666f3e9bc7d63878bcd94081ec429",
         "sources": [
           {
@@ -8025,7 +9037,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T02:29:46.000Z",
-            "ingested_at": "2026-09-04T12:51:34.068Z",
+            "ingested_at": "2026-09-04T13:21:25.210Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -13344,7 +14356,52 @@
           "source_count": 1
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "pending_update": {
+        "detected_at": "2026-09-04T13:21:25.210Z",
+        "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+            "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
+            "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T13:13:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ff14c73e58edfe1fbfec5b9f7f6cd9ae671d91614ac2aeaa993cf31beb0b56b1",
+            "source_item_id": "1d0f5f5617926e7e43843881fbc35fb25bc1e3a046dab524532fb7c969610b2d",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T13:13:20.000Z",
+            "ingested_at": "2026-09-04T13:21:25.210Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "FOLLOWUP_DATE_UNSUPPORTED"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false
+      }
     },
     {
       "story_id": "wt-61d3420f0dd76f70",
@@ -16226,129 +17283,6 @@
       "retirement_history": []
     },
     {
-      "story_id": "wt-5547189d2645384a",
-      "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
-      "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-      "first_seen": "2026-09-04T10:22:28.000Z",
-      "last_updated": "2026-09-04T10:22:28.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-          "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen fahndet die Polizei nach einem Mann aus Gevelsberg.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:22:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "6f4298b542b1fe3e72d1894b7066c32fae3f1dfacdc9c8c61ae75771de71d70b",
-          "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T10:22:28.000Z",
-          "ingested_at": "2026-09-04T10:42:21.689Z",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-5547189d2645384a-claim-01",
-          "story_id": "wt-5547189d2645384a",
-          "claim": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg: Nach dem Sabotageversuch am Umspannwerk in Dormagen fahndet die Polizei nach einem Mann aus Gevelsberg.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T10:42:21.689Z"
-        }
-      ],
-      "content_hash": "38881ed2b6931e2fd34b807e481253e5287b14c7d71e338657f0fb486fecd8cc",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T10:42:21.689Z",
-      "event_first_seen_at": "2026-09-04T10:42:21.689Z",
-      "event_detected_at": "2026-09-04T10:42:21.689Z",
-      "event_id": "event-dad0642fc6ee28b03f8a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 19.894816666666667,
-        "detection_delay_minutes": 19.894816666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T10:42:21.689Z",
-      "rejection": {
-        "at": "2026-09-04T10:42:21.689Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-3c6be5c124113650",
       "slug": "wohnhaus-in-chemnitz-nach-explosion-evakuiert-mieter-unter-verdacht-113650",
       "title": "Wohnhaus in Chemnitz nach Explosion evakuiert - Mieter unter Verdacht",
@@ -18995,129 +19929,6 @@
       }
     },
     {
-      "story_id": "wt-0e961b2a87a0b2d3",
-      "slug": "wegen-konig-haralds-beisetzung-norwegen-erhoht-die-sicherheitsmassnahmen-a0b2d3",
-      "title": "Wegen König Haralds Beisetzung: Norwegen erhöht die Sicherheitsmaßnahmen",
-      "first_seen": "2026-09-04T09:55:00.000Z",
-      "last_updated": "2026-09-04T09:55:00.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/lifestyle/leute/wegen-koenig-haralds-beisetzung--norwegen-erhoeht-die-sicherheitsmassnahmen-38208270.html",
-          "title": "Wegen König Haralds Beisetzung: Norwegen erhöht die Sicherheitsmaßnahmen",
-          "summary": "Zur Beisetzung von König Harald reisen zahlreiche internationale Gäste an. Norwegen führt deshalb temporäre Grenzkontrollen ein.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:55:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "8541738cd48b1d409b4fdcb60ffbe80bfef23af0913626ef1ae05e00e6f43b22",
-          "source_item_id": "7f0af7983094d59055c7b1409bf46c7373ea618f2ac57099f52497bed20468c0",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T09:55:00.000Z",
-          "ingested_at": "2026-09-04T10:07:41.576Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-0e961b2a87a0b2d3-claim-01",
-          "story_id": "wt-0e961b2a87a0b2d3",
-          "claim": "Wegen König Haralds Beisetzung: Norwegen erhöht die Sicherheitsmaßnahmen: Zur Beisetzung von König Harald reisen zahlreiche internationale Gäste an. Norwegen führt deshalb temporäre Grenzkontrollen ein.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T10:07:41.576Z"
-        }
-      ],
-      "content_hash": "7edbc1d7ba2084990300b79420088406d1093ed6186cede362d36506544a6343",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T10:07:41.576Z",
-      "event_first_seen_at": "2026-09-04T10:07:41.576Z",
-      "event_detected_at": "2026-09-04T10:07:41.576Z",
-      "event_id": "event-ef2c88b89dd96df490c5",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 36,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 12.692933333333333,
-        "detection_delay_minutes": 12.692933333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T10:07:41.576Z",
-      "rejection": {
-        "at": "2026-09-04T10:07:41.576Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-c3eb5cf6a57cc399",
       "slug": "amoklaufe-auf-social-media-medienaufsicht-fordert-mehr-regulierung-von-tiktok-7cc399",
       "title": "Amokläufe auf Social Media: Medienaufsicht fordert mehr Regulierung von TikTok",
@@ -21555,7 +22366,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T06:45:02.000Z",
-          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -21617,7 +22428,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T07:06:15.000Z",
-          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
           "provenance": {
             "origin": "publisher:ndr",
             "basis": "publisher_only_origin_unverified",
@@ -21662,7 +22473,7 @@
           "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T12:49:35.000Z",
+          "published_at": "2026-09-04T13:13:20.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -21678,8 +22489,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:49:35.000Z",
-          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "source_published_at": "2026-09-04T13:13:20.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -21693,7 +22504,7 @@
           "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T12:49:35.000Z",
+          "published_at": "2026-09-04T13:13:20.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -21709,8 +22520,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:49:35.000Z",
-          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "source_published_at": "2026-09-04T13:13:20.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -21724,7 +22535,7 @@
           "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
           "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T12:49:35.000Z",
+          "published_at": "2026-09-04T13:13:20.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -21740,8 +22551,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:49:35.000Z",
-          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "source_published_at": "2026-09-04T13:13:20.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -21830,7 +22641,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -21850,7 +22661,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -21870,7 +22681,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -21890,7 +22701,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -21910,7 +22721,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -21930,7 +22741,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -21950,7 +22761,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -21970,7 +22781,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -21990,7 +22801,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-04T13:21:25.210Z"
         }
       ],
       "content_hash": "8f889a609ff8374b84a48072a22ecd35f06957dd36d78d5ce0752fe3bc3509c0",
@@ -22002,7 +22813,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T12:51:34.068Z",
+      "updated_at": "2026-09-04T13:21:25.210Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -22036,20 +22847,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1.9844666666666666,
+        "source_age_minutes": 8.086833333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 359.8484833333333,
+        "queue_age_minutes": 389.70085,
         "target_publication_minutes": 120,
-        "news_freshness_score": 100,
+        "news_freshness_score": 98,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejected_at": "2026-09-04T13:21:25.210Z",
       "rejection": {
-        "at": "2026-09-04T12:51:34.068Z",
+        "at": "2026-09-04T13:21:25.210Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -63820,5 +64631,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T12:36:39.070Z"
+  "public_updated_at": "2026-09-04T13:21:25.210Z"
 }
