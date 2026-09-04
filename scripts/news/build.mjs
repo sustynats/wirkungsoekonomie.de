@@ -15,7 +15,7 @@ import { formatReferenceFramework } from "./reference-frameworks.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260904-actions1";
+const PUBLIC_RELEASE = "20260904-rules1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
