@@ -3,15 +3,19 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createTitleImagePipeline, publicTitleImage } from "./pipeline.mjs";
 import { buildNewsSite } from "../build.mjs";
+import { IMAGE_CONFIG as C, chooseTitleImageMode } from "./policy.mjs";
 
-export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, editorialOnly = false, prepare = null, maxDurationMs = 240000, build = buildNewsSite } = {}) {
+export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, editorialOnly = false, refreshEditorial = false, prepare = null, maxDurationMs = 240000, build = buildNewsSite } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 100) throw new Error("TITLE_IMAGE_LIMIT_INVALID");
   if (editorialOnly && (!renderOnly || cardsOnly)) throw new Error("TITLE_IMAGE_EDITORIAL_ONLY_REQUIRES_RENDER_ONLY");
+  if (refreshEditorial && (renderOnly || cardsOnly || editorialOnly)) throw new Error("TITLE_IMAGE_REFRESH_MODE_CONFLICT");
   const file = path.join(root, "data/news/stories.json");
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
   const reportFile = path.join(root, "reports/wirkungsticker-latest-run.json");
   const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
-  const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (!editorialOnly || story.title_image?.mode === "editorial") && (renderOnly ? story.title_image : !story.title_image?.wide || story.title_image.retry_after));
+  const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (refreshEditorial
+    ? story.title_image?.mode === "editorial" && story.title_image.source_visual?.prompt_version !== C.prompt_version && chooseTitleImageMode(story).mode === "editorial"
+    : (!editorialOnly || story.title_image?.mode === "editorial") && (renderOnly ? story.title_image : !story.title_image?.wide || story.title_image.retry_after)));
   const worker = prepare || createTitleImagePipeline({ root, allowGeneration: !renderOnly, maxGenerations: limit });
   const results = []; let changed = 0;
   const selected = candidates.slice(0, limit);
@@ -20,13 +24,14 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
     // this bounded batch stops, normal server-triggered runs finish one queued
     // image at a time; no recurring paid all-history backfill is introduced.
     const queuedAt = new Date().toISOString();
-    for (const story of selected) story.title_image = { ...story.title_image, retry_after: story.title_image?.retry_after || queuedAt };
+    for (const story of selected) story.title_image = { ...story.title_image, retry_after: story.title_image?.retry_after || queuedAt, ...(refreshEditorial ? { refresh_prompt_version: C.prompt_version } : {}) };
     fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
   }
   const deadline = Date.now() + maxDurationMs;
   for (const story of selected) {
     if (!dryRun && Date.now() >= deadline) break;
-    const result = await worker(story, { dryRun, cardsOnly });
+    const input = dryRun && refreshEditorial ? { ...story, title_image: { ...story.title_image, refresh_prompt_version: C.prompt_version } } : story;
+    const result = await worker(input, { dryRun, cardsOnly });
     if (dryRun) { results.push(result); continue; }
     // An overlay-only batch must not replace a working motif with a fallback
     // after a transient download/render failure. Keep the live references.
@@ -54,5 +59,5 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const limit = Number(process.argv.find((arg) => arg.startsWith("--limit="))?.slice(8) || 5);
-  console.log(JSON.stringify(await backfillTitleImages({ limit, dryRun: !process.argv.includes("--execute") || process.argv.includes("--dry-run"), cardsOnly: process.argv.includes("--cards-only"), renderOnly: process.argv.includes("--render-only"), editorialOnly: process.argv.includes("--editorial-only") }), null, 2));
+  console.log(JSON.stringify(await backfillTitleImages({ limit, dryRun: !process.argv.includes("--execute") || process.argv.includes("--dry-run"), cardsOnly: process.argv.includes("--cards-only"), renderOnly: process.argv.includes("--render-only"), editorialOnly: process.argv.includes("--editorial-only"), refreshEditorial: process.argv.includes("--refresh-editorial") }), null, 2));
 }

@@ -282,3 +282,85 @@ test("overlay-only backfill selects existing editorial images and preserves a fa
   assert.deepEqual(JSON.parse(fs.readFileSync(file)).stories, stories);
   await assert.rejects(backfillTitleImages({ root, editorialOnly: true }), /REQUIRES_RENDER_ONLY/);
 });
+
+test("explicit revision creates one replacement, retains history and then reuses it", async (t) => {
+  const directory = temp(t), calls = [];
+  const provider = createHiggsfieldAdapter({ directory, run: mockRun(calls), download: async () => asset(), quality: async () => ({ version: VISUAL_GATE_VERSION, status: "passed" }), enabled: true });
+  await provider.generate(STORY);
+  const journal = path.join(directory, STORY.story_id, "source-visual.json");
+  const old = JSON.parse(fs.readFileSync(journal)); old.prompt_version = "old-prompt";
+  fs.writeFileSync(journal, JSON.stringify(old));
+  const refresh = { ...STORY, refresh_prompt_version: C.prompt_version };
+  const replaced = await provider.generate(refresh);
+  assert.equal(replaced.prompt_version, C.prompt_version);
+  assert.equal((await provider.generate(refresh)).reused, true);
+  assert.equal((await provider.generate(STORY)).prompt_version, C.prompt_version);
+  assert.equal(calls.filter(a => a[1] === "create").length, 2);
+  assert.ok(fs.readdirSync(path.dirname(journal)).some(name => name.startsWith("source-visual-history-")));
+  await assert.rejects(provider.generate({ ...STORY, refresh_prompt_version: "unapproved" }), { code: "HIGGSFIELD_REFRESH_VERSION_INVALID" });
+  assert.equal(calls.filter(a => a[1] === "create").length, 2);
+});
+
+test("uncertain replacement keeps old journal and cannot pay for a duplicate", async (t) => {
+  const directory = temp(t), calls = [];
+  const initial = createHiggsfieldAdapter({ directory, run: mockRun(calls), download: async () => asset(), quality: async () => ({ version: VISUAL_GATE_VERSION, status: "passed" }), enabled: true });
+  await initial.generate(STORY);
+  const journal = path.join(directory, STORY.story_id, "source-visual.json");
+  const old = JSON.parse(fs.readFileSync(journal)); old.prompt_version = "old-prompt";
+  fs.writeFileSync(journal, JSON.stringify(old));
+  const provider = createHiggsfieldAdapter({ directory, enabled: true, run: mockRun(calls, { "generate create": () => { throw imageError("HIGGSFIELD_TIMEOUT"); }, "generate list": () => "[]" }) });
+  const refresh = { ...STORY, refresh_prompt_version: C.prompt_version };
+  await assert.rejects(provider.generate(refresh), { code: "HIGGSFIELD_TIMEOUT" });
+  await assert.rejects(provider.generate(refresh), { code: "HIGGSFIELD_SUBMISSION_UNCERTAIN" });
+  assert.deepEqual(JSON.parse(fs.readFileSync(journal)), old);
+  assert.equal(calls.filter(a => a[1] === "create").length, 2);
+});
+
+test("queued replacement keeps all old public images until success and survives retries", async (t) => {
+  const previous = (await worker(t)(STORY)).title_image;
+  previous.source_visual.prompt_version = "old-prompt";
+  const queued = { ...STORY, title_image: { ...previous, refresh_prompt_version: C.prompt_version, retry_after: "2026-01-01T00:00:00Z" } };
+  const failed = await worker(t, { generate: async () => { throw imageError("HIGGSFIELD_TIMEOUT"); } })(queued);
+  assert.deepEqual(publicTitleImage(failed.title_image), publicTitleImage(previous));
+  assert.equal(failed.title_image.refresh_prompt_version, C.prompt_version);
+  assert.ok(failed.title_image.retry_after);
+  const succeeded = await worker(t, { generate: async story => { assert.equal(story.refresh_prompt_version, C.prompt_version); return asset(); } })({ ...STORY, title_image: failed.title_image });
+  assert.equal(succeeded.title_image.refresh_prompt_version, undefined);
+  assert.equal(succeeded.title_image.source_visual.prompt_version, C.prompt_version);
+});
+
+test("render-only and terminal replacement failures never discard a working title", async (t) => {
+  const previous = (await worker(t)(STORY)).title_image;
+  previous.source_visual.prompt_version = "old-prompt";
+  const queued = { ...STORY, title_image: { ...previous, refresh_prompt_version: C.prompt_version, retry_after: "2026-01-01T00:00:00Z" } };
+  const readonly = await worker(t, { allowGeneration: false, generate: async () => assert.fail() })(queued);
+  assert.deepEqual(readonly.title_image, queued.title_image);
+  const rejected = await worker(t, { generate: async () => { throw imageError("IMAGE_CONTAINS_TEXT"); } })(queued);
+  assert.deepEqual(publicTitleImage(rejected.title_image), publicTitleImage(previous));
+  assert.equal(rejected.title_image.refresh_prompt_version, undefined);
+  assert.equal(rejected.title_image.retry_after, undefined);
+});
+
+test("explicit refresh snapshots only eligible old editorial images, never changes article text", async (t) => {
+  const root = temp(t); fs.mkdirSync(path.join(root, "data/news"), { recursive: true }); fs.mkdirSync(path.join(root, "reports"));
+  const title = { mode: "editorial", wide: { url: "old" }, source_visual: { prompt_version: "old-prompt" } };
+  const stories = [
+    { ...STORY, published: true, title_image: title },
+    { ...STORY, story_id: "wt-1234567890abcdea", published: true, title_image: { ...title, source_visual: { prompt_version: C.prompt_version } } },
+    { ...STORY, story_id: "wt-1234567890abcdeb", published: true, title: "Ermittlungen", title_image: title },
+    { ...STORY, story_id: "wt-1234567890abcdec", published: true, title_image: { mode: "impact_card" } },
+  ];
+  const file = path.join(root, "data/news/stories.json"); fs.writeFileSync(file, JSON.stringify({ stories }));
+  fs.writeFileSync(path.join(root, "reports/wirkungsticker-latest-run.json"), "{}");
+  const before = fs.readFileSync(file, "utf8");
+  const dry = await backfillTitleImages({ root, refreshEditorial: true, limit: 20 });
+  assert.equal(dry.candidates, 1); assert.equal(dry.results[0].would_generate, true);
+  assert.equal(fs.readFileSync(file, "utf8"), before);
+  await backfillTitleImages({ root, refreshEditorial: true, dryRun: false, maxDurationMs: 0, limit: 20, build: () => {} });
+  const saved = JSON.parse(fs.readFileSync(file)).stories;
+  assert.equal(saved[0].title_image.refresh_prompt_version, C.prompt_version);
+  assert.deepEqual(publicTitleImage(saved[0].title_image), publicTitleImage(stories[0].title_image));
+  assert.deepEqual(saved.slice(1), stories.slice(1));
+  assert.equal(saved[0].source_summary, STORY.source_summary);
+  await assert.rejects(backfillTitleImages({ root, refreshEditorial: true, renderOnly: true }), /REFRESH_MODE_CONFLICT/);
+});

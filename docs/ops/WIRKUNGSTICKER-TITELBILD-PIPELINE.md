@@ -111,6 +111,7 @@ npm run news:title-images:backfill -- --dry-run --limit=20
 npm run news:title-images:backfill -- --execute --limit=20
 npm run news:title-images:backfill -- --execute --render-only --limit=20
 npm run news:title-images:backfill -- --execute --render-only --editorial-only --limit=20
+npm run news:title-images:backfill -- --execute --refresh-editorial --limit=20
 ```
 
 Standard ist Dry-run. Der bestehende Workflow besitzt die expliziten Dispatch-
@@ -124,6 +125,18 @@ wählt vorhandene Symbolbilder. Bei Download-/Renderfehlern bleiben deren bisher
 öffentliche Referenzen erhalten. Weder Promptänderungen noch der Overlay-Backfill
 bestellen Ersatzmotive; Artikeltext, Versionsnummer und Nachrichtenzeit bleiben
 unverändert. Bildmetadaten und `public_updated_at` dürfen sich ändern.
+
+**Ausdrücklich freigegebene Motiv-Erneuerung (4. September):**
+`--refresh-editorial` markiert ausschließlich die begrenzte Auswahl vorhandener,
+weiterhin sicher visualisierbarer Editorials mit alter Promptversion. Es ist nicht
+mit Render-only/Cards-only kombinierbar. `refresh_prompt_version` und `retry_after`
+bilden eine persistente Restqueue für den normalen Worker. Das alte Titelbild
+bleibt bis zum vollständigen Erfolg aller Formate öffentlich. OCR-Ablehnung oder
+unklarer Submit bleiben gesperrt, transiente Fehler werden ohne neuen Create für
+denselben Auftrag wiederaufgenommen. Oracle führt einen separaten Journalpfad je
+Story/Promptrevision und archiviert den bisherigen Datensatz vor der Promotion.
+Die normale Pipeline bestellt bei einem bloßen Promptupdate weiterhin keine
+Ersatzmotive. Tages-/Monatslimits gelten auch für diesen einmaligen Backfill.
 
 Referenzen: Originale und Titelbilder unter Release-Tag `wirkungsticker-media-YYYY-MM`;
 Dateinamen enthalten Story-ID, Hash/Fingerprint und Ausgabeformat. Keine Überschreibung:

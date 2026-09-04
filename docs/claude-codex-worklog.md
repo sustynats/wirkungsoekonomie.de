@@ -9,6 +9,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ## 2026-09-03
 
+### 2026-09-04 · Codex · Freigegebene Erneuerung vorhandener Symbolbilder
+- **Auftrag:** Nach ausdrücklicher Nutzerfreigabe bestehende abstrakte Motive durch konkrete, nachrichtenbezogene Symbolbilder ersetzen; sensible Themen bleiben Wirkungskarten.
+- **Umsetzung:** Begrenzter opt-in `--refresh-editorial`, persistente Restqueue, revisionsgebundene Oracle-Journale und unveränderte Credit-Limits. Alte Bilder bleiben bis zum vollständigen Erfolg sichtbar; alte Originale und Journalhistorie erhalten. Keine neue Meldung/Push allein durch Bildwechsel.
+- **Geprüft:** 151 News-Tests inklusive einmaliger Ersatzgenerierung, Wiederholungen ohne Doppelzahlung, unklarer Submit, Erhalt alter Bilder bei Fehlern und begrenzter/dry-run-sicherer Auswahl. Reale Generierung und Release-Verifikation folgen.
+- **Oracle:** Nutzer bestätigt temporäre SSH-/32-Freigabe für den Rollout, nach Abschluss entfernen. A1-Free-Tier-Hinweis betrifft die vorhandene E2.1.Micro nicht; kein Tarif-/Shape-Wechsel.
+
 ### 2026-09-04 · Codex · Wirkungsticker: Installation, Bild-Overlay und Quellenlinks
 - **Was:** Prominenter Installationshinweis zwischen Hero und Suche, mit bestehendem Installationsweg verknüpft. iPhone/iPad-Anleitung, native Chromium-Installation nur nach Klick, ausblendbar für 30 Tage, keine Werbung im Standalone-Modus. Service-Worker-/Asset-Version `20260904-reader2`; keine Neuinstallation erforderlich.
 - **Bilder:** Identisches „Wirkung auf“-Panel auch auf Editorials, in allen drei Formaten; dunkler Kontrasthintergrund, reservierter Titelbereich. Zehn vorhandene Motive render-only neu gerahmt und 30 unveränderliche PNGs in GitHub Releases abgelegt, null Higgsfield-Aufrufe. Quellen, Nachrichtentexte, Datumswerte und Versionen unverändert. Original-Promptprovenienz bleibt v2. Neue Promptvorgabe v3: konkrete gegenständliche Motive statt pauschaler abstrakter Netzwerke; sensible Themen weiterhin Wirkungskarte.
