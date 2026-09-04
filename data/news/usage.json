@@ -2929,6 +2929,70 @@
       },
       "source_failures": 0,
       "quality_holds": 43
+    },
+    {
+      "run_id": "news-run-5a93f6f2f356",
+      "started_at": "2026-09-04T18:51:27.003Z",
+      "completed_at": "2026-09-04T18:54:01.475Z",
+      "berlin_slot": "Abendausgabe",
+      "counts": {
+        "feed_entries_fetched": 879,
+        "feed_entries_new": 19,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 517,
+        "story_clusters": 30,
+        "locally_rejected": 30,
+        "ai_stories": 12,
+        "ai_requests": 12,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 327156,
+        "published_stories": 0,
+        "updated_stories": 1
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 86524,
+        "output_tokens": 8791,
+        "estimated_cost_usd": 0.068856,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 36
+    },
+    {
+      "run_id": "news-run-53ecb1dc6097",
+      "started_at": "2026-09-04T19:06:24.876Z",
+      "completed_at": "2026-09-04T19:09:03.799Z",
+      "berlin_slot": "Automatischer Lauf 21:00",
+      "counts": {
+        "feed_entries_fetched": 173,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 50,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 12,
+        "ai_requests": 12,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 337147,
+        "published_stories": 0,
+        "updated_stories": 2
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 89728,
+        "output_tokens": 13313,
+        "estimated_cost_usd": 0.09489,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 25
     }
   ]
 }

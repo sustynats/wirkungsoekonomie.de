@@ -1,7 +1,346 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T18:36:20.968Z",
+  "updated_at": "2026-09-04T19:06:24.876Z",
   "stories": [
+    {
+      "story_id": "wt-00fccb632042b492",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-504369c60f07d9cc-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-e2b2ec04c77b75f1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-f5dd28c9120d1219-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
+      "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+      "source_summary": "Die Deutsche Welle berichtet über eine Fahndung der Polizei im Zusammenhang mit mutmaßlicher Sabotage an Stromversorgung und Umspannwerken in Brandenburg und Nordrhein-Westfalen. Nach Angaben des Berichts halten Ermittler zwei handschriftliche Bekennerschreiben wegen ihres detaillierten Täterwissens für authentisch. Darin reklamiert der Verfasser mehrere Angriffe, nennt Motive und beschreibt nach Darstellung der Ermittler die technische Durchführung.\n\nDer Bericht nennt außerdem einen 1977 geborenen deutschen Staatsangehörigen aus Gevelsberg als mutmaßlichen Verfasser. Die Polizei habe seinen Wohnort durchsucht, ihn dort aber nicht angetroffen; nach ihm werde gefahndet. Zugleich wird geschildert, dass Einsatzkräfte an mehreren Orten nach Hinweisen suchten, unter anderem in Dormagen, Weisweiler und bei weiteren Anlagen. Ob die Unterschrift auf den Schreiben tatsächlich von der Person stammt, sei noch nicht abschließend geklärt.",
+      "summary": "Die Polizei fahndet nach einem Mann aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Die Ermittler halten zwei Bekennerschreiben wegen ihres Täterwissens für authentisch.",
+      "detail_summary": "Gesichert berichtet ist zunächst die laufende Fahndung nach einem 1977 geborenen Deutschen aus Gevelsberg und der Bezug zu mutmaßlicher Sabotage an der Stromversorgung. Der Bericht sagt außerdem, dass Ermittler zwei handschriftliche Bekennerschreiben wegen des darin enthaltenen Täterwissens für authentisch halten. Diese Schreiben reklamieren mehrere Angriffe und beschreiben aus Sicht der Ermittler auch die technische Durchführung. Gleichzeitig bleibt offen, ob die Unterschrift tatsächlich vom Verfasser stammt. Für die Einordnung ist das relevant, weil sich daraus sowohl die Zurechnung als auch mögliche Folgemaßnahmen für den Schutz kritischer Infrastruktur ableiten. Ein möglicher Wirkpfad liegt in zusätzlichem Sicherungsaufwand und erhöhter Wachsamkeit an Stromanlagen; ob daraus längerfristige Änderungen folgen, ist aus der Quelle noch nicht belastbar ableitbar. Die Evidenzlage bleibt begrenzt, weil im gelieferten Material nur eine journalistische Quelle vorliegt.",
+      "why_relevant": "Der Fall betrifft kritische Infrastruktur, laufende Fahndung und mögliche Sicherheitsfolgen für Stromversorgung und Schutzkonzepte.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Es geht um mögliche Eingriffe in die Stromversorgung und den Schutz kritischer Infrastruktur mit Folgen für viele Betroffene."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; höchstens indirekte Effekte über Energieinfrastruktur sind denkbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Sache berührt staatliche Schutzfähigkeit, Gefahrenabwehr und das Vertrauen in die Sicherheit kritischer Infrastruktur."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Geburtsjahr des Verdächtigen",
+            "value": "1977",
+            "unit": "Jahr",
+            "context": "Geburtsjahr des gesuchten Mannes"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T11:40:00.000Z",
+      "last_updated": "2026-09-04T19:08:45.762Z",
+      "version": 3,
+      "news_status": "developing",
+      "event_id": "event-e4876e29370bc0f63efa",
+      "source_published_at": "2026-09-04T11:40:00.000Z",
+      "published_at": "2026-09-04T12:08:21.972Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dw-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei die Authentizität der Schreiben weiterhin bestätigt und ob der Gesuchte gefasst wird.",
+          "source_id": "dw-news",
+          "expected_by": null,
+          "measurable_indicator": "Amtliche Bestätigung oder Vollzug der Fahndung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d507a2000580b029",
+          "announced_at": "2026-09-04T11:40:00.000Z",
+          "follow_up_date": "2026-09-11T12:08:21.972Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Unterschrift unter den Bekennerschreiben tatsächlich vom Verfasser stammt, wird weiter geprüft.",
+          "source_id": "dw-news",
+          "expected_by": null,
+          "measurable_indicator": "Ermittler oder Polizei bestätigen oder verwerfen die Echtheit der Signatur.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-76cff72f013d9d3f",
+          "announced_at": "2026-09-04T11:40:00.000Z",
+          "follow_up_date": "2026-09-11T19:08:45.762Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutsche Welle",
+          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:40:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-63b6c057c20a2143",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
+      "title": "KI-Sicherheitsinstitut eröffnet",
+      "source_summary": "Die Bundesregierung meldet die Eröffnung des KI-Sicherheitsinstituts AISI Deutschland. In der Mitteilung wird das Institut als nationale Einrichtung beschrieben, die sich mit Cybersicherheit, neuen KI-Modellen und deren Auswirkungen befasst.\n\nGenannt werden außerdem der Auftrag, Risiken und Leistungsfähigkeit moderner KI-Systeme technisch zu bewerten, die Bundesregierung sowie weitere Akteure zu beraten und bestehende Kapazitäten zur Risiko- und Fähigkeitsanalyse zu bündeln. Die Gründung sei vom Nationalen Sicherheitsrat beschlossen worden. Zugleich heißt es, AISI Deutschland sei keine Regulierungsbehörde, sondern ein analytisch-operatives Kompetenzzentrum.",
+      "summary": "Deutschland hat ein neues KI-Sicherheitsinstitut eröffnet. Laut Bundesregierung soll AISI Deutschland Risiken von KI technisch analysieren und staatliche Stellen beraten.",
+      "detail_summary": "Gesichert ist zunächst nur die Eröffnung von AISI Deutschland und die Beschreibung des Instituts durch die Bundesregierung als nationales Kompetenz- und Evaluierungsinstitut. Laut Mitteilung soll es Cybersicherheit, neue KI-Modelle und deren Auswirkungen prüfen und als Schnittstelle für Analyse, Abwehr und Beratung dienen. Materiell ist das, weil damit eine neue staatliche Sicherheits- und Analyseinfrastruktur für KI aufgebaut wird. Der Wirkpfad liegt vor allem in besserer Risikobewertung, gebündelten Prüfkapazitäten und möglicher Koordination mit Verwaltung, Wirtschaft und Zivilgesellschaft. Mögliche Folgen sind schnellere Warnungen, bessere technische Einordnung und mittelfristig mehr Einfluss auf Sicherheitsstandards. Offen bleibt aber, wie groß Mandat, Ressourcen, Datenzugang und tatsächliche Arbeitsleistung des Instituts sind; messbare Wirkung ist noch nicht belegt.",
+      "why_relevant": "Die Meldung betrifft den Aufbau einer neuen staatlichen KI-Sicherheitsinfrastruktur mit möglichem Einfluss auf Sicherheitsstandards, Beratungswege und die staatliche Risikobewertung von KI.",
+      "topic": [
+        "Digitalisierung",
+        "KI",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Das Institut soll Risiken für Bürgerinnen, Verwaltung und Wirtschaft technisch besser einordnen und beraten."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Bezug zu Umwelt- oder Klimawirkungen wird in der Quelle nicht genannt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle nennt staatliche Beratung, strategische Einschätzung und digitale Souveränität als Ziele."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-08-31T17:00:00.000Z",
+      "last_updated": "2026-09-04T19:07:03.195Z",
+      "version": 3,
+      "news_status": "developing",
+      "event_id": "event-f10c5b35a0961de9aa6c",
+      "source_published_at": "2026-08-31T17:00:00.000Z",
+      "published_at": "2026-09-03T10:52:37.099Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das Institut konkrete Analysen, Beratung oder Standards veröffentlicht.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Arbeitsergebnisse, Mandate oder Standards des Instituts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8554b3c45aa7ac07",
+          "announced_at": "2026-08-31T17:00:00.000Z",
+          "follow_up_date": "2026-09-11T06:37:37.131Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+          "source_type": "official_rss",
+          "published_at": "2026-08-31T17:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-d175d26e4635ba0a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
+      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Der Bericht beschreibt die Anlage als grünes Band durch das Quartier, das zugleich Erholung, Treffpunkt und Spielort sein soll.\n\nGenannt werden eine Zisterne und Rückhaltemulden zum Sammeln von Regenwasser sowie klimaresiliente Bäume, die Schatten spenden und kühlen sollen. Der östliche Abschnitt umfasst 12.500 Quadratmeter; nach und nach soll der Park auf 28.000 Quadratmeter wachsen. Für den westlichen Teil wird 2027 genannt.",
+      "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Die Anlage soll Regenwasser speichern, kühlen und im Quartier als öffentlicher Treffpunkt dienen.",
+      "detail_summary": "Gesichert ist die Teilöffnung des Schönhof-Viertelparks in Frankfurt, die der Bericht mit mehreren Bausteinen beschreibt: 12.500 Quadratmeter im östlichen Abschnitt, eine geplante Ausdehnung auf 28.000 Quadratmeter sowie eine spätere Fertigstellung des Westteils 2027. Der Park ist laut Quelle mit einer Zisterne, Rückhaltemulden und klimaresilienten Bäumen ausgestattet. Das ist relevant, weil hier Stadtentwicklung und Klimaanpassung im selben Projekt zusammenlaufen. Der mögliche Wirkpfad führt über Wasserrückhalt, Beschattung und zusätzliche Aufenthaltsflächen zu veränderten Bedingungen im Quartier. Als mögliche Folge nennt die Quelle vor allem geringere Hitze- und Belastungsspitzen sowie mehr nutzbaren Freiraum; gemessene Effekte liegen aber noch nicht vor. Die Evidenz bleibt auf eine journalistische Quelle begrenzt, daher sind die tatsächliche Kühl- oder Speicherwirkung und die spätere Gesamtumsetzung offen.",
+      "why_relevant": "Der Bericht enthält eine konkrete Teilinbetriebnahme öffentlicher Infrastruktur mit klar benannten Klimaanpassungs- und Quartiersfunktionen. Das ist für Mensch, Planet und kommunale Stadtentwicklung potenziell relevant, weil sich Nutzung, Mikroklima und Aufenthaltsqualität im Quartier verändern können.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mehr öffentlicher Grünraum und bessere Aufenthaltsbedingungen können das Quartier für Anwohner und künftige Nutzer spürbar verändern."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Wasserrückhalt, Beschattung und klimaresiliente Bepflanzung zielen auf Anpassung an Hitze und Starkregen im Stadtraum."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht vor allem um kommunale Planung und öffentliche Fläche; unmittelbare demokratiespezifische Effekte sind nicht belegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Östlicher Abschnitt",
+            "value": "12.500",
+            "unit": "Quadratmeter",
+            "context": "Fläche des nun geöffneten Parkteils"
+          },
+          {
+            "label": "Endausbau",
+            "value": "28.000",
+            "unit": "Quadratmeter",
+            "context": "Geplante Gesamtgröße der Anlage"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "kinder_jugend",
+          "kommunen"
+        ],
+        "timeline": [
+          {
+            "date": "2027",
+            "label": "Westteil soll folgen"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "chance",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T15:27:13.000Z",
+      "last_updated": "2026-09-04T18:52:45.973Z",
+      "version": 3,
+      "news_status": "preliminary",
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "source_published_at": "2026-09-03T15:27:13.000Z",
+      "published_at": "2026-09-04T01:02:06.108Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der westliche Teil des Parks soll 2027 folgen.",
+          "source_id": "hr-hessenschau",
+          "expected_by": "2027-12-31",
+          "measurable_indicator": "Eröffnung oder offizielle Inbetriebnahme des westlichen Abschnitts",
+          "expected_by_evidence_hash": "384943076b0b50ffac8af42cb343bf2bc438168d9799da0c8beeb08e7beec3a1",
+          "followup_id": "followup-417454c8547c2001",
+          "announced_at": "2026-09-03T15:27:13.000Z",
+          "follow_up_date": "2027-12-31T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T15:27:13.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-31724816547fc87d",
       "title_image": {
@@ -225,20 +564,20 @@
     {
       "story_id": "wt-03c6bacdda808696",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-9af931a15fa9d405-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-24b72254775b0eec-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-fb624fb3f290a738-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-6dfc694f9f6dbd8d-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-18de4554de1f82e9-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-079b3a39f725e3c8-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -647,6 +986,205 @@
           "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:31:09.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a6f6c9c60011b50c",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-8360511f1a3b41af-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-72b6079a61179a4b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-22a05049aa4bf2fe-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+      "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+      "source_summary": "Die taz berichtet, die Polizei fahnde nach dem Gevelsberger Daniel V. Sein zum Wohnmobil umgebauter Lkw sei am Hambacher Forst entdeckt worden. Nach Angaben der Quelle hatte der Mann ein Bekennerschreiben an die taz geschickt und soll sich in Schreiben zu mehreren Angriffen auf Umspannwerke geäußert haben.\n\nDie Polizei sei dem Verdächtigen laut Bericht nahe Niederzier mit einem Sondereinsatzkommando auf der Spur gewesen. Festgenommen wurde er demnach nicht; NRW-Innenminister Herbert Reul sagte, er sei vermutlich zu Fuß unterwegs. Außerdem nennt die taz weitere Polizeieinsätze in Weisweiler, Dormagen, Bergheim-Rheidt und Ganderkesee im Zusammenhang mit der Tatserie.",
+      "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
+      "detail_summary": "Gesichert aus der Quelle ist vor allem die laufende Fahndung nach Daniel V. und der Fund seines Lkw am Hambacher Forst. Die Meldung verbindet den Fall mit einem Bekennerschreiben an die taz und mit weiteren Polizeieinsätzen im Umfeld mehrerer Umspannwerke. Das ist für die Energieinfrastruktur relevant, weil Angriffe auf solche Knotenpunkte bei Erfolg Versorgungsstörungen, erhöhte Schutzkosten und zusätzliche Einsatzbelastung auslösen können. Der unmittelbare Wirkpfad liegt daher zunächst nicht in einem eingetretenen Schaden, sondern in der Verdachtslage, der Ermittlung und der Gefährdung kritischer Infrastruktur. Eine mögliche Folge ist eine Verstärkung von Sicherungsmaßnahmen an ähnlichen Anlagen; ob und in welchem Umfang das eintritt, bleibt offen. Die Beleglage stammt hier nur aus einer journalistischen Quelle, daher bleiben Täterschaft, Motiv und Gesamtumfang der Serie vorläufig.",
+      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Energieinfrastruktur und damit einen potenziell systemrelevanten Zustand mit Folgen für Versorgungssicherheit, Schutzaufwand und öffentliche Sicherheit.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Einsatzlagen und Sicherheitsgefühl, aber ein konkreter Personenschaden ist hier nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; höchstens indirekte Folgen über Energieinfrastruktur und Sicherheitsmaßnahmen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und die demokratische Korrekturfähigkeit, ohne dass ein institutioneller Ausfall belegt ist."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Verdächtiger",
+            "value": "Daniel V.",
+            "unit": "Person",
+            "context": "von der Polizei gesuchte Person"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-04T07:59:00.000Z",
+      "last_updated": "2026-09-04T17:41:54.741Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-6371f2b9c6843f8218bf",
+      "source_published_at": "2026-09-04T16:34:00.000Z",
+      "published_at": "2026-09-04T17:41:54.741Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "taz-aktuell",
+              "taz-aktuell"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Polizei-findet-Truck-des-Verdaechtigen-am-Hambacher-Forst/!6210358",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-e731083fd0f9c981-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-4cb3f07fbcbef779-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-64c671dbff05938e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "source_summary": "Die Quelle berichtet über die laufenden Ermittlungen nach Angriffen auf das Stromnetz in Nordrhein-Westfalen und Brandenburg. Nach Angaben von Innenminister Reul wurde das Fahrzeug eines Verdächtigen in Niederzier gestürmt; in seiner Wohnung in Gevelsberg seien sprengstoffverdächtige Gegenstände gefunden worden. Die Polizei suche weiter nach dem Verdächtigen. \n\nBundesinnenminister Dobrindt ordnet die Lage als sehr wahrscheinlich Einzeltat ein und spricht nach aktuellem Stand von Klimaextremismus. Zugleich verweist er auf weiter laufende Ermittlungen und einen noch nicht abschließend geklärten Tathintergrund. Reul sagt, die vorliegenden Briefe würden derzeit als authentisch bewertet, prüfe aber weiter, ob der Mann allein gehandelt habe oder Bezüge zu anderen Vorfällen bestehen.",
+      "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
+      "detail_summary": "Gesichert ist nach der Quelle, dass die Ermittlungen zu Angriffen auf das Stromnetz weiterlaufen und dass Polizei und Innenminister konkrete Maßnahmen gegen einen Verdächtigen beschreiben. Das ist relevant, weil sich daraus ein möglicher Wirkpfad auf die Sicherheit kritischer Infrastruktur ergibt, etwa über Fahndung, Gefahrenabwehr und Schutzmaßnahmen bei Betreibern. Politisch und operativ bedeutsam ist vor allem die Kombination aus laufender Fahndung, dem Fund verdächtiger Gegenstände und der öffentlichen Einordnung durch die Innenminister. Als mögliche Folge kommen verschärfte Schutzvorkehrungen und weitere Ermittlungsmaßnahmen in Betracht. Unklar bleibt aber, wie belastbar die Zuschreibungen zu Motiv, Täterzahl und Hintergründen im Moment schon sind; die Quelle selbst verweist auf laufende Prüfungen.",
+      "why_relevant": "Der Vorgang betrifft potenzielle Angriffe auf kritische Energieinfrastruktur und damit einen Bereich mit möglicher Systemrelevanz, Sicherheitsfolgen und politischem Handlungsdruck.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Versorgungssicherheit und Schutz kritischer Infrastruktur mit möglicher Auswirkung auf Bevölkerung und Einsatzkräfte."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht belegt; allenfalls indirekt über Energieinfrastruktur und Ausfallrisiken."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die öffentliche Einordnung durch Innenminister und laufende Ermittlungen berühren staatliche Sicherheits- und Schutzaufgaben."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T15:15:00.000Z",
+      "last_updated": "2026-09-04T17:41:38.182Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-b1327260d95e2af32735",
+      "source_published_at": "2026-09-04T16:49:00.000Z",
+      "published_at": "2026-09-04T17:41:38.182Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Verdächtige tatsächlich allein gehandelt hat oder weitere Beteiligte identifiziert werden.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeiliche oder staatsanwaltschaftliche Bestätigung zusätzlicher Tatbeteiligter oder deren Ausschluss",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d2799f53d488671a",
+          "announced_at": "2026-09-04T16:49:00.000Z",
+          "follow_up_date": "2026-09-11T17:41:38.182Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:49:00.000Z",
           "primary_source": false
         }
       ]
@@ -4614,117 +5152,6 @@
       ]
     },
     {
-      "story_id": "wt-63b6c057c20a2143",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
-      "title": "KI-Sicherheitsinstitut eröffnet",
-      "source_summary": "Die Bundesregierung meldet die Eröffnung von AISI Deutschland als KI-Sicherheitsinstitut. Die Mitteilung verknüpft dies mit Fragen nach Sicherheit, Verantwortung und Risiken durch Cyberattacken, neue KI-Modelle und schnell wachsende digitale Anwendungen.\n\nNach der Darstellung soll AISI Deutschland als nationales Kompetenz- und Evaluierungsinstitut arbeiten. Genannt werden Cybersicherheit, die Analyse neuer KI-Modelle, Beratung von Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft sowie der Aufbau einer zentralen Schnittstelle für Risikoanalyse und Abwehr. Außerdem heißt es, die Gründung sei vom Nationalen Sicherheitsrat beschlossen worden und das Institut werde gemeinsam von Bundesdigitalministerium und Bundesinnenministerium aufgebaut und geleitet. Unklar bleiben im gelieferten Text Mandat, Ressourcen, Methoden und konkrete erste Outputs.",
-      "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Die Meldung beschreibt AISI Deutschland als neue Sicherheitsinfrastruktur mit Beratungs- und Analyseauftrag.",
-      "detail_summary": "Gesichert ist vor allem die Eröffnung von AISI Deutschland als neuem KI-Sicherheitsinstitut. Laut der Quelle soll das Institut Cybersicherheit, neue KI-Modelle und deren Folgen analysieren und als Schnittstelle für Risikoanalyse und Abwehr dienen. Für die WÖk-Perspektive ist das materiell, weil damit eine neue staatliche Sicherheits- und Bewertungsinfrastruktur geschaffen wird, die auf Regeln, technische Standards und künftige Entscheidungsprozesse wirken kann. Der Wirkpfad verläuft über bessere Risikoerkennung, koordiniertere Reaktionen und mögliche Einflussnahme auf Verwaltung, Wirtschaft und internationale Standards. Mögliche Folgen sind schnellere Bewertungen von KI-Risiken und eine stärkere Bündelung vorhandener Kapazitäten. Offen bleibt aber, wie groß das Mandat tatsächlich ist, welche Ressourcen und Prüfmethoden vorliegen und ob bereits konkrete Outputs entstanden sind; echte Wirkungen sind aus der Quelle noch nicht belegt.",
-      "why_relevant": "Die Eröffnung eines staatlichen KI-Sicherheitsinstituts kann Analyse-, Koordinations- und Standardsetzungsstrukturen verändern und damit künftige KI-Risiken, Abwehrfähigkeiten und Verwaltungshandeln beeinflussen.",
-      "topic": [
-        "Digitalisierung",
-        "KI",
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind potenziell Bürgerinnen, Wirtschaft, Verwaltung und Sicherheitsstrukturen; konkrete Entlastung oder Schutzwirkung ist aber noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht genannt; allenfalls indirekte Wirkungen über digitale Infrastrukturen sind denkbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die neue Institution kann staatliche Entscheidungsfähigkeit bei KI stärken; demokratische Kontrolle und Transparenz bleiben aber offen."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Institut",
-            "value": "AISI Deutschland",
-            "unit": "Name",
-            "context": "Benannte neue Sicherheitsinstitution"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "europa"
-        ],
-        "tendency": {
-          "human": "offen",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-08-31T17:00:00.000Z",
-      "last_updated": "2026-09-04T06:37:37.131Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-f10c5b35a0961de9aa6c",
-      "case_file": null,
-      "source_published_at": "2026-08-31T17:00:00.000Z",
-      "published_at": "2026-09-03T10:52:37.099Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "bundesregierung-kompakt"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob das Institut konkrete Analysen, Beratung oder Standards veröffentlicht.",
-          "source_id": "bundesregierung-kompakt",
-          "expected_by": null,
-          "measurable_indicator": "Veröffentlichte Arbeitsergebnisse, Mandate oder Standards des Instituts",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8554b3c45aa7ac07",
-          "announced_at": "2026-08-31T17:00:00.000Z",
-          "follow_up_date": "2026-09-11T06:37:37.131Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
-          "source_type": "official_rss",
-          "published_at": "2026-08-31T17:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
       "story_id": "wt-2ae8fdd95aa5c1fa",
       "title_image": {
         "mode": "impact_card",
@@ -4848,115 +5275,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-03T08:58:00.000Z",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-d175d26e4635ba0a",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
-      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
-      "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
-      "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
-      "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
-      "topic": [
-        "Klima"
-      ],
-      "status": "laufende Umsetzung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "eröffneter Abschnitt",
-            "value": "12.500",
-            "unit": "Quadratmeter",
-            "context": "Größe des nun zugänglichen Parkteils"
-          },
-          {
-            "label": "Endausbau",
-            "value": "28.000",
-            "unit": "Quadratmeter",
-            "context": "geplante Gesamtgröße des Parks"
-          },
-          {
-            "label": "Bäume",
-            "value": "181",
-            "unit": "Stück",
-            "context": "als klimaresilient beschriebene Bäume"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "kinder_jugend",
-          "kommunen",
-          "natur"
-        ],
-        "tendency": {
-          "human": "chance",
-          "planet": "chance",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-03T15:27:13.000Z",
-      "last_updated": "2026-09-04T05:22:51.361Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-8b84ae4650626fa86f6f",
-      "case_file": null,
-      "source_published_at": "2026-09-03T15:27:13.000Z",
-      "published_at": "2026-09-04T01:02:06.108Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T15:27:13.000Z",
-          "primary_source": false
         }
       ]
     },
