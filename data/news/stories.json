@@ -1,7 +1,1637 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T05:42:25.578Z",
+  "updated_at": "2026-09-04T06:06:19.579Z",
   "stories": [
+    {
+      "story_id": "wt-4fb94d2cebfca746",
+      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+      "first_seen": "2026-09-03T21:14:14.000Z",
+      "last_updated": "2026-09-04T06:06:52.464Z",
+      "published_at": "2026-09-04T01:53:14.028Z",
+      "updated_at": "2026-09-04T06:06:52.464Z",
+      "topic": [
+        "Politik",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+          "summary": "Wieder sind Abschussvorrichtungen an einem Umspannwerk gefunden worden. Aktuell geht es um Dormagen und Weisweiler.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:28:26.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff",
+          "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:28:26.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
+          "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von einem Sabotagedelikt aus. Offenbar sollte ein Kurzschluss hergestellt werden. Es…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:45:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399",
+          "source_item_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T01:45:01.000Z",
+          "ingested_at": "2026-09-04T01:51:32.529Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+          "title": "Weiterer Sabotage-Versuch an Umspannwerk in Dormagen",
+          "summary": "An einem Umspannwerk bei Dormagen in NRW gab es einen Sabotageversuch, Abschussvorrichtungen wurden gefunden. Die Polizei fahndet nach einem Mann, der ein Bekennerschreiben verfasst hat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:37:43.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "861f58150d932ea7e1ae3e6e6f2a3c3654528792c6ac8b3c4b5144f8b0fe3d46",
+          "source_item_id": "286bf0c30dea8a66a74bbd8d5dfedf5d68ede625df946d30e3855702488349f4",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:37:43.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weiterer Polizeieinsatz in Oldenburg",
+          "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:00:49.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "f397bdaf0a0e0965443026caf5c07d2a0d73303620bb48cc4bdec82e661ce42a",
+          "source_item_id": "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:00:49.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4fb94d2cebfca746-v2-claim-1",
+          "story_id": "wt-4fb94d2cebfca746",
+          "claim": "An einem Umspannwerk in Dormagen wurden erneut Abschussvorrichtungen gefunden.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "3451ce2131e36e5b0e80",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:06:52.464Z"
+        },
+        {
+          "claim_id": "wt-4fb94d2cebfca746-v2-claim-2",
+          "story_id": "wt-4fb94d2cebfca746",
+          "claim": "Die Polizei geht nach dem Fund eines verdächtigen Gegenstands inzwischen von einem Sabotagedelikt aus.",
+          "status": "single_source_claim",
+          "source_id": "swr-aktuell",
+          "evidence": [
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "ac0320e5ec575a8f31a0",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+              "excerpt_hash": "f838038a4ad63e1a2c22",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:06:52.464Z"
+        },
+        {
+          "claim_id": "wt-4fb94d2cebfca746-v2-claim-3",
+          "story_id": "wt-4fb94d2cebfca746",
+          "claim": "Nach Angaben der Berichte soll offenbar ein Kurzschluss hergestellt werden. ",
+          "status": "single_source_claim",
+          "source_id": "swr-aktuell",
+          "evidence": [
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "ac0320e5ec575a8f31a0",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:06:52.464Z"
+        },
+        {
+          "claim_id": "wt-4fb94d2cebfca746-v2-claim-4",
+          "story_id": "wt-4fb94d2cebfca746",
+          "claim": "Die Polizei fahndet nach einem Mann, der ein Bekennerschreiben verschickt haben soll, und prüft dessen Echtheit.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "c57006ebc9d6a62490c7",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+              "excerpt_hash": "f838038a4ad63e1a2c22",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:06:52.464Z"
+        }
+      ],
+      "event_id": "event-73b1c53517b0e2f5118c",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T06:06:38.868Z",
+      "publish_ready_at": "2026-09-04T06:06:52.464Z",
+      "news_status": "updated",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "ndr-info"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 4,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ermittler den Fund als bestätigten Sabotageakt einstufen oder nur als Verdacht behandeln.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Einordnung der Polizei oder Staatsanwaltschaft",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-71fe7d0ca37bce7e",
+          "announced_at": "2026-09-04T06:00:49.000Z",
+          "follow_up_date": "2026-09-11T06:06:52.464Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "817a4ed42e4098ee8c3499f82b07ae025565c9f9b48bafc2c910943c882cff73",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "f96e0236e73cd2886685092690ac9d1fa528fccd5d5a2c48ac6e474e56866b5b"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "406418972977b7a3c6192e055798ed1bc3c560eb08fa5711e18c9c92f590c5ca"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "6cfa15b65bcd28ccaa87095a1728b55d28e1834964368f82542fb7e86bb5fec8"
+        },
+        "source_visual": null,
+        "fingerprint": "fac6ccc74a779aae11350f2d8e2daea0c16d2b5a1c2090051369a47cc024d405",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T06:08:20.331Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Mehrere Rundfunk- und Nachrichtenmeldungen berichten über einen erneuten verdächtigen Fund an einem Umspannwerk in Dormagen. Laut den Berichten wurden dort Abschussvorrichtungen entdeckt; zunächst war von einem verdächtigen Gegenstand die Rede, inzwischen spricht die Polizei von einem Sabotagedelikt beziehungsweise Sabotageversuch.\n\nEin Bericht nennt außerdem ein Bekennerschreiben, das in der Nacht aufgetaucht sei; die Polizei prüfe dessen Echtheit und fahnde nach einem Mann. In einer Meldung heißt es zudem, offenbar habe ein Kurzschluss hergestellt werden sollen. Ein möglicher Zusammenhang mit früheren Vorfällen wird in den Quellen als offen beschrieben.",
+      "analysis": {
+        "story_id": "wt-4fb94d2cebfca746",
+        "news_status": "updated",
+        "publication_depth": "initial",
+        "summary": "In Dormagen wurden an einem Umspannwerk erneut Abschussvorrichtungen entdeckt. Mehrere Berichte sagen, die Polizei gehe inzwischen von Sabotage aus und prüfe ein Bekennerschreiben.",
+        "detail_summary": "Gesichert ist nach den vorliegenden Berichten vor allem der erneute Fund von Abschussvorrichtungen an einem Umspannwerk in Dormagen. Mehrere Redaktionen melden übereinstimmend, dass die Polizei den Vorgang inzwischen als Sabotagedelikt beziehungsweise Sabotageversuch einordnet. Ein Bericht nennt zudem ein Bekennerschreiben, dessen Echtheit die Polizei nach wie vor prüfe, und eine Fahndung nach einem Mann. Die Meldung ist für kritische Infrastruktur relevant, weil sie auf einen möglichen Angriff auf die Stromversorgung zielt. Daraus ergibt sich ein Wirkpfad über mögliche Störungen, Sicherheitsmaßnahmen und zusätzlichen Ermittlungsaufwand. Ob tatsächlich ein Schaden oder ein Kurzschluss hätte ausgelöst werden können, bleibt nach den Quellen offen; ebenso ist die Zuschreibung des Schreibens nicht gesichert.",
+        "why_relevant": "Der Vorgang betrifft kritische Infrastruktur und damit mögliche Folgen für Versorgungssicherheit, Sicherheitslage und Ermittlungsaufwand. Die neue Einordnung als Sabotage ist gegenüber der frühen Verdachtslage eine materielle Statusänderung.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Störungen der Stromversorgung und erhöhte Sicherheitsrisiken betreffen Haushalte und Beschäftigte, auch wenn der konkrete Schaden noch offen ist."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in den Quellen nicht belegt; allenfalls indirekt über kritische Energieinfrastruktur."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Sabotage an Infrastruktur berührt öffentliche Sicherheit und staatliche Schutzfähigkeit, aber ohne belegte politische Steuerungsentscheidung."
+        },
+        "importance": "mittel",
+        "impact_potential": "Mögliche Auswirkungen reichen von kurzfristigen Sicherheits- und Polizeimaßnahmen bis zu Störungen oder Verzögerungen im Betrieb kritischer Strominfrastruktur.",
+        "impact_risks": [
+          "Verunsicherung und zusätzlicher Schutzaufwand an weiteren Anlagen",
+          "Bei erfolgreichem Angriff mögliche lokale Stromstörungen",
+          "Unklare Zuschreibung kann Ermittlungen und Kommunikation erschweren"
+        ],
+        "mechanisms": [
+          "Angriff auf technische Infrastruktur",
+          "Ermittlungen und Absperrungen",
+          "mögliche präventive Kontrollen weiterer Anlagen"
+        ],
+        "first_order": [
+          "Polizei sichert den Ort und prüft das Bekennerschreiben",
+          "Ermittlungen zu Tatverdacht und möglichem Täter laufen"
+        ],
+        "second_order": [
+          "Mögliche Zusatzkontrollen an anderen Umspannwerken",
+          "Erhöhter Sicherheitsaufwand für Netzbetreiber"
+        ],
+        "third_order": [
+          "Wenn sich Sabotage bestätigt, könnten Schutzkonzepte für kritische Infrastruktur angepasst werden"
+        ],
+        "systemic_relevance": "Die Meldung ist systemrelevant, weil sie einen möglichen Angriffspunkt auf die Energieversorgung und damit auf ein zentrales Versorgungsnetz beschreibt.",
+        "transformation_potential": "Kurzfristig eher begrenzt; mittelbar kann der Vorfall Schutz- und Überwachungskonzepte für kritische Infrastruktur verschärfen.",
+        "resilience": "Offen bleibt, ob das System tatsächlich verwundbar war oder ob Sicherheitsmechanismen einen Schaden verhindert haben.",
+        "side_effects": [
+          "Mehr Polizeipräsenz und Sperrungen",
+          "Aufmerksamkeit auf weitere Anlagen in der Region"
+        ],
+        "uncertainties": [
+          "Ob der Gegenstand überhaupt Schaden hätte auslösen können",
+          "Ob das Bekennerschreiben echt ist",
+          "Ob ein Zusammenhang zu früheren Vorfällen besteht"
+        ],
+        "evidence_level": "mehrere journalistische Sekundärquellen mit übereinstimmendem Kern, aber ohne vorgelegte Primärquelle",
+        "attribution": "Die Einordnung stützt sich auf übereinstimmende Berichte von WDR, SWR, NDR und Deutschlandfunk; die Herkunft des zugrunde liegenden Polizeibezugs bleibt indirekt.",
+        "watch_next": [
+          "Offizielle Bestätigung oder Präzisierung der Polizei",
+          "Ergebnis der Prüfung des Bekennerschreibens",
+          "Mögliche Angaben zu weiteren Tatorten oder Zusammenhängen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 9, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "material_update",
+          "rationale": "Gegenüber der frühen Verdachtslage liegt nun die polizeiliche Einordnung als Sabotage und der Hinweis auf ein Bekennerschreiben vor; das betrifft kritische Infrastruktur und ist damit materiell."
+        },
+        "visuals": {
+          "affected_groups": [
+            "haushalte",
+            "unternehmen",
+            "staat"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T01:53:14.028Z",
+          "content_hash": "333be0eb657a3fbb048817f70eb845276a52acf3d02f9d3bf4adbd47aac1918b",
+          "source_summary": "Der WDR meldet unter Berufung auf Polizeiangaben und laufende Ermittlungen einen weiteren möglichen Sabotagevorfall an einem Umspannwerk in Dormagen. In Dormagen-Gohr hätten Spaziergänger am frühen Abend einen verdächtigen Gegenstand entdeckt; zunächst sei von „sensiblen Gegenständen“ die Rede gewesen. Laut WDR ist inzwischen klar, dass auch hier Abschussvorrichtungen aufgebaut worden seien, um möglicherweise das Stromnetz anzugreifen. Die Polizei sagt zugleich, es sei bislang zu keiner Beschädigung gekommen, und die Eignung des Gegenstands sei noch offen. \n\nDer Beitrag nennt außerdem ein Bekennerschreiben, das laut Polizei in der Nacht auftauchte. Der Verfasser wolle gegen die fossile Energieindustrie vorgehen; die Echtheit werde geprüft. Zudem werde nach einem Mann aus Gevelsberg gefahndet, der das Schreiben verschickt haben soll und der der Polizei namentlich bekannt sei. Der Bericht verweist auf weitere mögliche Tatorte in Weisweiler und im Raum Dormagen sowie auf frühere Vorfälle in Bergheim und im Süden Brandenburgs.",
+          "analysis": {
+            "story_id": "wt-4fb94d2cebfca746",
+            "news_status": "developing",
+            "publication_depth": "deepened",
+            "summary": "In Dormagen ist an einem Umspannwerk erneut ein verdächtiger Fund gemeldet worden. Die Polizei geht inzwischen von Sabotage aus und prüft ein Bekennerschreiben.",
+            "detail_summary": "Am bestbelegten Kern steht, dass an einem Umspannwerk in Dormagen-Gohr erneut ein verdächtiger Gegenstand beziehungsweise eine Abschussvorrichtung entdeckt wurde. Der WDR berichtet zudem, die Polizei gehe inzwischen von Sabotage aus; ein beabsichtigter Kurzschluss sei möglich, eine Beschädigung sei bislang aber nicht festgestellt. Für die Einordnung ist das relevant, weil kritische Strominfrastruktur betroffen ist und schon ein einzelner Angriff Schutzkonzepte, Ermittlungen und Sicherheitsmaßnahmen nachziehen kann. Der Wirkpfad liegt vor allem in zusätzlichem Absicherungsaufwand, möglicher Betriebsstörung und der Frage, ob Nachahmung oder weitere Tatorte folgen. Ob daraus tatsächlich Ausfälle oder weitergehende Schäden entstehen, bleibt nach den vorliegenden Quellen offen. Die Evidenzlage stützt hier vor allem einen laufenden Ermittlungsstand, nicht schon einen abgeschlossenen Schaden.",
+            "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und damit einen potenziell systemrelevanten Schutz- und Störfall. Schon der Verdacht auf gezielte Sabotage kann Sicherheitsaufwand, Ermittlungen und Vorsorge an mehreren Standorten auslösen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind mögliche Versorgungsstörungen, Sicherheitsrisiken und Ermittlungsfolgen; konkrete Schäden sind aber noch nicht belegt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; höchstens indirekt über Energieinfrastruktur und mögliche Störfolgen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Kritische Infrastruktur und der Umgang mit Sabotage berühren Sicherheitsstaat, öffentliche Information und die Korrekturfähigkeit von Schutzsystemen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Folgen sind verstärkte Schutzmaßnahmen an Umspannwerken, mehr Ermittlungsdruck und bei bestätigter Sabotage eine höhere Störanfälligkeit der Stromversorgung.",
+            "impact_risks": [
+              "Weitere Vorfälle an ähnlichen Anlagen",
+              "Zusätzliche Sicherungs- und Personalkosten",
+              "Mögliche kurzfristige Betriebsstörungen oder Ausfälle",
+              "Verunsicherung bei Betreibern kritischer Infrastruktur"
+            ],
+            "mechanisms": [
+              "Verdachtslagen erhöhen Kontroll- und Schutzaufwand",
+              "Gezielte Angriffe auf Umspannwerke können Stromflüsse stören",
+              "Bekennerschreiben können Ermittlungen und Vorsorgemaßnahmen auslösen"
+            ],
+            "first_order": [
+              "Polizei sperrt den Bereich und prüft Spuren",
+              "Betreiber und Behörden erhöhen die Aufmerksamkeit an weiteren Standorten"
+            ],
+            "second_order": [
+              "Weitere Sicherheitsmaßnahmen an kritischer Infrastruktur können folgen",
+              "Ermittlungen könnten auf ein Muster oder mehrere Tatorte zielen"
+            ],
+            "third_order": [
+              "Bei bestätigter Serie von Angriffen kann sich die Sicherheitsarchitektur für Stromnetze dauerhaft verschärfen"
+            ],
+            "systemic_relevance": "Umspannwerke sind Knotenpunkte der Stromversorgung; schon einzelne Störungen können über den Ort hinaus operative und sicherheitspolitische Folgerungen auslösen.",
+            "transformation_potential": "Die Meldung kann zusätzliche Schutzstandards, bessere Überwachung und eine engere Abstimmung zwischen Betreibern und Polizei anstoßen, falls sich Sabotage bestätigt.",
+            "resilience": "Kurzfristig schwächt ein solcher Vorfall die Resilienz, sofern Schutzlücken sichtbar werden; mittelfristig kann er zu Nachrüstungen und damit zu höherer Resilienz führen.",
+            "side_effects": [
+              "Mehr Kosten für Sicherung und Ermittlungen",
+              "Mögliche Anpassung von Schutzkonzepten",
+              "Erhöhte öffentliche Aufmerksamkeit auf Stromnetzrisiken"
+            ],
+            "uncertainties": [
+              "Ob der Gegenstand tatsächlich Schaden hätte auslösen können, ist offen",
+              "Die Echtheit des Bekennerschreibens ist ungeklärt",
+              "Ein Zusammenhang zu früheren Vorfällen bleibt laut Quelle unklar"
+            ],
+            "evidence_level": "single_source_reported_plus_partial_corroboration",
+            "attribution": "Die zentrale neue Information stammt aus dem WDR-Bericht; die SWR-Meldung stützt den Sabotage- und Kurzschlussvorwurf, nennt aber keine unabhängige Primärbestätigung.",
+            "watch_next": [
+              "Ob die Polizei den Verdacht auf Sabotage und die Echtheit des Schreibens bestätigt",
+              "Ob an weiteren Umspannwerken konkrete Funde gemeldet werden",
+              "Ob es zu Schäden, Ausfällen oder Festnahmen kommt"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, 9, 11 und 16; Schutz kritischer Infrastruktur"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber der Vorläufermeldung liegt eine neue, materiell relevante Verdichtung vor: Sabotageverdacht, weitere Tatorte und Fahndung. Betroffen ist kritische Infrastruktur mit möglicher Systemwirkung."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v1-claim-1",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "In Dormagen wurden an einem Umspannwerk erneut Abschussvorrichtungen gefunden, betroffen sind Dormagen und Weisweiler.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "3451ce2131e36e5b0e80",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "4328f971acfe36baf70d",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "e444c5f416759df2dc6c",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "a7b200cc42f37921ee52",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:53:14.028Z"
+            },
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v1-claim-2",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "Bei dem Fund in Dormagen-Gohr gibt es bislang keine Beschädigung; ob der Gegenstand überhaupt Schaden hätte auslösen können, ist offen.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "ccb9edf398caacc7f6c3",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "5561b12a27fc4b9c15fd",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:53:14.028Z"
+            },
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v1-claim-3",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "Die Polizei geht inzwischen von einem Sabotagedelikt aus und hält einen beabsichtigten Kurzschluss für möglich.",
+              "status": "single_source_claim",
+              "source_id": "swr-aktuell",
+              "evidence": [
+                {
+                  "source_id": "swr-aktuell",
+                  "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "ac0320e5ec575a8f31a0",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "e444c5f416759df2dc6c",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:53:14.028Z"
+            },
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v1-claim-4",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "Die Polizei fahndet nach einem Mann aus Gevelsberg, der ein Bekennerschreiben verschickt haben soll; die Echtheit des Schreibens wird geprüft.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "a7b200cc42f37921ee52",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "07936c4831a394d037ba",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:53:14.028Z"
+            },
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v1-claim-5",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "In den vergangenen Tagen waren bereits in Bergheim bei Köln und im Süden Brandenburgs Kurzschlüsse an Umspannwerken ausgelöst worden, wobei Draht mit selbstgebauten Abschussvorrichtungen auf Stromleitungen gefeuert wurde.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "57872f5f94721c188bc4",
+                  "checked_at": "2026-09-04T01:53:14.028Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:53:14.028Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff"
+            },
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+              "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T06:06:52.464Z",
+          "content_hash": "817a4ed42e4098ee8c3499f82b07ae025565c9f9b48bafc2c910943c882cff73",
+          "source_summary": "Mehrere Rundfunk- und Nachrichtenmeldungen berichten über einen erneuten verdächtigen Fund an einem Umspannwerk in Dormagen. Laut den Berichten wurden dort Abschussvorrichtungen entdeckt; zunächst war von einem verdächtigen Gegenstand die Rede, inzwischen spricht die Polizei von einem Sabotagedelikt beziehungsweise Sabotageversuch.\n\nEin Bericht nennt außerdem ein Bekennerschreiben, das in der Nacht aufgetaucht sei; die Polizei prüfe dessen Echtheit und fahnde nach einem Mann. In einer Meldung heißt es zudem, offenbar habe ein Kurzschluss hergestellt werden sollen. Ein möglicher Zusammenhang mit früheren Vorfällen wird in den Quellen als offen beschrieben.",
+          "analysis": {
+            "story_id": "wt-4fb94d2cebfca746",
+            "news_status": "updated",
+            "publication_depth": "initial",
+            "summary": "In Dormagen wurden an einem Umspannwerk erneut Abschussvorrichtungen entdeckt. Mehrere Berichte sagen, die Polizei gehe inzwischen von Sabotage aus und prüfe ein Bekennerschreiben.",
+            "detail_summary": "Gesichert ist nach den vorliegenden Berichten vor allem der erneute Fund von Abschussvorrichtungen an einem Umspannwerk in Dormagen. Mehrere Redaktionen melden übereinstimmend, dass die Polizei den Vorgang inzwischen als Sabotagedelikt beziehungsweise Sabotageversuch einordnet. Ein Bericht nennt zudem ein Bekennerschreiben, dessen Echtheit die Polizei nach wie vor prüfe, und eine Fahndung nach einem Mann. Die Meldung ist für kritische Infrastruktur relevant, weil sie auf einen möglichen Angriff auf die Stromversorgung zielt. Daraus ergibt sich ein Wirkpfad über mögliche Störungen, Sicherheitsmaßnahmen und zusätzlichen Ermittlungsaufwand. Ob tatsächlich ein Schaden oder ein Kurzschluss hätte ausgelöst werden können, bleibt nach den Quellen offen; ebenso ist die Zuschreibung des Schreibens nicht gesichert.",
+            "why_relevant": "Der Vorgang betrifft kritische Infrastruktur und damit mögliche Folgen für Versorgungssicherheit, Sicherheitslage und Ermittlungsaufwand. Die neue Einordnung als Sabotage ist gegenüber der frühen Verdachtslage eine materielle Statusänderung.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Mögliche Störungen der Stromversorgung und erhöhte Sicherheitsrisiken betreffen Haushalte und Beschäftigte, auch wenn der konkrete Schaden noch offen ist."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umweltbezug ist in den Quellen nicht belegt; allenfalls indirekt über kritische Energieinfrastruktur."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Sabotage an Infrastruktur berührt öffentliche Sicherheit und staatliche Schutzfähigkeit, aber ohne belegte politische Steuerungsentscheidung."
+            },
+            "importance": "mittel",
+            "impact_potential": "Mögliche Auswirkungen reichen von kurzfristigen Sicherheits- und Polizeimaßnahmen bis zu Störungen oder Verzögerungen im Betrieb kritischer Strominfrastruktur.",
+            "impact_risks": [
+              "Verunsicherung und zusätzlicher Schutzaufwand an weiteren Anlagen",
+              "Bei erfolgreichem Angriff mögliche lokale Stromstörungen",
+              "Unklare Zuschreibung kann Ermittlungen und Kommunikation erschweren"
+            ],
+            "mechanisms": [
+              "Angriff auf technische Infrastruktur",
+              "Ermittlungen und Absperrungen",
+              "mögliche präventive Kontrollen weiterer Anlagen"
+            ],
+            "first_order": [
+              "Polizei sichert den Ort und prüft das Bekennerschreiben",
+              "Ermittlungen zu Tatverdacht und möglichem Täter laufen"
+            ],
+            "second_order": [
+              "Mögliche Zusatzkontrollen an anderen Umspannwerken",
+              "Erhöhter Sicherheitsaufwand für Netzbetreiber"
+            ],
+            "third_order": [
+              "Wenn sich Sabotage bestätigt, könnten Schutzkonzepte für kritische Infrastruktur angepasst werden"
+            ],
+            "systemic_relevance": "Die Meldung ist systemrelevant, weil sie einen möglichen Angriffspunkt auf die Energieversorgung und damit auf ein zentrales Versorgungsnetz beschreibt.",
+            "transformation_potential": "Kurzfristig eher begrenzt; mittelbar kann der Vorfall Schutz- und Überwachungskonzepte für kritische Infrastruktur verschärfen.",
+            "resilience": "Offen bleibt, ob das System tatsächlich verwundbar war oder ob Sicherheitsmechanismen einen Schaden verhindert haben.",
+            "side_effects": [
+              "Mehr Polizeipräsenz und Sperrungen",
+              "Aufmerksamkeit auf weitere Anlagen in der Region"
+            ],
+            "uncertainties": [
+              "Ob der Gegenstand überhaupt Schaden hätte auslösen können",
+              "Ob das Bekennerschreiben echt ist",
+              "Ob ein Zusammenhang zu früheren Vorfällen besteht"
+            ],
+            "evidence_level": "mehrere journalistische Sekundärquellen mit übereinstimmendem Kern, aber ohne vorgelegte Primärquelle",
+            "attribution": "Die Einordnung stützt sich auf übereinstimmende Berichte von WDR, SWR, NDR und Deutschlandfunk; die Herkunft des zugrunde liegenden Polizeibezugs bleibt indirekt.",
+            "watch_next": [
+              "Offizielle Bestätigung oder Präzisierung der Polizei",
+              "Ergebnis der Prüfung des Bekennerschreibens",
+              "Mögliche Angaben zu weiteren Tatorten oder Zusammenhängen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber der frühen Verdachtslage liegt nun die polizeiliche Einordnung als Sabotage und der Hinweis auf ein Bekennerschreiben vor; das betrifft kritische Infrastruktur und ist damit materiell."
+            },
+            "visuals": {
+              "affected_groups": [
+                "haushalte",
+                "unternehmen",
+                "staat"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v2-claim-1",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "An einem Umspannwerk in Dormagen wurden erneut Abschussvorrichtungen gefunden.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "3451ce2131e36e5b0e80",
+                  "checked_at": "2026-09-04T06:06:52.464Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            },
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v2-claim-2",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "Die Polizei geht nach dem Fund eines verdächtigen Gegenstands inzwischen von einem Sabotagedelikt aus.",
+              "status": "single_source_claim",
+              "source_id": "swr-aktuell",
+              "evidence": [
+                {
+                  "source_id": "swr-aktuell",
+                  "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "ac0320e5ec575a8f31a0",
+                  "checked_at": "2026-09-04T06:06:52.464Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+                  "excerpt_hash": "f838038a4ad63e1a2c22",
+                  "checked_at": "2026-09-04T06:06:52.464Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            },
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v2-claim-3",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "Nach Angaben der Berichte soll offenbar ein Kurzschluss hergestellt werden. ",
+              "status": "single_source_claim",
+              "source_id": "swr-aktuell",
+              "evidence": [
+                {
+                  "source_id": "swr-aktuell",
+                  "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "ac0320e5ec575a8f31a0",
+                  "checked_at": "2026-09-04T06:06:52.464Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            },
+            {
+              "claim_id": "wt-4fb94d2cebfca746-v2-claim-4",
+              "story_id": "wt-4fb94d2cebfca746",
+              "claim": "Die Polizei fahndet nach einem Mann, der ein Bekennerschreiben verschickt haben soll, und prüft dessen Echtheit.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "c57006ebc9d6a62490c7",
+                  "checked_at": "2026-09-04T06:06:52.464Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+                  "excerpt_hash": "f838038a4ad63e1a2c22",
+                  "checked_at": "2026-09-04T06:06:52.464Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:06:52.464Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff"
+            },
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+              "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+              "content_hash": "861f58150d932ea7e1ae3e6e6f2a3c3654528792c6ac8b3c4b5144f8b0fe3d46"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+              "content_hash": "f397bdaf0a0e0965443026caf5c07d2a0d73303620bb48cc4bdec82e661ce42a"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T01:53:14.028Z",
+          "source_count": 2
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T06:06:52.464Z",
+          "source_count": 4
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-0db906d5cfe1383d",
+      "slug": "grosse-rauchentwicklung-grossbrand-auf-schrottplatz-wie-ist-der-stand-e1383d",
+      "title": "Große Rauchentwicklung: Großbrand auf Schrottplatz - Wie ist der Stand?",
+      "first_seen": "2026-09-04T05:52:06.000Z",
+      "last_updated": "2026-09-04T05:52:06.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/niedersachsen-bremen/grosse-rauchentwicklung--grossbrand-auf-schrottplatz---wie-ist-der-stand--38206394.html",
+          "title": "Große Rauchentwicklung: Großbrand auf Schrottplatz - Wie ist der Stand?",
+          "summary": "Das Feuer auf dem Gelände eines Entsorgungsunternehmens in Leer hatte Auswirkungen auf Menschen in Ostfriesland, im Landkreis Ammerland und in Oldenburg. Nun ist das Ende der Löscharbeiten in Sicht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:52:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "e668d6f1e8d35d4117ebb853bd5b1410bf31fe89c8b420a8fdee62ffdd66dc83",
+          "source_item_id": "be73f86d1783b292c730eae5ecde22cc75ddfb97f7b885e2c7f5dc146031908c",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:52:06.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0db906d5cfe1383d-claim-01",
+          "story_id": "wt-0db906d5cfe1383d",
+          "claim": "Große Rauchentwicklung: Großbrand auf Schrottplatz - Wie ist der Stand?: Das Feuer auf dem Gelände eines Entsorgungsunternehmens in Leer hatte Auswirkungen auf Menschen in Ostfriesland, im Landkreis Ammerland und in Oldenburg. Nun ist das Ende der Löscharbeiten in Sicht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        }
+      ],
+      "content_hash": "113def28d83383f5c64bf0954593f3d4c2fea022ecc2cefeade3fe0872b12007",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T06:06:19.579Z",
+      "event_detected_at": "2026-09-04T06:06:19.579Z",
+      "event_id": "event-de1ac58ca905c5c5543f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.226316666666667,
+        "detection_delay_minutes": 14.226316666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T06:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-3c6be5c124113650",
+      "slug": "wohnhaus-in-chemnitz-nach-explosion-evakuiert-mieter-unter-verdacht-113650",
+      "title": "Wohnhaus in Chemnitz nach Explosion evakuiert - Mieter unter Verdacht",
+      "first_seen": "2026-09-04T05:50:47.000Z",
+      "last_updated": "2026-09-04T05:50:47.000Z",
+      "topic": [
+        "Soziales",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/news-haus-evakuierung,explosion-polizei-100.html",
+          "title": "Wohnhaus in Chemnitz nach Explosion evakuiert - Mieter unter Verdacht",
+          "summary": "Nach einer Explosion in einer Wohnung ist ein Mietshaus in Chemnitz vorerst unbewohnbar. Ein 37 Jahre alter Bewohner wurde vorläufig festgenommen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:50:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f002e8c8b37f55a1faf4927b1a2df7f67903310aa1c305d3043f26f07ce675f3",
+          "source_item_id": "b6af78e674281058e3c4e861c8638282087ac67a578088f632bdfe0feeb969dc",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:50:47.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3c6be5c124113650-claim-01",
+          "story_id": "wt-3c6be5c124113650",
+          "claim": "Wohnhaus in Chemnitz nach Explosion evakuiert - Mieter unter Verdacht: Nach einer Explosion in einer Wohnung ist ein Mietshaus in Chemnitz vorerst unbewohnbar. Ein 37 Jahre alter Bewohner wurde vorläufig festgenommen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        }
+      ],
+      "content_hash": "01c05ed062155ff5ae7e326120cf2ae0f3f5db7e3cbfc0726d08c47fc5ecd635",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
+      ],
+      "quality_retry_count": 1,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-04T06:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T06:06:19.579Z",
+      "event_detected_at": "2026-09-04T06:06:19.579Z",
+      "event_id": "event-e36c0e80c02ea72f11c7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.542983333333334,
+        "detection_delay_minutes": 15.542983333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      }
+    },
+    {
+      "story_id": "wt-969234cf8cfc6ed0",
+      "slug": "umspannwerk-in-dormagen-polizei-spricht-von-sabotagedelikt-fc6ed0",
+      "title": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+      "first_seen": "2026-09-04T00:26:29.000Z",
+      "last_updated": "2026-09-04T05:48:00.000Z",
+      "topic": [
+        "Energie",
+        "Gesellschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/--umspannwerk-in-dormagen--polizei-spricht-von-sabotagedelikt-38205552.html",
+          "title": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+          "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen zwischen Köln und Düsseldorf geht die Polizei von einem Sabotagedelikt aus. Den Ermittlern liege ein Bekennerschreiben vor, sagte ein Sprecher der Polizei Köln der Deutschen Presse-Agentur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T00:26:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "bf71cb6e125e4c31ddb887548d0ef54b6ec94301b00ee68792062f252499c1bc",
+          "source_item_id": "ab60db1604e7263b64a2815478b24b5ca4d635ee9d193ced71162213737d203f",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T00:26:29.000Z",
+          "ingested_at": "2026-09-04T01:51:32.529Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-berlin-brandenburg-16015959.html",
+          "title": "Berlin / Brandenburg: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+          "summary": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "14baeab52e6309adfadaedf7186b1396e5615932bf9bc9da5192a0599325eb12",
+          "source_item_id": "46722a930a80937847eab16371e68c247eb68c63abd2bc56313f8db51059c04a",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T21:03:08.000Z",
+          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-verdachtiger-gegenstand-16015959.html",
+          "title": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+          "summary": "Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "7a6eab31bb77365b90a2eb6fa7511fd65bf4187e316af880c86c4ec3f85b4de5",
+          "source_item_id": "4f3c53ce6f4dbbe888e452b7bd58aad084d5b2ac05309aff438cd00e7baedbc3",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T21:03:08.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/verdaechtiger-gegenstand--umspannwerk-in-dormagen--polizei-spricht-von-sabotagedelikt-38205696.html",
+          "title": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+          "summary": "Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T02:10:03.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4aac6710c9fc9bf339d20bb7d384e99686abe7d9b06f4dc0a2762d919fa73509",
+          "source_item_id": "192494864d1986eb4fda164cff142ca480561e5b09cb08bb20ffba2f63b156c4",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T02:10:03.000Z",
+          "ingested_at": "2026-09-04T02:21:15.650Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-verdachtiger-gegenstand-16016037.html",
+          "title": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+          "summary": "Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T02:11:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1bfe3bd13d1d32b2b6e0e86d492a8113885f478f9c1fec8c120a821a02941272",
+          "source_item_id": "87886595b5508d7547ef987d4c15b3d8dfe05603dc46d705e1e60c4b0b715067",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T02:11:21.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-erneuter-angriff-auf-stromnetz-polizei-spricht-von-sabotagedelikt/100251404.html",
+          "title": "Umspannwerk: Erneuter Angriff auf Stromnetz – Polizei spricht von Sabotagedelikt",
+          "summary": "Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:48:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "df8b6494c68b16ed8fed809b0fdf1edab5f03dadaaf80795a12a9f6f169a6b89",
+          "source_item_id": "50a6f9c85688178e7d6df24f721bde7b30bce053942e84e165c8d0c5e98ce3db",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:48:00.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-969234cf8cfc6ed0-claim-01",
+          "story_id": "wt-969234cf8cfc6ed0",
+          "claim": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen zwischen Köln und Düsseldorf geht die Polizei von einem Sabotagedelikt aus. Den Ermittlern liege ein Bekennerschreiben vor, sagte ein Sprecher der Polizei Köln der Deutschen Presse-Agentur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-969234cf8cfc6ed0-claim-02",
+          "story_id": "wt-969234cf8cfc6ed0",
+          "claim": "Berlin / Brandenburg: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-969234cf8cfc6ed0-claim-03",
+          "story_id": "wt-969234cf8cfc6ed0",
+          "claim": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-969234cf8cfc6ed0-claim-04",
+          "story_id": "wt-969234cf8cfc6ed0",
+          "claim": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-969234cf8cfc6ed0-claim-05",
+          "story_id": "wt-969234cf8cfc6ed0",
+          "claim": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-969234cf8cfc6ed0-claim-06",
+          "story_id": "wt-969234cf8cfc6ed0",
+          "claim": "Umspannwerk: Erneuter Angriff auf Stromnetz – Polizei spricht von Sabotagedelikt: Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        }
+      ],
+      "content_hash": "ed5d7f260a1e2ee36645dbe5631af22d3f5c92e5ea908ef5602544c6cbc0bbeb",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T00:59:37.557Z",
+      "event_detected_at": "2026-09-04T00:59:37.557Z",
+      "event_id": "event-3e0905240e5dfb9f71e8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie",
+          "Gesellschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.326316666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 306.70036666666664,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 92,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T06:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-6267bf5562aa70a6",
+      "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
+      "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+      "first_seen": "2026-09-04T05:44:22.000Z",
+      "last_updated": "2026-09-04T05:45:34.000Z",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+          "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+          "summary": "Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:44:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4489b0cd08c0b9afaa3c6408527953eb7bc98fbf168e67ea001ff7cb6ef3af17",
+          "source_item_id": "6e155b28f46235f648154384bf13909f956b4051c3b7a0063b44b7be6378e89c",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:44:22.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+          "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+          "summary": "Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:45:34.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6a59f8f50174e5587806455e917855c3deaa9d9ff75d1a865cc6e0736d2120b2",
+          "source_item_id": "d710c4f817db49b343f9626a562a783ee8e88dff2b10a9d88ace2598542bb3c6",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:45:34.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6267bf5562aa70a6-claim-01",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär: Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-6267bf5562aa70a6-claim-02",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär: Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        }
+      ],
+      "content_hash": "c0d2698e6f6d0a03fbf7dde1b1f2b5713ceb30a267422be4f63f0e23ddc7e458",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T06:06:19.579Z",
+      "event_detected_at": "2026-09-04T06:06:19.579Z",
+      "event_id": "event-993d57cff20b05016759",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.75965,
+        "detection_delay_minutes": 20.75965,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T06:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-e976be74e6481ea2",
       "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
@@ -1853,6 +3483,135 @@
       }
     },
     {
+      "story_id": "wt-73f008bb26e4a9f2",
+      "slug": "die-wahrheit-tote-zeitung-mit-pizza-hawaii-e4a9f2",
+      "title": "Die Wahrheit: Tote Zeitung mit Pizza Hawaii",
+      "first_seen": "2026-09-04T05:37:00.000Z",
+      "last_updated": "2026-09-04T05:37:00.000Z",
+      "topic": [
+        "Klima",
+        "Europa",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Die-Wahrheit/!6209871",
+          "title": "Die Wahrheit: Tote Zeitung mit Pizza Hawaii",
+          "summary": "Mit den neuen EU-Verpackungsregeln erweist der Gesetzgeber dem Umweltschutz einen Bärendienst. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:37:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4c204fa10216762a84007e094f8ed512986513b81ae1409961063465996ed95c",
+          "source_item_id": "c0637ebb3aeb7934de1fc50c9251077f9800f019c73cc339d37b3cd01206b0f9",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:37:00.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-73f008bb26e4a9f2-claim-01",
+          "story_id": "wt-73f008bb26e4a9f2",
+          "claim": "Die Wahrheit: Tote Zeitung mit Pizza Hawaii: Mit den neuen EU-Verpackungsregeln erweist der Gesetzgeber dem Umweltschutz einen Bärendienst. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:06:19.579Z"
+        }
+      ],
+      "content_hash": "37d79991af32394b4dacf110981e93337203a0dcf4ec6943bed3340da756b41f",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T06:06:19.579Z",
+      "event_detected_at": "2026-09-04T06:06:19.579Z",
+      "event_id": "event-401609b0c290b924da72",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Europa",
+          "Politik"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 29.326316666666667,
+        "detection_delay_minutes": 29.326316666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T06:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
       "story_id": "wt-e442d6ad81290406",
       "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
       "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
@@ -2602,13 +4361,13 @@
           "publisher": "France 24",
           "url": "https://www.france24.com/en/video/20260904-pragmatic-international-relations-s%C3%A1nchez-seeks-to-avoid-further-conflict-with-rabat",
           "title": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat'",
-          "summary": "Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. She sees the Ceuta migrant crossings as a both a domestic and international crisis. The scale and speed of the crossings point toward what she calls a form of \"deliberate permissiveness\" at the border and Pedro Sánchez's restrained response is understood less as exoneration of Morocco than as pragmatic international relations. Sánchez faces pressure at home from political opponents able to frame migration as an existential crisis. She extends the argument further by showing how such episodes become politically valuable after they occur: Spain's far right can amplify the language of \"invasion,\" while hostile foreign information ecosystems can exploit an already volatile controversy without necessarily having created it. The result is a crisis in which the border is simultaneously a geopolitical instrument, a domestic political weapon, and an information battleground.",
+          "summary": "Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. The migrant crossings at Ceuta have become both a domestic and international political lightning rod. At home, Pedro Sánchez faces opponents who can cast migration in existential terms, with Spain's far right amplifying the rhetoric of \"invasion.\" Internationally, the crisis exposes the geopolitical leverage inherent in control of the border. Ceuta thus emerges as more than a migration crisis: the border becomes at once an instrument of geopolitical leverage, a weapon in Spain's domestic political contest, and a battleground for competing narratives and disinformation.",
           "source_type": "media_rss",
           "published_at": "2026-09-04T05:22:52.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Geopolitik",
-          "content_hash": "2fd9ad3a31c2b8004ab70f72273984784dec63a08faa4d1c6f1c359f57f23e99",
+          "content_hash": "ce0c4239818e7e5736a50de183bda2a513a218155cd81a09fd117dba3d7e24af",
           "source_item_id": "c4a5b9cb15c4c5087dd6a642e6b1186d0eb4109031dbb431a5b1487d886f3e5b",
           "publisher_id": "france24",
           "publisher_kind": "public_broadcasting",
@@ -2620,7 +4379,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T05:22:52.000Z",
-          "ingested_at": "2026-09-04T05:36:20.086Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
           "provenance": {
             "origin": "publisher:france24",
             "basis": "publisher_only_origin_unverified",
@@ -2632,7 +4391,7 @@
         {
           "claim_id": "wt-7f5f081ae8cf117e-claim-01",
           "story_id": "wt-7f5f081ae8cf117e",
-          "claim": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat': Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. She sees the Ceuta migrant crossings as a both a domestic and international crisis. The scale and speed of the crossings point toward what she calls a form of \"deliberate permissiveness\" at the border and Pedro Sánchez's restrained response is understood less as exoneration of Morocco than as pragmatic international relations. Sánchez faces pressure at home from political opponents able to frame migration as an existential crisis. She extends the argument further by showing how such episodes become politically valuable after they occur: Spain's far right can amplify the language of \"invasion,\" while hostile foreign information ecosystems can exploit an already ",
+          "claim": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat': Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. The migrant crossings at Ceuta have become both a domestic and international political lightning rod. At home, Pedro Sánchez faces opponents who can cast migration in existential terms, with Spain's far right amplifying the rhetoric of \"invasion.\" Internationally, the crisis exposes the geopolitical leverage inherent in control of the border. Ceuta thus emerges as more than a migration crisis: the border becomes at once an instrument of geopolitical leverage, a weapon in Spain's domestic political contest, and a battleground for competing narratives and disinformation.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "france24-en",
           "source_function": "journalistic_report",
@@ -2647,10 +4406,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T05:42:25.578Z"
+          "checked_at": "2026-09-04T06:06:19.579Z"
         }
       ],
-      "content_hash": "830a69f96febf195366da11f614a76d7fef5676d35793b3268969f624269651e",
+      "content_hash": "b50a136247481a5aa9e8d14b828b41c800ac00a909aa0910de52858454c98782",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
@@ -2659,7 +4418,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T05:42:25.578Z",
+      "updated_at": "2026-09-04T06:06:19.579Z",
       "event_first_seen_at": "2026-09-04T05:36:20.086Z",
       "event_detected_at": "2026-09-04T05:36:20.086Z",
       "event_id": "event-d95278f4ca435b7ed36d",
@@ -2680,7 +4439,7 @@
         "context_formats": [],
         "context_only": false,
         "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
         ],
         "materiality_factors": [
           "Zahl und Art möglicher Wirkungsempfänger",
@@ -2690,20 +4449,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19.559633333333334,
+        "source_age_minutes": 43.45965,
         "detection_delay_minutes": 13.4681,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 6.0915333333333335,
+        "queue_age_minutes": 29.99155,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T05:42:25.578Z",
+      "rejected_at": "2026-09-04T06:06:19.579Z",
       "rejection": {
-        "at": "2026-09-04T05:42:25.578Z",
+        "at": "2026-09-04T06:06:19.579Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -5473,7 +7232,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
         "sources": [
           {
@@ -5499,7 +7258,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -7184,7 +8943,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
         "sources": [
           {
@@ -7210,7 +8969,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -8679,7 +10438,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
         "sources": [
           {
@@ -8705,7 +10464,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:58:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -8713,11 +10472,47 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_PROVIDER_ERROR:502"
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
         ],
-        "quality_retry_count": 0,
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false
       }
@@ -9335,7 +11130,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
         "sources": [
           {
@@ -9362,7 +11157,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T19:26:04.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:hr",
               "basis": "publisher_only_origin_unverified",
@@ -10060,7 +11855,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
         "sources": [
           {
@@ -10087,7 +11882,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -10697,7 +12492,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
         "sources": [
           {
@@ -10723,7 +12518,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T16:05:41.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:france24",
               "basis": "publisher_only_origin_unverified",
@@ -11715,7 +13510,7 @@
       "verification_started_at": "2026-09-04T02:52:51.831Z",
       "publish_ready_at": "2026-09-04T02:53:04.131Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -12125,47 +13920,7 @@
         "generated_at": "2026-09-04T02:54:42.520Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
-        "content_hash": "5075c7ffde16cbbf806ab1eed166f847b296725de53c460c37469f3ec7552983",
-        "sources": [
-          {
-            "source_id": "dw-news",
-            "publisher": "Deutsche Welle",
-            "url": "https://www.dw.com/de/iran-mindestens-15-tote-nach-us-attacken/a-78701341?maca=de-rss-de-news-1089-xml-mrss",
-            "title": "Iran: Mindestens 15 Tote nach US-Attacken",
-            "summary": "Der Ölpreis reagiert heftig auf die jüngste Eskalationsspirale zwischen den Konfliktparteien. US-Präsident Trump gibt sich demonstrativ gelassen und fordert die iranische Bevölkerung erneut zum Umsturz auf.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-02T09:37:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "d69a2ea3b261c23e40b11fb146bc36d892bf827101f0e6acb92ef04d7d94d55c",
-            "source_item_id": "2b46a6a26a98421a1bba1cd03168eefee6b9e844a3d975995a588138ed317c43",
-            "publisher_id": "deutsche-welle",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T09:37:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
-            "provenance": {
-              "origin": "publisher:deutsche-welle",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-45c66ae271691215",
@@ -12342,7 +14097,7 @@
       "verification_started_at": "2026-09-04T02:52:10.449Z",
       "publish_ready_at": "2026-09-04T02:52:23.414Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -12786,48 +14541,7 @@
         "generated_at": "2026-09-04T02:54:37.029Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
-        "content_hash": "5a56ec97c1c488c4e358f69ef0a90770eddf25eb4ca171e125fde72efa5a8d39",
-        "sources": [
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/auszubildende-pflege-gesundheitsberufe-berlin-brandenburg.html",
-            "title": "Mehr Auszubildende, mehr Abbrecher: Pflegefall Gesundheitsberufe",
-            "summary": "Die Zahl der Auszubildenden in Gesundheitsberufen und insbesondere in der Pflege steigt kräftig. Reformen aus den Merkel-Jahren greifen. Hoch scheint aber auch die Unzufriedenheit: Ungewöhnlich viele Azubis brechen ihre Ausbildung ab.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T04:28:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "350f77c37ff35d0867b1997aa43f8d6451405fdce8a59c226738cc532e52faea",
-            "source_item_id": "e6fbec030ee2f103a4c17981573c5d3c2374f8e005b98911e10167af9929f91f",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T04:28:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-9de543ac63864ad7",
@@ -13556,7 +15270,7 @@
       "verification_started_at": "2026-09-04T02:36:47.990Z",
       "publish_ready_at": "2026-09-04T02:37:01.895Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -13963,51 +15677,7 @@
         "generated_at": "2026-09-04T02:38:33.451Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
-        "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-            "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
-            "summary": "Am Ende haben sich die Ärzte durchgesetzt: Weil sie die gesetzlich vorgeschriebene Untersuchung angehender Azubis nicht mehr für den seit 30 Jahren geltenden Gebührensatz machen wollen, legt das Land was obendrauf.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T13:56:50.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1",
-            "source_item_id": "cd756b127cb22c847b980aced730cbeeef0e04f07aca4fdb3a4d2dcfe39532df",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T13:56:50.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-bb48be7c21b78cbc",
@@ -15706,335 +17376,6 @@
       }
     },
     {
-      "story_id": "wt-969234cf8cfc6ed0",
-      "slug": "umspannwerk-in-dormagen-polizei-spricht-von-sabotagedelikt-fc6ed0",
-      "title": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-      "first_seen": "2026-09-04T00:26:29.000Z",
-      "last_updated": "2026-09-04T02:11:21.000Z",
-      "topic": [
-        "Gesellschaft",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/--umspannwerk-in-dormagen--polizei-spricht-von-sabotagedelikt-38205552.html",
-          "title": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-          "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen zwischen Köln und Düsseldorf geht die Polizei von einem Sabotagedelikt aus. Den Ermittlern liege ein Bekennerschreiben vor, sagte ein Sprecher der Polizei Köln der Deutschen Presse-Agentur.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T00:26:29.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "bf71cb6e125e4c31ddb887548d0ef54b6ec94301b00ee68792062f252499c1bc",
-          "source_item_id": "ab60db1604e7263b64a2815478b24b5ca4d635ee9d193ced71162213737d203f",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T00:26:29.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-berlin-brandenburg-16015959.html",
-          "title": "Berlin / Brandenburg: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-          "summary": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:03:08.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "14baeab52e6309adfadaedf7186b1396e5615932bf9bc9da5192a0599325eb12",
-          "source_item_id": "46722a930a80937847eab16371e68c247eb68c63abd2bc56313f8db51059c04a",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T21:03:08.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-verdachtiger-gegenstand-16015959.html",
-          "title": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-          "summary": "Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:03:08.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "7a6eab31bb77365b90a2eb6fa7511fd65bf4187e316af880c86c4ec3f85b4de5",
-          "source_item_id": "4f3c53ce6f4dbbe888e452b7bd58aad084d5b2ac05309aff438cd00e7baedbc3",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T21:03:08.000Z",
-          "ingested_at": "2026-09-04T02:21:15.650Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/verdaechtiger-gegenstand--umspannwerk-in-dormagen--polizei-spricht-von-sabotagedelikt-38205696.html",
-          "title": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-          "summary": "Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:10:03.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "4aac6710c9fc9bf339d20bb7d384e99686abe7d9b06f4dc0a2762d919fa73509",
-          "source_item_id": "192494864d1986eb4fda164cff142ca480561e5b09cb08bb20ffba2f63b156c4",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T02:10:03.000Z",
-          "ingested_at": "2026-09-04T02:21:15.650Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-verdachtiger-gegenstand-16016037.html",
-          "title": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-          "summary": "Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:11:21.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "1bfe3bd13d1d32b2b6e0e86d492a8113885f478f9c1fec8c120a821a02941272",
-          "source_item_id": "87886595b5508d7547ef987d4c15b3d8dfe05603dc46d705e1e60c4b0b715067",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T02:11:21.000Z",
-          "ingested_at": "2026-09-04T02:21:15.650Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-969234cf8cfc6ed0-claim-01",
-          "story_id": "wt-969234cf8cfc6ed0",
-          "claim": "Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen zwischen Köln und Düsseldorf geht die Polizei von einem Sabotagedelikt aus. Den Ermittlern liege ein Bekennerschreiben vor, sagte ein Sprecher der Polizei Köln der Deutschen Presse-Agentur.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T02:21:15.650Z"
-        },
-        {
-          "claim_id": "wt-969234cf8cfc6ed0-claim-02",
-          "story_id": "wt-969234cf8cfc6ed0",
-          "claim": "Berlin / Brandenburg: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T02:21:15.650Z"
-        },
-        {
-          "claim_id": "wt-969234cf8cfc6ed0-claim-03",
-          "story_id": "wt-969234cf8cfc6ed0",
-          "claim": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T02:21:15.650Z"
-        },
-        {
-          "claim_id": "wt-969234cf8cfc6ed0-claim-04",
-          "story_id": "wt-969234cf8cfc6ed0",
-          "claim": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T02:21:15.650Z"
-        },
-        {
-          "claim_id": "wt-969234cf8cfc6ed0-claim-05",
-          "story_id": "wt-969234cf8cfc6ed0",
-          "claim": "Verdächtiger Gegenstand: Umspannwerk in Dormagen: Polizei spricht von Sabotagedelikt: Nach den Attacken auf Umspannwerke in Nordrhein-Westfalen und Brandenburg liegt der Polizei ein Bekennerschreiben vor. Gibt es noch weitere Sabotagefälle?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T02:21:15.650Z"
-        }
-      ],
-      "content_hash": "aab0e4a2874b05f8af1a7ac15f9c9c26d773f6329c12b0f830b25c33ebee2fe3",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T02:21:15.650Z",
-      "event_first_seen_at": "2026-09-04T00:59:37.557Z",
-      "event_detected_at": "2026-09-04T00:59:37.557Z",
-      "event_id": "event-3e0905240e5dfb9f71e8",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 9.910833333333333,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 81.63488333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T02:21:15.650Z",
-      "rejection": {
-        "at": "2026-09-04T02:21:15.650Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
       "story_id": "wt-c188633e033f4d03",
       "slug": "experten-machen-us-munition-fur-tote-auf-hochzeit-in-iran-verantwortlich-3f4d03",
       "title": "Experten machen US-Munition für Tote auf Hochzeit in Iran verantwortlich",
@@ -17685,579 +19026,6 @@
       "deepening_checks": 1
     },
     {
-      "story_id": "wt-4fb94d2cebfca746",
-      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-      "first_seen": "2026-09-03T21:14:14.000Z",
-      "last_updated": "2026-09-04T01:53:14.028Z",
-      "published_at": "2026-09-04T01:53:14.028Z",
-      "updated_at": "2026-09-04T01:53:14.028Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-          "summary": "Wieder sind Abschussvorrichtungen an einem Umspannwerk gefunden worden. Aktuell geht es um Dormagen und Weisweiler.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:35:54.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff",
-          "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T01:35:54.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-          "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
-          "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von einem Sabotagedelikt aus. Offenbar sollte ein Kurzschluss hergestellt werden. Es…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:45:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399",
-          "source_item_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T01:45:01.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-4fb94d2cebfca746-v1-claim-1",
-          "story_id": "wt-4fb94d2cebfca746",
-          "claim": "In Dormagen wurden an einem Umspannwerk erneut Abschussvorrichtungen gefunden, betroffen sind Dormagen und Weisweiler.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "3451ce2131e36e5b0e80",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "4328f971acfe36baf70d",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "e444c5f416759df2dc6c",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "a7b200cc42f37921ee52",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:53:14.028Z"
-        },
-        {
-          "claim_id": "wt-4fb94d2cebfca746-v1-claim-2",
-          "story_id": "wt-4fb94d2cebfca746",
-          "claim": "Bei dem Fund in Dormagen-Gohr gibt es bislang keine Beschädigung; ob der Gegenstand überhaupt Schaden hätte auslösen können, ist offen.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "ccb9edf398caacc7f6c3",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "5561b12a27fc4b9c15fd",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:53:14.028Z"
-        },
-        {
-          "claim_id": "wt-4fb94d2cebfca746-v1-claim-3",
-          "story_id": "wt-4fb94d2cebfca746",
-          "claim": "Die Polizei geht inzwischen von einem Sabotagedelikt aus und hält einen beabsichtigten Kurzschluss für möglich.",
-          "status": "single_source_claim",
-          "source_id": "swr-aktuell",
-          "evidence": [
-            {
-              "source_id": "swr-aktuell",
-              "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "ac0320e5ec575a8f31a0",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "e444c5f416759df2dc6c",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:53:14.028Z"
-        },
-        {
-          "claim_id": "wt-4fb94d2cebfca746-v1-claim-4",
-          "story_id": "wt-4fb94d2cebfca746",
-          "claim": "Die Polizei fahndet nach einem Mann aus Gevelsberg, der ein Bekennerschreiben verschickt haben soll; die Echtheit des Schreibens wird geprüft.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "a7b200cc42f37921ee52",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "07936c4831a394d037ba",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:53:14.028Z"
-        },
-        {
-          "claim_id": "wt-4fb94d2cebfca746-v1-claim-5",
-          "story_id": "wt-4fb94d2cebfca746",
-          "claim": "In den vergangenen Tagen waren bereits in Bergheim bei Köln und im Süden Brandenburgs Kurzschlüsse an Umspannwerken ausgelöst worden, wobei Draht mit selbstgebauten Abschussvorrichtungen auf Stromleitungen gefeuert wurde.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "57872f5f94721c188bc4",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:53:14.028Z"
-        }
-      ],
-      "event_id": "event-73b1c53517b0e2f5118c",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T01:53:02.561Z",
-      "publish_ready_at": "2026-09-04T01:53:14.028Z",
-      "news_status": "developing",
-      "deepening_due_at": null,
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ],
-          [
-            "swr-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "content_hash": "333be0eb657a3fbb048817f70eb845276a52acf3d02f9d3bf4adbd47aac1918b",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Der WDR meldet unter Berufung auf Polizeiangaben und laufende Ermittlungen einen weiteren möglichen Sabotagevorfall an einem Umspannwerk in Dormagen. In Dormagen-Gohr hätten Spaziergänger am frühen Abend einen verdächtigen Gegenstand entdeckt; zunächst sei von „sensiblen Gegenständen“ die Rede gewesen. Laut WDR ist inzwischen klar, dass auch hier Abschussvorrichtungen aufgebaut worden seien, um möglicherweise das Stromnetz anzugreifen. Die Polizei sagt zugleich, es sei bislang zu keiner Beschädigung gekommen, und die Eignung des Gegenstands sei noch offen. \n\nDer Beitrag nennt außerdem ein Bekennerschreiben, das laut Polizei in der Nacht auftauchte. Der Verfasser wolle gegen die fossile Energieindustrie vorgehen; die Echtheit werde geprüft. Zudem werde nach einem Mann aus Gevelsberg gefahndet, der das Schreiben verschickt haben soll und der der Polizei namentlich bekannt sei. Der Bericht verweist auf weitere mögliche Tatorte in Weisweiler und im Raum Dormagen sowie auf frühere Vorfälle in Bergheim und im Süden Brandenburgs.",
-      "analysis": {
-        "story_id": "wt-4fb94d2cebfca746",
-        "news_status": "developing",
-        "publication_depth": "deepened",
-        "summary": "In Dormagen ist an einem Umspannwerk erneut ein verdächtiger Fund gemeldet worden. Die Polizei geht inzwischen von Sabotage aus und prüft ein Bekennerschreiben.",
-        "detail_summary": "Am bestbelegten Kern steht, dass an einem Umspannwerk in Dormagen-Gohr erneut ein verdächtiger Gegenstand beziehungsweise eine Abschussvorrichtung entdeckt wurde. Der WDR berichtet zudem, die Polizei gehe inzwischen von Sabotage aus; ein beabsichtigter Kurzschluss sei möglich, eine Beschädigung sei bislang aber nicht festgestellt. Für die Einordnung ist das relevant, weil kritische Strominfrastruktur betroffen ist und schon ein einzelner Angriff Schutzkonzepte, Ermittlungen und Sicherheitsmaßnahmen nachziehen kann. Der Wirkpfad liegt vor allem in zusätzlichem Absicherungsaufwand, möglicher Betriebsstörung und der Frage, ob Nachahmung oder weitere Tatorte folgen. Ob daraus tatsächlich Ausfälle oder weitergehende Schäden entstehen, bleibt nach den vorliegenden Quellen offen. Die Evidenzlage stützt hier vor allem einen laufenden Ermittlungsstand, nicht schon einen abgeschlossenen Schaden.",
-        "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und damit einen potenziell systemrelevanten Schutz- und Störfall. Schon der Verdacht auf gezielte Sabotage kann Sicherheitsaufwand, Ermittlungen und Vorsorge an mehreren Standorten auslösen.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind mögliche Versorgungsstörungen, Sicherheitsrisiken und Ermittlungsfolgen; konkrete Schäden sind aber noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; höchstens indirekt über Energieinfrastruktur und mögliche Störfolgen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Kritische Infrastruktur und der Umgang mit Sabotage berühren Sicherheitsstaat, öffentliche Information und die Korrekturfähigkeit von Schutzsystemen."
-        },
-        "importance": "hoch",
-        "impact_potential": "Mögliche Folgen sind verstärkte Schutzmaßnahmen an Umspannwerken, mehr Ermittlungsdruck und bei bestätigter Sabotage eine höhere Störanfälligkeit der Stromversorgung.",
-        "impact_risks": [
-          "Weitere Vorfälle an ähnlichen Anlagen",
-          "Zusätzliche Sicherungs- und Personalkosten",
-          "Mögliche kurzfristige Betriebsstörungen oder Ausfälle",
-          "Verunsicherung bei Betreibern kritischer Infrastruktur"
-        ],
-        "mechanisms": [
-          "Verdachtslagen erhöhen Kontroll- und Schutzaufwand",
-          "Gezielte Angriffe auf Umspannwerke können Stromflüsse stören",
-          "Bekennerschreiben können Ermittlungen und Vorsorgemaßnahmen auslösen"
-        ],
-        "first_order": [
-          "Polizei sperrt den Bereich und prüft Spuren",
-          "Betreiber und Behörden erhöhen die Aufmerksamkeit an weiteren Standorten"
-        ],
-        "second_order": [
-          "Weitere Sicherheitsmaßnahmen an kritischer Infrastruktur können folgen",
-          "Ermittlungen könnten auf ein Muster oder mehrere Tatorte zielen"
-        ],
-        "third_order": [
-          "Bei bestätigter Serie von Angriffen kann sich die Sicherheitsarchitektur für Stromnetze dauerhaft verschärfen"
-        ],
-        "systemic_relevance": "Umspannwerke sind Knotenpunkte der Stromversorgung; schon einzelne Störungen können über den Ort hinaus operative und sicherheitspolitische Folgerungen auslösen.",
-        "transformation_potential": "Die Meldung kann zusätzliche Schutzstandards, bessere Überwachung und eine engere Abstimmung zwischen Betreibern und Polizei anstoßen, falls sich Sabotage bestätigt.",
-        "resilience": "Kurzfristig schwächt ein solcher Vorfall die Resilienz, sofern Schutzlücken sichtbar werden; mittelfristig kann er zu Nachrüstungen und damit zu höherer Resilienz führen.",
-        "side_effects": [
-          "Mehr Kosten für Sicherung und Ermittlungen",
-          "Mögliche Anpassung von Schutzkonzepten",
-          "Erhöhte öffentliche Aufmerksamkeit auf Stromnetzrisiken"
-        ],
-        "uncertainties": [
-          "Ob der Gegenstand tatsächlich Schaden hätte auslösen können, ist offen",
-          "Die Echtheit des Bekennerschreibens ist ungeklärt",
-          "Ein Zusammenhang zu früheren Vorfällen bleibt laut Quelle unklar"
-        ],
-        "evidence_level": "single_source_reported_plus_partial_corroboration",
-        "attribution": "Die zentrale neue Information stammt aus dem WDR-Bericht; die SWR-Meldung stützt den Sabotage- und Kurzschlussvorwurf, nennt aber keine unabhängige Primärbestätigung.",
-        "watch_next": [
-          "Ob die Polizei den Verdacht auf Sabotage und die Echtheit des Schreibens bestätigt",
-          "Ob an weiteren Umspannwerken konkrete Funde gemeldet werden",
-          "Ob es zu Schäden, Ausfällen oder Festnahmen kommt"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 7, 9, 11 und 16; Schutz kritischer Infrastruktur"
-        ],
-        "publication_gate": {
-          "news_value": "material_update",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "material_update",
-          "rationale": "Gegenüber der Vorläufermeldung liegt eine neue, materiell relevante Verdichtung vor: Sabotageverdacht, weitere Tatorte und Fahndung. Betroffen ist kritische Infrastruktur mit möglicher Systemwirkung."
-        },
-        "publication_recommendation": true,
-        "visuals": null
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T01:53:14.028Z",
-          "content_hash": "333be0eb657a3fbb048817f70eb845276a52acf3d02f9d3bf4adbd47aac1918b",
-          "source_summary": "Der WDR meldet unter Berufung auf Polizeiangaben und laufende Ermittlungen einen weiteren möglichen Sabotagevorfall an einem Umspannwerk in Dormagen. In Dormagen-Gohr hätten Spaziergänger am frühen Abend einen verdächtigen Gegenstand entdeckt; zunächst sei von „sensiblen Gegenständen“ die Rede gewesen. Laut WDR ist inzwischen klar, dass auch hier Abschussvorrichtungen aufgebaut worden seien, um möglicherweise das Stromnetz anzugreifen. Die Polizei sagt zugleich, es sei bislang zu keiner Beschädigung gekommen, und die Eignung des Gegenstands sei noch offen. \n\nDer Beitrag nennt außerdem ein Bekennerschreiben, das laut Polizei in der Nacht auftauchte. Der Verfasser wolle gegen die fossile Energieindustrie vorgehen; die Echtheit werde geprüft. Zudem werde nach einem Mann aus Gevelsberg gefahndet, der das Schreiben verschickt haben soll und der der Polizei namentlich bekannt sei. Der Bericht verweist auf weitere mögliche Tatorte in Weisweiler und im Raum Dormagen sowie auf frühere Vorfälle in Bergheim und im Süden Brandenburgs.",
-          "analysis": {
-            "story_id": "wt-4fb94d2cebfca746",
-            "news_status": "developing",
-            "publication_depth": "deepened",
-            "summary": "In Dormagen ist an einem Umspannwerk erneut ein verdächtiger Fund gemeldet worden. Die Polizei geht inzwischen von Sabotage aus und prüft ein Bekennerschreiben.",
-            "detail_summary": "Am bestbelegten Kern steht, dass an einem Umspannwerk in Dormagen-Gohr erneut ein verdächtiger Gegenstand beziehungsweise eine Abschussvorrichtung entdeckt wurde. Der WDR berichtet zudem, die Polizei gehe inzwischen von Sabotage aus; ein beabsichtigter Kurzschluss sei möglich, eine Beschädigung sei bislang aber nicht festgestellt. Für die Einordnung ist das relevant, weil kritische Strominfrastruktur betroffen ist und schon ein einzelner Angriff Schutzkonzepte, Ermittlungen und Sicherheitsmaßnahmen nachziehen kann. Der Wirkpfad liegt vor allem in zusätzlichem Absicherungsaufwand, möglicher Betriebsstörung und der Frage, ob Nachahmung oder weitere Tatorte folgen. Ob daraus tatsächlich Ausfälle oder weitergehende Schäden entstehen, bleibt nach den vorliegenden Quellen offen. Die Evidenzlage stützt hier vor allem einen laufenden Ermittlungsstand, nicht schon einen abgeschlossenen Schaden.",
-            "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und damit einen potenziell systemrelevanten Schutz- und Störfall. Schon der Verdacht auf gezielte Sabotage kann Sicherheitsaufwand, Ermittlungen und Vorsorge an mehreren Standorten auslösen.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Betroffen sind mögliche Versorgungsstörungen, Sicherheitsrisiken und Ermittlungsfolgen; konkrete Schäden sind aber noch nicht belegt."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; höchstens indirekt über Energieinfrastruktur und mögliche Störfolgen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Kritische Infrastruktur und der Umgang mit Sabotage berühren Sicherheitsstaat, öffentliche Information und die Korrekturfähigkeit von Schutzsystemen."
-            },
-            "importance": "hoch",
-            "impact_potential": "Mögliche Folgen sind verstärkte Schutzmaßnahmen an Umspannwerken, mehr Ermittlungsdruck und bei bestätigter Sabotage eine höhere Störanfälligkeit der Stromversorgung.",
-            "impact_risks": [
-              "Weitere Vorfälle an ähnlichen Anlagen",
-              "Zusätzliche Sicherungs- und Personalkosten",
-              "Mögliche kurzfristige Betriebsstörungen oder Ausfälle",
-              "Verunsicherung bei Betreibern kritischer Infrastruktur"
-            ],
-            "mechanisms": [
-              "Verdachtslagen erhöhen Kontroll- und Schutzaufwand",
-              "Gezielte Angriffe auf Umspannwerke können Stromflüsse stören",
-              "Bekennerschreiben können Ermittlungen und Vorsorgemaßnahmen auslösen"
-            ],
-            "first_order": [
-              "Polizei sperrt den Bereich und prüft Spuren",
-              "Betreiber und Behörden erhöhen die Aufmerksamkeit an weiteren Standorten"
-            ],
-            "second_order": [
-              "Weitere Sicherheitsmaßnahmen an kritischer Infrastruktur können folgen",
-              "Ermittlungen könnten auf ein Muster oder mehrere Tatorte zielen"
-            ],
-            "third_order": [
-              "Bei bestätigter Serie von Angriffen kann sich die Sicherheitsarchitektur für Stromnetze dauerhaft verschärfen"
-            ],
-            "systemic_relevance": "Umspannwerke sind Knotenpunkte der Stromversorgung; schon einzelne Störungen können über den Ort hinaus operative und sicherheitspolitische Folgerungen auslösen.",
-            "transformation_potential": "Die Meldung kann zusätzliche Schutzstandards, bessere Überwachung und eine engere Abstimmung zwischen Betreibern und Polizei anstoßen, falls sich Sabotage bestätigt.",
-            "resilience": "Kurzfristig schwächt ein solcher Vorfall die Resilienz, sofern Schutzlücken sichtbar werden; mittelfristig kann er zu Nachrüstungen und damit zu höherer Resilienz führen.",
-            "side_effects": [
-              "Mehr Kosten für Sicherung und Ermittlungen",
-              "Mögliche Anpassung von Schutzkonzepten",
-              "Erhöhte öffentliche Aufmerksamkeit auf Stromnetzrisiken"
-            ],
-            "uncertainties": [
-              "Ob der Gegenstand tatsächlich Schaden hätte auslösen können, ist offen",
-              "Die Echtheit des Bekennerschreibens ist ungeklärt",
-              "Ein Zusammenhang zu früheren Vorfällen bleibt laut Quelle unklar"
-            ],
-            "evidence_level": "single_source_reported_plus_partial_corroboration",
-            "attribution": "Die zentrale neue Information stammt aus dem WDR-Bericht; die SWR-Meldung stützt den Sabotage- und Kurzschlussvorwurf, nennt aber keine unabhängige Primärbestätigung.",
-            "watch_next": [
-              "Ob die Polizei den Verdacht auf Sabotage und die Echtheit des Schreibens bestätigt",
-              "Ob an weiteren Umspannwerken konkrete Funde gemeldet werden",
-              "Ob es zu Schäden, Ausfällen oder Festnahmen kommt"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7, 9, 11 und 16; Schutz kritischer Infrastruktur"
-            ],
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "material_update",
-              "rationale": "Gegenüber der Vorläufermeldung liegt eine neue, materiell relevante Verdichtung vor: Sabotageverdacht, weitere Tatorte und Fahndung. Betroffen ist kritische Infrastruktur mit möglicher Systemwirkung."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-4fb94d2cebfca746-v1-claim-1",
-              "story_id": "wt-4fb94d2cebfca746",
-              "claim": "In Dormagen wurden an einem Umspannwerk erneut Abschussvorrichtungen gefunden, betroffen sind Dormagen und Weisweiler.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "3451ce2131e36e5b0e80",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "4328f971acfe36baf70d",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "e444c5f416759df2dc6c",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "a7b200cc42f37921ee52",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "claim_id": "wt-4fb94d2cebfca746-v1-claim-2",
-              "story_id": "wt-4fb94d2cebfca746",
-              "claim": "Bei dem Fund in Dormagen-Gohr gibt es bislang keine Beschädigung; ob der Gegenstand überhaupt Schaden hätte auslösen können, ist offen.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "ccb9edf398caacc7f6c3",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "5561b12a27fc4b9c15fd",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "claim_id": "wt-4fb94d2cebfca746-v1-claim-3",
-              "story_id": "wt-4fb94d2cebfca746",
-              "claim": "Die Polizei geht inzwischen von einem Sabotagedelikt aus und hält einen beabsichtigten Kurzschluss für möglich.",
-              "status": "single_source_claim",
-              "source_id": "swr-aktuell",
-              "evidence": [
-                {
-                  "source_id": "swr-aktuell",
-                  "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "ac0320e5ec575a8f31a0",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "e444c5f416759df2dc6c",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "claim_id": "wt-4fb94d2cebfca746-v1-claim-4",
-              "story_id": "wt-4fb94d2cebfca746",
-              "claim": "Die Polizei fahndet nach einem Mann aus Gevelsberg, der ein Bekennerschreiben verschickt haben soll; die Echtheit des Schreibens wird geprüft.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "a7b200cc42f37921ee52",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "07936c4831a394d037ba",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            },
-            {
-              "claim_id": "wt-4fb94d2cebfca746-v1-claim-5",
-              "story_id": "wt-4fb94d2cebfca746",
-              "claim": "In den vergangenen Tagen waren bereits in Bergheim bei Köln und im Süden Brandenburgs Kurzschlüsse an Umspannwerken ausgelöst worden, wobei Draht mit selbstgebauten Abschussvorrichtungen auf Stromleitungen gefeuert wurde.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "57872f5f94721c188bc4",
-                  "checked_at": "2026-09-04T01:53:14.028Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:53:14.028Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff"
-            },
-            {
-              "source_id": "swr-aktuell",
-              "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-              "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T01:53:14.028Z",
-          "source_count": 2
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "dc602b5a0f0c1b02ad00c82695217344a3ca4aef724fbf95f0d74523c4974f95"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "e4f6f9e1b6fc97faa01a3c650dc0f6f48a7f202aaccb3713c498a77b3d323ce6"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "eca788bfc3f66c628821daf7c20bb5e9c087ceeed17009a26b2f846ac15017e1"
-        },
-        "source_visual": null,
-        "fingerprint": "4f5ca183d6e688959de4d7c59f4368caa15e0735311c68e50f0d16039d5242f0",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:54:21.394Z",
-        "status": "generated"
-      }
-    },
-    {
       "story_id": "wt-eaabd0ab05597ee6",
       "slug": "justiz-corona-ausschuss-beginnt-nach-zwei-jahren-beweisaufnahme-597ee6",
       "title": "Justiz: Corona-Ausschuss beginnt nach zwei Jahren Beweisaufnahme",
@@ -18504,7 +19272,7 @@
       "verification_started_at": "2026-09-04T01:27:48.574Z",
       "publish_ready_at": "2026-09-04T01:28:00.255Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -18793,148 +19561,7 @@
         "generated_at": "2026-09-04T01:30:18.159Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
-        "content_hash": "ed5f3efece6a1fa55dc53629a2e0317329a77eaf4ab261f6ec855181948a97c4",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
-            "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
-            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Nun geht sie von einem Sabotagedelikt aus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T00:39:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "0cb6451ef05c61d48dfe4e08781be6c29a0e5450f556b38588286baa0654a19d",
-            "source_item_id": "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T00:39:00.000Z",
-            "ingested_at": "2026-09-04T01:26:36.485Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "spiegel-schlagzeilen",
-            "publisher": "DER SPIEGEL",
-            "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
-            "title": "Dormagen: Polizei geht von versuchter Sabotage an Umspannwerk aus",
-            "summary": "Ein Spaziergänger hatte einen verdächtigen Gegenstand entdeckt. Jetzt erklären die Ermittler: Im neuen Fall in Dormagen dürfte es sich um versuchte Sabotage handeln. Ein Bekennerschreiben liegt demnach vor.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T01:06:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "fb23a151dcb8577bbe55a13a4d92dd302962e8cf0a9d5b9cd3bce01f52dc0ef9",
-            "source_item_id": "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60",
-            "publisher_id": "spiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T01:06:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
-            "provenance": {
-              "origin": "publisher:spiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
-            "title": "Polizei: Mögliche Sabotage an Umspannwerk in Dormagen",
-            "summary": "Ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen deutet laut Polizei auf mögliche Sabotage hin. Am Dienstag gab es bereits Vorfälle an zwei anderen Umspannwerken.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T02:29:46.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "e5d6e71e0a3b23b8b134f10c0a5a0ee754152692b8aea3cdcc716d2979a64e6d",
-            "source_item_id": "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T02:29:46.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_REQUIRED_STRING:source_summary",
-          "AI_REQUIRED_STRING:summary",
-          "AI_REQUIRED_STRING:why_relevant",
-          "AI_REQUIRED_STRING:status",
-          "AI_REQUIRED_STRING:analysis_type",
-          "AI_REQUIRED_STRING:importance",
-          "AI_REQUIRED_STRING:impact_potential",
-          "AI_REQUIRED_STRING:systemic_relevance",
-          "AI_REQUIRED_STRING:transformation_potential",
-          "AI_REQUIRED_STRING:resilience",
-          "AI_REQUIRED_STRING:evidence_level",
-          "AI_REQUIRED_STRING:attribution",
-          "AI_REQUIRED_STRING:detail_summary",
-          "AI_STATUS_INVALID",
-          "AI_ANALYSIS_TYPE_INVALID",
-          "AI_IMPORTANCE_INVALID",
-          "AI_PUBLICATION_GATE_REQUIRED",
-          "AI_DIMENSION_INVALID:human",
-          "AI_DIMENSION_INVALID:planet",
-          "AI_DIMENSION_INVALID:democracy",
-          "AI_ARRAY_REQUIRED:impact_risks",
-          "AI_ARRAY_REQUIRED:mechanisms",
-          "AI_ARRAY_REQUIRED:first_order",
-          "AI_ARRAY_REQUIRED:second_order",
-          "AI_ARRAY_REQUIRED:third_order",
-          "AI_ARRAY_REQUIRED:side_effects",
-          "AI_ARRAY_REQUIRED:uncertainties",
-          "AI_ARRAY_REQUIRED:watch_next",
-          "AI_ARRAY_REQUIRED:reference_frameworks",
-          "AI_UNCERTAINTY_REQUIRED",
-          "AI_WATCH_NEXT_REQUIRED",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "NEWS_STATUS_REQUIRED",
-          "EVENT_CLAIMS_REQUIRED"
-        ],
-        "quality_retry_count": 2,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-7d3fabe103b78ce3",
@@ -23113,7 +23740,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -23139,7 +23766,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T09:29:17.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -34883,7 +35510,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -34909,7 +35536,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -35127,7 +35754,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -35153,7 +35780,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T17:00:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -36023,7 +36650,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -36049,7 +36676,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:06:42.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -36289,7 +36916,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -36315,7 +36942,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T13:20:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -36562,7 +37189,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -36588,7 +37215,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -36840,7 +37467,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -36866,7 +37493,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -37114,7 +37741,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -37140,7 +37767,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:44:36.000Z",
-            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -37392,7 +38019,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:42:25.578Z",
+        "detected_at": "2026-09-04T06:06:19.579Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -42394,7 +43021,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-04T05:36:20.086Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -42421,7 +43048,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T05:42:25.578Z"
+          "checked_at": "2026-09-04T06:06:19.579Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -42433,7 +43060,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T05:42:25.578Z",
+      "updated_at": "2026-09-04T06:06:19.579Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -42462,11 +43089,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4302.4263,
+        "source_age_minutes": 4326.326316666667,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 441.1428,
+        "queue_age_minutes": 465.0428166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -42879,7 +43506,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-04T05:36:20.086Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -42906,7 +43533,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T05:42:25.578Z"
+          "checked_at": "2026-09-04T06:06:19.579Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -42918,7 +43545,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T05:42:25.578Z",
+      "updated_at": "2026-09-04T06:06:19.579Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -42950,11 +43577,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5382.4263,
+        "source_age_minutes": 5406.326316666667,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 441.1428,
+        "queue_age_minutes": 465.0428166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -43812,5 +44439,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T05:42:25.578Z"
+  "public_updated_at": "2026-09-04T06:06:19.579Z"
 }
