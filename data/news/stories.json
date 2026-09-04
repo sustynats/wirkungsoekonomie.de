@@ -1,13 +1,1752 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T04:21:19.204Z",
+  "updated_at": "2026-09-04T04:36:37.841Z",
   "stories": [
+    {
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
+      "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+      "first_seen": "2026-09-02T13:00:00.000Z",
+      "last_updated": "2026-09-04T04:39:29.989Z",
+      "published_at": "2026-09-03T07:49:38.699Z",
+      "updated_at": "2026-09-04T04:39:29.989Z",
+      "topic": [
+        "Energie",
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+          "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+          "summary": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte. So werden Verbraucherinnen und Verbraucher spürbar entlastet. Langfristig werden niedrigere Steuern und ein Industriestrompreis auch die Wirtschaft unterstützen.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T13:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "c9baac27652662154968b40977d601b1a1234a6c2e6c217dd2fd3f76725bef59",
+          "source_item_id": "cf5b3c56d6a982f602b4f8f2c6f2d8bd2a24859c5f87e492420d68ae3a418160",
+          "publisher_id": "bundesregierung",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-02T13:00:00.000Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
+          "provenance": {
+            "origin": "publisher:bundesregierung",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-1",
+          "story_id": "wt-9cca0ad92ad1a84a",
+          "claim": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "excerpt_hash": "4cfab2f29c374a064b71",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:39:29.989Z"
+        },
+        {
+          "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-2",
+          "story_id": "wt-9cca0ad92ad1a84a",
+          "claim": "Durch die Abschaffung der Gasspeicherumlage und den Bundeszuschuss für niedrigere Strom-Netzentgelte sollen alle Verbraucherinnen und Verbraucher um etwa 10 Milliarden Euro im Jahr entlastet werden.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "excerpt_hash": "680101e72a80fa3ebe41",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:39:29.989Z"
+        },
+        {
+          "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-3",
+          "story_id": "wt-9cca0ad92ad1a84a",
+          "claim": "Haushalte, die Strom und Gas beziehen, können 2026 durchschnittlich etwa 160 Euro sparen.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "excerpt_hash": "8a16aa00f1c61dad4aaf",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:39:29.989Z"
+        },
+        {
+          "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-4",
+          "story_id": "wt-9cca0ad92ad1a84a",
+          "claim": "Für die Jahre 2026 bis 2028 hat die Bundesregierung einen Industriestrompreis eingeführt; die EU-Kommission gab dafür am 16. April 2026 grünes Licht, die Förderrichtlinie trat am 7. Mai in Kraft.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "excerpt_hash": "5cd1433e8d2d78753a0a",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "excerpt_hash": "17a7d964db526f7d080e",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:39:29.989Z"
+        },
+        {
+          "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-5",
+          "story_id": "wt-9cca0ad92ad1a84a",
+          "claim": "Die Bundesregierung hat die Stromsteuer für mehr als 600.000 produzierende Unternehmen dauerhaft auf den EU-Mindestsatz gesenkt.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "excerpt_hash": "2bea80c7c1e6e545873d",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "excerpt_hash": "da07e9e68cf177c139f2",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:39:29.989Z"
+        }
+      ],
+      "event_id": "event-ebbcaeb2f5de9babbe87",
+      "event_first_seen_at": "2026-09-02T13:00:00.000Z",
+      "event_detected_at": "2026-09-02T13:00:00.000Z",
+      "verification_started_at": "2026-09-04T04:39:17.466Z",
+      "publish_ready_at": "2026-09-04T04:39:29.989Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Die Bundesregierung beschreibt auf ihrer Übersichtsseite mehrere Entlastungen bei den Energiepreisen. Genannt werden die Abschaffung der Gasspeicherumlage, der Bundeszuschuss für niedrigere Strom-Netzentgelte und eine damit verbundene Entlastung von allen Verbraucherinnen und Verbrauchern um etwa 10 Milliarden Euro im Jahr.\n\nZudem nennt die Quelle für Haushalte mit Strom- und Gasbezug eine durchschnittliche Ersparnis von etwa 160 Euro im Jahr 2026. Für Unternehmen verweist sie auf einen für 2026 bis 2028 eingeführten Industriestrompreis, die Zustimmung der EU-Kommission am 16. April 2026 sowie das Inkrafttreten der Förderrichtlinie am 7. Mai. Außerdem wird eine dauerhaft auf den EU-Mindestsatz gesenkte Stromsteuer für mehr als 600.000 produzierende Unternehmen erwähnt.",
+      "analysis": {
+        "story_id": "wt-9cca0ad92ad1a84a",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Die Bundesregierung nennt mehrere Entlastungen bei Energiepreisen, darunter die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Als weitere Schritte nennt sie einen Industriestrompreis und eine gesenkte Stromsteuer für viele Unternehmen.",
+        "detail_summary": "Gesichert ist nach der Regierungsdarstellung ein Bündel von Eingriffen in Energiepreisbestandteile: Gasspeicherumlage weg, Strom-Netzentgelte runter, zusätzlich ein Industriestrompreis und eine dauerhaft niedrigere Stromsteuer für viele Unternehmen. Materiell relevant ist das, weil damit Preisbestandteile und damit Kostenrelationen für Haushalte und Betriebe verändert werden. Der Wirkpfad läuft über geringere laufende Energiekosten; kurzfristig kann das die Liquidität von Haushalten und die Kostenbasis von Unternehmen verbessern. Mögliche Folgen sind höhere Konsumspielräume, geringerer Kostendruck in energieintensiven Branchen und eine veränderte Lastenverteilung zwischen Verbraucherinnen, Wirtschaft und Staat. Offen bleibt hier, wie stark sich die angekündigten Beträge tatsächlich in Endpreisen niederschlagen und wie sich die Maßnahmen im Detail verteilen. Eine unabhängige Bestätigung der Größenordnungen liegt in den gelieferten Quellen nicht vor.",
+        "why_relevant": "Die Meldung beschreibt staatliche Eingriffe in zentrale Energiepreisbestandteile mit potenziell breiten Folgen für Haushalte, Unternehmen und die Kostenstruktur der Wirtschaft.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Entlastungen betreffen laut Quelle Verbraucherinnen und Verbraucher sowie viele Unternehmen und können laufende Energiekosten spürbar verändern."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der Quelle folgt keine belastbare Umweltwirkung; mögliche Verlagerungen bei Energieverbrauch oder Emissionen bleiben unbeziffert."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Maßnahmen sind staatliche Preis- und Abgabenpolitik; für demokratische Korrekturfähigkeit ist relevant, dass Umfang und Verteilung der Entlastung öffentlich beschrieben werden."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Entlastung von Haushalten und Unternehmen durch niedrigere Energiekosten; zugleich Veränderung staatlicher Einnahmen und relativer Kosten zwischen Branchen.",
+        "impact_risks": [
+          "Die Entlastung könnte in Endpreisen teilweise verpuffen oder unterschiedlich stark ankommen.",
+          "Die Finanzierung über Staatshaushalt oder Umlagen kann Verteilungskonflikte verschieben."
+        ],
+        "mechanisms": [
+          "Abschaffung einer Abgabe",
+          "Senkung von Netzentgelten",
+          "gezielte Strompreisstützung für Industrie",
+          "steuerliche Entlastung energieintensiver Unternehmen"
+        ],
+        "first_order": [
+          "niedrigere laufende Strom- und Gaskosten",
+          "geringere Belastung für bestimmte Unternehmen"
+        ],
+        "second_order": [
+          "mehr finanzieller Spielraum bei Haushalten",
+          "veränderte Wettbewerbsbedingungen für energieintensive Betriebe"
+        ],
+        "third_order": [
+          "mögliche Anpassungen von Investitions- und Standortentscheidungen",
+          "dauerhafte Verschiebung von Lasten zwischen Staat, Wirtschaft und Verbrauchern"
+        ],
+        "systemic_relevance": "Eingriffe in Energiepreisbestandteile können breite Kostenstrukturen in Versorgung, Konsum und Produktion verändern und damit über einzelne Empfängergruppen hinaus wirken.",
+        "transformation_potential": "Begrenzt bis mittel: Die Maßnahmen sind keine Strukturreform des Energiesystems, können aber die Preisarchitektur und industrielle Kostenlage spürbar verschieben.",
+        "resilience": "Kann kurzfristig Zahlungsfähigkeit und Kostentragfähigkeit stärken; die langfristige Resilienz hängt von Finanzierung, Zielgenauigkeit und Preisweitergabe ab.",
+        "side_effects": [
+          "Haushalts- oder Fiskallasten können an anderer Stelle entstehen.",
+          "Preisreduktionen könnten Anreize zum Sparen oder Investieren in Effizienz abschwächen."
+        ],
+        "uncertainties": [
+          "Die Quelle nennt keine unabhängige Prüfung der Beträge.",
+          "Unklar bleibt, wie stark die Entlastung tatsächlich bei Endkunden ankommt."
+        ],
+        "evidence_level": "primärquelle, aber ohne unabhängige Bestätigung der Größenordnungen",
+        "attribution": "Die Angaben stammen aus der Regierungsdarstellung; außerhalb dieser Quelle liegt im Datensatz keine unabhängige Bestätigung vor.",
+        "watch_next": [
+          "Ob weitere belastbare Quellen die Beträge und Verteilungswirkungen bestätigen.",
+          "Ob konkrete Preis- und Haushaltsdaten die angekündigte Entlastung zeigen."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 8, SDG 10, SDG 12"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "material_update",
+          "rationale": "Die Quelle nennt mehrere konkrete Energiepreismaßnahmen und Beträge. Gegenüber den früheren Einzelmeldungen ist das eine materielle Bündelung mit zusätzlicher Information, nicht nur eine Wiederholung."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Entlastung pro Jahr",
+              "value": "10",
+              "unit": "Milliarden Euro",
+              "context": "Von der Bundesregierung genannte jährliche Entlastung aller Verbraucherinnen und Verbraucher"
+            },
+            {
+              "label": "Durchschnittliche Ersparnis 2026",
+              "value": "160",
+              "unit": "Euro",
+              "context": "Durchschnittliche Ersparnis für Haushalte mit Strom und Gas"
+            },
+            {
+              "label": "Begünstigte Unternehmen",
+              "value": "600.000",
+              "unit": "Unternehmen",
+              "context": "Für die die Stromsteuer dauerhaft gesenkt wurde"
+            }
+          ],
+          "affected_groups": [
+            "haushalte",
+            "unternehmen",
+            "beschaeftigte",
+            "staat"
+          ],
+          "timeline": [
+            {
+              "date": "2026-04-16",
+              "label": "EU-Kommission gibt grünes Licht"
+            },
+            {
+              "date": "2026-05-07",
+              "label": "Förderrichtlinie tritt in Kraft"
+            }
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T07:49:38.699Z",
+          "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
+          "analysis": {
+            "story_id": "wt-9cca0ad92ad1a84a",
+            "summary": "Die Bundesregierung meldet Abschaffung der Gasspeicherumlage und Senkung der Strom-Netzentgelte. Entlastung wird behauptet, tatsächliche Verteilungs- und Klimawirkung ist nicht belegt.",
+            "why_relevant": "Energiepreise betreffen Haushalte, Unternehmen, Inflation, Industrie und Transformationsanreize.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Potenzial für finanzielle Entlastung vieler Haushalte; Verteilung nach Einkommen bleibt offen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Preissenkungen können Verbrauchsanreize verändern; Klimapfad ist ohne Ausgestaltung offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Energiepreis-Politik berührt Akzeptanz, Verteilungsgerechtigkeit und fiskalische Transparenz."
+            },
+            "importance": "hoch",
+            "impact_potential": "Potenzial: kurzfristige Kostenentlastung und Stabilisierung energieintensiver Wirtschaftsteile.",
+            "impact_risks": [
+              "Risiko: pauschale Entlastung kann Sparanreize schwächen und Verteilungseffekte verdecken."
+            ],
+            "mechanisms": [
+              "Finanzielle Entlastung über Umlageabschaffung, geringere Netzentgelte, Steuern und Industriestrompreis."
+            ],
+            "first_order": [
+              "Output: geringere staatlich beeinflusste Preisbestandteile; reale Haushaltsentlastung noch zu messen."
+            ],
+            "second_order": [
+              "Mögliche Folge: mehr Kaufkraft und geringerer Kostendruck in Betrieben."
+            ],
+            "third_order": [
+              "Mögliche Systemfolge: höhere Akzeptanz oder verzögerte Effizienzsignale, je nach Finanzierung."
+            ],
+            "systemic_relevance": "Energiepreise wirken breit in Versorgung, Industrie, Haushalten und politischer Akzeptanz.",
+            "transformation_potential": "Mittel: Entlastung kann Übergänge stützen, ersetzt aber keine gesicherte Klimawirkung.",
+            "resilience": "Kann ökonomische Resilienz stärken, falls Finanzierung tragfähig und zielgenau ist.",
+            "side_effects": [
+              "Mögliche fiskalische Kosten, Mitnahmeeffekte oder geringere Effizienzanreize."
+            ],
+            "uncertainties": [
+              "Kontext, Beträge, Laufzeiten, Finanzierung und empirische Preiseffekte fehlen im Datensatz."
+            ],
+            "evidence_level": "Primärquelle mit Kurztext; Entlastungswirkung ist behauptet, nicht nachgewiesen.",
+            "attribution": "Ex ante keine Kausalzurechnung; Preisbestandteile sind nur ein Faktor realer Energiekosten.",
+            "watch_next": [
+              "Gesetzesdetails, Haushaltsfinanzierung, Preisweitergabe, Verteilung und Energieverbrauch beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 8, SDG 10, SDG 12 und SDG 13 vorsichtig anwendbar."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Bundesrat – 504/26 Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen",
+              "url": "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0501-0600/0504-26.html"
+            },
+            {
+              "title": "Bundesregierung – Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-03T12:48:02.808Z",
+          "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
+          "analysis": {
+            "story_id": "wt-9cca0ad92ad1a84a",
+            "summary": "Die Energiepreis-Story trägt als veröffentlichungswürdige Neuigkeit. Die neue Information betrifft staatliche Entlastung bei Gas- und Stromkosten.",
+            "detail_summary": "Gesichert ist aus der Primärquelle: Die Bundesregierung meldet die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Zusätzlich werden niedrigere Steuern und ein Industriestrompreis als langfristige Unterstützung der Wirtschaft genannt. Materiell ist das, weil Energiepreise Haushalte und Unternehmen direkt betreffen und über Kosten, Anreize und Kapitalflüsse weiterwirken können. Der naheliegende Wirkpfad läuft über geringere Abgaben oder Entgelte zu verfügbaren Einkommen, Produktionskosten und Nachfrage. Mögliche Folgen sind Entlastung, veränderte Verteilungseffekte und neue fiskalische oder marktliche Anschlussfragen. Offen bleibt, wie hoch die Entlastung ausfällt, wer netto gewinnt, wie finanziert wird und ob reale Preiseffekte eintreten.",
+            "why_relevant": "Energiepreise berühren Haushaltsbudgets, Unternehmensstandorte und staatliche Anreizsetzung.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mögliche Entlastung für Verbraucherinnen und Verbraucher bei zentralen Grundkosten."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Preis- und Industrieanreize können Energieverbrauch und Investitionen beeinflussen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Verteilungs- und Finanzierungsfragen bleiben politisch überprüfbar und erklärungspflichtig."
+            },
+            "importance": "hoch",
+            "impact_potential": "Potenziell geringere Energiekosten und geänderte Standortanreize, ohne bereits eingetretene Wirkung zu behaupten.",
+            "impact_risks": [
+              "Entlastung kann ungleich wirken oder falsche Verbrauchsanreize setzen."
+            ],
+            "mechanisms": [
+              "Abgaben- und Entgeltänderungen verschieben Kosten, Anreize und Kapitalflüsse."
+            ],
+            "first_order": [
+              "Direkte Senkung einzelner Energiepreisbestandteile."
+            ],
+            "second_order": [
+              "Veränderte Haushaltsbelastung und Kostenlage von Unternehmen."
+            ],
+            "third_order": [
+              "Mögliche Rückwirkungen auf Nachfrage, Investitionen und Staatsfinanzierung."
+            ],
+            "systemic_relevance": "Energiepreise sind systemrelevant, weil sie Haushalte, Industrie und Versorgungskosten koppeln.",
+            "transformation_potential": "Mittel; es hängt von Ausgestaltung, Gegenfinanzierung und Investitionssignalen ab.",
+            "resilience": "Kann kurzfristig Belastungen puffern, schafft aber nur bei tragfähiger Finanzierung Resilienz.",
+            "side_effects": [
+              "Mögliche Zielkonflikte zwischen Entlastung, Haushalt und Klimaanreizen."
+            ],
+            "uncertainties": [
+              "Beträge, Laufzeiten, Verteilung, Finanzierung und empirische Preiseffekte fehlen."
+            ],
+            "evidence_level": "Primärquelle mit begrenztem Kontext; behauptete Maßnahmen sind belegt, Wirkungen nicht.",
+            "attribution": "Die gemeldeten Maßnahmen sind der Bundesregierung zurechenbar; spätere Preiswirkungen nicht belegt.",
+            "watch_next": [
+              "Konkrete Beträge, Rechtsstand, Finanzierung und Verteilungswirkung prüfen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG: bezahlbare Energie, menschenwürdige Arbeit, Klimaziele."
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Im historischen Modus zählt die damalige Primärmeldung; sie ist nicht wegen der Historie als Dublette zu verwerfen."
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526"
+            },
+            {
+              "title": "Stärkerer Schutz kritischer Infrastrukturen",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-04T04:39:29.989Z",
+          "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
+          "source_summary": "Die Bundesregierung beschreibt auf ihrer Übersichtsseite mehrere Entlastungen bei den Energiepreisen. Genannt werden die Abschaffung der Gasspeicherumlage, der Bundeszuschuss für niedrigere Strom-Netzentgelte und eine damit verbundene Entlastung von allen Verbraucherinnen und Verbrauchern um etwa 10 Milliarden Euro im Jahr.\n\nZudem nennt die Quelle für Haushalte mit Strom- und Gasbezug eine durchschnittliche Ersparnis von etwa 160 Euro im Jahr 2026. Für Unternehmen verweist sie auf einen für 2026 bis 2028 eingeführten Industriestrompreis, die Zustimmung der EU-Kommission am 16. April 2026 sowie das Inkrafttreten der Förderrichtlinie am 7. Mai. Außerdem wird eine dauerhaft auf den EU-Mindestsatz gesenkte Stromsteuer für mehr als 600.000 produzierende Unternehmen erwähnt.",
+          "analysis": {
+            "story_id": "wt-9cca0ad92ad1a84a",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Die Bundesregierung nennt mehrere Entlastungen bei Energiepreisen, darunter die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Als weitere Schritte nennt sie einen Industriestrompreis und eine gesenkte Stromsteuer für viele Unternehmen.",
+            "detail_summary": "Gesichert ist nach der Regierungsdarstellung ein Bündel von Eingriffen in Energiepreisbestandteile: Gasspeicherumlage weg, Strom-Netzentgelte runter, zusätzlich ein Industriestrompreis und eine dauerhaft niedrigere Stromsteuer für viele Unternehmen. Materiell relevant ist das, weil damit Preisbestandteile und damit Kostenrelationen für Haushalte und Betriebe verändert werden. Der Wirkpfad läuft über geringere laufende Energiekosten; kurzfristig kann das die Liquidität von Haushalten und die Kostenbasis von Unternehmen verbessern. Mögliche Folgen sind höhere Konsumspielräume, geringerer Kostendruck in energieintensiven Branchen und eine veränderte Lastenverteilung zwischen Verbraucherinnen, Wirtschaft und Staat. Offen bleibt hier, wie stark sich die angekündigten Beträge tatsächlich in Endpreisen niederschlagen und wie sich die Maßnahmen im Detail verteilen. Eine unabhängige Bestätigung der Größenordnungen liegt in den gelieferten Quellen nicht vor.",
+            "why_relevant": "Die Meldung beschreibt staatliche Eingriffe in zentrale Energiepreisbestandteile mit potenziell breiten Folgen für Haushalte, Unternehmen und die Kostenstruktur der Wirtschaft.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Entlastungen betreffen laut Quelle Verbraucherinnen und Verbraucher sowie viele Unternehmen und können laufende Energiekosten spürbar verändern."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus der Quelle folgt keine belastbare Umweltwirkung; mögliche Verlagerungen bei Energieverbrauch oder Emissionen bleiben unbeziffert."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Maßnahmen sind staatliche Preis- und Abgabenpolitik; für demokratische Korrekturfähigkeit ist relevant, dass Umfang und Verteilung der Entlastung öffentlich beschrieben werden."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Entlastung von Haushalten und Unternehmen durch niedrigere Energiekosten; zugleich Veränderung staatlicher Einnahmen und relativer Kosten zwischen Branchen.",
+            "impact_risks": [
+              "Die Entlastung könnte in Endpreisen teilweise verpuffen oder unterschiedlich stark ankommen.",
+              "Die Finanzierung über Staatshaushalt oder Umlagen kann Verteilungskonflikte verschieben."
+            ],
+            "mechanisms": [
+              "Abschaffung einer Abgabe",
+              "Senkung von Netzentgelten",
+              "gezielte Strompreisstützung für Industrie",
+              "steuerliche Entlastung energieintensiver Unternehmen"
+            ],
+            "first_order": [
+              "niedrigere laufende Strom- und Gaskosten",
+              "geringere Belastung für bestimmte Unternehmen"
+            ],
+            "second_order": [
+              "mehr finanzieller Spielraum bei Haushalten",
+              "veränderte Wettbewerbsbedingungen für energieintensive Betriebe"
+            ],
+            "third_order": [
+              "mögliche Anpassungen von Investitions- und Standortentscheidungen",
+              "dauerhafte Verschiebung von Lasten zwischen Staat, Wirtschaft und Verbrauchern"
+            ],
+            "systemic_relevance": "Eingriffe in Energiepreisbestandteile können breite Kostenstrukturen in Versorgung, Konsum und Produktion verändern und damit über einzelne Empfängergruppen hinaus wirken.",
+            "transformation_potential": "Begrenzt bis mittel: Die Maßnahmen sind keine Strukturreform des Energiesystems, können aber die Preisarchitektur und industrielle Kostenlage spürbar verschieben.",
+            "resilience": "Kann kurzfristig Zahlungsfähigkeit und Kostentragfähigkeit stärken; die langfristige Resilienz hängt von Finanzierung, Zielgenauigkeit und Preisweitergabe ab.",
+            "side_effects": [
+              "Haushalts- oder Fiskallasten können an anderer Stelle entstehen.",
+              "Preisreduktionen könnten Anreize zum Sparen oder Investieren in Effizienz abschwächen."
+            ],
+            "uncertainties": [
+              "Die Quelle nennt keine unabhängige Prüfung der Beträge.",
+              "Unklar bleibt, wie stark die Entlastung tatsächlich bei Endkunden ankommt."
+            ],
+            "evidence_level": "primärquelle, aber ohne unabhängige Bestätigung der Größenordnungen",
+            "attribution": "Die Angaben stammen aus der Regierungsdarstellung; außerhalb dieser Quelle liegt im Datensatz keine unabhängige Bestätigung vor.",
+            "watch_next": [
+              "Ob weitere belastbare Quellen die Beträge und Verteilungswirkungen bestätigen.",
+              "Ob konkrete Preis- und Haushaltsdaten die angekündigte Entlastung zeigen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 8, SDG 10, SDG 12"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "material_update",
+              "rationale": "Die Quelle nennt mehrere konkrete Energiepreismaßnahmen und Beträge. Gegenüber den früheren Einzelmeldungen ist das eine materielle Bündelung mit zusätzlicher Information, nicht nur eine Wiederholung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Entlastung pro Jahr",
+                  "value": "10",
+                  "unit": "Milliarden Euro",
+                  "context": "Von der Bundesregierung genannte jährliche Entlastung aller Verbraucherinnen und Verbraucher"
+                },
+                {
+                  "label": "Durchschnittliche Ersparnis 2026",
+                  "value": "160",
+                  "unit": "Euro",
+                  "context": "Durchschnittliche Ersparnis für Haushalte mit Strom und Gas"
+                },
+                {
+                  "label": "Begünstigte Unternehmen",
+                  "value": "600.000",
+                  "unit": "Unternehmen",
+                  "context": "Für die die Stromsteuer dauerhaft gesenkt wurde"
+                }
+              ],
+              "affected_groups": [
+                "haushalte",
+                "unternehmen",
+                "beschaeftigte",
+                "staat"
+              ],
+              "timeline": [
+                {
+                  "date": "2026-04-16",
+                  "label": "EU-Kommission gibt grünes Licht"
+                },
+                {
+                  "date": "2026-05-07",
+                  "label": "Förderrichtlinie tritt in Kraft"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-1",
+              "story_id": "wt-9cca0ad92ad1a84a",
+              "claim": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+                  "excerpt_hash": "4cfab2f29c374a064b71",
+                  "checked_at": "2026-09-04T04:39:29.989Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            },
+            {
+              "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-2",
+              "story_id": "wt-9cca0ad92ad1a84a",
+              "claim": "Durch die Abschaffung der Gasspeicherumlage und den Bundeszuschuss für niedrigere Strom-Netzentgelte sollen alle Verbraucherinnen und Verbraucher um etwa 10 Milliarden Euro im Jahr entlastet werden.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+                  "excerpt_hash": "680101e72a80fa3ebe41",
+                  "checked_at": "2026-09-04T04:39:29.989Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            },
+            {
+              "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-3",
+              "story_id": "wt-9cca0ad92ad1a84a",
+              "claim": "Haushalte, die Strom und Gas beziehen, können 2026 durchschnittlich etwa 160 Euro sparen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+                  "excerpt_hash": "8a16aa00f1c61dad4aaf",
+                  "checked_at": "2026-09-04T04:39:29.989Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            },
+            {
+              "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-4",
+              "story_id": "wt-9cca0ad92ad1a84a",
+              "claim": "Für die Jahre 2026 bis 2028 hat die Bundesregierung einen Industriestrompreis eingeführt; die EU-Kommission gab dafür am 16. April 2026 grünes Licht, die Förderrichtlinie trat am 7. Mai in Kraft.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+                  "excerpt_hash": "5cd1433e8d2d78753a0a",
+                  "checked_at": "2026-09-04T04:39:29.989Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+                  "excerpt_hash": "17a7d964db526f7d080e",
+                  "checked_at": "2026-09-04T04:39:29.989Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            },
+            {
+              "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-5",
+              "story_id": "wt-9cca0ad92ad1a84a",
+              "claim": "Die Bundesregierung hat die Stromsteuer für mehr als 600.000 produzierende Unternehmen dauerhaft auf den EU-Mindestsatz gesenkt.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+                  "excerpt_hash": "2bea80c7c1e6e545873d",
+                  "checked_at": "2026-09-04T04:39:29.989Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+                  "excerpt_hash": "da07e9e68cf177c139f2",
+                  "checked_at": "2026-09-04T04:39:29.989Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:39:29.989Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
+              "content_hash": "c9baac27652662154968b40977d601b1a1234a6c2e6c217dd2fd3f76725bef59"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T07:49:38.699Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-03T12:48:02.808Z",
+          "source_count": 1
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-04T04:39:29.989Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [
+        {
+          "at": "2026-09-03T13:20:22.082Z",
+          "filter_version": "3.2",
+          "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+          "quality_errors": [
+            "AI_NEWS_VALUE_CONTEXT_ONLY",
+            "AI_MATERIALITY_GATE_FAILED",
+            "AI_DUPLICATE_WITHOUT_UPDATE",
+            "AI_PUBLICATION_NOT_RECOMMENDED"
+          ],
+          "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
+        }
+      ],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-2f17a5465110ce7d-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "eae98a021bac5079ef5dcaba9cc9cb91856d884d4d22248aff85599ae21db417"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-2f17a5465110ce7d-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "732e600fc83c014b003c4a7ef37581a0738ef28afebc214b44760315315a3b09"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-2f17a5465110ce7d-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "3c87b419fb40f6f3065b0f6bcb1eea39f6edf22e67b26d7729ab5739d219e5c5"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-5713e074d04cc4f7-source.png",
+          "sha256": "5713e074d04cc4f7ff36beb31c2c521910e8399241342cdc08f87ce0d9766dc9",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-2",
+          "generated_at": "2026-09-04T04:39:44.829Z"
+        },
+        "fingerprint": "2f17a5465110ce7d390b2e8c78798ab98ce0bd042da7fe55faea0c7b767bffbc",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T04:40:29.219Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-9d87c7944980e87e",
+      "slug": "bessere-startchancen-fur-kinder-80e87e",
+      "title": "Bessere Startchancen für Kinder",
+      "first_seen": "2026-09-02T08:00:00.000Z",
+      "last_updated": "2026-09-04T04:38:32.687Z",
+      "published_at": "2026-09-04T04:38:32.687Z",
+      "updated_at": "2026-09-04T04:38:32.687Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+          "title": "Bessere Startchancen für Kinder",
+          "summary": "Eine gute Kinderbetreuung und die frühe Förderung für alle Kinder gehören zu den wichtigsten Zukunftsaufgaben in Deutschland. Die Bundesregierung will deshalb die Startchancen von Kindern verbessern und die Qualität der frühkindlichen Bildung stärken.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T08:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "ad106e3458e100625188956173f4767630e28a9efb5aa166e9b34a0a905837bd",
+          "source_item_id": "02e8d790bed3e7fc28284bd64172d65ac9fca6a952aeac1a0009929ce5098ac3",
+          "publisher_id": "bundesregierung",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-02T08:00:00.000Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
+          "provenance": {
+            "origin": "publisher:bundesregierung",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9d87c7944980e87e-v1-claim-1",
+          "story_id": "wt-9d87c7944980e87e",
+          "claim": "Das Bundeskabinett hat den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+              "excerpt_hash": "b6aaa740c03a10ae7013",
+              "checked_at": "2026-09-04T04:38:32.687Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:38:32.687Z"
+        },
+        {
+          "claim_id": "wt-9d87c7944980e87e-v1-claim-2",
+          "story_id": "wt-9d87c7944980e87e",
+          "claim": "Der Gesetzentwurf soll bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung einführen und die Start- und Bildungschancen von Kindern verbessern.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+              "excerpt_hash": "acce62af8658b74d527f",
+              "checked_at": "2026-09-04T04:38:32.687Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:38:32.687Z"
+        },
+        {
+          "claim_id": "wt-9d87c7944980e87e-v1-claim-3",
+          "story_id": "wt-9d87c7944980e87e",
+          "claim": "Der Bund will ab 2027 über acht Jahre insgesamt rund 9,25 Milliarden Euro für die Mehrbelastungen der Länder bereitstellen.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+              "excerpt_hash": "6da3747b528aa6a497fa",
+              "checked_at": "2026-09-04T04:38:32.687Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+              "excerpt_hash": "012e8da3e5332e2d4ccd",
+              "checked_at": "2026-09-04T04:38:32.687Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:38:32.687Z"
+        }
+      ],
+      "event_id": "event-ef9d83c7cd180ed4c9e4",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T04:38:22.918Z",
+      "publish_ready_at": "2026-09-04T04:38:32.687Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form der Gesetzentwurf den Bundestag passiert und wann er in Kraft tritt.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Parlamentsbeschluss, Verkündung und Inkrafttretensdatum",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-665782deae448573",
+          "announced_at": "2026-09-02T08:00:00.000Z",
+          "follow_up_date": "2026-09-11T04:38:32.687Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Bundesregierung beschreibt frühe Bildung und Kinderbetreuung als zentrale Zukunftsaufgabe und kündigt an, die Startchancen von Kindern sowie die Qualität der frühkindlichen Bildung zu stärken. Nach der Quelle hat das Bundeskabinett den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen.\n\nDer Entwurf sieht bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung vor. Genannt werden außerdem die Feststellung von Sprach- und Entwicklungsstand spätestens mit vier Jahren, eine anschließende Förderung bei Bedarf, besondere Unterstützung für Kitas in herausfordernden Lebenslagen sowie ein besserer Übergang von der Kita in die Grundschule. Der Bund will die Länder ab 2027 über acht Jahre mit rund 9,25 Milliarden Euro bei Mehrbelastungen unterstützen.",
+      "analysis": {
+        "story_id": "wt-9d87c7944980e87e",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Das Bundeskabinett hat den Entwurf für ein Kita-Gesetz beschlossen. Vorgesehen sind bundesweit einheitliche Qualitätsstandards und rund 9,25 Milliarden Euro Bundesmittel ab 2027.",
+        "detail_summary": "Gesichert ist, dass das Bundeskabinett den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen hat. Die Vorlage soll bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung einführen und die Start- und Bildungschancen von Kindern verbessern. Außerdem nennt die Quelle als Bausteine die Feststellung von Sprach- und Entwicklungsstand spätestens mit vier Jahren, eine anschließende Förderung bei Bedarf und mehr Unterstützung für Einrichtungen in belasteten Lebenslagen. Materiell relevant ist das vor allem wegen des bundesweiten Geltungsanspruchs, des mehrjährigen Finanzvolumens und möglicher Folgen für Zuständigkeiten, Ressourcenverteilung und Förderpraxis. Als Wirkpfad beschreibt die Quelle eine frühere und gezieltere Förderung, die Unterschiede zwischen Kindern und Kitas verringern soll. Offen bleibt jedoch, wie der Entwurf im weiteren Gesetzgebungsverfahren verändert wird und wann konkrete Wirkungen tatsächlich messbar werden.",
+        "why_relevant": "Die Meldung betrifft frühkindliche Bildung, bundesweite Standards und eine mehrjährige Finanzzusage von rund 9,25 Milliarden Euro; das kann Verteilung, Zuständigkeiten und Förderpraxis im System Kita verändern.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Maßnahme zielt auf frühe Förderung, Chancengleichheit und die Qualität der Betreuung für Kinder in Deutschland; betroffen ist ein breiter Bevölkerungsbereich über mehrere Jahre."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Quelle nennt keinen direkten Umweltbezug; ein planetarer Effekt ist aus dem Material nicht belastbar ableitbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Bundesweite Standards und die Verteilung erheblicher Mittel berühren staatliche Steuerung und die demokratische Korrekturfähigkeit im Bildungsföderalismus."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Verschiebung von Anreizen und Ressourcen hin zu frühzeitiger Diagnostik, Förderung und einheitlicheren Qualitätsstandards in Kitas.",
+        "impact_risks": [
+          "Umsetzungslücken zwischen bundeseinheitlichem Anspruch und Landespraxis",
+          "Mitnahmeeffekte oder ungleiche Verteilung der Mittel",
+          "Verwaltungsaufwand könnte bei Kitas und Ländern steigen"
+        ],
+        "mechanisms": [
+          "Bundesweite Qualitätsstandards setzen einheitlichere Mindestanforderungen",
+          "Früher Sprach- und Entwicklungscheck kann Förderbedarf früher sichtbar machen",
+          "Mehrjährige Bundesmittel verändern die Finanzierungsspielräume der Länder"
+        ],
+        "first_order": [
+          "Mehr Planungssicherheit für Länder und Träger",
+          "Mehr formalisierte Diagnostik und Förderprozesse in Kitas"
+        ],
+        "second_order": [
+          "Mögliche Angleichung von Qualitätsniveaus zwischen Ländern",
+          "Potenzielle Verschiebung von Personal- und Sachressourcen zugunsten früher Förderung"
+        ],
+        "third_order": [
+          "Bei erfolgreicher Umsetzung könnten Bildungsbiografien früher stabilisiert werden; bei schwacher Umsetzung bleibt der Effekt begrenzt"
+        ],
+        "systemic_relevance": "Die Maßnahme greift in ein föderales Kernfeld mit vielen Akteuren ein und kann Standards, Finanzierungsströme und Förderlogiken im Kita-System verändern.",
+        "transformation_potential": "Mittel: Die Vorlage kann die frühkindliche Bildungssteuerung bundesweit vereinheitlichen, wenn der Entwurf politisch und administrativ tragfähig umgesetzt wird.",
+        "resilience": "Möglich ist eine stärkere Frühdiagnostik und damit mehr Reaktionsfähigkeit des Systems; die Resilienz hängt aber an Personal, Datenpraxis und Länderumsetzung.",
+        "side_effects": [
+          "Mehr Dokumentations- und Abstimmungsaufwand",
+          "Eventuelle Spannungen zwischen bundesweiten Vorgaben und Länderzuständigkeiten"
+        ],
+        "uncertainties": [
+          "Der Text sagt noch nichts über parlamentarische Änderungen oder das Inkrafttreten",
+          "Konkrete Wirkungen auf Kinder sind ex ante nicht messbar"
+        ],
+        "evidence_level": "Primärquelle mit Vorbehalt: Die Angaben stammen aus einer Regierungsmitteilung; unabhängige Bestätigung liegt hier nicht vor.",
+        "attribution": "Die Zuschreibung bezieht sich auf die Bundesregierung als Quelle der Ankündigung und des Kabinettsbeschlusses.",
+        "watch_next": [
+          "Parlamentarische Behandlung und mögliche Änderungen des Entwurfs beobachten",
+          "Prüfen, ob Länder die Finanz- und Qualitätsvorgaben konkret umsetzen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 4",
+          "Agenda 2030/SDG 10",
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_with_caveats",
+          "duplicate_status": "new_story",
+          "rationale": "Neuer Kabinettsentwurf mit bundesweiter Reichweite und mehrjähriger Finanzzusage; das ist über bloße Ankündigung hinaus materiell und klar belegt, aber noch nur primärquellengestützt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Bundesmittel ab 2027",
+              "value": "9,25",
+              "unit": "Milliarden Euro",
+              "context": "Vom Bund angekündigte Summe über acht Jahre"
+            }
+          ],
+          "affected_groups": [
+            "kinder_jugend",
+            "kommunen",
+            "staat"
+          ],
+          "timeline": [
+            {
+              "date": "2027",
+              "label": "Beginn der Bundesmittel über acht Jahre"
+            }
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T04:38:32.687Z",
+          "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
+          "source_summary": "Die Bundesregierung beschreibt frühe Bildung und Kinderbetreuung als zentrale Zukunftsaufgabe und kündigt an, die Startchancen von Kindern sowie die Qualität der frühkindlichen Bildung zu stärken. Nach der Quelle hat das Bundeskabinett den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen.\n\nDer Entwurf sieht bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung vor. Genannt werden außerdem die Feststellung von Sprach- und Entwicklungsstand spätestens mit vier Jahren, eine anschließende Förderung bei Bedarf, besondere Unterstützung für Kitas in herausfordernden Lebenslagen sowie ein besserer Übergang von der Kita in die Grundschule. Der Bund will die Länder ab 2027 über acht Jahre mit rund 9,25 Milliarden Euro bei Mehrbelastungen unterstützen.",
+          "analysis": {
+            "story_id": "wt-9d87c7944980e87e",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Das Bundeskabinett hat den Entwurf für ein Kita-Gesetz beschlossen. Vorgesehen sind bundesweit einheitliche Qualitätsstandards und rund 9,25 Milliarden Euro Bundesmittel ab 2027.",
+            "detail_summary": "Gesichert ist, dass das Bundeskabinett den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen hat. Die Vorlage soll bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung einführen und die Start- und Bildungschancen von Kindern verbessern. Außerdem nennt die Quelle als Bausteine die Feststellung von Sprach- und Entwicklungsstand spätestens mit vier Jahren, eine anschließende Förderung bei Bedarf und mehr Unterstützung für Einrichtungen in belasteten Lebenslagen. Materiell relevant ist das vor allem wegen des bundesweiten Geltungsanspruchs, des mehrjährigen Finanzvolumens und möglicher Folgen für Zuständigkeiten, Ressourcenverteilung und Förderpraxis. Als Wirkpfad beschreibt die Quelle eine frühere und gezieltere Förderung, die Unterschiede zwischen Kindern und Kitas verringern soll. Offen bleibt jedoch, wie der Entwurf im weiteren Gesetzgebungsverfahren verändert wird und wann konkrete Wirkungen tatsächlich messbar werden.",
+            "why_relevant": "Die Meldung betrifft frühkindliche Bildung, bundesweite Standards und eine mehrjährige Finanzzusage von rund 9,25 Milliarden Euro; das kann Verteilung, Zuständigkeiten und Förderpraxis im System Kita verändern.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Maßnahme zielt auf frühe Förderung, Chancengleichheit und die Qualität der Betreuung für Kinder in Deutschland; betroffen ist ein breiter Bevölkerungsbereich über mehrere Jahre."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Die Quelle nennt keinen direkten Umweltbezug; ein planetarer Effekt ist aus dem Material nicht belastbar ableitbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Bundesweite Standards und die Verteilung erheblicher Mittel berühren staatliche Steuerung und die demokratische Korrekturfähigkeit im Bildungsföderalismus."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Verschiebung von Anreizen und Ressourcen hin zu frühzeitiger Diagnostik, Förderung und einheitlicheren Qualitätsstandards in Kitas.",
+            "impact_risks": [
+              "Umsetzungslücken zwischen bundeseinheitlichem Anspruch und Landespraxis",
+              "Mitnahmeeffekte oder ungleiche Verteilung der Mittel",
+              "Verwaltungsaufwand könnte bei Kitas und Ländern steigen"
+            ],
+            "mechanisms": [
+              "Bundesweite Qualitätsstandards setzen einheitlichere Mindestanforderungen",
+              "Früher Sprach- und Entwicklungscheck kann Förderbedarf früher sichtbar machen",
+              "Mehrjährige Bundesmittel verändern die Finanzierungsspielräume der Länder"
+            ],
+            "first_order": [
+              "Mehr Planungssicherheit für Länder und Träger",
+              "Mehr formalisierte Diagnostik und Förderprozesse in Kitas"
+            ],
+            "second_order": [
+              "Mögliche Angleichung von Qualitätsniveaus zwischen Ländern",
+              "Potenzielle Verschiebung von Personal- und Sachressourcen zugunsten früher Förderung"
+            ],
+            "third_order": [
+              "Bei erfolgreicher Umsetzung könnten Bildungsbiografien früher stabilisiert werden; bei schwacher Umsetzung bleibt der Effekt begrenzt"
+            ],
+            "systemic_relevance": "Die Maßnahme greift in ein föderales Kernfeld mit vielen Akteuren ein und kann Standards, Finanzierungsströme und Förderlogiken im Kita-System verändern.",
+            "transformation_potential": "Mittel: Die Vorlage kann die frühkindliche Bildungssteuerung bundesweit vereinheitlichen, wenn der Entwurf politisch und administrativ tragfähig umgesetzt wird.",
+            "resilience": "Möglich ist eine stärkere Frühdiagnostik und damit mehr Reaktionsfähigkeit des Systems; die Resilienz hängt aber an Personal, Datenpraxis und Länderumsetzung.",
+            "side_effects": [
+              "Mehr Dokumentations- und Abstimmungsaufwand",
+              "Eventuelle Spannungen zwischen bundesweiten Vorgaben und Länderzuständigkeiten"
+            ],
+            "uncertainties": [
+              "Der Text sagt noch nichts über parlamentarische Änderungen oder das Inkrafttreten",
+              "Konkrete Wirkungen auf Kinder sind ex ante nicht messbar"
+            ],
+            "evidence_level": "Primärquelle mit Vorbehalt: Die Angaben stammen aus einer Regierungsmitteilung; unabhängige Bestätigung liegt hier nicht vor.",
+            "attribution": "Die Zuschreibung bezieht sich auf die Bundesregierung als Quelle der Ankündigung und des Kabinettsbeschlusses.",
+            "watch_next": [
+              "Parlamentarische Behandlung und mögliche Änderungen des Entwurfs beobachten",
+              "Prüfen, ob Länder die Finanz- und Qualitätsvorgaben konkret umsetzen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 4",
+              "Agenda 2030/SDG 10",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_with_caveats",
+              "duplicate_status": "new_story",
+              "rationale": "Neuer Kabinettsentwurf mit bundesweiter Reichweite und mehrjähriger Finanzzusage; das ist über bloße Ankündigung hinaus materiell und klar belegt, aber noch nur primärquellengestützt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Bundesmittel ab 2027",
+                  "value": "9,25",
+                  "unit": "Milliarden Euro",
+                  "context": "Vom Bund angekündigte Summe über acht Jahre"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "kommunen",
+                "staat"
+              ],
+              "timeline": [
+                {
+                  "date": "2027",
+                  "label": "Beginn der Bundesmittel über acht Jahre"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-9d87c7944980e87e-v1-claim-1",
+              "story_id": "wt-9d87c7944980e87e",
+              "claim": "Das Bundeskabinett hat den Entwurf für das „Startchancen- und Qualitätsentwicklungsgesetz“ für Kitas beschlossen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+                  "excerpt_hash": "b6aaa740c03a10ae7013",
+                  "checked_at": "2026-09-04T04:38:32.687Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:38:32.687Z"
+            },
+            {
+              "claim_id": "wt-9d87c7944980e87e-v1-claim-2",
+              "story_id": "wt-9d87c7944980e87e",
+              "claim": "Der Gesetzentwurf soll bundesweit einheitliche Qualitätsstandards in der frühkindlichen Bildung einführen und die Start- und Bildungschancen von Kindern verbessern.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+                  "excerpt_hash": "acce62af8658b74d527f",
+                  "checked_at": "2026-09-04T04:38:32.687Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:38:32.687Z"
+            },
+            {
+              "claim_id": "wt-9d87c7944980e87e-v1-claim-3",
+              "story_id": "wt-9d87c7944980e87e",
+              "claim": "Der Bund will ab 2027 über acht Jahre insgesamt rund 9,25 Milliarden Euro für die Mehrbelastungen der Länder bereitstellen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+                  "excerpt_hash": "6da3747b528aa6a497fa",
+                  "checked_at": "2026-09-04T04:38:32.687Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+                  "excerpt_hash": "012e8da3e5332e2d4ccd",
+                  "checked_at": "2026-09-04T04:38:32.687Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:38:32.687Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
+              "content_hash": "ad106e3458e100625188956173f4767630e28a9efb5aa166e9b34a0a905837bd"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T04:38:32.687Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "c85592c8b55966d5fe6097939616d80c5c7ac4a033488602c9f8d46d25fc91dd"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "d305e705b11646fcd41e9db87b091637f682545c77f143347aa8146c52a71893"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "6dda2b57f74663745b6e017e1e90f535dc9ad73e5fbdc05a353d76e753ebf501"
+        },
+        "source_visual": null,
+        "fingerprint": "6b9dd346df9867212d4769fe07d668675185e6bbb25ff207ad96ffb9cfe537bb",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T04:39:43.485Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-b5e0a39f46388642",
+      "slug": "speech-by-commissioner-lahbib-at-the-european-parliament-on-the-2026-wildfire-season-388642",
+      "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+      "first_seen": "2026-09-01T16:09:08.000Z",
+      "last_updated": "2026-09-04T04:38:09.628Z",
+      "published_at": "2026-09-04T04:38:09.628Z",
+      "updated_at": "2026-09-04T04:38:09.628Z",
+      "topic": [
+        "Gesundheit",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "eu-kommission-presse",
+          "publisher": "Europäische Kommission – Press Corner",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+          "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+          "summary": "European Commission Speech Brussels, 01 Sep 2026 This summer has tested us. Almost 700,000 hectares have already burned across the EU, more land than the yearly average of the past two decades and the season i...",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T16:09:08.000Z",
+          "primary_source": true,
+          "source_priority": 94,
+          "source_topic": "Europa",
+          "content_hash": "d259783e837d361be26dfa248f50721149a98df4a584b23abe28dc835ba4a650",
+          "source_item_id": "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
+          "publisher_id": "eu-kommission-presse",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "EU"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-01T16:09:08.000Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
+          "provenance": {
+            "origin": "publisher:eu-kommission-presse",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b5e0a39f46388642-v1-claim-1",
+          "story_id": "wt-b5e0a39f46388642",
+          "claim": "Kommissarin Lahbib sagte im Europaparlament, dass in diesem Sommer bereits fast 700.000 Hektar in der EU verbrannt seien.",
+          "status": "primary_source_claim",
+          "source_id": "eu-kommission-presse",
+          "evidence": [
+            {
+              "source_id": "eu-kommission-presse",
+              "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+              "excerpt_hash": "aedfc74c8852f3976456",
+              "checked_at": "2026-09-04T04:38:09.628Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:38:09.628Z"
+        }
+      ],
+      "event_id": "event-88c06765dd812ab1333c",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T04:38:00.776Z",
+      "publish_ready_at": "2026-09-04T04:38:09.628Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "eu-kommission-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Quelle ist eine Rede von Kommissarin Lahbib im Europäischen Parlament zur Waldbrandsaison 2026. Sie datiert aus Brüssel vom 1. September 2026 und beschreibt den Sommer als Belastungsprobe für die EU.\n\nIm sichtbaren Ausschnitt nennt die Rede als zentrale Zahl, dass bereits fast 700.000 Hektar in der EU verbrannt seien. Laut dem Text sei das mehr Land als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte; der vollständige Zusammenhang des Satzes ist im gelieferten Auszug jedoch abgeschnitten.",
+      "analysis": {
+        "story_id": "wt-b5e0a39f46388642",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Lahbib sagte im Europaparlament, dass in der EU in diesem Sommer bereits fast 700.000 Hektar verbrannt seien. Der Auszug ordnet das als mehr als den Jahresdurchschnitt der vergangenen zwei Jahrzehnte ein.",
+        "detail_summary": "Gesichert ist aus der Primärquelle zunächst nur eine politische Aussage zur laufenden Waldbrandsaison: Kommissarin Lahbib nennt im Europaparlament fast 700.000 verbrannte Hektar in der EU. Das ist als erste Lagezahl materiell, weil sie einen großen Flächenverlust beschreibt und damit auf Belastungen für Natur, Landnutzung und öffentliche Krisenreaktion verweist. Der Wirkpfad liegt vor allem in den direkten Schäden durch Feuer sowie in möglichen Folgeeffekten auf Schutz, Wiederaufbau und Prävention. Für eine ex-post-Wirkungsbilanz reicht der Ausschnitt nicht aus; offen bleiben regionale Verteilung, Ursachen, Vergleichbarkeit und die Frage, ob weitere Maßnahmen angekündigt wurden. Die Evidenz ist vorläufig, weil nur ein sichtbarer Redeauszug vorliegt und keine unabhängige Bestätigung der Zahl.",
+        "why_relevant": "Die Meldung enthält eine konkrete, große Lagezahl zur Waldbrandlage in der EU und kann Prioritäten für Prävention, Einsatzplanung und Umweltpolitik beeinflussen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Zahl verweist auf potenzielle Risiken für Gesundheit, Sicherheit und Infrastruktur, ohne dass im Auszug weitere Betroffenengruppen quantifiziert werden."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Verbrannte Fläche ist ein direkter Indikator für Naturverlust, Emissionen und Belastung von Ökosystemen; die Größenordnung ist erheblich."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Im Auszug geht es primär um eine Lagebeschreibung im Parlament, nicht um eine demokratische Regel- oder Entscheidungsänderung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Zahl kann den politischen Druck auf Prävention, Brandbekämpfung und Anpassung erhöhen und künftige Haushalts- oder Einsatzprioritäten verschieben.",
+        "impact_risks": [
+          "Wenn die Lagezahl unterschätzt oder missverstanden wird, können Vorsorge und Ressourcenverteilung zu spät oder falsch ausfallen.",
+          "Die Aussage kann Alarmwirkungen auslösen, ohne allein schon neue Maßnahmen zu begründen."
+        ],
+        "mechanisms": [
+          "Direkter Hinweis auf Ausmaß der Brandschäden",
+          "mögliche Verstärkung von Präventions- und Einsatzprioritäten",
+          "mögliche Neujustierung von Risikowahrnehmung in Politik und Öffentlichkeit"
+        ],
+        "first_order": [
+          "Verlust verbrannter Flächen und damit verbundener Naturwerte",
+          "Aufmerksamkeit für die aktuelle Waldbrandsaison"
+        ],
+        "second_order": [
+          "mehr Druck auf Brandprävention und Katastrophenschutz",
+          "mögliche Anpassung von Mittelverteilungen und Einsatzplanung"
+        ],
+        "third_order": [
+          "langfristig veränderte Resilienzstrategien gegen Extremwetter und Feuerereignisse"
+        ],
+        "systemic_relevance": "Die Meldung liefert eine quantitative Lagebeschreibung zu einem grenzüberschreitenden Umwelt- und Sicherheitsrisiko, das mehrere Politikfelder berührt.",
+        "transformation_potential": "Begrenzt, aber vorhanden: Wiederholte oder bestätigte Lagezahlen können Klimaanpassung, Landmanagement und Krisenvorsorge politisch nachschärfen.",
+        "resilience": "Relevant für die Bewertung von Vorsorge-, Reaktions- und Wiederherstellungskapazitäten gegenüber Waldbränden.",
+        "side_effects": [
+          "stärkere mediale und politische Fokussierung auf Brandereignisse",
+          "mögliche Verdrängung anderer Umwelt- oder Sicherheitsprioritäten"
+        ],
+        "uncertainties": [
+          "Der Ausschnitt ist unvollständig und liefert keinen vollständigen Kontext der Rede.",
+          "Es gibt im gelieferten Material keine unabhängige Bestätigung der Zahl.",
+          "Offen bleibt, ob die Zahl Europaweit kumuliert, zeitlich genau abgegrenzt oder methodisch erläutert ist."
+        ],
+        "evidence_level": "einzige Primärquelle, nur Auszug verfügbar, keine unabhängige Bestätigung",
+        "attribution": "Die Zahl und Einordnung stammen aus einer Rede der Kommission; eigene Verifikation durch weitere Quellen liegt hier nicht vor.",
+        "watch_next": [
+          "Ob die Kommission oder unabhängige Stellen die Flächenzahl später methodisch präzisieren",
+          "Ob konkrete zusätzliche Maßnahmen oder Hilfen angekündigt werden"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 13, SDG 15"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "affected_scope",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Der Auszug enthält eine konkrete Lagezahl zur laufenden Waldbrandsaison; das ist über reine Routine hinaus materiell und nicht durch die vorhandene Akte als Dublette ersetzt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Verbrannte Fläche",
+              "value": "700.000",
+              "unit": "Hektar",
+              "context": "Fast so viel Fläche sei in der EU bereits verbrannt",
+              "claim_id": "wt-b5e0a39f46388642-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "natur",
+            "europa"
+          ],
+          "timeline": [
+            {
+              "date": "2026-09-01",
+              "label": "Rede von Lahbib im Parlament"
+            }
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "risiko",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T04:38:09.628Z",
+          "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
+          "source_summary": "Die Quelle ist eine Rede von Kommissarin Lahbib im Europäischen Parlament zur Waldbrandsaison 2026. Sie datiert aus Brüssel vom 1. September 2026 und beschreibt den Sommer als Belastungsprobe für die EU.\n\nIm sichtbaren Ausschnitt nennt die Rede als zentrale Zahl, dass bereits fast 700.000 Hektar in der EU verbrannt seien. Laut dem Text sei das mehr Land als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte; der vollständige Zusammenhang des Satzes ist im gelieferten Auszug jedoch abgeschnitten.",
+          "analysis": {
+            "story_id": "wt-b5e0a39f46388642",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Lahbib sagte im Europaparlament, dass in der EU in diesem Sommer bereits fast 700.000 Hektar verbrannt seien. Der Auszug ordnet das als mehr als den Jahresdurchschnitt der vergangenen zwei Jahrzehnte ein.",
+            "detail_summary": "Gesichert ist aus der Primärquelle zunächst nur eine politische Aussage zur laufenden Waldbrandsaison: Kommissarin Lahbib nennt im Europaparlament fast 700.000 verbrannte Hektar in der EU. Das ist als erste Lagezahl materiell, weil sie einen großen Flächenverlust beschreibt und damit auf Belastungen für Natur, Landnutzung und öffentliche Krisenreaktion verweist. Der Wirkpfad liegt vor allem in den direkten Schäden durch Feuer sowie in möglichen Folgeeffekten auf Schutz, Wiederaufbau und Prävention. Für eine ex-post-Wirkungsbilanz reicht der Ausschnitt nicht aus; offen bleiben regionale Verteilung, Ursachen, Vergleichbarkeit und die Frage, ob weitere Maßnahmen angekündigt wurden. Die Evidenz ist vorläufig, weil nur ein sichtbarer Redeauszug vorliegt und keine unabhängige Bestätigung der Zahl.",
+            "why_relevant": "Die Meldung enthält eine konkrete, große Lagezahl zur Waldbrandlage in der EU und kann Prioritäten für Prävention, Einsatzplanung und Umweltpolitik beeinflussen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Die Zahl verweist auf potenzielle Risiken für Gesundheit, Sicherheit und Infrastruktur, ohne dass im Auszug weitere Betroffenengruppen quantifiziert werden."
+            },
+            "planet": {
+              "relevance": "hoch",
+              "rationale": "Verbrannte Fläche ist ein direkter Indikator für Naturverlust, Emissionen und Belastung von Ökosystemen; die Größenordnung ist erheblich."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Im Auszug geht es primär um eine Lagebeschreibung im Parlament, nicht um eine demokratische Regel- oder Entscheidungsänderung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Zahl kann den politischen Druck auf Prävention, Brandbekämpfung und Anpassung erhöhen und künftige Haushalts- oder Einsatzprioritäten verschieben.",
+            "impact_risks": [
+              "Wenn die Lagezahl unterschätzt oder missverstanden wird, können Vorsorge und Ressourcenverteilung zu spät oder falsch ausfallen.",
+              "Die Aussage kann Alarmwirkungen auslösen, ohne allein schon neue Maßnahmen zu begründen."
+            ],
+            "mechanisms": [
+              "Direkter Hinweis auf Ausmaß der Brandschäden",
+              "mögliche Verstärkung von Präventions- und Einsatzprioritäten",
+              "mögliche Neujustierung von Risikowahrnehmung in Politik und Öffentlichkeit"
+            ],
+            "first_order": [
+              "Verlust verbrannter Flächen und damit verbundener Naturwerte",
+              "Aufmerksamkeit für die aktuelle Waldbrandsaison"
+            ],
+            "second_order": [
+              "mehr Druck auf Brandprävention und Katastrophenschutz",
+              "mögliche Anpassung von Mittelverteilungen und Einsatzplanung"
+            ],
+            "third_order": [
+              "langfristig veränderte Resilienzstrategien gegen Extremwetter und Feuerereignisse"
+            ],
+            "systemic_relevance": "Die Meldung liefert eine quantitative Lagebeschreibung zu einem grenzüberschreitenden Umwelt- und Sicherheitsrisiko, das mehrere Politikfelder berührt.",
+            "transformation_potential": "Begrenzt, aber vorhanden: Wiederholte oder bestätigte Lagezahlen können Klimaanpassung, Landmanagement und Krisenvorsorge politisch nachschärfen.",
+            "resilience": "Relevant für die Bewertung von Vorsorge-, Reaktions- und Wiederherstellungskapazitäten gegenüber Waldbränden.",
+            "side_effects": [
+              "stärkere mediale und politische Fokussierung auf Brandereignisse",
+              "mögliche Verdrängung anderer Umwelt- oder Sicherheitsprioritäten"
+            ],
+            "uncertainties": [
+              "Der Ausschnitt ist unvollständig und liefert keinen vollständigen Kontext der Rede.",
+              "Es gibt im gelieferten Material keine unabhängige Bestätigung der Zahl.",
+              "Offen bleibt, ob die Zahl Europaweit kumuliert, zeitlich genau abgegrenzt oder methodisch erläutert ist."
+            ],
+            "evidence_level": "einzige Primärquelle, nur Auszug verfügbar, keine unabhängige Bestätigung",
+            "attribution": "Die Zahl und Einordnung stammen aus einer Rede der Kommission; eigene Verifikation durch weitere Quellen liegt hier nicht vor.",
+            "watch_next": [
+              "Ob die Kommission oder unabhängige Stellen die Flächenzahl später methodisch präzisieren",
+              "Ob konkrete zusätzliche Maßnahmen oder Hilfen angekündigt werden"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 13, SDG 15"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "affected_scope",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Der Auszug enthält eine konkrete Lagezahl zur laufenden Waldbrandsaison; das ist über reine Routine hinaus materiell und nicht durch die vorhandene Akte als Dublette ersetzt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Verbrannte Fläche",
+                  "value": "700.000",
+                  "unit": "Hektar",
+                  "context": "Fast so viel Fläche sei in der EU bereits verbrannt",
+                  "claim_id": "wt-b5e0a39f46388642-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "natur",
+                "europa"
+              ],
+              "timeline": [
+                {
+                  "date": "2026-09-01",
+                  "label": "Rede von Lahbib im Parlament"
+                }
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "risiko",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-b5e0a39f46388642-v1-claim-1",
+              "story_id": "wt-b5e0a39f46388642",
+              "claim": "Kommissarin Lahbib sagte im Europaparlament, dass in diesem Sommer bereits fast 700.000 Hektar in der EU verbrannt seien.",
+              "status": "primary_source_claim",
+              "source_id": "eu-kommission-presse",
+              "evidence": [
+                {
+                  "source_id": "eu-kommission-presse",
+                  "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+                  "excerpt_hash": "aedfc74c8852f3976456",
+                  "checked_at": "2026-09-04T04:38:09.628Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:38:09.628Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "eu-kommission-presse",
+              "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+              "content_hash": "d259783e837d361be26dfa248f50721149a98df4a584b23abe28dc835ba4a650"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T04:38:09.628Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "8dd7bda3c392b9f278714028fd0f551b087a8b29bf2b2a079ec416273c585a2f"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "edba82b3130db18969a9216595247d2a62ee22f4ed8d5edf1bee332e1ecded47"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "7e6afc283c6477dfd3fa66c07673fee964421d3218225dcf33ef2e08fe9f0240"
+        },
+        "source_visual": null,
+        "fingerprint": "1fa1b7a164713db7603f7cf920d55fabaad6cc964dd1ba063928fe022f90dd2b",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T04:39:37.512Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-96193654ac3edfeb",
+      "slug": "nachrichten-fur-nrw-sabotageversuch-in-dormagen-3edfeb",
+      "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
+      "first_seen": "2026-09-04T04:36:01.000Z",
+      "last_updated": "2026-09-04T04:36:01.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
+          "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
+          "summary": "Sabotageversuch am Umspannwerk Dormagen • Bundespräsident lädt zum Bürgerfest nach Bonn • Jens Spahn verklagt Rapper",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T04:36:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "86bc2ee7abfaf02e3f35afbdf4070d899a84c48258e4e2cc56fa9e58261d0e54",
+          "source_item_id": "02e1209af9a34683c59bcc8c50426b8443647ab5cbfb2060694778258a4ece49",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T04:36:01.000Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-96193654ac3edfeb-claim-01",
+          "story_id": "wt-96193654ac3edfeb",
+          "claim": "Nachrichten für NRW: Sabotageversuch in Dormagen: Sabotageversuch am Umspannwerk Dormagen • Bundespräsident lädt zum Bürgerfest nach Bonn • Jens Spahn verklagt Rapper",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T04:36:37.841Z"
+        }
+      ],
+      "content_hash": "f08c73d2c00578adfbbf9db46554a9e1699cd7a4eda3ffbe25d6fb8bee5205b5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T04:36:37.841Z",
+      "event_first_seen_at": "2026-09-04T04:36:37.841Z",
+      "event_detected_at": "2026-09-04T04:36:37.841Z",
+      "event_id": "event-7550c3797cd9c841f061",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 0.6140166666666667,
+        "detection_delay_minutes": 0.6140166666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 100,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:36:37.841Z",
+      "rejection": {
+        "at": "2026-09-04T04:36:37.841Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-7fe0aecde7214efd",
       "slug": "kriegsverbrecher-leichnam-von-ex-general-mladic-nach-serbien-gebracht-214efd",
       "title": "Kriegsverbrecher - Leichnam von Ex-General Mladic nach Serbien gebracht",
       "first_seen": "2026-09-03T21:54:09.000Z",
-      "last_updated": "2026-09-04T04:16:17.000Z",
+      "last_updated": "2026-09-04T04:34:16.000Z",
       "topic": [
         "Geopolitik"
       ],
@@ -73,6 +1812,37 @@
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/leichnam-von-ex-general-mladic-nach-serbien-gebracht-114.html",
+          "title": "Kriegsverbrecher - Leichnam von Ex-General Mladic nach Serbien gebracht",
+          "summary": "Der Leichnam des bosnisch-serbischen Kriegsverbrechers Mladic ist nach Serbien übergeführt worden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T04:34:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1653f9961074d65d456ea29eb331b5ab5bab357099362c485c747ee68c953e0f",
+          "source_item_id": "c3d64ee94b4527e61ac7c4048467f0e891afe0d364317f6ac9370dfff3c1157c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T04:34:16.000Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -94,7 +1864,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         },
         {
           "claim_id": "wt-7fe0aecde7214efd-claim-02",
@@ -114,19 +1884,39 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
+        },
+        {
+          "claim_id": "wt-7fe0aecde7214efd-claim-03",
+          "story_id": "wt-7fe0aecde7214efd",
+          "claim": "Kriegsverbrecher - Leichnam von Ex-General Mladic nach Serbien gebracht: Der Leichnam des bosnisch-serbischen Kriegsverbrechers Mladic ist nach Serbien übergeführt worden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
-      "content_hash": "996ac7c93657e71a4076bcb0473f22c9ab87eba02a91ba44802f1306a2078987",
+      "content_hash": "d2fefd732f81d93b6a51eab6c100cabd68d7e65f9739023cb778701b907b2df4",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-f1257300997f1d04ec87",
@@ -154,14 +1944,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5.036733333333333,
+        "source_age_minutes": 2.3640166666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 360.03656666666666,
+        "queue_age_minutes": 375.3471833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 100,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:36:37.841Z",
+      "rejection": {
+        "at": "2026-09-04T04:36:37.841Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -198,7 +2000,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T04:15:14.000Z",
-          "ingested_at": "2026-09-04T04:21:19.204Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -225,19 +2027,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
       "content_hash": "e76f81b9c6782ab3202151fd14eb69dbf5ca2c8693fa301f0fda4bae8841f35c",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-04T04:21:19.204Z",
       "event_detected_at": "2026-09-04T04:21:19.204Z",
       "event_id": "event-9e6ab20b159820b6d0e1",
@@ -267,14 +2069,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.086733333333333,
+        "source_age_minutes": 21.39735,
         "detection_delay_minutes": 6.086733333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.310616666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 96,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:36:37.841Z",
+      "rejection": {
+        "at": "2026-09-04T04:36:37.841Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -16952,19 +18766,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
       "content_hash": "f607ac4e8127025b07b911552ff2f2489042dda21755efb94ac9c11398354d79",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-04T04:21:19.204Z",
       "event_detected_at": "2026-09-04T04:21:19.204Z",
       "event_id": "event-18e6129b4fc62aaba6cf",
@@ -17001,14 +18815,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 261.32006666666666,
+        "source_age_minutes": 276.6306833333333,
         "detection_delay_minutes": 261.32006666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.310616666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 46,
+        "news_freshness_score": 42,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:36:37.841Z",
+      "rejection": {
+        "at": "2026-09-04T04:36:37.841Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -17081,19 +18907,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
       "content_hash": "2f79c2ec9aaf62b1bd7d432eabc0d86972ae64a02995c0912c651e7e4fde8570",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-04T04:21:19.204Z",
       "event_detected_at": "2026-09-04T04:21:19.204Z",
       "event_id": "event-9f50033ebd65d9d65937",
@@ -17123,14 +18949,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 261.32006666666666,
+        "source_age_minutes": 276.6306833333333,
         "detection_delay_minutes": 261.32006666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.310616666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 46,
+        "news_freshness_score": 42,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:36:37.841Z",
+      "rejection": {
+        "at": "2026-09-04T04:36:37.841Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -17854,7 +19692,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -17880,7 +19718,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T09:29:17.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -17888,7 +19726,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true,
@@ -27817,378 +29655,6 @@
       }
     },
     {
-      "story_id": "wt-9cca0ad92ad1a84a",
-      "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
-      "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-      "first_seen": "2026-09-02T13:00:00.000Z",
-      "last_updated": "2026-09-03T12:48:02.808Z",
-      "published_at": "2026-09-03T07:49:38.699Z",
-      "updated_at": "2026-09-03T12:48:02.808Z",
-      "topic": [
-        "Energie",
-        "Finanzen",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-kompakt",
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
-          "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-          "summary": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte. So werden Verbraucherinnen und Verbraucher spürbar entlastet. Langfristig werden niedrigere Steuern und ein Industriestrompreis auch die Wirtschaft unterstützen.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T13:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 92,
-          "source_topic": "Politik",
-          "content_hash": "c9baac27652662154968b40977d601b1a1234a6c2e6c217dd2fd3f76725bef59"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-9cca0ad92ad1a84a-claim-01",
-          "story_id": "wt-9cca0ad92ad1a84a",
-          "claim": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen: Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte. So werden Verbraucherinnen und Verbraucher spürbar entlastet. Langfristig werden niedrigere Steuern und ein Industriestrompreis auch die Wirtschaft unterstützen.",
-          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
-          "source_id": "bundesregierung-kompakt",
-          "source_function": "official_fact_source",
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T12:48:02.808Z"
-        }
-      ],
-      "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
-      "published": true,
-      "listed": false,
-      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
-      "relevance_filter_version": "3.2",
-      "current_version": 2,
-      "analysis": {
-        "story_id": "wt-9cca0ad92ad1a84a",
-        "summary": "Die Energiepreis-Story trägt als veröffentlichungswürdige Neuigkeit. Die neue Information betrifft staatliche Entlastung bei Gas- und Stromkosten.",
-        "detail_summary": "Gesichert ist aus der Primärquelle: Die Bundesregierung meldet die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Zusätzlich werden niedrigere Steuern und ein Industriestrompreis als langfristige Unterstützung der Wirtschaft genannt. Materiell ist das, weil Energiepreise Haushalte und Unternehmen direkt betreffen und über Kosten, Anreize und Kapitalflüsse weiterwirken können. Der naheliegende Wirkpfad läuft über geringere Abgaben oder Entgelte zu verfügbaren Einkommen, Produktionskosten und Nachfrage. Mögliche Folgen sind Entlastung, veränderte Verteilungseffekte und neue fiskalische oder marktliche Anschlussfragen. Offen bleibt, wie hoch die Entlastung ausfällt, wer netto gewinnt, wie finanziert wird und ob reale Preiseffekte eintreten.",
-        "why_relevant": "Energiepreise berühren Haushaltsbudgets, Unternehmensstandorte und staatliche Anreizsetzung.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Entlastung für Verbraucherinnen und Verbraucher bei zentralen Grundkosten."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Preis- und Industrieanreize können Energieverbrauch und Investitionen beeinflussen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Verteilungs- und Finanzierungsfragen bleiben politisch überprüfbar und erklärungspflichtig."
-        },
-        "importance": "hoch",
-        "impact_potential": "Potenziell geringere Energiekosten und geänderte Standortanreize, ohne bereits eingetretene Wirkung zu behaupten.",
-        "impact_risks": [
-          "Entlastung kann ungleich wirken oder falsche Verbrauchsanreize setzen."
-        ],
-        "mechanisms": [
-          "Abgaben- und Entgeltänderungen verschieben Kosten, Anreize und Kapitalflüsse."
-        ],
-        "first_order": [
-          "Direkte Senkung einzelner Energiepreisbestandteile."
-        ],
-        "second_order": [
-          "Veränderte Haushaltsbelastung und Kostenlage von Unternehmen."
-        ],
-        "third_order": [
-          "Mögliche Rückwirkungen auf Nachfrage, Investitionen und Staatsfinanzierung."
-        ],
-        "systemic_relevance": "Energiepreise sind systemrelevant, weil sie Haushalte, Industrie und Versorgungskosten koppeln.",
-        "transformation_potential": "Mittel; es hängt von Ausgestaltung, Gegenfinanzierung und Investitionssignalen ab.",
-        "resilience": "Kann kurzfristig Belastungen puffern, schafft aber nur bei tragfähiger Finanzierung Resilienz.",
-        "side_effects": [
-          "Mögliche Zielkonflikte zwischen Entlastung, Haushalt und Klimaanreizen."
-        ],
-        "uncertainties": [
-          "Beträge, Laufzeiten, Verteilung, Finanzierung und empirische Preiseffekte fehlen."
-        ],
-        "evidence_level": "Primärquelle mit begrenztem Kontext; behauptete Maßnahmen sind belegt, Wirkungen nicht.",
-        "attribution": "Die gemeldeten Maßnahmen sind der Bundesregierung zurechenbar; spätere Preiswirkungen nicht belegt.",
-        "watch_next": [
-          "Konkrete Beträge, Rechtsstand, Finanzierung und Verteilungswirkung prüfen."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG: bezahlbare Energie, menschenwürdige Arbeit, Klimaziele."
-        ],
-        "publication_gate": {
-          "news_value": "binding_decision",
-          "materiality_factors": [
-            "affected_scope"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "primary_source_direct",
-          "duplicate_status": "new_story",
-          "rationale": "Im historischen Modus zählt die damalige Primärmeldung; sie ist nicht wegen der Historie als Dublette zu verwerfen."
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-03T07:49:38.699Z",
-          "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
-          "analysis": {
-            "story_id": "wt-9cca0ad92ad1a84a",
-            "summary": "Die Bundesregierung meldet Abschaffung der Gasspeicherumlage und Senkung der Strom-Netzentgelte. Entlastung wird behauptet, tatsächliche Verteilungs- und Klimawirkung ist nicht belegt.",
-            "why_relevant": "Energiepreise betreffen Haushalte, Unternehmen, Inflation, Industrie und Transformationsanreize.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Potenzial für finanzielle Entlastung vieler Haushalte; Verteilung nach Einkommen bleibt offen."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Preissenkungen können Verbrauchsanreize verändern; Klimapfad ist ohne Ausgestaltung offen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Energiepreis-Politik berührt Akzeptanz, Verteilungsgerechtigkeit und fiskalische Transparenz."
-            },
-            "importance": "hoch",
-            "impact_potential": "Potenzial: kurzfristige Kostenentlastung und Stabilisierung energieintensiver Wirtschaftsteile.",
-            "impact_risks": [
-              "Risiko: pauschale Entlastung kann Sparanreize schwächen und Verteilungseffekte verdecken."
-            ],
-            "mechanisms": [
-              "Finanzielle Entlastung über Umlageabschaffung, geringere Netzentgelte, Steuern und Industriestrompreis."
-            ],
-            "first_order": [
-              "Output: geringere staatlich beeinflusste Preisbestandteile; reale Haushaltsentlastung noch zu messen."
-            ],
-            "second_order": [
-              "Mögliche Folge: mehr Kaufkraft und geringerer Kostendruck in Betrieben."
-            ],
-            "third_order": [
-              "Mögliche Systemfolge: höhere Akzeptanz oder verzögerte Effizienzsignale, je nach Finanzierung."
-            ],
-            "systemic_relevance": "Energiepreise wirken breit in Versorgung, Industrie, Haushalten und politischer Akzeptanz.",
-            "transformation_potential": "Mittel: Entlastung kann Übergänge stützen, ersetzt aber keine gesicherte Klimawirkung.",
-            "resilience": "Kann ökonomische Resilienz stärken, falls Finanzierung tragfähig und zielgenau ist.",
-            "side_effects": [
-              "Mögliche fiskalische Kosten, Mitnahmeeffekte oder geringere Effizienzanreize."
-            ],
-            "uncertainties": [
-              "Kontext, Beträge, Laufzeiten, Finanzierung und empirische Preiseffekte fehlen im Datensatz."
-            ],
-            "evidence_level": "Primärquelle mit Kurztext; Entlastungswirkung ist behauptet, nicht nachgewiesen.",
-            "attribution": "Ex ante keine Kausalzurechnung; Preisbestandteile sind nur ein Faktor realer Energiekosten.",
-            "watch_next": [
-              "Gesetzesdetails, Haushaltsfinanzierung, Preisweitergabe, Verteilung und Energieverbrauch beobachten."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7, SDG 8, SDG 10, SDG 12 und SDG 13 vorsichtig anwendbar."
-            ],
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.5",
-          "mode": "woek-ai-oracle-llm",
-          "method_sources": [
-            {
-              "title": "Berichtsdaten",
-              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
-            },
-            {
-              "title": "Open Science",
-              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
-            },
-            {
-              "title": "Wirkungsdatenräume",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
-            },
-            {
-              "title": "Bundesrat – 504/26 Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen",
-              "url": "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0501-0600/0504-26.html"
-            },
-            {
-              "title": "Bundesregierung – Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526"
-            },
-            {
-              "title": "Messgrenzen und Unsicherheit",
-              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-03T12:48:02.808Z",
-          "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
-          "analysis": {
-            "story_id": "wt-9cca0ad92ad1a84a",
-            "summary": "Die Energiepreis-Story trägt als veröffentlichungswürdige Neuigkeit. Die neue Information betrifft staatliche Entlastung bei Gas- und Stromkosten.",
-            "detail_summary": "Gesichert ist aus der Primärquelle: Die Bundesregierung meldet die Abschaffung der Gasspeicherumlage und niedrigere Strom-Netzentgelte. Zusätzlich werden niedrigere Steuern und ein Industriestrompreis als langfristige Unterstützung der Wirtschaft genannt. Materiell ist das, weil Energiepreise Haushalte und Unternehmen direkt betreffen und über Kosten, Anreize und Kapitalflüsse weiterwirken können. Der naheliegende Wirkpfad läuft über geringere Abgaben oder Entgelte zu verfügbaren Einkommen, Produktionskosten und Nachfrage. Mögliche Folgen sind Entlastung, veränderte Verteilungseffekte und neue fiskalische oder marktliche Anschlussfragen. Offen bleibt, wie hoch die Entlastung ausfällt, wer netto gewinnt, wie finanziert wird und ob reale Preiseffekte eintreten.",
-            "why_relevant": "Energiepreise berühren Haushaltsbudgets, Unternehmensstandorte und staatliche Anreizsetzung.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Mögliche Entlastung für Verbraucherinnen und Verbraucher bei zentralen Grundkosten."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Preis- und Industrieanreize können Energieverbrauch und Investitionen beeinflussen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Verteilungs- und Finanzierungsfragen bleiben politisch überprüfbar und erklärungspflichtig."
-            },
-            "importance": "hoch",
-            "impact_potential": "Potenziell geringere Energiekosten und geänderte Standortanreize, ohne bereits eingetretene Wirkung zu behaupten.",
-            "impact_risks": [
-              "Entlastung kann ungleich wirken oder falsche Verbrauchsanreize setzen."
-            ],
-            "mechanisms": [
-              "Abgaben- und Entgeltänderungen verschieben Kosten, Anreize und Kapitalflüsse."
-            ],
-            "first_order": [
-              "Direkte Senkung einzelner Energiepreisbestandteile."
-            ],
-            "second_order": [
-              "Veränderte Haushaltsbelastung und Kostenlage von Unternehmen."
-            ],
-            "third_order": [
-              "Mögliche Rückwirkungen auf Nachfrage, Investitionen und Staatsfinanzierung."
-            ],
-            "systemic_relevance": "Energiepreise sind systemrelevant, weil sie Haushalte, Industrie und Versorgungskosten koppeln.",
-            "transformation_potential": "Mittel; es hängt von Ausgestaltung, Gegenfinanzierung und Investitionssignalen ab.",
-            "resilience": "Kann kurzfristig Belastungen puffern, schafft aber nur bei tragfähiger Finanzierung Resilienz.",
-            "side_effects": [
-              "Mögliche Zielkonflikte zwischen Entlastung, Haushalt und Klimaanreizen."
-            ],
-            "uncertainties": [
-              "Beträge, Laufzeiten, Verteilung, Finanzierung und empirische Preiseffekte fehlen."
-            ],
-            "evidence_level": "Primärquelle mit begrenztem Kontext; behauptete Maßnahmen sind belegt, Wirkungen nicht.",
-            "attribution": "Die gemeldeten Maßnahmen sind der Bundesregierung zurechenbar; spätere Preiswirkungen nicht belegt.",
-            "watch_next": [
-              "Konkrete Beträge, Rechtsstand, Finanzierung und Verteilungswirkung prüfen."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG: bezahlbare Energie, menschenwürdige Arbeit, Klimaziele."
-            ],
-            "publication_gate": {
-              "news_value": "binding_decision",
-              "materiality_factors": [
-                "affected_scope"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "primary_source_direct",
-              "duplicate_status": "new_story",
-              "rationale": "Im historischen Modus zählt die damalige Primärmeldung; sie ist nicht wegen der Historie als Dublette zu verwerfen."
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.5",
-          "mode": "woek-ai-oracle-llm",
-          "method_sources": [
-            {
-              "title": "Berichtsdaten",
-              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
-            },
-            {
-              "title": "Open Science",
-              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
-            },
-            {
-              "title": "Wirkungsdatenräume",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
-            },
-            {
-              "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526"
-            },
-            {
-              "title": "Stärkerer Schutz kritischer Infrastrukturen",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682"
-            },
-            {
-              "title": "Messgrenzen und Unsicherheit",
-              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-03T07:49:38.699Z",
-          "source_count": 1
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-03T12:48:02.808Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "retired_at": "2026-09-03T13:20:22.082Z",
-      "retirement": {
-        "at": "2026-09-03T13:20:22.082Z",
-        "filter_version": "3.2",
-        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_NEWS_VALUE_CONTEXT_ONLY",
-          "AI_MATERIALITY_GATE_FAILED",
-          "AI_DUPLICATE_WITHOUT_UPDATE",
-          "AI_PUBLICATION_NOT_RECOMMENDED"
-        ],
-        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
-        "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/senkung-energiepreise-haushalt-2358526",
-            "title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
-            "summary": "Die Bundesregierung hat die Gasspeicherumlage abgeschafft und senkt die Strom-Netzentgelte. So werden Verbraucherinnen und Verbraucher spürbar entlastet. Langfristig werden niedrigere Steuern und ein Industriestrompreis auch die Wirtschaft unterstützen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T13:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "c9baac27652662154968b40977d601b1a1234a6c2e6c217dd2fd3f76725bef59",
-            "source_item_id": "cf5b3c56d6a982f602b4f8f2c6f2d8bd2a24859c5f87e492420d68ae3a418160",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T13:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      }
-    },
-    {
       "story_id": "wt-6489163107157a36",
       "slug": "ice-von-frankfurt-nach-mannheim-schwarzfahrer-schlagt-zweijahriges-kind-157a36",
       "title": "ICE von Frankfurt nach Mannheim: Schwarzfahrer schlägt zweijähriges Kind",
@@ -28790,7 +30256,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -28816,7 +30282,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T22:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:eu-kommission-presse",
               "basis": "publisher_only_origin_unverified",
@@ -28846,7 +30312,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T11:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -28854,7 +30320,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 3,
         "reassessment": true,
@@ -29312,7 +30778,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -29338,7 +30804,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T08:45:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -29346,7 +30812,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -29593,7 +31059,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -29619,7 +31085,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T09:59:16.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -29627,7 +31093,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -29846,7 +31312,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
         "sources": [
           {
@@ -29872,7 +31338,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T22:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:eu-kommission-presse",
               "basis": "publisher_only_origin_unverified",
@@ -29880,7 +31346,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 3,
         "reassessment": true,
@@ -30103,7 +31569,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -30129,7 +31595,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -30137,7 +31603,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true,
@@ -30347,7 +31813,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -30373,7 +31839,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T17:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -30381,7 +31847,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -31243,7 +32709,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -31269,7 +32735,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:06:42.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -31277,7 +32743,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true,
@@ -31516,7 +32982,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -31542,7 +33008,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -31550,7 +33016,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -31792,7 +33258,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -31818,7 +33284,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T13:20:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -31826,7 +33292,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -32065,7 +33531,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -32091,7 +33557,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -32099,7 +33565,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -32343,7 +33809,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -32369,7 +33835,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -32377,7 +33843,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -32617,7 +34083,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -32643,7 +34109,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:44:36.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -32651,7 +34117,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -32895,7 +34361,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -32912,7 +34378,7 @@
             "content_hash": "e362441ae1fa1127a3cf3507d33d24def790eb08e77dced1d570c2974f62a8b7"
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -34185,7 +35651,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:21:19.204Z",
+        "detected_at": "2026-09-04T04:36:37.841Z",
         "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
         "sources": [
           {
@@ -34211,7 +35677,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T13:00:00.000Z",
-            "ingested_at": "2026-09-04T04:21:19.204Z",
+            "ingested_at": "2026-09-04T04:36:37.841Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -34219,7 +35685,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -36300,7 +37766,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T10:28:49.000Z",
-          "ingested_at": "2026-09-04T04:21:19.204Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
           "provenance": {
             "origin": "publisher:eu-kommission-presse",
             "basis": "publisher_only_origin_unverified",
@@ -36327,19 +37793,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
       "content_hash": "1e6cd7c1d6d91647b7046917beb2caa2cbc18c7c4595b3a59dd70bc4ca647908",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3e01d1f6d0533d6aa9c6",
@@ -36368,11 +37836,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2512.5034,
+        "source_age_minutes": 2527.8140166666667,
         "detection_delay_minutes": 2152.4668333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 360.03656666666666,
+        "queue_age_minutes": 375.3471833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -37006,118 +38474,6 @@
       }
     },
     {
-      "story_id": "wt-9d87c7944980e87e",
-      "slug": "bessere-startchancen-fur-kinder-80e87e",
-      "title": "Bessere Startchancen für Kinder",
-      "first_seen": "2026-09-02T08:00:00.000Z",
-      "last_updated": "2026-09-02T08:00:00.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-kompakt",
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
-          "title": "Bessere Startchancen für Kinder",
-          "summary": "Eine gute Kinderbetreuung und die frühe Förderung für alle Kinder gehören zu den wichtigsten Zukunftsaufgaben in Deutschland. Die Bundesregierung will deshalb die Startchancen von Kindern verbessern und die Qualität der frühkindlichen Bildung stärken.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T08:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 92,
-          "source_topic": "Politik",
-          "content_hash": "ad106e3458e100625188956173f4767630e28a9efb5aa166e9b34a0a905837bd",
-          "source_item_id": "02e8d790bed3e7fc28284bd64172d65ac9fca6a952aeac1a0009929ce5098ac3",
-          "publisher_id": "bundesregierung",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-02T08:00:00.000Z",
-          "ingested_at": "2026-09-04T04:21:19.204Z",
-          "provenance": {
-            "origin": "publisher:bundesregierung",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-9d87c7944980e87e-claim-01",
-          "story_id": "wt-9d87c7944980e87e",
-          "claim": "Bessere Startchancen für Kinder: Eine gute Kinderbetreuung und die frühe Förderung für alle Kinder gehören zu den wichtigsten Zukunftsaufgaben in Deutschland. Die Bundesregierung will deshalb die Startchancen von Kindern verbessern und die Qualität der frühkindlichen Bildung stärken.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "bundesregierung-kompakt",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:bundesregierung",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
-        }
-      ],
-      "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-ef9d83c7cd180ed4c9e4",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung finanzieller Anreize und Kapitalflüsse"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 2661.3200666666667,
-        "detection_delay_minutes": 2301.2835,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 360.03656666666666,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      }
-    },
-    {
       "story_id": "wt-972d20af6da2b586",
       "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
       "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
@@ -37150,7 +38506,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T06:00:00.000Z",
-          "ingested_at": "2026-09-04T04:21:19.204Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
           "provenance": {
             "origin": "publisher:bundesregierung",
             "basis": "publisher_only_origin_unverified",
@@ -37177,19 +38533,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
       "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:4"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3c4cec37699684f265d9",
@@ -37217,11 +38576,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2781.3200666666667,
+        "source_age_minutes": 2796.6306833333333,
         "detection_delay_minutes": 2421.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 360.03656666666666,
+        "queue_age_minutes": 375.3471833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -37476,120 +38835,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-b5e0a39f46388642",
-      "slug": "speech-by-commissioner-lahbib-at-the-european-parliament-on-the-2026-wildfire-season-388642",
-      "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
-      "first_seen": "2026-09-01T16:09:08.000Z",
-      "last_updated": "2026-09-01T16:09:08.000Z",
-      "topic": [
-        "Gesundheit",
-        "Europa"
-      ],
-      "sources": [
-        {
-          "source_id": "eu-kommission-presse",
-          "publisher": "Europäische Kommission – Press Corner",
-          "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
-          "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
-          "summary": "European Commission Speech Brussels, 01 Sep 2026 This summer has tested us. Almost 700,000 hectares have already burned across the EU, more land than the yearly average of the past two decades and the season i...",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T16:09:08.000Z",
-          "primary_source": true,
-          "source_priority": 94,
-          "source_topic": "Europa",
-          "content_hash": "d259783e837d361be26dfa248f50721149a98df4a584b23abe28dc835ba4a650",
-          "source_item_id": "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
-          "publisher_id": "eu-kommission-presse",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "EU"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-01T16:09:08.000Z",
-          "ingested_at": "2026-09-04T04:21:19.204Z",
-          "provenance": {
-            "origin": "publisher:eu-kommission-presse",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-b5e0a39f46388642-claim-01",
-          "story_id": "wt-b5e0a39f46388642",
-          "claim": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season: European Commission Speech Brussels, 01 Sep 2026 This summer has tested us. Almost 700,000 hectares have already burned across the EU, more land than the yearly average of the past two decades and the season i...",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "eu-kommission-presse",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:eu-kommission-presse",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
-        }
-      ],
-      "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-88c06765dd812ab1333c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 44,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesundheit",
-          "Europa"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 3612.1867333333334,
-        "detection_delay_minutes": 3252.150166666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 360.03656666666666,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
     {
@@ -38249,7 +39494,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-04T04:21:19.204Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -38276,19 +39521,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -38317,11 +39564,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4221.320066666667,
+        "source_age_minutes": 4236.630683333334,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 360.03656666666666,
+        "queue_age_minutes": 375.3471833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -38734,7 +39981,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-04T04:21:19.204Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -38761,19 +40008,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:21:19.204Z"
+          "checked_at": "2026-09-04T04:36:37.841Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:21:19.204Z",
+      "updated_at": "2026-09-04T04:36:37.841Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -38805,11 +40054,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5301.320066666667,
+        "source_age_minutes": 5316.630683333334,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 360.03656666666666,
+        "queue_age_minutes": 375.3471833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -39667,5 +40916,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T04:06:08.228Z"
+  "public_updated_at": "2026-09-04T04:36:37.841Z"
 }
