@@ -2,8 +2,17 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { buildP23 } from '../scripts/quality/materialize-berlin-spd-p23.mjs';
 import { validateP23 } from '../scripts/quality/check-berlin-spd-p23.mjs';
+
+test('the repository CI boundary independently accepts the exact P23 residual transaction', () => {
+  const result = JSON.parse(execFileSync('python3', ['../tools/validate_berlin_fach_content_residual.py'], { encoding: 'utf8' }));
+  assert.equal(result.input_bound_reproduction, 'PASS');
+  assert.equal(result.terminal_source_objects, 1552);
+  assert.equal(result.remaining_review_envelopes, 1192);
+  assert.equal(result.programmes_terminal, 4);
+});
 
 test('P23 binds the whole authoritative set, exact source characters and the cross-page unit once', () => {
   const result = validateP23(buildP23());
