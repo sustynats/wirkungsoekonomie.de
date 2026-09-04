@@ -2296,7 +2296,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-04T04:21:19.204Z",
+      "ingested_at": "2026-09-04T10:21:19.449Z",
       "provenance": {
         "origin": "publisher:europe-pmc",
         "basis": "publisher_only_origin_unverified",
@@ -2338,7 +2338,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-04T04:21:19.204Z",
+      "ingested_at": "2026-09-04T10:21:19.449Z",
       "provenance": {
         "origin": "publisher:europe-pmc",
         "basis": "publisher_only_origin_unverified",
@@ -2380,7 +2380,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-04T04:21:19.204Z",
+      "ingested_at": "2026-09-04T10:21:19.449Z",
       "provenance": {
         "origin": "publisher:europe-pmc",
         "basis": "publisher_only_origin_unverified",
@@ -2422,7 +2422,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-04T04:21:19.204Z",
+      "ingested_at": "2026-09-04T10:21:19.449Z",
       "provenance": {
         "origin": "publisher:europe-pmc",
         "basis": "publisher_only_origin_unverified",
@@ -9324,7 +9324,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-02T13:09:30.000Z",
-      "ingested_at": "2026-09-03T22:21:17.010Z",
+      "ingested_at": "2026-09-04T10:21:19.449Z",
       "provenance": {
         "origin": "publisher:ipcc",
         "basis": "publisher_only_origin_unverified",
@@ -30327,7 +30327,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-04T00:00:00.000Z",
-      "ingested_at": "2026-09-04T04:21:19.204Z",
+      "ingested_at": "2026-09-04T10:21:19.449Z",
       "provenance": {
         "origin": "publisher:europe-pmc",
         "basis": "publisher_only_origin_unverified",
@@ -30369,7 +30369,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-04T00:00:00.000Z",
-      "ingested_at": "2026-09-04T04:21:19.204Z",
+      "ingested_at": "2026-09-04T10:21:19.449Z",
       "provenance": {
         "origin": "publisher:europe-pmc",
         "basis": "publisher_only_origin_unverified",
@@ -53901,34 +53901,7 @@
       "geography": [],
       "day": "2026-09-02",
       "id": "event-651c5096b855c9c3e6f9",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "story_id": "wt-12ee12d819b10356",
-      "relevance": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 46,
-        "public_relevance": "mittel",
-        "topics": [
-          "Klima"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "attention_impact_gap": null
+      "event_detected_at": "2026-09-03T22:21:17.010Z"
     },
     "event-ba4b8ad4824ee97009d8": {
       "title_terms": [
@@ -54015,12 +53988,15 @@
       "story_id": "wt-f3d585eac14dec76",
       "relevance": {
         "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
+        "internal_relevance_score": 68,
+        "public_relevance": "sehr hoch",
         "topics": [
+          "Energie",
           "Gesellschaft"
         ],
-        "dimensions": [],
+        "dimensions": [
+          "Mensch"
+        ],
         "status": "laufende Entwicklung",
         "analysis_type": "ex_ante",
         "news_value_signals": [],
@@ -54036,7 +54012,11 @@
           "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
         ]
       },
-      "attention_impact_gap": null
+      "attention_impact_gap": {
+        "status": "possible_gap_in_observed_sources",
+        "observed_origins": 2,
+        "note": "Geringe beobachtete Quellenbreite, keine Aussage über die gesamte Medienaufmerksamkeit."
+      }
     },
     "event-f65f3fdcbb4b2afd5807": {
       "title_terms": [
@@ -67600,7 +67580,8 @@
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
-          "Gesellschaft"
+          "Gesellschaft",
+          "Politik"
         ],
         "dimensions": [],
         "status": "laufende Entwicklung",
@@ -70031,41 +70012,7 @@
       "geography": [],
       "day": "2026-09-04",
       "id": "event-18e6129b4fc62aaba6cf",
-      "event_detected_at": "2026-09-04T04:21:19.204Z",
-      "story_id": "wt-162dbce3c2673002",
-      "relevance": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 46,
-        "public_relevance": "mittel",
-        "topics": [
-          "Klima",
-          "Soziales",
-          "Gesundheit",
-          "Digitalisierung"
-        ],
-        "dimensions": [
-          "Mensch",
-          "Planet",
-          "Demokratie"
-        ],
-        "status": "evaluiert",
-        "analysis_type": "monitoring",
-        "news_value_signals": [
-          "new_evidence"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "attention_impact_gap": null
+      "event_detected_at": "2026-09-04T04:21:19.204Z"
     },
     "event-9f50033ebd65d9d65937": {
       "title_terms": [
@@ -70094,34 +70041,7 @@
       "geography": [],
       "day": "2026-09-04",
       "id": "event-9f50033ebd65d9d65937",
-      "event_detected_at": "2026-09-04T04:21:19.204Z",
-      "story_id": "wt-765f1b877485feb8",
-      "relevance": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Soziales"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "attention_impact_gap": null
+      "event_detected_at": "2026-09-04T04:21:19.204Z"
     },
     "event-76279882cdbdd4c53922": {
       "title_terms": [
@@ -141137,7 +141057,245 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die vorliegende Quelle wiederholt die bereits veröffentlichte Kernaussage zu Energiepreis-Entlastungen ohne substanziell neue, materiell andere Information."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-f3d585eac14dec76",
+      "event_id": "event-f0b1482b8ce86ec1fab2",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Neue, materielle Zwischeninformation zu einem möglichen Angriff auf kritische Infrastruktur; die Echtheit bleibt offen, aber der Ermittlungsstand ist berichtenswert."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-7ae0b9f22404b684",
+      "event_id": "event-75bee49c92987065ab05",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt nur bereits veröffentlichte Angaben zur erhöhten Sicherung von Umspannwerken in Hessen; gegenüber der vorhandenen Erstmeldung fehlt eine neue materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-e01001c00cf12041",
+      "event_id": "event-b59292667fc88bb33e5f",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Nur eine bereits bekannte Sekundärquelle ohne neue, unabhängig belegte Tatsachen gegenüber der vorhandenen Meldung."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-4fb94d2cebfca746",
+      "event_id": "event-73b1c53517b0e2f5118c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Quellen wiederholen den bereits publizierten Dormagen-Fall ohne substanziell neue, zusätzlich belastbare Information."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-8f76552549f6aa68",
+      "event_id": "event-fea21a345042f920125d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Quelle wiederholt bereits gemeldete Angaben zur Tunnelrettung ohne substanziell neue, eigenständige Information gegenüber der vorhandenen Tickerlage."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-3c6be5c124113650",
+      "event_id": "event-e36c0e80c02ea72f11c7",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Gegenüber der bereits publizierten Kurzfassung liegen zusätzliche belastbare Details zu Verletzungen, Rettung, Unterbringung und Ermittlungsstand vor. Der Fall betrifft mehrere Betroffene und vorübergehend unbewohnbaren Wohnraum."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-aabe8c0430bf8f84",
+      "event_id": "event-1b0c4e9053465796c788",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die verfügbaren Meldungen wiederholen die bereits veröffentlichte Rettung von zwei Arbeitern und liefern keine substanziell neue, materiell relevante Information."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-61d3420f0dd76f70",
+      "event_id": "event-0059d4df349b8d2350cf",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quellen wiederholen nur die bereits gemeldete erneute Anrufung des Supreme Court im Briefwahlstreit; keine neue materielle Entwicklung gegenüber der bestehenden Akte."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-edd4484465895b46",
+      "event_id": "event-4d4eabf7fc99346b711e",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Meldung bringt neue, konkretisierte Angaben zu einer akuten Katastrophen- und Rettungslage mit vielen potenziell Betroffenen. Trotz nur einer Quelle ist der Kern sachlich berichtenswert, weil Flucht, Einschluss und Vermisstenzahl direkt benannt werden."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-67083aa272f98b15",
+      "event_id": "event-c061cdbd91019208004c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Primärquelle wiederholt den bereits veröffentlichten Beschluss zu den EU-Leitlinien ohne neue belastbare Entwicklung gegenüber der Vorfassung."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-b5e0a39f46388642",
+      "event_id": "event-88c06765dd812ab1333c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt im Kern die bereits veröffentlichte Erstmeldung; es fehlt gegenüber dem bestehenden Stand eine neue materielle Information."
+    },
+    {
+      "at": "2026-09-04T10:21:19.449Z",
+      "story_id": "wt-31724816547fc87d",
+      "event_id": "event-f2fa5659b171e222bce8",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Neue Monatszahlen zu Spritpreisen und E-Auto-Zulassungen sind materiell relevant für Haushalte, Verkehrsmarkt und Fiskus; die Evidenz ist jedoch vorerst nur eine belastbare Einzelquelle."
     }
   ],
-  "updated_at": "2026-09-04T10:07:41.576Z"
+  "updated_at": "2026-09-04T10:21:19.449Z"
 }
