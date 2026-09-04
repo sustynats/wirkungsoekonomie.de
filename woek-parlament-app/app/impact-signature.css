@@ -27,7 +27,8 @@
 .impact-signature--compact dl { grid-template-columns: 1fr; gap: var(--abstand-xs); }
 .impact-signature--compact .signature-axis { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--abstand-xs); padding: .3rem 0; border: 0; }
 .impact-signature--compact dt { font-size: var(--groesse-label); }
-.impact-signature--compact dd { margin: 0; grid-template-columns: auto 1fr; align-items: center; font-size: var(--groesse-klein); }
+.impact-signature--compact dd { margin: 0; min-width: 0; grid-template-columns: auto minmax(0, 1fr); align-items: center; font-size: var(--groesse-klein); }
+.impact-signature--compact dt, .impact-signature--compact dd > span { min-width: 0; overflow-wrap: anywhere; }
 .impact-signature--compact .signature-direction-track { grid-column: 1 / -1; }
 .impact-signature--compact .signature-mark { width: 1.75rem; height: 1.75rem; font-size: var(--groesse-klein); }
 .case-card-finding { font-size: var(--groesse-klein); margin-block: var(--abstand-s); }

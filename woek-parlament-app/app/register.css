@@ -1,5 +1,5 @@
 .register-filters { padding: var(--abstand-l); border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); background: var(--farbe-flaeche-warm); }
-.register-filters label { display: grid; gap: .4rem; font-weight: 700; min-width: 0; }
+.register-filters label { display: grid; grid-template-columns: minmax(0, 1fr); gap: .4rem; font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
 .register-filters input, .register-filters select { width: 100%; min-width: 0; min-height: var(--tippziel-min); padding: .6rem; border: 1px solid var(--farbe-text-sekundaer); border-radius: var(--radius-klein); background: var(--farbe-flaeche-karte); color: var(--farbe-text); font: inherit; font-size: .9rem; }
 .register-query { margin-bottom: 1rem; }
 .register-filters fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
@@ -22,6 +22,8 @@
 .register-distribution dd { margin: 0; font-weight: 800; }
 .register-rows { display: grid; gap: 1rem; }
 .impact-register-row { margin: 0; }
+.impact-register-row .case-card-topline { flex-wrap: wrap; }
+.impact-register-row .chip { max-width: 100%; min-width: 0; overflow-wrap: anywhere; }
 @media (min-width: 960px) { .impact-register-row > .register-row-impact { grid-column: 2; grid-row: 1 / span 3; } }
 .register-method-note { margin-top: 2rem; }
 .register-method-note summary { cursor: pointer; font-weight: 700; padding-block: .75rem; }
