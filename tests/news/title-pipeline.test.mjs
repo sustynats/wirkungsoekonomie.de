@@ -8,7 +8,7 @@ import { runInNewContext } from "node:vm";
 import { IMAGE_CONFIG as C, chooseTitleImageMode, buildEditorialImagePrompt, digest, imageError } from "../../scripts/news/title-image/policy.mjs";
 import { inspectImage, downloadImage } from "../../scripts/news/title-image/image-file.mjs";
 import { checkHiggsfieldAvailability, createHiggsfieldAdapter, parseCliJson, generationResult, recoverSubmittedJob } from "../../scripts/news/title-image/higgsfield.mjs";
-import { createTitleImagePipeline, publicTitleImage } from "../../scripts/news/title-image/pipeline.mjs";
+import { createTitleImagePipeline, publicTitleImage, generateEditorialVisual } from "../../scripts/news/title-image/pipeline.mjs";
 import { renderTitleImageFromStory } from "../../scripts/news/title-image/index.mjs";
 import { checkEditorialAsset, detectedWords, VISUAL_GATE_VERSION } from "../../scripts/news/title-image/quality.mjs";
 import { backfillTitleImages } from "../../scripts/news/title-image/backfill.mjs";
@@ -23,6 +23,12 @@ function png(width = 1200, height = 675, shade = 0) {
 }
 function temp(t) { const dir = fs.mkdtempSync(path.join(os.tmpdir(), "woek-title-test-")); t.after(() => fs.rmSync(dir,{recursive:true,force:true})); return dir; }
 const asset = () => { const bytes = png(); return { ...inspectImage(bytes), bytes, model: C.model, prompt_version: C.prompt_version, generated_at: "2026-09-04T00:00:00Z" }; };
+test("image transport throttling is retryable and is not reported as provider outage", async () => {
+  await assert.rejects(generateEditorialVisual(STORY, {
+    endpoint: "https://images.example.test/api", token: "test-only",
+    fetchImpl: async () => new Response("limited", {status:429}),
+  }), {code:"HIGGSFIELD_RATE_LIMIT"});
+});
 test("immutable title assets use rendered byte hashes even when semantic input is unchanged", async t => {
   const root = temp(t); const saved = new Map(); let shade = 0;
   const prepare = createTitleImagePipeline({ root, allowGeneration: false,

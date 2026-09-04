@@ -95,6 +95,15 @@ oder mit Website-Cookies umgangen werden. Keine Garantie „nie wieder einloggen
 ## Kosten, Wiederholungen, Laufzeiten
 
 Ein aktiver Generierungsauftrag serverweit, zusätzlich dateibasierte Sperre.
+Die authentifizierte Oracle-Transportgrenze beträgt 240 Anfragen/Stunde statt
+vormals zwölf. Auch Abholung und Wiederaufnahme bereits bezahlter Jobs zählen als
+Transportanfragen; diese Grenze ist kein Generierungsbudget. Guthaben, Preis,
+Einzelauftragssperre und Journal bleiben maßgeblich. HTTP 429 wird als
+`HIGGSFIELD_RATE_LIMIT` vertagt, nicht als Anbieterausfall. Der serverseitige
+Minimalpatch steht in `patches/oracle-title-image-rate-20260904.patch`;
+bestehende Umfrage-/Push-Routen bleiben unberührt. Der API-Test prüft mit einem
+kostenlosen Provider-Dummy 240 erlaubte Abrufe, den 241. als 429 und fehlende
+Autorisierung als 403. Keine zusätzliche KI- oder Bildbestellung durch den Test.
 Private Reservierung **vor** dem Create; unbekannter Ausgang wird anhand eindeutig
 passenden Modell-/Prompt-/Zeitdaten aus der offiziellen Auftragsliste geklärt.
 Es wird nie blind erneut Create ausgeführt. Bekannte Jobs werden zunächst abgefragt.
