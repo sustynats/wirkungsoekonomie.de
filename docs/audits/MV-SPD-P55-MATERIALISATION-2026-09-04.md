@@ -1,6 +1,7 @@
 # MV SPD P55 — lossless corrected materialisation
 
 Fresh branch base: `840ea0ce58a573f491b17ee3dd5c9bc160811cc0`.
+Before merge, the candidate incorporated fresh current main `a587d7611b1e6770e4d15e40bc85813db102dbd6` and revalidated the exact source sets and shared readiness. The original handoff's creation-base provenance remains unchanged.
 Authority: [#240/5477877520](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477877520) together with the superseding finite binding/role repair [#240/5525358185](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5525358185).
 Controller: [#241/5540520103](https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5540520103).
 

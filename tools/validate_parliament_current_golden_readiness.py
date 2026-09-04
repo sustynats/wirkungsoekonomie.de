@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
-BASE_MAIN_COMMIT = "d8de40a2c740ab1c3d4b41d0ccb1a7fdf65d5d76"
+BASE_MAIN_COMMIT = "a587d7611b1e6770e4d15e40bc85813db102dbd6"
 
 HISTORICAL_GOLDEN = "ops/releases/parliament-github-golden-state-2026-08-23.json"
 ST_RELEASE = "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
