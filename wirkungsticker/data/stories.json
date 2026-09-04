@@ -1,7 +1,219 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T11:51:26.099Z",
+  "updated_at": "2026-09-04T12:06:38.422Z",
   "stories": [
+    {
+      "story_id": "wt-00fccb632042b492",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3973a4a4aa29babd-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3616b61d5afc1059-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-a0b9303f31c7c6e3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
+      "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+      "source_summary": "Nach Informationen der Deutschen Welle fahnden Ermittler nach einem Mann im Zusammenhang mit Sabotage an Umspannwerken in Brandenburg und Nordrhein-Westfalen. Die Polizei hält zwei handschriftliche Bekennerschreiben wegen ihres detaillierten Täterwissens für authentisch; ein zweites Blatt soll die technische Durchführung beschreiben.\n\nDie Schreiben sollen einen vollständigen Namen tragen. Als mutmaßlicher Verfasser wird ein 1977 geborener deutscher Staatsangehöriger aus Gevelsberg genannt, dessen Wohnort die Polizei bereits durchsuchte, ihn aber nicht antraf. Außerdem wird ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen beschrieben, der nach Polizeiangaben wie eine Abschussvorrichtung wirken soll.",
+      "summary": "Die Polizei hält zwei Bekennerschreiben wegen detaillierten Täterwissens für authentisch. Gesucht wird ein 1977 geborener Mann aus Gevelsberg.",
+      "detail_summary": "Gesichert ist zunächst, dass Ermittler nach Angaben der Deutschen Welle die beiden Bekennerschreiben wegen ihres detaillierten Täterwissens für echt halten. Die Quelle nennt außerdem einen 1977 geborenen deutschen Staatsangehörigen aus Gevelsberg als mutmaßlichen Verfasser und beschreibt eine bereits erfolgte, erfolglose Durchsuchung seines Wohnorts. Zusätzlich wird ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen erwähnt, den die Polizei als mögliche Abschussvorrichtung einordnet. Das ist materiell relevant, weil es um kritische Infrastruktur, laufende Fahndung und mögliche weitere Sabotage geht. Ein möglicher Wirkpfad reicht von erhöhtem Schutzaufwand bis zu weiteren Sicherheitsmaßnahmen an Stromanlagen. Offen bleibt aber, wie belastbar die Zuschreibung des Täters am Ende ist und ob die beschriebenen Taten in den Ermittlungen zusammengeführt werden.",
+      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, eine bundesweite Fahndung und mögliche weitere Sicherheitsmaßnahmen mit über den Einzelfall hinausgehender Relevanz.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind mögliche Versorgungsstörungen, Polizeieinsatz und Schutz kritischer Infrastruktur; der Kern ist aber noch Ermittlungsstand."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; höchstens indirekt über Debatten zu fossiler Stromerzeugung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle erwähnt einen möglichen Bezug zu Wahlen und staatliche Schutzmaßnahmen für kritische Infrastruktur."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Geburtsjahr des Verdächtigen",
+            "value": "1977",
+            "unit": "Jahr",
+            "context": "Von der Quelle genannter Geburtsjahrgang des Gesuchten"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kommunen",
+          "europa"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T11:40:00.000Z",
+      "last_updated": "2026-09-04T12:08:21.972Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e4876e29370bc0f63efa",
+      "source_published_at": "2026-09-04T11:40:00.000Z",
+      "published_at": "2026-09-04T12:08:21.972Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dw-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei die Authentizität der Schreiben weiterhin bestätigt und ob der Gesuchte gefasst wird.",
+          "source_id": "dw-news",
+          "expected_by": null,
+          "measurable_indicator": "Amtliche Bestätigung oder Vollzug der Fahndung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d507a2000580b029",
+          "announced_at": "2026-09-04T11:40:00.000Z",
+          "follow_up_date": "2026-09-11T12:08:21.972Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutsche Welle",
+          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:40:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a39369745f4e5cef",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a39369745f4e5cef-ec8fd5f8ecda593f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a39369745f4e5cef-ddd6562e6de3c387-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a39369745f4e5cef-039dd8bfaf567a1d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "110-millionen-euro-fur-schloss-friedenstein-staatsminister-weimer-und-ministerprasident--4e5cef",
+      "title": "110 Millionen Euro für Schloss Friedenstein - Staatsminister Weimer und Ministerpräsident Voigt überreichen symbolischen Scheck",
+      "source_summary": "Die Bundesregierung meldet einen Besuch von Kulturstaatsminister Wolfram Weimer in Eisenach und Gotha im Rahmen einer Kulturbautenreise. Im Mittelpunkt steht Schloss Friedenstein; am Nachmittag sollen Weimer und Ministerpräsident Mario Voigt einen symbolischen Scheck über 110 Millionen Euro überreichen. Der Betrag steht laut Mitteilung für das Gesamtvolumen eines Sanierungsprogramms, das Bund und Land zu gleichen Teilen finanzieren.\n\nDie Mitteilung nennt außerdem den aktuellen Zuwendungsbescheid für das zweite Teilprojekt. Danach kann die Stiftung Thüringer Schlösser und Gärten die Sanierung des Westflügels für die museale Nutzung durch die Friedenstein Stiftung Gotha angehen. Für 2027 sind Arbeiten am Ostturm mit Teilen des Ostflügels vorgesehen. Als Ziele werden die Sicherung der historischen Bausubstanz, bessere Arbeitsbedingungen für Museum und Forschungsbibliothek sowie ein weiterentwickelter Besucherzugang genannt.",
+      "summary": "Bund und Land stellen laut Bundesregierung 110 Millionen Euro für die Sanierung von Schloss Friedenstein in Aussicht. Mit dem Bescheid kann nun das nächste Teilprojekt beginnen, weitere Arbeiten sollen ab 2027 folgen.",
+      "detail_summary": "Gesichert ist vor allem die Förderzusage über 110 Millionen Euro für die Sanierung von Schloss Friedenstein; die Bundesregierung beschreibt sie als gemeinsames Programm von Bund und Land. Das ist eine materielle Entscheidung, weil sie Investitionen, Bauabläufe und die Nutzung eines kulturhistorisch bedeutenden Standorts über mehrere Jahre bindet. Der unmittelbare Wirkpfad führt über die Finanzierung des Westflügels und später weiterer Bauabschnitte zu baulichen Eingriffen, veränderten Betriebsbedingungen und einem späteren Besucherzugang. Mögliche Folgen sind eine gesicherte Substanz, bessere Bedingungen für Museum und Forschungsbibliothek sowie längere Bauphasen mit vorübergehenden Einschränkungen. Die Quelle nennt diese Ziele selbst, belegt aber naturgemäß noch keine eingetretenen Wirkungen. Offen bleibt, wie stark sich Nutzung, Besucherströme, Kosten und Termine im Vollzug tatsächlich verändern.",
+      "why_relevant": "Die Meldung beschreibt eine konkrete öffentliche Förderentscheidung in dreistelliger Millionenhöhe für ein kulturpolitisch relevantes Bau- und Nutzungsvorhaben. Sie verändert absehbar Finanzflüsse, Bauprioritäten und die künftige Nutzung eines zentralen Kulturorts.",
+      "topic": [
+        "Arbeit",
+        "Europa",
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Nutzerinnen, Beschäftigte und die kulturelle Infrastruktur vor Ort; die Quelle nennt bessere Arbeitsbedingungen und einen weiterentwickelten Zugang."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umwelt- oder Klimabezug wird in der Quelle nicht beschrieben; der Bezug liegt vor allem in der baulichen Bestandssicherung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Entscheidung betrifft öffentliche Kulturfinanzierung und die Zugänglichkeit eines bedeutenden Erbes; demokratische Korrekturfähigkeit liegt im Haushalts- und Fördervollzug."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Fördervolumen",
+            "value": "110",
+            "unit": "Millionen Euro",
+            "context": "Gesamtvolumen des Sanierungsprogramms"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "timeline": [
+          {
+            "date": "2027",
+            "label": "Beginn der Arbeiten am Ostturm"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T12:00:00.000Z",
+      "last_updated": "2026-09-04T12:07:51.198Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-75496d991aeece90e2e0",
+      "source_published_at": "2026-09-04T12:00:00.000Z",
+      "published_at": "2026-09-04T12:07:51.198Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Pressemitteilungen der Bundesregierung",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/110-millionen-euro-fuer-schloss-friedenstein-staatsminister-weimer-und-ministerpraesident-voigt-ueberreichen-symbolischen-scheck-2451560",
+          "source_type": "official_rss",
+          "published_at": "2026-09-04T12:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-d80fd849c477e2ad",
       "title_image": {
