@@ -1,7 +1,458 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T06:04:43.286Z",
+  "updated_at": "2026-09-04T06:06:19.579Z",
   "stories": [
+    {
+      "story_id": "wt-4fb94d2cebfca746",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+      "source_summary": "Mehrere Rundfunk- und Nachrichtenmeldungen berichten über einen erneuten verdächtigen Fund an einem Umspannwerk in Dormagen. Laut den Berichten wurden dort Abschussvorrichtungen entdeckt; zunächst war von einem verdächtigen Gegenstand die Rede, inzwischen spricht die Polizei von einem Sabotagedelikt beziehungsweise Sabotageversuch.\n\nEin Bericht nennt außerdem ein Bekennerschreiben, das in der Nacht aufgetaucht sei; die Polizei prüfe dessen Echtheit und fahnde nach einem Mann. In einer Meldung heißt es zudem, offenbar habe ein Kurzschluss hergestellt werden sollen. Ein möglicher Zusammenhang mit früheren Vorfällen wird in den Quellen als offen beschrieben.",
+      "summary": "In Dormagen wurden an einem Umspannwerk erneut Abschussvorrichtungen entdeckt. Mehrere Berichte sagen, die Polizei gehe inzwischen von Sabotage aus und prüfe ein Bekennerschreiben.",
+      "detail_summary": "Gesichert ist nach den vorliegenden Berichten vor allem der erneute Fund von Abschussvorrichtungen an einem Umspannwerk in Dormagen. Mehrere Redaktionen melden übereinstimmend, dass die Polizei den Vorgang inzwischen als Sabotagedelikt beziehungsweise Sabotageversuch einordnet. Ein Bericht nennt zudem ein Bekennerschreiben, dessen Echtheit die Polizei nach wie vor prüfe, und eine Fahndung nach einem Mann. Die Meldung ist für kritische Infrastruktur relevant, weil sie auf einen möglichen Angriff auf die Stromversorgung zielt. Daraus ergibt sich ein Wirkpfad über mögliche Störungen, Sicherheitsmaßnahmen und zusätzlichen Ermittlungsaufwand. Ob tatsächlich ein Schaden oder ein Kurzschluss hätte ausgelöst werden können, bleibt nach den Quellen offen; ebenso ist die Zuschreibung des Schreibens nicht gesichert.",
+      "why_relevant": "Der Vorgang betrifft kritische Infrastruktur und damit mögliche Folgen für Versorgungssicherheit, Sicherheitslage und Ermittlungsaufwand. Die neue Einordnung als Sabotage ist gegenüber der frühen Verdachtslage eine materielle Statusänderung.",
+      "topic": [
+        "Politik",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Störungen der Stromversorgung und erhöhte Sicherheitsrisiken betreffen Haushalte und Beschäftigte, auch wenn der konkrete Schaden noch offen ist."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in den Quellen nicht belegt; allenfalls indirekt über kritische Energieinfrastruktur."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Sabotage an Infrastruktur berührt öffentliche Sicherheit und staatliche Schutzfähigkeit, aber ohne belegte politische Steuerungsentscheidung."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T21:14:14.000Z",
+      "last_updated": "2026-09-04T06:06:52.464Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-73b1c53517b0e2f5118c",
+      "source_published_at": "2026-09-04T01:45:01.000Z",
+      "published_at": "2026-09-04T01:53:14.028Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "ndr-info"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 4,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ermittler den Fund als bestätigten Sabotageakt einstufen oder nur als Verdacht behandeln.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Einordnung der Polizei oder Staatsanwaltschaft",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-71fe7d0ca37bce7e",
+          "announced_at": "2026-09-04T06:00:49.000Z",
+          "follow_up_date": "2026-09-11T06:06:52.464Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:28:26.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "NDR",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:37:43.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:00:49.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e976be74e6481ea2",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
+      "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
+      "source_summary": "Mehrere Berichte melden, der VW-Aufsichtsrat habe in Wolfsburg einem Spar- und Sanierungsplan zugestimmt. Genannt werden vor allem ein Abbau von rund 50.000 Arbeitsplätzen und tiefgreifende Einschnitte im Konzern.\n\nZugleich bleibt nach den Berichten die Zukunft von vier Werken offen. Mehrere Texte verweisen darauf, dass für diese Standorte aktuell keine wettbewerbsfähige Folgebelegung gesichert sei; mögliche alternative Nutzungen werden genannt, aber nicht entschieden. Die Berichte beziehen sich auf Mitteilungen des Unternehmens und auf Einordnungen aus den jeweiligen Redaktionen.",
+      "summary": "VW hat laut mehreren Berichten einen Spar- und Sanierungsplan gebilligt. Im Kern geht es um rund 50.000 Stellen und offene Perspektiven für vier Werke.",
+      "detail_summary": "Gesichert ist nach den vorliegenden Quellen vor allem die Billigung eines Spar- und Sanierungsplans durch den VW-Aufsichtsrat in Wolfsburg. Mehrere Berichte nennen zusätzlich den Abbau von rund 50.000 Arbeitsplätzen und offene Perspektiven für vier Werke. Für die betroffenen Standorte wird beschrieben, dass derzeit keine wettbewerbsfähige Folgebelegung gesichert sei. Die Meldung ist damit für Beschäftigte, regionale Zulieferer und betroffene Standorte materiell relevant. Der Wirkpfad liegt in veränderten Kosten-, Produktions- und Standortentscheidungen, die in Beschäftigung, Wertschöpfung und regionale Infrastruktur ausstrahlen können. Offen bleibt, wie viele Stellen tatsächlich wegfallen und welche Nutzung die Werke am Ende bekommen; die Quellen belegen die Entscheidung, nicht die spätere Umsetzung.",
+      "why_relevant": "Die Meldung beschreibt eine konzernweite Personal- und Standortentscheidung mit potenziell erheblichen Folgen für Beschäftigung, Produktionsstrukturen und regionale Wertschöpfung.",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Arbeit",
+        "Wirtschaft",
+        "Gesellschaft"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Quellen berichten über einen geplanten Abbau von rund 50.000 Stellen und offene Werksperspektiven; betroffen sind Beschäftigte und regionale Standorte."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekt kann eine Neuordnung von Produktion und Standorten Energie-, Transport- und Flächenwirkungen haben; konkrete Umweltfolgen sind aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Entscheidung betrifft Mitbestimmung, Standortpolitik und mögliche öffentliche Folgewirkungen in mehreren Regionen, ohne dass ein demokratischer Eingriff selbst belegt wäre."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Arbeitsplätze",
+            "value": "50.000",
+            "unit": "Jobs",
+            "context": "Genannte Größenordnung des Stellenabbaus"
+          },
+          {
+            "label": "Werke",
+            "value": "vier",
+            "unit": "Werke",
+            "context": "Standorte mit offener Zukunft"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "kommunen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T19:08:00.000Z",
+      "last_updated": "2026-09-04T05:43:38.218Z",
+      "version": 3,
+      "news_status": "developing",
+      "event_id": "event-06fbdda38e40a97f5340",
+      "source_published_at": "2026-09-03T18:53:18.000Z",
+      "published_at": "2026-09-04T01:52:37.203Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "mdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 8,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie viele Stellen werden tatsächlich sozialverträglich oder betriebsbedingt abgebaut?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Personalzahlen und Personalmaßnahmen je Standort",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-aaafd43ff7f2b06d",
+          "announced_at": "2026-09-04T01:33:27.000Z",
+          "follow_up_date": "2026-09-11T01:52:37.203Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wann die in den Berichten genannten vier Werke eine alternative Folgebelegung erhalten.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Benannte Standortentscheidungen oder neue Nutzungen für die vier Werke",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-61fad9a0b5152cd5",
+          "announced_at": "2026-09-03T23:24:43.000Z",
+          "follow_up_date": "2026-09-11T03:52:03.346Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "VW konkretisiert die Folgebelegung der vier betroffenen Werke.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Benennung neuer Nutzungen, Verlagerungen oder Schließungspläne für die Standorte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-000d17580dae3bc3",
+          "announced_at": "2026-09-04T04:27:36.000Z",
+          "follow_up_date": "2026-09-11T05:43:38.218Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:08:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:58:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:23:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:55:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T18:53:18.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:34:25.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T04:27:36.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:31:08.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-aabe8c0430bf8f84",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-a36a8587cad3a5b6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-a36a8587cad3a5b6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-a36a8587cad3a5b6-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
+      "title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+      "source_summary": "Rescue teams have pulled two hydropower workers free from a tunnel blocked by mud and debris after the late-August floods in Nepal. The report says officials believe hundreds of workers remain trapped in tunnels linked to hydropower projects in the remote Himalayan region.\n\nA second report puts the scale of the emergency at about 900 missing workers across 12 hydropower projects, with roughly 500 believed trapped in tunnels according to local authorities. Beide Berichte beschreiben die Lage als laufende Rettungs- und Suchoperation nach schweren Überschwemmungen.",
+      "summary": "Zwei Wasserkraftarbeiter wurden in Nepal aus einem verschlammten Tunnel gerettet. Die Lage bleibt offen, weil nach Angaben in den Quellen weiter viele Arbeiter vermisst oder eingeschlossen sein sollen.",
+      "detail_summary": "Gesichert ist nach den vorliegenden Berichten die Rettung von zwei Wasserkraftarbeitern aus einem durch Schlamm und Geröll blockierten Tunnel in Nepal. Zusätzlich nennen die Quellen eine noch unklare Großlage: Hundertende Arbeiter sollen in Tunneln von Wasserkraftprojekten feststecken, eine andere Quelle spricht von etwa 900 Vermissten in 12 Projekten und rund 500 mutmaßlich Eingeschlossenen. Für die Einordnung ist das materiell, weil es um akute Lebensgefahr für Beschäftigte, um große Rettungskapazitäten und um die Störanfälligkeit von Infrastruktur in einer abgelegenen Region geht. Ein möglicher Wirkpfad betrifft kurzfristig Rettung, Versorgungslogistik und den weiteren Betrieb der Anlagen. Offen bleibt, ob die Zahlen voneinander unabhängig bestätigt sind und wie viele Betroffene tatsächlich noch eingeschlossen sind; die Folgewirkungen für Betrieb, Arbeitsschutz und regionale Versorgung lassen sich aus dem Material noch nicht belastbar beziffern.",
+      "why_relevant": "Die Meldung beschreibt eine akute Rettungslage mit möglicher Gefährdung vieler Beschäftigter und Störungen bei mehreren Wasserkraftprojekten.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mehrere Beschäftigte sind direkt betroffen; die Berichte sprechen von anhaltender Lebensgefahr und laufender Rettung."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein Umweltbezug ist nur indirekt über Überschwemmungen und Infrastrukturstörungen erkennbar, ohne belegte ökologische Folge."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Kein direkter demokratischer Entscheidungs- oder Korrekturprozess ist in den Quellen angelegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Vermisste Arbeiter",
+            "value": "900",
+            "unit": "Personen",
+            "context": "Angabe zu vermissten Arbeitern in Nepal"
+          },
+          {
+            "label": "Wasserkraftprojekte",
+            "value": "12",
+            "unit": "Projekte",
+            "context": "Zahl der genannten betroffenen Projekte"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "unternehmen"
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "gemischt",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T05:10:44.000Z",
+      "last_updated": "2026-09-04T05:43:04.119Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-1b0c4e9053465796c788",
+      "source_published_at": "2026-09-04T05:10:44.000Z",
+      "published_at": "2026-09-04T05:43:04.119Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ],
+          [
+            "euronews-en"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260904-two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:10:44.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Euronews",
+          "url": "http://www.euronews.com/2026/09/04/two-trapped-workers-rescued-from-hydropower-tunnel-nine-days-after-nepal-floods",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:25:08.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e442d6ad81290406",
       "title_image": {
@@ -1158,205 +1609,6 @@
       ]
     },
     {
-      "story_id": "wt-e976be74e6481ea2",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
-      "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
-      "source_summary": "Mehrere Berichte melden, der VW-Aufsichtsrat habe einem Spar- und Sanierungsplan zugestimmt. In den Meldungen ist von rund 50.000 Stellen die Rede, die in den kommenden Jahren abgebaut werden sollen. Außerdem bleibt bei vier Werken die Zukunft offen oder es wird eine mögliche Folgebelegung genannt.\n\nDie Berichte nennen die Entscheidung als einstimmig und ordnen sie als wichtige Einigung in Wolfsburg ein. Teilweise heißt es, eine Eskalation sei verhindert worden. Details zu den konkreten Folgen für einzelne Standorte und zur weiteren Umsetzung bleiben in den gelieferten Ausschnitten offen.",
-      "summary": "Der VW-Aufsichtsrat hat laut mehreren Berichten einem Spar- und Sanierungsplan zugestimmt. Im Raum steht ein Abbau von rund 50.000 Stellen und eine offene Perspektive für vier Werke.",
-      "detail_summary": "Gesichert ist aus den vorliegenden Berichten vor allem die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan. Mehrere Redaktionen nennen dabei rund 50.000 abzubauende Stellen und verweisen auf vier Werke, deren Zukunft oder Folgebelegung offen bleibt. Für die wirtschaftliche Wirkung ist das relevant, weil damit ein großer Eingriff in Beschäftigung, Standortstruktur und interne Investitionsverteilung beschrieben wird. Der Wirkpfad führt über Stellenabbau, mögliche Standortumbauten und veränderte Produktions- und Kapazitätsentscheidungen. Mögliche Folgen sind Belastungen für Beschäftigte und betroffene Regionen sowie neue industrielle Nutzungen einzelner Werke. Belastbar bleibt aber nur der berichtete Beschluss; konkrete Umsetzung, Zeitplan und tatsächliche Beschäftigungseffekte sind in den Ausschnitten noch nicht belegt.",
-      "why_relevant": "Die Meldung beschreibt eine konzernweite Entscheidung mit möglichen Folgen für Beschäftigung, Standorte und industrielle Struktur in Deutschland.",
-      "topic": [
-        "Geopolitik",
-        "Politik",
-        "Arbeit",
-        "Wirtschaft",
-        "Gesellschaft"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind laut Bericht rund 50.000 Stellen; das kann Beschäftigte, Familien und regionale Arbeitsmärkte spürbar verändern."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Berichte erwähnen mögliche Folgebelegungen und Werkumnutzungen, aber keine gesicherten Umweltwirkungen oder Emissionsdaten."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Entscheidung betrifft einen industriellen Schlüsselakteur und kann politische Anschlussfragen zu Standorten, Arbeit und Industriepolitik auslösen."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "abzubauende Stellen",
-            "value": "50.000",
-            "unit": "Arbeitsplätze",
-            "context": "von mehreren Berichten genannte Größenordnung"
-          },
-          {
-            "label": "betroffene Werke",
-            "value": "vier",
-            "unit": "Werke",
-            "context": "Zukunft oder Folgebelegung bleibt offen"
-          }
-        ],
-        "affected_groups": [
-          "beschaeftigte",
-          "unternehmen",
-          "kommunen",
-          "staat"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-03T19:08:00.000Z",
-      "last_updated": "2026-09-04T03:52:03.346Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-06fbdda38e40a97f5340",
-      "source_published_at": "2026-09-03T18:53:18.000Z",
-      "published_at": "2026-09-04T01:52:37.203Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "manager-magazin-news"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ],
-          [
-            "tagesspiegel-home"
-          ],
-          [
-            "mdr-nachrichten"
-          ],
-          [
-            "swr-aktuell"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 8,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Wie viele Stellen werden tatsächlich sozialverträglich oder betriebsbedingt abgebaut?",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Personalzahlen und Personalmaßnahmen je Standort",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-aaafd43ff7f2b06d",
-          "announced_at": "2026-09-04T01:33:27.000Z",
-          "follow_up_date": "2026-09-11T01:52:37.203Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob und wann die in den Berichten genannten vier Werke eine alternative Folgebelegung erhalten.",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Benannte Standortentscheidungen oder neue Nutzungen für die vier Werke",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-61fad9a0b5152cd5",
-          "announced_at": "2026-09-03T23:24:43.000Z",
-          "follow_up_date": "2026-09-11T03:52:03.346Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "manager magazin",
-          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:08:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:58:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:24:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T20:55:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T18:53:18.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T20:34:25.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T23:24:43.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T03:44:12.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-c87cfdddd07432e2",
       "title_image": {
         "mode": "impact_card",
@@ -2491,92 +2743,6 @@
           "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T01:26:48.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4fb94d2cebfca746",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-      "source_summary": "Der WDR meldet unter Berufung auf Polizeiangaben und laufende Ermittlungen einen weiteren möglichen Sabotagevorfall an einem Umspannwerk in Dormagen. In Dormagen-Gohr hätten Spaziergänger am frühen Abend einen verdächtigen Gegenstand entdeckt; zunächst sei von „sensiblen Gegenständen“ die Rede gewesen. Laut WDR ist inzwischen klar, dass auch hier Abschussvorrichtungen aufgebaut worden seien, um möglicherweise das Stromnetz anzugreifen. Die Polizei sagt zugleich, es sei bislang zu keiner Beschädigung gekommen, und die Eignung des Gegenstands sei noch offen. \n\nDer Beitrag nennt außerdem ein Bekennerschreiben, das laut Polizei in der Nacht auftauchte. Der Verfasser wolle gegen die fossile Energieindustrie vorgehen; die Echtheit werde geprüft. Zudem werde nach einem Mann aus Gevelsberg gefahndet, der das Schreiben verschickt haben soll und der der Polizei namentlich bekannt sei. Der Bericht verweist auf weitere mögliche Tatorte in Weisweiler und im Raum Dormagen sowie auf frühere Vorfälle in Bergheim und im Süden Brandenburgs.",
-      "summary": "In Dormagen ist an einem Umspannwerk erneut ein verdächtiger Fund gemeldet worden. Die Polizei geht inzwischen von Sabotage aus und prüft ein Bekennerschreiben.",
-      "detail_summary": "Am bestbelegten Kern steht, dass an einem Umspannwerk in Dormagen-Gohr erneut ein verdächtiger Gegenstand beziehungsweise eine Abschussvorrichtung entdeckt wurde. Der WDR berichtet zudem, die Polizei gehe inzwischen von Sabotage aus; ein beabsichtigter Kurzschluss sei möglich, eine Beschädigung sei bislang aber nicht festgestellt. Für die Einordnung ist das relevant, weil kritische Strominfrastruktur betroffen ist und schon ein einzelner Angriff Schutzkonzepte, Ermittlungen und Sicherheitsmaßnahmen nachziehen kann. Der Wirkpfad liegt vor allem in zusätzlichem Absicherungsaufwand, möglicher Betriebsstörung und der Frage, ob Nachahmung oder weitere Tatorte folgen. Ob daraus tatsächlich Ausfälle oder weitergehende Schäden entstehen, bleibt nach den vorliegenden Quellen offen. Die Evidenzlage stützt hier vor allem einen laufenden Ermittlungsstand, nicht schon einen abgeschlossenen Schaden.",
-      "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und damit einen potenziell systemrelevanten Schutz- und Störfall. Schon der Verdacht auf gezielte Sabotage kann Sicherheitsaufwand, Ermittlungen und Vorsorge an mehreren Standorten auslösen.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind mögliche Versorgungsstörungen, Sicherheitsrisiken und Ermittlungsfolgen; konkrete Schäden sind aber noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; höchstens indirekt über Energieinfrastruktur und mögliche Störfolgen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Kritische Infrastruktur und der Umgang mit Sabotage berühren Sicherheitsstaat, öffentliche Information und die Korrekturfähigkeit von Schutzsystemen."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-03T21:14:14.000Z",
-      "last_updated": "2026-09-04T01:53:14.028Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-73b1c53517b0e2f5118c",
-      "source_published_at": "2026-09-04T01:35:54.000Z",
-      "published_at": "2026-09-04T01:53:14.028Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ],
-          [
-            "swr-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:35:54.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:45:01.000Z",
           "primary_source": false
         }
       ]
