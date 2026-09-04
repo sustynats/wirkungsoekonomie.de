@@ -1,7 +1,1097 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T06:36:41.866Z",
+  "updated_at": "2026-09-04T06:51:43.159Z",
   "stories": [
+    {
+      "story_id": "wt-293fa4edfc2b5a5d",
+      "slug": "joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-interview-m-2b5a5d",
+      "title": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde",
+      "first_seen": "2026-09-02T08:00:00.000Z",
+      "last_updated": "2026-09-04T06:52:58.163Z",
+      "published_at": "2026-09-03T07:58:18.398Z",
+      "updated_at": "2026-09-04T06:52:58.163Z",
+      "topic": [
+        "Energie",
+        "Europa",
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesbank-allgemein",
+          "publisher": "Deutsche Bundesbank",
+          "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+          "title": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde",
+          "summary": "Öl- und Gaspreise schwanken weiterhin stark. Die Finanzmärkte sind sehr volatil. Es gibt viel Unsicherheit. […] Aber der Ansatz, Entscheidungen von Sitzung zu Sitzung zu treffen, hat sich in der Vergangenheit bewährt und wird dies sicherlich auch in Zukunft tun, sagt Joachim Nagel im Interview mit der französischen Zeitung Le Monde. Im Interview spricht Nagel über die aktuelle wirtschaftliche Entwicklung in Deutschland, die Möglichkeit von Zinserhöhungen bei der nächsten EZB-Ratssitzung sowie über die Notwendigkeit gemeinsamer europäischer Lösungen.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T08:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 84,
+          "source_topic": "Finanzen",
+          "content_hash": "94823b6f34ea495e335146c43e119906b6931a453d75b9d3308372c55cccd96c",
+          "source_item_id": "62ece7af611edcf19c1afbe06e31c4c35c4c5f55fcacbbc2d9903cf81559191a",
+          "publisher_id": "bundesbank-allgemein",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-02T08:00:00.000Z",
+          "ingested_at": "2026-09-04T06:51:43.159Z",
+          "provenance": {
+            "origin": "publisher:bundesbank-allgemein",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-293fa4edfc2b5a5d-v2-claim-1",
+          "story_id": "wt-293fa4edfc2b5a5d",
+          "claim": "Nagel sagte im Interview, die EZB könne die Zinsen bei der nächsten Ratssitzung im September anheben.",
+          "status": "primary_source_claim",
+          "source_id": "bundesbank-allgemein",
+          "evidence": [
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "excerpt_hash": "25dc36549c65e0d3277b",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:52:58.163Z"
+        },
+        {
+          "claim_id": "wt-293fa4edfc2b5a5d-v2-claim-2",
+          "story_id": "wt-293fa4edfc2b5a5d",
+          "claim": "Er verwies darauf, dass die Inflation im Euroraum im Juli bei 2,9 Prozent und im August bei 3,3 Prozent lag und derzeit nicht nahe am mittelfristigen Zielwert sei.",
+          "status": "primary_source_claim",
+          "source_id": "bundesbank-allgemein",
+          "evidence": [
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "excerpt_hash": "9fee4a89ee8e3809eabf",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            },
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "excerpt_hash": "6afc062491624da8270d",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            },
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "excerpt_hash": "342d911a0f173956994c",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:52:58.163Z"
+        },
+        {
+          "claim_id": "wt-293fa4edfc2b5a5d-v2-claim-3",
+          "story_id": "wt-293fa4edfc2b5a5d",
+          "claim": "Nagel beschrieb Öl- und Gaspreise sowie Finanzmärkte als stark volatil und sprach von großer Unsicherheit, zugleich lobte er das Vorgehen, von Sitzung zu Sitzung zu entscheiden.",
+          "status": "primary_source_claim",
+          "source_id": "bundesbank-allgemein",
+          "evidence": [
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "excerpt_hash": "4b086678318bb1ccc288",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            },
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "excerpt_hash": "1a0ae9f6fad1a852ce62",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            },
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "excerpt_hash": "0e2a35e399f59178ff75",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:52:58.163Z"
+        }
+      ],
+      "event_id": "event-6e64c9ae321214a6b67a",
+      "event_first_seen_at": "2026-09-02T08:00:00.000Z",
+      "event_detected_at": "2026-09-02T08:00:00.000Z",
+      "verification_started_at": "2026-09-04T06:52:45.788Z",
+      "publish_ready_at": "2026-09-04T06:52:58.163Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesbank-allgemein"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die EZB die Zinsen auf der September-Sitzung tatsächlich anhebt.",
+          "source_id": "bundesbank-allgemein",
+          "expected_by": "2026-09-10",
+          "measurable_indicator": "Beschluss oder Nicht-Beschluss einer Zinserhöhung auf der Sitzung",
+          "expected_by_evidence_hash": "1104d951faba3eceb5133b296ca2d3a33b924b61fab84a83b25886fe1e57372c",
+          "followup_id": "followup-864efb2ce58c610e",
+          "announced_at": "2026-09-02T08:00:00.000Z",
+          "follow_up_date": "2026-09-10T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-fce6dc384616b493-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "ce292a649bfae81dfd6413132fe9e34c7d1fdc76a5eece0577b5280a6a94567f"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-fce6dc384616b493-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "5cb1102a1bc1248cbd219fdea31c4f8b5ef6bb727f315a5996be1ad9d02323d3"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-fce6dc384616b493-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "72627731d0e7a9f8bd5797fdb7f7d54b5359ac5e62906b54716039094c943a4a"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-5c08a7e2fa7867ae-source.png",
+          "sha256": "5c08a7e2fa7867ae1b1aa34b41f149403c76b70a2554cc774b6cf3b08fc5b9e1",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-3-concrete",
+          "generated_at": "2026-09-04T05:50:28.691Z"
+        },
+        "fingerprint": "fce6dc384616b493869de6c2c95c1b33c24a26b14487668cb81e6c60edb89fad",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-3-concrete",
+        "generated_at": "2026-09-04T06:53:10.201Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Die Bundesbank veröffentlicht ein Interview mit Joachim Nagel in Le Monde. Darin sagt Nagel, Öl- und Gaspreise schwankten weiterhin stark, die Finanzmärkte seien sehr volatil und es gebe viel Unsicherheit. Er betont den Ansatz, Entscheidungen Sitzung für Sitzung zu treffen, und hält ihn weiter für bewährt. Außerdem spricht er über die wirtschaftliche Entwicklung in Deutschland, die Möglichkeit von Zinserhöhungen bei der nächsten EZB-Ratssitzung sowie über gemeinsame europäische Lösungen.\n\nIm Interview verweist Nagel auf die Inflation im Euroraum mit 2,9 Prozent im Juli und 3,3 Prozent im August. Er sagt, die Inflation liege derzeit nicht nahe am mittelfristigen Zielwert von 2 Prozent, und die Märkte preisten mit mehr als 95 Prozent Wahrscheinlichkeit eine Zinserhöhung im September ein. Nagel äußert sich zudem zu Deutschlands Wachstum, zu hohen Langfristzinsen, zum Fiskalpaket und zu aus seiner Sicht zu geringen öffentlichen Investitionen in der Vergangenheit.",
+      "analysis": {
+        "story_id": "wt-293fa4edfc2b5a5d",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Nagel stellt im Interview eine mögliche Zinserhöhung der EZB im September in Aussicht. Zugleich beschreibt er Inflation, Energiepreise und Finanzmärkte als weiterhin angespannt.",
+        "detail_summary": "Gesichert ist vor allem der Interviewinhalt: Joachim Nagel verweist auf anhaltend volatile Öl- und Gaspreise, hohe Unsicherheit und eine aus seiner Sicht weiterhin nicht zielnahe Inflation im Euroraum. Er nennt für Juli 2,9 Prozent und für August 3,3 Prozent und sagt, die Märkte preisten eine Zinserhöhung im September mit mehr als 95 Prozent Wahrscheinlichkeit ein. Das ist relevant, weil solche Signale Erwartungen an Geldpolitik, Finanzierungskosten und Kapitalflüsse beeinflussen können. Ein möglicher Wirkpfad läuft über geänderte Marktpreise und damit über Kreditbedingungen für Unternehmen, Staat und Haushalte. Offen bleibt aber, wie der EZB-Rat tatsächlich entscheidet und ob daraus messbare reale Effekte folgen. Die Evidenz trägt hier eine belastbare Erstmeldung, aber keine abgeschlossene Wirkungseinordnung.",
+        "why_relevant": "Die Aussage berührt Geldpolitik, Inflationserwartungen und Marktpreise im Euroraum und kann damit Finanzierungskosten sowie Anreize für Investitionen beeinflussen.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind potenziell Kreditkonditionen, Preise und Erwartungen für viele Wirtschaftsakteure, aber noch ohne beschlossene Maßnahme."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es gibt keinen direkten Umweltbezug; allenfalls indirekte Effekte über Investitions- und Preisentwicklungen sind denkbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die geldpolitische Kommunikation betrifft eine zentrale öffentliche Institution und ihre Nachvollziehbarkeit für Märkte und Öffentlichkeit."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Interviewaussagen können Erwartungen an die EZB und damit kurzfristig Finanzierungs- und Renditeerwartungen beeinflussen.",
+        "impact_risks": [
+          "Eine signalgetriebene Marktreaktion könnte Kreditkosten erhöhen, ohne dass sich die reale Inflationslage sofort ändert."
+        ],
+        "mechanisms": [
+          "Kommunikation der Zentralbank beeinflusst Markterwartungen über künftige Zinsen."
+        ],
+        "first_order": [
+          "Höhere oder bestätigte Zinserwartungen können Anleihe- und Kreditmärkte bewegen."
+        ],
+        "second_order": [
+          "Veränderte Finanzierungskosten können Investitions- und Konsumentscheidungen dämpfen oder verschieben."
+        ],
+        "third_order": [
+          "Längere Phasen restriktiver Erwartungen können Wachstums- und Verteilungseffekte im Euroraum verstärken."
+        ],
+        "systemic_relevance": "Die Aussage betrifft die geldpolitische Steuerung in einem systemrelevanten Marktumfeld mit möglichen Kaskaden auf Finanzierung, Investition und Wachstum.",
+        "transformation_potential": "Gering bis mittel: Die Meldung ändert noch keine Regeln, kann aber Erwartungen und den Wirkpfad der Geldpolitik mitprägen.",
+        "resilience": "Kurzfristig kann eine klare Sitz-für-Sitz-Kommunikation Unsicherheit begrenzen; zugleich bleibt die Lage wegen volatiler Preise anfällig.",
+        "side_effects": [
+          "Märkte könnten eine Zinserhöhung vorwegnehmen und Finanzierungskonditionen anpassen."
+        ],
+        "uncertainties": [
+          "Der vollständige Interviewkontext ist nur auszugsweise belegt.",
+          "Die tatsächliche EZB-Entscheidung ist hier noch nicht belegt.",
+          "Konkrete reale Folgen sind aus dem Quellenmaterial nicht messbar."
+        ],
+        "evidence_level": "primärquelle mit begrenztem Ausschnitt; kein unabhängiger Gegenbeleg",
+        "attribution": "Die Aussagen sind Joachim Nagel im Interview zugeschrieben und stammen aus einer Bundesbank-Veröffentlichung.",
+        "watch_next": [
+          "EZB-Entscheidung auf der September-Sitzung",
+          "Reaktion von Zins- und Devisenmärkten",
+          "Neue Inflationsdaten im Euroraum"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 8, SDG 9, SDG 10, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "material_update",
+          "rationale": "Das Interview enthält eine materiell neue geldpolitische Einordnung mit möglichem Einfluss auf Erwartungen, Zinsen und Finanzierungskosten."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T07:58:18.398Z",
+          "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
+          "analysis": {
+            "story_id": "wt-293fa4edfc2b5a5d",
+            "summary": "Das Interview belegt Unsicherheit bei Energiepreisen, Märkten und Zinsen. Veröffentlichbar ist nur eine vorsichtige Einordnung des Signal- und Erwartungspfads.",
+            "detail_summary": "Fakt ist ein Bundesbank-Interview zu Inflation, Zinsen und Europas Zukunft. Belegt sind volatile Energiepreise, volatile Finanzmärkte und hohe Unsicherheit. Analytisch relevant ist der mögliche Einfluss auf Erwartungen, Kapitalflüsse und politische Koordination. Wirkungspotenzial liegt im geldpolitischen Signal, nicht in bereits eingetretener Wirkung. Eingetretene Wirkung und Zurechnung bleiben offen.",
+            "why_relevant": "Geldpolitische Signale können Haushalte, Unternehmen, Staaten und Märkte über Erwartungen, Finanzierungskosten und Investitionen betreffen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Mögliche Zins- und Inflationspfade betreffen Kaufkraft, Kreditkosten und Beschäftigung, aber konkrete Effekte sind nicht belegt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein indirekter Bezug besteht über Energiepreise und Investitionen, doch Umweltwirkungen sind im Material nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Gemeinsame europäische Lösungen und transparente geldpolitische Kommunikation können Vertrauen und Korrekturfähigkeit berühren."
+            },
+            "importance": "mittel",
+            "impact_potential": "Mögliches Potenzial über Erwartungsbildung, Finanzierungskosten, Investitionsentscheidungen und europäische Koordination.",
+            "impact_risks": [
+              "Fehlinterpretierte Signale können Unsicherheit, Verteilungsdruck oder Marktvolatilität verstärken."
+            ],
+            "mechanisms": [
+              "Veränderung finanzieller Anreize, Erwartungen und Kapitalflüsse durch geldpolitische Kommunikation."
+            ],
+            "first_order": [
+              "Marktteilnehmer und Öffentlichkeit erhalten ein Signal zu Unsicherheit und möglicher Zinspolitik."
+            ],
+            "second_order": [
+              "Erwartungen zu Krediten, Investitionen, Konsum und Preisentwicklung können sich verschieben."
+            ],
+            "third_order": [
+              "Bei dauerhafter Unsicherheit können Resilienz, Verteilung und europäische Handlungsfähigkeit betroffen sein."
+            ],
+            "systemic_relevance": "Finanzmärkte, Energiepreise und Zinsen sind systemisch gekoppelt und können Kaskaden auslösen.",
+            "transformation_potential": "Eher begrenzt; Transformation wäre nur bei stabiler europäischer Koordination und Investitionslenkung erkennbar.",
+            "resilience": "Sitzungsweise Entscheidungen können Anpassungsfähigkeit stützen, ersetzen aber keine belegte Wirkungskontrolle.",
+            "side_effects": [
+              "Straffere Erwartungen können Haushalte, Staaten oder Unternehmen mit hoher Finanzierungslast stärker treffen."
+            ],
+            "uncertainties": [
+              "Der vollständige Interviewkontext, konkrete EZB-Entscheidungen und reale Marktreaktionen sind nicht belegt."
+            ],
+            "evidence_level": "Primärquelle für das Interview; keine Wirkungsdaten, keine Evaluation und keine Kausalprüfung.",
+            "attribution": "Zurechenbar ist nur die Aussage im Interview, nicht eine spätere wirtschaftliche Zustandsveränderung.",
+            "watch_next": [
+              "Nächste EZB-Ratssitzung, Inflationsdaten, Energiepreise und Hinweise auf europäische Koordination beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, 10 und 16 nur als grober Risiko- und Resilienzrahmen."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            },
+            {
+              "title": "Wirkungsindikator",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsindikator"
+            },
+            {
+              "title": "Betroffenenperspektive",
+              "url": "https://wirkungsoekonomie.de/begriffe/betroffenenperspektive"
+            }
+          ],
+          "source_summary": "Bundesbankpräsident Joachim Nagel äußert sich in einem Interview mit Le Monde zur Inflation, zu möglichen Zinsschritten und zur europäischen Wirtschaft. Er verweist für Juli und August auf Inflationsraten im Euroraum von 2,9 beziehungsweise 3,3 Prozent und auf das mittelfristige Ziel von 2 Prozent. Für die EZB-Ratssitzung am 10. September hält er eine Zinserhöhung für wahrscheinlich, legt sich für spätere Sitzungen wegen schwankender Energiepreise, volatiler Finanzmärkte und großer Unsicherheit aber nicht fest.\n\nNagel begründet seine Haltung mit dem Risiko, dass länger erhöhte Inflation in Lohnverhandlungen einfließt. Zugleich beschreibt er den Euroraum als widerstandsfähig und nennt für Deutschland ein stärker als erwartetes zweites Quartal, robuste Ausfuhren und eine zufriedenstellende Auftragslage im verarbeitenden Gewerbe. Auf Basis der ersten beiden Quartale erwartet er für Deutschland im laufenden Jahr rund ein Prozent Wachstum."
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T06:52:58.163Z",
+          "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
+          "source_summary": "Die Bundesbank veröffentlicht ein Interview mit Joachim Nagel in Le Monde. Darin sagt Nagel, Öl- und Gaspreise schwankten weiterhin stark, die Finanzmärkte seien sehr volatil und es gebe viel Unsicherheit. Er betont den Ansatz, Entscheidungen Sitzung für Sitzung zu treffen, und hält ihn weiter für bewährt. Außerdem spricht er über die wirtschaftliche Entwicklung in Deutschland, die Möglichkeit von Zinserhöhungen bei der nächsten EZB-Ratssitzung sowie über gemeinsame europäische Lösungen.\n\nIm Interview verweist Nagel auf die Inflation im Euroraum mit 2,9 Prozent im Juli und 3,3 Prozent im August. Er sagt, die Inflation liege derzeit nicht nahe am mittelfristigen Zielwert von 2 Prozent, und die Märkte preisten mit mehr als 95 Prozent Wahrscheinlichkeit eine Zinserhöhung im September ein. Nagel äußert sich zudem zu Deutschlands Wachstum, zu hohen Langfristzinsen, zum Fiskalpaket und zu aus seiner Sicht zu geringen öffentlichen Investitionen in der Vergangenheit.",
+          "analysis": {
+            "story_id": "wt-293fa4edfc2b5a5d",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Nagel stellt im Interview eine mögliche Zinserhöhung der EZB im September in Aussicht. Zugleich beschreibt er Inflation, Energiepreise und Finanzmärkte als weiterhin angespannt.",
+            "detail_summary": "Gesichert ist vor allem der Interviewinhalt: Joachim Nagel verweist auf anhaltend volatile Öl- und Gaspreise, hohe Unsicherheit und eine aus seiner Sicht weiterhin nicht zielnahe Inflation im Euroraum. Er nennt für Juli 2,9 Prozent und für August 3,3 Prozent und sagt, die Märkte preisten eine Zinserhöhung im September mit mehr als 95 Prozent Wahrscheinlichkeit ein. Das ist relevant, weil solche Signale Erwartungen an Geldpolitik, Finanzierungskosten und Kapitalflüsse beeinflussen können. Ein möglicher Wirkpfad läuft über geänderte Marktpreise und damit über Kreditbedingungen für Unternehmen, Staat und Haushalte. Offen bleibt aber, wie der EZB-Rat tatsächlich entscheidet und ob daraus messbare reale Effekte folgen. Die Evidenz trägt hier eine belastbare Erstmeldung, aber keine abgeschlossene Wirkungseinordnung.",
+            "why_relevant": "Die Aussage berührt Geldpolitik, Inflationserwartungen und Marktpreise im Euroraum und kann damit Finanzierungskosten sowie Anreize für Investitionen beeinflussen.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind potenziell Kreditkonditionen, Preise und Erwartungen für viele Wirtschaftsakteure, aber noch ohne beschlossene Maßnahme."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Es gibt keinen direkten Umweltbezug; allenfalls indirekte Effekte über Investitions- und Preisentwicklungen sind denkbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die geldpolitische Kommunikation betrifft eine zentrale öffentliche Institution und ihre Nachvollziehbarkeit für Märkte und Öffentlichkeit."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Interviewaussagen können Erwartungen an die EZB und damit kurzfristig Finanzierungs- und Renditeerwartungen beeinflussen.",
+            "impact_risks": [
+              "Eine signalgetriebene Marktreaktion könnte Kreditkosten erhöhen, ohne dass sich die reale Inflationslage sofort ändert."
+            ],
+            "mechanisms": [
+              "Kommunikation der Zentralbank beeinflusst Markterwartungen über künftige Zinsen."
+            ],
+            "first_order": [
+              "Höhere oder bestätigte Zinserwartungen können Anleihe- und Kreditmärkte bewegen."
+            ],
+            "second_order": [
+              "Veränderte Finanzierungskosten können Investitions- und Konsumentscheidungen dämpfen oder verschieben."
+            ],
+            "third_order": [
+              "Längere Phasen restriktiver Erwartungen können Wachstums- und Verteilungseffekte im Euroraum verstärken."
+            ],
+            "systemic_relevance": "Die Aussage betrifft die geldpolitische Steuerung in einem systemrelevanten Marktumfeld mit möglichen Kaskaden auf Finanzierung, Investition und Wachstum.",
+            "transformation_potential": "Gering bis mittel: Die Meldung ändert noch keine Regeln, kann aber Erwartungen und den Wirkpfad der Geldpolitik mitprägen.",
+            "resilience": "Kurzfristig kann eine klare Sitz-für-Sitz-Kommunikation Unsicherheit begrenzen; zugleich bleibt die Lage wegen volatiler Preise anfällig.",
+            "side_effects": [
+              "Märkte könnten eine Zinserhöhung vorwegnehmen und Finanzierungskonditionen anpassen."
+            ],
+            "uncertainties": [
+              "Der vollständige Interviewkontext ist nur auszugsweise belegt.",
+              "Die tatsächliche EZB-Entscheidung ist hier noch nicht belegt.",
+              "Konkrete reale Folgen sind aus dem Quellenmaterial nicht messbar."
+            ],
+            "evidence_level": "primärquelle mit begrenztem Ausschnitt; kein unabhängiger Gegenbeleg",
+            "attribution": "Die Aussagen sind Joachim Nagel im Interview zugeschrieben und stammen aus einer Bundesbank-Veröffentlichung.",
+            "watch_next": [
+              "EZB-Entscheidung auf der September-Sitzung",
+              "Reaktion von Zins- und Devisenmärkten",
+              "Neue Inflationsdaten im Euroraum"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, SDG 9, SDG 10, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "material_update",
+              "rationale": "Das Interview enthält eine materiell neue geldpolitische Einordnung mit möglichem Einfluss auf Erwartungen, Zinsen und Finanzierungskosten."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-293fa4edfc2b5a5d-v2-claim-1",
+              "story_id": "wt-293fa4edfc2b5a5d",
+              "claim": "Nagel sagte im Interview, die EZB könne die Zinsen bei der nächsten Ratssitzung im September anheben.",
+              "status": "primary_source_claim",
+              "source_id": "bundesbank-allgemein",
+              "evidence": [
+                {
+                  "source_id": "bundesbank-allgemein",
+                  "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+                  "excerpt_hash": "25dc36549c65e0d3277b",
+                  "checked_at": "2026-09-04T06:52:58.163Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            },
+            {
+              "claim_id": "wt-293fa4edfc2b5a5d-v2-claim-2",
+              "story_id": "wt-293fa4edfc2b5a5d",
+              "claim": "Er verwies darauf, dass die Inflation im Euroraum im Juli bei 2,9 Prozent und im August bei 3,3 Prozent lag und derzeit nicht nahe am mittelfristigen Zielwert sei.",
+              "status": "primary_source_claim",
+              "source_id": "bundesbank-allgemein",
+              "evidence": [
+                {
+                  "source_id": "bundesbank-allgemein",
+                  "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+                  "excerpt_hash": "9fee4a89ee8e3809eabf",
+                  "checked_at": "2026-09-04T06:52:58.163Z"
+                },
+                {
+                  "source_id": "bundesbank-allgemein",
+                  "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+                  "excerpt_hash": "6afc062491624da8270d",
+                  "checked_at": "2026-09-04T06:52:58.163Z"
+                },
+                {
+                  "source_id": "bundesbank-allgemein",
+                  "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+                  "excerpt_hash": "342d911a0f173956994c",
+                  "checked_at": "2026-09-04T06:52:58.163Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            },
+            {
+              "claim_id": "wt-293fa4edfc2b5a5d-v2-claim-3",
+              "story_id": "wt-293fa4edfc2b5a5d",
+              "claim": "Nagel beschrieb Öl- und Gaspreise sowie Finanzmärkte als stark volatil und sprach von großer Unsicherheit, zugleich lobte er das Vorgehen, von Sitzung zu Sitzung zu entscheiden.",
+              "status": "primary_source_claim",
+              "source_id": "bundesbank-allgemein",
+              "evidence": [
+                {
+                  "source_id": "bundesbank-allgemein",
+                  "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+                  "excerpt_hash": "4b086678318bb1ccc288",
+                  "checked_at": "2026-09-04T06:52:58.163Z"
+                },
+                {
+                  "source_id": "bundesbank-allgemein",
+                  "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+                  "excerpt_hash": "1a0ae9f6fad1a852ce62",
+                  "checked_at": "2026-09-04T06:52:58.163Z"
+                },
+                {
+                  "source_id": "bundesbank-allgemein",
+                  "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+                  "excerpt_hash": "0e2a35e399f59178ff75",
+                  "checked_at": "2026-09-04T06:52:58.163Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:52:58.163Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesbank-allgemein",
+              "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
+              "content_hash": "94823b6f34ea495e335146c43e119906b6931a453d75b9d3308372c55cccd96c"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T07:58:18.398Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T06:52:58.163Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-29d840b10b9a38bd",
+      "slug": "anschlag-auf-stromleitungen-stromnetz-sabotage-polizei-wertet-bekennerschreiben-aus-9a38bd",
+      "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
+      "first_seen": "2026-09-04T06:44:56.000Z",
+      "last_updated": "2026-09-04T06:45:57.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--polizei-wertet-bekennerschreiben-aus-38206690.html",
+          "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
+          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde ermittelt die Polizei in mehreren Bundesländern aufgrund ähnlicher Vorfälle. Was hat es mit einem Bekennerschreiben auf sich?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:44:56.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6435d016b559c035afaba78b8581ab489e26328d6a38ca34c40ccce131f3901b",
+          "source_item_id": "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:44:56.000Z",
+          "ingested_at": "2026-09-04T06:51:43.159Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlag-auf-stromleitungen-16016453.html",
+          "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
+          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde ermittelt die Polizei in mehreren Bundesländern aufgrund ähnlicher Vorfälle. Was hat es mit einem Bekennerschreiben auf sich?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:45:57.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "5c33f5cb058a62e82d9b5c81b5e3cbcd60be4869ef542bb5b966f15e36954fab",
+          "source_item_id": "9f9c32b928dfa70a53f6f1ba126e3588ecbde38fe32a63dcd9a74fbf1154954e",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:45:57.000Z",
+          "ingested_at": "2026-09-04T06:51:43.159Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-29d840b10b9a38bd-claim-01",
+          "story_id": "wt-29d840b10b9a38bd",
+          "claim": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus: Nach dem Angriff auf das Stromnetz bei Jänschwalde ermittelt die Polizei in mehreren Bundesländern aufgrund ähnlicher Vorfälle. Was hat es mit einem Bekennerschreiben auf sich?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:51:43.159Z"
+        },
+        {
+          "claim_id": "wt-29d840b10b9a38bd-claim-02",
+          "story_id": "wt-29d840b10b9a38bd",
+          "claim": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus: Nach dem Angriff auf das Stromnetz bei Jänschwalde ermittelt die Polizei in mehreren Bundesländern aufgrund ähnlicher Vorfälle. Was hat es mit einem Bekennerschreiben auf sich?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:51:43.159Z"
+        }
+      ],
+      "content_hash": "be7b83cc919b865306ed743b7c8d958279acfbce705fa98e93dab977382a6048",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:51:43.159Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-38406cf0057ffe31a483",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.769316666666667,
+        "detection_delay_minutes": 5.769316666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:51:43.159Z",
+      "rejection": {
+        "at": "2026-09-04T06:51:43.159Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-5072789df611867b",
+      "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
+      "title": "Sachsen-Anhalt und die Tücken der Umfragen",
+      "first_seen": "2026-09-04T06:45:02.000Z",
+      "last_updated": "2026-09-04T06:45:02.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "title": "Sachsen-Anhalt und die Tücken der Umfragen",
+          "summary": "In Sachsen-Anhalt lagen die Umfragen 2021 ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Ein Blick auf die Faktoren, die am Sonntag no…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:45:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "03e8d6c604c55aab678d3e381528d8797e9e5dfbd666aec6c98fceae85b97074",
+          "source_item_id": "b20e8384202485f599911824807c6f1d09686974f856574883fb91e1a0504055",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:45:02.000Z",
+          "ingested_at": "2026-09-04T06:51:43.159Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5072789df611867b-claim-01",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Sachsen-Anhalt und die Tücken der Umfragen: In Sachsen-Anhalt lagen die Umfragen 2021 ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Ein Blick auf die Faktoren, die am Sonntag no…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:51:43.159Z"
+        }
+      ],
+      "content_hash": "ade3345642d625e4dae4f8a77ff5b8a7048b6f799549d8e6fe44a91101d4e8fc",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:51:43.159Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.685983333333334,
+        "detection_delay_minutes": 6.685983333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:51:43.159Z",
+      "rejection": {
+        "at": "2026-09-04T06:51:43.159Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-5c7a5a809e397d5c",
+      "slug": "moglicher-sabotageversuch-an-umspannwerk-in-nordrhein-westfalischem-dormagen-397d5c",
+      "title": "Möglicher Sabotageversuch an Umspannwerk in nordrhein-westfälischem Dormagen",
+      "first_seen": "2026-09-04T06:42:36.000Z",
+      "last_updated": "2026-09-04T06:42:36.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/moeglicher-sabotageversuch-an-umspannwerk-in-nordrhein-westfaelischem-dormagen-38206694.html",
+          "title": "Möglicher Sabotageversuch an Umspannwerk in nordrhein-westfälischem Dormagen",
+          "summary": "In Nordrhein-Westfalen hat es einen weiteren möglichen Anschlagsversuch auf ein Umspannwerk gegeben. Bei dem Vorfall in Dormagen sei offenbar versucht worden, „mutwillig einen Kurzschluss herbeizuführen“, sagte ein Sprecher der Kölner Polizei in der Nacht zum Freitag der Nachrichtenagentur AFP. Es könnte sich demnach „um mögliche Sabotage handeln“. Es gab laut Polizei auch ein mögliches Bekennerschreiben.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:42:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5715ef8b3f79439d49dd9ac70e88bc1a959491eb896d5881f4c687ced89e88ba",
+          "source_item_id": "0424aa24e4ee6f84b992795dbbb93536d12e05b3f6f516511ac3cb0f30968829",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:42:36.000Z",
+          "ingested_at": "2026-09-04T06:51:43.159Z",
+          "provenance": {
+            "origin": "agency:afp",
+            "basis": "agency_attribution_in_available_text",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5c7a5a809e397d5c-claim-01",
+          "story_id": "wt-5c7a5a809e397d5c",
+          "claim": "Möglicher Sabotageversuch an Umspannwerk in nordrhein-westfälischem Dormagen: In Nordrhein-Westfalen hat es einen weiteren möglichen Anschlagsversuch auf ein Umspannwerk gegeben. Bei dem Vorfall in Dormagen sei offenbar versucht worden, „mutwillig einen Kurzschluss herbeizuführen“, sagte ein Sprecher der Kölner Polizei in der Nacht zum Freitag der Nachrichtenagentur AFP. Es könnte sich demnach „um mögliche Sabotage handeln“. Es gab laut Polizei auch ein mögliches Bekennerschreiben.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "agency:afp",
+            "basis": "agency_attribution_in_available_text",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:51:43.159Z"
+        }
+      ],
+      "content_hash": "b3dd00abc7bfba0644ef5b3cd32cd8aaec71884b9132c5f56f73a3236552a05d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:51:43.159Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-c000a1153d04df7b4225",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.119316666666666,
+        "detection_delay_minutes": 9.119316666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:51:43.159Z",
+      "rejection": {
+        "at": "2026-09-04T06:51:43.159Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-08746d6a99d6ac59",
+      "slug": "arbeitszeit-an-schulen-sind-lehrer-jetzt-faul-oder-uberarbeitet-neue-studie-d6ac59",
+      "title": "Arbeitszeit an Schulen: Sind Lehrer jetzt faul oder überarbeitet? – neue Studie",
+      "first_seen": "2026-09-04T06:42:00.000Z",
+      "last_updated": "2026-09-04T06:42:00.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/karriere/arbeitszeit-an-schulen-sind-lehrer-jetzt-faul-oder-ueberarbeitet-neue-studie-a-c98cb266-2427-4e66-9a24-607826836e1b",
+          "title": "Arbeitszeit an Schulen: Sind Lehrer jetzt faul oder überarbeitet? – neue Studie",
+          "summary": "Arbeitszeit muss erfasst werden, auch die von Lehrkräften. Doch was die tatsächlich machen, weiß kaum eine Schulbehörde. Forscher, Gerichte und Bundesländer haben genauer hingeschaut – mit überraschendem Ergebnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:42:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "b29151eab4c999f7edf1b57edc73266bd36433a2cbfb5c5fb87cde51ee0505bc",
+          "source_item_id": "79347a1a159aa38325c6a942365b7066fa2a416877a08fba349e6e0607a7f83d",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:42:00.000Z",
+          "ingested_at": "2026-09-04T06:51:43.159Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-08746d6a99d6ac59-claim-01",
+          "story_id": "wt-08746d6a99d6ac59",
+          "claim": "Arbeitszeit an Schulen: Sind Lehrer jetzt faul oder überarbeitet? – neue Studie: Arbeitszeit muss erfasst werden, auch die von Lehrkräften. Doch was die tatsächlich machen, weiß kaum eine Schulbehörde. Forscher, Gerichte und Bundesländer haben genauer hingeschaut – mit überraschendem Ergebnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:51:43.159Z"
+        }
+      ],
+      "content_hash": "a2c3d0e11f35421aa1f6a6f9c56ae2f0d607e5617927a198cee19076db261047",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:51:43.159Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-913df32e4fc13e807a0c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.719316666666666,
+        "detection_delay_minutes": 9.719316666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:51:43.159Z",
+      "rejection": {
+        "at": "2026-09-04T06:51:43.159Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-63b6c057c20a2143",
       "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
@@ -1208,6 +2298,131 @@
         "prompt_version": "woek-editorial-3-concrete",
         "generated_at": "2026-09-04T06:38:31.328Z",
         "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-eeb7ac70dbeec4d5",
+      "slug": "leverkusen-geldautomat-gesprengt-tankstelle-kaputt-eec4d5",
+      "title": "Leverkusen: Geldautomat gesprengt, Tankstelle kaputt",
+      "first_seen": "2026-09-04T06:33:14.000Z",
+      "last_updated": "2026-09-04T06:33:14.000Z",
+      "topic": [
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/leverkusen/geldautomat-gesprengt-tankstelle-beschaedigt-100.html",
+          "title": "Leverkusen: Geldautomat gesprengt, Tankstelle kaputt",
+          "summary": "In Leverkusen-Schlebusch hat eine Explosion am Freitagmorgen die Anwohner aufgeschreckt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:33:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7ee7736e0647bdfbd8d7062eceffacc22861cf4e664e59bb602bb2cb8237c0b7",
+          "source_item_id": "d91b2cac4c12d15b5f211e53fd9412b7bcd8161fc6c783829215dc1c3921c496",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:33:14.000Z",
+          "ingested_at": "2026-09-04T06:51:43.159Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-eeb7ac70dbeec4d5-claim-01",
+          "story_id": "wt-eeb7ac70dbeec4d5",
+          "claim": "Leverkusen: Geldautomat gesprengt, Tankstelle kaputt: In Leverkusen-Schlebusch hat eine Explosion am Freitagmorgen die Anwohner aufgeschreckt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:51:43.159Z"
+        }
+      ],
+      "content_hash": "8358021cb4583b8458c96a62e41c2e255ee80d4045e1df7b94ad3c264286f3f5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:51:43.159Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-b4e9dc3b739b895b965b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.485983333333333,
+        "detection_delay_minutes": 18.485983333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:51:43.159Z",
+      "rejection": {
+        "at": "2026-09-04T06:51:43.159Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -37746,291 +38961,6 @@
       }
     },
     {
-      "story_id": "wt-293fa4edfc2b5a5d",
-      "slug": "joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-interview-m-2b5a5d",
-      "title": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde",
-      "first_seen": "2026-09-02T08:00:00.000Z",
-      "last_updated": "2026-09-03T07:58:18.398Z",
-      "published_at": "2026-09-03T07:58:18.398Z",
-      "updated_at": "2026-09-03T07:58:18.398Z",
-      "topic": [
-        "Energie",
-        "Europa",
-        "Finanzen",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesbank-allgemein",
-          "publisher": "Deutsche Bundesbank",
-          "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
-          "title": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde",
-          "summary": "Öl- und Gaspreise schwanken weiterhin stark. Die Finanzmärkte sind sehr volatil. Es gibt viel Unsicherheit. […] Aber der Ansatz, Entscheidungen von Sitzung zu Sitzung zu treffen, hat sich in der Vergangenheit bewährt und wird dies sicherlich auch in Zukunft tun, sagt Joachim Nagel im Interview mit der französischen Zeitung Le Monde. Im Interview spricht Nagel über die aktuelle wirtschaftliche Entwicklung in Deutschland, die Möglichkeit von Zinserhöhungen bei der nächsten EZB-Ratssitzung sowie über die Notwendigkeit gemeinsamer europäischer Lösungen.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T08:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 84,
-          "source_topic": "Finanzen",
-          "content_hash": "94823b6f34ea495e335146c43e119906b6931a453d75b9d3308372c55cccd96c"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-293fa4edfc2b5a5d-claim-01",
-          "story_id": "wt-293fa4edfc2b5a5d",
-          "claim": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde: Öl- und Gaspreise schwanken weiterhin stark. Die Finanzmärkte sind sehr volatil. Es gibt viel Unsicherheit. […] Aber der Ansatz, Entscheidungen von Sitzung zu Sitzung zu treffen, hat sich in der Vergangenheit bewährt und wird dies sicherlich auch in Zukunft tun, sagt Joachim Nagel im Interview mit der französischen Zeitung Le Monde. Im Interview spricht Nagel über die aktuelle wirtschaftliche Entwicklung in Deutschland, die Möglichkeit von Zinserhöhungen bei der nächsten EZB-Ratssitzung sowie über die Notwendigkeit gemeinsamer europäischer Lösungen.",
-          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
-          "source_id": "bundesbank-allgemein",
-          "source_function": "official_fact_source",
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T07:58:18.398Z"
-        }
-      ],
-      "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
-      "published": true,
-      "analysis_status": "veröffentlicht",
-      "current_version": 1,
-      "analysis": {
-        "story_id": "wt-293fa4edfc2b5a5d",
-        "summary": "Das Interview belegt Unsicherheit bei Energiepreisen, Märkten und Zinsen. Veröffentlichbar ist nur eine vorsichtige Einordnung des Signal- und Erwartungspfads.",
-        "detail_summary": "Fakt ist ein Bundesbank-Interview zu Inflation, Zinsen und Europas Zukunft. Belegt sind volatile Energiepreise, volatile Finanzmärkte und hohe Unsicherheit. Analytisch relevant ist der mögliche Einfluss auf Erwartungen, Kapitalflüsse und politische Koordination. Wirkungspotenzial liegt im geldpolitischen Signal, nicht in bereits eingetretener Wirkung. Eingetretene Wirkung und Zurechnung bleiben offen.",
-        "why_relevant": "Geldpolitische Signale können Haushalte, Unternehmen, Staaten und Märkte über Erwartungen, Finanzierungskosten und Investitionen betreffen.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Zins- und Inflationspfade betreffen Kaufkraft, Kreditkosten und Beschäftigung, aber konkrete Effekte sind nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein indirekter Bezug besteht über Energiepreise und Investitionen, doch Umweltwirkungen sind im Material nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Gemeinsame europäische Lösungen und transparente geldpolitische Kommunikation können Vertrauen und Korrekturfähigkeit berühren."
-        },
-        "importance": "mittel",
-        "impact_potential": "Mögliches Potenzial über Erwartungsbildung, Finanzierungskosten, Investitionsentscheidungen und europäische Koordination.",
-        "impact_risks": [
-          "Fehlinterpretierte Signale können Unsicherheit, Verteilungsdruck oder Marktvolatilität verstärken."
-        ],
-        "mechanisms": [
-          "Veränderung finanzieller Anreize, Erwartungen und Kapitalflüsse durch geldpolitische Kommunikation."
-        ],
-        "first_order": [
-          "Marktteilnehmer und Öffentlichkeit erhalten ein Signal zu Unsicherheit und möglicher Zinspolitik."
-        ],
-        "second_order": [
-          "Erwartungen zu Krediten, Investitionen, Konsum und Preisentwicklung können sich verschieben."
-        ],
-        "third_order": [
-          "Bei dauerhafter Unsicherheit können Resilienz, Verteilung und europäische Handlungsfähigkeit betroffen sein."
-        ],
-        "systemic_relevance": "Finanzmärkte, Energiepreise und Zinsen sind systemisch gekoppelt und können Kaskaden auslösen.",
-        "transformation_potential": "Eher begrenzt; Transformation wäre nur bei stabiler europäischer Koordination und Investitionslenkung erkennbar.",
-        "resilience": "Sitzungsweise Entscheidungen können Anpassungsfähigkeit stützen, ersetzen aber keine belegte Wirkungskontrolle.",
-        "side_effects": [
-          "Straffere Erwartungen können Haushalte, Staaten oder Unternehmen mit hoher Finanzierungslast stärker treffen."
-        ],
-        "uncertainties": [
-          "Der vollständige Interviewkontext, konkrete EZB-Entscheidungen und reale Marktreaktionen sind nicht belegt."
-        ],
-        "evidence_level": "Primärquelle für das Interview; keine Wirkungsdaten, keine Evaluation und keine Kausalprüfung.",
-        "attribution": "Zurechenbar ist nur die Aussage im Interview, nicht eine spätere wirtschaftliche Zustandsveränderung.",
-        "watch_next": [
-          "Nächste EZB-Ratssitzung, Inflationsdaten, Energiepreise und Hinweise auf europäische Koordination beobachten."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 8, 10 und 16 nur als grober Risiko- und Resilienzrahmen."
-        ],
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-03T07:58:18.398Z",
-          "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
-          "analysis": {
-            "story_id": "wt-293fa4edfc2b5a5d",
-            "summary": "Das Interview belegt Unsicherheit bei Energiepreisen, Märkten und Zinsen. Veröffentlichbar ist nur eine vorsichtige Einordnung des Signal- und Erwartungspfads.",
-            "detail_summary": "Fakt ist ein Bundesbank-Interview zu Inflation, Zinsen und Europas Zukunft. Belegt sind volatile Energiepreise, volatile Finanzmärkte und hohe Unsicherheit. Analytisch relevant ist der mögliche Einfluss auf Erwartungen, Kapitalflüsse und politische Koordination. Wirkungspotenzial liegt im geldpolitischen Signal, nicht in bereits eingetretener Wirkung. Eingetretene Wirkung und Zurechnung bleiben offen.",
-            "why_relevant": "Geldpolitische Signale können Haushalte, Unternehmen, Staaten und Märkte über Erwartungen, Finanzierungskosten und Investitionen betreffen.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Mögliche Zins- und Inflationspfade betreffen Kaufkraft, Kreditkosten und Beschäftigung, aber konkrete Effekte sind nicht belegt."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Ein indirekter Bezug besteht über Energiepreise und Investitionen, doch Umweltwirkungen sind im Material nicht belegt."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Gemeinsame europäische Lösungen und transparente geldpolitische Kommunikation können Vertrauen und Korrekturfähigkeit berühren."
-            },
-            "importance": "mittel",
-            "impact_potential": "Mögliches Potenzial über Erwartungsbildung, Finanzierungskosten, Investitionsentscheidungen und europäische Koordination.",
-            "impact_risks": [
-              "Fehlinterpretierte Signale können Unsicherheit, Verteilungsdruck oder Marktvolatilität verstärken."
-            ],
-            "mechanisms": [
-              "Veränderung finanzieller Anreize, Erwartungen und Kapitalflüsse durch geldpolitische Kommunikation."
-            ],
-            "first_order": [
-              "Marktteilnehmer und Öffentlichkeit erhalten ein Signal zu Unsicherheit und möglicher Zinspolitik."
-            ],
-            "second_order": [
-              "Erwartungen zu Krediten, Investitionen, Konsum und Preisentwicklung können sich verschieben."
-            ],
-            "third_order": [
-              "Bei dauerhafter Unsicherheit können Resilienz, Verteilung und europäische Handlungsfähigkeit betroffen sein."
-            ],
-            "systemic_relevance": "Finanzmärkte, Energiepreise und Zinsen sind systemisch gekoppelt und können Kaskaden auslösen.",
-            "transformation_potential": "Eher begrenzt; Transformation wäre nur bei stabiler europäischer Koordination und Investitionslenkung erkennbar.",
-            "resilience": "Sitzungsweise Entscheidungen können Anpassungsfähigkeit stützen, ersetzen aber keine belegte Wirkungskontrolle.",
-            "side_effects": [
-              "Straffere Erwartungen können Haushalte, Staaten oder Unternehmen mit hoher Finanzierungslast stärker treffen."
-            ],
-            "uncertainties": [
-              "Der vollständige Interviewkontext, konkrete EZB-Entscheidungen und reale Marktreaktionen sind nicht belegt."
-            ],
-            "evidence_level": "Primärquelle für das Interview; keine Wirkungsdaten, keine Evaluation und keine Kausalprüfung.",
-            "attribution": "Zurechenbar ist nur die Aussage im Interview, nicht eine spätere wirtschaftliche Zustandsveränderung.",
-            "watch_next": [
-              "Nächste EZB-Ratssitzung, Inflationsdaten, Energiepreise und Hinweise auf europäische Koordination beobachten."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 8, 10 und 16 nur als grober Risiko- und Resilienzrahmen."
-            ],
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.5",
-          "mode": "woek-ai-oracle-llm",
-          "method_sources": [
-            {
-              "title": "Berichtsdaten",
-              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
-            },
-            {
-              "title": "Open Science",
-              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
-            },
-            {
-              "title": "Wirkungsdatenräume",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
-            },
-            {
-              "title": "Messgrenzen und Unsicherheit",
-              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
-            },
-            {
-              "title": "Wirkungsindikator",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsindikator"
-            },
-            {
-              "title": "Betroffenenperspektive",
-              "url": "https://wirkungsoekonomie.de/begriffe/betroffenenperspektive"
-            }
-          ],
-          "source_summary": "Bundesbankpräsident Joachim Nagel äußert sich in einem Interview mit Le Monde zur Inflation, zu möglichen Zinsschritten und zur europäischen Wirtschaft. Er verweist für Juli und August auf Inflationsraten im Euroraum von 2,9 beziehungsweise 3,3 Prozent und auf das mittelfristige Ziel von 2 Prozent. Für die EZB-Ratssitzung am 10. September hält er eine Zinserhöhung für wahrscheinlich, legt sich für spätere Sitzungen wegen schwankender Energiepreise, volatiler Finanzmärkte und großer Unsicherheit aber nicht fest.\n\nNagel begründet seine Haltung mit dem Risiko, dass länger erhöhte Inflation in Lohnverhandlungen einfließt. Zugleich beschreibt er den Euroraum als widerstandsfähig und nennt für Deutschland ein stärker als erwartetes zweites Quartal, robuste Ausfuhren und eine zufriedenstellende Auftragslage im verarbeitenden Gewerbe. Auf Basis der ersten beiden Quartale erwartet er für Deutschland im laufenden Jahr rund ein Prozent Wachstum."
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-03T07:58:18.398Z",
-          "source_count": 1
-        }
-      ],
-      "pending_update": {
-        "detected_at": "2026-09-04T06:36:41.866Z",
-        "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
-        "sources": [
-          {
-            "source_id": "bundesbank-allgemein",
-            "publisher": "Deutsche Bundesbank",
-            "url": "https://www.bundesbank.de/de/presse/interviews/joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-964840",
-            "title": "Joachim Nagel im Interview mit Le Monde: Inflation, Zinsen und Europas Zukunft | Interview mit Le Monde",
-            "summary": "Öl- und Gaspreise schwanken weiterhin stark. Die Finanzmärkte sind sehr volatil. Es gibt viel Unsicherheit. […] Aber der Ansatz, Entscheidungen von Sitzung zu Sitzung zu treffen, hat sich in der Vergangenheit bewährt und wird dies sicherlich auch in Zukunft tun, sagt Joachim Nagel im Interview mit der französischen Zeitung Le Monde. Im Interview spricht Nagel über die aktuelle wirtschaftliche Entwicklung in Deutschland, die Möglichkeit von Zinserhöhungen bei der nächsten EZB-Ratssitzung sowie über die Notwendigkeit gemeinsamer europäischer Lösungen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T08:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 84,
-            "source_topic": "Finanzen",
-            "content_hash": "94823b6f34ea495e335146c43e119906b6931a453d75b9d3308372c55cccd96c",
-            "source_item_id": "62ece7af611edcf19c1afbe06e31c4c35c4c5f55fcacbbc2d9903cf81559191a",
-            "publisher_id": "bundesbank-allgemein",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:36:41.866Z",
-            "provenance": {
-              "origin": "publisher:bundesbank-allgemein",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "FOLLOWUP_DATE_UNSUPPORTED"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": true,
-        "fresh": false
-      },
-      "source_summary": "Bundesbankpräsident Joachim Nagel äußert sich in einem Interview mit Le Monde zur Inflation, zu möglichen Zinsschritten und zur europäischen Wirtschaft. Er verweist für Juli und August auf Inflationsraten im Euroraum von 2,9 beziehungsweise 3,3 Prozent und auf das mittelfristige Ziel von 2 Prozent. Für die EZB-Ratssitzung am 10. September hält er eine Zinserhöhung für wahrscheinlich, legt sich für spätere Sitzungen wegen schwankender Energiepreise, volatiler Finanzmärkte und großer Unsicherheit aber nicht fest.\n\nNagel begründet seine Haltung mit dem Risiko, dass länger erhöhte Inflation in Lohnverhandlungen einfließt. Zugleich beschreibt er den Euroraum als widerstandsfähig und nennt für Deutschland ein stärker als erwartetes zweites Quartal, robuste Ausfuhren und eine zufriedenstellende Auftragslage im verarbeitenden Gewerbe. Auf Basis der ersten beiden Quartale erwartet er für Deutschland im laufenden Jahr rund ein Prozent Wachstum.",
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-abd79d1edd9a219c-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "cfc65d07460a42b246ca2b97def72894a481de2f71905f542aa135c0cd28c973"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-abd79d1edd9a219c-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "d7a4f26fee684c8542c060adb8dc9529fc4e0a04f15e121f283c279d76fee989"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-abd79d1edd9a219c-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "8623e5523ec718fb4e7a779e46987f9348c80c0a7ba71d0cbf039116d9f43827"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-5c08a7e2fa7867ae-source.png",
-          "sha256": "5c08a7e2fa7867ae1b1aa34b41f149403c76b70a2554cc774b6cf3b08fc5b9e1",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-3-concrete",
-          "generated_at": "2026-09-04T05:50:28.691Z"
-        },
-        "fingerprint": "abd79d1edd9a219cafb9bbcb917331298be685c33ec5e5c3234c32ac1ae694e3",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-3-concrete",
-        "generated_at": "2026-09-04T06:03:59.794Z",
-        "status": "generated"
-      }
-    },
-    {
       "story_id": "wt-0e1ab5081b9f4045",
       "slug": "mfi-zinsstatistik-fur-den-euroraum-juli-2026-9f4045",
       "title": "MFI-Zinsstatistik für den Euroraum: Juli 2026",
@@ -45204,5 +46134,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T06:36:41.866Z"
+  "public_updated_at": "2026-09-04T06:51:43.159Z"
 }
