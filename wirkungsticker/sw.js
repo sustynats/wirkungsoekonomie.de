@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260904-rules1";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260904-cases1";
 const NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1";
 const NEWS_STATE_URL = "/wirkungsticker/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-wirkungsticker-updates";

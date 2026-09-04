@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories } from "./living-files.mjs";
+import { buildCaseFiles } from "./case-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
@@ -57,19 +58,28 @@ const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf
 if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
 if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen") || !index.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
 const activeStories = store.stories.filter((item) => item.published && item.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
-for (const [indexPosition, story] of activeStories.entries()) {
+const grouping = buildCaseFiles(activeStories);
+const visibleStories = grouping.visibleStories;
+for (const story of activeStories) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
-  const expectedRelated = relatedStories(story, activeStories);
+  const caseFile = grouping.caseByStory.get(story.story_id);
+  const sameCaseIds = new Set(caseFile?.members.map((member) => member.story_id) || []);
+  const expectedRelated = relatedStories(story, activeStories.filter((item) => !sameCaseIds.has(item.story_id)));
   const relatedBlock = detail.match(/<section\b[^>]*data-news-related[\s\S]*?<\/section>/)?.[0] || "";
   if (Boolean(expectedRelated.length) !== Boolean(relatedBlock) || (relatedBlock.match(/<li>/g) || []).length !== expectedRelated.length
     || expectedRelated.some(({ story: item }) => !relatedBlock.includes(`../${item.slug}/`)) || (relatedBlock && !relatedBlock.includes("data-search-exclude"))) fail(`NEWS_RELATED_UI_INVALID:${story.story_id}`);
   const shareUrl = `https://wirkungsoekonomie.de/wirkungsticker/${story.slug}/`;
   if ((detail.match(/data-news-share-button/g) || []).length < 2 || !detail.includes(`data-share-url="${shareUrl}"`) || !detail.includes("assets/js/news-share.js")) fail(`NEWS_SHARE_UI_INVALID:${story.story_id}`);
-  if (!detail.includes("data-news-return-to-list") || !detail.includes(`#story-${story.slug}`) || !detail.includes("Zur Übersicht und Leseposition")) fail(`NEWS_RETURN_NAVIGATION_INVALID:${story.story_id}`);
-  const newerStory = activeStories[indexPosition - 1];
-  const nextStory = activeStories[indexPosition + 1];
+  const representativeId = caseFile?.representative_id || story.story_id;
+  const representativeSlug = caseFile?.representative_slug || story.slug;
+  if (!detail.includes("data-news-return-to-list") || !detail.includes(`#story-${representativeSlug}`) || !detail.includes("Zur Übersicht und Leseposition")) fail(`NEWS_RETURN_NAVIGATION_INVALID:${story.story_id}`);
+  const indexPosition = visibleStories.findIndex((item) => item.story_id === representativeId);
+  const newerStory = visibleStories[indexPosition - 1];
+  const nextStory = visibleStories[indexPosition + 1];
   if (newerStory && (!detail.includes("Neuere Meldung") || !detail.includes(`../${newerStory.slug}/`))) fail(`NEWS_NEWER_NAVIGATION_INVALID:${story.story_id}`);
   if (nextStory && (!detail.includes("Nächste Meldung") || !detail.includes(`../${nextStory.slug}/`))) fail(`NEWS_NEXT_NAVIGATION_INVALID:${story.story_id}`);
+  if (caseFile && (!detail.includes(`data-news-case-id="${caseFile.case_id}"`) || !detail.includes("Einzelereignisse, Belege und Analysen bleiben getrennt")
+    || caseFile.members.some((member) => !detail.includes(`../${member.slug}/`) && member.story_id !== story.story_id))) fail(`NEWS_CASE_FILE_UI_INVALID:${story.story_id}`);
   const sourceSummaryAt = detail.indexOf("data-news-source-summary");
   const factCheckAt = detail.indexOf("news-fact-check");
   const analysisAt = detail.indexOf("news-story-summary");
@@ -87,6 +97,10 @@ for (const [indexPosition, story] of activeStories.entries()) {
   if (!detail.includes("Wahrheit zuerst:") || truthAt < 0 || uncertaintyAt < 0 || truthAt > uncertaintyAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);
   if (!detail.includes("Ausgangsmeldung vom") || !detail.includes("WÖk-Analyse:")) fail(`NEWS_SOURCE_DATE_MISSING:${story.story_id}`);
   if (!detail.includes("Erste Ordnung – unmittelbar") || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
+}
+for (const caseFile of grouping.cases) {
+  if (caseFile.member_count < 3 || !caseFile.members.some((member) => member.current) || caseFile.members.filter((member) => member.current).length !== 1) fail(`NEWS_CASE_FILE_INVALID:${caseFile.case_id}`);
+  if (!index.includes(`story-${caseFile.representative_slug}`) || caseFile.members.filter((member) => index.includes(`story-${member.slug}`)).length !== 1) fail(`NEWS_CASE_FILE_INDEX_INVALID:${caseFile.case_id}`);
 }
 const manifest = readJson("wirkungsticker/manifest.webmanifest");
 if (manifest.id !== "/wirkungsticker/" || manifest.scope !== "/wirkungsticker/" || manifest.start_url !== "/wirkungsticker/?source=pwa" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");
@@ -106,7 +120,7 @@ if (!legacyIndex.includes("/wirkungsticker/")) fail("NEWS_LEGACY_REDIRECT_INVALI
 
 const sensitiveFiles = [
   "scripts/news/lib.mjs", "scripts/news/run.mjs", "scripts/news/build.mjs", "scripts/news/schedule.mjs",
-  "scripts/news/living-files.mjs",
+  "scripts/news/living-files.mjs", "scripts/news/case-files.mjs",
   "content/news/source-registry.json", "data/news/stories.json", "data/news/state.json", "data/news/usage.json",
 ];
 const secretPatterns = [/\bsk-[A-Za-z0-9_-]{20,}\b/, /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/, /\bAKIA[0-9A-Z]{16}\b/];

@@ -4,7 +4,7 @@ import { sourceDue, annotateSourceItem, evidenceGroups, eventCompatibility, fres
 import { newsBudget, costFromUsage, refreshBudgetFx } from "../../scripts/news/budget.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex, datedSource } from "../../scripts/news/source-adapters.mjs";
 import { runWirkungsticker } from "../../scripts/news/run.mjs";
-import { classifyItem } from "../../scripts/news/lib.mjs";
+import { classifyItem, parseFeed } from "../../scripts/news/lib.mjs";
 
 const now = "2026-09-03T12:00:00.000Z";
 const source = { source_id: "test", publisher_id: "publisher", name: "Test", url: "https://example.org/", feed_url: "https://example.org/rss", enabled: true, source_type: "official_rss", primary_source: true, access: { status: "public", article: "metadata_only", cost_usd: 0 }, frequency_class: "high_frequency" };
@@ -159,6 +159,31 @@ test("304 preserves latest content and a non-due source makes no network request
   assert.equal(report.sources_not_modified, 1); assert.equal(captured.state.source_status.test.items, 5); assert.equal(captured.state.source_status.test.latest_item, prior.latest_item);
   await runWirkungsticker(fixture({ state: captured.state, fetchFeedImpl: async () => { calls++; throw new Error("Must not fetch"); } }));
   assert.equal(calls, 1);
+});
+test("an unchanged feed item is discarded before clustering, AI cost and publication", async () => {
+  const rss = `<rss><channel><item><title>${item.title}</title><link>${item.url}</link><description>${item.summary}</description><pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate></item></channel></rss>`;
+  const seen = parseFeed(rss, source)[0];
+  let aiCalls = 0, captured;
+  const state = {
+    source_status: {},
+    seen_items: { [seen.item_id]: { source_id: seen.source_id, url: seen.url, content_hash: seen.content_hash, published_at: seen.published_at, last_seen: "2026-09-03T11:00:00.000Z" } },
+    pending_story_ids: [],
+    relevance_filter_version: "4.0",
+  };
+  const report = await runWirkungsticker(fixture({
+    state,
+    fetchFeedImpl: async () => ({ body: rss, final_url: source.feed_url }),
+    callAiImpl: async () => { aiCalls += 1; throw new Error("AI must not receive a duplicate"); },
+    captureState: (value) => { captured = value; },
+  }));
+  assert.equal(report.feed_entries_deduplicated, 1);
+  assert.equal(report.story_clusters, 0);
+  assert.equal(report.ai_stories, 0);
+  assert.equal(report.ai_calls, 0);
+  assert.equal(report.estimated_cost_usd, 0);
+  assert.equal(report.public_changed, false);
+  assert.equal(aiCalls, 0);
+  assert.deepEqual(captured.storyStore.stories, []);
 });
 test("outage recovery uses the source cursor, not a newer global run cursor", async () => {
   const state = { last_successful_run: now, source_status: { test: { last_success: "2026-09-01T00:00:00Z" } }, seen_items: {}, pending_story_ids: [], relevance_filter_version: "4.0" };
