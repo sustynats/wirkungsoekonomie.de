@@ -1,7 +1,1044 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T21:53:36.018Z",
+  "updated_at": "2026-09-04T22:21:29.171Z",
   "stories": [
+    {
+      "story_id": "wt-5072789df611867b",
+      "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
+      "title": "Sachsen-Anhalt und die Tücken der Umfragen",
+      "first_seen": "2026-09-04T06:45:02.000Z",
+      "last_updated": "2026-09-04T22:17:29.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik",
+        "Soziales",
+        "Gesundheit",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "title": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen",
+          "summary": "2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T09:11:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "8722661fa7fa0fbdb62199e95969b72c7556137f6f23bc88cdc9e0fba9969d79",
+          "source_item_id": "b20e8384202485f599911824807c6f1d09686974f856574883fb91e1a0504055",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T09:11:58.000Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--wer-in-den-umfragen-vor-der-landtagswahl-vorn-liegt-37619250.html",
+          "title": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da",
+          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:49:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b5c7279a12e92642d41f50cb20db9b1f07aeb97648cc37c4ddcce51021b7287b",
+          "source_item_id": "b685840711361e7155168098ae07f781d58099499e4fc1b1a32efef2a503c254",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:49:00.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+          "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+          "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:06:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+          "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:06:15.000Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-der-landtagswahl--bundestags-gruene-unterstuetzen-wahlkampf-in-sachsen-anhalt-38207472.html",
+          "title": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt",
+          "summary": "Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:35:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8b678b8d0811f1c08e2a030c95a30f777c2e84344f90be061642f78f3810b49e",
+          "source_item_id": "b19eb88271966d2cf925274ccb7beb7809866d25130161326b763580172f0bda",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T08:35:25.000Z",
+          "ingested_at": "2026-09-04T08:51:38.320Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/fdp-spitzenkandidatin-in-sachsen-anhalt-wirbt-fuer-grossen-wurf-beim-buerokratieabbau-100.html",
+          "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
+          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:15:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "878001e91520cd166fb2287f253f9117190d26f185a4e00dd6747f4ddeab38b9",
+          "source_item_id": "4847bb311e4cb61d1fd2fb83cc11208b73d2a46cb2f1e4072657cf48d633891d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:15:07.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bsw-spitzenkandidatin-in-sachsen-anhalt-bereit-zu-kooperation-mit-afd-100.html",
+          "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
+          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:15:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1760069b997965bf09a9fee4cfcbbbc36f177ddbc5d6ae18a67252c2ddf46294",
+          "source_item_id": "527abf1c8cea937540267a7b4d655ff65cc6c3dd81a15bbdc7167af335920ccb",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:15:07.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/gruenen-spitzenkandidatin-in-sachsen-anhalt-betont-positive-auswirkungen-von-migration-afd-fordert-k-100.html",
+          "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
+          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:15:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "128b495a2010002ee50bf4942a3927464ecdbef04decff888a81641f3958356c",
+          "source_item_id": "91d582f92a00d320f17e46b7ebb10b35032f318a553432b126b7af1b0c9e83fd",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:15:07.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/vor-wahl-in-sachsen-anhalt--farin-urlaub-bestuerzt-wegen-afd-zustimmung-38205864.html",
+          "title": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub",
+          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:14:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "df113af137d01a52b3ea8ecd014dc92ee6e1562d4e57b17c33520939c3c4b7af",
+          "source_item_id": "56f2465ce746d3a8af55f713f93e1e410553fbc68524c6109da2129a033f9d58",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T10:14:00.000Z",
+          "ingested_at": "2026-09-04T10:42:21.689Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-2026--so-stehen-die-parteien-in-umfragen-dar-37619250.html",
+          "title": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar",
+          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:58:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "82c21e8f4f9939894c8d7b945253532476a8c35735e9455f902be694919493e2",
+          "source_item_id": "41e0651d1fa46d52a58ee7dd0706f8631f6c85554f68c3f42b92dec2b1eef178",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:58:00.000Z",
+          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+          "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
+          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:34:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
+          "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:34:28.000Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/politik/deutschland/landtagswahl-in-sachsen-anhalt-wie-die-afd-noch-vor-der-wahl-die-maer-vom-stimmenklau-verbreitet-a-6bcffeba-8054-49d4-9b7c-9cf6e2c7e8d9",
+          "title": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet",
+          "summary": "AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:10:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "7ca8e8ef6d4367da0cac4e844b930e4a1389bd846e6bdaa2a751bcc1963a9483",
+          "source_item_id": "53c764a3f5db8108838f1337490c613b68f8ebe10e4431b43c2e04a1da018ba3",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:10:00.000Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+          "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
+          "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T22:17:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "c125c8ff1c5eaa667c4ef090af0257d13380308c2cadd39718851d30da5cb7a9",
+          "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T22:17:29.000Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5072789df611867b-claim-01",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen: 2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-02",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-03",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt: Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-04",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt: Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-05",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-06",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-07",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende: Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-08",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub: Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-09",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-10",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden: Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-11",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet: AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-12",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet: In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        }
+      ],
+      "content_hash": "915fd30dda1c2291ce65e2f9d59e5aa2c2e0cd0a2a53157a5845a4632b911c5d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T22:21:29.171Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik",
+          "Soziales",
+          "Gesundheit",
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Demokratie",
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.00285,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 929.7668666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T22:21:29.171Z",
+      "rejection": {
+        "at": "2026-09-04T22:21:29.171Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-aaa7e98d9c993988",
+      "slug": "anschlage-auf-umspannwerke-dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverda-993988",
+      "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
+      "first_seen": "2026-09-04T17:11:33.000Z",
+      "last_updated": "2026-09-04T22:17:29.000Z",
+      "topic": [
+        "Klima"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+          "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
+          "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:11:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f",
+          "source_item_id": "603b3a314a06b872ded379d4bff2af2156df9995f2d16048da924eb6c7544d5a",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T17:11:33.000Z",
+          "ingested_at": "2026-09-04T17:21:09.783Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+          "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
+          "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T22:17:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "7c038e854cd1d8c77d97fa07742b78411291a57b78265284c942b554fea4cc28",
+          "source_item_id": "26e81c07cc436169edeac35ec7b110399a8e58184bf4a6fc604c4beeb00ca4ce",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T22:17:29.000Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-aaa7e98d9c993988-claim-01",
+          "story_id": "wt-aaa7e98d9c993988",
+          "claim": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft: Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-aaa7e98d9c993988-claim-02",
+          "story_id": "wt-aaa7e98d9c993988",
+          "claim": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft: Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        }
+      ],
+      "content_hash": "ab62eac283b79379070795963bfe9687f9cb63fb7846ffe2f1d0f0e5e7689a93",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T22:21:29.171Z",
+      "event_first_seen_at": "2026-09-04T17:21:09.783Z",
+      "event_detected_at": "2026-09-04T17:21:09.783Z",
+      "event_id": "event-5f3d82645fd193edc18e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.00285,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 300.3231333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T22:21:29.171Z",
+      "rejection": {
+        "at": "2026-09-04T22:21:29.171Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-26d13b6e9769c73c",
+      "slug": "return-hubs-abschiebezentren-fur-migranten-ausserhalb-der-eu-was-deutschland-und-andere--69c73c",
+      "title": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen",
+      "first_seen": "2026-09-04T14:33:35.000Z",
+      "last_updated": "2026-09-04T22:17:29.000Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/abschiebezentren-fuer-migranten-ausserhalb-der-eu-was-deutschland-und-andere-laender-planen-100.html",
+          "title": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen",
+          "summary": "Deutschland und weitere EU-Länder treiben die umstrittenen Pläne für Abschiebezentren für abgelehnte Asylbewerber außerhalb der Europäischen Union voran. Noch in diesem Jahr soll eine Vereinbarung mit einem Partnerland getroffen werden. Die Pläne im Überblick.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:33:35.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "8802783290e0d59dc5eabcc3fdb685725da1e9ffc76fbfd3954486d1f6662053",
+          "source_item_id": "d88c422553368770b9a57b4e0feb29bb5d0bcd73e8755a1bc788d9952a0631ad",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:33:35.000Z",
+          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/abschiebezentren-fuer-migranten-ausserhalb-der-eu-was-deutschland-und-andere-laender-planen-102.html",
+          "title": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen",
+          "summary": "Deutschland und weitere EU-Länder treiben die umstrittenen Pläne für Abschiebezentren für abgelehnte Asylbewerber außerhalb der Europäischen Union voran. Noch in diesem Jahr soll eine Vereinbarung mit einem Partnerland getroffen werden. Die Pläne im Überblick.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T22:17:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a334063814704f54ef46cfcda5760c9f4366c2e1f90255e92d1eaa4c59db0387",
+          "source_item_id": "96aa49f1d32c068cd441b3a2f53c3a11e90f30d861921fada70415e99c55bbfa",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T22:17:29.000Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-26d13b6e9769c73c-claim-01",
+          "story_id": "wt-26d13b6e9769c73c",
+          "claim": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen: Deutschland und weitere EU-Länder treiben die umstrittenen Pläne für Abschiebezentren für abgelehnte Asylbewerber außerhalb der Europäischen Union voran. Noch in diesem Jahr soll eine Vereinbarung mit einem Partnerland getroffen werden. Die Pläne im Überblick.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        },
+        {
+          "claim_id": "wt-26d13b6e9769c73c-claim-02",
+          "story_id": "wt-26d13b6e9769c73c",
+          "claim": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen: Deutschland und weitere EU-Länder treiben die umstrittenen Pläne für Abschiebezentren für abgelehnte Asylbewerber außerhalb der Europäischen Union voran. Noch in diesem Jahr soll eine Vereinbarung mit einem Partnerland getroffen werden. Die Pläne im Überblick.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T22:21:29.171Z"
+        }
+      ],
+      "content_hash": "cd1f73356d61208b6baff516ff93913f9d7b575a1ceba4fc5937bd5d8a009e69",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_UNSUPPORTED_FRAMEWORK_NUMBER:10,7"
+      ],
+      "quality_retry_count": 1,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-04T22:21:29.171Z",
+      "event_first_seen_at": "2026-09-04T14:36:55.366Z",
+      "event_detected_at": "2026-09-04T14:36:55.366Z",
+      "event_id": "event-f53e98125a20965fa309",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.00285,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 464.5634166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      }
+    },
     {
       "story_id": "wt-a5874ae28ed5533f",
       "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
@@ -1287,6 +2324,175 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T20:51:56.847Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-04T22:21:29.171Z",
+        "content_hash": "960f9fbf1823f5e1ce3f3a36b41b937fcab14afecd1d7e13697919d69195c3ec",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:21:16.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
+            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:21:16.000Z",
+            "ingested_at": "2026-09-04T17:39:54.371Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:22:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
+            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:22:14.000Z",
+            "ingested_at": "2026-09-04T22:21:29.171Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:46:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
+            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:46:00.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T20:13:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
+            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T20:13:08.000Z",
+            "ingested_at": "2026-09-04T20:36:32.644Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T22:17:29.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
+            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T22:17:29.000Z",
+            "ingested_at": "2026-09-04T22:21:29.171Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false
       }
     },
     {
@@ -6750,7 +7956,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-04T21:51:33.897Z",
+          "ingested_at": "2026-09-04T22:21:29.171Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -6777,7 +7983,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T21:51:33.897Z"
+          "checked_at": "2026-09-04T22:21:29.171Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -6785,11 +7991,11 @@
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T21:51:33.897Z",
+      "updated_at": "2026-09-04T22:21:29.171Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -6819,25 +8025,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 126.54828333333333,
+        "source_age_minutes": 156.46951666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 180.1149,
+        "queue_age_minutes": 210.03613333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 74,
+        "news_freshness_score": 67,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T21:51:33.897Z",
+      "rejected_at": "2026-09-04T22:21:29.171Z",
       "rejection": {
-        "at": "2026-09-04T21:51:33.897Z",
+        "at": "2026-09-04T22:21:29.171Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -6961,647 +8167,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-5072789df611867b",
-      "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
-      "title": "Sachsen-Anhalt und die Tücken der Umfragen",
-      "first_seen": "2026-09-04T06:45:02.000Z",
-      "last_updated": "2026-09-04T19:34:28.000Z",
-      "topic": [
-        "Demokratie",
-        "Politik",
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
-          "title": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen",
-          "summary": "2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:11:58.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "8722661fa7fa0fbdb62199e95969b72c7556137f6f23bc88cdc9e0fba9969d79",
-          "source_item_id": "b20e8384202485f599911824807c6f1d09686974f856574883fb91e1a0504055",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T09:11:58.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--wer-in-den-umfragen-vor-der-landtagswahl-vorn-liegt-37619250.html",
-          "title": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da",
-          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:49:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "b5c7279a12e92642d41f50cb20db9b1f07aeb97648cc37c4ddcce51021b7287b",
-          "source_item_id": "b685840711361e7155168098ae07f781d58099499e4fc1b1a32efef2a503c254",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T07:49:00.000Z",
-          "ingested_at": "2026-09-04T08:06:19.579Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
-          "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
-          "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:06:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
-          "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T07:06:15.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-der-landtagswahl--bundestags-gruene-unterstuetzen-wahlkampf-in-sachsen-anhalt-38207472.html",
-          "title": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt",
-          "summary": "Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T08:35:25.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "8b678b8d0811f1c08e2a030c95a30f777c2e84344f90be061642f78f3810b49e",
-          "source_item_id": "b19eb88271966d2cf925274ccb7beb7809866d25130161326b763580172f0bda",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T08:35:25.000Z",
-          "ingested_at": "2026-09-04T08:51:38.320Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/fdp-spitzenkandidatin-in-sachsen-anhalt-wirbt-fuer-grossen-wurf-beim-buerokratieabbau-100.html",
-          "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
-          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:15:07.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "878001e91520cd166fb2287f253f9117190d26f185a4e00dd6747f4ddeab38b9",
-          "source_item_id": "4847bb311e4cb61d1fd2fb83cc11208b73d2a46cb2f1e4072657cf48d633891d",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:15:07.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bsw-spitzenkandidatin-in-sachsen-anhalt-bereit-zu-kooperation-mit-afd-100.html",
-          "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
-          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:15:07.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "1760069b997965bf09a9fee4cfcbbbc36f177ddbc5d6ae18a67252c2ddf46294",
-          "source_item_id": "527abf1c8cea937540267a7b4d655ff65cc6c3dd81a15bbdc7167af335920ccb",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:15:07.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/gruenen-spitzenkandidatin-in-sachsen-anhalt-betont-positive-auswirkungen-von-migration-afd-fordert-k-100.html",
-          "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
-          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:15:07.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "128b495a2010002ee50bf4942a3927464ecdbef04decff888a81641f3958356c",
-          "source_item_id": "91d582f92a00d320f17e46b7ebb10b35032f318a553432b126b7af1b0c9e83fd",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:15:07.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/vor-wahl-in-sachsen-anhalt--farin-urlaub-bestuerzt-wegen-afd-zustimmung-38205864.html",
-          "title": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub",
-          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:14:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "df113af137d01a52b3ea8ecd014dc92ee6e1562d4e57b17c33520939c3c4b7af",
-          "source_item_id": "56f2465ce746d3a8af55f713f93e1e410553fbc68524c6109da2129a033f9d58",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T10:14:00.000Z",
-          "ingested_at": "2026-09-04T10:42:21.689Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-2026--so-stehen-die-parteien-in-umfragen-dar-37619250.html",
-          "title": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar",
-          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:58:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "82c21e8f4f9939894c8d7b945253532476a8c35735e9455f902be694919493e2",
-          "source_item_id": "41e0651d1fa46d52a58ee7dd0706f8631f6c85554f68c3f42b92dec2b1eef178",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T11:58:00.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
-          "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
-          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:34:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
-          "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:34:28.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "spiegel-schlagzeilen",
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/politik/deutschland/landtagswahl-in-sachsen-anhalt-wie-die-afd-noch-vor-der-wahl-die-maer-vom-stimmenklau-verbreitet-a-6bcffeba-8054-49d4-9b7c-9cf6e2c7e8d9",
-          "title": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet",
-          "summary": "AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:10:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "7ca8e8ef6d4367da0cac4e844b930e4a1389bd846e6bdaa2a751bcc1963a9483",
-          "source_item_id": "53c764a3f5db8108838f1337490c613b68f8ebe10e4431b43c2e04a1da018ba3",
-          "publisher_id": "spiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T18:10:00.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-5072789df611867b-claim-01",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen: 2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-02",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-03",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt: Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-04",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt: Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-05",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-06",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-07",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende: Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-08",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub: Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-09",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-10",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden: Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-11",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet: AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "spiegel-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        }
-      ],
-      "content_hash": "953d3c577eaa2d8a3a02fe0113b45e446f78ab3cc6d1a36722592f95eea78ed6",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T19:50:26.018Z",
-      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
-      "event_detected_at": "2026-09-04T06:51:43.159Z",
-      "event_id": "event-2a2bd81ddd672bb6a3a8",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie",
-          "Politik",
-          "Gesellschaft"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "binding_decision"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 15.966966666666666,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 778.7143166666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T19:50:26.018Z",
-      "rejection": {
-        "at": "2026-09-04T19:50:26.018Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -17719,10 +18284,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "6f8702efabbf7a7feb143d959217f8327e4fcf458e31f5ef0e81e7f233f05ee9",
-        "checked_at": "2026-09-04T18:36:20.968Z",
+        "fingerprint": "e7774ec8237b86eece25c0c00a3473b2750cb8dd8b0555ac4a2dd3436d08ec2f",
+        "checked_at": "2026-09-04T22:21:29.171Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T00:36:20.968Z",
+        "expires_at": "2026-09-05T04:21:29.171Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -17749,6 +18314,37 @@
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T18:15:22.000Z",
             "ingested_at": "2026-09-04T18:21:48.041Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/hochschulen-in-ungarn-nehmen-wieder-am-erasmus-programm-teil-108.html",
+            "title": "Bildung - Hochschulen in Ungarn nehmen wieder am Erasmus-Programm teil",
+            "summary": "In Ungarn sollen alle Hochschulen wieder am europäischen Studentenaustauschprogramm Erasmus teilnehmen. Das teilte die ungarische Bildungsministerin Lannert mit. Vor vier Jahren hatte die EU-Kommission 21 Hochschulen in Ungarn aus dem Erasmus-Programm ausgeschlossen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T22:17:29.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "d7cd95ccc18478430952d426fc0e460b489370b9f6327372f12dd0490cb3a4f1",
+            "source_item_id": "036951b165845665bc8d745aa98e3929f2bd0a1a4bc449943f34a73c80c2528e",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T22:17:29.000Z",
+            "ingested_at": "2026-09-04T22:21:29.171Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -19958,7 +20554,109 @@
         }
       ],
       "retirement_history": [],
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "403afe6d5c41b2efd300d9547946a144e9ed8676feb3d514de08fb3dd87aaf38",
+        "checked_at": "2026-09-04T22:21:29.171Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T04:21:29.171Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+            "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:14:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "27a10c129ad67426b4443f2e18e9e6c4e59712a179a01b2bf2cb7d191d920cb9",
+            "source_item_id": "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:14:15.000Z",
+            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet",
+            "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:11:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "4440c8f23589bad133f2f82bb08dc0fa0e976a5c4df2c8bb6ec3a96e48cd36ac",
+            "source_item_id": "4b388f5bd255ac527b57ddf41bbea1bb995154f2ee025fd2218e3c6df64bf251",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:11:33.000Z",
+            "ingested_at": "2026-09-04T17:21:09.783Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-102.html",
+            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet",
+            "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T22:17:29.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "63385105d449f6470141ff354305618169f6cd06339f2bb726430b0d42116b4f",
+            "source_item_id": "eb03f03a2c570bda6cf30619fe72b49c12440a7c757e69ad7a6aaf36dc8cabe1",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T22:17:29.000Z",
+            "ingested_at": "2026-09-04T22:21:29.171Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ]
+      }
     },
     {
       "story_id": "wt-bef99e4e82075a46",
@@ -20191,121 +20889,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
-      }
-    },
-    {
-      "story_id": "wt-aaa7e98d9c993988",
-      "slug": "anschlage-auf-umspannwerke-dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverda-993988",
-      "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-      "first_seen": "2026-09-04T17:11:33.000Z",
-      "last_updated": "2026-09-04T17:11:33.000Z",
-      "topic": [
-        "Klima"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-          "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-          "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:11:33.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f",
-          "source_item_id": "603b3a314a06b872ded379d4bff2af2156df9995f2d16048da924eb6c7544d5a",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:11:33.000Z",
-          "ingested_at": "2026-09-04T17:21:09.783Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-aaa7e98d9c993988-claim-01",
-          "story_id": "wt-aaa7e98d9c993988",
-          "claim": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft: Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T17:34:55.826Z"
-        }
-      ],
-      "content_hash": "ab5c92255cc9648dae20fee71e022c97a56968858f63ef5e08f1f7cad4cba4cc",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
-      ],
-      "quality_retry_count": 1,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-04T17:34:55.826Z",
-      "event_first_seen_at": "2026-09-04T17:21:09.783Z",
-      "event_detected_at": "2026-09-04T17:21:09.783Z",
-      "event_id": "event-5f3d82645fd193edc18e",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 44,
-        "public_relevance": "mittel",
-        "topics": [
-          "Klima"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 23.380433333333333,
-        "detection_delay_minutes": 9.61305,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 13.767383333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": null
       }
     },
     {
@@ -32043,129 +32626,6 @@
       "rejected_at": "2026-09-04T15:06:23.805Z",
       "rejection": {
         "at": "2026-09-04T15:06:23.805Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-26d13b6e9769c73c",
-      "slug": "return-hubs-abschiebezentren-fur-migranten-ausserhalb-der-eu-was-deutschland-und-andere--69c73c",
-      "title": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen",
-      "first_seen": "2026-09-04T14:33:35.000Z",
-      "last_updated": "2026-09-04T14:33:35.000Z",
-      "topic": [
-        "Europa"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/abschiebezentren-fuer-migranten-ausserhalb-der-eu-was-deutschland-und-andere-laender-planen-100.html",
-          "title": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen",
-          "summary": "Deutschland und weitere EU-Länder treiben die umstrittenen Pläne für Abschiebezentren für abgelehnte Asylbewerber außerhalb der Europäischen Union voran. Noch in diesem Jahr soll eine Vereinbarung mit einem Partnerland getroffen werden. Die Pläne im Überblick.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T14:33:35.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "8802783290e0d59dc5eabcc3fdb685725da1e9ffc76fbfd3954486d1f6662053",
-          "source_item_id": "d88c422553368770b9a57b4e0feb29bb5d0bcd73e8755a1bc788d9952a0631ad",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T14:33:35.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-26d13b6e9769c73c-claim-01",
-          "story_id": "wt-26d13b6e9769c73c",
-          "claim": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen: Deutschland und weitere EU-Länder treiben die umstrittenen Pläne für Abschiebezentren für abgelehnte Asylbewerber außerhalb der Europäischen Union voran. Noch in diesem Jahr soll eine Vereinbarung mit einem Partnerland getroffen werden. Die Pläne im Überblick.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
-        }
-      ],
-      "content_hash": "bb2e9e2bfdcfe276ef1cdbeb076e523c324901bbd7a781216f65fa07bd133841",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T14:36:55.366Z",
-      "event_first_seen_at": "2026-09-04T14:36:55.366Z",
-      "event_detected_at": "2026-09-04T14:36:55.366Z",
-      "event_id": "event-f53e98125a20965fa309",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 42,
-        "public_relevance": "mittel",
-        "topics": [
-          "Europa"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 3.3394333333333335,
-        "detection_delay_minutes": 3.3394333333333335,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T14:36:55.366Z",
-      "rejection": {
-        "at": "2026-09-04T14:36:55.366Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
