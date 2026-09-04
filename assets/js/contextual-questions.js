@@ -9,9 +9,9 @@ export const PAGE_QUESTIONS = {
     q('Welche Weiterbildungen werden angeboten?', '/akademie/weiterbildung.html', 'Weiterbildung'),
   ],
   '/bibliothek/': [
-    q('Welche Lesereihenfolge eignet sich für den Einstieg?', '/buch.html#lesepfad-title', 'Orientierung'),
-    q('Wo finde ich Methoden und Werkzeuge zur Anwendung?', '/werkzeuge/', 'Vertiefung'),
-    q('Wo kann ich die wissenschaftlichen und amtlichen Quellen nachschlagen?', '/quellenarchiv/', 'Quellen'),
+    q('Welche Veröffentlichung eignet sich für den Einstieg?', '/buch/', 'Orientierung'),
+    q('Wo finde ich Methoden und Werkzeuge?', '/tools/', 'Vertiefung'),
+    {label:'Wie erkenne ich ältere Fassungen?', answer:'Achte auf den ausgewiesenen Stand und Kennzeichnungen wie „archiviert“ oder „ersetzt“. Prüfe bei älteren Veröffentlichungen, ob eine neuere Fassung verlinkt ist.', tag:'Versionen'},
   ],
   '/quellenarchiv/': [
     {label:'Wozu dienen die Detailseiten der Quellen?', answer:'Sie ordnen Quellen ein und bieten den Zugang zur jeweiligen Veröffentlichung. Prüfe dort Herkunft, Fassung und Bezug zur behandelten Frage.', tag:'Quellenarbeit'},

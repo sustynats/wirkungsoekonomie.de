@@ -17,6 +17,13 @@ test('page headings distinguish polls, articles, publications and glossary',()=>
   assert.equal(questionHeading('/institut/'),'Fragen zu dieser Seite');
   assert.equal(normalizedPath('/begriffe/resilienz/index.html'),'/begriffe/resilienz/');
 });
+test('library recommendations do not depend on sections replaced by the full-library generator',()=>{
+  const questions=select({path:'/bibliothek/'});
+  assert.equal(questions.length,3);
+  assert.ok(questions.every(q=>!q.href || !q.href.startsWith('/bibliothek/#')));
+  assert.ok(questions.some(q=>q.href==='/buch/'));
+  assert.ok(questions.some(q=>q.href==='/tools/'));
+});
 test('poll questions explain the actual configured visibility and optional private feedback',()=>{
   const base={path:'/umfragen/wirkungsticker-feedback/',title:'Wie überzeugt Euch der neue Wirkungsticker?'};
   const afterVote=select({...base,poll:{visibility:'after_vote',feedback:true}});

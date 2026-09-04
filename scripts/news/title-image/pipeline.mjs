@@ -97,7 +97,12 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
       if (result.title_image?.mode === "editorial" && result.title_image.source_visual?.prompt_version === refresh && ["og", "wide", "square"].every(key => publicTitleImage(result.title_image)?.[key])) return result;
       const reason = result.title_image?.fallback_reason || "EDITORIAL_REFRESH_NOT_READY";
       const retry = retryFields(reason, now);
-      return { title_image: { ...previous, refresh_failure: reason, ...(retry.retry_after ? { refresh_prompt_version: refresh, ...retry } : {}) }, report: { ...result.report, status: "preserved", reason } };
+      // A failed paid motif must not block a successfully rendered free card
+      // upgrade. Existing editorial pictures are still preserved unchanged.
+      const fallback = previous.mode === "impact_card" && result.title_image?.mode === "impact_card"
+        && result.title_image.template_version === C.template_version
+        && ["og", "wide", "square"].every(key => publicTitleImage(result.title_image)?.[key]) ? result.title_image : previous;
+      return { title_image: { ...fallback, refresh_failure: reason, ...(retry.retry_after ? { refresh_prompt_version: refresh, ...retry } : {}) }, report: { ...result.report, status: "preserved", reason } };
     }
     if (dryRun) return { story_id: story.story_id, ...decision, prompt: buildEditorialImagePrompt(story), asset_directory: `source-assets/wirkungsticker/${story.story_id}/`, would_generate: decision.mode === "editorial" && !story.title_image?.source_visual };
     const started = Date.now();
