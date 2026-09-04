@@ -131,6 +131,10 @@ async function start() {
   let current;
   async function load() {
     const data=await request(`/api/polls/${encodeURIComponent(slug)}`,{token:storedToken(id)});current=data;
+    const questionContextChanged=page.dataset.pollResultsVisibility!==data.poll.results_visibility || page.dataset.pollFeedbackEnabled!==String([true,1].includes(data.poll.feedback_enabled));
+    page.dataset.pollResultsVisibility=data.poll.results_visibility;
+    page.dataset.pollFeedbackEnabled=String([true,1].includes(data.poll.feedback_enabled));
+    if(questionContextChanged)window.dispatchEvent(new Event('woek:poll-context'));
     document.getElementById('poll-title').textContent=data.poll.title;
     document.getElementById('poll-intro').textContent=data.poll.intro;
     renderPoll(data.poll,mount,{...data,sendFeedback:async text=>{

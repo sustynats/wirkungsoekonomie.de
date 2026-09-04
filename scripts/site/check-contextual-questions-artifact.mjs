@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const source='assets/js/contextual-questions.js';
+assert.equal(fs.readFileSync(`_site/${source}`,'utf8'),fs.readFileSync(source,'utf8'),'Fragenmodul muss vollständig und aktuell im öffentlichen Artefakt liegen.');
+const main=fs.readFileSync('_site/assets/js/main.js','utf8');
+assert.ok(main.includes('contextual-questions.js'));
+assert.ok(!main.includes('Passende Fragen zum Begriff'));
+const poll=fs.readFileSync('_site/umfragen/wirkungsticker-feedback/index.html','utf8');
+assert.match(poll,/assets\/js\/main\.js\?v=[a-f0-9]{12}/);
+assert.match(poll,/data-poll-results-visibility=/);
+console.log('Seitenfragen: Modul, Integration und Cache-Schlüssel im öffentlichen Artefakt geprüft.');
