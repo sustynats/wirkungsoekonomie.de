@@ -1,7 +1,780 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T11:36:39.394Z",
+  "updated_at": "2026-09-04T11:51:26.099Z",
   "stories": [
+    {
+      "story_id": "wt-d80fd849c477e2ad",
+      "slug": "gesundheitscheck-vor-ausbildung-thuringen-ubernimmt-kosten-fur-untersuchung-77e2ad",
+      "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
+      "first_seen": "2026-09-03T13:56:50.000Z",
+      "last_updated": "2026-09-04T11:51:39.299Z",
+      "published_at": "2026-09-04T02:37:01.895Z",
+      "updated_at": "2026-09-04T11:51:39.299Z",
+      "topic": [
+        "Arbeit",
+        "Gesundheit",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+          "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
+          "summary": "Am Ende haben sich die Ärzte durchgesetzt: Weil sie die gesetzlich vorgeschriebene Untersuchung angehender Azubis nicht mehr für den seit 30 Jahren geltenden Gebührensatz machen wollen, legt das Land was obendrauf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T13:56:50.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1",
+          "source_item_id": "cd756b127cb22c847b980aced730cbeeef0e04f07aca4fdb3a4d2dcfe39532df",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T13:56:50.000Z",
+          "ingested_at": "2026-09-04T02:36:31.848Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d80fd849c477e2ad-v2-claim-1",
+          "story_id": "wt-d80fd849c477e2ad",
+          "claim": "Thüringen will einen Teil der Kosten für gesetzlich vorgeschriebene Gesundheitsuntersuchungen vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "excerpt_hash": "e66e2078abd8ec671242",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T11:51:39.299Z"
+        },
+        {
+          "claim_id": "wt-d80fd849c477e2ad-v2-claim-2",
+          "story_id": "wt-d80fd849c477e2ad",
+          "claim": "Ärztinnen und Ärzte wollten die Untersuchung nach Darstellung des Sozialministeriums nicht mehr zum seit 30 Jahren geltenden Gebührensatz anbieten.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "excerpt_hash": "33b4a30778ad8e69194d",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T11:51:39.299Z"
+        },
+        {
+          "claim_id": "wt-d80fd849c477e2ad-v2-claim-3",
+          "story_id": "wt-d80fd849c477e2ad",
+          "claim": "Mit der Kassenärztlichen Vereinigung wurde laut Bericht vereinbart, dass pro Untersuchung 53,62 Euro abgerechnet werden dürfen und das Land die höheren Kosten 2026 und 2027 übernimmt.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "excerpt_hash": "48fc1145656b2ab026ff",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "excerpt_hash": "f333425b2843f5acacf7",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "excerpt_hash": "586f9b719813bfece245",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T11:51:39.299Z"
+        },
+        {
+          "claim_id": "wt-d80fd849c477e2ad-v2-claim-4",
+          "story_id": "wt-d80fd849c477e2ad",
+          "claim": "Der MDR-Bericht sagt, Thüringen sei derzeit das einzige Bundesland, das so verfahre.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "excerpt_hash": "586f9b719813bfece245",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T11:51:39.299Z"
+        }
+      ],
+      "event_id": "event-ef24781d9a226809238d",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T11:51:26.500Z",
+      "publish_ready_at": "2026-09-04T11:51:39.299Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Landeshaushalt die angekündigten Mittel für 2026 und 2027 tatsächlich bereitstellt und die Abrechnungspraxis umgesetzt wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Haushaltsansatz, Verwaltungsumsetzung und tatsächlich abgerechnete Fälle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-340f0d8865c0010f",
+          "announced_at": "2026-09-03T13:56:50.000Z",
+          "follow_up_date": "2026-09-11T02:37:01.895Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Kostenübernahme 2026 und 2027 wie angekündigt im Landeshaushalt umgesetzt wird",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Haushaltsansatz und tatsächliche Abrechnung der höheren Gebühr",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-76d9912bd7cac962",
+          "announced_at": "2026-09-03T13:56:50.000Z",
+          "follow_up_date": "2026-09-11T11:51:39.299Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-c9df3da8148c97ca-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "c9df3da8148c97ca9374798cb3d0478fea5c114e94b7f0cc2462bbd7b7c01a96"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-a60458508d9a6729-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "a60458508d9a67291979d3260c3eb6a1dc14aed1a02a9fbeb75772c86ca3b918"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-3eeb5b2de2922414-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "3eeb5b2de2922414eeba2d762b18275e7477383b2277fd422329acb91b1a32da"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-a5db8d68318fe1f2-source.png",
+          "sha256": "a5db8d68318fe1f2b5079fd6b000940754ede854021f690694fee56c0fd77153",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T10:10:46.867Z"
+        },
+        "fingerprint": "b0628c4265ebf7ab312191fd6654b450e4864ed47d0f438bd32f548e6bf40446",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T10:11:33.029Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Der MDR berichtet, Thüringen wolle einen Teil der Kosten für gesetzlich vorgeschriebene Gesundheits-Checks bei angehenden Auszubildenden unter 18 Jahren übernehmen. Nach Angaben des Sozialministeriums hätten Ärztinnen und Ärzte angekündigt, die Untersuchung wegen des seit 30 Jahren unveränderten Gebührensatzes von 23,31 Euro nicht mehr anzubieten.\n\nDeshalb sei mit der Kassenärztlichen Vereinigung vereinbart worden, pro Untersuchung 53,62 Euro abrechnen zu dürfen. Das Land übernehme die höheren Kosten laut Bericht für die Jahre 2026 und 2027; entsprechende Mittel seien im Landeshaushalt eingestellt. Der MDR schreibt außerdem, Thüringen sei derzeit das einzige Bundesland mit dieser Regelung.",
+      "analysis": {
+        "story_id": "wt-d80fd849c477e2ad",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Thüringen will die Kosten für Gesundheitschecks vor Ausbildungsbeginn teilweise übernehmen. Auslöser ist nach MDR-Angaben ein Streit um den alten Gebührensatz und die Sicherung des Angebots.",
+        "detail_summary": "Gesichert ist nach dem MDR-Bericht vor allem eine angekündigte Kostenzusage des Landes für vorgeschriebene Untersuchungen minderjähriger Azubis. Der Kern ist damit nicht ein neuer medizinischer Standard, sondern eine abweichende Finanzierungsregel zwischen Land, Ärzteschaft und Kassenärztlicher Vereinigung. Das ist material, weil die Regelung die Verfügbarkeit einer Pflichtuntersuchung für eine klar umrissene Gruppe beeinflussen kann und zugleich öffentliche Mittel bindet. Der Wirkpfad führt über die höhere Vergütung zur Stabilisierung des Angebots und damit zu veränderten Anreizen für Praxen. Mögliche Folge ist, dass der Zugang für Betroffene gesichert bleibt; offen bleibt aber, wie flächendeckend und dauerhaft das praktisch trägt. Die Evidenz bleibt vorläufig, weil bislang nur ein journalistischer Bericht mit ministeriellen Angaben vorliegt.",
+        "why_relevant": "Die Meldung beschreibt eine konkrete Änderung der Finanzierung einer vorgeschriebenen Gesundheitsuntersuchung für minderjährige Auszubildende und damit eine Regel mit unmittelbarem Bezug zu Zugang, Anreizen und Landeshaushalt.",
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind minderjährige Auszubildende und die Erreichbarkeit einer Pflichtuntersuchung; der Nutzen liegt eher in gesichertem Zugang als in direkter Wirkung."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Umweltbezug erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Es geht um eine öffentliche Finanzierungs- und Regelungsentscheidung mit Haushaltswirkung und nachvollziehbarer Verwaltungskorrektur."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die höhere Vergütung kann Praxen dazu bewegen, die Pflichtuntersuchung weiter anzubieten und damit den Zugang für unter 18-Jährige stabilisieren. Gleichzeitig verändert die Regelung den Mitteleinsatz des Landes für 2026 und 2027.",
+        "impact_risks": [
+          "Wenn die Regelung nur vorübergehend trägt, könnte das Angebot später erneut unter Druck geraten.",
+          "Öffentliche Mittel werden für eine begrenzte Zielgruppe und einen spezifischen Untersuchungszweck gebunden."
+        ],
+        "mechanisms": [
+          "höhere Vergütung verbessert den Anreiz für Ärztinnen und Ärzte",
+          "Landeszahlung senkt das Risiko eines Angebotsrückgangs"
+        ],
+        "first_order": [
+          "mehr gesicherte Verfügbarkeit der Pflichtuntersuchung",
+          "höhere Ausgaben im Landeshaushalt"
+        ],
+        "second_order": [
+          "bessere Zugänglichkeit für angehende Azubis unter 18",
+          "Stabilisierung der administrativen Abläufe zwischen Praxis, KV und Land"
+        ],
+        "third_order": [
+          "mögliche Vorbildwirkung für andere Länder bleibt offen",
+          "kann Diskussionen über Vergütungssysteme im Jugendarbeitsschutz beeinflussen"
+        ],
+        "systemic_relevance": "Begrenzte, aber echte Anpassung an einer Schnittstelle von Gesundheitsversorgung, Ausbildung und öffentlicher Finanzierung. Systemisch relevant ist vor allem die Sicherung eines Pflichtangebots über den Preismechanismus.",
+        "transformation_potential": "Niedrig bis mittel: eher Korrektur einer Engstelle als strukturelle Reform.",
+        "resilience": "Kann die Resilienz des Angebots erhöhen, solange die Finanzierung verlässlich bleibt; die Reversibilität bleibt hoch.",
+        "side_effects": [
+          "mögliche Präzedenz für ähnliche Gebührenkonflikte",
+          "Verlagerung der Kosten auf den öffentlichen Haushalt"
+        ],
+        "uncertainties": [
+          "Ob die Regelung praktisch überall funktioniert",
+          "Ob der 2026/2027 finanzierte Ansatz dauerhaft ausreicht",
+          "Ob weitere Länder folgen"
+        ],
+        "evidence_level": "mittel, aber nur attribuiert an einen MDR-Bericht mit ministeriellen Angaben; keine unabhängige Zweitquelle im Datensatz",
+        "attribution": "Die berichtete Entscheidung und die Zahlen stammen aus dem MDR-Text mit Verweis auf das Sozialministerium und die Kassenärztliche Vereinigung.",
+        "watch_next": [
+          "Umsetzung im Haushalt und tatsächliche Abrechnung prüfen",
+          "Beobachten, ob Praxen das Angebot wieder flächendeckend machen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 3, SDG 4, SDG 8"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält eine konkrete finanzielle und organisatorische Zusage für eine Pflichtuntersuchung; das ist mehr als Routine und betrifft eine klar definierte Gruppe sowie den Landeshaushalt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Gebührensatz alt",
+              "value": "23,31",
+              "unit": "Euro",
+              "context": "seit 30 Jahren geltender Satz laut Bericht"
+            },
+            {
+              "label": "Gebührensatz neu",
+              "value": "53,62",
+              "unit": "Euro",
+              "context": "Abrechnung pro Untersuchung laut Vereinbarung"
+            }
+          ],
+          "affected_groups": [
+            "kinder_jugend",
+            "beschaeftigte",
+            "staat"
+          ],
+          "timeline": [
+            {
+              "date": "2026",
+              "label": "Kostenübernahme für höhere Gebühr beginnt"
+            },
+            {
+              "date": "2027",
+              "label": "Kostenübernahme laut Bericht fortgesetzt"
+            }
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T02:37:01.895Z",
+          "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
+          "source_summary": "Das MDR-Stück meldet, dass Thüringen einen Teil der Kosten für den Gesundheits-Check vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen will. Nach Angaben des Sozialministeriums hatten Ärztinnen und Ärzte angekündigt, die Untersuchung nicht mehr zum seit 30 Jahren geltenden Gebührensatz von 23,31 Euro anzubieten.\n\nAls Folge sei mit der Kassenärztlichen Vereinigung vereinbart worden, pro Untersuchung 53,62 Euro abzurechnen. Das Land übernehme die höhere Gebühr für die Jahre 2026 und 2027; entsprechende Mittel seien im Landeshaushalt eingestellt. Laut Bericht ist Thüringen derzeit das einzige Bundesland mit dieser Regelung. Gesundheitschecks sind Teil des Jugendarbeitsschutzes.",
+          "analysis": {
+            "story_id": "wt-d80fd849c477e2ad",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Thüringen will die Kosten für Gesundheitschecks vor Ausbildungsbeginn für unter 18-Jährige teilweise übernehmen. Hintergrund ist ein Konflikt um den seit 30 Jahren geltenden Gebührensatz und eine neue Abrechnungsregel mit der Kassenärztlichen Vereinigung.",
+            "detail_summary": "Gesichert ist zunächst: Thüringen will nach Angaben des Sozialministeriums einen Teil der Kosten für die gesetzlich vorgeschriebene Untersuchung von minderjährigen Ausbildungsanfängern übernehmen. Auslöser ist, dass Ärztinnen und Ärzte die Leistung nicht mehr zum alten Gebührensatz erbringen wollten. Für die Abrechnung wurde laut Bericht mit der Kassenärztlichen Vereinigung ein Satz von 53,62 Euro je Untersuchung vereinbart, wobei das Land die höhere Gebühr für 2026 und 2027 trägt. Das ist materiell relevant, weil damit ein Zugangsvoraussetzung für Ausbildung abgesichert werden soll und zugleich die Kosten zwischen Staat und Ärzteschaft neu verteilt werden. Mögliche Folge ist, dass das Angebot der Pflichtuntersuchung flächendeckend erhalten bleibt; ob das tatsächlich so eintritt, bleibt offen. Die Evidenz stützt sich jedoch nur auf einen journalistischen Bericht mit ministeriellen Angaben, daher bleiben Reichweite, Umsetzung und mögliche Nebenfolgen vorerst nur begrenzt belastbar.",
+            "why_relevant": "Die Meldung betrifft eine verbindliche Kostenregel für eine gesetzlich vorgeschriebene Untersuchung im Übergang in Ausbildung und damit einen Eingriff in Finanzierung, Zugang und Versorgung.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind minderjährige Ausbildungsanfänger und Ärztinnen/Ärzte; der Wirkpfad läuft über Zugang zur Pflichtuntersuchung und Kostenverteilung."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Kein unmittelbarer Umweltbezug erkennbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Entscheidung betrifft öffentliche Mittel und eine Regelung im Sozial- und Gesundheitssystem; die Beleglage bleibt aber einseitig."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Kostenübernahme kann das Angebot der Pflichtuntersuchung stabilisieren und damit einen Zugangskonflikt im Ausbildungsstart entschärfen.",
+            "impact_risks": [
+              "Ohne verlässliche Umsetzung könnten Engpässe oder regionale Unterschiede bleiben.",
+              "Die Haushaltsübernahme verschiebt Kosten in den Staatshaushalt und kann Folgeansprüche erzeugen."
+            ],
+            "mechanisms": [
+              "Kostenentlastung für Ärztinnen und Ärzte",
+              "Absicherung des Angebots über öffentliche Finanzierung",
+              "Vermeidung eines Versorgungsausfalls bei Pflichtuntersuchungen"
+            ],
+            "first_order": [
+              "Minderjährige können die vorgeschriebene Untersuchung voraussichtlich weiter wahrnehmen.",
+              "Die Abrechnungssituation für die Leistung ändert sich."
+            ],
+            "second_order": [
+              "Der Ausbildungszugang bleibt administrativ abgesichert.",
+              "Der Landeshaushalt trägt zusätzliche oder neu geregelte Ausgaben."
+            ],
+            "third_order": [
+              "Die Regelung kann als Vorbild für ähnliche Konflikte in anderen Ländern dienen, falls dort vergleichbare Kostenprobleme auftreten."
+            ],
+            "systemic_relevance": "Die Meldung berührt eine kleine, aber systemisch relevante Schnittstelle zwischen Jugendgesundheit, Berufsstart und staatlicher Finanzierung.",
+            "transformation_potential": "Eher begrenzt: Es geht um eine punktuelle Finanzierungsanpassung, nicht um einen strukturellen Umbau des Systems.",
+            "resilience": "Erhöht die Resilienz des Angebots, falls die Finanzierung tatsächlich stabil trägt; die Robustheit ist bislang nur angekündigt, nicht belegt.",
+            "side_effects": [
+              "Verlagerung der Kosten auf den Staatshaushalt",
+              "Mögliche Signalwirkung für andere Bundesländer"
+            ],
+            "uncertainties": [
+              "Ob die Regelung praktisch überall funktioniert, ist offen.",
+              "Die Meldung stützt sich nur auf einen MDR-Bericht mit ministeriellen Angaben."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Der Kern stützt sich auf MDR-Bericht und dort wiedergegebene Angaben des Sozialministeriums; unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor.",
+            "watch_next": [
+              "Umsetzung der Abrechnung und tatsächliche Zahl der erstatteten Untersuchungen beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 4, SDG 8"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Kosten- und Abrechnungsregel für eine gesetzliche Pflichtuntersuchung mit Laufzeit über zwei Jahre; materiell wegen Zugang zu Ausbildung und Haushaltswirkung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "alter Gebührensatz",
+                  "value": "23,31",
+                  "unit": "Euro",
+                  "context": "Seit 30 Jahren unveränderter Satz laut Bericht",
+                  "claim_id": "wt-d80fd849c477e2ad-claim-01"
+                },
+                {
+                  "label": "neuer Satz pro Untersuchung",
+                  "value": "53,62",
+                  "unit": "Euro",
+                  "context": "Abrechnung pro Untersuchung nach Vereinbarung",
+                  "claim_id": "wt-d80fd849c477e2ad-claim-01"
+                },
+                {
+                  "label": "Laufzeit",
+                  "value": "2026 und 2027",
+                  "unit": "Jahre",
+                  "context": "Für diese Jahre übernimmt das Land die höhere Gebühr",
+                  "claim_id": "wt-d80fd849c477e2ad-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "staat",
+                "kinder_jugend"
+              ],
+              "timeline": [
+                {
+                  "date": "2026",
+                  "label": "Land übernimmt höhere Gebühr"
+                },
+                {
+                  "date": "2027",
+                  "label": "Land übernimmt höhere Gebühr"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v1-claim-1",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Thüringen will einen Teil der Kosten für die gesetzlich vorgeschriebene Gesundheitsuntersuchung vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "e66e2078abd8ec671242",
+                  "checked_at": "2026-09-04T02:37:01.895Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:37:01.895Z"
+            },
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v1-claim-2",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Die Ärzteschaft wollte die Untersuchung nicht mehr zum seit 30 Jahren geltenden Gebührensatz von 23,31 Euro anbieten.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "33b4a30778ad8e69194d",
+                  "checked_at": "2026-09-04T02:37:01.895Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:37:01.895Z"
+            },
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v1-claim-3",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Mit der Kassenärztlichen Vereinigung wurde vereinbart, pro Untersuchung 53,62 Euro abzurechnen; das Land übernimmt die höhere Gebühr für 2026 und 2027.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "48fc1145656b2ab026ff",
+                  "checked_at": "2026-09-04T02:37:01.895Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "f333425b2843f5acacf7",
+                  "checked_at": "2026-09-04T02:37:01.895Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "586f9b719813bfece245",
+                  "checked_at": "2026-09-04T02:37:01.895Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:37:01.895Z"
+            },
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v1-claim-4",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Thüringen ist nach Angaben des Sozialministeriums derzeit das einzige Bundesland mit einer solchen Kostenübernahme.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "586f9b719813bfece245",
+                  "checked_at": "2026-09-04T02:37:01.895Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:37:01.895Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T11:51:39.299Z",
+          "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
+          "source_summary": "Der MDR berichtet, Thüringen wolle einen Teil der Kosten für gesetzlich vorgeschriebene Gesundheits-Checks bei angehenden Auszubildenden unter 18 Jahren übernehmen. Nach Angaben des Sozialministeriums hätten Ärztinnen und Ärzte angekündigt, die Untersuchung wegen des seit 30 Jahren unveränderten Gebührensatzes von 23,31 Euro nicht mehr anzubieten.\n\nDeshalb sei mit der Kassenärztlichen Vereinigung vereinbart worden, pro Untersuchung 53,62 Euro abrechnen zu dürfen. Das Land übernehme die höheren Kosten laut Bericht für die Jahre 2026 und 2027; entsprechende Mittel seien im Landeshaushalt eingestellt. Der MDR schreibt außerdem, Thüringen sei derzeit das einzige Bundesland mit dieser Regelung.",
+          "analysis": {
+            "story_id": "wt-d80fd849c477e2ad",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Thüringen will die Kosten für Gesundheitschecks vor Ausbildungsbeginn teilweise übernehmen. Auslöser ist nach MDR-Angaben ein Streit um den alten Gebührensatz und die Sicherung des Angebots.",
+            "detail_summary": "Gesichert ist nach dem MDR-Bericht vor allem eine angekündigte Kostenzusage des Landes für vorgeschriebene Untersuchungen minderjähriger Azubis. Der Kern ist damit nicht ein neuer medizinischer Standard, sondern eine abweichende Finanzierungsregel zwischen Land, Ärzteschaft und Kassenärztlicher Vereinigung. Das ist material, weil die Regelung die Verfügbarkeit einer Pflichtuntersuchung für eine klar umrissene Gruppe beeinflussen kann und zugleich öffentliche Mittel bindet. Der Wirkpfad führt über die höhere Vergütung zur Stabilisierung des Angebots und damit zu veränderten Anreizen für Praxen. Mögliche Folge ist, dass der Zugang für Betroffene gesichert bleibt; offen bleibt aber, wie flächendeckend und dauerhaft das praktisch trägt. Die Evidenz bleibt vorläufig, weil bislang nur ein journalistischer Bericht mit ministeriellen Angaben vorliegt.",
+            "why_relevant": "Die Meldung beschreibt eine konkrete Änderung der Finanzierung einer vorgeschriebenen Gesundheitsuntersuchung für minderjährige Auszubildende und damit eine Regel mit unmittelbarem Bezug zu Zugang, Anreizen und Landeshaushalt.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind minderjährige Auszubildende und die Erreichbarkeit einer Pflichtuntersuchung; der Nutzen liegt eher in gesichertem Zugang als in direkter Wirkung."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Kein unmittelbarer Umweltbezug erkennbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Es geht um eine öffentliche Finanzierungs- und Regelungsentscheidung mit Haushaltswirkung und nachvollziehbarer Verwaltungskorrektur."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die höhere Vergütung kann Praxen dazu bewegen, die Pflichtuntersuchung weiter anzubieten und damit den Zugang für unter 18-Jährige stabilisieren. Gleichzeitig verändert die Regelung den Mitteleinsatz des Landes für 2026 und 2027.",
+            "impact_risks": [
+              "Wenn die Regelung nur vorübergehend trägt, könnte das Angebot später erneut unter Druck geraten.",
+              "Öffentliche Mittel werden für eine begrenzte Zielgruppe und einen spezifischen Untersuchungszweck gebunden."
+            ],
+            "mechanisms": [
+              "höhere Vergütung verbessert den Anreiz für Ärztinnen und Ärzte",
+              "Landeszahlung senkt das Risiko eines Angebotsrückgangs"
+            ],
+            "first_order": [
+              "mehr gesicherte Verfügbarkeit der Pflichtuntersuchung",
+              "höhere Ausgaben im Landeshaushalt"
+            ],
+            "second_order": [
+              "bessere Zugänglichkeit für angehende Azubis unter 18",
+              "Stabilisierung der administrativen Abläufe zwischen Praxis, KV und Land"
+            ],
+            "third_order": [
+              "mögliche Vorbildwirkung für andere Länder bleibt offen",
+              "kann Diskussionen über Vergütungssysteme im Jugendarbeitsschutz beeinflussen"
+            ],
+            "systemic_relevance": "Begrenzte, aber echte Anpassung an einer Schnittstelle von Gesundheitsversorgung, Ausbildung und öffentlicher Finanzierung. Systemisch relevant ist vor allem die Sicherung eines Pflichtangebots über den Preismechanismus.",
+            "transformation_potential": "Niedrig bis mittel: eher Korrektur einer Engstelle als strukturelle Reform.",
+            "resilience": "Kann die Resilienz des Angebots erhöhen, solange die Finanzierung verlässlich bleibt; die Reversibilität bleibt hoch.",
+            "side_effects": [
+              "mögliche Präzedenz für ähnliche Gebührenkonflikte",
+              "Verlagerung der Kosten auf den öffentlichen Haushalt"
+            ],
+            "uncertainties": [
+              "Ob die Regelung praktisch überall funktioniert",
+              "Ob der 2026/2027 finanzierte Ansatz dauerhaft ausreicht",
+              "Ob weitere Länder folgen"
+            ],
+            "evidence_level": "mittel, aber nur attribuiert an einen MDR-Bericht mit ministeriellen Angaben; keine unabhängige Zweitquelle im Datensatz",
+            "attribution": "Die berichtete Entscheidung und die Zahlen stammen aus dem MDR-Text mit Verweis auf das Sozialministerium und die Kassenärztliche Vereinigung.",
+            "watch_next": [
+              "Umsetzung im Haushalt und tatsächliche Abrechnung prüfen",
+              "Beobachten, ob Praxen das Angebot wieder flächendeckend machen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 4, SDG 8"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält eine konkrete finanzielle und organisatorische Zusage für eine Pflichtuntersuchung; das ist mehr als Routine und betrifft eine klar definierte Gruppe sowie den Landeshaushalt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Gebührensatz alt",
+                  "value": "23,31",
+                  "unit": "Euro",
+                  "context": "seit 30 Jahren geltender Satz laut Bericht"
+                },
+                {
+                  "label": "Gebührensatz neu",
+                  "value": "53,62",
+                  "unit": "Euro",
+                  "context": "Abrechnung pro Untersuchung laut Vereinbarung"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "beschaeftigte",
+                "staat"
+              ],
+              "timeline": [
+                {
+                  "date": "2026",
+                  "label": "Kostenübernahme für höhere Gebühr beginnt"
+                },
+                {
+                  "date": "2027",
+                  "label": "Kostenübernahme laut Bericht fortgesetzt"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v2-claim-1",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Thüringen will einen Teil der Kosten für gesetzlich vorgeschriebene Gesundheitsuntersuchungen vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "e66e2078abd8ec671242",
+                  "checked_at": "2026-09-04T11:51:39.299Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            },
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v2-claim-2",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Ärztinnen und Ärzte wollten die Untersuchung nach Darstellung des Sozialministeriums nicht mehr zum seit 30 Jahren geltenden Gebührensatz anbieten.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "33b4a30778ad8e69194d",
+                  "checked_at": "2026-09-04T11:51:39.299Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            },
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v2-claim-3",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Mit der Kassenärztlichen Vereinigung wurde laut Bericht vereinbart, dass pro Untersuchung 53,62 Euro abgerechnet werden dürfen und das Land die höheren Kosten 2026 und 2027 übernimmt.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "48fc1145656b2ab026ff",
+                  "checked_at": "2026-09-04T11:51:39.299Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "f333425b2843f5acacf7",
+                  "checked_at": "2026-09-04T11:51:39.299Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "586f9b719813bfece245",
+                  "checked_at": "2026-09-04T11:51:39.299Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            },
+            {
+              "claim_id": "wt-d80fd849c477e2ad-v2-claim-4",
+              "story_id": "wt-d80fd849c477e2ad",
+              "claim": "Der MDR-Bericht sagt, Thüringen sei derzeit das einzige Bundesland, das so verfahre.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+                  "excerpt_hash": "586f9b719813bfece245",
+                  "checked_at": "2026-09-04T11:51:39.299Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:51:39.299Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
+              "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T02:37:01.895Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T11:51:39.299Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-68b6674db060e89b",
       "slug": "spritpreise-am-bodensee-auf-rekordniveau-so-viel-sparen-autofahrer-in-osterreich-60e89b",
@@ -16771,7 +17544,7 @@
       "verification_started_at": "2026-09-04T09:22:32.024Z",
       "publish_ready_at": "2026-09-04T09:22:48.037Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -17074,49 +17847,7 @@
         "fallback_reason": "HIGGSFIELD_RETRY_EXHAUSTED",
         "refresh_failure": "HIGGSFIELD_RETRY_EXHAUSTED"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T11:36:39.394Z",
-        "content_hash": "81cb5d63d44d23392a53f615e89cbdefdf6d803863db64c0631615366d6cf29c",
-        "sources": [
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/berlin/berliner-wirtschaft/teure-apartments-in-der-berliner-europacity-gerichtstermin-wegen-verschwundener-sozialwohnungen-steht-fest-16017038.html",
-            "title": "Teure Apartments in der Berliner Europacity: Gerichtstermin wegen verschwundener Sozialwohnungen steht fest",
-            "summary": "Vor eineinhalb Jahren reichte der Senat Klage ein, damit die 215 Wohnungen in der Berliner Europacity endlich als Sozialwohnungen vermietet werden. Nun steht der erste Verhandlungstermin kurz bevor.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T09:13:49.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4d433f848f3ac634fddd1998e7bcaa570041707a61fa3d660aaaaa882584c18e",
-            "source_item_id": "95e90c22a1ab510646cae7b4ff28b78dd2c1cd21616b5e7295d3dd0ea770958e",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T09:13:49.000Z",
-            "ingested_at": "2026-09-04T11:36:39.394Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-b4f3b5cdcc89bd1d",
@@ -27324,7 +28055,7 @@
       "verification_started_at": "2026-09-04T04:38:22.918Z",
       "publish_ready_at": "2026-09-04T04:38:32.687Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -27678,51 +28409,7 @@
         "generated_at": "2026-09-04T09:50:38.408Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T11:36:39.394Z",
-        "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
-            "title": "Bessere Startchancen für Kinder",
-            "summary": "Eine gute Kinderbetreuung und die frühe Förderung für alle Kinder gehören zu den wichtigsten Zukunftsaufgaben in Deutschland. Die Bundesregierung will deshalb die Startchancen von Kindern verbessern und die Qualität der frühkindlichen Bildung stärken.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T08:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "ad106e3458e100625188956173f4767630e28a9efb5aa166e9b34a0a905837bd",
-            "source_item_id": "02e8d790bed3e7fc28284bd64172d65ac9fca6a952aeac1a0009929ce5098ac3",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T11:36:39.394Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-b5e0a39f46388642",
@@ -28734,7 +29421,7 @@
       "verification_started_at": "2026-09-04T04:06:15.719Z",
       "publish_ready_at": "2026-09-04T04:06:28.686Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -29178,50 +29865,7 @@
         "generated_at": "2026-09-04T09:50:52.466Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T11:36:39.394Z",
-        "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
-            "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
-            "summary": "Hessische Beamte und Pensionäre bekommen mehr Geld. Das beschloss der Landtag mit den Stimmen der schwarz-roten Regierung. Die Opposition sieht besonders ein verankertes Familieneinkünftemodell als rechtlich bedenklich.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-01T19:26:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "1f72fb08ecf5e111ffe8c70240bcc6638798e79935671ed6d028661d1249ae74",
-            "source_item_id": "e24f40b96cc644e85a71a76970f7e4c230f8439e6d32e882d3056931d60a974e",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T19:26:04.000Z",
-            "ingested_at": "2026-09-04T11:36:39.394Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-c0b0ea342baf3286",
@@ -29917,7 +30561,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T11:36:39.394Z",
+        "detected_at": "2026-09-04T11:51:26.099Z",
         "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
         "sources": [
           {
@@ -29952,9 +30596,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -30063,7 +30709,7 @@
       "verification_started_at": "2026-09-04T03:36:50.985Z",
       "publish_ready_at": "2026-09-04T03:37:06.255Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -30429,49 +31075,7 @@
         "generated_at": "2026-09-04T06:03:31.520Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T11:36:39.394Z",
-        "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
-            "title": "France agriculture production sees economic hit from heatwaves",
-            "summary": "France's recent heatwaves didn't just pose enormous health risks, they also hampered the economy. Authorities have estimated that the recent heat and drought caused production to plummet and expect wealth generated by the agricultural sector to decline by 8% over the course of the year. The knock-on effects will cost the French economy an estimated 0.1 percentage points of growth in 2026.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:05:41.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "20d6cfd905f85c4b6eeb6985e65f3135171e3ee5351cd7d09e479e6ce09029d4",
-            "source_item_id": "a5510b56d96eb7dc84ee099a7b2845d383db50c1d1ebd4beb43f81d875527f42",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:05:41.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-bf5e25ce0e5f9ca3",
@@ -32779,604 +33383,6 @@
         "status": "generated"
       },
       "deepening_checks": 2
-    },
-    {
-      "story_id": "wt-d80fd849c477e2ad",
-      "slug": "gesundheitscheck-vor-ausbildung-thuringen-ubernimmt-kosten-fur-untersuchung-77e2ad",
-      "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
-      "first_seen": "2026-09-03T13:56:50.000Z",
-      "last_updated": "2026-09-04T02:37:01.895Z",
-      "published_at": "2026-09-04T02:37:01.895Z",
-      "updated_at": "2026-09-04T02:37:01.895Z",
-      "topic": [
-        "Arbeit",
-        "Gesundheit",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-          "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
-          "summary": "Am Ende haben sich die Ärzte durchgesetzt: Weil sie die gesetzlich vorgeschriebene Untersuchung angehender Azubis nicht mehr für den seit 30 Jahren geltenden Gebührensatz machen wollen, legt das Land was obendrauf.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T13:56:50.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1",
-          "source_item_id": "cd756b127cb22c847b980aced730cbeeef0e04f07aca4fdb3a4d2dcfe39532df",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T13:56:50.000Z",
-          "ingested_at": "2026-09-04T02:36:31.848Z",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-d80fd849c477e2ad-v1-claim-1",
-          "story_id": "wt-d80fd849c477e2ad",
-          "claim": "Thüringen will einen Teil der Kosten für die gesetzlich vorgeschriebene Gesundheitsuntersuchung vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen.",
-          "status": "single_source_claim",
-          "source_id": "mdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-              "excerpt_hash": "e66e2078abd8ec671242",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T02:37:01.895Z"
-        },
-        {
-          "claim_id": "wt-d80fd849c477e2ad-v1-claim-2",
-          "story_id": "wt-d80fd849c477e2ad",
-          "claim": "Die Ärzteschaft wollte die Untersuchung nicht mehr zum seit 30 Jahren geltenden Gebührensatz von 23,31 Euro anbieten.",
-          "status": "single_source_claim",
-          "source_id": "mdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-              "excerpt_hash": "33b4a30778ad8e69194d",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T02:37:01.895Z"
-        },
-        {
-          "claim_id": "wt-d80fd849c477e2ad-v1-claim-3",
-          "story_id": "wt-d80fd849c477e2ad",
-          "claim": "Mit der Kassenärztlichen Vereinigung wurde vereinbart, pro Untersuchung 53,62 Euro abzurechnen; das Land übernimmt die höhere Gebühr für 2026 und 2027.",
-          "status": "single_source_claim",
-          "source_id": "mdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-              "excerpt_hash": "48fc1145656b2ab026ff",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            },
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-              "excerpt_hash": "f333425b2843f5acacf7",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            },
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-              "excerpt_hash": "586f9b719813bfece245",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T02:37:01.895Z"
-        },
-        {
-          "claim_id": "wt-d80fd849c477e2ad-v1-claim-4",
-          "story_id": "wt-d80fd849c477e2ad",
-          "claim": "Thüringen ist nach Angaben des Sozialministeriums derzeit das einzige Bundesland mit einer solchen Kostenübernahme.",
-          "status": "single_source_claim",
-          "source_id": "mdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-              "excerpt_hash": "586f9b719813bfece245",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T02:37:01.895Z"
-        }
-      ],
-      "event_id": "event-ef24781d9a226809238d",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T02:36:47.990Z",
-      "publish_ready_at": "2026-09-04T02:37:01.895Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-04T10:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob der Landeshaushalt die angekündigten Mittel für 2026 und 2027 tatsächlich bereitstellt und die Abrechnungspraxis umgesetzt wird.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Haushaltsansatz, Verwaltungsumsetzung und tatsächlich abgerechnete Fälle",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-340f0d8865c0010f",
-          "announced_at": "2026-09-03T13:56:50.000Z",
-          "follow_up_date": "2026-09-11T02:37:01.895Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Das MDR-Stück meldet, dass Thüringen einen Teil der Kosten für den Gesundheits-Check vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen will. Nach Angaben des Sozialministeriums hatten Ärztinnen und Ärzte angekündigt, die Untersuchung nicht mehr zum seit 30 Jahren geltenden Gebührensatz von 23,31 Euro anzubieten.\n\nAls Folge sei mit der Kassenärztlichen Vereinigung vereinbart worden, pro Untersuchung 53,62 Euro abzurechnen. Das Land übernehme die höhere Gebühr für die Jahre 2026 und 2027; entsprechende Mittel seien im Landeshaushalt eingestellt. Laut Bericht ist Thüringen derzeit das einzige Bundesland mit dieser Regelung. Gesundheitschecks sind Teil des Jugendarbeitsschutzes.",
-      "analysis": {
-        "story_id": "wt-d80fd849c477e2ad",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Thüringen will die Kosten für Gesundheitschecks vor Ausbildungsbeginn für unter 18-Jährige teilweise übernehmen. Hintergrund ist ein Konflikt um den seit 30 Jahren geltenden Gebührensatz und eine neue Abrechnungsregel mit der Kassenärztlichen Vereinigung.",
-        "detail_summary": "Gesichert ist zunächst: Thüringen will nach Angaben des Sozialministeriums einen Teil der Kosten für die gesetzlich vorgeschriebene Untersuchung von minderjährigen Ausbildungsanfängern übernehmen. Auslöser ist, dass Ärztinnen und Ärzte die Leistung nicht mehr zum alten Gebührensatz erbringen wollten. Für die Abrechnung wurde laut Bericht mit der Kassenärztlichen Vereinigung ein Satz von 53,62 Euro je Untersuchung vereinbart, wobei das Land die höhere Gebühr für 2026 und 2027 trägt. Das ist materiell relevant, weil damit ein Zugangsvoraussetzung für Ausbildung abgesichert werden soll und zugleich die Kosten zwischen Staat und Ärzteschaft neu verteilt werden. Mögliche Folge ist, dass das Angebot der Pflichtuntersuchung flächendeckend erhalten bleibt; ob das tatsächlich so eintritt, bleibt offen. Die Evidenz stützt sich jedoch nur auf einen journalistischen Bericht mit ministeriellen Angaben, daher bleiben Reichweite, Umsetzung und mögliche Nebenfolgen vorerst nur begrenzt belastbar.",
-        "why_relevant": "Die Meldung betrifft eine verbindliche Kostenregel für eine gesetzlich vorgeschriebene Untersuchung im Übergang in Ausbildung und damit einen Eingriff in Finanzierung, Zugang und Versorgung.",
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind minderjährige Ausbildungsanfänger und Ärztinnen/Ärzte; der Wirkpfad läuft über Zugang zur Pflichtuntersuchung und Kostenverteilung."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein unmittelbarer Umweltbezug erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Entscheidung betrifft öffentliche Mittel und eine Regelung im Sozial- und Gesundheitssystem; die Beleglage bleibt aber einseitig."
-        },
-        "importance": "mittel",
-        "impact_potential": "Die Kostenübernahme kann das Angebot der Pflichtuntersuchung stabilisieren und damit einen Zugangskonflikt im Ausbildungsstart entschärfen.",
-        "impact_risks": [
-          "Ohne verlässliche Umsetzung könnten Engpässe oder regionale Unterschiede bleiben.",
-          "Die Haushaltsübernahme verschiebt Kosten in den Staatshaushalt und kann Folgeansprüche erzeugen."
-        ],
-        "mechanisms": [
-          "Kostenentlastung für Ärztinnen und Ärzte",
-          "Absicherung des Angebots über öffentliche Finanzierung",
-          "Vermeidung eines Versorgungsausfalls bei Pflichtuntersuchungen"
-        ],
-        "first_order": [
-          "Minderjährige können die vorgeschriebene Untersuchung voraussichtlich weiter wahrnehmen.",
-          "Die Abrechnungssituation für die Leistung ändert sich."
-        ],
-        "second_order": [
-          "Der Ausbildungszugang bleibt administrativ abgesichert.",
-          "Der Landeshaushalt trägt zusätzliche oder neu geregelte Ausgaben."
-        ],
-        "third_order": [
-          "Die Regelung kann als Vorbild für ähnliche Konflikte in anderen Ländern dienen, falls dort vergleichbare Kostenprobleme auftreten."
-        ],
-        "systemic_relevance": "Die Meldung berührt eine kleine, aber systemisch relevante Schnittstelle zwischen Jugendgesundheit, Berufsstart und staatlicher Finanzierung.",
-        "transformation_potential": "Eher begrenzt: Es geht um eine punktuelle Finanzierungsanpassung, nicht um einen strukturellen Umbau des Systems.",
-        "resilience": "Erhöht die Resilienz des Angebots, falls die Finanzierung tatsächlich stabil trägt; die Robustheit ist bislang nur angekündigt, nicht belegt.",
-        "side_effects": [
-          "Verlagerung der Kosten auf den Staatshaushalt",
-          "Mögliche Signalwirkung für andere Bundesländer"
-        ],
-        "uncertainties": [
-          "Ob die Regelung praktisch überall funktioniert, ist offen.",
-          "Die Meldung stützt sich nur auf einen MDR-Bericht mit ministeriellen Angaben."
-        ],
-        "evidence_level": "attributed_single_source",
-        "attribution": "Der Kern stützt sich auf MDR-Bericht und dort wiedergegebene Angaben des Sozialministeriums; unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor.",
-        "watch_next": [
-          "Umsetzung der Abrechnung und tatsächliche Zahl der erstatteten Untersuchungen beobachten."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 3, SDG 4, SDG 8"
-        ],
-        "publication_gate": {
-          "news_value": "substantive_commitment",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "none",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Neue Kosten- und Abrechnungsregel für eine gesetzliche Pflichtuntersuchung mit Laufzeit über zwei Jahre; materiell wegen Zugang zu Ausbildung und Haushaltswirkung."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "alter Gebührensatz",
-              "value": "23,31",
-              "unit": "Euro",
-              "context": "Seit 30 Jahren unveränderter Satz laut Bericht",
-              "claim_id": "wt-d80fd849c477e2ad-claim-01"
-            },
-            {
-              "label": "neuer Satz pro Untersuchung",
-              "value": "53,62",
-              "unit": "Euro",
-              "context": "Abrechnung pro Untersuchung nach Vereinbarung",
-              "claim_id": "wt-d80fd849c477e2ad-claim-01"
-            },
-            {
-              "label": "Laufzeit",
-              "value": "2026 und 2027",
-              "unit": "Jahre",
-              "context": "Für diese Jahre übernimmt das Land die höhere Gebühr",
-              "claim_id": "wt-d80fd849c477e2ad-claim-01"
-            }
-          ],
-          "affected_groups": [
-            "beschaeftigte",
-            "staat",
-            "kinder_jugend"
-          ],
-          "timeline": [
-            {
-              "date": "2026",
-              "label": "Land übernimmt höhere Gebühr"
-            },
-            {
-              "date": "2027",
-              "label": "Land übernimmt höhere Gebühr"
-            }
-          ],
-          "tendency": {
-            "human": "chance",
-            "planet": "offen",
-            "democracy": "gemischt"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T02:37:01.895Z",
-          "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
-          "source_summary": "Das MDR-Stück meldet, dass Thüringen einen Teil der Kosten für den Gesundheits-Check vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen will. Nach Angaben des Sozialministeriums hatten Ärztinnen und Ärzte angekündigt, die Untersuchung nicht mehr zum seit 30 Jahren geltenden Gebührensatz von 23,31 Euro anzubieten.\n\nAls Folge sei mit der Kassenärztlichen Vereinigung vereinbart worden, pro Untersuchung 53,62 Euro abzurechnen. Das Land übernehme die höhere Gebühr für die Jahre 2026 und 2027; entsprechende Mittel seien im Landeshaushalt eingestellt. Laut Bericht ist Thüringen derzeit das einzige Bundesland mit dieser Regelung. Gesundheitschecks sind Teil des Jugendarbeitsschutzes.",
-          "analysis": {
-            "story_id": "wt-d80fd849c477e2ad",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Thüringen will die Kosten für Gesundheitschecks vor Ausbildungsbeginn für unter 18-Jährige teilweise übernehmen. Hintergrund ist ein Konflikt um den seit 30 Jahren geltenden Gebührensatz und eine neue Abrechnungsregel mit der Kassenärztlichen Vereinigung.",
-            "detail_summary": "Gesichert ist zunächst: Thüringen will nach Angaben des Sozialministeriums einen Teil der Kosten für die gesetzlich vorgeschriebene Untersuchung von minderjährigen Ausbildungsanfängern übernehmen. Auslöser ist, dass Ärztinnen und Ärzte die Leistung nicht mehr zum alten Gebührensatz erbringen wollten. Für die Abrechnung wurde laut Bericht mit der Kassenärztlichen Vereinigung ein Satz von 53,62 Euro je Untersuchung vereinbart, wobei das Land die höhere Gebühr für 2026 und 2027 trägt. Das ist materiell relevant, weil damit ein Zugangsvoraussetzung für Ausbildung abgesichert werden soll und zugleich die Kosten zwischen Staat und Ärzteschaft neu verteilt werden. Mögliche Folge ist, dass das Angebot der Pflichtuntersuchung flächendeckend erhalten bleibt; ob das tatsächlich so eintritt, bleibt offen. Die Evidenz stützt sich jedoch nur auf einen journalistischen Bericht mit ministeriellen Angaben, daher bleiben Reichweite, Umsetzung und mögliche Nebenfolgen vorerst nur begrenzt belastbar.",
-            "why_relevant": "Die Meldung betrifft eine verbindliche Kostenregel für eine gesetzlich vorgeschriebene Untersuchung im Übergang in Ausbildung und damit einen Eingriff in Finanzierung, Zugang und Versorgung.",
-            "status": "angekündigt",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Betroffen sind minderjährige Ausbildungsanfänger und Ärztinnen/Ärzte; der Wirkpfad läuft über Zugang zur Pflichtuntersuchung und Kostenverteilung."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Kein unmittelbarer Umweltbezug erkennbar."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Entscheidung betrifft öffentliche Mittel und eine Regelung im Sozial- und Gesundheitssystem; die Beleglage bleibt aber einseitig."
-            },
-            "importance": "mittel",
-            "impact_potential": "Die Kostenübernahme kann das Angebot der Pflichtuntersuchung stabilisieren und damit einen Zugangskonflikt im Ausbildungsstart entschärfen.",
-            "impact_risks": [
-              "Ohne verlässliche Umsetzung könnten Engpässe oder regionale Unterschiede bleiben.",
-              "Die Haushaltsübernahme verschiebt Kosten in den Staatshaushalt und kann Folgeansprüche erzeugen."
-            ],
-            "mechanisms": [
-              "Kostenentlastung für Ärztinnen und Ärzte",
-              "Absicherung des Angebots über öffentliche Finanzierung",
-              "Vermeidung eines Versorgungsausfalls bei Pflichtuntersuchungen"
-            ],
-            "first_order": [
-              "Minderjährige können die vorgeschriebene Untersuchung voraussichtlich weiter wahrnehmen.",
-              "Die Abrechnungssituation für die Leistung ändert sich."
-            ],
-            "second_order": [
-              "Der Ausbildungszugang bleibt administrativ abgesichert.",
-              "Der Landeshaushalt trägt zusätzliche oder neu geregelte Ausgaben."
-            ],
-            "third_order": [
-              "Die Regelung kann als Vorbild für ähnliche Konflikte in anderen Ländern dienen, falls dort vergleichbare Kostenprobleme auftreten."
-            ],
-            "systemic_relevance": "Die Meldung berührt eine kleine, aber systemisch relevante Schnittstelle zwischen Jugendgesundheit, Berufsstart und staatlicher Finanzierung.",
-            "transformation_potential": "Eher begrenzt: Es geht um eine punktuelle Finanzierungsanpassung, nicht um einen strukturellen Umbau des Systems.",
-            "resilience": "Erhöht die Resilienz des Angebots, falls die Finanzierung tatsächlich stabil trägt; die Robustheit ist bislang nur angekündigt, nicht belegt.",
-            "side_effects": [
-              "Verlagerung der Kosten auf den Staatshaushalt",
-              "Mögliche Signalwirkung für andere Bundesländer"
-            ],
-            "uncertainties": [
-              "Ob die Regelung praktisch überall funktioniert, ist offen.",
-              "Die Meldung stützt sich nur auf einen MDR-Bericht mit ministeriellen Angaben."
-            ],
-            "evidence_level": "attributed_single_source",
-            "attribution": "Der Kern stützt sich auf MDR-Bericht und dort wiedergegebene Angaben des Sozialministeriums; unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor.",
-            "watch_next": [
-              "Umsetzung der Abrechnung und tatsächliche Zahl der erstatteten Untersuchungen beobachten."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 3, SDG 4, SDG 8"
-            ],
-            "publication_gate": {
-              "news_value": "substantive_commitment",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "none",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neue Kosten- und Abrechnungsregel für eine gesetzliche Pflichtuntersuchung mit Laufzeit über zwei Jahre; materiell wegen Zugang zu Ausbildung und Haushaltswirkung."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "alter Gebührensatz",
-                  "value": "23,31",
-                  "unit": "Euro",
-                  "context": "Seit 30 Jahren unveränderter Satz laut Bericht",
-                  "claim_id": "wt-d80fd849c477e2ad-claim-01"
-                },
-                {
-                  "label": "neuer Satz pro Untersuchung",
-                  "value": "53,62",
-                  "unit": "Euro",
-                  "context": "Abrechnung pro Untersuchung nach Vereinbarung",
-                  "claim_id": "wt-d80fd849c477e2ad-claim-01"
-                },
-                {
-                  "label": "Laufzeit",
-                  "value": "2026 und 2027",
-                  "unit": "Jahre",
-                  "context": "Für diese Jahre übernimmt das Land die höhere Gebühr",
-                  "claim_id": "wt-d80fd849c477e2ad-claim-01"
-                }
-              ],
-              "affected_groups": [
-                "beschaeftigte",
-                "staat",
-                "kinder_jugend"
-              ],
-              "timeline": [
-                {
-                  "date": "2026",
-                  "label": "Land übernimmt höhere Gebühr"
-                },
-                {
-                  "date": "2027",
-                  "label": "Land übernimmt höhere Gebühr"
-                }
-              ],
-              "tendency": {
-                "human": "chance",
-                "planet": "offen",
-                "democracy": "gemischt"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-d80fd849c477e2ad-v1-claim-1",
-              "story_id": "wt-d80fd849c477e2ad",
-              "claim": "Thüringen will einen Teil der Kosten für die gesetzlich vorgeschriebene Gesundheitsuntersuchung vor Ausbildungsbeginn bei unter 18-Jährigen übernehmen.",
-              "status": "single_source_claim",
-              "source_id": "mdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-                  "excerpt_hash": "e66e2078abd8ec671242",
-                  "checked_at": "2026-09-04T02:37:01.895Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            },
-            {
-              "claim_id": "wt-d80fd849c477e2ad-v1-claim-2",
-              "story_id": "wt-d80fd849c477e2ad",
-              "claim": "Die Ärzteschaft wollte die Untersuchung nicht mehr zum seit 30 Jahren geltenden Gebührensatz von 23,31 Euro anbieten.",
-              "status": "single_source_claim",
-              "source_id": "mdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-                  "excerpt_hash": "33b4a30778ad8e69194d",
-                  "checked_at": "2026-09-04T02:37:01.895Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            },
-            {
-              "claim_id": "wt-d80fd849c477e2ad-v1-claim-3",
-              "story_id": "wt-d80fd849c477e2ad",
-              "claim": "Mit der Kassenärztlichen Vereinigung wurde vereinbart, pro Untersuchung 53,62 Euro abzurechnen; das Land übernimmt die höhere Gebühr für 2026 und 2027.",
-              "status": "single_source_claim",
-              "source_id": "mdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-                  "excerpt_hash": "48fc1145656b2ab026ff",
-                  "checked_at": "2026-09-04T02:37:01.895Z"
-                },
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-                  "excerpt_hash": "f333425b2843f5acacf7",
-                  "checked_at": "2026-09-04T02:37:01.895Z"
-                },
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-                  "excerpt_hash": "586f9b719813bfece245",
-                  "checked_at": "2026-09-04T02:37:01.895Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            },
-            {
-              "claim_id": "wt-d80fd849c477e2ad-v1-claim-4",
-              "story_id": "wt-d80fd849c477e2ad",
-              "claim": "Thüringen ist nach Angaben des Sozialministeriums derzeit das einzige Bundesland mit einer solchen Kostenübernahme.",
-              "status": "single_source_claim",
-              "source_id": "mdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-                  "excerpt_hash": "586f9b719813bfece245",
-                  "checked_at": "2026-09-04T02:37:01.895Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:37:01.895Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-              "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T02:37:01.895Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-c9df3da8148c97ca-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "c9df3da8148c97ca9374798cb3d0478fea5c114e94b7f0cc2462bbd7b7c01a96"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-a60458508d9a6729-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "a60458508d9a67291979d3260c3eb6a1dc14aed1a02a9fbeb75772c86ca3b918"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-3eeb5b2de2922414-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "3eeb5b2de2922414eeba2d762b18275e7477383b2277fd422329acb91b1a32da"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-a5db8d68318fe1f2-source.png",
-          "sha256": "a5db8d68318fe1f2b5079fd6b000940754ede854021f690694fee56c0fd77153",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-04T10:10:46.867Z"
-        },
-        "fingerprint": "b0628c4265ebf7ab312191fd6654b450e4864ed47d0f438bd32f548e6bf40446",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T10:11:33.029Z",
-        "status": "generated"
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T11:36:39.394Z",
-        "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-            "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
-            "summary": "Am Ende haben sich die Ärzte durchgesetzt: Weil sie die gesetzlich vorgeschriebene Untersuchung angehender Azubis nicht mehr für den seit 30 Jahren geltenden Gebührensatz machen wollen, legt das Land was obendrauf.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T13:56:50.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1",
-            "source_item_id": "cd756b127cb22c847b980aced730cbeeef0e04f07aca4fdb3a4d2dcfe39532df",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T13:56:50.000Z",
-            "ingested_at": "2026-09-04T02:36:31.848Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_DETAIL_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
     },
     {
       "story_id": "wt-bb48be7c21b78cbc",
@@ -60291,5 +60297,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T11:36:39.394Z"
+  "public_updated_at": "2026-09-04T11:51:26.099Z"
 }
