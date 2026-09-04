@@ -1908,6 +1908,25 @@
       },
       "source_failures": 0,
       "quality_holds": 3
+    },
+    {
+      "run_id": "news-run-485d95b16072",
+      "started_at": "2026-09-04T09:30:29.812Z",
+      "completed_at": "2026-09-04T09:30:30.128Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 0,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 0,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 0,
+        "published_stories": 0
+      },
+      "ai": null,
+      "source_failures": 0,
+      "quality_holds": 0
     }
   ]
 }
