@@ -5,7 +5,12 @@ assert.equal(fs.readFileSync(`_site/${source}`,'utf8'),fs.readFileSync(source,'u
 const main=fs.readFileSync('_site/assets/js/main.js','utf8');
 assert.ok(main.includes('contextual-questions.js'));
 assert.ok(!main.includes('Passende Fragen zum Begriff'));
-const poll=fs.readFileSync('_site/umfragen/wirkungsticker-feedback/index.html','utf8');
-assert.match(poll,/assets\/js\/main\.js\?v=[a-f0-9]{12}/);
-assert.match(poll,/data-poll-results-visibility=/);
+const catalog=JSON.parse(fs.readFileSync('content/polls/public-catalog.json','utf8'));
+const index=fs.readFileSync('_site/umfragen/index.html','utf8');
+assert.match(index,/assets\/js\/main\.js\?v=[a-f0-9]{12}/);
+for(const poll of catalog.polls){
+  const html=fs.readFileSync(`_site/umfragen/${poll.slug}/index.html`,'utf8');
+  assert.match(html,/assets\/js\/main\.js\?v=[a-f0-9]{12}/);
+  assert.match(html,/data-poll-results-visibility=/);
+}
 console.log('Seitenfragen: Modul, Integration und Cache-Schlüssel im öffentlichen Artefakt geprüft.');
