@@ -1,7 +1,844 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T13:21:25.210Z",
+  "updated_at": "2026-09-04T13:36:20.834Z",
   "stories": [
+    {
+      "story_id": "wt-215068875954a78e",
+      "slug": "erfurt-richtungsstreit-im-bsw-thuringer-abgeordnete-treten-aus-partei-aus-54a78e",
+      "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
+      "first_seen": "2026-09-04T09:31:01.000Z",
+      "last_updated": "2026-09-04T13:36:46.801Z",
+      "published_at": "2026-09-04T09:48:16.895Z",
+      "updated_at": "2026-09-04T13:36:46.801Z",
+      "topic": [
+        "Klima",
+        "Digitalisierung",
+        "Finanzen",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+          "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
+          "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:13:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ff14c73e58edfe1fbfec5b9f7f6cd9ae671d91614ac2aeaa993cf31beb0b56b1",
+          "source_item_id": "1d0f5f5617926e7e43843881fbc35fb25bc1e3a046dab524532fb7c969610b2d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T13:13:20.000Z",
+          "ingested_at": "2026-09-04T13:21:25.210Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-215068875954a78e-v3-claim-1",
+          "story_id": "wt-215068875954a78e",
+          "claim": "Zehn BSW-Landtagsabgeordnete in Thüringen verlassen die Partei.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+              "excerpt_hash": "dd1e2da696ad71ea8b74",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T13:36:46.801Z"
+        },
+        {
+          "claim_id": "wt-215068875954a78e-v3-claim-2",
+          "story_id": "wt-215068875954a78e",
+          "claim": "Zu den Austrittswilligen zählen Wolf, Schütz und Kummer.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+              "excerpt_hash": "4ef78019dfbe2e2f7e0b",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T13:36:46.801Z"
+        },
+        {
+          "claim_id": "wt-215068875954a78e-v3-claim-3",
+          "story_id": "wt-215068875954a78e",
+          "claim": "Die bisherige BSW-Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+              "excerpt_hash": "97a4fc4fc8489f15974b",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T13:36:46.801Z"
+        },
+        {
+          "claim_id": "wt-215068875954a78e-v3-claim-4",
+          "story_id": "wt-215068875954a78e",
+          "claim": "Der Streit zwischen Bundespartei und Landesverband wird als Belastungsprobe für die Regierungskoalition beschrieben.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+              "excerpt_hash": "dd1e2da696ad71ea8b74",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T13:36:46.801Z"
+        }
+      ],
+      "event_id": "event-d32c4341ee16ff499c56",
+      "event_first_seen_at": "2026-09-04T09:46:20.569Z",
+      "event_detected_at": "2026-09-04T09:46:20.569Z",
+      "verification_started_at": "2026-09-04T13:36:32.741Z",
+      "publish_ready_at": "2026-09-04T13:36:46.801Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Fraktion berät nächste Woche über weitere Schritte.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Mitteilung zu weiteren Schritten oder zur Koalitionsfrage",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c7675feabae78f97",
+          "announced_at": "2026-09-04T09:31:01.000Z",
+          "follow_up_date": "2026-09-11T09:48:16.895Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob weitere BSW-Abgeordnete folgen oder Fraktions- und Koalitionsentscheidungen fallen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue Austritte, Beschlüsse der Fraktion oder Änderung der Koalitionslinie",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f8ebbd277a3dc949",
+          "announced_at": "2026-09-04T13:13:20.000Z",
+          "follow_up_date": "2026-09-11T13:36:46.801Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-7f9dfbf373070303-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "7f9dfbf3730703039ff5c62f80765db3c9b845ddcfaf19b3f7ba4cd5d3cb716f"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-2c209ad54d1aa103-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "2c209ad54d1aa1038f4b9b3fc0d913538588ae6c570e66953e38e41e35d6cc5e"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-f876e62468159c60-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "f876e62468159c60afd23725d98fe1996af39c6f4e38ee219f520cb72120fdaa"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-6f691b6484399150-source.png",
+          "sha256": "6f691b6484399150cd51214af954c0235e9cd0e1c70774a3b2eec296d4beeb27",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:49:29.256Z"
+        },
+        "fingerprint": "829246c38b22bfd8f0a9b4578964d4464d9f4e28b9d730a6cd5981cb63bbc195",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T13:37:10.126Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Der Deutschlandfunk berichtet aus Erfurt über einen eskalierenden Richtungsstreit im Bündnis Sahra Wagenknecht in Thüringen. Nach der Meldung verlassen zehn Landtagsabgeordnete die Partei, darunter die Vize-Ministerpräsidentin und Finanzministerin Wolf sowie Digitalminister Schütz und Umweltminister Kummer.\n\nDie bisherige BSW-Fraktionsvorsitzende Hupach sagte dem Bericht zufolge, man bilde weiterhin eine Fraktion und wolle nächste Woche über weitere Schritte beraten. Zugleich halte man weiter an der Regierungskoalition in Thüringen fest. Wagenknecht habe den Abgeordneten Vorwürfe gemacht und zugleich Druck auf die Koalition beschrieben. Das Stück verweist außerdem auf den Koalitionsrahmen mit CDU und SPD.",
+      "analysis": {
+        "story_id": "wt-215068875954a78e",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Zehn Thüringer BSW-Abgeordnete verlassen nach einem DLF-Bericht die Partei. Die Fraktion will nächste Woche weitere Schritte beraten und hält vorerst an der Koalition fest.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn BSW-Landtagsabgeordneten in Thüringen, darunter mehrere Ministerinnen und Minister. Das ist politisch relevant, weil es die Stabilität einer ohnehin knappen Regierungskoalition berührt und kurzfristig Mehrheiten, Ressortlogiken und Fraktionsdisziplin beeinflussen kann. Der Wirkpfad läuft über veränderte parlamentarische Bindungen und mögliche Folgekaskaden in Koalition, Regierung und Parteiorganisation. Mögliche Folgen sind weitere Austritte, Koalitionsverhandlungen oder ein Kurswechsel in der Zusammenarbeit. Offen bleibt jedoch, ob und wie viele weitere Mandatsträger folgen und welche Beschlüsse die Fraktion tatsächlich fasst; die Evidenz stammt bislang nur aus einem journalistischen Bericht ohne unabhängige Bestätigung.",
+        "why_relevant": "Der Vorgang betrifft die Stabilität einer Landesregierung und die parlamentarische Handlungsfähigkeit in Thüringen. Das kann Koalitionsmehrheiten, Ressortführung und künftige Abstimmungen beeinflussen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Mandats- und Regierungsstrukturen sowie die politische Handlungsfähigkeit im Landtag."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der Quelle ergeben sich keine direkten Umweltwirkungen; ein indirekter Zusammenhang ist nicht belastbar belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Der Streit berührt Fraktionsbindung, Koalitionsstabilität und die demokratische Korrekturfähigkeit einer Landesregierung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Der Austritt mehrerer Abgeordneter kann Koalitionsarithmetik, Regierungsstabilität und die interne Steuerungsfähigkeit des BSW in Thüringen verändern.",
+        "impact_risks": [
+          "Weitere Austritte oder eine Zuspitzung des Koalitionskonflikts könnten die Regierungsarbeit erschweren.",
+          "Die politische Unsicherheit kann die Entscheidungsfähigkeit im Landtag kurzfristig schwächen."
+        ],
+        "mechanisms": [
+          "Veränderte Fraktionsbindung und mehr innerparteiliche Konflikte",
+          "Mögliche Verschiebung von Mehrheiten und Verhandlungsmacht in der Koalition"
+        ],
+        "first_order": [
+          "Parteiaustritt von zehn Abgeordneten",
+          "Öffentliche Belastung der Koalition"
+        ],
+        "second_order": [
+          "Mehr Druck auf Fraktion und Regierung",
+          "Erhöhte Wahrscheinlichkeit weiterer Abstimmungs- und Personalfragen"
+        ],
+        "third_order": [
+          "Veränderung der Stabilität und Funktionsfähigkeit der Landesregierung",
+          "Mögliche Neuordnung politischer Bündnisse"
+        ],
+        "systemic_relevance": "Die Meldung ist systemrelevant, weil sie eine Regierungskoalition und damit die parlamentarische Steuerungsfähigkeit eines Bundeslandes betrifft.",
+        "transformation_potential": "Eher begrenzt, aber bei Eskalation möglich: Die innerparteiliche Spaltung kann die Koalitionsarchitektur und die Mehrheitslogik im Landtag dauerhaft verändern.",
+        "resilience": "Die demokratische Korrekturfähigkeit bleibt grundsätzlich erhalten, solange Fraktion, Koalition und Parlament Entscheidungen transparent nachverhandeln.",
+        "side_effects": [
+          "Unruhe in der Regierungsarbeit",
+          "Erhöhter öffentlicher Druck auf beteiligte Akteure"
+        ],
+        "uncertainties": [
+          "Unklar ist, ob weitere Abgeordnete folgen.",
+          "Unklar ist, welche konkreten Schritte die Fraktion nächste Woche beschließt.",
+          "Unabhängige Bestätigung der Austrittszahlen liegt hier nicht vor."
+        ],
+        "evidence_level": "einzelne journalistische Sekundärquelle mit konkreten Textbelegen; keine unabhängige Verifikation der Kernzahlen",
+        "attribution": "Die zentrale Tatsachenlage stammt aus einem Deutschlandfunk-Bericht; die Quelle gibt teils wörtliche Aussagen und teils berichtete politische Einordnung wieder.",
+        "watch_next": [
+          "Bericht über weitere Austritte oder Fraktionsbeschlüsse beobachten."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neuer, politisch folgenrelevanter Vorgang mit potenziellen Auswirkungen auf Koalitionsstabilität und parlamentarische Handlungsfähigkeit, aber nur eine journalistische Quelle."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "abgeordnete",
+              "value": "Zehn",
+              "unit": "Personen",
+              "context": "So viele BSW-Landtagsabgeordnete verlassen die Partei laut Bericht.",
+              "claim_id": "wt-215068875954a78e-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "beschaeftigte",
+            "europa"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "risiko"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T09:48:16.895Z",
+          "content_hash": "e95db04236dfa5a1e80c846ee1759da876b7911f9caa576c21c705e8124707eb",
+          "source_summary": "In Thüringen beschreibt die Quelle einen eskalierenden Streit zwischen Bundespartei und Landesverband des BSW. Nach Angaben des Beitrags verlassen zehn Landtagsabgeordnete die Partei. Genannt werden dabei auch die Vize-Ministerpräsidentin und Finanzministerin Katja Wolf, Digitalminister Steffen Schütz sowie Umweltminister Tilo Kummer.\n\nDer Bericht ordnet den Vorgang als Belastung für die Regierungskoalition ein. Zugleich heißt es, die BSW-Fraktion bilde weiter eine Fraktion und wolle nächste Woche über weitere Schritte beraten. Außerdem wird auf Äußerungen von BSW-Landesvorsitzender Wolf verwiesen, die sich gegen „endlose Selbstbeschäftigung“ und „Flirts mit Rechtsradikalen“ richteten. Eine unabhängige Bestätigung der Angaben wird in der Quelle selbst nicht geliefert.",
+          "analysis": {
+            "story_id": "wt-215068875954a78e",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Thüringen verlassen zehn Landtagsabgeordnete das BSW; darunter sind Katja Wolf, Steffen Schütz und Tilo Kummer. Die Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn Thüringer Landtagsabgeordneten aus dem BSW, darunter drei Ministerinnen und Minister. Das ist politisch relevant, weil der Schritt unmittelbar die Stabilität einer ohnehin spannungsreichen Regierungskoalition berührt. Der Wirkpfad liegt weniger in einem einzelnen Stimmverlust als in veränderten Mehrheits-, Verhandlungs- und Disziplinierungsanreizen innerhalb von Partei, Fraktion und Kabinett. Mögliche Folgen sind eine geschwächte Koalitionsfähigkeit, neue Personal- oder Abstimmungsfragen und zusätzliche Unsicherheit für die Landespolitik. Für eine endgültige Einordnung fehlt aber unabhängige Bestätigung der Zahlen und des innerparteilichen Ablaufs; aktuell stützt sich die Meldung auf einen einzelnen journalistischen Bericht. Die Nachricht bleibt deshalb vorläufig, ist aber wegen ihrer unmittelbaren Folgen für Regierungsfähigkeit und politische Steuerung berichtenswert.",
+            "why_relevant": "Der Austritt mehrerer Landtagsabgeordneter aus einer Regierungspartei kann Mehrheiten, Koalitionsstabilität und politische Steuerungsfähigkeit in Thüringen verändern.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Landesregierung, Fraktion und Wählervertretung; die Koalitionsstabilität kann sich kurzfristig ändern."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen ist aus der Quelle nicht ableitbar."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Parteiaustritte in einer Regierungskoalition berühren Mehrheiten, Repräsentation und demokratische Korrekturfähigkeit."
+            },
+            "importance": "hoch",
+            "impact_potential": "Veränderte Mehrheitsverhältnisse, neue Koalitionskonflikte und mögliche Umbesetzungen oder Kurskorrekturen in der Landespolitik.",
+            "impact_risks": [
+              "Instabilere Regierungsarbeit",
+              "Verunsicherung bei Abstimmungen und Zuständigkeiten",
+              "Zusätzliche Polarisierung innerhalb von Partei und Koalition"
+            ],
+            "mechanisms": [
+              "Austritte schwächen parteiinterne Bindung",
+              "Koalitionspartner müssen mögliche Mehrheits- und Vertrauensfragen neu bewerten",
+              "Personalien in Regierung und Fraktion werden politisch neu verhandelt"
+            ],
+            "first_order": [
+              "mehr Konflikt in Partei und Fraktion",
+              "Beratungen über weitere Schritte"
+            ],
+            "second_order": [
+              "mögliche Änderungen in Koalitionsdisziplin und Ressortarbeit",
+              "höhere Unsicherheit über künftige Mehrheiten"
+            ],
+            "third_order": [
+              "dauerhafte Neuordnung des Thüringer Regierungsbündnisses möglich"
+            ],
+            "systemic_relevance": "Der Vorgang betrifft die Funktionsfähigkeit einer Landesregierung und damit die demokratische Steuerung auf Ebene eines Bundeslandes.",
+            "transformation_potential": "Kurzfristig eher begrenzt; möglich ist aber eine tiefere Neuordnung von Partei- und Koalitionsbeziehungen in Thüringen.",
+            "resilience": "Die institutionelle Resilienz hängt davon ab, ob Fraktion und Koalition die Spannungen organisatorisch auffangen können.",
+            "side_effects": [
+              "verstärkte öffentliche Konfliktwahrnehmung",
+              "mögliche Personaldebatten"
+            ],
+            "uncertainties": [
+              "Unklar bleibt, wie viele Mandatsträger tatsächlich folgen und welche konkreten Schritte nächste Woche beschlossen werden.",
+              "Die Quelle nennt keine unabhängige Bestätigung der Austrittszahlen."
+            ],
+            "evidence_level": "single_source_report mit namentlich belegten Angaben, aber ohne unabhängige Zweitbestätigung.",
+            "attribution": "Die Angaben stammen aus einem Deutschlandfunk-Beitrag; weitere unabhängige Quellen liegen hier nicht vor.",
+            "watch_next": [
+              "Erklärung der Fraktion nach der angekündigten Beratung",
+              "mögliche Reaktionen von Koalitionspartnern",
+              "weitere Austritts- oder Verbleibserklärungen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "democratic_correctability",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Der Austritt mehrerer Abgeordneter aus einer Regierungspartei kann die Koalitionsstabilität und die demokratische Steuerungsfähigkeit des Landes unmittelbar verändern."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-215068875954a78e-v1-claim-1",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Zehn Landtagsabgeordnete verlassen in Thüringen das BSW.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "51bea55fd0914055f969",
+                  "checked_at": "2026-09-04T09:48:16.895Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T09:48:16.895Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v1-claim-2",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Zu den Austretenden zählen Katja Wolf, Steffen Schütz und Tilo Kummer.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "0a0298a211d6b2748d7d",
+                  "checked_at": "2026-09-04T09:48:16.895Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T09:48:16.895Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v1-claim-3",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Die BSW-Fraktion will nächste Woche über weitere Schritte beraten und hält an der Regierungskoalition fest.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "f282bda5ed65322e23bd",
+                  "checked_at": "2026-09-04T09:48:16.895Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T09:48:16.895Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+              "content_hash": "29a7cf08203a9fc2bb648b2c0addfba8bd704f0c23fe5df17223c3d97c928804"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T10:43:37.572Z",
+          "content_hash": "f205c30984f9fe5f492abcb6b7391f3574dbbd664438110eb5b6f7cbfb82e10b",
+          "source_summary": "In Thüringen berichtet Deutschlandfunk von einem eskalierten Streit im Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband. Nach der Meldung verlassen zehn Landtagsabgeordnete die Partei; genannt werden Katja Wolf, Steffen Schütz und Tilo Kummer. Die Sendung ordnet dies als Belastungsprobe für die Regierungskoalition ein.\n\nDie bisherige BSW-Fraktionsvorsitzende Hupach sagte laut Bericht, man bilde weiter eine Fraktion und berate nächste Woche über weitere Schritte. Zugleich wolle man an der Regierungskoalition in Thüringen festhalten. Wolf erklärte demnach, man sei nicht für „endlose Selbstbeschäftigung“ gewählt worden. Die Meldung verweist außerdem darauf, dass Ministerpräsident Voigt mit CDU, BSW und SPD regiert und im Landtag keine eigene Mehrheit hat.",
+          "analysis": {
+            "story_id": "wt-215068875954a78e",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Zehn BSW-Landtagsabgeordnete in Thüringen verlassen die Partei, darunter Wolf, Schütz und Kummer. Die Fraktion will nächste Woche weitere Schritte beraten und hält vorerst an der Koalition fest.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn Thüringer BSW-Landtagsabgeordneten, darunter drei Mitglieder der Landesregierung. Das ist politisch relevant, weil damit eine Regierungskoalition betroffen ist, die im Landtag ohnehin keine eigene Mehrheit hat. Der Wirkpfad liegt nicht in sofortigen Sachpolitikeffekten, sondern in möglicher Verschiebung von Koalitionsdisziplin, Mehrheiten und Verhandlungsmacht. Kurzfristig kann das die Stabilität der Landesregierung schwächen und Entscheidungsprozesse verlangsamen. Ob daraus tatsächlich ein Regierungsbruch, Personalwechsel oder eine neue Mehrheitsbildung folgt, bleibt offen. Die Evidenz stützt derzeit nur die Meldung selbst; zu den weiteren Schritten gibt es noch keine belastbare Bestätigung.",
+            "why_relevant": "Die Meldung betrifft unmittelbar die Stabilität einer Landesregierung und damit Entscheidungsfähigkeit, Mehrheitsbildung und politische Steuerung in Thüringen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Regierungsbildung, Verwaltungshandeln und die politische Handlungsfähigkeit des Landes."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus der Meldung folgt noch kein direkter Umwelt- oder Ressourceneffekt; mögliche Folgen bleiben indirekt und offen."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Parteiaustritte aus einer Regierungsfraktion können Mehrheiten, Koalitionsdisziplin und demokratische Steuerungsfähigkeit verändern."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Veränderungen bei Koalitionsstabilität, Mehrheitsverhältnissen und der Geschwindigkeit politischer Entscheidungen in Thüringen.",
+            "impact_risks": [
+              "Verlust von Regierungsmehrheit oder häufigere Koalitionskrisen",
+              "Verzögerungen bei Gesetzgebung und Haushaltsentscheidungen",
+              "schwächere demokratische Korrekturfähigkeit durch instabilere Mehrheiten"
+            ],
+            "mechanisms": [
+              "Austritte verändern Fraktionsstärke und Verhandlungsmacht.",
+              "Interne Konflikte können Koalitionsabsprachen belasten.",
+              "Die Beteiligung von Regierungsmitgliedern erhöht den Druck auf Kabinett und Fraktion."
+            ],
+            "first_order": [
+              "Austrittsmeldung erzeugt unmittelbaren Druck auf die BSW-Fraktion.",
+              "Koalitionsgespräche und interne Beratungen werden wahrscheinlicher."
+            ],
+            "second_order": [
+              "Koalitionskonflikte können die parlamentarische Arbeitsfähigkeit mindern.",
+              "Mehrheitsentscheidungen können unsicherer werden."
+            ],
+            "third_order": [
+              "Bei anhaltender Instabilität können Regierungsumbildung oder Neuwahlfragen entstehen."
+            ],
+            "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie eine Regierungskoalition in einem Landesparlament betrifft und damit über den Einzelfall hinaus die Funktionsfähigkeit demokratischer Mehrheitsbildung berührt.",
+            "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Auslöser für eine Neuordnung von Koalitions- und Fraktionsstrukturen.",
+            "resilience": "Die Resilienz hängt davon ab, ob Fraktion und Koalition ihre Arbeitsfähigkeit trotz der Austritte erhalten.",
+            "side_effects": [
+              "öffentliche Wahrnehmung von Instabilität",
+              "höherer Abstimmungsaufwand in der Koalition"
+            ],
+            "uncertainties": [
+              "Ob weitere Abgeordnete folgen, ist offen.",
+              "Ob die Koalition tatsächlich hält, bleibt nach der Meldung ungesichert."
+            ],
+            "evidence_level": "einzelne journalistische Quelle mit konkreten O-Ton- und Kontextangaben, aber ohne unabhängige Zweitbestätigung",
+            "attribution": "Die Fakten stammen aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Ob die Fraktion nächste Woche konkrete Schritte beschließt",
+              "Ob die Koalition in Thüringen politisch stabil bleibt"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, zeitnahe Information über den Austritt von zehn Abgeordneten und die mögliche Belastung einer Landesregierung; politisch materiell, aber bisher nur singulär belegt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Austretende Abgeordnete",
+                  "value": "zehn",
+                  "unit": "Landtagsabgeordnete",
+                  "context": "Zahl der BSW-Abgeordneten, die die Partei verlassen",
+                  "claim_id": "wt-215068875954a78e-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "risiko"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-215068875954a78e-v2-claim-1",
+              "story_id": "wt-215068875954a78e",
+              "claim": "In Thüringen verlassen zehn Landtagsabgeordnete das BSW.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "aa6bb46ed6f83277ac3a",
+                  "checked_at": "2026-09-04T10:43:37.572Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:43:37.572Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v2-claim-2",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Zu den Austritten zählen Katja Wolf, Steffen Schütz und Tilo Kummer.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "0a0298a211d6b2748d7d",
+                  "checked_at": "2026-09-04T10:43:37.572Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:43:37.572Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v2-claim-3",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Die bisherige BSW-Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "51e5566e3db11d59e358",
+                  "checked_at": "2026-09-04T10:43:37.572Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:43:37.572Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v2-claim-4",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Der Streit zwischen Bundespartei und Landesverband wird als Belastungsprobe für die Regierungskoalition beschrieben.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "aa6bb46ed6f83277ac3a",
+                  "checked_at": "2026-09-04T10:43:37.572Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:43:37.572Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+              "content_hash": "484ec987c6172113bfd0a3854239952dae946f692636f25a5187a14ce2bbf0de"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-04T13:36:46.801Z",
+          "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
+          "source_summary": "Der Deutschlandfunk berichtet aus Erfurt über einen eskalierenden Richtungsstreit im Bündnis Sahra Wagenknecht in Thüringen. Nach der Meldung verlassen zehn Landtagsabgeordnete die Partei, darunter die Vize-Ministerpräsidentin und Finanzministerin Wolf sowie Digitalminister Schütz und Umweltminister Kummer.\n\nDie bisherige BSW-Fraktionsvorsitzende Hupach sagte dem Bericht zufolge, man bilde weiterhin eine Fraktion und wolle nächste Woche über weitere Schritte beraten. Zugleich halte man weiter an der Regierungskoalition in Thüringen fest. Wagenknecht habe den Abgeordneten Vorwürfe gemacht und zugleich Druck auf die Koalition beschrieben. Das Stück verweist außerdem auf den Koalitionsrahmen mit CDU und SPD.",
+          "analysis": {
+            "story_id": "wt-215068875954a78e",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Zehn Thüringer BSW-Abgeordnete verlassen nach einem DLF-Bericht die Partei. Die Fraktion will nächste Woche weitere Schritte beraten und hält vorerst an der Koalition fest.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn BSW-Landtagsabgeordneten in Thüringen, darunter mehrere Ministerinnen und Minister. Das ist politisch relevant, weil es die Stabilität einer ohnehin knappen Regierungskoalition berührt und kurzfristig Mehrheiten, Ressortlogiken und Fraktionsdisziplin beeinflussen kann. Der Wirkpfad läuft über veränderte parlamentarische Bindungen und mögliche Folgekaskaden in Koalition, Regierung und Parteiorganisation. Mögliche Folgen sind weitere Austritte, Koalitionsverhandlungen oder ein Kurswechsel in der Zusammenarbeit. Offen bleibt jedoch, ob und wie viele weitere Mandatsträger folgen und welche Beschlüsse die Fraktion tatsächlich fasst; die Evidenz stammt bislang nur aus einem journalistischen Bericht ohne unabhängige Bestätigung.",
+            "why_relevant": "Der Vorgang betrifft die Stabilität einer Landesregierung und die parlamentarische Handlungsfähigkeit in Thüringen. Das kann Koalitionsmehrheiten, Ressortführung und künftige Abstimmungen beeinflussen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Mandats- und Regierungsstrukturen sowie die politische Handlungsfähigkeit im Landtag."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus der Quelle ergeben sich keine direkten Umweltwirkungen; ein indirekter Zusammenhang ist nicht belastbar belegt."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Der Streit berührt Fraktionsbindung, Koalitionsstabilität und die demokratische Korrekturfähigkeit einer Landesregierung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Der Austritt mehrerer Abgeordneter kann Koalitionsarithmetik, Regierungsstabilität und die interne Steuerungsfähigkeit des BSW in Thüringen verändern.",
+            "impact_risks": [
+              "Weitere Austritte oder eine Zuspitzung des Koalitionskonflikts könnten die Regierungsarbeit erschweren.",
+              "Die politische Unsicherheit kann die Entscheidungsfähigkeit im Landtag kurzfristig schwächen."
+            ],
+            "mechanisms": [
+              "Veränderte Fraktionsbindung und mehr innerparteiliche Konflikte",
+              "Mögliche Verschiebung von Mehrheiten und Verhandlungsmacht in der Koalition"
+            ],
+            "first_order": [
+              "Parteiaustritt von zehn Abgeordneten",
+              "Öffentliche Belastung der Koalition"
+            ],
+            "second_order": [
+              "Mehr Druck auf Fraktion und Regierung",
+              "Erhöhte Wahrscheinlichkeit weiterer Abstimmungs- und Personalfragen"
+            ],
+            "third_order": [
+              "Veränderung der Stabilität und Funktionsfähigkeit der Landesregierung",
+              "Mögliche Neuordnung politischer Bündnisse"
+            ],
+            "systemic_relevance": "Die Meldung ist systemrelevant, weil sie eine Regierungskoalition und damit die parlamentarische Steuerungsfähigkeit eines Bundeslandes betrifft.",
+            "transformation_potential": "Eher begrenzt, aber bei Eskalation möglich: Die innerparteiliche Spaltung kann die Koalitionsarchitektur und die Mehrheitslogik im Landtag dauerhaft verändern.",
+            "resilience": "Die demokratische Korrekturfähigkeit bleibt grundsätzlich erhalten, solange Fraktion, Koalition und Parlament Entscheidungen transparent nachverhandeln.",
+            "side_effects": [
+              "Unruhe in der Regierungsarbeit",
+              "Erhöhter öffentlicher Druck auf beteiligte Akteure"
+            ],
+            "uncertainties": [
+              "Unklar ist, ob weitere Abgeordnete folgen.",
+              "Unklar ist, welche konkreten Schritte die Fraktion nächste Woche beschließt.",
+              "Unabhängige Bestätigung der Austrittszahlen liegt hier nicht vor."
+            ],
+            "evidence_level": "einzelne journalistische Sekundärquelle mit konkreten Textbelegen; keine unabhängige Verifikation der Kernzahlen",
+            "attribution": "Die zentrale Tatsachenlage stammt aus einem Deutschlandfunk-Bericht; die Quelle gibt teils wörtliche Aussagen und teils berichtete politische Einordnung wieder.",
+            "watch_next": [
+              "Bericht über weitere Austritte oder Fraktionsbeschlüsse beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neuer, politisch folgenrelevanter Vorgang mit potenziellen Auswirkungen auf Koalitionsstabilität und parlamentarische Handlungsfähigkeit, aber nur eine journalistische Quelle."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "abgeordnete",
+                  "value": "Zehn",
+                  "unit": "Personen",
+                  "context": "So viele BSW-Landtagsabgeordnete verlassen die Partei laut Bericht.",
+                  "claim_id": "wt-215068875954a78e-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "beschaeftigte",
+                "europa"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "risiko"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-215068875954a78e-v3-claim-1",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Zehn BSW-Landtagsabgeordnete in Thüringen verlassen die Partei.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "dd1e2da696ad71ea8b74",
+                  "checked_at": "2026-09-04T13:36:46.801Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v3-claim-2",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Zu den Austrittswilligen zählen Wolf, Schütz und Kummer.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "4ef78019dfbe2e2f7e0b",
+                  "checked_at": "2026-09-04T13:36:46.801Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v3-claim-3",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Die bisherige BSW-Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "97a4fc4fc8489f15974b",
+                  "checked_at": "2026-09-04T13:36:46.801Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            },
+            {
+              "claim_id": "wt-215068875954a78e-v3-claim-4",
+              "story_id": "wt-215068875954a78e",
+              "claim": "Der Streit zwischen Bundespartei und Landesverband wird als Belastungsprobe für die Regierungskoalition beschrieben.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+                  "excerpt_hash": "dd1e2da696ad71ea8b74",
+                  "checked_at": "2026-09-04T13:36:46.801Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T13:36:46.801Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+              "content_hash": "ff14c73e58edfe1fbfec5b9f7f6cd9ae671d91614ac2aeaa993cf31beb0b56b1"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T09:48:16.895Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T10:43:37.572Z",
+          "source_count": 1
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-04T13:36:46.801Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-5547189d2645384a",
       "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
@@ -782,21 +1619,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T13:21:25.210Z"
+          "checked_at": "2026-09-04T13:36:20.834Z"
         }
       ],
       "content_hash": "88f9f75e9b977eb411285a1009f724f8bdf50ae43f800a4436cf773e03c61894",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_UNSUPPORTED_FRAMEWORK_NUMBER:16,6"
+        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
       ],
-      "quality_retry_count": 1,
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T13:21:25.210Z",
+      "updated_at": "2026-09-04T13:36:20.834Z",
       "event_first_seen_at": "2026-09-04T13:21:25.210Z",
       "event_detected_at": "2026-09-04T13:21:25.210Z",
       "event_id": "event-dee7eaf221842b5eb806",
@@ -826,13 +1663,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 16.420166666666667,
+        "source_age_minutes": 31.34723333333333,
         "detection_delay_minutes": 16.420166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.927066666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 93,
         "freshness_warning": null
       }
     },
@@ -8669,7 +9506,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T13:21:25.210Z",
+        "detected_at": "2026-09-04T13:36:20.834Z",
         "content_hash": "47dbb24c1485c38e734f8ee9a2356fe7e29666f3e9bc7d63878bcd94081ec429",
         "sources": [
           {
@@ -13719,688 +14556,6 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T10:45:15.611Z",
         "status": "generated"
-      }
-    },
-    {
-      "story_id": "wt-215068875954a78e",
-      "slug": "erfurt-richtungsstreit-im-bsw-thuringer-abgeordnete-treten-aus-partei-aus-54a78e",
-      "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
-      "first_seen": "2026-09-04T09:31:01.000Z",
-      "last_updated": "2026-09-04T10:43:37.572Z",
-      "published_at": "2026-09-04T09:48:16.895Z",
-      "updated_at": "2026-09-04T10:43:37.572Z",
-      "topic": [
-        "Klima",
-        "Digitalisierung",
-        "Finanzen",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-          "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
-          "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belatungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:29:27.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "484ec987c6172113bfd0a3854239952dae946f692636f25a5187a14ce2bbf0de",
-          "source_item_id": "1d0f5f5617926e7e43843881fbc35fb25bc1e3a046dab524532fb7c969610b2d",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T10:29:27.000Z",
-          "ingested_at": "2026-09-04T10:42:21.689Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-215068875954a78e-v2-claim-1",
-          "story_id": "wt-215068875954a78e",
-          "claim": "In Thüringen verlassen zehn Landtagsabgeordnete das BSW.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-              "excerpt_hash": "aa6bb46ed6f83277ac3a",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:43:37.572Z"
-        },
-        {
-          "claim_id": "wt-215068875954a78e-v2-claim-2",
-          "story_id": "wt-215068875954a78e",
-          "claim": "Zu den Austritten zählen Katja Wolf, Steffen Schütz und Tilo Kummer.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-              "excerpt_hash": "0a0298a211d6b2748d7d",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:43:37.572Z"
-        },
-        {
-          "claim_id": "wt-215068875954a78e-v2-claim-3",
-          "story_id": "wt-215068875954a78e",
-          "claim": "Die bisherige BSW-Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-              "excerpt_hash": "51e5566e3db11d59e358",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:43:37.572Z"
-        },
-        {
-          "claim_id": "wt-215068875954a78e-v2-claim-4",
-          "story_id": "wt-215068875954a78e",
-          "claim": "Der Streit zwischen Bundespartei und Landesverband wird als Belastungsprobe für die Regierungskoalition beschrieben.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-              "excerpt_hash": "aa6bb46ed6f83277ac3a",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:43:37.572Z"
-        }
-      ],
-      "event_id": "event-d32c4341ee16ff499c56",
-      "event_first_seen_at": "2026-09-04T09:46:20.569Z",
-      "event_detected_at": "2026-09-04T09:46:20.569Z",
-      "verification_started_at": "2026-09-04T10:43:20.778Z",
-      "publish_ready_at": "2026-09-04T10:43:37.572Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die Fraktion berät nächste Woche über weitere Schritte.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Mitteilung zu weiteren Schritten oder zur Koalitionsfrage",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-c7675feabae78f97",
-          "announced_at": "2026-09-04T09:31:01.000Z",
-          "follow_up_date": "2026-09-11T09:48:16.895Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "f205c30984f9fe5f492abcb6b7391f3574dbbd664438110eb5b6f7cbfb82e10b",
-      "published": true,
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-7f9dfbf373070303-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "7f9dfbf3730703039ff5c62f80765db3c9b845ddcfaf19b3f7ba4cd5d3cb716f"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-2c209ad54d1aa103-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "2c209ad54d1aa1038f4b9b3fc0d913538588ae6c570e66953e38e41e35d6cc5e"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-f876e62468159c60-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "f876e62468159c60afd23725d98fe1996af39c6f4e38ee219f520cb72120fdaa"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-6f691b6484399150-source.png",
-          "sha256": "6f691b6484399150cd51214af954c0235e9cd0e1c70774a3b2eec296d4beeb27",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-04T09:49:29.256Z"
-        },
-        "fingerprint": "d5e4a01e69871f4993cb7fa0d9277feffc0efab0f241e2a39df956adcfc35209",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T10:45:06.899Z",
-        "status": "generated"
-      },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "In Thüringen berichtet Deutschlandfunk von einem eskalierten Streit im Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband. Nach der Meldung verlassen zehn Landtagsabgeordnete die Partei; genannt werden Katja Wolf, Steffen Schütz und Tilo Kummer. Die Sendung ordnet dies als Belastungsprobe für die Regierungskoalition ein.\n\nDie bisherige BSW-Fraktionsvorsitzende Hupach sagte laut Bericht, man bilde weiter eine Fraktion und berate nächste Woche über weitere Schritte. Zugleich wolle man an der Regierungskoalition in Thüringen festhalten. Wolf erklärte demnach, man sei nicht für „endlose Selbstbeschäftigung“ gewählt worden. Die Meldung verweist außerdem darauf, dass Ministerpräsident Voigt mit CDU, BSW und SPD regiert und im Landtag keine eigene Mehrheit hat.",
-      "analysis": {
-        "story_id": "wt-215068875954a78e",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Zehn BSW-Landtagsabgeordnete in Thüringen verlassen die Partei, darunter Wolf, Schütz und Kummer. Die Fraktion will nächste Woche weitere Schritte beraten und hält vorerst an der Koalition fest.",
-        "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn Thüringer BSW-Landtagsabgeordneten, darunter drei Mitglieder der Landesregierung. Das ist politisch relevant, weil damit eine Regierungskoalition betroffen ist, die im Landtag ohnehin keine eigene Mehrheit hat. Der Wirkpfad liegt nicht in sofortigen Sachpolitikeffekten, sondern in möglicher Verschiebung von Koalitionsdisziplin, Mehrheiten und Verhandlungsmacht. Kurzfristig kann das die Stabilität der Landesregierung schwächen und Entscheidungsprozesse verlangsamen. Ob daraus tatsächlich ein Regierungsbruch, Personalwechsel oder eine neue Mehrheitsbildung folgt, bleibt offen. Die Evidenz stützt derzeit nur die Meldung selbst; zu den weiteren Schritten gibt es noch keine belastbare Bestätigung.",
-        "why_relevant": "Die Meldung betrifft unmittelbar die Stabilität einer Landesregierung und damit Entscheidungsfähigkeit, Mehrheitsbildung und politische Steuerung in Thüringen.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Regierungsbildung, Verwaltungshandeln und die politische Handlungsfähigkeit des Landes."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus der Meldung folgt noch kein direkter Umwelt- oder Ressourceneffekt; mögliche Folgen bleiben indirekt und offen."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Parteiaustritte aus einer Regierungsfraktion können Mehrheiten, Koalitionsdisziplin und demokratische Steuerungsfähigkeit verändern."
-        },
-        "importance": "hoch",
-        "impact_potential": "Mögliche Veränderungen bei Koalitionsstabilität, Mehrheitsverhältnissen und der Geschwindigkeit politischer Entscheidungen in Thüringen.",
-        "impact_risks": [
-          "Verlust von Regierungsmehrheit oder häufigere Koalitionskrisen",
-          "Verzögerungen bei Gesetzgebung und Haushaltsentscheidungen",
-          "schwächere demokratische Korrekturfähigkeit durch instabilere Mehrheiten"
-        ],
-        "mechanisms": [
-          "Austritte verändern Fraktionsstärke und Verhandlungsmacht.",
-          "Interne Konflikte können Koalitionsabsprachen belasten.",
-          "Die Beteiligung von Regierungsmitgliedern erhöht den Druck auf Kabinett und Fraktion."
-        ],
-        "first_order": [
-          "Austrittsmeldung erzeugt unmittelbaren Druck auf die BSW-Fraktion.",
-          "Koalitionsgespräche und interne Beratungen werden wahrscheinlicher."
-        ],
-        "second_order": [
-          "Koalitionskonflikte können die parlamentarische Arbeitsfähigkeit mindern.",
-          "Mehrheitsentscheidungen können unsicherer werden."
-        ],
-        "third_order": [
-          "Bei anhaltender Instabilität können Regierungsumbildung oder Neuwahlfragen entstehen."
-        ],
-        "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie eine Regierungskoalition in einem Landesparlament betrifft und damit über den Einzelfall hinaus die Funktionsfähigkeit demokratischer Mehrheitsbildung berührt.",
-        "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Auslöser für eine Neuordnung von Koalitions- und Fraktionsstrukturen.",
-        "resilience": "Die Resilienz hängt davon ab, ob Fraktion und Koalition ihre Arbeitsfähigkeit trotz der Austritte erhalten.",
-        "side_effects": [
-          "öffentliche Wahrnehmung von Instabilität",
-          "höherer Abstimmungsaufwand in der Koalition"
-        ],
-        "uncertainties": [
-          "Ob weitere Abgeordnete folgen, ist offen.",
-          "Ob die Koalition tatsächlich hält, bleibt nach der Meldung ungesichert."
-        ],
-        "evidence_level": "einzelne journalistische Quelle mit konkreten O-Ton- und Kontextangaben, aber ohne unabhängige Zweitbestätigung",
-        "attribution": "Die Fakten stammen aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
-        "watch_next": [
-          "Ob die Fraktion nächste Woche konkrete Schritte beschließt",
-          "Ob die Koalition in Thüringen politisch stabil bleibt"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "material_update",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Neue, zeitnahe Information über den Austritt von zehn Abgeordneten und die mögliche Belastung einer Landesregierung; politisch materiell, aber bisher nur singulär belegt."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "Austretende Abgeordnete",
-              "value": "zehn",
-              "unit": "Landtagsabgeordnete",
-              "context": "Zahl der BSW-Abgeordneten, die die Partei verlassen",
-              "claim_id": "wt-215068875954a78e-claim-01"
-            }
-          ],
-          "affected_groups": [
-            "staat",
-            "unternehmen"
-          ],
-          "tendency": {
-            "human": "gemischt",
-            "planet": "offen",
-            "democracy": "risiko"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T09:48:16.895Z",
-          "content_hash": "e95db04236dfa5a1e80c846ee1759da876b7911f9caa576c21c705e8124707eb",
-          "source_summary": "In Thüringen beschreibt die Quelle einen eskalierenden Streit zwischen Bundespartei und Landesverband des BSW. Nach Angaben des Beitrags verlassen zehn Landtagsabgeordnete die Partei. Genannt werden dabei auch die Vize-Ministerpräsidentin und Finanzministerin Katja Wolf, Digitalminister Steffen Schütz sowie Umweltminister Tilo Kummer.\n\nDer Bericht ordnet den Vorgang als Belastung für die Regierungskoalition ein. Zugleich heißt es, die BSW-Fraktion bilde weiter eine Fraktion und wolle nächste Woche über weitere Schritte beraten. Außerdem wird auf Äußerungen von BSW-Landesvorsitzender Wolf verwiesen, die sich gegen „endlose Selbstbeschäftigung“ und „Flirts mit Rechtsradikalen“ richteten. Eine unabhängige Bestätigung der Angaben wird in der Quelle selbst nicht geliefert.",
-          "analysis": {
-            "story_id": "wt-215068875954a78e",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "In Thüringen verlassen zehn Landtagsabgeordnete das BSW; darunter sind Katja Wolf, Steffen Schütz und Tilo Kummer. Die Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
-            "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn Thüringer Landtagsabgeordneten aus dem BSW, darunter drei Ministerinnen und Minister. Das ist politisch relevant, weil der Schritt unmittelbar die Stabilität einer ohnehin spannungsreichen Regierungskoalition berührt. Der Wirkpfad liegt weniger in einem einzelnen Stimmverlust als in veränderten Mehrheits-, Verhandlungs- und Disziplinierungsanreizen innerhalb von Partei, Fraktion und Kabinett. Mögliche Folgen sind eine geschwächte Koalitionsfähigkeit, neue Personal- oder Abstimmungsfragen und zusätzliche Unsicherheit für die Landespolitik. Für eine endgültige Einordnung fehlt aber unabhängige Bestätigung der Zahlen und des innerparteilichen Ablaufs; aktuell stützt sich die Meldung auf einen einzelnen journalistischen Bericht. Die Nachricht bleibt deshalb vorläufig, ist aber wegen ihrer unmittelbaren Folgen für Regierungsfähigkeit und politische Steuerung berichtenswert.",
-            "why_relevant": "Der Austritt mehrerer Landtagsabgeordneter aus einer Regierungspartei kann Mehrheiten, Koalitionsstabilität und politische Steuerungsfähigkeit in Thüringen verändern.",
-            "status": "offen",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind Landesregierung, Fraktion und Wählervertretung; die Koalitionsstabilität kann sich kurzfristig ändern."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen ist aus der Quelle nicht ableitbar."
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "rationale": "Parteiaustritte in einer Regierungskoalition berühren Mehrheiten, Repräsentation und demokratische Korrekturfähigkeit."
-            },
-            "importance": "hoch",
-            "impact_potential": "Veränderte Mehrheitsverhältnisse, neue Koalitionskonflikte und mögliche Umbesetzungen oder Kurskorrekturen in der Landespolitik.",
-            "impact_risks": [
-              "Instabilere Regierungsarbeit",
-              "Verunsicherung bei Abstimmungen und Zuständigkeiten",
-              "Zusätzliche Polarisierung innerhalb von Partei und Koalition"
-            ],
-            "mechanisms": [
-              "Austritte schwächen parteiinterne Bindung",
-              "Koalitionspartner müssen mögliche Mehrheits- und Vertrauensfragen neu bewerten",
-              "Personalien in Regierung und Fraktion werden politisch neu verhandelt"
-            ],
-            "first_order": [
-              "mehr Konflikt in Partei und Fraktion",
-              "Beratungen über weitere Schritte"
-            ],
-            "second_order": [
-              "mögliche Änderungen in Koalitionsdisziplin und Ressortarbeit",
-              "höhere Unsicherheit über künftige Mehrheiten"
-            ],
-            "third_order": [
-              "dauerhafte Neuordnung des Thüringer Regierungsbündnisses möglich"
-            ],
-            "systemic_relevance": "Der Vorgang betrifft die Funktionsfähigkeit einer Landesregierung und damit die demokratische Steuerung auf Ebene eines Bundeslandes.",
-            "transformation_potential": "Kurzfristig eher begrenzt; möglich ist aber eine tiefere Neuordnung von Partei- und Koalitionsbeziehungen in Thüringen.",
-            "resilience": "Die institutionelle Resilienz hängt davon ab, ob Fraktion und Koalition die Spannungen organisatorisch auffangen können.",
-            "side_effects": [
-              "verstärkte öffentliche Konfliktwahrnehmung",
-              "mögliche Personaldebatten"
-            ],
-            "uncertainties": [
-              "Unklar bleibt, wie viele Mandatsträger tatsächlich folgen und welche konkreten Schritte nächste Woche beschlossen werden.",
-              "Die Quelle nennt keine unabhängige Bestätigung der Austrittszahlen."
-            ],
-            "evidence_level": "single_source_report mit namentlich belegten Angaben, aber ohne unabhängige Zweitbestätigung.",
-            "attribution": "Die Angaben stammen aus einem Deutschlandfunk-Beitrag; weitere unabhängige Quellen liegen hier nicht vor.",
-            "watch_next": [
-              "Erklärung der Fraktion nach der angekündigten Beratung",
-              "mögliche Reaktionen von Koalitionspartnern",
-              "weitere Austritts- oder Verbleibserklärungen"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "democratic_correctability",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Der Austritt mehrerer Abgeordneter aus einer Regierungspartei kann die Koalitionsstabilität und die demokratische Steuerungsfähigkeit des Landes unmittelbar verändern."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-215068875954a78e-v1-claim-1",
-              "story_id": "wt-215068875954a78e",
-              "claim": "Zehn Landtagsabgeordnete verlassen in Thüringen das BSW.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-                  "excerpt_hash": "51bea55fd0914055f969",
-                  "checked_at": "2026-09-04T09:48:16.895Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T09:48:16.895Z"
-            },
-            {
-              "claim_id": "wt-215068875954a78e-v1-claim-2",
-              "story_id": "wt-215068875954a78e",
-              "claim": "Zu den Austretenden zählen Katja Wolf, Steffen Schütz und Tilo Kummer.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-                  "excerpt_hash": "0a0298a211d6b2748d7d",
-                  "checked_at": "2026-09-04T09:48:16.895Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T09:48:16.895Z"
-            },
-            {
-              "claim_id": "wt-215068875954a78e-v1-claim-3",
-              "story_id": "wt-215068875954a78e",
-              "claim": "Die BSW-Fraktion will nächste Woche über weitere Schritte beraten und hält an der Regierungskoalition fest.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-                  "excerpt_hash": "f282bda5ed65322e23bd",
-                  "checked_at": "2026-09-04T09:48:16.895Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T09:48:16.895Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-              "content_hash": "29a7cf08203a9fc2bb648b2c0addfba8bd704f0c23fe5df17223c3d97c928804"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-04T10:43:37.572Z",
-          "content_hash": "f205c30984f9fe5f492abcb6b7391f3574dbbd664438110eb5b6f7cbfb82e10b",
-          "source_summary": "In Thüringen berichtet Deutschlandfunk von einem eskalierten Streit im Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband. Nach der Meldung verlassen zehn Landtagsabgeordnete die Partei; genannt werden Katja Wolf, Steffen Schütz und Tilo Kummer. Die Sendung ordnet dies als Belastungsprobe für die Regierungskoalition ein.\n\nDie bisherige BSW-Fraktionsvorsitzende Hupach sagte laut Bericht, man bilde weiter eine Fraktion und berate nächste Woche über weitere Schritte. Zugleich wolle man an der Regierungskoalition in Thüringen festhalten. Wolf erklärte demnach, man sei nicht für „endlose Selbstbeschäftigung“ gewählt worden. Die Meldung verweist außerdem darauf, dass Ministerpräsident Voigt mit CDU, BSW und SPD regiert und im Landtag keine eigene Mehrheit hat.",
-          "analysis": {
-            "story_id": "wt-215068875954a78e",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Zehn BSW-Landtagsabgeordnete in Thüringen verlassen die Partei, darunter Wolf, Schütz und Kummer. Die Fraktion will nächste Woche weitere Schritte beraten und hält vorerst an der Koalition fest.",
-            "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn Thüringer BSW-Landtagsabgeordneten, darunter drei Mitglieder der Landesregierung. Das ist politisch relevant, weil damit eine Regierungskoalition betroffen ist, die im Landtag ohnehin keine eigene Mehrheit hat. Der Wirkpfad liegt nicht in sofortigen Sachpolitikeffekten, sondern in möglicher Verschiebung von Koalitionsdisziplin, Mehrheiten und Verhandlungsmacht. Kurzfristig kann das die Stabilität der Landesregierung schwächen und Entscheidungsprozesse verlangsamen. Ob daraus tatsächlich ein Regierungsbruch, Personalwechsel oder eine neue Mehrheitsbildung folgt, bleibt offen. Die Evidenz stützt derzeit nur die Meldung selbst; zu den weiteren Schritten gibt es noch keine belastbare Bestätigung.",
-            "why_relevant": "Die Meldung betrifft unmittelbar die Stabilität einer Landesregierung und damit Entscheidungsfähigkeit, Mehrheitsbildung und politische Steuerung in Thüringen.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind Regierungsbildung, Verwaltungshandeln und die politische Handlungsfähigkeit des Landes."
-            },
-            "planet": {
-              "relevance": "offen",
-              "rationale": "Aus der Meldung folgt noch kein direkter Umwelt- oder Ressourceneffekt; mögliche Folgen bleiben indirekt und offen."
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "rationale": "Parteiaustritte aus einer Regierungsfraktion können Mehrheiten, Koalitionsdisziplin und demokratische Steuerungsfähigkeit verändern."
-            },
-            "importance": "hoch",
-            "impact_potential": "Mögliche Veränderungen bei Koalitionsstabilität, Mehrheitsverhältnissen und der Geschwindigkeit politischer Entscheidungen in Thüringen.",
-            "impact_risks": [
-              "Verlust von Regierungsmehrheit oder häufigere Koalitionskrisen",
-              "Verzögerungen bei Gesetzgebung und Haushaltsentscheidungen",
-              "schwächere demokratische Korrekturfähigkeit durch instabilere Mehrheiten"
-            ],
-            "mechanisms": [
-              "Austritte verändern Fraktionsstärke und Verhandlungsmacht.",
-              "Interne Konflikte können Koalitionsabsprachen belasten.",
-              "Die Beteiligung von Regierungsmitgliedern erhöht den Druck auf Kabinett und Fraktion."
-            ],
-            "first_order": [
-              "Austrittsmeldung erzeugt unmittelbaren Druck auf die BSW-Fraktion.",
-              "Koalitionsgespräche und interne Beratungen werden wahrscheinlicher."
-            ],
-            "second_order": [
-              "Koalitionskonflikte können die parlamentarische Arbeitsfähigkeit mindern.",
-              "Mehrheitsentscheidungen können unsicherer werden."
-            ],
-            "third_order": [
-              "Bei anhaltender Instabilität können Regierungsumbildung oder Neuwahlfragen entstehen."
-            ],
-            "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie eine Regierungskoalition in einem Landesparlament betrifft und damit über den Einzelfall hinaus die Funktionsfähigkeit demokratischer Mehrheitsbildung berührt.",
-            "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Auslöser für eine Neuordnung von Koalitions- und Fraktionsstrukturen.",
-            "resilience": "Die Resilienz hängt davon ab, ob Fraktion und Koalition ihre Arbeitsfähigkeit trotz der Austritte erhalten.",
-            "side_effects": [
-              "öffentliche Wahrnehmung von Instabilität",
-              "höherer Abstimmungsaufwand in der Koalition"
-            ],
-            "uncertainties": [
-              "Ob weitere Abgeordnete folgen, ist offen.",
-              "Ob die Koalition tatsächlich hält, bleibt nach der Meldung ungesichert."
-            ],
-            "evidence_level": "einzelne journalistische Quelle mit konkreten O-Ton- und Kontextangaben, aber ohne unabhängige Zweitbestätigung",
-            "attribution": "Die Fakten stammen aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
-            "watch_next": [
-              "Ob die Fraktion nächste Woche konkrete Schritte beschließt",
-              "Ob die Koalition in Thüringen politisch stabil bleibt"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neue, zeitnahe Information über den Austritt von zehn Abgeordneten und die mögliche Belastung einer Landesregierung; politisch materiell, aber bisher nur singulär belegt."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Austretende Abgeordnete",
-                  "value": "zehn",
-                  "unit": "Landtagsabgeordnete",
-                  "context": "Zahl der BSW-Abgeordneten, die die Partei verlassen",
-                  "claim_id": "wt-215068875954a78e-claim-01"
-                }
-              ],
-              "affected_groups": [
-                "staat",
-                "unternehmen"
-              ],
-              "tendency": {
-                "human": "gemischt",
-                "planet": "offen",
-                "democracy": "risiko"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-215068875954a78e-v2-claim-1",
-              "story_id": "wt-215068875954a78e",
-              "claim": "In Thüringen verlassen zehn Landtagsabgeordnete das BSW.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-                  "excerpt_hash": "aa6bb46ed6f83277ac3a",
-                  "checked_at": "2026-09-04T10:43:37.572Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            },
-            {
-              "claim_id": "wt-215068875954a78e-v2-claim-2",
-              "story_id": "wt-215068875954a78e",
-              "claim": "Zu den Austritten zählen Katja Wolf, Steffen Schütz und Tilo Kummer.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-                  "excerpt_hash": "0a0298a211d6b2748d7d",
-                  "checked_at": "2026-09-04T10:43:37.572Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            },
-            {
-              "claim_id": "wt-215068875954a78e-v2-claim-3",
-              "story_id": "wt-215068875954a78e",
-              "claim": "Die bisherige BSW-Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-                  "excerpt_hash": "51e5566e3db11d59e358",
-                  "checked_at": "2026-09-04T10:43:37.572Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            },
-            {
-              "claim_id": "wt-215068875954a78e-v2-claim-4",
-              "story_id": "wt-215068875954a78e",
-              "claim": "Der Streit zwischen Bundespartei und Landesverband wird als Belastungsprobe für die Regierungskoalition beschrieben.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-                  "excerpt_hash": "aa6bb46ed6f83277ac3a",
-                  "checked_at": "2026-09-04T10:43:37.572Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:43:37.572Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-              "content_hash": "484ec987c6172113bfd0a3854239952dae946f692636f25a5187a14ce2bbf0de"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T09:48:16.895Z",
-          "source_count": 1
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-04T10:43:37.572Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T13:21:25.210Z",
-        "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-            "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
-            "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T13:13:20.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ff14c73e58edfe1fbfec5b9f7f6cd9ae671d91614ac2aeaa993cf31beb0b56b1",
-            "source_item_id": "1d0f5f5617926e7e43843881fbc35fb25bc1e3a046dab524532fb7c969610b2d",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T13:13:20.000Z",
-            "ingested_at": "2026-09-04T13:21:25.210Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "FOLLOWUP_DATE_UNSUPPORTED"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false
       }
     },
     {
@@ -64631,5 +64786,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T13:21:25.210Z"
+  "public_updated_at": "2026-09-04T13:36:20.834Z"
 }
