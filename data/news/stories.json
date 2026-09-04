@@ -1,7 +1,1295 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T03:36:28.411Z",
+  "updated_at": "2026-09-04T03:51:30.621Z",
   "stories": [
+    {
+      "story_id": "wt-e976be74e6481ea2",
+      "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
+      "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
+      "first_seen": "2026-09-03T19:08:00.000Z",
+      "last_updated": "2026-09-04T03:52:03.346Z",
+      "published_at": "2026-09-04T01:52:37.203Z",
+      "updated_at": "2026-09-04T03:52:03.346Z",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Arbeit",
+        "Wirtschaft",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "manager-magazin-news",
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+          "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
+          "summary": "Die Nervosität beim Autobauer war groß vor der Aufsichtsratssitzung am Donnerstag. Jetzt gibt es eine Einigung. Der Abbau von 50.000 weiteren Stellen ist beschlossen, die Abspaltung der Marke VW wird es vorerst nicht geben. Die Entscheidung für das neue Sparpaket kommt überraschend.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:08:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "6c56839e915f29ca2e0e11b45598a3de58addb9f6c0a7e1f5f950f71091599c2",
+          "source_item_id": "b4460f603afe119cfa958b2515dea48b68c9ad80c326f0c448d3815f936004df",
+          "publisher_id": "manager-magazin",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T19:08:00.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+          "title": "Volkswagen: Aufsichtsrat stimmt Sanierungsplan zu",
+          "summary": "Einigung in Wolfsburg: Der Aufsichtsrat von VW stimmt dem Sanierungsplan für den Autobauer zu. Zehntausende Stellen sollen wegfallen. Bei vier Werken ist die Zukunft offen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:58:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "66f0339e0e8ecbf52936b2aa160ce78516d0707392e2b728ab31b0bdb2420670",
+          "source_item_id": "68313cc778d812e5783c7fc2878e91bf9457b61747bfe79a7faf202589e7aabb",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T19:58:00.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
+          "title": "Volkswagen: VW-Aufsichtsrat stimmt Sanierungsplan zu",
+          "summary": "Bei Volkswagen ist die Entscheidung über tiefgreifende Sparmaßnahmen gefallen. Das Paket sieht radikale Umbrüche vor. Es geht um die Schließung deutscher Werke und den Abbau zehntausender Jobs.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:24:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "a9ce3ab942c71b5423d9c6d8e19a5584d58c0681033f59989dacc41ff80cb1ef",
+          "source_item_id": "54224ea768cbd4e7899ac12184d8533932ede4c9d2413c137c504c7ee96f39c8",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T19:24:00.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
+          "title": "Volkswagen in der Krise: Aufsichtsrat stimmt Sanierungsplan zu",
+          "summary": "Weitere 50.000 Jobs sollen wegfallen, vier Werke stehen auf der Kippe: Der Aufsichtsrat hat den VW-​Sanierungsplan gebilligt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:55:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "13ee749f4606aea809de723cfb8be6f6803d99c568d361e11ed14958c52024c1",
+          "source_item_id": "14b6482b5f39fa0aac89effeb3d79608eb50ced3026277e5af7f255a3c63159d",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T20:55:00.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+          "title": "Überraschende Einigung in Wolfsburg: VW-Aufsichtsrat stimmt Sanierungsplan zu – weitere 50.000 Jobs sollen wegfallen",
+          "summary": "Massiver Stellenabbau und vier Werke auf der Kippe: Der Aufsichtsrat von Volkswagen hat dem umstrittenen Sparpaket des Konzernvorstands einstimmig zugestimmt. Eine Eskalation wurde damit verhindert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T18:53:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "81e442a9aed5fde98a30b234ac551cd20cf4b1136e5d0696808e3419a0c896f6",
+          "source_item_id": "42ab7f220441d677e29b61673d6b112eed5461147d7c317da9b45448d1875bd5",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T18:53:18.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+          "title": "VW-Aufsichtsrat stimmt umstrittenem Sanierungsplan zu",
+          "summary": "Der Aufsichtsrat von Volkswagen hat dem Sparpaket des Konzernvorstands einstimmig zugestimmt. Dabei will der Autobauer in den kommenden Jahren unter anderem weitere 50.000 Stellen streichen",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:34:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "cf8a909f85941f9c89ef7324d0a1ef37b0401bc33c0a8152144cb5f95e176c9e",
+          "source_item_id": "4457622610311639834e778234e945afcdb9949e10e17bbdbe731e51fc65490c",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T20:34:25.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+          "title": "VW-Aufsichtsrat stimmt Sanierungsplan zu: Zukunft von Audi in Neckarsulm weiter unklar",
+          "summary": "Eine \"wettbewerbsfähige Folgebelegung\" von vier Werken könne nicht gewährleistet werden, heißt es in einer Mitteilung des Unternehmens. Das Audi-Werk in Neckarsulm ist eines davon.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T23:24:43.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "74ffdae2d901c30f5d7f50fb3f16654f2e42c30a5941feb32415d8bd7a70d9bc",
+          "source_item_id": "a50c612a51770d07fd8ad39ee32364784ba9dedde53776a4e8bde1cc92a563d0",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T23:24:43.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+          "title": "Automobil-Industrie - Volkswagen-Aufsichtsrat stimmt Sparpaket und Stellenabbau zu",
+          "summary": "Der Volkswagen-Konzern wird in den kommenden Jahren ein breit angelegtes Sparpaket umsetzen und zusätzlich rund 50.000 Arbeitsplätze streichen. Der Aufsichtsrat des Automobil-Herstellers billigte gestern Abend in Wolfsburg die Vorschläge von Konzernchef Blume einstimmig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T03:44:12.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3e8c8d14cbb7c8f921b9190f4d05ce7f7e58e4ac3a0953f580d39b5883e6c66d",
+          "source_item_id": "927119a75e00b37e23d5fb27c24ed5cbd1b7e3fcc854c821524f7d8a51defecd",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T03:44:12.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e976be74e6481ea2-v2-claim-1",
+          "story_id": "wt-e976be74e6481ea2",
+          "claim": "Der VW-Aufsichtsrat hat den Sanierungs- und Sparplan des Konzerns gebilligt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+              "excerpt_hash": "fac0965da8f51be2287f",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:52:03.346Z"
+        },
+        {
+          "claim_id": "wt-e976be74e6481ea2-v2-claim-2",
+          "story_id": "wt-e976be74e6481ea2",
+          "claim": "In den Berichten ist von rund 50.000 abzubauenden Stellen die Rede.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+              "excerpt_hash": "a7f96ebcf7a0125b722a",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+              "excerpt_hash": "fac0965da8f51be2287f",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:52:03.346Z"
+        },
+        {
+          "claim_id": "wt-e976be74e6481ea2-v2-claim-3",
+          "story_id": "wt-e976be74e6481ea2",
+          "claim": "Mehrere Berichte nennen vier Werke, deren Zukunft oder Folgebelegung offen bleibt.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+              "excerpt_hash": "098a03ed43858a7777a7",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+              "excerpt_hash": "e33037a2ffa761fccc70",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:52:03.346Z"
+        },
+        {
+          "claim_id": "wt-e976be74e6481ea2-v2-claim-4",
+          "story_id": "wt-e976be74e6481ea2",
+          "claim": "In den Meldungen heißt es, die Zustimmung sei einstimmig erfolgt.",
+          "status": "single_source_claim",
+          "source_id": "tagesspiegel-home",
+          "evidence": [
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+              "excerpt_hash": "a127e41814f986abb663",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+              "excerpt_hash": "2cbdd79b0c394c0e048d",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:52:03.346Z"
+        },
+        {
+          "claim_id": "wt-e976be74e6481ea2-v2-claim-5",
+          "story_id": "wt-e976be74e6481ea2",
+          "claim": "Mehrere Redaktionen schreiben, eine Eskalation sei damit vorerst verhindert worden.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+              "excerpt_hash": "4d5a3f129953fd33adb0",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+              "excerpt_hash": "a127e41814f986abb663",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:52:03.346Z"
+        }
+      ],
+      "event_id": "event-06fbdda38e40a97f5340",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T03:51:52.523Z",
+      "publish_ready_at": "2026-09-04T03:52:03.346Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "mdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 8,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie viele Stellen werden tatsächlich sozialverträglich oder betriebsbedingt abgebaut?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Personalzahlen und Personalmaßnahmen je Standort",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-aaafd43ff7f2b06d",
+          "announced_at": "2026-09-04T01:33:27.000Z",
+          "follow_up_date": "2026-09-11T01:52:37.203Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wann die in den Berichten genannten vier Werke eine alternative Folgebelegung erhalten.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Benannte Standortentscheidungen oder neue Nutzungen für die vier Werke",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-61fad9a0b5152cd5",
+          "announced_at": "2026-09-03T23:24:43.000Z",
+          "follow_up_date": "2026-09-11T03:52:03.346Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "8ace11004a7fe8a753aa1eb5ba413c5352a448fd99645e10812a8620c41120ad",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "188ef36e94b9ffffbeaa26d61a4a00f20e8933357545bad415a919b9844c40c5"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "6042466a090498233a5abf8ca23fa8b064162bfbab444a4813e7e90ec46cc0e3"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "c1ecbe044452f0e90270c6c42f7cda1405a48e45265e118f3bb517488d3dac16"
+        },
+        "source_visual": null,
+        "fingerprint": "12aeedd46526401d972a190861d5d8bb140b759694a16879251763c7f2e33653",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T01:54:15.383Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Mehrere Berichte melden, der VW-Aufsichtsrat habe einem Spar- und Sanierungsplan zugestimmt. In den Meldungen ist von rund 50.000 Stellen die Rede, die in den kommenden Jahren abgebaut werden sollen. Außerdem bleibt bei vier Werken die Zukunft offen oder es wird eine mögliche Folgebelegung genannt.\n\nDie Berichte nennen die Entscheidung als einstimmig und ordnen sie als wichtige Einigung in Wolfsburg ein. Teilweise heißt es, eine Eskalation sei verhindert worden. Details zu den konkreten Folgen für einzelne Standorte und zur weiteren Umsetzung bleiben in den gelieferten Ausschnitten offen.",
+      "analysis": {
+        "story_id": "wt-e976be74e6481ea2",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Der VW-Aufsichtsrat hat laut mehreren Berichten einem Spar- und Sanierungsplan zugestimmt. Im Raum steht ein Abbau von rund 50.000 Stellen und eine offene Perspektive für vier Werke.",
+        "detail_summary": "Gesichert ist aus den vorliegenden Berichten vor allem die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan. Mehrere Redaktionen nennen dabei rund 50.000 abzubauende Stellen und verweisen auf vier Werke, deren Zukunft oder Folgebelegung offen bleibt. Für die wirtschaftliche Wirkung ist das relevant, weil damit ein großer Eingriff in Beschäftigung, Standortstruktur und interne Investitionsverteilung beschrieben wird. Der Wirkpfad führt über Stellenabbau, mögliche Standortumbauten und veränderte Produktions- und Kapazitätsentscheidungen. Mögliche Folgen sind Belastungen für Beschäftigte und betroffene Regionen sowie neue industrielle Nutzungen einzelner Werke. Belastbar bleibt aber nur der berichtete Beschluss; konkrete Umsetzung, Zeitplan und tatsächliche Beschäftigungseffekte sind in den Ausschnitten noch nicht belegt.",
+        "why_relevant": "Die Meldung beschreibt eine konzernweite Entscheidung mit möglichen Folgen für Beschäftigung, Standorte und industrielle Struktur in Deutschland.",
+        "status": "beschlossen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind laut Bericht rund 50.000 Stellen; das kann Beschäftigte, Familien und regionale Arbeitsmärkte spürbar verändern."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Berichte erwähnen mögliche Folgebelegungen und Werkumnutzungen, aber keine gesicherten Umweltwirkungen oder Emissionsdaten."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Entscheidung betrifft einen industriellen Schlüsselakteur und kann politische Anschlussfragen zu Standorten, Arbeit und Industriepolitik auslösen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Ein gebilligter Sanierungsplan kann Beschäftigungsumfang, Standortnutzung, Investitionsströme und die regionale Wirtschaftsstruktur in mehreren Werken verändern.",
+        "impact_risks": [
+          "Stellenabbau kann Einkommen und Beschäftigungssicherheit vieler Beschäftigter verschlechtern.",
+          "Offene Standortperspektiven erhöhen Planungsunsicherheit für Regionen und Zulieferer.",
+          "Umsetzungen können interne Konflikte und politischen Druck auf Industrie- und Standortpolitik verstärken."
+        ],
+        "mechanisms": [
+          "Beschluss des Aufsichtsrats als Governance-Signal",
+          "geplanter Personalabbau als direkter Eingriff in Arbeitsmarkt und Kostenstruktur",
+          "mögliche Neuverwendung einzelner Werke als Standortumbau"
+        ],
+        "first_order": [
+          "Berichte über gebilligten Sanierungsplan und rund 50.000 abzubauende Stellen",
+          "offene Zukunft von vier Werken"
+        ],
+        "second_order": [
+          "Unsicherheit bei Beschäftigten, Betriebsräten und Zulieferern",
+          "mögliche Neuverteilung von Produktion und Investitionen"
+        ],
+        "third_order": [
+          "Veränderungen in regionalen Arbeitsmärkten und industriellen Wertschöpfungsketten",
+          "politische Debatten über Industriepolitik und Standortschutz"
+        ],
+        "systemic_relevance": "VW ist ein großer Industrie- und Arbeitgeberkomplex; Eingriffe dieser Größenordnung können über Regionen hinaus Beschäftigung, Zulieferketten und Investitionsentscheidungen beeinflussen.",
+        "transformation_potential": "Die Meldung deutet auf eine tiefere Restrukturierung des Konzerns und möglicher Standortfunktionen hin, nicht nur auf eine kurzfristige Kostensenkung.",
+        "resilience": "Kurzfristig schwächt ein großer Personal- und Strukturumbau die Planbarkeit; langfristig kann eine klare Nachnutzung von Standorten Resilienz nur dann erhöhen, wenn sie tatsächlich umgesetzt wird.",
+        "side_effects": [
+          "Konflikte mit Beschäftigtenvertretungen",
+          "Unsicherheit über vier Werke",
+          "mögliche Verlagerung von Wertschöpfung innerhalb des Konzerns"
+        ],
+        "uncertainties": [
+          "Konkrete Umsetzungsdetails sind in den Ausschnitten nicht enthalten.",
+          "Die tatsächliche Zahl später realisierter Stellenstreichungen ist noch offen.",
+          "Für die vier Werke bleibt die Folgebelegung unklar."
+        ],
+        "evidence_level": "mehrere journalistische Berichte mit übereinstimmendem Kern, aber ohne hier vorliegenden Primärbeleg",
+        "attribution": "Die Meldung stützt sich auf übereinstimmende Sekundärberichte; ein direkter Originalbeleg des Beschlusses liegt in den gelieferten Quellen nicht vor.",
+        "watch_next": [
+          "konkrete Standort- und Zeitpläne für die vier Werke",
+          "offizielle Mitteilung des Konzerns oder des Aufsichtsrats zur Umsetzung",
+          "Reaktionen von Betriebsrat, IG Metall und Ländern"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 8",
+          "Agenda 2030/SDG 9"
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Die gebilligte Konzernrestrukturierung mit rund 50.000 betroffenen Stellen ist materiell relevant; die Berichtslage ist konsistent, aber nur sekundär belegt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "abzubauende Stellen",
+              "value": "50.000",
+              "unit": "Arbeitsplätze",
+              "context": "von mehreren Berichten genannte Größenordnung",
+              "claim_id": "wt-e976be74e6481ea2-claim-02"
+            },
+            {
+              "label": "betroffene Werke",
+              "value": "vier",
+              "unit": "Werke",
+              "context": "Zukunft oder Folgebelegung bleibt offen",
+              "claim_id": "wt-e976be74e6481ea2-claim-03"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte",
+            "unternehmen",
+            "kommunen",
+            "staat"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T01:52:37.203Z",
+          "content_hash": "529a012244a8c4d0dbf304acce3cfe9e927f6ab6df354cef0af090c616898a9a",
+          "source_summary": "Mehrere überregionale Medien berichten übereinstimmend, dass der VW-Aufsichtsrat dem Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg zugestimmt hat. Genannt werden ein Abbau von rund 50.000 Arbeitsplätzen sowie weitere Einschnitte im Konzern.\n\nMehrere Quellen schreiben außerdem, dass bei vier Werken die Zukunft oder eine Folgebelegung offen bleibt. In einzelnen Berichten heißt es, eine Eskalation sei verhindert worden oder der Beschluss sei einstimmig gefallen. Eine Quelle nennt zusätzlich, dass die Abspaltung der Marke VW vorerst nicht komme. Die genauen Unternehmensunterlagen und weitere Details zum Umfang der Maßnahmen liegen in den gelieferten Ausschnitten nicht vollständig vor.",
+          "analysis": {
+            "story_id": "wt-e976be74e6481ea2",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "VW-Aufsichtsrat und Konzernvorstand haben laut mehreren Berichten ein Sparpaket gebilligt. Kernpunkt ist der geplante Abbau von rund 50.000 Jobs.",
+            "detail_summary": "Bestbelegt ist die Zustimmung des VW-Aufsichtsrats zum Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg. Mehrere voneinander getrennte Redaktionsberichte nennen zudem den Abbau von rund 50.000 Arbeitsplätzen als Bestandteil des Plans. Das ist materiell relevant, weil damit Beschäftigung, Standortstruktur und Investitionsspielräume des Konzerns direkt neu geordnet werden. Als Wirkpfad ist vor allem ein Rückgang von Personalkosten und eine Neupriorisierung von Produktion und Folgebelegung der Werke erkennbar. Mögliche Folgen sind Arbeitsplatzverluste, veränderte Zulieferketten und Unsicherheit an mehreren Standorten; ob und wann konkrete Effekte eintreten, bleibt offen. Die Quellenlage belegt den Beschluss und die Größenordnung, aber nicht die vollständigen Umsetzungsdetails oder alle Standortfolgen.",
+            "why_relevant": "Die Entscheidung verändert nach den vorliegenden Quellen Beschäftigung, Standortstruktur und Investitionsverteilung in einem großen Industriekonzern mit möglichen Folgewirkungen für Zulieferer und betroffene Regionen.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind laut Quellen rund 50.000 Stellen; das berührt Beschäftigung, Einkommen und Standortperspektiven in mehreren Regionen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Indirekte Folgen für Produktionsstandorte, Logistik und Investitionen sind möglich, aber in den Quellen nicht beziffert."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Einigung betrifft Mitbestimmung, Betriebsratspositionen und die Korrekturfähigkeit von Standortentscheidungen im Konzern."
+            },
+            "importance": "hoch",
+            "impact_potential": "Der Beschluss kann die Kostenstruktur, die Beschäftigtenzahl und die industrielle Landkarte des Konzerns spürbar verändern.",
+            "impact_risks": [
+              "Stellenabbau kann Einkommen und regionale Nachfrage mindern.",
+              "Offene Werksfragen können längere Unsicherheit an Standorten erzeugen.",
+              "Zulieferer und Kommunen könnten mit Folgekosten und Anpassungsdruck konfrontiert werden."
+            ],
+            "mechanisms": [
+              "Reduktion von Personalkosten",
+              "Neuordnung von Werks- und Produktionsstrukturen",
+              "Verschiebung von Investitionen in Folgebelegung und Zukunftskonzepte"
+            ],
+            "first_order": [
+              "Abbau von rund 50.000 Arbeitsplätzen",
+              "offene Zukunft bei vier Werken",
+              "interne Umsetzung des Sanierungsplans"
+            ],
+            "second_order": [
+              "Unsicherheit für Beschäftigte und Standorte",
+              "Anpassungsdruck bei Zulieferern",
+              "Neuverteilung von Produktionsvolumen"
+            ],
+            "third_order": [
+              "Veränderte regionale Wirtschaftsstruktur",
+              "mögliche Verschiebung industrieller Wertschöpfung",
+              "Langfristige Effekte auf Resilienz und Mitbestimmung"
+            ],
+            "systemic_relevance": "Volkswagen ist ein systemrelevanter Industrieakteur; ein Plan dieser Größenordnung kann über Beschäftigung und Zulieferketten in mehrere Regionen ausstrahlen.",
+            "transformation_potential": "Die Maßnahme kann die industrielle Produktions- und Standortarchitektur des Konzerns neu ausrichten, bleibt aber nach Quellenlage zunächst ein Umsetzungsplan.",
+            "resilience": "Die Quellen zeigen zugleich hohe Anpassungslast und die Offenheit der Folgebelegung; ob Resilienz steigt oder sinkt, ist vorerst offen.",
+            "side_effects": [
+              "Interne Konflikte können vorübergehend beruhigt, aber nicht gelöst sein.",
+              "Medienberichte nennen keine gesicherte Entwarnung für die betroffenen Werke."
+            ],
+            "uncertainties": [
+              "Die vollständigen Vertrags- und Umsetzungsdetails sind in den Ausschnitten nicht enthalten.",
+              "Für die vier Werke bleibt die konkrete Folgebelegung offen.",
+              "Die tatsächliche Zahl der später realisierten Stellenstreichungen ist noch nicht belegt."
+            ],
+            "evidence_level": "hoch für den Beschluss und die genannte Größenordnung, begrenzt für die Standortfolgen",
+            "attribution": "Die Kernbehauptungen stammen aus mehreren Redaktionsberichten; eine direkt zitierte Primärquelle liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Konkrete Personalmaßnahmen und Zeitplan",
+              "Unternehmensmitteilung zu den vier Werken",
+              "Reaktionen von Betriebsrat, IG Metall und Ländern"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, SDG 9, SDG 10; Mitbestimmung und industrielle Resilienz"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Mehrere voneinander unabhängige Medien berichten übereinstimmend über einen materiell bedeutsamen Konzernbeschluss mit großem Beschäftigungseffekt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Arbeitsplätze",
+                  "value": "50.000",
+                  "unit": "Stellen",
+                  "context": "Geplanter Abbau im Konzern",
+                  "claim_id": "wt-e976be74e6481ea2-claim-02"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "unternehmen",
+                "kommunen",
+                "staat"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-e976be74e6481ea2-v1-claim-1",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Der Aufsichtsrat von Volkswagen hat dem Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg zugestimmt.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "baceae08135b345ec118",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "b92d2cdcc9981f3dc8d9",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "manager-magazin-news",
+                  "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+                  "excerpt_hash": "350e0201830a0725cb24",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:37.203Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v1-claim-2",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Der Plan sieht den Abbau von rund 50.000 Arbeitsplätzen vor.",
+              "status": "confirmed_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "a7f96ebcf7a0125b722a",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "baceae08135b345ec118",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "manager-magazin-news",
+                  "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+                  "excerpt_hash": "350e0201830a0725cb24",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:37.203Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v1-claim-3",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Bei vier VW-Werken ist die Zukunft beziehungsweise Folgebelegung weiter offen.",
+              "status": "uncertain_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "05eb615947bfbea1163f",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "swr-aktuell",
+                  "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+                  "excerpt_hash": "e33037a2ffa761fccc70",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+                  "excerpt_hash": "cf3c96944256e4d2ad87",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:37.203Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v1-claim-4",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Eine Abspaltung der Marke VW wird vorerst nicht kommen.",
+              "status": "single_source_claim",
+              "source_id": "manager-magazin-news",
+              "evidence": [
+                {
+                  "source_id": "manager-magazin-news",
+                  "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+                  "excerpt_hash": "350e0201830a0725cb24",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:37.203Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v1-claim-5",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Der Aufsichtsrat billigte die Vorschläge von Konzernchef Blume einstimmig.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "b92d2cdcc9981f3dc8d9",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+                  "excerpt_hash": "a127e41814f986abb663",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "4e414933465f4da75ad3",
+                  "checked_at": "2026-09-04T01:52:37.203Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:52:37.203Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "manager-magazin-news",
+              "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+              "content_hash": "6c56839e915f29ca2e0e11b45598a3de58addb9f6c0a7e1f5f950f71091599c2"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+              "content_hash": "66f0339e0e8ecbf52936b2aa160ce78516d0707392e2b728ab31b0bdb2420670"
+            },
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
+              "content_hash": "a9ce3ab942c71b5423d9c6d8e19a5584d58c0681033f59989dacc41ff80cb1ef"
+            },
+            {
+              "source_id": "spiegel-schlagzeilen",
+              "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
+              "content_hash": "13ee749f4606aea809de723cfb8be6f6803d99c568d361e11ed14958c52024c1"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+              "content_hash": "81e442a9aed5fde98a30b234ac551cd20cf4b1136e5d0696808e3419a0c896f6"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+              "content_hash": "cf8a909f85941f9c89ef7324d0a1ef37b0401bc33c0a8152144cb5f95e176c9e"
+            },
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+              "content_hash": "74ffdae2d901c30f5d7f50fb3f16654f2e42c30a5941feb32415d8bd7a70d9bc"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+              "content_hash": "b2b8582be8c326fcbd27f3f496744ee4d87561c3dc49db039b42634c1fda0cb8"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T03:52:03.346Z",
+          "content_hash": "8ace11004a7fe8a753aa1eb5ba413c5352a448fd99645e10812a8620c41120ad",
+          "source_summary": "Mehrere Berichte melden, der VW-Aufsichtsrat habe einem Spar- und Sanierungsplan zugestimmt. In den Meldungen ist von rund 50.000 Stellen die Rede, die in den kommenden Jahren abgebaut werden sollen. Außerdem bleibt bei vier Werken die Zukunft offen oder es wird eine mögliche Folgebelegung genannt.\n\nDie Berichte nennen die Entscheidung als einstimmig und ordnen sie als wichtige Einigung in Wolfsburg ein. Teilweise heißt es, eine Eskalation sei verhindert worden. Details zu den konkreten Folgen für einzelne Standorte und zur weiteren Umsetzung bleiben in den gelieferten Ausschnitten offen.",
+          "analysis": {
+            "story_id": "wt-e976be74e6481ea2",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Der VW-Aufsichtsrat hat laut mehreren Berichten einem Spar- und Sanierungsplan zugestimmt. Im Raum steht ein Abbau von rund 50.000 Stellen und eine offene Perspektive für vier Werke.",
+            "detail_summary": "Gesichert ist aus den vorliegenden Berichten vor allem die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan. Mehrere Redaktionen nennen dabei rund 50.000 abzubauende Stellen und verweisen auf vier Werke, deren Zukunft oder Folgebelegung offen bleibt. Für die wirtschaftliche Wirkung ist das relevant, weil damit ein großer Eingriff in Beschäftigung, Standortstruktur und interne Investitionsverteilung beschrieben wird. Der Wirkpfad führt über Stellenabbau, mögliche Standortumbauten und veränderte Produktions- und Kapazitätsentscheidungen. Mögliche Folgen sind Belastungen für Beschäftigte und betroffene Regionen sowie neue industrielle Nutzungen einzelner Werke. Belastbar bleibt aber nur der berichtete Beschluss; konkrete Umsetzung, Zeitplan und tatsächliche Beschäftigungseffekte sind in den Ausschnitten noch nicht belegt.",
+            "why_relevant": "Die Meldung beschreibt eine konzernweite Entscheidung mit möglichen Folgen für Beschäftigung, Standorte und industrielle Struktur in Deutschland.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind laut Bericht rund 50.000 Stellen; das kann Beschäftigte, Familien und regionale Arbeitsmärkte spürbar verändern."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Die Berichte erwähnen mögliche Folgebelegungen und Werkumnutzungen, aber keine gesicherten Umweltwirkungen oder Emissionsdaten."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Entscheidung betrifft einen industriellen Schlüsselakteur und kann politische Anschlussfragen zu Standorten, Arbeit und Industriepolitik auslösen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Ein gebilligter Sanierungsplan kann Beschäftigungsumfang, Standortnutzung, Investitionsströme und die regionale Wirtschaftsstruktur in mehreren Werken verändern.",
+            "impact_risks": [
+              "Stellenabbau kann Einkommen und Beschäftigungssicherheit vieler Beschäftigter verschlechtern.",
+              "Offene Standortperspektiven erhöhen Planungsunsicherheit für Regionen und Zulieferer.",
+              "Umsetzungen können interne Konflikte und politischen Druck auf Industrie- und Standortpolitik verstärken."
+            ],
+            "mechanisms": [
+              "Beschluss des Aufsichtsrats als Governance-Signal",
+              "geplanter Personalabbau als direkter Eingriff in Arbeitsmarkt und Kostenstruktur",
+              "mögliche Neuverwendung einzelner Werke als Standortumbau"
+            ],
+            "first_order": [
+              "Berichte über gebilligten Sanierungsplan und rund 50.000 abzubauende Stellen",
+              "offene Zukunft von vier Werken"
+            ],
+            "second_order": [
+              "Unsicherheit bei Beschäftigten, Betriebsräten und Zulieferern",
+              "mögliche Neuverteilung von Produktion und Investitionen"
+            ],
+            "third_order": [
+              "Veränderungen in regionalen Arbeitsmärkten und industriellen Wertschöpfungsketten",
+              "politische Debatten über Industriepolitik und Standortschutz"
+            ],
+            "systemic_relevance": "VW ist ein großer Industrie- und Arbeitgeberkomplex; Eingriffe dieser Größenordnung können über Regionen hinaus Beschäftigung, Zulieferketten und Investitionsentscheidungen beeinflussen.",
+            "transformation_potential": "Die Meldung deutet auf eine tiefere Restrukturierung des Konzerns und möglicher Standortfunktionen hin, nicht nur auf eine kurzfristige Kostensenkung.",
+            "resilience": "Kurzfristig schwächt ein großer Personal- und Strukturumbau die Planbarkeit; langfristig kann eine klare Nachnutzung von Standorten Resilienz nur dann erhöhen, wenn sie tatsächlich umgesetzt wird.",
+            "side_effects": [
+              "Konflikte mit Beschäftigtenvertretungen",
+              "Unsicherheit über vier Werke",
+              "mögliche Verlagerung von Wertschöpfung innerhalb des Konzerns"
+            ],
+            "uncertainties": [
+              "Konkrete Umsetzungsdetails sind in den Ausschnitten nicht enthalten.",
+              "Die tatsächliche Zahl später realisierter Stellenstreichungen ist noch offen.",
+              "Für die vier Werke bleibt die Folgebelegung unklar."
+            ],
+            "evidence_level": "mehrere journalistische Berichte mit übereinstimmendem Kern, aber ohne hier vorliegenden Primärbeleg",
+            "attribution": "Die Meldung stützt sich auf übereinstimmende Sekundärberichte; ein direkter Originalbeleg des Beschlusses liegt in den gelieferten Quellen nicht vor.",
+            "watch_next": [
+              "konkrete Standort- und Zeitpläne für die vier Werke",
+              "offizielle Mitteilung des Konzerns oder des Aufsichtsrats zur Umsetzung",
+              "Reaktionen von Betriebsrat, IG Metall und Ländern"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8",
+              "Agenda 2030/SDG 9"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Die gebilligte Konzernrestrukturierung mit rund 50.000 betroffenen Stellen ist materiell relevant; die Berichtslage ist konsistent, aber nur sekundär belegt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "abzubauende Stellen",
+                  "value": "50.000",
+                  "unit": "Arbeitsplätze",
+                  "context": "von mehreren Berichten genannte Größenordnung",
+                  "claim_id": "wt-e976be74e6481ea2-claim-02"
+                },
+                {
+                  "label": "betroffene Werke",
+                  "value": "vier",
+                  "unit": "Werke",
+                  "context": "Zukunft oder Folgebelegung bleibt offen",
+                  "claim_id": "wt-e976be74e6481ea2-claim-03"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "unternehmen",
+                "kommunen",
+                "staat"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-e976be74e6481ea2-v2-claim-1",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Der VW-Aufsichtsrat hat den Sanierungs- und Sparplan des Konzerns gebilligt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "fac0965da8f51be2287f",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v2-claim-2",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "In den Berichten ist von rund 50.000 abzubauenden Stellen die Rede.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "a7f96ebcf7a0125b722a",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "fac0965da8f51be2287f",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v2-claim-3",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Mehrere Berichte nennen vier Werke, deren Zukunft oder Folgebelegung offen bleibt.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "098a03ed43858a7777a7",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                },
+                {
+                  "source_id": "swr-aktuell",
+                  "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+                  "excerpt_hash": "e33037a2ffa761fccc70",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v2-claim-4",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "In den Meldungen heißt es, die Zustimmung sei einstimmig erfolgt.",
+              "status": "single_source_claim",
+              "source_id": "tagesspiegel-home",
+              "evidence": [
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+                  "excerpt_hash": "a127e41814f986abb663",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "2cbdd79b0c394c0e048d",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v2-claim-5",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Mehrere Redaktionen schreiben, eine Eskalation sei damit vorerst verhindert worden.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "4d5a3f129953fd33adb0",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                },
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+                  "excerpt_hash": "a127e41814f986abb663",
+                  "checked_at": "2026-09-04T03:52:03.346Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:52:03.346Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "manager-magazin-news",
+              "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+              "content_hash": "6c56839e915f29ca2e0e11b45598a3de58addb9f6c0a7e1f5f950f71091599c2"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+              "content_hash": "66f0339e0e8ecbf52936b2aa160ce78516d0707392e2b728ab31b0bdb2420670"
+            },
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
+              "content_hash": "a9ce3ab942c71b5423d9c6d8e19a5584d58c0681033f59989dacc41ff80cb1ef"
+            },
+            {
+              "source_id": "spiegel-schlagzeilen",
+              "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
+              "content_hash": "13ee749f4606aea809de723cfb8be6f6803d99c568d361e11ed14958c52024c1"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+              "content_hash": "81e442a9aed5fde98a30b234ac551cd20cf4b1136e5d0696808e3419a0c896f6"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+              "content_hash": "cf8a909f85941f9c89ef7324d0a1ef37b0401bc33c0a8152144cb5f95e176c9e"
+            },
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+              "content_hash": "74ffdae2d901c30f5d7f50fb3f16654f2e42c30a5941feb32415d8bd7a70d9bc"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+              "content_hash": "3e8c8d14cbb7c8f921b9190f4d05ce7f7e58e4ac3a0953f580d39b5883e6c66d"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T01:52:37.203Z",
+          "source_count": 8
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T03:52:03.346Z",
+          "source_count": 8
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-c0b0ea342baf3286",
+      "slug": "iran-hits-us-military-targets-in-the-region-as-washington-probes-deadly-wedding-strike-af3286",
+      "title": "Iran hits US military targets in the region as Washington probes deadly wedding strike",
+      "first_seen": "2026-09-04T03:42:41.000Z",
+      "last_updated": "2026-09-04T03:42:41.000Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "euronews-en",
+          "publisher": "Euronews",
+          "url": "http://www.euronews.com/2026/09/04/iran-hits-us-military-targets-in-the-region-as-washington-probes-deadly-wedding-strike",
+          "title": "Iran hits US military targets in the region as Washington probes deadly wedding strike",
+          "summary": "Oil prices again spiked this week after a few weeks of relative stability following the renewed fighting as Iran continues to maintain a stranglehold over the strategic Strait of Hormuz, responsible for roughly 20% of global oil shipping.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T03:42:41.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Europa",
+          "content_hash": "397600eea5bd76e970bdf34c5d70d48346df1b593ed81e58a80ea5931c01d485",
+          "source_item_id": "b4acc336664c9c3dad1c8bbaaec759300f758249604d5a09adaf9e996f730e58",
+          "publisher_id": "euronews",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "EU",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T03:42:41.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:euronews",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c0b0ea342baf3286-claim-01",
+          "story_id": "wt-c0b0ea342baf3286",
+          "claim": "Iran hits US military targets in the region as Washington probes deadly wedding strike: Oil prices again spiked this week after a few weeks of relative stability following the renewed fighting as Iran continues to maintain a stranglehold over the strategic Strait of Hormuz, responsible for roughly 20% of global oil shipping.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "euronews-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:euronews",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T03:51:30.621Z"
+        }
+      ],
+      "content_hash": "ded0d21d83de52cfced55e07a58855c6c28ae714269b4134580828425a51f142",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T03:51:30.621Z",
+      "event_first_seen_at": "2026-09-04T03:51:30.621Z",
+      "event_detected_at": "2026-09-04T03:51:30.621Z",
+      "event_id": "event-13f062a49c8708f0c4ae",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.827016666666667,
+        "detection_delay_minutes": 8.827016666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-c87cfdddd07432e2",
       "slug": "sorte-e10-irankrieg-treibt-benzinpreis-auf-hochststand-7432e2",
@@ -563,6 +1851,131 @@
       }
     },
     {
+      "story_id": "wt-76dd7f8508f81c11",
+      "slug": "us-prozess-wegen-kindstotungen-verteidigung-wirft-geschworenem-blockade-von-urteil-vor-f81c11",
+      "title": "US-Prozess wegen Kindstötungen: Verteidigung wirft Geschworenem Blockade von Urteil vor",
+      "first_seen": "2026-09-04T03:37:34.000Z",
+      "last_updated": "2026-09-04T03:37:34.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-prozess-wegen-kindstoetungen--verteidigung-wirft-geschworenem-blockade-von-urteil-vor-38205910.html",
+          "title": "US-Prozess wegen Kindstötungen: Verteidigung wirft Geschworenem Blockade von Urteil vor",
+          "summary": "In dem vielbeachteten US-Prozess gegen eine mutmaßliche Kindsmörderin hat die Verteidigung einem Jury-Mitglied vorgeworfen, ein Urteil zu blockieren. Dieser eine Geschworene weigere sich, die vom Richter erteilten Anweisungen hinsichtlich „berechtigten Zweifels“ an der Schuldfähigkeit der Angeklagten Lindsay C. zu befolgen, sagte deren Anwalt Kevin Reddington am Donnerstag in Plymouth im Bundesstaat Massachusetts. Er beantragte daher, das Jury-Mitglied auszuschließen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T03:37:34.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "331d10643ff6ad160263cf2ce5176e1f2b55d3c0fbd60cd797284b039a0625b5",
+          "source_item_id": "0da35a7c44ab28bb8987dce39658664b376db2c24c27e0304a13e88b57b21596",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T03:37:34.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-76dd7f8508f81c11-claim-01",
+          "story_id": "wt-76dd7f8508f81c11",
+          "claim": "US-Prozess wegen Kindstötungen: Verteidigung wirft Geschworenem Blockade von Urteil vor: In dem vielbeachteten US-Prozess gegen eine mutmaßliche Kindsmörderin hat die Verteidigung einem Jury-Mitglied vorgeworfen, ein Urteil zu blockieren. Dieser eine Geschworene weigere sich, die vom Richter erteilten Anweisungen hinsichtlich „berechtigten Zweifels“ an der Schuldfähigkeit der Angeklagten Lindsay C. zu befolgen, sagte deren Anwalt Kevin Reddington am Donnerstag in Plymouth im Bundesstaat Massachusetts. Er beantragte daher, das Jury-Mitglied auszuschließen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T03:51:30.621Z"
+        }
+      ],
+      "content_hash": "71baae4dbb970047b52212c45a68ae2b768dd99b850243d1db3faa00542cd50a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T03:51:30.621Z",
+      "event_first_seen_at": "2026-09-04T03:51:30.621Z",
+      "event_detected_at": "2026-09-04T03:51:30.621Z",
+      "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.943683333333333,
+        "detection_delay_minutes": 13.943683333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
       "story_id": "wt-34e360cdb996a299",
       "slug": "france-agriculture-production-sees-economic-hit-from-heatwaves-96a299",
       "title": "France agriculture production sees economic hit from heatwaves",
@@ -1030,6 +2443,133 @@
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T03:39:42.892Z",
         "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-bf5e25ce0e5f9ca3",
+      "slug": "altersvorsorge-fruher-in-rente-wegen-krankheit-wann-die-erwerbsminderungsrente-greift-5f9ca3",
+      "title": "Altersvorsorge: Früher in Rente wegen Krankheit? Wann die Erwerbsminderungsrente greift",
+      "first_seen": "2026-09-04T03:21:00.000Z",
+      "last_updated": "2026-09-04T03:21:00.000Z",
+      "topic": [
+        "Arbeit",
+        "Soziales"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/wirtschaft/geld/frueher-in-rente---bei-diesen-krankheiten-ist-das-moeglich-38066912.html",
+          "title": "Altersvorsorge: Früher in Rente wegen Krankheit? Wann die Erwerbsminderungsrente greift",
+          "summary": "Vorzeitig in Rente? Menschen, die an schweren chronischen Krankheiten leiden oder eine Behinderung haben, können unter Umständen früher dem Arbeitsleben den Rücken kehren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T03:21:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "a05c3fa743506da055f8f2f0759aee823b358e08b29cb66a4b1b0d294b10d580",
+          "source_item_id": "eb220123d4a03d96b7af75c6dcb006e0a960119f3775e5c6efe94fd985805a03",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T03:21:00.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-bf5e25ce0e5f9ca3-claim-01",
+          "story_id": "wt-bf5e25ce0e5f9ca3",
+          "claim": "Altersvorsorge: Früher in Rente wegen Krankheit? Wann die Erwerbsminderungsrente greift: Vorzeitig in Rente? Menschen, die an schweren chronischen Krankheiten leiden oder eine Behinderung haben, können unter Umständen früher dem Arbeitsleben den Rücken kehren.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T03:51:30.621Z"
+        }
+      ],
+      "content_hash": "deb67cb4d812838ebcfbd01722de70a8b8ae1e8ff6743ea9f0efd15deb1c6650",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T03:51:30.621Z",
+      "event_first_seen_at": "2026-09-04T03:51:30.621Z",
+      "event_detected_at": "2026-09-04T03:51:30.621Z",
+      "event_id": "event-45ae2f3573a976ad9c84",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Soziales"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 30.51035,
+        "detection_delay_minutes": 30.51035,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -8469,899 +10009,6 @@
       }
     },
     {
-      "story_id": "wt-e976be74e6481ea2",
-      "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
-      "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
-      "first_seen": "2026-09-03T19:08:00.000Z",
-      "last_updated": "2026-09-04T01:52:37.203Z",
-      "published_at": "2026-09-04T01:52:37.203Z",
-      "updated_at": "2026-09-04T01:52:37.203Z",
-      "topic": [
-        "Geopolitik",
-        "Politik",
-        "Arbeit",
-        "Wirtschaft",
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "manager-magazin-news",
-          "publisher": "manager magazin",
-          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-          "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
-          "summary": "Die Nervosität beim Autobauer war groß vor der Aufsichtsratssitzung am Donnerstag. Jetzt gibt es eine Einigung. Der Abbau von 50.000 weiteren Stellen ist beschlossen, die Abspaltung der Marke VW wird es vorerst nicht geben. Die Entscheidung für das neue Sparpaket kommt überraschend.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:08:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "6c56839e915f29ca2e0e11b45598a3de58addb9f6c0a7e1f5f950f71091599c2",
-          "source_item_id": "b4460f603afe119cfa958b2515dea48b68c9ad80c326f0c448d3815f936004df",
-          "publisher_id": "manager-magazin",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T19:08:00.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:manager-magazin",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-          "title": "Volkswagen: Aufsichtsrat stimmt Sanierungsplan zu",
-          "summary": "Einigung in Wolfsburg: Der Aufsichtsrat von VW stimmt dem Sanierungsplan für den Autobauer zu. Zehntausende Stellen sollen wegfallen. Bei vier Werken ist die Zukunft offen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:58:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "66f0339e0e8ecbf52936b2aa160ce78516d0707392e2b728ab31b0bdb2420670",
-          "source_item_id": "68313cc778d812e5783c7fc2878e91bf9457b61747bfe79a7faf202589e7aabb",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T19:58:00.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
-          "title": "Volkswagen: VW-Aufsichtsrat stimmt Sanierungsplan zu",
-          "summary": "Bei Volkswagen ist die Entscheidung über tiefgreifende Sparmaßnahmen gefallen. Das Paket sieht radikale Umbrüche vor. Es geht um die Schließung deutscher Werke und den Abbau zehntausender Jobs.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:24:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "a9ce3ab942c71b5423d9c6d8e19a5584d58c0681033f59989dacc41ff80cb1ef",
-          "source_item_id": "54224ea768cbd4e7899ac12184d8533932ede4c9d2413c137c504c7ee96f39c8",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T19:24:00.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "spiegel-schlagzeilen",
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
-          "title": "Volkswagen in der Krise: Aufsichtsrat stimmt Sanierungsplan zu",
-          "summary": "Weitere 50.000 Jobs sollen wegfallen, vier Werke stehen auf der Kippe: Der Aufsichtsrat hat den VW-​Sanierungsplan gebilligt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T20:55:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "13ee749f4606aea809de723cfb8be6f6803d99c568d361e11ed14958c52024c1",
-          "source_item_id": "14b6482b5f39fa0aac89effeb3d79608eb50ced3026277e5af7f255a3c63159d",
-          "publisher_id": "spiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T20:55:00.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
-          "title": "Überraschende Einigung in Wolfsburg: VW-Aufsichtsrat stimmt Sanierungsplan zu – weitere 50.000 Jobs sollen wegfallen",
-          "summary": "Massiver Stellenabbau und vier Werke auf der Kippe: Der Aufsichtsrat von Volkswagen hat dem umstrittenen Sparpaket des Konzernvorstands einstimmig zugestimmt. Eine Eskalation wurde damit verhindert.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T18:53:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "81e442a9aed5fde98a30b234ac551cd20cf4b1136e5d0696808e3419a0c896f6",
-          "source_item_id": "42ab7f220441d677e29b61673d6b112eed5461147d7c317da9b45448d1875bd5",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T18:53:18.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
-          "title": "VW-Aufsichtsrat stimmt umstrittenem Sanierungsplan zu",
-          "summary": "Der Aufsichtsrat von Volkswagen hat dem Sparpaket des Konzernvorstands einstimmig zugestimmt. Dabei will der Autobauer in den kommenden Jahren unter anderem weitere 50.000 Stellen streichen",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T20:34:25.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "cf8a909f85941f9c89ef7324d0a1ef37b0401bc33c0a8152144cb5f95e176c9e",
-          "source_item_id": "4457622610311639834e778234e945afcdb9949e10e17bbdbe731e51fc65490c",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T20:34:25.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
-          "title": "VW-Aufsichtsrat stimmt Sanierungsplan zu: Zukunft von Audi in Neckarsulm weiter unklar",
-          "summary": "Eine \"wettbewerbsfähige Folgebelegung\" von vier Werken könne nicht gewährleistet werden, heißt es in einer Mitteilung des Unternehmens. Das Audi-Werk in Neckarsulm ist eines davon.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T23:24:43.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "74ffdae2d901c30f5d7f50fb3f16654f2e42c30a5941feb32415d8bd7a70d9bc",
-          "source_item_id": "a50c612a51770d07fd8ad39ee32364784ba9dedde53776a4e8bde1cc92a563d0",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T23:24:43.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-          "title": "Automobil-Industrie - Volkswagen-Aufsichtsrat stimmt Sparpaket und Stellenabbau zu",
-          "summary": "Der Volkswagen-Konzern wird in den kommenden Jahren ein breit angelegtes Sparpaket umsetzen und rund 50.000 Arbeitsplätze streichen. Der Aufsichtsrat des Automobil-Herstellers billigte am Abend in Wolfsburg die Vorschläge von Konzernchef Blume einstimmig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:33:27.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "b2b8582be8c326fcbd27f3f496744ee4d87561c3dc49db039b42634c1fda0cb8",
-          "source_item_id": "927119a75e00b37e23d5fb27c24ed5cbd1b7e3fcc854c821524f7d8a51defecd",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T01:33:27.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-e976be74e6481ea2-v1-claim-1",
-          "story_id": "wt-e976be74e6481ea2",
-          "claim": "Der Aufsichtsrat von Volkswagen hat dem Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg zugestimmt.",
-          "status": "confirmed_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-              "excerpt_hash": "baceae08135b345ec118",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-              "excerpt_hash": "b92d2cdcc9981f3dc8d9",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "manager-magazin-news",
-              "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-              "excerpt_hash": "350e0201830a0725cb24",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:37.203Z"
-        },
-        {
-          "claim_id": "wt-e976be74e6481ea2-v1-claim-2",
-          "story_id": "wt-e976be74e6481ea2",
-          "claim": "Der Plan sieht den Abbau von rund 50.000 Arbeitsplätzen vor.",
-          "status": "confirmed_claim",
-          "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-              "excerpt_hash": "a7f96ebcf7a0125b722a",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-              "excerpt_hash": "baceae08135b345ec118",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "manager-magazin-news",
-              "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-              "excerpt_hash": "350e0201830a0725cb24",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:37.203Z"
-        },
-        {
-          "claim_id": "wt-e976be74e6481ea2-v1-claim-3",
-          "story_id": "wt-e976be74e6481ea2",
-          "claim": "Bei vier VW-Werken ist die Zukunft beziehungsweise Folgebelegung weiter offen.",
-          "status": "uncertain_claim",
-          "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-              "excerpt_hash": "05eb615947bfbea1163f",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "swr-aktuell",
-              "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
-              "excerpt_hash": "e33037a2ffa761fccc70",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
-              "excerpt_hash": "cf3c96944256e4d2ad87",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:37.203Z"
-        },
-        {
-          "claim_id": "wt-e976be74e6481ea2-v1-claim-4",
-          "story_id": "wt-e976be74e6481ea2",
-          "claim": "Eine Abspaltung der Marke VW wird vorerst nicht kommen.",
-          "status": "single_source_claim",
-          "source_id": "manager-magazin-news",
-          "evidence": [
-            {
-              "source_id": "manager-magazin-news",
-              "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-              "excerpt_hash": "350e0201830a0725cb24",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:37.203Z"
-        },
-        {
-          "claim_id": "wt-e976be74e6481ea2-v1-claim-5",
-          "story_id": "wt-e976be74e6481ea2",
-          "claim": "Der Aufsichtsrat billigte die Vorschläge von Konzernchef Blume einstimmig.",
-          "status": "confirmed_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-              "excerpt_hash": "b92d2cdcc9981f3dc8d9",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
-              "excerpt_hash": "a127e41814f986abb663",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-              "excerpt_hash": "4e414933465f4da75ad3",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T01:52:37.203Z"
-        }
-      ],
-      "event_id": "event-06fbdda38e40a97f5340",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T01:52:20.924Z",
-      "publish_ready_at": "2026-09-04T01:52:37.203Z",
-      "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "manager-magazin-news"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ],
-          [
-            "tagesspiegel-home"
-          ],
-          [
-            "mdr-nachrichten"
-          ],
-          [
-            "swr-aktuell"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 8,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Wie viele Stellen werden tatsächlich sozialverträglich oder betriebsbedingt abgebaut?",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Personalzahlen und Personalmaßnahmen je Standort",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-aaafd43ff7f2b06d",
-          "announced_at": "2026-09-04T01:33:27.000Z",
-          "follow_up_date": "2026-09-11T01:52:37.203Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "529a012244a8c4d0dbf304acce3cfe9e927f6ab6df354cef0af090c616898a9a",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Mehrere überregionale Medien berichten übereinstimmend, dass der VW-Aufsichtsrat dem Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg zugestimmt hat. Genannt werden ein Abbau von rund 50.000 Arbeitsplätzen sowie weitere Einschnitte im Konzern.\n\nMehrere Quellen schreiben außerdem, dass bei vier Werken die Zukunft oder eine Folgebelegung offen bleibt. In einzelnen Berichten heißt es, eine Eskalation sei verhindert worden oder der Beschluss sei einstimmig gefallen. Eine Quelle nennt zusätzlich, dass die Abspaltung der Marke VW vorerst nicht komme. Die genauen Unternehmensunterlagen und weitere Details zum Umfang der Maßnahmen liegen in den gelieferten Ausschnitten nicht vollständig vor.",
-      "analysis": {
-        "story_id": "wt-e976be74e6481ea2",
-        "news_status": "preliminary",
-        "publication_depth": "initial",
-        "summary": "VW-Aufsichtsrat und Konzernvorstand haben laut mehreren Berichten ein Sparpaket gebilligt. Kernpunkt ist der geplante Abbau von rund 50.000 Jobs.",
-        "detail_summary": "Bestbelegt ist die Zustimmung des VW-Aufsichtsrats zum Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg. Mehrere voneinander getrennte Redaktionsberichte nennen zudem den Abbau von rund 50.000 Arbeitsplätzen als Bestandteil des Plans. Das ist materiell relevant, weil damit Beschäftigung, Standortstruktur und Investitionsspielräume des Konzerns direkt neu geordnet werden. Als Wirkpfad ist vor allem ein Rückgang von Personalkosten und eine Neupriorisierung von Produktion und Folgebelegung der Werke erkennbar. Mögliche Folgen sind Arbeitsplatzverluste, veränderte Zulieferketten und Unsicherheit an mehreren Standorten; ob und wann konkrete Effekte eintreten, bleibt offen. Die Quellenlage belegt den Beschluss und die Größenordnung, aber nicht die vollständigen Umsetzungsdetails oder alle Standortfolgen.",
-        "why_relevant": "Die Entscheidung verändert nach den vorliegenden Quellen Beschäftigung, Standortstruktur und Investitionsverteilung in einem großen Industriekonzern mit möglichen Folgewirkungen für Zulieferer und betroffene Regionen.",
-        "status": "beschlossen",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind laut Quellen rund 50.000 Stellen; das berührt Beschäftigung, Einkommen und Standortperspektiven in mehreren Regionen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Indirekte Folgen für Produktionsstandorte, Logistik und Investitionen sind möglich, aber in den Quellen nicht beziffert."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Einigung betrifft Mitbestimmung, Betriebsratspositionen und die Korrekturfähigkeit von Standortentscheidungen im Konzern."
-        },
-        "importance": "hoch",
-        "impact_potential": "Der Beschluss kann die Kostenstruktur, die Beschäftigtenzahl und die industrielle Landkarte des Konzerns spürbar verändern.",
-        "impact_risks": [
-          "Stellenabbau kann Einkommen und regionale Nachfrage mindern.",
-          "Offene Werksfragen können längere Unsicherheit an Standorten erzeugen.",
-          "Zulieferer und Kommunen könnten mit Folgekosten und Anpassungsdruck konfrontiert werden."
-        ],
-        "mechanisms": [
-          "Reduktion von Personalkosten",
-          "Neuordnung von Werks- und Produktionsstrukturen",
-          "Verschiebung von Investitionen in Folgebelegung und Zukunftskonzepte"
-        ],
-        "first_order": [
-          "Abbau von rund 50.000 Arbeitsplätzen",
-          "offene Zukunft bei vier Werken",
-          "interne Umsetzung des Sanierungsplans"
-        ],
-        "second_order": [
-          "Unsicherheit für Beschäftigte und Standorte",
-          "Anpassungsdruck bei Zulieferern",
-          "Neuverteilung von Produktionsvolumen"
-        ],
-        "third_order": [
-          "Veränderte regionale Wirtschaftsstruktur",
-          "mögliche Verschiebung industrieller Wertschöpfung",
-          "Langfristige Effekte auf Resilienz und Mitbestimmung"
-        ],
-        "systemic_relevance": "Volkswagen ist ein systemrelevanter Industrieakteur; ein Plan dieser Größenordnung kann über Beschäftigung und Zulieferketten in mehrere Regionen ausstrahlen.",
-        "transformation_potential": "Die Maßnahme kann die industrielle Produktions- und Standortarchitektur des Konzerns neu ausrichten, bleibt aber nach Quellenlage zunächst ein Umsetzungsplan.",
-        "resilience": "Die Quellen zeigen zugleich hohe Anpassungslast und die Offenheit der Folgebelegung; ob Resilienz steigt oder sinkt, ist vorerst offen.",
-        "side_effects": [
-          "Interne Konflikte können vorübergehend beruhigt, aber nicht gelöst sein.",
-          "Medienberichte nennen keine gesicherte Entwarnung für die betroffenen Werke."
-        ],
-        "uncertainties": [
-          "Die vollständigen Vertrags- und Umsetzungsdetails sind in den Ausschnitten nicht enthalten.",
-          "Für die vier Werke bleibt die konkrete Folgebelegung offen.",
-          "Die tatsächliche Zahl der später realisierten Stellenstreichungen ist noch nicht belegt."
-        ],
-        "evidence_level": "hoch für den Beschluss und die genannte Größenordnung, begrenzt für die Standortfolgen",
-        "attribution": "Die Kernbehauptungen stammen aus mehreren Redaktionsberichten; eine direkt zitierte Primärquelle liegt in den gelieferten Daten nicht vor.",
-        "watch_next": [
-          "Konkrete Personalmaßnahmen und Zeitplan",
-          "Unternehmensmitteilung zu den vier Werken",
-          "Reaktionen von Betriebsrat, IG Metall und Ländern"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 8, SDG 9, SDG 10; Mitbestimmung und industrielle Resilienz"
-        ],
-        "publication_gate": {
-          "news_value": "binding_decision",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "independent_reports",
-          "duplicate_status": "new_story",
-          "rationale": "Mehrere voneinander unabhängige Medien berichten übereinstimmend über einen materiell bedeutsamen Konzernbeschluss mit großem Beschäftigungseffekt."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "Arbeitsplätze",
-              "value": "50.000",
-              "unit": "Stellen",
-              "context": "Geplanter Abbau im Konzern",
-              "claim_id": "wt-e976be74e6481ea2-claim-02"
-            }
-          ],
-          "affected_groups": [
-            "beschaeftigte",
-            "unternehmen",
-            "kommunen",
-            "staat"
-          ],
-          "tendency": {
-            "human": "risiko",
-            "planet": "offen",
-            "democracy": "gemischt"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T01:52:37.203Z",
-          "content_hash": "529a012244a8c4d0dbf304acce3cfe9e927f6ab6df354cef0af090c616898a9a",
-          "source_summary": "Mehrere überregionale Medien berichten übereinstimmend, dass der VW-Aufsichtsrat dem Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg zugestimmt hat. Genannt werden ein Abbau von rund 50.000 Arbeitsplätzen sowie weitere Einschnitte im Konzern.\n\nMehrere Quellen schreiben außerdem, dass bei vier Werken die Zukunft oder eine Folgebelegung offen bleibt. In einzelnen Berichten heißt es, eine Eskalation sei verhindert worden oder der Beschluss sei einstimmig gefallen. Eine Quelle nennt zusätzlich, dass die Abspaltung der Marke VW vorerst nicht komme. Die genauen Unternehmensunterlagen und weitere Details zum Umfang der Maßnahmen liegen in den gelieferten Ausschnitten nicht vollständig vor.",
-          "analysis": {
-            "story_id": "wt-e976be74e6481ea2",
-            "news_status": "preliminary",
-            "publication_depth": "initial",
-            "summary": "VW-Aufsichtsrat und Konzernvorstand haben laut mehreren Berichten ein Sparpaket gebilligt. Kernpunkt ist der geplante Abbau von rund 50.000 Jobs.",
-            "detail_summary": "Bestbelegt ist die Zustimmung des VW-Aufsichtsrats zum Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg. Mehrere voneinander getrennte Redaktionsberichte nennen zudem den Abbau von rund 50.000 Arbeitsplätzen als Bestandteil des Plans. Das ist materiell relevant, weil damit Beschäftigung, Standortstruktur und Investitionsspielräume des Konzerns direkt neu geordnet werden. Als Wirkpfad ist vor allem ein Rückgang von Personalkosten und eine Neupriorisierung von Produktion und Folgebelegung der Werke erkennbar. Mögliche Folgen sind Arbeitsplatzverluste, veränderte Zulieferketten und Unsicherheit an mehreren Standorten; ob und wann konkrete Effekte eintreten, bleibt offen. Die Quellenlage belegt den Beschluss und die Größenordnung, aber nicht die vollständigen Umsetzungsdetails oder alle Standortfolgen.",
-            "why_relevant": "Die Entscheidung verändert nach den vorliegenden Quellen Beschäftigung, Standortstruktur und Investitionsverteilung in einem großen Industriekonzern mit möglichen Folgewirkungen für Zulieferer und betroffene Regionen.",
-            "status": "beschlossen",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind laut Quellen rund 50.000 Stellen; das berührt Beschäftigung, Einkommen und Standortperspektiven in mehreren Regionen."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Indirekte Folgen für Produktionsstandorte, Logistik und Investitionen sind möglich, aber in den Quellen nicht beziffert."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Einigung betrifft Mitbestimmung, Betriebsratspositionen und die Korrekturfähigkeit von Standortentscheidungen im Konzern."
-            },
-            "importance": "hoch",
-            "impact_potential": "Der Beschluss kann die Kostenstruktur, die Beschäftigtenzahl und die industrielle Landkarte des Konzerns spürbar verändern.",
-            "impact_risks": [
-              "Stellenabbau kann Einkommen und regionale Nachfrage mindern.",
-              "Offene Werksfragen können längere Unsicherheit an Standorten erzeugen.",
-              "Zulieferer und Kommunen könnten mit Folgekosten und Anpassungsdruck konfrontiert werden."
-            ],
-            "mechanisms": [
-              "Reduktion von Personalkosten",
-              "Neuordnung von Werks- und Produktionsstrukturen",
-              "Verschiebung von Investitionen in Folgebelegung und Zukunftskonzepte"
-            ],
-            "first_order": [
-              "Abbau von rund 50.000 Arbeitsplätzen",
-              "offene Zukunft bei vier Werken",
-              "interne Umsetzung des Sanierungsplans"
-            ],
-            "second_order": [
-              "Unsicherheit für Beschäftigte und Standorte",
-              "Anpassungsdruck bei Zulieferern",
-              "Neuverteilung von Produktionsvolumen"
-            ],
-            "third_order": [
-              "Veränderte regionale Wirtschaftsstruktur",
-              "mögliche Verschiebung industrieller Wertschöpfung",
-              "Langfristige Effekte auf Resilienz und Mitbestimmung"
-            ],
-            "systemic_relevance": "Volkswagen ist ein systemrelevanter Industrieakteur; ein Plan dieser Größenordnung kann über Beschäftigung und Zulieferketten in mehrere Regionen ausstrahlen.",
-            "transformation_potential": "Die Maßnahme kann die industrielle Produktions- und Standortarchitektur des Konzerns neu ausrichten, bleibt aber nach Quellenlage zunächst ein Umsetzungsplan.",
-            "resilience": "Die Quellen zeigen zugleich hohe Anpassungslast und die Offenheit der Folgebelegung; ob Resilienz steigt oder sinkt, ist vorerst offen.",
-            "side_effects": [
-              "Interne Konflikte können vorübergehend beruhigt, aber nicht gelöst sein.",
-              "Medienberichte nennen keine gesicherte Entwarnung für die betroffenen Werke."
-            ],
-            "uncertainties": [
-              "Die vollständigen Vertrags- und Umsetzungsdetails sind in den Ausschnitten nicht enthalten.",
-              "Für die vier Werke bleibt die konkrete Folgebelegung offen.",
-              "Die tatsächliche Zahl der später realisierten Stellenstreichungen ist noch nicht belegt."
-            ],
-            "evidence_level": "hoch für den Beschluss und die genannte Größenordnung, begrenzt für die Standortfolgen",
-            "attribution": "Die Kernbehauptungen stammen aus mehreren Redaktionsberichten; eine direkt zitierte Primärquelle liegt in den gelieferten Daten nicht vor.",
-            "watch_next": [
-              "Konkrete Personalmaßnahmen und Zeitplan",
-              "Unternehmensmitteilung zu den vier Werken",
-              "Reaktionen von Betriebsrat, IG Metall und Ländern"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 8, SDG 9, SDG 10; Mitbestimmung und industrielle Resilienz"
-            ],
-            "publication_gate": {
-              "news_value": "binding_decision",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "independent_reports",
-              "duplicate_status": "new_story",
-              "rationale": "Mehrere voneinander unabhängige Medien berichten übereinstimmend über einen materiell bedeutsamen Konzernbeschluss mit großem Beschäftigungseffekt."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Arbeitsplätze",
-                  "value": "50.000",
-                  "unit": "Stellen",
-                  "context": "Geplanter Abbau im Konzern",
-                  "claim_id": "wt-e976be74e6481ea2-claim-02"
-                }
-              ],
-              "affected_groups": [
-                "beschaeftigte",
-                "unternehmen",
-                "kommunen",
-                "staat"
-              ],
-              "tendency": {
-                "human": "risiko",
-                "planet": "offen",
-                "democracy": "gemischt"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-e976be74e6481ea2-v1-claim-1",
-              "story_id": "wt-e976be74e6481ea2",
-              "claim": "Der Aufsichtsrat von Volkswagen hat dem Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg zugestimmt.",
-              "status": "confirmed_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-                  "excerpt_hash": "baceae08135b345ec118",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-                  "excerpt_hash": "b92d2cdcc9981f3dc8d9",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "manager-magazin-news",
-                  "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-                  "excerpt_hash": "350e0201830a0725cb24",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "claim_id": "wt-e976be74e6481ea2-v1-claim-2",
-              "story_id": "wt-e976be74e6481ea2",
-              "claim": "Der Plan sieht den Abbau von rund 50.000 Arbeitsplätzen vor.",
-              "status": "confirmed_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-                  "excerpt_hash": "a7f96ebcf7a0125b722a",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-                  "excerpt_hash": "baceae08135b345ec118",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "manager-magazin-news",
-                  "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-                  "excerpt_hash": "350e0201830a0725cb24",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "claim_id": "wt-e976be74e6481ea2-v1-claim-3",
-              "story_id": "wt-e976be74e6481ea2",
-              "claim": "Bei vier VW-Werken ist die Zukunft beziehungsweise Folgebelegung weiter offen.",
-              "status": "uncertain_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-                  "excerpt_hash": "05eb615947bfbea1163f",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "swr-aktuell",
-                  "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
-                  "excerpt_hash": "e33037a2ffa761fccc70",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
-                  "excerpt_hash": "cf3c96944256e4d2ad87",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "claim_id": "wt-e976be74e6481ea2-v1-claim-4",
-              "story_id": "wt-e976be74e6481ea2",
-              "claim": "Eine Abspaltung der Marke VW wird vorerst nicht kommen.",
-              "status": "single_source_claim",
-              "source_id": "manager-magazin-news",
-              "evidence": [
-                {
-                  "source_id": "manager-magazin-news",
-                  "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-                  "excerpt_hash": "350e0201830a0725cb24",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            },
-            {
-              "claim_id": "wt-e976be74e6481ea2-v1-claim-5",
-              "story_id": "wt-e976be74e6481ea2",
-              "claim": "Der Aufsichtsrat billigte die Vorschläge von Konzernchef Blume einstimmig.",
-              "status": "confirmed_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-                  "excerpt_hash": "b92d2cdcc9981f3dc8d9",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "tagesspiegel-home",
-                  "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
-                  "excerpt_hash": "a127e41814f986abb663",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-                  "excerpt_hash": "4e414933465f4da75ad3",
-                  "checked_at": "2026-09-04T01:52:37.203Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:52:37.203Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "manager-magazin-news",
-              "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-              "content_hash": "6c56839e915f29ca2e0e11b45598a3de58addb9f6c0a7e1f5f950f71091599c2"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-              "content_hash": "66f0339e0e8ecbf52936b2aa160ce78516d0707392e2b728ab31b0bdb2420670"
-            },
-            {
-              "source_id": "wiwo-schlagzeilen",
-              "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
-              "content_hash": "a9ce3ab942c71b5423d9c6d8e19a5584d58c0681033f59989dacc41ff80cb1ef"
-            },
-            {
-              "source_id": "spiegel-schlagzeilen",
-              "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
-              "content_hash": "13ee749f4606aea809de723cfb8be6f6803d99c568d361e11ed14958c52024c1"
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
-              "content_hash": "81e442a9aed5fde98a30b234ac551cd20cf4b1136e5d0696808e3419a0c896f6"
-            },
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
-              "content_hash": "cf8a909f85941f9c89ef7324d0a1ef37b0401bc33c0a8152144cb5f95e176c9e"
-            },
-            {
-              "source_id": "swr-aktuell",
-              "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
-              "content_hash": "74ffdae2d901c30f5d7f50fb3f16654f2e42c30a5941feb32415d8bd7a70d9bc"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-              "content_hash": "b2b8582be8c326fcbd27f3f496744ee4d87561c3dc49db039b42634c1fda0cb8"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T01:52:37.203Z",
-          "source_count": 8
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "188ef36e94b9ffffbeaa26d61a4a00f20e8933357545bad415a919b9844c40c5"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "6042466a090498233a5abf8ca23fa8b064162bfbab444a4813e7e90ec46cc0e3"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "c1ecbe044452f0e90270c6c42f7cda1405a48e45265e118f3bb517488d3dac16"
-        },
-        "source_visual": null,
-        "fingerprint": "12aeedd46526401d972a190861d5d8bb140b759694a16879251763c7f2e33653",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:54:15.383Z",
-        "status": "generated"
-      }
-    },
-    {
       "story_id": "wt-e442d6ad81290406",
       "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
       "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
@@ -15576,7 +16223,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -15602,7 +16249,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T09:29:17.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -24699,7 +25346,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-03T14:23:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:mdr",
             "basis": "publisher_only_origin_unverified",
@@ -24726,7 +25373,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "a6622718f141ec483591d3efe833f4b99941961265ad4452d8b857f43eace98b",
@@ -24735,12 +25382,12 @@
       "quality_errors": [
         "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 1,
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -24771,11 +25418,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 793.4735166666667,
+        "source_age_minutes": 808.51035,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -25859,7 +26506,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
         "sources": [
           {
@@ -25885,7 +26532,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T13:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -26502,7 +27149,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -26528,7 +27175,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T22:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:eu-kommission-presse",
               "basis": "publisher_only_origin_unverified",
@@ -26558,7 +27205,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T11:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -27024,7 +27671,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -27050,7 +27697,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T08:45:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -27305,7 +27952,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -27331,7 +27978,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T09:59:16.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -27558,7 +28205,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
         "sources": [
           {
@@ -27584,7 +28231,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T22:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:eu-kommission-presse",
               "basis": "publisher_only_origin_unverified",
@@ -27815,7 +28462,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -27841,7 +28488,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -28059,7 +28706,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -28085,7 +28732,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T17:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -28662,7 +29309,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-03T08:58:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:bundestag",
             "basis": "publisher_only_origin_unverified",
@@ -28689,7 +29336,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
@@ -28701,7 +29348,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e20eac76b689f5b7c4be",
@@ -28730,11 +29377,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1118.4735166666667,
+        "source_age_minutes": 1133.51035,
         "detection_delay_minutes": 803.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28774,7 +29421,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-03T08:58:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:bundestag",
             "basis": "publisher_only_origin_unverified",
@@ -28801,7 +29448,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
@@ -28813,7 +29460,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-864e7c7a9a2009a72fa5",
@@ -28842,11 +29489,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1118.4735166666667,
+        "source_age_minutes": 1133.51035,
         "detection_delay_minutes": 803.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -29055,7 +29702,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -29081,7 +29728,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:06:42.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -29328,7 +29975,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -29354,7 +30001,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -29604,7 +30251,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -29630,7 +30277,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T13:20:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -29877,7 +30524,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -29903,7 +30550,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -30155,7 +30802,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -30181,7 +30828,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -30429,7 +31076,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -30455,7 +31102,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:44:36.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -30707,7 +31354,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -31997,7 +32644,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:36:28.411Z",
+        "detected_at": "2026-09-04T03:51:30.621Z",
         "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
         "sources": [
           {
@@ -32023,7 +32670,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T13:00:00.000Z",
-            "ingested_at": "2026-09-04T03:21:31.830Z",
+            "ingested_at": "2026-09-04T03:51:30.621Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -32389,19 +33036,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "99af3920cf213a90489bc6710226a442bf08a768846715ff16c0c2b52a38aa51",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-bf54447029570dd055c9",
@@ -32431,14 +33078,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2012.4735166666667,
+        "source_age_minutes": 2027.51035,
         "detection_delay_minutes": 1697.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -32852,7 +33511,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T16:51:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:manager-magazin",
             "basis": "publisher_only_origin_unverified",
@@ -32879,19 +33538,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "a0fe47114b0579e40a8ee3649f1f2910b80ec0d76567932237286761e795231b",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-216abee005246675a905",
@@ -32919,14 +33578,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2085.4735166666665,
+        "source_age_minutes": 2100.51035,
         "detection_delay_minutes": 1770.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -33460,7 +34131,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T13:20:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:bundestag",
             "basis": "publisher_only_origin_unverified",
@@ -33487,7 +34158,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
@@ -33499,7 +34170,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-35177e3864a5abcfec8e",
@@ -33531,11 +34202,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2296.4735166666665,
+        "source_age_minutes": 2311.51035,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -33576,7 +34247,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T13:20:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:bundestag",
             "basis": "publisher_only_origin_unverified",
@@ -33603,7 +34274,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
@@ -33615,7 +34286,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-f6bf7265b4e640e7e2d7",
@@ -33648,11 +34319,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2296.4735166666665,
+        "source_age_minutes": 2311.51035,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -34064,7 +34735,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T10:28:49.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:eu-kommission-presse",
             "basis": "publisher_only_origin_unverified",
@@ -34091,7 +34762,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "1e6cd7c1d6d91647b7046917beb2caa2cbc18c7c4595b3a59dd70bc4ca647908",
@@ -34103,7 +34774,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3e01d1f6d0533d6aa9c6",
@@ -34132,11 +34803,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2467.65685,
+        "source_age_minutes": 2482.6936833333334,
         "detection_delay_minutes": 2152.4668333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -34176,7 +34847,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T10:12:35.000Z",
-          "ingested_at": "2026-09-04T00:21:22.875Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:euronews",
             "basis": "publisher_only_origin_unverified",
@@ -34203,19 +34874,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "dea407218ff9ff6934bbac13a50d7ff5fb57d64d43624d482bf1ce4cc471b47e",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-fbbb13d555ba24335ba3",
@@ -34245,14 +34916,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2483.8901833333334,
+        "source_age_minutes": 2498.9270166666665,
         "detection_delay_minutes": 2168.7001666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -34318,19 +35001,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "0ae27a89a2f40efa2d1383b6853368086ee7b11f0ba5f586505292992303f003",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-80de4c464a700f12dc6f",
@@ -34362,14 +35045,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2485.4735166666665,
+        "source_age_minutes": 2500.51035,
         "detection_delay_minutes": 2170.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -34406,7 +35101,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T09:48:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:bundestag",
             "basis": "publisher_only_origin_unverified",
@@ -34433,7 +35128,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
@@ -34445,7 +35140,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a65754a145ed4dc9c820",
@@ -34477,11 +35172,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2508.4735166666665,
+        "source_age_minutes": 2523.51035,
         "detection_delay_minutes": 2193.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -34766,7 +35461,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T08:00:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:bundesregierung",
             "basis": "publisher_only_origin_unverified",
@@ -34793,7 +35488,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
@@ -34805,7 +35500,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ef9d83c7cd180ed4c9e4",
@@ -34835,11 +35530,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2616.4735166666665,
+        "source_age_minutes": 2631.51035,
         "detection_delay_minutes": 2301.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -34878,7 +35573,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T06:00:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:bundesregierung",
             "basis": "publisher_only_origin_unverified",
@@ -34905,7 +35600,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
@@ -34917,7 +35612,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3c4cec37699684f265d9",
@@ -34945,11 +35640,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2736.4735166666665,
+        "source_age_minutes": 2751.51035,
         "detection_delay_minutes": 2421.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35118,7 +35813,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T19:26:04.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:hr",
             "basis": "publisher_only_origin_unverified",
@@ -35145,19 +35840,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "AI_DETAIL_SUMMARY_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-795c48d3db0831ef9b61",
@@ -35189,11 +35887,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3370.40685,
+        "source_age_minutes": 3385.4436833333334,
         "detection_delay_minutes": 3055.2168333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35356,7 +36054,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T16:09:08.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:eu-kommission-presse",
             "basis": "publisher_only_origin_unverified",
@@ -35383,7 +36081,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
@@ -35395,7 +36093,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-88c06765dd812ab1333c",
@@ -35426,11 +36124,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3567.3401833333332,
+        "source_age_minutes": 3582.377016666667,
         "detection_delay_minutes": 3252.150166666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35469,7 +36167,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T14:23:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:deutsche-welle",
             "basis": "publisher_only_origin_unverified",
@@ -35496,19 +36194,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "0f446ea5cb51a25c2d996418cf4baef91cd32048f5e76de72e507e26507399f0",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a1baeba4f20d07fe8686",
@@ -35538,14 +36236,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3673.4735166666665,
+        "source_age_minutes": 3688.51035,
         "detection_delay_minutes": 3358.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:51:30.621Z",
+      "rejection": {
+        "at": "2026-09-04T03:51:30.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -35982,7 +36692,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "ee7dad7353b26544b265da43fabbd57bf9f547566a8ec550abcad8b81c376364",
@@ -35994,7 +36704,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e1ac3e5b6a7b2d3e7529",
@@ -36025,11 +36735,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3919.4735166666665,
+        "source_age_minutes": 3934.51035,
         "detection_delay_minutes": 3604.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -36069,7 +36779,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -36096,7 +36806,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -36108,7 +36818,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -36137,11 +36847,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4176.473516666667,
+        "source_age_minutes": 4191.51035,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -36454,7 +37164,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "ec68e1b7e01d1cf36c7107e281d04242a0644a887db1bc32b9b6d7d42de66dd2",
@@ -36466,7 +37176,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-cbca969c9d482acda1dd",
@@ -36498,11 +37208,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5131.390183333333,
+        "source_age_minutes": 5146.4270166666665,
         "detection_delay_minutes": 4816.2001666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -36542,7 +37252,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -36569,7 +37279,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -36581,7 +37291,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -36613,11 +37323,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5256.473516666667,
+        "source_age_minutes": 5271.51035,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -37201,7 +37911,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
+          "checked_at": "2026-09-04T03:51:30.621Z"
         }
       ],
       "content_hash": "67e92b99cbf6de95d7ca8de1bdee15fa83a7a2be1a38f37e2d75bf935cf01267",
@@ -37213,7 +37923,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
+      "updated_at": "2026-09-04T03:51:30.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-b314e6fe17d75603d224",
@@ -37244,11 +37954,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9546.473516666667,
+        "source_age_minutes": 9561.51035,
         "detection_delay_minutes": 9231.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.1900166666667,
+        "queue_age_minutes": 330.22685,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -37463,5 +38173,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T03:36:28.411Z"
+  "public_updated_at": "2026-09-04T03:51:30.621Z"
 }
