@@ -1,7 +1,115 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T12:06:38.422Z",
+  "updated_at": "2026-09-04T12:36:39.070Z",
   "stories": [
+    {
+      "story_id": "wt-a416364f223ac3fc",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a416364f223ac3fc-341e4515c0ed5567-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a416364f223ac3fc-0a09d3a08b5a9eea-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a416364f223ac3fc-822feb783975a2f3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "gardelegen-grossbrand-zerstort-jugendclub-und-vereinsheim-spendenaktion-gestartet-3ac3fc",
+      "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet",
+      "source_summary": "In Gardelegen sind nach Angaben der Quelle in der Nacht zu Mittwoch ein Vereinsheim und ein Jugendclub im Osten der Stadt im Altmarkkreis Salzwedel komplett ausgebrannt. Die Löscharbeiten dauerten demnach bis gegen Mittag, und eine Feuerwehrfrau wurde leicht verletzt.\n\nAls Brandort nennt der Bericht das Vereinsheim des Kulturwerk-Ost; das Feuer habe sich von dort auf ein Nebengebäude und den Jugendclub „Mood“ ausgebreitet. Alle drei Gebäude seien vollständig ausgebrannt. Die Ursache sei noch unklar. Außerdem berichtet die Quelle, dass eine Spendenaktion gestartet wurde.",
+      "summary": "In Gardelegen sind bei einem Großbrand ein Vereinsheim und ein Jugendclub zerstört worden. Die Ursache des Feuers ist nach der Quelle noch offen, zugleich wurde eine Spendenaktion gestartet.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Zerstörung mehrerer Gebäude in Gardelegen: Ein Vereinsheim und ein Jugendclub brannten vollständig aus, die Löscharbeiten dauerten bis zum Mittag, und eine Feuerwehrfrau wurde leicht verletzt. Für die öffentliche Relevanz spricht weniger die Reichweite als die konkrete materielle Veränderung vor Ort: Räume für Vereine und Jugendarbeit fallen weg, vermutlich vorübergehend oder längerfristig. Daraus kann ein Wirkpfad über eingeschränkte Nutzung, Wiederaufbaukosten und Spendenbedarf entstehen. Ob sich daraus weitere Folgen für Nutzung, Finanzierung oder Ursachenklärung ergeben, bleibt offen. Eine belastbare Einordnung über Brandursache, Schadenshöhe oder Folgewirkungen ist mit der einen Quelle noch nicht möglich.",
+      "why_relevant": "Der Brand verändert vor Ort die Verfügbarkeit von Vereins- und Jugendräumen und löst voraussichtlich Wiederaufbau- und Unterstützungsbedarf aus.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind lokale Vereins- und Jugendangebote sowie Einsatzkräfte; die soziale Infrastruktur vor Ort ist direkt geschädigt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein belastbarer Hinweis auf überlokale Umweltfolgen oder systemische Planet-Wirkungen in der Quelle."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein indirekter Bezug besteht nur über lokale Zivilgesellschaft und Gemeinwesen; ein demokratischer Effekt ist nicht belegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "betroffene Gebäude",
+            "value": "drei",
+            "unit": "Gebäude",
+            "context": "Nach der Quelle brannten drei Gebäude vollständig aus."
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "kinder_jugend",
+          "kommunen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T12:00:21.000Z",
+      "last_updated": "2026-09-04T12:36:53.285Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-dc0ea6a5d87506732af2",
+      "source_published_at": "2026-09-04T12:00:21.000Z",
+      "published_at": "2026-09-04T12:36:53.285Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ursache des Brandes aufgeklärt wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behörden oder Feuerwehr nennen eine belastbar bestätigte Brandursache.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4fa563a7dee1972c",
+          "announced_at": "2026-09-04T12:00:21.000Z",
+          "follow_up_date": "2026-09-11T12:36:53.285Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:00:21.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-00fccb632042b492",
       "title_image": {
