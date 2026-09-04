@@ -1,7 +1,483 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T01:32:19.405Z",
+  "updated_at": "2026-09-04T01:51:32.529Z",
   "stories": [
+    {
+      "story_id": "wt-b9487671699d6c9b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-663ce5259c717765-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-663ce5259c717765-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-663ce5259c717765-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
+      "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+      "source_summary": "Der WDR berichtet über Ermittlungen zu Bekennerschreiben im Zusammenhang mit Angriffen auf Umspannwerke. Nach Angaben der Meldung sind inzwischen zwei Schreiben aufgetaucht, und die Spuren führen nach NRW.\n\nGenannt werden Vorfälle in Bergheim, Jänschwalde und Dormagen-Gohr. Die Polizei prüft demnach, ob das Schreiben echt ist; offen bleibt auch, ob es Verbindungen zwischen den Fällen in NRW und Brandenburg gibt. In der Darstellung heißt es außerdem, ein Verfasser behaupte Angriffe auf das Stromnetz vorbereitet zu haben und drohe mit weiteren Taten.",
+      "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
+      "detail_summary": "Gesichert aus der Meldung ist vor allem, dass Ermittler nach einem Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke suchen und dass nach WDR-Angaben inzwischen zwei Schreiben aufgetaucht sind. Die berichteten Spuren führen nach NRW, während zugleich offen bleibt, ob die Fälle in NRW und Brandenburg zusammenhängen. Für die Einordnung ist das relevant, weil es um kritische Infrastruktur geht und schon der Verdacht koordinierter Sabotage Folgekosten, Sicherheitsmaßnahmen und Ermittlungsaufwand auslösen kann. Ein möglicher Wirkpfad reicht von zusätzlicher Schutzprüfung an Umspannwerken bis zu politischem Druck auf Betreiber und Behörden. Belastbar ist aber bislang nur die berichtete Untersuchungslage; die Echtheit des Schreibens und die Zuschreibungen sind noch nicht unabhängig bestätigt. Deshalb bleibt die Wirkungslage vorläufig und mehrere Folgenfelder müssen offen bleiben.",
+      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur und damit einen Bereich mit potenziellen Kaskaden für Versorgungssicherheit, Sicherheitskosten und staatliche Reaktionsfähigkeit.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Risiken für Stromversorgung und Sicherheit betreffen viele Haushalte und Beschäftigte indirekt, der konkrete Schaden ist aber noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht belastbar beschrieben; ein Zusammenhang über Energieinfrastruktur bleibt nur indirekt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren öffentliche Sicherheit und staatliche Schutzfähigkeit, die konkrete demokratische Auswirkung bleibt offen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Bekennerschreiben",
+            "value": "zwei",
+            "unit": "Schreiben",
+            "context": "Anzahl der laut Bericht aufgetauchten Schreiben"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T01:26:48.000Z",
+      "last_updated": "2026-09-04T01:53:45.231Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-4cc141e5db1bd8368571",
+      "source_published_at": "2026-09-04T01:26:48.000Z",
+      "published_at": "2026-09-04T01:53:45.231Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens und mögliche Zusammenhänge zwischen den Fällen.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsbehörden bestätigen oder verneinen Echtheit und Zusammenhang öffentlich.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-db239b36c079847b",
+          "announced_at": "2026-09-04T01:26:48.000Z",
+          "follow_up_date": "2026-09-11T01:53:45.231Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:26:48.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4fb94d2cebfca746",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+      "source_summary": "Der WDR meldet unter Berufung auf Polizeiangaben und laufende Ermittlungen einen weiteren möglichen Sabotagevorfall an einem Umspannwerk in Dormagen. In Dormagen-Gohr hätten Spaziergänger am frühen Abend einen verdächtigen Gegenstand entdeckt; zunächst sei von „sensiblen Gegenständen“ die Rede gewesen. Laut WDR ist inzwischen klar, dass auch hier Abschussvorrichtungen aufgebaut worden seien, um möglicherweise das Stromnetz anzugreifen. Die Polizei sagt zugleich, es sei bislang zu keiner Beschädigung gekommen, und die Eignung des Gegenstands sei noch offen. \n\nDer Beitrag nennt außerdem ein Bekennerschreiben, das laut Polizei in der Nacht auftauchte. Der Verfasser wolle gegen die fossile Energieindustrie vorgehen; die Echtheit werde geprüft. Zudem werde nach einem Mann aus Gevelsberg gefahndet, der das Schreiben verschickt haben soll und der der Polizei namentlich bekannt sei. Der Bericht verweist auf weitere mögliche Tatorte in Weisweiler und im Raum Dormagen sowie auf frühere Vorfälle in Bergheim und im Süden Brandenburgs.",
+      "summary": "In Dormagen ist an einem Umspannwerk erneut ein verdächtiger Fund gemeldet worden. Die Polizei geht inzwischen von Sabotage aus und prüft ein Bekennerschreiben.",
+      "detail_summary": "Am bestbelegten Kern steht, dass an einem Umspannwerk in Dormagen-Gohr erneut ein verdächtiger Gegenstand beziehungsweise eine Abschussvorrichtung entdeckt wurde. Der WDR berichtet zudem, die Polizei gehe inzwischen von Sabotage aus; ein beabsichtigter Kurzschluss sei möglich, eine Beschädigung sei bislang aber nicht festgestellt. Für die Einordnung ist das relevant, weil kritische Strominfrastruktur betroffen ist und schon ein einzelner Angriff Schutzkonzepte, Ermittlungen und Sicherheitsmaßnahmen nachziehen kann. Der Wirkpfad liegt vor allem in zusätzlichem Absicherungsaufwand, möglicher Betriebsstörung und der Frage, ob Nachahmung oder weitere Tatorte folgen. Ob daraus tatsächlich Ausfälle oder weitergehende Schäden entstehen, bleibt nach den vorliegenden Quellen offen. Die Evidenzlage stützt hier vor allem einen laufenden Ermittlungsstand, nicht schon einen abgeschlossenen Schaden.",
+      "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und damit einen potenziell systemrelevanten Schutz- und Störfall. Schon der Verdacht auf gezielte Sabotage kann Sicherheitsaufwand, Ermittlungen und Vorsorge an mehreren Standorten auslösen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind mögliche Versorgungsstörungen, Sicherheitsrisiken und Ermittlungsfolgen; konkrete Schäden sind aber noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; höchstens indirekt über Energieinfrastruktur und mögliche Störfolgen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Kritische Infrastruktur und der Umgang mit Sabotage berühren Sicherheitsstaat, öffentliche Information und die Korrekturfähigkeit von Schutzsystemen."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T21:14:14.000Z",
+      "last_updated": "2026-09-04T01:53:14.028Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-73b1c53517b0e2f5118c",
+      "source_published_at": "2026-09-04T01:35:54.000Z",
+      "published_at": "2026-09-04T01:53:14.028Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:35:54.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:45:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e976be74e6481ea2",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-12aeedd46526401d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
+      "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
+      "source_summary": "Mehrere überregionale Medien berichten übereinstimmend, dass der VW-Aufsichtsrat dem Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg zugestimmt hat. Genannt werden ein Abbau von rund 50.000 Arbeitsplätzen sowie weitere Einschnitte im Konzern.\n\nMehrere Quellen schreiben außerdem, dass bei vier Werken die Zukunft oder eine Folgebelegung offen bleibt. In einzelnen Berichten heißt es, eine Eskalation sei verhindert worden oder der Beschluss sei einstimmig gefallen. Eine Quelle nennt zusätzlich, dass die Abspaltung der Marke VW vorerst nicht komme. Die genauen Unternehmensunterlagen und weitere Details zum Umfang der Maßnahmen liegen in den gelieferten Ausschnitten nicht vollständig vor.",
+      "summary": "VW-Aufsichtsrat und Konzernvorstand haben laut mehreren Berichten ein Sparpaket gebilligt. Kernpunkt ist der geplante Abbau von rund 50.000 Jobs.",
+      "detail_summary": "Bestbelegt ist die Zustimmung des VW-Aufsichtsrats zum Spar- und Sanierungsplan des Konzernvorstands in Wolfsburg. Mehrere voneinander getrennte Redaktionsberichte nennen zudem den Abbau von rund 50.000 Arbeitsplätzen als Bestandteil des Plans. Das ist materiell relevant, weil damit Beschäftigung, Standortstruktur und Investitionsspielräume des Konzerns direkt neu geordnet werden. Als Wirkpfad ist vor allem ein Rückgang von Personalkosten und eine Neupriorisierung von Produktion und Folgebelegung der Werke erkennbar. Mögliche Folgen sind Arbeitsplatzverluste, veränderte Zulieferketten und Unsicherheit an mehreren Standorten; ob und wann konkrete Effekte eintreten, bleibt offen. Die Quellenlage belegt den Beschluss und die Größenordnung, aber nicht die vollständigen Umsetzungsdetails oder alle Standortfolgen.",
+      "why_relevant": "Die Entscheidung verändert nach den vorliegenden Quellen Beschäftigung, Standortstruktur und Investitionsverteilung in einem großen Industriekonzern mit möglichen Folgewirkungen für Zulieferer und betroffene Regionen.",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Arbeit",
+        "Wirtschaft",
+        "Gesellschaft"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind laut Quellen rund 50.000 Stellen; das berührt Beschäftigung, Einkommen und Standortperspektiven in mehreren Regionen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekte Folgen für Produktionsstandorte, Logistik und Investitionen sind möglich, aber in den Quellen nicht beziffert."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Einigung betrifft Mitbestimmung, Betriebsratspositionen und die Korrekturfähigkeit von Standortentscheidungen im Konzern."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Arbeitsplätze",
+            "value": "50.000",
+            "unit": "Stellen",
+            "context": "Geplanter Abbau im Konzern"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "unternehmen",
+          "kommunen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T19:08:00.000Z",
+      "last_updated": "2026-09-04T01:52:37.203Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-06fbdda38e40a97f5340",
+      "source_published_at": "2026-09-03T18:53:18.000Z",
+      "published_at": "2026-09-04T01:52:37.203Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "mdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 8,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie viele Stellen werden tatsächlich sozialverträglich oder betriebsbedingt abgebaut?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Personalzahlen und Personalmaßnahmen je Standort",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-aaafd43ff7f2b06d",
+          "announced_at": "2026-09-04T01:33:27.000Z",
+          "follow_up_date": "2026-09-11T01:52:37.203Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:08:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:58:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:24:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:55:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T18:53:18.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:34:25.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T23:24:43.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:33:27.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e442d6ad81290406",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
+      "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
+      "source_summary": "Die taz berichtet über eine Unicef-Untersuchung zu sexueller Ausbeutung von Kindern im Netz. Laut Text wurde die Studie in 21 Ländern durchgeführt; Deutschland gehörte nicht dazu. Der Bericht nennt mehrere Zahlen zu Betroffenheit und zu den Plattformen, auf denen ein großer Teil der Fälle stattgefunden haben soll. Außerdem wird beschrieben, dass Unicef vor psychischen Folgen warnt und auf Forschungsinterviews verweist.\n\nDer Text zitiert Unicef mit dem Hinweis, dass viele Kinder Erfahrungen nicht melden. Genannt werden auch Aussagen von Unicef-Exekutivdirektorin Catherine Russell zu Belastungen und zur Schwierigkeit, Hilfe zu suchen.",
+      "summary": "Unicef meldet laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Genannt werden Betroffenheit in 21 Ländern und hohe Anteile auf sozialen Plattformen.",
+      "detail_summary": "Der bestbelegte Kern der Meldung ist eine von Unicef ausgewertete Untersuchung in 21 Ländern, die laut taz von einer deutlich höheren Verbreitung sexueller Ausbeutung im Internet ausgeht als bisher angenommen. Der Bericht nennt konkrete Zahlen zu Betroffenheit, darunter „jedes fünfte Kind“ sowie weitere Teilbefunde zu ungewollten Inhalten, Aufforderungen zu sexuellen Handlungen und dem Weiterverbreiten von Bildern. Für die Nachricht relevant ist vor allem der mögliche Hinweis auf ein breites, plattformgebundenes Risikofeld, das Kinder in alltäglichen digitalen Umgebungen trifft. Daraus ergibt sich ein Wirkpfad über Plattformdesign, Kontaktanbahnung und Vertrauensausnutzung, der Schutzmechanismen, Moderation und Prävention berühren kann. Mögliche Folge sind verstärkte politische und regulatorische Debatten über Jugendschutz und Plattformpflichten. Die Evidenz bleibt hier jedoch vorläufig, weil nur eine journalistische Sekundärquelle vorliegt und die Originalstudie im gelieferten Material nicht direkt geprüft werden kann.",
+      "why_relevant": "Die Meldung betrifft eine große Zahl potenziell Betroffener, verweist auf digitale Schutz- und Regulierungsfragen und kann Debatten über Plattformpflichten, Prävention und Kinderschutz beeinflussen.",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die berichteten Zahlen betreffen Kinder direkt und deuten auf ein relevantes Risiko für Schutz, Gesundheit und Teilhabe im digitalen Raum."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es ist kein unmittelbarer Umwelt- oder Klimabezug aus den Quellen erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung berührt Regulierung von Plattformen, Schutzstandards und die demokratische Kontrolle digitaler Räume."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Betroffene Länder",
+            "value": "21",
+            "unit": "Länder",
+            "context": "In diesen Ländern wurde die Untersuchung durchgeführt"
+          },
+          {
+            "label": "Anteil der Kinder",
+            "value": "jedes fünfte",
+            "unit": "Kind",
+            "context": "Laut Bericht innerhalb eines Jahres im Netz betroffen"
+          }
+        ],
+        "affected_groups": [
+          "kinder_jugend",
+          "verbraucherinnen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T06:53:00.000Z",
+      "last_updated": "2026-09-04T01:52:05.573Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-83becedad84b8b907cdf",
+      "source_published_at": "2026-09-03T06:53:00.000Z",
+      "published_at": "2026-09-04T01:52:05.573Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Studie-von-Unicef/!6209752",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T06:53:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3a01df57b8cfe75f",
       "title_image": {
