@@ -6,7 +6,7 @@ export const DEFAULT_IMAGE='/assets/img/brand/app-icon-512.png';
 export const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const safeJson=value=>JSON.stringify(value).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');
 const disclaimer='Diese Online-Umfrage ist nicht repräsentativ. Das Ergebnis bildet die abgegebenen Stimmen der Teilnehmenden ab.';
-export function shell(root,{title,description,route,body,image=DEFAULT_IMAGE,admin=false,poll=null,script='polls.mjs'}){
+export function shell(root,{title,description,route,body,image=DEFAULT_IMAGE,admin=false,poll=null,script='polls.js'}){
   const nav=JSON.parse(fs.readFileSync(path.join(root,'assets/data/navigation.json'),'utf8'));
   const link=item=>`<a href="${esc(/^(https?:|mailto:)/.test(item.href)?item.href:`/${item.href}`)}">${esc(item.label)}</a>`;
   const header=fs.readFileSync(path.join(root,'templates/header.html'),'utf8').replaceAll('{{BASE}}','/');
@@ -59,7 +59,7 @@ export function indexPage(root,polls){
 }
 export function retiredPage(root,slug){return shell(root,{title:'Umfrage nicht mehr verfügbar',description:'Diese Umfrage ist nicht mehr verfügbar.',route:`/umfragen/${slug}/`,admin:true,body:'<h1>Diese Umfrage ist nicht mehr verfügbar.</h1><p>Die Umfrage wurde von der Redaktion entfernt. Es können keine weiteren Stimmen abgegeben werden.</p><a class="btn btn-primary" href="/umfragen/">Zu den aktuellen Umfragen</a>'});}
 const input=(name,label,{type='text',max=180,required=false,help=''}={})=>`<label>${esc(label)}${help?`<small>${esc(help)}</small>`:''}<input name="${name}" type="${type}"${max?` maxlength="${max}"`:''}${required?' required':''}></label>`;
-export function adminPage(root){return shell(root,{title:'Umfragen verwalten',description:'Geschützte Verwaltung der WÖk-Umfragen.',route:'/admin/umfragen/',admin:true,script:'polls-admin.mjs',body:`
+export function adminPage(root){return shell(root,{title:'Umfragen verwalten',description:'Geschützte Verwaltung der WÖk-Umfragen.',route:'/admin/umfragen/',admin:true,script:'polls-admin.js',body:`
 <h1>Umfragen verwalten</h1><p>Entwürfe vorbereiten, veröffentlichen und Rückmeldungen auswerten.</p>
 <p id="poll-admin-message" class="poll-status" role="status" aria-live="polite">Anmeldung wird geprüft …</p>
 <div id="poll-login-panel" class="poll-actions"><button id="poll-admin-login" class="btn btn-primary" type="button">Mit bestehendem Discord-Konto anmelden</button><button id="poll-admin-retry" class="btn btn-secondary" type="button">Anmeldung erneut prüfen</button></div>

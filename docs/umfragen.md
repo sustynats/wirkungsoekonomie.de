@@ -1,8 +1,8 @@
 # Eigene Umfragen - Architektur und Betrieb
 
-Stand: 4. September 2026. **Release Candidate; noch nicht produktiv freigegeben.**
-Der aktuelle Implementierungs- und Prüfstand steht unten. Ein lokaler Test ist
-keine Bestätigung einer erfolgreichen Produktivveröffentlichung.
+Stand: 4. September 2026. **Backend produktiv; Website-Release in Veröffentlichung.**
+Der aktuelle Implementierungs- und Prüfstand steht unten. Eine erfolgreiche
+API-Abnahme ist noch keine Bestätigung der öffentlichen Website-Veröffentlichung.
 
 ## Architektur und führende Quellen
 
@@ -25,7 +25,7 @@ Foreign Keys, `busy_timeout` und atomaren Schreibtransaktionen.
 | `content/polls/public-catalog.json` | Generierter öffentlicher Metadaten-Snapshot, **keine Stimmdatenbank** |
 | `scripts/polls/sync.mjs` | Öffentliche Metadaten aus Oracle synchronisieren |
 | `scripts/polls/pages.mjs`, `build.mjs` | Statische Index-/Detail-/Admin-Seiten, Canonical/OG/Twitter, Sitemap |
-| `assets/js/polls.mjs`, `polls-admin.mjs` | Leichtgewichtige Abstimmung/Ergebnisse und Verwaltung |
+| `assets/js/polls.js`, `polls-admin.js` | Leichtgewichtige Abstimmung/Ergebnisse und Verwaltung |
 | `assets/css/polls.css` | Responsive Formulare und Ergebnisbalken im bestehenden Design |
 | `assets/data/navigation.json` | Einstieg im bestehenden Footer |
 
@@ -159,9 +159,9 @@ externen Tracker ein und vermischt Website-Analytics nicht mit Stimmen.
 
 Die Anwendung protokolliert weder Klartext-IP noch Vote-Token, Authorization-
 Header oder konkrete Stimmen. Die IP liegt nur flüchtig für die Ableitung des
-Abuse-Schlüssels vor. **Vor Produktivfreigabe muss auch die Proxy-/Access-Log-
-Konfiguration für die Poll-Pfade überprüft werden.** Sonst wäre eine Aussage
-über das gesamte System, es speichere keine Klartext-IP, nicht gerechtfertigt.
+Abuse-Schlüssels vor. Die produktive Caddy-Konfiguration wurde am 4. September
+2026 geprüft: kein Request-Access-Log, eigener Poll-Handler ersetzt `X-Real-IP`
+vor der Weitergabe über Loopback. Die übrigen API-Routen blieben erhalten.
 
 Technische Kennungen sind datensparsame Pseudonyme, keine Garantie rechtlicher
 Anonymität. Rechtsgrundlage und endgültiger Veröffentlichungstext werden von
@@ -172,7 +172,7 @@ ersetzt keine Rechtsberatung.
 
 > **Online-Umfragen.** Bei der freiwilligen Teilnahme an unseren Online-Umfragen
 > speichern wir die ausgewählte Antwort, die zugehörige Umfrage, den Zeitpunkt
-> und eine zufällige, je Umfrage technisch verschlüsselt abgeleitete
+> und eine zufällige, je Umfrage kryptografisch abgeleitete
 > Browserkennung. Namen oder E-Mail-Adressen werden nicht abgefragt. Die
 > Kennung hilft, einfache Mehrfachabstimmungen zu verhindern, und wird im
 > Browser für höchstens ein Jahr gespeichert. Zur Missbrauchsbegrenzung werden
@@ -302,10 +302,10 @@ seine eigenen `polls-<UTC-Zeit>.sqlite`-Dateien nach sieben Tagen. Die
 Anti-Abuse-Datei wird niemals gesichert. Rechte: Daten-/Backup-Ordner 0700,
 SQLite-Dateien 0600; nur der bestehende Dienstbenutzer darf zugreifen.
 
-Ein täglicher systemd-Timer (`woek-polls-backup.timer`) soll diesen Befehl mit
-WorkingDirectory `/opt/faktencheck-bot` und dem **tatsächlich ermittelten**
-Dienstbenutzer starten. Node-Pfad ebenfalls am Server ermitteln. Timer und
-letzten erfolgreichen Lauf kontrollieren. Eine weitere verschlüsselte Kopie
+Ein täglicher systemd-Timer (`woek-polls-backup.timer`) führt diesen Befehl mit
+WorkingDirectory `/opt/faktencheck-bot` und dem Dienstbenutzer `ubuntu` aus.
+Timer aktiv, erste Sicherung am 4. September 2026 erfolgreich (`Result=success`).
+Zeitplan: 02:20 UTC, bis zu fünf Minuten Streuung. Eine weitere verschlüsselte Kopie
 darf nur in den vorhandenen privaten Oracle-Backup-Prozess aufgenommen werden,
 nicht in GitHub Releases, Website-Artefakte oder Vercel-Speicher.
 
@@ -326,7 +326,9 @@ Restore erfolgt bewusst nicht über die öffentliche API:
 
 Backups sind gegen versehentlichen Defekt, nicht gegen Verlust des gesamten
 Servers geschützt, solange keine bestehende externe Oracle-Sicherung sie erfasst.
-Den tatsächlichen Off-Host-Backup-Status vor Produktivfreigabe dokumentieren.
+Off-Host-Status am 4. September 2026: keine zusätzliche externe Sicherung für
+diesen neuen Datenbestand eingerichtet oder nachgewiesen. Dies bleibt ein
+offener Betriebs-Härtungspunkt; die tägliche Sicherung liegt auf demselben Server.
 
 ## Löschen
 
@@ -355,13 +357,34 @@ temporäre **dateibasierte** Testdatenbank in `outputs/poll-acceptance-*`.
 `/__test__/login` ist ausschließlich dort ein expliziter synthetischer
 Test-Login, nicht Bestandteil des Produktionsservers oder öffentlichen Builds.
 
-Bisher bestanden: 20 automatisierte Store-/API-/HTML-Tests unter Node 26 und
+Bisher bestanden: 26 automatisierte Store-/API-/HTML-Tests unter Node 26 und
 Node 22.23.1, darunter sechs parallele Abstimmungsprozesse mit exakt einer
 gespeicherten Stimme. Lokal im Browser geprüft: Tastatur-Abstimmung, Ergebnis,
 Reload-Dublettenschutz, Admin-Anlegen/Vorschau/Veröffentlichen/Pausieren,
 390-Pixel-Mobilansicht ohne horizontales Überlaufen; keine Browserfehler.
 
-**Noch offen:** aktueller Oracle-Serverzugang, tatsächliche Backend-Integration,
-Proxy-/Logkontrolle, Migration/Seed, Backup-Timer/Off-Host-Prüfung, vollständiger
-Release-Build, Produktivdeployment und Live-End-to-End-Abnahme. Diese Liste erst
-nach realer Durchführung aktualisieren.
+Die Backend-Integration wurde aus einem frischen Server-Snapshot entwickelt und
+mit den bestehenden 39 Backend-Tests, Lint und TypeScript-Build geprüft, lokal
+und auf dem Server. Backend-Quellstand: `01d59247a3`; private Sicherung der alten
+Konfiguration unter `/opt/faktencheck-bot/deploy-backups/polls-01d59247a3/`.
+Migration auf Schema 2, Integrität, Foreign Keys, Seed, Dienstneustart und
+Backup-Timer sind abgeschlossen. Private Datenpfade:
+
+- `/opt/faktencheck-bot/data/polls/polls.sqlite`
+- `/opt/faktencheck-bot/data/polls/abuse.sqlite`
+- `/opt/faktencheck-bot/backups/polls/`
+
+`ops/polls/live-smoke.mjs` prüfte über die echte öffentliche HTTPS-API mit einer
+separaten kurzlebigen Testumfrage: CORS, Admin-Verweigerung ohne Anmeldung,
+Ergebnis-Sichtbarkeit, Stimme ohne Kommentar, zweite Stimme, leeres Feedback,
+internes Feedback, Lesen/Archivieren/Löschen und unveränderte Stimmenzahl.
+Testumfrage, Optionen, Stimme und Kommentar wurden vollständig gelöscht; nur
+die zufällige ehemalige Test-URL bleibt gegen Wiederverwendung reserviert.
+Die echte Wirkungsticker-Umfrage blieb bei **0 Stimmen**.
+
+Der vollständige Website-Build mit PDF-Verifikation ist bestanden. Das neue
+Artefakt-Gate prüft ausdrücklich, dass die öffentlichen `.js`-Module ausgeliefert
+werden, während Backend, Secrets und private Quelldateien nicht im Artefakt liegen.
+Noch offen für die abschließende Freigabe: Pages-Deployment und Live-Browser-
+Abnahme einschließlich bestehender Discord-Anmeldung. Externe Sicherung bleibt
+der oben dokumentierte offene Betriebs-Härtungspunkt.
