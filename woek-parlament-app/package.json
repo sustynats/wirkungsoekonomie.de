@@ -13,7 +13,7 @@
     "check:positioning": "node scripts/quality/check-positioning-pass.mjs",
     "audit:accessibility": "node scripts/quality/audit-accessibility-baseline.mjs",
     "check:accessibility": "node scripts/quality/audit-accessibility-baseline.mjs --strict",
-    "test": "tsx --test tests/*.test.ts",
+    "test": "tsx --test tests/*.test.ts tests/mv-spd-authority-source-binding.test.mjs",
     "check:state-publication": "tsx scripts/quality/check-state-publication.ts",
     "check:government-staging": "tsx --test tests/government-public-data.test.ts",
     "check:government-daily-ingest": "tsx --test tests/government-daily-ingest.test.ts",
