@@ -88,6 +88,14 @@ test('cost report deduplicates runs, counts missing usage, and does not invent a
   d.report.budget_policy.fx.rate_date = '2026-08-01';
   assert.equal(summarizeNews(d, now).eurMonthWithTaxReserve, null);
 });
+test('preflight holds are not provider outages or unknown paid requests', () => {
+  const d=fixture(); d.report.status='degraded'; d.report.input_holds=[{story_id:'test',reason:'AI_INPUT_TOO_LARGE'}];
+  const checks=evaluateChecks(d,now).checks;
+  assert.equal(checks.find(c=>c.id==='news-input').ok,false);
+  assert.equal(checks.find(c=>c.id==='provider').ok,true);
+  d.usage.runs=[{run_id:'local-only',started_at:now,counts:{ai_stories:1,ai_requests:0},ai:null}];
+  assert.equal(summarizeNews(d,now).missingCostRuns,0);
+});
 test('probe validates content and retries one transient connection failure', async () => {
   let calls = 0;
   assert.equal((await probe({ id: 'x', name: 'X', url: 'https://example.test', marker: /works/ }, async () => { if (++calls === 1) throw new Error('private upstream detail'); return new Response('works'); })).ok, true);
