@@ -1,7 +1,1909 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T07:51:17.833Z",
+  "updated_at": "2026-09-04T08:06:19.579Z",
   "stories": [
+    {
+      "story_id": "wt-998e73bf202ee8d2",
+      "slug": "verwaltungsgerichtsverfahren-sollen-schneller-werden-2ee8d2",
+      "title": "Verwaltungsgerichtsverfahren sollen schneller werden",
+      "first_seen": "2026-09-04T07:54:00.000Z",
+      "last_updated": "2026-09-04T08:07:54.216Z",
+      "published_at": "2026-09-04T08:07:54.216Z",
+      "updated_at": "2026-09-04T08:07:54.216Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-umwelt",
+          "publisher": "Deutscher Bundestag – Umwelt und Klimaschutz",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+          "title": "Verwaltungsgerichtsverfahren sollen schneller werden",
+          "summary": "Recht und Verbraucherschutz/Gesetzentwurf Die Bundesregierung will Verfahren vor Verwaltungsgerichten beschleunigen. Der Bundesrat fordert an mehreren Stellen Änderungen am Gesetzentwurf.",
+          "source_type": "official_rss",
+          "published_at": null,
+          "primary_source": true,
+          "source_priority": 90,
+          "source_topic": "Klima",
+          "content_hash": "b44ab8b4fd9960a5a66665acb13a7fdf0e500c1f3c12f49e7e3e18e8bdc1d3b8",
+          "source_item_id": "273462d6513ec2e7ecebf3f46bba056a2316586deb0d5bb203712c25c346b88c",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": null,
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-998e73bf202ee8d2-v1-claim-1",
+          "story_id": "wt-998e73bf202ee8d2",
+          "claim": "Die Bundesregierung hat einen Gesetzentwurf zur Modernisierung und Beschleunigung verwaltungsgerichtlicher Verfahren vorgelegt.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-umwelt",
+          "evidence": [
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "ccc724aca598235ee39a",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:54.216Z"
+        },
+        {
+          "claim_id": "wt-998e73bf202ee8d2-v1-claim-2",
+          "story_id": "wt-998e73bf202ee8d2",
+          "claim": "Der Entwurf soll die Gerichte entlasten und personelle Ressourcen flexibler einsetzen lassen.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-umwelt",
+          "evidence": [
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "b7ec0b10e5648d332bfb",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:54.216Z"
+        },
+        {
+          "claim_id": "wt-998e73bf202ee8d2-v1-claim-3",
+          "story_id": "wt-998e73bf202ee8d2",
+          "claim": "Der Bundesrat fordert in seiner Stellungnahme an mehreren Stellen Änderungen am Gesetzentwurf.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-umwelt",
+          "evidence": [
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "67778dd7e621110f43ca",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "4a16fb846f342d022d95",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:54.216Z"
+        },
+        {
+          "claim_id": "wt-998e73bf202ee8d2-v1-claim-4",
+          "story_id": "wt-998e73bf202ee8d2",
+          "claim": "Der überwiegende Teil des Gesetzes soll am 1. Januar 2027 in Kraft treten.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-umwelt",
+          "evidence": [
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "670d31640cf849da953a",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:54.216Z"
+        },
+        {
+          "claim_id": "wt-998e73bf202ee8d2-v1-claim-5",
+          "story_id": "wt-998e73bf202ee8d2",
+          "claim": "Unter anderem soll der Einsatz von Einzelrichtern ausgeweitet werden, und Proberichter sollen früher als bislang als Einzelrichter eingesetzt werden können.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-umwelt",
+          "evidence": [
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "06f8c07292a37d1308f9",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "e76cdef05822fa4ecc56",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:54.216Z"
+        },
+        {
+          "claim_id": "wt-998e73bf202ee8d2-v1-claim-6",
+          "story_id": "wt-998e73bf202ee8d2",
+          "claim": "Die Bundesregierung will auch Regeln zu Rechtsmitteln, einstweiligem Rechtsschutz, Vollstreckung und dem Umgang mit querulatorischen Klagen ändern.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-umwelt",
+          "evidence": [
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "f25d4c7a0814773789ce",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "bb9a56e6493dc2b0631e",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "excerpt_hash": "21d7905da417d990c292",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:54.216Z"
+        }
+      ],
+      "event_id": "event-9e64e7ea13cdf3b32ec3",
+      "event_first_seen_at": "2026-09-04T08:06:19.579Z",
+      "event_detected_at": "2026-09-04T08:06:19.579Z",
+      "verification_started_at": "2026-09-04T08:07:37.298Z",
+      "publish_ready_at": "2026-09-04T08:07:54.216Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-umwelt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form der Bundestag den Entwurf nach der Bundesrat-Stellungnahme ändert.",
+          "source_id": "bundestag-umwelt",
+          "expected_by": null,
+          "measurable_indicator": "Vorlage einer geänderten Fassung oder eines Beschlusses im weiteren Verfahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d38c57b2b7a6c3f7",
+          "announced_at": null,
+          "follow_up_date": "2026-09-11T08:07:54.216Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "e94409d7f9d4796ecc951a57c5b0db1eb9d95fb101f1bf141563ebd3062f54e6",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Bundestagsmeldung beschreibt einen Gesetzentwurf der Bundesregierung zur Modernisierung und Beschleunigung verwaltungsgerichtlicher Verfahren. Nach Angaben des Textes sollen die Gerichte entlastet und personelle Ressourcen flexibler eingesetzt werden können. Vorgesehen sind Änderungen unter anderem bei Zuständigkeiten, Rechtsmitteln, einstweiligem Rechtsschutz, Vollstreckung und sonstigen Prozessrechtsfragen.\n\nDer Entwurf sieht außerdem vor, den Einsatz von Einzelrichtern auszuweiten und Proberichter früher als bisher als Einzelrichter einzusetzen. Als weiterer Termin nennt der Text den 1. Januar 2027 für den überwiegenden Teil des Gesetzes. Der Bundesrat fordert in seiner Stellungnahme mehrere Änderungen, etwa bei Berufung und Revision sowie beim Umgang mit Zwangsgeld und Experimentierklauseln; die Bundesregierung hält an Teilen des Entwurfs fest.",
+      "analysis": {
+        "story_id": "wt-998e73bf202ee8d2",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Bundesregierung hat einen Gesetzentwurf zur schnelleren Verwaltungsgerichtsbarkeit vorgelegt. Der Bundesrat verlangt dazu Änderungen an mehreren Punkten.",
+        "detail_summary": "Gesichert ist zunächst nur ein Entwurf: Die Bundesregierung will verwaltungsgerichtliche Verfahren modernisieren und beschleunigen, während der Bundesrat mehrere Änderungen verlangt. Materiell ist das, weil der Text Eingriffe in Verfahrensregeln, Zuständigkeiten und Rechtsmittel beschreibt und damit die Spielregeln staatlicher Streitbeilegung verändert. Der Wirkpfad verläuft über kürzere oder anders strukturierte Verfahren, flexiblere Personaleinsätze und neue Instrumente gegen aus Sicht des Entwurfs aussichtslose oder rechtsmissbräuchliche Anträge. Mögliche Folgen sind schnellere Entscheidungen, aber auch neue Abgrenzungsfragen und Streit über den Zugriff auf Rechtsmittel oder Einzelrichter. Für Mensch und Demokratie ist das relevant, weil Verwaltungsgerichte staatliches Handeln kontrollieren; für Planet ist aus der Quelle selbst kein direkter Bezug ersichtlich. Offen bleibt, wie der Bundestag den Entwurf verändert und ob die angekündigte Beschleunigung später tatsächlich eintritt.",
+        "why_relevant": "Der Entwurf betrifft die Regeln für den Zugang zu und die Geschwindigkeit von Verwaltungsgerichtsverfahren und damit einen zentralen Teil staatlicher Kontrolle und Rechtsschutzorganisation.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Verfahrensregeln können Dauer, Zugang und Belastung von Rechtsschutz für Betroffene verändern; die Quelle nennt aber noch keine Umsetzung oder messbaren Effekt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug wird in der Quelle nicht genannt; ein möglicher indirekter Effekt wäre höchstens über beschleunigte Verwaltungsentscheidungen denkbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Verwaltungsgerichte sichern Kontrolle staatlichen Handelns. Änderungen bei Rechtsmitteln, Einzelrichtern und Vollstreckung betreffen demokratische Korrekturfähigkeit und Verfahrenszugang."
+        },
+        "importance": "mittel",
+        "impact_potential": "Der Entwurf kann die Dauer und Struktur von Verwaltungsverfahren verändern und damit Zugang, Kosten und Belastung der Justiz beeinflussen.",
+        "impact_risks": [
+          "Kürzere Verfahren könnten Rechtsmittelzugang und gerichtliche Kontrolle faktisch erschweren, wenn neue Hürden entstehen.",
+          "Die Ausweitung von Einzelrichterzuständigkeiten kann Effizienz erhöhen, aber auch die Fehleranfälligkeit einzelner Entscheidungen vergrößern."
+        ],
+        "mechanisms": [
+          "Änderung von Verfahrensregeln und Zuständigkeiten",
+          "frühere oder häufigere Einzelrichterzuständigkeit",
+          "neue Instrumente gegen aus Sicht des Entwurfs missbräuchliche Klagen und Anträge"
+        ],
+        "first_order": [
+          "mögliche Entlastung der Gerichte",
+          "veränderte Bearbeitungsdauer von Verfahren",
+          "mehr Streit über neue Verfahrensgrenzen"
+        ],
+        "second_order": [
+          "mögliche Verschiebung von Prozessstrategien",
+          "Einfluss auf den praktischen Rechtsschutz gegen Behörden",
+          "Anpassungsdruck bei Gerichten und Verwaltung"
+        ],
+        "third_order": [
+          "mögliche Wirkung auf die demokratische Korrekturfähigkeit staatlichen Handelns",
+          "mögliche Präzedenzwirkung für andere Verfahrensordnungen"
+        ],
+        "systemic_relevance": "Die Meldung betrifft eine Verfahrensarchitektur, über die staatliche Entscheidungen kontrolliert und korrigiert werden können.",
+        "transformation_potential": "Potenzial für eine strukturelle Veränderung der Verwaltungsgerichtsbarkeit, falls die Änderungen unverändert beschlossen und umgesetzt werden.",
+        "resilience": "Mehr Flexibilität kann die Funktionsfähigkeit der Gerichte stärken; zugleich bleibt offen, ob der Rechtsschutz gegen Fehlentscheidungen robust genug bleibt.",
+        "side_effects": [
+          "Neue Auslegungs- und Abgrenzungsfragen bei Berufung und Revision",
+          "mögliche Belastung durch umstrittene Regelungen zu Zwangsgeld und rechtsmissbräuchlichen Klagen"
+        ],
+        "uncertainties": [
+          "Die Quelle nennt nur einen Entwurf, nicht den endgültigen Beschluss.",
+          "Unklar ist, welche Änderungen Bundestag und Bundesrat am Ende durchsetzen.",
+          "Ein tatsächlicher Beschleunigungseffekt ist ex ante nicht belegt."
+        ],
+        "evidence_level": "einzelne Primärquelle mit mehreren Textstellen; keine unabhängige Bestätigung im Material",
+        "attribution": "Die Angaben stammen aus der Bundestagsmeldung und spiegeln den dort beschriebenen Entwurf sowie die Bundesratsstellungnahme wider.",
+        "watch_next": [
+          "Ob der Bundestag den Entwurf anpasst",
+          "Ob der Termin 1. Januar 2027 im Verfahren bestehen bleibt",
+          "Ob die umstrittenen Punkte zu Rechtsmitteln und Zwangsgeld geändert werden"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "democratic_correctability",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Der Entwurf ändert Verfahrensregeln für Verwaltungsgerichte und damit einen materiell relevanten Bereich staatlicher Kontrolle; zugleich nennt die Quelle konkrete Streitpunkte und einen Inkrafttretenstermin."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Inkrafttreten überwiegender Teil",
+              "value": "1. Januar 2027",
+              "unit": "Datum",
+              "context": "Geplanter Termin für den überwiegenden Teil des Gesetzes"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "beschaeftigte",
+            "unternehmen",
+            "verbraucherinnen"
+          ],
+          "timeline": [
+            {
+              "date": "2027-01-01",
+              "label": "Überwiegender Teil soll in Kraft treten"
+            }
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T08:07:54.216Z",
+          "content_hash": "e94409d7f9d4796ecc951a57c5b0db1eb9d95fb101f1bf141563ebd3062f54e6",
+          "source_summary": "Die Bundestagsmeldung beschreibt einen Gesetzentwurf der Bundesregierung zur Modernisierung und Beschleunigung verwaltungsgerichtlicher Verfahren. Nach Angaben des Textes sollen die Gerichte entlastet und personelle Ressourcen flexibler eingesetzt werden können. Vorgesehen sind Änderungen unter anderem bei Zuständigkeiten, Rechtsmitteln, einstweiligem Rechtsschutz, Vollstreckung und sonstigen Prozessrechtsfragen.\n\nDer Entwurf sieht außerdem vor, den Einsatz von Einzelrichtern auszuweiten und Proberichter früher als bisher als Einzelrichter einzusetzen. Als weiterer Termin nennt der Text den 1. Januar 2027 für den überwiegenden Teil des Gesetzes. Der Bundesrat fordert in seiner Stellungnahme mehrere Änderungen, etwa bei Berufung und Revision sowie beim Umgang mit Zwangsgeld und Experimentierklauseln; die Bundesregierung hält an Teilen des Entwurfs fest.",
+          "analysis": {
+            "story_id": "wt-998e73bf202ee8d2",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Bundesregierung hat einen Gesetzentwurf zur schnelleren Verwaltungsgerichtsbarkeit vorgelegt. Der Bundesrat verlangt dazu Änderungen an mehreren Punkten.",
+            "detail_summary": "Gesichert ist zunächst nur ein Entwurf: Die Bundesregierung will verwaltungsgerichtliche Verfahren modernisieren und beschleunigen, während der Bundesrat mehrere Änderungen verlangt. Materiell ist das, weil der Text Eingriffe in Verfahrensregeln, Zuständigkeiten und Rechtsmittel beschreibt und damit die Spielregeln staatlicher Streitbeilegung verändert. Der Wirkpfad verläuft über kürzere oder anders strukturierte Verfahren, flexiblere Personaleinsätze und neue Instrumente gegen aus Sicht des Entwurfs aussichtslose oder rechtsmissbräuchliche Anträge. Mögliche Folgen sind schnellere Entscheidungen, aber auch neue Abgrenzungsfragen und Streit über den Zugriff auf Rechtsmittel oder Einzelrichter. Für Mensch und Demokratie ist das relevant, weil Verwaltungsgerichte staatliches Handeln kontrollieren; für Planet ist aus der Quelle selbst kein direkter Bezug ersichtlich. Offen bleibt, wie der Bundestag den Entwurf verändert und ob die angekündigte Beschleunigung später tatsächlich eintritt.",
+            "why_relevant": "Der Entwurf betrifft die Regeln für den Zugang zu und die Geschwindigkeit von Verwaltungsgerichtsverfahren und damit einen zentralen Teil staatlicher Kontrolle und Rechtsschutzorganisation.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Verfahrensregeln können Dauer, Zugang und Belastung von Rechtsschutz für Betroffene verändern; die Quelle nennt aber noch keine Umsetzung oder messbaren Effekt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umweltbezug wird in der Quelle nicht genannt; ein möglicher indirekter Effekt wäre höchstens über beschleunigte Verwaltungsentscheidungen denkbar."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Verwaltungsgerichte sichern Kontrolle staatlichen Handelns. Änderungen bei Rechtsmitteln, Einzelrichtern und Vollstreckung betreffen demokratische Korrekturfähigkeit und Verfahrenszugang."
+            },
+            "importance": "mittel",
+            "impact_potential": "Der Entwurf kann die Dauer und Struktur von Verwaltungsverfahren verändern und damit Zugang, Kosten und Belastung der Justiz beeinflussen.",
+            "impact_risks": [
+              "Kürzere Verfahren könnten Rechtsmittelzugang und gerichtliche Kontrolle faktisch erschweren, wenn neue Hürden entstehen.",
+              "Die Ausweitung von Einzelrichterzuständigkeiten kann Effizienz erhöhen, aber auch die Fehleranfälligkeit einzelner Entscheidungen vergrößern."
+            ],
+            "mechanisms": [
+              "Änderung von Verfahrensregeln und Zuständigkeiten",
+              "frühere oder häufigere Einzelrichterzuständigkeit",
+              "neue Instrumente gegen aus Sicht des Entwurfs missbräuchliche Klagen und Anträge"
+            ],
+            "first_order": [
+              "mögliche Entlastung der Gerichte",
+              "veränderte Bearbeitungsdauer von Verfahren",
+              "mehr Streit über neue Verfahrensgrenzen"
+            ],
+            "second_order": [
+              "mögliche Verschiebung von Prozessstrategien",
+              "Einfluss auf den praktischen Rechtsschutz gegen Behörden",
+              "Anpassungsdruck bei Gerichten und Verwaltung"
+            ],
+            "third_order": [
+              "mögliche Wirkung auf die demokratische Korrekturfähigkeit staatlichen Handelns",
+              "mögliche Präzedenzwirkung für andere Verfahrensordnungen"
+            ],
+            "systemic_relevance": "Die Meldung betrifft eine Verfahrensarchitektur, über die staatliche Entscheidungen kontrolliert und korrigiert werden können.",
+            "transformation_potential": "Potenzial für eine strukturelle Veränderung der Verwaltungsgerichtsbarkeit, falls die Änderungen unverändert beschlossen und umgesetzt werden.",
+            "resilience": "Mehr Flexibilität kann die Funktionsfähigkeit der Gerichte stärken; zugleich bleibt offen, ob der Rechtsschutz gegen Fehlentscheidungen robust genug bleibt.",
+            "side_effects": [
+              "Neue Auslegungs- und Abgrenzungsfragen bei Berufung und Revision",
+              "mögliche Belastung durch umstrittene Regelungen zu Zwangsgeld und rechtsmissbräuchlichen Klagen"
+            ],
+            "uncertainties": [
+              "Die Quelle nennt nur einen Entwurf, nicht den endgültigen Beschluss.",
+              "Unklar ist, welche Änderungen Bundestag und Bundesrat am Ende durchsetzen.",
+              "Ein tatsächlicher Beschleunigungseffekt ist ex ante nicht belegt."
+            ],
+            "evidence_level": "einzelne Primärquelle mit mehreren Textstellen; keine unabhängige Bestätigung im Material",
+            "attribution": "Die Angaben stammen aus der Bundestagsmeldung und spiegeln den dort beschriebenen Entwurf sowie die Bundesratsstellungnahme wider.",
+            "watch_next": [
+              "Ob der Bundestag den Entwurf anpasst",
+              "Ob der Termin 1. Januar 2027 im Verfahren bestehen bleibt",
+              "Ob die umstrittenen Punkte zu Rechtsmitteln und Zwangsgeld geändert werden"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "democratic_correctability",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Der Entwurf ändert Verfahrensregeln für Verwaltungsgerichte und damit einen materiell relevanten Bereich staatlicher Kontrolle; zugleich nennt die Quelle konkrete Streitpunkte und einen Inkrafttretenstermin."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Inkrafttreten überwiegender Teil",
+                  "value": "1. Januar 2027",
+                  "unit": "Datum",
+                  "context": "Geplanter Termin für den überwiegenden Teil des Gesetzes"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "beschaeftigte",
+                "unternehmen",
+                "verbraucherinnen"
+              ],
+              "timeline": [
+                {
+                  "date": "2027-01-01",
+                  "label": "Überwiegender Teil soll in Kraft treten"
+                }
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-998e73bf202ee8d2-v1-claim-1",
+              "story_id": "wt-998e73bf202ee8d2",
+              "claim": "Die Bundesregierung hat einen Gesetzentwurf zur Modernisierung und Beschleunigung verwaltungsgerichtlicher Verfahren vorgelegt.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-umwelt",
+              "evidence": [
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "ccc724aca598235ee39a",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "claim_id": "wt-998e73bf202ee8d2-v1-claim-2",
+              "story_id": "wt-998e73bf202ee8d2",
+              "claim": "Der Entwurf soll die Gerichte entlasten und personelle Ressourcen flexibler einsetzen lassen.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-umwelt",
+              "evidence": [
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "b7ec0b10e5648d332bfb",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "claim_id": "wt-998e73bf202ee8d2-v1-claim-3",
+              "story_id": "wt-998e73bf202ee8d2",
+              "claim": "Der Bundesrat fordert in seiner Stellungnahme an mehreren Stellen Änderungen am Gesetzentwurf.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-umwelt",
+              "evidence": [
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "67778dd7e621110f43ca",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                },
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "4a16fb846f342d022d95",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "claim_id": "wt-998e73bf202ee8d2-v1-claim-4",
+              "story_id": "wt-998e73bf202ee8d2",
+              "claim": "Der überwiegende Teil des Gesetzes soll am 1. Januar 2027 in Kraft treten.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-umwelt",
+              "evidence": [
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "670d31640cf849da953a",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "claim_id": "wt-998e73bf202ee8d2-v1-claim-5",
+              "story_id": "wt-998e73bf202ee8d2",
+              "claim": "Unter anderem soll der Einsatz von Einzelrichtern ausgeweitet werden, und Proberichter sollen früher als bislang als Einzelrichter eingesetzt werden können.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-umwelt",
+              "evidence": [
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "06f8c07292a37d1308f9",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                },
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "e76cdef05822fa4ecc56",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            },
+            {
+              "claim_id": "wt-998e73bf202ee8d2-v1-claim-6",
+              "story_id": "wt-998e73bf202ee8d2",
+              "claim": "Die Bundesregierung will auch Regeln zu Rechtsmitteln, einstweiligem Rechtsschutz, Vollstreckung und dem Umgang mit querulatorischen Klagen ändern.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-umwelt",
+              "evidence": [
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "f25d4c7a0814773789ce",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                },
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "bb9a56e6493dc2b0631e",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                },
+                {
+                  "source_id": "bundestag-umwelt",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+                  "excerpt_hash": "21d7905da417d990c292",
+                  "checked_at": "2026-09-04T08:07:54.216Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:54.216Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundestag-umwelt",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+              "content_hash": "b44ab8b4fd9960a5a66665acb13a7fdf0e500c1f3c12f49e7e3e18e8bdc1d3b8"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T08:07:54.216Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "7aa337101f53b525977f9f7f168a300ed9c238bb2046047c88ccaa207c4f0bfa"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "66ff057c0fd3f6f0ed527396415455841254ac8b5cd8f70d3dd695bec6f1531e"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ecc685f210bc9fe0d164430c7c56ac85dbddb071ef81b9fdd098f445da02290c"
+        },
+        "source_visual": null,
+        "fingerprint": "6df78e2125b40e003b0e0035225f17db34b0eeedf0a5d609822e200b85c6545c",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-3-concrete",
+        "generated_at": "2026-09-04T08:09:14.248Z",
+        "status": "fallback",
+        "fallback_reason": "HIGGSFIELD_RUN_LIMIT",
+        "retry_after": "2026-09-04T08:24:14.248Z"
+      }
+    },
+    {
+      "story_id": "wt-743a635e023f5ff0",
+      "slug": "monheim-vom-steuerparadies-zur-schuldenhochburg-3f5ff0",
+      "title": "Monheim: vom Steuerparadies zur Schuldenhochburg",
+      "first_seen": "2026-09-04T03:06:00.000Z",
+      "last_updated": "2026-09-04T08:07:21.455Z",
+      "published_at": "2026-09-04T08:07:21.455Z",
+      "updated_at": "2026-09-04T08:07:21.455Z",
+      "topic": [
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+          "title": "Monheim: Vom Steuerparadies zur Schuldenhochburg",
+          "summary": "Monheim war mal reich. Heute sitzt die Stadt auf dem größten Schuldenberg in NRW und eröffnet eine ultrateure Konzerthalle.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:35:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5e00b6e6d7b459c86975d78a169bf2e0353e409cb161807c292cfcad4f3bda65",
+          "source_item_id": "b1f75024e44cb4822aa189ad11e89354e36d80e53966eb1e82336e61ebbab56f",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:35:40.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-743a635e023f5ff0-v1-claim-1",
+          "story_id": "wt-743a635e023f5ff0",
+          "claim": "Monheim am Rhein eröffnet den etwa 170 Millionen Euro teuren Konzertsaal Kulturraffinerie K714.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "excerpt_hash": "e3e146269d389d565eed",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:21.455Z"
+        },
+        {
+          "claim_id": "wt-743a635e023f5ff0-v1-claim-2",
+          "story_id": "wt-743a635e023f5ff0",
+          "claim": "Die Stadt hat laut Bericht die höchste Pro-Kopf-Verschuldung in NRW und befindet sich im Modus Haushaltssicherung.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "excerpt_hash": "dcb279a42646a0f4f6b4",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "excerpt_hash": "19996401c83acbe215df",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:21.455Z"
+        },
+        {
+          "claim_id": "wt-743a635e023f5ff0-v1-claim-3",
+          "story_id": "wt-743a635e023f5ff0",
+          "claim": "Im Haushaltsentwurf 2026 stehen rund 300 Millionen Euro Einnahmen rund 389 Millionen Euro Ausgaben gegenüber; das ergibt ein Minus von knapp 90 Millionen Euro.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "excerpt_hash": "0f07c45b66ab2ae2c6a0",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:21.455Z"
+        },
+        {
+          "claim_id": "wt-743a635e023f5ff0-v1-claim-4",
+          "story_id": "wt-743a635e023f5ff0",
+          "claim": "Die Stadt hatte für 2026 Gewerbesteuereinnahmen von 140 Millionen Euro eingeplant, die Prognose könnte aber um bis zu rund ein Drittel verfehlt werden.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "excerpt_hash": "4a51c444c893a4672e25",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:21.455Z"
+        },
+        {
+          "claim_id": "wt-743a635e023f5ff0-v1-claim-5",
+          "story_id": "wt-743a635e023f5ff0",
+          "claim": "Der WDR beschreibt den Wandel Monheims als Übergang vom früheren Erfolgsmodell mit niedrigen Steuern und vollen Kassen hin zu einer Schuldenhochburg mit laufenden Großprojekten.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "excerpt_hash": "a636b154b9ba1a8a8da1",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "excerpt_hash": "d904b69e6401bd97e366",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T08:07:21.455Z"
+        }
+      ],
+      "event_id": "event-e58efb35b527ea929251",
+      "event_first_seen_at": "2026-09-04T03:21:31.830Z",
+      "event_detected_at": "2026-09-04T03:21:31.830Z",
+      "verification_started_at": "2026-09-04T08:07:04.353Z",
+      "publish_ready_at": "2026-09-04T08:07:21.455Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Kulturraffinerie K714 die erwartete Auslastung und Einnahmen erreicht, ist zu beobachten.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zahl verkaufter Tickets, Buchungen und Auslastungsquote der Halle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b9e7497648c97bbe",
+          "announced_at": "2026-09-04T07:35:40.000Z",
+          "follow_up_date": "2026-09-11T08:07:21.455Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "104fd2ac96b1ff667bf3085cdb87e60cad729f9879068d9bc6c47d02b3eddfff",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Der WDR berichtet über Monheim am Rhein und die neue Kulturraffinerie K714. Die Stadt eröffnet einen etwa 170 Millionen Euro teuren Konzertsaal, der in dem Beitrag als umstrittenes Projekt beschrieben wird und als Teil einer längeren Entwicklung von Monheim dargestellt wird.\n\nZugleich heißt es, Monheim habe inzwischen die höchste Pro-Kopf-Verschuldung in NRW und befinde sich im Modus Haushaltssicherung. Für den Haushaltsentwurf 2026 werden rund 300 Millionen Euro Einnahmen und rund 389 Millionen Euro Ausgaben genannt; daraus ergibt sich ein Minus von knapp 90 Millionen Euro. Außerdem verweist der Bericht auf eine verfehlte Gewerbesteuerprognose und darauf, dass die Stadt die Halle nun stärker vermarktet.",
+      "analysis": {
+        "story_id": "wt-743a635e023f5ff0",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Monheim eröffnet die Kulturraffinerie K714, während die Stadt gleichzeitig mit hoher Verschuldung und Haushaltssicherung ringt. Der Bericht verbindet das Projekt mit einem deutlichen finanziellen Druck auf die Kommune.",
+        "detail_summary": "Gesichert ist nach der vorliegenden WDR-Darstellung, dass Monheim am Rhein die Kulturraffinerie K714 eröffnet und die Stadt zugleich unter erheblichem Haushaltsdruck steht. Der Bericht nennt eine Investition von etwa 170 Millionen Euro sowie ein Defizit von knapp 90 Millionen Euro im Haushaltsentwurf 2026. Für die Wirkungsperspektive ist das relevant, weil solche Vorhaben die kommunalen Spielräume, die Priorisierung öffentlicher Mittel und damit die finanzielle Resilienz einer Stadt berühren. Als möglicher Wirkpfad kommt hinzu, dass Ausgaben für ein Großprojekt und ausbleibende Gewerbesteuererträge die Verschuldung und die Haushaltssicherung weiter belasten können. Offen bleibt in der gelieferten Quellenlage, wie belastbar die Auslastungs- und Rückflusserwartungen für die Halle sind und ob die Stadt mittelfristig gegenzusteuern vermag. Eine unabhängige Bestätigung der Zahlen liegt in den gelieferten Materialien nicht vor.",
+        "why_relevant": "Die Meldung betrifft kommunale Finanzen, Investitionsentscheidungen und damit einen Zustand mit möglichen Folgen für Infrastruktur, Haushaltsautonomie und politische Steuerungsfähigkeit.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind kommunale Leistungen und der Handlungsspielraum für Einwohnerinnen und Beschäftigte der Stadt, aber die Reichweite bleibt lokal."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "In den Quellen gibt es keinen direkten Umwelt- oder Klimabezug; ökologische Folgen bleiben offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Haushaltssicherung und hohe Verschuldung berühren die demokratische Korrekturfähigkeit kommunaler Politik und die Verteilung öffentlicher Mittel."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Kombination aus Großprojekt, Haushaltssicherung und schwächerer Gewerbesteuer kann kommunale Ausgaben, Investitionsprioritäten und Verschuldung weiter verschieben.",
+        "impact_risks": [
+          "Weitere Belastung der kommunalen Finanzen durch Betrieb und Vermarktung der Halle",
+          "Eingeschränkter Spielraum für andere kommunale Aufgaben bei anhaltendem Defizit"
+        ],
+        "mechanisms": [
+          "Investitions- und Betriebskosten erhöhen den Finanzdruck",
+          "Sinkende Gewerbesteuer reduziert laufende Einnahmen",
+          "Haushaltssicherung verengt politische Entscheidungsspielräume"
+        ],
+        "first_order": [
+          "Eröffnung und Vermarktung der Kulturraffinerie K714",
+          "Fortgesetzter Druck auf den Haushalt 2026"
+        ],
+        "second_order": [
+          "Mögliche Kürzungs- oder Priorisierungseffekte bei anderen kommunalen Aufgaben",
+          "Erhöhte Abhängigkeit von künftigen Einnahmeentwicklungen"
+        ],
+        "third_order": [
+          "Längerfristige Verschiebung kommunaler Investitionsstrategien",
+          "Mögliche Präzedenzwirkung für den Umgang mit teuren Prestigeprojekten"
+        ],
+        "systemic_relevance": "Der Fall ist vor allem kommunal relevant; systemisch wird er dort, wo hohe Verschuldung und Großprojekte die lokale Fiskalstabilität und Prioritätensetzung dauerhaft prägen.",
+        "transformation_potential": "Allenfalls indirekt: Das Projekt könnte die kommunale Finanz- und Standortstrategie verändern, aber aus der Quelle ergibt sich noch keine transformative Wirkung.",
+        "resilience": "Niedrige bis mittlere Resilienz, weil die Stadt laut Bericht bereits unter Haushaltssicherung und hoher Verschuldung steht.",
+        "side_effects": [
+          "Öffentliche Debatten über Prioritäten und Verschuldung",
+          "Mögliche Verlagerung kommunaler Mittel zugunsten des Hallenbetriebs"
+        ],
+        "uncertainties": [
+          "Die gelieferten Quellen belegen keine unabhängige Bestätigung der Finanzzahlen",
+          "Offen bleibt, wie stark die Halle künftig ausgelastet wird",
+          "Offen bleibt, welche mittelfristigen Haushaltsmaßnahmen folgen"
+        ],
+        "evidence_level": "einzelne journalistische Quelle mit mehreren internen Belegstellen; keine unabhängige Zweitbestätigung in den gelieferten Daten",
+        "attribution": "Die zentralen Tatsachen stammen aus einem WDR-Beitrag; die wirtschaftliche Einordnung bleibt vorsichtig und ex ante.",
+        "watch_next": [
+          "Auslastung, Buchungen und Einnahmen der Kulturraffinerie beobachten",
+          "Weitere Haushaltsdaten und Gewerbesteuerprognosen der Stadt prüfen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 11, SDG 16 und SDG 17"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue, aktuelle Meldung über Eröffnung eines großen kommunalen Projekts in Verbindung mit belastetem Haushalt; lokal begrenzt, aber finanziell materiell und aktuell belegt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Kosten Kulturraffinerie K714",
+              "value": "170",
+              "unit": "Millionen Euro",
+              "context": "genannte Größenordnung des Konzertsaals",
+              "claim_id": "wt-743a635e023f5ff0-claim-01"
+            },
+            {
+              "label": "Einnahmen 2026",
+              "value": "300",
+              "unit": "Millionen Euro",
+              "context": "im Haushaltsentwurf genannte Einnahmen"
+            },
+            {
+              "label": "Ausgaben 2026",
+              "value": "389",
+              "unit": "Millionen Euro",
+              "context": "im Haushaltsentwurf genannte Ausgaben"
+            }
+          ],
+          "affected_groups": [
+            "kommunen",
+            "staat",
+            "unternehmen"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T08:07:21.455Z",
+          "content_hash": "104fd2ac96b1ff667bf3085cdb87e60cad729f9879068d9bc6c47d02b3eddfff",
+          "source_summary": "Der WDR berichtet über Monheim am Rhein und die neue Kulturraffinerie K714. Die Stadt eröffnet einen etwa 170 Millionen Euro teuren Konzertsaal, der in dem Beitrag als umstrittenes Projekt beschrieben wird und als Teil einer längeren Entwicklung von Monheim dargestellt wird.\n\nZugleich heißt es, Monheim habe inzwischen die höchste Pro-Kopf-Verschuldung in NRW und befinde sich im Modus Haushaltssicherung. Für den Haushaltsentwurf 2026 werden rund 300 Millionen Euro Einnahmen und rund 389 Millionen Euro Ausgaben genannt; daraus ergibt sich ein Minus von knapp 90 Millionen Euro. Außerdem verweist der Bericht auf eine verfehlte Gewerbesteuerprognose und darauf, dass die Stadt die Halle nun stärker vermarktet.",
+          "analysis": {
+            "story_id": "wt-743a635e023f5ff0",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Monheim eröffnet die Kulturraffinerie K714, während die Stadt gleichzeitig mit hoher Verschuldung und Haushaltssicherung ringt. Der Bericht verbindet das Projekt mit einem deutlichen finanziellen Druck auf die Kommune.",
+            "detail_summary": "Gesichert ist nach der vorliegenden WDR-Darstellung, dass Monheim am Rhein die Kulturraffinerie K714 eröffnet und die Stadt zugleich unter erheblichem Haushaltsdruck steht. Der Bericht nennt eine Investition von etwa 170 Millionen Euro sowie ein Defizit von knapp 90 Millionen Euro im Haushaltsentwurf 2026. Für die Wirkungsperspektive ist das relevant, weil solche Vorhaben die kommunalen Spielräume, die Priorisierung öffentlicher Mittel und damit die finanzielle Resilienz einer Stadt berühren. Als möglicher Wirkpfad kommt hinzu, dass Ausgaben für ein Großprojekt und ausbleibende Gewerbesteuererträge die Verschuldung und die Haushaltssicherung weiter belasten können. Offen bleibt in der gelieferten Quellenlage, wie belastbar die Auslastungs- und Rückflusserwartungen für die Halle sind und ob die Stadt mittelfristig gegenzusteuern vermag. Eine unabhängige Bestätigung der Zahlen liegt in den gelieferten Materialien nicht vor.",
+            "why_relevant": "Die Meldung betrifft kommunale Finanzen, Investitionsentscheidungen und damit einen Zustand mit möglichen Folgen für Infrastruktur, Haushaltsautonomie und politische Steuerungsfähigkeit.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind kommunale Leistungen und der Handlungsspielraum für Einwohnerinnen und Beschäftigte der Stadt, aber die Reichweite bleibt lokal."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "In den Quellen gibt es keinen direkten Umwelt- oder Klimabezug; ökologische Folgen bleiben offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Haushaltssicherung und hohe Verschuldung berühren die demokratische Korrekturfähigkeit kommunaler Politik und die Verteilung öffentlicher Mittel."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Kombination aus Großprojekt, Haushaltssicherung und schwächerer Gewerbesteuer kann kommunale Ausgaben, Investitionsprioritäten und Verschuldung weiter verschieben.",
+            "impact_risks": [
+              "Weitere Belastung der kommunalen Finanzen durch Betrieb und Vermarktung der Halle",
+              "Eingeschränkter Spielraum für andere kommunale Aufgaben bei anhaltendem Defizit"
+            ],
+            "mechanisms": [
+              "Investitions- und Betriebskosten erhöhen den Finanzdruck",
+              "Sinkende Gewerbesteuer reduziert laufende Einnahmen",
+              "Haushaltssicherung verengt politische Entscheidungsspielräume"
+            ],
+            "first_order": [
+              "Eröffnung und Vermarktung der Kulturraffinerie K714",
+              "Fortgesetzter Druck auf den Haushalt 2026"
+            ],
+            "second_order": [
+              "Mögliche Kürzungs- oder Priorisierungseffekte bei anderen kommunalen Aufgaben",
+              "Erhöhte Abhängigkeit von künftigen Einnahmeentwicklungen"
+            ],
+            "third_order": [
+              "Längerfristige Verschiebung kommunaler Investitionsstrategien",
+              "Mögliche Präzedenzwirkung für den Umgang mit teuren Prestigeprojekten"
+            ],
+            "systemic_relevance": "Der Fall ist vor allem kommunal relevant; systemisch wird er dort, wo hohe Verschuldung und Großprojekte die lokale Fiskalstabilität und Prioritätensetzung dauerhaft prägen.",
+            "transformation_potential": "Allenfalls indirekt: Das Projekt könnte die kommunale Finanz- und Standortstrategie verändern, aber aus der Quelle ergibt sich noch keine transformative Wirkung.",
+            "resilience": "Niedrige bis mittlere Resilienz, weil die Stadt laut Bericht bereits unter Haushaltssicherung und hoher Verschuldung steht.",
+            "side_effects": [
+              "Öffentliche Debatten über Prioritäten und Verschuldung",
+              "Mögliche Verlagerung kommunaler Mittel zugunsten des Hallenbetriebs"
+            ],
+            "uncertainties": [
+              "Die gelieferten Quellen belegen keine unabhängige Bestätigung der Finanzzahlen",
+              "Offen bleibt, wie stark die Halle künftig ausgelastet wird",
+              "Offen bleibt, welche mittelfristigen Haushaltsmaßnahmen folgen"
+            ],
+            "evidence_level": "einzelne journalistische Quelle mit mehreren internen Belegstellen; keine unabhängige Zweitbestätigung in den gelieferten Daten",
+            "attribution": "Die zentralen Tatsachen stammen aus einem WDR-Beitrag; die wirtschaftliche Einordnung bleibt vorsichtig und ex ante.",
+            "watch_next": [
+              "Auslastung, Buchungen und Einnahmen der Kulturraffinerie beobachten",
+              "Weitere Haushaltsdaten und Gewerbesteuerprognosen der Stadt prüfen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11, SDG 16 und SDG 17"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, aktuelle Meldung über Eröffnung eines großen kommunalen Projekts in Verbindung mit belastetem Haushalt; lokal begrenzt, aber finanziell materiell und aktuell belegt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Kosten Kulturraffinerie K714",
+                  "value": "170",
+                  "unit": "Millionen Euro",
+                  "context": "genannte Größenordnung des Konzertsaals",
+                  "claim_id": "wt-743a635e023f5ff0-claim-01"
+                },
+                {
+                  "label": "Einnahmen 2026",
+                  "value": "300",
+                  "unit": "Millionen Euro",
+                  "context": "im Haushaltsentwurf genannte Einnahmen"
+                },
+                {
+                  "label": "Ausgaben 2026",
+                  "value": "389",
+                  "unit": "Millionen Euro",
+                  "context": "im Haushaltsentwurf genannte Ausgaben"
+                }
+              ],
+              "affected_groups": [
+                "kommunen",
+                "staat",
+                "unternehmen"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-743a635e023f5ff0-v1-claim-1",
+              "story_id": "wt-743a635e023f5ff0",
+              "claim": "Monheim am Rhein eröffnet den etwa 170 Millionen Euro teuren Konzertsaal Kulturraffinerie K714.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+                  "excerpt_hash": "e3e146269d389d565eed",
+                  "checked_at": "2026-09-04T08:07:21.455Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            },
+            {
+              "claim_id": "wt-743a635e023f5ff0-v1-claim-2",
+              "story_id": "wt-743a635e023f5ff0",
+              "claim": "Die Stadt hat laut Bericht die höchste Pro-Kopf-Verschuldung in NRW und befindet sich im Modus Haushaltssicherung.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+                  "excerpt_hash": "dcb279a42646a0f4f6b4",
+                  "checked_at": "2026-09-04T08:07:21.455Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+                  "excerpt_hash": "19996401c83acbe215df",
+                  "checked_at": "2026-09-04T08:07:21.455Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            },
+            {
+              "claim_id": "wt-743a635e023f5ff0-v1-claim-3",
+              "story_id": "wt-743a635e023f5ff0",
+              "claim": "Im Haushaltsentwurf 2026 stehen rund 300 Millionen Euro Einnahmen rund 389 Millionen Euro Ausgaben gegenüber; das ergibt ein Minus von knapp 90 Millionen Euro.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+                  "excerpt_hash": "0f07c45b66ab2ae2c6a0",
+                  "checked_at": "2026-09-04T08:07:21.455Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            },
+            {
+              "claim_id": "wt-743a635e023f5ff0-v1-claim-4",
+              "story_id": "wt-743a635e023f5ff0",
+              "claim": "Die Stadt hatte für 2026 Gewerbesteuereinnahmen von 140 Millionen Euro eingeplant, die Prognose könnte aber um bis zu rund ein Drittel verfehlt werden.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+                  "excerpt_hash": "4a51c444c893a4672e25",
+                  "checked_at": "2026-09-04T08:07:21.455Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            },
+            {
+              "claim_id": "wt-743a635e023f5ff0-v1-claim-5",
+              "story_id": "wt-743a635e023f5ff0",
+              "claim": "Der WDR beschreibt den Wandel Monheims als Übergang vom früheren Erfolgsmodell mit niedrigen Steuern und vollen Kassen hin zu einer Schuldenhochburg mit laufenden Großprojekten.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+                  "excerpt_hash": "a636b154b9ba1a8a8da1",
+                  "checked_at": "2026-09-04T08:07:21.455Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+                  "excerpt_hash": "d904b69e6401bd97e366",
+                  "checked_at": "2026-09-04T08:07:21.455Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T08:07:21.455Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+              "content_hash": "5e00b6e6d7b459c86975d78a169bf2e0353e409cb161807c292cfcad4f3bda65"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T08:07:21.455Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-55d162d98f820b8b-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "87bc5bdb5c8b9c476b8f64c6431f1534e0311d9ec6c1f5f0fc12f85153f4e998"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-55d162d98f820b8b-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "849f5e9c3b412c4af639e0a840bc35762e4a5d18e6b1e9f6ce90354a38beede9"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-55d162d98f820b8b-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "26d8ff3a300277008022f749746c369925052c0bf54811d2889e0fa97d68e10f"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-32d64b80ef9ca780-source.png",
+          "sha256": "32d64b80ef9ca7803e9908a9645fcb57ce576e940b3170472819ef71bbc1f1aa",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-3-concrete",
+          "generated_at": "2026-09-04T08:08:01.020Z"
+        },
+        "fingerprint": "55d162d98f820b8ba3286a6cc20fdd97ab809b1aacce2b9b8c06207385b67393",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-3-concrete",
+        "generated_at": "2026-09-04T08:09:07.928Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-a6f6c9c60011b50c",
+      "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+      "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+      "first_seen": "2026-09-04T07:59:00.000Z",
+      "last_updated": "2026-09-04T07:59:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+          "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+          "summary": "Nach dem Bekennerschreiben an die taz gehen die Angriffe auf Umspannwerke weiter – jetzt in Dormagen. Die Polizei fahndet nach einem Gevelsberger. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:59:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7a24f109aae1edc09705e29df404e58bb1a2103f61c4d94f1f7ee9dd7390d817",
+          "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:59:00.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a6f6c9c60011b50c-claim-01",
+          "story_id": "wt-a6f6c9c60011b50c",
+          "claim": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.: Nach dem Bekennerschreiben an die taz gehen die Angriffe auf Umspannwerke weiter – jetzt in Dormagen. Die Polizei fahndet nach einem Gevelsberger. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:06:19.579Z"
+        }
+      ],
+      "content_hash": "770b2c364768100354dcb42a5a8ab2295f60fb70282eea76f3c58218343dc17e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T08:06:19.579Z",
+      "event_detected_at": "2026-09-04T08:06:19.579Z",
+      "event_id": "event-6371f2b9c6843f8218bf",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 7.326316666666667,
+        "detection_delay_minutes": 7.326316666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T08:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d4d0ce54df4f5107",
+      "slug": "dave-bautista-wird-zum-kriegsgott-muskelpaket-fur-god-of-war-4f5107",
+      "title": "Dave Bautista wird zum Kriegsgott: Muskelpaket für „God of War“",
+      "first_seen": "2026-09-04T07:55:00.000Z",
+      "last_updated": "2026-09-04T07:55:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/kultur/dave-bautista-wird-zum-kriegsgott--muskelpaket-fuer--god-of-war--38207144.html",
+          "title": "Dave Bautista wird zum Kriegsgott: Muskelpaket für „God of War“",
+          "summary": "Dave Bautista bringt sich für „God of War“ in Form. Für seine Rolle als Kratos legt der ehemalige Wrestler ordentlich Muskelmasse zu.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:55:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c2d4e54b1b03680a1cb9220f9fd9dfc8cf2deb5f26565cac9e2b9b7720e7c3f4",
+          "source_item_id": "7f965e0f9dbbf4acb29043a3b54743a3d75b8e5a4e256fd8ba5d9a857be7c35f",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:55:00.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d4d0ce54df4f5107-claim-01",
+          "story_id": "wt-d4d0ce54df4f5107",
+          "claim": "Dave Bautista wird zum Kriegsgott: Muskelpaket für „God of War“: Dave Bautista bringt sich für „God of War“ in Form. Für seine Rolle als Kratos legt der ehemalige Wrestler ordentlich Muskelmasse zu.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:06:19.579Z"
+        }
+      ],
+      "content_hash": "8f91423d246f0367390b1a196d91507da3156321767ca199e4a76fa0e044da9f",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T08:06:19.579Z",
+      "event_detected_at": "2026-09-04T08:06:19.579Z",
+      "event_id": "event-0688bd9b6907a326f593",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.326316666666667,
+        "detection_delay_minutes": 11.326316666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T08:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-6f2f2b0581efa74d",
+      "slug": "arbeit-der-mietrechtskommission-efa74d",
+      "title": "Arbeit der Mietrechtskommission",
+      "first_seen": "2026-09-04T07:54:00.000Z",
+      "last_updated": "2026-09-04T07:54:00.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-umwelt",
+          "publisher": "Deutscher Bundestag – Umwelt und Klimaschutz",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210186",
+          "title": "Arbeit der Mietrechtskommission",
+          "summary": "Recht und Verbraucherschutz/Antwort Die Bundesregierung äußert sich nicht zu den Inhalten der laufenden Beratungen der Expertinnen- und Expertengruppe Mietrecht, wie sie auf Anfrage der Grünen antwortet.",
+          "source_type": "official_rss",
+          "published_at": null,
+          "primary_source": true,
+          "source_priority": 90,
+          "source_topic": "Klima",
+          "content_hash": "07a05be4f835f6d7ca0f031828172d888ee71d20ef547da9d9c0c90252c472f3",
+          "source_item_id": "740270e5341d3f7b13fbffa9ffcc00c87b7606ed5ddb7ad2e3e1d0d0b68fba23",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": null,
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6f2f2b0581efa74d-claim-01",
+          "story_id": "wt-6f2f2b0581efa74d",
+          "claim": "Arbeit der Mietrechtskommission: Recht und Verbraucherschutz/Antwort Die Bundesregierung äußert sich nicht zu den Inhalten der laufenden Beratungen der Expertinnen- und Expertengruppe Mietrecht, wie sie auf Anfrage der Grünen antwortet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "bundestag-umwelt",
+          "source_function": "institutional_statement",
+          "status": "primary_source_claim",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:06:19.579Z"
+        }
+      ],
+      "content_hash": "b75fef4e1c00479e68a14a44d3be33ff1ce8c17bbebc554d9ff54107cf4dc37a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T08:06:19.579Z",
+      "event_detected_at": "2026-09-04T08:06:19.579Z",
+      "event_id": "event-3c69bb3f02a5fb35f363",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": null,
+        "detection_delay_minutes": null,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": null,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T08:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-5072789df611867b",
+      "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
+      "title": "Sachsen-Anhalt und die Tücken der Umfragen",
+      "first_seen": "2026-09-04T06:45:02.000Z",
+      "last_updated": "2026-09-04T07:49:00.000Z",
+      "topic": [
+        "Demokratie",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "title": "Sachsen-Anhalt und die Tücken der Umfragen",
+          "summary": "In Sachsen-Anhalt lagen die Umfragen 2021 ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Ein Blick auf die Faktoren, die am Sonntag no…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:45:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "03e8d6c604c55aab678d3e381528d8797e9e5dfbd666aec6c98fceae85b97074",
+          "source_item_id": "b20e8384202485f599911824807c6f1d09686974f856574883fb91e1a0504055",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:45:02.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--wer-in-den-umfragen-vor-der-landtagswahl-vorn-liegt-37619250.html",
+          "title": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da",
+          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:49:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b5c7279a12e92642d41f50cb20db9b1f07aeb97648cc37c4ddcce51021b7287b",
+          "source_item_id": "b685840711361e7155168098ae07f781d58099499e4fc1b1a32efef2a503c254",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:49:00.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+          "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+          "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:06:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+          "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:06:15.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5072789df611867b-claim-01",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Sachsen-Anhalt und die Tücken der Umfragen: In Sachsen-Anhalt lagen die Umfragen 2021 ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Ein Blick auf die Faktoren, die am Sonntag no…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-02",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:06:19.579Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-03",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt: Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:06:19.579Z"
+        }
+      ],
+      "content_hash": "249f380a73c37c2f37985872281e0cb00ae2dd78859d76bc346f521591d8193d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.326316666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 74.607,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T08:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-0b8cfd825a4706f0",
+      "slug": "trump-presses-supreme-court-to-curb-mail-voting-as-ballots-begin-reaching-americans-4706f0",
+      "title": "Trump presses Supreme Court to curb mail voting as ballots begin reaching Americans",
+      "first_seen": "2026-09-04T07:43:06.000Z",
+      "last_updated": "2026-09-04T07:43:06.000Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "euronews-en",
+          "publisher": "Euronews",
+          "url": "http://www.euronews.com/2026/09/04/trump-presses-supreme-court-to-curb-mail-voting-as-ballots-begin-reaching-americans",
+          "title": "Trump presses Supreme Court to curb mail voting as ballots begin reaching Americans",
+          "summary": "A federal judge's ruling that compliance was \"practically impossible,\" paired with a whistleblower's warning that millions of ballots could go undelivered, has thrown the run-up to a pivotal midterm vote into legal disarray.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:43:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Europa",
+          "content_hash": "2d725c8a6868a54dc8c88368e2a6d41630b396ad978b9a0939d5e62fa2a7ea01",
+          "source_item_id": "db083929a1b36f2b1c80e3068d9ce397a31ad46ce83c764bb6c7f948566ebcda",
+          "publisher_id": "euronews",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "EU",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:43:06.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:euronews",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0b8cfd825a4706f0-claim-01",
+          "story_id": "wt-0b8cfd825a4706f0",
+          "claim": "Trump presses Supreme Court to curb mail voting as ballots begin reaching Americans: A federal judge's ruling that compliance was \"practically impossible,\" paired with a whistleblower's warning that millions of ballots could go undelivered, has thrown the run-up to a pivotal midterm vote into legal disarray.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "euronews-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:euronews",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:06:19.579Z"
+        }
+      ],
+      "content_hash": "1b4d5cd1ef25b67831c1f9e985cc21b055d8adfe15ec54a4a4873e03b6a7d4dd",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:06:19.579Z",
+      "event_first_seen_at": "2026-09-04T08:06:19.579Z",
+      "event_detected_at": "2026-09-04T08:06:19.579Z",
+      "event_id": "event-2472ed975016370db701",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa"
+        ],
+        "dimensions": [],
+        "status": "beschlossen",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 23.226316666666666,
+        "detection_delay_minutes": 23.226316666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:06:19.579Z",
+      "rejection": {
+        "at": "2026-09-04T08:06:19.579Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-ef8a2f218302b98a",
       "slug": "hausbrand-durch-explosion-brand-in-chemnitz-mieter-tatverdachtig-und-leicht-verletzt-02b98a",
@@ -970,131 +2872,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-5072789df611867b",
-      "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
-      "title": "Sachsen-Anhalt und die Tücken der Umfragen",
-      "first_seen": "2026-09-04T06:45:02.000Z",
-      "last_updated": "2026-09-04T06:45:02.000Z",
-      "topic": [
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
-          "title": "Sachsen-Anhalt und die Tücken der Umfragen",
-          "summary": "In Sachsen-Anhalt lagen die Umfragen 2021 ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Ein Blick auf die Faktoren, die am Sonntag no…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T06:45:02.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "03e8d6c604c55aab678d3e381528d8797e9e5dfbd666aec6c98fceae85b97074",
-          "source_item_id": "b20e8384202485f599911824807c6f1d09686974f856574883fb91e1a0504055",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T06:45:02.000Z",
-          "ingested_at": "2026-09-04T06:51:43.159Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-5072789df611867b-claim-01",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Sachsen-Anhalt und die Tücken der Umfragen: In Sachsen-Anhalt lagen die Umfragen 2021 ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Ein Blick auf die Faktoren, die am Sonntag no…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:51:43.159Z"
-        }
-      ],
-      "content_hash": "ade3345642d625e4dae4f8a77ff5b8a7048b6f799549d8e6fe44a91101d4e8fc",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T06:51:43.159Z",
-      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
-      "event_detected_at": "2026-09-04T06:51:43.159Z",
-      "event_id": "event-2a2bd81ddd672bb6a3a8",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.685983333333334,
-        "detection_delay_minutes": 6.685983333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T06:51:43.159Z",
-      "rejection": {
-        "at": "2026-09-04T06:51:43.159Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -15299,133 +17076,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-743a635e023f5ff0",
-      "slug": "monheim-vom-steuerparadies-zur-schuldenhochburg-3f5ff0",
-      "title": "Monheim: vom Steuerparadies zur Schuldenhochburg",
-      "first_seen": "2026-09-04T03:06:00.000Z",
-      "last_updated": "2026-09-04T03:06:00.000Z",
-      "topic": [
-        "Geopolitik",
-        "Finanzen"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
-          "title": "Monheim: vom Steuerparadies zur Schuldenhochburg",
-          "summary": "Monheim war mal reich. Heute sitzt die Stadt auf dem größten Schuldenberg in NRW und eröffnet eine ultrateure Konzerthalle.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T03:06:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "0777b70e4cd2cb44c2028530874eeaf5c07b61b18fa9bd36f2312ecf9b1fbc64",
-          "source_item_id": "b1f75024e44cb4822aa189ad11e89354e36d80e53966eb1e82336e61ebbab56f",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T03:06:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-743a635e023f5ff0-claim-01",
-          "story_id": "wt-743a635e023f5ff0",
-          "claim": "Monheim: vom Steuerparadies zur Schuldenhochburg: Monheim war mal reich. Heute sitzt die Stadt auf dem größten Schuldenberg in NRW und eröffnet eine ultrateure Konzerthalle.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:36:28.411Z"
-        }
-      ],
-      "content_hash": "a271c7ccc5329c77042057df003a424be1b8310ebb0903bfbaeae9a59d2b090d",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T03:36:28.411Z",
-      "event_first_seen_at": "2026-09-04T03:21:31.830Z",
-      "event_detected_at": "2026-09-04T03:21:31.830Z",
-      "event_id": "event-e58efb35b527ea929251",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Finanzen"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "implementation"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung finanzieller Anreize und Kapitalflüsse"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 30.473516666666665,
-        "detection_delay_minutes": 15.5305,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 14.943016666666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 94,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T03:36:28.411Z",
-      "rejection": {
-        "at": "2026-09-04T03:36:28.411Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -46386,5 +48036,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T06:51:43.159Z"
+  "public_updated_at": "2026-09-04T08:06:19.579Z"
 }

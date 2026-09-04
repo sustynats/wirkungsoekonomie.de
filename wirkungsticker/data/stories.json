@@ -1,7 +1,242 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T06:51:43.159Z",
+  "updated_at": "2026-09-04T08:06:19.579Z",
   "stories": [
+    {
+      "story_id": "wt-998e73bf202ee8d2",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "verwaltungsgerichtsverfahren-sollen-schneller-werden-2ee8d2",
+      "title": "Verwaltungsgerichtsverfahren sollen schneller werden",
+      "source_summary": "Die Bundestagsmeldung beschreibt einen Gesetzentwurf der Bundesregierung zur Modernisierung und Beschleunigung verwaltungsgerichtlicher Verfahren. Nach Angaben des Textes sollen die Gerichte entlastet und personelle Ressourcen flexibler eingesetzt werden können. Vorgesehen sind Änderungen unter anderem bei Zuständigkeiten, Rechtsmitteln, einstweiligem Rechtsschutz, Vollstreckung und sonstigen Prozessrechtsfragen.\n\nDer Entwurf sieht außerdem vor, den Einsatz von Einzelrichtern auszuweiten und Proberichter früher als bisher als Einzelrichter einzusetzen. Als weiterer Termin nennt der Text den 1. Januar 2027 für den überwiegenden Teil des Gesetzes. Der Bundesrat fordert in seiner Stellungnahme mehrere Änderungen, etwa bei Berufung und Revision sowie beim Umgang mit Zwangsgeld und Experimentierklauseln; die Bundesregierung hält an Teilen des Entwurfs fest.",
+      "summary": "Die Bundesregierung hat einen Gesetzentwurf zur schnelleren Verwaltungsgerichtsbarkeit vorgelegt. Der Bundesrat verlangt dazu Änderungen an mehreren Punkten.",
+      "detail_summary": "Gesichert ist zunächst nur ein Entwurf: Die Bundesregierung will verwaltungsgerichtliche Verfahren modernisieren und beschleunigen, während der Bundesrat mehrere Änderungen verlangt. Materiell ist das, weil der Text Eingriffe in Verfahrensregeln, Zuständigkeiten und Rechtsmittel beschreibt und damit die Spielregeln staatlicher Streitbeilegung verändert. Der Wirkpfad verläuft über kürzere oder anders strukturierte Verfahren, flexiblere Personaleinsätze und neue Instrumente gegen aus Sicht des Entwurfs aussichtslose oder rechtsmissbräuchliche Anträge. Mögliche Folgen sind schnellere Entscheidungen, aber auch neue Abgrenzungsfragen und Streit über den Zugriff auf Rechtsmittel oder Einzelrichter. Für Mensch und Demokratie ist das relevant, weil Verwaltungsgerichte staatliches Handeln kontrollieren; für Planet ist aus der Quelle selbst kein direkter Bezug ersichtlich. Offen bleibt, wie der Bundestag den Entwurf verändert und ob die angekündigte Beschleunigung später tatsächlich eintritt.",
+      "why_relevant": "Der Entwurf betrifft die Regeln für den Zugang zu und die Geschwindigkeit von Verwaltungsgerichtsverfahren und damit einen zentralen Teil staatlicher Kontrolle und Rechtsschutzorganisation.",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Verfahrensregeln können Dauer, Zugang und Belastung von Rechtsschutz für Betroffene verändern; die Quelle nennt aber noch keine Umsetzung oder messbaren Effekt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug wird in der Quelle nicht genannt; ein möglicher indirekter Effekt wäre höchstens über beschleunigte Verwaltungsentscheidungen denkbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Verwaltungsgerichte sichern Kontrolle staatlichen Handelns. Änderungen bei Rechtsmitteln, Einzelrichtern und Vollstreckung betreffen demokratische Korrekturfähigkeit und Verfahrenszugang."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Inkrafttreten überwiegender Teil",
+            "value": "1. Januar 2027",
+            "unit": "Datum",
+            "context": "Geplanter Termin für den überwiegenden Teil des Gesetzes"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "beschaeftigte",
+          "unternehmen",
+          "verbraucherinnen"
+        ],
+        "timeline": [
+          {
+            "date": "2027-01-01",
+            "label": "Überwiegender Teil soll in Kraft treten"
+          }
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T07:54:00.000Z",
+      "last_updated": "2026-09-04T08:07:54.216Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-9e64e7ea13cdf3b32ec3",
+      "source_published_at": "2026-09-04T07:54:00.000Z",
+      "published_at": "2026-09-04T08:07:54.216Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-umwelt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form der Bundestag den Entwurf nach der Bundesrat-Stellungnahme ändert.",
+          "source_id": "bundestag-umwelt",
+          "expected_by": null,
+          "measurable_indicator": "Vorlage einer geänderten Fassung oder eines Beschlusses im weiteren Verfahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d38c57b2b7a6c3f7",
+          "announced_at": null,
+          "follow_up_date": "2026-09-11T08:07:54.216Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag – Umwelt und Klimaschutz",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
+          "source_type": "official_rss",
+          "published_at": null,
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-743a635e023f5ff0",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-55d162d98f820b8b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-55d162d98f820b8b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-55d162d98f820b8b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "monheim-vom-steuerparadies-zur-schuldenhochburg-3f5ff0",
+      "title": "Monheim: vom Steuerparadies zur Schuldenhochburg",
+      "source_summary": "Der WDR berichtet über Monheim am Rhein und die neue Kulturraffinerie K714. Die Stadt eröffnet einen etwa 170 Millionen Euro teuren Konzertsaal, der in dem Beitrag als umstrittenes Projekt beschrieben wird und als Teil einer längeren Entwicklung von Monheim dargestellt wird.\n\nZugleich heißt es, Monheim habe inzwischen die höchste Pro-Kopf-Verschuldung in NRW und befinde sich im Modus Haushaltssicherung. Für den Haushaltsentwurf 2026 werden rund 300 Millionen Euro Einnahmen und rund 389 Millionen Euro Ausgaben genannt; daraus ergibt sich ein Minus von knapp 90 Millionen Euro. Außerdem verweist der Bericht auf eine verfehlte Gewerbesteuerprognose und darauf, dass die Stadt die Halle nun stärker vermarktet.",
+      "summary": "Monheim eröffnet die Kulturraffinerie K714, während die Stadt gleichzeitig mit hoher Verschuldung und Haushaltssicherung ringt. Der Bericht verbindet das Projekt mit einem deutlichen finanziellen Druck auf die Kommune.",
+      "detail_summary": "Gesichert ist nach der vorliegenden WDR-Darstellung, dass Monheim am Rhein die Kulturraffinerie K714 eröffnet und die Stadt zugleich unter erheblichem Haushaltsdruck steht. Der Bericht nennt eine Investition von etwa 170 Millionen Euro sowie ein Defizit von knapp 90 Millionen Euro im Haushaltsentwurf 2026. Für die Wirkungsperspektive ist das relevant, weil solche Vorhaben die kommunalen Spielräume, die Priorisierung öffentlicher Mittel und damit die finanzielle Resilienz einer Stadt berühren. Als möglicher Wirkpfad kommt hinzu, dass Ausgaben für ein Großprojekt und ausbleibende Gewerbesteuererträge die Verschuldung und die Haushaltssicherung weiter belasten können. Offen bleibt in der gelieferten Quellenlage, wie belastbar die Auslastungs- und Rückflusserwartungen für die Halle sind und ob die Stadt mittelfristig gegenzusteuern vermag. Eine unabhängige Bestätigung der Zahlen liegt in den gelieferten Materialien nicht vor.",
+      "why_relevant": "Die Meldung betrifft kommunale Finanzen, Investitionsentscheidungen und damit einen Zustand mit möglichen Folgen für Infrastruktur, Haushaltsautonomie und politische Steuerungsfähigkeit.",
+      "topic": [
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind kommunale Leistungen und der Handlungsspielraum für Einwohnerinnen und Beschäftigte der Stadt, aber die Reichweite bleibt lokal."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "In den Quellen gibt es keinen direkten Umwelt- oder Klimabezug; ökologische Folgen bleiben offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Haushaltssicherung und hohe Verschuldung berühren die demokratische Korrekturfähigkeit kommunaler Politik und die Verteilung öffentlicher Mittel."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Kosten Kulturraffinerie K714",
+            "value": "170",
+            "unit": "Millionen Euro",
+            "context": "genannte Größenordnung des Konzertsaals"
+          },
+          {
+            "label": "Einnahmen 2026",
+            "value": "300",
+            "unit": "Millionen Euro",
+            "context": "im Haushaltsentwurf genannte Einnahmen"
+          },
+          {
+            "label": "Ausgaben 2026",
+            "value": "389",
+            "unit": "Millionen Euro",
+            "context": "im Haushaltsentwurf genannte Ausgaben"
+          }
+        ],
+        "affected_groups": [
+          "kommunen",
+          "staat",
+          "unternehmen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T03:06:00.000Z",
+      "last_updated": "2026-09-04T08:07:21.455Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e58efb35b527ea929251",
+      "source_published_at": "2026-09-04T07:35:40.000Z",
+      "published_at": "2026-09-04T08:07:21.455Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Kulturraffinerie K714 die erwartete Auslastung und Einnahmen erreicht, ist zu beobachten.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zahl verkaufter Tickets, Buchungen und Auslastungsquote der Halle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b9e7497648c97bbe",
+          "announced_at": "2026-09-04T07:35:40.000Z",
+          "follow_up_date": "2026-09-11T08:07:21.455Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:35:40.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-293fa4edfc2b5a5d",
       "title_image": {
