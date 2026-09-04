@@ -198,6 +198,10 @@ test("OCR rejects generated labels and cannot silently pass without its checker"
   await assert.rejects(checkEditorialAsset("/unused",{run:async()=>({stdout:tsv})}),{code:"IMAGE_CONTAINS_TEXT"});
   await assert.rejects(checkEditorialAsset("/unused",{run:async()=>{throw new Error();}}),{code:"IMAGE_QUALITY_CHECK_UNAVAILABLE"});
   assert.equal((await checkEditorialAsset("/unused",{run:async()=>({stdout:header})})).status,"passed");
+  await checkEditorialAsset("/unused",{run:async(_cmd,_args,options)=>{
+    assert.equal(options.timeout,30000); assert.equal(options.env.OMP_THREAD_LIMIT,"1");
+    return {stdout:header};
+  }});
 });
 
 test("ambiguous sparse OCR requires block confirmation and remains fail-closed", async()=>{

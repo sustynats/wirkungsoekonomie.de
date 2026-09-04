@@ -137,6 +137,9 @@ denselben Auftrag wiederaufgenommen. Oracle führt einen separaten Journalpfad j
 Story/Promptrevision und archiviert den bisherigen Datensatz vor der Promotion.
 Die normale Pipeline bestellt bei einem bloßen Promptupdate weiterhin keine
 Ersatzmotive. Tages-/Monatslimits gelten auch für diesen einmaligen Backfill.
+Im bestehenden Workflow startet `title_images_refresh_editorial=true` diesen
+opt-in Pfad; Standard bleibt false. Die OCR hat für detailreiche Fotos pro Pass
+30 Sekunden und einen OpenMP-Thread auf der Micro-VM; Regeln/Schwellen unverändert.
 
 Referenzen: Originale und Titelbilder unter Release-Tag `wirkungsticker-media-YYYY-MM`;
 Dateinamen enthalten Story-ID, Hash/Fingerprint und Ausgabeformat. Keine Überschreibung:
