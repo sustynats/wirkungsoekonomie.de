@@ -15468,7 +15468,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-dad0642fc6ee28b03f8a",
+      "event_id": "event-73b1c53517b0e2f5118c",
       "first_seen_at": "2026-09-03T22:21:17.010Z"
     },
     "4494a851cc549f6a58fd6ecdf93e30343d2fa21e88637bed81402a8760a32636": {
@@ -69043,16 +69043,19 @@
         "public_relevance": "mittel",
         "topics": [
           "Gesellschaft",
-          "Politik"
+          "Energie",
+          "Demokratie"
         ],
-        "dimensions": [],
+        "dimensions": [
+          "Demokratie"
+        ],
         "status": "laufende Entwicklung",
         "analysis_type": "ex_ante",
         "news_value_signals": [],
         "context_formats": [],
         "context_only": false,
         "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
         ],
         "materiality_factors": [
           "Zahl und Art möglicher Wirkungsempfänger",
@@ -92750,7 +92753,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-dad0642fc6ee28b03f8a",
+      "event_id": "event-73b1c53517b0e2f5118c",
       "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
       "source_id": "wdr-nachrichten",
       "role": "journalistic_report"
@@ -146616,7 +146619,249 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die Meldung wiederholt die bereits publizierte Information zum geplanten Ende des Registers; aus den gelieferten Daten ergibt sich keine materiell neue Entwicklung gegenüber dem vorhandenen Zwischenstand."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-4fb94d2cebfca746",
+      "event_id": "event-73b1c53517b0e2f5118c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
+      ],
+      "rationale": "Neuer Kern ist die Verdichtung auf ein mögliches Sabotagedelikt mit Fahndung; wegen ungesicherter Primärlage bleibt die Berichterstattung vorsichtig."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-76dd7f8508f81c11",
+      "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Die Kernaussage stützt sich nur auf eine journalistische Quelle desselben Verlags; für die streitige Jury-Blockade fehlt ein Originalbeleg oder unabhängige Bestätigung."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-d175d26e4635ba0a",
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen den bereits veröffentlichten Stand: Parkeröffnung und geplante Klimaelemente, ohne neue belastbare Entwicklung oder zusätzliche Evidenz."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-e442d6ad81290406",
+      "event_id": "event-83becedad84b8b907cdf",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Meldung liefert neue, quantifizierte Hinweise zu einem schweren Kinderschutzrisiko im Netz. Trotz nur einer sekundären Quelle ist der Sachverhalt materiell und nicht bloß kontextuell."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-9e8076042f86f06d",
+      "event_id": "event-56233210d0bf06531c2d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt den bereits veröffentlichten Kern ohne neue belastbare Tatsachen oder substanziell bessere Evidenz."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-e976be74e6481ea2",
+      "event_id": "event-06fbdda38e40a97f5340",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Zustimmung zu einem konzernweiten Sparpaket mit rund 50.000 Stellenabbau ist materiell; unabhängige Primärbelege fehlen jedoch in den Ausschnitten."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-743a635e023f5ff0",
+      "event_id": "event-e58efb35b527ea929251",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Quelle liegt vor; die zentralen Finanz- und Wirkungsbehauptungen sind nicht unabhängig bestätigt."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-6267bf5562aa70a6",
+      "event_id": "event-993d57cff20b05016759",
+      "decision": "held_or_rejected",
+      "errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Die neue Lage ist die Wiederaufnahme des regulären Betriebs nach einer konkreten Sicherheitsstörung; das ist gegenüber der Erstmeldung ein materieller Update-Kern."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-63b6c057c20a2143",
+      "event_id": "event-f10c5b35a0961de9aa6c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Akte wiederholt im Kern die bereits veröffentlichte Meldung zur Eröffnung von AISI Deutschland; es liegen keine neuen belastbaren Fakten oder eine materiell neue Einordnung vor."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-f596cd293d0aa8ac",
+      "event_id": "event-04fa654345f6b9b3f3b6",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre France-24-Meldung liegt vor; die Kernzahl und die Lagebeschreibung sind nicht unabhängig bestätigt."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-b9487671699d6c9b",
+      "event_id": "event-4cc141e5db1bd8368571",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen im Kern bereits publizierte Angaben zu zwei Bekennerschreiben und offenen Ermittlungsfragen; keine materiell neue, belastbar belegte Entwicklung."
+    },
+    {
+      "at": "2026-09-04T10:54:54.941Z",
+      "story_id": "wt-6a7145e6dc679f95",
+      "event_id": "event-49e6ddd9913a3803a948",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_UNSUPPORTED_NUMBER:10"
+      ],
+      "rationale": "Neue politische Finanzierungsankündigung mit konkreten Beträgen, Laufzeit und Zielgruppen; allerdings nur eine journalistische Quelle im Datensatz."
     }
   ],
-  "updated_at": "2026-09-04T10:42:21.689Z"
+  "updated_at": "2026-09-04T10:54:54.941Z"
 }
