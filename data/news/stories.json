@@ -1,7 +1,452 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T16:36:15.855Z",
+  "updated_at": "2026-09-04T16:51:42.103Z",
   "stories": [
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "first_seen": "2026-09-04T15:15:00.000Z",
+      "last_updated": "2026-09-04T16:49:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "title": "Stromnetz-Sabotage: Polizei fahndet weiter nach Verdächtigem",
+          "summary": "Die Polizei fahndet nach Angriffen auf das Stromnetz weiter nach einem Verdächtigen. Das Fahrzeug des 48-Jährigen wurde gestürmt. In seiner Wohnung wurde Sprengstoff gefunden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "82d333c3063f54a55613b6ff6e5d0a2f90264b2345e0cfaa6a71934e2c145fa4",
+          "source_item_id": "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:49:00.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-60f4e4d7d43fad99-claim-01",
+          "story_id": "wt-60f4e4d7d43fad99",
+          "claim": "Stromnetz-Sabotage: Polizei fahndet weiter nach Verdächtigem: Die Polizei fahndet nach Angriffen auf das Stromnetz weiter nach einem Verdächtigen. Das Fahrzeug des 48-Jährigen wurde gestürmt. In seiner Wohnung wurde Sprengstoff gefunden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T16:51:42.103Z"
+        }
+      ],
+      "content_hash": "9bd7bacd100a1aa3cb1d883767935dfd12b557c736770c2099a40541f3fe896a",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_PROVIDER_ERROR:429"
+      ],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
+      "versions": [],
+      "updated_at": "2026-09-04T16:51:42.103Z",
+      "event_first_seen_at": "2026-09-04T15:21:35.641Z",
+      "event_detected_at": "2026-09-04T15:21:35.641Z",
+      "event_id": "event-b1327260d95e2af32735",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 2.7017166666666665,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 90.1077,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      }
+    },
+    {
+      "story_id": "wt-d4ea36d47045ac56",
+      "slug": "umspannwerk-wieder-angriff-auf-stromnetz-bekennerbrief-gibt-hinweise-45ac56",
+      "title": "Umspannwerk: Wieder Angriff auf Stromnetz – Bekennerbrief gibt Hinweise",
+      "first_seen": "2026-09-04T12:10:00.000Z",
+      "last_updated": "2026-09-04T16:40:00.000Z",
+      "topic": [
+        "Energie",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-nach-erneutem-angriff-auf-stromnetzgibt-bekennerbrief-hinweise/100251404.html",
+          "title": "Umspannwerk: SEK stürmt Fahrzeug – Sabotage-Verdächtiger flüchtig",
+          "summary": "Sabotageversuche gegen das deutsche Stromnetz sorgen für Aufsehen, es gibt Bekennerschreiben. Das Fahrzeug des Verfassers hat die Polizei gefunden – doch er selbst ist flüchtig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:40:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "5132c0dd215ec917a0a056cfa968cc4b828a0ec0677272ab11414ddd8df91001",
+          "source_item_id": "c6424187af7169b015e9204abd93abb5c95daac29f3252a8481997eba91def29",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:40:00.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-europaweite-ermittlungen-16015959.html",
+          "title": "Europaweite Ermittlungen: Wieder Angriff auf Stromnetz - Bekennerbrief gibt Hinweise",
+          "summary": "Die Reihe von Attacken auf die Energieversorgung in Deutschland setzt sich fort. Nun liefert ein Bekennerschreiben den Ermittlern womöglich neue Hinweise. Beamte untersuchen ein weiteres Umspannwerk.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d152afb6c03171407aa9674ca810269fd8b78418377b2b1354353cbaec4ec294",
+          "source_item_id": "3e41309d148d465daa631e69769ae2b9982a5635eae7d17e3b1b95faaf5f76f0",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T21:03:08.000Z",
+          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-stromversorgung-16015959.html",
+          "title": "Stromversorgung: Reul: SEK stürmt Fahrzeug des Sabotage-Verdächtigen",
+          "summary": "Sabotageversuche gegen das deutsche Stromnetz sorgen für Aufsehen, es gibt Bekennerschreiben. Das Fahrzeug des Verfassers hat die Polizei gefunden - doch er selbst ist flüchtig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "f2689a14e938cd5b68639efcd2f9e02bbf8b93584e6a67b8cb6fdf8a2d680e9f",
+          "source_item_id": "a201fb08435def7014c8903406975050b4ab39d3394e3914866e300049e0580b",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T21:03:08.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d4ea36d47045ac56-claim-01",
+          "story_id": "wt-d4ea36d47045ac56",
+          "claim": "Umspannwerk: SEK stürmt Fahrzeug – Sabotage-Verdächtiger flüchtig: Sabotageversuche gegen das deutsche Stromnetz sorgen für Aufsehen, es gibt Bekennerschreiben. Das Fahrzeug des Verfassers hat die Polizei gefunden – doch er selbst ist flüchtig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T16:51:42.103Z"
+        },
+        {
+          "claim_id": "wt-d4ea36d47045ac56-claim-02",
+          "story_id": "wt-d4ea36d47045ac56",
+          "claim": "Europaweite Ermittlungen: Wieder Angriff auf Stromnetz - Bekennerbrief gibt Hinweise: Die Reihe von Attacken auf die Energieversorgung in Deutschland setzt sich fort. Nun liefert ein Bekennerschreiben den Ermittlern womöglich neue Hinweise. Beamte untersuchen ein weiteres Umspannwerk.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T16:51:42.103Z"
+        },
+        {
+          "claim_id": "wt-d4ea36d47045ac56-claim-03",
+          "story_id": "wt-d4ea36d47045ac56",
+          "claim": "Stromversorgung: Reul: SEK stürmt Fahrzeug des Sabotage-Verdächtigen: Sabotageversuche gegen das deutsche Stromnetz sorgen für Aufsehen, es gibt Bekennerschreiben. Das Fahrzeug des Verfassers hat die Polizei gefunden - doch er selbst ist flüchtig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T16:51:42.103Z"
+        }
+      ],
+      "content_hash": "a5a55f9cac801f5d781d78e008fb3b412829b92e8260846f7efbac29d6f9164e",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_PROVIDER_ERROR:429"
+      ],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
+      "versions": [],
+      "updated_at": "2026-09-04T16:51:42.103Z",
+      "event_first_seen_at": "2026-09-04T12:21:52.190Z",
+      "event_detected_at": "2026-09-04T12:21:52.190Z",
+      "event_id": "event-90b12381b9937fff51f6",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 86,
+        "public_relevance": "sehr hoch",
+        "topics": [
+          "Energie",
+          "Europa"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.701716666666666,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 269.83188333333334,
+        "target_publication_minutes": 30,
+        "news_freshness_score": 90,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      }
+    },
+    {
+      "story_id": "wt-a6f6c9c60011b50c",
+      "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+      "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+      "first_seen": "2026-09-04T07:59:00.000Z",
+      "last_updated": "2026-09-04T16:34:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+          "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
+          "summary": "Die Polizei fahndet nach dem Gevelsberger Daniel V. Sein LKW wird am Hambacher Forst entdeckt. Er hatte ein Bekennerschreiben an die taz geschickt. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "42161c0e907ca11494093c2b8c13f700ffd6e31c38591d64a38055c80f4331ec",
+          "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:34:00.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a6f6c9c60011b50c-claim-01",
+          "story_id": "wt-a6f6c9c60011b50c",
+          "claim": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst: Die Polizei fahndet nach dem Gevelsberger Daniel V. Sein LKW wird am Hambacher Forst entdeckt. Er hatte ein Bekennerschreiben an die taz geschickt. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T16:51:42.103Z"
+        }
+      ],
+      "content_hash": "5e388d325727c4a5f8d826769daf79bed87d6486a5a224092818a05e8091f47a",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_PROVIDER_ERROR:429"
+      ],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
+      "versions": [],
+      "updated_at": "2026-09-04T16:51:42.103Z",
+      "event_first_seen_at": "2026-09-04T08:06:19.579Z",
+      "event_detected_at": "2026-09-04T08:06:19.579Z",
+      "event_id": "event-6371f2b9c6843f8218bf",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.701716666666666,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 525.3754,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      }
+    },
     {
       "story_id": "wt-0b6279d05f195d31",
       "slug": "us-unternehmen-schaffen-im-august-mehr-arbeitsplatze-195d31",
@@ -905,6 +1350,199 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T16:23:54.103Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-04T16:51:42.103Z",
+        "content_hash": "533497256b0048f6b60ffd03a63c68fd2bc4eab4acc401ff8585fca9ebfde07f",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+            "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:14:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "27a10c129ad67426b4443f2e18e9e6c4e59712a179a01b2bf2cb7d191d920cb9",
+            "source_item_id": "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:14:15.000Z",
+            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet",
+            "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:23:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "4440c8f23589bad133f2f82bb08dc0fa0e976a5c4df2c8bb6ec3a96e48cd36ac",
+            "source_item_id": "4b388f5bd255ac527b57ddf41bbea1bb995154f2ee025fd2218e3c6df64bf251",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:23:25.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false
+      }
+    },
+    {
+      "story_id": "wt-100a725dc688d970",
+      "slug": "berlin-hacker-veroffentlichen-offenbar-mehr-als-eine-million-daten-88d970",
+      "title": "Berlin: Hacker veröffentlichen offenbar mehr als eine Million Daten",
+      "first_seen": "2026-09-04T16:19:00.000Z",
+      "last_updated": "2026-09-04T16:19:00.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/netzwelt/berlin-hacker-veroeffentlichen-offenbar-mehr-als-eine-million-daten-a-25fd53b1-c525-42f7-a6f1-0137569bbdb8",
+          "title": "Berlin: Hacker veröffentlichen offenbar mehr als eine Million Daten",
+          "summary": "Die Hackergruppe Rhysida forderte rund zwei Millionen Euro Lösegeld von Berlin nach einem Angriff auf dessen Landesverwaltung. Der Senat zahlte nicht. Nun machen die Hacker ihre Drohung wahr.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:19:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "2780fb6c646e7c5f29fa79774d9b21ec89c9b2c4480c7a9486402138e0805b7b",
+          "source_item_id": "3945a605e0cb6d9577c7c5f315dfc35132806657fa8376696a49eb429cc72b8d",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:19:00.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-100a725dc688d970-claim-01",
+          "story_id": "wt-100a725dc688d970",
+          "claim": "Berlin: Hacker veröffentlichen offenbar mehr als eine Million Daten: Die Hackergruppe Rhysida forderte rund zwei Millionen Euro Lösegeld von Berlin nach einem Angriff auf dessen Landesverwaltung. Der Senat zahlte nicht. Nun machen die Hacker ihre Drohung wahr.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T16:51:42.103Z"
+        }
+      ],
+      "content_hash": "dd7c976abc559b26d2bbbfb460b410842cae24413ac4c90caaf486e4f0cce828",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_PROVIDER_ERROR:429"
+      ],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
+      "versions": [],
+      "updated_at": "2026-09-04T16:51:42.103Z",
+      "event_first_seen_at": "2026-09-04T16:51:42.103Z",
+      "event_detected_at": "2026-09-04T16:51:42.103Z",
+      "event_id": "event-5bc6f6cd877cbb8442a8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung",
+          "Europa"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 32.70171666666667,
+        "detection_delay_minutes": 32.70171666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
       }
     },
     {
@@ -1085,6 +1723,119 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
+      }
+    },
+    {
+      "story_id": "wt-a5874ae28ed5533f",
+      "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+      "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+      "first_seen": "2026-09-04T16:15:33.000Z",
+      "last_updated": "2026-09-04T16:15:33.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+          "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:15:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
+          "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:15:33.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a5874ae28ed5533f-claim-01",
+          "story_id": "wt-a5874ae28ed5533f",
+          "claim": "Liveticker - SEK-Zugriff bei Hambacher Forst: Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T16:51:42.103Z"
+        }
+      ],
+      "content_hash": "2ef5011a85ae9675f0a9bf0f8cd312bdd32653a492c414cfcbdece8f044c3901",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_PROVIDER_ERROR:429"
+      ],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
+      "versions": [],
+      "updated_at": "2026-09-04T16:51:42.103Z",
+      "event_first_seen_at": "2026-09-04T16:51:42.103Z",
+      "event_detected_at": "2026-09-04T16:51:42.103Z",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 36.151716666666665,
+        "detection_delay_minutes": 36.151716666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 92,
+        "freshness_warning": null
       }
     },
     {
@@ -4231,10 +4982,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-1",
-        "fingerprint": "1ef3e19884eab950f7d77938a49847df149d798a4fe7db11ec629b5fa3b1412d",
-        "checked_at": "2026-09-04T16:21:44.537Z",
+        "fingerprint": "a0f0351aa5f4def6b53a447ce62d2f967ef74d98e50f7c15832117f8db7e0759",
+        "checked_at": "2026-09-04T16:51:42.103Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-04T22:21:44.537Z",
+        "expires_at": "2026-09-04T22:51:42.103Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -4800,6 +5551,216 @@
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:06:00.000Z",
             "ingested_at": "2026-09-04T16:21:44.537Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210532",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:50:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "eeb47a8281361d9b6a8d1cdced82137dd10edb398761c585a95fb2140baeb5da",
+            "source_item_id": "2319c968ddcb7ee5db82366fab8af464474d89152094cfeb4410107c091b2b19",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:50:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210526",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:48:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "ef18b35e4c5b8393254f7f89fe939b35aa41ee056b35ef3360750c39f2b84807",
+            "source_item_id": "b273e5c2909a8485167acf8bdbe0cc91e26867146a90175504432352bc6c2586",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:48:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210520",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:46:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "9ec22df5e0764063353aad5f99ca71d6c898d32570ff7cac5d967c6241a49c0b",
+            "source_item_id": "e2fa921e1407a4ff456c2c2410e9d0bc3368b7e6bc834b75fe2e213ff9900f4f",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:46:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210514",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:44:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "ece015bba68046dcbc0e6425bcb05d812d2d7ed95442fce78b8ffedc2051bd09",
+            "source_item_id": "f3b2637f24767bddcbb102c8b26c3b7969b8dee54c79c9cd758e9a28ecd1ea0e",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:44:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210508",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:42:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "50cfc5e0d07b847ee28d21f5ebd2a7a359109937a1bba9096e8cacb2e0e2850b",
+            "source_item_id": "11347d27b7d8a6b9951c4ba91706bf65cb645096536dfd32356096ab9afcddb3",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:42:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210502",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:40:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "df80bfe6fef17fc34b2b59b99538918c0d873a371f17011f68be26ba8bff3c72",
+            "source_item_id": "3c8b51b7ba31dab3959bd5c6bdc0551b985ddd21460c47dffea609f3fc33c9f6",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:40:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210496",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:38:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "fa9e9878eb03900df0d80baf9333cf749bb37e305f1e181f916e2ab9e3fdf37a",
+            "source_item_id": "0bfef8bb2d2627437cfdc139cea93aaf0dbc3670970289419ed66d13db4238c6",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:38:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -4810,7 +5771,7 @@
       },
       "pending_update": {
         "detected_at": "2026-09-04T16:21:44.537Z",
-        "content_hash": "07e8db7ee83ed372860a6352dcc99692e77196d95b89dd1b8807b85eae57465a",
+        "content_hash": "e6649cbf49e2b0a1b65d7f54f40783a172533497ee5fad72f29ab1773a41d86b",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -5376,6 +6337,216 @@
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:06:00.000Z",
             "ingested_at": "2026-09-04T16:21:44.537Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210532",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:50:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "eeb47a8281361d9b6a8d1cdced82137dd10edb398761c585a95fb2140baeb5da",
+            "source_item_id": "2319c968ddcb7ee5db82366fab8af464474d89152094cfeb4410107c091b2b19",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:50:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210526",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:48:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "ef18b35e4c5b8393254f7f89fe939b35aa41ee056b35ef3360750c39f2b84807",
+            "source_item_id": "b273e5c2909a8485167acf8bdbe0cc91e26867146a90175504432352bc6c2586",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:48:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210520",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:46:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "9ec22df5e0764063353aad5f99ca71d6c898d32570ff7cac5d967c6241a49c0b",
+            "source_item_id": "e2fa921e1407a4ff456c2c2410e9d0bc3368b7e6bc834b75fe2e213ff9900f4f",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:46:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210514",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:44:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "ece015bba68046dcbc0e6425bcb05d812d2d7ed95442fce78b8ffedc2051bd09",
+            "source_item_id": "f3b2637f24767bddcbb102c8b26c3b7969b8dee54c79c9cd758e9a28ecd1ea0e",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:44:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210508",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:42:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "50cfc5e0d07b847ee28d21f5ebd2a7a359109937a1bba9096e8cacb2e0e2850b",
+            "source_item_id": "11347d27b7d8a6b9951c4ba91706bf65cb645096536dfd32356096ab9afcddb3",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:42:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210502",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:40:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "df80bfe6fef17fc34b2b59b99538918c0d873a371f17011f68be26ba8bff3c72",
+            "source_item_id": "3c8b51b7ba31dab3959bd5c6bdc0551b985ddd21460c47dffea609f3fc33c9f6",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:40:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag – Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210496",
+            "title": "Anhörung zur Änderung des Düngegesetzes",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-04T16:38:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "fa9e9878eb03900df0d80baf9333cf749bb37e305f1e181f916e2ab9e3fdf37a",
+            "source_item_id": "0bfef8bb2d2627437cfdc139cea93aaf0dbc3670970289419ed66d13db4238c6",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:38:00.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -6190,6 +7361,82 @@
             }
           }
         ]
+      },
+      "pending_update": {
+        "detected_at": "2026-09-04T16:51:42.103Z",
+        "content_hash": "b3a275f1ecdaf740b891729aa4f3ae87e288e316615f7a118b2ab423ff8d5ccf",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+            "summary": "Nach mehreren Sabotageangriffen auf die Energieversorgung in Deutschland fahndet die Polizei nach einem Tatverdächtigen aus Gevelsberg in Nordrhein-Westfalen. Die Ermittler gehen davon aus, dass der 48-Jährige Bekennerschreiben verfasst hat. Die Briefe waren bei deutschen Medienhäusern eingegangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:00:54.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "76dff11372510d0aac6766c66db5f93e4e9d7bc0ea3caf4dd95200d1f53619b0",
+            "source_item_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:00:54.000Z",
+            "ingested_at": "2026-09-04T16:06:43.902Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-fahndung-laeuft-100.html",
+            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - Fahndung läuft",
+            "summary": "Nach mehreren Sabotageangriffen auf die Energieversorgung in Deutschland fahndet die Polizei nach einem Tatverdächtigen aus Gevelsberg in Nordrhein-Westfalen. Die Ermittler gehen davon aus, dass der 48-Jährige Bekennerschreiben verfasst hat. Die Briefe waren bei deutschen Medienhäusern eingegangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:23:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "b7dc1ee5945358ebafb68bdbec9ce2928da7205abf70cde122de7b8d78af9eca",
+            "source_item_id": "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:23:25.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false
       }
     },
     {
@@ -6226,7 +7473,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T15:51:00.000Z",
-          "ingested_at": "2026-09-04T16:21:44.537Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
           "provenance": {
             "origin": "publisher:zdfheute",
             "basis": "publisher_only_origin_unverified",
@@ -6253,7 +7500,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:36:15.855Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         }
       ],
       "content_hash": "121682896139e42e4e1a839bd16b5827099ebff1398c37d127dbac2d114fcb50",
@@ -6267,7 +7514,7 @@
       "fresh": true,
       "pending_reason": "AI_PROVIDER_UNAVAILABLE",
       "versions": [],
-      "updated_at": "2026-09-04T16:36:15.855Z",
+      "updated_at": "2026-09-04T16:51:42.103Z",
       "event_first_seen_at": "2026-09-04T16:06:43.902Z",
       "event_detected_at": "2026-09-04T16:06:43.902Z",
       "event_id": "event-5b61a239f0b60c85ee69",
@@ -6295,13 +7542,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 45.26425,
+        "source_age_minutes": 60.70171666666667,
         "detection_delay_minutes": 15.7317,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.53255,
+        "queue_age_minutes": 44.970016666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 87,
         "freshness_warning": null
       }
     },
@@ -11148,129 +12395,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-      "first_seen": "2026-09-04T15:15:00.000Z",
-      "last_updated": "2026-09-04T15:15:00.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
-          "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-          "summary": "Derzeit sorgen Sabotageversuche in mehreren Bundesländern für Aufsehen. Bundesinnenminister Dobrindt (CSU) und NRW-Innenminister Reul (CDU) sprechen dazu bei einer Pressekonferenz.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T15:15:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "5233c00e48df41c7f3f0d1c6236cde7f57ccefe68f23746b28e6de94bf4c5b61",
-          "source_item_id": "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T15:15:00.000Z",
-          "ingested_at": "2026-09-04T15:21:35.641Z",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-60f4e4d7d43fad99-claim-01",
-          "story_id": "wt-60f4e4d7d43fad99",
-          "claim": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul: Derzeit sorgen Sabotageversuche in mehreren Bundesländern für Aufsehen. Bundesinnenminister Dobrindt (CSU) und NRW-Innenminister Reul (CDU) sprechen dazu bei einer Pressekonferenz.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "zdfheute-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T15:21:35.641Z"
-        }
-      ],
-      "content_hash": "6457c44bd01be0e3522276e2d95b49304aa27c8b98231ceceb5ca23d98890a73",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T15:21:35.641Z",
-      "event_first_seen_at": "2026-09-04T15:21:35.641Z",
-      "event_detected_at": "2026-09-04T15:21:35.641Z",
-      "event_id": "event-b1327260d95e2af32735",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.594016666666667,
-        "detection_delay_minutes": 6.594016666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T15:21:35.641Z",
-      "rejection": {
-        "at": "2026-09-04T15:21:35.641Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -18462,7 +19586,7 @@
             "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
             "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T16:14:15.000Z",
+            "published_at": "2026-09-04T16:23:25.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -18478,8 +19602,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:14:15.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "source_published_at": "2026-09-04T16:23:25.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -21623,182 +22747,6 @@
       }
     },
     {
-      "story_id": "wt-d4ea36d47045ac56",
-      "slug": "umspannwerk-wieder-angriff-auf-stromnetz-bekennerbrief-gibt-hinweise-45ac56",
-      "title": "Umspannwerk: Wieder Angriff auf Stromnetz – Bekennerbrief gibt Hinweise",
-      "first_seen": "2026-09-04T12:10:00.000Z",
-      "last_updated": "2026-09-04T12:10:00.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-nach-erneutem-angriff-auf-stromnetzgibt-bekennerbrief-hinweise/100251404.html",
-          "title": "Umspannwerk: Wieder Angriff auf Stromnetz – Bekennerbrief gibt Hinweise",
-          "summary": "Die Reihe von Attacken auf die Energieversorgung in Deutschland setzt sich fort. Nun liefert ein Bekennerschreiben den Ermittlern womöglich neue Hinweise.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T12:10:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "790067dec406bfb1d46d0c80085114c133f897b81d7a799d4bb32b64138016e9",
-          "source_item_id": "c6424187af7169b015e9204abd93abb5c95daac29f3252a8481997eba91def29",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:10:00.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-europaweite-ermittlungen-16015959.html",
-          "title": "Europaweite Ermittlungen: Wieder Angriff auf Stromnetz - Bekennerbrief gibt Hinweise",
-          "summary": "Die Reihe von Attacken auf die Energieversorgung in Deutschland setzt sich fort. Nun liefert ein Bekennerschreiben den Ermittlern womöglich neue Hinweise. Beamte untersuchen ein weiteres Umspannwerk.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:03:08.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d152afb6c03171407aa9674ca810269fd8b78418377b2b1354353cbaec4ec294",
-          "source_item_id": "3e41309d148d465daa631e69769ae2b9982a5635eae7d17e3b1b95faaf5f76f0",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T21:03:08.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-d4ea36d47045ac56-claim-01",
-          "story_id": "wt-d4ea36d47045ac56",
-          "claim": "Umspannwerk: Wieder Angriff auf Stromnetz – Bekennerbrief gibt Hinweise: Die Reihe von Attacken auf die Energieversorgung in Deutschland setzt sich fort. Nun liefert ein Bekennerschreiben den Ermittlern womöglich neue Hinweise.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-d4ea36d47045ac56-claim-02",
-          "story_id": "wt-d4ea36d47045ac56",
-          "claim": "Europaweite Ermittlungen: Wieder Angriff auf Stromnetz - Bekennerbrief gibt Hinweise: Die Reihe von Attacken auf die Energieversorgung in Deutschland setzt sich fort. Nun liefert ein Bekennerschreiben den Ermittlern womöglich neue Hinweise. Beamte untersuchen ein weiteres Umspannwerk.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        }
-      ],
-      "content_hash": "3e0a81e295db56b7eab28be4302b7c08d8195bfcb7b5c3d5e34c5987e65cdefa",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T12:21:52.190Z",
-      "event_first_seen_at": "2026-09-04T12:21:52.190Z",
-      "event_detected_at": "2026-09-04T12:21:52.190Z",
-      "event_id": "event-90b12381b9937fff51f6",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 76,
-        "public_relevance": "sehr hoch",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 11.869833333333334,
-        "detection_delay_minutes": 11.869833333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 30,
-        "news_freshness_score": 90,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T12:21:52.190Z",
-      "rejection": {
-        "at": "2026-09-04T12:21:52.190Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-00fccb632042b492",
       "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
       "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
@@ -23730,10 +24678,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -39321,7 +40267,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T06:45:02.000Z",
-          "ingested_at": "2026-09-04T16:21:44.537Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -39383,7 +40329,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T07:06:15.000Z",
-          "ingested_at": "2026-09-04T16:21:44.537Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
           "provenance": {
             "origin": "publisher:ndr",
             "basis": "publisher_only_origin_unverified",
@@ -39428,7 +40374,7 @@
           "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T16:14:15.000Z",
+          "published_at": "2026-09-04T16:23:25.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -39444,8 +40390,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T16:14:15.000Z",
-          "ingested_at": "2026-09-04T16:21:44.537Z",
+          "source_published_at": "2026-09-04T16:23:25.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -39459,7 +40405,7 @@
           "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T16:14:15.000Z",
+          "published_at": "2026-09-04T16:23:25.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -39475,8 +40421,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T16:14:15.000Z",
-          "ingested_at": "2026-09-04T16:21:44.537Z",
+          "source_published_at": "2026-09-04T16:23:25.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -39490,7 +40436,7 @@
           "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
           "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T16:14:15.000Z",
+          "published_at": "2026-09-04T16:23:25.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -39506,8 +40452,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T16:14:15.000Z",
-          "ingested_at": "2026-09-04T16:21:44.537Z",
+          "source_published_at": "2026-09-04T16:23:25.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -39596,7 +40542,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -39616,7 +40562,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -39636,7 +40582,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -39656,7 +40602,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -39676,7 +40622,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -39696,7 +40642,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -39716,7 +40662,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -39736,7 +40682,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -39756,19 +40702,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:51:42.103Z"
         }
       ],
       "content_hash": "8f889a609ff8374b84a48072a22ecd35f06957dd36d78d5ce0752fe3bc3509c0",
       "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
+        "AI_PROVIDER_ERROR:429"
       ],
+      "quality_retry_count": 0,
+      "reassessment": false,
       "fresh": true,
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
       "versions": [],
-      "updated_at": "2026-09-04T16:21:44.537Z",
+      "updated_at": "2026-09-04T16:51:42.103Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -39802,26 +40750,14 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7.492283333333333,
+        "source_age_minutes": 28.28505,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 570.0229666666667,
+        "queue_age_minutes": 599.9824,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 94,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T16:21:44.537Z",
-      "rejection": {
-        "at": "2026-09-04T16:21:44.537Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
       }
     },
     {
@@ -40970,7 +41906,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -41681,129 +42617,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-a6f6c9c60011b50c",
-      "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
-      "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
-      "first_seen": "2026-09-04T07:59:00.000Z",
-      "last_updated": "2026-09-04T07:59:00.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "taz-aktuell",
-          "publisher": "taz",
-          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
-          "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
-          "summary": "Nach dem Bekennerschreiben an die taz gehen die Angriffe auf Umspannwerke weiter – jetzt in Dormagen. Die Polizei fahndet nach einem Gevelsberger. mehr...",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:59:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "7a24f109aae1edc09705e29df404e58bb1a2103f61c4d94f1f7ee9dd7390d817",
-          "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
-          "publisher_id": "taz",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T07:59:00.000Z",
-          "ingested_at": "2026-09-04T08:06:19.579Z",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a6f6c9c60011b50c-claim-01",
-          "story_id": "wt-a6f6c9c60011b50c",
-          "claim": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.: Nach dem Bekennerschreiben an die taz gehen die Angriffe auf Umspannwerke weiter – jetzt in Dormagen. Die Polizei fahndet nach einem Gevelsberger. mehr...",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "taz-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T08:06:19.579Z"
-        }
-      ],
-      "content_hash": "770b2c364768100354dcb42a5a8ab2295f60fb70282eea76f3c58218343dc17e",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T08:06:19.579Z",
-      "event_first_seen_at": "2026-09-04T08:06:19.579Z",
-      "event_detected_at": "2026-09-04T08:06:19.579Z",
-      "event_id": "event-6371f2b9c6843f8218bf",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 7.326316666666667,
-        "detection_delay_minutes": 7.326316666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T08:06:19.579Z",
-      "rejection": {
-        "at": "2026-09-04T08:06:19.579Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -43130,7 +43943,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -43138,10 +43951,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -48004,7 +48815,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -48012,10 +48823,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -49491,7 +50300,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -49499,10 +50308,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -51360,7 +52167,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -53006,10 +53813,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -53672,10 +54477,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -54320,10 +55123,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -55154,10 +55955,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
