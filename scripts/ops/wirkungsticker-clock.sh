@@ -27,8 +27,10 @@ if [[ "${WOEK_CLOCK_FORCE:-false}" != "true" ]]; then
     "https://raw.githubusercontent.com/sustynats/wirkungsoekonomie.de/main/reports/wirkungsticker-latest-run.json?check=$clock_now" \
     | node -e 'let s="";process.stdin.on("data",x=>s+=x);process.stdin.on("end",()=>{try{const d=JSON.parse(s);const t=Date.parse(d.started_at);console.log(Number.isFinite(t)?Math.floor(t/1000):0)}catch{console.log(0)}})' || echo 0)"
   if [[ "$clock_last_attempt" =~ ^[0-9]+$ ]] && (( clock_now - clock_last_attempt < 12 * 60 )); then
-    echo "Recent Wirkungsticker run; Oracle reserve stays idle."
-    exit 0
+    # A fresh importer report must not suppress independent availability checks.
+    # This branch starts only the monitor, never another paid news analysis.
+    clock_branch="codex/ops-monitor-clock"
+    echo "Recent Wirkungsticker run; wake monitoring only."
   fi
 fi
 
@@ -44,4 +46,4 @@ clock_commit="$(printf 'chore: Oracle Wirkungsticker wake-up %s\n' "$(date -u +%
   | git --git-dir="$clock_repo" commit-tree "$clock_tree" -p "$clock_parent")"
 git --git-dir="$clock_repo" push --quiet origin "$clock_commit:refs/heads/$clock_branch"
 printf '%s\n' "$clock_now" > "$clock_state"
-echo "Oracle Wirkungsticker wake-up pushed: $clock_commit"
+echo "Oracle wake-up pushed to $clock_branch: $clock_commit"
