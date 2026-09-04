@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "incidents": {
-    "run": {
-      "firstSeen": "2026-09-04T08:53:45.319Z",
-      "active": true
+  "incidents": {},
+  "outbox": [
+    {
+      "id": "af905f182be793b4d04ef71c",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-04T09:20:48.150Z"
     },
-    "provider": {
-      "firstSeen": "2026-09-04T08:53:45.319Z",
-      "active": true
+    {
+      "id": "d941386f944f174e4799b2fe",
+      "content": "✓ WÖk-Störung behoben\nKI-Verarbeitung\nPrüfung: 2026-09-04T09:20:48.150Z"
     }
-  },
-  "outbox": [],
+  ],
   "dailyDate": "2026-09-04"
 }
