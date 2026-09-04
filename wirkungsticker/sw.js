@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260903-1";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260904-order1";
 const NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1";
 const NEWS_STATE_URL = "/wirkungsticker/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-wirkungsticker-updates";
@@ -12,6 +12,9 @@ const APP_SHELL = [
   "/assets/js/main.js",
   "/assets/js/news.js",
   "/assets/js/news-pwa.js",
+  "/assets/js/news-install.js",
+  "/assets/js/news-share.js",
+  "/assets/js/news-navigation.js",
   "/assets/img/brand/favicon.svg",
   "/assets/img/brand/apple-touch-icon.png",
   "/assets/img/brand/app-icon-192.png",
@@ -34,7 +37,7 @@ self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") {
     self.skipWaiting();
   } else if (event.data?.type === "NEWS_NOTIFICATIONS_ENABLE") {
-    event.waitUntil(writeNewsState({ enabled: true, lastKnown: event.data.latest || null }));
+    event.waitUntil(writeNewsState({ enabled: true, lastKnown: event.data.latest || null, unreadCount: 0 }));
   } else if (event.data?.type === "NEWS_NOTIFICATIONS_DISABLE") {
     event.waitUntil(disableNewsNotifications());
   } else if (event.data?.type === "NEWS_MARK_SEEN") {
@@ -44,6 +47,16 @@ self.addEventListener("message", (event) => {
 
 self.addEventListener("periodicsync", (event) => {
   if (event.tag === NEWS_NOTIFICATION_TAG) event.waitUntil(checkForNewsUpdates());
+});
+
+self.addEventListener("push", (event) => {
+  let publication = {};
+  try {
+    publication = event.data?.json?.() || {};
+  } catch {
+    publication = {};
+  }
+  event.waitUntil(checkForNewsUpdates(publication));
 });
 
 self.addEventListener("notificationclick", (event) => {
@@ -78,7 +91,7 @@ self.addEventListener("fetch", (event) => {
 async function networkFirst(request) {
   const cache = await caches.open(CACHE_NAME);
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: "no-store" });
     if (response.ok) await cache.put(request, response.clone());
     return response;
   } catch {
@@ -109,37 +122,80 @@ async function writeNewsState(state) {
 
 async function updateNewsLastKnown(latest) {
   const state = await readNewsState();
-  await writeNewsState({ ...state, lastKnown: latest });
-}
-
-async function disableNewsNotifications() {
-  await writeNewsState({ enabled: false, lastKnown: null });
+  await writeNewsState({ ...state, lastKnown: latest, unreadCount: 0 });
   const notifications = await self.registration.getNotifications({ tag: NEWS_NOTIFICATION_TAG }).catch(() => []);
   notifications.forEach((notification) => notification.close());
   if ("clearAppBadge" in self.navigator) await self.navigator.clearAppBadge().catch(() => undefined);
 }
 
-async function checkForNewsUpdates() {
+async function disableNewsNotifications() {
+  await writeNewsState({ enabled: false, lastKnown: null, unreadCount: 0 });
+  const notifications = await self.registration.getNotifications({ tag: NEWS_NOTIFICATION_TAG }).catch(() => []);
+  notifications.forEach((notification) => notification.close());
+  if ("clearAppBadge" in self.navigator) await self.navigator.clearAppBadge().catch(() => undefined);
+}
+
+async function checkForNewsUpdates(fallbackPublication = {}) {
   const state = await readNewsState();
   if (!state.enabled) return;
-  const response = await fetch(`/wirkungsticker/feed.json?check=${Date.now()}`, { cache: "no-store" });
-  if (!response.ok) return;
-  const feed = await response.json();
+  let feed;
+  try {
+    const response = await fetch(`/wirkungsticker/feed.json?check=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error("NEWS_FEED_UNAVAILABLE");
+    feed = await response.json();
+  } catch {
+    await showFallbackPush(state, fallbackPublication);
+    return;
+  }
   const previous = Date.parse(state.lastKnown || 0);
+  const unreadCount = Math.max(0, Number(state.unreadCount) || 0);
   const updates = (feed.items || []).filter((item) => Date.parse(item.date_modified || item.date_published || 0) > previous);
   const latest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
   if (!previous) {
-    await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : null });
+    await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : null, unreadCount: 0 });
     return;
   }
   if (!updates.length) return;
-  await self.registration.showNotification("Neue Wirkungsnachrichten", {
-    body: `${updates.length} ${updates.length === 1 ? "neue Wirkungsnachricht ist" : "neue Wirkungsnachrichten sind"} verfügbar.`,
+  const totalUnread = unreadCount + updates.length;
+  const targetUrl = updates.length === 1 && updates[0]?.url
+    ? new URL(updates[0].url).pathname
+    : "/wirkungsticker/?source=notification";
+  await showNewsNotification(totalUnread, targetUrl);
+  await writeNewsState({
+    enabled: true,
+    lastKnown: latest ? new Date(latest).toISOString() : state.lastKnown,
+    unreadCount: totalUnread,
+    lastPushPublicationId: fallbackPublication.publicationId || state.lastPushPublicationId || null,
+  });
+}
+
+async function showFallbackPush(state, publication) {
+  if (!publication?.publicationId || publication.publicationId === state.lastPushPublicationId) return;
+  const totalUnread = Math.max(0, Number(state.unreadCount) || 0) + 1;
+  const targetUrl = typeof publication.url === "string" && publication.url.startsWith("https://wirkungsoekonomie.de/wirkungsticker/")
+    ? new URL(publication.url).pathname
+    : "/wirkungsticker/?source=notification";
+  await showNewsNotification(totalUnread, targetUrl, publication.title);
+  const publishedAt = Date.parse(publication.publishedAt || 0);
+  const previous = Date.parse(state.lastKnown || 0);
+  await writeNewsState({
+    ...state,
+    lastKnown: Number.isFinite(publishedAt)
+      ? new Date(Math.max(publishedAt, Number.isFinite(previous) ? previous : 0)).toISOString()
+      : state.lastKnown,
+    unreadCount: totalUnread,
+    lastPushPublicationId: publication.publicationId,
+  });
+}
+
+async function showNewsNotification(totalUnread, targetUrl, title = "") {
+  await self.registration.showNotification("Neue Wirkungsnachricht", {
+    body: title || `${totalUnread} ${totalUnread === 1 ? "ungelesene Wirkungsnachricht ist" : "ungelesene Wirkungsnachrichten sind"} verfügbar.`,
     icon: "/assets/img/brand/app-icon-192.png",
     badge: "/assets/img/brand/app-icon-192.png",
     tag: NEWS_NOTIFICATION_TAG,
-    data: { url: "/wirkungsticker/?source=notification" },
+    renotify: true,
+    data: { url: targetUrl },
   });
-  if ("setAppBadge" in self.navigator) await self.navigator.setAppBadge(updates.length).catch(() => undefined);
-  await writeNewsState({ enabled: true, lastKnown: latest ? new Date(latest).toISOString() : state.lastKnown });
+  if ("setAppBadge" in self.navigator) await self.navigator.setAppBadge(totalUnread).catch(() => undefined);
 }

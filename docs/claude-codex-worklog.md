@@ -7,6 +7,68 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+### 2026-09-04 · Codex · Lebende Akten, Bestandsdubletten und Themenverweise
+- **Aktenzuordnung:** Bekannte Dokumente werden vor unbekannten Batch-Clustern aufgelöst. Dokument-IDs überstehen geänderte Publisher-Slugs; konkrete Orts-/Gegenstandsgrenzen verhindern reine Themenfusionen. Automatische hochsichere Konsolidierung läuft vor KI und Retry.
+- **Bestand:** Drei ältere Dormagen-Meldungen und eine Jänschwalde-Meldung transparent archiviert und mit den fortgeführten Akten verlinkt. Keine historischen Inhalte, Belege oder Versionen gelöscht; Quellvereinigung wird erneut geprüft. Keine künstlich neuen Nachrichten-/Versionsdaten.
+- **Lesen:** Höchstens fünf konkrete Themenverweise pro Detailseite, keine Auffüllung durch bloße Rubrikgleichheit, keine Archiv-/Selbstverweise. Mobile/desktop Browserkontrolle und Leseweg über Themenlinks bestanden.
+- **QS:** 164 News-Tests grün, darunter headless Konsolidierung/Retry, Orts- und Ländertrennung, URL-Aliase, historische Erhaltung und nächste Versionspublikation. Gleichheit von Akteuren oder Gericht allein ist kein Themenverweis. Eine separate Feed-/Seitenrevision aktualisiert auch archivierte Auswahllisten, ohne neue Nachrichten oder Push zu erfinden. News-Build, Validierung, Suchindex und Taxonomie lokal geprüft; PR-/Live-Abnahme folgen.
+- **Betrieb:** `docs/ops/WIRKUNGSTICKER-LIVING-FILES.md`. Kein Vercel-Build: erneutes Kostengate rot (vier Slots verbraucht). Akademie-Analytics bleibt separat offen, keine neue Datenerhebung und keine Umgehung des Budgets.
+
+## 2026-09-03
+
+### 2026-09-04 · Codex · Bildabnahme und halbtransparenter MPD-Overlay (PR #348)
+- **Abnahme:** Neun freigegebene Bestandsmotive genau einmal mit Nano Banana Pro angefragt (18 Credits reserviert). Sechs konkrete Motive nach Hash-, OCR- und Sichtprüfung übernommen. Zwei Anbieterfehler bleiben ohne neue kostenpflichtige Wiederholung; ein Motiv mit erfundenen Beschriftungen wurde zusätzlich manuell gesperrt. Bei diesen drei Akten bleibt das bisherige Original erhalten; private Journale/Originale sind gesichert.
+- **Overlay:** Alle neun aktuellen Editorials in OG/Wide/Square mit `woek-title-3-glass` neu gerendert: Panel 62 % deckend, Hintergrund 38 % sichtbar, Beschriftung und Meter vollständig deckend. Die sechs freigegebenen Originale wurden lokal wiederverwendet, keine zweite Generierungsrunde. Unveränderliche Medien liegen in GitHub Releases.
+- **Oracle:** Adapter und konkrete Promptvorgaben ausgerollt, OCR auf einen Thread und 30 Sekunden je Durchgang begrenzt; Qualitätsanforderungen unverändert. Backup `backups-title-20260904-CTsfZ6/adapter-before.tgz`, Healthcheck 200, unberechtigter Bildaufruf 403. Temporäre SSH-Regel nach Wartung entfernt, übrige Netzwerkregeln unverändert. Ein 502 während des Neustarts blieb als degradierter Nachrichtenlauf mit erhaltener Queue sichtbar; kein stiller Erfolgsstatus.
+- **Geprüft:** 152 News-Tests und echte PNG-Sichtprüfung. Finale Main-Synchronisierung, PR-/Pages-Gates und öffentliche Release-Verifikation folgen. Keine Änderung an Quellenfiltern, KI-/Credit-Limits oder Vercel.
+
+### 2026-09-04 · Codex · Freigegebene Erneuerung vorhandener Symbolbilder
+- **Auftrag:** Nach ausdrücklicher Nutzerfreigabe bestehende abstrakte Motive durch konkrete, nachrichtenbezogene Symbolbilder ersetzen; sensible Themen bleiben Wirkungskarten.
+- **Umsetzung:** Begrenzter opt-in `--refresh-editorial`, persistente Restqueue, revisionsgebundene Oracle-Journale und unveränderte Credit-Limits. Alte Bilder bleiben bis zum vollständigen Erfolg sichtbar; alte Originale und Journalhistorie erhalten. Keine neue Meldung/Push allein durch Bildwechsel.
+- **Geprüft:** 151 News-Tests inklusive einmaliger Ersatzgenerierung, Wiederholungen ohne Doppelzahlung, unklarer Submit, Erhalt alter Bilder bei Fehlern und begrenzter/dry-run-sicherer Auswahl. Reale Generierung und Release-Verifikation folgen.
+- **Oracle:** Nutzer bestätigt temporäre SSH-/32-Freigabe für den Rollout, nach Abschluss entfernen. A1-Free-Tier-Hinweis betrifft die vorhandene E2.1.Micro nicht; kein Tarif-/Shape-Wechsel.
+
+### 2026-09-04 · Codex · Wirkungsticker: Installation, Bild-Overlay und Quellenlinks
+- **Was:** Prominenter Installationshinweis zwischen Hero und Suche, mit bestehendem Installationsweg verknüpft. iPhone/iPad-Anleitung, native Chromium-Installation nur nach Klick, ausblendbar für 30 Tage, keine Werbung im Standalone-Modus. Service-Worker-/Asset-Version `20260904-reader2`; keine Neuinstallation erforderlich.
+- **Bilder:** Identisches „Wirkung auf“-Panel auch auf Editorials, in allen drei Formaten; dunkler Kontrasthintergrund, reservierter Titelbereich. Zehn vorhandene Motive render-only neu gerahmt und 30 unveränderliche PNGs in GitHub Releases abgelegt, null Higgsfield-Aufrufe. Quellen, Nachrichtentexte, Datumswerte und Versionen unverändert. Original-Promptprovenienz bleibt v2. Neue Promptvorgabe v3: konkrete gegenständliche Motive statt pauschaler abstrakter Netzwerke; sensible Themen weiterhin Wirkungskarte.
+- **Belege:** Im geprüften Stand 25/45 aktive Akten mit mehreren Textstellen derselben URL (71 Claims). Darstellung jetzt pro Claim und Quellartikel ein benannter Link mit Zahl unterschiedlicher Textstellen. Interne Belege/Einzelquellenstatus bleiben unverändert; keine zusätzliche Unabhängigkeit suggeriert.
+- **Geprüft:** 146 News-Tests, Build/Validator, echte Chrome-Rasterisierung OG/Wide/Square; Mobile 320/390 px ohne horizontalen Überlauf, Beispiel Bundeswehr mit genau einem Link je Aussage. Vor Freigabe zusätzlich PR-CI und Live-Prüfung.
+- **Offen:** Neue Bildvorgaben müssen auch in der Oracle-Adapterkopie ausgerollt werden; SSH derzeit Timeout, Browseranmeldung abgelaufen, Nutzer um erneute Anmeldung gebeten. Akademie-Analytics: getrenntes Vorhaben, Vercel-Buildkostengate rot; kein Umgehen, kein Vercel-Build ausgelöst.
+
+### 2026-09-04 · Codex · Wirkungsticker: Merken und Wisch-Leseweg
+- **Was:** Merken direkt auf jeder Nachrichtenkarte und zusätzlich am Detailseitenende; dieselben `WoekUserSpace`-Einträge, Konto-Synchronisierung und Entfernen-aus-Sammlungen wie bisher. Gemeinsamer Buttonzustand und Link zur bestehenden Merkliste, keine zweite Datensammlung.
+- **Navigation:** Links wischen öffnet die nächste Meldung, rechts den tatsächlichen vorherigen Lese-Schritt (Übersicht → A → B → A → Übersicht). Direkteinstieg fällt sicher auf die Übersicht zurück. Browser-History bleibt erhalten; Abschnittslinks erzeugen keine Schein-Seiten. Rückkehr stellt Filter, nachgeladene Karten und Scrollposition wieder her.
+- **Schutz:** Vertikal-/Mehrfinger-/Zoom-Gesten, Textauswahl, Formulare, Links, horizontale Scrollbereiche und sichtbare Dialoge bleiben unbeeinträchtigt; Bildschirmränder bleiben nativen Browsergesten vorbehalten. Sichtbare Navigation bleibt als Alternative vorhanden.
+- **Geprüft:** 135 News-Tests einschließlich 10 neuer Leseweg-/Merken-Tests; News-Build/Validator, Suchindex/Taxonomie, 390px-Browser ohne Überlauf/JS-Fehler. Karten-Merken → Detailzustand → bestehende Merkliste und Wischfolge mit Wiederherstellung von Scrollposition 5057 geprüft. Keine Filter-, Quellen-, Budget- oder Hostingänderung.
+- **Kostenbeobachtung:** Zusätzliche tägliche Codex-Beobachtung um 09:00 eingerichtet (braucht laufende Desktop-App); serverseitige Kostenerfassung und 25-EUR-KI-Grenze bleiben unabhängig davon. Richtwert 1 EUR/Tag, kein stilles Anheben auf 30 EUR.
+
+### 2026-09-04 · Codex · Automatische Titelbilder und App-Abschluss
+- **Was:** Claudes Titelbildsystem unverändert als Basis, offizielle Higgsfield-CLI 1.1.24/Nano Banana Pro auf Oracle; persistente Originale/Job-ID/Creditreservierung; konservative Moduswahl, OCR, Fallback; drei Größen über gepinntes Chrome/DevTools; immutable GitHub-Releases, sichere öffentliche Metadaten. Einmalig beauftragter Backfill mit dauerhafter Restqueue.
+- **App:** freiwilliger Erstbesuch-Push-Hinweis, keine generischen Begriffsfragen im Ticker, Leserinformation statt öffentlicher Kostenregeln. Teilen und Rückkehrposition bleiben erhalten.
+- **Nachrichten:** 12 Kandidaten/Lauf, 48 Aufrufe/Stunde innerhalb des bisherigen Monatsbudgets; begrenzte Laufzeit; Statuskonsistenzgate. Einkommensteuerreform als Regierungsentwurf berichtigt, frühere Fassung erhalten, sichtbarer Korrekturhinweis.
+- **Geprüft:** 115 News-Tests, Build/Validator, vier Backend-API-Tests/Typecheck/Build; echte OG/Wide/Square-PNGs; 390px-Browseransicht ohne Überlauf, zwei Teilen-Buttons, drei Rücklinks, keine Begriffsfragen. Release-Abnahme wird nach dem Merge protokolliert.
+- **Grenze:** kein Versprechen 100-prozentiger Nachrichtenabdeckung/Faktenfehlerfreiheit oder unbegrenzter Higgsfield-OAuth-Laufzeit. Details und reproduzierbarer Backend-Patch: `docs/ops/WIRKUNGSTICKER-TITELBILD-PIPELINE.md`.
+
+### Codex · Wirkungsticker: 503-Resilienz und verlässliche Aktualisierung
+- **Was:** Vier versetzte Laufchancen pro Stunde mit genau einem KI-Aufruf pro Lauf; persistentes rollendes Limit von vier Aufrufen in 60 Minuten; frische Meldungen und materielle Aktenupdates vor alten Filter-Neubewertungen. Reports unterscheiden `ok` und `degraded`, erfolgreiche und versuchte Läufe werden getrennt geführt, und der abschließende Health-Check macht 503 sowie Quellenlücken sichtbar rot, ohne Queue oder bereits erfolgreiche Teilresultate zu verlieren. Pages wird nur bei einer echten öffentlichen Story-Änderung ausgelöst; Queue-Commits allein führen nicht zu App-Neuladungen oder Releases.
+- **Pfade:** `.github/workflows/wirkungsticker.yml`, `scripts/news/run.mjs`, `scripts/news/build.mjs`, `scripts/news/check-run-health.mjs`, `tests/news/wirkungsticker.test.mjs`, `docs/ops/WIRKUNGSTICKER.md`.
+- **Geprüft:** Ticker-Tests, Generator, Validator und Health-Check; anschließend manueller Ticker-only-Release und Live-Prüfung.
+- **Offen:** Serverseitige Ursache des Oracle-503 separat anhand der Instanzdiagnose beheben. Auftrag B (Titelbildpipeline/Higgsfield) bleibt bis zur stabilen Nachrichtenversorgung zurückgestellt.
+
+### Codex · Wirkungsticker: KI-Visuals aktiviert und mobiler Lesefluss ergänzt
+- **Was:** `VISUALS_SCHEMA` und `VISUALS_PROMPT_RULES` in den bestehenden WÖk-KI-Prompt eingebunden; `sanitizeVisuals()` läuft vor dem allgemeinen Qualitätsgate und schreibt verworfene Elemente in `report.visuals_dropped`. Detailseiten erhalten einen zweiten Teilen-Button am Seitenende, Navigation zu neuerer/nächster Meldung und Rücklinks zur Übersicht. Die Übersicht merkt Filter, Suche, Nachladeumfang und Scrollposition lokal im Sitzungsspeicher und stellt die vorige Leseposition wieder her.
+- **Pfade:** `scripts/news/lib.mjs`, `scripts/news/run.mjs`, `scripts/news/validate.mjs`, `tests/news/wirkungsticker.test.mjs`; nutzerbeauftragte Ergänzung in Claudes UX-Lane: `scripts/news/build.mjs`, `assets/js/news.js`, `assets/css/news.css`.
+- **Geprüft:** Pipeline- und UX-Tests, Generator, Validator sowie mobiler Browserfluss einschließlich Rückkehrposition, Blättern und beider Teilen-Schaltflächen.
+- **Offen:** Auftrag B (automatische Titelbildwahl, Higgsfield und CI-Rasterizer) bleibt bewusst ein eigener späterer Schritt.
+
+### Claude · Wirkungsticker: visuelle Anker, UX-Umbau, Titelbildsystem (Branch `claude/wirkungsticker-visual-ux`)
+- **Was:** Neues Modul `scripts/news/visuals.mjs` (Icons, Dimensionsmeter, Verfahrensstand, Wirkpfad-Grafik, Auf-einen-Blick, Vertrag + Sanitizer für KI-Visuals). Übersicht: Meldungen direkt nach dem Hero, Toolbar mit Suche/Aktualisieren, gruppierte Filter mit Zählern, Karten mit Quelle/Status/Metern, ganzflächig klickbar; Filterleiste klebt jetzt unter dem sticky Header (lag vorher dahinter). Detailseite: Primärquelle als Button, Auf-einen-Blick, Abschnittsnavigation, Codex-Abschnitt „Worum geht es?“ integriert, Wirkpfad als Grafik, Risiken, Bedeutung als Kacheln, Quellenakte mit Herausgeber-Badges, Versionsverlauf als Zeitleiste. Titelbildsystem `scripts/news/title-image/` mit zwei Modi (Editorial Symbolbild, Wirkungskarte), SVG-Renderer ohne Abhängigkeiten, Rasterizer-Adapter, Vorschauen in `scripts/news/title-image/previews/`.
+- **Pfade:** `scripts/news/visuals.mjs`, `scripts/news/build.mjs`, `assets/css/news.css`, `assets/js/news.js`, `assets/js/news-pwa.js`, `scripts/news/title-image/*`, `tests/news/visuals.test.mjs`, `tests/news/title-image.test.mjs`, `docs/ops/WIRKUNGSTICKER.md`, `docs/ops/WIRKUNGSTICKER-TITELBILD.md`, `docs/handoff-wirkungsticker-visuals-codex.md`.
+- **Geprüft:** `npm run news:test` (alle Tests grün), `npm run news:build`, `npm run news:validate` grün; Screenshots Desktop/Mobile lokal; Titelbild-Vorschauen in beiden Modi und drei Größen.
+- **Offen für Codex:** Auftrag A (KI-Visuals im Prompt + Sanitizer vor dem Gate) und später Auftrag B (Titelbilder, Higgsfield, Moduswahl, CI-Rasterizer) laut `docs/handoff-wirkungsticker-visuals-codex.md`. Keine Pipeline-, Workflow- oder Cron-Änderungen durch Claude.
+
+---
+
 ## 2026-08-05
 
 ### Codex · Finales PDF der kooperativen Wirkungsordnung (Release)

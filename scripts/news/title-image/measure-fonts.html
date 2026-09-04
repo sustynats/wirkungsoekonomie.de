@@ -1,0 +1,35 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"WT Serif";font-weight:600;src:url("../../../assets/fonts/source-serif-4-600.woff2") format("woff2")}
+@font-face{font-family:"WT Serif";font-weight:700;src:url("../../../assets/fonts/source-serif-4-700.woff2") format("woff2")}
+@font-face{font-family:"WT Sans";font-weight:400;src:url("../../../assets/fonts/inter-400.woff2") format("woff2")}
+@font-face{font-family:"WT Sans";font-weight:500;src:url("../../../assets/fonts/inter-500.woff2") format("woff2")}
+@font-face{font-family:"WT Sans";font-weight:600;src:url("../../../assets/fonts/inter-600.woff2") format("woff2")}
+@font-face{font-family:"WT Sans";font-weight:700;src:url("../../../assets/fonts/inter-700.woff2") format("woff2")}
+</style></head><body><pre id="out">pending</pre>
+<script>
+(async () => {
+  const fonts = [["WT Serif",600,"serif-600"],["WT Serif",700,"serif-700"],["WT Sans",400,"sans-400"],["WT Sans",500,"sans-500"],["WT Sans",600,"sans-600"],["WT Sans",700,"sans-700"]];
+  const chars = [];
+  for (let c = 32; c < 127; c += 1) chars.push(String.fromCharCode(c));
+  for (const c of "ÄÖÜäöüßÀÁÂÃÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÕØÙÚÛÝàáâãåæçèéêëìíîïñòóôõøùúûýÿŒœŠšŽž–—‚‘’„“”‹›«»…·•€£%§°±×÷ ­") chars.push(c);
+  const ctx = document.createElement("canvas").getContext("2d");
+  const out = { unitsPerEm: 1000, sample: 100, fonts: {} };
+  for (const [family, weight, key] of fonts) {
+    try { await document.fonts.load(`${weight} 100px "${family}"`); } catch (e) {}
+    ctx.font = `${weight} 100px "${family}"`;
+    const widths = {};
+    for (const c of chars) widths[c] = Math.round(ctx.measureText(c).width * 10) / 1000;
+    const pairs = {};
+    const sample = "AVAWAYLTToTaTeTrVaVeWaWeYaYoLYPAFArTyVoWoAyfifl";
+    for (let i = 0; i + 1 < sample.length; i += 2) {
+      const pair = sample.slice(i, i + 2);
+      const w = ctx.measureText(pair).width - ctx.measureText(pair[0]).width - ctx.measureText(pair[1]).width;
+      if (Math.abs(w) > 0.5) pairs[pair] = Math.round(w * 10) / 1000;
+    }
+    const loaded = document.fonts.check(`${weight} 100px "${family}"`);
+    out.fonts[key] = { family, weight, loaded, widths, pairs, space: widths[" "], xHeightApprox: Math.round(ctx.measureText("x").width * 10) / 1000 };
+  }
+  document.getElementById("out").textContent = JSON.stringify(out);
+})();
+</script></body></html>

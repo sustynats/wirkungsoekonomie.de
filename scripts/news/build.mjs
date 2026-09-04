@@ -1,9 +1,20 @@
 import fs from "node:fs";
+import { publicTitleImage } from "./title-image/pipeline.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  ANALYSIS_TYPES, sanitizeVisuals, renderIconSprite, renderIcon, topicIcon, renderStatusChip, renderAnalysisTypeChip,
+  renderDimensionMeters, renderImpactPath, renderAtAGlance, renderKeyFigures, renderAffectedGroups, renderTimeline,
+  renderChart, publisherInitials,
+} from "./visuals.mjs";
+import { loadNewsRegistry } from "./registry.mjs";
+import { buildSourcePages } from "./source-pages.mjs";
+import { canonicalizeUrl } from "./lib.mjs";
+import { relatedStories } from "./living-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
+const PUBLIC_RELEASE = "20260904-order1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
@@ -97,6 +108,40 @@ function prose(items, fallback = "Offen – die Quellenlage reicht für eine bel
   }).map(escapeHtml).join(" ");
 }
 
+function sourceSummaryParagraphs(value) {
+  return String(value || "")
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+    .join("");
+}
+
+function sentenceFragment(value, fallback, maxLength = 96) {
+  const text = String(value || fallback || "").trim().replace(/[.!?]+$/, "");
+  if (text.length <= maxLength) return text.replace(/[,;:–-]+$/, "").trim();
+  const shortened = text.slice(0, maxLength + 1).replace(/\s+\S*$/, "").replace(/[,;:–-]+$/, "").trim();
+  return shortened || text.slice(0, maxLength).trim();
+}
+
+function expandedDetailSummary(analysis) {
+  const direct = String(analysis.detail_summary || "").trim();
+  if (direct.length >= 500) return direct;
+  const mechanism = sentenceFragment(analysis.mechanisms?.[0], analysis.impact_potential);
+  const immediate = sentenceFragment(analysis.first_order?.[0], analysis.impact_potential);
+  const downstream = sentenceFragment(analysis.second_order?.[0], analysis.side_effects?.[0]);
+  const systemic = sentenceFragment(analysis.systemic_relevance, analysis.third_order?.[0]);
+  const uncertainty = sentenceFragment(analysis.uncertainties?.[0], analysis.attribution);
+  return [
+    String(analysis.summary || "").trim(),
+    `Die Relevanzbegründung lautet: ${sentenceFragment(analysis.why_relevant)}.`,
+    `Als möglicher Wirkmechanismus gilt: ${mechanism}.`,
+    `Als unmittelbare Folge kommt in Betracht: ${immediate}; nachgelagert ist zu prüfen: ${downstream}.`,
+    `Für die systemische Perspektive gilt: ${systemic}.`,
+    `Die Evidenzgrenze bleibt: ${sentenceFragment(analysis.evidence_level)}; zur Zurechnung gilt: ${sentenceFragment(analysis.attribution)}; offen bleibt: ${uncertainty}.`,
+  ].filter(Boolean).join(" ");
+}
+
 function dimensionLabel(key) {
   return { human: "Mensch", planet: "Planet", democracy: "Demokratie" }[key];
 }
@@ -112,47 +157,86 @@ function storyHref(story) {
   return `./${story.slug}/`;
 }
 
+function analysisTypeLabel(type) {
+  return (ANALYSIS_TYPES[type] || ANALYSIS_TYPES.monitoring).label;
+}
+
+function shareControl(story, suffix = "top") {
+  const statusId = `news-share-status-${story.slug}-${suffix}`;
+  const shareUrl = `${SITE}/wirkungsticker/${story.slug}/`;
+  const shareText = `Wirkungsticker: ${story.analysis.summary}`;
+  return `<div class="news-share" data-news-share><button class="btn btn-secondary news-share__button" type="button" data-news-share-button data-share-title="${escapeHtml(story.title)}" data-share-text="${escapeHtml(shareText)}" data-share-url="${escapeHtml(shareUrl)}" aria-describedby="${escapeHtml(statusId)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .18.02.35.05.52L8.91 9.1A3 3 0 0 0 7 8.42a3 3 0 1 0 1.91 5.49l6.14 3.58A3 3 0 0 0 15 18a3 3 0 1 0 .83-2.07l-6.14-3.58c.2-.55.2-1.15 0-1.7l6.14-3.58A3 3 0 0 0 18 8Z" fill="currentColor"/></svg><span>Nachricht teilen</span></button><p class="news-share__status" id="${escapeHtml(statusId)}" data-news-share-status aria-live="polite"></p></div>`;
+}
+
+function saveControl(story) {
+  return `<button class="btn btn-secondary news-save-button" type="button" data-search-exclude data-wirkungsraum-save-url="/wirkungsticker/${escapeHtml(story.slug)}/" data-wirkungsraum-save-title="${escapeHtml(story.title)}" data-wirkungsraum-save-tags="${escapeHtml((story.topic || []).join(" · "))}" aria-pressed="false" hidden>☆ Merken</button>`;
+}
+
+function overviewHref(story) {
+  return `../#story-${story.slug}`;
+}
+
+function matchesFilter(story, value) {
+  if (value === "all") return true;
+  if (value === "high") return ["hoch", "sehr hoch"].includes(story.analysis?.importance);
+  const topics = (story.topic || []).map((topic) => String(topic).toLowerCase());
+  const dimensions = Object.entries({ human: "mensch", planet: "planet", democracy: "demokratie" })
+    .filter(([key]) => story.analysis?.[key]?.relevance !== "gering")
+    .map(([, label]) => label);
+  return [...topics, ...dimensions].includes(value);
+}
+
 function card(story, index) {
+  const a = story.analysis;
   const topics = (story.topic || []).join(" ").toLowerCase();
   const dimensionKeys = Object.entries({ human: "mensch", planet: "planet", democracy: "demokratie" })
-    .filter(([key]) => story.analysis?.[key]?.relevance !== "gering")
+    .filter(([key]) => a?.[key]?.relevance !== "gering")
     .map(([, label]) => label)
     .join(" ");
-  const high = ["hoch", "sehr hoch"].includes(story.analysis.importance);
+  const high = ["hoch", "sehr hoch"].includes(a.importance);
   const searchText = [
     story.title,
-    story.analysis.summary,
-    story.analysis.why_relevant,
+    story.source_summary,
+    a.summary,
+    a.why_relevant,
     "Faktencheck",
     "Folgencheck",
     ...(story.topic || []),
-    ...Object.values(story.analysis)
+    ...Object.values(a)
       .filter((value) => value && typeof value === "object" && !Array.isArray(value))
       .flatMap((value) => Object.values(value).filter((item) => typeof item === "string")),
     ...story.sources.map((source) => source.publisher),
   ].join(" ").toLowerCase().slice(0, 2400);
-  return `<article class="news-card${index === 0 ? " news-card--lead" : ""}" data-news-card data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(story.last_updated)}">
-  <div class="news-card__eyebrow">
-    <span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>
-    <span class="news-badge">${escapeHtml(story.analysis.status)}</span>
-    <span class="news-badge">${escapeHtml(story.analysis.analysis_type === "ex_ante" ? "Ex ante" : story.analysis.analysis_type === "ex_post" ? "Ex post" : "Monitoring")}</span>
-    ${high ? '<span class="news-badge news-badge--high">Hohe systemische Relevanz</span>' : ""}
+  const visuals = sanitizeVisuals(a.visuals, story).visuals;
+  const publishers = [...new Set(story.sources.map((source) => source.publisher).filter(Boolean))];
+  const publisherLabel = `${publishers.slice(0, 2).join(", ")}${publishers.length > 2 ? " u. a." : ""}`;
+  const version = Number(story.current_version || 1);
+  const href = storyHref(story);
+  return `<article class="news-card${index === 0 ? " news-card--lead" : ""}" id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(story.last_updated)}">
+  <div class="news-card__topline">
+    <span class="news-card__topic">${renderIcon(topicIcon(story.topic), "wt-icon--topic")}<span class="card-kicker">${escapeHtml((story.topic || []).slice(0, 3).join(" · "))}</span></span>
+    <span class="news-card__flags"><span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>${version > 1 ? `<span class="news-badge news-badge--update">Akte aktualisiert · v${version}</span>` : ""}${high ? '<span class="news-badge news-badge--high">Hohe systemische Relevanz</span>' : ""}</span>
   </div>
-  <div>
-    <p class="card-kicker">${escapeHtml((story.topic || []).slice(0, 3).join(" · "))}</p>
-    <h2><a href="${escapeHtml(storyHref(story))}">${escapeHtml(story.title)}</a></h2>
-    <p class="news-card__summary">${escapeHtml(story.analysis.summary)}</p>
-    <p><strong>Warum relevant:</strong> ${escapeHtml(story.analysis.why_relevant)}</p>
+  ${publicTitleImage(story.title_image)?.wide ? `<figure class="news-title-image news-title-image--card"><img src="${escapeHtml(publicTitleImage(story.title_image).wide.url)}" alt="" width="1200" height="675" loading="${index === 0 ? "eager" : "lazy"}" decoding="async"><figcaption>${escapeHtml(publicTitleImage(story.title_image).label)}</figcaption></figure>` : ""}
+  <div class="news-card__body">
+    <h2><a href="${escapeHtml(href)}">${escapeHtml(story.title)}</a></h2>
+    <p class="news-card__summary">${escapeHtml(a.summary)}</p>
+    <p class="news-card__why"><strong>Warum relevant:</strong> ${escapeHtml(a.why_relevant)}</p>
   </div>
-  <div class="news-dimensions">${dimensions(story)}</div>
+  <div class="news-card__signals">
+    <div class="news-card__chips">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}</div>
+    ${renderDimensionMeters(a, { compact: index !== 0, tendency: visuals?.tendency || null })}
+  </div>
   <div class="news-card__footer">
-    <small>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))} · WÖk-Analyse aktualisiert ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</small>
-    <a class="btn btn-secondary" href="${escapeHtml(storyHref(story))}">Fakten- &amp; Folgencheck öffnen</a>
+    <span class="news-card__source">${renderIcon("quelle")}<span>${escapeHtml(publisherLabel)} · Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span></span>
+    <span class="news-card__meta">${renderIcon("uhr")}<span>WÖk-Analyse aktualisiert ${escapeHtml(formatDate(story.last_updated))}</span></span>
+    <a class="btn btn-secondary news-card__cta" href="${escapeHtml(href)}">Fakten- &amp; Folgencheck öffnen${renderIcon("pfeil")}</a>
+    ${saveControl(story)}
   </div>
 </article>`;
 }
 
-function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "" }) {
+function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null, publicUpdatedAt = "" }) {
   const { header, footer } = renderLayout(base);
   return `<!doctype html>
 <html lang="de">
@@ -161,14 +245,21 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)} | Wirkungsökonomie</title>
   <meta name="description" content="${escapeHtml(description)}">
+  ${publicUpdatedAt ? `<meta name="woek-news-revision" content="${PUBLIC_RELEASE}:${escapeHtml(publicUpdatedAt)}">` : ""}
   <link rel="canonical" href="${escapeHtml(canonical)}">
+  ${robots ? `<meta name="robots" content="${escapeHtml(robots)}">` : ""}
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Wirkungsökonomie">
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
-  <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+  <meta property="og:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="${escapeHtml(titleImage ? `${title} – ${titleImage.label}` : "Wirkungsökonomie")}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
   <meta name="theme-color" content="#f7f1e8">
   <meta name="application-name" content="Wirkungsticker">
   <meta name="mobile-web-app-capable" content="yes">
@@ -182,46 +273,68 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260903-2">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
 ${header}
+${renderIconSprite()}
 ${body}
-${footer}
-<script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260903-2"></script>
+${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
+<script src="${base}assets/js/main.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
+<script src="${base}assets/js/news-navigation.js?v=20260904-reader2"></script>
 ${extraScript}
 </body>
 </html>`;
 }
 
 function indexPage(stories, updatedAt) {
-  const filters = [
-    ["all", "Alle"], ["high", "Hohe systemische Relevanz"], ["politik", "Politik"], ["wirtschaft", "Wirtschaft"],
-    ["mensch", "Mensch"], ["planet", "Planet"], ["demokratie", "Demokratie"], ["klima", "Klima"], ["energie", "Energie"],
-    ["arbeit", "Arbeit"], ["soziales", "Soziales"], ["digitalisierung", "Digitalisierung"], ["ki", "KI"], ["europa", "Europa"], ["geopolitik", "Geopolitik"],
+  const filterGroups = [
+    { label: "Auswahl", filters: [["all", "Alle"], ["high", "Hohe systemische Relevanz"]] },
+    { label: "Dimension", filters: [["mensch", "Mensch"], ["planet", "Planet"], ["demokratie", "Demokratie"]] },
+    { label: "Thema", filters: [
+      ["politik", "Politik"], ["wirtschaft", "Wirtschaft"], ["finanzen", "Finanzen"], ["klima", "Klima"], ["energie", "Energie"],
+      ["arbeit", "Arbeit"], ["soziales", "Soziales"], ["gesundheit", "Gesundheit"], ["digitalisierung", "Digitalisierung"], ["ki", "KI"],
+      ["europa", "Europa"], ["geopolitik", "Geopolitik"], ["bildung", "Bildung"],
+    ] },
   ];
+  const highCount = stories.filter((story) => matchesFilter(story, "high")).length;
+  const filterBar = filterGroups.map((group) => `<div class="news-filter-group" role="group" aria-label="${escapeHtml(group.label)}"><span class="news-filter-group__label" aria-hidden="true">${escapeHtml(group.label)}</span>${group.filters.map(([value, label]) => {
+    const count = stories.filter((story) => matchesFilter(story, value)).length;
+    return `<button class="news-filter" type="button" data-news-filter="${value}" aria-pressed="${value === "all"}"${count === 0 && value !== "all" ? " hidden" : ""}>${label}<span class="news-filter__count" data-news-filter-count data-total="${count}">${count}</span></button>`;
+  }).join("")}</div>`).join("");
   const cards = stories.length ? stories.map(card).join("\n") : `<div class="news-empty"><h2>Gerade keine ausreichend belegte Wirkungsnachricht.</h2><p>Der Ticker füllt keine Ausgabe künstlich. Eine Story erscheint erst, wenn Relevanz, Quellenlage und Qualitätsgate tragen.</p></div>`;
-  const body = `<main id="main-content" data-search-content data-no-glossary>
+  const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="list">
   <section class="hero news-hero">
     <div class="hero-copy">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a><span aria-hidden="true">/</span><a href="../oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a></nav>
-      <p class="hero-kicker">Wirkungsticker</p>
+      <p class="hero-kicker news-hero__kicker">${renderIcon("folgen")}<span>Wirkungsticker</span></p>
       <h1 class="hero-title">Die Nachrichten, bei denen zählt, was daraus folgt.</h1>
       <p class="hero-subtitle">Weniger Meldungen, mehr Relevanz: quellengebundene Einordnung von Wirkungspotenzial, Wirkungsrisiken und beobachteten Zustandsveränderungen für Mensch, Planet und Demokratie.</p>
-      <div class="news-hero__meta"><span>Zuletzt aktualisiert: ${escapeHtml(formatDate(updatedAt))}</span><span>Automatische Läufe: 07:00 · 12:00 · 16:00 · 20:00 Uhr, Europe/Berlin</span></div>
+      <ul class="news-hero__stats"><li><strong>${stories.length}</strong> ${stories.length === 1 ? "Wirkungsakte" : "Wirkungsakten"}</li><li><strong>${highCount}</strong> mit hoher systemischer Relevanz</li><li>${renderIcon("uhr")}<span>Stand ${escapeHtml(formatDate(updatedAt))} · automatische Quellenprüfung</span></li><li><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="quellen/">Quellen &amp; Auswahl</a></li></ul>
     </div>
   </section>
-  <section class="section"><article class="card news-principle"><p class="hero-kicker">Was hier anders ist</p><h2>Aufmerksamkeit ist kein Relevanzbeweis.</h2><p>Der Wirkungsticker bündelt Meldungen zum selben Ereignis in einer lebenden Wirkungsakte. Er trennt Fakt, Beobachtung und analytische Inferenz. Wirkungspotenzial wird nicht als eingetretene Wirkung ausgegeben, und offene Evidenz bleibt offen.</p><p class="news-method-note"><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="feed.xml">RSS</a> · <a class="text-link" href="feed.atom">Atom</a> · <a class="text-link" href="feed.json">JSON Feed</a></p></article></section>
-  <section class="section news-app-tools" data-news-app-tools hidden aria-labelledby="news-app-title"><article class="card news-app-tools__card"><div><p class="hero-kicker">Wirkungsticker für unterwegs</p><h2 id="news-app-title">Als Web-App installieren</h2><p data-news-install-copy>Lege den Wirkungsticker auf deinen Startbildschirm. Er öffnet dann wie eine eigene App und hält die zuletzt geladenen Inhalte offline bereit.</p><div class="news-app-tools__actions" data-news-install-actions><button class="btn btn-primary" type="button" data-news-install-button>Installieren</button><button class="btn btn-secondary" type="button" data-news-install-dismiss>Später</button></div></div><div class="news-notification-settings"><h3>Neue Meldungen anzeigen</h3><p>Optional und jederzeit abschaltbar. Auf unterstützten Geräten erscheint ein Zähler am App-Icon; Hintergrundmeldungen hängen von den Möglichkeiten des Betriebssystems ab.</p><div class="news-app-tools__actions"><button class="btn btn-secondary" type="button" data-news-notification-toggle aria-pressed="false">Benachrichtigungen aktivieren</button><button class="btn btn-secondary" type="button" data-news-mark-read hidden>Neue als gesehen markieren</button></div><p class="news-app-status" data-news-notification-status aria-live="polite">Benachrichtigungen sind aus.</p></div></article></section>
-  <section class="section news-search" aria-labelledby="ticker-search-title"><div><p class="hero-kicker">Im Ticker suchen</p><h2 id="ticker-search-title">Wirkungsnachrichten schnell finden</h2><p>Die Suche filtert Titel, Kurzanalysen, Themen und Wirkungsdimensionen direkt auf dieser Seite.</p></div><div class="news-search__controls"><label for="ticker-search-input">Suchbegriff</label><input id="ticker-search-input" type="search" autocomplete="off" placeholder="Zum Beispiel: Energie, Arbeit, Demokratie" data-news-search-input><a class="text-link" href="../suche.html" data-news-site-search-link>Gesamte Website durchsuchen</a></div></section>
-  <nav class="news-filter-bar" aria-label="Wirkungsticker filtern"><div class="news-filter-bar__inner">${filters.map(([value, label], index) => `<button class="news-filter" type="button" data-news-filter="${value}" aria-pressed="${index === 0}">${label}</button>`).join("")}</div></nav>
+  <aside class="news-install-promo" data-news-install-promo data-search-exclude hidden aria-labelledby="news-install-promo-title">
+    <img src="../assets/img/brand/app-icon-192.png" alt="" width="64" height="64">
+    <div class="news-install-promo__copy"><p class="hero-kicker">Deine Nachrichten. Direkt auf dem Startbildschirm.</p><h2 id="news-install-promo-title">Der Wirkungsticker als kostenlose Web-App</h2><p data-news-install-copy>Schnell öffnen, Artikel merken und auf Wunsch Push bei neuen Nachrichten erhalten. Ohne App-Store.</p><div class="news-app-tools__actions" data-news-install-actions><button class="btn btn-primary" type="button" data-news-install-button>Web-App hinzufügen</button><button class="btn btn-secondary" type="button" data-news-install-dismiss>Später</button></div></div>
+  </aside>
+  <section class="section news-toolbar" aria-label="Wirkungsticker durchsuchen">
+    <p class="news-saved-link" data-search-exclude><a class="text-link" href="../mein-wirkungsraum/#gemerkte-inhalte">☆ Meine Merkliste</a></p>
+    <div class="news-toolbar__inner">
+      <form class="news-search" role="search" onsubmit="return false"><label class="sr-only" for="ticker-search-input">Im Ticker suchen</label><div class="news-search__field">${renderIcon("suche")}<input id="ticker-search-input" type="search" autocomplete="off" placeholder="Im Ticker suchen, z. B. Energie, Arbeit, Demokratie" data-news-search-input></div><p class="news-search__hint"><span>Durchsucht Titel, Kurzanalysen, Themen und Wirkungsdimensionen.</span><a class="text-link" href="../suche.html" data-news-site-search-link>Gesamte Website durchsuchen</a></p></form>
+      <div class="news-toolbar__status"><button class="wt-iconbtn" type="button" data-news-refresh-button>${renderIcon("aktualisieren")}<span>Aktualisieren</span></button><span class="news-app-status" data-news-refresh-status aria-live="polite">Stand ${escapeHtml(formatDate(updatedAt))}</span></div>
+    </div>
+  </section>
+  <nav class="news-filter-bar" aria-label="Wirkungsticker filtern"><div class="news-filter-bar__inner">${filterBar}</div></nav>
   <section class="section" aria-labelledby="ticker-stories-title"><div class="section-header"><p class="hero-kicker">Aktuelle Wirkungsakten</p><h2 id="ticker-stories-title">Die wichtigsten Wirkungsnachrichten seit dem letzten Update</h2><p data-news-results-status aria-live="polite">${stories.length} belastbar veröffentlichte ${stories.length === 1 ? "Story" : "Storys"}. Neue Informationen aktualisieren bestehende Akten.</p></div><div class="news-grid">${cards}</div><div class="news-empty" data-news-filter-empty hidden><p>Für diesen Filter und Suchbegriff gibt es derzeit keine veröffentlichte Story.</p></div><div class="news-load-more" data-news-load-more-wrap hidden><button class="btn btn-secondary" type="button" data-news-load-more aria-expanded="false">Weitere Meldungen laden</button></div></section>
-  <section class="section section-soft" id="methodik" aria-labelledby="ticker-method-title"><div class="section-header"><p class="hero-kicker">Qualität vor Takt</p><h2 id="ticker-method-title">So entsteht eine Veröffentlichung.</h2></div><div class="impact-process"><article class="impact-process__step"><span class="impact-process__index">1</span><h3>Primärquellen</h3><p>Offizielle RSS-/Atom-Feeds liefern Titel, Kurztext, Zeit und Original-Link. Keine Paywall und kein Volltext-Scraping.</p></article><article class="impact-process__step"><span class="impact-process__index">2</span><h3>Lokal reduzieren</h3><p>URL-/Hash-Deduplizierung, Story-Clustering, Zeitfilter, Themenzuordnung und WÖk-Relevanzvoranalyse laufen ohne KI.</p></article><article class="impact-process__step"><span class="impact-process__index">3</span><h3>Gezielt analysieren</h3><p>Nur materialitätsstarke Storys gehen gebündelt an die bestehende Oracle-WÖk-KI. Nachrichteninhalte gelten dort als Daten, nie als Anweisung.</p></article><article class="impact-process__step"><span class="impact-process__index">4</span><h3>Fail closed</h3><p>Claim-Ledger, Primärquelle, Terminologie, Kausalitätsgrenzen, Unsicherheit und Textübernahme werden automatisch geprüft. Konflikte bleiben zurückgestellt.</p></article><article class="impact-process__step"><span class="impact-process__index">5</span><h3>Lernen</h3><p>Neue Quellen ergänzen dieselbe Story; frühere Analysen bleiben versioniert. Monitoring und Ex-post-Einordnung folgen erst mit neuen Daten.</p></article></div><p class="notice"><strong>Einordnung, kein amtliches Angebot:</strong> Die Analysen sind unabhängige WÖk-Einordnungen. Ziel- oder Indikatorbezug allein ist weder Wirkung noch Kausalitätsnachweis.</p></section>
+  <section class="section news-app-tools" data-news-app-tools hidden aria-labelledby="news-app-title"><article class="card news-app-tools__card"><div><p class="hero-kicker">Wirkungsticker für unterwegs</p><h2 id="news-app-title">${renderIcon("app")}<span>Als Web-App installieren</span></h2><p data-news-install-copy>Lege den Wirkungsticker auf deinen Startbildschirm. Er öffnet dann wie eine eigene App und hält die zuletzt geladenen Inhalte offline bereit.</p><div class="news-app-tools__actions" data-news-install-actions><button class="btn btn-primary" type="button" data-news-install-button>Installieren</button><button class="btn btn-secondary" type="button" data-news-install-dismiss>Später</button></div></div><div class="news-notification-settings"><h3>${renderIcon("glocke")}<span>Aktualisierung und Push</span></h3><p>Die App prüft beim Öffnen, Zurückkehren und regelmäßig während der Nutzung automatisch auf neue oder aktualisierte Wirkungsakten. Du kannst die Prüfung auch sofort anstoßen.</p><div class="news-app-tools__actions"><button class="btn btn-primary" type="button" data-news-refresh-button>Jetzt aktualisieren</button><button class="btn btn-secondary" type="button" data-news-notification-toggle aria-pressed="false">Push aktivieren</button><button class="btn btn-secondary" type="button" data-news-mark-read hidden>Neue als gesehen markieren</button></div><p class="news-app-status" data-news-refresh-status aria-live="polite">Beim Öffnen und danach automatisch aktuell.</p><p>Push-Benachrichtigungen sind nur nach deiner Zustimmung aktiv und jederzeit wieder abschaltbar. Dafür speichern wir ein technisches Push-Abonnement auf unserem Oracle-Server; zugestellt wird über den Push-Dienst deines Geräts. <a href="../datenschutz.html#wirkungsticker-push">Datenschutzhinweise zu Push</a>. Unterstützte Smartphones melden neue Inhalte im Hintergrund und zeigen die Zahl ungelesener Meldungen am App-Icon.</p><p class="news-app-status" data-news-notification-status aria-live="polite">Push-Benachrichtigungen sind aus.</p></div></article></section>
+  <section class="section section-soft" id="methodik" aria-labelledby="ticker-method-title"><div class="news-method-grid"><article class="card news-principle"><p class="hero-kicker">Was hier anders ist</p><h2>Aufmerksamkeit ist kein Relevanzbeweis.</h2><p>Der Wirkungsticker bündelt Meldungen zum selben Ereignis in einer lebenden Wirkungsakte. Er trennt Fakt, Beobachtung und analytische Inferenz. Wirkungspotenzial wird nicht als eingetretene Wirkung ausgegeben, und offene Evidenz bleibt offen.</p><p class="news-method-note">Feeds: <a class="text-link" href="feed.xml">RSS</a> · <a class="text-link" href="feed.atom">Atom</a> · <a class="text-link" href="feed.json">JSON Feed</a></p><p class="wirkungsraum-save-row" data-wirkungsraum-actions-row></p></article><div><div class="section-header"><p class="hero-kicker">Qualität vor Takt</p><h2 id="ticker-method-title">So entsteht eine Veröffentlichung.</h2></div><div class="impact-process"><article class="impact-process__step"><span class="impact-process__index">1</span><h3>Breit recherchieren</h3><p>Medien, institutionelle Originalquellen und gezielte offene Forschungssuche liefern Recherchehinweise. Nur kostenlose öffentliche Zugänge, keine Paywall-Umgehung.</p></article><article class="impact-process__step"><span class="impact-process__index">2</span><h3>Lokal reduzieren</h3><p>URL-/Hash-Deduplizierung, Story-Clustering, Zeitfilter, Themenzuordnung und WÖk-Relevanzvoranalyse laufen ohne KI.</p></article><article class="impact-process__step"><span class="impact-process__index">3</span><h3>Gezielt analysieren</h3><p>Nur materialitätsstarke Storys gehen einzeln und getaktet an die bestehende Oracle-WÖk-KI. Nachrichteninhalte gelten dort als Daten, nie als Anweisung.</p></article><article class="impact-process__step"><span class="impact-process__index">4</span><h3>Fail closed</h3><p>Zentrale Behauptungen, Quellenbelege, erkennbare Abhängigkeiten, Terminologie und Textübernahme werden automatisch geprüft. Unzureichend belegte Aussagen werden zurückgestellt; gekennzeichnete offene Fragen dürfen offen bleiben.</p></article><article class="impact-process__step"><span class="impact-process__index">5</span><h3>Lernen</h3><p>Neue Quellen ergänzen dieselbe Story; frühere Analysen bleiben versioniert. Monitoring und Ex-post-Einordnung folgen erst mit neuen Daten.</p></article></div><p class="notice"><strong>Einordnung, kein amtliches Angebot:</strong> Die Analysen sind unabhängige WÖk-Einordnungen. Ziel- oder Indikatorbezug allein ist weder Wirkung noch Kausalitätsnachweis. Visuelle Anker wie Meter, Verfahrensstand oder Kennzahlen werden aus derselben quellengebundenen Analyse abgeleitet; Zahlen erscheinen nur, wenn sie in der Primärquelle stehen.</p></div></div></section>
 </main>`;
   return pageShell({
     title: "Wirkungsticker",
+    publicUpdatedAt: updatedAt,
     description: "Automatisch aktualisierte, quellengebundene Wirkungsnachrichten für Mensch, Planet und Demokratie.",
     canonical: `${SITE}/wirkungsticker/`,
     base: "../",
@@ -230,55 +343,153 @@ function indexPage(stories, updatedAt) {
       "@context": "https://schema.org", "@type": "CollectionPage", "@id": `${SITE}/wirkungsticker/#page`, url: `${SITE}/wirkungsticker/`, name: "Wirkungsticker", inLanguage: "de",
       dateModified: updatedAt, mainEntity: { "@type": "ItemList", itemListElement: stories.map((story, index) => ({ "@type": "ListItem", position: index + 1, url: `${SITE}/wirkungsticker/${story.slug}/`, name: story.title })) },
     },
-    extraScript: '<script src="../assets/js/news.js?v=20260903-3"></script>',
+    extraScript: '<script src="../assets/js/news.js?v=20260904-reader2"></script>',
   });
 }
 
-function storyPage(story) {
+export function renderClaimEvidenceLinks(claim, sources = []) {
+  const articles = new Map();
+  for (const proof of claim.evidence || []) {
+    const url = canonicalizeUrl(proof.url);
+    if (!url) continue;
+    if (!articles.has(url)) {
+      const source = sources.find((item) => canonicalizeUrl(item.url) === url);
+      articles.set(url, { source, excerpts: new Set() });
+    }
+    const excerpt = proof.excerpt_hash || proof.evidence_id || proof.excerpt;
+    if (excerpt) articles.get(url).excerpts.add(excerpt);
+  }
+  return [...articles].map(([url, { source, excerpts }]) => {
+    const publisher = source?.publisher || new URL(url).hostname;
+    const count = excerpts.size;
+    const label = `${publisher}${count ? ` · ${count} ${count === 1 ? "Textstelle" : "Textstellen"}` : ""}`;
+    return `<a class="text-link" href="${escapeHtml(url)}"${source?.title ? ` title="${escapeHtml(source.title)}"` : ""} target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+  }).join("; ");
+}
+
+const NEWS_STATUS_LABELS = { developing: "Sich entwickelnde Nachrichtenlage", preliminary: "Vorläufiger Nachrichtenstand", confirmed: "Bestätigter Nachrichtenkern", disputed: "Widersprüchliche Quellenlage", corrected: "Korrigierter Stand", updated: "Aktualisierter Stand" };
+
+function renderNewsStatusNotice(story) {
+  if (!story.news_status) return "";
+  const label = NEWS_STATUS_LABELS[story.news_status] || "Offener Stand";
+  const note = { developing: "Weitere Erkenntnisse können diesen Stand verändern.", preliminary: "Wesentliche Angaben sind noch vorläufig.", disputed: "Die Quellen widersprechen sich in wesentlichen Punkten.", corrected: "Bitte den Korrekturhinweis zu diesem Artikel beachten." }[story.news_status];
+  return `<aside class="news-status-notice" role="note" aria-label="Nachrichtenstand"><strong>${escapeHtml(label)}.</strong>${note ? ` ${escapeHtml(note)}` : ""} <a class="text-link" href="#belegstand">Belegstand ansehen</a></aside>`;
+}
+
+function renderNewsroomEvidence(story) {
+  if (!story.news_status) return "";
+  const status = NEWS_STATUS_LABELS[story.news_status] || "Offener Stand";
+  const labels = { single_source_claim: "Einer Quelle zugeschrieben", confirmed_claim: "Durch mehrere Belege gestützt", disputed_claim: "Strittig", primary_source_claim: "Primärbeleg / Selbstauskunft", uncertain_claim: "Ungeklärt" };
+  const claims = (story.claims || []).filter((claim) => claim.status).map((claim) => `<li><strong>${escapeHtml(labels[claim.status] || "Offen")}:</strong> ${escapeHtml(claim.claim)} ${renderClaimEvidenceLinks(claim, story.sources)}</li>`).join("");
+  const followups = (story.followups || []).map((followup) => `<li>${escapeHtml(followup.claim)} – Prüfpunkt: ${escapeHtml(followup.measurable_indicator)}. Nächste Recherche: ${escapeHtml(formatDate(followup.follow_up_date, { dateOnly: true }))}${followup.expected_by ? `; in der Quelle genannter Termin: ${escapeHtml(formatDate(followup.expected_by, { dateOnly: true }))}` : "; kein verbindlicher Quellentermin bekannt"}.</li>`).join("");
+  return `<article class="news-story-section news-evidence-status" id="belegstand" aria-label="Nachrichten- und Belegstand"><p class="hero-kicker">${escapeHtml(status)}</p><h2>Was ist wie belegt?</h2><ul>${claims}</ul><p class="news-method-note">Jeder Link führt zu einem Quellartikel. Mehrere Textstellen aus demselben Artikel sind keine voneinander unabhängigen Quellen.</p><p class="news-method-note">Automatische quellengebundene Prüfung, keine Garantie vollständiger oder fehlerfreier Berichterstattung. Abhängigkeiten zwischen Quellen können unerkannt bleiben; eine institutionelle Aussage belegt nicht automatisch den behaupteten Erfolg.</p>${followups ? `<details><summary>Geplante Folgeprüfungen</summary><ul>${followups}</ul></details>` : ""}</article>`;
+}
+
+export function renderRelatedStories(story, stories) {
+  const related = relatedStories(story, stories);
+  if (!related.length) return "";
+  return `<section class="section news-related" data-news-related data-search-exclude aria-labelledby="news-related-title"><div class="section-header"><p class="hero-kicker">Im Zusammenhang</p><h2 id="news-related-title">Weitere Nachrichten zum Thema</h2><p>Andere Vorgänge und Hintergründe mit konkretem Themenbezug. Neue Entwicklungen zu diesem Vorgang werden in dieser Akte fortgeschrieben.</p></div><ul class="news-related__list">${related.map(({ story: item, reason }) => `<li><article class="news-story-section"><p class="news-method-note">${escapeHtml(reason)}</p><h3><a class="text-link" href="../${escapeHtml(item.slug)}/">${escapeHtml(item.title)}</a></h3><p>${escapeHtml(item.analysis.summary)}</p><p class="news-method-note">WÖk-Analyse aktualisiert ${escapeHtml(formatDate(item.last_updated))}</p></article></li>`).join("")}</ul></section>`;
+}
+
+function renderConsolidations(story) {
+  const entries = story.living_file?.consolidations || [];
+  if (!entries.length) return "";
+  return `<aside class="notice news-consolidation" role="note"><strong>Zusammengeführte Berichterstattung:</strong> Frühere Meldungen zum selben Vorgang werden in dieser Akte fortgeführt. Die Zusammenführung selbst ist keine neue Nachricht. Frühere Stände bleiben nachvollziehbar:<ul>${entries.map((entry) => `<li><a class="text-link" href="../${escapeHtml(entry.slug)}/">${escapeHtml(entry.title)}</a> · zusammengeführt ${escapeHtml(formatDate(entry.at))}</li>`).join("")}</ul>${story.pending_update?.consolidation ? "<p>Zusätzliche Quellen aus der Zusammenführung stehen zur erneuten Prüfung an. Der angezeigte Nachrichten- und Analysestand bleibt bis dahin unverändert.</p>" : ""}</aside>`;
+}
+
+export function storyPage(story, { newerStory = null, nextStory = null, allStories = [] } = {}) {
+  const titleImage = publicTitleImage(story.title_image);
   const a = story.analysis;
-  const analysisType = a.analysis_type === "ex_ante" ? "Ex ante" : a.analysis_type === "ex_post" ? "Ex post" : "Monitoring";
-  const detailSummary = a.detail_summary || [
-    a.summary,
-    a.why_relevant,
-    `Der ausgewiesene Wirkpfad beschreibt ein Potenzial: ${a.impact_potential}`,
-    `Evidenzgrenze: ${a.evidence_level}`,
-  ].join(" ");
-  const factStatement = String(detailSummary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
-  const truthOpening = /^(fakt|gesichert|belegt)\b/i.test(factStatement)
-    ? factStatement
-    : `Gesichert ist: ${factStatement}`;
+  const detailSummary = expandedDetailSummary(a);
+  const factStatement = String(story.source_summary || detailSummary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
+  const truthOpening = story.news_status
+    ? `Nach dem derzeit belegten Quellenstand: ${factStatement}`
+    : /^(fakt|gesichert|belegt)\b/i.test(factStatement) ? factStatement : `Gesichert ist: ${factStatement}`;
   const primarySourceCount = story.sources.filter((source) => source.primary_source).length;
   const primarySourceNames = [...new Set(story.sources.filter((source) => source.primary_source).map((source) => source.publisher))].join(", ");
-  const sources = story.sources.map((source) => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><div class="news-source-meta"><span>${source.primary_source ? "Primärquelle" : "ergänzende Quelle"}</span><span>${escapeHtml(formatDate(source.published_at, { dateOnly: true }))}</span></div></li>`).join("");
-  const history = [...(story.versions || [])].reverse().map((version) => `<li><strong>Version ${escapeHtml(version.version)}</strong> · ${escapeHtml(formatDate(version.analyzed_at))} · ${escapeHtml(version.analysis.analysis_type === "ex_ante" ? "Ex ante" : version.analysis.analysis_type === "ex_post" ? "Ex post" : "Monitoring")}</li>`).join("");
-  const body = `<main id="main-content" data-search-content data-no-glossary>
-  <section class="hero news-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml((story.topic || []).join(" · "))}</p><h1 class="hero-title">${escapeHtml(story.title)}</h1><p class="hero-subtitle">${escapeHtml(a.summary)}</p><div class="news-hero__meta"><span>${escapeHtml(a.status)} · ${analysisType}</span><span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div></div></section>
+  const primary = story.sources.find((source) => source.primary_source) || story.sources[0];
+  const visuals = sanitizeVisuals(a.visuals, story).visuals;
+  const originalSources = [...story.sources]
+    .filter((source) => source.primary_source || !story.sources.some((item) => item.primary_source))
+    .sort((left, right) => Date.parse(right.published_at || 0) - Date.parse(left.published_at || 0));
+  const sourceSummaryLinks = originalSources.map((source, index) => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${index === 0 ? "Originalquelle ansehen" : `Weitere Originalquelle bei ${escapeHtml(source.publisher)}`}</span>${renderIcon("extern")}</a>`).join("");
+  const sources = story.sources.map((source) => `<li class="news-source"><span class="news-source__avatar${source.primary_source ? "" : " news-source__avatar--secondary"}" aria-hidden="true">${escapeHtml(publisherInitials(source.publisher))}</span><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</span>${renderIcon("extern")}</a><div class="news-source-meta"><span class="news-badge${source.primary_source ? "" : " news-badge--update"}">${source.primary_source ? "Primärbeleg / Selbstauskunft" : "Journalistischer Bericht / Kontext"}</span><span>${escapeHtml(formatDate(source.published_at, { dateOnly: true }))}</span>${source.publisher_id ? `<a class="text-link" href="../quellen/${escapeHtml(source.publisher_id)}/">Quellenprofil</a>` : ""}</div></li>`).join("");
+  const history = [...(story.versions || [])].reverse().map((version, index) => `<li${index === 0 ? ' class="is-current"' : ""}><strong>Version ${escapeHtml(version.version)} · ${escapeHtml(analysisTypeLabel(version.analysis?.analysis_type))}</strong><span>WÖk-Analyse ${escapeHtml(formatDate(version.analyzed_at))}</span></li>`).join("")
+    + `<li><strong>Ausgangsmeldung</strong><span>${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}${primary ? ` · ${escapeHtml(primary.publisher)}` : ""}</span></li>`;
+  const risks = [...(a.impact_risks || []), ...(a.side_effects || [])];
+  const riskList = risks.length
+    ? `<ul class="wt-risks">${risks.map((item) => `<li>${renderIcon("risiko")}<span>${escapeHtml(item)}</span></li>`).join("")}</ul>`
+    : '<p class="news-analysis-copy">Offen – die Quellenlage reicht für eine belastbare Konkretisierung noch nicht aus.</p>';
+  const newerLink = newerStory ? `<a class="news-story-pagination__link news-story-pagination__link--newer" href="../${escapeHtml(newerStory.slug)}/"><span aria-hidden="true">←</span><span><small>Neuere Meldung</small><strong>${escapeHtml(newerStory.title)}</strong></span></a>` : "";
+  const nextLink = nextStory ? `<a class="news-story-pagination__link news-story-pagination__link--next" href="../${escapeHtml(nextStory.slug)}/"><span><small>Nächste Meldung</small><strong>${escapeHtml(nextStory.title)}</strong></span><span aria-hidden="true">→</span></a>` : "";
+  const returnLink = `<a class="btn btn-secondary news-return-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">←</span><span>Zur Übersicht</span></a>`;
+  const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="detail">
+  <section class="hero news-hero news-hero--story"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p><h1 class="hero-title">${escapeHtml(story.title)}</h1><div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}</div></div></section>
+  ${titleImage?.wide ? `<figure class="news-title-image news-title-image--detail"><img src="${escapeHtml(titleImage.wide.url)}" alt="${escapeHtml(titleImage.label)} zum Thema ${escapeHtml(story.title)}" width="1200" height="675" decoding="async"><figcaption>${escapeHtml(titleImage.label)} · Darstellung, kein Beleg des Ereignisses.</figcaption></figure>` : ""}
+  ${renderNewsStatusNotice(story)}
+  ${(story.corrections || []).map((correction) => `<aside class="notice" role="note"><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}:</strong> ${escapeHtml(correction.note)}</aside>`).join("")}
+  <nav class="wt-subnav" aria-label="Abschnitte dieser Wirkungsakte"><div class="wt-subnav__inner"><a href="#nachricht">Nachricht</a>${story.news_status ? '<a href="#belegstand">Belegstand</a>' : ""}<a href="#faktencheck">Faktencheck</a><a href="#analyse">Analyse</a><a href="#einordnung">Einordnung</a><a href="#folgencheck">Folgencheck</a><a href="#bedeutung">Bedeutung</a><a href="#offen">Offene Fragen</a><a href="#quellen">Quellen</a></div></nav>
   <section class="section"><div class="news-story-layout"><div class="news-story-main">
-    <article class="news-story-section news-story-summary"><p class="hero-kicker">Kurzüberblick</p><h2>Was passiert ist und was daraus folgen kann</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p></article>
-    <article class="news-story-section news-fact-check"><p class="hero-kicker">Quellenprüfung</p><h2>Faktencheck</h2><p class="news-method-note"><strong>Wahrheit zuerst:</strong> Der belastbar bestätigte Sachverhalt steht vor Behauptungen, offenen Punkten und möglichen Folgen. So soll bloße Wiederholung keinen falschen Wahrheits­eindruck erzeugen.</p><div class="news-check-prose"><section><h3>Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Die Prüfung stützt sich auf ${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""} und ${story.claims.length} ${story.claims.length === 1 ? "tragenden, quellengebundenen Claim" : "tragende, quellengebundene Claims"}. Der Evidenzstand lautet: ${escapeHtml(a.evidence_level)}</p></section><section><h3>Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
-    <article class="news-story-section"><p class="hero-kicker">Einordnung</p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p><div class="news-dimensions">${dimensions(story)}</div></article>
-    <article class="news-story-section"><h2>Wirkungspotenzial</h2><p class="news-analysis-copy">${escapeHtml(a.impact_potential)}</p><h3>Wirkungsrisiken und Nebenfolgen</h3>${list([...(a.impact_risks || []), ...(a.side_effects || [])])}</article>
-    <article class="news-story-section news-consequence-check"><p class="hero-kicker">Folgencheck</p><h2>Wirkpfad und mögliche Folgen</h2><p class="news-method-note">Ausgangspunkt ist ausschließlich der oben gesicherte Sachverhalt. Der Folgencheck formuliert daraus begründete Wirkungspfade und Unsicherheiten; er ist kein Nachweis bereits eingetretener Wirkung.</p><div class="news-consequence-stack"><section><h3>Wirkmechanismus</h3><p>${prose(a.mechanisms)}</p></section><section><h3>Erste Ordnung – unmittelbar</h3><p>${prose(a.first_order)}</p></section><section><h3>Zweite Ordnung – nachgelagert</h3><p>${prose(a.second_order)}</p></section><section><h3>Dritte Ordnung – systemisch</h3><p>${prose(a.third_order)}</p></section><section><h3>Risiken, Gegenläufe und Prüfgrenzen</h3><p>${prose([...(a.impact_risks || []), ...(a.side_effects || []), ...(a.uncertainties || [])])}</p></section></div></article>
-    <article class="news-story-section"><h2>Systemische Bedeutung</h2><p class="news-analysis-copy">${escapeHtml(a.systemic_relevance)}</p><h3>Transformationspotenzial</h3><p class="news-analysis-copy">${escapeHtml(a.transformation_potential)}</p><h3>Resilienz</h3><p class="news-analysis-copy">${escapeHtml(a.resilience)}</p></article>
-    <article class="news-story-section"><h2>Offene Fragen und Unsicherheiten</h2>${list(a.uncertainties)}<h3>Worauf jetzt zu achten ist</h3>${list(a.watch_next)}</article>
+    <article class="news-story-section news-source-summary" data-news-source-summary id="nachricht"><p class="hero-kicker">${renderIcon("meldung")}<span>Nachricht</span></p><h2>Worum geht es?</h2><p class="news-source-summary__note">Eigenständige Nachricht auf Grundlage der verlinkten Quellen. Die wirkungsökonomische Einordnung beginnt erst nach dem Faktencheck.</p><div class="news-source-summary__copy">${sourceSummaryParagraphs(story.source_summary)}</div>${renderKeyFigures(visuals, story)}${renderChart(visuals)}${renderTimeline(visuals)}<div class="news-source-summary__links">${sourceSummaryLinks}</div></article>
+    ${renderNewsroomEvidence(story)}
+    <article class="news-story-section news-fact-check" id="faktencheck"><p class="hero-kicker">${renderIcon("wahrheit")}<span>Quellenprüfung</span></p><h2>Faktencheck</h2><p class="news-method-note"><strong>Wahrheit zuerst:</strong> Der belastbar bestätigte Sachverhalt steht vor Behauptungen, offenen Punkten und möglichen Folgen. So soll bloße Wiederholung keinen falschen Wahrheits­eindruck erzeugen.</p><div class="news-check-prose"><section><h3>${renderIcon("check")}Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Die Prüfung stützt sich auf ${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""} und ${story.claims.length} ${story.claims.length === 1 ? "tragenden, quellengebundenen Claim" : "tragende, quellengebundene Claims"}. Der Evidenzstand lautet: ${escapeHtml(a.evidence_level)}</p></section><section><h3>${renderIcon("offen")}Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
+    ${renderConsolidations(story)}
+    ${renderAtAGlance(story, { formatDate })}
+    <article class="news-story-section news-story-summary" id="analyse"><p class="hero-kicker">${renderIcon("systemisch")}<span>Wirkungsökonomische Analyse</span></p><h2>Einordnung im Überblick</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p>${renderAffectedGroups(visuals)}</article>
+    <article class="news-story-section" id="einordnung"><p class="hero-kicker">${renderIcon("folgen")}<span>Einordnung</span></p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p>${renderDimensionMeters(a, { tendency: visuals?.tendency || null })}${visuals?.tendency ? '<p class="news-method-note">Tendenz je Dimension: analytische Einschätzung, ob Wirkungspotenzial oder Wirkungsrisiko überwiegt. Kein Nachweis eingetretener Wirkung.</p>' : ""}</article>
+    <article class="news-story-section news-consequence-check" id="folgencheck"><p class="hero-kicker">${renderIcon("folgen")}<span>Folgencheck</span></p><h2>Wirkpfad und mögliche Folgen</h2><p class="news-method-note">Ausgangspunkt ist ausschließlich der oben gesicherte Sachverhalt. Der Folgencheck formuliert daraus begründete Wirkungspfade und Unsicherheiten; er ist kein Nachweis bereits eingetretener Wirkung.</p><p class="news-lead"><strong>Wirkungspotenzial:</strong> ${escapeHtml(a.impact_potential)}</p>${renderImpactPath(a, prose)}<h3>Risiken, Gegenläufe und Prüfgrenzen</h3>${riskList}</article>
+    <article class="news-story-section" id="bedeutung"><p class="hero-kicker">${renderIcon("transformation")}<span>Systemische Bedeutung</span></p><h2>Was die Meldung für das System bedeutet</h2><div class="wt-meaning"><div class="wt-meaning__item"><h3>${renderIcon("systemisch")}Systemrelevanz</h3><p>${escapeHtml(a.systemic_relevance)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("transformation")}Transformationspotenzial</h3><p>${escapeHtml(a.transformation_potential)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("resilienz")}Resilienz</h3><p>${escapeHtml(a.resilience)}</p></div></div></article>
+    <article class="news-story-section" id="offen"><p class="hero-kicker">${renderIcon("offen")}<span>Offen</span></p><h2>Offene Fragen und Beobachtungspunkte</h2><div class="wt-questions"><div><h3>${renderIcon("offen")}Unsicherheiten</h3>${list(a.uncertainties)}</div><div><h3>${renderIcon("beobachten")}Worauf jetzt zu achten ist</h3>${list(a.watch_next)}</div></div></article>
   </div><aside class="news-story-aside">
-    <article class="news-story-section"><p class="hero-kicker">Quellenakte</p><h2>Primärquellen</h2><ul class="news-source-list">${sources}</ul><p><strong>Evidenzgrad:</strong> ${escapeHtml(a.evidence_level)}</p><p><strong>Zurechnung:</strong> ${escapeHtml(a.attribution)}</p><p><strong>Referenzrahmen:</strong> ${escapeHtml((a.reference_frameworks || []).join(" · ") || "objektspezifisch offen")}</p><p class="news-method-note">Das interne Claim-Ledger bindet ${story.claims.length} ${story.claims.length === 1 ? "tragenden Claim" : "tragende Claims"} an die oben genannten Quellen. Feed-Kurztexte werden nicht als Originalartikel gespiegelt.</p></article>
-    <article class="news-story-section"><h2>Versionsverlauf</h2><ol>${history}</ol><p><a class="text-link" href="../">Zurück zum Wirkungsticker</a></p></article>
+    <article class="news-story-section" id="quellen"><p class="hero-kicker">${renderIcon("quelle")}<span>Quellenakte</span></p><h2>Quellen und Belegrollen</h2><ul class="news-source-list">${sources}</ul><div class="wt-evidence"><div class="wt-evidence__item"><strong>${renderIcon("wahrheit")}Evidenzgrad</strong><span>${escapeHtml(a.evidence_level)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("check")}Zurechnung</strong><span>${escapeHtml(a.attribution)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("bildung")}Referenzrahmen</strong><span>${escapeHtml((a.reference_frameworks || []).join(" · ") || "objektspezifisch offen")}</span></div></div><p class="news-method-note">Das interne Claim-Ledger bindet ${story.claims.length} ${story.claims.length === 1 ? "tragenden Claim" : "tragende Claims"} an die oben genannten Quellen. Feed-Kurztexte werden nicht als Originalartikel gespiegelt.</p></article>
+    <article class="news-story-section"><p class="hero-kicker">${renderIcon("version")}<span>Verlauf</span></p><h2>Versionsverlauf</h2><ol class="wt-versions">${history}</ol><p><a class="text-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list>Zurück zur Übersicht an die vorige Leseposition</a></p></article>
   </aside></div></section>
+  ${renderRelatedStories(story, allStories)}
+  <section class="section news-story-footer" aria-label="Weitere Wirkungsnachrichten"><div class="news-story-footer__inner"><div class="news-story-footer__share"><p class="hero-kicker">Behalten &amp; weitergeben</p><h2>Nachricht merken oder teilen</h2><div class="news-reader-actions">${saveControl(story)}${shareControl(story, "bottom")}<a class="text-link" href="../../mein-wirkungsraum/#gemerkte-inhalte">Meine Merkliste</a></div></div><div class="news-reader-actions" data-search-exclude><button class="btn btn-secondary" type="button" data-news-reader-back hidden>← Zurück im Leseweg</button><p class="news-swipe-hint" data-news-swipe-hint hidden>Wischen: rechts zurück${nextStory ? ", links zur nächsten Meldung" : ""}.</p></div><nav class="news-story-pagination" aria-label="Zwischen Wirkungsnachrichten blättern">${newerLink}<a class="news-story-pagination__overview" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">↑</span><span>Zur Übersicht und Leseposition</span></a>${nextLink}</nav></div></section>
 </main>`;
   return pageShell({
     title: story.title,
     description: a.summary.slice(0, 158),
+    titleImage,
     canonical: `${SITE}/wirkungsticker/${story.slug}/`,
     base: "../../",
     body,
     jsonLd: {
       "@context": "https://schema.org", "@type": "AnalysisNewsArticle", "@id": `${SITE}/wirkungsticker/${story.slug}/#article`,
-      url: `${SITE}/wirkungsticker/${story.slug}/`, headline: story.title, description: a.summary, inLanguage: "de",
+      url: `${SITE}/wirkungsticker/${story.slug}/`, headline: story.title, description: a.summary, abstract: story.source_summary, inLanguage: "de",
       datePublished: story.published_at, dateModified: story.last_updated,
+      ...(titleImage?.og ? { image: titleImage.og.url.startsWith("/") ? `${SITE}${titleImage.og.url}` : titleImage.og.url } : {}),
       author: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       articleSection: story.topic, citation: story.sources.map((source) => source.url),
+    },
+    extraScript: '<script src="../../assets/js/news-share.js?v=20260903-2"></script>',
+  });
+}
+
+function retiredStoryPage(story) {
+  const retirement = story.retirement || {};
+  const canonicalTargets = (retirement.canonical_story_ids || []).map((storyId) => {
+    const target = retirement.canonical_stories?.find((entry) => entry.story_id === storyId);
+    return target ? `<li><a href="../${escapeHtml(target.slug)}/">${escapeHtml(target.title)}</a></li>` : "";
+  }).filter(Boolean).join("");
+  const sources = (story.sources || []).map((source) => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a></li>`).join("");
+  const body = `<main id="main-content" data-no-glossary>
+  <section class="hero news-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker">Transparenzhinweis</p><h1 class="hero-title">${escapeHtml(story.title)}</h1><p class="hero-subtitle">Diese Meldung gehört nicht mehr zur laufenden Auswahl des Wirkungstickers.</p><div class="news-hero__meta"><span>Historisch veröffentlicht: ${escapeHtml(formatDate(story.published_at))}</span><span>Erneut geprüft: ${escapeHtml(formatDate(story.retired_at || retirement.at))}</span></div></div></section>
+  <section class="section"><article class="news-story-section"><h2>Warum die Meldung nicht mehr gelistet wird</h2><p class="news-analysis-copy">${escapeHtml(retirement.note || "Die erneute Prüfung hat keinen hinreichend neuen und materiellen Nachrichtenwert für die laufende Auswahl bestätigt.")}</p><p>Die frühere Veröffentlichung wird nicht still gelöscht. Sie bleibt als transparenter historischer Stand erhalten, erscheint aber weder auf der aktuellen Übersicht noch in RSS, Atom oder JSON Feed.</p>${canonicalTargets ? `<h3>Fortgeführte Wirkungsakte</h3><ul>${canonicalTargets}</ul>` : ""}</article>
+  <article class="news-story-section"><h2>Historische Einordnung</h2><p>${escapeHtml(story.analysis?.summary || "Keine historische Kurzfassung vorhanden.")}</p><h3>Quellen des damaligen Stands</h3><ul class="news-source-list">${sources}</ul><p><a class="text-link" href="../">Zur aktuellen Auswahl</a></p></article></section>
+</main>`;
+  return pageShell({
+    title: `${story.title} – historischer Stand`,
+    description: "Transparenzhinweis zu einer nach erneuter Relevanzprüfung nicht mehr gelisteten Wirkungsnachricht.",
+    canonical: `${SITE}/wirkungsticker/${story.slug}/`,
+    base: "../../",
+    body,
+    robots: "noindex,follow",
+    feedLinks: false,
+    jsonLd: {
+      "@context": "https://schema.org", "@type": "WebPage", "@id": `${SITE}/wirkungsticker/${story.slug}/#historical`,
+      url: `${SITE}/wirkungsticker/${story.slug}/`, name: story.title, inLanguage: "de", dateModified: story.retired_at || retirement.at,
     },
   });
 }
@@ -301,8 +512,10 @@ function legacyRedirect(target, title = "Wirkungsticker") {
 function publicStory(story) {
   return {
     story_id: story.story_id,
+    title_image: publicTitleImage(story.title_image),
     slug: story.slug,
     title: story.title,
+    source_summary: story.source_summary,
     summary: story.analysis.summary,
     detail_summary: story.analysis.detail_summary || null,
     why_relevant: story.analysis.why_relevant,
@@ -311,19 +524,27 @@ function publicStory(story) {
     analysis_type: story.analysis.analysis_type,
     importance: story.analysis.importance,
     dimensions: { human: story.analysis.human, planet: story.analysis.planet, democracy: story.analysis.democracy },
+    visuals: sanitizeVisuals(story.analysis.visuals, story).visuals,
     first_seen: story.first_seen,
     last_updated: story.last_updated,
     version: story.current_version,
+    news_status: story.news_status || null,
+    event_id: story.event_id || null,
+    source_published_at: firstSourceDate(story),
+    published_at: story.published_at,
+    evidence_groups: story.evidence_groups || null,
+    followups: story.followups || [],
     sources: story.sources.map(({ publisher, url, source_type, published_at, primary_source }) => ({ publisher, url, source_type, published_at, primary_source })),
   };
 }
 
-function updateSitemap(stories, updatedAt, oldSlugs) {
+function updateSitemap(stories, updatedAt, oldSlugs, extraRoutes = []) {
   const file = path.join(ROOT, "sitemap.xml");
   if (!fs.existsSync(file)) return;
   let xml = fs.readFileSync(file, "utf8");
   const routes = new Set([
     "news/wirkungsticker/", "wirkungsticker/",
+    ...extraRoutes,
     ...stories.flatMap((story) => [`news/${story.slug}/`, `wirkungsticker/${story.slug}/`]),
     ...oldSlugs.flatMap((slug) => [`news/${slug}/`, `wirkungsticker/${slug}/`]),
   ]);
@@ -332,44 +553,56 @@ function updateSitemap(stories, updatedAt, oldSlugs) {
     xml = xml.replace(new RegExp(`\\s*<url>\\s*<loc>${escaped}<\\/loc>[\\s\\S]*?<\\/url>`, "g"), "");
   }
   const lastmod = String(updatedAt || new Date().toISOString()).slice(0, 10);
-  const entries = ["wirkungsticker/", ...stories.map((story) => `wirkungsticker/${story.slug}/`)].map((route) => `  <url><loc>${SITE}/${route}</loc><lastmod>${lastmod}</lastmod></url>`).join("\n");
+  const entries = ["wirkungsticker/", ...stories.map((story) => `wirkungsticker/${story.slug}/`), ...extraRoutes].map((route) => `  <url><loc>${SITE}/${route}</loc><lastmod>${lastmod}</lastmod></url>`).join("\n");
   xml = xml.replace("</urlset>", `${entries}\n</urlset>`);
   write(file, xml);
 }
 
 export function buildNewsSite() {
   const data = readJson(STORIES_FILE);
-  const stories = (data.stories || []).filter((story) => story.published && story.analysis).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
+  const publicationUpdatedAt = data.public_updated_at || data.updated_at;
+  const stories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
+  const retiredStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed === false);
   const sourceManifest = fs.existsSync(MANIFEST_FILE) ? MANIFEST_FILE : LEGACY_MANIFEST_FILE;
   const oldSlugs = fs.existsSync(sourceManifest) ? readJson(sourceManifest).slugs || [] : [];
-  const currentSlugs = new Set(stories.map((story) => story.slug));
+  const currentSlugs = new Set([...stories, ...retiredStories].map((story) => story.slug));
   for (const slug of oldSlugs) {
     if (!currentSlugs.has(slug) && /^[a-z0-9-]+$/.test(slug)) {
       fs.rmSync(path.join(TICKER_DIR, slug), { recursive: true, force: true });
       fs.rmSync(path.join(LEGACY_NEWS_DIR, slug), { recursive: true, force: true });
     }
   }
-  write(path.join(TICKER_DIR, "index.html"), indexPage(stories, data.updated_at));
-  for (const story of stories) write(path.join(TICKER_DIR, story.slug, "index.html"), storyPage(story));
-  write(path.join(TICKER_DIR, "feed.xml"), feedXml(stories, data.updated_at));
-  write(path.join(TICKER_DIR, "feed.atom"), feedXml(stories, data.updated_at, true));
+  write(path.join(TICKER_DIR, "index.html"), indexPage(stories, publicationUpdatedAt));
+  for (const [index, story] of stories.entries()) {
+    write(path.join(TICKER_DIR, story.slug, "index.html"), storyPage(story, {
+      newerStory: stories[index - 1] || null,
+      nextStory: stories[index + 1] || null,
+      allStories: stories,
+    }));
+  }
+  for (const story of retiredStories) write(path.join(TICKER_DIR, story.slug, "index.html"), retiredStoryPage(story));
+  write(path.join(TICKER_DIR, "feed.xml"), feedXml(stories, publicationUpdatedAt));
+  write(path.join(TICKER_DIR, "feed.atom"), feedXml(stories, publicationUpdatedAt, true));
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
+    _woek_revision: `${PUBLIC_RELEASE}:${publicationUpdatedAt}`,
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));
-  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.0", updated_at: data.updated_at, stories: stories.map(publicStory) }, null, 2));
+  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.1", updated_at: publicationUpdatedAt, stories: stories.map(publicStory) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
   write(path.join(LEGACY_NEWS_DIR, "wirkungsticker/index.html"), legacyRedirect("/wirkungsticker/"));
   for (const story of stories) write(path.join(LEGACY_NEWS_DIR, story.slug, "index.html"), legacyRedirect(`/wirkungsticker/${story.slug}/`, story.title));
-  write(path.join(LEGACY_NEWS_DIR, "feed.xml"), feedXml(stories, data.updated_at));
-  write(path.join(LEGACY_NEWS_DIR, "feed.atom"), feedXml(stories, data.updated_at, true));
+  for (const story of retiredStories) write(path.join(LEGACY_NEWS_DIR, story.slug, "index.html"), legacyRedirect(`/wirkungsticker/${story.slug}/`, story.title));
+  write(path.join(LEGACY_NEWS_DIR, "feed.xml"), feedXml(stories, publicationUpdatedAt));
+  write(path.join(LEGACY_NEWS_DIR, "feed.atom"), feedXml(stories, publicationUpdatedAt, true));
   write(path.join(LEGACY_NEWS_DIR, "feed.json"), JSON.stringify({
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));
-  updateSitemap(stories, data.updated_at, oldSlugs);
-  console.log(`Wirkungsticker gebaut: ${stories.length} veröffentlichte Storys, RSS/Atom/JSON.`);
-  return { stories: stories.length, updated_at: data.updated_at };
+  const sourceRoutes = buildSourcePages(loadNewsRegistry(ROOT), readJson(path.join(ROOT, "data/news/state.json")), { pageShell, write, escapeHtml, root: ROOT, site: SITE, formatDate });
+  updateSitemap(stories, publicationUpdatedAt, oldSlugs, sourceRoutes);
+  console.log(`Wirkungsticker gebaut: ${stories.length} aktuelle und ${retiredStories.length} transparent archivierte Storys, RSS/Atom/JSON.`);
+  return { stories: stories.length, retired_stories: retiredStories.length, updated_at: publicationUpdatedAt };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) buildNewsSite();

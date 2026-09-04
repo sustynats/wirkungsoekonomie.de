@@ -1,0 +1,128 @@
+diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
+index f56bf32..d62202e 100644
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -769,7 +769,7 @@ function parseProductCheckRequest(value: unknown): EvidenceInput & { product: st
+   return { product, context, claim, url, ...parseEvidenceInput(record) };
+ }
+ 
+-function parseSharedResultRequest(value: unknown): SharedResultInput {
++export function parseSharedResultRequest(value: unknown): SharedResultInput {
+   if (!value || typeof value !== "object" || Array.isArray(value)) {
+     throw new UserError("Bitte ein Ergebnis als JSON senden.");
+   }
+@@ -777,8 +777,8 @@ function parseSharedResultRequest(value: unknown): SharedResultInput {
+   const record = value as Record<string, unknown>;
+   const target = readFeedbackTarget(record.target);
+   const title = limitOptionalString(record.title, 180) ?? "WÖk-Ergebnis";
+-  const question = limitOptionalString(record.question, 3000) ?? "";
+-  const answer = limitOptionalString(record.answer, 8000) ?? "";
++  const question = readCompleteSharedText(record.question, 12000);
++  const answer = readCompleteSharedText(record.answer, 80000);
+   const sections = readSharedResultSections(record.sections);
+ 
+   if (!target) {
+@@ -794,11 +794,29 @@ function parseSharedResultRequest(value: unknown): SharedResultInput {
+     question,
+     answer,
+     sections,
+-    sources: readFeedbackSources(record.sources),
++    sources: readSharedSources(record.sources),
+     route: limitOptionalString(record.route, 120)
+   };
+ }
+ 
++function readCompleteSharedText(value: unknown, limit: number): string {
++  if (typeof value !== "string") return "";
++  const text = value.trim();
++  if (text.length > limit) throw new UserError("Dieses Ergebnis ist zu lang zum Teilen. Es wurde nicht gekürzt oder veröffentlicht.");
++  return text;
++}
++
++function readSharedSources(value: unknown): AnswerFeedbackSource[] {
++  if (!Array.isArray(value)) return [];
++  if (value.length > 30) throw new UserError("Zu viele Quellen zum Teilen.");
++  return value.flatMap((item) => {
++    if (!item || typeof item !== "object") return [];
++    const url = normalizeOptionalUrl(item.url);
++    if (!url) return [];
++    return [{ url, title: readCompleteSharedText(item.title, 1000) || "Quelle", excerpt: readCompleteSharedText(item.excerpt || item.note || item.supports, 4000) }];
++  });
++}
++
+ function readSharedResultSections(value: unknown): SharedResultInput["sections"] {
+   if (!Array.isArray(value)) {
+     return [];
+diff --git a/src/services/sharedResultStore.ts b/src/services/sharedResultStore.ts
+index a34bee5..c668bcf 100644
+--- a/src/services/sharedResultStore.ts
++++ b/src/services/sharedResultStore.ts
+@@ -1,6 +1,6 @@
+ import { randomUUID } from "node:crypto";
+ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+-import { dirname } from "node:path";
++import { dirname, join } from "node:path";
+ import type { AnswerFeedbackSource, AnswerFeedbackTarget } from "../types.js";
+ 
+ export interface SharedResultSection {
+@@ -50,6 +50,11 @@ export class SharedResultStore {
+     };
+ 
+     const operation = this.writeChain.then(async () => {
++      if (item.target === "woek-ai") {
++        // Public opt-in answer snapshots are durable, separate from the expiring result cache.
++        await this.persistPermanent(item);
++        return;
++      }
+       const state = this.state as SharedResultState;
+       this.prune(state);
+       state.results.unshift(item);
+@@ -63,13 +68,33 @@ export class SharedResultStore {
+   }
+ 
+   async get(id: string): Promise<SharedResult | undefined> {
++    if (!/^sr-[0-9a-f-]{36}$/i.test(id)) return undefined;
+     await this.init();
++    try {
++      const item: unknown = JSON.parse(await readFile(this.permanentPath(id), "utf8"));
++      if (!isSharedResult(item) || item.id !== id) throw new Error("Invalid permanent shared result.");
++      return structuredClone(item);
++    } catch (error) {
++      if (!isMissingFileError(error)) throw error;
++    }
+     const state = this.state as SharedResultState;
+     this.prune(state);
+     const item = state.results.find((result) => result.id === id);
+     return item ? structuredClone(item) : undefined;
+   }
+ 
++  private permanentPath(id: string): string {
++    return join(`${this.options.file}.permanent`, `${id}.json`);
++  }
++
++  private async persistPermanent(item: SharedResult): Promise<void> {
++    const file = this.permanentPath(item.id);
++    await mkdir(dirname(file), { recursive: true, mode: 0o700 });
++    const temporary = `${file}.tmp`;
++    await writeFile(temporary, `${JSON.stringify(item)}\n`, { encoding: "utf8", mode: 0o600 });
++    await rename(temporary, file);
++  }
++
+   private prune(state: SharedResultState): void {
+     const minCreatedAt = Date.now() - this.options.maxAgeMs;
+     state.results = state.results.filter((item) => Date.parse(item.createdAt) >= minCreatedAt);
+@@ -89,8 +114,13 @@ export class SharedResultStore {
+     try {
+       const raw = await readFile(this.options.file, "utf8");
+       this.state = normalizeState(JSON.parse(raw));
++      // Preserve still-existing legacy AI shares before any age/count pruning.
++      // Keep their old cache entries too: this migration never deletes source data.
++      for (const item of this.state.results) {
++        if (item.target === "woek-ai" && /^sr-[0-9a-f-]{36}$/i.test(item.id)) await this.persistPermanent(item);
++      }
+     } catch (error) {
+-      if (isMissingFileError(error)) {
++      if (isMissingFileError(error) && !this.state) {
+         this.state = createEmptyState();
+         await this.persist();
+         return;

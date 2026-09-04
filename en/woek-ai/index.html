@@ -252,43 +252,34 @@
           grid-template-columns: minmax(0, 1fr) minmax(280px, 0.38fr);
         }
       }
-    </style>
+    </style><link rel="stylesheet" href="../../assets/css/woek-ai-results.css?v=20260904">
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
 
     <header class="site-header" data-search-exclude>
-      <a class="brand" href="../../en/" aria-label="Wirkungsökonomie English homepage">
-        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+      <a class="brand" href="../" aria-label="Wirkungsökonomie English homepage">
+        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie logo"></span>
         <span class="brand-name">Wirkungsökonomie</span>
       </a>
       <nav class="site-utility-nav" aria-label="Quick links" data-search-exclude>
-        <a class="site-utility-link site-utility-link--suche" href="../../en/search/" data-nav-match="en/" data-utility-label="Search">Search</a>
-        <a class="site-utility-link site-utility-link--frag-die-wok" href="../../en/" data-nav-match="en/" data-utility-label="Frag die WÖk">Frag die WÖk</a>
-        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../en/my-impact-space/" data-nav-match="en/" data-utility-label="My Impact Space" data-utility-primary="true">My Impact Space</a>
-        <a class="site-utility-link site-utility-link--language" href="../../woek-ki/" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>
+        <a class="site-utility-link site-utility-link--suche" href="../search/" data-nav-match="en/search/" data-utility-label="Search">Search</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../woek-ai/" data-nav-match="en/woek-ai/" data-utility-label="WÖk AI">AI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../app/" data-nav-match="en/app/" data-utility-label="WÖk App">WÖk App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../my-impact-space/" data-nav-match="en/my-impact-space/" data-utility-label="My Impact Space" data-utility-primary="true">My Impact Space</a>
+        <a class="site-utility-link site-utility-link--language" href="../../index.html" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>
       </nav>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-icon" aria-hidden="true">☰</span>
         <span class="sr-only">Menu</span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-search-exclude>
-        <a href="../../en/" data-nav-match="en/">Home</a>
-        <a href="../../en/#understand" data-nav-match="en/">Understand</a>
-        <a href="../../en/#audiences" data-nav-match="en/">For whom?</a>
-        <a href="../../en/#impact-fields" data-nav-match="en/">Impact fields</a>
-        <a href="../../en/#governance" data-nav-match="en/">Impact governance</a>
-        <a href="../../en/#public-impact-space" data-nav-match="en/">Public impact space</a>
-        <a href="../../en/tools/" data-nav-match="en/tools/">Tools</a>
-        <a href="../../en/#learn" data-nav-match="en/">Learn</a>
-        <a href="../../en/library/" data-nav-match="en/library/">Library</a>
-        <a href="../../en/#join" data-nav-match="en/">Join</a>
-        <div class="site-nav-utility" aria-label="Quick links">
-        <a class="site-utility-link site-utility-link--suche" href="../../en/search/" data-nav-match="en/" data-utility-label="Search">Search</a>
-        <a class="site-utility-link site-utility-link--frag-die-wok" href="../../en/" data-nav-match="en/" data-utility-label="Frag die WÖk">Frag die WÖk</a>
-        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../en/my-impact-space/" data-nav-match="en/" data-utility-label="My Impact Space" data-utility-primary="true">My Impact Space</a>
-        <a class="site-utility-link site-utility-link--language" href="../../woek-ki/" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>
-        </div>
+        <a href="../">Home</a>
+        <a href="../tools/">Tools</a>
+        <a href="../library/">Library</a>
+        <a href="../woek-ai/" aria-current="page">AI</a>
+        <a href="../app/">App</a>
+        <a href="../my-impact-space/">My Impact Space</a>
       </nav>
     </header>
     <main id="content" data-search-content>
@@ -344,6 +335,7 @@
     </footer>
     <script src="../../assets/js/main.js?v=20260704-en-runtime"></script>
 
+    <script src="../../assets/js/woek-ai-results.js?v=20260904"></script>
     <script>
       const form = document.querySelector("#woek-ai-form");
       const question = document.querySelector("#woek-ai-question");
@@ -358,20 +350,27 @@
       const sourceCount = document.querySelector("#woek-ai-source-count");
       const sources = document.querySelector("#woek-ai-sources");
       const apiBase = window.WOEK_API_BASE || "https://130.162.217.58.sslip.io";
+      const answerResults = window.WoekAiResults.attach({ apiBase, render(item, shared) {
+        question.value = item.question; answer.textContent = item.answer; placeholder.hidden = true;
+        mode.textContent = shared ? "Shared answer" : "Saved answer";
+        provider.textContent = item.provider || "WÖk AI"; model.textContent = item.model || "Saved snapshot";
+        renderSources(item.sources); setReady();
+      } });
       function setReady() { submit.disabled = !question.value.trim(); }
       function escapeHtml(text) { return String(text || "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]); }
       function renderSources(items) {
-        const list = Array.isArray(items) ? items : [];
+        const list = window.WoekAiResults.safeSources(items);
         sourceCount.textContent = String(list.length);
         sources.innerHTML = list.length ? list.map((item) => '<a class="woek-ai-source-card" href="' + escapeHtml(item.url || "#") + '"><span>Source</span><strong>' + escapeHtml(item.title || item.url || "Reference") + '</strong><p>' + escapeHtml(item.excerpt || item.note || "") + '</p></a>').join("") : '<p class="card-text">No sources returned.</p>';
       }
       question.addEventListener("input", setReady);
-      clearButton.addEventListener("click", () => { question.value = ""; answer.textContent = ""; placeholder.hidden = false; warning.hidden = true; mode.textContent = "Ready"; renderSources([]); setReady(); });
+      clearButton.addEventListener("click", () => { answerResults.clear(); question.value = ""; answer.textContent = ""; placeholder.hidden = false; warning.hidden = true; mode.textContent = "Ready"; renderSources([]); setReady(); });
       document.querySelectorAll(".woek-ai-example").forEach((button) => button.addEventListener("click", () => { question.value = button.textContent.trim(); setReady(); question.focus(); }));
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
         const value = question.value.trim();
         if (!value) return;
+        answerResults.begin();
         submit.disabled = true;
         mode.textContent = "Checking";
         placeholder.hidden = true;
@@ -386,6 +385,7 @@
           provider.textContent = payload.provider || "Hosted API";
           model.textContent = payload.model || "OpenAI-compatible";
           renderSources(payload.sources || payload.references || []);
+          answerResults.capture({ question: value, answer: answer.textContent, sources: payload.sources || payload.references || [], model: model.textContent, provider: provider.textContent });
         } catch (error) {
           mode.textContent = "Unavailable";
           answer.textContent = "";
@@ -396,6 +396,7 @@
         }
       });
       setReady();
+      answerResults.restore();
     </script>
   </body>
 </html>

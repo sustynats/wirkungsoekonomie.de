@@ -2,13 +2,15 @@
   "schema_version": "1.0",
   "updated_at": "2026-09-03",
   "policy": {
-    "user_agent": "WOek-Wirkungsticker/1.0 (+https://wirkungsoekonomie.de/news/)",
+    "user_agent": "WOek-Wirkungsticker/2.0 (+https://wirkungsoekonomie.de/wirkungsticker/)",
     "max_feed_bytes": 1500000,
+    "max_article_bytes": 2000000,
+    "max_article_excerpt_chars": 7000,
     "request_timeout_ms": 18000,
     "max_redirects": 3,
     "max_items_per_source": 24,
     "bootstrap_lookback_hours": 36,
-    "copying_rule": "Nur Feed-Metadaten und kurze Abstracts als Analysegrundlage verwenden. Keine Volltexte spiegeln; öffentlich eigene Kurzfassungen und Original-Links ausgeben."
+    "copying_rule": "Nur vorgefilterte Primärquellen kontrolliert und begrenzt als Analysegrundlage abrufen. Keine Volltexte speichern oder spiegeln; öffentlich ausschließlich eigene Kurzfassungen und Original-Links ausgeben."
   },
   "sources": [
     {
@@ -125,6 +127,99 @@
       "primary_source": true,
       "enabled": true,
       "priority": 86,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundesnetzagentur-presse",
+      "name": "Bundesnetzagentur – Pressemitteilungen",
+      "url": "https://www.bundesnetzagentur.de/Pressemitteilungen",
+      "feed_url": "https://www.bundesnetzagentur.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed_Pressemitteilungen.xml?nn=654666",
+      "source_type": "official_rss",
+      "topic": "Energie",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 94,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "umweltbundesamt-presse",
+      "name": "Umweltbundesamt – Pressemitteilungen",
+      "url": "https://www.umweltbundesamt.de/presse",
+      "feed_url": "https://www.umweltbundesamt.de/rss/presse",
+      "source_type": "official_rss",
+      "topic": "Klima",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 95,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bmas-aktuell",
+      "name": "Bundesministerium für Arbeit und Soziales",
+      "url": "https://bmas.bund.de/",
+      "feed_url": "https://bmas.bund.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml",
+      "allowed_redirect_hosts": ["www.bmas.de"],
+      "source_type": "official_rss",
+      "topic": "Arbeit",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 94,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "eu-kommission-presse",
+      "name": "Europäische Kommission – Press Corner",
+      "url": "https://ec.europa.eu/commission/presscorner/home/de",
+      "feed_url": "https://ec.europa.eu/commission/presscorner/api/rss?language=de",
+      "source_type": "official_rss",
+      "topic": "Europa",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 94,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "bundesverwaltungsgericht-presse",
+      "name": "Bundesverwaltungsgericht – Pressemitteilungen",
+      "url": "https://www.bverwg.de/",
+      "feed_url": "https://ssl.bverwg.de/rss/pressemitteilungen.rss",
+      "source_type": "official_rss",
+      "topic": "Demokratie",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 95,
+      "allowed_redirect_hosts": ["www.bverwg.de"],
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "woek-journal",
+      "name": "Journal der Wirkungsökonomie",
+      "url": "https://wirkungsoekonomie.de/journal/",
+      "feed_url": "https://wirkungsoekonomie.de/feeds/journal.xml",
+      "source_type": "woek_journal_rss",
+      "topic": "Wirkungsökonomie",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 82,
+      "last_success": null,
+      "last_error": null
+    },
+    {
+      "source_id": "woek-parlament-bewertungen",
+      "name": "Wirkungsportal Parlament – veröffentlichte WÖk-Bewertungen",
+      "url": "https://parlament.wirkungsoekonomie.de/",
+      "feed_url": "https://parlament.wirkungsoekonomie.de/api/parliament/cases",
+      "source_type": "woek_public_assessments_json",
+      "topic": "Demokratie",
+      "primary_source": true,
+      "enabled": true,
+      "priority": 90,
       "last_success": null,
       "last_error": null
     }

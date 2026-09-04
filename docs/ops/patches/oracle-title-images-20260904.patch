@@ -1,0 +1,105 @@
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -30,8 +30,12 @@
+   resetAt: number;
+ }
+ 
+-type RateLimitFeature = ApiFeature | "feedback" | "community" | "share" | "news-push" | "news-analysis";
++type RateLimitFeature = ApiFeature | "feedback" | "community" | "share" | "news-push" | "news-analysis" | "news-title-image";
+ 
++export interface NewsVisualProvider {
++  generate(story: Record<string, unknown>): Promise<{ bytes: Buffer; sha256: string; model: string; job_id?: string; generated_at: string; prompt_version: string; reused: boolean }>;
++}
++
+ interface CommunitySessionPayload {
+   v: 1;
+   sub: string;
+@@ -62,6 +66,7 @@
+   woekAiProvider?: WoekAiAnswerProvider;
+   newsAiProvider?: WoekAiAnswerProvider;
+   newsAnalysisBudget?: NewsAnalysisBudget;
++  newsVisualProvider?: NewsVisualProvider;
+   productCheckProvider?: ProductCheckProvider;
+   budgetTracker?: UsageBudgetTracker;
+   accessQuotaTracker?: AccessQuotaTracker;
+@@ -94,6 +99,33 @@
+       if (request.method === "GET" && requestUrl.pathname === "/api/news-push/config") {
+         enforceRateLimit(request, rateLimit, "news-push", 120);
+         sendJson(response, 200, { ok: true, ...(providers.newsPushService?.publicConfiguration() ?? { enabled: false }) });
++        return;
++      }
++
++      if (request.method === "POST" && requestUrl.pathname === "/api/news-title-image") {
++        if (!providers.newsPushService?.isAuthorized(readBearerToken(request))) {
++          sendJson(response, 403, { ok: false, reason: "NOT_AUTHORIZED" });
++          return;
++        }
++        enforceRateLimit(request, rateLimit, "news-title-image", 12);
++        const body = await readJsonBody(request, 20000);
++        const story = body && typeof body === "object" && !Array.isArray(body) ? body as Record<string, unknown> : {};
++        if (typeof story.story_id !== "string" || !/^wt-[a-f0-9]{16}$/.test(story.story_id) || typeof story.title !== "string" || story.title.length > 500 || typeof story.source_summary !== "string" || story.source_summary.length > 4000 || !Array.isArray(story.topic) || story.topic.length > 10 || story.topic.some((v) => typeof v !== "string" || v.length > 80) || !Array.isArray(story.claims) || story.claims.length > 10 || story.claims.some((v) => !v || typeof v !== "object" || typeof v.claim !== "string" || v.claim.length > 2000)) {
++          sendJson(response, 400, { ok: false, reason: "IMAGE_INPUT_INVALID" });
++          return;
++        }
++        if (!providers.newsVisualProvider) {
++          sendJson(response, 200, { ok: false, reason: "HIGGSFIELD_NOT_CONFIGURED" });
++          return;
++        }
++        try {
++          const result = await providers.newsVisualProvider.generate(story);
++          // Never expose the private journal, credential location or provider URL.
++          sendJson(response, 200, { ok: true, image_base64: result.bytes.toString("base64"), sha256: result.sha256, model: result.model, job_id: result.job_id, generated_at: result.generated_at, prompt_version: result.prompt_version, reused: result.reused });
++        } catch (error) {
++          const code = (error as { code?: string })?.code || "";
++          sendJson(response, 200, { ok: false, reason: /^[A-Z][A-Z0-9_]{2,70}$/.test(code) ? code : "TITLE_IMAGE_UNAVAILABLE" });
++        }
+         return;
+       }
+ 
+@@ -203,7 +235,7 @@
+           sendJson(response, 401, { ok: false, error: "Nicht autorisiert." });
+           return;
+         }
+-        enforceRateLimit(request, rateLimit, "news-analysis", 24);
++        enforceRateLimit(request, rateLimit, "news-analysis", 48);
+         if (!providers.newsAiProvider) throw new FactcheckProviderError("Nachrichtenanalyse ist nicht konfiguriert.", 503);
+         if (newsAnalysisActive) {
+           response.setHeader("Retry-After", "30");
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -3,7 +3,9 @@
+ import { registerCommunityAutoRole } from "./discord/communityAutoRole.js";
+ import { handleButtonInteraction, handleCommand, handleModalSubmit } from "./discord/commands.js";
+ import { DiscordAnalyticsReporter, registerDiscordServerAnalytics } from "./discord/serverAnalytics.js";
+-import { startApiServer } from "./http/apiServer.js";
++import { startApiServer, type NewsVisualProvider } from "./http/apiServer.js";
++import { pathToFileURL } from "node:url";
++import path from "node:path";
+ import { FactcheckService } from "./services/factcheckService.js";
+ import { FactcheckCacheStore } from "./services/factcheckCache.js";
+ import { FeedbackStore } from "./services/feedbackStore.js";
+@@ -59,6 +61,16 @@
+ });
+ const newsPushService = new NewsPushService(config.newsPush);
+ const newsAnalysisBudget = new NewsAnalysisBudget("./data/news-analysis-budget.json");
++let newsVisualProvider: NewsVisualProvider | undefined;
++if (process.env.WOEK_HIGGSFIELD_ENABLED === "true") {
++  try {
++    const moduleUrl = pathToFileURL(path.join(process.cwd(), "news-media/scripts/news/title-image/higgsfield.mjs")).href;
++    const module = await import(moduleUrl);
++    newsVisualProvider = module.createHiggsfieldAdapter({ directory: path.join(process.cwd(), "data/news-title-images"), enabled: true });
++  } catch {
++    console.warn("HIGGSFIELD_ADAPTER_UNAVAILABLE: news publishing remains enabled with title-card fallback.");
++  }
++}
+ const openAiBaseOptions = config.openAiApiKey
+   ? {
+       apiKey: config.openAiApiKey,
+@@ -129,6 +141,7 @@
+     newsPushService,
+     newsAiProvider,
+     newsAnalysisBudget,
++    newsVisualProvider,
+     discordAnalyticsStore
+   });
+ }
