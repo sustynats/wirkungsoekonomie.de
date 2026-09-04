@@ -149,6 +149,8 @@ denselben Auftrag wiederaufgenommen. Oracle führt einen separaten Journalpfad j
 Story/Promptrevision und archiviert den bisherigen Datensatz vor der Promotion.
 Die normale Pipeline bestellt bei einem bloßen Promptupdate weiterhin keine
 Ersatzmotive. Die oben dokumentierte Aufhebung der Tages-/Monatslimits gilt auch hier.
+Veraltete Wirkungskarten-Templates werden in derselben ausdrücklich freigegebenen
+Auswahl kostenlos neu gerendert; dafür wird keine Prompt-Erneuerung beauftragt.
 Im bestehenden Workflow startet `title_images_refresh_editorial=true` diesen
 opt-in Pfad; Standard bleibt false. Die OCR hat für detailreiche Fotos pro Pass
 30 Sekunden und einen OpenMP-Thread auf der Micro-VM; Regeln/Schwellen unverändert.

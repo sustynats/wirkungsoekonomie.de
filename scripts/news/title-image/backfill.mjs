@@ -13,8 +13,9 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
   const reportFile = path.join(root, "reports/wirkungsticker-latest-run.json");
   const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
+  const needsEditorialRefresh = story => chooseTitleImageMode(story).mode === "editorial" && (story.title_image?.mode !== "editorial" || ![C.prompt_version, "woek-editorial-3-concrete"].includes(story.title_image?.source_visual?.prompt_version));
   const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (refreshEditorial
-    ? chooseTitleImageMode(story).mode === "editorial" && (story.title_image?.mode !== "editorial" || ![C.prompt_version, "woek-editorial-3-concrete"].includes(story.title_image?.source_visual?.prompt_version))
+    ? needsEditorialRefresh(story) || (story.title_image?.mode === "impact_card" && story.title_image.template_version !== C.template_version)
     : (!editorialOnly || story.title_image?.mode === "editorial") && (renderOnly ? story.title_image : !story.title_image?.wide || story.title_image.retry_after)));
   const worker = prepare || createTitleImagePipeline({ root, allowGeneration: !renderOnly, maxGenerations: limit });
   const results = []; let changed = 0;
@@ -24,13 +25,13 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
     // this bounded batch stops, normal server-triggered runs finish one queued
     // bounded images at a time; no recurring paid all-history backfill is introduced.
     const queuedAt = new Date().toISOString();
-    for (const story of selected) story.title_image = { ...story.title_image, retry_after: queuedAt, ...(refreshEditorial ? { refresh_prompt_version: C.prompt_version } : {}) };
+    for (const story of selected) story.title_image = { ...story.title_image, retry_after: queuedAt, ...(refreshEditorial && needsEditorialRefresh(story) ? { refresh_prompt_version: C.prompt_version } : {}) };
     fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
   }
   const deadline = Date.now() + maxDurationMs;
   for (const story of selected) {
     if (!dryRun && Date.now() >= deadline) break;
-    const input = dryRun && refreshEditorial ? { ...story, title_image: { ...story.title_image, refresh_prompt_version: C.prompt_version } } : story;
+    const input = dryRun && refreshEditorial && needsEditorialRefresh(story) ? { ...story, title_image: { ...story.title_image, refresh_prompt_version: C.prompt_version } } : story;
     const result = await worker(input, { dryRun, cardsOnly });
     if (dryRun) { results.push(result); continue; }
     // An overlay-only batch must not replace a working motif with a fallback

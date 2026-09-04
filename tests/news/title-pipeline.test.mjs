@@ -395,12 +395,14 @@ test("explicit refresh snapshots eligible old images and newly visualisable card
     { ...STORY, story_id: "wt-1234567890abcdeb", published: true, title: "Ermittlungen", title_image: title },
     { ...STORY, story_id: "wt-1234567890abcdec", published: true, title_image: { mode: "impact_card" } },
     { ...STORY, story_id: "wt-1234567890abcded", published: true, title_image: { ...title, source_visual: { prompt_version: "woek-editorial-3-concrete" } } },
+    { ...STORY, story_id: "wt-1234567890abcdee", published: true, title: "Ermittlungen", title_image: { mode: "impact_card", template_version: "old" } },
   ];
   const file = path.join(root, "data/news/stories.json"); fs.writeFileSync(file, JSON.stringify({ stories }));
   fs.writeFileSync(path.join(root, "reports/wirkungsticker-latest-run.json"), "{}");
   const before = fs.readFileSync(file, "utf8");
   const dry = await backfillTitleImages({ root, refreshEditorial: true, limit: 20 });
-  assert.equal(dry.candidates, 2); assert.equal(dry.results[0].would_generate, true);
+  assert.equal(dry.candidates, 3); assert.equal(dry.results[0].would_generate, true);
+  assert.equal(dry.results[2].would_generate, false);
   assert.equal(fs.readFileSync(file, "utf8"), before);
   await backfillTitleImages({ root, refreshEditorial: true, dryRun: false, maxDurationMs: 0, limit: 20, build: () => {} });
   const saved = JSON.parse(fs.readFileSync(file)).stories;
@@ -408,6 +410,8 @@ test("explicit refresh snapshots eligible old images and newly visualisable card
   assert.deepEqual(publicTitleImage(saved[0].title_image), publicTitleImage(stories[0].title_image));
   for (const i of [1, 2, 4]) assert.deepEqual(saved[i], stories[i]);
   assert.equal(saved[3].title_image.refresh_prompt_version, C.prompt_version);
+  assert.equal(saved[5].title_image.refresh_prompt_version, undefined);
+  assert.ok(saved[5].title_image.retry_after);
   assert.equal(saved[0].source_summary, STORY.source_summary);
   await assert.rejects(backfillTitleImages({ root, refreshEditorial: true, renderOnly: true }), /REFRESH_MODE_CONFLICT/);
 });
