@@ -1084,6 +1084,33 @@
       },
       "source_failures": 0,
       "quality_holds": 106
+    },
+    {
+      "run_id": "news-run-7c59a3b41204",
+      "started_at": "2026-09-04T01:26:36.485Z",
+      "completed_at": "2026-09-04T01:30:18.159Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 852,
+        "feed_entries_new": 6,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 604,
+        "story_clusters": 12,
+        "locally_rejected": 11,
+        "ai_stories": 12,
+        "published_stories": 3
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 82771,
+        "output_tokens": 19038,
+        "estimated_cost_usd": 0.119239,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 102
     }
   ]
 }
