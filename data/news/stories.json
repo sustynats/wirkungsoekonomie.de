@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T20:51:27.444Z",
+  "updated_at": "2026-09-04T21:06:37.992Z",
   "stories": [
     {
       "story_id": "wt-d7a0af1afc831caf",
@@ -615,6 +615,131 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T20:51:56.847Z",
         "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-9d9b1a5968a2d3b8",
+      "slug": "energieversorgung-grosserer-polizeieinsatz-mit-hubschrauber-an-stromanlage-a2d3b8",
+      "title": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage",
+      "first_seen": "2026-09-04T19:08:14.000Z",
+      "last_updated": "2026-09-04T20:39:51.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/energieversorgung--groesserer-polizeieinsatz-mit-hubschrauber-an-stromanlage-38210260.html",
+          "title": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage",
+          "summary": "Schon wieder ein Vorfall an Stromleitungen in NRW, diesmal in Hamm. Die Polizei geht der Sache mit einem größeren Aufgebot nach. Die Stromanlage ist allerdings seit längerem außer Betrieb.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T20:39:51.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "353a4066a5541b059e527c6106cae82329b82c2d13b47805fa36e17ce0483fc2",
+          "source_item_id": "b5c930292bbc030b081fcfd736f72a9c0afdf66f70795a3c1a56d4ded3c644be",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T20:39:51.000Z",
+          "ingested_at": "2026-09-04T21:06:37.992Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9d9b1a5968a2d3b8-claim-01",
+          "story_id": "wt-9d9b1a5968a2d3b8",
+          "claim": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage: Schon wieder ein Vorfall an Stromleitungen in NRW, diesmal in Hamm. Die Polizei geht der Sache mit einem größeren Aufgebot nach. Die Stromanlage ist allerdings seit längerem außer Betrieb.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T21:06:37.992Z"
+        }
+      ],
+      "content_hash": "2e211839dffcbbc99d066a6292d0341f5df8b00bfb19303a57faf50c2085bc4b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T21:06:37.992Z",
+      "event_first_seen_at": "2026-09-04T19:21:19.205Z",
+      "event_detected_at": "2026-09-04T19:21:19.205Z",
+      "event_id": "event-403947adbac29ba7c2ab",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 26.7832,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 105.31311666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T21:06:37.992Z",
+      "rejection": {
+        "at": "2026-09-04T21:06:37.992Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -5953,7 +6078,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-04T20:36:32.644Z",
+          "ingested_at": "2026-09-04T21:06:37.992Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -5980,7 +6105,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:36:32.644Z"
+          "checked_at": "2026-09-04T21:06:37.992Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -5988,11 +6113,11 @@
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_MATERIALITY_TOO_LOW"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T20:36:32.644Z",
+      "updated_at": "2026-09-04T21:06:37.992Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -6022,25 +6147,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 51.5274,
+        "source_age_minutes": 81.61653333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.09401666666666,
+        "queue_age_minutes": 135.18315,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
-        "freshness_warning": null
+        "news_freshness_score": 83,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T20:36:32.644Z",
+      "rejected_at": "2026-09-04T21:06:37.992Z",
       "rejection": {
-        "at": "2026-09-04T20:36:32.644Z",
+        "at": "2026-09-04T21:06:37.992Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
+          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -8087,133 +8212,6 @@
         }
       ],
       "retirement_history": []
-    },
-    {
-      "story_id": "wt-9d9b1a5968a2d3b8",
-      "slug": "energieversorgung-grosserer-polizeieinsatz-mit-hubschrauber-an-stromanlage-a2d3b8",
-      "title": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage",
-      "first_seen": "2026-09-04T19:08:14.000Z",
-      "last_updated": "2026-09-04T19:08:14.000Z",
-      "topic": [
-        "Energie",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/energieversorgung--groesserer-polizeieinsatz-mit-hubschrauber-an-stromanlage-38210260.html",
-          "title": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage",
-          "summary": "Schon wieder ein Vorfall an Stromleitungen in NRW, diesmal in Hamm. Die Polizei geht der Sache mit einem größeren Aufgebot nach - um was genau es sich handelt, sagt sie zunächst nicht.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:43:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "9a0ab3119ca0830d43e1a90c02acae49656198b0baed7b78b00eeed36c5e873f",
-          "source_item_id": "b5c930292bbc030b081fcfd736f72a9c0afdf66f70795a3c1a56d4ded3c644be",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:43:28.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-9d9b1a5968a2d3b8-claim-01",
-          "story_id": "wt-9d9b1a5968a2d3b8",
-          "claim": "Energieversorgung: Größerer Polizeieinsatz mit Hubschrauber an Stromanlage: Schon wieder ein Vorfall an Stromleitungen in NRW, diesmal in Hamm. Die Polizei geht der Sache mit einem größeren Aufgebot nach - um was genau es sich handelt, sagt sie zunächst nicht.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T19:50:26.018Z"
-        }
-      ],
-      "content_hash": "800b55d0cd83210c8d9ed42ae8e6aeb792de4edd9260950a729be13ce92544b5",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T19:50:26.018Z",
-      "event_first_seen_at": "2026-09-04T19:21:19.205Z",
-      "event_detected_at": "2026-09-04T19:21:19.205Z",
-      "event_id": "event-403947adbac29ba7c2ab",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie",
-          "Wirtschaft"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.966966666666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 29.11355,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T19:50:26.018Z",
-      "rejection": {
-        "at": "2026-09-04T19:50:26.018Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
     },
     {
       "story_id": "wt-63b6c057c20a2143",
@@ -17893,7 +17891,85 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-04T21:06:37.992Z",
+        "content_hash": "082dbecaaf96259681c105d37289101cde44a217f26e4c1c31f2059316657ef3",
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:15:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
+            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:15:33.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+            "title": "Liveticker Strom-Sabotage: Polizei verlässt Hambacher Forst",
+            "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen Polizei-Einsatz am Hambacher Forst. Infos zu den Ermittlungen im Ticker.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T20:58:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "6a0d0c18f05574deeca8c7b390caadf7ac1c12b8de51e2ec1f392de4ad908b11",
+            "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T20:58:25.000Z",
+            "ingested_at": "2026-09-04T21:06:37.992Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_EVIDENCE_NOT_IN_SOURCE",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+          "AI_EXCESSIVE_SOURCE_SUMMARY_COPY"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false
+      }
     },
     {
       "story_id": "wt-76dd7f8508f81c11",
@@ -20384,13 +20460,13 @@
           "publisher": "Der Tagesspiegel",
           "url": "https://www.tagesspiegel.de/berlin/free-palestine-bei-schulpodium-linksjugend-neukolln-verteilt-kalaschnikow-sticker-an-schuler-16020276.html",
           "title": "„Free Palestine“ bei Schulpodium: Linksjugend Neukölln verteilt Kalaschnikow-Sticker an Schüler",
-          "summary": "Der Berliner Linke ringt um ihre Haltung zum Krieg im Nahen Osten – und versucht, den Bezirksverband Neukölln einzuhegen. Der reagiert mit einer neuen Provokation.",
+          "summary": "Die Berliner Linke ringt um ihre Haltung zum Krieg im Nahen Osten – und versucht, den Bezirksverband Neukölln einzuhegen. Der reagiert mit einer neuen Provokation.",
           "source_type": "media_rss",
           "published_at": "2026-09-04T16:59:26.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "7f1fc06a54394d536ee10110d010f98a63584b5865fbf63f80235e722287eece",
+          "content_hash": "8ddeb5b8ad5d716f03872b1dba0b2ca0e40df07dbfedaaccf4a2c2b6a4be078c",
           "source_item_id": "b5db025852f92b54a07b11152d1962cb246d3350f3f336bad09125e5d994f3e5",
           "publisher_id": "tagesspiegel",
           "publisher_kind": "journalism",
@@ -20403,7 +20479,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T16:59:26.000Z",
-          "ingested_at": "2026-09-04T17:21:09.783Z",
+          "ingested_at": "2026-09-04T21:06:37.992Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
@@ -20415,7 +20491,7 @@
         {
           "claim_id": "wt-cc2357f8b9e34cc6-claim-01",
           "story_id": "wt-cc2357f8b9e34cc6",
-          "claim": "„Free Palestine“ bei Schulpodium: Linksjugend Neukölln verteilt Kalaschnikow-Sticker an Schüler: Der Berliner Linke ringt um ihre Haltung zum Krieg im Nahen Osten – und versucht, den Bezirksverband Neukölln einzuhegen. Der reagiert mit einer neuen Provokation.",
+          "claim": "„Free Palestine“ bei Schulpodium: Linksjugend Neukölln verteilt Kalaschnikow-Sticker an Schüler: Die Berliner Linke ringt um ihre Haltung zum Krieg im Nahen Osten – und versucht, den Bezirksverband Neukölln einzuhegen. Der reagiert mit einer neuen Provokation.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
@@ -20430,10 +20506,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T17:34:55.826Z"
+          "checked_at": "2026-09-04T21:06:37.992Z"
         }
       ],
-      "content_hash": "7b7606fdc63ca227c0b573b52417dc9596ba7efc74c19f9f30f7bffd4f920f93",
+      "content_hash": "3e900eb8c4f39fee764d72d720954b3aca0dd504dc58b102eac61df0cc7188fa",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
@@ -20442,7 +20518,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T17:34:55.826Z",
+      "updated_at": "2026-09-04T21:06:37.992Z",
       "event_first_seen_at": "2026-09-04T17:21:09.783Z",
       "event_detected_at": "2026-09-04T17:21:09.783Z",
       "event_id": "event-085967a1ab5844d1292a",
@@ -20470,20 +20546,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 35.4971,
+        "source_age_minutes": 247.19986666666668,
         "detection_delay_minutes": 21.72971666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 13.767383333333333,
+        "queue_age_minutes": 225.47015,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
-        "freshness_warning": null
+        "news_freshness_score": 49,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T17:34:55.826Z",
+      "rejected_at": "2026-09-04T21:06:37.992Z",
       "rejection": {
-        "at": "2026-09-04T17:34:55.826Z",
+        "at": "2026-09-04T21:06:37.992Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -32304,6 +32380,131 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-261a407788ec8f85",
+      "slug": "reiche-menschen-nehmen-kindern-eher-sussigkeiten-weg-ig-nobelpreise-fur-kuriose-forschun-ec8f85",
+      "title": "Reiche Menschen nehmen Kindern eher Süßigkeiten weg: Ig-Nobelpreise für kuriose Forschung vergeben",
+      "first_seen": "2026-09-04T14:24:39.000Z",
+      "last_updated": "2026-09-04T14:24:39.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wissen/die-etwas-anderen-nobelpreise-erst-forschen-dann-lachen-dann-nachdenken-16017459.html",
+          "title": "Reiche Menschen nehmen Kindern eher Süßigkeiten weg: Ig-Nobelpreise für kuriose Forschung vergeben",
+          "summary": "Erst lachen, dann lernen: Ig-Nobelpreise werden für kuriose Wissenschaft vergeben. Ob Schabenmilch oder der Duft der Teenies – die ausgezeichneten Arbeiten zeigen, dass Forschungsgeist keine Furcht kennt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:24:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "42b4bdc99b3d1a0134efd6c4372383651f8ba3ee32b375feff97009b354178ca",
+          "source_item_id": "72c5b3f8c7ad6c5fd0013fca9b1124950aef0803829c9e0b8262ac6c44bb98e2",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:24:39.000Z",
+          "ingested_at": "2026-09-04T21:06:37.992Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-261a407788ec8f85-claim-01",
+          "story_id": "wt-261a407788ec8f85",
+          "claim": "Reiche Menschen nehmen Kindern eher Süßigkeiten weg: Ig-Nobelpreise für kuriose Forschung vergeben: Erst lachen, dann lernen: Ig-Nobelpreise werden für kuriose Wissenschaft vergeben. Ob Schabenmilch oder der Duft der Teenies – die ausgezeichneten Arbeiten zeigen, dass Forschungsgeist keine Furcht kennt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T21:06:37.992Z"
+        }
+      ],
+      "content_hash": "a0bc94ce9524404b3b504de3e8dfbd965a3d1b68179ccac3d0801cb5c1cc35d6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T21:06:37.992Z",
+      "event_first_seen_at": "2026-09-04T21:06:37.992Z",
+      "event_detected_at": "2026-09-04T21:06:37.992Z",
+      "event_id": "event-51766ad50db2215a9bb4",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 401.9832,
+        "detection_delay_minutes": 401.9832,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 16,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T21:06:37.992Z",
+      "rejection": {
+        "at": "2026-09-04T21:06:37.992Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
