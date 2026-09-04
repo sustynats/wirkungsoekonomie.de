@@ -47,6 +47,9 @@ export function serializeEvidencePackets(stories, dense = false) {
 // Second, lossless packing stage for growing files. Text equality is exact;
 // URLs, identities, dates, contrary statements and source roles are retained.
 function packTransport(story) {
+  // Match normal JSON omission semantics before producing positional cells:
+  // an undefined property is absent, not a real null value.
+  story = JSON.parse(JSON.stringify(story));
   const counts = new Map();
   function count(value, key) {
     if (typeof value === 'string' && value.length >= 50 && !['url', 'source_id', 'claim_id', 'evidence_id'].includes(key)) counts.set(value, (counts.get(value) || 0) + 1);

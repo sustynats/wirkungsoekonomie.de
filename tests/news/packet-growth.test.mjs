@@ -21,6 +21,8 @@ test('dense tables and text references round-trip roles, nulls, omissions, IDs a
   const packed=JSON.parse(serializeEvidencePackets([story],true))[0];
   assert.deepEqual(expandPacketTransport(packed),story);
   assert.deepEqual(expandEvidenceSegments(packed),story.sources);
+  const optional={sources:[{url:'https://example.org/optional',published_at:undefined,provenance:null,evidence_segments:[]}]};
+  assert.deepEqual(expandPacketTransport(JSON.parse(serializeEvidencePackets([optional],true))[0]),JSON.parse(JSON.stringify(optional)));
   assert.throws(()=>expandPacketTransport({sources:[{$text:9}],text_pool:[]}),/PACKET_TEXT_REFERENCE_INVALID/);
 });
 test('an authenticated budget refusal is not retried or charged as an unknown provider failure',async()=>{
