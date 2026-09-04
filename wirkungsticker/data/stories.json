@@ -1,7 +1,126 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T18:36:20.968Z",
+  "updated_at": "2026-09-04T18:51:27.003Z",
   "stories": [
+    {
+      "story_id": "wt-d175d26e4635ba0a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
+      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Der Bericht beschreibt die Anlage als grünes Band durch das Quartier, das zugleich Erholung, Treffpunkt und Spielort sein soll.\n\nGenannt werden eine Zisterne und Rückhaltemulden zum Sammeln von Regenwasser sowie klimaresiliente Bäume, die Schatten spenden und kühlen sollen. Der östliche Abschnitt umfasst 12.500 Quadratmeter; nach und nach soll der Park auf 28.000 Quadratmeter wachsen. Für den westlichen Teil wird 2027 genannt.",
+      "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Die Anlage soll Regenwasser speichern, kühlen und im Quartier als öffentlicher Treffpunkt dienen.",
+      "detail_summary": "Gesichert ist die Teilöffnung des Schönhof-Viertelparks in Frankfurt, die der Bericht mit mehreren Bausteinen beschreibt: 12.500 Quadratmeter im östlichen Abschnitt, eine geplante Ausdehnung auf 28.000 Quadratmeter sowie eine spätere Fertigstellung des Westteils 2027. Der Park ist laut Quelle mit einer Zisterne, Rückhaltemulden und klimaresilienten Bäumen ausgestattet. Das ist relevant, weil hier Stadtentwicklung und Klimaanpassung im selben Projekt zusammenlaufen. Der mögliche Wirkpfad führt über Wasserrückhalt, Beschattung und zusätzliche Aufenthaltsflächen zu veränderten Bedingungen im Quartier. Als mögliche Folge nennt die Quelle vor allem geringere Hitze- und Belastungsspitzen sowie mehr nutzbaren Freiraum; gemessene Effekte liegen aber noch nicht vor. Die Evidenz bleibt auf eine journalistische Quelle begrenzt, daher sind die tatsächliche Kühl- oder Speicherwirkung und die spätere Gesamtumsetzung offen.",
+      "why_relevant": "Der Bericht enthält eine konkrete Teilinbetriebnahme öffentlicher Infrastruktur mit klar benannten Klimaanpassungs- und Quartiersfunktionen. Das ist für Mensch, Planet und kommunale Stadtentwicklung potenziell relevant, weil sich Nutzung, Mikroklima und Aufenthaltsqualität im Quartier verändern können.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mehr öffentlicher Grünraum und bessere Aufenthaltsbedingungen können das Quartier für Anwohner und künftige Nutzer spürbar verändern."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Wasserrückhalt, Beschattung und klimaresiliente Bepflanzung zielen auf Anpassung an Hitze und Starkregen im Stadtraum."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht vor allem um kommunale Planung und öffentliche Fläche; unmittelbare demokratiespezifische Effekte sind nicht belegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Östlicher Abschnitt",
+            "value": "12.500",
+            "unit": "Quadratmeter",
+            "context": "Fläche des nun geöffneten Parkteils"
+          },
+          {
+            "label": "Endausbau",
+            "value": "28.000",
+            "unit": "Quadratmeter",
+            "context": "Geplante Gesamtgröße der Anlage"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "kinder_jugend",
+          "kommunen"
+        ],
+        "timeline": [
+          {
+            "date": "2027",
+            "label": "Westteil soll folgen"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "chance",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T15:27:13.000Z",
+      "last_updated": "2026-09-04T18:52:45.973Z",
+      "version": 3,
+      "news_status": "preliminary",
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "source_published_at": "2026-09-03T15:27:13.000Z",
+      "published_at": "2026-09-04T01:02:06.108Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der westliche Teil des Parks soll 2027 folgen.",
+          "source_id": "hr-hessenschau",
+          "expected_by": "2027-12-31",
+          "measurable_indicator": "Eröffnung oder offizielle Inbetriebnahme des westlichen Abschnitts",
+          "expected_by_evidence_hash": "384943076b0b50ffac8af42cb343bf2bc438168d9799da0c8beeb08e7beec3a1",
+          "followup_id": "followup-417454c8547c2001",
+          "announced_at": "2026-09-03T15:27:13.000Z",
+          "follow_up_date": "2027-12-31T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T15:27:13.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-31724816547fc87d",
       "title_image": {
@@ -223,20 +342,20 @@
     {
       "story_id": "wt-03c6bacdda808696",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-9af931a15fa9d405-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-24b72254775b0eec-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-fb624fb3f290a738-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-6dfc694f9f6dbd8d-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-18de4554de1f82e9-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-079b3a39f725e3c8-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -5987,114 +6106,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-03T08:58:00.000Z",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-d175d26e4635ba0a",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
-      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
-      "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
-      "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
-      "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
-      "topic": [
-        "Klima"
-      ],
-      "status": "laufende Umsetzung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "eröffneter Abschnitt",
-            "value": "12.500",
-            "unit": "Quadratmeter",
-            "context": "Größe des nun zugänglichen Parkteils"
-          },
-          {
-            "label": "Endausbau",
-            "value": "28.000",
-            "unit": "Quadratmeter",
-            "context": "geplante Gesamtgröße des Parks"
-          },
-          {
-            "label": "Bäume",
-            "value": "181",
-            "unit": "Stück",
-            "context": "als klimaresilient beschriebene Bäume"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "kinder_jugend",
-          "kommunen",
-          "natur"
-        ],
-        "tendency": {
-          "human": "chance",
-          "planet": "chance",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-03T15:27:13.000Z",
-      "last_updated": "2026-09-04T05:22:51.361Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-8b84ae4650626fa86f6f",
-      "source_published_at": "2026-09-03T15:27:13.000Z",
-      "published_at": "2026-09-04T01:02:06.108Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T15:27:13.000Z",
-          "primary_source": false
         }
       ]
     },
