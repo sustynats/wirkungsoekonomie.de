@@ -77,8 +77,26 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
       const prompt = buildEditorialImagePrompt(story);
       if (!prompt) throw imageError("NO_SAFE_SYMBOLIC_MOTIF");
       const folder = path.join(directory, id);
-      const journal = path.join(folder, "source-visual.json");
+      // Only an explicitly queued, current prompt revision may replace a motif.
+      // Its independent durable journal retains even an ambiguous paid submit;
+      // the last good original remains available to ordinary callers meanwhile.
+      const refresh = story.refresh_prompt_version;
+      if (refresh && refresh !== C.prompt_version) throw imageError("HIGGSFIELD_REFRESH_VERSION_INVALID");
+      const currentJournal = path.join(folder, "source-visual.json");
+      const journal = refresh ? path.join(folder, `source-visual-${digest(refresh).slice(0, 16)}.json`) : currentJournal;
+      const promote = (record) => {
+        if (!refresh) return;
+        if (fs.existsSync(currentJournal)) {
+          const old = JSON.parse(fs.readFileSync(currentJournal, "utf8"));
+          atomicJson(path.join(folder, `source-visual-history-${digest(JSON.stringify(old)).slice(0, 16)}.json`), old);
+        }
+        atomicJson(currentJournal, record);
+      };
       let record = fs.existsSync(journal) ? JSON.parse(fs.readFileSync(journal, "utf8")) : null;
+      if (!record && refresh && fs.existsSync(currentJournal)) {
+        const current = JSON.parse(fs.readFileSync(currentJournal, "utf8"));
+        if (current.prompt_version === refresh) record = current;
+      }
       if (record?.quality_gate?.version === VISUAL_GATE_VERSION && record.quality_gate.status === "rejected") throw imageError(record.quality_gate.reason);
       if (record?.file && /^source-[a-f0-9]{64}\.(png|jpg|webp)$/.test(record.file)) {
         const file = path.join(folder, record.file);
@@ -90,6 +108,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
               catch (error) { record.quality_gate = qualityFailure(error); atomicJson(journal, record); throw error; }
               atomicJson(journal, record);
             }
+            promote(record);
             return { ...record, ...info, bytes, reused: true };
           }
         }
@@ -176,6 +195,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
         try { record.quality_gate = await quality(path.join(folder, filename)); }
         catch (error) { record.quality_gate = qualityFailure(error); atomicJson(journal, record); throw error; }
         atomicJson(journal, record);
+        promote(record);
         return { ...record, bytes: asset.bytes, reused: false };
       } catch (error) {
         if (["HIGGSFIELD_AUTH_UNAVAILABLE","HIGGSFIELD_REQUEST_FAILED","HIGGSFIELD_CREDITS_UNAVAILABLE"].includes(safeImageFailure(error))) { unavailableUntil = Date.now() + 15 * 60000; health = null; }

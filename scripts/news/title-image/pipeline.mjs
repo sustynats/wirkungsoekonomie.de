@@ -34,7 +34,7 @@ export async function generateEditorialVisual(story, { endpoint = process.env.WO
   if (!endpoint || !token) throw imageError("HIGGSFIELD_NOT_CONFIGURED");
   const url = new URL(endpoint);
   if (url.protocol !== "https:" || url.username || url.password) throw imageError("HIGGSFIELD_ENDPOINT_INVALID");
-  const response = await fetchImpl(url, { method: "POST", redirect: "error", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(C.generation_timeout_ms + 60000), body: JSON.stringify({ story_id: story.story_id, title: story.title, source_summary: story.source_summary, topic: story.topic, claims: (story.claims || []).slice(0,10).map((c) => ({ claim: c.claim })) }) });
+  const response = await fetchImpl(url, { method: "POST", redirect: "error", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(C.generation_timeout_ms + 60000), body: JSON.stringify({ story_id: story.story_id, title: story.title, source_summary: story.source_summary, topic: story.topic, claims: (story.claims || []).slice(0,10).map((c) => ({ claim: c.claim })), ...(story.refresh_prompt_version ? { refresh_prompt_version: story.refresh_prompt_version } : {}) }) });
   if (!response.ok) throw imageError(response.status === 403 ? "HIGGSFIELD_AUTH_UNAVAILABLE" : "HIGGSFIELD_PROVIDER_UNAVAILABLE");
   const chunks = []; let length = 0;
   for await (const chunk of response.body) {
@@ -84,6 +84,21 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
   let generations = 0, circuitOpen = false;
   return async function prepare(story, { dryRun = false, cardsOnly = false } = {}) {
     const decision = chooseTitleImageMode(story);
+    const refresh = story.title_image?.refresh_prompt_version;
+    if (refresh) {
+      const { refresh_prompt_version: _revision, retry_after: _retry, refresh_failure: _failure, ...previous } = story.title_image;
+      if (refresh !== C.prompt_version || decision.mode !== "editorial" || cardsOnly) {
+        return { title_image: previous, report: { story_id: story.story_id, status: "preserved", reason: "EDITORIAL_REFRESH_NOT_ALLOWED" } };
+      }
+      if (previous.source_visual?.prompt_version === refresh) return prepare({ ...story, title_image: previous }, { dryRun, cardsOnly });
+      if (dryRun) return { story_id: story.story_id, ...decision, would_generate: allowGeneration, refresh_prompt_version: refresh };
+      if (!allowGeneration) return { title_image: story.title_image, report: { story_id: story.story_id, status: "preserved", reason: "EDITORIAL_REFRESH_REQUIRES_GENERATION" } };
+      const result = await prepare({ ...story, title_image: undefined, refresh_prompt_version: refresh });
+      if (result.title_image?.mode === "editorial" && result.title_image.source_visual?.prompt_version === refresh && ["og", "wide", "square"].every(key => publicTitleImage(result.title_image)?.[key])) return result;
+      const reason = result.title_image?.fallback_reason || "EDITORIAL_REFRESH_NOT_READY";
+      const retry = retryFields(reason, now);
+      return { title_image: { ...previous, refresh_failure: reason, ...(retry.retry_after ? { refresh_prompt_version: refresh, ...retry } : {}) }, report: { ...result.report, status: "preserved", reason } };
+    }
     if (dryRun) return { story_id: story.story_id, ...decision, prompt: buildEditorialImagePrompt(story), asset_directory: `source-assets/wirkungsticker/${story.story_id}/`, would_generate: decision.mode === "editorial" && !story.title_image?.source_visual };
     const started = Date.now();
     const log = { story_id: story.story_id, requested_mode: decision.mode, reason: decision.reason, higgsfield_called: false, source_reused: false, title_reused: false };
@@ -150,7 +165,7 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
       }
       await publish(files, { tag }); // durable BEFORE adding URLs to canonical data
       const retryable = fallbackReason && !TERMINAL.has(fallbackReason);
-      return { title_image: { mode, ...outputs, source_visual: source, fingerprint, template_version: C.template_version, prompt_version: C.prompt_version, generated_at: now(), status: fallbackReason ? "fallback" : "generated", ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), ...(retryable ? { retry_after: new Date(Date.parse(now()) + 15 * 60000).toISOString() } : {}) }, report: { ...log, mode, status: fallbackReason ? "fallback" : "generated", ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), duration_ms: Date.now() - started } };
+      return { title_image: { mode, ...outputs, source_visual: source, fingerprint, template_version: C.template_version, prompt_version: source?.prompt_version || C.prompt_version, generated_at: now(), status: fallbackReason ? "fallback" : "generated", ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), ...(retryable ? { retry_after: new Date(Date.parse(now()) + 15 * 60000).toISOString() } : {}) }, report: { ...log, mode, status: fallbackReason ? "fallback" : "generated", ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), duration_ms: Date.now() - started } };
     } catch (error) {
       const reason = safeImageFailure(error);
       return { title_image: { mode: "impact_card", source_visual: source, og: { url: FALLBACK, ...SIZES.og }, status: "fallback", fallback_reason: reason, ...retryFields(reason, now) }, report: { ...log, mode: "impact_card", status: "fallback", fallback_reason: reason, duration_ms: Date.now() - started } };

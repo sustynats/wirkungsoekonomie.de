@@ -4289,6 +4289,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function pageType(path = window.location.pathname) {
+    if (/^\/wirkungsticker\/[^/]+\/(?:index\.html)?$/.test(path) && !path.includes("/quellen/")) return "Wirkungsnachricht";
     if (path.includes("/wirkungsradar/")) return "Debatte";
     if (path.includes("/begriffe/") || path.includes("/glossar")) return "Begriff";
     if (path.includes("/referenz/") || path.includes("/buch")) return "Kapitel";
@@ -5241,18 +5242,52 @@ const WirkungsraumLayer = (() => {
     button.type = "button";
     button.className = "btn btn-secondary wirkungsraum-save-button";
     button.dataset.wirkungsraumSave = item.id;
-    buttonLabel(button, isSaved(item.id), item);
-    button.addEventListener("click", () => {
-      if (isSaved(item.id)) {
-        removeItem(item.id);
-        buttonLabel(button, false, item);
-        return;
-      }
-      saveItem(currentItem());
-      buttonLabel(button, true, currentItem());
-    });
+    bindSaveButton(button, () => currentItem());
 
     actionTarget()?.container.append(button);
+  }
+
+  // Card and article controls share the same store, account sync and removal
+  // semantics as the existing Merken button (including collection cleanup).
+  const saveControls = new Map();
+
+  function refreshSaveButtons() {
+    const paths = savedPathSet();
+    saveControls.forEach((getItem, button) => {
+      const item = getItem();
+      buttonLabel(button, itemSavedByPath(item, paths), item);
+    });
+  }
+
+  function bindSaveButton(button, getItem) {
+    if (saveControls.has(button)) return;
+    saveControls.set(button, getItem);
+    buttonLabel(button, itemSavedByPath(getItem()), getItem());
+    button.hidden = false;
+    button.addEventListener("click", () => {
+      const item = getItem();
+      if (itemSavedByPath(item)) removeItemByPath(item);
+      else saveItem({ ...item, saved_at: new Date().toISOString() });
+      refreshSaveButtons();
+    });
+  }
+
+  function initContentSaveButtons() {
+    document.querySelectorAll("button[data-wirkungsraum-save-url]").forEach((button) => {
+      const url = comparablePath(button.dataset.wirkungsraumSaveUrl);
+      const title = button.dataset.wirkungsraumSaveTitle?.trim();
+      if (!url || !title) return;
+      const path = `${url}/`;
+      const item = {
+        id: path.replace(/^\/+/, ""), url: path, title,
+        type: "Wirkungsnachricht", category: "Wirkungsticker",
+        tags: (button.dataset.wirkungsraumSaveTags || "").split(" · ").filter(Boolean)
+      };
+      bindSaveButton(button, () => item);
+    });
+    document.addEventListener("wirkungsraum:changed", refreshSaveButtons);
+    window.addEventListener("pageshow", refreshSaveButtons);
+    window.addEventListener("storage", refreshSaveButtons);
   }
 
   function renderCollectionPanel(panel, item) {
@@ -7940,6 +7975,7 @@ const WirkungsraumLayer = (() => {
   function init() {
     trackVisit();
     injectSaveButton();
+    initContentSaveButtons();
     injectCollectionButton();
     injectLearningButton();
     injectNotePanel();

@@ -8,10 +8,6 @@
   const tools = document.querySelector("[data-news-app-tools]");
   if (!tools) return;
 
-  const installCopy = tools.querySelector("[data-news-install-copy]");
-  const installActions = tools.querySelector("[data-news-install-actions]");
-  const installButton = tools.querySelector("[data-news-install-button]");
-  const installDismiss = tools.querySelector("[data-news-install-dismiss]");
   const notificationToggle = tools.querySelector("[data-news-notification-toggle]");
   const notificationStatus = tools.querySelector("[data-news-notification-status]");
   const refreshButtons = Array.from(document.querySelectorAll("[data-news-refresh-button]"));
@@ -20,7 +16,6 @@
   const refreshStatus = { set textContent(value) { refreshStatuses.forEach((node) => { node.textContent = value; }); } };
   const markReadButton = tools.querySelector("[data-news-mark-read]");
   const cards = Array.from(document.querySelectorAll("[data-news-card]"));
-  const installDismissKey = "woek_ticker_install_dismissed_at";
   const notificationKey = "woek_ticker_notifications";
   const lastSeenKey = "woek_ticker_last_seen";
   const lastNotifiedKey = "woek_ticker_last_notified";
@@ -33,67 +28,13 @@
   const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent);
   const standalone = window.matchMedia("(display-mode: standalone)").matches
     || window.navigator.standalone === true;
-  let deferredInstallPrompt = null;
   let newsCheckInterval = null;
   let latestFeedTimestamp = 0;
 
   tools.hidden = !(mobile || standalone);
-  initializeInstallOffer();
   initializeNewsState();
   initializeNotifications();
   initializeFreshnessChecks();
-
-  function initializeInstallOffer() {
-    if (standalone) {
-      if (installCopy) installCopy.textContent = "Der Wirkungsticker ist als Web-App installiert.";
-      if (installActions) installActions.hidden = true;
-      return;
-    }
-
-    const dismissedAt = Number(window.localStorage.getItem(installDismissKey) || 0);
-    const dismissalExpired = Date.now() - dismissedAt > 30 * 24 * 60 * 60 * 1000;
-    if (!dismissalExpired && installActions) installActions.hidden = true;
-
-    if (ios && installCopy) {
-      installCopy.textContent = "Auf iPhone oder iPad: Teilen öffnen und „Zum Home-Bildschirm“ wählen. Danach startet der Wirkungsticker wie eine eigene App.";
-      if (installButton) installButton.textContent = "Anleitung anzeigen";
-    }
-
-    window.addEventListener("beforeinstallprompt", (event) => {
-      event.preventDefault();
-      deferredInstallPrompt = event;
-      if (installActions && dismissalExpired) installActions.hidden = false;
-      if (installButton) installButton.textContent = "Installieren";
-    });
-
-    window.addEventListener("appinstalled", () => {
-      deferredInstallPrompt = null;
-      window.localStorage.removeItem(installDismissKey);
-      if (installCopy) installCopy.textContent = "Der Wirkungsticker ist als Web-App installiert.";
-      if (installActions) installActions.hidden = true;
-    });
-
-    installDismiss?.addEventListener("click", () => {
-      window.localStorage.setItem(installDismissKey, String(Date.now()));
-      if (installActions) installActions.hidden = true;
-      if (installCopy) installCopy.textContent = "Du kannst den Wirkungsticker später jederzeit über das Browsermenü zum Startbildschirm hinzufügen.";
-    });
-
-    installButton?.addEventListener("click", async () => {
-      if (deferredInstallPrompt) {
-        deferredInstallPrompt.prompt();
-        const choice = await deferredInstallPrompt.userChoice.catch(() => null);
-        if (choice?.outcome === "accepted") window.localStorage.removeItem(installDismissKey);
-        deferredInstallPrompt = null;
-        return;
-      }
-      if (installCopy) {
-        installCopy.textContent = ios
-          ? "Tippe in Safari auf Teilen und anschließend auf „Zum Home-Bildschirm“ und „Hinzufügen“."
-          : "Öffne das Browsermenü und wähle „App installieren“ oder „Zum Startbildschirm hinzufügen“.";
-      }
-    });
-  }
 
   function newestCardTimestamp() {
     return cards.reduce((latest, card) => {

@@ -109,7 +109,7 @@ Rückgabe-Warnungen (`warnings`): `EDITORIAL_IMAGE_MISSING` (Motiv fehlt, automa
 
 Eingabe zusätzlich: `image.src` (Bilddatei ohne Text, ohne Branding; 16:9 oder größer, mindestens 1200 px breit; JPG/PNG/WebP oder Data-URI), optional `image.focus`.
 
-Darstellung: Motiv füllt den gesamten Rahmen (`preserveAspectRatio` slice, Ausrichtung rechts). Darüber liegen drei Verläufe: diagonal von links unten (Navy 96 % → 0 %), ein schmaler dunkler Streifen oben für das Branding und ein Bodenverlauf für die Fußzeile. Alle Text- und Brandingelemente werden programmatisch gesetzt; das Motiv enthält nie Text.
+Darstellung: Motiv füllt den gesamten Rahmen (`preserveAspectRatio` slice, Ausrichtung rechts). Darüber liegen drei Verläufe: diagonal von links unten (Navy 96 % → 0 %), ein schmaler dunkler Streifen oben für das Branding und ein Bodenverlauf für die Fußzeile. Seit Template `woek-title-2-overlay` enthält auch das Editorial dasselbe „Wirkung auf“-Panel an derselben Position wie die Wirkungskarte, auf Navy mit 92 % Deckkraft. Die Website-Variante wiederholt weder die HTML-Überschrift noch ein zusätzliches Themen-Icon im Motiv. Alle Text- und Brandingelemente werden programmatisch gesetzt; das Motiv enthält nie Text.
 
 Kennzeichnung: Pille unten rechts mit Funken-Icon und Text **„KI-generiertes Symbolbild“** (Inter 600, 13 u). Sie ist Standard und Pflicht für generierte Motive; nur wenn ein lizenzfreies Originalbild der Quelle verwendet wird, darf `label` überschrieben werden (z. B. „Foto: Europäische Kommission“).
 
@@ -120,13 +120,14 @@ Landscape (`og`, `wide`):
 | Zone | x | y | w | h | Bedeutung |
 |---|---|---|---|---|---|
 | `brand` | 0 | 0 | 0,55 | 0,16 | Signet und Wortmarke, oben links |
-| `text` | 0 | 0,46 | 0,64 | 0,54 | Rubrik, Überschrift, Quelle, unten links |
+| `text` | 0 | 0,46 | 0,57 | 0,54 | Rubrik, Überschrift, Quelle, unten links |
 | `label` | 0,64 | 0,88 | 0,36 | 0,12 | Kennzeichnung, unten rechts |
-| `motifFocus` | 0,42 | 0,10 | 0,54 | 0,72 | **Hier gehört der Motivschwerpunkt hin** |
+| `motifFocus` | 0,08 | 0,18 | 0,48 | 0,28 | Erkennbares Motivdetail oberhalb der Überschrift, links vom Panel |
+| `impactPanel` | 0,60 | 0,16 | 0,36 | 0,73 | Rechte Seite für das programmatisch gesetzte Panel freihalten |
 
 Square: `brand` 0/0/0,70/0,10 · `text` 0/0,58/1/0,42 · `label` 0,55/0,93/0,45/0,07 · `motifFocus` 0,08/0,12/0,84/0,42.
 
-Vorgabe für die spätere Bildgenerierung (aus `SAFE_AREAS.landscape.avoid`): „Wichtige Personen, Objekte und Motive rechts bzw. mittig platzieren; nichts Wichtiges im linken unteren Drittel, im linken oberen Streifen und in der rechten unteren Ecke. Keine Schrift, keine Logos, keine dokumentarische Nachstellung eines konkreten Ereignisses.“ Die Zonen liegen maschinenlesbar in `SAFE_AREAS` und in `scripts/news/title-image/previews/report.json` (`system.safeAreas`).
+Vorgabe seit Prompt `woek-editorial-3-concrete`: Konkretes erkennbares Objekt oder generische Umgebung aus der neutralen Nachricht, natürliche Materialien und Farben statt abstrakter Netzwerke. Identifizierendes Motivdetail links/mittig oberhalb der Überschrift; die Umgebung darf das Bild füllen. Rechte Seite, Textbereich, Branding und Kennzeichnung ruhig halten. Keine Personen, Schrift, Logos oder dokumentarische Nachstellung eines konkreten Ereignisses. Die Zonen liegen maschinenlesbar in `SAFE_AREAS`; neue Vorschauen übernehmen sie in `system.safeAreas`. Bereits gespeicherte Originale werden durch eine Promptänderung nicht automatisch kostenpflichtig ersetzt.
 
 ## Modus B: Wirkungskarte
 
