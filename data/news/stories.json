@@ -1,7 +1,1269 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T22:51:35.667Z",
+  "updated_at": "2026-09-04T23:17:59.151Z",
   "stories": [
+    {
+      "story_id": "wt-f2edeab46d126d83",
+      "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+      "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+      "first_seen": "2026-09-04T14:37:53.000Z",
+      "last_updated": "2026-09-04T23:18:46.835Z",
+      "published_at": "2026-09-04T15:07:05.912Z",
+      "updated_at": "2026-09-04T23:18:46.835Z",
+      "topic": [
+        "Energie",
+        "Digitalisierung",
+        "Geopolitik",
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "berlin-presseportal",
+          "publisher": "Presseportal des Landes Berlin",
+          "url": "https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1710705.php",
+          "title": "Aktuelle Lage nach dem IKT-Vorfall im Landesnetz Berlin und der Veröffentlichung der gestohlenen Daten",
+          "summary": "",
+          "source_type": "html_index",
+          "published_at": "2026-09-03T22:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "bb4830b5e58a34b19198374caa024a9e3b8ed4eb8d7f331a07fdcf9af621d2ab",
+          "source_item_id": "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c",
+          "publisher_id": "land-berlin",
+          "publisher_kind": "institution",
+          "source_role": "official_statement",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T22:00:00.000Z",
+          "ingested_at": "2026-09-04T23:17:59.151Z",
+          "provenance": {
+            "origin": "publisher:land-berlin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+          "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+          "summary": "Nachdem sich Hacker Zugriff auf das Berliner Landesnetz verschafft haben, sind Daten zum Download veröffentlicht worden. Zuvor war ein gesetztes Ultimatum abgelaufen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:46:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be",
+          "source_item_id": "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:46:40.000Z",
+          "ingested_at": "2026-09-04T23:17:59.151Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+          "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+          "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "27a10c129ad67426b4443f2e18e9e6c4e59712a179a01b2bf2cb7d191d920cb9",
+          "source_item_id": "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:14:15.000Z",
+          "ingested_at": "2026-09-04T16:21:44.537Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+          "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet",
+          "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:11:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4440c8f23589bad133f2f82bb08dc0fa0e976a5c4df2c8bb6ec3a96e48cd36ac",
+          "source_item_id": "4b388f5bd255ac527b57ddf41bbea1bb995154f2ee025fd2218e3c6df64bf251",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T17:11:33.000Z",
+          "ingested_at": "2026-09-04T17:21:09.783Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f2edeab46d126d83-v3-claim-1",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Die Hackergruppe Rhysida hat nach dem Angriff auf das Berliner Landesnetz Daten im Darknet veröffentlicht.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "a0cefb1af23a04e13dc1",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+              "excerpt_hash": "edab96b46b17a4927023",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T23:18:46.835Z"
+        },
+        {
+          "claim_id": "wt-f2edeab46d126d83-v3-claim-2",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Nach rbb-Informationen wurden rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "caebd7e2035b466373e7",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "a7dfdaea3d2b90d01ec2",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T23:18:46.835Z"
+        },
+        {
+          "claim_id": "wt-f2edeab46d126d83-v3-claim-3",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Der Berliner Senat lässt die veröffentlichten Daten derzeit intensiv prüfen und will Betroffene bei Bedarf informieren.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "79914ad2e5a2ffd42cb9",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "6f86832bdc695e756873",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T23:18:46.835Z"
+        },
+        {
+          "claim_id": "wt-f2edeab46d126d83-v3-claim-4",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Die Erpresser verlangten 30 Bitcoin, was rund zwei Millionen Euro entspricht.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "f082dd8406460fdf9ec3",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T23:18:46.835Z"
+        },
+        {
+          "claim_id": "wt-f2edeab46d126d83-v3-claim-5",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Unter den abrufbaren Daten könnten auch sicherheitsrelevante Informationen zu Zivilschutz und besonders geschützten Objekten sein.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+              "excerpt_hash": "ecd1e15cbb84bedb06ea",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T23:18:46.835Z"
+        }
+      ],
+      "event_id": "event-9ce6682a9f1a77ee5f1d",
+      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
+      "event_detected_at": "2026-09-04T15:06:23.805Z",
+      "verification_started_at": "2026-09-04T23:18:17.238Z",
+      "publish_ready_at": "2026-09-04T23:18:46.835Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "berlin-presseportal"
+          ],
+          [
+            "rbb24-nachrichten"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob weitere Stellen die Darknet-Veröffentlichung und den Umfang der Daten unabhängig bestätigen.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Berichte oder technische Belege zur Veröffentlichung im Darknet",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fbac489cdc45dae6",
+          "announced_at": "2026-09-04T14:37:53.000Z",
+          "follow_up_date": "2026-09-11T15:07:05.912Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Abgleich durch Forensik oder bestätigte Prüfungsergebnisse",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b3c0927aea06f1f8",
+          "announced_at": "2026-09-04T17:23:23.000Z",
+          "follow_up_date": "2026-09-11T18:08:49.939Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "6e07555a68f3e5386e7130d711bc38438b3342d7fa090a7afd5fd0303406f7c2",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-246cea9ccb340d47-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "246cea9ccb340d47cea9edf8128bf2d23a3587a666459d01249222fc4c38cfec"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-95de8a393434a961-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "95de8a393434a961d847576ab4dc35fa022a9b90057f728bad9c32df616efe02"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-eaf0c3773019518d-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "eaf0c3773019518db70c1f4a4f538d38cce177977f252846f7725304c0524a68"
+        },
+        "source_visual": null,
+        "fingerprint": "ab2f5216447b17c133223b55a1f496b253b44a1beac7e069c646978c6df3ef41",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T23:19:09.785Z",
+        "status": "generated"
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-12a75e1a8e63deaa"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-04T23:17:59.151Z",
+            "story_id": "wt-12a75e1a8e63deaa",
+            "slug": "cyberkriminalitat-hacker-veroffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-dark-63deaa",
+            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Nach dem Angriff auf das Berliner Landesnetz sollen mutmaßlich gestohlene Daten im Darknet veröffentlicht worden sein. Der rbb berichtet, die Hackergruppe Rhysida habe nach Ablauf eines Ultimatums Datenpakete zugänglich gemacht; nach rbb-Informationen seien es rund 1,4 Millionen Datensätze gewesen. Gleichzeitig heißt es, die tatsächliche Beschaffenheit der Daten sei noch unklar.\n\nDie Berliner Sicherheitsbehörden prüfen die Veröffentlichung nach Angaben des Senats intensiv. Werden betroffene Personen identifiziert, sollen sie risikobasiert und nach gesetzlichen Vorgaben informiert werden. Nach Angaben aus dem Bericht verlangten die Erpresser 30 Bitcoin, etwa zwei Millionen Euro; der Senat habe nicht zahlen wollen. Ein weiterer Bericht nennt zusätzlich Hinweise auf sicherheitsrelevante Inhalte, deren Umfang und Echtheit aber offen bleiben.",
+      "analysis": {
+        "story_id": "wt-f2edeab46d126d83",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Nach dem Angriff auf das Berliner Landesnetz sollen gestohlene Daten im Darknet veröffentlicht worden sein. Der Senat prüft die Daten und will Betroffene bei Bedarf informieren.",
+        "detail_summary": "Der gesicherte Kern ist die veröffentlichte Datenmenge nach dem Angriff auf das Berliner Landesnetz und die laufende Prüfung durch die Berliner Stellen. Der Vorgang ist relevant, weil er potenziell personenbezogene, verwaltungsinterne und möglicherweise sicherheitsrelevante Informationen betrifft und damit Folgen für Betroffene, Verwaltungsschutz und Vertrauensschutz haben kann. Der Wirkpfad läuft über die Veröffentlichung und mögliche Weiterverbreitung der Daten hin zu Risiken wie Identitätsmissbrauch, zusätzlicher Erpressung oder operativen Sicherheitsproblemen. Kurzfristig ist vor allem eine Belastung der Verwaltung und ein Schutzbedarf für mögliche Betroffene plausibel; ob es tatsächlich zu Missbrauch kommt, bleibt offen. Die Evidenzlage bleibt begrenzt, weil Echtheit, Vollständigkeit und Reichweite der Dateien nicht unabhängig bestätigt sind und die Berichte teils aufeinander aufbauen.",
+        "why_relevant": "Die Veröffentlichung potenziell sensibler Verwaltungsdaten kann Schutzinteressen vieler Betroffener berühren und die Sicherheit staatlicher Informationssysteme sowie das Vertrauen in digitale Verwaltungsinfrastruktur beeinträchtigen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Betroffenheit vieler Personen durch veröffentlichte Verwaltungsdaten und mögliches Identitäts- oder Betrugsrisiko."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein belastbarer direkter Bezug zu Umwelt- oder Klimawirkungen in den Quellen."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Der Vorfall betrifft staatliche IT, Verwaltungsgeheimnisse und die Korrekturfähigkeit öffentlicher Stellen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Folgewirkungen reichen von zusätzlichem Missbrauch sensibler Daten über Aufwand für Prüfung und Benachrichtigung bis zu Vertrauensverlust in digitale Verwaltung.",
+        "impact_risks": [
+          "Identitätsmissbrauch oder Betrug bei betroffenen Personen",
+          "Mehr Aufwand und Kosten für Prüfung, Forensik und Information",
+          "Verlust von Vertraulichkeit bei Verwaltungs- und möglicherweise sicherheitsrelevanten Daten"
+        ],
+        "mechanisms": [
+          "Veröffentlichte Daten senken die Zugriffsschranken für Kriminelle",
+          "Behördliche Prüfungen binden Ressourcen und verlangsamen Normalbetrieb",
+          "Mögliche Weiterverbreitung erhöht die Dauer und Reversibilität des Schadens"
+        ],
+        "first_order": [
+          "Prüfung der veröffentlichten Dateien durch Sicherheitsbehörden",
+          "Risikobasierte Information möglicher Betroffener",
+          "Öffentliche Bestätigung des Erpressungsversuchs"
+        ],
+        "second_order": [
+          "Zusätzlicher Schutz- und Ermittlungsaufwand in der Verwaltung",
+          "Mögliche Anzeige- und Sperrmaßnahmen durch Betroffene",
+          "Höhere Sensibilität für IT-Sicherheitsprozesse"
+        ],
+        "third_order": [
+          "Dauerhafte Anpassungen bei Sicherheitsarchitektur und Datentrennung",
+          "Mögliche Folgedebatten über Resilienz öffentlicher Netze",
+          "Veränderter Umgang mit sensiblen Verwaltungsdaten"
+        ],
+        "systemic_relevance": "Der Fall ist systemrelevant, weil er öffentliche Verwaltungsdaten, digitale Angriffsflächen und die Fähigkeit staatlicher Stellen betrifft, Vertraulichkeit und Betriebsfähigkeit zu sichern.",
+        "transformation_potential": "Keine unmittelbare Transformationswirkung belegt; möglich ist ein mittelbarer Druck zu besseren Sicherheits- und Prüfprozessen in der Verwaltung.",
+        "resilience": "Resilienz hängt hier von Forensik, Schutzmaßnahmen und klarer Betroffenenkommunikation ab; die Veröffentlichung zeigt eine geschwächte Datenresilienz.",
+        "side_effects": [
+          "Mehr Verwaltungsaufwand durch Prüfung und Benachrichtigung",
+          "Mögliche Verunsicherung bei Beschäftigten und Bürgern",
+          "Erhöhte Attraktivität weiterer Auswertungen durch Dritte"
+        ],
+        "uncertainties": [
+          "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
+          "Ob der Umfang von rund 1,4 Millionen Datensätzen zutrifft",
+          "Ob und in welchem Ausmaß Daten bereits weiterverbreitet wurden"
+        ],
+        "evidence_level": "attributed_single_source",
+        "attribution": "Berichte von rbb und Deutschlandfunk auf Basis der Senatsangaben und eigener Recherchen; Unabhängigkeit der zugrunde liegenden Detailangaben nicht vollständig belegt.",
+        "watch_next": [
+          "Bestätigung von Echtheit und Umfang der Dateien",
+          "Mitteilungen des Senats an Betroffene",
+          "Neue Angaben zu möglicher Weiterverbreitung oder Missbrauch"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16, DSGVO, Schutz kritischer digitaler Verwaltungsinfrastruktur"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Veröffentlichung der Daten ist eine neue, materiell relevante Entwicklung mit potenziell vielen Betroffenen und Folgen für Verwaltungsschutz und Datenschutz."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Datenpakete",
+              "value": "1,4 Millionen",
+              "unit": "Daten",
+              "context": "laut rbb-Informationen zugänglich gemacht",
+              "claim_id": "wt-f2edeab46d126d83-claim-02"
+            },
+            {
+              "label": "Lösegeldforderung",
+              "value": "30",
+              "unit": "Bitcoin",
+              "context": "von den Erpressern verlangt",
+              "claim_id": "wt-f2edeab46d126d83-claim-04"
+            },
+            {
+              "label": "Gegenwert",
+              "value": "zwei Millionen",
+              "unit": "Euro",
+              "context": "ungefährer Euro-Gegenwert der Forderung",
+              "claim_id": "wt-f2edeab46d126d83-claim-04"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "beschaeftigte",
+            "verbraucherinnen"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "risiko"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T15:07:05.912Z",
+          "content_hash": "29aaf702756383219ea1732bc2652cbea40a8508d1b7307cd802371194def29e",
+          "source_summary": "Der Bericht meldet, dass die Hackergruppe Rhysida nach einem Angriff auf das Berliner Landesnetz Daten im Darknet zum Download angeboten habe. Zuvor sei eine von der Berliner Senatsverwaltung gesetzte Zahlungsfrist abgelaufen. Nach rbb-Informationen sollen rund 1,4 Millionen Datensätze in mehreren Paketen zugänglich gemacht worden sein.\n\nDie Quelle nennt als mögliche Inhalte unter anderem Arbeitszeugnisse, Ausschreibungen, Beurteilungen und Personalakten. Zugleich heißt es, die Angaben ließen sich zunächst nicht überprüfen; auch sei unklar, ob es sich um die gesamte Menge der Anfang August erbeuteten Daten handelt. Experten hätten gewarnt, die Hacker könnten sensible Daten verkaufen.",
+          "analysis": {
+            "story_id": "wt-f2edeab46d126d83",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Rhysida soll nach Ablauf einer Frist Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht haben. Umfang und genaue Inhalte sind laut Bericht noch nicht verifiziert.",
+            "detail_summary": "Gesichert nach der vorliegenden Quelle ist vor allem der behauptete Veröffentlichungsschritt der Hackergruppe Rhysida im Darknet nach Ablauf einer gesetzten Frist. Der Vorgang ist materiell, weil er von einem bloßen Datendiebstahl in eine potenzielle Verbreitung sensibler Verwaltungs- und Personaldaten übergeht. Der Wirkpfad liegt in der möglichen Weiterveräußerung, Vervielfältigung oder gezielten Nutzung der Daten gegen Betroffene und Verwaltung. Als mögliche Folge nennt die Quelle eine Veröffentlichung von Arbeitszeugnissen, Ausschreibungen, Beurteilungen und Personalakten; zugleich bleibt offen, ob diese Ordner tatsächlich vollständig und echt sind. Die Evidenz ist jedoch begrenzt, weil die Angaben zunächst nicht überprüfbar waren und nur eine Quelle vorliegt. Deshalb ist die Lage als laufende Entwicklung mit offenem Umfang und offener technischer Verifikation zu behandeln.",
+            "why_relevant": "Der Vorgang betrifft mögliche sensible Verwaltungsdaten, Datenschutz, Verwaltungskontinuität und das Vertrauen in digitale staatliche Infrastrukturen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mögliche Folgen für Beschäftigte und weitere Betroffene durch Veröffentlichung oder Weiterverwertung sensibler Daten sind naheliegend, aber noch nicht verifiziert."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Ein Angriff auf ein Landesnetz und mögliche Datenoffenlegung berührt Verwaltungssicherheit, Datenschutz und die Funktionsfähigkeit öffentlicher Institutionen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Wenn die Veröffentlichung bestätigt wird, kann sie Schutzbedarfe, Datenschutzmaßnahmen, Ermittlungen und IT-Sicherheitsprioritäten in der Verwaltung verschieben.",
+            "impact_risks": [
+              "Mögliche Veröffentlichung oder Weitergabe sensibler personenbezogener Daten",
+              "Erhöhter Druck auf Behörden, Sicherheits- und Meldeprozesse zu verstärken",
+              "Vertrauensverlust in digitale Verwaltungsinfrastrukturen bei Betroffenen"
+            ],
+            "mechanisms": [
+              "Offenlegung oder Weiterverkauf sensibler Daten erhöht das Missbrauchsrisiko",
+              "Setzt Anreize für schnellere Sicherheits- und Reaktionsmaßnahmen in Behörden",
+              "Kann Folgekosten für Betroffene und Verwaltung auslösen"
+            ],
+            "first_order": [
+              "Mögliche Zugänglichmachung von Daten im Darknet",
+              "Prüfbedarf bei der Verwaltung zum Umfang der betroffenen Datensätze"
+            ],
+            "second_order": [
+              "Mehr Sicherheits- und Schutzmaßnahmen in der Verwaltung möglich",
+              "Erhöhte Sensibilität für Cyberresilienz und Datenminimierung"
+            ],
+            "third_order": [
+              "Langfristig können Beschaffungs-, Speicher- und Sicherheitsstandards öffentlicher Netze strenger werden"
+            ],
+            "systemic_relevance": "Der Fall ist systemrelevant, weil er auf die Verwundbarkeit eines Landesnetzes und auf den Schutz staatlicher Datenbestände verweist.",
+            "transformation_potential": "Eher begrenzt unmittelbar, aber relevant als möglicher Auslöser für strengere Sicherheitsarchitektur und Datenhygiene in der Verwaltung.",
+            "resilience": "Die Quelle deutet auf geringe kurzfristige Resilienz der betroffenen Datenbestände hin; die tatsächliche Widerstandsfähigkeit bleibt aber offen.",
+            "side_effects": [
+              "Mögliche Mehrbelastung für IT-Forensik und Datenschutzstellen",
+              "Potenzielle Unsicherheit bei Beschäftigten und weiteren Betroffenen"
+            ],
+            "uncertainties": [
+              "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
+              "Ob der Umfang von rund 1,4 Millionen Datensätzen zutrifft",
+              "Ob und in welchem Ausmaß Daten weiterveräußert wurden"
+            ],
+            "evidence_level": "einzelne journalistische Sekundärquelle mit explizit offener Verifikation des Umfangs",
+            "attribution": "Die Kernaussage stammt aus dem rbb-Bericht; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Unabhängige Bestätigung der Veröffentlichung und des Datenumfangs abwarten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, materiell relevante Entwicklung mit möglicher Wirkung auf Datenschutz und Verwaltungssicherheit; jedoch nur eine journalistische Quelle und einige Kerndetails bleiben unbestätigt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Datenmenge laut Bericht",
+                  "value": "1,4 Millionen",
+                  "unit": "Datensätze",
+                  "context": "Zugänglich gemachte Daten laut rbb-Informationen"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "staat",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "risiko"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-f2edeab46d126d83-v1-claim-1",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Nach Ablauf einer gesetzten Frist hat die Hackergruppe Rhysida Daten aus einem Angriff auf das Berliner Landesnetz im Darknet zum Download veröffentlicht.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "6f0e1bb31be16fa6aba5",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "a0cefb1af23a04e13dc1",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v1-claim-2",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Laut rbb-Informationen sollen rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht worden sein; prüfen ließ sich das zunächst nicht.",
+              "status": "uncertain_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "26ef51189ac15f44010e",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "995b9d54a1a2af55365a",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v1-claim-3",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Die veröffentlichte Datenmenge könnte Arbeitszeugnisse, Ausschreibungen, Beurteilungen von Mitarbeitenden und Personalakten enthalten, das blieb aber unbestätigt.",
+              "status": "uncertain_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "5a11d6600a7904c0283b",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "995b9d54a1a2af55365a",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T18:08:49.939Z",
+          "content_hash": "29aaf702756383219ea1732bc2652cbea40a8508d1b7307cd802371194def29e",
+          "source_summary": "Nach Angaben des rbb sind nach Ablauf eines Ultimatums Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht worden. Die Veröffentlichung wird der Hackergruppe Rhysida zugeschrieben. Der Bericht nennt zudem nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen; zunächst habe es eine Fehlermeldung gegeben, inzwischen seien Ordner sichtbar.\n\nDer Senat lässt die Daten nach eigenen Angaben intensiv prüfen. IT-Forensiker im Auftrag des Landes Berlin analysieren den Fund, und mögliche Betroffene sollen risikobasiert informiert werden. Zugleich wird erneut betont, dass Berlin nicht zahlen wolle. Offen bleibt nach dem Bericht weiterhin, ob die Daten echt, vollständig und aktuell sind und in welchem Umfang sie tatsächlich aus dem Angriff stammen.",
+          "analysis": {
+            "story_id": "wt-f2edeab46d126d83",
+            "news_status": "developing",
+            "publication_depth": "deepened",
+            "summary": "Nach Ablauf eines Ultimatums sollen Daten aus dem Berliner Landesnetz im Darknet veröffentlicht worden sein. Der Senat lässt sie prüfen und will Betroffene bei Bedarf informieren.",
+            "detail_summary": "Gesichert ist aus der vorliegenden Quelle vor allem die behauptete Veröffentlichung von Daten nach dem Ablauf eines Erpressungsultimatums sowie die laufende Prüfung durch den Senat. Der Bericht ordnet die Aktion der Gruppe Rhysida zu und nennt nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen. Für die Einordnung ist das relevant, weil damit nicht nur ein Sicherheitsvorfall, sondern eine potenzielle Verbreitung sensibler Verwaltungsdaten im Raum steht. Der Wirkpfad verläuft über den möglichen Verlust von Vertraulichkeit, anschließende Auswertung durch Kriminelle und daraus folgende Risiken für Betroffene und Verwaltung. Offen bleibt jedoch, ob die veröffentlichten Daten echt, vollständig und aktuell sind; genau diese Grenze verhindert derzeit ein hartes Urteil über den tatsächlichen Schaden.",
+            "why_relevant": "Die Meldung betrifft mögliche Verbreitung sensibler Verwaltungsdaten und damit Vertraulichkeit, Schutzrechte und Verwaltungssicherheit in einem großen öffentlichen Netz.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mögliche Betroffenheit vieler Verwaltungsbeschäftigter und weiterer Personen durch veröffentlichte Daten."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Ein Angriff auf das Landesnetz und der Umgang mit veröffentlichten Verwaltungsdaten berühren staatliche Funktionsfähigkeit und Vertrauensschutz."
+            },
+            "importance": "hoch",
+            "impact_potential": "Wenn die Veröffentlichung authentische Verwaltungsdaten umfasst, kann das Risiken für betroffene Personen, Verwaltungsvorgänge und nachgelagerte Sicherheitsmaßnahmen erhöhen.",
+            "impact_risks": [
+              "Identitätsmissbrauch oder weitere Auswertung sensibler Dokumente",
+              "Belastung von Verwaltung und IT-Forensik durch Prüfung, Benachrichtigung und Reaktion",
+              "Vertrauensverlust in die digitale Schutzfähigkeit öffentlicher Netze"
+            ],
+            "mechanisms": [
+              "Verlust von Vertraulichkeit durch Veröffentlichung",
+              "Sekundärnutzung der Daten durch Dritte",
+              "Behördliche Prüfung und risikobasierte Information Betroffener"
+            ],
+            "first_order": [
+              "Prüfung der veröffentlichten Daten durch Sicherheitsbehörden",
+              "Mögliche Identifikation einzelner betroffener Personen"
+            ],
+            "second_order": [
+              "Warnungen, Schutzmaßnahmen oder weitere Ermittlungen",
+              "Zusätzliche administrative Last für Berliner Stellen"
+            ],
+            "third_order": [
+              "Mögliche Anpassungen von Sicherheits- und Zugriffsregeln",
+              "Stärkere Anforderungen an Krisenkommunikation und Datensicherheit"
+            ],
+            "systemic_relevance": "Der Fall ist systemisch relevant, weil er ein zentrales öffentliches Verwaltungsnetz betrifft und bei bestätigter Echtheit der Daten den Umgang mit sensiblen Informationen in einer großen Verwaltung berührt.",
+            "transformation_potential": "Allenfalls indirekt: Der Vorfall kann neue Prioritäten für IT-Sicherheit, Zugriffsbeschränkungen und Incident-Response in Behörden anstoßen, ist aber selbst noch kein belegt wirksamer Strukturwandel.",
+            "resilience": "Kurzfristig hängt die Resilienz von der Qualität der Datenprüfung, der Benachrichtigung Betroffener und der Reaktion der Behörden ab.",
+            "side_effects": [
+              "Mehr Aufwand für Forensik und Kommunikation",
+              "Mögliche Folgerisiken durch weitere Datenverwertung",
+              "Unruhe bei Beschäftigten und Betroffenen"
+            ],
+            "uncertainties": [
+              "Echtheit, Vollständigkeit und Aktualität der Daten sind laut Bericht ungeklärt",
+              "Der tatsächliche Umfang des Abflusses ist nicht unabhängig bestätigt",
+              "Unklar ist, ob und in welchem Ausmaß die Daten bereits weiterverbreitet wurden"
+            ],
+            "evidence_level": "einzelne journalistische Quelle mit benannten Behördenangaben; keine unabhängige Bestätigung der zentralen Veröffentlichung oder des Umfangs",
+            "attribution": "Die Kernbehauptungen stützen sich auf den rbb-Bericht; einzelne Angaben werden dort als rbb-Informationen oder behördliche Mitteilungen wiedergegeben.",
+            "watch_next": [
+              "Ergebnis der laufenden Datenprüfung",
+              "Mögliche Bestätigung oder Korrektur des Umfangs",
+              "Mitteilungen zu betroffenen Personen oder weiteren Verwertungen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neue, berichtete Veröffentlichung sensibler Verwaltungsdaten nach Ablauf des Ultimatums; für die Öffentlichkeit und Verwaltung materiell, aber bisher nur eine belastbare Quelle."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-f2edeab46d126d83-v2-claim-1",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Nach Ablauf eines Ultimatums wurden Daten aus dem Angriff auf das Berliner Landesnetz zum Download veröffentlicht.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "a0cefb1af23a04e13dc1",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "a723a67e537fa1df9560",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:08:49.939Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v2-claim-2",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Die veröffentlichte Aktion wird der Hackergruppe Rhysida zugeschrieben.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "caebd7e2035b466373e7",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:08:49.939Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v2-claim-3",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Nach rbb-Informationen wurden rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "caebd7e2035b466373e7",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "a7dfdaea3d2b90d01ec2",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:08:49.939Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v2-claim-4",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Der Senat lässt die veröffentlichten Daten intensiv prüfen und will Betroffene bei Identifikation risikobasiert informieren.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "79914ad2e5a2ffd42cb9",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "6f86832bdc695e756873",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:08:49.939Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v2-claim-5",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Vonseiten des Senats wird weiter gesagt, dass Berlin nicht zahlen wolle.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "f082dd8406460fdf9ec3",
+                  "checked_at": "2026-09-04T18:08:49.939Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:08:49.939Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-04T23:18:46.835Z",
+          "content_hash": "6e07555a68f3e5386e7130d711bc38438b3342d7fa090a7afd5fd0303406f7c2",
+          "source_summary": "Nach dem Angriff auf das Berliner Landesnetz sollen mutmaßlich gestohlene Daten im Darknet veröffentlicht worden sein. Der rbb berichtet, die Hackergruppe Rhysida habe nach Ablauf eines Ultimatums Datenpakete zugänglich gemacht; nach rbb-Informationen seien es rund 1,4 Millionen Datensätze gewesen. Gleichzeitig heißt es, die tatsächliche Beschaffenheit der Daten sei noch unklar.\n\nDie Berliner Sicherheitsbehörden prüfen die Veröffentlichung nach Angaben des Senats intensiv. Werden betroffene Personen identifiziert, sollen sie risikobasiert und nach gesetzlichen Vorgaben informiert werden. Nach Angaben aus dem Bericht verlangten die Erpresser 30 Bitcoin, etwa zwei Millionen Euro; der Senat habe nicht zahlen wollen. Ein weiterer Bericht nennt zusätzlich Hinweise auf sicherheitsrelevante Inhalte, deren Umfang und Echtheit aber offen bleiben.",
+          "analysis": {
+            "story_id": "wt-f2edeab46d126d83",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Nach dem Angriff auf das Berliner Landesnetz sollen gestohlene Daten im Darknet veröffentlicht worden sein. Der Senat prüft die Daten und will Betroffene bei Bedarf informieren.",
+            "detail_summary": "Der gesicherte Kern ist die veröffentlichte Datenmenge nach dem Angriff auf das Berliner Landesnetz und die laufende Prüfung durch die Berliner Stellen. Der Vorgang ist relevant, weil er potenziell personenbezogene, verwaltungsinterne und möglicherweise sicherheitsrelevante Informationen betrifft und damit Folgen für Betroffene, Verwaltungsschutz und Vertrauensschutz haben kann. Der Wirkpfad läuft über die Veröffentlichung und mögliche Weiterverbreitung der Daten hin zu Risiken wie Identitätsmissbrauch, zusätzlicher Erpressung oder operativen Sicherheitsproblemen. Kurzfristig ist vor allem eine Belastung der Verwaltung und ein Schutzbedarf für mögliche Betroffene plausibel; ob es tatsächlich zu Missbrauch kommt, bleibt offen. Die Evidenzlage bleibt begrenzt, weil Echtheit, Vollständigkeit und Reichweite der Dateien nicht unabhängig bestätigt sind und die Berichte teils aufeinander aufbauen.",
+            "why_relevant": "Die Veröffentlichung potenziell sensibler Verwaltungsdaten kann Schutzinteressen vieler Betroffener berühren und die Sicherheit staatlicher Informationssysteme sowie das Vertrauen in digitale Verwaltungsinfrastruktur beeinträchtigen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mögliche Betroffenheit vieler Personen durch veröffentlichte Verwaltungsdaten und mögliches Identitäts- oder Betrugsrisiko."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Kein belastbarer direkter Bezug zu Umwelt- oder Klimawirkungen in den Quellen."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Der Vorfall betrifft staatliche IT, Verwaltungsgeheimnisse und die Korrekturfähigkeit öffentlicher Stellen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Folgewirkungen reichen von zusätzlichem Missbrauch sensibler Daten über Aufwand für Prüfung und Benachrichtigung bis zu Vertrauensverlust in digitale Verwaltung.",
+            "impact_risks": [
+              "Identitätsmissbrauch oder Betrug bei betroffenen Personen",
+              "Mehr Aufwand und Kosten für Prüfung, Forensik und Information",
+              "Verlust von Vertraulichkeit bei Verwaltungs- und möglicherweise sicherheitsrelevanten Daten"
+            ],
+            "mechanisms": [
+              "Veröffentlichte Daten senken die Zugriffsschranken für Kriminelle",
+              "Behördliche Prüfungen binden Ressourcen und verlangsamen Normalbetrieb",
+              "Mögliche Weiterverbreitung erhöht die Dauer und Reversibilität des Schadens"
+            ],
+            "first_order": [
+              "Prüfung der veröffentlichten Dateien durch Sicherheitsbehörden",
+              "Risikobasierte Information möglicher Betroffener",
+              "Öffentliche Bestätigung des Erpressungsversuchs"
+            ],
+            "second_order": [
+              "Zusätzlicher Schutz- und Ermittlungsaufwand in der Verwaltung",
+              "Mögliche Anzeige- und Sperrmaßnahmen durch Betroffene",
+              "Höhere Sensibilität für IT-Sicherheitsprozesse"
+            ],
+            "third_order": [
+              "Dauerhafte Anpassungen bei Sicherheitsarchitektur und Datentrennung",
+              "Mögliche Folgedebatten über Resilienz öffentlicher Netze",
+              "Veränderter Umgang mit sensiblen Verwaltungsdaten"
+            ],
+            "systemic_relevance": "Der Fall ist systemrelevant, weil er öffentliche Verwaltungsdaten, digitale Angriffsflächen und die Fähigkeit staatlicher Stellen betrifft, Vertraulichkeit und Betriebsfähigkeit zu sichern.",
+            "transformation_potential": "Keine unmittelbare Transformationswirkung belegt; möglich ist ein mittelbarer Druck zu besseren Sicherheits- und Prüfprozessen in der Verwaltung.",
+            "resilience": "Resilienz hängt hier von Forensik, Schutzmaßnahmen und klarer Betroffenenkommunikation ab; die Veröffentlichung zeigt eine geschwächte Datenresilienz.",
+            "side_effects": [
+              "Mehr Verwaltungsaufwand durch Prüfung und Benachrichtigung",
+              "Mögliche Verunsicherung bei Beschäftigten und Bürgern",
+              "Erhöhte Attraktivität weiterer Auswertungen durch Dritte"
+            ],
+            "uncertainties": [
+              "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
+              "Ob der Umfang von rund 1,4 Millionen Datensätzen zutrifft",
+              "Ob und in welchem Ausmaß Daten bereits weiterverbreitet wurden"
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Berichte von rbb und Deutschlandfunk auf Basis der Senatsangaben und eigener Recherchen; Unabhängigkeit der zugrunde liegenden Detailangaben nicht vollständig belegt.",
+            "watch_next": [
+              "Bestätigung von Echtheit und Umfang der Dateien",
+              "Mitteilungen des Senats an Betroffene",
+              "Neue Angaben zu möglicher Weiterverbreitung oder Missbrauch"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16, DSGVO, Schutz kritischer digitaler Verwaltungsinfrastruktur"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Veröffentlichung der Daten ist eine neue, materiell relevante Entwicklung mit potenziell vielen Betroffenen und Folgen für Verwaltungsschutz und Datenschutz."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Datenpakete",
+                  "value": "1,4 Millionen",
+                  "unit": "Daten",
+                  "context": "laut rbb-Informationen zugänglich gemacht",
+                  "claim_id": "wt-f2edeab46d126d83-claim-02"
+                },
+                {
+                  "label": "Lösegeldforderung",
+                  "value": "30",
+                  "unit": "Bitcoin",
+                  "context": "von den Erpressern verlangt",
+                  "claim_id": "wt-f2edeab46d126d83-claim-04"
+                },
+                {
+                  "label": "Gegenwert",
+                  "value": "zwei Millionen",
+                  "unit": "Euro",
+                  "context": "ungefährer Euro-Gegenwert der Forderung",
+                  "claim_id": "wt-f2edeab46d126d83-claim-04"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "beschaeftigte",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "risiko"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-f2edeab46d126d83-v3-claim-1",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Die Hackergruppe Rhysida hat nach dem Angriff auf das Berliner Landesnetz Daten im Darknet veröffentlicht.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "a0cefb1af23a04e13dc1",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+                  "excerpt_hash": "edab96b46b17a4927023",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v3-claim-2",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Nach rbb-Informationen wurden rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "caebd7e2035b466373e7",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "a7dfdaea3d2b90d01ec2",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v3-claim-3",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Der Berliner Senat lässt die veröffentlichten Daten derzeit intensiv prüfen und will Betroffene bei Bedarf informieren.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "79914ad2e5a2ffd42cb9",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "6f86832bdc695e756873",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v3-claim-4",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Die Erpresser verlangten 30 Bitcoin, was rund zwei Millionen Euro entspricht.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "f082dd8406460fdf9ec3",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v3-claim-5",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Unter den abrufbaren Daten könnten auch sicherheitsrelevante Informationen zu Zivilschutz und besonders geschützten Objekten sein.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+                  "excerpt_hash": "ecd1e15cbb84bedb06ea",
+                  "checked_at": "2026-09-04T23:18:46.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T23:18:46.835Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "berlin-presseportal",
+              "url": "https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1710705.php",
+              "content_hash": "bb4830b5e58a34b19198374caa024a9e3b8ed4eb8d7f331a07fdcf9af621d2ab"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+              "content_hash": "27a10c129ad67426b4443f2e18e9e6c4e59712a179a01b2bf2cb7d191d920cb9"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+              "content_hash": "4440c8f23589bad133f2f82bb08dc0fa0e976a5c4df2c8bb6ec3a96e48cd36ac"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T15:07:05.912Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T18:08:49.939Z",
+          "source_count": 1
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-04T23:18:46.835Z",
+          "source_count": 4
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-f1eeb699a96122e2",
+      "slug": "cyberkriminalitat-nach-gescheiterter-erpressung-hacker-veroffentlichen-personalakten-von-6122e2",
+      "title": "Cyberkriminalität - Nach gescheiterter Erpressung: Hacker veröffentlichen Personalakten von Bürgern im Darknet",
+      "first_seen": "2026-09-04T23:11:27.000Z",
+      "last_updated": "2026-09-04T23:11:27.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/nach-gescheiterter-erpressung-hacker-veroeffentlichen-personalakten-von-buergern-im-darknet-100.html",
+          "title": "Cyberkriminalität - Nach gescheiterter Erpressung: Hacker veröffentlichen Personalakten von Bürgern im Darknet",
+          "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T23:11:27.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3fe6c98ffcb2e77ef61a31d8a8f8f6f14dae06f1c82cb12459a87550ed6240f5",
+          "source_item_id": "79e12eb208eae6450a56c20e2d53f0e17e5a133fd736c1e70cedc79d509d6f6e",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T23:11:27.000Z",
+          "ingested_at": "2026-09-04T23:17:59.151Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f1eeb699a96122e2-claim-01",
+          "story_id": "wt-f1eeb699a96122e2",
+          "claim": "Cyberkriminalität - Nach gescheiterter Erpressung: Hacker veröffentlichen Personalakten von Bürgern im Darknet: Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T23:17:59.151Z"
+        }
+      ],
+      "content_hash": "5949600ecd30ce167ec262fcdb61a85e4caeac2ec3172e6bb0114a60ebaa291d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T23:17:59.151Z",
+      "event_first_seen_at": "2026-09-04T23:17:59.151Z",
+      "event_detected_at": "2026-09-04T23:17:59.151Z",
+      "event_id": "event-3630c1da8b943aae070a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 52,
+        "public_relevance": "hoch",
+        "topics": [
+          "Digitalisierung",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.53585,
+        "detection_delay_minutes": 6.53585,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T23:17:59.151Z",
+      "rejection": {
+        "at": "2026-09-04T23:17:59.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-5072789df611867b",
       "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
@@ -7966,7 +9228,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-04T22:36:38.623Z",
+          "ingested_at": "2026-09-04T23:17:59.151Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -7993,19 +9255,54 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T22:36:38.623Z"
+          "checked_at": "2026-09-04T23:17:59.151Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
+        "AI_REQUIRED_STRING:source_summary",
+        "AI_REQUIRED_STRING:summary",
+        "AI_REQUIRED_STRING:why_relevant",
+        "AI_REQUIRED_STRING:status",
+        "AI_REQUIRED_STRING:analysis_type",
+        "AI_REQUIRED_STRING:importance",
+        "AI_REQUIRED_STRING:impact_potential",
+        "AI_REQUIRED_STRING:systemic_relevance",
+        "AI_REQUIRED_STRING:transformation_potential",
+        "AI_REQUIRED_STRING:resilience",
+        "AI_REQUIRED_STRING:evidence_level",
+        "AI_REQUIRED_STRING:attribution",
+        "AI_REQUIRED_STRING:detail_summary",
+        "AI_STATUS_INVALID",
+        "AI_ANALYSIS_TYPE_INVALID",
+        "AI_IMPORTANCE_INVALID",
+        "AI_PUBLICATION_GATE_REQUIRED",
+        "AI_DIMENSION_INVALID:human",
+        "AI_DIMENSION_INVALID:planet",
+        "AI_DIMENSION_INVALID:democracy",
+        "AI_ARRAY_REQUIRED:impact_risks",
+        "AI_ARRAY_REQUIRED:mechanisms",
+        "AI_ARRAY_REQUIRED:first_order",
+        "AI_ARRAY_REQUIRED:second_order",
+        "AI_ARRAY_REQUIRED:third_order",
+        "AI_ARRAY_REQUIRED:side_effects",
+        "AI_ARRAY_REQUIRED:uncertainties",
+        "AI_ARRAY_REQUIRED:watch_next",
+        "AI_ARRAY_REQUIRED:reference_frameworks",
+        "AI_UNCERTAINTY_REQUIRED",
+        "AI_WATCH_NEXT_REQUIRED",
+        "AI_SUMMARY_SENTENCE_COUNT",
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
+        "NEWS_STATUS_REQUIRED",
+        "EVENT_CLAIMS_REQUIRED"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T22:36:38.623Z",
+      "updated_at": "2026-09-04T23:17:59.151Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -8035,25 +9332,60 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 171.62705,
+        "source_age_minutes": 212.96918333333332,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 225.19366666666667,
+        "queue_age_minutes": 266.5358,
         "target_publication_minutes": 120,
-        "news_freshness_score": 64,
+        "news_freshness_score": 56,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T22:36:38.623Z",
+      "rejected_at": "2026-09-04T23:17:59.151Z",
       "rejection": {
-        "at": "2026-09-04T22:36:38.623Z",
+        "at": "2026-09-04T23:17:59.151Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
         ]
       }
     },
@@ -13681,719 +15013,6 @@
         "generated_at": "2026-09-04T18:54:01.475Z",
         "status": "generated"
       }
-    },
-    {
-      "story_id": "wt-f2edeab46d126d83",
-      "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
-      "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
-      "first_seen": "2026-09-04T14:37:53.000Z",
-      "last_updated": "2026-09-04T18:08:49.939Z",
-      "published_at": "2026-09-04T15:07:05.912Z",
-      "updated_at": "2026-09-04T18:08:49.939Z",
-      "topic": [
-        "Digitalisierung",
-        "Geopolitik",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "rbb24-nachrichten",
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-          "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
-          "summary": "Nachdem sich Hacker Zugriff auf das Berliner Landesnetz verschafft haben, sind Daten zum Download veröffentlicht worden. Zuvor war ein gesetztes Ultimatum abgelaufen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:23:23.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be",
-          "source_item_id": "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
-          "publisher_id": "rbb",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin-Brandenburg"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:23:23.000Z",
-          "ingested_at": "2026-09-04T18:06:22.511Z",
-          "provenance": {
-            "origin": "publisher:rbb",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-f2edeab46d126d83-v2-claim-1",
-          "story_id": "wt-f2edeab46d126d83",
-          "claim": "Nach Ablauf eines Ultimatums wurden Daten aus dem Angriff auf das Berliner Landesnetz zum Download veröffentlicht.",
-          "status": "single_source_claim",
-          "source_id": "rbb24-nachrichten",
-          "evidence": [
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "a0cefb1af23a04e13dc1",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            },
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "a723a67e537fa1df9560",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T18:08:49.939Z"
-        },
-        {
-          "claim_id": "wt-f2edeab46d126d83-v2-claim-2",
-          "story_id": "wt-f2edeab46d126d83",
-          "claim": "Die veröffentlichte Aktion wird der Hackergruppe Rhysida zugeschrieben.",
-          "status": "single_source_claim",
-          "source_id": "rbb24-nachrichten",
-          "evidence": [
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "caebd7e2035b466373e7",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T18:08:49.939Z"
-        },
-        {
-          "claim_id": "wt-f2edeab46d126d83-v2-claim-3",
-          "story_id": "wt-f2edeab46d126d83",
-          "claim": "Nach rbb-Informationen wurden rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht.",
-          "status": "single_source_claim",
-          "source_id": "rbb24-nachrichten",
-          "evidence": [
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "caebd7e2035b466373e7",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            },
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "a7dfdaea3d2b90d01ec2",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T18:08:49.939Z"
-        },
-        {
-          "claim_id": "wt-f2edeab46d126d83-v2-claim-4",
-          "story_id": "wt-f2edeab46d126d83",
-          "claim": "Der Senat lässt die veröffentlichten Daten intensiv prüfen und will Betroffene bei Identifikation risikobasiert informieren.",
-          "status": "single_source_claim",
-          "source_id": "rbb24-nachrichten",
-          "evidence": [
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "79914ad2e5a2ffd42cb9",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            },
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "6f86832bdc695e756873",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T18:08:49.939Z"
-        },
-        {
-          "claim_id": "wt-f2edeab46d126d83-v2-claim-5",
-          "story_id": "wt-f2edeab46d126d83",
-          "claim": "Vonseiten des Senats wird weiter gesagt, dass Berlin nicht zahlen wolle.",
-          "status": "single_source_claim",
-          "source_id": "rbb24-nachrichten",
-          "evidence": [
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "excerpt_hash": "f082dd8406460fdf9ec3",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T18:08:49.939Z"
-        }
-      ],
-      "event_id": "event-9ce6682a9f1a77ee5f1d",
-      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
-      "event_detected_at": "2026-09-04T15:06:23.805Z",
-      "verification_started_at": "2026-09-04T18:08:36.154Z",
-      "publish_ready_at": "2026-09-04T18:08:49.939Z",
-      "news_status": "developing",
-      "deepening_due_at": null,
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Prüfen, ob weitere Stellen die Darknet-Veröffentlichung und den Umfang der Daten unabhängig bestätigen.",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Unabhängige Berichte oder technische Belege zur Veröffentlichung im Darknet",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-fbac489cdc45dae6",
-          "announced_at": "2026-09-04T14:37:53.000Z",
-          "follow_up_date": "2026-09-11T15:07:05.912Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Abgleich durch Forensik oder bestätigte Prüfungsergebnisse",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-b3c0927aea06f1f8",
-          "announced_at": "2026-09-04T17:23:23.000Z",
-          "follow_up_date": "2026-09-11T18:08:49.939Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "29aaf702756383219ea1732bc2652cbea40a8508d1b7307cd802371194def29e",
-      "published": true,
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-95045bf1e46c4dc1-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "95045bf1e46c4dc12967529926c246a5b96fc312243deec8684df5af48dcd846"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-863b26292ddba83d-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "863b26292ddba83d5dd2939fd91a7999246e2ebbe7459426ab9a084f2bdcf98c"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-793556e43fd87137-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "793556e43fd87137473ccc059d0e0d5748e6797798ac76b44be53ee6fb5080f2"
-        },
-        "source_visual": null,
-        "fingerprint": "072a24a8b47793f06ef5e49a48784c4396a678a02703cf13a4dceddd823ef4c1",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T18:10:37.982Z",
-        "status": "generated"
-      },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "Nach Angaben des rbb sind nach Ablauf eines Ultimatums Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht worden. Die Veröffentlichung wird der Hackergruppe Rhysida zugeschrieben. Der Bericht nennt zudem nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen; zunächst habe es eine Fehlermeldung gegeben, inzwischen seien Ordner sichtbar.\n\nDer Senat lässt die Daten nach eigenen Angaben intensiv prüfen. IT-Forensiker im Auftrag des Landes Berlin analysieren den Fund, und mögliche Betroffene sollen risikobasiert informiert werden. Zugleich wird erneut betont, dass Berlin nicht zahlen wolle. Offen bleibt nach dem Bericht weiterhin, ob die Daten echt, vollständig und aktuell sind und in welchem Umfang sie tatsächlich aus dem Angriff stammen.",
-      "analysis": {
-        "story_id": "wt-f2edeab46d126d83",
-        "news_status": "developing",
-        "publication_depth": "deepened",
-        "summary": "Nach Ablauf eines Ultimatums sollen Daten aus dem Berliner Landesnetz im Darknet veröffentlicht worden sein. Der Senat lässt sie prüfen und will Betroffene bei Bedarf informieren.",
-        "detail_summary": "Gesichert ist aus der vorliegenden Quelle vor allem die behauptete Veröffentlichung von Daten nach dem Ablauf eines Erpressungsultimatums sowie die laufende Prüfung durch den Senat. Der Bericht ordnet die Aktion der Gruppe Rhysida zu und nennt nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen. Für die Einordnung ist das relevant, weil damit nicht nur ein Sicherheitsvorfall, sondern eine potenzielle Verbreitung sensibler Verwaltungsdaten im Raum steht. Der Wirkpfad verläuft über den möglichen Verlust von Vertraulichkeit, anschließende Auswertung durch Kriminelle und daraus folgende Risiken für Betroffene und Verwaltung. Offen bleibt jedoch, ob die veröffentlichten Daten echt, vollständig und aktuell sind; genau diese Grenze verhindert derzeit ein hartes Urteil über den tatsächlichen Schaden.",
-        "why_relevant": "Die Meldung betrifft mögliche Verbreitung sensibler Verwaltungsdaten und damit Vertraulichkeit, Schutzrechte und Verwaltungssicherheit in einem großen öffentlichen Netz.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "monitoring",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Betroffenheit vieler Verwaltungsbeschäftigter und weiterer Personen durch veröffentlichte Daten."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Ein Angriff auf das Landesnetz und der Umgang mit veröffentlichten Verwaltungsdaten berühren staatliche Funktionsfähigkeit und Vertrauensschutz."
-        },
-        "importance": "hoch",
-        "impact_potential": "Wenn die Veröffentlichung authentische Verwaltungsdaten umfasst, kann das Risiken für betroffene Personen, Verwaltungsvorgänge und nachgelagerte Sicherheitsmaßnahmen erhöhen.",
-        "impact_risks": [
-          "Identitätsmissbrauch oder weitere Auswertung sensibler Dokumente",
-          "Belastung von Verwaltung und IT-Forensik durch Prüfung, Benachrichtigung und Reaktion",
-          "Vertrauensverlust in die digitale Schutzfähigkeit öffentlicher Netze"
-        ],
-        "mechanisms": [
-          "Verlust von Vertraulichkeit durch Veröffentlichung",
-          "Sekundärnutzung der Daten durch Dritte",
-          "Behördliche Prüfung und risikobasierte Information Betroffener"
-        ],
-        "first_order": [
-          "Prüfung der veröffentlichten Daten durch Sicherheitsbehörden",
-          "Mögliche Identifikation einzelner betroffener Personen"
-        ],
-        "second_order": [
-          "Warnungen, Schutzmaßnahmen oder weitere Ermittlungen",
-          "Zusätzliche administrative Last für Berliner Stellen"
-        ],
-        "third_order": [
-          "Mögliche Anpassungen von Sicherheits- und Zugriffsregeln",
-          "Stärkere Anforderungen an Krisenkommunikation und Datensicherheit"
-        ],
-        "systemic_relevance": "Der Fall ist systemisch relevant, weil er ein zentrales öffentliches Verwaltungsnetz betrifft und bei bestätigter Echtheit der Daten den Umgang mit sensiblen Informationen in einer großen Verwaltung berührt.",
-        "transformation_potential": "Allenfalls indirekt: Der Vorfall kann neue Prioritäten für IT-Sicherheit, Zugriffsbeschränkungen und Incident-Response in Behörden anstoßen, ist aber selbst noch kein belegt wirksamer Strukturwandel.",
-        "resilience": "Kurzfristig hängt die Resilienz von der Qualität der Datenprüfung, der Benachrichtigung Betroffener und der Reaktion der Behörden ab.",
-        "side_effects": [
-          "Mehr Aufwand für Forensik und Kommunikation",
-          "Mögliche Folgerisiken durch weitere Datenverwertung",
-          "Unruhe bei Beschäftigten und Betroffenen"
-        ],
-        "uncertainties": [
-          "Echtheit, Vollständigkeit und Aktualität der Daten sind laut Bericht ungeklärt",
-          "Der tatsächliche Umfang des Abflusses ist nicht unabhängig bestätigt",
-          "Unklar ist, ob und in welchem Ausmaß die Daten bereits weiterverbreitet wurden"
-        ],
-        "evidence_level": "einzelne journalistische Quelle mit benannten Behördenangaben; keine unabhängige Bestätigung der zentralen Veröffentlichung oder des Umfangs",
-        "attribution": "Die Kernbehauptungen stützen sich auf den rbb-Bericht; einzelne Angaben werden dort als rbb-Informationen oder behördliche Mitteilungen wiedergegeben.",
-        "watch_next": [
-          "Ergebnis der laufenden Datenprüfung",
-          "Mögliche Bestätigung oder Korrektur des Umfangs",
-          "Mitteilungen zu betroffenen Personen oder weiteren Verwertungen"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "material_update",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "material_update",
-          "rationale": "Neue, berichtete Veröffentlichung sensibler Verwaltungsdaten nach Ablauf des Ultimatums; für die Öffentlichkeit und Verwaltung materiell, aber bisher nur eine belastbare Quelle."
-        },
-        "publication_recommendation": true,
-        "visuals": null
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T15:07:05.912Z",
-          "content_hash": "29aaf702756383219ea1732bc2652cbea40a8508d1b7307cd802371194def29e",
-          "source_summary": "Der Bericht meldet, dass die Hackergruppe Rhysida nach einem Angriff auf das Berliner Landesnetz Daten im Darknet zum Download angeboten habe. Zuvor sei eine von der Berliner Senatsverwaltung gesetzte Zahlungsfrist abgelaufen. Nach rbb-Informationen sollen rund 1,4 Millionen Datensätze in mehreren Paketen zugänglich gemacht worden sein.\n\nDie Quelle nennt als mögliche Inhalte unter anderem Arbeitszeugnisse, Ausschreibungen, Beurteilungen und Personalakten. Zugleich heißt es, die Angaben ließen sich zunächst nicht überprüfen; auch sei unklar, ob es sich um die gesamte Menge der Anfang August erbeuteten Daten handelt. Experten hätten gewarnt, die Hacker könnten sensible Daten verkaufen.",
-          "analysis": {
-            "story_id": "wt-f2edeab46d126d83",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Rhysida soll nach Ablauf einer Frist Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht haben. Umfang und genaue Inhalte sind laut Bericht noch nicht verifiziert.",
-            "detail_summary": "Gesichert nach der vorliegenden Quelle ist vor allem der behauptete Veröffentlichungsschritt der Hackergruppe Rhysida im Darknet nach Ablauf einer gesetzten Frist. Der Vorgang ist materiell, weil er von einem bloßen Datendiebstahl in eine potenzielle Verbreitung sensibler Verwaltungs- und Personaldaten übergeht. Der Wirkpfad liegt in der möglichen Weiterveräußerung, Vervielfältigung oder gezielten Nutzung der Daten gegen Betroffene und Verwaltung. Als mögliche Folge nennt die Quelle eine Veröffentlichung von Arbeitszeugnissen, Ausschreibungen, Beurteilungen und Personalakten; zugleich bleibt offen, ob diese Ordner tatsächlich vollständig und echt sind. Die Evidenz ist jedoch begrenzt, weil die Angaben zunächst nicht überprüfbar waren und nur eine Quelle vorliegt. Deshalb ist die Lage als laufende Entwicklung mit offenem Umfang und offener technischer Verifikation zu behandeln.",
-            "why_relevant": "Der Vorgang betrifft mögliche sensible Verwaltungsdaten, Datenschutz, Verwaltungskontinuität und das Vertrauen in digitale staatliche Infrastrukturen.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Mögliche Folgen für Beschäftigte und weitere Betroffene durch Veröffentlichung oder Weiterverwertung sensibler Daten sind naheliegend, aber noch nicht verifiziert."
-            },
-            "planet": {
-              "relevance": "offen",
-              "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "rationale": "Ein Angriff auf ein Landesnetz und mögliche Datenoffenlegung berührt Verwaltungssicherheit, Datenschutz und die Funktionsfähigkeit öffentlicher Institutionen."
-            },
-            "importance": "hoch",
-            "impact_potential": "Wenn die Veröffentlichung bestätigt wird, kann sie Schutzbedarfe, Datenschutzmaßnahmen, Ermittlungen und IT-Sicherheitsprioritäten in der Verwaltung verschieben.",
-            "impact_risks": [
-              "Mögliche Veröffentlichung oder Weitergabe sensibler personenbezogener Daten",
-              "Erhöhter Druck auf Behörden, Sicherheits- und Meldeprozesse zu verstärken",
-              "Vertrauensverlust in digitale Verwaltungsinfrastrukturen bei Betroffenen"
-            ],
-            "mechanisms": [
-              "Offenlegung oder Weiterverkauf sensibler Daten erhöht das Missbrauchsrisiko",
-              "Setzt Anreize für schnellere Sicherheits- und Reaktionsmaßnahmen in Behörden",
-              "Kann Folgekosten für Betroffene und Verwaltung auslösen"
-            ],
-            "first_order": [
-              "Mögliche Zugänglichmachung von Daten im Darknet",
-              "Prüfbedarf bei der Verwaltung zum Umfang der betroffenen Datensätze"
-            ],
-            "second_order": [
-              "Mehr Sicherheits- und Schutzmaßnahmen in der Verwaltung möglich",
-              "Erhöhte Sensibilität für Cyberresilienz und Datenminimierung"
-            ],
-            "third_order": [
-              "Langfristig können Beschaffungs-, Speicher- und Sicherheitsstandards öffentlicher Netze strenger werden"
-            ],
-            "systemic_relevance": "Der Fall ist systemrelevant, weil er auf die Verwundbarkeit eines Landesnetzes und auf den Schutz staatlicher Datenbestände verweist.",
-            "transformation_potential": "Eher begrenzt unmittelbar, aber relevant als möglicher Auslöser für strengere Sicherheitsarchitektur und Datenhygiene in der Verwaltung.",
-            "resilience": "Die Quelle deutet auf geringe kurzfristige Resilienz der betroffenen Datenbestände hin; die tatsächliche Widerstandsfähigkeit bleibt aber offen.",
-            "side_effects": [
-              "Mögliche Mehrbelastung für IT-Forensik und Datenschutzstellen",
-              "Potenzielle Unsicherheit bei Beschäftigten und weiteren Betroffenen"
-            ],
-            "uncertainties": [
-              "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
-              "Ob der Umfang von rund 1,4 Millionen Datensätzen zutrifft",
-              "Ob und in welchem Ausmaß Daten weiterveräußert wurden"
-            ],
-            "evidence_level": "einzelne journalistische Sekundärquelle mit explizit offener Verifikation des Umfangs",
-            "attribution": "Die Kernaussage stammt aus dem rbb-Bericht; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
-            "watch_next": [
-              "Unabhängige Bestätigung der Veröffentlichung und des Datenumfangs abwarten"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "implementation",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neue, materiell relevante Entwicklung mit möglicher Wirkung auf Datenschutz und Verwaltungssicherheit; jedoch nur eine journalistische Quelle und einige Kerndetails bleiben unbestätigt."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Datenmenge laut Bericht",
-                  "value": "1,4 Millionen",
-                  "unit": "Datensätze",
-                  "context": "Zugänglich gemachte Daten laut rbb-Informationen"
-                }
-              ],
-              "affected_groups": [
-                "beschaeftigte",
-                "staat",
-                "verbraucherinnen"
-              ],
-              "tendency": {
-                "human": "risiko",
-                "planet": "offen",
-                "democracy": "risiko"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-f2edeab46d126d83-v1-claim-1",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Nach Ablauf einer gesetzten Frist hat die Hackergruppe Rhysida Daten aus einem Angriff auf das Berliner Landesnetz im Darknet zum Download veröffentlicht.",
-              "status": "single_source_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "6f0e1bb31be16fa6aba5",
-                  "checked_at": "2026-09-04T15:07:05.912Z"
-                },
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "a0cefb1af23a04e13dc1",
-                  "checked_at": "2026-09-04T15:07:05.912Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T15:07:05.912Z"
-            },
-            {
-              "claim_id": "wt-f2edeab46d126d83-v1-claim-2",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Laut rbb-Informationen sollen rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht worden sein; prüfen ließ sich das zunächst nicht.",
-              "status": "uncertain_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "26ef51189ac15f44010e",
-                  "checked_at": "2026-09-04T15:07:05.912Z"
-                },
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "995b9d54a1a2af55365a",
-                  "checked_at": "2026-09-04T15:07:05.912Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T15:07:05.912Z"
-            },
-            {
-              "claim_id": "wt-f2edeab46d126d83-v1-claim-3",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Die veröffentlichte Datenmenge könnte Arbeitszeugnisse, Ausschreibungen, Beurteilungen von Mitarbeitenden und Personalakten enthalten, das blieb aber unbestätigt.",
-              "status": "uncertain_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "5a11d6600a7904c0283b",
-                  "checked_at": "2026-09-04T15:07:05.912Z"
-                },
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "995b9d54a1a2af55365a",
-                  "checked_at": "2026-09-04T15:07:05.912Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T15:07:05.912Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-04T18:08:49.939Z",
-          "content_hash": "29aaf702756383219ea1732bc2652cbea40a8508d1b7307cd802371194def29e",
-          "source_summary": "Nach Angaben des rbb sind nach Ablauf eines Ultimatums Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht worden. Die Veröffentlichung wird der Hackergruppe Rhysida zugeschrieben. Der Bericht nennt zudem nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen; zunächst habe es eine Fehlermeldung gegeben, inzwischen seien Ordner sichtbar.\n\nDer Senat lässt die Daten nach eigenen Angaben intensiv prüfen. IT-Forensiker im Auftrag des Landes Berlin analysieren den Fund, und mögliche Betroffene sollen risikobasiert informiert werden. Zugleich wird erneut betont, dass Berlin nicht zahlen wolle. Offen bleibt nach dem Bericht weiterhin, ob die Daten echt, vollständig und aktuell sind und in welchem Umfang sie tatsächlich aus dem Angriff stammen.",
-          "analysis": {
-            "story_id": "wt-f2edeab46d126d83",
-            "news_status": "developing",
-            "publication_depth": "deepened",
-            "summary": "Nach Ablauf eines Ultimatums sollen Daten aus dem Berliner Landesnetz im Darknet veröffentlicht worden sein. Der Senat lässt sie prüfen und will Betroffene bei Bedarf informieren.",
-            "detail_summary": "Gesichert ist aus der vorliegenden Quelle vor allem die behauptete Veröffentlichung von Daten nach dem Ablauf eines Erpressungsultimatums sowie die laufende Prüfung durch den Senat. Der Bericht ordnet die Aktion der Gruppe Rhysida zu und nennt nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen. Für die Einordnung ist das relevant, weil damit nicht nur ein Sicherheitsvorfall, sondern eine potenzielle Verbreitung sensibler Verwaltungsdaten im Raum steht. Der Wirkpfad verläuft über den möglichen Verlust von Vertraulichkeit, anschließende Auswertung durch Kriminelle und daraus folgende Risiken für Betroffene und Verwaltung. Offen bleibt jedoch, ob die veröffentlichten Daten echt, vollständig und aktuell sind; genau diese Grenze verhindert derzeit ein hartes Urteil über den tatsächlichen Schaden.",
-            "why_relevant": "Die Meldung betrifft mögliche Verbreitung sensibler Verwaltungsdaten und damit Vertraulichkeit, Schutzrechte und Verwaltungssicherheit in einem großen öffentlichen Netz.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "monitoring",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Mögliche Betroffenheit vieler Verwaltungsbeschäftigter und weiterer Personen durch veröffentlichte Daten."
-            },
-            "planet": {
-              "relevance": "offen",
-              "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "rationale": "Ein Angriff auf das Landesnetz und der Umgang mit veröffentlichten Verwaltungsdaten berühren staatliche Funktionsfähigkeit und Vertrauensschutz."
-            },
-            "importance": "hoch",
-            "impact_potential": "Wenn die Veröffentlichung authentische Verwaltungsdaten umfasst, kann das Risiken für betroffene Personen, Verwaltungsvorgänge und nachgelagerte Sicherheitsmaßnahmen erhöhen.",
-            "impact_risks": [
-              "Identitätsmissbrauch oder weitere Auswertung sensibler Dokumente",
-              "Belastung von Verwaltung und IT-Forensik durch Prüfung, Benachrichtigung und Reaktion",
-              "Vertrauensverlust in die digitale Schutzfähigkeit öffentlicher Netze"
-            ],
-            "mechanisms": [
-              "Verlust von Vertraulichkeit durch Veröffentlichung",
-              "Sekundärnutzung der Daten durch Dritte",
-              "Behördliche Prüfung und risikobasierte Information Betroffener"
-            ],
-            "first_order": [
-              "Prüfung der veröffentlichten Daten durch Sicherheitsbehörden",
-              "Mögliche Identifikation einzelner betroffener Personen"
-            ],
-            "second_order": [
-              "Warnungen, Schutzmaßnahmen oder weitere Ermittlungen",
-              "Zusätzliche administrative Last für Berliner Stellen"
-            ],
-            "third_order": [
-              "Mögliche Anpassungen von Sicherheits- und Zugriffsregeln",
-              "Stärkere Anforderungen an Krisenkommunikation und Datensicherheit"
-            ],
-            "systemic_relevance": "Der Fall ist systemisch relevant, weil er ein zentrales öffentliches Verwaltungsnetz betrifft und bei bestätigter Echtheit der Daten den Umgang mit sensiblen Informationen in einer großen Verwaltung berührt.",
-            "transformation_potential": "Allenfalls indirekt: Der Vorfall kann neue Prioritäten für IT-Sicherheit, Zugriffsbeschränkungen und Incident-Response in Behörden anstoßen, ist aber selbst noch kein belegt wirksamer Strukturwandel.",
-            "resilience": "Kurzfristig hängt die Resilienz von der Qualität der Datenprüfung, der Benachrichtigung Betroffener und der Reaktion der Behörden ab.",
-            "side_effects": [
-              "Mehr Aufwand für Forensik und Kommunikation",
-              "Mögliche Folgerisiken durch weitere Datenverwertung",
-              "Unruhe bei Beschäftigten und Betroffenen"
-            ],
-            "uncertainties": [
-              "Echtheit, Vollständigkeit und Aktualität der Daten sind laut Bericht ungeklärt",
-              "Der tatsächliche Umfang des Abflusses ist nicht unabhängig bestätigt",
-              "Unklar ist, ob und in welchem Ausmaß die Daten bereits weiterverbreitet wurden"
-            ],
-            "evidence_level": "einzelne journalistische Quelle mit benannten Behördenangaben; keine unabhängige Bestätigung der zentralen Veröffentlichung oder des Umfangs",
-            "attribution": "Die Kernbehauptungen stützen sich auf den rbb-Bericht; einzelne Angaben werden dort als rbb-Informationen oder behördliche Mitteilungen wiedergegeben.",
-            "watch_next": [
-              "Ergebnis der laufenden Datenprüfung",
-              "Mögliche Bestätigung oder Korrektur des Umfangs",
-              "Mitteilungen zu betroffenen Personen oder weiteren Verwertungen"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "material_update",
-              "rationale": "Neue, berichtete Veröffentlichung sensibler Verwaltungsdaten nach Ablauf des Ultimatums; für die Öffentlichkeit und Verwaltung materiell, aber bisher nur eine belastbare Quelle."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-f2edeab46d126d83-v2-claim-1",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Nach Ablauf eines Ultimatums wurden Daten aus dem Angriff auf das Berliner Landesnetz zum Download veröffentlicht.",
-              "status": "single_source_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "a0cefb1af23a04e13dc1",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                },
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "a723a67e537fa1df9560",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            },
-            {
-              "claim_id": "wt-f2edeab46d126d83-v2-claim-2",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Die veröffentlichte Aktion wird der Hackergruppe Rhysida zugeschrieben.",
-              "status": "single_source_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "caebd7e2035b466373e7",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            },
-            {
-              "claim_id": "wt-f2edeab46d126d83-v2-claim-3",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Nach rbb-Informationen wurden rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht.",
-              "status": "single_source_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "caebd7e2035b466373e7",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                },
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "a7dfdaea3d2b90d01ec2",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            },
-            {
-              "claim_id": "wt-f2edeab46d126d83-v2-claim-4",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Der Senat lässt die veröffentlichten Daten intensiv prüfen und will Betroffene bei Identifikation risikobasiert informieren.",
-              "status": "single_source_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "79914ad2e5a2ffd42cb9",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                },
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "6f86832bdc695e756873",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            },
-            {
-              "claim_id": "wt-f2edeab46d126d83-v2-claim-5",
-              "story_id": "wt-f2edeab46d126d83",
-              "claim": "Vonseiten des Senats wird weiter gesagt, dass Berlin nicht zahlen wolle.",
-              "status": "single_source_claim",
-              "source_id": "rbb24-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "rbb24-nachrichten",
-                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-                  "excerpt_hash": "f082dd8406460fdf9ec3",
-                  "checked_at": "2026-09-04T18:08:49.939Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T18:08:49.939Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "rbb24-nachrichten",
-              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-              "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T15:07:05.912Z",
-          "source_count": 1
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-04T18:08:49.939Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": []
     },
     {
       "story_id": "wt-29d840b10b9a38bd",
@@ -20086,8 +20705,8 @@
         "generated_at": "2026-09-04T16:23:54.103Z",
         "status": "generated"
       },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 2,
       "source_summary": "Der Bericht meldet einen Hackerangriff auf die Berliner Senatsverwaltung und ordnet die Veröffentlichung gestohlener Daten im Darknet der Gruppe Rhysida zu. Genannt werden rund 1,4 Millionen Daten, die dort bereitgestellt worden sein sollen.\n\nIm weiteren Text heißt es, unter den abrufbaren Daten befänden sich laut Tagesspiegel auch sicherheitsrelevante Informationen. Außerdem wird berichtet, die Täter hätten fünf Tage im August unbemerkt Zugriff gehabt, ein Lösegeld von rund zwei Millionen Euro gefordert und das Ultimatum habe am Nachmittag geendet.",
@@ -20666,6 +21285,22 @@
             }
           }
         ]
+      },
+      "retired_at": "2026-09-04T23:17:59.151Z",
+      "retirement": {
+        "at": "2026-09-04T23:17:59.151Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-f2edeab46d126d83"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-f2edeab46d126d83",
+            "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+            "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
       }
     },
     {
@@ -92888,5 +93523,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T21:36:16.313Z"
+  "public_updated_at": "2026-09-04T23:17:59.151Z"
 }
