@@ -1,7 +1,133 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T04:51:14.127Z",
+  "updated_at": "2026-09-04T05:06:21.635Z",
   "stories": [
+    {
+      "story_id": "wt-61d3420f0dd76f70",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kongresswahlen-trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-d76f70",
+      "title": "Kongresswahlen: Trump zieht im Streit um Briefwahl erneut vor Supreme Court",
+      "source_summary": "Mehrere deutschsprachige Berichte melden, dass die Trump-Regierung im Streit um verschärfte Briefwahlregeln erneut den Supreme Court angerufen hat. Nach den Berichten hatte eine Bundesrichterin das Vorhaben zuvor per einstweiliger Verfügung gestoppt. ZDFheute nennt außerdem, dass in den USA am 3. November die Midterms stattfinden und in North Carolina bereits an diesem Freitag erste Briefwahlunterlagen verschickt werden sollen.\n\nDie Berichte beschreiben den Streit als juristisches Tauziehen kurz vor den Zwischenwahlen. Nach ZDFheute soll der Oberste Gerichtshof die Trumps Briefwahl-Pläne erneut prüfen; in einem weiteren Ausschnitt wird erwähnt, dass die frühere Entscheidung einer unteren Instanz die Umsetzung der neuen Regeln vorerst blockiert habe. Zu einer endgültigen Entscheidung des Supreme Court enthalten die Quellen keine belastbare Aussage.",
+      "summary": "Die Trump-Regierung hat den Supreme Court im Streit um neue Briefwahlregeln erneut angerufen. Vor den Midterms bleibt offen, ob die blockierten Regeln noch vor der Wahl rechtlich geklärt werden.",
+      "detail_summary": "Gesichert ist aus den vorliegenden Quellen vor allem, dass die Trump-Regierung den Supreme Court erneut mit den Briefwahlregeln befasst und dass eine Bundesrichterin das Vorhaben zuvor per einstweiliger Verfügung gestoppt hatte. Die Berichte nennen außerdem den engen Zeitrahmen vor den Midterms und verweisen auf erste Briefwahlunterlagen in North Carolina. Das ist demokratiepolitisch relevant, weil sich damit der Zugang und die Verwaltung von Briefwahl im Vorfeld einer bundesweiten Wahl verändern könnten. Ein direkter Wirkpfad wäre eine spätere oder frühere Umsetzung der Regeln, mit möglichen Folgen für Wahlorganisation, Teilnahmemöglichkeiten und Streit über das Verfahren. Ob es dazu kommt, ist offen; die Quellen belegen weder eine endgültige Entscheidung des Supreme Court noch tatsächliche Effekte auf das Wahlverhalten.",
+      "why_relevant": "Der Streit betrifft unmittelbar die Regeln und den Ablauf der Briefwahl vor einer national wichtigen Wahl und damit einen Kernbereich demokratischer Korrekturfähigkeit.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell viele Wahlberechtigte und der Zugang zu einem zentralen Wahlverfahren kurz vor den Midterms."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es gibt in den Quellen keinen direkten Bezug zu Umwelt- oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Der Konflikt betrifft Wahlregeln, gerichtliche Kontrolle und die praktische Durchführung einer bundesweiten Abstimmung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Datum der Midterms",
+            "value": "3. November",
+            "unit": "Datum",
+            "context": "Von ZDFheute genannter Wahltermin"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-03T21:07:32.000Z",
+      "last_updated": "2026-09-04T05:08:17.878Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-0059d4df349b8d2350cf",
+      "source_published_at": "2026-09-03T21:08:30.000Z",
+      "published_at": "2026-09-04T01:27:46.072Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Supreme Court den Eilantrag annimmt oder inhaltlich entscheidet",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Gerichtsmitteilung oder neuer Beschluss zum Antrag",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-445dc63529716fed",
+          "announced_at": "2026-09-04T01:03:00.000Z",
+          "follow_up_date": "2026-09-11T05:08:17.878Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/kongresswahlen--trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-38205426.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T22:51:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-kongresswahlen-16015963.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:08:30.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-trump-streit-briefwahl-supreme-court-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:03:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3c8762489a80692b",
       "title_image": {
@@ -2435,133 +2561,6 @@
           "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
           "source_type": "media_rss",
           "published_at": "2026-09-04T01:06:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-61d3420f0dd76f70",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "kongresswahlen-trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-d76f70",
-      "title": "Kongresswahlen: Trump zieht im Streit um Briefwahl erneut vor Supreme Court",
-      "source_summary": "Mehrere deutsche Nachrichtenangebote melden übereinstimmend, dass die Trump-Regierung im Streit um neue Regeln für die Briefwahl erneut den Supreme Court angerufen hat. Hintergrund ist eine zuvor von einer unteren Instanz gestoppte Neuregelung, gegen die nun per Eilantrag vorgegangen werden soll.\n\nZDFheute ergänzt, dass in North Carolina bereits an diesem Freitag erste Briefwahlunterlagen verschickt werden sollen. Außerdem nennt der Bericht den 3. November als Termin der Midterms; dann werden etwa ein Drittel des Senats und das komplette Repräsentantenhaus neu gewählt. Eine Bundesrichterin hatte die Pläne zuvor per einstweiliger Verfügung gebremst und sie als wahrscheinlich verfassungswidrig beschrieben.",
-      "summary": "Die Trump-Regierung hat im Streit um neue Briefwahlregeln erneut den Supreme Court angerufen. Der Fall betrifft das Wahlverfahren kurz vor den Midterms und ist damit demokratiepolitisch relevant.",
-      "detail_summary": "Gesichert ist vor allem der erneute Gang der Trump-Regierung vor den Supreme Court im Streit um neue Briefwahlregeln. Nach den vorliegenden Berichten soll damit eine Entscheidung einer unteren Instanz ausgesetzt werden, die die Umsetzung der Pläne bislang stoppt. Der Vorgang ist relevant, weil er unmittelbar das Wahlverfahren kurz vor den Midterms berührt und damit die Bedingungen der Stimmabgabe verändern kann. Als möglicher Wirkpfad steht eine Verschiebung von Zugänglichkeit, Kontrolle und Tempo der Briefwahl im Raum, mit Folgen für Organisation, Vertrauen und gegebenenfalls die Wahlteilnahme. Offen bleibt nach den vorliegenden Texten, wie der Supreme Court entscheidet und ob die Regelung tatsächlich in Kraft kommt. Eine belastbare Bewertung der Wirkungen ist deshalb ex ante nur begrenzt möglich.",
-      "why_relevant": "Der Vorgang betrifft kurz vor den Midterms die Regeln der Briefwahl und damit einen zentralen demokratischen Prozess. Er kann unmittelbar Zustände bei Zugänglichkeit, Kontrolle und Fristen der Stimmabgabe verändern.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Wählerinnen und Wähler unmittelbar über die Ausgestaltung der Briefwahl; mögliche Folgen reichen bis zur praktischen Zugänglichkeit der Stimmabgabe."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein erkennbarer direkter Bezug zu Umwelt- oder Klimawirkungen in den Quellen."
-        },
-        "democracy": {
-          "relevance": "sehr hoch",
-          "rationale": "Der Streit betrifft Wahlregeln, Gerichtsverfahren und damit die demokratische Korrekturfähigkeit vor einer bundesweiten Wahl."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Datum der Midterms",
-            "value": "3. November",
-            "unit": "Datum",
-            "context": "Termin der US-Zwischenwahlen"
-          },
-          {
-            "label": "Erste Briefwahlunterlagen",
-            "value": "Freitag",
-            "unit": "Zeitpunkt",
-            "context": "Beginn des Versands in North Carolina"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "risiko"
-        }
-      },
-      "first_seen": "2026-09-03T21:07:32.000Z",
-      "last_updated": "2026-09-04T01:27:46.072Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-0059d4df349b8d2350cf",
-      "source_published_at": "2026-09-03T21:08:30.000Z",
-      "published_at": "2026-09-04T01:27:46.072Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "stern-schlagzeilen"
-            ],
-            "reason": "shared_wording_possible_syndication"
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/kongresswahlen--trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-38205426.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T22:51:46.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-kongresswahlen-16015963.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:08:30.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/ausland/usa-trump-streit-briefwahl-supreme-court-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:03:00.000Z",
           "primary_source": false
         }
       ]
