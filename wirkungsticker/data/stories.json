@@ -1,7 +1,203 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T18:06:22.511Z",
+  "updated_at": "2026-09-04T18:21:48.041Z",
   "stories": [
+    {
+      "story_id": "wt-1bc40229c938d48a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-5c03600243943a9b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-2e8de1153a6c62f3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-6e83fa43f1fb1043-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
+      "title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
+      "source_summary": "Die taz berichtet über eine Umfrage der Lernplattform Jurafuchs unter 1.737 Teilnehmenden. Unter den Befragten, die grundsätzlich am Staatsdienst interessiert sind, können sich 57,7 Prozent eine Bewerbung in Sachsen-Anhalt vorstellen. Für den Fall einer AfD-Alleinregierung sinkt dieser Wert auf 17,7 Prozent; bei Studierenden und Rechtsreferendar:innen in Sachsen-Anhalt und Umgebung fällt er laut Bericht auf 15,2 Prozent.\n\nDer Artikel ordnet das als Hinweis auf mögliche Probleme bei der Nachwuchsgewinnung für die Justiz ein. Zugleich verweist er auf eine bereits bestehende Personalnot: Der Bund der Richter und Staatsanwälte in Sachsen-Anhalt habe Anfang des Jahres von einem „kritischen Punkt“ gesprochen und bei den Staatsanwaltschaften rund 91 Prozent des erforderlichen Personals genannt. Gründe für den Rückgang nennt die Umfrage nicht.",
+      "summary": "Eine Jurafuchs-Umfrage sieht deutlich sinkende Bewerbungsbereitschaft für den Staatsdienst in Sachsen-Anhalt bei einer AfD-Alleinregierung. Zugleich verweist der Bericht auf bestehende Personalprobleme in der Justiz.",
+      "detail_summary": "Gesichert ist zunächst der Umfragebefund: Unter 1.737 Teilnehmenden sinkt die Bereitschaft, sich in Sachsen-Anhalt auf Stellen im Staatsdienst zu bewerben, bei einer angenommenen AfD-Alleinregierung deutlich. Der Bericht nennt zusätzlich eine bereits angespannte Personallage in der Justiz des Landes. Für die Wirkung ist das relevant, weil Nachwuchsgewinnung im öffentlichen Dienst ein Vorlauf für Funktionsfähigkeit, Besetzungszeiten und Belastung bestehender Strukturen ist. Ein möglicher Wirkpfad wäre, dass erwartete politische Rahmenbedingungen Bewerbungen beeinflussen und dadurch die Personalrekrutierung weiter erschweren. Offen bleibt, ob und wie stark sich diese Haltung später tatsächlich in realem Bewerbungsverhalten niederschlägt. Die Evidenz stammt hier nur aus einer journalistisch wiedergegebenen Umfrage; unabhängige Bestätigung oder Methodendetails liegen im gelieferten Material nicht vor.",
+      "why_relevant": "Der Befund berührt die Funktionsfähigkeit eines zentralen Rechtsstaatsbereichs: Wenn weniger Nachwuchs Bewerbungen erwägt, kann das die Besetzung juristischer Stellen in einem ohnehin angespannten Umfeld erschweren.",
+      "topic": [
+        "Arbeit",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Frage betrifft Nachwuchs für Justiz- und Staatsdienststellen und damit die Leistungsfähigkeit öffentlicher Institutionen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Im gelieferten Material gibt es keinen direkten Umwelt- oder Klimabezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Die Meldung berührt die personelle Robustheit von Gerichten und Staatsanwaltschaften sowie die Wahrnehmung politischer Einflussrisiken."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Teilnehmende",
+            "value": "1.737",
+            "unit": "Personen",
+            "context": "Umfang der Jurafuchs-Umfrage"
+          },
+          {
+            "label": "Bewerbungsbereitschaft ohne AfD-Regierung",
+            "value": "57,7",
+            "unit": "Prozent",
+            "context": "Anteil mit grundsätzlicher Bewerbung in Sachsen-Anhalt"
+          },
+          {
+            "label": "Bewerbungsbereitschaft bei AfD-Alleinregierung",
+            "value": "17,7",
+            "unit": "Prozent",
+            "context": "Anteil mit Bewerbung in Sachsen-Anhalt"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-04T17:51:00.000Z",
+      "last_updated": "2026-09-04T18:22:57.645Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-0d32d40861dc356e70e6",
+      "source_published_at": "2026-09-04T17:51:00.000Z",
+      "published_at": "2026-09-04T18:22:57.645Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:51:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-03c6bacdda808696",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-9af931a15fa9d405-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-fb624fb3f290a738-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-18de4554de1f82e9-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
+      "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+      "source_summary": "Die Quelle berichtet über Ermittlungen nach Sabotagevorwürfen an Umspannwerken in Brandenburg und Nordrhein-Westfalen. Gesucht wird ein 48-jähriger Mann aus Gevelsberg; in seinem Wohnhaus fanden Einsatzkräfte sprengstoffverdächtige Gegenstände, außerdem wurde sein Fahrzeug gestürmt. Nach Angaben der Minister werden zwei Bekennerschreiben als authentisch eingeschätzt, zugleich ist die abschließende Prüfung der Täterschaft noch offen.\n\nGenannt werden auch Anschläge in Jänschwalde und Bergheim, die laut Sicherheitsbehörden und Betreiber zu Abschaltungen in Kraftwerksblöcken führten, ohne dass die Stromversorgung beeinträchtigt oder gefährdet gewesen sei. In den Schreiben seien weitere mögliche Sabotageziele genannt worden; in Dormagen und Weisweiler seien danach Abschussvorrichtungen entdeckt worden. Die Ermittlungen laufen unter anderem wegen verfassungsfeindlicher Sabotage, in Brandenburg auch wegen Bildung einer Terrorvereinigung.",
+      "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
+      "detail_summary": "Gesichert ist zunächst, dass die Ermittlungen nach Sabotagevorwürfen an Umspannwerken weiterlaufen und sich die Polizei auf einen 48-jährigen Verdächtigen aus Gevelsberg konzentriert. In seinem Wohnhaus wurden sprengstoffverdächtige Gegenstände gefunden, zusätzlich wurde sein Fahrzeug gestürmt. Für die Nachricht relevant ist das wegen des betroffenen Systems: Stromnetzinfrastruktur kann bei Sabotage nicht nur lokal, sondern über Kraftwerksblöcke und Abschaltungen in Betrieb und Resilienz eingreifen. Als mögliche Folge kommen weitere Sicherheitsmaßnahmen, zusätzliche Ermittlungs- und Schutzkosten sowie ein erhöhtes Störungsrisiko für einzelne Anlagen in Betracht. Die Beleglage bleibt jedoch auf eine einzige journalistische Quelle begrenzt; die Täterschaft ist nach der Quelle nicht abschließend geklärt, daher bleiben Ursachen- und Wirkungsaussagen vorsichtig.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Schutz- und Folgekosten für ein systemrelevantes Versorgungsnetz.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Ermittlungsdruck und Sicherheitsmaßnahmen, aber die konkrete Schadenslage bleibt begrenzt und teils offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltfaktor ist aus der Quelle nicht belastbar ableitbar; relevant ist hier vor allem Infrastruktur- und Sicherheitswirkung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt Schutz kritischer Infrastruktur und staatliche Reaktionsfähigkeit, ohne dass die Quelle eine demokratische Verfahrensänderung belegt."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T18:11:14.000Z",
+      "last_updated": "2026-09-04T18:22:40.051Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-5fed0f90ee4fb60ffd0d",
+      "source_published_at": "2026-09-04T18:11:14.000Z",
+      "published_at": "2026-09-04T18:22:40.051Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Gesuchte tatsächlich Verfasser der Schreiben war und wie die Ermittlungen weiter eingeordnet werden",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsbehörden nennen gesicherte Zuordnung oder korrigieren sie",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f38c9a803352d269",
+          "announced_at": "2026-09-04T18:11:14.000Z",
+          "follow_up_date": "2026-09-11T18:22:40.051Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:11:14.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-f2edeab46d126d83",
       "title_image": {
@@ -99,140 +295,6 @@
           "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T17:23:23.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-29d840b10b9a38bd",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-29d840b10b9a38bd-25c384d2e85a5bec-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-29d840b10b9a38bd-e085fe3b0032dfb7-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-29d840b10b9a38bd-a3566239ebb967c1-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "anschlag-auf-stromleitungen-stromnetz-sabotage-polizei-wertet-bekennerschreiben-aus-9a38bd",
-      "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
-      "source_summary": "Die vorliegenden Texte berichten über Sabotagevorwürfe gegen das Stromnetz nach dem Angriff auf ein Umspannwerk bei Jänschwalde. Mehrere Veröffentlichungen sagen, die Polizei suche nach dem Verfasser zweier Bekennerschreiben; in einer späteren Überschrift heißt es zusätzlich, bei einem Verdächtigen sei Sprengstoff gefunden worden. Die Texte ordnen die Vorgänge als Reihe von Attacken auf die Energieversorgung ein und verweisen darauf, dass in mehreren Bundesländern ermittelt wird.\n\nDie Quellen nennen keine überprüfbaren Details zur Identität des Verdächtigen, zur Echtheit der Schreiben oder zu amtlich bestätigten Einzelheiten der Funde. Sie geben vor allem den Stand der laufenden Berichterstattung wieder und enthalten unterschiedliche Schlagzeilen und knappe Abstracts.",
-      "summary": "Die Quellen berichten über Sabotagevorwürfe gegen das Stromnetz und eine Fahndung nach dem Verfasser zweier Bekennerschreiben. Später auftauchende Schlagzeilen ergänzen den Hinweis, bei einem Verdächtigen sei Sprengstoff gefunden worden.",
-      "detail_summary": "Gesichert aus den vorliegenden Quellen ist vor allem der laufende Ermittlungsstand: Nach dem Angriff auf das Stromnetz bei Jänschwalde wird nach dem Verfasser zweier Bekennerschreiben gesucht, und die Berichterstattung spricht von weiteren Angriffen auf die Energieversorgung. Eine spätere Schlagzeile ergänzt, dass bei einem Verdächtigen Sprengstoff gefunden worden sei. Für die Einordnung ist relevant, dass solche Vorfälle bei kritischer Infrastruktur potenziell über den Einzelfall hinaus wirken können, weil schon der Verdacht auf Sabotage Schutzmaßnahmen, Ermittlungsressourcen und die öffentliche Risikowahrnehmung verändert. Ein möglicher Wirkpfad liegt in höherem Sicherungsaufwand und kurzfristigen Störungen für Netzbetreiber und Behörden. Die Evidenz bleibt jedoch begrenzt, weil die gelieferten Texte nur journalistische Kurzfassungen sind und keine unabhängige Primärquelle zur Echtheit der Schreiben oder zu den Funden enthalten.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur und damit einen potenziell systemrelevanten Bereich mit möglichen Folgen für Sicherheit, Versorgung und Ermittlungsaufwand.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Folgen für Versorgungssicherheit, Schutz kritischer Infrastruktur und öffentliche Sicherheit."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Energieinfrastruktur ist betroffen; konkrete Umweltfolgen sind aus den Quellen aber nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Sabotage gegen kritische Infrastruktur berührt staatliche Schutzfähigkeit und das Vertrauen in öffentliche Sicherheit."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "europa"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T06:44:56.000Z",
-      "last_updated": "2026-09-04T18:07:16.958Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-38406cf0057ffe31a483",
-      "source_published_at": "2026-09-04T06:44:56.000Z",
-      "published_at": "2026-09-04T18:07:16.958Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "tagesspiegel-home"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--polizei-wertet-bekennerschreiben-aus-38206690.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T06:44:56.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlag-auf-stromleitungen-16016453.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T06:45:57.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--sprengstoff-bei-verdaechtigem-gefunden-38206690.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:42:22.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-klimaterrorismus-16020231.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T15:49:11.000Z",
           "primary_source": false
         }
       ]
