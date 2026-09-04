@@ -1,7 +1,7 @@
 import { directionSymbols, effectPhases, type ImpactSignatureData } from "@/lib/presentation/impact-signature";
 
 /** Three independent axes. No total, rank, weighted average or party input. */
-export function ImpactSignature({ signature, compact = false }: { signature: ImpactSignatureData; compact?: boolean }) {
+export function ImpactSignature({ signature, compact = false, concise = false }: { signature: ImpactSignatureData; compact?: boolean; concise?: boolean }) {
   const { direction, evidence, maturity } = signature;
   const positions = direction.kind === "ambivalent" ? ["left", "right"]
     : direction.kind === "positive" ? ["right"] : direction.kind === "risk" ? ["left"]
@@ -18,7 +18,7 @@ export function ImpactSignature({ signature, compact = false }: { signature: Imp
               {positions.map((position) => <i key={position} className={`signature-position signature-position--${position}`}>{position === "left" ? "−" : position === "right" ? "+" : "="}</i>)}
               {!positions.length && <i className="signature-position signature-position--unplaced">?</i>}
             </span>
-            {!compact && <><span className="signature-track-labels" aria-hidden="true"><span>entfernt sich</span><span>nähert sich</span></span><small>Bezug: die in der Akte benannten Ziel- und Schutzräume. Keine Gesamtnote.</small></>}
+            {!compact && <><span className="signature-track-labels" aria-hidden="true"><span>entfernt sich</span><span>nähert sich</span></span>{!concise && <small>Bezug: die in der Akte benannten Ziel- und Schutzräume. Keine Gesamtnote.</small>}</>}
           </dd>
         </div>
         <div className="signature-axis" data-signature-axis="evidence">
@@ -29,7 +29,7 @@ export function ImpactSignature({ signature, compact = false }: { signature: Imp
               {evidence.grade === null && <span>?</span>}
             </span>
             <span>{evidence.grade === null ? evidence.label : `Stufe ${evidence.grade} von 4`}</span>
-            {!compact && <><small>{evidence.detail}</small>{evidence.grade === null && <small>Keine freigegebene Zuordnung zur Vier-Stufen-Skala. Das ist keine Stufe null.</small>}</>}
+            {!compact && !concise && <><small>{evidence.detail}</small>{evidence.grade === null && <small>Keine freigegebene Zuordnung zur Vier-Stufen-Skala. Das ist keine Stufe null.</small>}</>}
           </dd>
         </div>
         <div className="signature-axis" data-signature-axis="maturity">
@@ -40,7 +40,7 @@ export function ImpactSignature({ signature, compact = false }: { signature: Imp
               {maturity.phase === null && <span>?</span>}
             </span>
             <span>{maturity.label}</span>
-            {!compact && <><small>Ex ante → In Umsetzung → Beobachtet → Zugerechnet</small><small>{maturity.detail}</small><small>Analysefortschritt ist kein Nachweis eingetretener Wirkung.</small></>}
+            {!compact && <><small>Ex ante → In Umsetzung → Beobachtet → Zugerechnet</small>{!concise && <><small>{maturity.detail}</small><small>Analysefortschritt ist kein Nachweis eingetretener Wirkung.</small></>}</>}
           </dd>
         </div>
       </dl>

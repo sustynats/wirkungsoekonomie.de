@@ -50,7 +50,7 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     updatesToday: period(today).reduce((n, r) => n + Number(r.counts?.updated_stories || 0), 0),
     usdToday: costs(period(today)), usdYesterday: costs(period(yesterday)), usdMonth: costs(monthRuns),
     eurMonthWithTaxReserve: fxValid ? costs(monthRuns) / fx.rate_usd_per_eur * 1.19 : null,
-    missingCostRuns: monthRuns.filter(r => Number(r.counts?.ai_stories || 0) > 0 && !Number.isFinite(r.ai?.estimated_cost_usd)).length,
+    missingCostRuns: monthRuns.filter(r => Number(r.counts?.ai_requests ?? r.counts?.ai_stories ?? 0) > 0 && !Number.isFinite(r.ai?.estimated_cost_usd)).length,
     runCompleted: report?.completed_at || null, runAgeMinutes: age(report?.completed_at, now),
     pendingCount: stories.filter(s => !merged(s) && (s.pending_update || (!s.published && s.listed !== false))).length,
     pendingPublication: pendingPublication.length,
@@ -76,6 +76,8 @@ export function evaluateChecks(data, now) {
   const checks = (data.probes || []).map(p => ({ id: p.id, name: p.name, ok: p.ok, reason: p.ok ? 'erreichbar' : p.error, immediate: false }));
   checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && data.report?.status === 'ok', reason: summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Fehler oder einen ungültigen Zeitstempel.', immediate: true });
   checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !data.report?.ai_error, reason: aiFailureReason(data.report), immediate: false });
+  const inputHolds = data.report?.input_holds || [];
+  checks.push({ id: 'news-input', name: 'Nachrichten-Eingabeprüfung', ok: inputHolds.length === 0, reason: `${inputHolds.length} Akte(n) überschreiten das Eingabelimit. Diese Akten bleiben zur Prüfung erhalten; andere Nachrichten werden weiterverarbeitet. Kein Nachweis eines Anbieterausfalls.`, immediate: false });
   const imageErrors = new Set(['HIGGSFIELD_RETRY_EXHAUSTED', 'HIGGSFIELD_AUTH_UNAVAILABLE', 'HIGGSFIELD_NOT_CONFIGURED', 'HIGGSFIELD_PROVIDER_UNAVAILABLE']);
   const failedImages = data.stories.filter(s => s.published && s.listed !== false && imageErrors.has(s.title_image?.refresh_failure || s.title_image?.fallback_reason)).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: failedImages === 0, reason: `${failedImages} ${failedImages === 1 ? 'Symbolbild' : 'Symbolbilder'} mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.`, immediate: false });
