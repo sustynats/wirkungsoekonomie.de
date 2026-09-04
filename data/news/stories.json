@@ -1,7 +1,1248 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T18:36:20.968Z",
+  "updated_at": "2026-09-04T18:51:27.003Z",
   "stories": [
+    {
+      "story_id": "wt-d175d26e4635ba0a",
+      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
+      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+      "first_seen": "2026-09-03T15:27:13.000Z",
+      "last_updated": "2026-09-04T18:52:45.973Z",
+      "published_at": "2026-09-04T01:02:06.108Z",
+      "updated_at": "2026-09-04T18:52:45.973Z",
+      "topic": [
+        "Klima"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+          "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+          "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T15:27:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
+          "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T15:27:13.000Z",
+          "ingested_at": "2026-09-04T05:06:21.635Z",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v3-claim-1",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet worden.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "4fdaeab2e2643d47349c",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:52:45.973Z"
+        },
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v3-claim-2",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "d6db4d6fec6a17db0ea6",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:52:45.973Z"
+        },
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v3-claim-3",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Für den östlichen Abschnitt werden 12.500 Quadratmeter genannt; im Endausbau soll die Anlage auf 28.000 Quadratmeter anwachsen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "3d0942abf71c17b78d03",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "0eec46dd9fb9f501bd8d",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:52:45.973Z"
+        },
+        {
+          "claim_id": "wt-d175d26e4635ba0a-v3-claim-4",
+          "story_id": "wt-d175d26e4635ba0a",
+          "claim": "Ein Teil des Parks soll 2027 folgen, der westliche Abschnitt ist noch nicht fertig.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "35bc3ec03628e9bfc64c",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "excerpt_hash": "7beb52eb7e97c2ef6875",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:52:45.973Z"
+        }
+      ],
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T18:52:35.368Z",
+      "publish_ready_at": "2026-09-04T18:52:45.973Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der westliche Teil des Parks soll 2027 folgen.",
+          "source_id": "hr-hessenschau",
+          "expected_by": "2027-12-31",
+          "measurable_indicator": "Eröffnung oder offizielle Inbetriebnahme des westlichen Abschnitts",
+          "expected_by_evidence_hash": "384943076b0b50ffac8af42cb343bf2bc438168d9799da0c8beeb08e7beec3a1",
+          "followup_id": "followup-417454c8547c2001",
+          "announced_at": "2026-09-03T15:27:13.000Z",
+          "follow_up_date": "2027-12-31T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "e2f6aa58c2b5ba43547cd0420dfebe2ab5036405cfd99c6801d8352d6c48c931"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "e9af72e1398ca34cec4084e68a0bb4db8a4bed3e3ad74f1f7b2a7be43a80b636"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ff1a81ea038da266f7abf2acae502e7463535ddc0857ce1175849bcde80eac75"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-fc16a6088f8d00aa-source.png",
+          "sha256": "fc16a6088f8d00aad5d30dc0a22fe3e37f4564ff6ac79af99dc2bc09477f6a9a",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-3-concrete",
+          "generated_at": "2026-09-04T05:45:34.462Z"
+        },
+        "fingerprint": "16463472520ec5caeef346ff1f61d7f749ea0e2492d23880171253bbf8621041",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-3-concrete",
+        "generated_at": "2026-09-04T06:02:50.919Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Der Bericht beschreibt die Anlage als grünes Band durch das Quartier, das zugleich Erholung, Treffpunkt und Spielort sein soll.\n\nGenannt werden eine Zisterne und Rückhaltemulden zum Sammeln von Regenwasser sowie klimaresiliente Bäume, die Schatten spenden und kühlen sollen. Der östliche Abschnitt umfasst 12.500 Quadratmeter; nach und nach soll der Park auf 28.000 Quadratmeter wachsen. Für den westlichen Teil wird 2027 genannt.",
+      "analysis": {
+        "story_id": "wt-d175d26e4635ba0a",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Die Anlage soll Regenwasser speichern, kühlen und im Quartier als öffentlicher Treffpunkt dienen.",
+        "detail_summary": "Gesichert ist die Teilöffnung des Schönhof-Viertelparks in Frankfurt, die der Bericht mit mehreren Bausteinen beschreibt: 12.500 Quadratmeter im östlichen Abschnitt, eine geplante Ausdehnung auf 28.000 Quadratmeter sowie eine spätere Fertigstellung des Westteils 2027. Der Park ist laut Quelle mit einer Zisterne, Rückhaltemulden und klimaresilienten Bäumen ausgestattet. Das ist relevant, weil hier Stadtentwicklung und Klimaanpassung im selben Projekt zusammenlaufen. Der mögliche Wirkpfad führt über Wasserrückhalt, Beschattung und zusätzliche Aufenthaltsflächen zu veränderten Bedingungen im Quartier. Als mögliche Folge nennt die Quelle vor allem geringere Hitze- und Belastungsspitzen sowie mehr nutzbaren Freiraum; gemessene Effekte liegen aber noch nicht vor. Die Evidenz bleibt auf eine journalistische Quelle begrenzt, daher sind die tatsächliche Kühl- oder Speicherwirkung und die spätere Gesamtumsetzung offen.",
+        "why_relevant": "Der Bericht enthält eine konkrete Teilinbetriebnahme öffentlicher Infrastruktur mit klar benannten Klimaanpassungs- und Quartiersfunktionen. Das ist für Mensch, Planet und kommunale Stadtentwicklung potenziell relevant, weil sich Nutzung, Mikroklima und Aufenthaltsqualität im Quartier verändern können.",
+        "status": "laufende Umsetzung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mehr öffentlicher Grünraum und bessere Aufenthaltsbedingungen können das Quartier für Anwohner und künftige Nutzer spürbar verändern."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Wasserrückhalt, Beschattung und klimaresiliente Bepflanzung zielen auf Anpassung an Hitze und Starkregen im Stadtraum."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht vor allem um kommunale Planung und öffentliche Fläche; unmittelbare demokratiespezifische Effekte sind nicht belegt."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Anlage kann lokal Mikroklima, Regenwassermanagement und Aufenthaltsqualität im Quartier verbessern, sobald die beschriebenen Funktionen praktisch greifen.",
+        "impact_risks": [
+          "Die tatsächliche Kühl- und Speicherwirkung ist noch nicht gemessen.",
+          "Teilöffnung kann Erwartungen an den Endausbau vorziehen, bevor der Westteil fertig ist."
+        ],
+        "mechanisms": [
+          "Regenwasser wird in Zisterne und Mulden zurückgehalten.",
+          "Bäume und Grünflächen spenden Schatten und mindern Hitze.",
+          "Öffentliche Freifläche verändert Nutzung und Aufenthaltsmuster im Quartier."
+        ],
+        "first_order": [
+          "Mehr nutzbare Grünfläche im eröffneten Teil.",
+          "Mehr Aufenthalts- und Spielflächen für das Quartier."
+        ],
+        "second_order": [
+          "Mögliche Entlastung bei sommerlicher Hitze im direkten Umfeld.",
+          "Veränderte Wege- und Treffpunktstrukturen im Neubaugebiet."
+        ],
+        "third_order": [
+          "Langfristig kann der Park als Vorbild für klimaangepasste Quartiersplanung dienen, falls die Funktionen sich bewähren."
+        ],
+        "systemic_relevance": "Als Teil eines neuen Stadtquartiers verbindet das Projekt Freiraumplanung mit Klimaanpassung, bleibt aber zunächst ein lokal begrenzter Eingriff.",
+        "transformation_potential": "Begrenzt bis mittel: eher ein Baustein klimaangepasster Quartiersentwicklung als ein struktureller Systemwechsel.",
+        "resilience": "Die erwähnte Zisterne, Rückhaltemulden und klimaresiliente Bäume stärken die lokale Anpassungsfähigkeit, ihre Wirksamkeit ist jedoch noch nicht belegt.",
+        "side_effects": [
+          "Bau- und Pflegeaufwand für Grün- und Wasserinfrastruktur.",
+          "Mögliche Verdrängung anderer Nutzungen zugunsten des Parks ist hier nicht beschrieben."
+        ],
+        "uncertainties": [
+          "Die tatsächliche Temperatur- oder Speicherwirkung ist offen.",
+          "Der genaue Stand des westlichen Abschnitts bleibt nur teilweise beschrieben.",
+          "Es liegt nur eine journalistische Quelle vor."
+        ],
+        "evidence_level": "attributed_single_source",
+        "attribution": "Die Angaben beruhen auf einer einzelnen journalistischen Berichterstattung ohne unabhängige Zweitbestätigung in den gelieferten Daten.",
+        "watch_next": [
+          "Eröffnung des westlichen Abschnitts und Umfang der Gesamtanlage.",
+          "Messwerte zu Wasserrückhalt und Hitzeminderung, falls veröffentlicht."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 11",
+          "Agenda 2030/SDG 13"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Teilöffnung eines klimaangepassten Quartiersparks ist neue, konkrete Umsetzung mit lokaler Relevanz; die Wirkung ist aber noch nicht gemessen."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Östlicher Abschnitt",
+              "value": "12.500",
+              "unit": "Quadratmeter",
+              "context": "Fläche des nun geöffneten Parkteils",
+              "claim_id": "wt-d175d26e4635ba0a-claim-01"
+            },
+            {
+              "label": "Endausbau",
+              "value": "28.000",
+              "unit": "Quadratmeter",
+              "context": "Geplante Gesamtgröße der Anlage",
+              "claim_id": "wt-d175d26e4635ba0a-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "haushalte",
+            "kinder_jugend",
+            "kommunen"
+          ],
+          "timeline": [
+            {
+              "date": "2027",
+              "label": "Westteil soll folgen"
+            }
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "chance",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T01:02:06.108Z",
+          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+          "source_summary": "Im Schönhof-Viertel im Frankfurter Westen ist der erste Teil eines neuen Parks offiziell eröffnet worden. Die Anlage soll nicht nur Erholung bieten, sondern auch Regenwasser aufnehmen und die Umgebung kühlen; bei Planung und Bepflanzung seien Klimawandel, Hitzebelastung und Biodiversität mitgedacht worden.\n\nDer zunächst geöffnete östliche Abschnitt umfasst 12.500 Quadratmeter, später soll der Park auf 28.000 Quadratmeter wachsen. Genannt werden außerdem eine Zisterne, Rückhaltemulden, klimaresiliente Bäume, ein Grünes Klassenzimmer und sichere Wege für künftige Schülerinnen und Schüler. Für das Viertel werden 3.500 bis 4.000 Einwohnerinnen und Einwohner in naher Zukunft erwartet.",
+          "analysis": {
+            "story_id": "wt-d175d26e4635ba0a",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Die Anlage soll Regenwasser speichern, kühlen und als Quartiersraum dienen.",
+            "detail_summary": "Gesichert ist zunächst die Eröffnung des ersten Parkteils im Schönhof-Viertel mit einer Fläche von 12.500 Quadratmetern. Die Quelle beschreibt den Park als Teil einer klimaangepassten Quartiersentwicklung mit Zisterne, Rückhaltemulden, klimaresilienten Bäumen und einem Grünen Klassenzimmer. Für die Umweltwirkung ist das relevant, weil hier konkrete bauliche Elemente genannt werden, die Hitze und Starkregen lokal abmildern sollen. Der mögliche Wirkpfad reicht von besserer Wasseraufnahme und Verschattung bis zu höherer Aufenthaltsqualität im Quartier. Ob und in welchem Ausmaß das tatsächlich eintritt, bleibt offen, weil Messdaten zur Kühlleistung, Wasserrückhaltung oder Nutzung fehlen. Die Meldung ist damit eine belastbare Erstinformation über eine laufende städtebauliche Umsetzung, nicht über bereits nachgewiesene Wirkung.",
+            "why_relevant": "Ein neuer Quartierspark mit expliziter Klimaanpassungsfunktion verändert lokale Infrastruktur, Wasserhaushalt und Hitzebelastung in einem wachsenden Wohngebiet.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Der Park betrifft künftige Bewohnerinnen und Bewohner sowie Schulwege und Aufenthaltsqualität im Quartier."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Genannt werden Regenwasserspeicherung, Verschattung und klimaresiliente Bepflanzung als lokale Anpassungsmaßnahmen."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer demokratischer Effekt wird in der Quelle nicht beschrieben; relevant ist eher die kommunale Planung."
+            },
+            "importance": "mittel",
+            "impact_potential": "Der Park kann lokale Hitzebelastung und Oberflächenabfluss im Quartier mindern und damit die Anpassungsfähigkeit eines dicht bebauten Neubaugebiets erhöhen.",
+            "impact_risks": [
+              "Die tatsächliche Kühl- und Speicherleistung kann geringer ausfallen als geplant.",
+              "Ohne Pflege und Nutzung könnten die vorgesehenen Funktionen nur teilweise greifen."
+            ],
+            "mechanisms": [
+              "Verschattung durch klimaresiliente Bäume",
+              "Regenwasserrückhalt über Zisterne und Mulden",
+              "Niedrigschwellige Quartiersnutzung durch offene Grünfläche"
+            ],
+            "first_order": [
+              "mehr Aufenthalts- und Bewegungsraum",
+              "lokale Speicherung von Niederschlagswasser",
+              "erste Verschattung im Areal"
+            ],
+            "second_order": [
+              "mögliche Entlastung bei Starkregen",
+              "bessere Hitzetoleranz im Quartier",
+              "mehr Nutzung von Schul- und Begegnungsangeboten"
+            ],
+            "third_order": [
+              "höhere Resilienz eines neuen Wohngebiets gegenüber Klimarisiken",
+              "Vorbildwirkung für künftige Quartiersplanung möglich"
+            ],
+            "systemic_relevance": "Die Meldung ist lokal, aber sie berührt zwei systemische Themen: urbane Klimaanpassung und integrierte Quartiersplanung. Systemrelevant wird sie vor allem dann, wenn ähnliche Standards in weiteren Neubaugebieten übernommen werden.",
+            "transformation_potential": "Begrenzt bis mittel: Es geht um ein einzelnes Quartier, aber mit konkreten baulichen Merkmalen für klimaangepasste Stadtentwicklung.",
+            "resilience": "Die beschriebenen Elemente erhöhen potenziell die Resilienz des Viertels gegenüber Hitze und Starkregen, bleiben aber von Ausführung, Pflege und tatsächlicher Nutzung abhängig.",
+            "side_effects": [
+              "Bauliche Flächen für Grün können an anderer Stelle Nutzungsansprüche verdrängen.",
+              "Die Wirkung hängt stark von Wetterextremen und Unterhalt ab."
+            ],
+            "uncertainties": [
+              "Keine unabhängige Zweitquelle in den gelieferten Daten.",
+              "Messwerte zur tatsächlichen Kühl- oder Speicherwirkung fehlen.",
+              "Der Endausbau des westlichen Teils ist erst angekündigt, nicht belegt umgesetzt."
+            ],
+            "evidence_level": "single_source_report mit konkreten Orts-, Flächen- und Funktionsangaben; keine unabhängige Bestätigung der Wirkung",
+            "attribution": "Die Angaben stammen ausschließlich aus einem journalistischen Bericht über die Eröffnung und die Planungsziele des Parks.",
+            "watch_next": [
+              "Wann der westliche Teil eröffnet wird und welche Fläche er umfasst.",
+              "Ob spätere Messungen zu Hitze- oder Regenrückhalt veröffentlicht werden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Eröffnung eines klimaangepassten Parkteils in einem neuen Wohnquartier ist eine neue Umsetzung mit lokaler materieller Relevanz; die Evidenz bleibt jedoch auf eine Quelle begrenzt."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-1",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "In Frankfurts Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "4fdaeab2e2643d47349c",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-2",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; die Planung berücksichtigte Klimawandel und Klimaanpassung.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "d6db4d6fec6a17db0ea6",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "f2648a8797634d3610df",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "6cd1c2db5930a4392de3",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "ff042eff6c35db82a0e4",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-3",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter; der Park soll nach und nach auf 28.000 Quadratmeter anwachsen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "3d0942abf71c17b78d03",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-4",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Zwischen 3.500 und 4.000 Menschen sollen in naher Zukunft im Schönhof-Viertel leben.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "8239c4a3b2d33b24a87c",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v1-claim-5",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Für das Viertel sind auch ein Grünes Klassenzimmer, sichere Wege und eine soziale Treffpunktfunktion vorgesehen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "29375e998e34026f2e4f",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "d0ceedf8ca522ad2e99a",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "35bc3ec03628e9bfc64c",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "0e008636ec2917a5ba7a",
+                  "checked_at": "2026-09-04T01:02:06.108Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:02:06.108Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T05:22:51.361Z",
+          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+          "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
+          "analysis": {
+            "story_id": "wt-d175d26e4635ba0a",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
+            "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
+            "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
+            },
+            "importance": "mittel",
+            "impact_potential": "Lokal kann die Anlage Hitze abmildern, Wasser zurückhalten und den Stadtraum aufwerten; die tatsächliche Stärke hängt aber vom späteren Betrieb und der realen Nutzung ab.",
+            "impact_risks": [
+              "Die angekündigte Kühl- und Speicherwirkung könnte geringer ausfallen als geplant.",
+              "Ohne Pflege, Fertigstellung und Nutzung bleiben die Wirkungen auf das Quartier begrenzt."
+            ],
+            "mechanisms": [
+              "Versickerung und Zwischenspeicherung von Niederschlagswasser",
+              "Beschattung und Verdunstung durch Bäume und Grünflächen",
+              "kostenfreier öffentlicher Raum fördert Aufenthalt und soziale Nutzung"
+            ],
+            "first_order": [
+              "Eröffnung einer neuen öffentlichen Grünanlage im Quartier",
+              "Teilweise Nutzung eines bisher noch nicht vollständig ausgebauten Areals"
+            ],
+            "second_order": [
+              "Besseres Mikroklima und mehr Aufenthaltsqualität im direkten Umfeld sind möglich",
+              "Der Park kann als sozialer Treffpunkt im Neubaugebiet wirken"
+            ],
+            "third_order": [
+              "Das Quartier könnte als Referenz für klimaangepasste Stadtentwicklung dienen",
+              "Die konkrete Übertragbarkeit bleibt wegen fehlender Wirkungsdaten offen"
+            ],
+            "systemic_relevance": "Als Beispiel für klimaangepasste Quartiersplanung berührt der Fall städtische Resilienz, aber zunächst nur auf lokaler Ebene.",
+            "transformation_potential": "Begrenzt bis mittel: Der Vorgang zeigt ein Planungsmodell für Hitze- und Wasseranpassung, ist aber noch kein Beleg für breit wirksame Transformation.",
+            "resilience": "Stärkt potenziell die lokale Anpassungsfähigkeit an Hitze und Starkregen; belastbare Wirksamkeit ist noch nicht nachgewiesen.",
+            "side_effects": [
+              "Mehr öffentliche Nutzung kann Pflege- und Sicherheitsanforderungen erhöhen",
+              "Baumaßnahmen und laufende Fertigstellung erzeugen vorübergehend Restunsicherheit"
+            ],
+            "uncertainties": [
+              "Die tatsächliche Kühlwirkung ist nicht gemessen.",
+              "Die Speicherleistung der Anlage ist nur als Planung beschrieben.",
+              "Der westliche Teil ist noch nicht eröffnet."
+            ],
+            "evidence_level": "single_source_with_caveats",
+            "attribution": "Beruht auf einem journalistischen Bericht ohne unabhängige Zweitquelle in den gelieferten Daten.",
+            "watch_next": [
+              "Fertigstellung des westlichen Parkteils",
+              "Messwerte zu Temperatur- und Wasserhaushalt im Quartier",
+              "Nutzung des Parks durch Anwohnerinnen und Anwohner"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Eröffnung eines neuen, klimaangepassten Quartiersparks ist eine reale Umsetzung mit lokal materieller Wirkung auf Nutzung, Wasserhaushalt und Hitzeschutz. Die Belege stammen zwar nur aus einer Quelle, tragen aber den Kern der Meldung hinreichend."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "eröffneter Abschnitt",
+                  "value": "12.500",
+                  "unit": "Quadratmeter",
+                  "context": "Größe des nun zugänglichen Parkteils"
+                },
+                {
+                  "label": "Endausbau",
+                  "value": "28.000",
+                  "unit": "Quadratmeter",
+                  "context": "geplante Gesamtgröße des Parks"
+                },
+                {
+                  "label": "Bäume",
+                  "value": "181",
+                  "unit": "Stück",
+                  "context": "als klimaresilient beschriebene Bäume"
+                }
+              ],
+              "affected_groups": [
+                "haushalte",
+                "kinder_jugend",
+                "kommunen",
+                "natur"
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "chance",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-1",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks offiziell eröffnet worden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "4fdaeab2e2643d47349c",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "3d0942abf71c17b78d03",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-2",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; dafür sind eine Zisterne und Rückhaltemulden vorgesehen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "f2648a8797634d3610df",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "6cd1c2db5930a4392de3",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-3",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter und soll später auf 28.000 Quadratmeter anwachsen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "3d0942abf71c17b78d03",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "0eec46dd9fb9f501bd8d",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v2-claim-4",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Im Endausbau soll der Park so groß werden wie vier Fußballfelder und 181 klimaresiliente Bäume enthalten.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "0eec46dd9fb9f501bd8d",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "6cd1c2db5930a4392de3",
+                  "checked_at": "2026-09-04T05:22:51.361Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T05:22:51.361Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-04T18:52:45.973Z",
+          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+          "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Der Bericht beschreibt die Anlage als grünes Band durch das Quartier, das zugleich Erholung, Treffpunkt und Spielort sein soll.\n\nGenannt werden eine Zisterne und Rückhaltemulden zum Sammeln von Regenwasser sowie klimaresiliente Bäume, die Schatten spenden und kühlen sollen. Der östliche Abschnitt umfasst 12.500 Quadratmeter; nach und nach soll der Park auf 28.000 Quadratmeter wachsen. Für den westlichen Teil wird 2027 genannt.",
+          "analysis": {
+            "story_id": "wt-d175d26e4635ba0a",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Die Anlage soll Regenwasser speichern, kühlen und im Quartier als öffentlicher Treffpunkt dienen.",
+            "detail_summary": "Gesichert ist die Teilöffnung des Schönhof-Viertelparks in Frankfurt, die der Bericht mit mehreren Bausteinen beschreibt: 12.500 Quadratmeter im östlichen Abschnitt, eine geplante Ausdehnung auf 28.000 Quadratmeter sowie eine spätere Fertigstellung des Westteils 2027. Der Park ist laut Quelle mit einer Zisterne, Rückhaltemulden und klimaresilienten Bäumen ausgestattet. Das ist relevant, weil hier Stadtentwicklung und Klimaanpassung im selben Projekt zusammenlaufen. Der mögliche Wirkpfad führt über Wasserrückhalt, Beschattung und zusätzliche Aufenthaltsflächen zu veränderten Bedingungen im Quartier. Als mögliche Folge nennt die Quelle vor allem geringere Hitze- und Belastungsspitzen sowie mehr nutzbaren Freiraum; gemessene Effekte liegen aber noch nicht vor. Die Evidenz bleibt auf eine journalistische Quelle begrenzt, daher sind die tatsächliche Kühl- oder Speicherwirkung und die spätere Gesamtumsetzung offen.",
+            "why_relevant": "Der Bericht enthält eine konkrete Teilinbetriebnahme öffentlicher Infrastruktur mit klar benannten Klimaanpassungs- und Quartiersfunktionen. Das ist für Mensch, Planet und kommunale Stadtentwicklung potenziell relevant, weil sich Nutzung, Mikroklima und Aufenthaltsqualität im Quartier verändern können.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Mehr öffentlicher Grünraum und bessere Aufenthaltsbedingungen können das Quartier für Anwohner und künftige Nutzer spürbar verändern."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Wasserrückhalt, Beschattung und klimaresiliente Bepflanzung zielen auf Anpassung an Hitze und Starkregen im Stadtraum."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Es geht vor allem um kommunale Planung und öffentliche Fläche; unmittelbare demokratiespezifische Effekte sind nicht belegt."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Anlage kann lokal Mikroklima, Regenwassermanagement und Aufenthaltsqualität im Quartier verbessern, sobald die beschriebenen Funktionen praktisch greifen.",
+            "impact_risks": [
+              "Die tatsächliche Kühl- und Speicherwirkung ist noch nicht gemessen.",
+              "Teilöffnung kann Erwartungen an den Endausbau vorziehen, bevor der Westteil fertig ist."
+            ],
+            "mechanisms": [
+              "Regenwasser wird in Zisterne und Mulden zurückgehalten.",
+              "Bäume und Grünflächen spenden Schatten und mindern Hitze.",
+              "Öffentliche Freifläche verändert Nutzung und Aufenthaltsmuster im Quartier."
+            ],
+            "first_order": [
+              "Mehr nutzbare Grünfläche im eröffneten Teil.",
+              "Mehr Aufenthalts- und Spielflächen für das Quartier."
+            ],
+            "second_order": [
+              "Mögliche Entlastung bei sommerlicher Hitze im direkten Umfeld.",
+              "Veränderte Wege- und Treffpunktstrukturen im Neubaugebiet."
+            ],
+            "third_order": [
+              "Langfristig kann der Park als Vorbild für klimaangepasste Quartiersplanung dienen, falls die Funktionen sich bewähren."
+            ],
+            "systemic_relevance": "Als Teil eines neuen Stadtquartiers verbindet das Projekt Freiraumplanung mit Klimaanpassung, bleibt aber zunächst ein lokal begrenzter Eingriff.",
+            "transformation_potential": "Begrenzt bis mittel: eher ein Baustein klimaangepasster Quartiersentwicklung als ein struktureller Systemwechsel.",
+            "resilience": "Die erwähnte Zisterne, Rückhaltemulden und klimaresiliente Bäume stärken die lokale Anpassungsfähigkeit, ihre Wirksamkeit ist jedoch noch nicht belegt.",
+            "side_effects": [
+              "Bau- und Pflegeaufwand für Grün- und Wasserinfrastruktur.",
+              "Mögliche Verdrängung anderer Nutzungen zugunsten des Parks ist hier nicht beschrieben."
+            ],
+            "uncertainties": [
+              "Die tatsächliche Temperatur- oder Speicherwirkung ist offen.",
+              "Der genaue Stand des westlichen Abschnitts bleibt nur teilweise beschrieben.",
+              "Es liegt nur eine journalistische Quelle vor."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Die Angaben beruhen auf einer einzelnen journalistischen Berichterstattung ohne unabhängige Zweitbestätigung in den gelieferten Daten.",
+            "watch_next": [
+              "Eröffnung des westlichen Abschnitts und Umfang der Gesamtanlage.",
+              "Messwerte zu Wasserrückhalt und Hitzeminderung, falls veröffentlicht."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11",
+              "Agenda 2030/SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Teilöffnung eines klimaangepassten Quartiersparks ist neue, konkrete Umsetzung mit lokaler Relevanz; die Wirkung ist aber noch nicht gemessen."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Östlicher Abschnitt",
+                  "value": "12.500",
+                  "unit": "Quadratmeter",
+                  "context": "Fläche des nun geöffneten Parkteils",
+                  "claim_id": "wt-d175d26e4635ba0a-claim-01"
+                },
+                {
+                  "label": "Endausbau",
+                  "value": "28.000",
+                  "unit": "Quadratmeter",
+                  "context": "Geplante Gesamtgröße der Anlage",
+                  "claim_id": "wt-d175d26e4635ba0a-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "haushalte",
+                "kinder_jugend",
+                "kommunen"
+              ],
+              "timeline": [
+                {
+                  "date": "2027",
+                  "label": "Westteil soll folgen"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "chance",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v3-claim-1",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet worden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "4fdaeab2e2643d47349c",
+                  "checked_at": "2026-09-04T18:52:45.973Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v3-claim-2",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "d6db4d6fec6a17db0ea6",
+                  "checked_at": "2026-09-04T18:52:45.973Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v3-claim-3",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Für den östlichen Abschnitt werden 12.500 Quadratmeter genannt; im Endausbau soll die Anlage auf 28.000 Quadratmeter anwachsen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "3d0942abf71c17b78d03",
+                  "checked_at": "2026-09-04T18:52:45.973Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "0eec46dd9fb9f501bd8d",
+                  "checked_at": "2026-09-04T18:52:45.973Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            },
+            {
+              "claim_id": "wt-d175d26e4635ba0a-v3-claim-4",
+              "story_id": "wt-d175d26e4635ba0a",
+              "claim": "Ein Teil des Parks soll 2027 folgen, der westliche Abschnitt ist noch nicht fertig.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "35bc3ec03628e9bfc64c",
+                  "checked_at": "2026-09-04T18:52:45.973Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+                  "excerpt_hash": "7beb52eb7e97c2ef6875",
+                  "checked_at": "2026-09-04T18:52:45.973Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:52:45.973Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T01:02:06.108Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T05:22:51.361Z",
+          "source_count": 1
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-04T18:52:45.973Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-a15bc39ee69aa3e5",
+      "slug": "sabotageverdacht-in-der-nahe-von-bautzen-9aa3e5",
+      "title": "Sabotageverdacht in der Nähe von Bautzen",
+      "first_seen": "2026-09-04T18:51:15.000Z",
+      "last_updated": "2026-09-04T18:51:15.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/anschlag-sachsen-bautzen-strom-umspannwerk,video-akt-1042.html",
+          "title": "Sabotageverdacht in der Nähe von Bautzen",
+          "summary": "Nach mutmaßlichen Angriffen auf die Stromversorgung in Deutschland ermittelt die Polizei nun auch in Sachsen. Nördlich von Bautzen wurden an zwei Orten Spreng- oder Brandvorrichtungen gefunden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:51:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "679d929ded14ba583d692d5a736dae04efbe4d25876586031ae92e410b524f09",
+          "source_item_id": "9095531522b73a05a750d5d6976adf40ca3d54dc470a93b13ca8a596e7d239cd",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:51:15.000Z",
+          "ingested_at": "2026-09-04T18:51:27.003Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a15bc39ee69aa3e5-claim-01",
+          "story_id": "wt-a15bc39ee69aa3e5",
+          "claim": "Sabotageverdacht in der Nähe von Bautzen: Nach mutmaßlichen Angriffen auf die Stromversorgung in Deutschland ermittelt die Polizei nun auch in Sachsen. Nördlich von Bautzen wurden an zwei Orten Spreng- oder Brandvorrichtungen gefunden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T18:51:27.003Z"
+        }
+      ],
+      "content_hash": "a9dc7a49af635c6712f225c27cb1d3de56312ac44bf2524be41888f7bd8ab377",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T18:51:27.003Z",
+      "event_first_seen_at": "2026-09-04T18:51:27.003Z",
+      "event_detected_at": "2026-09-04T18:51:27.003Z",
+      "event_id": "event-3499cc9e3a0f511f1c8b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 0.20005,
+        "detection_delay_minutes": 0.20005,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 100,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T18:51:27.003Z",
+      "rejection": {
+        "at": "2026-09-04T18:51:27.003Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-01bd487d975ea350",
+      "slug": "german-power-grid-sabotage-attack-linked-to-climate-extremism-5ea350",
+      "title": "German power grid sabotage attack linked to ‘climate extremism’",
+      "first_seen": "2026-09-04T18:40:07.000Z",
+      "last_updated": "2026-09-04T18:40:07.000Z",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/europe/20260904-german-power-grid-sabotage-attack-linked-to-climate-extremism",
+          "title": "German power grid sabotage attack linked to ‘climate extremism’",
+          "summary": "German Interior Minister Alexander Dobrindt on Friday said the evidence in a recent spate of sabotage attacks on power grids across the country points to a militant climate activist.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:40:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "45ed80d7a706c49ebc0bec3ec3b568d10f8158f6147e7fabeb5b55f335ac16ee",
+          "source_item_id": "b5a9f0391572fa2d928683e470673119b4cffc21ea4fdf62b84cfd3e18eb24ac",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:40:07.000Z",
+          "ingested_at": "2026-09-04T18:51:27.003Z",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-01bd487d975ea350-claim-01",
+          "story_id": "wt-01bd487d975ea350",
+          "claim": "German power grid sabotage attack linked to ‘climate extremism’: German Interior Minister Alexander Dobrindt on Friday said the evidence in a recent spate of sabotage attacks on power grids across the country points to a militant climate activist.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T18:51:27.003Z"
+        }
+      ],
+      "content_hash": "7b480bab9144efb31e484f4efdb2b754cf771b390391e293106e628cb6dbb542",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T18:51:27.003Z",
+      "event_first_seen_at": "2026-09-04T18:51:27.003Z",
+      "event_detected_at": "2026-09-04T18:51:27.003Z",
+      "event_id": "event-3caad6264d579c796076",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Energie",
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.333383333333334,
+        "detection_delay_minutes": 11.333383333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T18:51:27.003Z",
+      "rejection": {
+        "at": "2026-09-04T18:51:27.003Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-31724816547fc87d",
       "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
@@ -987,6 +2228,131 @@
         }
       ],
       "retirement_history": []
+    },
+    {
+      "story_id": "wt-04397d9eb71fa6a1",
+      "slug": "dobrindt-spricht-von-klimaextremismus-1fa6a1",
+      "title": "Dobrindt spricht von \"Klimaextremismus\"",
+      "first_seen": "2026-09-04T18:30:02.000Z",
+      "last_updated": "2026-09-04T18:30:02.000Z",
+      "topic": [
+        "Klima"
+      ],
+      "sources": [
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/sabotageversuche-dobrindt-reul-100.html",
+          "title": "Dobrindt spricht von \"Klimaextremismus\"",
+          "summary": "Nach der Sabotage an Umspannwerken in Nordrhein-Westfalen und Brandenburg fahndet die Polizei nach einem Verdächtigen. Der Mann hatte Bekennerschreiben verfasst. Ob er aber auch d…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:30:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "3620b03cccfd51bc4270f12bf0395046b18779a4f73bf2870fa7395a5e85e0c6",
+          "source_item_id": "36d2d74e9d523331328878b96c5eea1ecf670133eff584ddfa7e66c899f1884f",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:30:02.000Z",
+          "ingested_at": "2026-09-04T18:51:27.003Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-04397d9eb71fa6a1-claim-01",
+          "story_id": "wt-04397d9eb71fa6a1",
+          "claim": "Dobrindt spricht von \"Klimaextremismus\": Nach der Sabotage an Umspannwerken in Nordrhein-Westfalen und Brandenburg fahndet die Polizei nach einem Verdächtigen. Der Mann hatte Bekennerschreiben verfasst. Ob er aber auch d…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T18:51:27.003Z"
+        }
+      ],
+      "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T18:51:27.003Z",
+      "event_first_seen_at": "2026-09-04T18:51:27.003Z",
+      "event_detected_at": "2026-09-04T18:51:27.003Z",
+      "event_id": "event-2b3fe134ec524295323f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.416716666666666,
+        "detection_delay_minutes": 21.416716666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T18:51:27.003Z",
+      "rejection": {
+        "at": "2026-09-04T18:51:27.003Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
     },
     {
       "story_id": "wt-1bc40229c938d48a",
@@ -1988,33 +3354,41 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-9af931a15fa9d405-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-24b72254775b0eec-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "9af931a15fa9d4058a4239b702c522ec1bd65bce05eebf79115172dcbfc0678e"
+          "sha256": "24b72254775b0eecab88b222f57aa99aaf1e92a968e78a65d00c68a6e2c29eb9"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-fb624fb3f290a738-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-6dfc694f9f6dbd8d-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "fb624fb3f290a7389863b662bcc6e272c6142afba72e6a0e86d921ee8fdd685b"
+          "sha256": "6dfc694f9f6dbd8d1797853f8461be0d89b003d8bbfb6ff257cb6be1df6c36cc"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-18de4554de1f82e9-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-079b3a39f725e3c8-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "18de4554de1f82e9c0cd58ba9af17eee7f9abaa4c601b5f9974ad6718a5eaff2"
+          "sha256": "079b3a39f725e3c8b47d1f638fc834ba29bf6e8653c828c174d40043ac93decc"
         },
-        "source_visual": null,
-        "fingerprint": "f0d46296fc1f58de2ce16873644390167d4c93148dca85a3425d0d8f7fcc8d12",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-ab3ac9ead7abff38-source.png",
+          "sha256": "ab3ac9ead7abff38e9aa4e6332bd4222fd1b67eab79c06dbe7c654bed974eed1",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T18:25:07.395Z"
+        },
+        "fingerprint": "c3e0d002a431efe62891ce5b69607bcd451b88240429baabb20f46b1e00a20fd",
         "template_version": "woek-title-3-glass",
         "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T18:27:07.855Z",
-        "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_TIMEOUT",
-        "retry_after": "2026-09-04T18:42:07.855Z"
+        "generated_at": "2026-09-04T18:54:01.475Z",
+        "status": "generated"
       }
     },
     {
@@ -8585,7 +9959,7 @@
             "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
             "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen SEK-Einsatz beim Hambacher Forst. Aktuelle Infos zu den Ermittlungen im Ticker.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T18:04:54.000Z",
+            "published_at": "2026-09-04T18:29:16.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
@@ -8601,8 +9975,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T18:04:54.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "source_published_at": "2026-09-04T18:29:16.000Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -12364,6 +13738,129 @@
       "rejected_at": "2026-09-04T16:21:44.537Z",
       "rejection": {
         "at": "2026-09-04T16:21:44.537Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-b0655b3a685b6e1a",
+      "slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-sprengvorrichtungen-entdeckt-5b6e1a",
+      "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: „Sprengvorrichtungen“ entdeckt",
+      "first_seen": "2026-09-04T16:11:01.000Z",
+      "last_updated": "2026-09-04T16:11:01.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020248.html",
+          "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: „Sprengvorrichtungen“ entdeckt",
+          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Was haben die Ermittler gefunden?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:11:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "b04b5334bc6383143d1e097cd4184fc020be6d96431726e93f92abef2f5dae11",
+          "source_item_id": "eb3dbe3fc0195cf459a7c4eebaf31a7f54161d66357d748e002b11be9ea63f8f",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:11:01.000Z",
+          "ingested_at": "2026-09-04T18:51:27.003Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b0655b3a685b6e1a-claim-01",
+          "story_id": "wt-b0655b3a685b6e1a",
+          "claim": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: „Sprengvorrichtungen“ entdeckt: Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Was haben die Ermittler gefunden?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T18:51:27.003Z"
+        }
+      ],
+      "content_hash": "815df384a88a547730f33dfb1cf9feaa63447ca6d58b2159dcea2b8f5f61e223",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T18:51:27.003Z",
+      "event_first_seen_at": "2026-09-04T18:51:27.003Z",
+      "event_detected_at": "2026-09-04T18:51:27.003Z",
+      "event_id": "event-9dd2b95eeabadc754e4f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 160.43338333333332,
+        "detection_delay_minutes": 160.43338333333332,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 33,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T18:51:27.003Z",
+      "rejection": {
+        "at": "2026-09-04T18:51:27.003Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -16447,7 +17944,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:50:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -16477,7 +17974,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:48:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -16657,7 +18154,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T17:00:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -16687,7 +18184,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:58:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -16717,7 +18214,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:56:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -16747,7 +18244,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:54:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -16777,7 +18274,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:52:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -19004,7 +20501,7 @@
       "verification_started_at": "2026-09-04T15:28:20.368Z",
       "publish_ready_at": "2026-09-04T15:28:30.847Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -19987,49 +21484,7 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Studie-von-Unicef/!6209752",
-            "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
-            "summary": "Kinder sind im Internet womöglich häufiger sexuellem Missbrauch ausgesetzt als bisher angenommen. Das zeigt eine Unicef-Untersuchung in 21 Ländern. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T06:53:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "208ab37a2b288f50f65ad0d1718c82091149026cd9469ada9990b7c3962cfd17",
-            "source_item_id": "7056452112063302b0ec2f7b7ea5ee74bcfab02bbe8db9bd6f1a83f698b67898",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T06:53:00.000Z",
-            "ingested_at": "2026-09-04T15:06:23.805Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -21262,7 +22717,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:12:29.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:france24",
               "basis": "publisher_only_origin_unverified",
@@ -21907,7 +23362,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:07:42.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:hr",
               "basis": "publisher_only_origin_unverified",
@@ -21915,9 +23370,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -22092,7 +23549,7 @@
       "verification_started_at": "2026-09-04T15:22:03.898Z",
       "publish_ready_at": "2026-09-04T15:22:16.882Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -22597,9 +24054,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "26c314f439895d8ac100183b4efbfcdf7c0d0dd7834af76904b1891be7f6fa3b",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "bbe3c2d6478312406c6907d14e61c3eb421b5d942ca9fed06b04a2bdd17097e1",
+        "checked_at": "2026-09-04T18:51:27.003Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:51:27.003Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -22656,21 +24116,16 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:13:42.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-1f570db44a0fd7e5",
@@ -23686,7 +25141,7 @@
       "verification_started_at": "2026-09-04T14:38:20.120Z",
       "publish_ready_at": "2026-09-04T14:38:33.214Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -24044,9 +25499,12 @@
         "generated_at": "2026-09-04T14:39:03.058Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "2eac0a596c34859bc1c26fe892d842d1a22882fb8531ec61738173c01dd0cb92",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "2e64e76a21856dac036f7d3ea40d5cd4838faf1bd3e03457afcc34124351a8b7",
+        "checked_at": "2026-09-04T18:51:27.003Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:51:27.003Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -24055,7 +25513,7 @@
             "title": "Migration - Frontex unterstützt Frankreich bei Einsätzen im Ärmelkanal",
             "summary": "Die europäische Grenzschutzagentur Frontex unterstützt künftig die Seenotrettung von Migranten im Ärmelkanal und in der ‌Nordsee.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T18:15:22.000Z",
+            "published_at": "2026-09-04T18:30:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -24071,22 +25529,17 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T18:15:22.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "source_published_at": "2026-09-04T18:30:01.000Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-61ed7f528fbdb3c0",
@@ -29717,7 +31170,7 @@
             "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
             "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T18:15:22.000Z",
+            "published_at": "2026-09-04T18:30:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -29733,8 +31186,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T18:15:22.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "source_published_at": "2026-09-04T18:30:01.000Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -36633,7 +38086,7 @@
       "verification_started_at": "2026-09-04T11:11:39.805Z",
       "publish_ready_at": "2026-09-04T11:11:50.847Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -37941,10 +39394,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "2221ccbdda7741402a1d4401c8249fab43b83bea3ae27376cccc90b3ffb32f6c",
-        "checked_at": "2026-09-04T17:39:54.371Z",
+        "fingerprint": "03b6cc5bd0db99972df08325c19e16db7f5a2ae627ef495713d846ffb232d6b0",
+        "checked_at": "2026-09-04T18:51:27.003Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-04T23:39:54.371Z",
+        "expires_at": "2026-09-05T00:51:27.003Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -38404,7 +39857,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T12:40:00.000Z",
-            "ingested_at": "2026-09-04T12:51:34.068Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:stern",
               "basis": "publisher_only_origin_unverified",
@@ -38435,541 +39888,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T21:03:08.000Z",
-            "ingested_at": "2026-09-04T17:39:54.371Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/verbrechen/sabotage--polizei-stuermt-fahrzeug-von-verdaechtigem-38209944.html",
-            "title": "Stromversorgung: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
-            "summary": "Mehrere Sabotage-Versuche gegen das deutsche Stromnetz sorgten diese Woche für Aufsehen, ein Bekennerschreiben eines Mannes ging ein. Der Verdächtige soll bald gefasst sein.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:34:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "f5c226636c0856eafea5b9f32a3eacf26a081baf82720936e9c83aa8274f6f6a",
-            "source_item_id": "c850d99c13002c0d28703f59d6324f7b6edb59de1da604cf9c22cb531560af71",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:34:00.000Z",
-            "ingested_at": "2026-09-04T17:39:54.371Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "6ffde9a810b7fd68d381b8bcdea0f4a419d5e90dfab97ce8077f9e7b2333b9e4",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-            "title": "Liveticker - SEK-Zugriff im Hambacher Forst",
-            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz im Hambacher Forst. Reul und Dobrindt gaben eine PK.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:09:16.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "42883fb62fb9712a79fa2f73e4c8f264e7f446b19c006a1d93891dbd8be30c06",
-            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:09:16.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-            "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von einem Sabotagedelikt aus. Offenbar sollte ein Kurzschluss hergestellt werden. Es…",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T01:45:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399",
-            "source_item_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T01:45:01.000Z",
-            "ingested_at": "2026-09-04T01:51:32.529Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "ndr-info",
-            "publisher": "NDR",
-            "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
-            "title": "Weiterer Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "An einem Umspannwerk bei Dormagen in NRW gab es einen Sabotageversuch, Abschussvorrichtungen wurden gefunden. Die Polizei fahndet nach einem Mann, der ein Bekennerschreiben verfasst hat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T05:37:43.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "861f58150d932ea7e1ae3e6e6f2a3c3654528792c6ac8b3c4b5144f8b0fe3d46",
-            "source_item_id": "286bf0c30dea8a66a74bbd8d5dfedf5d68ede625df946d30e3855702488349f4",
-            "publisher_id": "ndr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Norddeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T05:37:43.000Z",
-            "ingested_at": "2026-09-04T10:42:21.689Z",
-            "provenance": {
-              "origin": "publisher:ndr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
-            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weiterer Polizeieinsatz in Oldenburg",
-            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T06:00:49.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "f397bdaf0a0e0965443026caf5c07d2a0d73303620bb48cc4bdec82e661ce42a",
-            "source_item_id": "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T06:00:49.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
-            "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
-            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T02:12:48.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "14087e66bcbc1e292a4cce1326e0a43ef35e21c1a36fc885d8df1a5f590912b3",
-            "source_item_id": "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T02:12:48.000Z",
-            "ingested_at": "2026-09-04T02:21:15.650Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
-            "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
-            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Nun geht sie von einem Sabotagedelikt aus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T00:39:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "0cb6451ef05c61d48dfe4e08781be6c29a0e5450f556b38588286baa0654a19d",
-            "source_item_id": "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T00:39:00.000Z",
-            "ingested_at": "2026-09-04T01:26:36.485Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "spiegel-schlagzeilen",
-            "publisher": "DER SPIEGEL",
-            "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
-            "title": "Dormagen: Polizei geht von versuchter Sabotage an Umspannwerk aus",
-            "summary": "Ein Spaziergänger hatte einen verdächtigen Gegenstand entdeckt. Jetzt erklären die Ermittler: Im neuen Fall in Dormagen dürfte es sich um versuchte Sabotage handeln. Ein Bekennerschreiben liegt demnach vor.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T01:06:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "fb23a151dcb8577bbe55a13a4d92dd302962e8cf0a9d5b9cd3bce01f52dc0ef9",
-            "source_item_id": "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60",
-            "publisher_id": "spiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T01:06:00.000Z",
-            "ingested_at": "2026-09-04T01:26:36.485Z",
-            "provenance": {
-              "origin": "publisher:spiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
-            "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
-            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Handelt es sich um eine Abschussvorrichtung oder nur um einen schlechten Scherz?",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T21:07:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "95ca532a46bb3d2ac8e1b929c35086ce0fba2d0a679167fc63e2de441f64c926",
-            "source_item_id": "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T21:07:00.000Z",
-            "ingested_at": "2026-09-04T00:21:22.875Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
-            "title": "Nach Angriffen auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
-            "summary": "Handelt es sich um eine Abschussvorrichtung, oder nur um einen schlechten Scherz? Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T21:03:08.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "8bee50c615245a339fea47ea2d996565dfb75d37869a6674ac52c0f3572d2ab9",
-            "source_item_id": "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T21:03:08.000Z",
-            "ingested_at": "2026-09-04T00:21:22.875Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
-            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weitere Polizeieinsätze in Oldenburg und Aachen",
-            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T09:17:32.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "2f61feb3bed04e1b34b3a63421ce9121bab7a615a1c9cda7155a0f896b25c6f7",
-            "source_item_id": "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T09:17:32.000Z",
-            "ingested_at": "2026-09-04T09:21:34.386Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
-            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
-            "summary": "Nach dem Bekennerschreiben an die taz gehen die Angriffe auf Umspannwerke weiter – jetzt in Dormagen. Die Polizei fahndet nach einem Gevelsberger. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T07:59:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "7a24f109aae1edc09705e29df404e58bb1a2103f61c4d94f1f7ee9dd7390d817",
-            "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T07:59:00.000Z",
-            "ingested_at": "2026-09-04T11:10:57.869Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
-            "title": "Polizei: Mögliche Sabotage an Umspannwerk in Dormagen",
-            "summary": "Ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen deutet laut Polizei auf mögliche Sabotage hin. Am Dienstag gab es bereits Vorfälle an zwei anderen Umspannwerken.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T02:29:46.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "e5d6e71e0a3b23b8b134f10c0a5a0ee754152692b8aea3cdcc716d2979a64e6d",
-            "source_item_id": "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T02:29:46.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
-            "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
-            "summary": "Sabotageversuch am Umspannwerk Dormagen • Bundespräsident lädt zum Bürgerfest nach Bonn • Jens Spahn verklagt Rapper",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T04:50:24.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "86bc2ee7abfaf02e3f35afbdf4070d899a84c48258e4e2cc56fa9e58261d0e54",
-            "source_item_id": "02e1209af9a34683c59bcc8c50426b8443647ab5cbfb2060694778258a4ece49",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T04:50:24.000Z",
-            "ingested_at": "2026-09-04T08:51:38.320Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-bundesweite-fahndung-nach-tatverdaechtigem-100.html",
-            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - bundesweite Fahndung nach Tatverdächtigem",
-            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T10:29:27.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "1579fa99b9896e4b993c2c8a50d71dfdc88e18380ca03efda710ef2948d89740",
-            "source_item_id": "05552d28b92ed39570221f63df0f2d7901c46aa4f7c18565373d448570e393b5",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T10:29:27.000Z",
-            "ingested_at": "2026-09-04T10:42:21.689Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/taeter-attackieren-erneut-stromnetz---dieses-mal-in-dormagen-38206824.html",
-            "title": "„Sabotagedelikt“: Täter nehmen erneut Stromnetz ins Visier – dieses Mal in Dormagen",
-            "summary": "Erst Bergheim-Rheidt und Jänschwalde, nun Dormagen: Offenbar gab es wieder einen Sabotageversuch an einem Umspannwerk. CDU-Politiker Henrichmann fordert mehr „Wehrhaftigkeit“.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T12:40:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "88af1df7bf75b955a73481c885d6e4e245cea9fee771a0cbaf9a8d0fe405b7bd",
-            "source_item_id": "d1ea527bc68ee185ff7b0adf5e831e5608f9997731f1a75f7845833f867aae38",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T12:40:00.000Z",
-            "ingested_at": "2026-09-04T12:51:34.068Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-stromversorgung-16015959.html",
-            "title": "Stromversorgung: Strom-Sabotage: Polizei stürmt Fahrzeug des Verdächtigen",
-            "summary": "Sabotageversuche gegen das deutsche Stromnetz sorgen für Aufsehen, es gibt Bekennerschreiben. Das Fahrzeug des Verfassers hat die Polizei gefunden - doch er selbst ist flüchtig.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T21:03:08.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "bccec6531644971849b4382fdee2763fedf3c2c428bddf7af76106dbdfb8eb2b",
-            "source_item_id": "a201fb08435def7014c8903406975050b4ab39d3394e3914866e300049e0580b",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T21:03:08.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -39007,16 +39926,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 2,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-518b1340eb503e19",
@@ -46402,7 +47314,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T18:11:14.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -51100,7 +52012,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -51266,7 +52178,7 @@
       "verification_started_at": "2026-09-04T08:07:04.353Z",
       "publish_ready_at": "2026-09-04T08:07:21.455Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -51682,10 +52594,13 @@
         "generated_at": "2026-09-04T08:09:07.928Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "104fd2ac96b1ff667bf3085cdb87e60cad729f9879068d9bc6c47d02b3eddfff",
+      "deepening_checks": 3,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "d7a2f1aaa029e2a37f1795f4041c3a649e83aeb604d6d0a24142ca6a606d55d2",
+        "checked_at": "2026-09-04T18:51:27.003Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:51:27.003Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -51718,13 +52633,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -53180,7 +54089,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -54068,9 +54977,12 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -55873,862 +56785,6 @@
       }
     },
     {
-      "story_id": "wt-d175d26e4635ba0a",
-      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
-      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-      "first_seen": "2026-09-03T15:27:13.000Z",
-      "last_updated": "2026-09-04T05:22:51.361Z",
-      "published_at": "2026-09-04T01:02:06.108Z",
-      "updated_at": "2026-09-04T05:22:51.361Z",
-      "topic": [
-        "Klima"
-      ],
-      "sources": [
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-          "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-          "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T15:27:13.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
-          "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T15:27:13.000Z",
-          "ingested_at": "2026-09-04T05:06:21.635Z",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v2-claim-1",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks offiziell eröffnet worden.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "4fdaeab2e2643d47349c",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "3d0942abf71c17b78d03",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T05:22:51.361Z"
-        },
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v2-claim-2",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; dafür sind eine Zisterne und Rückhaltemulden vorgesehen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "f2648a8797634d3610df",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "6cd1c2db5930a4392de3",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T05:22:51.361Z"
-        },
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v2-claim-3",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter und soll später auf 28.000 Quadratmeter anwachsen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "3d0942abf71c17b78d03",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "0eec46dd9fb9f501bd8d",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T05:22:51.361Z"
-        },
-        {
-          "claim_id": "wt-d175d26e4635ba0a-v2-claim-4",
-          "story_id": "wt-d175d26e4635ba0a",
-          "claim": "Im Endausbau soll der Park so groß werden wie vier Fußballfelder und 181 klimaresiliente Bäume enthalten.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "0eec46dd9fb9f501bd8d",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "excerpt_hash": "6cd1c2db5930a4392de3",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T05:22:51.361Z"
-        }
-      ],
-      "event_id": "event-8b84ae4650626fa86f6f",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T05:22:37.717Z",
-      "publish_ready_at": "2026-09-04T05:22:51.361Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-      "published": true,
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "e2f6aa58c2b5ba43547cd0420dfebe2ab5036405cfd99c6801d8352d6c48c931"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "e9af72e1398ca34cec4084e68a0bb4db8a4bed3e3ad74f1f7b2a7be43a80b636"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "ff1a81ea038da266f7abf2acae502e7463535ddc0857ce1175849bcde80eac75"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-fc16a6088f8d00aa-source.png",
-          "sha256": "fc16a6088f8d00aad5d30dc0a22fe3e37f4564ff6ac79af99dc2bc09477f6a9a",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-3-concrete",
-          "generated_at": "2026-09-04T05:45:34.462Z"
-        },
-        "fingerprint": "16463472520ec5caeef346ff1f61d7f749ea0e2492d23880171253bbf8621041",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-3-concrete",
-        "generated_at": "2026-09-04T06:02:50.919Z",
-        "status": "generated"
-      },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
-      "analysis": {
-        "story_id": "wt-d175d26e4635ba0a",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
-        "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
-        "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
-        "status": "laufende Umsetzung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
-        },
-        "importance": "mittel",
-        "impact_potential": "Lokal kann die Anlage Hitze abmildern, Wasser zurückhalten und den Stadtraum aufwerten; die tatsächliche Stärke hängt aber vom späteren Betrieb und der realen Nutzung ab.",
-        "impact_risks": [
-          "Die angekündigte Kühl- und Speicherwirkung könnte geringer ausfallen als geplant.",
-          "Ohne Pflege, Fertigstellung und Nutzung bleiben die Wirkungen auf das Quartier begrenzt."
-        ],
-        "mechanisms": [
-          "Versickerung und Zwischenspeicherung von Niederschlagswasser",
-          "Beschattung und Verdunstung durch Bäume und Grünflächen",
-          "kostenfreier öffentlicher Raum fördert Aufenthalt und soziale Nutzung"
-        ],
-        "first_order": [
-          "Eröffnung einer neuen öffentlichen Grünanlage im Quartier",
-          "Teilweise Nutzung eines bisher noch nicht vollständig ausgebauten Areals"
-        ],
-        "second_order": [
-          "Besseres Mikroklima und mehr Aufenthaltsqualität im direkten Umfeld sind möglich",
-          "Der Park kann als sozialer Treffpunkt im Neubaugebiet wirken"
-        ],
-        "third_order": [
-          "Das Quartier könnte als Referenz für klimaangepasste Stadtentwicklung dienen",
-          "Die konkrete Übertragbarkeit bleibt wegen fehlender Wirkungsdaten offen"
-        ],
-        "systemic_relevance": "Als Beispiel für klimaangepasste Quartiersplanung berührt der Fall städtische Resilienz, aber zunächst nur auf lokaler Ebene.",
-        "transformation_potential": "Begrenzt bis mittel: Der Vorgang zeigt ein Planungsmodell für Hitze- und Wasseranpassung, ist aber noch kein Beleg für breit wirksame Transformation.",
-        "resilience": "Stärkt potenziell die lokale Anpassungsfähigkeit an Hitze und Starkregen; belastbare Wirksamkeit ist noch nicht nachgewiesen.",
-        "side_effects": [
-          "Mehr öffentliche Nutzung kann Pflege- und Sicherheitsanforderungen erhöhen",
-          "Baumaßnahmen und laufende Fertigstellung erzeugen vorübergehend Restunsicherheit"
-        ],
-        "uncertainties": [
-          "Die tatsächliche Kühlwirkung ist nicht gemessen.",
-          "Die Speicherleistung der Anlage ist nur als Planung beschrieben.",
-          "Der westliche Teil ist noch nicht eröffnet."
-        ],
-        "evidence_level": "single_source_with_caveats",
-        "attribution": "Beruht auf einem journalistischen Bericht ohne unabhängige Zweitquelle in den gelieferten Daten.",
-        "watch_next": [
-          "Fertigstellung des westlichen Parkteils",
-          "Messwerte zu Temperatur- und Wasserhaushalt im Quartier",
-          "Nutzung des Parks durch Anwohnerinnen und Anwohner"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 11, SDG 13"
-        ],
-        "publication_gate": {
-          "news_value": "implementation",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "none",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Die Eröffnung eines neuen, klimaangepassten Quartiersparks ist eine reale Umsetzung mit lokal materieller Wirkung auf Nutzung, Wasserhaushalt und Hitzeschutz. Die Belege stammen zwar nur aus einer Quelle, tragen aber den Kern der Meldung hinreichend."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "eröffneter Abschnitt",
-              "value": "12.500",
-              "unit": "Quadratmeter",
-              "context": "Größe des nun zugänglichen Parkteils"
-            },
-            {
-              "label": "Endausbau",
-              "value": "28.000",
-              "unit": "Quadratmeter",
-              "context": "geplante Gesamtgröße des Parks"
-            },
-            {
-              "label": "Bäume",
-              "value": "181",
-              "unit": "Stück",
-              "context": "als klimaresilient beschriebene Bäume"
-            }
-          ],
-          "affected_groups": [
-            "haushalte",
-            "kinder_jugend",
-            "kommunen",
-            "natur"
-          ],
-          "tendency": {
-            "human": "chance",
-            "planet": "chance",
-            "democracy": "offen"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T01:02:06.108Z",
-          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-          "source_summary": "Im Schönhof-Viertel im Frankfurter Westen ist der erste Teil eines neuen Parks offiziell eröffnet worden. Die Anlage soll nicht nur Erholung bieten, sondern auch Regenwasser aufnehmen und die Umgebung kühlen; bei Planung und Bepflanzung seien Klimawandel, Hitzebelastung und Biodiversität mitgedacht worden.\n\nDer zunächst geöffnete östliche Abschnitt umfasst 12.500 Quadratmeter, später soll der Park auf 28.000 Quadratmeter wachsen. Genannt werden außerdem eine Zisterne, Rückhaltemulden, klimaresiliente Bäume, ein Grünes Klassenzimmer und sichere Wege für künftige Schülerinnen und Schüler. Für das Viertel werden 3.500 bis 4.000 Einwohnerinnen und Einwohner in naher Zukunft erwartet.",
-          "analysis": {
-            "story_id": "wt-d175d26e4635ba0a",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Die Anlage soll Regenwasser speichern, kühlen und als Quartiersraum dienen.",
-            "detail_summary": "Gesichert ist zunächst die Eröffnung des ersten Parkteils im Schönhof-Viertel mit einer Fläche von 12.500 Quadratmetern. Die Quelle beschreibt den Park als Teil einer klimaangepassten Quartiersentwicklung mit Zisterne, Rückhaltemulden, klimaresilienten Bäumen und einem Grünen Klassenzimmer. Für die Umweltwirkung ist das relevant, weil hier konkrete bauliche Elemente genannt werden, die Hitze und Starkregen lokal abmildern sollen. Der mögliche Wirkpfad reicht von besserer Wasseraufnahme und Verschattung bis zu höherer Aufenthaltsqualität im Quartier. Ob und in welchem Ausmaß das tatsächlich eintritt, bleibt offen, weil Messdaten zur Kühlleistung, Wasserrückhaltung oder Nutzung fehlen. Die Meldung ist damit eine belastbare Erstinformation über eine laufende städtebauliche Umsetzung, nicht über bereits nachgewiesene Wirkung.",
-            "why_relevant": "Ein neuer Quartierspark mit expliziter Klimaanpassungsfunktion verändert lokale Infrastruktur, Wasserhaushalt und Hitzebelastung in einem wachsenden Wohngebiet.",
-            "status": "laufende Umsetzung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Der Park betrifft künftige Bewohnerinnen und Bewohner sowie Schulwege und Aufenthaltsqualität im Quartier."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Genannt werden Regenwasserspeicherung, Verschattung und klimaresiliente Bepflanzung als lokale Anpassungsmaßnahmen."
-            },
-            "democracy": {
-              "relevance": "gering",
-              "rationale": "Ein unmittelbarer demokratischer Effekt wird in der Quelle nicht beschrieben; relevant ist eher die kommunale Planung."
-            },
-            "importance": "mittel",
-            "impact_potential": "Der Park kann lokale Hitzebelastung und Oberflächenabfluss im Quartier mindern und damit die Anpassungsfähigkeit eines dicht bebauten Neubaugebiets erhöhen.",
-            "impact_risks": [
-              "Die tatsächliche Kühl- und Speicherleistung kann geringer ausfallen als geplant.",
-              "Ohne Pflege und Nutzung könnten die vorgesehenen Funktionen nur teilweise greifen."
-            ],
-            "mechanisms": [
-              "Verschattung durch klimaresiliente Bäume",
-              "Regenwasserrückhalt über Zisterne und Mulden",
-              "Niedrigschwellige Quartiersnutzung durch offene Grünfläche"
-            ],
-            "first_order": [
-              "mehr Aufenthalts- und Bewegungsraum",
-              "lokale Speicherung von Niederschlagswasser",
-              "erste Verschattung im Areal"
-            ],
-            "second_order": [
-              "mögliche Entlastung bei Starkregen",
-              "bessere Hitzetoleranz im Quartier",
-              "mehr Nutzung von Schul- und Begegnungsangeboten"
-            ],
-            "third_order": [
-              "höhere Resilienz eines neuen Wohngebiets gegenüber Klimarisiken",
-              "Vorbildwirkung für künftige Quartiersplanung möglich"
-            ],
-            "systemic_relevance": "Die Meldung ist lokal, aber sie berührt zwei systemische Themen: urbane Klimaanpassung und integrierte Quartiersplanung. Systemrelevant wird sie vor allem dann, wenn ähnliche Standards in weiteren Neubaugebieten übernommen werden.",
-            "transformation_potential": "Begrenzt bis mittel: Es geht um ein einzelnes Quartier, aber mit konkreten baulichen Merkmalen für klimaangepasste Stadtentwicklung.",
-            "resilience": "Die beschriebenen Elemente erhöhen potenziell die Resilienz des Viertels gegenüber Hitze und Starkregen, bleiben aber von Ausführung, Pflege und tatsächlicher Nutzung abhängig.",
-            "side_effects": [
-              "Bauliche Flächen für Grün können an anderer Stelle Nutzungsansprüche verdrängen.",
-              "Die Wirkung hängt stark von Wetterextremen und Unterhalt ab."
-            ],
-            "uncertainties": [
-              "Keine unabhängige Zweitquelle in den gelieferten Daten.",
-              "Messwerte zur tatsächlichen Kühl- oder Speicherwirkung fehlen.",
-              "Der Endausbau des westlichen Teils ist erst angekündigt, nicht belegt umgesetzt."
-            ],
-            "evidence_level": "single_source_report mit konkreten Orts-, Flächen- und Funktionsangaben; keine unabhängige Bestätigung der Wirkung",
-            "attribution": "Die Angaben stammen ausschließlich aus einem journalistischen Bericht über die Eröffnung und die Planungsziele des Parks.",
-            "watch_next": [
-              "Wann der westliche Teil eröffnet wird und welche Fläche er umfasst.",
-              "Ob spätere Messungen zu Hitze- oder Regenrückhalt veröffentlicht werden."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 11, SDG 13"
-            ],
-            "publication_gate": {
-              "news_value": "implementation",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "none",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Die Eröffnung eines klimaangepassten Parkteils in einem neuen Wohnquartier ist eine neue Umsetzung mit lokaler materieller Relevanz; die Evidenz bleibt jedoch auf eine Quelle begrenzt."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-1",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "In Frankfurts Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "4fdaeab2e2643d47349c",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-2",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; die Planung berücksichtigte Klimawandel und Klimaanpassung.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "d6db4d6fec6a17db0ea6",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "f2648a8797634d3610df",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "6cd1c2db5930a4392de3",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "ff042eff6c35db82a0e4",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-3",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter; der Park soll nach und nach auf 28.000 Quadratmeter anwachsen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "3d0942abf71c17b78d03",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-4",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Zwischen 3.500 und 4.000 Menschen sollen in naher Zukunft im Schönhof-Viertel leben.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "8239c4a3b2d33b24a87c",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v1-claim-5",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Für das Viertel sind auch ein Grünes Klassenzimmer, sichere Wege und eine soziale Treffpunktfunktion vorgesehen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "29375e998e34026f2e4f",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "d0ceedf8ca522ad2e99a",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "35bc3ec03628e9bfc64c",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "0e008636ec2917a5ba7a",
-                  "checked_at": "2026-09-04T01:02:06.108Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:02:06.108Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-04T05:22:51.361Z",
-          "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-          "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
-          "analysis": {
-            "story_id": "wt-d175d26e4635ba0a",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
-            "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
-            "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
-            "status": "laufende Umsetzung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
-            },
-            "democracy": {
-              "relevance": "gering",
-              "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
-            },
-            "importance": "mittel",
-            "impact_potential": "Lokal kann die Anlage Hitze abmildern, Wasser zurückhalten und den Stadtraum aufwerten; die tatsächliche Stärke hängt aber vom späteren Betrieb und der realen Nutzung ab.",
-            "impact_risks": [
-              "Die angekündigte Kühl- und Speicherwirkung könnte geringer ausfallen als geplant.",
-              "Ohne Pflege, Fertigstellung und Nutzung bleiben die Wirkungen auf das Quartier begrenzt."
-            ],
-            "mechanisms": [
-              "Versickerung und Zwischenspeicherung von Niederschlagswasser",
-              "Beschattung und Verdunstung durch Bäume und Grünflächen",
-              "kostenfreier öffentlicher Raum fördert Aufenthalt und soziale Nutzung"
-            ],
-            "first_order": [
-              "Eröffnung einer neuen öffentlichen Grünanlage im Quartier",
-              "Teilweise Nutzung eines bisher noch nicht vollständig ausgebauten Areals"
-            ],
-            "second_order": [
-              "Besseres Mikroklima und mehr Aufenthaltsqualität im direkten Umfeld sind möglich",
-              "Der Park kann als sozialer Treffpunkt im Neubaugebiet wirken"
-            ],
-            "third_order": [
-              "Das Quartier könnte als Referenz für klimaangepasste Stadtentwicklung dienen",
-              "Die konkrete Übertragbarkeit bleibt wegen fehlender Wirkungsdaten offen"
-            ],
-            "systemic_relevance": "Als Beispiel für klimaangepasste Quartiersplanung berührt der Fall städtische Resilienz, aber zunächst nur auf lokaler Ebene.",
-            "transformation_potential": "Begrenzt bis mittel: Der Vorgang zeigt ein Planungsmodell für Hitze- und Wasseranpassung, ist aber noch kein Beleg für breit wirksame Transformation.",
-            "resilience": "Stärkt potenziell die lokale Anpassungsfähigkeit an Hitze und Starkregen; belastbare Wirksamkeit ist noch nicht nachgewiesen.",
-            "side_effects": [
-              "Mehr öffentliche Nutzung kann Pflege- und Sicherheitsanforderungen erhöhen",
-              "Baumaßnahmen und laufende Fertigstellung erzeugen vorübergehend Restunsicherheit"
-            ],
-            "uncertainties": [
-              "Die tatsächliche Kühlwirkung ist nicht gemessen.",
-              "Die Speicherleistung der Anlage ist nur als Planung beschrieben.",
-              "Der westliche Teil ist noch nicht eröffnet."
-            ],
-            "evidence_level": "single_source_with_caveats",
-            "attribution": "Beruht auf einem journalistischen Bericht ohne unabhängige Zweitquelle in den gelieferten Daten.",
-            "watch_next": [
-              "Fertigstellung des westlichen Parkteils",
-              "Messwerte zu Temperatur- und Wasserhaushalt im Quartier",
-              "Nutzung des Parks durch Anwohnerinnen und Anwohner"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 11, SDG 13"
-            ],
-            "publication_gate": {
-              "news_value": "implementation",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "none",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Die Eröffnung eines neuen, klimaangepassten Quartiersparks ist eine reale Umsetzung mit lokal materieller Wirkung auf Nutzung, Wasserhaushalt und Hitzeschutz. Die Belege stammen zwar nur aus einer Quelle, tragen aber den Kern der Meldung hinreichend."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "eröffneter Abschnitt",
-                  "value": "12.500",
-                  "unit": "Quadratmeter",
-                  "context": "Größe des nun zugänglichen Parkteils"
-                },
-                {
-                  "label": "Endausbau",
-                  "value": "28.000",
-                  "unit": "Quadratmeter",
-                  "context": "geplante Gesamtgröße des Parks"
-                },
-                {
-                  "label": "Bäume",
-                  "value": "181",
-                  "unit": "Stück",
-                  "context": "als klimaresilient beschriebene Bäume"
-                }
-              ],
-              "affected_groups": [
-                "haushalte",
-                "kinder_jugend",
-                "kommunen",
-                "natur"
-              ],
-              "tendency": {
-                "human": "chance",
-                "planet": "chance",
-                "democracy": "offen"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v2-claim-1",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks offiziell eröffnet worden.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "4fdaeab2e2643d47349c",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "3d0942abf71c17b78d03",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v2-claim-2",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Der Park soll Regenwasser speichern und die Umgebung kühlen; dafür sind eine Zisterne und Rückhaltemulden vorgesehen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "f2648a8797634d3610df",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "6cd1c2db5930a4392de3",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v2-claim-3",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Der östliche Abschnitt umfasst 12.500 Quadratmeter und soll später auf 28.000 Quadratmeter anwachsen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "3d0942abf71c17b78d03",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "0eec46dd9fb9f501bd8d",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            },
-            {
-              "claim_id": "wt-d175d26e4635ba0a-v2-claim-4",
-              "story_id": "wt-d175d26e4635ba0a",
-              "claim": "Im Endausbau soll der Park so groß werden wie vier Fußballfelder und 181 klimaresiliente Bäume enthalten.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "0eec46dd9fb9f501bd8d",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-                  "excerpt_hash": "6cd1c2db5930a4392de3",
-                  "checked_at": "2026-09-04T05:22:51.361Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T05:22:51.361Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-              "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T01:02:06.108Z",
-          "source_count": 1
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-04T05:22:51.361Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "deepening_checks": 2,
-      "review_checkpoint": {
-        "version": "evidence-packet-1",
-        "fingerprint": "7147846e9f1881654aec55c4ec96ddce4d6f70598784e77cb25c470ba4b2c737",
-        "checked_at": "2026-09-04T15:26:48.913Z",
-        "outcome": "no_material_update",
-        "expires_at": "2026-09-04T21:26:48.913Z",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-            "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-            "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T15:27:13.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
-            "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T15:27:13.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-            "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-            "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T15:27:13.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
-            "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T15:27:13.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
-    },
-    {
       "story_id": "wt-3c8762489a80692b",
       "slug": "regionalnachweisregister-soll-abgewickelt-werden-80692b",
       "title": "Regionalnachweisregister soll abgewickelt werden",
@@ -57961,7 +58017,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -59446,7 +59502,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -61313,7 +61369,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "ingested_at": "2026-09-04T18:51:27.003Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -90208,5 +90264,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T18:36:20.968Z"
+  "public_updated_at": "2026-09-04T18:51:27.003Z"
 }
