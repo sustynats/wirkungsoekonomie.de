@@ -12,7 +12,10 @@ export function detectedWords(tsv, minimumConfidence = 60) {
 export async function checkEditorialAsset(file, { run = exec } = {}) {
   async function read(segmentation) {
     let stdout;
-    try { ({ stdout } = await run("tesseract", [file, "stdout", "-l", "eng", "--psm", segmentation, "tsv"], { timeout: 12000, maxBuffer: 1024 * 1024 })); }
+    // Detailed photographic textures need more CPU time than flat illustrations.
+    // One OpenMP thread avoids oversubscribing the burstable Oracle micro VM;
+    // two bounded passes still fail closed, without buying a replacement image.
+    try { ({ stdout } = await run("tesseract", [file, "stdout", "-l", "eng", "--psm", segmentation, "tsv"], { timeout: 30000, maxBuffer: 1024 * 1024, env: { ...process.env, OMP_THREAD_LIMIT: "1" } })); }
     catch { throw imageError("IMAGE_QUALITY_CHECK_UNAVAILABLE"); }
     if (!String(stdout).startsWith("level\t")) throw imageError("IMAGE_QUALITY_CHECK_INVALID");
     return stdout;

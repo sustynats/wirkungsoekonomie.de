@@ -15,25 +15,28 @@
   let visibleLimit = pageSize;
 
   function saveListState(card) {
+    const state = {
+      pathname: window.location.pathname,
+      activeFilter,
+      query: searchInput?.value || "",
+      visibleLimit,
+      scrollY: Math.max(0, Math.round(window.scrollY)),
+      storyId: card?.id || window.history.state?.newsList?.storyId || "",
+      savedAt: Date.now(),
+    };
     try {
-      window.sessionStorage.setItem(listStateKey, JSON.stringify({
-        pathname: window.location.pathname,
-        activeFilter,
-        query: searchInput?.value || "",
-        visibleLimit,
-        scrollY: Math.max(0, Math.round(window.scrollY)),
-        storyId: card?.id || "",
-        savedAt: Date.now(),
-      }));
+      window.history.replaceState({ ...window.history.state, newsList: state }, "");
+      window.sessionStorage.setItem(listStateKey, JSON.stringify(state));
     } catch (_error) {
       // Private browsing or locked-down webviews may disable sessionStorage.
     }
   }
 
   function readListState(targetId) {
-    if (!targetId) return null;
+    const returning = window.performance?.getEntriesByType("navigation")[0]?.type === "back_forward";
+    if (!targetId && !returning) return null;
     try {
-      const state = JSON.parse(window.sessionStorage.getItem(listStateKey) || "null");
+      const state = returning ? window.history.state?.newsList : JSON.parse(window.sessionStorage.getItem(listStateKey) || "null");
       if (!state || state.pathname !== window.location.pathname || Date.now() - Number(state.savedAt || 0) > 24 * 60 * 60 * 1000) return null;
       return state;
     } catch (_error) {
@@ -66,6 +69,7 @@
   });
 
   if (!controls.length || !cards.length) return;
+  window.addEventListener("pagehide", () => saveListState());
 
   function matches(card, filter) {
     if (filter === "all") return true;
@@ -121,7 +125,7 @@
       else siteSearchUrl.searchParams.delete("q");
       siteSearchLink.href = siteSearchUrl;
     }
-    if (updateUrl) window.history.replaceState({}, "", url);
+    if (updateUrl) window.history.replaceState({ ...window.history.state }, "", url);
   }
 
   controls.forEach((control) => control.addEventListener("click", () => {
@@ -148,7 +152,7 @@
   if (savedState) {
     const returnUrl = new URL(window.location.href);
     returnUrl.hash = "";
-    window.history.replaceState({}, "", returnUrl);
+    window.history.replaceState({ ...window.history.state }, "", returnUrl);
   }
   const parameters = new URL(window.location.href).searchParams;
   const initialFilter = savedState?.activeFilter || parameters.get("thema") || "all";
@@ -160,7 +164,7 @@
     visibleLimit = Math.max(visibleLimit, Math.ceil(cardPosition / pageSize) * pageSize);
   }
   render({ updateUrl: Boolean(savedState) });
-  if (returnCard) {
+  if (returnCard || savedState) {
     const savedCard = savedState ? cards.find((card) => card.id === savedState.storyId) : null;
     savedCard?.classList.add("is-return-point");
     const restorePosition = () => {

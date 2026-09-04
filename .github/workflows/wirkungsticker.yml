@@ -19,6 +19,10 @@ on:
         description: "Maximale Aktenzahl für den ausdrücklich gestarteten Bild-Backfill"
         type: number
         default: 20
+      title_images_refresh_editorial:
+        description: "Ausdrücklich freigegebene Erneuerung alter Symbolbilder (Credit-Limits bleiben aktiv)"
+        type: boolean
+        default: false
 
 permissions:
   actions: write
@@ -82,7 +86,7 @@ jobs:
         run: npm run news:run
       - name: Backfill explicitly requested title images
         # Backfill is opt-in, never a second scheduler or a per-build credit spend.
-        if: steps.slot.outputs.should_run == 'true' && inputs.title_images_backfill == true
+        if: steps.slot.outputs.should_run == 'true' && (inputs.title_images_backfill == true || inputs.title_images_refresh_editorial == true)
         env:
           WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
@@ -90,7 +94,11 @@ jobs:
           WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
           WT_CHROME_NO_SANDBOX: "true"
           TITLE_IMAGE_LIMIT: ${{ inputs.title_images_limit }}
-        run: npm run news:title-images:backfill -- --execute --limit="$TITLE_IMAGE_LIMIT"
+          TITLE_IMAGE_REFRESH: ${{ inputs.title_images_refresh_editorial }}
+        run: |
+          args=(--execute --limit="$TITLE_IMAGE_LIMIT")
+          if [ "$TITLE_IMAGE_REFRESH" = "true" ]; then args+=(--refresh-editorial); fi
+          npm run news:title-images:backfill -- "${args[@]}"
       - name: Read public ticker outcome
         id: outcome
         if: steps.slot.outputs.should_run == 'true'
