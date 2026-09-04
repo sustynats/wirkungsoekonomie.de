@@ -1,7 +1,199 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T16:06:43.902Z",
+  "updated_at": "2026-09-04T16:21:44.537Z",
   "stories": [
+    {
+      "story_id": "wt-0b6279d05f195d31",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0b6279d05f195d31-aa8b17a2c19df5d1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0b6279d05f195d31-60ef491607e25851-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0b6279d05f195d31-72098b08ce68ad5a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "us-unternehmen-schaffen-im-august-mehr-arbeitsplatze-195d31",
+      "title": "US-Unternehmen schaffen im August mehr Arbeitsplätze",
+      "source_summary": "Die Meldungen berichten übereinstimmend über US-Arbeitsmarktdaten für August. Laut US-Arbeitsministerium stieg die Zahl der Beschäftigten außerhalb der Landwirtschaft um 162.000, was als besser als erwartet beschrieben wird.\n\nEine der Meldungen ergänzt, dass das Weiße Haus die Zahlen in Onlinenetzwerken mit einem Foto von Präsident Donald Trump kommentierte. Die zweite Fassung betont zudem, der Arbeitsmarkt habe sich robuster erwiesen als erwartet und Trump habe den Druck auf die Fed erhöht. Weitere Details zu Methodik, Revisionen oder Folgen nennt das Material nicht.",
+      "summary": "US-Arbeitsmarktdaten aus August zeigen laut Bericht einen Zuwachs von 162.000 Stellen außerhalb der Landwirtschaft. Das Weiße Haus reagierte darauf online mit einem Trump-Foto.",
+      "detail_summary": "Gesichert ist aus den gelieferten Texten vor allem der August-Wert für den US-Arbeitsmarkt: Die Zahl der Beschäftigten außerhalb der Landwirtschaft stieg um 162.000 und wurde als besser beziehungsweise robuster als erwartet eingeordnet. Zusätzlich wird berichtet, dass das Weiße Haus die Daten in Onlinenetzwerken kommentierte und Trump den Druck auf die Fed erhöhte. Für die redaktionelle Einordnung ist das eine neue Zustandsinformation über den Arbeitsmarkt, aber zunächst nur in Form einer sekundär berichteten Statistik. Materiell relevant ist sie, weil Monatsdaten dieser Art Erwartungen an Zinsen, Konsum und Beschäftigung beeinflussen können. Eine belastbare Wirkung auf reale Entscheidungen ist daraus aber noch nicht ableitbar; dafür fehlen im Material Reaktionen, Folgedaten und methodische Details. Die Evidenz bleibt deshalb auf die gelieferte Sekundärquelle begrenzt.",
+      "why_relevant": "Der Bericht liefert neue US-Arbeitsmarktdaten mit möglichem Einfluss auf Zinserwartungen, Beschäftigung und Konjunkturbeobachtung.",
+      "topic": [
+        "Arbeit",
+        "Wirtschaft"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Arbeitsmarktdaten betreffen Beschäftigung und Einkommen vieler Menschen direkt und können Erwartungen am Arbeitsmarkt verändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Im gelieferten Material gibt es keinen direkten Bezug zu Umwelt- oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Reaktion des Weißen Hauses und der Druck auf die Fed berühren Geldpolitik und öffentliche Kommunikation."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Beschäftigte außerhalb der Landwirtschaft",
+            "value": "162.000",
+            "unit": "Personen",
+            "context": "Zuwachs im August laut US-Arbeitsministerium"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "unternehmen",
+          "investoren",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T13:50:27.000Z",
+      "last_updated": "2026-09-04T16:23:03.495Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8886cea1ae83e852bcec",
+      "source_published_at": "2026-09-04T13:50:27.000Z",
+      "published_at": "2026-09-04T16:23:03.495Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-unternehmen-schaffen-im-august-mehr-arbeitsplaetze-38209652.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:50:27.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-arbeitsmarkt-im-august-robuster--trump-droht-notenbank-fed-38209652.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:08:38.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-12a75e1a8e63deaa",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-a443b089c7ddd307-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-18ba7109302575b6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-2eba79c5deacf6f2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "cyberkriminalitat-hacker-veroffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-dark-63deaa",
+      "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+      "source_summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Deutschlandfunk berichtet unter Berufung auf mehrere Medien, die Hackergruppe Rhysida habe rund 1,4 Millionen Daten im Darknet bereitgestellt.\n\nLaut dem Bericht soll es darunter auch Informationen geben, die für die Sicherheit Berlins und Deutschlands relevant sind, etwa zu Zivilschutz und besonders zu schützenden Objekten. Genannt werden außerdem geheime Dokumente zu Rüstungsunternehmen, ein behaupteter unbemerkter Zugriff auf Berliner Verwaltungsnetze im August, eine Lösegeldforderung von rund zwei Millionen Euro und ein ausgelaufenes Ultimatum.",
+      "summary": "Nach einem Hackerangriff auf Berliner Verwaltungsnetze sollen Daten im Darknet veröffentlicht worden sein. Im Bericht ist außerdem von sensiblen Unterlagen, einer Lösegeldforderung und einem ausgelaufenen Ultimatum die Rede.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Meldung, dass nach einem Angriff auf Berliner Verwaltungsnetze Daten im Darknet veröffentlicht worden sein sollen; der Bericht nennt dafür die Gruppe Rhysida und rund 1,4 Millionen Daten. Relevanz entsteht vor allem, weil unter den abrufbaren Informationen auch sicherheitsrelevante Angaben zu Zivilschutz, Schutzobjekten und Rüstungsunternehmen genannt werden. Der Wirkpfad liegt weniger in der reinen Reichweite als in möglichen Folgeeffekten auf Schutz, Geheimhaltung und Erpressbarkeit öffentlicher Infrastruktur. Mögliche Folgen sind zusätzliche Sicherheitsprüfungen, organisatorische Nachbesserungen und ein erhöhtes Risiko für nachgelagerte Angriffe. Offen bleibt jedoch, welcher Teil der Daten tatsächlich verifiziert ist und wie groß der sensible Anteil ist; dafür liefert die Quelle nur einen begrenzten, sekundären Befund.",
+      "why_relevant": "Die Meldung betrifft potenziell sicherheitsrelevante Verwaltungsdaten und damit Informationsgrundlagen, Schutzmaßnahmen und die Resilienz staatlicher Infrastruktur.",
+      "topic": [
+        "Energie",
+        "Digitalisierung",
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen betreffen öffentliche Verwaltung, Schutzinfrastruktur und indirekt Bürgerinnen und Bürger über Sicherheits- und Vertrauensfragen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Planet-Bezug ist aus der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf Landesnetze und die Veröffentlichung sensibler Verwaltungsdaten berührt staatliche Funktionsfähigkeit und demokratische Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T16:14:15.000Z",
+      "last_updated": "2026-09-04T16:22:44.606Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-5af2c4bd0487548d3bd6",
+      "source_published_at": "2026-09-04T16:14:15.000Z",
+      "published_at": "2026-09-04T16:22:44.606Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-cb1584ee4d9e6a43",
       "title_image": {
