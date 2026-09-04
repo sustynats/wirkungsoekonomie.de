@@ -1,7 +1,875 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T16:21:44.537Z",
+  "updated_at": "2026-09-04T17:39:54.371Z",
   "stories": [
+    {
+      "story_id": "wt-6a7145e6dc679f95",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-e46aae3db6197635-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-bcaa1257892d137b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-ed9d6b837154562e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
+      "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
+      "source_summary": "Die hessenschau berichtet über ein neues Förderprogramm der Landesregierung für Hitzeschutz in Kitas und Pflegeeinrichtungen. Laut Bericht will Hessen rund zehn Millionen Euro investieren, um Klimaanlagen anzuschaffen; das Programm „Hitzehilfe für Hessen“ soll drei Jahre laufen und mobile sowie teilstationäre Anlagen unterstützen. Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen, Anträge sollen kommunale, freigemeinnützige und private Träger stellen können.\n\nIm Landtag wird die Initiative politisch kommentiert. Die Grünen unterstützen den Hitzeschutz grundsätzlich, kritisieren aber mögliche Kürzungen an anderer Stelle. Die AfD fordert zusätzlich Verschattung, Dämmung und intelligente Lüftung. Die FDP spricht sich ebenfalls für mehr Hitzeschutz in öffentlichen Gebäuden aus und nennt weitere bauliche Maßnahmen. Offen bleibt in der Quelle, ob und wie viele Einrichtungen tatsächlich gefördert werden und ob die Mittel ausreichen.",
+      "summary": "Hessen will ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen. Genannt werden zehn Millionen Euro und bis zu 5.000 Euro pro Standort.",
+      "detail_summary": "Gesichert ist zunächst die Ankündigung eines hessischen Förderprogramms für Hitzeschutz in Kitas und Pflegeeinrichtungen mit einem Budget von rund zehn Millionen Euro über drei Jahre. Der Bericht nennt als Ziel die Anschaffung mobiler und teilstationärer Anlagen sowie eine Förderung von bis zu 5.000 Euro je Standort. Politisch stößt das Vorhaben auf Zustimmung und Kritik, aber der konkrete Vollzug bleibt offen. Materiell relevant ist die Meldung vor allem, weil sie öffentliche Mittel in eine konkrete Schutzinfrastruktur für besonders hitzegefährdete Gruppen lenkt. Der Wirkpfad verläuft über Investitionen in technische Kühlung; mögliche Folgen sind bessere Hitzetoleranz in einzelnen Einrichtungen, aber auch Verdrängungseffekte im Haushalt. Unklar bleibt, wie viele Einrichtungen erreicht werden, ob das Budget reicht und ob die Maßnahme im Alltag tatsächlich Entlastung bringt.",
+      "why_relevant": "Die Meldung betrifft die Verteilung öffentlicher Mittel auf Hitzeschutz in besonders sensiblen Einrichtungen und damit konkrete Schutzinfrastruktur für Kinder und Pflegebedürftige.",
+      "topic": [
+        "Klima",
+        "Soziales",
+        "Gesundheit"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Kinder, Pflegebedürftige und Beschäftigte in Einrichtungen mit besonderem Hitzestress."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Förderung betrifft Klimaanlagen und damit Technik mit möglichem Energiebedarf; ökologische Folgen bleiben aber in der Quelle offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Das Vorhaben ist Gegenstand parlamentarischer Debatte, Budgetpriorisierung und öffentlicher Kritik."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T16:31:09.000Z",
+      "last_updated": "2026-09-04T17:42:49.106Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-49e6ddd9913a3803a948",
+      "source_published_at": "2026-09-03T16:31:09.000Z",
+      "published_at": "2026-09-04T02:22:48.837Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Startet das Förderprogramm tatsächlich mit Antragsbeginn und ersten Bewilligungen innerhalb der angekündigten Laufzeit?",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Erste veröffentlichte Bewilligungen oder Ministeriumsangaben zu Anträgen und Auszahlungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-eb732b42b2d7e1be",
+          "announced_at": "2026-09-03T16:31:09.000Z",
+          "follow_up_date": "2026-09-11T02:22:48.837Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:31:09.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-00fccb632042b492",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3973a4a4aa29babd-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3616b61d5afc1059-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-a0b9303f31c7c6e3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
+      "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+      "source_summary": "Die Deutsche Welle berichtet über Ermittlungen nach mehreren mutmaßlichen Sabotageakten an der Stromversorgung in Brandenburg und Nordrhein-Westfalen. Nach Angaben des Berichts fahndet die Polizei nach einem 1977 geborenen deutschen Staatsangehörigen aus Gevelsberg. Grundlage sind zwei handschriftliche Bekennerschreiben, die die Ermittler wegen enthaltenen Täterwissens für authentisch halten.\n\nDer Text beschreibt, dass in einem Schreiben Taten bei Jänschwalde und Schwarze Pumpe eingeräumt werden; ein weiteres Schreiben reklamiere Angriffe in Nordrhein-Westfalen, darunter Orte wie Gohr, Bergheim-Rheidt, Dormagen und Weisweiler. Als Motive nennt der Verfasser den Kampf gegen fossile Stromerzeugung und einen Bezug zum Nahostkonflikt. Die Frage, ob die Unterschrift echt ist und wie die einzelnen Vorfälle genau zusammenhängen, bleibt offen.",
+      "summary": "Die Polizei fahndet nach einem 1977 geborenen Mann aus Gevelsberg im Zusammenhang mit mutmaßlicher Stromnetz-Sabotage. Zwei Bekennerschreiben werden wegen detaillierten Täterwissens als authentisch eingeschätzt.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle, dass die Ermittler nach einem 1977 geborenen Mann aus Gevelsberg suchen und zwei handschriftliche Bekennerschreiben auswerten. Der Bericht ordnet ihnen mehrere mutmaßliche Angriffe auf die Stromversorgung in Brandenburg und Nordrhein-Westfalen zu. Für die redaktionelle Einordnung ist das relevant, weil es um kritische Infrastruktur geht und damit um potenziell systemische Störungen, nicht nur um einen lokalen Einzelfall. Ein möglicher Wirkpfad wäre zusätzliche Vorsorge, Sicherheitsmaßnahmen und Ermittlungsdruck bei Energieanlagen. Möglich sind auch Folgewirkungen auf Schutzkonzepte und die Wahrnehmung von Verwundbarkeit des Netzes. Die Beleglage bleibt aber auf einen journalistischen Bericht beschränkt; Identität, Echtheit der Unterschrift und die endgültige Zurechnung sind noch offen.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Fahndung und mögliche Sicherheitsfolgen über den Einzelfall hinaus.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Ausfälle oder Schutzmaßnahmen bei Strominfrastruktur können Versorgung und Sicherheit betreffen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Ein direkter Umweltbezug ist aus der Quelle nicht belastbar ableitbar; genannt werden nur Motive und Stromerzeugung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Ermittlungen zu Sabotage an kritischer Infrastruktur berühren öffentliche Sicherheit und staatliche Schutzfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T11:40:00.000Z",
+      "last_updated": "2026-09-04T17:42:19.209Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-e4876e29370bc0f63efa",
+      "source_published_at": "2026-09-04T11:40:00.000Z",
+      "published_at": "2026-09-04T12:08:21.972Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dw-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei die Authentizität der Schreiben weiterhin bestätigt und ob der Gesuchte gefasst wird.",
+          "source_id": "dw-news",
+          "expected_by": null,
+          "measurable_indicator": "Amtliche Bestätigung oder Vollzug der Fahndung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d507a2000580b029",
+          "announced_at": "2026-09-04T11:40:00.000Z",
+          "follow_up_date": "2026-09-11T12:08:21.972Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutsche Welle",
+          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:40:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a6f6c9c60011b50c",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-8360511f1a3b41af-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-72b6079a61179a4b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a6f6c9c60011b50c-22a05049aa4bf2fe-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+      "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+      "source_summary": "Die taz berichtet, die Polizei fahnde nach dem Gevelsberger Daniel V. Sein zum Wohnmobil umgebauter Lkw sei am Hambacher Forst entdeckt worden. Nach Angaben der Quelle hatte der Mann ein Bekennerschreiben an die taz geschickt und soll sich in Schreiben zu mehreren Angriffen auf Umspannwerke geäußert haben.\n\nDie Polizei sei dem Verdächtigen laut Bericht nahe Niederzier mit einem Sondereinsatzkommando auf der Spur gewesen. Festgenommen wurde er demnach nicht; NRW-Innenminister Herbert Reul sagte, er sei vermutlich zu Fuß unterwegs. Außerdem nennt die taz weitere Polizeieinsätze in Weisweiler, Dormagen, Bergheim-Rheidt und Ganderkesee im Zusammenhang mit der Tatserie.",
+      "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
+      "detail_summary": "Gesichert aus der Quelle ist vor allem die laufende Fahndung nach Daniel V. und der Fund seines Lkw am Hambacher Forst. Die Meldung verbindet den Fall mit einem Bekennerschreiben an die taz und mit weiteren Polizeieinsätzen im Umfeld mehrerer Umspannwerke. Das ist für die Energieinfrastruktur relevant, weil Angriffe auf solche Knotenpunkte bei Erfolg Versorgungsstörungen, erhöhte Schutzkosten und zusätzliche Einsatzbelastung auslösen können. Der unmittelbare Wirkpfad liegt daher zunächst nicht in einem eingetretenen Schaden, sondern in der Verdachtslage, der Ermittlung und der Gefährdung kritischer Infrastruktur. Eine mögliche Folge ist eine Verstärkung von Sicherungsmaßnahmen an ähnlichen Anlagen; ob und in welchem Umfang das eintritt, bleibt offen. Die Beleglage stammt hier nur aus einer journalistischen Quelle, daher bleiben Täterschaft, Motiv und Gesamtumfang der Serie vorläufig.",
+      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Energieinfrastruktur und damit einen potenziell systemrelevanten Zustand mit Folgen für Versorgungssicherheit, Schutzaufwand und öffentliche Sicherheit.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Einsatzlagen und Sicherheitsgefühl, aber ein konkreter Personenschaden ist hier nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; höchstens indirekte Folgen über Energieinfrastruktur und Sicherheitsmaßnahmen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und die demokratische Korrekturfähigkeit, ohne dass ein institutioneller Ausfall belegt ist."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Verdächtiger",
+            "value": "Daniel V.",
+            "unit": "Person",
+            "context": "von der Polizei gesuchte Person"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-04T07:59:00.000Z",
+      "last_updated": "2026-09-04T17:41:54.741Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-6371f2b9c6843f8218bf",
+      "source_published_at": "2026-09-04T16:34:00.000Z",
+      "published_at": "2026-09-04T17:41:54.741Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "taz-aktuell",
+              "taz-aktuell"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Polizei-findet-Truck-des-Verdaechtigen-am-Hambacher-Forst/!6210358",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-e731083fd0f9c981-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-4cb3f07fbcbef779-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-64c671dbff05938e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "source_summary": "Die Quelle berichtet über die laufenden Ermittlungen nach Angriffen auf das Stromnetz in Nordrhein-Westfalen und Brandenburg. Nach Angaben von Innenminister Reul wurde das Fahrzeug eines Verdächtigen in Niederzier gestürmt; in seiner Wohnung in Gevelsberg seien sprengstoffverdächtige Gegenstände gefunden worden. Die Polizei suche weiter nach dem Verdächtigen. \n\nBundesinnenminister Dobrindt ordnet die Lage als sehr wahrscheinlich Einzeltat ein und spricht nach aktuellem Stand von Klimaextremismus. Zugleich verweist er auf weiter laufende Ermittlungen und einen noch nicht abschließend geklärten Tathintergrund. Reul sagt, die vorliegenden Briefe würden derzeit als authentisch bewertet, prüfe aber weiter, ob der Mann allein gehandelt habe oder Bezüge zu anderen Vorfällen bestehen.",
+      "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
+      "detail_summary": "Gesichert ist nach der Quelle, dass die Ermittlungen zu Angriffen auf das Stromnetz weiterlaufen und dass Polizei und Innenminister konkrete Maßnahmen gegen einen Verdächtigen beschreiben. Das ist relevant, weil sich daraus ein möglicher Wirkpfad auf die Sicherheit kritischer Infrastruktur ergibt, etwa über Fahndung, Gefahrenabwehr und Schutzmaßnahmen bei Betreibern. Politisch und operativ bedeutsam ist vor allem die Kombination aus laufender Fahndung, dem Fund verdächtiger Gegenstände und der öffentlichen Einordnung durch die Innenminister. Als mögliche Folge kommen verschärfte Schutzvorkehrungen und weitere Ermittlungsmaßnahmen in Betracht. Unklar bleibt aber, wie belastbar die Zuschreibungen zu Motiv, Täterzahl und Hintergründen im Moment schon sind; die Quelle selbst verweist auf laufende Prüfungen.",
+      "why_relevant": "Der Vorgang betrifft potenzielle Angriffe auf kritische Energieinfrastruktur und damit einen Bereich mit möglicher Systemrelevanz, Sicherheitsfolgen und politischem Handlungsdruck.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Versorgungssicherheit und Schutz kritischer Infrastruktur mit möglicher Auswirkung auf Bevölkerung und Einsatzkräfte."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht belegt; allenfalls indirekt über Energieinfrastruktur und Ausfallrisiken."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die öffentliche Einordnung durch Innenminister und laufende Ermittlungen berühren staatliche Sicherheits- und Schutzaufgaben."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T15:15:00.000Z",
+      "last_updated": "2026-09-04T17:41:38.182Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-b1327260d95e2af32735",
+      "source_published_at": "2026-09-04T16:49:00.000Z",
+      "published_at": "2026-09-04T17:41:38.182Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Verdächtige tatsächlich allein gehandelt hat oder weitere Beteiligte identifiziert werden.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeiliche oder staatsanwaltschaftliche Bestätigung zusätzlicher Tatbeteiligter oder deren Ausschluss",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d2799f53d488671a",
+          "announced_at": "2026-09-04T16:49:00.000Z",
+          "follow_up_date": "2026-09-11T17:41:38.182Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-87c42d6cf088c08e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-ed2837c9eb84bc45-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-dba37ad082b3bc15-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-fbd056f63861b22d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "bildung-hochschulen-in-ungarn-nehmen-wieder-am-erasmus-programm-teil-88c08e",
+      "title": "Bildung - Hochschulen in Ungarn nehmen wieder am Erasmus-Programm teil",
+      "source_summary": "In Ungarn sollen nach Angaben der Bildungsministerin Lannert wieder alle Hochschulen am europäischen Studentenaustauschprogramm Erasmus teilnehmen. Die Meldung nennt als früheren Ausgangspunkt, dass die EU-Kommission vor vier Jahren 21 Hochschulen in Ungarn aus dem Programm ausgeschlossen hatte.\n\nDie Quelle verweist außerdem auf den politischen Hintergrund des Konflikts: Die Kommission habe dies mit Interessenskonflikten und Bedenken zur Rechtsstaatlichkeit begründet. Zudem wird beschrieben, dass die Hochschulen unter dem früheren Regierungschef Orban in Stiftungen überführt worden seien. Es bleibt offen, wie genau die Rückkehr organisiert ist und ob sie bereits umgesetzt oder nur angekündigt wurde.",
+      "summary": "Ungarns Bildungsministerin Lannert teilt mit, dass alle Hochschulen wieder an Erasmus teilnehmen sollen. Zuvor hatte die EU-Kommission 21 ungarische Hochschulen ausgeschlossen.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Meldung vor allem die Ankündigung, dass ungarische Hochschulen wieder am Erasmus-Programm teilnehmen sollen. Das ist für Studierende und Hochschulen relevant, weil damit Austausch, Kooperationen und Mobilität im europäischen Bildungsraum wieder eröffnet oder ausgeweitet werden könnten. Der Wirkpfad verläuft über Zugänge zu Fördermitteln, Partnerschaften und Aufenthalten; daraus können sich kurzfristig mehr Auslandsaufenthalte und mittelfristig stabilere Hochschulverbindungen ergeben. Offen bleibt aber, ob die Rückkehr bereits praktisch greift oder zunächst nur politisch angekündigt wurde. Ebenfalls unbelegt ist in der Quelle, welche konkreten Hochschulen wann wieder teilnehmen und ob alle zuvor ausgeschlossenen Einrichtungen tatsächlich erfasst sind. Die Evidenzlage stützt hier nur eine belastbare Erstmeldung auf Basis einer einzelnen sekundären Quelle.",
+      "why_relevant": "Die Meldung betrifft den Zugang ungarischer Hochschulen zu einem zentralen europäischen Austauschprogramm und damit Bildungszugänge, Mobilität und institutionelle EU-Anbindung.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mehrere Hochschulen und ihre Studierenden sind potenziell direkt betroffen; der Zugang zu Austausch und Förderung kann sich spürbar ändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Umwelt- oder Ressourceneffekt ist aus der Meldung ableitbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Streit berührt EU-Rechtsstaatlichkeitsfragen und die Bedingungen für Mittelvergabe und Programmteilnahme."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T17:33:42.000Z",
+      "last_updated": "2026-09-04T17:41:02.699Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-ae1b49037aaef952b5be",
+      "source_published_at": "2026-09-04T17:33:42.000Z",
+      "published_at": "2026-09-04T17:41:02.699Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und ab wann die betroffenen ungarischen Hochschulen tatsächlich wieder am Erasmus-Programm teilnehmen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Bestätigung oder Start der Teilnahme durch EU oder Hochschulen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-93637d0909e12718",
+          "announced_at": "2026-09-04T17:33:42.000Z",
+          "follow_up_date": "2026-09-11T17:41:02.699Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hochschulen-in-ungarn-nehmen-wieder-am-erasmus-programm-teil-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:33:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a5874ae28ed5533f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-7383172017378959-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-e4f6f9e1b6fc97fa-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-11c6e2cf82122735-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+      "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+      "source_summary": "Nach dem Sabotageversuch an einem Umspannwerk in Dormagen meldet der WDR einen SEK-Einsatz beim Hambacher Forst. Im Ticker heißt es, das Spezialeinsatzkommando sei in der Nähe eines auffälligen Lasters vorgegangen; der gesuchte Tatverdächtige sei dort nicht im Fahrzeug gewesen. Später werde das Fahrzeug durchsucht, außerdem werde im angrenzenden Wald mit Spürhund gesucht.\n\nDer WDR berichtet zudem von einer Pressekonferenz in Düsseldorf mit Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul. Dobrindt sprach dort von einer „hohen Bedrohungslage“. Reul erklärte, es sei unklar, ob der Mann allein oder gemeinsam mit anderen gehandelt habe; geprüft werde auch ein möglicher Zusammenhang mit einem Vorfall in Brandenburg.",
+      "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
+      "detail_summary": "Gesichert aus der Quelle ist vor allem, dass die Ermittlungen zu den mutmaßlichen Sabotagefällen in eine laufende Polizeilage übergegangen sind. Der WDR berichtet von einem SEK-Zugriff in der Nähe des Hambacher Forsts, bei dem der gesuchte Mann zunächst nicht im Fahrzeug war. Parallel dazu fand in Düsseldorf eine Pressekonferenz mit Dobrindt und Reul statt. Für die öffentliche Bewertung ist das relevant, weil es um mögliche Angriffe auf kritische Energieinfrastruktur und um den Zugriff staatlicher Sicherheitsorgane geht. Ein möglicher Wirkpfad liegt in erhöhtem Schutz, intensiveren Ermittlungen und möglichen Folgemaßnahmen für Betreiber und Behörden. Offen bleibt aber, ob der Verdächtige tatsächlich gefasst wird, ob es weitere Beteiligte gibt und wie tragfähig die Zuordnung der Taten ist.",
+      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitsbehörden und mögliche weitere Ermittlungs- oder Schutzmaßnahmen. Damit sind potenzielle Folgen für Versorgungssicherheit und staatliche Reaktionsfähigkeit berührt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Es geht um mögliche Gefahren für Menschen im Umfeld kritischer Infrastruktur und um staatliche Schutzmaßnahmen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umwelt- oder Klimabezug ist in der Quelle nicht belegt; betroffen ist eher die Energieinfrastruktur."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Lage betrifft Sicherheitsbehörden, Ermittlungen und den Schutz kritischer Infrastruktur, also staatliche Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T16:15:33.000Z",
+      "last_updated": "2026-09-04T17:37:24.324Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "source_published_at": "2026-09-04T16:15:33.000Z",
+      "published_at": "2026-09-04T17:37:24.324Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten",
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "wdr-nachrichten",
+              "wdr-nachrichten"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei den gesuchten Mann noch festnimmt oder identifiziert.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue amtliche oder belastbar bestätigte Festnahme- oder Fahndungsmeldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c8043e94464f5d27",
+          "announced_at": "2026-09-04T16:15:33.000Z",
+          "follow_up_date": "2026-09-11T17:37:24.324Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:15:33.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:14:36.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-76dd7f8508f81c11",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-76dd7f8508f81c11-9a49a94ce86d6868-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-76dd7f8508f81c11-1dc0b09627d2cc29-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-76dd7f8508f81c11-f576c5b4d5f0d598-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "us-prozess-wegen-kindstotungen-verteidigung-wirft-geschworenem-blockade-von-urteil-vor-f81c11",
+      "title": "US-Prozess wegen Kindstötungen: Verteidigung wirft Geschworenem Blockade von Urteil vor",
+      "source_summary": "In dem Prozess gegen Lindsay Clancy in Plymouth, Massachusetts, berichten die vorliegenden stern-Texte übereinstimmend von einer festgefahrenen Jury. Nach sieben Tagen Beratungen habe sich die Geschworenenrunde nicht auf die Schuldfähigkeit der 36-Jährigen einigen können; ein Mitglied stimme weiterhin nicht mit den elf anderen überein. Die Verteidigung habe deshalb beantragt, dieses Jury-Mitglied auszuschließen.\n\nAls Begründung verweist die Verteidigung darauf, die Person ignoriere die richterlichen Anweisungen zum „berechtigten Zweifel“ an der Schuldfähigkeit. In einem der Texte heißt es außerdem, der Prozess drohe deshalb zu platzen. Ein weiterer Hintergrund aus dem Text ist der Vorwurf der Verteidigung, Clancy habe zum Tatzeitpunkt unter einer Wochenbettpsychose gelitten.",
+      "summary": "Die Jury im Prozess gegen Lindsay Clancy ist nach sieben Tagen weiter uneins. Die Verteidigung versucht, ein abweichendes Geschworenenmitglied auszuschließen.",
+      "detail_summary": "Gesichert ist nach den vorliegenden Texten, dass sich die Geschworenen im Prozess gegen Lindsay Clancy in Plymouth, Massachusetts, nach sieben Tagen Beratung nicht auf ihre Schuldfähigkeit einigen konnten. Die Verteidigung beantragte deshalb, ein Jury-Mitglied auszuschließen, weil dieses angeblich die Anweisungen des Richters zum „berechtigten Zweifel“ ignoriere. Der Vorgang ist prozessual relevant, weil eine festgefahrene Jury das Verfahren verzögern oder scheitern lassen kann. Als mögliche Folge steht damit ein Abbruch oder eine erneute Verhandlung im Raum; das wird in den Quellen aber nicht abschließend entschieden. Die Beleglage bleibt journalistisch begrenzt, weil nur stern-Texte vorliegen und die Angaben aus einer Sekundärquelle stammen.",
+      "why_relevant": "Der Vorgang betrifft ein laufendes Strafverfahren mit möglicher Entscheidungssperre der Jury und damit einen materiellen Zustandswechsel im Verfahren.",
+      "topic": [
+        "Geopolitik",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Angeklagte, Geschworene und das Strafverfahren; direkte gesellschaftliche Breite bleibt aber begrenzt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt Funktionsfähigkeit und Entscheidungslogik eines Juryverfahrens."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T03:37:34.000Z",
+      "last_updated": "2026-09-04T17:36:18.898Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "source_published_at": "2026-09-04T03:37:34.000Z",
+      "published_at": "2026-09-04T17:36:18.898Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "stern-schlagzeilen",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-prozess-wegen-kindstoetungen--verteidigung-wirft-geschworenem-blockade-von-urteil-vor-38205910.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T03:37:34.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/uneinige-geschworene--us-prozess-gegen-lindsay-clancy-wegen-kindstoetungen-droht-zu-platzen-38205910.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:31:19.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/jury-uneins--us-prozess-gegen-lindsay-clancy-wegen-kindstoetungen-vor-dem-platzen-38205910.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:11:51.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7122b10e5711a154",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-59b9792b4be217df-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-79ad77b6f2815da1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-8406f9f7742611aa-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "braucht-ki-eine-internationale-aufsichtsbehorde-11a154",
+      "title": "Braucht KI eine internationale Aufsichtsbehörde?",
+      "source_summary": "Digitalminister Karsten Wildberger bringt nach Darstellung der Quelle eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle ins Gespräch. Die Idee soll sich an der Internationalen Atomenergiebehörde IAEA orientieren. Genannt werden gemeinsame Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen. Wildberger denkt dabei ausdrücklich an Zusammenarbeit mit den großen KI-Akteuren China und USA.\n\nDie Quelle ordnet den Vorschlag mit mehreren Fachstimmen ein. Ein Rechtswissenschaftler betont, eine solche Institution hätte in der Regel keine unmittelbar durchsetzbaren Befugnisse und wäre auf Kooperation angewiesen. Ein weiterer Experte hält internationale Zusammenarbeit für möglich, warnt aber vor bloßen „Papiertigern“ und verweist darauf, dass verbindliche Regulierung zunächst bei Staaten und EU liege. Zugleich heißt es, es gebe keinen einheitlichen KI-Rechtsrahmen.",
+      "summary": "Wildberger bringt eine internationale KI-Aufsicht nach IAEA-Vorbild ins Gespräch. Die Quelle nennt zugleich offene Fragen zu Befugnissen und Durchsetzung.",
+      "detail_summary": "Gesichert ist vor allem der Vorstoß selbst: Nach der Quelle fordert Wildberger eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle und denkt an Sicherheitsstandards, Testvorgaben und Meldepflichten. Das ist politisch relevant, weil solche Regeln Investitionen, Haftungsfragen und internationale Abstimmung beeinflussen könnten. Der Wirkpfad wäre eine koordinierte Kontrolle von Hochrisiko-KI über staatliche und unternehmensbezogene Melde- und Prüfprozesse. Kurzfristig könnte das den Druck auf Anbieter erhöhen, Transparenz und Sicherheitsverfahren auszubauen; zugleich bleibt offen, ob daraus tatsächlich verbindliche Regeln werden. Die Evidenz reicht für eine Erstmeldung zum Vorschlag, nicht für eine belastbare Aussage über spätere Umsetzung oder Wirkung.",
+      "why_relevant": "Der Vorstoß betrifft mögliche neue Regeln für ein strategisch wichtiges Technologiefeld mit Folgen für Unternehmen, Staaten und Sicherheitsarchitektur.",
+      "topic": [
+        "Digitalisierung",
+        "KI"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen für Sicherheit, Haftung, Transparenz und Nutzung leistungsfähiger KI-Systeme."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Internationale Regeln für KI berühren Aufsicht, Zuständigkeiten und staatliche Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T15:54:00.000Z",
+      "last_updated": "2026-09-04T17:35:53.642Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-39a76d34400c9aa5a56b",
+      "source_published_at": "2026-09-04T15:54:00.000Z",
+      "published_at": "2026-09-04T16:08:20.425Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann die Bundesregierung aus dem Vorstoß konkrete internationale Verhandlungen oder einen Vorschlag ableitet.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Kabinetts-, Ministeriums- oder UN-/EU-Schritte zu KI-Aufsicht",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-899b31d44a02b221",
+          "announced_at": "2026-09-04T15:54:00.000Z",
+          "follow_up_date": "2026-09-11T16:08:20.425Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ki-modelle-kontrolle-karsten-wildberger-aufsichtsbehoerde-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:54:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-12a75e1a8e63deaa",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-a443b089c7ddd307-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-18ba7109302575b6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-2eba79c5deacf6f2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "cyberkriminalitat-hacker-veroffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-dark-63deaa",
+      "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+      "source_summary": "Der Bericht meldet einen Hackerangriff auf die Berliner Senatsverwaltung und ordnet die Veröffentlichung gestohlener Daten im Darknet der Gruppe Rhysida zu. Genannt werden rund 1,4 Millionen Daten, die dort bereitgestellt worden sein sollen.\n\nIm weiteren Text heißt es, unter den abrufbaren Daten befänden sich laut Tagesspiegel auch sicherheitsrelevante Informationen. Außerdem wird berichtet, die Täter hätten fünf Tage im August unbemerkt Zugriff gehabt, ein Lösegeld von rund zwei Millionen Euro gefordert und das Ultimatum habe am Nachmittag geendet.",
+      "summary": "Nach einem Hackerangriff auf Berliner Verwaltungsnetze sollen Daten im Darknet veröffentlicht worden sein. Der Bericht nennt Rhysida, rund 1,4 Millionen Dateien und ein ausgelaufenes Erpressungsultimatum.",
+      "detail_summary": "Gesichert aus der vorliegenden Meldung ist vor allem, dass nach dem Angriff auf Berliner Verwaltungsnetze Daten im Darknet aufgetaucht sein sollen. Der Bericht schreibt die Veröffentlichung der Gruppe Rhysida zu und nennt als Größenordnung rund 1,4 Millionen Daten. Zusätzlich verweist er auf Hinweise, dass darunter sicherheitsrelevante Unterlagen sein könnten. Das ist für die Verwaltung und potenziell für Schutz- und Sicherheitsstrukturen relevant, weil es um Zugriff auf sensible Informationsbestände geht. Ein möglicher Wirkpfad reicht von Offenlegung über Nachsorge- und Sicherungsaufwand bis zu Folgerisiken für betroffene Stellen; belastbar belegt sind diese Folgen hier aber noch nicht. Offene Grenze bleibt, welche Daten tatsächlich geprüft sind, wie sensibel sie sind und ob der Umfang unabhängig bestätigt werden kann.",
+      "why_relevant": "Die Meldung betrifft einen möglichen Abfluss und eine Veröffentlichung sensibler Verwaltungsdaten mit möglicher Bedeutung für Sicherheit, Verwaltungsbetrieb und Informationsschutz.",
+      "topic": [
+        "Energie",
+        "Digitalisierung",
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Betroffenheit von Verwaltungsdaten, Erpressungsdruck und Folgesicherungen; konkrete Personenschäden sind nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug aus den vorliegenden Quellen erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind öffentliche Verwaltungsnetze und potenziell sicherheitsrelevante Informationen; das kann Vertrauens- und Schutzstrukturen berühren."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T16:14:15.000Z",
+      "last_updated": "2026-09-04T17:35:19.832Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-5af2c4bd0487548d3bd6",
+      "source_published_at": "2026-09-04T16:14:15.000Z",
+      "published_at": "2026-09-04T16:22:44.606Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten",
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:11:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0b6279d05f195d31",
       "title_image": {
@@ -116,85 +984,6 @@
       ]
     },
     {
-      "story_id": "wt-12a75e1a8e63deaa",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-a443b089c7ddd307-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-18ba7109302575b6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-2eba79c5deacf6f2-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "cyberkriminalitat-hacker-veroffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-dark-63deaa",
-      "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
-      "source_summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Deutschlandfunk berichtet unter Berufung auf mehrere Medien, die Hackergruppe Rhysida habe rund 1,4 Millionen Daten im Darknet bereitgestellt.\n\nLaut dem Bericht soll es darunter auch Informationen geben, die für die Sicherheit Berlins und Deutschlands relevant sind, etwa zu Zivilschutz und besonders zu schützenden Objekten. Genannt werden außerdem geheime Dokumente zu Rüstungsunternehmen, ein behaupteter unbemerkter Zugriff auf Berliner Verwaltungsnetze im August, eine Lösegeldforderung von rund zwei Millionen Euro und ein ausgelaufenes Ultimatum.",
-      "summary": "Nach einem Hackerangriff auf Berliner Verwaltungsnetze sollen Daten im Darknet veröffentlicht worden sein. Im Bericht ist außerdem von sensiblen Unterlagen, einer Lösegeldforderung und einem ausgelaufenen Ultimatum die Rede.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Meldung, dass nach einem Angriff auf Berliner Verwaltungsnetze Daten im Darknet veröffentlicht worden sein sollen; der Bericht nennt dafür die Gruppe Rhysida und rund 1,4 Millionen Daten. Relevanz entsteht vor allem, weil unter den abrufbaren Informationen auch sicherheitsrelevante Angaben zu Zivilschutz, Schutzobjekten und Rüstungsunternehmen genannt werden. Der Wirkpfad liegt weniger in der reinen Reichweite als in möglichen Folgeeffekten auf Schutz, Geheimhaltung und Erpressbarkeit öffentlicher Infrastruktur. Mögliche Folgen sind zusätzliche Sicherheitsprüfungen, organisatorische Nachbesserungen und ein erhöhtes Risiko für nachgelagerte Angriffe. Offen bleibt jedoch, welcher Teil der Daten tatsächlich verifiziert ist und wie groß der sensible Anteil ist; dafür liefert die Quelle nur einen begrenzten, sekundären Befund.",
-      "why_relevant": "Die Meldung betrifft potenziell sicherheitsrelevante Verwaltungsdaten und damit Informationsgrundlagen, Schutzmaßnahmen und die Resilienz staatlicher Infrastruktur.",
-      "topic": [
-        "Energie",
-        "Digitalisierung",
-        "Geopolitik",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Folgen betreffen öffentliche Verwaltung, Schutzinfrastruktur und indirekt Bürgerinnen und Bürger über Sicherheits- und Vertrauensfragen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Planet-Bezug ist aus der Quelle nicht erkennbar."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Ein Angriff auf Landesnetze und die Veröffentlichung sensibler Verwaltungsdaten berührt staatliche Funktionsfähigkeit und demokratische Korrekturfähigkeit."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T16:14:15.000Z",
-      "last_updated": "2026-09-04T16:22:44.606Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-5af2c4bd0487548d3bd6",
-      "source_published_at": "2026-09-04T16:14:15.000Z",
-      "published_at": "2026-09-04T16:22:44.606Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:14:15.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-cb1584ee4d9e6a43",
       "title_image": {
         "mode": "editorial",
@@ -297,95 +1086,6 @@
           "url": "https://www.stern.de/news/stromversorgung--reul--polizei-stuermt-fahrzeug-von-sabotage-verdaechtigem-38210002.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T15:55:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7122b10e5711a154",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-ce0c434198c639cd-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-26c7dca55074c3f2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-f29f2779b83e8df8-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "braucht-ki-eine-internationale-aufsichtsbehorde-11a154",
-      "title": "Braucht KI eine internationale Aufsichtsbehörde?",
-      "source_summary": "Die Quelle berichtet, dass Bundesdigitalminister Karsten Wildberger im Gespräch mit einem Portal eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle angeregt hat. Als Vorbild nennt er die Internationale Atomenergiebehörde. Genannt werden Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen als mögliche Aufgaben.\n\nDie Quelle ordnet den Vorschlag mit Einschätzungen von zwei Rechtswissenschaftlern ein. Ein Experte hält die Idee grundsätzlich für sinnvoll, verweist aber darauf, dass eine internationale Behörde keine eigenen Durchgriffsrechte hätte und auf Kooperation von Staaten und Unternehmen angewiesen wäre. Der andere betont, dass KI-Risiken anders als bei der Atomenergie vor allem über Sekundäreffekte, etwa in der IT-Sicherheit, entstehen. Offene Punkte sind der konkrete Zuschnitt, die Durchsetzbarkeit und die internationale Anschlussfähigkeit.",
-      "summary": "Wildberger schlägt eine internationale KI-Aufsicht nach IAEA-Vorbild vor. Die Quelle zeigt zugleich, dass Zuständigkeiten und Durchsetzung offen bleiben.",
-      "detail_summary": "Gesichert ist, dass Digitalminister Wildberger eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle ins Gespräch bringt und dabei auf Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen zielt. Das ist relevant, weil damit die Debatte von allgemeiner Regulierung zu einer möglichen neuen internationalen Institution verschoben wird. Der Wirkpfad läge über gemeinsame Regeln, Vorabtests und Vorfallmeldungen, also über präzisere Steuerung und schnellere Reaktion auf Risiken. Mögliche Folgen wären strengere internationale Koordination, aber auch Konflikte über Zuständigkeit, Verbindlichkeit und die Rolle von USA, China und EU. Die Quelle stützt diesen Vorschlag jedoch nur als journalistisch wiedergegebene ministerielle Position und ergänzt ihn mit Experteneinschätzungen; ob daraus tatsächlich eine tragfähige Institution entsteht, bleibt offen.",
-      "why_relevant": "Der Vorstoß betrifft mögliche künftige Regeln für KI-Sicherheit, internationale Koordination und die Verteilung von Regulierungsmacht.",
-      "topic": [
-        "Digitalisierung",
-        "KI"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "KI-Regeln können Sicherheit, Arbeitsabläufe und Haftungsfragen für viele Nutzer und Anbieter beeinflussen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen wird in der Quelle nicht hergestellt."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Die Frage berührt internationale Regelsetzung, staatliche Kontrolle und demokratische Korrekturfähigkeit bei Hochrisiko-KI."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T15:54:00.000Z",
-      "last_updated": "2026-09-04T16:08:20.425Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-39a76d34400c9aa5a56b",
-      "source_published_at": "2026-09-04T15:54:00.000Z",
-      "published_at": "2026-09-04T16:08:20.425Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob und wann die Bundesregierung aus dem Vorstoß konkrete internationale Verhandlungen oder einen Vorschlag ableitet.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Kabinetts-, Ministeriums- oder UN-/EU-Schritte zu KI-Aufsicht",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-899b31d44a02b221",
-          "announced_at": "2026-09-04T15:54:00.000Z",
-          "follow_up_date": "2026-09-11T16:08:20.425Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/ki-modelle-kontrolle-karsten-wildberger-aufsichtsbehoerde-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T15:54:00.000Z",
           "primary_source": false
         }
       ]
@@ -2515,114 +3215,6 @@
           "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T12:00:21.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-00fccb632042b492",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3973a4a4aa29babd-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3616b61d5afc1059-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-a0b9303f31c7c6e3-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
-      "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
-      "source_summary": "Nach Informationen der Deutschen Welle fahnden Ermittler nach einem Mann im Zusammenhang mit Sabotage an Umspannwerken in Brandenburg und Nordrhein-Westfalen. Die Polizei hält zwei handschriftliche Bekennerschreiben wegen ihres detaillierten Täterwissens für authentisch; ein zweites Blatt soll die technische Durchführung beschreiben.\n\nDie Schreiben sollen einen vollständigen Namen tragen. Als mutmaßlicher Verfasser wird ein 1977 geborener deutscher Staatsangehöriger aus Gevelsberg genannt, dessen Wohnort die Polizei bereits durchsuchte, ihn aber nicht antraf. Außerdem wird ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen beschrieben, der nach Polizeiangaben wie eine Abschussvorrichtung wirken soll.",
-      "summary": "Die Polizei hält zwei Bekennerschreiben wegen detaillierten Täterwissens für authentisch. Gesucht wird ein 1977 geborener Mann aus Gevelsberg.",
-      "detail_summary": "Gesichert ist zunächst, dass Ermittler nach Angaben der Deutschen Welle die beiden Bekennerschreiben wegen ihres detaillierten Täterwissens für echt halten. Die Quelle nennt außerdem einen 1977 geborenen deutschen Staatsangehörigen aus Gevelsberg als mutmaßlichen Verfasser und beschreibt eine bereits erfolgte, erfolglose Durchsuchung seines Wohnorts. Zusätzlich wird ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen erwähnt, den die Polizei als mögliche Abschussvorrichtung einordnet. Das ist materiell relevant, weil es um kritische Infrastruktur, laufende Fahndung und mögliche weitere Sabotage geht. Ein möglicher Wirkpfad reicht von erhöhtem Schutzaufwand bis zu weiteren Sicherheitsmaßnahmen an Stromanlagen. Offen bleibt aber, wie belastbar die Zuschreibung des Täters am Ende ist und ob die beschriebenen Taten in den Ermittlungen zusammengeführt werden.",
-      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, eine bundesweite Fahndung und mögliche weitere Sicherheitsmaßnahmen mit über den Einzelfall hinausgehender Relevanz.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind mögliche Versorgungsstörungen, Polizeieinsatz und Schutz kritischer Infrastruktur; der Kern ist aber noch Ermittlungsstand."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt; höchstens indirekt über Debatten zu fossiler Stromerzeugung."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Quelle erwähnt einen möglichen Bezug zu Wahlen und staatliche Schutzmaßnahmen für kritische Infrastruktur."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Geburtsjahr des Verdächtigen",
-            "value": "1977",
-            "unit": "Jahr",
-            "context": "Von der Quelle genannter Geburtsjahrgang des Gesuchten"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "kommunen",
-          "europa"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T11:40:00.000Z",
-      "last_updated": "2026-09-04T12:08:21.972Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-e4876e29370bc0f63efa",
-      "source_published_at": "2026-09-04T11:40:00.000Z",
-      "published_at": "2026-09-04T12:08:21.972Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dw-news"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Polizei die Authentizität der Schreiben weiterhin bestätigt und ob der Gesuchte gefasst wird.",
-          "source_id": "dw-news",
-          "expected_by": null,
-          "measurable_indicator": "Amtliche Bestätigung oder Vollzug der Fahndung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-d507a2000580b029",
-          "announced_at": "2026-09-04T11:40:00.000Z",
-          "follow_up_date": "2026-09-11T12:08:21.972Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutsche Welle",
-          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:40:00.000Z",
           "primary_source": false
         }
       ]
@@ -6464,128 +7056,6 @@
           "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-schulen-gewalt-bildungssenatorin-plan-regeln.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T13:49:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-6a7145e6dc679f95",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-e46aae3db6197635-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-bcaa1257892d137b-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-ed9d6b837154562e-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
-      "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
-      "source_summary": "Die hessenschau berichtet, dass die Landesregierung Klimaanlagen für Kitas und Pflegeeinrichtungen fördern will. Nach Angaben im Bericht sollen dafür rund zehn Millionen Euro bereitstehen; das Programm „Hitzehilfe für Hessen“ sei auf drei Jahre angelegt und solle mobile sowie teilstationäre Anlagen unterstützen.\n\nGenannt werden außerdem Förderregeln: Bis zu 5.000 Euro pro Standort seien vorgesehen, und mehr als 6.000 Anlagen sollen im Jahr gefördert werden. Im Landtag gebe es Unterstützung für das Vorhaben, aber auch Kritik. Die Grünen begrüßten den Hitzeschutz, verwiesen jedoch auf fehlende Mittel an anderer Stelle; die FDP forderte zusätzlich Verschattung, Dämmung, Begrünung und weitere Klimaanpassung in öffentlichen Gebäuden.",
-      "summary": "Hessen will ein Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen. Im Bericht sind zehn Millionen Euro, eine Laufzeit von drei Jahren und Kritik aus der Opposition genannt.",
-      "detail_summary": "Gesichert berichtet ist ein neues hessisches Fördervorhaben für Klimaanlagen in Kitas und Pflegeeinrichtungen. Der Quellenkern ist klar: rund zehn Millionen Euro, eine Laufzeit von drei Jahren und ein Ziel von mehr als 6.000 geförderten Anlagen pro Jahr. Das ist materiell relevant, weil damit öffentliche Mittel in den Hitzeschutz besonders gefährdeter Gruppen gelenkt werden und sich Anreize für technische Anpassung in sozialen Einrichtungen verschieben. Mögliche Folgen sind bessere Innenraumtemperaturen und geringere Hitzebelastung, zugleich aber Verdrängungseffekte bei anderen Klimaanpassungsmaßnahmen. Offen bleibt, wie breit das Programm tatsächlich genutzt wird, ob die Mittel reichen und ob die Förderung die angekündigte Wirkung in der Fläche erreicht. Die Evidenzlage ist vorerst auf einen journalistischen Bericht mit zugeschriebenen Angaben begrenzt; unabhängige Bestätigung liegt hier noch nicht vor.",
-      "why_relevant": "Das Vorhaben verschiebt öffentliche Mittel in einen Bereich mit direkter Betroffenheit für vulnerable Gruppen und kann Anreize für Klimaanpassung in sozialen Einrichtungen verändern.",
-      "topic": [
-        "Klima",
-        "Soziales",
-        "Gesundheit"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Kinder, Pflegebedürftige und Einrichtungen mit unmittelbarer Hitzebelastung; der Wirkpfad zielt auf Gesundheitsschutz und Schutz vor Extremtemperaturen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Maßnahme setzt auf technische Kühlung und kann den Energiebedarf erhöhen; zugleich adressiert sie Anpassung an Klimafolgen, nicht deren Ursache."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Öffentliche Haushaltsmittel und Prioritätensetzung werden politisch entschieden; die Debatte zeigt Verteilungs- und Priorisierungskonflikte."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Fördervolumen",
-            "value": "zehn Millionen",
-            "unit": "Euro",
-            "context": "Geplantes Budget für den Hitzeschutz in Kitas und Pflegeeinrichtungen"
-          },
-          {
-            "label": "Laufzeit",
-            "value": "drei",
-            "unit": "Jahre",
-            "context": "Geplante Dauer des Förderprogramms"
-          },
-          {
-            "label": "Förderung pro Standort",
-            "value": "5.000",
-            "unit": "Euro",
-            "context": "Maximale Summe je Standort"
-          }
-        ],
-        "affected_groups": [
-          "kinder_jugend",
-          "aeltere",
-          "beschaeftigte",
-          "kommunen"
-        ],
-        "tendency": {
-          "human": "chance",
-          "planet": "gemischt",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-03T16:31:09.000Z",
-      "last_updated": "2026-09-04T02:22:48.837Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-49e6ddd9913a3803a948",
-      "source_published_at": "2026-09-03T16:31:09.000Z",
-      "published_at": "2026-09-04T02:22:48.837Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Startet das Förderprogramm tatsächlich mit Antragsbeginn und ersten Bewilligungen innerhalb der angekündigten Laufzeit?",
-          "source_id": "hr-hessenschau",
-          "expected_by": null,
-          "measurable_indicator": "Erste veröffentlichte Bewilligungen oder Ministeriumsangaben zu Anträgen und Auszahlungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-eb732b42b2d7e1be",
-          "announced_at": "2026-09-03T16:31:09.000Z",
-          "follow_up_date": "2026-09-11T02:22:48.837Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:31:09.000Z",
           "primary_source": false
         }
       ]

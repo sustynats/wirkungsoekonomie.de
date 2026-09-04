@@ -847,8 +847,8 @@ export async function runWirkungsticker(options = {}) {
         }
       } catch (error) {
         report.ai_calls += Number(error?.requestAttempts ?? 1);
-        report.estimated_cost_usd = Number((report.estimated_cost_usd + NEWS_REQUEST_RESERVATION_USD * Number(error?.requestAttempts ?? 1)).toFixed(6));
-        report.token_source = "includes_conservative_failed_request_reservations";
+        report.estimated_cost_usd = Number((report.estimated_cost_usd + (error.providerNotCalled ? 0 : NEWS_REQUEST_RESERVATION_USD * Number(error?.requestAttempts ?? 1))).toFixed(6));
+        if (!error.providerNotCalled) report.token_source = "includes_conservative_failed_request_reservations";
         const reason = sanitizeError(error);
         if (reason === "AI_INPUT_TOO_LARGE" && error?.requestAttempts === 0) {
           for (const candidate of batch) {
@@ -859,11 +859,13 @@ export async function runWirkungsticker(options = {}) {
         }
         report.ai_error = reason;
         report.failed_batch_offset = offset;
-        const rateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
+        const budgetBlocked = reason === 'AI_BUDGET_EXHAUSTED';
+        const rateLimited = budgetBlocked || /AI_PROVIDER_ERROR:429/.test(reason);
         const deferred = rateLimited ? selected.slice(offset) : batch;
         for (const candidate of deferred) {
-          byId.set(candidate.story_id, pendingRecord(candidate, "AI_PROVIDER_UNAVAILABLE", now, [reason]));
-          report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_PROVIDER_UNAVAILABLE" });
+          const holdReason = budgetBlocked ? 'AI_BUDGET_BLOCKED' : 'AI_PROVIDER_UNAVAILABLE';
+          byId.set(candidate.story_id, pendingRecord(candidate, holdReason, now, [reason]));
+          report.quality_holds.push({ story_id: candidate.story_id, reason: holdReason });
         }
         // Ein ausgeschöpftes Client-Limit sperrt alle weiteren Aufrufe dieses
         // Laufs. Bei 5xx/Timeout ist dagegen nur die betroffene Story vertagt;

@@ -1,0 +1,450 @@
+diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
+index ea18a90..205c822 100644
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -261,8 +261,14 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+           const action = () => providers.newsAiProvider!.answer(input);
+           if (!providers.newsAnalysisBudget) throw new FactcheckProviderError("Nachrichten-Kostenschutz fehlt.", 503);
+           const guarded = () => providers.newsAnalysisBudget!.withBudget(action);
+-          const result = providers.budgetTracker ? await providers.budgetTracker.withBudget("woek-ai", guarded) : await guarded();
++          const result = providers.budgetTracker ? await providers.budgetTracker.withBudget("news-analysis", guarded) : await guarded();
+           sendJson(response, 200, { ok: true, ...result, source_count: result.sources.length });
++        } catch (error) {
++          // Only this authenticated worker sees operational codes. These gates
++          // run before provider access and must not be charged as failed calls.
++          if (error instanceof FactcheckProviderError && ['monthly_budget_reached','news_monthly_budget_reached'].includes(error.technicalMessage || '')) {
++            sendJson(response, 429, { ok:false, code:'BUDGET_EXHAUSTED', provider_called:false, error:'Das freigegebene KI-Budget ist ausgeschöpft.' });
++          } else throw error;
+         } finally {
+           newsAnalysisActive = false;
+         }
+diff --git a/src/scripts/migrateNewsBudget.ts b/src/scripts/migrateNewsBudget.ts
+new file mode 100644
+index 0000000..c1941f2
+--- /dev/null
++++ b/src/scripts/migrateNewsBudget.ts
+@@ -0,0 +1,32 @@
++import { createHash } from 'node:crypto';
++import { readFile, writeFile, rename } from 'node:fs/promises';
++import { pathToFileURL } from 'node:url';
++import { USD_TO_GROSS_EUR_CENTS } from '../services/tokenUsageBudget.js';
++
++export function reconcileLegacyNewsBudget(global: any, news: any, proof: any, month: string) {
++  if (global.migration?.id === 'news-token-costs-20260904') return global;
++  if (global.version !== 1 || news.version !== 1) throw new Error('Unexpected ledger versions');
++  const before=global.months?.[month], newsMonth=news.months?.[month];
++  if (!before || !Number.isFinite(newsMonth?.chargedUsd) || newsMonth.chargedUsd < 0 || !Array.isArray(proof.runs)) throw new Error('Missing migration evidence');
++  const certified=proof.runs.filter((r:any)=>r.started_at?.startsWith(month) && r.started_at >= '2026-09-03T22:21:17.010Z' && r.ai?.token_source==='provider_reported_usage');
++  if (new Set(certified.map((r:any)=>r.run_id)).size !== certified.length || certified.some((r:any)=>!Number.isInteger(r.ai.requests)||r.ai.requests<1||!Number.isFinite(r.ai.input_tokens)||r.ai.input_tokens<1)) throw new Error('Invalid or duplicate usage evidence');
++  const calls=certified.reduce((sum:number,r:any)=>sum+r.ai.requests,0);
++  const oldWoek=before.features?.['woek-ai'];
++  if (!calls || calls>oldWoek?.requests || calls*8>oldWoek?.estimatedCents || calls>newsMonth.requests) throw new Error('Usage evidence exceeds legacy counters');
++  const converted=Math.ceil(newsMonth.chargedUsd*USD_TO_GROSS_EUR_CENTS*1e6)/1e6;
++  const state=structuredClone(global);
++  state.version=2;state.entries=[];
++  state.months[month].estimatedCents=before.estimatedCents-calls*8+converted;
++  state.months[month].features['woek-ai']={requests:oldWoek.requests-calls,estimatedCents:oldWoek.estimatedCents-calls*8};
++  state.months[month].features['news-analysis']={requests:calls,estimatedCents:converted};
++  state.migration={id:'news-token-costs-20260904',month,at:new Date().toISOString(),original_estimated_cents:before.estimatedCents,removed_documented_flat_charge_cents:calls*8,documented_successful_news_calls:calls,imported_news_ledger_usd:newsMonth.chargedUsd,retained_legacy_reserve_cents:before.estimatedCents-calls*8,proof_sha256:createHash('sha256').update(JSON.stringify(proof)).digest('hex'),note:'Unknown older costs retained as reserves. News journal includes its historical and interrupted-request reserves; no invoice-precision claim.'};
++  return state;
++}
++if (process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
++  const [globalPath,newsPath,proofPath,mode]=process.argv.slice(2);
++  if (!globalPath||!newsPath||!proofPath||!['--dry-run','--apply'].includes(mode||'')) throw new Error('Usage: migrateNewsBudget <global> <news> <proof> --dry-run|--apply; stop service and back up both journals first');
++  const [global,news,proof]=await Promise.all([globalPath,newsPath,proofPath].map(async p=>JSON.parse(await readFile(p,'utf8'))));
++  const state=reconcileLegacyNewsBudget(global,news,proof,new Date().toISOString().slice(0,7));
++  console.log(JSON.stringify({migration:state.migration,current:state.months[new Date().toISOString().slice(0,7)]},null,2));
++  if(mode==='--apply'){await writeFile(`${globalPath}.migration.tmp`,JSON.stringify(state,null,2)+'\n',{mode:0o600});await rename(`${globalPath}.migration.tmp`,globalPath)}
++}
+diff --git a/src/services/tokenUsageBudget.ts b/src/services/tokenUsageBudget.ts
+new file mode 100644
+index 0000000..e4c0e9f
+--- /dev/null
++++ b/src/services/tokenUsageBudget.ts
+@@ -0,0 +1,98 @@
++import { randomUUID } from "node:crypto";
++import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
++import { dirname } from "node:path";
++import { FactcheckProviderError } from "./openaiFactcheck.js";
++import type { ApiFeature, UsageBudgetOptions } from "./usageBudget.js";
++type BudgetFeature = ApiFeature | "news-analysis";
++interface FeatureTotals { requests: number; estimatedCents: number }
++interface MonthTotals { totalRequests: number; estimatedCents: number; features: Partial<Record<BudgetFeature, FeatureTotals>>; updatedAt: string }
++interface Entry { id: string; feature: BudgetFeature; month: string; at: string; chargedCents: number; basis: string; model?: string; usage?: unknown }
++interface State { version: 2; months: Record<string, MonthTotals>; entries: Entry[]; migration?: unknown }
++// Conservative accounting conversion, not an asserted current FX rate: $1 is
++// reserved as EUR 1, plus 19% tax and the existing 10% FX safety buffer.
++export const USD_TO_GROSS_EUR_CENTS = 100 * 1.19 / 0.9;
++const cents = (n: number) => Math.ceil(n * 1e6) / 1e6;
++
++export class UsageBudgetTracker {
++  private queue: Promise<unknown> = Promise.resolve();
++  constructor(private readonly options: UsageBudgetOptions) {}
++  async withBudget<T>(feature: BudgetFeature, action: () => Promise<T>): Promise<T> {
++    if (!this.options.enabled) return action();
++    const id = randomUUID();
++    const month = new Date().toISOString().slice(0, 7);
++    await this.mutate(state => {
++      const current = state.months[month] ??= emptyMonth();
++      const reserve = feature === 'news-analysis' ? cents(0.25 * USD_TO_GROSS_EUR_CENTS) : Math.max(35, this.legacyEstimate(feature));
++      if (current.estimatedCents + reserve > this.options.monthlyBudgetCents) throw new FactcheckProviderError('Das monatliche KI-Budget ist ausgeschöpft.', 429, 'monthly_budget_reached');
++      state.entries.push({ id, feature, month, at: new Date().toISOString(), chargedCents: reserve, basis: 'reserved_unknown' });
++      this.charge(current, feature, reserve, 1);
++    });
++    let result: T;
++    try { result = await action(); }
++    catch (error) {
++      if (error instanceof FactcheckProviderError && error.technicalMessage === 'news_monthly_budget_reached') await this.reconcile(id, 0, 'local_budget_rejection');
++      throw error;
++    }
++    const record = result as { cacheStatus?: string; mode?: string; provider?: string; model?: string; usage?: { input_tokens?: number; output_tokens?: number; cached_input_tokens?: number } } | undefined;
++    const cached = record?.cacheStatus === 'hit' || /cache/i.test(record?.mode || '') || /cache/i.test(record?.provider || '');
++    if (cached) await this.reconcile(id, 0, 'cache_hit');
++    else if (record?.model === 'gpt-5.4-mini' && validUsage(record.usage)) {
++      const usage = record.usage!;
++      const cachedTokens = Math.min(usage.input_tokens!, usage.cached_input_tokens || 0);
++      const usd = ((usage.input_tokens! - cachedTokens) * 0.75 + cachedTokens * 0.075 + usage.output_tokens! * 4.5) / 1e6;
++      await this.reconcile(id, cents(usd * USD_TO_GROSS_EUR_CENTS), 'provider_tokens_with_fx_tax_reserve', record.model, usage);
++    }
++    // Unknown models, usage or interrupted requests retain their reservation.
++    return result;
++  }
++  async currentMonth(): Promise<MonthTotals> {
++    await this.queue;
++    return (await this.readState()).months[new Date().toISOString().slice(0, 7)] ?? emptyMonth();
++  }
++  private legacyEstimate(feature: ApiFeature): number {
++    return feature === 'factcheck' ? this.options.featureCostsCents.factcheck : feature === 'product-check' ? this.options.featureCostsCents.productCheck : this.options.featureCostsCents.woekAi;
++  }
++  private charge(month: MonthTotals, feature: BudgetFeature, amount: number, requests: number) {
++    const totals = month.features[feature] ??= { requests: 0, estimatedCents: 0 };
++    month.estimatedCents = cents(month.estimatedCents + amount);
++    month.totalRequests += requests;
++    totals.estimatedCents = cents(totals.estimatedCents + amount);
++    totals.requests += requests;
++    month.updatedAt = new Date().toISOString();
++  }
++  private reconcile(id: string, amount: number, basis: string, model?: string, usage?: unknown) {
++    return this.mutate(state => {
++      const entry = state.entries.find(entry => entry.id === id);
++      if (!entry || entry.basis !== 'reserved_unknown') throw new Error('Budget reservation missing or already reconciled');
++      this.charge(state.months[entry.month]!, entry.feature, amount - entry.chargedCents, 0);
++      Object.assign(entry, { chargedCents: amount, basis, model, usage });
++    });
++  }
++  private mutate(change: (state: State) => void) {
++    const operation = this.queue.then(async () => {
++      const state = await this.readState();
++      change(state);
++      await mkdir(dirname(this.options.file), { recursive: true });
++      const temporary = `${this.options.file}.tmp`;
++      await writeFile(temporary, JSON.stringify(state, null, 2) + '\n', { mode: 0o600 });
++      await rename(temporary, this.options.file);
++    });
++    this.queue = operation.catch(() => undefined);
++    return operation;
++  }
++  private async readState(): Promise<State> {
++    let parsed;
++    try { parsed = JSON.parse(await readFile(this.options.file, 'utf8')); }
++    catch (error) {
++      if ((error as NodeJS.ErrnoException).code === 'ENOENT') return { version: 2, months: {}, entries: [] };
++      throw error;
++    }
++    if (![1, 2].includes(parsed.version) || !parsed.months || Object.values(parsed.months).some((m: any) => !Number.isFinite(m.estimatedCents) || m.estimatedCents < 0 || !m.features)) throw new Error('Invalid API budget ledger');
++    // Preserve the entire old estimate until the explicit audited migration.
++    return { ...parsed, version: 2, entries: parsed.entries || [] };
++  }
++}
++function emptyMonth(): MonthTotals { return { totalRequests: 0, estimatedCents: 0, features: {}, updatedAt: new Date().toISOString() }; }
++function validUsage(usage: any): boolean {
++  return usage && Number.isInteger(usage.input_tokens) && usage.input_tokens >= 0 && Number.isInteger(usage.output_tokens) && usage.output_tokens >= 0 && (usage.cached_input_tokens === undefined || Number.isInteger(usage.cached_input_tokens) && usage.cached_input_tokens >= 0 && usage.cached_input_tokens <= usage.input_tokens);
++}
+diff --git a/src/services/usageBudget.ts b/src/services/usageBudget.ts
+index f8350e9..d701af6 100644
+--- a/src/services/usageBudget.ts
++++ b/src/services/usageBudget.ts
+@@ -1,153 +1,9 @@
+-import { mkdir, readFile, writeFile } from "node:fs/promises";
+-import { dirname } from "node:path";
+-import { FactcheckProviderError } from "./openaiFactcheck.js";
+-
+ export type ApiFeature = "factcheck" | "woek-ai" | "product-check";
+-
+-export interface FeatureCostConfig {
+-  factcheck: number;
+-  woekAi: number;
+-  productCheck: number;
+-}
+-
++export interface FeatureCostConfig { factcheck: number; woekAi: number; productCheck: number }
+ export interface UsageBudgetOptions {
+   enabled: boolean;
+   file: string;
+   monthlyBudgetCents: number;
+   featureCostsCents: FeatureCostConfig;
+ }
+-
+-interface FeatureTotals {
+-  requests: number;
+-  estimatedCents: number;
+-}
+-
+-interface MonthTotals {
+-  totalRequests: number;
+-  estimatedCents: number;
+-  features: Partial<Record<ApiFeature, FeatureTotals>>;
+-  updatedAt: string;
+-}
+-
+-interface UsageBudgetState {
+-  version: 1;
+-  months: Record<string, MonthTotals>;
+-}
+-
+-const initialState: UsageBudgetState = { version: 1, months: {} };
+-
+-export class UsageBudgetTracker {
+-  constructor(private readonly options: UsageBudgetOptions) {}
+-
+-  async withBudget<T>(feature: ApiFeature, action: () => Promise<T>): Promise<T> {
+-    if (!this.options.enabled) {
+-      return action();
+-    }
+-
+-    await this.assertBudget(feature);
+-    const result = await action();
+-    if (!isCachedUsageResult(result)) {
+-      await this.record(feature);
+-    }
+-    return result;
+-  }
+-
+-  async currentMonth(): Promise<MonthTotals> {
+-    const state = await this.readState();
+-    return state.months[monthKey()] ?? createEmptyMonth();
+-  }
+-
+-  private async assertBudget(feature: ApiFeature): Promise<void> {
+-    const state = await this.readState();
+-    const current = state.months[monthKey()] ?? createEmptyMonth();
+-    const estimate = this.estimateFor(feature);
+-    if (current.estimatedCents + estimate > this.options.monthlyBudgetCents) {
+-      throw new FactcheckProviderError(
+-        "Der KI-Dienst ist gerade nicht verfuegbar. Bitte versuche es spaeter erneut.",
+-        429,
+-        "monthly_budget_reached"
+-      );
+-    }
+-  }
+-
+-  private async record(feature: ApiFeature): Promise<void> {
+-    const state = await this.readState();
+-    const key = monthKey();
+-    const current = state.months[key] ?? createEmptyMonth();
+-    const estimate = this.estimateFor(feature);
+-    const featureTotals = current.features[feature] ?? { requests: 0, estimatedCents: 0 };
+-
+-    current.totalRequests += 1;
+-    current.estimatedCents += estimate;
+-    current.features[feature] = {
+-      requests: featureTotals.requests + 1,
+-      estimatedCents: featureTotals.estimatedCents + estimate
+-    };
+-    current.updatedAt = new Date().toISOString();
+-    state.months[key] = current;
+-
+-    await mkdir(dirname(this.options.file), { recursive: true });
+-    await writeFile(this.options.file, `${JSON.stringify(state, null, 2)}\n`, "utf8");
+-  }
+-
+-  private estimateFor(feature: ApiFeature): number {
+-    switch (feature) {
+-      case "factcheck":
+-        return this.options.featureCostsCents.factcheck;
+-      case "woek-ai":
+-        return this.options.featureCostsCents.woekAi;
+-      case "product-check":
+-        return this.options.featureCostsCents.productCheck;
+-    }
+-  }
+-
+-  private async readState(): Promise<UsageBudgetState> {
+-    try {
+-      const raw = await readFile(this.options.file, "utf8");
+-      const parsed = JSON.parse(raw) as unknown;
+-      if (isUsageBudgetState(parsed)) {
+-        return parsed;
+-      }
+-    } catch (error) {
+-      if (!isFileMissingError(error)) {
+-        console.warn("Usage budget state could not be read. Starting with empty counters.", error);
+-      }
+-    }
+-
+-    return { ...initialState, months: {} };
+-  }
+-}
+-
+-function createEmptyMonth(): MonthTotals {
+-  return {
+-    totalRequests: 0,
+-    estimatedCents: 0,
+-    features: {},
+-    updatedAt: new Date().toISOString()
+-  };
+-}
+-
+-function monthKey(date = new Date()): string {
+-  return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+-}
+-
+-function isUsageBudgetState(value: unknown): value is UsageBudgetState {
+-  return Boolean(value && typeof value === "object" && !Array.isArray(value) && (value as UsageBudgetState).version === 1);
+-}
+-
+-function isFileMissingError(error: unknown): boolean {
+-  return Boolean(error && typeof error === "object" && "code" in error && (error as { code?: string }).code === "ENOENT");
+-}
+-
+-function isCachedUsageResult(value: unknown): boolean {
+-  if (!value || typeof value !== "object" || Array.isArray(value)) {
+-    return false;
+-  }
+-
+-  const record = value as Record<string, unknown>;
+-  return (
+-    record.cacheStatus === "hit" ||
+-    (typeof record.mode === "string" && record.mode.toLowerCase().includes("cache")) ||
+-    (typeof record.provider === "string" && record.provider.toLowerCase().includes("cache"))
+-  );
+-}
++export { UsageBudgetTracker } from "./tokenUsageBudget.js";
+diff --git a/tests/apiServer.test.ts b/tests/apiServer.test.ts
+index dd61698..66b6721 100644
+--- a/tests/apiServer.test.ts
++++ b/tests/apiServer.test.ts
+@@ -8,6 +8,29 @@ import type { NewsPushService } from "../src/services/newsPushService.js";
+ import type { NewsAnalysisBudget } from "../src/services/newsAnalysisBudget.js";
+ import type { WoekAiAnswer } from "../src/types.js";
+ import { clientKey, startApiServer, type NewsVisualProvider } from "../src/http/apiServer.js";
++import type { UsageBudgetTracker } from '../src/services/usageBudget.js';
++import { FactcheckProviderError } from '../src/services/openaiFactcheck.js';
++
++it('reports a local budget refusal only to the authorized worker and never calls the provider',async()=>{
++  let called=0;
++  const server=startApiServer({} as FactcheckService,{apiPort:0,apiHost:'127.0.0.1',apiAllowedOrigins:[],apiMaxBodyBytes:100000} as unknown as RuntimeConfig,{
++    newsPushService:{isAuthorized:(token:string)=>token==='test-only'} as unknown as NewsPushService,
++    newsAiProvider:{answer:async()=>{called++;return {sources:[],answer:'test'} as unknown as WoekAiAnswer}},
++    newsAnalysisBudget:{withBudget:async(action:()=>Promise<WoekAiAnswer>)=>action()} as unknown as NewsAnalysisBudget,
++    budgetTracker:{withBudget:async(feature:string)=>{expect(feature).toBe('news-analysis');throw new FactcheckProviderError('budget',429,'monthly_budget_reached')}} as unknown as UsageBudgetTracker
++  });
++  await once(server,'listening');
++  const url=`http://127.0.0.1:${(server.address() as AddressInfo).port}/api/news-analysis`;
++  try{
++    const options={method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer test-only'},body:JSON.stringify({question:'News test'})};
++    for(let i=0;i<2;i++){
++      const response=await fetch(url,options);expect(response.status).toBe(429);
++      expect(await response.json()).toMatchObject({code:'BUDGET_EXHAUSTED',provider_called:false});
++    }
++    expect((await fetch(url,{...options,headers:{'Content-Type':'application/json'}})).status).toBe(401);
++    expect(called).toBe(0);
++  }finally{server.closeAllConnections();await new Promise<void>((resolve,reject)=>server.close(error=>error?reject(error):resolve()))}
++});
+ 
+ it("protects image generation, validates input and never exposes provider secrets", async () => {
+   let called = 0, fail = false;
+diff --git a/tests/migrateNewsBudget.test.ts b/tests/migrateNewsBudget.test.ts
+new file mode 100644
+index 0000000..151bc0a
+--- /dev/null
++++ b/tests/migrateNewsBudget.test.ts
+@@ -0,0 +1,20 @@
++import { describe, expect, it } from 'vitest';
++import { reconcileLegacyNewsBudget } from '../src/scripts/migrateNewsBudget.js';
++describe('audited legacy migration',()=>{
++  const global={version:1,months:{'2026-09':{estimatedCents:5000,totalRequests:625,features:{'woek-ai':{requests:625,estimatedCents:5000}}}}};
++  const news={version:1,months:{'2026-09':{chargedUsd:7.130904,requests:576}}};
++  const proof={runs:[{run_id:'proof-1',started_at:'2026-09-04T15:00:00Z',ai:{token_source:'provider_reported_usage',requests:531,input_tokens:100000}}]};
++  it('replaces only documented flat charges and keeps unknown old costs plus the full news journal',()=>{
++    const migrated=reconcileLegacyNewsBudget(global,news,proof,'2026-09');
++    expect(migrated.migration.retained_legacy_reserve_cents).toBe(752);
++    expect(migrated.months['2026-09'].estimatedCents).toBeGreaterThan(1600);
++    expect(migrated.months['2026-09'].estimatedCents).toBeLessThan(1800);
++    expect(global.version).toBe(1);
++    expect(reconcileLegacyNewsBudget(migrated,news,proof,'2026-09')).toBe(migrated);
++  });
++  it('rejects missing, duplicate or excessive proof rather than resetting counters',()=>{
++    expect(()=>reconcileLegacyNewsBudget(global,news,{runs:[]},'2026-09')).toThrow();
++    expect(()=>reconcileLegacyNewsBudget(global,news,{runs:[...proof.runs,...proof.runs]},'2026-09')).toThrow();
++    expect(()=>reconcileLegacyNewsBudget(global,news,{runs:[{...proof.runs[0],ai:{...proof.runs[0]!.ai,requests:626}}]},'2026-09')).toThrow();
++  });
++});
+diff --git a/tests/tokenUsageBudget.test.ts b/tests/tokenUsageBudget.test.ts
+new file mode 100644
+index 0000000..966d60f
+--- /dev/null
++++ b/tests/tokenUsageBudget.test.ts
+@@ -0,0 +1,62 @@
++import { afterEach, describe, expect, it } from 'vitest';
++import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { join } from 'node:path';
++import { UsageBudgetTracker, USD_TO_GROSS_EUR_CENTS } from '../src/services/tokenUsageBudget.js';
++import { FactcheckProviderError } from '../src/services/openaiFactcheck.js';
++const dirs: string[] = [];
++afterEach(async () => { for (const dir of dirs.splice(0)) await rm(dir, { recursive:true, force:true }); });
++async function fixture(limit = 5000) {
++  const dir = await mkdtemp(join(tmpdir(), 'token-budget-')); dirs.push(dir);
++  const file = join(dir, 'budget.json');
++  const budget = new UsageBudgetTracker({ enabled:true, file, monthlyBudgetCents:limit, featureCostsCents:{ factcheck:20, woekAi:8, productCheck:35 } });
++  return {file,budget};
++}
++const result = {model:'gpt-5.4-mini',usage:{input_tokens:1000,output_tokens:1000,cached_input_tokens:0}};
++describe('token cost accounting', () => {
++  it('reserves durably, reconciles tokens instead of charging 8 cents, and assigns an ID', async () => {
++    const {file,budget} = await fixture();
++    await budget.withBudget('news-analysis', async () => {
++      const state = JSON.parse(await readFile(file,'utf8'));
++      expect(state.entries[0].id).toBeTruthy();
++      expect(state.entries[0].chargedCents).toBeGreaterThan(33);
++      return result;
++    });
++    const state = JSON.parse(await readFile(file,'utf8'));
++    expect(state.entries[0].chargedCents).toBeCloseTo(0.00525 * USD_TO_GROSS_EUR_CENTS,5);
++    expect(state.entries[0].usage).toEqual(result.usage);
++    expect(state.entries[0].basis).toBe('provider_tokens_with_fx_tax_reserve');
++  });
++  it('concurrent requests cannot overspend one available reservation', async () => {
++    const {budget} = await fixture(40);
++    let finish!:()=>void;
++    const waiting = new Promise<void>(resolve=>finish=resolve);
++    const first = budget.withBudget('news-analysis', async()=>{await waiting;return result});
++    await expect(budget.withBudget('news-analysis',async()=>result)).rejects.toMatchObject({technicalMessage:'monthly_budget_reached'});
++    finish(); await first;
++  });
++  it('keeps interrupted and missing-usage reservations, releases proven local rejections', async () => {
++    const {file,budget} = await fixture();
++    await expect(budget.withBudget('news-analysis',async()=>{throw new Error('timeout')})).rejects.toThrow('timeout');
++    await budget.withBudget('news-analysis',async()=>({}));
++    await expect(budget.withBudget('news-analysis',async()=>{throw new FactcheckProviderError('budget',429,'news_monthly_budget_reached')})).rejects.toThrow('budget');
++    const entries=JSON.parse(await readFile(file,'utf8')).entries;
++    expect(entries.map((e:any)=>e.basis)).toEqual(['reserved_unknown','reserved_unknown','local_budget_rejection']);
++    expect(entries[2].chargedCents).toBe(0);
++  });
++  it('cache hits cost zero; invalid usage is never negative credit',async()=>{
++    const {budget,file}=await fixture();
++    await budget.withBudget('woek-ai',async()=>({cacheStatus:'hit'}));
++    await budget.withBudget('news-analysis',async()=>({...result,usage:{input_tokens:-1,output_tokens:100}}));
++    const entries=JSON.parse(await readFile(file,'utf8')).entries;
++    expect(entries[0].chargedCents).toBe(0);expect(entries[1].basis).toBe('reserved_unknown');
++  });
++  it('does not reset damaged or legacy exhausted ledgers',async()=>{
++    const {budget,file}=await fixture();
++    await writeFile(file,'broken');
++    await expect(budget.withBudget('news-analysis',async()=>result)).rejects.toThrow();
++    const month=new Date().toISOString().slice(0,7);
++    await writeFile(file,JSON.stringify({version:1,months:{[month]:{estimatedCents:5000,totalRequests:625,features:{},updatedAt:new Date().toISOString()}}}));
++    await expect(budget.withBudget('news-analysis',async()=>result)).rejects.toMatchObject({technicalMessage:'monthly_budget_reached'});
++  });
++});
