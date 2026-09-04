@@ -1446,6 +1446,79 @@
       },
       "source_failures": 0,
       "quality_holds": 17
+    },
+    {
+      "run_id": "news-run-e20b2354cb3c",
+      "started_at": "2026-09-04T05:06:21.635Z",
+      "completed_at": "2026-09-04T05:08:27.456Z",
+      "berlin_slot": "Morgenausgabe",
+      "counts": {
+        "feed_entries_fetched": 907,
+        "feed_entries_new": 33,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 611,
+        "story_clusters": 35,
+        "locally_rejected": 37,
+        "ai_stories": 12,
+        "published_stories": 0
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 80280,
+        "output_tokens": 10047,
+        "estimated_cost_usd": 0.074317,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 45
+    },
+    {
+      "run_id": "news-run-898fb603482f",
+      "started_at": "2026-09-04T05:21:19.381Z",
+      "completed_at": "2026-09-04T05:23:11.025Z",
+      "berlin_slot": "Morgenausgabe",
+      "counts": {
+        "feed_entries_fetched": 0,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 0,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 12,
+        "published_stories": 0
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 85613,
+        "output_tokens": 10389,
+        "estimated_cost_usd": 0.081065,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 35
+    },
+    {
+      "run_id": "news-run-4e3eb59a57d7",
+      "started_at": "2026-09-04T05:36:20.086Z",
+      "completed_at": "2026-09-04T05:36:36.077Z",
+      "berlin_slot": "Morgenausgabe",
+      "counts": {
+        "feed_entries_fetched": 959,
+        "feed_entries_new": 32,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 653,
+        "story_clusters": 39,
+        "locally_rejected": 39,
+        "ai_stories": 0,
+        "published_stories": 0
+      },
+      "ai": null,
+      "source_failures": 0,
+      "quality_holds": 30
     }
   ]
 }

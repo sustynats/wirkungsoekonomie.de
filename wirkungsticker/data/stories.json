@@ -1,7 +1,348 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T05:04:50.707Z",
+  "updated_at": "2026-09-04T05:21:19.381Z",
   "stories": [
+    {
+      "story_id": "wt-e442d6ad81290406",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
+      "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
+      "source_summary": "Unicef hat laut der taz eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern veröffentlicht. Die Meldung nennt 21 untersuchte Länder und verweist auf Schätzungen der Organisation zu 20 Millionen betroffenen Mädchen und Jungen. Zudem heißt es, dass nahezu 60 Prozent der Fälle auf Social-Media-Plattformen stattgefunden hätten.\n\nDie taz berichtet außerdem, dass 15 Millionen Kinder und Jugendliche ungewollt sexuellen Inhalten ausgesetzt gewesen seien und 9 Millionen gegen ihren Willen zu sexuellen Gesprächen oder zum Teilen sexueller Bilder aufgefordert worden seien. Genannt werden auch Risiken und Folgen wie Angst, Scham, Verwirrung, Isolation sowie häufiger berichtete Suizidgedanken oder selbstverletzendes Verhalten. Deutschland gehörte nach dem Text nicht zu den untersuchten Ländern.",
+      "summary": "Unicef veröffentlicht laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Die Meldung stützt sich auf eine Untersuchung in 21 Ländern.",
+      "detail_summary": "Gesichert ist zunächst, dass Unicef nach der taz eine Untersuchung zu technologiegestützter sexueller Ausbeutung von Kindern veröffentlicht hat. Die Meldung nennt mehrere konkrete Zahlen: 20 Millionen Betroffene in 21 Ländern, nahezu 60 Prozent der Fälle auf Social-Media-Plattformen sowie 15 Millionen und 9 Millionen bei weiteren Teilindikatoren. Das ist journalistisch relevant, weil die Daten einen großen, grenzüberschreitenden Belastungsraum für Kinder im digitalen Umfeld beschreiben. Der Wirkpfad liegt vor allem in Plattformdesign, Kontaktanbahnung und missbräuchlicher Nutzung digitaler Räume; möglich sind Belastungen für Schutz, Gesundheit und Meldestrukturen. Die Evidenz bleibt jedoch auf eine sekundäre Darstellung der taz begrenzt, die Originalstudie liegt im gelieferten Material nicht direkt vor.",
+      "why_relevant": "Die Meldung liefert neue, zahlenbasierte Hinweise auf ein großes, international verteiltes Schutz- und Gesundheitsproblem im digitalen Raum.",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind laut Meldung sehr viele Kinder und Jugendliche; genannt werden psychische Belastungen und potenzielle Suizidrisiken."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug in den vorliegenden Quellen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Digitale Schutzräume, Plattformgestaltung und Meldesysteme berühren staatliche und gesellschaftliche Korrekturfähigkeit."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Betroffene Länder",
+            "value": "21",
+            "unit": "Länder",
+            "context": "In diesen Ländern wurden Untersuchungen durchgeführt."
+          },
+          {
+            "label": "Betroffene Kinder und Jugendliche",
+            "value": "20 Millionen",
+            "unit": "Personen",
+            "context": "So schätzt Unicef das Ausmaß laut Meldung."
+          },
+          {
+            "label": "Fälle auf Social Media",
+            "value": "nahezu 60 Prozent",
+            "unit": "Anteil",
+            "context": "So viele Fälle sollen sich dort ereignet haben."
+          }
+        ],
+        "affected_groups": [
+          "kinder_jugend",
+          "verbraucherinnen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T06:53:00.000Z",
+      "last_updated": "2026-09-04T05:23:06.391Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-83becedad84b8b907cdf",
+      "source_published_at": "2026-09-03T06:53:00.000Z",
+      "published_at": "2026-09-04T01:52:05.573Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Studie-von-Unicef/!6209752",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T06:53:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-d175d26e4635ba0a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-0d5b4e901588ae63-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-0d5b4e901588ae63-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-0d5b4e901588ae63-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
+      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
+      "source_summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Nach Angaben des Berichts ist der östliche Abschnitt nun für die Öffentlichkeit zugänglich; der westliche Teil soll später folgen. Der Park ist als grünes Band, Treffpunkt und Quartiersraum angelegt und soll zugleich als „kühlende Oase“ für künftige Hitzesommern dienen.\n\nDie Quelle nennt dafür eine gut 15 Kubikmeter fassende Zisterne, Rückhaltemulden und 181 als klimaresilient beschriebene Bäume. Außerdem verweist sie auf ein „Grünes Klassenzimmer“ sowie auf die geplante Größe von 12.500 Quadratmetern im eröffneten Abschnitt und 28.000 Quadratmetern im Endausbau. Messwerte zur tatsächlichen Kühl- oder Speicherwirkung werden nicht berichtet.",
+      "summary": "Der erste Teil des Schönhof-Viertelparks in Frankfurt ist eröffnet. Der Bericht beschreibt einen Park, der Regenwasser speichern und das Quartier kühlen soll.",
+      "detail_summary": "Gesichert ist die Eröffnung des ersten Parkteils im Frankfurter Schönhof-Viertel. Der Bericht beschreibt den östlichen Abschnitt als öffentlich zugänglich und nennt den weiteren Ausbau des Areals auf 28.000 Quadratmeter. Für die Wirkung ist das relevant, weil hier nicht nur eine Grünfläche entsteht, sondern mit Zisterne, Rückhaltemulden und klimaresilienten Bäumen ein konkreter Anpassungsversuch an Hitze und Starkregen verknüpft wird. Mögliche Folgen sind lokal bessere Aufenthaltsqualität, etwas mehr Wasserrückhalt und eine mildere Hitzebelastung im Quartier. Ob diese Effekte tatsächlich eintreten und in welchem Umfang, bleibt offen, weil Messdaten, Vergleichswerte und unabhängige Erfolgskontrollen fehlen. Die Beleglage trägt damit die Eröffnung und die geplante Wirklogik, aber noch keine belastbare Aussage über eingetretene Klimawirkung.",
+      "why_relevant": "Die Meldung beschreibt eine gebaute Quartiersinfrastruktur mit direktem Bezug zu Hitzeanpassung, Regenwassermanagement und öffentlichem Stadtraum. Das ist materiell, weil Planung und Nutzung des Quartiers langfristig beeinflusst werden können.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Der Park betrifft künftige Nutzung, Aufenthaltsqualität und Hitzeschutz für Bewohnerinnen, Kinder und Passanten im Quartier."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Regenwasserrückhalt, Bepflanzung und klimaresiliente Baumarten sind konkrete Anpassungsmaßnahmen mit lokalem Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht vor allem um Stadtplanung und öffentliche Fläche; ein unmittelbarer demokratischer Konflikt oder Entscheidungswechsel ist nicht belegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "eröffneter Abschnitt",
+            "value": "12.500",
+            "unit": "Quadratmeter",
+            "context": "Größe des nun zugänglichen Parkteils"
+          },
+          {
+            "label": "Endausbau",
+            "value": "28.000",
+            "unit": "Quadratmeter",
+            "context": "geplante Gesamtgröße des Parks"
+          },
+          {
+            "label": "Bäume",
+            "value": "181",
+            "unit": "Stück",
+            "context": "als klimaresilient beschriebene Bäume"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "kinder_jugend",
+          "kommunen",
+          "natur"
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "chance",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T15:27:13.000Z",
+      "last_updated": "2026-09-04T05:22:51.361Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "source_published_at": "2026-09-03T15:27:13.000Z",
+      "published_at": "2026-09-04T01:02:06.108Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T15:27:13.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-61d3420f0dd76f70",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kongresswahlen-trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-d76f70",
+      "title": "Kongresswahlen: Trump zieht im Streit um Briefwahl erneut vor Supreme Court",
+      "source_summary": "Mehrere deutschsprachige Berichte melden, dass die Trump-Regierung im Streit um verschärfte Briefwahlregeln erneut den Supreme Court angerufen hat. Nach den Berichten hatte eine Bundesrichterin das Vorhaben zuvor per einstweiliger Verfügung gestoppt. ZDFheute nennt außerdem, dass in den USA am 3. November die Midterms stattfinden und in North Carolina bereits an diesem Freitag erste Briefwahlunterlagen verschickt werden sollen.\n\nDie Berichte beschreiben den Streit als juristisches Tauziehen kurz vor den Zwischenwahlen. Nach ZDFheute soll der Oberste Gerichtshof die Trumps Briefwahl-Pläne erneut prüfen; in einem weiteren Ausschnitt wird erwähnt, dass die frühere Entscheidung einer unteren Instanz die Umsetzung der neuen Regeln vorerst blockiert habe. Zu einer endgültigen Entscheidung des Supreme Court enthalten die Quellen keine belastbare Aussage.",
+      "summary": "Die Trump-Regierung hat den Supreme Court im Streit um neue Briefwahlregeln erneut angerufen. Vor den Midterms bleibt offen, ob die blockierten Regeln noch vor der Wahl rechtlich geklärt werden.",
+      "detail_summary": "Gesichert ist aus den vorliegenden Quellen vor allem, dass die Trump-Regierung den Supreme Court erneut mit den Briefwahlregeln befasst und dass eine Bundesrichterin das Vorhaben zuvor per einstweiliger Verfügung gestoppt hatte. Die Berichte nennen außerdem den engen Zeitrahmen vor den Midterms und verweisen auf erste Briefwahlunterlagen in North Carolina. Das ist demokratiepolitisch relevant, weil sich damit der Zugang und die Verwaltung von Briefwahl im Vorfeld einer bundesweiten Wahl verändern könnten. Ein direkter Wirkpfad wäre eine spätere oder frühere Umsetzung der Regeln, mit möglichen Folgen für Wahlorganisation, Teilnahmemöglichkeiten und Streit über das Verfahren. Ob es dazu kommt, ist offen; die Quellen belegen weder eine endgültige Entscheidung des Supreme Court noch tatsächliche Effekte auf das Wahlverhalten.",
+      "why_relevant": "Der Streit betrifft unmittelbar die Regeln und den Ablauf der Briefwahl vor einer national wichtigen Wahl und damit einen Kernbereich demokratischer Korrekturfähigkeit.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell viele Wahlberechtigte und der Zugang zu einem zentralen Wahlverfahren kurz vor den Midterms."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es gibt in den Quellen keinen direkten Bezug zu Umwelt- oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Der Konflikt betrifft Wahlregeln, gerichtliche Kontrolle und die praktische Durchführung einer bundesweiten Abstimmung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Datum der Midterms",
+            "value": "3. November",
+            "unit": "Datum",
+            "context": "Von ZDFheute genannter Wahltermin"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-03T21:07:32.000Z",
+      "last_updated": "2026-09-04T05:08:17.878Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-0059d4df349b8d2350cf",
+      "source_published_at": "2026-09-03T21:08:30.000Z",
+      "published_at": "2026-09-04T01:27:46.072Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Supreme Court den Eilantrag annimmt oder inhaltlich entscheidet",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Gerichtsmitteilung oder neuer Beschluss zum Antrag",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-445dc63529716fed",
+          "announced_at": "2026-09-04T01:03:00.000Z",
+          "follow_up_date": "2026-09-11T05:08:17.878Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/kongresswahlen--trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-38205426.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T22:51:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-kongresswahlen-16015963.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T21:08:30.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-trump-streit-briefwahl-supreme-court-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:03:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3c8762489a80692b",
       "title_image": {
@@ -2241,107 +2582,6 @@
       ]
     },
     {
-      "story_id": "wt-e442d6ad81290406",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
-      "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
-      "source_summary": "Die taz berichtet über eine Unicef-Untersuchung zu sexueller Ausbeutung von Kindern im Netz. Laut Text wurde die Studie in 21 Ländern durchgeführt; Deutschland gehörte nicht dazu. Der Bericht nennt mehrere Zahlen zu Betroffenheit und zu den Plattformen, auf denen ein großer Teil der Fälle stattgefunden haben soll. Außerdem wird beschrieben, dass Unicef vor psychischen Folgen warnt und auf Forschungsinterviews verweist.\n\nDer Text zitiert Unicef mit dem Hinweis, dass viele Kinder Erfahrungen nicht melden. Genannt werden auch Aussagen von Unicef-Exekutivdirektorin Catherine Russell zu Belastungen und zur Schwierigkeit, Hilfe zu suchen.",
-      "summary": "Unicef meldet laut taz neue Zahlen zu sexueller Ausbeutung von Kindern im Netz. Genannt werden Betroffenheit in 21 Ländern und hohe Anteile auf sozialen Plattformen.",
-      "detail_summary": "Der bestbelegte Kern der Meldung ist eine von Unicef ausgewertete Untersuchung in 21 Ländern, die laut taz von einer deutlich höheren Verbreitung sexueller Ausbeutung im Internet ausgeht als bisher angenommen. Der Bericht nennt konkrete Zahlen zu Betroffenheit, darunter „jedes fünfte Kind“ sowie weitere Teilbefunde zu ungewollten Inhalten, Aufforderungen zu sexuellen Handlungen und dem Weiterverbreiten von Bildern. Für die Nachricht relevant ist vor allem der mögliche Hinweis auf ein breites, plattformgebundenes Risikofeld, das Kinder in alltäglichen digitalen Umgebungen trifft. Daraus ergibt sich ein Wirkpfad über Plattformdesign, Kontaktanbahnung und Vertrauensausnutzung, der Schutzmechanismen, Moderation und Prävention berühren kann. Mögliche Folge sind verstärkte politische und regulatorische Debatten über Jugendschutz und Plattformpflichten. Die Evidenz bleibt hier jedoch vorläufig, weil nur eine journalistische Sekundärquelle vorliegt und die Originalstudie im gelieferten Material nicht direkt geprüft werden kann.",
-      "why_relevant": "Die Meldung betrifft eine große Zahl potenziell Betroffener, verweist auf digitale Schutz- und Regulierungsfragen und kann Debatten über Plattformpflichten, Prävention und Kinderschutz beeinflussen.",
-      "topic": [
-        "Digitalisierung"
-      ],
-      "status": "erste Daten",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die berichteten Zahlen betreffen Kinder direkt und deuten auf ein relevantes Risiko für Schutz, Gesundheit und Teilhabe im digitalen Raum."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Es ist kein unmittelbarer Umwelt- oder Klimabezug aus den Quellen erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Meldung berührt Regulierung von Plattformen, Schutzstandards und die demokratische Kontrolle digitaler Räume."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Betroffene Länder",
-            "value": "21",
-            "unit": "Länder",
-            "context": "In diesen Ländern wurde die Untersuchung durchgeführt"
-          },
-          {
-            "label": "Anteil der Kinder",
-            "value": "jedes fünfte",
-            "unit": "Kind",
-            "context": "Laut Bericht innerhalb eines Jahres im Netz betroffen"
-          }
-        ],
-        "affected_groups": [
-          "kinder_jugend",
-          "verbraucherinnen",
-          "staat"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T06:53:00.000Z",
-      "last_updated": "2026-09-04T01:52:05.573Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-83becedad84b8b907cdf",
-      "source_published_at": "2026-09-03T06:53:00.000Z",
-      "published_at": "2026-09-04T01:52:05.573Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Studie-von-Unicef/!6209752",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T06:53:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-3a01df57b8cfe75f",
       "title_image": {
         "mode": "impact_card",
@@ -2435,133 +2675,6 @@
           "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
           "source_type": "media_rss",
           "published_at": "2026-09-04T01:06:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-61d3420f0dd76f70",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "kongresswahlen-trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-d76f70",
-      "title": "Kongresswahlen: Trump zieht im Streit um Briefwahl erneut vor Supreme Court",
-      "source_summary": "Mehrere deutsche Nachrichtenangebote melden übereinstimmend, dass die Trump-Regierung im Streit um neue Regeln für die Briefwahl erneut den Supreme Court angerufen hat. Hintergrund ist eine zuvor von einer unteren Instanz gestoppte Neuregelung, gegen die nun per Eilantrag vorgegangen werden soll.\n\nZDFheute ergänzt, dass in North Carolina bereits an diesem Freitag erste Briefwahlunterlagen verschickt werden sollen. Außerdem nennt der Bericht den 3. November als Termin der Midterms; dann werden etwa ein Drittel des Senats und das komplette Repräsentantenhaus neu gewählt. Eine Bundesrichterin hatte die Pläne zuvor per einstweiliger Verfügung gebremst und sie als wahrscheinlich verfassungswidrig beschrieben.",
-      "summary": "Die Trump-Regierung hat im Streit um neue Briefwahlregeln erneut den Supreme Court angerufen. Der Fall betrifft das Wahlverfahren kurz vor den Midterms und ist damit demokratiepolitisch relevant.",
-      "detail_summary": "Gesichert ist vor allem der erneute Gang der Trump-Regierung vor den Supreme Court im Streit um neue Briefwahlregeln. Nach den vorliegenden Berichten soll damit eine Entscheidung einer unteren Instanz ausgesetzt werden, die die Umsetzung der Pläne bislang stoppt. Der Vorgang ist relevant, weil er unmittelbar das Wahlverfahren kurz vor den Midterms berührt und damit die Bedingungen der Stimmabgabe verändern kann. Als möglicher Wirkpfad steht eine Verschiebung von Zugänglichkeit, Kontrolle und Tempo der Briefwahl im Raum, mit Folgen für Organisation, Vertrauen und gegebenenfalls die Wahlteilnahme. Offen bleibt nach den vorliegenden Texten, wie der Supreme Court entscheidet und ob die Regelung tatsächlich in Kraft kommt. Eine belastbare Bewertung der Wirkungen ist deshalb ex ante nur begrenzt möglich.",
-      "why_relevant": "Der Vorgang betrifft kurz vor den Midterms die Regeln der Briefwahl und damit einen zentralen demokratischen Prozess. Er kann unmittelbar Zustände bei Zugänglichkeit, Kontrolle und Fristen der Stimmabgabe verändern.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Wählerinnen und Wähler unmittelbar über die Ausgestaltung der Briefwahl; mögliche Folgen reichen bis zur praktischen Zugänglichkeit der Stimmabgabe."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein erkennbarer direkter Bezug zu Umwelt- oder Klimawirkungen in den Quellen."
-        },
-        "democracy": {
-          "relevance": "sehr hoch",
-          "rationale": "Der Streit betrifft Wahlregeln, Gerichtsverfahren und damit die demokratische Korrekturfähigkeit vor einer bundesweiten Wahl."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Datum der Midterms",
-            "value": "3. November",
-            "unit": "Datum",
-            "context": "Termin der US-Zwischenwahlen"
-          },
-          {
-            "label": "Erste Briefwahlunterlagen",
-            "value": "Freitag",
-            "unit": "Zeitpunkt",
-            "context": "Beginn des Versands in North Carolina"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "risiko"
-        }
-      },
-      "first_seen": "2026-09-03T21:07:32.000Z",
-      "last_updated": "2026-09-04T01:27:46.072Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-0059d4df349b8d2350cf",
-      "source_published_at": "2026-09-03T21:08:30.000Z",
-      "published_at": "2026-09-04T01:27:46.072Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "stern-schlagzeilen"
-            ],
-            "reason": "shared_wording_possible_syndication"
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/kongresswahlen--trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-38205426.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T22:51:46.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-kongresswahlen-16015963.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:08:30.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/ausland/usa-trump-streit-briefwahl-supreme-court-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:03:00.000Z",
           "primary_source": false
         }
       ]
@@ -2906,82 +3019,6 @@
           "url": "https://taz.de/Demografie-und-Familienplanung/!6209487",
           "source_type": "media_rss",
           "published_at": "2026-09-02T16:48:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-d175d26e4635ba0a",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-0d5b4e901588ae63-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-0d5b4e901588ae63-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-0d5b4e901588ae63-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
-      "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-      "source_summary": "Im Schönhof-Viertel im Frankfurter Westen ist der erste Teil eines neuen Parks offiziell eröffnet worden. Die Anlage soll nicht nur Erholung bieten, sondern auch Regenwasser aufnehmen und die Umgebung kühlen; bei Planung und Bepflanzung seien Klimawandel, Hitzebelastung und Biodiversität mitgedacht worden.\n\nDer zunächst geöffnete östliche Abschnitt umfasst 12.500 Quadratmeter, später soll der Park auf 28.000 Quadratmeter wachsen. Genannt werden außerdem eine Zisterne, Rückhaltemulden, klimaresiliente Bäume, ein Grünes Klassenzimmer und sichere Wege für künftige Schülerinnen und Schüler. Für das Viertel werden 3.500 bis 4.000 Einwohnerinnen und Einwohner in naher Zukunft erwartet.",
-      "summary": "Im Frankfurter Schönhof-Viertel ist der erste Teil eines neuen Parks eröffnet worden. Die Anlage soll Regenwasser speichern, kühlen und als Quartiersraum dienen.",
-      "detail_summary": "Gesichert ist zunächst die Eröffnung des ersten Parkteils im Schönhof-Viertel mit einer Fläche von 12.500 Quadratmetern. Die Quelle beschreibt den Park als Teil einer klimaangepassten Quartiersentwicklung mit Zisterne, Rückhaltemulden, klimaresilienten Bäumen und einem Grünen Klassenzimmer. Für die Umweltwirkung ist das relevant, weil hier konkrete bauliche Elemente genannt werden, die Hitze und Starkregen lokal abmildern sollen. Der mögliche Wirkpfad reicht von besserer Wasseraufnahme und Verschattung bis zu höherer Aufenthaltsqualität im Quartier. Ob und in welchem Ausmaß das tatsächlich eintritt, bleibt offen, weil Messdaten zur Kühlleistung, Wasserrückhaltung oder Nutzung fehlen. Die Meldung ist damit eine belastbare Erstinformation über eine laufende städtebauliche Umsetzung, nicht über bereits nachgewiesene Wirkung.",
-      "why_relevant": "Ein neuer Quartierspark mit expliziter Klimaanpassungsfunktion verändert lokale Infrastruktur, Wasserhaushalt und Hitzebelastung in einem wachsenden Wohngebiet.",
-      "topic": [
-        "Klima"
-      ],
-      "status": "laufende Umsetzung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Der Park betrifft künftige Bewohnerinnen und Bewohner sowie Schulwege und Aufenthaltsqualität im Quartier."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Genannt werden Regenwasserspeicherung, Verschattung und klimaresiliente Bepflanzung als lokale Anpassungsmaßnahmen."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer demokratischer Effekt wird in der Quelle nicht beschrieben; relevant ist eher die kommunale Planung."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-03T15:27:13.000Z",
-      "last_updated": "2026-09-04T01:02:06.108Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-8b84ae4650626fa86f6f",
-      "source_published_at": "2026-09-03T15:27:13.000Z",
-      "published_at": "2026-09-04T01:02:06.108Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T15:27:13.000Z",
           "primary_source": false
         }
       ]
