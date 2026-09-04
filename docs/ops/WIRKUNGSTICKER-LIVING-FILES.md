@@ -36,6 +36,13 @@ Die Migration ist idempotent. Vor dem Release wird sie auf dem jeweils neuesten 
 
 ## Verwandte Nachrichten
 
+Push verwendet den Feed des erfolgreich veröffentlichten Artefakts, nicht die
+Zähler des zuletzt abgeschlossenen Importlaufs: Ein späterer unveränderter Lauf
+darf die Benachrichtigung einer noch wartenden Veröffentlichung nicht unterdrücken.
+Oracle speichert bereits gesendete Publikationskennzeichen und Teilzustellungen.
+Bild-/App-Revisionen ändern dieses Kennzeichen nicht. Ein fehlendes Nachrichtendatum
+wird nicht durch die aktuelle Uhrzeit ersetzt.
+
 Detailseiten zeigen höchstens fünf passende aktive Akten. Spezifische Gegenstandsgruppen oder mehrere seltene gemeinsame Begriffe mit Titelüberlappung sind nötig. Eine gemeinsame Oberrubrik wie Energie genügt nicht. Es gibt keine Mindestfüllung: bei fehlenden passenden Akten entfällt der Block. Historische, zurückgestellte und eigene Akten sind ausgeschlossen. Verweise werden bei jedem regulären Build neu berechnet, ohne zusätzliche KI-Kosten; der Block ist vom Suchvolltext ausgeschlossen, damit fremde Überschriften nicht die Akte in der Suche verfälschen.
 
 ## Abnahme dieses Backlogs
