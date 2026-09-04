@@ -1,7 +1,993 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T18:21:48.041Z",
+  "updated_at": "2026-09-04T18:36:20.968Z",
   "stories": [
+    {
+      "story_id": "wt-31724816547fc87d",
+      "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
+      "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
+      "first_seen": "2026-09-03T19:03:18.000Z",
+      "last_updated": "2026-09-04T18:38:30.605Z",
+      "published_at": "2026-09-04T01:00:39.627Z",
+      "updated_at": "2026-09-04T18:38:30.605Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+          "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
+          "summary": "Rekordpreise an der Zapfsäule und gleichzeitig mehr E-Autos auf den Straßen: Das verändert langfristig die Rechnung für den Staat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:03:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8",
+          "source_item_id": "4c8d367548f84b1ad48ef1d5229608422141c82930ca37dae093856f90520f0d",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T19:03:18.000Z",
+          "ingested_at": "2026-09-04T18:21:48.041Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-31724816547fc87d-v3-claim-1",
+          "story_id": "wt-31724816547fc87d",
+          "claim": "Im August erreichte Super E10 im Monatsdurchschnitt einen Höchstwert; Diesel lag noch höher als E10.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "excerpt_hash": "c76c7deae41a4792d4d6",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "excerpt_hash": "ead17dfa44341ed6dca6",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:38:30.605Z"
+        },
+        {
+          "claim_id": "wt-31724816547fc87d-v3-claim-2",
+          "story_id": "wt-31724816547fc87d",
+          "claim": "Im August kamen 68.930 rein elektrische Neuwagen auf die Straße, das waren rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "excerpt_hash": "9be20cfbdd8fcf8844fe",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:38:30.605Z"
+        },
+        {
+          "claim_id": "wt-31724816547fc87d-v3-claim-3",
+          "story_id": "wt-31724816547fc87d",
+          "claim": "Der WDR beschreibt, dass der Wandel den Bund langfristig Geld kostet und über Kfz-Steuer sowie Energiesteuer und Mehrwertsteuer auf Tanken Einnahmen wegfallen könnten.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "excerpt_hash": "6595237cf2b7cbbf2750",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "excerpt_hash": "b2199db4a16ecc3d62d1",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:38:30.605Z"
+        },
+        {
+          "claim_id": "wt-31724816547fc87d-v3-claim-4",
+          "story_id": "wt-31724816547fc87d",
+          "claim": "Der ADAC hält die alte Regel, wonach sich ein Diesel ab 15.000 Kilometern im Jahr lohnt, nicht mehr für allgemein gültig.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "excerpt_hash": "60159125ccb50bc99d43",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "excerpt_hash": "6b35ba071bf738f3c612",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:38:30.605Z"
+        }
+      ],
+      "event_id": "event-f2fa5659b171e222bce8",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T18:38:15.627Z",
+      "publish_ready_at": "2026-09-04T18:38:30.605Z",
+      "news_status": "developing",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob sich der Anteil rein elektrischer Neuzulassungen in den Folgemonaten weiter erhöht.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw an allen Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-203198b85d8b6d81",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T01:00:39.627Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob sich die Steuer- und Zulassungsentwicklung in den Folgemonaten fortsetzt",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue Monatswerte zu Spritpreisen und E-Auto-Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-eee5a48af6a85c18",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T10:23:05.308Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Bleibt der Anteil rein elektrischer Neuzulassungen über mehrere Monate auf hohem Niveau?",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw-Neuzulassungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b8fe82b2d2be3b18",
+          "announced_at": "2026-09-03T19:03:18.000Z",
+          "follow_up_date": "2026-09-11T18:38:30.605Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-a54b596f48e102d4-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "a54b596f48e102d41beb42686a92b6c71be070b7b645aa9df6dda6d95874a91b"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-bc27cfb11cd12dac-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "bc27cfb11cd12dac33a4daf51e9e8960e9517763139bd07bacb309d37c84059e"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-74fb51047f3096d9-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "74fb51047f3096d9246c481dc3e6ec8114aaed6a815883d00f291f47e7d79c6b"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-33e0e250569832b7-source.png",
+          "sha256": "33e0e250569832b77977248c283ac8cf87e5b4b3a7b18b1ed592fcd72cd8a29e",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T10:15:55.000Z"
+        },
+        "fingerprint": "540308812363ce07e141e0f62b1bea12e064c498d855cdf22788928d08508d66",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T18:38:49.086Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Die WDR-Wirtschaftsberichterstattung meldet Rekordpreise an der Zapfsäule und zugleich steigende E-Auto-Zulassungen. Für August nennt der Beitrag beim Super E10 einen Monatsdurchschnitt auf Höchststand; Diesel sei noch teurer gewesen als E10. Zugleich wird beschrieben, dass im August 68.930 rein elektrische Neuwagen zugelassen wurden, rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag ordnet das als Wandel auf dem Neuwagenmarkt und als Verschiebung bei den Kosten ein. Er verweist auf Förderung für reine Elektroautos, auf die befristete Kfz-Steuerbefreiung sowie darauf, dass Verbrenner dem Staat weiter Einnahmen bringen. Zusätzlich werden mögliche künftige Modelle wie eine fahrleistungsabhängige Abgabe oder eine Ladestromsteuer erwähnt.",
+      "analysis": {
+        "story_id": "wt-31724816547fc87d",
+        "news_status": "developing",
+        "publication_depth": "deepened",
+        "summary": "Die WDR-Meldung verbindet Rekord-Spritpreise mit stark steigenden E-Auto-Zulassungen. Sie beschreibt zugleich mögliche Folgen für Kaufentscheidungen und Staatseinnahmen.",
+        "detail_summary": "Gesichert belegt ist vor allem eine gleichzeitige Bewegung bei Preisen und Neuzulassungen: Super E10 erreichte im August einen Monatsdurchschnitt auf Höchststand, Diesel lag sogar darüber, und reine Elektroautos kamen auf 68.930 Neuzulassungen. Für die Einordnung ist das relevant, weil sich damit Kostenrelationen für Autofahrende und Einnahmeströme des Staates verschieben können. Der Wirkpfad verläuft über Tankkosten, Kaufentscheidungen und steuerliche Regeln, nicht über eine schon eingetretene Nettowirkung. Als mögliche Folge nennt die Quelle mehr Attraktivität von E-Autos und zugleich langfristig sinkende Einnahmen aus Kfz- und Energiesteuer. Die Evidenz bleibt jedoch journalistisch aus einer Quelle; unabhängige Bestätigung für die Zahlen liegt hier nicht vor.",
+        "why_relevant": "Die Meldung beschreibt eine materielle Verschiebung bei Mobilitätskosten, Neuzulassungen und potenziellen Staatseinnahmen. Das betrifft Haushalte, Unternehmen und fiskalische Regeln zugleich.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Kraftstoffpreise und Antriebswahl beeinflussen laufende Mobilitätskosten vieler Haushalte und Unternehmen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Mehr E-Neuzulassungen und die Verschiebung von Verbrennern zu Elektroantrieben können den Emissionspfad beeinflussen, ohne dass die Nettofolge hier schon beziffert ist."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Diskussion um Kfz-Steuer, Energiesteuer und mögliche neue Abgaben betrifft fiskalische Regeln und politische Verteilungskonflikte."
+        },
+        "importance": "hoch",
+        "impact_potential": "Höhere Spritpreise können die Nachfrage nach Verbrennern schwächen, E-Autos relativ attraktiver machen und mittelbar Steuer- und Abgabenregeln unter Druck setzen.",
+        "impact_risks": [
+          "Schnell steigende Kosten können Mobilität für Menschen mit geringem Budget verteuern.",
+          "Sinkende Mineralölsteuer- und Energiesteuereinnahmen können fiskalische Lücken vergrößern.",
+          "Neue Abgabenmodelle könnten Verteilungskonflikte auslösen."
+        ],
+        "mechanisms": [
+          "Preisimpuls an der Zapfsäule",
+          "Veränderte Kostenrechnung beim Fahrzeugkauf",
+          "Steuerliche Bevorzugung von E-Autos",
+          "Diskussion über neue fahrleistungsabhängige Abgaben"
+        ],
+        "first_order": [
+          "Mehr Aufmerksamkeit für Kostenvergleich zwischen Verbrenner und E-Auto",
+          "Potenzielle Verschiebung bei Neuzulassungen",
+          "Hinweis auf sinkende Verbrenner-Einnahmen für den Staat"
+        ],
+        "second_order": [
+          "Mögliche Anpassung von Förder- und Steuerregeln",
+          "Druck auf Ladeinfrastruktur und Flottenstrategien"
+        ],
+        "third_order": [
+          "Langfristige Umstellung des Fahrzeugbestands",
+          "Neubewertung der Finanzierung von Straßen und Energieverbrauch"
+        ],
+        "systemic_relevance": "Die Meldung berührt den Fahrzeugmarkt, die staatliche Einnahmenseite und die Steuerungslogik der Verkehrswende in einem einzigen Preis- und Nachfrageimpuls.",
+        "transformation_potential": "Mittel bis hoch, weil sich Kostenrelationen und Förderanreize für Antriebe verschieben können.",
+        "resilience": "Offen; belastbar ist bisher nur die gleichzeitige Preis- und Zulassungsbewegung, nicht die Dauer des Trends.",
+        "side_effects": [
+          "Höhere Spritkosten können Pendler und Vielfahrer überproportional treffen.",
+          "Eine stärkere E-Auto-Nachfrage kann Lade- und Netzanforderungen erhöhen."
+        ],
+        "uncertainties": [
+          "Es bleibt offen, ob die Preisbewegung anhält.",
+          "Die Quelle belegt keine unabhängige Zweitbestätigung.",
+          "Die Netto-Wirkung auf Staat, Emissionen und Verkehrswahl ist ex ante nicht bezifferbar."
+        ],
+        "evidence_level": "single journalistische Quelle mit konkreten Zahlen und O-Tönen; keine unabhängige Bestätigung im Datensatz",
+        "attribution": "Die Darstellung stammt aus der WDR-Berichterstattung; Aussagen von ADAC und VCD werden dort zitiert.",
+        "watch_next": [
+          "Weitere Monatsdaten zu Spritpreisen und Neuzulassungen",
+          "Entscheidungen zu Steuer- oder Abgabenmodellen",
+          "Entwicklung der Ladeinfrastruktur"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7",
+          "Agenda 2030/SDG 9",
+          "Agenda 2030/SDG 11",
+          "Agenda 2030/SDG 13"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung bringt konkrete Augustzahlen zu Spritpreisen und E-Auto-Zulassungen sowie deren fiskalische Einordnung. Das ist für Haushalte, Marktanreize und Staatseinnahmen materiell, auch wenn die Beleglage nur eine Quelle umfasst."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T01:00:39.627Z",
+          "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
+          "source_summary": "Die WDR-Quelle meldet Rekordpreise an der Zapfsäule und verbindet sie mit der Frage, ab wann sich ein Elektroauto lohnt. Genannt werden Daten zum August: Super E10 sei im Monatsdurchschnitt so teuer gewesen wie nie zuvor, Diesel habe im Schnitt 2,223 Euro je Liter gekostet und damit mehr als E10 mit 2,145 Euro.\n\nZugleich berichtet der Beitrag von einem starken Anstieg bei Elektroautos: Fast jedes dritte im August neu zugelassene Auto fahre rein elektrisch, 68.930 Fahrzeuge seien neu auf die Straße gekommen. Der Text verweist außerdem auf staatliche Förderung, die Verlängerung der Kfz-Steuerbefreiung und darauf, dass der wachsende Anteil von E-Autos langfristig die Steuereinnahmen des Staates verändern könne.",
+          "analysis": {
+            "story_id": "wt-31724816547fc87d",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Die WDR-Quelle beschreibt Rekordpreise für Sprit und einen starken Anstieg bei E-Auto-Neuzulassungen. Sie ordnet das als mögliche Verschiebung bei Kaufentscheidungen und Staatseinnahmen ein.",
+            "detail_summary": "Gesichert berichtet die Quelle von Rekordpreisen an der Zapfsäule und von einem starken Zuwachs bei rein elektrischen Neuzulassungen im August. Das ist relevant, weil sich damit kurzfristig die Kostenabwägung für Autokäufe und mittelfristig die Zusammensetzung des Fahrzeugbestands verschieben kann. Der mögliche Wirkpfad verläuft über Kaufentscheidungen, Fahrzeugmix und später über veränderte Einnahmen aus Kfz-, Energie- und Mehrwertsteuer. Als mögliche Folge nennt der Beitrag eine dauerhafte Verschiebung zugunsten von E-Autos sowie Debatten über neue Finanzierungsmodelle wie Ladestromsteuer oder fahrleistungsabhängige Modelle. Offen bleibt, wie stabil die Preisrelationen sind und ob daraus tatsächlich ein breiterer Strukturwandel entsteht. Die Evidenzlage ist hier zunächst auf eine journalistische Sekundärquelle begrenzt.",
+            "why_relevant": "Die Meldung verbindet zwei materiell relevante Zustandsänderungen: sehr hohe Kraftstoffpreise und eine spürbare Verschiebung im Neuzulassungsmix hin zu Elektroautos. Daraus ergeben sich potenziell Folgen für Haushaltskosten, Marktanteile, Steuereinnahmen und künftige Verkehrsfinanzierung.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Für Haushalte und Beschäftigte im Verkehrsumfeld kann die Preisrelation zwischen Sprit und E-Auto die Kauf- und Nutzungskosten beeinflussen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Ein höherer Anteil rein elektrischer Neuzulassungen kann den Antriebsmix verschieben; die konkrete Umweltwirkung bleibt ex ante aber offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Quelle thematisiert mögliche Änderungen bei staatlichen Einnahmen und künftigen Abgabemodellen, also einen relevanten Ordnungs- und Verteilungsaspekt."
+            },
+            "importance": "mittel",
+            "impact_potential": "Höhere Spritpreise und mehr E-Autos können Kaufentscheidungen, Flottenmix und langfristig auch die staatliche Einnahmestruktur verändern.",
+            "impact_risks": [
+              "Steigende Betriebskosten für Verbrenner können einzelne Gruppen stärker belasten.",
+              "Sinkende Einnahmen aus Kraftstoffsteuern erhöhen den Druck auf neue Abgabenmodelle."
+            ],
+            "mechanisms": [
+              "Preisvergleich zwischen Tanken und Stromladen beeinflusst Fahrzeugwahl.",
+              "Veränderter Fahrzeugbestand verschiebt Steuer- und Abgabenbasis des Staates."
+            ],
+            "first_order": [
+              "Autokäufer vergleichen Diesel, Benzin und E-Auto stärker nach Gesamtkosten."
+            ],
+            "second_order": [
+              "Mehr E-Autos können die Einnahmen aus Energie- und Mehrwertsteuer beim Tanken mindern."
+            ],
+            "third_order": [
+              "Politischer Streit über neue Verkehrsabgaben oder eine Umstellung der Fahrzeugfinanzierung kann zunehmen."
+            ],
+            "systemic_relevance": "Der Vorgang betrifft nicht nur einzelne Autofahrer, sondern einen breiteren Strukturwandel im Verkehrs- und Steuersystem.",
+            "transformation_potential": "Beobachtbar ist ein möglicher Übergang von fossilen zu elektrischen Antrieben, der mittelbar Finanzierung und Marktstruktur beeinflussen kann.",
+            "resilience": "Offen bleibt, ob Förderungen, Ladeinfrastruktur und Preisniveau den Trend stabilisieren oder wieder abbremsen.",
+            "side_effects": [
+              "Mögliche Verschiebung der Steuerlast auf andere Abgabenarten.",
+              "Unterschiedliche Betroffenheit je nach Fahrprofil und Wohnort."
+            ],
+            "uncertainties": [
+              "Die Quelle liefert nur eine journalistische Darstellung ohne unabhängige Zweitbestätigung.",
+              "Ob der Trend anhält, bleibt offen.",
+              "Die tatsächliche Nettowirkung auf Staat und Umwelt ist ex ante noch nicht bezifferbar."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Die zentralen Fakten stammen aus einer einzelnen WDR-Berichterstattung; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Entwickeln sich E-Auto-Neuzulassungen und Kraftstoffpreise in den nächsten Monaten weiter ähnlich?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, 9, 11, 12, 13"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält aktuelle Preis- und Zulassungsdaten mit möglicher Wirkung auf Kaufentscheidungen, Steuerbasis und Verkehrsfinanzierung; die Quelle ist jedoch nur eine journalistische Einzelquelle."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "E10 im Monatsdurchschnitt",
+                  "value": "2,145",
+                  "unit": "Euro je Liter",
+                  "context": "Monatsdurchschnitt für Super E10 im August"
+                },
+                {
+                  "label": "Diesel im August",
+                  "value": "2,223",
+                  "unit": "Euro je Liter",
+                  "context": "Durchschnittspreis für Diesel im August"
+                },
+                {
+                  "label": "rein elektrisch",
+                  "value": "68.930",
+                  "unit": "Neuzulassungen",
+                  "context": "Zahl neuer rein elektrischer Pkw im August"
+                }
+              ],
+              "affected_groups": [
+                "haushalte",
+                "unternehmen",
+                "staat"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-31724816547fc87d-v1-claim-1",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Die WDR-Quelle berichtet von Rekordpreisen bei Benzin und Diesel und stellt die Frage, ob sich ein Elektroauto inzwischen eher lohnt.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "ae729d0cf42c28b1ac7c",
+                  "checked_at": "2026-09-04T01:00:39.627Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:00:39.627Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v1-claim-2",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Im August kostete Super E10 im Monatsdurchschnitt so viel wie nie zuvor, und Diesel war mit 2,223 Euro je Liter teurer als E10 mit 2,145 Euro.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "c76c7deae41a4792d4d6",
+                  "checked_at": "2026-09-04T01:00:39.627Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "ead17dfa44341ed6dca6",
+                  "checked_at": "2026-09-04T01:00:39.627Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:00:39.627Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v1-claim-3",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Fast jedes dritte im August neu zugelassene Auto fuhr rein elektrisch; die Zahl lag bei 68.930 und damit rund 32 Prozent aller Neuzulassungen.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "9be20cfbdd8fcf8844fe",
+                  "checked_at": "2026-09-04T01:00:39.627Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:00:39.627Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v1-claim-4",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Der WDR beschreibt, dass der Wandel zu mehr E-Autos die langfristige Rechnung des Staates verändert, weil Verbrenner über Kfz- und Energiesteuern Einnahmen bringen.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "fa0e991f0b872a64db90",
+                  "checked_at": "2026-09-04T01:00:39.627Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "6595237cf2b7cbbf2750",
+                  "checked_at": "2026-09-04T01:00:39.627Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "b2199db4a16ecc3d62d1",
+                  "checked_at": "2026-09-04T01:00:39.627Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T01:00:39.627Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T10:23:05.308Z",
+          "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
+          "source_summary": "Der WDR berichtet über Rekordpreise für Benzin und Diesel an der Zapfsäule und über einen zugleich starken Anstieg bei reinen Elektroautos. Für August nennt der Text im Monatsdurchschnitt einen neuen Höchststand bei Super E10; Diesel sei sogar teurer als E10 gewesen. Zugleich seien 68.930 reine E-Autos neu zugelassen worden, etwa 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag verknüpft diese Entwicklung mit der Finanzierung des Staates: Verbrenner brächten Einnahmen über Kfz-Steuer sowie Energie- und Mehrwertsteuer beim Tanken, während mit wachsender E-Mobilität Einnahmen sinken könnten. Als mögliche Reaktionen nennt der Text eine Ladestromsteuer sowie ein fahrleistungsabhängiges und nach CO₂-Ausstoß gestaffeltes System. Außerdem zitiert der Beitrag ADAC-Positionen zur Kostenfrage bei Diesel und E-Auto sowie Hinweise auf Ladeinfrastruktur und Reichweite.",
+          "analysis": {
+            "story_id": "wt-31724816547fc87d",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Rekordpreise für Benzin und Diesel treffen auf stark steigende E-Auto-Zulassungen. Der WDR sieht darin eine Verschiebung bei Kosten und möglichen Staatseinnahmen.",
+            "detail_summary": "Gesichert ist laut WDR, dass Super E10 im August so teuer war wie nie zuvor und Diesel sogar über E10 lag. Zugleich wurden 68.930 reine Elektroautos neu zugelassen, was der Beitrag als rund 32 Prozent aller Neuzulassungen und als 75 Prozent Plus gegenüber dem Vorjahr beschreibt. Für die Einordnung ist das relevant, weil sich damit Kaufanreize, Kostenvergleiche und steuerliche Einnahmeströme im Verkehrssektor verschieben können. Der Wirkpfad verläuft über höhere Kraftstoffpreise, veränderte Fahrzeugwahl und sinkende Einnahmen aus Energie- und Kfz-Steuer bei wachsender E-Mobilität. Mögliche Folge ist, dass Politik und Verwaltung über neue Abgaben- oder Finanzierungsmodelle nachdenken. Belastbar belegt ist hier aber nur die Richtung der Entwicklung; die tatsächliche Netto-Wirkung auf Staat, Haushalte und Emissionen bleibt offen.",
+            "why_relevant": "Die Meldung berührt Kaufentscheidungen, Steueraufkommen und die Umstellung des Verkehrssektors und damit mehrere materielle Zustände zugleich.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Die Spritpreise und die E-Auto-Zulassungen beeinflussen Alltagskosten, Fahrzeugwahl und mögliche Belastungen für Haushalte."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Mehr E-Autos können den Antriebswechsel beschleunigen; der tatsächliche Klimaeffekt bleibt ohne weitere Daten offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Text berührt die Ausgestaltung künftiger Abgaben und damit steuerpolitische Prioritäten und Verteilungseffekte."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Entwicklung kann Kaufentscheidungen, Kraftstoffnachfrage und die künftige Ausgestaltung von Steuer- und Abgaberegeln im Verkehr beeinflussen.",
+            "impact_risks": [
+              "Höhere Spritkosten können Mobilitätskosten für Verbrennernutzer erhöhen.",
+              "Sinkende Einnahmen aus Kraftstoffverbrauch können neue Verteilungs- und Finanzierungsfragen auslösen.",
+              "Eine mögliche Ladestrom- oder Kilometerabgabe könnte E-Mobilität anders belasten als heute."
+            ],
+            "mechanisms": [
+              "Preissteigerungen verändern die relative Attraktivität von Verbrennern und E-Autos.",
+              "Steuerbasen verschieben sich von Kraftstoffverbrauch hin zu Strom- oder Nutzungsmodellen.",
+              "Politische Debatten über Ersatzfinanzierung werden wahrscheinlicher."
+            ],
+            "first_order": [
+              "Mehr E-Auto-Käufe bei anhaltend hohen Kraftstoffpreisen sind plausibel.",
+              "Der Staat verliert bei wachsender E-Mobilität perspektivisch Teile der mineralölbezogenen Einnahmen."
+            ],
+            "second_order": [
+              "Es kann Druck entstehen, neue Verkehrsabgaben oder Lenkungsmodelle zu prüfen.",
+              "Hersteller und Händler könnten ihre Modell- und Preispolitik stärker auf Elektromobilität ausrichten."
+            ],
+            "third_order": [
+              "Eine breitere Umstellung der Flotten könnte Infrastruktur, Stromnachfrage und fiskalische Regeln langfristig verändern."
+            ],
+            "systemic_relevance": "Der Vorgang betrifft nicht nur einzelne Kaufentscheidungen, sondern die Finanzierungslogik des Straßenverkehrs und damit einen systemischen Bereich von Mobilität und Staatseinnahmen.",
+            "transformation_potential": "Mittelhoch, weil Preis- und Zulassungssignale den Übergang vom Verbrenner zum Elektroantrieb beschleunigen und politische Nachsteuerung auslösen können.",
+            "resilience": "Offen bleibt, ob neue Abgabenmodelle die Finanzierung stabilisieren, ohne den Umstieg auf E-Mobilität unnötig zu bremsen.",
+            "side_effects": [
+              "Mögliche Verlagerung von Kosten zwischen Fahrgruppen.",
+              "Debatten über gerechte Ersatzfinanzierung für sinkende Kraftstoffsteuern."
+            ],
+            "uncertainties": [
+              "Die Quelle belegt nur einen Monatsstand und keine längerfristige Trendwende.",
+              "Die Netto-Wirkung auf Emissionen, Staatshaushalt und Verkehrswahl ist ex ante nicht bezifferbar.",
+              "Unabhängige Zweitquellen liegen hier nicht vor."
+            ],
+            "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen und direkter Zitation, aber ohne unabhängige Bestätigung",
+            "attribution": "Die Angaben stammen aus dem WDR-Beitrag; die politische und fiskalische Einordnung ist eine daraus abgeleitete, vorsichtige Folgeabschätzung.",
+            "watch_next": [
+              "Ob sich die hohen Spritpreise und die E-Auto-Zulassungen in den nächsten Monatsdaten bestätigen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 11, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Monatszahlen zu Spritpreisen und E-Auto-Zulassungen sind materiell relevant für Haushalte, Verkehrsmarkt und Fiskus; die Evidenz ist jedoch vorerst nur eine belastbare Einzelquelle."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Neuzulassungen E-Autos",
+                  "value": "68.930",
+                  "unit": "Fahrzeuge",
+                  "context": "Reine Elektroautos, die im August neu zugelassen wurden"
+                },
+                {
+                  "label": "Anteil an Neuzulassungen",
+                  "value": "32",
+                  "unit": "Prozent",
+                  "context": "Anteil der reinen E-Autos an allen Neuzulassungen"
+                },
+                {
+                  "label": "Vorjahresplus",
+                  "value": "75",
+                  "unit": "Prozent",
+                  "context": "Zunahme der E-Auto-Zulassungen gegenüber dem Vorjahr"
+                }
+              ],
+              "affected_groups": [
+                "haushalte",
+                "unternehmen",
+                "staat",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "chance",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-31724816547fc87d-v2-claim-1",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Im August kostete Super E10 im Monatsdurchschnitt so viel wie nie zuvor, Diesel war noch teurer als E10.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "c76c7deae41a4792d4d6",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "ead17dfa44341ed6dca6",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:23:05.308Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v2-claim-2",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Im August wurden 68.930 reine Elektroautos neu zugelassen, das waren rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "9be20cfbdd8fcf8844fe",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:23:05.308Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v2-claim-3",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Der WDR-Text ordnet die Entwicklung so ein, dass sie langfristig die Rechnung des Staates verändert, weil Verbrenner Steuern liefern und E-Autos diese Einnahmen mindern.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "fa0e991f0b872a64db90",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "6595237cf2b7cbbf2750",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "b2199db4a16ecc3d62d1",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:23:05.308Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v2-claim-4",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Der Text nennt als mögliche Gegenfinanzierung eine Ladestromsteuer oder ein fahrleistungsabhängiges, nach CO₂-Ausstoß gestaffeltes Modell.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "5538aea603c448998ceb",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "6e323bdf81bcb0b9303d",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "cd18f27c4ea4a1c01cfd",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:23:05.308Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v2-claim-5",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Der ADAC hält die alte Faustregel, ab 15.000 Kilometern pro Jahr lohne sich ein Diesel, nicht mehr für allgemein gültig.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "60159125ccb50bc99d43",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "6b35ba071bf738f3c612",
+                  "checked_at": "2026-09-04T10:23:05.308Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:23:05.308Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-04T18:38:30.605Z",
+          "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
+          "source_summary": "Die WDR-Wirtschaftsberichterstattung meldet Rekordpreise an der Zapfsäule und zugleich steigende E-Auto-Zulassungen. Für August nennt der Beitrag beim Super E10 einen Monatsdurchschnitt auf Höchststand; Diesel sei noch teurer gewesen als E10. Zugleich wird beschrieben, dass im August 68.930 rein elektrische Neuwagen zugelassen wurden, rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag ordnet das als Wandel auf dem Neuwagenmarkt und als Verschiebung bei den Kosten ein. Er verweist auf Förderung für reine Elektroautos, auf die befristete Kfz-Steuerbefreiung sowie darauf, dass Verbrenner dem Staat weiter Einnahmen bringen. Zusätzlich werden mögliche künftige Modelle wie eine fahrleistungsabhängige Abgabe oder eine Ladestromsteuer erwähnt.",
+          "analysis": {
+            "story_id": "wt-31724816547fc87d",
+            "news_status": "developing",
+            "publication_depth": "deepened",
+            "summary": "Die WDR-Meldung verbindet Rekord-Spritpreise mit stark steigenden E-Auto-Zulassungen. Sie beschreibt zugleich mögliche Folgen für Kaufentscheidungen und Staatseinnahmen.",
+            "detail_summary": "Gesichert belegt ist vor allem eine gleichzeitige Bewegung bei Preisen und Neuzulassungen: Super E10 erreichte im August einen Monatsdurchschnitt auf Höchststand, Diesel lag sogar darüber, und reine Elektroautos kamen auf 68.930 Neuzulassungen. Für die Einordnung ist das relevant, weil sich damit Kostenrelationen für Autofahrende und Einnahmeströme des Staates verschieben können. Der Wirkpfad verläuft über Tankkosten, Kaufentscheidungen und steuerliche Regeln, nicht über eine schon eingetretene Nettowirkung. Als mögliche Folge nennt die Quelle mehr Attraktivität von E-Autos und zugleich langfristig sinkende Einnahmen aus Kfz- und Energiesteuer. Die Evidenz bleibt jedoch journalistisch aus einer Quelle; unabhängige Bestätigung für die Zahlen liegt hier nicht vor.",
+            "why_relevant": "Die Meldung beschreibt eine materielle Verschiebung bei Mobilitätskosten, Neuzulassungen und potenziellen Staatseinnahmen. Das betrifft Haushalte, Unternehmen und fiskalische Regeln zugleich.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Kraftstoffpreise und Antriebswahl beeinflussen laufende Mobilitätskosten vieler Haushalte und Unternehmen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Mehr E-Neuzulassungen und die Verschiebung von Verbrennern zu Elektroantrieben können den Emissionspfad beeinflussen, ohne dass die Nettofolge hier schon beziffert ist."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Diskussion um Kfz-Steuer, Energiesteuer und mögliche neue Abgaben betrifft fiskalische Regeln und politische Verteilungskonflikte."
+            },
+            "importance": "hoch",
+            "impact_potential": "Höhere Spritpreise können die Nachfrage nach Verbrennern schwächen, E-Autos relativ attraktiver machen und mittelbar Steuer- und Abgabenregeln unter Druck setzen.",
+            "impact_risks": [
+              "Schnell steigende Kosten können Mobilität für Menschen mit geringem Budget verteuern.",
+              "Sinkende Mineralölsteuer- und Energiesteuereinnahmen können fiskalische Lücken vergrößern.",
+              "Neue Abgabenmodelle könnten Verteilungskonflikte auslösen."
+            ],
+            "mechanisms": [
+              "Preisimpuls an der Zapfsäule",
+              "Veränderte Kostenrechnung beim Fahrzeugkauf",
+              "Steuerliche Bevorzugung von E-Autos",
+              "Diskussion über neue fahrleistungsabhängige Abgaben"
+            ],
+            "first_order": [
+              "Mehr Aufmerksamkeit für Kostenvergleich zwischen Verbrenner und E-Auto",
+              "Potenzielle Verschiebung bei Neuzulassungen",
+              "Hinweis auf sinkende Verbrenner-Einnahmen für den Staat"
+            ],
+            "second_order": [
+              "Mögliche Anpassung von Förder- und Steuerregeln",
+              "Druck auf Ladeinfrastruktur und Flottenstrategien"
+            ],
+            "third_order": [
+              "Langfristige Umstellung des Fahrzeugbestands",
+              "Neubewertung der Finanzierung von Straßen und Energieverbrauch"
+            ],
+            "systemic_relevance": "Die Meldung berührt den Fahrzeugmarkt, die staatliche Einnahmenseite und die Steuerungslogik der Verkehrswende in einem einzigen Preis- und Nachfrageimpuls.",
+            "transformation_potential": "Mittel bis hoch, weil sich Kostenrelationen und Förderanreize für Antriebe verschieben können.",
+            "resilience": "Offen; belastbar ist bisher nur die gleichzeitige Preis- und Zulassungsbewegung, nicht die Dauer des Trends.",
+            "side_effects": [
+              "Höhere Spritkosten können Pendler und Vielfahrer überproportional treffen.",
+              "Eine stärkere E-Auto-Nachfrage kann Lade- und Netzanforderungen erhöhen."
+            ],
+            "uncertainties": [
+              "Es bleibt offen, ob die Preisbewegung anhält.",
+              "Die Quelle belegt keine unabhängige Zweitbestätigung.",
+              "Die Netto-Wirkung auf Staat, Emissionen und Verkehrswahl ist ex ante nicht bezifferbar."
+            ],
+            "evidence_level": "single journalistische Quelle mit konkreten Zahlen und O-Tönen; keine unabhängige Bestätigung im Datensatz",
+            "attribution": "Die Darstellung stammt aus der WDR-Berichterstattung; Aussagen von ADAC und VCD werden dort zitiert.",
+            "watch_next": [
+              "Weitere Monatsdaten zu Spritpreisen und Neuzulassungen",
+              "Entscheidungen zu Steuer- oder Abgabenmodellen",
+              "Entwicklung der Ladeinfrastruktur"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7",
+              "Agenda 2030/SDG 9",
+              "Agenda 2030/SDG 11",
+              "Agenda 2030/SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung bringt konkrete Augustzahlen zu Spritpreisen und E-Auto-Zulassungen sowie deren fiskalische Einordnung. Das ist für Haushalte, Marktanreize und Staatseinnahmen materiell, auch wenn die Beleglage nur eine Quelle umfasst."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-31724816547fc87d-v3-claim-1",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Im August erreichte Super E10 im Monatsdurchschnitt einen Höchstwert; Diesel lag noch höher als E10.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "c76c7deae41a4792d4d6",
+                  "checked_at": "2026-09-04T18:38:30.605Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "ead17dfa44341ed6dca6",
+                  "checked_at": "2026-09-04T18:38:30.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v3-claim-2",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Im August kamen 68.930 rein elektrische Neuwagen auf die Straße, das waren rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "9be20cfbdd8fcf8844fe",
+                  "checked_at": "2026-09-04T18:38:30.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v3-claim-3",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Der WDR beschreibt, dass der Wandel den Bund langfristig Geld kostet und über Kfz-Steuer sowie Energiesteuer und Mehrwertsteuer auf Tanken Einnahmen wegfallen könnten.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "6595237cf2b7cbbf2750",
+                  "checked_at": "2026-09-04T18:38:30.605Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "b2199db4a16ecc3d62d1",
+                  "checked_at": "2026-09-04T18:38:30.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            },
+            {
+              "claim_id": "wt-31724816547fc87d-v3-claim-4",
+              "story_id": "wt-31724816547fc87d",
+              "claim": "Der ADAC hält die alte Regel, wonach sich ein Diesel ab 15.000 Kilometern im Jahr lohnt, nicht mehr für allgemein gültig.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "60159125ccb50bc99d43",
+                  "checked_at": "2026-09-04T18:38:30.605Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+                  "excerpt_hash": "6b35ba071bf738f3c612",
+                  "checked_at": "2026-09-04T18:38:30.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:38:30.605Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
+              "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T01:00:39.627Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T10:23:05.308Z",
+          "source_count": 1
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-04T18:38:30.605Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-1bc40229c938d48a",
       "slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
@@ -6474,7 +7460,7 @@
       "verification_started_at": "2026-09-04T17:40:49.069Z",
       "publish_ready_at": "2026-09-04T17:41:02.699Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -6782,9 +7768,12 @@
         "generated_at": "2026-09-04T18:10:54.250Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "e7661e849bfdbfc6afd43a4e125dbd5cb70353a590e354476e35fc1fff50708f",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "6f8702efabbf7a7feb143d959217f8327e4fcf458e31f5ef0e81e7f233f05ee9",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -6817,14 +7806,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-cfdffa2c2bdae220",
@@ -7823,7 +8807,7 @@
       "verification_started_at": "2026-09-04T17:36:08.428Z",
       "publish_ready_at": "2026-09-04T17:36:18.898Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -8150,9 +9134,12 @@
         "generated_at": "2026-09-04T17:37:58.106Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "0ee4537975c18a9c22d819b0dc5a8c1aa4ac0378cce7a6ff5915b1d903091e95",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "59e7501513a316bd84e6a0c3c2217180e13ff765ffa43e4a897740cb3a5a9acc",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -8247,16 +9234,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-7122b10e5711a154",
@@ -8397,7 +9377,7 @@
       "verification_started_at": "2026-09-04T17:35:40.862Z",
       "publish_ready_at": "2026-09-04T17:35:53.642Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -8845,9 +9825,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "0cae2c855f98566b86ef5558727a8cdf5fbacb9eb05c046a2b6fcdeb64f8df20",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "305f3b0d2d327e9ce5cbc4038f48be5a56c45f6c76dbee832246444f68840d58",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "zdfheute-nachrichten",
@@ -8880,14 +9863,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-12a75e1a8e63deaa",
@@ -15977,7 +16955,7 @@
       "verification_started_at": "2026-09-04T15:52:14.861Z",
       "publish_ready_at": "2026-09-04T15:52:29.187Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -16574,11 +17552,11 @@
       ],
       "retirement_history": [],
       "review_checkpoint": {
-        "version": "evidence-packet-1",
-        "fingerprint": "9d66cf1a9a01cc6d3b4d94b123f889738cc08b65c25408424d85d5a4678379c7",
-        "checked_at": "2026-09-04T17:34:55.826Z",
+        "version": "evidence-packet-2",
+        "fingerprint": "da2a7ca575015176d28b0f99a6375a7d09c0459bee8106ca87c4314f06283176",
+        "checked_at": "2026-09-04T18:36:20.968Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-04T23:34:55.826Z",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -16644,82 +17622,7 @@
           }
         ]
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "b3a275f1ecdaf740b891729aa4f3ae87e288e316615f7a118b2ab423ff8d5ccf",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
-            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
-            "summary": "Nach mehreren Sabotageangriffen auf die Energieversorgung in Deutschland fahndet die Polizei nach einem Tatverdächtigen aus Gevelsberg in Nordrhein-Westfalen. Die Ermittler gehen davon aus, dass der 48-Jährige Bekennerschreiben verfasst hat. Die Briefe waren bei deutschen Medienhäusern eingegangen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:00:54.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "76dff11372510d0aac6766c66db5f93e4e9d7bc0ea3caf4dd95200d1f53619b0",
-            "source_item_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:00:54.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-fahndung-laeuft-100.html",
-            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - Fahndung läuft",
-            "summary": "Nach mehreren Sabotageangriffen auf die Energieversorgung in Deutschland fahndet die Polizei nach einem Tatverdächtigen aus Gevelsberg in Nordrhein-Westfalen. Die Ermittler gehen davon aus, dass der 48-Jährige Bekennerschreiben verfasst hat. Die Briefe waren bei deutschen Medienhäusern eingegangen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:23:25.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "b7dc1ee5945358ebafb68bdbec9ce2928da7205abf70cde122de7b8d78af9eca",
-            "source_item_id": "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:23:25.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 2,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-e1bb5772260a52e1",
@@ -25308,7 +26211,7 @@
       "verification_started_at": "2026-09-04T14:07:27.084Z",
       "publish_ready_at": "2026-09-04T14:07:43.054Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -25676,9 +26579,12 @@
         "generated_at": "2026-09-04T14:10:31.780Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "b917f7034c51515c1cc9f5248a84e0e6c8644f2b12103cd0052bf54bfa04b500",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "6e19aeee61731ca824f14c7525f2404c0b96204051d9ae8c4369b85b16dd2d22",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -25711,14 +26617,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-c19ac9186fd18832",
@@ -26579,7 +27480,7 @@
       "verification_started_at": "2026-09-04T13:52:05.666Z",
       "publish_ready_at": "2026-09-04T13:52:16.924Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -27456,10 +28357,13 @@
         }
       ],
       "retirement_history": [],
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "6651d1c6d254a700ea496532f75f9549427bd1de4b4f4084bc0a599195e9823e",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "28d6b5f0ffcd47a29b8fd4541ee944c9354c31887323c87e5129f7a4febf5239",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -27492,13 +28396,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -38114,7 +39012,7 @@
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
+        "quality_retry_count": 2,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -41234,7 +42132,7 @@
       "verification_started_at": "2026-09-04T10:43:40.074Z",
       "publish_ready_at": "2026-09-04T10:43:56.419Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -41707,10 +42605,13 @@
         "generated_at": "2026-09-04T10:45:15.611Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "859716f24d00e852fa3d6355d89ad0a116f0f00ed142cd1d62e4d1e28654f0da",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "a4cc2b254dc2cb84661b86d6e475e606ca1283661be7e5f1158c7be125c5f940",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -41805,15 +42706,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -42077,7 +42970,7 @@
       "verification_started_at": "2026-09-04T10:42:51.794Z",
       "publish_ready_at": "2026-09-04T10:43:11.833Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -42979,10 +43872,13 @@
         }
       ],
       "retirement_history": [],
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "aa7b0c0e8c6bf11b13346910e264726bd3df23a40665c92499f87b20fe0068e1",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "a24c3aed9960f1f37a9d16c5cb2a8f18bafb6a793dd056e48873e4d8a8828f69",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -43108,13 +44004,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -43235,928 +44125,6 @@
       }
     },
     {
-      "story_id": "wt-31724816547fc87d",
-      "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
-      "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
-      "first_seen": "2026-09-03T19:03:18.000Z",
-      "last_updated": "2026-09-04T10:23:05.308Z",
-      "published_at": "2026-09-04T01:00:39.627Z",
-      "updated_at": "2026-09-04T10:23:05.308Z",
-      "topic": [
-        "Arbeit"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-          "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
-          "summary": "Rekordpreise an der Zapfsäule und gleichzeitig mehr E-Autos auf den Straßen: Das verändert langfristig die Rechnung für den Staat.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:03:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8",
-          "source_item_id": "4c8d367548f84b1ad48ef1d5229608422141c82930ca37dae093856f90520f0d",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T19:03:18.000Z",
-          "ingested_at": "2026-09-04T10:07:41.576Z",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-31724816547fc87d-v2-claim-1",
-          "story_id": "wt-31724816547fc87d",
-          "claim": "Im August kostete Super E10 im Monatsdurchschnitt so viel wie nie zuvor, Diesel war noch teurer als E10.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "c76c7deae41a4792d4d6",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "ead17dfa44341ed6dca6",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:23:05.308Z"
-        },
-        {
-          "claim_id": "wt-31724816547fc87d-v2-claim-2",
-          "story_id": "wt-31724816547fc87d",
-          "claim": "Im August wurden 68.930 reine Elektroautos neu zugelassen, das waren rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "9be20cfbdd8fcf8844fe",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:23:05.308Z"
-        },
-        {
-          "claim_id": "wt-31724816547fc87d-v2-claim-3",
-          "story_id": "wt-31724816547fc87d",
-          "claim": "Der WDR-Text ordnet die Entwicklung so ein, dass sie langfristig die Rechnung des Staates verändert, weil Verbrenner Steuern liefern und E-Autos diese Einnahmen mindern.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "fa0e991f0b872a64db90",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "6595237cf2b7cbbf2750",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "b2199db4a16ecc3d62d1",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:23:05.308Z"
-        },
-        {
-          "claim_id": "wt-31724816547fc87d-v2-claim-4",
-          "story_id": "wt-31724816547fc87d",
-          "claim": "Der Text nennt als mögliche Gegenfinanzierung eine Ladestromsteuer oder ein fahrleistungsabhängiges, nach CO₂-Ausstoß gestaffeltes Modell.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "5538aea603c448998ceb",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "6e323bdf81bcb0b9303d",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "cd18f27c4ea4a1c01cfd",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:23:05.308Z"
-        },
-        {
-          "claim_id": "wt-31724816547fc87d-v2-claim-5",
-          "story_id": "wt-31724816547fc87d",
-          "claim": "Der ADAC hält die alte Faustregel, ab 15.000 Kilometern pro Jahr lohne sich ein Diesel, nicht mehr für allgemein gültig.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "60159125ccb50bc99d43",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "excerpt_hash": "6b35ba071bf738f3c612",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T10:23:05.308Z"
-        }
-      ],
-      "event_id": "event-f2fa5659b171e222bce8",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T10:22:52.884Z",
-      "publish_ready_at": "2026-09-04T10:23:05.308Z",
-      "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob sich der Anteil rein elektrischer Neuzulassungen in den Folgemonaten weiter erhöht.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Monatlicher Anteil rein elektrischer Pkw an allen Neuzulassungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-203198b85d8b6d81",
-          "announced_at": "2026-09-03T19:03:18.000Z",
-          "follow_up_date": "2026-09-11T01:00:39.627Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob sich die Steuer- und Zulassungsentwicklung in den Folgemonaten fortsetzt",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue Monatswerte zu Spritpreisen und E-Auto-Neuzulassungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-eee5a48af6a85c18",
-          "announced_at": "2026-09-03T19:03:18.000Z",
-          "follow_up_date": "2026-09-11T10:23:05.308Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
-      "published": true,
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-12162911a926b176-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "12162911a926b176088573b48560e87a83b59117c6b95068588428b053a29122"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-2a53356d626167dd-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "2a53356d626167dd5e0687c4f384bdd706d0e30e34a96763b312d6f17f5df178"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-eb6f843358afcde0-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "eb6f843358afcde0cf82a212b416de4419731317f6c797bb6ca8e5646e578852"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-33e0e250569832b7-source.png",
-          "sha256": "33e0e250569832b77977248c283ac8cf87e5b4b3a7b18b1ed592fcd72cd8a29e",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-04T10:15:55.000Z"
-        },
-        "fingerprint": "13b3278f07f03174b7d25fa8ad2654d41361ae47917eb1171ee2f0b6dc46479f",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T10:16:47.674Z",
-        "status": "generated"
-      },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "Der WDR berichtet über Rekordpreise für Benzin und Diesel an der Zapfsäule und über einen zugleich starken Anstieg bei reinen Elektroautos. Für August nennt der Text im Monatsdurchschnitt einen neuen Höchststand bei Super E10; Diesel sei sogar teurer als E10 gewesen. Zugleich seien 68.930 reine E-Autos neu zugelassen worden, etwa 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag verknüpft diese Entwicklung mit der Finanzierung des Staates: Verbrenner brächten Einnahmen über Kfz-Steuer sowie Energie- und Mehrwertsteuer beim Tanken, während mit wachsender E-Mobilität Einnahmen sinken könnten. Als mögliche Reaktionen nennt der Text eine Ladestromsteuer sowie ein fahrleistungsabhängiges und nach CO₂-Ausstoß gestaffeltes System. Außerdem zitiert der Beitrag ADAC-Positionen zur Kostenfrage bei Diesel und E-Auto sowie Hinweise auf Ladeinfrastruktur und Reichweite.",
-      "analysis": {
-        "story_id": "wt-31724816547fc87d",
-        "news_status": "preliminary",
-        "publication_depth": "initial",
-        "summary": "Rekordpreise für Benzin und Diesel treffen auf stark steigende E-Auto-Zulassungen. Der WDR sieht darin eine Verschiebung bei Kosten und möglichen Staatseinnahmen.",
-        "detail_summary": "Gesichert ist laut WDR, dass Super E10 im August so teuer war wie nie zuvor und Diesel sogar über E10 lag. Zugleich wurden 68.930 reine Elektroautos neu zugelassen, was der Beitrag als rund 32 Prozent aller Neuzulassungen und als 75 Prozent Plus gegenüber dem Vorjahr beschreibt. Für die Einordnung ist das relevant, weil sich damit Kaufanreize, Kostenvergleiche und steuerliche Einnahmeströme im Verkehrssektor verschieben können. Der Wirkpfad verläuft über höhere Kraftstoffpreise, veränderte Fahrzeugwahl und sinkende Einnahmen aus Energie- und Kfz-Steuer bei wachsender E-Mobilität. Mögliche Folge ist, dass Politik und Verwaltung über neue Abgaben- oder Finanzierungsmodelle nachdenken. Belastbar belegt ist hier aber nur die Richtung der Entwicklung; die tatsächliche Netto-Wirkung auf Staat, Haushalte und Emissionen bleibt offen.",
-        "why_relevant": "Die Meldung berührt Kaufentscheidungen, Steueraufkommen und die Umstellung des Verkehrssektors und damit mehrere materielle Zustände zugleich.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Die Spritpreise und die E-Auto-Zulassungen beeinflussen Alltagskosten, Fahrzeugwahl und mögliche Belastungen für Haushalte."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Mehr E-Autos können den Antriebswechsel beschleunigen; der tatsächliche Klimaeffekt bleibt ohne weitere Daten offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Text berührt die Ausgestaltung künftiger Abgaben und damit steuerpolitische Prioritäten und Verteilungseffekte."
-        },
-        "importance": "mittel",
-        "impact_potential": "Die Entwicklung kann Kaufentscheidungen, Kraftstoffnachfrage und die künftige Ausgestaltung von Steuer- und Abgaberegeln im Verkehr beeinflussen.",
-        "impact_risks": [
-          "Höhere Spritkosten können Mobilitätskosten für Verbrennernutzer erhöhen.",
-          "Sinkende Einnahmen aus Kraftstoffverbrauch können neue Verteilungs- und Finanzierungsfragen auslösen.",
-          "Eine mögliche Ladestrom- oder Kilometerabgabe könnte E-Mobilität anders belasten als heute."
-        ],
-        "mechanisms": [
-          "Preissteigerungen verändern die relative Attraktivität von Verbrennern und E-Autos.",
-          "Steuerbasen verschieben sich von Kraftstoffverbrauch hin zu Strom- oder Nutzungsmodellen.",
-          "Politische Debatten über Ersatzfinanzierung werden wahrscheinlicher."
-        ],
-        "first_order": [
-          "Mehr E-Auto-Käufe bei anhaltend hohen Kraftstoffpreisen sind plausibel.",
-          "Der Staat verliert bei wachsender E-Mobilität perspektivisch Teile der mineralölbezogenen Einnahmen."
-        ],
-        "second_order": [
-          "Es kann Druck entstehen, neue Verkehrsabgaben oder Lenkungsmodelle zu prüfen.",
-          "Hersteller und Händler könnten ihre Modell- und Preispolitik stärker auf Elektromobilität ausrichten."
-        ],
-        "third_order": [
-          "Eine breitere Umstellung der Flotten könnte Infrastruktur, Stromnachfrage und fiskalische Regeln langfristig verändern."
-        ],
-        "systemic_relevance": "Der Vorgang betrifft nicht nur einzelne Kaufentscheidungen, sondern die Finanzierungslogik des Straßenverkehrs und damit einen systemischen Bereich von Mobilität und Staatseinnahmen.",
-        "transformation_potential": "Mittelhoch, weil Preis- und Zulassungssignale den Übergang vom Verbrenner zum Elektroantrieb beschleunigen und politische Nachsteuerung auslösen können.",
-        "resilience": "Offen bleibt, ob neue Abgabenmodelle die Finanzierung stabilisieren, ohne den Umstieg auf E-Mobilität unnötig zu bremsen.",
-        "side_effects": [
-          "Mögliche Verlagerung von Kosten zwischen Fahrgruppen.",
-          "Debatten über gerechte Ersatzfinanzierung für sinkende Kraftstoffsteuern."
-        ],
-        "uncertainties": [
-          "Die Quelle belegt nur einen Monatsstand und keine längerfristige Trendwende.",
-          "Die Netto-Wirkung auf Emissionen, Staatshaushalt und Verkehrswahl ist ex ante nicht bezifferbar.",
-          "Unabhängige Zweitquellen liegen hier nicht vor."
-        ],
-        "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen und direkter Zitation, aber ohne unabhängige Bestätigung",
-        "attribution": "Die Angaben stammen aus dem WDR-Beitrag; die politische und fiskalische Einordnung ist eine daraus abgeleitete, vorsichtige Folgeabschätzung.",
-        "watch_next": [
-          "Ob sich die hohen Spritpreise und die E-Auto-Zulassungen in den nächsten Monatsdaten bestätigen."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 7, SDG 11, SDG 13"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Neue Monatszahlen zu Spritpreisen und E-Auto-Zulassungen sind materiell relevant für Haushalte, Verkehrsmarkt und Fiskus; die Evidenz ist jedoch vorerst nur eine belastbare Einzelquelle."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "Neuzulassungen E-Autos",
-              "value": "68.930",
-              "unit": "Fahrzeuge",
-              "context": "Reine Elektroautos, die im August neu zugelassen wurden"
-            },
-            {
-              "label": "Anteil an Neuzulassungen",
-              "value": "32",
-              "unit": "Prozent",
-              "context": "Anteil der reinen E-Autos an allen Neuzulassungen"
-            },
-            {
-              "label": "Vorjahresplus",
-              "value": "75",
-              "unit": "Prozent",
-              "context": "Zunahme der E-Auto-Zulassungen gegenüber dem Vorjahr"
-            }
-          ],
-          "affected_groups": [
-            "haushalte",
-            "unternehmen",
-            "staat",
-            "verbraucherinnen"
-          ],
-          "tendency": {
-            "human": "gemischt",
-            "planet": "chance",
-            "democracy": "gemischt"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T01:00:39.627Z",
-          "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
-          "source_summary": "Die WDR-Quelle meldet Rekordpreise an der Zapfsäule und verbindet sie mit der Frage, ab wann sich ein Elektroauto lohnt. Genannt werden Daten zum August: Super E10 sei im Monatsdurchschnitt so teuer gewesen wie nie zuvor, Diesel habe im Schnitt 2,223 Euro je Liter gekostet und damit mehr als E10 mit 2,145 Euro.\n\nZugleich berichtet der Beitrag von einem starken Anstieg bei Elektroautos: Fast jedes dritte im August neu zugelassene Auto fahre rein elektrisch, 68.930 Fahrzeuge seien neu auf die Straße gekommen. Der Text verweist außerdem auf staatliche Förderung, die Verlängerung der Kfz-Steuerbefreiung und darauf, dass der wachsende Anteil von E-Autos langfristig die Steuereinnahmen des Staates verändern könne.",
-          "analysis": {
-            "story_id": "wt-31724816547fc87d",
-            "news_status": "preliminary",
-            "publication_depth": "initial",
-            "summary": "Die WDR-Quelle beschreibt Rekordpreise für Sprit und einen starken Anstieg bei E-Auto-Neuzulassungen. Sie ordnet das als mögliche Verschiebung bei Kaufentscheidungen und Staatseinnahmen ein.",
-            "detail_summary": "Gesichert berichtet die Quelle von Rekordpreisen an der Zapfsäule und von einem starken Zuwachs bei rein elektrischen Neuzulassungen im August. Das ist relevant, weil sich damit kurzfristig die Kostenabwägung für Autokäufe und mittelfristig die Zusammensetzung des Fahrzeugbestands verschieben kann. Der mögliche Wirkpfad verläuft über Kaufentscheidungen, Fahrzeugmix und später über veränderte Einnahmen aus Kfz-, Energie- und Mehrwertsteuer. Als mögliche Folge nennt der Beitrag eine dauerhafte Verschiebung zugunsten von E-Autos sowie Debatten über neue Finanzierungsmodelle wie Ladestromsteuer oder fahrleistungsabhängige Modelle. Offen bleibt, wie stabil die Preisrelationen sind und ob daraus tatsächlich ein breiterer Strukturwandel entsteht. Die Evidenzlage ist hier zunächst auf eine journalistische Sekundärquelle begrenzt.",
-            "why_relevant": "Die Meldung verbindet zwei materiell relevante Zustandsänderungen: sehr hohe Kraftstoffpreise und eine spürbare Verschiebung im Neuzulassungsmix hin zu Elektroautos. Daraus ergeben sich potenziell Folgen für Haushaltskosten, Marktanteile, Steuereinnahmen und künftige Verkehrsfinanzierung.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Für Haushalte und Beschäftigte im Verkehrsumfeld kann die Preisrelation zwischen Sprit und E-Auto die Kauf- und Nutzungskosten beeinflussen."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Ein höherer Anteil rein elektrischer Neuzulassungen kann den Antriebsmix verschieben; die konkrete Umweltwirkung bleibt ex ante aber offen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Quelle thematisiert mögliche Änderungen bei staatlichen Einnahmen und künftigen Abgabemodellen, also einen relevanten Ordnungs- und Verteilungsaspekt."
-            },
-            "importance": "mittel",
-            "impact_potential": "Höhere Spritpreise und mehr E-Autos können Kaufentscheidungen, Flottenmix und langfristig auch die staatliche Einnahmestruktur verändern.",
-            "impact_risks": [
-              "Steigende Betriebskosten für Verbrenner können einzelne Gruppen stärker belasten.",
-              "Sinkende Einnahmen aus Kraftstoffsteuern erhöhen den Druck auf neue Abgabenmodelle."
-            ],
-            "mechanisms": [
-              "Preisvergleich zwischen Tanken und Stromladen beeinflusst Fahrzeugwahl.",
-              "Veränderter Fahrzeugbestand verschiebt Steuer- und Abgabenbasis des Staates."
-            ],
-            "first_order": [
-              "Autokäufer vergleichen Diesel, Benzin und E-Auto stärker nach Gesamtkosten."
-            ],
-            "second_order": [
-              "Mehr E-Autos können die Einnahmen aus Energie- und Mehrwertsteuer beim Tanken mindern."
-            ],
-            "third_order": [
-              "Politischer Streit über neue Verkehrsabgaben oder eine Umstellung der Fahrzeugfinanzierung kann zunehmen."
-            ],
-            "systemic_relevance": "Der Vorgang betrifft nicht nur einzelne Autofahrer, sondern einen breiteren Strukturwandel im Verkehrs- und Steuersystem.",
-            "transformation_potential": "Beobachtbar ist ein möglicher Übergang von fossilen zu elektrischen Antrieben, der mittelbar Finanzierung und Marktstruktur beeinflussen kann.",
-            "resilience": "Offen bleibt, ob Förderungen, Ladeinfrastruktur und Preisniveau den Trend stabilisieren oder wieder abbremsen.",
-            "side_effects": [
-              "Mögliche Verschiebung der Steuerlast auf andere Abgabenarten.",
-              "Unterschiedliche Betroffenheit je nach Fahrprofil und Wohnort."
-            ],
-            "uncertainties": [
-              "Die Quelle liefert nur eine journalistische Darstellung ohne unabhängige Zweitbestätigung.",
-              "Ob der Trend anhält, bleibt offen.",
-              "Die tatsächliche Nettowirkung auf Staat und Umwelt ist ex ante noch nicht bezifferbar."
-            ],
-            "evidence_level": "attributed_single_source",
-            "attribution": "Die zentralen Fakten stammen aus einer einzelnen WDR-Berichterstattung; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
-            "watch_next": [
-              "Entwickeln sich E-Auto-Neuzulassungen und Kraftstoffpreise in den nächsten Monaten weiter ähnlich?"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7, 9, 11, 12, 13"
-            ],
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "none",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Die Meldung enthält aktuelle Preis- und Zulassungsdaten mit möglicher Wirkung auf Kaufentscheidungen, Steuerbasis und Verkehrsfinanzierung; die Quelle ist jedoch nur eine journalistische Einzelquelle."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "E10 im Monatsdurchschnitt",
-                  "value": "2,145",
-                  "unit": "Euro je Liter",
-                  "context": "Monatsdurchschnitt für Super E10 im August"
-                },
-                {
-                  "label": "Diesel im August",
-                  "value": "2,223",
-                  "unit": "Euro je Liter",
-                  "context": "Durchschnittspreis für Diesel im August"
-                },
-                {
-                  "label": "rein elektrisch",
-                  "value": "68.930",
-                  "unit": "Neuzulassungen",
-                  "context": "Zahl neuer rein elektrischer Pkw im August"
-                }
-              ],
-              "affected_groups": [
-                "haushalte",
-                "unternehmen",
-                "staat"
-              ],
-              "tendency": {
-                "human": "gemischt",
-                "planet": "offen",
-                "democracy": "gemischt"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-31724816547fc87d-v1-claim-1",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Die WDR-Quelle berichtet von Rekordpreisen bei Benzin und Diesel und stellt die Frage, ob sich ein Elektroauto inzwischen eher lohnt.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "ae729d0cf42c28b1ac7c",
-                  "checked_at": "2026-09-04T01:00:39.627Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:00:39.627Z"
-            },
-            {
-              "claim_id": "wt-31724816547fc87d-v1-claim-2",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Im August kostete Super E10 im Monatsdurchschnitt so viel wie nie zuvor, und Diesel war mit 2,223 Euro je Liter teurer als E10 mit 2,145 Euro.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "c76c7deae41a4792d4d6",
-                  "checked_at": "2026-09-04T01:00:39.627Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "ead17dfa44341ed6dca6",
-                  "checked_at": "2026-09-04T01:00:39.627Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:00:39.627Z"
-            },
-            {
-              "claim_id": "wt-31724816547fc87d-v1-claim-3",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Fast jedes dritte im August neu zugelassene Auto fuhr rein elektrisch; die Zahl lag bei 68.930 und damit rund 32 Prozent aller Neuzulassungen.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "9be20cfbdd8fcf8844fe",
-                  "checked_at": "2026-09-04T01:00:39.627Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:00:39.627Z"
-            },
-            {
-              "claim_id": "wt-31724816547fc87d-v1-claim-4",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Der WDR beschreibt, dass der Wandel zu mehr E-Autos die langfristige Rechnung des Staates verändert, weil Verbrenner über Kfz- und Energiesteuern Einnahmen bringen.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "fa0e991f0b872a64db90",
-                  "checked_at": "2026-09-04T01:00:39.627Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "6595237cf2b7cbbf2750",
-                  "checked_at": "2026-09-04T01:00:39.627Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "b2199db4a16ecc3d62d1",
-                  "checked_at": "2026-09-04T01:00:39.627Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T01:00:39.627Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-04T10:23:05.308Z",
-          "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
-          "source_summary": "Der WDR berichtet über Rekordpreise für Benzin und Diesel an der Zapfsäule und über einen zugleich starken Anstieg bei reinen Elektroautos. Für August nennt der Text im Monatsdurchschnitt einen neuen Höchststand bei Super E10; Diesel sei sogar teurer als E10 gewesen. Zugleich seien 68.930 reine E-Autos neu zugelassen worden, etwa 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.\n\nDer Beitrag verknüpft diese Entwicklung mit der Finanzierung des Staates: Verbrenner brächten Einnahmen über Kfz-Steuer sowie Energie- und Mehrwertsteuer beim Tanken, während mit wachsender E-Mobilität Einnahmen sinken könnten. Als mögliche Reaktionen nennt der Text eine Ladestromsteuer sowie ein fahrleistungsabhängiges und nach CO₂-Ausstoß gestaffeltes System. Außerdem zitiert der Beitrag ADAC-Positionen zur Kostenfrage bei Diesel und E-Auto sowie Hinweise auf Ladeinfrastruktur und Reichweite.",
-          "analysis": {
-            "story_id": "wt-31724816547fc87d",
-            "news_status": "preliminary",
-            "publication_depth": "initial",
-            "summary": "Rekordpreise für Benzin und Diesel treffen auf stark steigende E-Auto-Zulassungen. Der WDR sieht darin eine Verschiebung bei Kosten und möglichen Staatseinnahmen.",
-            "detail_summary": "Gesichert ist laut WDR, dass Super E10 im August so teuer war wie nie zuvor und Diesel sogar über E10 lag. Zugleich wurden 68.930 reine Elektroautos neu zugelassen, was der Beitrag als rund 32 Prozent aller Neuzulassungen und als 75 Prozent Plus gegenüber dem Vorjahr beschreibt. Für die Einordnung ist das relevant, weil sich damit Kaufanreize, Kostenvergleiche und steuerliche Einnahmeströme im Verkehrssektor verschieben können. Der Wirkpfad verläuft über höhere Kraftstoffpreise, veränderte Fahrzeugwahl und sinkende Einnahmen aus Energie- und Kfz-Steuer bei wachsender E-Mobilität. Mögliche Folge ist, dass Politik und Verwaltung über neue Abgaben- oder Finanzierungsmodelle nachdenken. Belastbar belegt ist hier aber nur die Richtung der Entwicklung; die tatsächliche Netto-Wirkung auf Staat, Haushalte und Emissionen bleibt offen.",
-            "why_relevant": "Die Meldung berührt Kaufentscheidungen, Steueraufkommen und die Umstellung des Verkehrssektors und damit mehrere materielle Zustände zugleich.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Die Spritpreise und die E-Auto-Zulassungen beeinflussen Alltagskosten, Fahrzeugwahl und mögliche Belastungen für Haushalte."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Mehr E-Autos können den Antriebswechsel beschleunigen; der tatsächliche Klimaeffekt bleibt ohne weitere Daten offen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Der Text berührt die Ausgestaltung künftiger Abgaben und damit steuerpolitische Prioritäten und Verteilungseffekte."
-            },
-            "importance": "mittel",
-            "impact_potential": "Die Entwicklung kann Kaufentscheidungen, Kraftstoffnachfrage und die künftige Ausgestaltung von Steuer- und Abgaberegeln im Verkehr beeinflussen.",
-            "impact_risks": [
-              "Höhere Spritkosten können Mobilitätskosten für Verbrennernutzer erhöhen.",
-              "Sinkende Einnahmen aus Kraftstoffverbrauch können neue Verteilungs- und Finanzierungsfragen auslösen.",
-              "Eine mögliche Ladestrom- oder Kilometerabgabe könnte E-Mobilität anders belasten als heute."
-            ],
-            "mechanisms": [
-              "Preissteigerungen verändern die relative Attraktivität von Verbrennern und E-Autos.",
-              "Steuerbasen verschieben sich von Kraftstoffverbrauch hin zu Strom- oder Nutzungsmodellen.",
-              "Politische Debatten über Ersatzfinanzierung werden wahrscheinlicher."
-            ],
-            "first_order": [
-              "Mehr E-Auto-Käufe bei anhaltend hohen Kraftstoffpreisen sind plausibel.",
-              "Der Staat verliert bei wachsender E-Mobilität perspektivisch Teile der mineralölbezogenen Einnahmen."
-            ],
-            "second_order": [
-              "Es kann Druck entstehen, neue Verkehrsabgaben oder Lenkungsmodelle zu prüfen.",
-              "Hersteller und Händler könnten ihre Modell- und Preispolitik stärker auf Elektromobilität ausrichten."
-            ],
-            "third_order": [
-              "Eine breitere Umstellung der Flotten könnte Infrastruktur, Stromnachfrage und fiskalische Regeln langfristig verändern."
-            ],
-            "systemic_relevance": "Der Vorgang betrifft nicht nur einzelne Kaufentscheidungen, sondern die Finanzierungslogik des Straßenverkehrs und damit einen systemischen Bereich von Mobilität und Staatseinnahmen.",
-            "transformation_potential": "Mittelhoch, weil Preis- und Zulassungssignale den Übergang vom Verbrenner zum Elektroantrieb beschleunigen und politische Nachsteuerung auslösen können.",
-            "resilience": "Offen bleibt, ob neue Abgabenmodelle die Finanzierung stabilisieren, ohne den Umstieg auf E-Mobilität unnötig zu bremsen.",
-            "side_effects": [
-              "Mögliche Verlagerung von Kosten zwischen Fahrgruppen.",
-              "Debatten über gerechte Ersatzfinanzierung für sinkende Kraftstoffsteuern."
-            ],
-            "uncertainties": [
-              "Die Quelle belegt nur einen Monatsstand und keine längerfristige Trendwende.",
-              "Die Netto-Wirkung auf Emissionen, Staatshaushalt und Verkehrswahl ist ex ante nicht bezifferbar.",
-              "Unabhängige Zweitquellen liegen hier nicht vor."
-            ],
-            "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen und direkter Zitation, aber ohne unabhängige Bestätigung",
-            "attribution": "Die Angaben stammen aus dem WDR-Beitrag; die politische und fiskalische Einordnung ist eine daraus abgeleitete, vorsichtige Folgeabschätzung.",
-            "watch_next": [
-              "Ob sich die hohen Spritpreise und die E-Auto-Zulassungen in den nächsten Monatsdaten bestätigen."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7, SDG 11, SDG 13"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neue Monatszahlen zu Spritpreisen und E-Auto-Zulassungen sind materiell relevant für Haushalte, Verkehrsmarkt und Fiskus; die Evidenz ist jedoch vorerst nur eine belastbare Einzelquelle."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Neuzulassungen E-Autos",
-                  "value": "68.930",
-                  "unit": "Fahrzeuge",
-                  "context": "Reine Elektroautos, die im August neu zugelassen wurden"
-                },
-                {
-                  "label": "Anteil an Neuzulassungen",
-                  "value": "32",
-                  "unit": "Prozent",
-                  "context": "Anteil der reinen E-Autos an allen Neuzulassungen"
-                },
-                {
-                  "label": "Vorjahresplus",
-                  "value": "75",
-                  "unit": "Prozent",
-                  "context": "Zunahme der E-Auto-Zulassungen gegenüber dem Vorjahr"
-                }
-              ],
-              "affected_groups": [
-                "haushalte",
-                "unternehmen",
-                "staat",
-                "verbraucherinnen"
-              ],
-              "tendency": {
-                "human": "gemischt",
-                "planet": "chance",
-                "democracy": "gemischt"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-31724816547fc87d-v2-claim-1",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Im August kostete Super E10 im Monatsdurchschnitt so viel wie nie zuvor, Diesel war noch teurer als E10.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "c76c7deae41a4792d4d6",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "ead17dfa44341ed6dca6",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "claim_id": "wt-31724816547fc87d-v2-claim-2",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Im August wurden 68.930 reine Elektroautos neu zugelassen, das waren rund 32 Prozent aller Neuzulassungen und 75 Prozent mehr als ein Jahr zuvor.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "9be20cfbdd8fcf8844fe",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "claim_id": "wt-31724816547fc87d-v2-claim-3",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Der WDR-Text ordnet die Entwicklung so ein, dass sie langfristig die Rechnung des Staates verändert, weil Verbrenner Steuern liefern und E-Autos diese Einnahmen mindern.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "fa0e991f0b872a64db90",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "6595237cf2b7cbbf2750",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "b2199db4a16ecc3d62d1",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "claim_id": "wt-31724816547fc87d-v2-claim-4",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Der Text nennt als mögliche Gegenfinanzierung eine Ladestromsteuer oder ein fahrleistungsabhängiges, nach CO₂-Ausstoß gestaffeltes Modell.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "5538aea603c448998ceb",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "6e323bdf81bcb0b9303d",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "cd18f27c4ea4a1c01cfd",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            },
-            {
-              "claim_id": "wt-31724816547fc87d-v2-claim-5",
-              "story_id": "wt-31724816547fc87d",
-              "claim": "Der ADAC hält die alte Faustregel, ab 15.000 Kilometern pro Jahr lohne sich ein Diesel, nicht mehr für allgemein gültig.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "60159125ccb50bc99d43",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-                  "excerpt_hash": "6b35ba071bf738f3c612",
-                  "checked_at": "2026-09-04T10:23:05.308Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T10:23:05.308Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-              "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T01:00:39.627Z",
-          "source_count": 1
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-04T10:23:05.308Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "review_checkpoint": {
-        "version": "evidence-packet-1",
-        "fingerprint": "472c7101043961e4744b3a286e3e26dabc964cb144c2573ce3a776f8c86cdd9d",
-        "checked_at": "2026-09-04T15:26:48.913Z",
-        "outcome": "no_material_update",
-        "expires_at": "2026-09-04T21:26:48.913Z",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-            "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
-            "summary": "Rekordpreise an der Zapfsäule und gleichzeitig mehr E-Autos auf den Straßen: Das verändert langfristig die Rechnung für den Staat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T19:03:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8",
-            "source_item_id": "4c8d367548f84b1ad48ef1d5229608422141c82930ca37dae093856f90520f0d",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T19:03:18.000Z",
-            "ingested_at": "2026-09-04T15:21:35.641Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/wirtschaft/rekordpreis-sprit-verbrenner-aus-100.html",
-            "title": "Spritpreise auf Rekordhoch: Ab wann lohnt sich E-Auto?",
-            "summary": "Rekordpreise an der Zapfsäule und gleichzeitig mehr E-Autos auf den Straßen: Das verändert langfristig die Rechnung für den Staat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T19:03:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "396b3b70c7ced4f05ac9cd1d4ff3c847a02a7e1d905b0fd0f609ca6513e957d8",
-            "source_item_id": "4c8d367548f84b1ad48ef1d5229608422141c82930ca37dae093856f90520f0d",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T19:03:18.000Z",
-            "ingested_at": "2026-09-04T18:21:48.041Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
-    },
-    {
       "story_id": "wt-edd4484465895b46",
       "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
       "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
@@ -44259,7 +44227,7 @@
       "verification_started_at": "2026-09-04T10:22:26.421Z",
       "publish_ready_at": "2026-09-04T10:22:39.505Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -44739,10 +44707,13 @@
         }
       ],
       "retirement_history": [],
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "7186e44e5200cc57900c5f6de90416a746c77fcb2e3be5f30bf03b62690c804c",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "321f985e38904062f3828e11cfb6e7b92b72b04aeb915966daf5674d7bc4e4ae",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -44774,13 +44745,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -47643,7 +47608,7 @@
       "verification_started_at": "2026-09-04T09:46:55.589Z",
       "publish_ready_at": "2026-09-04T09:47:04.612Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -47974,10 +47939,13 @@
         "generated_at": "2026-09-04T09:49:12.568Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "56fc3e3cc02ffe9de49828a643c8bf86f747e7f0de5938d5ea8d657524a7e3a8",
+      "deepening_checks": 3,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "adc01db3ba388ce232f1bf29cbb1a618b2aa89b1e60ac77425df4a55c6498ec5",
+        "checked_at": "2026-09-04T18:36:20.968Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:36:20.968Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -48009,13 +47977,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -90246,5 +90208,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T18:21:48.041Z"
+  "public_updated_at": "2026-09-04T18:36:20.968Z"
 }

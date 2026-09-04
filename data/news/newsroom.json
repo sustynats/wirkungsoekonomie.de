@@ -109599,7 +109599,7 @@
         "context_formats": [],
         "context_only": false,
         "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
         ],
         "materiality_factors": [
           "Zahl und Art möglicher Wirkungsempfänger",
@@ -217779,7 +217779,253 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die beiden Meldungen wiederholen denselben Arbeitsmarktkern mit identischer Zahl und ohne neue, eigenständige Entwicklung gegenüber dem bereits veröffentlichten Stand."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-1fbb056ccaaf351d",
+      "event_id": "event-35d991525796ba55dcd9",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt nur den bereits veröffentlichten Stand zur Fahndung und den Bekennerschreiben; gegenüber der vorhandenen Vorgeschichte fehlt eine materiell neue Information."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-4fb94d2cebfca746",
+      "event_id": "event-73b1c53517b0e2f5118c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Die Quellen liefern neue, material relevante Fahndungs- und Lageangaben zu kritischer Infrastruktur; der Fall ist damit gegenüber der Erstmeldung substanziell angereichert."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-c84116529aa2d23b",
+      "event_id": "event-e07f28d8aeff022b18e1",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen im Kern die bereits veröffentlichte Meldung zu Milliardenwerten im Elektroschrott; eine materiell neue Entwicklung oder deutlich bessere Primärevidenz fehlt."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-76dd7f8508f81c11",
+      "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Meldungen wiederholen nur den bereits bekannten Streit um die Jury-Uneinigkeit und den Ausschlussantrag; kein materiell neuer Entwicklungsschritt gegenüber dem vorhandenen Stand."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-61d3420f0dd76f70",
+      "event_id": "event-0059d4df349b8d2350cf",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quellen wiederholen nur den erneuten Supreme-Court-Anruf im Briefwahlstreit; gegenüber der bereits veröffentlichten Fassung steht keine substanziell neue, materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-8f76552549f6aa68",
+      "event_id": "event-fea21a345042f920125d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt die bereits erfasste Rettung von zwei Arbeitern; gegenüber der vorhandenen Ticker-Vorgeschichte ist keine substanziell neue Information belegt."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-3c6be5c124113650",
+      "event_id": "event-e36c0e80c02ea72f11c7",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Angaben wiederholen den bereits veröffentlichten Kern: Explosion in Chemnitz, vorläufige Festnahme, Haus unbewohnbar. Keine substanziell neue, belastbar belegte Entwicklung."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-edd4484465895b46",
+      "event_id": "event-4d4eabf7fc99346b711e",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Der neue Clip liefert vor allem eine Flucht-Schilderung; die zentralen Zahlen und der Rettungskern waren im bisherigen Dossier bereits enthalten."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-87c42d6cf088c08e",
+      "event_id": "event-ae1b49037aaef952b5be",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt nur die frühere Ankündigung zur Erasmus-Rückkehr; es fehlt eine materiell neue Entwicklung oder belastbar neue Bestätigung."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-91d18230516d00b2",
+      "event_id": "event-9ff813e069f6534376e1",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die neue Quelle wiederholt den bereits veröffentlichten Kern: Gespräche über Rückführungsabkommen bis Jahresende, ohne neue materielle Entwicklung oder belastbar neue Einordnung."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-31724816547fc87d",
+      "event_id": "event-f2fa5659b171e222bce8",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Meldung bringt konkrete Augustzahlen zu Spritpreisen und E-Auto-Zulassungen sowie deren fiskalische Einordnung. Das ist für Haushalte, Marktanreize und Staatseinnahmen materiell, auch wenn die Beleglage nur eine Quelle umfasst."
+    },
+    {
+      "at": "2026-09-04T18:36:20.968Z",
+      "story_id": "wt-7122b10e5711a154",
+      "event_id": "event-39a76d34400c9aa5a56b",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quelle wiederholt im Kern den bereits veröffentlichten Vorstoß zu einer internationalen KI-Aufsicht; es kommt keine neue materielle Entscheidung oder belastbare Umsetzung hinzu."
     }
   ],
-  "updated_at": "2026-09-04T18:21:48.041Z"
+  "updated_at": "2026-09-04T18:36:20.968Z"
 }
