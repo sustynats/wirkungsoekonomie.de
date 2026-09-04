@@ -30,7 +30,7 @@ ${poll?`<meta name="woek-poll-id" content="${esc(poll.id)}"><meta name="woek-pol
 </head><body class="poll-page">
 <a class="sr-only" href="#poll-main">Zum Inhalt</a>
 ${header}
-<main id="poll-main" class="poll-shell${admin?' poll-admin':''}" data-poll-api="https://130.162.217.58.sslip.io" ${poll?`data-poll-slug="${esc(poll.slug)}" data-poll-id="${esc(poll.id)}"`:''}>
+<main id="poll-main" class="poll-shell${admin?' poll-admin':''}" data-poll-api="https://130.162.217.58.sslip.io" ${poll?`data-poll-slug="${esc(poll.slug)}" data-poll-id="${esc(poll.id)}" data-poll-results-visibility="${esc(poll.results_visibility)}" data-poll-feedback-enabled="${[true,1].includes(poll.feedback_enabled)}"`:''}>
 <nav class="breadcrumb" aria-label="Brotkrumen"><a href="/">Start</a> / ${route==='/umfragen/'?'Umfragen':`<a href="/umfragen/">Umfragen</a> / ${admin?'Verwaltung':'Abstimmen'}`}</nav>
 ${body}
 </main>${footer}

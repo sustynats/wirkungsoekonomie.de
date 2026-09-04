@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T09:21:34.386Z",
+  "updated_at": "2026-09-04T09:30:29.812Z",
   "stories": [
     {
       "story_id": "wt-9c53ae7c184a9cf0",
@@ -388,7 +388,10 @@
         "template_version": "woek-title-3-glass",
         "prompt_version": "woek-editorial-3-concrete",
         "generated_at": "2026-09-04T09:23:00.320Z",
-        "status": "generated"
+        "status": "generated",
+        "refresh_failure": "HIGGSFIELD_TIMEOUT",
+        "refresh_prompt_version": "woek-editorial-4-contextual",
+        "retry_after": "2026-09-04T09:46:19.614Z"
       }
     },
     {
@@ -1071,30 +1074,40 @@
       "content_hash": "bd506080fa506f514ff19e6206344c8c38515ca638281207d19ed2e0faaa6f4e",
       "published": true,
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-ea05f57ab3276aa4-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-6de94d3c01ac553a-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "ef1cc6e4bbb6c16990125d08c58bc925ed14fcbae9a4f7b91aafb6ef5537047c"
+          "sha256": "641978789b2686c5f9387232d506b11e38f948aa523dd0ce099ce49c4f8c4cab"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-ea05f57ab3276aa4-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-6de94d3c01ac553a-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "693d4ccdfb09196a832c84682ddf899474dbd9c39ac5fc53ea01de22238a7da4"
+          "sha256": "b86715c8bf0bf60ac8d6714b3d3f723ade82cc994b909650f3fdecc8ff124d81"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-ea05f57ab3276aa4-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-6de94d3c01ac553a-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "d63e3922afae4b8dedbba35fac22f46e9d702ff2fd357e31ce1152fec86bf25c"
+          "sha256": "5cda6c6bc5cd5a836be2d89f9c2828d2f8ae2d40c7c34ad0cd55c22e09bd22b3"
         },
-        "source_visual": null,
-        "fingerprint": "ea05f57ab3276aa4a47045b551323d5a28fe6087c3b91cfa15db02252d0ae541",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-0ca78e1566a86d6d-source.png",
+          "sha256": "0ca78e1566a86d6decea25f1ac94f9d1f8258d5c50cf0f622cd1292f506ec92b",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:31:22.298Z"
+        },
+        "fingerprint": "6de94d3c01ac553a2696014b3277f19e1a72bb96a8d20155d8631c32cbfa4279",
         "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-3-concrete",
-        "generated_at": "2026-09-04T09:22:54.483Z",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:32:18.822Z",
         "status": "generated"
       },
       "living_file": {
@@ -3055,30 +3068,40 @@
       "content_hash": "9074e54077cc2557e6b472d53219d1b028580f9472a6b5b416a1b4db5452a02e",
       "published": true,
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-e935dbec282ab688-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-104d2ed96f6db99b-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "188ef36e94b9ffffbeaa26d61a4a00f20e8933357545bad415a919b9844c40c5"
+          "sha256": "a245ee6dcf528798e4b9e0b8b65822cc3adc3743cbc089eb1515b25aee32f275"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-e935dbec282ab688-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-104d2ed96f6db99b-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "6042466a090498233a5abf8ca23fa8b064162bfbab444a4813e7e90ec46cc0e3"
+          "sha256": "ebdcb597f4f8e1aca001a60373dfa299ae51d4333a31058afc2e0ee598c9f8bb"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-e935dbec282ab688-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-104d2ed96f6db99b-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "c1ecbe044452f0e90270c6c42f7cda1405a48e45265e118f3bb517488d3dac16"
+          "sha256": "1d8de0d6f18406dc0700a5da4fdd8a938b15981f1f2c2a28460fb7524f73249e"
         },
-        "source_visual": null,
-        "fingerprint": "e935dbec282ab6886ae4216e72c598a02014bf9d344ce39b3450c2c6d7979d22",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-e6a4a2828a5fd334-source.png",
+          "sha256": "e6a4a2828a5fd3346bdbfc4944e10af6c8b927c8f0c555db9ea7296323c1713b",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:32:19.958Z"
+        },
+        "fingerprint": "104d2ed96f6db99b50fe6a7dae00d1f2fc8db0669fe2fbd269a2af10b20f71ec",
         "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-3-concrete",
-        "generated_at": "2026-09-04T08:52:37.468Z",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:33:24.398Z",
         "status": "generated"
       },
       "listed": true,
@@ -5223,33 +5246,41 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-8ba6f3b37efdb0f3-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "7aa337101f53b525977f9f7f168a300ed9c238bb2046047c88ccaa207c4f0bfa"
+          "sha256": "fd1093ab55a55e1574168c686fb45870f52363e42b7835c2235db2d00e44641e"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-8ba6f3b37efdb0f3-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "66ff057c0fd3f6f0ed527396415455841254ac8b5cd8f70d3dd695bec6f1531e"
+          "sha256": "b225af84c0baef4795e954f941fdcf2a7bdf90b18568c9694900d8c5c5c2c154"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-6df78e2125b40e00-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-8ba6f3b37efdb0f3-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "ecc685f210bc9fe0d164430c7c56ac85dbddb071ef81b9fdd098f445da02290c"
+          "sha256": "40a461189d5c4ed0d8473123ff595071c7234c221dd7fbc4e7dc0e6e40b23f06"
         },
-        "source_visual": null,
-        "fingerprint": "6df78e2125b40e003b0e0035225f17db34b0eeedf0a5d609822e200b85c6545c",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-5ee6597a143ba7dd-source.png",
+          "sha256": "5ee6597a143ba7ddad13b561e4732f54f7458acab9ab4193b11bd6988313763b",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:33:25.401Z"
+        },
+        "fingerprint": "8ba6f3b37efdb0f3c62c4224ba647d6ddb389933b1d5111b820abffecc025bba",
         "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-3-concrete",
-        "generated_at": "2026-09-04T08:09:14.248Z",
-        "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_CREDIT_LIMIT",
-        "retry_after": "2026-09-04T14:36:55.407Z"
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:34:59.861Z",
+        "status": "generated"
       }
     },
     {
@@ -7795,32 +7826,41 @@
       "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
       "published": true,
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "0df947168bf053a728d95210de93504ff68e7fa6ac19ba51411c11a253b3aacd"
+          "sha256": "aa872afc339f398f7e77065f9c8aca779a8469cc408643903fe1f949ec50a95e"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "f4872ba48ef54e93b9ead98052ea82ba44cf3487eb63308335848e3125be5e48"
+          "sha256": "eb64c475599e1dada080ee0247e7c29b3d37fa489be3225c5b99f64594518f10"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "9f45853d60c6a90baa7aa2029539696a0097edcd487f763f8f70dc805073f7c6"
+          "sha256": "0411f24ccbe059273d83d12bba2e34209b55dbc5af0d0f9ccad600a08839fbed"
         },
-        "source_visual": null,
-        "fingerprint": "2954e5f7cc7bfcc5370dfbb04512f27f57c1463c3e2bef8bc14ddf81399b43b2",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-ba1fb7a9eda457b1-source.png",
+          "sha256": "ba1fb7a9eda457b1f5214e684cf0f3890523f0b27d9fbc22edf917e9dc98085b",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:35:01.142Z"
+        },
+        "fingerprint": "d6cc75416937a383046ed71db4687e02c3759d58f3d56d5adef7e0ae71d7b34c",
         "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-3-concrete",
-        "generated_at": "2026-09-04T06:38:37.577Z",
-        "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_PREVIOUS_JOB_FAILED"
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:36:01.843Z",
+        "status": "generated"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -8869,7 +8909,10 @@
         "template_version": "woek-title-3-glass",
         "prompt_version": "woek-editorial-3-concrete",
         "generated_at": "2026-09-04T06:38:31.328Z",
-        "status": "generated"
+        "status": "generated",
+        "refresh_failure": "HIGGSFIELD_TIMEOUT",
+        "refresh_prompt_version": "woek-editorial-4-contextual",
+        "retry_after": "2026-09-04T09:52:13.593Z"
       }
     },
     {
@@ -9169,7 +9212,10 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T06:23:48.035Z",
-        "status": "generated"
+        "status": "generated",
+        "refresh_failure": "HIGGSFIELD_TIMEOUT",
+        "refresh_prompt_version": "woek-editorial-4-contextual",
+        "retry_after": "2026-09-04T09:52:53.659Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -10948,30 +10994,40 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-a36a8587cad3a5b6-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-88c6b58ca0c4737d-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "2a6aa00c9f2e974faf9a4ef29eabb3edf42d7e8ffb9c11f65f080080d9481a94"
+          "sha256": "af27fcad8998c8340e282f72b67a02a85c7e5cf9a57e9f37e1e6ab654af53041"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-a36a8587cad3a5b6-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-88c6b58ca0c4737d-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "e35f3e9202ecf0232766d55b3838dcfa5317153269b9817b6790f5561cbda439"
+          "sha256": "e1672d382850301f04f63aa54c16c90993a6b34ae06cd4cb2c763bdcb89b0a93"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-a36a8587cad3a5b6-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-88c6b58ca0c4737d-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "3801605a7e14e72dcd482682ab4dff2c5262282a4b3a19e4a8d6ad75ef18fa20"
+          "sha256": "998042f5ddafcafcb863fca91ba90541740c3e3e8359b321eb0b7d1d2b2fa18e"
         },
-        "source_visual": null,
-        "fingerprint": "a36a8587cad3a5b687ae47d5188939964fc691ee857579c579e9d1738178c420",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T05:44:24.837Z",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-e51789a5ada69339-source.png",
+          "sha256": "e51789a5ada69339b6bc1f77173f63c5e059dc9363ec5d69c2100ae5431fac82",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:37:54.959Z"
+        },
+        "fingerprint": "88c6b58ca0c4737d79647f78d51877e94cf111266c71b3b062ad12d4dc3324dc",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:39:01.770Z",
         "status": "generated"
       }
     },
@@ -11258,28 +11314,28 @@
       "title_image": {
         "mode": "impact_card",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-f23a8f0fc537f9eb-og.png",
           "width": 1200,
           "height": 630,
           "sha256": "60136c50cfe9d1631b7ff39226b8bd332f232beb54b41b2e313994fda6353c2b"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-f23a8f0fc537f9eb-wide.png",
           "width": 1200,
           "height": 675,
           "sha256": "4250ff05efc931b273c8b699bb4a319c76fa4bcfe80c8c71ae197890636285c2"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-5e90e3d035ad3da2-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-f23a8f0fc537f9eb-square.png",
           "width": 1080,
           "height": 1080,
           "sha256": "38450c542e9190b3295fc6284b1f42f98d01983d70d95efbc3c4c332d0573ea8"
         },
         "source_visual": null,
-        "fingerprint": "5e90e3d035ad3da24260ae98f66de9de0490007bd7160264b1ae29672b8b472a",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:54:09.695Z",
+        "fingerprint": "f23a8f0fc537f9eb77cda4f1a3e7a8905f94f221abb28507d591ff09ec2159c5",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:39:07.990Z",
         "status": "generated"
       },
       "listed": true,
@@ -12968,30 +13024,40 @@
       "content_hash": "4e7c1607cd1ae333f321095793cf01fa7977bddd596f71157af24269d997f6ed",
       "published": true,
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-638472ca60841ede-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "c6a4b61837fb5cb3b4602fb01b48e8d221605ff5d3a7523b9a0a0aa0f6e4e845"
+          "sha256": "1b77021cae21b24685977bf77c5b3037b8ecd365e13542732854145c8e5d5d70"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-638472ca60841ede-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "edb13342b9dce8858e278a527556fe57f0e236e345148e5e58bc00f21bf57810"
+          "sha256": "9c3fbd733e4e284aaf8198fe2f8163b010738ef158e84b18c10e3c36b922dd37"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-ce4720eb24d2b1ca-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-638472ca60841ede-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "2b196f2118284e5944f90d9e41d1a95f30f2b679dbef3f6f167ba8752c787f46"
+          "sha256": "7dd04e3e92bb35943dcedf58078efc34be877e0d8bdeee0764d5dfe597f77b5a"
         },
-        "source_visual": null,
-        "fingerprint": "ce4720eb24d2b1cae68b07b831b21542022a53b93244acd4766133f423a0b442",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:30:12.688Z",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-675e4221259f3ada-source.png",
+          "sha256": "675e4221259f3ada093914c9b5806f10fb4a3e39be1556ba9009f9eafd65dfe9",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:39:08.939Z"
+        },
+        "fingerprint": "638472ca60841ede591208ac36345ed801bdb3d275b5c1ea924ca0a59654aade",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:40:00.827Z",
         "status": "generated"
       },
       "listed": true,
@@ -13710,38 +13776,38 @@
       "title_image": {
         "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-13b04b4c46f0a156-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-36218563fde0a483-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "0ba6cd14aade9ce11f55f7fc123e5d9a08c629f83838c04df72715b1e291a39f"
+          "sha256": "f57ed931d89d39136847eb2a8845cb32f1e010b4ef143eb2d82a080dc7bf6488"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-13b04b4c46f0a156-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-36218563fde0a483-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "011542c21e91649e490ea2cf436c36e5f75b9551ab8422704ed209782cb383c0"
+          "sha256": "2a0c8f2386d948b6fb8bf62adad8d0af27ce870bfb7be9f3a7db5aef7cd48b0e"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-13b04b4c46f0a156-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-36218563fde0a483-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "e58d6ba34120189e148db584b21650b9416028e25984ba95afbf0949ac76eddb"
+          "sha256": "4345b7283ecb33a21c66c46c11e5c17a20649ce75775d00dd9a5b302752764d2"
         },
         "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-b3bca18ad2fdb73c-source.png",
-          "sha256": "b3bca18ad2fdb73c66ac1e599a92fab821b5bd4d3fd3395d83a3571830529bc0",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-677959792aa2303f-source.png",
+          "sha256": "677959792aa2303f5f8afb310c276bce5de6b77244601eaa944fefa17ad7aa06",
           "width": 2752,
           "height": 1536,
           "mime": "image/png",
           "provider": "higgsfield",
           "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-2",
-          "generated_at": "2026-09-03T23:45:00.444Z"
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T09:40:01.972Z"
         },
-        "fingerprint": "13b04b4c46f0a156b219fc9cbf0d62be7796d02dcefa31d089b072d1317bd822",
+        "fingerprint": "36218563fde0a48325d557bc53bc9446aa3e6b85c8dafb0ad60b9009d74076a6",
         "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T06:04:26.344Z",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:40:57.639Z",
         "status": "generated"
       },
       "listed": true,
@@ -14722,7 +14788,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T04:53:39.724Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -16393,7 +16460,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T04:39:43.485Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -16762,7 +16830,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T04:39:37.512Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -17849,7 +17918,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T04:08:01.511Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -18533,7 +18603,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T03:39:48.954Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -20391,7 +20463,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T02:54:42.520Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -21605,7 +21678,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T02:53:36.467Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -22148,7 +22223,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T02:38:33.451Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -22937,7 +23014,9 @@
         "template_version": "woek-title-3-glass",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T06:04:34.780Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -24542,7 +24621,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T02:08:01.160Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1,
       "living_file": {
@@ -25536,7 +25617,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:54:27.274Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -27451,7 +27533,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:30:24.514Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -27957,7 +28040,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:30:29.908Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -28480,7 +28565,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:30:35.543Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -29158,7 +29245,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:30:41.318Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -30010,7 +30098,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:30:46.782Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       },
       "deepening_checks": 1
     },
@@ -30710,7 +30799,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:30:57.877Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -31212,7 +31303,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:03.144Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -31659,7 +31752,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:08.712Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -32802,7 +32897,9 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:14.258Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       },
       "deepening_checks": 1
     },
@@ -33824,7 +33921,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:19.791Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       }
     },
     {
@@ -40941,7 +41039,9 @@
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:03:23.686Z",
         "status": "fallback",
-        "fallback_reason": "IMAGE_CONTAINS_TEXT"
+        "fallback_reason": "IMAGE_CONTAINS_TEXT",
+        "retry_after": "2026-09-04T09:30:30.784Z",
+        "refresh_prompt_version": "woek-editorial-4-contextual"
       }
     },
     {
@@ -43017,7 +43117,8 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:37.523Z",
-        "status": "generated"
+        "status": "generated",
+        "retry_after": "2026-09-04T09:30:30.784Z"
       }
     },
     {
@@ -50432,5 +50533,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T09:21:34.386Z"
+  "public_updated_at": "2026-09-04T09:40:57.639Z"
 }
