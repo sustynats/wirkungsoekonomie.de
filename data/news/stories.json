@@ -1,7 +1,1173 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T04:36:37.841Z",
+  "updated_at": "2026-09-04T04:51:14.127Z",
   "stories": [
+    {
+      "story_id": "wt-3c8762489a80692b",
+      "slug": "regionalnachweisregister-soll-abgewickelt-werden-80692b",
+      "title": "Regionalnachweisregister soll abgewickelt werden",
+      "first_seen": "2026-09-02T13:20:00.000Z",
+      "last_updated": "2026-09-04T04:53:25.547Z",
+      "published_at": "2026-09-03T07:58:18.398Z",
+      "updated_at": "2026-09-04T04:53:25.547Z",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Wirtschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-wirtschaft",
+          "publisher": "Deutscher Bundestag – Wirtschaft und Energie",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+          "title": "Regionalnachweisregister soll abgewickelt werden",
+          "summary": "Wirtschaft und Energie/Verordnung Das bisher beim Umweltbundesamt geführte Register für Regionalnachweise soll eingestellt werden. Das geht aus einer Verordnung der Bundesregierung hervor.",
+          "source_type": "official_rss",
+          "published_at": null,
+          "primary_source": true,
+          "source_priority": 90,
+          "source_topic": "Wirtschaft",
+          "content_hash": "172f2e3551e48f1cabca43252bc0c38cab3a386d95b590c02a1d6c6483b5de2d",
+          "source_item_id": "33b94a56561fbbd90863d01d78be3acdf39fa5c35c724c33b6f81a2d54e8cd38",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": null,
+          "ingested_at": "2026-09-04T04:36:37.841Z",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3c8762489a80692b-v2-claim-1",
+          "story_id": "wt-3c8762489a80692b",
+          "claim": "Das Regionalnachweisregister beim Umweltbundesamt soll eingestellt werden.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-wirtschaft",
+          "evidence": [
+            {
+              "source_id": "bundestag-wirtschaft",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+              "excerpt_hash": "3d15c6939552a68cd798",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            },
+            {
+              "source_id": "bundestag-wirtschaft",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+              "excerpt_hash": "2d34d07521bc66bbb008",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:53:25.547Z"
+        },
+        {
+          "claim_id": "wt-3c8762489a80692b-v2-claim-2",
+          "story_id": "wt-3c8762489a80692b",
+          "claim": "Die Bundesregierung begründet die Abwicklung damit, dass das Register in der Praxis wenig genutzt werde und der Verwaltungsaufwand in keinem angemessenen Verhältnis zum Nutzen stehe.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-wirtschaft",
+          "evidence": [
+            {
+              "source_id": "bundestag-wirtschaft",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+              "excerpt_hash": "01f8b7484d68e3038eae",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            },
+            {
+              "source_id": "bundestag-wirtschaft",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+              "excerpt_hash": "0d93d736ad19e6de6546",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:53:25.547Z"
+        },
+        {
+          "claim_id": "wt-3c8762489a80692b-v2-claim-3",
+          "story_id": "wt-3c8762489a80692b",
+          "claim": "Herkunftsnachweise für Strom aus erneuerbaren Energien sollen weiter ausgestellt werden; für die Änderung ist die Zustimmung des Bundestags erforderlich.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-wirtschaft",
+          "evidence": [
+            {
+              "source_id": "bundestag-wirtschaft",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+              "excerpt_hash": "fcf9bacb8abdf32b3287",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            },
+            {
+              "source_id": "bundestag-wirtschaft",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+              "excerpt_hash": "e5b716f01e9705c53da8",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:53:25.547Z"
+        }
+      ],
+      "event_id": "event-a245879abee746aa83eb",
+      "event_first_seen_at": "2026-09-02T13:20:00.000Z",
+      "event_detected_at": "2026-09-02T13:20:00.000Z",
+      "verification_started_at": "2026-09-04T04:53:13.531Z",
+      "publish_ready_at": "2026-09-04T04:53:25.547Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-wirtschaft"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der Bundestag stimmt der Verordnung zu.",
+          "source_id": "bundestag-wirtschaft",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss oder Ablehnung im parlamentarischen Verfahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8cc39c042eef2655",
+          "announced_at": null,
+          "follow_up_date": "2026-09-11T04:53:25.547Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-0f8b5cc0a77ff587-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "466c304e677000ef11e1e6d46d0bfd78caff7dde9fdf78230279f20ae0dc37e5"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-0f8b5cc0a77ff587-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "c9cb1eaab0b7ef112287d96edc86069dd17214021becc2953c7a867e8b3d5a75"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-0f8b5cc0a77ff587-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "e96acd8b1e7e72ebaa6d0490d028f3f3883bf9a90db0b7a008f50ed072aa5ed7"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-b3bca18ad2fdb73c-source.png",
+          "sha256": "b3bca18ad2fdb73c66ac1e599a92fab821b5bd4d3fd3395d83a3571830529bc0",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-2",
+          "generated_at": "2026-09-03T23:45:00.444Z"
+        },
+        "fingerprint": "0f8b5cc0a77ff58776514f70c190c29304d6e586f888e09d836fd7ad749222a1",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T04:53:48.363Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Die Wirtschaft-und-Energie-Meldung berichtet über eine Verordnung der Bundesregierung zur Abwicklung des Regionalnachweisregisters. Das bisher beim Umweltbundesamt geführte Register soll eingestellt werden; der Betrieb des Regionalnachweisregisters soll beendet werden. Als Begründung nennt das Papier, das Register sei in der Praxis wenig genutzt worden und der administrative Aufwand für Registerführung und Meldepflichten stehe nicht im Verhältnis zum Nutzen. Zugleich heißt es, Herkunftsnachweise für Strom aus erneuerbaren Energien würden weiter ausgestellt und das Herkunftsnachweisregister werde weiter betrieben.\n\nDie Meldung nennt außerdem, dass die Verordnung mit EU-Recht vereinbar sei. Für die Änderung sei die Zustimmung des Bundestags erforderlich. Ein genauer Inkrafttretenszeitpunkt oder weitere Übergangsregeln werden in dem kurzen Text nicht genannt.",
+      "analysis": {
+        "story_id": "wt-3c8762489a80692b",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Bundesregierung will das Regionalnachweisregister einstellen. Für die Änderung braucht es noch die Zustimmung des Bundestags.",
+        "detail_summary": "Gesichert ist zunächst nur, dass die Bundesregierung per Verordnung das Regionalnachweisregister abwickeln und den Betrieb einstellen will. Die Begründung verweist auf geringe Nutzung und auf einen aus ihrer Sicht zu hohen administrativen Aufwand. Materiell relevant ist das, weil damit ein bislang geltendes Instrument zur regionalen Herkunftskennzeichnung von Strom wegfällt und Melde- sowie Registerpflichten entfallen würden. Der Wirkpfad führt über veränderte Regeln und Pflichten zu geringeren Verwaltungskosten, zugleich aber zu einem anderen Informations- und Anreizrahmen im Strommarkt. Mögliche Folge ist, dass regionale Stromkennzeichnung einfacher wird, während ein zuvor vorgesehenes Akzeptanzinstrument entfällt. Wie stark das tatsächlich auf Marktverhalten, Akzeptanz oder Investitionen wirkt, bleibt offen, weil der Text dazu keine Daten, Übergangsregeln oder Folgenabschätzung enthält.",
+        "why_relevant": "Die Meldung beschreibt eine geplante Regeländerung mit potenziell spürbaren Folgen für Stromkennzeichnung, Verwaltungsaufwand und Anreizstrukturen im Bereich erneuerbare Energien.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Anlagenbetreiber, Elektrizitätsversorgungsunternehmen und letztlich Stromkundinnen und -kunden über geänderte Kennzeichnungs- und Meldeprozesse."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Bezug liegt im System der Erneuerbaren-Förderung und der regionalen Herkunftskennzeichnung; direkte Klimaeffekte sind aus der Quelle aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht um ein Verordnungsverfahren mit Bundestagszustimmung; demokratische Korrekturfähigkeit ist verfahrensrelevant, aber nicht der Hauptwirkpfad."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Abschaffung kann Verwaltungsaufwand senken und ein wenig genutztes Register entfallen lassen; zugleich verändert sie den Rahmen regionaler Stromherkunftsnachweise.",
+        "impact_risks": [
+          "Das regionale Herkunftssignal könnte an Sichtbarkeit verlieren.",
+          "Bisherige Informations- und Akzeptanzeffekte könnten wegfallen, ohne dass die Quelle die Folgen beziffert."
+        ],
+        "mechanisms": [
+          "Änderung von Register- und Meldepflichten",
+          "Verringerung administrativer Lasten",
+          "Verschiebung von Transparenz- und Kennzeichnungsregeln"
+        ],
+        "first_order": [
+          "Das Register wird beendet.",
+          "Pflichten für Registerführung und Meldung entfallen."
+        ],
+        "second_order": [
+          "Unternehmen könnten geringere Bürokratiekosten haben.",
+          "Die regionale Stromkennzeichnung könnte im Markt an Bedeutung verlieren."
+        ],
+        "third_order": [
+          "Anreizstrukturen für regionale Herkunftsnachweise könnten sich verschieben.",
+          "Langfristig könnte die Akzeptanzkommunikation für Erneuerbare anders organisiert werden."
+        ],
+        "systemic_relevance": "Systemisch relevant ist die Meldung vor allem als Regeländerung in einem Markt mit mehreren Akteuren und standardisierten Nachweisprozessen; die Größenordnung bleibt aber unklar.",
+        "transformation_potential": "Transformativ ist der Vorgang nur begrenzt: Er verändert ein spezifisches Nachweisinstrument, nicht das Grundmodell der Stromversorgung oder der Erneuerbaren-Förderung.",
+        "resilience": "Die Quelle deutet auf Abbau von Doppelstrukturen und Verwaltungslast hin; ob das die Resilienz verbessert oder Informationsreserven mindert, bleibt offen.",
+        "side_effects": [
+          "Weniger Bürokratie für betroffene Unternehmen",
+          "Möglicher Verlust eines regionalen Transparenzelements"
+        ],
+        "uncertainties": [
+          "Unklar sind Übergangsregeln und der genaue Zeitplan.",
+          "Offen bleibt, wie groß die praktische Nutzung tatsächlich war.",
+          "Nicht belegt ist, welche Folgen für Akzeptanz oder Marktverhalten eintreten."
+        ],
+        "evidence_level": "single primary-source statement with caveats",
+        "attribution": "Die Bewertung stützt sich auf die Bundestagsmeldung zur Verordnung; unabhängige Bestätigung oder Folgedaten liegen hier nicht vor.",
+        "watch_next": [
+          "Ob der Bundestag der Verordnung zustimmt und ob ein Start- oder Übergangstermin genannt wird."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 12"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_with_caveats",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung kündigt eine konkrete Regeländerung an, die Pflichten und einen Marktbaustein der Stromkennzeichnung betrifft. Sie ist neu und materiell, auch wenn Umsetzung und Folgen noch offen sind."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T07:58:18.398Z",
+          "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
+          "analysis": {
+            "story_id": "wt-3c8762489a80692b",
+            "summary": "Das Regionalnachweisregister soll nach Regierungsverordnung eingestellt werden. Eine vorsichtige Ex-ante-Einordnung ist möglich, Wirkungen sind noch nicht belegt.",
+            "detail_summary": "Fakt ist die geplante Einstellung des beim Umweltbundesamt geführten Registers. Der Wirkungspfad liegt in geänderten Regeln für Nachweise zu regionalem Strombezug. Relevanz entsteht für Transparenz, Marktkommunikation und Vertrauen. Eingetretene Wirkung ist nicht belegt. Der Kontext der Verordnung muss für Verteilungs- und Klimafolgen geprüft werden.",
+            "why_relevant": "Energie-Nachweisregeln können Transparenz, Marktanreize und Vertrauen in Ökostromangebote berühren.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sein können Verbraucher und Anbieter, soweit regionale Stromnachweise genutzt werden."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Klimarelevanz ist möglich, aber ein direkter Emissionspfad ist aus den Daten nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Nachweisregister betreffen nachvollziehbare Information und institutionelle Prüfbarkeit."
+            },
+            "importance": "mittel",
+            "impact_potential": "Potenzial liegt in vereinfachten Regeln oder veränderter Nachweislogik; Richtung und Stärke bleiben offen.",
+            "impact_risks": [
+              "Weniger Nachweistransparenz könnte Vertrauen oder Vergleichbarkeit schwächen."
+            ],
+            "mechanisms": [
+              "Regeländerung verändert Verbindlichkeiten, Datenflüsse und nutzbare Herkunftsinformationen."
+            ],
+            "first_order": [
+              "Mögliche Änderung bei Registrierung, Nutzung und Prüfung regionaler Nachweise."
+            ],
+            "second_order": [
+              "Marktkommunikation zu regionalem Strombezug könnte sich verschieben."
+            ],
+            "third_order": [
+              "Langfristige Effekte auf Vertrauen in Energiewende-Kommunikation bleiben offen."
+            ],
+            "systemic_relevance": "Mittel, weil Energieinformationen Markt- und Vertrauensfunktionen haben können.",
+            "transformation_potential": "Begrenzt bis mittel; ohne Kontext ist kein Transformationsbeitrag belegbar.",
+            "resilience": "Resilienz hängt davon ab, ob Ersatz- oder Übergangsregeln Transparenz sichern.",
+            "side_effects": [
+              "Administrative Entlastung ist denkbar, aber aus den Daten nicht nachgewiesen."
+            ],
+            "uncertainties": [
+              "Unklar sind Gründe, Übergangsregeln, betroffene Akteure und Ersatzmechanismen."
+            ],
+            "evidence_level": "Primärquelle liegt vor; vollständiger Verordnungskontext fehlt.",
+            "attribution": "Ex ante keine Zurechnung tatsächlicher Wirkungen; nur möglicher Regel-Wirkpfad.",
+            "watch_next": [
+              "Verordnungstext, Übergangsfristen, Ersatzregeln und Stellungnahmen prüfen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7 und 13 als Energie- und Klimarahmen."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            },
+            {
+              "title": "Regionalnachweisregister soll abgewickelt werden",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814"
+            },
+            {
+              "title": "Für bezahlbare Windenergie auf See",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-windenergie-auf-see-gesetz-2451190"
+            }
+          ],
+          "source_summary": "Die Bundesregierung schlägt vor, das beim Umweltbundesamt geführte Regionalnachweisregister einzustellen. Das Register dokumentiert Nachweise, mit denen Stromlieferanten gegenüber Endverbrauchern die regionale Herkunft verbrauchten Stroms aus erneuerbaren Energien bestätigen können. Nach Darstellung der Verordnung wurde das Instrument in der Praxis wenig genutzt und erreichte das beabsichtigte Ziel, die Akzeptanz für zusätzliche Anlagen erneuerbarer Energien zu fördern, nicht.\n\nAls weiteren Grund nennt die Vorlage den administrativen Aufwand der Registerführung und die Meldepflichten für Anlagenbetreiber und Energieversorgungsunternehmen. Diese stünden laut Bundesregierung nicht in einem angemessenen Verhältnis zum Nutzen. Eine europarechtliche Pflicht für Regionalnachweise bestehe nicht. Das gesonderte Herkunftsnachweisregister für Strom aus erneuerbaren Energien soll dagegen weitergeführt werden. Für die Verordnungsänderung ist nach der Bundestagsmeldung die Zustimmung des Deutschen Bundestages erforderlich; ein Abschluss dieses Verfahrens wird noch nicht berichtet."
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T04:53:25.547Z",
+          "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
+          "source_summary": "Die Wirtschaft-und-Energie-Meldung berichtet über eine Verordnung der Bundesregierung zur Abwicklung des Regionalnachweisregisters. Das bisher beim Umweltbundesamt geführte Register soll eingestellt werden; der Betrieb des Regionalnachweisregisters soll beendet werden. Als Begründung nennt das Papier, das Register sei in der Praxis wenig genutzt worden und der administrative Aufwand für Registerführung und Meldepflichten stehe nicht im Verhältnis zum Nutzen. Zugleich heißt es, Herkunftsnachweise für Strom aus erneuerbaren Energien würden weiter ausgestellt und das Herkunftsnachweisregister werde weiter betrieben.\n\nDie Meldung nennt außerdem, dass die Verordnung mit EU-Recht vereinbar sei. Für die Änderung sei die Zustimmung des Bundestags erforderlich. Ein genauer Inkrafttretenszeitpunkt oder weitere Übergangsregeln werden in dem kurzen Text nicht genannt.",
+          "analysis": {
+            "story_id": "wt-3c8762489a80692b",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Bundesregierung will das Regionalnachweisregister einstellen. Für die Änderung braucht es noch die Zustimmung des Bundestags.",
+            "detail_summary": "Gesichert ist zunächst nur, dass die Bundesregierung per Verordnung das Regionalnachweisregister abwickeln und den Betrieb einstellen will. Die Begründung verweist auf geringe Nutzung und auf einen aus ihrer Sicht zu hohen administrativen Aufwand. Materiell relevant ist das, weil damit ein bislang geltendes Instrument zur regionalen Herkunftskennzeichnung von Strom wegfällt und Melde- sowie Registerpflichten entfallen würden. Der Wirkpfad führt über veränderte Regeln und Pflichten zu geringeren Verwaltungskosten, zugleich aber zu einem anderen Informations- und Anreizrahmen im Strommarkt. Mögliche Folge ist, dass regionale Stromkennzeichnung einfacher wird, während ein zuvor vorgesehenes Akzeptanzinstrument entfällt. Wie stark das tatsächlich auf Marktverhalten, Akzeptanz oder Investitionen wirkt, bleibt offen, weil der Text dazu keine Daten, Übergangsregeln oder Folgenabschätzung enthält.",
+            "why_relevant": "Die Meldung beschreibt eine geplante Regeländerung mit potenziell spürbaren Folgen für Stromkennzeichnung, Verwaltungsaufwand und Anreizstrukturen im Bereich erneuerbare Energien.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind Anlagenbetreiber, Elektrizitätsversorgungsunternehmen und letztlich Stromkundinnen und -kunden über geänderte Kennzeichnungs- und Meldeprozesse."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Der Bezug liegt im System der Erneuerbaren-Förderung und der regionalen Herkunftskennzeichnung; direkte Klimaeffekte sind aus der Quelle aber nicht belegt."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Es geht um ein Verordnungsverfahren mit Bundestagszustimmung; demokratische Korrekturfähigkeit ist verfahrensrelevant, aber nicht der Hauptwirkpfad."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Abschaffung kann Verwaltungsaufwand senken und ein wenig genutztes Register entfallen lassen; zugleich verändert sie den Rahmen regionaler Stromherkunftsnachweise.",
+            "impact_risks": [
+              "Das regionale Herkunftssignal könnte an Sichtbarkeit verlieren.",
+              "Bisherige Informations- und Akzeptanzeffekte könnten wegfallen, ohne dass die Quelle die Folgen beziffert."
+            ],
+            "mechanisms": [
+              "Änderung von Register- und Meldepflichten",
+              "Verringerung administrativer Lasten",
+              "Verschiebung von Transparenz- und Kennzeichnungsregeln"
+            ],
+            "first_order": [
+              "Das Register wird beendet.",
+              "Pflichten für Registerführung und Meldung entfallen."
+            ],
+            "second_order": [
+              "Unternehmen könnten geringere Bürokratiekosten haben.",
+              "Die regionale Stromkennzeichnung könnte im Markt an Bedeutung verlieren."
+            ],
+            "third_order": [
+              "Anreizstrukturen für regionale Herkunftsnachweise könnten sich verschieben.",
+              "Langfristig könnte die Akzeptanzkommunikation für Erneuerbare anders organisiert werden."
+            ],
+            "systemic_relevance": "Systemisch relevant ist die Meldung vor allem als Regeländerung in einem Markt mit mehreren Akteuren und standardisierten Nachweisprozessen; die Größenordnung bleibt aber unklar.",
+            "transformation_potential": "Transformativ ist der Vorgang nur begrenzt: Er verändert ein spezifisches Nachweisinstrument, nicht das Grundmodell der Stromversorgung oder der Erneuerbaren-Förderung.",
+            "resilience": "Die Quelle deutet auf Abbau von Doppelstrukturen und Verwaltungslast hin; ob das die Resilienz verbessert oder Informationsreserven mindert, bleibt offen.",
+            "side_effects": [
+              "Weniger Bürokratie für betroffene Unternehmen",
+              "Möglicher Verlust eines regionalen Transparenzelements"
+            ],
+            "uncertainties": [
+              "Unklar sind Übergangsregeln und der genaue Zeitplan.",
+              "Offen bleibt, wie groß die praktische Nutzung tatsächlich war.",
+              "Nicht belegt ist, welche Folgen für Akzeptanz oder Marktverhalten eintreten."
+            ],
+            "evidence_level": "single primary-source statement with caveats",
+            "attribution": "Die Bewertung stützt sich auf die Bundestagsmeldung zur Verordnung; unabhängige Bestätigung oder Folgedaten liegen hier nicht vor.",
+            "watch_next": [
+              "Ob der Bundestag der Verordnung zustimmt und ob ein Start- oder Übergangstermin genannt wird."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 12"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_with_caveats",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung kündigt eine konkrete Regeländerung an, die Pflichten und einen Marktbaustein der Stromkennzeichnung betrifft. Sie ist neu und materiell, auch wenn Umsetzung und Folgen noch offen sind."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-3c8762489a80692b-v2-claim-1",
+              "story_id": "wt-3c8762489a80692b",
+              "claim": "Das Regionalnachweisregister beim Umweltbundesamt soll eingestellt werden.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-wirtschaft",
+              "evidence": [
+                {
+                  "source_id": "bundestag-wirtschaft",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+                  "excerpt_hash": "3d15c6939552a68cd798",
+                  "checked_at": "2026-09-04T04:53:25.547Z"
+                },
+                {
+                  "source_id": "bundestag-wirtschaft",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+                  "excerpt_hash": "2d34d07521bc66bbb008",
+                  "checked_at": "2026-09-04T04:53:25.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            },
+            {
+              "claim_id": "wt-3c8762489a80692b-v2-claim-2",
+              "story_id": "wt-3c8762489a80692b",
+              "claim": "Die Bundesregierung begründet die Abwicklung damit, dass das Register in der Praxis wenig genutzt werde und der Verwaltungsaufwand in keinem angemessenen Verhältnis zum Nutzen stehe.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-wirtschaft",
+              "evidence": [
+                {
+                  "source_id": "bundestag-wirtschaft",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+                  "excerpt_hash": "01f8b7484d68e3038eae",
+                  "checked_at": "2026-09-04T04:53:25.547Z"
+                },
+                {
+                  "source_id": "bundestag-wirtschaft",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+                  "excerpt_hash": "0d93d736ad19e6de6546",
+                  "checked_at": "2026-09-04T04:53:25.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            },
+            {
+              "claim_id": "wt-3c8762489a80692b-v2-claim-3",
+              "story_id": "wt-3c8762489a80692b",
+              "claim": "Herkunftsnachweise für Strom aus erneuerbaren Energien sollen weiter ausgestellt werden; für die Änderung ist die Zustimmung des Bundestags erforderlich.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-wirtschaft",
+              "evidence": [
+                {
+                  "source_id": "bundestag-wirtschaft",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+                  "excerpt_hash": "fcf9bacb8abdf32b3287",
+                  "checked_at": "2026-09-04T04:53:25.547Z"
+                },
+                {
+                  "source_id": "bundestag-wirtschaft",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+                  "excerpt_hash": "e5b716f01e9705c53da8",
+                  "checked_at": "2026-09-04T04:53:25.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:53:25.547Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundestag-wirtschaft",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+              "content_hash": "172f2e3551e48f1cabca43252bc0c38cab3a386d95b590c02a1d6c6483b5de2d"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T07:58:18.398Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T04:53:25.547Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-972d20af6da2b586",
+      "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
+      "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
+      "first_seen": "2026-09-02T06:00:00.000Z",
+      "last_updated": "2026-09-04T04:51:34.536Z",
+      "published_at": "2026-09-04T04:51:34.536Z",
+      "updated_at": "2026-09-04T04:51:34.536Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+          "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
+          "summary": "Der Fund einer Sprengstoff-Drohne am Leipziger Flughafen zeigt deutlich: Deutschland befindet sich zunehmend im Fokus hybrider Bedrohungen, Sabotagen und Drohnenangriffen. Was das bedeutet und was die Bundesregierung dagegen tut, erfahren Sie hier.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T06:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c",
+          "source_item_id": "2eff7152390aa52f9a213db084fb9a5a808bddbacffcf1a4e73720968fce01dc",
+          "publisher_id": "bundesregierung",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-02T06:00:00.000Z",
+          "ingested_at": "2026-09-04T04:36:37.841Z",
+          "provenance": {
+            "origin": "publisher:bundesregierung",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-972d20af6da2b586-v1-claim-1",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Die Bundesregierung sagt, sie habe auf die hybride Bedrohungslage bereits reagiert und mehrere Maßnahmen zur Drohnenabwehr umgesetzt oder angestoßen.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "c12ee13edf469d09c337",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "070ab6ab7d0e4a3186c1",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "3ef794fa2eeae01740b4",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:51:34.536Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v1-claim-2",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Im März 2026 ist das KRITIS-Dachgesetz in Kraft getreten und soll den Schutz kritischer Infrastruktur in mehreren Sektoren verbessern.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "bb14aac6c8594bbde2b8",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "b949af7310fbb61abe82",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "739452d40ad81434f254",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:51:34.536Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v1-claim-3",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Die Bundespolizei verfügt seit Dezember 2025 über eine bundesweit eingesetzte Drohnenabwehreinheit mit zunächst 130 Mitarbeiterinnen und Mitarbeitern und 100 Millionen Euro Investitionen.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "9f374b0820e5467b320e",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "24cb284b7d2a96246414",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:51:34.536Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v1-claim-4",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Bund und Länder haben ein Drohnenabwehrzentrum eingerichtet, das ein nationales Lagebild zu Drohnenbewegungen erstellen und Risiken gemeinsam bewerten soll.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "c602d447d6fddc49d70e",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "7bc153e7ff498f2d4d04",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:51:34.536Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v1-claim-5",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Die Bundesregierung nennt vermehrte illegale Drohnenflüge über kritische Infrastruktur und führt die Hochstufung der Bedrohungslage unter anderem auf mehr Hinweise aus Geheimdiensten und eigene Erkenntnisse zurück.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "98c3a42746cca4c8962c",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "1b3598c6425423988f5f",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "5475e8e7d75739b042f6",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:51:34.536Z"
+        }
+      ],
+      "event_id": "event-3c4cec37699684f265d9",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T04:51:21.931Z",
+      "publish_ready_at": "2026-09-04T04:51:34.536Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Bundesregierung veröffentlicht eine FAQ-Seite zu hybriden Angriffen und Drohnenvorfällen. Als Anlass nennt sie den Fund einer mit Sprengstoff bestückten Drohne am Leipziger Flughafen und bezeichnet den Vorfall als sehr ernst zu nehmend. Zugleich verweist sie auf eine fortlaufend verfolgte Lage und auf Beratungen im Nationalen Sicherheitsrat und im Bundeskabinett.\n\nDie Seite перечисlt mehrere Maßnahmen: Das KRITIS-Dachgesetz sei im März 2026 in Kraft getreten, die Bundespolizei habe seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Beschäftigten, dafür würden 100 Millionen Euro investiert. Außerdem sei ein Drohnenabwehrzentrum von Bund und Ländern eingerichtet worden. Die Bundesregierung nennt zudem eine Reform des Bundespolizeigesetzes, Änderungen am Luftsicherheitsgesetz und verweist auf einen Anstieg illegaler Drohnenflüge über kritische Infrastruktur.",
+      "analysis": {
+        "story_id": "wt-972d20af6da2b586",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Die Bundesregierung beschreibt eine verschärfte Bedrohungslage durch hybride Angriffe und nennt mehrere bereits laufende Gegenmaßnahmen. Dazu gehören neue Befugnisse, eine Drohnenabwehreinheit und ein gemeinsames Lagezentrum.",
+        "detail_summary": "Gesichert ist zunächst die politische Reaktion der Bundesregierung auf die von ihr geschilderte hybride Bedrohungslage. Die Quelle nennt den Leipziger Drohnenvorfall als Auslöser und verweist auf konkrete Maßnahmen wie das im März 2026 in Kraft getretene KRITIS-Dachgesetz, die Drohnenabwehreinheit der Bundespolizei und ein Drohnenabwehrzentrum von Bund und Ländern. Für die Wirkung ist relevant, dass hier nicht nur kommuniziert, sondern Sicherheitsarchitektur, Zuständigkeiten und technische Abwehrkapazitäten verändert werden. Der Wirkpfad läuft über frühere Erkennung, koordiniertere Lagebewertung und schnellere Abwehr von Vorfällen an kritischer Infrastruktur. Möglich sind dadurch geringere Verwundbarkeit und bessere Resilienz, zugleich bleiben Umfang, Effektivität und tatsächliche Umsetzung der Maßnahmen offen. Die Quelle ist jedoch eine Regierungsdarstellung; unabhängige Bestätigung der Lagebewertung oder der behaupteten Wirksamkeit liegt hier nicht vor.",
+        "why_relevant": "Die Meldung beschreibt staatliche Sicherheitsmaßnahmen mit möglichem Einfluss auf kritische Infrastruktur, Abwehrkapazitäten und Zuständigkeiten. Das ist materiell, weil Regeln, Ressourcen und Schutzarchitektur verändert werden.",
+        "status": "laufende Umsetzung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Maßnahmen zielen auf Schutz von Bevölkerung und kritischer Infrastruktur vor Drohnen- und Sabotagevorfällen. Betroffen sind Sicherheitslage, öffentliche Dienste und mögliche Alltagsstörungen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht beschrieben. Allenfalls indirekt kann der Schutz von Versorgungsinfrastruktur Umweltfolgen von Ausfällen begrenzen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle betrifft Sicherheitsstaat, Zuständigkeiten und Eingriffsbefugnisse. Für demokratische Kontrolle relevant sind Transparenz, Verhältnismäßigkeit und spätere parlamentarische Prüfung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche höhere Abwehr- und Reaktionsfähigkeit gegen Drohnenvorfälle an kritischer Infrastruktur sowie bessere Koordination zwischen Bund, Ländern und Sicherheitsbehörden.",
+        "impact_risks": [
+          "Ausweitung von Sicherheitsbefugnissen ohne ausreichend transparente Kontrolle",
+          "Fehlallokation von Ressourcen bei unklarer tatsächlicher Bedrohungslage",
+          "Technische und organisatorische Lücken trotz angekündigter Maßnahmen"
+        ],
+        "mechanisms": [
+          "Rechtsänderungen erweitern Befugnisse und Zuständigkeiten",
+          "Ein Lagezentrum bündelt Informationen und Risikobewertungen",
+          "Spezialisierte Einheiten verbessern Erkennung und Abwehr von Drohnen"
+        ],
+        "first_order": [
+          "mehr behördliche Kapazität zur Drohnenabwehr",
+          "neue Mindeststandards und Meldepflichten für kritische Infrastruktur"
+        ],
+        "second_order": [
+          "veränderte Sicherheitskosten für Betreiber kritischer Infrastruktur",
+          "mögliche Verlagerung von Bedrohungen in andere Angriffsformen"
+        ],
+        "third_order": [
+          "dauerhafte Verschiebung der Sicherheitsarchitektur zugunsten präventiver Überwachung",
+          "mögliche neue Standards für den Schutz kritischer Versorgungssysteme"
+        ],
+        "systemic_relevance": "Die Meldung berührt die Resilienz kritischer Infrastruktur und damit einen systemrelevanten Bereich mit möglichen Kaskaden auf Energie, Transport, Gesundheit und Verwaltung.",
+        "transformation_potential": "Begrenzt bis mittel: eher Ausbau und Verdichtung bestehender Sicherheitsstrukturen als ein grundlegend neues Regime.",
+        "resilience": "Potenzial zur Stärkung von Resilienz durch bessere Lagebilder, Abwehr und Meldewege; die tatsächliche Robustheit bleibt in der Quelle unbelegt.",
+        "side_effects": [
+          "höhere Kosten für Staat und Betreiber",
+          "mögliche Normalisierung eines dauerhaft erhöhten Sicherheitsniveaus",
+          "mehr Koordinationsaufwand zwischen Bund, Ländern und Betreibern"
+        ],
+        "uncertainties": [
+          "ob die genannten Maßnahmen bereits vollständig umgesetzt sind",
+          "wie wirksam die neue Drohnenabwehr in der Praxis ist",
+          "welche konkreten Vorfälle tatsächlich staatlich gesteuert waren"
+        ],
+        "evidence_level": "primärquellenbasiert, aber ohne unabhängige Bestätigung der Wirksamkeit oder der Lagezuschreibung",
+        "attribution": "Die Maßnahmen und Bewertungen werden von der Bundesregierung selbst dargestellt; die Quelle ist primär, aber interessengeleitet.",
+        "watch_next": [
+          "Umsetzung der Gesetzesänderungen und operative Wirksamkeit der Drohnenabwehr beobachten"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 9, 11, 16"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Die Quelle enthält neue staatliche Maßnahmen und einen konkreten Sicherheitskontext mit Bezug zu kritischer Infrastruktur. Das ist materiell und nicht bloß eine Meinungsäußerung."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Mitarbeiterinnen und Mitarbeiter",
+              "value": "130",
+              "unit": "Personen",
+              "context": "Größe der neuen Drohnenabwehreinheit"
+            },
+            {
+              "label": "Investition",
+              "value": "100 Millionen",
+              "unit": "Euro",
+              "context": "Bundesmittel für die Drohnenabwehreinheit"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "kommunen",
+            "europa"
+          ],
+          "timeline": [
+            {
+              "date": "2025-12",
+              "label": "Drohnenabwehreinheit der Bundespolizei"
+            },
+            {
+              "date": "2026-03",
+              "label": "KRITIS-Dachgesetz in Kraft"
+            }
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T04:51:34.536Z",
+          "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
+          "source_summary": "Die Bundesregierung veröffentlicht eine FAQ-Seite zu hybriden Angriffen und Drohnenvorfällen. Als Anlass nennt sie den Fund einer mit Sprengstoff bestückten Drohne am Leipziger Flughafen und bezeichnet den Vorfall als sehr ernst zu nehmend. Zugleich verweist sie auf eine fortlaufend verfolgte Lage und auf Beratungen im Nationalen Sicherheitsrat und im Bundeskabinett.\n\nDie Seite перечисlt mehrere Maßnahmen: Das KRITIS-Dachgesetz sei im März 2026 in Kraft getreten, die Bundespolizei habe seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Beschäftigten, dafür würden 100 Millionen Euro investiert. Außerdem sei ein Drohnenabwehrzentrum von Bund und Ländern eingerichtet worden. Die Bundesregierung nennt zudem eine Reform des Bundespolizeigesetzes, Änderungen am Luftsicherheitsgesetz und verweist auf einen Anstieg illegaler Drohnenflüge über kritische Infrastruktur.",
+          "analysis": {
+            "story_id": "wt-972d20af6da2b586",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Die Bundesregierung beschreibt eine verschärfte Bedrohungslage durch hybride Angriffe und nennt mehrere bereits laufende Gegenmaßnahmen. Dazu gehören neue Befugnisse, eine Drohnenabwehreinheit und ein gemeinsames Lagezentrum.",
+            "detail_summary": "Gesichert ist zunächst die politische Reaktion der Bundesregierung auf die von ihr geschilderte hybride Bedrohungslage. Die Quelle nennt den Leipziger Drohnenvorfall als Auslöser und verweist auf konkrete Maßnahmen wie das im März 2026 in Kraft getretene KRITIS-Dachgesetz, die Drohnenabwehreinheit der Bundespolizei und ein Drohnenabwehrzentrum von Bund und Ländern. Für die Wirkung ist relevant, dass hier nicht nur kommuniziert, sondern Sicherheitsarchitektur, Zuständigkeiten und technische Abwehrkapazitäten verändert werden. Der Wirkpfad läuft über frühere Erkennung, koordiniertere Lagebewertung und schnellere Abwehr von Vorfällen an kritischer Infrastruktur. Möglich sind dadurch geringere Verwundbarkeit und bessere Resilienz, zugleich bleiben Umfang, Effektivität und tatsächliche Umsetzung der Maßnahmen offen. Die Quelle ist jedoch eine Regierungsdarstellung; unabhängige Bestätigung der Lagebewertung oder der behaupteten Wirksamkeit liegt hier nicht vor.",
+            "why_relevant": "Die Meldung beschreibt staatliche Sicherheitsmaßnahmen mit möglichem Einfluss auf kritische Infrastruktur, Abwehrkapazitäten und Zuständigkeiten. Das ist materiell, weil Regeln, Ressourcen und Schutzarchitektur verändert werden.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Maßnahmen zielen auf Schutz von Bevölkerung und kritischer Infrastruktur vor Drohnen- und Sabotagevorfällen. Betroffen sind Sicherheitslage, öffentliche Dienste und mögliche Alltagsstörungen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht beschrieben. Allenfalls indirekt kann der Schutz von Versorgungsinfrastruktur Umweltfolgen von Ausfällen begrenzen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Quelle betrifft Sicherheitsstaat, Zuständigkeiten und Eingriffsbefugnisse. Für demokratische Kontrolle relevant sind Transparenz, Verhältnismäßigkeit und spätere parlamentarische Prüfung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche höhere Abwehr- und Reaktionsfähigkeit gegen Drohnenvorfälle an kritischer Infrastruktur sowie bessere Koordination zwischen Bund, Ländern und Sicherheitsbehörden.",
+            "impact_risks": [
+              "Ausweitung von Sicherheitsbefugnissen ohne ausreichend transparente Kontrolle",
+              "Fehlallokation von Ressourcen bei unklarer tatsächlicher Bedrohungslage",
+              "Technische und organisatorische Lücken trotz angekündigter Maßnahmen"
+            ],
+            "mechanisms": [
+              "Rechtsänderungen erweitern Befugnisse und Zuständigkeiten",
+              "Ein Lagezentrum bündelt Informationen und Risikobewertungen",
+              "Spezialisierte Einheiten verbessern Erkennung und Abwehr von Drohnen"
+            ],
+            "first_order": [
+              "mehr behördliche Kapazität zur Drohnenabwehr",
+              "neue Mindeststandards und Meldepflichten für kritische Infrastruktur"
+            ],
+            "second_order": [
+              "veränderte Sicherheitskosten für Betreiber kritischer Infrastruktur",
+              "mögliche Verlagerung von Bedrohungen in andere Angriffsformen"
+            ],
+            "third_order": [
+              "dauerhafte Verschiebung der Sicherheitsarchitektur zugunsten präventiver Überwachung",
+              "mögliche neue Standards für den Schutz kritischer Versorgungssysteme"
+            ],
+            "systemic_relevance": "Die Meldung berührt die Resilienz kritischer Infrastruktur und damit einen systemrelevanten Bereich mit möglichen Kaskaden auf Energie, Transport, Gesundheit und Verwaltung.",
+            "transformation_potential": "Begrenzt bis mittel: eher Ausbau und Verdichtung bestehender Sicherheitsstrukturen als ein grundlegend neues Regime.",
+            "resilience": "Potenzial zur Stärkung von Resilienz durch bessere Lagebilder, Abwehr und Meldewege; die tatsächliche Robustheit bleibt in der Quelle unbelegt.",
+            "side_effects": [
+              "höhere Kosten für Staat und Betreiber",
+              "mögliche Normalisierung eines dauerhaft erhöhten Sicherheitsniveaus",
+              "mehr Koordinationsaufwand zwischen Bund, Ländern und Betreibern"
+            ],
+            "uncertainties": [
+              "ob die genannten Maßnahmen bereits vollständig umgesetzt sind",
+              "wie wirksam die neue Drohnenabwehr in der Praxis ist",
+              "welche konkreten Vorfälle tatsächlich staatlich gesteuert waren"
+            ],
+            "evidence_level": "primärquellenbasiert, aber ohne unabhängige Bestätigung der Wirksamkeit oder der Lagezuschreibung",
+            "attribution": "Die Maßnahmen und Bewertungen werden von der Bundesregierung selbst dargestellt; die Quelle ist primär, aber interessengeleitet.",
+            "watch_next": [
+              "Umsetzung der Gesetzesänderungen und operative Wirksamkeit der Drohnenabwehr beobachten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, 11, 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Die Quelle enthält neue staatliche Maßnahmen und einen konkreten Sicherheitskontext mit Bezug zu kritischer Infrastruktur. Das ist materiell und nicht bloß eine Meinungsäußerung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Mitarbeiterinnen und Mitarbeiter",
+                  "value": "130",
+                  "unit": "Personen",
+                  "context": "Größe der neuen Drohnenabwehreinheit"
+                },
+                {
+                  "label": "Investition",
+                  "value": "100 Millionen",
+                  "unit": "Euro",
+                  "context": "Bundesmittel für die Drohnenabwehreinheit"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "kommunen",
+                "europa"
+              ],
+              "timeline": [
+                {
+                  "date": "2025-12",
+                  "label": "Drohnenabwehreinheit der Bundespolizei"
+                },
+                {
+                  "date": "2026-03",
+                  "label": "KRITIS-Dachgesetz in Kraft"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-1",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundesregierung sagt, sie habe auf die hybride Bedrohungslage bereits reagiert und mehrere Maßnahmen zur Drohnenabwehr umgesetzt oder angestoßen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "c12ee13edf469d09c337",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "070ab6ab7d0e4a3186c1",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "3ef794fa2eeae01740b4",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-2",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Im März 2026 ist das KRITIS-Dachgesetz in Kraft getreten und soll den Schutz kritischer Infrastruktur in mehreren Sektoren verbessern.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "bb14aac6c8594bbde2b8",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "b949af7310fbb61abe82",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "739452d40ad81434f254",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-3",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundespolizei verfügt seit Dezember 2025 über eine bundesweit eingesetzte Drohnenabwehreinheit mit zunächst 130 Mitarbeiterinnen und Mitarbeitern und 100 Millionen Euro Investitionen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "9f374b0820e5467b320e",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "24cb284b7d2a96246414",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-4",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Bund und Länder haben ein Drohnenabwehrzentrum eingerichtet, das ein nationales Lagebild zu Drohnenbewegungen erstellen und Risiken gemeinsam bewerten soll.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "c602d447d6fddc49d70e",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "7bc153e7ff498f2d4d04",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-5",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundesregierung nennt vermehrte illegale Drohnenflüge über kritische Infrastruktur und führt die Hochstufung der Bedrohungslage unter anderem auf mehr Hinweise aus Geheimdiensten und eigene Erkenntnisse zurück.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "98c3a42746cca4c8962c",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "1b3598c6425423988f5f",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "5475e8e7d75739b042f6",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T04:51:34.536Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "89221950e15d7889a81010e57f8be34aad0c701622d7fb36f7bf0ea685a4b725"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "f3b5c8ee781c6e3bf1b0554d698d327bda390e9d8af36bc3de5305333491b926"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "4b9c19c4e311b6a9d835242a639c5937fa2156b2432e031877489e90f7e60957"
+        },
+        "source_visual": null,
+        "fingerprint": "8ff53cc0479d7795612df2233a2621ecbfaf58802a560480c11661958bfde3f3",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T04:53:39.724Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-9cca0ad92ad1a84a",
       "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
@@ -19692,7 +20858,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -30256,7 +31422,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -30320,9 +31486,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 3,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 4,
         "reassessment": true,
         "fresh": false
       },
@@ -30621,7 +31789,7 @@
       ],
       "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
       "current_version": 1,
       "analysis": {
         "story_id": "wt-acae834e3431b203",
@@ -30777,47 +31945,6 @@
           "source_count": 1
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
-        "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
-        "sources": [
-          {
-            "source_id": "bundesregierung-presse",
-            "publisher": "Pressemitteilungen der Bundesregierung",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/denkmal-fuer-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsminister-weimer-zum-jahrestag-des-deutschen-ueberfalls-auf-polen-2451024",
-            "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
-            "summary": "Am 1. September 1939 überfiel das nationalsozialistische Deutschland Polen und begann damit den Zweiten Weltkrieg. Um an die Millionen Opfer der deutschen Aggression und Besatzung zu erinnern, soll im Zentrum Berlins ein dauerhafter Ort des Gedenkens entstehen: das vom Deutschen Bundestag beschlossene Denkmal für die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung in Polen 1939–1945. Derzeit läuft ein Gestaltungswettbewerb; im Dezember 2026 wird ein Preisgericht über einen Siegerentwurf beraten. Anlässlich des Jahrestages des deutschen Überfalls auf Polen sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „Der Krieg und die deutsche Besatzung brachten unermessliches Leid über Polen und seine Bevölkerung. Wir gedenken heute der Millionen Menschen, die ermordet, vertrieben und ihrer Heimat beraubt wurden. An die polnischen Opfer der deutschen Aggression zu erinnern, sind wir ihnen und ihren Nachkommen schuldig. Denn nur durch eine lebendige Erinnerung und...",
-            "source_type": "official_rss",
-            "published_at": "2026-09-01T08:45:00.000Z",
-            "primary_source": true,
-            "source_priority": 88,
-            "source_topic": "Politik",
-            "content_hash": "b749d23ec26ae36ae17b120dc4810865fe32446386340f135d1922df291471e3",
-            "source_item_id": "6f99e445b0c50c2715e9bcbedbb47799229edf77a993393668527c539f8eec9a",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T08:45:00.000Z",
-            "ingested_at": "2026-09-04T04:36:37.841Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      },
       "source_summary": "Die Bundesregierung kündigt den Baubeginn für ein Denkmal an, das an die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung Polens von 1939 bis 1945 erinnern soll. Der Deutsche Bundestag hat das Vorhaben beschlossen. Als Standort ist das Gelände der früheren Kroll-Oper im Zentrum Berlins vorgesehen, in der Nähe von Bundeskanzleramt und Bundestag.\n\nNach Angaben der Quelle läuft derzeit ein Gestaltungswettbewerb. Ein Preisgericht soll im Dezember 2026 über den Siegerentwurf beraten; die Errichtung soll 2027 beginnen. Kulturstaatsminister Wolfram Weimer äußerte sich anlässlich des Jahrestags des deutschen Überfalls auf Polen zu dem Vorhaben. Am vorgesehenen Ort besteht bereits seit Juni 2025 ein temporärer Gedenkort, der auf Initiative des Deutschen Polen-Instituts eingerichtet und der Öffentlichkeit übergeben wurde. Weitere Angaben zur endgültigen Gestaltung oder zu den Baukosten nennt die Meldung nicht.",
       "title_image": {
         "mode": "impact_card",
@@ -30845,6 +31972,19 @@
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:25.700Z",
         "status": "generated"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T04:51:14.127Z",
+      "retirement": {
+        "at": "2026-09-04T04:51:14.127Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ],
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       }
     },
     {
@@ -31044,60 +32184,17 @@
         }
       ],
       "listed": false,
-      "relevance_filter_version": "3.0",
-      "retired_at": "2026-09-03T12:23:56.901Z",
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T04:51:14.127Z",
       "retirement": {
-        "at": "2026-09-03T12:23:56.901Z",
-        "filter_version": "3.0",
+        "at": "2026-09-04T04:51:14.127Z",
+        "filter_version": "4.0",
         "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
         "quality_errors": [
-          "AI_NEWS_VALUE_CONTEXT_ONLY",
-          "AI_MATERIALITY_GATE_FAILED",
-          "AI_DUPLICATE_WITHOUT_UPDATE",
-          "AI_PUBLICATION_NOT_RECOMMENDED"
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ],
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
-        "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/neue-genomische-techniken-verbraucherwissen-2449756",
-            "title": "Neue Gentechnik-Regeln in der EU",
-            "summary": "Im Juni 2026 hat das EU-Parlament eine grundlegende Reform im Umgang mit Neuen Genomischen Techniken beschlossen. Was bedeutet die Neuregelung konkret für Verbraucherinnen und Verbraucher? Die wichtigsten Fragen und Antworten im Überblick.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-01T09:59:16.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "b1d7e1089cfee614d1a31b1d8a64192fa7326a8dc0f19be8117c2c5288782c71",
-            "source_item_id": "7d899c963ddf0c478aacb9aac8036872e11ea0621901da9d4d68d0d79e604b82",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T09:59:16.000Z",
-            "ingested_at": "2026-09-04T04:36:37.841Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
       }
     },
     {
@@ -31297,60 +32394,17 @@
         }
       ],
       "listed": false,
-      "relevance_filter_version": "3.0",
-      "retired_at": "2026-09-03T12:23:56.901Z",
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T04:51:14.127Z",
       "retirement": {
-        "at": "2026-09-03T12:23:56.901Z",
-        "filter_version": "3.0",
+        "at": "2026-09-04T04:51:14.127Z",
+        "filter_version": "4.0",
         "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
         "quality_errors": [
-          "AI_NEWS_VALUE_CONTEXT_ONLY",
-          "AI_MATERIALITY_GATE_FAILED",
-          "AI_DUPLICATE_WITHOUT_UPDATE",
-          "AI_PUBLICATION_NOT_RECOMMENDED"
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ],
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
-        "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
-        "sources": [
-          {
-            "source_id": "eu-kommission-presse",
-            "publisher": "Europäische Kommission – Press Corner",
-            "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1779",
-            "title": "Kommission genehmigt staatliche Beihilfe Portugals in Höhe von 30 Mio. EUR für Unternehmen in Landwirtschaft, Fischerei und Aquakultur aufgrund hoher Kraftstoff- und Düngemittelpreise",
-            "summary": "European Commission Pressemitteilung Brussels, 02 Sep 2026 Die Europäische Kommission hat eine mit 30 Mio. EUR ausgestattete Beihilferegelung für Unternehmen in der Landwirtschaft, Fischerei und Aquakultur genehmigt, die mit hohen Kraftstoff- und Düngemittelpreisen konfrontiert sind.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-01T22:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 94,
-            "source_topic": "Europa",
-            "content_hash": "e58b3445d693295313a0014e2d817f0135dfad4dcff1364c178fda7b6a45157a",
-            "source_item_id": "740a96fd7063ddcf04d962fb3af494914bf5a368ddfb23ef8628f7eb9f5b36ce",
-            "publisher_id": "eu-kommission-presse",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "EU"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T22:00:00.000Z",
-            "ingested_at": "2026-09-04T04:36:37.841Z",
-            "provenance": {
-              "origin": "publisher:eu-kommission-presse",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 3,
-        "reassessment": true,
-        "fresh": false
       }
     },
     {
@@ -31569,7 +32623,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -31603,9 +32657,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SUMMARY_SENTENCE_COUNT"
+        ],
+        "quality_retry_count": 2,
         "reassessment": true,
         "fresh": false
       }
@@ -31813,7 +32869,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -32709,7 +33765,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -32743,9 +33799,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SUMMARY_SENTENCE_COUNT"
+        ],
+        "quality_retry_count": 2,
         "reassessment": true,
         "fresh": false
       },
@@ -32775,289 +33833,6 @@
         "template_version": "woek-title-1",
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:37.523Z",
-        "status": "generated"
-      }
-    },
-    {
-      "story_id": "wt-3c8762489a80692b",
-      "slug": "regionalnachweisregister-soll-abgewickelt-werden-80692b",
-      "title": "Regionalnachweisregister soll abgewickelt werden",
-      "first_seen": "2026-09-02T13:20:00.000Z",
-      "last_updated": "2026-09-03T07:58:18.398Z",
-      "published_at": "2026-09-03T07:58:18.398Z",
-      "updated_at": "2026-09-03T07:58:18.398Z",
-      "topic": [
-        "Klima",
-        "Energie",
-        "Wirtschaft",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundestag-hib",
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
-          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
-          "title": "Regionalnachweisregister soll abgewickelt werden",
-          "summary": "Wirtschaft und Energie/Verordnung Das bisher beim Umweltbundesamt geführte Register für Regionalnachweise soll eingestellt werden. Das geht aus einer Verordnung der Bundesregierung hervor.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T13:20:00.000Z",
-          "primary_source": true,
-          "source_priority": 96,
-          "source_topic": "Politik",
-          "content_hash": "172f2e3551e48f1cabca43252bc0c38cab3a386d95b590c02a1d6c6483b5de2d"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-3c8762489a80692b-claim-01",
-          "story_id": "wt-3c8762489a80692b",
-          "claim": "Regionalnachweisregister soll abgewickelt werden: Wirtschaft und Energie/Verordnung Das bisher beim Umweltbundesamt geführte Register für Regionalnachweise soll eingestellt werden. Das geht aus einer Verordnung der Bundesregierung hervor.",
-          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
-          "source_id": "bundestag-hib",
-          "source_function": "official_fact_source",
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T07:58:18.398Z"
-        }
-      ],
-      "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
-      "published": true,
-      "analysis_status": "veröffentlicht",
-      "current_version": 1,
-      "analysis": {
-        "story_id": "wt-3c8762489a80692b",
-        "summary": "Das Regionalnachweisregister soll nach Regierungsverordnung eingestellt werden. Eine vorsichtige Ex-ante-Einordnung ist möglich, Wirkungen sind noch nicht belegt.",
-        "detail_summary": "Fakt ist die geplante Einstellung des beim Umweltbundesamt geführten Registers. Der Wirkungspfad liegt in geänderten Regeln für Nachweise zu regionalem Strombezug. Relevanz entsteht für Transparenz, Marktkommunikation und Vertrauen. Eingetretene Wirkung ist nicht belegt. Der Kontext der Verordnung muss für Verteilungs- und Klimafolgen geprüft werden.",
-        "why_relevant": "Energie-Nachweisregeln können Transparenz, Marktanreize und Vertrauen in Ökostromangebote berühren.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sein können Verbraucher und Anbieter, soweit regionale Stromnachweise genutzt werden."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Klimarelevanz ist möglich, aber ein direkter Emissionspfad ist aus den Daten nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Nachweisregister betreffen nachvollziehbare Information und institutionelle Prüfbarkeit."
-        },
-        "importance": "mittel",
-        "impact_potential": "Potenzial liegt in vereinfachten Regeln oder veränderter Nachweislogik; Richtung und Stärke bleiben offen.",
-        "impact_risks": [
-          "Weniger Nachweistransparenz könnte Vertrauen oder Vergleichbarkeit schwächen."
-        ],
-        "mechanisms": [
-          "Regeländerung verändert Verbindlichkeiten, Datenflüsse und nutzbare Herkunftsinformationen."
-        ],
-        "first_order": [
-          "Mögliche Änderung bei Registrierung, Nutzung und Prüfung regionaler Nachweise."
-        ],
-        "second_order": [
-          "Marktkommunikation zu regionalem Strombezug könnte sich verschieben."
-        ],
-        "third_order": [
-          "Langfristige Effekte auf Vertrauen in Energiewende-Kommunikation bleiben offen."
-        ],
-        "systemic_relevance": "Mittel, weil Energieinformationen Markt- und Vertrauensfunktionen haben können.",
-        "transformation_potential": "Begrenzt bis mittel; ohne Kontext ist kein Transformationsbeitrag belegbar.",
-        "resilience": "Resilienz hängt davon ab, ob Ersatz- oder Übergangsregeln Transparenz sichern.",
-        "side_effects": [
-          "Administrative Entlastung ist denkbar, aber aus den Daten nicht nachgewiesen."
-        ],
-        "uncertainties": [
-          "Unklar sind Gründe, Übergangsregeln, betroffene Akteure und Ersatzmechanismen."
-        ],
-        "evidence_level": "Primärquelle liegt vor; vollständiger Verordnungskontext fehlt.",
-        "attribution": "Ex ante keine Zurechnung tatsächlicher Wirkungen; nur möglicher Regel-Wirkpfad.",
-        "watch_next": [
-          "Verordnungstext, Übergangsfristen, Ersatzregeln und Stellungnahmen prüfen."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 7 und 13 als Energie- und Klimarahmen."
-        ],
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-03T07:58:18.398Z",
-          "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
-          "analysis": {
-            "story_id": "wt-3c8762489a80692b",
-            "summary": "Das Regionalnachweisregister soll nach Regierungsverordnung eingestellt werden. Eine vorsichtige Ex-ante-Einordnung ist möglich, Wirkungen sind noch nicht belegt.",
-            "detail_summary": "Fakt ist die geplante Einstellung des beim Umweltbundesamt geführten Registers. Der Wirkungspfad liegt in geänderten Regeln für Nachweise zu regionalem Strombezug. Relevanz entsteht für Transparenz, Marktkommunikation und Vertrauen. Eingetretene Wirkung ist nicht belegt. Der Kontext der Verordnung muss für Verteilungs- und Klimafolgen geprüft werden.",
-            "why_relevant": "Energie-Nachweisregeln können Transparenz, Marktanreize und Vertrauen in Ökostromangebote berühren.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Betroffen sein können Verbraucher und Anbieter, soweit regionale Stromnachweise genutzt werden."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Klimarelevanz ist möglich, aber ein direkter Emissionspfad ist aus den Daten nicht belegt."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Nachweisregister betreffen nachvollziehbare Information und institutionelle Prüfbarkeit."
-            },
-            "importance": "mittel",
-            "impact_potential": "Potenzial liegt in vereinfachten Regeln oder veränderter Nachweislogik; Richtung und Stärke bleiben offen.",
-            "impact_risks": [
-              "Weniger Nachweistransparenz könnte Vertrauen oder Vergleichbarkeit schwächen."
-            ],
-            "mechanisms": [
-              "Regeländerung verändert Verbindlichkeiten, Datenflüsse und nutzbare Herkunftsinformationen."
-            ],
-            "first_order": [
-              "Mögliche Änderung bei Registrierung, Nutzung und Prüfung regionaler Nachweise."
-            ],
-            "second_order": [
-              "Marktkommunikation zu regionalem Strombezug könnte sich verschieben."
-            ],
-            "third_order": [
-              "Langfristige Effekte auf Vertrauen in Energiewende-Kommunikation bleiben offen."
-            ],
-            "systemic_relevance": "Mittel, weil Energieinformationen Markt- und Vertrauensfunktionen haben können.",
-            "transformation_potential": "Begrenzt bis mittel; ohne Kontext ist kein Transformationsbeitrag belegbar.",
-            "resilience": "Resilienz hängt davon ab, ob Ersatz- oder Übergangsregeln Transparenz sichern.",
-            "side_effects": [
-              "Administrative Entlastung ist denkbar, aber aus den Daten nicht nachgewiesen."
-            ],
-            "uncertainties": [
-              "Unklar sind Gründe, Übergangsregeln, betroffene Akteure und Ersatzmechanismen."
-            ],
-            "evidence_level": "Primärquelle liegt vor; vollständiger Verordnungskontext fehlt.",
-            "attribution": "Ex ante keine Zurechnung tatsächlicher Wirkungen; nur möglicher Regel-Wirkpfad.",
-            "watch_next": [
-              "Verordnungstext, Übergangsfristen, Ersatzregeln und Stellungnahmen prüfen."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7 und 13 als Energie- und Klimarahmen."
-            ],
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.5",
-          "mode": "woek-ai-oracle-llm",
-          "method_sources": [
-            {
-              "title": "Berichtsdaten",
-              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
-            },
-            {
-              "title": "Open Science",
-              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
-            },
-            {
-              "title": "Wirkungsdatenräume",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
-            },
-            {
-              "title": "Messgrenzen und Unsicherheit",
-              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
-            },
-            {
-              "title": "Regionalnachweisregister soll abgewickelt werden",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814"
-            },
-            {
-              "title": "Für bezahlbare Windenergie auf See",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-windenergie-auf-see-gesetz-2451190"
-            }
-          ],
-          "source_summary": "Die Bundesregierung schlägt vor, das beim Umweltbundesamt geführte Regionalnachweisregister einzustellen. Das Register dokumentiert Nachweise, mit denen Stromlieferanten gegenüber Endverbrauchern die regionale Herkunft verbrauchten Stroms aus erneuerbaren Energien bestätigen können. Nach Darstellung der Verordnung wurde das Instrument in der Praxis wenig genutzt und erreichte das beabsichtigte Ziel, die Akzeptanz für zusätzliche Anlagen erneuerbarer Energien zu fördern, nicht.\n\nAls weiteren Grund nennt die Vorlage den administrativen Aufwand der Registerführung und die Meldepflichten für Anlagenbetreiber und Energieversorgungsunternehmen. Diese stünden laut Bundesregierung nicht in einem angemessenen Verhältnis zum Nutzen. Eine europarechtliche Pflicht für Regionalnachweise bestehe nicht. Das gesonderte Herkunftsnachweisregister für Strom aus erneuerbaren Energien soll dagegen weitergeführt werden. Für die Verordnungsänderung ist nach der Bundestagsmeldung die Zustimmung des Deutschen Bundestages erforderlich; ein Abschluss dieses Verfahrens wird noch nicht berichtet."
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-03T07:58:18.398Z",
-          "source_count": 1
-        }
-      ],
-      "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
-        "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
-        "sources": [
-          {
-            "source_id": "bundestag-wirtschaft",
-            "publisher": "Deutscher Bundestag – Wirtschaft und Energie",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
-            "title": "Regionalnachweisregister soll abgewickelt werden",
-            "summary": "Wirtschaft und Energie/Verordnung Das bisher beim Umweltbundesamt geführte Register für Regionalnachweise soll eingestellt werden. Das geht aus einer Verordnung der Bundesregierung hervor.",
-            "source_type": "official_rss",
-            "published_at": null,
-            "primary_source": true,
-            "source_priority": 90,
-            "source_topic": "Wirtschaft",
-            "content_hash": "172f2e3551e48f1cabca43252bc0c38cab3a386d95b590c02a1d6c6483b5de2d",
-            "source_item_id": "33b94a56561fbbd90863d01d78be3acdf39fa5c35c724c33b6f81a2d54e8cd38",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": null,
-            "ingested_at": "2026-09-04T04:36:37.841Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      },
-      "source_summary": "Die Bundesregierung schlägt vor, das beim Umweltbundesamt geführte Regionalnachweisregister einzustellen. Das Register dokumentiert Nachweise, mit denen Stromlieferanten gegenüber Endverbrauchern die regionale Herkunft verbrauchten Stroms aus erneuerbaren Energien bestätigen können. Nach Darstellung der Verordnung wurde das Instrument in der Praxis wenig genutzt und erreichte das beabsichtigte Ziel, die Akzeptanz für zusätzliche Anlagen erneuerbarer Energien zu fördern, nicht.\n\nAls weiteren Grund nennt die Vorlage den administrativen Aufwand der Registerführung und die Meldepflichten für Anlagenbetreiber und Energieversorgungsunternehmen. Diese stünden laut Bundesregierung nicht in einem angemessenen Verhältnis zum Nutzen. Eine europarechtliche Pflicht für Regionalnachweise bestehe nicht. Das gesonderte Herkunftsnachweisregister für Strom aus erneuerbaren Energien soll dagegen weitergeführt werden. Für die Verordnungsänderung ist nach der Bundestagsmeldung die Zustimmung des Deutschen Bundestages erforderlich; ein Abschluss dieses Verfahrens wird noch nicht berichtet.",
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-1d35d14d302606f9-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "58f02022c74dad7a0efb5bc11cbc405d7db5779ddafcab387128fb1f8beab2fa"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-1d35d14d302606f9-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "852f314da49cb5471aa476291cc0db0c116398bbcb02b90abe599b09ffc4319a"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-1d35d14d302606f9-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "a9127d13bf1d9b0de271d08949f6f1bf6437dd6750812435e5b662fd5e7aaa76"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-b3bca18ad2fdb73c-source.png",
-          "sha256": "b3bca18ad2fdb73c66ac1e599a92fab821b5bd4d3fd3395d83a3571830529bc0",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-2",
-          "generated_at": "2026-09-03T23:45:00.444Z"
-        },
-        "fingerprint": "1d35d14d302606f929701a95571bce6332992f01d453ceae942431c69c3b5a0f",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:31:44.845Z",
         "status": "generated"
       }
     },
@@ -33258,7 +34033,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -33531,7 +34306,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -33809,7 +34584,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -34083,7 +34858,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -34361,7 +35136,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
+        "detected_at": "2026-09-04T04:51:14.127Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -35496,7 +36271,7 @@
       ],
       "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
       "current_version": 1,
       "analysis": {
         "story_id": "wt-b891f102e908a573",
@@ -35650,47 +36425,6 @@
           "source_count": 1
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-04T04:36:37.841Z",
-        "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/niedrigere-netzentgelte-2382396",
-            "title": "Bundeszuschuss für niedrigere Stromkosten",
-            "summary": "Die Bundesregierung will Haushalte und Unternehmen auch in den Jahren 2027 bis 2029 bei den Energiekosten spürbar entlasten: Ein jährlicher Bundeszuschuss von gut 5,5 Milliarden Euro soll die Strom-Netzentgelte weiterhin dämpfen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-03T13:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "f1634fbfea9a9cd88eb0dca102dd42572422ea44796f59d236d94c873cd3a55d",
-            "source_item_id": "01bfecec57ee287bbdf1b34577bd11c808d70b6947f73cec14d135019bc0c444",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T13:00:00.000Z",
-            "ingested_at": "2026-09-04T04:36:37.841Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      },
       "source_summary": "Die Bundesregierung plant, die Strom-Netzentgelte auch von 2027 bis 2029 mit einem Bundeszuschuss zu dämpfen. Für jedes dieser Jahre sollen 5,525 Milliarden Euro aus dem Klima- und Transformationsfonds an die Übertragungsnetzbetreiber fließen. Das Kabinett hat dafür Änderungen am Energiewirtschaftsgesetz beschlossen. Die Netzbetreiber sollen den Zuschuss in ihre Entgeltkalkulation einbeziehen; über die Stromlieferanten soll die Kostendämpfung Haushalte und Unternehmen erreichen.\n\nFür 2026 nennt die Quelle einen Zuschuss von 6,5 Milliarden Euro. Ein Haushalt mit 3.500 Kilowattstunden Jahresverbrauch könne dadurch rechnerisch etwa 100 Euro sparen, wobei der tatsächliche Betrag unter anderem von Netzgebiet, Verbrauch und Wohnsituation abhängt. Für 2027 liegen laut Artikel noch keine konkreten Entgeltdaten vor. Die Übertragungs- und Verteilnetzbetreiber sollen transparent machen, wie der Zuschuss die Netzentgelte verändert. Die Meldung ordnet den Zuschuss in weitere Maßnahmen wie die abgeschaffte Gasspeicherumlage und einen geplanten Industriestrompreis ein.",
       "title_image": {
         "mode": "editorial",
@@ -35728,6 +36462,19 @@
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:32:19.405Z",
         "status": "generated"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T04:51:14.127Z",
+      "retirement": {
+        "at": "2026-09-04T04:51:14.127Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ],
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       }
     },
     {
@@ -37793,21 +38540,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:36:37.841Z"
+          "checked_at": "2026-09-04T04:51:14.127Z"
         }
       ],
       "content_hash": "1e6cd7c1d6d91647b7046917beb2caa2cbc18c7c4595b3a59dd70bc4ca647908",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 2,
-      "reassessment": false,
       "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:36:37.841Z",
+      "updated_at": "2026-09-04T04:51:14.127Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3e01d1f6d0533d6aa9c6",
@@ -37836,14 +38581,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2527.8140166666667,
+        "source_age_minutes": 2542.4187833333335,
         "detection_delay_minutes": 2152.4668333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 375.3471833333333,
+        "queue_age_minutes": 389.95195,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:51:14.127Z",
+      "rejection": {
+        "at": "2026-09-04T04:51:14.127Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -38471,119 +39228,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-972d20af6da2b586",
-      "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
-      "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
-      "first_seen": "2026-09-02T06:00:00.000Z",
-      "last_updated": "2026-09-02T06:00:00.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-kompakt",
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-          "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
-          "summary": "Der Fund einer Sprengstoff-Drohne am Leipziger Flughafen zeigt deutlich: Deutschland befindet sich zunehmend im Fokus hybrider Bedrohungen, Sabotagen und Drohnenangriffen. Was das bedeutet und was die Bundesregierung dagegen tut, erfahren Sie hier.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T06:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 92,
-          "source_topic": "Politik",
-          "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c",
-          "source_item_id": "2eff7152390aa52f9a213db084fb9a5a808bddbacffcf1a4e73720968fce01dc",
-          "publisher_id": "bundesregierung",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-02T06:00:00.000Z",
-          "ingested_at": "2026-09-04T04:36:37.841Z",
-          "provenance": {
-            "origin": "publisher:bundesregierung",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-972d20af6da2b586-claim-01",
-          "story_id": "wt-972d20af6da2b586",
-          "claim": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?: Der Fund einer Sprengstoff-Drohne am Leipziger Flughafen zeigt deutlich: Deutschland befindet sich zunehmend im Fokus hybrider Bedrohungen, Sabotagen und Drohnenangriffen. Was das bedeutet und was die Bundesregierung dagegen tut, erfahren Sie hier.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "bundesregierung-kompakt",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:bundesregierung",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:36:37.841Z"
-        }
-      ],
-      "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:4"
-      ],
-      "quality_retry_count": 1,
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-04T04:36:37.841Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-3c4cec37699684f265d9",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 2796.6306833333333,
-        "detection_delay_minutes": 2421.2835,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 375.3471833333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
     {
@@ -39521,7 +40165,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:36:37.841Z"
+          "checked_at": "2026-09-04T04:51:14.127Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -39530,12 +40174,12 @@
       "quality_errors": [
         "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 1,
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": false,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:36:37.841Z",
+      "updated_at": "2026-09-04T04:51:14.127Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -39564,11 +40208,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4236.630683333334,
+        "source_age_minutes": 4251.23545,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 375.3471833333333,
+        "queue_age_minutes": 389.95195,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -40008,7 +40652,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:36:37.841Z"
+          "checked_at": "2026-09-04T04:51:14.127Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -40017,12 +40661,12 @@
       "quality_errors": [
         "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 1,
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": false,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:36:37.841Z",
+      "updated_at": "2026-09-04T04:51:14.127Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -40054,11 +40698,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5316.630683333334,
+        "source_age_minutes": 5331.23545,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 375.3471833333333,
+        "queue_age_minutes": 389.95195,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -40916,5 +41560,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T04:36:37.841Z"
+  "public_updated_at": "2026-09-04T04:51:14.127Z"
 }
