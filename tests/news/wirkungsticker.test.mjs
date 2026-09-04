@@ -58,8 +58,8 @@ test("Large multi-source prompts retain identities and exact evidence under the 
 });
 
 test("Growing living files retain all evidence identities, roles and claims with related history", () => {
-  const existing=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url))).stories.find(story=>story.story_id==='wt-4fb94d2cebfca746');
-  assert.ok(existing);
+  // Frozen incident fixture: future editorial updates must not change a test's input.
+  const existing=JSON.parse(fs.readFileSync(new URL('./fixtures/growing-living-file.json',import.meta.url)));
   const sources=existing.pending_update?.sources || existing.sources;
   const story={...existing,existing_story:existing,sources:sources.map(s=>({...s,article_excerpt:Array.from({length:40},(_,n)=>`Passage ${n}: Dies ist ein unveränderter Testbeleg über Infrastruktur und offene Ermittlungen.`).join(' ')})),claims:sources.map((s,n)=>({claim_id:`claim-${n}`,claim:`${s.title}: ${s.summary}`,source_id:s.source_id,evidence_level:'Sekundärquelle',uncertainty:'Vollständiger Kontext ist in der Originalquelle zu prüfen.'})),related_ticker_history:Array.from({length:5},(_,n)=>({story_id:`related-${n}`,title:'Eigenständige verwandte Meldung',summary:'Dies ist eine verwandte Nachricht mit einem eigenständigen Ereignis und anderen Belegen. '.repeat(4),source_urls:[`https://example.org/${n}/eins`,`https://example.org/${n}/zwei`,`https://example.org/${n}/drei`],source_published_at:'2026-09-03T12:00:00Z'}))};
   const before=structuredClone(story);
