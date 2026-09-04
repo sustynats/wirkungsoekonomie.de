@@ -9,7 +9,7 @@ export function ImpactRegisterRow({ item }: { item: RegisterObject }) {
   return <article className="case-card case-card--row impact-register-row" data-register-id={item.id}>
     <div className="case-card-topline"><span className="chip">{item.typeLabel}</span><span className="chip">{item.relevance ?? "Prüfrelevanz offen"}</span></div>
     <h3><Link href={item.href}>{item.title}</Link></h3>
-    <div>
+    <div className="register-row-impact">
       <p className="case-card-finding"><small>Auszug: </small>{findingExcerpt(item.finding)}</p>
       <ImpactSignature signature={item.signature} compact />
     </div>

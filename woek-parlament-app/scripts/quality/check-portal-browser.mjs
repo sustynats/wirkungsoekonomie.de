@@ -65,8 +65,9 @@ try {
     const readIds = () => page.locator("[data-register-id]").evaluateAll((rows) => rows.map((row) => row.getAttribute("data-register-id")).sort());
     const expectedIds = registerProof.objects.map((item) => item.id).sort();
     assert.deepEqual(await readIds(), expectedIds, "every source object in the browser");
-    const rows = await page.locator("[data-register-id]").evaluateAll((rows) => rows.map((row) => ({ id: row.getAttribute("data-register-id"), words: [...new Intl.Segmenter("de", { granularity: "word" }).segment(row.innerText)].filter((word) => word.isWordLike).length })));
+    const rows = await page.locator("[data-register-id]").evaluateAll((rows) => rows.map((row) => ({ id: row.getAttribute("data-register-id"), words: [...new Intl.Segmenter("de", { granularity: "word" }).segment(row.innerText)].filter((word) => word.isWordLike).length, titleX: row.querySelector("h3").getBoundingClientRect().x, signatureX: row.querySelector("[data-impact-signature]").getBoundingClientRect().x })));
     for (const row of rows) assert.ok(row.words <= 60, `${row.id}: ${row.words} words`);
+    if (width >= 960) for (const row of rows) assert.ok(row.titleX < row.signatureX, `${row.id}: title/meta left, signature right`);
     assert.equal(await page.locator(".register-filters select").count(), 6);
     const counts = await page.locator("[data-register-direction] dd").allTextContents();
     assert.equal(counts.reduce((sum, count) => sum + Number(count), 0), expectedIds.length);
@@ -233,5 +234,5 @@ try {
   results.keyboard = { drawer_focus_trap: "PASS", escape_return_focus: "PASS", visible_focus: "PASS", navigation_closes_drawer: "PASS", legacy_fragment_and_query: "PASS", same_page_scroll_focus_back_forward: "PASS", reduced_motion: "PASS" };
 } finally { await browser.close(); }
 writeFileSync(join(output, "report.json"), JSON.stringify(results, null, 2) + "\n");
-writeFileSync(join(output, "index.html"), `<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>P1 · Navigation – geprüfte Preview</title><h1>P1 · Navigation und Routen</h1><p>Commitgebundene lokale/GitHub-CI-Preview, kein Vercel-Build.</p><p>${results.routes.length} Routen und ${results.redirects.length} Weiterleitungsregeln bestanden.</p>${results.browser.map((item) => `<section><h2>${item.route} · ${item.width} px</h2><img src="${item.screenshot}" alt="Preview der Route ${item.route} bei ${item.width} Pixeln" style="max-width:100%;height:auto"></section>`).join("")}<a href="report.json">Maschinenlesbare Prüfergebnisse</a></html>`);
+writeFileSync(join(output, "index.html"), `<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Parliament-Strukturneubau – geprüfte Preview</title><h1>Parliament-Strukturneubau · geprüfte Vorschau</h1><p>Commitgebundene lokale/GitHub-CI-Preview, kein Vercel-Build.</p><p>${results.routes.length} Routen und ${results.redirects.length} Weiterleitungsregeln bestanden.</p>${results.browser.map((item) => `<section><h2>${item.route} · ${item.width} px</h2><img src="${item.screenshot}" alt="Preview der Route ${item.route} bei ${item.width} Pixeln" style="max-width:100%;height:auto"></section>`).join("")}<a href="report.json">Maschinenlesbare Prüfergebnisse</a></html>`);
 console.log(JSON.stringify({ status: "PASS", routes: results.routes.length, redirects: results.redirects.length, viewport_checks: results.browser.length, keyboard: results.keyboard }, null, 2));
