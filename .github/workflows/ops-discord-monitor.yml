@@ -1,0 +1,51 @@
+name: WÖk Betriebsmonitor und Discord-Tagesbericht
+
+on:
+  schedule:
+    - cron: '0,15,30,45 * * * *'
+  push:
+    branches: [codex/wirkungsticker-clock]
+  workflow_dispatch:
+    inputs:
+      report_now:
+        description: 'Heutigen Tagesbericht jetzt senden (höchstens einmal je Berliner Datum)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: woek-ops-discord-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            scripts/ops/discord-monitor.mjs
+            tests/ops/discord-monitor.test.mjs
+            reports/wirkungsticker-latest-run.json
+            data/news/stories.json
+            data/news/usage.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test monitor invariants
+        run: node --test tests/ops/discord-monitor.test.mjs
+      - name: Check live services and deliver private Discord messages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WOEK_MONITOR_DISCORD_BOT_TOKEN: ${{ secrets.WOEK_MONITOR_DISCORD_BOT_TOKEN }}
+          WOEK_MONITOR_DISCORD_USER_ID: ${{ secrets.WOEK_MONITOR_DISCORD_USER_ID }}
+          REPORT_NOW: ${{ inputs.report_now }}
+        run: |
+          args=()
+          if [ "$REPORT_NOW" = "true" ]; then args+=(--report-now); fi
+          node scripts/ops/discord-monitor.mjs "${args[@]}"
