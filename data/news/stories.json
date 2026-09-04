@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T07:36:19.931Z",
+  "updated_at": "2026-09-04T07:51:17.833Z",
   "stories": [
     {
       "story_id": "wt-ef8a2f218302b98a",
@@ -4456,7 +4456,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T07:47:49.913Z",
+        "detected_at": "2026-09-04T07:56:13.586Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -4751,21 +4751,21 @@
         ],
         "consolidations": [
           {
-            "at": "2026-09-04T07:47:49.913Z",
+            "at": "2026-09-04T07:56:13.586Z",
             "story_id": "wt-4855e13df47f18ed",
             "slug": "kritische-infrastruktur-offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormage-7f18ed",
             "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
             "reason": "specific_object_or_leading_document"
           },
           {
-            "at": "2026-09-04T07:47:49.913Z",
+            "at": "2026-09-04T07:56:13.586Z",
             "story_id": "wt-3a01df57b8cfe75f",
             "slug": "angriffe-auf-stromnetz-polizei-geht-von-sabotage-an-umspannwerk-in-dormagen-aus-cfe75f",
             "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
             "reason": "specific_object_or_leading_document"
           },
           {
-            "at": "2026-09-04T07:47:49.913Z",
+            "at": "2026-09-04T07:56:13.586Z",
             "story_id": "wt-7d3fabe103b78ce3",
             "slug": "angriffe-auf-stromnetz-verdachtiger-gegenstand-an-umspannwerk-in-dormagen-entdeckt-b78ce3",
             "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
@@ -20067,9 +20067,9 @@
       ],
       "retirement_history": [],
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:47:49.913Z",
+      "retired_at": "2026-09-04T07:56:13.586Z",
       "retirement": {
-        "at": "2026-09-04T07:47:49.913Z",
+        "at": "2026-09-04T07:56:13.586Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-4fb94d2cebfca746"
@@ -20944,7 +20944,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T07:47:49.913Z",
+        "detected_at": "2026-09-04T07:56:13.586Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -21082,7 +21082,7 @@
         ],
         "consolidations": [
           {
-            "at": "2026-09-04T07:47:49.913Z",
+            "at": "2026-09-04T07:56:13.586Z",
             "story_id": "wt-57bcbc8dea706471",
             "slug": "nach-angriff-auf-stromnetz-brandenburger-polizei-pruft-bekennerschreiben-706471",
             "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
@@ -22608,9 +22608,9 @@
         "status": "generated"
       },
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:47:49.913Z",
+      "retired_at": "2026-09-04T07:56:13.586Z",
       "retirement": {
-        "at": "2026-09-04T07:47:49.913Z",
+        "at": "2026-09-04T07:56:13.586Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-4fb94d2cebfca746"
@@ -23477,9 +23477,9 @@
       ],
       "retirement_history": [],
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:47:49.913Z",
+      "retired_at": "2026-09-04T07:56:13.586Z",
       "retirement": {
-        "at": "2026-09-04T07:47:49.913Z",
+        "at": "2026-09-04T07:56:13.586Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-4fb94d2cebfca746"
@@ -28847,9 +28847,9 @@
         "status": "generated"
       },
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:47:49.913Z",
+      "retired_at": "2026-09-04T07:56:13.586Z",
       "retirement": {
-        "at": "2026-09-04T07:47:49.913Z",
+        "at": "2026-09-04T07:56:13.586Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-f3d585eac14dec76"
@@ -35961,21 +35961,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T07:36:19.931Z"
+          "checked_at": "2026-09-04T07:51:17.833Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_PUBLICATION_NOT_RECOMMENDED"
       ],
-      "quality_retry_count": 1,
-      "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T07:36:19.931Z",
+      "updated_at": "2026-09-04T07:51:17.833Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -36006,14 +36003,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1033.3321833333334,
+        "source_age_minutes": 1048.2972166666666,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 555.0486833333333,
+        "queue_age_minutes": 570.0137166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T07:51:17.833Z",
+      "rejection": {
+        "at": "2026-09-04T07:51:17.833Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED"
+        ]
       }
     },
     {
@@ -46955,5 +46963,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T07:47:49.913Z"
+  "public_updated_at": "2026-09-04T07:56:13.586Z"
 }
