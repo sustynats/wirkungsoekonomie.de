@@ -1,7 +1,596 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T12:36:39.070Z",
+  "updated_at": "2026-09-04T13:05:47.106Z",
   "stories": [
+    {
+      "story_id": "wt-7a87a173a2b4c2bc",
+      "slug": "schutz-der-infrastruktur-beratungen-uber-regeln-fur-private-drohnenabwehr-b4c2bc",
+      "title": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr",
+      "first_seen": "2026-09-04T02:00:12.000Z",
+      "last_updated": "2026-09-04T12:49:35.000Z",
+      "topic": [
+        "Wirtschaft",
+        "Politik",
+        "Geopolitik",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/schutz-der-infrastruktur--beratungen-ueber-regeln-fuer-private-drohnenabwehr-38205710.html",
+          "title": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr",
+          "summary": "Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T02:00:12.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ddaf77e7d6a1e90cf96d2f727a2ef344459d8deea6d7033c353e6c9b085351ec",
+          "source_item_id": "53f446900c78348940f88ce563ce353511e441d9d5ea08541adc7b0daf0463f7",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T02:00:12.000Z",
+          "ingested_at": "2026-09-04T02:21:15.650Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-schutz-der-infrastruktur-16016029.html",
+          "title": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr",
+          "summary": "Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T02:02:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6426e1d54af5c6388fdf2d18007b84de3b6175b78ddac79a910d56fba08839a0",
+          "source_item_id": "794afc6144c3d93fe9f5d195631b9151a4adca490299133e42862a0b7ee01dc3",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T02:02:18.000Z",
+          "ingested_at": "2026-09-04T05:06:21.635Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/schutz-der-infrastruktur--nach-brandanschlag--beratungen-ueber-private-drohnenabwehr-38206172.html",
+          "title": "Schutz der Infrastruktur: Nach Brandanschlag: Beratungen über private Drohnenabwehr",
+          "summary": "Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T04:49:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9da136d9cbd4b9904a2950d97350b337be1c384a2757f6b6fe6f0ab7adb5e72e",
+          "source_item_id": "c33c77e21ae325064359470e129b6568e55420827ae1e2aab8dab050b7e22b1e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T04:49:14.000Z",
+          "ingested_at": "2026-09-04T05:06:21.635Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/--haftbefehle-gegen-zwei-bulgaren-nach-brandanschlag-erlassen-38206172.html",
+          "title": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
+          "summary": "Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:58:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4a35db8552cd8655e7b657455679608d720054508e39a12ec89e4b6b915f11cc",
+          "source_item_id": "97ba205e4656022adb1c3ec8c8e386a079c8e64c3d7d2656761a23a4af086b9b",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:58:15.000Z",
+          "ingested_at": "2026-09-04T12:06:38.422Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/--haftbefehle-gegen-zwei-bulgaren-nach-brandanschlag-erlassen-38209104.html",
+          "title": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
+          "summary": "Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:58:26.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "075614d90c374d623efb4729f46cf20f1d11cacd97c3d418f148fdf28cc041c6",
+          "source_item_id": "bb643bda8eebc19510b2f7f66760856df378454b2d94c290487fa57adf966381",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:58:26.000Z",
+          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-berlin-brandenburg-16019310.html",
+          "title": "Berlin / Brandenburg: Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
+          "summary": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:59:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9b1ffb45ace98a02a717c2439e7a68f028126f239372e3ec309f53893a0e1c4e",
+          "source_item_id": "83e43de02d0a79f2837a512cb52f4d76e34bd680d7a9034746956478b5f10a02",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:59:18.000Z",
+          "ingested_at": "2026-09-04T12:06:38.422Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/anschlag-in-muenchen--zwei-verdaechtige-nach-brandanschlag-in-muenchen-in-u-haft-38206172.html",
+          "title": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft",
+          "summary": "Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:08:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9df316b005cdb57ad3e11fc5600930bbd343636b45e0d664a3e3cc314b6c5094",
+          "source_item_id": "e81b38ef794a86f39064dcbce231e47fa331420c10b58efd07f77a2b7404903e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:08:53.000Z",
+          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-anschlag-in-munchen-16019310.html",
+          "title": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft",
+          "summary": "Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:59:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "207ee1e3e76427ce9c4b24c4d8a3fe59ea3ee725a5b1fdfd361a236775c5b591",
+          "source_item_id": "9e90efa2dbc279f5fe3c4e4a9499c920b42a1392a33bfa377fb65c47218a654f",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:59:18.000Z",
+          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/haftbefehle-gegen-zwei-bulgaren-nach-brandanschlag-erlassen-102.html",
+          "title": "München - Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
+          "summary": "Nach dem Brandanschlag auf eine Baustelle in der Nähe von Rüstungsunternehmen in München sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:49:35.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d7547ca55bea2d2c031cec0fedefbb0f7dab12bf4f47ae74b4f2c0fe59e982e0",
+          "source_item_id": "6d7c56c2a72b0a7cc626556792062cd1436ae881b62f3e34b2dd26384beff87f",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:49:35.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-anschlag-nahe-rustungsunternehmen-in-munchen-zwei-bulgaren-in-untersuchungshaft-16019310.html",
+          "title": "Anschlag nahe Rüstungsunternehmen in München: Zwei Bulgaren in Untersuchungshaft",
+          "summary": "Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:59:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "83e2a4880baa321dcf4814ea50dedca06fe2c1b18cc4b8eadc9442989595d51e",
+          "source_item_id": "02c0c70020830a4ee715561e11a3948b95ae05da215bef1d1ccf826fbde1caa6",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:59:18.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-01",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr: Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-02",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr: Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-03",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Schutz der Infrastruktur: Nach Brandanschlag: Beratungen über private Drohnenabwehr: Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-04",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen: Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-05",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen: Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-06",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Berlin / Brandenburg: Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen: Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-07",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft: Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-08",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft: Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-09",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "München - Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen: Nach dem Brandanschlag auf eine Baustelle in der Nähe von Rüstungsunternehmen in München sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        },
+        {
+          "claim_id": "wt-7a87a173a2b4c2bc-claim-10",
+          "story_id": "wt-7a87a173a2b4c2bc",
+          "claim": "Anschlag nahe Rüstungsunternehmen in München: Zwei Bulgaren in Untersuchungshaft: Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        }
+      ],
+      "content_hash": "65bd8e83d1d6dbafd13bd18a5ca941e0ac6d527177364ccb07306b5e1b8d5b2b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T12:51:34.068Z",
+      "event_first_seen_at": "2026-09-04T02:21:15.650Z",
+      "event_detected_at": "2026-09-04T02:21:15.650Z",
+      "event_id": "event-41372b418679984cd46a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Wirtschaft",
+          "Politik",
+          "Geopolitik",
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 1.9844666666666666,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 630.3069666666667,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejection": {
+        "at": "2026-09-04T12:51:34.068Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-a416364f223ac3fc",
       "slug": "gardelegen-grossbrand-zerstort-jugendclub-und-vereinsheim-spendenaktion-gestartet-3ac3fc",
@@ -517,6 +1106,505 @@
       }
     },
     {
+      "story_id": "wt-fd5875ad8a2bb508",
+      "slug": "moroccans-are-desperate-years-of-political-crackdown-and-lack-of-economic-opportunities-2bb508",
+      "title": "'Moroccans are desperate: Years of political crackdown and lack of economic opportunities'",
+      "first_seen": "2026-09-04T12:30:37.000Z",
+      "last_updated": "2026-09-04T12:30:37.000Z",
+      "topic": [
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260904-moroccans-are-desperate-years-of-political-crackdown-and-lack-of-economic-opportunities",
+          "title": "'Moroccans are desperate: Years of political crackdown and lack of economic opportunities'",
+          "summary": "François Picard is pleased to welcome Aida Alami, New York Times World contributor. Drawing on her own field reporting at the Moroccan border, Alami challenges attempts to explain the mass crossing primarily through a theory of deliberate state orchestration. While acknowledging both Morocco’s history of leveraging migration in its relations with Spain and the possibility that security forces made tactical decisions on the day, Alami insists on distinguishing evidence from inference. Her reporting instead points toward an interaction between online misinformation, overwhelmed security forces, and a population already primed to migrate by political repression and limited economic opportunity.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:30:37.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "865eaa64b169ac51c6745708000f230e97d5b2b0d910ca6d22a69fa91f286893",
+          "source_item_id": "0197ef1ebe1f4a06e4f1449848070bac3f3e619ca0be566e8d033914d9b0e67d",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:30:37.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-fd5875ad8a2bb508-claim-01",
+          "story_id": "wt-fd5875ad8a2bb508",
+          "claim": "'Moroccans are desperate: Years of political crackdown and lack of economic opportunities': François Picard is pleased to welcome Aida Alami, New York Times World contributor. Drawing on her own field reporting at the Moroccan border, Alami challenges attempts to explain the mass crossing primarily through a theory of deliberate state orchestration. While acknowledging both Morocco’s history of leveraging migration in its relations with Spain and the possibility that security forces made tactical decisions on the day, Alami insists on distinguishing evidence from inference. Her reporting instead points toward an interaction between online misinformation, overwhelmed security forces, and a population already primed to migrate by political repression and limited economic opportunity.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        }
+      ],
+      "content_hash": "3dbb2fe9142f5b3a0c02f8a3084be18a3128d5302fbdfcae7bc582df550d3eac",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T12:51:34.068Z",
+      "event_first_seen_at": "2026-09-04T12:51:34.068Z",
+      "event_detected_at": "2026-09-04T12:51:34.068Z",
+      "event_id": "event-ace669e887231fac82e7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.951133333333335,
+        "detection_delay_minutes": 20.951133333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejection": {
+        "at": "2026-09-04T12:51:34.068Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-9c779d37f3331074",
+      "slug": "wehrpflicht-aufruf-zur-kriegsdienstverweigerung-331074",
+      "title": "Wehrpflicht: Aufruf zur Kriegsdienstverweigerung",
+      "first_seen": "2026-09-04T12:23:38.000Z",
+      "last_updated": "2026-09-04T12:23:38.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/altpapier/das-altpapier-wehrpflicht-heribert-prantl-im-kriegsfall-kriegsdienst-verweigern-100.html",
+          "title": "Wehrpflicht: Aufruf zur Kriegsdienstverweigerung",
+          "summary": "Heribert Prantl ruft zur Kriegsdienstverweigerung auf, die Bundesregierung kommuniziert zur sogenannten Zeitenwende lieber weniger als mehr – und sowieso haben einige Männer so einiges zum Thema Wehrpflicht zu sagen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:23:38.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5aa2ea84912b67f01f8b94de1943084f66cdbc97c7c63a144e044829310282d9",
+          "source_item_id": "e35ae213d4a8a33bd67e8321b1ad8579c3cd60ec6a84f9f29857d2f0124244ec",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:23:38.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9c779d37f3331074-claim-01",
+          "story_id": "wt-9c779d37f3331074",
+          "claim": "Wehrpflicht: Aufruf zur Kriegsdienstverweigerung: Heribert Prantl ruft zur Kriegsdienstverweigerung auf, die Bundesregierung kommuniziert zur sogenannten Zeitenwende lieber weniger als mehr – und sowieso haben einige Männer so einiges zum Thema Wehrpflicht zu sagen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        }
+      ],
+      "content_hash": "d375cfb2f068121b4d98478fe69ca6922c1be5013a5a3cc9be28ee0e4d9d5534",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T12:51:34.068Z",
+      "event_first_seen_at": "2026-09-04T12:51:34.068Z",
+      "event_detected_at": "2026-09-04T12:51:34.068Z",
+      "event_id": "event-a638fd297384bb399efe",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 27.934466666666665,
+        "detection_delay_minutes": 27.934466666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejection": {
+        "at": "2026-09-04T12:51:34.068Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d77ba3b06ce6fdb0",
+      "slug": "urteil-in-dessau-pressefotografen-legten-feuer-fur-exklusive-fotos-e6fdb0",
+      "title": "Urteil in Dessau: Pressefotografen legten Feuer für exklusive Fotos",
+      "first_seen": "2026-09-04T12:22:00.000Z",
+      "last_updated": "2026-09-04T12:22:00.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/verbrechen/sachsen-anhalt--fotografen-legen-feuer-und-muessen-ins-gefaengnis-38208890.html",
+          "title": "Urteil in Dessau: Pressefotografen legten Feuer für exklusive Fotos",
+          "summary": "Zwei Fotografen sind bei ihrer Arbeit in Sachsen-Anhalt übers Ziel hinausgeschossen: Für Aufnahmen von der Feuerwehr legten sie mehrere Brände. Jetzt wartet das Gefängnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:22:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c5c8ade82a38f18ee78a4a53bc539f2518bff63c07dcb4340a7c6df1ce2a5748",
+          "source_item_id": "0408a9d3c31bcb7dac7df7e69e89ea8feacfdd8763ae97917d4d464eeb8c06cc",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:22:00.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d77ba3b06ce6fdb0-claim-01",
+          "story_id": "wt-d77ba3b06ce6fdb0",
+          "claim": "Urteil in Dessau: Pressefotografen legten Feuer für exklusive Fotos: Zwei Fotografen sind bei ihrer Arbeit in Sachsen-Anhalt übers Ziel hinausgeschossen: Für Aufnahmen von der Feuerwehr legten sie mehrere Brände. Jetzt wartet das Gefängnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        }
+      ],
+      "content_hash": "5e6fad4a73e16cd584a1bf8e020117f75f28d1ef785cf7de37c1293e9bc3941c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T12:51:34.068Z",
+      "event_first_seen_at": "2026-09-04T12:51:34.068Z",
+      "event_detected_at": "2026-09-04T12:51:34.068Z",
+      "event_id": "event-f3cf885685f274398787",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 29.5678,
+        "detection_delay_minutes": 29.5678,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejection": {
+        "at": "2026-09-04T12:51:34.068Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-5fcf9eefe91fb705",
+      "slug": "brandenburger-politiker-machen-wahlkampf-in-sachsen-anhalt-1fb705",
+      "title": "Brandenburger Politiker machen Wahlkampf in Sachsen-Anhalt",
+      "first_seen": "2026-09-04T12:20:04.000Z",
+      "last_updated": "2026-09-04T12:20:04.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/wahlkampf-sachsen-anhalt-unterstuetzung.html",
+          "title": "Brandenburger Politiker machen Wahlkampf in Sachsen-Anhalt",
+          "summary": "Es könnte eng werden bei der Wahl in Sachsen-Anhalt. Die AfD möchte möglichst allein regieren. SPD, BSW und Grüne wollen es in den Landtag schaffen - und die CDU ein historisch schlechtes Wahlergebnis verhindern. Jetzt kommt Wahlkampfhilfe auch aus Brandenburg.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:20:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "b021bd65e28aefb2871de1861d3e934c635a0e33140d4b17cefce96fd2222460",
+          "source_item_id": "b4c47e2c6d726c04505558c72c622e56d89dfe328be3848eaaa5f4e9719d97bc",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:20:04.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5fcf9eefe91fb705-claim-01",
+          "story_id": "wt-5fcf9eefe91fb705",
+          "claim": "Brandenburger Politiker machen Wahlkampf in Sachsen-Anhalt: Es könnte eng werden bei der Wahl in Sachsen-Anhalt. Die AfD möchte möglichst allein regieren. SPD, BSW und Grüne wollen es in den Landtag schaffen - und die CDU ein historisch schlechtes Wahlergebnis verhindern. Jetzt kommt Wahlkampfhilfe auch aus Brandenburg.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "rbb24-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        }
+      ],
+      "content_hash": "f23c078798900bbf06b07d27bcfc8fba69a0adfe97b51fe4591ecbb5a4c37a45",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T12:51:34.068Z",
+      "event_first_seen_at": "2026-09-04T12:51:34.068Z",
+      "event_detected_at": "2026-09-04T12:51:34.068Z",
+      "event_id": "event-12dcf5b387465e33244e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 31.501133333333332,
+        "detection_delay_minutes": 31.501133333333332,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejection": {
+        "at": "2026-09-04T12:51:34.068Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
       "story_id": "wt-d4ea36d47045ac56",
       "slug": "umspannwerk-wieder-angriff-auf-stromnetz-bekennerbrief-gibt-hinweise-45ac56",
       "title": "Umspannwerk: Wieder Angriff auf Stromnetz – Bekennerbrief gibt Hinweise",
@@ -689,493 +1777,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-7a87a173a2b4c2bc",
-      "slug": "schutz-der-infrastruktur-beratungen-uber-regeln-fur-private-drohnenabwehr-b4c2bc",
-      "title": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr",
-      "first_seen": "2026-09-04T02:00:12.000Z",
-      "last_updated": "2026-09-04T12:08:53.000Z",
-      "topic": [
-        "Wirtschaft",
-        "Politik",
-        "Geopolitik",
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/bayern/schutz-der-infrastruktur--beratungen-ueber-regeln-fuer-private-drohnenabwehr-38205710.html",
-          "title": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr",
-          "summary": "Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:00:12.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "ddaf77e7d6a1e90cf96d2f727a2ef344459d8deea6d7033c353e6c9b085351ec",
-          "source_item_id": "53f446900c78348940f88ce563ce353511e441d9d5ea08541adc7b0daf0463f7",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T02:00:12.000Z",
-          "ingested_at": "2026-09-04T02:21:15.650Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-schutz-der-infrastruktur-16016029.html",
-          "title": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr",
-          "summary": "Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:02:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "6426e1d54af5c6388fdf2d18007b84de3b6175b78ddac79a910d56fba08839a0",
-          "source_item_id": "794afc6144c3d93fe9f5d195631b9151a4adca490299133e42862a0b7ee01dc3",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T02:02:18.000Z",
-          "ingested_at": "2026-09-04T05:06:21.635Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/bayern/schutz-der-infrastruktur--nach-brandanschlag--beratungen-ueber-private-drohnenabwehr-38206172.html",
-          "title": "Schutz der Infrastruktur: Nach Brandanschlag: Beratungen über private Drohnenabwehr",
-          "summary": "Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T04:49:14.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "9da136d9cbd4b9904a2950d97350b337be1c384a2757f6b6fe6f0ab7adb5e72e",
-          "source_item_id": "c33c77e21ae325064359470e129b6568e55420827ae1e2aab8dab050b7e22b1e",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T04:49:14.000Z",
-          "ingested_at": "2026-09-04T05:06:21.635Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/--haftbefehle-gegen-zwei-bulgaren-nach-brandanschlag-erlassen-38206172.html",
-          "title": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
-          "summary": "Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:58:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "4a35db8552cd8655e7b657455679608d720054508e39a12ec89e4b6b915f11cc",
-          "source_item_id": "97ba205e4656022adb1c3ec8c8e386a079c8e64c3d7d2656761a23a4af086b9b",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T11:58:15.000Z",
-          "ingested_at": "2026-09-04T12:06:38.422Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/--haftbefehle-gegen-zwei-bulgaren-nach-brandanschlag-erlassen-38209104.html",
-          "title": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
-          "summary": "Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:58:26.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "075614d90c374d623efb4729f46cf20f1d11cacd97c3d418f148fdf28cc041c6",
-          "source_item_id": "bb643bda8eebc19510b2f7f66760856df378454b2d94c290487fa57adf966381",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T11:58:26.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-berlin-brandenburg-16019310.html",
-          "title": "Berlin / Brandenburg: Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
-          "summary": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:59:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "9b1ffb45ace98a02a717c2439e7a68f028126f239372e3ec309f53893a0e1c4e",
-          "source_item_id": "83e43de02d0a79f2837a512cb52f4d76e34bd680d7a9034746956478b5f10a02",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T11:59:18.000Z",
-          "ingested_at": "2026-09-04T12:06:38.422Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/anschlag-in-muenchen--zwei-verdaechtige-nach-brandanschlag-in-muenchen-in-u-haft-38206172.html",
-          "title": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft",
-          "summary": "Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T12:08:53.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "9df316b005cdb57ad3e11fc5600930bbd343636b45e0d664a3e3cc314b6c5094",
-          "source_item_id": "e81b38ef794a86f39064dcbce231e47fa331420c10b58efd07f77a2b7404903e",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:08:53.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-anschlag-in-munchen-16019310.html",
-          "title": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft",
-          "summary": "Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:59:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "207ee1e3e76427ce9c4b24c4d8a3fe59ea3ee725a5b1fdfd361a236775c5b591",
-          "source_item_id": "9e90efa2dbc279f5fe3c4e4a9499c920b42a1392a33bfa377fb65c47218a654f",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T11:59:18.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-01",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr: Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-02",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Schutz der Infrastruktur: Beratungen über Regeln für private Drohnenabwehr: Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-03",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Schutz der Infrastruktur: Nach Brandanschlag: Beratungen über private Drohnenabwehr: Sabotagefälle häufen sich: Sollen Unternehmen künftig selbst Drohnen abwehren dürfen – und wenn ja, wo stellt der Gesetzgeber die Leitplanken dafür auf?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-04",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen: Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-05",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen: Nach dem Brandanschlag auf eine Baustelle in unmittelbarer Nähe zu Münchner Rüstungsunternehmen sind zwei aus Bulgarien stammende Tatverdächtige in Untersuchungshaft gekommen. Sie sollen aus einem Auto heraus Brandsätze geworfen haben, wie die Generalstaatsanwaltschaft München und das bayerische Landeskriminalamt mitteilten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-06",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Berlin / Brandenburg: Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen: Haftbefehle gegen zwei Bulgaren nach Brandanschlag erlassen",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-07",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft: Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        },
-        {
-          "claim_id": "wt-7a87a173a2b4c2bc-claim-08",
-          "story_id": "wt-7a87a173a2b4c2bc",
-          "claim": "Anschlag in München: Zwei Verdächtige nach Brandanschlag in München in U-Haft: Nach Anschlägen tun sich die Ermittler häufig schwer. Im jüngsten Münchner Fall war das anders: Ein Zeuge beobachtete die mutmaßlichen Täter.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        }
-      ],
-      "content_hash": "f969802debf3a2ccb4f62178e31c4b0db4dec8ff04582e2ec906757db22bd245",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T12:21:52.190Z",
-      "event_first_seen_at": "2026-09-04T02:21:15.650Z",
-      "event_detected_at": "2026-09-04T02:21:15.650Z",
-      "event_id": "event-41372b418679984cd46a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 56,
-        "public_relevance": "hoch",
-        "topics": [
-          "Wirtschaft",
-          "Politik",
-          "Geopolitik",
-          "Gesellschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Regeln und Verbindlichkeiten",
-          "Veränderung von Infrastruktur oder Versorgungskapazität"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 12.9865,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 600.609,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 95,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T12:21:52.190Z",
-      "rejection": {
-        "at": "2026-09-04T12:21:52.190Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -3047,14 +3648,14 @@
           "source_id": "tagesspiegel-home",
           "publisher": "Der Tagesspiegel",
           "url": "https://www.tagesspiegel.de/sport/handball-prasident-im-bsw-wahlkampf-ich-weiss-nicht-ob-man-das-so-trennen-kann-16018794.html",
-          "title": "Handball-Präsident im BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“",
+          "title": "Handball-Präsident macht BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“",
           "summary": "Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
           "source_type": "media_rss",
           "published_at": "2026-09-04T11:43:21.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "7eeba5138d0ed905fba61bdf0e0e7fcc50bb94a7459b1a22b955dcce010dc98a",
+          "content_hash": "d232611ef99d9b02c3aa0de2b541015a98f46da8cf26470a01251eb48b982677",
           "source_item_id": "6aefedd2b8be1f22afb3b71b00de34d881a39fc9c6c53de8354f4a7acd6612da",
           "publisher_id": "tagesspiegel",
           "publisher_kind": "journalism",
@@ -3067,7 +3668,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T11:43:21.000Z",
-          "ingested_at": "2026-09-04T12:06:38.422Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
@@ -3079,7 +3680,7 @@
         {
           "claim_id": "wt-05a85d44e21491c4-claim-01",
           "story_id": "wt-05a85d44e21491c4",
-          "claim": "Handball-Präsident im BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“: Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
+          "claim": "Handball-Präsident macht BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“: Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
@@ -3094,10 +3695,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:06:38.422Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         }
       ],
-      "content_hash": "e498641905b0d8163d504a04d3f03c27b2cf36104aa41aa2776789cc8b9b52ef",
+      "content_hash": "0054ee0086a078438af0144efeb9928747879cb71977641a4acf3cb205c7b190",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
@@ -3106,7 +3707,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T12:06:38.422Z",
+      "updated_at": "2026-09-04T12:51:34.068Z",
       "event_first_seen_at": "2026-09-04T12:06:38.422Z",
       "event_detected_at": "2026-09-04T12:06:38.422Z",
       "event_id": "event-72e073be247cfa5d7570",
@@ -3139,20 +3740,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 23.290366666666667,
+        "source_age_minutes": 68.2178,
         "detection_delay_minutes": 23.290366666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 44.92743333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 86,
         "freshness_warning": null
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T12:06:38.422Z",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
       "rejection": {
-        "at": "2026-09-04T12:06:38.422Z",
+        "at": "2026-09-04T12:51:34.068Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -5123,6 +5724,87 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T11:14:26.097Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-04T12:51:34.068Z",
+        "content_hash": "b8143a0b4b34d722953976780f552399acc3511bc5dc159b6fde6463fd1528ba",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+            "summary": "Die Polizei hält ein Bekennerschreiben im Zusammenhang mit der Sabotage an mehreren Umspannwerken für authentisch. Nach Informationen des Deutschlandfunks gilt ein Mann aus Gevelsberg im südlichen Ruhrgebiet als tatverdächtig. Nach ihm wird bundesweit gefahndet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T12:49:35.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "aac57a9cce9947ec77634116a87b6efed45b4d838368c2a57600ccaa95238a27",
+            "source_item_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T12:49:35.000Z",
+            "ingested_at": "2026-09-04T12:51:34.068Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false
       }
     },
     {
@@ -6973,7 +7655,486 @@
           "source_count": 14
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "pending_update": {
+        "detected_at": "2026-09-04T13:05:47.106Z",
+        "content_hash": "47dbb24c1485c38e734f8ee9a2356fe7e29666f3e9bc7d63878bcd94081ec429",
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+            "title": "Sabotage: Polizei fahndet nach Mann aus Gevelsberg",
+            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen fahndet die Polizei nach einem Mann aus Gevelsberg.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T09:04:21.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "984ef2757a5116da02401ea1e703522f2c4af1471233bc87c161debb5c6a063a",
+            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T09:04:21.000Z",
+            "ingested_at": "2026-09-04T09:21:34.386Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+            "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von einem Sabotagedelikt aus. Offenbar sollte ein Kurzschluss hergestellt werden. Es…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T01:45:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399",
+            "source_item_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T01:45:01.000Z",
+            "ingested_at": "2026-09-04T01:51:32.529Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+            "title": "Weiterer Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "An einem Umspannwerk bei Dormagen in NRW gab es einen Sabotageversuch, Abschussvorrichtungen wurden gefunden. Die Polizei fahndet nach einem Mann, der ein Bekennerschreiben verfasst hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T05:37:43.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "861f58150d932ea7e1ae3e6e6f2a3c3654528792c6ac8b3c4b5144f8b0fe3d46",
+            "source_item_id": "286bf0c30dea8a66a74bbd8d5dfedf5d68ede625df946d30e3855702488349f4",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T05:37:43.000Z",
+            "ingested_at": "2026-09-04T10:42:21.689Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weiterer Polizeieinsatz in Oldenburg",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T06:00:49.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f397bdaf0a0e0965443026caf5c07d2a0d73303620bb48cc4bdec82e661ce42a",
+            "source_item_id": "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T06:00:49.000Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
+            "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T02:12:48.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "14087e66bcbc1e292a4cce1326e0a43ef35e21c1a36fc885d8df1a5f590912b3",
+            "source_item_id": "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T02:12:48.000Z",
+            "ingested_at": "2026-09-04T02:21:15.650Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
+            "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
+            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Nun geht sie von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T00:39:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "0cb6451ef05c61d48dfe4e08781be6c29a0e5450f556b38588286baa0654a19d",
+            "source_item_id": "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T00:39:00.000Z",
+            "ingested_at": "2026-09-04T01:26:36.485Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "publisher": "DER SPIEGEL",
+            "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
+            "title": "Dormagen: Polizei geht von versuchter Sabotage an Umspannwerk aus",
+            "summary": "Ein Spaziergänger hatte einen verdächtigen Gegenstand entdeckt. Jetzt erklären die Ermittler: Im neuen Fall in Dormagen dürfte es sich um versuchte Sabotage handeln. Ein Bekennerschreiben liegt demnach vor.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T01:06:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "fb23a151dcb8577bbe55a13a4d92dd302962e8cf0a9d5b9cd3bce01f52dc0ef9",
+            "source_item_id": "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60",
+            "publisher_id": "spiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T01:06:00.000Z",
+            "ingested_at": "2026-09-04T01:26:36.485Z",
+            "provenance": {
+              "origin": "publisher:spiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
+            "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Handelt es sich um eine Abschussvorrichtung oder nur um einen schlechten Scherz?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T21:07:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "95ca532a46bb3d2ac8e1b929c35086ce0fba2d0a679167fc63e2de441f64c926",
+            "source_item_id": "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T21:07:00.000Z",
+            "ingested_at": "2026-09-04T00:21:22.875Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
+            "title": "Nach Angriffen auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+            "summary": "Handelt es sich um eine Abschussvorrichtung, oder nur um einen schlechten Scherz? Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T21:03:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8bee50c615245a339fea47ea2d996565dfb75d37869a6674ac52c0f3572d2ab9",
+            "source_item_id": "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T21:03:08.000Z",
+            "ingested_at": "2026-09-04T00:21:22.875Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
+            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weitere Polizeieinsätze in Oldenburg und Aachen",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T09:17:32.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "2f61feb3bed04e1b34b3a63421ce9121bab7a615a1c9cda7155a0f896b25c6f7",
+            "source_item_id": "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T09:17:32.000Z",
+            "ingested_at": "2026-09-04T09:21:34.386Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+            "summary": "Nach dem Bekennerschreiben an die taz gehen die Angriffe auf Umspannwerke weiter – jetzt in Dormagen. Die Polizei fahndet nach einem Gevelsberger. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:59:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "7a24f109aae1edc09705e29df404e58bb1a2103f61c4d94f1f7ee9dd7390d817",
+            "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:59:00.000Z",
+            "ingested_at": "2026-09-04T11:10:57.869Z",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
+            "title": "Polizei: Mögliche Sabotage an Umspannwerk in Dormagen",
+            "summary": "Ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen deutet laut Polizei auf mögliche Sabotage hin. Am Dienstag gab es bereits Vorfälle an zwei anderen Umspannwerken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T02:29:46.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e5d6e71e0a3b23b8b134f10c0a5a0ee754152692b8aea3cdcc716d2979a64e6d",
+            "source_item_id": "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T02:29:46.000Z",
+            "ingested_at": "2026-09-04T12:51:34.068Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
+            "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
+            "summary": "Sabotageversuch am Umspannwerk Dormagen • Bundespräsident lädt zum Bürgerfest nach Bonn • Jens Spahn verklagt Rapper",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T04:50:24.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "86bc2ee7abfaf02e3f35afbdf4070d899a84c48258e4e2cc56fa9e58261d0e54",
+            "source_item_id": "02e1209af9a34683c59bcc8c50426b8443647ab5cbfb2060694778258a4ece49",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T04:50:24.000Z",
+            "ingested_at": "2026-09-04T08:51:38.320Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-bundesweite-fahndung-nach-tatverdaechtigem-100.html",
+            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - bundesweite Fahndung nach Tatverdächtigem",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T10:29:27.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1579fa99b9896e4b993c2c8a50d71dfdc88e18380ca03efda710ef2948d89740",
+            "source_item_id": "05552d28b92ed39570221f63df0f2d7901c46aa4f7c18565373d448570e393b5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T10:29:27.000Z",
+            "ingested_at": "2026-09-04T10:42:21.689Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/taeter-attackieren-erneut-stromnetz---dieses-mal-in-dormagen-38206824.html",
+            "title": "„Sabotagedelikt“: Täter nehmen erneut Stromnetz ins Visier – dieses Mal in Dormagen",
+            "summary": "Erst Bergheim-Rheidt und Jänschwalde, nun Dormagen: Offenbar gab es wieder einen Sabotageversuch an einem Umspannwerk. CDU-Politiker Henrichmann fordert mehr „Wehrhaftigkeit“.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T12:40:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "88af1df7bf75b955a73481c885d6e4e245cea9fee771a0cbaf9a8d0fe405b7bd",
+            "source_item_id": "d1ea527bc68ee185ff7b0adf5e831e5608f9997731f1a75f7845833f867aae38",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T12:40:00.000Z",
+            "ingested_at": "2026-09-04T12:51:34.068Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_INPUT_TOO_LARGE"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false
+      }
     },
     {
       "story_id": "wt-518b1340eb503e19",
@@ -19731,14 +20892,14 @@
           "source_id": "france24-en",
           "publisher": "France 24",
           "url": "https://www.france24.com/en/tv-shows/the-debate/20260904-german-far-right-s-breakout-moment-afd-party-eyes-outright-win-in-regional-election",
-          "title": "German far-right's breakout moment? AfD party eyes outright win in regional election",
+          "title": "German far right's breakout moment? AfD party eyes outright win in regional election",
           "summary": "Could Europeans awaken next Monday to another shock bellwether moment? German voters could for the first time since World War II give an outright majority to a far-right party in regional elections. We ask about the AfD's push in Saxony-Anhalt and a charismatic lead candidate whose campaign strives to put charm above the vitriol usually associated with a party with pro-Nazi roots.",
           "source_type": "media_rss",
           "published_at": "2026-09-04T09:29:09.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Geopolitik",
-          "content_hash": "bbc24da8f8ee7f4e8051a1679cf3fbc24239b551587db41cfcdf4bd8acbd50f8",
+          "content_hash": "f72dcbf06ca7accf2982c363e8dec3f4e67ef3aa08455f28d3db4284eaa3e90c",
           "source_item_id": "ad40d2f059ef234f422e0e6ba91596f46c2db9e1eb35113ef6ec709a65fc9fd4",
           "publisher_id": "france24",
           "publisher_kind": "public_broadcasting",
@@ -19750,7 +20911,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T09:29:09.000Z",
-          "ingested_at": "2026-09-04T10:07:41.576Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
           "provenance": {
             "origin": "publisher:france24",
             "basis": "publisher_only_origin_unverified",
@@ -19762,7 +20923,7 @@
         {
           "claim_id": "wt-44f670b320e72165-claim-01",
           "story_id": "wt-44f670b320e72165",
-          "claim": "German far-right's breakout moment? AfD party eyes outright win in regional election: Could Europeans awaken next Monday to another shock bellwether moment? German voters could for the first time since World War II give an outright majority to a far-right party in regional elections. We ask about the AfD's push in Saxony-Anhalt and a charismatic lead candidate whose campaign strives to put charm above the vitriol usually associated with a party with pro-Nazi roots.",
+          "claim": "German far right's breakout moment? AfD party eyes outright win in regional election: Could Europeans awaken next Monday to another shock bellwether moment? German voters could for the first time since World War II give an outright majority to a far-right party in regional elections. We ask about the AfD's push in Saxony-Anhalt and a charismatic lead candidate whose campaign strives to put charm above the vitriol usually associated with a party with pro-Nazi roots.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "france24-en",
           "source_function": "journalistic_report",
@@ -19777,10 +20938,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T10:07:41.576Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         }
       ],
-      "content_hash": "16e466dbb82e94d950bb26b5027c87ac48a6a255951f7535116aa330e6cab8a8",
+      "content_hash": "aba607fbb0cd7565b1c84c95b44e8f0043091414ee13120ffc0c6e53757487d3",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
@@ -19789,7 +20950,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T10:07:41.576Z",
+      "updated_at": "2026-09-04T12:51:34.068Z",
       "event_first_seen_at": "2026-09-04T09:46:20.569Z",
       "event_detected_at": "2026-09-04T09:46:20.569Z",
       "event_id": "event-7185e95e5cd0ce2f7c90",
@@ -19821,20 +20982,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 38.54293333333333,
+        "source_age_minutes": 202.4178,
         "detection_delay_minutes": 17.192816666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 21.35011666666667,
+        "queue_age_minutes": 185.22498333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
-        "freshness_warning": null
+        "news_freshness_score": 58,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T10:07:41.576Z",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
       "rejection": {
-        "at": "2026-09-04T10:07:41.576Z",
+        "at": "2026-09-04T12:51:34.068Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -20394,7 +21555,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T06:45:02.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -20456,7 +21617,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T07:06:15.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
           "provenance": {
             "origin": "publisher:ndr",
             "basis": "publisher_only_origin_unverified",
@@ -20501,7 +21662,7 @@
           "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T12:10:15.000Z",
+          "published_at": "2026-09-04T12:49:35.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -20517,8 +21678,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:10:15.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "source_published_at": "2026-09-04T12:49:35.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -20532,7 +21693,7 @@
           "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T12:10:15.000Z",
+          "published_at": "2026-09-04T12:49:35.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -20548,8 +21709,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:10:15.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "source_published_at": "2026-09-04T12:49:35.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -20563,7 +21724,7 @@
           "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
           "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T12:10:15.000Z",
+          "published_at": "2026-09-04T12:49:35.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -20579,8 +21740,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:10:15.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "source_published_at": "2026-09-04T12:49:35.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -20669,7 +21830,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -20689,7 +21850,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -20709,7 +21870,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -20729,7 +21890,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -20749,7 +21910,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -20769,7 +21930,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -20789,7 +21950,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -20809,7 +21970,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -20829,7 +21990,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
+          "checked_at": "2026-09-04T12:51:34.068Z"
         }
       ],
       "content_hash": "8f889a609ff8374b84a48072a22ecd35f06957dd36d78d5ce0752fe3bc3509c0",
@@ -20841,7 +22002,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T12:21:52.190Z",
+      "updated_at": "2026-09-04T12:51:34.068Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -20875,20 +22036,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 11.619833333333334,
+        "source_age_minutes": 1.9844666666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.15051666666665,
+        "queue_age_minutes": 359.8484833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 100,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T12:21:52.190Z",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
       "rejection": {
-        "at": "2026-09-04T12:21:52.190Z",
+        "at": "2026-09-04T12:51:34.068Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -23208,6 +24369,132 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-5e774e398492eb48",
+      "slug": "kritische-infrastruktur-unter-druck-betreiber-fordern-strengere-gesetze-92eb48",
+      "title": "Kritische Infrastruktur unter Druck: Betreiber fordern strengere Gesetze",
+      "first_seen": "2026-09-04T07:34:00.000Z",
+      "last_updated": "2026-09-04T07:34:00.000Z",
+      "topic": [
+        "Energie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/umspannwerk-brndenburg-kritische-infrastruktur-schutz,sabotage-122.html",
+          "title": "Kritische Infrastruktur unter Druck: Betreiber fordern strengere Gesetze",
+          "summary": "Die jüngsten Vorfälle in Brandenburg und Nordrhein-Westfalen haben gezeigt: Einfache Mittel können wichtige Teile der Stromversorgung treffen. Nun ist eine Debatte um den Schutz kritischer Infrastruktur neu entbrannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:34:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9b0896ab85c285b75b0281169cef45b3b85adc1dc3a4e100369c10fec378b47b",
+          "source_item_id": "cdad45ffea0dbbf6cc751b066aaf258d30310847e7669195f0d51acc3eba45b5",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:34:00.000Z",
+          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5e774e398492eb48-claim-01",
+          "story_id": "wt-5e774e398492eb48",
+          "claim": "Kritische Infrastruktur unter Druck: Betreiber fordern strengere Gesetze: Die jüngsten Vorfälle in Brandenburg und Nordrhein-Westfalen haben gezeigt: Einfache Mittel können wichtige Teile der Stromversorgung treffen. Nun ist eine Debatte um den Schutz kritischer Infrastruktur neu entbrannt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T12:51:34.068Z"
+        }
+      ],
+      "content_hash": "5194d95ac6143c2f51d44d3f7389f371dc10732fa9d632c4344fdb8d67dcea5e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T12:51:34.068Z",
+      "event_first_seen_at": "2026-09-04T12:51:34.068Z",
+      "event_detected_at": "2026-09-04T12:51:34.068Z",
+      "event_id": "event-e210087f5a733501f85f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 317.5678,
+        "detection_delay_minutes": 317.5678,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 34,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejection": {
+        "at": "2026-09-04T12:51:34.068Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
