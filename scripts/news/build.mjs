@@ -15,7 +15,7 @@ import { formatReferenceFramework } from "./reference-frameworks.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260904-sdg1";
+const PUBLIC_RELEASE = "20260904-actions1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
@@ -162,11 +162,11 @@ function analysisTypeLabel(type) {
   return (ANALYSIS_TYPES[type] || ANALYSIS_TYPES.monitoring).label;
 }
 
-function shareControl(story, suffix = "top") {
+function shareControl(story, suffix = "top", label = "Nachricht teilen") {
   const statusId = `news-share-status-${story.slug}-${suffix}`;
   const shareUrl = `${SITE}/wirkungsticker/${story.slug}/`;
   const shareText = `Wirkungsticker: ${story.analysis.summary}`;
-  return `<div class="news-share" data-news-share><button class="btn btn-secondary news-share__button" type="button" data-news-share-button data-share-title="${escapeHtml(story.title)}" data-share-text="${escapeHtml(shareText)}" data-share-url="${escapeHtml(shareUrl)}" aria-describedby="${escapeHtml(statusId)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .18.02.35.05.52L8.91 9.1A3 3 0 0 0 7 8.42a3 3 0 1 0 1.91 5.49l6.14 3.58A3 3 0 0 0 15 18a3 3 0 1 0 .83-2.07l-6.14-3.58c.2-.55.2-1.15 0-1.7l6.14-3.58A3 3 0 0 0 18 8Z" fill="currentColor"/></svg><span>Nachricht teilen</span></button><p class="news-share__status" id="${escapeHtml(statusId)}" data-news-share-status aria-live="polite"></p></div>`;
+  return `<div class="news-share" data-news-share data-search-exclude><button class="btn btn-secondary news-share__button" type="button" data-news-share-button data-share-title="${escapeHtml(story.title)}" data-share-text="${escapeHtml(shareText)}" data-share-url="${escapeHtml(shareUrl)}" aria-label="${escapeHtml(`Nachricht teilen: ${story.title}`)}" aria-describedby="${escapeHtml(statusId)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .18.02.35.05.52L8.91 9.1A3 3 0 0 0 7 8.42a3 3 0 1 0 1.91 5.49l6.14 3.58A3 3 0 0 0 15 18a3 3 0 1 0 .83-2.07l-6.14-3.58c.2-.55.2-1.15 0-1.7l6.14-3.58A3 3 0 0 0 18 8Z" fill="currentColor"/></svg><span>${escapeHtml(label)}</span></button><p class="news-share__status" id="${escapeHtml(statusId)}" data-news-share-status aria-live="polite"></p></div>`;
 }
 
 function saveControl(story) {
@@ -232,7 +232,7 @@ function card(story, index) {
     <span class="news-card__source">${renderIcon("quelle")}<span>${escapeHtml(publisherLabel)} · Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span></span>
     <span class="news-card__meta">${renderIcon("uhr")}<span>WÖk-Analyse aktualisiert ${escapeHtml(formatDate(story.last_updated))}</span></span>
     <a class="btn btn-secondary news-card__cta" href="${escapeHtml(href)}">Fakten- &amp; Folgencheck öffnen${renderIcon("pfeil")}</a>
-    ${saveControl(story)}
+    <div class="news-card__actions">${saveControl(story)}${shareControl(story, "card", "Teilen")}</div>
   </div>
 </article>`;
 }
@@ -282,7 +282,7 @@ ${header}
 ${renderIconSprite()}
 ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
-<script src="${base}assets/js/main.js?v=20260904-reader3"></script>
+<script src="${base}assets/js/main.js?v=20260904-actions1"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260904-reader2"></script>
@@ -344,7 +344,7 @@ function indexPage(stories, updatedAt) {
       "@context": "https://schema.org", "@type": "CollectionPage", "@id": `${SITE}/wirkungsticker/#page`, url: `${SITE}/wirkungsticker/`, name: "Wirkungsticker", inLanguage: "de",
       dateModified: updatedAt, mainEntity: { "@type": "ItemList", itemListElement: stories.map((story, index) => ({ "@type": "ListItem", position: index + 1, url: `${SITE}/wirkungsticker/${story.slug}/`, name: story.title })) },
     },
-    extraScript: '<script src="../assets/js/news.js?v=20260904-reader2"></script>',
+    extraScript: '<script src="../assets/js/news.js?v=20260904-reader2"></script><script src="../assets/js/news-share.js?v=20260904-actions1"></script>',
   });
 }
 
@@ -464,7 +464,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       articleSection: story.topic, citation: story.sources.map((source) => source.url),
     },
-    extraScript: '<script src="../../assets/js/news-share.js?v=20260903-2"></script>',
+    extraScript: '<script src="../../assets/js/news-share.js?v=20260904-actions1"></script>',
   });
 }
 

@@ -65,7 +65,7 @@
       }
 
       var copied = await copyLink(url);
-      announce(copied ? "Link zur Nachricht kopiert." : "Teilen ist hier nicht verfügbar. Bitte kopiere die Adresse aus der Browserzeile.");
+      announce(copied ? "Link zur Nachricht kopiert." : "Bitte kopiere diesen Nachrichtenlink: " + url);
     });
   });
 })();
