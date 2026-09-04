@@ -92,7 +92,7 @@
     "privacy:release": "node scripts/quality/check-release-safety.mjs --scope=release",
     "publications:verify": "node scripts/quality/verify-public-documents.mjs",
     "publications:deep-verify": "node scripts/quality/verify-public-documents.mjs --deep",
-    "check:portal-structure": "tsx --test tests/portal-navigation.test.ts tests/impact-signature.test.ts tests/register.test.ts tests/portal-stand.test.ts && node scripts/validate_palette.js \"#1f6f5c,#a54537,#c8a24a,#7a8798\" --mode light && tsx scripts/quality/portal-text-inventory.ts"
+    "check:portal-structure": "tsx --test tests/portal-navigation.test.ts tests/impact-signature.test.ts tests/register.test.ts tests/portal-stand.test.ts tests/decision-depth.test.ts && node scripts/validate_palette.js \"#1f6f5c,#a54537,#c8a24a,#7a8798\" --mode light && tsx scripts/quality/portal-text-inventory.ts"
   },
   "engines": {
     "node": ">=22 <25"

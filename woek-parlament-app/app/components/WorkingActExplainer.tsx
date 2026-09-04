@@ -84,8 +84,8 @@ export function WorkingActExplainer({ workingAct, view = "ueberblick", publicEvi
 
       {view === "ueberblick" && <ImpactProfileRadar axes={profileAxes(workingAct)} />}
 
-      {detail && view !== "ueberblick" && <section className="review-deep-dive" aria-labelledby="review-deep-dive-title">
-        <header className="review-deep-dive-header"><p className="eyebrow">Wirkungsakte · Vertiefung</p><h2 id="review-deep-dive-title">{detailTitle}</h2><p>{detailLead}</p></header>
+      {detail && view !== "ueberblick" && <section className="review-deep-dive" aria-labelledby={`review-deep-dive-title-${view}`}>
+        <header className="review-deep-dive-header"><p className="eyebrow">Wirkungsakte · Vertiefung</p><h2 id={`review-deep-dive-title-${view}`}>{detailTitle}</h2><p>{detailLead}</p></header>
 
         {view === "wirkprofil" && detail.impactDomains.length > 0 && <section id="wirkprofil" className="review-detail-section" aria-labelledby="impact-domains-title"><h3 id="impact-domains-title">Mensch, Planet und Demokratie</h3><p className="section-intro">Das Wirkprofil zeigt berührte Zustände und Schutzgüter. Es ist weder eine Gesamtnote noch ein Nachweis bereits eingetretener Wirkung.</p><div className="review-domain-grid">{detail.impactDomains.map((domain) => <article key={domain.domain}><p className="eyebrow">{domain.domain}</p><h4>{humanizeSystemValue(domain.assessment)}</h4><List items={domain.relevance} empty="Für diesen Bereich sind noch keine einzelnen Bezugspunkte dokumentiert." /></article>)}</div></section>}
 
