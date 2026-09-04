@@ -36,6 +36,10 @@ Die alten Tests zum Vorrang des Ergebnisses prüfen jetzt Signatur **vor Verfahr
 - Gesamter Browserbestand: 342 Routen, 33 Redirect-Regeln, Drawer/Tastatur/Escape/Fokus, Same-Page/Back/Forward, Reduced Motion PASS; keine Runtime-/5xx-Fehler.
 - Exact-head-Prüfung und commitgebundene Preview werden im PR durch GitHub Actions erneut erzeugt. Merge erst nach Grün.
 
+## Reproduzierbare Voraussetzung des Repository-Gates
+
+Der erste Root-Website-Check scheiterte am bereits auf `main` veralteten Suchindex für `news/index.html` und den Content-Hashes von `index.html`. Nach Integration von `57c62f61f9ea7b918ecc97a1d49f994be666ca4b` wurden ausschließlich die beiden bestehenden Suchartefakte mit `SOURCE_DATE_EPOCH=1787270400 npm run build:search` neu erzeugt. Alle 30.541 URLs bleiben erhalten; elf News-Sucheinträge erhalten den tatsächlich veröffentlichten Seitenbestand. Keine Suchlogik, Nachricht oder Fachquelle wurde dabei editiert. Der Root-Check bleibt unverändert strikt.
+
 ## Freigabegrenze
 
 Keine Fachquelle geändert. Keine Evidenzklasse oder eingetretene Wirkung erfunden. Kein Vercel-Aufruf, keine automatische Preview/Deployment-Aktivierung. Die kontoweite rote Release-Kostensperre bleibt unverändert; GitHub-Prüfungen sind keine Production-Veröffentlichung.
