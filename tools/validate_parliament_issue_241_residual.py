@@ -82,9 +82,9 @@ def validate() -> dict:
     require(berlin["coverage"]["canonical_artifact_count"] == 12, "ISSUE_241_BE_CANONICAL_ARTIFACT_COUNT_DRIFT")
     require(berlin_fach["summary"]["programme_analysis_complete"] == 4, "ISSUE_241_BE_FACH_TERMINAL_COUNT_DRIFT")
     require(berlin_fach["summary"]["genuine_fach_programmes"] == 8, "ISSUE_241_BE_FACH_RESIDUAL_COUNT_DRIFT")
-    require(berlin_fach["summary"]["remaining_page_review_envelopes"] == 1193, "ISSUE_241_BE_FACH_ENVELOPE_COUNT_DRIFT")
+    require(berlin_fach["summary"]["remaining_page_review_envelopes"] == 1192, "ISSUE_241_BE_FACH_ENVELOPE_COUNT_DRIFT")
     require(berlin_fach["summary"]["remaining_exact_effect_objects_identified"] == 0, "ISSUE_241_BE_FACH_EXACT_OBJECT_COUNT_DRIFT")
-    require(berlin_fach["summary"]["remaining_review_scope_count"] == 1193, "ISSUE_241_BE_FACH_SCOPE_COUNT_DRIFT")
+    require(berlin_fach["summary"]["remaining_review_scope_count"] == 1192, "ISSUE_241_BE_FACH_SCOPE_COUNT_DRIFT")
     require(berlin_fach["summary"]["remaining_exact_effect_object_count"] is None, "ISSUE_241_BE_FALSE_EFFECT_OBJECT_COUNT")
     require(berlin_fach["summary"]["known_segmentation_defects"] == 2, "ISSUE_241_BE_SEGMENTATION_DEFECT_DRIFT")
     require(berlin_fach["rejected_predecessor"]["disposition"] == "REJECTED_FALSE_TERMINAL_HISTORICAL_EVIDENCE_ONLY", "ISSUE_241_BE_FALSE_TERMINAL_NOT_REJECTED")
@@ -96,9 +96,9 @@ def validate() -> dict:
     require(mv["coverage"]["canonical_current_source_finality_open_count"] == 1, "ISSUE_241_MV_OPEN_FINALITY_COUNT_DRIFT")
     require(golden["status"] == "COMBINED_GITHUB_GOLDEN_STATE", "ISSUE_241_COMBINED_CHECKPOINT_DRIFT")
     require(current_readiness["status"] == "FACH_RESIDUAL_OPEN", "ISSUE_241_CURRENT_GOLDEN_FALSE_GREEN")
-    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_envelopes"] == 1193, "ISSUE_241_CURRENT_GOLDEN_BE_RESIDUAL_DRIFT")
+    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_envelopes"] == 1192, "ISSUE_241_CURRENT_GOLDEN_BE_RESIDUAL_DRIFT")
     require(current_readiness["blocking_lanes"]["berlin"]["remaining_exact_effect_objects_identified"] == 0, "ISSUE_241_CURRENT_GOLDEN_BE_EXACT_OBJECT_DRIFT")
-    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_scopes"] == 1193, "ISSUE_241_CURRENT_GOLDEN_BE_SCOPE_DRIFT")
+    require(current_readiness["blocking_lanes"]["berlin"]["remaining_review_scopes"] == 1192, "ISSUE_241_CURRENT_GOLDEN_BE_SCOPE_DRIFT")
     require(current_readiness["blocking_lanes"]["mecklenburg_vorpommern"]["verified_final_programmes_requiring_truthful_residual"] == 12, "ISSUE_241_CURRENT_GOLDEN_MV_RESIDUAL_DRIFT")
     require(current_readiness["combined_release_gate"]["github_golden_state_current"] is False, "ISSUE_241_CURRENT_GOLDEN_RELEASE_FALSE_GREEN")
     require(current_readiness["combined_release_gate"]["owner_runtime_rc_request_allowed"] is False, "ISSUE_241_CURRENT_GOLDEN_RC_REQUEST_ENABLED")
@@ -110,7 +110,7 @@ def validate() -> dict:
 
     technical = matrix["finite_residuals"]["technical"]
     fach = matrix["finite_residuals"]["fach_review_required"]
-    require([item["id"] for item in technical] == ["BE-SPD-P23-AUTHORED-MATERIALISATION", "MV-SPD-PROTECTED-AUTHORED-P1-P54-MATERIALISATION", "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
+    require([item["id"] for item in technical] == ["MV-SPD-PROTECTED-AUTHORED-P1-P54-MATERIALISATION", "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
     require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_materialised_terminal_pages"] == mv_spd["summary"]["materialised_terminal_pages"] == [55], "ISSUE_241_MV_SPD_P55_DRIFT")
     require(not mv_spd["summary"]["p55_residual_source_object_ids"], "ISSUE_241_MV_P55_RESIDUAL")
     require(mv_spd["summary"]["protected_authored_pages_pending_technical_reconciliation"] == list(range(1,55)), "ISSUE_241_MV_AUTHORED_TECHNICAL_SCOPE_DRIFT")
@@ -120,9 +120,9 @@ def validate() -> dict:
     require(fach[0]["genuine_fach_programmes"] == ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "FDP", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"], "ISSUE_241_BE_FACH_OPEN_SET_DRIFT")
     require(fach[0]["canonical_artifact_register"].endswith("berlin-2026-v2.json"), "ISSUE_241_BE_FACH_ARTIFACT_REGISTER_DRIFT")
     require(fach[0]["fach_residual_matrix"].endswith("berlin-2026-v3.json"), "ISSUE_241_BE_FACH_MATRIX_DRIFT")
-    require(fach[0]["remaining_review_envelopes"] == 1193, "ISSUE_241_BE_FACH_FINITE_ENVELOPE_DRIFT")
+    require(fach[0]["remaining_review_envelopes"] == 1192, "ISSUE_241_BE_FACH_FINITE_ENVELOPE_DRIFT")
     require(fach[0]["remaining_exact_effect_objects_identified"] == 0, "ISSUE_241_BE_FACH_FINITE_EXACT_OBJECT_DRIFT")
-    require(fach[0]["remaining_review_scopes"] == 1193, "ISSUE_241_BE_FACH_FINITE_SCOPE_DRIFT")
+    require(fach[0]["remaining_review_scopes"] == 1192, "ISSUE_241_BE_FACH_FINITE_SCOPE_DRIFT")
     require(fach[0]["remaining_exact_effect_object_count"] is None, "ISSUE_241_BE_FACH_FALSE_EFFECT_TOTAL")
     require(fach[0]["known_segmentation_defects"] == ["BE-SPD-2026-SU-0136-A01", "BE-SPD-2026-SU-0136-A03"], "ISSUE_241_BE_FACH_SEGMENTATION_SET_DRIFT")
     require(fach[0]["rejected_false_terminal_matrix"].endswith("berlin-2026-v2.json"), "ISSUE_241_BE_REJECTED_MATRIX_DRIFT")
@@ -136,7 +136,7 @@ def validate() -> dict:
     counts = Counter(item["status"] for item in requirements)
     require(counts["PRESENT_BUT_HIDDEN"] == 0, "ISSUE_241_UNRESOLVED_HIDDEN_CONTENT")
     require(counts["RESTORE_REQUIRED"] == 0, "ISSUE_241_UNRESOLVED_RESTORE")
-    require(counts["APPROVED_FACH_NOT_PROJECTED"] == 2, "ISSUE_241_APPROVED_FACH_TECHNICAL_QUEUE_DRIFT")
+    require(counts["APPROVED_FACH_NOT_PROJECTED"] == 1, "ISSUE_241_APPROVED_FACH_TECHNICAL_QUEUE_DRIFT")
     return {
         "gate": "PARLIAMENT_ISSUE_241_CURRENT_RESIDUAL",
         "status": "PASS_CURRENT_RESIDUAL_FINITE",

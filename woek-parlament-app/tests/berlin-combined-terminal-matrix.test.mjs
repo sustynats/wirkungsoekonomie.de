@@ -12,10 +12,10 @@ test('legacy combined checker resolves to the current fail-closed v3 truth', () 
   assert.deepEqual(validateBerlinCombinedTerminalMatrix(matrix), {
     programmes_terminal: 4,
     programmes_open: 8,
-    terminal_source_objects: 1478,
-    remaining_review_envelopes: 1193,
+    terminal_source_objects: 1552,
+    remaining_review_envelopes: 1192,
     remaining_exact_objects: 0,
-    remaining_review_scopes: 1193,
+    remaining_review_scopes: 1192,
     known_segmentation_defects: 2,
     descriptor_sha256: matrix.descriptor_sha256,
     gate: 'FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH',

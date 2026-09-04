@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "a587d7611b1e6770e4d15e40bc85813db102dbd6",
+  "audited_main_commit": "1db5d993bd7149c3c09993bf346f66d6c587a7ee",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -42,11 +42,15 @@
       "programme_analysis_complete": 4,
       "programme_analysis_complete_parties": ["BSW", "DKP", "Die PARTEI", "SGP"],
       "genuine_fach_programmes": 8,
-      "remaining_review_envelopes": 1193,
+      "remaining_review_envelopes": 1192,
       "remaining_exact_effect_objects_identified": 0,
-      "remaining_review_scopes": 1193,
+      "remaining_review_scopes": 1192,
       "remaining_exact_effect_object_count": null,
       "known_segmentation_defects": 2,
+      "spd_materialised_terminal_pages": [22,23],
+      "spd_p23_remaining_source_objects": [],
+      "spd_next_source_order_frontier": {"physical_page":24,"source_unit_from":"BE-SPD-2026-SU-0281"},
+      "spd_cross_page_objects_consumed_once": ["BE-SPD-2026-SU-0280"],
       "evidence": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
     },
     "mecklenburg_vorpommern": {
@@ -449,11 +453,18 @@
     },
     {
       "id": "241-F-06-BE-SPD-P23-AUTHORED-MATERIALISATION",
-      "issue_241_refs": ["F/Berlin", "comment/5540520103"],
+      "issue_241_refs": [
+        "F/Berlin",
+        "comment/5540520103"
+      ],
       "title": "Autoritativen Berlin-SPD-P23-Handoff technisch materialisieren",
-      "status": "APPROVED_FACH_NOT_PROJECTED",
-      "evidence": ["https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010"],
-      "residual": "BE-SPD-P23-AUTHORED-MATERIALISATION"
+      "status": "DONE_ON_MAIN",
+      "evidence": [
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-explicit-v1.json",
+        "docs/audits/BE-SPD-P23-MATERIALISATION-2026-09-04.md"
+      ],
+      "residual": null
     },
     {
       "id": "241-G-01-CONTENT-PATHS",
@@ -643,27 +654,23 @@
   "finite_residuals": {
     "technical": [
       {
-        "id": "BE-SPD-P23-AUTHORED-MATERIALISATION",
-        "order": 1,
-        "jurisdiction": "berlin",
-        "items": ["BE-SPD-2026-SU-0266 through SU-0280 including the SU-0280 cross-page object"],
-        "authority": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5526873010",
-        "required_action": "After the MV-P55 merge, materialise the existing exact Fach without reinterpretation. No new user Fach input is required for this supplied batch."
-      },
-      {
         "id": "MV-SPD-PROTECTED-AUTHORED-P1-P54-MATERIALISATION",
-        "order": 2,
+        "order": 1,
         "jurisdiction": "mecklenburg-vorpommern",
-        "items": ["Protected authored MV SPD P1-P54; reconcile every source-bound authoritative handoff against the unchanged historical scaffold"],
+        "items": [
+          "Protected authored MV SPD P1-P54; reconcile every source-bound authoritative handoff against the unchanged historical scaffold"
+        ],
         "authority": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5476819703",
         "residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json",
         "required_action": "Preserve the authored Fach; materialise it technically. The rejected generic RNAA ledger is not proof of this work. Do not request re-authoring of supplied Fach."
       },
       {
         "id": "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL",
-        "order": 3,
+        "order": 2,
         "jurisdiction": "combined",
-        "items": ["superseding combined terminal GitHub descriptor"],
+        "items": [
+          "superseding combined terminal GitHub descriptor"
+        ],
         "required_action": "Create only after Berlin and MV explicit programme-Fach residuals are closed and all GitHub gates pass."
       }
     ],
@@ -678,14 +685,14 @@
         "canonicalization_pending_programmes": [],
         "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json",
         "fach_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json",
-        "remaining_review_envelopes": 1193,
+        "remaining_review_envelopes": 1192,
         "remaining_exact_effect_objects_identified": 0,
-        "remaining_review_scopes": 1193,
+        "remaining_review_scopes": 1192,
         "remaining_exact_effect_object_count": null,
         "known_segmentation_defects": ["BE-SPD-2026-SU-0136-A01", "BE-SPD-2026-SU-0136-A03"],
         "rejected_false_terminal_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json",
-        "preserved_existing_scope": "Exact terminal Fach stock is preserved for BSW, DKP, Die PARTEI and SGP. BSW physical pages P1-P66 are fully source-bound; P64-P66 contribute 66 terminal records including three deterministic child records, and the BSW residual is zero. SPD physical pages P1-P22 are source-bound; P22 contributes 36 terminal records including five deterministic child records, and the next SPD frontier is P23 / SU0266+. The remaining SPD envelope is P23-P66.",
-        "required_fach_action": "For the eight exact genuine_fach_programmes, supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. Berlin's current residual contains 1193 bounded page review envelopes and zero exact already-segmented Fach-open objects. The overall exact effect-object count remains unknown until all page envelopes are segmented."
+        "preserved_existing_scope": "Exact terminal Fach stock is preserved for BSW, DKP, Die PARTEI and SGP. BSW P1-P66 remains source-bound and terminal. Protected SPD P1-P22 is unchanged. P23 adds 74 source-bound terminal records (34 active exact RNAA, 40 zero-count; 20 deterministic children). The source-order set difference proves P24 / BE-SPD-2026-SU-0281 as the next unconsumed frontier; SU0280 spans P23-P24 and is already consumed once. Remaining SPD page envelopes are P24-P66. No programme terminality is asserted.",
+        "required_fach_action": "For the eight exact genuine_fach_programmes, supply explicit object-level Fach or object-specific reviewed-not-assessable reasons. Berlin's current residual contains 1192 bounded page review envelopes and zero exact already-segmented Fach-open objects. The overall exact effect-object count remains unknown until all page envelopes are segmented."
       },
       {
         "id": "MV-FACH-CONTENT-RESIDUAL",
