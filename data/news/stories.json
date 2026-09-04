@@ -1,7 +1,258 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T08:21:15.721Z",
+  "updated_at": "2026-09-04T08:36:08.330Z",
   "stories": [
+    {
+      "story_id": "wt-4b4c2a438356c18f",
+      "slug": "vor-wahl-in-sachsen-anhalt-afd-kandidat-will-schnell-arbeitspflicht-fur-asylbewerber-56c18f",
+      "title": "Vor Wahl in Sachsen-Anhalt: AfD-Kandidat will schnell Arbeitspflicht für Asylbewerber",
+      "first_seen": "2026-09-04T08:32:12.000Z",
+      "last_updated": "2026-09-04T08:32:12.000Z",
+      "topic": [
+        "Arbeit",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--afd-kandidat-will-schnell-arbeitspflicht-fuer-asylbewerber-38207468.html",
+          "title": "Vor Wahl in Sachsen-Anhalt: AfD-Kandidat will schnell Arbeitspflicht für Asylbewerber",
+          "summary": "Wie die AfD in Sachsen-Anhalt eine Arbeitspflicht für Asylbewerber durchsetzen will – und warum ihr Kandidat Siegmund manche Formulierungen im Wahlprogramm heute anders wählen würde.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:32:12.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5f4747ef942c9ce7d9bbe71d2d54f6588fd4203238716681517db0190484e7d2",
+          "source_item_id": "07f392df68ab6ca2d96ad753f1d559cb39e6185faf3e57caddbb626db7241824",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T08:32:12.000Z",
+          "ingested_at": "2026-09-04T08:36:08.330Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4b4c2a438356c18f-claim-01",
+          "story_id": "wt-4b4c2a438356c18f",
+          "claim": "Vor Wahl in Sachsen-Anhalt: AfD-Kandidat will schnell Arbeitspflicht für Asylbewerber: Wie die AfD in Sachsen-Anhalt eine Arbeitspflicht für Asylbewerber durchsetzen will – und warum ihr Kandidat Siegmund manche Formulierungen im Wahlprogramm heute anders wählen würde.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:36:08.330Z"
+        }
+      ],
+      "content_hash": "3e9189cec4f7a4806dbcccb2d9e759750943dd16f85444769da369c49da46726",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:36:08.330Z",
+      "event_first_seen_at": "2026-09-04T08:36:08.330Z",
+      "event_detected_at": "2026-09-04T08:36:08.330Z",
+      "event_id": "event-31260c6777aec41ceb0d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.938833333333333,
+        "detection_delay_minutes": 3.938833333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:36:08.330Z",
+      "rejection": {
+        "at": "2026-09-04T08:36:08.330Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d8adea9d6035e4db",
+      "slug": "angriff-auf-youtuber-und-polizisten-bei-afd-bundesparteitag-anklage-erhoben-35e4db",
+      "title": "Angriff auf Youtuber und Polizisten bei AfD-Bundesparteitag: Anklage erhoben",
+      "first_seen": "2026-09-04T08:20:52.000Z",
+      "last_updated": "2026-09-04T08:20:52.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/angriff-auf-youtuber-und-polizisten-bei-afd-bundesparteitag--anklage-erhoben-38207414.html",
+          "title": "Angriff auf Youtuber und Polizisten bei AfD-Bundesparteitag: Anklage erhoben",
+          "summary": "Wegen eines Angriffs auf einen Youtuber und einen Polizeibeamten am Rande des AfD-Bundesparteitags im Januar 2025 im sächsischen Riesa ist gegen einen 29-Jährigen Anklage erhoben worden. Dem Beschuldigten wird gefährliche Körperverletzung, tätlicher Angriff auf Vollstreckungsbeamte und Sachbeschädigung in zwei Fällen vorgeworfen, wie die Staatsanwaltschaft Dresden am Freitag mitteilte.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:20:52.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4d333979600ae24819b45e0e61bfc656254e242fcdc8aa49c17551ac3542e133",
+          "source_item_id": "ad52ec12369b09b273926db5dbc49f0f85b96423793fef6ac3d3c9efab2254d8",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T08:20:52.000Z",
+          "ingested_at": "2026-09-04T08:36:08.330Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d8adea9d6035e4db-claim-01",
+          "story_id": "wt-d8adea9d6035e4db",
+          "claim": "Angriff auf Youtuber und Polizisten bei AfD-Bundesparteitag: Anklage erhoben: Wegen eines Angriffs auf einen Youtuber und einen Polizeibeamten am Rande des AfD-Bundesparteitags im Januar 2025 im sächsischen Riesa ist gegen einen 29-Jährigen Anklage erhoben worden. Dem Beschuldigten wird gefährliche Körperverletzung, tätlicher Angriff auf Vollstreckungsbeamte und Sachbeschädigung in zwei Fällen vorgeworfen, wie die Staatsanwaltschaft Dresden am Freitag mitteilte.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:36:08.330Z"
+        }
+      ],
+      "content_hash": "4ac23f3a90f4ad9804b360aaf9eb43f24da0430a387d0ca44ae7c1c97a783f87",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:36:08.330Z",
+      "event_first_seen_at": "2026-09-04T08:36:08.330Z",
+      "event_detected_at": "2026-09-04T08:36:08.330Z",
+      "event_id": "event-727b38cb29a09cdf67f1",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.272166666666667,
+        "detection_delay_minutes": 15.272166666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:36:08.330Z",
+      "rejection": {
+        "at": "2026-09-04T08:36:08.330Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-998e73bf202ee8d2",
       "slug": "verwaltungsgerichtsverfahren-sollen-schneller-werden-2ee8d2",
@@ -608,8 +859,8 @@
         "prompt_version": "woek-editorial-3-concrete",
         "generated_at": "2026-09-04T08:09:14.248Z",
         "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_RUN_LIMIT",
-        "retry_after": "2026-09-04T08:24:14.248Z"
+        "fallback_reason": "HIGGSFIELD_CREDIT_LIMIT",
+        "retry_after": "2026-09-04T14:36:55.407Z"
       }
     },
     {
@@ -1177,6 +1428,136 @@
         "prompt_version": "woek-editorial-3-concrete",
         "generated_at": "2026-09-04T08:09:07.928Z",
         "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-5aee62cf62547b74",
+      "slug": "wahl-o-mat-zu-sachsen-anhalt-wahl-zugriffe-erreichen-rekordzahl-547b74",
+      "title": "Wahl-O-Mat zu Sachsen-Anhalt-Wahl: Zugriffe erreichen Rekordzahl",
+      "first_seen": "2026-09-04T08:01:23.000Z",
+      "last_updated": "2026-09-04T08:01:23.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/wahl-o-mat-zu-sachsen-anhalt-wahl--zugriffe-erreichen-rekordzahl-38207256.html",
+          "title": "Wahl-O-Mat zu Sachsen-Anhalt-Wahl: Zugriffe erreichen Rekordzahl",
+          "summary": "Der Wahl-O-Mat zur Landtagswahl in Sachsen-Anhalt verzeichnet einen Rekord an Zugriffen. Die digitale Wahlhilfe wurde bereits mehr als eine Million Mal genutzt, wie die Bundeszentrale für politischen Bildung am Freitag in Bonn mitteilte. Das sind mehr als doppelt so viele Zugriffe wie bei der Wahl vor fünf Jahren. Bei der Landtagswahl in Sachsen-Anhalt im Jahr 2021 suchten nach Angaben der Landeszentrale für politische Bildung am Ende insgesamt 431.000 Nutzerinnen und Nutzer Orientierungshilfe beim Wahl-O-Mat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:01:23.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "0b3738a3ca84060cb99d5b141517350beb53f42b4c1060e5d2eb47d8a12d878b",
+          "source_item_id": "aa4b6fd6c65623b318323a1a2761cb9bc1f11b20b48411f3a0ad1ba6506d327d",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T08:01:23.000Z",
+          "ingested_at": "2026-09-04T08:36:08.330Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5aee62cf62547b74-claim-01",
+          "story_id": "wt-5aee62cf62547b74",
+          "claim": "Wahl-O-Mat zu Sachsen-Anhalt-Wahl: Zugriffe erreichen Rekordzahl: Der Wahl-O-Mat zur Landtagswahl in Sachsen-Anhalt verzeichnet einen Rekord an Zugriffen. Die digitale Wahlhilfe wurde bereits mehr als eine Million Mal genutzt, wie die Bundeszentrale für politischen Bildung am Freitag in Bonn mitteilte. Das sind mehr als doppelt so viele Zugriffe wie bei der Wahl vor fünf Jahren. Bei der Landtagswahl in Sachsen-Anhalt im Jahr 2021 suchten nach Angaben der Landeszentrale für politische Bildung am Ende insgesamt 431.000 Nutzerinnen und Nutzer Orientierungshilfe beim Wahl-O-Mat.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T08:36:08.330Z"
+        }
+      ],
+      "content_hash": "51d547579af74ce6c82942e64c58f750845d32c81c32bbdf13909b26b6d8f706",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T08:36:08.330Z",
+      "event_first_seen_at": "2026-09-04T08:36:08.330Z",
+      "event_detected_at": "2026-09-04T08:36:08.330Z",
+      "event_id": "event-35eb872d64b37ac355a0",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "new_evidence"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 34.7555,
+        "detection_delay_minutes": 34.7555,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T08:36:08.330Z",
+      "rejection": {
+        "at": "2026-09-04T08:36:08.330Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -6233,20 +6614,21 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T08:23:51.102Z",
+        "detected_at": "2026-09-04T08:36:08.330Z",
+        "content_hash": "c28ba785a2db5f834506865cf676edff2eff451eaf83360ae21b59587abcbd3e",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
             "publisher": "WDR",
             "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
             "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "Wieder sind Abschussvorrichtungen an einem Umspannwerk gefunden worden. Aktuell geht es um Dormagen und Weisweiler.",
+            "summary": "An einem Umspannwerk in Dormagen gab es einen Sabotageversuch. Zudem gibt es derzeit in Niedersachsen einen Großeinsatz.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T05:28:26.000Z",
+            "published_at": "2026-09-04T07:56:58.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
-            "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff",
+            "content_hash": "36afce5f4c0265236f8eb01c5903256a5bc7a6aebbcf22cc26d5b77cc18824bc",
             "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
             "publisher_id": "wdr",
             "publisher_kind": "public_broadcasting",
@@ -6258,8 +6640,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T05:28:26.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "source_published_at": "2026-09-04T07:56:58.000Z",
+            "ingested_at": "2026-09-04T08:36:08.330Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -6321,7 +6703,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T05:37:43.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T08:36:08.330Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -6513,12 +6895,140 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
+            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weitere Polizeieinsätze in Oldenburg und Aachen",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T08:33:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "2f61feb3bed04e1b34b3a63421ce9121bab7a615a1c9cda7155a0f896b25c6f7",
+            "source_item_id": "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T08:33:30.000Z",
+            "ingested_at": "2026-09-04T08:36:08.330Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+            "summary": "Nach dem Bekennerschreiben an die taz gehen die Angriffe auf Umspannwerke weiter – jetzt in Dormagen. Die Polizei fahndet nach einem Gevelsberger. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:59:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "7a24f109aae1edc09705e29df404e58bb1a2103f61c4d94f1f7ee9dd7390d817",
+            "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:59:00.000Z",
+            "ingested_at": "2026-09-04T08:36:08.330Z",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
+            "title": "Polizei: Mögliche Sabotage an Umspannwerk in Dormagen",
+            "summary": "Ein verdächtiger Gegenstand an einem Umspannwerk in Dormagen deutet laut Polizei auf mögliche Sabotage hin. Am Dienstag gab es bereits Vorfälle an zwei anderen Umspannwerken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T02:29:46.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e5d6e71e0a3b23b8b134f10c0a5a0ee754152692b8aea3cdcc716d2979a64e6d",
+            "source_item_id": "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T02:29:46.000Z",
+            "ingested_at": "2026-09-04T08:36:08.330Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
+            "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
+            "summary": "Sabotageversuch am Umspannwerk Dormagen • Bundespräsident lädt zum Bürgerfest nach Bonn • Jens Spahn verklagt Rapper",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T04:50:24.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "86bc2ee7abfaf02e3f35afbdf4070d899a84c48258e4e2cc56fa9e58261d0e54",
+            "source_item_id": "02e1209af9a34683c59bcc8c50426b8443647ab5cbfb2060694778258a4ece49",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T04:50:24.000Z",
+            "ingested_at": "2026-09-04T08:36:08.330Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "fresh": false,
-        "consolidation": true,
-        "quality_retry_count": 0
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_INPUT_TOO_LARGE"
+        ],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": true
       },
       "living_file": {
         "merged_story_ids": [
@@ -22593,139 +23103,6 @@
         "status": "generated"
       },
       "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T08:23:51.102Z",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
-            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-            "summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde erreicht die taz ein Bekennerschreiben. Ist es authentisch? Das lässt sich nicht zweifelsfrei klären. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:21:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "f31b60b5c009745086e1f791654301a0737aafb77aeb46bac4a032370f83873a",
-            "source_item_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:21:00.000Z",
-            "ingested_at": "2026-09-03T22:21:17.010Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-nach-angriff-auf-stromnetz-16015587.html",
-            "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
-            "summary": "Die Polizei ermittelt nach der Sabotage am Stromnetz in Südbrandenburg. Nun ist ein Bekennerschreiben aufgetaucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:08:52.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "1f470037f1dd5d4c038d7f21f102bf1f7f9c54da7effe71a0e1722e57304f6cb",
-            "source_item_id": "77c9bba564348b6d62bd23998815d636084c141fe800409a400fd56299639d65",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:08:52.000Z",
-            "ingested_at": "2026-09-03T22:21:17.010Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/politik/deutschland/brandenburg-bekennerschreiben-sprengvorrichtung-stromnetz-umspannwerk-jaenschwalde-100.html",
-            "title": "Brandenburg: Polizei prüft Bekennerschreiben",
-            "summary": "Nach dem Anschlag auf ein Umspannwerk in Brandenburg prüfen Ermittler ein Bekennerschreiben. Einem Medienbericht zufolge hat sich ein Einzeltäter zur Tat bekannt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T17:36:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "14f14bc3ce30b81adf2deee3d22ccda466c95b405b9bd5c0d3bdfa0819d22ec7",
-            "source_item_id": "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T17:36:00.000Z",
-            "ingested_at": "2026-09-03T22:36:32.459Z",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
-            "title": "Polizei prüft Bekennerschreiben nach Angriff auf Umspannwerk",
-            "summary": "Die Polizei ermittelt nach der Sabotage am Stromnetz bei Jänschwalde unter anderem wegen der Bildung einer terroristischen Vereinigung. Nun ist ein Bekennerschreiben eingegangen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T18:57:30.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "42f668098c9786294164b7a51134e2c65521d71257218e5c64ce8cf84403c591",
-            "source_item_id": "a62afbc8f1549d06d1af899f7219ad906e90ac62bd8ebe24493b710cfa86cfc0",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T18:57:30.000Z",
-            "ingested_at": "2026-09-03T22:36:32.459Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "fresh": false,
-        "consolidation": true,
-        "quality_retry_count": 0
-      },
       "living_file": {
         "merged_story_ids": [
           "wt-57bcbc8dea706471"
