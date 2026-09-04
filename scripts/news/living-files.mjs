@@ -21,7 +21,7 @@ export function documentKey(value) {
   } catch { return ""; }
 }
 
-const PLACE_EXCLUSIONS = new Set("der die das dem den einem einer kraft folge zusammenhang vergleich blick zuge interview internet fernsehen".split(" "));
+const PLACE_EXCLUSIONS = new Set("der die das dem den einem einer im am an auf aus bei bis durch fur gegen hinter in mit nach neben ober ohne seit uber um unter von vor wahrend wegen zu zum zur und oder sowie kraft folge zusammenhang vergleich blick zuge interview internet fernsehen".split(" "));
 function placesIn(text) {
   // Only locative phrases, never publisher coverage or the origin of a letter ("aus NRW").
   const matches = String(text || "").matchAll(/\b(?:in|bei|nahe)\s+(?:der\s+Stadt\s+)?([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im|ob der)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu);
@@ -35,6 +35,29 @@ const COUNTRY_RULES = [
   ["IT", /\b(italien\w*|italy|italian)\b/],
 ];
 
+const PUBLIC_NETWORK = "(?:landes(?:it)?netz|verwaltungsnetz|it[- ]netz)";
+const DEMONYM_PLACES = new Map([
+  ["berliner", "berlin"], ["hamburger", "hamburg"], ["bremer", "bremen"],
+  ["dresdner", "dresden"], ["munchner", "munchen"], ["kolner", "koln"],
+  ["hannoveraner", "hannover"], ["frankfurter", "frankfurt"], ["stuttgarter", "stuttgart"],
+  ["dusseldorfer", "dusseldorf"], ["potsdamer", "potsdam"], ["schweriner", "schwerin"],
+  ["magdeburger", "magdeburg"], ["erfurter", "erfurt"], ["wiesbadener", "wiesbaden"],
+  ["saarbrucker", "saarbrucken"], ["kieler", "kiel"], ["mainzer", "mainz"],
+]);
+
+function publicNetworkPlace(title, lead) {
+  for (const value of [title, lead]) {
+    const normalized = normal(value);
+    const afterTarget = normalized.match(new RegExp(`\\b${PUBLIC_NETWORK}(?:\\s+(?:von|in))?\\s+([a-z][a-z-]{2,})\\b`))?.[1];
+    if (afterTarget && !PLACE_EXCLUSIONS.has(afterTarget)) return afterTarget;
+    const beforeTarget = normalized.match(new RegExp(`\\b([a-z][a-z-]{2,})\\s+${PUBLIC_NETWORK}\\b`))?.[1];
+    if (beforeTarget) {
+      if (DEMONYM_PLACES.has(beforeTarget)) return DEMONYM_PLACES.get(beforeTarget);
+    }
+  }
+  return null;
+}
+
 export function fileSubject(item) {
   const title = String(item.title || "");
   const lead = String(item.summary || item.source_summary || "").split(/\n\s*\n/)[0].slice(0, 650);
@@ -42,16 +65,20 @@ export function fileSubject(item) {
   const grid = /\b(umspannwerk\w*|stromnetz\w*|stromversorgung\w*|substation\w*)\b/.test(text);
   const response = /\b(schutz|sicherheitszentrum|sicherheitsvorkehrung\w*|schutzmassnahm\w*|schutzt|kritis-dachgesetz)\b/.test(normal(title));
   const incident = grid && /\b(sabotage\w*|angriff\w*|anschlag\w*|bekennerschreiben|verdachtiger gegenstand|attack\w*)\b/.test(text);
+  const cyber = /\b(cyber\w*|hacker\w*|ransomware\w*|ikt[- ]vorfall\w*|datenabfluss\w*|datendiebstahl\w*)\b/.test(text);
+  const networkPlace = cyber && new RegExp(`\\b${PUBLIC_NETWORK}\\b`).test(text) ? publicNetworkPlace(title, lead) : null;
   const titlePlaces = placesIn(title);
   const places = titlePlaces.length ? titlePlaces : placesIn(lead);
   const countries = unique([...(item.event_geography || []), ...COUNTRY_RULES.filter(([, pattern]) => pattern.test(text)).map(([code]) => code)]);
   // Explicit object/place/date, not a general "energy" or "infrastructure" key.
-  const kind = response ? "response" : incident ? "grid_incident" : "other";
+  const kind = response ? "response" : incident ? "grid_incident" : networkPlace ? "cyber_incident" : "other";
   const directPlace = title.match(/\bUmspannwerk\s+([A-ZÄÖÜ][\p{L}-]+)/u)?.[1];
-  const eventPlaces = directPlace && !titlePlaces.length ? [normal(directPlace)] : unique([...places, ...(directPlace ? [normal(directPlace)] : [])]);
+  const eventPlaces = networkPlace ? [networkPlace] : directPlace && !titlePlaces.length ? [normal(directPlace)] : unique([...places, ...(directPlace ? [normal(directPlace)] : [])]);
   const recurrence = /\b(?:zweiter|weiterer|neuer|erneuter)\s+(?:anschlag|angriff|sabotageversuch)\b/.test(normal(title));
   const multipleEvents = eventPlaces.length > 1 || /\b(anschlage|anschlagen|angriffe|angriffen|sabotageakte|sabotageakten|mehrere\w* tatorte)\b/.test(text);
-  return { kind, places: eventPlaces, countries, recurrence, multipleEvents, key: !recurrence && !multipleEvents && kind === "grid_incident" && eventPlaces.length === 1 ? `grid_incident:${eventPlaces[0]}` : null };
+  const key = !recurrence && !multipleEvents && eventPlaces.length === 1 && ["grid_incident", "cyber_incident"].includes(kind)
+    ? `${kind}:${eventPlaces[0]}` : null;
+  return { kind, places: eventPlaces, countries, recurrence, multipleEvents, key };
 }
 
 export function subjectConflict(a, b) {
