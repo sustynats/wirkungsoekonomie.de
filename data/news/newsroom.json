@@ -87001,7 +87001,250 @@
         "AI_EVIDENCE_INSUFFICIENT"
       ],
       "rationale": "Nur eine Sekundärquelle liegt vor; zentrale Angaben zu Haltung, Speicherstand und Gesprächen sind nicht unabhängig oder primär belegt."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Quelle ohne unabhängige Bestätigung oder Primärstudie; zentrale Zahlen und Ursache-Wirkung bleiben im gelieferten Material nicht tragfähig belegt."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-7743382a4712f9be",
+      "event_id": "event-795c48d3db0831ef9b61",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Der Landtagsbeschluss verändert Besoldung und Berechnungsregeln mit unmittelbaren Folgen für Einkommen und Haushaltsausgaben; der Kern ist durch die vorliegende Quelle konkret belegt."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-6c12049e7c3d6943",
+      "event_id": "event-e1ac3e5b6a7b2d3e7529",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Es handelt sich laut Quelle um eine interviewartige Kritik und Einordnung zur Pflege, ohne neue Entscheidung, Maßnahme oder belastbar neue Zustandsänderung."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-52b1b992ddc479b1",
+      "event_id": "event-cbca969c9d482acda1dd",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Ein Kurzinterview mit Forderungen und Kontext zur Klimafinanzierung liefert keine materiell neue Entscheidung, Regeländerung oder belastbare neue Evidenz."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-7e688e300561315a",
+      "event_id": "event-b314e6fe17d75603d224",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Es liegt nur ein SMC-Themenhinweis mit abstrakter Kurzbeschreibung vor; ein belastbar belegtes Ereignis, konkrete Entscheidung oder neue materielle Entwicklung ist daraus nicht ableitbar."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-b5e0a39f46388642",
+      "event_id": "event-88c06765dd812ab1333c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Die Quelle liefert eine neue, quantifizierte EU-weite Lageinformation zu Waldbrandschäden mit möglicher Relevanz für Prävention, Haushalt und Resilienz; kein früherer Ticker-Eintrag deckt diese Information ab."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-143d07abf300e106",
+      "event_id": "event-e20eac76b689f5b7c4be",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Meldung berichtet nur einen Oppositionsantrag ohne beschlossene Regelung, Umsetzung oder belastbar neue Zustandsänderung. Der Wirkpfad bleibt rein politisch und noch offen."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-2ae8fdd95aa5c1fa",
+      "event_id": "event-864e7c7a9a2009a72fa5",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die amtliche Antwort enthält neue, bezifferte Informationen zu Kosten und Betreuungsplätzen. Das ist kein bloßer Routinehinweis, sondern eine materiell relevante Zustandsbeschreibung mit Haushalts- und Personalbezug."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-34695f2c2468074a",
+      "event_id": "event-3e01d1f6d0533d6aa9c6",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_DETAIL_SUMMARY_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Die Erklärung betrifft kritische Infrastruktur und mögliche Sicherheitsfolgen; der Kern ist neu, aber die Zuschreibung ist im vorliegenden Material nur primärquellenbasiert belegt."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-7e9e385d272f9212",
+      "event_id": "event-35177e3864a5abcfec8e",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Quelle beschreibt nur eine parlamentarische Antwort zu einem lokal begrenzten Förderstatus in Speyer; es fehlt eine hinreichend breite oder intensive materielle Veränderung."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-146cce2a1bef268e",
+      "event_id": "event-f6bf7265b4e640e7e2d7",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Meldung kündigt nur eine Bundestags-Antwort zur Finanzierung im Programm „Demokratie leben!“ an; aus den gelieferten Belegen ergibt sich keine materiell neue Entscheidung oder belastbare Veränderung."
+    },
+    {
+      "at": "2026-09-04T04:06:08.228Z",
+      "story_id": "wt-2c4b8dc5bdfc3cb3",
+      "event_id": "event-a65754a145ed4dc9c820",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Quelle beschreibt nur die jährliche Verwendungs- und Zwischennachweisprüfung bei Förderungen der „Partnerschaften für Demokratie“. Das ist eine routinemäßige Verfahrensantwort ohne belegte neue materielle Entscheidung oder Zustandsänderung."
     }
   ],
-  "updated_at": "2026-09-04T03:51:30.621Z"
+  "updated_at": "2026-09-04T04:06:08.228Z"
 }

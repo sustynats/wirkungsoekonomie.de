@@ -1,7 +1,284 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T03:51:30.621Z",
+  "updated_at": "2026-09-04T04:06:08.228Z",
   "stories": [
+    {
+      "story_id": "wt-2ae8fdd95aa5c1fa",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kinderbetreuung-bei-der-bundeswehr-a5c1fa",
+      "title": "Kinderbetreuung bei der Bundeswehr",
+      "source_summary": "Die Bundesregierung hat laut einer Antwort auf eine Kleine Anfrage die Kosten der Bundeswehr für Kinderbetreuungsplätze beziffert. Genannt werden rund 5,83 Millionen Euro für 2022 und 9,04 Millionen Euro für 2025; für 2023 und 2024 nennt die Antwort rund 7,11 Millionen Euro und 7,56 Millionen Euro.\n\nAußerdem nennt die Quelle die Zahl der aktuell bereitgestellten Betreuungsplätze: 580 über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Für Standorte im Ausland werden Plätze in mehreren Orten aufgeführt; für Litauen heißt es, der Betreuungsbedarf nehme mit dem schrittweisen Aufwuchs der Brigade kontinuierlich zu.",
+      "summary": "Die Bundesregierung beziffert die jährlichen Kosten der Bundeswehr für Kinderbetreuungsplätze 2025 auf 9,04 Millionen Euro, nach 5,83 Millionen Euro im Jahr 2022. Zugleich nennt sie mehrere Hundert Betreuungsplätze im In- und Ausland.",
+      "detail_summary": "Gesichert ist zunächst die neue Kostenangabe der Bundesregierung: Die Ausgaben der Bundeswehr für Kinderbetreuungsplätze sind laut Antwort auf eine Kleine Anfrage von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro gestiegen. Die Quelle nennt zusätzlich Zwischenwerte für 2023 und 2024 sowie die aktuelle Zahl der verfügbaren Plätze im Inland und an Auslandsstandorten. Das ist relevant, weil damit ein konkreter, staatlich organisierter Unterstützungsbereich mit Haushaltsbezug und Personalwirkung sichtbar wird. Der Wirkpfad liegt vor allem über die Verfügbarkeit von Betreuung als Standort- und Beschäftigungsfaktor für Angehörige der Bundeswehr. Mögliche Folgen sind bessere Planbarkeit für Familien und eine stabilere Bindung von Personal, zugleich aber steigende laufende Ausgaben. Wie stark daraus tatsächlich Rekrutierung, Verbleib oder Verteilungseffekte entstehen, bleibt offen; die Quelle liefert dazu nur die Antwort selbst, keine Wirkungsmessung.",
+      "why_relevant": "Die Meldung zeigt eine konkret bezifferte Entwicklung staatlicher Betreuungsausgaben und die vorhandene Betreuungsinfrastruktur der Bundeswehr. Das ist materiell, weil es Haushaltsmittel, Personalbindung und Standortbedingungen zugleich berührt.",
+      "topic": [
+        "Europa",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Betreuungsangebote betreffen Angehörige der Bundeswehr und damit familiäre Vereinbarkeit, Standortwahl und Beschäftigungsbedingungen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht angelegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Angaben stammen aus einer Regierungsantwort und machen staatliche Mittelverwendung nachvollziehbar."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Kosten 2022",
+            "value": "5,83",
+            "unit": "Millionen Euro",
+            "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze"
+          },
+          {
+            "label": "Kosten 2025",
+            "value": "9,04",
+            "unit": "Millionen Euro",
+            "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze"
+          },
+          {
+            "label": "Betreuungsplätze im Inland",
+            "value": "580",
+            "unit": "Plätze",
+            "context": "Belegrechte für Angehörige der Bundeswehr"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte"
+        ],
+        "timeline": [
+          {
+            "date": "2022",
+            "label": "Kostenbasis der Antwort"
+          },
+          {
+            "date": "2023",
+            "label": "Zwischenwert der Kosten"
+          },
+          {
+            "date": "2024",
+            "label": "Zwischenwert der Kosten"
+          },
+          {
+            "date": "2025",
+            "label": "genannter Kostenstand"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "chance"
+        },
+        "chart": {
+          "type": "bar",
+          "title": "Kosten der Kinderbetreuungsplätze",
+          "unit": "Millionen Euro",
+          "points": [
+            {
+              "label": "2022",
+              "value": 5.83
+            },
+            {
+              "label": "2023",
+              "value": 7.11
+            },
+            {
+              "label": "2024",
+              "value": 7.56
+            },
+            {
+              "label": "2025",
+              "value": 9.04
+            }
+          ]
+        }
+      },
+      "first_seen": "2026-09-03T08:58:00.000Z",
+      "last_updated": "2026-09-04T04:07:24.339Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-864e7c7a9a2009a72fa5",
+      "source_published_at": "2026-09-03T08:58:00.000Z",
+      "published_at": "2026-09-04T04:07:24.339Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T08:58:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7743382a4712f9be",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-12f9be",
+      "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
+      "source_summary": "Der Bericht meldet, dass der hessische Landtag eine Besoldungserhöhung für Landesbeamte beschlossen hat. Die Tarifeinigung für die Angestellten des Landes werde auf die Beamten übertragen; genannt werden 3,0 Prozent ab 1. Juli 2026, mindestens 110 Euro pro Monat, und weitere 2,8 Prozent ab 1. Oktober 2027.\n\nZudem soll bei der Berechnung der Beamtenbesoldung ein neues Familieneinkünftemodell das bisherige Alleinverdienermodell ablösen. Danach werde bei einer Familie mit zwei Kindern ein fiktives Monatseinkommen des zweiten Erwachsenen angerechnet; außerdem steige der Familienzuschlag für die beiden ersten Kinder um jeweils 87 Euro. Opposition und DGB äußern rechtliche Bedenken und kritisieren fehlende Nachbesserungen.",
+      "summary": "Hessen hebt die Besoldung seiner Beamten und Pensionäre an. Zugleich soll ein neues Familieneinkünftemodell die bisherige Berechnungslogik ersetzen.",
+      "detail_summary": "Gesichert ist, dass der hessische Landtag eine Besoldungserhöhung beschlossen hat und dass sie für Landesbeamte rückwirkend ab Juli 2026 gelten soll. Die Erhöhung ist gestuft: zuerst 3,0 Prozent, mindestens 110 Euro pro Monat, später weitere 2,8 Prozent zum 1. Oktober 2027. Materiell relevant ist das für die Haushalte der Betroffenen, für die Personal- und Kostenplanung des Landes und für die rechtliche Ausgestaltung der Besoldung. Der Wirkpfad verläuft über höhere laufende Einkommen und geänderte Berechnungsregeln im Besoldungssystem. Mögliche Folgen sind veränderte Ausgaben des Landes, Anpassungen bei Familienzuschlägen und juristische Auseinandersetzungen über das neue Modell. Offen bleibt, wie die Regelung im Vollzug und vor Gerichten standhält.",
+      "why_relevant": "Die Meldung verändert unmittelbar Einkommen und Berechnungsregeln für eine große Gruppe öffentlicher Beschäftigter in Hessen und hat damit finanzielle, rechtliche und administrative Folgen.",
+      "topic": [
+        "Soziales",
+        "Politik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind hessische Beamte und Pensionäre; die Besoldung steigt und die Berechnungslogik ändert sich."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug erkennbar; mögliche fiskalische Effekte bleiben indirekt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Ein Landtagsbeschluss mit Oppositions- und Gewerkschaftskritik berührt Rechtsbindung und parlamentarische Kontrolle."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "erste Erhöhung",
+            "value": "3,0",
+            "unit": "Prozent",
+            "context": "erste Besoldungsstufe ab Juli 2026"
+          },
+          {
+            "label": "Mindestbetrag",
+            "value": "110",
+            "unit": "Euro pro Monat",
+            "context": "untere Grenze der ersten Erhöhung"
+          },
+          {
+            "label": "zweite Erhöhung",
+            "value": "2,8",
+            "unit": "Prozent",
+            "context": "zweite Stufe ab Oktober 2027"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "aeltere"
+        ],
+        "timeline": [
+          {
+            "date": "2026-07",
+            "label": "erste Erhöhung rückwirkend ab Juli 2026"
+          },
+          {
+            "date": "2027-10",
+            "label": "zweites Plus zum 1. Oktober 2027"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-01T19:26:04.000Z",
+      "last_updated": "2026-09-04T04:06:28.686Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-795c48d3db0831ef9b61",
+      "source_published_at": "2026-09-01T19:26:04.000Z",
+      "published_at": "2026-09-04T04:06:28.686Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das neue Familieneinkünftemodell rechtlich Bestand hat, wird sich an möglichen gerichtlichen Verfahren zeigen.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Gerichtliche Entscheidungen oder offizielle Nachbesserungen zum Besoldungsgesetz",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-78a7b9c975e6c755",
+          "announced_at": "2026-09-01T19:26:04.000Z",
+          "follow_up_date": "2026-09-11T04:06:28.686Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-01T19:26:04.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e976be74e6481ea2",
       "title_image": {

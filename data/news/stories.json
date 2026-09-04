@@ -1,7 +1,1232 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T03:51:30.621Z",
+  "updated_at": "2026-09-04T04:06:08.228Z",
   "stories": [
+    {
+      "story_id": "wt-2ae8fdd95aa5c1fa",
+      "slug": "kinderbetreuung-bei-der-bundeswehr-a5c1fa",
+      "title": "Kinderbetreuung bei der Bundeswehr",
+      "first_seen": "2026-09-03T08:58:00.000Z",
+      "last_updated": "2026-09-04T04:07:24.339Z",
+      "published_at": "2026-09-04T04:07:24.339Z",
+      "updated_at": "2026-09-04T04:07:24.339Z",
+      "topic": [
+        "Europa",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-hib",
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+          "title": "Kinderbetreuung bei der Bundeswehr",
+          "summary": "Verteidigung/Antwort Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind laut einer Antwort der Bundesregierung von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T08:58:00.000Z",
+          "primary_source": true,
+          "source_priority": 96,
+          "source_topic": "Politik",
+          "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f",
+          "source_item_id": "8833e3434923f8ca569d72a45bd525c70f32a3e61150c4937fd22d012f5b4fca",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T08:58:00.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-1",
+          "story_id": "wt-2ae8fdd95aa5c1fa",
+          "claim": "Die Bundesregierung meldet für die Bundeswehr steigende Kosten für Kinderbetreuungsplätze: von rund 5,83 Millionen Euro im Jahr 2022 auf 9,04 Millionen Euro im Jahr 2025.",
+          "status": "single_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "3634e437da269ff40f35",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "adc038fc15f4d112d667",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "efa5a2fd47d6c1f2a93a",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:07:24.339Z"
+        },
+        {
+          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-2",
+          "story_id": "wt-2ae8fdd95aa5c1fa",
+          "claim": "Für 2023 und 2024 nennt die Antwort der Bundesregierung Zwischenwerte von rund 7,11 Millionen Euro und 7,56 Millionen Euro.",
+          "status": "single_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "0300d55e7a5d6b1d8b50",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:07:24.339Z"
+        },
+        {
+          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-3",
+          "story_id": "wt-2ae8fdd95aa5c1fa",
+          "claim": "Bundesweit stehen aktuell 580 Betreuungsplätze über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften bereit.",
+          "status": "single_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "7fc1b482bc0a01501846",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:07:24.339Z"
+        },
+        {
+          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-4",
+          "story_id": "wt-2ae8fdd95aa5c1fa",
+          "claim": "Im Ausland nennt die Bundesregierung unter anderem Plätze in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius; in Litauen wachse der Bedarf mit dem schrittweisen Aufwuchs der Brigade Litauen.",
+          "status": "single_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "afbcdf59449096a1b037",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "e258d230fbc5bacbdc8d",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "b24c4518775145ec586b",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:07:24.339Z"
+        }
+      ],
+      "event_id": "event-864e7c7a9a2009a72fa5",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T04:07:12.919Z",
+      "publish_ready_at": "2026-09-04T04:07:24.339Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Bundesregierung hat laut einer Antwort auf eine Kleine Anfrage die Kosten der Bundeswehr für Kinderbetreuungsplätze beziffert. Genannt werden rund 5,83 Millionen Euro für 2022 und 9,04 Millionen Euro für 2025; für 2023 und 2024 nennt die Antwort rund 7,11 Millionen Euro und 7,56 Millionen Euro.\n\nAußerdem nennt die Quelle die Zahl der aktuell bereitgestellten Betreuungsplätze: 580 über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Für Standorte im Ausland werden Plätze in mehreren Orten aufgeführt; für Litauen heißt es, der Betreuungsbedarf nehme mit dem schrittweisen Aufwuchs der Brigade kontinuierlich zu.",
+      "analysis": {
+        "story_id": "wt-2ae8fdd95aa5c1fa",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Bundesregierung beziffert die jährlichen Kosten der Bundeswehr für Kinderbetreuungsplätze 2025 auf 9,04 Millionen Euro, nach 5,83 Millionen Euro im Jahr 2022. Zugleich nennt sie mehrere Hundert Betreuungsplätze im In- und Ausland.",
+        "detail_summary": "Gesichert ist zunächst die neue Kostenangabe der Bundesregierung: Die Ausgaben der Bundeswehr für Kinderbetreuungsplätze sind laut Antwort auf eine Kleine Anfrage von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro gestiegen. Die Quelle nennt zusätzlich Zwischenwerte für 2023 und 2024 sowie die aktuelle Zahl der verfügbaren Plätze im Inland und an Auslandsstandorten. Das ist relevant, weil damit ein konkreter, staatlich organisierter Unterstützungsbereich mit Haushaltsbezug und Personalwirkung sichtbar wird. Der Wirkpfad liegt vor allem über die Verfügbarkeit von Betreuung als Standort- und Beschäftigungsfaktor für Angehörige der Bundeswehr. Mögliche Folgen sind bessere Planbarkeit für Familien und eine stabilere Bindung von Personal, zugleich aber steigende laufende Ausgaben. Wie stark daraus tatsächlich Rekrutierung, Verbleib oder Verteilungseffekte entstehen, bleibt offen; die Quelle liefert dazu nur die Antwort selbst, keine Wirkungsmessung.",
+        "why_relevant": "Die Meldung zeigt eine konkret bezifferte Entwicklung staatlicher Betreuungsausgaben und die vorhandene Betreuungsinfrastruktur der Bundeswehr. Das ist materiell, weil es Haushaltsmittel, Personalbindung und Standortbedingungen zugleich berührt.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Betreuungsangebote betreffen Angehörige der Bundeswehr und damit familiäre Vereinbarkeit, Standortwahl und Beschäftigungsbedingungen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht angelegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Angaben stammen aus einer Regierungsantwort und machen staatliche Mittelverwendung nachvollziehbar."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die steigenden Kosten und die benannten Plätze können die Vereinbarkeit von Dienst und Familie verbessern und damit Personalbindung und Standortattraktivität beeinflussen.",
+        "impact_risks": [
+          "Höhere laufende Ausgaben ohne belegte Effizienzgewinne",
+          "Ungleich verteilte Betreuungszugänge zwischen Standorten"
+        ],
+        "mechanisms": [
+          "Betreuung senkt organisatorische Hürden für Dienstzeiten und Versetzungen",
+          "Bereitgestellte Plätze stabilisieren Familienplanung am Standort"
+        ],
+        "first_order": [
+          "mehr verfügbare Kinderbetreuung für Bundeswehrangehörige",
+          "höhere öffentliche Ausgaben für diesen Bereich"
+        ],
+        "second_order": [
+          "mögliche Entlastung bei Vereinbarkeit von Familie und Dienst",
+          "mögliche stärkere Bindung von Personal an bestimmte Standorte"
+        ],
+        "third_order": [
+          "langfristig veränderte Standort- und Personalpolitik innerhalb der Bundeswehr",
+          "mögliche Nachsteuerung bei Ausbau oder Finanzierung der Angebote"
+        ],
+        "systemic_relevance": "Die Meldung betrifft einen kleinen, aber strukturell relevanten Baustein der Personal- und Infrastrukturpolitik im Sicherheitsbereich.",
+        "transformation_potential": "Begrenzt: eher inkrementelle Verbesserung der Betreuungsinfrastruktur als grundlegender Strukturwandel.",
+        "resilience": "Mögliche Stärkung der personellen Resilienz der Bundeswehr durch bessere Vereinbarkeit; ob das tatsächlich greift, bleibt offen.",
+        "side_effects": [
+          "Mehr Mittelbindung im Haushalt",
+          "mögliche regionale Unterschiede bei der Versorgung"
+        ],
+        "uncertainties": [
+          "Unklar bleibt, ob die Kostensteigerung auf mehr Plätze, höhere Preise oder andere Faktoren zurückgeht",
+          "Die Quelle enthält keine Wirkungsdaten zu Personalbindung oder Einsatzbereitschaft"
+        ],
+        "evidence_level": "einzelne amtliche Antwort mit konkreten Zahlen; keine unabhängige Gegenprüfung im gelieferten Material",
+        "attribution": "Die Angaben werden der Antwort der Bundesregierung zugeschrieben; unabhängig bestätigt ist hier nur der Wortlaut der Quelle selbst.",
+        "watch_next": [
+          "Ob die Bundesregierung die Kostenentwicklung in einer Folgeantwort erklärt",
+          "Ob sich die Zahl der Betreuungsplätze oder Standorte verändert"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 4, SDG 5, SDG 8 – nur als grober Bezugsrahmen für Vereinbarkeit und Bildung"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Die amtliche Antwort enthält neue, bezifferte Informationen zu Kosten und Betreuungsplätzen. Das ist kein bloßer Routinehinweis, sondern eine materiell relevante Zustandsbeschreibung mit Haushalts- und Personalbezug."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Kosten 2022",
+              "value": "5,83",
+              "unit": "Millionen Euro",
+              "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
+              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+            },
+            {
+              "label": "Kosten 2025",
+              "value": "9,04",
+              "unit": "Millionen Euro",
+              "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
+              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+            },
+            {
+              "label": "Betreuungsplätze im Inland",
+              "value": "580",
+              "unit": "Plätze",
+              "context": "Belegrechte für Angehörige der Bundeswehr",
+              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte"
+          ],
+          "timeline": [
+            {
+              "date": "2022",
+              "label": "Kostenbasis der Antwort"
+            },
+            {
+              "date": "2023",
+              "label": "Zwischenwert der Kosten"
+            },
+            {
+              "date": "2024",
+              "label": "Zwischenwert der Kosten"
+            },
+            {
+              "date": "2025",
+              "label": "genannter Kostenstand"
+            }
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "offen",
+            "democracy": "chance"
+          },
+          "chart": {
+            "type": "bar",
+            "title": "Kosten der Kinderbetreuungsplätze",
+            "unit": "Millionen Euro",
+            "points": [
+              {
+                "label": "2022",
+                "value": 5.83
+              },
+              {
+                "label": "2023",
+                "value": 7.11
+              },
+              {
+                "label": "2024",
+                "value": 7.56
+              },
+              {
+                "label": "2025",
+                "value": 9.04
+              }
+            ]
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T04:07:24.339Z",
+          "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
+          "source_summary": "Die Bundesregierung hat laut einer Antwort auf eine Kleine Anfrage die Kosten der Bundeswehr für Kinderbetreuungsplätze beziffert. Genannt werden rund 5,83 Millionen Euro für 2022 und 9,04 Millionen Euro für 2025; für 2023 und 2024 nennt die Antwort rund 7,11 Millionen Euro und 7,56 Millionen Euro.\n\nAußerdem nennt die Quelle die Zahl der aktuell bereitgestellten Betreuungsplätze: 580 über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Für Standorte im Ausland werden Plätze in mehreren Orten aufgeführt; für Litauen heißt es, der Betreuungsbedarf nehme mit dem schrittweisen Aufwuchs der Brigade kontinuierlich zu.",
+          "analysis": {
+            "story_id": "wt-2ae8fdd95aa5c1fa",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Bundesregierung beziffert die jährlichen Kosten der Bundeswehr für Kinderbetreuungsplätze 2025 auf 9,04 Millionen Euro, nach 5,83 Millionen Euro im Jahr 2022. Zugleich nennt sie mehrere Hundert Betreuungsplätze im In- und Ausland.",
+            "detail_summary": "Gesichert ist zunächst die neue Kostenangabe der Bundesregierung: Die Ausgaben der Bundeswehr für Kinderbetreuungsplätze sind laut Antwort auf eine Kleine Anfrage von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro gestiegen. Die Quelle nennt zusätzlich Zwischenwerte für 2023 und 2024 sowie die aktuelle Zahl der verfügbaren Plätze im Inland und an Auslandsstandorten. Das ist relevant, weil damit ein konkreter, staatlich organisierter Unterstützungsbereich mit Haushaltsbezug und Personalwirkung sichtbar wird. Der Wirkpfad liegt vor allem über die Verfügbarkeit von Betreuung als Standort- und Beschäftigungsfaktor für Angehörige der Bundeswehr. Mögliche Folgen sind bessere Planbarkeit für Familien und eine stabilere Bindung von Personal, zugleich aber steigende laufende Ausgaben. Wie stark daraus tatsächlich Rekrutierung, Verbleib oder Verteilungseffekte entstehen, bleibt offen; die Quelle liefert dazu nur die Antwort selbst, keine Wirkungsmessung.",
+            "why_relevant": "Die Meldung zeigt eine konkret bezifferte Entwicklung staatlicher Betreuungsausgaben und die vorhandene Betreuungsinfrastruktur der Bundeswehr. Das ist materiell, weil es Haushaltsmittel, Personalbindung und Standortbedingungen zugleich berührt.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Die Betreuungsangebote betreffen Angehörige der Bundeswehr und damit familiäre Vereinbarkeit, Standortwahl und Beschäftigungsbedingungen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht angelegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Angaben stammen aus einer Regierungsantwort und machen staatliche Mittelverwendung nachvollziehbar."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die steigenden Kosten und die benannten Plätze können die Vereinbarkeit von Dienst und Familie verbessern und damit Personalbindung und Standortattraktivität beeinflussen.",
+            "impact_risks": [
+              "Höhere laufende Ausgaben ohne belegte Effizienzgewinne",
+              "Ungleich verteilte Betreuungszugänge zwischen Standorten"
+            ],
+            "mechanisms": [
+              "Betreuung senkt organisatorische Hürden für Dienstzeiten und Versetzungen",
+              "Bereitgestellte Plätze stabilisieren Familienplanung am Standort"
+            ],
+            "first_order": [
+              "mehr verfügbare Kinderbetreuung für Bundeswehrangehörige",
+              "höhere öffentliche Ausgaben für diesen Bereich"
+            ],
+            "second_order": [
+              "mögliche Entlastung bei Vereinbarkeit von Familie und Dienst",
+              "mögliche stärkere Bindung von Personal an bestimmte Standorte"
+            ],
+            "third_order": [
+              "langfristig veränderte Standort- und Personalpolitik innerhalb der Bundeswehr",
+              "mögliche Nachsteuerung bei Ausbau oder Finanzierung der Angebote"
+            ],
+            "systemic_relevance": "Die Meldung betrifft einen kleinen, aber strukturell relevanten Baustein der Personal- und Infrastrukturpolitik im Sicherheitsbereich.",
+            "transformation_potential": "Begrenzt: eher inkrementelle Verbesserung der Betreuungsinfrastruktur als grundlegender Strukturwandel.",
+            "resilience": "Mögliche Stärkung der personellen Resilienz der Bundeswehr durch bessere Vereinbarkeit; ob das tatsächlich greift, bleibt offen.",
+            "side_effects": [
+              "Mehr Mittelbindung im Haushalt",
+              "mögliche regionale Unterschiede bei der Versorgung"
+            ],
+            "uncertainties": [
+              "Unklar bleibt, ob die Kostensteigerung auf mehr Plätze, höhere Preise oder andere Faktoren zurückgeht",
+              "Die Quelle enthält keine Wirkungsdaten zu Personalbindung oder Einsatzbereitschaft"
+            ],
+            "evidence_level": "einzelne amtliche Antwort mit konkreten Zahlen; keine unabhängige Gegenprüfung im gelieferten Material",
+            "attribution": "Die Angaben werden der Antwort der Bundesregierung zugeschrieben; unabhängig bestätigt ist hier nur der Wortlaut der Quelle selbst.",
+            "watch_next": [
+              "Ob die Bundesregierung die Kostenentwicklung in einer Folgeantwort erklärt",
+              "Ob sich die Zahl der Betreuungsplätze oder Standorte verändert"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 4, SDG 5, SDG 8 – nur als grober Bezugsrahmen für Vereinbarkeit und Bildung"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Die amtliche Antwort enthält neue, bezifferte Informationen zu Kosten und Betreuungsplätzen. Das ist kein bloßer Routinehinweis, sondern eine materiell relevante Zustandsbeschreibung mit Haushalts- und Personalbezug."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Kosten 2022",
+                  "value": "5,83",
+                  "unit": "Millionen Euro",
+                  "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                },
+                {
+                  "label": "Kosten 2025",
+                  "value": "9,04",
+                  "unit": "Millionen Euro",
+                  "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                },
+                {
+                  "label": "Betreuungsplätze im Inland",
+                  "value": "580",
+                  "unit": "Plätze",
+                  "context": "Belegrechte für Angehörige der Bundeswehr",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte"
+              ],
+              "timeline": [
+                {
+                  "date": "2022",
+                  "label": "Kostenbasis der Antwort"
+                },
+                {
+                  "date": "2023",
+                  "label": "Zwischenwert der Kosten"
+                },
+                {
+                  "date": "2024",
+                  "label": "Zwischenwert der Kosten"
+                },
+                {
+                  "date": "2025",
+                  "label": "genannter Kostenstand"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "chance"
+              },
+              "chart": {
+                "type": "bar",
+                "title": "Kosten der Kinderbetreuungsplätze",
+                "unit": "Millionen Euro",
+                "points": [
+                  {
+                    "label": "2022",
+                    "value": 5.83
+                  },
+                  {
+                    "label": "2023",
+                    "value": 7.11
+                  },
+                  {
+                    "label": "2024",
+                    "value": 7.56
+                  },
+                  {
+                    "label": "2025",
+                    "value": 9.04
+                  }
+                ]
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-1",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Die Bundesregierung meldet für die Bundeswehr steigende Kosten für Kinderbetreuungsplätze: von rund 5,83 Millionen Euro im Jahr 2022 auf 9,04 Millionen Euro im Jahr 2025.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "3634e437da269ff40f35",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "adc038fc15f4d112d667",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "efa5a2fd47d6c1f2a93a",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-2",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Für 2023 und 2024 nennt die Antwort der Bundesregierung Zwischenwerte von rund 7,11 Millionen Euro und 7,56 Millionen Euro.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "0300d55e7a5d6b1d8b50",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-3",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Bundesweit stehen aktuell 580 Betreuungsplätze über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften bereit.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "7fc1b482bc0a01501846",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-4",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Im Ausland nennt die Bundesregierung unter anderem Plätze in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius; in Litauen wachse der Bedarf mit dem schrittweisen Aufwuchs der Brigade Litauen.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "afbcdf59449096a1b037",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "e258d230fbc5bacbdc8d",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "b24c4518775145ec586b",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T04:07:24.339Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "cb0ae027af3ba03233bea0181b9702db55389fd6838dd85b792fc248e7e5d038"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "97580e62a547c411498afc38593e852f4c608fc4a08a854e3a5983ee00c7f8e2"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "40c1c92dfbe42319d58798911adc0d255ff1df974d58cfcb3954060a43e2baab"
+        },
+        "source_visual": null,
+        "fingerprint": "470e0a04a729a7dd98e6b2956e5ae1079e9c78b5d6053663151544187036ed8d",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T04:08:07.078Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-7743382a4712f9be",
+      "slug": "besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-12f9be",
+      "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
+      "first_seen": "2026-09-01T19:26:04.000Z",
+      "last_updated": "2026-09-04T04:06:28.686Z",
+      "published_at": "2026-09-04T04:06:28.686Z",
+      "updated_at": "2026-09-04T04:06:28.686Z",
+      "topic": [
+        "Soziales",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+          "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
+          "summary": "Hessische Beamte und Pensionäre bekommen mehr Geld. Das beschloss der Landtag mit den Stimmen der schwarz-roten Regierung. Die Opposition sieht besonders ein verankertes Familieneinkünftemodell als rechtlich bedenklich.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-01T19:26:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1f72fb08ecf5e111ffe8c70240bcc6638798e79935671ed6d028661d1249ae74",
+          "source_item_id": "e24f40b96cc644e85a71a76970f7e4c230f8439e6d32e882d3056931d60a974e",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-01T19:26:04.000Z",
+          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7743382a4712f9be-v1-claim-1",
+          "story_id": "wt-7743382a4712f9be",
+          "claim": "Der hessische Landtag hat eine Besoldungserhöhung für Landesbeamte beschlossen, die rückwirkend ab Juli 2026 greift und im Oktober 2027 weiter steigt.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "c1a65bdadedbbe0c64c6",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "98b317a19677d2ffe16d",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:06:28.686Z"
+        },
+        {
+          "claim_id": "wt-7743382a4712f9be-v1-claim-2",
+          "story_id": "wt-7743382a4712f9be",
+          "claim": "Die erste Erhöhung beträgt 3,0 Prozent, mindestens aber 110 Euro pro Monat; danach folgt ein zweites Plus von 2,8 Prozent zum 1. Oktober 2027.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "c1a65bdadedbbe0c64c6",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "98b317a19677d2ffe16d",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:06:28.686Z"
+        },
+        {
+          "claim_id": "wt-7743382a4712f9be-v1-claim-3",
+          "story_id": "wt-7743382a4712f9be",
+          "claim": "Der Gesetzentwurf wurde mit den Stimmen der schwarz-roten Regierungskoalition verabschiedet.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "98b317a19677d2ffe16d",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "5d0967a507777fd66ca3",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:06:28.686Z"
+        },
+        {
+          "claim_id": "wt-7743382a4712f9be-v1-claim-4",
+          "story_id": "wt-7743382a4712f9be",
+          "claim": "Künftig soll bei der Berechnung der Beamtenbesoldung in Hessen ein Familieneinkünftemodell statt des bisherigen Alleinverdienermodells gelten.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "5d0967a507777fd66ca3",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "98680b0445cb3a372fad",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:06:28.686Z"
+        },
+        {
+          "claim_id": "wt-7743382a4712f9be-v1-claim-5",
+          "story_id": "wt-7743382a4712f9be",
+          "claim": "Opposition und DGB äußern verfassungsrechtliche Bedenken gegen das Modell und kritisieren fehlende Nachbesserungen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "c06a69935b9d52698635",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "excerpt_hash": "7566561dbddbd5a7ed20",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T04:06:28.686Z"
+        }
+      ],
+      "event_id": "event-795c48d3db0831ef9b61",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T04:06:15.719Z",
+      "publish_ready_at": "2026-09-04T04:06:28.686Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das neue Familieneinkünftemodell rechtlich Bestand hat, wird sich an möglichen gerichtlichen Verfahren zeigen.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Gerichtliche Entscheidungen oder offizielle Nachbesserungen zum Besoldungsgesetz",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-78a7b9c975e6c755",
+          "announced_at": "2026-09-01T19:26:04.000Z",
+          "follow_up_date": "2026-09-11T04:06:28.686Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Der Bericht meldet, dass der hessische Landtag eine Besoldungserhöhung für Landesbeamte beschlossen hat. Die Tarifeinigung für die Angestellten des Landes werde auf die Beamten übertragen; genannt werden 3,0 Prozent ab 1. Juli 2026, mindestens 110 Euro pro Monat, und weitere 2,8 Prozent ab 1. Oktober 2027.\n\nZudem soll bei der Berechnung der Beamtenbesoldung ein neues Familieneinkünftemodell das bisherige Alleinverdienermodell ablösen. Danach werde bei einer Familie mit zwei Kindern ein fiktives Monatseinkommen des zweiten Erwachsenen angerechnet; außerdem steige der Familienzuschlag für die beiden ersten Kinder um jeweils 87 Euro. Opposition und DGB äußern rechtliche Bedenken und kritisieren fehlende Nachbesserungen.",
+      "analysis": {
+        "story_id": "wt-7743382a4712f9be",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Hessen hebt die Besoldung seiner Beamten und Pensionäre an. Zugleich soll ein neues Familieneinkünftemodell die bisherige Berechnungslogik ersetzen.",
+        "detail_summary": "Gesichert ist, dass der hessische Landtag eine Besoldungserhöhung beschlossen hat und dass sie für Landesbeamte rückwirkend ab Juli 2026 gelten soll. Die Erhöhung ist gestuft: zuerst 3,0 Prozent, mindestens 110 Euro pro Monat, später weitere 2,8 Prozent zum 1. Oktober 2027. Materiell relevant ist das für die Haushalte der Betroffenen, für die Personal- und Kostenplanung des Landes und für die rechtliche Ausgestaltung der Besoldung. Der Wirkpfad verläuft über höhere laufende Einkommen und geänderte Berechnungsregeln im Besoldungssystem. Mögliche Folgen sind veränderte Ausgaben des Landes, Anpassungen bei Familienzuschlägen und juristische Auseinandersetzungen über das neue Modell. Offen bleibt, wie die Regelung im Vollzug und vor Gerichten standhält.",
+        "why_relevant": "Die Meldung verändert unmittelbar Einkommen und Berechnungsregeln für eine große Gruppe öffentlicher Beschäftigter in Hessen und hat damit finanzielle, rechtliche und administrative Folgen.",
+        "status": "beschlossen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind hessische Beamte und Pensionäre; die Besoldung steigt und die Berechnungslogik ändert sich."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug erkennbar; mögliche fiskalische Effekte bleiben indirekt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Ein Landtagsbeschluss mit Oppositions- und Gewerkschaftskritik berührt Rechtsbindung und parlamentarische Kontrolle."
+        },
+        "importance": "hoch",
+        "impact_potential": "Höhere laufende Zahlungen an Beamte und Pensionäre, veränderte Familienzuschläge sowie mögliche Folgekosten oder Korrekturen durch rechtliche Prüfung.",
+        "impact_risks": [
+          "Rechtliche Anfechtungen könnten die neue Berechnungslogik verzögern oder ändern.",
+          "Die Kostenwirkung für den Landeshaushalt könnte höher ausfallen als politisch kalkuliert."
+        ],
+        "mechanisms": [
+          "Besoldung wird per Gesetz angehoben.",
+          "Neue Familienberechnung verändert individuelle Ansprüche und Zuschläge.",
+          "Die politische Entscheidung verschiebt Ausgaben und kann juristische Prüfung auslösen."
+        ],
+        "first_order": [
+          "Mehr Geld für betroffene Beamte und Pensionäre.",
+          "Geänderte Besoldungsberechnung für Familien."
+        ],
+        "second_order": [
+          "Höhere Personalausgaben im Landeshaushalt.",
+          "Mehr Druck auf Verwaltung und Rechtsprüfung."
+        ],
+        "third_order": [
+          "Mögliche Präzedenzwirkung für andere Länder bei Familienmodellen.",
+          "Langfristige Folgen für Rekrutierung und Bindung im öffentlichen Dienst sind möglich."
+        ],
+        "systemic_relevance": "Die Maßnahme betrifft einen zentralen Kosten- und Regelungsbereich des öffentlichen Dienstes; sie kann Verwaltungspraktiken und rechtliche Standards im Besoldungssystem beeinflussen.",
+        "transformation_potential": "Begrenzt bis mittel: Die Regelung ändert die Verteilungslogik innerhalb der Besoldung und könnte bei Bestand rechtliche Maßstäbe für ähnliche Modelle stützen.",
+        "resilience": "Unklar ist, wie robust das Modell gegenüber verfassungsrechtlicher Prüfung ist; die Widerstandsfähigkeit des Regelwerks bleibt daher offen.",
+        "side_effects": [
+          "Mögliche Ungleichbehandlungseffekte durch das neue Familieneinkünftemodell.",
+          "Erhöhter Abstimmungs- und Prüfaufwand in der Verwaltung."
+        ],
+        "uncertainties": [
+          "Die juristische Belastbarkeit des Familieneinkünftemodells ist laut Bericht umstritten.",
+          "Der vollständige finanzielle Effekt für den Landeshaushalt wird in der Quelle nicht beziffert."
+        ],
+        "evidence_level": "einzelne journalistische Sekundärquelle mit konkreten Zahlen und Beschlussangabe; keine unabhängige Zweitquelle im Datensatz",
+        "attribution": "Die Tatsachen stützen sich auf den vorliegenden Bericht; die Kritik wird als dort zitierte Position von Opposition und DGB wiedergegeben.",
+        "watch_next": [
+          "Ob Klagen, Nachbesserungen oder eine amtliche Begründung des Modells folgen."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 8, SDG 10, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Der Landtagsbeschluss verändert Besoldung und Berechnungsregeln mit unmittelbaren Folgen für Einkommen und Haushaltsausgaben; der Kern ist durch die vorliegende Quelle konkret belegt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "erste Erhöhung",
+              "value": "3,0",
+              "unit": "Prozent",
+              "context": "erste Besoldungsstufe ab Juli 2026",
+              "claim_id": "wt-7743382a4712f9be-claim-01"
+            },
+            {
+              "label": "Mindestbetrag",
+              "value": "110",
+              "unit": "Euro pro Monat",
+              "context": "untere Grenze der ersten Erhöhung",
+              "claim_id": "wt-7743382a4712f9be-claim-01"
+            },
+            {
+              "label": "zweite Erhöhung",
+              "value": "2,8",
+              "unit": "Prozent",
+              "context": "zweite Stufe ab Oktober 2027",
+              "claim_id": "wt-7743382a4712f9be-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte",
+            "staat",
+            "aeltere"
+          ],
+          "timeline": [
+            {
+              "date": "2026-07",
+              "label": "erste Erhöhung rückwirkend ab Juli 2026"
+            },
+            {
+              "date": "2027-10",
+              "label": "zweites Plus zum 1. Oktober 2027"
+            }
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T04:06:28.686Z",
+          "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
+          "source_summary": "Der Bericht meldet, dass der hessische Landtag eine Besoldungserhöhung für Landesbeamte beschlossen hat. Die Tarifeinigung für die Angestellten des Landes werde auf die Beamten übertragen; genannt werden 3,0 Prozent ab 1. Juli 2026, mindestens 110 Euro pro Monat, und weitere 2,8 Prozent ab 1. Oktober 2027.\n\nZudem soll bei der Berechnung der Beamtenbesoldung ein neues Familieneinkünftemodell das bisherige Alleinverdienermodell ablösen. Danach werde bei einer Familie mit zwei Kindern ein fiktives Monatseinkommen des zweiten Erwachsenen angerechnet; außerdem steige der Familienzuschlag für die beiden ersten Kinder um jeweils 87 Euro. Opposition und DGB äußern rechtliche Bedenken und kritisieren fehlende Nachbesserungen.",
+          "analysis": {
+            "story_id": "wt-7743382a4712f9be",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Hessen hebt die Besoldung seiner Beamten und Pensionäre an. Zugleich soll ein neues Familieneinkünftemodell die bisherige Berechnungslogik ersetzen.",
+            "detail_summary": "Gesichert ist, dass der hessische Landtag eine Besoldungserhöhung beschlossen hat und dass sie für Landesbeamte rückwirkend ab Juli 2026 gelten soll. Die Erhöhung ist gestuft: zuerst 3,0 Prozent, mindestens 110 Euro pro Monat, später weitere 2,8 Prozent zum 1. Oktober 2027. Materiell relevant ist das für die Haushalte der Betroffenen, für die Personal- und Kostenplanung des Landes und für die rechtliche Ausgestaltung der Besoldung. Der Wirkpfad verläuft über höhere laufende Einkommen und geänderte Berechnungsregeln im Besoldungssystem. Mögliche Folgen sind veränderte Ausgaben des Landes, Anpassungen bei Familienzuschlägen und juristische Auseinandersetzungen über das neue Modell. Offen bleibt, wie die Regelung im Vollzug und vor Gerichten standhält.",
+            "why_relevant": "Die Meldung verändert unmittelbar Einkommen und Berechnungsregeln für eine große Gruppe öffentlicher Beschäftigter in Hessen und hat damit finanzielle, rechtliche und administrative Folgen.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind hessische Beamte und Pensionäre; die Besoldung steigt und die Berechnungslogik ändert sich."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Kein direkter Umweltbezug erkennbar; mögliche fiskalische Effekte bleiben indirekt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Ein Landtagsbeschluss mit Oppositions- und Gewerkschaftskritik berührt Rechtsbindung und parlamentarische Kontrolle."
+            },
+            "importance": "hoch",
+            "impact_potential": "Höhere laufende Zahlungen an Beamte und Pensionäre, veränderte Familienzuschläge sowie mögliche Folgekosten oder Korrekturen durch rechtliche Prüfung.",
+            "impact_risks": [
+              "Rechtliche Anfechtungen könnten die neue Berechnungslogik verzögern oder ändern.",
+              "Die Kostenwirkung für den Landeshaushalt könnte höher ausfallen als politisch kalkuliert."
+            ],
+            "mechanisms": [
+              "Besoldung wird per Gesetz angehoben.",
+              "Neue Familienberechnung verändert individuelle Ansprüche und Zuschläge.",
+              "Die politische Entscheidung verschiebt Ausgaben und kann juristische Prüfung auslösen."
+            ],
+            "first_order": [
+              "Mehr Geld für betroffene Beamte und Pensionäre.",
+              "Geänderte Besoldungsberechnung für Familien."
+            ],
+            "second_order": [
+              "Höhere Personalausgaben im Landeshaushalt.",
+              "Mehr Druck auf Verwaltung und Rechtsprüfung."
+            ],
+            "third_order": [
+              "Mögliche Präzedenzwirkung für andere Länder bei Familienmodellen.",
+              "Langfristige Folgen für Rekrutierung und Bindung im öffentlichen Dienst sind möglich."
+            ],
+            "systemic_relevance": "Die Maßnahme betrifft einen zentralen Kosten- und Regelungsbereich des öffentlichen Dienstes; sie kann Verwaltungspraktiken und rechtliche Standards im Besoldungssystem beeinflussen.",
+            "transformation_potential": "Begrenzt bis mittel: Die Regelung ändert die Verteilungslogik innerhalb der Besoldung und könnte bei Bestand rechtliche Maßstäbe für ähnliche Modelle stützen.",
+            "resilience": "Unklar ist, wie robust das Modell gegenüber verfassungsrechtlicher Prüfung ist; die Widerstandsfähigkeit des Regelwerks bleibt daher offen.",
+            "side_effects": [
+              "Mögliche Ungleichbehandlungseffekte durch das neue Familieneinkünftemodell.",
+              "Erhöhter Abstimmungs- und Prüfaufwand in der Verwaltung."
+            ],
+            "uncertainties": [
+              "Die juristische Belastbarkeit des Familieneinkünftemodells ist laut Bericht umstritten.",
+              "Der vollständige finanzielle Effekt für den Landeshaushalt wird in der Quelle nicht beziffert."
+            ],
+            "evidence_level": "einzelne journalistische Sekundärquelle mit konkreten Zahlen und Beschlussangabe; keine unabhängige Zweitquelle im Datensatz",
+            "attribution": "Die Tatsachen stützen sich auf den vorliegenden Bericht; die Kritik wird als dort zitierte Position von Opposition und DGB wiedergegeben.",
+            "watch_next": [
+              "Ob Klagen, Nachbesserungen oder eine amtliche Begründung des Modells folgen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, SDG 10, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Der Landtagsbeschluss verändert Besoldung und Berechnungsregeln mit unmittelbaren Folgen für Einkommen und Haushaltsausgaben; der Kern ist durch die vorliegende Quelle konkret belegt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "erste Erhöhung",
+                  "value": "3,0",
+                  "unit": "Prozent",
+                  "context": "erste Besoldungsstufe ab Juli 2026",
+                  "claim_id": "wt-7743382a4712f9be-claim-01"
+                },
+                {
+                  "label": "Mindestbetrag",
+                  "value": "110",
+                  "unit": "Euro pro Monat",
+                  "context": "untere Grenze der ersten Erhöhung",
+                  "claim_id": "wt-7743382a4712f9be-claim-01"
+                },
+                {
+                  "label": "zweite Erhöhung",
+                  "value": "2,8",
+                  "unit": "Prozent",
+                  "context": "zweite Stufe ab Oktober 2027",
+                  "claim_id": "wt-7743382a4712f9be-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "staat",
+                "aeltere"
+              ],
+              "timeline": [
+                {
+                  "date": "2026-07",
+                  "label": "erste Erhöhung rückwirkend ab Juli 2026"
+                },
+                {
+                  "date": "2027-10",
+                  "label": "zweites Plus zum 1. Oktober 2027"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-7743382a4712f9be-v1-claim-1",
+              "story_id": "wt-7743382a4712f9be",
+              "claim": "Der hessische Landtag hat eine Besoldungserhöhung für Landesbeamte beschlossen, die rückwirkend ab Juli 2026 greift und im Oktober 2027 weiter steigt.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "c1a65bdadedbbe0c64c6",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "98b317a19677d2ffe16d",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "claim_id": "wt-7743382a4712f9be-v1-claim-2",
+              "story_id": "wt-7743382a4712f9be",
+              "claim": "Die erste Erhöhung beträgt 3,0 Prozent, mindestens aber 110 Euro pro Monat; danach folgt ein zweites Plus von 2,8 Prozent zum 1. Oktober 2027.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "c1a65bdadedbbe0c64c6",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "98b317a19677d2ffe16d",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "claim_id": "wt-7743382a4712f9be-v1-claim-3",
+              "story_id": "wt-7743382a4712f9be",
+              "claim": "Der Gesetzentwurf wurde mit den Stimmen der schwarz-roten Regierungskoalition verabschiedet.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "98b317a19677d2ffe16d",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "5d0967a507777fd66ca3",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "claim_id": "wt-7743382a4712f9be-v1-claim-4",
+              "story_id": "wt-7743382a4712f9be",
+              "claim": "Künftig soll bei der Berechnung der Beamtenbesoldung in Hessen ein Familieneinkünftemodell statt des bisherigen Alleinverdienermodells gelten.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "5d0967a507777fd66ca3",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "98680b0445cb3a372fad",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            },
+            {
+              "claim_id": "wt-7743382a4712f9be-v1-claim-5",
+              "story_id": "wt-7743382a4712f9be",
+              "claim": "Opposition und DGB äußern verfassungsrechtliche Bedenken gegen das Modell und kritisieren fehlende Nachbesserungen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "c06a69935b9d52698635",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+                  "excerpt_hash": "7566561dbddbd5a7ed20",
+                  "checked_at": "2026-09-04T04:06:28.686Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:06:28.686Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
+              "content_hash": "1f72fb08ecf5e111ffe8c70240bcc6638798e79935671ed6d028661d1249ae74"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T04:06:28.686Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "122bcfa0d2b268c6a20e076d86131b20961dab3f29d7b0fa18c18572bc051090"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "36a34dbae589510103bf5fd61c3fcbae2b4b78384c4c9b673387f73f6a7c659f"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "c623522eda72cb3c9e58de01c8b70c2f22cb0e545cfda1b24fa9357a149199b5"
+        },
+        "source_visual": null,
+        "fingerprint": "ec16fc66ce5861b73b61948368b22238e894b767fea5e2f4b0d9e58534a1a028",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T04:08:01.511Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-e976be74e6481ea2",
       "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
@@ -16223,7 +17448,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -25373,21 +26598,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "a6622718f141ec483591d3efe833f4b99941961265ad4452d8b857f43eace98b",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 2,
-      "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -25418,14 +26641,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 808.51035,
+        "source_age_minutes": 823.1371333333333,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -26506,7 +27741,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
         "sources": [
           {
@@ -27149,7 +28384,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -27671,7 +28906,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -27952,7 +29187,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -28205,7 +29440,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
         "sources": [
           {
@@ -28462,7 +29697,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -28706,7 +29941,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -29336,19 +30571,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e20eac76b689f5b7c4be",
@@ -29377,126 +30612,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1133.51035,
+        "source_age_minutes": 1148.1371333333334,
         "detection_delay_minutes": 803.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      }
-    },
-    {
-      "story_id": "wt-2ae8fdd95aa5c1fa",
-      "slug": "kinderbetreuung-bei-der-bundeswehr-a5c1fa",
-      "title": "Kinderbetreuung bei der Bundeswehr",
-      "first_seen": "2026-09-03T08:58:00.000Z",
-      "last_updated": "2026-09-03T08:58:00.000Z",
-      "topic": [
-        "Europa",
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundestag-hib",
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
-          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-          "title": "Kinderbetreuung bei der Bundeswehr",
-          "summary": "Verteidigung/Antwort Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind laut einer Antwort der Bundesregierung von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-03T08:58:00.000Z",
-          "primary_source": true,
-          "source_priority": 96,
-          "source_topic": "Politik",
-          "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f",
-          "source_item_id": "8833e3434923f8ca569d72a45bd525c70f32a3e61150c4937fd22d012f5b4fca",
-          "publisher_id": "bundestag",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T08:58:00.000Z",
-          "ingested_at": "2026-09-04T03:51:30.621Z",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01",
-          "story_id": "wt-2ae8fdd95aa5c1fa",
-          "claim": "Kinderbetreuung bei der Bundeswehr: Verteidigung/Antwort Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind laut einer Antwort der Bundesregierung von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "bundestag-hib",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
-        }
-      ],
-      "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-864e7c7a9a2009a72fa5",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 36,
-        "public_relevance": "mittel",
-        "topics": [
-          "Europa",
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
       },
-      "freshness": {
-        "source_age_minutes": 1133.51035,
-        "detection_delay_minutes": 803.2835,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -29702,7 +30837,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -29975,7 +31110,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -30251,7 +31386,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -30524,7 +31659,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -30802,7 +31937,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -31076,7 +32211,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -31354,7 +32489,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -32644,7 +33779,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:51:30.621Z",
+        "detected_at": "2026-09-04T04:06:08.228Z",
         "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
         "sources": [
           {
@@ -34158,19 +35293,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-35177e3864a5abcfec8e",
@@ -34202,14 +35337,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2311.51035,
+        "source_age_minutes": 2326.137133333333,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -34274,19 +35421,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-f6bf7265b4e640e7e2d7",
@@ -34319,14 +35466,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2311.51035,
+        "source_age_minutes": 2326.137133333333,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -34762,19 +35921,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "1e6cd7c1d6d91647b7046917beb2caa2cbc18c7c4595b3a59dd70bc4ca647908",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "AI_DETAIL_SUMMARY_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3e01d1f6d0533d6aa9c6",
@@ -34803,11 +35965,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2482.6936833333334,
+        "source_age_minutes": 2497.3204666666666,
         "detection_delay_minutes": 2152.4668333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35128,19 +36290,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a65754a145ed4dc9c820",
@@ -35172,14 +36334,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2523.51035,
+        "source_age_minutes": 2538.137133333333,
         "detection_delay_minutes": 2193.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -35488,7 +36662,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
@@ -35500,7 +36674,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ef9d83c7cd180ed4c9e4",
@@ -35530,11 +36704,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2631.51035,
+        "source_age_minutes": 2646.137133333333,
         "detection_delay_minutes": 2301.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35600,7 +36774,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
@@ -35612,7 +36786,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3c4cec37699684f265d9",
@@ -35640,11 +36814,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2751.51035,
+        "source_age_minutes": 2766.137133333333,
         "detection_delay_minutes": 2421.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35776,125 +36950,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-7743382a4712f9be",
-      "slug": "besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-12f9be",
-      "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
-      "first_seen": "2026-09-01T19:26:04.000Z",
-      "last_updated": "2026-09-01T19:26:04.000Z",
-      "topic": [
-        "Soziales",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
-          "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
-          "summary": "Hessische Beamte und Pensionäre bekommen mehr Geld. Das beschloss der Landtag mit den Stimmen der schwarz-roten Regierung. Die Opposition sieht besonders ein verankertes Familieneinkünftemodell als rechtlich bedenklich.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-01T19:26:04.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "1f72fb08ecf5e111ffe8c70240bcc6638798e79935671ed6d028661d1249ae74",
-          "source_item_id": "e24f40b96cc644e85a71a76970f7e4c230f8439e6d32e882d3056931d60a974e",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-01T19:26:04.000Z",
-          "ingested_at": "2026-09-04T03:51:30.621Z",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7743382a4712f9be-claim-01",
-          "story_id": "wt-7743382a4712f9be",
-          "claim": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld: Hessische Beamte und Pensionäre bekommen mehr Geld. Das beschloss der Landtag mit den Stimmen der schwarz-roten Regierung. Die Opposition sieht besonders ein verankertes Familieneinkünftemodell als rechtlich bedenklich.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "hr-hessenschau",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
-        }
-      ],
-      "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_DETAIL_SUMMARY_LENGTH",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
-      "quality_retry_count": 1,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-795c48d3db0831ef9b61",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Soziales",
-          "Politik"
-        ],
-        "dimensions": [
-          "Mensch",
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 3385.4436833333334,
-        "detection_delay_minutes": 3055.2168333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
     {
@@ -36081,19 +37136,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-88c06765dd812ab1333c",
@@ -36124,11 +37181,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3582.377016666667,
+        "source_age_minutes": 3597.0038,
         "detection_delay_minutes": 3252.150166666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -36692,19 +37749,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "ee7dad7353b26544b265da43fabbd57bf9f547566a8ec550abcad8b81c376364",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e1ac3e5b6a7b2d3e7529",
@@ -36735,14 +37792,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3934.51035,
+        "source_age_minutes": 3949.137133333333,
         "detection_delay_minutes": 3604.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -36806,7 +37875,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -36818,7 +37887,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -36847,11 +37916,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4191.51035,
+        "source_age_minutes": 4206.137133333334,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -37164,19 +38233,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "ec68e1b7e01d1cf36c7107e281d04242a0644a887db1bc32b9b6d7d42de66dd2",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-cbca969c9d482acda1dd",
@@ -37208,14 +38277,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5146.4270166666665,
+        "source_age_minutes": 5161.0538,
         "detection_delay_minutes": 4816.2001666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -37279,7 +38360,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -37291,7 +38372,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -37323,11 +38404,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5271.51035,
+        "source_age_minutes": 5286.137133333334,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -37911,19 +38992,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:51:30.621Z"
+          "checked_at": "2026-09-04T04:06:08.228Z"
         }
       ],
       "content_hash": "67e92b99cbf6de95d7ca8de1bdee15fa83a7a2be1a38f37e2d75bf935cf01267",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:51:30.621Z",
+      "updated_at": "2026-09-04T04:06:08.228Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-b314e6fe17d75603d224",
@@ -37954,14 +39035,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9561.51035,
+        "source_age_minutes": 9576.137133333334,
         "detection_delay_minutes": 9231.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.22685,
+        "queue_age_minutes": 344.85363333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T04:06:08.228Z",
+      "rejection": {
+        "at": "2026-09-04T04:06:08.228Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -38173,5 +39266,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T03:51:30.621Z"
+  "public_updated_at": "2026-09-04T04:06:08.228Z"
 }
