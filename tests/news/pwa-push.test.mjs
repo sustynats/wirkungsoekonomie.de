@@ -28,9 +28,23 @@ test("manual refresh loads image-only releases, but offline keeps the current pa
   const code=app.slice(app.indexOf("  async function checkForNews("),app.indexOf("  async function markNewsAsSeen("));
   for(const offline of [false,true]) {
     let reloads=0,updates=0;
-    const context={Date,cards:[{}],latestFeedTimestamp:0,autoReloadKey:"reload",newestCardTimestamp:()=>0,registrationPromise:Promise.resolve({update:async()=>{updates++;}}),refreshStatus:{textContent:""},document:{visibilityState:"visible"},window:{sessionStorage:{getItem:()=>String(Date.now()),setItem(){}},location:{reload(){reloads++;}}},fetch:async()=>{if(offline)throw new Error("offline");return {ok:true,json:async()=>({items:[]})};}};
+    const context={Date,cards:[{}],latestFeedTimestamp:0,autoReloadKey:"reload",newestCardTimestamp:()=>0,registrationPromise:Promise.resolve({update:async()=>{updates++;}}),refreshStatus:{textContent:""},document:{visibilityState:"visible",querySelector:()=>null},window:{sessionStorage:{getItem:()=>String(Date.now()),setItem(){}},location:{reload(){reloads++;}}},fetch:async()=>{if(offline)throw new Error("offline");return {ok:true,json:async()=>({items:[]})};}};
     const result=await vm.runInNewContext(`${code}\ncheckForNews({manual:true})`,context);
     assert.equal(updates,1);assert.equal(reloads,offline?0:1);assert.equal(result,offline?null:true);
+  }
+});
+
+test("archival revisions refresh automatically without inventing a news timestamp or badge", async () => {
+  const app=fs.readFileSync("assets/js/news-pwa.js","utf8");
+  const code=app.slice(app.indexOf("  async function checkForNews("),app.indexOf("  async function markNewsAsSeen("));
+  for(const changed of [false,true]) {
+    let reloads=0;const badges=[];
+    const context={Date,cards:[{}],latestFeedTimestamp:0,autoReloadKey:"reload",lastSeenKey:"seen",lastNotifiedKey:"notified",newestCardTimestamp:()=>0,registrationPromise:Promise.resolve(null),refreshStatus:{textContent:""},updateAppBadge:async(count)=>badges.push(count),document:{visibilityState:"visible",querySelector:()=>({content:"files1:old"})},window:{sessionStorage:{getItem:()=>"0",setItem(){}},localStorage:{getItem:()=>"2026-09-04"},location:{reload(){reloads++;}}},fetch:async()=>({ok:true,json:async()=>({items:[],_woek_revision:changed?"files1:new":"files1:old"})})};
+    const result=await vm.runInNewContext(`${code}\ncheckForNews()`,context);
+    assert.equal(result,changed);
+    assert.equal(reloads,changed?1:0);
+    assert.equal(context.latestFeedTimestamp,0);
+    assert.ok(badges.every(count=>count===0));
   }
 });
 

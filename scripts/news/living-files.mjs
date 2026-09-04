@@ -162,10 +162,10 @@ export function duplicateGroups(stories) {
 const RELATED_TOPICS = [
   ["grid-security", "Stromnetz und Schutz kritischer Infrastruktur", /\b(umspannwerk\w*|stromnetz[- ]sabotage|sabotage.{0,60}stromnetz|kritis-dachgesetz|schutz kritischer infrastrukturen)\b/],
   ["care-training", "Ausbildung und Versorgung in Gesundheitsberufen", /\b(pflegeausbildung|gesundheitsberuf\w*|heilberuf\w*)\b/],
-  ["heat-protection", "Hitze, Klimaanpassung und Gesundheit", /\b(hitzeschutz|hitzewelle\w*|heatwaves?|hitzehilfe)\b/],
+  ["heat-protection", "Hitzefolgen und Klimaanpassung", /\b(hitzeschutz|hitzewelle\w*|heatwaves?|hitzehilfe)\b/],
   ["fuel-prices", "Kraftstoffpreise und Mobilität", /\b(spritpreis\w*|benzinpreis\w*|e10|kraftstoffpreis\w*)\b/],
 ];
-const TERMS_IGNORED = new Set("nach neue neuen einer eines werden sollen durch uber gegen unter jetzt mehr beim beim politik wirtschaft energie gesundheit europa gesellschaft deutschland meldung bericht berichtet regierung beschliesst beschlossen plant".split(" "));
+const TERMS_IGNORED = new Set("nach neue neuen einer eines werden sollen durch uber gegen unter jetzt mehr beim politik wirtschaft energie gesundheit europa gesellschaft deutschland meldung bericht berichtet regierung beschliesst beschlossen plant trump trumps donald supreme court federal judge gericht gerichts bundesverfassungsgericht bundesregierung bundestag bundesrat kommission prasident minister polizei".split(" "));
 const terms = (text) => unique((normal(text).match(/[a-z0-9]{4,}/g) || []).filter((word) => !TERMS_IGNORED.has(word)));
 const relationText = (story) => `${story.title || ""} ${String(story.source_summary || "").split(/\n\s*\n/)[0].slice(0, 450)}`;
 

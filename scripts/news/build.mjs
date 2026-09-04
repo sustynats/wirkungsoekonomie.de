@@ -14,6 +14,7 @@ import { relatedStories } from "./living-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
+const PUBLIC_RELEASE = "20260904-files1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
@@ -235,7 +236,7 @@ function card(story, index) {
 </article>`;
 }
 
-function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null }) {
+function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null, publicUpdatedAt = "" }) {
   const { header, footer } = renderLayout(base);
   return `<!doctype html>
 <html lang="de">
@@ -244,6 +245,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)} | Wirkungsökonomie</title>
   <meta name="description" content="${escapeHtml(description)}">
+  ${publicUpdatedAt ? `<meta name="woek-news-revision" content="${PUBLIC_RELEASE}:${escapeHtml(publicUpdatedAt)}">` : ""}
   <link rel="canonical" href="${escapeHtml(canonical)}">
   ${robots ? `<meta name="robots" content="${escapeHtml(robots)}">` : ""}
   <meta property="og:type" content="website">
@@ -281,7 +283,7 @@ ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
 <script src="${base}assets/js/main.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-pwa.js?v=20260904-files1"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260904-reader2"></script>
 ${extraScript}
 </body>
@@ -332,6 +334,7 @@ function indexPage(stories, updatedAt) {
 </main>`;
   return pageShell({
     title: "Wirkungsticker",
+    publicUpdatedAt: updatedAt,
     description: "Automatisch aktualisierte, quellengebundene Wirkungsnachrichten für Mensch, Planet und Demokratie.",
     canonical: `${SITE}/wirkungsticker/`,
     base: "../",
@@ -571,6 +574,7 @@ export function buildNewsSite() {
   write(path.join(TICKER_DIR, "feed.xml"), feedXml(stories, publicationUpdatedAt));
   write(path.join(TICKER_DIR, "feed.atom"), feedXml(stories, publicationUpdatedAt, true));
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
+    _woek_revision: `${PUBLIC_RELEASE}:${publicationUpdatedAt}`,
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));

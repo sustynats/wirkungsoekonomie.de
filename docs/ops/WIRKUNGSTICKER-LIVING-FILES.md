@@ -20,6 +20,8 @@ Frühere Daten bleiben vollständig in `data/news/stories.json` und Git erhalten
 
 Eine Zusammenführung erhöht weder `current_version` noch `last_updated` oder den Neunachrichten-Zähler. Erst ein tatsächlich erfolgreich geprüftes materielles Update erhält eine neue Version, rückt nach vorn und erreicht den vorhandenen Push-Pfad nach erfolgreichem Pages-Deployment. Das Push-Publikationskennzeichen bleibt Akten-URL plus Änderungsdatum. Wiederholte Deployments versenden keine neue identische Nachricht.
 
+Eine separate öffentliche Revision im JSON Feed und in der Übersichtsseite aktualisiert geänderte Auswahllisten auch ohne neue Nachricht. Diese Revision fließt nicht in Push oder Badge-Zählung ein. Der vorhandene „Aktualisieren“-Knopf bleibt als sofortiger manueller Weg erhalten.
+
 `report.living_file_merges` protokolliert ID, Ziel und Zuordnungsgrund. Manuelle Bestandskontrolle:
 
 ```sh

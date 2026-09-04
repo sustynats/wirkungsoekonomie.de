@@ -87,6 +87,12 @@ test("related links are capped, relevant, unique and never filled by shared cate
   assert.match(renderRelatedStories(dormagen, [dormagen, ...relevant]), /data-search-exclude/);
 });
 
+test("the same politician and court do not make separate legal questions a concrete topic", () => {
+  const ballot = story("ballot", "Kongresswahlen: Trump zieht im Streit um Briefwahl erneut vor Supreme Court", { source_summary: "Donald Trump wendet sich im Streit um die Briefwahl an den Supreme Court." });
+  const citizenship = story("citizenship", "Federal judge blocks Trump's new bid to abolish birthright citizenship citing Supreme Court precedent", { source_summary: "Donald Trump scheitert mit einem Vorstoß gegen das Geburtsortsprinzip." });
+  assert.deepEqual(relatedStories(ballot, [ballot, citizenship]), []);
+});
+
 test("headless runs consolidate before AI and never retry a retired duplicate", async () => {
   const registrySource = { source_id: "test", publisher_id: "test", name: "Test", url: "https://example.org/", feed_url: "https://example.org/rss", enabled: true, source_type: "official_rss", primary_source: true, access: { status: "public", article: "metadata_only", cost_usd: 0 }, frequency_class: "high_frequency" };
   const canonical = structuredClone(dormagen);
