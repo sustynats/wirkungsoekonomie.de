@@ -11,13 +11,22 @@
     },
     "provider": {
       "firstSeen": "2026-09-04T16:35:31.192Z",
-      "active": false
+      "active": true
     },
     "news-input": {
       "firstSeen": "2026-09-04T16:35:31.192Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "33d675c46c5a4589d8f622c1",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Schnittstelle antwortete mit HTTP 429; die Ursache ist noch nicht bestimmt. Laufbericht: 2026-09-04T16:36:17.922Z.\nSeit: 2026-09-04T16:35:31.192Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "ab1dde84a47757c6b3c9e4af",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Eingabeprüfung: 2 Akte(n) überschreiten das Eingabelimit. Diese Akten bleiben zur Prüfung erhalten; andere Nachrichten werden weiterverarbeitet. Kein Nachweis eines Anbieterausfalls.\nSeit: 2026-09-04T16:35:31.192Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-04"
 }
