@@ -1,7 +1,341 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T02:36:31.848Z",
+  "updated_at": "2026-09-04T02:51:36.455Z",
   "stories": [
+    {
+      "story_id": "wt-d37d76d9fec9dcf1",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-f9239bc4c9297517-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-f9239bc4c9297517-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-f9239bc4c9297517-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "iran-mindestens-15-tote-nach-us-attacken-c9dcf1",
+      "title": "Iran: Mindestens 15 Tote nach US-Attacken",
+      "source_summary": "Die Deutsche Welle berichtet über eine neue Eskalation zwischen den USA und dem Iran. Nach Darstellung der Quelle reagiert der Ölpreis deutlich auf die Lage; genannt wird zwischenzeitlich ein Brent-Preis von 97,04 US-Dollar je Barrel, der höchste Stand seit mehr als einem Monat.\n\nIm Bericht heißt es weiter, US-Präsident Donald Trump habe die Angriffe als Vergeltung bezeichnet und dem Iran für den Fall einer Reaktion noch härtere Schläge angedroht. Die iranischen Revolutionsgarden hätten auf die US-Angriffe mit Vergeltungsschlägen reagiert und Ziele in Jordanien, Kuwait, Bahrain sowie US-Stützpunkte im Irak attackiert. Zudem nennt der Beitrag Angriffe auf zivile Gebiete, darunter eine Hochzeitsfeier im Raum Sirik, sowie Berichte über Tote in mehreren Provinzen. Offen bleibt im Quellenmaterial der vollständige, unabhängig geprüfte Lagekontext.",
+      "summary": "Die DW meldet US-Angriffe gegen den Iran, Tote und eine spürbare Reaktion an den Ölmärkten. Auch iranische Gegenschläge und neue Drohungen Trumps werden beschrieben.",
+      "detail_summary": "Gesichert aus der vorliegenden Quelle ist vor allem, dass die DW über US-Angriffe gegen den Iran, iranische Gegenangriffe und eine spürbare Marktreaktion berichtet. Die Quelle nennt mindestens 15 Tote, darunter Opfer bei einem Angriff auf eine Hochzeitsfeier, und verweist zugleich auf weitere Angriffe auf Ziele in mehreren Staaten sowie US-Stützpunkte im Irak. Materiell relevant ist das, weil sich damit militärische Eskalation, regionale Ausweitung und Preisbewegungen am Ölmarkt gleichzeitig verbinden. Der Wirkpfad reicht von unmittelbarer Zerstörung und Sicherheitsrisiken über mögliche Störungen von Lieferketten bis zu höheren Energiepreisen. Eine mögliche Folge wäre weiterer Druck auf Handel, Transport und Versorgung über die Straße von Hormus. Die Evidenz bleibt aber begrenzt, weil hier nur ein journalistischer Bericht vorliegt und zentrale Zahlen, Zuschreibungen und der genaue Verlauf nicht unabhängig bestätigt sind.",
+      "why_relevant": "Die Meldung verbindet militärische Eskalation mit regionalen Gegenangriffen und einer unmittelbaren Reaktion am Ölmarkt; das kann Sicherheitslage, Energiepreise und Handel zugleich beeinflussen.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mögliche zivile Opfer, militärische Risiken und indirekte Folgen über Energiepreise und Versorgungsketten."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Es geht um fossile Energiemärkte und mögliche Folgekaskaden, aber noch nicht um direkt belegte Umweltwirkungen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Bericht beschreibt staatliche Gewalt, Drohungen und regionale Instabilität; demokratische Korrekturfähigkeit ist indirekt berührt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Tote",
+            "value": "15",
+            "unit": "Menschen",
+            "context": "Von der DW genannte Mindestzahl nach den Angriffen"
+          },
+          {
+            "label": "Brent-Preis",
+            "value": "97,04",
+            "unit": "US-Dollar",
+            "context": "Zwischenzeitlicher Preis je Barrel laut Bericht"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "verbraucherinnen",
+          "europa"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-02T09:37:00.000Z",
+      "last_updated": "2026-09-04T02:53:04.131Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-2b34917a75229737249c",
+      "source_published_at": "2026-09-02T09:37:00.000Z",
+      "published_at": "2026-09-04T02:53:04.131Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dw-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutsche Welle",
+          "url": "https://www.dw.com/de/iran-mindestens-15-tote-nach-us-attacken/a-78701341?maca=de-rss-de-news-1089-xml-mrss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-02T09:37:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-45c66ae271691215",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-45c66ae271691215-4e63d92e997dad1e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-45c66ae271691215-4e63d92e997dad1e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-45c66ae271691215-4e63d92e997dad1e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "mehr-auszubildende-mehr-abbrecher-pflegefall-gesundheitsberufe-691215",
+      "title": "Mehr Auszubildende, mehr Abbrecher: Pflegefall Gesundheitsberufe",
+      "source_summary": "Der Beitrag von rbb24 beschreibt einen kräftigen Anstieg der Zahl der Auszubildenden in Gesundheitsberufen, besonders in der Pflege, in Berlin und Brandenburg. Für Brandenburg nennt der Text zuletzt 6.881 Menschen in einer entsprechenden Ausbildung, für Berlin 11.622. Außerdem verweist der Beitrag auf einen deutlich gestiegenen Männeranteil unter den Auszubildenden und ordnet die Entwicklung mit Reformen der Pflegeausbildung, dem Wegfall von Schulgeld und Anwerbung aus dem Ausland ein.\n\nZugleich schildert der Artikel, dass die Abbrecherquote ungewöhnlich hoch sei. Für Berlin nennt er einen prognostizierten zusätzlichen Personalbedarf in der Pflege bis 2035, für Brandenburg verweist er auf einen Bedarf bis 2040. Der Beitrag berichtet auch von Einschätzungen von Verdi und von Angaben aus Behörden und Statistik.",
+      "summary": "In Berlin und Brandenburg steigen die Ausbildungszahlen in Gesundheitsberufen und Pflege laut rbb24 deutlich. Zugleich bleibt die Abbrecherquote nach Darstellung des Beitrags hoch.",
+      "detail_summary": "Der bestbelegte Kern ist der starke Anstieg der Ausbildungszahlen in Gesundheitsberufen und Pflege in Berlin und Brandenburg, ergänzt um die im Beitrag beschriebene hohe Abbrecherquote. Das ist für den Arbeitsmarkt im Gesundheitswesen relevant, weil Ausbildung hier direkt auf Personalverfügbarkeit, Versorgungsstabilität und spätere Besetzung offener Stellen wirkt. Der Wirkpfad läuft über mehr Ausbildungszugänge, aber auch über mögliche Verluste durch Abbrüche, also über die Frage, wie viele angehende Fachkräfte tatsächlich im System bleiben. Als mögliche Folge nennt der Beitrag weiter bestehenden Personalbedarf in Pflegeeinrichtungen und Kliniken. Die Evidenz bleibt aber zunächst auf einen journalistischen Bericht gestützt; unabhängige Bestätigung der zentralen Trendaussagen liegt in den gelieferten Daten nicht vor.",
+      "why_relevant": "Die Meldung beschreibt Veränderungen bei Ausbildungszugang, Personalnachwuchs und Abbrüchen in einem systemrelevanten Versorgungsbereich mit Folgen für Krankenhäuser, Pflegeheime und Fachkräftesicherung.",
+      "topic": [
+        "Arbeit",
+        "Soziales",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Auszubildende, Beschäftigte, Patientinnen und Pflegebedürftige in einem zentralen Versorgungssektor."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer ökologischer Wirkpfad erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Öffentliche Daseinsvorsorge und die belastbare Arbeitsfähigkeit des Gesundheitssystems betreffen demokratisch legitimierte Grundversorgung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Auszubildende Brandenburg",
+            "value": "6.881",
+            "unit": "Personen",
+            "context": "Zuletzt gezählte Auszubildende in einer entsprechenden Ausbildung"
+          },
+          {
+            "label": "Auszubildende Berlin",
+            "value": "11.622",
+            "unit": "Personen",
+            "context": "Zuletzt gezählte Auszubildende in einer entsprechenden Ausbildung"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "patientinnen",
+          "kommunen",
+          "staat"
+        ],
+        "timeline": [
+          {
+            "date": "2035",
+            "label": "Zusätzlicher Pflegebedarf in Berlin laut Beitrag"
+          },
+          {
+            "date": "2040",
+            "label": "Zusätzlicher Personalbedarf in Brandenburg laut Beitrag"
+          }
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T04:28:00.000Z",
+      "last_updated": "2026-09-04T02:52:23.414Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-f9a41064b5a1fe587421",
+      "source_published_at": "2026-09-03T04:28:00.000Z",
+      "published_at": "2026-09-04T02:52:23.414Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie entwickeln sich die Ausbildungszahlen und Abbrecherquoten im nächsten Ausbildungsjahr weiter?",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue Statistik zu Auszubildenden und Abbrüchen in Berlin und Brandenburg",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5baaf89407498372",
+          "announced_at": "2026-09-03T04:28:00.000Z",
+          "follow_up_date": "2026-09-11T02:52:23.414Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/auszubildende-pflege-gesundheitsberufe-berlin-brandenburg.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T04:28:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-9de543ac63864ad7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "schulen-in-berlin-bildungssenatorin-stellt-plan-gegen-gewalt-vor-864ad7",
+      "title": "Schulen in Berlin: Bildungssenatorin stellt Plan gegen Gewalt vor",
+      "source_summary": "Die Berliner Bildungssenatorin Katharina Günther-Wünsch hat laut Bericht einen 13-Punkte-Plan gegen Gewalt an Schulen angekündigt. Der Plan soll auf Mobbing, sexistische Sprüche und Prügeleien reagieren, die an vielen Berliner Schulen als Alltag beschrieben werden.\n\nVorgesehen sind unter anderem ein einheitlicher Katalog für Regelverstöße und Krisenvorfälle, berlinweit verbindliche Grundregeln für Schul- und Hausordnungen sowie eine digitale Präventions- und Beratungsplattform. Für schwere Fälle ist eine intensivtherapeutische Jugendhilfeeinrichtung geplant; außerdem sollen mögliche rechtliche Voraussetzungen für verbindliche Anti-Gewalt-Trainings geprüft werden. Der Bericht verweist auf ein im Juni vorgestelltes Gewaltbarometer und nennt dazu Umfragewerte aus Berlin.",
+      "summary": "Berlin kündigt einen 13-Punkte-Plan gegen Gewalt an Schulen an. Viele Details sind noch als Vorhaben beschrieben, nicht als bereits umgesetzte Regel.",
+      "detail_summary": "Gesichert ist zunächst die Ankündigung eines 13-Punkte-Plans durch die Berliner Bildungssenatorin. Der Bericht nennt mehrere Elemente: einheitliche Vorgaben für Regelverstöße, verbindliche Grundregeln für Schul- und Hausordnungen, eine Beratungsplattform und eine geplante Einrichtung für schwere Gewaltfälle. Das ist politisch relevant, weil damit Zuständigkeiten, Interventionsketten und mögliche Eingriffe in Schulalltag und Jugendhilfe neu geordnet werden sollen. Der Wirkpfad verläuft über klarere Verfahren, frühere Unterstützung und härtere oder verbindlichere Reaktionen auf Vorfälle. Mögliche Folgen sind mehr Standardisierung und schnellere Fallbearbeitung, aber auch zusätzlicher Umsetzungsdruck an Schulen. Offen bleibt, wie konkret die Maßnahmen ausformuliert, finanziert und rechtlich abgesichert werden und ob sie tatsächlich beschlossen oder nur angekündigt sind.",
+      "why_relevant": "Die Ankündigung betrifft die Steuerung von Schulgewalt in einer großen öffentlichen Infrastruktur und kann Verfahren, Zuständigkeiten und Schutzmaßnahmen an Berliner Schulen verändern.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Schülerinnen, Lehrkräfte und Eltern können von geänderten Regeln, Beratungswegen und Interventionen direkt betroffen sein."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Umweltbezug erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Schulregeln, Disziplinarverfahren und mögliche Gesetzesänderungen berühren die demokratische Korrekturfähigkeit öffentlicher Institutionen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Planpunkte",
+            "value": "13",
+            "unit": "Punkte",
+            "context": "Umfang des angekündigten Maßnahmenpakets"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "kinder_jugend"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T13:49:00.000Z",
+      "last_updated": "2026-09-04T02:52:07.945Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-54b00f814a91f1c08961",
+      "source_published_at": "2026-09-03T13:49:00.000Z",
+      "published_at": "2026-09-04T02:52:07.945Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der 13-Punkte-Plan in konkrete Verwaltungsanweisungen, Gesetzesänderungen oder Haushaltsmaßnahmen umgesetzt wird.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Beschlüsse, Gesetzesvorlagen, Weisungen oder Mittelansätze",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2511ba4b85474833",
+          "announced_at": "2026-09-03T13:49:00.000Z",
+          "follow_up_date": "2026-09-11T02:52:07.945Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-schulen-gewalt-bildungssenatorin-plan-regeln.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T13:49:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-d80fd849c477e2ad",
       "title_image": {
