@@ -4,12 +4,13 @@
     "images": {
       "firstSeen": "2026-09-04T10:20:20.169Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-09-04T19:50:46.888Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "91b30f30c9b55d4c20b11303",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-09-04T20:17:19.548Z"
+    }
+  ],
   "dailyDate": "2026-09-04"
 }
