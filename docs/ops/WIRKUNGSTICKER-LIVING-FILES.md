@@ -2,6 +2,17 @@
 
 Stand: 4. September 2026. Betriebsregel für die automatische Aktenzuordnung.
 
+Der atomare Git-Publisher integriert zwischenzeitliche `main`-Änderungen vor jedem
+von höchstens drei Push-Versuchen erneut. Rebase-Konflikte bleiben ein Fehler;
+kein Force-Push und keine automatische Wahl einer Konfliktseite. So wird ein
+normaler paralleler Release während des Uploads nicht sofort zum verlorenen Lauf.
+
+Große KI-Eingaben referenzieren doppelte Quelltexte zusätzlich verlustfrei über
+`claim_from_source` (Quellenindex) und `claim_text_length`. Die Rekonstruktion ist
+exakt `title + ': ' + abstract`, auf die ursprüngliche Claim-Länge begrenzt.
+Keine Quelle, Beleg-ID, Provenienz oder Aussage wird dafür aus dem Datenbestand
+entfernt. Die Eingabegrenze und das Fakten-/Relevanzgate bleiben unverändert.
+
 ## Vor dem KI-Aufruf
 
 `living-files.mjs` trennt Dokumentidentität, konkreten Vorgang und bloßen Themenbezug. `clusterItems()` löst bekannte Akten zuerst auf, bevor unbekannte Feedmeldungen neue Cluster bilden. Quellenpriorität und Reihenfolge dürfen eine bekannte Aktenidentität nicht übergehen. Historische Alias-Quellen führen zur fortgeführten Akte.

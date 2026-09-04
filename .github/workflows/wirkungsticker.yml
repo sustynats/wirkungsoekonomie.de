@@ -134,8 +134,7 @@ jobs:
             exit 0
           fi
           git commit -m "[wirkungsticker] ${SLOT_NAME} $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          node scripts/news/publish-git.mjs
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish the committed ticker automatically
         if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true')

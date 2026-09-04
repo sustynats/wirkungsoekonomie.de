@@ -78,8 +78,30 @@ test("Growing living files retain all evidence identities, roles and claims with
     assert.ok(expanded.evidence_segments.length>=2);
     if(s.abstract_claim_id) assert.ok(compact.claims.some(c=>c.claim_id===s.abstract_claim_id&&c.claim.includes(sources[n].summary)));
   });
-  assert.deepEqual(compact.claims.map(c=>({...compact.claim_defaults,...c})),story.claims);
+  assert.deepEqual(compact.claims.map(c=>{
+    const {claim_from_source,claim_text_length,...fields}={...compact.claim_defaults,...c};
+    if(claim_from_source!==undefined)fields.claim=`${compact.sources[claim_from_source].title}: ${compact.sources[claim_from_source].abstract}`.slice(0,claim_text_length);
+    return fields;
+  }),story.claims);
   assert.deepEqual(story,before);
+});
+
+test("long feed claims factor exact source prefixes without dropping facts or provenance", () => {
+  const sources=Array.from({length:20},(_,i)=>({source_id:`source-${i}`,title:`Quellentitel ${i}`,abstract:'Unveränderter Quelleninhalt mit Kontext und offenen Fragen. '.repeat(14),url:`https://example.org/${i}`,provenance:{document:`original-${i}`},evidence_segments:[{evidence_id:`${i}-a`,excerpt:'Erster unveränderter Beleg.'},{evidence_id:`${i}-b`,excerpt:'Zweiter unveränderter Beleg.'}]}));
+  const claims=sources.map((s,i)=>({claim_id:`claim-${i}`,source_id:s.source_id,claim:`${s.title}: ${s.abstract}`.slice(0,720)}));
+  const input=[{sources,claims}],before=structuredClone(input);
+  assert.ok(JSON.stringify(input).length>28000);
+  const compactJson=fitAnalysisInput(input,28000);
+  assert.ok(compactJson.length<=28000);
+  const [compact]=JSON.parse(compactJson);
+  assert.deepEqual(compact.sources,sources);
+  compact.claims.forEach((claim,i)=>{
+    const s=compact.sources[claim.claim_from_source];
+    assert.equal(`${s.title}: ${s.abstract}`.slice(0,claim.claim_text_length),claims[i].claim);
+    assert.equal(claim.claim_id,claims[i].claim_id);
+    assert.equal(claim.source_id,claims[i].source_id);
+  });
+  assert.deepEqual(input,before);
 });
 
 test("Verfahrensstand trennt Entwurf, Beschluss, geltendes Recht und Ex ante", () => {
