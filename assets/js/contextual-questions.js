@@ -183,7 +183,9 @@ export function isSafeQuestionLink(href) {
 
 export function selectContextualQuestions(context) {
   const path = normalizedPath(context.path);
-  if (context.lang === 'en' || context.noindex || /^\/(admin|_debug|fragen|faq)(\/|$)/.test(path)) return [];
+  // The ticker has its own evidence, follow-up and related-news sections.
+  // Its owner explicitly excluded generic question recommendations here.
+  if (context.lang === 'en' || context.noindex || /^\/(admin|_debug|fragen|faq|wirkungsticker)(\/|$)/.test(path)) return [];
   const unique = items => {
     const labels = new Set(), targets = new Set();
     return items.filter(item => {
