@@ -40,6 +40,8 @@ Die alten Tests zum Vorrang des Ergebnisses prüfen jetzt Signatur **vor Verfahr
 
 Der erste Root-Website-Check scheiterte am bereits auf `main` veralteten Suchindex für `news/index.html` und den Content-Hashes von `index.html`. Nach Integration von `57c62f61f9ea7b918ecc97a1d49f994be666ca4b` wurden ausschließlich die beiden bestehenden Suchartefakte mit `SOURCE_DATE_EPOCH=1787270400 npm run build:search` neu erzeugt. Alle 30.541 URLs bleiben erhalten; elf News-Sucheinträge erhalten den tatsächlich veröffentlichten Seitenbestand. Keine Suchlogik, Nachricht oder Fachquelle wurde dabei editiert. Der Root-Check bleibt unverändert strikt.
 
+Der anschließende vollständige Root-Build (Run 33861771933) zeigte einen zweiten reproduzierbaren Bestandsfehler: `build-full-knowledge-library.mjs` erzeugte die Bibliothek ohne den schon veröffentlichten und verlinkten Anker `#empfohlener-einstieg`. Die bestehende Sektion „Führende Referenzen / Orientierung zuerst“ erhält diesen kompatiblen Anker. Keine Passage wird verändert; ein zusätzlicher Generator-Regressionstest schützt den Deep Link. Alle zwölf Kontextfragen-Tests bestehen lokal. Die vollständige Artefaktprüfung läuft erneut in CI, ohne Ausnahme oder abgeschwächte Linkprüfung.
+
 ## Freigabegrenze
 
 Keine Fachquelle geändert. Keine Evidenzklasse oder eingetretene Wirkung erfunden. Kein Vercel-Aufruf, keine automatische Preview/Deployment-Aktivierung. Die kontoweite rote Release-Kostensperre bleibt unverändert; GitHub-Prüfungen sind keine Production-Veröffentlichung.

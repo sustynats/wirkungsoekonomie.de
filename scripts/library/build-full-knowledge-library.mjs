@@ -748,7 +748,7 @@ const html = `<!DOCTYPE html>
         </div>
         <div class="library-type-grid">${typeCardsWithArchive}</div>
       </section>
-      <section class="section section-muted">
+      <section class="section section-muted" id="empfohlener-einstieg">
         <div class="section-header">
           <p class="hero-kicker">Führende Referenzen</p>
           <h2>Orientierung zuerst</h2>
