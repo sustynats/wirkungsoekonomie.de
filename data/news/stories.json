@@ -1,7 +1,622 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T20:36:32.644Z",
+  "updated_at": "2026-09-04T20:51:27.444Z",
   "stories": [
+    {
+      "story_id": "wt-d7a0af1afc831caf",
+      "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
+      "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+      "first_seen": "2026-09-04T17:21:16.000Z",
+      "last_updated": "2026-09-04T20:51:47.279Z",
+      "published_at": "2026-09-04T20:51:47.279Z",
+      "updated_at": "2026-09-04T20:51:47.279Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+          "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:21:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
+          "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T17:21:16.000Z",
+          "ingested_at": "2026-09-04T17:39:54.371Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+          "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:22:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
+          "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T17:22:14.000Z",
+          "ingested_at": "2026-09-04T20:36:32.644Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+          "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
+          "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:46:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
+          "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T17:46:00.000Z",
+          "ingested_at": "2026-09-04T18:06:22.511Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+          "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T20:13:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
+          "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T20:13:08.000Z",
+          "ingested_at": "2026-09-04T20:36:32.644Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d7a0af1afc831caf-v1-claim-1",
+          "story_id": "wt-d7a0af1afc831caf",
+          "claim": "Selenskyj kündigt an, dass US-Vermittler am Sonntag nach Kiew kommen sollen.",
+          "status": "confirmed_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+              "excerpt_hash": "da7db097fac9e7f0065c",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+              "excerpt_hash": "121c2d5991fc4eaa99e5",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:51:47.279Z"
+        },
+        {
+          "claim_id": "wt-d7a0af1afc831caf-v1-claim-2",
+          "story_id": "wt-d7a0af1afc831caf",
+          "claim": "Die US-Vermittler werden als Witkoff und Kushner benannt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+              "excerpt_hash": "da7db097fac9e7f0065c",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:51:47.279Z"
+        },
+        {
+          "claim_id": "wt-d7a0af1afc831caf-v1-claim-3",
+          "story_id": "wt-d7a0af1afc831caf",
+          "claim": "Die Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung lagen zuletzt auf Eis.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+              "excerpt_hash": "121c2d5991fc4eaa99e5",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:51:47.279Z"
+        },
+        {
+          "claim_id": "wt-d7a0af1afc831caf-v1-claim-4",
+          "story_id": "wt-d7a0af1afc831caf",
+          "claim": "Trump bestätigt die Reisepläne und sagt, die Gesandten würden einen Vorschlag zur Beendigung des Krieges unterbreiten.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+              "excerpt_hash": "529e3d1802192852263c",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:51:47.279Z"
+        }
+      ],
+      "event_id": "event-0fef8df3a32c15bcde8d",
+      "event_first_seen_at": "2026-09-04T17:39:54.371Z",
+      "event_detected_at": "2026-09-04T17:39:54.371Z",
+      "verification_started_at": "2026-09-04T20:51:28.058Z",
+      "publish_ready_at": "2026-09-04T20:51:47.279Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 2
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die US-Vermittler tatsächlich am Sonntag in Kiew eintreffen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder Bestätigungen zum tatsächlichen Eintreffen in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-cd96130eabd68579",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-06T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "578a07f64d655c02ffc6ba32ee652400f19345d51f3437bee5a151871f571471",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Mehrere Berichte melden, dass US-Vermittler am Sonntag nach Kiew reisen sollen. Der Stern schreibt, Präsident Selenskyj habe in Kiew einen Besuch der US-Vermittler angekündigt; zuvor seien die Verhandlungen unter US-Vermittlung auf Eis gelegen und die Vermittler seien bislang nur in Moskau gewesen. Der Deutschlandfunk nennt die Gesandten namentlich als Witkoff und Kushner und ergänzt, dass Trump die Reisepläne bestätigt habe.\n\nDie Quellen bleiben dabei bei der Ankündigung und ordnen den Schritt in die bislang erfolglosen Vermittlungsbemühungen ein. Unklar bleibt in den vorliegenden Texten, ob die Reise bereits stattgefunden hat oder nur bevorsteht.",
+      "analysis": {
+        "story_id": "wt-d7a0af1afc831caf",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Selenskyj kündigt an, dass US-Vermittler am Sonntag nach Kiew kommen sollen. Die Berichte nennen Witkoff und Kushner; Trump bestätigt die Reisepläne.",
+        "detail_summary": "Gesichert ist nach den vorliegenden Quellen vor allem die Ankündigung eines Besuchs US-amerikanischer Vermittler in Kiew am Sonntag. Der Deutschlandfunk nennt sie als Witkoff und Kushner und schreibt, Selenskyj habe sie in einer Videobotschaft angekündigt; Trump habe die Reisepläne bestätigt. Die Stern-Meldung ordnet das als Wiederaufnahme zuvor stockender Vermittlungen ein und verweist darauf, dass die Gespräche unter US-Vermittlung zuletzt auf Eis gelegen hätten. Für die Bewertung ist das relevant, weil ein sichtbarer Vermittlungsschritt potenziell den Verhandlungsrahmen verändert, ohne dass daraus schon ein Erfolg folgt. Mögliche Folgen wären ein neuer Gesprächskanal, ein geänderter Druck auf die Konfliktparteien oder nur symbolische Bewegung ohne Substanz. Ob daraus tatsächlich eine Kursänderung entsteht, bleibt mit den gelieferten Belegen offen; ein Treffen selbst, sein Inhalt und seine Wirkung sind hier noch nicht belegt.",
+        "why_relevant": "Die Ankündigung eines Besuchs hochrangiger US-Vermittler ist ein überprüfbarer Zwischenstand in einem Kriegsgeschehen mit möglichem Einfluss auf Verhandlungskanäle, politische Signale und künftige Entscheidungen.",
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind vor allem Menschen im Kriegsgebiet und potenziell weitere Zivilisten, falls Vermittlungen politische oder militärische Entscheidungen beeinflussen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Meldung enthält keine unmittelbaren Umwelt- oder Klimafolgen; ein indirekter Einfluss wäre nur mittelbar denkbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Verhandlungen zwischen Staaten und die öffentliche Ankündigung eines Vermittlungsbesuchs berühren diplomatische Entscheidungsprozesse und ihre Nachvollziehbarkeit."
+        },
+        "importance": "mittel",
+        "impact_potential": "Ein tatsächlicher Besuch könnte den diplomatischen Wirkpfad reaktivieren und Erwartungen an Verhandlungslösungen verändern; ohne Treffen bleibt es zunächst bei einem Signal.",
+        "impact_risks": [
+          "Die Ankündigung kann als bloße Symbolik verpuffen, wenn keine belastbaren Gespräche folgen.",
+          "Öffentliche Erwartungen könnten steigen, ohne dass sich die Lage vor Ort verändert."
+        ],
+        "mechanisms": [
+          "Diplomatischer Kontakt kann neue Gesprächskanäle öffnen.",
+          "Öffentliche Bestätigung durch Trump erhöht die Sichtbarkeit des Vermittlungsversuchs.",
+          "Ein erneuter Besuch nach Moskau und Kiew kann den Verhandlungsrhythmus beeinflussen."
+        ],
+        "first_order": [
+          "Ankündigung einer Reise der US-Vermittler nach Kiew.",
+          "Öffentliche Bestätigung der Reisepläne durch Trump."
+        ],
+        "second_order": [
+          "Mögliche Wiederaufnahme von Gesprächen unter US-Vermittlung.",
+          "Veränderung von Verhandlungserwartungen bei den Konfliktparteien."
+        ],
+        "third_order": [
+          "Falls Gespräche Substanz gewinnen, könnten sich politische Entscheidungsräume verschieben.",
+          "Ohne Substanz bleibt die Wirkung auf Kommunikation und Aufmerksamkeit begrenzt."
+        ],
+        "systemic_relevance": "Die Meldung ist diplomatisch relevant, weil sie auf eine mögliche Reaktivierung eines internationalen Vermittlungsprozesses verweist.",
+        "transformation_potential": "Niedrig bis mittel: nur bei anschließenden belastbaren Gesprächen könnte sich der Konfliktbearbeitungsmodus ändern.",
+        "resilience": "Die Beleglage trägt nur eine Erstmeldung zur Ankündigung; über Resultate, Reversibilität oder Stabilisierung lässt sich noch nichts belastbar sagen.",
+        "side_effects": [
+          "Erwartungsdruck auf die Beteiligten",
+          "Mögliche Aufwertung des Vermittlungsformats ohne Ergebnis"
+        ],
+        "uncertainties": [
+          "Ob die Reise tatsächlich stattfindet",
+          "Welcher Inhalt der angekündigte Vorschlag hat",
+          "Ob die Vermittlung über die Ankündigung hinaus Wirkung entfaltet"
+        ],
+        "evidence_level": "mehrere Sekundärquellen; keine unabhängige Primärbestätigung im gelieferten Material",
+        "attribution": "Die Ankündigung wird Selenskyj zugeschrieben; die Reisepläne werden von Trump bestätigt, in den Berichten sekundär wiedergegeben.",
+        "watch_next": [
+          "Tatsächliches Eintreffen der Gesandten in Kiew",
+          "Inhalt des angekündigten Vorschlags",
+          "Reaktionen aus Moskau und Kiew"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Der Bericht enthält eine neue, konkrete Vermittlungsankündigung mit möglichem Einfluss auf den Kriegs- und Verhandlungsverlauf; sie ist mehr als eine bloße Wiederholung früherer Lageberichte."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Zeitpunkt des Besuchs",
+              "value": "Sonntag",
+              "unit": "",
+              "context": "Angekündigter Termin für den Besuch der US-Vermittler",
+              "claim_id": "wt-d7a0af1afc831caf-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "europa"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T20:51:47.279Z",
+          "content_hash": "578a07f64d655c02ffc6ba32ee652400f19345d51f3437bee5a151871f571471",
+          "source_summary": "Mehrere Berichte melden, dass US-Vermittler am Sonntag nach Kiew reisen sollen. Der Stern schreibt, Präsident Selenskyj habe in Kiew einen Besuch der US-Vermittler angekündigt; zuvor seien die Verhandlungen unter US-Vermittlung auf Eis gelegen und die Vermittler seien bislang nur in Moskau gewesen. Der Deutschlandfunk nennt die Gesandten namentlich als Witkoff und Kushner und ergänzt, dass Trump die Reisepläne bestätigt habe.\n\nDie Quellen bleiben dabei bei der Ankündigung und ordnen den Schritt in die bislang erfolglosen Vermittlungsbemühungen ein. Unklar bleibt in den vorliegenden Texten, ob die Reise bereits stattgefunden hat oder nur bevorsteht.",
+          "analysis": {
+            "story_id": "wt-d7a0af1afc831caf",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Selenskyj kündigt an, dass US-Vermittler am Sonntag nach Kiew kommen sollen. Die Berichte nennen Witkoff und Kushner; Trump bestätigt die Reisepläne.",
+            "detail_summary": "Gesichert ist nach den vorliegenden Quellen vor allem die Ankündigung eines Besuchs US-amerikanischer Vermittler in Kiew am Sonntag. Der Deutschlandfunk nennt sie als Witkoff und Kushner und schreibt, Selenskyj habe sie in einer Videobotschaft angekündigt; Trump habe die Reisepläne bestätigt. Die Stern-Meldung ordnet das als Wiederaufnahme zuvor stockender Vermittlungen ein und verweist darauf, dass die Gespräche unter US-Vermittlung zuletzt auf Eis gelegen hätten. Für die Bewertung ist das relevant, weil ein sichtbarer Vermittlungsschritt potenziell den Verhandlungsrahmen verändert, ohne dass daraus schon ein Erfolg folgt. Mögliche Folgen wären ein neuer Gesprächskanal, ein geänderter Druck auf die Konfliktparteien oder nur symbolische Bewegung ohne Substanz. Ob daraus tatsächlich eine Kursänderung entsteht, bleibt mit den gelieferten Belegen offen; ein Treffen selbst, sein Inhalt und seine Wirkung sind hier noch nicht belegt.",
+            "why_relevant": "Die Ankündigung eines Besuchs hochrangiger US-Vermittler ist ein überprüfbarer Zwischenstand in einem Kriegsgeschehen mit möglichem Einfluss auf Verhandlungskanäle, politische Signale und künftige Entscheidungen.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind vor allem Menschen im Kriegsgebiet und potenziell weitere Zivilisten, falls Vermittlungen politische oder militärische Entscheidungen beeinflussen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Die Meldung enthält keine unmittelbaren Umwelt- oder Klimafolgen; ein indirekter Einfluss wäre nur mittelbar denkbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Verhandlungen zwischen Staaten und die öffentliche Ankündigung eines Vermittlungsbesuchs berühren diplomatische Entscheidungsprozesse und ihre Nachvollziehbarkeit."
+            },
+            "importance": "mittel",
+            "impact_potential": "Ein tatsächlicher Besuch könnte den diplomatischen Wirkpfad reaktivieren und Erwartungen an Verhandlungslösungen verändern; ohne Treffen bleibt es zunächst bei einem Signal.",
+            "impact_risks": [
+              "Die Ankündigung kann als bloße Symbolik verpuffen, wenn keine belastbaren Gespräche folgen.",
+              "Öffentliche Erwartungen könnten steigen, ohne dass sich die Lage vor Ort verändert."
+            ],
+            "mechanisms": [
+              "Diplomatischer Kontakt kann neue Gesprächskanäle öffnen.",
+              "Öffentliche Bestätigung durch Trump erhöht die Sichtbarkeit des Vermittlungsversuchs.",
+              "Ein erneuter Besuch nach Moskau und Kiew kann den Verhandlungsrhythmus beeinflussen."
+            ],
+            "first_order": [
+              "Ankündigung einer Reise der US-Vermittler nach Kiew.",
+              "Öffentliche Bestätigung der Reisepläne durch Trump."
+            ],
+            "second_order": [
+              "Mögliche Wiederaufnahme von Gesprächen unter US-Vermittlung.",
+              "Veränderung von Verhandlungserwartungen bei den Konfliktparteien."
+            ],
+            "third_order": [
+              "Falls Gespräche Substanz gewinnen, könnten sich politische Entscheidungsräume verschieben.",
+              "Ohne Substanz bleibt die Wirkung auf Kommunikation und Aufmerksamkeit begrenzt."
+            ],
+            "systemic_relevance": "Die Meldung ist diplomatisch relevant, weil sie auf eine mögliche Reaktivierung eines internationalen Vermittlungsprozesses verweist.",
+            "transformation_potential": "Niedrig bis mittel: nur bei anschließenden belastbaren Gesprächen könnte sich der Konfliktbearbeitungsmodus ändern.",
+            "resilience": "Die Beleglage trägt nur eine Erstmeldung zur Ankündigung; über Resultate, Reversibilität oder Stabilisierung lässt sich noch nichts belastbar sagen.",
+            "side_effects": [
+              "Erwartungsdruck auf die Beteiligten",
+              "Mögliche Aufwertung des Vermittlungsformats ohne Ergebnis"
+            ],
+            "uncertainties": [
+              "Ob die Reise tatsächlich stattfindet",
+              "Welcher Inhalt der angekündigte Vorschlag hat",
+              "Ob die Vermittlung über die Ankündigung hinaus Wirkung entfaltet"
+            ],
+            "evidence_level": "mehrere Sekundärquellen; keine unabhängige Primärbestätigung im gelieferten Material",
+            "attribution": "Die Ankündigung wird Selenskyj zugeschrieben; die Reisepläne werden von Trump bestätigt, in den Berichten sekundär wiedergegeben.",
+            "watch_next": [
+              "Tatsächliches Eintreffen der Gesandten in Kiew",
+              "Inhalt des angekündigten Vorschlags",
+              "Reaktionen aus Moskau und Kiew"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Der Bericht enthält eine neue, konkrete Vermittlungsankündigung mit möglichem Einfluss auf den Kriegs- und Verhandlungsverlauf; sie ist mehr als eine bloße Wiederholung früherer Lageberichte."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Zeitpunkt des Besuchs",
+                  "value": "Sonntag",
+                  "unit": "",
+                  "context": "Angekündigter Termin für den Besuch der US-Vermittler",
+                  "claim_id": "wt-d7a0af1afc831caf-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "europa"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d7a0af1afc831caf-v1-claim-1",
+              "story_id": "wt-d7a0af1afc831caf",
+              "claim": "Selenskyj kündigt an, dass US-Vermittler am Sonntag nach Kiew kommen sollen.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+                  "excerpt_hash": "da7db097fac9e7f0065c",
+                  "checked_at": "2026-09-04T20:51:47.279Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+                  "excerpt_hash": "121c2d5991fc4eaa99e5",
+                  "checked_at": "2026-09-04T20:51:47.279Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            },
+            {
+              "claim_id": "wt-d7a0af1afc831caf-v1-claim-2",
+              "story_id": "wt-d7a0af1afc831caf",
+              "claim": "Die US-Vermittler werden als Witkoff und Kushner benannt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+                  "excerpt_hash": "da7db097fac9e7f0065c",
+                  "checked_at": "2026-09-04T20:51:47.279Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            },
+            {
+              "claim_id": "wt-d7a0af1afc831caf-v1-claim-3",
+              "story_id": "wt-d7a0af1afc831caf",
+              "claim": "Die Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung lagen zuletzt auf Eis.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+                  "excerpt_hash": "121c2d5991fc4eaa99e5",
+                  "checked_at": "2026-09-04T20:51:47.279Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            },
+            {
+              "claim_id": "wt-d7a0af1afc831caf-v1-claim-4",
+              "story_id": "wt-d7a0af1afc831caf",
+              "claim": "Trump bestätigt die Reisepläne und sagt, die Gesandten würden einen Vorschlag zur Beendigung des Krieges unterbreiten.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+                  "excerpt_hash": "529e3d1802192852263c",
+                  "checked_at": "2026-09-04T20:51:47.279Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:51:47.279Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+              "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+              "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+              "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+              "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T20:51:47.279Z",
+          "source_count": 4
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-9d0d0d8e5e826b5b-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "9d0d0d8e5e826b5bb2169b794a53034c82a3e4cb7f2b53ea21b355f183c15bb7"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-b6e9fb81ee09adbc-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "b6e9fb81ee09adbc519613aeb780cca190b40d834ff3607b4dea55a7a52c301e"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-a1202df6adf80d57-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "a1202df6adf80d5706a5a2b8e628f5f3f586a1454d05c41e3428ecfbb3f9b306"
+        },
+        "source_visual": null,
+        "fingerprint": "9611baf385dafe9c04cc8098da4df03eb74cb8c6c154e2163751f90c33ea52b0",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T20:51:56.847Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-972d20af6da2b586",
       "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
@@ -865,274 +1480,6 @@
         }
       ],
       "retirement_history": []
-    },
-    {
-      "story_id": "wt-d7a0af1afc831caf",
-      "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
-      "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-      "first_seen": "2026-09-04T17:21:16.000Z",
-      "last_updated": "2026-09-04T20:13:08.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
-          "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-          "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:21:16.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
-          "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:21:16.000Z",
-          "ingested_at": "2026-09-04T17:39:54.371Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
-          "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-          "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:22:14.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
-          "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:22:14.000Z",
-          "ingested_at": "2026-09-04T20:36:32.644Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
-          "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
-          "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:46:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
-          "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:46:00.000Z",
-          "ingested_at": "2026-09-04T18:06:22.511Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
-          "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-          "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T20:13:08.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
-          "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T20:13:08.000Z",
-          "ingested_at": "2026-09-04T20:36:32.644Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-d7a0af1afc831caf-claim-01",
-          "story_id": "wt-d7a0af1afc831caf",
-          "claim": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew: Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:36:32.644Z"
-        },
-        {
-          "claim_id": "wt-d7a0af1afc831caf-claim-02",
-          "story_id": "wt-d7a0af1afc831caf",
-          "claim": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew: Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:36:32.644Z"
-        },
-        {
-          "claim_id": "wt-d7a0af1afc831caf-claim-03",
-          "story_id": "wt-d7a0af1afc831caf",
-          "claim": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew: Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:36:32.644Z"
-        },
-        {
-          "claim_id": "wt-d7a0af1afc831caf-claim-04",
-          "story_id": "wt-d7a0af1afc831caf",
-          "claim": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew: Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:36:32.644Z"
-        }
-      ],
-      "content_hash": "578a07f64d655c02ffc6ba32ee652400f19345d51f3437bee5a151871f571471",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS"
-      ],
-      "quality_retry_count": 2,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-04T20:36:32.644Z",
-      "event_first_seen_at": "2026-09-04T17:39:54.371Z",
-      "event_detected_at": "2026-09-04T17:39:54.371Z",
-      "event_id": "event-0fef8df3a32c15bcde8d",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "substantive_commitment"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 23.410733333333333,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 176.63788333333332,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      }
     },
     {
       "story_id": "wt-7424a27c6346bbb0",
@@ -91831,5 +92178,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T20:36:32.644Z"
+  "public_updated_at": "2026-09-04T20:51:27.444Z"
 }
