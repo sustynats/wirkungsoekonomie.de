@@ -1,7 +1,977 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T14:51:25.485Z",
+  "updated_at": "2026-09-04T15:06:23.805Z",
   "stories": [
+    {
+      "story_id": "wt-f2edeab46d126d83",
+      "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+      "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+      "first_seen": "2026-09-04T14:37:53.000Z",
+      "last_updated": "2026-09-04T15:07:05.912Z",
+      "published_at": "2026-09-04T15:07:05.912Z",
+      "updated_at": "2026-09-04T15:07:05.912Z",
+      "topic": [
+        "Digitalisierung",
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+          "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+          "summary": "Nachdem sich Hacker Zugriff auf das Berliner Landesnetz verschafft haben, sind Daten zum Download veröffentlicht worden. Zuvor war ein gesetztes Ultimatum abgelaufen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:37:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be",
+          "source_item_id": "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:37:53.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f2edeab46d126d83-v1-claim-1",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Nach Ablauf einer gesetzten Frist hat die Hackergruppe Rhysida Daten aus einem Angriff auf das Berliner Landesnetz im Darknet zum Download veröffentlicht.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "6f0e1bb31be16fa6aba5",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "a0cefb1af23a04e13dc1",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T15:07:05.912Z"
+        },
+        {
+          "claim_id": "wt-f2edeab46d126d83-v1-claim-2",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Laut rbb-Informationen sollen rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht worden sein; prüfen ließ sich das zunächst nicht.",
+          "status": "uncertain_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "26ef51189ac15f44010e",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "995b9d54a1a2af55365a",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T15:07:05.912Z"
+        },
+        {
+          "claim_id": "wt-f2edeab46d126d83-v1-claim-3",
+          "story_id": "wt-f2edeab46d126d83",
+          "claim": "Die veröffentlichte Datenmenge könnte Arbeitszeugnisse, Ausschreibungen, Beurteilungen von Mitarbeitenden und Personalakten enthalten, das blieb aber unbestätigt.",
+          "status": "uncertain_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "5a11d6600a7904c0283b",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "excerpt_hash": "995b9d54a1a2af55365a",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T15:07:05.912Z"
+        }
+      ],
+      "event_id": "event-9ce6682a9f1a77ee5f1d",
+      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
+      "event_detected_at": "2026-09-04T15:06:23.805Z",
+      "verification_started_at": "2026-09-04T15:06:49.980Z",
+      "publish_ready_at": "2026-09-04T15:07:05.912Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob weitere Stellen die Darknet-Veröffentlichung und den Umfang der Daten unabhängig bestätigen.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Berichte oder technische Belege zur Veröffentlichung im Darknet",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fbac489cdc45dae6",
+          "announced_at": "2026-09-04T14:37:53.000Z",
+          "follow_up_date": "2026-09-11T15:07:05.912Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "29aaf702756383219ea1732bc2652cbea40a8508d1b7307cd802371194def29e",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Der Bericht meldet, dass die Hackergruppe Rhysida nach einem Angriff auf das Berliner Landesnetz Daten im Darknet zum Download angeboten habe. Zuvor sei eine von der Berliner Senatsverwaltung gesetzte Zahlungsfrist abgelaufen. Nach rbb-Informationen sollen rund 1,4 Millionen Datensätze in mehreren Paketen zugänglich gemacht worden sein.\n\nDie Quelle nennt als mögliche Inhalte unter anderem Arbeitszeugnisse, Ausschreibungen, Beurteilungen und Personalakten. Zugleich heißt es, die Angaben ließen sich zunächst nicht überprüfen; auch sei unklar, ob es sich um die gesamte Menge der Anfang August erbeuteten Daten handelt. Experten hätten gewarnt, die Hacker könnten sensible Daten verkaufen.",
+      "analysis": {
+        "story_id": "wt-f2edeab46d126d83",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Rhysida soll nach Ablauf einer Frist Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht haben. Umfang und genaue Inhalte sind laut Bericht noch nicht verifiziert.",
+        "detail_summary": "Gesichert nach der vorliegenden Quelle ist vor allem der behauptete Veröffentlichungsschritt der Hackergruppe Rhysida im Darknet nach Ablauf einer gesetzten Frist. Der Vorgang ist materiell, weil er von einem bloßen Datendiebstahl in eine potenzielle Verbreitung sensibler Verwaltungs- und Personaldaten übergeht. Der Wirkpfad liegt in der möglichen Weiterveräußerung, Vervielfältigung oder gezielten Nutzung der Daten gegen Betroffene und Verwaltung. Als mögliche Folge nennt die Quelle eine Veröffentlichung von Arbeitszeugnissen, Ausschreibungen, Beurteilungen und Personalakten; zugleich bleibt offen, ob diese Ordner tatsächlich vollständig und echt sind. Die Evidenz ist jedoch begrenzt, weil die Angaben zunächst nicht überprüfbar waren und nur eine Quelle vorliegt. Deshalb ist die Lage als laufende Entwicklung mit offenem Umfang und offener technischer Verifikation zu behandeln.",
+        "why_relevant": "Der Vorgang betrifft mögliche sensible Verwaltungsdaten, Datenschutz, Verwaltungskontinuität und das Vertrauen in digitale staatliche Infrastrukturen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen für Beschäftigte und weitere Betroffene durch Veröffentlichung oder Weiterverwertung sensibler Daten sind naheliegend, aber noch nicht verifiziert."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf ein Landesnetz und mögliche Datenoffenlegung berührt Verwaltungssicherheit, Datenschutz und die Funktionsfähigkeit öffentlicher Institutionen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Wenn die Veröffentlichung bestätigt wird, kann sie Schutzbedarfe, Datenschutzmaßnahmen, Ermittlungen und IT-Sicherheitsprioritäten in der Verwaltung verschieben.",
+        "impact_risks": [
+          "Mögliche Veröffentlichung oder Weitergabe sensibler personenbezogener Daten",
+          "Erhöhter Druck auf Behörden, Sicherheits- und Meldeprozesse zu verstärken",
+          "Vertrauensverlust in digitale Verwaltungsinfrastrukturen bei Betroffenen"
+        ],
+        "mechanisms": [
+          "Offenlegung oder Weiterverkauf sensibler Daten erhöht das Missbrauchsrisiko",
+          "Setzt Anreize für schnellere Sicherheits- und Reaktionsmaßnahmen in Behörden",
+          "Kann Folgekosten für Betroffene und Verwaltung auslösen"
+        ],
+        "first_order": [
+          "Mögliche Zugänglichmachung von Daten im Darknet",
+          "Prüfbedarf bei der Verwaltung zum Umfang der betroffenen Datensätze"
+        ],
+        "second_order": [
+          "Mehr Sicherheits- und Schutzmaßnahmen in der Verwaltung möglich",
+          "Erhöhte Sensibilität für Cyberresilienz und Datenminimierung"
+        ],
+        "third_order": [
+          "Langfristig können Beschaffungs-, Speicher- und Sicherheitsstandards öffentlicher Netze strenger werden"
+        ],
+        "systemic_relevance": "Der Fall ist systemrelevant, weil er auf die Verwundbarkeit eines Landesnetzes und auf den Schutz staatlicher Datenbestände verweist.",
+        "transformation_potential": "Eher begrenzt unmittelbar, aber relevant als möglicher Auslöser für strengere Sicherheitsarchitektur und Datenhygiene in der Verwaltung.",
+        "resilience": "Die Quelle deutet auf geringe kurzfristige Resilienz der betroffenen Datenbestände hin; die tatsächliche Widerstandsfähigkeit bleibt aber offen.",
+        "side_effects": [
+          "Mögliche Mehrbelastung für IT-Forensik und Datenschutzstellen",
+          "Potenzielle Unsicherheit bei Beschäftigten und weiteren Betroffenen"
+        ],
+        "uncertainties": [
+          "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
+          "Ob der Umfang von rund 1,4 Millionen Datensätzen zutrifft",
+          "Ob und in welchem Ausmaß Daten weiterveräußert wurden"
+        ],
+        "evidence_level": "einzelne journalistische Sekundärquelle mit explizit offener Verifikation des Umfangs",
+        "attribution": "Die Kernaussage stammt aus dem rbb-Bericht; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+        "watch_next": [
+          "Unabhängige Bestätigung der Veröffentlichung und des Datenumfangs abwarten"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue, materiell relevante Entwicklung mit möglicher Wirkung auf Datenschutz und Verwaltungssicherheit; jedoch nur eine journalistische Quelle und einige Kerndetails bleiben unbestätigt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Datenmenge laut Bericht",
+              "value": "1,4 Millionen",
+              "unit": "Datensätze",
+              "context": "Zugänglich gemachte Daten laut rbb-Informationen"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte",
+            "staat",
+            "verbraucherinnen"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "risiko"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T15:07:05.912Z",
+          "content_hash": "29aaf702756383219ea1732bc2652cbea40a8508d1b7307cd802371194def29e",
+          "source_summary": "Der Bericht meldet, dass die Hackergruppe Rhysida nach einem Angriff auf das Berliner Landesnetz Daten im Darknet zum Download angeboten habe. Zuvor sei eine von der Berliner Senatsverwaltung gesetzte Zahlungsfrist abgelaufen. Nach rbb-Informationen sollen rund 1,4 Millionen Datensätze in mehreren Paketen zugänglich gemacht worden sein.\n\nDie Quelle nennt als mögliche Inhalte unter anderem Arbeitszeugnisse, Ausschreibungen, Beurteilungen und Personalakten. Zugleich heißt es, die Angaben ließen sich zunächst nicht überprüfen; auch sei unklar, ob es sich um die gesamte Menge der Anfang August erbeuteten Daten handelt. Experten hätten gewarnt, die Hacker könnten sensible Daten verkaufen.",
+          "analysis": {
+            "story_id": "wt-f2edeab46d126d83",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Rhysida soll nach Ablauf einer Frist Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht haben. Umfang und genaue Inhalte sind laut Bericht noch nicht verifiziert.",
+            "detail_summary": "Gesichert nach der vorliegenden Quelle ist vor allem der behauptete Veröffentlichungsschritt der Hackergruppe Rhysida im Darknet nach Ablauf einer gesetzten Frist. Der Vorgang ist materiell, weil er von einem bloßen Datendiebstahl in eine potenzielle Verbreitung sensibler Verwaltungs- und Personaldaten übergeht. Der Wirkpfad liegt in der möglichen Weiterveräußerung, Vervielfältigung oder gezielten Nutzung der Daten gegen Betroffene und Verwaltung. Als mögliche Folge nennt die Quelle eine Veröffentlichung von Arbeitszeugnissen, Ausschreibungen, Beurteilungen und Personalakten; zugleich bleibt offen, ob diese Ordner tatsächlich vollständig und echt sind. Die Evidenz ist jedoch begrenzt, weil die Angaben zunächst nicht überprüfbar waren und nur eine Quelle vorliegt. Deshalb ist die Lage als laufende Entwicklung mit offenem Umfang und offener technischer Verifikation zu behandeln.",
+            "why_relevant": "Der Vorgang betrifft mögliche sensible Verwaltungsdaten, Datenschutz, Verwaltungskontinuität und das Vertrauen in digitale staatliche Infrastrukturen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mögliche Folgen für Beschäftigte und weitere Betroffene durch Veröffentlichung oder Weiterverwertung sensibler Daten sind naheliegend, aber noch nicht verifiziert."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Ein Angriff auf ein Landesnetz und mögliche Datenoffenlegung berührt Verwaltungssicherheit, Datenschutz und die Funktionsfähigkeit öffentlicher Institutionen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Wenn die Veröffentlichung bestätigt wird, kann sie Schutzbedarfe, Datenschutzmaßnahmen, Ermittlungen und IT-Sicherheitsprioritäten in der Verwaltung verschieben.",
+            "impact_risks": [
+              "Mögliche Veröffentlichung oder Weitergabe sensibler personenbezogener Daten",
+              "Erhöhter Druck auf Behörden, Sicherheits- und Meldeprozesse zu verstärken",
+              "Vertrauensverlust in digitale Verwaltungsinfrastrukturen bei Betroffenen"
+            ],
+            "mechanisms": [
+              "Offenlegung oder Weiterverkauf sensibler Daten erhöht das Missbrauchsrisiko",
+              "Setzt Anreize für schnellere Sicherheits- und Reaktionsmaßnahmen in Behörden",
+              "Kann Folgekosten für Betroffene und Verwaltung auslösen"
+            ],
+            "first_order": [
+              "Mögliche Zugänglichmachung von Daten im Darknet",
+              "Prüfbedarf bei der Verwaltung zum Umfang der betroffenen Datensätze"
+            ],
+            "second_order": [
+              "Mehr Sicherheits- und Schutzmaßnahmen in der Verwaltung möglich",
+              "Erhöhte Sensibilität für Cyberresilienz und Datenminimierung"
+            ],
+            "third_order": [
+              "Langfristig können Beschaffungs-, Speicher- und Sicherheitsstandards öffentlicher Netze strenger werden"
+            ],
+            "systemic_relevance": "Der Fall ist systemrelevant, weil er auf die Verwundbarkeit eines Landesnetzes und auf den Schutz staatlicher Datenbestände verweist.",
+            "transformation_potential": "Eher begrenzt unmittelbar, aber relevant als möglicher Auslöser für strengere Sicherheitsarchitektur und Datenhygiene in der Verwaltung.",
+            "resilience": "Die Quelle deutet auf geringe kurzfristige Resilienz der betroffenen Datenbestände hin; die tatsächliche Widerstandsfähigkeit bleibt aber offen.",
+            "side_effects": [
+              "Mögliche Mehrbelastung für IT-Forensik und Datenschutzstellen",
+              "Potenzielle Unsicherheit bei Beschäftigten und weiteren Betroffenen"
+            ],
+            "uncertainties": [
+              "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
+              "Ob der Umfang von rund 1,4 Millionen Datensätzen zutrifft",
+              "Ob und in welchem Ausmaß Daten weiterveräußert wurden"
+            ],
+            "evidence_level": "einzelne journalistische Sekundärquelle mit explizit offener Verifikation des Umfangs",
+            "attribution": "Die Kernaussage stammt aus dem rbb-Bericht; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Unabhängige Bestätigung der Veröffentlichung und des Datenumfangs abwarten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, materiell relevante Entwicklung mit möglicher Wirkung auf Datenschutz und Verwaltungssicherheit; jedoch nur eine journalistische Quelle und einige Kerndetails bleiben unbestätigt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Datenmenge laut Bericht",
+                  "value": "1,4 Millionen",
+                  "unit": "Datensätze",
+                  "context": "Zugänglich gemachte Daten laut rbb-Informationen"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "staat",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "risiko"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-f2edeab46d126d83-v1-claim-1",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Nach Ablauf einer gesetzten Frist hat die Hackergruppe Rhysida Daten aus einem Angriff auf das Berliner Landesnetz im Darknet zum Download veröffentlicht.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "6f0e1bb31be16fa6aba5",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "a0cefb1af23a04e13dc1",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v1-claim-2",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Laut rbb-Informationen sollen rund 1,4 Millionen Daten in mehreren Paketen zugänglich gemacht worden sein; prüfen ließ sich das zunächst nicht.",
+              "status": "uncertain_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "26ef51189ac15f44010e",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "995b9d54a1a2af55365a",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            },
+            {
+              "claim_id": "wt-f2edeab46d126d83-v1-claim-3",
+              "story_id": "wt-f2edeab46d126d83",
+              "claim": "Die veröffentlichte Datenmenge könnte Arbeitszeugnisse, Ausschreibungen, Beurteilungen von Mitarbeitenden und Personalakten enthalten, das blieb aber unbestätigt.",
+              "status": "uncertain_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "5a11d6600a7904c0283b",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+                  "excerpt_hash": "995b9d54a1a2af55365a",
+                  "checked_at": "2026-09-04T15:07:05.912Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T15:07:05.912Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+              "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T15:07:05.912Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-e4a7abfbde025a9d-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "e4a7abfbde025a9d6bc74108b774cd0b3313e6be0263f84a11435b961c4aff68"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-2a4d0a984def3140-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "2a4d0a984def3140ba60509b6c32b7d2455704b989016bcf8cfdb1b7954e51d4"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-1891c81a9186f849-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "1891c81a9186f8490155333cd031bf9d8e1bb71670dab12c5622ae9c4476cca7"
+        },
+        "source_visual": null,
+        "fingerprint": "eac596c54f3180fb83f9aa4ec278302aac1e0b6c0fa433d10448bebabb7d0e85",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T15:08:28.597Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-338b76c183786ff4",
+      "slug": "angriffe-auf-umspannwerke-das-ist-aktuell-bekannt-786ff4",
+      "title": "Angriffe auf Umspannwerke: Das ist aktuell bekannt",
+      "first_seen": "2026-09-04T14:57:00.000Z",
+      "last_updated": "2026-09-04T14:57:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-nrw-brandenburg-chronik-100.html",
+          "title": "Angriffe auf Umspannwerke: Das ist aktuell bekannt",
+          "summary": "Innerhalb weniger Tage sind mehrere Umspannwerke und ein Kraftwerk zum Ziel von Sabotageakten geworden - ein Überblick.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:57:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b9abfcde87fec0397eb713e3920d7644550b188396d27a458dba76b976f61bcb",
+          "source_item_id": "e91f423206788390acc035050a4d3325e19df7350fbf7fa63a5caba8200c56ab",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:57:00.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-338b76c183786ff4-claim-01",
+          "story_id": "wt-338b76c183786ff4",
+          "claim": "Angriffe auf Umspannwerke: Das ist aktuell bekannt: Innerhalb weniger Tage sind mehrere Umspannwerke und ein Kraftwerk zum Ziel von Sabotageakten geworden - ein Überblick.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T15:06:23.805Z"
+        }
+      ],
+      "content_hash": "29908753d5b36896e29110bf7ba41c955cf274b851662d792c22109df3b3f6f1",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T15:06:23.805Z",
+      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
+      "event_detected_at": "2026-09-04T15:06:23.805Z",
+      "event_id": "event-378694014140a1c0c64e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.39675,
+        "detection_delay_minutes": 9.39675,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T15:06:23.805Z",
+      "rejection": {
+        "at": "2026-09-04T15:06:23.805Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-f97dd6462b60353a",
+      "slug": "religion-bayern-gibt-judischen-gemeinden-mehr-geld-60353a",
+      "title": "Religion: Bayern gibt jüdischen Gemeinden mehr Geld",
+      "first_seen": "2026-09-04T14:49:59.000Z",
+      "last_updated": "2026-09-04T14:49:59.000Z",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/religion--bayern-gibt-juedischen-gemeinden-mehr-geld-38209848.html",
+          "title": "Religion: Bayern gibt jüdischen Gemeinden mehr Geld",
+          "summary": "Antisemitismus greife um sich wie noch nie, klagt Bayerns Ministerpräsident Markus Söder. Nicht nur deshalb erhöht der Freistaat seine finanzielle Förderung für jüdische Gemeinden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:49:59.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6eaeb4ddb4d319e23799ccd640b1a5fd456e1ba6e3b062ab18eb67cd6582274c",
+          "source_item_id": "6d20339408583a631502bd82a63d66056dbb172425f10064582b32f857b6cb19",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:49:59.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f97dd6462b60353a-claim-01",
+          "story_id": "wt-f97dd6462b60353a",
+          "claim": "Religion: Bayern gibt jüdischen Gemeinden mehr Geld: Antisemitismus greife um sich wie noch nie, klagt Bayerns Ministerpräsident Markus Söder. Nicht nur deshalb erhöht der Freistaat seine finanzielle Förderung für jüdische Gemeinden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T15:06:23.805Z"
+        }
+      ],
+      "content_hash": "023a3854aeb3dcc3e19a2b3c8861e53a8deca0866df3898102c4282f2936e0fa",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T15:06:23.805Z",
+      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
+      "event_detected_at": "2026-09-04T15:06:23.805Z",
+      "event_id": "event-2a531aa0f550a6f34a78",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Finanzen",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.413416666666667,
+        "detection_delay_minutes": 16.413416666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T15:06:23.805Z",
+      "rejection": {
+        "at": "2026-09-04T15:06:23.805Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-be1ed8528a966295",
+      "slug": "leichnam-von-mladic-in-serbien-nachster-schritt-zum-staatsbegrabnis-966295",
+      "title": "Leichnam von Mladić in Serbien: Nächster Schritt zum Staatsbegräbnis",
+      "first_seen": "2026-09-04T14:47:00.000Z",
+      "last_updated": "2026-09-04T14:47:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Leichnam-von-Mladic-in-Serbien/!6210387",
+          "title": "Leichnam von Mladić in Serbien: Nächster Schritt zum Staatsbegräbnis",
+          "summary": "Der Leichnam des „Schlächters vom Balkan“, Mladić, ist jetzt in Serbien. International gibt es scharfe Kritik an der Verherrlichung seiner Kriegsverbrechen. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:47:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "58535911c377654bb3730f4e66834034f6d783c9d0ab11cc49604e715c8a2574",
+          "source_item_id": "9a66464b3d9eb2b738d4ae4b25203093aafa40c2b41ea0d011a89e24ac902859",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:47:00.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-be1ed8528a966295-claim-01",
+          "story_id": "wt-be1ed8528a966295",
+          "claim": "Leichnam von Mladić in Serbien: Nächster Schritt zum Staatsbegräbnis: Der Leichnam des „Schlächters vom Balkan“, Mladić, ist jetzt in Serbien. International gibt es scharfe Kritik an der Verherrlichung seiner Kriegsverbrechen. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T15:06:23.805Z"
+        }
+      ],
+      "content_hash": "55bd9b9e0771676c1c14d5ad702fbe6951e7f7b46f78246b40d6e6b9894d20e9",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T15:06:23.805Z",
+      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
+      "event_detected_at": "2026-09-04T15:06:23.805Z",
+      "event_id": "event-d30a7e30d05cb8659671",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 19.39675,
+        "detection_delay_minutes": 19.39675,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T15:06:23.805Z",
+      "rejection": {
+        "at": "2026-09-04T15:06:23.805Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-58b4712530188b5e",
+      "slug": "abschiebezentren-deutschland-und-weitere-eu-lander-wollen-abkommen-mit-drittstaaten-bis--188b5e",
+      "title": "Abschiebezentren: Deutschland und weitere EU-Länder wollen Abkommen mit Drittstaaten bis Jahreswechsel",
+      "first_seen": "2026-09-04T14:39:28.000Z",
+      "last_updated": "2026-09-04T14:39:28.000Z",
+      "topic": [
+        "Europa",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/abschiebezentren--deutschland-und-weitere-eu-laender-wollen-abkommen-mit-drittstaaten-bis-jahreswechsel-38209826.html",
+          "title": "Abschiebezentren: Deutschland und weitere EU-Länder wollen Abkommen mit Drittstaaten bis Jahreswechsel",
+          "summary": "Deutschland und vier weitere EU-Staaten wollen bis zum Jahreswechsel ein Abkommen mit Drittstaaten außerhalb der Europäischen Union über die Errichtung von Abschiebezentren für abgelehnte Asylbewerber schließen. „Wir wollen in diesem Jahr noch eine Vereinbarung mit Drittländern erreichen, die dann den Aufbau von 'Return Hubs' ermöglichen“, sagte Bundesinnenminister Alexander Dobrindt (CSU) am Freitag. Um welche Länder es sich handeln könnte, wurde nicht genannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:39:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "06cb93d1048e27f622bd6d7de017f0e1577269053a7695ef6357235773aa3765",
+          "source_item_id": "409f9640581f1a3f8319379329ed5161da4307dd91e36e33b1953b0349a7e7b0",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:39:28.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-58b4712530188b5e-claim-01",
+          "story_id": "wt-58b4712530188b5e",
+          "claim": "Abschiebezentren: Deutschland und weitere EU-Länder wollen Abkommen mit Drittstaaten bis Jahreswechsel: Deutschland und vier weitere EU-Staaten wollen bis zum Jahreswechsel ein Abkommen mit Drittstaaten außerhalb der Europäischen Union über die Errichtung von Abschiebezentren für abgelehnte Asylbewerber schließen. „Wir wollen in diesem Jahr noch eine Vereinbarung mit Drittländern erreichen, die dann den Aufbau von 'Return Hubs' ermöglichen“, sagte Bundesinnenminister Alexander Dobrindt (CSU) am Freitag. Um welche Länder es sich handeln könnte, wurde nicht genannt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T15:06:23.805Z"
+        }
+      ],
+      "content_hash": "77f9164f7d56ea1719ee3e83308e8378202e249ea808f7b70200b91168b3ead0",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T15:06:23.805Z",
+      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
+      "event_detected_at": "2026-09-04T15:06:23.805Z",
+      "event_id": "event-32ef63804e5e626c8ea9",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 50,
+        "public_relevance": "hoch",
+        "topics": [
+          "Europa",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 26.930083333333332,
+        "detection_delay_minutes": 26.930083333333332,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 89,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T15:06:23.805Z",
+      "rejection": {
+        "at": "2026-09-04T15:06:23.805Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-d02cf2fc303cef4f",
       "slug": "migration-frontex-unterstutzt-frankreich-bei-einsatzen-im-armelkanal-3cef4f",
@@ -502,6 +1472,130 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T14:39:03.058Z",
         "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-61ed7f528fbdb3c0",
+      "slug": "himalayan-hydropower-buildout-expert-says-risk-management-is-key-bdb3c0",
+      "title": "Himalayan hydropower buildout: Expert says risk management is key",
+      "first_seen": "2026-09-04T14:34:07.000Z",
+      "last_updated": "2026-09-04T14:34:07.000Z",
+      "topic": [
+        "Klima"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/access-asia/20260904-rebuilding-after-nepal-flash-floods-expert-says-risk-management-is-key-in-himalayas",
+          "title": "Himalayan hydropower buildout: Expert says risk management is key",
+          "summary": "Following devastating floods in Nepal and Tibet, Access Asia takes a closer look at the fragile state of the Himalayan mountains. Dr Arun Bhakta Shrestha, an expert on the environment and risk management in the Himalayas, explains why it's so difficult to detect glacier movements in advance and says that the tragedy could serve as an opportunity to improve the way nations develop infrastructure in the resource-rich region.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:34:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "7b8242965c1ebae9450e8980fcbfccba014ceaf85400aeb8451a446a18dbf84c",
+          "source_item_id": "1975b47e4597e7ab00621d5809d0a67ca8894b2a0a03fb4e86749973ac6526aa",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:34:07.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-61ed7f528fbdb3c0-claim-01",
+          "story_id": "wt-61ed7f528fbdb3c0",
+          "claim": "Himalayan hydropower buildout: Expert says risk management is key: Following devastating floods in Nepal and Tibet, Access Asia takes a closer look at the fragile state of the Himalayan mountains. Dr Arun Bhakta Shrestha, an expert on the environment and risk management in the Himalayas, explains why it's so difficult to detect glacier movements in advance and says that the tragedy could serve as an opportunity to improve the way nations develop infrastructure in the resource-rich region.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T15:06:23.805Z"
+        }
+      ],
+      "content_hash": "43e53782b4c329d772871faf5c97bf6b420fd7925d12c30db7c637f0e4e74b5a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T15:06:23.805Z",
+      "event_first_seen_at": "2026-09-04T15:06:23.805Z",
+      "event_detected_at": "2026-09-04T15:06:23.805Z",
+      "event_id": "event-54317e104ba5abe967f9",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 32.28008333333333,
+        "detection_delay_minutes": 32.28008333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T15:06:23.805Z",
+      "rejection": {
+        "at": "2026-09-04T15:06:23.805Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -4074,7 +5168,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "0e5790e5b59c983ecd17bb41b4ae37bb2c3c5bcb96bfe55dc16f1dad3ed34701",
         "sources": [
           {
@@ -4260,7 +5354,7 @@
       "verification_started_at": "2026-09-04T13:52:05.666Z",
       "publish_ready_at": "2026-09-04T13:52:16.924Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -5137,49 +6231,7 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
-        "content_hash": "6651d1c6d254a700ea496532f75f9549427bd1de4b4f4084bc0a599195e9823e",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/news-haus-evakuierung,explosion-polizei-100.html",
-            "title": "Haus nach Explosion evakuiert, Bewohner verdächtigt",
-            "summary": "Nach einer Explosion in einer Wohnung ist ein Mietshaus in Chemnitz vorerst unbewohnbar. Ein 37 Jahre alter Bewohner wurde vorläufig festgenommen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T08:43:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "53f6e577c5fcbec1a6d437828a64d2f3272b066b61699b75e5f5dc8f7bc2491c",
-            "source_item_id": "b6af78e674281058e3c4e861c8638282087ac67a578088f632bdfe0feeb969dc",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T08:43:18.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-0b6279d05f195d31",
@@ -6319,7 +7371,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
         "sources": [
           {
@@ -6329,7 +7381,7 @@
             "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
             "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T14:33:35.000Z",
+            "published_at": "2026-09-04T15:02:29.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -6345,8 +7397,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T14:33:35.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "source_published_at": "2026-09-04T15:02:29.000Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -7577,7 +8629,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "32ac85e953dc41a0f73d3035bbdc0b07811e5ddf476f0eec484c612547ddbbbf",
         "sources": [
           {
@@ -9071,7 +10123,7 @@
       "verification_started_at": "2026-09-04T12:36:39.479Z",
       "publish_ready_at": "2026-09-04T12:36:53.285Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -9447,49 +10499,7 @@
         "generated_at": "2026-09-04T12:37:02.216Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
-        "content_hash": "76f972558505e81e47a2de677c8230af59ec7570c5971d5ab95b43d1b1cdca85",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
-            "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet",
-            "summary": "In Gardelegen sind drei Gebäude bei einem Großbrand zerstört worden – darunter ein Vereinsheim und ein Jugendclub. Nun wurde eine Spendenaktion gestartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T12:00:21.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "b66dbc0a01d1437b36c00416640faae317299476a0595a5fa6806a6e7d6e4458",
-            "source_item_id": "656d144a09cc23c1bf2c2e1add6939a3928cc5a7c6a6ed3515dec47bb9667643",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T12:00:21.000Z",
-            "ingested_at": "2026-09-04T14:06:39.469Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-fd5875ad8a2bb508",
@@ -10689,7 +11699,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "c8edbe03eae1fe3b48b26fd6cfeec12001c15d94a3286372a49b18e5321b17d9",
         "sources": [
           {
@@ -10715,7 +11725,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T11:40:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:deutsche-welle",
               "basis": "publisher_only_origin_unverified",
@@ -12061,7 +13071,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
         "sources": [
           {
@@ -12720,7 +13730,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "dfa59f6b6552c7a39827ee42e391db763f8104fa0fafb13879b9e7fb595816e5",
         "sources": [
           {
@@ -16200,21 +17210,21 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
-        "content_hash": "47dbb24c1485c38e734f8ee9a2356fe7e29666f3e9bc7d63878bcd94081ec429",
+        "detected_at": "2026-09-04T15:06:23.805Z",
+        "content_hash": "ba40a9aa30000b11ae65d0534e23f3af8d7bd12d02bd955f66a9204f586feade",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
             "publisher": "WDR",
             "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-            "title": "Sabotage: Polizei fahndet nach Mann aus Gevelsberg",
-            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen fahndet die Polizei nach einem Mann aus Gevelsberg.",
+            "title": "Gleich live - Dobrindt und Reul zu den Ermittlungen",
+            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen äußern sich Bundesinnenminister Dobrindt und Herbert Reul zu den Ermittlungen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T09:04:21.000Z",
+            "published_at": "2026-09-04T14:56:57.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
-            "content_hash": "984ef2757a5116da02401ea1e703522f2c4af1471233bc87c161debb5c6a063a",
+            "content_hash": "288f6bf8f9f5bc54b650d93d9a896f0ebd95007fff7592f8de2ffd10f6f148bc",
             "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
             "publisher_id": "wdr",
             "publisher_kind": "public_broadcasting",
@@ -16226,8 +17236,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T09:04:21.000Z",
-            "ingested_at": "2026-09-04T09:21:34.386Z",
+            "source_published_at": "2026-09-04T14:56:57.000Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -16568,7 +17578,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T02:29:46.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -20207,7 +21217,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "a26a7a7bcb0aebf8907951cf2a88b8aa483c509158bd2b8e983027d929116817",
         "sources": [
           {
@@ -20234,7 +21244,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T06:53:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -23592,7 +24602,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "9bad6538a3a9d35b2769f5d19e4ea6d9b98c0d5f47f40506f31ebc4e4ad4afc8",
         "sources": [
           {
@@ -23619,7 +24629,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T19:03:18.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -24219,7 +25229,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "7186e44e5200cc57900c5f6de90416a746c77fcb2e3be5f30bf03b62690c804c",
         "sources": [
           {
@@ -25644,7 +26654,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "e9a4f51401aea2c89fef4902519e5697aae1098be75d9b8418a2338535b3e10d",
         "sources": [
           {
@@ -25671,7 +26681,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T13:52:33.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -26676,7 +27686,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "ed4359195206a11f8a375f078f1733a84a4ba16d4c1c0e11eb9ba0edfa0066ff",
         "sources": [
           {
@@ -26838,7 +27848,7 @@
       "verification_started_at": "2026-09-04T09:46:55.589Z",
       "publish_ready_at": "2026-09-04T09:47:04.612Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": "2026-09-04T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -27169,49 +28179,7 @@
         "generated_at": "2026-09-04T09:49:12.568Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
-        "content_hash": "56fc3e3cc02ffe9de49828a643c8bf86f747e7f0de5938d5ea8d657524a7e3a8",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/video/20260904-nepal-two-flood-survivors-rescued-from-hydropower-tunnel",
-            "title": "#Nepal: Two flood survivors rescued from hydropower tunnel",
-            "summary": "In a video posted to social media on September 4, the Nepali #army announced it had rescued two workers trapped in a hydropower tunnel. The rescue brings hope of reaching over a dozen others thought to be trapped inside the tunnel. Both men were flown to a hospital in #Kathmandu. The floods killed more than 1,200 people, and over 5,000 are still missing.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T09:38:17.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "fe2cabf8aa044c06cd8187b50a3b6e78719fac8c0c9a6b02c3c3d046b67823b2",
-            "source_item_id": "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T09:38:17.000Z",
-            "ingested_at": "2026-09-04T09:46:20.569Z",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-f0448b41f7169fe1",
@@ -28482,7 +29450,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "81cb5d63d44d23392a53f615e89cbdefdf6d803863db64c0631615366d6cf29c",
         "sources": [
           {
@@ -28684,7 +29652,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T06:45:02.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -28746,7 +29714,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T07:06:15.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
           "provenance": {
             "origin": "publisher:ndr",
             "basis": "publisher_only_origin_unverified",
@@ -28791,7 +29759,7 @@
           "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T14:33:35.000Z",
+          "published_at": "2026-09-04T15:02:29.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -28807,8 +29775,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T14:33:35.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "source_published_at": "2026-09-04T15:02:29.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -28822,7 +29790,7 @@
           "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
           "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T14:33:35.000Z",
+          "published_at": "2026-09-04T15:02:29.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -28838,8 +29806,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T14:33:35.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "source_published_at": "2026-09-04T15:02:29.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -28853,7 +29821,7 @@
           "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
           "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T14:33:35.000Z",
+          "published_at": "2026-09-04T15:02:29.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -28869,8 +29837,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T14:33:35.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "source_published_at": "2026-09-04T15:02:29.000Z",
+          "ingested_at": "2026-09-04T15:06:23.805Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -28959,7 +29927,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -28979,7 +29947,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -28999,7 +29967,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -29019,7 +29987,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -29039,7 +30007,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -29059,7 +30027,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -29079,7 +30047,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -29099,7 +30067,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -29119,7 +30087,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T14:36:55.366Z"
+          "checked_at": "2026-09-04T15:06:23.805Z"
         }
       ],
       "content_hash": "8f889a609ff8374b84a48072a22ecd35f06957dd36d78d5ce0752fe3bc3509c0",
@@ -29131,7 +30099,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T14:36:55.366Z",
+      "updated_at": "2026-09-04T15:06:23.805Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -29165,20 +30133,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3.3394333333333335,
+        "source_age_minutes": 3.9134166666666665,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 465.20345,
+        "queue_age_minutes": 494.67743333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 99,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T14:36:55.366Z",
+      "rejected_at": "2026-09-04T15:06:23.805Z",
       "rejection": {
-        "at": "2026-09-04T14:36:55.366Z",
+        "at": "2026-09-04T15:06:23.805Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -30307,7 +31275,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "e94409d7f9d4796ecc951a57c5b0db1eb9d95fb101f1bf141563ebd3062f54e6",
         "sources": [
           {
@@ -30333,7 +31301,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -30917,7 +31885,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "104fd2ac96b1ff667bf3085cdb87e60cad729f9879068d9bc6c47d02b3eddfff",
         "sources": [
           {
@@ -32510,7 +33478,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -32536,7 +33504,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -33527,7 +34495,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -35568,7 +36536,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "0951961db5e880d5773f7d223e4058e7c70fc0383501b989ee1c8e3abd8d9315",
         "sources": [
           {
@@ -35625,7 +36593,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T05:25:08.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:euronews",
               "basis": "publisher_only_origin_unverified",
@@ -35655,7 +36623,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T10:12:49.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:france24",
               "basis": "publisher_only_origin_unverified",
@@ -35686,7 +36654,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T06:12:37.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:euronews",
               "basis": "publisher_only_origin_unverified",
@@ -35694,9 +36662,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -36730,7 +37700,7 @@
       "retirement_history": [],
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
         "sources": [
           {
@@ -37315,7 +38285,7 @@
       "retirement_history": [],
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -37341,7 +38311,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -37983,7 +38953,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
         "sources": [
           {
@@ -38009,7 +38979,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -39468,7 +40438,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
         "sources": [
           {
@@ -39494,7 +40464,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -39879,7 +40849,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
         "sources": [
           {
@@ -39905,7 +40875,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T16:09:08.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:eu-kommission-presse",
               "basis": "publisher_only_origin_unverified",
@@ -41008,7 +41978,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
         "sources": [
           {
@@ -41745,7 +42715,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
         "sources": [
           {
@@ -41772,7 +42742,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -42259,7 +43229,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
         "sources": [
           {
@@ -43384,7 +44354,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "5075c7ffde16cbbf806ab1eed166f847b296725de53c460c37469f3ec7552983",
         "sources": [
           {
@@ -43410,7 +44380,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T09:37:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:deutsche-welle",
               "basis": "publisher_only_origin_unverified",
@@ -44047,7 +45017,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "5a56ec97c1c488c4e358f69ef0a90770eddf25eb4ca171e125fde72efa5a8d39",
         "sources": [
           {
@@ -44693,7 +45663,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
         "sources": [
           {
@@ -45525,7 +46495,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
         "sources": [
           {
@@ -47598,7 +48568,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "ef6601581aead879d3f2fe7b232c0a9b5d2665911fa3dba5380e9af5490ba3df",
         "sources": [
           {
@@ -49556,7 +50526,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "ba792de8bcac830ac84f3b4f0dc1c53cf00b89108e9cb01f51205b013355e63c",
         "sources": [
           {
@@ -50114,7 +51084,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "6e4464438c753d3e38b4f92054ace42e22183c6c85d209f007eaeff4dd76b1e4",
         "sources": [
           {
@@ -50835,7 +51805,7 @@
       },
       "deepening_checks": 2,
       "pending_update": {
-        "detected_at": "2026-09-04T14:51:25.485Z",
+        "detected_at": "2026-09-04T15:06:23.805Z",
         "content_hash": "c5d58f7d34ae883a4c01449c96f07eae9763d3812701c0ff1c8f482ed998c537",
         "sources": [
           {
@@ -50861,7 +51831,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T22:00:00.000Z",
-            "ingested_at": "2026-09-04T14:36:55.366Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
             "provenance": {
               "origin": "publisher:eu-kommission-presse",
               "basis": "publisher_only_origin_unverified",
@@ -71422,5 +72392,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T14:36:55.366Z"
+  "public_updated_at": "2026-09-04T15:06:23.805Z"
 }
