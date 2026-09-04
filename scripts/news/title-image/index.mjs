@@ -56,10 +56,11 @@ export const PALETTE = {
 export const SAFE_AREAS = {
   landscape: {
     brand: { x: 0, y: 0, w: 0.55, h: 0.16 },
-    text: { x: 0, y: 0.46, w: 0.64, h: 0.54 },
+    text: { x: 0, y: 0.46, w: 0.57, h: 0.54 },
     label: { x: 0.64, y: 0.88, w: 0.36, h: 0.12 },
-    motifFocus: { x: 0.42, y: 0.1, w: 0.54, h: 0.72 },
-    avoid: ["linkes unteres Drittel (Text)", "linker oberer Streifen (Branding)", "rechte untere Ecke (Kennzeichnung)"],
+    motifFocus: { x: 0.08, y: 0.18, w: 0.48, h: 0.28 },
+    impactPanel: { x: 0.6, y: 0.16, w: 0.36, h: 0.73 },
+    avoid: ["linke untere Fläche (Text)", "linker oberer Streifen (Branding)", "rechte Bildseite (Wirkung auf)", "rechte untere Ecke (Kennzeichnung)"],
   },
   square: {
     brand: { x: 0, y: 0, w: 0.7, h: 0.1 },
@@ -259,10 +260,10 @@ function chip(text, iconName, iconColor, x, y, u) {
 
 const DIMENSION_COLORS = { human: PALETTE.dimHuman, planet: PALETTE.dimPlanet, democracy: PALETTE.dimDemocracy };
 
-function impactPanel(u, { x, y, width, height, dimensions, status, analysisType, horizontal = false }) {
+function impactPanel(u, { x, y, width, height, dimensions, status, analysisType, horizontal = false, overlay = false }) {
   const pad = 26 * u;
   const parts = [];
-  parts.push(`<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${width.toFixed(1)}" height="${height.toFixed(1)}" rx="${(18 * u).toFixed(1)}" fill="${PALETTE.white}" fill-opacity="0.07" stroke="${PALETTE.white}" stroke-opacity="0.16"/>`);
+  parts.push(`<rect data-impact-panel="true" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${width.toFixed(1)}" height="${height.toFixed(1)}" rx="${(18 * u).toFixed(1)}" fill="${overlay ? PALETTE.navyDeep : PALETTE.white}" fill-opacity="${overlay ? "0.92" : "0.07"}" stroke="${PALETTE.white}" stroke-opacity="0.16"/>`);
   parts.push(textLine("WIRKUNG AUF", x + pad, y + pad + 11 * u, "sans-700", 12.5 * u, PALETTE.gold, { letterSpacing: 2 * u }));
   const rowsTop = y + pad + 34 * u;
   const keys = Object.keys(DIMENSIONS);
@@ -333,7 +334,7 @@ function renderLandscape(input, W, H, u, P, mode) {
   parts.push(brandRow(u, P, W));
 
   const textX = P + 22 * u;
-  const textWidth = (mode === "editorial" ? areas.text.w * W : 0.57 * W) - textX - 8 * u;
+  const textWidth = areas.text.w * W - textX - 8 * u;
   const footerBaseline = H - P + 4 * u;
   const block = headlineBlock(u, {
     headline: input.headline, category: input.category, x: textX, bottom: footerBaseline - 44 * u, maxWidth: textWidth,
@@ -343,21 +344,21 @@ function renderLandscape(input, W, H, u, P, mode) {
   const brandBottom = P + 48 * u;
   if (block.top < brandBottom + 24 * u) warnings.push("HEADLINE_NEAR_BRAND");
 
-  if (mode === "impact_card") {
+  {
     const panelX = 0.6 * W;
     const panelWidth = W - panelX - P;
     const panelTop = P + 58 * u;
     const panelBottom = footerBaseline - 40 * u;
     const hasDimensions = input.dimensions && Object.values(input.dimensions).some((value) => levelOf(value) !== null);
     if (hasDimensions || input.status) {
-      parts.push(impactPanel(u, { x: panelX, y: panelTop, width: panelWidth, height: panelBottom - panelTop, dimensions: input.dimensions || {}, status: input.status, analysisType: input.analysisType }));
-    } else {
+      parts.push(impactPanel(u, { x: panelX, y: panelTop, width: panelWidth, height: panelBottom - panelTop, dimensions: input.dimensions || {}, status: input.status, analysisType: input.analysisType, overlay: mode === "editorial" }));
+    } else if (mode === "impact_card") {
       warnings.push("IMPACT_DATA_MISSING");
       parts.push(watermark(u, categoryIcon(input.category), panelX + panelWidth * 0.2, panelTop + (panelBottom - panelTop - panelWidth * 0.6) / 2, panelWidth * 0.6));
     }
   }
   if (input.headlineVisible !== false) parts.push(block.markup);
-  else parts.push(watermark(u, categoryIcon(input.category), textX, H * 0.42, 130 * u));
+  else if (mode === "impact_card") parts.push(watermark(u, categoryIcon(input.category), textX, H * 0.42, 130 * u));
   parts.push(footerRow(u, P, W, H, {
     source: input.source, date: input.date,
     label: input.label, labelIcon: mode === "editorial" ? "ki" : "folgen", maxWidthFraction: 0.6,
@@ -385,7 +386,7 @@ function renderSquare(input, W, H, u, P, mode) {
     sizes: [58 * u, 50 * u, 44 * u, 38 * u], maxLines: 3, minLinesAtMinSize: 4,
   });
   warnings.push(...block.warnings);
-  if (mode === "impact_card") {
+  {
     const gapTop = P + 62 * u;
     const gapBottom = block.top - 34 * u;
     const hasDimensions = input.dimensions && Object.values(input.dimensions).some((value) => levelOf(value) !== null);
@@ -393,8 +394,8 @@ function renderSquare(input, W, H, u, P, mode) {
       // Kompaktes Panel, mittig im freien Raum zwischen Branding und Textblock.
       const panelHeight = Math.min(gapBottom - gapTop, 196 * u);
       const panelTop = gapTop + Math.max(0, (gapBottom - gapTop - panelHeight) / 2);
-      parts.push(impactPanel(u, { x: P, y: panelTop, width: W - P * 2, height: panelHeight, dimensions: input.dimensions || {}, status: input.status, analysisType: input.analysisType, horizontal: true }));
-    } else {
+      parts.push(impactPanel(u, { x: P, y: panelTop, width: W - P * 2, height: panelHeight, dimensions: input.dimensions || {}, status: input.status, analysisType: input.analysisType, horizontal: true, overlay: mode === "editorial" }));
+    } else if (mode === "impact_card") {
       warnings.push("IMPACT_DATA_MISSING");
       const size = Math.min(gapBottom - gapTop, 260 * u);
       parts.push(watermark(u, categoryIcon(input.category), W / 2 - size / 2, gapTop + (gapBottom - gapTop - size) / 2, size));

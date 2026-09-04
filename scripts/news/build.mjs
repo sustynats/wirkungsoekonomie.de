@@ -9,6 +9,7 @@ import {
 } from "./visuals.mjs";
 import { loadNewsRegistry } from "./registry.mjs";
 import { buildSourcePages } from "./source-pages.mjs";
+import { canonicalizeUrl } from "./lib.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
@@ -269,7 +270,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260904-reader1">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260904-reader2">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -277,9 +278,10 @@ ${header}
 ${renderIconSprite()}
 ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
-<script src="${base}assets/js/main.js?v=20260904-reader1"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260904-refresh-images"></script>
-<script src="${base}assets/js/news-navigation.js?v=20260904-reader1"></script>
+<script src="${base}assets/js/main.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-pwa.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-navigation.js?v=20260904-reader2"></script>
 ${extraScript}
 </body>
 </html>`;
@@ -311,6 +313,10 @@ function indexPage(stories, updatedAt) {
       <ul class="news-hero__stats"><li><strong>${stories.length}</strong> ${stories.length === 1 ? "Wirkungsakte" : "Wirkungsakten"}</li><li><strong>${highCount}</strong> mit hoher systemischer Relevanz</li><li>${renderIcon("uhr")}<span>Stand ${escapeHtml(formatDate(updatedAt))} · automatische Quellenprüfung</span></li><li><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="quellen/">Quellen &amp; Auswahl</a></li></ul>
     </div>
   </section>
+  <aside class="news-install-promo" data-news-install-promo data-search-exclude hidden aria-labelledby="news-install-promo-title">
+    <img src="../assets/img/brand/app-icon-192.png" alt="" width="64" height="64">
+    <div class="news-install-promo__copy"><p class="hero-kicker">Deine Nachrichten. Direkt auf dem Startbildschirm.</p><h2 id="news-install-promo-title">Der Wirkungsticker als kostenlose Web-App</h2><p data-news-install-copy>Schnell öffnen, Artikel merken und auf Wunsch Push bei neuen Nachrichten erhalten. Ohne App-Store.</p><div class="news-app-tools__actions" data-news-install-actions><button class="btn btn-primary" type="button" data-news-install-button>Web-App hinzufügen</button><button class="btn btn-secondary" type="button" data-news-install-dismiss>Später</button></div></div>
+  </aside>
   <section class="section news-toolbar" aria-label="Wirkungsticker durchsuchen">
     <p class="news-saved-link" data-search-exclude><a class="text-link" href="../mein-wirkungsraum/#gemerkte-inhalte">☆ Meine Merkliste</a></p>
     <div class="news-toolbar__inner">
@@ -333,17 +339,37 @@ function indexPage(stories, updatedAt) {
       "@context": "https://schema.org", "@type": "CollectionPage", "@id": `${SITE}/wirkungsticker/#page`, url: `${SITE}/wirkungsticker/`, name: "Wirkungsticker", inLanguage: "de",
       dateModified: updatedAt, mainEntity: { "@type": "ItemList", itemListElement: stories.map((story, index) => ({ "@type": "ListItem", position: index + 1, url: `${SITE}/wirkungsticker/${story.slug}/`, name: story.title })) },
     },
-    extraScript: '<script src="../assets/js/news.js?v=20260904-reader1"></script>',
+    extraScript: '<script src="../assets/js/news.js?v=20260904-reader2"></script>',
   });
+}
+
+export function renderClaimEvidenceLinks(claim, sources = []) {
+  const articles = new Map();
+  for (const proof of claim.evidence || []) {
+    const url = canonicalizeUrl(proof.url);
+    if (!url) continue;
+    if (!articles.has(url)) {
+      const source = sources.find((item) => canonicalizeUrl(item.url) === url);
+      articles.set(url, { source, excerpts: new Set() });
+    }
+    const excerpt = proof.excerpt_hash || proof.evidence_id || proof.excerpt;
+    if (excerpt) articles.get(url).excerpts.add(excerpt);
+  }
+  return [...articles].map(([url, { source, excerpts }]) => {
+    const publisher = source?.publisher || new URL(url).hostname;
+    const count = excerpts.size;
+    const label = `${publisher}${count ? ` · ${count} ${count === 1 ? "Textstelle" : "Textstellen"}` : ""}`;
+    return `<a class="text-link" href="${escapeHtml(url)}"${source?.title ? ` title="${escapeHtml(source.title)}"` : ""} target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+  }).join("; ");
 }
 
 function renderNewsroomEvidence(story) {
   if (!story.news_status) return "";
   const status = { developing: "Entwickelnde Nachrichtenlage", preliminary: "Vorläufiger Nachrichtenstand", confirmed: "Bestätigter Nachrichtenkern", disputed: "Widersprüchliche Quellenlage", corrected: "Korrigierter Stand", updated: "Aktualisierter Stand" }[story.news_status] || "Offener Stand";
   const labels = { single_source_claim: "Einer Quelle zugeschrieben", confirmed_claim: "Durch mehrere Belege gestützt", disputed_claim: "Strittig", primary_source_claim: "Primärbeleg / Selbstauskunft", uncertain_claim: "Ungeklärt" };
-  const claims = (story.claims || []).filter((claim) => claim.status).map((claim) => `<li><strong>${escapeHtml(labels[claim.status] || "Offen")}:</strong> ${escapeHtml(claim.claim)} ${claim.evidence.map((proof) => `<a class="text-link" href="${escapeHtml(proof.url)}" target="_blank" rel="noopener noreferrer">Beleg</a>`).join(" · ")}</li>`).join("");
+  const claims = (story.claims || []).filter((claim) => claim.status).map((claim) => `<li><strong>${escapeHtml(labels[claim.status] || "Offen")}:</strong> ${escapeHtml(claim.claim)} ${renderClaimEvidenceLinks(claim, story.sources)}</li>`).join("");
   const followups = (story.followups || []).map((followup) => `<li>${escapeHtml(followup.claim)} – Prüfpunkt: ${escapeHtml(followup.measurable_indicator)}. Nächste Recherche: ${escapeHtml(formatDate(followup.follow_up_date, { dateOnly: true }))}${followup.expected_by ? `; in der Quelle genannter Termin: ${escapeHtml(formatDate(followup.expected_by, { dateOnly: true }))}` : "; kein verbindlicher Quellentermin bekannt"}.</li>`).join("");
-  return `<section class="section" aria-label="Nachrichten- und Belegstand"><article class="news-story-section"><p class="hero-kicker">${escapeHtml(status)}</p><h2>Was ist wie belegt?</h2><ul>${claims}</ul><p class="news-method-note">Automatische quellengebundene Prüfung, keine Garantie vollständiger oder fehlerfreier Berichterstattung. Abhängigkeiten zwischen Quellen können unerkannt bleiben; eine institutionelle Aussage belegt nicht automatisch den behaupteten Erfolg.</p>${followups ? `<details><summary>Geplante Folgeprüfungen</summary><ul>${followups}</ul></details>` : ""}</article></section>`;
+  return `<section class="section" aria-label="Nachrichten- und Belegstand"><article class="news-story-section"><p class="hero-kicker">${escapeHtml(status)}</p><h2>Was ist wie belegt?</h2><ul>${claims}</ul><p class="news-method-note">Jeder Link führt zu einem Quellartikel. Mehrere Textstellen aus demselben Artikel sind keine voneinander unabhängigen Quellen.</p><p class="news-method-note">Automatische quellengebundene Prüfung, keine Garantie vollständiger oder fehlerfreier Berichterstattung. Abhängigkeiten zwischen Quellen können unerkannt bleiben; eine institutionelle Aussage belegt nicht automatisch den behaupteten Erfolg.</p>${followups ? `<details><summary>Geplante Folgeprüfungen</summary><ul>${followups}</ul></details>` : ""}</article></section>`;
 }
 
 function storyPage(story, { newerStory = null, nextStory = null } = {}) {

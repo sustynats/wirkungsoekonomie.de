@@ -55,6 +55,29 @@ test("Editorial rendert Motiv, Kennzeichnung und eingebettete Fonts", () => {
   assert.match(result.svg, /KI-generiertes Symbolbild/);
   assert.match(result.svg, /@font-face\{font-family:"Source Serif 4";font-weight:700/);
   assert.match(result.svg, /url\(data:font\/woff2;base64,/);
+  assert.match(result.svg, /WIRKUNG AUF/);
+  assert.match(result.svg, /fill="#07152C" fill-opacity="0.92"/);
+});
+
+test("Editorial panel shares card coordinates in all sizes, including headline-free wide", () => {
+  const image = placeholderDataUri("energie");
+  for (const size of Object.keys(SIZES)) {
+    const input = { ...BASE, headlineVisible: size !== "wide" };
+    const card = renderTitleImage({ ...input, mode: "impact_card" }, { size, fonts: "none" });
+    const editorial = renderTitleImage({ ...input, mode: "editorial", image }, { size, fonts: "none" });
+    const geometry = (svg) => svg.match(/<rect data-impact-panel="true" x="[^"]+" y="[^"]+" width="[^"]+" height="[^"]+"/)?.[0];
+    assert.ok(geometry(card.svg), size);
+    assert.equal(geometry(editorial.svg), geometry(card.svg), size);
+    assert.deepEqual(editorial.layout.lines, card.layout.lines);
+    assert.match(editorial.svg, /Mensch/);
+    assert.match(editorial.svg, /Planet/);
+    assert.match(editorial.svg, /Demokratie/);
+    assert.match(editorial.svg, /KI-generiertes Symbolbild/);
+  }
+});
+
+test("Editorial without analysis does not invent impact meters", () => {
+  const result = renderTitleImage({ mode: "editorial", headline: "Thema ohne Bewertung", image: placeholderDataUri("energie") }, { fonts: "none" });
   assert.doesNotMatch(result.svg, /WIRKUNG AUF/);
 });
 

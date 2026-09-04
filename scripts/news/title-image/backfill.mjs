@@ -4,13 +4,14 @@ import { fileURLToPath } from "node:url";
 import { createTitleImagePipeline, publicTitleImage } from "./pipeline.mjs";
 import { buildNewsSite } from "../build.mjs";
 
-export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, prepare = null, maxDurationMs = 240000, build = buildNewsSite } = {}) {
+export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, editorialOnly = false, prepare = null, maxDurationMs = 240000, build = buildNewsSite } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 100) throw new Error("TITLE_IMAGE_LIMIT_INVALID");
+  if (editorialOnly && (!renderOnly || cardsOnly)) throw new Error("TITLE_IMAGE_EDITORIAL_ONLY_REQUIRES_RENDER_ONLY");
   const file = path.join(root, "data/news/stories.json");
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
   const reportFile = path.join(root, "reports/wirkungsticker-latest-run.json");
   const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
-  const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (renderOnly ? story.title_image : !story.title_image?.wide || story.title_image.retry_after));
+  const candidates = data.stories.filter((story) => story.published && story.listed !== false && story.analysis && (!editorialOnly || story.title_image?.mode === "editorial") && (renderOnly ? story.title_image : !story.title_image?.wide || story.title_image.retry_after));
   const worker = prepare || createTitleImagePipeline({ root, allowGeneration: !renderOnly, maxGenerations: limit });
   const results = []; let changed = 0;
   const selected = candidates.slice(0, limit);
@@ -27,6 +28,12 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
     if (!dryRun && Date.now() >= deadline) break;
     const result = await worker(story, { dryRun, cardsOnly });
     if (dryRun) { results.push(result); continue; }
+    // An overlay-only batch must not replace a working motif with a fallback
+    // after a transient download/render failure. Keep the live references.
+    if (editorialOnly && (result.title_image?.mode !== "editorial" || !["og", "wide", "square"].every((key) => result.title_image[key]?.url))) {
+      results.push({ ...result.report, status: "preserved", reason: "EDITORIAL_OVERLAY_NOT_READY" });
+      continue;
+    }
     if (JSON.stringify(publicTitleImage(story.title_image)) !== JSON.stringify(publicTitleImage(result.title_image))) changed += 1;
     story.title_image = result.title_image;
     results.push(result.report);
@@ -47,5 +54,5 @@ export async function backfillTitleImages({ root = path.resolve(import.meta.dirn
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const limit = Number(process.argv.find((arg) => arg.startsWith("--limit="))?.slice(8) || 5);
-  console.log(JSON.stringify(await backfillTitleImages({ limit, dryRun: !process.argv.includes("--execute") || process.argv.includes("--dry-run"), cardsOnly: process.argv.includes("--cards-only"), renderOnly: process.argv.includes("--render-only") }), null, 2));
+  console.log(JSON.stringify(await backfillTitleImages({ limit, dryRun: !process.argv.includes("--execute") || process.argv.includes("--dry-run"), cardsOnly: process.argv.includes("--cards-only"), renderOnly: process.argv.includes("--render-only"), editorialOnly: process.argv.includes("--editorial-only") }), null, 2));
 }

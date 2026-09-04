@@ -983,6 +983,30 @@
   gap: 1rem;
 }
 
+.news-install-promo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  border: 1px solid var(--wt-line);
+  border-left: 4px solid var(--wt-gold);
+  border-radius: 1.25rem;
+  background: var(--wt-paper, #fffdf9);
+}
+
+.news-install-promo[hidden] { display: none; }
+.news-install-promo > img { flex: 0 0 64px; border-radius: 1rem; }
+.news-install-promo__copy { min-width: 0; }
+.news-install-promo h2 { margin: 0.3rem 0 0.55rem; font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+.news-install-promo p { margin: 0; }
+.news-install-promo .btn { min-height: 44px; white-space: normal; }
+@media (max-width: 480px) {
+  .news-install-promo { gap: 0.8rem; flex-wrap: wrap; }
+  .news-install-promo > img { width: 48px; height: 48px; flex-basis: 48px; }
+  .news-install-promo__copy { flex: 1 1 220px; }
+}
+
 .news-app-tools {
   padding-top: 0;
 }

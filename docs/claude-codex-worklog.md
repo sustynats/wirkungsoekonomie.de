@@ -9,6 +9,13 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ## 2026-09-03
 
+### 2026-09-04 · Codex · Wirkungsticker: Installation, Bild-Overlay und Quellenlinks
+- **Was:** Prominenter Installationshinweis zwischen Hero und Suche, mit bestehendem Installationsweg verknüpft. iPhone/iPad-Anleitung, native Chromium-Installation nur nach Klick, ausblendbar für 30 Tage, keine Werbung im Standalone-Modus. Service-Worker-/Asset-Version `20260904-reader2`; keine Neuinstallation erforderlich.
+- **Bilder:** Identisches „Wirkung auf“-Panel auch auf Editorials, in allen drei Formaten; dunkler Kontrasthintergrund, reservierter Titelbereich. Zehn vorhandene Motive render-only neu gerahmt und 30 unveränderliche PNGs in GitHub Releases abgelegt, null Higgsfield-Aufrufe. Quellen, Nachrichtentexte, Datumswerte und Versionen unverändert. Original-Promptprovenienz bleibt v2. Neue Promptvorgabe v3: konkrete gegenständliche Motive statt pauschaler abstrakter Netzwerke; sensible Themen weiterhin Wirkungskarte.
+- **Belege:** Im geprüften Stand 25/45 aktive Akten mit mehreren Textstellen derselben URL (71 Claims). Darstellung jetzt pro Claim und Quellartikel ein benannter Link mit Zahl unterschiedlicher Textstellen. Interne Belege/Einzelquellenstatus bleiben unverändert; keine zusätzliche Unabhängigkeit suggeriert.
+- **Geprüft:** 146 News-Tests, Build/Validator, echte Chrome-Rasterisierung OG/Wide/Square; Mobile 320/390 px ohne horizontalen Überlauf, Beispiel Bundeswehr mit genau einem Link je Aussage. Vor Freigabe zusätzlich PR-CI und Live-Prüfung.
+- **Offen:** Neue Bildvorgaben müssen auch in der Oracle-Adapterkopie ausgerollt werden; SSH derzeit Timeout, Browseranmeldung abgelaufen, Nutzer um erneute Anmeldung gebeten. Akademie-Analytics: getrenntes Vorhaben, Vercel-Buildkostengate rot; kein Umgehen, kein Vercel-Build ausgelöst.
+
 ### 2026-09-04 · Codex · Wirkungsticker: Merken und Wisch-Leseweg
 - **Was:** Merken direkt auf jeder Nachrichtenkarte und zusätzlich am Detailseitenende; dieselben `WoekUserSpace`-Einträge, Konto-Synchronisierung und Entfernen-aus-Sammlungen wie bisher. Gemeinsamer Buttonzustand und Link zur bestehenden Merkliste, keine zweite Datensammlung.
 - **Navigation:** Links wischen öffnet die nächste Meldung, rechts den tatsächlichen vorherigen Lese-Schritt (Übersicht → A → B → A → Übersicht). Direkteinstieg fällt sicher auf die Übersicht zurück. Browser-History bleibt erhalten; Abschnittslinks erzeugen keine Schein-Seiten. Rückkehr stellt Filter, nachgeladene Karten und Scrollposition wieder her.

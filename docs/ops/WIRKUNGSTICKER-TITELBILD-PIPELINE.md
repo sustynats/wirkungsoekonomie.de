@@ -46,6 +46,15 @@ Der erste echte Test (2 Credits) enthielt unerwünschte Wörter und wurde gesper
 Er wird nicht veröffentlicht oder kostenpflichtig durch ein „schöneres“ ersetzt.
 Prompt v2 vermeidet die zuvor missverständlich ausgelegten Platzhalterbegriffe.
 
+Prompt v3 (`woek-editorial-3-concrete`) ersetzt die pauschale abstrakte Stilvorgabe
+durch konkrete, nachrichtenbezogene Stillleben und generische Umgebungen mit
+natürlichen Materialien. Spezifische Themen (etwa Pflegeausbildung, Landwirtschaft,
+Windkraft) haben Vorrang vor Wirtschaft-/Verwaltungsmetaphern. Die Sensitivitäts-
+sperren bleiben bestehen. Keine echten Ereignisse oder realen Orte nachstellen.
+Das gemeinsame Panel liegt nun auch über dem Editorial; neue Motive halten die
+rechte Seite dafür frei. Die Änderung muss zusätzlich in der geladenen Oracle-
+Adapterkopie (`news-media`) ausgerollt werden, nicht nur im Website-Repository.
+
 Fallback: Editorial → Wirkungskarte → bestehendes statisches OG-Bild.
 Eine Bildstörung darf keine Nachricht verwerfen. Befristete Rückstellungen werden
 im normalen Lauf wiederaufgenommen, fachlich gesperrte Motive nicht neu erzeugt.
@@ -101,6 +110,7 @@ Ein rotes Quellen-/KI-Health-Gate bleibt sichtbar; Teilresultate werden vorher g
 npm run news:title-images:backfill -- --dry-run --limit=20
 npm run news:title-images:backfill -- --execute --limit=20
 npm run news:title-images:backfill -- --execute --render-only --limit=20
+npm run news:title-images:backfill -- --execute --render-only --editorial-only --limit=20
 ```
 
 Standard ist Dry-run. Der bestehende Workflow besitzt die expliziten Dispatch-
@@ -109,6 +119,11 @@ die ausgewählte Menge bestehender Akten. Nach dem vierminütigen Backfill-Zeitb
 beendet der normale servergestützte Tickerlauf die markierte Restmenge schrittweise.
 Keine automatische Generierung für die gesamte Historie bei jedem Build.
 `--render-only` nutzt gespeicherte Originale ohne neue Generierung.
+`--editorial-only` ist ausschließlich zusammen mit `--render-only` erlaubt und
+wählt vorhandene Symbolbilder. Bei Download-/Renderfehlern bleiben deren bisherige
+öffentliche Referenzen erhalten. Weder Promptänderungen noch der Overlay-Backfill
+bestellen Ersatzmotive; Artikeltext, Versionsnummer und Nachrichtenzeit bleiben
+unverändert. Bildmetadaten und `public_updated_at` dürfen sich ändern.
 
 Referenzen: Originale und Titelbilder unter Release-Tag `wirkungsticker-media-YYYY-MM`;
 Dateinamen enthalten Story-ID, Hash/Fingerprint und Ausgabeformat. Keine Überschreibung:

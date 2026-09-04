@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260904-reader1";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260904-reader2";
 const NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1";
 const NEWS_STATE_URL = "/wirkungsticker/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-wirkungsticker-updates";
@@ -12,6 +12,7 @@ const APP_SHELL = [
   "/assets/js/main.js",
   "/assets/js/news.js",
   "/assets/js/news-pwa.js",
+  "/assets/js/news-install.js",
   "/assets/js/news-share.js",
   "/assets/js/news-navigation.js",
   "/assets/img/brand/favicon.svg",
