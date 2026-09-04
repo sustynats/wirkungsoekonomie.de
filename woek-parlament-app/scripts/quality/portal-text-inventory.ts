@@ -37,7 +37,7 @@ const records = changed.flatMap((file) => {
   });
 });
 const missing = records.filter((record) => record.status === "MISSING");
-const report = { base_commit: base, phase: "P1", policy: "No published paragraph removed; navigation labels may be regrouped. Canonical data untouched.", total_text_objects: records.length, missing: missing.length, records };
+const report = { base_commit: base, phase: "P2", policy: "No published paragraph removed; navigation labels may be regrouped. Canonical data untouched.", total_text_objects: records.length, missing: missing.length, records };
 const output = process.env.PORTAL_TEXT_REPORT;
 if (output) { mkdirSync(dirname(output), { recursive: true }); writeFileSync(output, JSON.stringify(report, null, 2) + "\n"); }
 if (missing.length) { console.error(JSON.stringify(missing, null, 2)); process.exitCode = 1; }

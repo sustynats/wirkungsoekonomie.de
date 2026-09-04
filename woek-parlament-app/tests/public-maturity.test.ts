@@ -149,8 +149,11 @@ test("public maturity is rendered before process metadata on every preview famil
       ? source.slice(source.indexOf("export function GovernmentImpactCase"))
       : source;
     const processMarker = file.endsWith("GovernmentImpactCase.tsx") ? "<GovernmentProcessSection" : "data-woek-process-metadata";
-    assert.match(renderedSource, /<PublicMaturity/, file);
-    assert.ok(renderedSource.indexOf("<PublicMaturity") < renderedSource.indexOf(processMarker), file);
+    // P2 projects the same typed maturity into the independent compact axis;
+    // the full PublicMaturity content remains on the canonical detail route.
+    const component = file.endsWith("/CaseCard.tsx") ? "<ImpactSignature" : "<PublicMaturity";
+    assert.ok(renderedSource.includes(component), file);
+    assert.ok(renderedSource.indexOf(component) < renderedSource.indexOf(processMarker), file);
   }
 });
 

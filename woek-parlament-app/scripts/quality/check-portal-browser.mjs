@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { canonicalPortalHref, portalRedirects, portalNavigation, allNavigationItems } from "../../lib/navigation.ts";
 
@@ -32,6 +32,7 @@ for (const path of paths) {
   const response = await fetch(`${base}${path}`, { redirect: "manual", signal: AbortSignal.timeout(60_000) });
   assert.equal(response.status, 200, path);
   const body = await response.text();
+  if (path.startsWith("/entscheidungen/")) assert.match(body, /<dt>Stand der WÖk-Analyse<\/dt>/, "old card analysis status must remain on detail");
   assert.match(body, /aria-label="Brotkrumen"/, path);
   assert.equal((body.match(/aria-label="Brotkrumen"/g) ?? []).length, 1, path);
   assert.doesNotMatch(body, /Wirkungsportal Parlament[^<]*Wirkungsportal Parlament<\/title>/, path);
@@ -48,6 +49,47 @@ try {
   const page = await context.newPage();
   page.on("pageerror", (error) => results.errors.push(error.message));
   page.on("response", (response) => { if (response.status() >= 500) results.errors.push(`HTTP ${response.status()} ${new URL(response.url()).pathname}`); });
+  results.signatures = [];
+  const axeSource = readFileSync(process.env.PORTAL_AXE_MODULE ?? require.resolve("axe-core/axe.min.js"), "utf8");
+  const decisionPaths = [...paths].filter((path) => path.startsWith("/entscheidungen/"));
+  for (const width of [375, 1440]) {
+    await page.setViewportSize({ width, height: 960 });
+    await page.goto(`${base}/wirkungsakten?bestand=entscheidungen`, { waitUntil: "networkidle" });
+    const cards = await page.locator(".case-card").evaluateAll((cards) => cards.map((card) => ({
+      href: card.querySelector("h3 a")?.getAttribute("href"),
+      words: [...new Intl.Segmenter("de", { granularity: "word" }).segment(card.innerText)].filter((word) => word.isWordLike).length,
+      axes: [...card.querySelectorAll("[data-impact-signature] dt")].map((label) => label.textContent),
+      symbol: card.querySelector(".signature-mark")?.textContent,
+      direction: card.querySelector("[data-signature-axis=direction] dd > span:nth-child(2)")?.textContent,
+      ungraded: card.querySelector("[data-evidence-grade]")?.getAttribute("data-evidence-grade"),
+    })));
+    assert.deepEqual(cards.map((card) => card.href).sort(), [...decisionPaths].sort(), "all published decisions must have a row");
+    for (const card of cards) {
+      assert.ok(card.words <= 60, `${card.href}: ${card.words} visible words`);
+      assert.deepEqual(card.axes, ["Wirkungsrichtung", "Evidenz", "Reifegrad"]);
+      assert.ok(card.symbol?.trim() && card.direction?.trim(), "symbol AND visible wording");
+      assert.equal(card.ungraded, "ungraded", "no invented evidence grade");
+    }
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    await page.addScriptTag({ content: axeSource });
+    const a11y = await page.evaluate(async () => (await window.axe.run({ include: [[".case-card"]] }, { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } })).violations.map(({ id, impact, nodes }) => ({ id, impact, targets: nodes.map((node) => node.target) })));
+    assert.deepEqual(a11y, [], "P2 card accessibility");
+    await page.locator(".case-card").first().screenshot({ path: join(output, `signature-row-${width}.png`) });
+    const firstHref = cards[0].href;
+    await page.goto(base + firstHref, { waitUntil: "networkidle" });
+    const full = page.locator('[data-impact-signature="full"]').first();
+    await full.scrollIntoViewIfNeeded();
+    assert.deepEqual(await full.locator("dt").allTextContents(), ["Wirkungsrichtung", "Evidenz", "Reifegrad"]);
+    await page.addScriptTag({ content: axeSource });
+    const detailA11y = await page.evaluate(async () => (await window.axe.run({ include: [["[data-impact-signature=full]"]] }, { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } })).violations.map(({ id, nodes }) => ({ id, targets: nodes.map((node) => node.target) })));
+    assert.deepEqual(detailA11y, [], "P2 full signature accessibility");
+    await full.screenshot({ path: join(output, `signature-full-${width}.png`) });
+    await page.emulateMedia({ forcedColors: "active" });
+    assert.ok(await full.locator(".signature-mark").isVisible());
+    assert.ok((await full.locator("dd").first().innerText()).trim());
+    await page.emulateMedia({ forcedColors: "none" });
+    results.signatures.push({ width, cards, a11y, detailA11y, forced_colors: "PASS", axes: "PASS" });
+  }
   for (const width of [375, 1440]) {
     await page.setViewportSize({ width, height: 960 });
     for (const item of portalNavigation) {

@@ -31,7 +31,7 @@ const globalStyles = source("app/globals.css");
 test("OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
   assert.match(overviewComponent, /Zusammenfassende WÖk-Bewertung/);
   for (const [file, content] of Object.entries({ caseCard, governmentCard, euCard, searchResults })) {
-    assert.match(content, /<OverviewAssessment/, file);
+    assert.match(content, /<(OverviewAssessment|ImpactSignature)/, file);
   }
   for (const file of [
     "app/page.tsx", "app/[section]/page.tsx", "app/wirkungsfaelle/page.tsx",
@@ -44,13 +44,14 @@ test("OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
 
 test("PROCESS_BADGE_IS_NOT_USED_AS_ASSESSMENT", () => {
   assert.doesNotMatch(overviewComponent, /Vor der Entscheidung geprüft|Beobachtung und Rückkopplung|hohe Prüfrelevanz/i);
-  assert.ok(caseCard.indexOf("<OverviewAssessment") < caseCard.indexOf("<CaseTypeMark"));
+  assert.ok(caseCard.indexOf("<ImpactSignature") < caseCard.indexOf("data-woek-process-metadata"));
+  assert.doesNotMatch(caseCard, /<CaseTypeMark[^>]*maturity=/);
   assert.ok(searchResults.indexOf("<OverviewAssessment assessment={item.assessment}") < searchResults.indexOf("<dt>Analysephase</dt>"));
 });
 
 test("ASSESSMENT_PRECEDES_PROCESS_METADATA", () => {
   const renderedGovernmentCard = governmentCard.slice(governmentCard.indexOf("export function GovernmentImpactCase"));
-  assert.ok(caseCard.indexOf("<OverviewAssessment") < caseCard.indexOf("case-card-topline"));
+  assert.ok(caseCard.indexOf("<ImpactSignature") < caseCard.indexOf("data-woek-process-metadata"));
   assert.ok(renderedGovernmentCard.indexOf("<OverviewAssessment") < renderedGovernmentCard.indexOf("government-impact-summary"));
   assert.ok(searchResults.indexOf("<OverviewAssessment assessment={item.assessment}") < searchResults.indexOf("<dt>Prüfstand</dt>"));
 });
@@ -119,7 +120,7 @@ test("PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
   assert.match(euSourceVsView, /Executive-WÖk-Zusammenfassung/);
   assert.match(euSourceVsView, /Wirkungspotenzial kompakt/);
   for (const [file, content] of Object.entries({ caseCard, governmentCard, governmentActionCard, euCard, searchResults, sourceDetail })) {
-    assert.match(content, /<OverviewAssessment/, file);
+    assert.match(content, /<(OverviewAssessment|ImpactSignature)/, file);
   }
 });
 
@@ -138,7 +139,8 @@ test("PREVIEW_CARD_HAS_CASE_SPECIFIC_IMPACT_SUMMARY", () => {
 });
 
 test("PREVIEW_CARD_IMPACT_PRECEDES_PROCESS", () => {
-  assert.ok(caseCard.indexOf("<OverviewAssessment") < caseCard.indexOf("data-woek-process-metadata"));
+  assert.ok(caseCard.indexOf("<ImpactSignature") >= 0);
+  assert.ok(caseCard.indexOf("<ImpactSignature") < caseCard.indexOf("data-woek-process-metadata"));
   assert.ok(governmentActionCard.indexOf("<OverviewAssessment") < governmentActionCard.indexOf("data-woek-process-metadata"));
   assert.ok(searchResults.indexOf("<OverviewAssessment") < searchResults.indexOf("data-woek-process-metadata"));
   assert.ok(sourceDetail.indexOf("<OverviewAssessment") < sourceDetail.indexOf("data-woek-process-metadata"));

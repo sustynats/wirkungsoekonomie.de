@@ -1,0 +1,47 @@
+/* Token-based, redundant coding: symbols and visible wording carry every status. */
+.impact-signature { margin-block: var(--abstand-m); }
+.impact-signature dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--abstand-m); margin: 0; }
+.signature-axis { min-width: 0; padding: var(--abstand-s); border: 1px solid var(--farbe-linie); border-radius: var(--radius-klein); }
+.signature-axis dt { font-weight: var(--schriftstaerke-fett); font-size: var(--groesse-klein); }
+.signature-axis dd { margin: var(--abstand-xs) 0 0; display: grid; gap: var(--abstand-xs); }
+.signature-axis small { display: block; font-size: var(--groesse-klein); }
+.signature-mark { display: inline-grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 2px solid var(--farbe-text); border-radius: 50%; color: var(--farbe-text); background: var(--farbe-flaeche-karte); font-weight: var(--schriftstaerke-fett); }
+.signature-mark--positive { border-color: var(--farbe-status-positiv); }
+.signature-mark--risk { border-color: var(--farbe-status-negativ); border-radius: var(--radius-klein); }
+.signature-mark--conditional { border-color: var(--farbe-aktion-text); box-shadow: inset 0 0 0 3px var(--farbe-status-bedingt); }
+.signature-mark--ambivalent { background: linear-gradient(90deg, var(--farbe-status-negativ) 50%, var(--farbe-status-positiv) 50%); color: var(--farbe-flaeche-karte); border-color: var(--farbe-text); }
+.signature-mark--open, .signature-mark--unknown, .signature-mark--portfolio { border-style: dashed; }
+.signature-direction-track { display: block; position: relative; height: 1.6rem; border-bottom: 2px solid var(--farbe-text-sekundaer); margin-inline: .6rem; }
+.signature-position { position: absolute; bottom: -.65rem; font: inherit; font-weight: bold; background: var(--farbe-flaeche-karte); border: 1px solid var(--farbe-text); min-width: 1.2rem; text-align: center; line-height: 1.2; }
+.signature-position--left { left: 0; border-bottom: 3px solid var(--farbe-status-negativ); }
+.signature-position--right { right: 0; border-bottom: 3px solid var(--farbe-status-positiv); }
+.signature-position--middle { left: 45%; }
+.signature-position--unplaced { right: 0; bottom: .2rem; border-style: dashed; }
+.signature-track-labels { display: flex; justify-content: space-between; padding-top: var(--abstand-xs); gap: var(--abstand-s); font-size: var(--groesse-label); }
+.signature-pips, .signature-pipeline { display: flex; align-items: center; gap: .25rem; min-height: 2.25rem; }
+.signature-pips i { width: .75rem; height: .75rem; border: 1px solid var(--farbe-text-sekundaer); border-radius: 50%; }
+.signature-pips i.is-filled { background: var(--farbe-flaeche-buehne); }
+.signature-pips[data-evidence-grade="ungraded"] i { border-style: dashed; }
+.signature-pipeline i { border: 1px dashed var(--farbe-text-sekundaer); border-radius: 50%; width: 1.35rem; height: 1.35rem; text-align: center; font-style: normal; font-size: var(--groesse-label); line-height: 1.3rem; }
+.signature-pipeline i.is-current { border: 2px solid var(--farbe-text); font-weight: bold; background: var(--farbe-flaeche-buehne); color: var(--farbe-text-invers); }
+.impact-signature--compact dl { grid-template-columns: 1fr; gap: var(--abstand-xs); }
+.impact-signature--compact .signature-axis { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--abstand-xs); padding: .3rem 0; border: 0; }
+.impact-signature--compact dt { font-size: var(--groesse-label); }
+.impact-signature--compact dd { margin: 0; grid-template-columns: auto 1fr; align-items: center; font-size: var(--groesse-klein); }
+.impact-signature--compact .signature-direction-track { grid-column: 1 / -1; }
+.impact-signature--compact .signature-mark { width: 1.75rem; height: 1.75rem; font-size: var(--groesse-klein); }
+.case-card-finding { font-size: var(--groesse-klein); margin-block: var(--abstand-s); }
+.case-card-finding small { font: inherit; color: var(--farbe-text-sekundaer); }
+.case-card--row { margin-block: var(--abstand-s); }
+@media (min-width: 960px) {
+  .case-card--row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--abstand-l); }
+  .case-card--row > [data-woek-public-maturity] { grid-column: 2; grid-row: 1 / span 3; }
+}
+@media (max-width: 640px) {
+  .impact-signature:not(.impact-signature--compact) dl { grid-template-columns: 1fr; }
+  .impact-signature--compact .signature-axis { grid-template-columns: 6.25rem minmax(0, 1fr); }
+}
+@media (forced-colors: active) {
+  .signature-mark--ambivalent { background: Canvas; color: CanvasText; border-style: double; }
+  .signature-pips i.is-filled, .signature-pipeline i.is-current { background: Highlight; color: HighlightText; forced-color-adjust: none; }
+}

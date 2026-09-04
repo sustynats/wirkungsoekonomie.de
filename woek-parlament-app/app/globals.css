@@ -337,7 +337,8 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .impact-direction::before { content: ""; width: .75rem; height: .75rem; border: 2px solid currentColor; border-radius: 50%; }
 .impact-direction--positive { color: var(--farbe-status-positiv); }
 .impact-direction--negative { color: var(--farbe-status-negativ); }
-.impact-direction--ambivalent { color: var(--farbe-status-ambivalent); }
+.impact-direction--ambivalent { color: var(--farbe-text); }
+.impact-direction--ambivalent::before { background: linear-gradient(90deg, var(--farbe-status-negativ) 50%, var(--farbe-status-positiv) 50%); border-radius: 0; }
 .impact-direction--neutral, .impact-direction--open { color: var(--farbe-status-offen); }
 .impact-direction--open::before { border-style: dashed; }
 .government-impact-grid, .government-reference-groups, .government-source-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--abstand-raster); }
@@ -781,7 +782,8 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .normative-direction { padding: .25rem .45rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-soft); background: var(--cream); font-size: .69rem; font-weight: 800; line-height: 1.1; text-align: center; }
 .normative-direction-positive_potential, .normative-direction-observed_positive { color: #0f665e; border-color: #82bbb5; background: #e5f4f1; }
 .normative-direction-negative_risk, .normative-direction-observed_negative { color: #8b3b29; border-color: #df9a87; background: #fff0eb; }
-.normative-direction-ambivalent { color: #715a17; border-color: #d8bc71; background: #fff7df; }
+.normative-direction-ambivalent { color: var(--farbe-text); border-color: var(--farbe-text); background: var(--farbe-flaeche-karte); }
+.normative-direction-ambivalent::before { content: "↙↗"; margin-right: .3rem; padding: 0 .2rem; color: var(--farbe-flaeche-karte); background: linear-gradient(90deg, var(--farbe-status-negativ) 50%, var(--farbe-status-positiv) 50%); }
 .normative-tile h3 { margin: 0; color: var(--navy); font-size: 1.18rem; line-height: 1.2; }
 .normative-preview { margin: 0; color: var(--teal-deep); font-size: .82rem; font-weight: 800; }
 .normative-evidence { margin: 0; color: var(--muted); font-size: .83rem; line-height: 1.45; }
@@ -1460,7 +1462,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .overview-assessment-icon svg { width: 1.35rem; height: 1.35rem; }
 .overview-assessment-icon--risk,
 .overview-assessment-icon--protection { background: var(--farbe-text); }
-.overview-assessment-icon--ambivalent,
+.overview-assessment-icon--ambivalent { background: linear-gradient(90deg, var(--farbe-status-negativ) 50%, var(--farbe-status-positiv) 50%); }
 .overview-assessment-icon--conditional { background: var(--farbe-aktion-zweit); }
 .overview-assessment-icon--portfolio { background: var(--farbe-flaeche-buehne); }
 .overview-assessment-icon--open,
