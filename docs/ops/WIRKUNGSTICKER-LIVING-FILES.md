@@ -17,6 +17,14 @@ entfernt. Die Eingabegrenze und das Fakten-/Relevanzgate bleiben unverändert.
 
 `living-files.mjs` trennt Dokumentidentität, konkreten Vorgang und bloßen Themenbezug. `clusterItems()` löst bekannte Akten zuerst auf, bevor unbekannte Feedmeldungen neue Cluster bilden. Quellenpriorität und Reihenfolge dürfen eine bekannte Aktenidentität nicht übergehen. Historische Alias-Quellen führen zur fortgeführten Akte.
 
+Schon davor verwirft der Lauf unveränderte Wiederholungen über kanonische URL,
+Artikel-ID und Inhalts-Hash. Gleichlautende Agentur- oder Medienkopien werden zu
+einem Recherchecluster mit gekennzeichneter Abhängigkeit, nicht zu mehreren
+KI-Aufrufen oder mehreren Belegen unabhängiger Bestätigung. Eine unveränderte
+Wiederholung erzeugt keine Kandidatenakte, keine KI-Kosten, keine
+Lageakten-Aktualisierung, keine neue Feedposition und keinen Push. Dieses
+Verhalten ist ein automatischer Regressionstest und Release-Gate.
+
 - Trackingparameter und Fragmente ändern die Dokumentidentität nicht. Bei Stern, Spiegel und Tagesspiegel wird die stabile Artikel-ID auch bei geänderter URL-Überschrift erkannt; sonst bleiben bedeutungstragende URL-Parameter erhalten.
 - Konkreter Ort, Gegenstand und Zeitfenster begrenzen die Zuordnung. Herausgeberregionen sind keine Ereignisorte. Die Herkunft eines Bekennerschreibens ist ebenfalls nicht automatisch Tatort.
 - Besonders abgesichert ist die aktuelle Sabotage-Berichterstattung: ein Umspannwerk-Vorgang am selben expliziten Ort innerhalb von sieben Tagen kann dieselbe Akte fortsetzen. Andere Orte, erkennbare weitere Angriffe, ortsübergreifende Sammelmeldungen und Schutzentscheidungen bilden keine automatische Ereignisunion.
