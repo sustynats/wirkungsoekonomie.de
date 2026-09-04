@@ -85,6 +85,8 @@ jobs:
       - name: Build ticker and search for fast update
         if: steps.release-mode.outputs.ticker_only == 'true'
         run: |
+          npm run polls:test
+          npm run polls:build
           npm run news:build
           npm run build:search
           npm run news:validate
