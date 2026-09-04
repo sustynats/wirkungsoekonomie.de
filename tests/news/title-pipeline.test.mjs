@@ -125,11 +125,35 @@ test("already paid job can finish even when remaining account balance is empty",
   assert.ok((await provider.generate(STORY)).bytes);
   assert.equal(calls.some(a => a[1] === "create"), false);
 });
-test("terminal failed provider job is persisted and never waits or pays again",async(t)=>{
-  const calls=[],directory=temp(t),provider=createHiggsfieldAdapter({directory,enabled:true,run:mockRun(calls,{"generate get":()=>'{"id":"job-123456","status":"failed"}'})});
-  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
-  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
-  assert.equal(calls.filter(a=>a[1]==="create").length,1);assert.equal(calls.filter(a=>a[1]==="wait").length,0);
+test("confirmed failed provider job permits one delayed replacement and then stops durably",async(t)=>{
+  let clock="2026-09-04T09:00:00Z";
+  const calls=[],directory=temp(t),run=mockRun(calls,{"generate get":()=>'{"id":"job-123456","status":"failed"}'});
+  const options={directory,enabled:true,run,now:()=>clock};
+  let provider=createHiggsfieldAdapter(options);
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_JOB_RETRY_WAIT"});
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_JOB_RETRY_WAIT"});
+  assert.equal(calls.filter(a=>a[1]==="create").length,1);
+  clock="2026-09-04T09:15:00Z";
+  provider=createHiggsfieldAdapter(options); // A process restart must not reset the attempt budget.
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_RETRY_EXHAUSTED"});
+  await assert.rejects(createHiggsfieldAdapter(options).generate(STORY),{code:"HIGGSFIELD_RETRY_EXHAUSTED"});
+  assert.equal(calls.filter(a=>a[1]==="create").length,2);assert.equal(calls.filter(a=>a[1]==="wait").length,0);
+  const record=JSON.parse(fs.readFileSync(path.join(directory,STORY.story_id,"source-visual.json")));
+  assert.equal(record.previous_attempts.length,1);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(directory,"credits.json"))).reservations.length,2);
+});
+test("confirmed provider failure can recover, but cancelled jobs never generate a replacement",async(t)=>{
+  let clock="2026-09-04T09:00:00Z", failed=true;const calls=[],directory=temp(t);
+  const provider=createHiggsfieldAdapter({directory,enabled:true,now:()=>clock,run:mockRun(calls,{"generate get":()=>JSON.stringify({id:"job-123456",status:failed?"failed":"queued"})}),download:async()=>asset(),quality:async()=>({version:VISUAL_GATE_VERSION,status:"passed"})});
+  await assert.rejects(provider.generate(STORY),{code:"HIGGSFIELD_JOB_RETRY_WAIT"});
+  failed=false;clock="2026-09-04T09:15:00Z";
+  assert.ok((await provider.generate(STORY)).bytes);
+  assert.equal((await provider.generate(STORY)).reused,true);
+  assert.equal(calls.filter(a=>a[1]==="create").length,2);
+  const cancelledCalls=[],cancelled=createHiggsfieldAdapter({directory:temp(t),enabled:true,run:mockRun(cancelledCalls,{"generate get":()=>'{"id":"job-123456","status":"cancelled"}'})});
+  await assert.rejects(cancelled.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
+  await assert.rejects(cancelled.generate(STORY),{code:"HIGGSFIELD_PREVIOUS_JOB_FAILED"});
+  assert.equal(cancelledCalls.filter(a=>a[1]==="create").length,1);
 });
 test("ambiguous submit is durable and cannot create another paid job", async (t) => {
   const calls=[],directory=temp(t), run=mockRun(calls,{"generate create":()=>{throw imageError("HIGGSFIELD_TIMEOUT");},"generate list":()=>"[]"});

@@ -97,7 +97,15 @@ oder mit Website-Cookies umgangen werden. Keine Garantie „nie wieder einloggen
 Ein aktiver Generierungsauftrag serverweit, zusätzlich dateibasierte Sperre.
 Private Reservierung **vor** dem Create; unbekannter Ausgang wird anhand eindeutig
 passenden Modell-/Prompt-/Zeitdaten aus der offiziellen Auftragsliste geklärt.
-Es wird nie blind erneut Create ausgeführt. Bekannte Jobs werden nur abgefragt.
+Es wird nie blind erneut Create ausgeführt. Bekannte Jobs werden zunächst abgefragt.
+Bei **bestätigtem** Anbieterstatus `failed` oder `error` ist nach mindestens einer
+Minute genau ein Ersatzauftrag erlaubt (höchstens zwei Aufträge je Motivrevision).
+Der Fehlversuch bleibt im privaten Journal; die Versuchszahl übersteht Neustarts.
+Auch dieser Ersatzauftrag prüft Guthaben/Preis und reserviert vor dem Create.
+Eine Erstattung fehlgeschlagener Jobs wird nicht angenommen. Unklarer Submit,
+Abbruch (`cancelled`) und Ablehnung durch die Bildprüfung erlauben keinen solchen
+Ersatzauftrag. Nach ausgeschöpftem Versuch bleibt das bisherige Bild/die Karte
+sichtbar; der Betriebsmonitor meldet den technischen Fehler bei Bestätigung.
 Timeout/Downloadfehler: begrenzte Wiederholung mit Backoff. Kein Nachkauf von Credits.
 
 **Freigabe vom 4. September, nach Guthabenbestätigung:** Die internen Grenzen von

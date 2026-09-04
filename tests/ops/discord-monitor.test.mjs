@@ -40,6 +40,14 @@ test('transient outage stays quiet; confirmed outage and recovery each notify on
 test('no new articles is not a pipeline failure', () => {
   assert.ok(evaluateChecks(fixture(), now).checks.every(c => c.ok));
 });
+test('image-provider outages and exhausted retries are monitored, deliberate cards and safety rejections are not outages', () => {
+  const d=fixture();
+  d.stories=[{published:true,title_image:{mode:'impact_card',fallback_reason:'IMAGE_CONTAINS_TEXT'}}];
+  assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='images').ok,true);
+  d.stories.push({published:true,title_image:{mode:'editorial',refresh_failure:'HIGGSFIELD_RETRY_EXHAUSTED'}});
+  const c=evaluateChecks(d,now).checks.find(c=>c.id==='images');
+  assert.equal(c.ok,false);assert.match(c.reason,/1 Symbolbild mit/);assert.match(c.reason,/Nachrichten werden dadurch nicht zurückgehalten/);
+});
 test('stale or missing report, provider failure, and missing feed are detected', () => {
   const d = fixture(); d.report.completed_at = '2026-09-04T04:00:00Z'; d.report.ai_error = 'HTTP503'; d.liveFeed = null;
   const c = evaluateChecks(d, now).checks;
