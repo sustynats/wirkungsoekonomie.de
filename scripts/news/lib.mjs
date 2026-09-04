@@ -5,6 +5,7 @@ import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, sourceEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
+import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
 
 const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
@@ -71,7 +72,7 @@ const SPECIFIC_STORY_CONCEPTS = [
   ["policy:electricity-capacity-market", /\b(stromvkg|kapazitätsmarkt|kapazitaetsmarkt|kapazitätsmechanismus|kapazitaetsmechanismus|stromkapazität|stromkapazitaet|gesicherte\s+leistung)\w*/i],
   ["policy:gas-storage-levy", /\bgasspeicherumlage\w*/i],
   ["policy:electricity-grid-fees", /\b(strom[- ]?netzentgelt|netzentgelt).{0,90}\b(bundeszuschuss|senk|dämpf|daempf)|\b(bundeszuschuss).{0,90}\b(strom[- ]?netzentgelt|netzentgelt)/i],
-  ["policy:offshore-wind", /\b(windenergie[- ]auf[- ]see|offshore[- ]wind)\w*/i],
+  ["policy:offshore-wind", /\b(windenergie[- ]auf[- ]see[- ]gesetz|windseeg)\b/i],
   ["policy:critical-infrastructure", /\b(kritis[- ]dachgesetz|schutz\s+kritischer\s+infrastrukturen)\w*/i],
   ["policy:income-tax-reform", /\b(einkommensteuerreform|einkommensteuerreformgesetz)\w*/i],
   ["policy:regional-guarantee-register", /\bregionalnachweisregister\w*/i],
@@ -442,17 +443,17 @@ function storyReferenceKeys(...values) {
 }
 
 function existingStoryMatch(item, entry, now) {
-  const sourceUrls = new Set((entry.story.sources || []).map((source) => source.url));
-  if (sourceUrls.has(item.url)) return 1;
-  const itemReferences = storyReferenceKeys(item.title, item.summary);
-  const storyReferences = storyReferenceKeys(entry.story.title, ...(entry.story.sources || []).flatMap((source) => [source.title, source.summary]));
-  if ([...itemReferences].some((reference) => storyReferences.has(reference))) return 0.99;
+  if (subjectConflict(item, entry.story)) return 0;
+  const identity = livingFileMatch(item, entry.story);
+  if (identity.score) return identity.score;
   const age = Math.abs(Date.parse(item.published_at || now) - Date.parse(entry.last_updated || now));
   if (age > 120 * 24 * 60 * 60 * 1000) return 0;
-  return Math.max(
-    storySimilarity(item.title, entry.title),
-    ...(entry.story.sources || []).map((source) => storySimilarity(item.title, source.title)),
-  );
+  const itemReferences = storyReferenceKeys(item.title, item.summary);
+  // Do not let a contextual source merge another place or policy into this file.
+  const compatibleSources = (entry.story.sources || []).filter((source) => !subjectConflict(item, source));
+  const storyReferences = storyReferenceKeys(entry.story.title, ...compatibleSources.flatMap((source) => [source.title, source.summary]));
+  if ([...itemReferences].some((reference) => storyReferences.has(reference))) return 0.99;
+  return Math.max(0, ...compatibleSources.filter((source) => eventCompatibility(item, source).same_event).map((source) => storySimilarity(item.title, source.title)));
 }
 
 export function classifyItem(item, source = {}) {
@@ -587,33 +588,26 @@ export function preAnalyzeStory(story) {
 
 export function clusterItems(items, existingStories = [], now = new Date().toISOString()) {
   const clusters = [];
-  const existing = existingStories.map((story) => ({ story, title: story.title, last_updated: story.last_updated }));
-  const sorted = [...items].sort((a, b) => Number(b.source_priority || 0) - Number(a.source_priority || 0));
-  for (const item of sorted) {
+  const existing = matchingStories(existingStories).map((story) => ({ story, title: story.title, last_updated: story.last_updated }));
+  const sorted = items.map((item) => ({ item, match: existing
+      .filter((entry) => !isMerged(entry.story))
+      .map((entry) => ({ ...entry, similarity: existingStoryMatch(item, entry, now) }))
+      .filter((entry) => entry.similarity >= 0.64)
+      .sort((a, b) => b.similarity - a.similarity || Number(Boolean(b.story.published && b.story.listed !== false)) - Number(Boolean(a.story.published && a.story.listed !== false)) || a.story.story_id.localeCompare(b.story.story_id))[0] }))
+    .sort((a, b) => Number(Boolean(b.match)) - Number(Boolean(a.match)) || Number(b.item.source_priority || 0) - Number(a.item.source_priority || 0));
+  for (const { item, match } of sorted) {
     const timestamp = Date.parse(item.published_at || now);
-    let target = clusters.find((cluster) => {
-      const delta = Math.abs(timestamp - Date.parse(cluster.last_updated || now));
-      return delta <= 96 * 60 * 60 * 1000 && cluster.sources.some((source) => eventCompatibility(item, source).same_event);
-    });
-    if (!target) {
-      const match = existing
-        .map((entry) => ({ ...entry, similarity: existingStoryMatch(item, entry, now) }))
-        .sort((a, b) => b.similarity - a.similarity)[0];
-      if (match?.similarity >= 0.64) {
-        target = clusters.find((cluster) => cluster.story_id === match.story.story_id);
-        if (!target) {
-          target = {
-            story_id: match.story.story_id,
-            existing_story: match.story,
-            title: match.story.title,
-            first_seen: match.story.first_seen,
-            last_updated: item.published_at || now,
-            sources: [],
-          };
-          clusters.push(target);
-        }
-      }
+    // Resolve known files before unanchored batch clusters, regardless of feed order.
+    let target = match ? clusters.find((cluster) => cluster.story_id === match.story.story_id) : null;
+    if (match && !target) {
+      target = { story_id: match.story.story_id, existing_story: match.story.routing_original || match.story, title: match.story.title, first_seen: match.story.first_seen, last_updated: item.published_at || now, sources: [] };
+      clusters.push(target);
     }
+    if (!target) target = clusters.find((cluster) => {
+      const delta = Math.abs(timestamp - Date.parse(cluster.last_updated || now));
+      return delta <= 96 * 60 * 60 * 1000 && !subjectConflict(item, cluster)
+        && (livingFileMatch(item, cluster).score >= 0.98 || cluster.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event));
+    });
     if (!target) {
       const signature = [...titleTokens(item.title)].sort().slice(0, 10).join("-") || item.item_id;
       target = {

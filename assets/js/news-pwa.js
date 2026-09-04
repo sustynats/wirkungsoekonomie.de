@@ -300,9 +300,12 @@
       const feedLatest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
       latestFeedTimestamp = feedLatest;
       const pageLatest = newestCardTimestamp();
+      const pageRevision = document.querySelector('meta[name="woek-news-revision"]')?.content;
+      const publicRevisionChanged = Boolean(pageRevision && typeof feed._woek_revision === "string" && feed._woek_revision !== pageRevision);
       // An explicit refresh also picks up image/template-only releases whose
       // editorial publication timestamps intentionally remain unchanged.
-      if (cards.length && (manual || feedLatest > pageLatest) && document.visibilityState === "visible") {
+      // Archival/consolidation changes refresh the list without becoming unread news.
+      if (cards.length && (manual || publicRevisionChanged || feedLatest > pageLatest) && document.visibilityState === "visible") {
         const lastReload = Number(window.sessionStorage.getItem(autoReloadKey) || 0);
         if (manual || Date.now() - lastReload > 60 * 1000) {
           window.sessionStorage.setItem(autoReloadKey, String(Date.now()));

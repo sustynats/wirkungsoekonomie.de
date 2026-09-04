@@ -10,9 +10,11 @@ import {
 import { loadNewsRegistry } from "./registry.mjs";
 import { buildSourcePages } from "./source-pages.mjs";
 import { canonicalizeUrl } from "./lib.mjs";
+import { relatedStories } from "./living-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
+const PUBLIC_RELEASE = "20260904-files1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
@@ -234,7 +236,7 @@ function card(story, index) {
 </article>`;
 }
 
-function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null }) {
+function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null, publicUpdatedAt = "" }) {
   const { header, footer } = renderLayout(base);
   return `<!doctype html>
 <html lang="de">
@@ -243,6 +245,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)} | Wirkungsökonomie</title>
   <meta name="description" content="${escapeHtml(description)}">
+  ${publicUpdatedAt ? `<meta name="woek-news-revision" content="${PUBLIC_RELEASE}:${escapeHtml(publicUpdatedAt)}">` : ""}
   <link rel="canonical" href="${escapeHtml(canonical)}">
   ${robots ? `<meta name="robots" content="${escapeHtml(robots)}">` : ""}
   <meta property="og:type" content="website">
@@ -270,7 +273,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260904-reader2">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260904-files1">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -280,7 +283,7 @@ ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
 <script src="${base}assets/js/main.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-pwa.js?v=20260904-files1"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260904-reader2"></script>
 ${extraScript}
 </body>
@@ -331,6 +334,7 @@ function indexPage(stories, updatedAt) {
 </main>`;
   return pageShell({
     title: "Wirkungsticker",
+    publicUpdatedAt: updatedAt,
     description: "Automatisch aktualisierte, quellengebundene Wirkungsnachrichten für Mensch, Planet und Demokratie.",
     canonical: `${SITE}/wirkungsticker/`,
     base: "../",
@@ -372,7 +376,19 @@ function renderNewsroomEvidence(story) {
   return `<section class="section" aria-label="Nachrichten- und Belegstand"><article class="news-story-section"><p class="hero-kicker">${escapeHtml(status)}</p><h2>Was ist wie belegt?</h2><ul>${claims}</ul><p class="news-method-note">Jeder Link führt zu einem Quellartikel. Mehrere Textstellen aus demselben Artikel sind keine voneinander unabhängigen Quellen.</p><p class="news-method-note">Automatische quellengebundene Prüfung, keine Garantie vollständiger oder fehlerfreier Berichterstattung. Abhängigkeiten zwischen Quellen können unerkannt bleiben; eine institutionelle Aussage belegt nicht automatisch den behaupteten Erfolg.</p>${followups ? `<details><summary>Geplante Folgeprüfungen</summary><ul>${followups}</ul></details>` : ""}</article></section>`;
 }
 
-function storyPage(story, { newerStory = null, nextStory = null } = {}) {
+export function renderRelatedStories(story, stories) {
+  const related = relatedStories(story, stories);
+  if (!related.length) return "";
+  return `<section class="section news-related" data-news-related data-search-exclude aria-labelledby="news-related-title"><div class="section-header"><p class="hero-kicker">Im Zusammenhang</p><h2 id="news-related-title">Weitere Nachrichten zum Thema</h2><p>Andere Vorgänge und Hintergründe mit konkretem Themenbezug. Neue Entwicklungen zu diesem Vorgang werden in dieser Akte fortgeschrieben.</p></div><ul class="news-related__list">${related.map(({ story: item, reason }) => `<li><article class="news-story-section"><p class="news-method-note">${escapeHtml(reason)}</p><h3><a class="text-link" href="../${escapeHtml(item.slug)}/">${escapeHtml(item.title)}</a></h3><p>${escapeHtml(item.analysis.summary)}</p><p class="news-method-note">WÖk-Analyse aktualisiert ${escapeHtml(formatDate(item.last_updated))}</p></article></li>`).join("")}</ul></section>`;
+}
+
+function renderConsolidations(story) {
+  const entries = story.living_file?.consolidations || [];
+  if (!entries.length) return "";
+  return `<aside class="notice news-consolidation" role="note"><strong>Zusammengeführte Berichterstattung:</strong> Frühere Meldungen zum selben Vorgang werden in dieser Akte fortgeführt. Die Zusammenführung selbst ist keine neue Nachricht. Frühere Stände bleiben nachvollziehbar:<ul>${entries.map((entry) => `<li><a class="text-link" href="../${escapeHtml(entry.slug)}/">${escapeHtml(entry.title)}</a> · zusammengeführt ${escapeHtml(formatDate(entry.at))}</li>`).join("")}</ul>${story.pending_update?.consolidation ? "<p>Zusätzliche Quellen aus der Zusammenführung stehen zur erneuten Prüfung an. Der angezeigte Nachrichten- und Analysestand bleibt bis dahin unverändert.</p>" : ""}</aside>`;
+}
+
+function storyPage(story, { newerStory = null, nextStory = null, allStories = [] } = {}) {
   const titleImage = publicTitleImage(story.title_image);
   const a = story.analysis;
   const detailSummary = expandedDetailSummary(a);
@@ -403,6 +419,7 @@ function storyPage(story, { newerStory = null, nextStory = null } = {}) {
   ${titleImage?.wide ? `<figure class="news-title-image news-title-image--detail"><img src="${escapeHtml(titleImage.wide.url)}" alt="${escapeHtml(titleImage.label)} zum Thema ${escapeHtml(story.title)}" width="1200" height="675" decoding="async"><figcaption>${escapeHtml(titleImage.label)} · Darstellung, kein Beleg des Ereignisses.</figcaption></figure>` : ""}
   ${renderAtAGlance(story, { formatDate })}
   ${(story.corrections || []).map((correction) => `<aside class="notice" role="note"><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}:</strong> ${escapeHtml(correction.note)}</aside>`).join("")}
+  ${renderConsolidations(story)}
   ${renderNewsroomEvidence(story)}
   <nav class="wt-subnav" aria-label="Abschnitte dieser Wirkungsakte"><div class="wt-subnav__inner"><a href="#nachricht">Nachricht</a><a href="#faktencheck">Faktencheck</a><a href="#analyse">Analyse</a><a href="#einordnung">Einordnung</a><a href="#folgencheck">Folgencheck</a><a href="#bedeutung">Bedeutung</a><a href="#offen">Offene Fragen</a><a href="#quellen">Quellen</a></div></nav>
   <section class="section"><div class="news-story-layout"><div class="news-story-main">
@@ -417,6 +434,7 @@ function storyPage(story, { newerStory = null, nextStory = null } = {}) {
     <article class="news-story-section" id="quellen"><p class="hero-kicker">${renderIcon("quelle")}<span>Quellenakte</span></p><h2>Quellen und Belegrollen</h2><ul class="news-source-list">${sources}</ul><div class="wt-evidence"><div class="wt-evidence__item"><strong>${renderIcon("wahrheit")}Evidenzgrad</strong><span>${escapeHtml(a.evidence_level)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("check")}Zurechnung</strong><span>${escapeHtml(a.attribution)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("bildung")}Referenzrahmen</strong><span>${escapeHtml((a.reference_frameworks || []).join(" · ") || "objektspezifisch offen")}</span></div></div><p class="news-method-note">Das interne Claim-Ledger bindet ${story.claims.length} ${story.claims.length === 1 ? "tragenden Claim" : "tragende Claims"} an die oben genannten Quellen. Feed-Kurztexte werden nicht als Originalartikel gespiegelt.</p></article>
     <article class="news-story-section"><p class="hero-kicker">${renderIcon("version")}<span>Verlauf</span></p><h2>Versionsverlauf</h2><ol class="wt-versions">${history}</ol><p><a class="text-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list>Zurück zur Übersicht an die vorige Leseposition</a></p></article>
   </aside></div></section>
+  ${renderRelatedStories(story, allStories)}
   <section class="section news-story-footer" aria-label="Weitere Wirkungsnachrichten"><div class="news-story-footer__inner"><div class="news-story-footer__share"><p class="hero-kicker">Behalten &amp; weitergeben</p><h2>Nachricht merken oder teilen</h2><div class="news-reader-actions">${saveControl(story)}${shareControl(story, "bottom")}<a class="text-link" href="../../mein-wirkungsraum/#gemerkte-inhalte">Meine Merkliste</a></div></div><div class="news-reader-actions" data-search-exclude><button class="btn btn-secondary" type="button" data-news-reader-back hidden>← Zurück im Leseweg</button><p class="news-swipe-hint" data-news-swipe-hint hidden>Wischen: rechts zurück${nextStory ? ", links zur nächsten Meldung" : ""}.</p></div><nav class="news-story-pagination" aria-label="Zwischen Wirkungsnachrichten blättern">${newerLink}<a class="news-story-pagination__overview" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">↑</span><span>Zur Übersicht und Leseposition</span></a>${nextLink}</nav></div></section>
 </main>`;
   return pageShell({
@@ -549,12 +567,14 @@ export function buildNewsSite() {
     write(path.join(TICKER_DIR, story.slug, "index.html"), storyPage(story, {
       newerStory: stories[index - 1] || null,
       nextStory: stories[index + 1] || null,
+      allStories: stories,
     }));
   }
   for (const story of retiredStories) write(path.join(TICKER_DIR, story.slug, "index.html"), retiredStoryPage(story));
   write(path.join(TICKER_DIR, "feed.xml"), feedXml(stories, publicationUpdatedAt));
   write(path.join(TICKER_DIR, "feed.atom"), feedXml(stories, publicationUpdatedAt, true));
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
+    _woek_revision: `${PUBLIC_RELEASE}:${publicationUpdatedAt}`,
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: stories.map((story) => ({ id: `${SITE}/wirkungsticker/${story.slug}/`, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, date_published: story.published_at, date_modified: story.last_updated, tags: story.topic })),
   }, null, 2));
