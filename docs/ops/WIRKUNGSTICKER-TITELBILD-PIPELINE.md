@@ -126,7 +126,7 @@ npm run news:title-images:backfill -- --execute --refresh-editorial --limit=20
 
 Standard ist Dry-run. Der bestehende Workflow besitzt die expliziten Dispatch-
 Eingaben `title_images_backfill=true` und `title_images_limit=20`. Er markiert nur
-die ausgewählte Menge bestehender Akten. Nach dem vierminütigen Backfill-Zeitbudget
+die ausgewählte Menge bestehender Akten. Nach dem zehnminütigen Backfill-Zeitbudget
 beendet der normale servergestützte Tickerlauf die markierte Restmenge schrittweise.
 Keine automatische Generierung für die gesamte Historie bei jedem Build.
 `--render-only` nutzt gespeicherte Originale ohne neue Generierung.

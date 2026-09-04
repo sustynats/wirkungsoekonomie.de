@@ -5,7 +5,7 @@ import { createTitleImagePipeline, publicTitleImage } from "./pipeline.mjs";
 import { buildNewsSite } from "../build.mjs";
 import { IMAGE_CONFIG as C, chooseTitleImageMode } from "./policy.mjs";
 
-export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, editorialOnly = false, refreshEditorial = false, prepare = null, maxDurationMs = 240000, build = buildNewsSite } = {}) {
+export async function backfillTitleImages({ root = path.resolve(import.meta.dirname, "../../.."), limit = 5, dryRun = true, cardsOnly = false, renderOnly = false, editorialOnly = false, refreshEditorial = false, prepare = null, maxDurationMs = 600000, build = buildNewsSite } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 100) throw new Error("TITLE_IMAGE_LIMIT_INVALID");
   if (editorialOnly && (!renderOnly || cardsOnly)) throw new Error("TITLE_IMAGE_EDITORIAL_ONLY_REQUIRES_RENDER_ONLY");
   if (refreshEditorial && (renderOnly || cardsOnly || editorialOnly)) throw new Error("TITLE_IMAGE_REFRESH_MODE_CONFLICT");
