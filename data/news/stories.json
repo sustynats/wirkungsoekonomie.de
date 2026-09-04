@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T22:21:29.171Z",
+  "updated_at": "2026-09-04T22:36:38.623Z",
   "stories": [
     {
       "story_id": "wt-5072789df611867b",
@@ -923,7 +923,7 @@
           "title": "\"Return Hubs\" - Abschiebezentren für Migranten außerhalb der EU: Was Deutschland und andere Länder planen",
           "summary": "Deutschland und weitere EU-Länder treiben die umstrittenen Pläne für Abschiebezentren für abgelehnte Asylbewerber außerhalb der Europäischen Union voran. Noch in diesem Jahr soll eine Vereinbarung mit einem Partnerland getroffen werden. Die Pläne im Überblick.",
           "source_type": "media_rss",
-          "published_at": "2026-09-04T22:17:29.000Z",
+          "published_at": "2026-09-04T22:29:18.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -939,8 +939,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-04T22:17:29.000Z",
-          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "source_published_at": "2026-09-04T22:29:18.000Z",
+          "ingested_at": "2026-09-04T22:36:38.623Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -967,7 +967,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T22:21:29.171Z"
+          "checked_at": "2026-09-04T22:36:38.623Z"
         },
         {
           "claim_id": "wt-26d13b6e9769c73c-claim-02",
@@ -987,7 +987,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T22:21:29.171Z"
+          "checked_at": "2026-09-04T22:36:38.623Z"
         }
       ],
       "content_hash": "cd1f73356d61208b6baff516ff93913f9d7b575a1ceba4fc5937bd5d8a009e69",
@@ -996,12 +996,12 @@
       "quality_errors": [
         "AI_UNSUPPORTED_FRAMEWORK_NUMBER:10,7"
       ],
-      "quality_retry_count": 1,
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T22:21:29.171Z",
+      "updated_at": "2026-09-04T22:36:38.623Z",
       "event_first_seen_at": "2026-09-04T14:36:55.366Z",
       "event_detected_at": "2026-09-04T14:36:55.366Z",
       "event_id": "event-f53e98125a20965fa309",
@@ -1029,13 +1029,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4.00285,
+        "source_age_minutes": 7.3437166666666664,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 464.5634166666667,
+        "queue_age_minutes": 479.72095,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 98,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -7956,7 +7956,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-04T22:21:29.171Z",
+          "ingested_at": "2026-09-04T22:36:38.623Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -7983,7 +7983,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T22:21:29.171Z"
+          "checked_at": "2026-09-04T22:36:38.623Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -7995,7 +7995,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T22:21:29.171Z",
+      "updated_at": "2026-09-04T22:36:38.623Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -8025,20 +8025,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 156.46951666666666,
+        "source_age_minutes": 171.62705,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.03613333333334,
+        "queue_age_minutes": 225.19366666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 67,
+        "news_freshness_score": 64,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T22:21:29.171Z",
+      "rejected_at": "2026-09-04T22:36:38.623Z",
       "rejection": {
-        "at": "2026-09-04T22:21:29.171Z",
+        "at": "2026-09-04T22:36:38.623Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
