@@ -552,6 +552,7 @@ test("Oracle-Clock-Push startet auch nachts; andere Pushes erzwingen keinen Lauf
     ["refs/heads/codex/wirkungsticker-clock", "true"],
     ["refs/heads/main", "false"],
     ["refs/heads/codex/wirkungsticker-clock-other", "false"],
+    ["refs/heads/codex/ops-monitor-clock", "false"],
   ]) {
     const result = spawnSync(process.execPath, [script], {
       encoding: "utf8",

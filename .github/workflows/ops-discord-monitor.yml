@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0,15,30,45 * * * *'
   push:
-    branches: [codex/wirkungsticker-clock]
+    branches: [codex/wirkungsticker-clock, codex/ops-monitor-clock]
   workflow_dispatch:
     inputs:
       report_now:
