@@ -75,6 +75,36 @@ test("subsequent consolidation resolves older aliases directly and preserves the
   assert.deepEqual(c.retirement_history[0].canonical_story_ids, ["b"]);
   assert.equal(clusterItems([source("Aktualisierung", c.sources[0].url)], stories, now)[0].story_id, "dormagen");
 });
+
+test("Jänschwalde, NRW and a shared investigation stay distinct but cross-linked", () => {
+  const janschwalde = story("janschwalde", "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben aufgetaucht", {
+    source_summary: "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde ist ein Bekennerschreiben eingegangen. Seine Echtheit ist offen.",
+  });
+  const roundup = story("ard", "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch", {
+    source_summary: "Die Polizei hält die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch. Ein mutmaßlicher Alleintäter bekennt sich zu den Anschlägen in Jänschwalde und in Bergheim bei Köln.",
+  });
+  const corpus = [janschwalde, dormagen, roundup];
+  const before = structuredClone(corpus);
+  assert.equal(fileSubject(roundup).multipleEvents, true);
+  assert.equal(fileSubject(roundup).key, null);
+  assert.deepEqual(duplicateGroups(corpus), []);
+  const incoming = source(roundup.title, roundup.sources[0].url, { summary: roundup.source_summary });
+  const clustered = clusterItems([incoming], [janschwalde, dormagen], now);
+  assert.notEqual(clustered[0].story_id, janschwalde.story_id);
+  assert.notEqual(clustered[0].story_id, dormagen.story_id);
+  assert.deepEqual(relatedStories(roundup, corpus).map((item) => item.story.story_id).sort(), ["dormagen", "janschwalde"]);
+  assert.deepEqual(corpus, before, "a thematic link cannot copy facts, alter dates or merge stories");
+  assert.equal(relatedStories(roundup, [roundup, story("supply", "Stromversorgung: Netzentgelte sinken")]).length, 0);
+});
+
+test("a known article URL cannot override newly widened multi-attack scope", () => {
+  const incoming = source("Sabotage am Stromnetz: Ermittler prüfen mehrere Anschläge", dormagen.sources[0].url, {
+    summary: "Nach dem Angriff in Dormagen untersucht die Polizei weitere Angriffe auf die Stromversorgung.",
+  });
+  assert.equal(livingFileMatch(incoming, dormagen).score, 0);
+  assert.equal(subjectConflict(incoming, dormagen), true);
+  assert.notEqual(clusterItems([incoming], [dormagen], now)[0].story_id, dormagen.story_id);
+});
 test("related links are capped, relevant, unique and never filled by shared category alone", () => {
   const relevant = Array.from({ length: 7 }, (_, i) => story(`related-${i}`, `Sicherheitsmaßnahmen für Umspannwerke ${i}`));
   const irrelevant = story("offshore", "Neue Ausschreibung für Windenergie auf See", { topic: ["Energie"] });

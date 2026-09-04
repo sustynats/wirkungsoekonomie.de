@@ -39,7 +39,7 @@ export function fileSubject(item) {
   const title = String(item.title || "");
   const lead = String(item.summary || item.source_summary || "").split(/\n\s*\n/)[0].slice(0, 650);
   const text = normal(`${title} ${lead}`);
-  const grid = /\b(umspannwerk\w*|stromnetz\w*|substation\w*)\b/.test(text);
+  const grid = /\b(umspannwerk\w*|stromnetz\w*|stromversorgung\w*|substation\w*)\b/.test(text);
   const response = /\b(schutz|sicherheitszentrum|sicherheitsvorkehrung\w*|schutzmassnahm\w*|schutzt|kritis-dachgesetz)\b/.test(normal(title));
   const incident = grid && /\b(sabotage\w*|angriff\w*|anschlag\w*|bekennerschreiben|verdachtiger gegenstand|attack\w*)\b/.test(text);
   const titlePlaces = placesIn(title);
@@ -50,12 +50,16 @@ export function fileSubject(item) {
   const directPlace = title.match(/\bUmspannwerk\s+([A-ZÄÖÜ][\p{L}-]+)/u)?.[1];
   const eventPlaces = directPlace && !titlePlaces.length ? [normal(directPlace)] : unique([...places, ...(directPlace ? [normal(directPlace)] : [])]);
   const recurrence = /\b(?:zweiter|weiterer|neuer|erneuter)\s+(?:anschlag|angriff|sabotageversuch)\b/.test(normal(title));
-  return { kind, places: eventPlaces, countries, recurrence, key: !recurrence && kind === "grid_incident" && eventPlaces.length === 1 ? `grid_incident:${eventPlaces[0]}` : null };
+  const multipleEvents = eventPlaces.length > 1 || /\b(anschlage|anschlagen|angriffe|angriffen|sabotageakte|sabotageakten|mehrere\w* tatorte)\b/.test(text);
+  return { kind, places: eventPlaces, countries, recurrence, multipleEvents, key: !recurrence && !multipleEvents && kind === "grid_incident" && eventPlaces.length === 1 ? `grid_incident:${eventPlaces[0]}` : null };
 }
 
 export function subjectConflict(a, b) {
   const left = fileSubject(a), right = fileSubject(b);
   if (left.recurrence !== right.recurrence && left.kind === "grid_incident" && right.kind === "grid_incident") return true;
+  // A report about several attacks cannot become the update of just one site,
+  // even if its publisher reuses a formerly single-event article URL.
+  if (left.multipleEvents !== right.multipleEvents && left.kind === "grid_incident" && right.kind === "grid_incident") return true;
   if (left.kind !== "other" && right.kind !== "other" && left.kind !== right.kind) return true;
   if (left.countries.length && right.countries.length && !intersects(left.countries, right.countries)) return true;
   if (left.places.length && right.places.length && !intersects(left.places, right.places)) return true;
@@ -160,7 +164,7 @@ export function duplicateGroups(stories) {
 }
 
 const RELATED_TOPICS = [
-  ["grid-security", "Stromnetz und Schutz kritischer Infrastruktur", /\b(umspannwerk\w*|stromnetz[- ]sabotage|sabotage.{0,60}stromnetz|kritis-dachgesetz|schutz kritischer infrastrukturen)\b/],
+  ["grid-security", "Stromnetz und Schutz kritischer Infrastruktur", /\b(umspannwerk\w*|stromnetz[- ]sabotage|(?:sabotage|anschlag).{0,90}(?:stromnetz|stromversorgung)|stromversorgung.{0,90}(?:sabotage|anschlag)|kritis-dachgesetz|schutz kritischer infrastrukturen)\b/],
   ["care-training", "Ausbildung und Versorgung in Gesundheitsberufen", /\b(pflegeausbildung|gesundheitsberuf\w*|heilberuf\w*)\b/],
   ["heat-protection", "Hitzefolgen und Klimaanpassung", /\b(hitzeschutz|hitzewelle\w*|heatwaves?|hitzehilfe)\b/],
   ["fuel-prices", "Kraftstoffpreise und Mobilität", /\b(spritpreis\w*|benzinpreis\w*|e10|kraftstoffpreis\w*)\b/],
