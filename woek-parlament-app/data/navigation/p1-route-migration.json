@@ -1,0 +1,300 @@
+{
+  "base_commit": "4d57b24dab20fa1daf63a661cdcd69dd04cc195c",
+  "phase": "P1",
+  "data_changes": "NONE",
+  "aliases": [
+    {
+      "source": "app/abgeordnete/[slug]/page.tsx",
+      "destination": "app/monitor/abstimmungen/abgeordnete/[slug]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/abgeordnete/[slug]/quelle/page.tsx",
+      "destination": "app/monitor/abstimmungen/abgeordnete/[slug]/quelle/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/abgeordnete/page.tsx",
+      "destination": "app/monitor/abstimmungen/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/abstimmungen/[voteId]/page.tsx",
+      "destination": "app/monitor/abstimmungen/[voteId]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/autopilot/status/page.tsx",
+      "destination": "app/pruefstandard/transparenz/datenbetrieb/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/begriffe/page.tsx",
+      "destination": "app/pruefstandard/begriffe/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/eu/gesetzgebung/page.tsx",
+      "destination": "app/ebenen/eu/gesetzgebung/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/eu/kommission/page.tsx",
+      "destination": "app/ebenen/eu/kommission/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/eu/mandat/page.tsx",
+      "destination": "app/ebenen/eu/mandat/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/eu/page.tsx",
+      "destination": "app/ebenen/eu/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/eu/wirkungsfaelle/[id]/page.tsx",
+      "destination": "app/ebenen/eu/wirkungsfaelle/[id]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/fachakten/[id]/route.ts",
+      "destination": "app/wirkungsakten/fachakten/[id]/route.ts",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/fachanalysen/[slug]/page.tsx",
+      "destination": "app/wirkungsakten/fachanalysen/[slug]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/[slug]/mandat-und-praxis/page.tsx",
+      "destination": "app/ebenen/laender/[slug]/mandat-und-praxis/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/[slug]/page.tsx",
+      "destination": "app/ebenen/laender/[slug]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/[slug]/regierung/page.tsx",
+      "destination": "app/ebenen/laender/[slug]/regierung/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/[slug]/wahl/page.tsx",
+      "destination": "app/ebenen/laender/[slug]/wahl/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/page.tsx",
+      "destination": "app/ebenen/laender/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/sachsen-anhalt/page.tsx",
+      "destination": "app/ebenen/laender/sachsen-anhalt/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/sachsen-anhalt/quellen/page.tsx",
+      "destination": "app/ebenen/laender/sachsen-anhalt/quellen/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx",
+      "destination": "app/ebenen/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/laender/sachsen-anhalt/ziele/page.tsx",
+      "destination": "app/ebenen/laender/sachsen-anhalt/ziele/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/mandat-und-praxis/[sourceKey]/page.tsx",
+      "destination": "app/monitor/mandat-und-praxis/[sourceKey]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/mandat-und-praxis/page.tsx",
+      "destination": "app/monitor/mandat-und-praxis/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/methodik/wirkindikatoren/[indicatorId]/page.tsx",
+      "destination": "app/pruefstandard/wirkindikatoren/[indicatorId]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/methodik/wirkindikatoren/page.tsx",
+      "destination": "app/pruefstandard/wirkindikatoren/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/quellen/[slug]/page.tsx",
+      "destination": "app/pruefstandard/quellen/[slug]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/quellen/page.tsx",
+      "destination": "app/pruefstandard/quellen/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/akte/[id]/page.tsx",
+      "destination": "app/ebenen/bundesregierung/akte/[id]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/akte/page.tsx",
+      "destination": "app/ebenen/bundesregierung/akte/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/haushalt-foerderung/page.tsx",
+      "destination": "app/ebenen/bundesregierung/haushalt-foerderung/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/kabinett/page.tsx",
+      "destination": "app/ebenen/bundesregierung/kabinett/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/layout.tsx",
+      "destination": "app/ebenen/bundesregierung/layout.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/mandat-praxis/page.tsx",
+      "destination": "app/ebenen/bundesregierung/mandat-praxis/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/mandat-und-praxis/page.tsx",
+      "destination": "app/ebenen/bundesregierung/mandat-und-praxis/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/methodik/page.tsx",
+      "destination": "app/ebenen/bundesregierung/methodik/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/ministerien/[id]/page.tsx",
+      "destination": "app/ebenen/bundesregierung/ministerien/[id]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/ministerien/page.tsx",
+      "destination": "app/ebenen/bundesregierung/ministerien/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/page.tsx",
+      "destination": "app/ebenen/bundesregierung/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/ressorts/[id]/page.tsx",
+      "destination": "app/ebenen/bundesregierung/ressorts/[id]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/ressorts/page.tsx",
+      "destination": "app/ebenen/bundesregierung/ressorts/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/transparenz/page.tsx",
+      "destination": "app/ebenen/bundesregierung/transparenz/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/umsetzung/page.tsx",
+      "destination": "app/ebenen/bundesregierung/umsetzung/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/wirkungsanalysen/[id]/page.tsx",
+      "destination": "app/ebenen/bundesregierung/wirkungsanalysen/[id]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/wirkungsanalysen/[id]/quellen/[source]/page.tsx",
+      "destination": "app/ebenen/bundesregierung/wirkungsanalysen/[id]/quellen/[source]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/regierung/wirkungsmonitor/page.tsx",
+      "destination": "app/ebenen/bundesregierung/wirkungsmonitor/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/wirkungsfaelle/[id]/page.tsx",
+      "destination": "app/wirkungsakten/faelle/[id]/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/wirkungsobservatorium/page.tsx",
+      "destination": "app/monitor/observatorium/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/wirkungsradar-updates/abmelden/page.tsx",
+      "destination": "app/aktuell/radar-abo/abmelden/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/wirkungsradar-updates/bestaetigen/page.tsx",
+      "destination": "app/aktuell/radar-abo/bestaetigen/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    },
+    {
+      "source": "app/wirkungsradar-updates/page.tsx",
+      "destination": "app/aktuell/radar-abo/page.tsx",
+      "status": "EXACT_RENDERER_REUSED"
+    }
+  ],
+  "section_routes": [
+    {
+      "route": "/aktuell/radar",
+      "source_section": "bevorstehend",
+      "title": "Parlamentsradar"
+    },
+    {
+      "route": "/aktuell/im-verfahren",
+      "source_section": "im-verfahren",
+      "title": "Im Verfahren"
+    },
+    {
+      "route": "/monitor/historie",
+      "source_section": "historie",
+      "title": "Wirkungsgedächtnis"
+    },
+    {
+      "route": "/monitor",
+      "source_section": "monitor",
+      "title": "Wirkungsmonitor"
+    },
+    {
+      "route": "/ebenen/bundestag",
+      "source_section": "bundestag",
+      "title": "Bundestag"
+    },
+    {
+      "route": "/pruefstandard/transparenz",
+      "source_section": "transparenz",
+      "title": "Über uns & Grenzen"
+    },
+    {
+      "route": "/pruefstandard/methodik",
+      "source_section": "methodik",
+      "title": "So prüfen wir"
+    }
+  ],
+  "list_policy": "Original collections remain separate URL-addressable views until P3; no object identity is inferred."
+}

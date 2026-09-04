@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import Link from "next/link";
+import { canonicalPortalHref } from "@/lib/navigation";
 import { PortalNav } from "@/app/components/PortalNav";
+import { PortalWayfinding } from "@/app/components/PortalWayfinding";
 import { WirkungsradarQuickSignup } from "@/app/components/WirkungsradarQuickSignup";
 import { AudienceModeSwitch } from "@/app/components/AudienceModeSwitch";
 import { WirkungsraumLink } from "@/app/components/WirkungsraumLink";
 import { SiteAnalyticsTracker } from "@/app/components/SiteAnalyticsTracker";
 import { subscriptionDeliveryReady } from "@/lib/wirkungsradar/subscriptions";
 import "./globals.css";
+import "./navigation.css";
 
 export const metadata: Metadata = {
   title: { default: "Wirkungsportal Parlament", template: "%s · Wirkungsportal Parlament" },
@@ -36,22 +39,23 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             <div className="shell trust-band-inner">
               <span>Unabhängiges Portal des Instituts für Wirkungsökonomie</span>
               <span aria-hidden="true">·</span>
-              <Link href="/transparenz">Parteiunabhängig</Link>
+              <Link href={canonicalPortalHref("/transparenz")}>Parteiunabhängig</Link>
               <span aria-hidden="true">·</span>
-              <Link href="/methodik">Methodik offen</Link>
+              <Link href={canonicalPortalHref("/methodik")}>Methodik offen</Link>
               <span aria-hidden="true">·</span>
-              <Link href="/quellen">Quellen prüfbar</Link>
+              <Link href={canonicalPortalHref("/quellen")}>Quellen prüfbar</Link>
             </div>
           </div>
           <div className="site-header">
             <div className="shell header-inner">
-              <Link href="/" className="brand" aria-label="Wirkungsportal Parlament, Startseite">
+              <Link href={canonicalPortalHref("/")} className="brand" aria-label="Wirkungsportal Parlament, Startseite">
                 <span className="brand-mark" aria-hidden="true">W</span>
                 <span><strong>Wirkungsportal Parlament</strong><small>Parlamentarische Entscheidungen verstehen · Wirkungen prüfen · Entscheidungen rückkoppeln</small></span>
               </Link>
               <nav className="portal-utility-nav" aria-label="Schnellzugriffe">
-                <Link href="/suche">Suche</Link>
-                <WirkungsraumLink>Mein Wirkungsraum</WirkungsraumLink>
+                <Link href={canonicalPortalHref("/suche")}>Suche</Link>
+                <WirkungsraumLink>Merkliste</WirkungsraumLink>
+                <Link href={canonicalPortalHref("/aktuell/radar-abo")}>Radar abonnieren</Link>
                 <AudienceModeSwitch />
                 <a className="ecosystem-link" href="https://wirkungsoekonomie.de">Wirkungsökonomie.de <span aria-hidden="true">↗</span></a>
               </nav>
@@ -59,7 +63,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             </div>
           </div>
         </header>
-        <main id="content">{children}</main>
+        <main id="content"><PortalWayfinding />{children}</main>
         <footer className="site-footer">
           <div className="shell">
             <section className="footer-signup" aria-labelledby="footer-signup-title">
@@ -80,25 +84,25 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             <div className="footer-links">
               <nav aria-label="Analyse" className="footer-nav">
                 <h2>Analyse</h2>
-                <Link href="/bevorstehend">Anstehende Entscheidungen</Link>
-                <Link href="/entscheidungen">Entscheidungen</Link>
-                <Link href="/historie">Historie</Link>
-                {process.env.GOVERNMENT_STAGING === "1" && <Link href="/regierung">Regierungshandeln</Link>}
-                <Link href="/fachanalysen">WÖk-Fachanalysen</Link>
-                <Link href="/monitor">Wirkungsmonitor</Link>
+                <Link href={canonicalPortalHref("/bevorstehend")}>Anstehende Entscheidungen</Link>
+                <Link href={canonicalPortalHref("/entscheidungen")}>Entscheidungen</Link>
+                <Link href={canonicalPortalHref("/historie")}>Historie</Link>
+                {process.env.GOVERNMENT_STAGING === "1" && <Link href={canonicalPortalHref("/regierung")}>Regierungshandeln</Link>}
+                <Link href={canonicalPortalHref("/fachanalysen")}>WÖk-Fachanalysen</Link>
+                <Link href={canonicalPortalHref("/monitor")}>Wirkungsmonitor</Link>
               </nav>
               <nav aria-label="Transparenz" className="footer-nav">
                 <h2>Transparenz</h2>
-                <Link href="/methodik">Methodik</Link>
-                <Link href="/transparenz">Über das Portal</Link>
-                <Link href="/quellen">Quellenarchiv</Link>
-                <Link href="/mandat-und-praxis">Wahlprogramme &amp; Koalition</Link>
-                <Link href="/abgeordnete">Abstimmungen im Wirkungscheck</Link>
+                <Link href={canonicalPortalHref("/methodik")}>Methodik</Link>
+                <Link href={canonicalPortalHref("/transparenz")}>Über das Portal</Link>
+                <Link href={canonicalPortalHref("/quellen")}>Quellenarchiv</Link>
+                <Link href={canonicalPortalHref("/mandat-und-praxis")}>Wahlprogramme &amp; Koalition</Link>
+                <Link href={canonicalPortalHref("/abgeordnete")}>Abstimmungen im Wirkungscheck</Link>
               </nav>
               <nav aria-label="Kontakt" className="footer-nav">
                 <h2>Kontakt</h2>
-                <Link href="/wirkungsradar-updates">Parlamentsradar-Updates</Link>
-                <Link href="/suche">Suche</Link>
+                <Link href={canonicalPortalHref("/wirkungsradar-updates")}>Parlamentsradar-Updates</Link>
+                <Link href={canonicalPortalHref("/suche")}>Suche</Link>
                 <WirkungsraumLink>Mein Wirkungsraum</WirkungsraumLink>
                 <a href="mailto:wirkungscheck@wirkungsoekonomie.de?subject=Fehler%20oder%20Korrektur">Fehler oder Korrektur melden</a>
                 <a href="mailto:wirkungscheck@wirkungsoekonomie.de?subject=Quelle%20oder%20Evidenz">Quelle oder Evidenz einreichen</a>

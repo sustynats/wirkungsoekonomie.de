@@ -4,7 +4,7 @@ import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
 export const metadata = {
-  title: "Quellen zur Landtagswahl Sachsen-Anhalt 2026 | Wirkungsportal Parlament",
+  title: "Quellen zur Landtagswahl Sachsen-Anhalt 2026",
   description: "Quellenregister für den Wahlbereich Sachsen-Anhalt des Wirkungsportals Parlament."
 };
 

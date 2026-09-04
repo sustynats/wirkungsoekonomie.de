@@ -3,7 +3,7 @@ import { formatElectionDate, governmentLifecycleLabel, lifecycleLabel, stateJuri
 import { statePublicContent } from "@/lib/states/public-content";
 
 export const metadata = {
-  title: "Bundesländer · Wirkungsportal Parlament",
+  title: "Bundesländer",
   description: "Transparenter Fachstatus für alle 16 Länder: Wahlprogramme, Regierungshandeln, Wirkungsanalysen, Vollständigkeit und offene Lücken."
 };
 

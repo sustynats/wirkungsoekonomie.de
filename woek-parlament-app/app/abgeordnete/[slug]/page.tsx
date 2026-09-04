@@ -21,7 +21,7 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
   const profile = await getPublishedMemberProfile(slug);
   if (!profile) notFound();
   return <div className="shell decision-page member-profile-page">
-    <nav className="breadcrumb" aria-label="Brotkrumen"><Link href="/">Startseite</Link><span>/</span><Link href="/abgeordnete">Abstimmungen im Wirkungscheck</Link><span>/</span><span>{profile.displayName}</span></nav>
+    <p className="record-context"><Link href="/">Startseite</Link><span>/</span><Link href="/abgeordnete">Abstimmungen im Wirkungscheck</Link><span>/</span><span>{profile.displayName}</span></p>
     <header className="member-profile-header">
       {profile.portrait ? <figure><img src={profile.portrait.sourceUrl} alt={`Porträt von ${profile.displayName}`} /><figcaption>{profile.portrait.credit} · <Link href={`/abgeordnete/${profile.slug}/quelle#bildnachweis`}>Bildnachweis ansehen</Link></figcaption></figure> : <div className="member-monogram" aria-hidden="true">{profile.displayName.split(/\s+/).map((name) => name[0]).slice(0, 2).join("")}</div>}
       <div><p className="eyebrow">Amtlich dokumentierte namentliche Abstimmungen</p><h1>{profile.displayName}</h1><p className="lead">{[profile.parliamentaryGroup, profile.federalState, profile.constituency, profile.mandateType].filter(Boolean).join(" · ")}</p><Link className="text-link" href={`/abgeordnete/${profile.slug}/quelle`}>Quellendetail ansehen <span aria-hidden="true">→</span></Link></div>

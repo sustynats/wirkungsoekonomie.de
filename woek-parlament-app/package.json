@@ -91,7 +91,8 @@
     "privacy:check": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository",
     "privacy:release": "node scripts/quality/check-release-safety.mjs --scope=release",
     "publications:verify": "node scripts/quality/verify-public-documents.mjs",
-    "publications:deep-verify": "node scripts/quality/verify-public-documents.mjs --deep"
+    "publications:deep-verify": "node scripts/quality/verify-public-documents.mjs --deep",
+    "check:portal-structure": "tsx --test tests/portal-navigation.test.ts && tsx scripts/quality/portal-text-inventory.ts"
   },
   "engines": {
     "node": ">=22 <25"

@@ -61,7 +61,7 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
   const detailed = Boolean(analysis.timeline?.length);
   return (
     <div className="shell content-page fachanalyse-detail">
-      <nav className="breadcrumb" aria-label="Pfad"><Link href="/">Startseite</Link><span aria-hidden="true">/</span><Link href="/fachanalysen">Fachanalysen</Link></nav>
+      <p className="record-context"><Link href="/">Startseite</Link><span aria-hidden="true">/</span><Link href="/fachanalysen">Fachanalysen</Link></p>
       <header className="page-intro fachanalyse-intro">
         <p className="eyebrow">{detailed ? "Fachanalyse · Rückblick & Umsetzung" : "Fachliche Dokumentation"}</p>
         <h1>{analysis.title}</h1>

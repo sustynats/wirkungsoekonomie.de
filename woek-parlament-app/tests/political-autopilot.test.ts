@@ -13,6 +13,7 @@ import {
   validateVoteEvents,
 } from "../lib/parliament/daily-ingest-core";
 import { formatElectionDate } from "../lib/autopilot/registry";
+import { allNavigationItems, portalNavigation } from "../lib/navigation";
 
 const registry = JSON.parse(readFileSync("data/political-jurisdictions.json", "utf8"));
 
@@ -79,14 +80,13 @@ test("autopilot status is protected and public impact routes are not", () => {
   const proxy = readFileSync("proxy.ts", "utf8");
   assert.match(proxy, /AUTOPILOT_STATUS_USER/);
   assert.match(proxy, /AUTOPILOT_STATUS_PASSWORD/);
-  const nav = readFileSync("app\/components\/PortalNav.tsx", "utf8");
-  assert.match(nav, /Wirkungsfälle/);
-  assert.match(nav, /Europäische Union/);
+  assert.ok(portalNavigation.some((item) => item.label === "Wirkungsakten"));
+  assert.ok(allNavigationItems.some((item) => item.label === "Europäische Union"));
+  assert.match(proxy, /pruefstandard\/transparenz\/datenbetrieb/);
 });
 
 test("each primary navigation surface exposes every destination exactly once", () => {
-  const nav = readFileSync("app/components/PortalNav.tsx", "utf8");
-  const destinations = [...nav.matchAll(/\["[^"]+",\s*"([^"]+)"\]/g)].map((match) => match[1]);
-  assert.equal(destinations.filter((href) => href === "/laender").length, 1);
+  const destinations = allNavigationItems.map((item) => item.href);
+  assert.equal(destinations.filter((href) => href === "/ebenen/laender").length, 1);
   assert.equal(new Set(destinations).size, destinations.length);
 });
