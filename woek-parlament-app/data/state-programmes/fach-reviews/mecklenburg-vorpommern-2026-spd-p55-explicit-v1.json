@@ -1,0 +1,795 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "MV-SPD-P55-SOURCE-BOUND-EXPLICIT-2026-V1",
+  "base_main_commit": "840ea0ce58a573f491b17ee3dd5c9bc160811cc0",
+  "jurisdiction": "DE-MV",
+  "party": "SPD",
+  "artifact": {
+    "artifact_id": "MV-LTW-2026-SPD-REGIERUNGSPROGRAMM",
+    "title": "Aufschwung, Zusammenhalt und Respekt – Regierungsprogramm 2026–2031",
+    "url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf",
+    "sha256": "b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc",
+    "byte_length": 1072223,
+    "page_count": 95,
+    "media_type": "application/pdf",
+    "identity_status": "BYTE_EXACT_REVIEW_LANE_PIN_OF_REGISTERED_OFFICIAL_FINAL_SOURCE",
+    "publication_status": "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME"
+  },
+  "authoritative_markdowns": [
+    {
+      "issue_comment_id": 5477877520,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5477877520",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p55-authoritative-handoff.md",
+      "file_sha256": "367cafb3dcef9bbe98017d3596bd06c6be54034a43700e25e73b8d7b193d5c0a"
+    },
+    {
+      "issue_comment_id": 5525358185,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5525358185",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p55-source-binding-repair-authoritative-handoff.md",
+      "file_sha256": "c860ddff055dde32c3440ad67cfe9d7e38b37a234fbe75ee52db85c083fe9e70"
+    }
+  ],
+  "source_ledger": {
+    "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/manifest.json",
+    "file_sha256": "1a6a89bee7360f962c1154da8daed8b7cb7fe09c4133d06c58f83d6d192f76b1",
+    "logical_descriptor_sha256": "c4932fbd3110b7e21f1d3e13f78e606f6b98635da1f7b527f812b77ba0641d48",
+    "disposition": "SOURCE_SCAFFOLD_ONLY_GENERIC_DELEGATED_DECISIONS_NOT_FACH_AUTHORITY"
+  },
+  "protected_source_files": [
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p001-p008.json",
+      "file_sha256": "790f5075a7b37447131ea3d93d70dfeffaa52acaa6a1dba66b7e321460d60250"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p009-p016.json",
+      "file_sha256": "322025701a9b8c5eabfea6ee62e96fcce7e1b906a7bcef4fdfe626225f497205"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p017-p024.json",
+      "file_sha256": "7e88374eae5482159b4208d9935d76c81d42bb7a6a4dbeadcadb6b1f65970136"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p025-p032.json",
+      "file_sha256": "acc6e4e94f315dfc94c4ee08475b0553fdd5edbf72d1c70ac5f95ceb98b8a14c"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p033-p040.json",
+      "file_sha256": "cdd8fbc87f83204a00a960eacc79fe36332cdbb85fe8393ca71e3bbea754f04f"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p041-p048.json",
+      "file_sha256": "c1448d657c4f70318b88acd2fd008e4f752fc768ddfac6ee1c36687b6e32cbbf"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p049-p056.json",
+      "file_sha256": "ca416454773395eacaf7a0113c5cc152ed2a5f79ee6c4993c61e0f3fcf779e5a"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p057-p064.json",
+      "file_sha256": "873f31eb1cf5741571436cceca728cef802af0b6ca87df1651dc3a6d8dce6c74"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p065-p072.json",
+      "file_sha256": "c08ca2fc4b3007809e828ec9bb34653dc82208110446fc48a7a8f953f9a1a451"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p073-p080.json",
+      "file_sha256": "204a02efae48474784c5cae7e1fc6180e256c2980ce87d320cb2c80078585cc9"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p081-p088.json",
+      "file_sha256": "c2b3fec7cbd6d565e68098e870c7cafbbec1f8d35ebc146a4a7bce2bfe90226c"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/effect-atoms-p089-p095.json",
+      "file_sha256": "18f852a94546104e07d6612ca422a328c4d5dc31006ebcfad6bb2234fab83857"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/manifest.json",
+      "file_sha256": "1a6a89bee7360f962c1154da8daed8b7cb7fe09c4133d06c58f83d6d192f76b1"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p001-p008.json",
+      "file_sha256": "f10e37bd5c8376bb8367b0d4966fe73ec37eecf69f5950f9c1a27344b288f6d9"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p009-p016.json",
+      "file_sha256": "74e423285449357997f9ead4f0f590ff4beb0f866c6167d8138fec8a07490dac"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p017-p024.json",
+      "file_sha256": "65bb3935ee57eef0e284cf76035d825cdcf14bd66645f4601316d7d74168cfeb"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p025-p032.json",
+      "file_sha256": "f06d2e9bfd5114a9ef2f56c0724098336ca7dc514957f058d9cada97f9b39d62"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p033-p040.json",
+      "file_sha256": "4b3f22263e7a3915f0b0d818abbdd3b7609ba4643206bbbf4e3d78667825ab63"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p041-p048.json",
+      "file_sha256": "eebea7a3efd778c0f54caa343e8e5356946d9045dff49c23635ae49ea1e0a6da"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p049-p056.json",
+      "file_sha256": "b41e997d8711be2dc92a7d1b0efe65eac9d6d602ed6eeb437c1800d364af67bf"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p057-p064.json",
+      "file_sha256": "c2f10d2a8d312cbbbc26f547a8ff6d3a05c5cbf6ef062fcf9217a0f685c88110"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p065-p072.json",
+      "file_sha256": "1b393d6d0f23f278caf0b01b3794522e58fd9bd753aa4284d77377e5caa32bcb"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p073-p080.json",
+      "file_sha256": "4c86915deb0c74a0e4bba1cff6e58ec9c61dc14a0447815c69dcc501d01b67a2"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p081-p088.json",
+      "file_sha256": "a1a4925ef242c1fd2453ea8613138b918030f511c9233f015e83ff05c652ec63"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-v1/source-units-p089-p095.json",
+      "file_sha256": "daa0f8c40827768d526c51d229a0de8204a2c3443d996791b33a2ab023ac6b83"
+    }
+  ],
+  "protected_predecessor": {
+    "issue_comment_id": 5476819703,
+    "physical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "status": "AUTHORITATIVE_FACH_SCOPE_PROTECTED_NOT_A_CLAIM_OF_TECHNICAL_MATERIALISATION",
+    "existing_ledger_modified": false
+  },
+  "terminal_records": [
+    {
+      "object_id": "MV-SPD-2026-SU-00510",
+      "source_unit_id": "MV-SPD-2026-SU-00510",
+      "source_page": 55,
+      "source_locator": "p055:sb001;p055:sb002@56.78,37.53,541.24,95.28",
+      "source_text": "Regierungsprogramm der SPD MV 2026 Modulares und serielles Bauen bietet große Chancen, schneller und kostengünstiger Wohnraum zu schaffen. Wir wollen diese Bauweisen stärker fördern.",
+      "source_text_sha256": "e095d8d18903c0088f39501b6f89bd729eeeb38845b11cee808d8bf3dfab2059",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "covered_by": [
+        "MV-SPD-2026-SU-00510-A01",
+        "MV-SPD-2026-SU-00510-A02",
+        "MV-SPD-2026-SU-00510-A01-C01-2523f3522e75"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00511",
+      "source_unit_id": "MV-SPD-2026-SU-00511",
+      "source_page": 55,
+      "source_locator": "p055:sb003@56.78,106.03,541.23,151.80",
+      "source_text": "Beim Umgang mit Grund und Boden gilt für uns der Grundsatz: Gemeinwohl vor Spekulation. Wir wollen Kommunen bei der strategischen Grundstücksbevorratung unterstützen und setzen auf eine aktive Bodenpolitik, die bezahlbares Wohnen langfristig sichert.",
+      "source_text_sha256": "ff1e6588ba96ac6af42d109bb90ed5da504ef7f8acdab05af6ea75011ab3f87a",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "covered_by": [
+        "MV-SPD-2026-SU-00511-A01",
+        "MV-SPD-2026-SU-00511-C01-abb37d2c88d1",
+        "MV-SPD-2026-SU-00511-A01-C01-101402e0ba43",
+        "MV-SPD-2026-SU-00511-A01-C02-fe3198dc01a5"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00512",
+      "source_unit_id": "MV-SPD-2026-SU-00512",
+      "source_page": 55,
+      "source_locator": "p055:sb004@56.78,170.30,366.42,190.30",
+      "source_text": "Wohnen im ländlichen Raum stärken",
+      "source_text_sha256": "1f388ab0f193a343fe9af98c7b621d3d0eb50f03873ac42c07616d51a5d542b5",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00513",
+      "source_unit_id": "MV-SPD-2026-SU-00513",
+      "source_page": 55,
+      "source_locator": "p055:sb005@56.78,202.83,541.63,265.33",
+      "source_text": "Lebendige Dörfer brauchen passenden Wohnraum. Unsere Förderprogramme beschränken sich deshalb nicht nur auf Ober- und Mittelzentren, sondern beziehen auch Orte mit funktionierender Infrastruktur im ländlichen Raum ein – etwa dort, wo medizinische Versorgung, Schulen, Einkaufsmöglichkeiten und ÖPNV vorhanden sind.",
+      "source_text_sha256": "93e96cb71845a7be2cdba0f1c26ae47e9a9cc4db887d2f2cd9c6ad5b8fa2298b",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_CURRENT_PROGRAMME_SCOPE_AND_NEED_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason": "It describes current programme geography/eligibility architecture, not a new/change future intervention."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00514",
+      "source_unit_id": "MV-SPD-2026-SU-00514",
+      "source_page": 55,
+      "source_locator": "p055:sb006@56.78,276.33,541.62,338.85",
+      "source_text": "Gerade hier brauchen wir zunehmend barrierefreie und altersgerechte Wohnungen, um älteren Menschen wohnortnah passende Wohnungsalternativen anzubieten und ihnen damit ihre soziale Teilhabe bei sich zu Hause zu sichern. Wir werden auch weiterhin gezielt den Bau und die Sanierung bezahlbarer, barrierefreier Wohnungen im ländlichen Raum fördern.",
+      "source_text_sha256": "7ceb3c918ce4725a852d145ef6048f5f05c853b3af2f560d6731cd777fc468be",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "covered_by": [
+        "MV-SPD-2026-SU-00514-A01",
+        "MV-SPD-2026-SU-00514-A02"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00515",
+      "source_unit_id": "MV-SPD-2026-SU-00515",
+      "source_page": 55,
+      "source_locator": "p055:sb007@56.78,349.60,541.36,395.37",
+      "source_text": "Gleichzeitig stärken wir familienfreundliches Wohnen: Wohnquartiere müssen Platz für Kinder bieten, sichere Wege, Spielmöglichkeiten und gemeinschaftliches Leben ermöglichen. Das Land wird hier seiner Anregungsfunktion gerecht bleiben.",
+      "source_text_sha256": "753b303697a6fa8d6e472e6d238384ccaf7085da5d27d30deb5f267892e7df8a",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "covered_by": [
+        "MV-SPD-2026-SU-00515-A01",
+        "MV-SPD-2026-SU-00515-C01-cf131a9755df"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00516",
+      "source_unit_id": "MV-SPD-2026-SU-00516",
+      "source_page": 55,
+      "source_locator": "p055:sb008@56.78,413.87,453.72,433.87",
+      "source_text": "Nachhaltig, barrierefrei und zukunftsfest bauen",
+      "source_text_sha256": "68df4097c7a3007a40025cf7ecacdbd8be4e104d695877a4445dd69cb9331bc4",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00517",
+      "source_unit_id": "MV-SPD-2026-SU-00517",
+      "source_page": 55,
+      "source_locator": "p055:sb009@56.78,446.62,541.65,509.15",
+      "source_text": "Bauen und Wohnen müssen den Herausforderungen des demografischen Wandels und des Klimaschutzes gerecht werden. Energetische Sanierungen begleiten wir mit Augenmaß, damit sie bezahlbar bleiben. Barrierefreiheit, altersgerechtes Wohnen und gute Erreichbarkeit von Infrastruktur bleiben verbindliche Leitlinien unserer Wohnungs- und Stadtentwicklungspolitik.",
+      "source_text_sha256": "2f784b38941bba4047ebf2649c252d9dc54e3deaf472093e6d30512d8c6f4bc6",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "covered_by": [
+        "MV-SPD-2026-SU-00517-A01",
+        "MV-SPD-2026-SU-00517-C01-dbede871c622",
+        "MV-SPD-2026-SU-00517-C02-2dcc7c55fc11"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00518",
+      "source_unit_id": "MV-SPD-2026-SU-00518",
+      "source_page": 55,
+      "source_locator": "p055:sb010@56.78,519.90,541.69,548.65",
+      "source_text": "Wir schaffen Wohnraum, der nicht nur heute gebraucht wird, sondern auch morgen noch passt – für Familien, für ältere Menschen und für kommende Generationen.",
+      "source_text_sha256": "14c44ee0457cdb0c6e0df9175c4dece143730e38e0c619dc8b54ab6a80ebf4af",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "covered_by": [
+        "MV-SPD-2026-SU-00518-A01"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00519",
+      "source_unit_id": "MV-SPD-2026-SU-00519",
+      "source_page": 55,
+      "source_locator": "p055:sb011@56.78,559.67,541.49,588.43",
+      "source_text": "Wir möchten die aktuelle Entwicklung der Obdach- und Wohnungslosenhilfe aufgreifen und neue fachliche Ansätze (z.B. Housing-First) in unserem Bundesland fördern.",
+      "source_text_sha256": "c0ebf23b4206b05f90c2d7ebacd4a3c32ca5940db80397547a6402179acca422",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "previous_source_role": "NON_EFFECT_CONTEXT",
+      "superseded_by": [
+        "MV-SPD-2026-SU-00519-C01-c0ebf23b4206"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00520",
+      "source_unit_id": "MV-SPD-2026-SU-00520",
+      "source_page": 55,
+      "source_locator": "p055:sb012@56.78,607.17,428.69,627.17",
+      "source_text": "Digitalisierung, die den Alltag leichter macht",
+      "source_text_sha256": "22d2b34b744e637cd4da0b7dd4e3cf98b85de8ba4c90c941ba166f12b61895c3",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00521",
+      "source_unit_id": "MV-SPD-2026-SU-00521",
+      "source_page": 55,
+      "source_locator": "p055:sb013@56.78,639.70,541.68,752.72",
+      "source_text": "Mecklenburg-Vorpommern hat in den vergangenen Jahren zentrale Fortschritte bei der Digitalisierung erreicht. Mit dem digitalen Bauantrag wurde eines der komplexesten Verwaltungsverfahren erfolgreich online umgesetzt: Rund 70 % der Bauanträge werden inzwischen vollständig digital eingereicht, Bearbeitungszeiten konnten deutlich verkürzt und Fehler spürbar reduziert werden. Das Verfahren ist damit ein Schlüsselprojekt für die weitere Verwaltungsdigitalisierung im Land und wird bereits von anderen Bundesländern im Rahmen des Onlinezugangsgesetzes genutzt.",
+      "source_text_sha256": "98646fd841fe8d457ab323885e5a78db6b85984a7e4a4ba7b0bfb46ef3b879fa",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_HISTORY_CURRENT_POLICY_AND_REPORTED_OUTCOME_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00522",
+      "source_unit_id": "MV-SPD-2026-SU-00522",
+      "source_page": 55,
+      "source_locator": "p055:sb014@476.95,782.72,541.24,806.47",
+      "source_text": "Seite 55 von 95",
+      "source_text_sha256": "f1d90157008f73969ac06c51becab809285b21dee1a4806bdf9582625ebb6694",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00510-A01",
+      "source_unit_id": "MV-SPD-2026-SU-00510",
+      "source_page": 55,
+      "source_locator": "p055:sb001;p055:sb002@56.78,37.53,541.24,95.28",
+      "source_text": "Regierungsprogramm der SPD MV 2026 Modulares und serielles Bauen bietet große Chancen, schneller und kostengünstiger Wohnraum zu schaffen.",
+      "source_text_sha256": "07870f3980521f6a162b4271c0df2e17042773d61da70b7e0333aac119bff558",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "SOURCE_FRAGMENT_VERSIONED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "superseded_by": [
+        "MV-SPD-2026-SU-00510-A01-C01-2523f3522e75"
+      ],
+      "excluded_source_prefix": "Regierungsprogramm der SPD MV 2026 ",
+      "excluded_prefix_role": "PAGE_HEADER_OR_FOOTER_CONTAMINATION"
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00510-A02",
+      "source_unit_id": "MV-SPD-2026-SU-00510",
+      "source_page": 55,
+      "source_locator": "p055:sb001;p055:sb002@56.78,37.53,541.24,95.28",
+      "source_text": "Wir wollen diese Bauweisen stärker fördern.",
+      "source_text_sha256": "d7416b198ff0004c983ff2da2f7d4e15e78e6192d1e0d0141af0127dac93b44a",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "MODULAR_SERIAL_BUILDING_SUPPORT_INSTRUMENT_SCALE_ELIGIBILITY_FINANCE_STANDARDS_UNSPECIFIED",
+      "exact_reason": "the source commits to stronger support for modular/serial construction but does not identify the support instrument (for example funding, procurement, planning, standardisation or another lever), eligibility/recipients, funding amount/source, project or geographic scale, required building/quality standards, additionality, timetable or baseline/counterfactual. Those design choices determine whether the measure changes housing quantity, delivery time, cost, quality, resource use or public expenditure. No single source-bound impact direction or evidence level can therefore be assigned without inventing the support design."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00511-A01",
+      "source_unit_id": "MV-SPD-2026-SU-00511",
+      "source_page": 55,
+      "source_locator": "p055:sb003@56.78,106.03,541.23,151.80",
+      "source_text": "Wir wollen Kommunen bei der strategischen Grundstücksbevorratung unterstützen und setzen auf eine aktive Bodenpolitik, die bezahlbares Wohnen langfristig sichert.",
+      "source_text_sha256": "890794f62c3d603c85a5ab90f3ea75da35169700bec6e138f2f0ee3e19c378d0",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "COMPOUND_PARENT_VERSIONED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "superseded_by": [
+        "MV-SPD-2026-SU-00511-A01-C01-101402e0ba43",
+        "MV-SPD-2026-SU-00511-A01-C02-fe3198dc01a5"
+      ]
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00514-A01",
+      "source_unit_id": "MV-SPD-2026-SU-00514",
+      "source_page": 55,
+      "source_locator": "p055:sb006@56.78,276.33,541.62,338.85",
+      "source_text": "Gerade hier brauchen wir zunehmend barrierefreie und altersgerechte Wohnungen, um älteren Menschen wohnortnah passende Wohnungsalternativen anzubieten und ihnen damit ihre soziale Teilhabe bei sich zu Hause zu sichern.",
+      "source_text_sha256": "310ce3beef66c44f4a348c21a7f266498e10efb4c5d228edefafa59a0e3fcb61",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "NON_EFFECT_NEED_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason": "the sentence identifies a housing need, target group and desired social outcome, but contains no policy action distinct from the following funding pledge."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00514-A02",
+      "source_unit_id": "MV-SPD-2026-SU-00514",
+      "source_page": 55,
+      "source_locator": "p055:sb006@56.78,276.33,541.62,338.85",
+      "source_text": "Wir werden auch weiterhin gezielt den Bau und die Sanierung bezahlbarer, barrierefreier Wohnungen im ländlichen Raum fördern.",
+      "source_text_sha256": "8c7288ae2d945e644b27b9ecc9f44813858f2dd76a3b20df0e0e0a7aed281676",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "RURAL_ACCESSIBLE_AFFORDABLE_HOUSING_SUPPORT_AMOUNT_ELIGIBILITY_TENURE_SCALE_UNSPECIFIED",
+      "exact_reason": "the support objective and broad affected housing segment are identifiable, but no funding instrument/rate/amount/source, eligibility, affordability definition or binding period, tenure, target unit count/geography, accessibility standard, delivery actor, timetable, additionality or housing-market counterfactual is supplied. As a continuation pledge it also does not quantify the incremental delta from current funding. These unresolved fields determine housing supply, accessibility, beneficiary incidence, fiscal cost and displacement/substitution effects, so no single direction/evidence level is assigned."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00515-A01",
+      "source_unit_id": "MV-SPD-2026-SU-00515",
+      "source_page": 55,
+      "source_locator": "p055:sb007@56.78,349.60,541.36,395.37",
+      "source_text": "Gleichzeitig stärken wir familienfreundliches Wohnen: Wohnquartiere müssen Platz für Kinder bieten, sichere Wege, Spielmöglichkeiten und gemeinschaftliches Leben ermöglichen.",
+      "source_text_sha256": "27584f0ca82f42669c7b46de49fbabb9c5ae29d53162b9c5d0162b6c7ffd4720",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "FAMILY_FRIENDLY_QUARTER_DESIGN_INSTRUMENT_STANDARDS_SCOPE_FINANCE_ENFORCEMENT_UNSPECIFIED",
+      "exact_reason": "the desired quarter characteristics and beneficiary orientation are clear, but the programme does not specify whether these become binding planning/building standards, funding conditions, public-space investments, service requirements or another instrument; nor scope, measurable standards, responsible actor/competence, finance, timetable, existing-stock treatment, safeguards or counterfactual. The desired safety/play/community outcomes cannot be treated as realized effects. No net direction/evidence level is assigned without an operational design."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00517-A01",
+      "source_unit_id": "MV-SPD-2026-SU-00517",
+      "source_page": 55,
+      "source_locator": "p055:sb009@56.78,446.62,541.65,509.15",
+      "source_text": "Bauen und Wohnen müssen den Herausforderungen des demografischen Wandels und des Klimaschutzes gerecht werden.",
+      "source_text_sha256": "f37f635a0dff71e00f279b9ab782ed4b06e11edf6b7649b130bb2b3ddc55470d",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "NON_EFFECT_GOAL_RATIONALE_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason": "this is a normative objective/assessment criterion, not a bounded intervention. Later concrete building, housing, adaptation or mitigation measures must be reviewed on their own source objects."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00518-A01",
+      "source_unit_id": "MV-SPD-2026-SU-00518",
+      "source_page": 55,
+      "source_locator": "p055:sb010@56.78,519.90,541.69,548.65",
+      "source_text": "Wir schaffen Wohnraum, der nicht nur heute gebraucht wird, sondern auch morgen noch passt – für Familien, für ältere Menschen und für kommende Generationen.",
+      "source_text_sha256": "14c44ee0457cdb0c6e0df9175c4dece143730e38e0c619dc8b54ab6a80ebf4af",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "FUTURE_PROOF_HOUSING_SUPPLY_UNITS_TENURE_LOCATION_FINANCE_STANDARDS_TIMELINE_UNSPECIFIED",
+      "exact_reason": "this is action-framed and therefore is not discarded as a mere slogan, but it supplies no unit quantity, location, tenure/affordability, construction/renovation instrument, financing, accessibility/climate/flexibility standard, delivery actor, timetable, additionality or housing-market baseline/counterfactual. `passt` and the named generations are desired fitness/beneficiary claims, not measurable state changes. No source-bound direction, materiality or evidence level can be assigned without inventing the housing programme."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00510-A01-C01-2523f3522e75",
+      "source_unit_id": "MV-SPD-2026-SU-00510",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00510-A01"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb001;p055:sb002@56.78,37.53,541.24,95.28",
+      "source_span_utf16": [
+        35,
+        138
+      ],
+      "source_text": "Modulares und serielles Bauen bietet große Chancen, schneller und kostengünstiger Wohnraum zu schaffen.",
+      "source_text_sha256": "2523f3522e7593ed5bb14fcaaf36f612e88ce258996e4e38d1f0bc0c2dec09ef",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "NON_EFFECT_RATIONALE_OR_EXPECTED_MECHANISM_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason": "this sentence states an expected speed/cost advantage of a construction method but does not itself commit to an intervention. It is rationale for the following support pledge, not an independently countable effect-bearing action."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00511-C01-abb37d2c88d1",
+      "source_unit_id": "MV-SPD-2026-SU-00511",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00511"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb003@56.78,106.03,541.23,151.80",
+      "source_span_utf16": [
+        0,
+        87
+      ],
+      "source_text": "Beim Umgang mit Grund und Boden gilt für uns der Grundsatz: Gemeinwohl vor Spekulation.",
+      "source_text_sha256": "abb37d2c88d13c2d4869c12f21c3cfcb8686109fbde9bd98c7b64cc7f21152f8",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "NON_EFFECT_GOAL_OR_POLICY_PRINCIPLE_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00511-A01-C01-101402e0ba43",
+      "source_unit_id": "MV-SPD-2026-SU-00511",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00511-A01"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb003@56.78,106.03,541.23,151.80",
+      "source_span_utf16": [
+        88,
+        165
+      ],
+      "source_text": "Wir wollen Kommunen bei der strategischen Grundstücksbevorratung unterstützen",
+      "source_text_sha256": "101402e0ba4305ac3d3a27efceac9e894ffa61bbbbdba7eb9d94ded69b217fe1",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "MUNICIPAL_LAND_BANKING_SUPPORT_INSTRUMENT_FINANCE_ELIGIBILITY_ACQUISITION_RULES_UNSPECIFIED",
+      "exact_reason": "the intended municipal land-banking support is identifiable, but the support form, eligible municipalities/parcels, funding amount/source, acquisition/valuation/holding/disposal rules, affordability or tenure safeguards, governance, timetable and counterfactual are not specified. These fields determine fiscal exposure, land-market incidence, additional housing potential and distribution. No defensible net direction can be assigned from this clause alone."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00511-A01-C02-fe3198dc01a5",
+      "source_unit_id": "MV-SPD-2026-SU-00511",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00511-A01"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb003@56.78,106.03,541.23,151.80",
+      "source_span_utf16": [
+        166,
+        250
+      ],
+      "source_text": "und setzen auf eine aktive Bodenpolitik, die bezahlbares Wohnen langfristig sichert.",
+      "source_text_sha256": "fe3198dc01a5ec920a903ce2ffa5223914a87692f890b4dd03a66b969cc32275",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5477877520,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "ACTIVE_LAND_POLICY_INSTRUMENTS_TENURE_PRICE_SCALE_AND_GOVERNANCE_UNSPECIFIED",
+      "exact_reason": "`aktive Bodenpolitik` is an intervention family, not one bounded policy object. The clause supplies no concrete acquisition, leasehold, planning, disposal, pre-emption, land-value, funding or other instrument; no parcels/scale, tenure/affordability rules, fiscal envelope, competence/delivery path, safeguards or timeline. The claimed long-run affordability is an intended result, not evidence of a determinate mechanism/outcome. Assess later concrete land-policy objects separately; do not inherit this RNAA mechanically."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00515-C01-cf131a9755df",
+      "source_unit_id": "MV-SPD-2026-SU-00515",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00515"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb007@56.78,349.60,541.36,395.37",
+      "source_span_utf16": [
+        175,
+        235
+      ],
+      "source_text": "Das Land wird hier seiner Anregungsfunktion gerecht bleiben.",
+      "source_text_sha256": "cf131a9755dfad38fb0d9e67dc83726ba8283cc4a1042e52ff6a720752325d9c",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "NON_EFFECT_ROLE_OR_IMPLEMENTATION_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00517-C01-dbede871c622",
+      "source_unit_id": "MV-SPD-2026-SU-00517",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00517"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb009@56.78,446.62,541.65,509.15",
+      "source_span_utf16": [
+        111,
+        192
+      ],
+      "source_text": "Energetische Sanierungen begleiten wir mit Augenmaß, damit sie bezahlbar bleiben.",
+      "source_text_sha256": "dbede871c6221c95d60997e1221798c28f81347803876e0af5ea72b24297ad93",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "ENERGETIC_RENOVATION_AFFORDABILITY_SAFEGUARD_INSTRUMENT_COST_ALLOCATION_SCOPE_UNSPECIFIED",
+      "exact_reason": "no funding/regulatory/cost-allocation instrument, eligibility, technical standard, scope, enforcement, finance, timeline or counterfactual is specified; these determine incidence, renovation depth, resource effects and cost."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00517-C02-2dcc7c55fc11",
+      "source_unit_id": "MV-SPD-2026-SU-00517",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00517"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb009@56.78,446.62,541.65,509.15",
+      "source_span_utf16": [
+        193,
+        355
+      ],
+      "source_text": "Barrierefreiheit, altersgerechtes Wohnen und gute Erreichbarkeit von Infrastruktur bleiben verbindliche Leitlinien unserer Wohnungs- und Stadtentwicklungspolitik.",
+      "source_text_sha256": "2dcc7c55fc11122c3ebc030ca9ebf6b4ea26f4bd551b72ca9b629ae8635c680e",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "ACCESSIBILITY_AGEING_INFRASTRUCTURE_GUIDELINES_LEGAL_FORCE_SCOPE_STANDARDS_DELIVERY_UNSPECIFIED",
+      "exact_reason": "legal/administrative instrument, measurable standards, covered projects, actor, exceptions/enforcement, finance, timetable and baseline are unspecified."
+    },
+    {
+      "object_id": "MV-SPD-2026-SU-00519-C01-c0ebf23b4206",
+      "source_unit_id": "MV-SPD-2026-SU-00519",
+      "parent_object_ids": [
+        "MV-SPD-2026-SU-00519"
+      ],
+      "source_page": 55,
+      "source_locator": "p055:sb011@56.78,559.67,541.49,588.43",
+      "source_span_utf16": [
+        0,
+        161
+      ],
+      "source_text": "Wir möchten die aktuelle Entwicklung der Obdach- und Wohnungslosenhilfe aufgreifen und neue fachliche Ansätze (z.B. Housing-First) in unserem Bundesland fördern.",
+      "source_text_sha256": "c0ebf23b4206b05f90c2d7ebacd4a3c32ca5940db80397547a6402179acca422",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5525358185,
+      "binding_issue_comment_id": 5525358185,
+      "exact_reason_code": "HOMELESSNESS_HOUSING_FIRST_SUPPORT_INSTRUMENT_ELIGIBILITY_SCALE_FINANCE_DELIVERY_UNSPECIFIED",
+      "exact_reason": "the source names support for new homelessness-assistance approaches and Housing First only as an example, but does not specify programme/instrument, eligibility/providers, housing access, service intensity, scale, finance, geography, delivery, safeguards, timeline, additionality or counterfactual. Do not infer a guaranteed Housing-First rollout or direction/evidence from the label."
+    }
+  ],
+  "coverage": {
+    "source_unit_ids": [
+      "MV-SPD-2026-SU-00510",
+      "MV-SPD-2026-SU-00511",
+      "MV-SPD-2026-SU-00512",
+      "MV-SPD-2026-SU-00513",
+      "MV-SPD-2026-SU-00514",
+      "MV-SPD-2026-SU-00515",
+      "MV-SPD-2026-SU-00516",
+      "MV-SPD-2026-SU-00517",
+      "MV-SPD-2026-SU-00518",
+      "MV-SPD-2026-SU-00519",
+      "MV-SPD-2026-SU-00520",
+      "MV-SPD-2026-SU-00521",
+      "MV-SPD-2026-SU-00522"
+    ],
+    "original_atom_ids": [
+      "MV-SPD-2026-SU-00510-A01",
+      "MV-SPD-2026-SU-00510-A02",
+      "MV-SPD-2026-SU-00511-A01",
+      "MV-SPD-2026-SU-00514-A01",
+      "MV-SPD-2026-SU-00514-A02",
+      "MV-SPD-2026-SU-00515-A01",
+      "MV-SPD-2026-SU-00517-A01",
+      "MV-SPD-2026-SU-00518-A01"
+    ],
+    "generated_child_ids": [
+      "MV-SPD-2026-SU-00510-A01-C01-2523f3522e75",
+      "MV-SPD-2026-SU-00511-C01-abb37d2c88d1",
+      "MV-SPD-2026-SU-00511-A01-C01-101402e0ba43",
+      "MV-SPD-2026-SU-00511-A01-C02-fe3198dc01a5",
+      "MV-SPD-2026-SU-00515-C01-cf131a9755df",
+      "MV-SPD-2026-SU-00517-C01-dbede871c622",
+      "MV-SPD-2026-SU-00517-C02-2dcc7c55fc11",
+      "MV-SPD-2026-SU-00519-C01-c0ebf23b4206"
+    ],
+    "active_terminal_review_leaf_ids": [
+      "MV-SPD-2026-SU-00510-A02",
+      "MV-SPD-2026-SU-00514-A02",
+      "MV-SPD-2026-SU-00515-A01",
+      "MV-SPD-2026-SU-00518-A01",
+      "MV-SPD-2026-SU-00511-A01-C01-101402e0ba43",
+      "MV-SPD-2026-SU-00511-A01-C02-fe3198dc01a5",
+      "MV-SPD-2026-SU-00517-C01-dbede871c622",
+      "MV-SPD-2026-SU-00517-C02-2dcc7c55fc11",
+      "MV-SPD-2026-SU-00519-C01-c0ebf23b4206"
+    ],
+    "explicit_fach_approved_ids": [],
+    "reviewed_not_assessable_ids": [
+      "MV-SPD-2026-SU-00510-A02",
+      "MV-SPD-2026-SU-00514-A02",
+      "MV-SPD-2026-SU-00515-A01",
+      "MV-SPD-2026-SU-00518-A01",
+      "MV-SPD-2026-SU-00511-A01-C01-101402e0ba43",
+      "MV-SPD-2026-SU-00511-A01-C02-fe3198dc01a5",
+      "MV-SPD-2026-SU-00517-C01-dbede871c622",
+      "MV-SPD-2026-SU-00517-C02-2dcc7c55fc11",
+      "MV-SPD-2026-SU-00519-C01-c0ebf23b4206"
+    ],
+    "zero_count_ids": [
+      "MV-SPD-2026-SU-00510",
+      "MV-SPD-2026-SU-00511",
+      "MV-SPD-2026-SU-00512",
+      "MV-SPD-2026-SU-00513",
+      "MV-SPD-2026-SU-00514",
+      "MV-SPD-2026-SU-00515",
+      "MV-SPD-2026-SU-00516",
+      "MV-SPD-2026-SU-00517",
+      "MV-SPD-2026-SU-00518",
+      "MV-SPD-2026-SU-00519",
+      "MV-SPD-2026-SU-00520",
+      "MV-SPD-2026-SU-00521",
+      "MV-SPD-2026-SU-00522",
+      "MV-SPD-2026-SU-00510-A01",
+      "MV-SPD-2026-SU-00511-A01",
+      "MV-SPD-2026-SU-00514-A01",
+      "MV-SPD-2026-SU-00517-A01",
+      "MV-SPD-2026-SU-00510-A01-C01-2523f3522e75",
+      "MV-SPD-2026-SU-00511-C01-abb37d2c88d1",
+      "MV-SPD-2026-SU-00515-C01-cf131a9755df"
+    ],
+    "remaining_p55_source_object_ids": [],
+    "terminal_pages": [
+      55
+    ],
+    "gate": "MV_SPD_P55_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_BINDING_REPAIR"
+  },
+  "constraints": {
+    "fach_synthesized": false,
+    "old_source_or_fach_overwritten": false,
+    "generic_delegated_rnaa_used_as_fach": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "vercel_action_triggered": false
+  },
+  "descriptor_sha256": "4a4dd4daf0b8bbe8ac2a822a1f01705bc98b7da437e0faf7b78d09b8bedc40eb"
+}
