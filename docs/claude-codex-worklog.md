@@ -7,6 +7,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+### 2026-09-04 · Codex · Eingabegrenzen und reale Tokenbudgetierung
+- **Ursachen:** 325 identische Abhängigkeitsvermerke aus 26 Dokumenten; gemeinsame 8-Cent-Pauschale zusätzlich zum tokenbasierten Nachrichtenjournal.
+- **Fix:** Exakte Abhängigkeitsvermerke mit Anzahl statt Wiederholungen; zweite verlustfreie Transportstufe für große Eingaben. Alle Dokumente, Claims, Rollen und Widersprüche bleiben erhalten. Keine neuen KI-Stufen mit zusätzlichen Kosten.
+- **Oracle:** Tokenbasierte gemeinsame Reserve mit UUID/atomarem Journal; beide Budgetgrenzen erhalten. Geprüfte Migration entfernt nur 531 nachgewiesene Pauschalbuchungen, übernimmt das vollständige Newsjournal und behält unklare Altkosten als Reserve. Patch und Rückfallplan: `docs/ops/WIRKUNGSTICKER-TOKEN-BUDGET-REPAIR.md`.
+- **QS:** 204 Nachrichtentests, 12 Monitortests; 47 Server-Tests, TypeScript und Build. Offline-Wiederlauf aller 29 anstehenden Kandidaten: keine Größenblockade, maximal 36.374 Zeichen, null Anbieteraufrufe. Server-Budgetfix 17:32 UTC aktiv; Worker-/Live-Abnahme separat.
+
 ### 2026-09-04 · Codex · Allgemeine Eingabe- und Wiederholungsprüfung
 - **Was:** Verlustfreie Textreferenzen und Metadaten-Defaults für alle KI-Anfragen; Größenprüfung vor Slotvergabe; geänderte Artikelauszüge zuerst; dauerhafter, begrenzter Prüfstand für bereits geprüfte Updates. Keine Quellenzahlgrenze, keine abgesenkten Publikationsgates, keine Scheinversionen/Pushs für unveränderte Akten. Lokale Größenfehler getrennt von Providerfehlern und echten kostenpflichtigen Anfragen.
 - **Pfade:** `scripts/news/evidence-packets.mjs`, `lib.mjs`, `run.mjs`, `check-run-health.mjs`, Discord-Monitor und Regressionstests; Betriebsvertrag `docs/ops/WIRKUNGSTICKER-EVIDENCE-PACKETS.md`.

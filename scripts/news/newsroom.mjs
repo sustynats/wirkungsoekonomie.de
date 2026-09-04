@@ -48,7 +48,7 @@ function sharedRun(a, b) {
 export function evidenceGroups(sources = []) {
   const parent = sources.map((_, index) => index);
   const root = (index) => parent[index] === index ? index : (parent[index] = root(parent[index]));
-  const reasons = [];
+  const reasons = new Map();
   for (let i = 0; i < sources.length; i += 1) for (let j = 0; j < i; j += 1) {
     const a = sources[i], b = sources[j];
     const separateStudies = a.research_metadata?.doi && b.research_metadata?.doi && a.research_metadata.doi !== b.research_metadata.doi;
@@ -57,12 +57,16 @@ export function evidenceGroups(sources = []) {
     const copied = sharedRun(`${a.title} ${a.summary}`, `${b.title} ${b.summary}`);
     if (samePublisher || sameOrigin || copied) {
       parent[root(i)] = root(j);
-      reasons.push({ source_ids: [a.source_id, b.source_id], reason: samePublisher ? "same_publisher" : sameOrigin ? "shared_origin" : "shared_wording_possible_syndication" });
+      const dependency = { source_ids: [a.source_id, b.source_id].sort(), reason: samePublisher ? "same_publisher" : sameOrigin ? "shared_origin" : "shared_wording_possible_syndication" };
+      const key = JSON.stringify(dependency);
+      const previous = reasons.get(key);
+      if (previous) previous.document_pairs += 1;
+      else reasons.set(key, { ...dependency, document_pairs: 1 });
     }
   }
   const groups = new Map();
   sources.forEach((source, index) => { const key = root(index); groups.set(key, [...(groups.get(key) || []), source.source_id]); });
-  return { groups: [...groups.values()], possible_independent_origins: groups.size, independence_is_verified: false, dependencies: reasons };
+  return { groups: [...groups.values()].map(ids => [...new Set(ids)]), possible_independent_origins: groups.size, independence_is_verified: false, dependencies: [...reasons.values()] };
 }
 
 const EVENT_TYPES = [
