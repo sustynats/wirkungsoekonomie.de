@@ -1,8 +1,8 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4314**
+- Sitemap routes: **4313**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **12131**
+- Extra tracked source HTML not in sitemap: **12132**
 - Routes with non-default #253 action: **3589**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **241**
 
