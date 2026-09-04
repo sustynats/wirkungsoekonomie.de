@@ -1,7 +1,261 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T07:06:13.529Z",
+  "updated_at": "2026-09-04T07:21:13.294Z",
   "stories": [
+    {
+      "story_id": "wt-ef8a2f218302b98a",
+      "slug": "hausbrand-durch-explosion-brand-in-chemnitz-mieter-tatverdachtig-und-leicht-verletzt-02b98a",
+      "title": "Hausbrand durch Explosion: Brand in Chemnitz: Mieter tatverdächtig und leicht verletzt",
+      "first_seen": "2026-09-04T07:04:37.000Z",
+      "last_updated": "2026-09-04T07:04:37.000Z",
+      "topic": [
+        "Soziales",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen/hausbrand-durch-explosion--brand-in-chemnitz--mieter-tatverdaechtig-und-leicht-verletzt-38206040.html",
+          "title": "Hausbrand durch Explosion: Brand in Chemnitz: Mieter tatverdächtig und leicht verletzt",
+          "summary": "In einem Mehrfamilienhaus kommt es am späten Donnerstagabend durch eine Explosion zu einem Brand. Ein Mieter soll hinter der Tat stecken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:04:37.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "98f777fd59752ffee83b924d268bf56707dcebbc62a2c5a065dc2a120f6c7def",
+          "source_item_id": "c0ee6be8973f95678e8eeeb6ce281eec614a7e03eedd13fb70100bd96434df85",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:04:37.000Z",
+          "ingested_at": "2026-09-04T07:21:13.294Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ef8a2f218302b98a-claim-01",
+          "story_id": "wt-ef8a2f218302b98a",
+          "claim": "Hausbrand durch Explosion: Brand in Chemnitz: Mieter tatverdächtig und leicht verletzt: In einem Mehrfamilienhaus kommt es am späten Donnerstagabend durch eine Explosion zu einem Brand. Ein Mieter soll hinter der Tat stecken.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T07:21:13.294Z"
+        }
+      ],
+      "content_hash": "1b541c10a1bee41863ac167a31699e3c87dcd58ea385d4d70d99f29f7163419d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T07:21:13.294Z",
+      "event_first_seen_at": "2026-09-04T07:21:13.294Z",
+      "event_detected_at": "2026-09-04T07:21:13.294Z",
+      "event_id": "event-5fc456a406ba75382ab5",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.6049,
+        "detection_delay_minutes": 16.6049,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T07:21:13.294Z",
+      "rejection": {
+        "at": "2026-09-04T07:21:13.294Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-06476c6e980f5f47",
+      "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+      "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+      "first_seen": "2026-09-04T07:02:30.000Z",
+      "last_updated": "2026-09-04T07:02:30.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+          "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+          "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:02:30.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
+          "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:02:30.000Z",
+          "ingested_at": "2026-09-04T07:21:13.294Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-01",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“: Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T07:21:13.294Z"
+        }
+      ],
+      "content_hash": "ea8570be4c23bd79b87df82bbc3db8cd09f02af7f9e953f2337d561e130e8674",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T07:21:13.294Z",
+      "event_first_seen_at": "2026-09-04T07:21:13.294Z",
+      "event_detected_at": "2026-09-04T07:21:13.294Z",
+      "event_id": "event-d0ea56670f7c42bbc7a0",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.721566666666668,
+        "detection_delay_minutes": 18.721566666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T07:21:13.294Z",
+      "rejection": {
+        "at": "2026-09-04T07:21:13.294Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-293fa4edfc2b5a5d",
       "slug": "joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-interview-m-2b5a5d",
