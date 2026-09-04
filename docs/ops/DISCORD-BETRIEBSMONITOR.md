@@ -22,6 +22,10 @@ keine kostenpflichtige KI auf. Keine Vercel-Deployments oder neuen Hostingdienst
   nicht pauschal als Anbieterausfall bezeichnet; rohe Fehlermeldungen bleiben intern.
 - Eine unveränderte Artikelzahl ist **kein** Ausfall. Zurückstellungen am
   Evidenz-/Relevanzgate werden gezählt, nicht ungeprüft veröffentlicht.
+- Titelbilder: fehlende Authentifizierung/Konfiguration, technische Erreichbarkeit
+  und ausgeschöpfte bestätigte Anbieter-Wiederholungen werden separat überwacht.
+  Absichtlich gewählte Wirkungskarten und eine erfolgreiche Sicherheitssperre
+  (z. B. erkannte Schrift) sind keine Störung des Nachrichtenprozesses.
 - Unveränderte bestätigte Störung bleibt still; Behebung erzeugt eine Entwarnung.
   Der tägliche Bericht nennt weiterhin offene Probleme.
 
