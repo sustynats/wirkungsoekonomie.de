@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T08:51:38.320Z",
+  "updated_at": "2026-09-04T09:06:32.111Z",
   "stories": [
     {
       "story_id": "wt-e976be74e6481ea2",
@@ -8573,7 +8573,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T08:51:38.320Z",
+        "detected_at": "2026-09-04T09:06:32.111Z",
         "content_hash": "c28ba785a2db5f834506865cf676edff2eff451eaf83360ae21b59587abcbd3e",
         "sources": [
           {
@@ -8980,11 +8980,11 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_INPUT_TOO_LARGE"
+          "AI_EX_ANTE_CAUSAL_OVERCLAIM"
         ],
-        "quality_retry_count": 0,
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": true,
         "consolidation": true
