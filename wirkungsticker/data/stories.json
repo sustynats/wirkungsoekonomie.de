@@ -1,7 +1,242 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T17:39:54.371Z",
+  "updated_at": "2026-09-04T18:06:22.511Z",
   "stories": [
+    {
+      "story_id": "wt-f2edeab46d126d83",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-95045bf1e46c4dc1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-863b26292ddba83d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-793556e43fd87137-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+      "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+      "source_summary": "Nach Angaben des rbb sind nach Ablauf eines Ultimatums Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht worden. Die Veröffentlichung wird der Hackergruppe Rhysida zugeschrieben. Der Bericht nennt zudem nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen; zunächst habe es eine Fehlermeldung gegeben, inzwischen seien Ordner sichtbar.\n\nDer Senat lässt die Daten nach eigenen Angaben intensiv prüfen. IT-Forensiker im Auftrag des Landes Berlin analysieren den Fund, und mögliche Betroffene sollen risikobasiert informiert werden. Zugleich wird erneut betont, dass Berlin nicht zahlen wolle. Offen bleibt nach dem Bericht weiterhin, ob die Daten echt, vollständig und aktuell sind und in welchem Umfang sie tatsächlich aus dem Angriff stammen.",
+      "summary": "Nach Ablauf eines Ultimatums sollen Daten aus dem Berliner Landesnetz im Darknet veröffentlicht worden sein. Der Senat lässt sie prüfen und will Betroffene bei Bedarf informieren.",
+      "detail_summary": "Gesichert ist aus der vorliegenden Quelle vor allem die behauptete Veröffentlichung von Daten nach dem Ablauf eines Erpressungsultimatums sowie die laufende Prüfung durch den Senat. Der Bericht ordnet die Aktion der Gruppe Rhysida zu und nennt nach rbb-Informationen rund 1,4 Millionen Daten in mehreren Paketen. Für die Einordnung ist das relevant, weil damit nicht nur ein Sicherheitsvorfall, sondern eine potenzielle Verbreitung sensibler Verwaltungsdaten im Raum steht. Der Wirkpfad verläuft über den möglichen Verlust von Vertraulichkeit, anschließende Auswertung durch Kriminelle und daraus folgende Risiken für Betroffene und Verwaltung. Offen bleibt jedoch, ob die veröffentlichten Daten echt, vollständig und aktuell sind; genau diese Grenze verhindert derzeit ein hartes Urteil über den tatsächlichen Schaden.",
+      "why_relevant": "Die Meldung betrifft mögliche Verbreitung sensibler Verwaltungsdaten und damit Vertraulichkeit, Schutzrechte und Verwaltungssicherheit in einem großen öffentlichen Netz.",
+      "topic": [
+        "Digitalisierung",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Betroffenheit vieler Verwaltungsbeschäftigter und weiterer Personen durch veröffentlichte Daten."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf das Landesnetz und der Umgang mit veröffentlichten Verwaltungsdaten berühren staatliche Funktionsfähigkeit und Vertrauensschutz."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T14:37:53.000Z",
+      "last_updated": "2026-09-04T18:08:49.939Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-9ce6682a9f1a77ee5f1d",
+      "source_published_at": "2026-09-04T17:23:23.000Z",
+      "published_at": "2026-09-04T15:07:05.912Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob weitere Stellen die Darknet-Veröffentlichung und den Umfang der Daten unabhängig bestätigen.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Berichte oder technische Belege zur Veröffentlichung im Darknet",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fbac489cdc45dae6",
+          "announced_at": "2026-09-04T14:37:53.000Z",
+          "follow_up_date": "2026-09-11T15:07:05.912Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die veröffentlichten Daten echt, vollständig und aktuell sind",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Abgleich durch Forensik oder bestätigte Prüfungsergebnisse",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b3c0927aea06f1f8",
+          "announced_at": "2026-09-04T17:23:23.000Z",
+          "follow_up_date": "2026-09-11T18:08:49.939Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:23:23.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-29d840b10b9a38bd",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-29d840b10b9a38bd-25c384d2e85a5bec-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-29d840b10b9a38bd-e085fe3b0032dfb7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-29d840b10b9a38bd-a3566239ebb967c1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "anschlag-auf-stromleitungen-stromnetz-sabotage-polizei-wertet-bekennerschreiben-aus-9a38bd",
+      "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
+      "source_summary": "Die vorliegenden Texte berichten über Sabotagevorwürfe gegen das Stromnetz nach dem Angriff auf ein Umspannwerk bei Jänschwalde. Mehrere Veröffentlichungen sagen, die Polizei suche nach dem Verfasser zweier Bekennerschreiben; in einer späteren Überschrift heißt es zusätzlich, bei einem Verdächtigen sei Sprengstoff gefunden worden. Die Texte ordnen die Vorgänge als Reihe von Attacken auf die Energieversorgung ein und verweisen darauf, dass in mehreren Bundesländern ermittelt wird.\n\nDie Quellen nennen keine überprüfbaren Details zur Identität des Verdächtigen, zur Echtheit der Schreiben oder zu amtlich bestätigten Einzelheiten der Funde. Sie geben vor allem den Stand der laufenden Berichterstattung wieder und enthalten unterschiedliche Schlagzeilen und knappe Abstracts.",
+      "summary": "Die Quellen berichten über Sabotagevorwürfe gegen das Stromnetz und eine Fahndung nach dem Verfasser zweier Bekennerschreiben. Später auftauchende Schlagzeilen ergänzen den Hinweis, bei einem Verdächtigen sei Sprengstoff gefunden worden.",
+      "detail_summary": "Gesichert aus den vorliegenden Quellen ist vor allem der laufende Ermittlungsstand: Nach dem Angriff auf das Stromnetz bei Jänschwalde wird nach dem Verfasser zweier Bekennerschreiben gesucht, und die Berichterstattung spricht von weiteren Angriffen auf die Energieversorgung. Eine spätere Schlagzeile ergänzt, dass bei einem Verdächtigen Sprengstoff gefunden worden sei. Für die Einordnung ist relevant, dass solche Vorfälle bei kritischer Infrastruktur potenziell über den Einzelfall hinaus wirken können, weil schon der Verdacht auf Sabotage Schutzmaßnahmen, Ermittlungsressourcen und die öffentliche Risikowahrnehmung verändert. Ein möglicher Wirkpfad liegt in höherem Sicherungsaufwand und kurzfristigen Störungen für Netzbetreiber und Behörden. Die Evidenz bleibt jedoch begrenzt, weil die gelieferten Texte nur journalistische Kurzfassungen sind und keine unabhängige Primärquelle zur Echtheit der Schreiben oder zu den Funden enthalten.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur und damit einen potenziell systemrelevanten Bereich mit möglichen Folgen für Sicherheit, Versorgung und Ermittlungsaufwand.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen für Versorgungssicherheit, Schutz kritischer Infrastruktur und öffentliche Sicherheit."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Energieinfrastruktur ist betroffen; konkrete Umweltfolgen sind aus den Quellen aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Sabotage gegen kritische Infrastruktur berührt staatliche Schutzfähigkeit und das Vertrauen in öffentliche Sicherheit."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "europa"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T06:44:56.000Z",
+      "last_updated": "2026-09-04T18:07:16.958Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-38406cf0057ffe31a483",
+      "source_published_at": "2026-09-04T06:44:56.000Z",
+      "published_at": "2026-09-04T18:07:16.958Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--polizei-wertet-bekennerschreiben-aus-38206690.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:44:56.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlag-auf-stromleitungen-16016453.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:45:57.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--sprengstoff-bei-verdaechtigem-gefunden-38206690.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:42:22.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-klimaterrorismus-16020231.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:49:11.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "title_image": {
@@ -98,17 +333,17 @@
         "mode": "editorial",
         "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3973a4a4aa29babd-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-36f35266a4ea781e-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-3616b61d5afc1059-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-573d10ce9f424111-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-a0b9303f31c7c6e3-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-00fccb632042b492-61605e37eceb3d45-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -382,20 +617,20 @@
     {
       "story_id": "wt-87c42d6cf088c08e",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-ed2837c9eb84bc45-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-9cc34a61c3be075e-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-dba37ad082b3bc15-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-e22fbeef47ed66dd-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-fbd056f63861b22d-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-c61594c142230474-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -2383,115 +2618,6 @@
           "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-schattenflotte-drohnen-sabotage-anschlag-,ukraine-news-04-09-2026-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T15:13:42.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-f2edeab46d126d83",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-e4a7abfbde025a9d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-2a4d0a984def3140-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-1891c81a9186f849-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
-      "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
-      "source_summary": "Der Bericht meldet, dass die Hackergruppe Rhysida nach einem Angriff auf das Berliner Landesnetz Daten im Darknet zum Download angeboten habe. Zuvor sei eine von der Berliner Senatsverwaltung gesetzte Zahlungsfrist abgelaufen. Nach rbb-Informationen sollen rund 1,4 Millionen Datensätze in mehreren Paketen zugänglich gemacht worden sein.\n\nDie Quelle nennt als mögliche Inhalte unter anderem Arbeitszeugnisse, Ausschreibungen, Beurteilungen und Personalakten. Zugleich heißt es, die Angaben ließen sich zunächst nicht überprüfen; auch sei unklar, ob es sich um die gesamte Menge der Anfang August erbeuteten Daten handelt. Experten hätten gewarnt, die Hacker könnten sensible Daten verkaufen.",
-      "summary": "Rhysida soll nach Ablauf einer Frist Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht haben. Umfang und genaue Inhalte sind laut Bericht noch nicht verifiziert.",
-      "detail_summary": "Gesichert nach der vorliegenden Quelle ist vor allem der behauptete Veröffentlichungsschritt der Hackergruppe Rhysida im Darknet nach Ablauf einer gesetzten Frist. Der Vorgang ist materiell, weil er von einem bloßen Datendiebstahl in eine potenzielle Verbreitung sensibler Verwaltungs- und Personaldaten übergeht. Der Wirkpfad liegt in der möglichen Weiterveräußerung, Vervielfältigung oder gezielten Nutzung der Daten gegen Betroffene und Verwaltung. Als mögliche Folge nennt die Quelle eine Veröffentlichung von Arbeitszeugnissen, Ausschreibungen, Beurteilungen und Personalakten; zugleich bleibt offen, ob diese Ordner tatsächlich vollständig und echt sind. Die Evidenz ist jedoch begrenzt, weil die Angaben zunächst nicht überprüfbar waren und nur eine Quelle vorliegt. Deshalb ist die Lage als laufende Entwicklung mit offenem Umfang und offener technischer Verifikation zu behandeln.",
-      "why_relevant": "Der Vorgang betrifft mögliche sensible Verwaltungsdaten, Datenschutz, Verwaltungskontinuität und das Vertrauen in digitale staatliche Infrastrukturen.",
-      "topic": [
-        "Digitalisierung",
-        "Geopolitik",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Folgen für Beschäftigte und weitere Betroffene durch Veröffentlichung oder Weiterverwertung sensibler Daten sind naheliegend, aber noch nicht verifiziert."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Ein Angriff auf ein Landesnetz und mögliche Datenoffenlegung berührt Verwaltungssicherheit, Datenschutz und die Funktionsfähigkeit öffentlicher Institutionen."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Datenmenge laut Bericht",
-            "value": "1,4 Millionen",
-            "unit": "Datensätze",
-            "context": "Zugänglich gemachte Daten laut rbb-Informationen"
-          }
-        ],
-        "affected_groups": [
-          "beschaeftigte",
-          "staat",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "risiko"
-        }
-      },
-      "first_seen": "2026-09-04T14:37:53.000Z",
-      "last_updated": "2026-09-04T15:07:05.912Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-9ce6682a9f1a77ee5f1d",
-      "source_published_at": "2026-09-04T14:37:53.000Z",
-      "published_at": "2026-09-04T15:07:05.912Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Prüfen, ob weitere Stellen die Darknet-Veröffentlichung und den Umfang der Daten unabhängig bestätigen.",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Unabhängige Berichte oder technische Belege zur Veröffentlichung im Darknet",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-fbac489cdc45dae6",
-          "announced_at": "2026-09-04T14:37:53.000Z",
-          "follow_up_date": "2026-09-11T15:07:05.912Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T14:37:53.000Z",
           "primary_source": false
         }
       ]
