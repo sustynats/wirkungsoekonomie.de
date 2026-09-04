@@ -119,6 +119,12 @@ export function mergeLivingFiles(stories, groups, now) {
         canonical_stories: [{ story_id: canonical.story_id, slug: canonical.slug, title: canonical.title }],
         note: "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft.",
       };
+      for (const aliasId of duplicate.living_file?.merged_story_ids || []) {
+        const alias = byId.get(aliasId);
+        if (!alias || !isMerged(alias) || alias.retirement.canonical_story_ids.includes(canonical.story_id)) continue;
+        alias.retirement_history = [...(alias.retirement_history || []), structuredClone(alias.retirement)];
+        alias.retirement = { ...alias.retirement, canonical_story_ids: [canonical.story_id], canonical_stories: [...duplicate.retirement.canonical_stories] };
+      }
       duplicate.analysis_status = "mit fortgeführter Wirkungsakte zusammengeführt";
       changes.push({ story_id: id, canonical_story_id: canonical.story_id, reason: group.reason });
     }

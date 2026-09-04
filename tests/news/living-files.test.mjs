@@ -64,6 +64,17 @@ test("automatic merging excludes other places, response policies and multi-event
   assert.equal(groups.length, 1);
   assert.deepEqual([groups[0].canonical_id, ...groups[0].duplicate_ids].sort(), ["dormagen", "dup"].sort());
 });
+
+test("subsequent consolidation resolves older aliases directly and preserves the old target history", () => {
+  const a = structuredClone(dormagen), b = story("b", dormagen.title), c = story("c", dormagen.title);
+  const stories = [a, b, c];
+  mergeLivingFiles(stories, [{ canonical_id: "b", duplicate_ids: ["c"], reason: "first" }], now);
+  mergeLivingFiles(stories, [{ canonical_id: "dormagen", duplicate_ids: ["b"], reason: "second" }], now);
+  assert.deepEqual(a.living_file.merged_story_ids.sort(), ["b", "c"]);
+  assert.deepEqual(c.retirement.canonical_story_ids, ["dormagen"]);
+  assert.deepEqual(c.retirement_history[0].canonical_story_ids, ["b"]);
+  assert.equal(clusterItems([source("Aktualisierung", c.sources[0].url)], stories, now)[0].story_id, "dormagen");
+});
 test("related links are capped, relevant, unique and never filled by shared category alone", () => {
   const relevant = Array.from({ length: 7 }, (_, i) => story(`related-${i}`, `Sicherheitsmaßnahmen für Umspannwerke ${i}`));
   const irrelevant = story("offshore", "Neue Ausschreibung für Windenergie auf See", { topic: ["Energie"] });
