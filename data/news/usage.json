@@ -2351,6 +2351,60 @@
       },
       "source_failures": 0,
       "quality_holds": 13
+    },
+    {
+      "run_id": "news-run-a08f874187b1",
+      "started_at": "2026-09-04T14:06:39.469Z",
+      "completed_at": "2026-09-04T14:10:38.578Z",
+      "berlin_slot": "Nachmittagsupdate",
+      "counts": {
+        "feed_entries_fetched": 971,
+        "feed_entries_new": 25,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 614,
+        "story_clusters": 31,
+        "locally_rejected": 26,
+        "ai_stories": 12,
+        "published_stories": 2
+      },
+      "ai": {
+        "requests": 11,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 73945,
+        "output_tokens": 5577,
+        "estimated_cost_usd": 0.054634,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 56
+    },
+    {
+      "run_id": "news-run-8903d4eace91",
+      "started_at": "2026-09-04T14:12:28.186Z",
+      "completed_at": "2026-09-04T14:14:06.912Z",
+      "berlin_slot": "Nachmittagsupdate",
+      "counts": {
+        "feed_entries_fetched": 0,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 0,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 12,
+        "published_stories": 0
+      },
+      "ai": {
+        "requests": 11,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 75025,
+        "output_tokens": 6021,
+        "estimated_cost_usd": 0.054849,
+        "token_source": "provider_reported_usage"
+      },
+      "source_failures": 0,
+      "quality_holds": 46
     }
   ]
 }
