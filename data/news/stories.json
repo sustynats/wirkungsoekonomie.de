@@ -1,7 +1,1037 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T03:21:31.830Z",
+  "updated_at": "2026-09-04T03:36:28.411Z",
   "stories": [
+    {
+      "story_id": "wt-c87cfdddd07432e2",
+      "slug": "sorte-e10-irankrieg-treibt-benzinpreis-auf-hochststand-7432e2",
+      "title": "Sorte E10: Irankrieg treibt Benzinpreis auf Höchststand",
+      "first_seen": "2026-09-03T08:11:00.000Z",
+      "last_updated": "2026-09-04T03:38:02.536Z",
+      "published_at": "2026-09-04T03:38:02.536Z",
+      "updated_at": "2026-09-04T03:38:02.536Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+          "title": "Sorte E10: Irankrieg treibt Benzinpreis auf Höchststand",
+          "summary": "",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T08:11:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d3e4a1488797fca20322290ffb98088538856a196636f6fce909838a5dcaa0b0",
+          "source_item_id": "cf4ff84f2b730faca0cd7e35d44df4bb0a55e63a548e2f04974b7df88a6bb371",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T08:11:00.000Z",
+          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c87cfdddd07432e2-v1-claim-1",
+          "story_id": "wt-c87cfdddd07432e2",
+          "claim": "Der bundesweite Tagesdurchschnitt für E10 lag am Mittwoch bei 2,215 Euro je Liter und damit auf einem neuen Höchststand.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "excerpt_hash": "755ec9868d4e620b871d",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:38:02.536Z"
+        },
+        {
+          "claim_id": "wt-c87cfdddd07432e2-v1-claim-2",
+          "story_id": "wt-c87cfdddd07432e2",
+          "claim": "Der bisherige Rekord lag laut ADAC bei 2,203 Euro aus dem März 2022.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "excerpt_hash": "a1503e9a5b9b4c24f37d",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:38:02.536Z"
+        },
+        {
+          "claim_id": "wt-c87cfdddd07432e2-v1-claim-3",
+          "story_id": "wt-c87cfdddd07432e2",
+          "claim": "Als Gründe nennt die Quelle das Wiederaufflammen des Irankriegs, steigende Rohölpreise und Niedrigwasser am Rhein mit höheren Transportkosten.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "excerpt_hash": "8eb3adfa3b5338d21654",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "excerpt_hash": "00f6891d802b66182721",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:38:02.536Z"
+        },
+        {
+          "claim_id": "wt-c87cfdddd07432e2-v1-claim-4",
+          "story_id": "wt-c87cfdddd07432e2",
+          "claim": "Die Darstellung spricht ausdrücklich von einem nominalen Preisrekord und verweist darauf, dass Benzin inflationsbereinigt früher schon teurer war.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "excerpt_hash": "a1503e9a5b9b4c24f37d",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:38:02.536Z"
+        },
+        {
+          "claim_id": "wt-c87cfdddd07432e2-v1-claim-5",
+          "story_id": "wt-c87cfdddd07432e2",
+          "claim": "Die Bundesregierung hat eine Neuauflage des Tankrabatts bislang abgelehnt.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "excerpt_hash": "00d6390e34c26ceb030a",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "excerpt_hash": "a6fcbc8b4f1b50c70fd6",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:38:02.536Z"
+        }
+      ],
+      "event_id": "event-4a6d367a382907820710",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T03:37:49.067Z",
+      "publish_ready_at": "2026-09-04T03:38:02.536Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der bundesweite E10-Durchschnitt in den nächsten Tagen wieder unter den gemeldeten Höchststand fällt.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "ADAC-Tagesdurchschnitt für E10 je Liter",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b0e7d85009226494",
+          "announced_at": "2026-09-03T08:11:00.000Z",
+          "follow_up_date": "2026-09-11T03:38:02.536Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Nach dem Wiederaufflammen des Irankriegs hat der Preis für Superbenzin der Sorte E10 laut der Meldung einen Höchststand erreicht. Genannt wird ein bundesweiter Tagesdurchschnitt von 2,215 Euro pro Liter am Mittwoch; der bisherige Rekord liege bei 2,203 Euro aus dem März 2022, wie der ADAC auf Anfrage mitteilte. Die Meldung ordnet ein, dass es sich um einen nominalen Rekord handelt und inflationsbereinigt Benzin früher schon teurer war.\n\nAls weitere Gründe nennt die Quelle steigende Rohölpreise infolge der erneuten Eskalation sowie Niedrigwasser am Rhein, das die Transportkosten erhöhe. Außerdem heißt es, E10 sei die günstigste gängige Benzinsorte in Deutschland und in der Regel 5 bis 6 Cent billiger als Super E5. Eine Neuauflage des Tankrabatts habe die Bundesregierung bislang abgelehnt.",
+      "analysis": {
+        "story_id": "wt-c87cfdddd07432e2",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "E10 hat laut der Meldung einen neuen nominellen Höchststand erreicht. Als Treiber nennt die Quelle den wieder aufgeflammten Irankrieg, höhere Rohölpreise und gestiegene Transportkosten wegen Niedrigwasser.",
+        "detail_summary": "Gesichert ist zunächst nur die Preisangabe: Die Meldung nennt für E10 einen bundesweiten Tagesdurchschnitt von 2,215 Euro je Liter und ordnet das als neuen nominalen Rekord ein. Für die Einordnung verweist sie auf den ADAC und auf den alten Rekord von 2,203 Euro aus dem März 2022. Relevant ist das, weil Kraftstoffpreise direkt Haushalte, Unternehmen und Logistik betreffen und sich rasch in weitere Preise übersetzen können. Der mögliche Wirkpfad läuft über teurere Rohölkosten und höhere Transportkosten bei Niedrigwasser. Offen bleibt in dieser Quellenlage, wie stark und wie lange der Preisschub anhält und ob er sich in den kommenden Tagen wieder abschwächt. Eine belastbare Wirkungsbewertung über den unmittelbaren Preisimpuls hinaus ist mit dem vorliegenden Material noch nicht möglich.",
+        "why_relevant": "Der Bericht beschreibt einen neuen Preisrekord bei E10 und nennt mehrere Preistreiber mit möglichem Durchschlag auf Mobilität, Transport und Verbraucherpreise.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Treibstoffpreise treffen Autofahrer, Pendler und Transportkosten direkt; der Effekt ist kurzfristig und breit, aber hier nur als Preisimpuls belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Meldung betrifft fossile Kraftstoffpreise, liefert aber keine direkte Aussage zu Emissionen, Verbrauchsänderungen oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein demokratischer Bezug ergibt sich nur indirekt über mögliche Entlastungs- und Preisdruckdebatten; ein institutioneller Effekt ist nicht belegt."
+        },
+        "importance": "mittel",
+        "impact_potential": "Kurzfristig kann der Preisrekord die privaten Mobilitätskosten und die Kosten entlang von Transport- und Lieferketten erhöhen; mittelbar kann er politische Entlastungsforderungen verstärken.",
+        "impact_risks": [
+          "Höhere Ausgaben für Autofahrten und Logistik",
+          "Weitergabe von Kosten an Verbraucherpreise in einzelnen Lieferketten",
+          "Politischer Druck auf kurzfristige Entlastungsmaßnahmen"
+        ],
+        "mechanisms": [
+          "Ölpreissteigerungen erhöhen die Beschaffungskosten für Kraftstoff",
+          "Niedrigwasser kann Transportkosten erhöhen",
+          "Marktpreise für E10 reagieren sofort auf Kosten- und Erwartungsänderungen"
+        ],
+        "first_order": [
+          "E10 wird teurer",
+          "Tank- und Fahrkosten steigen kurzfristig"
+        ],
+        "second_order": [
+          "Einzelne Unternehmen können höhere Logistikkosten weitergeben",
+          "Haushalte mit hohem Pkw-Anteil werden stärker belastet"
+        ],
+        "third_order": [
+          "Anhaltend hohe Kraftstoffpreise können Nachfrage- und Preisanpassungen entlang von Lieferketten auslösen"
+        ],
+        "systemic_relevance": "Der Vorgang ist für die Gesamtwirtschaft relevant, weil Kraftstoffpreise als breit wirksamer Kostenfaktor in Mobilität und Logistik wirken; die Quellenlage belegt aber bisher nur einen aktuellen Preissprung.",
+        "transformation_potential": "Keine Transformationswirkung belegt; allenfalls ein temporärer Preisschock mit Anpassungsdruck im Mobilitäts- und Transportsektor.",
+        "resilience": "Die Meldung verweist auf einen nominellen Rekord, nicht auf strukturelle Schutzmechanismen; offen bleibt, wie widerstandsfähig Haushalte und Lieferketten gegenüber dem Anstieg sind.",
+        "side_effects": [
+          "Mögliche Verlagerung zu günstigerem Tanken oder sparsamerem Fahren",
+          "Mögliche politische Debatte über Entlastung oder Preisbremsen"
+        ],
+        "uncertainties": [
+          "Ob der Höchststand anhält oder nur ein kurzfristiger Ausschlag ist",
+          "Wie stark der Iran-Konflikt und das Niedrigwasser tatsächlich den Endpreis treiben",
+          "Ob und wie schnell Händler die Kostenbewegung weitergeben"
+        ],
+        "evidence_level": "single_source_claim mit ADAC-Bezug in einer journalistischen Meldung; keine zweite unabhängige Bestätigung im gelieferten Material",
+        "attribution": "Die Preis- und Ursachebehauptungen stammen aus einer rbb24-Meldung, die den ADAC und weitere Marktursachen zitiert.",
+        "watch_next": [
+          "Nächste ADAC-Tagesdurchschnitte für E10",
+          "Entwicklung von Rohölpreis und Transportkosten"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 12, SDG 13"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "affected_scope",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neuer nomineller Preisrekord bei einem weit verbreiteten Alltagsgut mit möglichem Durchschlag auf Mobilität und Logistik; die Meldung ist jedoch bislang nur einseitig belegt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "E10-Tagesdurchschnitt",
+              "value": "2,215",
+              "unit": "Euro pro Liter",
+              "context": "gemeldeter bundesweiter Durchschnitt am Mittwoch",
+              "claim_id": "wt-c87cfdddd07432e2-claim-01"
+            },
+            {
+              "label": "Bisheriger Rekord",
+              "value": "2,203",
+              "unit": "Euro pro Liter",
+              "context": "ADAC-Wert aus dem März 2022",
+              "claim_id": "wt-c87cfdddd07432e2-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "haushalte",
+            "unternehmen",
+            "verbraucherinnen",
+            "staat"
+          ],
+          "timeline": [
+            {
+              "date": "2022-03",
+              "label": "Bisheriger Rekord laut ADAC"
+            }
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T03:38:02.536Z",
+          "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
+          "source_summary": "Nach dem Wiederaufflammen des Irankriegs hat der Preis für Superbenzin der Sorte E10 laut der Meldung einen Höchststand erreicht. Genannt wird ein bundesweiter Tagesdurchschnitt von 2,215 Euro pro Liter am Mittwoch; der bisherige Rekord liege bei 2,203 Euro aus dem März 2022, wie der ADAC auf Anfrage mitteilte. Die Meldung ordnet ein, dass es sich um einen nominalen Rekord handelt und inflationsbereinigt Benzin früher schon teurer war.\n\nAls weitere Gründe nennt die Quelle steigende Rohölpreise infolge der erneuten Eskalation sowie Niedrigwasser am Rhein, das die Transportkosten erhöhe. Außerdem heißt es, E10 sei die günstigste gängige Benzinsorte in Deutschland und in der Regel 5 bis 6 Cent billiger als Super E5. Eine Neuauflage des Tankrabatts habe die Bundesregierung bislang abgelehnt.",
+          "analysis": {
+            "story_id": "wt-c87cfdddd07432e2",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "E10 hat laut der Meldung einen neuen nominellen Höchststand erreicht. Als Treiber nennt die Quelle den wieder aufgeflammten Irankrieg, höhere Rohölpreise und gestiegene Transportkosten wegen Niedrigwasser.",
+            "detail_summary": "Gesichert ist zunächst nur die Preisangabe: Die Meldung nennt für E10 einen bundesweiten Tagesdurchschnitt von 2,215 Euro je Liter und ordnet das als neuen nominalen Rekord ein. Für die Einordnung verweist sie auf den ADAC und auf den alten Rekord von 2,203 Euro aus dem März 2022. Relevant ist das, weil Kraftstoffpreise direkt Haushalte, Unternehmen und Logistik betreffen und sich rasch in weitere Preise übersetzen können. Der mögliche Wirkpfad läuft über teurere Rohölkosten und höhere Transportkosten bei Niedrigwasser. Offen bleibt in dieser Quellenlage, wie stark und wie lange der Preisschub anhält und ob er sich in den kommenden Tagen wieder abschwächt. Eine belastbare Wirkungsbewertung über den unmittelbaren Preisimpuls hinaus ist mit dem vorliegenden Material noch nicht möglich.",
+            "why_relevant": "Der Bericht beschreibt einen neuen Preisrekord bei E10 und nennt mehrere Preistreiber mit möglichem Durchschlag auf Mobilität, Transport und Verbraucherpreise.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Treibstoffpreise treffen Autofahrer, Pendler und Transportkosten direkt; der Effekt ist kurzfristig und breit, aber hier nur als Preisimpuls belegt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Die Meldung betrifft fossile Kraftstoffpreise, liefert aber keine direkte Aussage zu Emissionen, Verbrauchsänderungen oder Klimawirkungen."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Ein demokratischer Bezug ergibt sich nur indirekt über mögliche Entlastungs- und Preisdruckdebatten; ein institutioneller Effekt ist nicht belegt."
+            },
+            "importance": "mittel",
+            "impact_potential": "Kurzfristig kann der Preisrekord die privaten Mobilitätskosten und die Kosten entlang von Transport- und Lieferketten erhöhen; mittelbar kann er politische Entlastungsforderungen verstärken.",
+            "impact_risks": [
+              "Höhere Ausgaben für Autofahrten und Logistik",
+              "Weitergabe von Kosten an Verbraucherpreise in einzelnen Lieferketten",
+              "Politischer Druck auf kurzfristige Entlastungsmaßnahmen"
+            ],
+            "mechanisms": [
+              "Ölpreissteigerungen erhöhen die Beschaffungskosten für Kraftstoff",
+              "Niedrigwasser kann Transportkosten erhöhen",
+              "Marktpreise für E10 reagieren sofort auf Kosten- und Erwartungsänderungen"
+            ],
+            "first_order": [
+              "E10 wird teurer",
+              "Tank- und Fahrkosten steigen kurzfristig"
+            ],
+            "second_order": [
+              "Einzelne Unternehmen können höhere Logistikkosten weitergeben",
+              "Haushalte mit hohem Pkw-Anteil werden stärker belastet"
+            ],
+            "third_order": [
+              "Anhaltend hohe Kraftstoffpreise können Nachfrage- und Preisanpassungen entlang von Lieferketten auslösen"
+            ],
+            "systemic_relevance": "Der Vorgang ist für die Gesamtwirtschaft relevant, weil Kraftstoffpreise als breit wirksamer Kostenfaktor in Mobilität und Logistik wirken; die Quellenlage belegt aber bisher nur einen aktuellen Preissprung.",
+            "transformation_potential": "Keine Transformationswirkung belegt; allenfalls ein temporärer Preisschock mit Anpassungsdruck im Mobilitäts- und Transportsektor.",
+            "resilience": "Die Meldung verweist auf einen nominellen Rekord, nicht auf strukturelle Schutzmechanismen; offen bleibt, wie widerstandsfähig Haushalte und Lieferketten gegenüber dem Anstieg sind.",
+            "side_effects": [
+              "Mögliche Verlagerung zu günstigerem Tanken oder sparsamerem Fahren",
+              "Mögliche politische Debatte über Entlastung oder Preisbremsen"
+            ],
+            "uncertainties": [
+              "Ob der Höchststand anhält oder nur ein kurzfristiger Ausschlag ist",
+              "Wie stark der Iran-Konflikt und das Niedrigwasser tatsächlich den Endpreis treiben",
+              "Ob und wie schnell Händler die Kostenbewegung weitergeben"
+            ],
+            "evidence_level": "single_source_claim mit ADAC-Bezug in einer journalistischen Meldung; keine zweite unabhängige Bestätigung im gelieferten Material",
+            "attribution": "Die Preis- und Ursachebehauptungen stammen aus einer rbb24-Meldung, die den ADAC und weitere Marktursachen zitiert.",
+            "watch_next": [
+              "Nächste ADAC-Tagesdurchschnitte für E10",
+              "Entwicklung von Rohölpreis und Transportkosten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 12, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "affected_scope",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neuer nomineller Preisrekord bei einem weit verbreiteten Alltagsgut mit möglichem Durchschlag auf Mobilität und Logistik; die Meldung ist jedoch bislang nur einseitig belegt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "E10-Tagesdurchschnitt",
+                  "value": "2,215",
+                  "unit": "Euro pro Liter",
+                  "context": "gemeldeter bundesweiter Durchschnitt am Mittwoch",
+                  "claim_id": "wt-c87cfdddd07432e2-claim-01"
+                },
+                {
+                  "label": "Bisheriger Rekord",
+                  "value": "2,203",
+                  "unit": "Euro pro Liter",
+                  "context": "ADAC-Wert aus dem März 2022",
+                  "claim_id": "wt-c87cfdddd07432e2-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "haushalte",
+                "unternehmen",
+                "verbraucherinnen",
+                "staat"
+              ],
+              "timeline": [
+                {
+                  "date": "2022-03",
+                  "label": "Bisheriger Rekord laut ADAC"
+                }
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-c87cfdddd07432e2-v1-claim-1",
+              "story_id": "wt-c87cfdddd07432e2",
+              "claim": "Der bundesweite Tagesdurchschnitt für E10 lag am Mittwoch bei 2,215 Euro je Liter und damit auf einem neuen Höchststand.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+                  "excerpt_hash": "755ec9868d4e620b871d",
+                  "checked_at": "2026-09-04T03:38:02.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            },
+            {
+              "claim_id": "wt-c87cfdddd07432e2-v1-claim-2",
+              "story_id": "wt-c87cfdddd07432e2",
+              "claim": "Der bisherige Rekord lag laut ADAC bei 2,203 Euro aus dem März 2022.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+                  "excerpt_hash": "a1503e9a5b9b4c24f37d",
+                  "checked_at": "2026-09-04T03:38:02.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            },
+            {
+              "claim_id": "wt-c87cfdddd07432e2-v1-claim-3",
+              "story_id": "wt-c87cfdddd07432e2",
+              "claim": "Als Gründe nennt die Quelle das Wiederaufflammen des Irankriegs, steigende Rohölpreise und Niedrigwasser am Rhein mit höheren Transportkosten.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+                  "excerpt_hash": "8eb3adfa3b5338d21654",
+                  "checked_at": "2026-09-04T03:38:02.536Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+                  "excerpt_hash": "00f6891d802b66182721",
+                  "checked_at": "2026-09-04T03:38:02.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            },
+            {
+              "claim_id": "wt-c87cfdddd07432e2-v1-claim-4",
+              "story_id": "wt-c87cfdddd07432e2",
+              "claim": "Die Darstellung spricht ausdrücklich von einem nominalen Preisrekord und verweist darauf, dass Benzin inflationsbereinigt früher schon teurer war.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+                  "excerpt_hash": "a1503e9a5b9b4c24f37d",
+                  "checked_at": "2026-09-04T03:38:02.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            },
+            {
+              "claim_id": "wt-c87cfdddd07432e2-v1-claim-5",
+              "story_id": "wt-c87cfdddd07432e2",
+              "claim": "Die Bundesregierung hat eine Neuauflage des Tankrabatts bislang abgelehnt.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+                  "excerpt_hash": "00d6390e34c26ceb030a",
+                  "checked_at": "2026-09-04T03:38:02.536Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+                  "excerpt_hash": "a6fcbc8b4f1b50c70fd6",
+                  "checked_at": "2026-09-04T03:38:02.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:38:02.536Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+              "content_hash": "d3e4a1488797fca20322290ffb98088538856a196636f6fce909838a5dcaa0b0"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T03:38:02.536Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "de5eabf08e3fe8dd815cc88cd6c86f6894940fddc1c95aaada087b3588d5a111"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "75f1aaa952c1114cfe795099a48e378842ce972463e0a9a8ae017312102457d6"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "08a9279a740ecee2fd674434a32e5dc2a39ba38ccee6c173764818736f51a842"
+        },
+        "source_visual": null,
+        "fingerprint": "81a99700de773714bc81196ce58ee49aa46ab587be3cfb986d876d1d31e293f9",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T03:39:48.954Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-34e360cdb996a299",
+      "slug": "france-agriculture-production-sees-economic-hit-from-heatwaves-96a299",
+      "title": "France agriculture production sees economic hit from heatwaves",
+      "first_seen": "2026-09-03T16:05:41.000Z",
+      "last_updated": "2026-09-04T03:37:06.255Z",
+      "published_at": "2026-09-04T03:37:06.255Z",
+      "updated_at": "2026-09-04T03:37:06.255Z",
+      "topic": [
+        "Gesundheit",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+          "title": "France agriculture production sees economic hit from heatwaves",
+          "summary": "France's recent heatwaves didn't just pose enormous health risks, they also hampered the economy. Authorities have estimated that the recent heat and drought caused production to plummet and expect wealth generated by the agricultural sector to decline by 8% over the course of the year. The knock-on effects will cost the French economy an estimated 0.1 percentage points of growth in 2026.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:05:41.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "20d6cfd905f85c4b6eeb6985e65f3135171e3ee5351cd7d09e479e6ce09029d4",
+          "source_item_id": "a5510b56d96eb7dc84ee099a7b2845d383db50c1d1ebd4beb43f81d875527f42",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T16:05:41.000Z",
+          "ingested_at": "2026-09-04T03:21:31.830Z",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-34e360cdb996a299-v1-claim-1",
+          "story_id": "wt-34e360cdb996a299",
+          "claim": "Frankreichs Hitzewellen und Dürre haben nach Behördenangaben die Produktion der Landwirtschaft gedrückt.",
+          "status": "single_source_claim",
+          "source_id": "france24-en",
+          "evidence": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+              "excerpt_hash": "7dc5a5608eb234308af5",
+              "checked_at": "2026-09-04T03:37:06.255Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:37:06.255Z"
+        },
+        {
+          "claim_id": "wt-34e360cdb996a299-v1-claim-2",
+          "story_id": "wt-34e360cdb996a299",
+          "claim": "Der Wert, den der Agrarsektor im Laufe des Jahres erzeugt, soll laut der Meldung um 8% sinken.",
+          "status": "single_source_claim",
+          "source_id": "france24-en",
+          "evidence": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+              "excerpt_hash": "34a523b4d0588a3f1e71",
+              "checked_at": "2026-09-04T03:37:06.255Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:37:06.255Z"
+        },
+        {
+          "claim_id": "wt-34e360cdb996a299-v1-claim-3",
+          "story_id": "wt-34e360cdb996a299",
+          "claim": "Für die französische Wirtschaft werden daraus für 2026 0,1 Prozentpunkte Wachstumseinbuße veranschlagt.",
+          "status": "single_source_claim",
+          "source_id": "france24-en",
+          "evidence": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+              "excerpt_hash": "34a523b4d0588a3f1e71",
+              "checked_at": "2026-09-04T03:37:06.255Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T03:37:06.255Z"
+        }
+      ],
+      "event_id": "event-89b1f66c8058426180f1",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T03:36:50.985Z",
+      "publish_ready_at": "2026-09-04T03:37:06.255Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "France 24 berichtet über wirtschaftliche Folgen der jüngsten Hitzewellen in Frankreich. Die Meldung beschreibt, dass die Hitze und Dürre nach Angaben von Behörden die landwirtschaftliche Produktion stark gedrückt hätten. Genannt werden zwei bezifferte Folgen: Der vom Agrarsektor erzeugte Wohlstand solle im laufenden Jahr um 8% sinken, und die Folgekosten für die französische Wirtschaft würden 2026 auf 0,1 Prozentpunkte Wachstum geschätzt.\n\nDie Quelle nennt keine unabhängige zweite Bestätigung und verweist nicht auf einen vollständigen amtlichen Bericht im Textausschnitt. Offene Punkte bleiben damit die genaue Methodik der Schätzung, der betrachtete Zeitraum und die Frage, welche Teilbereiche der Landwirtschaft besonders betroffen sind.",
+      "analysis": {
+        "story_id": "wt-34e360cdb996a299",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Frankreichs jüngste Hitzewellen haben laut einer Meldung die Landwirtschaft wirtschaftlich belastet. Genannt werden ein Rückgang des agrarischen Wertschöpfungsbeitrags um 8% und ein Wachstumsabzug von 0,1 Prozentpunkten für 2026.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die bezifferte Schätzung, dass Hitze und Dürre in Frankreich die landwirtschaftliche Produktion gedrückt haben sollen. Zusätzlich nennt die Meldung einen erwarteten Rückgang des vom Agrarsektor erzeugten Wohlstands um 8% im Jahresverlauf sowie Kosten für die französische Wirtschaft von 0,1 Prozentpunkten Wachstum im Jahr 2026. Das ist relevant, weil es nicht nur ein Wetterereignis beschreibt, sondern einen quantifizierten Übergang von Klimastress zu Einkommens- und Wachstumseffekten. Der Wirkpfad verläuft über Produktionsausfälle in der Landwirtschaft zu geringerer Wertschöpfung und möglichen Folgekosten für das gesamtwirtschaftliche Wachstum. Mögliche weitere Folgen wären Druck auf Preise, Einkommen und Investitionsspielräume in betroffenen Regionen. Die Evidenz bleibt jedoch auf eine einzelne journalistische Quelle begrenzt; Methodik, Datengrundlage und mögliche Gegenprüfungen sind im gelieferten Material nicht sichtbar.",
+        "why_relevant": "Die Meldung verbindet ein aktuelles Hitzewellenereignis mit konkret bezifferten wirtschaftlichen Folgen für einen systemrelevanten Sektor und mit einer makroökonomischen Wachstumswirkung.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Landwirtschaft betrifft Einkommen, Versorgung und Beschäftigung; Hitze- und Dürreschäden können Ernten, Erlöse und regionale Stabilität beeinträchtigen."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Der Vorgang ist direkt mit Hitzewellen und Dürre verknüpft und zeigt einen materiellen Klimafolgenpfad in der Realwirtschaft."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung berührt staatliche Korrekturfähigkeit über Agrar- und Klimapolitik, ohne selbst einen demokratischen Prozess zu verändern."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Ertrags- und Einkommensverluste in der Landwirtschaft sowie ein messbarer, wenn auch kleiner, Wachstumsabzug für die Gesamtwirtschaft.",
+        "impact_risks": [
+          "Weitere Hitzewellen könnten Produktionsausfälle verstärken und Anpassungskosten erhöhen.",
+          "Regionale Unterschiede können Verlierergruppen in der Landwirtschaft vergrößern.",
+          "Preis- und Versorgungseffekte sind möglich, im Material aber nicht belegt."
+        ],
+        "mechanisms": [
+          "Hitze und Dürre vermindern landwirtschaftliche Produktion.",
+          "Geringere Produktion senkt die erzeugte Wertschöpfung des Sektors.",
+          "Folgekosten übertragen sich auf das gesamtwirtschaftliche Wachstum."
+        ],
+        "first_order": [
+          "Ernte- und Produktionsrückgänge in betroffenen Betrieben.",
+          "Sinkende sektorale Wertschöpfung."
+        ],
+        "second_order": [
+          "Belastung von Einkommen und Investitionsfähigkeit landwirtschaftlicher Betriebe.",
+          "Möglicher Druck auf nachgelagerte Wertschöpfungsketten."
+        ],
+        "third_order": [
+          "Leichter negativer Beitrag zum BIP-Wachstum 2026.",
+          "Erhöhter Anpassungsbedarf in Agrar- und Klimapolitik."
+        ],
+        "systemic_relevance": "Der Fall ist systemrelevant, weil Landwirtschaft, Versorgung und makroökonomisches Wachstum gleichzeitig berührt werden; die Größenordnung wirkt aber im Material eher sektor- als gesamtwirtschaftlich dominant.",
+        "transformation_potential": "Die Meldung kann Anpassungsdruck sichtbar machen, etwa für Bewässerung, Sortenwahl, Risikomanagement und Klimaanpassung in der Landwirtschaft.",
+        "resilience": "Sie weist auf eine Verwundbarkeit gegenüber Hitze und Dürre hin; wie stark Anpassung bereits greift, bleibt offen.",
+        "side_effects": [
+          "Mögliche regionale Ungleichverteilung der Schäden.",
+          "Unklare Preis- oder Importeffekte im vorliegenden Material."
+        ],
+        "uncertainties": [
+          "Die Schätzung stammt nur aus einer journalistisch wiedergegebenen Behördenangabe.",
+          "Es fehlt der vollständige methodische Hintergrund der 8%- und 0,1%-Angaben.",
+          "Unklar bleibt, welche Sparten der Landwirtschaft am stärksten betroffen sind."
+        ],
+        "evidence_level": "single_source_claim mit bezifferten Angaben aus einer journalistischen Meldung; unabhängige Bestätigung im gelieferten Material fehlt.",
+        "attribution": "Die wirtschaftlichen Folgen werden als Schätzung der Behörden wiedergegeben, nicht als bereits gemessene Endbilanz.",
+        "watch_next": [
+          "Ob amtliche Stellen die Schätzungen veröffentlichen oder präzisieren.",
+          "Ob sich weitere Daten zu Ernteausfällen und regionalen Effekten zeigen.",
+          "Ob die 2026er Wachstumsprognose in späteren Berichten bestätigt oder angepasst wird."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 2, SDG 8, SDG 13"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung liefert neue, bezifferte Angaben zu klimaassoziierten wirtschaftlichen Folgen für einen systemrelevanten Sektor und zu einem gesamtwirtschaftlichen Wachstumsabzug."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Rückgang sektoraler Wertschöpfung",
+              "value": "8%",
+              "unit": "Prozent",
+              "context": "Erwarteter Rückgang im laufenden Jahr laut Meldung",
+              "claim_id": "wt-34e360cdb996a299-claim-01"
+            },
+            {
+              "label": "Wachstumseffekt 2026",
+              "value": "0.1",
+              "unit": "Prozentpunkte",
+              "context": "Geschätzter Abzug vom französischen Wachstum",
+              "claim_id": "wt-34e360cdb996a299-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "unternehmen",
+            "beschaeftigte",
+            "staat",
+            "verbraucherinnen"
+          ],
+          "timeline": [
+            {
+              "date": "2026",
+              "label": "Erwarteter Wachstumseffekt"
+            }
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "risiko",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T03:37:06.255Z",
+          "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
+          "source_summary": "France 24 berichtet über wirtschaftliche Folgen der jüngsten Hitzewellen in Frankreich. Die Meldung beschreibt, dass die Hitze und Dürre nach Angaben von Behörden die landwirtschaftliche Produktion stark gedrückt hätten. Genannt werden zwei bezifferte Folgen: Der vom Agrarsektor erzeugte Wohlstand solle im laufenden Jahr um 8% sinken, und die Folgekosten für die französische Wirtschaft würden 2026 auf 0,1 Prozentpunkte Wachstum geschätzt.\n\nDie Quelle nennt keine unabhängige zweite Bestätigung und verweist nicht auf einen vollständigen amtlichen Bericht im Textausschnitt. Offene Punkte bleiben damit die genaue Methodik der Schätzung, der betrachtete Zeitraum und die Frage, welche Teilbereiche der Landwirtschaft besonders betroffen sind.",
+          "analysis": {
+            "story_id": "wt-34e360cdb996a299",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Frankreichs jüngste Hitzewellen haben laut einer Meldung die Landwirtschaft wirtschaftlich belastet. Genannt werden ein Rückgang des agrarischen Wertschöpfungsbeitrags um 8% und ein Wachstumsabzug von 0,1 Prozentpunkten für 2026.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die bezifferte Schätzung, dass Hitze und Dürre in Frankreich die landwirtschaftliche Produktion gedrückt haben sollen. Zusätzlich nennt die Meldung einen erwarteten Rückgang des vom Agrarsektor erzeugten Wohlstands um 8% im Jahresverlauf sowie Kosten für die französische Wirtschaft von 0,1 Prozentpunkten Wachstum im Jahr 2026. Das ist relevant, weil es nicht nur ein Wetterereignis beschreibt, sondern einen quantifizierten Übergang von Klimastress zu Einkommens- und Wachstumseffekten. Der Wirkpfad verläuft über Produktionsausfälle in der Landwirtschaft zu geringerer Wertschöpfung und möglichen Folgekosten für das gesamtwirtschaftliche Wachstum. Mögliche weitere Folgen wären Druck auf Preise, Einkommen und Investitionsspielräume in betroffenen Regionen. Die Evidenz bleibt jedoch auf eine einzelne journalistische Quelle begrenzt; Methodik, Datengrundlage und mögliche Gegenprüfungen sind im gelieferten Material nicht sichtbar.",
+            "why_relevant": "Die Meldung verbindet ein aktuelles Hitzewellenereignis mit konkret bezifferten wirtschaftlichen Folgen für einen systemrelevanten Sektor und mit einer makroökonomischen Wachstumswirkung.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Landwirtschaft betrifft Einkommen, Versorgung und Beschäftigung; Hitze- und Dürreschäden können Ernten, Erlöse und regionale Stabilität beeinträchtigen."
+            },
+            "planet": {
+              "relevance": "hoch",
+              "rationale": "Der Vorgang ist direkt mit Hitzewellen und Dürre verknüpft und zeigt einen materiellen Klimafolgenpfad in der Realwirtschaft."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Meldung berührt staatliche Korrekturfähigkeit über Agrar- und Klimapolitik, ohne selbst einen demokratischen Prozess zu verändern."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Ertrags- und Einkommensverluste in der Landwirtschaft sowie ein messbarer, wenn auch kleiner, Wachstumsabzug für die Gesamtwirtschaft.",
+            "impact_risks": [
+              "Weitere Hitzewellen könnten Produktionsausfälle verstärken und Anpassungskosten erhöhen.",
+              "Regionale Unterschiede können Verlierergruppen in der Landwirtschaft vergrößern.",
+              "Preis- und Versorgungseffekte sind möglich, im Material aber nicht belegt."
+            ],
+            "mechanisms": [
+              "Hitze und Dürre vermindern landwirtschaftliche Produktion.",
+              "Geringere Produktion senkt die erzeugte Wertschöpfung des Sektors.",
+              "Folgekosten übertragen sich auf das gesamtwirtschaftliche Wachstum."
+            ],
+            "first_order": [
+              "Ernte- und Produktionsrückgänge in betroffenen Betrieben.",
+              "Sinkende sektorale Wertschöpfung."
+            ],
+            "second_order": [
+              "Belastung von Einkommen und Investitionsfähigkeit landwirtschaftlicher Betriebe.",
+              "Möglicher Druck auf nachgelagerte Wertschöpfungsketten."
+            ],
+            "third_order": [
+              "Leichter negativer Beitrag zum BIP-Wachstum 2026.",
+              "Erhöhter Anpassungsbedarf in Agrar- und Klimapolitik."
+            ],
+            "systemic_relevance": "Der Fall ist systemrelevant, weil Landwirtschaft, Versorgung und makroökonomisches Wachstum gleichzeitig berührt werden; die Größenordnung wirkt aber im Material eher sektor- als gesamtwirtschaftlich dominant.",
+            "transformation_potential": "Die Meldung kann Anpassungsdruck sichtbar machen, etwa für Bewässerung, Sortenwahl, Risikomanagement und Klimaanpassung in der Landwirtschaft.",
+            "resilience": "Sie weist auf eine Verwundbarkeit gegenüber Hitze und Dürre hin; wie stark Anpassung bereits greift, bleibt offen.",
+            "side_effects": [
+              "Mögliche regionale Ungleichverteilung der Schäden.",
+              "Unklare Preis- oder Importeffekte im vorliegenden Material."
+            ],
+            "uncertainties": [
+              "Die Schätzung stammt nur aus einer journalistisch wiedergegebenen Behördenangabe.",
+              "Es fehlt der vollständige methodische Hintergrund der 8%- und 0,1%-Angaben.",
+              "Unklar bleibt, welche Sparten der Landwirtschaft am stärksten betroffen sind."
+            ],
+            "evidence_level": "single_source_claim mit bezifferten Angaben aus einer journalistischen Meldung; unabhängige Bestätigung im gelieferten Material fehlt.",
+            "attribution": "Die wirtschaftlichen Folgen werden als Schätzung der Behörden wiedergegeben, nicht als bereits gemessene Endbilanz.",
+            "watch_next": [
+              "Ob amtliche Stellen die Schätzungen veröffentlichen oder präzisieren.",
+              "Ob sich weitere Daten zu Ernteausfällen und regionalen Effekten zeigen.",
+              "Ob die 2026er Wachstumsprognose in späteren Berichten bestätigt oder angepasst wird."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 2, SDG 8, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung liefert neue, bezifferte Angaben zu klimaassoziierten wirtschaftlichen Folgen für einen systemrelevanten Sektor und zu einem gesamtwirtschaftlichen Wachstumsabzug."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Rückgang sektoraler Wertschöpfung",
+                  "value": "8%",
+                  "unit": "Prozent",
+                  "context": "Erwarteter Rückgang im laufenden Jahr laut Meldung",
+                  "claim_id": "wt-34e360cdb996a299-claim-01"
+                },
+                {
+                  "label": "Wachstumseffekt 2026",
+                  "value": "0.1",
+                  "unit": "Prozentpunkte",
+                  "context": "Geschätzter Abzug vom französischen Wachstum",
+                  "claim_id": "wt-34e360cdb996a299-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "unternehmen",
+                "beschaeftigte",
+                "staat",
+                "verbraucherinnen"
+              ],
+              "timeline": [
+                {
+                  "date": "2026",
+                  "label": "Erwarteter Wachstumseffekt"
+                }
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "risiko",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-34e360cdb996a299-v1-claim-1",
+              "story_id": "wt-34e360cdb996a299",
+              "claim": "Frankreichs Hitzewellen und Dürre haben nach Behördenangaben die Produktion der Landwirtschaft gedrückt.",
+              "status": "single_source_claim",
+              "source_id": "france24-en",
+              "evidence": [
+                {
+                  "source_id": "france24-en",
+                  "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+                  "excerpt_hash": "7dc5a5608eb234308af5",
+                  "checked_at": "2026-09-04T03:37:06.255Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:37:06.255Z"
+            },
+            {
+              "claim_id": "wt-34e360cdb996a299-v1-claim-2",
+              "story_id": "wt-34e360cdb996a299",
+              "claim": "Der Wert, den der Agrarsektor im Laufe des Jahres erzeugt, soll laut der Meldung um 8% sinken.",
+              "status": "single_source_claim",
+              "source_id": "france24-en",
+              "evidence": [
+                {
+                  "source_id": "france24-en",
+                  "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+                  "excerpt_hash": "34a523b4d0588a3f1e71",
+                  "checked_at": "2026-09-04T03:37:06.255Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:37:06.255Z"
+            },
+            {
+              "claim_id": "wt-34e360cdb996a299-v1-claim-3",
+              "story_id": "wt-34e360cdb996a299",
+              "claim": "Für die französische Wirtschaft werden daraus für 2026 0,1 Prozentpunkte Wachstumseinbuße veranschlagt.",
+              "status": "single_source_claim",
+              "source_id": "france24-en",
+              "evidence": [
+                {
+                  "source_id": "france24-en",
+                  "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+                  "excerpt_hash": "34a523b4d0588a3f1e71",
+                  "checked_at": "2026-09-04T03:37:06.255Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T03:37:06.255Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+              "content_hash": "20d6cfd905f85c4b6eeb6985e65f3135171e3ee5351cd7d09e479e6ce09029d4"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T03:37:06.255Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-6660135348f0ba40-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "5268b3db62072f9ce44fbb091de18775de4848dc98d3aafae4ed7ce79de03be9"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-6660135348f0ba40-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "4678d47bbcd018cf9d7c7884e73cec721302cb1e5f176fdce40eec0fc52de4c1"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-6660135348f0ba40-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "b4d6e6f2234b3f968f617e1126b3712bea8cb5d3fe95569bcc3309d7587e0d8f"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-57a63f770a0138f8-source.png",
+          "sha256": "57a63f770a0138f8d72a8de1048510316870a5240a1ba07b7ab9c52b091333be",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-2",
+          "generated_at": "2026-09-04T03:38:07.776Z"
+        },
+        "fingerprint": "6660135348f0ba40a578fa4ac97b7314db1de7dfe007b8dc943b292d9c8b317d",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T03:39:42.892Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-e7e226d31b86f714",
       "slug": "trump-zieht-nach-blockade-von-dekret-zu-briefwahleinschrankungen-vor-oberstes-gericht-86f714",
@@ -189,21 +1219,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "a271c7ccc5329c77042057df003a424be1b8310ebb0903bfbaeae9a59d2b090d",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_UNSUPPORTED_FRAMEWORK_NUMBER:11,3"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-04T03:21:31.830Z",
       "event_detected_at": "2026-09-04T03:21:31.830Z",
       "event_id": "event-e58efb35b527ea929251",
@@ -234,14 +1262,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.5305,
+        "source_age_minutes": 30.473516666666665,
         "detection_delay_minutes": 15.5305,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.943016666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -14536,7 +15576,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -20711,19 +21751,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "355e525b90ffc2e8fc859f9b67c168753a4a57c89cc90cde0a82d8af0453a679",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-9ad1380215cf7ee88aa3",
@@ -20752,14 +21792,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 547.2805,
+        "source_age_minutes": 562.2235166666667,
         "detection_delay_minutes": 247.0335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -21746,19 +22798,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "0cc6e96cdf00f5a10fefa31911b1de6703ceaf5c3c1996ac68fa9fa70f45145d",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-7a528663abdbf3e3e6ce",
@@ -21786,14 +22838,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 606.0638333333334,
+        "source_age_minutes": 621.00685,
         "detection_delay_minutes": 305.8168333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -22660,19 +23724,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "eb79004ab11a07e647282d8b76f704ef95fa8b67430339999aa24167636ba16d",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-7cd63b230e3fac7386db",
@@ -22704,14 +23768,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 671.7805,
+        "source_age_minutes": 686.7235166666667,
         "detection_delay_minutes": 371.5335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -22836,120 +23912,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-34e360cdb996a299",
-      "slug": "france-agriculture-production-sees-economic-hit-from-heatwaves-96a299",
-      "title": "France agriculture production sees economic hit from heatwaves",
-      "first_seen": "2026-09-03T16:05:41.000Z",
-      "last_updated": "2026-09-03T16:05:41.000Z",
-      "topic": [
-        "Gesundheit",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "france24-en",
-          "publisher": "France 24",
-          "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
-          "title": "France agriculture production sees economic hit from heatwaves",
-          "summary": "France's recent heatwaves didn't just pose enormous health risks, they also hampered the economy. Authorities have estimated that the recent heat and drought caused production to plummet and expect wealth generated by the agricultural sector to decline by 8% over the course of the year. The knock-on effects will cost the French economy an estimated 0.1 percentage points of growth in 2026.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:05:41.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Geopolitik",
-          "content_hash": "20d6cfd905f85c4b6eeb6985e65f3135171e3ee5351cd7d09e479e6ce09029d4",
-          "source_item_id": "a5510b56d96eb7dc84ee099a7b2845d383db50c1d1ebd4beb43f81d875527f42",
-          "publisher_id": "france24",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "en",
-          "geography": [
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T16:05:41.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
-          "provenance": {
-            "origin": "publisher:france24",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-34e360cdb996a299-claim-01",
-          "story_id": "wt-34e360cdb996a299",
-          "claim": "France agriculture production sees economic hit from heatwaves: France's recent heatwaves didn't just pose enormous health risks, they also hampered the economy. Authorities have estimated that the recent heat and drought caused production to plummet and expect wealth generated by the agricultural sector to decline by 8% over the course of the year. The knock-on effects will cost the French economy an estimated 0.1 percentage points of growth in 2026.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "france24-en",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:france24",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
-        }
-      ],
-      "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-89b1f66c8058426180f1",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesundheit",
-          "Wirtschaft"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 675.8471666666667,
-        "detection_delay_minutes": 375.60016666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
     {
@@ -23764,19 +24726,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "a6622718f141ec483591d3efe833f4b99941961265ad4452d8b857f43eace98b",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -23807,11 +24771,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 778.5305,
+        "source_age_minutes": 793.4735166666667,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -24003,19 +24967,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "8f9243230e8cb8eee702d2fb25b07939e4b0814611e0b04fff723c838c9153e0",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-d60ef58c65d6c2450e33",
@@ -24048,14 +25012,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 801.5305,
+        "source_age_minutes": 816.4735166666667,
         "detection_delay_minutes": 501.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -24883,7 +25859,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
         "sources": [
           {
@@ -24985,19 +25961,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "dfe842a2389ce0fce9b2ddf88872c3dec24cf7ee898ba2c1412a77356466043f",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-d9adfb4314c57867f414",
@@ -25025,14 +26001,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 882.3305,
+        "source_age_minutes": 897.2735166666666,
         "detection_delay_minutes": 582.0835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -25514,7 +26502,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -26036,7 +27024,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -26317,7 +27305,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -26570,7 +27558,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
         "sources": [
           {
@@ -26827,7 +27815,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -27071,7 +28059,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -27203,19 +28191,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "c3f405587b03b8c02b9543ad7b6d50799e0605eb0d8e51fa50266188c4b6e467",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-b0ca014f15697bb2710d",
@@ -27246,14 +28234,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 990.9471666666667,
+        "source_age_minutes": 1005.8901833333333,
         "detection_delay_minutes": 690.7001666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -27317,19 +28317,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "7a190533442d8d5aff598141f7e0cdc57731d45793d6b1dac0c2399e553b95a1",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ebb06e0b1a39e78b3ea3",
@@ -27360,14 +28360,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1000.5305,
+        "source_age_minutes": 1015.4735166666667,
         "detection_delay_minutes": 700.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -27677,7 +28689,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
@@ -27689,7 +28701,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e20eac76b689f5b7c4be",
@@ -27718,11 +28730,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1103.5305,
+        "source_age_minutes": 1118.4735166666667,
         "detection_delay_minutes": 803.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27789,7 +28801,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
@@ -27801,7 +28813,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-864e7c7a9a2009a72fa5",
@@ -27830,122 +28842,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1103.5305,
+        "source_age_minutes": 1118.4735166666667,
         "detection_delay_minutes": 803.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      }
-    },
-    {
-      "story_id": "wt-c87cfdddd07432e2",
-      "slug": "sorte-e10-irankrieg-treibt-benzinpreis-auf-hochststand-7432e2",
-      "title": "Sorte E10: Irankrieg treibt Benzinpreis auf Höchststand",
-      "first_seen": "2026-09-03T08:11:00.000Z",
-      "last_updated": "2026-09-03T08:11:00.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "rbb24-nachrichten",
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
-          "title": "Sorte E10: Irankrieg treibt Benzinpreis auf Höchststand",
-          "summary": "",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T08:11:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d3e4a1488797fca20322290ffb98088538856a196636f6fce909838a5dcaa0b0",
-          "source_item_id": "cf4ff84f2b730faca0cd7e35d44df4bb0a55e63a548e2f04974b7df88a6bb371",
-          "publisher_id": "rbb",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin-Brandenburg"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T08:11:00.000Z",
-          "ingested_at": "2026-09-04T03:21:31.830Z",
-          "provenance": {
-            "origin": "publisher:rbb",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-c87cfdddd07432e2-claim-01",
-          "story_id": "wt-c87cfdddd07432e2",
-          "claim": "Sorte E10: Irankrieg treibt Benzinpreis auf Höchststand",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "rbb24-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:rbb",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "nur Titel und Metadaten",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
-        }
-      ],
-      "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-4a6d367a382907820710",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 1150.5305,
-        "detection_delay_minutes": 850.2835,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28154,7 +29055,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -28427,7 +29328,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -28703,7 +29604,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -28976,7 +29877,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -29254,7 +30155,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -29528,7 +30429,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -29806,7 +30707,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -30829,19 +31730,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "69dca138b5ba94095de4159ca02c75634b273480ab3a410131fe16a7720b6c8f",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e78fc0b1393743b620bb",
@@ -30872,14 +31773,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1641.5305,
+        "source_age_minutes": 1656.4735166666667,
         "detection_delay_minutes": 1341.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T03:36:28.411Z",
+      "rejection": {
+        "at": "2026-09-04T03:36:28.411Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -31084,7 +31997,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T03:21:31.830Z",
+        "detected_at": "2026-09-04T03:36:28.411Z",
         "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
         "sources": [
           {
@@ -31476,7 +32389,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "99af3920cf213a90489bc6710226a442bf08a768846715ff16c0c2b52a38aa51",
@@ -31488,7 +32401,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-bf54447029570dd055c9",
@@ -31518,11 +32431,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1997.5305,
+        "source_age_minutes": 2012.4735166666667,
         "detection_delay_minutes": 1697.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -31966,7 +32879,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "a0fe47114b0579e40a8ee3649f1f2910b80ec0d76567932237286761e795231b",
@@ -31978,7 +32891,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-216abee005246675a905",
@@ -32006,11 +32919,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2070.5305,
+        "source_age_minutes": 2085.4735166666665,
         "detection_delay_minutes": 1770.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -32574,7 +33487,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
@@ -32586,7 +33499,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-35177e3864a5abcfec8e",
@@ -32618,11 +33531,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2281.5305,
+        "source_age_minutes": 2296.4735166666665,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -32690,7 +33603,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
@@ -32702,7 +33615,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-f6bf7265b4e640e7e2d7",
@@ -32735,11 +33648,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2281.5305,
+        "source_age_minutes": 2296.4735166666665,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -33178,7 +34091,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "1e6cd7c1d6d91647b7046917beb2caa2cbc18c7c4595b3a59dd70bc4ca647908",
@@ -33190,7 +34103,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3e01d1f6d0533d6aa9c6",
@@ -33219,11 +34132,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2452.7138333333332,
+        "source_age_minutes": 2467.65685,
         "detection_delay_minutes": 2152.4668333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -33290,7 +34203,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "dea407218ff9ff6934bbac13a50d7ff5fb57d64d43624d482bf1ce4cc471b47e",
@@ -33302,7 +34215,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-fbbb13d555ba24335ba3",
@@ -33332,11 +34245,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2468.947166666667,
+        "source_age_minutes": 2483.8901833333334,
         "detection_delay_minutes": 2168.7001666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -33405,7 +34318,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "0ae27a89a2f40efa2d1383b6853368086ee7b11f0ba5f586505292992303f003",
@@ -33417,7 +34330,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-80de4c464a700f12dc6f",
@@ -33449,11 +34362,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2470.5305,
+        "source_age_minutes": 2485.4735166666665,
         "detection_delay_minutes": 2170.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -33520,7 +34433,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
@@ -33532,7 +34445,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a65754a145ed4dc9c820",
@@ -33564,11 +34477,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2493.5305,
+        "source_age_minutes": 2508.4735166666665,
         "detection_delay_minutes": 2193.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -33880,7 +34793,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
@@ -33892,7 +34805,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ef9d83c7cd180ed4c9e4",
@@ -33922,11 +34835,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2601.5305,
+        "source_age_minutes": 2616.4735166666665,
         "detection_delay_minutes": 2301.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -33992,7 +34905,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
@@ -34004,7 +34917,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3c4cec37699684f265d9",
@@ -34032,11 +34945,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2721.5305,
+        "source_age_minutes": 2736.4735166666665,
         "detection_delay_minutes": 2421.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -34232,7 +35145,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
@@ -34244,7 +35157,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-795c48d3db0831ef9b61",
@@ -34276,11 +35189,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3355.4638333333332,
+        "source_age_minutes": 3370.40685,
         "detection_delay_minutes": 3055.2168333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -34470,7 +35383,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
@@ -34482,7 +35395,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-88c06765dd812ab1333c",
@@ -34513,11 +35426,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3552.3971666666666,
+        "source_age_minutes": 3567.3401833333332,
         "detection_delay_minutes": 3252.150166666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -34583,7 +35496,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "0f446ea5cb51a25c2d996418cf4baef91cd32048f5e76de72e507e26507399f0",
@@ -34595,7 +35508,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a1baeba4f20d07fe8686",
@@ -34625,11 +35538,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3658.5305,
+        "source_age_minutes": 3673.4735166666665,
         "detection_delay_minutes": 3358.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35069,7 +35982,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "ee7dad7353b26544b265da43fabbd57bf9f547566a8ec550abcad8b81c376364",
@@ -35081,7 +35994,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e1ac3e5b6a7b2d3e7529",
@@ -35112,11 +36025,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3904.5305,
+        "source_age_minutes": 3919.4735166666665,
         "detection_delay_minutes": 3604.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35183,7 +36096,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -35195,7 +36108,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -35224,11 +36137,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4161.5305,
+        "source_age_minutes": 4176.473516666667,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35541,7 +36454,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "ec68e1b7e01d1cf36c7107e281d04242a0644a887db1bc32b9b6d7d42de66dd2",
@@ -35553,7 +36466,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-cbca969c9d482acda1dd",
@@ -35585,11 +36498,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5116.447166666667,
+        "source_age_minutes": 5131.390183333333,
         "detection_delay_minutes": 4816.2001666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35656,7 +36569,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -35668,7 +36581,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -35700,11 +36613,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5241.5305,
+        "source_age_minutes": 5256.473516666667,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -36288,7 +37201,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T03:21:31.830Z"
+          "checked_at": "2026-09-04T03:36:28.411Z"
         }
       ],
       "content_hash": "67e92b99cbf6de95d7ca8de1bdee15fa83a7a2be1a38f37e2d75bf935cf01267",
@@ -36300,7 +37213,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T03:21:31.830Z",
+      "updated_at": "2026-09-04T03:36:28.411Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-b314e6fe17d75603d224",
@@ -36331,11 +37244,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9531.5305,
+        "source_age_minutes": 9546.473516666667,
         "detection_delay_minutes": 9231.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 300.247,
+        "queue_age_minutes": 315.1900166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -36550,5 +37463,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T02:51:36.455Z"
+  "public_updated_at": "2026-09-04T03:36:28.411Z"
 }

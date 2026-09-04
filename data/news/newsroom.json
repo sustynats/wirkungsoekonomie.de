@@ -86311,7 +86311,250 @@
         "AI_EVIDENCE_INSUFFICIENT"
       ],
       "rationale": "Die Meldung stützt sich nur auf einen einzelnen SWR-Bericht ohne unabhängige Bestätigung oder Originalbeleg für die zentralen Eingriffe."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-743a635e023f5ff0",
+      "event_id": "event-e58efb35b527ea929251",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Quelle ohne unabhängige Bestätigung oder Primärbeleg für die Kernbehauptungen zu Schuldenstand, Haushaltslage und Kosten der Halle."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-98861fa8b498232a",
+      "event_id": "event-9ad1380215cf7ee88aa3",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Ein lokaler Einzelfall ohne belegte Breitenwirkung, Präzedenz oder systemrelevante Folge; die Rückgabe von Habseligkeiten ist berichtenswert, aber nicht materiell genug."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-83ca15ba87f178f7",
+      "event_id": "event-7a528663abdbf3e3e6ce",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Es liegt nur eine sekundäre Quellenmeldung ohne unabhängige Bestätigung oder Originalbeleg vor; zentrale Aussagen zur Übernahme und zu Folgen bleiben damit nicht tragfähig belegt."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-3b92718b4ecd92bf",
+      "event_id": "event-7cd63b230e3fac7386db",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Die zentrale Tötungsbehauptung stützt sich nur auf eine Sekundärquelle ohne unabhängige Bestätigung oder Originalbeleg vor Ort."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-34e360cdb996a299",
+      "event_id": "event-89b1f66c8058426180f1",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Meldung liefert neue, bezifferte Angaben zu klimaassoziierten wirtschaftlichen Folgen für einen systemrelevanten Sektor und zu einem gesamtwirtschaftlichen Wachstumsabzug."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "held_or_rejected",
+      "errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Die Quelle liefert neue, konkrete Daten zur Geburtenrate und zu Kinderwünschen sowie einen Forschungszusammenhang mit Unsicherheiten; das ist mehr als bloße Wiederholung und für Demografie und Familienpolitik materiell."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-8aa02131cab50868",
+      "event_id": "event-d60ef58c65d6c2450e33",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Quelle kündigt nur eine Analyse/Newsletter-Ausgabe zu Klimaschutz und Energiewende an, nennt aber keine konkrete neue Entscheidung, Zahl oder Maßnahme."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-6489163107157a36",
+      "event_id": "event-d9adfb4314c57867f414",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Ein einzelner Gewaltvorfall in einem ICE ist lokal berichtenswert, verändert aber nach den gelieferten Quellen keine Regeln, Märkte oder systemrelevanten Zustände in ausreichender Breite."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-162fb20af62866b5",
+      "event_id": "event-b0ca014f15697bb2710d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Das Stück ist ein Kurzinterview mit Einordnung zu Untergrundwärme und Klimakosten, aber ohne neue belastbare Entscheidung, Daten oder materiell veränderten Zustand."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-c035d8f4f381489d",
+      "event_id": "event-ebb06e0b1a39e78b3ea3",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Die Meldung stützt sich hier nur auf eine DW-Sekundärquelle; eine unabhängige Bestätigung oder der Originalbeleg der Schul- bzw. Stadtentscheidung fehlt."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-c87cfdddd07432e2",
+      "event_id": "event-4a6d367a382907820710",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Neuer nomineller Preisrekord bei einem weit verbreiteten Alltagsgut mit möglichem Durchschlag auf Mobilität und Logistik; die Meldung ist jedoch bislang nur einseitig belegt."
+    },
+    {
+      "at": "2026-09-04T03:36:28.411Z",
+      "story_id": "wt-4beeb52397990fcf",
+      "event_id": "event-e78fc0b1393743b620bb",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Es liegt nur der Titel der Studie vor; ohne Abstract, Methodik oder Ergebnis kein belastbarer neuer Sachverhalt und keine materiale Einordnung möglich."
     }
   ],
-  "updated_at": "2026-09-04T03:21:31.830Z"
+  "updated_at": "2026-09-04T03:36:28.411Z"
 }
