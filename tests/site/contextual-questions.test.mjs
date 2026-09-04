@@ -67,7 +67,7 @@ test('all editorial destinations exist, including fragment anchors',()=>{
     const [route,fragment]=entry.href.split('#');
     const file=path.join(root,route.endsWith('/')?`${route}index.html`:route);
     assert.ok(fs.existsSync(file),`${entry.label}: missing ${route}`);
-    if(fragment)assert.match(fs.readFileSync(file,'utf8'),new RegExp(`id=["']${fragment}["']`),`${route}#${fragment}`);
+    if(fragment)assert.ok(new RegExp(`id=["']${fragment}["']`).test(fs.readFileSync(file,'utf8')),`Missing answer anchor: ${route}#${fragment}`);
   }
 });
 test('old universal fallback and wrong fixed headline are removed',()=>{
