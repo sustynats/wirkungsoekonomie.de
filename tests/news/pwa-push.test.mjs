@@ -16,9 +16,9 @@ test("Wirkungsticker registers real Web Push and preserves the periodic fallback
   assert.match(worker, /clearAppBadge/);
 });
 
-test("release notifier is gated by a public change and uses an idempotent publication id", () => {
+test("release notifier uses deployed news identity, not an overtaking import report", () => {
   const notifier = fs.readFileSync("scripts/news/publish-push.mjs", "utf8");
-  assert.match(notifier, /report\.public_changed !== true/);
+  assert.doesNotMatch(notifier, /report\.public_changed|wirkungsticker-latest-run\.json/);
   assert.match(notifier, /publicationId: `\$\{item\.id\}@\$\{modified\}`/);
   assert.match(notifier, /WOEK_NEWS_PUSH_ADMIN_TOKEN/);
 });

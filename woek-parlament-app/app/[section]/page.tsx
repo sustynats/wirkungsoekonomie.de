@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CaseCard } from "@/app/components/CaseCard";
+import { CaseRegisterRow } from "@/app/components/CaseRegisterRow";
 import { EditorialVisual } from "@/app/components/EditorialVisual";
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { CanonicalMethodExplainer } from "@/app/components/CanonicalMethodExplainer";
@@ -38,7 +39,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
       {section === "transparenz" && <Transparency />}
       {section === "werkzeuge" && <Toolbox />}
       {section === "monitor" && <Monitor />}
-      {cases.length > 0 ? <div className="card-grid">{cases.map((item) => <CaseCard item={item} key={item.slug} />)}</div> : !hasStandaloneContent && <div className="notice"><strong>{content.empty}</strong></div>}
+      {cases.length > 0 ? <div className={section === "entscheidungen" ? "case-register-list" : "card-grid"}>{cases.map((item) => section === "entscheidungen" ? <CaseRegisterRow item={item} key={item.slug} /> : <CaseCard item={item} key={item.slug} />)}</div> : !hasStandaloneContent && <div className="notice"><strong>{content.empty}</strong></div>}
       <p className="page-return"><Link href="/">← Zur Portalstartseite</Link></p>
     </div>
   );

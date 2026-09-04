@@ -1,35 +1,30 @@
 import Link from "next/link";
 import type { ParliamentaryCase } from "@/data/cases";
 import { formatDate, materialityLabel } from "@/lib/cases";
-import { humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
-import { BookmarkLink } from "@/app/components/BookmarkLink";
+import { humanizeSystemValue } from "@/lib/presentation/labels";
 import { CaseTypeMark } from "@/app/components/CaseTypeMark";
-import { OverviewAssessment } from "@/app/components/OverviewAssessment";
-import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { ImpactSignature } from "@/app/components/ImpactSignature";
+import { findingExcerpt, projectImpactSignature } from "@/lib/presentation/impact-signature";
 import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
 import { parliamentPublicMaturity } from "@/lib/presentation/public-maturity";
 
-export function CaseCard({ item }: { item: ParliamentaryCase }) {
+export function CaseCard({ item, variant = "card" }: { item: ParliamentaryCase; variant?: "card" | "row" }) {
   const assessment = parliamentaryOverviewAssessment(item);
   const maturity = parliamentPublicMaturity(item, assessment);
   return (
-    <article className="case-card" data-woek-preview-card={assessment ? "published" : "fact-only"}>
-      <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
-      {assessment ? <OverviewAssessment assessment={assessment} compact /> : null}
-      <PublicMaturity maturity={maturity} compact />
-      <div className="case-card-topline" role="group" aria-label="Prozess- und Prüfinformationen" data-woek-process-metadata>
-        <CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} compact />
+    <article className={`case-card case-card--${variant}`} data-woek-preview-card={assessment ? "published" : "fact-only"}>
+      <div className="case-card-topline" role="group" aria-label="Objekttyp und Prüfrelevanz">
+        <CaseTypeMark kind={item.kind} compact />
         <span className="chip chip--phase">{materialityLabel(item.materiality)}</span>
       </div>
-      <dl className="case-meta">
-        <div><dt>Parlamentarischer Status</dt><dd>{humanizeSystemValue(item.parliamentaryStatus)}</dd></div>
-        <div><dt>Stand der WÖk-Analyse</dt><dd>{humanizeSystemValue(item.analysisStatus)}</dd></div>
-        <div><dt>Quellenstatus</dt><dd>{verificationLabel(item.statusVerification)}</dd></div>
-        <div><dt>Aktualisiert</dt><dd>{formatDate(item.lastUpdated)}</dd></div>
-      </dl>
-      <div className="case-card-actions">
-        <Link className="text-link" href={`/entscheidungen/${item.slug}`}>Transparenzansicht öffnen <span aria-hidden="true">→</span></Link>
-        <BookmarkLink title={item.title} path={`/entscheidungen/${item.slug}`} compact />
+      <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
+      <div data-woek-preview-assessment={assessment ? "published" : undefined} data-woek-public-maturity={maturity.primary} data-woek-fact-only-status={!assessment ? "published" : undefined}>
+        <p className="case-card-finding">{assessment ? <><small>Auszug: </small>{findingExcerpt(assessment.keyFinding)}</> : "Faktenakte – WÖk-Einordnung offen."}</p>
+        <ImpactSignature signature={projectImpactSignature(assessment, maturity)} compact />
+      </div>
+      <div className="case-card-actions" data-woek-process-metadata>
+        <small>{humanizeSystemValue(item.parliamentaryStatus)} · <span>Aktualisiert</span> <time dateTime={item.lastUpdated}>{formatDate(item.lastUpdated)}</time></small>
+        <Link className="text-link" href={`/entscheidungen/${item.slug}`}>Akte öffnen <span aria-hidden="true">→</span></Link>
       </div>
     </article>
   );
