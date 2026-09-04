@@ -1,7 +1,1210 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T18:06:22.511Z",
+  "updated_at": "2026-09-04T18:21:48.041Z",
   "stories": [
+    {
+      "story_id": "wt-1bc40229c938d48a",
+      "slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
+      "title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
+      "first_seen": "2026-09-04T17:51:00.000Z",
+      "last_updated": "2026-09-04T18:22:57.645Z",
+      "published_at": "2026-09-04T18:22:57.645Z",
+      "updated_at": "2026-09-04T18:22:57.645Z",
+      "topic": [
+        "Arbeit",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+          "title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
+          "summary": "Wenn die AfD in Sachsen-Anhalt regiert, wollen viele angehende Ju­ris­t:in­nen dort nicht arbeiten, zeigt eine Umfrage. Dabei braucht die Justiz dringend Nachwuchs. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:51:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "75cccd54e5c4189973c7a8d39b8436f33fec00ea78de889967bad5985cf5e3b3",
+          "source_item_id": "31f3ef4361f94420014fedeeccc37d589d89ca6c00959595665aea301ea62bcb",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T17:51:00.000Z",
+          "ingested_at": "2026-09-04T18:06:22.511Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-1bc40229c938d48a-v1-claim-1",
+          "story_id": "wt-1bc40229c938d48a",
+          "claim": "Eine Jurafuchs-Umfrage unter 1.737 Teilnehmenden zeigt: Die Bereitschaft, sich bei einer möglichen AfD-Alleinregierung in Sachsen-Anhalt im Staatsdienst zu bewerben, sinkt deutlich.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "excerpt_hash": "fbfb411ba783efb4ade9",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "excerpt_hash": "993a715e697f14f079d4",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "excerpt_hash": "55ad24dc5d63da9f3364",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:57.645Z"
+        },
+        {
+          "claim_id": "wt-1bc40229c938d48a-v1-claim-2",
+          "story_id": "wt-1bc40229c938d48a",
+          "claim": "Von den Befragten, die grundsätzlich am Staatsdienst interessiert waren, können sich 57,7 Prozent eine Bewerbung in Sachsen-Anhalt vorstellen; bei AfD-Alleinregierung sinkt der Wert auf 17,7 Prozent.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "excerpt_hash": "993a715e697f14f079d4",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "excerpt_hash": "55ad24dc5d63da9f3364",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:57.645Z"
+        },
+        {
+          "claim_id": "wt-1bc40229c938d48a-v1-claim-3",
+          "story_id": "wt-1bc40229c938d48a",
+          "claim": "Der Justiz in Sachsen-Anhalt fehlt nach Angaben des Berichts schon jetzt Personal; der Bund der Richter und Staatsanwälte nennt die Lage einen „kritischen Punkt“ und spricht von rund 91 Prozent des erforderlichen Personals bei den Staatsanwaltschaften.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "excerpt_hash": "911f4704e172ab7a1fd6",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "excerpt_hash": "911f4704e172ab7a1fd6",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:57.645Z"
+        }
+      ],
+      "event_id": "event-0d32d40861dc356e70e6",
+      "event_first_seen_at": "2026-09-04T18:06:22.511Z",
+      "event_detected_at": "2026-09-04T18:06:22.511Z",
+      "verification_started_at": "2026-09-04T18:22:42.556Z",
+      "publish_ready_at": "2026-09-04T18:22:57.645Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "e1d10f1e3205f9bd0288812db38efd34491e5c0c02f672864119780a4e303310",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die taz berichtet über eine Umfrage der Lernplattform Jurafuchs unter 1.737 Teilnehmenden. Unter den Befragten, die grundsätzlich am Staatsdienst interessiert sind, können sich 57,7 Prozent eine Bewerbung in Sachsen-Anhalt vorstellen. Für den Fall einer AfD-Alleinregierung sinkt dieser Wert auf 17,7 Prozent; bei Studierenden und Rechtsreferendar:innen in Sachsen-Anhalt und Umgebung fällt er laut Bericht auf 15,2 Prozent.\n\nDer Artikel ordnet das als Hinweis auf mögliche Probleme bei der Nachwuchsgewinnung für die Justiz ein. Zugleich verweist er auf eine bereits bestehende Personalnot: Der Bund der Richter und Staatsanwälte in Sachsen-Anhalt habe Anfang des Jahres von einem „kritischen Punkt“ gesprochen und bei den Staatsanwaltschaften rund 91 Prozent des erforderlichen Personals genannt. Gründe für den Rückgang nennt die Umfrage nicht.",
+      "analysis": {
+        "story_id": "wt-1bc40229c938d48a",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Eine Jurafuchs-Umfrage sieht deutlich sinkende Bewerbungsbereitschaft für den Staatsdienst in Sachsen-Anhalt bei einer AfD-Alleinregierung. Zugleich verweist der Bericht auf bestehende Personalprobleme in der Justiz.",
+        "detail_summary": "Gesichert ist zunächst der Umfragebefund: Unter 1.737 Teilnehmenden sinkt die Bereitschaft, sich in Sachsen-Anhalt auf Stellen im Staatsdienst zu bewerben, bei einer angenommenen AfD-Alleinregierung deutlich. Der Bericht nennt zusätzlich eine bereits angespannte Personallage in der Justiz des Landes. Für die Wirkung ist das relevant, weil Nachwuchsgewinnung im öffentlichen Dienst ein Vorlauf für Funktionsfähigkeit, Besetzungszeiten und Belastung bestehender Strukturen ist. Ein möglicher Wirkpfad wäre, dass erwartete politische Rahmenbedingungen Bewerbungen beeinflussen und dadurch die Personalrekrutierung weiter erschweren. Offen bleibt, ob und wie stark sich diese Haltung später tatsächlich in realem Bewerbungsverhalten niederschlägt. Die Evidenz stammt hier nur aus einer journalistisch wiedergegebenen Umfrage; unabhängige Bestätigung oder Methodendetails liegen im gelieferten Material nicht vor.",
+        "why_relevant": "Der Befund berührt die Funktionsfähigkeit eines zentralen Rechtsstaatsbereichs: Wenn weniger Nachwuchs Bewerbungen erwägt, kann das die Besetzung juristischer Stellen in einem ohnehin angespannten Umfeld erschweren.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Frage betrifft Nachwuchs für Justiz- und Staatsdienststellen und damit die Leistungsfähigkeit öffentlicher Institutionen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Im gelieferten Material gibt es keinen direkten Umwelt- oder Klimabezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Die Meldung berührt die personelle Robustheit von Gerichten und Staatsanwaltschaften sowie die Wahrnehmung politischer Einflussrisiken."
+        },
+        "importance": "hoch",
+        "impact_potential": "Wenn die gemessene Zurückhaltung in tatsächliche Bewerbungs- und Besetzungsprobleme übersetzt wird, kann das die Personalsituation in der Justiz verschärfen und Rekrutierungskosten erhöhen.",
+        "impact_risks": [
+          "Die Umfrage könnte nur Stimmung abbilden, nicht spätere Entscheidungen.",
+          "Eine zusätzliche Polarisierung des Justizbilds könnte die Nachwuchsgewinnung weiter belasten."
+        ],
+        "mechanisms": [
+          "Erwartete politische Rahmenbedingungen verändern die Attraktivität öffentlicher Stellen.",
+          "Geringere Bewerberzahlen erschweren Besetzungen und erhöhen Belastungen im System."
+        ],
+        "first_order": [
+          "Weniger Bewerbungen auf juristische Stellen sind möglich."
+        ],
+        "second_order": [
+          "Vakanzzeiten und Arbeitsdruck könnten zunehmen."
+        ],
+        "third_order": [
+          "Langfristig könnte die institutionelle Resilienz der Justiz leiden."
+        ],
+        "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie ein mögliches Rekrutierungs- und Funktionsrisiko für einen Kernbereich staatlicher Gewaltenteilung beschreibt.",
+        "transformation_potential": "Keine Transformationswirkung im engeren Sinn; eher ein möglicher Einfluss auf Personalflüsse und institutionelle Stabilität.",
+        "resilience": "Die vorhandene Personalnot spricht für geringe Puffer; zugleich ist offen, ob das Befragungsbild sich in der Praxis niederschlägt.",
+        "side_effects": [
+          "Mögliche Verstärkung von Unsicherheit im juristischen Nachwuchs.",
+          "Mögliche politische Debatte über Attraktivität des Staatsdienstes."
+        ],
+        "uncertainties": [
+          "Die Umfragegründe werden im Material nicht erhoben.",
+          "Unklar ist die Methodik der Umfrage über die angegebenen Eckdaten hinaus.",
+          "Offen bleibt, ob die Befragungswerte tatsächliches Verhalten vorhersagen."
+        ],
+        "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen, aber ohne unabhängige Bestätigung im gelieferten Material",
+        "attribution": "Die berichteten Befunde werden der taz und der dort zitierten Jurafuchs-Umfrage zugeschrieben; eine unabhängige Verifikation liegt im Datensatz nicht vor.",
+        "watch_next": [
+          "Ob Jurafuchs die Methodik der Umfrage näher erläutert.",
+          "Ob weitere Quellen die Zahlen oder die Personalnot in Sachsen-Anhalt bestätigen."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung liefert einen neuen, konkret bezifferten Befund zur Nachwuchsbereitschaft in einem rechtsstaatlich relevanten Bereich und verweist auf bestehende Personalengpässe."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Teilnehmende",
+              "value": "1.737",
+              "unit": "Personen",
+              "context": "Umfang der Jurafuchs-Umfrage",
+              "claim_id": "wt-1bc40229c938d48a-claim-01"
+            },
+            {
+              "label": "Bewerbungsbereitschaft ohne AfD-Regierung",
+              "value": "57,7",
+              "unit": "Prozent",
+              "context": "Anteil mit grundsätzlicher Bewerbung in Sachsen-Anhalt",
+              "claim_id": "wt-1bc40229c938d48a-claim-01"
+            },
+            {
+              "label": "Bewerbungsbereitschaft bei AfD-Alleinregierung",
+              "value": "17,7",
+              "unit": "Prozent",
+              "context": "Anteil mit Bewerbung in Sachsen-Anhalt",
+              "claim_id": "wt-1bc40229c938d48a-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte",
+            "staat",
+            "kommunen"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "risiko"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T18:22:57.645Z",
+          "content_hash": "e1d10f1e3205f9bd0288812db38efd34491e5c0c02f672864119780a4e303310",
+          "source_summary": "Die taz berichtet über eine Umfrage der Lernplattform Jurafuchs unter 1.737 Teilnehmenden. Unter den Befragten, die grundsätzlich am Staatsdienst interessiert sind, können sich 57,7 Prozent eine Bewerbung in Sachsen-Anhalt vorstellen. Für den Fall einer AfD-Alleinregierung sinkt dieser Wert auf 17,7 Prozent; bei Studierenden und Rechtsreferendar:innen in Sachsen-Anhalt und Umgebung fällt er laut Bericht auf 15,2 Prozent.\n\nDer Artikel ordnet das als Hinweis auf mögliche Probleme bei der Nachwuchsgewinnung für die Justiz ein. Zugleich verweist er auf eine bereits bestehende Personalnot: Der Bund der Richter und Staatsanwälte in Sachsen-Anhalt habe Anfang des Jahres von einem „kritischen Punkt“ gesprochen und bei den Staatsanwaltschaften rund 91 Prozent des erforderlichen Personals genannt. Gründe für den Rückgang nennt die Umfrage nicht.",
+          "analysis": {
+            "story_id": "wt-1bc40229c938d48a",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Eine Jurafuchs-Umfrage sieht deutlich sinkende Bewerbungsbereitschaft für den Staatsdienst in Sachsen-Anhalt bei einer AfD-Alleinregierung. Zugleich verweist der Bericht auf bestehende Personalprobleme in der Justiz.",
+            "detail_summary": "Gesichert ist zunächst der Umfragebefund: Unter 1.737 Teilnehmenden sinkt die Bereitschaft, sich in Sachsen-Anhalt auf Stellen im Staatsdienst zu bewerben, bei einer angenommenen AfD-Alleinregierung deutlich. Der Bericht nennt zusätzlich eine bereits angespannte Personallage in der Justiz des Landes. Für die Wirkung ist das relevant, weil Nachwuchsgewinnung im öffentlichen Dienst ein Vorlauf für Funktionsfähigkeit, Besetzungszeiten und Belastung bestehender Strukturen ist. Ein möglicher Wirkpfad wäre, dass erwartete politische Rahmenbedingungen Bewerbungen beeinflussen und dadurch die Personalrekrutierung weiter erschweren. Offen bleibt, ob und wie stark sich diese Haltung später tatsächlich in realem Bewerbungsverhalten niederschlägt. Die Evidenz stammt hier nur aus einer journalistisch wiedergegebenen Umfrage; unabhängige Bestätigung oder Methodendetails liegen im gelieferten Material nicht vor.",
+            "why_relevant": "Der Befund berührt die Funktionsfähigkeit eines zentralen Rechtsstaatsbereichs: Wenn weniger Nachwuchs Bewerbungen erwägt, kann das die Besetzung juristischer Stellen in einem ohnehin angespannten Umfeld erschweren.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Frage betrifft Nachwuchs für Justiz- und Staatsdienststellen und damit die Leistungsfähigkeit öffentlicher Institutionen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Im gelieferten Material gibt es keinen direkten Umwelt- oder Klimabezug."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Die Meldung berührt die personelle Robustheit von Gerichten und Staatsanwaltschaften sowie die Wahrnehmung politischer Einflussrisiken."
+            },
+            "importance": "hoch",
+            "impact_potential": "Wenn die gemessene Zurückhaltung in tatsächliche Bewerbungs- und Besetzungsprobleme übersetzt wird, kann das die Personalsituation in der Justiz verschärfen und Rekrutierungskosten erhöhen.",
+            "impact_risks": [
+              "Die Umfrage könnte nur Stimmung abbilden, nicht spätere Entscheidungen.",
+              "Eine zusätzliche Polarisierung des Justizbilds könnte die Nachwuchsgewinnung weiter belasten."
+            ],
+            "mechanisms": [
+              "Erwartete politische Rahmenbedingungen verändern die Attraktivität öffentlicher Stellen.",
+              "Geringere Bewerberzahlen erschweren Besetzungen und erhöhen Belastungen im System."
+            ],
+            "first_order": [
+              "Weniger Bewerbungen auf juristische Stellen sind möglich."
+            ],
+            "second_order": [
+              "Vakanzzeiten und Arbeitsdruck könnten zunehmen."
+            ],
+            "third_order": [
+              "Langfristig könnte die institutionelle Resilienz der Justiz leiden."
+            ],
+            "systemic_relevance": "Die Meldung ist systemisch relevant, weil sie ein mögliches Rekrutierungs- und Funktionsrisiko für einen Kernbereich staatlicher Gewaltenteilung beschreibt.",
+            "transformation_potential": "Keine Transformationswirkung im engeren Sinn; eher ein möglicher Einfluss auf Personalflüsse und institutionelle Stabilität.",
+            "resilience": "Die vorhandene Personalnot spricht für geringe Puffer; zugleich ist offen, ob das Befragungsbild sich in der Praxis niederschlägt.",
+            "side_effects": [
+              "Mögliche Verstärkung von Unsicherheit im juristischen Nachwuchs.",
+              "Mögliche politische Debatte über Attraktivität des Staatsdienstes."
+            ],
+            "uncertainties": [
+              "Die Umfragegründe werden im Material nicht erhoben.",
+              "Unklar ist die Methodik der Umfrage über die angegebenen Eckdaten hinaus.",
+              "Offen bleibt, ob die Befragungswerte tatsächliches Verhalten vorhersagen."
+            ],
+            "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen, aber ohne unabhängige Bestätigung im gelieferten Material",
+            "attribution": "Die berichteten Befunde werden der taz und der dort zitierten Jurafuchs-Umfrage zugeschrieben; eine unabhängige Verifikation liegt im Datensatz nicht vor.",
+            "watch_next": [
+              "Ob Jurafuchs die Methodik der Umfrage näher erläutert.",
+              "Ob weitere Quellen die Zahlen oder die Personalnot in Sachsen-Anhalt bestätigen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung liefert einen neuen, konkret bezifferten Befund zur Nachwuchsbereitschaft in einem rechtsstaatlich relevanten Bereich und verweist auf bestehende Personalengpässe."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Teilnehmende",
+                  "value": "1.737",
+                  "unit": "Personen",
+                  "context": "Umfang der Jurafuchs-Umfrage",
+                  "claim_id": "wt-1bc40229c938d48a-claim-01"
+                },
+                {
+                  "label": "Bewerbungsbereitschaft ohne AfD-Regierung",
+                  "value": "57,7",
+                  "unit": "Prozent",
+                  "context": "Anteil mit grundsätzlicher Bewerbung in Sachsen-Anhalt",
+                  "claim_id": "wt-1bc40229c938d48a-claim-01"
+                },
+                {
+                  "label": "Bewerbungsbereitschaft bei AfD-Alleinregierung",
+                  "value": "17,7",
+                  "unit": "Prozent",
+                  "context": "Anteil mit Bewerbung in Sachsen-Anhalt",
+                  "claim_id": "wt-1bc40229c938d48a-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "staat",
+                "kommunen"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "risiko"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-1bc40229c938d48a-v1-claim-1",
+              "story_id": "wt-1bc40229c938d48a",
+              "claim": "Eine Jurafuchs-Umfrage unter 1.737 Teilnehmenden zeigt: Die Bereitschaft, sich bei einer möglichen AfD-Alleinregierung in Sachsen-Anhalt im Staatsdienst zu bewerben, sinkt deutlich.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+                  "excerpt_hash": "fbfb411ba783efb4ade9",
+                  "checked_at": "2026-09-04T18:22:57.645Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+                  "excerpt_hash": "993a715e697f14f079d4",
+                  "checked_at": "2026-09-04T18:22:57.645Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+                  "excerpt_hash": "55ad24dc5d63da9f3364",
+                  "checked_at": "2026-09-04T18:22:57.645Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            },
+            {
+              "claim_id": "wt-1bc40229c938d48a-v1-claim-2",
+              "story_id": "wt-1bc40229c938d48a",
+              "claim": "Von den Befragten, die grundsätzlich am Staatsdienst interessiert waren, können sich 57,7 Prozent eine Bewerbung in Sachsen-Anhalt vorstellen; bei AfD-Alleinregierung sinkt der Wert auf 17,7 Prozent.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+                  "excerpt_hash": "993a715e697f14f079d4",
+                  "checked_at": "2026-09-04T18:22:57.645Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+                  "excerpt_hash": "55ad24dc5d63da9f3364",
+                  "checked_at": "2026-09-04T18:22:57.645Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            },
+            {
+              "claim_id": "wt-1bc40229c938d48a-v1-claim-3",
+              "story_id": "wt-1bc40229c938d48a",
+              "claim": "Der Justiz in Sachsen-Anhalt fehlt nach Angaben des Berichts schon jetzt Personal; der Bund der Richter und Staatsanwälte nennt die Lage einen „kritischen Punkt“ und spricht von rund 91 Prozent des erforderlichen Personals bei den Staatsanwaltschaften.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+                  "excerpt_hash": "911f4704e172ab7a1fd6",
+                  "checked_at": "2026-09-04T18:22:57.645Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+                  "excerpt_hash": "911f4704e172ab7a1fd6",
+                  "checked_at": "2026-09-04T18:22:57.645Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:57.645Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
+              "content_hash": "75cccd54e5c4189973c7a8d39b8436f33fec00ea78de889967bad5985cf5e3b3"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T18:22:57.645Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-5c03600243943a9b-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "5c03600243943a9b80db8ab89d97a4dae3c8128fb8d731066e89eec54b4002c7"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-2e8de1153a6c62f3-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "2e8de1153a6c62f31824da8d3da0fe75450a4443eca179c384f0d778c845dda1"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-6e83fa43f1fb1043-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "6e83fa43f1fb104318617a373a6129a71964ca1a320a5bdda413879d9d78ff16"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-cff3b64250fd0997-source.png",
+          "sha256": "cff3b64250fd09974055d053471b431f652301b1e92a0f9910460d79ca01e8ab",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T18:27:09.055Z"
+        },
+        "fingerprint": "44953c697b8d7558211a3ad16e37a31c13c947f1a8531690dd52bbd35df50889",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T18:28:15.203Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-03c6bacdda808696",
+      "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
+      "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+      "first_seen": "2026-09-04T18:11:14.000Z",
+      "last_updated": "2026-09-04T18:22:40.051Z",
+      "published_at": "2026-09-04T18:22:40.051Z",
+      "updated_at": "2026-09-04T18:22:40.051Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+          "summary": "Die Polizei hält Bekennerschreiben zur Sabotage von Umspannwerken in Jänschwalde und Nordrhein-Westfalen für authentisch. Ein 48-Jähriger präsentiert sich darin als alleiniger Täter. Offenbar wurden gezielt Anlagen ausgewählt, die an Kohlekraftwerke angeschlossen sind.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:11:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "da6ff6380c7115d1e03ea11c774fa387efed0294474db69c86ee8475779bec10",
+          "source_item_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:11:14.000Z",
+          "ingested_at": "2026-09-04T18:21:48.041Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-03c6bacdda808696-v1-claim-1",
+          "story_id": "wt-03c6bacdda808696",
+          "claim": "Die Polizei sucht nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit den Sabotagevorwürfen an Umspannwerken.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "8dd2f3363655d7bf9ddc",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:40.051Z"
+        },
+        {
+          "claim_id": "wt-03c6bacdda808696-v1-claim-2",
+          "story_id": "wt-03c6bacdda808696",
+          "claim": "In der Wohnung des Verdächtigen wurden sprengstoffverdächtige Gegenstände gefunden, und sein Fahrzeug wurde am Freitagabend gestürmt.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "2108e89daac09c42e8b6",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "02a29f176da16d433a51",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:40.051Z"
+        },
+        {
+          "claim_id": "wt-03c6bacdda808696-v1-claim-3",
+          "story_id": "wt-03c6bacdda808696",
+          "claim": "Die Ermittler halten zwei Bekennerschreiben mit Täterwissen für authentisch, schließen aber eine abschließende Beurteilung und die Einzeltäterfrage noch nicht aus.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "e15ff35a475e4fbe63e3",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "dbd9e3fcefbeda5ce578",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "f9bb5989d21e982e36d3",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:40.051Z"
+        },
+        {
+          "claim_id": "wt-03c6bacdda808696-v1-claim-4",
+          "story_id": "wt-03c6bacdda808696",
+          "claim": "Nach Angaben der Minister führten die Anschläge in Jänschwalde und Bergheim zu Abschaltungen in Kraftwerksblöcken, die Stromversorgung war aber nicht beeinträchtigt oder gefährdet.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "dacbf2cb95ea39cfb324",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:40.051Z"
+        },
+        {
+          "claim_id": "wt-03c6bacdda808696-v1-claim-5",
+          "story_id": "wt-03c6bacdda808696",
+          "claim": "In den Schreiben wurden weitere mögliche Sabotageziele genannt, darunter Umspannwerke in Dormagen und Weisweiler, wo anschließend Abschussvorrichtungen entdeckt wurden.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "3d4a5e8122af4c941657",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "excerpt_hash": "08ca9ab3063c41d36f77",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T18:22:40.051Z"
+        }
+      ],
+      "event_id": "event-5fed0f90ee4fb60ffd0d",
+      "event_first_seen_at": "2026-09-04T18:21:48.041Z",
+      "event_detected_at": "2026-09-04T18:21:48.041Z",
+      "verification_started_at": "2026-09-04T18:22:24.272Z",
+      "publish_ready_at": "2026-09-04T18:22:40.051Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Gesuchte tatsächlich Verfasser der Schreiben war und wie die Ermittlungen weiter eingeordnet werden",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsbehörden nennen gesicherte Zuordnung oder korrigieren sie",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f38c9a803352d269",
+          "announced_at": "2026-09-04T18:11:14.000Z",
+          "follow_up_date": "2026-09-11T18:22:40.051Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "256ab2d345b452e2a19388b09292465a6a590de6ab17c63c6d04349f166298e1",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Quelle berichtet über Ermittlungen nach Sabotagevorwürfen an Umspannwerken in Brandenburg und Nordrhein-Westfalen. Gesucht wird ein 48-jähriger Mann aus Gevelsberg; in seinem Wohnhaus fanden Einsatzkräfte sprengstoffverdächtige Gegenstände, außerdem wurde sein Fahrzeug gestürmt. Nach Angaben der Minister werden zwei Bekennerschreiben als authentisch eingeschätzt, zugleich ist die abschließende Prüfung der Täterschaft noch offen.\n\nGenannt werden auch Anschläge in Jänschwalde und Bergheim, die laut Sicherheitsbehörden und Betreiber zu Abschaltungen in Kraftwerksblöcken führten, ohne dass die Stromversorgung beeinträchtigt oder gefährdet gewesen sei. In den Schreiben seien weitere mögliche Sabotageziele genannt worden; in Dormagen und Weisweiler seien danach Abschussvorrichtungen entdeckt worden. Die Ermittlungen laufen unter anderem wegen verfassungsfeindlicher Sabotage, in Brandenburg auch wegen Bildung einer Terrorvereinigung.",
+      "analysis": {
+        "story_id": "wt-03c6bacdda808696",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
+        "detail_summary": "Gesichert ist zunächst, dass die Ermittlungen nach Sabotagevorwürfen an Umspannwerken weiterlaufen und sich die Polizei auf einen 48-jährigen Verdächtigen aus Gevelsberg konzentriert. In seinem Wohnhaus wurden sprengstoffverdächtige Gegenstände gefunden, zusätzlich wurde sein Fahrzeug gestürmt. Für die Nachricht relevant ist das wegen des betroffenen Systems: Stromnetzinfrastruktur kann bei Sabotage nicht nur lokal, sondern über Kraftwerksblöcke und Abschaltungen in Betrieb und Resilienz eingreifen. Als mögliche Folge kommen weitere Sicherheitsmaßnahmen, zusätzliche Ermittlungs- und Schutzkosten sowie ein erhöhtes Störungsrisiko für einzelne Anlagen in Betracht. Die Beleglage bleibt jedoch auf eine einzige journalistische Quelle begrenzt; die Täterschaft ist nach der Quelle nicht abschließend geklärt, daher bleiben Ursachen- und Wirkungsaussagen vorsichtig.",
+        "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Schutz- und Folgekosten für ein systemrelevantes Versorgungsnetz.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Ermittlungsdruck und Sicherheitsmaßnahmen, aber die konkrete Schadenslage bleibt begrenzt und teils offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltfaktor ist aus der Quelle nicht belastbar ableitbar; relevant ist hier vor allem Infrastruktur- und Sicherheitswirkung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt Schutz kritischer Infrastruktur und staatliche Reaktionsfähigkeit, ohne dass die Quelle eine demokratische Verfahrensänderung belegt."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Verschärfung von Schutzmaßnahmen an Umspannwerken, höhere Betriebskosten und kurzfristige Störungen durch zusätzliche Sicherung und Ermittlungen.",
+        "impact_risks": [
+          "Weitere Sabotageversuche könnten Schutzaufwand und Störungsrisiken erhöhen.",
+          "Die öffentliche Unsicherheit kann Behörden und Betreiber zu schnellen, kostenintensiven Sicherungsmaßnahmen zwingen."
+        ],
+        "mechanisms": [
+          "Verdachtsmomente und Funde lösen Ermittlungen, Fahndung und Schutzmaßnahmen aus.",
+          "Bekennerschreiben mit Täterwissen können die Zielauswahl und Priorisierung weiterer Sicherung beeinflussen."
+        ],
+        "first_order": [
+          "Ermittlungen und Fahndung werden intensiviert.",
+          "Betreiber und Behörden prüfen zusätzliche Sicherung an betroffenen Anlagen."
+        ],
+        "second_order": [
+          "Höhere Sicherheitskosten und organisatorische Belastung für Netzbetreiber.",
+          "Mögliche Verlagerung von Schutzressourcen auf weitere kritische Anlagen."
+        ],
+        "third_order": [
+          "Langfristig könnten Standards für die Sicherung kritischer Energieinfrastruktur angepasst werden.",
+          "Vertrauen in die Störungsresilienz des Stromnetzes kann durch wiederholte Vorfälle belastet werden."
+        ],
+        "systemic_relevance": "Die Meldung betrifft kritische Energieinfrastruktur und damit ein System mit potenziellen Kaskaden über Versorgung, Sicherheit und staatliche Schutzkapazitäten.",
+        "transformation_potential": "Aus der Quelle ergibt sich eher ein Sicherheits- und Resilienzthema als ein Transformationsschub; ein Kurswechsel wäre nur bei späteren Schutz- oder Regulierungsschritten belegbar.",
+        "resilience": "Die Vorfälle prüfen die Widerstandsfähigkeit der Energieinfrastruktur und die Fähigkeit der Behörden, mehrere Tatorte und Verdachtsmomente gleichzeitig abzusichern.",
+        "side_effects": [
+          "Mehr Polizeieinsätze und Ermittlungsaufwand.",
+          "Mögliche Zusatzkosten für Betreiber durch Schutz- und Prüfmaßnahmen."
+        ],
+        "uncertainties": [
+          "Die Täterschaft ist laut Quelle nicht abschließend geklärt.",
+          "Die tatsächliche Rolle der gefundenen Gegenstände bleibt offen.",
+          "Folgen für Versorgung und Markt sind in der Quelle nicht belegt."
+        ],
+        "evidence_level": "einzelne journalistische Quelle mit konkreten O-Ton-/Berichtsdetails, aber ohne unabhängige zweite Bestätigung im gelieferten Material",
+        "attribution": "Die wesentlichen Tatsachen stammen aus der rbb24-Berichterstattung und dort wiedergegebenen Aussagen von Ministern und Ermittlern.",
+        "watch_next": [
+          "Ob die Polizei die Täterschaft des Gesuchten bestätigt.",
+          "Ob weitere Anlagen betroffen sind oder neue Funde gemeldet werden.",
+          "Ob sich der Vorwurf verfassungsfeindlicher Sabotage in den Ermittlungen erhärtet."
+        ],
+        "reference_frameworks": [
+          "SDG 7",
+          "SDG 9",
+          "SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Neue belastbare Information zu Fahndung, Funden in einer Wohnung und zu weiteren Tatorten an kritischer Energieinfrastruktur."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T18:22:40.051Z",
+          "content_hash": "256ab2d345b452e2a19388b09292465a6a590de6ab17c63c6d04349f166298e1",
+          "source_summary": "Die Quelle berichtet über Ermittlungen nach Sabotagevorwürfen an Umspannwerken in Brandenburg und Nordrhein-Westfalen. Gesucht wird ein 48-jähriger Mann aus Gevelsberg; in seinem Wohnhaus fanden Einsatzkräfte sprengstoffverdächtige Gegenstände, außerdem wurde sein Fahrzeug gestürmt. Nach Angaben der Minister werden zwei Bekennerschreiben als authentisch eingeschätzt, zugleich ist die abschließende Prüfung der Täterschaft noch offen.\n\nGenannt werden auch Anschläge in Jänschwalde und Bergheim, die laut Sicherheitsbehörden und Betreiber zu Abschaltungen in Kraftwerksblöcken führten, ohne dass die Stromversorgung beeinträchtigt oder gefährdet gewesen sei. In den Schreiben seien weitere mögliche Sabotageziele genannt worden; in Dormagen und Weisweiler seien danach Abschussvorrichtungen entdeckt worden. Die Ermittlungen laufen unter anderem wegen verfassungsfeindlicher Sabotage, in Brandenburg auch wegen Bildung einer Terrorvereinigung.",
+          "analysis": {
+            "story_id": "wt-03c6bacdda808696",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
+            "detail_summary": "Gesichert ist zunächst, dass die Ermittlungen nach Sabotagevorwürfen an Umspannwerken weiterlaufen und sich die Polizei auf einen 48-jährigen Verdächtigen aus Gevelsberg konzentriert. In seinem Wohnhaus wurden sprengstoffverdächtige Gegenstände gefunden, zusätzlich wurde sein Fahrzeug gestürmt. Für die Nachricht relevant ist das wegen des betroffenen Systems: Stromnetzinfrastruktur kann bei Sabotage nicht nur lokal, sondern über Kraftwerksblöcke und Abschaltungen in Betrieb und Resilienz eingreifen. Als mögliche Folge kommen weitere Sicherheitsmaßnahmen, zusätzliche Ermittlungs- und Schutzkosten sowie ein erhöhtes Störungsrisiko für einzelne Anlagen in Betracht. Die Beleglage bleibt jedoch auf eine einzige journalistische Quelle begrenzt; die Täterschaft ist nach der Quelle nicht abschließend geklärt, daher bleiben Ursachen- und Wirkungsaussagen vorsichtig.",
+            "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Schutz- und Folgekosten für ein systemrelevantes Versorgungsnetz.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Ermittlungsdruck und Sicherheitsmaßnahmen, aber die konkrete Schadenslage bleibt begrenzt und teils offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umweltfaktor ist aus der Quelle nicht belastbar ableitbar; relevant ist hier vor allem Infrastruktur- und Sicherheitswirkung."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Fall berührt Schutz kritischer Infrastruktur und staatliche Reaktionsfähigkeit, ohne dass die Quelle eine demokratische Verfahrensänderung belegt."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Verschärfung von Schutzmaßnahmen an Umspannwerken, höhere Betriebskosten und kurzfristige Störungen durch zusätzliche Sicherung und Ermittlungen.",
+            "impact_risks": [
+              "Weitere Sabotageversuche könnten Schutzaufwand und Störungsrisiken erhöhen.",
+              "Die öffentliche Unsicherheit kann Behörden und Betreiber zu schnellen, kostenintensiven Sicherungsmaßnahmen zwingen."
+            ],
+            "mechanisms": [
+              "Verdachtsmomente und Funde lösen Ermittlungen, Fahndung und Schutzmaßnahmen aus.",
+              "Bekennerschreiben mit Täterwissen können die Zielauswahl und Priorisierung weiterer Sicherung beeinflussen."
+            ],
+            "first_order": [
+              "Ermittlungen und Fahndung werden intensiviert.",
+              "Betreiber und Behörden prüfen zusätzliche Sicherung an betroffenen Anlagen."
+            ],
+            "second_order": [
+              "Höhere Sicherheitskosten und organisatorische Belastung für Netzbetreiber.",
+              "Mögliche Verlagerung von Schutzressourcen auf weitere kritische Anlagen."
+            ],
+            "third_order": [
+              "Langfristig könnten Standards für die Sicherung kritischer Energieinfrastruktur angepasst werden.",
+              "Vertrauen in die Störungsresilienz des Stromnetzes kann durch wiederholte Vorfälle belastet werden."
+            ],
+            "systemic_relevance": "Die Meldung betrifft kritische Energieinfrastruktur und damit ein System mit potenziellen Kaskaden über Versorgung, Sicherheit und staatliche Schutzkapazitäten.",
+            "transformation_potential": "Aus der Quelle ergibt sich eher ein Sicherheits- und Resilienzthema als ein Transformationsschub; ein Kurswechsel wäre nur bei späteren Schutz- oder Regulierungsschritten belegbar.",
+            "resilience": "Die Vorfälle prüfen die Widerstandsfähigkeit der Energieinfrastruktur und die Fähigkeit der Behörden, mehrere Tatorte und Verdachtsmomente gleichzeitig abzusichern.",
+            "side_effects": [
+              "Mehr Polizeieinsätze und Ermittlungsaufwand.",
+              "Mögliche Zusatzkosten für Betreiber durch Schutz- und Prüfmaßnahmen."
+            ],
+            "uncertainties": [
+              "Die Täterschaft ist laut Quelle nicht abschließend geklärt.",
+              "Die tatsächliche Rolle der gefundenen Gegenstände bleibt offen.",
+              "Folgen für Versorgung und Markt sind in der Quelle nicht belegt."
+            ],
+            "evidence_level": "einzelne journalistische Quelle mit konkreten O-Ton-/Berichtsdetails, aber ohne unabhängige zweite Bestätigung im gelieferten Material",
+            "attribution": "Die wesentlichen Tatsachen stammen aus der rbb24-Berichterstattung und dort wiedergegebenen Aussagen von Ministern und Ermittlern.",
+            "watch_next": [
+              "Ob die Polizei die Täterschaft des Gesuchten bestätigt.",
+              "Ob weitere Anlagen betroffen sind oder neue Funde gemeldet werden.",
+              "Ob sich der Vorwurf verfassungsfeindlicher Sabotage in den Ermittlungen erhärtet."
+            ],
+            "reference_frameworks": [
+              "SDG 7",
+              "SDG 9",
+              "SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neue belastbare Information zu Fahndung, Funden in einer Wohnung und zu weiteren Tatorten an kritischer Energieinfrastruktur."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-03c6bacdda808696-v1-claim-1",
+              "story_id": "wt-03c6bacdda808696",
+              "claim": "Die Polizei sucht nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit den Sabotagevorwürfen an Umspannwerken.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "8dd2f3363655d7bf9ddc",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "claim_id": "wt-03c6bacdda808696-v1-claim-2",
+              "story_id": "wt-03c6bacdda808696",
+              "claim": "In der Wohnung des Verdächtigen wurden sprengstoffverdächtige Gegenstände gefunden, und sein Fahrzeug wurde am Freitagabend gestürmt.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "2108e89daac09c42e8b6",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "02a29f176da16d433a51",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "claim_id": "wt-03c6bacdda808696-v1-claim-3",
+              "story_id": "wt-03c6bacdda808696",
+              "claim": "Die Ermittler halten zwei Bekennerschreiben mit Täterwissen für authentisch, schließen aber eine abschließende Beurteilung und die Einzeltäterfrage noch nicht aus.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "e15ff35a475e4fbe63e3",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "dbd9e3fcefbeda5ce578",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "f9bb5989d21e982e36d3",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "claim_id": "wt-03c6bacdda808696-v1-claim-4",
+              "story_id": "wt-03c6bacdda808696",
+              "claim": "Nach Angaben der Minister führten die Anschläge in Jänschwalde und Bergheim zu Abschaltungen in Kraftwerksblöcken, die Stromversorgung war aber nicht beeinträchtigt oder gefährdet.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "dacbf2cb95ea39cfb324",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            },
+            {
+              "claim_id": "wt-03c6bacdda808696-v1-claim-5",
+              "story_id": "wt-03c6bacdda808696",
+              "claim": "In den Schreiben wurden weitere mögliche Sabotageziele genannt, darunter Umspannwerke in Dormagen und Weisweiler, wo anschließend Abschussvorrichtungen entdeckt wurden.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "3d4a5e8122af4c941657",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "08ca9ab3063c41d36f77",
+                  "checked_at": "2026-09-04T18:22:40.051Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T18:22:40.051Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "content_hash": "da6ff6380c7115d1e03ea11c774fa387efed0294474db69c86ee8475779bec10"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T18:22:40.051Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-9af931a15fa9d405-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "9af931a15fa9d4058a4239b702c522ec1bd65bce05eebf79115172dcbfc0678e"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-fb624fb3f290a738-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "fb624fb3f290a7389863b662bcc6e272c6142afba72e6a0e86d921ee8fdd685b"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-03c6bacdda808696-18de4554de1f82e9-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "18de4554de1f82e9c0cd58ba9af17eee7f9abaa4c601b5f9974ad6718a5eaff2"
+        },
+        "source_visual": null,
+        "fingerprint": "f0d46296fc1f58de2ce16873644390167d4c93148dca85a3425d0d8f7fcc8d12",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T18:27:07.855Z",
+        "status": "fallback",
+        "fallback_reason": "HIGGSFIELD_TIMEOUT",
+        "retry_after": "2026-09-04T18:42:07.855Z"
+      }
+    },
+    {
+      "story_id": "wt-33e396f2be1a3a1f",
+      "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
+      "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+      "first_seen": "2026-09-04T18:13:49.000Z",
+      "last_updated": "2026-09-04T18:15:11.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:13:49.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954",
+          "source_item_id": "80c246f10722e36049de20d5ebd90360a95abbdc539be494b0302c4c0ceb129a",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:13:49.000Z",
+          "ingested_at": "2026-09-04T18:21:48.041Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:15:11.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7",
+          "source_item_id": "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:15:11.000Z",
+          "ingested_at": "2026-09-04T18:21:48.041Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-33e396f2be1a3a1f-claim-01",
+          "story_id": "wt-33e396f2be1a3a1f",
+          "claim": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt: Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T18:21:48.041Z"
+        },
+        {
+          "claim_id": "wt-33e396f2be1a3a1f-claim-02",
+          "story_id": "wt-33e396f2be1a3a1f",
+          "claim": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt: Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T18:21:48.041Z"
+        }
+      ],
+      "content_hash": "228eef8d0ce2963efbc82086eadcc29cd843463c1aed2f8f7065005bce723ad6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T18:21:48.041Z",
+      "event_first_seen_at": "2026-09-04T18:21:48.041Z",
+      "event_detected_at": "2026-09-04T18:21:48.041Z",
+      "event_id": "event-b3909a98d9ba9b7edf64",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.61735,
+        "detection_delay_minutes": 6.61735,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T18:21:48.041Z",
+      "rejection": {
+        "at": "2026-09-04T18:21:48.041Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-f2edeab46d126d83",
       "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
@@ -992,8 +2195,8 @@
       "followups": [],
       "content_hash": "efe3c8296ce899ee16a6b5647cfffb81a51031cc93163a757e5715cb0a9d426b",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Die vorliegenden Texte berichten über Sabotagevorwürfe gegen das Stromnetz nach dem Angriff auf ein Umspannwerk bei Jänschwalde. Mehrere Veröffentlichungen sagen, die Polizei suche nach dem Verfasser zweier Bekennerschreiben; in einer späteren Überschrift heißt es zusätzlich, bei einem Verdächtigen sei Sprengstoff gefunden worden. Die Texte ordnen die Vorgänge als Reihe von Attacken auf die Energieversorgung ein und verweisen darauf, dass in mehreren Bundesländern ermittelt wird.\n\nDie Quellen nennen keine überprüfbaren Details zur Identität des Verdächtigen, zur Echtheit der Schreiben oder zu amtlich bestätigten Einzelheiten der Funde. Sie geben vor allem den Stand der laufenden Berichterstattung wieder und enthalten unterschiedliche Schlagzeilen und knappe Abstracts.",
@@ -1341,6 +2544,22 @@
         "status": "fallback",
         "fallback_reason": "HIGGSFIELD_TIMEOUT",
         "retry_after": "2026-09-04T18:25:31.841Z"
+      },
+      "retired_at": "2026-09-04T18:21:48.041Z",
+      "retirement": {
+        "at": "2026-09-04T18:21:48.041Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-f3d585eac14dec76"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-f3d585eac14dec76",
+            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
       }
     },
     {
@@ -1640,123 +2859,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
-      }
-    },
-    {
-      "story_id": "wt-1bc40229c938d48a",
-      "slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
-      "title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
-      "first_seen": "2026-09-04T17:51:00.000Z",
-      "last_updated": "2026-09-04T17:51:00.000Z",
-      "topic": [
-        "Arbeit",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "taz-aktuell",
-          "publisher": "taz",
-          "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
-          "title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
-          "summary": "Wenn die AfD in Sachsen-Anhalt regiert, wollen viele angehende Ju­ris­t:in­nen dort nicht arbeiten, zeigt eine Umfrage. Dabei braucht die Justiz dringend Nachwuchs. mehr...",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:51:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "75cccd54e5c4189973c7a8d39b8436f33fec00ea78de889967bad5985cf5e3b3",
-          "source_item_id": "31f3ef4361f94420014fedeeccc37d589d89ca6c00959595665aea301ea62bcb",
-          "publisher_id": "taz",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:51:00.000Z",
-          "ingested_at": "2026-09-04T18:06:22.511Z",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-1bc40229c938d48a-claim-01",
-          "story_id": "wt-1bc40229c938d48a",
-          "claim": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?: Wenn die AfD in Sachsen-Anhalt regiert, wollen viele angehende Ju­ris­t:in­nen dort nicht arbeiten, zeigt eine Umfrage. Dabei braucht die Justiz dringend Nachwuchs. mehr...",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "taz-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T18:06:22.511Z"
-        }
-      ],
-      "content_hash": "e1d10f1e3205f9bd0288812db38efd34491e5c0c02f672864119780a4e303310",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS"
-      ],
-      "quality_retry_count": 1,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-04T18:06:22.511Z",
-      "event_first_seen_at": "2026-09-04T18:06:22.511Z",
-      "event_detected_at": "2026-09-04T18:06:22.511Z",
-      "event_id": "event-0d32d40861dc356e70e6",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Arbeit",
-          "Politik"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 15.375183333333334,
-        "detection_delay_minutes": 15.375183333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
       }
     },
     {
@@ -5691,7 +6793,7 @@
             "title": "Bildung - Hochschulen in Ungarn nehmen wieder am Erasmus-Programm teil",
             "summary": "In Ungarn sollen alle Hochschulen wieder am europäischen Studentenaustauschprogramm Erasmus teilnehmen. Das teilte die ungarische Bildungsministerin Lannert mit. Vor vier Jahren hatte die EU-Kommission 21 Hochschulen in Ungarn aus dem Erasmus-Programm ausgeschlossen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T17:48:10.000Z",
+            "published_at": "2026-09-04T18:15:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -5707,8 +6809,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:48:10.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:15:22.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -6499,7 +7601,7 @@
             "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
             "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen SEK-Einsatz beim Hambacher Forst. Aktuelle Infos zu den Ermittlungen im Ticker.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T17:46:07.000Z",
+            "published_at": "2026-09-04T18:04:54.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
@@ -6515,8 +7617,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:46:07.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:04:54.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -7146,9 +8248,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -7769,7 +8873,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:54:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -9480,7 +10584,7 @@
       "verification_started_at": "2026-09-04T16:22:51.346Z",
       "publish_ready_at": "2026-09-04T16:23:03.495Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -9787,9 +10891,12 @@
         "generated_at": "2026-09-04T16:24:01.093Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "acf19bea2a01220b380c24e72396440bf6349eaba610b286f034f7c0e714f1a9",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "7e9671493e64bce544a73c1ebdd2f71d65783e1f42ba9eb5bb02c9fdd806dac0",
+        "checked_at": "2026-09-04T18:21:48.041Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:21:48.041Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -9853,14 +10960,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-100a725dc688d970",
@@ -14367,7 +15469,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:50:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -14397,7 +15499,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:48:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -14577,7 +15679,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T17:00:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -14607,7 +15709,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:58:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -14637,7 +15739,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:56:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -14667,7 +15769,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:54:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -14697,7 +15799,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:52:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -15613,7 +16715,7 @@
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
+        "quality_retry_count": 2,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -19257,7 +20359,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:12:29.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:france24",
               "basis": "publisher_only_origin_unverified",
@@ -19902,7 +21004,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:07:42.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:hr",
               "basis": "publisher_only_origin_unverified",
@@ -20651,7 +21753,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:13:42.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -22050,7 +23152,7 @@
             "title": "Migration - Frontex unterstützt Frankreich bei Einsätzen im Ärmelkanal",
             "summary": "Die europäische Grenzschutzagentur Frontex unterstützt künftig die Seenotrettung von Migranten im Ärmelkanal und in der ‌Nordsee.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T17:48:10.000Z",
+            "published_at": "2026-09-04T18:15:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -22066,8 +23168,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:48:10.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:15:22.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -23297,7 +24399,7 @@
       "verification_started_at": "2026-09-04T14:13:35.146Z",
       "publish_ready_at": "2026-09-04T14:13:53.288Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -23897,9 +24999,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "f5a0b52db0122bba1e73ddb8f6accded3dac746f90e723a83558d0a24aa2f7c9",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "f51177b4ac0bab4629b138733ea069ac3f59131114579eaa4944f078f549ab17",
+        "checked_at": "2026-09-04T18:21:48.041Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:21:48.041Z",
         "sources": [
           {
             "source_id": "hr-hessenschau",
@@ -23932,14 +25037,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-1c66dbdb6d9accb4",
@@ -24587,7 +25687,7 @@
             "title": "\"Return Hubs\" - EU-Innenminister wollen bis Jahresende erste Migrations-Abkommen mit Drittstaaten",
             "summary": "Bundesinnenminister Dobrindt und weitere Ressortchefs aus mehreren EU-Staaten wollen bis Jahresende Vereinbarungen mit Drittstaaten über die Rückführung von abgelehnten Asylbewerbern treffen. Der CSU-Politiker sagte nach einem Treffen in Kopenhagen, es gebe bereits Gespräche auf technischer Ebene mit Ländern außerhalb der Europäischen Union.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T17:48:10.000Z",
+            "published_at": "2026-09-04T18:15:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -24603,8 +25703,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:48:10.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:15:22.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -26385,7 +27485,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T08:43:18.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -27719,7 +28819,7 @@
             "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
             "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T17:48:10.000Z",
+            "published_at": "2026-09-04T18:15:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -27735,8 +28835,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:48:10.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:15:22.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -30002,7 +31102,7 @@
       "verification_started_at": "2026-09-04T12:36:39.479Z",
       "publish_ready_at": "2026-09-04T12:36:53.285Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -30378,10 +31478,13 @@
         "generated_at": "2026-09-04T12:37:02.216Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "76f972558505e81e47a2de677c8230af59ec7570c5971d5ab95b43d1b1cdca85",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "c4ca62265cc5b03279fe2b4c0449cfc67eb6c3f06e28fd594c84dd6e00742e3e",
+        "checked_at": "2026-09-04T18:21:48.041Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:21:48.041Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -30414,13 +31517,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -31085,7 +32182,7 @@
       "verification_started_at": "2026-09-04T12:07:36.086Z",
       "publish_ready_at": "2026-09-04T12:07:51.198Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -31477,10 +32574,13 @@
         "generated_at": "2026-09-04T12:10:35.071Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "07c8347b53494898fbf9937a52cdec986c1985f02dd7e59cf318099f23493405",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "dfe9a44f0213e2c72707228a77bcb0acbcc3e1f9a9897e7ce2bbdcd5aadd9721",
+        "checked_at": "2026-09-04T18:21:48.041Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:21:48.041Z",
         "sources": [
           {
             "source_id": "bundesregierung-presse",
@@ -31505,20 +32605,14 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T12:00:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -36977,7 +38071,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T21:03:08.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -37016,9 +38110,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -40685,7 +41781,7 @@
             "title": "Ressourcen - Studie: Milliardenwerte in Europas Elektroschrott ungenutzt",
             "summary": "In ausgedienten Haushaltsgeräten und alter Unterhaltungselektronik in der EU schlummern laut einer Studie ungenutzte Rohstoff im Wert von mehr als 65 Milliarden Euro. Zu diesem Ergebnis kommt eine gemeinsame Untersuchung der Boston Consulting Group (BCG) und der Initiative Cradle to Cradle Electronics, die anlässlich der Technikmesse IFA in Berlin vorgestellt wurde.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T17:48:10.000Z",
+            "published_at": "2026-09-04T18:15:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -40701,8 +41797,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:48:10.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:15:22.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -40710,9 +41806,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -41986,7 +43084,7 @@
             "title": "USA - US-Regierung zieht im Streit um Briefwahl erneut vor Supreme Court",
             "summary": "Kurz vor Beginn der Briefwahl für die Zwischenwahlen in den USA zieht die Regierung von Präsident Trump erneut vor den Obersten Gerichtshof.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T17:48:10.000Z",
+            "published_at": "2026-09-04T18:15:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -42002,8 +43100,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:48:10.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:15:22.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -43042,7 +44140,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T19:03:18.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -44051,7 +45149,8 @@
       },
       "living_file": {
         "merged_story_ids": [
-          "wt-57bcbc8dea706471"
+          "wt-57bcbc8dea706471",
+          "wt-29d840b10b9a38bd"
         ],
         "consolidations": [
           {
@@ -44059,6 +45158,13 @@
             "story_id": "wt-57bcbc8dea706471",
             "slug": "nach-angriff-auf-stromnetz-brandenburger-polizei-pruft-bekennerschreiben-706471",
             "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-04T18:21:48.041Z",
+            "story_id": "wt-29d840b10b9a38bd",
+            "slug": "anschlag-auf-stromleitungen-stromnetz-sabotage-polizei-wertet-bekennerschreiben-aus-9a38bd",
+            "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
             "reason": "specific_object_or_leading_document"
           }
         ]
@@ -44552,7 +45658,202 @@
           "source_count": 2
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "ebe589fc0693d52bbd65bdef672592c5552edfdd3d25ff4338ab38ddb9522318",
+        "checked_at": "2026-09-04T18:21:48.041Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T00:21:48.041Z",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+            "summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde erreicht die taz ein Bekennerschreiben. Ist es authentisch? Das lässt sich nicht zweifelsfrei klären. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T16:21:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f31b60b5c009745086e1f791654301a0737aafb77aeb46bac4a032370f83873a",
+            "source_item_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T16:21:00.000Z",
+            "ingested_at": "2026-09-04T10:07:41.576Z",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "rbb24-nachrichten",
+            "publisher": "rbb24",
+            "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+            "title": "Polizei prüft Bekennerschreiben nach Angriff auf Umspannwerk",
+            "summary": "Die Polizei ermittelt nach der Sabotage am Stromnetz bei Jänschwalde unter anderem wegen der Bildung einer terroristischen Vereinigung. Nun ist ein Bekennerschreiben eingegangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T18:57:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "42f668098c9786294164b7a51134e2c65521d71257218e5c64ce8cf84403c591",
+            "source_item_id": "a62afbc8f1549d06d1af899f7219ad906e90ac62bd8ebe24493b710cfa86cfc0",
+            "publisher_id": "rbb",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin-Brandenburg"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T18:57:30.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "provenance": {
+              "origin": "publisher:rbb",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--polizei-wertet-bekennerschreiben-aus-38206690.html",
+            "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
+            "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde ermittelt die Polizei in mehreren Bundesländern aufgrund ähnlicher Vorfälle. Was hat es mit einem Bekennerschreiben auf sich?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T06:44:56.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "6435d016b559c035afaba78b8581ab489e26328d6a38ca34c40ccce131f3901b",
+            "source_item_id": "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T06:44:56.000Z",
+            "ingested_at": "2026-09-04T06:51:43.159Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/berlin/dpa-anschlag-auf-stromleitungen-16016453.html",
+            "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Sprengstoff bei Verdächtigem gefunden",
+            "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde setzt sich die Reihe der Attacken auf die Energieversorgung fort. Die Polizei ist auf der Suche nach dem Verfasser zweier Bekennerschreiben.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T06:45:57.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "4a06b9f64ae17fcaf28e5e717a5cead5a9decfdcc878ec5ad60c92d11fbe4898",
+            "source_item_id": "9f9c32b928dfa70a53f6f1ba126e3588ecbde38fe32a63dcd9a74fbf1154954e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T06:45:57.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--sprengstoff-bei-verdaechtigem-gefunden-38206690.html",
+            "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Sprengstoff bei Verdächtigem gefunden",
+            "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde setzt sich die Reihe der Attacken auf die Energieversorgung fort. Die Polizei ist auf der Suche nach dem Verfasser zweier Bekennerschreiben.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:42:22.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4da9f30712e5a97fe9ee274f4a121e8b3b34df1fcc54345df8ccec3e4c17b90a",
+            "source_item_id": "65a96e06ae7edb1181e23801d7b3e0c09622dce96992a5009575cd5603c7ab4f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:42:22.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/berlin/dpa-klimaterrorismus-16020231.html",
+            "title": "Klimaterrorismus: Stromnetz-Sabotage: Sprengstoff bei Verdächtigem gefunden",
+            "summary": "Mehrere Sabotageversuche gegen das deutsche Stromnetz sorgten diese Woche für Aufsehen, ein Bekennerschreiben eines Mannes ging ein. In dessen Wohnung wurde die Polizei fündig.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T15:49:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "7bd3ecbcecce72d9d98cf577115555a4a68ace061a70a82f214b27ae2eca709e",
+            "source_item_id": "3bc75b27d988a322a1b3658efd597c76811de388b5b516ac7a4bc958c97b3b90",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T15:49:11.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ]
+      }
     },
     {
       "story_id": "wt-7b385f58748f3d32",
@@ -45110,20 +46411,20 @@
       "deepening_checks": 1,
       "pending_update": {
         "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "e9a4f51401aea2c89fef4902519e5697aae1098be75d9b8418a2338535b3e10d",
+        "content_hash": "256ab2d345b452e2a19388b09292465a6a590de6ab17c63c6d04349f166298e1",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
             "publisher": "rbb24",
             "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
-            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-            "summary": "Die Polizei hält die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch. Ein mutmaßlicher Alleintäter bekennt sich zu den Anschlägen in Jänschwalde und in Bergheim bei Köln. Die Fahndung läuft.",
+            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+            "summary": "Die Polizei hält Bekennerschreiben zur Sabotage von Umspannwerken in Jänschwalde und Nordrhein-Westfalen für authentisch. Ein 48-Jähriger präsentiert sich darin als alleiniger Täter. Offenbar wurden gezielt Anlagen ausgewählt, die an Kohlekraftwerke angeschlossen sind.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T16:10:50.000Z",
+            "published_at": "2026-09-04T18:11:14.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "92642347aa207b1a489eda4c1750bafe4035391b0eb9dd7222c337d747eb06db",
+            "content_hash": "da6ff6380c7115d1e03ea11c774fa387efed0294474db69c86ee8475779bec10",
             "source_item_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
             "publisher_id": "rbb",
             "publisher_kind": "public_broadcasting",
@@ -45135,8 +46436,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:10:50.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "source_published_at": "2026-09-04T18:11:14.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -49837,7 +51138,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -51917,7 +53218,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -56698,7 +57999,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -58183,7 +59484,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -60050,7 +61351,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -88945,5 +90246,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T18:06:22.511Z"
+  "public_updated_at": "2026-09-04T18:21:48.041Z"
 }
