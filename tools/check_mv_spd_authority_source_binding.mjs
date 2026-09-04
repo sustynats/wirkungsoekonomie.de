@@ -22,6 +22,8 @@ export function sourceBindingWitness() {
   const handoff = readFileSync(resolve(ROOT, handoffPath), 'utf8');
   const repairPath = 'docs/parlament/audits/mv-spd-p53-binding-delta-5543580667.md';
   const repair = readFileSync(resolve(ROOT, repairPath), 'utf8');
+  assert.equal(sha256(handoff), 'f646452303fd526c4ee67ed06374e1eb8f1a26578a9a68f8d659d35c938ed96b', 'HISTORICAL_AUTHORITY_BYTES_CHANGED');
+  assert.equal(sha256(repair), '5cd84571caafc2803c08cb7d6b7ba08f04bb8a35352bb64daca7400a8717c37a', 'REPAIR_AUTHORITY_BYTES_CHANGED');
   const find = id => units.find(unit => unit.source_unit_id === id);
   assert.equal(manifest.ledger_metadata.artifact.sha256, 'b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc');
   const discrepancies = [
