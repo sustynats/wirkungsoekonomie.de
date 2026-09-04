@@ -2017,3 +2017,8 @@
 .news-title-image figcaption { padding: .45rem .1rem 0; color: var(--muted, #5e6567); font-size: .75rem; line-height: 1.4; }
 .news-title-image--card { margin: .3rem 0 .6rem; }
 .news-title-image--detail { width: min(100% - 2rem, 64rem); margin: 1.5rem auto; }
+.news-related__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1rem; padding: 0; list-style: none; }
+.news-related__list li, .news-related__list article { min-width: 0; margin: 0; }
+.news-related__list article { height: 100%; }
+.news-related__list h3 { overflow-wrap: anywhere; }
+.news-consolidation { width: min(100% - 2rem, 64rem); margin: 1.5rem auto; }

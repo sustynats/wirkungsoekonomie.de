@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
+import { isMerged, relatedStories } from "./living-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
@@ -18,10 +19,20 @@ const sourceErrors = registryErrors(registry);
 if (sourceErrors.length) fail(sourceErrors.join(","));
 if (!state.seen_items || !state.source_status || !Array.isArray(state.pending_story_ids)) fail("STATE_SCHEMA_INVALID");
 if (!Array.isArray(store.stories) || !Array.isArray(usage.runs)) fail("DATA_SCHEMA_INVALID");
+const storiesById = new Map(store.stories.map((story) => [story.story_id, story]));
+if (storiesById.size !== store.stories.length) fail("DUPLICATE_STORY_ID");
 
 for (const story of store.stories) {
   if (!story.story_id || !story.slug || !Array.isArray(story.sources) || !Array.isArray(story.claims)) fail(`STORY_SCHEMA_INVALID:${story.story_id || "unknown"}`);
   if (story.sources.some((source) => Object.hasOwn(source, "article_excerpt"))) fail(`TRANSIENT_ARTICLE_TEXT_PERSISTED:${story.story_id}`);
+  if (isMerged(story)) {
+    if (story.listed !== false || state.pending_story_ids.includes(story.story_id)) fail(`MERGED_STORY_STILL_QUEUED:${story.story_id}`);
+    const targets = story.retirement.canonical_story_ids || [];
+    if (!targets.length || targets.some((id) => id === story.story_id || !storiesById.get(id)?.published || isMerged(storiesById.get(id)))) fail(`MERGED_STORY_TARGET_INVALID:${story.story_id}`);
+  }
+  for (const id of isMerged(story) ? [] : story.living_file?.merged_story_ids || []) {
+    if (!isMerged(storiesById.get(id) || {}) || !storiesById.get(id).retirement.canonical_story_ids.includes(story.story_id)) fail(`LIVING_FILE_ALIAS_INVALID:${story.story_id}:${id}`);
+  }
   if (story.published && story.listed !== false) {
     const sourceSummaryWords = String(story.source_summary || "").trim().split(/\s+/).filter(Boolean).length;
     const sourceSummaryParagraphs = String(story.source_summary || "").trim().split(/\n\s*\n/).filter((paragraph) => paragraph.trim()).length;
@@ -48,6 +59,10 @@ if (!index.includes("data-news-search-input") || !index.includes("data-news-load
 const activeStories = store.stories.filter((item) => item.published && item.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
 for (const [indexPosition, story] of activeStories.entries()) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
+  const expectedRelated = relatedStories(story, activeStories);
+  const relatedBlock = detail.match(/<section\b[^>]*data-news-related[\s\S]*?<\/section>/)?.[0] || "";
+  if (Boolean(expectedRelated.length) !== Boolean(relatedBlock) || (relatedBlock.match(/<li>/g) || []).length !== expectedRelated.length
+    || expectedRelated.some(({ story: item }) => !relatedBlock.includes(`../${item.slug}/`)) || (relatedBlock && !relatedBlock.includes("data-search-exclude"))) fail(`NEWS_RELATED_UI_INVALID:${story.story_id}`);
   const shareUrl = `https://wirkungsoekonomie.de/wirkungsticker/${story.slug}/`;
   if ((detail.match(/data-news-share-button/g) || []).length < 2 || !detail.includes(`data-share-url="${shareUrl}"`) || !detail.includes("assets/js/news-share.js")) fail(`NEWS_SHARE_UI_INVALID:${story.story_id}`);
   if (!detail.includes("data-news-return-to-list") || !detail.includes(`#story-${story.slug}`) || !detail.includes("Zur Übersicht und Leseposition")) fail(`NEWS_RETURN_NAVIGATION_INVALID:${story.story_id}`);
@@ -91,6 +106,7 @@ if (!legacyIndex.includes("/wirkungsticker/")) fail("NEWS_LEGACY_REDIRECT_INVALI
 
 const sensitiveFiles = [
   "scripts/news/lib.mjs", "scripts/news/run.mjs", "scripts/news/build.mjs", "scripts/news/schedule.mjs",
+  "scripts/news/living-files.mjs",
   "content/news/source-registry.json", "data/news/stories.json", "data/news/state.json", "data/news/usage.json",
 ];
 const secretPatterns = [/\bsk-[A-Za-z0-9_-]{20,}\b/, /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/, /\bAKIA[0-9A-Z]{16}\b/];

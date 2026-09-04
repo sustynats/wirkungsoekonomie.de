@@ -23,6 +23,7 @@ import { sanitizeVisuals } from "./visuals.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { sourceAccess } from "./access-policy.mjs";
 import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences } from "./newsroom.mjs";
+import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
@@ -176,7 +177,7 @@ function attachRelatedTickerHistory(candidates, stories) {
 
 function createCandidate(cluster, now, reassessment = false, fresh = false) {
   const existing = cluster.existing_story;
-  const sources = mergeSources(existing?.sources, cluster.sources);
+  const sources = mergeSources(existing?.pending_update?.sources || existing?.sources, cluster.sources);
   const candidate = {
     story_id: cluster.story_id,
     slug: existing?.slug || `${slugify(cluster.title)}-${cluster.story_id.slice(-6)}`,
@@ -215,6 +216,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
         quality_retry_count: qualityRetryCount,
         reassessment: Boolean(candidate.reassessment),
         fresh: Boolean(candidate.fresh),
+        consolidation: Boolean(existing.pending_update?.consolidation),
       },
     };
   }
@@ -224,6 +226,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     title: candidate.title,
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
     ...(existing?.corrections ? { corrections: existing.corrections } : {}),
+    ...(existing?.living_file ? { living_file: existing.living_file } : {}),
     first_seen: candidate.first_seen,
     last_updated: candidate.last_updated,
     topic: candidate.topic,
@@ -308,7 +311,7 @@ export function sanitizeAnalysisVisuals(analysis, candidate, report = {}) {
   return analysis;
 }
 
-function publishedRecord(candidate, analysis, ai, now) {
+export function publishedRecord(candidate, analysis, ai, now) {
   const existing = candidate.existing_story;
   const versionNumber = Number(existing?.current_version || 0) + 1;
   const { source_summary: sourceSummary, event_claims: _eventClaims, followups: newFollowups = [], ...woekAnalysis } = analysis;
@@ -357,6 +360,7 @@ function publishedRecord(candidate, analysis, ai, now) {
     published: true,
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
     ...(existing?.corrections ? { corrections: existing.corrections } : {}),
+    ...(existing?.living_file ? { living_file: existing.living_file } : {}),
     listed: true,
     analysis_status: "veröffentlicht",
     relevance_filter_version: RELEVANCE_FILTER_VERSION,
@@ -600,12 +604,14 @@ export async function runWirkungsticker(options = {}) {
   const pruneBefore = nowDate.getTime() - 120 * 24 * 60 * 60 * 1000;
   for (const [id, record] of Object.entries(state.seen_items)) if (Date.parse(record.last_seen || 0) < pruneBefore) delete state.seen_items[id];
 
+  report.living_file_merges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
+  report.retired_stories += report.living_file_merges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
   const matchableStories = (storyStore.stories || [])
     .filter((story) => story.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE");
   const scheduledFollowups = dueFollowups(matchableStories, now);
   const dueFollowupIds = new Set(scheduledFollowups.map((followup) => followup.story_id));
   const dueDeepeningIds = new Set(matchableStories.filter((story) => story.published && story.listed !== false && story.deepening_due_at && Date.parse(story.deepening_due_at) <= nowDate.getTime()).map((story) => story.story_id));
-  const freshCandidates = clusterItems(changedItems, matchableStories, now)
+  const freshCandidates = clusterItems(changedItems, storyStore.stories || [], now)
     .map((cluster) => createCandidate(
       cluster,
       now,
@@ -617,6 +623,7 @@ export async function runWirkungsticker(options = {}) {
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
   const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT"]);
   const retryCandidates = (storyStore.stories || [])
+    .filter((story) => !isMerged(story))
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
     .filter((story) => {
       const reason = story.pending_update?.reason || story.pending_reason;
@@ -652,7 +659,7 @@ export async function runWirkungsticker(options = {}) {
     });
   const clusters = attachRelatedTickerHistory([...freshCandidates, ...retryCandidates], storyStore.stories);
   for (const candidate of clusters) {
-    const alternativeItems = allItems.filter((item) => candidate.sources.some((source) => eventCompatibility(item, source).same_event));
+    const alternativeItems = allItems.filter((item) => !subjectConflict(item, candidate) && (livingFileMatch(item, candidate).score > 0 || candidate.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event)));
     candidate.sources = mergeSources(candidate.sources, alternativeItems);
     candidate.claims = claimLedgerFor(candidate.sources, candidate.story_id, now);
     candidate.evidence_groups = evidenceGroups(candidate.sources);
@@ -880,7 +887,7 @@ export async function runWirkungsticker(options = {}) {
       byId.set(storyId, rejectedRecord(story, now, qualityErrors));
     }
   }
-  state.pending_story_ids = [...byId.values()].filter((story) => (!story.published && story.listed !== false) || story.pending_update).map((story) => story.story_id);
+  state.pending_story_ids = [...byId.values()].filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update)).map((story) => story.story_id);
   report.pending_story_count = state.pending_story_ids.length;
   report.source_health = registry.sources.map((source) => sourceHealth(source, state, now));
   if (report.source_health.some((source) => ["disturbed", "stale"].includes(source.status))) report.status = "degraded";
@@ -888,7 +895,7 @@ export async function runWirkungsticker(options = {}) {
   report.coverage = coverageReport(enabledSources, [...byId.values()]);
   report.freshness = [...byId.values()].filter((story) => story.listed !== false).map((story) => ({ story_id: story.story_id, published: Boolean(story.published), ...freshnessFor(story, now) }));
   report.freshness_warnings = report.freshness.filter((story) => story.freshness_warning);
-  report.followups_due = dueFollowups([...byId.values()], now);
+  report.followups_due = dueFollowups([...byId.values()].filter((story) => !isMerged(story)), now);
   newsroom.updated_at = now;
   newsroom.decisions = newsroom.decisions.filter((decision) => Date.parse(decision.at) >= pruneBefore).slice(-20000);
   newsroom.event_sources = Object.values(newsroom.source_items).map((item) => ({ event_id: item.event_id, source_item_id: item.source_item_id, source_id: item.source_id, role: item.source_role }));
