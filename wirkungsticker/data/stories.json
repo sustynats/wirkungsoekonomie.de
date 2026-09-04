@@ -1,7 +1,83 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T09:54:54.452Z",
+  "updated_at": "2026-09-04T10:19:39.784Z",
   "stories": [
+    {
+      "story_id": "wt-7b385f58748f3d32",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-954a5ccec049ce21-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-c404bd8d02df1dba-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-4528cb0e4dd565cc-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+      "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+      "source_summary": "Die rbb24-Meldung berichtet unter Berufung auf ARD-Informationen, dass Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten. Nach dem Bericht bekennt sich darin ein mutmaßlicher Alleintäter zu Anschlägen in Jänschwalde und in Bergheim bei Köln, und die Fahndung läuft weiter.\n\nZudem heißt es, der Polizei in Nordrhein-Westfalen und Brandenburg lägen inzwischen zwei Bekennerschreiben derselben Person vor. Die Schreiben seien handschriftlich verfasst, mit Namen unterzeichnet und enthielten nach ARD-Terrorismusexperte Michael Götschenberg Täterwissen. Der Bericht nennt außerdem Hinweise, wonach die Person mit einem alten Bundeswehrfahrzeug unterwegs sei und offenbar weitere Tatorte anfahre.",
+      "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+      "detail_summary": "Gesichert nach der vorliegenden Meldung ist vor allem, dass die Polizei die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch hält. Der Bericht ordnet die Schreiben einem mutmaßlichen Alleintäter zu, nennt Jänschwalde und Bergheim bei Köln als Tatorte und sagt, die Fahndung laufe weiter. Für die Einordnung ist das relevant, weil sich damit die Informationslage von einer bloßen Sachbeschädigungs- oder Sabotagespur hin zu einer personalisierten Ermittlungs- und Bedrohungslage verschiebt. Der Wirkpfad liegt vor allem in veränderten Ermittlungsprioritäten, Schutzmaßnahmen an kritischer Infrastruktur und möglicher öffentlicher Risikowahrnehmung. Mögliche Folgen sind zusätzliche Sicherung, weitere Fahndungsmaßnahmen und eine belastendere Lage für Netzbetreiber; ob daraus breitere Systemeffekte entstehen, bleibt offen. Tragfähige unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor, daher bleibt die Zuschreibung vorläufig.",
+      "why_relevant": "Die Meldung verändert die Lagebewertung zu Sabotage an kritischer Energieinfrastruktur, weil sie Authentizität, mögliche Täterschaft und laufende Fahndung zusammenführt.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Sicherheit, Versorgungsschutz und Ermittlungsressourcen; die Lage kann Schutzmaßnahmen und öffentliche Wahrnehmung verändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad wird in der Quelle nicht belastbar beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung berührt den Schutz kritischer Infrastruktur und die Informationslage der Öffentlichkeit, ohne dass bereits eine politische Entscheidung vorliegt."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T10:06:18.000Z",
+      "last_updated": "2026-09-04T10:09:13.371Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-6a9b508f2d9dfc0503cf",
+      "source_published_at": "2026-09-04T10:06:18.000Z",
+      "published_at": "2026-09-04T10:09:13.371Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:06:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-215068875954a78e",
       "title_image": {
@@ -3270,20 +3346,20 @@
     {
       "story_id": "wt-9de543ac63864ad7",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-2bb1711a6732f873-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-18f5e317366fe14d-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-cf859bf0219d83e1-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-65b2705f1af771e6-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3376,20 +3452,20 @@
     {
       "story_id": "wt-d80fd849c477e2ad",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-c9df3da8148c97ca-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-a60458508d9a6729-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-ead7161c1ee59e91-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-3eeb5b2de2922414-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3510,17 +3586,17 @@
         "mode": "editorial",
         "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-b440219bbbb61eec-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-e46aae3db6197635-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-b440219bbbb61eec-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-bcaa1257892d137b-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-b440219bbbb61eec-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-ed9d6b837154562e-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3629,20 +3705,20 @@
     {
       "story_id": "wt-f3d585eac14dec76",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-6ee2c7a62c358507-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-330d72f13077cc67-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0428a77fe38e218c-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3969,20 +4045,20 @@
     {
       "story_id": "wt-872323e750684aa1",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-80c4559e72ea0879-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-c7b156a7a8a07414-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-50804efa1e593ac0-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-58f9d6f04aa33250-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4058,20 +4134,20 @@
     {
       "story_id": "wt-31724816547fc87d",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-12162911a926b176-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-2a53356d626167dd-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-c7c190d7ef375ef2-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-eb6f843358afcde0-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4387,20 +4463,20 @@
     {
       "story_id": "wt-e01001c00cf12041",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-5ed0e808069d84fa-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-fee23ea4fd606a4e-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-8f84e9b6eda9d43a-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-cfcbda26be19364a-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4474,20 +4550,20 @@
     {
       "story_id": "wt-7ae0b9f22404b684",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-621462145d8f01d1-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4571,20 +4647,20 @@
     {
       "story_id": "wt-a77b5d9b2935de2a",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-2cb4e642bb73509c-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-90c3b9015aad636e-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-4f1531a1ecc577ba-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-73a0e83a0549bf13-square.png",
           "width": 1080,
           "height": 1080
         }
