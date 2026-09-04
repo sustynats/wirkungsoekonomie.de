@@ -415,6 +415,21 @@ test("queued replacement keeps all old public images until success and survives 
   assert.equal(succeeded.title_image.source_visual.prompt_version, C.prompt_version);
 });
 
+test("free card layout upgrades survive a failed editorial replacement without a second generation", async t => {
+  const previous = (await worker(t)(STORY, { cardsOnly: true })).title_image;
+  previous.template_version = "woek-title-1";
+  let calls = 0;
+  const failed = await worker(t, { generate: async () => { calls++; throw imageError("HIGGSFIELD_RETRY_EXHAUSTED"); } })({
+    ...STORY, title_image: { ...previous, refresh_prompt_version: C.prompt_version },
+  });
+  assert.equal(calls, 1);
+  assert.equal(failed.title_image.mode, "impact_card");
+  assert.equal(failed.title_image.template_version, C.template_version);
+  assert.equal(failed.title_image.refresh_failure, "HIGGSFIELD_RETRY_EXHAUSTED");
+  assert.equal(failed.title_image.retry_after, undefined);
+  assert.ok(["og", "wide", "square"].every(key => publicTitleImage(failed.title_image)?.[key]));
+});
+
 test("render-only and terminal replacement failures never discard a working title", async (t) => {
   const previous = (await worker(t)(STORY)).title_image;
   previous.source_visual.prompt_version = "old-prompt";
